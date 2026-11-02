@@ -504,3 +504,49 @@ body {
   .hub-row, .hub-row::before { transition: none; }
   .hub-row:hover, .hub-row:active { transform: none; }
 }
+
+/* Race page Vote History (components/VoteHistoryTabbedSection.tsx, PastElectionResultsSection and
+   HouseOnlyRecentStatewideResultsSection in RaceDetailSections.tsx, RaceHistoryGraph.tsx).
+   Rows rise in staggered once the section scrolls into view (and again on each tab switch), the
+   two-party bar meets in the middle, a hovered row tints and its arrows lean their way. */
+@keyframes vh-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes vh-tab-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@keyframes rh-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes rh-halo { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+.vh-row { position: relative; isolation: isolate; animation: vh-rise 460ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.vh-row::before { content: ""; position: absolute; inset: 0 -0.5rem; border-radius: 10px; background: color-mix(in srgb, var(--app-text-primary) 5%, transparent); opacity: 0; transition: opacity 180ms ease; z-index: -1; pointer-events: none; }
+.vh-row:hover::before { opacity: 1; }
+.vh-row-boxed::before { inset: 0; border-radius: 8px; }
+.vh-bar-d, .vh-bar-r { animation: rg-reveal 760ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+.vh-bar-d { transform-origin: left center; }
+.vh-bar-r { transform-origin: right center; }
+.vh-lean { display: inline-block; transition: transform 200ms cubic-bezier(0.34, 1.4, 0.64, 1); }
+.vh-row:hover .vh-lean[data-dir="r"] { transform: translateX(2px); }
+.vh-row:hover .vh-lean[data-dir="l"] { transform: translateX(-2px); }
+.vh-row:hover .vh-lean[data-dir="u"] { transform: translateY(-1.5px); }
+.vh-row:hover .vh-lean[data-dir="d"] { transform: translateY(1.5px); }
+.vh-margin { transition: transform 200ms cubic-bezier(0.34, 1.4, 0.64, 1); transform-origin: right center; }
+.vh-row:hover .vh-margin { transform: scale(1.08); }
+/* Held until the section is on screen, so rows at the foot of the page don't finish unseen. */
+[data-vh="wait"] .vh-row, [data-vh="wait"] .vh-bar-d, [data-vh="wait"] .vh-bar-r { animation-play-state: paused; }
+.vh-tab-in { animation: vh-tab-in 260ms ease-out both; }
+.vh-tab-line { transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), width 300ms cubic-bezier(0.22, 1, 0.36, 1); }
+.vh-seg-thumb { transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14); }
+.rh-fade-in { animation: rh-fade-in 360ms ease-out both; }
+.rh-halo { animation: rh-halo 220ms cubic-bezier(0.34, 1.4, 0.64, 1) both; transform-box: fill-box; transform-origin: center; }
+
+/* Press feedback for small controls (tabs, toggles, the race rail's arrows). */
+.ix-press { transition: transform 140ms ease, background-color 160ms ease, color 160ms ease, opacity 160ms ease; -webkit-tap-highlight-color: transparent; }
+.ix-press:active:not(:disabled) { transform: scale(0.94); }
+/* Link pills in a race page header lift a little on hover. */
+.ix-lift { transition: transform 180ms cubic-bezier(0.34, 1.4, 0.64, 1), box-shadow 180ms ease, filter 180ms ease; }
+.ix-lift:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); }
+.ix-lift:active { transform: translateY(0) scale(0.97); box-shadow: none; }
+.ix-rail-btn:hover:not(:disabled) { filter: brightness(0.94); }
+html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
+
+@media (prefers-reduced-motion: reduce) {
+  .vh-row, .vh-bar-d, .vh-bar-r, .vh-tab-in, .rh-fade-in, .rh-halo { animation: none; }
+  .vh-lean, .vh-margin, .vh-tab-line, .vh-seg-thumb, .ix-press, .ix-lift { transition: none; }
+  .vh-row:hover .vh-lean, .vh-row:hover .vh-margin, .ix-press:active:not(:disabled), .ix-lift:hover, .ix-lift:active { transform: none; }
+}

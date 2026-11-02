@@ -290,35 +290,30 @@ function RaceSkeleton({ path }: { path: string }) {
     <>
       <Hero className="pb-0">
         <LoadingText>Loading race…</LoadingText>
-        <Pills className="mt-3" widths={["w-20", "w-20", "w-14", "w-28"]} />
-        <div className="mt-4 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div className="min-w-0 flex-1 space-y-3">
-            <Sk className="h-14 w-4/5 max-w-sm sm:h-16" />
-            {!house && <Sk className="h-14 w-1/2 max-w-xs sm:h-16" />}
-            <Sk className="h-3.5 w-full max-w-md" />
-          </div>
-          <div className="flex flex-col space-y-2 sm:items-end"><Sk className="h-3 w-28" /><Sk className="h-14 w-44" /></div>
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <Pills widths={["w-20", "w-20", "w-14", "w-28"]} />
+          <div className="flex items-center gap-1.5"><Sk className="h-7 w-7 rounded-full" /><Sk className="h-6 w-40 rounded-full" /><Sk className="h-7 w-7 rounded-full" /></div>
         </div>
-        <div className="mt-6 py-6" style={{ borderTop: "1px solid var(--app-border)" }}><StatStrip cols={3} /></div>
+        <div className="mt-3 space-y-3">
+          <Sk className="h-14 w-4/5 max-w-sm sm:h-16" />
+          {!house && <Sk className="h-14 w-1/2 max-w-xs sm:hidden" />}
+        </div>
+        <div className="mt-4 flex items-center gap-4 sm:gap-5">
+          <Sk className="h-12 w-16 shrink-0 rounded sm:h-[72px] sm:w-24" />
+          <div className="min-w-0 space-y-2.5">
+            <Sk className="h-3.5 w-full max-w-xs" />
+            <div className="flex flex-wrap gap-x-5 gap-y-2"><Sk className="h-3.5 w-28" /><Sk className="h-3.5 w-40" /><Sk className="h-3.5 w-28" /></div>
+          </div>
+        </div>
       </Hero>
       <Body>
-        {house && (
-          <div className="flex items-center gap-5 py-4" style={{ borderTop: "1px solid var(--app-border)", borderBottom: "1px solid var(--app-border)" }}>
-            <div className="min-w-0 flex-1 space-y-3">
-              <div className="flex items-center gap-2"><Sk className="h-8 w-8 rounded-full" /><Sk className="h-9 w-64 max-w-[55vw] rounded-lg" /><Sk className="h-8 w-8 rounded-full" /></div>
-              <Sk className="h-2.5 w-64 max-w-full" />
-            </div>
-            <Sk className="hidden h-24 w-44 rounded-md sm:block" />
-          </div>
-        )}
-        <SectionHead className="mt-8" />
-        <div className="mt-4"><Lines widths={["w-full", "w-full", "w-2/3"]} /></div>
-        {house && <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2">{Array.from({ length: 6 }, (_, i) => <Sk key={i} className="h-3.5 w-20" />)}</div>}
-        <div className="mt-4 flex gap-6"><Sk className="h-3 w-36" /><Sk className="h-3 w-24" /></div>
+        {/* Projected Vote, then Forecast Calculation (About sits further down the page). */}
+        <SectionHead className="mt-6" />
+        <CandidateRow />
+        <CandidateRow />
         <SectionHead className="mt-10" />
-        <Sk className="mt-4 h-3 w-full rounded-full" />
-        <CandidateRow />
-        <CandidateRow />
+        <div className="mt-4"><StatStrip cols={3} /></div>
+        <Sk className="mt-5 h-3 w-full rounded-full" />
       </Body>
     </>
   );

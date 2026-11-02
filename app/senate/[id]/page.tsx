@@ -1,14 +1,16 @@
 import Link from "next/link";
-import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
+import { candidatePageHref } from "@/lib/candidatePages";
 import { senateData, senateNoElection, senateHoldovers, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { getRatingColors } from "@/lib/colorScale";
+import RaceHero, { titleSize } from "@/components/RaceHero";
+import { RaceRail, type RailItem } from "@/components/RaceLocator";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
-import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
+import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
@@ -18,7 +20,7 @@ import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
-import { StatePill, OfficePill, HeldPill, SeatArrows, PILL, type SeatNavLink } from "@/components/RaceHeroPills";
+import { StatePill, OfficePill, HeldPill, SeatPill, PILL, type SeatNavLink } from "@/components/RaceHeroPills";
 
 const GENERAL_ELECTION = "November 3, 2026";
 
@@ -67,17 +69,20 @@ function senateUrlId(id: string): string {
   return id.toLowerCase().replace(/-2$/, "2");
 }
 
-/** The state's other Senate seat page (seat 1 ↔ seat 2), for the arrows beside the title. Null
- *  when that seat has no page (a state with only one seat on file). */
-function otherSenateSeat(id: string): { prev: SeatNavLink | null; next: SeatNavLink | null } {
+/** Every 2026 Senate race, alphabetical, for the header's race switcher. */
+const SENATE_RAIL: RailItem[] = senateData
+  .map((r) => ({ value: senateUrlId(r.id), label: `${r.name}${isSpecialElection(r.electionType) ? " (special)" : ""}`, href: `/senate/${senateUrlId(r.id)}` }))
+  .sort((a, b) => a.label.localeCompare(b.label));
+
+/** Which seat this page is, and the state's other Senate seat page (seat 1 ↔ seat 2) for the seat
+ *  pill. `other` is null when that seat has no page (a state with only one seat on file). */
+function otherSenateSeat(id: string): { seat: 1 | 2; other: SeatNavLink | null } {
   const lc = id.toLowerCase();
   const seat2 = /2$/.test(lc);
   const otherId = seat2 ? lc.slice(0, -1) : `${lc}2`;
   const exists = senateData.some((r) => senateUrlId(r.id) === otherId)
     || (seat2 ? senateNoElection.some((e) => e.abbr.toLowerCase() === otherId) : senateHoldovers.some((e) => `${e.abbr.toLowerCase()}2` === otherId));
-  if (!exists) return { prev: null, next: null };
-  const link = { href: `/senate/${otherId}`, label: seat2 ? "Seat 1" : "Seat 2" };
-  return seat2 ? { prev: link, next: null } : { prev: null, next: link };
+  return { seat: seat2 ? 2 : 1, other: exists ? { href: `/senate/${otherId}`, label: seat2 ? "Seat 1" : "Seat 2" } : null };
 }
 
 export async function generateStaticParams() {
@@ -118,7 +123,6 @@ function NoElectionPage({
   party,
   nextElection,
   termLength,
-  seatLabel,
   heldParty,
   raceDesc,
   pastResults,
@@ -131,13 +135,11 @@ function NoElectionPage({
   party: "D" | "R" | "I";
   nextElection: number;
   termLength?: number;
-  seatLabel: string;
   // The incumbent's own label (King and Sanders are I here; `party` keeps their D caucus alignment).
   heldParty: "D" | "R" | "I";
   raceDesc?: string;
   pastResults?: DetailPastResult[];
 }) {
-  const partyLabel = party === "D" ? "Democrat" : party === "R" ? "Republican" : "Independent";
   const termYears = termLength ?? 6;
   const termStarted = String(nextElection - termYears);
   const accentColor = partyAccent(party);
@@ -154,32 +156,25 @@ function NoElectionPage({
       >
         <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
 
-          <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <StatePill name={state} abbr={abbr} />
-                <OfficePill office="senate" />
-                <HeldPill party={heldParty} />
-              </div>
-              <div className="mt-2">
-                <h1
-                  className="inline"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
-                >
-                  {state} U.S.{" "}
-                  <span className="whitespace-nowrap">
-                    Senate
-                    <SeatArrows {...otherSenateSeat(pageId)} label="Other Senate seat" />
-                  </span>
-                </h1>
-              </div>
-              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>{seatLabel}</div>
-              <div className="mt-4 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                Not on the ballot in November {electionYear} — next election scheduled for <strong style={{ color: "var(--app-text-primary)" }}>{nextElection}</strong>.
-              </div>
-            </div>
-
-            <CurrentIncumbentLedgerRow incumbentName={incumbent} state={state} party={party} photo={candidatePhoto(incumbent, state)} compact />
+          {/* Laid out like an active race's header: title at the same size, then the incumbent where
+              the matchup would be. */}
+          <div className="flex items-center gap-2 flex-wrap">
+            <StatePill name={state} abbr={abbr} />
+            <OfficePill office="senate" />
+            <HeldPill party={heldParty} />
+            <SeatPill {...otherSenateSeat(pageId)} />
+          </div>
+          <h1
+            className="mt-2"
+            style={{ fontFamily: "var(--font-serif)", fontSize: titleSize({ chars: `${state} U.S. Senate`.length, emPerChar: 0.58, reservePx: 0 }), fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
+          >
+            {state} U.S. Senate
+          </h1>
+          <div className="mt-5">
+            <CurrentIncumbentLedgerRow incumbentName={incumbent} state={state} party={party} photo={candidatePhoto(incumbent, state)} />
+          </div>
+          <div className="mt-4 text-sm" style={{ color: "var(--app-text-muted)" }}>
+            Not on the ballot in November {electionYear} — next election scheduled for <strong style={{ color: "var(--app-text-primary)" }}>{nextElection}</strong>.
           </div>
         </div>
       </div>
@@ -193,11 +188,13 @@ function NoElectionPage({
               title="About this Seat"
               description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
               items={[
-                { label: "Party", value: partyLabel, color: partyTextColor(party) },
+                incumbentFact(incumbent, party, candidatePageHref(incumbent, state)),
                 { label: "Elected", value: termStarted },
                 { label: "Next Election", value: String(nextElection) },
               ]}
-            />
+            >
+              <StateDemographicsSubsection abbr={abbr} />
+            </AboutRaceCard>
           </section>
 
           {pastResults && pastResults.length > 0 && (
@@ -226,7 +223,7 @@ function NoElectionPage({
                   ...(pastResults.length > 0 ? [{
                     key: "graph",
                     label: "Graph",
-                    content: <SeatVoteHistoryChart results={pastResults} electionType="Senate" bare />,
+                    content: <SeatVoteHistoryChart results={pastResults} electionType="Senate" />,
                   }] : []),
                 ]}
               />
@@ -262,7 +259,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           party={holdover.party}
           nextElection={holdover.nextElection}
           termLength={holdover.termLength}
-          seatLabel={`U.S. Senate · Seat 2 · Not Up in ${electionYear}`}
           heldParty={incumbentOwnParty(holdover.incumbent, holdover.party, holdover.pastResults)}
           raceDesc={holdover.raceDesc}
           pastResults={enrichSenateResults(holdover.pastResults, `${holdover.abbr.toLowerCase()}2`)}
@@ -282,7 +278,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           party={noEl.party}
           nextElection={noEl.nextElection}
           termLength={noEl.termLength}
-          seatLabel={`U.S. Senate · No Election in ${electionYear}`}
           heldParty={incumbentOwnParty(noEl.incumbent, noEl.party, noEl.pastResults)}
           raceDesc={noEl.raceDesc}
           pastResults={enrichSenateResults(noEl.pastResults, noEl.abbr.toLowerCase())}
@@ -314,8 +309,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
   const countyProjection = projectRaceResults("senate", race.id);
   const raceHistory = getRaceForecastHistory("senate", race);
   const quality = candidateQuality(race);
-  const demPct = Math.round(forecast.probability * 100);
-  const repPct = 100 - demPct;
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
   const { bg, text } = getRatingColors(forecastRating);
   // Headline shares are the projected vote's (shares of all votes, others set aside), except in a
@@ -326,6 +319,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
   const currentSenatorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentSenatorParty = incumbent?.party ?? race.seatParty ?? null;
   const enrichedPastResults = enrichSenateResults(race.pastResults, senateUrlId(race.id));
+  const seatNav = otherSenateSeat(id);
 
   // Prediction-market win probability (Dem share) — averages Polymarket/Kalshi when both exist.
   const marketDemProb = race.polyDem != null && race.kalshiDem != null
@@ -335,148 +329,66 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      {/* Hero */}
-      <div
-        style={{
-          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
-          minHeight: "300px",
-        }}
-      >
-        <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
-
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <StatePill name={race.name} abbr={abbr} />
-                <OfficePill office="senate" />
-                <span className={PILL} style={{ background: bg, color: text }}>
-                  {forecastRating}
-                </span>
-                {isSpecialElection(race.electionType) && <SpecialBadge />}
-                <HeldPill party={currentSenatorParty} />
-              </div>
-              <div className="mt-2">
-                <h1
-                  className="inline"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
-                >
-                  {race.name} U.S.{" "}
-                  <span className="whitespace-nowrap">
-                    Senate
-                    <SeatArrows {...otherSenateSeat(id)} label="Other Senate seat" />
-                  </span>
-                </h1>
-              </div>
-              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                {electionYear} {race.electionType ?? "Regular"} U.S. Senate Race{race.seatClass ? ` · Class ${race.seatClass}` : ""} · General {GENERAL_ELECTION}
-              </div>
-            </div>
-
-            <div className="shrink-0 sm:text-right">
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-                Projected Margin
-              </div>
-              <div
-                className="tabular-nums"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: projectedMarginColor(projectedMargin) }}
-              >
-                {formatProjectedMargin(projectedMargin)}
-              </div>
-            </div>
-          </div>
-
-          {/* Stat row */}
-          <div className="mt-8 grid grid-cols-3 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="min-w-0 pr-2 sm:pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl">
-                <span style={{ color: demPct >= repPct ? "var(--party-dem)" : "var(--party-rep)" }}>{Math.max(demPct, repPct)}% {demPct >= repPct ? "D" : "R"}</span>
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Win Prob.
-              </div>
-            </div>
-
-            <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : leanColor(pollMargin) }}>
-                {pollMargin == null ? "—" : fmtLean(pollMargin)}
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Polling Avg.
-              </div>
-            </div>
-
-            <div className="min-w-0 pl-2 sm:pl-8">
-              <div
-                className="text-xl font-extrabold tabular-nums sm:text-2xl"
-                style={{ color: marketDemProb == null ? "var(--app-text-very-muted)" : marketDemProb >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}
-              >
-                {marketDemProb == null
-                  ? "—"
-                  : `${Math.round((marketDemProb >= 0.5 ? marketDemProb : 1 - marketDemProb) * 100)}% ${marketDemProb >= 0.5 ? "D" : "R"}`}
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Markets
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <RaceHero
+        pills={<>
+          <StatePill name={race.name} abbr={abbr} />
+          <OfficePill office="senate" />
+          <span className={PILL} style={{ background: bg, color: text }}>
+            {forecastRating}
+          </span>
+          {isSpecialElection(race.electionType) && <SpecialBadge />}
+          <HeldPill party={currentSenatorParty} />
+          <SeatPill {...seatNav} />
+        </>}
+        nav={<RaceRail items={SENATE_RAIL} current={senateUrlId(race.id)} label="Choose a Senate race" />}
+        fitTitle={{ chars: `${race.name} U.S. Senate`.length, emPerChar: 0.58, reservePx: 0 }}
+        title={<>{race.name} U.S. Senate</>}
+        candidates={race.candidates ? [race.candidates.dem, race.candidates.rep] : null}
+        state={race.state}
+        fallbackSub={`${electionYear} ${race.electionType ?? "Regular"} U.S. Senate Race${race.seatClass ? ` · Class ${race.seatClass}` : ""} · General ${GENERAL_ELECTION}`}
+        projectedMargin={projectedMargin}
+        pollMargin={pollMargin}
+        pollsters={polling.avg?.n ?? null}
+        marketDemProb={marketDemProb}
+      />
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
 
-          <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Incumbent", value: currentSenatorName, href: candidatePageHref(currentSenatorName, race.state) },
-                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentSenatorParty) },
-                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-              ]}
-            />
-          </section>
 
           <section>
-            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            <LedgerSectionHead label={countyProjection ? "Projected Result" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
                 <CandidatesLedgerSection
+                  compact
                   candidates={withProjectedVotes([
                     { name: race.candidates.dem.name, state: race.state, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
                     { name: race.candidates.rep.name, state: race.state, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                   ], countyProjection)}
                 />
               );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} /> : rows;
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} footnote={false} /> : rows;
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
+            {countyProjection && (
+              <div className="mt-4">
+                <PastElectionCountyMap
+                  panelSize="wide"
+                  stateAbbr={abbr}
+                  stateName={race.name}
+                  counties={projectedCountyMapEntries(countyProjection)}
+                  demName={countyProjection.demName}
+                  repName={countyProjection.repName}
+                  demParty={countyProjection.demParty}
+                  repParty={countyProjection.repParty}
+                  height={240}
+                  caption={<div key="caption" className="px-1"><ProjectedVoteFootnote p={countyProjection} /></div>}
+                />
+              </div>
+            )}
           </section>
-
-          <section>
-            <LedgerSectionHead label="Fundraising" />
-            <FundraisingLedgerSection
-              dem={fundraising?.dem ?? null}
-              rep={fundraising?.rep ?? null}
-              demName={race.candidates?.dem.name}
-              repName={race.candidates?.rep.name}
-              source={fundraisingSource}
-              pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
-              fundraisingPts={fundraisingPts}
-              typicalGapPct={moneyTerm.structuralGapPct}
-              detail={financeDetail}
-            />
-          </section>
-
-          {polling.avg && race.candidates && (
-            <section>
-              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
-              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
-            </section>
-          )}
 
           <section>
             <LedgerSectionHead label="Forecast Calculation" />
@@ -505,28 +417,45 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
+              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Projected margin over time, rerun on polls available each day and the latest model. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
             </section>
           )}
 
           <section>
-            <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
-            {countyProjection ? (
-              <PastElectionCountyMap
-                panelSize="wide"
-                stateAbbr={abbr}
-                stateName={race.name}
-                counties={projectedCountyMapEntries(countyProjection)}
-                demName={countyProjection.demName}
-                repName={countyProjection.repName}
-                demParty={countyProjection.demParty}
-                repParty={countyProjection.repParty}
-                height={280}
-                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>}
-              />
-            ) : (
-              <div className="flex h-[280px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>No county projection for this race.</div>
-            )}
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
+              items={[
+                incumbentFact(currentSenatorName, currentSenatorParty, candidatePageHref(currentSenatorName, race.state)),
+                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
+              ]}
+            >
+              <StateDemographicsSubsection abbr={abbr} />
+            </AboutRaceCard>
+          </section>
+
+          {polling.avg && race.candidates && (
+            <section>
+              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} (${polling.avg.nEff.toFixed(1)} effective) · ${Math.round(polling.weight * 100)}% of the projection`} />
+              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
+            </section>
+          )}
+
+          <section>
+            <LedgerSectionHead label="Fundraising" />
+            <FundraisingLedgerSection
+              dem={fundraising?.dem ?? null}
+              rep={fundraising?.rep ?? null}
+              demName={race.candidates?.dem.name}
+              repName={race.candidates?.rep.name}
+              source={fundraisingSource}
+              pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
+              fundraisingPts={fundraisingPts}
+              typicalGapPct={moneyTerm.structuralGapPct}
+              detail={financeDetail}
+            />
           </section>
 
           {race.pastResults && race.pastResults.length > 0 && (
@@ -554,7 +483,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                   ...(enrichedPastResults.length > 0 ? [{
                     key: "graph",
                     label: "Graph",
-                    content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Senate" bare />,
+                    content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Senate" forecast={{ year: electionYear, margin: projectedMargin }} />,
                   }] : []),
                 ]}
               />

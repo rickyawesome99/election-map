@@ -40,7 +40,7 @@ export default function HouseDistrictMapTabs({ raceId, stateAbbr, margin, bounda
       {tabs.length > 1 && (
         <div className="mb-2 flex items-center gap-1" role="tablist" aria-label="District map view">
           {tabs.map((t) => (
-            <button key={t.key} role="tab" aria-selected={t.key === tab} onClick={() => setTab(t.key)} className="rounded-md px-2.5 py-1 text-xs font-semibold"
+            <button key={t.key} role="tab" aria-selected={t.key === tab} onClick={() => setTab(t.key)} className="ix-press rounded-md px-2.5 py-1 text-xs font-semibold"
               style={t.key === tab ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" } : { color: "var(--app-text-muted)" }}>{t.label}</button>
           ))}
         </div>
@@ -57,15 +57,15 @@ export default function HouseDistrictMapTabs({ raceId, stateAbbr, margin, bounda
           repName={projection.repName}
           demParty={projection.demParty}
           repParty={projection.repParty}
-          height={280}
+          height={240}
           caption={
             <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-              Projected 2026 result by county: the forecast margin ({projection.margin > 0 ? projection.repParty : projection.demParty}+{Math.abs(projection.margin).toFixed(1)}) spread over the district&apos;s counties by their lean, on {projection.votes.toLocaleString()} estimated votes. Split counties show the district&apos;s share, with the piece&apos;s own 2024 lean where the lines are unchanged. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.
+              Projected 2026 margin by county, from the district forecast and each county&apos;s lean. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.
             </div>
           }
         />
       ) : (
-        <div style={{ height: 280 }}>
+        <div style={{ height: 240 }}>
           <DistrictMiniMap raceId={raceId} stateAbbr={stateAbbr} margin={margin} boundaryYears={boundaryYears} />
         </div>
       )}

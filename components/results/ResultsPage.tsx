@@ -12,7 +12,9 @@ import { flipBackground } from "@/components/FlipStripes";
 import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
-import { projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
+import { nightObservations, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
+import { fitNight, type NightFit } from "@/lib/resultsNight";
+import NightPanel from "@/components/results/NightPanel";
 import { closeMinutes, fmtClose, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
@@ -225,17 +227,22 @@ export default function ResultsPage() {
 
   // Replaying an archive shows whatever it holds, test data included.
   const showTest = replay != null;
-  const rowsByOffice = useMemo(() => {
+  // Every race's live state, then the night fit over all of them (what the counties finished
+  // anywhere imply for the races still out), then each race projected against that baseline.
+  const { rowsByOffice, nightFit } = useMemo(() => {
     void liveVersion;
-    const out = {} as Record<ResultsOffice, ResultsRow[]>;
+    const pairs = {} as Record<ResultsOffice, { prior: RacePrior; live: LiveRace | null }[]>;
     for (const o of RESULTS_OFFICES) {
-      out[o] = (priors?.[o].races ?? []).map((prior) => {
+      pairs[o] = (priors?.[o].races ?? []).map((prior) => {
         const raw = prior.civicId ? liveRef.current.get(prior.civicId) ?? null : null;
         const live = raw && raw.testData && !showTest ? null : raw;
-        return { prior, live, proj: projectRace(prior, live) };
+        return { prior, live };
       });
     }
-    return out;
+    const fit: NightFit = fitNight(RESULTS_OFFICES.flatMap((o) => pairs[o].flatMap(({ prior, live }) => nightObservations(prior, live))));
+    const out = {} as Record<ResultsOffice, ResultsRow[]>;
+    for (const o of RESULTS_OFFICES) out[o] = pairs[o].map(({ prior, live }) => ({ prior, live, proj: projectRace(prior, live, undefined, fit) }));
+    return { rowsByOffice: out, nightFit: fit };
   }, [priors, liveVersion, showTest]);
 
   const testSeen = useMemo(() => { void liveVersion; for (const l of liveRef.current.values()) if (l.testData) return true; return false; }, [liveVersion]);
@@ -470,6 +477,9 @@ export default function ResultsPage() {
         </div>
       </section>
       </div>
+
+      {/* The night model: what the counties finished anywhere imply for the races still out */}
+      {anyIn && <NightPanel fit={nightFit} rows={RESULTS_OFFICES.flatMap((o) => rowsByOffice[o])} onSelect={select} />}
 
       {/* Races: the sortable table, or the same races by poll-closing time */}
       <section>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useId, useState } from "react";
+import { isRealName, lastName } from "@/lib/personName";
 
 // The forecast over time (lib/forecastHistory.ts): one small chart per chamber, the day's number as
 // a 2px line over a background tinted by which party it favors — above the control line Democratic,
@@ -130,9 +131,13 @@ export default function ForecastTrend({ days }: { days: ForecastTrendDay[] }) {
   );
 }
 
+const PARTY_TEXT = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)" } as const;
+const RACE_HEIGHT = 140;
+
 /** One race's forecast over time: the projected margin, signed toward the candidate favored by
- *  today's margin (so the line never flips mid-series) on a scale symmetric about the zero line,
- *  tinted their party above it and the opponent's below. The caption carries that day's win odds. */
+ *  today's margin (so the line never flips mid-series) on a scale symmetric about the zero line.
+ *  The line and the area between it and the zero line take the color of whoever leads there. Scrubbing
+ *  the chart rewrites the headline above it (margin, win odds, date); leaving it puts today back. */
 export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
   dates: string[];
   probD: number[];
@@ -141,6 +146,8 @@ export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
   dem: { name: string; party: Party };
   rep: { name: string; party: Party };
 }) {
+  const [hover, setHover] = useState<number | null>(null);
+  const clipId = useId().replace(/:/g, "");
   const n = margins.length;
   const demFavored = margins[n - 1] < 0 || (margins[n - 1] === 0 && probD[n - 1] >= 0.5);
   const favored = demFavored ? dem : rep;
@@ -151,13 +158,80 @@ export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
   // The scale: the series' largest lead rounded up to a multiple of 5, never under 5 either way.
   const lim = Math.max(5, Math.ceil(Math.max(...values.map(Math.abs)) / 5) * 5);
   const margin = (m: number) => (m === 0 ? "Even" : `${m < 0 ? "D" : "R"}+${Math.abs(m).toFixed(1)}`);
-  // The caption names whoever led on that day, which early in the series may be today's underdog.
-  const leader = (i: number) => (wins[i] >= 0.5 ? `${favored.name} wins ${pct(wins[i])} of sims` : `${other.name} wins ${pct(1 - wins[i])} of sims`);
+
+  const H = RACE_HEIGHT;
+  const x = (i: number) => (n > 1 ? (i / (n - 1)) * 100 : 50);
+  const y = (v: number) => H / 2 - (v / lim) * (H / 2);
+  const zeroY = H / 2;
+  const line = values.map((v, i) => `${i ? "L" : "M"}${x(i).toFixed(2)},${y(v).toFixed(2)}`).join("");
+  const area = `${line}L${x(n - 1).toFixed(2)},${zeroY}L${x(0).toFixed(2)},${zeroY}Z`;
+  const shown = hover ?? n - 1;
+  const shownParty = values[shown] >= 0 ? favored.party : other.party;
+  const short = (name: string) => (isRealName(name) ? lastName(name) : name);
+  const leader = wins[shown] >= 0.5 ? `${short(favored.name)} wins ${pct(wins[shown])} of sims` : `${short(other.name)} wins ${pct(1 - wins[shown])} of sims`;
+
+  const months = dates.flatMap((d, i) => (d.endsWith("-01") ? [{ i, label: new Date(`${d}T12:00:00`).toLocaleDateString("en-US", { month: "short" }) }] : []));
+  const labeled = months.filter((m) => x(m.i) <= 93);
+
+  const pick = (clientX: number, el: Element) => {
+    const r = el.getBoundingClientRect();
+    setHover(Math.max(0, Math.min(n - 1, Math.round(((clientX - r.left) / r.width) * (n - 1)))));
+  };
+
   return (
-    <TrendPanel label="Projected margin" dates={dates} values={values} domain={[-lim, lim]} line={0}
-      axis={[`${favored.party}+${lim}`, "Even", `${other.party}+${lim}`]}
-      fills={[favored.party, other.party]} height={130}
-      headline={(v) => `${favored.name} ${margin(demFavored ? -v : v)}`}
-      caption={(i) => `${margin(margins[i])} · ${leader(i)}`} />
+    <div className="min-w-0 py-4">
+      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1" aria-live="polite">
+        <span className="text-[30px] font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: PARTY_TEXT[shownParty] }}>
+          {margin(margins[shown])}
+        </span>
+        <span className="text-[12px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+          <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{leader}</span>
+          {" · "}Projected margin · {hover == null ? "today, " : ""}{longDate(dates[shown])}
+        </span>
+      </div>
+      <div className="mt-4 flex">
+        <div className="relative w-9 shrink-0 text-[9px] font-semibold tabular-nums" style={{ color: "var(--app-text-very-muted)", height: H }}>
+          <span className="absolute right-1.5 top-0 -translate-y-1/2">{`${favored.party}+${lim}`}</span>
+          <span className="absolute right-1.5 -translate-y-1/2" style={{ top: zeroY }}>Even</span>
+          <span className="absolute bottom-0 right-1.5 translate-y-1/2">{`${other.party}+${lim}`}</span>
+        </div>
+        <div className="relative min-w-0 flex-1 pr-1.5">
+          <svg
+            className="block w-full cursor-crosshair touch-none"
+            viewBox={`0 0 100 ${H}`}
+            preserveAspectRatio="none"
+            height={H}
+            role="img"
+            aria-label={`Projected margin from ${longDate(dates[0])} to ${longDate(dates[n - 1])}: ${margin(margins[0])} then, ${margin(margins[n - 1])} now`}
+            onPointerMove={(e) => pick(e.clientX, e.currentTarget)}
+            onPointerDown={(e) => pick(e.clientX, e.currentTarget)}
+            onPointerLeave={() => setHover(null)}
+          >
+            <defs>
+              <clipPath id={`${clipId}-a`}><rect x={0} y={0} width={100} height={zeroY} /></clipPath>
+              <clipPath id={`${clipId}-b`}><rect x={0} y={zeroY} width={100} height={H - zeroY} /></clipPath>
+            </defs>
+            {months.map((m) => <line key={m.i} x1={x(m.i)} x2={x(m.i)} y1={0} y2={H} stroke="var(--app-border)" strokeWidth={1} vectorEffect="non-scaling-stroke" />)}
+            <line x1={0} x2={100} y1={0} y2={0} stroke="var(--app-border)" strokeWidth={1} vectorEffect="non-scaling-stroke" />
+            <line x1={0} x2={100} y1={H} y2={H} stroke="var(--app-border)" strokeWidth={1} vectorEffect="non-scaling-stroke" />
+            {/* Whoever leads: the favorite's color above the zero line, the opponent's below. */}
+            <path d={area} fill={PARTY_FILL[favored.party]} opacity={0.14} clipPath={`url(#${clipId}-a)`} />
+            <path d={area} fill={PARTY_FILL[other.party]} opacity={0.14} clipPath={`url(#${clipId}-b)`} />
+            <line x1={0} x2={100} y1={zeroY} y2={zeroY} stroke="var(--app-text-muted)" strokeWidth={1} strokeDasharray="3 3" vectorEffect="non-scaling-stroke" />
+            <path d={line} fill="none" stroke={PARTY_TEXT[favored.party]} strokeWidth={2} strokeLinejoin="round" vectorEffect="non-scaling-stroke" clipPath={`url(#${clipId}-a)`} />
+            <path d={line} fill="none" stroke={PARTY_TEXT[other.party]} strokeWidth={2} strokeLinejoin="round" vectorEffect="non-scaling-stroke" clipPath={`url(#${clipId}-b)`} />
+            {hover != null && <line x1={x(hover)} x2={x(hover)} y1={0} y2={H} stroke="var(--app-text-primary)" strokeWidth={1} vectorEffect="non-scaling-stroke" />}
+          </svg>
+          {/* The day's point, drawn in HTML so the stretched viewBox does not squash it. */}
+          <span
+            className="pointer-events-none absolute h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full"
+            style={{ left: `calc(${x(shown)}% - ${(x(shown) / 100) * 6}px)`, top: y(values[shown]), background: PARTY_TEXT[shownParty], boxShadow: "0 0 0 2px var(--app-bg)" }}
+          />
+          <div className="relative mt-1 h-3 text-[10px] font-medium" style={{ color: "var(--app-text-very-muted)" }}>
+            {labeled.map((m) => <span key={m.i} className="absolute -translate-x-1/2" style={{ left: `${x(m.i)}%` }}>{m.label}</span>)}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }

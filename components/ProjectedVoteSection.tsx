@@ -10,7 +10,6 @@ import type { ProjectedRaceResult } from "@/lib/countyProjection";
 type Party = "D" | "R" | "I";
 
 const partyColor = (p: Party) => (p === "R" ? "var(--party-rep)" : p === "I" ? "var(--party-ind)" : "var(--party-dem)");
-const partyFill = (p: Party) => (p === "R" ? "var(--party-rep-fill)" : p === "I" ? "var(--party-ind-fill)" : "var(--party-dem-fill)");
 const partyName = (p: Party) => (p === "R" ? "Republican" : p === "I" ? "Independent" : "Democratic");
 const PLACEHOLDER = /^(Democratic|Republican|Generic) (Candidate|Democrat|Republican)$|^TBD$|^(Democrat|Republican)$/i;
 const fmtInt = (n: number) => n.toLocaleString("en-US");
@@ -28,26 +27,35 @@ export function withProjectedVotes<T extends { pct: number; votes?: number }>(ca
   ];
 }
 
+// The section's closing note. Exported so a page that puts the county map under the section can
+// hang it beneath the map instead (pass footnote={false} here).
+export function ProjectedVoteFootnote({ p }: { p: ProjectedRaceResult }) {
+  const decided = p.contest === "uncontested-D" || p.contest === "uncontested-R";
+  const sameParty = p.contest === "same-party-D" || p.contest === "same-party-R";
+  return (
+    <p className="mt-3 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+      {sameParty
+        ? "The total is the 2026 turnout estimate."
+        : decided
+        ? "Only one candidate is on the ballot, so every projected vote goes to them. The total is the 2026 turnout estimate, figured as if the seat were contested."
+        : <>The forecast margin applied to the 2026 turnout estimate, county by county, with each county&apos;s 2024 third-party share set aside for other candidates.</>}{" "}
+      <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.
+    </p>
+  );
+}
+
 // `candidates`, when given, replaces the section's own candidate rows: the race pages pass their
 // portrait rows (CandidatesLedgerSection fed through withProjectedVotes) so one section carries both.
-export default function ProjectedVoteSection({ p, candidates, state }: { p: ProjectedRaceResult; candidates?: ReactNode; /** The race's state, for the fallback candidate links. */ state?: string }) {
+export default function ProjectedVoteSection({ p, candidates, state, footnote = true }: { p: ProjectedRaceResult; candidates?: ReactNode; /** The race's state, for the fallback candidate links. */ state?: string; footnote?: boolean }) {
   const decided = p.contest === "uncontested-D" || p.contest === "uncontested-R";
   // Two nominees of one party: the forecast only says the party keeps the seat, not which of them
   // wins, so the section shows the electorate but no split between them.
   const sameParty = p.contest === "same-party-D" || p.contest === "same-party-R";
-  // R-positive margin → the label of the side it favours: its party, or, in a same-party contest, its candidate.
-  // A projection always names its leader (the exact sign decides): "R+0.0", "EVEN" only at a true tie.
-  const sideLabel = (m: number) => (m < 0 ? p.demParty : p.repParty);
-  const sideColor = (m: number) => (m === 0 ? "var(--app-text-primary)" : partyColor(m < 0 ? p.demParty : p.repParty));
-  const fmtM = (m: number) => (m === 0 ? "EVEN" : `${sideLabel(m)}+${Math.abs(m).toFixed(1)}`);
 
   const cands = [
     { name: p.demName, party: p.demParty, votes: p.demVotes, share: p.shares.dem },
     { name: p.repName, party: p.repParty, votes: p.repVotes, share: p.shares.rep },
   ].filter((c) => !decided || c.votes > 0).sort((a, b) => b.votes - a.votes);
-  const margin = p.shares.rep - p.shares.dem;
-  const netVotes = Math.abs(p.repVotes - p.demVotes);
-  const [lo80, hi80] = p.interval80;
   const prior = p.turnout.prior?.votes != null ? { year: p.turnout.prior.year, votes: p.turnout.prior.votes } : null;
   const change = prior ? pct(p.votes - prior.votes, prior.votes) : null;
 
@@ -59,13 +67,7 @@ export default function ProjectedVoteSection({ p, candidates, state }: { p: Proj
           Both nominees are {p.demParty === "R" ? "Republicans" : "Democrats"}, so the seat stays {partyName(p.demParty)} either way. The forecast doesn&apos;t split the vote between {p.demName} and {p.repName}; the electorate below is the 2026 turnout estimate.
         </p>
       ) : (<>
-      <div className="flex h-3.5 overflow-hidden rounded-sm" style={{ background: "var(--map-unfilled)" }} aria-hidden="true">
-        <span style={{ width: `${pct(p.demVotes, p.votes)}%`, background: partyFill(p.demParty) }} />
-        {p.othVotes > 0 && <span style={{ width: `${pct(p.othVotes, p.votes)}%`, background: "var(--party-ind-fill)", opacity: 0.5 }} />}
-        <span style={{ width: `${pct(p.repVotes, p.votes)}%`, background: partyFill(p.repParty) }} />
-      </div>
-
-      <div className="mt-2">
+      <div>
         {candidates ?? cands.map((c) => {
           const color = partyColor(c.party);
           return (
@@ -90,7 +92,7 @@ export default function ProjectedVoteSection({ p, candidates, state }: { p: Proj
             <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}>Others</div>
             <div className="text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
               {candidates ? (<>
-                <div className="text-xl font-extrabold">{p.shares.oth.toFixed(1)}%</div>
+                <div className="text-2xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{p.shares.oth.toFixed(1)}%</div>
                 <div className="text-[11px]">{fmtInt(p.othVotes)} votes</div>
               </>) : (<>
                 <div className="text-sm font-bold">{fmtInt(p.othVotes)}</div>
@@ -103,14 +105,9 @@ export default function ProjectedVoteSection({ p, candidates, state }: { p: Proj
 
       </>)}
 
-      <div className={`mt-3 grid gap-3 ${sameParty ? "grid-cols-2" : "grid-cols-3"}`}>
-        {!sameParty && <div style={{ borderTop: "1px solid var(--app-border)", paddingTop: 6 }}>
-          <div className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Margin</div>
-          <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: sideColor(margin) }}>{decided ? "Unopposed" : fmtM(margin)}</div>
-          <div className="text-[11px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
-            {fmtInt(netVotes)} votes{!decided && <><br />80%: {fmtM(lo80)} to {fmtM(hi80)}</>}
-          </div>
-        </div>}
+      {/* Contested and uncontested races show the votes on the candidate rows above; a same-party
+          contest has no split, so the electorate is all it shows. */}
+      {sameParty && <div className="mt-3 grid grid-cols-2 gap-3">
         <div style={{ borderTop: "1px solid var(--app-border)", paddingTop: 6 }}>
           <div className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Total votes</div>
           <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{fmtInt(p.votes)}</div>
@@ -123,16 +120,9 @@ export default function ProjectedVoteSection({ p, candidates, state }: { p: Proj
             of eligible voters{prior && change != null ? <><br />{change >= 0 ? "+" : "−"}{Math.abs(change).toFixed(1)}% vs {fmtInt(prior.votes)} in {prior.year}</> : null}
           </div>
         </div>
-      </div>
+      </div>}
 
-      <p className="mt-3 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-        {sameParty
-          ? "The total is the 2026 turnout estimate."
-          : decided
-          ? "Only one candidate is on the ballot, so every projected vote goes to them. The total is the 2026 turnout estimate, figured as if the seat were contested."
-          : <>The forecast margin applied to the 2026 turnout estimate, county by county, with each county&apos;s 2024 third-party share set aside for other candidates.</>}{" "}
-        <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.
-      </p>
+      {footnote && <ProjectedVoteFootnote p={p} />}
     </div>
   );
 }

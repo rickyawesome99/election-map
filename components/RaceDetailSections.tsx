@@ -4,6 +4,8 @@ export { LedgerSectionHead };
 import type { CSSProperties, ReactNode } from "react";
 import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
+import DemographicsStrip from "@/components/DemographicsStrip";
+import { stateDemographics } from "@/data/demographics";
 import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
@@ -51,6 +53,51 @@ function DetailInfoValue({ value, href, color }: DetailInfoItem) {
   return href
     ? <Link prefetch={false} href={href} className="hover:underline underline-offset-2" style={{ color: color ?? "var(--app-text-primary)" }}>{value}</Link>
     : <span style={{ color: color ?? "var(--app-text-primary)" }}>{value}</span>;
+}
+
+/** An "Incumbent" fact: "Kevin Hern (R)", in the party's color, linked to their page when there is one. */
+export function incumbentFact(name: string | null | undefined, party: string | null | undefined, href?: string | null): DetailInfoItem {
+  if (!name) return { label: "Incumbent", value: "Vacant" };
+  const color = party === "D" ? "var(--party-dem)" : party === "R" ? "var(--party-rep)" : party ? "var(--party-ind)" : undefined;
+  return { label: "Incumbent", value: party ? `${name} (${party})` : name, href, color };
+}
+
+// Label-over-value facts: the same figure style as the Projected Result's
+// footer blocks. Used by the About sections and their Demographics subsection.
+export function LedgerFacts({ items, className }: { items: DetailInfoItem[]; className?: string }) {
+  return (
+    <dl className={`grid gap-x-6 gap-y-3 ${className ?? ""}`} style={{ gridTemplateColumns: "repeat(auto-fill, minmax(10.5rem, 1fr))" }}>
+      {items.map((item) => (
+        <div key={item.label}>
+          <dt className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{item.label}</dt>
+          <dd className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700 }}><DetailInfoValue {...item} /></dd>
+        </div>
+      ))}
+    </dl>
+  );
+}
+
+// A subsection inside a ledger section: a small label on a thin rule, with an optional note at right.
+export function LedgerSubhead({ label, meta }: { label: string; meta?: ReactNode }) {
+  return (
+    <div className="mt-7 mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-0.5 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
+      <h3 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{label}</h3>
+      {meta && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
+    </div>
+  );
+}
+
+// The Senate and Governor pages' Demographics subsection: the state's ACS figures, laid out like
+// the House pages' district ones. State lines never move, so there is no vintage caveat.
+export function StateDemographicsSubsection({ abbr }: { abbr: string }) {
+  const demographics = stateDemographics[abbr.toUpperCase()];
+  if (!demographics) return null;
+  return (
+    <>
+      <LedgerSubhead label="Demographics" meta="ACS 2020–24 5-year estimates." />
+      <DemographicsStrip {...demographics} layout="grid" />
+    </>
+  );
 }
 
 type CandidateCardEntry = {
@@ -201,6 +248,7 @@ export function AboutRaceCard({
   items,
   compact = false,
   bare = false,
+  children,
 }: {
   title: string;
   // Optional: a race whose lead paragraph has nothing to say yet renders the label/value row on
@@ -209,25 +257,22 @@ export function AboutRaceCard({
   description?: string;
   items: DetailInfoItem[];
   compact?: boolean;
-  // Renders as a plain paragraph + inline label/value row, no card chrome or boxed tiles —
+  // Renders as a plain paragraph + a row of ruled facts, no card chrome or boxed tiles —
   // the caller supplies its own section header (see LedgerSectionHead).
   bare?: boolean;
+  /** Subsections under the facts (bare only), e.g. the House page's demographics. */
+  children?: ReactNode;
 }) {
   if (bare) {
     return (
       <div>
+        {items.length > 0 && <LedgerFacts items={items} />}
         {description && (
-          <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--app-text-primary)" }}>
+          <p className={`text-[15px] leading-relaxed ${items.length > 0 ? "mt-4" : ""}`} style={{ color: "var(--app-text-primary)", textWrap: "pretty" }}>
             {description}
           </p>
         )}
-        <div className="flex flex-wrap gap-x-6 gap-y-1.5">
-          {items.map((item) => (
-            <div key={item.label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
-              {item.label} <span className="font-bold"><DetailInfoValue {...item} /></span>
-            </div>
-          ))}
-        </div>
+        {children}
       </div>
     );
   }
@@ -690,8 +735,11 @@ export function CandidatesAndPollsCard({
 // party label, tabular vote share. Win probability and polls move up into the page's own hero stat row.
 export function CandidatesLedgerSection({
   candidates,
+  compact = false,
 }: {
   candidates: [CandidateCardEntry, CandidateCardEntry];
+  /** Tighter row spacing, for the race pages' Projected Result section that also carries the map. */
+  compact?: boolean;
 }) {
   return (
     <div>
@@ -703,7 +751,7 @@ export function CandidatesLedgerSection({
         return (
           <div
             key={`${candidate.name}-${candidate.party}`}
-            className="flex items-center justify-between gap-4 py-4"
+            className={`flex items-center justify-between ${compact ? "gap-3 py-2.5" : "gap-4 py-4"}`}
             style={{ borderBottom: isLast ? "none" : "1px solid var(--app-border)" }}
           >
             <div className="flex items-center gap-4 min-w-0">
@@ -742,13 +790,13 @@ export function CandidatesLedgerSection({
                     <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
                   )}
                 </div>
-                <div className="text-sm font-medium mt-0.5" style={{ color: accentColor }}>{displayParty}</div>
+                <div className={`text-sm font-medium${compact ? "" : " mt-0.5"}`} style={{ color: accentColor }}>{displayParty}</div>
               </div>
             </div>
             <div className="shrink-0 text-right tabular-nums" style={{ color: accentColor }}>
-              <div className="text-3xl font-extrabold">{fmtCandidatePct(candidate.pct)}%</div>
+              <div className="text-3xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{fmtCandidatePct(candidate.pct)}%</div>
               {candidate.votes != null && (
-                <div className="text-sm font-medium mt-0.5">{candidate.votes.toLocaleString("en-US")} votes</div>
+                <div className={`text-sm font-medium${compact ? "" : " mt-0.5"}`}>{candidate.votes.toLocaleString("en-US")} votes</div>
               )}
             </div>
           </div>
@@ -1126,7 +1174,7 @@ export function PollAggregateCard({ rows }: { rows: PollRow[] }) {
 const LEDGER_ROW_STYLE = { borderBottom: "1px solid var(--app-border)" } as const;
 // A figure inside the Forecast Calculation's serif sentence: set in the sans, in its party color.
 function LedgerFig({ color, children }: { color: string; children: ReactNode }) {
-  return <b className="tabular-nums" style={{ fontFamily: "var(--font-ibm-plex-sans), sans-serif", fontSize: "0.92em", color }}>{children}</b>;
+  return <b className="font-bold tabular-nums" style={{ color }}>{children}</b>;
 }
 
 export function ForecastCalculationCard({
@@ -1218,60 +1266,48 @@ export function ForecastCalculationCard({
   const fmtNat = (v: number) => (Math.abs(v) < 0.05 ? "EVEN" : `${v < 0 ? "D" : "R"}+${Math.abs(v).toFixed(1)}`);
   const gbTooltip = (
     <>
-      Generic ballot {fmtNat(env.gb)} converted to the model&apos;s environment scale ({fmtNat(env.eHat)}), then scaled by this state&apos;s elasticity β*.
+      How much the national mood is expected to help one party this year. Polls asking voters which party they&apos;d back for Congress show {fmtNat(env.gb)}. After adjusting for how those polls have compared with actual results in past elections, the model counts that as {fmtNat(env.eHat)} nationally.
       <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>E = c + s × (GB + ½ × historical poll miss) · row = β* × E</span>
+      Some states swing harder with the national mood than others, so that figure is scaled up or down by how much this state has usually moved.
       <br /><br />
-      The conversion is fitted from the model&apos;s own environment against the House popular vote. Polling error is carried as uncertainty (σ_E ≈ {env.sigmaE.toFixed(1)} pts), not as a prediction.
+      The national mood could still shift by about {env.sigmaE.toFixed(1)} points either way before election day. That doesn&apos;t change this number, but it is built into the win chance.
     </>
   );
   const appointedShare = FORECAST_CONSTANTS.APPOINTED_INCUMBENCY_SHARE;
   const incTooltip = (
     <>
-      Points for an incumbent seeking re-election. The Senate and Governor values are fitted by the model alongside TPL; the House value is a fixed prior.
-      <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±{(incumbentAdvantage().H ?? 0).toFixed(1)} · Senate ±{(incumbentAdvantage().S ?? 0).toFixed(1)} · Governor ±{(incumbentAdvantage().G ?? 0).toFixed(1)}</span>
-      <br /><br />
-      A Republican incumbent moves the margin toward R, a Democratic incumbent toward D, and an open seat scores 0. An independent who caucuses with a party counts as that party&apos;s incumbent.
-      {FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY.H > 0 && <><br /><br />House incumbents in close seats get up to {FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY.H} more points: the full amount when the seat is even before incumbency, fading to 0 at ±{FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY_WIDTH}. Incumbents in competitive House seats have beaten the model on both sides in 2022 and 2024. The value shown includes it.</>}
+      A boost for a candidate running for re-election, since officeholders usually do better than a newcomer would. It&apos;s worth about {(incumbentAdvantage().H ?? 0).toFixed(1)} points in House races, {(incumbentAdvantage().S ?? 0).toFixed(1)} in Senate races and {(incumbentAdvantage().G ?? 0).toFixed(1)} in governor races. Open seats get 0.
+      {FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY.H > 0 && <><br /><br />House incumbents in close districts get up to {FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY.H} extra points, because in 2022 and 2024 they beat expectations in tight races. The number shown includes that.</>}
       <br /><br />
       {appointedShare === 0
-        ? "An incumbent who was appointed or succeeded to the seat and has never won it is scored as an open seat: past appointees have run no better than a generic nominee."
-        : `An incumbent who was appointed or succeeded to the seat and has never won it receives ${Math.round(appointedShare * 100)}% of the advantage.`}
+        ? "Someone appointed to the seat who has never won an election for it gets no boost: appointees have historically done no better than any other nominee."
+        : `Someone appointed to the seat who has never won an election for it gets ${Math.round(appointedShare * 100)}% of the boost.`}
       {appointedIncumbent ? " That applies to this race." : ""}
     </>
   );
-  const fmtGap = (v: number) => (Math.abs(v) < 0.5 ? "even" : `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(0)}%`);
-  const MK = FORECAST_CONSTANTS.MONEY_K, MC = FORECAST_CONSTANTS.MONEY_CAP;
+  const fmtGap = (v: number) => (Math.abs(v) < 0.5 ? "even" : `${v > 0 ? "Republican" : "Democrat"} +${Math.abs(v).toFixed(0)} pts`);
   const frTooltip = (
     <>
-      Points for money raised beyond what a race like this normally sees. Incumbents and the favored party almost always
-      out-raise, and lean and incumbency already account for that, so only the difference from the typical gap counts.
-      <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = k × ({FORECAST_CONSTANTS.PARTIAL_CYCLE_GAP_SCALE.H} × gap% − typical gap%), capped</span>
-      <br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>k / cap: House {MK.H} / ±{MC.H} · Senate {MK.S} / ±{MC.S} · Governor {MK.G} / ±{MC.G}</span>
-      <br /><br />
-      gap% = (R receipts − D receipts) / total × 100, scaled by {FORECAST_CONSTANTS.PARTIAL_CYCLE_GAP_SCALE.H} because September gaps close by about a tenth before
-      election day. Where a side&apos;s receipts are unknown the typical gap is assumed (0 pts).
+      Credit for a fundraising edge bigger than usual. Incumbents and the favored party nearly always raise more, and the model already accounts for that, so only the unusual part of the gap counts. The effect is capped, so money alone can only move a race a few points.
       {moneyTerm && (
         <>
           <br /><br />
           {moneyTerm.known && moneyTerm.gapPct != null && moneyTerm.residualGapPct != null
-            ? <>This race: filed gap {fmtGap(moneyTerm.gapPct)} · typical {moneyTerm.structuralGapPct == null ? "n/a" : fmtGap(moneyTerm.structuralGapPct)} · beyond typical {fmtGap(moneyTerm.residualGapPct)}</>
-            : <>This race: receipts not on file · typical gap {moneyTerm.structuralGapPct == null ? "n/a" : fmtGap(moneyTerm.structuralGapPct)}</>}
+            ? <>In this race, the money gap (difference in each side&apos;s share of the total raised) is {fmtGap(moneyTerm.gapPct)}. A race like this would usually see {moneyTerm.structuralGapPct == null ? "no typical figure" : fmtGap(moneyTerm.structuralGapPct)}, so the unusual part is {fmtGap(moneyTerm.residualGapPct)}.</>
+            : <>Fundraising totals for this race aren&apos;t on file, so it&apos;s treated as a typical race (0 points).</>}
         </>
       )}
     </>
   );
-  const fmtEffect = (v: number) => `${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(1)}`;
-  const describe = (c: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null | undefined, label: string) =>
-    c ? `${c.name}: ${fmtEffect(c.effect)} over ${c.n} race${c.n === 1 ? "" : "s"} (latest ${c.latestYear})` : `${label}: no general-election record on file, scored as a generic nominee`;
+  const describe = (c: { name: string; effect: number; n: number; latestYear: number; latestOffice: string } | null | undefined, label: string) => {
+    if (!c) return `${label}: no past general-election record, so counted as an average candidate.`;
+    const races = `${c.n} race${c.n === 1 ? "" : "s"}, most recent ${c.latestYear}`;
+    if (Math.abs(c.effect) < 0.05) return `${c.name}: has run about even with a typical candidate (${races}).`;
+    return `${c.name}: has run ${Math.abs(c.effect).toFixed(1)} points ${c.effect > 0 ? "ahead of" : "behind"} a typical candidate (${races}).`;
+  };
   const candTooltip = (
     <>
-      Each nominee&apos;s track record: how much better than a generic nominee of their party they have run, net of lean, environment, incumbency and money (ridge-estimated, recency-weighted, replacement level = 0).
-      <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = weight × (R effect − D effect) · weight H {FORECAST_CONSTANTS.QUALITY_WEIGHT.H} · S {FORECAST_CONSTANTS.QUALITY_WEIGHT.S} · G {FORECAST_CONSTANTS.QUALITY_WEIGHT.G}</span>
+      How each nominee has done in past races compared with a typical candidate from their party running in the same place and year. Candidates who have consistently outperformed get credit; those who have underperformed lose some. Recent races count more.
       <br /><br />
       {describe(candidateDetail?.dem, "Democrat")}
       <br />
@@ -1280,36 +1316,26 @@ export function ForecastCalculationCard({
   );
   const modelTooltip = (
     <>
-      Sum of State/District TPL, Environment, Incumbent, Fundraising, and Candidate points.
-      <br /><br />
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Model = TPL + Environment + Incumbent + Fundraising + Candidates</span>
+      The forecast before looking at polls: the {tplLabel ? tplLabel.replace(/ TPL$/, "").toLowerCase() : "state"}&apos;s usual partisan lean, plus the adjustments for the national mood, incumbency, fundraising and the candidates, added together.
     </>
   );
-  const pollK = FORECAST_CONSTANTS.POLL_K;
   const pollTooltip = !polling?.avg
-    ? "No general-election polls on file for this race — the projection is the Model alone."
+    ? "No general-election polls for this race yet, so the forecast is the model alone."
     : (
       <>
-        Weighted average of {polling.avg.n} pollster{polling.avg.n === 1 ? "" : "s"}&apos; latest surveys (full weight for 14 days, then a recency half-life of {FORECAST_CONSTANTS.POLL_HALF_LIFE_DAYS[polling.key[0] as "H" | "S" | "G"] ?? 14} days, weight ∝ √sample) — {polling.avg.nEff.toFixed(1)} effective poll{polling.avg.nEff >= 1.05 || polling.avg.nEff < 0.95 ? "s" : ""}.
+        An average of the latest poll from each of {polling.avg.n} pollster{polling.avg.n === 1 ? "" : "s"}. Recent polls and polls with more respondents count more.
         <br /><br />
-        <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>weight = min({FORECAST_CONSTANTS.POLL_W_MAX}, n_eff / (n_eff + k)) · k: House {pollK.H} · Senate {pollK.S} · Governor {pollK.G}</span>
+        Before averaging, each poll gets a few fixes: undecided voters are split between the candidates in proportion to their support; older polls are nudged for how the national mood has shifted since they were taken; and pollsters that consistently lean toward one party this year have that lean taken out.
         <br /><br />
-        Undecided voters: up to {FORECAST_CONSTANTS.POLL_UNDECIDED_CAP} points of each poll&apos;s respondents choosing neither candidate are split between them in proportion to their shares, so a poll with many undecided voters is not read as closer than it is; anything beyond that is treated as a third candidate&apos;s vote and left out{Math.abs(polling.avg.undecided) < 0.05 ? "" : ` (${fmtMargin(polling.avg.undecided)} on this average)`}.
-        <br /><br />
-        Each poll is aged to today: moved by how far the generic ballot has shifted since the poll was in the field, scaled by the state&apos;s elasticity β*{Math.abs(polling.avg.aging) < 0.05 ? "" : ` (${fmtMargin(polling.avg.aging)} on this average)`}.
-        <br /><br />
-        Each poll is also read net of its pollster&apos;s house effect, its lean against the other pollsters in the races they share this cycle{Math.abs(polling.avg.house) < 0.05 ? "" : ` (${fmtMargin(polling.avg.house)} removed from this average)`}. Pollster accuracy grades are not a weight: past accuracy has not predicted the next cycle&apos;s.
-        <br /><br />
-        k is fitted by the forward backtest (2018–24): polls earn their share by evidence, and Governor polls earn it fastest because the structural model is weakest there. The Model keeps at least {Math.round(100 * (1 - FORECAST_CONSTANTS.POLL_W_MAX))}% of every projection, however many polls a race has.
+        The more polling a race has, the more the forecast relies on it, but the model always keeps at least {Math.round(100 * (1 - FORECAST_CONSTANTS.POLL_W_MAX))}% of the say.
       </>
     );
   const marginTooltip = (
     <>
-      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Projected Margin = (1 − w) × Model + w × Polling Avg</span>
-      <br /><br />
+      Our final estimate of who wins and by how much.{" "}
       {!polling?.avg
-        ? "No polls on file, so this reflects the Model only."
-        : `w = ${effectivePollWeight.toFixed(2)}: blended ${Math.round(effectiveModelWeight * 100)}% Model / ${Math.round(effectivePollWeight * 100)}% Polling Avg.`}
+        ? "There are no polls for this race yet, so it is the model alone."
+        : `It blends the model (${Math.round(effectiveModelWeight * 100)}%) with the polling average (${Math.round(effectivePollWeight * 100)}%). Races with more polling lean more on the polls.`}
     </>
   );
 
@@ -1356,13 +1382,13 @@ export function ForecastCalculationCard({
     return (
       <div className="flex flex-col">
         {/* Hero: the answer */}
-        <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4 pt-3">
+        <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div className="min-w-0">
             <InfoTooltip label="Projected Margin">{marginTooltip}</InfoTooltip>
-            <div className="mt-1 tabular-nums" style={{ fontWeight: 700, fontSize: "clamp(3rem, 9vw, 4.75rem)", lineHeight: 0.9, letterSpacing: "-0.035em", color: finalAccent }}>
+            <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(2.5rem, 7vw, 3.75rem)", lineHeight: 0.95, color: finalAccent }}>
               {formatProjectedMargin(projectedMargin)}
             </div>
-            <p className="mt-3" style={{ maxWidth: "40ch", fontFamily: "var(--font-serif)", fontSize: "1.02rem", lineHeight: 1.45, textWrap: "pretty" }}>
+            <p className="mt-3 text-sm" style={{ maxWidth: "52ch", lineHeight: 1.5, color: "var(--app-text-muted)", textWrap: "pretty" }}>
               {pollingAvg == null ? (
                 <>No polls on file, so this is the Model alone at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig>.</>
               ) : (
@@ -1373,9 +1399,9 @@ export function ForecastCalculationCard({
           {probabilityD != null && (
             <div className="flex flex-col items-start sm:items-end">
               <InfoTooltip label={winD ? "Dem win chance" : "Rep win chance"}>
-                Normal tail of the projected margin over the race&apos;s total spread: this state&apos;s β* × the shared national error, combined with the office&apos;s race-level error from the forward backtest (narrower where polls carry weight).
+                How likely this candidate is to win, given how far off forecasts like this have been in past elections, including misses in the national mood that hit every race at once. Races with plenty of polling are a bit more certain.
               </InfoTooltip>
-              <div className="mt-1 tabular-nums" style={{ fontWeight: 700, fontSize: "clamp(2.25rem, 6vw, 3rem)", lineHeight: 1, color: winD ? "var(--party-dem)" : "var(--party-rep)" }}>
+              <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(2.25rem, 6vw, 3rem)", lineHeight: 1, color: winD ? "var(--party-dem)" : "var(--party-rep)" }}>
                 {(winD ? probabilityD : 1 - probabilityD) >= 0.995 ? ">99" : Math.round((winD ? probabilityD : 1 - probabilityD) * 100)}%
               </div>
             </div>
@@ -1395,11 +1421,11 @@ export function ForecastCalculationCard({
           )}
           <div className="absolute flex flex-col gap-0.5 whitespace-nowrap" style={tagStyle(xModel, 0)}>
             <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Model · {wModel}%</span>
-            <span className="text-lg font-bold leading-none tabular-nums" style={{ color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
+            <span className="text-xl font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
           </div>
           {xPoll != null && pollingAvg != null && (
             <div className="absolute flex flex-col gap-0.5 whitespace-nowrap" style={tagStyle(xPoll, AXIS_Y + 18)}>
-              <span className="text-lg font-bold leading-none tabular-nums" style={{ color: pollColor }}>{fmtMargin(pollingAvg)}</span>
+              <span className="text-xl font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: pollColor }}>{fmtMargin(pollingAvg)}</span>
               <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Polling · {wPoll}%</span>
             </div>
           )}
@@ -1415,7 +1441,7 @@ export function ForecastCalculationCard({
           <span>D+{extent}</span>
           {interval80 && interval80[1] - interval80[0] > 0.05 && (
             <span className="flex items-center gap-1.5">
-              <InfoTooltip label="80% range" labelStyle={{ color: "var(--app-text-very-muted)" }}>Margin ± 1.28 × total spread. Eight times in ten the result should land inside this range (the grey band).</InfoTooltip>
+              <InfoTooltip label="80% range" labelStyle={{ color: "var(--app-text-very-muted)" }}>Eight times out of ten, the final result should land somewhere in this range (the grey band).</InfoTooltip>
               <span style={{ color: "var(--app-text-muted)" }}>{formatProjectedMargin(interval80[0])} to {formatProjectedMargin(interval80[1])}</span>
             </span>
           )}
@@ -1427,12 +1453,12 @@ export function ForecastCalculationCard({
           {termCells.map((c) => (
             <div key={c.key} className="flex flex-col gap-1 py-2.5 pr-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
               {c.label}
-              <span className="text-lg font-bold leading-tight tabular-nums" style={{ color: c.color }}>{c.value}</span>
+              <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: c.color }}>{c.value}</span>
             </div>
           ))}
           <div className="flex flex-col gap-1 py-2.5 pr-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
             <InfoTooltip label="= Model" labelStyle={{ color: "var(--app-text-primary)" }}>{modelTooltip}</InfoTooltip>
-            <span className="text-lg font-extrabold leading-tight tabular-nums" style={{ color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
+            <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
           </div>
         </div>
       </div>
@@ -1607,15 +1633,17 @@ export function PastElectionResultsSection({
             : null;
 
           const isLastRow = idx === rows.length - 1;
+          // Staggered entrance (globals.css .vh-row); placeholders keep their dimmed opacity.
+          const enterMs = Math.min(idx, 8) * 55;
 
           return (
             <div
               key={`${res.year}-${res.demCandidate ?? ""}-${res.repCandidate ?? ""}`}
-              className={isLedger ? "" : "rounded-lg p-2.5"}
+              className={`${isLedger ? "" : "rounded-lg p-2.5"} ${isPlaceholder ? "" : isLedger ? "vh-row" : "vh-row vh-row-boxed"}`}
               style={
                 isLedger
-                  ? { opacity: isPlaceholder ? 0.45 : 1, padding: "1rem 0", borderBottom: isLastRow ? "none" : "1px solid var(--app-border)" }
-                  : { opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }
+                  ? { opacity: isPlaceholder ? 0.45 : 1, padding: "1rem 0", borderBottom: isLastRow ? "none" : "1px solid var(--app-border)", animationDelay: `${enterMs}ms` }
+                  : { opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)", animationDelay: `${enterMs}ms` }
               }
             >
               {/* Row 1: year + election type | result margin */}
@@ -1642,7 +1670,7 @@ export function PastElectionResultsSection({
                       style={{ color: "var(--app-text-muted)" }}
                       aria-label={`${res.year} election details`}
                     >
-                      Details →
+                      Details <span className="vh-lean" data-dir="r">→</span>
                     </Link>
                   )}
                   {!isPlaceholder && res.districtLabel && (
@@ -1668,7 +1696,7 @@ export function PastElectionResultsSection({
                 {isPlaceholder ? (
                   <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
                 ) : isLedger ? (
-                  <span className="text-sm font-bold whitespace-nowrap shrink-0" style={{ color: partyAccent(winnerParty) }}>
+                  <span className="vh-margin text-sm font-bold whitespace-nowrap shrink-0" style={{ color: partyAccent(winnerParty) }}>
                     {winnerParty}+{margin}
                   </span>
                 ) : (
@@ -1746,7 +1774,7 @@ export function PastElectionResultsSection({
                       style={{ color: diffIsD ? "var(--party-dem)" : "var(--party-rep)" }}
                       title="National Differential: national popular vote minus district result"
                     >
-                      N{diffIsD ? "↓" : "↑"}{diffAbs}
+                      N<span className="vh-lean" data-dir={diffIsD ? "d" : "u"}>{diffIsD ? "↓" : "↑"}</span>{diffAbs}
                     </span>
                   );
                 })()}
@@ -1759,7 +1787,7 @@ export function PastElectionResultsSection({
                       style={{ color: swingVal === 0 ? "var(--app-text-muted)" : swingIsR ? "var(--party-rep)" : "var(--party-dem)" }}
                       title="Swing: change in margin vs previous election"
                     >
-                      {swingVal === 0 ? `=${swingAbs}` : swingIsR ? `→R+${swingAbs}` : `←D+${swingAbs}`}
+                      {swingVal === 0 ? `=${swingAbs}` : swingIsR ? <><span className="vh-lean" data-dir="r">→</span>R+{swingAbs}</> : <><span className="vh-lean" data-dir="l">←</span>D+{swingAbs}</>}
                     </span>
                   );
                 })()}
@@ -1769,8 +1797,8 @@ export function PastElectionResultsSection({
                 >
                   {!isPlaceholder && (
                     <>
-                      <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-                      <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                      <div className="vh-bar-d h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c", animationDelay: `${enterMs + 140}ms` }} />
+                      <div className="vh-bar-r h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29", animationDelay: `${enterMs + 140}ms` }} />
                     </>
                   )}
                 </div>
@@ -1867,14 +1895,15 @@ export function HouseOnlyRecentStatewideResultsSection({
           const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
           const hasDiffs = !isPlaceholder && (res.nationalDiff != null || res.stateDiff != null || res.swing != null);
           const isLastRow = idx === results.length - 1;
+          const enterMs = Math.min(idx, 8) * 55;
           return (
             <div
               key={`${res.year}-${res.race}`}
-              className={isLedger ? "" : "rounded-lg p-2.5"}
+              className={`${isLedger ? "" : "rounded-lg p-2.5"} ${isPlaceholder ? "" : isLedger ? "vh-row" : "vh-row vh-row-boxed"}`}
               style={
                 isLedger
-                  ? { opacity: isPlaceholder ? 0.45 : 1, padding: "1rem 0", borderBottom: isLastRow ? "none" : "1px solid var(--app-border)" }
-                  : { opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }
+                  ? { opacity: isPlaceholder ? 0.45 : 1, padding: "1rem 0", borderBottom: isLastRow ? "none" : "1px solid var(--app-border)", animationDelay: `${enterMs}ms` }
+                  : { opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)", animationDelay: `${enterMs}ms` }
               }
             >
               {/* Row 1: year + race | result margin */}
@@ -1896,7 +1925,7 @@ export function HouseOnlyRecentStatewideResultsSection({
                 {isPlaceholder ? (
                   <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
                 ) : isLedger ? (
-                  <span className="text-sm font-bold whitespace-nowrap shrink-0" style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
+                  <span className="vh-margin text-sm font-bold whitespace-nowrap shrink-0" style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
                     {winner}+{margin}
                   </span>
                 ) : (
@@ -1953,7 +1982,7 @@ export function HouseOnlyRecentStatewideResultsSection({
                         style={{ color: diffIsD ? "var(--party-dem)" : "var(--party-rep)" }}
                         title="National Differential: national popular vote minus district result"
                       >
-                        N{diffIsD ? "↓" : "↑"}{diffAbs}
+                        N<span className="vh-lean" data-dir={diffIsD ? "d" : "u"}>{diffIsD ? "↓" : "↑"}</span>{diffAbs}
                       </span>
                     );
                   })()}
@@ -1966,7 +1995,7 @@ export function HouseOnlyRecentStatewideResultsSection({
                         style={{ color: diffIsD ? "var(--party-dem)" : "var(--party-rep)" }}
                         title="State Differential: district result minus statewide result"
                       >
-                        S{diffIsD ? "↓" : "↑"}{diffAbs}
+                        S<span className="vh-lean" data-dir={diffIsD ? "d" : "u"}>{diffIsD ? "↓" : "↑"}</span>{diffAbs}
                       </span>
                     );
                   })()}
@@ -1979,13 +2008,13 @@ export function HouseOnlyRecentStatewideResultsSection({
                         style={{ color: res.swing === 0 ? "var(--app-text-muted)" : swingIsR ? "var(--party-rep)" : "var(--party-dem)" }}
                         title="Swing: change in margin vs previous election of same type"
                       >
-                        {res.swing === 0 ? `=${swingAbs}` : swingIsR ? `→R+${swingAbs}` : `←D+${swingAbs}`}
+                        {res.swing === 0 ? `=${swingAbs}` : swingIsR ? <><span className="vh-lean" data-dir="r">→</span>R+{swingAbs}</> : <><span className="vh-lean" data-dir="l">←</span>D+{swingAbs}</>}
                       </span>
                     );
                   })()}
                   <div className="ml-auto h-2 rounded-full overflow-hidden shrink-0" style={{ width: "calc(3rem + 0.25rem + 4rem)", background: "var(--app-tab-bg)" }}>
-                    <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-                    <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                    <div className="vh-bar-d h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c", animationDelay: `${enterMs + 140}ms` }} />
+                    <div className="vh-bar-r h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29", animationDelay: `${enterMs + 140}ms` }} />
                   </div>
                 </div>
               )}
@@ -2280,23 +2309,51 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
   const surname = (n: string) => n.replace(/\s*\(.*\)\s*$/, "").trim().split(/\s+/).slice(-1)[0];
   return (
     <div className="flex flex-col">
-      <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
-        <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-          Polling average · {avg.n} pollster{avg.n === 1 ? "" : "s"} · {avg.nEff.toFixed(1)} effective · weight {Math.round(polling.weight * 100)}%
-        </span>
-        <span className="text-sm font-bold tabular-nums" style={{ color: marginColor(avg.diff) }}>{fmtMargin(avg.diff)}</span>
+      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 py-4">
+        <span className="text-[30px] font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: marginColor(avg.diff) }}>{fmtMargin(avg.diff)}</span>
+        <span className="text-[12px] font-semibold" style={{ color: "var(--app-text-primary)" }}>Polling average</span>
       </div>
-      <div className="overflow-x-auto">
-        <table className="w-full text-xs tabular-nums" style={{ borderCollapse: "collapse" }}>
+      {/* Phones: dates and sample move under the pollster so every column fits without scrolling. */}
+      <table className="w-full text-[13px] tabular-nums sm:hidden" style={{ borderCollapse: "collapse" }}>
+        <thead>
+          <tr className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
+            <th className="text-left font-semibold py-2 pr-2">Pollster</th>
+            <th className="text-right font-semibold py-2 pr-2">{surname(demName)}</th>
+            <th className="text-right font-semibold py-2 pr-2">{surname(repName)}</th>
+            <th className="text-right font-semibold py-2 pr-2">Margin</th>
+            <th className="text-right font-semibold py-2 pr-2" title="The published margin, aged by the generic ballot's movement and net of the pollster's house effect — what the average uses">Adj.</th>
+            <th className="text-right font-semibold py-2">Wt.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {avg.polls.map((p) => (
+            <tr key={`${p.pollster}-${p.endDate}`} className="align-top" style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
+              <td className="py-2 pr-2">
+                <div>{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({p.partisan})</span> : null}</div>
+                <div className="mt-0.5 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
+                  <span className="whitespace-nowrap">{p.startDate === p.endDate ? fmtDate(p.endDate) : `${fmtDate(p.startDate)} – ${fmtDate(p.endDate)}`}</span>
+                  {p.sample != null ? <> · <span className="whitespace-nowrap">{p.sample.toLocaleString()}{p.population ? ` ${p.population}` : ""}</span></> : null}
+                </div>
+              </td>
+              <td className="py-2 pr-2 text-right font-semibold" style={{ color: "var(--party-dem)" }}>{p.dem.toFixed(0)}%</td>
+              <td className="py-2 pr-2 text-right font-semibold" style={{ color: "var(--party-rep)" }}>{p.rep.toFixed(0)}%</td>
+              <td className="py-2 pr-2 text-right whitespace-nowrap">{fmtMargin(p.diff)}</td>
+              <td className="py-2 pr-2 text-right font-semibold whitespace-nowrap" style={{ color: marginColor(p.diff + p.shift - p.house) }}>{fmtMargin(p.diff + p.shift - p.house)}</td>
+              <td className="py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>{maxWeight > 0 ? `${Math.round((p.weight / maxWeight) * 100)}%` : "—"}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <div className="hidden sm:block overflow-x-auto">
+        <table className="w-full text-sm tabular-nums" style={{ borderCollapse: "collapse" }}>
           <thead>
             <tr className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
               <th className="text-left font-semibold py-2 pr-2">Pollster</th>
               <th className="text-left font-semibold py-2 pr-2">Dates</th>
               <th className="text-right font-semibold py-2 pr-2">Sample</th>
-              <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-dem)" }}>{surname(demName)}</th>
-              <th className="text-right font-semibold py-2 pr-2" style={{ color: "var(--party-rep)" }}>{surname(repName)}</th>
+              <th className="text-right font-semibold py-2 pr-2">{surname(demName)}</th>
+              <th className="text-right font-semibold py-2 pr-2">{surname(repName)}</th>
               <th className="text-right font-semibold py-2 pr-2">Margin</th>
-              <th className="text-right font-semibold py-2 pr-2" title="The pollster's lean against the other pollsters in the races they share this cycle — removed from the poll before averaging">House effect</th>
               <th className="text-right font-semibold py-2 pr-2" title="The published margin, aged by the generic ballot's movement and net of the pollster's house effect — what the average uses">Adjusted</th>
               <th className="text-right font-semibold py-2">Weight</th>
             </tr>
@@ -2304,14 +2361,13 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
           <tbody>
             {avg.polls.map((p) => (
               <tr key={`${p.pollster}-${p.endDate}`} style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
-                <td className="py-1.5 pr-2 whitespace-nowrap">{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: p.partisan === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>({p.partisan})</span> : null}</td>
+                <td className="py-1.5 pr-2 whitespace-nowrap">{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({p.partisan})</span> : null}</td>
                 <td className="py-1.5 pr-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.startDate === p.endDate ? fmtDate(p.endDate) : `${fmtDate(p.startDate)} – ${fmtDate(p.endDate)}`}</td>
                 <td className="py-1.5 pr-2 text-right whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.sample != null ? p.sample.toLocaleString() : "—"}{p.population ? ` ${p.population}` : ""}</td>
-                <td className="py-1.5 pr-2 text-right">{p.dem.toFixed(0)}%</td>
-                <td className="py-1.5 pr-2 text-right">{p.rep.toFixed(0)}%</td>
-                <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: marginColor(p.diff) }}>{fmtMargin(p.diff)}</td>
-                <td className="py-1.5 pr-2 text-right" style={{ color: Math.abs(p.house) < 0.05 ? "var(--app-text-very-muted)" : marginColor(p.house) }}>{Math.abs(p.house) < 0.05 ? "—" : fmtMargin(p.house)}</td>
-                <td className="py-1.5 pr-2 text-right" style={{ color: marginColor(p.diff + p.shift - p.house) }}>{fmtMargin(p.diff + p.shift - p.house)}</td>
+                <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: "var(--party-dem)" }}>{p.dem.toFixed(0)}%</td>
+                <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: "var(--party-rep)" }}>{p.rep.toFixed(0)}%</td>
+                <td className="py-1.5 pr-2 text-right">{fmtMargin(p.diff)}</td>
+                <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: marginColor(p.diff + p.shift - p.house) }}>{fmtMargin(p.diff + p.shift - p.house)}</td>
                 <td className="py-1.5 text-right" style={{ color: "var(--app-text-very-muted)" }}>{maxWeight > 0 ? `${Math.round((p.weight / maxWeight) * 100)}%` : "—"}</td>
               </tr>
             ))}

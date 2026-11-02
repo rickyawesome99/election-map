@@ -15,6 +15,14 @@
 // The race is the vote-weighted sum. Its sigma has a shared part — the forecast's sigma shrunk by
 // the same ratio as the swing, applied to the uncounted share — and a county part, the residual
 // dispersion of county swings on each county's uncounted remainder, independent across counties.
+//
+// Since 2026-11-01 the prior margin m is first moved by the night model (lib/resultsNight.ts): the
+// shift the counties finished elsewhere imply for this race (national swing × β, the state's shared
+// miss, the office's offset, the demographic slopes at each county), fitted once per refresh over
+// every race. The swing s above is then the race's OWN residual against that baseline, and the
+// forecast sigma is split into the part the night model explains (replaced by the fit's standard
+// error for this race) and the race's own part (shrunk by its own counted votes as before). A race
+// with nothing counted is its prior plus the shift.
 // A county the feed marks 100% reported, or whose count has reached NEAR_DONE of its corrected
 // expectation, is done. Without county detail the same arithmetic runs on the race's one total.
 //
@@ -33,6 +41,7 @@
 // 92%, 97% in the last tenth; RMS z 0.83; MAE 2.1).
 
 import type { CountyPrior, CountyProjection, LiveCounty, LiveRace, Party, RacePrior, RaceProjection } from "@/lib/resultsTypes";
+import type { NightFit, NightObservation, NightShift } from "@/lib/resultsNight";
 
 /** Shrinkage on the shared swing, as a share of the race's expected votes (prior-equivalent votes). */
 export const K_SWING_SHARE = 0.1;
@@ -59,9 +68,14 @@ export const SIGMA_LATE = 10;
  *  projected from its topline (the feed's geography doesn't line up with the priors'). */
 export const MAX_EXTRA_SHARE = 0.25;
 
-/** The tunable constants, overridable for the backtest (scripts/resultsNeedleBacktest.ts). */
-export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; sigmaFloor: number; ownExp: number; sigmaLate: number; maxExtraShare: number };
-export const DEFAULT_PARAMS: NeedleParams = { kSwing: K_SWING_SHARE, kTurnout: K_TURNOUT_SHARE, sigmaCounty: SIGMA_COUNTY, nearDone: NEAR_DONE, sigmaFloor: SIGMA_FLOOR, ownExp: OWN_WEIGHT_EXP, sigmaLate: SIGMA_LATE, maxExtraShare: MAX_EXTRA_SHARE };
+/** The share of the forecast variance the night model (lib/resultsNight.ts) may claim as shared: its
+ *  prior for a race's shared terms, times this, is what the fit can take off the race's sigma. Below 1
+ *  because the fit also explains county-prior noise that is not the race's own miss. */
+export const NIGHT_SHARE = 0.5;
+
+/** The tunable constants, overridable for the backtests (scripts/resultsNeedleBacktest.ts, scripts/resultsNightBacktest.ts). */
+export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; sigmaFloor: number; ownExp: number; sigmaLate: number; maxExtraShare: number; nightShare: number };
+export const DEFAULT_PARAMS: NeedleParams = { kSwing: K_SWING_SHARE, kTurnout: K_TURNOUT_SHARE, sigmaCounty: SIGMA_COUNTY, nearDone: NEAR_DONE, sigmaFloor: SIGMA_FLOOR, ownExp: OWN_WEIGHT_EXP, sigmaLate: SIGMA_LATE, maxExtraShare: MAX_EXTRA_SHARE, nightShare: NIGHT_SHARE };
 
 const clamp = (x: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, x));
 
@@ -75,11 +89,29 @@ export function normalCdf(z: number): number {
 
 const marginOf = (dem: number, rep: number, total: number) => (total > 0 ? ((rep - dem) / total) * 100 : null);
 
-function emptyProjection(prior: RacePrior): RaceProjection {
+const ZERO_SHIFT: NightShift = { shift: 0, national: 0, state: 0, office: 0, demo: 0, se: 0, priorSe: 0, countyDemo: () => 0 };
+const nightOf = (s: NightShift): RaceProjection["night"] => ({ shift: s.shift, national: s.national, state: s.state, office: s.office, demo: s.demo, se: s.se });
+
+/** The parts of a race's forecast sigma: what the night model's shared terms may explain (NIGHT_SHARE
+ *  of its prior variance for this race) and what is the race's own. Keeps at least a quarter of the
+ *  variance for the race itself. With nothing in anywhere the two add back to the forecast sigma. */
+function raceSigmaParts(prior: RacePrior, shift: NightShift, P: NeedleParams): { own: number; shared: number } {
+  const total = prior.forecast.sigma ** 2;
+  const own = Math.sqrt(Math.max(0.25 * total, total - P.nightShare * shift.priorSe ** 2));
+  return { own, shared: Math.sqrt(P.nightShare) * shift.se };
+}
+
+/** Nothing counted in this race: the prior shifted by what the rest of the night implies. */
+function emptyProjection(prior: RacePrior, shift: NightShift, P: NeedleParams): RaceProjection {
+  const decided = prior.forecast.contest !== "contested";
+  const s = decided ? ZERO_SHIFT : shift;
+  const { own, shared } = raceSigmaParts(prior, s, P);
+  const margin = prior.forecast.margin + s.shift;
+  const sigma = decided ? prior.forecast.sigma : Math.sqrt(own * own + shared * shared);
   return {
     tier: "none", counted: 0, projectedTotal: prior.votes, countedShare: 0, currentMargin: null, swing: 0, turnoutFactor: 1,
-    margin: prior.forecast.margin, sigma: prior.forecast.sigma, probD: prior.forecast.probability, locked: false, winner: null,
-    counties: prior.counties.map((c) => ({ fips: c.fips, name: c.name, counted: 0, expected: c.votes, done: false, f: 0, observedMargin: null, priorMargin: c.margin, projectedTotal: c.votes, projectedMargin: c.margin })),
+    margin, sigma, probD: decided ? prior.forecast.probability : normalCdf(-margin / sigma), locked: false, winner: null, night: nightOf(s),
+    counties: prior.counties.map((c) => ({ fips: c.fips, name: c.name, counted: 0, expected: c.votes, done: false, f: 0, observedMargin: null, priorMargin: c.margin, projectedTotal: c.votes, projectedMargin: c.margin + s.shift + s.countyDemo(c) })),
   };
 }
 
@@ -88,20 +120,20 @@ function lock(p: RaceProjection, live: LiveRace): RaceProjection {
   return { ...p, locked: true, winner: live.winner, probD: live.winner === "D" ? 1 : live.winner === "R" ? 0 : p.probD };
 }
 
-/** Project one race. `live` null or with nothing counted returns the prior itself. */
-export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedleParams = DEFAULT_PARAMS): RaceProjection {
-  if (!live || live.total <= 0) return live ? lock(emptyProjection(prior), live) : emptyProjection(prior);
-  const decided = prior.forecast.contest !== "contested";
-  const raceDone = live.percentReporting >= 100 || live.called && live.percentReporting >= 99;
+type Cell = { c: CountyPrior; v: number; expected: number; done: boolean; f: number; o: number | null };
+type CountyPass = { tau: number; cells: Cell[]; counted: number; extraV: number; extraNetR: number };
+
+/** The county pass shared by the projection and the night fit: turnout factor, completeness and
+ *  counted margin per prior county. Null where the race has to run on its topline. */
+function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: NeedleParams): CountyPass | null {
   const E = Math.max(1, prior.votes);
-  const kS = P.kSwing * E, kT = P.kTurnout * E;
-  const sigmaF = prior.forecast.sigma;
+  const kT = P.kTurnout * E;
   const liveCounties = live.counties;
   const byFips = liveCounties ? new Map(liveCounties.filter((c) => c.fips).map((c) => [c.fips!, c])) : null;
   // County detail counts when it covers most of the race's expected vote (a township-only state
   // or a feed hiccup falls back to the topline).
   const covered = byFips ? prior.counties.reduce((a, c) => a + (byFips.has(c.fips) ? c.votes : 0), 0) / E : 0;
-  if (!byFips || covered < 0.6) return lock(projectTopline(prior, live, raceDone, kS, sigmaF, decided, P), live);
+  if (!byFips || covered < 0.6) return null;
 
   // Pass 1: turnout factor from finished counties (feed flag or ≥ NEAR_DONE of the expectation, which
   // is circular in τ, so two passes).
@@ -124,7 +156,7 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
   // on minor candidates and write-ins, never on these two.
   const twoParty = (l: { dem: number; rep: number } | null) => (l ? l.dem + l.rep : 0);
   const listedDR = rows.reduce((a, { live: l }) => a + twoParty(l), 0) + extras.reduce((a, c) => a + twoParty(c), 0);
-  if (extraV > P.maxExtraShare * (matchedV + extraV) || listedDR > twoParty(live) * 1.02 + 100) return lock(projectTopline(prior, live, raceDone, kS, sigmaF, decided, P), live);
+  if (extraV > P.maxExtraShare * (matchedV + extraV) || listedDR > twoParty(live) * 1.02 + 100) return null;
   let tau = 1;
   for (let pass = 0; pass < 2; pass++) {
     let v = 0, e = 0;
@@ -137,25 +169,62 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
   }
   tau = clamp(tau, 0.5, 1.6);
 
-  // Pass 2: completeness, weights, shared swing.
-  let sumW = 0, sumWD = 0, counted = 0;
-  const cells = rows.map(({ prior: c, live: l }) => {
+  let counted = 0;
+  const cells: Cell[] = rows.map(({ prior: c, live: l }) => {
     const v = countedOf(l, c);
     const expected = tau * c.votes;
     const done = raceDone || (l?.pct != null && l.pct >= 100) || v >= P.nearDone * expected;
     const f = done ? 1 : clamp(v / Math.max(1, expected), 0, 1);
     const o = l ? marginOf(l.dem, l.rep, l.total) : null;
     counted += v;
-    if (o != null && v > 0 && !decided) { const w = v * f; sumW += w; sumWD += w * (o - c.margin); }
     return { c, v, expected, done, f, o };
+  });
+  return { tau, cells, counted: counted + extraV, extraV, extraNetR };
+}
+
+const isRaceDone = (live: LiveRace) => live.percentReporting >= 100 || live.called && live.percentReporting >= 99;
+
+/** A race's counties as observations for the night fit (lib/resultsNight.ts): every prior county with
+ *  votes in, its completeness and its swing against the prior. Empty for decided races and races on their topline. */
+export function nightObservations(prior: RacePrior, live: LiveRace | null, P: NeedleParams = DEFAULT_PARAMS): NightObservation[] {
+  if (!live || live.total <= 0 || prior.forecast.contest !== "contested") return [];
+  const pass = countyPass(prior, live, isRaceDone(live), P);
+  if (!pass) return [];
+  const out: NightObservation[] = [];
+  for (const { c, v, f, o } of pass.cells) if (o != null && v > 0) out.push({ office: prior.office, state: prior.state, beta: prior.beta, county: c, votes: v, f, swing: o - c.margin });
+  return out;
+}
+
+/** Project one race. `live` null or with nothing counted returns the prior shifted by the night fit
+ *  (the prior itself without one). */
+export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedleParams = DEFAULT_PARAMS, fit: NightFit | null = null): RaceProjection {
+  const decided = prior.forecast.contest !== "contested";
+  const shift = fit && !decided ? fit.shiftFor(prior) : ZERO_SHIFT;
+  if (!live || live.total <= 0) return live ? lock(emptyProjection(prior, shift, P), live) : emptyProjection(prior, shift, P);
+  const raceDone = isRaceDone(live);
+  const E = Math.max(1, prior.votes);
+  const kS = P.kSwing * E;
+  const sigmaParts = raceSigmaParts(prior, shift, P);
+  const pass = countyPass(prior, live, raceDone, P);
+  if (!pass) return lock(projectTopline(prior, live, raceDone, kS, sigmaParts, shift, decided, P), live);
+  const { tau, cells, extraV, extraNetR } = pass;
+
+  // Pass 2: weights and the race's own swing against its night baseline (the prior plus the shift
+  // the rest of the night implies, with each county's own demographic term).
+  let sumW = 0, sumWD = 0, counted = 0;
+  const based = cells.map((cell) => {
+    const base = cell.c.margin + shift.shift + shift.countyDemo(cell.c);
+    counted += cell.v;
+    if (cell.o != null && cell.v > 0 && !decided) { const w = cell.v * cell.f; sumW += w; sumWD += w * (cell.o - base); }
+    return { ...cell, base };
   });
   const swing = decided ? 0 : sumWD / (sumW + kS);
   const shrink = Math.sqrt(kS / (kS + sumW));
 
   let total = 0, netR = 0, countyVar = 0;
-  const counties: CountyProjection[] = cells.map(({ c, v, expected, done, f, o }) => {
+  const counties: CountyProjection[] = based.map(({ c, v, expected, done, f, o, base }) => {
     const T = done ? v : Math.max(v, expected);
-    const remainder = o == null ? c.margin + swing : c.margin + swing + Math.pow(f, P.ownExp) * (o - c.margin - swing);
+    const remainder = o == null ? base + swing : base + swing + Math.pow(f, P.ownExp) * (o - base - swing);
     const M = T > 0 ? (v * (o ?? 0) + (T - v) * clamp(remainder, -100, 100)) / T : c.margin;
     total += T; netR += T * M;
     countyVar += Math.pow((T - v) * P.sigmaCounty, 2);
@@ -165,16 +234,18 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
   // A finished race is its feed total, whatever the county rows add to (a lagging or partial
   // county breakdown must not leave it "48% of ~N projected" at 100% reporting).
   if (raceDone) total = counted = live.total;
-  const margin = total > 0 ? netR / total : prior.forecast.margin;
+  const margin = total > 0 ? netR / total : prior.forecast.margin + shift.shift;
   const uncounted = total > 0 ? clamp((total - counted) / total, 0, 1) : 1;
-  const sharedSigma = sigmaF * shrink * uncounted;
+  // The shared part: the race's own forecast spread shrunk by its own counted votes, plus what the
+  // night fit still leaves open for it, on the uncounted share.
+  const sharedSigma = Math.sqrt((sigmaParts.own * shrink) ** 2 + sigmaParts.shared ** 2) * uncounted;
   const countySigma = total > 0 ? Math.sqrt(countyVar) / total : 0;
   const lateSigma = P.sigmaLate * uncounted;
   const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(sharedSigma * sharedSigma + countySigma * countySigma + lateSigma * lateSigma));
   const probD = decided ? prior.forecast.probability : normalCdf(-margin / sigma);
   return lock({
     tier: "county", counted: Math.round(counted), projectedTotal: Math.round(total), countedShare: total > 0 ? counted / total : 0,
-    currentMargin: marginOf(live.dem, live.rep, live.total), swing, turnoutFactor: tau, margin, sigma, probD, locked: false, winner: null, counties,
+    currentMargin: marginOf(live.dem, live.rep, live.total), swing, turnoutFactor: tau, margin, sigma, probD, locked: false, winner: null, night: nightOf(shift), counties,
   }, live);
 }
 
@@ -183,11 +254,11 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
 // Set for a feed that sends whole-county totals instead.
 const WHOLE_COUNTY_FEED = false;
 
-function projectTopline(prior: RacePrior, live: LiveRace, raceDone: boolean, kS: number, sigmaF: number, decided: boolean, P: NeedleParams): RaceProjection {
+function projectTopline(prior: RacePrior, live: LiveRace, raceDone: boolean, kS: number, sigmaParts: { own: number; shared: number }, shift: NightShift, decided: boolean, P: NeedleParams): RaceProjection {
   const E = Math.max(1, prior.votes);
   const v = live.total;
-  const o = marginOf(live.dem, live.rep, live.total) ?? prior.forecast.margin;
-  const m = prior.forecast.margin;
+  const m = prior.forecast.margin + shift.shift;
+  const o = marginOf(live.dem, live.rep, live.total) ?? m;
   const f = raceDone ? 1 : clamp(v / E, 0, 1);
   const T = raceDone ? v : Math.max(v, E);
   const w = decided ? 0 : v * f;
@@ -196,12 +267,13 @@ function projectTopline(prior: RacePrior, live: LiveRace, raceDone: boolean, kS:
   const remainder = m + swing + Math.pow(f, P.ownExp) * (o - m - swing);
   const margin = f < MIN_SHARE ? m : (v * o + (T - v) * clamp(remainder, -100, 100)) / T;
   const uncounted = clamp((T - v) / T, 0, 1);
-  const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(Math.pow(sigmaF * shrink * uncounted, 2) + Math.pow(P.sigmaCounty * uncounted * 0.5, 2) + Math.pow(P.sigmaLate * uncounted, 2)));
+  const sharedSigma = Math.sqrt((sigmaParts.own * shrink) ** 2 + sigmaParts.shared ** 2) * uncounted;
+  const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(sharedSigma * sharedSigma + Math.pow(P.sigmaCounty * uncounted * 0.5, 2) + Math.pow(P.sigmaLate * uncounted, 2)));
   const probD = decided ? prior.forecast.probability : normalCdf(-margin / sigma);
   return {
     tier: "topline", counted: v, projectedTotal: Math.round(T), countedShare: T > 0 ? v / T : 0, currentMargin: marginOf(live.dem, live.rep, live.total),
-    swing, turnoutFactor: 1, margin, sigma, probD, locked: false, winner: null,
-    counties: prior.counties.map((c) => ({ fips: c.fips, name: c.name, counted: 0, expected: c.votes, done: false, f: 0, observedMargin: null, priorMargin: c.margin, projectedTotal: c.votes, projectedMargin: c.margin + swing })),
+    swing, turnoutFactor: 1, margin, sigma, probD, locked: false, winner: null, night: nightOf(shift),
+    counties: prior.counties.map((c) => ({ fips: c.fips, name: c.name, counted: 0, expected: c.votes, done: false, f: 0, observedMargin: null, priorMargin: c.margin, projectedTotal: c.votes, projectedMargin: c.margin + shift.shift + shift.countyDemo(c) + swing })),
   };
 }
 

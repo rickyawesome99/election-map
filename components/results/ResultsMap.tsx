@@ -180,9 +180,9 @@ function ResultTooltip({ row, boxRef }: { row: ResultsRow; boxRef: (node: HTMLDi
         );
       })}
       <div className="mt-2 flex justify-between gap-2 border-t pt-2" style={{ borderColor: "var(--app-border)" }}>
-        {fig("Margin", <span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>)}
-        {fig("Projected", <><span style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</span><span className="text-[10px] font-normal" style={veryMuted}> ±{proj.sigma.toFixed(1)}</span></>)}
         {fig("Forecast", <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span>)}
+        {fig("Projected", <><span style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</span><span className="text-[10px] font-normal" style={veryMuted}> ±{proj.sigma.toFixed(1)}</span></>)}
+        {fig("Margin", <span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>)}
       </div>
       <div className="mt-1.5 flex justify-between gap-2 text-[10px] tabular-nums" style={veryMuted}>
         <span>{Math.round(proj.countedShare * 100)}% of expected vote in · feed {Math.round(live.percentReporting)}%</span>

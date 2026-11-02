@@ -11,7 +11,7 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
 import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
-import type { Party, RaceHistory } from "@/lib/resultsTypes";
+import { OFFICE_LABEL, type Party, type RaceHistory } from "@/lib/resultsTypes";
 import { MarginTrend } from "@/components/results/SeatTrend";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 
@@ -202,10 +202,14 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
               </div>
               <MarginTrend points={history[trendView]} prior={prior} kind={trendView} />
             </div>
-            {/* The needle's two internal inputs, as a footnote. */}
-            {hasVotes && (
+            {/* The needle's internal inputs, as a footnote: what the rest of the night implies for this
+                race, then this race's own counties against that baseline. */}
+            {(hasVotes || Math.abs(proj.night.shift) >= 0.05) && (
               <p className="mt-3 text-[11px] tabular-nums" style={veryMuted}>
-                Counties are running <span style={{ color: marginSideColor(proj.swing, prior) }}>{fmtMargin(proj.swing, prior, 1)}</span> against their priors (shared swing, shrunk while little is in) · finished counties turned out ×{proj.turnoutFactor.toFixed(2)} their expected vote.
+                {Math.abs(proj.night.shift) >= 0.05 && (
+                  <>Counties finished elsewhere imply <span style={{ color: marginSideColor(proj.night.shift, prior) }}>{fmtMargin(proj.night.shift, prior, 1)}</span> here vs the forecast ±{proj.night.se.toFixed(1)} (national {fmtMargin(proj.night.national, prior, 1)} · {prior.state} {fmtMargin(proj.night.state, prior, 1)} · {OFFICE_LABEL[prior.office].toLowerCase()} races {fmtMargin(proj.night.office, prior, 1)} · electorate {fmtMargin(proj.night.demo, prior, 1)}). </>
+                )}
+                {hasVotes && <>This race&apos;s counties are running <span style={{ color: marginSideColor(proj.swing, prior) }}>{fmtMargin(proj.swing, prior, 1)}</span> against that baseline (shrunk while little is in) · finished counties turned out ×{proj.turnoutFactor.toFixed(2)} their expected vote.</>}
               </p>
             )}
           </div>

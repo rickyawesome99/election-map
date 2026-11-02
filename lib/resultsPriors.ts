@@ -5,7 +5,8 @@ import { governorData, houseData, senateData, type RaceForecast } from "@/data/f
 import { statesData } from "@/data/statesData";
 import { forecastRace } from "@/lib/forecast";
 import { projectRaceResults } from "@/lib/countyProjection";
-import { calculateDistrictTpl } from "@/lib/tplCompute";
+import { calculateDistrictTpl, getTplFit } from "@/lib/tplCompute";
+import { countyLoadings } from "@/lib/resultsNightLoadings";
 import { parseCsv } from "@/lib/turnout";
 import { raceHref } from "@/lib/raceLinks";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -78,10 +79,11 @@ function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
     rcv: RCV_STATES.has(state),
     jungle: office === "house" && state === "LA",
     tpl: office === "house" ? districtTpl(race.id) : null,
+    beta: Math.round((getTplFit().beta[state]?.shrunk ?? 1) * 1000) / 1000,
     forecast: { margin: f.margin, sigma: f.sigma, probability: f.probability, rating: f.rating, contest: f.contest, interval80: f.interval80 },
     pollsClose: { first: close?.first_close_et ?? "20:00", last: close?.last_close_et ?? close?.first_close_et ?? "20:00", note: close?.note || null },
     votes: cp?.votes ?? 0,
-    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark })),
+    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin) })),
   };
 }
 

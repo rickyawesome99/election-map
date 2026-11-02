@@ -17,6 +17,7 @@ import { countyPresidentialData } from "../data/countyPresidentialData";
 import { normalizeRace } from "../lib/resultsFeed";
 import { DEFAULT_PARAMS, normalCdf, projectRace, type NeedleParams } from "../lib/resultsNeedle";
 import type { RacePrior } from "../lib/resultsTypes";
+import { countyLoadings } from "../lib/resultsNightLoadings";
 
 const BASE = "https://civicapi.org/api/v2/";
 const UA = { "User-Agent": "curl/8.4.0", Accept: "application/json" };
@@ -59,11 +60,11 @@ function priorFor(r: (typeof RACES)[number]): RacePrior {
   return {
     office: "governor", id: r.state, civicId: r.id, label: r.stateName, state: r.state, stateName: r.stateName, href: "",
     dem: { name: r.dem, party: "D", incumbent: false, photo: null }, rep: { name: r.rep, party: "R", incumbent: false, photo: null },
-    seatParty: null, seatHolder: null, special: false, rcv: false, jungle: false, tpl: null,
+    seatParty: null, seatHolder: null, special: false, rcv: false, jungle: false, tpl: null, beta: 1,
     forecast: { margin: r.forecast, sigma: r.sigma, probability: normalCdf(-r.forecast / r.sigma), rating: "", contest: "contested", interval80: [r.forecast - 1.28 * r.sigma, r.forecast + 1.28 * r.sigma] },
     pollsClose: { first: "19:00", last: "19:00", note: null },
     votes: total,
-    counties: cells.map((c) => ({ fips: c.fips, name: c.name, share: 1, votes: c.votes, margin: Math.max(-98, Math.min(98, c.lean + shift)), other: c.other, tpl: null, benchmark: null })),
+    counties: cells.map((c) => ({ fips: c.fips, name: c.name, share: 1, votes: c.votes, margin: Math.max(-98, Math.min(98, c.lean + shift)), other: c.other, tpl: null, benchmark: null, ...countyLoadings(c.fips, c.lean + shift) })),
   };
 }
 

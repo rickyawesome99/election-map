@@ -345,7 +345,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
   return (
     <>
       {/* ── 1b · The map: the ballot and every past result on it, above the lists it drives ── */}
-      <section className="mt-6">
+      <section className="mt-2">
         <div className="mx-auto max-w-3xl">
         <div className="flex items-end gap-5 mb-3 min-w-0" style={{ borderBottom: "1px solid var(--app-border)" }}>
           {layers.map((l) => (

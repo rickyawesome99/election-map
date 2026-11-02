@@ -29,6 +29,11 @@ export type CountyPrior = {
   tpl: number | null;
   /** The county's margin if the race finishes tied (lib/countyProjection.ts), R-positive; null unless contested D vs R. */
   benchmark: number | null;
+  /** The night model's loadings (lib/resultsNight.ts): the county's nonwhite share, college share and
+   *  prior margin, each centered on the national electorate, in units of 10 pts (0 where unknown). */
+  nonwhite: number;
+  college: number;
+  lean: number;
 };
 
 /** `photo`: a /candidates/ path, looked up at build so the client never loads the photo table. */
@@ -57,6 +62,8 @@ export type RacePrior = {
   jungle: boolean;
   /** House: the district's TPL (lib/tplCompute.ts), R-positive; null elsewhere. */
   tpl: number | null;
+  /** The state's elasticity to the national swing (the forecast's β*). */
+  beta: number;
   forecast: {
     /** R-positive. */
     margin: number;
@@ -147,8 +154,11 @@ export type RaceProjection = {
   countedShare: number;
   /** R-positive margin of the votes counted so far; null with nothing counted. */
   currentMargin: number | null;
-  /** The shared swing against the prior, R-positive points, after shrinkage. */
+  /** The race's own swing against its night baseline (prior + the night model's shift), R-positive points, after shrinkage. */
   swing: number;
+  /** What the rest of the country's counted counties imply for this race before its own count
+   *  (lib/resultsNight.ts), R-positive points, by part; `se` its standard error. Zero with nothing in anywhere. */
+  night: { shift: number; national: number; state: number; office: number; demo: number; se: number };
   /** Turnout running at this multiple of the expectation, from finished counties. */
   turnoutFactor: number;
   /** Projected final margin, R-positive. */

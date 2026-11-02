@@ -11,7 +11,8 @@ import { join } from "node:path";
 import { gunzipSync } from "node:zlib";
 import { resultsPriors } from "../lib/resultsPriors";
 import { normalizeRace } from "../lib/resultsFeed";
-import { projectRace, tallyChamber } from "../lib/resultsNeedle";
+import { nightObservations, projectRace, tallyChamber } from "../lib/resultsNeedle";
+import { fitNight } from "../lib/resultsNight";
 import { SEAT_HOLDOVERS } from "../lib/forecastTypes";
 import { RESULTS_OFFICES, type ArchiveSeries, type LiveRace } from "../lib/resultsTypes";
 import { raceHash } from "../lib/resultsFormat";
@@ -35,12 +36,15 @@ for (const set of sets) {
     const data = JSON.parse(gunzipSync(readFileSync(join(SRC, set, name))).toString()) as { fetchedAt: string; races: Record<string, unknown> };
     const t = Date.parse(data.fetchedAt);
     snapshots.push({ file: `${set}/${name}`, fetchedAt: new Date(t).toISOString(), set });
+    // Every race's live state first: the night fit reads all of them before any race is projected.
+    const pairs = priors.map((slice) => slice.races.map((prior) => {
+      const raw = prior.civicId ? data.races[String(prior.civicId)] : null;
+      const live: LiveRace | null = raw ? normalizeRace(prior, raw as never, t) : null;
+      return { prior, live };
+    }));
+    const fit = fitNight(pairs.flat().flatMap(({ prior, live }) => nightObservations(prior, live)));
     RESULTS_OFFICES.forEach((office, i) => {
-      const rows = priors[i].races.map((prior) => {
-        const raw = prior.civicId ? data.races[String(prior.civicId)] : null;
-        const live: LiveRace | null = raw ? normalizeRace(prior, raw as never, t) : null;
-        return { prior, live, proj: projectRace(prior, live) };
-      });
+      const rows = pairs[i].map(({ prior, live }) => ({ prior, live, proj: projectRace(prior, live, undefined, fit) }));
       for (const r of rows) (series.races[raceHash(r.prior)] ??= []).push([r1(r.proj.margin), r1(r.proj.sigma), r.proj.currentMargin == null ? null : r1(r.proj.currentMargin)]);
       const e = tallyChamber(rows, SEAT_HOLDOVERS[office]).projectedDem;
       series[office].push({ t, mean: e.seats, lo: e.lo80, hi: e.hi80 });

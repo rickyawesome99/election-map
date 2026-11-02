@@ -22,7 +22,8 @@ export default function DemographicsStrip({
   hispanicPct,
   asianPct,
   medianHouseholdIncome,
-}: Demographics) {
+  layout = "inline",
+}: Demographics & { /** "grid": figures over labels, for the race pages' Demographics subsection. */ layout?: "inline" | "grid" }) {
   const stats: { label: string; value: string }[] = [];
   if (population != null) stats.push({ label: "population", value: population.toLocaleString() });
   if (collegePct != null) stats.push({ label: "college", value: `${collegePct.toFixed(1)}%` });
@@ -33,6 +34,19 @@ export default function DemographicsStrip({
   if (medianHouseholdIncome != null) stats.push({ label: "median income", value: `$${medianHouseholdIncome.toLocaleString()}` });
 
   if (stats.length === 0) return null;
+
+  if (layout === "grid") {
+    return (
+      <dl className="flex flex-wrap gap-x-9 gap-y-3">
+        {stats.map((s) => (
+          <div key={s.label}>
+            <dd className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{s.value}</dd>
+            <dt className="text-xs" style={{ color: "var(--app-text-muted)" }}>{s.label[0].toUpperCase() + s.label.slice(1)}</dt>
+          </div>
+        ))}
+      </dl>
+    );
+  }
 
   return (
     <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1.5 text-sm">

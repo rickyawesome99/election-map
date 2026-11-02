@@ -1,14 +1,16 @@
 import Link from "next/link";
-import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
+import { candidatePageHref } from "@/lib/candidatePages";
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { getRatingColors } from "@/lib/colorScale";
+import RaceHero from "@/components/RaceHero";
+import { RaceRail, type RailItem } from "@/components/RaceLocator";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
-import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
+import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
@@ -66,7 +68,6 @@ function partyAccent(party: "D" | "R" | "I") {
 }
 
 function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
-  const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   const termStarted = entry.termLength ? String(entry.nextElection - entry.termLength) : "TBD";
   const enrichedPastResults = enrichGovResults(entry.pastResults, entry.abbr);
   const accentColor = partyAccent(entry.party);
@@ -116,11 +117,13 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
               title="About this Seat"
               description={entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
               items={[
-                { label: "Party", value: partyLabel, color: partyTextColor(entry.party) },
+                incumbentFact(entry.incumbent, entry.party, candidatePageHref(entry.incumbent, entry.state)),
                 { label: "Elected", value: termStarted },
                 { label: "Next Election", value: String(entry.nextElection) },
               ]}
-            />
+            >
+              <StateDemographicsSubsection abbr={entry.abbr} />
+            </AboutRaceCard>
           </section>
 
           <section>
@@ -147,7 +150,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
                 ...(enrichedPastResults.length > 0 ? [{
                   key: "graph",
                   label: "Graph",
-                  content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" bare />,
+                  content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" />,
                 }] : []),
               ]}
             />
@@ -157,6 +160,11 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
     </div>
   );
 }
+
+/** Every 2026 governor's race, alphabetical, for the header's race switcher. */
+const GOVERNOR_RAIL: RailItem[] = governorData
+  .map((r) => ({ value: r.id.toLowerCase(), label: r.name, href: `/governor/${r.id.toLowerCase()}` }))
+  .sort((a, b) => a.label.localeCompare(b.label));
 
 export default async function GovernorPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -187,8 +195,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const countyProjection = projectRaceResults("governor", race.id);
   const raceHistory = getRaceForecastHistory("governor", race);
   const quality = candidateQuality(race);
-  const demPct = Math.round(forecast.probability * 100);
-  const repPct = 100 - demPct;
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
   const { bg, text } = getRatingColors(forecastRating);
   // Headline shares are the projected vote's (shares of all votes, others set aside), except in a
@@ -208,140 +214,64 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      {/* Hero */}
-      <div
-        style={{
-          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
-          minHeight: "300px",
-        }}
-      >
-        <div className={`${PAGE_CONTAINER} pt-6 pb-8 sm:pb-10`}>
-
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <StatePill name={race.name} abbr={id} />
-                <OfficePill office="governor" />
-                <span className={PILL} style={{ background: bg, color: text }}>
-                  {forecastRating}
-                </span>
-                <HeldPill party={currentGovernorParty} />
-              </div>
-              <h1
-                className="mt-2"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
-              >
-                {race.name} Governor
-              </h1>
-              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                {electionYear} Gubernatorial Race · General {GENERAL_ELECTION}
-              </div>
-            </div>
-
-            <div className="shrink-0 sm:text-right">
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-                Projected Margin
-              </div>
-              <div
-                className="tabular-nums"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: projectedMarginColor(projectedMargin) }}
-              >
-                {formatProjectedMargin(projectedMargin)}
-              </div>
-            </div>
-          </div>
-
-          {/* Stat row */}
-          <div className="mt-8 grid grid-cols-3 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="min-w-0 pr-2 sm:pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl">
-                <span style={{ color: demPct >= repPct ? "var(--party-dem)" : "var(--party-rep)" }}>{Math.max(demPct, repPct)}% {demPct >= repPct ? "D" : "R"}</span>
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Win Prob.
-              </div>
-            </div>
-
-            <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : leanColor(pollMargin) }}>
-                {pollMargin == null ? "—" : fmtLean(pollMargin)}
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Polling Avg.
-              </div>
-            </div>
-
-            <div className="min-w-0 pl-2 sm:pl-8">
-              <div
-                className="text-xl font-extrabold tabular-nums sm:text-2xl"
-                style={{ color: marketDemProb == null ? "var(--app-text-very-muted)" : marketDemProb >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}
-              >
-                {marketDemProb == null
-                  ? "—"
-                  : `${Math.round((marketDemProb >= 0.5 ? marketDemProb : 1 - marketDemProb) * 100)}% ${marketDemProb >= 0.5 ? "D" : "R"}`}
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Markets
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <RaceHero
+        pills={<>
+          <StatePill name={race.name} abbr={id} />
+          <OfficePill office="governor" />
+          <span className={PILL} style={{ background: bg, color: text }}>
+            {forecastRating}
+          </span>
+          <HeldPill party={currentGovernorParty} />
+        </>}
+        nav={<RaceRail items={GOVERNOR_RAIL} current={race.id.toLowerCase()} label="Choose a governor's race" />}
+        fitTitle={{ chars: `${race.name} Governor`.length, emPerChar: 0.62, reservePx: 0 }}
+        title={<>{race.name} Governor</>}
+        candidates={race.candidates ? [race.candidates.dem, race.candidates.rep] : null}
+        state={race.state}
+        fallbackSub={`${electionYear} Gubernatorial Race · General ${GENERAL_ELECTION}`}
+        projectedMargin={projectedMargin}
+        pollMargin={pollMargin}
+        pollsters={polling.avg?.n ?? null}
+        marketDemProb={marketDemProb}
+      />
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
 
-          <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Term Length", value: "4 Years" },
-                { label: "Incumbent", value: currentGovernorName, href: candidatePageHref(currentGovernorName, race.state) },
-                { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentGovernorParty) },
-              ]}
-            />
-          </section>
 
           <section>
-            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            <LedgerSectionHead label={countyProjection ? "Projected Result" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
                 <CandidatesLedgerSection
+                  compact
                   candidates={withProjectedVotes([
                     { name: race.candidates.dem.name, state: race.state, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
                     { name: race.candidates.rep.name, state: race.state, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                   ], countyProjection)}
                 />
               );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} /> : rows;
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} footnote={false} /> : rows;
             })() : (
               <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
             )}
+            {countyProjection && (
+              <div className="mt-4">
+                <PastElectionCountyMap
+                  panelSize="wide"
+                  stateAbbr={id.toUpperCase()}
+                  stateName={race.name}
+                  counties={projectedCountyMapEntries(countyProjection)}
+                  demName={countyProjection.demName}
+                  repName={countyProjection.repName}
+                  demParty={countyProjection.demParty}
+                  repParty={countyProjection.repParty}
+                  height={240}
+                  caption={<div key="caption" className="px-1"><ProjectedVoteFootnote p={countyProjection} /></div>}
+                />
+              </div>
+            )}
           </section>
-
-          <section>
-            <LedgerSectionHead label="Fundraising" />
-            <FundraisingLedgerSection
-              dem={fundraising?.dem ?? null}
-              rep={fundraising?.rep ?? null}
-              demName={race.candidates?.dem.name}
-              repName={race.candidates?.rep.name}
-              source={fundraisingSource}
-              pendingNote="gubernatorial campaigns file with the state rather than the FEC, and those filings are still being collected"
-              fundraisingPts={fundraisingPts}
-              typicalGapPct={moneyTerm.structuralGapPct}
-            />
-          </section>
-
-          {polling.avg && race.candidates && (
-            <section>
-              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
-              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
-            </section>
-          )}
 
           <section>
             <LedgerSectionHead label="Forecast Calculation" />
@@ -370,28 +300,44 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
+              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Projected margin over time, rerun on polls available each day and the latest model. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
             </section>
           )}
 
           <section>
-            <LedgerSectionHead label="Projected County Results" meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
-            {countyProjection ? (
-              <PastElectionCountyMap
-                panelSize="wide"
-                stateAbbr={id.toUpperCase()}
-                stateName={race.name}
-                counties={projectedCountyMapEntries(countyProjection)}
-                demName={countyProjection.demName}
-                repName={countyProjection.repName}
-                demParty={countyProjection.demParty}
-                repParty={countyProjection.repParty}
-                height={280}
-                caption={<div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>The forecast margin ({countyProjection.margin > 0 ? countyProjection.repParty : countyProjection.demParty}+{Math.abs(countyProjection.margin).toFixed(1)}) spread over the state&apos;s counties by their lean, on the 2026 turnout estimate. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>}
-              />
-            ) : (
-              <div className="flex h-[280px] items-center justify-center rounded text-center text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-very-muted)" }}>No county projection for this race.</div>
-            )}
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
+              items={[
+                incumbentFact(currentGovernorName, currentGovernorParty, candidatePageHref(currentGovernorName, race.state)),
+                { label: "Term Length", value: "4 years" },
+              ]}
+            >
+              <StateDemographicsSubsection abbr={id} />
+            </AboutRaceCard>
+          </section>
+
+          {polling.avg && race.candidates && (
+            <section>
+              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} (${polling.avg.nEff.toFixed(1)} effective) · ${Math.round(polling.weight * 100)}% of the projection`} />
+              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
+            </section>
+          )}
+
+          <section>
+            <LedgerSectionHead label="Fundraising" />
+            <FundraisingLedgerSection
+              dem={fundraising?.dem ?? null}
+              rep={fundraising?.rep ?? null}
+              demName={race.candidates?.dem.name}
+              repName={race.candidates?.rep.name}
+              source={fundraisingSource}
+              pendingNote="gubernatorial campaigns file with the state rather than the FEC, and those filings are still being collected"
+              fundraisingPts={fundraisingPts}
+              typicalGapPct={moneyTerm.structuralGapPct}
+            />
           </section>
 
           <section>
@@ -418,7 +364,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                 ...(enrichedPastResults.length > 0 ? [{
                   key: "graph",
                   label: "Graph",
-                  content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" bare />,
+                  content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" forecast={{ year: electionYear, margin: projectedMargin }} />,
                 }] : []),
               ]}
             />

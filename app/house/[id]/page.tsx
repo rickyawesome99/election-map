@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, presPastResults, senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
-import { candidatePageHref, partyTextColor } from "@/lib/candidatePages";
+import { houseData, houseDistrictInfo, houseStatewideResults, presPastResults, senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
+import { candidatePageHref } from "@/lib/candidatePages";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
-import { getRatingColors, formatProjectedMargin, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
+import { getRatingColors } from "@/lib/colorScale";
+import RaceHero from "@/components/RaceHero";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
@@ -11,7 +12,7 @@ import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProje
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
-import { AboutRaceCard, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, incumbentFact, LedgerSubhead, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateDistrictTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
@@ -23,7 +24,7 @@ import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
-import HouseDistrictSwitcher, { type SwitcherDistrict } from "@/components/HouseDistrictSwitcher";
+import { RaceRail, DistrictLocatorMap, StateLocatorMap, type SwitcherDistrict, type RailItem } from "@/components/RaceLocator";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -116,10 +117,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
     : REDRAWN_SINCE_ACS_VINTAGE.has(stateAbbr)
     ? `ACS 2020–24. ${race.state} enacted a new congressional map for ${electionYear}; these figures are for the district's previous lines.`
     : "ACS 2020–24 5-year estimates.";
-  const pvi2026 = houseDistrictPvi[race.id];
-  const pviDisplay = pvi2026 != null
-    ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
-    : "TBD";
   const districtTpl = calculateDistrictTpl(race.id);
   const incumbentPts = raceIncumbencyPts(race); // office advantage + competitive-seat extra
   const fundraising = raceFundraising2026("house", race.id);
@@ -135,8 +132,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const countyProjection = projectRaceResults("house", race.id);
   const raceHistory = getRaceForecastHistory("house", race);
   const quality = candidateQuality(race);
-  const demPct = Math.round(forecast.probability * 100);
-  const repPct = 100 - demPct;
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
   const { bg, text } = getRatingColors(forecastRating);
   // Headline shares are the projected vote's (shares of all votes, others set aside), except in a
@@ -214,8 +209,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       };
     });
 
-  // The state's districts, by number, for the switcher above "Projected Vote": each labelled with
-  // who holds the seat and colored on the locator map by its forecast rating (one district = none).
+  // The state's districts, by number, for the header's switcher: each labelled with who holds the
+  // seat and colored on the locator map by its forecast rating (one district = none).
   const stateFips = ABBR_TO_FIPS[stateAbbr];
   const houseForecasts = new Map(forecastsFor("house").map((f) => [f.id, f]));
   const switcherDistricts: SwitcherDistrict[] = houseData
@@ -233,130 +228,45 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       };
     });
 
+  const railItems: RailItem[] = switcherDistricts.map((d) => ({ value: d.name, label: d.label, href: `/house/${d.name.toLowerCase()}` }));
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      {/* Hero */}
-      <div
-        style={{
-          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
-        }}
-      >
-        <div className={`${PAGE_CONTAINER} pt-6 pb-7`}>
-
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <StatePill name={race.state} abbr={stateAbbr} />
-                <OfficePill office="house" />
-                <span className={PILL} style={{ background: bg, color: text }}>
-                  {forecastRating}
-                </span>
-                <HeldPill party={currentRepParty} />
-              </div>
-              <div className="mt-2">
-                <h1
-                  className="inline whitespace-nowrap"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-                >
-                  {race.name}
-                </h1>
-              </div>
-              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                {electionYear} U.S. House Race · {districtLabel} · General {GENERAL_ELECTION}
-              </div>
-            </div>
-
-            <div className="shrink-0 sm:text-right">
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-                Projected Margin
-              </div>
-              <div
-                className="tabular-nums"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: projectedMarginColor(projectedMargin) }}
-              >
-                {formatProjectedMargin(projectedMargin)}
-              </div>
-            </div>
-          </div>
-
-          {/* Stat row */}
-          <div className="mt-8 grid grid-cols-3 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="min-w-0 pr-2 sm:pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl">
-                <span style={{ color: demPct >= repPct ? "var(--party-dem)" : "var(--party-rep)" }}>{Math.max(demPct, repPct)}% {demPct >= repPct ? "D" : "R"}</span>
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Win Prob.
-              </div>
-            </div>
-
-            <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: pollMargin == null ? "var(--app-text-very-muted)" : leanColor(pollMargin) }}>
-                {pollMargin == null ? "—" : fmtLean(pollMargin)}
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Polling Avg.
-              </div>
-            </div>
-
-            <div className="min-w-0 pl-2 sm:pl-8">
-              <div
-                className="text-xl font-extrabold tabular-nums sm:text-2xl"
-                style={{ color: marketDemProb == null ? "var(--app-text-very-muted)" : marketDemProb >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}
-              >
-                {marketDemProb == null
-                  ? "—"
-                  : `${Math.round((marketDemProb >= 0.5 ? marketDemProb : 1 - marketDemProb) * 100)}% ${marketDemProb >= 0.5 ? "D" : "R"}`}
-              </div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                Markets
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <RaceHero
+        pills={<>
+          <StatePill name={race.state} abbr={stateAbbr} />
+          <OfficePill office="house" />
+          <span className={PILL} style={{ background: bg, color: text }}>
+            {forecastRating}
+          </span>
+          <HeldPill party={currentRepParty} />
+        </>}
+        nav={<RaceRail items={railItems} current={race.name} label="Choose a district" />}
+        map={switcherDistricts.length > 1
+          ? <DistrictLocatorMap stateAbbr={stateAbbr} districts={switcherDistricts} current={race.name} note={`colored by ${electionYear} forecast rating`} />
+          : <StateLocatorMap stateAbbr={stateAbbr} fill={bg} label={`${race.state}, an at-large district`} />}
+        title={<span className="whitespace-nowrap">{race.name}</span>}
+        candidates={race.candidates ? [race.candidates.dem, race.candidates.rep] : null}
+        state={race.state}
+        fallbackSub={`${electionYear} U.S. House Race · ${districtLabel} · General ${GENERAL_ELECTION}`}
+        projectedMargin={projectedMargin}
+        pollMargin={pollMargin}
+        pollsters={polling.avg?.n ?? null}
+        marketDemProb={marketDemProb}
+        mapBesideTitle
+      />
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
 
-          {switcherDistricts.length > 1 && (
-            <HouseDistrictSwitcher stateAbbr={stateAbbr} districts={switcherDistricts} current={race.name} mapNote={`map colored by ${electionYear} forecast rating`} />
-          )}
 
           <section>
-            <LedgerSectionHead label="About this District" />
-            {race.raceDesc && (
-              <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--app-text-primary)" }}>
-                {race.raceDesc}
-              </p>
-            )}
-            {demographics && (
-              <div className="mb-4">
-                <DemographicsStrip {...demographics} />
-              </div>
-            )}
-            <AboutRaceCard
-              bare
-              title="About this District"
-              items={[
-                { label: "Incumbent", value: currentRepName, href: candidatePageHref(currentRepName, race.state) },
-                { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD", color: partyTextColor(currentRepParty) },
-                { label: "PVI", value: pviDisplay },
-              ]}
-            />
-            {demographics && (
-              <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>
-                {demographicsNote}
-              </p>
-            )}
-          </section>
-
-          <section>
-            <LedgerSectionHead label={countyProjection ? "Projected Vote" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
+            <LedgerSectionHead label={countyProjection ? "Projected Result" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {(() => {
               const rows = (
                 <CandidatesLedgerSection
+                  compact
                   candidates={withProjectedVotes(race.candidates
                     ? [
                         { name: race.candidates.dem.name, state: race.state, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
@@ -368,31 +278,32 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                       ], countyProjection)}
                 />
               );
-              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} /> : rows;
+              return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} footnote={false} /> : rows;
             })()}
+            <div className="mt-4">
+              <HouseDistrictMapTabs
+                raceId={race.id}
+                stateAbbr={stateAbbr}
+                margin={projectedMargin}
+                boundaryYears={(() => {
+                  const entries = houseDistrictInfo[race.id] ?? [];
+                  if (entries.length === 0) return [];
+                  const years = new Set(entries.map(e => e.year));
+                  years.add(2016);
+                  return [...years].sort((a, b) => b - a);
+                })()}
+                projection={countyProjection ? {
+                  piecesUrl: `/house-county-pieces/${electionYear}/${stateAbbr}.json`,
+                  district: districtNum === "AL" ? 1 : parseInt(districtNum, 10),
+                  districtLabel: race.name,
+                  counties: projectedCountyMapEntries(countyProjection),
+                  demName: countyProjection.demName, repName: countyProjection.repName,
+                  demParty: countyProjection.demParty, repParty: countyProjection.repParty,
+                  margin: countyProjection.margin, votes: countyProjection.votes,
+                } : null}
+              />
+            </div>
           </section>
-
-          <section>
-            <LedgerSectionHead label="Fundraising" />
-            <FundraisingLedgerSection
-              dem={fundraising?.dem ?? null}
-              rep={fundraising?.rep ?? null}
-              demName={race.candidates?.dem.name}
-              repName={race.candidates?.rep.name}
-              source={fundraisingSource}
-              pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
-              fundraisingPts={fundraisingPts}
-              typicalGapPct={moneyTerm.structuralGapPct}
-              detail={financeDetail}
-            />
-          </section>
-
-          {polling.avg && race.candidates && (
-            <section>
-              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} · ${Math.round(polling.weight * 100)}% of the projection`} />
-              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
-            </section>
-          )}
 
           <section>
             <LedgerSectionHead label="Forecast Calculation" />
@@ -420,32 +331,46 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Today&rsquo;s model rerun on the polls available each day, not what the site said then: a later model change, nominee or filing applies to every day. With no polls the line moves only with the national environment. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
+              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Projected margin over time, rerun on polls available each day and the latest model. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
             </section>
           )}
 
           <section>
-            <LedgerSectionHead label="District Map" meta={countyProjection ? "2026 projection by county · district lines" : undefined} />
-            <HouseDistrictMapTabs
-              raceId={race.id}
-              stateAbbr={stateAbbr}
-              margin={projectedMargin}
-              boundaryYears={(() => {
-                const entries = houseDistrictInfo[race.id] ?? [];
-                if (entries.length === 0) return [];
-                const years = new Set(entries.map(e => e.year));
-                years.add(2016);
-                return [...years].sort((a, b) => b - a);
-              })()}
-              projection={countyProjection ? {
-                piecesUrl: `/house-county-pieces/${electionYear}/${stateAbbr}.json`,
-                district: districtNum === "AL" ? 1 : parseInt(districtNum, 10),
-                districtLabel: race.name,
-                counties: projectedCountyMapEntries(countyProjection),
-                demName: countyProjection.demName, repName: countyProjection.repName,
-                demParty: countyProjection.demParty, repParty: countyProjection.repParty,
-                margin: countyProjection.margin, votes: countyProjection.votes,
-              } : null}
+            <LedgerSectionHead label="About this District" />
+            <AboutRaceCard
+              bare
+              title="About this District"
+              description={race.raceDesc}
+              items={[incumbentFact(currentRepName, currentRepParty, candidatePageHref(currentRepName, race.state))]}
+            >
+              {demographics && (
+                <>
+                  <LedgerSubhead label="Demographics" meta={demographicsNote} />
+                  <DemographicsStrip {...demographics} layout="grid" />
+                </>
+              )}
+            </AboutRaceCard>
+          </section>
+
+          {polling.avg && race.candidates && (
+            <section>
+              <LedgerSectionHead label="Polls" meta={`${polling.avg.n} pollster${polling.avg.n === 1 ? "" : "s"} (${polling.avg.nEff.toFixed(1)} effective) · ${Math.round(polling.weight * 100)}% of the projection`} />
+              <RacePollsSection polling={polling} demName={race.candidates.dem.name} repName={race.candidates.rep.name} />
+            </section>
+          )}
+
+          <section>
+            <LedgerSectionHead label="Fundraising" />
+            <FundraisingLedgerSection
+              dem={fundraising?.dem ?? null}
+              rep={fundraising?.rep ?? null}
+              demName={race.candidates?.dem.name}
+              repName={race.candidates?.rep.name}
+              source={fundraisingSource}
+              pendingNote={`no ${electionYear} FEC filings on record for this race yet`}
+              fundraisingPts={fundraisingPts}
+              typicalGapPct={moneyTerm.structuralGapPct}
+              detail={financeDetail}
             />
           </section>
 
@@ -485,7 +410,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                 ...((pastResultsWithDiff.length > 0 || statewideResultsWithDiff.length > 0) ? [{
                   key: "chart",
                   label: "Graph",
-                  content: <DistrictVoteHistoryChart houseResults={pastResultsWithDiff} statewideResults={statewideResultsWithDiff} bare />,
+                  content: <DistrictVoteHistoryChart houseResults={pastResultsWithDiff} statewideResults={statewideResultsWithDiff} forecast={{ year: electionYear, margin: projectedMargin }} />,
                 }] : []),
               ]}
             />

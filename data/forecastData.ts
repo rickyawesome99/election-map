@@ -75,8 +75,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Two-term Republican Dan Sullivan faces former congresswoman Mary Peltola, the last Democrat to win a statewide race in Alaska, in a top-four ranked-choice general election. Peltola led the August nonpartisan primary with 49.5% to Sullivan's 41.4%, and the ballot also includes a second Republican named Daniel Sullivan whom the senator has called a \"sham candidate.\" Democrats have not won a Senate race in Alaska since 2008.",
-    "polyDem": 0.7,
-    "polyRep": 0.3,
+    "polyDem": 0.73,
+    "polyRep": 0.27,
     "candidates": {
       "dem": { "name": "Mary Peltola", "party": "D", "incumbent": false },
       "rep": { "name": "Dan Sullivan", "party": "R", "incumbent": true }
@@ -119,8 +119,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Republican Tom Cotton seeks a third term against Democratic farmer and entrepreneur Hallie Shoffner. Cotton took 81.6% of the vote in the March primary and is a prohibitive favorite. Democrats have not won a Senate race in Arkansas since Mark Pryor in 2008, the seat Cotton took from him in 2014.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Hallie Shoffner", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Cotton", "party": "R", "incumbent": true }
@@ -163,8 +163,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Democrat Chris Coons seeks a third full term against Republican Michael Katz, a former Democratic state senator who switched parties after running for Senate as the Independent Party nominee in 2024. Delaware has not sent a Republican to the Senate since William Roth's last win in 1994. Coons is a safe bet.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Chris Coons", "party": "D", "incumbent": true },
       "rep": { "name": "Michael Katz", "party": "R", "incumbent": false }
@@ -231,8 +231,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Republican Jim Risch seeks a fourth term against independent former state representative Todd Achilles, who got in with the backing of Democratic leaders after the Democratic nominee, David Roth, withdrew in July. Idaho has not elected a Democrat to the Senate since Frank Church in 1974. Risch is a heavy favorite.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Todd Achilles", "party": "I", "incumbent": false },
       "rep": { "name": "Jim Risch", "party": "R", "incumbent": true }
@@ -275,8 +275,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Republican Roger Marshall seeks a second term against Democrat Adam Hamilton, founding pastor of the Church of the Resurrection, one of the largest United Methodist congregations in the country. Kansas has not elected a Democratic senator since 1932. Hamilton's profile and Democrats' record in Kansas governor's races make this a race worth watching, though Marshall is favored.",
-    "polyDem": 0.49,
-    "polyRep": 0.51,
+    "polyDem": 0.61,
+    "polyRep": 0.39,
     "candidates": {
       "dem": { "name": "Adam Hamilton", "party": "D", "incumbent": false },
       "rep": { "name": "Roger Marshall", "party": "R", "incumbent": true }
@@ -319,8 +319,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Incumbent Bill Cassidy, who voted to convict Trump at his 2021 impeachment trial, finished third in the May primary with 24.8%. Trump-endorsed congresswoman Julia Letlow won the nomination and faces Democrat Jamie Davis, a former Tensas Parish police juror. It is Louisiana's first Senate race with closed party primaries since 2010, and Democrats have not won a Senate seat there since 2008.",
-    "polyDem": 0.09,
-    "polyRep": 0.91,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Jamie Davis", "party": "D", "incumbent": false },
       "rep": { "name": "Julia Letlow", "party": "R", "incumbent": false }
@@ -341,8 +341,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Democrat Ed Markey, who was first elected to Congress in 1976, seeks a third full Senate term after beating congressman Seth Moulton by nearly 30 points in the September primary. He faces a rematch of sorts with Republican attorney John Deaton, the GOP's 2024 Senate nominee against Elizabeth Warren. The last Republican to win a Senate race in Massachusetts was Scott Brown in the 2010 special.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Ed Markey", "party": "D", "incumbent": true },
       "rep": { "name": "John Deaton", "party": "R", "incumbent": false }
@@ -365,8 +365,8 @@ export const senateData: RaceForecast[] = [
     "raceDesc": "Susan Collins, the only Republican senator from a state Trump never carried, seeks a sixth term in a race that uses ranked-choice voting. Democrats replaced their primary winner, harbor master Graham Platner, after he withdrew in July amid misconduct allegations, and a July 25 convention chose former state Senate president Troy Jackson. Collins beat the polls by nine points in 2020, and Democrats haven't won a Senate race in Maine since 1988.",
     "rcpDem": 0.484,
     "rcpRep": 0.444,
-    "polyDem": 0.67,
-    "polyRep": 0.33,
+    "polyDem": 0.72,
+    "polyRep": 0.28,
     "candidates": {
       "dem": { "name": "Troy Jackson", "party": "D", "incumbent": false },
       "rep": { "name": "Susan Collins", "party": "R", "incumbent": true }
@@ -387,8 +387,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Gary Peters's retirement leaves Democrats defending an open seat in a state Trump won in 2024. Progressive former Wayne County health director Abdul El-Sayed beat congresswoman Haley Stevens in the August primary and faces former congressman Mike Rogers, who lost the 2024 Senate race by just 0.3 points. Republicans have not won a Senate race in Michigan since 1994, so this is one of the GOP's best pickup chances.",
-    "polyDem": 0.77,
-    "polyRep": 0.23,
+    "polyDem": 0.79,
+    "polyRep": 0.21,
     "candidates": {
       "dem": { "name": "Abdul El-Sayed", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Rogers", "party": "R", "incumbent": false }
@@ -409,8 +409,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "With Tina Smith retiring, Lieutenant Governor Peggy Flanagan beat congresswoman Angie Craig in a closely watched progressive-versus-moderate primary. She faces Republican Michele Tafoya, the former NBC sports broadcaster. It's Minnesota's first Senate race without an incumbent since 2006, and Republicans have not won a Senate seat there since Norm Coleman in 2002.",
-    "polyDem": 0.91,
-    "polyRep": 0.09,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Peggy Flanagan", "party": "D", "incumbent": false },
       "rep": { "name": "Michele Tafoya", "party": "R", "incumbent": false }
@@ -432,8 +432,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Republican Cindy Hyde-Smith seeks a second full term against Democrat Scott Colom, a district attorney from Columbus. Hyde-Smith has beaten Mike Espy twice, by 7 points in the 2018 special runoff and 10 in 2020, so Mississippi's Senate races are not always blowouts. Still, Democrats have not won one there since 1982.",
-    "polyDem": 0.14,
-    "polyRep": 0.86,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Scott Colom", "party": "D", "incumbent": false },
       "rep": { "name": "Cindy Hyde-Smith", "party": "R", "incumbent": true }
@@ -455,8 +455,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Steve Daines withdrew three minutes before the filing deadline and handed the Republican nomination to former U.S. attorney Kurt Alme, a move criticized in both parties. Alme faces Democratic Air Force officer Alani Bankhead and independent Seth Bodnar, the former University of Montana president backed by Jon Tester. It's Montana's first open Senate race since 1976, and a real three-way contest.",
-    "polyDem": 0.13,
-    "polyRep": 0.87,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Seth Bodnar", "party": "I", "incumbent": false },
       "rep": { "name": "Kurt Alme", "party": "R", "incumbent": false }
@@ -501,8 +501,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Republican Pete Ricketts, the former governor appointed to the Senate in 2023, seeks his first full term against independent Dan Osborn, the former union leader who came within seven points of Deb Fischer in 2024. Nebraska Democrats are backing Osborn and have no nominee of their own after their primary winner withdrew. The last independent to win a Senate race in Nebraska was George Norris in 1936.",
-    "polyDem": 0.32,
-    "polyRep": 0.68,
+    "polyDem": 0.3,
+    "polyRep": 0.7,
     "candidates": {
       "dem": { "name": "Dan Osborn", "party": "I", "incumbent": false },
       "rep": { "name": "Pete Ricketts", "party": "R", "incumbent": true }
@@ -524,8 +524,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Jeanne Shaheen's retirement sets up a heavyweight open-seat race between Democratic congressman Chris Pappas and Republican John Sununu, who held this seat until Shaheen beat him in 2008. Sununu beat former Massachusetts senator Scott Brown for the nomination. New Hampshire's congressional delegation has been all-Democratic since 2017, and Republicans have not won a Senate race there since 2010.",
-    "polyDem": 0.92,
-    "polyRep": 0.08,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Chris Pappas", "party": "D", "incumbent": false },
       "rep": { "name": "John Sununu", "party": "R", "incumbent": false }
@@ -568,8 +568,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Democrat Ben Ray Luján seeks a second term against Republican Larry Marker, a former oil and gas operator who got onto the ballot as a write-in after the only Republican who filed was disqualified. Luján won in 2020 by six points. Republicans have not won a Senate race in New Mexico since Pete Domenici in 2002.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Ben Ray Luján", "party": "D", "incumbent": true },
       "rep": { "name": "Larry Marker", "party": "R", "incumbent": false }
@@ -590,8 +590,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Governor Kevin Stitt appointed Alan Armstrong to this seat in March after Markwayne Mullin resigned to become secretary of homeland security, on the condition that Armstrong not run in 2026. Trump-endorsed congressman Kevin Hern won the Republican nomination and faces Democratic nurse N'Kiyla Jasmine Thomas. Democrats have not won a Senate race in Oklahoma since David Boren in 1990.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "N'Kiyla Jasmine Thomas", "party": "D", "incumbent": false },
       "rep": { "name": "Kevin Hern", "party": "R", "incumbent": false }
@@ -657,8 +657,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Four-term senator Lindsey Graham won the Republican primary in June but died suddenly on July 11. Governor Henry McMaster appointed his sister, Darline Graham, who then beat congressman Ralph Norman in a compressed special primary runoff. She faces Democratic pediatrician Annie Andrews, and whoever wins will be the first woman ever elected to the Senate from South Carolina.",
-    "polyDem": 0.27,
-    "polyRep": 0.73,
+    "polyDem": 0.29,
+    "polyRep": 0.71,
     "candidates": {
       "dem": { "name": "Annie Andrews", "party": "D", "incumbent": false },
       "rep": { "name": "Darline Graham", "party": "R", "incumbent": true, "appointed": true }
@@ -701,8 +701,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Republican Bill Hagerty, Trump's ambassador to Japan in his first term, seeks a second term in a rematch with Democrat Marquita Bradshaw, whom he beat by 27 points in 2020. Bradshaw was the first Black woman to win a major-party Senate nomination in Tennessee. Democrats have not won a Senate race there since Al Gore in 1990.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Marquita Bradshaw", "party": "D", "incumbent": false },
       "rep": { "name": "Bill Hagerty", "party": "R", "incumbent": true }
@@ -723,8 +723,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 2,
     "electionType": "Regular",
     "raceDesc": "Attorney General Ken Paxton ousted four-term senator John Cornyn in a May runoff with 63.8%, the first time a Texas senator has lost renomination since 1970. Democrats nominated state representative James Talarico, a former teacher and seminarian who beat congresswoman Jasmine Crockett. Democrats haven't won a Senate race in Texas since Lloyd Bentsen in 1988, but Paxton's baggage has made this one of the most competitive races on the map.",
-    "polyDem": 0.71,
-    "polyRep": 0.29,
+    "polyDem": 0.72,
+    "polyRep": 0.28,
     "candidates": {
       "dem": { "name": "James Talarico", "party": "D", "incumbent": false },
       "rep": { "name": "Ken Paxton", "party": "R", "incumbent": false }
@@ -811,8 +811,8 @@ export const senateData: RaceForecast[] = [
     "seatClass": 3,
     "electionType": "Special",
     "raceDesc": "This special election fills the rest of Marco Rubio's term after he became secretary of state. Appointed senator Ashley Moody, the former attorney general, faces state representative Angie Nixon, a Democratic socialist who beat the heavily favored Alex Vindman in the primary despite being outspent about 16 to 1. It's Florida's first Senate race with two women as the major-party nominees, and Democrats haven't won a Senate race there since 2012.",
-    "polyDem": 0.09,
-    "polyRep": 0.91,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Angie Nixon", "party": "D", "incumbent": false },
       "rep": { "name": "Ashley Moody", "party": "R", "incumbent": true, "appointed": true }
@@ -835,8 +835,8 @@ export const senateData: RaceForecast[] = [
     "raceDesc": "Former senator Sherrod Brown, who lost his seat to Bernie Moreno by 3.6 points in 2024, is trying to come back against appointed senator Jon Husted. The winner serves the final two years of JD Vance's term. It's Ohio's first Senate special election since 1954, and a rare chance for Democrats in a state Trump carried by 11 points.",
     "rcpDem": 0.48,
     "rcpRep": 0.465,
-    "polyDem": 0.71,
-    "polyRep": 0.29,
+    "polyDem": 0.73,
+    "polyRep": 0.27,
     "candidates": {
       "dem": { "name": "Sherrod Brown", "party": "D", "incumbent": false },
       "rep": { "name": "Jon Husted", "party": "R", "incumbent": true, "appointed": true }
@@ -1756,8 +1756,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "This is a rematch of the 2020 Senate race: Senator Tommy Tuberville, who unseated Doug Jones by 20 points that year, now faces him for the open governorship. Tuberville's residency has been challenged, since Alabama requires governors to have lived in the state for seven years, a question that dates to his years living in Florida. Democrats have not won a governor's race in Alabama since 1998.",
-    "polyDem": 0.06,
-    "polyRep": 0.94,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Doug Jones", "party": "D", "incumbent": false },
       "rep": { "name": "Tommy Tuberville", "party": "R", "incumbent": false }
@@ -1819,8 +1819,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "With Gavin Newsom term-limited, the top-two primary produced a Democrat-versus-Republican general election between former HHS secretary Xavier Becerra and Trump-endorsed commentator Steve Hilton, a former adviser to UK prime minister David Cameron. Becerra came out of a crowded field that was upended when front-runner Eric Swalwell left the race and resigned from Congress in April amid sexual assault allegations. Republicans have not won a California governor's race since Arnold Schwarzenegger in 2006.",
-    "polyDem": 0.95,
-    "polyRep": 0.05,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Xavier Becerra", "party": "D", "incumbent": false },
       "rep": { "name": "Steve Hilton", "party": "R", "incumbent": false }
@@ -1861,8 +1861,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Democrat Ned Lamont, consistently one of the most popular governors in the country, is running for a third term after beating progressive state representative Josh Elliott in August. It was the first primary challenge to a sitting Connecticut governor since Ella Grasso in 1978. Republican state senator Ryan Fazio of Greenwich became the nominee after former New Britain mayor Erin Stewart, the early front-runner, dropped out the day before the convention.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Ned Lamont", "party": "D", "incumbent": true },
       "rep": { "name": "Ryan Fazio", "party": "R", "incumbent": false }
@@ -1882,8 +1882,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Trump-endorsed congressman Byron Donalds won the Republican primary with 48% to succeed Ron DeSantis. Democrats nominated David Jolly, a former Republican congressman, whose running mate is former congresswoman Gwen Graham. Republicans have won every Florida governor's race since 1998, and a Donalds win would make him the state's first Black governor.",
-    "polyDem": 0.29,
-    "polyRep": 0.71,
+    "polyDem": 0.36,
+    "polyRep": 0.64,
     "candidates": {
       "dem": { "name": "David Jolly", "party": "D", "incumbent": false },
       "rep": { "name": "Byron Donalds", "party": "R", "incumbent": false }
@@ -1903,8 +1903,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Healthcare executive Rick Jackson beat Lieutenant Governor Burt Jones in a Republican runoff and faces former Atlanta mayor Keisha Lance Bottoms for the seat Brian Kemp is leaving. Democratic primary turnout topped Republican turnout for the first time since 2006, and Bottoms would be the first Black woman elected governor of any state. Democrats have not won a Georgia governor's race since 1998.",
-    "polyDem": 0.63,
-    "polyRep": 0.37,
+    "polyDem": 0.71,
+    "polyRep": 0.29,
     "candidates": {
       "dem": { "name": "Keisha Lance Bottoms", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Jackson", "party": "R", "incumbent": false }
@@ -1966,8 +1966,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Republican Brad Little seeks a third term after beating a primary challenger 59% to 29%. He faces Democratic attorney Terri Pickens, the party's 2022 nominee for lieutenant governor. Democrats have not won a governor's race in Idaho since Cecil Andrus in 1990.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Terri Pickens", "party": "D", "incumbent": false },
       "rep": { "name": "Brad Little", "party": "R", "incumbent": true }
@@ -2008,8 +2008,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Democrat Laura Kelly is term-limited, and Senate President Ty Masterson, a Republican, faces Democratic state senator Cindy Holscher for the open seat. Kansas regularly elects Democratic governors despite voting Republican for president, and no party has held the governorship for more than two straight terms since 1957. Kansas is the only state Trump won by double digits in 2024 where Democrats are defending a governorship this year.",
-    "polyDem": 0.24,
-    "polyRep": 0.76,
+    "polyDem": 0.28,
+    "polyRep": 0.72,
     "candidates": {
       "dem": { "name": "Cindy Holscher", "party": "D", "incumbent": false },
       "rep": { "name": "Ty Masterson", "party": "R", "incumbent": false }
@@ -2029,8 +2029,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Democrat Maura Healey, the first woman elected governor of Massachusetts, seeks a second term against Republican Michael Minogue, the former CEO of the heart-pump maker Abiomed. Minogue won the Republican primary with 76%. Massachusetts has a long record of electing moderate Republican governors like Charlie Baker, but Healey won by 29 points in 2022.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Maura Healey", "party": "D", "incumbent": true },
       "rep": { "name": "Michael Minogue", "party": "R", "incumbent": false }
@@ -2050,8 +2050,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Democrat Wes Moore is running for a second term in a rematch with Republican Dan Cox, whom he beat by 32 points in 2022. For the second straight cycle, Democrats ran ads boosting Cox in the Republican primary, seeing him as the weaker general election opponent. No incumbent Democratic governor of Maryland has lost reelection since 1950.",
-    "polyDem": 0.99,
-    "polyRep": 0.01,
+    "polyDem": 1,
+    "polyRep": 0,
     "candidates": {
       "dem": { "name": "Wes Moore", "party": "D", "incumbent": true },
       "rep": { "name": "Dan Cox", "party": "R", "incumbent": false }
@@ -2071,8 +2071,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "With Janet Mills term-limited, Democrat Hannah Pingree, a former Maine House speaker and daughter of Representative Chellie Pingree, faces Republican Bobby Charles and independent Rick Bennett, a former Republican state Senate president. Unlike Maine's federal races, the general election is decided by plurality rather than ranked choice. No Republican candidate for governor has won a majority of the vote in Maine since 1962.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Hannah Pingree", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Charles", "party": "R", "incumbent": false }
@@ -2092,8 +2092,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "With Gretchen Whitmer term-limited, Secretary of State Jocelyn Benson, a Democrat, faces Trump-endorsed Republican congressman John James, who took just 50.1% in his primary. Former Detroit mayor Mike Duggan, once a significant independent candidate, withdrew. Michigan narrowly backed Trump in 2024, but Democrats have held every statewide office since 2018, and Republicans haven't won a governor's race there since 2014.",
-    "polyDem": 0.94,
-    "polyRep": 0.06,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Jocelyn Benson", "party": "D", "incumbent": false },
       "rep": { "name": "John James", "party": "R", "incumbent": false }
@@ -2113,8 +2113,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Tim Walz dropped his bid for a third term in January amid a scandal over fraud in state-funded social services programs. Senator Amy Klobuchar is running for the seat against Republican House Speaker Lisa Demuth, who beat Trump-endorsed MyPillow CEO Mike Lindell in the primary, so Minnesota will elect its first female governor either way. Republicans haven't won there since Tim Pawlenty in 2006.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Amy Klobuchar", "party": "D", "incumbent": false },
       "rep": { "name": "Lisa Demuth", "party": "R", "incumbent": false }
@@ -2134,8 +2134,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Republican Jim Pillen, a hog farmer and former University of Nebraska regent, seeks a second term against Democratic former state senator Lynne Walz. Pillen won by 23 points in 2022. Democrats have not won a Nebraska governor's race since Ben Nelson in 1994.",
-    "polyDem": 0.16,
-    "polyRep": 0.84,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Lynne Walz", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Pillen", "party": "R", "incumbent": true }
@@ -2155,8 +2155,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 2,
     "raceDesc": "Republican Kelly Ayotte, the former U.S. senator elected governor by 9 points in 2024, seeks a second two-year term against Democratic former executive councilor Cinde Warmington. New Hampshire has voted Democratic for president in every election since 2004 but has elected Republican governors in every race since 2016. Along with Vermont, it is one of two Harris-won states where a Republican governor is on the ballot.",
-    "polyDem": 0.07,
-    "polyRep": 0.93,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Cinde Warmington", "party": "D", "incumbent": false },
       "rep": { "name": "Kelly Ayotte", "party": "R", "incumbent": true }
@@ -2178,8 +2178,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Former Interior Secretary Deb Haaland, the first Native American to serve in a presidential cabinet, is the Democratic nominee to succeed term-limited Michelle Lujan Grisham. She faces Republican Gregg Hull, the longtime mayor of Rio Rancho. Haaland would be the first Native American woman elected governor of any state, and New Mexico hasn't elected a Republican governor since Susana Martinez in 2014.",
-    "polyDem": 0.95,
-    "polyRep": 0.05,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Deb Haaland", "party": "D", "incumbent": false },
       "rep": { "name": "Gregg Hull", "party": "R", "incumbent": false }
@@ -2199,8 +2199,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Republican Joe Lombardo, the former Clark County sheriff who was the only challenger to unseat a sitting governor in 2022, seeks a second term against Democratic attorney general Aaron Ford. Lombardo beat Steve Sisolak by 1.5 points, and Ford would be Nevada's first Black governor. In a state Trump carried in 2024, this is one of the closest governor's races in the country.",
-    "polyDem": 0.8,
-    "polyRep": 0.2,
+    "polyDem": 0.78,
+    "polyRep": 0.22,
     "candidates": {
       "dem": { "name": "Aaron Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Lombardo", "party": "R", "incumbent": true }
@@ -2243,8 +2243,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Biotech entrepreneur and 2024 presidential candidate Vivek Ramaswamy faces former state health director Amy Acton, who became well known during the COVID-19 pandemic, for the seat Mike DeWine is leaving. Ramaswamy would be the nation's first Hindu governor, and Acton would be Ohio's first woman and first Jewish governor. Democrats haven't won a governor's race in Ohio since Ted Strickland in 2006.",
     "rcpDem": 0.46299999999999997,
     "rcpRep": 0.46,
-    "polyDem": 0.82,
-    "polyRep": 0.18,
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Amy Acton", "party": "D", "incumbent": false },
       "rep": { "name": "Vivek Ramaswamy", "party": "R", "incumbent": false }
@@ -2264,8 +2264,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Former state senator Mike Mazzei beat Attorney General Gentner Drummond by about 2,000 votes in the August Republican runoff to become the nominee for term-limited Kevin Stitt's seat. He faces House Minority Leader Cyndi Munson, a Democrat. Democrats haven't won any statewide race in Oklahoma since Brad Henry's reelection as governor in 2006.",
-    "polyDem": 0.09,
-    "polyRep": 0.91,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Cyndi Munson", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Mazzei", "party": "R", "incumbent": false }
@@ -2285,8 +2285,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Democrat Tina Kotek seeks a second term in a rematch with Republican Christine Drazan, whom she beat 47% to 43.5% in a three-way race in 2022. It is Oregon's first governor's rematch since 1978. Oregon hasn't elected a Republican governor since Victor Atiyeh in 1982.",
-    "polyDem": 0.81,
-    "polyRep": 0.19,
+    "polyDem": 0.84,
+    "polyRep": 0.16,
     "candidates": {
       "dem": { "name": "Tina Kotek", "party": "D", "incumbent": true },
       "rep": { "name": "Christine Drazan", "party": "R", "incumbent": false }
@@ -2348,8 +2348,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Attorney General Alan Wilson, son of Representative Joe Wilson, won the Republican runoff with 68.6% over Lieutenant Governor Pamela Evette after Trump endorsed both of them. He faces Democratic state representative Jermaine Johnson of Columbia for the seat Henry McMaster is leaving. Democrats haven't won a governor's race in South Carolina since 1998.",
-    "polyDem": 0.06,
-    "polyRep": 0.94,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Jermaine Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Alan Wilson", "party": "R", "incumbent": false }
@@ -2390,8 +2390,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Senator Marsha Blackburn won the Republican primary with 43.6% over congressman John Rose to succeed term-limited Bill Lee, and faces Memphis city councilor Jerri Green. Either would be Tennessee's first female governor. Democrats haven't won a statewide race in Tennessee since Phil Bredesen's reelection in 2006.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Jerri Green", "party": "D", "incumbent": false },
       "rep": { "name": "Marsha Blackburn", "party": "R", "incumbent": false }
@@ -2411,8 +2411,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Republican Greg Abbott is seeking a fourth term, and another win would make him the longest-serving governor in Texas history. He faces Democratic state representative Gina Hinojosa of Austin. Abbott has won each of his races by double digits, and Democrats haven't won a Texas governor's race since Ann Richards in 1990.",
-    "polyDem": 0.37,
-    "polyRep": 0.63,
+    "polyDem": 0.38,
+    "polyRep": 0.62,
     "candidates": {
       "dem": { "name": "Gina Hinojosa", "party": "D", "incumbent": false },
       "rep": { "name": "Greg Abbott", "party": "R", "incumbent": true }
@@ -2432,8 +2432,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 2,
     "raceDesc": "Republican Phil Scott, often ranked the most popular governor in the country, seeks a sixth two-year term against Democratic economist Amanda Janoo. Scott won 73% of the vote in 2024 in one of the most Democratic states in the country. Vermont is the only state Kamala Harris won by double digits that has a Republican governor.",
-    "polyDem": 0.23,
-    "polyRep": 0.77,
+    "polyDem": 0.32,
+    "polyRep": 0.68,
     "candidates": {
       "dem": { "name": "Amanda Janoo", "party": "D", "incumbent": false },
       "rep": { "name": "Phil Scott", "party": "R", "incumbent": true }
@@ -2455,8 +2455,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Tony Evers's retirement opens Wisconsin's first governor's race without an incumbent since 2010, in one of the most evenly divided states in the country. Milwaukee County Executive David Crowley re-entered the Democratic race after briefly dropping out, then upset democratic socialist Francesca Hong despite trailing her by nearly 20 points in polls a week earlier. He faces Trump-endorsed congressman Tom Tiffany, a Freedom Caucus member.",
-    "polyDem": 0.85,
-    "polyRep": 0.15,
+    "polyDem": 0.84,
+    "polyRep": 0.16,
     "candidates": {
       "dem": { "name": "David Crowley", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Tiffany", "party": "R", "incumbent": false }
@@ -2476,8 +2476,8 @@ export const governorData: RaceForecast[] = [
     "raceType": "governor",
     "termLength": 4,
     "raceDesc": "Republican state senator Eric Barlow beat State Superintendent Megan Degenfelder in the primary to succeed term-limited Mark Gordon. He faces Democratic perennial candidate Kenneth Casner, who also ran in 2002 and 2018. Democrats haven't won a statewide race in Wyoming since Dave Freudenthal's reelection as governor in 2006.",
-    "polyDem": 0.01,
-    "polyRep": 0.99,
+    "polyDem": 0,
+    "polyRep": 1,
     "candidates": {
       "dem": { "name": "Kenneth Casner", "party": "D", "incumbent": false },
       "rep": { "name": "Eric Barlow", "party": "R", "incumbent": false }
@@ -2698,8 +2698,8 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "raceDesc": "Barry Moore is leaving for the Senate, and former congressman Jerry Carl, who lost this area to Moore in a 2024 member-versus-member primary after the court-ordered map, is trying to come back. He faces Democratic community organizer Clyde Jones in a district the new legislature-drawn map shrank to the Gulf Coast around Mobile and Baldwin counties. It is one of the most Republican seats in the country.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Clyde Jones", "party": "D", "incumbent": false },
       "rep": { "name": "Jerry Carl", "party": "R", "incumbent": false }
@@ -2786,8 +2786,8 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "raceDesc": "Republican Dale Strong, a former Madison County Commission chairman, seeks a third term in the Huntsville-based 5th, home to NASA's Marshall Space Flight Center and the Army's Redstone Arsenal. He ran unopposed in 2024 and faces Democratic contractor Andrew Sneed. Trump carried the district by nearly 30 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Andrew Sneed", "party": "D", "incumbent": false },
       "rep": { "name": "Dale Strong", "party": "R", "incumbent": true }
@@ -2808,8 +2808,8 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "raceDesc": "Republican Gary Palmer, first elected in 2014, seeks another term in the Birmingham-suburbs 6th, the wealthiest district in Alabama. He faces Democrat Maurice Mercer, a former Pelham City Council president. Palmer won with 70% in 2024.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Maurice Mercer", "party": "D", "incumbent": false },
       "rep": { "name": "Gary Palmer", "party": "R", "incumbent": true }
@@ -2830,8 +2830,8 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "raceDesc": "Democrat Terri Sewell, Alabama's first Black congresswoman, seeks a ninth term in the Black Belt 7th, which includes Selma and parts of Birmingham and Tuscaloosa. The new map pushed the district south and west, but it remains the state's safest Democratic seat. She faces Republican educator Ammie Akin.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Terri Sewell", "party": "D", "incumbent": true },
       "rep": { "name": "Ammie Akin", "party": "R", "incumbent": false }
@@ -2852,8 +2852,8 @@ export const houseData: RaceForecast[] = [
     "state": "Alaska",
     "raceType": "house",
     "raceDesc": "Freshman Republican Nick Begich III, grandson of former Democratic congressman Nick Begich Sr., seeks a second term in the largest congressional district in the country. He took the seat in 2024 by beating Mary Peltola, the first Democrat to hold it since 1972; Peltola is now running for Senate. The top-four ranked-choice ballot pairs Begich with commercial fisherman Bill Hill, an independent, and two minor candidates, and Begich is favored.",
-    "polyDem": 0.23,
-    "polyRep": 0.77,
+    "polyDem": 0.2,
+    "polyRep": 0.8,
     "candidates": {
       "dem": { "name": "Bill Hill", "party": "I", "incumbent": false },
       "rep": { "name": "Nicholas Begich III", "party": "R", "incumbent": true }
@@ -2874,8 +2874,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "David Schweikert gave up this Scottsdale-area seat to run for governor, leaving one of the country's top open-seat battlegrounds. Former Arizona Cardinals kicker and CBS analyst Jay Feely, backed by Trump, faces Democrat Amish Shah, a physician and former state representative who came within four points in 2024. Biden narrowly won the district in 2020 and Trump won it by three in 2024.",
-    "polyDem": 0.8,
-    "polyRep": 0.2,
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Amish Shah", "party": "D", "incumbent": false },
       "rep": { "name": "Jay Feely", "party": "R", "incumbent": false }
@@ -2896,8 +2896,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "Freedom Caucus Republican Eli Crane, a former Navy SEAL, faces a rematch with former Navajo Nation president Jonathan Nez in this sprawling rural district covering Flagstaff, Prescott and much of the Navajo Nation. Crane won by nine points in 2024, and Trump carried the district by 15.",
-    "polyDem": 0.34,
-    "polyRep": 0.66,
+    "polyDem": 0.45,
+    "polyRep": 0.55,
     "candidates": {
       "dem": { "name": "Jonathan Nez", "party": "D", "incumbent": false },
       "rep": { "name": "Eli Crane", "party": "R", "incumbent": true }
@@ -2962,8 +2962,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "Andy Biggs is running for governor, opening his East Valley seat. Former Pinal County Sheriff Mark Lamb, who ran for Senate in 2024, is the Republican nominee against Democratic nurse Elizabeth Lee. The Gilbert and Queen Creek-based district is one of the most Republican in metro Phoenix, and Trump won it by 20 points.",
-    "polyDem": 0.14,
-    "polyRep": 0.86,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Elizabeth Lee", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Lamb", "party": "R", "incumbent": false }
@@ -2984,8 +2984,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "Republican Juan Ciscomani, who won this Tucson-area seat by 1.5 points in 2022 and 2.5 in 2024, faces Democrat JoAnna Mendoza, a former veterans' services aide to Representative Tom O'Halleran. The district voted for Biden by a tenth of a point in 2020 and Trump by under a point in 2024. It's one of the premier toss-ups of 2026 and the only Arizona district with no part of Maricopa County.",
-    "polyDem": 0.89,
-    "polyRep": 0.11,
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "Joanna Mendoza", "party": "D", "incumbent": false },
       "rep": { "name": "Juan Ciscomani", "party": "R", "incumbent": true }
@@ -3006,8 +3006,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "Democrat Adelita Grijalva won a 2025 special election to succeed her father, Raúl Grijalva, who held southern Arizona seats for 22 years before his death in March 2025. Now running for a full term, she faces Republican Daniel Butierez in a third straight race. The majority-Hispanic district runs along most of Arizona's border with Mexico.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Adelita Grijalva", "party": "D", "incumbent": true },
       "rep": { "name": "Daniel Butierez", "party": "R", "incumbent": false }
@@ -3028,8 +3028,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "Republican Abe Hamadeh, the 2022 GOP nominee for attorney general who lost by 280 votes, seeks a second term in the northwest Phoenix suburbs, including Sun City West. He faces Democrat Bernadette Greene-Placentia, a truck driver. Hamadeh won by 13 points in 2024.",
-    "polyDem": 0.14,
-    "polyRep": 0.86,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Bernadette Placentia", "party": "D", "incumbent": false },
       "rep": { "name": "Abraham Hamadeh", "party": "R", "incumbent": true }
@@ -3050,8 +3050,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "raceDesc": "Republican Paul Gosar, a dentist and one of the House's most conservative members, seeks a ninth term in the western Arizona 9th, which runs along the Colorado River. He faces Democratic Navy veteran Danielle Sterbinsky. Trump won the district by 31 points in 2024.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Danielle Sterbinsky", "party": "D", "incumbent": false },
       "rep": { "name": "Paul Gosar", "party": "R", "incumbent": true }
@@ -3072,8 +3072,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "raceDesc": "Republican Rick Crawford, first elected in 2010 as the first Republican to win this seat since Reconstruction, seeks a ninth term in Arkansas's most Republican district. He faces Democrat Terri Yarbrough Green, a retired pathologist. Trump carried the Jonesboro-anchored Delta district by 46 points in 2024.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Terri Green", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Crawford", "party": "R", "incumbent": true }
@@ -3094,8 +3094,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "raceDesc": "Republican French Hill, chairman of the House Financial Services Committee, seeks a seventh term in the Little Rock-based 2nd, the least Republican district in an all-Republican delegation. He faces nuclear engineer Chris Jones, the 2022 Democratic nominee for governor. Democrats' high-water mark here in recent years was 2018, when Clarke Tucker came within six points.",
-    "polyDem": 0.19,
-    "polyRep": 0.81,
+    "polyDem": 0.2,
+    "polyRep": 0.8,
     "candidates": {
       "dem": { "name": "Chris Jones", "party": "D", "incumbent": false },
       "rep": { "name": "French Hill", "party": "R", "incumbent": true }
@@ -3116,8 +3116,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "raceDesc": "Republican Steve Womack, a senior appropriator and former Rogers mayor, seeks another term in fast-growing Northwest Arkansas, home to Walmart, Tyson Foods and the University of Arkansas. He faces pastor Robb Ryerse, who challenged Womack in the 2018 Republican primary and is now running as a Democrat. Womack has won each race by about 30 points.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Robb Ryerse", "party": "D", "incumbent": false },
       "rep": { "name": "Steve Womack", "party": "R", "incumbent": true }
@@ -3138,8 +3138,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "raceDesc": "Republican Bruce Westerman, chairman of the House Natural Resources Committee and a forester by trade, seeks a seventh term in south and west Arkansas. The district was represented by conservative Democrats like David Pryor and Mike Ross for decades, but Trump won it by 41 points in 2024. Westerman faces Democrat James Russell, a mental health advocate.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "James Russell", "party": "D", "incumbent": false },
       "rep": { "name": "Bruce Westerman", "party": "R", "incumbent": true }
@@ -3160,8 +3160,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Republican James Gallagher, the former Assembly Republican leader, won a June special election on the old lines to finish Doug LaMalfa's term. Proposition 50's new map transformed the district, dropping the Oregon-border counties for Democratic territory in Mendocino, Lake and Sonoma, so a seat Trump won easily is now one Harris would have carried by 13. Gallagher faces former state Senate leader Mike McGuire, and this is one of Democrats' likeliest pickups in the country.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Mike McGuire", "party": "D", "incumbent": false },
       "rep": { "name": "James Gallagher", "party": "R", "incumbent": true }
@@ -3248,8 +3248,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Republican Tom McClintock, first elected in 2008 and one of the House's most libertarian-leaning members, seeks another term in a Sierra Nevada district that now stretches from Gold Country to the eastern Sierra counties of Inyo and Mono. He faces Democratic engineer Michael Masuda. Prop 50 packed Republican voters here, and Trump would have won it by 21 points.",
-    "polyDem": 0.07,
-    "polyRep": 0.93,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Michael Masuda", "party": "D", "incumbent": false },
       "rep": { "name": "Tom McClintock", "party": "R", "incumbent": true }
@@ -3314,8 +3314,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat John Garamendi, a former lieutenant governor and state insurance commissioner, seeks another term in a district that now takes in all of Solano County. He faces Republican businessman Rudy Recile for the third straight election. Garamendi, first elected to Congress in 2009, has won each recent race with about three-quarters of the vote.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "John Garamendi", "party": "D", "incumbent": true },
       "rep": { "name": "Rudy Recile", "party": "R", "incumbent": false }
@@ -3336,8 +3336,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Josh Harder won by less than four points in 2024, but Prop 50 made his Stockton-area seat much bluer by cutting its San Joaquin County share and adding Contra Costa territory. He faces Republican coach John McBride. Harris would have won the new district by 12 points.",
-    "polyDem": 0.99,
-    "polyRep": 0.01,
+    "polyDem": 1,
+    "polyRep": 0,
     "candidates": {
       "dem": { "name": "Josh Harder", "party": "D", "incumbent": true },
       "rep": { "name": "John McBride", "party": "R", "incumbent": false }
@@ -3358,8 +3358,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Mark DeSaulnier seeks a seventh term in the Contra Costa-based 10th, which covers Concord, Walnut Creek and the San Ramon Valley. He faces Republican business owner Jeff Frese. DeSaulnier has won every race by more than 30 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Mark DeSaulnier", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Frese", "party": "R", "incumbent": false }
@@ -3512,8 +3512,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Progressive Democrat Ro Khanna, a frequent presence on national TV and a possible 2028 presidential contender, seeks a sixth term in the Silicon Valley 17th. He faces Republican tech executive Ritesh Tandon for the third time. Khanna first won in 2016 by unseating fellow Democrat Mike Honda.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Ro Khanna", "party": "D", "incumbent": true },
       "rep": { "name": "Ritesh Tandon", "party": "R", "incumbent": false }
@@ -3534,8 +3534,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Zoe Lofgren, the ranking member on the House Science Committee and in Congress since 1995, seeks another term. Prop 50 extended her district from the San Jose area deep into the Central Valley, taking in parts of Fresno and Kings counties. She faces Republican Marine veteran Shane Lewis and remains a heavy favorite.",
-    "polyDem": 0.99,
-    "polyRep": 0.01,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Zoe Lofgren", "party": "D", "incumbent": true },
       "rep": { "name": "Shane Lewis", "party": "R", "incumbent": false }
@@ -3578,8 +3578,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Republican Vince Fong, a former aide to Kevin McCarthy who won the 2024 special election to succeed him, seeks a second full term in the Bakersfield-based 20th. It remains the most Republican district in California under the new map, and Trump would have won it by 33 points. He faces Democrat Sandra Van Scotter.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Sandra Van Scotter", "party": "D", "incumbent": false },
       "rep": { "name": "Vince Fong", "party": "R", "incumbent": true }
@@ -3600,8 +3600,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Jim Costa, in Congress since 2005, faces Republican casino owner Kyle Kirkland in the Fresno-based 21st. Costa won by just five points in 2024, and Harris won the redrawn district by only about six points. It's worth watching even though Costa is favored.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Jim Costa", "party": "D", "incumbent": true },
       "rep": { "name": "Kyle Kirkland", "party": "R", "incumbent": false }
@@ -3622,8 +3622,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Republican David Valadao, one of two House Republicans still in office who voted to impeach Trump in 2021, is the top Democratic target in California. Prop 50 moved his Central Valley seat north into Fresno County, and Harris would have lost it by only about two points. He faces Visalia school board trustee Randy Villegas in one of the most competitive races in the country.",
-    "polyDem": 0.91,
-    "polyRep": 0.09,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Randy Villegas", "party": "D", "incumbent": false },
       "rep": { "name": "David Valadao", "party": "R", "incumbent": true }
@@ -3644,8 +3644,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Republican Jay Obernolte, a video game developer turned congressman and a leading House voice on artificial intelligence policy, seeks a fourth term in the High Desert 23rd. Prop 50 extended the district further into Riverside County. He faces Democrat Tessa Lynn Hodge, and Trump would have won it by 20 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Tessa Lynn Hodge", "party": "D", "incumbent": false },
       "rep": { "name": "Jay Obernolte", "party": "R", "incumbent": true }
@@ -3666,8 +3666,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Salud Carbajal, a Marine veteran and former Santa Barbara County supervisor, seeks a sixth term in the Central Coast 24th, which covers Santa Barbara and San Luis Obispo. His only November opponent is independent engineer Bob Smith. Carbajal won with 63% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Salud Carbajal", "party": "D", "incumbent": true },
       "rep": { "name": "Bob Smith", "party": "R", "incumbent": false }
@@ -3688,8 +3688,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Raul Ruiz, an emergency physician, seeks an eighth term in the 25th, which covers Imperial County and the Coachella Valley. Prop 50 moved some Riverside County territory out of the district, but it remains Democratic-leaning. He faces Republican Hemet city councilor Joe Males after Trump narrowed Harris's margin here to six points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Raul Ruiz", "party": "D", "incumbent": true },
       "rep": { "name": "Joe Males", "party": "R", "incumbent": false }
@@ -3798,8 +3798,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Laura Friedman, who succeeded Adam Schiff in 2025, seeks a second term in the Burbank, Glendale and Hollywood-based 30th, home to much of the entertainment industry. Prop 50 doubled the district's area. She faces Republican attorney Scott Meyers, and Harris won the district by more than 40 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Laura Friedman", "party": "D", "incumbent": true },
       "rep": { "name": "Scott Meyers", "party": "R", "incumbent": false }
@@ -3820,8 +3820,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Gil Cisneros, a Navy veteran and former Lotto winner who represented an Orange County seat from 2019 to 2021, seeks a second term in the San Gabriel Valley 31st. He faces former Walnut city councilor Eric Ching. The heavily Latino district was substantially reworked by Prop 50 but stays solidly Democratic.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Gilbert Cisneros", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Ching", "party": "R", "incumbent": false }
@@ -3842,8 +3842,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Brad Sherman, in Congress since 1997, seeks reelection in the western San Fernando Valley and Westside 32nd, which includes Malibu and Pacific Palisades. He faces a rematch with talent manager Larry Thompson, whom he beat by 32 points in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Brad Sherman", "party": "D", "incumbent": true },
       "rep": { "name": "Larry Thompson", "party": "R", "incumbent": false }
@@ -3864,8 +3864,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Pete Aguilar, chair of the House Democratic Caucus and the number-three Democrat in the House, seeks reelection in the San Bernardino-based 33rd. Prop 50 made the district somewhat less Democratic. He faces Republican Stephanie Vargas and is a strong favorite.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Pete Aguilar", "party": "D", "incumbent": true },
       "rep": { "name": "Stephanie Vargas", "party": "R", "incumbent": false }
@@ -3930,8 +3930,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Ted Lieu, vice chair of the House Democratic Caucus and an Air Force veteran, seeks reelection in the Westside and South Bay 36th, covering Santa Monica, Beverly Hills and the beach cities. He faces Republican tech executive Houston Brignano. Harris won the district by 40 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Ted Lieu", "party": "D", "incumbent": true },
       "rep": { "name": "Houston Brignano", "party": "R", "incumbent": false }
@@ -3996,8 +3996,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Mark Takano, the ranking member of the Veterans' Affairs Committee and the first openly gay person of color elected to Congress, seeks reelection in the Riverside-based 39th. He faces Republican Lake Elsinore city councilor Steve Manos. Harris's margin here fell to 10 points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Mark Takano", "party": "D", "incumbent": true },
       "rep": { "name": "Steve Manos", "party": "R", "incumbent": false }
@@ -4040,8 +4040,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Prop 50 moved the 41st from Riverside County, where Ken Calvert held it, to a compact seat on the Los Angeles-Orange County line that shares no territory with its predecessor. Democrat Linda Sánchez, in Congress since 2003, is running here and faces plumbing contractor Mitch Clemmons. It is effectively a Democratic pickup.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Linda Sánchez", "party": "D", "incumbent": true },
       "rep": { "name": "Mitch Clemmons", "party": "R", "incumbent": false }
@@ -4150,8 +4150,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Lou Correa, first elected in 2016 to succeed Loretta Sanchez, seeks reelection in the Anaheim and Santa Ana-based 46th, the most Latino and most Democratic district in Orange County. He faces a rematch with Republican professor David Pan. Correa won by 27 points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Lou Correa", "party": "D", "incumbent": true },
       "rep": { "name": "David Pan", "party": "R", "incumbent": false }
@@ -4172,8 +4172,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Dave Min, a former state senator and UC Irvine law professor, won Katie Porter's old coastal Orange County seat by three points in 2024. He faces Republican entrepreneur Jenny Le Roux in a district Prop 50 rebuilt along the coast. Harris would have won it by 10 points.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Dave Min", "party": "D", "incumbent": true },
       "rep": { "name": "Jenny Le Roux", "party": "R", "incumbent": false }
@@ -4194,8 +4194,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Darrell Issa is retiring, and Prop 50 moved his seat north into Riverside County and made it competitive. Republican San Diego County supervisor Jim Desmond faces Democratic San Diego city councilor Marni von Wilpert. Trump narrowly carried the area in 2016, Biden won it by seven in 2020, and Harris by 3.5 in 2024.",
-    "polyDem": 0.94,
-    "polyRep": 0.06,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Marni von Wilpert", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Desmond", "party": "R", "incumbent": false }
@@ -4216,8 +4216,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Mike Levin, who flipped this North San Diego County and south Orange County seat in 2018, has won each of the last three races by less than seven points. He faces retired Navy captain Armen Kurdian. The new map added coastal territory, and Harris would have won it by 12.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Mike Levin", "party": "D", "incumbent": true },
       "rep": { "name": "Armen Kurdian", "party": "R", "incumbent": false }
@@ -4260,8 +4260,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "raceDesc": "Democrat Sara Jacobs, one of the youngest members of Congress and a former State Department official, seeks a third term. Prop 50 nearly tripled her district's size by adding territory in eastern San Diego County. She faces Republican business owner Ricardo Cabrera and remains a strong favorite.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Sara Jacobs", "party": "D", "incumbent": true },
       "rep": { "name": "Ricardo Cabrera", "party": "R", "incumbent": false }
@@ -4348,8 +4348,8 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "raceDesc": "Freshman Republican Jeff Hurd, who replaced Lauren Boebert on the Western Slope, lost and then regained Trump's endorsement this spring after a challenger agreed to drop out. He faces Democrat Dwayne Romero, a real estate CEO and Army officer. The district was one of the closest House races of 2022, when Boebert won by 546 votes, but Hurd won by five points in 2024.",
-    "polyDem": 0.37,
-    "polyRep": 0.63,
+    "polyDem": 0.38,
+    "polyRep": 0.62,
     "candidates": {
       "dem": { "name": "Dwayne Romero", "party": "D", "incumbent": false },
       "rep": { "name": "Jeff Hurd", "party": "R", "incumbent": true }
@@ -4370,8 +4370,8 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "raceDesc": "Republican Lauren Boebert, who moved to this district in 2024 after nearly losing the 3rd, seeks a second term on the Eastern Plains and in the southern Denver exurbs like Castle Rock and Parker. She faces retired Navy rear admiral Eileen Laubacher, a former National Security Council director. It is the most Republican district in Colorado.",
-    "polyDem": 0.37,
-    "polyRep": 0.63,
+    "polyDem": 0.39,
+    "polyRep": 0.61,
     "candidates": {
       "dem": { "name": "Eileen Laubacher", "party": "D", "incumbent": false },
       "rep": { "name": "Lauren Boebert", "party": "R", "incumbent": true }
@@ -4414,8 +4414,8 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "raceDesc": "Democrat Jason Crow, a former Army Ranger who served as an impeachment manager in 2020, seeks reelection in the Aurora-based 6th. He faces Republican Jason Clark. The district flipped from Republican Mike Coffman to Crow in 2018 and has become solidly Democratic since.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Jason Crow", "party": "D", "incumbent": true },
       "rep": { "name": "Jason Clark", "party": "R", "incumbent": false }
@@ -4436,8 +4436,8 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "raceDesc": "Democrat Brittany Pettersen seeks a third term in the 7th, which stretches from the western Denver suburbs like Lakewood and Arvada into the central Colorado mountains. She faces Republican Army veteran Tim Bennett. Pettersen has won both of her races by double digits.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Brittany Pettersen", "party": "D", "incumbent": true },
       "rep": { "name": "Tim Bennett", "party": "R", "incumbent": false }
@@ -4458,8 +4458,8 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "raceDesc": "Colorado's newest district, created after the 2020 census, has changed hands in each of its two elections. Republican Gabe Evans, a former police officer and Army veteran, won it by less than a point in 2024 and faces former state representative Manny Rutinel. The district voted for Trump by two points in 2016 and 2024 and for Biden by five in 2020, making it one of the most closely watched House races in the country.",
-    "polyDem": 0.84,
-    "polyRep": 0.16,
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Manny Rutinel", "party": "D", "incumbent": false },
       "rep": { "name": "Gabe Evans", "party": "R", "incumbent": true }
@@ -4477,8 +4477,8 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "raceDesc": "Former Hartford mayor Luke Bronin defeated 14-term incumbent John Larson in a landslide in the Democratic primary after criticism of Larson's age. Bronin faces Republican physician Amy Chai. The Hartford-anchored district has been Democratic since 1959 and is safely blue.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Luke Bronin", "party": "D", "incumbent": false },
       "rep": { "name": "Amy Chai", "party": "R", "incumbent": false }
@@ -4499,8 +4499,8 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "raceDesc": "Democrat Joe Courtney, a leading advocate for the submarine industry centered at Groton's Electric Boat shipyard, seeks reelection in eastern Connecticut's 2nd. He faces Republican business owner George Austin. Courtney first won the seat in 2006 by 83 votes and has won comfortably since.",
-    "polyDem": 0.95,
-    "polyRep": 0.05,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Joe Courtney", "party": "D", "incumbent": true },
       "rep": { "name": "George Austin", "party": "R", "incumbent": false }
@@ -4521,8 +4521,8 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "raceDesc": "Democrat Rosa DeLauro, the top Democrat on the House Appropriations Committee and in Congress since 1991, seeks another term in the New Haven-based 3rd. She faces Republican Christopher Lancia. DeLauro won by 18 points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Rosa Delauro", "party": "D", "incumbent": true },
       "rep": { "name": "Christopher Lancia", "party": "R", "incumbent": false }
@@ -4587,8 +4587,8 @@ export const houseData: RaceForecast[] = [
     "state": "Delaware",
     "raceType": "house",
     "raceDesc": "Democrat Sarah McBride, the first openly transgender member of Congress, seeks a second term in Delaware's at-large seat, the oldest congressional district in the country and the most populous. She faces Republican physician Joseph Arminio. Delaware hasn't elected a Republican to the House since Mike Castle in 2008.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Sarah McBride", "party": "D", "incumbent": true },
       "rep": { "name": "Joseph Arminio", "party": "R", "incumbent": false }
@@ -4675,8 +4675,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Aaron Bean, a former state senator, seeks a third term in the Jacksonville-area 4th against LaShonda \"L.J.\" Holloway, who is making her third straight run for the seat. Holloway cut Bean's margin from 21 points in 2022 to 15 in 2024. Trump won the district by 12.",
-    "polyDem": 0.2,
-    "polyRep": 0.8,
+    "polyDem": 0.19,
+    "polyRep": 0.81,
     "candidates": {
       "dem": { "name": "LaShonda Holloway", "party": "D", "incumbent": false },
       "rep": { "name": "Aaron Bean", "party": "R", "incumbent": true }
@@ -4697,8 +4697,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican John Rutherford, a former Jacksonville sheriff first elected in 2016, seeks reelection in the northeast Florida 5th, which runs from southeast Jacksonville to St. Augustine. He faces Democrat Rachel Grage, a biomedical engineer. Trump won the district by 22 points.",
-    "polyDem": 0.06,
-    "polyRep": 0.94,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Rachel Grage", "party": "D", "incumbent": false },
       "rep": { "name": "John Rutherford", "party": "R", "incumbent": true }
@@ -4719,8 +4719,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Randy Fine, who won the 2025 special election to replace Mike Waltz, easily survived a primary in which his inflammatory comments about Gaza drew criticism from challengers, including a retired Army general and the influencer Dan Bilzerian. He faces Democratic realtor Eric Yonce. Fine underperformed in the special, winning by 14 points in a district Trump carried by 30.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Eric Yonce", "party": "D", "incumbent": false },
       "rep": { "name": "Randy Fine", "party": "R", "incumbent": true }
@@ -4741,8 +4741,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Cory Mills lost his primary to former WOFL-TV reporter Ryan Elijah after a series of controversies. Elijah faces Democrat Bale Dalton, a former NASA chief of staff, in the Seminole and Volusia County district. Trump won it by 13 points in 2024, though Democrat Stephanie Murphy held an earlier version of the seat until 2023.",
-    "polyDem": 0.28,
-    "polyRep": 0.72,
+    "polyDem": 0.35,
+    "polyRep": 0.65,
     "candidates": {
       "dem": { "name": "Bale Dalton", "party": "D", "incumbent": false },
       "rep": { "name": "Ryan Elijah", "party": "R", "incumbent": false }
@@ -4763,8 +4763,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Mike Haridopolos, the former Florida Senate president, seeks a second term on the Space Coast. The new map moved the district inland toward Orlando, taking in more of Orange County. He faces Democrat Jennifer Jenkins, a former Brevard County school board member, and Trump won the redrawn district by 16 points.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Jennifer Jenkins", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Haridopolos", "party": "R", "incumbent": true }
@@ -4785,8 +4785,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Florida's new map turned Democrat Darren Soto's Kissimmee-based seat into a sprawling district reaching south into rural Okeechobee, Highlands and Glades counties. Trump would have won it by 18 points in 2024, up from seven in 2020. Soto, the first Puerto Rican elected to Congress from Florida, faces Republican Dan Green, a former deputy assistant secretary of defense, in one of Republicans' best pickup chances.",
-    "polyDem": 0.32,
-    "polyRep": 0.68,
+    "polyDem": 0.33,
+    "polyRep": 0.67,
     "candidates": {
       "dem": { "name": "Darren Soto", "party": "D", "incumbent": true },
       "rep": { "name": "Dan Green", "party": "R", "incumbent": false }
@@ -4829,8 +4829,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Daniel Webster, the former Florida House speaker and a longtime Orlando-area congressman, is retiring. Businessman Joe Strada won the Republican primary over former state senator Carey Baker and faces Democratic attorney James Pericola. The district, anchored by The Villages retirement community, is solidly Republican.",
-    "polyDem": 0.13,
-    "polyRep": 0.87,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "James Pericola", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Strada", "party": "R", "incumbent": false }
@@ -4851,8 +4851,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Gus Bilirakis, who took over this Tampa Bay-area seat from his father, Michael, in 2007, seeks reelection in a district the new map shifted from Hernando and Citrus counties south into Hillsborough. He faces former Hillsborough County commissioner Kimberly Overman. Trump won the redrawn district by 16 points.",
-    "polyDem": 0.16,
-    "polyRep": 0.84,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Kimberly Overman", "party": "D", "incumbent": false },
       "rep": { "name": "Gus Bilirakis", "party": "R", "incumbent": true }
@@ -4873,8 +4873,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Anna Paulina Luna, a Freedom Caucus member and Air Force veteran, seeks a third term in the Pinellas County 13th. She faces Democrat Leela Gray, a retired Army brigadier general. Luna won by nine points in 2024, and the district was held by Democrat Charlie Crist until 2022.",
-    "polyDem": 0.28,
-    "polyRep": 0.72,
+    "polyDem": 0.37,
+    "polyRep": 0.63,
     "candidates": {
       "dem": { "name": "Leela Gray", "party": "D", "incumbent": false },
       "rep": { "name": "Anna Paulina Luna", "party": "R", "incumbent": true }
@@ -4895,8 +4895,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Democrat Kathy Castor, in Congress since 2007, is running in a district the new map turned from safely Democratic into a toss-up by moving it out of Pinellas County and deeper into Hillsborough. Trump would have won the new 14th by 11 points in 2024. She faces former Republican state representative Mike Beltran in one of the closest races in Florida.",
-    "polyDem": 0.72,
-    "polyRep": 0.28,
+    "polyDem": 0.78,
+    "polyRep": 0.22,
     "candidates": {
       "dem": { "name": "Kathy Castor", "party": "D", "incumbent": true },
       "rep": { "name": "Mike Beltran", "party": "R", "incumbent": false }
@@ -4917,8 +4917,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Laurel Lee, a former Florida secretary of state and judge, seeks a third term. The new map moved her district north to take in Hernando and Citrus counties and part of Pasco. She faces Democrat Robert People, an Army veteran, and Trump won the redrawn district by 20 points.",
-    "polyDem": 0.06,
-    "polyRep": 0.94,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Robert People", "party": "D", "incumbent": false },
       "rep": { "name": "Laurel Lee", "party": "R", "incumbent": true }
@@ -4939,8 +4939,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Vern Buchanan is retiring after nearly 20 years, and Sydney Gruters, wife of Republican National Committee chairman Joe Gruters, is the Republican nominee. She faces former Sarasota mayor Kelly Kirschner. The new map pulled the district out of Hillsborough and into Sarasota, DeSoto, Hardee and part of Pinellas, and Trump won it by 14 points.",
-    "polyDem": 0.23,
-    "polyRep": 0.77,
+    "polyDem": 0.26,
+    "polyRep": 0.74,
     "candidates": {
       "dem": { "name": "Kelly Kirschner", "party": "D", "incumbent": false },
       "rep": { "name": "Sydney Gruters", "party": "R", "incumbent": false }
@@ -4961,8 +4961,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Greg Steube, an Army veteran and former state senator, seeks another term in the southwest Florida 17th, covering part of Sarasota County and Charlotte County. He faces Democrat Matthew Montavon, a retired United Nations official. Trump won the district by 22 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Matthew Montavon", "party": "D", "incumbent": false },
       "rep": { "name": "Greg Steube", "party": "R", "incumbent": true }
@@ -5005,8 +5005,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Byron Donalds is running for governor, and his open seat drew a crowded Republican primary that included two former congressmen from other states, North Carolina's Madison Cawthorn and New York's Chris Collins. Broadcasting executive Jim Schwartzel won the nomination and faces Democratic attorney Victor Arias. The Fort Myers-Naples district is one of the most Republican in Florida.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Victor Arias", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Schwartzel", "party": "R", "incumbent": false }
@@ -5027,8 +5027,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Sheila Cherfilus-McCormick resigned in April and then lost her comeback bid in the primary, where Debbie Wasserman Schultz, a former DNC chair whose old 25th district was dismantled, won the nomination here. She faces Republican Brent Andersen. The new 20th was rebuilt almost entirely from the old 23rd and remains one of the most Democratic districts in Florida.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Debbie Wasserman Schultz", "party": "D", "incumbent": true },
       "rep": { "name": "Brent Andersen", "party": "R", "incumbent": false }
@@ -5049,8 +5049,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Brian Mast, chairman of the House Foreign Affairs Committee and an Army veteran who lost both legs in Afghanistan, seeks reelection on the Treasure Coast. He faces Coast Guard Reserve officer James Martin. Trump won the district by 16 points.",
-    "polyDem": 0.12,
-    "polyRep": 0.88,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "James Martin", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Mast", "party": "R", "incumbent": true }
@@ -5071,8 +5071,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Florida's new map made the 22nd more than fifteen times larger, stretching it from Palm Beach across the Everglades to Collier County, and turned a Democratic seat into a toss-up. Lois Frankel moved to the 23rd, leaving Republican businessman Casey Askar to face Democrat Pia Dandiya, an Apple manager. Trump would have won the new district by 11 points in 2024 after Biden carried it by three in 2020.",
-    "polyDem": 0.73,
-    "polyRep": 0.27,
+    "polyDem": 0.74,
+    "polyRep": 0.26,
     "candidates": {
       "dem": { "name": "Pia Dandiya", "party": "D", "incumbent": false },
       "rep": { "name": "Casey Askar", "party": "R", "incumbent": false }
@@ -5093,8 +5093,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Democrat Lois Frankel, a former West Palm Beach mayor, moved here after the new map dismantled her 22nd; the new 23rd shares no territory with the old one. She faces Republican financial advisor Deborah Adeimy. The Broward and Palm Beach district remains solidly Democratic.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Lois Frankel", "party": "D", "incumbent": true },
       "rep": { "name": "Deborah Adeimy", "party": "R", "incumbent": false }
@@ -5115,8 +5115,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Frederica Wilson, known for her signature cowboy hats, is retiring after eight terms. Miami-Dade County commissioner Oliver Gilbert won a Democratic primary that included state senator Shevrin Jones and Kendrick Meek Jr. He faces Republican Mayonna Te Brown in a district that remains safely Democratic.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Oliver Gilbert", "party": "D", "incumbent": false },
       "rep": { "name": "Mayonna Te Brown", "party": "R", "incumbent": false }
@@ -5137,8 +5137,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Democrat Jared Moskowitz, known for his bipartisan streak and sharp sense of humor, moved here after the new map reconfigured South Florida. He faces former Boca Raton mayor Scott Singer. Biden won the district by five points in 2020, but Trump carried it by nine in 2024, making this one of the most competitive races in Florida.",
-    "polyDem": 0.78,
-    "polyRep": 0.22,
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Jared Moskowitz", "party": "D", "incumbent": true },
       "rep": { "name": "Scott Singer", "party": "R", "incumbent": false }
@@ -5159,8 +5159,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Mario Diaz-Balart, a senior appropriator in Congress since 2003, seeks reelection in a district the new map moved from Collier County north into Broward. He faces Democratic lawyer Nicole Locklin. The Cuban American-heavy district swung from Clinton by 21 points in 2016 to Trump by 19 in 2024, a 39-point swing in eight years.",
-    "polyDem": 0.13,
-    "polyRep": 0.87,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Nicole Locklin", "party": "D", "incumbent": false },
       "rep": { "name": "Mario Diaz-Balart", "party": "R", "incumbent": true }
@@ -5181,8 +5181,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "raceDesc": "Republican Maria Elvira Salazar, a former Spanish-language TV journalist, seeks a fourth term in the Miami-based 27th. She faces Democrat Eliott Rodriguez, also a veteran television journalist. The district voted for Clinton by 18 points in 2016 and Trump by 15 in 2024.",
-    "polyDem": 0.35,
-    "polyRep": 0.65,
+    "polyDem": 0.43,
+    "polyRep": 0.57,
     "candidates": {
       "dem": { "name": "Eliott Rodriguez", "party": "D", "incumbent": false },
       "rep": { "name": "Maria Salazar", "party": "R", "incumbent": true }
@@ -5244,8 +5244,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Democrat Sanford Bishop, in Congress since 1993 and the longest-serving member of Georgia's delegation, seeks reelection in the rural southwest Georgia 2nd, the state's largest district by area. He faces Republican businessman Matt Day. Harris carried the district by eight points, and Bishop won by 13 in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Sanford Bishop Jr.", "party": "D", "incumbent": true },
       "rep": { "name": "Matt Day", "party": "R", "incumbent": false }
@@ -5288,8 +5288,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Democrat Hank Johnson, in Congress since 2007, seeks reelection in the DeKalb County-based 4th in Atlanta's eastern suburbs. He faces Republican Jim Duffie, a veteran and retired nonprofit executive. Johnson has won every race since 2016 with at least 75% of the vote.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Hank Johnson", "party": "D", "incumbent": true },
       "rep": { "name": "Jim Duffie", "party": "R", "incumbent": false }
@@ -5332,8 +5332,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Democrat Lucy McBath, a gun-safety activist who entered politics after her son Jordan Davis was killed in 2012, seeks reelection in the redrawn 6th in Atlanta's western suburbs. She faces Republican Kevin Martin. McBath won with 75% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Lucy McBath", "party": "D", "incumbent": true },
       "rep": { "name": "Kevin Martin", "party": "R", "incumbent": false }
@@ -5354,8 +5354,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Republican Rich McCormick, an emergency physician and former Marine helicopter pilot, seeks reelection in the northern Atlanta suburbs and exurbs, including Forsyth County, Alpharetta and Johns Creek. He faces Democratic attorney Anthony Kozycki. Trump won the district by 22 points.",
-    "polyDem": 0.09,
-    "polyRep": 0.91,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Anthony Kozycki", "party": "D", "incumbent": false },
       "rep": { "name": "Richard McCormick", "party": "R", "incumbent": true }
@@ -5376,8 +5376,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Republican Austin Scott, first elected in 2010, seeks another term in the south-central 8th, which runs from Macon to Valdosta and the Florida line. He faces Democratic businessman Kelly Esti. Scott won with 69% in 2024.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Kelly Esti", "party": "D", "incumbent": false },
       "rep": { "name": "Austin Scott", "party": "R", "incumbent": true }
@@ -5398,8 +5398,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Republican Andrew Clyde, a Freedom Caucus member and gun-store owner, seeks reelection in the northeast Georgia mountains and exurbs. He beat Gainesville's mayor and a Hall County commissioner in the primary and now faces Democratic organizer Caitlyn Gegen. Trump won the district by 34 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Caitlyn Gegen", "party": "D", "incumbent": false },
       "rep": { "name": "Andrew Clyde", "party": "R", "incumbent": true }
@@ -5420,8 +5420,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Mike Collins left this seat to run for Senate, and state representative Houston Gaines, who won an Athens-area state House seat at age 23, is the Republican nominee. He faces Democratic nurse Pamela DeLancy in a district stretching from Atlanta's eastern exurbs toward Augusta. Trump won it by 21 points.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Pamela DeLancy", "party": "D", "incumbent": false },
       "rep": { "name": "Houston Gaines", "party": "R", "incumbent": false }
@@ -5464,8 +5464,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Republican Rick Allen, first elected in 2014, seeks reelection in the Augusta-based 12th. He faces Democratic Grovetown city councilor Ceretta Smith, ending a run in which Liz Johnson was the Democratic nominee three straight times. Allen won by 21 points in 2024.",
-    "polyDem": 0.16,
-    "polyRep": 0.84,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Ceretta Smith", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Allen", "party": "R", "incumbent": true }
@@ -5486,8 +5486,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "David Scott died in April while running for a 13th term. Everton Blair, the former Gwinnett school board chair, won the special election to replace him but lost the Democratic primary for a full term to state representative Jasmine Clark, who faces Republican Jonathan Chavez. Harris won the district by 43 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Jasmine Clark", "party": "D", "incumbent": false },
       "rep": { "name": "Jonathan Chavez", "party": "R", "incumbent": false }
@@ -5508,8 +5508,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "raceDesc": "Marjorie Taylor Greene resigned in January, and district attorney Clay Fuller won the special election runoff to replace her. He now faces Democrat Shawn Harris, a retired Army brigadier general and cattle farmer who cut Greene's margin to 29 points in 2024. The northwest Georgia district is the most Republican in the state.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Shawn Harris", "party": "D", "incumbent": false },
       "rep": { "name": "Clay Fuller", "party": "R", "incumbent": true }
@@ -5530,8 +5530,8 @@ export const houseData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "house",
     "raceDesc": "Democrat Ed Case, a fiscally moderate Blue Dog who first served in Congress in the early 2000s before returning in 2019, seeks reelection in the Honolulu-based 1st. He beat state senator Jarrett Keohokalole in the primary and faces Republican Adriel Lam. Case has won each general election with more than 70% of the vote.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Ed Case", "party": "D", "incumbent": true },
       "rep": { "name": "Adriel Lam", "party": "R", "incumbent": false }
@@ -5552,8 +5552,8 @@ export const houseData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "house",
     "raceDesc": "Democrat Jill Tokuda seeks a third term in the 2nd, which covers every Hawaiian island except urban Oahu. She faces Republican Brenton Awa, the state Senate minority leader, a stronger opponent than Republicans usually field here. Harris won the district by 22 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Jill Tokuda", "party": "D", "incumbent": true },
       "rep": { "name": "Brenton Awa", "party": "R", "incumbent": false }
@@ -5574,8 +5574,8 @@ export const houseData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "house",
     "raceDesc": "Republican Russ Fulcher, first elected in 2018, seeks reelection in the Idaho Panhandle and western Boise suburbs. He faces Democratic jeweler Kaylee Peterson for the third straight time. Trump won the district by 46 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Kaylee Peterson", "party": "D", "incumbent": false },
       "rep": { "name": "Russ Fulcher", "party": "R", "incumbent": true }
@@ -5618,8 +5618,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Jonathan Jackson, son of civil rights leader Jesse Jackson, seeks a third term in the 1st, which runs from Chicago's South Side through Hyde Park to exurban Will and Kankakee counties. He faces Republican entrepreneur Christian Maxwell. The district has been represented by a Black member of Congress continuously since 1929.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Jonathan Jackson", "party": "D", "incumbent": true },
       "rep": { "name": "Christian Maxwell", "party": "R", "incumbent": false }
@@ -5640,8 +5640,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Robin Kelly gave up this seat for an unsuccessful Senate run. Cook County commissioner Donna Miller won the Democratic primary and faces Republican Michael Noack. The district runs from Chicago's far South Side to rural counties along the Indiana border and is nearly half Black.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Donna Miller", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Noack", "party": "R", "incumbent": false }
@@ -5728,8 +5728,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Sean Casten, a clean energy entrepreneur who unseated Peter Roskam in 2018, faces a rematch with Republican energy consultant Niki Conforti, whom he beat by eight points in 2024. The district covers southwest Cook and eastern DuPage suburbs, and Harris won it by about six points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Sean Casten", "party": "D", "incumbent": true },
       "rep": { "name": "Niki Conforti", "party": "R", "incumbent": false }
@@ -5750,8 +5750,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Danny Davis is retiring after 30 years representing Chicago's West Side and downtown Loop. State representative La Shawn Ford won a crowded Democratic primary that included city treasurer Melissa Conyears-Ervin and perennial challenger Kina Collins. He faces Republican Chad Koppie in the most Democratic district in Illinois.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "La Shawn Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Chad Koppie", "party": "R", "incumbent": false }
@@ -5772,8 +5772,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Raja Krishnamoorthi gave up this seat for an unsuccessful Senate run, and former congresswoman Melissa Bean, who represented an earlier version of the 8th from 2005 to 2011, won the Democratic primary. She faces Republican Jennifer Davis in the northwest suburban district, which includes Schaumburg and Elgin. Harris won it by seven points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Melissa Bean", "party": "D", "incumbent": false },
       "rep": { "name": "Jennifer Davis", "party": "R", "incumbent": false }
@@ -5794,8 +5794,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Jan Schakowsky is retiring after 28 years. Evanston mayor Daniel Biss won a nationally watched Democratic primary over influencer Kat Abughazaleh and others. He faces Republican pastor John Elleson, whom Schakowsky beat in 2018, in the North Shore district, and he is a heavy favorite.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Daniel Biss", "party": "D", "incumbent": false },
       "rep": { "name": "John Elleson", "party": "R", "incumbent": false }
@@ -5816,8 +5816,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Brad Schneider seeks reelection in the northern Chicago suburbs and Lake County, including Waukegan and Northbrook. He faces Republican Carl Lambrecht. Schneider traded this seat back and forth with Republican Bob Dold in 2012, 2014 and 2016 before the district became solidly Democratic.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Brad Schneider", "party": "D", "incumbent": true },
       "rep": { "name": "Carl Lambrecht", "party": "R", "incumbent": false }
@@ -5838,8 +5838,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Bill Foster, a particle physicist from Fermilab, seeks reelection in the Aurora and Naperville-based 11th. He faces Elburn mayor Jeff Walter. Foster won by 11 points in 2024, and Harris carried the district by 12.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Bill Foster", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Walter", "party": "R", "incumbent": false }
@@ -5860,8 +5860,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Republican Mike Bost, chairman of the House Veterans' Affairs Committee, seeks reelection in the southern Illinois 12th, the most Republican district in the state. He faces Democrat Julie Fortier, a research microbiologist and Air Force veteran. Trump won the district by 44 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Julie Fortier", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Bost", "party": "R", "incumbent": true }
@@ -5882,8 +5882,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Nikki Budzinski, a former labor organizer and Biden administration official, seeks a third term in the district connecting Champaign-Urbana, Springfield, Decatur and the Metro East. She faces Republican Champaign County Board member Jeff Wilson. Budzinski won by 16 points in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Nikki Budzinski", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Wilson", "party": "R", "incumbent": false }
@@ -5904,8 +5904,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Lauren Underwood, a nurse who in 2018 became the youngest Black woman elected to Congress at the time, seeks a fifth term in the western exurbs, including parts of Aurora, Naperville and Joliet. She faces Republican James Marter for the second time. Underwood won by 10 points in 2024 after a razor-thin 2020 race.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Lauren Underwood", "party": "D", "incumbent": true },
       "rep": { "name": "James Marter", "party": "R", "incumbent": false }
@@ -5926,8 +5926,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Republican Mary Miller, a farmer, seeks a fourth term in the rural central Illinois 15th, which stretches from the Indiana border to Quincy. She ran unopposed in 2024 and now faces Democrat Jennifer Todd, a former nurse. Trump won the district by 40 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Jennifer Todd", "party": "D", "incumbent": false },
       "rep": { "name": "Mary Miller", "party": "R", "incumbent": true }
@@ -5948,8 +5948,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Republican Darin LaHood, son of former transportation secretary Ray LaHood, seeks reelection in the rural northern Illinois 16th, once represented by Senate leader Everett Dirksen. He ran unopposed in 2024 and faces Democratic nonprofit executive Paul Nolley. Trump won the district by 23 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Paul Nolley", "party": "D", "incumbent": false },
       "rep": { "name": "Darin LaHood", "party": "R", "incumbent": true }
@@ -5970,8 +5970,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "raceDesc": "Democrat Eric Sorensen, a former TV meteorologist, seeks a third term in the northwestern Illinois 17th, which links Rockford, the Quad Cities, Peoria and Bloomington. He faces Republican coffee shop owner Dillan Vancil. Harris won the district by just under five points, but Sorensen won by nine in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Eric Sorensen", "party": "D", "incumbent": true },
       "rep": { "name": "Dillan Vancil", "party": "R", "incumbent": false }
@@ -6014,8 +6014,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "raceDesc": "Republican Rudy Yakym, who succeeded the late Jackie Walorski in 2022, seeks reelection in the South Bend and Elkhart-based 2nd. He faces Democratic attorney Jamee Decio. Trump won the district by 27 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Jamee Decio", "party": "D", "incumbent": false },
       "rep": { "name": "Rudy Yakym", "party": "R", "incumbent": true }
@@ -6036,8 +6036,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "raceDesc": "Republican Marlin Stutzman, who returned to Congress in 2025 after representing the district from 2010 to 2017, seeks reelection in Fort Wayne and northeast Indiana. He faces Democratic nonprofit founder Kelly Thompson. Trump won the district by 32 points.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Kelly Thompson", "party": "D", "incumbent": false },
       "rep": { "name": "Marlin Stutzman", "party": "R", "incumbent": true }
@@ -6080,8 +6080,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "raceDesc": "Republican Victoria Spartz, the first Ukrainian-born member of Congress, seeks reelection in the fast-growing northern Indianapolis suburbs of Carmel, Fishers and Noblesville. She faces Democratic state senator J.D. Ford, a stronger challenger than usual in a suburban district that has drifted left. Trump won it by 17 points after carrying it by 25 in 2016.",
-    "polyDem": 0.15,
-    "polyRep": 0.85,
+    "polyDem": 0.18,
+    "polyRep": 0.82,
     "candidates": {
       "dem": { "name": "James Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Victoria Spartz", "party": "R", "incumbent": true }
@@ -6102,8 +6102,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "raceDesc": "Freshman Republican Jefferson Shreve, a businessman and former Indianapolis mayoral candidate, seeks a second term in eastern Indiana, including Columbus, Richmond and Indianapolis's southern suburbs. He faces Democrat Cinde Wirth for the third straight cycle. Trump won the district by 33 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Cynthia Wirth", "party": "D", "incumbent": false },
       "rep": { "name": "Jefferson Shreve", "party": "R", "incumbent": true }
@@ -6146,8 +6146,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "raceDesc": "Freshman Republican Mark Messmer, a former Indiana Senate majority leader, seeks a second term in the Evansville and Terre Haute-based 8th. Once known as the \"Bloody Eighth\" for its close races, the district is now solidly Republican. He faces Evansville city councilor Mary Allen, and Trump won by 37 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Mary Allen", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Messmer", "party": "R", "incumbent": true }
@@ -6168,8 +6168,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "raceDesc": "Republican Erin Houchin, first elected in 2022, seeks a third term in south-central Indiana, stretching from Bloomington and Indiana University to the Louisville suburbs. She faces Democratic retired civil engineer Brad Meyer. Trump won the district by 30 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Brad Meyer", "party": "D", "incumbent": false },
       "rep": { "name": "Erin Houchin", "party": "R", "incumbent": true }
@@ -6234,8 +6234,8 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "raceDesc": "Republican Zach Nunn, an Air Force veteran, seeks a third term in the Des Moines-based 3rd. He faces Democratic state senator Sarah Trone Garriott, a Lutheran pastor. Nunn won by less than a point in 2022 and by four in 2024, and Trump carried the district by just 4.5 points.",
-    "polyDem": 0.86,
-    "polyRep": 0.14,
+    "polyDem": 0.85,
+    "polyRep": 0.15,
     "candidates": {
       "dem": { "name": "Sarah Trone Garriott", "party": "D", "incumbent": false },
       "rep": { "name": "Zach Nunn", "party": "R", "incumbent": true }
@@ -6278,8 +6278,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "raceDesc": "Republican Tracey Mann seeks reelection in \"The Big First,\" which spans 60 counties and more than half of Kansas, from Manhattan and Lawrence to Dodge City and Garden City. He faces Democrat Lauren Reinhold, a former federal employee. Trump won the district by 32 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Lauren Reinhold", "party": "D", "incumbent": false },
       "rep": { "name": "Tracey Mann", "party": "R", "incumbent": true }
@@ -6300,8 +6300,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "raceDesc": "Freshman Republican Derek Schmidt, the former state attorney general and 2022 GOP nominee for governor, seeks a second term in eastern Kansas, including Topeka, Emporia and Pittsburg. He faces Democratic veterinarian Don Coover. The district came within a point of flipping in 2018, but Trump won it by 20 in 2024.",
-    "polyDem": 0.22,
-    "polyRep": 0.78,
+    "polyDem": 0.2,
+    "polyRep": 0.8,
     "candidates": {
       "dem": { "name": "Don Coover", "party": "D", "incumbent": false },
       "rep": { "name": "Derek Schmidt", "party": "R", "incumbent": true }
@@ -6344,8 +6344,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "raceDesc": "Republican Ron Estes, who won a 2017 special election after Mike Pompeo became CIA director, seeks reelection in the Wichita-based 4th. He faces Democratic attorney Katy Tyndell. Trump won the district by 24 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Katy Tyndell", "party": "D", "incumbent": false },
       "rep": { "name": "Ron Estes", "party": "R", "incumbent": true }
@@ -6410,8 +6410,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "raceDesc": "Democrat Morgan McGarvey, the former state Senate minority leader, seeks a third term in the Louisville-based 3rd, Kentucky's only Democratic district. He faces Republican Maria Rodriguez. McGarvey won with 62% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Morgan McGarvey", "party": "D", "incumbent": true },
       "rep": { "name": "Maria Rodriguez", "party": "R", "incumbent": false }
@@ -6432,8 +6432,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "raceDesc": "Trump-backed former Navy SEAL Ed Gallrein defeated Thomas Massie in the Republican primary after Massie repeatedly broke with Trump, including co-leading the push to release the Epstein files. Gallrein faces Democratic businesswoman Melissa Strange in the Northern Kentucky district along the Ohio River. Trump won it by 36 points, so the primary was the real contest.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Melissa Strange", "party": "D", "incumbent": false },
       "rep": { "name": "Ed Gallrein", "party": "R", "incumbent": false }
@@ -6476,8 +6476,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "raceDesc": "Andy Barr is running for Senate, opening the Lexington-based 6th. Former state senator Ralph Alvarado, who later served as Tennessee's health commissioner, is the Republican nominee against former federal prosecutor Zach Dembo. The district is the most competitive in Kentucky, where Amy McGrath came within about three points in 2018.",
-    "polyDem": 0.57,
-    "polyRep": 0.43,
+    "polyDem": 0.56,
+    "polyRep": 0.44,
     "candidates": {
       "dem": { "name": "Zach Dembo", "party": "D", "incumbent": false },
       "rep": { "name": "Ralph Alvarado", "party": "R", "incumbent": false }
@@ -6498,8 +6498,8 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "raceDesc": "House Majority Leader Steve Scalise seeks reelection in the New Orleans suburbs and bayou country. Louisiana postponed its party primaries after the Supreme Court's Louisiana v. Callais ruling and redraw, so all candidates run on a single November 3 ballot with a December 12 runoff if no one tops 50%. Scalise faces Democrat Lauren Jewett and two minor candidates and is a heavy favorite.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Lauren Jewett", "party": "D", "incumbent": false },
       "rep": { "name": "Steve Scalise", "party": "R", "incumbent": true }
@@ -6542,8 +6542,8 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "raceDesc": "Republican Clay Higgins, a former sheriff's deputy known for his viral Crime Stoppers videos, seeks reelection in southwest Louisiana, now including all of Lafayette Parish. He faces several Democrats, including teacher Tia LeBrun, on the November 3 all-party ballot. Trump won the district by 37 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Tia LeBrun", "party": "D", "incumbent": false },
       "rep": { "name": "Clay Higgins", "party": "R", "incumbent": true }
@@ -6564,8 +6564,8 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "raceDesc": "Speaker of the House Mike Johnson seeks reelection in the Shreveport-Bossier City-based 4th, which the new map consolidated in northwest Louisiana. He faces Democratic professor Matt Gromlich and others on the November 3 all-party ballot. Johnson took 86% in 2024 against a fellow Republican.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Matthew Gromlich", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Johnson", "party": "R", "incumbent": true }
@@ -6586,8 +6586,8 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "raceDesc": "Julia Letlow is running for Senate, and her north and central Louisiana seat has drawn a crowded field on the November 3 all-party ballot, including state senator Stewart Cathey, House Majority Leader Michael Echols, state representative Gabe Firment and Democratic state representative Pat Moore. With no party primary, a December 12 runoff is likely. Trump won the district by 34 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "seatHolder": "Julia Letlow",
     "seatParty": "R",
     "pastResults": [
@@ -6666,8 +6666,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Republican Andy Harris, a physician and former Freedom Caucus chair, seeks reelection in the Eastern Shore district, Maryland's only Republican seat. He faces Democratic consumer advocate Dan Schwartz. Maryland Democrats debated a mid-decade redraw that could have targeted Harris, but the district remains on its current lines, where Trump won by 17 points.",
-    "polyDem": 0.14,
-    "polyRep": 0.86,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Daniel Schwartz", "party": "D", "incumbent": false },
       "rep": { "name": "Andy Harris", "party": "R", "incumbent": true }
@@ -6688,8 +6688,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Johnny Olszewski, the former Baltimore County executive, seeks a second term in the Baltimore County and Carroll County district. He faces Republican perennial candidate Dave Wallace. Olszewski won by 19 points in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "John Olszewski", "party": "D", "incumbent": true },
       "rep": { "name": "David Wallace", "party": "R", "incumbent": false }
@@ -6710,8 +6710,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Sarah Elfreth, a former state senator from Annapolis, seeks a second term in the district covering Howard County and much of Anne Arundel. She faces Republican Berney Flowers. Three former holders of this seat, Ben Cardin, Barbara Mikulski and Paul Sarbanes, went on to the Senate.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Sarah Elfreth", "party": "D", "incumbent": true },
       "rep": { "name": "Berney Flowers", "party": "R", "incumbent": false }
@@ -6732,8 +6732,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Democrat Glenn Ivey, a former Prince George's County state's attorney, seeks reelection in the 4th, one of the wealthiest majority-Black districts in the country. He faces perennial Republican candidate George McDermott, whom Ivey beat with 89% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Glenn Ivey", "party": "D", "incumbent": true },
       "rep": { "name": "George McDermott", "party": "R", "incumbent": false }
@@ -6776,8 +6776,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Freshman Democrat April McClain Delaney, a former Commerce Department official, beat her predecessor David Trone in the primary after Trone tried to reclaim the seat. She faces Republican Robin Ficker, a former state delegate famous as a courtside heckler at Washington Bullets games. The western Maryland district is the state's most competitive, and Harris won it by six points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "April Delaney", "party": "D", "incumbent": true },
       "rep": { "name": "Robin Ficker", "party": "R", "incumbent": false }
@@ -6798,8 +6798,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Democrat Kweisi Mfume, a former NAACP president who returned to Congress in 2020 after the death of Elijah Cummings, seeks reelection in the Baltimore-based 7th. He faces Republican Scott Collier for the third straight time. Harris won the district by 60 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Kweisi Mfume", "party": "D", "incumbent": true },
       "rep": { "name": "Scott Collier", "party": "R", "incumbent": false }
@@ -6820,8 +6820,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "raceDesc": "Democrat Jamie Raskin, a constitutional law professor and the top Democrat on the House Judiciary Committee, seeks reelection in the Montgomery County-based 8th. He faces a rematch with Republican Cheryl Riley. Raskin led the second Trump impeachment in 2021.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Jamie Raskin", "party": "D", "incumbent": true },
       "rep": { "name": "Cheryl Riley", "party": "R", "incumbent": false }
@@ -6864,8 +6864,8 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "raceDesc": "Democrat Jim McGovern, the top Democrat on the House Rules Committee, is unopposed in the Worcester-based 2nd. McGovern has represented central Massachusetts since 1997. Harris won the district by 24 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "James McGovern", "party": "D", "incumbent": true },
       "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
@@ -6930,8 +6930,8 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "raceDesc": "Democrat Katherine Clark, the House Democratic whip and the second-ranking Democrat in the House, is unopposed in the suburban 5th, which includes Framingham, Medford and parts of Cambridge. It is one of the safest Democratic seats in the country.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Katherine Clark", "party": "D", "incumbent": true },
       "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
@@ -6952,8 +6952,8 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "raceDesc": "Seth Moulton gave up this North Shore seat for an unsuccessful primary challenge to Senator Ed Markey. Dan Koh, a former Biden White House official, won a crowded Democratic primary and faces Republican attorney and Army veteran Micah Jones. The district includes Salem, Peabody and Gloucester, and Harris won it by 21 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Daniel Koh", "party": "D", "incumbent": false },
       "rep": { "name": "Micah Jones", "party": "R", "incumbent": false }
@@ -6996,8 +6996,8 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "raceDesc": "Democrat Stephen Lynch, a former ironworker in Congress since 2001, seeks reelection in the South Boston and South Shore 8th. He faces Republican videographer Robert Burke for the third straight time. Lynch won with 71% in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Stephen Lynch", "party": "D", "incumbent": true },
       "rep": { "name": "Robert Burke", "party": "R", "incumbent": false }
@@ -7018,8 +7018,8 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "raceDesc": "Democrat Bill Keating, a former district attorney, seeks reelection in the Cape Cod, South Shore and New Bedford district, the least Democratic in Massachusetts. He faces former Mattapoisett selectman Tyler MacAllister. Keating won by 13 points in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "William Keating", "party": "D", "incumbent": true },
       "rep": { "name": "Tyler MacAllister", "party": "R", "incumbent": false }
@@ -7040,8 +7040,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Republican Jack Bergman, a retired Marine lieutenant general and the highest-ranking military veteran ever to serve in Congress, seeks reelection in the Upper Peninsula and northern Lower Peninsula. He faces a rematch with Democratic lawyer Callie Barr. Trump won the district by 22 points.",
-    "polyDem": 0.15,
-    "polyRep": 0.85,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Callie Barr", "party": "D", "incumbent": false },
       "rep": { "name": "Jack Bergman", "party": "R", "incumbent": true }
@@ -7062,8 +7062,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Republican John Moolenaar, chairman of the House Select Committee on China, seeks reelection in the rural central and western Michigan 2nd. He faces Democratic marketing executive Benjamin Ambrose. Trump won the district by 31 points.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Benjamin Ambrose", "party": "D", "incumbent": false },
       "rep": { "name": "John Moolenaar", "party": "R", "incumbent": true }
@@ -7084,8 +7084,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Democrat Hillary Scholten, who flipped the Grand Rapids-based seat in 2022, the first Democrat to win it since 1974, seeks a third term. She faces Republican Terri DeBoer, a longtime local TV meteorologist. Scholten won by 10 points in 2024, and Harris carried the district by eight.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Hillary Scholten", "party": "D", "incumbent": true },
       "rep": { "name": "Terri DeBoer", "party": "R", "incumbent": false }
@@ -7106,8 +7106,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Republican Bill Huizenga, first elected in 2010, seeks reelection in southwest Michigan's 4th, which includes Kalamazoo and Holland. He faces Democratic state senator Sean McCann, a stronger challenger than usual. Trump won the district by less than six points, and Democrats see it as a reach target.",
-    "polyDem": 0.63,
-    "polyRep": 0.37,
+    "polyDem": 0.59,
+    "polyRep": 0.41,
     "candidates": {
       "dem": { "name": "Sean McCann", "party": "D", "incumbent": false },
       "rep": { "name": "Bill Huizenga", "party": "R", "incumbent": true }
@@ -7172,8 +7172,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Freshman Republican Tom Barrett, an Army helicopter pilot, flipped the Lansing-area seat in 2024 after Elissa Slotkin left for the Senate. He faces Democrat William Lawrence, a Sunrise Movement co-founder who beat former Ukraine ambassador Bridget Brink in the primary. Trump won the district by just over a point, making it one of the top toss-ups in the country.",
-    "polyDem": 0.77,
-    "polyRep": 0.23,
+    "polyDem": 0.8,
+    "polyRep": 0.2,
     "candidates": {
       "dem": { "name": "William Lawrence", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Barrett", "party": "R", "incumbent": true }
@@ -7194,8 +7194,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Kristen McDonald Rivet, a former state senator, seeks a second term in the Saginaw Bay district, which includes Flint, Saginaw, Bay City and Midland. She faces Republican retired engineer Tom Smith. Trump narrowly carried the district in 2024, but McDonald Rivet won by nearly seven points.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Kristen McDonald Rivet", "party": "D", "incumbent": true },
       "rep": { "name": "Tom Smith", "party": "R", "incumbent": false }
@@ -7216,8 +7216,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Republican Lisa McClain, chair of the House Republican Conference, seeks reelection in the Thumb and northern Detroit exurbs. She faces Democratic machinist Ray Pooley. It's the most Republican district in Michigan; Trump won it by 33 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Ray Pooley", "party": "D", "incumbent": false },
       "rep": { "name": "Lisa McClain", "party": "R", "incumbent": true }
@@ -7238,8 +7238,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "John James is running for governor, opening the Macomb County-based 10th, which he won by less than half a point in 2022. Republican Mike Bouchard Jr., an Army National Guard captain and son of the Oakland County sheriff, faces Democratic prosecutor Christina Hines. Trump won the district by seven points, but it's a genuine toss-up.",
-    "polyDem": 0.7,
-    "polyRep": 0.3,
+    "polyDem": 0.74,
+    "polyRep": 0.26,
     "candidates": {
       "dem": { "name": "Christina Hines", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Bouchard Jr.", "party": "R", "incumbent": false }
@@ -7260,8 +7260,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "raceDesc": "Haley Stevens gave up this Oakland County seat for an unsuccessful Senate run. State Senate President Pro Tempore Jeremy Moss, a Democrat, faces Troy mayor Ethan Baker. Harris won the district by 16 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Jeremy Moss", "party": "D", "incumbent": false },
       "rep": { "name": "Ethan Baker", "party": "R", "incumbent": false }
@@ -7326,8 +7326,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "raceDesc": "Republican Brad Finstad seeks reelection in southern Minnesota's 1st, which includes Rochester and Mankato. He faces Democratic high school teacher Jake Johnson. Democrats haven't won the seat since Tim Walz held it through 2018, and Finstad won by 17 points in 2024.",
-    "polyDem": 0.38,
-    "polyRep": 0.62,
+    "polyDem": 0.37,
+    "polyRep": 0.63,
     "candidates": {
       "dem": { "name": "Jacob Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Brad Finstad", "party": "R", "incumbent": true }
@@ -7370,8 +7370,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Kelly Morrison, a physician and former state senator, seeks a second term in the western Twin Cities suburbs, including Edina, Minnetonka and Plymouth. She faces Republican small business owner Tyler Bass. Republicans haven't won the seat since 2016, and Harris won it by 22 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Kelly Morrison", "party": "D", "incumbent": true },
       "rep": { "name": "Tyler Bass", "party": "R", "incumbent": false }
@@ -7414,8 +7414,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "raceDesc": "Democrat Ilhan Omar, a member of \"the Squad\" and the first Somali American in Congress, seeks reelection in the Minneapolis-based 5th after passing on a Senate run. She faces Republican retired police officer John Nagel. It is the most Democratic district in Minnesota.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Ilhan Omar", "party": "D", "incumbent": true },
       "rep": { "name": "John Nagel", "party": "R", "incumbent": false }
@@ -7436,8 +7436,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "raceDesc": "Republican Tom Emmer, the House majority whip, seeks reelection in the northern and western Twin Cities exurbs. He faces Democratic college professor Doug Chapin. No Democrat has won the seat since 1998, and Trump won it by 20 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Doug Chapin", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Emmer", "party": "R", "incumbent": true }
@@ -7458,8 +7458,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "raceDesc": "Republican Michelle Fischbach, a former lieutenant governor, seeks reelection in rural western Minnesota, the state's largest district. She unseated longtime Democrat Collin Peterson in 2020. She faces Democrat Erik Osberg, and Trump won the district by 37 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Erik Osberg", "party": "D", "incumbent": false },
       "rep": { "name": "Michelle Fischbach", "party": "R", "incumbent": true }
@@ -7480,8 +7480,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "raceDesc": "Republican Pete Stauber, a former hockey player and Duluth police officer, seeks reelection in the Iron Range and Duluth district, which Democrats held for most of the past century until 2018. He faces Democrat Trina Swanson, a former U.S. Citizenship and Immigration Services official. Stauber won by 16 points in 2024.",
-    "polyDem": 0.16,
-    "polyRep": 0.84,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Trina Swanson", "party": "D", "incumbent": false },
       "rep": { "name": "Pete Stauber", "party": "R", "incumbent": true }
@@ -7502,8 +7502,8 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "raceDesc": "Republican Trent Kelly, a retired Army National Guard major general, seeks reelection in northeast Mississippi, including Tupelo, Oxford and the Memphis suburbs of DeSoto County. He faces Democrat Cliff Johnson, director of the MacArthur Justice Center at Ole Miss. Trump won the district by 38 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Cliff Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Trent Kelly", "party": "R", "incumbent": true }
@@ -7568,8 +7568,8 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "raceDesc": "Republican Mike Ezell, a former Jackson County sheriff, seeks a third term on the Mississippi Gulf Coast, including Gulfport, Biloxi and Hattiesburg. He faces Democratic state representative Jeffrey Hulum. Trump won the district by 43 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Jeffrey Hulum", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Ezell", "party": "R", "incumbent": true }
@@ -7590,8 +7590,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Democrat Wesley Bell, the former St. Louis County prosecutor who ousted Cori Bush in the 2024 primary, beat her again in their August rematch. He faces Republican Paul Berry in the St. Louis-based district, the most Democratic in Missouri. Bell is a prohibitive favorite.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Wesley Bell", "party": "D", "incumbent": true },
       "rep": { "name": "Paul Berry", "party": "R", "incumbent": false }
@@ -7612,8 +7612,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Republican Ann Wagner, a former ambassador to Luxembourg, seeks reelection in St. Louis's southern and western suburbs. She faces Democratic podcast host Fred Wellman. Missouri's Supreme Court restored the pre-2025 map for November, and Wagner has won each race here since 2018 by between four and 12 points.",
-    "polyDem": 0.38,
-    "polyRep": 0.62,
+    "polyDem": 0.41,
+    "polyRep": 0.59,
     "candidates": {
       "dem": { "name": "Frederick Wellman", "party": "D", "incumbent": false },
       "rep": { "name": "Ann Wagner", "party": "R", "incumbent": true }
@@ -7634,8 +7634,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Freshman Republican Bob Onder, a physician and former state senator, seeks a second term in the district anchored by St. Charles County. He faces Democrat Bethany Mann for the third straight cycle. Trump won the district by 27 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Bethany Mann", "party": "D", "incumbent": false },
       "rep": { "name": "Bob Onder", "party": "R", "incumbent": true }
@@ -7656,8 +7656,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Republican Mark Alford, a former Kansas City TV news anchor, seeks a third term. Missouri held its primaries under the legislature's new map, which pulled the 4th into Kansas City, but the state Supreme Court restored the old lines for November, so the general election is in rural west-central Missouri. He faces Democratic attorney Jordan Herrera.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Jordan Herrera", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Alford", "party": "R", "incumbent": true }
@@ -7678,8 +7678,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Democrat Emanuel Cleaver, a former Kansas City mayor and United Methodist pastor, was the target of Missouri's mid-decade redraw, which carved up his Kansas City seat. The state Supreme Court restored the old map for November after the August primaries were held on the new one. That puts Cleaver back in a solidly Democratic district against Republican state senator Rick Brattin.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Emanuel Cleaver", "party": "D", "incumbent": true },
       "rep": { "name": "Rick Brattin", "party": "R", "incumbent": false }
@@ -7700,8 +7700,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Sam Graves, chairman of the House Transportation Committee, is retiring after 25 years. Conservative radio host Chris Stigall won the Republican primary and faces Democratic architect Josh Smead in the district spanning northern Missouri. Trump won it by 39 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Josh Smead", "party": "D", "incumbent": false },
       "rep": { "name": "Chris Stigall", "party": "R", "incumbent": false }
@@ -7722,8 +7722,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Republican Eric Burlison, a Freedom Caucus member, seeks a third term in southwest Missouri, which includes Springfield, Joplin and Branson. He faces a rematch with Democrat Missi Hesketh, the former mayor of Forsyth. Trump won the district by 43 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Missi Hesketh", "party": "D", "incumbent": false },
       "rep": { "name": "Eric Burlison", "party": "R", "incumbent": true }
@@ -7744,8 +7744,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "raceDesc": "Republican Jason Smith, chairman of the House Ways and Means Committee, seeks reelection in southeast Missouri's Bootheel and Ozarks. He faces Democrat Christopher Reichard. The district is the most rural in Missouri, and Trump won it by 54 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Christopher Reichard", "party": "D", "incumbent": false },
       "rep": { "name": "Jason Smith", "party": "R", "incumbent": true }
@@ -7766,8 +7766,8 @@ export const houseData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "house",
     "raceDesc": "Ryan Zinke, the former interior secretary, is retiring, opening Montana's western district, which includes Missoula, Bozeman and Kalispell. Radio host Aaron Flint beat Secretary of State Christi Jacobsen for the Republican nomination and faces Democratic smokejumper and union leader Sam Forstag. Trump won the district by 12, but Zinke won by only three in 2022, making it one of the most competitive open seats in the country.",
-    "polyDem": 0.56,
-    "polyRep": 0.44,
+    "polyDem": 0.59,
+    "polyRep": 0.41,
     "candidates": {
       "dem": { "name": "Sam Forstag", "party": "D", "incumbent": false },
       "rep": { "name": "Aaron Flint", "party": "R", "incumbent": false }
@@ -7788,8 +7788,8 @@ export const houseData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "house",
     "raceDesc": "Freshman Republican Troy Downing, the former state auditor, seeks a second term in eastern Montana, the largest district by area in the lower 48 states. He faces Democratic attorney Brian Miller. Downing won by 32 points in 2024.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Brian Miller", "party": "D", "incumbent": false },
       "rep": { "name": "Troy Downing", "party": "R", "incumbent": true }
@@ -7807,8 +7807,8 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "raceDesc": "Republican Mike Flood, a former speaker of the Nebraska Legislature, seeks reelection in the eastern Nebraska 1st, which includes Lincoln. He faces Democrat Chris Backemeyer, a former deputy assistant secretary of state. Trump won the district by 13 points.",
-    "polyDem": 0.23,
-    "polyRep": 0.77,
+    "polyDem": 0.24,
+    "polyRep": 0.76,
     "candidates": {
       "dem": { "name": "Christopher Backemeyer", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Flood", "party": "R", "incumbent": true }
@@ -7895,8 +7895,8 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "raceDesc": "Mark Amodei is retiring, opening the northern Nevada seat, which includes Reno, Carson City and Elko. Republican Dave Flippo, a retired Air Force lieutenant colonel, faces Democrat Teresa Benitez-Thompson, a former Nevada Assembly majority leader. Republicans have held the district since its creation in 1983, and Trump won it by 14 points.",
-    "polyDem": 0.39,
-    "polyRep": 0.61,
+    "polyDem": 0.36,
+    "polyRep": 0.64,
     "candidates": {
       "dem": { "name": "Teresa Benitez-Thompson", "party": "D", "incumbent": false },
       "rep": { "name": "Dave Flippo", "party": "R", "incumbent": false }
@@ -7917,8 +7917,8 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "raceDesc": "Democrat Susie Lee seeks a fifth term in the western and southern Las Vegas suburbs. She faces Republican Marty O'Donnell, the composer behind the Halo video game soundtracks, who lost the 2024 primary. Trump narrowly carried the district in 2024, and Lee has never won here by more than about nine points.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Susie Lee", "party": "D", "incumbent": true },
       "rep": { "name": "Marty O'Donnell", "party": "R", "incumbent": false }
@@ -7939,8 +7939,8 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "raceDesc": "Democrat Steven Horsford, a former state Senate majority leader, seeks reelection in the district covering northern Las Vegas, the Strip and rural central Nevada. He faces Republican business owner Cody Whipple. Harris won by just over two points, but Horsford won by eight in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Steven Horsford", "party": "D", "incumbent": true },
       "rep": { "name": "Cody Whipple", "party": "R", "incumbent": false }
@@ -7961,8 +7961,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "house",
     "raceDesc": "Chris Pappas is running for Senate, opening the southeastern New Hampshire seat, which includes Manchester and the Seacoast. Democrat Stefany Shaheen, daughter of retiring Senator Jeanne Shaheen, faces Republican auto dealer Anthony DiLorenzo. The district swung from Trump in 2016 to Harris by two points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Stefany Shaheen", "party": "D", "incumbent": false },
       "rep": { "name": "Anthony Dilorenzo", "party": "R", "incumbent": false }
@@ -7983,8 +7983,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Maggie Goodlander, a former Justice Department official and Navy reservist, faces a rematch with Republican Lily Tang Williams, whom she beat by six points in 2024. The district covers western and northern New Hampshire, including Nashua and Concord. Harris won it by less than four points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Maggie Goodlander", "party": "D", "incumbent": true },
       "rep": { "name": "Lily Williams", "party": "R", "incumbent": false }
@@ -8005,8 +8005,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "raceDesc": "Democrat Donald Norcross, a former electrician and union leader, seeks reelection in the Camden County-based 1st. He faces Republican construction worker Damon Galdo. Norcross won by 18 points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Donald Norcross", "party": "D", "incumbent": true },
       "rep": { "name": "Damon Galdo", "party": "R", "incumbent": false }
@@ -8071,8 +8071,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "raceDesc": "Republican Chris Smith, in Congress since 1981 and the longest-serving member in New Jersey history, seeks reelection on the upper Jersey Shore. He faces Democrat Rachel Peace. Trump won the district by 31 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Rachel Peace", "party": "D", "incumbent": false },
       "rep": { "name": "Christopher Smith", "party": "R", "incumbent": true }
@@ -8093,8 +8093,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "raceDesc": "Democrat Josh Gottheimer, co-chair of the bipartisan Problem Solvers Caucus, seeks reelection in the district along New Jersey's northern border. He ran for governor in 2025 but lost the primary to Mikie Sherrill. He faces Republican Sean Kirrane; Trump nearly carried the district, losing by just over a point.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Josh Gottheimer", "party": "D", "incumbent": true },
       "rep": { "name": "Sean Kirrane", "party": "R", "incumbent": false }
@@ -8115,8 +8115,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "raceDesc": "Democrat Frank Pallone, the top Democrat on the House Energy and Commerce Committee and in Congress since 1988, seeks reelection in the Middlesex and coastal Monmouth district. He faces Republican Hillary Herzig. Harris won by only six points after Biden carried it by 20.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Frank Pallone", "party": "D", "incumbent": true },
       "rep": { "name": "Hillary Herzig", "party": "R", "incumbent": false }
@@ -8181,8 +8181,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Nellie Pou, the first Latina to represent New Jersey in Congress, seeks a second term in the Paterson-based 9th. She faces Republican Clifton city councilor Rosie Pino. Trump narrowly won the district in 2024 after Biden carried it by 19.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Nellie Pou", "party": "D", "incumbent": true },
       "rep": { "name": "Rosemary Pino", "party": "R", "incumbent": false }
@@ -8225,8 +8225,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "raceDesc": "Democrat Analilia Mejia, a progressive organizer, won an April special election to succeed Mikie Sherrill after Sherrill became governor. She faces Republican Joe Hathaway, the Randolph Township councilman she beat in the special, in the Morris County-based district. Harris won it by eight points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Analilia Mejia", "party": "D", "incumbent": true },
       "rep": { "name": "Joe Hathaway", "party": "R", "incumbent": false }
@@ -8269,8 +8269,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "raceDesc": "Democrat Melanie Stansbury, who won a 2021 special election to succeed Deb Haaland, seeks reelection in the Albuquerque-based 1st. She faces Republican pharmacist Didi Okpareke. Stansbury won by 13 points in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Melanie Stansbury", "party": "D", "incumbent": true },
       "rep": { "name": "Didi Okpareke", "party": "R", "incumbent": false }
@@ -8291,8 +8291,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "raceDesc": "Democrat Gabe Vasquez seeks a third term in southern New Mexico's 2nd, which includes Las Cruces, Carlsbad and Alamogordo. After two straight races against Yvette Herrell, he faces Republican retired police officer Greg Cunningham. Trump narrowly won the district in 2024, but Vasquez won by four points.",
-    "polyDem": 0.92,
-    "polyRep": 0.08,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Gabe Vasquez", "party": "D", "incumbent": true },
       "rep": { "name": "Greg Cunningham", "party": "R", "incumbent": false }
@@ -8313,8 +8313,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "raceDesc": "Democrat Teresa Leger Fernández seeks a fourth term in northern New Mexico's 3rd, which includes Santa Fe, Farmington and much of the Navajo Nation. She faces Republican state representative Martin Zamora. Harris won the district by five points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Teresa Leger Fernandez", "party": "D", "incumbent": true },
       "rep": { "name": "Martin Zamora", "party": "R", "incumbent": false }
@@ -8335,8 +8335,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Republican Nick LaLota, a Navy veteran, seeks a third term on eastern Long Island, which includes the Hamptons and the North Fork. He faces Democrat Chris Gallant, an air traffic controller. LaLota won by 10 points in 2024 in a district Trump carried by the same margin.",
-    "polyDem": 0.23,
-    "polyRep": 0.77,
+    "polyDem": 0.19,
+    "polyRep": 0.81,
     "candidates": {
       "dem": { "name": "Christopher Gallant", "party": "D", "incumbent": false },
       "rep": { "name": "Nick LaLota", "party": "R", "incumbent": true }
@@ -8357,8 +8357,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Republican Andrew Garbarino seeks reelection on Long Island's South Shore in Suffolk County. He faces Democrat Patrick Halpin, the former Suffolk County executive. Trump won the district by 14 points in 2024, far more than his 2.5-point margin in 2020.",
-    "polyDem": 0.21,
-    "polyRep": 0.79,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Patrick Halpin", "party": "D", "incumbent": false },
       "rep": { "name": "Andrew Garbarino", "party": "R", "incumbent": true }
@@ -8379,8 +8379,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Tom Suozzi, who reclaimed this North Shore of Nassau County and northeast Queens seat in a 2024 special election after George Santos's expulsion, faces a rematch with former Republican assemblyman Mike LiPetri. Trump carried the district by four points in 2024, but Suozzi won by 3.5 points as one of the House's most centrist Democrats.",
-    "polyDem": 0.89,
-    "polyRep": 0.11,
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Thomas Suozzi", "party": "D", "incumbent": true },
       "rep": { "name": "Mike LiPetri", "party": "R", "incumbent": false }
@@ -8423,8 +8423,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Gregory Meeks, the top Democrat on the House Foreign Affairs Committee and in Congress since 1998, seeks reelection in southeast Queens, which includes Jamaica and the Rockaways. He faces Republican George Marsh. Meeks won with 73% in 2024.",
-    "polyDem": 0.99,
-    "polyRep": 0.01,
+    "polyDem": 1,
+    "polyRep": 0,
     "candidates": {
       "dem": { "name": "Gregory Meeks", "party": "D", "incumbent": true },
       "rep": { "name": "George Marsh", "party": "R", "incumbent": false }
@@ -8489,8 +8489,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "House Minority Leader Hakeem Jeffries, who would become Speaker if Democrats win the majority, seeks reelection in southern and eastern Brooklyn. He faces Republican data analyst Lewis Mizrahi. Jeffries won with 75% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Hakeem Jeffries", "party": "D", "incumbent": true },
       "rep": { "name": "Lewis Mizrahi", "party": "R", "incumbent": false }
@@ -8577,8 +8577,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Jerry Nadler is retiring after more than three decades in Congress. Assemblymember Micah Lasher, whom Nadler endorsed, won a crowded Democratic primary that included Assemblymember Alex Bores and anti-Trump lawyer George Conway. He faces Republican Caroline Shinkle in the Manhattan district, which covers the Upper East and West Sides and Midtown.",
-    "polyDem": 0.99,
-    "polyRep": 0.01,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Micah Lasher", "party": "D", "incumbent": false },
       "rep": { "name": "Caroline Shinkle", "party": "R", "incumbent": false }
@@ -8621,8 +8621,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Alexandria Ocasio-Cortez, who became a national figure after upsetting Joe Crowley in the 2018 primary, seeks a fifth term in the Bronx and Queens 14th. She faces Republican real estate developer Diamant Hysenaj. Harris's margin here fell to 32 points in 2024, down from Biden's 56.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 1,
+    "polyRep": 0,
     "candidates": {
       "dem": { "name": "Alexandria Ocasio-Cortez", "party": "D", "incumbent": true },
       "rep": { "name": "Diamant Hysenaj", "party": "R", "incumbent": false }
@@ -8643,8 +8643,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Ritchie Torres, one of the first openly gay Afro-Latino members of Congress, seeks reelection in the West Bronx 15th, the poorest congressional district in the country. He beat former DNC vice chair Michael Blake in the primary and faces Republican Stylo Sapaskis, whom he beat in 2022. Torres has been a prominent pro-Israel voice in his party.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Ritchie Torres", "party": "D", "incumbent": true },
       "rep": { "name": "Stylo Sapaskis", "party": "R", "incumbent": false }
@@ -8665,8 +8665,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Freshman Democrat George Latimer, the former Westchester County executive who ousted Jamaal Bowman in an expensive 2024 primary, seeks a second term. He faces Republican attorney Joseph Cinquemani in the southern Westchester district, which includes Yonkers, White Plains and New Rochelle. Latimer won with 72% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "George Latimer", "party": "D", "incumbent": true },
       "rep": { "name": "Joseph Cinquemani", "party": "R", "incumbent": false }
@@ -8687,8 +8687,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Republican Mike Lawler, one of three House Republicans in a Harris-won district, passed on a run for governor to seek a third term in the Lower Hudson Valley. He faces Democrat Cait Conley, a former Army officer and CISA senior advisor. Harris won the district by less than a point, and Lawler won by six in 2024.",
-    "polyDem": 0.63,
-    "polyRep": 0.37,
+    "polyDem": 0.66,
+    "polyRep": 0.34,
     "candidates": {
       "dem": { "name": "Cait Conley", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Lawler", "party": "R", "incumbent": true }
@@ -8696,8 +8696,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Mike Lawler",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 45.85, "repPct": 52.16, "demCandidate": "Mondaire Jones", "repCandidate": "Michael Lawler", "demVotes": 173899, "repVotes": 197845, "totalVotes": 379274, "margin": 6.31, "repIncumbent": true },
-      { "year": 2022, "demPct": 49.65, "repPct": 50.29, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Michael Lawler", "demVotes": 141730, "repVotes": 143550, "totalVotes": 285430, "margin": 0.64, "demIncumbent": true },
+      { "year": 2024, "demPct": 45.85, "repPct": 52.16, "demCandidate": "Mondaire Jones", "repCandidate": "Mike Lawler", "demVotes": 173899, "repVotes": 197845, "totalVotes": 379274, "margin": 6.31, "repIncumbent": true },
+      { "year": 2022, "demPct": 49.65, "repPct": 50.29, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Mike Lawler", "demVotes": 141730, "repVotes": 143550, "totalVotes": 285430, "margin": 0.64, "demIncumbent": true },
       { "year": 2020, "demPct": 59.33, "repPct": 35.26, "demCandidate": "Mondaire Jones", "repCandidate": "Maureen McArdle Schulman", "demVotes": 197354, "repVotes": 117309, "totalVotes": 332658, "margin": -24.07 },
       { "year": 2018, "demPct": 88.02, "repPct": 11.98, "demCandidate": "Nita Lowey", "repCandidate": "Joseph Ciardullo", "repParty": "I", "demVotes": 170168, "repVotes": 23150, "totalVotes": 193318, "margin": -76.04, "demIncumbent": true },
       { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Nita Lowey", "demVotes": 214530, "repVotes": 0, "totalVotes": 214530, "margin": -100, "demIncumbent": true }
@@ -8709,8 +8709,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Pat Ryan, an Army veteran who won a closely watched 2022 special election, seeks reelection in the mid-Hudson Valley 18th, which includes Newburgh, Kingston and Poughkeepsie. He faces Republican businesswoman Jackie Auringer. Ryan won by 14 points in 2024, a big overperformance in a district Harris won by three.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Patrick Ryan", "party": "D", "incumbent": true },
       "rep": { "name": "Jacqueline Auringer", "party": "R", "incumbent": false }
@@ -8753,8 +8753,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Paul Tonko, a former state energy authority president, seeks reelection in the Capital Region district, which includes Albany, Schenectady and Saratoga Springs. He faces Republican attorney Ralph Ambrosio. Tonko won by 22 points in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Paul Tonko", "party": "D", "incumbent": true },
       "rep": { "name": "Ralph Ambrosio", "party": "R", "incumbent": false }
@@ -8775,8 +8775,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Elise Stefanik, whose nomination as UN ambassador was withdrawn in 2025 and who later ended her run for governor, is retiring. Businessman Anthony Constantino, founder of Sticker Mule, is the Republican nominee against Democratic dairy farmer Blake Gendebien in the North Country district. Trump won it by 21 points.",
-    "polyDem": 0.35,
-    "polyRep": 0.65,
+    "polyDem": 0.34,
+    "polyRep": 0.66,
     "candidates": {
       "dem": { "name": "Blake Gendebien", "party": "D", "incumbent": false },
       "rep": { "name": "Anthony Constantino", "party": "R", "incumbent": false }
@@ -8797,8 +8797,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Freshman Democrat John Mannion, a former teacher and state senator, flipped the Syracuse and Utica-based seat in 2024 after a 2024 redraw made it bluer. He faces Republican Kailee Buller, a former USDA chief of staff. Mannion won by nine points in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "John Mannion", "party": "D", "incumbent": true },
       "rep": { "name": "Kailee Buller", "party": "R", "incumbent": false }
@@ -8819,8 +8819,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Republican Nick Langworthy, the former New York Republican Party chairman, seeks a third term in the Southern Tier and Buffalo suburbs. He faces Democratic college professor Aaron Gies. Trump won the district by 21 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Aaron Gies", "party": "D", "incumbent": false },
       "rep": { "name": "Nick Langworthy", "party": "R", "incumbent": true }
@@ -8841,8 +8841,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Republican Claudia Tenney seeks reelection in the district along the Lake Ontario shore and upper Finger Lakes, from Watertown to near Buffalo. She faces Democrat Alissa Ellman. Tenney won with 66% in 2024.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Alissa Ellman", "party": "D", "incumbent": false },
       "rep": { "name": "Claudia Tenney", "party": "R", "incumbent": true }
@@ -8863,8 +8863,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Joe Morelle, a former state Assembly majority leader, seeks reelection in the Rochester-based 25th. He faces Republican Monroe County legislator Virginia McIntyre. Morelle won by 22 points in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Joseph Morelle", "party": "D", "incumbent": true },
       "rep": { "name": "Virginia McIntyre", "party": "R", "incumbent": false }
@@ -8885,8 +8885,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "raceDesc": "Democrat Tim Kennedy, who won a 2024 special election after Brian Higgins resigned, seeks a second full term in the Buffalo and Niagara Falls district. He faces Republican Dennis Hannon, a former construction worker. Kennedy won with 65% in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Timothy Kennedy", "party": "D", "incumbent": true },
       "rep": { "name": "Dennis Hannon", "party": "R", "incumbent": false }
@@ -8907,8 +8907,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "North Carolina's October 2025 redraw targeted Democrat Don Davis by swapping inland counties for Republican coastal ones like Carteret, Craven and Dare. Trump would have won the new district by 12 points. Davis, an Air Force veteran who beat Laurie Buckhout by less than two points in 2024, faces her again in one of the closest races in the country.",
-    "polyDem": 0.85,
-    "polyRep": 0.15,
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Don Davis", "party": "D", "incumbent": true },
       "rep": { "name": "Laurie Buckhout", "party": "R", "incumbent": false }
@@ -8951,8 +8951,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Republican Greg Murphy, a urologist first elected in a 2019 special election, seeks reelection in a district the 2025 redraw shifted inland, taking in Greenville, Goldsboro and Wilson while dropping the Outer Banks. He faces former Democratic state representative Raymond Smith. The trade made the district bluer, but Trump still won it by 14 points.",
-    "polyDem": 0.42,
-    "polyRep": 0.58,
+    "polyDem": 0.45,
+    "polyRep": 0.55,
     "candidates": {
       "dem": { "name": "Raymond Smith", "party": "D", "incumbent": false },
       "rep": { "name": "Gregory Murphy", "party": "R", "incumbent": true }
@@ -8973,8 +8973,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Democrat Valerie Foushee, a former state senator, beat Durham County commissioner Nida Allam in a primary rematch. She faces Republican Max Ganorkar. Harris won the district by 46 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Valerie Foushee", "party": "D", "incumbent": true },
       "rep": { "name": "Max Ganorkar", "party": "R", "incumbent": false }
@@ -8995,8 +8995,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Republican Virginia Foxx, a former college president and one of the oldest members of the House, seeks reelection in the northwestern mountains and part of Greensboro. She faces a rematch with retired newspaper reporter Chuck Hubbard. Trump won the district by 18 points.",
-    "polyDem": 0.14,
-    "polyRep": 0.86,
+    "polyDem": 0.18,
+    "polyRep": 0.82,
     "candidates": {
       "dem": { "name": "Chuck Hubbard", "party": "D", "incumbent": false },
       "rep": { "name": "Virginia Foxx", "party": "R", "incumbent": true }
@@ -9017,8 +9017,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Freshman Republican Addison McDowell seeks a second term in the Piedmont district covering Davidson, Davie and Rowan counties. He faces Democrat Cyril Jefferson, the mayor of High Point. The seat flipped to Republicans in 2024 after a 2023 redraw eliminated Kathy Manning's Democratic-leaning district.",
-    "polyDem": 0.11,
-    "polyRep": 0.89,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Cyril Jefferson", "party": "D", "incumbent": false },
       "rep": { "name": "Addison McDowell", "party": "R", "incumbent": true }
@@ -9039,8 +9039,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Republican David Rouzer, in office since 2015, seeks reelection in the southeastern district running from Wilmington to Fayetteville. He faces Democratic assistant professor Kim Hardy. Trump won the district by 14 points.",
-    "polyDem": 0.26,
-    "polyRep": 0.74,
+    "polyDem": 0.25,
+    "polyRep": 0.75,
     "candidates": {
       "dem": { "name": "Kimberly Hardy", "party": "D", "incumbent": false },
       "rep": { "name": "David Rouzer", "party": "R", "incumbent": true }
@@ -9149,8 +9149,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Democrat Alma Adams, a former art professor known for her signature hats, seeks reelection in the Charlotte-based 12th. She faces Republican financial executive Jack Codiga. Adams won with 74% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Alma Adams", "party": "D", "incumbent": true },
       "rep": { "name": "Jack Codiga", "party": "R", "incumbent": false }
@@ -9171,8 +9171,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Freshman Republican Brad Knott, a former federal prosecutor, flipped this seat in 2024 after a 2023 redraw made it more Republican. He faces Democrat Paul Barringer in the district that includes Johnston County and parts of Wake. Trump won it by 17 points.",
-    "polyDem": 0.39,
-    "polyRep": 0.61,
+    "polyDem": 0.45,
+    "polyRep": 0.55,
     "candidates": {
       "dem": { "name": "Paul Barringer", "party": "D", "incumbent": false },
       "rep": { "name": "Brad Knott", "party": "R", "incumbent": true }
@@ -9193,8 +9193,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "raceDesc": "Freshman Republican Tim Moore, the former North Carolina House speaker, seeks a second term in the district west of Charlotte, which includes Gastonia and parts of Mecklenburg. He faces Democratic business consultant LaKesha Womack. Moore won by 16 points in 2024 after the 2023 redraw flipped the seat.",
-    "polyDem": 0.26,
-    "polyRep": 0.74,
+    "polyDem": 0.18,
+    "polyRep": 0.82,
     "candidates": {
       "dem": { "name": "Lakesha Womack", "party": "D", "incumbent": false },
       "rep": { "name": "Tim Moore", "party": "R", "incumbent": true }
@@ -9234,8 +9234,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Ohio's 2025 redraw added rural Clinton County and more Republican territory to Democrat Greg Landsman's Cincinnati seat, turning it from Democratic-leaning to a narrow Trump district. Landsman, who unseated Steve Chabot in 2022, faces Republican Eric Conroy, an Air Force veteran and former CIA officer. Trump would have won the new district by about three points, making this one of Ohio's marquee races.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Greg Landsman", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Conroy", "party": "R", "incumbent": false }
@@ -9256,8 +9256,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Freshman Republican David Taylor seeks a second term in the southern Ohio district, which the redraw shifted east along the Ohio River to take in Athens and Marietta. He faces Democrat Jennifer Mazzuckelli. It is the most Republican district in Ohio, and Trump won it by 43 points.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Jennifer Mazzuckelli", "party": "D", "incumbent": false },
       "rep": { "name": "David Taylor", "party": "R", "incumbent": true }
@@ -9300,8 +9300,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Republican Jim Jordan, chairman of the House Judiciary Committee and a founding member of the Freedom Caucus, seeks reelection in the west-central Ohio 4th, which the redraw moved toward the Indiana border. He faces Democratic small business owner Joshua Kolasinski. Trump won the new district by 43 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Joshua Kolasinski", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Jordan", "party": "R", "incumbent": true }
@@ -9344,8 +9344,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Republican Michael Rulli, who won a 2024 special election to succeed Bill Johnson, seeks reelection in eastern Ohio, which the redraw pulled back from the Ohio River toward Canton and Wooster. He faces Democratic freelance writer Elizabeth Kirtley. Trump won the new district by 35 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Elizabeth Kirtley", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Rulli", "party": "R", "incumbent": true }
@@ -9366,8 +9366,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Republican Max Miller, a former Trump White House aide, seeks a third term in the district stretching from Cleveland's southwestern suburbs to Medina and Ashland. He faces Democrat Brian Poindexter, an ironworker and Brook Park city councilman. Miller won with just 51% in 2024 in a three-way race, and Democrats see a chance here.",
-    "polyDem": 0.86,
-    "polyRep": 0.14,
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Brian Poindexter", "party": "D", "incumbent": false },
       "rep": { "name": "Max Miller", "party": "R", "incumbent": true }
@@ -9410,8 +9410,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Democrat Marcy Kaptur, the longest-serving woman in congressional history, has represented Toledo since 1983. Ohio's redraw added rural Putnam, Henry and Paulding counties to her district, making it Trump +11, but she is running again in a rematch with former state representative Derek Merrin, whom she beat by less than a point in 2024. It is one of the most closely watched races in the country.",
-    "polyDem": 0.77,
-    "polyRep": 0.23,
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Marcy Kaptur", "party": "D", "incumbent": true },
       "rep": { "name": "Derek Merrin", "party": "R", "incumbent": false }
@@ -9432,8 +9432,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Republican Mike Turner, a former Dayton mayor who was removed as chairman of the House Intelligence Committee in 2025, seeks reelection in the Dayton-based 10th. He faces Democratic Air Force veteran Kristina Knickerbocker. Trump won the district by eight points, making it Ohio's least Republican GOP-held seat.",
-    "polyDem": 0.32,
-    "polyRep": 0.68,
+    "polyDem": 0.31,
+    "polyRep": 0.69,
     "candidates": {
       "dem": { "name": "Kristina Knickerbocker", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Turner", "party": "R", "incumbent": true }
@@ -9476,8 +9476,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Republican Troy Balderson, who won a nail-biter special election in 2018, seeks reelection in central Ohio east of Columbus, including Newark and Zanesville. He faces a rematch with Democrat Jerrad Christian. Trump won the redrawn district by 30 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Jerrad Christian", "party": "D", "incumbent": false },
       "rep": { "name": "Troy Balderson", "party": "R", "incumbent": true }
@@ -9498,8 +9498,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Democrat Emilia Sykes, a former state House minority leader, seeks a third term in the Akron-Canton district after winning by just over two points in 2024. The redraw made the seat slightly bluer by adding Kent and part of Portage County. She faces Republican radio host Carey Coleman.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Emilia Sykes", "party": "D", "incumbent": true },
       "rep": { "name": "Carey Coleman", "party": "R", "incumbent": false }
@@ -9520,8 +9520,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "raceDesc": "Republican David Joyce, a former Geauga County prosecutor and senior appropriator, seeks reelection in northeast Ohio, which the redraw extended south into Youngstown. He faces Democrat Maria Jukic, a former Euclid city councilmember. Trump won the district by 20 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Maria Jukic", "party": "D", "incumbent": false },
       "rep": { "name": "David Joyce", "party": "R", "incumbent": true }
@@ -9564,8 +9564,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "raceDesc": "Kevin Hern is running for Senate, opening the Tulsa-based 1st. Republican state representative Mark Tedford faces Democrat John Croisant, a Tulsa school board member. Trump won the district by 22 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "John Croisant", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Tedford", "party": "R", "incumbent": false }
@@ -9586,8 +9586,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "raceDesc": "Republican Josh Brecheen, a Freedom Caucus member, seeks a third term in eastern Oklahoma, which includes Green Country and Little Dixie. He faces a rematch with Democrat Brandon Wade, whom he beat by 53 points in 2024. It is the most Republican district in Oklahoma, but it was held by Democrats as recently as 2012.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Brandon Wade", "party": "D", "incumbent": false },
       "rep": { "name": "Josh Brecheen", "party": "R", "incumbent": true }
@@ -9608,8 +9608,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "raceDesc": "Republican Frank Lucas, the longest-serving member of Oklahoma's delegation and a former Agriculture Committee chairman, seeks reelection in western Oklahoma and the Panhandle. He faces Democrat Suzie Byrd, a reporter for the Enid News & Eagle. Lucas ran unopposed in 2024.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Suzie Byrd", "party": "D", "incumbent": false },
       "rep": { "name": "Frank Lucas", "party": "R", "incumbent": true }
@@ -9674,8 +9674,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "raceDesc": "Democrat Suzanne Bonamici, a former consumer protection attorney first elected in 2012, seeks reelection in Portland's western suburbs, including Beaverton and Hillsboro. She faces Republican veterinarian Barbara Kahl. Bonamici won with 69% in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Suzanne Bonamici", "party": "D", "incumbent": true },
       "rep": { "name": "Barbara Kahl", "party": "R", "incumbent": false }
@@ -9696,8 +9696,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "raceDesc": "Republican Cliff Bentz, a former state senator, seeks reelection in the vast eastern and southern Oregon 2nd, the fifth-largest district in the country. He faces former Democratic state representative Chris Beck. It is Oregon's only safely Republican seat; Trump won it by 28 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Chris Beck", "party": "D", "incumbent": false },
       "rep": { "name": "Cliff Bentz", "party": "R", "incumbent": true }
@@ -9740,8 +9740,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "raceDesc": "Democrat Val Hoyle, a former state labor commissioner, seeks a third term in the southern Willamette Valley and coast district, which includes Eugene and Corvallis. She faces a rematch with Republican attorney Monique DeSpain, whom she beat by eight points in 2024. Harris won the district by 12 points.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Val Hoyle", "party": "D", "incumbent": true },
       "rep": { "name": "Monique Despain", "party": "R", "incumbent": false }
@@ -9762,8 +9762,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Janelle Bynum flipped this seat in 2024, defeating Lori Chavez-DeRemer, who is now Trump's labor secretary. She faces Republican Deschutes County commissioner Patti Adair in the district stretching from Portland's southeastern suburbs to Bend. Harris won by nine points, and Bynum won by less than three.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Janelle Bynum", "party": "D", "incumbent": true },
       "rep": { "name": "Patti Adair", "party": "R", "incumbent": false }
@@ -9784,8 +9784,8 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "raceDesc": "Democrat Andrea Salinas seeks a third term in the district covering Salem and the southwest Portland suburbs, created after the 2020 census. She faces Republican David Russ, the former mayor of Dundee. Salinas won by seven points in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Andrea Salinas", "party": "D", "incumbent": true },
       "rep": { "name": "David Russ", "party": "R", "incumbent": false }
@@ -9803,8 +9803,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican Brian Fitzpatrick, a former FBI agent and one of the most bipartisan members of the House, seeks a sixth term in Bucks County. He voted against the One Big Beautiful Bill Act but drew no primary challenger. He faces Bob Harvie, chair of the Bucks County Commission, in a district Harris won by 0.3 points and Fitzpatrick won by 13.",
-    "polyDem": 0.54,
-    "polyRep": 0.46,
+    "polyDem": 0.55,
+    "polyRep": 0.45,
     "candidates": {
       "dem": { "name": "Robert Harvie", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Fitzpatrick", "party": "R", "incumbent": true }
@@ -9935,8 +9935,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Freshman Republican Ryan Mackenzie flipped the Lehigh Valley seat by one point in 2024, unseating Susan Wild. He faces Democrat Bob Brooks, president of the Pennsylvania Professional Firefighters Association, who won a crowded primary. Trump won the district by three points, making it a top-tier toss-up.",
-    "polyDem": 0.86,
-    "polyRep": 0.14,
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Bob Brooks", "party": "D", "incumbent": false },
       "rep": { "name": "Ryan Mackenzie", "party": "R", "incumbent": true }
@@ -9957,8 +9957,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Freshman Republican Rob Bresnahan flipped this Scranton and Wilkes-Barre seat in 2024 by beating Matt Cartwright, then faced criticism over stock trading while in office. He faces Scranton mayor Paige Cognetti, a strong Democratic recruit. Trump won the district by nine points.",
-    "polyDem": 0.9,
-    "polyRep": 0.1,
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Paige Cognetti", "party": "D", "incumbent": false },
       "rep": { "name": "Rob Bresnahan", "party": "R", "incumbent": true }
@@ -9979,8 +9979,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican Dan Meuser, a former state revenue secretary, seeks reelection in the coal-region district in east-central Pennsylvania. He faces Democrat Rachel Wallace, a former OMB chief of staff. Trump won the district by 38 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Rachel Wallace", "party": "D", "incumbent": false },
       "rep": { "name": "Daniel Meuser", "party": "R", "incumbent": true }
@@ -10001,8 +10001,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican Scott Perry, a former Freedom Caucus chairman, faces a rematch with Democrat Janelle Stelson, the former WGAL news anchor who came within 1.3 points in 2024. The Harrisburg and York district voted for Trump by five points. It's one of Democrats' best pickup opportunities.",
-    "polyDem": 0.81,
-    "polyRep": 0.19,
+    "polyDem": 0.82,
+    "polyRep": 0.18,
     "candidates": {
       "dem": { "name": "Janelle Stelson", "party": "D", "incumbent": false },
       "rep": { "name": "Scott Perry", "party": "R", "incumbent": true }
@@ -10023,8 +10023,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican Lloyd Smucker seeks reelection in Pennsylvania Dutch Country, including all of Lancaster County and southern York County. He faces Democratic nurse Nancy Mannion. Smucker won by 26 points in 2024.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Nancy Mannion", "party": "D", "incumbent": false },
       "rep": { "name": "Lloyd Smucker", "party": "R", "incumbent": true }
@@ -10045,8 +10045,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Democrat Summer Lee, a progressive and the first Black woman elected to Congress from Pennsylvania, seeks a third term in the Pittsburgh-based 12th. She faces a rematch with Republican manufacturing executive James Hayes. Lee won by 13 points in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Summer Lee", "party": "D", "incumbent": true },
       "rep": { "name": "James Hayes", "party": "R", "incumbent": false }
@@ -10067,8 +10067,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican John Joyce, a dermatologist, seeks reelection in rural south-central Pennsylvania, including Altoona, Johnstown and Gettysburg. He faces a rematch with Democrat Beth Farnham. Trump won the district by 46 points, the widest margin in the state.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Elizabeth Farnham", "party": "D", "incumbent": false },
       "rep": { "name": "John Joyce", "party": "R", "incumbent": true }
@@ -10089,8 +10089,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican Guy Reschenthaler, a Navy veteran and former district judge, seeks reelection in southwestern Pennsylvania, including Washington, Greene and Fayette counties. He faces Democrat Alan Bradstock, a retired FBI agent. Trump won the district by 34 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Alan Bradstock", "party": "D", "incumbent": false },
       "rep": { "name": "Guy Reschenthaler", "party": "R", "incumbent": true }
@@ -10111,8 +10111,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Republican Glenn \"GT\" Thompson, chairman of the House Agriculture Committee, seeks reelection in the vast north-central district that includes State College. He faces Democrat Ray Bilger, a former intelligence officer. Trump won the district by 38 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Raymond Bilger", "party": "D", "incumbent": false },
       "rep": { "name": "Glenn Thompson", "party": "R", "incumbent": true }
@@ -10155,8 +10155,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "raceDesc": "Democrat Chris Deluzio, a Navy veteran, seeks a third term in Pittsburgh's northern and western suburbs and Beaver County. He faces Republican Beaver County Sheriff Tony Guy. Harris won the district by six points, and Deluzio won by eight in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Christopher Deluzio", "party": "D", "incumbent": true },
       "rep": { "name": "Tony Guy", "party": "R", "incumbent": false }
@@ -10177,8 +10177,8 @@ export const houseData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "house",
     "raceDesc": "Democrat Gabe Amo, the son of Ghanaian and Liberian immigrants and Rhode Island's first Black member of Congress, seeks reelection in the eastern Rhode Island 1st. He faces Republican entrepreneur Kellie Keenan. It is the least populous district in the country.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Gabe Amo", "party": "D", "incumbent": true },
       "rep": { "name": "Kellie Keenan", "party": "R", "incumbent": false }
@@ -10199,8 +10199,8 @@ export const houseData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "house",
     "raceDesc": "Democrat Seth Magaziner, a former state treasurer, seeks a third term in western Rhode Island, including Cranston and Warwick. He faces Republican businessman Victor Mellor. Magaziner won by four points in 2022 but by 17 in 2024.",
-    "polyDem": 0.95,
-    "polyRep": 0.05,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Seth Magaziner", "party": "D", "incumbent": true },
       "rep": { "name": "Victor Mellor", "party": "R", "incumbent": false }
@@ -10221,8 +10221,8 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "raceDesc": "Nancy Mace left this seat for an unsuccessful run for governor. Charleston County councilor Jenny Costa Honeycutt won the Republican nomination and faces Democrat Nancy Lacore, a retired vice admiral who led the Navy Reserve. Democrat Joe Cunningham flipped the coastal district in 2018, and Democrats hope Lacore's military profile can make it competitive again.",
-    "polyDem": 0.46,
-    "polyRep": 0.54,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Nancy Lacore", "party": "D", "incumbent": false },
       "rep": { "name": "Jenny Costa Honeycutt", "party": "R", "incumbent": false }
@@ -10243,8 +10243,8 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "raceDesc": "Republican Joe Wilson, first elected in 2001 and famous for shouting \"You lie!\" at President Obama in 2009, seeks reelection in the district from Columbia to North Augusta. He faces Democrat Zyon Khalifa, an attorney and Air Force veteran. Trump won the district by 14 points.",
-    "polyDem": 0.13,
-    "polyRep": 0.87,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Zyon Khalifa", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Wilson", "party": "R", "incumbent": true }
@@ -10375,8 +10375,8 @@ export const houseData: RaceForecast[] = [
     "state": "South Dakota",
     "raceType": "house",
     "raceDesc": "Dusty Johnson ran for governor and lost the primary, opening South Dakota's at-large seat. Attorney General Marty Jackley is the Republican nominee against Democrat Nikki Gronli, a former USDA Rural Development state director. Republicans have not lost a House race in South Dakota since 2008, when Stephanie Herseth Sandlin won her last term.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Nicole Gronli", "party": "D", "incumbent": false },
       "rep": { "name": "Marty Jackley", "party": "R", "incumbent": false }
@@ -10397,8 +10397,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "raceDesc": "Republican Diana Harshbarger, a pharmacist, seeks reelection in northeast Tennessee's Tri-Cities district, one of the most Republican in the country. She faces Democrat Kristi Burke, an artist and YouTuber. Trump won the district by 58 points.",
-    "polyDem": 0.02,
-    "polyRep": 0.98,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Kristi Burke", "party": "D", "incumbent": false },
       "rep": { "name": "Diana Harshbarger", "party": "R", "incumbent": true }
@@ -10419,8 +10419,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "raceDesc": "Republican Tim Burchett, a former Knox County mayor known for his outspoken libertarian streak, seeks reelection in the Knoxville-based 2nd. He faces Democratic organizer Michaela Barnett. Republicans have held the Knoxville seat continuously since 1867.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Michaela Barnett", "party": "D", "incumbent": false },
       "rep": { "name": "Tim Burchett", "party": "R", "incumbent": true }
@@ -10441,8 +10441,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "raceDesc": "Republican Chuck Fleischmann, a senior appropriator in office since 2011, seeks reelection in the Chattanooga-based 3rd. The redraw swapped his northern counties for Meigs and Rhea to the southwest. He faces Democratic small business owner Anna Golladay.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Anna Golladay", "party": "D", "incumbent": false },
       "rep": { "name": "Chuck Fleischmann", "party": "R", "incumbent": true }
@@ -10485,8 +10485,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "raceDesc": "Former state agriculture commissioner Charlie Hatcher defeated Andy Ogles in the Republican primary with 53%. The redraw tripled the district's size, sweeping it west across rural northwest Tennessee and out of Nashville entirely. Hatcher faces Columbia mayor Chaz Molder, and Trump would have won the new district by 23 points.",
-    "polyDem": 0.1,
-    "polyRep": 0.9,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Chaz Molder", "party": "D", "incumbent": false },
       "rep": { "name": "Charlie Hatcher", "party": "R", "incumbent": false }
@@ -10573,8 +10573,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "raceDesc": "Tennessee's redraw dismantled the Memphis-based, majority-Black 9th, keeping just a fifth of Shelby County and stretching the district east along the Alabama border. Steve Cohen dropped his reelection bid. State representative Justin Pearson, one of the \"Tennessee Three\" expelled from the legislature in 2023, faces Republican state senator Brent Taylor in a district Trump would have won by 21 points.",
-    "polyDem": 0.16,
-    "polyRep": 0.84,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Justin J. Pearson", "party": "D", "incumbent": false },
       "rep": { "name": "Brent Taylor", "party": "R", "incumbent": false }
@@ -10661,8 +10661,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Republican Pat Fallon, a former Air Force officer and state senator, seeks reelection in the district that combines the Red River counties around Sherman and Paris with Frisco and most of Plano. He faces Democratic construction project manager Jason Pearce. Trump won the district by 25 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Jason Pearce", "party": "D", "incumbent": false },
       "rep": { "name": "Pat Fallon", "party": "R", "incumbent": true }
@@ -10683,8 +10683,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Republican Lance Gooden seeks reelection in the district stretching from Mesquite and southern Garland to Palestine and Athens in East Texas. He faces Democrat Chelsey Hockett. Trump won the district by 22 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Chelsey Hockett", "party": "D", "incumbent": false },
       "rep": { "name": "Lance Gooden", "party": "R", "incumbent": true }
@@ -10727,8 +10727,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Democrat Lizzie Fletcher, who flipped this west Houston seat in 2018, seeks reelection in a redrawn district covering the Galleria, Montrose, the Heights, Alief and parts of Fort Bend County. She faces Republican consultant Alexander Hale. Harris won the new district by 24 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Lizzie Fletcher", "party": "D", "incumbent": true },
       "rep": { "name": "Alexander Hale", "party": "R", "incumbent": false }
@@ -10749,8 +10749,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Morgan Luttrell, a former Navy SEAL, is retiring after two terms. Attorney Jessica Steinmann is the Republican nominee against Democrat Laura Jones, who is making her third run, in the district covering Conroe, Magnolia and parts of west Houston. Trump won the redrawn district by 28 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Laura Jones", "party": "D", "incumbent": false },
       "rep": { "name": "Jessica Steinmann", "party": "R", "incumbent": false }
@@ -10771,8 +10771,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Texas's redraw moved the 9th from Al Green's southwest Houston base to a heavily Hispanic district east of Houston, including Pasadena, Baytown and Liberty County, and it shares none of its old territory. Republican Alex Mealer, a METRO board member and the 2022 GOP nominee for Harris County judge, faces environmental justice advocate Leticia Gutierrez. Trump would have won the new district by 20 points, so this is effectively a Republican pickup.",
-    "polyDem": 0.23,
-    "polyRep": 0.77,
+    "polyDem": 0.28,
+    "polyRep": 0.72,
     "candidates": {
       "dem": { "name": "Leticia Gutierrez", "party": "D", "incumbent": false },
       "rep": { "name": "Alexandra Mealer", "party": "R", "incumbent": false }
@@ -10793,8 +10793,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Michael McCaul, the former Homeland Security and Foreign Affairs chairman, is retiring. Chris Gober, a political-law attorney who helped design Texas's Republican congressional maps and led Elon Musk's America PAC, is the Republican nominee. He faces Democrat Caitlin Rourk in a redrawn district stretching from western Austin through College Station to rural East Texas.",
-    "polyDem": 0.09,
-    "polyRep": 0.91,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Caitlin Rourk", "party": "D", "incumbent": false },
       "rep": { "name": "Chris Gober", "party": "R", "incumbent": false }
@@ -10903,8 +10903,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Republican Monica De La Cruz, the first Republican and first woman to represent the Rio Grande Valley-based 15th, faces Democrat Bobby Pulido, a well-known Tejano music star. The redraw extended the district northeast into rural counties, making it Trump +18. The same territory voted for Clinton by 14 points in 2016, and Pulido's celebrity makes it one to watch.",
-    "polyDem": 0.88,
-    "polyRep": 0.12,
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Bobby Pulido", "party": "D", "incumbent": false },
       "rep": { "name": "Monica De La Cruz", "party": "R", "incumbent": true }
@@ -10925,8 +10925,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Democrat Veronica Escobar, a former El Paso County judge, seeks reelection in the El Paso-based 16th. She faces Republican business owner Adam Bauman. Harris won the heavily Hispanic district by 17 points, a sharp drop from Clinton's 45-point margin in 2016.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Veronica Escobar", "party": "D", "incumbent": true },
       "rep": { "name": "Adam Bauman", "party": "R", "incumbent": false }
@@ -10969,8 +10969,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Christian Menefee, the former Harris County attorney who won a January 2026 special election after Sylvester Turner's death, beat fellow incumbent Al Green in a member-versus-member primary after the redraw combined their districts. He faces Republican Ronald Whitfield in the downtown Houston district, which includes the Third Ward, Fifth Ward and Texas Medical Center. Harris won it by 56 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Christian Menefee", "party": "D", "incumbent": true },
       "rep": { "name": "Ronald Whitfield", "party": "R", "incumbent": false }
@@ -10991,8 +10991,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Jodey Arrington, chairman of the House Budget Committee, is retiring after five terms. Businessman Tom Sell won the Republican nomination and faces Democrat Kyle Rable in the West Texas district, which includes Lubbock and Abilene. Trump won it by 52 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Kyle Rable", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Sell", "party": "R", "incumbent": false }
@@ -11057,8 +11057,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Troy Nehls is retiring, and his twin brother Trever Nehls, a former Fort Bend County constable, won the Republican nomination. He faces Democrat Marquette Greene-Scott, who ran against Troy in 2024, in a redrawn district covering Sugar Land, Katy and much of Brazoria County. Trump won the new district by 23 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Marquette Greene-Scott", "party": "D", "incumbent": false },
       "rep": { "name": "Trever Nehls", "party": "R", "incumbent": false }
@@ -11079,8 +11079,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Tony Gonzales ended his campaign and resigned in April after admitting to a relationship with a former staffer, leaving firearms manufacturer and YouTuber Brandon Herrera, who nearly beat Gonzales in the 2024 primary runoff, as the Republican nominee. He faces Democratic attorney Katy Padilla Stout. The sprawling border district, which runs from San Antonio to the edge of El Paso, voted for Trump by 15 points.",
-    "polyDem": 0.43,
-    "polyRep": 0.57,
+    "polyDem": 0.45,
+    "polyRep": 0.55,
     "candidates": {
       "dem": { "name": "Katy Padilla Stout", "party": "D", "incumbent": false },
       "rep": { "name": "Brandon Herrera", "party": "R", "incumbent": false }
@@ -11123,8 +11123,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Republican Roger Williams, chairman of the House Small Business Committee and a former Texas secretary of state, seeks reelection in the district running from Arlington and Fort Worth to rural counties east of Abilene. Democrat Marc Veasey was drawn into the district but chose not to run. Williams faces Democrat Dione Sims.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Dione Sims", "party": "D", "incumbent": false },
       "rep": { "name": "Roger Williams", "party": "R", "incumbent": true }
@@ -11211,8 +11211,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Democrat Sylvia Garcia, one of the first two Latinas elected to Congress from Texas, seeks reelection in a redrawn north Houston district that includes Aldine, Greenspoint and Bush Intercontinental Airport. She beat former state representative Jarvis Johnson in the primary and faces Republican Martha Fierro. Harris won the new district by 31 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Sylvia Garcia", "party": "D", "incumbent": true },
       "rep": { "name": "Martha Fierro", "party": "R", "incumbent": false }
@@ -11233,8 +11233,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Jasmine Crockett ran for Senate after being drawn out of this South Dallas district, and lost the primary to James Talarico. Pastor Frederick Haynes III, former president of Rainbow/PUSH, won the Democratic nomination and faces Republican business owner Everett Jackson. Harris won the district by 48 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Frederick Haynes", "party": "D", "incumbent": false },
       "rep": { "name": "Everett Jackson", "party": "R", "incumbent": false }
@@ -11255,8 +11255,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Republican John Carter, a former district judge first elected in 2002, seeks reelection in the district anchored by Georgetown, Killeen, Temple and Fort Hood. He faces Democratic cybersecurity architect Justin Early. Carter nearly lost to MJ Hegar in 2018, but Trump won the district by 22 points in 2024.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Justin Early", "party": "D", "incumbent": false },
       "rep": { "name": "John Carter", "party": "R", "incumbent": true }
@@ -11277,8 +11277,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Texas's redraw stretched the 32nd from Richardson and north Dallas across Lake Ray Hubbard to Rockwall and rural East Texas, turning a safely Democratic seat into a Trump +18 district. Republican attorney Jace Yarbrough faces Democratic Richardson city councilor Dan Barrios. This is effectively a Republican pickup.",
-    "polyDem": 0.13,
-    "polyRep": 0.87,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Dan Barrios", "party": "D", "incumbent": false },
       "rep": { "name": "Jace Yarbrough", "party": "R", "incumbent": false }
@@ -11299,8 +11299,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Former congressman Colin Allred, the 2024 Senate nominee and former NFL linebacker, beat incumbent Julie Johnson in the Democratic runoff for this redrawn Dallas County seat. He faces Republican Patrick Gillespie in the heavily Hispanic district, which Harris won by 33 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Colin Allred", "party": "D", "incumbent": false },
       "rep": { "name": "Patrick Gillespie", "party": "R", "incumbent": false }
@@ -11321,8 +11321,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Democrat Vicente Gonzalez, who has beaten Republican Mayra Flores twice, faces a new challenger in former federal prosecutor Eric Flores. The redraw swapped Hidalgo County for most of Corpus Christi, essentially recreating the old 27th district, and the new lines voted for Trump by 10 points. It's a genuine toss-up and one of the Rio Grande Valley's marquee races.",
-    "polyDem": 0.88,
-    "polyRep": 0.12,
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "Vicente Gonzalez", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Flores", "party": "R", "incumbent": false }
@@ -11343,8 +11343,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "The redraw moved the 35th from the Austin-San Antonio corridor to south and northeast San Antonio and the rural counties to its east, turning a safely Democratic seat into a Trump +11 district; Greg Casar moved to the 37th. Republican Carlos De La Cruz, brother of Representative Monica De La Cruz, faces Democrat Johnny Garcia, a Bexar County sheriff's deputy. It's one of Republicans' top pickup targets.",
-    "polyDem": 0.71,
-    "polyRep": 0.29,
+    "polyDem": 0.72,
+    "polyRep": 0.28,
     "candidates": {
       "dem": { "name": "Johnny Garcia", "party": "D", "incumbent": false },
       "rep": { "name": "Carlos De La Cruz", "party": "R", "incumbent": false }
@@ -11365,8 +11365,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Republican Brian Babin, a dentist and former Woodville mayor, seeks reelection in the Southeast Texas district, which includes Beaumont, Lufkin and the Clear Lake area. He faces Democrat Rhonda Hart. Trump won the redrawn district by 25 points.",
-    "polyDem": 0.05,
-    "polyRep": 0.95,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Rhonda Hart", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Babin", "party": "R", "incumbent": true }
@@ -11387,8 +11387,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Lloyd Doggett, a 30-year House veteran, retired after the redraw put Greg Casar in the same Austin district, and Casar, chair of the Congressional Progressive Caucus, is now running here. He faces Republican paralegal Lauren Peña. It is the most Democratic district in Texas; Harris won it by 58 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Greg Casar", "party": "D", "incumbent": false },
       "rep": { "name": "Lauren Pena", "party": "R", "incumbent": false }
@@ -11406,8 +11406,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "raceDesc": "Wesley Hunt gave up this seat to run for Senate and finished third in the primary. Mortgage broker Jon Bonck is the Republican nominee against Democratic realtor Melissa McDonough in the west Houston and northwest Harris County district, which includes Ted Cruz's home. Trump won it by 21 points.",
-    "polyDem": 0.06,
-    "polyRep": 0.94,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Melissa McDonough", "party": "D", "incumbent": false },
       "rep": { "name": "Jon Bonck", "party": "R", "incumbent": false }
@@ -11469,8 +11469,8 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "raceDesc": "Republican Celeste Maloy, who survived a razor-thin 2024 primary against Colby Jenkins, beat former state representative Phil Lyman in the primary for the new 3rd. The district covers southern and eastern Utah, including St. George, Provo and Brigham Young University. She faces Democratic engineer Kent Udell in the most Republican of Utah's four seats.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Kent Udell", "party": "D", "incumbent": false },
       "rep": { "name": "Celeste Maloy", "party": "R", "incumbent": true }
@@ -11579,8 +11579,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Democrat Bobby Scott, the top Democrat on the House Education and Workforce Committee and in Congress since 1993, seeks reelection in the Norfolk and Newport News-based 3rd. He faces Republican Army veteran Edwin Rivera. Scott won with 70% in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Bobby Scott", "party": "D", "incumbent": true },
       "rep": { "name": "Edwin Rivera", "party": "R", "incumbent": false }
@@ -11601,8 +11601,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Democrat Jennifer McClellan, the first Black woman to represent Virginia in Congress, seeks reelection in the Richmond-based 4th. She faces Republican Robert Murray, a former IBM advisor. McClellan won with 67% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Jennifer McClellan", "party": "D", "incumbent": true },
       "rep": { "name": "Robert Murray", "party": "R", "incumbent": false }
@@ -11623,8 +11623,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Former congressman Tom Perriello, who represented this area from 2009 to 2011 and later served as special envoy for Sudan, is challenging Republican John McGuire. McGuire, a former Navy SEAL, won the seat in 2024 after ousting then-Freedom Caucus chair Bob Good in a primary. The district includes Charlottesville, Lynchburg and Danville, and Trump won it by 12 points.",
-    "polyDem": 0.43,
-    "polyRep": 0.57,
+    "polyDem": 0.35,
+    "polyRep": 0.65,
     "candidates": {
       "dem": { "name": "Thomas Perriello", "party": "D", "incumbent": false },
       "rep": { "name": "John McGuire", "party": "R", "incumbent": true }
@@ -11645,8 +11645,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Republican Ben Cline seeks reelection in the Shenandoah Valley district, which includes Roanoke, Harrisonburg and Winchester. He faces Democrat Beth Macy, the author of the bestselling opioid-crisis book Dopesick. Trump won the district by 25 points.",
-    "polyDem": 0.07,
-    "polyRep": 0.93,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Beth Macy", "party": "D", "incumbent": false },
       "rep": { "name": "Ben Cline", "party": "R", "incumbent": true }
@@ -11689,8 +11689,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Democrat Don Beyer, a former lieutenant governor and car dealer, seeks reelection in the Alexandria, Arlington and Falls Church district across the Potomac from Washington. He faces Republican Tony Sabio, a former CIA and Secret Service officer. Harris won the district by 51 points.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Donald Beyer", "party": "D", "incumbent": true },
       "rep": { "name": "Tony Sabio", "party": "R", "incumbent": false }
@@ -11711,8 +11711,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Republican Morgan Griffith, who unseated longtime Democrat Rick Boucher in 2010, seeks reelection in southwest Virginia, including Blacksburg, Abingdon and Bristol. He faces Democratic farmer Joy Powers. Trump won the district by 44 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Joy Powers", "party": "D", "incumbent": false },
       "rep": { "name": "Morgan Griffith", "party": "R", "incumbent": true }
@@ -11733,8 +11733,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "raceDesc": "Freshman Democrat Suhas Subramanyam, a former Obama White House tech adviser, seeks a second term in the Loudoun County-based 10th. He faces Republican Air Force veteran Dave Beckwith. Harris won the district by nine points, down from Biden's 18.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Suhas Subramanyam", "party": "D", "incumbent": true },
       "rep": { "name": "Dave Beckwith", "party": "R", "incumbent": false }
@@ -11777,8 +11777,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "raceDesc": "Democrat Suzan DelBene, a former Microsoft executive and chair of the Democratic Congressional Campaign Committee, seeks reelection in the northern Seattle suburbs, including Kirkland and Redmond. She faces Republican Mary Silva. DelBene won with 63% in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Suzan DelBene", "party": "D", "incumbent": true },
       "rep": { "name": "Mary Silva", "party": "R", "incumbent": false }
@@ -11799,8 +11799,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "raceDesc": "Democrat Rick Larsen, the top Democrat on the House Transportation Committee, seeks reelection in the district running from Everett to Bellingham and the Canadian border. He faces Republican Edwin Feller after Washington's top-two primary. Larsen won with 64% in 2024.",
-    "polyDem": 0.97,
-    "polyRep": 0.03,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Rick Larsen", "party": "D", "incumbent": true },
       "rep": { "name": "Edwin H. Feller", "party": "R", "incumbent": false }
@@ -11843,8 +11843,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "raceDesc": "Dan Newhouse, one of the last two House Republicans who voted to impeach Trump in 2021, is retiring. Yakima County commissioner Amanda McKinney finished ahead of state senator Matt Boehnke in the top-two primary and faces Democrat John Duresky, a retired Air Force major. Trump won the central Washington district by 21 points.",
-    "polyDem": 0.09,
-    "polyRep": 0.91,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "John Duresky", "party": "D", "incumbent": false },
       "rep": { "name": "Amanda McKinney", "party": "R", "incumbent": false }
@@ -11975,8 +11975,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "raceDesc": "Democrat Marilyn Strickland, a former Tacoma mayor and one of the first Korean American women elected to Congress, seeks reelection in the Olympia-based 10th. She faces Republican Chris Chung, who ran for insurance commissioner as a Democrat in 2024. Strickland won by 17 points in 2024.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Marilyn Strickland", "party": "D", "incumbent": true },
       "rep": { "name": "Chris D. Chung", "party": "R", "incumbent": false }
@@ -12019,8 +12019,8 @@ export const houseData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "house",
     "raceDesc": "Freshman Republican Riley Moore, the former state treasurer and nephew of Senator Shelley Moore Capito, seeks a second term in northern West Virginia and both panhandles. He faces Democratic organizer Ace Parsi. Trump won the district by 40 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Ace Parsi", "party": "D", "incumbent": false },
       "rep": { "name": "Riley Moore", "party": "R", "incumbent": true }
@@ -12041,8 +12041,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "raceDesc": "Republican Bryan Steil, chairman of the House Administration Committee, seeks reelection in southeastern Wisconsin, including Kenosha, Racine and Janesville, the seat once held by Speaker Paul Ryan. He faces Democratic nurse Mitchell Berman. Steil won by 10 points in 2024, and Trump carried the district by five.",
-    "polyDem": 0.48,
-    "polyRep": 0.52,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Mitchell Berman", "party": "D", "incumbent": false },
       "rep": { "name": "Bryan Steil", "party": "R", "incumbent": true }
@@ -12063,8 +12063,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "raceDesc": "Democrat Mark Pocan, a former Congressional Progressive Caucus co-chair, is unopposed in the Madison-based 2nd. The district, which includes the University of Wisconsin, is the most Democratic in the state outside Milwaukee. Harris won it by 41 points.",
-    "polyDem": 0.98,
-    "polyRep": 0.02,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Mark Pocan", "party": "D", "incumbent": true },
       "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
@@ -12085,8 +12085,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "raceDesc": "Republican Derrick Van Orden, a former Navy SEAL, faces a rematch with Democrat Rebecca Cooke, whom he beat by less than three points in 2024. The western Wisconsin district includes Eau Claire, La Crosse and Stevens Point. Trump won it by seven points, but it's a genuine toss-up and one of the top Democratic targets.",
-    "polyDem": 0.87,
-    "polyRep": 0.13,
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Rebecca Cooke", "party": "D", "incumbent": false },
       "rep": { "name": "Derrick Van Orden", "party": "R", "incumbent": true }
@@ -12107,8 +12107,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "raceDesc": "Democrat Gwen Moore, the first Black person elected to Congress from Wisconsin, seeks reelection in the Milwaukee-based 4th. She faces Republican Tim Rogers for the fifth straight time. Moore won with 75% in 2024.",
-    "polyDem": 0.96,
-    "polyRep": 0.04,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Gwen Moore", "party": "D", "incumbent": true },
       "rep": { "name": "Tim Rogers", "party": "R", "incumbent": false }
@@ -12129,8 +12129,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "raceDesc": "Republican Scott Fitzgerald, a former state Senate majority leader, seeks reelection in Milwaukee's western and northern suburbs, including most of Waukesha County. He faces Democratic product developer Andrew Beck. Trump won the district by 23 points.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Andrew Beck", "party": "D", "incumbent": false },
       "rep": { "name": "Scott Fitzgerald", "party": "R", "incumbent": true }
@@ -12173,8 +12173,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "raceDesc": "Tom Tiffany is running for governor, opening the sprawling northwestern Wisconsin 7th, the state's largest district. Republican Michael Alfonso, a media producer and son-in-law of Transportation Secretary Sean Duffy, who once held the seat, faces former Democratic state representative Fred Clark. Trump won it by 23 points.",
-    "polyDem": 0.04,
-    "polyRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Frederic Clark", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Alfonso", "party": "R", "incumbent": false }
@@ -12217,8 +12217,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "house",
     "raceDesc": "Harriet Hageman is running for Senate, opening Wyoming's at-large seat. Secretary of State Chuck Gray beat state Senate President Bo Biteman in the Republican primary and faces former Democratic state Senate minority leader Lisa Kinney. Wyoming was Trump's best state in 2024, and Gray is a prohibitive favorite.",
-    "polyDem": 0.03,
-    "polyRep": 0.97,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Lisa Kinney", "party": "D", "incumbent": false },
       "rep": { "name": "Chuck Gray", "party": "R", "incumbent": false }

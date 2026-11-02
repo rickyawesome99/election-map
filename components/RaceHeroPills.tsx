@@ -16,7 +16,7 @@ const OFFICE = {
 
 export function StatePill({ name, abbr }: { name: string; abbr: string }) {
   return (
-    <Link prefetch={false} href={`/states/${abbr.toLowerCase()}`} aria-label={`View ${name} state page`} className={`${PILL} hover:underline`} style={LINK_PILL}>
+    <Link prefetch={false} href={`/states/${abbr.toLowerCase()}`} aria-label={`View ${name} state page`} className={`${PILL} ix-lift hover:underline`} style={LINK_PILL}>
       {name}
     </Link>
   );
@@ -26,7 +26,7 @@ export function StatePill({ name, abbr }: { name: string; abbr: string }) {
 export function OfficePill({ office }: { office: keyof typeof OFFICE }) {
   const o = OFFICE[office];
   return (
-    <Link prefetch={false} href={o.href} aria-label={`${o.label} forecast`} className={`${PILL} hover:underline`} style={LINK_PILL}>
+    <Link prefetch={false} href={o.href} aria-label={`${o.label} forecast`} className={`${PILL} ix-lift hover:underline`} style={LINK_PILL}>
       {o.label}
     </Link>
   );
@@ -41,34 +41,13 @@ export function HeldPill({ party }: { party: "D" | "R" | "I" | null }) {
 
 export type SeatNavLink = { href: string; label: string };
 
-/** Quiet ‹ › arrows set beside the page title, stepping to the neighbouring seats: the state's
- *  previous/next district, or its other Senate seat. Each arrow names its destination on hover
- *  and to screen readers; a side with no seat stays as a faded placeholder so the pair keeps its
- *  shape. Renders nothing when neither side exists (at-large districts). */
-export function SeatArrows({ prev, next, label = "Neighbouring seats" }: { prev?: SeatNavLink | null; next?: SeatNavLink | null; label?: string }) {
-  if (!prev && !next) return null;
-  const chevron = (dir: "prev" | "next") => (
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-      <path d={dir === "prev" ? "M15 5l-7 7 7 7" : "M9 5l7 7-7 7"} />
-    </svg>
-  );
-  const btn = "inline-flex h-9 w-9 items-center justify-center rounded-full";
-  const arrow = (l: SeatNavLink | null | undefined, dir: "prev" | "next") =>
-    l ? (
-      <Link prefetch={false} href={l.href} title={l.label} aria-label={`Go to ${l.label}`} className={`${btn} transition-colors hover:bg-[var(--app-tab-bg)]`} style={{ color: "var(--app-text-muted)" }}>
-        {chevron(dir)}
-      </Link>
-    ) : (
-      <span aria-hidden className={btn} style={{ color: "var(--app-text-muted)", opacity: 0.3 }}>{chevron(dir)}</span>
-    );
+/** Which of the state's two Senate seats this page is ("Seat 1" / "Seat 2"). A link to the other
+ *  seat's page when it has one; otherwise a plain label. */
+export function SeatPill({ seat, other }: { seat: 1 | 2; other: SeatNavLink | null }) {
+  if (!other) return <span className={PILL} style={NEUTRAL}>Seat {seat}</span>;
   return (
-    // A span (not <nav>) so it can sit inside the <h1>, glued to the title's last word: the
-    // arrows then wrap with that word instead of dropping onto a line of their own. With no text
-    // inside, the box's bottom edge is its baseline, so it rests on the title's baseline; the 4px
-    // nudge (relative, so line height is untouched) brings the chevrons' tips down onto it.
-    <span role="navigation" aria-label={label} className="relative top-1 ml-2 inline-flex items-center sm:ml-3" style={{ verticalAlign: "baseline", letterSpacing: 0 }}>
-      {arrow(prev, "prev")}
-      {arrow(next, "next")}
-    </span>
+    <Link prefetch={false} href={other.href} title={`Go to ${other.label}`} aria-label={`Seat ${seat}. Go to ${other.label}`} className={`${PILL} ix-lift hover:underline`} style={LINK_PILL}>
+      Seat {seat}
+    </Link>
   );
 }

@@ -11,6 +11,7 @@ const SHARED_NAMES: Record<string, { abbr: string; state: string }[]> = {
  *  one page and every link lands there, even if a re-scraped source brings the old spelling back. */
 export const SAME_PERSON: Record<string, string> = {
   "Nick Begich": "Nicholas Begich III", // AK-01: 2024 results file him as Nick Begich
+  "Michael V. Lawler": "Mike Lawler", // NY-17: his 2020 Assembly (AD-97) race. Not plain "Michael Lawler": a Maine legislator goes by that
 };
 
 /** The name a candidate's page goes by: the SAME_PERSON spelling, or the name itself. */

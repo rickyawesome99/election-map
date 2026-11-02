@@ -155,6 +155,12 @@ test("without the dev archive the preview replays the published simulated night"
   await expect(page.getByText(/65 \/ 65/)).toBeVisible();
   const senate = page.locator("section", { hasText: "Balance of power" }).locator("h3", { hasText: "Senate" }).locator("..").locator("..");
   await expect(senate).toContainText(/[1-9]\d*\/35 reporting/, { timeout: 30_000 });
+  // The night model's read of the finished counties, and a race's footnote carrying its share of it.
+  const night = page.locator("section", { hasText: "What early results say" });
+  await expect(night).toContainText("National swing");
+  await expect(night).toContainText(/counties' weight/);
+  await page.evaluate(() => { window.location.hash = "#senate-GA"; });
+  await expect(page.getByText(/against that baseline/)).toBeVisible({ timeout: 30_000 });
   expect(calls).toBe(0);
 });
 
