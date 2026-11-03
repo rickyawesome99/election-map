@@ -11,6 +11,8 @@ export const CIVIC_ATTRIBUTION = { label: "civicAPI", href: "https://civicapi.or
 
 /** Parallel requests in flight; the feed is cached at the edge, so this is politeness, not need. */
 const CONCURRENCY = 6;
+/** Retries of a failed request before the race is skipped for this pass. */
+const RETRIES = 2;
 
 export type RawCandidate = { name?: string; party?: string; votes?: number | string; percent?: number | string; winner?: boolean; incumbent?: boolean; major_candidate?: boolean };
 type RawRegion = { name?: string; type?: string; fips?: string; percent_reporting?: number | null; candidates?: RawCandidate[] };
@@ -192,13 +194,20 @@ export async function fetchRaces(priors: RacePrior[], detail: (p: RacePrior) => 
   const worker = async () => {
     while (i < queue.length && !signal?.aborted) {
       const p = queue[i++];
-      try {
-        const live = await fetchRace(p, detail(p), signal);
-        if (live) { onRace(p, live); ok++; }
-      } catch (e) {
-        if (signal?.aborted) return;
-        failed++;
-        if (process.env.NODE_ENV !== "production") console.warn(e);
+      // Under election-night load the feed answers some requests with a 502 (which the browser
+      // reports as a CORS failure, the error page carrying no CORS header); those clear on a retry.
+      for (let attempt = 0; ; attempt++) {
+        try {
+          const live = await fetchRace(p, detail(p), signal);
+          if (live) { onRace(p, live); ok++; }
+          break;
+        } catch (e) {
+          if (signal?.aborted) return;
+          if (attempt < RETRIES) { await new Promise((r) => setTimeout(r, 1500 * (attempt + 1))); continue; }
+          failed++;
+          if (process.env.NODE_ENV !== "production") console.warn(e);
+          break;
+        }
       }
     }
   };

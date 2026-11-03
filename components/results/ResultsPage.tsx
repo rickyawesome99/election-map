@@ -32,6 +32,8 @@ type ArchiveSnapshot = { file: string; fetchedAt: string; set?: string };
 const AUTO_EVERY_MS = 120_000;
 /** County detail is refetched for competitive races at most this often; the selected race every refresh. */
 const DETAIL_EVERY_MS = 5 * 60_000;
+/** A refresh pass running longer than this is presumed hung and restarted. */
+const STUCK_MS = 5 * 60_000;
 const COMPETITIVE = 15;
 /** Points kept per race in the live margin record before the older half is thinned. */
 const RACE_HISTORY_CAP = 160;
@@ -58,6 +60,7 @@ export default function ResultsPage() {
   const liveRef = useRef(new Map<number, LiveRace>());
   const detailAt = useRef(new Map<number, number>());
   const abortRef = useRef<AbortController | null>(null);
+  const passStarted = useRef(0);
   const [liveVersion, setLiveVersion] = useState(0);
   const [refreshing, setRefreshing] = useState(false);
   const [lastRefresh, setLastRefresh] = useState<number | null>(null);
@@ -109,6 +112,12 @@ export default function ResultsPage() {
   }, []);
 
   const allPriors = useMemo(() => (priors ? [...priors.senate.races, ...priors.governor.races, ...priors.house.races] : []), [priors]);
+  // Refresh order: by poll close, earliest first, so a slow pass reaches the races with votes in
+  // before the ones still voting ("00:00" is Alaska, after midnight).
+  const fetchOrder = useMemo(() => {
+    const key = (p: RacePrior) => { const [h, m] = p.pollsClose.first.split(":").map(Number); return (h < 12 ? h + 24 : h) * 60 + m; };
+    return [...allPriors].sort((a, b) => key(a) - key(b));
+  }, [allPriors]);
 
   useEffect(() => {
     if (!SHOW_REPLAY) return;
@@ -135,9 +144,14 @@ export default function ResultsPage() {
 
   const refresh = useCallback(async () => {
     if (!allPriors.length || replayRef.current != null || !feedOpenRef.current) return;
+    // A pass still running is left to finish: under election-night load one can outlast the
+    // 2-minute timer, and restarting it from the top meant the races at the end of the list
+    // (House) were never reached. Only a pass stuck for STUCK_MS is cut off.
+    if (abortRef.current && !abortRef.current.signal.aborted && Date.now() - passStarted.current < STUCK_MS) return;
     abortRef.current?.abort();
     const ctl = new AbortController();
     abortRef.current = ctl;
+    passStarted.current = Date.now();
     setRefreshing(true);
     const now = Date.now();
     const detail = (p: RacePrior) => {
@@ -146,19 +160,20 @@ export default function ResultsPage() {
       return isCompetitive(p) && now - (detailAt.current.get(p.civicId) ?? 0) > DETAIL_EVERY_MS;
     };
     let n = 0;
-    const result = await fetchRaces(allPriors, detail, (p, live) => {
+    const result = await fetchRaces(fetchOrder, detail, (p, live) => {
       const prev = liveRef.current.get(p.civicId!);
       if (live.counties) detailAt.current.set(p.civicId!, now);
       // A topline refresh keeps the county detail fetched earlier (at most DETAIL_EVERY_MS old).
       liveRef.current.set(p.civicId!, live.counties || !prev?.counties ? live : { ...live, counties: prev.counties });
-      if (++n % 40 === 0) setLiveVersion((v) => v + 1);
+      if (++n % 10 === 0) setLiveVersion((v) => v + 1);
     }, ctl.signal);
     if (ctl.signal.aborted) return;
+    abortRef.current = null;
     setFailed(result.failed);
     setLastRefresh(Date.now());
     setLiveVersion((v) => v + 1);
     setRefreshing(false);
-  }, [allPriors]);
+  }, [allPriors, fetchOrder]);
 
   // First load, then every AUTO_EVERY_MS while the tab is visible.
   useEffect(() => { if (allPriors.length && feedOpen) refresh(); }, [allPriors, refresh, feedOpen]);
