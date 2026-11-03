@@ -1,4 +1,5 @@
 "use client";
+import FinalForecastPill from "@/components/FinalForecastPill";
 import Link from "next/link";
 
 import { useMemo, useState } from "react";
@@ -76,6 +77,7 @@ export function ForecastHero({
     <>
       {/* Mobile */}
       <div className="mb-4 md:hidden">
+        <FinalForecastPill className="mb-2" />
         <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>
           {RACE_TYPE_TITLE[raceType]}
         </h1>
@@ -110,6 +112,7 @@ export function ForecastHero({
           <span className="text-sm" style={{ color: "var(--app-text-muted)" }}>
             {seatsUp} {raceType === "house" ? "districts" : "races"}
           </span>
+          <FinalForecastPill className="self-center" />
         </div>
       </div>
     </>

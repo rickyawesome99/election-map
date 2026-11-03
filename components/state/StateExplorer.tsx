@@ -1,5 +1,6 @@
 "use client";
 
+import FinalForecastPill from "@/components/FinalForecastPill";
 import { useCallback, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import type { Chamber } from "@/data/stateLegDistricts";
@@ -31,11 +32,12 @@ const partyColor = (p: string) => (p === "D" ? "var(--party-dem)" : p === "R" ? 
 // One party/incumbency tag everywhere on the page: (D), (R), (D Inc), (R Inc).
 const partyTag = (p: string, incumbent?: boolean) => `(${p}${incumbent ? " Inc" : ""})`;
 
-function SectionHead({ id, title, right, children }: { id?: string; title: string; right?: ReactNode; children?: ReactNode }) {
+function SectionHead({ id, title, right, badge, children }: { id?: string; title: string; right?: ReactNode; badge?: ReactNode; children?: ReactNode }) {
   return (
     <div id={id} className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1.5 sm:gap-3 pb-3 mb-1 scroll-mt-20" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
       <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3">
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{title}</h2>
+        {badge && <div className="self-start sm:self-center">{badge}</div>}
         {children && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{children}</span>}
       </div>
       {right && <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{right}</div>}
@@ -390,7 +392,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
 
       {/* ── 2 · On the ballot ── */}
       <section id="ballot" className="mt-6">
-        <SectionHead title={`On the ballot · ${generalElection}`} right={
+        <SectionHead title={`On the ballot · ${generalElection}`} badge={<FinalForecastPill />} right={
           <>
             {(data.governor?.kind === "race" ? 1 : 0) + senateRaces.length} statewide · {houseRaces.length} district{houseRaces.length === 1 ? "" : "s"} · {chambers.length} chamber{chambers.length === 1 ? "" : "s"}
           </>

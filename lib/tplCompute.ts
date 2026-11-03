@@ -13,7 +13,8 @@ import {
   type PastResult,
 } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
-import { candidateOffices } from "@/data/candidateOffices";
+import { candidateOffices, type CandidateOfficeRecord } from "@/data/candidateOffices";
+import { SAME_PERSON, SAME_PERSON_IN_STATE } from "@/lib/candidateSlug";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { fundraisingData, fundraisingSources, fundraisingDetails, type RaceFinanceDetail } from "@/data/fundraisingData";
@@ -1689,8 +1690,28 @@ export const WAR_RECENCY_DECAY = 0.8;
 export const WAR_RECENCY_DECAY_STATEWIDE = 0.9;
 export const recencyDecayFor = (office?: string) => (office === "S" || office === "G" || office === "P" ? WAR_RECENCY_DECAY_STATEWIDE : WAR_RECENCY_DECAY);
 
-export const warCandidateKey = (state: string, party: string, name: string) =>
-  `${state}|${party}|${name.toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim()}`;
+// One person filed under two spellings shares one key (SAME_PERSON / SAME_PERSON_IN_STATE in
+// lib/candidateSlug.ts), and accents fold to their letter ("Raúl" → "raul", not "ral"), so a 2026
+// nominee on a new ballot spelling still finds their track record (final audit 2026-11-03).
+const foldName = (name: string) => name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z ]/g, "").replace(/\s+/g, " ").trim();
+const SAME_PERSON_FOLDED = new Map<string, string>([
+  ...Object.entries(SAME_PERSON).map(([alias, name]) => [foldName(alias), foldName(name)] as [string, string]),
+  ...Object.entries(SAME_PERSON_IN_STATE).map(([k, name]) => [`${k.slice(0, 2)}|${foldName(k.slice(3))}`, foldName(name)] as [string, string]),
+]);
+const warNameKey = (state: string, folded: string) => SAME_PERSON_FOLDED.get(`${state}|${folded}`) ?? SAME_PERSON_FOLDED.get(folded) ?? folded;
+// People who ran under more than one party keep one record: the key carries this fixed label
+// whatever party a race lists. Safe because an effect is signed toward the candidate, not the
+// party (solveCandidateEffects signs by slot). User decision 2026-11-03.
+const PARTY_SWITCHERS: Record<string, string> = {
+  "FL|david jolly": "D", // FL-13 R 2016 → FL-Gov D 2026
+  "SD|brian bengs": "D", // SD-Sen D 2022 → SD-Sen independent 2026
+  "NJ|jeff van drew": "R", // NJ-02 D 2018 → R since 2020
+};
+const warKey = (state: string, party: string, folded: string) => {
+  const name = warNameKey(state, folded);
+  return `${state}|${PARTY_SWITCHERS[`${state}|${name}`] ?? party}|${name}`;
+};
+export const warCandidateKey = (state: string, party: string, name: string) => warKey(state, party, foldName(name));
 
 /** Fit recency-weighted ridge candidate effects over race residuals and fill effect/war on each row (mutates rows). */
 export interface EffectRace { r: number; year: number; R?: string; D?: string; actual?: number; inc?: "R" | "D" | null; office?: string;
@@ -1724,8 +1745,24 @@ export interface ObservablePrior {
 }
 
 /** Highest elected-office tier (1–5, see build-candidate-offices.js) a candidate had held by `year`; 0 = none known. */
+// data/candidateOffices.ts is keyed on the raw spelling (build-candidate-offices.js); re-key it
+// through warCandidateKey so every spelling of one person pools their offices.
+let _officesByKey: Map<string, CandidateOfficeRecord> | null = null;
+function officesFor(key: string): CandidateOfficeRecord | undefined {
+  if (!_officesByKey) {
+    _officesByKey = new Map();
+    for (const [raw, rec] of Object.entries(candidateOffices)) {
+      const [st, pa, nm] = raw.split("|");
+      const k = warKey(st, pa, nm);
+      const prev = _officesByKey.get(k);
+      _officesByKey.set(k, prev ? { title: prev.title ?? rec.title, offices: [...prev.offices, ...rec.offices] } : rec);
+    }
+  }
+  return _officesByKey.get(key);
+}
+
 export function priorOfficeTier(key: string, year: number): number {
-  const rec = candidateOffices[key];
+  const rec = officesFor(key);
   if (!rec) return 0;
   let best = 0;
   for (const o of rec.offices) {

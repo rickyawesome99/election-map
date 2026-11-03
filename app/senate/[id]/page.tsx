@@ -20,6 +20,8 @@ import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import FinalForecastPill from "@/components/FinalForecastPill";
+import { forecastIsFinal } from "@/lib/forecastClock";
 import { StatePill, OfficePill, HeldPill, SeatPill, PILL, type SeatNavLink } from "@/components/RaceHeroPills";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -339,6 +341,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           {isSpecialElection(race.electionType) && <SpecialBadge />}
           <HeldPill party={currentSenatorParty} />
           <SeatPill {...seatNav} />
+          <FinalForecastPill />
         </>}
         nav={<RaceRail items={SENATE_RAIL} current={senateUrlId(race.id)} label="Choose a Senate race" />}
         fitTitle={{ chars: `${race.name} U.S. Senate`.length, emPerChar: 0.58, reservePx: 0 }}
@@ -413,7 +416,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
 
           {raceHistory && (
             <section>
-              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · today's model on each day's polls`} />
+              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · ${forecastIsFinal ? "the final model" : "today's model"} on each day's polls`} />
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />

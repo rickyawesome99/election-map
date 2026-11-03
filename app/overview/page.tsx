@@ -9,6 +9,7 @@ import { calculateStateTpl } from "@/lib/tplCompute";
 import { getForecastHistory } from "@/lib/forecastHistory";
 import { pollingCardData } from "@/lib/pollingCardData";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
+import { forecastNow, FORECAST_FINAL_AT } from "@/lib/forecastClock";
 
 function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: number }) {
   return {
@@ -18,9 +19,11 @@ function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: nu
 }
 
 // "Updated" in the header = the date of the latest commit (read at build, so a deploy shows the
-// commit it was built from); the build date (in ET) if git is not available.
+// commit it was built from); the build date (in ET) if git is not available. Once the forecast is
+// final it is the lock date: later commits (results night) don't touch the forecast.
 const todayEt = () => new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
 function lastCommitDate(): string {
+  if (FORECAST_FINAL_AT) return FORECAST_FINAL_AT.toLocaleDateString("en-CA", { timeZone: "America/New_York" });
   try {
     return execSync("git log -1 --format=%cs", { stdio: ["ignore", "pipe", "ignore"] }).toString().trim() || todayEt();
   } catch {
@@ -34,7 +37,7 @@ const seatRange = (c: { meanDem: number; lo80: number; hi80: number }) => ({ mea
 // of props — the forecasts, the TPL model and the datasets behind them never reach the browser.
 export default function OverviewPage() {
   // One moment for every as-of number on the page, handed to the client components too.
-  const now = new Date();
+  const now = forecastNow();
   const gb = computeGenericBallotAverage(now);
   const approval = computeTrumpApprovalAverage(now);
   const data: OverviewData = {

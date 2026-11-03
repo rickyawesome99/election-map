@@ -1,3 +1,4 @@
+import FinalForecastPill from "@/components/FinalForecastPill";
 import { electionYear, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
@@ -132,6 +133,7 @@ export default function LegislaturesPage() {
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: PAGE_HERO_BG }}>
         <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-6`}>
+          <FinalForecastPill className="mb-2" />
           <h1 style={PAGE_TITLE_STYLE}>State Legislatures</h1>
           <div className="mt-6 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
             {/* Seats on the ballot: one bar, D | independent | R, with the halfway tick. */}

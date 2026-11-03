@@ -403,7 +403,7 @@ function buildIndex(): Map<string, CandidatePage> {
     if (existing) {
       existing.entries.push(entry);
     } else {
-      byName.set(key, { name: canonicalCandidateName(entry.name), entries: [entry] });
+      byName.set(key, { name: canonicalCandidateName(entry.name, entry.state), entries: [entry] });
     }
   }
 

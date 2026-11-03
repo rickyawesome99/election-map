@@ -1,3 +1,4 @@
+import { forecastNow } from "@/lib/forecastClock";
 import { trumpApprovalPolls, TrumpApprovalPoll } from "@/data/trumpApprovalPolls";
 
 export const APPROVE_COLOR = "#22c55e";
@@ -42,7 +43,7 @@ export type TrumpApprovalAverage = {
 };
 
 export function computeTrumpApprovalAverage(
-  asOf: Date = new Date(),
+  asOf: Date = forecastNow(),
   polls: TrumpApprovalPoll[] = trumpApprovalPolls
 ): TrumpApprovalAverage {
   const latestByPollster = new Map<string, TrumpApprovalPoll>();

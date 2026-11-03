@@ -235,7 +235,7 @@ export const FORECAST_CONSTANTS = {
   //   bias +0.5 / +0.9 / +1.35 / +2.1 (2020 and 2024 were Republican polling-miss years; 2018 and
   //   2022 want ×2+, 2024 ×1.2, 2020 <×0.8). The House response to E is year-dependent; the pooled
   //   optimum is between 1.2 and 1.4 and the trade is 2018/2022 against 2020/2024.
-  HOUSE_ENV_MULTIPLIER: 1.2,
+  HOUSE_ENV_MULTIPLIER: 1.4,
   // ── Shared national error (2026-10-23 review) ───────────────────────────────────────
   // σ_E² = NATIONAL_SIGMA_STRUCTURAL² + (|s| × √(sd(miss)² + (horizon × rms(drift))²))²
   // The second term is the generic ballot's own error (poll miss + September→November drift)

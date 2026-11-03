@@ -1,3 +1,4 @@
+import { forecastNow } from "@/lib/forecastClock";
 import { racePolls, type RacePoll } from "@/data/racePolls";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { pollsterIdOf } from "@/lib/pollsterRatings";
@@ -131,7 +132,7 @@ export function pollAgingShift(gbAt: (isoDate: string) => number | null, beta: n
 }
 
 /** The live 2026 average for a race (data/racePolls.ts), as of `asOf`. */
-export function getRacePollAverage(office: "H" | "S" | "G", stateAbbr: string, raceLabel: string, asOf: Date = new Date(), shiftFor?: (p: RacePoll) => number, houseFor?: (p: RacePoll) => number, halfLife: number = F.POLL_HALF_LIFE_DAYS[office]): RacePollAverage | null {
+export function getRacePollAverage(office: "H" | "S" | "G", stateAbbr: string, raceLabel: string, asOf: Date = forecastNow(), shiftFor?: (p: RacePoll) => number, houseFor?: (p: RacePoll) => number, halfLife: number = F.POLL_HALF_LIFE_DAYS[office]): RacePollAverage | null {
   const polls = racePolls[racePollKey(office, stateAbbr, raceLabel)];
   return polls ? computeRacePollAverage(polls, asOf, shiftFor, houseFor, halfLife) : null;
 }

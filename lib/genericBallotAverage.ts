@@ -1,3 +1,4 @@
+import { forecastNow } from "@/lib/forecastClock";
 import { genericBallotPolls, GenericBallotPoll } from "@/data/genericBallotPolls";
 
 // ── Methodology ──────────────────────────────────────────────────────────────
@@ -38,7 +39,7 @@ export type GenericBallotAverage = {
 };
 
 export function computeGenericBallotAverage(
-  asOf: Date = new Date(),
+  asOf: Date = forecastNow(),
   polls: GenericBallotPoll[] = genericBallotPolls
 ): GenericBallotAverage {
   // Only polls finished by asOf: a forecast run for a past day must not see later polls.

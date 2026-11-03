@@ -18,11 +18,14 @@ import { forecastsFor, getChamberSimulations, type ForecastedRace } from "@/lib/
 import { getNationalEnvironment } from "@/lib/tplCompute";
 import { racePollsMeta } from "@/data/racePolls";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
+import { forecastNow } from "@/lib/forecastClock";
 
 const DIR = path.join(process.cwd(), "data", "forecast-history");
 
 // The local calendar date: a snapshot taken at 11 pm belongs to that day, not to tomorrow's UTC date.
-const now = new Date();
+// Once the forecast is final, "now" is the lock instant (lib/forecastClock.ts): reruns rewrite the
+// lock day's file with the same numbers and never start a new day.
+const now = forecastNow();
 const day = [now.getFullYear(), now.getMonth() + 1, now.getDate()].map((n) => String(n).padStart(2, "0")).join("-");
 const file = path.join(DIR, `${day}.json`);
 
@@ -69,6 +72,26 @@ const snapshot = {
   chambers,
   races,
 };
+
+// --check: the final-forecast guard (`npm run check-lock`). Rebuild the snapshot and compare it with
+// the file on disk instead of writing; any moved number means the locked forecast changed.
+if (process.argv.includes("--check")) {
+  const saved = JSON.parse(fs.readFileSync(file, "utf8"));
+  const diffs: string[] = [];
+  const cmp = (label: string, a: unknown, b: unknown) => { if (JSON.stringify(a) !== JSON.stringify(b)) diffs.push(`${label}: locked ${JSON.stringify(b)} → now ${JSON.stringify(a)}`); };
+  cmp("savedAt", snapshot.savedAt, saved.savedAt);
+  cmp("environment", snapshot.environment, saved.environment);
+  cmp("inputs", snapshot.inputs, saved.inputs);
+  cmp("chambers", snapshot.chambers, saved.chambers);
+  for (const k of new Set([...Object.keys(races), ...Object.keys(saved.races)])) cmp(k, races[k], saved.races[k]);
+  if (diffs.length) {
+    console.error(`FORECAST LOCK BROKEN: ${diffs.length} difference(s) from ${path.relative(process.cwd(), file)}`);
+    for (const d of diffs.slice(0, 40)) console.error(`  ${d}`);
+    process.exit(1);
+  }
+  console.log(`Forecast lock OK: ${Object.keys(races).length} races and all chambers match ${path.relative(process.cwd(), file)}`);
+  process.exit(0);
+}
 
 // Pretty at the top, one line per race below.
 const head = JSON.stringify({ ...snapshot, races: undefined }, null, 2).replace(/\n}$/, "");

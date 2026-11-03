@@ -60,9 +60,9 @@ for (const chamber of ["senate", "governor", "house"] as const) {
 
 test("race page shows the derived probability, range and rating", async ({ page }) => {
   await page.goto("/senate/oh2");
-  // The hero stat row labels it "Win prob."; the calculation card spells it out.
-  await expect(page.getByText(/win prob/i).first()).toBeVisible();
-  await expect(page.getByText("80% Range").first()).toBeVisible();
+  // The forecast card labels it "Dem win chance" / "Rep win chance" (race-page redesign, 2026-11-01).
+  await expect(page.getByText(/win chance/i).first()).toBeVisible();
+  await expect(page.getByText(/80% range/i).first()).toBeVisible();
   await expect(page.getByText("Projected Margin").first()).toBeVisible();
   await expect(page.getByText(RATING).first()).toBeVisible();
 });

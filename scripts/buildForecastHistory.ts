@@ -20,6 +20,7 @@ import { spawn } from "node:child_process";
 import { forecastAsOf } from "@/lib/forecast";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
 import { raceHistoryKey, type ForecastHistory } from "@/lib/forecastHistory";
+import { forecastNow } from "@/lib/forecastClock";
 
 const OUT = path.join(process.cwd(), "data", "generated", "forecast-history.json");
 // The series opens once the generic-ballot average rests on this many pollsters (the same rule as
@@ -33,7 +34,7 @@ let start = "";
 for (const p of sorted) { seen.add(p.pollster); if (seen.size >= MIN_POLLSTERS) { start = p.endDate; break; } }
 if (!start) throw new Error("Not enough generic-ballot pollsters to start the series");
 
-const now = new Date();
+const now = forecastNow(); // the lock instant once the forecast is final (lib/forecastClock.ts)
 const today = [now.getFullYear(), now.getMonth() + 1, now.getDate()].map((n) => String(n).padStart(2, "0")).join("-");
 const days: string[] = [];
 for (let d = new Date(`${start}T12:00:00Z`); d.toISOString().slice(0, 10) <= today; d.setUTCDate(d.getUTCDate() + 1)) days.push(d.toISOString().slice(0, 10));

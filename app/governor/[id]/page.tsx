@@ -20,6 +20,8 @@ import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import FinalForecastPill from "@/components/FinalForecastPill";
+import { forecastIsFinal } from "@/lib/forecastClock";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -222,6 +224,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             {forecastRating}
           </span>
           <HeldPill party={currentGovernorParty} />
+          <FinalForecastPill />
         </>}
         nav={<RaceRail items={GOVERNOR_RAIL} current={race.id.toLowerCase()} label="Choose a governor's race" />}
         fitTitle={{ chars: `${race.name} Governor`.length, emPerChar: 0.62, reservePx: 0 }}
@@ -296,7 +299,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
 
           {raceHistory && (
             <section>
-              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · today's model on each day's polls`} />
+              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · ${forecastIsFinal ? "the final model" : "today's model"} on each day's polls`} />
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />

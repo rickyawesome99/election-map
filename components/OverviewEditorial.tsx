@@ -16,6 +16,8 @@ import { DARK_THEME, LIGHT_THEME, type Theme } from "./ForecastMap";
 import PollingAverageCard from "./PollingAverageCard";
 import type { PollingCardData } from "@/lib/pollingCardData";
 import SeatHistogram from "./SeatHistogram";
+import FinalForecastPill from "./FinalForecastPill";
+import { forecastIsFinal, FORECAST_FINAL_LABEL } from "@/lib/forecastClock";
 import ForecastTrend, { type ForecastTrendDay } from "./ForecastTrend";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
@@ -161,7 +163,10 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
         <div className={`${PAGE_CONTAINER} ${PAGE_HERO_TOP} pb-6 sm:pb-8`}>
           <h1 style={PAGE_TITLE_STYLE}>{electionYear} Outlook</h1>
           <p className="mt-4 text-sm sm:text-base" style={{ color: t.textMuted }}>Projected Balance of Power and National Polling · General November 3, 2026</p>
-          <p className="mt-1.5 text-xs" style={{ color: t.textVeryMuted }}>Updated {shortDate(updated)}</p>
+          <div className="mt-2.5 flex flex-wrap items-center gap-x-2.5 gap-y-1">
+            <FinalForecastPill />
+            <p className="text-xs" style={{ color: t.textVeryMuted }}>{forecastIsFinal ? FORECAST_FINAL_LABEL : `Updated ${shortDate(updated)}`}</p>
+          </div>
           {/* One row of solid tiles: the two national averages, then the three chambers. Two over
               three on phones. Every tile is a link. */}
           <div className="mt-7 grid grid-cols-6 gap-2 sm:gap-3 lg:grid-cols-5">
@@ -236,7 +241,7 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
           <section className="mt-10">
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>
               <div className="whitespace-nowrap text-[11px] font-bold uppercase tracking-[0.12em]">Forecast Over Time</div>
-              <div className="text-[11px]" style={{ color: t.textMuted }}>Today&rsquo;s model rerun on the polls available each day · <Link href="/analysis/internal-methodology#over-time" className="underline decoration-dotted underline-offset-2" prefetch={false}>how</Link></div>
+              <div className="text-[11px]" style={{ color: t.textMuted }}>{forecastIsFinal ? "The final model" : "Today\u2019s model"} rerun on the polls available each day · <Link href="/analysis/internal-methodology#over-time" className="underline decoration-dotted underline-offset-2" prefetch={false}>how</Link></div>
             </div>
             <ForecastTrend days={trend} />
           </section>

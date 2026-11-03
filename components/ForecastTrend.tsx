@@ -2,6 +2,7 @@
 
 import { useId, useState } from "react";
 import { isRealName, lastName } from "@/lib/personName";
+import { forecastIsFinal } from "@/lib/forecastClock";
 
 // The forecast over time (lib/forecastHistory.ts): one small chart per chamber, the day's number as
 // a 2px line over a background tinted by which party it favors — above the control line Democratic,
@@ -101,7 +102,7 @@ function TrendPanel({ label, dates, values, domain, line, headline, caption, axi
         </div>
       </div>
       <div className="mt-1.5 text-[11px] font-medium tabular-nums" style={{ color: "var(--app-text-muted)" }} aria-live="polite">
-        {longDate(dates[shown])}{hover == null ? " (today)" : ""} · {caption(shown)}
+        {longDate(dates[shown])}{hover == null ? (forecastIsFinal ? " (final)" : " (today)") : ""} · {caption(shown)}
       </div>
     </div>
   );
@@ -186,7 +187,7 @@ export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
         </span>
         <span className="text-[12px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
           <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{leader}</span>
-          {" · "}Projected margin · {hover == null ? "today, " : ""}{longDate(dates[shown])}
+          {" · "}Projected margin · {hover == null ? (forecastIsFinal ? "final, " : "today, ") : ""}{longDate(dates[shown])}
         </span>
       </div>
       <div className="mt-4 flex">

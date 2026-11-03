@@ -34,6 +34,10 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      # The forecast is final (lib/forecastClock.ts FORECAST_FINAL_AT): fail if anything moved it.
+      - name: Final forecast lock
+        run: npm run check-lock
+
       - name: Build
         run: npm run build
         env:

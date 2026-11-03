@@ -23,6 +23,8 @@ import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/se
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import FinalForecastPill from "@/components/FinalForecastPill";
+import { forecastIsFinal } from "@/lib/forecastClock";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
 import { RaceRail, DistrictLocatorMap, StateLocatorMap, type SwitcherDistrict, type RailItem } from "@/components/RaceLocator";
 import { ABBR_TO_FIPS } from "@/lib/fips";
@@ -241,6 +243,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             {forecastRating}
           </span>
           <HeldPill party={currentRepParty} />
+          <FinalForecastPill />
         </>}
         nav={<RaceRail items={railItems} current={race.name} label="Choose a district" />}
         map={switcherDistricts.length > 1
@@ -327,7 +330,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
           {raceHistory && (
             <section>
-              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · today's model on each day's polls`} />
+              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · ${forecastIsFinal ? "the final model" : "today's model"} on each day's polls`} />
               <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
