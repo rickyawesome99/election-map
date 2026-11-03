@@ -29,7 +29,7 @@ export const partyOf = (p: string | undefined): Party | null => (p ? PARTY_OF[p]
  *  (ME, MA, NH, VT, CT) sit beside the counties and are skipped. */
 const COUNTY_TYPES = new Set(["County", "Parish", "City", "Planning Region", "Borough", "Census Area", "Municipality", "City and Borough"]);
 // "City" is kept: Virginia has a Fairfax County and a Fairfax City, a Richmond County and a Richmond City.
-const countyKey = (n: string) => n.toLowerCase().replace(/\b(county|parish|borough|census area|municipality|planning region)\b/g, "").replace(/\bst\.?\s/g, "saint ").replace(/[^a-z]/g, "");
+const countyKey = (n: string) => n.toLowerCase().replace(/\b(county|parish|city and borough|borough|census area|municipality|planning region)\b/g, "").replace(/\bst\.?\s/g, "saint ").replace(/[^a-z]/g, "");
 /** Independent cities (Virginia's 5xx–8xx, Baltimore, St. Louis, Carson City): the priors name them
  *  bare ("Richmond", "Franklin"), the same as the county they share a name with. */
 const isCityFips = (f: string) => /^(51[5-8]\d\d|24510|29510|32510)$/.test(f);
@@ -47,6 +47,9 @@ const RI_TOWNS: Record<string, string[]> = {
 };
 const PARTS = new Map<string, { fips: string; always: boolean }>([
   ["17:chicago", { fips: "17031", always: true }],
+  // Alaska's Valdez-Cordova Census Area split into Chugach and Copper River in 2019; the priors keep it whole.
+  ["02:chugach", { fips: "02261", always: true }],
+  ["02:copperriver", { fips: "02261", always: true }],
   ...Object.entries(RI_TOWNS).flatMap(([fips, towns]) => towns.map((t) => [`44:${countyKey(t)}`, { fips, always: false }] as const)),
 ]);
 /** Feed FIPS that the priors carry under another: Shannon renamed Oglala Lakota (2015); Kalawao
@@ -150,6 +153,9 @@ export function normalizeRace(prior: RacePrior, raw: RawRace, fetchedAt = Date.n
       if (!COUNTY_TYPES.has(type)) continue;
       // Some regions come without a FIPS (Virginia's cities, a few elsewhere): match the name.
       const fips = r.fips && priorFips.has(r.fips) ? r.fips : byName(name, type);
+      // Connecticut's feed sends its planning regions beside the old counties the priors use: the
+      // same votes at another level, so an unmatched one is dropped, not carried.
+      if (!fips && type === "Planning Region") continue;
       if (fips) { if (!direct.has(fips)) direct.set(fips, { ...row, fips, type }); }
       else other.push({ ...row, fips: r.fips ?? null, type });
     }

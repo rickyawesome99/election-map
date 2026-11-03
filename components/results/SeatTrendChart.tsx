@@ -3,6 +3,7 @@
 import { useId, useMemo } from "react";
 import { Area, ComposedChart, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { SeatPoint } from "@/lib/resultsTypes";
+import { fmtTime } from "@/lib/resultsFormat";
 
 // The Recharts half of the Results page's trend charts (loaded on its own, like the Overview's
 // PollTrendChart): an 80% band, the projection as a line, a dashed reference line, and a hover
@@ -10,7 +11,6 @@ import type { SeatPoint } from "@/lib/resultsTypes";
 // dragged across the chart scrubs it. Used for a chamber's projected seats (SeatTrend) and a
 // race's projected margin (MarginTrend); the caller says how to colour and word a value.
 
-const fmtTime = (t: number) => new Date(t).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 
 type Row = SeatPoint & { band: [number, number] };
 

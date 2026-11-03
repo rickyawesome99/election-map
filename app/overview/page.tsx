@@ -18,12 +18,13 @@ function seatTotals(data: { margin: number }[], holdover: { dem: number; rep: nu
 }
 
 // "Updated" in the header = the date of the latest commit (read at build, so a deploy shows the
-// commit it was built from); the build date if git is not available.
+// commit it was built from); the build date (in ET) if git is not available.
+const todayEt = () => new Date().toLocaleDateString("en-CA", { timeZone: "America/New_York" });
 function lastCommitDate(): string {
   try {
-    return execSync("git log -1 --format=%cs", { stdio: ["ignore", "pipe", "ignore"] }).toString().trim() || new Date().toISOString().slice(0, 10);
+    return execSync("git log -1 --format=%cs", { stdio: ["ignore", "pipe", "ignore"] }).toString().trim() || todayEt();
   } catch {
-    return new Date().toISOString().slice(0, 10);
+    return todayEt();
   }
 }
 

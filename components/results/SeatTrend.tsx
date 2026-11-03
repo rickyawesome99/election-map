@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { callSideColor, fmtCall } from "@/lib/resultsFormat";
+import { callSideColor, fmtCall, fmtTime } from "@/lib/resultsFormat";
 import type { RacePrior, SeatPoint } from "@/lib/resultsTypes";
 
 // The Results page's two trend charts over the night, drawn by the shared Recharts chart
@@ -16,7 +16,6 @@ import type { RacePrior, SeatPoint } from "@/lib/resultsTypes";
 const TrendChart = dynamic(() => import("@/components/results/SeatTrendChart"), { ssr: false });
 /** The margin chart's y axis width; the time labels under it indent by the same. */
 const AXIS_WIDTH = 34;
-const fmtTime = (t: number) => new Date(t).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
 
 function Frame({ points, label, note, children, axis = false }: { points: SeatPoint[]; label: string; note: string; children: React.ReactNode; /** The chart has a y axis: time labels indented past it. */ axis?: boolean }) {
   if (points.length < 2) {

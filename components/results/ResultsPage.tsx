@@ -17,7 +17,7 @@ import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed"
 import { nightObservations, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
 import { areaSwings, fitNight, type NightFit } from "@/lib/resultsNight";
 import NightPanel from "@/components/results/NightPanel";
-import { closeMinutes, fmtClose, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
+import { closeMinutes, fmtClose, fmtDateTime, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
 
@@ -430,11 +430,11 @@ export default function ResultsPage() {
               {archiveSets.map((set) => <option key={set} value={set}>{SET_LABEL[set] ?? (set.startsWith("sim-") ? `simulated · ${set.slice(4)}` : set)}</option>)}
             </select>
           )}
-          <span>{archive.length} snapshots · {fmtTime(Date.parse(archive[0].fetchedAt))}–{fmtTime(Date.parse(archive[archive.length - 1].fetchedAt))}{activeSet?.startsWith("sim-") ? " (virtual clock, ET)" : ""}</span>
+          <span>{archive.length} snapshots · {fmtTime(Date.parse(archive[0].fetchedAt))}–{fmtTime(Date.parse(archive[archive.length - 1].fetchedAt))}{activeSet?.startsWith("sim-") ? " (virtual clock)" : ""}</span>
           <button onClick={() => startReplay((replay ?? 0) - 1)} disabled={replay != null && replay <= 0} className="rounded px-2 py-0.5 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Previous snapshot">◀</button>
           <input type="range" min={0} max={archive.length - 1} value={replay ?? 0} onChange={(e) => startReplay(Number(e.target.value))} className="w-56 sm:w-80" aria-label="Snapshot" />
           <button onClick={() => startReplay((replay ?? -1) + 1)} disabled={replay != null && replay >= archive.length - 1} className="rounded px-2 py-0.5 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Next snapshot">▶</button>
-          <span className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{replay != null ? `${replay + 1} / ${archive.length} · ${new Date(archive[replay].fetchedAt).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}` : "live"}{replayLoading ? " · loading…" : ""}</span>
+          <span className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{replay != null ? `${replay + 1} / ${archive.length} · ${fmtDateTime(Date.parse(archive[replay].fetchedAt))}` : "live"}{replayLoading ? " · loading…" : ""}</span>
           {replay == null && <button onClick={() => startReplay(0)} className="underline underline-offset-2">Start from the first snapshot</button>}
         </div>
       )}

@@ -56,7 +56,10 @@ export function closeMinutes(hhmm: string): number {
   return ((h < 12 ? h + 24 : h) - 12) * 60 + m;
 }
 
-export const fmtTime = (ms: number | null) => (ms ? new Date(ms).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }) : "—");
+/** A clock time in Eastern Time, wherever the viewer is: "9:42 PM ET". */
+export const fmtTime = (ms: number | null) => (ms ? `${new Date(ms).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: "America/New_York" })} ET` : "—");
+/** The same with the date: "Nov 3, 9:42 PM ET". */
+export const fmtDateTime = (ms: number) => `${new Date(ms).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York" })} ET`;
 
 /** The hash a race's detail section answers to. */
 export const raceHash = (p: Pick<RacePrior, "office" | "id">) => `${p.office}-${p.id}`;
