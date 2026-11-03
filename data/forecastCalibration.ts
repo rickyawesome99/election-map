@@ -42,8 +42,8 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 411,
       "E": -4.63,
-      "mae": 7.04,
-      "bias": -3.22,
+      "mae": 6.87,
+      "bias": -2.34,
       "r": 0.96
     },
     {
@@ -69,8 +69,8 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 419,
       "E": -3.09,
-      "mae": 7.4,
-      "bias": 2.43,
+      "mae": 7.52,
+      "bias": 2.86,
       "r": 0.96
     },
     {
@@ -97,7 +97,7 @@ export const FORECAST_CALIBRATION = {
       "n": 209,
       "E": 0.27,
       "mae": 4.56,
-      "bias": 1.23,
+      "bias": 1.19,
       "r": 0.98
     },
     {
@@ -123,8 +123,8 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 245,
       "E": -0.26,
-      "mae": 4.47,
-      "bias": 2.85,
+      "mae": 4.49,
+      "bias": 2.89,
       "r": 0.99
     }
   ],
@@ -160,58 +160,58 @@ export const FORECAST_CALIBRATION = {
     {
       "office": "H",
       "n": 1284,
-      "mae": 6.26,
-      "bias": 0.51,
-      "meanAbsYearBias": 2.43,
-      "withinRsd": 6.61,
-      "nationalSd": 2.41,
+      "mae": 6.25,
+      "bias": 0.93,
+      "meanAbsYearBias": 2.32,
+      "withinRsd": 6.59,
+      "nationalSd": 2.13,
       "liveRaceSigma": 5.5,
-      "cover80": 0.728,
-      "brier": 0.04,
+      "cover80": 0.74,
+      "brier": 0.039,
       "brierCoinFlip": 0.25,
-      "calledRight": 0.95
+      "calledRight": 0.949
     }
   ],
   "calibration": [
     {
       "lo": 0,
       "hi": 0.05,
-      "n": 568,
-      "meanP": 0.007,
-      "demWon": 0.019
+      "n": 561,
+      "meanP": 0.008,
+      "demWon": 0.02
     },
     {
       "lo": 0.05,
       "hi": 0.25,
-      "n": 122,
-      "meanP": 0.131,
-      "demWon": 0.164
+      "n": 121,
+      "meanP": 0.133,
+      "demWon": 0.132
     },
     {
       "lo": 0.25,
       "hi": 0.5,
-      "n": 50,
-      "meanP": 0.38,
-      "demWon": 0.34
+      "n": 53,
+      "meanP": 0.372,
+      "demWon": 0.358
     },
     {
       "lo": 0.5,
       "hi": 0.75,
       "n": 66,
       "meanP": 0.631,
-      "demWon": 0.773
+      "demWon": 0.727
     },
     {
       "lo": 0.75,
       "hi": 0.95,
-      "n": 83,
-      "meanP": 0.865,
-      "demWon": 0.843
+      "n": 87,
+      "meanP": 0.861,
+      "demWon": 0.851
     },
     {
       "lo": 0.95,
       "hi": 1,
-      "n": 622,
+      "n": 623,
       "meanP": 0.993,
       "demWon": 0.99
     }
@@ -222,7 +222,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 4.91,
         "G": 8.84,
-        "H": 6.26
+        "H": 6.25
       }
     },
     {
@@ -230,7 +230,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 4.94,
         "G": 10.27,
-        "H": 6.36
+        "H": 6.35
       }
     },
     {
@@ -238,7 +238,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.55,
         "G": 9.32,
-        "H": 6.6
+        "H": 6.61
       }
     },
     {
@@ -246,7 +246,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.93,
         "G": 9.72,
-        "H": 6.86
+        "H": 6.84
       }
     },
     {
@@ -254,7 +254,7 @@ export const FORECAST_CALIBRATION = {
       "mae": {
         "S": 5.4,
         "G": 9.02,
-        "H": 6.89
+        "H": 6.91
       }
     },
     {
@@ -292,9 +292,9 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "polled": 297,
       "all": 1284,
-      "maeModel": 6.46,
+      "maeModel": 6.33,
       "maePoll": 6.03,
-      "maeBlend": 5.19,
+      "maeBlend": 5.13,
       "meanW": 0.32
     },
     {
@@ -322,9 +322,9 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "polled": 352,
       "all": 1284,
-      "maeModel": 6.19,
+      "maeModel": 6.07,
       "maePoll": 6.22,
-      "maeBlend": 4.85,
+      "maeBlend": 4.81,
       "meanW": 0.38
     },
     {
@@ -352,9 +352,9 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "polled": 381,
       "all": 1284,
-      "maeModel": 6.03,
+      "maeModel": 5.92,
       "maePoll": 5.89,
-      "maeBlend": 4.64,
+      "maeBlend": 4.62,
       "meanW": 0.39
     }
   ],
@@ -395,13 +395,13 @@ export const FORECAST_CALIBRATION = {
       "n": 1284,
       "polled": 203,
       "maeModel": 6.32,
-      "mae": 6.18,
-      "biasModel": 0.44,
-      "bias": 0.49,
-      "nationalSd": 2.5,
-      "cover80": 0.728,
+      "mae": 6.19,
+      "biasModel": 0.85,
+      "bias": 0.88,
+      "nationalSd": 2.36,
+      "cover80": 0.739,
       "brier": 0.039,
-      "calledRight": 0.952,
+      "calledRight": 0.95,
       "meanW": 0.05
     },
     {
@@ -439,13 +439,13 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 231,
-      "maeModel": 6.36,
-      "mae": 6.16,
-      "biasModel": 0.24,
-      "bias": 0.29,
-      "nationalSd": 2.72,
-      "cover80": 0.727,
-      "brier": 0.039,
+      "maeModel": 6.35,
+      "mae": 6.15,
+      "biasModel": 0.6,
+      "bias": 0.64,
+      "nationalSd": 2.57,
+      "cover80": 0.738,
+      "brier": 0.038,
       "calledRight": 0.949,
       "meanW": 0.05
     },
@@ -484,14 +484,14 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 251,
-      "maeModel": 6.32,
+      "maeModel": 6.31,
       "mae": 6.08,
-      "biasModel": 0.47,
-      "bias": 0.55,
-      "nationalSd": 2.53,
-      "cover80": 0.737,
-      "brier": 0.037,
-      "calledRight": 0.952,
+      "biasModel": 0.88,
+      "bias": 0.94,
+      "nationalSd": 2.33,
+      "cover80": 0.743,
+      "brier": 0.036,
+      "calledRight": 0.954,
       "meanW": 0.06
     },
     {
@@ -529,14 +529,14 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 282,
-      "maeModel": 6.29,
+      "maeModel": 6.28,
       "mae": 6.04,
-      "biasModel": 0.49,
-      "bias": 0.58,
-      "nationalSd": 2.44,
-      "cover80": 0.731,
+      "biasModel": 0.91,
+      "bias": 0.96,
+      "nationalSd": 2.22,
+      "cover80": 0.74,
       "brier": 0.036,
-      "calledRight": 0.952,
+      "calledRight": 0.956,
       "meanW": 0.07
     },
     {
@@ -574,14 +574,14 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 300,
-      "maeModel": 6.29,
+      "maeModel": 6.27,
       "mae": 5.98,
-      "biasModel": 0.46,
-      "bias": 0.61,
-      "nationalSd": 2.43,
-      "cover80": 0.728,
+      "biasModel": 0.87,
+      "bias": 0.98,
+      "nationalSd": 2.19,
+      "cover80": 0.74,
       "brier": 0.035,
-      "calledRight": 0.952,
+      "calledRight": 0.955,
       "meanW": 0.08
     },
     {
@@ -620,13 +620,13 @@ export const FORECAST_CALIBRATION = {
       "n": 1284,
       "polled": 311,
       "maeModel": 6.23,
-      "mae": 5.91,
-      "biasModel": 0.61,
-      "bias": 0.79,
-      "nationalSd": 2.11,
-      "cover80": 0.741,
-      "brier": 0.034,
-      "calledRight": 0.952,
+      "mae": 5.93,
+      "biasModel": 1.05,
+      "bias": 1.19,
+      "nationalSd": 1.87,
+      "cover80": 0.743,
+      "brier": 0.033,
+      "calledRight": 0.956,
       "meanW": 0.08
     },
     {
@@ -665,13 +665,13 @@ export const FORECAST_CALIBRATION = {
       "n": 1284,
       "polled": 323,
       "maeModel": 6.23,
-      "mae": 5.9,
-      "biasModel": 0.62,
-      "bias": 0.8,
-      "nationalSd": 2.1,
-      "cover80": 0.74,
+      "mae": 5.92,
+      "biasModel": 1.06,
+      "bias": 1.19,
+      "nationalSd": 1.86,
+      "cover80": 0.741,
       "brier": 0.033,
-      "calledRight": 0.951,
+      "calledRight": 0.953,
       "meanW": 0.09
     },
     {
@@ -709,14 +709,14 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 338,
-      "maeModel": 6.26,
-      "mae": 5.95,
-      "biasModel": 0.39,
-      "bias": 0.56,
-      "nationalSd": 2.37,
-      "cover80": 0.729,
+      "maeModel": 6.24,
+      "mae": 5.94,
+      "biasModel": 0.79,
+      "bias": 0.92,
+      "nationalSd": 2.16,
+      "cover80": 0.736,
       "brier": 0.035,
-      "calledRight": 0.952,
+      "calledRight": 0.949,
       "meanW": 0.1
     },
     {
@@ -754,14 +754,14 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 353,
-      "maeModel": 6.29,
-      "mae": 5.95,
-      "biasModel": 0.19,
-      "bias": 0.39,
-      "nationalSd": 2.49,
-      "cover80": 0.724,
-      "brier": 0.036,
-      "calledRight": 0.952,
+      "maeModel": 6.27,
+      "mae": 5.94,
+      "biasModel": 0.54,
+      "bias": 0.7,
+      "nationalSd": 2.32,
+      "cover80": 0.729,
+      "brier": 0.035,
+      "calledRight": 0.95,
       "meanW": 0.1
     },
     {
@@ -799,12 +799,12 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 360,
-      "maeModel": 6.33,
+      "maeModel": 6.31,
       "mae": 5.97,
-      "biasModel": 0.06,
-      "bias": 0.27,
-      "nationalSd": 2.64,
-      "cover80": 0.719,
+      "biasModel": 0.4,
+      "bias": 0.56,
+      "nationalSd": 2.52,
+      "cover80": 0.727,
       "brier": 0.036,
       "calledRight": 0.951,
       "meanW": 0.11
@@ -845,13 +845,13 @@ export const FORECAST_CALIBRATION = {
       "n": 1284,
       "polled": 380,
       "maeModel": 6.32,
-      "mae": 5.94,
-      "biasModel": 0.15,
-      "bias": 0.37,
-      "nationalSd": 2.53,
-      "cover80": 0.726,
+      "mae": 5.96,
+      "biasModel": 0.5,
+      "bias": 0.67,
+      "nationalSd": 2.46,
+      "cover80": 0.73,
       "brier": 0.035,
-      "calledRight": 0.952,
+      "calledRight": 0.951,
       "meanW": 0.12
     },
     {
@@ -889,13 +889,13 @@ export const FORECAST_CALIBRATION = {
       "office": "H",
       "n": 1284,
       "polled": 387,
-      "maeModel": 6.34,
+      "maeModel": 6.33,
       "mae": 5.93,
-      "biasModel": -0.03,
-      "bias": 0.2,
-      "nationalSd": 2.63,
-      "cover80": 0.721,
-      "brier": 0.035,
+      "biasModel": 0.28,
+      "bias": 0.47,
+      "nationalSd": 2.54,
+      "cover80": 0.729,
+      "brier": 0.034,
       "calledRight": 0.952,
       "meanW": 0.12
     }

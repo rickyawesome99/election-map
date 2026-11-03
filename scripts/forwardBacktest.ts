@@ -100,8 +100,8 @@ const HORIZON_POLLRULES = argv.includes("--horizon-pollrules");
 const HORIZON_COMPINC = argv.includes("--horizon-compinc");
 const halfLifeOf = (office: "H" | "S" | "G") => halfLifeOverride ?? F.POLL_HALF_LIFE_DAYS[office];
 const NO_PARTISAN = argv.includes("--no-partisan");
-// --no-house-scale: score House races on the E scale (the pre-2026-11-02 rule) instead of the House-vote scale.
-const HOUSE_SCALE = F.HOUSE_ENV_ON_VOTE_SCALE && !argv.includes("--no-house-scale");
+// --house-lambda N: the House environment multiplier (default: the live HOUSE_ENV_MULTIPLIER; "vote" = 1/s, the House-vote scale).
+const HOUSE_LAMBDA_ARG = argOf("--house-lambda");
 // --no-poll-shade: blend race polls at face value (the pre-2026-11-03 rule) instead of shaded by half the office's historical miss.
 const POLL_SHADE = !argv.includes("--no-poll-shade");
 const pollShade = (office: "S" | "G" | "H") => (POLL_SHADE ? F.POLL_MISS_SHRINK * F.POLL_MISS_HISTORICAL[office] : 0);
@@ -556,11 +556,11 @@ function sigmaE(exclude: number): number {
 function sigmaEFor(office: "S" | "G" | "H", exclude: number, hf = 1): number {
   const m = structModel(exclude);
   const gbErr = Math.sqrt(m.sdMiss ** 2 + (hf * m.sdDrift) ** 2);
-  return Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, (office === "H" && HOUSE_SCALE ? 1 : Math.abs(m.s)) * gbErr);
+  return Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, (office === "H" ? houseLambda(exclude) : 1) * Math.abs(m.s) * gbErr);
 }
-// E-scale → office scale: House races take E_hat / s (the House-vote swing itself) under HOUSE_SCALE —
-// mirrors envScaleFor() in lib/tplCompute.ts, with s fitted without the target year.
-const envScale = (x: { office: "S" | "G" | "H"; year: number }) => (x.office === "H" && HOUSE_SCALE ? 1 / Math.abs(structModel(x.year).s) : 1);
+// The House environment multiplier — mirrors envScaleFor() in lib/tplCompute.ts; "vote" = 1/s with s fitted without the target year.
+const houseLambda = (Y: number) => (HOUSE_LAMBDA_ARG === "vote" ? 1 / Math.abs(structModel(Y).s) : HOUSE_LAMBDA_ARG != null ? Number(HOUSE_LAMBDA_ARG) : F.HOUSE_ENV_MULTIPLIER);
+const envScale = (x: { office: "S" | "G" | "H"; year: number }) => (x.office === "H" ? houseLambda(x.year) : 1);
 function envEstimate(mode: EnvMode, Y: number): number | null {
   const h = envHistory[Y];
   if (mode === "fitted") return fitUpTo(Y).E[Y] ?? null;

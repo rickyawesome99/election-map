@@ -224,13 +224,18 @@ export const FORECAST_CONSTANTS = {
   // ≈1 in 2024, ≈2+ in 2018 and 2022 — and the struct-mode pooled MAE is flat (4.56 → 4.60)
   // because the test years' E_hat sat near zero; 2018 (n 6) improves 7.7 → 5.9, 2020 (n 5)
   // worsens 5.1 → 6.8. Adopted on the aggregate argument (user decision 2026-11-02).
-  // REVERTED 2026-11-03 once the backtest scored 2018/2020 House races on the lines of the day
-  // (411 + 419 races, --house-vintage): House margins moved about one-for-one with the fitted E in
-  // 2018 (oracle-E bias −0.2 at ×1, +4.6 at ×1.75), and the live blend one day out over all 1,284
-  // House races ran R+1.0 biased with the scale against R+0.2 without it (MAE 6.00 vs 5.94). The
-  // aggregate argument fails in practice because district leans are anchored on presidential
-  // margins, which already carry part of the House swing. The machinery stays for the harness.
-  HOUSE_ENV_ON_VOTE_SCALE: false,
+  // 2026-11-03: generalized to a numeric multiplier HOUSE_ENV_MULTIPLIER on the House environment
+  // term (1 = the shared E scale; 1/s = the House-vote scale). The House national error scales with
+  // it: σ_E,House = √(NATIONAL_SIGMA_STRUCTURAL² + (λ_H × |s| × GB error)²). First 411-race 2018 test
+  // (this morning) was misread — its λ column sat on top of the 1.77 switch — and the switch was
+  // turned off on that misreading; the clean sweep (--lambda with the switch off, imputed basis):
+  //   oracle E, 2018: bias −4.2 at ×1, −1.6 at ×1.75, +0.2 at ×2.25 (MAE 7.31 / 6.79 / 6.85);
+  //   oracle E, pooled 1,284 races: MAE 6.20 at ×1, 6.14 at ×1.4, 6.16 at ×1.75, bias −0.9 / −0.6 / −0.4;
+  //   live rule (struct E_hat), pooled: MAE 6.26 at ×1, 6.25 at ×1.2, 6.27 at ×1.4, 6.38 at ×1.75,
+  //   bias +0.5 / +0.9 / +1.35 / +2.1 (2020 and 2024 were Republican polling-miss years; 2018 and
+  //   2022 want ×2+, 2024 ×1.2, 2020 <×0.8). The House response to E is year-dependent; the pooled
+  //   optimum is between 1.2 and 1.4 and the trade is 2018/2022 against 2020/2024.
+  HOUSE_ENV_MULTIPLIER: 1.2,
   // ── Shared national error (2026-10-23 review) ───────────────────────────────────────
   // σ_E² = NATIONAL_SIGMA_STRUCTURAL² + (|s| × √(sd(miss)² + (horizon × rms(drift))²))²
   // The second term is the generic ballot's own error (poll miss + September→November drift)

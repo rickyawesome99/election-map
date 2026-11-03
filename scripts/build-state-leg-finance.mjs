@@ -41,18 +41,40 @@ function add(abbr, cycle, chamber, district, record, source, through) {
 }
 
 // Transparency USA's 2026 crawl froze in mid-October (the site went behind a Cloudflare challenge),
-// so for the 2026 cycle a district the state's own portal file covers takes the portal's figures;
-// TU keeps only the districts the portal could not place.
+// so for the 2026 cycle a district takes the state's own portal figures only when the portal has
+// every TU candidate with money there (same surname) at no less than PORTAL_MIN_RATIO of the TU
+// total: money raised to date cannot shrink, so a lower portal figure means the name match picked
+// the wrong committee (NY: John Liu $846k on TU, $1,000 on a stray portal filer). Otherwise TU keeps
+// the whole district (one race, one source).
 const stDir = `${SRC}/state`;
 const PORTAL_FIRST_CYCLES = new Set([2026]);
-const portalFirst = new Set();
+const PORTAL_MIN_RATIO = 0.9;
+const surname = (s) => (s || "").toLowerCase().replace(/[^a-z\s-]/g, " ").split(/\s+/).filter((p) => p && !["jr", "sr", "ii", "iii", "iv"].includes(p)).pop() ?? "";
+const portalDistricts = new Map();
 for (const file of existsSync(stDir) ? readdirSync(stDir).filter((f) => /^[A-Z]{2}-\d{4}\.json$/.test(f)) : []) {
   const parsed = JSON.parse(readFileSync(`${stDir}/${file}`, "utf8"));
   if (!PORTAL_FIRST_CYCLES.has(Number(parsed.cycle))) continue;
   for (const chamber of ["house", "senate"]) {
-    for (const district of Object.keys(parsed[chamber] ?? {})) portalFirst.add(`${parsed.state}-${parsed.cycle}-${chamber}-${district}`);
+    for (const [district, cands] of Object.entries(parsed[chamber] ?? {})) {
+      const bySurname = new Map();
+      for (const c of cands) if (c.contributions != null) { const k = surname(c.candidate ?? c.name); bySurname.set(k, (bySurname.get(k) ?? 0) + c.contributions); }
+      portalDistricts.set(`${parsed.state}-${parsed.cycle}-${chamber}-${district}`, bySurname);
+    }
   }
 }
+// Decided per district over all its TU races (WA House runs two posts per district as separate races).
+const generalOf = (race) => race.elections.find((e) => /^general/i.test(e.label));
+const portalFirstFor = (abbr, cycle, races) => {
+  const keep = new Set(), drop = new Set();
+  for (const race of races) {
+    if (!race.district) continue;
+    const key = `${race.chamber}-${race.district}`;
+    const portal = portalDistricts.get(`${abbr}-${cycle}-${key}`);
+    const ok = !!portal && (generalOf(race)?.candidates ?? []).every((c) => c.contributions == null || (portal.get(surname(c.name)) ?? -1) >= PORTAL_MIN_RATIO * c.contributions);
+    (ok ? keep : drop).add(key);
+  }
+  return new Set([...keep].filter((k) => !drop.has(k)));
+};
 
 // Transparency USA
 const tuDir = `${SRC}/tu`;
@@ -60,11 +82,12 @@ for (const file of existsSync(tuDir) ? readdirSync(tuDir).filter((f) => /^[A-Z]{
   const parsed = JSON.parse(readFileSync(`${tuDir}/${file}`, "utf8"));
   const { state: abbr, cycle } = parsed;
   const seen = new Set();
+  const portalFirst = portalFirstFor(abbr, cycle, parsed.races);
   for (const race of parsed.races) {
     if (!race.district) continue;
-    if (portalFirst.has(`${abbr}-${cycle}-${race.chamber}-${race.district}`)) continue;
-    const general = race.elections.find((e) => /^general/i.test(e.label));
+    const general = generalOf(race);
     if (!general) continue;
+    if (portalFirst.has(`${race.chamber}-${race.district}`)) continue;
     for (const c of general.candidates) {
       add(abbr, cycle, race.chamber, race.district, {
         name: c.name, party: PARTY(c.party), partyLabel: c.party, incumbent: !!c.incumbent,

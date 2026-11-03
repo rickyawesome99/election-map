@@ -1312,8 +1312,8 @@ export function raceMoneyTerm(race: ProjectedMarginInput): RaceMoneyTerm {
 //   E_hat   = c + s × PV_hat
 //   σ_E     = sqrt( NATIONAL_SIGMA_STRUCTURAL² + (|s| × sqrt(sd(miss)² + (horizon × sd(drift))²))² )
 //   race environment term = β*(state) × E_hat                      (Senate, Governor)
-//                         = β*(state) × E_hat / s = β* × (PV_hat − pv0)   (House, HOUSE_ENV_ON_VOTE_SCALE)
-//   σ_E,House = sqrt( NATIONAL_SIGMA_STRUCTURAL² + sd(miss)² + (horizon × sd(drift))² )  (vote scale, not × s)
+//                         = β*(state) × E_hat × HOUSE_ENV_MULTIPLIER   (House; 1/s = the House-vote scale)
+//   σ_E,House = sqrt( NATIONAL_SIGMA_STRUCTURAL² + (HOUSE_ENV_MULTIPLIER × |s| × GB error)² )
 // The structural part of σ_E (2026-10-23) is the shared error the forecast carries even with
 // the House vote known — see the constant's comment in data/tplModelData.ts.
 
@@ -1357,7 +1357,7 @@ export interface NationalEnvironment {
   pvHat: number;          // GB + shrunk historical miss
   eHat: number;           // on the model's E scale — the number β* multiplies
   sigmaE: number;         // shared national error, E scale
-  sigmaEHouse: number;    // the same error on the House-vote scale (HOUSE_ENV_ON_VOTE_SCALE; = sigmaE when off)
+  sigmaEHouse: number;    // the same error with the generic-ballot part × HOUSE_ENV_MULTIPLIER (= sigmaE at 1)
   daysToElection: number;
   horizon: number;        // days to election / mid-September horizon, capped at 1.5
 }
@@ -1375,17 +1375,15 @@ export function getNationalEnvironment(asOf: Date = forecastNow()): NationalEnvi
   const horizon = Math.min(1.5, daysToElection / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
   const sigmaPv = Math.sqrt(m.sdMiss ** 2 + (horizon * m.sdDrift) ** 2);
   const sigmaE = Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * sigmaPv);
-  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE, sigmaEHouse: F.HOUSE_ENV_ON_VOTE_SCALE ? Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, sigmaPv) : sigmaE, daysToElection, horizon };
+  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE, sigmaEHouse: Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, F.HOUSE_ENV_MULTIPLIER * Math.abs(m.s) * sigmaPv), daysToElection, horizon };
   nationalEnvironmentCache.set(day, env);
   return env;
 }
 
-// Scale from the E scale to an office's own: 1 for Senate and Governor; for the House, with
-// HOUSE_ENV_ON_VOTE_SCALE, 1/s so the race feels the House-vote swing itself (E_hat / s = PV_hat − pv0).
+// Scale on the environment term by office: 1 for Senate and Governor; HOUSE_ENV_MULTIPLIER for the
+// House (1 = the shared E scale; 1/s would be the House-vote swing itself).
 export function envScaleFor(office?: "H" | "S" | "G"): number {
-  if (office !== "H" || !F.HOUSE_ENV_ON_VOTE_SCALE) return 1;
-  const s = Math.abs(getEnvironmentModel().s);
-  return s > 0 ? 1 / s : 1;
+  return office === "H" ? F.HOUSE_ENV_MULTIPLIER : 1;
 }
 
 // The shared national error an office's races carry: σ_E on the E scale, or the House-vote scale for the House.

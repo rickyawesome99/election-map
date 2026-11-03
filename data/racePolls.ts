@@ -20,7 +20,7 @@ export type RacePoll = {
 
 // Shown on the overview ("Race polls through … · checked …"). checked = last Wikipedia scrape
 // (scripts/fetch-race-polls.py), newestPollEnd = latest field end date among the emitted polls.
-export const racePollsMeta = {"checked":"2026-11-02","newestPollEnd":"2026-11-02","polls":1460,"races":177};
+export const racePollsMeta = {"checked":"2026-11-03","newestPollEnd":"2026-11-02","polls":1472,"races":177};
 
 export const racePolls: Record<string, RacePoll[]> = {
   "G:AK:Governor": [
@@ -30,6 +30,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"Data for Progress","partisan":"D","startDate":"2026-10-08","endDate":"2026-10-16","sample":694,"population":"LV","dem":51.5,"rep":48.5,"diff":-3},
     {"pollster":"Alaska Survey Research","partisan":null,"startDate":"2026-10-15","endDate":"2026-10-18","sample":1568,"population":"LV","dem":55,"rep":45,"diff":-10},
     {"pollster":"Alaska Survey Research","partisan":null,"startDate":"2026-10-23","endDate":"2026-10-25","sample":1068,"population":"LV","dem":53,"rep":47,"diff":-6},
+    {"pollster":"New York Times/Siena University","partisan":null,"startDate":"2026-10-23","endDate":"2026-10-30","sample":610,"population":"LV","dem":54,"rep":46,"diff":-8},
   ],
   "G:AL:Governor": [
     {"pollster":"yes. every kid.","partisan":null,"startDate":"2026-07-08","endDate":"2026-07-11","sample":601,"population":"LV","dem":41,"rep":49,"diff":8},
@@ -513,6 +514,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"YouGov","partisan":null,"startDate":"2026-10-26","endDate":"2026-10-29","sample":2090,"population":"LV","dem":52,"rep":46,"diff":-6},
     {"pollster":"InsiderAdvantage","partisan":"R","startDate":"2026-10-29","endDate":"2026-10-30","sample":1200,"population":"LV","dem":49,"rep":46,"diff":-3},
     {"pollster":"ActiVote","partisan":null,"startDate":"2026-10-16","endDate":"2026-10-31","sample":400,"population":"LV","dem":51,"rep":49,"diff":-2},
+    {"pollster":"Rasmussen Reports","partisan":"R","startDate":"2026-10-27","endDate":"2026-10-31","sample":1119,"population":"LV","dem":49,"rep":45,"diff":-4},
     {"pollster":"Emerson College","partisan":null,"startDate":"2026-10-31","endDate":"2026-11-01","sample":930,"population":"LV","dem":48,"rep":48,"diff":0},
     {"pollster":"Research Co.","partisan":null,"startDate":"2026-10-30","endDate":"2026-11-01","sample":450,"population":"LV","dem":48,"rep":42,"diff":-6},
     {"pollster":"AtlasIntel","partisan":null,"startDate":"2026-10-28","endDate":"2026-11-01","sample":1801,"population":"LV","dem":52,"rep":44,"diff":-8},
@@ -577,6 +579,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"The Citadel","partisan":null,"startDate":"2026-10-14","endDate":"2026-10-25","sample":890,"population":"LV","dem":31,"rep":42,"diff":11},
     {"pollster":"New York Times/Siena University","partisan":null,"startDate":"2026-10-19","endDate":"2026-10-26","sample":707,"population":"LV","dem":44,"rep":51,"diff":7},
     {"pollster":"Resonance Media Services","partisan":"R","startDate":"2026-10-30","endDate":"2026-10-30","sample":600,"population":"LV","dem":42,"rep":51,"diff":9},
+    {"pollster":"Rasmussen Reports","partisan":"R","startDate":"2026-10-27","endDate":"2026-10-31","sample":1028,"population":"LV","dem":43,"rep":51,"diff":8},
     {"pollster":"Trafalgar Group","partisan":"R","startDate":"2026-10-31","endDate":"2026-11-01","sample":1091,"population":"LV","dem":39,"rep":54,"diff":15},
   ],
   "G:SD:Governor": [
@@ -589,6 +592,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"TargetSmart","partisan":null,"startDate":"2026-09-09","endDate":"2026-09-12","sample":600,"population":"LV","dem":36,"rep":45,"diff":9},
     {"pollster":"Spry Strategies","partisan":"R","startDate":"2026-10-10","endDate":"2026-10-15","sample":635,"population":"LV","dem":32,"rep":44,"diff":12},
     {"pollster":"GOTV Polling","partisan":null,"startDate":"2026-10-25","endDate":"2026-10-26","sample":1196,"population":null,"dem":30,"rep":35,"diff":5},
+    {"pollster":"Targoz Market Research","partisan":null,"startDate":"2026-10-24","endDate":"2026-11-02","sample":718,"population":"LV","dem":35,"rep":54,"diff":19},
   ],
   "G:TX:Governor": [
     {"pollster":"Emerson College","partisan":null,"startDate":"2026-01-10","endDate":"2026-01-12","sample":1165,"population":"RV","dem":42,"rep":50,"diff":8},
@@ -688,6 +692,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"New York Times/Siena University","partisan":null,"startDate":"2026-09-24","endDate":"2026-10-01","sample":504,"population":"LV","dem":47,"rep":53,"diff":6},
     {"pollster":"Alaska Survey Research","partisan":null,"startDate":"2026-10-01","endDate":"2026-10-03","sample":1512,"population":"LV","dem":47.3,"rep":52.7,"diff":5.4},
     {"pollster":"Data for Progress","partisan":"D","startDate":"2026-10-08","endDate":"2026-10-16","sample":694,"population":"LV","dem":49.5,"rep":50,"diff":0.5},
+    {"pollster":"New York Times/Siena University","partisan":null,"startDate":"2026-10-23","endDate":"2026-10-30","sample":610,"population":"LV","dem":48,"rep":52,"diff":4},
   ],
   "H:AL:House AL-02": [
     {"pollster":"Impact Research","partisan":"D","startDate":"2026-06-22","endDate":"2026-06-25","sample":400,"population":"LV","dem":44,"rep":45,"diff":1},
@@ -875,6 +880,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-09-17","endDate":"2026-09-21","sample":627,"population":"LV","dem":51,"rep":45,"diff":-6},
     {"pollster":"Tulchin Research","partisan":"D","startDate":"2026-09-27","endDate":"2026-09-30","sample":500,"population":"LV","dem":50,"rep":48,"diff":-2},
     {"pollster":"Tulchin Research","partisan":"D","startDate":"2026-10-12","endDate":"2026-10-14","sample":500,"population":"LV","dem":50,"rep":46,"diff":-4},
+    {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-10-27","endDate":"2026-10-31","sample":790,"population":"LV","dem":47,"rep":52,"diff":5},
   ],
   "H:MI:House MI-04": [
     {"pollster":"Ragnar Research Partners","partisan":"R","startDate":"2026-03-12","endDate":"2026-03-14","sample":400,"population":"LV","dem":42,"rep":48,"diff":6},
@@ -972,6 +978,7 @@ export const racePolls: Record<string, RacePoll[]> = {
   "H:NH:House NH-01": [
     {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-09-17","endDate":"2026-09-21","sample":711,"population":"LV","dem":46,"rep":42,"diff":-4},
     {"pollster":"Saint Anselm College","partisan":null,"startDate":"2026-10-19","endDate":"2026-10-20","sample":861,"population":"LV","dem":46,"rep":42,"diff":-4},
+    {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-10-27","endDate":"2026-10-31","sample":1020,"population":"LV","dem":56,"rep":43,"diff":-13},
   ],
   "H:NH:House NH-02": [
     {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-01-15","endDate":"2026-01-19","sample":1093,"population":"LV","dem":54,"rep":40,"diff":-14},
@@ -980,6 +987,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"Saint Anselm College","partisan":null,"startDate":"2026-08-17","endDate":"2026-08-18","sample":701,"population":"LV","dem":50,"rep":35,"diff":-15},
     {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-09-17","endDate":"2026-09-21","sample":702,"population":"LV","dem":56,"rep":35,"diff":-21},
     {"pollster":"Saint Anselm College","partisan":null,"startDate":"2026-10-19","endDate":"2026-10-20","sample":811,"population":"LV","dem":54,"rep":38,"diff":-16},
+    {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-10-27","endDate":"2026-10-31","sample":1020,"population":"LV","dem":56,"rep":41,"diff":-15},
   ],
   "H:NJ:House NJ-02": [
     {"pollster":"Impact Research","partisan":"D","startDate":"2026-10-07","endDate":"2026-10-10","sample":null,"population":"LV","dem":40,"rep":50,"diff":10},
@@ -1224,6 +1232,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"InsiderAdvantage","partisan":"R","startDate":"2026-10-09","endDate":"2026-10-10","sample":1200,"population":"LV","dem":50,"rep":48,"diff":-2},
     {"pollster":"Data for Progress","partisan":"D","startDate":"2026-10-08","endDate":"2026-10-16","sample":694,"population":"LV","dem":50.5,"rep":49.5,"diff":-1},
     {"pollster":"Alaska Survey Research","partisan":null,"startDate":"2026-10-26","endDate":"2026-10-29","sample":1326,"population":"LV","dem":51,"rep":49,"diff":-2},
+    {"pollster":"InsiderAdvantage","partisan":"R","startDate":"2026-10-31","endDate":"2026-11-01","sample":1200,"population":"LV","dem":50,"rep":50,"diff":0},
   ],
   "S:AL:Senate": [
     {"pollster":"yes. every kid.","partisan":null,"startDate":"2026-07-08","endDate":"2026-07-11","sample":601,"population":"LV","dem":32,"rep":47,"diff":15},
@@ -1507,6 +1516,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"Concord Public Opinion Partners","partisan":"D","startDate":"2026-10-31","endDate":"2026-11-01","sample":510,"population":"LV","dem":51,"rep":41,"diff":-10},
     {"pollster":"Research Co.","partisan":null,"startDate":"2026-10-30","endDate":"2026-11-01","sample":450,"population":"LV","dem":48,"rep":46,"diff":-2},
     {"pollster":"AtlasIntel","partisan":null,"startDate":"2026-10-28","endDate":"2026-11-01","sample":1316,"population":"LV","dem":54,"rep":46,"diff":-8},
+    {"pollster":"Trafalgar Group","partisan":"R","startDate":"2026-10-31","endDate":"2026-11-01","sample":1087,"population":"LV","dem":47.1,"rep":45.9,"diff":-1.2},
     {"pollster":"John Zogby Strategies","partisan":null,"startDate":"2026-10-31","endDate":"2026-11-02","sample":1001,"population":"LV","dem":51,"rep":49,"diff":-2},
   ],
   "S:MN:Senate": [
@@ -1624,6 +1634,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"YouGov","partisan":null,"startDate":"2026-10-26","endDate":"2026-10-29","sample":1979,"population":"LV","dem":49,"rep":49,"diff":0},
     {"pollster":"National Public Affairs","partisan":"R","startDate":"2026-10-25","endDate":"2026-10-29","sample":800,"population":"LV","dem":45,"rep":48,"diff":3},
     {"pollster":"New York Times/Siena University","partisan":null,"startDate":"2026-10-23","endDate":"2026-10-29","sample":809,"population":"LV","dem":43,"rep":49,"diff":6},
+    {"pollster":"GrayHouse","partisan":"R","startDate":"2026-10-29","endDate":"2026-11-01","sample":534,"population":"LV","dem":44,"rep":50,"diff":6},
   ],
   "S:NH:Senate": [
     {"pollster":"University of New Hampshire","partisan":null,"startDate":"2026-01-15","endDate":"2026-01-19","sample":2053,"population":"LV","dem":50,"rep":45,"diff":-5},
@@ -1740,7 +1751,7 @@ export const racePolls: Record<string, RacePoll[]> = {
     {"pollster":"New York Times/Siena University","partisan":null,"startDate":"2026-10-19","endDate":"2026-10-26","sample":707,"population":"LV","dem":48,"rep":48,"diff":0},
     {"pollster":"Patinkin Research Strategies","partisan":"D","startDate":"2026-10-27","endDate":"2026-10-29","sample":500,"population":"LV","dem":48,"rep":43,"diff":-5},
     {"pollster":"Resonance Media Services","partisan":"R","startDate":"2026-10-30","endDate":"2026-10-30","sample":600,"population":"LV","dem":46,"rep":45,"diff":-1},
-    {"pollster":"Rasmussen Reports","partisan":null,"startDate":"2026-10-31","endDate":"2026-10-31","sample":1028,"population":"LV","dem":47,"rep":50,"diff":3},
+    {"pollster":"Rasmussen Reports","partisan":null,"startDate":"2026-10-27","endDate":"2026-10-31","sample":1028,"population":"LV","dem":47,"rep":50,"diff":3},
     {"pollster":"Trafalgar Group","partisan":"R","startDate":"2026-10-31","endDate":"2026-11-01","sample":1091,"population":"LV","dem":46,"rep":48,"diff":2},
   ],
   "S:SD:Senate": [
@@ -1753,6 +1764,7 @@ export const racePolls: Record<string, RacePoll[]> = {
   ],
   "S:TN:Senate": [
     {"pollster":"Targoz Market Research","partisan":null,"startDate":"2026-08-15","endDate":"2026-08-26","sample":1157,"population":"RV","dem":31,"rep":51,"diff":20},
+    {"pollster":"Targoz Market Research","partisan":null,"startDate":"2026-10-24","endDate":"2026-11-02","sample":718,"population":"LV","dem":37,"rep":57,"diff":20},
   ],
   "S:TX:Senate": [
     {"pollster":"Emerson College","partisan":null,"startDate":"2026-01-10","endDate":"2026-01-12","sample":1165,"population":"RV","dem":46,"rep":46,"diff":0},

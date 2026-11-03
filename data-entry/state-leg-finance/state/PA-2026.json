@@ -1,0 +1,3474 @@
+{
+ "state": "PA",
+ "cycle": 2026,
+ "source": "Pennsylvania Department of State campaign finance exports (itemized + unitemized contributions)",
+ "dataThrough": "12/31/2026",
+ "house": {
+  "1": [
+   {
+    "name": "PATRICK J. HARKINS",
+    "candidate": "Patrick Harkins",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "FRIENDS OF BOB MERSKI",
+    "candidate": "Robert Merski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7000,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "Committee to Elect Ryan Bizzarro",
+    "candidate": "Ryan Bizzarro",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 534185.04,
+    "expenditures": null
+   },
+   {
+    "name": "REESE,DONNA RAE ",
+    "candidate": "Donna Reese",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "COMMITTEE TO ELECT JAKE BANTA",
+    "candidate": "Jake Banta",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 7354,
+    "expenditures": null
+   },
+   {
+    "name": "DIVITTORIO,KATHRYN A ",
+    "candidate": "Kathryn Divittorio",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "FRIENDS OF ERIC WEAKNECHT",
+    "candidate": "Eric Weaknecht",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 49010,
+    "expenditures": null
+   },
+   {
+    "name": "VOTERS FOR ANDRES SANTIAGO",
+    "candidate": "Andres Ruben Flammer Santiago",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 34.97,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "COMMITTEE TO ELECT MICHAEL WALKER",
+    "candidate": "Michael Walker",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2252.93,
+    "expenditures": null
+   },
+   {
+    "name": "BRAD ROAE",
+    "candidate": "Bradley Roae",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "ELECT PARKE WENTLING",
+    "candidate": "Parke Wentling",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16690.15,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF CHRISTOPHER FORD",
+    "candidate": "Christopher Ford",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 290,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "AARON BERNSTINE",
+    "candidate": "Aaron Bernstine",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "RICK TELESZ",
+    "candidate": "Richard Telesz",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10631.15,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "SHAY MICCO FOR PA STATE REPRSENTATIVE",
+    "candidate": "Shay Micco",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4040.38,
+    "expenditures": null
+   },
+   {
+    "name": "MARLA BROWN",
+    "candidate": "Marla Gallo Brown",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "CITIZENS FOR AMEN BROWN",
+    "candidate": "Amen Brown",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 59910,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "MARCI MUSTELLO",
+    "candidate": "Marci Mustello",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "DUKES FOR PA",
+    "candidate": "Brandon Dukes",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16740.25,
+    "expenditures": null
+   },
+   {
+    "name": "CAPTAIN SCOTT TIMKO VICTORY FUND",
+    "candidate": "Scott Timko",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 118350.02,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "ALVARINO,MADELYN G ",
+    "candidate": "Madelyn Alvarino",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "JOHN LAWRENCE",
+    "candidate": "John Lawrence",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "ROMAN KOZAK",
+    "candidate": "Roman Kozak",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "SPEICHER FOR PA",
+    "candidate": "Sydney Speicher",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12879.98,
+    "expenditures": null
+   },
+   {
+    "name": "JOSHUA KAIL",
+    "candidate": "Joshua Kail",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "FRIENDS OF JOHN COSTANZA",
+    "candidate": "John Costanza",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MATZIE, ROBERT PEOPLE FOR                                   ",
+    "candidate": "Robert Matzie",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 571747.52,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "FRIENDS OF TIM BONNER",
+    "candidate": "Tim Bonner",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "K.C. TOMLINSON FOR STATE REPRESENTATIVE",
+    "candidate": "K.C. Tomlinson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 285159.01,
+    "expenditures": null
+   },
+   {
+    "name": "Bryan Allen for PA",
+    "candidate": "Bryan Allen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 861010.11,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "ABNEY, AERION FRIENDS OF",
+    "candidate": "Aerion Abney",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4950,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "KINKEAD, EMILY PEOPLE FOR",
+    "candidate": "Emily Kinkead",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50692,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "FRIENDS OF LINDSAY POWELL",
+    "candidate": "Lindsay Powell",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 57100,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "ROBERT E. SMITH JR.",
+    "candidate": "Robert Smith",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "CECILIA GERLACH",
+    "candidate": "Cecilia Gerlach",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9962.5,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "DAN FRANKEL FOR THE 23RD DISTRICT COMMITTEE",
+    "candidate": "Dan Frankel",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 156792.78,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "LATASHA D. MAYES FOR STATE REPRESENTATIVE",
+    "candidate": "La'Tasha Mayes",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 47673,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "FRIENDS OF AMY NOONE",
+    "candidate": "Amy Noone",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2574.72,
+    "expenditures": null
+   },
+   {
+    "name": "MARKOSEK, BRANDON CAMPAIGN ",
+    "candidate": "Brandon Markosek",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 48900,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "FRIEL, PAUL FRANKLIN ",
+    "candidate": "Paul Friel",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF SAMANTHA HOROSKY",
+    "candidate": "Samantha Horosky",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 21547.55,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "DANIEL J DEASY",
+    "candidate": "Daniel Deasy Jr.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "FERDERBER FOR PA",
+    "candidate": "Jeremy Ferderber",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 178401.75,
+    "expenditures": null
+   },
+   {
+    "name": "SHAFFER, JEREMY K ",
+    "candidate": "Jeremy Shaffer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 4000,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "FRIENDS OF TIM BRENNAN ",
+    "candidate": "Tim Brennan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 140780,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF SEAN DUFFY",
+    "candidate": "Sean Patrick Duffy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 23756.69,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "FRIENDS OF ARVIND VENKAT",
+    "candidate": "Arvind Venkat",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 572962.8,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "PERRY WARREN FOR STATE REPRESENTATIVE",
+    "candidate": "Perry Warren",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 14642.55,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "THE FRIENDS OF JOE MCANDREW",
+    "candidate": "Joe McAndrew",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 101335,
+    "expenditures": null
+   },
+   {
+    "name": "GARY MOTOR",
+    "candidate": "Gary Motor",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3000,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "FRIENDS OF MIKE HAMMILL",
+    "candidate": "Michael Hammill",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 11996.28,
+    "expenditures": null
+   },
+   {
+    "name": "Steele for PA",
+    "candidate": "Mandy Steele",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 88542.08,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "PEOPLE FOR ABIGAIL SALISBURY ",
+    "candidate": "Abigail Salisbury",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 45422,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "DAN GOUGHNOUR",
+    "candidate": "Dan Goughnour",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50180.18,
+    "expenditures": null
+   },
+   {
+    "name": "JAMES N EDWARDS",
+    "candidate": "James Edwards",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Benham for PA",
+    "candidate": "Jessica Benham",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 47742.89,
+    "expenditures": null
+   },
+   {
+    "name": "TIMOTHY MCCUNE",
+    "candidate": "Timothy McCune",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "CHAD WILLIAM GLEISSL",
+    "candidate": "Chad Gleissl",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MELINDA S FEE",
+    "candidate": "Mindy Fee",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "IN FOR INGLIS",
+    "candidate": "John Inglis",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 67610,
+    "expenditures": null
+   },
+   {
+    "name": "STONE SOBIERALSKI",
+    "candidate": "Stone Sobieralski",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "ANDREW KUZMA",
+    "candidate": "Andrew Kuzma",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "DYLA ALTEMARA",
+    "candidate": "Dylan Altemara",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "FRIENDS OF JON LLOYD",
+    "candidate": "Jon Lloyd",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 203984.82,
+    "expenditures": null
+   },
+   {
+    "name": "NATALIE NICOLE STUCK (MIHALEK)",
+    "candidate": "Natalie Mihalek",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "CHAMBERS, BRADFORD T ",
+    "candidate": "Brad Chambers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MILLER, BRETT VICTORY COMMITTEE",
+    "candidate": "Brett Miller",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 217545.76,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "FRIENDS OF JEN MAZZOCCO",
+    "candidate": "Jennifer Mazzocco",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 59701.11,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "KEITH JAMES GREINER",
+    "candidate": "Keith Greiner",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "BRYAN PEIRSON",
+    "candidate": "Bryan Peirson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "FRIENDS OF HADLEY HAAS",
+    "candidate": "Hadley Haas",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 222186.53,
+    "expenditures": null
+   },
+   {
+    "name": "VALERIE GAYDOS",
+    "candidate": "Valerie Gaydos",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "FRIENDS OF JAMES JULIUS",
+    "candidate": "James Julius",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2964,
+    "expenditures": null
+   },
+   {
+    "name": "BRITTANY BLOAM",
+    "candidate": "Brittany Bloam",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7207.83,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "JASON A. ORTITAY",
+    "candidate": "Jason Ortitay",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MIKE CROSSEY 4 PA",
+    "candidate": "Mike Crossey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65066.82,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "JOE D'ORSIE",
+    "candidate": "Joe D'Orsie",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "EDWARD L. RITTER",
+    "candidate": "Edward Ritter",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "REBECCA MACTAGGART FOR PA",
+    "candidate": "Rebecca MacTaggart",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11648.07,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "SMITH-WADE-EL, ISMAIL  ",
+    "candidate": "Ismail Smith-Wade-El",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "ACOSTA FOR STATE REP",
+    "candidate": "Vanessa Acosta",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "LOIS BOWER BJORNSON",
+    "candidate": "Lois Bower-Bjornson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "HUMBLE FOR HOUSE",
+    "candidate": "Ben Humble",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 110487.49,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "CHARITY GRIMM KRUPA",
+    "candidate": "Charity Grimm Krupa",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "WARNER, RYAN FRIENDS OF",
+    "candidate": "Ryan Warner",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25610,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "FRIENDS OF STEVE MALAGARI",
+    "candidate": "Steven Malagari",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 273141.73,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "GREGORY SCOTT",
+    "candidate": "Greg Scott",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "COOPER, JILL NIXON ",
+    "candidate": "Jill Cooper",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "DAVON MAGWOOD",
+    "candidate": "Davon Magwood",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "FRIENDS OF BRIAN RASEL",
+    "candidate": "Brian Rasel",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "FRIENDS OF ERIC NELSON",
+    "candidate": "Eric Nelson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 48360,
+    "expenditures": null
+   },
+   {
+    "name": "FRANCIS, ROBERT B",
+    "candidate": "Robert Francis",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "ERIC DAVANZO",
+    "candidate": "Eric Davanzo",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "CHERRI ROGERS",
+    "candidate": "Cherri Rogers",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "59": [
+   {
+    "name": "ROSSI FOR PA HOUSE",
+    "candidate": "Leslie Baum Rossi",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "SUPPORTERS OF JORDAN OMLOR",
+    "candidate": "Jordan Omlor",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 31209.72,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "MAJOR FOR PA",
+    "candidate": "Abby Major",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11200,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT DUSTYN DORN",
+    "candidate": "Dustyn Dorn",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9601.71,
+    "expenditures": null
+   }
+  ],
+  "61": [
+   {
+    "name": "FRIENDS OF LIZ HANBIDGE",
+    "candidate": "Liz Hanbidge",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 10999.04,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "JAMES BRUNO STRUZZI",
+    "candidate": "James Struzzi II",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "JONES, TRAJAN WILLIAM ",
+    "candidate": "Trajan Jones",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "ANDREW HARBAUGH FOR PENNSYLVANIA",
+    "candidate": "Andrew Harbaugh",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7702.71,
+    "expenditures": null
+   },
+   {
+    "name": "JOSHUA BASHLINE",
+    "candidate": "Josh Bashline",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "SHAFFER, AMANDA  ",
+    "candidate": "Amanda Shaffer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 575.42,
+    "expenditures": null
+   },
+   {
+    "name": "R. LEE JAMES",
+    "candidate": "R. Lee James",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "65": [
+   {
+    "name": "RAPP, KATHY FOR REP                                         ",
+    "candidate": "Kathy Rapp",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14800,
+    "expenditures": null
+   },
+   {
+    "name": "HOWARD CAMPAIGN",
+    "candidate": "Destiny Howard",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 790.2,
+    "expenditures": null
+   }
+  ],
+  "66": [
+   {
+    "name": "FRIENDS OF BRIAN SMITH",
+    "candidate": "Brian Smith",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18706,
+    "expenditures": null
+   },
+   {
+    "name": "LISA GOURLEY",
+    "candidate": "Lisa Gourley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "FRIENDS OF ZACHARY WARE",
+    "candidate": "Zach Ware",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 828,
+    "expenditures": null
+   },
+   {
+    "name": "MARTIN T. CAUSER",
+    "candidate": "Martin Causer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "GEE, QUENTIN JOSEPH ",
+    "candidate": "Quentin Gee",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "CLINT OWLETT",
+    "candidate": "Clint Owlett",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "69": [
+   {
+    "name": "CARL WALKER METZGAR",
+    "candidate": "Carl Metzgar",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "70": [
+   {
+    "name": "Friends of Matt Bradford",
+    "candidate": "Matthew Bradford",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3007203.41,
+    "expenditures": null
+   }
+  ],
+  "71": [
+   {
+    "name": "JIM RIGBY",
+    "candidate": "Jim Rigby",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "PHILIP RICE",
+    "candidate": "Philip Rice",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO RE ELECT FRANK BURNS",
+    "candidate": "Frank Burns",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7300,
+    "expenditures": null
+   }
+  ],
+  "73": [
+   {
+    "name": "DALLAS KEPHART",
+    "candidate": "Dallas Kephart",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "WILLIAMS, DAN CITIZENS FOR",
+    "candidate": "Dan Williams",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29287.91,
+    "expenditures": null
+   },
+   {
+    "name": "LORENZO KELLEY",
+    "candidate": "Lorenzo Kelley",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "ARMANINI,MICHAEL J ",
+    "candidate": "Mike Armanini",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF KIMBERLY KOHLHEPP",
+    "candidate": "Kimberly Kohlhepp",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 24956.33,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "FRIENDS OF SARA EGGLER",
+    "candidate": "Sara Eggler",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27107.38,
+    "expenditures": null
+   },
+   {
+    "name": "BOROWICZ, STEPHANIE FRIENDS OF",
+    "candidate": "Stephanie Borowicz",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22905.5,
+    "expenditures": null
+   }
+  ],
+  "77": [
+   {
+    "name": "CONKLIN, SCOTT FRIENDS OF                                   ",
+    "candidate": "H. Scott Conklin",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 11550,
+    "expenditures": null
+   },
+   {
+    "name": "MICHELLE SCHELLBERG",
+    "candidate": "Michelle Schellberg",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4226.33,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "FRIENDS OF JESSE TOPPER",
+    "candidate": "Jesse Topper",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 666655,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "ANDREA VEROBISH",
+    "candidate": "Andrea Verobish",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MCCOY, CHARLES CALEB ",
+    "candidate": "Caleb McCoy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "BARGER,SCOTT D ",
+    "candidate": "Scott Barger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "HOLLAND FOR THE HOUSE",
+    "candidate": "Sarah Holland",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 195.73,
+    "expenditures": null
+   }
+  ],
+  "81": [
+   {
+    "name": "CALEB DONAHUE FOR PA",
+    "candidate": "Caleb Donahue",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 750,
+    "expenditures": null
+   },
+   {
+    "name": "RICHARD S. IRVIN",
+    "candidate": "Richard Irvin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "FRIENDS OF KIRSTEN MCTERNAN",
+    "candidate": "Kirsten McTernan",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18344.31,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Paul Takac",
+    "candidate": "Paul Takac",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 133918.27,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "JAMIE L. FLICK",
+    "candidate": "Jamie Flick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "84": [
+   {
+    "name": "JOE HAMM",
+    "candidate": "Joe Hamm",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "DAVID H. ROWE",
+    "candidate": "David Rowe",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "PERRY A STAMBAUGH",
+    "candidate": "Perry Stambaugh",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MORGAN, WENDY  ",
+    "candidate": "Wendy Morgan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "KUTZ FOR PA",
+    "candidate": "Thomas Kutz",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 165558.63,
+    "expenditures": null
+   },
+   {
+    "name": "ST CLAIR TOGETHER",
+    "candidate": "Jessica St. Clair",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12944.22,
+    "expenditures": null
+   }
+  ],
+  "88": [
+   {
+    "name": "Friends of Sara Agerton",
+    "candidate": "Sara Agerton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1080249.4,
+    "expenditures": null
+   },
+   {
+    "name": "JEFF CLARK",
+    "candidate": "Jeffrey Clark",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "89": [
+   {
+    "name": "FRIENDS OF SHANNON JACKSON",
+    "candidate": "Shannon Jackson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11221.89,
+    "expenditures": null
+   },
+   {
+    "name": "KAUFFMAN, ROB COM TO ELECT                                  ",
+    "candidate": "Rob Kauffman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26225,
+    "expenditures": null
+   }
+  ],
+  "90": [
+   {
+    "name": "FRIENDS OF CHAD REICHARD",
+    "candidate": "Chad Reichard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34200,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "FRIENDS OF DAN MOUL",
+    "candidate": "Dan Moul",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 87059,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF KATHLEEN PRATT",
+    "candidate": "Kathleen Pratt",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 33746.55,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "KRISTA ANDERSON",
+    "candidate": "Krista Anderson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MARC ANDERSON",
+    "candidate": "Marc Anderson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "93": [
+   {
+    "name": "MISSY BARNES",
+    "candidate": "Melissa Barnes",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9986.53,
+    "expenditures": null
+   },
+   {
+    "name": "JONES, MIKE FOR PA",
+    "candidate": "Mike Jones",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39577.24,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "WENDY FINK",
+    "candidate": "Wendy Fink",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "KONNOR GRIMEK",
+    "candidate": "Konnor Grimek",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "95": [
+   {
+    "name": "SUPPORTERS FOR CAROL HILL-EVANS",
+    "candidate": "Carol Hill-Evans",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9425,
+    "expenditures": null
+   },
+   {
+    "name": "JASMINE RIVERA FOR PA",
+    "candidate": "Jasmine Rivera",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "FRIENDS OF NIKKI RIVERA",
+    "candidate": "Nikki Rivera",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 52220.18,
+    "expenditures": null
+   },
+   {
+    "name": "BABITA RUSYN",
+    "candidate": "Babita Rusyn",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "MENTZER, STEVE FRIENDS OF",
+    "candidate": "Steven Mentzer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 55700,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF JESS BRANAS",
+    "candidate": "Jess Branas",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 31974.45,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "DEERING, JOSHUA L ",
+    "candidate": "Joshua Deering",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "HYDER-DARLINGTON, HUGH STOCKTON ",
+    "candidate": "Hugh Hyder-Darlington",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2000,
+    "expenditures": null
+   },
+   {
+    "name": "NICOLE WOODS",
+    "candidate": "Nicky Woods",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "ETHAN GABRICK ELECTION EFFORT",
+    "candidate": "Ethan Gabrick",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5556.3,
+    "expenditures": null
+   },
+   {
+    "name": "DAVID H ZIMMERMAN",
+    "candidate": "David H. Zimmerman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "FRIENDS OF DALE HAMBY",
+    "candidate": "Dale Hamby",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 28423.07,
+    "expenditures": null
+   },
+   {
+    "name": "DAVID NISSLEY III",
+    "candidate": "Dave Nissley",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "101": [
+   {
+    "name": "JOHN SCHLEGEL",
+    "candidate": "John Schlegel",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11000,
+    "expenditures": null
+   }
+  ],
+  "102": [
+   {
+    "name": "DIAMOND, RUSS FRIENDS OF",
+    "candidate": "Russell Diamond",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18741,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF MATTHEW DUVALL",
+    "candidate": "Matthew Duvall",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 440.78,
+    "expenditures": null
+   }
+  ],
+  "103": [
+   {
+    "name": "FRIENDS OF NATE DAVIDSON",
+    "candidate": "Nate Davidson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 85580,
+    "expenditures": null
+   }
+  ],
+  "104": [
+   {
+    "name": "MADSEN,DAVID ADAM ",
+    "candidate": "Dave Madsen",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "105": [
+   {
+    "name": "FRIENDS OF JUSTIN FLEMING ",
+    "candidate": "Justin Fleming",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 49110,
+    "expenditures": null
+   }
+  ],
+  "106": [
+   {
+    "name": "ANJU SINGH",
+    "candidate": "Anju Singh",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 666.77,
+    "expenditures": null
+   },
+   {
+    "name": "TOM MEHAFFIE",
+    "candidate": "Thomas Mehaffie",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "107": [
+   {
+    "name": "STEHR FOR STATE REP",
+    "candidate": "Joanne Stehr",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2450,
+    "expenditures": null
+   },
+   {
+    "name": "COLEMAN FOR 107",
+    "candidate": "Ryan Coleman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1036.55,
+    "expenditures": null
+   }
+  ],
+  "108": [
+   {
+    "name": "AMBER NEIDIG",
+    "candidate": "Amber Neidig",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1806.62,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF MICHAEL STENDER",
+    "candidate": "Michael Stender",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27450,
+    "expenditures": null
+   }
+  ],
+  "109": [
+   {
+    "name": "JUSTIN HUMMEL",
+    "candidate": "Justin Hummel",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "ROBERT M. LEADBETER",
+    "candidate": "Robert Leadbeter",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "110": [
+   {
+    "name": "PICKETT, TINA FRIENDS OF                                    ",
+    "candidate": "Tina Pickett",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38410,
+    "expenditures": null
+   },
+   {
+    "name": "PAMELA J HEMANN FOR STATE REPRESENTATIVE",
+    "candidate": "Pamela Hemann",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16869.79,
+    "expenditures": null
+   }
+  ],
+  "111": [
+   {
+    "name": "JONATHAN A. FRITZ",
+    "candidate": "Jonathan Fritz",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT KYLE DEVLIN",
+    "candidate": "Kyle Devlin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8465.36,
+    "expenditures": null
+   }
+  ],
+  "112": [
+   {
+    "name": "FRIENDS OF KYLE MULLINS",
+    "candidate": "Kyle Mullins",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 302055,
+    "expenditures": null
+   },
+   {
+    "name": "JOE SABIA",
+    "candidate": "Joseph Sabia Jr.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5000,
+    "expenditures": null
+   }
+  ],
+  "113": [
+   {
+    "name": "FRIENDS OF KYLE DONAHUE",
+    "candidate": "Kyle Donahue",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 68275,
+    "expenditures": null
+   }
+  ],
+  "114": [
+   {
+    "name": "FRIENDS OF BRIDGET MALLOY KOSIEROWSKI",
+    "candidate": "Bridget Malloy Kosierowski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 237588.47,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF LOGAN LOMBARDO",
+    "candidate": "Logan Lombardo",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "115": [
+   {
+    "name": "MADDEN, MAUREEN FRIENDS OF FOR STATE REPRESENTATIVE",
+    "candidate": "Maureen Madden",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 82533.78,
+    "expenditures": null
+   },
+   {
+    "name": "RICHARD W. SZABO",
+    "candidate": "Rich Szabo",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "116": [
+   {
+    "name": "DANE WATRO",
+    "candidate": "Dane Watro Jr.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2827.13,
+    "expenditures": null
+   }
+  ],
+  "117": [
+   {
+    "name": "BENSCOTER, JEREMY  ",
+    "candidate": "Jeremy Benscoter",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "JAMES WALSH",
+    "candidate": "Jamie Walsh",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "118": [
+   {
+    "name": "FRIENDS OF JOHN LOMBARDO",
+    "candidate": "John Lombardo",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 63892.04,
+    "expenditures": null
+   },
+   {
+    "name": "JAMES HADDOCK",
+    "candidate": "James Haddock",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "119": [
+   {
+    "name": "ALEC J. RYNCAVAGE",
+    "candidate": "Alec Ryncavage",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "LAUREN MCCURDY",
+    "candidate": "Lauren McCurdy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "120": [
+   {
+    "name": "BRENDA PUGH",
+    "candidate": "Brenda Pugh",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "FERN LEARD",
+    "candidate": "Fern Leard",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "121": [
+   {
+    "name": "MCCLAY FOR PA",
+    "candidate": "Jessica McClay",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 600704.62,
+    "expenditures": null
+   },
+   {
+    "name": "MIKE HAROSTOCK",
+    "candidate": "Mike Harostock",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "122": [
+   {
+    "name": "HEFFLEY, DOYLE COM TO ELECT                                 ",
+    "candidate": "Doyle Heffley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 103769.1,
+    "expenditures": null
+   }
+  ],
+  "123": [
+   {
+    "name": "JOHN DEATRICH",
+    "candidate": "John Deatrich",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1350,
+    "expenditures": null
+   },
+   {
+    "name": "TIMOTHY F TWARDZIK",
+    "candidate": "Tim Twardzik",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "124": [
+   {
+    "name": "COMMITTEE TO ELECT TINA BURNS",
+    "candidate": "Tina Burns",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 39278.81,
+    "expenditures": null
+   },
+   {
+    "name": "JAMIE BARTON",
+    "candidate": "Jamie Barton",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "125": [
+   {
+    "name": "KATHRYN WATERS",
+    "candidate": "Kathryn Waters",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "JOSEPH P. KERWIN",
+    "candidate": "Joe Kerwin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "126": [
+   {
+    "name": "FRIENDS OF MIGUEL VASQUEZ",
+    "candidate": "Miguel Vasquez",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 828.18,
+    "expenditures": null
+   },
+   {
+    "name": "JACKLYN H RUSNOCK",
+    "candidate": "Jacklyn Rusnock",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "127": [
+   {
+    "name": "FRIENDS OF MANNY GUZMAN",
+    "candidate": "Manuel Guzman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15850,
+    "expenditures": null
+   }
+  ],
+  "128": [
+   {
+    "name": "WAGNER ACTION COMMITTEE",
+    "candidate": "Andy Wagner",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 22944.89,
+    "expenditures": null
+   },
+   {
+    "name": "MARK M. GILLEN",
+    "candidate": "Mark Gillen",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "129": [
+   {
+    "name": "FRIENDS OF JOHANNY CEPEDA-FREYTIZ",
+    "candidate": "Johanny Cepeda-Freytiz",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 43126.07,
+    "expenditures": null
+   }
+  ],
+  "130": [
+   {
+    "name": "MELISSA BREWER",
+    "candidate": "Melissa Brewer",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "ERIK BONNETT",
+    "candidate": "Erik Bonnett",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "131": [
+   {
+    "name": "Friends of Meriam Sabih",
+    "candidate": "Meriam Sabih",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 50970.7,
+    "expenditures": null
+   },
+   {
+    "name": "V. MILOU MACKENZIE",
+    "candidate": "Milou Mackenzie",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "132": [
+   {
+    "name": "SCHLOSSBERG, MIKE FRIENDS OF",
+    "candidate": "Michael Schlossberg",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 309807.39,
+    "expenditures": null
+   },
+   {
+    "name": "CAREN LOWREY",
+    "candidate": "Caren Lowrey",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "133": [
+   {
+    "name": "MCNEILL FOR PA",
+    "candidate": "Jeanne McNeill",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40408.78,
+    "expenditures": null
+   }
+  ],
+  "134": [
+   {
+    "name": "SCHWEYER, PETER FRIENDS OF",
+    "candidate": "Peter Schweyer",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 126934.31,
+    "expenditures": null
+   }
+  ],
+  "135": [
+   {
+    "name": "FRIENDS OF JOE POPLAWSKI",
+    "candidate": "Joe Poplawski",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1472.94,
+    "expenditures": null
+   },
+   {
+    "name": "STEVE SAMUELSON",
+    "candidate": "Steve Samuelson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "136": [
+   {
+    "name": "ROBERT FREEMAN",
+    "candidate": "Robert Freeman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "PILAR CAMPISI",
+    "candidate": "Pilar Cavallo-Campisi",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "137": [
+   {
+    "name": "EMRICK, JOE COMMITTEE TO ELECT C/O JOANN CARDELLO",
+    "candidate": "Joe Emrick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Jeff Warren for PA",
+    "candidate": "Jeff Warren",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1667507.2,
+    "expenditures": null
+   }
+  ],
+  "138": [
+   {
+    "name": "BITTING 4 PA",
+    "candidate": "Jared Bitting",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 626.72,
+    "expenditures": null
+   },
+   {
+    "name": "ANN FLOOD",
+    "candidate": "Ann Flood",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "139": [
+   {
+    "name": "AZZOLLINI FOR PA",
+    "candidate": "Dominique Azzollini",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27860.74,
+    "expenditures": null
+   },
+   {
+    "name": "JEFFREY H. OLSOMMER",
+    "candidate": "Jeff Olsommer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "140": [
+   {
+    "name": "JIM PROKOPIAK",
+    "candidate": "Jim Prokopiak",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "MICHAEL J GETTIS",
+    "candidate": "Michael Gettis",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 55,
+    "expenditures": null
+   }
+  ],
+  "141": [
+   {
+    "name": "DAVIS, TINA FRIENDS OF                                       ",
+    "candidate": "Tina Davis",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 291570,
+    "expenditures": null
+   },
+   {
+    "name": "KEN VELEZ",
+    "candidate": "Ken Velez",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "142": [
+   {
+    "name": "FRIENDS OF JOE HOGAN",
+    "candidate": "Joseph Hogan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 284144.18,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF KRISTIN EGAN",
+    "candidate": "Kristin Egan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1088352.7,
+    "expenditures": null
+   }
+  ],
+  "143": [
+   {
+    "name": "TIM HAYES FOR PA",
+    "candidate": "Tim Hayes",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 95700.17,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF SHELBY LABS",
+    "candidate": "Shelby Labs",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 214615.07,
+    "expenditures": null
+   }
+  ],
+  "144": [
+   {
+    "name": "MICHAEL MURPHY",
+    "candidate": "Mike Murphy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF BRIAN MUNROE",
+    "candidate": "Brian Munroe",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 411861.29,
+    "expenditures": null
+   }
+  ],
+  "145": [
+   {
+    "name": "CRAIG T. STAATS",
+    "candidate": "Craig Staats",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "PRENDERGAST, REBECCA CATHERINE ",
+    "candidate": "Rebecca Prendergast",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "146": [
+   {
+    "name": "CIRESI, JOE FRIENDS OF",
+    "candidate": "Joseph Ciresi",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 156351,
+    "expenditures": null
+   }
+  ],
+  "147": [
+   {
+    "name": "FRIENDS OF MARGARET BURKE",
+    "candidate": "Margaret Burke",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20313.2,
+    "expenditures": null
+   },
+   {
+    "name": "DONNA SCHEUREN",
+    "candidate": "Donna Scheuren",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "148": [
+   {
+    "name": "MEGAN GRIFFIN-SHELLEY",
+    "candidate": "Megan Griffin-Shelley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "149": [
+   {
+    "name": "Tim Briggs for State Representative",
+    "candidate": "Tim Briggs",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 108508.6,
+    "expenditures": null
+   }
+  ],
+  "150": [
+   {
+    "name": "FRIENDS OF JOE WEBSTER",
+    "candidate": "Joseph Webster",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 119671,
+    "expenditures": null
+   }
+  ],
+  "151": [
+   {
+    "name": "FRIENDS OF MELISSA CERRATO",
+    "candidate": "Melissa Cerrato",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19673.25,
+    "expenditures": null
+   }
+  ],
+  "152": [
+   {
+    "name": "FRIENDS OF ERIC MAIER",
+    "candidate": "Eric Maier",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "NANCY GUENST",
+    "candidate": "Nancy Guenst",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "153": [
+   {
+    "name": "FRIENDS OF BEN SANCHEZ",
+    "candidate": "Ben Sanchez",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 52331.42,
+    "expenditures": null
+   },
+   {
+    "name": "CORY TONER",
+    "candidate": "Cory Toner",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "154": [
+   {
+    "name": "FRIENDS OF STEPHANIE BERARDI",
+    "candidate": "Stephanie Berardi",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 3156.81,
+    "expenditures": null
+   },
+   {
+    "name": "NAPOLEON NELSON",
+    "candidate": "Napoleon Nelson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "155": [
+   {
+    "name": "FRIEL OTTEN, DANIELLE 4 PA",
+    "candidate": "Danielle Friel Otten",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1385,
+    "expenditures": null
+   }
+  ],
+  "156": [
+   {
+    "name": "FRIENDS OF KRIS VOLLRATH",
+    "candidate": "Kris R. Vollrath",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 829.74,
+    "expenditures": null
+   },
+   {
+    "name": "CHRISTOPHER PIELLI",
+    "candidate": "Christopher Pielli",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "157": [
+   {
+    "name": "MELISSA SHUSTERMAN",
+    "candidate": "Melissa Shusterman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "PAK, JUSTIN J ",
+    "candidate": "Justin Pak",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 364.35,
+    "expenditures": null
+   }
+  ],
+  "158": [
+   {
+    "name": "FRIENDS OF CHRISTINA SAPPEY",
+    "candidate": "Christina Sappey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 32585.74,
+    "expenditures": null
+   }
+  ],
+  "159": [
+   {
+    "name": "FRIENDS OF CAROL KAZEEM ",
+    "candidate": "Carol Kazeem",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 10350,
+    "expenditures": null
+   }
+  ],
+  "160": [
+   {
+    "name": "FRIENDS OF ELIZABETH MORO",
+    "candidate": "Elizabeth Moro",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 249550.05,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF CRAIG WILLIAMS",
+    "candidate": "Craig Williams",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 406174.58,
+    "expenditures": null
+   }
+  ],
+  "161": [
+   {
+    "name": "KRUEGER, LEANNE THERESA ",
+    "candidate": "Leanne Krueger",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "162": [
+   {
+    "name": "DELLOSO, DAVE FRIENDS OF ",
+    "candidate": "David Delloso",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 57655,
+    "expenditures": null
+   },
+   {
+    "name": "MURPHY OF PA",
+    "candidate": "Mike Murphy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "163": [
+   {
+    "name": "HEATHER BOYD FOR PA",
+    "candidate": "Heather Boyd",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17235,
+    "expenditures": null
+   }
+  ],
+  "164": [
+   {
+    "name": "FRIENDS OF GINA H. CURRY",
+    "candidate": "Gina Curry",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 54363,
+    "expenditures": null
+   }
+  ],
+  "165": [
+   {
+    "name": "DEIRDRE MCCLEARY",
+    "candidate": "Deirdre McCleary",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Jennifer O'Mara",
+    "candidate": "Jennifer O'Mara",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 126406.52,
+    "expenditures": null
+   }
+  ],
+  "166": [
+   {
+    "name": "FRIENDS OF JUDY TROMBETTA",
+    "candidate": "Judy Trombetta",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 99710.37,
+    "expenditures": null
+   },
+   {
+    "name": "WALKER, JOSEPH WILLIAM ",
+    "candidate": "Joe Walker",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "167": [
+   {
+    "name": "FRIENDS OF JOE LEWIS",
+    "candidate": "Joe Lewis",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 19603.89,
+    "expenditures": null
+   },
+   {
+    "name": "Committee to Elect Kristine Howard",
+    "candidate": "Kristine Howard",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15591.25,
+    "expenditures": null
+   }
+  ],
+  "168": [
+   {
+    "name": "LISA BOROWSKI",
+    "candidate": "Lisa Borowski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 242056.44,
+    "expenditures": null
+   },
+   {
+    "name": "KATHERYN BUCKLEY",
+    "candidate": "Kathryn Buckley",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "169": [
+   {
+    "name": "GRAHAM, AUSTIN L ",
+    "candidate": "Austin Graham",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "KATE KLUNK",
+    "candidate": "Kate Klunk",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "170": [
+   {
+    "name": "ROBERT GURTCHEFF (ROB GURTCHEFF FOR PHILLY)",
+    "candidate": "Rob Gurtcheff II",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Martina White",
+    "candidate": "Martina White",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 544769.95,
+    "expenditures": null
+   }
+  ],
+  "171": [
+   {
+    "name": "BENNINGHOFF FOR REPRESENTATIVE",
+    "candidate": "Kerry Benninghoff",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "JOHN ZANGARI",
+    "candidate": "John Zangari",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "172": [
+   {
+    "name": "Dougherty for State Rep",
+    "candidate": "Sean Dougherty",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 221536.51,
+    "expenditures": null
+   }
+  ],
+  "173": [
+   {
+    "name": "BILL GRIFFIN FOR STATE REPRESENTATIVE",
+    "candidate": "Bill Griffin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 7478.5,
+    "expenditures": null
+   },
+   {
+    "name": "PATRICK GALLAGHER",
+    "candidate": "Patrick Gallagher",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "174": [
+   {
+    "name": "Neilson for the Northeast",
+    "candidate": "Ed Neilson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 167963.78,
+    "expenditures": null
+   }
+  ],
+  "175": [
+   {
+    "name": "ISAACSON, MARYLOUISE FRIENDS OF                             ",
+    "candidate": "MaryLouise Isaacson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 45000,
+    "expenditures": null
+   }
+  ],
+  "176": [
+   {
+    "name": "RADER, JACK JR BIPARTISAN COMMITTEE TO ELECT",
+    "candidate": "Jack Rader",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 800,
+    "expenditures": null
+   }
+  ],
+  "177": [
+   {
+    "name": "Friends of Joe Hohenstein",
+    "candidate": "Joseph Hohenstein",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 81559,
+    "expenditures": null
+   },
+   {
+    "name": "ROBYN BIRD",
+    "candidate": "Robyn Bird",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "178": [
+   {
+    "name": "MONICA WENINGER FOR PA",
+    "candidate": "Monica Weninger",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 107257.51,
+    "expenditures": null
+   },
+   {
+    "name": "Friends of Kristin Marcell",
+    "candidate": "Kristin Marcell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 304405.19,
+    "expenditures": null
+   }
+  ],
+  "179": [
+   {
+    "name": "DAWKINS, JASON FRIENDS OF",
+    "candidate": "Jason Dawkins",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 30000,
+    "expenditures": null
+   }
+  ],
+  "180": [
+   {
+    "name": "FRIENDS OF JOSE GIRAL",
+    "candidate": "Jose Giral",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 83925,
+    "expenditures": null
+   }
+  ],
+  "181": [
+   {
+    "name": "KENYATTA, MALCOLM  ",
+    "candidate": "Malcolm Kenyatta",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "182": [
+   {
+    "name": "BEN WAXMAN",
+    "candidate": "Benjamin Waxman",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "183": [
+   {
+    "name": "ZACH MAKO",
+    "candidate": "Zachary Mako",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "184": [
+   {
+    "name": "Friends of Elizabeth Fiedler",
+    "candidate": "Elizabeth Fiedler",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 117377.09,
+    "expenditures": null
+   }
+  ],
+  "185": [
+   {
+    "name": "YOUNG, REGINA G ",
+    "candidate": "Regina Young",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "186": [
+   {
+    "name": "CITIZENS FOR JORDAN A. HARRIS",
+    "candidate": "Jordan Harris",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1218192.31,
+    "expenditures": null
+   }
+  ],
+  "187": [
+   {
+    "name": "RACHEL CUEVAS",
+    "candidate": "Rachel Cuevas",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 387095.8,
+    "expenditures": null
+   },
+   {
+    "name": "DAY, GARY FRIENDS OF                                        ",
+    "candidate": "Gary Day",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 84906.54,
+    "expenditures": null
+   }
+  ],
+  "188": [
+   {
+    "name": "KRAJEWSKI, RICK C ",
+    "candidate": "Rick Krajewski",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "189": [
+   {
+    "name": "HARTENFELS,DANICA L ",
+    "candidate": "Danica Hartenfels",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "PROBST, TARAH FRIENDS OF",
+    "candidate": "Tarah Probst",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53698,
+    "expenditures": null
+   }
+  ],
+  "190": [
+   {
+    "name": "RONI GREEN FOR 190",
+    "candidate": "G. Roni Green",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13848.84,
+    "expenditures": null
+   }
+  ],
+  "191": [
+   {
+    "name": "Friends of Joanna McClinton",
+    "candidate": "Joanna McClinton",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2823023.91,
+    "expenditures": null
+   }
+  ],
+  "192": [
+   {
+    "name": "TIFFANY BROWN",
+    "candidate": "Tiffany Vann Brown",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "CEPHAS, MORGAN FRIENDS FOR",
+    "candidate": "Morgan Cephas",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 99900,
+    "expenditures": null
+   }
+  ],
+  "193": [
+   {
+    "name": "FRIENDS OF TODD CRAWLEY",
+    "candidate": "Todd Crawley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8052.07,
+    "expenditures": null
+   },
+   {
+    "name": "CATHERINE I WALLEN",
+    "candidate": "Catherine Wallen",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 30730,
+    "expenditures": null
+   }
+  ],
+  "194": [
+   {
+    "name": "Friends of Tarik Khan",
+    "candidate": "Tarik Khan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 42888.34,
+    "expenditures": null
+   }
+  ],
+  "195": [
+   {
+    "name": "MCNEIL, SIERRA DENISE ",
+    "candidate": "Sierra McNeil",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "196": [
+   {
+    "name": "GEORGE MARGETAS",
+    "candidate": "George Margetas",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "RON RUMAN",
+    "candidate": "Ron Ruman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "197": [
+   {
+    "name": "DANILO BURGOS",
+    "candidate": "Danilo Burgos",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "198": [
+   {
+    "name": "Friends of Parker",
+    "candidate": "Darisha Parker",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40596,
+    "expenditures": null
+   }
+  ],
+  "199": [
+   {
+    "name": "GLEIM, BARBARA CITIZENS FOR",
+    "candidate": "Barbara Gleim",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 65919.29,
+    "expenditures": null
+   },
+   {
+    "name": "STALLWORTH FOR PA",
+    "candidate": "TaWanda Hunter Stallworth",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40858.94,
+    "expenditures": null
+   }
+  ],
+  "200": [
+   {
+    "name": "CHRIS JOHNSON FOR PA",
+    "candidate": "Chris Johnson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 97641.04,
+    "expenditures": null
+   }
+  ],
+  "201": [
+   {
+    "name": "ANDRE CARROLL",
+    "candidate": "Andre Carroll",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "202": [
+   {
+    "name": "FRIENDS OF JARED SOLOMON",
+    "candidate": "Jared Solomon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 276477,
+    "expenditures": null
+   }
+  ],
+  "203": [
+   {
+    "name": "ANTHONY BELLMON",
+    "candidate": "Anthony Bellmon",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "2": [
+   {
+    "name": "CHRISTINE M. TARTAGLIONE",
+    "candidate": "Christine Tartaglione",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "FRIENDS OF TODD JOHNSON",
+    "candidate": "Todd Johnson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 15841.1,
+    "expenditures": null
+   },
+   {
+    "name": "ARTHUR HAYWOOD",
+    "candidate": "Art Haywood",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 4212.71,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "FARRY, FRANK FRIENDS OF                                     ",
+    "candidate": "Frank Farry",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6122388.22,
+    "expenditures": null
+   },
+   {
+    "name": "FRIEND OF EILEEN ALBILLAR",
+    "candidate": "Eileen Hartnett Albillar",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 377574.9,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Williams for Senate",
+    "candidate": "Anthony Williams",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 417760,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "GREG BANKOS FOR PA SENATE",
+    "candidate": "Gregory Bankos Jr.",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35025.11,
+    "expenditures": null
+   },
+   {
+    "name": "SANTARSIERO FOR STATE SENATE",
+    "candidate": "Steve Santarsiero",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 465120.4,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "MARIA COLLETT",
+    "candidate": "Maria Collett",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "COSTELLO FOR PA SENATE",
+    "candidate": "Robert Costello III",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "FRIENDS OF NICK MILLER",
+    "candidate": "Nick Miller",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 809054.23,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF OMY MALDONADO",
+    "candidate": "Omy Maldonado",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 78252.22,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "MARK PINSLEY",
+    "candidate": "Mark Pinsley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "JARRETT COLEMAN",
+    "candidate": "Jarrett Coleman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "VOTE FOR SCOTT JANNEY",
+    "candidate": "Scott Janney",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35656.63,
+    "expenditures": null
+   },
+   {
+    "name": "BOSCOLA, LISA FRIENDS OF                                    ",
+    "candidate": "Lisa Boscola",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 257085.7,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "BAKER, ELISABETH FOR SENATE                                 ",
+    "candidate": "Lisa Baker",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 777609.39,
+    "expenditures": null
+   },
+   {
+    "name": "JACKIE BAKER FOR PA",
+    "candidate": "Jaclyn Baker",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5032.5,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "SHARON SOLTIS SPARANO",
+    "candidate": "Sharon Soltis",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 8039.89,
+    "expenditures": null
+   },
+   {
+    "name": "FLYNN, MARTY FRIENDS OF",
+    "candidate": "Martin Flynn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 545839,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "FRIENDS OF CHRISTOPHER THOMAS",
+    "candidate": "Christopher Thomas",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 490968.84,
+    "expenditures": null
+   },
+   {
+    "name": "MIKE SCHONEWOLF",
+    "candidate": "Michael Schonewolf Jr.",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "TRACY PENNYCUICK",
+    "candidate": "Tracy Pennycuick",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "FRIENDS OF TIM KEARNEY",
+    "candidate": "Timothy Kearney",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 105765.32,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF GAIL SCOTT",
+    "candidate": "Gail Scott",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1626.73,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "THOMAS JOHNSON",
+    "candidate": "Thomas Johnson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "KRISTIN PHILLIPS-HILL",
+    "candidate": "Kristin Phillips-Hill",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "FRIENDS OF STEEG",
+    "candidate": "Sean Steeg",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8062.85,
+    "expenditures": null
+   },
+   {
+    "name": "WARD, JUDITH F ",
+    "candidate": "Judith Ward",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2125.76,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "STEFANO, PAT FRIENDS OF",
+    "candidate": "Patrick Stefano",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 258632.85,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "COMMITTEE TO ELECT NATHAN WOOD",
+    "candidate": "Nathan Wood",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40620.34,
+    "expenditures": null
+   },
+   {
+    "name": "GREG ROTHMAN",
+    "candidate": "Greg Rothman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "FRIENDS OF JAMES MALONE",
+    "candidate": "James Malone",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 3517596.8,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF TOM JONES ",
+    "candidate": "Tom Jones",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 4513430.24,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "THOMAS W WEST",
+    "candidate": "Thomas West",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "LINDSEY WILLIAMS FOR PA",
+    "candidate": "Lindsey Williams",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 227177.78,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Friends of Brian Wrightson",
+    "candidate": "Brian Wrightson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 260190.59,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF ROSEMARY BROWN                               ",
+    "candidate": "Rosemary Brown",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 260523.23,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "WAYNE FONTANA",
+    "candidate": "Wayne Fontana",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "MELISSA DICRANIAN",
+    "candidate": "Melissa Dicranian",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "KATIE MUTH",
+    "candidate": "Katie Muth",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "CAMERA BARTOLOTTA",
+    "candidate": "Camera Bartolotta",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "FRIENDS OF WAYNE MOYER",
+    "candidate": "Wayne Moyer",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 100,
+    "expenditures": null
+   },
+   {
+    "name": "CHRISTOPHER GEBHARD",
+    "candidate": "Chris Gebhard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "FRIENDS OF SUE MULVEY",
+    "candidate": "Sue Mulvey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9903.96,
+    "expenditures": null
+   },
+   {
+    "name": "MICHELE BROOKS",
+    "candidate": "Michele Brooks",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ]
+ }
+}

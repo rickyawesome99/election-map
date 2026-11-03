@@ -1,0 +1,2106 @@
+{
+ "state": "NC",
+ "cycle": 2026,
+ "source": "North Carolina State Board of Elections transactions (contributions)",
+ "dataThrough": "12/31/2026",
+ "house": {
+  "1": [
+   {
+    "name": "ELECT ED GOODWIN",
+    "candidate": "Ed Goodwin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 25635,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "B RAY JEFFERS FOR NORTH CAROLINA",
+    "candidate": "Ray Jeffers",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19320,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "TYSON FOR NC HOUSE 2",
+    "candidate": "Steve Tyson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 133498.52,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "COMMITTEE TO ELECT BILL WARD",
+    "candidate": "Bill Ward",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 583267.89,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "ELECT MARK SPEED",
+    "candidate": "Mark Speed",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 200634.27,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT CORY THORNTON",
+    "candidate": "Cory Thornton",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 578069.84,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "COMMITTEE TO ELECT GLORISTINE BROWN",
+    "candidate": "Gloristine Brown",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27378.15,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT CATHY THORNE BYNUM",
+    "candidate": "Cathy Bynum",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12327.8,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "CLAIRE KEMPNER FOR NC",
+    "candidate": "Claire Kempner",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 170869.99,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "JOHN BELL COMM",
+    "candidate": "John Bell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 655676.32,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "CHRIS HUMPHREY COMMITTEE",
+    "candidate": "Chris Humphrey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 135217.9,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "JASON MOORE FOR NC",
+    "candidate": "Jason Moore",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11277.77,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "ELECT WYATT GABLE",
+    "candidate": "Wyatt Gable",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 64050.73,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "PHIL SHEPARD NC HOUSE",
+    "candidate": "Phillip Shepard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 23551,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT CHRISTOPHER SCHULTE",
+    "candidate": "Christopher Schulte",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 940,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "CARSON SMITH FOR NC HOUSE",
+    "candidate": "Carson Smith Jr.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 56151,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "COMM TO ELECT FRANK ILER",
+    "candidate": "Frank Iler",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 75890.73,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "ELECT DEB BUTLER",
+    "candidate": "Deb Butler",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 60774.65,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS TO ELECT LATISHA GRADY",
+    "candidate": "Latisha Grady",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 28383.41,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "COMMITTEE TO ELECT CHARLES W. MILLER NC HOUSE",
+    "candidate": "Charles Miller",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 259618.99,
+    "expenditures": null
+   },
+   {
+    "name": "SCOTT NASIFF FOR NC",
+    "candidate": "Scott Nasiff",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 69813.41,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "COMMITTEE TO ELECT YA LIU",
+    "candidate": "Ya Liu",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 80341,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT BRYSON JOHNSON",
+    "candidate": "Bryson Johnson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 6293.17,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "COMMITTEE TO ELECT WELLIE JACKSON",
+    "candidate": "Wellie Jackson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 350384.51,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "PATRICIA SMITH FOR HOUSE 23",
+    "candidate": "Patricia Smith",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17111,
+    "expenditures": null
+   },
+   {
+    "name": "ELECT BRENT ROBERSON",
+    "candidate": "Brent Roberson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5029.5,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "BLAKE BOYKIN FOR NC HOUSE",
+    "candidate": "Blake Boykin",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 191895.98,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "ALLEN CHESSER FOR NC HOUSE",
+    "candidate": "Allen Chesser II",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 451975.26,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT LORENZA WILKINS",
+    "candidate": "Lorenza M. Wilkins",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 242648.44,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "FRIENDS OF L'BERTRICE SOLOMON",
+    "candidate": "L'Bertrice Solomon",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 42791.78,
+    "expenditures": null
+   },
+   {
+    "name": "DONNA WHITE FOR NC HOUSE 26",
+    "candidate": "Donna McDowell White",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 157604.1,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "COMMITTEE TO ELECT RODNEY D. PIERCE",
+    "candidate": "Rodney D. Pierce",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 315252.12,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "LARRY C STRICKLAND CAMPAIGN COMMITTEE",
+    "candidate": "Larry Strickland",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 475769.77,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "COMMITTEE TO ELECT VERNETTA ALSTON",
+    "candidate": "Vernetta Alston",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 144449.54,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "MARCIA MOREY CAMPAIGN",
+    "candidate": "Marcia Morey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 54088.33,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "ZACK HAWKINS FOR NORTH CAROLINA",
+    "candidate": "Zack Hawkins",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 50438,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "BRYAN COHN FOR NC",
+    "candidate": "Bryan Cohn",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 485447.93,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT FRANK SOSSAMON",
+    "candidate": "Frank Sossamon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 130224.43,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "MONIKA JOHNSON-HOSTLER FOR NC",
+    "candidate": "Monika Johnson-Hostler",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 29057.59,
+    "expenditures": null
+   },
+   {
+    "name": "THE COMMITTEE TO ELECT MATTHEW ORR",
+    "candidate": "Matthew Orr",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1139.51,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "TIM LONGEST FOR NORTH CAROLINA",
+    "candidate": "Tim Longest",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 76455.11,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT ED GEORGE",
+    "candidate": "Ed George",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 189.51,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "MIKE SCHIETZELT FOR NC",
+    "candidate": "Mike Schietzelt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 831106.44,
+    "expenditures": null
+   },
+   {
+    "name": "HOPKINS FOR HOUSE",
+    "candidate": "Evonne S. Hopkins",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 877860.02,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "COMM TO ELECT JULIE VON HAEFEN",
+    "candidate": "Julie von Haefen",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 46467.1,
+    "expenditures": null
+   },
+   {
+    "name": "MARY INSPRUCKER COMMITTEE",
+    "candidate": "Mary Insprucker",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 33882.32,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "COMMITTEE TO ELECT ERIN PARE",
+    "candidate": "Erin Paré",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 810384.59,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "ELECT CORDOVA FOR HOUSE",
+    "candidate": "Jorge Cordova",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1160.15,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT WAYNE COCKRELL",
+    "candidate": "Wayne Cockrell",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 139.51,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "COMMITTEE TO ELECT LUCAS EVERETT JONES",
+    "candidate": "Lucas Jones",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 139.51,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "FORSTER FOR HOUSE",
+    "candidate": "Bruce Forster",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3364.1,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "COMMITTEE TO ELECT MIKE COLVIN",
+    "candidate": "Mike Colvin",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15636.04,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "DIANE WHEATLEY FOR NC HOUSE 43",
+    "candidate": "Diane Wheatley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 106136.17,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT JANENE ACKLES DUBLIN",
+    "candidate": "Janene Ackles",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9974.3,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "CHARLES SMITH FOR NC",
+    "candidate": "Charles Smith",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 13283.51,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "COMMITTEE TO ELECT FRANCES VINELL JACKSON",
+    "candidate": "Frances Jackson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 47233.49,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "COMMITTEE TO ELECT BRENDEN JONES",
+    "candidate": "Brenden Jones",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1224201,
+    "expenditures": null
+   },
+   {
+    "name": "BRITTANY NEWTON FOR NC HOUSE",
+    "candidate": "Brittany Newton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 171593.87,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "FRIENDS OF JOHN LOWERY",
+    "candidate": "John Lowery",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 70802.74,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "COMM TO ELECT GARLAND PIERCE",
+    "candidate": "Garland Pierce",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 233659.53,
+    "expenditures": null
+   },
+   {
+    "name": "RALPH CARTER FOR NC HOUSE",
+    "candidate": "Ralph Carter",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 67392.21,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "THOMAS FOR HOUSE",
+    "candidate": "Daran Thomas",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2728.25,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "COMMITTEE TO ELECT APRIL MONTGOMERY",
+    "candidate": "April Montgomery",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 79349.25,
+    "expenditures": null
+   },
+   {
+    "name": "CHARLES TAYLOR FOR NC HOUSE",
+    "candidate": "Charles Taylor",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 163275.51,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "NORTH CAROLINIANS FOR BEN MOSS",
+    "candidate": "Ben Moss",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 88496,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT JOE PARFITT",
+    "candidate": "Joe Parfitt",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5744.48,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "PENNY FOR NC HOUSE",
+    "candidate": "Howard Penny Jr.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 82681.73,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "COMM TO ELECT ROBERT T REIVES II",
+    "candidate": "Robert Reives",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 672150.51,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "ELECT CLANCY BAUCOM",
+    "candidate": "Clancy Baucom",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 79970.51,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "ALLEN BUANSI FOR NC",
+    "candidate": "Allen Buansi",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 182557.92,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "TRACY CLARK FOR NC",
+    "candidate": "Tracy Clark",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 83265,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "COMMITTEE TO ELECT AMOS QUICK",
+    "candidate": "Amos Quick",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5366,
+    "expenditures": null
+   }
+  ],
+  "59": [
+   {
+    "name": "COMMITTEE TO ELECT ELMA HAIRSTON",
+    "candidate": "Elma Hairston",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17193.15,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "ELECT AMANDA COOK",
+    "candidate": "Amanda Cook",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 76056.08,
+    "expenditures": null
+   }
+  ],
+  "61": [
+   {
+    "name": "HARRISON FOR HOUSE (MARY PRICE TAYLOR)",
+    "candidate": "Mary Harrison",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 30710,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "SHELLY HEADEN FOR NORTH CAROLINA",
+    "candidate": "Shelly Headen",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 107531.02,
+    "expenditures": null
+   },
+   {
+    "name": "BLUST FOR NC HOUSE",
+    "candidate": "John M. Blust",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 545268.78,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "RYAN MOFFITT FOR NC HOUSE",
+    "candidate": "Ryan Moffitt",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 521820.64,
+    "expenditures": null
+   },
+   {
+    "name": "BALTUTIS FOR NC HOUSE",
+    "candidate": "Ian Baltutis",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 323954.46,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "THE COMMITTEE TO ELECT LEVON BARNES",
+    "candidate": "LeVon Barnes",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 223404.02,
+    "expenditures": null
+   },
+   {
+    "name": "RIDDELL FOR NC HOUSE 64",
+    "candidate": "Dennis Riddell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 415577.45,
+    "expenditures": null
+   }
+  ],
+  "65": [
+   {
+    "name": "GAVIN MCGAUGHEY FOR NC",
+    "candidate": "Gavin McGaughey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5260.86,
+    "expenditures": null
+   },
+   {
+    "name": "SETH WOODALL FOR NC HOUSE",
+    "candidate": "Seth Woodall",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 64710.51,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "COMMITTEE TO ELECT CODY HUNEYCUTT",
+    "candidate": "Cody Huneycutt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 272629.72,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "COMMITTEE TO ELECT DEREK WARRINER",
+    "candidate": "Derek Warriner",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 90426.02,
+    "expenditures": null
+   },
+   {
+    "name": "DAVID WILLIS FOR NC",
+    "candidate": "David Willis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 193879.76,
+    "expenditures": null
+   }
+  ],
+  "69": [
+   {
+    "name": "COMMITTEE TO ELECT HEIDI SINSLEY",
+    "candidate": "Heidi Sinsley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4939.44,
+    "expenditures": null
+   },
+   {
+    "name": "DEAN ARP FOR NC HOUSE",
+    "candidate": "Dean Arp",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 227617.32,
+    "expenditures": null
+   }
+  ],
+  "70": [
+   {
+    "name": "COMMITTEE TO ELECT BRIAN BIGGS",
+    "candidate": "Brian Biggs",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 242988.2,
+    "expenditures": null
+   },
+   {
+    "name": "BILL MCCASKILL FOR NC HOUSE",
+    "candidate": "Bill McCaskill",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2567.02,
+    "expenditures": null
+   }
+  ],
+  "71": [
+   {
+    "name": "COMMITTEE TO ELECT KANIKA BROWN",
+    "candidate": "Kanika Brown",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 5025,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "AMBER BAKER CAMPAIGN",
+    "candidate": "Amber Baker",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 26738.4,
+    "expenditures": null
+   }
+  ],
+  "73": [
+   {
+    "name": "COMMITTEE TO ELECT JONATHAN ALMOND",
+    "candidate": "Jonathan Almond",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 576517.88,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "COMMITTEE TO ELECT JEFF ZENGER TO NC STATE HOUSE",
+    "candidate": "Jeff Zenger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 420825.54,
+    "expenditures": null
+   },
+   {
+    "name": "BRANDALL REDD FOR NORTH CAROLINA HOUSE",
+    "candidate": "Amy Taylor North",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 452.4,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "JEN WILES FOR NC HOUSE",
+    "candidate": "Jen Wiles",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 46050.05,
+    "expenditures": null
+   },
+   {
+    "name": "COMM TO ELECT DONNY LAMBETH",
+    "candidate": "Donny C. Lambeth",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 282626,
+    "expenditures": null
+   }
+  ],
+  "77": [
+   {
+    "name": "SABRINA HARRIS FOR NC 77",
+    "candidate": "Sabrina Harris",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 501.21,
+    "expenditures": null
+   },
+   {
+    "name": "JULIA C HOWARD FOR HOUSE",
+    "candidate": "Julia Howard",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 64176,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "NEAL JACKSON FOR NC HOUSE",
+    "candidate": "Neal Jackson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 537000.01,
+    "expenditures": null
+   },
+   {
+    "name": "MATT HOLWAY FOR NC",
+    "candidate": "Matt Holway",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 17884.42,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "SAM WATFORD FOR NC HOUSE",
+    "candidate": "Sam Watford",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19526,
+    "expenditures": null
+   }
+  ],
+  "81": [
+   {
+    "name": "LARRY W POTTS - NC HOUSE OF REPRESENTATIVES",
+    "candidate": "Larry Potts",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 183250,
+    "expenditures": null
+   },
+   {
+    "name": "DYLAN TUCKER FOR NC",
+    "candidate": "Dylan Tucker",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1050,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "ELECT BRIAN ECHEVARRIA",
+    "candidate": "Brian Echevarria",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 732389.64,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT CHRIS BISHOPP",
+    "candidate": "Chris Bishopp",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 220713.72,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "COMMITTEE TO ELECT GRANT CAMPBELL",
+    "candidate": "Grant Campbell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 331903.36,
+    "expenditures": null
+   }
+  ],
+  "84": [
+   {
+    "name": "COMMITTEE TO ELECT MCNEELY FOR N.C. HOUSE",
+    "candidate": "Jeffrey McNeely",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 207951,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "SUZANNE GAVENUS FOR NC HOUSE 85",
+    "candidate": "Suzanne Gavenus",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29446.15,
+    "expenditures": null
+   },
+   {
+    "name": "DUDLEY GREENE FOR NC HOUSE",
+    "candidate": "Dudley Greene",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 33203,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "HUGH BLACKWELL FOR NC HOUSE",
+    "candidate": "Hugh Blackwell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 342197.11,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "CITIZENS FOR DESTIN HALL",
+    "candidate": "Destin Hall",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2558354.42,
+    "expenditures": null
+   },
+   {
+    "name": "IRIS BENDER FOR NC",
+    "candidate": "Iris Bender",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 16166.99,
+    "expenditures": null
+   }
+  ],
+  "88": [
+   {
+    "name": "COMMITTEE TO ELECT MARY BELK",
+    "candidate": "Mary Belk",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20614.85,
+    "expenditures": null
+   },
+   {
+    "name": "RAY CRAIG - COMMON SENSE LEADERSHIP",
+    "candidate": "Ray Craig",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 14648.41,
+    "expenditures": null
+   }
+  ],
+  "89": [
+   {
+    "name": "COMM TO ELECT MITCHELL SMITH SETZER",
+    "candidate": "Mitchell Setzer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 185052,
+    "expenditures": null
+   }
+  ],
+  "90": [
+   {
+    "name": "COMMITTEE TO ELECT KEN BADGETT",
+    "candidate": "Ken Badgett",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 50.24,
+    "expenditures": null
+   },
+   {
+    "name": "DAN KIGER FOR NC HOUSE",
+    "candidate": "Dan Kiger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11726,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "KYLE HALL COMMITTEE",
+    "candidate": "Kyle Hall",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 481444.88,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "TERRY BROWN FOR NORTH CAROLINA",
+    "candidate": "Terry Brown Jr.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 69605.13,
+    "expenditures": null
+   }
+  ],
+  "93": [
+   {
+    "name": "COMMITTEE TO ELECT RAY PICKETT",
+    "candidate": "Ray Pickett",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 97592.14,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "HARRY WARREN NC HOUSE",
+    "candidate": "Andy Warren",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12934.11,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "ADAMS FOR NC HOUSE",
+    "candidate": "Jay Adams",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 68369.73,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "HEATHER RHYNE COMMITTEE",
+    "candidate": "Heather Rhyne",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 92862.39,
+    "expenditures": null
+   },
+   {
+    "name": "GREG MCBRYDE FOR HOUSE NC 97",
+    "candidate": "Greg McBryde",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7685.55,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "BETH HELFRICH FOR NC",
+    "candidate": "Beth Gardner Helfrich",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 378518.22,
+    "expenditures": null
+   },
+   {
+    "name": "JOHN RHODES NC HOUSE COMMITTEE",
+    "candidate": "John Rhodes",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 17760,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "THE COMMITTEE TO ELECT VELERIA M LEVY",
+    "candidate": "Veleria Levy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 26622.07,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "JULIA GREENFIELD FOR NC",
+    "candidate": "Julia Greenfield",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24698,
+    "expenditures": null
+   }
+  ],
+  "101": [
+   {
+    "name": "COMMITTEE TO ELECT CAROLYN LOGAN",
+    "candidate": "Carolyn Logan",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12168.36,
+    "expenditures": null
+   }
+  ],
+  "102": [
+   {
+    "name": "COMM TO RE-ELECT BECKY CARNEY",
+    "candidate": "Becky Carney",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 23087,
+    "expenditures": null
+   }
+  ],
+  "103": [
+   {
+    "name": "COMMITTEE TO ELECT LAURA BUDD",
+    "candidate": "Laura Budd",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 90483.32,
+    "expenditures": null
+   }
+  ],
+  "104": [
+   {
+    "name": "TRINA BOYD FOR DISTRICT 104",
+    "candidate": "Trina V. Boyd",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1371.15,
+    "expenditures": null
+   }
+  ],
+  "105": [
+   {
+    "name": "KEN MCCOOL FOR NC",
+    "candidate": "Ken McCool",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 685330.4,
+    "expenditures": null
+   },
+   {
+    "name": "TRICIA COTHAM COMMITTEE",
+    "candidate": "Tricia Cotham",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 317825.51,
+    "expenditures": null
+   }
+  ],
+  "106": [
+   {
+    "name": "FRIENDS OF REV. DR. RODNEY SADLER",
+    "candidate": "Rodney Sadler",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 287740.07,
+    "expenditures": null
+   }
+  ],
+  "107": [
+   {
+    "name": "COMMITTEE TO ELECT AISHA DEW",
+    "candidate": "Aisha O. Dew",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 19859.14,
+    "expenditures": null
+   }
+  ],
+  "108": [
+   {
+    "name": "FRIENDS TO ELECT JOHN TORBETT",
+    "candidate": "John Torbett",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 45726,
+    "expenditures": null
+   }
+  ],
+  "109": [
+   {
+    "name": "DONNIE LOFTIS FOR NC HOUSE",
+    "candidate": "Donnie Loftis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 57597.24,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT MARK D CARVER",
+    "candidate": "Mark Carver",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6091.08,
+    "expenditures": null
+   }
+  ],
+  "110": [
+   {
+    "name": "FRIENDS OF CAROLINE EASON",
+    "candidate": "Caroline Eason",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 77018.3,
+    "expenditures": null
+   }
+  ],
+  "111": [
+   {
+    "name": "PAUL SCOTT FOR HOUSE",
+    "candidate": "Paul Scott",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 62908.18,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT JERRY BLAKE",
+    "candidate": "Jerry Blake",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 371.76,
+    "expenditures": null
+   }
+  ],
+  "112": [
+   {
+    "name": "FRIENDS OF JORDAN LOPEZ",
+    "candidate": "Jordan Lopez",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 39294.78,
+    "expenditures": null
+   }
+  ],
+  "113": [
+   {
+    "name": "COMMITTEE TO ELECT JAKE JOHNSON",
+    "candidate": "Jake Johnson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 344086.16,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT JOHN MORGAN",
+    "candidate": "John Morgan",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8982.94,
+    "expenditures": null
+   }
+  ],
+  "114": [
+   {
+    "name": "ELECT ERIC AGER",
+    "candidate": "J. Eric Ager",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40905.26,
+    "expenditures": null
+   }
+  ],
+  "115": [
+   {
+    "name": "ANTHONY PENLAND COMMITTEE",
+    "candidate": "Anthony Penland",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 130765.35,
+    "expenditures": null
+   }
+  ],
+  "117": [
+   {
+    "name": "FRIENDS OF LYNNE RUSSO",
+    "candidate": "Lynne Russo",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 143378.06,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT CHELSEA WALSH",
+    "candidate": "Chelsea Walsh",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18695,
+    "expenditures": null
+   }
+  ],
+  "118": [
+   {
+    "name": "COMMITTEE TO ELECT JAMES M. (JIMMY) ROGERS",
+    "candidate": "Jimmy Rogers",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 57836.74,
+    "expenditures": null
+   }
+  ],
+  "119": [
+   {
+    "name": "MARK BURROWS FOR NC HOUSE 119",
+    "candidate": "Mark R. Burrows",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 264416.61,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT ANNA FERGUSON",
+    "candidate": "Anna Ferguson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 508111.18,
+    "expenditures": null
+   }
+  ],
+  "120": [
+   {
+    "name": "CALEB BROWN FOR NC",
+    "candidate": "Caleb Brown",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 21502.78,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT KARL GILLESPIE",
+    "candidate": "Karl Gillespie",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 177544.2,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "1": [
+   {
+    "name": "TILLETT FOR SENATE",
+    "candidate": "Jerry R. Tillett",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 187426.86,
+    "expenditures": null
+   },
+   {
+    "name": "MELISSA ZEHNER FOR SENATE",
+    "candidate": "Melissa Zehner",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 51741.86,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "COMMITTEE TO ELECT ROY SURRETT",
+    "candidate": "Roy Surrett",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 95728.59,
+    "expenditures": null
+   },
+   {
+    "name": "CITIZENS TO ELECT NORMAN SANDERSON",
+    "candidate": "Norman Sanderson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 118486.61,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "COMMITTEE TO ELECT CHARLES DUDLEY",
+    "candidate": "Charles Dudley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29069.53,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS TO ELECT BOB BRINSON",
+    "candidate": "Bob Brinson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 232017.43,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "JESS RIVERA FOR NORTH CAROLINA",
+    "candidate": "Jess Rivera",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 325693.96,
+    "expenditures": null
+   },
+   {
+    "name": "NEWTON FOR SENATE",
+    "candidate": "Eldon Sharpe Newton III",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 16300,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "KANDIE SMITH FOR NC",
+    "candidate": "Kandie Smith",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 73125.3,
+    "expenditures": null
+   },
+   {
+    "name": "HENRY HOSTETLER NC SENATE CAMPAIGN FUND",
+    "candidate": "Henry Hostetler",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18645.12,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "LAZZARA FOR NC SENATE COMMITTEE",
+    "candidate": "Michael Lazzara",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 372759.48,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "JESSICA BICHLER FOR NC",
+    "candidate": "Jessica Bichler",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1027361.97,
+    "expenditures": null
+   },
+   {
+    "name": "COMM TO ELECT MICHAEL LEE",
+    "candidate": "Michael Lee",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 2804488.55,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "RABON FOR SENATE",
+    "candidate": "William Rabon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 518188.7,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "BRENT JACKSON FOR NC SENATE",
+    "candidate": "Brent Jackson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1209895.83,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "COMM TO ELECT BENTON SAWREY",
+    "candidate": "Benton Sawrey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 691600.8,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT KEVIN TERRETT",
+    "candidate": "Kevin Terrett",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 341.5,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "CITIZENS TO ELECT JAMES D. GAILLIARD (CTEJDG)",
+    "candidate": "James Gailliard",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1640180.53,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT LISA BARNES",
+    "candidate": "Lisa Barnes",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3244154.28,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "TANYA WHITE ANDERSON 4 NC SENATE",
+    "candidate": "Tanya White Anderson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8097.22,
+    "expenditures": null
+   },
+   {
+    "name": "JIM BURGIN FOR SENATE COMMITTEE",
+    "candidate": "Jim Burgin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 167101,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "LISA GRAFSTEIN CAMPAIGN",
+    "candidate": "Lisa Grafstein",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 403837.52,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT ROBERT VAN BREDERODE",
+    "candidate": "Robert van Brederode",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2448.4,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "CITIZENS FOR DAN BLUE",
+    "candidate": "Dan Blue",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 167795.55,
+    "expenditures": null
+   },
+   {
+    "name": "ANGELA MCCARTY FOR SENATE",
+    "candidate": "Angela McCarty",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 139.51,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "BANKERT FOR NC SENATE",
+    "candidate": "David Bankert",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2834.51,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "GALE ADCOCK FOR NC SENATE",
+    "candidate": "Gale Adcock",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 184502.63,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT JONATHAN D. MILLER",
+    "candidate": "Jonathan Miller",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 599.51,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "FRIENDS FOR SYDNEY BATCH",
+    "candidate": "Sydney Batch",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 1014210.45,
+    "expenditures": null
+   },
+   {
+    "name": "FRIENDS OF SHIRLEY JOHNSON",
+    "candidate": "Shirley Johnson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 20139.74,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT PATRICK BOWERSOX",
+    "candidate": "Patrick Bowersox",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 339.51,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "FRIENDS OF CHRIS STOCK",
+    "candidate": "Chris Stock",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 537678.18,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT BRAD HESSEL",
+    "candidate": "Brad Hessel",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2158.55,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "FRIENDS OF VAL APPLEWHITE",
+    "candidate": "Val Applewhite",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 27911.33,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "MCINNIS FOR STATE SENATE",
+    "candidate": "Tom McInnis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 691262.52,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "JONAH GARSON FOR NC",
+    "candidate": "Jonah Garson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 268798.63,
+    "expenditures": null
+   },
+   {
+    "name": "LAURA PICHARDO FOR NC SENATE",
+    "candidate": "Laura Pichardo",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 3570.31,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "CITIZENS TO ELECT CATINA HAMM",
+    "candidate": "Catina Hamm",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6352.22,
+    "expenditures": null
+   },
+   {
+    "name": "DANNY BRITT FOR NC SENATE",
+    "candidate": "Danny Earl Britt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 630369.7,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "COMMITTEE TO ELECT AMY GALEY",
+    "candidate": "Amy Galey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 416055.31,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "SAM PAGE 4 NC",
+    "candidate": "Sam Page",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 126919.47,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "COMM TO ELECT GLADYS A ROBINSON",
+    "candidate": "Gladys Robinson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 89500,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "DAVE CRAVEN FOR NC",
+    "candidate": "Dave Craven",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 1488423.09,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "COMMITTEE TO ELECT ANDY BOWLINE",
+    "candidate": "Andy Bowline",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14240.45,
+    "expenditures": null
+   },
+   {
+    "name": "DANA CAUDILL JONES NC SENATE",
+    "candidate": "Dana Caudill Jones",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 106865.51,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "PAUL LOWE FOR NC SENATE",
+    "candidate": "Paul Lowe",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 148502.99,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT PETER ANTINOZZI",
+    "candidate": "Peter Antinozzi",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 365.09,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "COMM TO ELECT CARL FORD",
+    "candidate": "Carl Ford",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 71336.78,
+    "expenditures": null
+   },
+   {
+    "name": "COMMITTEE TO ELECT GARY WEART",
+    "candidate": "Gary Weart",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15329.15,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "APRIL COOK FOR NC",
+    "candidate": "April Cook",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 842974.57,
+    "expenditures": null
+   },
+   {
+    "name": "KEVIN CRUTCHFIELD FOR NC",
+    "candidate": "Kevin Crutchfield",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 682974.79,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "TODD JOHNSON FOR NC SENATE",
+    "candidate": "Todd Johnson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 474452.73,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "EDDIE SETTLE FOR SENATE",
+    "candidate": "Eddie Settle",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 238832.47,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "COMM TO ELECT VICKIE SAWYER",
+    "candidate": "Vickie Sawyer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 150751,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "DEANDREA SALVADOR FOR NC",
+    "candidate": "DeAndrea Salvador",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 12663.91,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "JOYCE WADDELL SENATE 40 CAMPAIGN",
+    "candidate": "Joyce Waddell",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 20408,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "WOODSON BRADLEY FOR NC",
+    "candidate": "Woodson Bradley",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 437848.14,
+    "expenditures": null
+   },
+   {
+    "name": "STACIE MCGINN FOR NC SENATE",
+    "candidate": "Stacie McGinn",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 448511.86,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "STEVE RUTHERFORD FOR NC SENATE",
+    "candidate": "Steve Rutherford",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6868.75,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "FRIENDS OF TED ALEXANDER",
+    "candidate": "Ted Alexander",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 182801.5,
+    "expenditures": null
+   },
+   {
+    "name": "MOVING NC FORWARD WITH ROD POWELL",
+    "candidate": "Rod Powell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10021.51,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "MARK HOLLO FOR NC SENATE",
+    "candidate": "Mark Hollo",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 121090.65,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "WARREN DANIEL FOR NC SENATE",
+    "candidate": "Warren Daniel",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 103446.37,
+    "expenditures": null
+   },
+   {
+    "name": "ELECT KYLE WHISNANT NC SENATE",
+    "candidate": "Kyle Whisnant",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 866,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "RALPH HISE FOR NC SENATE",
+    "candidate": "Ralph Hise",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 424922.25,
+    "expenditures": null
+   },
+   {
+    "name": "FRANK HUGHES FOR NC SENATE",
+    "candidate": "Frank Patton Hughes III",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13893.37,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "JULIE MAYFIELD FOR NC SENATE",
+    "candidate": "Julie Mayfield",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 295810.51,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "FRIENDS OF KEVIN CORBIN",
+    "candidate": "Kevin Corbin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 86292.34,
+    "expenditures": null
+   },
+   {
+    "name": "TOM DOWNING FOR NC SENATE",
+    "candidate": "Tom Downing",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12526.48,
+    "expenditures": null
+   }
+  ]
+ }
+}

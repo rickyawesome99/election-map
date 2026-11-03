@@ -1,0 +1,2164 @@
+{
+ "state": "SC",
+ "cycle": 2026,
+ "source": "South Carolina Ethics Commission (cumulative campaign contributions)",
+ "dataThrough": "12/31/2026",
+ "house": {
+  "1": [
+   {
+    "name": "William R Whitmire",
+    "candidate": "Bill Whitmire",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 19150,
+    "expenditures": null
+   },
+   {
+    "name": "Jasmine R Williams",
+    "candidate": "Jasmine Williams",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6026.69,
+    "expenditures": null
+   }
+  ],
+  "2": [
+   {
+    "name": "Adam L Duncan",
+    "candidate": "Adam Duncan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37754.47,
+    "expenditures": null
+   },
+   {
+    "name": "Candace Schutt",
+    "candidate": "Candace Schutt",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13433.15,
+    "expenditures": null
+   },
+   {
+    "name": "Christopher D Des Marais",
+    "candidate": "Chris Des Marais",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 2422.92,
+    "expenditures": null
+   }
+  ],
+  "3": [
+   {
+    "name": "J P Bowers",
+    "candidate": "Phillip Bowers",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 20100,
+    "expenditures": null
+   },
+   {
+    "name": "Claiborne Linvill",
+    "candidate": "Claiborne Linvill",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 41053.69,
+    "expenditures": null
+   }
+  ],
+  "4": [
+   {
+    "name": "Clay Counts",
+    "candidate": "Clay Counts",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 16290,
+    "expenditures": null
+   },
+   {
+    "name": "Derrick Kruse",
+    "candidate": "Derrick Kruse",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2209.31,
+    "expenditures": null
+   }
+  ],
+  "5": [
+   {
+    "name": "Neal Collins",
+    "candidate": "Neal Collins",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 58537.16,
+    "expenditures": null
+   },
+   {
+    "name": "David F Jones",
+    "candidate": "David Jones",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 208,
+    "expenditures": null
+   }
+  ],
+  "6": [
+   {
+    "name": "April Cromer",
+    "candidate": "April Cromer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 72132.26,
+    "expenditures": null
+   },
+   {
+    "name": "Jennifer Bachner",
+    "candidate": "Jennifer Bachner",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1158,
+    "expenditures": null
+   }
+  ],
+  "7": [
+   {
+    "name": "Lee Gilreath",
+    "candidate": "Lee Gilreath",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35523,
+    "expenditures": null
+   },
+   {
+    "name": "ELIZABETH W COOLEY",
+    "candidate": "Elizabeth Cooley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3790.25,
+    "expenditures": null
+   }
+  ],
+  "8": [
+   {
+    "name": "Donald G Chapman",
+    "candidate": "Don Chapman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 76197.47,
+    "expenditures": null
+   },
+   {
+    "name": "Demetrius Carson",
+    "candidate": "Demetrius Carson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3170,
+    "expenditures": null
+   }
+  ],
+  "9": [
+   {
+    "name": "Richard B Sanders",
+    "candidate": "Blake Sanders",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 32258,
+    "expenditures": null
+   },
+   {
+    "name": "Johnny Estrich",
+    "candidate": "Johnny Estrich",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1185.3,
+    "expenditures": null
+   }
+  ],
+  "10": [
+   {
+    "name": "Thomas Beach",
+    "candidate": "Thomas Beach",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 87799.65,
+    "expenditures": null
+   },
+   {
+    "name": "Camron T Stewart",
+    "candidate": "Thomas Stewart",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1062.31,
+    "expenditures": null
+   }
+  ],
+  "11": [
+   {
+    "name": "Craig A Gagnon",
+    "candidate": "Craig Gagnon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 33799.26,
+    "expenditures": null
+   },
+   {
+    "name": "Jessica Beasley",
+    "candidate": "Jessica Beasley",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9674.74,
+    "expenditures": null
+   },
+   {
+    "name": "ET Stone Williams",
+    "candidate": "Earnie Stone",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "12": [
+   {
+    "name": "Norman  D Gibson",
+    "candidate": "Daniel Gibson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14829.26,
+    "expenditures": null
+   },
+   {
+    "name": "Jumelle Brooks",
+    "candidate": "Jumelle Brooks",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 43931.15,
+    "expenditures": null
+   }
+  ],
+  "13": [
+   {
+    "name": "John R III McCravy",
+    "candidate": "John McCravy",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 39318.4,
+    "expenditures": null
+   },
+   {
+    "name": "Clarence R Wise",
+    "candidate": "C. Rauch Wise",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3758,
+    "expenditures": null
+   }
+  ],
+  "14": [
+   {
+    "name": "Michanna Tate",
+    "candidate": "Michanna Tate",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7909.34,
+    "expenditures": null
+   },
+   {
+    "name": "Richard L Shealy",
+    "candidate": "Rick Shealy",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 78235,
+    "expenditures": null
+   },
+   {
+    "name": "Henry Jones",
+    "candidate": "Henry Jones",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 104.89,
+    "expenditures": null
+   }
+  ],
+  "15": [
+   {
+    "name": "JA Moore",
+    "candidate": "JA Moore",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21489.62,
+    "expenditures": null
+   },
+   {
+    "name": "Heather B Hickman",
+    "candidate": "Heather Hickman",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18310.39,
+    "expenditures": null
+   },
+   {
+    "name": "Melissa Couture",
+    "candidate": "Melissa Couture",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "16": [
+   {
+    "name": "Mark N Willis",
+    "candidate": "Mark Willis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 18199.26,
+    "expenditures": null
+   },
+   {
+    "name": "Lynn Ramirez",
+    "candidate": "Lynn Ramirez",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 37644.12,
+    "expenditures": null
+   }
+  ],
+  "17": [
+   {
+    "name": "James M Burns",
+    "candidate": "Mike Burns",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6139.73,
+    "expenditures": null
+   },
+   {
+    "name": "Richard L Nicoloff",
+    "candidate": "Rich Nicoloff",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9059.04,
+    "expenditures": null
+   }
+  ],
+  "18": [
+   {
+    "name": "Timothy A Jr. Morgan",
+    "candidate": "Alan Morgan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 3025,
+    "expenditures": null
+   },
+   {
+    "name": "Virginia B Maclure",
+    "candidate": "Virginia Maclure",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5400.31,
+    "expenditures": null
+   }
+  ],
+  "19": [
+   {
+    "name": "Patrick B Haddon",
+    "candidate": "Patrick Haddon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12947.27,
+    "expenditures": null
+   },
+   {
+    "name": "Rachel Smith",
+    "candidate": "Rachel Smith",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1183.3,
+    "expenditures": null
+   }
+  ],
+  "20": [
+   {
+    "name": "Stephen D Frank",
+    "candidate": "Stephen Frank",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 6449.26,
+    "expenditures": null
+   },
+   {
+    "name": "Polly Elbertse",
+    "candidate": "Polly Elbertse",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "21": [
+   {
+    "name": "Dianne K Mitchell",
+    "candidate": "Dianne Mitchell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 14450,
+    "expenditures": null
+   },
+   {
+    "name": "Dexter L Reaves",
+    "candidate": "Dexter Reaves",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 425,
+    "expenditures": null
+   }
+  ],
+  "22": [
+   {
+    "name": "Paul B Wickensimer",
+    "candidate": "Paul Wickensimer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 40572.6,
+    "expenditures": null
+   },
+   {
+    "name": "Joshua S Kendrick",
+    "candidate": "Josh Kendrick",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 41241.1,
+    "expenditures": null
+   }
+  ],
+  "23": [
+   {
+    "name": "Chandra E Dillard",
+    "candidate": "Chandra Dillard",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7959.96,
+    "expenditures": null
+   }
+  ],
+  "24": [
+   {
+    "name": "Bruce W Bannister",
+    "candidate": "Bruce Bannister",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 344924.3,
+    "expenditures": null
+   },
+   {
+    "name": "Caroline B Avinger",
+    "candidate": "Caroline Avinger",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44286.98,
+    "expenditures": null
+   }
+  ],
+  "25": [
+   {
+    "name": "Wendell K Jones",
+    "candidate": "Wendell Jones",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17300.7,
+    "expenditures": null
+   }
+  ],
+  "26": [
+   {
+    "name": "David W Martin",
+    "candidate": "David Martin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 131658,
+    "expenditures": null
+   },
+   {
+    "name": "Jenny E Desch",
+    "candidate": "Jenny Desch",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11297.62,
+    "expenditures": null
+   },
+   {
+    "name": "Kiral M Mace",
+    "candidate": "Kiral Mace",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "27": [
+   {
+    "name": "John E MacCarthy",
+    "candidate": "John MacCarthy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12413.62,
+    "expenditures": null
+   },
+   {
+    "name": "M David Vaughan",
+    "candidate": "David Vaughan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 27988.61,
+    "expenditures": null
+   }
+  ],
+  "28": [
+   {
+    "name": "William C Huff",
+    "candidate": "Chris Huff",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 10041.01,
+    "expenditures": null
+   },
+   {
+    "name": "Alan G Buckalew",
+    "candidate": "Alan Buckalew",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3713,
+    "expenditures": null
+   }
+  ],
+  "29": [
+   {
+    "name": "Dennis C Moss",
+    "candidate": "Dennis Moss",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 53249.26,
+    "expenditures": null
+   },
+   {
+    "name": "Marina Franco",
+    "candidate": "Marina Franco",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2901.79,
+    "expenditures": null
+   }
+  ],
+  "30": [
+   {
+    "name": "Michael B Lawson",
+    "candidate": "Brian Lawson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 60749.26,
+    "expenditures": null
+   },
+   {
+    "name": "Stephanie Holstein",
+    "candidate": "Stephanie Holstein",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3431.38,
+    "expenditures": null
+   }
+  ],
+  "31": [
+   {
+    "name": "Rosalyn D Henderson-Myers",
+    "candidate": "Rosalyn Henderson-Myers",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 40099.02,
+    "expenditures": null
+   },
+   {
+    "name": "James  A Jones",
+    "candidate": "James Jones",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 104,
+    "expenditures": null
+   }
+  ],
+  "32": [
+   {
+    "name": "Walter S IV Montgomery",
+    "candidate": "Scott Montgomery",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 11449.26,
+    "expenditures": null
+   },
+   {
+    "name": "Irene Benson",
+    "candidate": "Irene Benson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12573.39,
+    "expenditures": null
+   }
+  ],
+  "33": [
+   {
+    "name": "Travis A Moore",
+    "candidate": "Travis Moore",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 107750,
+    "expenditures": null
+   },
+   {
+    "name": "Clemson G Turregano",
+    "candidate": "Clemson Turregano",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8001.83,
+    "expenditures": null
+   }
+  ],
+  "34": [
+   {
+    "name": "Sarita L Edgerton",
+    "candidate": "Sarita Edgerton",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 24767.27,
+    "expenditures": null
+   },
+   {
+    "name": "Saville Williams",
+    "candidate": "Saville Williams",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2526.71,
+    "expenditures": null
+   }
+  ],
+  "35": [
+   {
+    "name": "William M Chumley",
+    "candidate": "Bill Chumley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17578.91,
+    "expenditures": null
+   },
+   {
+    "name": "Tatiana Skipper",
+    "candidate": "Tatiana Skipper",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 208,
+    "expenditures": null
+   }
+  ],
+  "36": [
+   {
+    "name": "Robert Harris",
+    "candidate": "Robert Harris",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 29800,
+    "expenditures": null
+   },
+   {
+    "name": "Virginia L McLean",
+    "candidate": "Virginia McLean",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9443,
+    "expenditures": null
+   }
+  ],
+  "37": [
+   {
+    "name": "Steven W Long",
+    "candidate": "Steven Long",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 29849.26,
+    "expenditures": null
+   },
+   {
+    "name": "Seth P Sauer-Hart",
+    "candidate": "Seth Sauer-Hart",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3719.31,
+    "expenditures": null
+   }
+  ],
+  "38": [
+   {
+    "name": "Josiah Magnuson",
+    "candidate": "Josiah Magnuson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 47735.12,
+    "expenditures": null
+   },
+   {
+    "name": "Tammy Hahn",
+    "candidate": "Tammy Hahn",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3093,
+    "expenditures": null
+   }
+  ],
+  "39": [
+   {
+    "name": "Cally R Forrest",
+    "candidate": "Cal Forrest",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22242.36,
+    "expenditures": null
+   },
+   {
+    "name": "Sherman T Lott",
+    "candidate": "Sherman Lott",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2695.41,
+    "expenditures": null
+   }
+  ],
+  "40": [
+   {
+    "name": "Joe White",
+    "candidate": "Joe White",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 12374.38,
+    "expenditures": null
+   },
+   {
+    "name": "Engle Thompson",
+    "candidate": "Engle Thompson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14297,
+    "expenditures": null
+   }
+  ],
+  "41": [
+   {
+    "name": "Annie E McDaniel",
+    "candidate": "Annie McDaniel",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15275.13,
+    "expenditures": null
+   },
+   {
+    "name": "Tiberiu Czentye",
+    "candidate": "Tibi Czentye",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 27657.43,
+    "expenditures": null
+   }
+  ],
+  "42": [
+   {
+    "name": "Leon D Gilliam",
+    "candidate": "Doug Gilliam",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13026.44,
+    "expenditures": null
+   },
+   {
+    "name": "Robert L Williams",
+    "candidate": "Robert Williams",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2272.62,
+    "expenditures": null
+   }
+  ],
+  "43": [
+   {
+    "name": "Thomas R Ligon",
+    "candidate": "Randy Ligon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 29999.26,
+    "expenditures": null
+   },
+   {
+    "name": "Alexander L Clark",
+    "candidate": "Alex Clark",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "44": [
+   {
+    "name": "Mike Neese",
+    "candidate": "Mike Neese",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 26499.26,
+    "expenditures": null
+   },
+   {
+    "name": "Katie W Crosby",
+    "candidate": "Katie Crosby",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18661.12,
+    "expenditures": null
+   }
+  ],
+  "45": [
+   {
+    "name": "Brandon Newton",
+    "candidate": "Brandon Newton",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 109491.54,
+    "expenditures": null
+   }
+  ],
+  "46": [
+   {
+    "name": "Christopher H Sessions",
+    "candidate": "Heath Sessions",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 71575,
+    "expenditures": null
+   },
+   {
+    "name": "Omar L McCrorey",
+    "candidate": "Omar McCrorey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2040.04,
+    "expenditures": null
+   }
+  ],
+  "47": [
+   {
+    "name": "Justin A Bennett",
+    "candidate": "Justin N. Bennett",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Thomas E Pope",
+    "candidate": "Tommy Pope",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 61525.38,
+    "expenditures": null
+   }
+  ],
+  "48": [
+   {
+    "name": "Brandon Guffey",
+    "candidate": "Brandon Guffey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 45858.46,
+    "expenditures": null
+   },
+   {
+    "name": "Rustin Terry",
+    "candidate": "Rustin Terry",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3803.94,
+    "expenditures": null
+   }
+  ],
+  "49": [
+   {
+    "name": "John R King",
+    "candidate": "John King",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38841.8,
+    "expenditures": null
+   }
+  ],
+  "50": [
+   {
+    "name": "William L Oden",
+    "candidate": "William Oden",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 5115.26,
+    "expenditures": null
+   },
+   {
+    "name": "Keishan M Scott",
+    "candidate": "Keishan Scott",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 17340.06,
+    "expenditures": null
+   }
+  ],
+  "51": [
+   {
+    "name": "David Weeks",
+    "candidate": "J. David Weeks",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21499.26,
+    "expenditures": null
+   }
+  ],
+  "52": [
+   {
+    "name": "Malcolm Taylor",
+    "candidate": "Malcolm Taylor",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 44445,
+    "expenditures": null
+   }
+  ],
+  "53": [
+   {
+    "name": "Bruce  M Wallace",
+    "candidate": "Bruce Wallace",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 108.92,
+    "expenditures": null
+   },
+   {
+    "name": "Richard L Sr Yow",
+    "candidate": "Richie Yow",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21449.26,
+    "expenditures": null
+   }
+  ],
+  "54": [
+   {
+    "name": "Jason S Luck",
+    "candidate": "Jason Luck",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 70414.07,
+    "expenditures": null
+   }
+  ],
+  "55": [
+   {
+    "name": "Jackie E Hayes",
+    "candidate": "Jackie Hayes",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 30375,
+    "expenditures": null
+   }
+  ],
+  "56": [
+   {
+    "name": "Tim McGinnis",
+    "candidate": "Tim McGinnis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 22295.5,
+    "expenditures": null
+   },
+   {
+    "name": "Jacqualyn Meadow",
+    "candidate": "Jacqualyn Meadow",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 12476.31,
+    "expenditures": null
+   }
+  ],
+  "57": [
+   {
+    "name": "Cynthia O Ford",
+    "candidate": "Cynthia Ford",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9955.71,
+    "expenditures": null
+   },
+   {
+    "name": "Frank L Atkinson",
+    "candidate": "Lucas Atkinson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 96772.21,
+    "expenditures": null
+   }
+  ],
+  "58": [
+   {
+    "name": "Jeffrey E Johnson",
+    "candidate": "Jeff Johnson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 24854.63,
+    "expenditures": null
+   },
+   {
+    "name": "Sha-Ron E Jones",
+    "candidate": "Sha Ron Jones",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "59": [
+   {
+    "name": "Terry Alexander",
+    "candidate": "Terry Alexander",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 2750,
+    "expenditures": null
+   }
+  ],
+  "60": [
+   {
+    "name": "Phillip D Lowe",
+    "candidate": "Phillip Lowe",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13899.26,
+    "expenditures": null
+   },
+   {
+    "name": "Adrian P Carter",
+    "candidate": "Adrian Carter",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4701.51,
+    "expenditures": null
+   }
+  ],
+  "61": [
+   {
+    "name": "Carla M Schuessler",
+    "candidate": "Carla Schuessler",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 75184.26,
+    "expenditures": null
+   },
+   {
+    "name": "Carol Goodman",
+    "candidate": "Carol Goodman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 918,
+    "expenditures": null
+   },
+   {
+    "name": "David Herndon",
+    "candidate": "David Herndon",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 14500,
+    "expenditures": null
+   }
+  ],
+  "62": [
+   {
+    "name": "Robert Q Williams",
+    "candidate": "Robert Williams",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 25570.21,
+    "expenditures": null
+   }
+  ],
+  "63": [
+   {
+    "name": "Wallace H Jordan",
+    "candidate": "Jay Jordan",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 34024.26,
+    "expenditures": null
+   },
+   {
+    "name": "Kory Haskins",
+    "candidate": "Kory Haskins",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 500,
+    "expenditures": null
+   }
+  ],
+  "64": [
+   {
+    "name": "Fawn M Pedalino",
+    "candidate": "Fawn Pedalino",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 73642.76,
+    "expenditures": null
+   },
+   {
+    "name": "Michele J Demery",
+    "candidate": "Michele Demery",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14297.04,
+    "expenditures": null
+   }
+  ],
+  "65": [
+   {
+    "name": "Cody T Mitchell",
+    "candidate": "Cody Mitchell",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 103349.26,
+    "expenditures": null
+   },
+   {
+    "name": "Tanisha Baskin",
+    "candidate": "Tanisha Baskin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1507.5,
+    "expenditures": null
+   }
+  ],
+  "66": [
+   {
+    "name": "Jackie Terribile",
+    "candidate": "Jackie Terribile",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 61786.4,
+    "expenditures": null
+   },
+   {
+    "name": "Heather Hart",
+    "candidate": "Heather Hart",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14747.77,
+    "expenditures": null
+   }
+  ],
+  "67": [
+   {
+    "name": "G. Murrell   Jr Smith",
+    "candidate": "G. Murrell Smith Jr.",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 914708.44,
+    "expenditures": null
+   },
+   {
+    "name": "Lisa Davey",
+    "candidate": "Lisa Davey",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 36747.09,
+    "expenditures": null
+   }
+  ],
+  "68": [
+   {
+    "name": "Heather A Crawford",
+    "candidate": "Heather Ammons Crawford",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 59589.04,
+    "expenditures": null
+   },
+   {
+    "name": "Judith S Davies",
+    "candidate": "Judy Davies",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5020.12,
+    "expenditures": null
+   }
+  ],
+  "69": [
+   {
+    "name": "christopher s wooten",
+    "candidate": "Chris Wooten",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 100837.21,
+    "expenditures": null
+   },
+   {
+    "name": "Allen J Broadus",
+    "candidate": "Allen Broadus",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Emery K Chaplin",
+    "candidate": "Emery Chaplin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1505.4,
+    "expenditures": null
+   }
+  ],
+  "70": [
+   {
+    "name": "Robert T Reese",
+    "candidate": "Robert Reese",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 8902,
+    "expenditures": null
+   }
+  ],
+  "71": [
+   {
+    "name": "Nathan C Ballentine",
+    "candidate": "Nathan Ballentine",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 62868.94,
+    "expenditures": null
+   },
+   {
+    "name": "Amanda Zimmerman",
+    "candidate": "Julie Zimmerman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27928.28,
+    "expenditures": null
+   }
+  ],
+  "72": [
+   {
+    "name": "Seth Rose",
+    "candidate": "Seth Rose",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16099.26,
+    "expenditures": null
+   },
+   {
+    "name": "Dixie Kvatek",
+    "candidate": "Dixie Kvatek",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1500,
+    "expenditures": null
+   }
+  ],
+  "73": [
+   {
+    "name": "Christopher R Hart",
+    "candidate": "Christopher Hart",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 24500,
+    "expenditures": null
+   },
+   {
+    "name": "James A Robertson",
+    "candidate": "Allen Robertson",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 208,
+    "expenditures": null
+   }
+  ],
+  "74": [
+   {
+    "name": "James T Rutherford",
+    "candidate": "James Rutherford",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 66500,
+    "expenditures": null
+   }
+  ],
+  "75": [
+   {
+    "name": "Tracy Robins",
+    "candidate": "Tracy Robins",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 77508.49,
+    "expenditures": null
+   },
+   {
+    "name": "Heather Bauer",
+    "candidate": "Heather Bauer",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 176724.24,
+    "expenditures": null
+   },
+   {
+    "name": "Joshua Parks",
+    "candidate": "Joshua Parks",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "76": [
+   {
+    "name": "Leon Howard",
+    "candidate": "Leon Howard",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9457.38,
+    "expenditures": null
+   }
+  ],
+  "77": [
+   {
+    "name": "Kambrell H Garvin",
+    "candidate": "Kambrell Garvin",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 14820.31,
+    "expenditures": null
+   }
+  ],
+  "78": [
+   {
+    "name": "beth bernstein",
+    "candidate": "Beth Bernstein",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 18384.26,
+    "expenditures": null
+   },
+   {
+    "name": "Sonia Pollard",
+    "candidate": "Sonia Pollard",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 2738.16,
+    "expenditures": null
+   },
+   {
+    "name": "Angelo Joyner",
+    "candidate": "Angelo Joyner",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 645.77,
+    "expenditures": null
+   }
+  ],
+  "79": [
+   {
+    "name": "Hamilton R Grant",
+    "candidate": "Hamilton Grant",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 56858.75,
+    "expenditures": null
+   }
+  ],
+  "80": [
+   {
+    "name": "Katherine D Landing",
+    "candidate": "Kathy Landing",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17549.25,
+    "expenditures": null
+   },
+   {
+    "name": "Benjamin E Brown",
+    "candidate": "Benjamin Brown",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 8552.36,
+    "expenditures": null
+   }
+  ],
+  "81": [
+   {
+    "name": "Charlie Hartz",
+    "candidate": "Charles Hartz",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 63825,
+    "expenditures": null
+   },
+   {
+    "name": "Peter J Swales",
+    "candidate": "Pete Swales",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "82": [
+   {
+    "name": "William   Sr Clyburn",
+    "candidate": "William Clyburn Sr.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 15439.16,
+    "expenditures": null
+   },
+   {
+    "name": "Suzanne I Spurgeon",
+    "candidate": "Suzanne Spurgeon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1041.75,
+    "expenditures": null
+   }
+  ],
+  "83": [
+   {
+    "name": "William M Hixon",
+    "candidate": "Bill Hixon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 29004.26,
+    "expenditures": null
+   },
+   {
+    "name": "Jason Payne",
+    "candidate": "Jason Payne",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 5796.15,
+    "expenditures": null
+   }
+  ],
+  "84": [
+   {
+    "name": "Melissa J Lackey-Oremus",
+    "candidate": "Melissa Oremus",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 38949.26,
+    "expenditures": null
+   },
+   {
+    "name": "Otis D Holston",
+    "candidate": "Darnell Holston",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 57109.94,
+    "expenditures": null
+   }
+  ],
+  "85": [
+   {
+    "name": "Steven Asbill",
+    "candidate": "Steven Asbill Jr.",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20145.23,
+    "expenditures": null
+   },
+   {
+    "name": "John G Kilmartin",
+    "candidate": "Jay Kilmartin",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 37323.07,
+    "expenditures": null
+   }
+  ],
+  "86": [
+   {
+    "name": "Thomas L Paradise",
+    "candidate": "Tommy Paradise",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 44854.26,
+    "expenditures": null
+   },
+   {
+    "name": "Malcolm Green",
+    "candidate": "Malcolm Green",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "87": [
+   {
+    "name": "Paula R Calhoon",
+    "candidate": "Paula Rawl Calhoon",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13124.26,
+    "expenditures": null
+   },
+   {
+    "name": "Carlton R III Beaman",
+    "candidate": "Reid Beaman",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 15750.04,
+    "expenditures": null
+   }
+  ],
+  "88": [
+   {
+    "name": "John Lastinger",
+    "candidate": "John Lastinger",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 8776.91,
+    "expenditures": null
+   },
+   {
+    "name": "Jeremy  A Jones",
+    "candidate": "Jeremy Jones",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1475.96,
+    "expenditures": null
+   }
+  ],
+  "89": [
+   {
+    "name": "Micajah P IV Caskey",
+    "candidate": "Micah Caskey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 109727.5,
+    "expenditures": null
+   },
+   {
+    "name": "Joseph Madge",
+    "candidate": "Joe Madge",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 25640.98,
+    "expenditures": null
+   }
+  ],
+  "90": [
+   {
+    "name": "Justin T Bamberg",
+    "candidate": "Justin Bamberg",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9765.26,
+    "expenditures": null
+   }
+  ],
+  "91": [
+   {
+    "name": "Daniel R Alexander",
+    "candidate": "Daniel Alexander",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35470,
+    "expenditures": null
+   },
+   {
+    "name": "Lonnie / Hosey",
+    "candidate": "Lonnie Hosey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 38422.32,
+    "expenditures": null
+   }
+  ],
+  "92": [
+   {
+    "name": "Brandon L Cox",
+    "candidate": "Brandon Cox",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 67759.99,
+    "expenditures": null
+   },
+   {
+    "name": "Byron D III Walters",
+    "candidate": "Byron Walters",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6186.99,
+    "expenditures": null
+   }
+  ],
+  "93": [
+   {
+    "name": "Jerry N Jr. Govan",
+    "candidate": "Jerry Govan Jr.",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 33769.42,
+    "expenditures": null
+   },
+   {
+    "name": "Alex Morris",
+    "candidate": "Alex Morris",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 27643.95,
+    "expenditures": null
+   }
+  ],
+  "94": [
+   {
+    "name": "Gil Gatch",
+    "candidate": "Gil Gatch",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 143697.87,
+    "expenditures": null
+   },
+   {
+    "name": "Sally Hebert",
+    "candidate": "Sally Hebert",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13608.96,
+    "expenditures": null
+   }
+  ],
+  "95": [
+   {
+    "name": "Gilda Y Cobb-Hunter",
+    "candidate": "Gilda Cobb-Hunter",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 52858.81,
+    "expenditures": null
+   }
+  ],
+  "96": [
+   {
+    "name": "Hunter N Hackett",
+    "candidate": "Hunter Hackett",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 23254.22,
+    "expenditures": null
+   },
+   {
+    "name": "Vivian Elston",
+    "candidate": "Vivian Elston",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 1415.34,
+    "expenditures": null
+   }
+  ],
+  "97": [
+   {
+    "name": "Robert D Robbins",
+    "candidate": "Robby Robbins",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 120069.83,
+    "expenditures": null
+   },
+   {
+    "name": "Cathy A Jaggars",
+    "candidate": "Cathy Jaggars",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9452.01,
+    "expenditures": null
+   }
+  ],
+  "98": [
+   {
+    "name": "Sonja R Ogletree Satani",
+    "candidate": "Sonja Ogletree Satani",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 40879,
+    "expenditures": null
+   },
+   {
+    "name": "Gregory S Ford",
+    "candidate": "Greg Ford",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 73039.83,
+    "expenditures": null
+   }
+  ],
+  "99": [
+   {
+    "name": "Jarrod k Brooks",
+    "candidate": "Jarrod Brooks",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 43945,
+    "expenditures": null
+   },
+   {
+    "name": "Samuel E Price",
+    "candidate": "Samuel Price",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2193.3,
+    "expenditures": null
+   }
+  ],
+  "100": [
+   {
+    "name": "Sylleste Davis",
+    "candidate": "Sylleste Davis",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 85299.26,
+    "expenditures": null
+   },
+   {
+    "name": "Crystal Y Campbell",
+    "candidate": "Crystal Campbell",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3557.3,
+    "expenditures": null
+   }
+  ],
+  "101": [
+   {
+    "name": "Roger K Kirby",
+    "candidate": "Roger Kirby",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 81519.26,
+    "expenditures": null
+   },
+   {
+    "name": "Arnie   Jr. Borowsky",
+    "candidate": "Arnie Borowsky",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 1234,
+    "expenditures": null
+   }
+  ],
+  "102": [
+   {
+    "name": "Harriet A Holman",
+    "candidate": "Harriet Holman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 48726.8,
+    "expenditures": null
+   },
+   {
+    "name": "Montez Aiken",
+    "candidate": "Montez Aiken",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 11264.04,
+    "expenditures": null
+   }
+  ],
+  "103": [
+   {
+    "name": "Carl L Anderson",
+    "candidate": "Carl Anderson",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 21157.26,
+    "expenditures": null
+   }
+  ],
+  "104": [
+   {
+    "name": "William   Jr Bailey",
+    "candidate": "William Bailey",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 21949.26,
+    "expenditures": null
+   },
+   {
+    "name": "George M Blumenthal",
+    "candidate": "George Blumenthal",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18580.2,
+    "expenditures": null
+   }
+  ],
+  "105": [
+   {
+    "name": "Kevin J Hardee",
+    "candidate": "Kevin J. Hardee",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 28099.26,
+    "expenditures": null
+   },
+   {
+    "name": "David E Wilson",
+    "candidate": "David Wilson",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 9889.76,
+    "expenditures": null
+   }
+  ],
+  "106": [
+   {
+    "name": "Val Guest",
+    "candidate": "Val Guest",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 66074.26,
+    "expenditures": null
+   },
+   {
+    "name": "Marisa McCann",
+    "candidate": "Marisa McCann",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 2164.06,
+    "expenditures": null
+   }
+  ],
+  "107": [
+   {
+    "name": "Thomas C Jr Brittain",
+    "candidate": "Case Brittain",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 64952.26,
+    "expenditures": null
+   },
+   {
+    "name": "Christine M Giguere",
+    "candidate": "Christine Giguere",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   }
+  ],
+  "108": [
+   {
+    "name": "William L III Hewitt",
+    "candidate": "Lee Hewitt",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 171737.26,
+    "expenditures": null
+   },
+   {
+    "name": "Kathy Redwine",
+    "candidate": "Kathy Redwine",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 7852.2,
+    "expenditures": null
+   }
+  ],
+  "109": [
+   {
+    "name": "Tiffany Spann-Wilder",
+    "candidate": "Tiffany Spann-Wilder",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 7286.99,
+    "expenditures": null
+   }
+  ],
+  "110": [
+   {
+    "name": "Thomas F Hartnett",
+    "candidate": "Tom Hartnett",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 67073.81,
+    "expenditures": null
+   },
+   {
+    "name": "Kenneth J Atwood",
+    "candidate": "K.J. Atwood",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 38699.05,
+    "expenditures": null
+   }
+  ],
+  "111": [
+   {
+    "name": "Wendell G Gilliard",
+    "candidate": "Wendell Gilliard",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 41615.52,
+    "expenditures": null
+   }
+  ],
+  "112": [
+   {
+    "name": "Joseph M Bustos",
+    "candidate": "Joe Bustos",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 51075.26,
+    "expenditures": null
+   },
+   {
+    "name": "Jenna P Arsenault",
+    "candidate": "Jenna Arsenault",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 39286.11,
+    "expenditures": null
+   }
+  ],
+  "113": [
+   {
+    "name": "Courtney S Waters",
+    "candidate": "Courtney Waters",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 16369.43,
+    "expenditures": null
+   }
+  ],
+  "114": [
+   {
+    "name": "Gary   Jr. Brewer",
+    "candidate": "Gary Brewer",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 124569.26,
+    "expenditures": null
+   },
+   {
+    "name": "Kelly Hough",
+    "candidate": "Kelly Hough",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 14651.18,
+    "expenditures": null
+   }
+  ],
+  "115": [
+   {
+    "name": "Johnnie Garmon",
+    "candidate": "Johnnie Garmon",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 106988.45,
+    "expenditures": null
+   },
+   {
+    "name": "Nick Uricchio",
+    "candidate": "Nick Uricchio",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 129733.48,
+    "expenditures": null
+   }
+  ],
+  "116": [
+   {
+    "name": "James E Teeple",
+    "candidate": "James Teeple",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 155333.62,
+    "expenditures": null
+   },
+   {
+    "name": "Clay N Middleton",
+    "candidate": "Clay N. Middleton",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 71843.96,
+    "expenditures": null
+   }
+  ],
+  "117": [
+   {
+    "name": "Jordan Pace",
+    "candidate": "Jordan Pace",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 13412.25,
+    "expenditures": null
+   },
+   {
+    "name": "Ashley Painter",
+    "candidate": "Ashley Painter",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 29959.1,
+    "expenditures": null
+   }
+  ],
+  "118": [
+   {
+    "name": "William G Herbkersman",
+    "candidate": "Bill Herbkersman",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 138462,
+    "expenditures": null
+   },
+   {
+    "name": "Bernie Scolaro",
+    "candidate": "Bernie Scolaro",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 27454.49,
+    "expenditures": null
+   }
+  ],
+  "119": [
+   {
+    "name": "Leon E Stavrinakis",
+    "candidate": "Leonidas Stavrinakis",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 39450,
+    "expenditures": null
+   },
+   {
+    "name": "Donald L Jr Edwards",
+    "candidate": "Lee Edwards",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 12838.86,
+    "expenditures": null
+   }
+  ],
+  "120": [
+   {
+    "name": "Wm. Weston J Newton",
+    "candidate": "Weston Newton",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 146658,
+    "expenditures": null
+   },
+   {
+    "name": "Debbie Subera-Wiggin",
+    "candidate": "Debbie Subera-Wiggin",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 13994,
+    "expenditures": null
+   }
+  ],
+  "121": [
+   {
+    "name": "Shelley G Yuhas",
+    "candidate": "Shelley Yuhas",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 35618.52,
+    "expenditures": null
+   },
+   {
+    "name": "Shannon  N DeLoach",
+    "candidate": "Shannon DeLoach",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 6159,
+    "expenditures": null
+   }
+  ],
+  "122": [
+   {
+    "name": "william w hager",
+    "candidate": "Bill Hager",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 35303.99,
+    "expenditures": null
+   },
+   {
+    "name": "Korey Williams",
+    "candidate": "Korey Williams",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 18568.04,
+    "expenditures": null
+   }
+  ],
+  "123": [
+   {
+    "name": "Jeffrey A Bradley",
+    "candidate": "Jeff Bradley",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 17599.26,
+    "expenditures": null
+   },
+   {
+    "name": "Ann C Shippy",
+    "candidate": "Ann Shippy",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 20001.33,
+    "expenditures": null
+   }
+  ],
+  "124": [
+   {
+    "name": "Shannon S Erickson",
+    "candidate": "Shannon Erickson",
+    "party": "Republican",
+    "incumbent": true,
+    "contributions": 41765.76,
+    "expenditures": null
+   },
+   {
+    "name": "Shauna Bishop",
+    "candidate": "Shauna Bishop",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 26881.34,
+    "expenditures": null
+   }
+  ]
+ },
+ "senate": {
+  "15": [
+   {
+    "name": "James R Burns",
+    "candidate": "James Burns",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 193007.26,
+    "expenditures": null
+   },
+   {
+    "name": "Charles C Jr Williams",
+    "candidate": "Chad Williams",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 74539.58,
+    "expenditures": null
+   }
+  ]
+ }
+}

@@ -2,7 +2,7 @@
  "state": "SD",
  "cycle": 2026,
  "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
- "dataThrough": "10/17/2026",
+ "dataThrough": "11/02/2026",
  "senate": {
   "1": [
    {
@@ -30,7 +30,7 @@
     "candidate": "Katherine Washnok",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 65818,
+    "contributions": 70167,
     "expenditures": null
    }
   ],
@@ -50,7 +50,7 @@
     "candidate": "Tim Reed",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 3800,
+    "contributions": 11450,
     "expenditures": null
    }
   ],
@@ -60,7 +60,15 @@
     "candidate": "Casey Crabtree",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 12050,
+    "contributions": 45550,
+    "expenditures": null
+   },
+   {
+    "name": "Clint Hoyer",
+    "candidate": "Clint Hoyer",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 23405,
     "expenditures": null
    }
   ],
@@ -70,7 +78,7 @@
     "candidate": "Joy Hohn",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 15437.97,
+    "contributions": 16255.12,
     "expenditures": null
    }
   ],
@@ -80,7 +88,7 @@
     "candidate": "Liz Larson",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 7964.65,
+    "contributions": 36260.65,
     "expenditures": null
    },
    {
@@ -98,7 +106,7 @@
     "candidate": "Chris Karr",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 22800,
+    "contributions": 34050,
     "expenditures": null
    },
    {
@@ -106,7 +114,7 @@
     "candidate": "Aaron Matson",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 9394.65,
+    "contributions": 19627.31,
     "expenditures": null
    }
   ],
@@ -134,7 +142,7 @@
     "candidate": "Sue Peterson",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 29385,
+    "contributions": 62835,
     "expenditures": null
    }
   ],
@@ -162,7 +170,7 @@
     "candidate": "Erik Muckey",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 20598.65,
+    "contributions": 48238.65,
     "expenditures": null
    }
   ],
@@ -182,7 +190,7 @@
     "candidate": "Sydney Davis",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 57981.48,
+    "contributions": 65206.48,
     "expenditures": null
    }
   ],
@@ -194,6 +202,14 @@
     "incumbent": true,
     "contributions": 31455,
     "expenditures": null
+   },
+   {
+    "name": "Kay Swihart",
+    "candidate": "Kay Swihart",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 3240,
+    "expenditures": null
    }
   ],
   "19": [
@@ -202,7 +218,7 @@
     "candidate": "Kyle Schoenfish",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 13200,
+    "contributions": 26675,
     "expenditures": null
    },
    {
@@ -210,7 +226,7 @@
     "candidate": "Russell Graeff",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 325,
     "expenditures": null
    }
   ],
@@ -230,7 +246,7 @@
     "candidate": "Dan Andersson",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 500,
     "expenditures": null
    },
    {
@@ -238,7 +254,7 @@
     "candidate": "MyKala Voita",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 17300,
+    "contributions": 19675,
     "expenditures": null
    }
   ],
@@ -248,7 +264,7 @@
     "candidate": "Brandon Wipf",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 22370.12,
+    "contributions": 25570.12,
     "expenditures": null
    }
   ],
@@ -258,7 +274,7 @@
     "candidate": "Mark Lapka",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 1150,
+    "contributions": 1450,
     "expenditures": null
    }
   ],
@@ -268,7 +284,7 @@
     "candidate": "Jim Mehlhaff",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 34886.19,
+    "contributions": 42979.72,
     "expenditures": null
    }
   ],
@@ -280,6 +296,14 @@
     "incumbent": false,
     "contributions": 37925,
     "expenditures": null
+   },
+   {
+    "name": "Bart Sample",
+    "candidate": "Bart Sample",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 18734,
+    "expenditures": null
    }
   ],
   "26": [
@@ -288,7 +312,7 @@
     "candidate": "Shawn Bordeaux",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 3400,
+    "contributions": 6981,
     "expenditures": null
    },
    {
@@ -296,7 +320,7 @@
     "candidate": "Rebecca Reimer",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 36615.06,
+    "contributions": 56503.24,
     "expenditures": null
    }
   ],
@@ -306,7 +330,7 @@
     "candidate": "Peri Pourier",
     "party": "Other",
     "incumbent": false,
-    "contributions": 1500,
+    "contributions": 6100,
     "expenditures": null
    },
    {
@@ -314,7 +338,7 @@
     "candidate": "Anthony Kathol",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 2051.83,
+    "contributions": 10874.26,
     "expenditures": null
    },
    {
@@ -322,7 +346,7 @@
     "candidate": "Celestine Stadnick",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 10954.4,
     "expenditures": null
    }
   ],
@@ -342,7 +366,7 @@
     "candidate": "Amber Hulse",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 47981.07,
+    "contributions": 54091.67,
     "expenditures": null
    }
   ],
@@ -352,7 +376,7 @@
     "candidate": "Randy Deibert",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 20321,
+    "contributions": 24600.06,
     "expenditures": null
    }
   ],
@@ -362,7 +386,7 @@
     "candidate": "Helene Duhamel",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 44596.15,
+    "contributions": 64671.15,
     "expenditures": null
    },
    {
@@ -370,7 +394,7 @@
     "candidate": "Jeff Shelton",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 3277.93,
+    "contributions": 14270.93,
     "expenditures": null
    }
   ],
@@ -380,7 +404,7 @@
     "candidate": "Christopher Baumgartner",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1842.22,
+    "contributions": 8487.22,
     "expenditures": null
    }
   ],
@@ -398,7 +422,7 @@
     "candidate": "Michael Calabrese",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1257.14,
+    "contributions": 11872.3,
     "expenditures": null
    }
   ],
@@ -408,7 +432,7 @@
     "candidate": "Greg Blanc",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 8547,
+    "contributions": 8594.25,
     "expenditures": null
    }
   ]
@@ -420,7 +444,7 @@
     "candidate": "Nicholas Fosness",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 24900,
+    "contributions": 37990.38,
     "expenditures": null
    },
    {
@@ -429,6 +453,14 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 16790.15,
+    "expenditures": null
+   },
+   {
+    "name": "Courtney Enfield",
+    "candidate": "Courtney Enfield",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 10737,
     "expenditures": null
    }
   ],
@@ -454,7 +486,7 @@
     "candidate": "Blake Rife",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 2500,
     "expenditures": null
    }
   ],
@@ -464,7 +496,7 @@
     "candidate": "Erin Rudner",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 8137.27,
+    "contributions": 37497.27,
     "expenditures": null
    },
    {
@@ -472,7 +504,7 @@
     "candidate": "Spencer Sommers",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 52999.08,
+    "contributions": 58917.53,
     "expenditures": null
    },
    {
@@ -480,7 +512,7 @@
     "candidate": "Tim Hanigan",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 52110.03,
+    "contributions": 55910.03,
     "expenditures": null
    }
   ],
@@ -490,7 +522,7 @@
     "candidate": "Fred Deutsch",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 23116.97,
+    "contributions": 29534.01,
     "expenditures": null
    },
    {
@@ -498,7 +530,7 @@
     "candidate": "Samuel Froehlke",
     "party": "Other",
     "incumbent": false,
-    "contributions": 2500,
+    "contributions": 6700,
     "expenditures": null
    },
    {
@@ -506,7 +538,7 @@
     "candidate": "Ryan Kohl",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 12210,
+    "contributions": 20935,
     "expenditures": null
    },
    {
@@ -514,7 +546,7 @@
     "candidate": "Emelia Enquist",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 2887.15,
+    "contributions": 17001.69,
     "expenditures": null
    }
   ],
@@ -524,7 +556,7 @@
     "candidate": "Byron Callies",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 2000,
+    "contributions": 13150,
     "expenditures": null
    },
    {
@@ -532,7 +564,7 @@
     "candidate": "Matt Roby",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 22600,
+    "contributions": 60090,
     "expenditures": null
    },
    {
@@ -540,7 +572,7 @@
     "candidate": "Neal Tapio",
     "party": "Other",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 1283,
     "expenditures": null
    }
   ],
@@ -558,7 +590,7 @@
     "candidate": "Austin Wolf",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1106.15,
+    "contributions": 3956.72,
     "expenditures": null
    },
    {
@@ -566,7 +598,7 @@
     "candidate": "Elliott Neff",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 12349,
+    "contributions": 22180,
     "expenditures": null
    }
   ],
@@ -576,7 +608,7 @@
     "candidate": "Mellissa Heermann",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 16215.15,
+    "contributions": 30545.45,
     "expenditures": null
    },
    {
@@ -592,7 +624,7 @@
     "candidate": "Blake Stevens",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 225,
+    "contributions": 2480,
     "expenditures": null
    }
   ],
@@ -602,7 +634,7 @@
     "candidate": "Todd Wilkinson",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 26620,
+    "contributions": 33170,
     "expenditures": null
    },
    {
@@ -610,7 +642,7 @@
     "candidate": "Jon Nelson",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 28740.15,
+    "contributions": 33390.15,
     "expenditures": null
    }
   ],
@@ -620,7 +652,7 @@
     "candidate": "Tesa Schwans",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 11029.93,
+    "contributions": 17510.93,
     "expenditures": null
    },
    {
@@ -628,7 +660,7 @@
     "candidate": "Amanda Potter",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 7298.21,
+    "contributions": 21793.02,
     "expenditures": null
    },
    {
@@ -636,7 +668,7 @@
     "candidate": "Megan Tschetter",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 3567.15,
+    "contributions": 6575.04,
     "expenditures": null
    }
   ],
@@ -646,7 +678,7 @@
     "candidate": "Adam Bair",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 3317.65,
+    "contributions": 13652.65,
     "expenditures": null
    },
    {
@@ -654,7 +686,7 @@
     "candidate": "Kimberly Petterson",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 6825.13,
+    "contributions": 10725.13,
     "expenditures": null
    },
    {
@@ -672,7 +704,7 @@
     "candidate": "Brian Mulder",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 24880,
+    "contributions": 38230,
     "expenditures": null
    },
    {
@@ -680,7 +712,7 @@
     "candidate": "Sonja Mentzer",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 2341.82,
+    "contributions": 10290.45,
     "expenditures": null
    },
    {
@@ -688,7 +720,7 @@
     "candidate": "Keri Weems",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 20068.95,
+    "contributions": 29518.95,
     "expenditures": null
    }
   ],
@@ -698,7 +730,7 @@
     "candidate": "Amber Arlint",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 58300,
+    "contributions": 79875,
     "expenditures": null
    },
    {
@@ -714,7 +746,7 @@
     "candidate": "Stephanie Arne",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 3428,
+    "contributions": 23841.34,
     "expenditures": null
    }
   ],
@@ -724,7 +756,7 @@
     "candidate": "John Hughes",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 23106.79,
+    "contributions": 57565.79,
     "expenditures": null
    },
    {
@@ -732,7 +764,7 @@
     "candidate": "Ali Horsted",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 5438.65,
+    "contributions": 22027.63,
     "expenditures": null
    }
   ],
@@ -742,7 +774,7 @@
     "candidate": "Taylor Rae Rehfeldt",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 64706.79,
+    "contributions": 134619.81,
     "expenditures": null
    },
    {
@@ -750,7 +782,7 @@
     "candidate": "Tyler Tordsen",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 43037,
+    "contributions": 66876,
     "expenditures": null
    },
    {
@@ -758,7 +790,7 @@
     "candidate": "Erinn Williams",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 41957.7,
+    "contributions": 61562.4,
     "expenditures": null
    }
   ],
@@ -768,7 +800,7 @@
     "candidate": "Kadyn Wittman",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 6526.89,
+    "contributions": 23084.04,
     "expenditures": null
    },
    {
@@ -776,7 +808,7 @@
     "candidate": "Joni Tschetter",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 100,
+    "contributions": 6550,
     "expenditures": null
    },
    {
@@ -784,7 +816,7 @@
     "candidate": "June CopperStad",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1140,
+    "contributions": 10586,
     "expenditures": null
    },
    {
@@ -792,7 +824,7 @@
     "candidate": "Andre Zachariahs",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 439.96,
+    "contributions": 17423.67,
     "expenditures": null
    }
   ],
@@ -810,7 +842,7 @@
     "candidate": "Lisa Bogue",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 19534.25,
+    "contributions": 30279.25,
     "expenditures": null
    },
    {
@@ -828,7 +860,7 @@
     "candidate": "Austin Brunick",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1344.14,
+    "contributions": 3519.14,
     "expenditures": null
    },
    {
@@ -836,7 +868,7 @@
     "candidate": "Leslie Gerrish",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 11216.73,
+    "contributions": 28571.99,
     "expenditures": null
    },
    {
@@ -878,7 +910,7 @@
     "candidate": "Jarod Holcomb",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 450,
+    "contributions": 8599.98,
     "expenditures": null
    }
   ],
@@ -888,7 +920,7 @@
     "candidate": "Drew Peterson",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 33549,
+    "contributions": 56949,
     "expenditures": null
    },
    {
@@ -896,7 +928,7 @@
     "candidate": "Heidi Hora",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1600,
+    "contributions": 3656.24,
     "expenditures": null
    }
   ],
@@ -942,7 +974,7 @@
     "candidate": "Lana Greenfield",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 1600,
+    "contributions": 9000,
     "expenditures": null
    },
    {
@@ -958,7 +990,7 @@
     "candidate": "Cully Williams",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 2910.93,
+    "contributions": 14957.39,
     "expenditures": null
    }
   ],
@@ -968,7 +1000,7 @@
     "candidate": "Spencer Gosch",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 950,
+    "contributions": 4505,
     "expenditures": null
    },
    {
@@ -976,7 +1008,7 @@
     "candidate": "Dick Werner",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 4550,
+    "contributions": 13275,
     "expenditures": null
    },
    {
@@ -984,7 +1016,7 @@
     "candidate": "Garett Heinz",
     "party": "Other",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 3370.58,
     "expenditures": null
    }
   ],
@@ -1004,7 +1036,7 @@
     "candidate": "Carrie Sanderson",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 28359.45,
+    "contributions": 36544.25,
     "expenditures": null
    },
    {
@@ -1030,7 +1062,7 @@
     "candidate": "Joe Flood",
     "party": "Other",
     "incumbent": false,
-    "contributions": 197.98,
+    "contributions": 81226.98,
     "expenditures": null
    },
    {
@@ -1038,12 +1070,20 @@
     "candidate": "Elizabeth Lone Eagle",
     "party": "Other",
     "incumbent": false,
-    "contributions": 0,
+    "contributions": 600,
     "expenditures": null
    },
    {
     "name": "Jay Yohner",
     "candidate": "Jay Yohner",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 0,
+    "expenditures": null
+   },
+   {
+    "name": "Evangeline Poor Bear",
+    "candidate": "Evangeline Poor Bear",
     "party": "Other",
     "incumbent": false,
     "contributions": 0,
@@ -1064,7 +1104,7 @@
     "candidate": "Gary Deering",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 28517.15,
+    "contributions": 34196.25,
     "expenditures": null
    }
   ],
@@ -1074,7 +1114,7 @@
     "candidate": "Trish Ladner",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 10865.15,
+    "contributions": 20665.15,
     "expenditures": null
    }
   ],
@@ -1084,7 +1124,7 @@
     "candidate": "Mary Fitzgerald",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 1500,
+    "contributions": 9350,
     "expenditures": null
    },
    {
@@ -1110,7 +1150,7 @@
     "candidate": "Steve Duffy",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 26022.89,
+    "contributions": 40922.89,
     "expenditures": null
    },
    {
@@ -1118,7 +1158,7 @@
     "candidate": "Nicole Uhre-Balk",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 14111,
+    "contributions": 33911,
     "expenditures": null
    },
    {
@@ -1126,7 +1166,15 @@
     "candidate": "Zachary Martin",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 150,
+    "contributions": 6427.24,
+    "expenditures": null
+   },
+   {
+    "name": "Samuel Hare",
+    "candidate": "Samuel Hare",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 5650,
     "expenditures": null
    }
   ],
@@ -1136,7 +1184,7 @@
     "candidate": "Curt Massie",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 27353.71,
+    "contributions": 39461.91,
     "expenditures": null
    },
    {
@@ -1144,7 +1192,7 @@
     "candidate": "Kari Hall",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 1459.14,
+    "contributions": 3954.14,
     "expenditures": null
    }
   ],
@@ -1154,7 +1202,7 @@
     "candidate": "Becky Drury",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 31585,
+    "contributions": 44797.4,
     "expenditures": null
    },
    {
@@ -1162,7 +1210,7 @@
     "candidate": "Mike Derby",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 42110.94,
+    "contributions": 86052.09,
     "expenditures": null
    },
    {
@@ -1170,7 +1218,7 @@
     "candidate": "Victor Dominquez",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 638.14,
+    "contributions": 758.14,
     "expenditures": null
    }
   ],
@@ -1180,7 +1228,7 @@
     "candidate": "Dale Bartscher",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 27035,
+    "contributions": 37288.13,
     "expenditures": null
    },
    {
@@ -1188,7 +1236,7 @@
     "candidate": "Ken Jeakins",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 515.14,
+    "contributions": 5875.14,
     "expenditures": null
    },
    {
@@ -1196,7 +1244,7 @@
     "candidate": "Jason Fleming",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 11556,
+    "contributions": 18256,
     "expenditures": null
    }
   ],
@@ -1206,7 +1254,7 @@
     "candidate": "Eric Emery",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 1974,
+    "contributions": 16338,
     "expenditures": null
    }
   ],
@@ -1216,7 +1264,15 @@
     "candidate": "Jana Hunt",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 3100,
+    "contributions": 5200,
+    "expenditures": null
+   },
+   {
+    "name": "Chastity Jewett",
+    "candidate": "Chastity Jewett",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 4355,
     "expenditures": null
    }
   ],
@@ -1226,7 +1282,7 @@
     "candidate": "Travis Ismay",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 6823.25,
+    "contributions": 7773.25,
     "expenditures": null
    }
   ],
@@ -1244,7 +1300,7 @@
     "candidate": "Lewis GrassRope",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 512.14,
+    "contributions": 4757.14,
     "expenditures": null
    }
   ]

@@ -261,7 +261,7 @@ const MIN_IDIOSYNCRATIC_SHARE = 0.5;
 
 export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = forecastsFor(raceType), sims = 5000, seed = 20261103, opts: { stateShock?: number } = {}): ChamberSimulation {
   const rand = mulberry32(seed);
-  const sigmaE = nationalSigmaFor(OFFICE_OF[raceType]); // House: the House-vote scale when HOUSE_ENV_ON_VOTE_SCALE is on
+  const sigmaE = nationalSigmaFor(OFFICE_OF[raceType]); // House: the generic-ballot part × HOUSE_ENV_MULTIPLIER
   // One shock per state per run (STATE_SHOCK): seats in the same state miss together.
   const stateShock = opts.stateShock ?? F.STATE_SHOCK[OFFICE_OF[raceType]];
   const stateIndex = new Map<string, number>();

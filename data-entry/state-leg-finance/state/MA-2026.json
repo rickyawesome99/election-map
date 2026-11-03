@@ -2,7 +2,7 @@
  "state": "MA",
  "cycle": 2026,
  "source": "Massachusetts OCPF (receipts + in-kind, two calendar years)",
- "dataThrough": "10/16/2026",
+ "dataThrough": "11/03/2026",
  "house": {
   "1st Barnstable": [
    {
@@ -18,8 +18,8 @@
     "candidate": "Chris Lambton",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 59453.41,
-    "expenditures": 54818.28
+    "contributions": 64090.8,
+    "expenditures": 54883.33
    }
   ],
   "2nd Barnstable": [
@@ -66,8 +66,8 @@
     "candidate": "Steven Xiarhos",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 42465.51,
-    "expenditures": 36565.74
+    "contributions": 43695.21,
+    "expenditures": 37789.23
    }
   ],
   "Barnstable-Dukes-Nantucket": [
@@ -86,8 +86,8 @@
     "candidate": "John Barrett III",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 61453.94,
-    "expenditures": 54270.56
+    "contributions": 61953.94,
+    "expenditures": 56554.87
    }
   ],
   "2nd Berkshire": [
@@ -106,8 +106,8 @@
     "candidate": "Leigh Davis",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 138748.87,
-    "expenditures": 71307.46
+    "contributions": 141878.13,
+    "expenditures": 73857.65
    }
   ],
   "1st Bristol": [
@@ -126,8 +126,8 @@
     "candidate": "James Hawkins",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 19775.14,
-    "expenditures": 7244.12
+    "contributions": 20525.95,
+    "expenditures": 15822.79
    },
    {
     "name": "Nelson, Andrew",
@@ -144,16 +144,16 @@
     "candidate": "Lisa Field",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 125658.13,
-    "expenditures": 102677.23
+    "contributions": 130470.74,
+    "expenditures": 112039.66
    },
    {
     "name": "Quintal, Lawrence",
     "candidate": "Lawrence Quintal",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 105358.67,
-    "expenditures": 84617.34
+    "contributions": 115271.7,
+    "expenditures": 108088.64
    }
   ],
   "4th Bristol": [
@@ -163,7 +163,7 @@
     "party": "Republican",
     "incumbent": true,
     "contributions": 4785.06,
-    "expenditures": 7313.34
+    "expenditures": 7484.34
    }
   ],
   "5th Bristol": [
@@ -208,16 +208,16 @@
     "candidate": "Talos Farris",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 6750,
-    "expenditures": 5433.16
+    "contributions": 8657.4,
+    "expenditures": 7224.47
    },
    {
     "name": "Silvia, Alan",
     "candidate": "Alan Silvia",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 50584.32,
-    "expenditures": 57467.78
+    "contributions": 52284.32,
+    "expenditures": 62578.36
    }
   ],
   "8th Bristol": [
@@ -234,8 +234,8 @@
     "candidate": "Jesse St. Gelais",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 44234.93,
-    "expenditures": 43593.19
+    "contributions": 56276.76,
+    "expenditures": 51483.44
    }
   ],
   "9th Bristol": [
@@ -244,8 +244,8 @@
     "candidate": "Ed Pacheco",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 35129.35,
-    "expenditures": 24423.3
+    "contributions": 48130.56,
+    "expenditures": 41430.85
    },
    {
     "name": "Tam, Chester",
@@ -262,7 +262,7 @@
     "candidate": "Brendalee Smith",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 3950,
+    "contributions": 3276.55,
     "expenditures": 3950
    },
    {
@@ -301,7 +301,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 78779.09,
-    "expenditures": 28788.19
+    "expenditures": 34641.43
    }
   ],
   "14th Bristol": [
@@ -339,7 +339,7 @@
     "party": "Republican",
     "incumbent": false,
     "contributions": 65744.48,
-    "expenditures": 55820.49
+    "expenditures": 68096.62
    }
   ],
   "3rd Essex": [
@@ -414,8 +414,8 @@
     "candidate": "Jenny Armini",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 27768.86,
-    "expenditures": 11842.23
+    "contributions": 27816.88,
+    "expenditures": 11857.73
    }
   ],
   "9th Essex": [
@@ -442,8 +442,8 @@
     "candidate": "Dan Cahill",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 60298.73,
-    "expenditures": 60489.42
+    "contributions": 60296.95,
+    "expenditures": 61653.09
    }
   ],
   "11th Essex": [
@@ -452,8 +452,8 @@
     "candidate": "Sean Reid",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 60886.03,
-    "expenditures": 18984.64
+    "contributions": 61510.04,
+    "expenditures": 19454.65
    }
   ],
   "12th Essex": [
@@ -482,7 +482,7 @@
     "candidate": "Adrianne Ramos",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 32722.66,
+    "contributions": 32538.74,
     "expenditures": 35696.8
    }
   ],
@@ -604,8 +604,8 @@
     "candidate": "Nicholas Boldyga",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 43371.2,
-    "expenditures": 14894.39
+    "contributions": 48315.56,
+    "expenditures": 51017.45
    },
    {
     "name": "Hendrickson, Thomas",
@@ -620,8 +620,8 @@
     "candidate": "Jason Perron",
     "party": "Other",
     "incumbent": false,
-    "contributions": 4786.56,
-    "expenditures": 4098.35
+    "contributions": 4905.87,
+    "expenditures": 4767.25
    }
   ],
   "4th Hampden": [
@@ -638,8 +638,8 @@
     "candidate": "Kelly Pease",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 33886.83,
-    "expenditures": 27270.86
+    "contributions": 36981.06,
+    "expenditures": 29834.17
    }
   ],
   "5th Hampden": [
@@ -667,7 +667,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 36563.68,
-    "expenditures": 23255.52
+    "expenditures": 24133.04
    }
   ],
   "7th Hampden": [
@@ -686,8 +686,8 @@
     "candidate": "Shirley Arriaga",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 9877.83,
-    "expenditures": 10935.47
+    "contributions": 12365.79,
+    "expenditures": 11511.89
    }
   ],
   "9th Hampden": [
@@ -707,7 +707,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 14433.51,
-    "expenditures": 15359.93
+    "expenditures": 15706.47
    }
   ],
   "11th Hampden": [
@@ -716,8 +716,8 @@
     "candidate": "Bud Williams",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 40312.03,
-    "expenditures": 62348.35
+    "contributions": 40637.03,
+    "expenditures": 66124.98
    }
   ],
   "12th Hampden": [
@@ -726,8 +726,8 @@
     "candidate": "Angelo Puppolo Jr.",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 105401.45,
-    "expenditures": 186039.42
+    "contributions": 107701.45,
+    "expenditures": 198209.99
    }
   ],
   "1st Hampshire": [
@@ -736,8 +736,8 @@
     "candidate": "Lindsay Sabadosa",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 35463.3,
-    "expenditures": 46450.74
+    "contributions": 38310.26,
+    "expenditures": 46800
    }
   ],
   "2nd Hampshire": [
@@ -756,8 +756,8 @@
     "candidate": "Mindy Domb",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 37498.14,
-    "expenditures": 41498.39
+    "contributions": 39100.78,
+    "expenditures": 42529.86
    }
   ],
   "1st Middlesex": [
@@ -784,8 +784,8 @@
     "candidate": "James Arciero",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 118433.24,
-    "expenditures": 81404.07
+    "contributions": 121957.98,
+    "expenditures": 85722.08
    }
   ],
   "3rd Middlesex": [
@@ -804,7 +804,7 @@
     "candidate": "Danielle Gregoire",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 50524.81,
+    "contributions": 50449.69,
     "expenditures": 49801.18
    }
   ],
@@ -832,8 +832,8 @@
     "candidate": "Priscila Sousa",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 13514.48,
-    "expenditures": 17931.25
+    "contributions": 14018.74,
+    "expenditures": 18048.9
    }
   ],
   "7th Middlesex": [
@@ -853,7 +853,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 54844.77,
-    "expenditures": 24522.87
+    "expenditures": 25193.13
    }
   ],
   "9th Middlesex": [
@@ -882,8 +882,8 @@
     "candidate": "Amy Sangiolo",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 10617.76,
-    "expenditures": 7020.69
+    "contributions": 10987.17,
+    "expenditures": 8189.44
    }
   ],
   "12th Middlesex": [
@@ -932,7 +932,7 @@
     "candidate": "Lorena Betts",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 56483.04,
+    "contributions": 56468.82,
     "expenditures": 52434.98
    },
    {
@@ -971,7 +971,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 16500,
-    "expenditures": 3455.04
+    "expenditures": 5841.29
    }
   ],
   "20th Middlesex": [
@@ -1027,7 +1027,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 26537.39,
-    "expenditures": 32480.95
+    "expenditures": 33969.7
    }
   ],
   "24th Middlesex": [
@@ -1036,8 +1036,8 @@
     "candidate": "David Rogers",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 74087.21,
-    "expenditures": 69074.17
+    "contributions": 74327.33,
+    "expenditures": 84442.77
    }
   ],
   "25th Middlesex": [
@@ -1066,8 +1066,8 @@
     "candidate": "Ben Ewen-Campen",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 38934.41,
-    "expenditures": 45701.46
+    "contributions": 39615.08,
+    "expenditures": 45762.81
    }
   ],
   "28th Middlesex": [
@@ -1086,8 +1086,8 @@
     "candidate": "Steven Owens",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 16420.79,
-    "expenditures": 5173.89
+    "contributions": 16730.39,
+    "expenditures": 5673.89
    }
   ],
   "30th Middlesex": [
@@ -1096,8 +1096,8 @@
     "candidate": "Richard Haggerty",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 61809.15,
-    "expenditures": 44984.77
+    "contributions": 61859.15,
+    "expenditures": 45577.58
    }
   ],
   "31st Middlesex": [
@@ -1106,16 +1106,16 @@
     "candidate": "Michael Day",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 129579.99,
-    "expenditures": 97350.14
+    "contributions": 129429.99,
+    "expenditures": 100283.26
    },
    {
     "name": "Ternullo, Stephen",
     "candidate": "Stephen Ternullo",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 33681.02,
-    "expenditures": 26422.64
+    "contributions": 41648.54,
+    "expenditures": 35244.48
    }
   ],
   "32nd Middlesex": [
@@ -1154,16 +1154,16 @@
     "candidate": "Paul Donato Sr.",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 105874.55,
-    "expenditures": 70263.44
+    "contributions": 112568.56,
+    "expenditures": 75266.07
    },
    {
     "name": "Seibel, James",
     "candidate": "James Seibel",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 395.84,
-    "expenditures": 113.67
+    "contributions": 589.76,
+    "expenditures": 263.17
    }
   ],
   "36th Middlesex": [
@@ -1202,8 +1202,8 @@
     "candidate": "Tackey Chan",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 125287.76,
-    "expenditures": 75919.29
+    "contributions": 129966.12,
+    "expenditures": 81019.4
    },
    {
     "name": "Cintolo, Sharon",
@@ -1220,8 +1220,8 @@
     "candidate": "Ronald Mariano",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 224010.5,
-    "expenditures": 346495
+    "contributions": 227568.82,
+    "expenditures": 370872.01
    }
   ],
   "4th Norfolk": [
@@ -1230,7 +1230,7 @@
     "candidate": "James Murphy",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 151155.27,
+    "contributions": 151113.71,
     "expenditures": 139216.83
    }
   ],
@@ -1288,8 +1288,8 @@
     "candidate": "Thomas Melville",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 91924.7,
-    "expenditures": 72244.22
+    "contributions": 104645.71,
+    "expenditures": 84946.57
    },
    {
     "name": "Vaughn, Marcus",
@@ -1356,8 +1356,8 @@
     "candidate": "Tommy Vitolo",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 132173.53,
-    "expenditures": 107051.23
+    "contributions": 136923.93,
+    "expenditures": 109881.51
    }
   ],
   "1st Plymouth": [
@@ -1458,8 +1458,8 @@
     "candidate": "Rosemary Aahanna-Hill",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 5287.1,
-    "expenditures": 3324.78
+    "contributions": 7705.11,
+    "expenditures": 5452.78
    },
    {
     "name": "Sullivan-Almeida, Alyson",
@@ -1476,7 +1476,7 @@
     "candidate": "Dennis Gallagher",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 36448.11,
+    "contributions": 36339.56,
     "expenditures": 14229.89
    },
    {
@@ -1484,8 +1484,8 @@
     "candidate": "John Norris",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 14173.01,
-    "expenditures": 8151.2
+    "contributions": 18378.84,
+    "expenditures": 16557.01
    }
   ],
   "9th Plymouth": [
@@ -1598,8 +1598,8 @@
     "candidate": "Christopher Worrell",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 163006.45,
-    "expenditures": 187195.62
+    "contributions": 164212.23,
+    "expenditures": 189168.51
    }
   ],
   "6th Suffolk": [
@@ -1716,8 +1716,8 @@
     "candidate": "Jessica Giannino",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 77098.08,
-    "expenditures": 51444.37
+    "contributions": 77398.08,
+    "expenditures": 51694.37
    }
   ],
   "17th Suffolk": [
@@ -1746,8 +1746,8 @@
     "candidate": "Jeffrey Turco",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 239448.17,
-    "expenditures": 257224.11
+    "contributions": 247795.31,
+    "expenditures": 265459.04
    }
   ],
   "1st Worcester": [
@@ -1756,16 +1756,16 @@
     "candidate": "Krista Ferrante",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 25344.02,
-    "expenditures": 19504.84
+    "contributions": 34100.47,
+    "expenditures": 24996.6
    },
    {
     "name": "Mulroy, Stephanie",
     "candidate": "Stephanie Mulroy",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 32461.35,
-    "expenditures": 30067.63
+    "contributions": 40026.15,
+    "expenditures": 35403.16
    }
   ],
   "2nd Worcester": [
@@ -1792,8 +1792,8 @@
     "candidate": "Michael Kushmerek",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 66585.99,
-    "expenditures": 50851.89
+    "contributions": 72097.47,
+    "expenditures": 56898.33
    }
   ],
   "4th Worcester": [
@@ -1802,8 +1802,8 @@
     "candidate": "Josh Bowdridge",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 3046.7,
-    "expenditures": 2030.43
+    "contributions": 3413.5,
+    "expenditures": 3055.63
    },
    {
     "name": "Higgins, Natalie Marie",
@@ -1856,16 +1856,16 @@
     "candidate": "Paul Frost",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 86591.97,
-    "expenditures": 50498.01
+    "contributions": 89148.12,
+    "expenditures": 85557.06
    },
    {
     "name": "Lazzaro, Nicholas",
     "candidate": "Nick Lazzaro",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 29210.9,
-    "expenditures": 28941.81
+    "contributions": 34583.71,
+    "expenditures": 44496.23
    }
   ],
   "8th Worcester": [
@@ -1884,8 +1884,8 @@
     "candidate": "David Muradian Jr.",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 39967.8,
-    "expenditures": 56357.62
+    "contributions": 40167.8,
+    "expenditures": 58281.33
    }
   ],
   "10th Worcester": [
@@ -1914,8 +1914,8 @@
     "candidate": "Meghan Kilcoyne",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 85141.29,
-    "expenditures": 74025.5
+    "contributions": 93241.12,
+    "expenditures": 118668.9
    },
    {
     "name": "Mair, Lisa",
@@ -1932,8 +1932,8 @@
     "candidate": "John Mahoney",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 59895.54,
-    "expenditures": 57743.98
+    "contributions": 60145.54,
+    "expenditures": 65210.01
    }
   ],
   "14th Worcester": [
@@ -1952,8 +1952,8 @@
     "candidate": "Mary Keefe",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 42496.88,
-    "expenditures": 30448.79
+    "contributions": 42846.88,
+    "expenditures": 30840.48
    }
   ],
   "16th Worcester": [
@@ -1990,8 +1990,8 @@
     "candidate": "Joseph McKenna",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 36158.43,
-    "expenditures": 24125.97
+    "contributions": 43867.03,
+    "expenditures": 30471.06
    }
   ],
   "19th Worcester": [
@@ -2013,7 +2013,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 74445.71,
-    "expenditures": 79034.82
+    "expenditures": 80973.88
    }
   ],
   "Bristol and Norfolk": [
@@ -2032,16 +2032,16 @@
     "candidate": "Gabriel Amaral",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 34339.89,
-    "expenditures": 29953.53
+    "contributions": 35352.01,
+    "expenditures": 31553.53
    },
    {
     "name": "Rodrigues, Michael J.",
     "candidate": "Michael Rodrigues",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 592792.3,
-    "expenditures": 418845.63
+    "contributions": 603765.13,
+    "expenditures": 518357.17
    }
   ],
   "Second Bristol and Plymouth": [
@@ -2058,8 +2058,8 @@
     "candidate": "Mark Montigny",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 93870.62,
-    "expenditures": 143261.97
+    "contributions": 94336.64,
+    "expenditures": 152577.6
    }
   ],
   "Third Bristol and Plymouth": [
@@ -2099,7 +2099,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 19367.95,
-    "expenditures": 40149.13
+    "expenditures": 41774.78
    }
   ],
   "Third Essex": [
@@ -2108,8 +2108,8 @@
     "candidate": "Brendan Crighton",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 81198.41,
-    "expenditures": 84407
+    "contributions": 81897.41,
+    "expenditures": 91863.06
    }
   ],
   "First Essex and Middlesex": [
@@ -2128,8 +2128,8 @@
     "candidate": "Barry Finegold",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 499545.07,
-    "expenditures": 142097.67
+    "contributions": 558813.31,
+    "expenditures": 198561.33
    }
   ],
   "Hampden": [
@@ -2158,8 +2158,8 @@
     "candidate": "Jacob Oliveira",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 45964.73,
-    "expenditures": 39811.17
+    "contributions": 59373.8,
+    "expenditures": 42177.2
    }
   ],
   "Hampshire-Franklin-Worcester": [
@@ -2168,8 +2168,8 @@
     "candidate": "Jo Comerford",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 89647.43,
-    "expenditures": 44759.1
+    "contributions": 90387.77,
+    "expenditures": 46291.14
    }
   ],
   "First Middlesex": [
@@ -2224,8 +2224,8 @@
     "candidate": "Cindy Friedman",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 40067.92,
-    "expenditures": 122741.55
+    "contributions": 40073.92,
+    "expenditures": 123872.9
    }
   ],
   "Fifth Middlesex": [
@@ -2311,7 +2311,7 @@
     "party": "Democratic",
     "incumbent": true,
     "contributions": 34770.09,
-    "expenditures": 24754.47
+    "expenditures": 25170.47
    }
   ],
   "Norfolk-Plymouth-Bristol": [
@@ -2330,8 +2330,8 @@
     "candidate": "Becca Rausch",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 158764.58,
-    "expenditures": 36780.28
+    "contributions": 164775.84,
+    "expenditures": 39361.79
    }
   ],
   "Plymouth and Barnstable": [
@@ -2368,8 +2368,8 @@
     "candidate": "Patrick O'Connor",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 91871.88,
-    "expenditures": 77938.05
+    "contributions": 92552.74,
+    "expenditures": 85547.41
    }
   ],
   "First Suffolk": [
@@ -2436,8 +2436,8 @@
     "candidate": "John J. Cronin",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 93505.75,
-    "expenditures": 90443.4
+    "contributions": 104084.19,
+    "expenditures": 95190.03
    },
    {
     "name": "Zhang, Ming",

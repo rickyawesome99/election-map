@@ -2,7 +2,7 @@
  "state": "HI",
  "cycle": 2026,
  "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
- "dataThrough": "10/17/2026",
+ "dataThrough": "11/03/2026",
  "house": {
   "1": [
    {
@@ -38,7 +38,7 @@
     "candidate": "Chris Todd",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 79169.22,
+    "contributions": 81619.22,
     "expenditures": null
    }
   ],
@@ -66,7 +66,7 @@
     "candidate": "Jeanne Kapela",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 36997.03,
+    "contributions": 37147.03,
     "expenditures": null
    },
    {
@@ -74,7 +74,7 @@
     "candidate": "Dalene McCormick",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 2202.59,
+    "contributions": 3322.59,
     "expenditures": null
    }
   ],
@@ -104,7 +104,15 @@
     "candidate": "Monique Perreira",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 407.18,
+    "contributions": 615.38,
+    "expenditures": null
+   },
+   {
+    "name": "David Tarnas",
+    "candidate": "David Tarnas",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 53958.86,
     "expenditures": null
    }
   ],
@@ -132,7 +140,7 @@
     "candidate": "Tyson Miyake",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 102541.22,
+    "contributions": 115156.61,
     "expenditures": null
    }
   ],
@@ -142,7 +150,7 @@
     "candidate": "Terez Amato",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 16177.45,
+    "contributions": 22355.75,
     "expenditures": null
    },
    {
@@ -150,7 +158,7 @@
     "candidate": "Sheila Walker",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 8185,
+    "contributions": 17695,
     "expenditures": null
    }
   ],
@@ -168,7 +176,7 @@
     "candidate": "Kyle Yamashita",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 81127.2,
+    "contributions": 81377.2,
     "expenditures": null
    }
   ],
@@ -178,7 +186,7 @@
     "candidate": "Elle Cochran",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 0,
+    "contributions": 4750,
     "expenditures": null
    },
    {
@@ -186,7 +194,7 @@
     "candidate": "Sne Patel",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 62871.21,
+    "contributions": 76821.71,
     "expenditures": null
    }
   ],
@@ -206,7 +214,15 @@
     "candidate": "Luke Evslin",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 36325,
+    "contributions": 36750,
+    "expenditures": null
+   },
+   {
+    "name": "David Hazlebeck",
+    "candidate": "David Hazlebeck",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 13550.21,
     "expenditures": null
    }
   ],
@@ -216,7 +232,7 @@
     "candidate": "Misty Cluett",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 5915,
+    "contributions": 6215,
     "expenditures": null
    }
   ],
@@ -226,7 +242,7 @@
     "candidate": "Joe Gedeon",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 78076.6,
+    "contributions": 92336.6,
     "expenditures": null
    },
    {
@@ -234,7 +250,7 @@
     "candidate": "James Wataru",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 79450,
+    "contributions": 84050,
     "expenditures": null
    }
   ],
@@ -262,7 +278,7 @@
     "candidate": "David D.W. Asing",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 600,
+    "contributions": 650,
     "expenditures": null
    },
    {
@@ -270,7 +286,7 @@
     "candidate": "Tina Nakada Grandinetti",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 21356.3,
+    "contributions": 27386.3,
     "expenditures": null
    }
   ],
@@ -332,7 +348,7 @@
     "candidate": "Ikaika Olds",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 29922.22,
+    "contributions": 31172.22,
     "expenditures": null
    }
   ],
@@ -358,11 +374,19 @@
   ],
   "26": [
    {
+    "name": "Ian Ross",
+    "candidate": "Ian Ross",
+    "party": "Democratic",
+    "incumbent": false,
+    "contributions": 65341.75,
+    "expenditures": null
+   },
+   {
     "name": "Anthony Silva",
     "candidate": "Tony Silva",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 9202.76,
+    "contributions": 17895.76,
     "expenditures": null
    }
   ],
@@ -418,6 +442,16 @@
     "expenditures": null
    }
   ],
+  "29": [
+   {
+    "name": "Ikaika Hussey",
+    "candidate": "Ikaika Hussey",
+    "party": "Democratic",
+    "incumbent": true,
+    "contributions": 9570,
+    "expenditures": null
+   }
+  ],
   "30": [
    {
     "name": "Shirley Templo",
@@ -442,7 +476,7 @@
     "candidate": "Linda Ichiyama",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 65325,
+    "contributions": 66825,
     "expenditures": null
    },
    {
@@ -450,7 +484,7 @@
     "candidate": "Nancy Valdez",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 8492.05,
+    "contributions": 9766.14,
     "expenditures": null
    }
   ],
@@ -460,7 +494,7 @@
     "candidate": "Micah Pookela Kim Aiu",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 86487.64,
+    "contributions": 100287.64,
     "expenditures": null
    },
    {
@@ -468,7 +502,7 @@
     "candidate": "Garner Shimizu",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 62325.12,
+    "contributions": 72590.12,
     "expenditures": null
    }
   ],
@@ -486,7 +520,7 @@
     "candidate": "Gregg Takayama",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 35050,
+    "contributions": 35550,
     "expenditures": null
    }
   ],
@@ -542,7 +576,7 @@
     "candidate": "Daniel Degracia",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 26474,
+    "contributions": 42419,
     "expenditures": null
    },
    {
@@ -550,7 +584,7 @@
     "candidate": "Corey Rosenlee",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 29141.9,
+    "contributions": 32366.9,
     "expenditures": null
    }
   ],
@@ -570,7 +604,7 @@
     "candidate": "Diamond Garcia",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 34959.05,
+    "contributions": 47298.05,
     "expenditures": null
    },
    {
@@ -578,7 +612,7 @@
     "candidate": "Anthony Makana Paris",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 14970,
+    "contributions": 15420,
     "expenditures": null
    }
   ],
@@ -588,7 +622,7 @@
     "candidate": "Kanani Souza",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 9525,
+    "contributions": 11100,
     "expenditures": null
    }
   ],
@@ -598,7 +632,7 @@
     "candidate": "Darius Kila",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 139301.06,
+    "contributions": 157601.06,
     "expenditures": null
    },
    {
@@ -606,7 +640,7 @@
     "candidate": "Charla Weaver",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 53279.11,
+    "contributions": 58579.11,
     "expenditures": null
    }
   ],
@@ -616,7 +650,7 @@
     "candidate": "Chris Muraoka",
     "party": "Republican",
     "incumbent": true,
-    "contributions": 38506.65,
+    "contributions": 43110.75,
     "expenditures": null
    }
   ],
@@ -634,7 +668,7 @@
     "candidate": "Amy Perruso",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 19628.25,
+    "contributions": 25128.25,
     "expenditures": null
    }
   ],
@@ -652,7 +686,7 @@
     "candidate": "Mark Talaeai",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 21321.44,
+    "contributions": 25373.49,
     "expenditures": null
    }
   ],
@@ -672,17 +706,25 @@
     "candidate": "Scot Matayoshi",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 119865,
+    "contributions": 124365,
     "expenditures": null
    }
   ],
   "50": [
    {
+    "name": "Jesse Fitzgerald",
+    "candidate": "Jesse Fitzgerald",
+    "party": "Other",
+    "incumbent": false,
+    "contributions": 3475,
+    "expenditures": null
+   },
+   {
     "name": "Michael Lee",
     "candidate": "Michael Lee",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 52493.88,
+    "contributions": 59868.88,
     "expenditures": null
    }
   ],
@@ -722,14 +764,6 @@
     "incumbent": false,
     "contributions": 0,
     "expenditures": null
-   },
-   {
-    "name": "Joy San Buenaventura",
-    "candidate": "Joy San Buenaventura",
-    "party": "Democratic",
-    "incumbent": true,
-    "contributions": 125647.22,
-    "expenditures": null
    }
   ],
   "5": [
@@ -758,7 +792,7 @@
     "candidate": "Stanley Chang",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 149478.46,
+    "contributions": 155478.46,
     "expenditures": null
    },
    {
@@ -796,7 +830,7 @@
     "candidate": "Wallyn Kanoelani Christian",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 13048.33,
+    "contributions": 16593.33,
     "expenditures": null
    },
    {
@@ -804,7 +838,7 @@
     "candidate": "Tricia Mayumi Kwai Lin Nakamatsu",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 127646.5,
+    "contributions": 142897.5,
     "expenditures": null
    }
   ],
@@ -844,13 +878,23 @@
     "incumbent": false,
     "contributions": 11230.26,
     "expenditures": null
-   },
+   }
+  ],
+  "18": [
    {
-    "name": "Donovan Dela Cruz",
-    "candidate": "Donovan Dela Cruz",
+    "name": "Danielle Bass",
+    "candidate": "Danielle Bass",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 462665.18,
+    "contributions": 73305,
+    "expenditures": null
+   },
+   {
+    "name": "Kelly* Kitashima",
+    "candidate": "Kelly Puamailani Kitashima",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 38403.91,
     "expenditures": null
    }
   ],
@@ -860,7 +904,15 @@
     "candidate": "Rachele Fernandez Lamosao",
     "party": "Democratic",
     "incumbent": true,
-    "contributions": 180906.8,
+    "contributions": 188667,
+    "expenditures": null
+   },
+   {
+    "name": "Elijah Pierick",
+    "candidate": "Elijah Pierick",
+    "party": "Republican",
+    "incumbent": false,
+    "contributions": 55980.91,
     "expenditures": null
    }
   ],
@@ -870,7 +922,7 @@
     "candidate": "Bob McDermott",
     "party": "Republican",
     "incumbent": false,
-    "contributions": 12258.31,
+    "contributions": 20109.38,
     "expenditures": null
    },
    {
@@ -878,7 +930,7 @@
     "candidate": "Mark Owens",
     "party": "Democratic",
     "incumbent": false,
-    "contributions": 4023.25,
+    "contributions": 10486.4,
     "expenditures": null
    }
   ],
