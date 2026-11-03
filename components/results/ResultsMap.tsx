@@ -1,7 +1,8 @@
 "use client";
 
 import { memo, useMemo, useState } from "react";
-import { ComposableMap, Geography } from "react-simple-maps";
+import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
+import { filterMapZoomEvent } from "@/lib/mapZoom";
 import Geographies from "@/components/maps/Geographies";
 import { FlipPatternDefs, flipFill } from "@/components/FlipStripes";
 import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
@@ -73,9 +74,9 @@ const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t
             onMouseLeave={() => onHover(null)}
             onClick={() => row && onSelect(row)}
             style={{
-              default: { fill, stroke: isSel ? t.hoverStroke : t.mapStroke, strokeWidth: isSel ? (isHouse ? 2 : 3.5) : isHouse ? 0.4 : 1.0, outline: "none" },
-              hover: { fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 0.7 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
-              pressed: { fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 2 : 3.5, outline: "none" },
+              default: { vectorEffect: "non-scaling-stroke", fill, stroke: isSel ? t.hoverStroke : t.mapStroke, strokeWidth: isSel ? (isHouse ? 2 : 3.5) : isHouse ? 0.4 : 1.0, outline: "none" },
+              hover: { vectorEffect: "non-scaling-stroke", fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 0.7 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
+              pressed: { vectorEffect: "non-scaling-stroke", fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 2 : 3.5, outline: "none" },
             }} />
         );
       })}
@@ -89,22 +90,38 @@ export default function ResultsMap({ office, rows, mode, selected, onSelect }: {
   const t = useDarkMode() ? DARK_THEME : LIGHT_THEME;
   const flipColors = useMemo(() => Array.from(new Set(rows.filter(isCalledFlip).map((r) => fillFor(r, mode)).filter((c): c is string => !!c))), [rows, mode]);
   const isHouse = office === "house";
+  // Zoom and pan (wheel, pinch, drag) as on the forecast map; Reset remounts the group. A new
+  // office starts at the full view.
+  const [zoomKey, setZoomKey] = useState(0);
+  const [zoomed, setZoomed] = useState(false);
+  const [zoomOffice, setZoomOffice] = useState(office);
+  const STATE_LINE = { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, vectorEffect: "non-scaling-stroke" as const, outline: "none", pointerEvents: "none" as const };
+  if (zoomOffice !== office) { setZoomOffice(office); setZoomKey((k) => k + 1); setZoomed(false); }
   return (
     <div className="relative" onMouseMove={tip.onMouseMove}>
-      <div className="h-[300px] sm:h-[440px]">
+      <div className="relative h-[300px] sm:h-[440px]">
         <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} width={960} height={600} style={{ width: "100%", height: "100%" }}>
           <FlipPatternDefs colors={flipColors} />
+          <ZoomableGroup key={zoomKey} minZoom={1} maxZoom={16} filterZoomEvent={filterMapZoomEvent} onMoveEnd={({ zoom }: { zoom: number }) => setZoomed(zoom > 1.01 || zoomed)}>
           <Geographies geography={isHouse ? HOUSE_URL : STATES_URL}>
             {({ geographies }: { geographies: GeoFeature[] }) => <Layer geographies={geographies} office={office} rows={rows} mode={mode} selected={selected} t={t} onHover={setHover} onSelect={onSelect} />}
           </Geographies>
           {isHouse && (
             <Geographies geography={HOUSE_LINES_URL}>
               {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
-                <Geography key={geo.rsmKey} geography={geo} style={{ default: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" }, hover: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" }, pressed: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" } }} />
+                <Geography key={geo.rsmKey} geography={geo} style={{ default: STATE_LINE, hover: STATE_LINE, pressed: STATE_LINE }} />
               ))}
             </Geographies>
           )}
+          </ZoomableGroup>
         </ComposableMap>
+        {zoomed && (
+          <button onClick={() => { setZoomKey((k) => k + 1); setZoomed(false); }}
+            className="absolute left-2 top-2 z-10 rounded-lg px-2.5 py-1 text-xs font-medium backdrop-blur-sm"
+            style={{ background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted, boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}>
+            Reset
+          </button>
+        )}
       </div>
       <MapLegend mode={mode} office={office} t={t} />
       {hover && <ResultTooltip row={hover} boxRef={tip.tooltipRef} />}

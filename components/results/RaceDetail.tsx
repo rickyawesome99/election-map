@@ -155,7 +155,10 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
           <p className="mt-1 text-[13px]" style={muted}>
             {prior.seatHolder && <>Seat held by {prior.seatHolder} ({prior.seatParty})</>}
             {prior.seatHolder && live && " · "}
-            {live && <span className="tabular-nums" title="Precincts reporting, as the feed counts them; it runs ahead of the vote"><b style={{ color: inColor(inState(live.percentReporting)) }}>{inState(live.percentReporting) === "done" && "✓ "}{fmtIn(live.percentReporting)}</b> of precincts reporting</span>}
+            {/* The share of the expected vote counted, not the feed's own reporting figure: civicAPI's
+                race-level percent ran far ahead of the vote on election night (KY Senate 16% with one
+                county in, ~1% of the vote). The feed's figure stays in the tooltip. */}
+            {live && <span className="tabular-nums" title={`Share of the expected vote counted (our estimate). The feed reports ${fmtIn(live.percentReporting)}.`}><b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{(proj.locked || inState(proj.countedShare * 100) === "done") && "✓ "}{fmtIn(proj.countedShare * 100)}</b> of the expected vote in</span>}
           </p>
 
           <div className="mt-3">

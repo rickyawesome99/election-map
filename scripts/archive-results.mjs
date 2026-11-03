@@ -60,15 +60,23 @@ async function get(path, tries = 3) {
 async function snapshot() {
   const started = new Date();
   const out = {};
-  let failed = 0, i = 0;
+  let i = 0;
+  const missed = [];
   const worker = async () => {
     while (i < ids.length) {
       const row = ids[i++];
       try { out[row.civic_id] = await get(`race/${row.civic_id}`); }
-      catch (e) { failed++; console.error(`  ${row.office} ${row.state} ${row.district}: ${e.message}`); }
+      catch { missed.push(row); }
     }
   };
   await Promise.all(Array.from({ length: 6 }, worker));
+  // The feed's 502s come in bursts; races that failed all their tries get one more round after it.
+  let failed = 0;
+  if (missed.length) await new Promise((r) => setTimeout(r, 5000));
+  for (const row of missed) {
+    try { out[row.civic_id] = await get(`race/${row.civic_id}`); }
+    catch (e) { failed++; console.error(`  ${row.office} ${row.state} ${row.district}: ${e.message}`); }
+  }
   const dir = dateDir();
   mkdirSync(dir, { recursive: true });
   const stamp = started.toISOString().replace(/[:.]/g, "-");
