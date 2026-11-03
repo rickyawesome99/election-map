@@ -111,6 +111,7 @@ export default function ResultsPage() {
   const allPriors = useMemo(() => (priors ? [...priors.senate.races, ...priors.governor.races, ...priors.house.races] : []), [priors]);
 
   useEffect(() => {
+    if (!SHOW_REPLAY) return;
     const list = (url: string) => fetch(url, { cache: "no-store" }).then((r) => (r.ok ? r.json() : { snapshots: [] })).then((d: { snapshots?: ArchiveSnapshot[] }) => d.snapshots ?? []).catch(() => [] as ArchiveSnapshot[]);
     list("/api/results/archive").then(async (snaps) => {
       if (snaps.some((a) => a.set?.startsWith("sim-"))) return setArchiveAll(snaps);
@@ -549,6 +550,10 @@ function BarLegend() {
     </span>
   );
 }
+
+/** Election night 2026: the page shows the live civicAPI feed only. The replay (simulated nights,
+ *  archive sets) is kept but not loaded; flip this back on to replay. */
+const SHOW_REPLAY = false;
 
 /** The replay's simulated nights by name: the civicAPI test results (random against our forecast,
  *  so a stress test of the needle) and the realistic one (scripts/build-realistic-results-base.ts). */
