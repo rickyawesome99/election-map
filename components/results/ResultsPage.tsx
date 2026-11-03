@@ -2,10 +2,12 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useTouchHover } from "@/lib/useTouchHover";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { StandfirstHeader } from "@/components/StandfirstHeader";
 import { ELECTION_YEAR } from "@/lib/electionYear";
 import ResultsMap, { type MapMode } from "@/components/results/ResultsMap";
+import StateGlyph from "@/components/results/StateGlyph";
 import RaceDetail from "@/components/results/RaceDetail";
 import ChamberCard from "@/components/results/ChamberCard";
 import { flipBackground } from "@/components/FlipStripes";
@@ -13,7 +15,7 @@ import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
 import { nightObservations, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
-import { fitNight, type NightFit } from "@/lib/resultsNight";
+import { areaSwings, fitNight, type NightFit } from "@/lib/resultsNight";
 import NightPanel from "@/components/results/NightPanel";
 import { closeMinutes, fmtClose, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
@@ -229,7 +231,7 @@ export default function ResultsPage() {
   const showTest = replay != null;
   // Every race's live state, then the night fit over all of them (what the counties finished
   // anywhere imply for the races still out), then each race projected against that baseline.
-  const { rowsByOffice, nightFit } = useMemo(() => {
+  const { rowsByOffice, nightFit, nightAreas } = useMemo(() => {
     void liveVersion;
     const pairs = {} as Record<ResultsOffice, { prior: RacePrior; live: LiveRace | null }[]>;
     for (const o of RESULTS_OFFICES) {
@@ -239,10 +241,12 @@ export default function ResultsPage() {
         return { prior, live };
       });
     }
-    const fit: NightFit = fitNight(RESULTS_OFFICES.flatMap((o) => pairs[o].flatMap(({ prior, live }) => nightObservations(prior, live))));
+    const obs = RESULTS_OFFICES.flatMap((o) => pairs[o].flatMap(({ prior, live }) => nightObservations(prior, live)));
+    const fit: NightFit = fitNight(obs);
+    const areas = areaSwings(obs);
     const out = {} as Record<ResultsOffice, ResultsRow[]>;
     for (const o of RESULTS_OFFICES) out[o] = pairs[o].map(({ prior, live }) => ({ prior, live, proj: projectRace(prior, live, undefined, fit) }));
-    return { rowsByOffice: out, nightFit: fit };
+    return { rowsByOffice: out, nightFit: fit, nightAreas: areas };
   }, [priors, liveVersion, showTest]);
 
   const testSeen = useMemo(() => { void liveVersion; for (const l of liveRef.current.values()) if (l.testData) return true; return false; }, [liveVersion]);
@@ -456,8 +460,15 @@ export default function ResultsPage() {
     <div className="space-y-3">{status}</div>
     <div className="mt-6 space-y-10">
 
-      {/* Map, with the balance of power beside it at xl (stacked below xl) */}
-      <div className="grid gap-10 xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] xl:gap-8">
+      {/* Dashboard (a tighter gap to the map than the page's other sections) */}
+      <section className="mb-5">
+        <LedgerSectionHead label="Balance of power" meta={anyIn ? <BarLegend /> : "nothing counted yet"} />
+        <div className="grid gap-8 sm:grid-cols-3 sm:gap-10">
+          {RESULTS_OFFICES.map((o) => <ChamberCard key={o} office={o} tally={tallies[o]} rows={rowsByOffice[o]} history={seatHistory[o]} />)}
+        </div>
+      </section>
+
+      {/* Map */}
       <section>
         <LedgerSectionHead label="Map" right={
           <div className="flex flex-wrap items-center gap-1">
@@ -469,43 +480,31 @@ export default function ResultsPage() {
         <ResultsMap office={office} rows={rowsByOffice[office]} mode={mapMode} selected={selected} onSelect={select} />
       </section>
 
-      {/* Dashboard */}
-      <section>
-        <LedgerSectionHead label="Balance of power" meta={anyIn ? <BarLegend /> : "nothing counted yet"} />
-        <div className="grid gap-8 sm:grid-cols-3 sm:gap-10 xl:grid-cols-1 xl:gap-6">
-          {RESULTS_OFFICES.map((o) => <ChamberCard key={o} office={o} tally={tallies[o]} rows={rowsByOffice[o]} history={seatHistory[o]} />)}
-        </div>
-      </section>
-      </div>
-
       {/* The night model: what the counties finished anywhere imply for the races still out */}
-      {anyIn && <NightPanel fit={nightFit} rows={RESULTS_OFFICES.flatMap((o) => rowsByOffice[o])} onSelect={select} />}
+      {anyIn && <NightPanel fit={nightFit} areas={nightAreas} />}
 
       {/* Races: the sortable table, or the same races by poll-closing time */}
       <section>
+        <div className="mb-2 flex items-center gap-1">
+          <Tab active={raceView === "table"} onClick={() => setRaceView("table")}>Table</Tab>
+          <Tab active={raceView === "closing"} onClick={() => setRaceView("closing")}>By poll close</Tab>
+        </div>
         <LedgerSectionHead label={raceView === "table" ? `${OFFICE_LABEL[office]} races` : "Races by poll closing time"}
           meta={raceView === "table"
             ? `${uncalledOnly || keyOnly ? `${sortedRows.length} of ${rowsByOffice[office].length} races` : `${rowsByOffice[office].length} races`}${keyOnly ? ` · forecast within ${COMPETITIVE}` : ""} · click a row to open it`
             : "governor, Senate, then the closest House races"}
-          right={
+          right={raceView === "table" && (
           <div className="flex flex-wrap items-center gap-1">
-            <Tab active={raceView === "table"} onClick={() => setRaceView("table")}>Table</Tab>
-            <Tab active={raceView === "closing"} onClick={() => setRaceView("closing")}>By poll close</Tab>
-            {raceView === "table" && (
-              <>
-                <Sep />
-                <OfficeTabs office={office} setOffice={setOffice} />
-                <Sep />
-                <Tab active={keyOnly} onClick={() => setKeyOnly((v) => !v)}>Key races</Tab>
-                <Tab active={uncalledOnly} onClick={() => setUncalledOnly((v) => !v)}>Uncalled only</Tab>
-                <span className="mx-1 hidden sm:inline" style={veryMuted}>|</span>
-                <label className="ml-auto text-xs sm:ml-0" style={muted}>Sort <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
-                  <option value="close">Poll close</option><option value="margin">Closest count</option><option value="projected">Closest projection</option><option value="forecast">Closest forecast</option><option value="in">Most counted</option>
-                </select></label>
-              </>
-            )}
+            <OfficeTabs office={office} setOffice={setOffice} />
+            <Sep />
+            <Tab active={keyOnly} onClick={() => setKeyOnly((v) => !v)}>Key races</Tab>
+            <Tab active={uncalledOnly} onClick={() => setUncalledOnly((v) => !v)}>Uncalled only</Tab>
+            <span className="mx-1 hidden sm:inline" style={veryMuted}>|</span>
+            <label className="ml-auto text-xs sm:ml-0" style={muted}>Sort <select value={sort} onChange={(e) => setSort(e.target.value as SortKey)} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
+              <option value="close">Poll close</option><option value="margin">Closest count</option><option value="projected">Closest projection</option><option value="forecast">Closest forecast</option><option value="in">Most counted</option>
+            </select></label>
           </div>
-        } />
+        )} />
         {raceView === "table" ? (
           <>
             <ResultsRaceTable rows={sortedRows} selected={selected} onSelect={select} />
@@ -559,7 +558,29 @@ const SET_LABEL: Record<string, string> = { "sim-night": "simulated · stress te
  *  races the forecast has closest, up to this many in all. */
 const CARDS_PER_STATE = 6;
 
-function RaceCard({ row, selected, onSelect }: { row: ResultsRow; selected: string | null; onSelect: (r: ResultsRow) => void }) {
+const TILT_DEG = 7;
+
+function tiltCard(el: HTMLElement, clientX: number, clientY: number) {
+  const r = el.getBoundingClientRect();
+  const x = (clientX - r.left) / r.width, y = (clientY - r.top) / r.height;
+  el.style.setProperty("--rx", `${((x - 0.5) * TILT_DEG).toFixed(2)}deg`);
+  el.style.setProperty("--ry", `${((0.5 - y) * TILT_DEG).toFixed(2)}deg`);
+}
+
+function untiltCard(el: HTMLElement) {
+  el.style.setProperty("--rx", "0deg");
+  el.style.setProperty("--ry", "0deg");
+}
+
+function tiltToPointer(e: React.PointerEvent<HTMLElement>) {
+  if (e.pointerType === "mouse") tiltCard(e.currentTarget, e.clientX, e.clientY);
+}
+
+function resetTilt(e: React.PointerEvent<HTMLElement>) {
+  if (e.pointerType === "mouse") untiltCard(e.currentTarget);
+}
+
+function RaceCard({ row, selected, onSelect, index }: { row: ResultsRow; selected: string | null; onSelect: (r: ResultsRow) => void; index: number }) {
   const { prior, proj, live } = row;
   const key = raceHash(prior);
   const hasVotes = !!live && live.total > 0;
@@ -575,19 +596,29 @@ function RaceCard({ row, selected, onSelect }: { row: ResultsRow; selected: stri
   const fill = won === "R" ? "var(--party-rep-fill)" : won === "I" ? "var(--party-ind-fill)" : won === "D" ? "var(--party-dem-fill)" : null;
   const on = (c: string) => (fill ? "#ffffff" : c);
   const soft = fill ? { color: "rgba(255,255,255,0.82)" } : null;
+  const counted = hasVotes ? Math.min(100, proj.countedShare * 100) : 0;
+  const current = fmtCall(proj.currentMargin, prior);
+  const projected = fmtCall(proj.margin, prior);
+  // Motion (globals.css rc-*): the cards rise in staggered, a figure rolls in whenever it changes
+  // (keyed on its text), the call fades the fill in and pops its badge, a race still counting
+  // pulses a dot, and the bar along the bottom fills with the count. Under a mouse or a finger
+  // (useTouchHover) the card tilts toward the pointer (CSS variables set here, no re-render) and darkens.
   return (
-    <button onClick={() => onSelect(row)} className={`group block h-full w-full self-start py-1 pl-3 text-left align-top transition-opacity hover:opacity-70${fill ? " rounded-r-md pr-2" : ""}`}
-      style={{ borderLeft: `${selected === key ? 2 : 1}px solid ${selected === key ? "var(--app-text-primary)" : fill ?? "var(--app-border)"}`, background: fill ? (flipped ? flipBackground(fill, 3, "rgba(255,255,255,0.18)") : fill) : undefined, color: fill ? "#ffffff" : undefined }}>
+    <button onClick={() => onSelect(row)} onPointerMove={tiltToPointer} onPointerLeave={resetTilt} data-touch-hover="" data-filled={fill ? "" : undefined} className={`rc-card group block h-full w-full self-start py-1 pl-3 text-left align-top${fill ? " rounded-r-md pr-2" : ""}`}
+      style={{ animationDelay: `${Math.min(index, 8) * 45}ms`, borderLeft: `${selected === key ? 2 : 1}px solid ${selected === key ? "var(--app-text-primary)" : fill ?? "var(--app-border)"}`, backgroundColor: fill ?? undefined, backgroundImage: flipped ? flipBackground("linear-gradient(transparent, transparent)", 3, "rgba(255,255,255,0.18)") : undefined, color: fill ? "#ffffff" : undefined }}>
       <div className="flex min-h-full flex-col justify-start">
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="truncate text-sm font-semibold">{name}</span>
-        {won && <span className="font-mono text-[9px] font-bold uppercase tracking-wider" style={{ color: on(partyColor(won)) }} title={flipped ? `Called; flips a seat ${prior.seatParty} held` : undefined}>{flipped ? "Flip" : "Called"}</span>}
+      <div className="flex items-center justify-between gap-2">
+        <span className="flex min-w-0 items-center gap-1.5">
+          <span className="truncate text-sm font-semibold">{name}</span>
+          {hasVotes && !won && <span className="rc-live" style={{ color: callSideColor(proj.currentMargin, prior) }} title="Counting" />}
+        </span>
+        {won && <span key={won} className="rc-badge font-mono text-[9px] font-bold uppercase tracking-wider" style={{ color: on(partyColor(won)) }} title={flipped ? `Called; flips a seat ${prior.seatParty} held` : undefined}>{flipped ? "Flip" : "Called"}</span>}
       </div>
       {hasVotes ? (
         <>
-          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums" style={{ color: on(callSideColor(proj.currentMargin, prior)) }}>{fmtCall(proj.currentMargin, prior)}</div>
-          <div className="mt-1 text-[10px] tabular-nums" style={soft ?? veryMuted}><span style={{ color: on(inColor(inState(proj.countedShare * 100))), fontWeight: 600 }}>{fmtIn(proj.countedShare * 100)}</span> counted</div>
-          <div className="text-[11px] tabular-nums" style={soft ?? muted}>Proj. Margin <b style={{ color: on(callSideColor(proj.margin, prior)) }}>{fmtCall(proj.margin, prior)}</b></div>
+          <div className="rc-figure mt-1 overflow-hidden text-lg font-extrabold leading-none tabular-nums"><span key={current} className="rc-tick" style={{ color: on(callSideColor(proj.currentMargin, prior)) }}>{current}</span></div>
+          <div className="mt-1 text-[10px] tabular-nums" style={soft ?? veryMuted}><span style={{ color: on(inColor(inState(counted))), fontWeight: 600 }}>{fmtIn(counted)}</span> counted</div>
+          <div className="overflow-hidden text-[11px] tabular-nums" style={soft ?? muted}>Proj. Margin <b key={projected} className="rc-tick" style={{ color: on(callSideColor(proj.margin, prior)) }}>{projected}</b></div>
         </>
       ) : (
         <>
@@ -595,12 +626,16 @@ function RaceCard({ row, selected, onSelect }: { row: ResultsRow; selected: stri
           <div className="mt-1 text-[10px]" style={soft ?? veryMuted}>No votes counted yet</div>
         </>
       )}
+      <div className="mt-2 h-[3px] overflow-hidden rounded-full" style={{ background: fill ? "rgba(255,255,255,0.28)" : "var(--app-tab-bg)" }}>
+        <div className="rc-progress h-full rounded-full" style={{ width: `${counted}%`, background: fill ? "rgba(255,255,255,0.9)" : callSideColor(proj.currentMargin, prior) }} />
+      </div>
       </div>
     </button>
   );
 }
 
 function ClosingTable({ rowsByOffice, selected, onSelect }: { rowsByOffice: Record<ResultsOffice, ResultsRow[]>; selected: string | null; onSelect: (r: ResultsRow) => void }) {
+  useTouchHover(tiltCard, untiltCard);
   const groups = useMemo(() => {
     type St = { state: string; name: string; close: RacePrior["pollsClose"]; statewide: ResultsRow[]; house: ResultsRow[]; counted: number; total: number };
     const m = new Map<string, St>();
@@ -627,15 +662,19 @@ function ClosingTable({ rowsByOffice, selected, onSelect }: { rowsByOffice: Reco
             <span className="font-mono text-[10px] font-bold uppercase tracking-wider" style={muted}>ET · {states.length} {states.length === 1 ? "state" : "states"}</span>
           </div>
           {states.map((s) => (
-            <div key={s.state} className="grid gap-x-6 gap-y-1 py-3 sm:grid-cols-[10rem_minmax(0,1fr)]" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              <div>
-                <div className="font-semibold">{s.name}</div>
-                <div className="text-[11px] tabular-nums" style={muted}>{s.total ? `${Math.round((s.counted / s.total) * 100)}% counted` : ""}</div>
-                {s.close.last !== s.close.first && <div className="text-[10px]" style={veryMuted}>{s.close.note ?? `some polls close at ${fmtClose(s.close.last)}`}</div>}
+            <div key={s.state} className="grid gap-x-6 gap-y-1 py-3 sm:grid-cols-[12rem_minmax(0,1fr)]" style={{ borderBottom: "1px solid var(--app-border)" }}>
+              {/* The state's silhouette beside its name (not under it), so it never makes the row taller than its cards */}
+              <div className="flex items-start gap-2.5">
+                <StateGlyph state={s.state} className="mt-0.5 h-9 w-9 shrink-0" />
+                <div className="min-w-0">
+                  <div className="font-semibold">{s.name}</div>
+                  <div className="text-[11px] tabular-nums" style={muted}>{s.total ? `${Math.round((s.counted / s.total) * 100)}% counted` : ""}</div>
+                  {s.close.last !== s.close.first && <div className="text-[10px]" style={veryMuted}>{s.close.note ?? `some polls close at ${fmtClose(s.close.last)}`}</div>}
+                </div>
               </div>
               <div>
                 <div className="grid grid-cols-2 gap-x-3 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
-                  {s.cards.map((r) => <RaceCard key={raceHash(r.prior)} row={r} selected={selected} onSelect={onSelect} />)}
+                  {s.cards.map((r, i) => <RaceCard key={raceHash(r.prior)} row={r} selected={selected} onSelect={onSelect} index={i} />)}
                 </div>
               </div>
             </div>

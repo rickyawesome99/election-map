@@ -164,7 +164,12 @@ function yearVote(rows: Row[], year: number): YearHouseVote {
     const dropped: DroppedSeat[] = [];
     for (const r of sr) {
       const k = kinds.get(r)!;
-      d += r.dem; rr += r.rep;
+      // "Every vote": credit each column's votes to the party actually on it. A same-party final's
+      // second finalist sits in the other column tagged "(D)"/"(R)"; a stand-in for a missing major
+      // party is tagged "(I)" (or by party initial) and counts for neither.
+      const repTag = /\(([A-Z])\)\s*$/.exec(r.repName)?.[1], demTag = /\(([A-Z])\)\s*$/.exec(r.demName)?.[1];
+      if (demTag == null) d += r.dem; else if (demTag === "R") rr += r.dem;
+      if (repTag == null) rr += r.rep; else if (repTag === "D") d += r.rep;
       if (k === "contested") { nc++; cd += r.dem; cr += r.rep; id += r.dem; ir += r.rep; continue; }
       kindCount[k] += 1;
       dropped.push({ code: r.code, kind: k, votes: r.dem + r.rep });

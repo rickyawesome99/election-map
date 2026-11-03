@@ -494,9 +494,9 @@ function ResultsSkeleton() {
       <Sk className="mt-3 h-4 w-24 rounded-full" />
       <Sk className="mt-3 h-10 w-72" />
       <Sk className="mt-4 h-4 w-80" />
-      <div className="mt-6 grid gap-10 xl:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] xl:gap-8">
+      <div className="mt-6 space-y-10">
+        <div><SectionHead /><div className="mt-4 grid gap-4 sm:grid-cols-3">{Array.from({ length: 3 }, (_, i) => <Sk key={i} className="h-44 w-full" />)}</div></div>
         <div><SectionHead /><Sk className="mx-auto mt-4 h-[300px] w-full sm:h-[440px]" /></div>
-        <div><SectionHead /><div className="mt-4 grid gap-4 sm:grid-cols-3 xl:grid-cols-1">{Array.from({ length: 3 }, (_, i) => <Sk key={i} className="h-44 w-full" />)}</div></div>
       </div>
       <SectionHead className="mt-10" />
       <div className="mt-4 space-y-3">{Array.from({ length: 8 }, (_, i) => <Sk key={i} className="h-8 w-full" />)}</div>

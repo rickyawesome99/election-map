@@ -27,6 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "data-entry", "state-leg-finance", "portal-raw")
 CACHE = "/private/tmp/claude-501/-Users-rickyjia-election-map/00d2d31a-c616-4726-afce-96e4c31fe349/scratchpad/portal-cache/ma"
 API = "https://api.ocpf.us"
+PAUSE = 1.0  # seconds before every request; OCPF rate-limits bursts
 SOURCE = "Massachusetts OCPF (receipts + in-kind, two calendar years)"
 TODAY = datetime.date.today()
 
@@ -35,13 +36,19 @@ def get(path, name, refresh=False):
     p = os.path.join(CACHE, name)
     if os.path.exists(p) and not refresh:
         return json.load(open(p))
-    for attempt in range(5):
+    for attempt in range(6):
+        time.sleep(PAUSE)
         r = subprocess.run(["curl", "-sS", "--max-time", "90", API + path], capture_output=True)
         try:
             data = json.loads(r.stdout)
-            break
         except ValueError:
             time.sleep(5 * (attempt + 1))
+            continue
+        # OCPF answers a burst with a JSON 429 problem body ("Too many requests"): back off, never cache it.
+        if isinstance(data, dict) and data.get("status") == 429:
+            time.sleep(60 * 2 ** attempt)
+            continue
+        break
     else:
         sys.exit(f"MA: failed {path}")
     os.makedirs(os.path.dirname(p), exist_ok=True)
@@ -86,7 +93,7 @@ def fetch(cycle):
                 "expenditures": round(sum(p[1] for p in known), 2) if known else None,
             }
 
-        with ThreadPoolExecutor(4) as ex:
+        with ThreadPoolExecutor(1) as ex:
             rows = list(ex.map(one, roster))
         out += rows
         print(f"MA {cycle} {chamber}: {len(rows)} candidates")

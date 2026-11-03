@@ -59,7 +59,7 @@ function priorFor(r: (typeof RACES)[number]): RacePrior {
   const mean = cells.reduce((a, c) => a + c.votes * c.lean, 0) / total;
   const shift = r.forecast - mean;
   return {
-    office: "governor", id: r.state, civicId: r.id, label: r.stateName, state: r.state, stateName: r.stateName, href: "",
+    office: "governor", id: r.state, civicId: r.id, label: r.stateName, state: r.state, stateName: r.stateName, href: "", past: [],
     dem: { name: r.dem, party: "D", incumbent: false, photo: null }, rep: { name: r.rep, party: "R", incumbent: false, photo: null },
     seatParty: null, seatHolder: null, special: false, rcv: false, jungle: false, tpl: null, beta: 1,
     forecast: { margin: r.forecast, sigma: r.sigma, probability: normalCdf(-r.forecast / r.sigma), rating: "", contest: "contested", interval80: [r.forecast - 1.28 * r.sigma, r.forecast + 1.28 * r.sigma] },

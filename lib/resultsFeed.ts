@@ -72,7 +72,10 @@ const lastName = (n: string) => n.normalize("NFD").replace(/[̀-ͯ]/g, "").split
  *  surname for an independent slot (Osborn in NE), then the largest candidate of that party. */
 export function matchSlots(prior: RacePrior, cands: RawCandidate[]): { dem: RawCandidate | null; rep: RawCandidate | null } {
   const pick = (slot: RacePrior["dem"]): RawCandidate | null => {
-    const byName = cands.find((c) => c.name && lastName(c.name) === lastName(slot.name) && lastName(slot.name).length > 2);
+    // Two candidates can share the surname (AK-Sen: Dan Sullivan R, Daniel J. Jr. Sullivan nonpartisan),
+    // so the one in the slot's party wins.
+    const named = cands.filter((c) => c.name && lastName(c.name) === lastName(slot.name) && lastName(slot.name).length > 2);
+    const byName = named.find((c) => partyOf(c.party) === slot.party) ?? named[0];
     if (byName) return byName;
     const party = cands.filter((c) => partyOf(c.party) === slot.party);
     return party.sort((a, b) => num(b.votes) - num(a.votes))[0] ?? null;

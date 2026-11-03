@@ -22,7 +22,7 @@ export default function GenericBallotPage() {
   const data = genericBallotPopularVote();
   const { years, miss, now } = data;
   const first = years[0].year, last = years[years.length - 1].year;
-  const note = "mt-4 max-w-3xl text-xs leading-relaxed";
+  const note = "mt-4 text-xs leading-relaxed";
   const th = (h: string, i: number, leftCols = 1) => (
     <th key={h} scope="col" className={`px-2 py-2 text-[10px] font-bold uppercase tracking-wider ${i < leftCols ? "text-left" : "text-right"}`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{h}</th>
   );
@@ -33,7 +33,7 @@ export default function GenericBallotPage() {
   // ── Chart: the generic ballot and the three House-vote bases, one column per year ──
   // One axis (margin), year columns; identity by shape and a legend, ink tokens for every mark
   // so no mark depends on color alone; the EVEN line is the baseline; 2px strokes, ≥8px markers.
-  const W = 640, H = 230, PAD_L = 44, PAD_R = 16, PAD_T = 18, PAD_B = 34;
+  const W = 1200, H = 300, PAD_L = 48, PAD_R = 20, PAD_T = 20, PAD_B = 38;
   const lo = -12, hi = 6; // D+12 to R+6 covers every value on file
   const yOf = (v: number) => PAD_T + ((v - lo) / (hi - lo)) * (H - PAD_T - PAD_B);
   const xOf = (i: number) => PAD_L + ((i + 0.5) / years.length) * (W - PAD_L - PAD_R);
@@ -49,8 +49,9 @@ export default function GenericBallotPage() {
       </StandfirstHeader>
 
       <main className="mx-auto max-w-7xl px-4 pb-14 pt-7 sm:px-6 sm:pt-8">
-        <section className="mb-12 max-w-3xl space-y-4 text-[15px] leading-relaxed">
+        <section className="mb-12 space-y-4 text-[15px] leading-relaxed">
           <LedgerSectionHead label="What the generic ballot measures" />
+          <div className="grid gap-x-10 gap-y-4 lg:grid-cols-2">
           <p>
             A generic-ballot poll asks every voter in the country one question: if the election for Congress were held today, would you vote for the
             Democratic or the Republican candidate in your district? No names, no local races. Averaged across pollsters it is the best single reading of the
@@ -63,6 +64,7 @@ export default function GenericBallotPage() {
             opponent most of them go to one side or are left blank. So even a perfect poll would not match the reported total. There are three honest ways to
             count the House vote, and they give different answers.
           </p>
+          </div>
           <div className="grid gap-4 sm:grid-cols-3">
             {([
               ["Every vote", "The official total: every vote in every seat. A seat with only one major party on the ballot gives its whole vote to that party. This is the number usually reported."],
@@ -79,12 +81,12 @@ export default function GenericBallotPage() {
 
         <section className="mb-12">
           <LedgerSectionHead label={`How the poll and the count have lined up, ${first}–${last}`} meta="Two-party margins, Republican minus Democrat" />
-          <figure className="mt-4 max-w-3xl">
+          <figure className="mt-4">
             <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`Final generic ballot and the House vote on three bases, by election year ${first} to ${last}`}>
               {ticks.map((t) => (
                 <g key={t}>
                   <line x1={PAD_L} x2={W - PAD_R} y1={yOf(t)} y2={yOf(t)} stroke={t === 0 ? "var(--app-text-muted)" : "var(--app-border)"} strokeWidth={t === 0 ? 1.5 : 1} />
-                  <text x={PAD_L - 6} y={yOf(t) + 3.5} fontSize="10" textAnchor="end" fill="var(--app-text-muted)">{label(t)}</text>
+                  <text x={PAD_L - 6} y={yOf(t) + 3.5} fontSize="12" textAnchor="end" fill="var(--app-text-muted)">{label(t)}</text>
                 </g>
               ))}
               {years.map((y, i) => {
@@ -95,17 +97,17 @@ export default function GenericBallotPage() {
                 const vals = marks.map((m) => m.v).filter((v): v is number => v != null);
                 return (
                   <g key={y.year}>
-                    <line x1={x} x2={x} y1={yOf(Math.min(...vals))} y2={yOf(Math.max(...vals))} stroke="var(--app-text-very-muted)" strokeWidth="2" strokeLinecap="round" />
+                    <line x1={x} x2={x} y1={yOf(Math.min(...vals))} y2={yOf(Math.max(...vals))} stroke="var(--app-text-very-muted)" strokeWidth="2.5" strokeLinecap="round" />
                     {marks.map((m) => m.v == null ? null : (
                       <g key={m.name}>
                         <title>{`${y.year} · ${m.name}: ${fmtMargin(m.v)}`}</title>
-                        {m.shape === "ring" && <circle cx={x} cy={yOf(m.v)} r="5.5" fill="var(--app-bg)" stroke="var(--app-text-primary)" strokeWidth="2" />}
-                        {m.shape === "dot" && <circle cx={x} cy={yOf(m.v)} r="5" fill="var(--app-text-primary)" stroke="var(--app-bg)" strokeWidth="2" />}
-                        {m.shape === "square" && <rect x={x - 4.5} y={yOf(m.v) - 4.5} width="9" height="9" fill="var(--app-text-muted)" stroke="var(--app-bg)" strokeWidth="2" />}
-                        {m.shape === "diamond" && <rect x={x - 4.5} y={yOf(m.v) - 4.5} width="9" height="9" transform={`rotate(45 ${x} ${yOf(m.v)})`} fill="var(--app-text-muted)" stroke="var(--app-bg)" strokeWidth="2" />}
+                        {m.shape === "ring" && <circle cx={x} cy={yOf(m.v)} r="7.5" fill="var(--app-bg)" stroke="var(--app-text-primary)" strokeWidth="2.5" />}
+                        {m.shape === "dot" && <circle cx={x} cy={yOf(m.v)} r="7" fill="var(--app-text-primary)" stroke="var(--app-bg)" strokeWidth="2" />}
+                        {m.shape === "square" && <rect x={x - 6} y={yOf(m.v) - 6} width="12" height="12" fill="var(--app-text-muted)" stroke="var(--app-bg)" strokeWidth="2" />}
+                        {m.shape === "diamond" && <rect x={x - 6} y={yOf(m.v) - 6} width="12" height="12" transform={`rotate(45 ${x} ${yOf(m.v)})`} fill="var(--app-text-muted)" stroke="var(--app-bg)" strokeWidth="2" />}
                       </g>
                     ))}
-                    <text x={x} y={H - 12} fontSize="11" fontWeight="700" textAnchor="middle" fill="var(--app-text-muted)">{y.year}</text>
+                    <text x={x} y={H - 12} fontSize="13" fontWeight="700" textAnchor="middle" fill="var(--app-text-muted)">{y.year}</text>
                   </g>
                 );
               })}
@@ -119,7 +121,7 @@ export default function GenericBallotPage() {
           </figure>
 
           <div className="mt-6 overflow-x-auto">
-            <table className="w-full max-w-4xl border-collapse text-sm" aria-label="Generic ballot and House vote by year">
+            <table className="w-full border-collapse text-sm" aria-label="Generic ballot and House vote by year">
               <thead><tr>{["Year", "Generic ballot, final", "Every vote", "Contested only", "Imputed", "Seats without a contest", "Miss, contested", "Miss, imputed"].map((h, i) => th(h, i))}</tr></thead>
               <tbody>
                 {years.map((y) => {
@@ -190,7 +192,7 @@ export default function GenericBallotPage() {
         <section className="mb-12">
           <LedgerSectionHead label={`From this year's generic ballot to a ${FORECAST_YEAR} House vote`} meta={now.gbThrough ? `Generic-ballot polls through ${now.gbThrough}` : undefined} />
           <div className="mt-4 grid gap-8 lg:grid-cols-2">
-            <div className="max-w-xl space-y-4 text-[15px] leading-relaxed">
+            <div className="space-y-4 text-[15px] leading-relaxed">
               <p>
                 <b>What history says.</b> Take today&rsquo;s generic ballot, <M v={now.gb} />, and shift it by the average miss. On contested seats that points to about{" "}
                 <M v={now.translation.contested.mid} />, with four elections in five landing between <M v={now.translation.contested.hi} /> and <M v={now.translation.contested.lo} />. With the dropped
@@ -199,27 +201,28 @@ export default function GenericBallotPage() {
               </p>
               <p>
                 <b>What the forecast does.</b> The model shades the generic ballot by half the historical miss, to <M v={now.pvHat} />, and treats the rest of the miss as uncertainty rather than a
-                prediction. Every House race then moves with that national House vote in proportion to how strongly its state has swung with the country before: a race in a typical state receives{" "}
-                <M v={now.housePts} /> on top of its partisan lean, before incumbency, fundraising, candidates and the race&rsquo;s own polls. Senate and governor races receive a damped version, <M v={now.eHat} />,
-                because history shows they swing less than the House vote does.
+                prediction. That House-vote estimate is then converted to the model&rsquo;s own environment scale, which past elections show moves about half as far as the House vote, and every race moves with it in
+                proportion to how strongly its state has swung with the country before: a race in a typical state receives <M v={now.housePts} /> on top of its partisan lean, before incumbency, fundraising,
+                candidates and the race&rsquo;s own polls.
               </p>
               <p>
                 <b>Adding the races back up.</b> The 435 House projections sum to <M v={now.sumAll} /> as the official total will be counted, and <M v={now.sumContested} /> on the {now.contestedSeats} contested
                 seats. Those are the forecast&rsquo;s predictions of the two numbers that will be reported on election night. The gap between them is the {dropped2026} seats without a contest, {now.unopposedD} of them Democratic.
               </p>
               <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-                Until {FORECAST_YEAR}-11-02 House races received the damped version too, and the projections summed to about D+4.9 against the model&rsquo;s own D+7.4. The House vote is nothing more than the sum of the House
-                races, so the two have to agree; the rule was changed and the reasoning is on the <Link href="/analysis/internal-methodology#environment" prefetch={false} className="font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>methodology page</Link>.
+                The summed projections sit below the model&rsquo;s own House-vote estimate, and that is by design. The House vote is the sum of the House races, which suggests they should move together one for one,
+                and for a day the forecast was built that way. Testing the idea on the 2018 and 2020 House races, scored on the district lines of the time, showed it over-shot: House races have moved with the damped
+                environment, not the full House vote, because each district&rsquo;s partisan lean already carries part of the swing. The reasoning is on the{" "}
+                <Link href="/analysis/internal-methodology#environment" prefetch={false} className="font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>methodology page</Link>.
               </p>
             </div>
-            <table className="w-full max-w-md self-start border-collapse text-sm" aria-label={`The ${FORECAST_YEAR} chain from generic ballot to House vote`}>
+            <table className="w-full self-start border-collapse text-sm" aria-label={`The ${FORECAST_YEAR} chain from generic ballot to House vote`}>
               <thead><tr>{th("Step", 0)}{th("Value", 1)}</tr></thead>
               <tbody>
                 {([
                   ["Generic ballot average", now.gb, "one poll per pollster, recent polls weighted more"],
                   [`Shaded by half the average miss (${fmtMargin(now.meanMissRaw)} × ${now.shrink})`, now.pvHat, "the model's expected House vote"],
-                  ["Environment a typical House race receives", now.housePts, "the move from the neutral-year vote, " + fmtMargin(now.pv0)],
-                  ["Environment a typical Senate or governor race receives", now.eHat, "damped: those offices swing less"],
+                  ["Environment a typical race receives", now.eHat, "on the model's damped scale, every office"],
                   ["House projections summed, all 435 seats", now.sumAll, "how the official total will be counted"],
                   [`House projections summed, ${now.contestedSeats} contested seats`, now.sumContested, "the like-for-like number"],
                   ["History's translation, contested seats", now.translation.contested.mid, `80% band ${fmtMargin(now.translation.contested.hi)} to ${fmtMargin(now.translation.contested.lo)}`],

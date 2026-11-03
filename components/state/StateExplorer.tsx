@@ -79,7 +79,9 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
   const router = useRouter();
   const openPage = (href: string) => { startPendingNav(href); router.push(href); };
   const mapSelectHouse = (race: ForecastedRace | null) => {
-    if (desktop && race) openPage(`/house/${race.name.toLowerCase()}`);
+    // null is a click on the already-selected district (a ballot row selected it): open that one.
+    const target = race ?? selectedHouse;
+    if (desktop && target) openPage(`/house/${target.name.toLowerCase()}`);
     else setSelectedHouse(race);
   };
   const [selectedLegKey, setSelectedLegKey] = useState<string | null>(null);
@@ -502,9 +504,9 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
 
         {/* Map vintage: when each body's lines were last drawn, which is where a seat split stops comparing cleanly. */}
         {results.vintage.length > 0 && (
-          <div className="mt-6 flex flex-wrap gap-x-8 gap-y-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
+          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 pt-3 sm:flex sm:flex-wrap sm:gap-x-8" style={{ borderTop: "1px solid var(--app-border)" }}>
             {results.vintage.map((v) => (
-              <div key={v.label} className="min-w-[120px]">
+              <div key={v.label} className="min-w-0 sm:min-w-[120px]">
                 <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{v.label}</div>
                 <div className="text-sm font-bold tabular-nums leading-tight" style={{ color: "var(--app-text-primary)" }}>{v.value}</div>
                 {v.sub && <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{v.sub}</div>}

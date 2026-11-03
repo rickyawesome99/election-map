@@ -159,10 +159,10 @@ test("without the dev archive the preview replays the published simulated night"
   const night = page.locator("section", { hasText: "What early results say" });
   await expect(night).toContainText("National swing");
   await expect(night).toContainText(/counties' weight/);
-  // Mid-count, the early-vote skews (there is nothing part-counted once every county is in).
+  // Mid-count, the urban / suburban / rural rows (the early-vote skew is fitted but not shown).
   await page.getByRole("slider", { name: "Snapshot" }).fill("20");
   await expect(page.getByText(/21 \/ 65/)).toBeVisible();
-  await expect(night).toContainText("Votes counted first vs the final", { timeout: 30_000 });
+  await expect(night).toContainText("By type of county", { timeout: 30_000 });
   await page.getByRole("slider", { name: "Snapshot" }).fill("64");
   await expect(page.getByText(/65 \/ 65/)).toBeVisible();
   await page.evaluate(() => { window.location.hash = "#senate-GA"; });

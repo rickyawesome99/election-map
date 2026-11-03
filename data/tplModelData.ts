@@ -203,6 +203,14 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
 export const FORECAST_CONSTANTS = {
   ENV_MISS_SHRINK: 0.5,
   ENV_DAYS_MID_SEPT_TO_ELECTION: 49,
+  // ENV_PV_BASIS (2026-11-03): which House vote the conversion E = c + s × PV and the miss (PV − final
+  // generic ballot) are fitted against. "raw" = the official total, in which an unopposed seat gives
+  // its whole vote to one party; "imputed" = every uncontested / same-party seat filled with the
+  // two-party vote a D-vs-R race there would have produced (/analysis/generic-ballot). The generic
+  // ballot asks everyone, including voters in seats with no contest, so it measures the imputed
+  // quantity; the raw total was an inconsistency of basis. Imputed: s 0.57 → 0.65, pv0 −0.9 → −0.9,
+  // mean miss 1.8 → 1.9 — every race's environment term moves about 0.6 pts Democratic today.
+  ENV_PV_BASIS: "imputed" as "raw" | "imputed",
   // ── House races on the House-vote scale (2026-11-02) ────────────────────────────────────
   // E is one environment fitted across every office, so it moves about s (≈ 0.57) points per
   // point of House popular vote: Senate, Governor and presidential margins swing less than the
@@ -216,7 +224,13 @@ export const FORECAST_CONSTANTS = {
   // ≈1 in 2024, ≈2+ in 2018 and 2022 — and the struct-mode pooled MAE is flat (4.56 → 4.60)
   // because the test years' E_hat sat near zero; 2018 (n 6) improves 7.7 → 5.9, 2020 (n 5)
   // worsens 5.1 → 6.8. Adopted on the aggregate argument (user decision 2026-11-02).
-  HOUSE_ENV_ON_VOTE_SCALE: true,
+  // REVERTED 2026-11-03 once the backtest scored 2018/2020 House races on the lines of the day
+  // (411 + 419 races, --house-vintage): House margins moved about one-for-one with the fitted E in
+  // 2018 (oracle-E bias −0.2 at ×1, +4.6 at ×1.75), and the live blend one day out over all 1,284
+  // House races ran R+1.0 biased with the scale against R+0.2 without it (MAE 6.00 vs 5.94). The
+  // aggregate argument fails in practice because district leans are anchored on presidential
+  // margins, which already carry part of the House swing. The machinery stays for the harness.
+  HOUSE_ENV_ON_VOTE_SCALE: false,
   // ── Shared national error (2026-10-23 review) ───────────────────────────────────────
   // σ_E² = NATIONAL_SIGMA_STRUCTURAL² + (|s| × √(sd(miss)² + (horizon × rms(drift))²))²
   // The second term is the generic ballot's own error (poll miss + September→November drift)
@@ -225,7 +239,7 @@ export const FORECAST_CONSTANTS = {
   // vote known exactly: the lean window, the E↔vote conversion and whatever moves a whole
   // office in one year. scripts/forwardBacktest.ts measures the realized spread of the yearly
   // biases of the mid-September forecast (its "national-sd"): Senate 2.97 (four years of 33
-  // races each), Governor 3.91, House 4.74 (the House value rests on 6 and 5 races in 2018
+  // races each), Governor 3.91, House 4.74 (measured when the House value rested on 6 and 5 races in 2018
   // and 2020). 2.6 makes the mid-September σ_E reproduce the Senate figure, √(2.6² + 1.47²) =
   // 2.99; the other two offices would ask for more, not less. Independent race noise averages
   // out over a chamber and shared noise does not, so this is the constant that sets the width
@@ -237,7 +251,12 @@ export const FORECAST_CONSTANTS = {
   // Senate 5.5 → 80%, Governor 8.1 → 78% / 9.0 → 82%; the robust within-year spread reads
   // H 4.9 / S 4.9 / G 8.1). Before the shared error was widened the values were H 5.3 / S 6.0 /
   // G 9.4, which had been absorbing the national part.
-  RACE_SIGMA: { H: 5.0, S: 5.5, G: 8.5 } as Record<"H" | "S" | "G", number>,
+  // House 5.0 → 5.5 (2026-11-03): with 2018 and 2020 scored on the lines of the day (1,284 House
+  // races) the robust within-year House spread reads 6.5 and 5.0 covers only 71% of outcomes at the
+  // nominal 80%. The 2018/2020 leans rest on thinner history than the live 2026 leans (one
+  // presidential cycle and at most one House cycle on those lines), which inflates their spread, so
+  // the live value is set between the two-cycle (5.0) and four-cycle (6.5) readings.
+  RACE_SIGMA: { H: 5.5, S: 5.5, G: 8.5 } as Record<"H" | "S" | "G", number>,
   // Multiplier on the nominees' ridge track-record effects (effect_R − effect_D) in the
   // forward model, per office. forwardBacktest --quality (2026-09-16, leakage-free
   // sweep): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past
@@ -344,6 +363,23 @@ export const FORECAST_CONSTANTS = {
   // the field) cannot catch, so the most heavily polled races should not run on polls alone.
   // Binding today in 10 races (w 0.79–0.86 before the cap: MI/TX/ME/OH/IA Senate and Governor, FL Gov).
   POLL_W_MAX: 0.75,
+  // ── Race-poll miss shade (2026-11-03) ───────────────────────────────────────────────────
+  // House effects are measured against the field, so they cannot see a miss the whole field
+  // shares — and the field has shared one: the final polls (each pollster's last poll, October
+  // 1 or later, /analysis/polling-misses) have landed Republican of the result on average in
+  // every even year since 2016 for the Senate (R+3.3 over 152 races: 4.6 / −0.1 / 7.2 / 1.7 /
+  // 3.4 in 2016–2024) and Governor (R+1.8 over 101 races), and the contested House vote has
+  // landed Republican of the final generic ballot in all five cycles (R+2.5, /analysis/generic-
+  // ballot — there is no House race-poll history on file, so the House takes that figure).
+  // The blend reads each office's poll average POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office]
+  // points toward the Republican — the same half-shade the generic ballot gets (ENV_MISS_SHRINK),
+  // for the same reason: polling error is mostly uncertainty, but its average direction has
+  // repeated. Applied after house effects, once per race, whatever the pollsters. Caveat the
+  // user accepted: the midterm misses (2018 ≈ 0, 2022 ≈ 1.7) were smaller than the presidential
+  // ones. The October 22 review's verdict on the same evidence was widen, not shift; this is
+  // the user's decision of 2026-11-03 (see the changelog for the backtest).
+  POLL_MISS_SHRINK: 0.5,
+  POLL_MISS_HISTORICAL: { H: 2.5, S: 3.3, G: 1.8 } as Record<"H" | "S" | "G", number>,
   // Robust spread of actual − poll average over the polled races (same run); the blend's
   // spread is (1 − w)² × RACE_SIGMA² + w² × POLL_SIGMA² on top of the national shock, which
   // reproduces the measured blend rsd (S 4.3 · G 5.8 · H 4.0) to within 0.2.
@@ -406,4 +442,16 @@ export const FORECAST_CONSTANTS = {
   // 79% → 77%; Senate unchanged). Loadings are centered on the 435 districts / 50 states, not the
   // nation: σ_E is the mean miss across those races, so it already holds the average effect.
   DEMOGRAPHIC_SHOCK: { nonwhite: 1.5, college: 1.0 },
+  // ── State shock (2026-11-03) ──────────────────────────────────────────────────────────────
+  // Seats in the same state miss together beyond what the national and demographic shocks carry.
+  // Forward-backtest residuals (2018–2024 House on the lines of the day, 1,284 races, each year's
+  // national miss removed): the component shared within a state-year is 3.7 / 4.2 / 2.4 pts sd in
+  // 2018 / 2020 / 2022+24, 3.5 pooled (17% of the residual variance); it is 3.5–3.9 in states with
+  // six or more scored seats and under 1 in states with three to five. Statewide races show NO
+  // shared regional error in the Senate in any year and only 2018's governors (Baker, Hogan, Scott,
+  // Sununu) regionally — so no region term, and the Senate/Governor entries are 0 (one race per
+  // state per chamber). The Midwest-vs-Sun-Belt pattern across states is the demographic shock's
+  // job. Drawn once per state per run; carved out of each race's own noise like the demographic
+  // shock, so race probabilities are unchanged and only co-movement widens the chamber range.
+  STATE_SHOCK: { H: 3.5, S: 0, G: 0 } as Record<"H" | "S" | "G", number>,
 };

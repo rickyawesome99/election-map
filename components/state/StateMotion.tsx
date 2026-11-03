@@ -61,13 +61,56 @@ export function SlidingTabs<K extends string>({ tabs, active, onChange, size = "
 export function SegToggle<K extends string>({ options, value, onChange, label }: { options: [{ key: K; label: string }, { key: K; label: string }]; value: K; onChange: (key: K) => void; label: string }) {
   const second = value === options[1].key;
   return (
-    <div role="radiogroup" aria-label={label} className="relative flex rounded-full p-0.5 text-[11px] font-semibold" style={{ background: "var(--app-tab-bg)" }}>
+    <div role="radiogroup" aria-label={label} className="relative inline-flex w-max self-start rounded-full p-0.5 text-[11px] font-semibold" style={{ background: "var(--app-tab-bg)" }}>
       <span aria-hidden className="vh-seg-thumb absolute inset-y-0.5 left-0.5 rounded-full" style={{ width: "calc(50% - 2px)", transform: second ? "translateX(100%)" : "none", background: "var(--app-panel)" }} />
       {options.map((o) => (
         <button key={o.key} type="button" role="radio" aria-checked={value === o.key} onClick={() => onChange(o.key)} className="ix-press relative z-[1] w-[4.5rem] rounded-full py-1 transition-colors" style={{ color: value === o.key ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
           {o.label}
         </button>
       ))}
+    </div>
+  );
+}
+
+/** A row of pills whose filled highlight slides to the chosen one (the chamber explorer's "Color by"). */
+export function SlidingPills<K extends string>({ options, value, onChange, label }: { options: { key: K; label: string }[]; value: K; onChange: (key: K) => void; label: string }) {
+  const rowRef = useRef<HTMLDivElement | null>(null);
+  // Measured so it can slide; until then (and on the server) the chosen pill fills itself.
+  const [thumb, setThumb] = useState<{ left: number; top: number; width: number; height: number } | null>(null);
+  useLayoutEffect(() => {
+    const row = rowRef.current;
+    if (!row) return;
+    const measure = () => {
+      const btn = row.querySelector<HTMLButtonElement>('button[aria-selected="true"]');
+      setThumb(btn ? { left: btn.offsetLeft, top: btn.offsetTop, width: btn.offsetWidth, height: btn.offsetHeight } : null);
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(row);
+    return () => ro.disconnect();
+  }, [value, options.length]);
+  return (
+    <div ref={rowRef} role="tablist" aria-label={label} className="relative flex flex-wrap items-center gap-1">
+      {thumb && (
+        <span aria-hidden className="vh-tab-line pointer-events-none absolute left-0 top-0 z-0 rounded-full" style={{ width: thumb.width, height: thumb.height, transform: `translate(${thumb.left}px, ${thumb.top}px)`, background: "var(--app-text-primary)" }} />
+      )}
+      {options.map((o) => {
+        const on = o.key === value;
+        return (
+          <button
+            key={o.key}
+            type="button"
+            role="tab"
+            aria-selected={on}
+            onClick={() => onChange(o.key)}
+            className="ix-press rounded-full px-2.5 py-1 text-xs font-semibold"
+            style={{ color: on ? "var(--app-bg)" : "var(--app-text-muted)", background: on ? (thumb ? "transparent" : "var(--app-text-primary)") : "var(--app-tab-bg)", transitionDuration: "260ms" }}
+          >
+            {/* The button stays unpositioned so the thumb paints over the other pills' fill as it passes; the label sits above it. */}
+            <span className="relative z-[1]">{o.label}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }

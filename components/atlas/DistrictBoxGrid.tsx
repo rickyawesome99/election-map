@@ -75,7 +75,7 @@ export default function DistrictBoxGrid({
       className="grid gap-[3px]"
       style={{ gridTemplateColumns: `repeat(auto-fill, minmax(${minWidth}px, 1fr))` }}
     >
-      {items.map((it) => {
+      {items.map((it, i) => {
         const selected = it.key === selectedKey;
         return (
           <button
@@ -89,8 +89,10 @@ export default function DistrictBoxGrid({
             onMouseEnter={() => setHovered(it.key)}
             onFocus={() => setHovered(it.key)}
             onBlur={() => setHovered(null)}
-            className="h-[26px] rounded-[3px] text-[10px] font-semibold tabular-nums truncate px-0.5 transition-opacity"
+            className="ab-box h-[26px] rounded-[3px] text-[10px] font-semibold tabular-nums truncate px-0.5"
             style={{
+              // Pops in row by row on load (globals.css .ab-box); a long chamber stops staggering by ~0.5 s.
+              animationDelay: `${Math.min(i, 160) * 3}ms`,
               background: it.flip ? flipBackground(it.fill) : it.fill,
               color: it.darkText ? "#1d1f22" : "#fff",
               opacity: it.dimmed ? 0.22 : 1,

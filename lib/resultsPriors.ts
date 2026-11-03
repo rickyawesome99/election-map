@@ -1,7 +1,10 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { governorData, houseData, senateData, type RaceForecast } from "@/data/forecastData";
+import { governorData, houseData, senateData, presPastResults, type RaceForecast } from "@/data/forecastData";
+import { districtPresidentialData } from "@/data/districtPresidentialData";
+import { boundaryVintageForHouseYear, presByBoundaryVintage, PRES_YEARS_FOR_VINTAGE } from "@/data/presByBoundaryVintage";
+import { pastElectionHref } from "@/lib/pastElections";
 import { statesData } from "@/data/statesData";
 import { forecastRace } from "@/lib/forecast";
 import { projectRaceResults } from "@/lib/countyProjection";
@@ -10,7 +13,7 @@ import { countyLoadings } from "@/lib/resultsNightLoadings";
 import { parseCsv } from "@/lib/turnout";
 import { raceHref } from "@/lib/raceLinks";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import type { PriorsSlice, RacePrior, ResultsOffice } from "@/lib/resultsTypes";
+import type { CountyArea, PastRaceResult, PriorsSlice, RacePrior, ResultsOffice } from "@/lib/resultsTypes";
 
 // The election-night priors: every 2026 race's forecast, nominees, poll-closing time, civicAPI id
 // and pre-election county projection, in the client-safe shape the Results page's needle reads.
@@ -23,6 +26,15 @@ type CivicRow = { office: string; state: string; district: string; civic_id: str
 let closingCache: Map<string, ClosingRow> | null = null;
 function closing(): Map<string, ClosingRow> {
   return (closingCache ??= new Map(parseCsv(readFileSync(join(process.cwd(), "data-entry", "poll_closing_2026.csv"), "utf8")).map((r) => [r.state, r as ClosingRow])));
+}
+
+// A county's NCHS 2023 urban–rural code (data-entry/nchs_urban_rural_2023.csv, CDC), grouped as Pew
+// Research does: urban = the central counties of large metros (1), suburban = the rest of the large
+// metros and every medium and small metro county (2–4), rural = outside any metro (5–6).
+let areaCache: Map<string, CountyArea> | null = null;
+function countyArea(fips: string): CountyArea | null {
+  areaCache ??= new Map(parseCsv(readFileSync(join(process.cwd(), "data-entry", "nchs_urban_rural_2023.csv"), "utf8")).map((r) => [r.fips, r.code === "1" ? "urban" : r.code === "5" || r.code === "6" ? "rural" : "suburban"]));
+  return areaCache.get(fips) ?? null;
 }
 
 let civicCache: Map<string, CivicRow> | null = null;
@@ -57,12 +69,54 @@ function districtTpl(id: string): number | null {
   return Number.isFinite(v) ? Math.round(v * 10) / 10 : null;
 }
 
+const OFFICE_NAME = { house: "House", senate: "Senate", governor: "Governor" } as const;
+const r1 = (v: number) => Math.round(v * 10) / 10;
+
+/** A House race held on a map whose 2024 (or nearest) presidential vote for this district number
+ *  differs from the 2026 lines' by 1.5+ pts: a redraw, so its margin isn't this district's. */
+function onOldLines(districtKey: string, year: number): boolean {
+  const vintage = boundaryVintageForHouseYear(year);
+  const now = districtPresidentialData[districtKey];
+  if (vintage == null || !now) return false;
+  const nowMargin: Record<number, number> = { 2016: now.pres16Margin, 2020: now.pres20Margin, 2024: now.pres24Margin };
+  return PRES_YEARS_FOR_VINTAGE[vintage].some((y) => {
+    const then = presByBoundaryVintage[vintage]?.[y]?.[districtKey];
+    return !then || Math.abs(then.margin - nowMargin[y]) >= 1.5;
+  });
+}
+
+/** The race page's reference box: the seat's two latest elections and the 2024 presidential vote. */
+function pastFor(office: ResultsOffice, race: RaceForecast, state: string, href: string): PastRaceResult[] {
+  const seatId = office === "house" ? race.name.toLowerCase() : href.split("/").pop() ?? "";
+  const districtKey = office === "house" ? String(Number(race.id)) : "";
+  const seat = [...(race.pastResults ?? [])].sort((a, b) => b.year - a.year || (a.electionType === "Special" ? 1 : -1)).slice(0, 2).map((r): PastRaceResult => ({
+    year: r.year,
+    office: OFFICE_NAME[office],
+    dem: { name: r.demCandidate ?? null, party: r.demParty ?? "D" },
+    rep: { name: r.repCandidate ?? null, party: r.repParty ?? "R" },
+    margin: r1(r.repPct - r.demPct),
+    special: r.electionType === "Special",
+    oldLines: office === "house" && onOldLines(districtKey, r.year),
+    href: pastElectionHref(office, seatId, r.year) ?? null,
+  }));
+  const pres = presPastResults[state]?.find((r) => r.year === 2024);
+  const presMargin = office === "house" ? districtPresidentialData[districtKey]?.pres24Margin : pres ? pres.repPct - pres.demPct : undefined;
+  if (presMargin == null) return seat;
+  return [...seat, {
+    year: 2024, office: "President",
+    dem: { name: pres?.demCandidate ?? "Kamala Harris", party: "D" }, rep: { name: pres?.repCandidate ?? "Donald Trump", party: "R" },
+    margin: r1(presMargin), special: false, oldLines: false,
+    href: office === "house" ? null : pastElectionHref("president", state.toLowerCase(), 2024) ?? null,
+  }];
+}
+
 function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
   const state = office === "house" ? race.name.slice(0, 2) : STATE_ABBR.get(race.state) ?? race.id.slice(0, 2);
   const f = forecastRace(race);
   const cp = projectRaceResults(office, race.id);
   const close = closing().get(state);
   const special = /special/i.test(race.electionType ?? "") || race.id === "OH-2" || race.id === "FL-2";
+  const href = raceHref(office, race);
   return {
     office,
     id: race.id,
@@ -70,7 +124,7 @@ function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
     label: office === "house" ? race.name : `${race.name}${special ? " (special)" : ""}`,
     state,
     stateName: STATE_NAME.get(state) ?? race.state,
-    href: raceHref(office, race),
+    href,
     dem: { name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D", incumbent: !!race.candidates?.dem.incumbent, photo: candidatePhoto(race.candidates?.dem.name, state) },
     rep: { name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R", incumbent: !!race.candidates?.rep.incumbent, photo: candidatePhoto(race.candidates?.rep.name, state) },
     seatParty: race.seatParty ?? null,
@@ -83,7 +137,8 @@ function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
     forecast: { margin: f.margin, sigma: f.sigma, probability: f.probability, rating: f.rating, contest: f.contest, interval80: f.interval80 },
     pollsClose: { first: close?.first_close_et ?? "20:00", last: close?.last_close_et ?? close?.first_close_et ?? "20:00", note: close?.note || null },
     votes: cp?.votes ?? 0,
-    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin) })),
+    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin), area: countyArea(c.fips) })),
+    past: pastFor(office, race, state, href),
   };
 }
 

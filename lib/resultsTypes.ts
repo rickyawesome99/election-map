@@ -34,6 +34,26 @@ export type CountyPrior = {
   nonwhite: number;
   college: number;
   lean: number;
+  /** The county's NCHS 2023 urban–rural class, grouped as Pew Research does (lib/resultsPriors.ts countyArea). */
+  area?: CountyArea | null;
+};
+
+export type CountyArea = "urban" | "suburban" | "rural";
+export const COUNTY_AREAS: CountyArea[] = ["urban", "suburban", "rural"];
+
+/** One past result for the race page's reference box: the seat's last elections and the 2024
+ *  presidential vote in the same place. `margin` R-positive, in points of all votes. */
+export type PastRaceResult = {
+  year: number;
+  office: "House" | "Senate" | "Governor" | "President";
+  dem: { name: string | null; party: Party };
+  rep: { name: string | null; party: Party };
+  margin: number;
+  special: boolean;
+  /** House: held on lines that differ from 2026's (the 2024 presidential vote moves 1.5+ pts between the two maps). */
+  oldLines: boolean;
+  /** The past-election page, where there is one. */
+  href: string | null;
 };
 
 /** `photo`: a /candidates/ path, looked up at build so the client never loads the photo table. */
@@ -78,6 +98,8 @@ export type RacePrior = {
   pollsClose: { first: string; last: string; note: string | null };
   /** Expected total votes. */
   votes: number;
+  /** The seat's two latest elections, newest first, then the 2024 presidential vote (on 2026 lines for House). */
+  past: PastRaceResult[];
   counties: CountyPrior[];
 };
 

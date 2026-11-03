@@ -27,7 +27,7 @@ test("generic ballot page shows the yearly table, the state map and the 2026 cha
 
   // the 2026 chain table ends with history's translation
   const chain = page.getByRole("table", { name: /chain from generic ballot to House vote/ });
-  await expect(chain.locator("tbody tr")).toHaveCount(7);
+  await expect(chain.locator("tbody tr")).toHaveCount(6);
   await expect(chain.locator("tbody tr").first().locator("td").last()).toHaveText(MARGIN);
 });
 

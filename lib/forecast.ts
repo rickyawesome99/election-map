@@ -64,6 +64,8 @@ export interface ForecastFields {
   pollMargin: number | null;
   pollWeight: number;
   pollCount: number;
+  /** R-positive pts the blend adds to pollMargin: half the office's historical final-poll miss (0 without polls). */
+  pollShade: number;
   // uncontested-X: the other major party fielded no nominee (build.js placeholder name),
   // so the race is decided — probability pinned, rating Safe, no simulation noise.
   contest: Contest;
@@ -103,7 +105,7 @@ export function forecastRace<T extends RaceForecast>(race: T): T & ForecastField
   const { model, polling, margin: structural } = projectRace(race);
   const threeWay = THREE_WAY_RACES[`${office}:${race.id}`] != null;
   const sigma = raceSigma(office, stateAbbr, polling.weight, threeWay ? F.THREE_WAY_SIGMA_MULT : 1);
-  const pollFields = { model, pollMargin: polling.avg?.diff ?? null, pollWeight: polling.weight, pollCount: polling.avg?.n ?? 0 };
+  const pollFields = { model, pollMargin: polling.avg?.diff ?? null, pollWeight: polling.weight, pollCount: polling.avg?.n ?? 0, pollShade: polling.shade };
   const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
   if (contest !== "contested") {
     const sign = decidedFor(contest) === "R" ? 1 : -1;
@@ -257,9 +259,14 @@ function demographicLoading(r: ForecastedRace): { nonwhite: number; college: num
 // (only binds in electorates ~40+ pts from the average, all of them safe seats).
 const MIN_IDIOSYNCRATIC_SHARE = 0.5;
 
-export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = forecastsFor(raceType), sims = 5000, seed = 20261103): ChamberSimulation {
+export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = forecastsFor(raceType), sims = 5000, seed = 20261103, opts: { stateShock?: number } = {}): ChamberSimulation {
   const rand = mulberry32(seed);
-  const sigmaE = nationalSigmaFor(OFFICE_OF[raceType]); // House: the House-vote scale (see HOUSE_ENV_ON_VOTE_SCALE)
+  const sigmaE = nationalSigmaFor(OFFICE_OF[raceType]); // House: the House-vote scale when HOUSE_ENV_ON_VOTE_SCALE is on
+  // One shock per state per run (STATE_SHOCK): seats in the same state miss together.
+  const stateShock = opts.stateShock ?? F.STATE_SHOCK[OFFICE_OF[raceType]];
+  const stateIndex = new Map<string, number>();
+  for (const r of races) if (!stateIndex.has(r.stateAbbr)) stateIndex.set(r.stateAbbr, stateIndex.size);
+  const zState = new Array<number>(stateIndex.size).fill(0);
   const holdover = SEAT_HOLDOVERS[raceType].dem;
   const counts = new Array<number>(sims);
   // Per race: the demographic loadings, and the noise left to the race itself. The race-level
@@ -271,18 +278,19 @@ export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = fo
     const load = demographicLoading(r);
     const raceVar = r.sigma ** 2 - (r.beta * sigmaE) ** 2;
     const demoVar = (load.nonwhite * shock.nonwhite) ** 2 + (load.college * shock.college) ** 2;
-    return { load, idio: Math.sqrt(Math.max(MIN_IDIOSYNCRATIC_SHARE ** 2 * raceVar, raceVar - demoVar)) };
+    return { load, si: stateIndex.get(r.stateAbbr)!, idio: Math.sqrt(Math.max(MIN_IDIOSYNCRATIC_SHARE ** 2 * raceVar, raceVar - demoVar - stateShock ** 2)) };
   });
   for (let k = 0; k < sims; k += 1) {
     const z = gaussian(rand) * sigmaE;
     const zNonwhite = gaussian(rand) * shock.nonwhite;
     const zCollege = gaussian(rand) * shock.college;
+    if (stateShock > 0) for (let s = 0; s < zState.length; s += 1) zState[s] = gaussian(rand) * stateShock;
     let dem = holdover;
     for (let i = 0; i < races.length; i += 1) {
       const r = races[i];
       if (r.contest !== "contested") { if (decidedFor(r.contest) === "D") dem += 1; continue; }
-      const { load, idio } = parts[i];
-      const m = r.margin + r.beta * z + load.nonwhite * zNonwhite + load.college * zCollege + gaussian(rand) * idio;
+      const { load, si, idio } = parts[i];
+      const m = r.margin + r.beta * z + load.nonwhite * zNonwhite + load.college * zCollege + (stateShock > 0 ? zState[si] : 0) + gaussian(rand) * idio;
       if (m <= 0) dem += 1;
     }
     counts[k] = dem;

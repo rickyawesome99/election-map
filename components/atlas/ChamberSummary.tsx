@@ -21,14 +21,16 @@ const ADJ_SIZE = "clamp(1.3rem, 3.4vw, 1.7rem)";
 const RAW_SIZE = "clamp(1.05rem, 2.6vw, 1.3rem)";
 const ARROW_SIZE = "clamp(1.4rem, 3.8vw, 2rem)";
 
-/** Horizontal seat bar: D from the left, R from the right, other/vacant between; notch at the halfway line. */
-export function SeatBar({ dem, rep, oth = 0, total, h }: { dem: number; rep: number; oth?: number; total: number; h?: number }) {
+/** Horizontal seat bar: D from the left, R from the right, other/vacant between; notch at the halfway line.
+ *  The two sides grow in toward each other (globals.css .vh-bar-*), `delay` ms after load. */
+export function SeatBar({ dem, rep, oth = 0, total, h, delay = 0 }: { dem: number; rep: number; oth?: number; total: number; h?: number; delay?: number }) {
   const pct = (n: number) => `${Math.max(0, Math.min(100, (n / total) * 100))}%`;
+  const grow = { animationDelay: `${delay}ms` };
   return (
     <div className={`relative overflow-hidden rounded-[2px] ${h ? "" : "mt-1.5 h-[7px] sm:mt-2 sm:h-2"}`} style={{ height: h, background: "var(--party-ind-subtle)" }}>
-      <div className="absolute inset-y-0 left-0" style={{ width: pct(dem), background: DEM }} />
-      {oth > 0 && <div className="absolute inset-y-0" style={{ left: pct(dem), width: pct(oth), background: IND }} />}
-      <div className="absolute inset-y-0 right-0" style={{ width: pct(rep), background: REP }} />
+      <div className="vh-bar-d absolute inset-y-0 left-0" style={{ width: pct(dem), background: DEM, ...grow }} />
+      {oth > 0 && <div className="vh-bar-d absolute inset-y-0" style={{ left: pct(dem), width: pct(oth), background: IND, ...grow }} />}
+      <div className="vh-bar-r absolute inset-y-0 right-0" style={{ width: pct(rep), background: REP, ...grow }} />
       <div className="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2" style={{ background: "var(--app-bg)" }} />
     </div>
   );
@@ -60,12 +62,13 @@ function Split({ dem, rep, oth = 0, muted = false }: { dem: number; rep: number;
   );
 }
 
-const Arrow = ({ size }: { size: string }) => <span className="px-1.5 font-normal sm:px-2.5" style={{ color: FAINT, fontSize: size }}>→</span>;
+// Leans forward when its column is hovered (globals.css .vh-lean).
+const Arrow = ({ size }: { size: string }) => <span className="vh-lean px-1.5 font-normal sm:px-2.5" data-dir="r" style={{ color: FAINT, fontSize: size }}>→</span>;
 
 /** The majority status at the end of a bar row: what the chamber is now, what the projection makes it. */
-function Status({ o, faded = false }: { o: ChamberOutcome | null; faded?: boolean }) {
+function Status({ o, faded = false, delay = 0 }: { o: ChamberOutcome | null; faded?: boolean; delay?: number }) {
   if (!o) return <span />;
-  return <span className="whitespace-nowrap text-xs font-bold sm:text-sm" style={{ color: outcomeColor(o) ?? INK, opacity: faded ? 0.75 : 1 }}>{OUTCOME_LABEL[o]}</span>;
+  return <span className="vh-in whitespace-nowrap text-xs font-bold sm:text-sm" style={{ color: outcomeColor(o) ?? INK, opacity: faded ? 0.75 : 1, animationDelay: `${delay}ms` }}>{OUTCOME_LABEL[o]}</span>;
 }
 
 /** One margin line, old → new: adjusted in party colour, raw in grey. */
@@ -76,7 +79,7 @@ function MarginLine({ label, from, to, size, colored }: { label: string; from: n
       <div className="flex items-baseline whitespace-nowrap leading-none tabular-nums" style={{ fontSize: size, fontWeight: colored ? 800 : 700, color: colored ? undefined : MUTED }}>
         {from != null && <span style={colored ? { color: marginColor(from), opacity: to != null ? 0.75 : 1 } : undefined}>{fmtChamberMargin(from)}</span>}
         {from != null && to != null && <Arrow size={size} />}
-        {to != null && <span style={colored ? { color: marginColor(to) } : undefined}>{fmtChamberMargin(to)}</span>}
+        {to != null && <span className="vh-margin inline-block" style={{ transformOrigin: "left center", ...(colored ? { color: marginColor(to) } : {}) }}>{fmtChamberMargin(to)}</span>}
       </div>
     </>
   );
@@ -104,8 +107,8 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
   const frequency = mapInfo?.electionFrequency ?? calendar?.frequency ?? null;
   const asOf = seats ? ("asOf" in seats ? `as of ${new Date(`${seats.asOf}-15`).toLocaleDateString("en-US", { month: "short", year: "numeric" })}` : `after the ${seats.year} election`) : null;
 
-  const stat = (label: string, value: ReactNode, sub: ReactNode) => (
-    <div className="min-w-0">
+  const stat = (label: string, value: ReactNode, sub: ReactNode, i: number) => (
+    <div className="vh-in min-w-0" style={{ animationDelay: `${260 + i * 70}ms` }}>
       <Mini>{label}</Mini>
       <div className="mt-1 font-bold leading-tight tabular-nums" style={{ fontSize: "clamp(1.1rem, 2.6vw, 1.35rem)" }}>{value}</div>
       {sub && <div className="mt-0.5 text-xs" style={{ color: FAINT }}>{sub}</div>}
@@ -122,7 +125,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
   return (
     <div className="flex flex-col gap-7">
       <section className="grid gap-x-10 gap-y-6 pt-3 md:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]" style={{ borderTop: `2px solid ${INK}` }}>
-        <div className="min-w-0">
+        <div className="vh-in vh-hover min-w-0">
           <Head>{fav ? <>Now <span style={{ color: FAINT }}>→</span> {electionYear} projection</> : "Current"}</Head>
           {/* Arrow, projected count and net gain wrap as one unit: on a big chamber (NH's 400) the
               whole projection drops below the current count instead of stranding the net gain. */}
@@ -132,20 +135,20 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
               <span className="flex items-baseline whitespace-nowrap">
                 {seats && <Arrow size={ARROW_SIZE} />}
                 <Split dem={fav.dem} rep={fav.rep} oth={fav.oth} />
-                {net && <span className="ml-3 font-bold tabular-nums" style={{ fontSize: "clamp(0.95rem, 2.4vw, 1.2rem)", color: net.party === "D" ? DEM : REP }}>+{net.seats} {net.party}</span>}
+                {net && <span className="vh-margin ml-3 inline-block font-bold tabular-nums" style={{ transformOrigin: "left center", fontSize: "clamp(0.95rem, 2.4vw, 1.2rem)", color: net.party === "D" ? DEM : REP }}>+{net.seats} {net.party}</span>}
               </span>
             )}
           </div>
           <div className="mt-3 grid items-center gap-x-3 gap-y-1.5" style={{ gridTemplateColumns: "2.5rem minmax(0,1fr) auto" }}>
             {seats && total && <>
               <Mini>Now</Mini>
-              <div style={{ opacity: fav ? 0.55 : 1 }}><SeatBar dem={seats.dem} rep={seats.rep} oth={seats.oth} total={Math.max(total, seats.total)} h={fav ? 8 : 14} /></div>
-              <Status o={nowStatus} faded={!!fav} />
+              <div style={{ opacity: fav ? 0.55 : 1 }}><SeatBar dem={seats.dem} rep={seats.rep} oth={seats.oth} total={Math.max(total, seats.total)} h={fav ? 8 : 14} delay={80} /></div>
+              <Status o={nowStatus} faded={!!fav} delay={500} />
             </>}
             {fav && <>
               <Mini color={INK}>{electionYear}</Mini>
-              <SeatBar dem={fav.dem} rep={fav.rep} oth={fav.oth} total={projTotal} h={14} />
-              <Status o={projStatus} />
+              <SeatBar dem={fav.dem} rep={fav.rep} oth={fav.oth} total={projTotal} h={14} delay={220} />
+              <Status o={projStatus} delay={640} />
             </>}
           </div>
           <div className="mt-2.5 flex flex-col gap-0.5">
@@ -162,7 +165,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
           </div>
         </div>
         {(margin || popularVote) && (
-          <div className="min-w-0">
+          <div className="vh-in vh-hover min-w-0" style={{ animationDelay: "120ms" }}>
             <Head>Vote margin <span className="font-semibold normal-case tracking-normal" style={{ color: FAINT }}>{[margin?.year, popularVote ? `${electionYear} proj.` : null].filter(Boolean).join(" → ")}</span></Head>
             <div className="grid items-baseline gap-x-3 gap-y-2.5" style={{ gridTemplateColumns: "4.25rem auto" }}>
               <MarginLine label="Adjusted" from={margin?.corrected} to={popularVote?.adjusted} size={ADJ_SIZE} colored />
@@ -183,9 +186,10 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
             `Up in ${electionYear}`,
             upcoming ? (upcoming.wholeChamber ? `All ${upcoming.seatsUp}` : `${upcoming.seatsUp} of ${upcoming.totalSeats ?? total}`) : "None",
             upcoming ? (upcoming.wholeChamber ? "whole chamber" : upcoming.parity ? `${upcoming.parity}-numbered districts` : frequency) : frequency,
+            0,
           )}
-          {stat("Contested", fieldStats ? `${fieldStats.contested} of ${fieldStats.districts}` : "—", fieldStats ? `${fieldStats.districts - fieldStats.contested} one-party · ${fieldStats.open} open` : null)}
-          {stat("Map first used", mapInfo?.firstCycle ?? "—", mapInfo?.source ?? currentEra?.source ?? null)}
+          {stat("Contested", fieldStats ? `${fieldStats.contested} of ${fieldStats.districts}` : "—", fieldStats ? `${fieldStats.districts - fieldStats.contested} one-party · ${fieldStats.open} open` : null, 1)}
+          {stat("Map first used", mapInfo?.firstCycle ?? "—", mapInfo?.source ?? currentEra?.source ?? null, 2)}
         </div>
         {notes.length > 0 && (
           <div className="mt-2 text-xs leading-relaxed" style={{ color: FAINT }}>

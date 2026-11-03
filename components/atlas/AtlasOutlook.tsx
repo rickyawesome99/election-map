@@ -5,6 +5,10 @@ import type { AtlasDistrict, AtlasEra, AtlasIndependent } from "@/lib/stateLegAt
 import { projectedMarginColor, fmtMargin } from "@/lib/colorScale";
 
 /** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
+// Every row of the working tints on hover and fades in staggered, as in the race pages' ledgers
+// (globals.css .vh-row); fade rather than rise, since the race table sits in a scroll box.
+const ROW = "vh-row vh-row-boxed vh-row-fade";
+const enter = (i: number) => Math.min(i, 8) * 55;
 const marginText = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : projectedMarginColor(m));
 
 function fmtM(v: number | null | undefined, digits = 1): string {
@@ -55,8 +59,8 @@ function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep
             </tr>
           </thead>
           <tbody>
-            {[...indep.record].reverse().map((r) => (
-              <tr key={r.year} style={{ borderBottom: "1px solid var(--app-border)" }}>
+            {[...indep.record].reverse().map((r, i) => (
+              <tr key={r.year} className={ROW} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                 <td className="py-1.5 pr-3 font-semibold">{r.year} vs {r.opponentParty}</td>
                 <td className="py-1.5 pr-3 text-right">{r.share.toFixed(1)}%</td>
                 <td className="py-1.5 pr-3 text-right">{fmtI(r.advantage, r.opponentParty)}</td>
@@ -68,14 +72,14 @@ function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep
         </table>
       )}
       <div className="mt-3 max-w-md text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
-        {lines.map((l) => (
-          <div key={l.label} className="flex items-baseline gap-3 py-1" style={{ borderBottom: "1px solid var(--app-border)" }}>
+        {lines.map((l, i) => (
+          <div key={l.label} className={`${ROW} flex items-baseline gap-3 py-1`} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
             <span className="font-semibold whitespace-nowrap">{l.label}</span>
             <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{l.note}</span>
             <span className="ml-auto">{l.value}</span>
           </div>
         ))}
-        <div className="flex items-baseline gap-3 py-1.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+        <div className={`${ROW} flex items-baseline gap-3 py-1.5`} style={{ borderBottom: "2px solid var(--app-text-primary)", animationDelay: `${enter(lines.length)}ms` }}>
           <span className="font-bold">= Projected margin</span>
           <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{pI != null ? `P(${indep.name}) ${Math.round(pI * 100)}%` : ""}</span>
           <span className="ml-auto font-bold" style={{ color: indep.advantage > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>{fmtI(indep.advantage, opp)}</span>
@@ -133,8 +137,8 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
                 </tr>
               </thead>
               <tbody>
-                {[...pr.rows].sort((a, b) => b.year - a.year || (a.kind === "P" ? -1 : 1)).map((r) => (
-                  <tr key={`${r.year}-${r.kind}`} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.75 : 1 }}>
+                {[...pr.rows].sort((a, b) => b.year - a.year || (a.kind === "P" ? -1 : 1)).map((r, i) => (
+                  <tr key={`${r.year}-${r.kind}`} className={ROW} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.75 : 1, animationDelay: `${enter(i)}ms` }}>
                     <td className="py-1.5 pr-3 font-semibold whitespace-nowrap">{r.label}</td>
                     <td className="py-1.5 pr-3 whitespace-nowrap" style={{ color: r.relocated ? "var(--app-text-muted)" : "var(--app-text-primary)" }}>
                       {r.relocated ? `${eraLabel(r.era)} → today's` : "today's lines"}{r.coverage < 0.999 && <span style={{ color: "var(--app-text-very-muted)" }}> · {Math.round(r.coverage * 100)}% covered</span>}
@@ -163,14 +167,14 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
               { label: "+ Money", note: pr.money
                 ? `raised ${fmtM(pr.money.gapPct)}${pr.money.scale !== 1 ? ` (× ${pr.money.scale} to date)` : ""} vs ${fmtM(pr.money.structuralGapPct)} expected`
                 : "either side's money not on file: the typical gap for the seat", value: signed(pr.money?.pts ?? 0) },
-            ].map((l) => (
-              <div key={l.label} className="flex items-baseline gap-3 py-1" style={{ borderBottom: "1px solid var(--app-border)" }}>
+            ].map((l, i) => (
+              <div key={l.label} className={`${ROW} flex items-baseline gap-3 py-1`} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                 <span className="font-semibold">{l.label}</span>
                 <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{l.note}</span>
                 <span className="ml-auto">{l.value}</span>
               </div>
             ))}
-            <div className="flex items-baseline gap-3 py-1.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+            <div className={`${ROW} flex items-baseline gap-3 py-1.5`} style={{ borderBottom: "2px solid var(--app-text-primary)", animationDelay: `${enter(4)}ms` }}>
               <span className="font-bold">= Projected margin</span>
               <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{decided ? "the seat is decided by the field; the margin is the model's view of the district" : `σ ${pr.sigma.toFixed(1)}`}</span>
               <span className="ml-auto font-bold" style={{ color: pr.margin != null ? projectedMarginColor(pr.margin) : undefined }}>{fmtMargin(pr.margin)}</span>

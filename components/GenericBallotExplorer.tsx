@@ -72,7 +72,7 @@ export default function GenericBallotExplorer({ years, now }: ExplorerProps) {
         <div className="hidden sm:ml-auto sm:block"><MapLegend /></div>
       </div>
 
-      <p className="mb-5 max-w-3xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+      <p className="mb-5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
         {forecast ? <>What the {FORECAST_YEAR} forecast&rsquo;s race projections add up to in each state</> : <>The {year} House vote in each state</>}, counted as <b style={{ color: "var(--app-text-primary)" }}>{basisLabel.toLowerCase()}</b>.
         {national != null && <> Nationally that is <b style={{ color: marginColor(national) }}>{fmtMargin(national)}</b>.</>}
         {" "}Democrats lead in <b style={{ color: "var(--party-dem)" }}>{demStates}</b> state{demStates === 1 ? "" : "s"} and Republicans in <b style={{ color: "var(--party-rep)" }}>{repStates}</b>. Select a state to see its seats.
@@ -83,7 +83,7 @@ export default function GenericBallotExplorer({ years, now }: ExplorerProps) {
       <TplMap mode="states" rows={mapRows} valueLabel="House vote" linkLabel="Open state page" formatValue={fmtMargin} valueColor={marginColor} onSelect={(r) => setSelected(r ? r.name : null)} zoomable={false} fill panel={false} framed={false} selectedKey={selected} />
 
       {picked && (
-        <div className="mt-6 max-w-3xl text-sm leading-relaxed" aria-live="polite">
+        <div className="mt-6 text-sm leading-relaxed" aria-live="polite">
           <b>{picked.state}</b>, {forecast ? `${FORECAST_YEAR} forecast` : year}: {picked.seats} seat{picked.seats === 1 ? "" : "s"}, {picked.contestedSeats} contested.
           {" "}{colHeads.map((h, i) => <span key={h}>{i > 0 && " · "}{h} <b style={{ color: marginColor(picked.cols[i]) }}>{fmtMargin(picked.cols[i])}</b></span>)}.
           {picked.dropped.length > 0 && <> Seats without a two-party contest: {droppedText(picked.dropped)}.</>}

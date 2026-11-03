@@ -1,0 +1,2669 @@
+{
+ "state": "SC",
+ "cycle": 2026,
+ "source": "South Carolina Ethics Commission (cumulative campaign contributions)",
+ "fetched": "2026-11-03",
+ "dataThrough": "12/31/2026",
+ "candidates": [
+  {
+   "name": "Brandy L Tarleton",
+   "chamber": "house",
+   "district": "5",
+   "campaign": 79108,
+   "contributions": 17104.59
+  },
+  {
+   "name": "Tracy Robins",
+   "chamber": "house",
+   "district": "75",
+   "campaign": 77092,
+   "contributions": 77508.49
+  },
+  {
+   "name": "Kyle White",
+   "chamber": "house",
+   "district": "6",
+   "campaign": 78728,
+   "contributions": 99235.0
+  },
+  {
+   "name": "Elizabeth Enns",
+   "chamber": "house",
+   "district": "26",
+   "campaign": 78744,
+   "contributions": 48984.96
+  },
+  {
+   "name": "Cynthia O Ford",
+   "chamber": "house",
+   "district": "57",
+   "campaign": 80327,
+   "contributions": 9955.71
+  },
+  {
+   "name": "Clay Counts",
+   "chamber": "house",
+   "district": "4",
+   "campaign": 76714,
+   "contributions": 16290.0
+  },
+  {
+   "name": "Justin A Bennett",
+   "chamber": "house",
+   "district": "25",
+   "campaign": 76813,
+   "contributions": 0.0
+  },
+  {
+   "name": "James M Burns",
+   "chamber": "house",
+   "district": "17",
+   "campaign": 77186,
+   "contributions": 6139.73
+  },
+  {
+   "name": "William   Jr Bailey",
+   "chamber": "house",
+   "district": "104",
+   "campaign": 77184,
+   "contributions": 21949.26
+  },
+  {
+   "name": "Craig A Gagnon",
+   "chamber": "house",
+   "district": "11",
+   "campaign": 79679,
+   "contributions": 33799.26
+  },
+  {
+   "name": "Roger K Kirby",
+   "chamber": "house",
+   "district": "101",
+   "campaign": 79680,
+   "contributions": 81519.26
+  },
+  {
+   "name": "G. Murrell   Jr Smith",
+   "chamber": "house",
+   "district": "67",
+   "campaign": 77040,
+   "contributions": 914708.44
+  },
+  {
+   "name": "Brandon Newton",
+   "chamber": "house",
+   "district": "45",
+   "campaign": 76915,
+   "contributions": 109491.54
+  },
+  {
+   "name": "Bruce W Bannister",
+   "chamber": "house",
+   "district": "24",
+   "campaign": 76985,
+   "contributions": 344924.3
+  },
+  {
+   "name": "Bruce  M Wallace",
+   "chamber": "house",
+   "district": "53",
+   "campaign": 79468,
+   "contributions": 108.92
+  },
+  {
+   "name": "Mike Neese",
+   "chamber": "house",
+   "district": "44",
+   "campaign": 76912,
+   "contributions": 26499.26
+  },
+  {
+   "name": "Thomas Beach",
+   "chamber": "house",
+   "district": "10",
+   "campaign": 79684,
+   "contributions": 87799.65
+  },
+  {
+   "name": "Val Guest",
+   "chamber": "house",
+   "district": "106",
+   "campaign": 77204,
+   "contributions": 66074.26
+  },
+  {
+   "name": "Joseph M Bustos",
+   "chamber": "house",
+   "district": "112",
+   "campaign": 79693,
+   "contributions": 51075.26
+  },
+  {
+   "name": "Michael B Lawson",
+   "chamber": "house",
+   "district": "30",
+   "campaign": 76828,
+   "contributions": 60749.26
+  },
+  {
+   "name": "Micajah P IV Caskey",
+   "chamber": "house",
+   "district": "89",
+   "campaign": 77266,
+   "contributions": 109727.5
+  },
+  {
+   "name": "Kevin J Hardee",
+   "chamber": "house",
+   "district": "105",
+   "campaign": 76936,
+   "contributions": 28099.26
+  },
+  {
+   "name": "Charlie Hartz",
+   "chamber": "house",
+   "district": "81",
+   "campaign": 76950,
+   "contributions": 63825.0
+  },
+  {
+   "name": "David W Martin",
+   "chamber": "house",
+   "district": "26",
+   "campaign": 76952,
+   "contributions": 131658.0
+  },
+  {
+   "name": "Travis A Moore",
+   "chamber": "house",
+   "district": "33",
+   "campaign": 76973,
+   "contributions": 107750.0
+  },
+  {
+   "name": "John E MacCarthy",
+   "chamber": "house",
+   "district": "27",
+   "campaign": 77315,
+   "contributions": 12413.62
+  },
+  {
+   "name": "Eunice Lehmacher",
+   "chamber": "house",
+   "district": "3",
+   "campaign": 77351,
+   "contributions": 150.4
+  },
+  {
+   "name": "April Cromer",
+   "chamber": "house",
+   "district": "6",
+   "campaign": 79676,
+   "contributions": 72132.26
+  },
+  {
+   "name": "Lee Gilreath",
+   "chamber": "house",
+   "district": "7",
+   "campaign": 76931,
+   "contributions": 35523.0
+  },
+  {
+   "name": "Justin T Bamberg",
+   "chamber": "house",
+   "district": "90",
+   "campaign": 80292,
+   "contributions": 9765.26
+  },
+  {
+   "name": "Hamilton R Grant",
+   "chamber": "house",
+   "district": "79",
+   "campaign": 76933,
+   "contributions": 56858.75
+  },
+  {
+   "name": "Norman  D Gibson",
+   "chamber": "house",
+   "district": "12",
+   "campaign": 77201,
+   "contributions": 14829.26
+  },
+  {
+   "name": "Rosalyn D Henderson-Myers",
+   "chamber": "house",
+   "district": "31",
+   "campaign": 76937,
+   "contributions": 40099.02
+  },
+  {
+   "name": "Leon D Gilliam",
+   "chamber": "house",
+   "district": "42",
+   "campaign": 77202,
+   "contributions": 13026.44
+  },
+  {
+   "name": "Katherine D Landing",
+   "chamber": "house",
+   "district": "80",
+   "campaign": 77348,
+   "contributions": 17549.25
+  },
+  {
+   "name": "Luke S Rankin",
+   "chamber": "house",
+   "district": "14",
+   "campaign": 77233,
+   "contributions": 49688.06
+  },
+  {
+   "name": "John R III McCravy",
+   "chamber": "house",
+   "district": "13",
+   "campaign": 79682,
+   "contributions": 39318.4
+  },
+  {
+   "name": "Robert Q Williams",
+   "chamber": "house",
+   "district": "62",
+   "campaign": 77246,
+   "contributions": 25570.21
+  },
+  {
+   "name": "Brandon L Cox",
+   "chamber": "house",
+   "district": "92",
+   "campaign": 77193,
+   "contributions": 67759.99
+  },
+  {
+   "name": "william w hager",
+   "chamber": "house",
+   "district": "122",
+   "campaign": 77207,
+   "contributions": 35303.99
+  },
+  {
+   "name": "Walter S IV Montgomery",
+   "chamber": "house",
+   "district": "32",
+   "campaign": 76948,
+   "contributions": 11449.26
+  },
+  {
+   "name": "Thomas C Jr Brittain",
+   "chamber": "house",
+   "district": "107",
+   "campaign": 77306,
+   "contributions": 64952.26
+  },
+  {
+   "name": "Richard B Sanders",
+   "chamber": "house",
+   "district": "9",
+   "campaign": 77237,
+   "contributions": 32258.0
+  },
+  {
+   "name": "Jackie Terribile",
+   "chamber": "house",
+   "district": "66",
+   "campaign": 77250,
+   "contributions": 61786.4
+  },
+  {
+   "name": "Thomas F Hartnett",
+   "chamber": "house",
+   "district": "110",
+   "campaign": 77208,
+   "contributions": 67073.81
+  },
+  {
+   "name": "Dennis C Moss",
+   "chamber": "house",
+   "district": "29",
+   "campaign": 77128,
+   "contributions": 53249.26
+  },
+  {
+   "name": "Mark M Smith",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 76959,
+   "contributions": 20150.0
+  },
+  {
+   "name": "Paul B Wickensimer",
+   "chamber": "house",
+   "district": "22",
+   "campaign": 76958,
+   "contributions": 40572.6
+  },
+  {
+   "name": "William R Whitmire",
+   "chamber": "house",
+   "district": "1",
+   "campaign": 79698,
+   "contributions": 19150.0
+  },
+  {
+   "name": "Cally R Forrest",
+   "chamber": "house",
+   "district": "39",
+   "campaign": 79677,
+   "contributions": 19993.1
+  },
+  {
+   "name": "Paula R Calhoon",
+   "chamber": "house",
+   "district": "87",
+   "campaign": 77187,
+   "contributions": 13124.26
+  },
+  {
+   "name": "Wendell G Gilliard",
+   "chamber": "house",
+   "district": "111",
+   "campaign": 77203,
+   "contributions": 41615.52
+  },
+  {
+   "name": "Jackie E Hayes",
+   "chamber": "house",
+   "district": "55",
+   "campaign": 77209,
+   "contributions": 30375.0
+  },
+  {
+   "name": "Thomas R Ligon",
+   "chamber": "house",
+   "district": "43",
+   "campaign": 77222,
+   "contributions": 29999.26
+  },
+  {
+   "name": "Wallace H Jordan",
+   "chamber": "house",
+   "district": "63",
+   "campaign": 77400,
+   "contributions": 34024.26
+  },
+  {
+   "name": "Tim McGinnis",
+   "chamber": "house",
+   "district": "56",
+   "campaign": 77338,
+   "contributions": 22295.5
+  },
+  {
+   "name": "Spencer Wetmore",
+   "chamber": "house",
+   "district": "115",
+   "campaign": 77243,
+   "contributions": 4560.65
+  },
+  {
+   "name": "Neal Collins",
+   "chamber": "house",
+   "district": "5",
+   "campaign": 79750,
+   "contributions": 58537.16
+  },
+  {
+   "name": "Brandon Guffey",
+   "chamber": "house",
+   "district": "48",
+   "campaign": 77205,
+   "contributions": 45858.46
+  },
+  {
+   "name": "Leon Howard",
+   "chamber": "house",
+   "district": "76",
+   "campaign": 77216,
+   "contributions": 9457.38
+  },
+  {
+   "name": "Donald G Chapman",
+   "chamber": "house",
+   "district": "8",
+   "campaign": 77188,
+   "contributions": 76197.47
+  },
+  {
+   "name": "James T Rutherford",
+   "chamber": "house",
+   "district": "74",
+   "campaign": 77235,
+   "contributions": 66500.0
+  },
+  {
+   "name": "Tiffany Spann-Wilder",
+   "chamber": "house",
+   "district": "109",
+   "campaign": 77307,
+   "contributions": 7286.99
+  },
+  {
+   "name": "Harriet A Holman",
+   "chamber": "house",
+   "district": "102",
+   "campaign": 77212,
+   "contributions": 48726.8
+  },
+  {
+   "name": "Wm. Weston J Newton",
+   "chamber": "house",
+   "district": "120",
+   "campaign": 77240,
+   "contributions": 146658.0
+  },
+  {
+   "name": "Shelley G Yuhas",
+   "chamber": "house",
+   "district": "121",
+   "campaign": 79583,
+   "contributions": 35618.52
+  },
+  {
+   "name": "William M Hixon",
+   "chamber": "house",
+   "district": "83",
+   "campaign": 77241,
+   "contributions": 29004.26
+  },
+  {
+   "name": "William M Chumley",
+   "chamber": "house",
+   "district": "35",
+   "campaign": 77189,
+   "contributions": 17578.91
+  },
+  {
+   "name": "Adam L Duncan",
+   "chamber": "house",
+   "district": "2",
+   "campaign": 77194,
+   "contributions": 37754.47
+  },
+  {
+   "name": "Melissa J Lackey-Oremus",
+   "chamber": "house",
+   "district": "84",
+   "campaign": 77230,
+   "contributions": 38949.26
+  },
+  {
+   "name": "William L III Hewitt",
+   "chamber": "house",
+   "district": "108",
+   "campaign": 77255,
+   "contributions": 171737.26
+  },
+  {
+   "name": "Carla M Schuessler",
+   "chamber": "house",
+   "district": "61",
+   "campaign": 77236,
+   "contributions": 75184.26
+  },
+  {
+   "name": "Jason S Luck",
+   "chamber": "house",
+   "district": "54",
+   "campaign": 77251,
+   "contributions": 70414.07
+  },
+  {
+   "name": "Jermaine L Johnson",
+   "chamber": "house",
+   "district": "70",
+   "campaign": 77219,
+   "contributions": 0.0
+  },
+  {
+   "name": "Christopher R Hart",
+   "chamber": "house",
+   "district": "73",
+   "campaign": 77377,
+   "contributions": 24500.0
+  },
+  {
+   "name": "Jordan Pace",
+   "chamber": "house",
+   "district": "117",
+   "campaign": 77231,
+   "contributions": 13412.25
+  },
+  {
+   "name": "Steven W Long",
+   "chamber": "house",
+   "district": "37",
+   "campaign": 77223,
+   "contributions": 29849.26
+  },
+  {
+   "name": "christopher s wooten",
+   "chamber": "house",
+   "district": "69",
+   "campaign": 79701,
+   "contributions": 100837.21
+  },
+  {
+   "name": "Christopher H Sessions",
+   "chamber": "house",
+   "district": "46",
+   "campaign": 77424,
+   "contributions": 71575.0
+  },
+  {
+   "name": "Frank L Atkinson",
+   "chamber": "house",
+   "district": "57",
+   "campaign": 76974,
+   "contributions": 96772.21
+  },
+  {
+   "name": "Timothy A Jr. Morgan",
+   "chamber": "house",
+   "district": "18",
+   "campaign": 77229,
+   "contributions": 3025.0
+  },
+  {
+   "name": "James E Teeple",
+   "chamber": "house",
+   "district": "116",
+   "campaign": 77422,
+   "contributions": 155333.62
+  },
+  {
+   "name": "beth bernstein",
+   "chamber": "house",
+   "district": "78",
+   "campaign": 77383,
+   "contributions": 18384.26
+  },
+  {
+   "name": "Jumelle Brooks",
+   "chamber": "house",
+   "district": "12",
+   "campaign": 79422,
+   "contributions": 43931.15
+  },
+  {
+   "name": "Richard L Sr Yow",
+   "chamber": "house",
+   "district": "53",
+   "campaign": 77247,
+   "contributions": 21449.26
+  },
+  {
+   "name": "Shannon S Erickson",
+   "chamber": "house",
+   "district": "124",
+   "campaign": 77196,
+   "contributions": 41765.76
+  },
+  {
+   "name": "Gary   Jr. Brewer",
+   "chamber": "house",
+   "district": "114",
+   "campaign": 77596,
+   "contributions": 124569.26
+  },
+  {
+   "name": "J P Bowers",
+   "chamber": "house",
+   "district": "3",
+   "campaign": 79675,
+   "contributions": 20100.0
+  },
+  {
+   "name": "Robert Harris",
+   "chamber": "house",
+   "district": "36",
+   "campaign": 77225,
+   "contributions": 29800.0
+  },
+  {
+   "name": "Josiah Magnuson",
+   "chamber": "house",
+   "district": "38",
+   "campaign": 77226,
+   "contributions": 47735.12
+  },
+  {
+   "name": "David Weeks",
+   "chamber": "house",
+   "district": "51",
+   "campaign": 79687,
+   "contributions": 21499.26
+  },
+  {
+   "name": "Gilda Y Cobb-Hunter",
+   "chamber": "house",
+   "district": "95",
+   "campaign": 77595,
+   "contributions": 52858.81
+  },
+  {
+   "name": "M David Vaughan",
+   "chamber": "house",
+   "district": "27",
+   "campaign": 77294,
+   "contributions": 27988.61
+  },
+  {
+   "name": "Brendan R Magee",
+   "chamber": "house",
+   "district": "119",
+   "campaign": 77360,
+   "contributions": 0.0
+  },
+  {
+   "name": "Seth Rose",
+   "chamber": "house",
+   "district": "72",
+   "campaign": 77368,
+   "contributions": 16099.26
+  },
+  {
+   "name": "Heather A Crawford",
+   "chamber": "house",
+   "district": "68",
+   "campaign": 77275,
+   "contributions": 59589.04
+  },
+  {
+   "name": "Michael F Rivers",
+   "chamber": "house",
+   "district": "121",
+   "campaign": 79715,
+   "contributions": 1958.0
+  },
+  {
+   "name": "Carl L Anderson",
+   "chamber": "house",
+   "district": "103",
+   "campaign": 77339,
+   "contributions": 21157.26
+  },
+  {
+   "name": "Mark N Willis",
+   "chamber": "house",
+   "district": "16",
+   "campaign": 77248,
+   "contributions": 18199.26
+  },
+  {
+   "name": "Chandra E Dillard",
+   "chamber": "house",
+   "district": "23",
+   "campaign": 77191,
+   "contributions": 7959.96
+  },
+  {
+   "name": "Patrick B Haddon",
+   "chamber": "house",
+   "district": "19",
+   "campaign": 77206,
+   "contributions": 12947.27
+  },
+  {
+   "name": "RJ   III May",
+   "chamber": "house",
+   "district": "88",
+   "campaign": 77227,
+   "contributions": 996.4
+  },
+  {
+   "name": "Allen J Broadus",
+   "chamber": "house",
+   "district": "69",
+   "campaign": 80467,
+   "contributions": 0.0
+  },
+  {
+   "name": "Phillip D Lowe",
+   "chamber": "house",
+   "district": "60",
+   "campaign": 77224,
+   "contributions": 13899.26
+  },
+  {
+   "name": "Kambrell H Garvin",
+   "chamber": "house",
+   "district": "77",
+   "campaign": 77199,
+   "contributions": 14820.31
+  },
+  {
+   "name": "Stephen D Frank",
+   "chamber": "house",
+   "district": "20",
+   "campaign": 77198,
+   "contributions": 6449.26
+  },
+  {
+   "name": "Carlton Walker",
+   "chamber": "house",
+   "district": "15",
+   "campaign": 77681,
+   "contributions": 1124.0
+  },
+  {
+   "name": "Terry Alexander",
+   "chamber": "house",
+   "district": "59",
+   "campaign": 78255,
+   "contributions": 2750.0
+  },
+  {
+   "name": "Robert T Reese",
+   "chamber": "house",
+   "district": "70",
+   "campaign": 79705,
+   "contributions": 8902.0
+  },
+  {
+   "name": "Jeffrey A Bradley",
+   "chamber": "house",
+   "district": "123",
+   "campaign": 77597,
+   "contributions": 17599.26
+  },
+  {
+   "name": "Daniel R Alexander",
+   "chamber": "house",
+   "district": "91",
+   "campaign": 77281,
+   "contributions": 35470.0
+  },
+  {
+   "name": "Christopher J Murphy",
+   "chamber": "house",
+   "district": "98",
+   "campaign": 77402,
+   "contributions": 72971.08
+  },
+  {
+   "name": "Lonnie / Hosey",
+   "chamber": "house",
+   "district": "91",
+   "campaign": 77213,
+   "contributions": 38422.32
+  },
+  {
+   "name": "Cody T Mitchell",
+   "chamber": "house",
+   "district": "65",
+   "campaign": 77098,
+   "contributions": 103349.26
+  },
+  {
+   "name": "Leon E Stavrinakis",
+   "chamber": "house",
+   "district": "119",
+   "campaign": 77238,
+   "contributions": 39450.0
+  },
+  {
+   "name": "Sylleste Davis",
+   "chamber": "house",
+   "district": "100",
+   "campaign": 76928,
+   "contributions": 85299.26
+  },
+  {
+   "name": "Robert D Robbins",
+   "chamber": "house",
+   "district": "97",
+   "campaign": 77157,
+   "contributions": 120069.83
+  },
+  {
+   "name": "Thomas E Pope",
+   "chamber": "house",
+   "district": "47",
+   "campaign": 77232,
+   "contributions": 61525.38
+  },
+  {
+   "name": "Carlton R III Beaman",
+   "chamber": "house",
+   "district": "87",
+   "campaign": 77313,
+   "contributions": 15750.04
+  },
+  {
+   "name": "John R King",
+   "chamber": "house",
+   "district": "49",
+   "campaign": 77156,
+   "contributions": 38841.8
+  },
+  {
+   "name": "Heather Bauer",
+   "chamber": "house",
+   "district": "75",
+   "campaign": 77382,
+   "contributions": 176724.24
+  },
+  {
+   "name": "Jeffrey E Johnson",
+   "chamber": "house",
+   "district": "58",
+   "campaign": 77443,
+   "contributions": 24854.63
+  },
+  {
+   "name": "Jerry N Jr. Govan",
+   "chamber": "house",
+   "district": "93",
+   "campaign": 77215,
+   "contributions": 33769.42
+  },
+  {
+   "name": "Courtney S Waters",
+   "chamber": "house",
+   "district": "113",
+   "campaign": 77345,
+   "contributions": 16369.43
+  },
+  {
+   "name": "Fawn M Pedalino",
+   "chamber": "house",
+   "district": "64",
+   "campaign": 77239,
+   "contributions": 73642.76
+  },
+  {
+   "name": "Gil Gatch",
+   "chamber": "house",
+   "district": "94",
+   "campaign": 77200,
+   "contributions": 143697.87
+  },
+  {
+   "name": "Noah L Barker",
+   "chamber": "house",
+   "district": "70",
+   "campaign": 77571,
+   "contributions": 43450.02
+  },
+  {
+   "name": "William G Herbkersman",
+   "chamber": "house",
+   "district": "118",
+   "campaign": 77220,
+   "contributions": 138462.0
+  },
+  {
+   "name": "Johnnie Garmon",
+   "chamber": "house",
+   "district": "115",
+   "campaign": 77515,
+   "contributions": 106988.45
+  },
+  {
+   "name": "William L Oden",
+   "chamber": "house",
+   "district": "50",
+   "campaign": 79149,
+   "contributions": 5115.26
+  },
+  {
+   "name": "Annie E McDaniel",
+   "chamber": "house",
+   "district": "41",
+   "campaign": 77228,
+   "contributions": 15275.13
+  },
+  {
+   "name": "Kristy Gore",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 77657,
+   "contributions": 22348.33
+  },
+  {
+   "name": "Carlton Walker",
+   "chamber": "house",
+   "district": "115",
+   "campaign": 77682,
+   "contributions": 29166.9
+  },
+  {
+   "name": "George M Blumenthal",
+   "chamber": "house",
+   "district": "104",
+   "campaign": 77795,
+   "contributions": 18580.2
+  },
+  {
+   "name": "Jenna P Arsenault",
+   "chamber": "house",
+   "district": "112",
+   "campaign": 78044,
+   "contributions": 39286.11
+  },
+  {
+   "name": "Kathy Redwine",
+   "chamber": "house",
+   "district": "108",
+   "campaign": 78066,
+   "contributions": 7852.2
+  },
+  {
+   "name": "Johnathan P Jr. Ammons",
+   "chamber": "house",
+   "district": "40",
+   "campaign": 78005,
+   "contributions": 1993.65
+  },
+  {
+   "name": "Joseph M Burgett",
+   "chamber": "house",
+   "district": "3",
+   "campaign": 77981,
+   "contributions": 24128.72
+  },
+  {
+   "name": "Sarita L Edgerton",
+   "chamber": "house",
+   "district": "34",
+   "campaign": 77195,
+   "contributions": 24767.27
+  },
+  {
+   "name": "Joe White",
+   "chamber": "house",
+   "district": "40",
+   "campaign": 79689,
+   "contributions": 12166.26
+  },
+  {
+   "name": "Lisa Davey",
+   "chamber": "house",
+   "district": "67",
+   "campaign": 78163,
+   "contributions": 36747.09
+  },
+  {
+   "name": "Katie L McCravy",
+   "chamber": "house",
+   "district": "102",
+   "campaign": 77862,
+   "contributions": 7016.84
+  },
+  {
+   "name": "William   Sr Clyburn",
+   "chamber": "house",
+   "district": "82",
+   "campaign": 77336,
+   "contributions": 15439.16
+  },
+  {
+   "name": "Keishan M Scott",
+   "chamber": "house",
+   "district": "50",
+   "campaign": 78351,
+   "contributions": 17340.06
+  },
+  {
+   "name": "JA Moore",
+   "chamber": "house",
+   "district": "15",
+   "campaign": 76883,
+   "contributions": 21489.62
+  },
+  {
+   "name": "Katie W Crosby",
+   "chamber": "house",
+   "district": "44",
+   "campaign": 78594,
+   "contributions": 18661.12
+  },
+  {
+   "name": "Steven Asbill",
+   "chamber": "house",
+   "district": "85",
+   "campaign": 78595,
+   "contributions": 20145.23
+  },
+  {
+   "name": "Sonja R Ogletree Satani",
+   "chamber": "house",
+   "district": "98",
+   "campaign": 78603,
+   "contributions": 40879.0
+  },
+  {
+   "name": "Gregory S Ford",
+   "chamber": "house",
+   "district": "98",
+   "campaign": 78618,
+   "contributions": 60882.75
+  },
+  {
+   "name": "Evelyn A Carlin",
+   "chamber": "house",
+   "district": "70",
+   "campaign": 78592,
+   "contributions": 5788.52
+  },
+  {
+   "name": "Patrick S Orr",
+   "chamber": "house",
+   "district": "8",
+   "campaign": 78711,
+   "contributions": 14528.55
+  },
+  {
+   "name": "John Lastinger",
+   "chamber": "house",
+   "district": "88",
+   "campaign": 79697,
+   "contributions": 8776.91
+  },
+  {
+   "name": "Claiborne Linvill",
+   "chamber": "house",
+   "district": "3",
+   "campaign": 78727,
+   "contributions": 41053.69
+  },
+  {
+   "name": "Nathan C Ballentine",
+   "chamber": "house",
+   "district": "71",
+   "campaign": 77185,
+   "contributions": 62868.94
+  },
+  {
+   "name": "Tyler A Morgan",
+   "chamber": "house",
+   "district": "91",
+   "campaign": 78561,
+   "contributions": 5481.88
+  },
+  {
+   "name": "Brian Duncan",
+   "chamber": "house",
+   "district": "88",
+   "campaign": 79700,
+   "contributions": 8750.0
+  },
+  {
+   "name": "Robert B III McCoy",
+   "chamber": "house",
+   "district": "44",
+   "campaign": 78742,
+   "contributions": 17810.0
+  },
+  {
+   "name": "William C Huff",
+   "chamber": "house",
+   "district": "28",
+   "campaign": 77217,
+   "contributions": 10041.01
+  },
+  {
+   "name": "Nick Uricchio",
+   "chamber": "house",
+   "district": "115",
+   "campaign": 78752,
+   "contributions": 129733.48
+  },
+  {
+   "name": "Woody Sprouse",
+   "chamber": "house",
+   "district": "112",
+   "campaign": 78754,
+   "contributions": 46110.87
+  },
+  {
+   "name": "David W Bell",
+   "chamber": "house",
+   "district": "116",
+   "campaign": 78818,
+   "contributions": 17523.94
+  },
+  {
+   "name": "Malcolm Taylor",
+   "chamber": "house",
+   "district": "52",
+   "campaign": 78845,
+   "contributions": 44445.0
+  },
+  {
+   "name": "Bernie Scolaro",
+   "chamber": "house",
+   "district": "118",
+   "campaign": 78874,
+   "contributions": 27454.49
+  },
+  {
+   "name": "Kelly Hough",
+   "chamber": "house",
+   "district": "114",
+   "campaign": 78907,
+   "contributions": 14651.18
+  },
+  {
+   "name": "Abraham L Harris",
+   "chamber": "house",
+   "district": "33",
+   "campaign": 78768,
+   "contributions": 29898.05
+  },
+  {
+   "name": "Jarrod k Brooks",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 78908,
+   "contributions": 43945.0
+  },
+  {
+   "name": "Candace Schutt",
+   "chamber": "house",
+   "district": "2",
+   "campaign": 78922,
+   "contributions": 13433.15
+  },
+  {
+   "name": "Ashley Painter",
+   "chamber": "house",
+   "district": "117",
+   "campaign": 78954,
+   "contributions": 29959.1
+  },
+  {
+   "name": "Tiberiu Czentye",
+   "chamber": "house",
+   "district": "41",
+   "campaign": 78792,
+   "contributions": 27657.43
+  },
+  {
+   "name": "Benjamin E Brown",
+   "chamber": "house",
+   "district": "80",
+   "campaign": 78820,
+   "contributions": 8552.36
+  },
+  {
+   "name": "Shannon  N DeLoach",
+   "chamber": "house",
+   "district": "121",
+   "campaign": 78948,
+   "contributions": 6159.0
+  },
+  {
+   "name": "Tammy Hahn",
+   "chamber": "house",
+   "district": "38",
+   "campaign": 79065,
+   "contributions": 3093.0
+  },
+  {
+   "name": "Hunter N Hackett",
+   "chamber": "house",
+   "district": "96",
+   "campaign": 79095,
+   "contributions": 23254.22
+  },
+  {
+   "name": "ROBERT  H WEINFELD MD",
+   "chamber": "house",
+   "district": "120",
+   "campaign": 79106,
+   "contributions": 2208.0
+  },
+  {
+   "name": "Thomas L Paradise",
+   "chamber": "house",
+   "district": "86",
+   "campaign": 79120,
+   "contributions": 44854.26
+  },
+  {
+   "name": "Michanna Tate",
+   "chamber": "house",
+   "district": "14",
+   "campaign": 79124,
+   "contributions": 7909.34
+  },
+  {
+   "name": "Joseph Madge",
+   "chamber": "house",
+   "district": "89",
+   "campaign": 79125,
+   "contributions": 25640.98
+  },
+  {
+   "name": "Alex Morris",
+   "chamber": "house",
+   "district": "93",
+   "campaign": 78832,
+   "contributions": 27643.95
+  },
+  {
+   "name": "Suzanne I Spurgeon",
+   "chamber": "house",
+   "district": "82",
+   "campaign": 79126,
+   "contributions": 1041.75
+  },
+  {
+   "name": "Richard L Shealy",
+   "chamber": "house",
+   "district": "14",
+   "campaign": 78791,
+   "contributions": 78235.0
+  },
+  {
+   "name": "Heather Hart",
+   "chamber": "house",
+   "district": "66",
+   "campaign": 79134,
+   "contributions": 14747.77
+  },
+  {
+   "name": "Jesse Turner",
+   "chamber": "house",
+   "district": "11",
+   "campaign": 79115,
+   "contributions": 100000.0
+  },
+  {
+   "name": "Clay N Middleton",
+   "chamber": "house",
+   "district": "116",
+   "campaign": 78919,
+   "contributions": 61542.33
+  },
+  {
+   "name": "Peter A III Martinez",
+   "chamber": "house",
+   "district": "47",
+   "campaign": 79188,
+   "contributions": 1531.0
+  },
+  {
+   "name": "Clemson G Turregano",
+   "chamber": "house",
+   "district": "33",
+   "campaign": 79195,
+   "contributions": 8001.83
+  },
+  {
+   "name": "Russell B Brazell",
+   "chamber": "house",
+   "district": "45",
+   "campaign": 79226,
+   "contributions": 52868.0
+  },
+  {
+   "name": "Lynn Ramirez",
+   "chamber": "house",
+   "district": "16",
+   "campaign": 79246,
+   "contributions": 37644.12
+  },
+  {
+   "name": "Korey Williams",
+   "chamber": "house",
+   "district": "122",
+   "campaign": 79263,
+   "contributions": 14431.33
+  },
+  {
+   "name": "ELIZABETH W COOLEY",
+   "chamber": "house",
+   "district": "7",
+   "campaign": 79250,
+   "contributions": 3790.25
+  },
+  {
+   "name": "Radia Baxter",
+   "chamber": "house",
+   "district": "116",
+   "campaign": 79279,
+   "contributions": 29296.0
+  },
+  {
+   "name": "Johnny Estrich",
+   "chamber": "house",
+   "district": "9",
+   "campaign": 79289,
+   "contributions": 1185.3
+  },
+  {
+   "name": "Jessica Beasley",
+   "chamber": "house",
+   "district": "11",
+   "campaign": 79291,
+   "contributions": 9674.74
+  },
+  {
+   "name": "Engle Thompson",
+   "chamber": "house",
+   "district": "40",
+   "campaign": 79339,
+   "contributions": 14297.0
+  },
+  {
+   "name": "Dixie Kvatek",
+   "chamber": "house",
+   "district": "72",
+   "campaign": 79323,
+   "contributions": 1500.0
+  },
+  {
+   "name": "Anthony M Stovall",
+   "chamber": "house",
+   "district": "79",
+   "campaign": 79310,
+   "contributions": 26466.12
+  },
+  {
+   "name": "John A Allen",
+   "chamber": "house",
+   "district": "69",
+   "campaign": 79349,
+   "contributions": 29268.67
+  },
+  {
+   "name": "David W Epperson",
+   "chamber": "house",
+   "district": "64",
+   "campaign": 79351,
+   "contributions": 2000.0
+  },
+  {
+   "name": "Virginia B Maclure",
+   "chamber": "house",
+   "district": "18",
+   "campaign": 79352,
+   "contributions": 5400.31
+  },
+  {
+   "name": "Shawn Pinkston",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 79355,
+   "contributions": 35771.03
+  },
+  {
+   "name": "Kimberlie E Ray",
+   "chamber": "house",
+   "district": "86",
+   "campaign": 79212,
+   "contributions": 3597.5
+  },
+  {
+   "name": "Barbara R Arthur",
+   "chamber": "house",
+   "district": "65",
+   "campaign": 79385,
+   "contributions": 12263.96
+  },
+  {
+   "name": "Dianne K Mitchell",
+   "chamber": "house",
+   "district": "21",
+   "campaign": 79388,
+   "contributions": 14450.0
+  },
+  {
+   "name": "Sally Hebert",
+   "chamber": "house",
+   "district": "94",
+   "campaign": 79391,
+   "contributions": 13608.96
+  },
+  {
+   "name": "David E Wilson",
+   "chamber": "house",
+   "district": "105",
+   "campaign": 79400,
+   "contributions": 9889.76
+  },
+  {
+   "name": "Jenny E Desch",
+   "chamber": "house",
+   "district": "26",
+   "campaign": 79398,
+   "contributions": 11297.62
+  },
+  {
+   "name": "Dr. Ernest E Mackins",
+   "chamber": "house",
+   "district": "3",
+   "campaign": 79266,
+   "contributions": 0.0
+  },
+  {
+   "name": "Heather B Hickman",
+   "chamber": "house",
+   "district": "15",
+   "campaign": 79273,
+   "contributions": 18310.39
+  },
+  {
+   "name": "Craig A Diem",
+   "chamber": "house",
+   "district": "1",
+   "campaign": 79328,
+   "contributions": 18142.15
+  },
+  {
+   "name": "Wendell K Jones",
+   "chamber": "house",
+   "district": "25",
+   "campaign": 77261,
+   "contributions": 17300.7
+  },
+  {
+   "name": "Debbie Subera-Wiggin",
+   "chamber": "house",
+   "district": "120",
+   "campaign": 79462,
+   "contributions": 13994.0
+  },
+  {
+   "name": "Heather S Currie",
+   "chamber": "house",
+   "district": "21",
+   "campaign": 79471,
+   "contributions": 27600.0
+  },
+  {
+   "name": "Juni Lynch",
+   "chamber": "house",
+   "district": "1",
+   "campaign": 79267,
+   "contributions": 1139.19
+  },
+  {
+   "name": "Sonja R Ogletree Satani",
+   "chamber": "house",
+   "district": "98",
+   "campaign": 79891,
+   "contributions": 21024.31
+  },
+  {
+   "name": "Thomas S Watson",
+   "chamber": "house",
+   "district": "10",
+   "campaign": 79507,
+   "contributions": 15958.44
+  },
+  {
+   "name": "Virginia L McLean",
+   "chamber": "house",
+   "district": "36",
+   "campaign": 79217,
+   "contributions": 9443.0
+  },
+  {
+   "name": "Ann C Shippy",
+   "chamber": "house",
+   "district": "123",
+   "campaign": 79513,
+   "contributions": 6180.93
+  },
+  {
+   "name": "Rustin Terry",
+   "chamber": "house",
+   "district": "48",
+   "campaign": 79517,
+   "contributions": 3803.94
+  },
+  {
+   "name": "Adrian P Carter",
+   "chamber": "house",
+   "district": "60",
+   "campaign": 79515,
+   "contributions": 4701.51
+  },
+  {
+   "name": "Joshua S Kendrick",
+   "chamber": "house",
+   "district": "22",
+   "campaign": 79529,
+   "contributions": 41241.1
+  },
+  {
+   "name": "John G Kilmartin",
+   "chamber": "house",
+   "district": "85",
+   "campaign": 77221,
+   "contributions": 37323.07
+  },
+  {
+   "name": "Sloan E Hilton",
+   "chamber": "house",
+   "district": "63",
+   "campaign": 79248,
+   "contributions": 1343.0
+  },
+  {
+   "name": "Kenneth J Atwood",
+   "chamber": "house",
+   "district": "110",
+   "campaign": 78969,
+   "contributions": 38699.05
+  },
+  {
+   "name": "Charlianne W Nestlen",
+   "chamber": "house",
+   "district": "38",
+   "campaign": 79518,
+   "contributions": 24116.0
+  },
+  {
+   "name": "Justin Sanders",
+   "chamber": "house",
+   "district": "24",
+   "campaign": 79287,
+   "contributions": 1439.22
+  },
+  {
+   "name": "Saville Williams",
+   "chamber": "house",
+   "district": "34",
+   "campaign": 79244,
+   "contributions": 2526.71
+  },
+  {
+   "name": "Zyon El-Khalifa",
+   "chamber": "house",
+   "district": "2",
+   "campaign": 78976,
+   "contributions": 6110.0
+  },
+  {
+   "name": "Katie M Hall",
+   "chamber": "house",
+   "district": "39",
+   "campaign": 79085,
+   "contributions": 0.0
+  },
+  {
+   "name": "Crystal Y Campbell",
+   "chamber": "house",
+   "district": "100",
+   "campaign": 79380,
+   "contributions": 3557.3
+  },
+  {
+   "name": "Betty J Quick",
+   "chamber": "house",
+   "district": "54",
+   "campaign": 79569,
+   "contributions": 3707.03
+  },
+  {
+   "name": "Otis D Holston",
+   "chamber": "house",
+   "district": "84",
+   "campaign": 78826,
+   "contributions": 57109.94
+  },
+  {
+   "name": "scotty whetstone",
+   "chamber": "house",
+   "district": "96",
+   "campaign": 79506,
+   "contributions": 6017.77
+  },
+  {
+   "name": "RANDOLPH C Jr. RHODE",
+   "chamber": "house",
+   "district": "22",
+   "campaign": 79580,
+   "contributions": 1372.77
+  },
+  {
+   "name": "Perry L Sutton",
+   "chamber": "house",
+   "district": "49",
+   "campaign": 79274,
+   "contributions": 16720.42
+  },
+  {
+   "name": "John C Bember",
+   "chamber": "house",
+   "district": "61",
+   "campaign": 79593,
+   "contributions": 208.0
+  },
+  {
+   "name": "Lawrence Moore",
+   "chamber": "house",
+   "district": "52",
+   "campaign": 79411,
+   "contributions": 11674.42
+  },
+  {
+   "name": "Robert L Williams",
+   "chamber": "house",
+   "district": "42",
+   "campaign": 79592,
+   "contributions": 2272.62
+  },
+  {
+   "name": "Montez Aiken",
+   "chamber": "house",
+   "district": "102",
+   "campaign": 79182,
+   "contributions": 11264.04
+  },
+  {
+   "name": "Donald L Jr Edwards",
+   "chamber": "house",
+   "district": "119",
+   "campaign": 79567,
+   "contributions": 12838.86
+  },
+  {
+   "name": "Rachel Smith",
+   "chamber": "house",
+   "district": "19",
+   "campaign": 79602,
+   "contributions": 1183.3
+  },
+  {
+   "name": "Judith S Davies",
+   "chamber": "house",
+   "district": "68",
+   "campaign": 79505,
+   "contributions": 5020.12
+  },
+  {
+   "name": "Arnie   Jr. Borowsky",
+   "chamber": "house",
+   "district": "101",
+   "campaign": 79610,
+   "contributions": 1234.0
+  },
+  {
+   "name": "Melissa J Weeks-Richardson",
+   "chamber": "house",
+   "district": "51",
+   "campaign": 79614,
+   "contributions": 578.0
+  },
+  {
+   "name": "Richard L Nicoloff",
+   "chamber": "house",
+   "district": "17",
+   "campaign": 79617,
+   "contributions": 9059.04
+  },
+  {
+   "name": "Perry S Finch",
+   "chamber": "house",
+   "district": "96",
+   "campaign": 79240,
+   "contributions": 2125.96
+  },
+  {
+   "name": "Alan G Buckalew",
+   "chamber": "house",
+   "district": "28",
+   "campaign": 79594,
+   "contributions": 3713.0
+  },
+  {
+   "name": "Jeremy  A Jones",
+   "chamber": "house",
+   "district": "88",
+   "campaign": 79257,
+   "contributions": 1475.96
+  },
+  {
+   "name": "Jacqualyn Meadow",
+   "chamber": "house",
+   "district": "56",
+   "campaign": 79626,
+   "contributions": 12476.31
+  },
+  {
+   "name": "Sherman T Lott",
+   "chamber": "house",
+   "district": "39",
+   "campaign": 79625,
+   "contributions": 2695.41
+  },
+  {
+   "name": "Byron D III Walters",
+   "chamber": "house",
+   "district": "92",
+   "campaign": 79632,
+   "contributions": 6186.99
+  },
+  {
+   "name": "Clarence R Wise",
+   "chamber": "house",
+   "district": "13",
+   "campaign": 79636,
+   "contributions": 3758.0
+  },
+  {
+   "name": "Adam Crisp",
+   "chamber": "house",
+   "district": "36",
+   "campaign": 79589,
+   "contributions": 21825.0
+  },
+  {
+   "name": "stuart l epting",
+   "chamber": "house",
+   "district": "86",
+   "campaign": 79661,
+   "contributions": 1631.31
+  },
+  {
+   "name": "Brian Zuckerberg",
+   "chamber": "house",
+   "district": "112",
+   "campaign": 79416,
+   "contributions": 371.96
+  },
+  {
+   "name": "Cathy A Jaggars",
+   "chamber": "house",
+   "district": "97",
+   "campaign": 79441,
+   "contributions": 9452.01
+  },
+  {
+   "name": "Jasmine R Williams",
+   "chamber": "house",
+   "district": "1",
+   "campaign": 79609,
+   "contributions": 3945.32
+  },
+  {
+   "name": "Seth P Sauer-Hart",
+   "chamber": "house",
+   "district": "37",
+   "campaign": 79579,
+   "contributions": 3719.31
+  },
+  {
+   "name": "Marisa McCann",
+   "chamber": "house",
+   "district": "106",
+   "campaign": 79688,
+   "contributions": 2164.06
+  },
+  {
+   "name": "Marina Franco",
+   "chamber": "house",
+   "district": "29",
+   "campaign": 79703,
+   "contributions": 2901.79
+  },
+  {
+   "name": "Cheryl O Lane",
+   "chamber": "house",
+   "district": "101",
+   "campaign": 79709,
+   "contributions": 608.0
+  },
+  {
+   "name": "Melissa B OShea",
+   "chamber": "house",
+   "district": "60",
+   "campaign": 79524,
+   "contributions": 951.18
+  },
+  {
+   "name": "Vivian Elston",
+   "chamber": "house",
+   "district": "96",
+   "campaign": 79520,
+   "contributions": 1415.34
+  },
+  {
+   "name": "Samuel E Price",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 79710,
+   "contributions": 613.0
+  },
+  {
+   "name": "Amanda Zimmerman",
+   "chamber": "house",
+   "district": "71",
+   "campaign": 77626,
+   "contributions": 27928.28
+  },
+  {
+   "name": "Derrick Kruse",
+   "chamber": "house",
+   "district": "4",
+   "campaign": 79718,
+   "contributions": 2209.31
+  },
+  {
+   "name": "Derrick L Quarles",
+   "chamber": "house",
+   "district": "25",
+   "campaign": 79611,
+   "contributions": 504.0
+  },
+  {
+   "name": "Collin Holloway",
+   "chamber": "house",
+   "district": "94",
+   "campaign": 79544,
+   "contributions": 835.0
+  },
+  {
+   "name": "Michele J Demery",
+   "chamber": "house",
+   "district": "64",
+   "campaign": 79608,
+   "contributions": 2659.15
+  },
+  {
+   "name": "Frederick J Taylor",
+   "chamber": "house",
+   "district": "39",
+   "campaign": 79239,
+   "contributions": 208.0
+  },
+  {
+   "name": "Carol Goodman",
+   "chamber": "house",
+   "district": "61",
+   "campaign": 79408,
+   "contributions": 918.0
+  },
+  {
+   "name": "John JEFFERSON",
+   "chamber": "house",
+   "district": "13",
+   "campaign": 79571,
+   "contributions": 919.15
+  },
+  {
+   "name": "Martin T Cunningham",
+   "chamber": "house",
+   "district": "101",
+   "campaign": 79752,
+   "contributions": 1802.4
+  },
+  {
+   "name": "David Herndon",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 79623,
+   "contributions": 14500.0
+  },
+  {
+   "name": "Willie P Aiken",
+   "chamber": "house",
+   "district": "123",
+   "campaign": 79431,
+   "contributions": 439.48
+  },
+  {
+   "name": "Maja Moore",
+   "chamber": "house",
+   "district": "122",
+   "campaign": 79591,
+   "contributions": 12923.0
+  },
+  {
+   "name": "Caroline B Avinger",
+   "chamber": "house",
+   "district": "24",
+   "campaign": 79066,
+   "contributions": 44286.98
+  },
+  {
+   "name": "Cameroun George",
+   "chamber": "house",
+   "district": "73",
+   "campaign": 79235,
+   "contributions": 0.0
+  },
+  {
+   "name": "Monier Abusaft",
+   "chamber": "house",
+   "district": "31",
+   "campaign": 79304,
+   "contributions": 81945.27
+  },
+  {
+   "name": "Wendell Padgett",
+   "chamber": "house",
+   "district": "103",
+   "campaign": 79658,
+   "contributions": 1008.0
+  },
+  {
+   "name": "Patrick Tate",
+   "chamber": "house",
+   "district": "52",
+   "campaign": 79760,
+   "contributions": 1058.0
+  },
+  {
+   "name": "Kory Haskins",
+   "chamber": "house",
+   "district": "63",
+   "campaign": 79712,
+   "contributions": 54.97
+  },
+  {
+   "name": "David F Jones",
+   "chamber": "house",
+   "district": "5",
+   "campaign": 79764,
+   "contributions": 208.0
+  },
+  {
+   "name": "Justin Bennett",
+   "chamber": "house",
+   "district": "47",
+   "campaign": 79779,
+   "contributions": 0.0
+  },
+  {
+   "name": "Camron T Stewart",
+   "chamber": "house",
+   "district": "10",
+   "campaign": 79814,
+   "contributions": 1062.31
+  },
+  {
+   "name": "Gregory S Ford",
+   "chamber": "house",
+   "district": "98",
+   "campaign": 79820,
+   "contributions": 73039.83
+  },
+  {
+   "name": "Christine M Giguere",
+   "chamber": "house",
+   "district": "107",
+   "campaign": 79245,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sonia Pollard",
+   "chamber": "house",
+   "district": "78",
+   "campaign": 79237,
+   "contributions": 2738.16
+  },
+  {
+   "name": "Stephanie Holstein",
+   "chamber": "house",
+   "district": "30",
+   "campaign": 79857,
+   "contributions": 3431.38
+  },
+  {
+   "name": "Joe White",
+   "chamber": "house",
+   "district": "40",
+   "campaign": 77244,
+   "contributions": 12374.38
+  },
+  {
+   "name": "Cally R Forrest",
+   "chamber": "house",
+   "district": "39",
+   "campaign": 77197,
+   "contributions": 22242.36
+  },
+  {
+   "name": "Roger K Kirby",
+   "chamber": "house",
+   "district": "101",
+   "campaign": 77272,
+   "contributions": 8249.26
+  },
+  {
+   "name": "Thomas Beach",
+   "chamber": "house",
+   "district": "10",
+   "campaign": 79838,
+   "contributions": 9366.0
+  },
+  {
+   "name": "Travis A Moore",
+   "chamber": "house",
+   "district": "33",
+   "campaign": 79805,
+   "contributions": 51500.0
+  },
+  {
+   "name": "April Cromer",
+   "chamber": "house",
+   "district": "6",
+   "campaign": 76927,
+   "contributions": 3750.0
+  },
+  {
+   "name": "Sherry Hodges",
+   "chamber": "house",
+   "district": "8",
+   "campaign": 79802,
+   "contributions": 2000.0
+  },
+  {
+   "name": "Jason Payne",
+   "chamber": "house",
+   "district": "83",
+   "campaign": 79627,
+   "contributions": 5796.15
+  },
+  {
+   "name": "Paul B Wickensimer",
+   "chamber": "house",
+   "district": "22",
+   "campaign": 79806,
+   "contributions": 30130.0
+  },
+  {
+   "name": "John Lastinger",
+   "chamber": "house",
+   "district": "88",
+   "campaign": 78726,
+   "contributions": 3636.69
+  },
+  {
+   "name": "David W Martin",
+   "chamber": "house",
+   "district": "26",
+   "campaign": 79803,
+   "contributions": 17059.92
+  },
+  {
+   "name": "Joseph M Bustos",
+   "chamber": "house",
+   "district": "112",
+   "campaign": 76980,
+   "contributions": 8249.26
+  },
+  {
+   "name": "Daniel R Alexander",
+   "chamber": "house",
+   "district": "91",
+   "campaign": 79876,
+   "contributions": 19850.0
+  },
+  {
+   "name": "Carol Goodman",
+   "chamber": "house",
+   "district": "61",
+   "campaign": 79817,
+   "contributions": 39.3
+  },
+  {
+   "name": "Brandon Newton",
+   "chamber": "house",
+   "district": "45",
+   "campaign": 79837,
+   "contributions": 12937.75
+  },
+  {
+   "name": "Craig A Gagnon",
+   "chamber": "house",
+   "district": "11",
+   "campaign": 76914,
+   "contributions": 8999.26
+  },
+  {
+   "name": "Mike Neese",
+   "chamber": "house",
+   "district": "44",
+   "campaign": 79884,
+   "contributions": 6000.0
+  },
+  {
+   "name": "Shauna Bishop",
+   "chamber": "house",
+   "district": "124",
+   "campaign": 79176,
+   "contributions": 26881.34
+  },
+  {
+   "name": "Rosalyn D Henderson-Myers",
+   "chamber": "house",
+   "district": "31",
+   "campaign": 79831,
+   "contributions": 8100.5
+  },
+  {
+   "name": "Omar L McCrorey",
+   "chamber": "house",
+   "district": "46",
+   "campaign": 79504,
+   "contributions": 2040.04
+  },
+  {
+   "name": "J P Bowers",
+   "chamber": "house",
+   "district": "3",
+   "campaign": 77253,
+   "contributions": 2750.0
+  },
+  {
+   "name": "Dianne K Mitchell",
+   "chamber": "house",
+   "district": "21",
+   "campaign": 79840,
+   "contributions": 250.0
+  },
+  {
+   "name": "JACKIE K SPANN",
+   "chamber": "house",
+   "district": "64",
+   "campaign": 79605,
+   "contributions": 1343.22
+  },
+  {
+   "name": "Cody T Mitchell",
+   "chamber": "house",
+   "district": "65",
+   "campaign": 79904,
+   "contributions": 14450.0
+  },
+  {
+   "name": "Neal Collins",
+   "chamber": "house",
+   "district": "5",
+   "campaign": 77190,
+   "contributions": 6211.26
+  },
+  {
+   "name": "Carl L Anderson",
+   "chamber": "house",
+   "district": "103",
+   "campaign": 79925,
+   "contributions": 1899.26
+  },
+  {
+   "name": "Irene Benson",
+   "chamber": "house",
+   "district": "32",
+   "campaign": 79728,
+   "contributions": 12573.39
+  },
+  {
+   "name": "William R Whitmire",
+   "chamber": "house",
+   "district": "1",
+   "campaign": 77245,
+   "contributions": 4000.0
+  },
+  {
+   "name": "Christopher D Des Marais",
+   "chamber": "house",
+   "district": "2",
+   "campaign": 79928,
+   "contributions": 2422.92
+  },
+  {
+   "name": "Jennifer Bachner",
+   "chamber": "house",
+   "district": "6",
+   "campaign": 79407,
+   "contributions": 1158.0
+  },
+  {
+   "name": "Angelo Joyner",
+   "chamber": "house",
+   "district": "78",
+   "campaign": 79628,
+   "contributions": 645.77
+  },
+  {
+   "name": "Hunter N Hackett",
+   "chamber": "house",
+   "district": "96",
+   "campaign": 79935,
+   "contributions": 8100.0
+  },
+  {
+   "name": "Emery K Chaplin",
+   "chamber": "house",
+   "district": "69",
+   "campaign": 79937,
+   "contributions": 1505.4
+  },
+  {
+   "name": "Josiah Magnuson",
+   "chamber": "house",
+   "district": "38",
+   "campaign": 79946,
+   "contributions": 920.0
+  },
+  {
+   "name": "christopher s wooten",
+   "chamber": "house",
+   "district": "69",
+   "campaign": 77340,
+   "contributions": 7569.26
+  },
+  {
+   "name": "Thomas L Paradise",
+   "chamber": "house",
+   "district": "86",
+   "campaign": 79956,
+   "contributions": 5598.26
+  },
+  {
+   "name": "Dexter L Reaves",
+   "chamber": "house",
+   "district": "21",
+   "campaign": 79618,
+   "contributions": 425.0
+  },
+  {
+   "name": "James  A Jones",
+   "chamber": "house",
+   "district": "31",
+   "campaign": 79656,
+   "contributions": 104.0
+  },
+  {
+   "name": "James A Robertson",
+   "chamber": "house",
+   "district": "73",
+   "campaign": 79939,
+   "contributions": 208.0
+  },
+  {
+   "name": "Kory Haskins",
+   "chamber": "house",
+   "district": "63",
+   "campaign": 79967,
+   "contributions": 500.0
+  },
+  {
+   "name": "Jacob S Goddard",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 79536,
+   "contributions": 0.0
+  },
+  {
+   "name": "Shannon  N DeLoach",
+   "chamber": "house",
+   "district": "121",
+   "campaign": 79854,
+   "contributions": 4775.0
+  },
+  {
+   "name": "Malcolm Green",
+   "chamber": "house",
+   "district": "86",
+   "campaign": 79409,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sherry Hodges",
+   "chamber": "house",
+   "district": "8",
+   "campaign": 78972,
+   "contributions": 48550.95
+  },
+  {
+   "name": "Jason S Luck",
+   "chamber": "house",
+   "district": "54",
+   "campaign": 80168,
+   "contributions": 3476.35
+  },
+  {
+   "name": "Zac Fry",
+   "chamber": "house",
+   "district": "66",
+   "campaign": 79052,
+   "contributions": 0.0
+  },
+  {
+   "name": "Robert T Reese",
+   "chamber": "house",
+   "district": "70",
+   "campaign": 77234,
+   "contributions": 430.0
+  },
+  {
+   "name": "Bryan R Sharper",
+   "chamber": "house",
+   "district": "94",
+   "campaign": 78897,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sonia Pollard",
+   "chamber": "house",
+   "district": "78",
+   "campaign": 80251,
+   "contributions": 1747.2
+  },
+  {
+   "name": "Caroline B Avinger",
+   "chamber": "house",
+   "district": "24",
+   "campaign": 80313,
+   "contributions": 17804.45
+  },
+  {
+   "name": "Christine M Giguere",
+   "chamber": "house",
+   "district": "107",
+   "campaign": 80314,
+   "contributions": 0.0
+  },
+  {
+   "name": "Sally Hebert",
+   "chamber": "house",
+   "district": "94",
+   "campaign": 80317,
+   "contributions": 7289.91
+  },
+  {
+   "name": "Wendell K Jones",
+   "chamber": "house",
+   "district": "25",
+   "campaign": 80320,
+   "contributions": 285.0
+  },
+  {
+   "name": "Donald G Chapman",
+   "chamber": "house",
+   "district": "8",
+   "campaign": 80321,
+   "contributions": 9627.07
+  },
+  {
+   "name": "Hamilton R Grant",
+   "chamber": "house",
+   "district": "79",
+   "campaign": 80322,
+   "contributions": 5699.26
+  },
+  {
+   "name": "David Weeks",
+   "chamber": "house",
+   "district": "51",
+   "campaign": 80324,
+   "contributions": 999.26
+  },
+  {
+   "name": "John R King",
+   "chamber": "house",
+   "district": "49",
+   "campaign": 80325,
+   "contributions": 5898.27
+  },
+  {
+   "name": "Justin Bennett",
+   "chamber": "house",
+   "district": "47",
+   "campaign": 80326,
+   "contributions": 0.0
+  },
+  {
+   "name": "Korey Williams",
+   "chamber": "house",
+   "district": "122",
+   "campaign": 80331,
+   "contributions": 18568.04
+  },
+  {
+   "name": "Richard L Shealy",
+   "chamber": "house",
+   "district": "14",
+   "campaign": 80338,
+   "contributions": 550.0
+  },
+  {
+   "name": "Michele J Demery",
+   "chamber": "house",
+   "district": "64",
+   "campaign": 80339,
+   "contributions": 14297.04
+  },
+  {
+   "name": "Johnnie Garmon",
+   "chamber": "house",
+   "district": "115",
+   "campaign": 80342,
+   "contributions": 9140.0
+  },
+  {
+   "name": "Christopher R Hart",
+   "chamber": "house",
+   "district": "73",
+   "campaign": 80344,
+   "contributions": 3009.25
+  },
+  {
+   "name": "Malcolm Taylor",
+   "chamber": "house",
+   "district": "52",
+   "campaign": 80352,
+   "contributions": 1545.0
+  },
+  {
+   "name": "Robert Harris",
+   "chamber": "house",
+   "district": "36",
+   "campaign": 80366,
+   "contributions": 460.0
+  },
+  {
+   "name": "Clay N Middleton",
+   "chamber": "house",
+   "district": "116",
+   "campaign": 80429,
+   "contributions": 71843.96
+  },
+  {
+   "name": "Melissa Couture",
+   "chamber": "house",
+   "district": "15",
+   "campaign": 79138,
+   "contributions": 0.0
+  },
+  {
+   "name": "Joshua Parks",
+   "chamber": "house",
+   "district": "75",
+   "campaign": 79578,
+   "contributions": 0.0
+  },
+  {
+   "name": "Ann C Shippy",
+   "chamber": "house",
+   "district": "123",
+   "campaign": 80329,
+   "contributions": 20001.33
+  },
+  {
+   "name": "David Herndon",
+   "chamber": "house",
+   "district": "61",
+   "campaign": 80483,
+   "contributions": 0.0
+  },
+  {
+   "name": "Peter J Swales",
+   "chamber": "house",
+   "district": "81",
+   "campaign": 80494,
+   "contributions": 0.0
+  },
+  {
+   "name": "John R III McCravy",
+   "chamber": "house",
+   "district": "13",
+   "campaign": 77210,
+   "contributions": 16695.7
+  },
+  {
+   "name": "Polly Elbertse",
+   "chamber": "house",
+   "district": "20",
+   "campaign": 79965,
+   "contributions": 0.0
+  },
+  {
+   "name": "Tanisha Baskin",
+   "chamber": "house",
+   "district": "65",
+   "campaign": 79242,
+   "contributions": 1507.5
+  },
+  {
+   "name": "Jasmine R Williams",
+   "chamber": "house",
+   "district": "1",
+   "campaign": 80523,
+   "contributions": 6026.69
+  },
+  {
+   "name": "Adrian P Carter",
+   "chamber": "house",
+   "district": "60",
+   "campaign": 80295,
+   "contributions": 3355.52
+  },
+  {
+   "name": "Sha-Ron E Jones",
+   "chamber": "house",
+   "district": "58",
+   "campaign": 79170,
+   "contributions": 0.0
+  },
+  {
+   "name": "Samuel E Price",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 80346,
+   "contributions": 2193.3
+  },
+  {
+   "name": "Jarrod k Brooks",
+   "chamber": "house",
+   "district": "99",
+   "campaign": 80584,
+   "contributions": 6600.0
+  },
+  {
+   "name": "Tatiana Skipper",
+   "chamber": "house",
+   "district": "35",
+   "campaign": 80604,
+   "contributions": 208.0
+  },
+  {
+   "name": "ET Stone Williams",
+   "chamber": "house",
+   "district": "11",
+   "campaign": 80605,
+   "contributions": 0.0
+  },
+  {
+   "name": "Henry Jones",
+   "chamber": "house",
+   "district": "14",
+   "campaign": 80608,
+   "contributions": 104.89
+  },
+  {
+   "name": "Alexander L Clark",
+   "chamber": "house",
+   "district": "43",
+   "campaign": 79958,
+   "contributions": 0.0
+  },
+  {
+   "name": "Demetrius Carson",
+   "chamber": "house",
+   "district": "8",
+   "campaign": 80104,
+   "contributions": 3170.0
+  },
+  {
+   "name": "Montez Aiken",
+   "chamber": "house",
+   "district": "102",
+   "campaign": 79902,
+   "contributions": 7363.35
+  },
+  {
+   "name": "Kiral M Mace",
+   "chamber": "house",
+   "district": "26",
+   "campaign": 79405,
+   "contributions": 0.0
+  },
+  {
+   "name": "David F Jones",
+   "chamber": "house",
+   "district": "5",
+   "campaign": 80640,
+   "contributions": 43.48
+  },
+  {
+   "name": "Matt Leber",
+   "chamber": "senate",
+   "district": "41",
+   "campaign": 77312,
+   "contributions": 40563.58
+  },
+  {
+   "name": "Jason H Guerry",
+   "chamber": "senate",
+   "district": "26",
+   "campaign": 79140,
+   "contributions": 0.0
+  },
+  {
+   "name": "James R Burns",
+   "chamber": "senate",
+   "district": "15",
+   "campaign": 78100,
+   "contributions": 193007.26
+  },
+  {
+   "name": "Charles C Jr Williams",
+   "chamber": "senate",
+   "district": "15",
+   "campaign": 79582,
+   "contributions": 27285.49
+  },
+  {
+   "name": "Charles C Jr Williams",
+   "chamber": "senate",
+   "district": "15",
+   "campaign": 80219,
+   "contributions": 74539.58
+  },
+  {
+   "name": "Monika L White",
+   "chamber": "senate",
+   "district": "15",
+   "campaign": 79975,
+   "contributions": 2329.99
+  }
+ ]
+}

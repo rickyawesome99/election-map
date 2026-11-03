@@ -15,6 +15,17 @@ DST = os.path.join(os.path.dirname(__file__), "../data/countyGovernorData.ts")
 SRC_FILES = sorted(glob.glob(SRC_GLOB))
 YEARS = sorted(int(re.search(r"_(\d{4})\.csv$", f).group(1)) for f in SRC_FILES)
 
+# Some states' sources print county names in capitals (Kansas, Illinois): take the proper
+# spelling (McPherson, DeKalb, St. Clair) from the presidential data by FIPS.
+PRES = os.path.join(os.path.dirname(__file__), "../data/countyPresidentialData.ts")
+with open(PRES) as f:
+    PROPER_NAME = dict(re.findall(r'"(\d{5})": \{ state: "\w\w", countyName: "([^"]+)"', f.read()))
+
+def county_name(fips, raw):
+    if raw.upper() != raw:
+        return raw
+    return PROPER_NAME.get(fips) or raw.title()
+
 def share_pct(a, total):
     return round(a / total * 100, 2) if total else 0.0
 
@@ -24,7 +35,7 @@ for path in SRC_FILES:
     with open(path, newline="") as f:
         for r in csv.DictReader(f):
             fips = r["county_id"]
-            entry = counties.setdefault(fips, {"state": r["state"], "countyName": r["county_name"], "years": {}})
+            entry = counties.setdefault(fips, {"state": r["state"], "countyName": county_name(fips, r["county_name"]), "years": {}})
             dem, gop, oth, total = int(r[f"dem_{year}"]), int(r[f"gop_{year}"]), int(r[f"oth_{year}"]), int(r[f"total_{year}"])
             dem_pct, rep_pct = share_pct(dem, total), share_pct(gop, total)
             entry["years"][year] = {

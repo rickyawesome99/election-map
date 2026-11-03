@@ -2,15 +2,15 @@
  "state": "SD",
  "cycle": 2026,
  "source": "South Dakota Secretary of State (electronic disclosure statements; non-commercial use only)",
- "fetched": "2026-10-17",
- "dataThrough": "10/17/2026",
+ "fetched": "2026-11-02",
+ "dataThrough": "11/02/2026",
  "candidates": [
   {
    "name": "Al Novstrup",
    "chamber": "house",
    "district": null,
    "committee": 24,
-   "contributions": 16865.15
+   "contributions": 17965.15
   },
   {
    "name": "Herman Otten",
@@ -24,7 +24,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 88,
-   "contributions": 13200.0
+   "contributions": 26675.0
   },
   {
    "name": "Ernie Otten",
@@ -80,7 +80,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 330,
-   "contributions": 5600.0
+   "contributions": 10140.13
   },
   {
    "name": "Arch Beal",
@@ -101,14 +101,14 @@
    "chamber": "house",
    "district": null,
    "committee": 370,
-   "contributions": 1600.0
+   "contributions": 9000.0
   },
   {
    "name": "Shawn Bordeaux",
    "chamber": "senate",
    "district": null,
    "committee": 371,
-   "contributions": 3400.0
+   "contributions": 6981.0
   },
   {
    "name": "R. Blake Curd",
@@ -122,7 +122,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 397,
-   "contributions": 11030.0
+   "contributions": 12180.0
   },
   {
    "name": "Kevin Jensen",
@@ -213,14 +213,14 @@
    "chamber": "senate",
    "district": null,
    "committee": 614,
-   "contributions": 22800.0
+   "contributions": 34050.0
   },
   {
    "name": "Russell Graeff",
    "chamber": "senate",
    "district": null,
    "committee": 625,
-   "contributions": 0.0
+   "contributions": 325.0
   },
   {
    "name": "Chad Skiles",
@@ -234,14 +234,14 @@
    "chamber": "senate",
    "district": null,
    "committee": 644,
-   "contributions": 4042.79
+   "contributions": 4572.79
   },
   {
    "name": "Tim Reed",
    "chamber": "senate",
    "district": "7",
    "committee": 646,
-   "contributions": 3800.0
+   "contributions": 11450.0
   },
   {
    "name": "Tina Mulally",
@@ -262,7 +262,7 @@
    "chamber": "senate",
    "district": "13",
    "committee": 701,
-   "contributions": 29385.0
+   "contributions": 62835.0
   },
   {
    "name": "Erin Healy",
@@ -304,7 +304,7 @@
    "chamber": "house",
    "district": null,
    "committee": 791,
-   "contributions": 2000.0
+   "contributions": 13150.0
   },
   {
    "name": "Spencer Wrightsman",
@@ -344,9 +344,9 @@
   {
    "name": "Rebecca Reimer",
    "chamber": "senate",
-   "district": null,
+   "district": "7",
    "committee": 834,
-   "contributions": 36615.06
+   "contributions": 56503.24
   },
   {
    "name": "Kaleb Weis",
@@ -367,7 +367,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 860,
-   "contributions": 1500.0
+   "contributions": 6100.0
   },
   {
    "name": "Rocky Blare",
@@ -395,6 +395,13 @@
    "chamber": "house",
    "district": null,
    "committee": 881,
+   "contributions": 0.0
+  },
+  {
+   "name": "Kirk Chaffee",
+   "chamber": "senate",
+   "district": null,
+   "committee": 964,
    "contributions": 0.0
   },
   {
@@ -444,28 +451,28 @@
    "chamber": "senate",
    "district": null,
    "committee": 1027,
-   "contributions": 44596.15
+   "contributions": 64671.15
   },
   {
    "name": "Mary Fitzgerald",
    "chamber": "house",
    "district": "31",
    "committee": 1031,
-   "contributions": 1500.0
+   "contributions": 9350.0
   },
   {
    "name": "Becky Drury",
    "chamber": "house",
    "district": "34",
    "committee": 1038,
-   "contributions": 31585.0
+   "contributions": 44797.4
   },
   {
    "name": "Mike Derby",
    "chamber": "house",
    "district": "34",
    "committee": 1044,
-   "contributions": 42110.94
+   "contributions": 86052.09
   },
   {
    "name": "James Wangsness",
@@ -486,7 +493,7 @@
    "chamber": "house",
    "district": "16",
    "committee": 1056,
-   "contributions": 64706.79
+   "contributions": 134619.81
   },
   {
    "name": "Marty Overweg",
@@ -505,9 +512,9 @@
   {
    "name": "Sydney Davis",
    "chamber": "senate",
-   "district": null,
+   "district": "12",
    "committee": 1069,
-   "contributions": 57981.48
+   "contributions": 65206.48
   },
   {
    "name": "Erin Royer",
@@ -528,13 +535,20 @@
    "chamber": "senate",
    "district": null,
    "committee": 1076,
-   "contributions": 35134.99
+   "contributions": 41590.99
   },
   {
    "name": "Janet Jensen",
    "chamber": "senate",
    "district": null,
    "committee": 1078,
+   "contributions": 0.0
+  },
+  {
+   "name": "Dean Wink",
+   "chamber": "house",
+   "district": null,
+   "committee": 1079,
    "contributions": 0.0
   },
   {
@@ -547,23 +561,23 @@
   {
    "name": "Casey Crabtree",
    "chamber": "senate",
-   "district": null,
+   "district": "12",
    "committee": 1090,
-   "contributions": 12050.0
+   "contributions": 45550.0
   },
   {
    "name": "Trish Ladner",
    "chamber": "house",
    "district": null,
    "committee": 1102,
-   "contributions": 10865.15
+   "contributions": 20665.15
   },
   {
    "name": "Dan Kerner Andersson",
    "chamber": "senate",
    "district": null,
    "committee": 1110,
-   "contributions": 0.0
+   "contributions": 500.0
   },
   {
    "name": "Jordan Foos",
@@ -577,21 +591,21 @@
    "chamber": "senate",
    "district": null,
    "committee": 1158,
-   "contributions": 7964.65
+   "contributions": 36260.65
   },
   {
    "name": "Brian Mulder",
    "chamber": "house",
    "district": "11",
    "committee": 1199,
-   "contributions": 24880.0
+   "contributions": 38230.0
   },
   {
    "name": "Tyler Tordsen",
    "chamber": "house",
    "district": "1",
    "committee": 1200,
-   "contributions": 43037.0
+   "contributions": 66876.0
   },
   {
    "name": "Jesse Fonkert",
@@ -605,7 +619,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1215,
-   "contributions": 6526.89
+   "contributions": 23084.04
   },
   {
    "name": "Rachel Dix",
@@ -619,14 +633,14 @@
    "chamber": "senate",
    "district": "24",
    "committee": 1220,
-   "contributions": 34886.19
+   "contributions": 42979.72
   },
   {
    "name": "David Kull",
    "chamber": "senate",
    "district": "7",
    "committee": 1223,
-   "contributions": 26200.0
+   "contributions": 27550.0
   },
   {
    "name": "Matthew Doyle",
@@ -654,14 +668,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1228,
-   "contributions": 27353.71
+   "contributions": 39461.91
   },
   {
    "name": "Amber Arlint",
    "chamber": "house",
    "district": null,
    "committee": 1230,
-   "contributions": 58300.0
+   "contributions": 79875.0
   },
   {
    "name": "Ben Krohmer",
@@ -675,21 +689,21 @@
    "chamber": "house",
    "district": "19",
    "committee": 1240,
-   "contributions": 33549.0
+   "contributions": 56949.0
   },
   {
    "name": "Mellissa Heermann",
    "chamber": "house",
    "district": "7",
    "committee": 1243,
-   "contributions": 16215.15
+   "contributions": 30545.45
   },
   {
    "name": "Randy Deibert",
    "chamber": "senate",
    "district": null,
    "committee": 1244,
-   "contributions": 20321.0
+   "contributions": 24600.06
   },
   {
    "name": "Steve Kolbeck",
@@ -717,7 +731,7 @@
    "chamber": "house",
    "district": "29",
    "committee": 1254,
-   "contributions": 13197.6
+   "contributions": 13697.6
   },
   {
    "name": "Mary Weinheimer",
@@ -752,14 +766,14 @@
    "chamber": "house",
    "district": "15",
    "committee": 1277,
-   "contributions": 100.0
+   "contributions": 6550.0
   },
   {
    "name": "Steve Duffy",
    "chamber": "house",
    "district": null,
    "committee": 1278,
-   "contributions": 26022.89
+   "contributions": 40922.89
   },
   {
    "name": "Jeff Bathke",
@@ -836,7 +850,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1324,
-   "contributions": 1974.0
+   "contributions": 16338.0
   },
   {
    "name": "Jim Sheehan",
@@ -864,35 +878,35 @@
    "chamber": "senate",
    "district": null,
    "committee": 1407,
-   "contributions": 9394.65
+   "contributions": 19627.31
   },
   {
    "name": "Fred Deutsch",
    "chamber": "house",
    "district": null,
    "committee": 1411,
-   "contributions": 23116.97
+   "contributions": 29534.01
   },
   {
    "name": "Matt Roby",
    "chamber": "house",
    "district": null,
    "committee": 1416,
-   "contributions": 22600.0
+   "contributions": 60090.0
   },
   {
    "name": "Katherine Washnok",
    "chamber": "senate",
    "district": null,
    "committee": 1420,
-   "contributions": 65818.0
+   "contributions": 70167.0
   },
   {
    "name": "Anthony Kathol",
    "chamber": "senate",
    "district": "27",
    "committee": 1428,
-   "contributions": 2051.83
+   "contributions": 10874.26
   },
   {
    "name": "Brad Jankord",
@@ -920,7 +934,7 @@
    "chamber": "senate",
    "district": "35",
    "committee": 1439,
-   "contributions": 8547.0
+   "contributions": 8594.25
   },
   {
    "name": "Matt Wagner",
@@ -941,28 +955,28 @@
    "chamber": "senate",
    "district": "15",
    "committee": 1444,
-   "contributions": 20598.65
+   "contributions": 48238.65
   },
   {
    "name": "Sonja Mentzer",
    "chamber": "house",
-   "district": null,
+   "district": "15",
    "committee": 1445,
-   "contributions": 2341.82
+   "contributions": 10290.45
   },
   {
    "name": "Amber Hulse",
    "chamber": "senate",
    "district": null,
    "committee": 1446,
-   "contributions": 47981.07
+   "contributions": 54091.67
   },
   {
    "name": "Logan Manhart",
    "chamber": "house",
    "district": null,
    "committee": 1449,
-   "contributions": 22975.0
+   "contributions": 23425.0
   },
   {
    "name": "Kent Roe",
@@ -983,7 +997,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1453,
-   "contributions": 10950.0
+   "contributions": 12850.0
   },
   {
    "name": "Garret Campbell",
@@ -1032,14 +1046,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1470,
-   "contributions": 3100.0
+   "contributions": 5200.0
   },
   {
    "name": "Mykala Voita",
    "chamber": "senate",
    "district": null,
    "committee": 1474,
-   "contributions": 17300.0
+   "contributions": 19675.0
   },
   {
    "name": "Forrest Foster",
@@ -1053,7 +1067,14 @@
    "chamber": "senate",
    "district": "26",
    "committee": 1477,
-   "contributions": 11850.0
+   "contributions": 14700.0
+  },
+  {
+   "name": "Jason Green",
+   "chamber": "senate",
+   "district": "34",
+   "committee": 1478,
+   "contributions": 5301.27
   },
   {
    "name": "John Marquardt",
@@ -1067,21 +1088,21 @@
    "chamber": "senate",
    "district": "35",
    "committee": 1481,
-   "contributions": 1150.0
+   "contributions": 1450.0
   },
   {
    "name": "John Hughes",
    "chamber": "house",
    "district": "13",
    "committee": 1484,
-   "contributions": 23106.79
+   "contributions": 57565.79
   },
   {
    "name": "Ali Horsted",
    "chamber": "house",
    "district": null,
    "committee": 1486,
-   "contributions": 5438.65
+   "contributions": 22027.63
   },
   {
    "name": "Tony Kayser",
@@ -1123,7 +1144,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 1496,
-   "contributions": 15437.97
+   "contributions": 16255.12
   },
   {
    "name": "John Kunnari",
@@ -1137,14 +1158,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1499,
-   "contributions": 6823.25
+   "contributions": 7773.25
   },
   {
    "name": "Erin Rudner",
    "chamber": "house",
    "district": null,
    "committee": 1501,
-   "contributions": 8137.27
+   "contributions": 37497.27
   },
   {
    "name": "John James",
@@ -1165,35 +1186,35 @@
    "chamber": "house",
    "district": "9",
    "committee": 1511,
-   "contributions": 11029.93
+   "contributions": 17510.93
   },
   {
    "name": "Keri Weems",
    "chamber": "house",
    "district": null,
    "committee": 1512,
-   "contributions": 20068.95
+   "contributions": 29518.95
   },
   {
    "name": "Curt Voight",
    "chamber": "senate",
    "district": "33",
    "committee": 1514,
-   "contributions": 9950.0
+   "contributions": 11650.0
   },
   {
    "name": "Nicole Uhre-Balk",
    "chamber": "house",
    "district": null,
    "committee": 1516,
-   "contributions": 14111.0
+   "contributions": 33911.0
   },
   {
    "name": "Spencer Gosch",
    "chamber": "house",
    "district": null,
    "committee": 1520,
-   "contributions": 950.0
+   "contributions": 4505.0
   },
   {
    "name": "Bobbi Andera",
@@ -1221,7 +1242,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 1557,
-   "contributions": 8117.91
+   "contributions": 9202.91
   },
   {
    "name": "Josh Dennert",
@@ -1235,7 +1256,7 @@
    "chamber": "house",
    "district": "07",
    "committee": 1583,
-   "contributions": 225.0
+   "contributions": 2480.0
   },
   {
    "name": "Kehala Two Bulls",
@@ -1253,17 +1274,17 @@
   },
   {
    "name": "Bart Sample",
-   "chamber": "house",
+   "chamber": "senate",
    "district": null,
    "committee": 1636,
-   "contributions": 9184.0
+   "contributions": 18734.0
   },
   {
    "name": "Dale Bartscher",
    "chamber": "house",
    "district": null,
    "committee": 1638,
-   "contributions": 27035.0
+   "contributions": 37288.13
   },
   {
    "name": "Claire Ketcham",
@@ -1282,51 +1303,51 @@
   {
    "name": "Erinn Williams",
    "chamber": "house",
-   "district": null,
+   "district": "15",
    "committee": 1648,
-   "contributions": 41957.7
+   "contributions": 61562.4
   },
   {
    "name": "Austin Wolf",
    "chamber": "house",
    "district": "6",
    "committee": 1650,
-   "contributions": 1106.15
+   "contributions": 3956.72
   },
   {
    "name": "Carrie Sanderson",
    "chamber": "house",
    "district": null,
    "committee": 1652,
-   "contributions": 28359.45
+   "contributions": 36544.25
   },
   {
    "name": "Adam Bair",
    "chamber": "house",
    "district": null,
    "committee": 1654,
-   "contributions": 3317.65
+   "contributions": 13652.65
   },
   {
    "name": "Brandon Wipf",
    "chamber": "senate",
    "district": null,
    "committee": 1657,
-   "contributions": 22370.12
+   "contributions": 25570.12
   },
   {
    "name": "Nicholas Fosness",
    "chamber": "house",
    "district": null,
    "committee": 1659,
-   "contributions": 24900.0
+   "contributions": 37990.38
   },
   {
    "name": "Kimberly Petterson",
    "chamber": "house",
    "district": null,
    "committee": 1660,
-   "contributions": 6825.13
+   "contributions": 10725.13
   },
   {
    "name": "Gary Hudiburgh",
@@ -1340,7 +1361,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1664,
-   "contributions": 638.14
+   "contributions": 758.14
   },
   {
    "name": "Jeffrey Marlette",
@@ -1354,7 +1375,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1666,
-   "contributions": 2500.0
+   "contributions": 6700.0
   },
   {
    "name": "Kathleen Brudvig",
@@ -1382,14 +1403,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1672,
-   "contributions": 26620.0
+   "contributions": 33170.0
   },
   {
    "name": "Spencer Sommers",
    "chamber": "house",
    "district": null,
    "committee": 1678,
-   "contributions": 52999.08
+   "contributions": 58917.53
   },
   {
    "name": "Brian Murphy",
@@ -1403,63 +1424,70 @@
    "chamber": "house",
    "district": "16",
    "committee": 1684,
-   "contributions": 24150.0
+   "contributions": 25650.0
   },
   {
    "name": "Danny Brown",
    "chamber": "house",
    "district": null,
    "committee": 1686,
-   "contributions": 17339.9
+   "contributions": 18289.9
+  },
+  {
+   "name": "Jace West",
+   "chamber": "house",
+   "district": null,
+   "committee": 1687,
+   "contributions": 400.0
   },
   {
    "name": "Jeff Shelton",
    "chamber": "senate",
    "district": null,
    "committee": 1688,
-   "contributions": 3277.93
+   "contributions": 14270.93
   },
   {
    "name": "Austin Brunick",
    "chamber": "house",
    "district": "17",
    "committee": 1691,
-   "contributions": 1344.14
+   "contributions": 3519.14
   },
   {
    "name": "June CopperStad",
    "chamber": "house",
    "district": null,
    "committee": 1693,
-   "contributions": 1140.0
+   "contributions": 10586.0
   },
   {
    "name": "Zachary Martin",
    "chamber": "house",
    "district": null,
    "committee": 1694,
-   "contributions": 150.0
+   "contributions": 6427.24
   },
   {
    "name": "Amanda Potter",
    "chamber": "house",
    "district": null,
    "committee": 1696,
-   "contributions": 7298.21
+   "contributions": 21793.02
   },
   {
    "name": "Leslie Gerrish",
    "chamber": "house",
    "district": null,
    "committee": 1697,
-   "contributions": 11216.73
+   "contributions": 28571.99
   },
   {
    "name": "Ryan Kohl",
    "chamber": "house",
    "district": "4",
    "committee": 1698,
-   "contributions": 12210.0
+   "contributions": 20935.0
   },
   {
    "name": "William Meirose",
@@ -1515,7 +1543,7 @@
    "chamber": "house",
    "district": "8",
    "committee": 1711,
-   "contributions": 28740.15
+   "contributions": 33390.15
   },
   {
    "name": "Dan Kippley",
@@ -1529,14 +1557,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1713,
-   "contributions": 45454.23
+   "contributions": 55554.38
   },
   {
    "name": "Gary Deering",
    "chamber": "house",
    "district": null,
    "committee": 1714,
-   "contributions": 28517.15
+   "contributions": 34196.25
   },
   {
    "name": "WIll Mahnke",
@@ -1550,7 +1578,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1718,
-   "contributions": 52110.03
+   "contributions": 55910.03
   },
   {
    "name": "John Harter",
@@ -1585,14 +1613,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1728,
-   "contributions": 2910.93
+   "contributions": 14957.39
   },
   {
    "name": "Lisa Bogue",
    "chamber": "house",
    "district": null,
    "committee": 1729,
-   "contributions": 19534.25
+   "contributions": 30279.25
   },
   {
    "name": "Samuel Krueger",
@@ -1613,14 +1641,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1737,
-   "contributions": 5357.18
+   "contributions": 6833.78
   },
   {
    "name": "Christopher Baumgartner",
    "chamber": "senate",
    "district": null,
    "committee": 1739,
-   "contributions": 1842.22
+   "contributions": 8487.22
   },
   {
    "name": "Robin Schiro",
@@ -1634,7 +1662,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 1742,
-   "contributions": 13093.58
+   "contributions": 14860.61
   },
   {
    "name": "Dennis Willert",
@@ -1662,7 +1690,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1746,
-   "contributions": 515.14
+   "contributions": 5875.14
   },
   {
    "name": "Nick Kotzea",
@@ -1676,14 +1704,14 @@
    "chamber": "house",
    "district": "35",
    "committee": 1748,
-   "contributions": 11556.0
+   "contributions": 18256.0
   },
   {
    "name": "Dick Werner",
    "chamber": "house",
    "district": "23",
    "committee": 1750,
-   "contributions": 4550.0
+   "contributions": 13275.0
   },
   {
    "name": "Nicole Mitzel",
@@ -1704,7 +1732,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1753,
-   "contributions": 3845.0
+   "contributions": 4170.0
   },
   {
    "name": "James Sapp",
@@ -1718,7 +1746,7 @@
    "chamber": "house",
    "district": "6",
    "committee": 1758,
-   "contributions": 12349.0
+   "contributions": 22180.0
   },
   {
    "name": "Karen Springer",
@@ -1732,7 +1760,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1760,
-   "contributions": 450.0
+   "contributions": 8599.98
   },
   {
    "name": "Wyatt DeJong",
@@ -1753,7 +1781,7 @@
    "chamber": "senate",
    "district": null,
    "committee": 1763,
-   "contributions": 1257.14
+   "contributions": 11872.3
   },
   {
    "name": "Brandon Lane",
@@ -1774,21 +1802,21 @@
    "chamber": "house",
    "district": null,
    "committee": 1766,
-   "contributions": 9954.24
+   "contributions": 12531.3
   },
   {
    "name": "Joe Flood",
    "chamber": "house",
    "district": null,
    "committee": 1767,
-   "contributions": 197.98
+   "contributions": 81226.98
   },
   {
    "name": "Megan Tschetter",
    "chamber": "house",
    "district": "9",
    "committee": 1769,
-   "contributions": 3567.15
+   "contributions": 6575.04
   },
   {
    "name": "Troy Redler",
@@ -1802,7 +1830,7 @@
    "chamber": "house",
    "district": null,
    "committee": 1771,
-   "contributions": 439.96
+   "contributions": 17423.67
   },
   {
    "name": "Timothy Begalka",
@@ -1816,14 +1844,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1775,
-   "contributions": 7350.0
+   "contributions": 13100.0
   },
   {
    "name": "Emelia Enquist",
    "chamber": "house",
    "district": null,
    "committee": 1776,
-   "contributions": 2887.15
+   "contributions": 17001.69
   },
   {
    "name": "Nick Buchholz",
@@ -1837,35 +1865,35 @@
    "chamber": "senate",
    "district": null,
    "committee": 1781,
-   "contributions": 15030.0
+   "contributions": 18130.0
   },
   {
    "name": "Stephanie Arne",
    "chamber": "house",
    "district": null,
    "committee": 1782,
-   "contributions": 3428.0
+   "contributions": 23841.34
   },
   {
    "name": "Elizabeth Lone Eagle",
    "chamber": "house",
    "district": "27",
    "committee": 1783,
-   "contributions": 0.0
+   "contributions": 600.0
   },
   {
    "name": "Lewis GrassRope",
    "chamber": "house",
    "district": null,
    "committee": 1784,
-   "contributions": 512.14
+   "contributions": 4757.14
   },
   {
    "name": "R. Shawn Tornow",
    "chamber": "senate",
    "district": null,
    "committee": 1786,
-   "contributions": 5245.0
+   "contributions": 8898.0
   },
   {
    "name": "Joseph Zweifel",
@@ -1879,21 +1907,21 @@
    "chamber": "house",
    "district": null,
    "committee": 1789,
-   "contributions": 1459.14
+   "contributions": 3954.14
   },
   {
    "name": "Blake Rife",
    "chamber": "house",
    "district": "2",
    "committee": 1790,
-   "contributions": 0.0
+   "contributions": 2500.0
   },
   {
    "name": "Heidi Hora",
    "chamber": "house",
    "district": "19",
    "committee": 1791,
-   "contributions": 1600.0
+   "contributions": 3656.24
   },
   {
    "name": "Anthony Sitter",
@@ -1907,14 +1935,14 @@
    "chamber": "house",
    "district": null,
    "committee": 1797,
-   "contributions": 0.0
+   "contributions": 1283.0
   },
   {
    "name": "Clint Hoyer",
-   "chamber": "house",
+   "chamber": "senate",
    "district": null,
    "committee": 1799,
-   "contributions": 0.0
+   "contributions": 23405.0
   },
   {
    "name": "Jay Yohner",
@@ -1928,14 +1956,49 @@
    "chamber": "house",
    "district": null,
    "committee": 1801,
-   "contributions": 0.0
+   "contributions": 3370.58
   },
   {
    "name": "Celestine Stadnick",
    "chamber": "senate",
    "district": null,
    "committee": 1802,
+   "contributions": 10954.4
+  },
+  {
+   "name": "Kay Swihart",
+   "chamber": "senate",
+   "district": null,
+   "committee": 1808,
+   "contributions": 3240.0
+  },
+  {
+   "name": "Courtney Enfield",
+   "chamber": "house",
+   "district": "1",
+   "committee": 1809,
+   "contributions": 10737.0
+  },
+  {
+   "name": "Evangeline Poor Bear",
+   "chamber": "house",
+   "district": null,
+   "committee": 1812,
    "contributions": 0.0
+  },
+  {
+   "name": "Samuel Hare",
+   "chamber": "house",
+   "district": null,
+   "committee": 1823,
+   "contributions": 5650.0
+  },
+  {
+   "name": "Chastity Jewett",
+   "chamber": "house",
+   "district": null,
+   "committee": 1828,
+   "contributions": 4355.0
   }
  ]
 }

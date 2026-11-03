@@ -12,6 +12,18 @@ import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/sta
 import { fmtMoney, resultMargin } from "@/lib/stateLegAtlas";
 import { getRatingColors, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { PILL } from "@/components/RaceHeroPills";
+import { useRevealOnce } from "@/lib/useRevealOnce";
+
+// The race pages' stagger: 55 ms a row, capped so a long list doesn't trail.
+const enter = (i: number) => Math.min(i, 8) * 55;
+
+/** A section that rises in once it scrolls into view; rows inside hold their own entrance until then. */
+function Reveal({ children, as = "section" }: { children: React.ReactNode; as?: "section" | "div" }) {
+  const { ref, vh } = useRevealOnce<HTMLElement>(0.02);
+  return as === "section"
+    ? <section ref={ref} data-vh={vh} className="vh-in">{children}</section>
+    : <div ref={ref as React.RefObject<HTMLDivElement | null>} data-vh={vh} className="vh-in">{children}</div>;
+}
 
 /** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
 const marginText = (m: number) => projectedMarginColor(m);
@@ -207,10 +219,10 @@ export default function AtlasDistrictDetail({
       {/* Header — mirrors the House race pages' hero: title left, projected margin right, stat row */}
       <div>
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-          <div className="min-w-0">
+          <div className="vh-in min-w-0">
             <div className="flex items-center gap-2 flex-wrap">
               {onBack && chamberLabel && (
-                <button type="button" onClick={onBack} aria-label={`All ${chamberLabel} districts`} className={`${PILL} hover:underline`} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+                <button type="button" onClick={onBack} aria-label={`All ${chamberLabel} districts`} className={`${PILL} ix-lift hover:underline`} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
                   {abbr} {chamberLabel}
                 </button>
               )}
@@ -228,7 +240,7 @@ export default function AtlasDistrictDetail({
             </div>
           </div>
           {headline && (
-            <div className="shrink-0 sm:text-right">
+            <div className="vh-in shrink-0 sm:text-right" style={{ animationDelay: "110ms" }}>
               <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{headline.label}</div>
               <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5vw, 3.25rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: headline.color }}>
                 {headline.value}
@@ -240,7 +252,7 @@ export default function AtlasDistrictDetail({
         {/* Stat row */}
         <div className="mt-7 grid grid-cols-3 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
           {stats.map((st, i) => (
-            <div key={st.label} className={`min-w-0 ${i === 0 ? "pr-2 sm:pr-8" : i === 1 ? "px-2 sm:px-8" : "pl-2 sm:pl-8"}`} style={{ borderRight: i < 2 ? "1px solid var(--app-border)" : undefined }}>
+            <div key={st.label} className={`vh-in min-w-0 ${i === 0 ? "pr-2 sm:pr-8" : i === 1 ? "px-2 sm:px-8" : "pl-2 sm:pl-8"}`} style={{ borderRight: i < 2 ? "1px solid var(--app-border)" : undefined, animationDelay: `${200 + i * 70}ms` }}>
               <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: st.color }}>{st.value}</div>
               <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{st.label}</div>
             </div>
@@ -252,7 +264,7 @@ export default function AtlasDistrictDetail({
       {navigator}
 
       {/* About — the House district page's format: demographics, then one inline label/value row */}
-      <section>
+      <Reveal>
         <LedgerSectionHead label="About this District" />
         {district.demographics ? (
           <div className="mb-4"><DemographicsStrip {...district.demographics} /></div>
@@ -269,25 +281,25 @@ export default function AtlasDistrictDetail({
         {district.demographics && (
           <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>ACS 2020–24 5-year estimates.</p>
         )}
-      </section>
+      </Reveal>
 
       {district.candidates2026 && (
         <>
-          <section>
+          <Reveal>
             <LedgerSectionHead label={district.projection?.votes ? `${electionYear} Projected Vote` : `${electionYear} Candidates`} meta={`${district.projection?.votes ? `${district.projection.votes.total.toLocaleString("en-US")} estimated votes · ` : ""}Ballotpedia list${district.candidates2026.seats && district.candidates2026.seats > 1 ? ` · ${district.candidates2026.seats} seats` : ""}`} />
             <AtlasCandidatesSection district={district} abbr={abbr} />
-          </section>
-          <section>
+          </Reveal>
+          <Reveal>
             <LedgerSectionHead label="Fundraising" />
             <AtlasFundraisingSection district={district} electionYear={electionYear} />
-          </section>
+          </Reveal>
         </>
       )}
 
-      {district.projection && <AtlasOutlook district={district} eras={eras} electionYear={electionYear} />}
+      {district.projection && <Reveal as="div"><AtlasOutlook district={district} eras={eras} electionYear={electionYear} /></Reveal>}
 
       {/* Electoral history */}
-      <section>
+      <Reveal>
         <LedgerSectionHead label="Electoral history" meta={`${district.results.length} general election${district.results.length === 1 ? "" : "s"} for this district number`} />
         {district.results.length === 0 ? (
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>No results on file.</p>
@@ -302,17 +314,17 @@ export default function AtlasDistrictDetail({
                 </tr>
               </thead>
               <tbody>
-                {district.results.map((r) => {
+                {district.results.map((r, i) => {
                   const m = resultMargin(r);
                   const pct = (v: number | null) => (r.totalVotes && v != null ? `${((v / r.totalVotes) * 100).toFixed(1)}%` : "—");
                   return (
-                    <tr key={r.year} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                    <tr key={r.year} className="vh-row vh-row-boxed vh-row-fade" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                       <td className="py-2 pr-4 font-semibold align-top w-[1%] whitespace-nowrap">{r.year}{r.uncontested && <div className="mt-1"><Pill>Unopposed</Pill></div>}</td>
                       <td className="py-2 pr-3 align-top min-w-[220px]"><Candidates r={r} abbr={abbr} /></td>
                       {hasMoney && <td className="py-2 pr-3 text-right align-top"><Raised r={r} money={district.money?.find((x) => x.year === r.year)} /></td>}
                       <td className="py-2 pr-3 text-right align-top" style={{ color: "var(--party-dem)" }}>{pct(r.demVotes)}</td>
                       <td className="py-2 pr-3 text-right align-top" style={{ color: "var(--party-rep)" }}>{pct(r.repVotes)}</td>
-                      <td className="py-2 pr-3 text-right align-top font-semibold" style={{ color: m == null ? "var(--app-text-very-muted)" : marginText(m) }}>{fmtMargin(m)}</td>
+                      <td className="py-2 pr-3 text-right align-top font-semibold" style={{ color: m == null ? "var(--app-text-very-muted)" : marginText(m) }}><span className="vh-margin inline-block">{fmtMargin(m)}</span></td>
                       <td className="py-2 pr-0 align-top text-xs whitespace-nowrap" style={{ color: r.era === "current" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>{eraLabel(eras, r.era)}</td>
                     </tr>
                   );
@@ -327,16 +339,16 @@ export default function AtlasDistrictDetail({
             {hasMoney && <MoneySources money={district.money ?? []} />}
           </div>
         )}
-      </section>
+      </Reveal>
 
       {/* Trend */}
-      <section>
+      <Reveal>
         <LedgerSectionHead label="TPL lean trend" meta="neutral lean on today's lines · Republican up" />
         <AtlasTrendChart district={district} />
-      </section>
+      </Reveal>
 
       {/* President by boundary */}
-      <section>
+      <Reveal>
         <LedgerSectionHead label="Presidential results by boundary" />
         <div className="overflow-x-auto">
           <table className="w-full text-sm max-w-xl" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
@@ -349,23 +361,23 @@ export default function AtlasDistrictDetail({
               </tr>
             </thead>
             <tbody>
-              {presRows.map((row) => (
-                <tr key={row.year} style={{ borderBottom: "1px solid var(--app-border)" }}>
+              {presRows.map((row, i) => (
+                <tr key={row.year} className="vh-row vh-row-boxed vh-row-fade" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                   <td className="py-1.5 pr-3 font-semibold">{row.year}</td>
                   <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: row.then ? marginText(row.then.margin) : "var(--app-text-very-muted)" }}>{fmtMargin(row.then?.margin)}</td>
                   <td className="py-1.5 pr-3 text-left text-xs whitespace-nowrap" style={{ color: "var(--app-text-very-muted)" }}>{row.thenEra ? eraLabel(eras, row.thenEra) : ""}</td>
                   <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: row.now ? marginText(row.now.margin) : "var(--app-text-very-muted)" }}>
-                    {fmtMargin(row.now?.margin)}{row.now?.estimated && <span className="ml-1 text-xs font-normal" style={{ color: "var(--app-text-very-muted)" }}>est.</span>}
+                    <span className="vh-margin inline-block">{fmtMargin(row.now?.margin)}</span>{row.now?.estimated && <span className="ml-1 text-xs font-normal" style={{ color: "var(--app-text-very-muted)" }}>est.</span>}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-      </section>
+      </Reveal>
 
       {/* Redistricting */}
-      <section>
+      <Reveal>
         <LedgerSectionHead label="Redistricting history" meta={district.redistricting.length ? `${district.redistricting.length} map change${district.redistricting.length === 1 ? "" : "s"} since 2016` : undefined} />
         {district.overlay && district.components?.length ? (
           <div className="mb-5">
@@ -379,10 +391,10 @@ export default function AtlasDistrictDetail({
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{district.overlay ? "No redistricting record: overlay districts have no polygon in the boundary files." : "Lines unchanged across the years on file."}</p>
         ) : (
           <div className="flex flex-col gap-7">
-            {[...district.redistricting].reverse().map((e) => (
-              <div key={e.toEra} className="text-sm">
+            {[...district.redistricting].reverse().map((e, i) => (
+              <div key={e.toEra} className="vh-in vh-hover text-sm" style={{ animationDelay: `${enter(i)}ms` }}>
                 <div className="flex flex-wrap items-baseline gap-2 mb-1">
-                  <span className="font-semibold">{eraLabel(eras, e.fromEra)} → {eraLabel(eras, e.toEra)}</span>
+                  <span className="font-semibold">{eraLabel(eras, e.fromEra)} <span className="vh-lean" data-dir="r">→</span> {eraLabel(eras, e.toEra)}</span>
                   <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>kept {e.retainedPopPct.toFixed(0)}% of its population</span>
                 </div>
                 <p style={{ color: "var(--app-text-primary)", maxWidth: "72ch" }}>{e.text}</p>
@@ -393,7 +405,7 @@ export default function AtlasDistrictDetail({
             ))}
           </div>
         )}
-      </section>
+      </Reveal>
       <p className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
         {abbr} {chamber === "house" ? "House" : "Senate"} district {district.key}. Presidential figures on superseded lines are area-apportioned from VTD returns; see the methodology for the measured error.
       </p>

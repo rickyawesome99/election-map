@@ -9,7 +9,7 @@ import { ALIGNED_INDEPENDENTS, THREE_WAY_RACES } from "@/data/raceEligibility";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import {
   getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
-  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, envScaleFor, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
+  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, housePvOnBasis, pollMissShade, envScaleFor, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
   computeCandidateEffects, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE,
 } from "@/lib/tplCompute";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
@@ -22,13 +22,13 @@ const hsg = (o: Record<"H" | "S" | "G", number>, fmt: (v: number) => string = St
 // Every FORECAST_CONSTANTS key and the section of this tab that documents it. `satisfies` makes the
 // type-check fail when a constant is added without being documented here.
 const DOCUMENTED_IN = {
-  ENV_MISS_SHRINK: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment", NATIONAL_SIGMA_STRUCTURAL: "environment", HOUSE_ENV_ON_VOTE_SCALE: "environment",
+  ENV_MISS_SHRINK: "environment", ENV_PV_BASIS: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment", NATIONAL_SIGMA_STRUCTURAL: "environment", HOUSE_ENV_ON_VOTE_SCALE: "environment",
   APPOINTED_INCUMBENCY_SHARE: "incumbency", COMPETITIVE_INCUMBENCY: "incumbency", COMPETITIVE_INCUMBENCY_WIDTH: "incumbency",
   MONEY_BASIS: "fundraising", MONEY_K: "fundraising", MONEY_CAP: "fundraising", PARTIAL_CYCLE_GAP_SCALE: "fundraising",
   QUALITY_WEIGHT: "candidates", OBSERVABLE_PRIOR_FEATURES: "candidates",
-  POLL_K: "polling", POLL_HALF_LIFE_DAYS: "polling", POLL_UNDECIDED_ALLOCATION: "polling", POLL_UNDECIDED_CAP: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", THREE_WAY_SIGMA_MULT: "uncertainty", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
+  POLL_K: "polling", POLL_MISS_SHRINK: "polling", POLL_MISS_HISTORICAL: "polling", POLL_HALF_LIFE_DAYS: "polling", POLL_UNDECIDED_ALLOCATION: "polling", POLL_UNDECIDED_CAP: "polling", POLL_W_MAX: "polling", POLL_SIGMA: "polling", THREE_WAY_SIGMA_MULT: "uncertainty", POLL_AGING_SHARE: "polling", HOUSE_EFFECTS: "polling", HOUSE_EFFECT_K: "polling",
   HOUSE_EFFECT_WINDOW_DAYS: "polling", HOUSE_EFFECT_PARTISAN_PRIOR: "polling", HOUSE_EFFECT_CAP: "polling",
-  RACE_SIGMA: "uncertainty", DEMOGRAPHIC_SHOCK: "chambers",
+  RACE_SIGMA: "uncertainty", DEMOGRAPHIC_SHOCK: "chambers", STATE_SHOCK: "chambers",
 } satisfies Record<keyof typeof F, string>;
 
 /** The live ledger of one race, term by term — the same numbers its race page shows. */
@@ -70,7 +70,7 @@ export default function ForecastMethodology() {
         lede={<>All {all.length} races on the <Link href="/senate" className="underline underline-offset-2">Forecast</Link> tab are projected by the same additive model. A structural <strong>Model</strong> margin is built from the seat&rsquo;s partisan lean and four adjustments, then blended with the race&rsquo;s <strong>Polling Average</strong> in proportion to how much polling evidence exists. All margins are R-positive: <R>R+</R> is a Republican lead, <D>D+</D> a Democratic one. House, Senate and Governor differ only in which lean they start from and in the per-office constants listed below.</>}>
         <Derivation rows={[
           { name: "Model", formula: "TPL + Environment + Incumbent + Fundraising + Candidates" },
-          { name: "Projected Margin", formula: "(1 − w) × Model + w × Polling Avg" },
+          { name: "Projected Margin", formula: "(1 − w) × Model + w × (Polling Avg + POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office])" },
           { name: "w", formula: "min(POLL_W_MAX, nEff / (nEff + POLL_K))", now: "0 with no polls" },
           { name: "σ²", formula: "(β*·σ_E)² + k²·[((1 − w)·RACE_SIGMA)² + (w·POLL_SIGMA)²]" },
           { name: "Win Probability", formula: "Φ(−Projected Margin / σ)" },
@@ -132,10 +132,10 @@ export default function ForecastMethodology() {
         </Block>
         <Block label="Why a conversion" meta={`c and s fitted over ${envModel.years.join(", ")}`}>
           <P>E(year) is fitted jointly across every office and centered on the 2016–2025 average, so it is damped relative to the House popular vote: a one-point move in the House vote is worth {envModel.s.toFixed(2)} points of E, and E is zero when the House vote is <M v={envModel.pv0} />. Both numbers are properties of this model, so they are regressed from the model&rsquo;s own fitted E against the actual House vote rather than assumed.</P>
-          <P>The damping is right for Senate and Governor races, which swing less than the House vote does, but not for the House itself: the House popular vote is the sum of the House margins, so House races must move one for one with it. Since 2026-11-02 (HOUSE_ENV_ON_VOTE_SCALE) a House race&rsquo;s environment term is β* × E_hat ÷ s, the full swing of the House vote from the level at which E is zero ({envModel.pv0 < 0 ? "D" : "R"}+{Math.abs(envModel.pv0).toFixed(1)}), and its national error is the structural term plus the generic ballot&rsquo;s own error on the vote scale. Before the change the 2026 House projections summed to a national vote of D+4.9 against a PV_hat of D+7.4; the Senate and Governor terms are unchanged. The oracle-E backtest (<Code>--lambda</Code>) finds the House response to E year-dependent, about 1 in 2024 and 2 or more in 2018 and 2022, and the pooled struct-mode House error is flat either way (4.56 → 4.61), so this is an aggregate-consistency rule rather than a backtest win. See <Link href="/analysis/generic-ballot" className="underline">Generic Ballot vs Popular Vote</Link>.</P>
-          <DataTable align="lrrrrr" head={["Year", "Fitted E", "GB mid-Sept", "GB final", "House vote", "Miss (vote − final GB)"]}
+          <P>The same damped E applies to House races. On 2026-11-02 the House term was briefly put on the House-vote scale (β* × E_hat ÷ s, HOUSE_ENV_ON_VOTE_SCALE) on the argument that the House popular vote is the sum of the House margins and the 2026 House projections summed to D+4.9 against a PV_hat of D+7.4. It was reverted on 2026-11-03 when the forward backtest first scored 2018 and 2020 House races on the lines of the day (411 and 419 races instead of 6 and 5): House margins moved about one-for-one with the fitted E in 2018 (oracle-E bias −0.2 at ×1, +4.6 at ×1.75), and over all 1,284 House races the live blend one day out was R+1.0 biased with the scale against R+0.2 without it. The aggregate identity fails in practice because district leans are anchored on presidential margins, which already carry part of each year&rsquo;s House swing. The sum of the House projections therefore sits below PV_hat by design; see <Link href="/analysis/generic-ballot" className="underline">Generic Ballot vs Popular Vote</Link>.</P>
+          <DataTable align="lrrrrrr" head={["Year", "Fitted E", "GB mid-Sept", "GB final", "House vote, official", "House vote, uncontested imputed", `Miss (${F.ENV_PV_BASIS} vote − final GB)`]}
             rows={nationalEnvironmentHistory.filter((r) => fit.E[r.year] != null && r.housePv != null).map((r) => [
-              r.year, <M key="e" v={fit.E[r.year]} />, <M key="s" v={r.gbMidSept} />, <M key="f" v={r.gbFinal} />, <M key="p" v={r.housePv} />, <M key="m" v={r.housePv != null && r.gbFinal != null ? r.housePv - r.gbFinal : null} />,
+              r.year, <M key="e" v={fit.E[r.year]} />, <M key="s" v={r.gbMidSept} />, <M key="f" v={r.gbFinal} />, <M key="p" v={r.housePv} />, <M key="pi" v={r.housePvImputed} />, <M key="m" v={r.gbFinal != null ? housePvOnBasis(r) - r.gbFinal : null} />,
             ])}
             caption={<>Mean miss <M v={envModel.meanMiss} />, sd {envModel.sdMiss.toFixed(1)}; September→November drift rms {envModel.sdDrift.toFixed(1)}. Since 2026-10-23 the 2018–2024 generic-ballot columns are the live averaging recipe itself run over the 538 poll archive as of September 15 and election eve, so the miss is measured on the quantity the model shades; 2016 predates the archive and stays on RealClearPolitics&rsquo; basis (<Code>data-entry/national_environment_history.csv</Code>).</>} />
         </Block>
@@ -144,11 +144,12 @@ export default function ForecastMethodology() {
         </Block>
         <Constants rows={[
           { name: "ENV_MISS_SHRINK", value: F.ENV_MISS_SHRINK, basis: "decision", meaning: "Share of the historical mean generic-ballot miss applied to the point estimate. The remainder, and all of the miss's variance, live in σ_E.", source: "Polling gaps are not predictable; half is a hedge between trusting and ignoring the average miss." },
+          { name: "ENV_PV_BASIS", value: F.ENV_PV_BASIS, basis: "decision", meaning: "The House vote the conversion c, s and the miss are fitted against: the official total, or the total with every uncontested and same-party seat filled with the two-party vote a D-vs-R race there would have produced (/analysis/generic-ballot). The generic ballot asks every voter, including those in seats with no contest, so it measures the imputed quantity.", source: "Switched to imputed 2026-11-03: s 0.57 → 0.66; backtest neutral or better in every office (Senate model MAE 5.04 → 4.91, 80% coverage 73% → 77%; Governor 8.92 → 8.84; House 6.28 → 6.26; one-day blends 3.88 → 3.84 / 4.80 → 4.73 / 5.94 → 5.93)." },
           { name: "ENV_DAYS_MID_SEPT_TO_ELECTION", value: F.ENV_DAYS_MID_SEPT_TO_ELECTION, basis: "data", meaning: "The horizon the drift variance in the history table was measured over; drift scales linearly with days remaining." },
           { name: "c, s", value: `${signed(envModel.c, 2)}, ${envModel.s.toFixed(2)}`, basis: "fitted", meaning: "E = c + s × House popular vote, OLS over the even years on file.", source: <Code>getEnvironmentModel()</Code> },
           { name: "NATIONAL_SIGMA_STRUCTURAL", value: F.NATIONAL_SIGMA_STRUCTURAL, basis: "measured", meaning: "Shared national error (E scale) the forecast carries even with the House vote known: the lean window, the E↔vote conversion, and whatever moves a whole office in one year. Added in quadrature to the generic ballot's own error.", source: <>Set so the mid-September σ_E reproduces the forward backtest&rsquo;s realized spread of yearly Senate biases ({CAL.pooled.find((p) => p.office === "S")?.nationalSd}; Governor {CAL.pooled.find((p) => p.office === "G")?.nationalSd}, House {CAL.pooled.find((p) => p.office === "H")?.nationalSd} on far fewer early-year races): √(2.6² + {CAL.environment.sigmaEMidSept}²). Before 2026-10-23 this term was 0 and the national part of every race&rsquo;s error was being absorbed as independent race noise, which averages out across a chamber; the seat ranges were the narrowest of any published model.</> },
           { name: "σ_E", value: env.sigmaE.toFixed(2), basis: "fitted", meaning: "Shared national error on the E scale today. Every Senate and Governor race carries β* × σ_E, and the chamber simulation draws it once per run.", source: <Code>getNationalEnvironment()</Code> },
-          { name: "HOUSE_ENV_ON_VOTE_SCALE", value: String(F.HOUSE_ENV_ON_VOTE_SCALE), basis: "decision", meaning: `House races take the environment on the House-vote scale: β* × E_hat ÷ s (today ×${envScaleFor("H").toFixed(2)}) and the national error √(NATIONAL_SIGMA_STRUCTURAL² + GB error²) without the × s (today ${env.sigmaEHouse.toFixed(2)}). Senate and Governor races keep the E scale.`, source: "The House vote is the sum of House margins, so the House must move one for one with it; adopted 2026-11-02 on that argument, the backtest being flat (see the changelog)." },
+          { name: "HOUSE_ENV_ON_VOTE_SCALE", value: String(F.HOUSE_ENV_ON_VOTE_SCALE), basis: "off", meaning: `When true, House races take the environment on the House-vote scale (β* × E_hat ÷ s, ×${(1 / Math.abs(envModel.s)).toFixed(2)} today) and a national error without the × s. Off: every office uses β* × E_hat (House environment today ${(env.eHat * envScaleFor("H")).toFixed(2)}, σ_E ${env.sigmaEHouse.toFixed(2)}).`, source: "Adopted 2026-11-02 on the aggregate argument, reverted 2026-11-03 when 2018/2020 House races scored on the lines of the day showed the House moving one-for-one with E (see the changelog)." },
         ]} />
       </Section>
 
@@ -221,7 +222,11 @@ export default function ForecastMethodology() {
           "Polling Avg   = Σ weight_i × poll margin_i / Σ weight_i   one poll per pollster (its latest)",
           "nEff          = Σ recency_i                                effective number of fresh polls",
           "w             = min(POLL_W_MAX, nEff / (nEff + POLL_K[office]))",
+          "blend         = (1 − w) × Model + w × (Polling Avg + POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office])",
         ]} />
+        <Block label="Poll miss shade" meta={`Senate +${pollMissShade("S").toFixed(2)} · Governor +${pollMissShade("G").toFixed(2)} · House +${pollMissShade("H").toFixed(2)} (R-positive)`}>
+          <P>House effects are relative to the field, so a miss the whole field shares passes straight through them — and the field has shared one. The final polls (each pollster&rsquo;s last poll from October 1, <Link href="/analysis/polling-misses" className="underline">Polling Misses</Link>) have landed Republican of the result on average in every even year since 2016: Senate R+3.3 over 152 races, Governor R+1.8 over 101. The contested House vote has landed Republican of the final generic ballot in all five cycles, R+2.5 (<Link href="/analysis/generic-ballot" className="underline">Generic Ballot vs Popular Vote</Link>); with no House race-poll history on file, the House takes that figure. Since 2026-11-03 the blend reads each office&rsquo;s poll average POLL_MISS_SHRINK × that miss toward the Republican — the same half-shade the generic ballot gets, applied once per race after house effects, whatever the pollsters. The displayed Polling Avg is the face value; the shade is shown beside it on the race page. The midterm misses (2018 ≈ 0, 2022 ≈ 1.7) were smaller than the presidential ones, which is one reason the shade is half rather than full.</P>
+        </Block>
         <Block label="How much a poll average counts" meta="w by effective poll count">
           <DataTable align="lrrrrrrr" head={["Office", "k", "nEff 0.5", "1", "2", "4", "8", "∞"]} rows={OFFICES.map((o) => [OFFICE_NAME[o], F.POLL_K[o], ...[0.5, 1, 2, 4, 8, 1e9].map((n) => pct(pollWeight(n, o)))])} />
         </Block>
@@ -237,6 +242,8 @@ export default function ForecastMethodology() {
         </Block>
         <Constants rows={[
           { name: "POLL_K", value: hsg(F.POLL_K), basis: "decision", meaning: "Pseudo-polls of model evidence the poll average must outweigh.", source: "forwardBacktest --polls fitted Senate 3, Governor ≤ 0.1, House 1. Governor and House were raised to 2 so a single fresh poll carries at most a third of a projection (a one-poll Governor race had swung 15 pts); backtest cost Governor 6.1 → 7.4, House 3.57 → 3.65, both still well under model-only." },
+          { name: "POLL_MISS_SHRINK", value: F.POLL_MISS_SHRINK, basis: "decision", meaning: "Share of the office's historical final-poll miss added to the poll average in the blend (R-positive). The rest of the miss stays in POLL_SIGMA and σ_E.", source: "User decision 2026-11-03, mirroring ENV_MISS_SHRINK; see the Poll miss shade block and the changelog for the backtest." },
+          { name: "POLL_MISS_HISTORICAL", value: hsg(F.POLL_MISS_HISTORICAL), basis: "measured", meaning: "Mean of result − final poll average, R-positive: Senate and Governor from /analysis/polling-misses (2016–2024 final polls), House = the contested House vote − final generic ballot (/analysis/generic-ballot).", source: "lib/pollingMisses.ts, lib/genericBallotPopularVote.ts" },
           { name: "POLL_W_MAX", value: F.POLL_W_MAX, basis: "decision", meaning: "Ceiling on w: the Model keeps at least 1 − POLL_W_MAX of every projection, however many polls a race has.", source: "User decision 2026-10-09. The polls of 2016, 2018, 2020 and 2024 missed in the same direction across the whole field, which house effects (relative to the field) cannot catch, so the most heavily polled races should not run on polls alone. Binding in the 10 races that were at w 0.79–0.86." },
           { name: "POLL_SIGMA", value: hsg(F.POLL_SIGMA), basis: "calibrated", meaning: "Robust spread of actual − poll average over polled races; enters the race σ with weight w." },
           { name: "POLL_AGING_SHARE", value: F.POLL_AGING_SHARE, basis: "decision", meaning: "1 = a race moves point-for-point (through β*) with the national ballot; 0 = never aged.", source: "Backtest effect is tiny (blend < 0.05) because old polls already carry little weight; 1 kept as the principled value." },
@@ -292,18 +299,20 @@ export default function ForecastMethodology() {
       <Section id="chambers" kicker="Aggregation" title="Seat counts and chamber control"
         lede={<>Summing win probabilities gives the expected seats but not their spread, because races miss together. Chamber totals come from {sims.house.sims.toLocaleString()} seeded simulations (the same seed on server and client, so the numbers never flicker).</>}>
         <Formula lines={[
-          "simulated margin = margin + β* × z  +  load_nonwhite × z_nw  +  load_college × z_col  +  ε",
+          "simulated margin = margin + β* × z  +  load_nonwhite × z_nw  +  load_college × z_col  +  z_state  +  ε",
           `z ~ N(0, σ_E)                         one national shock per run, shared by every race`,
           `z_nw ~ N(0, ${F.DEMOGRAPHIC_SHOCK.nonwhite}) · z_col ~ N(0, ${F.DEMOGRAPHIC_SHOCK.college})       one shock per demographic axis per run`,
+          `z_state ~ N(0, STATE_SHOCK[office])          one shock per state per run (House ${F.STATE_SHOCK.H}; Senate and Governor 0)`,
           "load = (race's share − average share of its kind) / 10      districts vs the 435, states vs the 50",
-          "ε ~ N(0, idio)     idio² = max( ½² × raceVar, raceVar − demographic variance ),  raceVar = σ² − (β*·σ_E)²",
-        ]} note="The demographic shock is carved OUT of each race's own noise, so a race's total spread and win probability are identical with or without it; only how seats move together changes. Decided races add their seat with no noise." />
+          "ε ~ N(0, idio)     idio² = max( ½² × raceVar, raceVar − demographic variance − STATE_SHOCK² ),  raceVar = σ² − (β*·σ_E)²",
+        ]} note="The demographic and state shocks are carved OUT of each race's own noise, so a race's total spread and win probability are identical with or without them; only how seats move together changes. Decided races add their seat with no noise." />
         <DataTable align="lrrrrr" head={["Chamber", "Not up (D / R)", "Expected D seats", "80% range", "D control needs", "P(D control)"]} rows={(["house", "senate", "governor"] as const).map((t) => [
           t === "house" ? "House" : t === "senate" ? "Senate" : "Governors", `${SEAT_HOLDOVERS[t].dem} / ${SEAT_HOLDOVERS[t].rep}`, `${sims[t].meanDem.toFixed(1)} of ${TOTAL_SEATS_BY_TYPE[t]}`, `${sims[t].lo80}–${sims[t].hi80}`,
           sims[t].controlThreshold ?? "—", sims[t].pDemControl == null ? "—" : <span key="p" className="font-bold" style={{ color: sims[t].pDemControl! >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}>{pct(sims[t].pDemControl!)}</span>,
         ])} caption="Senate control needs 51 Democratic seats: a 50–50 tie goes to the Republican vice president. Independents who caucus with the Democrats are counted with them." />
         <Constants rows={[
           { name: "DEMOGRAPHIC_SHOCK", value: `nonwhite ${F.DEMOGRAPHIC_SHOCK.nonwhite} · college ${F.DEMOGRAPHIC_SHOCK.college}`, basis: "measured", meaning: "sd of the per-cycle slope, in pts of margin per 10 pts of share (nonwhite = 100 − White alone non-Hispanic; college = adults 25+ with a BA).", source: "Nonwhite 1.5 = rms of the 2022 and 2024 House residual slopes (+1.3, +1.6). College 1.0 sits between the 0.5 those residuals show and the 3.0 rms of county presidential swings." },
+          { name: "STATE_SHOCK", value: hsg(F.STATE_SHOCK), basis: "measured", meaning: "sd of the error House seats in the same state share, beyond the national and demographic shocks (pts of margin).", source: "Forward-backtest residuals, 2018–2024 House on the lines of the day (1,284 races), each year's national miss removed: the within-state-year shared component is 3.7 / 4.2 / 2.4 in 2018 / 2020 / 2022+24, 3.5 pooled (17% of residual variance), 3.5–3.9 in states with six or more scored seats. Senate races show no shared regional error in any year and governors only in 2018, so the statewide entries are 0 and there is no region term — the Midwest-vs-Sun-Belt pattern is the demographic shock's job. Effect: House P(D control) 83.3% → 84.6%, 80% range 214–246 → 215–247 (2026-11-03)." },
           { name: "Simulations / seed", value: `${sims.house.sims.toLocaleString()} / 20261103`, basis: "designed", meaning: "Deterministic PRNG so every render agrees." },
         ]} />
         <P>A shock, not a trend: carrying 2022&rsquo;s nonwhite slope into 2024 would have helped, but the slope has flipped sign across cycles and the 2025 Governor results reversed 2024&rsquo;s. No demographic term enters the mean projection.</P>
@@ -316,7 +325,7 @@ export default function ForecastMethodology() {
       </Section>
 
       <Section id="calibration" kicker={`Backtest · generated ${CAL.generatedAt}`} title="Calibration"
-        lede={<>The forward backtest predicts every eligible Senate and Governor race, and every House race on lines that have not since been redrawn, in {CAL.years.join(", ")} the way the site would have in mid-September of that year: lean, β*, E and incumbency are all re-fitted on years before the one being scored, candidate effects are rebuilt from earlier races only, and no national shift is removed before scoring. Model alone unless stated.</>}>
+        lede={<>The forward backtest predicts every eligible Senate and Governor race, and every House race on the district lines in force that year (2018 and 2020 on the 2012-cycle maps, with The Downballot&rsquo;s presidential results on those lines; 2022 and 2024 on the 2026 lines where no redraw followed), in {CAL.years.join(", ")} the way the site would have in mid-September of that year: lean, β*, E and incumbency are all re-fitted on years before the one being scored, candidate effects are rebuilt from earlier races only, and no national shift is removed before scoring. Model alone unless stated.</>}>
         <Block label="Pooled accuracy" meta="bias = actual − predicted, R-positive">
           <DataTable align="lrrrrrrr" maxWidth="max-w-4xl" head={["Office", "Races", "MAE", "Winner called", "Mean bias", "|Bias| per year", "80% range covers", "Brier"]} rows={CAL.pooled.map((p) => [
             officeName(p.office), p.n, p.mae.toFixed(2), pct(p.calledRight), <M key="b" v={p.bias} digits={2} />, p.meanAbsYearBias.toFixed(2), pct(p.cover80), p.brier.toFixed(3),

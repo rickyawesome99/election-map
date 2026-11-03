@@ -458,6 +458,7 @@ body {
 .stateleg-scroll > * > * { scroll-snap-align: start; }
 
 /* A history card is the year control, so it needs a hover state. */
+.stateleg-year { transition: background-color 180ms ease, border-color 220ms ease; }
 .stateleg-year:hover { background: color-mix(in srgb, var(--app-tab-bg) 55%, transparent); }
 .stateleg-year[aria-current="true"]:hover { background: var(--app-tab-bg); }
 
@@ -517,18 +518,28 @@ body {
 .vh-row::before { content: ""; position: absolute; inset: 0 -0.5rem; border-radius: 10px; background: color-mix(in srgb, var(--app-text-primary) 5%, transparent); opacity: 0; transition: opacity 180ms ease; z-index: -1; pointer-events: none; }
 .vh-row:hover::before { opacity: 1; }
 .vh-row-boxed::before { inset: 0; border-radius: 8px; }
+/* A table row inside a scroll box fades instead of rising, so its travel never flashes a scrollbar;
+   "from"-only with backwards fill, so a row dimmed inline (an outlier) keeps its opacity once in. */
+@keyframes vh-fade-from { from { opacity: 0; } }
+.vh-row-fade { animation-name: vh-fade-from; animation-fill-mode: backwards; }
 .vh-bar-d, .vh-bar-r { animation: rg-reveal 760ms cubic-bezier(0.22, 1, 0.36, 1) both; }
 .vh-bar-d { transform-origin: left center; }
 .vh-bar-r { transform-origin: right center; }
 .vh-lean { display: inline-block; transition: transform 200ms cubic-bezier(0.34, 1.4, 0.64, 1); }
-.vh-row:hover .vh-lean[data-dir="r"] { transform: translateX(2px); }
-.vh-row:hover .vh-lean[data-dir="l"] { transform: translateX(-2px); }
-.vh-row:hover .vh-lean[data-dir="u"] { transform: translateY(-1.5px); }
-.vh-row:hover .vh-lean[data-dir="d"] { transform: translateY(1.5px); }
+:is(.vh-row, .vh-hover):hover .vh-lean[data-dir="r"] { transform: translateX(2px); }
+:is(.vh-row, .vh-hover):hover .vh-lean[data-dir="l"] { transform: translateX(-2px); }
+:is(.vh-row, .vh-hover):hover .vh-lean[data-dir="u"] { transform: translateY(-1.5px); }
+:is(.vh-row, .vh-hover):hover .vh-lean[data-dir="d"] { transform: translateY(1.5px); }
 .vh-margin { transition: transform 200ms cubic-bezier(0.34, 1.4, 0.64, 1); transform-origin: right center; }
-.vh-row:hover .vh-margin { transform: scale(1.08); }
+:is(.vh-row, .vh-hover):hover .vh-margin { transform: scale(1.08); }
+/* .vh-hover marks a block (no tint) whose arrows and figures react when it is hovered, like a row's.
+   Opt-in, so a whole section that rises in never swells every figure inside it at once. */
+/* A block that rises in like a row but has no hover tint (a whole section, a header column).
+   Only a "from" frame and backwards fill, so once it lands nothing it set outlives it. */
+@keyframes vh-enter { from { opacity: 0; transform: translateY(10px); } }
+.vh-in { animation: vh-enter 520ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }
 /* Held until the section is on screen, so rows at the foot of the page don't finish unseen. */
-[data-vh="wait"] .vh-row, [data-vh="wait"] .vh-bar-d, [data-vh="wait"] .vh-bar-r { animation-play-state: paused; }
+[data-vh="wait"] .vh-row, [data-vh="wait"] .vh-bar-d, [data-vh="wait"] .vh-bar-r, [data-vh="wait"] .vh-in, [data-vh="wait"].vh-in { animation-play-state: paused; }
 .vh-tab-in { animation: vh-tab-in 260ms ease-out both; }
 .vh-tab-line { transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), width 300ms cubic-bezier(0.22, 1, 0.36, 1); }
 .vh-seg-thumb { transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14); }
@@ -545,10 +556,16 @@ body {
 .ix-rail-btn:hover:not(:disabled) { filter: brightness(0.94); }
 html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
 
+/* Chamber explorer (components/atlas/DistrictBoxGrid.tsx): the boxes pop in staggered, then
+   cross-fade their colour when the view changes. "from"-only, so a dimmed box keeps its opacity. */
+@keyframes ab-pop { from { opacity: 0; transform: scale(0.5); } }
+.ab-box { animation: ab-pop 340ms cubic-bezier(0.34, 1.4, 0.64, 1) backwards; transition: background-color 320ms ease, opacity 200ms ease, transform 140ms ease; }
+.ab-box:active { transform: scale(0.9); }
+
 @media (prefers-reduced-motion: reduce) {
-  .vh-row, .vh-bar-d, .vh-bar-r, .vh-tab-in, .rh-fade-in, .rh-halo { animation: none; }
-  .vh-lean, .vh-margin, .vh-tab-line, .vh-seg-thumb, .ix-press, .ix-lift { transition: none; }
-  .vh-row:hover .vh-lean, .vh-row:hover .vh-margin, .ix-press:active:not(:disabled), .ix-lift:hover, .ix-lift:active { transform: none; }
+  .vh-row, .vh-in, .vh-bar-d, .vh-bar-r, .vh-tab-in, .rh-fade-in, .rh-halo, .ab-box { animation: none; }
+  .vh-lean, .vh-margin, .vh-tab-line, .vh-seg-thumb, .ix-press, .ix-lift, .ab-box { transition: none; }
+  :is(.vh-row, .vh-hover):hover .vh-lean, :is(.vh-row, .vh-hover):hover .vh-margin, .ix-press:active:not(:disabled), .ix-lift:hover, .ix-lift:active, .ab-box:active { transform: none; }
 }
 
 /* State page "On the ballot" (components/state/BallotSection.tsx): statewide matchup cards, then
@@ -574,4 +591,39 @@ html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
   .bl-off { padding-left: 6px; }
   .bl-span, .bl-seats { grid-column: span 2; grid-row: auto; }
   .bl-mg { padding-right: 0; }
+}
+
+/* Results page poll-closing cards (components/results/ResultsPage.tsx RaceCard): rise in staggered,
+   lift on hover, fade the winner's fill in when called and pop the badge, roll a figure in when it
+   changes, pulse a dot while counting, and grow the counted bar. */
+@keyframes rc-rise { from { opacity: 0; transform: translateY(10px); } }
+@keyframes rc-tick { from { opacity: 0; transform: translateY(60%); } }
+@keyframes rc-badge { 0% { opacity: 0; transform: scale(0.4); } 70% { transform: scale(1.15); } 100% { opacity: 1; transform: scale(1); } }
+@keyframes rc-ping { 0% { transform: scale(1); opacity: 0.55; } 100% { transform: scale(2.6); opacity: 0; } }
+.rc-card { position: relative; isolation: isolate; border-radius: 0 6px 6px 0; animation: rc-rise 420ms cubic-bezier(0.22, 1, 0.36, 1) backwards; transition: transform 160ms ease-out, background-color 520ms ease, border-color 520ms ease, color 520ms ease; }
+/* Under a mouse the card tilts toward the pointer (--rx/--ry, set by RaceCard) and the whole card
+   darkens a little: one flat overlay over all of it (the state page rows' .vh-row tint), darker on a called card's fill.
+   On a touch screen a finger does the same (data-touch, set by RaceCard while pressed); :hover is
+   kept to real hover devices so a tapped card doesn't stay stuck lifted. */
+@media (hover: hover) {
+  .rc-card:hover { transform: perspective(700px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg)) translateY(-2px); }
+  .rc-card:hover::before { opacity: 1; }
+}
+.rc-card:active, .rc-card[data-touch] { transform: perspective(700px) rotateX(var(--ry, 0deg)) rotateY(var(--rx, 0deg)) scale(0.98); }
+.rc-card[data-touch]::before { opacity: 1; }
+.rc-card::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; pointer-events: none; opacity: 0; transition: opacity 180ms ease; background: color-mix(in srgb, var(--app-text-primary) 5%, transparent); }
+.rc-card[data-filled]::before { background: rgba(0, 0, 0, 0.14); }
+/* The state glyph beside each state's cards (StateGlyph) fades in once the shapes load. */
+.rc-glyph path { animation: rh-fade-in 360ms ease-out both; }
+.rc-tick { display: inline-block; animation: rc-tick 320ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+.rc-badge { display: inline-block; animation: rc-badge 420ms cubic-bezier(0.34, 1.4, 0.64, 1) backwards; }
+.rc-live { position: relative; flex: none; width: 6px; height: 6px; border-radius: 9999px; background: currentColor; }
+.rc-live::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: currentColor; animation: rc-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite; }
+.rc-progress { transition: width 800ms cubic-bezier(0.22, 1, 0.36, 1), background-color 400ms ease; }
+@media (prefers-reduced-motion: reduce) {
+  .rc-card, .rc-tick, .rc-badge, .rc-live::after { animation: none; }
+  .rc-card, .rc-progress { transition: none; }
+  .rc-card:hover, .rc-card:active, .rc-card[data-touch] { transform: none; }
+  .rc-card::before { transition: none; }
+  .rc-glyph path { animation: none; }
 }

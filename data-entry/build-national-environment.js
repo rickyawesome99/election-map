@@ -4,7 +4,7 @@
  *
  *   1. Edit data-entry/national_environment_history.csv
  *      (year, gb_mid_sept, gb_final, approval_net_mid_sept, approval_net_final,
- *       president_party, house_pv_margin, notes — generic-ballot and vote margins are
+ *       president_party, house_pv_margin, house_pv_imputed, notes — generic-ballot and vote margins are
  *       R-positive; approval is approve − disapprove)
  *   2. Run:  node data-entry/build-national-environment.js
  *   3. data/nationalEnvironmentHistory.ts is regenerated
@@ -48,6 +48,7 @@ const entries = rows.map((r) => ({
   approvalFinal: num(r.approval_net_final),
   presidentParty: r.president_party,
   housePv: num(r.house_pv_margin),
+  housePvImputed: num(r.house_pv_imputed),
   notes: r.notes,
 })).filter((e) => Number.isFinite(e.year)).sort((a, b) => a.year - b.year);
 
@@ -65,7 +66,8 @@ export type NationalEnvironmentYear = {
   approvalMidSept: number | null;
   approvalFinal: number | null;
   presidentParty: "D" | "R";
-  housePv: number | null;        // actual national House popular-vote margin
+  housePv: number | null;        // actual national House popular-vote margin (official, % of total vote)
+  housePvImputed: number | null; // the same with every uncontested / same-party seat filled with the two-party vote a D-vs-R race there would have produced (lib/genericBallotPopularVote.ts, scaled to % of total) — the basis the generic ballot measures
   notes: string;
 };
 

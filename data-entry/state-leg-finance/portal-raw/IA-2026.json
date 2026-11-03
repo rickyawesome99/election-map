@@ -1,0 +1,2291 @@
+{
+ "state": "IA",
+ "cycle": 2026,
+ "source": "Iowa Ethics and Campaign Disclosure Board (itemized contributions + in-kind)",
+ "fetched": "2026-11-03",
+ "dataThrough": "12/31/2026",
+ "candidates": [
+  {
+   "name": "Matt Windschitl",
+   "committee": "Win With Windschitl",
+   "chamber": "house",
+   "district": null,
+   "contributions": 41000.0
+  },
+  {
+   "name": "John Wills",
+   "committee": "Wills for Iowa",
+   "chamber": "house",
+   "district": "10",
+   "contributions": 59356.36
+  },
+  {
+   "name": "Committee to Elect Zach Wahls",
+   "committee": "Committee to Elect Zach Wahls",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 33920.08
+  },
+  {
+   "name": "Sarah Trone Garriott",
+   "committee": "Sarah Trone Garriott for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 9293.2
+  },
+  {
+   "name": "Matthew Blake",
+   "committee": "Matthew Blake for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 33221.0
+  },
+  {
+   "name": "Aime Wichtendahl",
+   "committee": "Elect Aime Wichtendahl for Iowa House",
+   "chamber": "house",
+   "district": "80",
+   "contributions": 25748.92
+  },
+  {
+   "name": "Heather Sievers",
+   "committee": "Heather Sievers for Iowa",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 92589.84
+  },
+  {
+   "name": "Travis Sitzmann",
+   "committee": "Sitzmann for Iowa",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 8276.76
+  },
+  {
+   "name": "David Zimmer",
+   "committee": "mikezimmerforiowa",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 122464.36
+  },
+  {
+   "name": "Cindy Winckler",
+   "committee": "Winckler for State House",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 13889.1
+  },
+  {
+   "name": "Jack Whitver",
+   "committee": "Friends of Whitver",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 99550.0
+  },
+  {
+   "name": "Megan Jones",
+   "committee": "Jones for Iowa",
+   "chamber": "house",
+   "district": "6",
+   "contributions": 60648.0
+  },
+  {
+   "name": "Daniel Zumbach",
+   "committee": "Dan Zumbach for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 27200.0
+  },
+  {
+   "name": "Mark Costello",
+   "committee": "Costello for Iowa Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 33600.0
+  },
+  {
+   "name": "Robert Kaufmann",
+   "committee": "Kaufmann for State House",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 258745.96
+  },
+  {
+   "name": "Heather Matson for Iowa House",
+   "committee": "Heather Matson for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 30113.48
+  },
+  {
+   "name": "Jennifer Konfrst",
+   "committee": "Jennifer Konfrst for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 20774.48
+  },
+  {
+   "name": "Amy Nielsen",
+   "committee": "Amy Nielsen for Iowa",
+   "chamber": "house",
+   "district": "85",
+   "contributions": 10942.0
+  },
+  {
+   "name": "Ann Meyer",
+   "committee": "Ann Meyer for Statehouse",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 74575.13
+  },
+  {
+   "name": "Kenan Judge",
+   "committee": "Kenan Judge for Iowans",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 66728.84
+  },
+  {
+   "name": "Dawn Driscoll",
+   "committee": "Dawn Driscoll for State Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 30650.0
+  },
+  {
+   "name": "Carter Nordman",
+   "committee": "Carter Nordman for Iowa",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 220933.14
+  },
+  {
+   "name": "Michael Klimesh",
+   "committee": "Friends For Klimesh",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 511468.27
+  },
+  {
+   "name": "Sean Bagniewski",
+   "committee": "Sean Bagniewski for Iowa",
+   "chamber": "house",
+   "district": "35",
+   "contributions": 44299.59
+  },
+  {
+   "name": "Michael Bousselot",
+   "committee": "Bousselot for Iowa",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 190861.11
+  },
+  {
+   "name": "Janice Weiner",
+   "committee": "Janice Weiner for State Senate",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 256362.56
+  },
+  {
+   "name": "Izaah Knox for Iowa Senate",
+   "committee": "Izaah Knox for Iowa Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 24462.85
+  },
+  {
+   "name": "Brett Barker",
+   "committee": "Barker for Iowa",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 68543.62
+  },
+  {
+   "name": "Anna Banowsky",
+   "committee": "Anna Banowsky for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 175.0
+  },
+  {
+   "name": "Jason Schultz",
+   "committee": "Friends of Jason Schultz",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 44425.0
+  },
+  {
+   "name": "David Rowley",
+   "committee": "Rowley for Iowa Senate",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 76432.72
+  },
+  {
+   "name": "Josh Turek",
+   "committee": "Turek4Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1520.0
+  },
+  {
+   "name": "Cynthia Paschen",
+   "committee": "Paschen For Iowa",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 5314.0
+  },
+  {
+   "name": "Megan Srinivas",
+   "committee": "Megan Srinivas for Iowa",
+   "chamber": "house",
+   "district": "30",
+   "contributions": 68245.37
+  },
+  {
+   "name": "J.D.  Scholten",
+   "committee": "Scholten for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 7508.35
+  },
+  {
+   "name": "Kara Warme",
+   "committee": "Kara Warme for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 107427.27
+  },
+  {
+   "name": "Katie Whittington",
+   "committee": "Whittington for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 93579.89
+  },
+  {
+   "name": "Adam Zabner",
+   "committee": "Zabner For Iowa",
+   "chamber": "house",
+   "district": "90",
+   "contributions": 68083.0
+  },
+  {
+   "name": "Dillon Fillion",
+   "committee": "Fillion For Iowa",
+   "chamber": "house",
+   "district": "81",
+   "contributions": 11241.78
+  },
+  {
+   "name": "Annette M Sweeney",
+   "committee": "Sweeney for Senate",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 80831.73
+  },
+  {
+   "name": "Dean Fisher",
+   "committee": "Dean Fisher for House",
+   "chamber": "house",
+   "district": "53",
+   "contributions": 13419.28
+  },
+  {
+   "name": "Elizabeth Bennett",
+   "committee": "Iowans for Liz Bennett",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 10404.0
+  },
+  {
+   "name": "Norlin Mommsen",
+   "committee": "Citizens for Mommsen",
+   "chamber": "house",
+   "district": "70",
+   "contributions": 16575.98
+  },
+  {
+   "name": "Shannon Latham",
+   "committee": "Latham for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 12928.3
+  },
+  {
+   "name": "Carrie Koelker",
+   "committee": "Koelker for Iowa Senate",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 48664.23
+  },
+  {
+   "name": "Craig Williams",
+   "committee": "Williams for Iowa",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 6078.06
+  },
+  {
+   "name": "Sami Scheetz",
+   "committee": "Scheetz for Iowa",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 1270.0
+  },
+  {
+   "name": "Derek Wulf",
+   "committee": "Wulf For Iowa",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 45459.51
+  },
+  {
+   "name": "Judd Lawler",
+   "committee": "Lawler for Iowa",
+   "chamber": "house",
+   "district": "91",
+   "contributions": 31806.6
+  },
+  {
+   "name": "Christian Hermanson",
+   "committee": "Hermanson for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 45574.79
+  },
+  {
+   "name": "Chad Behn",
+   "committee": "Chad Behn for Iowa House",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 23642.5
+  },
+  {
+   "name": "Doug Campbell",
+   "committee": "Campbell for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 2997.98
+  },
+  {
+   "name": "Janet Petersen",
+   "committee": "Petersen for State Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 10281.0
+  },
+  {
+   "name": "Amy Sinclair",
+   "committee": "Sinclair for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 137305.36
+  },
+  {
+   "name": "Tom Shipley",
+   "committee": "Tom Shipley for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 12400.0
+  },
+  {
+   "name": "Lindsay James",
+   "committee": "Friends of Lindsay James",
+   "chamber": "house",
+   "district": null,
+   "contributions": 2915.0
+  },
+  {
+   "name": "Cherielynn Westrich",
+   "committee": "Westrich for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 4300.0
+  },
+  {
+   "name": "Brian Lohse",
+   "committee": "Friends For Brian Lohse",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 72071.3
+  },
+  {
+   "name": "Brent Siegrist",
+   "committee": "Siegrist for Iowa House",
+   "chamber": "house",
+   "district": "19",
+   "contributions": 36270.0
+  },
+  {
+   "name": "Adrian Dickey",
+   "committee": "Dickey for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 20200.0
+  },
+  {
+   "name": "Kevin Alons",
+   "committee": "Alons For Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 31759.39
+  },
+  {
+   "name": "Austin Baeth",
+   "committee": "Austin Baeth for Iowa",
+   "chamber": "house",
+   "district": "36",
+   "contributions": 24758.5
+  },
+  {
+   "name": "Bill Gustoff",
+   "committee": "Gustoff for Iowa",
+   "chamber": "house",
+   "district": "40",
+   "contributions": 73426.52
+  },
+  {
+   "name": "Hans Wilz",
+   "committee": "WILZ FOR IOWA",
+   "chamber": "house",
+   "district": null,
+   "contributions": 66137.97
+  },
+  {
+   "name": "Mary Madison",
+   "committee": "Mary Madison For Iowa",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 7050.0
+  },
+  {
+   "name": "Daniel Gosa",
+   "committee": "Dan Gosa for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 53435.36
+  },
+  {
+   "name": "David Blom",
+   "committee": "Friends of David Blom",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 27525.57
+  },
+  {
+   "name": "Kenneth Rozenboom",
+   "committee": "Rozenboom for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 21200.0
+  },
+  {
+   "name": "Daniel Dawson",
+   "committee": "Dan Dawson for State Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 92774.52
+  },
+  {
+   "name": "Monica Kurth",
+   "committee": "Monica Kurth for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 918.6
+  },
+  {
+   "name": "Brooke Boden",
+   "committee": "Brooke Boden for Iowa House",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 23855.0
+  },
+  {
+   "name": "Jon Dunwell",
+   "committee": "Friends of Jon Dunwell",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 9700.0
+  },
+  {
+   "name": "Clinton McClintock",
+   "committee": "McClintock for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 14750.0
+  },
+  {
+   "name": "Elinor Levin",
+   "committee": "Citizens for Elinor A. Levin",
+   "chamber": "house",
+   "district": "89",
+   "contributions": 26800.0
+  },
+  {
+   "name": "Kerry Gruenhagen",
+   "committee": "Kerry Gruenhagen for Iowa Senate",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 19900.0
+  },
+  {
+   "name": "Elizabeth  Wilson",
+   "committee": "Elizabeth Wilson for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 14688.8
+  },
+  {
+   "name": "Cindy Golding",
+   "committee": "Cindy Golding for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 39221.0
+  },
+  {
+   "name": "Tom Determann",
+   "committee": "Determann for Iowa House",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 12385.0
+  },
+  {
+   "name": "Patrick Grassley",
+   "committee": "Citizens for Pat Grassley",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 725682.22
+  },
+  {
+   "name": "Dennis Guth",
+   "committee": "Guth for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 2050.0
+  },
+  {
+   "name": "Tom Moore",
+   "committee": "Moore for State Representative",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 3250.0
+  },
+  {
+   "name": "Skyler Wheeler",
+   "committee": "Wheeler for Representative",
+   "chamber": "house",
+   "district": "4",
+   "contributions": 17656.76
+  },
+  {
+   "name": "Steven Bradley",
+   "committee": "Bradley for Iowa House",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 12373.08
+  },
+  {
+   "name": "Dan Gehlbach",
+   "committee": "Gehlbach for Iowa House",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 18940.66
+  },
+  {
+   "name": "Herman Quirmbach",
+   "committee": "Quirmbach for Senate",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 23989.0
+  },
+  {
+   "name": "Beth Wessel-Kroeschell",
+   "committee": "Citizens for Wessel-Kroeschell",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 11070.0
+  },
+  {
+   "name": "Art Staed",
+   "committee": "Committee to Elect Art Staed",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 5409.38
+  },
+  {
+   "name": "Sandy Salmon",
+   "committee": "Friends of Sandy Salmon",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 39124.0
+  },
+  {
+   "name": "Brian Meyer",
+   "committee": "Citizens For Brian Meyer/Iowans for Meyer",
+   "chamber": "house",
+   "district": "29",
+   "contributions": 168316.0
+  },
+  {
+   "name": "Citizens for Sexton",
+   "committee": "Citizens for Sexton",
+   "chamber": "house",
+   "district": null,
+   "contributions": 3100.0
+  },
+  {
+   "name": "Mark Lofgren",
+   "committee": "Team Lofgren",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 10064.0
+  },
+  {
+   "name": "Henry Stone",
+   "committee": "Stone for House",
+   "chamber": "house",
+   "district": "9",
+   "contributions": 42466.62
+  },
+  {
+   "name": "Kevin Evans",
+   "committee": "K Lynn Evans Campaign Committee",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 54622.17
+  },
+  {
+   "name": "Helena Hayes",
+   "committee": "Hayes for House",
+   "chamber": "house",
+   "district": "88",
+   "contributions": 20832.67
+  },
+  {
+   "name": "Ryan Weldon",
+   "committee": "Vote Ryan Weldon",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 33840.38
+  },
+  {
+   "name": "Mike Pike",
+   "committee": "Pike for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 8098.03
+  },
+  {
+   "name": "William Dotzler",
+   "committee": "Citizens to Elect Bill Dotzler",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 14650.37
+  },
+  {
+   "name": "Timothy Kraayenbrink",
+   "committee": "Kraayenbrink for Iowa Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 46200.0
+  },
+  {
+   "name": "Mike Vondran",
+   "committee": "Iowans for Mike Vondran",
+   "chamber": "house",
+   "district": "94",
+   "contributions": 51486.4
+  },
+  {
+   "name": "David Jacoby",
+   "committee": "Jacoby for House",
+   "chamber": "house",
+   "district": "86",
+   "contributions": 25148.93
+  },
+  {
+   "name": "Rick Olson",
+   "committee": "Committee to Elect Rick Olson To House of Representatives",
+   "chamber": "house",
+   "district": "31",
+   "contributions": 3820.0
+  },
+  {
+   "name": "Steven Holt",
+   "committee": "Holt For House",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 46200.36
+  },
+  {
+   "name": "Craig Johnson",
+   "committee": "Johnson for Iowa",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 23122.0
+  },
+  {
+   "name": "Jacob Bossman",
+   "committee": "Friends of Jacob Bossman",
+   "chamber": "house",
+   "district": "14",
+   "contributions": 38390.24
+  },
+  {
+   "name": "Gary Mohr",
+   "committee": "Gary Mohr for State House",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 135004.48
+  },
+  {
+   "name": "SHANNON LUNDGREN",
+   "committee": "Lundgren for House",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 62882.58
+  },
+  {
+   "name": "Jane Bloomingdale",
+   "committee": "Vote Bloomingdale",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 100658.03
+  },
+  {
+   "name": "Michael Bergan",
+   "committee": "Bergan for Iowa House",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 29855.24
+  },
+  {
+   "name": "Ray Sorensen",
+   "committee": "Sorensen For Iowa",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 33732.97
+  },
+  {
+   "name": "Jennifer Smith",
+   "committee": "Jennifer Smith for Iowa",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 26663.38
+  },
+  {
+   "name": "Chad Ingels",
+   "committee": "Ingels for Iowa House",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 41544.28
+  },
+  {
+   "name": "Jesse Green",
+   "committee": "Citizens for Jesse Green",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 41600.0
+  },
+  {
+   "name": "Martin Graber",
+   "committee": "Martin Graber for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 2614.26
+  },
+  {
+   "name": "Taylor Collins",
+   "committee": "Taxpayers for Collins",
+   "chamber": "house",
+   "district": "95",
+   "contributions": 117976.39
+  },
+  {
+   "name": "Joshua Meggers",
+   "committee": "Joshua Meggers for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 22550.0
+  },
+  {
+   "name": "Scott Webster",
+   "committee": "Webster for Iowa",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 37525.0
+  },
+  {
+   "name": "Austin Harris",
+   "committee": "Austin Harris for Iowa",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 115562.67
+  },
+  {
+   "name": "Devon Wood",
+   "committee": "Wood for Iowa",
+   "chamber": "house",
+   "district": "17",
+   "contributions": 27620.81
+  },
+  {
+   "name": "Barb Kniff McCulla",
+   "committee": "Barb Kniff McCulla for Iowa",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 47261.18
+  },
+  {
+   "name": "Samantha Fett",
+   "committee": "Fett For House",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 22769.14
+  },
+  {
+   "name": "Jason Gearhart",
+   "committee": "GEARHART FOR IOWA",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 11135.53
+  },
+  {
+   "name": "Samuel Wengryn",
+   "committee": "Iowans for Wengryn",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 3832.5
+  },
+  {
+   "name": "Tony Bisignano",
+   "committee": "Bisignano for Senate Account",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 39120.0
+  },
+  {
+   "name": "David Young",
+   "committee": "Young for Iowa House",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 164882.91
+  },
+  {
+   "name": "Molly Buck",
+   "committee": "MollyBuckForAnkeny",
+   "chamber": "house",
+   "district": "41",
+   "contributions": 26769.91
+  },
+  {
+   "name": "Tony Thompson for Iowa",
+   "committee": "Tony Thompson for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 822.77
+  },
+  {
+   "name": "Jeffrey Shipley",
+   "committee": "Jeff Shipley's Committee for Peace and Prosperity",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 22420.0
+  },
+  {
+   "name": "Charles Isenhart",
+   "committee": "Isenhart Campaign for the Common Good",
+   "chamber": "house",
+   "district": null,
+   "contributions": 250.0
+  },
+  {
+   "name": "Eric Gjerde",
+   "committee": "Eric Gjerde For Iowa",
+   "chamber": "house",
+   "district": "74",
+   "contributions": 3741.81
+  },
+  {
+   "name": "Spencer Waugh",
+   "committee": "Spencer Waugh for Iowa",
+   "chamber": "house",
+   "district": "21",
+   "contributions": 82480.72
+  },
+  {
+   "name": "Andy McKean",
+   "committee": "McKean For Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 5.31
+  },
+  {
+   "name": "Mary Stewart",
+   "committee": "Stewart for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 1.31
+  },
+  {
+   "name": "Jeff Rich for Iowa",
+   "committee": "Jeff Rich for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 0.26
+  },
+  {
+   "name": "Jeremy True for Iowa",
+   "committee": "Jeremy True for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 37.6
+  },
+  {
+   "name": "Brenda Curran",
+   "committee": "Brenda Curran for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1.68
+  },
+  {
+   "name": "Molly Donahue",
+   "committee": "Donahue for State Senate",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 16296.06
+  },
+  {
+   "name": "Josue Rodriguez",
+   "committee": "Friends of Josue Rodriguez",
+   "chamber": "house",
+   "district": null,
+   "contributions": 390.0
+  },
+  {
+   "name": "Griffin for Iowa House",
+   "committee": "Griffin for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 65645.94
+  },
+  {
+   "name": "Jennifer Wrage for State Representative",
+   "committee": "Jennifer Wrage for State Representative",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1005.15
+  },
+  {
+   "name": "James McCullagh",
+   "committee": "McCullagh for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 2505.01
+  },
+  {
+   "name": "Blaine Watkins",
+   "committee": "Watkins for Iowa",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 121505.8
+  },
+  {
+   "name": "King for Iowa",
+   "committee": "King for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 3418.17
+  },
+  {
+   "name": "Grace Van Cleave for Iowa",
+   "committee": "Grace Van Cleave for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 3911.72
+  },
+  {
+   "name": "Brad Magg",
+   "committee": "Brad Magg for Iowa",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 30509.27
+  },
+  {
+   "name": "Claire Celsi",
+   "committee": "Claire Celsi for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 1340.0
+  },
+  {
+   "name": "Matt Robinson",
+   "committee": "Matt Robinson for Iowa",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 37306.45
+  },
+  {
+   "name": "Thomas Townsend",
+   "committee": "Tom Townsend for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 36060.0
+  },
+  {
+   "name": "Wendy Larson",
+   "committee": "Wendy Larson for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 60149.78
+  },
+  {
+   "name": "John Thompson For Iowa House",
+   "committee": "John Thompson For Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 653.86
+  },
+  {
+   "name": "kyle kruse",
+   "committee": "Kruse Campaign",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 2325.0
+  },
+  {
+   "name": "Kennedy-Ode for Iowa",
+   "committee": "Kennedy-Ode for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 98.71
+  },
+  {
+   "name": "Angel Ramirez",
+   "committee": "Ramirez for Iowa",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 26962.21
+  },
+  {
+   "name": "Edward Hayes",
+   "committee": "Hayes4IAHouse",
+   "chamber": "house",
+   "district": "78",
+   "contributions": 9750.0
+  },
+  {
+   "name": "Citizens for Ako Abdul-Samad",
+   "committee": "Citizens for Ako Abdul-Samad",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1067.86
+  },
+  {
+   "name": "Leila Staton",
+   "committee": "Leila Staton for Iowa House",
+   "chamber": "house",
+   "district": "54",
+   "contributions": 33805.28
+  },
+  {
+   "name": "Larry McBurney",
+   "committee": "McBurney for Iowa",
+   "chamber": "house",
+   "district": "44",
+   "contributions": 8970.0
+  },
+  {
+   "name": "Sonya Heitshusen",
+   "committee": "Sonya Heitshusen For Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 2000.0
+  },
+  {
+   "name": "Joe Stutting",
+   "committee": "Stutting for Iowa Senate",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 46245.0
+  },
+  {
+   "name": "Dave Sires",
+   "committee": "Sires for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 2625.0
+  },
+  {
+   "name": "Rob Johnson",
+   "committee": "Rob Johnson for Iowa",
+   "chamber": "house",
+   "district": "34",
+   "contributions": 8419.82
+  },
+  {
+   "name": "Matthew Rinker",
+   "committee": "Rinker for Iowa House",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 14595.67
+  },
+  {
+   "name": "India May",
+   "committee": "May for Iowa",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 23990.84
+  },
+  {
+   "name": "Tony Thompson",
+   "committee": "Tony Thompson for Iowa",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 35362.62
+  },
+  {
+   "name": "Catelin Drey",
+   "committee": "Drey for Iowa",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 372846.49
+  },
+  {
+   "name": "Oliver Bardwell",
+   "committee": "Oliver Bardwell for Iowa",
+   "chamber": "house",
+   "district": "27",
+   "contributions": 8768.03
+  },
+  {
+   "name": "Austin  Stubbs",
+   "committee": "Austin Stubbs for Iowa",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 20710.0
+  },
+  {
+   "name": "Tom Gerhold",
+   "committee": "Gerhold for Iowa",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 9280.0
+  },
+  {
+   "name": "Rocky  Damiano",
+   "committee": "Damiano For Iowa",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 15138.0
+  },
+  {
+   "name": "Cody Smith",
+   "committee": "Cody Smith For Iowa",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 17185.0
+  },
+  {
+   "name": "Jack Goodman",
+   "committee": "Friends of Jack Goodman",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 2501.0
+  },
+  {
+   "name": "Benjamin Schauer",
+   "committee": "Benjamin Schauer for Iowa",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 7755.67
+  },
+  {
+   "name": "Phil Wiese for Iowa",
+   "committee": "Phil Wiese for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 544.9
+  },
+  {
+   "name": "Ruth Ann Gaines for State Representative",
+   "committee": "Ruth Ann Gaines for State Representative",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1589.0
+  },
+  {
+   "name": "George Pickup",
+   "committee": "PickupforIowa",
+   "chamber": "house",
+   "district": "70",
+   "contributions": 17792.59
+  },
+  {
+   "name": "Toni Waite",
+   "committee": "WaiteWillWork4U",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 4849.7
+  },
+  {
+   "name": "Ross Wilburn",
+   "committee": "Iowans for Ross Wilburn",
+   "chamber": "house",
+   "district": null,
+   "contributions": 8943.0
+  },
+  {
+   "name": "Rory Taylor",
+   "committee": "Committee to Elect Rory Taylor",
+   "chamber": "house",
+   "district": "22",
+   "contributions": 36476.76
+  },
+  {
+   "name": "Christopher  Prosch",
+   "committee": "Prosch for Iowa",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 240588.93
+  },
+  {
+   "name": "Thomas Jeneary",
+   "committee": "Jeneary for House District 5 Committee",
+   "chamber": "house",
+   "district": null,
+   "contributions": 2475.0
+  },
+  {
+   "name": "Thomas O'Donnell",
+   "committee": "Tom O'Donnell for HD87",
+   "chamber": "house",
+   "district": "87",
+   "contributions": 47713.0
+  },
+  {
+   "name": "Jeffrey Reichman",
+   "committee": "Reichman for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 7817.99
+  },
+  {
+   "name": "Jennifer  Klever-Kirkman",
+   "committee": "Kirkman for Iowa",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 19563.58
+  },
+  {
+   "name": "Jeffrey Cooling",
+   "committee": "Iowans For Cooling",
+   "chamber": "house",
+   "district": "77",
+   "contributions": 10850.0
+  },
+  {
+   "name": "Heather Hora",
+   "committee": "Hora for House",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 26986.36
+  },
+  {
+   "name": "James Vowels",
+   "committee": "Vote Vowels 2026",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 18788.59
+  },
+  {
+   "name": "Russell Saffell",
+   "committee": "Saffell for Iowa",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 2271.52
+  },
+  {
+   "name": "William English",
+   "committee": "Matt English for Iowa",
+   "chamber": "house",
+   "district": "66",
+   "contributions": 4986.19
+  },
+  {
+   "name": "Maeder For Iowa",
+   "committee": "Maeder For Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 250.0
+  },
+  {
+   "name": "Timi Brown-Powers",
+   "committee": "Timi Brown-Powers for Iowa",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 10184.6
+  },
+  {
+   "name": "Nikhil Wagle",
+   "committee": "Wagle for Iowa",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 198828.84
+  },
+  {
+   "name": "Rosanne Plante",
+   "committee": "Rosanne Plante for Iowa",
+   "chamber": "house",
+   "district": "13",
+   "contributions": 0.25
+  },
+  {
+   "name": "Adam Peters",
+   "committee": "Adam Peters for Iowa",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 41545.34
+  },
+  {
+   "name": "Mark Thompson",
+   "committee": "Mark Thompson for Iowa House",
+   "chamber": "house",
+   "district": "56",
+   "contributions": 7035.0
+  },
+  {
+   "name": "Tracy Ehlert",
+   "committee": "Tracy Ehlert for Iowa House",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 5970.0
+  },
+  {
+   "name": "Marilyn  Mentzer",
+   "committee": "MENTZER FOR IOWA",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 1963.49
+  },
+  {
+   "name": "Jill Alesch",
+   "committee": "Jill Alesch for Iowa.",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 49094.81
+  },
+  {
+   "name": "Nate Boulton",
+   "committee": "Boulton for Iowa House",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 63059.43
+  },
+  {
+   "name": "Andrew Fitzgerald",
+   "committee": "Fitzgerald for Iowa",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 5086.71
+  },
+  {
+   "name": "Garrett Gobble",
+   "committee": "Gobble for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 20.0
+  },
+  {
+   "name": "Teresa Perin",
+   "committee": "Perin for 51",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 5516.14
+  },
+  {
+   "name": "Tom Walton",
+   "committee": "Walton for Iowa",
+   "chamber": "house",
+   "district": "28",
+   "contributions": 25710.82
+  },
+  {
+   "name": "Jason Sherer",
+   "committee": "Sherer State House",
+   "chamber": "house",
+   "district": "15",
+   "contributions": 19235.11
+  },
+  {
+   "name": "WESLEY ERIC ENOS III",
+   "committee": "Neighbors for Enos",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 24044.82
+  },
+  {
+   "name": "Rachel Burns",
+   "committee": "Burns for Iowa",
+   "chamber": "house",
+   "district": "7",
+   "contributions": 41738.39
+  },
+  {
+   "name": "Shawn Ellerbroek",
+   "committee": "Shawn Ellerbroek For House",
+   "chamber": "house",
+   "district": "57",
+   "contributions": 20284.38
+  },
+  {
+   "name": "Eric Armstrong",
+   "committee": "Committee to Elect Eric Armstrong",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 14605.62
+  },
+  {
+   "name": "Kristofer Williams",
+   "committee": "Kris Williams for Iowa",
+   "chamber": "house",
+   "district": "8",
+   "contributions": 4924.29
+  },
+  {
+   "name": "Robert Henderson",
+   "committee": "HENDERSON FOR HOUSE",
+   "chamber": "house",
+   "district": null,
+   "contributions": 35068.03
+  },
+  {
+   "name": "Brady Meyer",
+   "committee": "Brady Meyer for Iowa House District 12",
+   "chamber": "house",
+   "district": "12",
+   "contributions": 225.0
+  },
+  {
+   "name": "Charley Thomson",
+   "committee": "Charley Thomson for House",
+   "chamber": "house",
+   "district": "58",
+   "contributions": 11608.03
+  },
+  {
+   "name": "Robert Eschliman",
+   "committee": "Bob Eschliman for Iowa",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 6146.09
+  },
+  {
+   "name": "Jeff Taylor",
+   "committee": "Jeff Taylor for State Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 1300.0
+  },
+  {
+   "name": "Kent McNally",
+   "committee": "Mr. McNally for Iowa",
+   "chamber": "house",
+   "district": "83",
+   "contributions": 2620.0
+  },
+  {
+   "name": "Cherry Hardman",
+   "committee": "Hardman for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 81320.61
+  },
+  {
+   "name": "Polly Denison",
+   "committee": "Polly Denison for Iowa",
+   "chamber": "house",
+   "district": "84",
+   "contributions": 2969.61
+  },
+  {
+   "name": "John Hollinrake",
+   "committee": "Hollinrake for Iowa",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 16478.05
+  },
+  {
+   "name": "Stacy Besch",
+   "committee": "Stacy Besch for Iowa",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 25383.5
+  },
+  {
+   "name": "Heather Stephenson",
+   "committee": "Stephenson for Iowa",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 9187.41
+  },
+  {
+   "name": "Jonathan Thorup",
+   "committee": "Thorup for Iowa",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 1800.0
+  },
+  {
+   "name": "Eli Licht",
+   "committee": "Eli Licht for Iowa House",
+   "chamber": "house",
+   "district": "72",
+   "contributions": 11354.58
+  },
+  {
+   "name": "Lucas Loftin",
+   "committee": "Loftin For Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 27807.5
+  },
+  {
+   "name": "Nicole Hasso",
+   "committee": "Nicole Hasso for Iowa",
+   "chamber": "house",
+   "district": "43",
+   "contributions": 12681.58
+  },
+  {
+   "name": "Julian Garrett",
+   "committee": "Garrett for Statehouse Committee",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 1200.0
+  },
+  {
+   "name": "Anne Craven",
+   "committee": "The committee to elect Anne Craven",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 6805.59
+  },
+  {
+   "name": "Friends of DeLano Cain-Watson for HD-71",
+   "committee": "Friends of DeLano Cain-Watson for HD-71",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1180.0
+  },
+  {
+   "name": "Heather Matson",
+   "committee": "Heather Matson for Iowa Senate",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 81756.19
+  },
+  {
+   "name": "Shivers for Senate",
+   "committee": "Shivers for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 20288.0
+  },
+  {
+   "name": "Friends of Sean Hanley",
+   "committee": "Friends of Sean Hanley",
+   "chamber": "house",
+   "district": null,
+   "contributions": 50.39
+  },
+  {
+   "name": "Committee to elect Shad Clayton",
+   "committee": "Committee to elect Shad Clayton",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 230.24
+  },
+  {
+   "name": "Samy El-Baroudi",
+   "committee": "Samy El-Baroudi for Iowa Senate",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 27057.0
+  },
+  {
+   "name": "Bob Kressig",
+   "committee": "Kressig for Iowa House 59",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 2750.0
+  },
+  {
+   "name": "Marcques Derby",
+   "committee": "Derby for Iowa",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 5260.0
+  },
+  {
+   "name": "Erin Helleso",
+   "committee": "Helleso 4 House",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 360.0
+  },
+  {
+   "name": "Scott Bodley",
+   "committee": "Bodley for Iowa",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 603.0
+  },
+  {
+   "name": "Michael Tupper",
+   "committee": "Mike Tupper for Iowa House",
+   "chamber": "house",
+   "district": "52",
+   "contributions": 18314.44
+  },
+  {
+   "name": "Zachary Dieken",
+   "committee": "Zach Dieken for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 96.06
+  },
+  {
+   "name": "David Sieck",
+   "committee": "Citizens for Sieck",
+   "chamber": "house",
+   "district": "16",
+   "contributions": 2850.0
+  },
+  {
+   "name": "Price for Iowa",
+   "committee": "Price for Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 17665.31
+  },
+  {
+   "name": "Matthew Mohrfeld",
+   "committee": "Mohrfeld for Iowa's Future",
+   "chamber": "house",
+   "district": "100",
+   "contributions": 17365.34
+  },
+  {
+   "name": "Meghann Foster",
+   "committee": "Meghann Foster for Iowa",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 5746.4
+  },
+  {
+   "name": "Carolyn Wiezorek",
+   "committee": "Carolyn Wiezorek for Iowa",
+   "chamber": "house",
+   "district": "65",
+   "contributions": 9351.03
+  },
+  {
+   "name": "Citizens for Sharon Steckman",
+   "committee": "Citizens for Sharon Steckman",
+   "chamber": "house",
+   "district": null,
+   "contributions": 49.3
+  },
+  {
+   "name": "Mary Wolfe Campaign",
+   "committee": "Mary Wolfe Campaign",
+   "chamber": "house",
+   "district": null,
+   "contributions": 534.56
+  },
+  {
+   "name": "Marie Gleason",
+   "committee": "Gleason for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 44.88
+  },
+  {
+   "name": "Pat Cullen",
+   "committee": "Pat Cullen for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 1106.92
+  },
+  {
+   "name": "Nicholas Molo",
+   "committee": "MOLO FOR SENATE",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 5.54
+  },
+  {
+   "name": "Drew Stensland",
+   "committee": "Drew Stensland For Iowa",
+   "chamber": "house",
+   "district": "75",
+   "contributions": 48729.48
+  },
+  {
+   "name": "Blake Clyde",
+   "committee": "Blake Clyde for Iowa",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 3270.0
+  },
+  {
+   "name": "Sinikka Waugh",
+   "committee": "Sinikka Waugh for Iowa",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 22450.38
+  },
+  {
+   "name": "Jim Beres",
+   "committee": "Jim Beres for Iowa",
+   "chamber": "house",
+   "district": "99",
+   "contributions": 4980.68
+  },
+  {
+   "name": "Nathan Ramker",
+   "committee": "ramkerforiowans",
+   "chamber": "house",
+   "district": "98",
+   "contributions": 3792.5
+  },
+  {
+   "name": "Grace Van Cleave",
+   "committee": "Grace Van Cleave for Iowa Senate",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 77534.53
+  },
+  {
+   "name": "Jacob Welper",
+   "committee": "Welper for Iowa",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 5008.8
+  },
+  {
+   "name": "Alexander Schmidt",
+   "committee": "Alexander Schmidt for Iowa House",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 2385.11
+  },
+  {
+   "name": "Keith Glienke",
+   "committee": "Glienke for Iowa",
+   "chamber": "house",
+   "district": "5",
+   "contributions": 7900.0
+  },
+  {
+   "name": "Lonny Pulkrabek for House",
+   "committee": "Lonny Pulkrabek for House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 62.56
+  },
+  {
+   "name": "Kenneth Croken",
+   "committee": "Friends of Ken Croken",
+   "chamber": "house",
+   "district": "97",
+   "contributions": 21624.0
+  },
+  {
+   "name": "Jerome Amos Jr",
+   "committee": "AMOS for House 62",
+   "chamber": "house",
+   "district": null,
+   "contributions": 340.0
+  },
+  {
+   "name": "Ivette Muhammad",
+   "committee": "Ivette Muhammad For The People \u201cAka\u201d Ivette For The People",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 54835.49
+  },
+  {
+   "name": "Robert Driesen",
+   "committee": "Driesen for House",
+   "chamber": "house",
+   "district": "3",
+   "contributions": 2700.0
+  },
+  {
+   "name": "Randy Meier",
+   "committee": "Randy Meier For Iowa",
+   "chamber": "house",
+   "district": "69",
+   "contributions": 31739.92
+  },
+  {
+   "name": "Zachary Mecham",
+   "committee": "Mecham for Iowa",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 2386.0
+  },
+  {
+   "name": "Sue Cahill for Iowa House",
+   "committee": "Sue Cahill for Iowa House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 62.88
+  },
+  {
+   "name": "Mike Jones",
+   "committee": "Mike Jones for Iowa House",
+   "chamber": "house",
+   "district": "32",
+   "contributions": 10350.0
+  },
+  {
+   "name": "Michael Coonrad",
+   "committee": "Coonrad for Iowa",
+   "chamber": "house",
+   "district": "67",
+   "contributions": 1410.1
+  },
+  {
+   "name": "Matt Conard",
+   "committee": "Conard for Iowa",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 8325.0
+  },
+  {
+   "name": "Mandy  Newton Rosenow",
+   "committee": "Mandy Newton Rosenow for Iowa",
+   "chamber": "house",
+   "district": "46",
+   "contributions": 19129.38
+  },
+  {
+   "name": "Vincent Collis",
+   "committee": "Vincent Collis For Iowa",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 9300.0
+  },
+  {
+   "name": "Jake Heard for Iowa",
+   "committee": "Jake Heard for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 182.52
+  },
+  {
+   "name": "Tom Wieck",
+   "committee": "Tom Wieck for Iowa Senate",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 12000.24
+  },
+  {
+   "name": "Randy Marzen",
+   "committee": "Marzen for Iowa",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 9375.25
+  },
+  {
+   "name": "Sam Wooden",
+   "committee": "Friends of Sam Wooden",
+   "chamber": "house",
+   "district": "71",
+   "contributions": 12395.0
+  },
+  {
+   "name": "Troy Clark",
+   "committee": "Troy Clark for Iowa",
+   "chamber": "house",
+   "district": "39",
+   "contributions": 1849.8
+  },
+  {
+   "name": "Jason Sandholdt",
+   "committee": "Sandholdt for Iowa",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 21918.52
+  },
+  {
+   "name": "Jeffery Kulmatycki",
+   "committee": "Kulmatycki for Senate",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 11210.0
+  },
+  {
+   "name": "Chase Spencer",
+   "committee": "Chase Spencer for Iowa",
+   "chamber": "house",
+   "district": "37",
+   "contributions": 4891.81
+  },
+  {
+   "name": "Austin Garmon",
+   "committee": "GARMON FOR IOWA SENATE",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 1165.0
+  },
+  {
+   "name": "Shane Bellefy",
+   "committee": "Bellefy for Senate",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 48159.4
+  },
+  {
+   "name": "Amy Tagliareni",
+   "committee": "Amy Tagliareni for Iowa",
+   "chamber": "house",
+   "district": "42",
+   "contributions": 9888.7
+  },
+  {
+   "name": "William Owen",
+   "committee": "Bill Owen for Iowa House",
+   "chamber": "house",
+   "district": "11",
+   "contributions": 17952.0
+  },
+  {
+   "name": "Kendra Haug",
+   "committee": "Kendra Haug for Iowa",
+   "chamber": "house",
+   "district": "45",
+   "contributions": 1875.57
+  },
+  {
+   "name": "Mark Cisneros",
+   "committee": "Cisneros For Iowa",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 11325.0
+  },
+  {
+   "name": "Brett Mohler",
+   "committee": "Mohler for Iowa",
+   "chamber": "house",
+   "district": "26",
+   "contributions": 4536.0
+  },
+  {
+   "name": "Tommy Hexter for Iowa",
+   "committee": "Tommy Hexter for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 0.02
+  },
+  {
+   "name": "Brenda Case",
+   "committee": "Case for Iowa Senate",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 7069.2
+  },
+  {
+   "name": "Eric Pearson",
+   "committee": "Citizens For Pearson4Iowa",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 385.0
+  },
+  {
+   "name": "Shane Heintz",
+   "committee": "Heintz for District 51",
+   "chamber": "house",
+   "district": "51",
+   "contributions": 5675.0
+  },
+  {
+   "name": "Matt Oleson",
+   "committee": "Oleson for Iowa",
+   "chamber": "house",
+   "district": "38",
+   "contributions": 6368.24
+  },
+  {
+   "name": "Matthew Smith",
+   "committee": "Matthew Smith for House",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 2831.73
+  },
+  {
+   "name": "Robert Narup",
+   "committee": "Tripp Narup for Iowa",
+   "chamber": "house",
+   "district": "18",
+   "contributions": 5057.32
+  },
+  {
+   "name": "Siegel for Senate",
+   "committee": "Siegel for Senate",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 1.0
+  },
+  {
+   "name": "Dani Ollenburg",
+   "committee": "Dani Ollenburg for House",
+   "chamber": "house",
+   "district": "60",
+   "contributions": 4277.72
+  },
+  {
+   "name": "Nicholas Salazar",
+   "committee": "Salazar for Iowa",
+   "chamber": "house",
+   "district": "96",
+   "contributions": 3810.0
+  },
+  {
+   "name": "Mike Frantz",
+   "committee": "Mike Frantz for Iowa State Senate",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 16679.21
+  },
+  {
+   "name": "Paul Davis",
+   "committee": "Paul Davis For Iowa House District 24",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 22361.0
+  },
+  {
+   "name": "Keith Soko",
+   "committee": "Soko For Iowa",
+   "chamber": "house",
+   "district": "93",
+   "contributions": 748.86
+  },
+  {
+   "name": "Barclay Woerner",
+   "committee": "Barclay Woerner for Iowa House",
+   "chamber": "house",
+   "district": "79",
+   "contributions": 844.99
+  },
+  {
+   "name": "Kenneth Kroll",
+   "committee": "Kroll for Iowa",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 1268.0
+  },
+  {
+   "name": "Ronald  Langston",
+   "committee": "Langston for State Senate",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 9890.52
+  },
+  {
+   "name": "Rugby Sliger",
+   "committee": "Sliger for Iowa",
+   "chamber": "house",
+   "district": "59",
+   "contributions": 6613.1
+  },
+  {
+   "name": "Shawn Olorundami",
+   "committee": "Olorundami for Progress",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 3077.61
+  },
+  {
+   "name": "Guy Morgan",
+   "committee": "Elect Guy Morgan",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 806.97
+  },
+  {
+   "name": "James Behrmann",
+   "committee": "Behrmann for Iowa",
+   "chamber": "house",
+   "district": "82",
+   "contributions": 135.0
+  },
+  {
+   "name": "Parker Hansen for Iowa",
+   "committee": "Parker Hansen for Iowa",
+   "chamber": "house",
+   "district": null,
+   "contributions": 571.79
+  },
+  {
+   "name": "Keith Jones",
+   "committee": "Keith Jones for Iowa",
+   "chamber": "house",
+   "district": "20",
+   "contributions": 3325.27
+  },
+  {
+   "name": "Jeff Thurlow",
+   "committee": "Jeff Thurlow",
+   "chamber": "house",
+   "district": "63",
+   "contributions": 12345.0
+  },
+  {
+   "name": "Beau Klaver",
+   "committee": "Klaver For Iowa",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 26741.95
+  },
+  {
+   "name": "Jim McClain for House",
+   "committee": "Jim McClain for House",
+   "chamber": "house",
+   "district": null,
+   "contributions": 833.83
+  },
+  {
+   "name": "Karen Varley",
+   "committee": "Karen Varley for Iowa.",
+   "chamber": "house",
+   "district": "23",
+   "contributions": 7790.0
+  },
+  {
+   "name": "Calvin Horn",
+   "committee": "Calvin Horn for HD76",
+   "chamber": "house",
+   "district": "76",
+   "contributions": 6301.0
+  },
+  {
+   "name": "Adam  Thimmesch",
+   "committee": "Thimmesch for Iowa House",
+   "chamber": "house",
+   "district": "68",
+   "contributions": 275.0
+  },
+  {
+   "name": "Aaron Hinnah",
+   "committee": "Hinnah For Iowa",
+   "chamber": "house",
+   "district": "88",
+   "contributions": 13468.1
+  },
+  {
+   "name": "Brian Bruening",
+   "committee": "Bruening for Iowa",
+   "chamber": "house",
+   "district": "64",
+   "contributions": 416.0
+  },
+  {
+   "name": "Hollie Zajicek",
+   "committee": "Zajicek for Iowa Senate",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 11628.47
+  },
+  {
+   "name": "Christopher New",
+   "committee": "New Way Forward",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 1565.0
+  },
+  {
+   "name": "Sonya Hicks",
+   "committee": "Hicks for Iowa",
+   "chamber": "house",
+   "district": "24",
+   "contributions": 250.0
+  },
+  {
+   "name": "Brittany Erickson",
+   "committee": "Brittany Erickson for Iowa",
+   "chamber": "house",
+   "district": "92",
+   "contributions": 798.53
+  },
+  {
+   "name": "Kolton Jones",
+   "committee": "Kolton Jones for Iowa",
+   "chamber": "house",
+   "district": "25",
+   "contributions": 553.7
+  },
+  {
+   "name": "Josh Steinhoff",
+   "committee": "Vote for Steinhoff",
+   "chamber": "house",
+   "district": "1",
+   "contributions": 90.0
+  },
+  {
+   "name": "Brand For Iowa",
+   "committee": "Brand For Iowa",
+   "chamber": "senate",
+   "district": null,
+   "contributions": 4995.0
+  },
+  {
+   "name": "Kurtis Bower",
+   "committee": "Kurtis Bower for Iowa",
+   "chamber": "house",
+   "district": "55",
+   "contributions": 3170.0
+  },
+  {
+   "name": "Lucas Hewitt",
+   "committee": "Hewitt for Iowa House",
+   "chamber": "house",
+   "district": "61",
+   "contributions": 595.86
+  },
+  {
+   "name": "Daniel Wojcik",
+   "committee": "Daniel Wojcik For Iowa",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 200.0
+  },
+  {
+   "name": "Charley Newman",
+   "committee": "Newman4Iowa",
+   "chamber": "house",
+   "district": "47",
+   "contributions": 680.0
+  },
+  {
+   "name": "Mr. Lynn Hammel",
+   "committee": "Hammel for Iowa",
+   "chamber": "house",
+   "district": "33",
+   "contributions": 652.05
+  },
+  {
+   "name": "Benjamin Olsen",
+   "committee": "Olsen for Iowa",
+   "chamber": "house",
+   "district": "48",
+   "contributions": 3230.22
+  }
+ ]
+}

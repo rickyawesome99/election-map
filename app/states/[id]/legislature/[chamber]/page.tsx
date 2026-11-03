@@ -54,7 +54,7 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
     <Link
       key={c}
       href={`/states/${state.id}/legislature/${c}`}
-      className="pb-2.5 text-sm font-semibold transition-colors"
+      className="ix-press pb-2.5 text-sm font-semibold transition-colors hover:text-[var(--app-text-primary)]"
       style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)", borderBottom: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`, marginBottom: "-1px" }}
     >
       {chamberShortLabel(c, unicameral)}

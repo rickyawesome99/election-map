@@ -1137,7 +1137,18 @@ export function calculateDistrictTpl(districtId: string): number {
 // margin with weight w = min(POLL_W_MAX, nEff / (nEff + POLL_K[office])): a race with no polls is the
 // model alone; one fresh poll gives a Senate race 25% polling, a House or Governor race 33%;
 // no number of polls takes more than POLL_W_MAX from the model.
-export interface RacePolling { avg: RacePollAverage | null; weight: number; key: string; }
+export interface RacePolling {
+  avg: RacePollAverage | null;
+  weight: number;
+  key: string;
+  /** R-positive pts added to avg.diff in the blend: POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office] (0 without polls). */
+  shade: number;
+}
+
+/** The race-poll miss shade for an office (R-positive pts), applied to the poll average in the blend. */
+export function pollMissShade(office: "H" | "S" | "G"): number {
+  return F.POLL_MISS_SHRINK * (F.POLL_MISS_HISTORICAL[office] ?? 0);
+}
 
 export function racePollLabel(race: { raceType: string; name: string; electionType?: string }): string {
   if (race.raceType === "house") return `House ${race.name}`;
@@ -1154,7 +1165,7 @@ export function racePollingFor(race: { id: string; state: string; raceType: stri
   // …and read net of their pollster's lean relative to the field this cycle.
   const house = F.HOUSE_EFFECTS ? liveHouseEffects(asOf).of : undefined;
   const avg = getRacePollAverage(office, stateAbbr, racePollLabel(race), asOf, aging, house, F.POLL_HALF_LIFE_DAYS[office]);
-  return { avg, weight: avg ? pollWeight(avg.nEff, office) : 0, key };
+  return { avg, weight: avg ? pollWeight(avg.nEff, office) : 0, key, shade: avg ? pollMissShade(office) : 0 };
 }
 
 // This cycle's pollster house effects, from every polled race (aged margins), per as-of day.
@@ -1215,7 +1226,8 @@ export function projectRace(race: ProjectedMarginInput): { model: number; pollin
   const structuralMargin = preMoney + compIncPts + ffPts + qualityPts;
 
   const polling = racePollingFor(race);
-  const blended = polling.avg ? (1 - polling.weight) * structuralMargin + polling.weight * polling.avg.diff : structuralMargin;
+  // The poll average enters the blend shaded by half its office's historical final-poll miss (POLL_MISS_SHRINK).
+  const blended = polling.avg ? (1 - polling.weight) * structuralMargin + polling.weight * (polling.avg.diff + polling.shade) : structuralMargin;
   // A projection must name a leader. The exact margin decides it (pages show one decimal, so a
   // near-tie reads "D+0.0" / "R+0.0"); should the blend ever land on exactly 0, the side comes
   // from the model margin, then the poll average, then the seat's pre-money lean.
@@ -1315,19 +1327,23 @@ export interface EnvironmentModel {
 }
 
 const envMean = (v: number[]) => v.reduce((a, b) => a + b, 0) / v.length;
+/** The House vote the environment model is fitted against: official total or uncontested-seats-imputed (ENV_PV_BASIS). */
+export function housePvOnBasis(r: { housePv: number | null; housePvImputed: number | null }, basis: "raw" | "imputed" = F.ENV_PV_BASIS): number {
+  return basis === "imputed" ? (r.housePvImputed ?? r.housePv ?? 0) : (r.housePv ?? 0);
+}
 let environmentModelCache: EnvironmentModel | null = null;
 
 export function getEnvironmentModel(): EnvironmentModel {
   if (environmentModelCache) return environmentModelCache;
   const E = getTplFit().E;
   const rows = nationalEnvironmentHistory.filter((r) => E[r.year] != null && r.housePv != null && r.gbFinal != null && r.gbMidSept != null);
-  const xs = rows.map((r) => r.housePv!), ys = rows.map((r) => E[r.year]);
+  const xs = rows.map((r) => housePvOnBasis(r)), ys = rows.map((r) => E[r.year]);
   const mx = envMean(xs), my = envMean(ys);
   let sxy = 0, sxx = 0;
   for (let i = 0; i < xs.length; i += 1) { sxy += (xs[i] - mx) * (ys[i] - my); sxx += (xs[i] - mx) ** 2; }
   const s = sxx > 0 ? sxy / sxx : 1;
   const c = my - s * mx;
-  const miss = rows.map((r) => r.housePv! - r.gbFinal!);
+  const miss = rows.map((r) => housePvOnBasis(r) - r.gbFinal!);
   const drift = rows.map((r) => r.gbFinal! - r.gbMidSept!);
   const meanMiss = envMean(miss);
   const sdMiss = miss.length > 1 ? Math.sqrt(miss.reduce((a, x) => a + (x - meanMiss) ** 2, 0) / (miss.length - 1)) : 0;

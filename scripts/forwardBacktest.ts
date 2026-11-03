@@ -62,6 +62,7 @@ import { classifyEligibility } from "@/data/raceEligibility";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { computeRacePollAverage, pollAgingShift, pollWeight, allocateUndecided, type RaceAverageRules } from "@/lib/racePollAverage";
 import { genericBallotSeries } from "@/lib/genericBallotAverage";
+import { splitCsvLine } from "@/lib/racePollsHistory";
 import { computeHouseEffects } from "@/lib/pollsterHouseEffects";
 import type { GenericBallotPoll } from "@/data/genericBallotPolls";
 import type { RacePoll } from "@/data/racePolls";
@@ -101,17 +102,23 @@ const halfLifeOf = (office: "H" | "S" | "G") => halfLifeOverride ?? F.POLL_HALF_
 const NO_PARTISAN = argv.includes("--no-partisan");
 // --no-house-scale: score House races on the E scale (the pre-2026-11-02 rule) instead of the House-vote scale.
 const HOUSE_SCALE = F.HOUSE_ENV_ON_VOTE_SCALE && !argv.includes("--no-house-scale");
+// --no-poll-shade: blend race polls at face value (the pre-2026-11-03 rule) instead of shaded by half the office's historical miss.
+const POLL_SHADE = !argv.includes("--no-poll-shade");
+const pollShade = (office: "S" | "G" | "H") => (POLL_SHADE ? F.POLL_MISS_SHRINK * F.POLL_MISS_HISTORICAL[office] : 0);
 // Shift applied to party/campaign-sponsored polls toward the sponsor's opponent (pts of margin).
 const PARTISAN_SHIFT = Number(argOf("--partisan-shift") ?? 0);
 const THETA: Theta = LIVE;
 let H_INC = 3; // fixed House incumbency prior (INCUMBENT_ADVANTAGE_FIXED); --seat-status sweeps it
 
 // ── national environment history (data/nationalEnvironmentHistory.ts) ───────
+// --env-basis raw|imputed: the House vote the structural conversion and the miss are fitted against
+// (default: the live ENV_PV_BASIS). housePv below is already on the chosen basis.
+const ENV_BASIS = (argOf("--env-basis") as "raw" | "imputed" | undefined) ?? F.ENV_PV_BASIS;
 interface EnvRow { year: number; gbSept: number; gbFinal: number; housePv: number; }
 const envHistory: Record<number, EnvRow> = {};
 for (const r of nationalEnvironmentHistory) {
   if (r.gbMidSept == null || r.gbFinal == null || r.housePv == null) continue;
-  envHistory[r.year] = { year: r.year, gbSept: r.gbMidSept, gbFinal: r.gbFinal, housePv: r.housePv };
+  envHistory[r.year] = { year: r.year, gbSept: r.gbMidSept, gbFinal: r.gbFinal, housePv: ENV_BASIS === "imputed" ? (r.housePvImputed ?? r.housePv) : r.housePv };
 }
 
 // ── helpers ──────────────────────────────────────────────────────────────────
@@ -186,6 +193,12 @@ function districtLeanAsOf(race: typeof houseData[number], Y: number, fit: Fit): 
     rows.push({ year: r.year, type: "H", nm, w: 1 });
   }
   if (rows.length === 0) return null;
+  return leanFromRows(rows, Y);
+}
+
+// Decay- and coverage-weighted mean of a district's stripped rows with two-pass Huber — the
+// aggregation calculateDistrictModel uses, shared by the 2026-lines and lines-of-the-day leans.
+function leanFromRows(rows: { year: number; type: "P" | "H"; nm: number; w: number }[], Y: number): number {
   const aggregate = () => {
     const years = [...new Set(rows.map((r) => r.year))];
     let num = 0, den = 0;
@@ -382,6 +395,102 @@ function houseSeat(race: typeof houseData[number], state: string, pr: PastResult
   return { status: wonAsInc === true ? "veteran" : "freshman", sign };
 }
 
+// ── House on the lines of the day (2018, 2020) ───────────────────────────────
+// The 2026-lines rule above can score a 2018 or 2020 House race only where its district was never
+// redrawn since — 6 and 5 races. With --house-vintage (default on) those years are scored on the map
+// actually in force: presidential results by district on that map (The Downballot, data-entry/
+// pres_by_cd_downballot/) and House results on those lines (data-entry/house_past_results.csv and
+// house_past_results_pre2016/), keyed by the district codes of the day — the codes the polls and
+// fundraising files already use. Environment strips for years before the panel (2008, 2012, 2014)
+// use the structural conversion of the actual House vote, E ≈ c + s × PV, fitted without year Y.
+// Money strips for 2012/2014 House rows are not on file yet (FEC weball12/14 nominees unmatched)
+// and enter as 0. --house-vintage off restores the 2026-lines rule for every year.
+const HOUSE_VINTAGE = argOf("--house-vintage") !== "off";
+const VINTAGE_YEARS = new Set([2018, 2020]);
+const MAP_OF_HOUSE_YEAR: Record<number, number> = { 2012: 2012, 2014: 2012, 2016: 2016, 2018: 2018, 2020: 2020 };
+// Mid-decade redraws on the 2012-cycle map: the first election on the lines in force in Y (else 2012).
+const MID_DECADE_REDRAWS: Record<string, number[]> = { FL: [2016], VA: [2016], NC: [2016, 2020], PA: [2018] };
+const eraStartFor = (st: string, Y: number) => { const ys = (MID_DECADE_REDRAWS[st] ?? []).filter((y) => y <= Y); return ys.length ? Math.max(...ys) : 2012; };
+// National House popular vote (R-positive, % of total) for years before the fitted panel.
+const HOUSE_PV_BEFORE_PANEL: Record<number, number> = { 2008: -10.6, 2012: -1.2, 2014: 5.7 };
+function readCsvRecords(file: string): Record<string, string>[] {
+  const lines = fs.readFileSync(path.join(process.cwd(), "data-entry", file), "utf8").split(/\r?\n/).filter((l) => l.trim());
+  const hdr = splitCsvLine(lines[0]);
+  return lines.slice(1).map((l) => { const c = splitCsvLine(l); return Object.fromEntries(hdr.map((h, i) => [h, c[i] ?? ""])); });
+}
+interface VintageHouseRow { code: string; st: string; year: number; demCandidate: string; repCandidate: string; demPct: number; repPct: number; incumbent: "D" | "R" | "Open" }
+let vintageCache: { pres: Map<string, Map<number, number>>; house: Map<number, Map<string, VintageHouseRow>> } | null = null;
+function vintageData() {
+  if (vintageCache) return vintageCache;
+  const pres = new Map<string, Map<number, number>>(); // `${map}|${code}` → pres year → R-positive margin
+  for (const map of [2012, 2016, 2018, 2020]) {
+    for (const r of readCsvRecords(`pres_by_cd_downballot/pres_by_cd_${map}_lines.csv`)) {
+      if (r.margin === "") continue;
+      const k = `${map}|${r.district}`; (pres.get(k) ?? pres.set(k, new Map()).get(k)!).set(Number(r.pres_year), Number(r.margin));
+    }
+  }
+  const house = new Map<number, Map<string, VintageHouseRow>>();
+  for (const file of ["house_past_results.csv", "house_past_results_pre2016/house_past_results_2012_2014.csv"]) {
+    for (const r of readCsvRecords(file)) {
+      const year = Number(r.year); if (!year) continue;
+      const row: VintageHouseRow = { code: r.district_name, st: r.state_abbr, year, demCandidate: r.dem_candidate, repCandidate: r.rep_candidate, demPct: Number(r.dem_pct) || 0, repPct: Number(r.rep_pct) || 0, incumbent: r.incumbent === "D" ? "D" : r.incumbent === "R" ? "R" : "Open" };
+      (house.get(year) ?? house.set(year, new Map()).get(year)!).set(row.code, row);
+    }
+  }
+  vintageCache = { pres, house };
+  return vintageCache;
+}
+// E(year) for a strip: the window fit's value, or for years before the panel the structural conversion of the House vote.
+function envForStrip(year: number, Y: number, fit: Fit): number | null {
+  if (fit.E[year] != null) return fit.E[year];
+  const pv = HOUSE_PV_BEFORE_PANEL[year]; if (pv == null) return null;
+  const m = structModel(Y); return m.c + m.s * pv;
+}
+const tagParty = (name: string, fallback: "D" | "R") => { const m = /\(([DRI])\)\s*$/.exec(name); return m ? m[1] : fallback; };
+function vintageDistrictLeanAsOf(code: string, st: string, Y: number, fit: Fit): number | null {
+  const { pres, house } = vintageData();
+  const beta = fit.beta[st] ?? 1;
+  const rows: { year: number; type: "P" | "H"; nm: number; w: number }[] = [];
+  for (const [year, margin] of pres.get(`${MAP_OF_HOUSE_YEAR[Y]}|${code}`) ?? []) {
+    if (year >= Y) continue;
+    const E = envForStrip(year, Y, fit); if (E == null) continue;
+    rows.push({ year, type: "P", nm: margin - beta * E, w: 1 });
+  }
+  for (let year = Math.max(2012, eraStartFor(st, Y)); year <= Y - 2; year += 2) {
+    const r = house.get(year)?.get(code); if (!r) continue;
+    if (classifyEligibility(r, st) !== "eligible") continue;
+    const E = envForStrip(year, Y, fit); if (E == null) continue;
+    const gap = year >= 2016 ? gapOf(fundraisingData[`H:${code}:${year}`]) : null;
+    rows.push({ year, type: "H", nm: r.repPct - r.demPct + incPts({ H: H_INC }, "H", r.incumbent) + ffPts(THETA, gap) - beta * E, w: 1 });
+  }
+  if (rows.length === 0) return null;
+  return leanFromRows(rows, Y);
+}
+function vintageHousePreds(Y: number, fit: Fit, effects: Map<string, number>): Pred[] {
+  const { house } = vintageData();
+  const out: Pred[] = [];
+  for (const [code, r] of house.get(Y) ?? []) {
+    const st = r.st;
+    if (classifyEligibility(r, st) !== "eligible") continue;
+    const lean = vintageDistrictLeanAsOf(code, st, Y, fit); if (lean == null) continue;
+    const prev = eraStartFor(st, Y) <= Y - 2 ? house.get(Y - 2)?.get(code) : undefined;
+    let seat: Pred["seat"];
+    if (r.incumbent === "Open") seat = { status: "open", sign: prev ? (prev.repPct > prev.demPct ? 1 : -1) : 0 };
+    else {
+      const name = normName(r.incumbent === "R" ? r.repCandidate : r.demCandidate);
+      const prevWinner = prev ? normName(prev.repPct > prev.demPct ? prev.repCandidate : prev.demCandidate) : "";
+      seat = { status: prev && prevWinner === name && prev.incumbent === r.incumbent ? "veteran" : "freshman", sign: r.incumbent === "R" ? 1 : -1 };
+    }
+    const gap = gapOf(fundraisingData[`H:${code}:${Y}`]);
+    out.push({
+      office: "H", year: Y, key: code, actual: r.repPct - r.demPct,
+      lean, beta: fit.beta[st] ?? 1, inc: -incPts({ H: H_INC }, "H", r.incumbent), ff: forwardFf(gap), gap, incSign: incSignOf(r.incumbent), seat,
+      quality: qualityOf(Y, effects, st, r.incumbent, { name: r.demCandidate, party: tagParty(r.demCandidate, "D") }, { name: r.repCandidate, party: tagParty(r.repCandidate, "R") }),
+    });
+  }
+  return out;
+}
+
 function buildPreds(Y: number): Pred[] {
   const fit = fitUpTo(Y - 1);
   const effects = candidateEffectsAsOf(Y);
@@ -397,6 +506,7 @@ function buildPreds(Y: number): Pred[] {
       quality: qualityOf(Y, effects, r.abbr, r.incumbent, { name: r.demCandidate, party: r.demParty }, { name: r.repCandidate, party: r.repParty }),
     });
   }
+  if (HOUSE_VINTAGE && VINTAGE_YEARS.has(Y)) { out.push(...vintageHousePreds(Y, fit, effects)); return out; }
   for (const race of houseData) {
     const pr = (race.pastResults ?? []).find((x) => x.year === Y) as PastResult | undefined;
     if (!pr) continue;
@@ -958,7 +1068,7 @@ if (POLLS) {
         }
       }
       if (rows.length < 10) continue;
-      const blend = (r: PRow, k: number) => { const w = k === Infinity ? 0 : Math.min(F.POLL_W_MAX, r.nEff / (r.nEff + k)); return (1 - w) * r.model + w * r.poll; };
+      const blend = (r: PRow, k: number) => { const w = k === Infinity ? 0 : Math.min(F.POLL_W_MAX, r.nEff / (r.nEff + k)); return (1 - w) * r.model + w * (r.poll + pollShade(r.office as "S" | "G" | "H")); };
       const maeAt = (rs: PRow[], k: number) => mean(rs.map((r) => Math.abs(r.actual - blend(r, k))));
       const bestK = (rs: PRow[]) => ks.reduce((b, k) => (maeAt(rs, k) < maeAt(rs, b) ? k : b), ks[0]);
       const kStar = bestK(rows);
@@ -1094,7 +1204,7 @@ function horizonBacktest(days: number[], opt: HorizonOpts = {}): HorizonRow[] {
         const w = avg ? pollWeight(avg.nEff, x.office) : 0;
         // pollShiftPerLean: pts toward R per 10 pts of the seat's R lean (negative in blue seats), lean capped at ±30
         const leanShift = (opt.pollShiftPerLean ?? 0) * Math.max(-3, Math.min(3, x.lean / 10));
-        const margin = avg ? (1 - w) * model + w * (avg.diff + (opt.pollShift ?? 0) + leanShift) : model;
+        const margin = avg ? (1 - w) * model + w * (avg.diff + pollShade(x.office) + (opt.pollShift ?? 0) + leanShift) : model;
         if (opt.competitiveOnly != null && Math.abs(model - compInc(x, E)) > opt.competitiveOnly) continue; // same race set whatever the experiment
         if (opt.collect && avg) {
           const ps = avg.polls;
@@ -1393,7 +1503,7 @@ if (EMIT) {
             if (x.office !== office) continue; all++;
             const avg = computeRacePollAverage(pollsByRace.get(pollKeyOf(x)) ?? [], asOf, undefined, undefined, halfLifeOf(office)); if (!avg) continue;
             const w = pollWeight(avg.nEff, office), model = predOf(x, E);
-            eM.push(Math.abs(x.actual - model)); eP.push(Math.abs(x.actual - avg.diff)); eB.push(Math.abs(x.actual - ((1 - w) * model + w * avg.diff))); ws.push(w);
+            eM.push(Math.abs(x.actual - model)); eP.push(Math.abs(x.actual - avg.diff)); eB.push(Math.abs(x.actual - ((1 - w) * model + w * (avg.diff + pollShade(office))))); ws.push(w);
           }
         }
         if (eM.length >= 10) polls.push({ horizon, office, polled: eM.length, all, maeModel: r2(mean(eM)), maePoll: r2(mean(eP)), maeBlend: r2(mean(eB)), meanW: r2(mean(ws)) });

@@ -1,8 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { ComposableMap, Geography } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
+import CountyTooltip from "@/components/CountyTooltip";
+import { fmt1, marginColor } from "@/components/tpl/format";
+import { useMapTooltip } from "@/lib/useMapTooltip";
 import { formatProjectedMargin, getRaceColor, marginToRating, fmtLean } from "@/lib/colorScale";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { statesData } from "@/data/statesData";
@@ -143,6 +147,9 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
   const darkMode = useDarkMode();
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const { electionYear, genericBallot: gb, approval, otherForecasts, seats, totalSeats, sims, stateMargins, updated, trend, pollingCard } = data;
+  // Desktop hover box on the State TPL map — the TPL hub's figure tooltip.
+  const [hoveredState, setHoveredState] = useState<string | null>(null);
+  const { onMouseMove: onTipMove, tooltipRef } = useMapTooltip(14, 8);
   const house = seats.house;
   const senate = seats.senate;
   const governor = seats.governor;
@@ -194,13 +201,16 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
               <div className="text-[11px] font-bold uppercase tracking-[0.12em]">State TPL</div>
               <div className="text-[11px]" style={{ color: t.textMuted }}>Click to view a state</div>
             </div>
-            <div className="h-[310px] sm:h-[420px]">
+            <div className="relative h-[310px] sm:h-[420px]" onMouseMove={onTipMove}>
+              {hoveredState && stateMargins[hoveredState] != null && (
+                <CountyTooltip kind="figure" title={hoveredState} label="TPL" value={fmt1(stateMargins[hoveredState])} valueColor={marginColor(stateMargins[hoveredState])} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />
+              )}
               <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1120 }} style={{ width: "100%", height: "100%" }}>
                 <Geographies geography={STATES_URL}>{({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => {
                   const state = geo.properties?.name as string;
                   const margin = stateMargins[state];
                   const stateSlug = statesData.find((entry) => entry.name === state)?.id;
-                  return <Geography key={geo.rsmKey} geography={geo} onClick={() => { if (stateSlug) window.location.assign(`/states/${stateSlug}`); }} aria-label={`${state}${margin == null ? "" : ` ${formatProjectedMargin(margin)}`}`} style={{ default: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.mapStroke, strokeWidth: 1.2, outline: "none" }, hover: { fill: margin == null ? t.hoverUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 1.7, outline: "none", cursor: "pointer" }, pressed: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 2, outline: "none" } }} />;
+                  return <Geography key={geo.rsmKey} geography={geo} onMouseEnter={() => setHoveredState(state)} onMouseLeave={() => setHoveredState(null)} onClick={() => { if (stateSlug) window.location.assign(`/states/${stateSlug}`); }} aria-label={`${state}${margin == null ? "" : ` ${formatProjectedMargin(margin)}`}`} style={{ default: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.mapStroke, strokeWidth: 1.2, outline: "none" }, hover: { fill: margin == null ? t.hoverUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 1.7, outline: "none", cursor: "pointer" }, pressed: { fill: margin == null ? t.mapUnfilled : getRaceColor(margin), stroke: t.hoverStroke, strokeWidth: 2, outline: "none" } }} />;
                 })}</Geographies>
               </ComposableMap>
             </div>

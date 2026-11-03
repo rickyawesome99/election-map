@@ -1,85 +1,98 @@
 "use client";
 
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
-import type { NightFit } from "@/lib/resultsNight";
-import { OFFICE_LABEL, RESULTS_OFFICES } from "@/lib/resultsTypes";
-import { fmtCall, fmtInt, fmtMargin, marginSideColor, raceHash } from "@/lib/resultsFormat";
-import type { ResultsRow } from "@/components/results/ResultsPage";
+import { MIN_COMPLETE, type AreaSwing, type NightFit } from "@/lib/resultsNight";
+import { COUNTY_AREAS, OFFICE_LABEL, RESULTS_OFFICES, type CountyArea } from "@/lib/resultsTypes";
+import { fmtInt, fmtMargin, marginSideColor } from "@/lib/resultsFormat";
 
 // What the counties finished anywhere say about the races still out (lib/resultsNight.ts): the
-// national swing, each office's offset, how the swing runs with a county's makeup, the states with
-// their own shared miss, how far the votes counted first run from the final count, and the races
-// with nothing counted whose projection moved most.
+// national swing and each office's offset, then how urban, suburban and rural counties are running
+// against the projection (areaSwings, plain averages beside the fit). The state misses, the demographic slopes
+// and the early-count skew are still fitted and used by the needle, just not shown here.
 
 const muted = { color: "var(--app-text-muted)" };
 const veryMuted = { color: "var(--app-text-very-muted)" };
 const serif = { fontFamily: "var(--font-serif)" };
 
-function Term({ label, value, se, note }: { label: string; value: number; se: number; note?: string }) {
+function Subhead({ title, note }: { title: string; note: string }) {
   return (
-    <div className="min-w-0">
-      <div className="text-[10px] font-bold uppercase tracking-wider" style={muted}>{label}</div>
-      <div className="text-xl font-bold tabular-nums" style={{ ...serif, color: marginSideColor(value) }}>{fmtMargin(value, undefined, 1)} <span className="text-[11px] font-normal" style={veryMuted}>±{se.toFixed(1)}</span></div>
-      {note && <div className="text-[11px]" style={veryMuted}>{note}</div>}
+    <div className="mb-2">
+      <div className="text-[10px] font-bold uppercase tracking-wider" style={muted}>{title}</div>
+      <div className="text-[11px] leading-snug" style={veryMuted}>{note}</div>
     </div>
   );
 }
 
-export default function NightPanel({ fit, rows, onSelect }: { fit: NightFit; rows: ResultsRow[]; onSelect: (row: ResultsRow) => void }) {
-  const inFit = fit.n >= 0.5;
-  const states = Object.entries(fit.states).filter(([, s]) => s.n >= 0.5).sort((a, b) => Math.abs(b[1].value) - Math.abs(a[1].value)).slice(0, 8);
-  // The early-vote skew is stored with positive = the first votes lean Democratic; shown as the early
-  // count's lean against the final, R-positive like every margin here.
-  const mirages = Object.entries(fit.mirage).filter(([, m]) => m.n >= 1).sort((a, b) => Math.abs(b[1].value) - Math.abs(a[1].value)).slice(0, 8);
-  // Competitive races first (the forecast within 15 pts), where a shift can change the outcome; safe
-  // seats only when fewer than four of those have moved.
-  const waiting = rows.filter((r) => r.proj.tier === "none" && !r.proj.locked && r.prior.forecast.contest === "contested" && Math.abs(r.proj.night.shift) >= 0.5);
-  const competitive = waiting.filter((r) => Math.abs(r.prior.forecast.margin) < 15);
-  const movers = (competitive.length >= 4 ? competitive : waiting).sort((a, b) => Math.abs(b.proj.night.shift) - Math.abs(a.proj.night.shift)).slice(0, 8);
+/** One term as a diverging bar: Democratic to the left of the center line, Republican to the right,
+ *  with a faint whisker for ± its standard error where it has one, and `meta` (a count) beside the
+ *  label. `scale` is the value that fills half the track. */
+function Bar({ label, value, se, meta, scale, narrow, rule }: { label: string; value: number; se?: number; meta?: string; scale: number; narrow?: boolean; rule?: boolean }) {
+  const pos = (x: number) => 50 + Math.max(-1, Math.min(1, x / scale)) * 50;
+  const color = marginSideColor(value);
   return (
-    <section>
-      <LedgerSectionHead label="What early results say" meta={inFit ? `${fmtInt(fit.n)} counties' weight · ${fmtInt(fit.votes)} votes in the fit` : "no county is half counted yet"} />
+    <div className={`grid ${narrow ? "grid-cols-[3.75rem_minmax(0,1fr)_5.75rem]" : "grid-cols-[minmax(0,6.5rem)_minmax(0,1fr)_5.75rem]"} items-center gap-3 py-[3px] text-[13px] tabular-nums ${rule ? "mb-1 border-b pb-1.5" : ""}`} style={rule ? { borderColor: "var(--app-border)" } : undefined}>
+      <span className="truncate"><span className="font-semibold">{label}</span>{meta && <span className="ml-1.5 text-[11px]" style={veryMuted}>{meta}</span>}</span>
+      <span className="relative h-3.5">
+        <span className="absolute inset-y-0 left-1/2 w-px" style={{ background: "var(--app-border)" }} />
+        {se != null && <span className="absolute top-1/2 h-px" style={{ left: `${pos(value - se)}%`, width: `${pos(value + se) - pos(value - se)}%`, background: "var(--app-text-very-muted)" }} />}
+        {Math.abs(value) >= 0.05 && <span className="absolute inset-y-0.5 rounded-sm" style={{ left: `${Math.min(50, pos(value))}%`, width: `${Math.abs(pos(value) - 50)}%`, background: `color-mix(in srgb, ${color} 70%, transparent)` }} />}
+      </span>
+      <span className="text-right"><b style={{ color }}>{fmtMargin(value, undefined, 1)}</b> {se != null && <span className="text-[11px]" style={veryMuted}>±{se.toFixed(1)}</span>}</span>
+    </div>
+  );
+}
+
+/** A shared half-track scale for a group of bars: its largest value plus error, never below `floor`. */
+const scaleOf = (terms: { value: number; se: number }[], floor: number) => Math.max(floor, ...terms.map((t) => Math.abs(t.value) + t.se));
+
+const AREA_LABEL: Record<CountyArea, string> = { urban: "Urban", suburban: "Suburban", rural: "Rural" };
+
+export default function NightPanel({ fit, areas }: { fit: NightFit; areas: Record<CountyArea, AreaSwing> }) {
+  const inFit = fit.n >= 0.5;
+  return (
+    // A tighter gap to the races section below than the page's other sections
+    <section className="mb-5">
+      <LedgerSectionHead label="What early results say" meta={inFit ? `${fmtInt(fit.n)} counties' weight · ${fmtInt(fit.votes)} votes in the fit` : `no county is ${Math.round(MIN_COMPLETE * 100)}% counted yet`} />
       {!inFit ? (
         <p className="text-[13px]" style={muted}>Once counties finish counting, their swing against the projection is read across every race — the national swing, each state&apos;s own miss, and how the swing runs with a county&apos;s makeup — and carried to the races still out. Until then every race is at its forecast.</p>
       ) : (
-        <div className="space-y-5">
-          <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4 lg:grid-cols-7">
-            <Term label="National swing" value={fit.national.value} se={fit.national.se} note="vs the forecast, at β = 1" />
-            {RESULTS_OFFICES.map((o) => <Term key={o} label={`${OFFICE_LABEL[o]} offset`} value={fit.office[o].value} se={fit.office[o].se} />)}
-            <Term label="+10 pts nonwhite" value={fit.slopes.nonwhite.value} se={fit.slopes.nonwhite.se} note="swing per 10 pts more nonwhite" />
-            <Term label="+10 pts college" value={fit.slopes.college.value} se={fit.slopes.college.se} note="per 10 pts more college grads" />
-            <Term label="+10 pts redder" value={fit.slopes.lean.value} se={fit.slopes.lean.se} note="per 10 pts redder prior" />
+        <div className="space-y-7">
+          <div className="grid gap-x-10 gap-y-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.2fr)]">
+            {/* The headline: the national swing, in a sentence */}
+            <div>
+              <div className="text-[10px] font-bold uppercase tracking-wider" style={muted}>National swing</div>
+              <div className="mt-0.5 flex items-baseline gap-2">
+                <span className="text-4xl font-bold tabular-nums" style={{ ...serif, color: marginSideColor(fit.national.value) }}>{fmtMargin(fit.national.value, undefined, 1)}</span>
+                <span className="text-[12px] tabular-nums" style={veryMuted}>±{fit.national.se.toFixed(1)}</span>
+              </div>
+              <p className="mt-1.5 max-w-xs text-[12.5px] leading-snug" style={muted}>
+                {Math.abs(fit.national.value) < 0.05
+                  ? `Counties at least ${Math.round(MIN_COMPLETE * 100)}% counted are landing right on the forecast.`
+                  : <>Counties at least {Math.round(MIN_COMPLETE * 100)}% counted are running <b style={{ color: marginSideColor(fit.national.value) }}>{Math.abs(fit.national.value).toFixed(1)} pts {fit.national.value > 0 ? "more Republican" : "more Democratic"}</b> than the forecast.</>}
+                {" "}<span style={veryMuted}>Sized for a typical state; swingier states move more.</span>
+              </p>
+            </div>
+            <div>
+              <Subhead title="By office" note="Each office's extra swing on top of the national one" />
+              {(() => { const sc = scaleOf(RESULTS_OFFICES.map((o) => fit.office[o]), 2); return RESULTS_OFFICES.map((o) => <Bar key={o} label={OFFICE_LABEL[o]} value={fit.office[o].value} se={fit.office[o].se} scale={sc} />); })()}
+            </div>
+            <div>
+              <Subhead title="By type of county" note={`Counties at least ${Math.round(MIN_COMPLETE * 100)}% counted (count beside each) against their projection`} />
+              {(() => {
+                const sc = Math.max(2, ...COUNTY_AREAS.map((a) => Math.abs(areas[a].value ?? 0) * 1.25));
+                return COUNTY_AREAS.map((a) => {
+                  const r = areas[a];
+                  if (r.value == null) return (
+                    <div key={a} className="grid grid-cols-[minmax(0,6.5rem)_minmax(0,1fr)_5.75rem] items-center gap-3 py-[3px] text-[13px]">
+                      <span className="truncate font-semibold">{AREA_LABEL[a]}</span><span /><span className="text-right text-[11px]" style={veryMuted}>none in yet</span>
+                    </div>
+                  );
+                  return <Bar key={a} label={AREA_LABEL[a]} value={r.value} meta={fmtInt(r.counties)} scale={sc} />;
+                });
+              })()}
+            </div>
           </div>
-          {states.length > 0 && (
-            <div>
-              <div className="mb-1.5 text-[10px] font-bold uppercase tracking-wider" style={muted}>States running off their projection <span className="font-normal normal-case tracking-normal" style={veryMuted}>— beyond the national swing; shared by every race in the state</span></div>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-[13px] tabular-nums">
-                {states.map(([st, s]) => <span key={st}><b>{st}</b> <span style={{ color: marginSideColor(s.value) }}>{fmtMargin(s.value, undefined, 1)}</span> <span style={veryMuted}>±{s.se.toFixed(1)}</span></span>)}
-              </div>
-            </div>
-          )}
-          {fit.mirageNational.n >= 1 && (
-            <div>
-              <div className="mb-1.5 text-[10px] font-bold uppercase tracking-wider" style={muted}>Votes counted first vs the final <span className="font-normal normal-case tracking-normal" style={veryMuted}>— how far a county&apos;s first votes run from where it finishes; part-counted counties are read with this removed</span></div>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-[13px] tabular-nums">
-                <span><b>Nation</b> <span style={{ color: marginSideColor(-fit.mirageNational.value) }}>{fmtMargin(-fit.mirageNational.value, undefined, 1)}</span> <span style={veryMuted}>±{fit.mirageNational.se.toFixed(1)}</span></span>
-                {mirages.map(([st, m]) => <span key={st}><b>{st}</b> <span style={{ color: marginSideColor(-m.value) }}>{fmtMargin(-m.value, undefined, 1)}</span> <span style={veryMuted}>±{m.se.toFixed(1)}</span></span>)}
-              </div>
-            </div>
-          )}
-          {movers.length > 0 && (
-            <div>
-              <div className="mb-1.5 text-[10px] font-bold uppercase tracking-wider" style={muted}>Races not yet counting, moved most <span className="font-normal normal-case tracking-normal" style={veryMuted}>— forecast → implied by the counties in elsewhere</span></div>
-              <div className="grid gap-x-6 gap-y-1 text-[13px] tabular-nums sm:grid-cols-2 lg:grid-cols-4">
-                {movers.map((r) => (
-                  <button key={raceHash(r.prior)} onClick={() => onSelect(r)} className="flex min-w-0 items-baseline gap-2 text-left hover:underline">
-                    <span className="truncate font-semibold">{r.prior.office === "house" ? r.prior.label : `${r.prior.label} ${OFFICE_LABEL[r.prior.office]}`}</span>
-                    <span className="ml-auto whitespace-nowrap"><span style={muted}>{fmtCall(r.prior.forecast.margin, r.prior)}</span> → <b style={{ color: marginSideColor(r.proj.margin, r.prior) }}>{fmtCall(r.proj.margin, r.prior)}</b> <span style={veryMuted}>±{r.proj.night.se.toFixed(1)}</span></span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
+
         </div>
       )}
     </section>

@@ -1,0 +1,5007 @@
+{
+ "state": "MN",
+ "cycle": 2026,
+ "source": "Minnesota Campaign Finance Board (private contributions; public subsidy excluded)",
+ "fetched": "2026-11-03",
+ "dataThrough": "12/31/2026",
+ "candidates": [
+  {
+   "name": "Burkel, John",
+   "chamber": "house",
+   "district": "1A",
+   "contributions": 31300.0
+  },
+  {
+   "name": "Sceville, James",
+   "chamber": "house",
+   "district": "1A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sandahl, Leanna Kristine",
+   "chamber": "house",
+   "district": "1A",
+   "contributions": 5010.32
+  },
+  {
+   "name": "Christopherson, Mike",
+   "chamber": "house",
+   "district": "1B",
+   "contributions": 428.3
+  },
+  {
+   "name": "Gander, Steven",
+   "chamber": "house",
+   "district": "1B",
+   "contributions": 32555.0
+  },
+  {
+   "name": "Compeau, Jennifer",
+   "chamber": "house",
+   "district": "1B",
+   "contributions": 10778.66
+  },
+  {
+   "name": "Duran, Bidal, Jr",
+   "chamber": "house",
+   "district": "2A",
+   "contributions": 53584.0
+  },
+  {
+   "name": "Olson, Reed",
+   "chamber": "house",
+   "district": "2A",
+   "contributions": 90337.23
+  },
+  {
+   "name": "Bailey-Johnson, Erika",
+   "chamber": "house",
+   "district": "2B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bliss, Matt",
+   "chamber": "house",
+   "district": "2B",
+   "contributions": 22285.0
+  },
+  {
+   "name": "Reyes, Michael",
+   "chamber": "house",
+   "district": "2B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thabes, Emily",
+   "chamber": "house",
+   "district": "2B",
+   "contributions": 30800.88
+  },
+  {
+   "name": "Droba, Harley",
+   "chamber": "house",
+   "district": "3A",
+   "contributions": 188.16
+  },
+  {
+   "name": "Skraba, Roger Joseph",
+   "chamber": "house",
+   "district": "3A",
+   "contributions": 49946.25
+  },
+  {
+   "name": "Kania, Aaron",
+   "chamber": "house",
+   "district": "3A",
+   "contributions": 92349.67
+  },
+  {
+   "name": "Munger, Mark",
+   "chamber": "house",
+   "district": "3B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tru, Rich",
+   "chamber": "house",
+   "district": "3B",
+   "contributions": 450.0
+  },
+  {
+   "name": "Zeleznikar, Natalie",
+   "chamber": "house",
+   "district": "3B",
+   "contributions": 98681.0
+  },
+  {
+   "name": "Schweiger, Aaron E",
+   "chamber": "house",
+   "district": "3B",
+   "contributions": 142788.5
+  },
+  {
+   "name": "Carlson, Shelly",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 29353.0
+  },
+  {
+   "name": "Hendrickson, Charles",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 60.0
+  },
+  {
+   "name": "Keeler, Heather M",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 10665.0
+  },
+  {
+   "name": "Salisbury, Kevin",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 4455.0
+  },
+  {
+   "name": "Zincke, Joshua",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rockhold, Andrew",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 9357.0
+  },
+  {
+   "name": "Yoney, Erika",
+   "chamber": "house",
+   "district": "4A",
+   "contributions": 33570.48
+  },
+  {
+   "name": "Anderson, Brian G",
+   "chamber": "house",
+   "district": "4B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Joy, Jim",
+   "chamber": "house",
+   "district": "4B",
+   "contributions": 31175.0
+  },
+  {
+   "name": "Laugisch, Thaddeus",
+   "chamber": "house",
+   "district": "4B",
+   "contributions": 9507.68
+  },
+  {
+   "name": "Hobson, Brian",
+   "chamber": "house",
+   "district": "5A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Knudsen, Krista L",
+   "chamber": "house",
+   "district": "5A",
+   "contributions": 27367.15
+  },
+  {
+   "name": "Mitchell, Dan",
+   "chamber": "house",
+   "district": "5A",
+   "contributions": 16136.24
+  },
+  {
+   "name": "Abeyta, Joseph A",
+   "chamber": "house",
+   "district": "5B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hendrickson, Gregg",
+   "chamber": "house",
+   "district": "5B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Monson, Sheldon",
+   "chamber": "house",
+   "district": "5B",
+   "contributions": 450.0
+  },
+  {
+   "name": "Wiener, Michael",
+   "chamber": "house",
+   "district": "5B",
+   "contributions": 11997.0
+  },
+  {
+   "name": "Claussen, Jonathan",
+   "chamber": "house",
+   "district": "5B",
+   "contributions": 10445.0
+  },
+  {
+   "name": "Evers, Maggie",
+   "chamber": "house",
+   "district": "5B",
+   "contributions": 9374.95
+  },
+  {
+   "name": "Davis, Ben",
+   "chamber": "house",
+   "district": "6A",
+   "contributions": 10310.0
+  },
+  {
+   "name": "Grigsby, Samuel P",
+   "chamber": "house",
+   "district": "6A",
+   "contributions": 8155.26
+  },
+  {
+   "name": "Heintzeman, Joshua",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 49989.0
+  },
+  {
+   "name": "Kern, Douglas J",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 0.0
+  },
+  {
+   "name": "LeClaire, Emily",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Slipy, Denise Mae",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Tomczak, Skeeter",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hardy, Nicky",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 15681.23
+  },
+  {
+   "name": "Zinda, Matthew",
+   "chamber": "house",
+   "district": "6B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Igo, Spencer",
+   "chamber": "house",
+   "district": "7A",
+   "contributions": 40275.0
+  },
+  {
+   "name": "Schnaser, Aron",
+   "chamber": "house",
+   "district": "7A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ningen, Erin",
+   "chamber": "house",
+   "district": "7A",
+   "contributions": 5485.8
+  },
+  {
+   "name": "Horoshak, Daniel",
+   "chamber": "house",
+   "district": "7B",
+   "contributions": 8661.0
+  },
+  {
+   "name": "Janatopoulos, Lorrie",
+   "chamber": "house",
+   "district": "7B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lislegard, David",
+   "chamber": "house",
+   "district": "7B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Silvers, Travis",
+   "chamber": "house",
+   "district": "7B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Warwas, Cal",
+   "chamber": "house",
+   "district": "7B",
+   "contributions": 54161.08
+  },
+  {
+   "name": "Johnson, Peter",
+   "chamber": "house",
+   "district": "8A",
+   "contributions": 32700.0
+  },
+  {
+   "name": "McGrew, Mark",
+   "chamber": "house",
+   "district": "8A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kehr, Allan",
+   "chamber": "house",
+   "district": "8A",
+   "contributions": 3395.0
+  },
+  {
+   "name": "Kozlowski, Alicia",
+   "chamber": "house",
+   "district": "8B",
+   "contributions": 20202.21
+  },
+  {
+   "name": "Meyer, Timothy",
+   "chamber": "house",
+   "district": "8B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Savela, Shawn",
+   "chamber": "house",
+   "district": "8B",
+   "contributions": 10993.35
+  },
+  {
+   "name": "Backer, Jeff W, Jr",
+   "chamber": "house",
+   "district": "9A",
+   "contributions": 63104.0
+  },
+  {
+   "name": "Carlson, Boone",
+   "chamber": "house",
+   "district": "9A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jost, Nancy",
+   "chamber": "house",
+   "district": "9A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hanson, Nicholas",
+   "chamber": "house",
+   "district": "9A",
+   "contributions": 12948.24
+  },
+  {
+   "name": "Murphy, Tom",
+   "chamber": "house",
+   "district": "9B",
+   "contributions": 18000.0
+  },
+  {
+   "name": "Satter, Jason",
+   "chamber": "house",
+   "district": "9B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Simmonds, Dustin",
+   "chamber": "house",
+   "district": "9B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wright, Laura",
+   "chamber": "house",
+   "district": "9B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Horlocker, Craig",
+   "chamber": "house",
+   "district": "9B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Werner, Owen",
+   "chamber": "house",
+   "district": "9B",
+   "contributions": 13937.24
+  },
+  {
+   "name": "Hipp, Julia S",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kresha, Ronald",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 10854.1
+  },
+  {
+   "name": "Lindquist, Brian",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 11675.0
+  },
+  {
+   "name": "Webb-Skillings, Diane",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Maertens, Melissa",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 12276.18
+  },
+  {
+   "name": "Penner, Bernie",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Striemer, Mark",
+   "chamber": "house",
+   "district": "10A",
+   "contributions": 8182.0
+  },
+  {
+   "name": "Schultz, Isaac",
+   "chamber": "house",
+   "district": "10B",
+   "contributions": 46395.0
+  },
+  {
+   "name": "Larson, Jeffrey",
+   "chamber": "house",
+   "district": "10B",
+   "contributions": 26113.22
+  },
+  {
+   "name": "Dotseth, Jeff A",
+   "chamber": "house",
+   "district": "11A",
+   "contributions": 76116.12
+  },
+  {
+   "name": "Radosevich, Pete",
+   "chamber": "house",
+   "district": "11A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Swanson, Chris",
+   "chamber": "house",
+   "district": "11A",
+   "contributions": 106249.4
+  },
+  {
+   "name": "Frechette, John (Jack)",
+   "chamber": "house",
+   "district": "11B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelson, Nathan D",
+   "chamber": "house",
+   "district": "11B",
+   "contributions": 15535.0
+  },
+  {
+   "name": "Olson, Eric",
+   "chamber": "house",
+   "district": "11B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kunze, James Jay",
+   "chamber": "house",
+   "district": "11B",
+   "contributions": 0.0
+  },
+  {
+   "name": "L'Heureux, John (Jack), Jr",
+   "chamber": "house",
+   "district": "11B",
+   "contributions": 14296.12
+  },
+  {
+   "name": "Anderson, Paul H",
+   "chamber": "house",
+   "district": "12A",
+   "contributions": 34654.23
+  },
+  {
+   "name": "Anderson, Talitha",
+   "chamber": "house",
+   "district": "12A",
+   "contributions": 5519.26
+  },
+  {
+   "name": "Franson, Mary D",
+   "chamber": "house",
+   "district": "12B",
+   "contributions": 66032.0
+  },
+  {
+   "name": "Hoff, Judd",
+   "chamber": "house",
+   "district": "12B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vinar, Jeremy",
+   "chamber": "house",
+   "district": "12B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gardner, Michael",
+   "chamber": "house",
+   "district": "12B",
+   "contributions": 6176.32
+  },
+  {
+   "name": "Judkins, Gary",
+   "chamber": "house",
+   "district": "12B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Aho, Cindy",
+   "chamber": "house",
+   "district": "13A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Demuth, Lisa",
+   "chamber": "house",
+   "district": "13A",
+   "contributions": 41075.0
+  },
+  {
+   "name": "Goering, Tanja",
+   "chamber": "house",
+   "district": "13A",
+   "contributions": 29783.0
+  },
+  {
+   "name": "Bugbee, Ben",
+   "chamber": "house",
+   "district": "13A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sayler, Arlis",
+   "chamber": "house",
+   "district": "13A",
+   "contributions": 18559.44
+  },
+  {
+   "name": "Bolstad, Dusty",
+   "chamber": "house",
+   "district": "13B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bromenschenkel, Melissa",
+   "chamber": "house",
+   "district": "13B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Juhnke, Alan R",
+   "chamber": "house",
+   "district": "13B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Loberg, Dawn",
+   "chamber": "house",
+   "district": "13B",
+   "contributions": 33960.0
+  },
+  {
+   "name": "O'Driscoll, Tim",
+   "chamber": "house",
+   "district": "13B",
+   "contributions": 15650.0
+  },
+  {
+   "name": "Doyle, Justin",
+   "chamber": "house",
+   "district": "13B",
+   "contributions": 15144.38
+  },
+  {
+   "name": "Conway, Mike",
+   "chamber": "house",
+   "district": "14A",
+   "contributions": 42664.0
+  },
+  {
+   "name": "Daisane, Abdi",
+   "chamber": "house",
+   "district": "14A",
+   "contributions": 46738.87
+  },
+  {
+   "name": "Jose, John",
+   "chamber": "house",
+   "district": "14A",
+   "contributions": 17751.0
+  },
+  {
+   "name": "Perryman, Bernadette Ann",
+   "chamber": "house",
+   "district": "14A",
+   "contributions": 61450.0
+  },
+  {
+   "name": "Schumacher, Paul",
+   "chamber": "house",
+   "district": "14A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dorholt, Zachary",
+   "chamber": "house",
+   "district": "14B",
+   "contributions": 104816.54
+  },
+  {
+   "name": "Ek, Sue",
+   "chamber": "house",
+   "district": "14B",
+   "contributions": 66451.0
+  },
+  {
+   "name": "Henning, Aaron",
+   "chamber": "house",
+   "district": "14B",
+   "contributions": 100.0
+  },
+  {
+   "name": "Wolgamott, Dan",
+   "chamber": "house",
+   "district": "14B",
+   "contributions": 14329.0
+  },
+  {
+   "name": "Studemann, Anthony M",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Swedzinski, Chris",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 12050.0
+  },
+  {
+   "name": "Hennen, Brad",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 27199.54
+  },
+  {
+   "name": "Hennen, Bradley",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 0.0
+  },
+  {
+   "name": "McFall, Hunter",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schmig, Nathan",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 9856.21
+  },
+  {
+   "name": "Sturrock, David",
+   "chamber": "house",
+   "district": "15A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kuster, Tom",
+   "chamber": "house",
+   "district": "15B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Torkelson, Paul M",
+   "chamber": "house",
+   "district": "15B",
+   "contributions": 22502.0
+  },
+  {
+   "name": "Klawitter, Keith",
+   "chamber": "house",
+   "district": "15B",
+   "contributions": 10992.56
+  },
+  {
+   "name": "Sik, Lydell",
+   "chamber": "house",
+   "district": "15B",
+   "contributions": 2125.0
+  },
+  {
+   "name": "Theis, Geri",
+   "chamber": "house",
+   "district": "15B",
+   "contributions": 26463.37
+  },
+  {
+   "name": "Jorgenson-Hegstad, Kathy",
+   "chamber": "house",
+   "district": "16A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schmitt, Steve",
+   "chamber": "house",
+   "district": "16A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Urdahl, Dean L",
+   "chamber": "house",
+   "district": "16A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Van Binsbergen, Scott",
+   "chamber": "house",
+   "district": "16A",
+   "contributions": 46666.73
+  },
+  {
+   "name": "Wright, Robert M",
+   "chamber": "house",
+   "district": "16A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Torgelson, David",
+   "chamber": "house",
+   "district": "16A",
+   "contributions": 6090.0
+  },
+  {
+   "name": "Baker, David (Dave)",
+   "chamber": "house",
+   "district": "16B",
+   "contributions": 91420.0
+  },
+  {
+   "name": "Swanson, Crystal",
+   "chamber": "house",
+   "district": "16B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vossen-Henslin, Julie",
+   "chamber": "house",
+   "district": "16B",
+   "contributions": 24088.61
+  },
+  {
+   "name": "Anderson, Darrin",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Carpentier, Jennifer",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dolan, Benjamin",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Falk, Andrew J",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gillman, Dawn",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 31984.5
+  },
+  {
+   "name": "Koenen, Lyle",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Miller, Tim A",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "TSCHIMPERLE, CHAD",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Anderson, Mali",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 9480.68
+  },
+  {
+   "name": "Olson, Wayne",
+   "chamber": "house",
+   "district": "17A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Harder, Bobbie",
+   "chamber": "house",
+   "district": "17B",
+   "contributions": 23753.5
+  },
+  {
+   "name": "Nuesse, Jennifer",
+   "chamber": "house",
+   "district": "17B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pascoe, Kayla",
+   "chamber": "house",
+   "district": "17B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wieman, Ben",
+   "chamber": "house",
+   "district": "17B",
+   "contributions": 8632.2
+  },
+  {
+   "name": "Brand, Jeff",
+   "chamber": "house",
+   "district": "18A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hanson, Leah",
+   "chamber": "house",
+   "district": "18A",
+   "contributions": 74671.36
+  },
+  {
+   "name": "Schwartz, Erica",
+   "chamber": "house",
+   "district": "18A",
+   "contributions": 55551.5
+  },
+  {
+   "name": "Frederick, Luke",
+   "chamber": "house",
+   "district": "18B",
+   "contributions": 16078.5
+  },
+  {
+   "name": "Latzke, Ashley",
+   "chamber": "house",
+   "district": "18B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Vosburg, Dar",
+   "chamber": "house",
+   "district": "18B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Allen, Keith",
+   "chamber": "house",
+   "district": "19A",
+   "contributions": 44358.0
+  },
+  {
+   "name": "Brown, Martha",
+   "chamber": "house",
+   "district": "19A",
+   "contributions": 30485.2
+  },
+  {
+   "name": "Courrier, Robin D",
+   "chamber": "house",
+   "district": "19A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Daniels, Brian T",
+   "chamber": "house",
+   "district": "19A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Navarro, Jessica",
+   "chamber": "house",
+   "district": "19A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fernandez Mejia, Edelgard",
+   "chamber": "house",
+   "district": "19B",
+   "contributions": 50.0
+  },
+  {
+   "name": "Rausch, Chris",
+   "chamber": "house",
+   "district": "19B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sexton, Thomas James",
+   "chamber": "house",
+   "district": "19B",
+   "contributions": 22857.66
+  },
+  {
+   "name": "Zinkle, Taylor",
+   "chamber": "house",
+   "district": "19B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Meyman, Zack",
+   "chamber": "house",
+   "district": "19B",
+   "contributions": 8840.62
+  },
+  {
+   "name": "Altendorf, Pamela",
+   "chamber": "house",
+   "district": "20A",
+   "contributions": 43120.0
+  },
+  {
+   "name": "Arndt, Heather",
+   "chamber": "house",
+   "district": "20A",
+   "contributions": 26654.2
+  },
+  {
+   "name": "Backer, Jay",
+   "chamber": "house",
+   "district": "20A",
+   "contributions": 0.0
+  },
+  {
+   "name": "King, Brandon Michael",
+   "chamber": "house",
+   "district": "20A",
+   "contributions": 110.0
+  },
+  {
+   "name": "Lofgren, Thomas",
+   "chamber": "house",
+   "district": "20A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bertschinger, Sara",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 34024.0
+  },
+  {
+   "name": "Diesslin, Elise",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hutchinson, Michael",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 595.0
+  },
+  {
+   "name": "Jacob, Steven E",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 11809.96
+  },
+  {
+   "name": "Rouhoff, Brady",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 4630.0
+  },
+  {
+   "name": "Amundson, Kevin",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Holm, Steve",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 14522.85
+  },
+  {
+   "name": "Thoreson, Mark Alvin",
+   "chamber": "house",
+   "district": "20B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schomacker, Joe",
+   "chamber": "house",
+   "district": "21A",
+   "contributions": 6900.0
+  },
+  {
+   "name": "Nelson, Lowell (Rusty)",
+   "chamber": "house",
+   "district": "21A",
+   "contributions": 17792.57
+  },
+  {
+   "name": "Wollum, Krist",
+   "chamber": "house",
+   "district": "21A",
+   "contributions": 11995.0
+  },
+  {
+   "name": "Fogelman, Marj",
+   "chamber": "house",
+   "district": "21B",
+   "contributions": 20273.5
+  },
+  {
+   "name": "Wilson, Jon",
+   "chamber": "house",
+   "district": "21B",
+   "contributions": 12249.68
+  },
+  {
+   "name": "Olson, Christian Bjorn",
+   "chamber": "house",
+   "district": "22A",
+   "contributions": 18470.0
+  },
+  {
+   "name": "Slyter, Diana",
+   "chamber": "house",
+   "district": "22A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ulmen, Marisa",
+   "chamber": "house",
+   "district": "22A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Denn, Sonja Love",
+   "chamber": "house",
+   "district": "22A",
+   "contributions": 7091.18
+  },
+  {
+   "name": "Olson, Bjorn",
+   "chamber": "house",
+   "district": "22A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nett-Torgrimson, Sara",
+   "chamber": "house",
+   "district": "22B",
+   "contributions": 200.0
+  },
+  {
+   "name": "Stier, Terry",
+   "chamber": "house",
+   "district": "22B",
+   "contributions": 19315.0
+  },
+  {
+   "name": "Nesgoda, Mary",
+   "chamber": "house",
+   "district": "22B",
+   "contributions": 11454.16
+  },
+  {
+   "name": "Bennett, Peggy",
+   "chamber": "house",
+   "district": "23A",
+   "contributions": 3550.0
+  },
+  {
+   "name": "Staloch, Joseph (Joe)",
+   "chamber": "house",
+   "district": "23A",
+   "contributions": 15347.09
+  },
+  {
+   "name": "Sukalski, Michael J",
+   "chamber": "house",
+   "district": "23A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Minehart, Colin",
+   "chamber": "house",
+   "district": "23A",
+   "contributions": 2800.0
+  },
+  {
+   "name": "Ronnenberg, Nick",
+   "chamber": "house",
+   "district": "23A",
+   "contributions": 6325.0
+  },
+  {
+   "name": "Mueller, Patricia K",
+   "chamber": "house",
+   "district": "23B",
+   "contributions": 23158.5
+  },
+  {
+   "name": "Munson, Jeremy",
+   "chamber": "house",
+   "district": "23B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pacovsky, Joe",
+   "chamber": "house",
+   "district": "23B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dundas, Christoph",
+   "chamber": "house",
+   "district": "23B",
+   "contributions": 44004.02
+  },
+  {
+   "name": "Bradford, Chuck",
+   "chamber": "house",
+   "district": "24A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Holmes, Heather",
+   "chamber": "house",
+   "district": "24A",
+   "contributions": 37243.77
+  },
+  {
+   "name": "Quam, Duane R, Jr",
+   "chamber": "house",
+   "district": "24A",
+   "contributions": 10096.12
+  },
+  {
+   "name": "Liebling, Tina",
+   "chamber": "house",
+   "district": "24B",
+   "contributions": 40044.0
+  },
+  {
+   "name": "Martinez-Perez, Ashley",
+   "chamber": "house",
+   "district": "24B",
+   "contributions": 0.0
+  },
+  {
+   "name": "O'Driscoll, Jesse",
+   "chamber": "house",
+   "district": "24B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pulham, Katrina",
+   "chamber": "house",
+   "district": "24B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sepeda, Dan",
+   "chamber": "house",
+   "district": "24B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ajouri, John M, III",
+   "chamber": "house",
+   "district": "24B",
+   "contributions": 18369.76
+  },
+  {
+   "name": "Hicks, Kimberly (Kim)",
+   "chamber": "house",
+   "district": "25A",
+   "contributions": 26408.8
+  },
+  {
+   "name": "Navitsky, Ken",
+   "chamber": "house",
+   "district": "25A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Trahan, Brad",
+   "chamber": "house",
+   "district": "25A",
+   "contributions": 14936.82
+  },
+  {
+   "name": "Smith, Andrew",
+   "chamber": "house",
+   "district": "25B",
+   "contributions": 14741.51
+  },
+  {
+   "name": "Lund, Wes",
+   "chamber": "house",
+   "district": "25B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Doerr, Stephen",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hedin, Jack",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 7110.0
+  },
+  {
+   "name": "Kruger, Sarah",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pelowski Jr, Gene P",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Repinski, Aaron",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 71327.35
+  },
+  {
+   "name": "Voegeli, Dwayne",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wilson, Dan",
+   "chamber": "house",
+   "district": "26A",
+   "contributions": 129607.44
+  },
+  {
+   "name": "Davids, Gregory M",
+   "chamber": "house",
+   "district": "26B",
+   "contributions": 68445.0
+  },
+  {
+   "name": "Pierson, Nels T, III",
+   "chamber": "house",
+   "district": "26B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Steuart, Gary",
+   "chamber": "house",
+   "district": "26B",
+   "contributions": 350.0
+  },
+  {
+   "name": "Wolf, Allie",
+   "chamber": "house",
+   "district": "26B",
+   "contributions": 25957.6
+  },
+  {
+   "name": "Mekeland, Shane D",
+   "chamber": "house",
+   "district": "27A",
+   "contributions": 15353.33
+  },
+  {
+   "name": "Davenport, Vanessa",
+   "chamber": "house",
+   "district": "27A",
+   "contributions": 7644.8
+  },
+  {
+   "name": "Daudt, Kurt",
+   "chamber": "house",
+   "district": "27B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lawrence, Bryan",
+   "chamber": "house",
+   "district": "27B",
+   "contributions": 25656.11
+  },
+  {
+   "name": "McConaughay, Charles",
+   "chamber": "house",
+   "district": "27B",
+   "contributions": 7205.19
+  },
+  {
+   "name": "Gordon, James \"Jimmy\"",
+   "chamber": "house",
+   "district": "28A",
+   "contributions": 7550.0
+  },
+  {
+   "name": "Johnson, Brian L",
+   "chamber": "house",
+   "district": "28A",
+   "contributions": 1175.49
+  },
+  {
+   "name": "Dummer, Timothy",
+   "chamber": "house",
+   "district": "28A",
+   "contributions": 12360.0
+  },
+  {
+   "name": "Fontenello, Jordan",
+   "chamber": "house",
+   "district": "28B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Malchow, Katie",
+   "chamber": "house",
+   "district": "28B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Murphy, Mary Jo",
+   "chamber": "house",
+   "district": "28B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Neu, Anne",
+   "chamber": "house",
+   "district": "28B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rymer, Maxwell (Max)",
+   "chamber": "house",
+   "district": "28B",
+   "contributions": 20699.0
+  },
+  {
+   "name": "Schmidt, Daniel",
+   "chamber": "house",
+   "district": "28B",
+   "contributions": 27309.09
+  },
+  {
+   "name": "Brazelton, Chris",
+   "chamber": "house",
+   "district": "29A",
+   "contributions": 0.0
+  },
+  {
+   "name": "McDonald, Joseph (Joe)",
+   "chamber": "house",
+   "district": "29A",
+   "contributions": 15015.0
+  },
+  {
+   "name": "Dahlgren, Emily",
+   "chamber": "house",
+   "district": "29A",
+   "contributions": 6029.28
+  },
+  {
+   "name": "Fiskum, Dan",
+   "chamber": "house",
+   "district": "29A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kratky, Colton",
+   "chamber": "house",
+   "district": "29B",
+   "contributions": 3760.05
+  },
+  {
+   "name": "Rarick, Marion Olivia",
+   "chamber": "house",
+   "district": "29B",
+   "contributions": 23418.0
+  },
+  {
+   "name": "Claxton, Marcus",
+   "chamber": "house",
+   "district": "29B",
+   "contributions": 770.0
+  },
+  {
+   "name": "Buckmeier, Sonja",
+   "chamber": "house",
+   "district": "30A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hudson, Walter",
+   "chamber": "house",
+   "district": "30A",
+   "contributions": 10559.61
+  },
+  {
+   "name": "Neuman, Holly",
+   "chamber": "house",
+   "district": "30A",
+   "contributions": 0.0
+  },
+  {
+   "name": "O'Neill, Thomas",
+   "chamber": "house",
+   "district": "30A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smyth, Joey",
+   "chamber": "house",
+   "district": "30A",
+   "contributions": 8518.25
+  },
+  {
+   "name": "Bolin, Paul",
+   "chamber": "house",
+   "district": "30B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Novotny, Paul",
+   "chamber": "house",
+   "district": "30B",
+   "contributions": 9455.0
+  },
+  {
+   "name": "Gentry, Keenan",
+   "chamber": "house",
+   "district": "30B",
+   "contributions": 3919.98
+  },
+  {
+   "name": "Westberg, Chad",
+   "chamber": "house",
+   "district": "30B",
+   "contributions": 11910.0
+  },
+  {
+   "name": "Niska, Harry",
+   "chamber": "house",
+   "district": "31A",
+   "contributions": 53915.26
+  },
+  {
+   "name": "Bell, Thomas",
+   "chamber": "house",
+   "district": "31A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Walker, Brian",
+   "chamber": "house",
+   "district": "31A",
+   "contributions": 4930.0
+  },
+  {
+   "name": "Berkessa, Gadisa",
+   "chamber": "house",
+   "district": "31B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hackbarth, Thomas M",
+   "chamber": "house",
+   "district": "31B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Scott, Peggy Sue",
+   "chamber": "house",
+   "district": "31B",
+   "contributions": 27330.0
+  },
+  {
+   "name": "Bloomquist, Jen",
+   "chamber": "house",
+   "district": "31B",
+   "contributions": 6670.19
+  },
+  {
+   "name": "West, Nolan",
+   "chamber": "house",
+   "district": "32A",
+   "contributions": 60406.0
+  },
+  {
+   "name": "Matchett, Amanda",
+   "chamber": "house",
+   "district": "32A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Larson, Leslie",
+   "chamber": "house",
+   "district": "32B",
+   "contributions": 97955.52
+  },
+  {
+   "name": "Moe, Alex",
+   "chamber": "house",
+   "district": "32B",
+   "contributions": 2099.23
+  },
+  {
+   "name": "Norris, Matt",
+   "chamber": "house",
+   "district": "32B",
+   "contributions": 125167.82
+  },
+  {
+   "name": "Raleigh, Donald",
+   "chamber": "house",
+   "district": "32B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Roulet, Chuck",
+   "chamber": "house",
+   "district": "32B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Anderson, Patricia",
+   "chamber": "house",
+   "district": "33A",
+   "contributions": 25175.1
+  },
+  {
+   "name": "Ross, Jake",
+   "chamber": "house",
+   "district": "33A",
+   "contributions": 75.0
+  },
+  {
+   "name": "Sazma, Matthew",
+   "chamber": "house",
+   "district": "33A",
+   "contributions": 8750.0
+  },
+  {
+   "name": "Valento, Hanna",
+   "chamber": "house",
+   "district": "33A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stout, Stacey",
+   "chamber": "house",
+   "district": "33A",
+   "contributions": 55935.0
+  },
+  {
+   "name": "Thompson, Angela",
+   "chamber": "house",
+   "district": "33A",
+   "contributions": 32441.92
+  },
+  {
+   "name": "Hill, Josiah",
+   "chamber": "house",
+   "district": "33B",
+   "contributions": 57073.73
+  },
+  {
+   "name": "Johnson, Jessica L",
+   "chamber": "house",
+   "district": "33B",
+   "contributions": 42198.0
+  },
+  {
+   "name": "Mitchell, Carrie",
+   "chamber": "house",
+   "district": "33B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Moreno, Monti",
+   "chamber": "house",
+   "district": "33B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Widmer, Joseph \"Joe\"",
+   "chamber": "house",
+   "district": "33B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ganzer, Brad",
+   "chamber": "house",
+   "district": "34A",
+   "contributions": 525.0
+  },
+  {
+   "name": "Nadeau, Danny",
+   "chamber": "house",
+   "district": "34A",
+   "contributions": 69155.0
+  },
+  {
+   "name": "Raines, Brian",
+   "chamber": "house",
+   "district": "34A",
+   "contributions": 10.0
+  },
+  {
+   "name": "Heaser, Jason",
+   "chamber": "house",
+   "district": "34A",
+   "contributions": 77099.73
+  },
+  {
+   "name": "Bittner, Ruth",
+   "chamber": "house",
+   "district": "34B",
+   "contributions": 8007.51
+  },
+  {
+   "name": "Eriksen, Christian",
+   "chamber": "house",
+   "district": "34B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hortman, Melissa",
+   "chamber": "house",
+   "district": "34B",
+   "contributions": 21717.0
+  },
+  {
+   "name": "Lee, XP",
+   "chamber": "house",
+   "district": "34B",
+   "contributions": 21351.21
+  },
+  {
+   "name": "Saye, Erickson",
+   "chamber": "house",
+   "district": "34B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Simmons, Scott R",
+   "chamber": "house",
+   "district": "34B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jungling, Joshua",
+   "chamber": "house",
+   "district": "35A",
+   "contributions": 33568.16
+  },
+  {
+   "name": "Stephenson, Zachary",
+   "chamber": "house",
+   "district": "35A",
+   "contributions": 151948.91
+  },
+  {
+   "name": "Matteson, Polly",
+   "chamber": "house",
+   "district": "35B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pape, Steven",
+   "chamber": "house",
+   "district": "35B",
+   "contributions": 37796.5
+  },
+  {
+   "name": "Rehrauer, Kari",
+   "chamber": "house",
+   "district": "35B",
+   "contributions": 93348.67
+  },
+  {
+   "name": "Calhoun, Janelle",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 0.0
+  },
+  {
+   "name": "DeMay, Jim",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 170795.84
+  },
+  {
+   "name": "Engen, Elliott W",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 12519.9
+  },
+  {
+   "name": "Miller, Jackson",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 2515.0
+  },
+  {
+   "name": "Severson, Avery",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 2150.92
+  },
+  {
+   "name": "Stoss, Sebastian",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 52448.33
+  },
+  {
+   "name": "Johnson, Craig",
+   "chamber": "house",
+   "district": "36A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bradway, Patricia",
+   "chamber": "house",
+   "district": "36B",
+   "contributions": 23928.09
+  },
+  {
+   "name": "Curran, Brion",
+   "chamber": "house",
+   "district": "36B",
+   "contributions": 52237.69
+  },
+  {
+   "name": "Gunderson, Heidi Ann",
+   "chamber": "house",
+   "district": "36B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Malaskee, TJ",
+   "chamber": "house",
+   "district": "36B",
+   "contributions": 2200.0
+  },
+  {
+   "name": "Cahill, Caitlin",
+   "chamber": "house",
+   "district": "37A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Robbins, Kristin",
+   "chamber": "house",
+   "district": "37A",
+   "contributions": 56296.69
+  },
+  {
+   "name": "Wolfe, Laurie",
+   "chamber": "house",
+   "district": "37A",
+   "contributions": 0.0
+  },
+  {
+   "name": "McKee, Tom",
+   "chamber": "house",
+   "district": "37A",
+   "contributions": 43519.19
+  },
+  {
+   "name": "Smith, Darci",
+   "chamber": "house",
+   "district": "37A",
+   "contributions": 75500.19
+  },
+  {
+   "name": "Bahner, Kristin",
+   "chamber": "house",
+   "district": "37B",
+   "contributions": 39237.95
+  },
+  {
+   "name": "Bristol, John",
+   "chamber": "house",
+   "district": "37B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Doerer, Luke",
+   "chamber": "house",
+   "district": "37B",
+   "contributions": 12489.72
+  },
+  {
+   "name": "Hiltsley, Huldah",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 31595.0
+  },
+  {
+   "name": "Nelson, Michael V",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Olson, Brad",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Russell, Wynfred N",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 23005.0
+  },
+  {
+   "name": "Kistler, Charlie",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 6575.26
+  },
+  {
+   "name": "Klatte, Richard",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kurdyumova, Yelena",
+   "chamber": "house",
+   "district": "38A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Marvin, Robert",
+   "chamber": "house",
+   "district": "38B",
+   "contributions": 2475.0
+  },
+  {
+   "name": "Vang, Samantha",
+   "chamber": "house",
+   "district": "38B",
+   "contributions": 20685.0
+  },
+  {
+   "name": "Klemz, Aaron",
+   "chamber": "house",
+   "district": "39A",
+   "contributions": 23629.52
+  },
+  {
+   "name": "Koegel, Erin",
+   "chamber": "house",
+   "district": "39A",
+   "contributions": 8886.63
+  },
+  {
+   "name": "Rehlander, Jonathon",
+   "chamber": "house",
+   "district": "39A",
+   "contributions": 4331.46
+  },
+  {
+   "name": "Sylvester, Rod",
+   "chamber": "house",
+   "district": "39A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Macko, Andy",
+   "chamber": "house",
+   "district": "39A",
+   "contributions": 2351.0
+  },
+  {
+   "name": "Roth, Halyn",
+   "chamber": "house",
+   "district": "39A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bernardy, Connie",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Feist, Sandra",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 4161.63
+  },
+  {
+   "name": "Jacobs, KT",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 3870.0
+  },
+  {
+   "name": "Kantrud, (Hugh) Alan",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Norris-Holliday, Elijah",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Simula, Amada Marquez",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 22780.0
+  },
+  {
+   "name": "Spriggs, Justice",
+   "chamber": "house",
+   "district": "39B",
+   "contributions": 12581.1
+  },
+  {
+   "name": "Elmquist, Aisha",
+   "chamber": "house",
+   "district": "40A",
+   "contributions": 81482.0
+  },
+  {
+   "name": "Moller, Kelly",
+   "chamber": "house",
+   "district": "40A",
+   "contributions": 4970.0
+  },
+  {
+   "name": "Liang, Jenny",
+   "chamber": "house",
+   "district": "40A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mohamed, Murwo",
+   "chamber": "house",
+   "district": "40A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Withrow, Luis",
+   "chamber": "house",
+   "district": "40A",
+   "contributions": 998.25
+  },
+  {
+   "name": "Becker-Finn, Jamie",
+   "chamber": "house",
+   "district": "40B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Doan, John",
+   "chamber": "house",
+   "district": "40B",
+   "contributions": 3000.0
+  },
+  {
+   "name": "Gottfried, David",
+   "chamber": "house",
+   "district": "40B",
+   "contributions": 36705.92
+  },
+  {
+   "name": "Johnson, Curtis",
+   "chamber": "house",
+   "district": "40B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Shen, Allen",
+   "chamber": "house",
+   "district": "40B",
+   "contributions": 12173.52
+  },
+  {
+   "name": "Wikstrom, Paul",
+   "chamber": "house",
+   "district": "40B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Birkeland, Cole",
+   "chamber": "house",
+   "district": "41A",
+   "contributions": 109137.95
+  },
+  {
+   "name": "Driscoll, Patricia",
+   "chamber": "house",
+   "district": "41A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Johnson, Wayne",
+   "chamber": "house",
+   "district": "41A",
+   "contributions": 56537.42
+  },
+  {
+   "name": "Vazquez, Ruben",
+   "chamber": "house",
+   "district": "41A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wroblewski, Lucia",
+   "chamber": "house",
+   "district": "41A",
+   "contributions": 500.0
+  },
+  {
+   "name": "Ahmed, Safia",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Beck, William",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 41687.33
+  },
+  {
+   "name": "Boone, Charles \"Nash\"",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dippel, Tom",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 6526.79
+  },
+  {
+   "name": "Fox, Jen",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 130513.09
+  },
+  {
+   "name": "Kulage, Mitchel",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 500.0
+  },
+  {
+   "name": "Palmer, Laura",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pike, Camden J",
+   "chamber": "house",
+   "district": "41B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Burkett, Kathy",
+   "chamber": "house",
+   "district": "42A",
+   "contributions": 14135.0
+  },
+  {
+   "name": "Carroll, Ned",
+   "chamber": "house",
+   "district": "42A",
+   "contributions": 44479.0
+  },
+  {
+   "name": "Klevorn, Virginia",
+   "chamber": "house",
+   "district": "42B",
+   "contributions": 47820.0
+  },
+  {
+   "name": "Nouis, Perry",
+   "chamber": "house",
+   "district": "42B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Frazier, Cedrick R",
+   "chamber": "house",
+   "district": "43A",
+   "contributions": 3850.0
+  },
+  {
+   "name": "Hesemann, Todd",
+   "chamber": "house",
+   "district": "43A",
+   "contributions": 6282.04
+  },
+  {
+   "name": "Nyamwaya, Lyna",
+   "chamber": "house",
+   "district": "43A",
+   "contributions": 5095.0
+  },
+  {
+   "name": "Schuette, Kyrstin",
+   "chamber": "house",
+   "district": "43A",
+   "contributions": 28987.94
+  },
+  {
+   "name": "Thompson, Travis C",
+   "chamber": "house",
+   "district": "43A",
+   "contributions": 1350.0
+  },
+  {
+   "name": "Freiberg, Mike",
+   "chamber": "house",
+   "district": "43B",
+   "contributions": 10940.0
+  },
+  {
+   "name": "Lewis, Jess",
+   "chamber": "house",
+   "district": "43B",
+   "contributions": 55473.91
+  },
+  {
+   "name": "Sant, Samir",
+   "chamber": "house",
+   "district": "43B",
+   "contributions": 4113.36
+  },
+  {
+   "name": "Winkler, Ryan",
+   "chamber": "house",
+   "district": "43B",
+   "contributions": 12021.0
+  },
+  {
+   "name": "Fischer, Peter M",
+   "chamber": "house",
+   "district": "44A",
+   "contributions": 36027.0
+  },
+  {
+   "name": "Nelson, Karla",
+   "chamber": "house",
+   "district": "44A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Middaugh, Justin",
+   "chamber": "house",
+   "district": "44A",
+   "contributions": 4037.3
+  },
+  {
+   "name": "Hawthorne, TJ",
+   "chamber": "house",
+   "district": "44B",
+   "contributions": 1941.77
+  },
+  {
+   "name": "Lillie, Leon",
+   "chamber": "house",
+   "district": "44B",
+   "contributions": 17337.5
+  },
+  {
+   "name": "Breazeale, Tracey",
+   "chamber": "house",
+   "district": "45A",
+   "contributions": 216690.51
+  },
+  {
+   "name": "Myers, Andrew",
+   "chamber": "house",
+   "district": "45A",
+   "contributions": 127550.0
+  },
+  {
+   "name": "Acomb, Patty",
+   "chamber": "house",
+   "district": "45B",
+   "contributions": 55320.15
+  },
+  {
+   "name": "Cousineau, Lorie",
+   "chamber": "house",
+   "district": "45B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wetzker, Alma J",
+   "chamber": "house",
+   "district": "45B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bergerson, Thomas",
+   "chamber": "house",
+   "district": "45B",
+   "contributions": 11944.0
+  },
+  {
+   "name": "Kraft, Larry",
+   "chamber": "house",
+   "district": "46A",
+   "contributions": 78433.93
+  },
+  {
+   "name": "Olson, Karl",
+   "chamber": "house",
+   "district": "46A",
+   "contributions": 5825.0
+  },
+  {
+   "name": "McDaniels, Ashley",
+   "chamber": "house",
+   "district": "46B",
+   "contributions": 85.0
+  },
+  {
+   "name": "Rich, Kim",
+   "chamber": "house",
+   "district": "46B",
+   "contributions": 7088.0
+  },
+  {
+   "name": "Youakim, Cheryl",
+   "chamber": "house",
+   "district": "46B",
+   "contributions": 36920.0
+  },
+  {
+   "name": "Azcona, David",
+   "chamber": "house",
+   "district": "47A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Buck, Shelley",
+   "chamber": "house",
+   "district": "47A",
+   "contributions": 13201.57
+  },
+  {
+   "name": "Hemmingsen-Jaeger, Amanda",
+   "chamber": "house",
+   "district": "47A",
+   "contributions": 2113.0
+  },
+  {
+   "name": "Servatius, Juli",
+   "chamber": "house",
+   "district": "47A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cha, Ethan",
+   "chamber": "house",
+   "district": "47B",
+   "contributions": 17060.0
+  },
+  {
+   "name": "Dorau, Dwight",
+   "chamber": "house",
+   "district": "47B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hoppe, Joe",
+   "chamber": "house",
+   "district": "47B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Montemayor, Jane",
+   "chamber": "house",
+   "district": "47B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wilson, Kim",
+   "chamber": "house",
+   "district": "47B",
+   "contributions": 1700.0
+  },
+  {
+   "name": "Kells, Nathan",
+   "chamber": "house",
+   "district": "48A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nash, Jim",
+   "chamber": "house",
+   "district": "48A",
+   "contributions": 40734.63
+  },
+  {
+   "name": "Brothers, Joe",
+   "chamber": "house",
+   "district": "48A",
+   "contributions": 22523.96
+  },
+  {
+   "name": "Rehm, Lucy",
+   "chamber": "house",
+   "district": "48B",
+   "contributions": 63196.46
+  },
+  {
+   "name": "Schubert, Haley",
+   "chamber": "house",
+   "district": "48B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Steffenhagen, Caleb",
+   "chamber": "house",
+   "district": "48B",
+   "contributions": 34028.05
+  },
+  {
+   "name": "Bettison, Stacy L",
+   "chamber": "house",
+   "district": "49A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Coakley, Kissy",
+   "chamber": "house",
+   "district": "49A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Falconer, Alexander",
+   "chamber": "house",
+   "district": "49A",
+   "contributions": 29103.0
+  },
+  {
+   "name": "Jackson, Carolyn C",
+   "chamber": "house",
+   "district": "49A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Houdek, Jeff",
+   "chamber": "house",
+   "district": "49A",
+   "contributions": 16067.45
+  },
+  {
+   "name": "Bush, Elijah",
+   "chamber": "house",
+   "district": "49B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Knecht, Thomas",
+   "chamber": "house",
+   "district": "49B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kotyza-Witthuhn, Carlie",
+   "chamber": "house",
+   "district": "49B",
+   "contributions": 31965.0
+  },
+  {
+   "name": "Russo, Wendi",
+   "chamber": "house",
+   "district": "49B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thalman, Joe",
+   "chamber": "house",
+   "district": "49B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cregg, Wendy",
+   "chamber": "house",
+   "district": "49B",
+   "contributions": 31229.0
+  },
+  {
+   "name": "Erhardt, Ronnie (Ron) P",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gibson, Alicia",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Greene, Julie",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 45230.0
+  },
+  {
+   "name": "Johnson, Tim",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Michaelson, Owen",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 2.62
+  },
+  {
+   "name": "Satnan, Gary",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wedum, Chris",
+   "chamber": "house",
+   "district": "50A",
+   "contributions": 8190.0
+  },
+  {
+   "name": "Elkins, Steve",
+   "chamber": "house",
+   "district": "50B",
+   "contributions": 33840.0
+  },
+  {
+   "name": "Gerten, Brad",
+   "chamber": "house",
+   "district": "51A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Howard, Michael",
+   "chamber": "house",
+   "district": "51A",
+   "contributions": 23990.0
+  },
+  {
+   "name": "Pafko, Frank",
+   "chamber": "house",
+   "district": "51A",
+   "contributions": 6026.97
+  },
+  {
+   "name": "Anderson, Chad D",
+   "chamber": "house",
+   "district": "51B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Coulter, Nathan",
+   "chamber": "house",
+   "district": "51B",
+   "contributions": 23936.0
+  },
+  {
+   "name": "Johnson, Lion Dale",
+   "chamber": "house",
+   "district": "51B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lund, Jim",
+   "chamber": "house",
+   "district": "51B",
+   "contributions": 4170.38
+  },
+  {
+   "name": "Anderson, Diane",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Blum, Joseph (Joe) M",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hudson, Janine",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 1050.0
+  },
+  {
+   "name": "Jensen, Christos",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 49405.0
+  },
+  {
+   "name": "Masin, Sandra A",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 450.0
+  },
+  {
+   "name": "Meier, Laura",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 3325.0
+  },
+  {
+   "name": "Reyer, Lizabeth",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 26750.0
+  },
+  {
+   "name": "Gilmour, George",
+   "chamber": "house",
+   "district": "52A",
+   "contributions": 12575.5
+  },
+  {
+   "name": "Callais, Cynthia",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kuchlenz, Charles",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Virnig, Bianca",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 31738.61
+  },
+  {
+   "name": "Whitfield, Chris",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Willetts, Douglas",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Yaeger, Carl",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lopac, Tom",
+   "chamber": "house",
+   "district": "52B",
+   "contributions": 13752.58
+  },
+  {
+   "name": "Clardy, Mary Frances",
+   "chamber": "house",
+   "district": "53A",
+   "contributions": 35916.52
+  },
+  {
+   "name": "Herschbach, Nathan",
+   "chamber": "house",
+   "district": "53A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gubash, AJ",
+   "chamber": "house",
+   "district": "53A",
+   "contributions": 7419.87
+  },
+  {
+   "name": "Brooksby, Aaron",
+   "chamber": "house",
+   "district": "53B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gillespie, Alberder",
+   "chamber": "house",
+   "district": "53B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hansen, Richard (Rick) J",
+   "chamber": "house",
+   "district": "53B",
+   "contributions": 42642.0
+  },
+  {
+   "name": "Mikulski, Patricia",
+   "chamber": "house",
+   "district": "53B",
+   "contributions": 3965.0
+  },
+  {
+   "name": "Cumings, Paul",
+   "chamber": "house",
+   "district": "54A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Franke, Keith J",
+   "chamber": "house",
+   "district": "54A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Paul, Aaron",
+   "chamber": "house",
+   "district": "54A",
+   "contributions": 50561.33
+  },
+  {
+   "name": "Tabke, Brad",
+   "chamber": "house",
+   "district": "54A",
+   "contributions": 94411.32
+  },
+  {
+   "name": "Bakeberg, Ben",
+   "chamber": "house",
+   "district": "54B",
+   "contributions": 9968.45
+  },
+  {
+   "name": "Lake, Victor",
+   "chamber": "house",
+   "district": "54B",
+   "contributions": 50.0
+  },
+  {
+   "name": "Lee, Jean",
+   "chamber": "house",
+   "district": "54B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Steward, Christopher S",
+   "chamber": "house",
+   "district": "54B",
+   "contributions": 19827.1
+  },
+  {
+   "name": "Barnes, Natalie",
+   "chamber": "house",
+   "district": "54B",
+   "contributions": 30444.23
+  },
+  {
+   "name": "Kartschoke, Christopher",
+   "chamber": "house",
+   "district": "54B",
+   "contributions": 10177.84
+  },
+  {
+   "name": "Hanson, Jessica",
+   "chamber": "house",
+   "district": "55A",
+   "contributions": 13642.0
+  },
+  {
+   "name": "Kroetch, Gabriela",
+   "chamber": "house",
+   "district": "55A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Myhra, Pamela (Pam) J",
+   "chamber": "house",
+   "district": "55A",
+   "contributions": 24985.84
+  },
+  {
+   "name": "Berg, Kaela Jo",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 4790.0
+  },
+  {
+   "name": "Burkart, Kevin",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Holston, Van",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nelsen, Andrea",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Buchwald, Todd",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 9155.0
+  },
+  {
+   "name": "Cantrell, Hunter",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 42707.0
+  },
+  {
+   "name": "Clark, Justin",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fitchett, Kriystauhl",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gabbert, Emma",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Haji, Yusuf",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 3980.0
+  },
+  {
+   "name": "Silkey, Adam",
+   "chamber": "house",
+   "district": "55B",
+   "contributions": 13465.0
+  },
+  {
+   "name": "Bierman, Robert",
+   "chamber": "house",
+   "district": "56A",
+   "contributions": 54910.0
+  },
+  {
+   "name": "Zorn, Angela",
+   "chamber": "house",
+   "district": "56A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Prospect, AJ",
+   "chamber": "house",
+   "district": "56A",
+   "contributions": 5011.06
+  },
+  {
+   "name": "Anderson, Angeline",
+   "chamber": "house",
+   "district": "56B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hattaway, Andrew",
+   "chamber": "house",
+   "district": "56B",
+   "contributions": 7608.2
+  },
+  {
+   "name": "Huot, John Duffy",
+   "chamber": "house",
+   "district": "56B",
+   "contributions": 40870.0
+  },
+  {
+   "name": "Kanitz, Veda",
+   "chamber": "house",
+   "district": "57A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Koznick, Jon",
+   "chamber": "house",
+   "district": "57A",
+   "contributions": 52240.0
+  },
+  {
+   "name": "Mack, Tara",
+   "chamber": "house",
+   "district": "57A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Delgado, Jenaro",
+   "chamber": "house",
+   "district": "57A",
+   "contributions": 13478.15
+  },
+  {
+   "name": "Cohn, Brian",
+   "chamber": "house",
+   "district": "57B",
+   "contributions": 59142.72
+  },
+  {
+   "name": "Preese, Erin B",
+   "chamber": "house",
+   "district": "57B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schroer, Steven",
+   "chamber": "house",
+   "district": "57B",
+   "contributions": 4015.0
+  },
+  {
+   "name": "Witte, Jeff",
+   "chamber": "house",
+   "district": "57B",
+   "contributions": 42515.74
+  },
+  {
+   "name": "Olson, Rita Hillmann",
+   "chamber": "house",
+   "district": "58A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pursell, Kristi",
+   "chamber": "house",
+   "district": "58A",
+   "contributions": 59189.69
+  },
+  {
+   "name": "Williams, Maggie",
+   "chamber": "house",
+   "district": "58A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cherney, Steve",
+   "chamber": "house",
+   "district": "58A",
+   "contributions": 4415.0
+  },
+  {
+   "name": "Kiner, James (Jim)",
+   "chamber": "house",
+   "district": "58B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Roach, Drew",
+   "chamber": "house",
+   "district": "58B",
+   "contributions": 12365.0
+  },
+  {
+   "name": "Vagts, Marla",
+   "chamber": "house",
+   "district": "58B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fellows, Ed",
+   "chamber": "house",
+   "district": "58B",
+   "contributions": 27034.81
+  },
+  {
+   "name": "Eder, Dorian",
+   "chamber": "house",
+   "district": "59A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lee, Fue",
+   "chamber": "house",
+   "district": "59A",
+   "contributions": 28940.0
+  },
+  {
+   "name": "Mullery, Joe",
+   "chamber": "house",
+   "district": "59A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Agbaje, Esther",
+   "chamber": "house",
+   "district": "59B",
+   "contributions": 37310.0
+  },
+  {
+   "name": "Mazzotta, Gary J",
+   "chamber": "house",
+   "district": "59B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smoron, Kenneth",
+   "chamber": "house",
+   "district": "59B",
+   "contributions": 2730.7
+  },
+  {
+   "name": "Jordan, Sydney",
+   "chamber": "house",
+   "district": "60A",
+   "contributions": 17310.0
+  },
+  {
+   "name": "Neumann, Aaron M",
+   "chamber": "house",
+   "district": "60A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Holmberg, John",
+   "chamber": "house",
+   "district": "60A",
+   "contributions": 2109.0
+  },
+  {
+   "name": "Kahn, Phyllis",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Noor, Mohamud",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 35315.0
+  },
+  {
+   "name": "Pasha, Haaris",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wagenius, Peter",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wolters, Abigail",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Yusuf (Taani), Fadumo",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mahmud, Abdurrahman",
+   "chamber": "house",
+   "district": "60B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Greene, Marion C",
+   "chamber": "house",
+   "district": "61A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hornstein, Frank",
+   "chamber": "house",
+   "district": "61A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jones, Katie",
+   "chamber": "house",
+   "district": "61A",
+   "contributions": 32388.26
+  },
+  {
+   "name": "Lopez, Toya",
+   "chamber": "house",
+   "district": "61A",
+   "contributions": 200.0
+  },
+  {
+   "name": "Rolfes, Isabel",
+   "chamber": "house",
+   "district": "61A",
+   "contributions": 1051.0
+  },
+  {
+   "name": "Stancil, Will",
+   "chamber": "house",
+   "district": "61A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Long, James (Jamie)",
+   "chamber": "house",
+   "district": "61B",
+   "contributions": 74442.44
+  },
+  {
+   "name": "Gomez, Aisha",
+   "chamber": "house",
+   "district": "62A",
+   "contributions": 33388.44
+  },
+  {
+   "name": "Hassan, Hodan",
+   "chamber": "house",
+   "district": "62B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mahamoud, Anquam",
+   "chamber": "house",
+   "district": "62B",
+   "contributions": 23677.66
+  },
+  {
+   "name": "Sullentrop, Bob",
+   "chamber": "house",
+   "district": "62B",
+   "contributions": 2250.0
+  },
+  {
+   "name": "Bragg, Kyle",
+   "chamber": "house",
+   "district": "63A",
+   "contributions": 1750.0
+  },
+  {
+   "name": "Sencer-Mura, Samantha",
+   "chamber": "house",
+   "district": "63A",
+   "contributions": 15985.28
+  },
+  {
+   "name": "Greenman, Emma",
+   "chamber": "house",
+   "district": "63B",
+   "contributions": 66655.0
+  },
+  {
+   "name": "Napper, Diane",
+   "chamber": "house",
+   "district": "63B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Peters, Nicholas",
+   "chamber": "house",
+   "district": "63B",
+   "contributions": 3060.0
+  },
+  {
+   "name": "Brown, Andrew",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fraser, Beth",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 11914.5
+  },
+  {
+   "name": "Her, Kaohly",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 15373.0
+  },
+  {
+   "name": "Hill, Matt",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Luger-Nikolai, Meg",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 9547.57
+  },
+  {
+   "name": "McGrath, Dan",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Quam, Lois",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Walsh, Daniel",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Zwier, John",
+   "chamber": "house",
+   "district": "64A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Donahue, Peter",
+   "chamber": "house",
+   "district": "64B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pinto, David P",
+   "chamber": "house",
+   "district": "64B",
+   "contributions": 78104.0
+  },
+  {
+   "name": "Hussein, Samakab",
+   "chamber": "house",
+   "district": "65A",
+   "contributions": 57787.0
+  },
+  {
+   "name": "Hilborn, Mike",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mariani, Carlos",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 0.0
+  },
+  {
+   "name": "P\u00e9rez-Vega, Mar\u00eda",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 5148.0
+  },
+  {
+   "name": "Ali, Abshir",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ellefson, Sebastian",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 12135.0
+  },
+  {
+   "name": "Mena, Elena",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Schluender, Alexander",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Taylor Schlitz, Haley",
+   "chamber": "house",
+   "district": "65B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Finke, Leigh",
+   "chamber": "house",
+   "district": "66A",
+   "contributions": 52336.36
+  },
+  {
+   "name": "Jama, Fadil",
+   "chamber": "house",
+   "district": "66A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rose, Brett",
+   "chamber": "house",
+   "district": "66A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Born, Mark",
+   "chamber": "house",
+   "district": "66A",
+   "contributions": 5555.0
+  },
+  {
+   "name": "Copeland, Greg",
+   "chamber": "house",
+   "district": "66B",
+   "contributions": 25.0
+  },
+  {
+   "name": "Hollins, Athena",
+   "chamber": "house",
+   "district": "66B",
+   "contributions": 20620.85
+  },
+  {
+   "name": "Lesch, John",
+   "chamber": "house",
+   "district": "66B",
+   "contributions": 0.0
+  },
+  {
+   "name": "O'Neal, Mary",
+   "chamber": "house",
+   "district": "66B",
+   "contributions": 2016.2
+  },
+  {
+   "name": "Lee, Kaozouapa Elizabeth",
+   "chamber": "house",
+   "district": "67A",
+   "contributions": 10885.0
+  },
+  {
+   "name": "Murphy, Hoang",
+   "chamber": "house",
+   "district": "67A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Thompson, John D",
+   "chamber": "house",
+   "district": "67A",
+   "contributions": 0.0
+  },
+  {
+   "name": "McPherson, Jennifer",
+   "chamber": "house",
+   "district": "67A",
+   "contributions": 0.0
+  },
+  {
+   "name": "Xiong, Jay",
+   "chamber": "house",
+   "district": "67B",
+   "contributions": 42585.0
+  },
+  {
+   "name": "Yang, Shoua",
+   "chamber": "house",
+   "district": "67B",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hughes, Dave",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 0.0
+  },
+  {
+   "name": "Johnson, Mark T",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 73073.15
+  },
+  {
+   "name": "Solberg, Bjorn",
+   "chamber": "senate",
+   "district": "1",
+   "contributions": 10905.16
+  },
+  {
+   "name": "Green, Steve",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 22960.0
+  },
+  {
+   "name": "Larson Jr, Calvin",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 1976.0
+  },
+  {
+   "name": "Rogers, Dan",
+   "chamber": "senate",
+   "district": "2",
+   "contributions": 43703.89
+  },
+  {
+   "name": "Hauschild, Grant",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 304191.77
+  },
+  {
+   "name": "Zupancich, Andrea",
+   "chamber": "senate",
+   "district": "3",
+   "contributions": 70713.7
+  },
+  {
+   "name": "Kupec, Rob",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 116201.77
+  },
+  {
+   "name": "Peterson, Austin",
+   "chamber": "senate",
+   "district": "4",
+   "contributions": 73565.53
+  },
+  {
+   "name": "Utke, Paul J",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 26049.0
+  },
+  {
+   "name": "Fynboh, Skylar",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 10953.0
+  },
+  {
+   "name": "Wiener, Michael",
+   "chamber": "senate",
+   "district": "5",
+   "contributions": 20582.0
+  },
+  {
+   "name": "Carnahan, Jennifer",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cotariu, Steve",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 450.0
+  },
+  {
+   "name": "Eichorn, Justin",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 5250.0
+  },
+  {
+   "name": "Gazelka, Josh",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hardy, Nicole (Nicky)",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 216.0
+  },
+  {
+   "name": "Heintzeman, Keri",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 56135.0
+  },
+  {
+   "name": "Howe, John",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kern, Doug",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Slipy, Denise",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 26113.83
+  },
+  {
+   "name": "Zierden, Angel",
+   "chamber": "senate",
+   "district": "6",
+   "contributions": 0.0
+  },
+  {
+   "name": "Farnsworth, Robert",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 45318.02
+  },
+  {
+   "name": "Sims, David",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 0.0
+  },
+  {
+   "name": "McLaughlin, Kim",
+   "chamber": "senate",
+   "district": "7",
+   "contributions": 25477.76
+  },
+  {
+   "name": "Anderson, Michele",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 0.0
+  },
+  {
+   "name": "McEwen, Jen",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 30931.0
+  },
+  {
+   "name": "Law, Darrick",
+   "chamber": "senate",
+   "district": "8",
+   "contributions": 7070.0
+  },
+  {
+   "name": "Rasmusson, Jordan",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 188005.0
+  },
+  {
+   "name": "Knutson, Krystyne",
+   "chamber": "senate",
+   "district": "9",
+   "contributions": 17213.28
+  },
+  {
+   "name": "Ruud, Carrie",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wesenberg, Nathanial L",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 31990.99
+  },
+  {
+   "name": "Holthaus, Deborah",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 12829.99
+  },
+  {
+   "name": "Killen, Tara",
+   "chamber": "senate",
+   "district": "10",
+   "contributions": 14250.4
+  },
+  {
+   "name": "Boyechko, Michelle",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rarick, Jason",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 42305.0
+  },
+  {
+   "name": "Carlson, Mary",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 45424.81
+  },
+  {
+   "name": "Doward, Monique Annette",
+   "chamber": "senate",
+   "district": "11",
+   "contributions": 3890.0
+  },
+  {
+   "name": "Dorry, Kari",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 39391.72
+  },
+  {
+   "name": "Westrom, Torrey N",
+   "chamber": "senate",
+   "district": "12",
+   "contributions": 70327.0
+  },
+  {
+   "name": "Brutger, Aaron",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 14759.15
+  },
+  {
+   "name": "Dilks, Trent Christian",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 33947.83
+  },
+  {
+   "name": "Howe, Jeffrey R",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 14775.28
+  },
+  {
+   "name": "Martini, Kelly",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 1346.06
+  },
+  {
+   "name": "Gapinski, Jared",
+   "chamber": "senate",
+   "district": "13",
+   "contributions": 71975.04
+  },
+  {
+   "name": "Clark, Tarryl",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 0.0
+  },
+  {
+   "name": "Perryman, Bernadette A",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 176956.47
+  },
+  {
+   "name": "Putnam, Aric",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 143419.16
+  },
+  {
+   "name": "Wolgamott, Daniel (Dan)",
+   "chamber": "senate",
+   "district": "14",
+   "contributions": 0.0
+  },
+  {
+   "name": "Boettger, Andrea",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 29023.28
+  },
+  {
+   "name": "Brown, Chilah",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dahms, Gary H",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 38145.0
+  },
+  {
+   "name": "Gaul, Anita",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 19.2
+  },
+  {
+   "name": "Lesmeister-Knott, Tiffany",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mock, Brian",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 0.0
+  },
+  {
+   "name": "Seifert, Braxton J",
+   "chamber": "senate",
+   "district": "15",
+   "contributions": 82132.06
+  },
+  {
+   "name": "Lang, Andrew R",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 27285.0
+  },
+  {
+   "name": "Jorgenson, Kathy",
+   "chamber": "senate",
+   "district": "16",
+   "contributions": 9975.0
+  },
+  {
+   "name": "Gruenhagen, Glenn H",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 47462.5
+  },
+  {
+   "name": "Koenen, Lyle J",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 0.0
+  },
+  {
+   "name": "Osmek, David",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 600.0
+  },
+  {
+   "name": "Kelzer, Julie",
+   "chamber": "senate",
+   "district": "17",
+   "contributions": 14733.28
+  },
+  {
+   "name": "Frentz, Nick Andrew",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 79491.7
+  },
+  {
+   "name": "Henry, Jackie",
+   "chamber": "senate",
+   "district": "18",
+   "contributions": 22497.5
+  },
+  {
+   "name": "Jasinski, John R",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 74358.0
+  },
+  {
+   "name": "Alan, Crystal",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 0.0
+  },
+  {
+   "name": "Doumbouya, Adama",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 0.0
+  },
+  {
+   "name": "Powell, Sam",
+   "chamber": "senate",
+   "district": "19",
+   "contributions": 11796.08
+  },
+  {
+   "name": "Bartusek, Mark John",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 0.0
+  },
+  {
+   "name": "Drazkowski, Steve",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 50.0
+  },
+  {
+   "name": "Lohmann, Jason",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 40510.01
+  },
+  {
+   "name": "Petricka, Mark (Danny)",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jacob, Steven",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 39760.91
+  },
+  {
+   "name": "Kimble, Theodore \"Teddy\"",
+   "chamber": "senate",
+   "district": "20",
+   "contributions": 2000.0
+  },
+  {
+   "name": "Weber, Bill",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 17550.0
+  },
+  {
+   "name": "Knoll, Christopher Robin",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 29155.0
+  },
+  {
+   "name": "Peterson, Nathan",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 0.0
+  },
+  {
+   "name": "Prosch, Matt",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sanow-Minett, Caitlyn",
+   "chamber": "senate",
+   "district": "21",
+   "contributions": 13174.22
+  },
+  {
+   "name": "Draheim, Rich",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 3950.0
+  },
+  {
+   "name": "Munson, Jeremy",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 26782.15
+  },
+  {
+   "name": "Ulmen, Marisa",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 25868.43
+  },
+  {
+   "name": "Woletz, Michael",
+   "chamber": "senate",
+   "district": "22",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dornink, Gene",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 43117.5
+  },
+  {
+   "name": "Hanson, Angie",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 77468.64
+  },
+  {
+   "name": "Hanson, Lisa (Melissa)",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ney, Jennifer",
+   "chamber": "senate",
+   "district": "23",
+   "contributions": 0.0
+  },
+  {
+   "name": "Glaser, Simon",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 142760.04
+  },
+  {
+   "name": "Nelson, Carla J",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 21524.0
+  },
+  {
+   "name": "Bradford, Chuck",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 0.0
+  },
+  {
+   "name": "O'Dris, Jesse",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pierson, Nels",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 59147.43
+  },
+  {
+   "name": "Sepeda, Dan",
+   "chamber": "senate",
+   "district": "24",
+   "contributions": 0.0
+  },
+  {
+   "name": "Boldon, Liz",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 46144.34
+  },
+  {
+   "name": "Howie, John",
+   "chamber": "senate",
+   "district": "25",
+   "contributions": 12029.0
+  },
+  {
+   "name": "Hicks, Daniel",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 0.0
+  },
+  {
+   "name": "Johnson, Cherie",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 90867.5
+  },
+  {
+   "name": "Leitzen, Eric",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 0.0
+  },
+  {
+   "name": "Miller, Jeremy",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 4570.0
+  },
+  {
+   "name": "Todd, Michael",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 19687.54
+  },
+  {
+   "name": "Wilson, Daniel",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 0.0
+  },
+  {
+   "name": "Carlson, Lynn Joann",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hedin, Jack",
+   "chamber": "senate",
+   "district": "26",
+   "contributions": 124602.16
+  },
+  {
+   "name": "Mathews, Andrew",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 18830.0
+  },
+  {
+   "name": "Van Dover, Brandon",
+   "chamber": "senate",
+   "district": "27",
+   "contributions": 3384.12
+  },
+  {
+   "name": "Bird, Victoria Ann",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 0.0
+  },
+  {
+   "name": "Koran, Mark",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 23324.8
+  },
+  {
+   "name": "Glenna, Max",
+   "chamber": "senate",
+   "district": "28",
+   "contributions": 9851.0
+  },
+  {
+   "name": "Anderson, Bruce D",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Christianson, Kip",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 12525.0
+  },
+  {
+   "name": "Holmstrom Jr, Michael",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 9127.0
+  },
+  {
+   "name": "McNutt, Louis",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 11481.12
+  },
+  {
+   "name": "Fiskum, Dan",
+   "chamber": "senate",
+   "district": "29",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lucero, Eric",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 38823.6
+  },
+  {
+   "name": "Temple, Leah",
+   "chamber": "senate",
+   "district": "30",
+   "contributions": 7707.28
+  },
+  {
+   "name": "Bahr, Calvin (Cal) K",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 12550.0
+  },
+  {
+   "name": "Englund, Ricky",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 0.0
+  },
+  {
+   "name": "Berkessa, Gadisa",
+   "chamber": "senate",
+   "district": "31",
+   "contributions": 18576.73
+  },
+  {
+   "name": "Fike, Joshua",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 0.0
+  },
+  {
+   "name": "Ford, Chris",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 80946.93
+  },
+  {
+   "name": "Kreun, Michael",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 100250.76
+  },
+  {
+   "name": "Luthner, Kate",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 0.0
+  },
+  {
+   "name": "Nienow, Sean",
+   "chamber": "senate",
+   "district": "32",
+   "contributions": 0.0
+  },
+  {
+   "name": "Housley, Karin",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 104825.0
+  },
+  {
+   "name": "McLean, Nancy",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 0.0
+  },
+  {
+   "name": "Smith, Nat",
+   "chamber": "senate",
+   "district": "33",
+   "contributions": 133637.1
+  },
+  {
+   "name": "Attia, Karen M",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 11225.0
+  },
+  {
+   "name": "Biros, Tim",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 0.0
+  },
+  {
+   "name": "Coleman, Aarica L",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hoffman, John A",
+   "chamber": "senate",
+   "district": "34",
+   "contributions": 85631.04
+  },
+  {
+   "name": "Abeler, Jim",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 113428.74
+  },
+  {
+   "name": "Nelson, Angela",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 138943.99
+  },
+  {
+   "name": "Oundo, Ian",
+   "chamber": "senate",
+   "district": "35",
+   "contributions": 5448.32
+  },
+  {
+   "name": "Chamberlain, Roger C",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 0.0
+  },
+  {
+   "name": "Gustafson, Heather",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 108677.92
+  },
+  {
+   "name": "Heino, Heidi",
+   "chamber": "senate",
+   "district": "36",
+   "contributions": 25470.05
+  },
+  {
+   "name": "Janigo, Kristy",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 152374.9
+  },
+  {
+   "name": "Jensen, Joseph",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 0.0
+  },
+  {
+   "name": "Khalif, Farhio",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 0.0
+  },
+  {
+   "name": "Limmer, Warren",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 7425.0
+  },
+  {
+   "name": "Bristol, John",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 0.0
+  },
+  {
+   "name": "Chanen, Austin",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hoag, Brady",
+   "chamber": "senate",
+   "district": "37",
+   "contributions": 52374.0
+  },
+  {
+   "name": "Garley, Nehemiah",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 3205.0
+  },
+  {
+   "name": "Momanyi Hiltsley, Huldah Nyamisa",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pha, Susan",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 88563.95
+  },
+  {
+   "name": "Stofferahn, Justin",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 0.0
+  },
+  {
+   "name": "Olson, Bradley (Brad)",
+   "chamber": "senate",
+   "district": "38",
+   "contributions": 10695.0
+  },
+  {
+   "name": "Kunesh, Mary",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 30124.94
+  },
+  {
+   "name": "Mowery, Christopher N",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wolf, Pam",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 7414.0
+  },
+  {
+   "name": "Niang, Ngone",
+   "chamber": "senate",
+   "district": "39",
+   "contributions": 2755.0
+  },
+  {
+   "name": "Japuntich, Rachel",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 11305.0
+  },
+  {
+   "name": "Marty, John J",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 26810.0
+  },
+  {
+   "name": "Marvin, Robert",
+   "chamber": "senate",
+   "district": "40",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dippel, Tom",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 44075.49
+  },
+  {
+   "name": "Seeberger, Judy",
+   "chamber": "senate",
+   "district": "41",
+   "contributions": 126390.21
+  },
+  {
+   "name": "Westlin, Bonnie S",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 53098.76
+  },
+  {
+   "name": "Peterson, Kevin",
+   "chamber": "senate",
+   "district": "42",
+   "contributions": 39210.71
+  },
+  {
+   "name": "Freiberg, Mike",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 78576.12
+  },
+  {
+   "name": "Rest, Ann H",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 24875.0
+  },
+  {
+   "name": "Sant, Samir",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wiger, Charles (Chuck) W",
+   "chamber": "senate",
+   "district": "43",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lienemann, Leslie",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 8365.0
+  },
+  {
+   "name": "Solo, Leah",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wehyee, Yakasah O",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 1505.0
+  },
+  {
+   "name": "Xiong, Tou",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 750.0
+  },
+  {
+   "name": "Miller, Teresa",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 0.0
+  },
+  {
+   "name": "Montes de Oca, Mauricio",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rosemark, Sam",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 41415.0
+  },
+  {
+   "name": "tacheny, James",
+   "chamber": "senate",
+   "district": "44",
+   "contributions": 9115.0
+  },
+  {
+   "name": "Fowke, Kathleen",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 0.0
+  },
+  {
+   "name": "Reitan, Emily",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 0.0
+  },
+  {
+   "name": "Stewart, Ann Johnson",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 98617.84
+  },
+  {
+   "name": "Bruce, Shannon",
+   "chamber": "senate",
+   "district": "45",
+   "contributions": 66634.91
+  },
+  {
+   "name": "Dumalag, Lynette",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 58104.0
+  },
+  {
+   "name": "Latz, Ronald S",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 190351.0
+  },
+  {
+   "name": "Wright, Kayla",
+   "chamber": "senate",
+   "district": "46",
+   "contributions": 7985.0
+  },
+  {
+   "name": "Cha, Ethan",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 950.0
+  },
+  {
+   "name": "Dorau, Dwight",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hemmingsen-Jaeger, Amanda",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 22761.54
+  },
+  {
+   "name": "Mitchell, Nicole",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 535.0
+  },
+  {
+   "name": "Stalboerger, Brian",
+   "chamber": "senate",
+   "district": "47",
+   "contributions": 11117.0
+  },
+  {
+   "name": "Coleman, Julia",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 76054.0
+  },
+  {
+   "name": "Jiang, Jeff",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kessler, Dan",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 0.0
+  },
+  {
+   "name": "Kessler, Daniel",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 92180.34
+  },
+  {
+   "name": "von Oven, Mark",
+   "chamber": "senate",
+   "district": "48",
+   "contributions": 0.0
+  },
+  {
+   "name": "Cwodzinski, Steve",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 5345.0
+  },
+  {
+   "name": "Andreson, Shannon",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 0.0
+  },
+  {
+   "name": "Babler, Kristofer",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 4248.46
+  },
+  {
+   "name": "DuFault, Dustin",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 25044.34
+  },
+  {
+   "name": "Lease-Stecher, Kellie",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 0.0
+  },
+  {
+   "name": "Subrahmanian, Dr Krishnan",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 150137.0
+  },
+  {
+   "name": "Tedmon, Dirk",
+   "chamber": "senate",
+   "district": "49",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mann, Alice",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 170.0
+  },
+  {
+   "name": "Smithson, Anita",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 5925.0
+  },
+  {
+   "name": "Hult, Karla",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 79166.0
+  },
+  {
+   "name": "Ibrahim, Amal",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 2575.0
+  },
+  {
+   "name": "Korman, Nelly",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 8447.0
+  },
+  {
+   "name": "McClellan, John",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 5455.0
+  },
+  {
+   "name": "Michaelson, Owen",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 9195.0
+  },
+  {
+   "name": "Rosenthal, Paul",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 0.0
+  },
+  {
+   "name": "Spence, Mick",
+   "chamber": "senate",
+   "district": "50",
+   "contributions": 0.0
+  },
+  {
+   "name": "Daley, Theodore (Ted) J",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pafko, Frank",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 675.0
+  },
+  {
+   "name": "Wiklund, Melissa Halvorson",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 8225.0
+  },
+  {
+   "name": "Birgersson, Juline",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 7675.0
+  },
+  {
+   "name": "Starks, Heather",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 0.0
+  },
+  {
+   "name": "Trautmann Cordova, Simon",
+   "chamber": "senate",
+   "district": "51",
+   "contributions": 49714.0
+  },
+  {
+   "name": "Carlson, James",
+   "chamber": "senate",
+   "district": "52",
+   "contributions": 6006.0
+  },
+  {
+   "name": "Lowell, Stephen",
+   "chamber": "senate",
+   "district": "52",
+   "contributions": 0.0
+  },
+  {
+   "name": "Reyer, Liz",
+   "chamber": "senate",
+   "district": "52",
+   "contributions": 66940.87
+  },
+  {
+   "name": "O'Neil, Brady",
+   "chamber": "senate",
+   "district": "52",
+   "contributions": 9925.0
+  },
+  {
+   "name": "Cumings, Paul",
+   "chamber": "senate",
+   "district": "53",
+   "contributions": 69647.71
+  },
+  {
+   "name": "Klein, Matthew D",
+   "chamber": "senate",
+   "district": "53",
+   "contributions": 22504.0
+  },
+  {
+   "name": "Podgorski, Todd",
+   "chamber": "senate",
+   "district": "53",
+   "contributions": 25295.0
+  },
+  {
+   "name": "Lund, Dan",
+   "chamber": "senate",
+   "district": "53",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bakeberg, Ben",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 110097.59
+  },
+  {
+   "name": "Barnes, Natalie",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 0.0
+  },
+  {
+   "name": "Olson, Rick",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 14365.23
+  },
+  {
+   "name": "Pratt, Eric",
+   "chamber": "senate",
+   "district": "54",
+   "contributions": 9850.0
+  },
+  {
+   "name": "Ali, Ali C",
+   "chamber": "senate",
+   "district": "55",
+   "contributions": 0.0
+  },
+  {
+   "name": "Myhra, Pamela (Pam) J",
+   "chamber": "senate",
+   "district": "55",
+   "contributions": 550.0
+  },
+  {
+   "name": "Port, Lindsey",
+   "chamber": "senate",
+   "district": "55",
+   "contributions": 38805.09
+  },
+  {
+   "name": "Holston, Van",
+   "chamber": "senate",
+   "district": "55",
+   "contributions": 12815.0
+  },
+  {
+   "name": "Maye Quade, Erin",
+   "chamber": "senate",
+   "district": "56",
+   "contributions": 35181.0
+  },
+  {
+   "name": "Alter, Julida",
+   "chamber": "senate",
+   "district": "56",
+   "contributions": 7996.15
+  },
+  {
+   "name": "Petersen, Raymond",
+   "chamber": "senate",
+   "district": "56",
+   "contributions": 0.0
+  },
+  {
+   "name": "Craig, Jackie",
+   "chamber": "senate",
+   "district": "57",
+   "contributions": 0.0
+  },
+  {
+   "name": "Duckworth, Zach",
+   "chamber": "senate",
+   "district": "57",
+   "contributions": 40225.0
+  },
+  {
+   "name": "Schroer, Steven",
+   "chamber": "senate",
+   "district": "57",
+   "contributions": 17367.22
+  },
+  {
+   "name": "Legvold, Mark",
+   "chamber": "senate",
+   "district": "58",
+   "contributions": 146629.83
+  },
+  {
+   "name": "Lieske, Bill",
+   "chamber": "senate",
+   "district": "58",
+   "contributions": 37272.0
+  },
+  {
+   "name": "Champion, Bobby Joe",
+   "chamber": "senate",
+   "district": "59",
+   "contributions": 99720.0
+  },
+  {
+   "name": "Isse, Suleiman",
+   "chamber": "senate",
+   "district": "59",
+   "contributions": 0.0
+  },
+  {
+   "name": "Clark, Doron",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 28265.8
+  },
+  {
+   "name": "Dziedzic, Kari (Karen)",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 0.0
+  },
+  {
+   "name": "Jama, Mohamed",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 16718.84
+  },
+  {
+   "name": "Karim, Amal",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wagenius, Peter",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 0.0
+  },
+  {
+   "name": "Wolters, Abigail",
+   "chamber": "senate",
+   "district": "60",
+   "contributions": 3895.0
+  },
+  {
+   "name": "Dibble, D Scott",
+   "chamber": "senate",
+   "district": "61",
+   "contributions": 61499.06
+  },
+  {
+   "name": "Elgin, Patrick",
+   "chamber": "senate",
+   "district": "62",
+   "contributions": 0.0
+  },
+  {
+   "name": "Fateh, Omar",
+   "chamber": "senate",
+   "district": "62",
+   "contributions": 40342.27
+  },
+  {
+   "name": "Schmitz, Andrew",
+   "chamber": "senate",
+   "district": "62",
+   "contributions": 0.0
+  },
+  {
+   "name": "Austin, Jeanelle",
+   "chamber": "senate",
+   "district": "62",
+   "contributions": 11923.0
+  },
+  {
+   "name": "Short, Brenda",
+   "chamber": "senate",
+   "district": "62",
+   "contributions": 5906.15
+  },
+  {
+   "name": "Holster, Shawn",
+   "chamber": "senate",
+   "district": "63",
+   "contributions": 0.0
+  },
+  {
+   "name": "Mohamed, Zaynab",
+   "chamber": "senate",
+   "district": "63",
+   "contributions": 50591.04
+  },
+  {
+   "name": "Scott, Ulric \"Todd\" C, III",
+   "chamber": "senate",
+   "district": "63",
+   "contributions": 0.0
+  },
+  {
+   "name": "Napper, Diane",
+   "chamber": "senate",
+   "district": "63",
+   "contributions": 6810.0
+  },
+  {
+   "name": "Murphy, Erin",
+   "chamber": "senate",
+   "district": "64",
+   "contributions": 107463.0
+  },
+  {
+   "name": "Bushard, Robert",
+   "chamber": "senate",
+   "district": "64",
+   "contributions": 5680.0
+  },
+  {
+   "name": "Gulley, Robyn",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 56674.5
+  },
+  {
+   "name": "Holmgren, Paul",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 0.0
+  },
+  {
+   "name": "Pappas, Sandra L",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 13185.0
+  },
+  {
+   "name": "Bennett, Natasha",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 0.0
+  },
+  {
+   "name": "Lundy, Jamael",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rocco, Christopher",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 14395.0
+  },
+  {
+   "name": "Williams, Raeisha",
+   "chamber": "senate",
+   "district": "65",
+   "contributions": 0.0
+  },
+  {
+   "name": "Verbeten, Clare Oumou",
+   "chamber": "senate",
+   "district": "66",
+   "contributions": 26391.0
+  },
+  {
+   "name": "Bart, Kathleen",
+   "chamber": "senate",
+   "district": "66",
+   "contributions": 6785.0
+  },
+  {
+   "name": "Hammer, David",
+   "chamber": "senate",
+   "district": "66",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hawj, Foung",
+   "chamber": "senate",
+   "district": "67",
+   "contributions": 77280.06
+  },
+  {
+   "name": "Humphrey, Robert",
+   "chamber": "senate",
+   "district": "67",
+   "contributions": 0.0
+  },
+  {
+   "name": "Hesselgrave, Toby",
+   "chamber": "senate",
+   "district": "67",
+   "contributions": 0.0
+  }
+ ]
+}

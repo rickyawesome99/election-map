@@ -1,0 +1,6361 @@
+{
+ "state": "PA",
+ "cycle": 2026,
+ "source": "Pennsylvania Department of State campaign finance exports (itemized + unitemized contributions)",
+ "fetched": "2026-11-03",
+ "dataThrough": "12/31/2026",
+ "candidates": [
+  {
+   "name": "VOLUNTEERS FOR ARGALL",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "29",
+   "committee": "8400088",
+   "contributions": 411605.0
+  },
+  {
+   "name": "FRIENDS OF SUMMER LEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "34",
+   "committee": "20170298",
+   "contributions": 0.0
+  },
+  {
+   "name": "SUPPORTERS FOR CAROL HILL-EVANS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "95",
+   "committee": "20160239",
+   "contributions": 9425.0
+  },
+  {
+   "name": "FRIENDS OF BEN SANCHEZ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "153",
+   "committee": "20180336",
+   "contributions": 52331.42
+  },
+  {
+   "name": "FRIENDS OF STEVE MALAGARI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "53",
+   "committee": "20180263",
+   "contributions": 273141.73
+  },
+  {
+   "name": "Committee to Elect Ryan Bizzarro",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "3",
+   "committee": "20120075",
+   "contributions": 534185.04
+  },
+  {
+   "name": "DAN FRANKEL FOR THE 23RD DISTRICT COMMITTEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "23",
+   "committee": "9700285",
+   "contributions": 156792.78
+  },
+  {
+   "name": "MARIAFORPA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "20170364",
+   "contributions": 406756.6
+  },
+  {
+   "name": "FRIENDS OF PATTY KIM",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "15",
+   "committee": "20110285",
+   "contributions": 60511.5
+  },
+  {
+   "name": "PLAIDSYLVANIA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "47",
+   "committee": "20240121",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MICHELLE SIEGEL",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "27",
+   "committee": "20190265",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF TIM KEARNEY",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "20170278",
+   "contributions": 105765.32
+  },
+  {
+   "name": "FRIENDS OF JOE WEBSTER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "150",
+   "committee": "20180057",
+   "contributions": 119671.0
+  },
+  {
+   "name": "FRIENDS OF JARED SOLOMON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "202",
+   "committee": "20130202",
+   "contributions": 276477.0
+  },
+  {
+   "name": "VOTERS FOR VICTORIA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "38",
+   "committee": "20240090",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAN GOUGHNOUR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "35",
+   "committee": "2025C0007",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAN GOUGHNOUR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "35",
+   "committee": "20250069",
+   "contributions": 50180.18
+  },
+  {
+   "name": "JAMES MALONE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "2025C0004",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF BOBBY JEFFRIES",
+   "party": "REP",
+   "chamber": "house",
+   "district": "106",
+   "committee": "20240019",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JOE LECKENBY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "42",
+   "committee": "20240276",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARTELL FOR THE PEOPLE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "24",
+   "committee": "20210348",
+   "contributions": 0.0
+  },
+  {
+   "name": "TEAM GILLESPIE - TREASURER LEENA SHUTZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "47",
+   "committee": "2002013",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES BRUNO STRUZZI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "62",
+   "committee": "20200452",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF CHRISTINA SAPPEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "158",
+   "committee": "20180110",
+   "contributions": 32585.74
+  },
+  {
+   "name": "FRIENDS OF CAROLYN COMITTA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "19",
+   "committee": "20160170",
+   "contributions": 16702.0
+  },
+  {
+   "name": "SAEED GEORGES FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "20220160",
+   "contributions": 0.0
+  },
+  {
+   "name": "SCHMOTZER FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "20120143",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF WILLIAM ANDERSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "24",
+   "committee": "2010124",
+   "contributions": 0.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT JESSE MONOSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "103",
+   "committee": "20230337",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF KYLE MULLINS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "112",
+   "committee": "20170224",
+   "contributions": 302055.0
+  },
+  {
+   "name": "FRIENDS OF BRIAN RASEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "56",
+   "committee": "20220632",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF DAN MILLER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "42",
+   "committee": "20120415",
+   "contributions": 6551.87
+  },
+  {
+   "name": "LISA BOROWSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "168",
+   "committee": "20220079",
+   "contributions": 242056.44
+  },
+  {
+   "name": "FRIENDS OF NATE DAVIDSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "103",
+   "committee": "20230291",
+   "contributions": 85580.0
+  },
+  {
+   "name": "ZACHARY MOORE",
+   "party": "LIB",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "2025C0006",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ARVIND VENKAT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "30",
+   "committee": "20220092",
+   "contributions": 572962.8
+  },
+  {
+   "name": "COMMITTEE TO ELECT ROSITA C. YOUNGBLOOD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "198",
+   "committee": "9400089",
+   "contributions": 0.0
+  },
+  {
+   "name": "AZZOLLINI FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "139",
+   "committee": "20250308",
+   "contributions": 27860.74
+  },
+  {
+   "name": "FRIENDS OF ERIC WEAKNECHT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "",
+   "committee": "20240054",
+   "contributions": 49010.0
+  },
+  {
+   "name": "CAPPELLETTI FOR PA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "17",
+   "committee": "20190307",
+   "contributions": 84641.22
+  },
+  {
+   "name": "FRIENDS OF BRIDGET MALLOY KOSIEROWSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "114",
+   "committee": "20180532",
+   "contributions": 237588.47
+  },
+  {
+   "name": "FRIENDS OF KATELYN KENDALL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "90",
+   "committee": "20250229",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JUDY SCHWANK",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "11",
+   "committee": "2011090",
+   "contributions": 49750.0
+  },
+  {
+   "name": "JASMINE RIVERA FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "95",
+   "committee": "20240083",
+   "contributions": 0.0
+  },
+  {
+   "name": "CARROLL, ANDRE FOR PA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "",
+   "committee": "20190092",
+   "contributions": 125568.0
+  },
+  {
+   "name": "FRIENDS OF LEO SOLGA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "20250325",
+   "contributions": 41922.26
+  },
+  {
+   "name": "FRIENDS OF ROBERT KLOCK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "9600202",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF DAN MOUL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2006331",
+   "contributions": 87059.0
+  },
+  {
+   "name": "AMBER FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "108",
+   "committee": "20250306",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JOHN L. KENNEDY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "8",
+   "committee": "20220056",
+   "contributions": 0.0
+  },
+  {
+   "name": "WAXPAC",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "182",
+   "committee": "20150257",
+   "contributions": 87199.23
+  },
+  {
+   "name": "FRIENDS OF ERIC ROE CAMPAIGN FINANCE COMMITTEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "158",
+   "committee": "20150347",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROSSI FOR PA HOUSE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "59",
+   "committee": "20210112",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF KYLE DONAHUE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "113",
+   "committee": "20220211",
+   "contributions": 68275.0
+  },
+  {
+   "name": "CAMPAIGN FUND FOR KYLE SISKRON-LEONARD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "79",
+   "committee": "20220486",
+   "contributions": 0.0
+  },
+  {
+   "name": "GOLGOWSKI, BRUCE FRIENDS OF C/O TREASURER LINDA JACKSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "101",
+   "committee": "9800074",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF BRIM O'NEILL",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "2001155",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JEANINE MCGEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "140",
+   "committee": "20200141",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ELIZABETH MORO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "160",
+   "committee": "20230317",
+   "contributions": 249550.05
+  },
+  {
+   "name": "TIM HAYES FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "143",
+   "committee": "20250262",
+   "contributions": 95700.17
+  },
+  {
+   "name": "CHAD FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "37",
+   "committee": "20250292",
+   "contributions": 0.0
+  },
+  {
+   "name": "CITIZENS FOR JORDAN A. HARRIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "186",
+   "committee": "20120004",
+   "contributions": 1218192.31
+  },
+  {
+   "name": "FRIENDS OF JESSE TOPPER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "78",
+   "committee": "20130283",
+   "contributions": 666655.0
+  },
+  {
+   "name": "FRIENDS OF ERIC NELSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "57",
+   "committee": "20150361",
+   "contributions": 48360.0
+  },
+  {
+   "name": "Friends of Sara Agerton",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "88",
+   "committee": "20220111",
+   "contributions": 1080249.4
+  },
+  {
+   "name": "FRIENDS OF PRISCILLA BRANDON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "149",
+   "committee": "9500252",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JOSE GIRAL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "180",
+   "committee": "20220323",
+   "contributions": 83925.0
+  },
+  {
+   "name": "ELECT PARKE WENTLING",
+   "party": "REP",
+   "chamber": "house",
+   "district": "7",
+   "committee": "20140099",
+   "contributions": 16690.15
+  },
+  {
+   "name": "FRIENDS OF JAMES MALONE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "20250040",
+   "contributions": 3517596.8
+  },
+  {
+   "name": "FRIENDS OF LINDSAY POWELL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "21",
+   "committee": "20230214",
+   "contributions": 57100.0
+  },
+  {
+   "name": "FRIENDS OF SHARIF STREET",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "3",
+   "committee": "2002041",
+   "contributions": 237375.0
+  },
+  {
+   "name": "PAT FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "63",
+   "committee": "20240129",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF RUSS SHADE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2006113",
+   "contributions": 0.0
+  },
+  {
+   "name": "KITTA, ADAM  ",
+   "party": "LIB",
+   "chamber": "house",
+   "district": "35",
+   "committee": "2025C0010",
+   "contributions": 767.24
+  },
+  {
+   "name": "JOSH PARSONS",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "2025C0001",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS TO ELECT MIKE DOYLE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "20180082",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF STONE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "38",
+   "committee": "20240026",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MATT KRUTH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "20",
+   "committee": "20220321",
+   "contributions": 0.0
+  },
+  {
+   "name": "KANE FOR STATE SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "9",
+   "committee": "20190359",
+   "contributions": 24650.0
+  },
+  {
+   "name": "FRIENDS OF CATHY SPAHR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "160",
+   "committee": "20180076",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF GINA H. CURRY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "164",
+   "committee": "20210277",
+   "contributions": 54363.0
+  },
+  {
+   "name": "FRIENDS OF MELISSA CERRATO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "151",
+   "committee": "20220157",
+   "contributions": 19673.25
+  },
+  {
+   "name": "FRIENDS OF LIZ HANBIDGE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "61",
+   "committee": "20170247",
+   "contributions": 10999.04
+  },
+  {
+   "name": "Campaign for Compassion Committee",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "20120419",
+   "contributions": 201685.93
+  },
+  {
+   "name": "FRIENDS OF JOSHUA YOUNG",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "74",
+   "committee": "20110296",
+   "contributions": 0.0
+  },
+  {
+   "name": "EMRICK, JOE COMMITTEE TO ELECT C/O JOANN CARDELLO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "137",
+   "committee": "2003296",
+   "contributions": 0.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT PAULINE CALABRESE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "32",
+   "committee": "20240171",
+   "contributions": 0.0
+  },
+  {
+   "name": "KIM DIGAETANO FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "20220042",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Joanna McClinton",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "191",
+   "committee": "20150217",
+   "contributions": 2823023.91
+  },
+  {
+   "name": "FRIENDS OF ANDREA DEUTSCH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "20250290",
+   "contributions": 12283.39
+  },
+  {
+   "name": "NOAH KREISCHER FOR PA HOUSE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "89",
+   "committee": "20240128",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF CHRISTOPHER THOMAS",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "20230243",
+   "contributions": 490968.84
+  },
+  {
+   "name": "LISA GEPHART",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "59",
+   "committee": "2026C0821",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSE GIRAL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "180",
+   "committee": "2026C0149",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF AMY NOONE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "25",
+   "committee": "20260110",
+   "contributions": 2574.72
+  },
+  {
+   "name": "GUZMAN,MANUEL JR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "127",
+   "committee": "2026C0963",
+   "contributions": 0.0
+  },
+  {
+   "name": "JASON A. ORTITAY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "46",
+   "committee": "2026C0084",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEVEN C MENTZER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "97",
+   "committee": "2026C0108",
+   "contributions": 0.0
+  },
+  {
+   "name": "MIKE HAMMILL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "33",
+   "committee": "2026C0846",
+   "contributions": 0.0
+  },
+  {
+   "name": "JONATHAN A. FRITZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "111",
+   "committee": "2026C0329",
+   "contributions": 0.0
+  },
+  {
+   "name": "CEPEDA-FREYTIZ, JOHANNY  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "129",
+   "committee": "2026C0725",
+   "contributions": 0.0
+  },
+  {
+   "name": "WAYNE FONTANA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "42",
+   "committee": "2026C0175",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSEPH SACKOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "185",
+   "committee": "2026C0240",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMIE L. FLICK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "83",
+   "committee": "2026C0466",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JAMIE L. FLICK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "83",
+   "committee": "20220134",
+   "contributions": 0.0
+  },
+  {
+   "name": "JUSTIN HUMMEL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "109",
+   "committee": "2026C1084",
+   "contributions": 0.0
+  },
+  {
+   "name": "PERRY A STAMBAUGH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "86",
+   "committee": "2026C0259",
+   "contributions": 0.0
+  },
+  {
+   "name": "CALEB FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "79",
+   "committee": "20260026",
+   "contributions": 89688.73
+  },
+  {
+   "name": "MIKE CROSSEY 4 PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "46",
+   "committee": "20260064",
+   "contributions": 65066.82
+  },
+  {
+   "name": "FARRY, FRANK FRIENDS OF                                     ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "2008205",
+   "contributions": 6122388.22
+  },
+  {
+   "name": "KAMBER , DEIRDRE  J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2026C1049",
+   "contributions": 0.0
+  },
+  {
+   "name": "ISAACSON, MARYLOUISE FRIENDS OF                             ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "175",
+   "committee": "2010463",
+   "contributions": 45000.0
+  },
+  {
+   "name": "DISTRICT COUNCIL 33 POLITICAL CONTRIBUTIONS SSF",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "20150211",
+   "contributions": 500.0
+  },
+  {
+   "name": "KATHLEEN PRATT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2026C0750",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MADELYN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "13",
+   "committee": "20260023",
+   "contributions": 261651.66
+  },
+  {
+   "name": "MONICA WENINGER FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "178",
+   "committee": "20260006",
+   "contributions": 107257.51
+  },
+  {
+   "name": "DKAMBERTODD4PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "183",
+   "committee": "20260141",
+   "contributions": 64882.45
+  },
+  {
+   "name": "ANTHONY BELLMON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "203",
+   "committee": "2026C1228",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRITTANY FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "45",
+   "committee": "20260065",
+   "contributions": 365875.25
+  },
+  {
+   "name": "HARTENFELS,DANICA L ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "189",
+   "committee": "2026C0734",
+   "contributions": 0.0
+  },
+  {
+   "name": "TINA PICKETT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "110",
+   "committee": "2026C0430",
+   "contributions": 0.0
+  },
+  {
+   "name": "ETHAN GABRICK ELECTION EFFORT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "99",
+   "committee": "20260021",
+   "contributions": 5556.3
+  },
+  {
+   "name": "FRIENDS OF DANICA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "189",
+   "committee": "20250234",
+   "contributions": 38727.48
+  },
+  {
+   "name": "FRIENDS OF MIGUEL VASQUEZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "126",
+   "committee": "20260173",
+   "contributions": 828.18
+  },
+  {
+   "name": "COMMITTEE TO ELECT JAKE BANTA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "4",
+   "committee": "20230285",
+   "contributions": 7354.0
+  },
+  {
+   "name": "JOHNSON, TODD  ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "2026C0882",
+   "contributions": 0.0
+  },
+  {
+   "name": "BURGERHOFF, DAVID  ANDREW ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "114",
+   "committee": "2026C1301",
+   "contributions": 2.0
+  },
+  {
+   "name": "WILLIAMS,DAN K ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "74",
+   "committee": "2026C0686",
+   "contributions": 0.0
+  },
+  {
+   "name": "THE FRIENDS OF JOE MCANDREW",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "32",
+   "committee": "20220607",
+   "contributions": 101335.0
+  },
+  {
+   "name": "MCANDREW,JOSEPH M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "32",
+   "committee": "2026C0224",
+   "contributions": 0.0
+  },
+  {
+   "name": "BERTHA, ROBERT A ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "28",
+   "committee": "2026C1152",
+   "contributions": 0.0
+  },
+  {
+   "name": "MENTZER, STEVE FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "97",
+   "committee": "20120380",
+   "contributions": 55700.0
+  },
+  {
+   "name": "MCKEAN UNITED",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "",
+   "committee": "20230122",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JAMES JULIUS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "45",
+   "committee": "20240187",
+   "contributions": 2964.0
+  },
+  {
+   "name": "JAMES M JULIUS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "45",
+   "committee": "2026C0819",
+   "contributions": 0.0
+  },
+  {
+   "name": "RADER, JACK JR BIPARTISAN COMMITTEE TO ELECT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "176",
+   "committee": "20140004",
+   "contributions": 800.0
+  },
+  {
+   "name": "SABATINA SR.,JOHN FRIENDS OF                                ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "174",
+   "committee": "2006347",
+   "contributions": 49085.0
+  },
+  {
+   "name": "BANTA,JACOB ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "4",
+   "committee": "2026C1036",
+   "contributions": 0.0
+  },
+  {
+   "name": "FORSMAN, RICHARD J II",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "2026C0683",
+   "contributions": 0.0
+  },
+  {
+   "name": "VOTERS FOR ANDRES SANTIAGO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "5",
+   "committee": "20260172",
+   "contributions": 34.97
+  },
+  {
+   "name": "SHAFFER, AMANDA  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "64",
+   "committee": "2026C1357",
+   "contributions": 250.0
+  },
+  {
+   "name": "CLOVIS FOR PA",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "20260083",
+   "contributions": 549945.59
+  },
+  {
+   "name": "WALKER, MICHAEL C ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "6",
+   "committee": "2026C0813",
+   "contributions": 0.0
+  },
+  {
+   "name": "DIAMOND, RUSSELL H ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "102",
+   "committee": "2026C1111",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRED FOR OUR FUTURE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "45",
+   "committee": "20250276",
+   "contributions": 15708.04
+  },
+  {
+   "name": "GLEIM, BARBARA CITIZENS FOR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "199",
+   "committee": "20170313",
+   "contributions": 65919.29
+  },
+  {
+   "name": "KA4PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "39",
+   "committee": "20250237",
+   "contributions": 13938.92
+  },
+  {
+   "name": "FRIENDS OF MIKE HAMMILL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "33",
+   "committee": "20260127",
+   "contributions": 11996.28
+  },
+  {
+   "name": "MADDEN, MAUREEN  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "115",
+   "committee": "2026c0966",
+   "contributions": 1300.0
+  },
+  {
+   "name": "FRIENDS OF MARGIE SABO ZELENAK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "59",
+   "committee": "20230339",
+   "contributions": 0.0
+  },
+  {
+   "name": "CROSSEY, MICHAEL  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "46",
+   "committee": "2026C1160",
+   "contributions": 0.0
+  },
+  {
+   "name": "PEOPLE FOR ABIGAIL SALISBURY ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "34",
+   "committee": "20220025",
+   "contributions": 45422.0
+  },
+  {
+   "name": "BAKER, ELISABETH J ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "2026C0273",
+   "contributions": 1135.4
+  },
+  {
+   "name": "SALISBURY, ABIGAIL MARIE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "34",
+   "committee": "2026C0465",
+   "contributions": 0.0
+  },
+  {
+   "name": "RAPP, KATHY FOR REP                                         ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "65",
+   "committee": "2004037",
+   "contributions": 14800.0
+  },
+  {
+   "name": "FRKETIC, KELLIANNE ALNICE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "39",
+   "committee": "2026C1401",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHAMBERS, BRADFORD T ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "41",
+   "committee": "2026C0557",
+   "contributions": 0.0
+  },
+  {
+   "name": "K.C. TOMLINSON FOR STATE REPRESENTATIVE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "18",
+   "committee": "20200017",
+   "contributions": 285159.01
+  },
+  {
+   "name": "BURNS, TINA M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "124",
+   "committee": "2026C0796",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF SARA EGGLER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "76",
+   "committee": "20260092",
+   "contributions": 27107.38
+  },
+  {
+   "name": "FRIENDS OF SHANNON JACKSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "89",
+   "committee": "20260002",
+   "contributions": 11221.89
+  },
+  {
+   "name": "MILLER, BRETT VICTORY COMMITTEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "41",
+   "committee": "20140095",
+   "contributions": 217545.76
+  },
+  {
+   "name": "MCNEILL FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "133",
+   "committee": "20170307",
+   "contributions": 40408.78
+  },
+  {
+   "name": "FRIENDS OF STEEG",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "20250305",
+   "contributions": 8062.85
+  },
+  {
+   "name": "CIRESI, JOE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "146",
+   "committee": "20150334",
+   "contributions": 156351.0
+  },
+  {
+   "name": "JOHN DEATRICH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "123",
+   "committee": "2026C1333",
+   "contributions": 1350.0
+  },
+  {
+   "name": "VOTE FOR SCOTT JANNEY",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "20250261",
+   "contributions": 35656.63
+  },
+  {
+   "name": "BRADFORD, MATTHEW D ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "70",
+   "committee": "2026C0957",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIEL, PAUL FRANKLIN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "26",
+   "committee": "2026C0806",
+   "contributions": 0.0
+  },
+  {
+   "name": "MADSEN,DAVID ADAM ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "104",
+   "committee": "2026C0718",
+   "contributions": 0.0
+  },
+  {
+   "name": "MILLER, NICHOLAS",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "2026C0867",
+   "contributions": 0.0
+  },
+  {
+   "name": "ARMANINI,MICHAEL J ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "75",
+   "committee": "2026C0210",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEFANO,PATRICK J ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "2026C0248",
+   "contributions": 0.0
+  },
+  {
+   "name": "KATHRYN WATERS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "125",
+   "committee": "2026C0961",
+   "contributions": 0.0
+  },
+  {
+   "name": "THOMAS JOHNSON",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "2026C1005",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHRISTINE M. TARTAGLIONE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "2",
+   "committee": "2026C0703",
+   "contributions": 0.0
+  },
+  {
+   "name": "REICHARD, CHAD G ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "90",
+   "committee": "2026C0654",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF TODD JOHNSON",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "20260106",
+   "contributions": 15841.1
+  },
+  {
+   "name": "DONNA FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "3",
+   "committee": "20260137",
+   "contributions": 18898.39
+  },
+  {
+   "name": "FRIENDS OF MATTHEW DUVALL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "102",
+   "committee": "20260326",
+   "contributions": 440.78
+  },
+  {
+   "name": "STEFANO, PAT FRIENDS OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "20140023",
+   "contributions": 258632.85
+  },
+  {
+   "name": "JACKIE BAKER FOR PA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "20260050",
+   "contributions": 5032.5
+  },
+  {
+   "name": "FRIENDS OF SUE MULVEY",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "50",
+   "committee": "20260262",
+   "contributions": 9903.96
+  },
+  {
+   "name": "WARD, JUDITH F ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "2026C0243",
+   "contributions": 2125.76
+  },
+  {
+   "name": "BOROWICZ, STEPHANIE FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "76",
+   "committee": "20180184",
+   "contributions": 22905.5
+  },
+  {
+   "name": "FERDERBER FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "28",
+   "committee": "20260091",
+   "contributions": 178401.75
+  },
+  {
+   "name": "ANDREW HARBAUGH FOR PENNSYLVANIA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "63",
+   "committee": "20250323",
+   "contributions": 7702.71
+  },
+  {
+   "name": "ANDREW D. WAGNER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "128",
+   "committee": "2026C0473",
+   "contributions": 0.0
+  },
+  {
+   "name": "BARGER,SCOTT D ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "80",
+   "committee": "2026c0536",
+   "contributions": 0.0
+  },
+  {
+   "name": "COOPER, JILL NIXON ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "55",
+   "committee": "2026C0069",
+   "contributions": 0.0
+  },
+  {
+   "name": "DONAHUE,CALEB JOSHUA ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "81",
+   "committee": "2026C0971",
+   "contributions": 0.0
+  },
+  {
+   "name": "OWEN FOR PHILADELPHIA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "20250220",
+   "contributions": 20085.5
+  },
+  {
+   "name": "WAGNER ACTION COMMITTEE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "128",
+   "committee": "20250326",
+   "contributions": 22944.89
+  },
+  {
+   "name": "FRIENDS OF JON LLOYD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "40",
+   "committee": "20250328",
+   "contributions": 203984.82
+  },
+  {
+   "name": "JBPAC",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "117",
+   "committee": "20250341",
+   "contributions": 0.0
+  },
+  {
+   "name": "KEEFER WETZEL, DAWN COMMITTEE FRIENDS OF",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "31",
+   "committee": "20160003",
+   "contributions": 34000.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT TINA BURNS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "124",
+   "committee": "20220262",
+   "contributions": 39278.81
+  },
+  {
+   "name": "FRIENDS OF JEN MAZZOCCO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "42",
+   "committee": "20250299",
+   "contributions": 59701.11
+  },
+  {
+   "name": "FRIENDS OF TIM BRENNAN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "29",
+   "committee": "20210367",
+   "contributions": 140780.0
+  },
+  {
+   "name": "FRIENDS OF JERE SWARR",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "20250285",
+   "contributions": 33280.0
+  },
+  {
+   "name": "MAZZOCCO, JENNIFER L ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "42",
+   "committee": "2026C0003",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF OMY MALDONADO",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "20250336",
+   "contributions": 78252.22
+  },
+  {
+   "name": "HOWARD CAMPAIGN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "65",
+   "committee": "20250231",
+   "contributions": 790.2
+  },
+  {
+   "name": "GURIDY, JULIAN A ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "2026C0002",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANA TIBURCIO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "2026C0005",
+   "contributions": 0.0
+  },
+  {
+   "name": "TODD CRAWLEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "193",
+   "committee": "2026C0009",
+   "contributions": 0.0
+  },
+  {
+   "name": "DELLOSO, DAVE FRIENDS OF ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "162",
+   "committee": "20180169",
+   "contributions": 57655.0
+  },
+  {
+   "name": "ANDREA VEROBISH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "79",
+   "committee": "2026C0006",
+   "contributions": 0.0
+  },
+  {
+   "name": "CATHERINE I WALLEN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "193",
+   "committee": "2026C0007",
+   "contributions": 30730.0
+  },
+  {
+   "name": "MADDEN, MAUREEN FRIENDS OF FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "115",
+   "committee": "20120140",
+   "contributions": 82533.78
+  },
+  {
+   "name": "PROBST, TARAH FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "189",
+   "committee": "20170352",
+   "contributions": 53698.0
+  },
+  {
+   "name": "WILLIAMS, DAN CITIZENS FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "74",
+   "committee": "20180048",
+   "contributions": 29287.91
+  },
+  {
+   "name": "Benham for PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "36",
+   "committee": "20190239",
+   "contributions": 47742.89
+  },
+  {
+   "name": "SCHLOSSBERG, MIKE FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "20120115",
+   "contributions": 309807.39
+  },
+  {
+   "name": "SCHWEYER, PETER FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "20130228",
+   "contributions": 126934.31
+  },
+  {
+   "name": "PSEA-PACE FOR STATE ELECTIONS                               ",
+   "party": "",
+   "chamber": "house",
+   "district": "",
+   "committee": "7900366",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF KIMBERLY KOHLHEPP",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "75",
+   "committee": "20260035",
+   "contributions": 24956.33
+  },
+  {
+   "name": "ALVARINO,MADELYN G ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "13",
+   "committee": "2026C0516",
+   "contributions": 0.0
+  },
+  {
+   "name": "JONES, WILLIAM  M ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "117",
+   "committee": "2026C0479",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MICHAEL J STADULIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "121",
+   "committee": "20260104",
+   "contributions": 43386.49
+  },
+  {
+   "name": "AZZOLLINI, DOMINIQUE N ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "139",
+   "committee": "2026c1086",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF CRAIG WILLIAMS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "160",
+   "committee": "20200072",
+   "contributions": 406174.58
+  },
+  {
+   "name": "FRIENDS OF TODD CRAWLEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "193",
+   "committee": "20260048",
+   "contributions": 8052.07
+  },
+  {
+   "name": "SARA ELIZABETH EGGLER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "76",
+   "committee": "2026C0730",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF KRIS VOLLRATH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "156",
+   "committee": "20260181",
+   "contributions": 829.74
+  },
+  {
+   "name": "BOSCOLA, LISA FRIENDS OF                                    ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "9400092",
+   "contributions": 257085.7
+  },
+  {
+   "name": "DOUGHERTY,SEAN MICHAEL ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "172",
+   "committee": "2026C0260",
+   "contributions": 787.6
+  },
+  {
+   "name": "RACHEL CUEVAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "187",
+   "committee": "20260072",
+   "contributions": 387095.8
+  },
+  {
+   "name": "BANKOS, GREGORY J JR",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "2026C0390",
+   "contributions": 0.0
+  },
+  {
+   "name": "LEWIS,JOSEPH M ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "167",
+   "committee": "2026C1313",
+   "contributions": 0.0
+  },
+  {
+   "name": "SANTARSIERO, STEVEN J ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "2026C0034",
+   "contributions": 0.0
+  },
+  {
+   "name": "KRAJEWSKI, RICK C ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "188",
+   "committee": "2026C0989",
+   "contributions": 0.0
+  },
+  {
+   "name": "HEATHER BOYD FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "163",
+   "committee": "20230139",
+   "contributions": 17235.0
+  },
+  {
+   "name": "SMITH-WADE-EL, ISMAIL  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "49",
+   "committee": "2026C0435",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Izzy",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "49",
+   "committee": "20210338",
+   "contributions": 112945.83
+  },
+  {
+   "name": "BINGAMAN FOR 108TH",
+   "party": "INT",
+   "chamber": "house",
+   "district": "108",
+   "committee": "20250321",
+   "contributions": 653.66
+  },
+  {
+   "name": "REESE,DONNA RAE ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "3",
+   "committee": "2026C1014",
+   "contributions": 0.0
+  },
+  {
+   "name": "FERDERBER, JEREMY  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "28",
+   "committee": "2026c1315",
+   "contributions": 0.0
+  },
+  {
+   "name": "Williams for Senate",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "20150283",
+   "contributions": 417760.0
+  },
+  {
+   "name": "KENYATTA, MALCOLM  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "181",
+   "committee": "2026C0024",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Joe Hohenstein",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "177",
+   "committee": "20150356",
+   "contributions": 81559.0
+  },
+  {
+   "name": "SABIH,MERIAM H ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "131",
+   "committee": "2026C0723",
+   "contributions": 0.0
+  },
+  {
+   "name": "WARNER, RYAN FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "52",
+   "committee": "20140201",
+   "contributions": 25610.0
+  },
+  {
+   "name": "LESLIE ROSSI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "59",
+   "committee": "2026C0091",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIMOTHY MCCUNE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "36",
+   "committee": "2026C1378",
+   "contributions": 0.0
+  },
+  {
+   "name": "ERIC NELSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "57",
+   "committee": "2026C0057",
+   "contributions": 0.0
+  },
+  {
+   "name": "MALONE, JAMES ANDREW",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "2026C0207",
+   "contributions": 0.0
+  },
+  {
+   "name": "MISSY BARNES",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "93",
+   "committee": "2026C0999",
+   "contributions": 9986.53
+  },
+  {
+   "name": "MOYER, WAYNE R JR",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "2026C1416",
+   "contributions": 0.0
+  },
+  {
+   "name": "PEOPLE FOR SHAFFER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "64",
+   "committee": "20260396",
+   "contributions": 0.0
+  },
+  {
+   "name": "PICK NICK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "109",
+   "committee": "20240115",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Brian Wrightson",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "20250188",
+   "contributions": 260190.59
+  },
+  {
+   "name": "ROBERT E. SMITH JR.",
+   "party": "REP",
+   "chamber": "house",
+   "district": "22",
+   "committee": "2026C0004",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ETHAN NICHOLAS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "12",
+   "committee": "20260088",
+   "contributions": 177306.16
+  },
+  {
+   "name": "FRIENDS OF JOHN COSTANZA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "16",
+   "committee": "20260108",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MICAH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "3",
+   "committee": "20240053",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF BRIAN SMITH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "66",
+   "committee": "20200056",
+   "contributions": 18706.0
+  },
+  {
+   "name": "STALLWORTH FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "199",
+   "committee": "20250163",
+   "contributions": 40858.94
+  },
+  {
+   "name": "MICHAEL MURPHY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "144",
+   "committee": "2026C0256",
+   "contributions": 0.0
+  },
+  {
+   "name": "RONI GREEN FOR 190",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "190",
+   "committee": "20200026",
+   "contributions": 13848.84
+  },
+  {
+   "name": "BRENDA PUGH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "120",
+   "committee": "2026C0874",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELISSA BREWER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "130",
+   "committee": "2026C0110",
+   "contributions": 0.0
+  },
+  {
+   "name": "ZACH MAKO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "183",
+   "committee": "2026C0197",
+   "contributions": 0.0
+  },
+  {
+   "name": "SHAY MICCO FOR PA STATE REPRSENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "9",
+   "committee": "20260071",
+   "contributions": 4040.38
+  },
+  {
+   "name": "FRIENDS OF KATHRYN D",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "4",
+   "committee": "20260109",
+   "contributions": 22491.33
+  },
+  {
+   "name": "PICKETT, TINA FRIENDS OF                                    ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "110",
+   "committee": "2000143",
+   "contributions": 38410.0
+  },
+  {
+   "name": "KOHLHEPP,KIMBERLY ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "75",
+   "committee": "2026C0688",
+   "contributions": 100.0
+  },
+  {
+   "name": "ABNEY, AERION FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "19",
+   "committee": "20150344",
+   "contributions": 4950.0
+  },
+  {
+   "name": "DIVITTORIO,KATHRYN A ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "4",
+   "committee": "2026C0781",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JOHANNY CEPEDA-FREYTIZ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "129",
+   "committee": "20220221",
+   "contributions": 43126.07
+  },
+  {
+   "name": "PHILIP RICE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "72",
+   "committee": "2026C0782",
+   "contributions": 0.0
+  },
+  {
+   "name": "COSTA, JAY JR. FOR STATE SENATE                              ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "43",
+   "committee": "9600029",
+   "contributions": 725723.42
+  },
+  {
+   "name": "JOHN SCHLEGEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "101",
+   "committee": "2026C0181",
+   "contributions": 950.0
+  },
+  {
+   "name": "FRIENDS OF TIM BONNER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "17",
+   "committee": "2026C0676",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF D&#39;ANGELO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "20260007",
+   "contributions": 14341.34
+  },
+  {
+   "name": "HUGH FOR PA98",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "98",
+   "committee": "20250243",
+   "contributions": 53790.95
+  },
+  {
+   "name": "ABNEY, AERION ANDREW ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "19",
+   "committee": "2026c0912",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRANK BURNS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "72",
+   "committee": "2026C0559",
+   "contributions": 0.0
+  },
+  {
+   "name": "SAVANNAH MARTIN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "88",
+   "committee": "2026C0805",
+   "contributions": 0.0
+  },
+  {
+   "name": "NICK LOVELL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2026C1121",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEPHANIE BOROWICZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "76",
+   "committee": "2026C0104",
+   "contributions": 0.0
+  },
+  {
+   "name": "JIM RIGBY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "71",
+   "committee": "2026C0082",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHRISTOPHER PIELLI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "156",
+   "committee": "2026C0638",
+   "contributions": 0.0
+  },
+  {
+   "name": "BILL GRIFFIN FOR STATE REPRESENTATIVE",
+   "party": "",
+   "chamber": "house",
+   "district": "173",
+   "committee": "20260019",
+   "contributions": 7478.5
+  },
+  {
+   "name": "RICHARD W. SZABO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "115",
+   "committee": "2026C1040",
+   "contributions": 0.0
+  },
+  {
+   "name": "LOIS BOWER BJORNSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "50",
+   "committee": "2026C1307",
+   "contributions": 0.0
+  },
+  {
+   "name": "ALEC J. RYNCAVAGE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "119",
+   "committee": "2026C1126",
+   "contributions": 0.0
+  },
+  {
+   "name": "K.C. TOMLINSON FOR STATE REPRESENTATIVE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "18",
+   "committee": "2026C0268",
+   "contributions": 0.0
+  },
+  {
+   "name": "OMLOR, JORDAN R ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "59",
+   "committee": "2026C0887",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JUDY TROMBETTA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "166",
+   "committee": "20260009",
+   "contributions": 99710.37
+  },
+  {
+   "name": "ANTHONY HARDY WILLIAMS",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "2026C0129",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVID HUGHES",
+   "party": "REP",
+   "chamber": "house",
+   "district": "128",
+   "committee": "2026C0804",
+   "contributions": 0.0
+  },
+  {
+   "name": "JEANNE MCNEILL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "133",
+   "committee": "2026C0090",
+   "contributions": 0.0
+  },
+  {
+   "name": "KELLY OSBORNE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "100",
+   "committee": "2026C0981",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF NIKKI RIVERA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "96",
+   "committee": "20240062",
+   "contributions": 52220.18
+  },
+  {
+   "name": "PROBST, TARAH  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "189",
+   "committee": "2026c0421",
+   "contributions": 0.0
+  },
+  {
+   "name": "DEIRDRE MCCLEARY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "165",
+   "committee": "2026C0697",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANJU SINGH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "106",
+   "committee": "2026C0650",
+   "contributions": 666.77
+  },
+  {
+   "name": "DAVIS, TINA FRIENDS OF                                       ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "141",
+   "committee": "2010095",
+   "contributions": 291570.0
+  },
+  {
+   "name": "Jeff Warren for PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "137",
+   "committee": "20250265",
+   "contributions": 1667507.2
+  },
+  {
+   "name": "TIFFANY BROWN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "192",
+   "committee": "2026C1223",
+   "contributions": 0.0
+  },
+  {
+   "name": "ARTHUR HAYWOOD",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "4",
+   "committee": "2026C0251",
+   "contributions": 4212.71
+  },
+  {
+   "name": "LISA BOSCOLA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "2026C0593",
+   "contributions": 0.0
+  },
+  {
+   "name": "AMBER NEIDIG",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "108",
+   "committee": "2026C1275",
+   "contributions": 1806.62
+  },
+  {
+   "name": "STADULIS,MICHAEL J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "121",
+   "committee": "2026c1256",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT GURTCHEFF (ROB GURTCHEFF FOR PHILLY)",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "170",
+   "committee": "2026C1048",
+   "contributions": 0.0
+  },
+  {
+   "name": "WOOD,NATHAN ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "2026C1146",
+   "contributions": 176.78
+  },
+  {
+   "name": "KINKEAD, EMILY PEOPLE FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "",
+   "committee": "20190158",
+   "contributions": 50692.0
+  },
+  {
+   "name": "MALDONADO,OMY JURIEL ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "2026C0630",
+   "contributions": 0.0
+  },
+  {
+   "name": "PAMELA J HEMANN FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "110",
+   "committee": "20250150",
+   "contributions": 16869.79
+  },
+  {
+   "name": "HEFFLEY, DOYLE COM TO ELECT                                 ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "122",
+   "committee": "2010171",
+   "contributions": 103769.1
+  },
+  {
+   "name": "MORGAN, WENDY  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "86",
+   "committee": "2026C1089",
+   "contributions": 0.0
+  },
+  {
+   "name": "GABRICK,ETHAN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "99",
+   "committee": "2026c1389",
+   "contributions": 0.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT MICHAEL WALKER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "6",
+   "committee": "20260039",
+   "contributions": 2252.93
+  },
+  {
+   "name": "FRIENDS OF JOE HOGAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "142",
+   "committee": "20220188",
+   "contributions": 284144.18
+  },
+  {
+   "name": "PAMELA HEMANN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "110",
+   "committee": "2026C1137",
+   "contributions": 0.0
+  },
+  {
+   "name": "Sierra for Pa",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "20250266",
+   "contributions": 114812.85
+  },
+  {
+   "name": "FRIENDS OF SAMANTHA HOROSKY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "26",
+   "committee": "20260247",
+   "contributions": 21547.55
+  },
+  {
+   "name": "DAWKINS, JASON FRIENDS OF",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "179",
+   "committee": "20150282",
+   "contributions": 30000.0
+  },
+  {
+   "name": "GRAHAM, AUSTIN L ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "169",
+   "committee": "2026C1003",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF AUSTIN GRAHAM",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "169",
+   "committee": "20260169",
+   "contributions": 0.0
+  },
+  {
+   "name": "BROWN, AMEN  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "10",
+   "committee": "2026C1118",
+   "contributions": 0.0
+  },
+  {
+   "name": "MAZZOCCO, JENNIFER L ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "42",
+   "committee": "2026C0125",
+   "contributions": 0.0
+  },
+  {
+   "name": "CALEB DONAHUE FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "81",
+   "committee": "20260013",
+   "contributions": 750.0
+  },
+  {
+   "name": "MERKL-GUMP, BRADLEY DOUGLAS ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "2026C0116",
+   "contributions": 0.0
+  },
+  {
+   "name": "LISA GOURLEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "66",
+   "committee": "2026C0897",
+   "contributions": 0.0
+  },
+  {
+   "name": "JESSICA LEE BRANAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "97",
+   "committee": "2026C1290",
+   "contributions": 0.0
+  },
+  {
+   "name": "MATZIE, ROBERT PEOPLE FOR                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "16",
+   "committee": "2008095",
+   "contributions": 571747.52
+  },
+  {
+   "name": "COMMITTEE TO ELECT KYLE DEVLIN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "111",
+   "committee": "20250286",
+   "contributions": 8465.36
+  },
+  {
+   "name": "LANGERHOLC, WAYNE FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "35",
+   "committee": "20150366",
+   "contributions": 181800.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT NATHAN WOOD",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "20260128",
+   "contributions": 40620.34
+  },
+  {
+   "name": "CHANGE IN THE 155TH - GREER HEINDEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "155",
+   "committee": "20260186",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF WAYNE MOYER",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "",
+   "committee": "20260182",
+   "contributions": 100.0
+  },
+  {
+   "name": "DEERING, JOSHUA L ",
+   "party": "INT",
+   "chamber": "house",
+   "district": "98",
+   "committee": "2026C1450",
+   "contributions": 0.0
+  },
+  {
+   "name": "SUPPORTERS OF JORDAN OMLOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "59",
+   "committee": "20260049",
+   "contributions": 31209.72
+  },
+  {
+   "name": "MARKOSEK, BRANDON CAMPAIGN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "25",
+   "committee": "20180069",
+   "contributions": 48900.0
+  },
+  {
+   "name": "FRIENDS OF JOE POPLAWSKI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "135",
+   "committee": "20260155",
+   "contributions": 1472.94
+  },
+  {
+   "name": "POPLAWSKI, JOSEPH F ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "135",
+   "committee": "2026C1004",
+   "contributions": 0.0
+  },
+  {
+   "name": "CITIZENS FOR AMEN BROWN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "10",
+   "committee": "20200045",
+   "contributions": 59910.0
+  },
+  {
+   "name": "HAAS,HADLEY B ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "44",
+   "committee": "2026C0122",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEHR FOR STATE REP",
+   "party": "REP",
+   "chamber": "house",
+   "district": "107",
+   "committee": "20260070",
+   "contributions": 2450.0
+  },
+  {
+   "name": "STEHR, JOANNE C ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "107",
+   "committee": "2026C0853",
+   "contributions": 0.0
+  },
+  {
+   "name": "HEFFLEY, DOYLE  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "122",
+   "committee": "2026c0261",
+   "contributions": 0.0
+  },
+  {
+   "name": "BITTING, JARED  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "138",
+   "committee": "2026c1258",
+   "contributions": 0.0
+  },
+  {
+   "name": "CATHERINE WALLEN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "193",
+   "committee": "2026C0215",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROB KAUFFMAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "89",
+   "committee": "2026C0246",
+   "contributions": 0.0
+  },
+  {
+   "name": "AC4PA.ORG",
+   "party": "REP",
+   "chamber": "house",
+   "district": "79",
+   "committee": "20250146",
+   "contributions": 600.0
+  },
+  {
+   "name": "FRIENDS OF STEPHANIE BERARDI",
+   "party": "PFP",
+   "chamber": "house",
+   "district": "154",
+   "committee": "20260446",
+   "contributions": 3156.81
+  },
+  {
+   "name": "WENINGER, MONICA J ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "178",
+   "committee": "2026C0514",
+   "contributions": 0.0
+  },
+  {
+   "name": "DIAMOND, RUSS FRIENDS OF",
+   "party": "REP",
+   "chamber": "house",
+   "district": "102",
+   "committee": "20140386",
+   "contributions": 18741.0
+  },
+  {
+   "name": "FRIENDS OF KATHLEEN PRATT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "91",
+   "committee": "20260165",
+   "contributions": 33746.55
+  },
+  {
+   "name": "KUTZ FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "87",
+   "committee": "20220057",
+   "contributions": 165558.63
+  },
+  {
+   "name": "HUMBLE, BENJAMIN D ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "50",
+   "committee": "2026C0467",
+   "contributions": 2941.91
+  },
+  {
+   "name": "FRIENDS OF JESS BRANAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "97",
+   "committee": "20250324",
+   "contributions": 31974.45
+  },
+  {
+   "name": "FRIENDS OF NICK LOVELL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "20250343",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAROL HILL-EVANS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "95",
+   "committee": "2026C1009",
+   "contributions": 0.0
+  },
+  {
+   "name": "ABBY MAJOR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "60",
+   "committee": "2026C0269",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ROSEMARY BROWN                               ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "",
+   "committee": "2010237",
+   "contributions": 260523.23
+  },
+  {
+   "name": "NICHOLAS,ETHAN E ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2026C0217",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF BRIAN MUNROE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "144",
+   "committee": "20220117",
+   "contributions": 411861.29
+  },
+  {
+   "name": "ERIC J. WEAKNECHT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "5",
+   "committee": "2026C0647",
+   "contributions": 0.0
+  },
+  {
+   "name": "V. MILOU MACKENZIE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "131",
+   "committee": "2026C0407",
+   "contributions": 0.0
+  },
+  {
+   "name": "DR EHAB AKKARY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "30",
+   "committee": "2026C0888",
+   "contributions": 4765.0
+  },
+  {
+   "name": "FRIENDS OF DR A",
+   "party": "REP",
+   "chamber": "house",
+   "district": "30",
+   "committee": "20260024",
+   "contributions": 0.0
+  },
+  {
+   "name": "MENTZER,STEVEN CURTIS ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "97",
+   "committee": "2026c0108",
+   "contributions": 0.0
+  },
+  {
+   "name": "MCNEIL, SIERRA DENISE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "195",
+   "committee": "2026C0193",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRAD FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "41",
+   "committee": "20230327",
+   "contributions": 643357.83
+  },
+  {
+   "name": "TRAJAN FOR PA HOUSE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "62",
+   "committee": "20260177",
+   "contributions": 58704.22
+  },
+  {
+   "name": "BILL JONES FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "117",
+   "committee": "20260025",
+   "contributions": 146074.4
+  },
+  {
+   "name": "Committee to Elect Kristine Howard",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "167",
+   "committee": "20180047",
+   "contributions": 15591.25
+  },
+  {
+   "name": "MCTERNAN, KIRSTEN LEE ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "82",
+   "committee": "2026C0859",
+   "contributions": 0.0
+  },
+  {
+   "name": "INGLIS, JOHN C III",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "38",
+   "committee": "2026C0375",
+   "contributions": 0.0
+  },
+  {
+   "name": "IN FOR INGLIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "38",
+   "committee": "20230318",
+   "contributions": 67610.0
+  },
+  {
+   "name": "ACOSTA FOR STATE REP",
+   "party": "REP",
+   "chamber": "house",
+   "district": "49",
+   "committee": "20260149",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELISSA DICRANIAN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "2026C0993",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHRISTOPHER GEBHARD",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "48",
+   "committee": "2026C0216",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVID H. ROWE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "85",
+   "committee": "2026C0160",
+   "contributions": 0.0
+  },
+  {
+   "name": "WENDELL CRAIG WILLIAMS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "160",
+   "committee": "2026C0657",
+   "contributions": 0.0
+  },
+  {
+   "name": "JESSE W TOPPER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "78",
+   "committee": "2026C0157",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAY, GARY FRIENDS OF                                        ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "187",
+   "committee": "2008134",
+   "contributions": 84906.54
+  },
+  {
+   "name": "THOMAS W WEST",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "38",
+   "committee": "2026C0862",
+   "contributions": 0.0
+  },
+  {
+   "name": "LLOYD, JONATHAN C ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "40",
+   "committee": "2026C0376",
+   "contributions": 0.0
+  },
+  {
+   "name": "RADER, JACK B JR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "176",
+   "committee": "2026C0185",
+   "contributions": 0.0
+  },
+  {
+   "name": "WHITCOMB, GEOFFREY S.",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "187",
+   "committee": "2026C1334",
+   "contributions": 3255.19
+  },
+  {
+   "name": "DEVLIN, KYLE T ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "111",
+   "committee": "2026C1108",
+   "contributions": 0.0
+  },
+  {
+   "name": "GOODMAN, JASON LANDAU ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "2026C1388",
+   "contributions": 0.0
+  },
+  {
+   "name": "HYDER-DARLINGTON, HUGH STOCKTON ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "98",
+   "committee": "2026C1179",
+   "contributions": 2000.0
+  },
+  {
+   "name": "GLEIM, BARBARA  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "199",
+   "committee": "2026C0161",
+   "contributions": 0.0
+  },
+  {
+   "name": "KRUEGER, LEANNE THERESA ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "161",
+   "committee": "2026C0276",
+   "contributions": 0.0
+  },
+  {
+   "name": "WRIGHTSON, BRIAN A ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "2026C0322",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEELE, MANDY JULIA ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "33",
+   "committee": "2026C1157",
+   "contributions": 0.0
+  },
+  {
+   "name": "GEE, QUENTIN JOSEPH ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "68",
+   "committee": "2026C1052",
+   "contributions": 0.0
+  },
+  {
+   "name": "CODNER, WAYNE  ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "2026C0756",
+   "contributions": 0.0
+  },
+  {
+   "name": "BARNESFORPA93",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "93",
+   "committee": "20260150",
+   "contributions": 13455.94
+  },
+  {
+   "name": "PATRICK J. HARKINS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "1",
+   "committee": "2026C0772",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Jason Landau Goodman",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "20240017",
+   "contributions": 160838.05
+  },
+  {
+   "name": "SHANNON MICHAEL JACKSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "89",
+   "committee": "2026C1046",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEEG, SEAN C ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "30",
+   "committee": "2026C1059",
+   "contributions": 0.0
+  },
+  {
+   "name": "WARREN, JEFFREY M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "137",
+   "committee": "2026C0855",
+   "contributions": 0.0
+  },
+  {
+   "name": "ERIK FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "130",
+   "committee": "20260133",
+   "contributions": 3786.19
+  },
+  {
+   "name": "ST CLAIR TOGETHER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "87",
+   "committee": "20260045",
+   "contributions": 12944.22
+  },
+  {
+   "name": "JONES, MIKE FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "93",
+   "committee": "20170256",
+   "contributions": 39577.24
+  },
+  {
+   "name": "ONEAL, TIMOTHY JON ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "48",
+   "committee": "2026C0324",
+   "contributions": 3979.36
+  },
+  {
+   "name": "WALKER, JOSEPH WILLIAM ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "166",
+   "committee": "2026C1234",
+   "contributions": 0.0
+  },
+  {
+   "name": "KRIS R VOLLRATH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "156",
+   "committee": "2026C1392",
+   "contributions": 0.0
+  },
+  {
+   "name": "",
+   "party": "REP",
+   "chamber": "house",
+   "district": "166",
+   "committee": "20260134",
+   "contributions": 14905.08
+  },
+  {
+   "name": "FRIENDS OF GAIL SCOTT",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "20260393",
+   "contributions": 1626.73
+  },
+  {
+   "name": "CONKLIN, SCOTT FRIENDS OF                                   ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "77",
+   "committee": "2006317",
+   "contributions": 11550.0
+  },
+  {
+   "name": "JONES,PAUL MICHAEL ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "93",
+   "committee": "2026C0610",
+   "contributions": 0.0
+  },
+  {
+   "name": "FIEDLER, ELIZABETH  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "184",
+   "committee": "2026C0296",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Elizabeth Fiedler",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "184",
+   "committee": "20170274",
+   "contributions": 117377.09
+  },
+  {
+   "name": "FRIENDS OF JOE LEWIS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "167",
+   "committee": "20260179",
+   "contributions": 19603.89
+  },
+  {
+   "name": "MCCLINTON, JOANNA ELIZABETH ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "191",
+   "committee": "2026C0275",
+   "contributions": 0.0
+  },
+  {
+   "name": "GUYNN-CUEVAS, RACHEL MARIE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "187",
+   "committee": "2026c1030",
+   "contributions": 0.0
+  },
+  {
+   "name": "BERARDI, STEPHANIE LYNN ",
+   "party": "PFP",
+   "chamber": "house",
+   "district": "154",
+   "committee": "2026C1461",
+   "contributions": 606.58
+  },
+  {
+   "name": "WARE, ZACHARY R ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "67",
+   "committee": "2026C0761",
+   "contributions": 0.0
+  },
+  {
+   "name": "LABS, SHELBY E ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "143",
+   "committee": "2026C0388",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ZACHARY WARE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "67",
+   "committee": "20260094",
+   "contributions": 828.0
+  },
+  {
+   "name": "VOTE FOR YANNI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "53",
+   "committee": "20260200",
+   "contributions": 6605.0
+  },
+  {
+   "name": "LOMBARDO, JOHN F ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "118",
+   "committee": "2026C0581",
+   "contributions": 0.0
+  },
+  {
+   "name": "YOUNG, REGINA G ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "185",
+   "committee": "2026C0066",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MANNY GUZMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "127",
+   "committee": "20200064",
+   "contributions": 15850.0
+  },
+  {
+   "name": "O&#39;MARA, JENNIFER  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "165",
+   "committee": "2026C0415",
+   "contributions": 0.0
+  },
+  {
+   "name": "Rick for Philly",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "188",
+   "committee": "20190233",
+   "contributions": 36252.46
+  },
+  {
+   "name": "FRIEL OTTEN, DANIELLE 4 PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "155",
+   "committee": "20180061",
+   "contributions": 1385.0
+  },
+  {
+   "name": "Tim Briggs for State Representative",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "149",
+   "committee": "2008161",
+   "contributions": 108508.6
+  },
+  {
+   "name": "BITTING 4 PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "138",
+   "committee": "20240060",
+   "contributions": 626.72
+  },
+  {
+   "name": "BAKER, JACLYN ESTELLE ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "2026C1041",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRANCIS, ROBERT B",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "57",
+   "committee": "2026C0890",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF RON TANNEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "",
+   "committee": "20220084",
+   "contributions": 0.0
+  },
+  {
+   "name": "JONES, TRAJAN WILLIAM ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "62",
+   "committee": "2026C0780",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF DALE HAMBY",
+   "party": "INT",
+   "chamber": "house",
+   "district": "100",
+   "committee": "20260328",
+   "contributions": 28423.07
+  },
+  {
+   "name": "Be The Change PA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "20170229",
+   "contributions": 50640.66
+  },
+  {
+   "name": "WHITE, MARTINA A ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "170",
+   "committee": "2026C1090",
+   "contributions": 0.0
+  },
+  {
+   "name": "CITIZENS FOR LINDSAY KRUG",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "20260069",
+   "contributions": 828.07
+  },
+  {
+   "name": "KRUG, LINDSAY  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2026c1285",
+   "contributions": 828.07
+  },
+  {
+   "name": "CHERRI FOR 58",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "20250213",
+   "contributions": 13488.07
+  },
+  {
+   "name": "MCCLAY FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "121",
+   "committee": "20260112",
+   "contributions": 600704.62
+  },
+  {
+   "name": "REBECCA MACTAGGART FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "48",
+   "committee": "20260032",
+   "contributions": 11648.07
+  },
+  {
+   "name": "JAMIE BARTON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "124",
+   "committee": "2026C0740",
+   "contributions": 0.0
+  },
+  {
+   "name": "MATZIE, ROBERT F ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "16",
+   "committee": "2026C0364",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Parker",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "198",
+   "committee": "20200106",
+   "contributions": 40596.0
+  },
+  {
+   "name": "COLEMAN, RYAN T ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "107",
+   "committee": "2026C1381",
+   "contributions": 700.0
+  },
+  {
+   "name": "Friends Of Rich Forsman",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "20260098",
+   "contributions": 5063.78
+  },
+  {
+   "name": "CIRESI, JOSEPH  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "146",
+   "committee": "2026C0154",
+   "contributions": 0.0
+  },
+  {
+   "name": "KATHRYN WATERS FOR PA REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "125",
+   "committee": "20260027",
+   "contributions": 0.0
+  },
+  {
+   "name": "GEORGE MARGETAS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "196",
+   "committee": "2026C0025",
+   "contributions": 0.0
+  },
+  {
+   "name": "DOYLE M HEFFLEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "122",
+   "committee": "2026C0261",
+   "contributions": 0.0
+  },
+  {
+   "name": "MURPHY OF PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "162",
+   "committee": "20260168",
+   "contributions": 0.0
+  },
+  {
+   "name": "JASMINE RIVERA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "95",
+   "committee": "2026C1047",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES N EDWARDS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "35",
+   "committee": "2026C1283",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAMERON GROSH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "45",
+   "committee": "2026C1292",
+   "contributions": 225.0
+  },
+  {
+   "name": "JOE SABIA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "112",
+   "committee": "2026C1310",
+   "contributions": 5000.0
+  },
+  {
+   "name": "CARL WALKER METZGAR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "69",
+   "committee": "2026C0622",
+   "contributions": 0.0
+  },
+  {
+   "name": "BABITA RUSYN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "96",
+   "committee": "2026C0979",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT E SMITH JR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "22",
+   "committee": "2026C0830",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSEPH P. KERWIN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "125",
+   "committee": "2026C0086",
+   "contributions": 0.0
+  },
+  {
+   "name": "AMY NOONE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "25",
+   "committee": "2026C0733",
+   "contributions": 0.0
+  },
+  {
+   "name": "BILL GRIFFIN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "173",
+   "committee": "2026C0659",
+   "contributions": 0.0
+  },
+  {
+   "name": "Paul for PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "26",
+   "committee": "20200162",
+   "contributions": 23815.25
+  },
+  {
+   "name": "SHAFFER, JEREMY K ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "28",
+   "committee": "2026C0910",
+   "contributions": 4000.0
+  },
+  {
+   "name": "MARCELL, KRISTIN  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "178",
+   "committee": "2026C0094",
+   "contributions": 0.0
+  },
+  {
+   "name": "BERTHA FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "28",
+   "committee": "20260073",
+   "contributions": 2697.22
+  },
+  {
+   "name": "Friends of Paul Takac",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "82",
+   "committee": "20210220",
+   "contributions": 133918.27
+  },
+  {
+   "name": "VITALI, GREGORY VOTE COM                                    ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "166",
+   "committee": "9200290",
+   "contributions": 6040.26
+  },
+  {
+   "name": "PAKSPAC",
+   "party": "REP",
+   "chamber": "house",
+   "district": "157",
+   "committee": "20260191",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARYLOUISE ISAACSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "175",
+   "committee": "2026C0162",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN SCHLEGEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "101",
+   "committee": "20220167",
+   "contributions": 11000.0
+  },
+  {
+   "name": "FRIENDS OF DENISE THOMAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "121",
+   "committee": "20260111",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRIAN CASEY ALLEN RASEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "56",
+   "committee": "2026C0453",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVID H ZIMMERMAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "99",
+   "committee": "2026C0481",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT FREEMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "136",
+   "committee": "2026C0656",
+   "contributions": 0.0
+  },
+  {
+   "name": "PA SOCIETY OF PHYSICIAN ASSISTANTS                          ",
+   "party": "",
+   "chamber": "house",
+   "district": "",
+   "committee": "9600042",
+   "contributions": 1222.64
+  },
+  {
+   "name": "SMITH, BRIAN A ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "66",
+   "committee": "2026C0629",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF WAYNE CODNER",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "20260118",
+   "contributions": 8000.0
+  },
+  {
+   "name": "CHRIS JOHNSON FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "20260080",
+   "contributions": 97641.04
+  },
+  {
+   "name": "PERRY WARREN FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "31",
+   "committee": "20160014",
+   "contributions": 14642.55
+  },
+  {
+   "name": "Friends of Matt Bradford",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "70",
+   "committee": "2008319",
+   "contributions": 3007203.41
+  },
+  {
+   "name": "Steele for PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "33",
+   "committee": "20220008",
+   "contributions": 88542.08
+  },
+  {
+   "name": "SANTARSIERO FOR STATE SENATE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "20180067",
+   "contributions": 465120.4
+  },
+  {
+   "name": "DUKES,BRANDON MICHAEL ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2026C0749",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF SHELBY LABS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "143",
+   "committee": "20200041",
+   "contributions": 214615.07
+  },
+  {
+   "name": "FRIENDS OF SEAN DUFFY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "29",
+   "committee": "20260121",
+   "contributions": 23756.69
+  },
+  {
+   "name": "Friends of Tarik Khan",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "194",
+   "committee": "20210225",
+   "contributions": 42888.34
+  },
+  {
+   "name": "WARREN, PERRY SINCLAIR JR.",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "31",
+   "committee": "2026C0078",
+   "contributions": 0.0
+  },
+  {
+   "name": "DUFFY,SEAN PATRICK ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "29",
+   "committee": "2026C1205",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF NICK MILLER",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "14",
+   "committee": "20220175",
+   "contributions": 809054.23
+  },
+  {
+   "name": "COLEMAN FOR 107",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "107",
+   "committee": "20260193",
+   "contributions": 1036.55
+  },
+  {
+   "name": "PAUL STEENKISTE FOR PENNSYLVANIA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "42",
+   "committee": "20260046",
+   "contributions": 11545.0
+  },
+  {
+   "name": "DUKES FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "12",
+   "committee": "20260038",
+   "contributions": 16740.25
+  },
+  {
+   "name": "KEITH JAMES GREINER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "43",
+   "committee": "2026C0575",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOE D'ORSIE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "47",
+   "committee": "2026C0114",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAN MOUL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2026C0589",
+   "contributions": 0.0
+  },
+  {
+   "name": "EILEEN T HARTNETT ALBILLAR",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "2026C0062",
+   "contributions": 0.0
+  },
+  {
+   "name": "CEPHAS, MORGAN FRIENDS FOR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "20150357",
+   "contributions": 99900.0
+  },
+  {
+   "name": "FRIENDS OF JUSTIN FLEMING ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "",
+   "committee": "20220039",
+   "contributions": 49110.0
+  },
+  {
+   "name": "SPEICHER FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "15",
+   "committee": "20260022",
+   "contributions": 12879.98
+  },
+  {
+   "name": "FRIENDS OF EVAN SNYDER",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "20260140",
+   "contributions": 5000.0
+  },
+  {
+   "name": "SNYDER, EVAN JAMES",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "2026C1311",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Martina White",
+   "party": "REP",
+   "chamber": "house",
+   "district": "170",
+   "committee": "20150043",
+   "contributions": 544769.95
+  },
+  {
+   "name": "CITIZENS FOR NADERAH GRIFFIN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "181",
+   "committee": "20240065",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF JOHN LOMBARDO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "118",
+   "committee": "20220291",
+   "contributions": 63892.04
+  },
+  {
+   "name": "OTTEN,DANIELLE FRIEL ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "155",
+   "committee": "2026C0547",
+   "contributions": 0.0
+  },
+  {
+   "name": "DELLOSO, DAVID M ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "162",
+   "committee": "2026C0789",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHNSON, CHRISTOPHER  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "200",
+   "committee": "2026C1012",
+   "contributions": 0.0
+  },
+  {
+   "name": "DUSTYN A DORN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "60",
+   "committee": "2026C1253",
+   "contributions": 0.0
+  },
+  {
+   "name": "Bryan Allen for PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "18",
+   "committee": "20260028",
+   "contributions": 861010.11
+  },
+  {
+   "name": "ALLEN, BRYAN F JR ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "18",
+   "committee": "2026C0538",
+   "contributions": 0.0
+  },
+  {
+   "name": "BENHAM,JESSICA LYNN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "36",
+   "committee": "2026C1042",
+   "contributions": 0.0
+  },
+  {
+   "name": "KAZEEM, CAROL  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "159",
+   "committee": "2026C1321",
+   "contributions": 0.0
+  },
+  {
+   "name": "Dougherty for State Rep",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "172",
+   "committee": "20240112",
+   "contributions": 221536.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT MEGAN KOCHER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "119",
+   "committee": "20230297",
+   "contributions": 1870.51
+  },
+  {
+   "name": "AMERICAN FEDERATION OF TEACHERS, AFL-CIO COPE (AFT/COPE)",
+   "party": "",
+   "chamber": "house",
+   "district": "",
+   "committee": "20140232",
+   "contributions": 2235456.19
+  },
+  {
+   "name": "Friends of Meriam Sabih",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "131",
+   "committee": "20240043",
+   "contributions": 50970.7
+  },
+  {
+   "name": "MAYES, LATASHA D ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "24",
+   "committee": "2026C1265",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF LAURIE SMITH ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "",
+   "committee": "20220417",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF KRISTIN EGAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "142",
+   "committee": "20250298",
+   "contributions": 1088352.7
+  },
+  {
+   "name": "JOSEPH DORN LECKENBY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "42",
+   "committee": "2026C0001",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRETT R MILLER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "41",
+   "committee": "2026C1221",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRANK FARRY",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "2026C0115",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARTIN T. CAUSER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "67",
+   "committee": "2026C0218",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELISSA SHUSTERMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "157",
+   "committee": "2026C0369",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANDREW KUZMA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "39",
+   "committee": "2026C0870",
+   "contributions": 0.0
+  },
+  {
+   "name": "ERIC DAVANZO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "58",
+   "committee": "2026C0254",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHERRI ROGERS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "58",
+   "committee": "2026C1038",
+   "contributions": 0.0
+  },
+  {
+   "name": "LISA BOROWSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "168",
+   "committee": "2026C0345",
+   "contributions": 0.0
+  },
+  {
+   "name": "PILAR CAMPISI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "136",
+   "committee": "2026C0679",
+   "contributions": 0.0
+  },
+  {
+   "name": "KLYE MULLINS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "112",
+   "committee": "2026C1094",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRYAN PEIRSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "43",
+   "committee": "2026C1393",
+   "contributions": 0.0
+  },
+  {
+   "name": "KEN VELEZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "141",
+   "committee": "2026C0962",
+   "contributions": 0.0
+  },
+  {
+   "name": "DANIEL J DEASY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "27",
+   "committee": "2026C0132",
+   "contributions": 0.0
+  },
+  {
+   "name": "LINDSEY WILLIAMS FOR PA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "38",
+   "committee": "20170234",
+   "contributions": 227177.78
+  },
+  {
+   "name": "JORDAN HARRIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "186",
+   "committee": "2026C1027",
+   "contributions": 0.0
+  },
+  {
+   "name": "SANTIAGO, ANDRES RUBEN FLAMMER ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "5",
+   "committee": "2026c1114",
+   "contributions": 0.0
+  },
+  {
+   "name": "MCCLAY, JESSICA  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "121",
+   "committee": "2026c0899",
+   "contributions": 0.0
+  },
+  {
+   "name": "GUN OWNERS OF AMERICA, INC. COMMITTEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "100",
+   "committee": "20200202",
+   "contributions": 1433.28
+  },
+  {
+   "name": "LES MAVUS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "145",
+   "committee": "2026C1341",
+   "contributions": 0.0
+  },
+  {
+   "name": "JANNEY,SCOTT ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "2026C0242",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEELE, SHANE  A ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "104",
+   "committee": "2026C1380",
+   "contributions": 6000.0
+  },
+  {
+   "name": "Friends of Jennifer O'Mara",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "165",
+   "committee": "20170217",
+   "contributions": 126406.52
+  },
+  {
+   "name": "FRIENDS OF MICHAEL STENDER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "108",
+   "committee": "20230127",
+   "contributions": 27450.0
+  },
+  {
+   "name": "GREG BANKOS FOR PA SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "10",
+   "committee": "20260103",
+   "contributions": 35025.11
+  },
+  {
+   "name": "COMMITTEE TO ELECT DUSTYN DORN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "60",
+   "committee": "20260261",
+   "contributions": 9601.71
+  },
+  {
+   "name": "SPEICHER,SYDNEY LOUISE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "15",
+   "committee": "2026C1286",
+   "contributions": 0.0
+  },
+  {
+   "name": "PARKER, DARISHA K ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "198",
+   "committee": "2026c1120",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF CHAD REICHARD",
+   "party": "REP",
+   "chamber": "house",
+   "district": "90",
+   "committee": "20230293",
+   "contributions": 34200.0
+  },
+  {
+   "name": "MCCOY, CHARLES CALEB ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "79",
+   "committee": "2026c1167",
+   "contributions": 0.0
+  },
+  {
+   "name": "JEFF CLARK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "88",
+   "committee": "2026C1359",
+   "contributions": 0.0
+  },
+  {
+   "name": "GARY MOTOR",
+   "party": "REP",
+   "chamber": "house",
+   "district": "32",
+   "committee": "2026C1432",
+   "contributions": 3000.0
+  },
+  {
+   "name": "WENDY FINK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "94",
+   "committee": "2026C0368",
+   "contributions": 0.0
+  },
+  {
+   "name": "HUNTER STALLWORTH, TAWANDA LYNNE ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "199",
+   "committee": "2026C0483",
+   "contributions": 0.0
+  },
+  {
+   "name": "GREER HEINDEL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "155",
+   "committee": "2026C1436",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIEND OF EILEEN ALBILLAR",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "6",
+   "committee": "20250277",
+   "contributions": 377574.9
+  },
+  {
+   "name": "DYLA ALTEMARA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "39",
+   "committee": "2026C0525",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARK PINSLEY",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "2026C0574",
+   "contributions": 0.0
+  },
+  {
+   "name": "HUMBLE FOR HOUSE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "50",
+   "committee": "20250147",
+   "contributions": 110487.49
+  },
+  {
+   "name": "United Steelworkers Political Action Fund",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "42",
+   "committee": "7900117",
+   "contributions": 197387.62
+  },
+  {
+   "name": "REBECCA MACTAGGART",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "48",
+   "committee": "2026C0909",
+   "contributions": 0.0
+  },
+  {
+   "name": "CLINT OWLETT",
+   "party": "REP",
+   "chamber": "house",
+   "district": "68",
+   "committee": "2026C0241",
+   "contributions": 0.0
+  },
+  {
+   "name": "KRISTA ANDERSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "92",
+   "committee": "2026C0991",
+   "contributions": 0.0
+  },
+  {
+   "name": "TOM MEHAFFIE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "116",
+   "committee": "2026C0059",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEVE SAMUELSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "135",
+   "committee": "2026C0684",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIM BRIGGS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "149",
+   "committee": "2026C0433",
+   "contributions": 0.0
+  },
+  {
+   "name": "DANIELLE LINDEMUTH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "98",
+   "committee": "2026C1368",
+   "contributions": 0.0
+  },
+  {
+   "name": "PAUL R. TAKAC JR.",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "82",
+   "committee": "2026C0070",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES B. STRUZZI II",
+   "party": "REP",
+   "chamber": "house",
+   "district": "62",
+   "committee": "2026C0290",
+   "contributions": 0.0
+  },
+  {
+   "name": "R. LEE JAMES",
+   "party": "REP",
+   "chamber": "house",
+   "district": "64",
+   "committee": "2026C0793",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROMAN KOZAK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "14",
+   "committee": "2026C0549",
+   "contributions": 0.0
+  },
+  {
+   "name": "GEORGE H. MARGETAS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "196",
+   "committee": "2026C1193",
+   "contributions": 0.0
+  },
+  {
+   "name": "NATALIE NICOLE STUCK (MIHALEK)",
+   "party": "REP",
+   "chamber": "house",
+   "district": "40",
+   "committee": "2026C0238",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHAD WILLIAM GLEISSL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "37",
+   "committee": "2026C0712",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF LOGAN LOMBARDO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "114",
+   "committee": "20260078",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF ERIC MAIER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "152",
+   "committee": "20260185",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAMERA BARTOLOTTA",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "2026C0522",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVID NISSLEY III",
+   "party": "REP",
+   "chamber": "house",
+   "district": "100",
+   "committee": "2026C0892",
+   "contributions": 0.0
+  },
+  {
+   "name": "MEGAN GRIFFIN-SHELLEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "2026C1088",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAN GOUGHNOUR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "35",
+   "committee": "2026C0406",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHAEL E MURPHY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "162",
+   "committee": "2026C1235",
+   "contributions": 0.0
+  },
+  {
+   "name": "CRAIG T. STAATS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "145",
+   "committee": "2026C0170",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARK M. GILLEN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "128",
+   "committee": "2026C0047",
+   "contributions": 0.0
+  },
+  {
+   "name": "ERIK BONNETT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "130",
+   "committee": "2026C0911",
+   "contributions": 0.0
+  },
+  {
+   "name": "BENJAMIN V. SANCHEZ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "153",
+   "committee": "2026C0156",
+   "contributions": 0.0
+  },
+  {
+   "name": "NANCY GUENST",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "152",
+   "committee": "2026C0704",
+   "contributions": 0.0
+  },
+  {
+   "name": "NAPOLEON NELSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "154",
+   "committee": "2026C1092",
+   "contributions": 0.0
+  },
+  {
+   "name": "KATIE MUTH",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "44",
+   "committee": "2026C0561",
+   "contributions": 0.0
+  },
+  {
+   "name": "TINA M. DAVIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "141",
+   "committee": "2026C0293",
+   "contributions": 0.0
+  },
+  {
+   "name": "BENNINGHOFF FOR REPRESENTATIVE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "171",
+   "committee": "2026C0463",
+   "contributions": 0.0
+  },
+  {
+   "name": "PILAR FOR PA",
+   "party": "",
+   "chamber": "house",
+   "district": "136",
+   "committee": "20260139",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRIDGET MALLOY KOSIEROWSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "114",
+   "committee": "2026C0952",
+   "contributions": 11050.42
+  },
+  {
+   "name": "GREG VITALI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "166",
+   "committee": "2026C0152",
+   "contributions": 0.0
+  },
+  {
+   "name": "ALBERT BUCHTAN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "2026C0825",
+   "contributions": 0.0
+  },
+  {
+   "name": "RON RUMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "196",
+   "committee": "2026C0745",
+   "contributions": 0.0
+  },
+  {
+   "name": "BENSCOTER, JEREMY  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "117",
+   "committee": "2026c1081",
+   "contributions": 0.0
+  },
+  {
+   "name": "COCHRAN, HARRY YOUNG",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "32",
+   "committee": "2026C1266",
+   "contributions": 0.0
+  },
+  {
+   "name": "TARIK KHAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "194",
+   "committee": "2026C0058",
+   "contributions": 0.0
+  },
+  {
+   "name": "VALERIE GAYDOS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "44",
+   "committee": "2026C0690",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHARITY GRIMM KRUPA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "",
+   "committee": "2026C1097",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARLA BROWN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "9",
+   "committee": "2026C0832",
+   "contributions": 0.0
+  },
+  {
+   "name": "EDWARD L. RITTER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "47",
+   "committee": "2026C0997",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARC ANDERSON",
+   "party": "REP",
+   "chamber": "house",
+   "district": "92",
+   "committee": "2026C0423",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRIAN MUNROE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "144",
+   "committee": "2026C0250",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT M. LEADBETER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "109",
+   "committee": "2026C0190",
+   "contributions": 0.0
+  },
+  {
+   "name": "KONNOR GRIMEK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "94",
+   "committee": "2026C1244",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSHUA BASHLINE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "63",
+   "committee": "2026C0374",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES HADDOCK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "118",
+   "committee": "2026C0480",
+   "contributions": 0.0
+  },
+  {
+   "name": "LORENZO KELLEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "74",
+   "committee": "2026C0580",
+   "contributions": 0.0
+  },
+  {
+   "name": "AARON BERNSTINE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "9",
+   "committee": "2026C0279",
+   "contributions": 0.0
+  },
+  {
+   "name": "LINDSAY POWELL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "21",
+   "committee": "2026C0827",
+   "contributions": 0.0
+  },
+  {
+   "name": "LINDSEY WILLIAMS",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "38",
+   "committee": "2026C0284",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIM KEARNEY",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "2022C0856",
+   "contributions": 0.0
+  },
+  {
+   "name": "KYLE DONAHUE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "113",
+   "committee": "2026C1073",
+   "contributions": 0.0
+  },
+  {
+   "name": "EMILY KINKEAD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "20",
+   "committee": "2026C0511",
+   "contributions": 0.0
+  },
+  {
+   "name": "JIM PROKOPIAK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "140",
+   "committee": "2026C0379",
+   "contributions": 0.0
+  },
+  {
+   "name": "KRISTINE C. HOWARD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "167",
+   "committee": "2026C0803",
+   "contributions": 0.0
+  },
+  {
+   "name": "DARIAN SUNDBERG",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2026C1243",
+   "contributions": 100.0
+  },
+  {
+   "name": "DAN FRANKEL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "23",
+   "committee": "2026C1158",
+   "contributions": 0.0
+  },
+  {
+   "name": "DANILO BURGOS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "197",
+   "committee": "2026C0289",
+   "contributions": 0.0
+  },
+  {
+   "name": "RYAN HAZEL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "106",
+   "committee": "2026C0860",
+   "contributions": 0.0
+  },
+  {
+   "name": "ELIZABETH MORO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "160",
+   "committee": "2026C0191",
+   "contributions": 0.0
+  },
+  {
+   "name": "NICOLE WOODS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "98",
+   "committee": "2026C1034",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANDREA VEROBISH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "79",
+   "committee": "2026C0534",
+   "contributions": 0.0
+  },
+  {
+   "name": "KATHY L. RAPP",
+   "party": "REP",
+   "chamber": "house",
+   "district": "65",
+   "committee": "2026C0802",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRAD ROAE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "6",
+   "committee": "2026C0067",
+   "contributions": 0.0
+  },
+  {
+   "name": "SHARON SOLTIS SPARANO",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "2026C1309",
+   "contributions": 8039.89
+  },
+  {
+   "name": "LEO SOLGA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "2026C0769",
+   "contributions": 0.0
+  },
+  {
+   "name": "MITCHELL MICALE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "130",
+   "committee": "2026C1017",
+   "contributions": 0.0
+  },
+  {
+   "name": "ARVIND VENKAT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "30",
+   "committee": "2026C0026",
+   "contributions": 0.0
+  },
+  {
+   "name": "JESSICA ST CLAIR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "87",
+   "committee": "2026C1085",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROSEMARY BROWN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "40",
+   "committee": "2026C0183",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIMOTHY PATRICK BRENNAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "29",
+   "committee": "2026C0237",
+   "contributions": 0.0
+  },
+  {
+   "name": "PATRICK GALLAGHER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "173",
+   "committee": "2026C0188",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSEPH C. HOHENSTEIN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "177",
+   "committee": "2026C0180",
+   "contributions": 0.0
+  },
+  {
+   "name": "VANESSA ACOSTA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "49",
+   "committee": "2026C1366",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHRISTINA D. SAPPEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "158",
+   "committee": "2026C0748",
+   "contributions": 0.0
+  },
+  {
+   "name": "CHRISTOPHER THOMAS",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "2026C0105",
+   "contributions": 0.0
+  },
+  {
+   "name": "MCCOY, CHARLES CALEB ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "79",
+   "committee": "2026C0008",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSHUA KAIL",
+   "party": "REP",
+   "chamber": "house",
+   "district": "15",
+   "committee": "2026C0096",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANN FLOOD",
+   "party": "REP",
+   "chamber": "house",
+   "district": "138",
+   "committee": "2026C0196",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELISSA CERRATO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "151",
+   "committee": "2026C0073",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSEPH G. WEBSTER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "150",
+   "committee": "2026C0287",
+   "contributions": 0.0
+  },
+  {
+   "name": "LAUREN MCCURDY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "119",
+   "committee": "2026C1032",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRITTANY BLOAM",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "45",
+   "committee": "2026C0886",
+   "contributions": 7207.83
+  },
+  {
+   "name": "CORY TONER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "153",
+   "committee": "2026C0985",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF HADLEY HAAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "44",
+   "committee": "20230106",
+   "contributions": 222186.53
+  },
+  {
+   "name": "MARGARET BURKE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "147",
+   "committee": "2026C0760",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANDREA DEUTSCH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "2026C0774",
+   "contributions": 0.0
+  },
+  {
+   "name": "JAMES WALSH",
+   "party": "REP",
+   "chamber": "house",
+   "district": "117",
+   "committee": "2026C0235",
+   "contributions": 0.0
+  },
+  {
+   "name": "Neilson for the Northeast",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "174",
+   "committee": "20120111",
+   "contributions": 167963.78
+  },
+  {
+   "name": "DANE WATRO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "116",
+   "committee": "2026C0554",
+   "contributions": 2827.13
+  },
+  {
+   "name": "JOSH CALTAGIRONE FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "126",
+   "committee": "20220058",
+   "contributions": 789.74
+  },
+  {
+   "name": "FRIENDS FOR MCCUNE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "36",
+   "committee": "20260188",
+   "contributions": 0.0
+  },
+  {
+   "name": "THE COMMITTEE TO ELECT BRAD ROAE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "6",
+   "committee": "2006100",
+   "contributions": 0.0
+  },
+  {
+   "name": "DONNA SCHEUREN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "147",
+   "committee": "2026C0338",
+   "contributions": 0.0
+  },
+  {
+   "name": "MIKE HAROSTOCK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "121",
+   "committee": "2026C0582",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOE EMRICK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "137",
+   "committee": "2026C0117",
+   "contributions": 0.0
+  },
+  {
+   "name": "SHAY MICCO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "9",
+   "committee": "2026C1338",
+   "contributions": 0.0
+  },
+  {
+   "name": "FLYNN, MARTY FRIENDS OF",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "20120098",
+   "contributions": 545839.0
+  },
+  {
+   "name": "Leanne for PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "161",
+   "committee": "20140067",
+   "contributions": 282686.0
+  },
+  {
+   "name": "RYAN WARNER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "52",
+   "committee": "2026C0211",
+   "contributions": 0.0
+  },
+  {
+   "name": "WENDY FINK FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "94",
+   "committee": "20210366",
+   "contributions": 0.0
+  },
+  {
+   "name": "THOMAS HOLDEN KUTZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "87",
+   "committee": "2026C0488",
+   "contributions": 0.0
+  },
+  {
+   "name": "COMMITTEE TO RE ELECT FRANK BURNS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "72",
+   "committee": "2008210",
+   "contributions": 7300.0
+  },
+  {
+   "name": "SUKH SINGH FOR PA DISTRICT 101",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "101",
+   "committee": "20260086",
+   "contributions": 0.0
+  },
+  {
+   "name": "ED NEILSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "174",
+   "committee": "2026C0321",
+   "contributions": 0.0
+  },
+  {
+   "name": "RICHARD S. IRVIN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "81",
+   "committee": "2026C0682",
+   "contributions": 0.0
+  },
+  {
+   "name": "NATHAN DAVIDSON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "103",
+   "committee": "2026C0199",
+   "contributions": 0.0
+  },
+  {
+   "name": "JUDY TROMBETTA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "166",
+   "committee": "2026C1053",
+   "contributions": 0.0
+  },
+  {
+   "name": "GREG ROTHMAN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "34",
+   "committee": "2026C0048",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBYN BIRD",
+   "party": "REP",
+   "chamber": "house",
+   "district": "177",
+   "committee": "2026C0526",
+   "contributions": 0.0
+  },
+  {
+   "name": "NIKKI RIVERA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "96",
+   "committee": "2026C0470",
+   "contributions": 0.0
+  },
+  {
+   "name": "THOMAS M JONES",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "2026C0346",
+   "contributions": 0.0
+  },
+  {
+   "name": "H. SCOTT CONKLIN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "77",
+   "committee": "2026C0063",
+   "contributions": 0.0
+  },
+  {
+   "name": "PARKE H. WENTLING",
+   "party": "REP",
+   "chamber": "house",
+   "district": "7",
+   "committee": "2026C0165",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSEPH F. HOGAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "142",
+   "committee": "2026C0262",
+   "contributions": 0.0
+  },
+  {
+   "name": "SARA AGERTON",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "88",
+   "committee": "2026C0208",
+   "contributions": 0.0
+  },
+  {
+   "name": "KRISTIN PHILLIPS-HILL",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "2026C0247",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRANDON MARKOSEK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "25",
+   "committee": "2026C0358",
+   "contributions": 0.0
+  },
+  {
+   "name": "PETER G. SCHWEYER",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "134",
+   "committee": "2026C0904",
+   "contributions": 0.0
+  },
+  {
+   "name": "MARTIN B. FLYNN",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "2026C0192",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHAEL SCHLOSSBERG",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "132",
+   "committee": "2026C0219",
+   "contributions": 0.0
+  },
+  {
+   "name": "ALFEIA DE VAUGHN-GOODWIN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "2026C1269",
+   "contributions": 0.0
+  },
+  {
+   "name": "LOGAN LOMBARDO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "114",
+   "committee": "2026C0895",
+   "contributions": 0.0
+  },
+  {
+   "name": "MELINDA S FEE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "37",
+   "committee": "2026C0223",
+   "contributions": 0.0
+  },
+  {
+   "name": "RON RUMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "196",
+   "committee": "2026C1408",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANDREW HARBAUGH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "63",
+   "committee": "2026C0980",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAREN LOWREY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "132",
+   "committee": "2026C1347",
+   "contributions": 0.0
+  },
+  {
+   "name": "RICK CHRISTIE JR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "199",
+   "committee": "2026C1213",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF BOB MERSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "2",
+   "committee": "20180238",
+   "contributions": 7000.0
+  },
+  {
+   "name": "JEFFREY H. OLSOMMER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "139",
+   "committee": "2026C0056",
+   "contributions": 0.0
+  },
+  {
+   "name": "PAK, JUSTIN J ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "157",
+   "committee": "2026C1278",
+   "contributions": 364.35
+  },
+  {
+   "name": "JOHN ZANGARI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "171",
+   "committee": "2026C0729",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF TAIBA SULTANA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "20240073",
+   "contributions": 48575.0
+  },
+  {
+   "name": "MARIA COLLETT",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "2026C0577",
+   "contributions": 0.0
+  },
+  {
+   "name": "JACKLYN H RUSNOCK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "126",
+   "committee": "2026C0992",
+   "contributions": 0.0
+  },
+  {
+   "name": "JARRETT COLEMAN",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "16",
+   "committee": "2026C0408",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVON MAGWOOD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "55",
+   "committee": "2026C1246",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MEGAN GS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "148",
+   "committee": "20250330",
+   "contributions": 36761.52
+  },
+  {
+   "name": "GREEN,GWENDOLYN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "190",
+   "committee": "2026C1163",
+   "contributions": 0.0
+  },
+  {
+   "name": "FERN LEARD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "120",
+   "committee": "2026C1077",
+   "contributions": 0.0
+  },
+  {
+   "name": "SOLOMON, JARED G.",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "202",
+   "committee": "2026C0742",
+   "contributions": 593.8
+  },
+  {
+   "name": "GINA CURRY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "164",
+   "committee": "2026C1214",
+   "contributions": 0.0
+  },
+  {
+   "name": "EQUALITY COMMITTEE",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "28",
+   "committee": "20260153",
+   "contributions": 100.0
+  },
+  {
+   "name": "STEVEN R MALAGARI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "53",
+   "committee": "2026C0184",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MARGARET BURKE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "147",
+   "committee": "20250320",
+   "contributions": 20313.2
+  },
+  {
+   "name": "FRIENDS OF CORY TONER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "153",
+   "committee": "20260251",
+   "contributions": 0.0
+  },
+  {
+   "name": "TYLER MEYERS",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "2026C0791",
+   "contributions": 0.0
+  },
+  {
+   "name": "LAURA E HANBIDGE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "61",
+   "committee": "2026C0150",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHELLE SCHELLBERG",
+   "party": "REP",
+   "chamber": "house",
+   "district": "77",
+   "committee": "2026C1183",
+   "contributions": 4226.33
+  },
+  {
+   "name": "VOTE KEN VELEZ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "141",
+   "committee": "20260157",
+   "contributions": 0.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT ROBERT FREEMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "136",
+   "committee": "8200256",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIM KEARNEY",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "26",
+   "committee": "2026C1314",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANDRE CARROLL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "201",
+   "committee": "2026C0431",
+   "contributions": 0.0
+  },
+  {
+   "name": "HEATHER BOYD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "163",
+   "committee": "2026C1019",
+   "contributions": 0.0
+  },
+  {
+   "name": "PATRICK J. CATENA JR",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "45",
+   "committee": "2026C0799",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIMKO,SCOTT R ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2026C0500",
+   "contributions": 0.0
+  },
+  {
+   "name": "CITIZENS FOR MIKE ZVALAREN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "123",
+   "committee": "20240134",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOSE A. NUNEZ-GUZMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "91",
+   "committee": "2026C1008",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF TAIBA SULTANA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "18",
+   "committee": "2026C1325",
+   "contributions": 0.0
+  },
+  {
+   "name": "RYAN A. BIZZARRO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "3",
+   "committee": "2026C0265",
+   "contributions": 0.0
+  },
+  {
+   "name": "TODD CRAWLEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "193",
+   "committee": "2026C1013",
+   "contributions": 0.0
+  },
+  {
+   "name": "ANA FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "20260020",
+   "contributions": 140750.87
+  },
+  {
+   "name": "BUCHTAN FOR PA",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "46",
+   "committee": "20250287",
+   "contributions": 292927.0
+  },
+  {
+   "name": "FRIENDS OF CRISTIAN LUNA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "13",
+   "committee": "20230313",
+   "contributions": 0.0
+  },
+  {
+   "name": "CAPTAIN SCOTT TIMKO VICTORY FUND",
+   "party": "REP",
+   "chamber": "house",
+   "district": "12",
+   "committee": "20200170",
+   "contributions": 118350.02
+  },
+  {
+   "name": "DAWKINS,JASON ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "179",
+   "committee": "2026C0081",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRIAN KIRKLAND",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "159",
+   "committee": "2026C1110",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHELE BROOKS",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "50",
+   "committee": "2026C0560",
+   "contributions": 0.0
+  },
+  {
+   "name": "RACHEL CUEVAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "187",
+   "committee": "2026C1030",
+   "contributions": 0.0
+  },
+  {
+   "name": "TIMKO,SCOTT R ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2026C1409",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS FOR DENISE MARIS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "76",
+   "committee": "20210329",
+   "contributions": 0.0
+  },
+  {
+   "name": "PELTIER, BRIAN JOHN ",
+   "party": "LIB",
+   "chamber": "house",
+   "district": "60",
+   "committee": "2026C1460",
+   "contributions": 0.0
+  },
+  {
+   "name": "Friends of Kristin Marcell",
+   "party": "REP",
+   "chamber": "house",
+   "district": "178",
+   "committee": "20220141",
+   "contributions": 304405.19
+  },
+  {
+   "name": "PRENDERGAST, REBECCA CATHERINE ",
+   "party": "IND",
+   "chamber": "house",
+   "district": "145",
+   "committee": "2026C1446",
+   "contributions": 0.0
+  },
+  {
+   "name": "TAMARA MISEWICZ-HEALEY FOR PA HOUSE DISTRICT 112",
+   "party": "",
+   "chamber": "house",
+   "district": "112",
+   "committee": "20260249",
+   "contributions": 1300.0
+  },
+  {
+   "name": "HUGHES, VINCENT CITIZENS FOR                                ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "7",
+   "committee": "9200339",
+   "contributions": 1629919.54
+  },
+  {
+   "name": "JUSTIN BYERS FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "9",
+   "committee": "20250342",
+   "contributions": 548.6
+  },
+  {
+   "name": "DUKES, BRANDON MICHAEL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "12",
+   "committee": "2026C1440",
+   "contributions": 0.0
+  },
+  {
+   "name": "MIKE SCHONEWOLF",
+   "party": "GRN",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "2026C1452",
+   "contributions": 0.0
+  },
+  {
+   "name": "BAKER, ELISABETH FOR SENATE                                 ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "20",
+   "committee": "2005279",
+   "contributions": 777609.39
+  },
+  {
+   "name": "BOB MERSKI",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "2",
+   "committee": "2026C1208",
+   "contributions": 0.0
+  },
+  {
+   "name": "BRAD FOR PA",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "41",
+   "committee": "2010012",
+   "contributions": 0.0
+  },
+  {
+   "name": "DAVID GOLDSMITH JR FOR PA",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "8",
+   "committee": "20260003",
+   "contributions": 700.0
+  },
+  {
+   "name": "GREGORY SCOTT",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "54",
+   "committee": "2026C0281",
+   "contributions": 0.0
+  },
+  {
+   "name": "RICK TELESZ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "8",
+   "committee": "2026C0945",
+   "contributions": 10631.15
+  },
+  {
+   "name": "COMMITTEE TO ELECT BRIAN KIRKLAND",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "159",
+   "committee": "20260199",
+   "contributions": 12625.0
+  },
+  {
+   "name": "FRIENDS OF CAROL KAZEEM ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "159",
+   "committee": "20220031",
+   "contributions": 10350.0
+  },
+  {
+   "name": "DAY,GARY W ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "187",
+   "committee": "2026C0464",
+   "contributions": 0.0
+  },
+  {
+   "name": "MORGAN B CEPHAS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "192",
+   "committee": "2026C0064",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF KIRSTEN MCTERNAN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "82",
+   "committee": "20260183",
+   "contributions": 18344.31
+  },
+  {
+   "name": "LATASHA D. MAYES FOR STATE REPRESENTATIVE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "24",
+   "committee": "20220027",
+   "contributions": 47673.0
+  },
+  {
+   "name": "CECILIA GERLACH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "20250019",
+   "contributions": 9962.5
+  },
+  {
+   "name": "PELTIER FOR PA",
+   "party": "LIB",
+   "chamber": "house",
+   "district": "60",
+   "committee": "20260306",
+   "contributions": 0.0
+  },
+  {
+   "name": "KAUFFMAN, ROB COM TO ELECT                                  ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "89",
+   "committee": "2004044",
+   "contributions": 26225.0
+  },
+  {
+   "name": "FRIENDS OF BRADLEY MERKL-GUMP",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "99999",
+   "committee": "20260100",
+   "contributions": 342304.78
+  },
+  {
+   "name": "MCTERNAN, KIRSTEN LEE ",
+   "party": "REP",
+   "chamber": "house",
+   "district": "82",
+   "committee": "2026C0741",
+   "contributions": 0.0
+  },
+  {
+   "name": "EGAN,KRISTIN ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "142",
+   "committee": "2026C0498",
+   "contributions": 0.0
+  },
+  {
+   "name": "STEENKISTE, PAUL  ",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "42",
+   "committee": "2026C0790",
+   "contributions": 1200.0
+  },
+  {
+   "name": "TIMOTHY F TWARDZIK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "123",
+   "committee": "2026C0556",
+   "contributions": 0.0
+  },
+  {
+   "name": "THE PEOPLE FOR KONNOR GRIMEK",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "94",
+   "committee": "20260156",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN LAWRENCE",
+   "party": "REP",
+   "chamber": "house",
+   "district": "13",
+   "committee": "2026C0425",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOHN COSTANZA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "16",
+   "committee": "2026C0548",
+   "contributions": 0.0
+  },
+  {
+   "name": "KATHERYN BUCKLEY",
+   "party": "REP",
+   "chamber": "house",
+   "district": "168",
+   "committee": "2026C1237",
+   "contributions": 0.0
+  },
+  {
+   "name": "ELECT TINA AYALA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "158",
+   "committee": "20260314",
+   "contributions": 547.0
+  },
+  {
+   "name": "SHAFFER, AMANDA  ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "64",
+   "committee": "2026c1357",
+   "contributions": 575.42
+  },
+  {
+   "name": "TIM HAYS",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "143",
+   "committee": "2026C0027",
+   "contributions": 0.0
+  },
+  {
+   "name": "TRACY PENNYCUICK",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "24",
+   "committee": "2026C0102",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHAEL STENDER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "108",
+   "committee": "2026C0360",
+   "contributions": 0.0
+  },
+  {
+   "name": "JOE HAMM",
+   "party": "REP",
+   "chamber": "house",
+   "district": "84",
+   "committee": "2026C0234",
+   "contributions": 0.0
+  },
+  {
+   "name": "MICHAEL J GETTIS",
+   "party": "REP",
+   "chamber": "house",
+   "district": "140",
+   "committee": "2026C1061",
+   "contributions": 55.0
+  },
+  {
+   "name": "ANA TIBURCIO",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "2026C1050",
+   "contributions": 0.0
+  },
+  {
+   "name": "DALLAS KEPHART",
+   "party": "REP",
+   "chamber": "house",
+   "district": "73",
+   "committee": "2026C0448",
+   "contributions": 0.0
+  },
+  {
+   "name": "JUSTIN C. FLEMING",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "105",
+   "committee": "2026C0747",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF TIFFANY VANN",
+   "party": "REP",
+   "chamber": "house",
+   "district": "192",
+   "committee": "20250327",
+   "contributions": 289.7
+  },
+  {
+   "name": "MAJOR FOR PA",
+   "party": "REP",
+   "chamber": "house",
+   "district": "60",
+   "committee": "20210141",
+   "contributions": 11200.0
+  },
+  {
+   "name": "HOLLAND FOR THE HOUSE",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "80",
+   "committee": "20260043",
+   "contributions": 195.73
+  },
+  {
+   "name": "FRIENDS OF TONY DPHAX KING",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "188",
+   "committee": "20210299",
+   "contributions": 0.0
+  },
+  {
+   "name": "TONY DPHAX KING",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "188",
+   "committee": "2026C1304",
+   "contributions": 10000.0
+  },
+  {
+   "name": "MARCI MUSTELLO",
+   "party": "REP",
+   "chamber": "house",
+   "district": "10",
+   "committee": "2026C0230",
+   "contributions": 0.0
+  },
+  {
+   "name": "BEN WAXMAN",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "182",
+   "committee": "2026C0311",
+   "contributions": 0.0
+  },
+  {
+   "name": "DARIAN FOR ALL",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "91",
+   "committee": "20260167",
+   "contributions": 0.0
+  },
+  {
+   "name": "BUTLER CO DEM COM                                           ",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "12",
+   "committee": "7900156",
+   "contributions": 7027.58
+  },
+  {
+   "name": "TODD CRAWLEY",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "193",
+   "committee": "2026C1425",
+   "contributions": 0.0
+  },
+  {
+   "name": "STONE SOBIERALSKI",
+   "party": "REP",
+   "chamber": "house",
+   "district": "38",
+   "committee": "2026C1433",
+   "contributions": 0.0
+  },
+  {
+   "name": "CECILIA GERLACH",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "22",
+   "committee": "2026C0083",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF TOM JONES ",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "36",
+   "committee": "20220023",
+   "contributions": 4513430.24
+  },
+  {
+   "name": "COMMITTEE FOR POLICY CHOICE",
+   "party": "FWI",
+   "chamber": "house",
+   "district": "143",
+   "committee": "20250248",
+   "contributions": 24944.14
+  },
+  {
+   "name": "FRIENDS OF CHRISTOPHER FORD",
+   "party": "DEM",
+   "chamber": "house",
+   "district": "7",
+   "committee": "20260005",
+   "contributions": 290.0
+  },
+  {
+   "name": "ERIC MAIER",
+   "party": "REP",
+   "chamber": "house",
+   "district": "152",
+   "committee": "2026C1470",
+   "contributions": 0.0
+  },
+  {
+   "name": "SHARON FOR SENATE",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "22",
+   "committee": "20260428",
+   "contributions": 12500.0
+  },
+  {
+   "name": "COSTELLO FOR PA SENATE",
+   "party": "",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "20260144",
+   "contributions": 0.0
+  },
+  {
+   "name": "ROBERT COSTELLO",
+   "party": "REP",
+   "chamber": "senate",
+   "district": "12",
+   "committee": "2026C1360",
+   "contributions": 0.0
+  },
+  {
+   "name": "SUE MULVEY",
+   "party": "DEM",
+   "chamber": "senate",
+   "district": "50",
+   "committee": "2026C1417",
+   "contributions": 0.0
+  },
+  {
+   "name": "KATE KLUNK",
+   "party": "REP",
+   "chamber": "house",
+   "district": "169",
+   "committee": "2026C0277",
+   "contributions": 0.0
+  },
+  {
+   "name": "FRIENDS OF MIKE GETTIS",
+   "party": "",
+   "chamber": "house",
+   "district": "140",
+   "committee": "20260175",
+   "contributions": 0.0
+  }
+ ]
+}

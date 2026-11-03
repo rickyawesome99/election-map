@@ -1328,6 +1328,7 @@ export function ForecastCalculationCard({
         Before averaging, each poll gets a few fixes: undecided voters are split between the candidates in proportion to their support; older polls are nudged for how the national mood has shifted since they were taken; and pollsters that consistently lean toward one party this year have that lean taken out.
         <br /><br />
         The more polling a race has, the more the forecast relies on it, but the model always keeps at least {Math.round(100 * (1 - FORECAST_CONSTANTS.POLL_W_MAX))}% of the say.
+        {polling.shade !== 0 && <><br /><br />Final polls have missed toward Republicans on average in every recent election, so the forecast reads this average {Math.abs(polling.shade).toFixed(1)} points {polling.shade > 0 ? "more Republican" : "more Democratic"} than its face value, half the historical miss for this office.</>}
       </>
     );
   const marginTooltip = (
@@ -1392,7 +1393,7 @@ export function ForecastCalculationCard({
               {pollingAvg == null ? (
                 <>No polls on file, so this is the Model alone at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig>.</>
               ) : (
-                <>Blends the Model at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig> with a polling average of <LedgerFig color={pollColor}>{fmtMargin(pollingAvg)}</LedgerFig> ({pollMeta}).</>
+                <>Blends the Model at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig> with a polling average of <LedgerFig color={pollColor}>{fmtMargin(pollingAvg)}</LedgerFig> ({pollMeta}){polling?.shade ? <>, read {Math.abs(polling.shade).toFixed(1)} pts {polling.shade > 0 ? "R" : "D"} of face value for the historical poll miss</> : null}.</>
               )}
             </p>
           </div>
@@ -2297,8 +2298,9 @@ export function CountyDemographicsCard({
 
 // ── Race polls table (Phase 5) ───────────────────────────────────────────────
 // Every general-election poll on file for the race, newest first, with the weight
-// each carries in the average (lib/racePollAverage.ts). Flat rows on the page
-// background, like the other ledger sections.
+// each carries in the average (lib/racePollAverage.ts). Only a pollster's latest poll of
+// the race is listed, as only it counts. Flat rows on the page background, like the other
+// ledger sections.
 export function RacePollsSection({ polling, demName, repName }: { polling: RacePolling; demName: string; repName: string }) {
   const avg = polling.avg;
   if (!avg) return null;

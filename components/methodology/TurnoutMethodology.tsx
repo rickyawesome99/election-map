@@ -7,7 +7,7 @@ import {
 import { firstRoundNotes } from "@/lib/turnout";
 import { COUNTY_MARGIN_CLAMP, OTHER_SHARE_CAP, impliedGenericBallot, projectRaceResults } from "@/lib/countyProjection";
 import { K_SWING_SHARE, K_TURNOUT_SHARE, MAX_EXTRA_SHARE, MIN_SHARE, NEAR_DONE, NIGHT_SHARE, OWN_WEIGHT_EXP, SIGMA_COUNTY, SIGMA_FLOOR, SIGMA_FLOOR_DONE, SIGMA_LATE } from "@/lib/resultsNeedle";
-import { MIN_COMPLETE, SIGMA_COLLEGE, SIGMA_FIT_COUNTY, SIGMA_LEAN, SIGMA_MIRAGE, SIGMA_NATIONAL, SIGMA_NONWHITE, SIGMA_OFFICE, SIGMA_STATE, VOTES_SAT } from "@/lib/resultsNight";
+import { MIN_COMPLETE, MIRAGE_VOTES_SAT, SIGMA_COLLEGE, SIGMA_FIT_COUNTY, SIGMA_LEAN, SIGMA_MIRAGE, SIGMA_NATIONAL, SIGMA_NONWHITE, SIGMA_OFFICE, SIGMA_STATE, VOTES_SAT } from "@/lib/resultsNight";
 import { NEEDLE_BACKTEST as NB } from "@/data/resultsNeedleCalibration";
 import { NIGHT_BACKTEST as NT } from "@/data/resultsNightCalibration";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, StatRow, type ConstantRow, type LedgerLine } from "./kit";
@@ -26,7 +26,7 @@ const DOCUMENTED_IN = {
   // lib/resultsNight.ts (the night model behind the needle)
   SIGMA_NATIONAL: "turnout#results-night", SIGMA_STATE: "turnout#results-night", SIGMA_OFFICE: "turnout#results-night",
   SIGMA_NONWHITE: "turnout#results-night", SIGMA_COLLEGE: "turnout#results-night", SIGMA_LEAN: "turnout#results-night",
-  SIGMA_FIT_COUNTY: "turnout#results-night", VOTES_SAT: "turnout#results-night", MIN_COMPLETE: "turnout#results-night", SIGMA_MIRAGE: "turnout#results-night",
+  SIGMA_FIT_COUNTY: "turnout#results-night", VOTES_SAT: "turnout#results-night", MIN_COMPLETE: "turnout#results-night", SIGMA_MIRAGE: "turnout#results-night", MIRAGE_VOTES_SAT: "turnout#results-night",
 } as const;
 void DOCUMENTED_IN;
 
@@ -181,10 +181,11 @@ export default function TurnoutMethodology() {
           { name: "SIGMA_COLLEGE", value: `${SIGMA_COLLEGE} pts`, meaning: "Prior sigma on the slope per 10 pts of college share", basis: "calibrated", source: "Same grid" },
           { name: "SIGMA_LEAN", value: `${SIGMA_LEAN} pts`, meaning: "Prior sigma on the slope per 10 pts of the county's prior margin", basis: "calibrated", source: "Same grid" },
           { name: "SIGMA_FIT_COUNTY", value: `${SIGMA_FIT_COUNTY} pts`, meaning: "Noise sigma of one fully-weighted county's swing around the shared terms", basis: "designed", source: "The needle's SIGMA_COUNTY" },
-          { name: "VOTES_SAT", value: VOTES_SAT.toLocaleString(), meaning: "Counted votes at which a county carries full weight (smaller counties pro rata)", basis: "designed" },
-          { name: "MIN_COMPLETE", value: MIN_COMPLETE, meaning: "Share of its corrected expectation a county must have counted to enter the fit", basis: "calibrated", source: "0.5 and 0.8 score alike under the replay's usual early-vote skew; with the skew doubled (a 2020-sized mail mirage) 0.5 loses (nothing-in MAE 5.1, cover 78%) and 0.8 holds (4.9, 80%), and on the realistic simulated night 0.5 read the national swing 2 pts too Democratic at 9 PM ET. Raised to 0.8 on 2026-11-02" },
+          { name: "VOTES_SAT", value: VOTES_SAT.toLocaleString(), meaning: "Counted votes at which a county carries full weight (smaller counties pro rata)", basis: "calibrated", source: "With MIN_COMPLETE 0.35, the joint grid's best; weights close to the votes, so the national and office terms read the vote-weighted swing. Raised from 20,000 on 2026-11-03" },
+          { name: "MIN_COMPLETE", value: MIN_COMPLETE, meaning: "Share of its corrected expectation a county must have counted to enter the fit", basis: "calibrated", source: "Joint grid with VOTES_SAT and the office offsets (2026-11-03): 0.35 with VOTES_SAT 200k scores best or tied on the 2018–24 replay with the early-vote skew off, usual and doubled (nothing-in MAE 6.0 / 6.0 / 6.1 vs 6.7 / 6.6 / 6.4 at 0.8 and 20k) and on both simulated nights. Raised to 0.8 on 2026-11-02, lowered to 0.35 on 2026-11-03" },
           { name: "NIGHT_SHARE", value: NIGHT_SHARE, meaning: "Share of the terms' prior variance the needle takes off a race's forecast sigma (λ)", basis: "calibrated", source: "1 over-tightened the band (76%); 0.25 and 0.5 both cover 80–81%, 0.5 has the better log score" },
           { name: "SIGMA_MIRAGE", value: `${SIGMA_MIRAGE} pts`, meaning: "Prior sigma on the early-vote skew s: the national one toward zero, each state's toward the national", basis: "calibrated", source: "On the real 2025 VA/NJ snapshots the term cut the needle's error from 1.9 to 1.6 pts (60–90% counted 1.9 → 1.4, band cover 78% → 100%); on the replay it is neutral under the usual skew and with none, and with the skew doubled lowers the error (3.5 → 3.3, cover 80% → 84%). 1.5, 3 and 6 score alike; 3 kept" },
+          { name: "MIRAGE_VOTES_SAT", value: MIRAGE_VOTES_SAT.toLocaleString(), meaning: "Counted votes at which a county carries full weight in the early-vote regression", basis: "calibrated", source: "Kept at 20,000 when the shared terms moved to VOTES_SAT 200,000 (2026-11-03): at 200,000 the real 2025 VA/NJ replay lost (MAE 1.6 → 1.8, 60–90% counted cover 100% → 82%)" },
         ]} />
         <Block label={`Replay · ${NT.years.map((y) => y.year).join(", ")} Senate, governor and House`} meta={`${NT.years.reduce((a, y) => a + y.races, 0)} races in a simulated reporting order · scripts/resultsNightBacktest.ts --emit, ${NT.generated}`}>
           <DataTable head={["Race counted", "Rows", "Needle alone MAE", "80% band", "With the night model MAE", "80% band", "Log score"]} rows={NT.configs[0].buckets.map((b, i) => { const n = NT.configs[1].buckets[i]; return [b.bucket, b.n, `${b.mae.toFixed(1)} pts`, `${Math.round(b.cover * 100)}%`, `${n.mae.toFixed(1)} pts`, `${Math.round(n.cover * 100)}%`, `${b.logs.toFixed(2)} → ${n.logs.toFixed(2)}`]; })}

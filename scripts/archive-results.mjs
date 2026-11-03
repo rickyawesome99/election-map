@@ -9,6 +9,9 @@
 //   node scripts/archive-results.mjs 2          # every 2 minutes
 //   node scripts/archive-results.mjs 1 40       # every minute, 40 snapshots, then exit
 //   node scripts/archive-results.mjs once       # one snapshot
+//   node scripts/archive-results.mjs 2 --set 2026-11-03 --start 2026-11-03T22:45:00Z --until 2026-11-04T17:00:00Z
+//        # election night: one folder for the whole night (the default, the UTC date, splits it at
+//        # 7 PM ET), sleeping until --start and stopping at --until
 //
 // The Results page replays these: /api/results/archive lists them (dev only — the directory is
 // not deployed) and the page's Replay control steps through them.
@@ -18,13 +21,17 @@ import { gzipSync } from "node:zlib";
 
 const BASE = "https://civicapi.org/api/v2/";
 const UA = { "User-Agent": "election-map-archive/1.0 (+https://github.com/rickyawesome99/election-map)", Accept: "application/json" };
-const arg = process.argv[2];
+const flag = (name) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
+const [arg, countArg] = process.argv.slice(2).filter((a, i, all) => !a.startsWith("--") && !all[i - 1]?.startsWith("--"));
 const once = arg === "once";
 const intervalMin = once ? 0 : Number(arg) || 5;
-const maxCount = Number(process.argv[3]) || Infinity;
+const maxCount = Number(countArg) || Infinity;
+const set = flag("--set");
+const startAt = flag("--start") ? Date.parse(flag("--start")) : null;
+const until = flag("--until") ? Date.parse(flag("--until")) : Infinity;
 const root = process.cwd();
 const ids = parseCsv(readFileSync(join(root, "data-entry", "civicapi_race_ids.csv"), "utf8"));
-const dateDir = () => join(root, "data-entry", "results-archive", new Date().toISOString().slice(0, 10));
+const dateDir = () => join(root, "data-entry", "results-archive", set ?? new Date().toISOString().slice(0, 10));
 
 function parseCsv(text) {
   const [head, ...lines] = text.trim().split(/\r?\n/);
@@ -85,9 +92,15 @@ async function snapshot() {
 }
 
 (async () => {
+  if (startAt && startAt > Date.now()) {
+    console.log(`${new Date().toISOString()}  waiting until ${new Date(startAt).toISOString()}`);
+    while (Date.now() < startAt) await new Promise((r) => setTimeout(r, Math.min(60_000, startAt - Date.now())));
+  }
   for (let n = 1; ; n++) {
+    // Snapshots start on the interval, however long a fetch takes.
+    const next = Date.now() + intervalMin * 60_000;
     try { await snapshot(); } catch (e) { console.error(e); }
-    if (once || n >= maxCount) break;
-    await new Promise((r) => setTimeout(r, intervalMin * 60_000));
+    if (once || n >= maxCount || Date.now() >= until) break;
+    await new Promise((r) => setTimeout(r, Math.max(0, next - Date.now())));
   }
 })();

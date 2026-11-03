@@ -106,8 +106,8 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
             return (
               <div
                 key={`${x.name}-${i}`}
-                className="flex items-center justify-between gap-4 py-3.5"
-                style={{ borderBottom: i === cands.length - 1 ? "none" : "1px solid var(--app-border)" }}
+                className="vh-row flex items-center justify-between gap-4 py-3.5"
+                style={{ borderBottom: i === cands.length - 1 ? "none" : "1px solid var(--app-border)", animationDelay: `${Math.min(i, 8) * 55}ms` }}
               >
                 <div className="flex items-center gap-4 min-w-0">
                   <Portrait party={x.party} />
@@ -122,7 +122,7 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
                 </div>
                 {share != null && (
                   <div className="shrink-0 text-right tabular-nums" style={{ color }}>
-                    <div className="text-3xl font-extrabold">{share.toFixed(1)}%</div>
+                    <div className="vh-margin text-3xl font-extrabold">{share.toFixed(1)}%</div>
                     {v ? (
                       <div className="text-sm font-medium mt-0.5">{v.votes.toLocaleString("en-US")} votes</div>
                     ) : (
@@ -174,7 +174,8 @@ export function AtlasFundraisingSection({ district, electionYear }: { district: 
         <div className="mt-2 flex h-2.5 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
           {rows.map((r, i) => {
             const share = shareOf(r);
-            return share ? <div key={`${r.name}-${i}`} title={`${r.name}: ${fmtMoney(r.contributions)}`} style={{ width: `${share}%`, background: PARTY_COLOR[r.party], borderLeft: i > 0 ? "1px solid var(--app-bg)" : undefined }} /> : null;
+            // The race pages' vote bar motion: the first side grows from the left, the last from the right.
+            return share ? <div key={`${r.name}-${i}`} className={i === rows.length - 1 && i > 0 ? "vh-bar-r" : "vh-bar-d"} title={`${r.name}: ${fmtMoney(r.contributions)}`} style={{ width: `${share}%`, background: PARTY_COLOR[r.party], borderLeft: i > 0 ? "1px solid var(--app-bg)" : undefined, animationDelay: "120ms" }} /> : null;
           })}
         </div>
       )}

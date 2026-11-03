@@ -9,6 +9,8 @@ import DistrictCountBar, { type ProjectedSeats } from "./DistrictCountBar";
 import AtlasDistrictDetail from "./AtlasDistrictDetail";
 import { LocatorMap } from "./AtlasEraMaps";
 import { useStaticJson } from "@/lib/useStaticJson";
+import { useRevealOnce } from "@/lib/useRevealOnce";
+import { SlidingPills } from "@/components/state/StateMotion";
 import { useStateLegResults } from "@/lib/useStateLegResults";
 import { atlasSliceUrl, contest2026, projectedSeatWinners, districtHash, keyFromHash, resultMargin, shortDistrictName, type AtlasChamber, type AtlasDistrict } from "@/lib/stateLegAtlas";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
@@ -52,8 +54,6 @@ function BoxLegend({ items }: { items: { label: string; bg: string }[] }) {
     </div>
   );
 }
-
-const pill = (on: boolean) => ({ background: on ? "var(--app-text-primary)" : "var(--app-tab-bg)", color: on ? "var(--app-bg)" : "var(--app-text-muted)", fontWeight: 600 });
 
 const PARTY_TEXT: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)", O: "var(--app-text-secondary)" };
 const PARTY_NAME: Record<string, string> = { D: "Democrat", R: "Republican", I: "Independent", O: "Other" };
@@ -469,9 +469,12 @@ export default function LegislativeAtlas({
   const allKeys = useMemo(() => districts.map((d) => d.key), [districts]);
   const filtered = navList !== districts && navList.length < districts.length;
 
+  // The table and history sit below the fold: they rise in once scrolled to.
+  const { ref: lowerRef, vh: lowerVh } = useRevealOnce();
+
   const MODE_LABEL: Record<ColorMode, string> = { projection: `${electionYear} projection`, seats: "Seat party", president: "2024 President", results: "Past results" };
   // The selector strip, placed inside the district page just above "About this district".
-  const navBtn = "h-8 w-8 shrink-0 grid place-items-center rounded-full text-base disabled:opacity-30";
+  const navBtn = "ix-press ix-rail-btn h-8 w-8 shrink-0 grid place-items-center rounded-full text-base disabled:opacity-30";
   const navigator = (
     <div ref={navRef} className="flex items-center gap-5 py-4" style={{ borderTop: "1px solid var(--app-border)", borderBottom: "1px solid var(--app-border)" }}>
       <div className="min-w-0 flex-1">
@@ -511,7 +514,8 @@ export default function LegislativeAtlas({
     <>
       {/* ── District view ── */}
       {inDistrict && (
-        <div className="max-w-3xl mx-auto">
+        // Keyed on the district, so stepping to the next one plays its entrance again.
+        <div key={selected?.key ?? "loading"} className="vh-tab-in max-w-3xl mx-auto">
           {selected && data ? (
             <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} navigator={navigator} chamberLabel={chamberLabel} onBack={backToExplorer} />
           ) : (
@@ -521,21 +525,23 @@ export default function LegislativeAtlas({
       )}
 
       {/* ── Explorer (kept mounted while a district is open) ── */}
-      <div className={inDistrict ? "hidden" : "flex flex-col gap-8"}>
+      {/* Coming back from a district re-shows it, which replays the fade-in. */}
+      <div className={inDistrict ? "hidden" : "vh-tab-in flex flex-col gap-8"}>
         {summary}
 
         <section>
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 pb-3 mb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
             <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Districts</h2>
-            <div className="flex flex-wrap items-center gap-1" role="tablist" aria-label="Color by">
-              {(Object.keys(MODE_LABEL) as ColorMode[]).filter((m) => (m !== "projection" || hasProjection) && (m !== "results" || electionYears.length > 0)).map((m) => (
-                <button key={m} type="button" role="tab" aria-selected={mode === m} onClick={() => setMode(m)} className="text-xs px-2.5 py-1 rounded-full" style={pill(mode === m)}>
-                  {MODE_LABEL[m]}
-                </button>
-              ))}
+            <div className="flex flex-wrap items-center gap-1">
+              <SlidingPills
+                label="Color by"
+                options={(Object.keys(MODE_LABEL) as ColorMode[]).filter((m) => (m !== "projection" || hasProjection) && (m !== "results" || electionYears.length > 0)).map((m) => ({ key: m, label: MODE_LABEL[m] }))}
+                value={mode}
+                onChange={setMode}
+              />
               {mode === "results" && electionYears.length > 0 && (
                 // Same 24px height as the pills beside it, so opening "Past results" doesn't nudge the page.
-                <span className="relative inline-flex">
+                <span className="vh-tab-in relative inline-flex">
                   <select
                     value={activeYear ?? ""}
                     onChange={(e) => setResultsYear(Number(e.target.value))}
@@ -556,7 +562,7 @@ export default function LegislativeAtlas({
                   type="button"
                   aria-pressed={filter === f}
                   onClick={() => setFilter(f)}
-                  className="text-xs px-2.5 py-1 rounded-full"
+                  className="ix-press text-xs px-2.5 py-1 rounded-full"
                   style={{ background: filter === f ? "var(--app-tab-bg)" : "transparent", color: "var(--app-text-muted)", border: "1px solid var(--app-border)", fontWeight: 600 }}
                 >
                   {label}
@@ -576,7 +582,8 @@ export default function LegislativeAtlas({
               {data ? `${shown} of ${districts.length} districts` : loading ? "Loading…" : failed ? "Data unavailable" : ""}
             </span>
           </div>
-          <div className="mb-4" style={{ minHeight: 22 }}>
+          {/* Keyed on the view, so the tally fades over when the colours change. */}
+          <div key={`${mode}-${mode === "results" ? activeYear : ""}-${results ? 1 : 0}`} className="vh-tab-in mb-4" style={{ minHeight: 22 }}>
             <DistrictCountBar districts={roster} pres2024={pres2024} results={results} viewMode={mapMode} projected={projectedSeats} />
           </div>
 
@@ -615,8 +622,8 @@ export default function LegislativeAtlas({
         </section>
 
         {/* Stacked: in the page's 4xl column the table needs the full width for its seven columns. */}
-        <div className="grid gap-8 grid-cols-1">
-          <section className="flex h-[25rem] min-w-0 flex-col md:h-[34rem]">
+        <div ref={lowerRef} data-vh={lowerVh} className="grid gap-8 grid-cols-1">
+          <section className="vh-in flex h-[25rem] min-w-0 flex-col md:h-[34rem]">
             <div className="mb-2 flex shrink-0 items-baseline justify-between gap-3 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
               <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
                 {mode === "results" ? `${activeYear} ${chamberLabel} Results` : `${chamberLabel} Districts`}
@@ -641,7 +648,7 @@ export default function LegislativeAtlas({
               onSelect={select}
             />
           </section>
-          <section className="flex h-[25rem] min-w-0 flex-col md:h-[34rem]">
+          <section className="vh-in flex h-[25rem] min-w-0 flex-col md:h-[34rem]" style={{ animationDelay: "120ms" }}>
             <div className="mb-2 shrink-0 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
               <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Chamber history</h2>
             </div>

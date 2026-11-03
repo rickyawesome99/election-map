@@ -38,7 +38,7 @@
 // Calibrated on a replay of the 2018–2024 Senate, governor and House results reported in a simulated
 // order (scripts/resultsNightBacktest.ts); see /analysis/internal-methodology/turnout#results-night.
 
-import type { CountyPrior, RacePrior, ResultsOffice } from "@/lib/resultsTypes";
+import { COUNTY_AREAS, type CountyArea, type CountyPrior, type RacePrior, type ResultsOffice } from "@/lib/resultsTypes";
 
 /** Prior sigma on the national swing (per unit of β), in points. Below the size of a poll miss (the
  *  forecast's σ_E 3) so the term stays nearer zero while few states are in: at 3 the band ran
@@ -57,25 +57,29 @@ export const SIGMA_COLLEGE = 0.5;
 export const SIGMA_LEAN = 0.5;
 /** Noise sigma of one fully-weighted county's swing around the shared terms. */
 export const SIGMA_FIT_COUNTY = 6;
-/** Counted votes at which a county carries full weight in the fit (smaller counties pro rata). */
-export const VOTES_SAT = 20_000;
+/** Counted votes at which a county carries full weight in the fit (smaller counties pro rata). 200k keeps
+ *  the weights close to the votes, so the shared terms read the vote-weighted swing race margins follow. */
+export const VOTES_SAT = 200_000;
 /** Prior sigma on a state's early-vote skew s, in points: how far the votes a county posts first run from
  *  its final count. */
 export const SIGMA_MIRAGE = 3;
-/** A county enters the fit once this share of its corrected expectation is counted. 0.5 and 0.8 score
- *  alike under the replay's usual early-vote skew; with the skew doubled (a 2020-sized mail mirage)
- *  0.5 reads the national swing too Democratic and 0.8 holds. */
-export const MIN_COMPLETE = 0.8;
+/** Counted votes at which a county carries full weight in the early-vote regression. Kept at 20k when
+ *  the shared terms went to VOTES_SAT 200k: at 200k the real 2025 VA/NJ replay lost (MAE 1.6 → 1.8). */
+export const MIRAGE_VOTES_SAT = 20_000;
+/** A county enters the fit once this share of its corrected expectation is counted. With VOTES_SAT
+ *  200k, 0.35 scores best or tied on the replay at every early-vote skew (none, usual, doubled) and on
+ *  both simulated nights; the early-vote term reads the part-counted counties' skew out. */
+export const MIN_COMPLETE = 0.35;
 
 export type NightParams = {
   sigmaNational: number; sigmaState: number; sigmaOffice: number;
   sigmaNonwhite: number; sigmaCollege: number; sigmaLean: number;
-  sigmaFitCounty: number; votesSat: number; minComplete: number; sigmaMirage: number;
+  sigmaFitCounty: number; votesSat: number; minComplete: number; sigmaMirage: number; mirageVotesSat: number;
 };
 export const DEFAULT_NIGHT_PARAMS: NightParams = {
   sigmaNational: SIGMA_NATIONAL, sigmaState: SIGMA_STATE, sigmaOffice: SIGMA_OFFICE,
   sigmaNonwhite: SIGMA_NONWHITE, sigmaCollege: SIGMA_COLLEGE, sigmaLean: SIGMA_LEAN,
-  sigmaFitCounty: SIGMA_FIT_COUNTY, votesSat: VOTES_SAT, minComplete: MIN_COMPLETE, sigmaMirage: SIGMA_MIRAGE,
+  sigmaFitCounty: SIGMA_FIT_COUNTY, votesSat: VOTES_SAT, minComplete: MIN_COMPLETE, sigmaMirage: SIGMA_MIRAGE, mirageVotesSat: MIRAGE_VOTES_SAT,
 };
 
 /** One county's count so far against its prior: an observation for the fit (the shared terms read it
@@ -199,7 +203,7 @@ export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT
   const byRace = new Map<string, { state: string; rows: { x: number; e: number; w: number }[] }>();
   for (const o of obs) {
     if (o.votes <= 0) continue;
-    const w = Math.min(1, o.votes / P.votesSat);
+    const w = Math.min(1, o.votes / P.mirageVotesSat);
     const { office, state } = colOf(o);
     const pred = o.beta * theta[0] + theta[office] + (state >= 0 ? theta[state] : 0) + o.county.nonwhite * theta[4] + o.county.college * theta[5] + o.county.lean * theta[6];
     const g = byRace.get(o.race) ?? { state: o.state, rows: [] };
@@ -274,4 +278,27 @@ function invertSpd(A: number[][]): number[][] {
     for (let i = n - 1; i >= 0; i--) { let s = y[i]; for (let m = i + 1; m < n; m++) s -= L[m][i] * inv[m][c]; inv[i][c] = s / L[i][i]; }
   }
   return inv;
+}
+
+/** One kind of county's read, over its counties at least MIN_COMPLETE counted: the vote-weighted
+ *  mean of (counted margin − the county's projected margin), R-positive, the same baseline as the
+ *  fit, and how many distinct counties are in. value null until one is. */
+export type AreaSwing = { value: number | null; counties: number; votes: number };
+
+/** The Results panel's urban / suburban / rural read: a plain average over every contested race,
+ *  not part of the fit. A county in two races counts in each, by its votes in each. */
+export function areaSwings(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT_PARAMS): Record<CountyArea, AreaSwing> {
+  const acc = Object.fromEntries(COUNTY_AREAS.map((a) => [a, { sum: 0, votes: 0, fips: new Set<string>() }])) as Record<CountyArea, { sum: number; votes: number; fips: Set<string> }>;
+  for (const o of obs) {
+    const c = o.county;
+    if (!c.area || o.f < P.minComplete || o.votes <= 0) continue;
+    const a = acc[c.area];
+    a.sum += o.votes * o.swing;
+    a.votes += o.votes;
+    a.fips.add(c.fips);
+  }
+  return Object.fromEntries(COUNTY_AREAS.map((a) => {
+    const r = acc[a];
+    return [a, { value: r.votes > 0 ? r.sum / r.votes : null, counties: r.fips.size, votes: r.votes }];
+  })) as Record<CountyArea, AreaSwing>;
 }

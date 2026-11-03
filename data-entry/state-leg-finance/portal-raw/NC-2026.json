@@ -1,0 +1,2718 @@
+{
+ "state": "NC",
+ "cycle": 2026,
+ "source": "North Carolina State Board of Elections transactions (contributions)",
+ "fetched": "2026-11-03",
+ "dataThrough": "12/31/2026",
+ "candidates": [
+  {
+   "name": "PRATHER FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-T0F7AN-C-001",
+   "contributions": 553471.25
+  },
+  {
+   "name": "CHAUDHURI FOR NEW NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4P6QA8-C-001",
+   "contributions": 841626.3
+  },
+  {
+   "name": "BETH HELFRICH FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-11JW28-C-001",
+   "contributions": 378518.22
+  },
+  {
+   "name": "GARRETT FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4OSHHP-C-002",
+   "contributions": 212914.97
+  },
+  {
+   "name": "FRIENDS FOR SYDNEY BATCH",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-T2T8UV-C-001",
+   "contributions": 1014210.45
+  },
+  {
+   "name": "JULIE MAYFIELD FOR NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-Z7FZ16-C-001",
+   "contributions": 295810.51
+  },
+  {
+   "name": "WOODSON BRADLEY FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-8K2AAJ-C-001",
+   "contributions": 437848.14
+  },
+  {
+   "name": "PITTMAN FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-EQ611D-C-001",
+   "contributions": 820080.07
+  },
+  {
+   "name": "JOE JOHN NC HOUSE 40 COMMITTEE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-C2227N-C-002",
+   "contributions": 76.25
+  },
+  {
+   "name": "LOFTON FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-5UWO1G-C-001",
+   "contributions": 42684.83
+  },
+  {
+   "name": "COMMITTEE TO ELECT MARY BELK",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-2M0G6C-C-001",
+   "contributions": 20614.85
+  },
+  {
+   "name": "GALE ADCOCK FOR NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4T7NE4-C-001",
+   "contributions": 184502.63
+  },
+  {
+   "name": "COMM TO ELECT JULIE VON HAEFEN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-TL1LLR-C-001",
+   "contributions": 46467.1
+  },
+  {
+   "name": "SARAH FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-6L5S7F-C-002",
+   "contributions": 62511.2
+  },
+  {
+   "name": "CYNTHIA FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-T0RNDQ-C-001",
+   "contributions": 288071.77
+  },
+  {
+   "name": "COMMITTEE TO ELECT GRAIG MEYER",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-760XN4-C-001",
+   "contributions": 101572.26
+  },
+  {
+   "name": "COMMITTEE TO ELECT AISHA DEW",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-GX8155-C-001",
+   "contributions": 19859.14
+  },
+  {
+   "name": "COMMITTEE TO ELECT JILL BROWN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-9FJV0T-C-001",
+   "contributions": 27.07
+  },
+  {
+   "name": "COMMITTEE TO ELECT RODNEY D. PIERCE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-I5073S-C-001",
+   "contributions": 315252.12
+  },
+  {
+   "name": "LISA GRAFSTEIN CAMPAIGN",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-DAFI48-C-001",
+   "contributions": 403837.52
+  },
+  {
+   "name": "SOPHIA FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-W96OYE-C-001",
+   "contributions": 106449.44
+  },
+  {
+   "name": "CITIZENS FOR DESTIN HALL",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-AD855K-C-001",
+   "contributions": 2558354.42
+  },
+  {
+   "name": "TERENCE EVERITT FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-5404W1-C-002",
+   "contributions": 153816.92
+  },
+  {
+   "name": "ZACK HAWKINS FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-4YB7FN-C-001",
+   "contributions": 50438.0
+  },
+  {
+   "name": "ROBIN WINTRINGHAM FOR DISTRICT 63",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-HD4T01-C-001",
+   "contributions": 5.58
+  },
+  {
+   "name": "COMM TO ELECT ROBERT T REIVES II",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-49JCP7-C-001",
+   "contributions": 672150.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT AMY GALEY",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-5DDH35-C-001",
+   "contributions": 416055.31
+  },
+  {
+   "name": "THE COMMITTEE TO ELECT JOSHUA NIDAY",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-LB8A60-C-002",
+   "contributions": 30.0
+  },
+  {
+   "name": "FRIENDS OF JORDAN LOPEZ",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-7082TZ-C-001",
+   "contributions": 39294.78
+  },
+  {
+   "name": "THE COMMITTEE TO ELECT LEVON BARNES",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-YQ2GM4-C-001",
+   "contributions": 223404.02
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHARLES DUDLEY",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-09Y01L-C-002",
+   "contributions": 29069.53
+  },
+  {
+   "name": "NATALIE FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-GL3606-C-001",
+   "contributions": 81457.24
+  },
+  {
+   "name": "MIKE SCHIETZELT FOR NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Z3667Z-C-001",
+   "contributions": 831106.44
+  },
+  {
+   "name": "DONNIE LOFTIS FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-ZPSP35-C-003",
+   "contributions": 57597.24
+  },
+  {
+   "name": "PAUL LOWE FOR NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-R6XPTX-C-001",
+   "contributions": 148502.99
+  },
+  {
+   "name": "COMMITTEE TO ELECT KANIKA BROWN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-9O272S-C-001",
+   "contributions": 5025.0
+  },
+  {
+   "name": "EDDINS FOR NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-BA1WGM-C-001",
+   "contributions": 47859.94
+  },
+  {
+   "name": "AMBER BAKER CAMPAIGN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-1723HQ-C-001",
+   "contributions": 26738.4
+  },
+  {
+   "name": "COMMITTEE TO ELECT LAURA BUDD",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-V6WP14-C-001",
+   "contributions": 90483.32
+  },
+  {
+   "name": "ALLEN BUANSI FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-7158T8-C-001",
+   "contributions": 182557.92
+  },
+  {
+   "name": "COMM TO ELECT GARLAND PIERCE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-Z57OOQ-C-001",
+   "contributions": 233659.53
+  },
+  {
+   "name": "COMMITTEE TO ELECT BRYAN COHN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-NBU2YS-C-001",
+   "contributions": 5957.69
+  },
+  {
+   "name": "FRIENDS TO ELECT BOB BRINSON",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-I317Z7-C-001",
+   "contributions": 232017.43
+  },
+  {
+   "name": "COMMITTEE TO ELECT VERNETTA ALSTON",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-A22207-C-001",
+   "contributions": 144449.54
+  },
+  {
+   "name": "REECE PYRTLE FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-H1WI64-C-001",
+   "contributions": 163694.94
+  },
+  {
+   "name": "TIM LONGEST FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-P80279-C-001",
+   "contributions": 76455.11
+  },
+  {
+   "name": "TODD JOHNSON FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-7K54Z6-C-001",
+   "contributions": 474452.73
+  },
+  {
+   "name": "COMM TO ELECT FRANK ILER",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-F571F4-C-001",
+   "contributions": 75890.73
+  },
+  {
+   "name": "COMMITTEE TO ELECT RAY PICKETT",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Y0293T-C-001",
+   "contributions": 97592.14
+  },
+  {
+   "name": "COMMITTEE TO ELECT MATTHEW WINSLOW",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-P77905-C-001",
+   "contributions": 51320.0
+  },
+  {
+   "name": "ROBERSON FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-5269OF-C-001",
+   "contributions": 58050.0
+  },
+  {
+   "name": "NORTH CAROLINIANS FOR BEN MOSS",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-QX1K4Q-C-001",
+   "contributions": 88496.0
+  },
+  {
+   "name": "ELECT DEB BUTLER",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-A13TZ9-C-002",
+   "contributions": 60774.65
+  },
+  {
+   "name": "NEAL JACKSON FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-6CP16N-C-001",
+   "contributions": 537000.01
+  },
+  {
+   "name": "JOYCE WADDELL SENATE 40 CAMPAIGN",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-P74357-C-001",
+   "contributions": 20408.0
+  },
+  {
+   "name": "ELECT BRIAN ECHEVARRIA",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-657J73-C-001",
+   "contributions": 732389.64
+  },
+  {
+   "name": "COMMITTEE TO ELECT ERIN PARE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-6386JQ-C-001",
+   "contributions": 810384.59
+  },
+  {
+   "name": "MONIKA JOHNSON-HOSTLER FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-8Z74KJ-C-001",
+   "contributions": 29057.59
+  },
+  {
+   "name": "ELECT KIDWELL COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-MDDHT0-C-001",
+   "contributions": 128059.41
+  },
+  {
+   "name": "PHIL BERGER COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-C0854N-C-001",
+   "contributions": 3105169.29
+  },
+  {
+   "name": "KANDIE SMITH FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4H1RS4-C-002",
+   "contributions": 73125.3
+  },
+  {
+   "name": "COMMITTEE TO ELECT FRANCES VINELL JACKSON",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-34377M-C-001",
+   "contributions": 47233.49
+  },
+  {
+   "name": "COMMITTEE TO ELECT CODY HUNEYCUTT",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-UF5703-C-001",
+   "contributions": 272629.72
+  },
+  {
+   "name": "COMMITTEE TO ELECT FRANK SOSSAMON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-6ROBWN-C-001",
+   "contributions": 130224.43
+  },
+  {
+   "name": "ELECT ERIC AGER",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-CTS7CR-C-001",
+   "contributions": 40905.26
+  },
+  {
+   "name": "TURNER FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-O63AKM-C-002",
+   "contributions": 42333.0
+  },
+  {
+   "name": "HOPKINS FOR HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-V416H0-C-001",
+   "contributions": 877860.02
+  },
+  {
+   "name": "ELECT MICHELE MORROW COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-8J6CC8-C-002",
+   "contributions": 525.0
+  },
+  {
+   "name": "MARK PLESS FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-0R83V2-C-001",
+   "contributions": 26021.1
+  },
+  {
+   "name": "VICKI HARRY COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-BHHY92-C-001",
+   "contributions": 25932.55
+  },
+  {
+   "name": "WARREN DANIEL FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-53C1KP-C-001",
+   "contributions": 103446.37
+  },
+  {
+   "name": "SAM PAGE 4 NC",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-7H4O52-C-001",
+   "contributions": 126919.47
+  },
+  {
+   "name": "CALEB FOR NORTH CAROLINA",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4FT2X9-C-001",
+   "contributions": 13723.49
+  },
+  {
+   "name": "MARCIA MOREY CAMPAIGN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-9PGM8Z-C-001",
+   "contributions": 54088.33
+  },
+  {
+   "name": "CHERYL4NC",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-O8KNSQ-C-001",
+   "contributions": 27944.66
+  },
+  {
+   "name": "VOTE RENEE / RENEE PRICE CAMPAIGN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-MUINAE-C-001",
+   "contributions": 39522.24
+  },
+  {
+   "name": "ELECT BARBARA KIRBY",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-E18Z2B-C-001",
+   "contributions": 150.0
+  },
+  {
+   "name": "RUBIN FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-ZR28X7-C-001",
+   "contributions": 104291.82
+  },
+  {
+   "name": "BRENT JACKSON FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-C0808N-C-002",
+   "contributions": 1209895.83
+  },
+  {
+   "name": "JARROD LOWERY COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-O06Y55-C-001",
+   "contributions": 22330.01
+  },
+  {
+   "name": "MOHAMMED FOR NORTH CAROLINA",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-797923-C-001",
+   "contributions": 81093.76
+  },
+  {
+   "name": "EDDIE SETTLE FOR SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-J2N7C5-C-001",
+   "contributions": 238832.47
+  },
+  {
+   "name": "COMM TO RE-ELECT BECKY CARNEY",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-C1192N-C-001",
+   "contributions": 23087.0
+  },
+  {
+   "name": "RALPH HISE FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-U308KT-C-001",
+   "contributions": 424922.25
+  },
+  {
+   "name": "COMMITTEE TO ELECT MCNEELY FOR N.C. HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-B4TA2C-C-001",
+   "contributions": 207951.0
+  },
+  {
+   "name": "JOHN BELL COMM",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-8S285O-C-001",
+   "contributions": 655676.32
+  },
+  {
+   "name": "KATIE FOR NC HOUSE 13",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-34DN27-C-001",
+   "contributions": 24.64
+  },
+  {
+   "name": "NORTH FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-TQ6UFZ-C-001",
+   "contributions": 712048.39
+  },
+  {
+   "name": "PAUL SCOTT FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-A52Z9S-C-001",
+   "contributions": 62908.18
+  },
+  {
+   "name": "FRIENDS OF TED ALEXANDER",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-7C019H-C-001",
+   "contributions": 182801.5
+  },
+  {
+   "name": "ALLEN CHESSER FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-5YRCX3-C-001",
+   "contributions": 451975.26
+  },
+  {
+   "name": "JULIA GREENFIELD FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-U5V3E8-C-001",
+   "contributions": 24698.0
+  },
+  {
+   "name": "TERRY BROWN FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-Q8U041-C-001",
+   "contributions": 69605.13
+  },
+  {
+   "name": "ABE JONES FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-C2342N-C-004",
+   "contributions": 1655.0
+  },
+  {
+   "name": "MICHAEL H WRAY FOR STATE HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-IVQW3F-C-001",
+   "contributions": 62610.21
+  },
+  {
+   "name": "CHARLES SMITH FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-9W3BSG-C-001",
+   "contributions": 13283.51
+  },
+  {
+   "name": "HEATHER RHYNE COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-2U17TK-C-001",
+   "contributions": 92862.39
+  },
+  {
+   "name": "COMMITTEE TO ELECT JAKE JOHNSON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-AJ7RS5-C-001",
+   "contributions": 344086.16
+  },
+  {
+   "name": "KEN MCCOOL FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-GC73SG-C-001",
+   "contributions": 685330.4
+  },
+  {
+   "name": "STACIE MCGINN FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-06ZSK2-C-001",
+   "contributions": 448511.86
+  },
+  {
+   "name": "COMMITTEE FOR DR TIM REEDER",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-M08894-C-001",
+   "contributions": 683540.3
+  },
+  {
+   "name": "TRACY CLARK FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-M7O0Z0-C-001",
+   "contributions": 83265.0
+  },
+  {
+   "name": "RIDDELL FOR NC HOUSE 64",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-VD0PHY-C-001",
+   "contributions": 415577.45
+  },
+  {
+   "name": "ELECT WYATT GABLE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-NBHK40-C-001",
+   "contributions": 64050.73
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHARLES W. MILLER NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-SFBU5H-C-001",
+   "contributions": 259618.99
+  },
+  {
+   "name": "COMMITTEE TO ELECT GRANT CAMPBELL",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-R9L1B4-C-001",
+   "contributions": 331903.36
+  },
+  {
+   "name": "CHRIS HUMPHREY COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-4KGA71-C-001",
+   "contributions": 135217.9
+  },
+  {
+   "name": "HARRELL FOR HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-V59ZZR-C-001",
+   "contributions": 12.0
+  },
+  {
+   "name": "COMM TO ELECT VICKIE SAWYER",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-9958DP-C-001",
+   "contributions": 150751.0
+  },
+  {
+   "name": "BOBBY HANIG COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-6Y2D38-C-001",
+   "contributions": 575.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT DIAMOND STATON-WILLIAMS",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-AR4PU0-C-001",
+   "contributions": 50.0
+  },
+  {
+   "name": "CITIZENS FOR DAN BLUE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-C1278N-C-002",
+   "contributions": 167795.55
+  },
+  {
+   "name": "DIANE WHEATLEY FOR NC HOUSE 43",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-V11XUW-C-002",
+   "contributions": 106136.17
+  },
+  {
+   "name": "CITIZENS TO ELECT JAMES D. GAILLIARD (CTEJDG)",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-TW10K4-C-002",
+   "contributions": 1640180.53
+  },
+  {
+   "name": "FRIENDS OF CAROLINE EASON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-1P427H-C-001",
+   "contributions": 77018.3
+  },
+  {
+   "name": "MARIA FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-513CK9-C-001",
+   "contributions": 28875.29
+  },
+  {
+   "name": "COMM TO ELECT BENTON SAWREY",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-N4ETL0-C-001",
+   "contributions": 691600.8
+  },
+  {
+   "name": "COMMITTEE TO ELECT DEREK WARRINER",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-25X885-C-001",
+   "contributions": 90426.02
+  },
+  {
+   "name": "FRIENDS OF LYNNE RUSSO",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-96W32R-C-001",
+   "contributions": 143378.06
+  },
+  {
+   "name": "COMMITTEE TO ELECT CAROLYN LOGAN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-570HN4-C-001",
+   "contributions": 12168.36
+  },
+  {
+   "name": "CARLA CUNNINGHAM CAMPAIGN COMM",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-P363NE-C-001",
+   "contributions": 111040.68
+  },
+  {
+   "name": "COMM TO ELECT CARL FORD",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-C2051N-C-002",
+   "contributions": 71336.78
+  },
+  {
+   "name": "MORGAN 4 NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-1A8O86-C-001",
+   "contributions": 19.07
+  },
+  {
+   "name": "ANTHONY PENLAND COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C59I2V-C-001",
+   "contributions": 130765.35
+  },
+  {
+   "name": "MORRIS FOR HARNETT",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-X6M1B9-C-001",
+   "contributions": 59463.13
+  },
+  {
+   "name": "MATT BORJA FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-I97J10-C-001",
+   "contributions": 1640.0
+  },
+  {
+   "name": "FRIENDS OF KELLY HASTINGS",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-L82M42-C-001",
+   "contributions": 38775.0
+  },
+  {
+   "name": "WALLIN FOR WNC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-N3QRUI-C-001",
+   "contributions": 81577.89
+  },
+  {
+   "name": "ELECT AMANDA COOK",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3GAEKQ-C-001",
+   "contributions": 76056.08
+  },
+  {
+   "name": "B RAY JEFFERS FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-U0GK50-C-002",
+   "contributions": 19320.0
+  },
+  {
+   "name": "DAVE CRAVEN FOR NC",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-MLXHK0-C-001",
+   "contributions": 1488423.09
+  },
+  {
+   "name": "DUKES 4 NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-C639D3-C-001",
+   "contributions": 300.0
+  },
+  {
+   "name": "JAIME FOR NC",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-J7T43L-C-001",
+   "contributions": 58513.88
+  },
+  {
+   "name": "WINN FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-88T7F5-C-001",
+   "contributions": 174009.68
+  },
+  {
+   "name": "JOHN C SPRUILL ELECTION COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-F1NUS0-C-001",
+   "contributions": 40278.04
+  },
+  {
+   "name": "MCINNIS FOR STATE SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-K32YZ4-C-001",
+   "contributions": 691262.52
+  },
+  {
+   "name": "COMMITTEE TO ELECT GLORISTINE BROWN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-7M68SA-C-001",
+   "contributions": 27378.15
+  },
+  {
+   "name": "POWELL FOR NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-472C54-C-001",
+   "contributions": 21810.71
+  },
+  {
+   "name": "WILEY FOR WAKE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-L729EQ-C-001",
+   "contributions": 632420.53
+  },
+  {
+   "name": "DAVID WILLIS FOR NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-W7S330-C-001",
+   "contributions": 193879.76
+  },
+  {
+   "name": "BLAKE BOYKIN FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-F1E8HI-C-001",
+   "contributions": 191895.98
+  },
+  {
+   "name": "LAZZARA FOR NC SENATE COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-PK98D1-C-001",
+   "contributions": 372759.48
+  },
+  {
+   "name": "FRIENDS OF REV. DR. RODNEY SADLER",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-E17860-C-001",
+   "contributions": 287740.07
+  },
+  {
+   "name": "LARRY C STRICKLAND CAMPAIGN COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-0H45PB-C-001",
+   "contributions": 475769.77
+  },
+  {
+   "name": "HARRIS FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-UQT33B-C-001",
+   "contributions": 70984.49
+  },
+  {
+   "name": "FRIENDS OF CHRIS STOCK",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-00Q0X1-C-001",
+   "contributions": 537678.18
+  },
+  {
+   "name": "COMMITTEE TO ELECT MATT WOOD",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-56P9WG-C-001",
+   "contributions": 230.0
+  },
+  {
+   "name": "VERMANNO BOWMAN FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-SUSKLW-C-001",
+   "contributions": 8656.0
+  },
+  {
+   "name": "PENNY FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-8E325Y-C-001",
+   "contributions": 82681.73
+  },
+  {
+   "name": "FRIENDS TO ELECT JOHN TORBETT",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-L67644-C-001",
+   "contributions": 45726.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT BRIAN BIGGS",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-0Y5W63-C-001",
+   "contributions": 242988.2
+  },
+  {
+   "name": "THE OVERCASH COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-9Z8A21-C-001",
+   "contributions": 581064.12
+  },
+  {
+   "name": "MARY INSPRUCKER COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-GDK35K-C-001",
+   "contributions": 33882.32
+  },
+  {
+   "name": "COMMITTEE TO ELECT HEIDI SINSLEY",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-7ZU652-C-001",
+   "contributions": 4939.44
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHRIS MEASMER",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-48L2W4-C-001",
+   "contributions": 252820.03
+  },
+  {
+   "name": "KYLE HALL COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-08H8K5-C-001",
+   "contributions": 481444.88
+  },
+  {
+   "name": "MCADOO FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-7T51NG-C-001",
+   "contributions": 16355.6
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHRIS LUMSDEN",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-51I1A8-C-001",
+   "contributions": 1150.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT JEFF ZENGER TO NC STATE HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-MXXMIM-C-001",
+   "contributions": 420825.54
+  },
+  {
+   "name": "COMMITTEE TO ELECT BRENDEN JONES",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-9648CG-C-001",
+   "contributions": 1224201.0
+  },
+  {
+   "name": "APRIL COOK FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-7J3OOC-C-001",
+   "contributions": 842974.57
+  },
+  {
+   "name": "GAVIN MCGAUGHEY FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-M59Y12-C-001",
+   "contributions": 5260.86
+  },
+  {
+   "name": "TMONKS4NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3EV0I3-C-001",
+   "contributions": 127521.56
+  },
+  {
+   "name": "DEANDREA SALVADOR FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-7VEH1E-C-001",
+   "contributions": 12663.91
+  },
+  {
+   "name": "COMMITTEE TO ELECT YA LIU",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-DGDQBR-C-001",
+   "contributions": 80341.0
+  },
+  {
+   "name": "BRANSON FOR NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-19IQ69-C-001",
+   "contributions": 481127.97
+  },
+  {
+   "name": "TYSON FOR NC HOUSE 2",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Q3UYNB-C-001",
+   "contributions": 133498.52
+  },
+  {
+   "name": "COMMITTEE TO ELECT LISA BARNES",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-T2579U-C-001",
+   "contributions": 3244154.28
+  },
+  {
+   "name": "FRIENDS OF KEVIN CORBIN",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-NQB308-C-001",
+   "contributions": 86292.34
+  },
+  {
+   "name": "ELECT CLANCY BAUCOM",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-EVCCM1-C-001",
+   "contributions": 79970.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT JHERI HARDAWAY",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-8XU84B-C-001",
+   "contributions": 5153.08
+  },
+  {
+   "name": "CALEB BROWN FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-BY70WB-C-001",
+   "contributions": 21502.78
+  },
+  {
+   "name": "KIRK LOWERY COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-H7CZQM-C-001",
+   "contributions": 17965.69
+  },
+  {
+   "name": "GADSON FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-JV516O-C-001",
+   "contributions": 58319.12
+  },
+  {
+   "name": "COMMITTEE TO ELECT APRIL MONTGOMERY",
+   "chamber": "house",
+   "party": "UNA",
+   "committee": "STA-RM6GWT-C-001",
+   "contributions": 79349.25
+  },
+  {
+   "name": "SHELLY HEADEN FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-13M688-C-001",
+   "contributions": 107531.02
+  },
+  {
+   "name": "JESS RIVERA FOR NORTH CAROLINA",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-H3T8X5-C-001",
+   "contributions": 325693.96
+  },
+  {
+   "name": "PHIL SHEPARD NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-U5EZTD-C-001",
+   "contributions": 23551.0
+  },
+  {
+   "name": "PAUL BARKER FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-PY4D6N-C-001",
+   "contributions": 9296.69
+  },
+  {
+   "name": "COMMITTEE TO ELECT ANGIE MCMICHAEL",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-Q8FUH0-C-001",
+   "contributions": 25746.33
+  },
+  {
+   "name": "JOHN RHODES NC HOUSE COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-2VYHCV-C-001",
+   "contributions": 17760.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT COLE JOHNSON",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-WF1M0O-C-001",
+   "contributions": 8270.74
+  },
+  {
+   "name": "COVINGTON FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-KE92HD-C-001",
+   "contributions": 43484.3
+  },
+  {
+   "name": "CLAIRE KEMPNER FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-B8A6WA-C-001",
+   "contributions": 170869.99
+  },
+  {
+   "name": "KEVIN CRUTCHFIELD FOR NC",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-5FZOX7-C-001",
+   "contributions": 682974.79
+  },
+  {
+   "name": "TIM FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-5L9KC2-C-001",
+   "contributions": 456190.62
+  },
+  {
+   "name": "MARK BURROWS FOR NC HOUSE 119",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-966880-C-002",
+   "contributions": 264416.61
+  },
+  {
+   "name": "COMMITTEE TO ELECT JOHN KIRKPATRICK",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3PR152-C-001",
+   "contributions": 11724.78
+  },
+  {
+   "name": "MIKE HAGER 4 NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-P01H5A-C-003",
+   "contributions": 72736.62
+  },
+  {
+   "name": "COMMITTEE TO ELECT MIKE CLAMPITT",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-506364-C-001",
+   "contributions": 6050.0
+  },
+  {
+   "name": "FRIENDS OF L'BERTRICE SOLOMON",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-5CVYD5-C-001",
+   "contributions": 42791.78
+  },
+  {
+   "name": "TILLETT FOR SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-C2298N-C-005",
+   "contributions": 187426.86
+  },
+  {
+   "name": "WHITNEY OLIVE FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-2AFFFH-C-001",
+   "contributions": 16715.54
+  },
+  {
+   "name": "STEVELUKING4NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-D2LNG4-C-001",
+   "contributions": 122595.29
+  },
+  {
+   "name": "LANE FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-342MQ6-C-001",
+   "contributions": 70021.07
+  },
+  {
+   "name": "JESSICA BICHLER FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-YF6A68-C-001",
+   "contributions": 1027361.97
+  },
+  {
+   "name": "COMMITTEE TO ELECT AMOS QUICK",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-90P9X2-C-001",
+   "contributions": 5366.0
+  },
+  {
+   "name": "SCOTT NASIFF FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-T1HG26-C-001",
+   "contributions": 69813.41
+  },
+  {
+   "name": "COMMITTEE TO ELECT JOE PARFITT",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-4M7Z32-C-001",
+   "contributions": 5744.48
+  },
+  {
+   "name": "BRITTANY NEWTON FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-E1V050-C-001",
+   "contributions": 171593.87
+  },
+  {
+   "name": "THE COMMITTEE TO ELECT VELERIA M LEVY",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-HWJII1-C-001",
+   "contributions": 26622.07
+  },
+  {
+   "name": "ARMSTRONG FOR HD79",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-6CW31R-C-001",
+   "contributions": 126677.87
+  },
+  {
+   "name": "ELECT MARK SPEED",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-QV419N-C-002",
+   "contributions": 200634.27
+  },
+  {
+   "name": "TONYSPEARS4NCHOUSE6",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-66F54A-C-001",
+   "contributions": 50.0
+  },
+  {
+   "name": "MCRAE FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-0N9KIH-C-001",
+   "contributions": 70854.14
+  },
+  {
+   "name": "COMMITTEE TO ELECT LORENZA WILKINS",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-03W9U6-C-001",
+   "contributions": 242648.44
+  },
+  {
+   "name": "FRIENDS OF VAL APPLEWHITE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-18UPFY-C-002",
+   "contributions": 27911.33
+  },
+  {
+   "name": "COMMITTEE TO ELECT DEDREANA FREEMAN",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4V9KZM-C-001",
+   "contributions": 16597.29
+  },
+  {
+   "name": "CAMPAIGN FUND OF KELLY VAN HORN",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Z2MV5K-C-001",
+   "contributions": 396.71
+  },
+  {
+   "name": "JEN WILES FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-M630VJ-C-001",
+   "contributions": 46050.05
+  },
+  {
+   "name": "COMMITTEE TO ELECT DANE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-50300F-C-001",
+   "contributions": 327198.09
+  },
+  {
+   "name": "JASON MOORE FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-SRI362-C-001",
+   "contributions": 11277.77
+  },
+  {
+   "name": "TOM DOWNING FOR NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-GE4073-C-001",
+   "contributions": 12526.48
+  },
+  {
+   "name": "SUZANNE GAVENUS FOR NC HOUSE 85",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-U4778R-C-001",
+   "contributions": 29446.15
+  },
+  {
+   "name": "IRIS BENDER FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-4J92DH-C-001",
+   "contributions": 16166.99
+  },
+  {
+   "name": "SOUTHEY 4 SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-3G2C7I-C-001",
+   "contributions": 81991.24
+  },
+  {
+   "name": "SETH WOODALL FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-W4TNVT-C-001",
+   "contributions": 64710.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT MARGIE RIEDEL HOUSE 26",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Z0VRZD-C-001",
+   "contributions": 12541.23
+  },
+  {
+   "name": "RAYGAN FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-708D0L-C-001",
+   "contributions": 23966.26
+  },
+  {
+   "name": "FRIENDS OF SHIRLEY JOHNSON",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-GB8SW1-C-001",
+   "contributions": 20139.74
+  },
+  {
+   "name": "COMMITTEE TO ELECT GARY WEART",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-6460KG-C-001",
+   "contributions": 15329.15
+  },
+  {
+   "name": "ELECT ED GOODWIN",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-114XX5-C-001",
+   "contributions": 25635.0
+  },
+  {
+   "name": "GREG MCBRYDE FOR HOUSE NC 97",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-14H296-C-001",
+   "contributions": 7685.55
+  },
+  {
+   "name": "VOTE PARK",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-60450H-C-001",
+   "contributions": 42605.96
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHRIS BISHOPP",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-4030X0-C-001",
+   "contributions": 220713.72
+  },
+  {
+   "name": "COMMITTEE TO ELECT SHERRY WOMACK",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-QEL9J1-C-001",
+   "contributions": 34017.83
+  },
+  {
+   "name": "HARRIS FOR NC 16",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-GB34O0-C-001",
+   "contributions": 10968.7
+  },
+  {
+   "name": "COMMITTEE TO ELECT ANDY BOWLINE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-CSD629-C-001",
+   "contributions": 14240.45
+  },
+  {
+   "name": "PATRICIA SMITH FOR HOUSE 23",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3J4401-C-001",
+   "contributions": 17111.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT RALPH CLEMENTS",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3VLI33-C-001",
+   "contributions": 11525.0
+  },
+  {
+   "name": "CHARLES TAYLOR FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-3CS0Y1-C-001",
+   "contributions": 163275.51
+  },
+  {
+   "name": "LARRY W POTTS - NC HOUSE OF REPRESENTATIVES",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C1022N-C-002",
+   "contributions": 183250.0
+  },
+  {
+   "name": "BILL MCCASKILL FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-489NN0-C-003",
+   "contributions": 2567.02
+  },
+  {
+   "name": "COMMITTEE TO ELECT WELLIE JACKSON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-MC7X19-C-001",
+   "contributions": 350384.51
+  },
+  {
+   "name": "WILLIAM W. BARBOUR - NO 2026 ORG PAPERWORK RECEIVED",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-ZSEDF5-C-001",
+   "contributions": 2203.01
+  },
+  {
+   "name": "MARCELLA FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C7593C-C-001",
+   "contributions": 5235.59
+  },
+  {
+   "name": "ANDY WARREN FOR HOUSE OF REPRESENTATIVES",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-CGP8D0-C-001",
+   "contributions": 2150.59
+  },
+  {
+   "name": "COMMITTEE TO ELECT JONATHAN ALMOND",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-1CCDMB-C-001",
+   "contributions": 576517.88
+  },
+  {
+   "name": "TANYA WHITE ANDERSON 4 NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-3S14T1-C-002",
+   "contributions": 8097.22
+  },
+  {
+   "name": "MOVING NC FORWARD WITH ROD POWELL",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-E87ZKN-C-001",
+   "contributions": 10021.51
+  },
+  {
+   "name": "BANKERT FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-3S8EX5-C-001",
+   "contributions": 2834.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT CARVER FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-DJ5LKO-C-001",
+   "contributions": 41672.21
+  },
+  {
+   "name": "COLLIN FOR NORTH CAROLINA",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-5X07AK-C-001",
+   "contributions": 2170.51
+  },
+  {
+   "name": "RAY CRAIG - COMMON SENSE LEADERSHIP",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-DCU37G-C-001",
+   "contributions": 14648.41
+  },
+  {
+   "name": "COMMITTEE TO ELECT MICHAEL KUBINIEC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-0KTW2X-C-001",
+   "contributions": 8401.29
+  },
+  {
+   "name": "COMMITTEE TO ELECT RICHARD T MILLER",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-7Z2U39-C-001",
+   "contributions": 4050.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT CORY THORNTON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-D157WY-C-001",
+   "contributions": 578069.84
+  },
+  {
+   "name": "LEGRAND4NCSENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-D8E959-C-001",
+   "contributions": 15080.75
+  },
+  {
+   "name": "CITIZENS TO ELECT CATINA HAMM",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-XMI21L-C-001",
+   "contributions": 6352.22
+  },
+  {
+   "name": "FRIENDS OF MARY LUCAS FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-H7O1Z5-C-001",
+   "contributions": 9780.27
+  },
+  {
+   "name": "COMM TO ELECT GLADYS A ROBINSON",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-NQ6M2H-C-001",
+   "contributions": 89500.0
+  },
+  {
+   "name": "DONNA WHITE FOR NC HOUSE 26",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-L5AG9J-C-001",
+   "contributions": 157604.1
+  },
+  {
+   "name": "STEVE RUTHERFORD FOR NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-4W51T1-C-001",
+   "contributions": 6868.75
+  },
+  {
+   "name": "JIMMY DIXON FOR HD 4",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-O2H90Z-C-001",
+   "contributions": 238535.96
+  },
+  {
+   "name": "COMMITTEE TO ELECT GREGORY EDDS",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-ZY2O77-C-001",
+   "contributions": 95435.54
+  },
+  {
+   "name": "COMMITTEE TO ELECT ROY SURRETT",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-2O7013-C-001",
+   "contributions": 95728.59
+  },
+  {
+   "name": "COMMITTEE TO ELECT MARK D CARVER",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-7E20GB-C-001",
+   "contributions": 6091.08
+  },
+  {
+   "name": "MELISSA ZEHNER FOR SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-0M97W0-C-001",
+   "contributions": 51741.86
+  },
+  {
+   "name": "THE COMMITTEE TO ELECT JENNIFER BALKCOM",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-89J95I-C-001",
+   "contributions": 51180.24
+  },
+  {
+   "name": "BENTLEY FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-6L4FIW-C-001",
+   "contributions": 434.0
+  },
+  {
+   "name": "RYAN MOFFITT FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-81R7V9-C-001",
+   "contributions": 521820.64
+  },
+  {
+   "name": "COMMITTEE TO ELECT CATHY THORNE BYNUM",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-346P3M-C-001",
+   "contributions": 12327.8
+  },
+  {
+   "name": "COMMITTEE TO ELECT JANENE ACKLES DUBLIN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3Q2A03-C-001",
+   "contributions": 9974.3
+  },
+  {
+   "name": "FRIENDS TO ELECT LATISHA GRADY",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-J8BM8C-C-001",
+   "contributions": 28383.41
+  },
+  {
+   "name": "THOMAS FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-2ZT08O-C-001",
+   "contributions": 2728.25
+  },
+  {
+   "name": "JONAH GARSON FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-3V81B0-C-002",
+   "contributions": 268798.63
+  },
+  {
+   "name": "DANNY BRITT FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-89GQ6R-C-001",
+   "contributions": 630369.7
+  },
+  {
+   "name": "BALTUTIS FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3WU136-C-002",
+   "contributions": 323954.46
+  },
+  {
+   "name": "HASEEB FOR NC",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-3V0245-C-001",
+   "contributions": 710842.93
+  },
+  {
+   "name": "LAURA PICHARDO FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-J005VY-C-001",
+   "contributions": 3570.31
+  },
+  {
+   "name": "SABRINA HARRIS FOR NC 77",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-K5V538-C-001",
+   "contributions": 501.21
+  },
+  {
+   "name": "COMMITTEE TO ELECT BRYSON JOHNSON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-6ROH91-C-001",
+   "contributions": 6293.17
+  },
+  {
+   "name": "HARRISON FOR HOUSE (MARY PRICE TAYLOR)",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-HF4Q10-C-001",
+   "contributions": 30710.0
+  },
+  {
+   "name": "DANA CAUDILL JONES NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-3JBA23-C-001",
+   "contributions": 106865.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT JOHN MORGAN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-56WZ08-C-001",
+   "contributions": 8982.94
+  },
+  {
+   "name": "RALPH CARTER FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-DPTFM5-C-001",
+   "contributions": 67392.21
+  },
+  {
+   "name": "BRYAN COHN FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-NBU2YS-C-002",
+   "contributions": 485447.93
+  },
+  {
+   "name": "COMMITTEE TO ELECT ELMA HAIRSTON",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-960C61-C-001",
+   "contributions": 17193.15
+  },
+  {
+   "name": "JCHANGE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-97L72F-C-001",
+   "contributions": 1975.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHRISTOPHER SCHULTE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-044QKJ-C-001",
+   "contributions": 940.0
+  },
+  {
+   "name": "CITIZENS TO ELECT NORMAN SANDERSON",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-C5O8H3-C-002",
+   "contributions": 118486.61
+  },
+  {
+   "name": "RABON FOR SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-0839YM-C-001",
+   "contributions": 518188.7
+  },
+  {
+   "name": "COMM TO ELECT MICHAEL LEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-0G0544-C-001",
+   "contributions": 2804488.55
+  },
+  {
+   "name": "MARK HOLLO FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-GO7648-C-002",
+   "contributions": 121090.65
+  },
+  {
+   "name": "MATT HOLWAY FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-KBFEU0-C-001",
+   "contributions": 17884.42
+  },
+  {
+   "name": "COMMITTEE TO ELECT ROBERT VAN BREDERODE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-36XRPU-C-001",
+   "contributions": 2448.4
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHELSEA WALSH",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Y82G4G-C-001",
+   "contributions": 18695.0
+  },
+  {
+   "name": "TRICIA COTHAM COMMITTEE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-07985B-C-002",
+   "contributions": 317825.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT MIKE COLVIN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-OD71Q5-C-001",
+   "contributions": 15636.04
+  },
+  {
+   "name": "COMMITTEE TO ELECT KARL GILLESPIE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-7C3AV6-C-001",
+   "contributions": 177544.2
+  },
+  {
+   "name": "HUGH BLACKWELL FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-86E2T6-C-001",
+   "contributions": 342197.11
+  },
+  {
+   "name": "COMMITTEE TO ELECT BILL WARD",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-H0NFL2-C-001",
+   "contributions": 583267.89
+  },
+  {
+   "name": "COMMITTEE TO ELECT ANNA FERGUSON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-88LV2U-C-001",
+   "contributions": 508111.18
+  },
+  {
+   "name": "CONRAD COMM FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-W4CRTY-C-002",
+   "contributions": 25.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHARLES DOMINGO",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-E7A8RO-C-001",
+   "contributions": 3215.31
+  },
+  {
+   "name": "DEAN ARP FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C56E6S-C-001",
+   "contributions": 227617.32
+  },
+  {
+   "name": "CITIZENS FOR BUCK NEWTON",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-6Q95Z9-C-001",
+   "contributions": 612995.95
+  },
+  {
+   "name": "ELECT BRENT ROBERSON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-S2O0H2-C-002",
+   "contributions": 5029.5
+  },
+  {
+   "name": "DAVIS FOR NC HOUSE 118",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-C2826N-C-003",
+   "contributions": 94935.91
+  },
+  {
+   "name": "DUDLEY GREENE FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-AEB7PB-C-001",
+   "contributions": 33203.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT JARVIS",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-577I6D-C-001",
+   "contributions": 214738.72
+  },
+  {
+   "name": "HENRY HOSTETLER NC SENATE CAMPAIGN FUND",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-4N0A09-C-001",
+   "contributions": 18645.12
+  },
+  {
+   "name": "CELESTE FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-72RMDZ-C-001",
+   "contributions": 155670.95
+  },
+  {
+   "name": "COMMITTEE TO ELECT JAMES M. (JIMMY) ROGERS",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-5F5W30-C-001",
+   "contributions": 57836.74
+  },
+  {
+   "name": "BLUST FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C1805N-C-002",
+   "contributions": 545268.78
+  },
+  {
+   "name": "COMM TO ELECT TIM MOFFITT",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-FKG149-C-001",
+   "contributions": 177405.13
+  },
+  {
+   "name": "FRANK HUGHES FOR NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-6EL389-C-001",
+   "contributions": 13893.37
+  },
+  {
+   "name": "HARRY WARREN NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-D7D0AW-C-001",
+   "contributions": 12934.11
+  },
+  {
+   "name": "ADAMS FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-B6IP24-C-001",
+   "contributions": 68369.73
+  },
+  {
+   "name": "MAJEED CAMPAIGN",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-O7KOL0-C-002",
+   "contributions": 33426.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT KEN BADGETT",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-ABDK98-C-001",
+   "contributions": 50.24
+  },
+  {
+   "name": "JULIA C HOWARD FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C2019N-C-001",
+   "contributions": 64176.0
+  },
+  {
+   "name": "ALLISON FOR HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-AI74E3-C-001",
+   "contributions": 33919.14
+  },
+  {
+   "name": "COMM TO ELECT MITCHELL SMITH SETZER",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C1877N-C-001",
+   "contributions": 185052.0
+  },
+  {
+   "name": "COMM TO ELECT DONNY LAMBETH",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-60J6TK-C-001",
+   "contributions": 282626.0
+  },
+  {
+   "name": "JIM BURGIN FOR SENATE COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-7WT45U-C-001",
+   "contributions": 167101.0
+  },
+  {
+   "name": "FRIENDS OF CHRIS GILBERT",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-1MJE50-C-002",
+   "contributions": 507.2
+  },
+  {
+   "name": "TANYA FOR HARNETT",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-3S14T1-C-001",
+   "contributions": 18.58
+  },
+  {
+   "name": "COMMITTEE TO ELECT PETER ANTINOZZI",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-15SEON-C-001",
+   "contributions": 365.09
+  },
+  {
+   "name": "COMMITTEE TO ELECT RAY 4 SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-6YOMJI-C-001",
+   "contributions": 6901.02
+  },
+  {
+   "name": "THE KORDON LIBERTY COMMITTEE",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-YK215Y-C-001",
+   "contributions": 989.51
+  },
+  {
+   "name": "JAXON BARBER FOR NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-4Z6CLL-C-001",
+   "contributions": 1100.0
+  },
+  {
+   "name": "MICHELLE BARDSLEY FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-M0A50H-C-001",
+   "contributions": 455.76
+  },
+  {
+   "name": "COMMITTEE TO ELECT JEROL KIVETT",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-1FC7K8-C-001",
+   "contributions": 8964.22
+  },
+  {
+   "name": "FRIENDS OF JOHN LOWERY",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-DEZ9H1-C-001",
+   "contributions": 70802.74
+  },
+  {
+   "name": "KEN BROWN FOR NC HOUSE 118",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-8JG564-C-001",
+   "contributions": 9140.96
+  },
+  {
+   "name": "COMMITTEE TO ELECT JERRY BLAKE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-5OJ949-C-001",
+   "contributions": 371.76
+  },
+  {
+   "name": "COALITION FOR UNITY, DIVERSITY AND JUSTICE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-83U37R-C-001",
+   "contributions": 20.0
+  },
+  {
+   "name": "WILLINGHAM CAMPAIGN FUND",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-C1121N-C-004",
+   "contributions": 59776.0
+  },
+  {
+   "name": "FRIENDS FOR JANE HIPPS",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-9TRR0G-C-001",
+   "contributions": 50.0
+  },
+  {
+   "name": "DYLAN TUCKER FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-9Q0C35-C-001",
+   "contributions": 1050.0
+  },
+  {
+   "name": "CLAUDE (DORSEY) HARRIS - NO 2026 ORG PAPERWORK RECEIVED",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-BFT28D-C-001",
+   "contributions": 1139.51
+  },
+  {
+   "name": "PIKE FOR DISTRICT 6",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-976051-C-001",
+   "contributions": 19126.0
+  },
+  {
+   "name": "CARSON SMITH FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-56RR9F-C-001",
+   "contributions": 56151.0
+  },
+  {
+   "name": "SAM WATFORD FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Q1AMC4-C-001",
+   "contributions": 19526.0
+  },
+  {
+   "name": "DAN KIGER FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-2J889Z-C-001",
+   "contributions": 11726.0
+  },
+  {
+   "name": "SCHMIDT FOR A CHANGE IN CHARLOTTE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-Y3QHM8-C-001",
+   "contributions": 1592.0
+  },
+  {
+   "name": "ELECT CORDOVA FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-I282S2-C-001",
+   "contributions": 1160.15
+  },
+  {
+   "name": "WILLIAM BRISSON FOR NC HOUSE COMM",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-EGEE16-C-001",
+   "contributions": 1000.0
+  },
+  {
+   "name": "STEPHEN ROSS COMM",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-7892D7-C-001",
+   "contributions": 10300.0
+  },
+  {
+   "name": "AJ DAOUD CAMPAIGN",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-2A61QG-C-002",
+   "contributions": 8240.6
+  },
+  {
+   "name": "DAVIS FOR NC HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-E63R4U-C-001",
+   "contributions": 12974.09
+  },
+  {
+   "name": "COMMITTEE TO ELECT JONATHAN D. MILLER",
+   "chamber": "senate",
+   "party": "LIB",
+   "committee": "STA-93S9JH-C-001",
+   "contributions": 599.51
+  },
+  {
+   "name": "GARDENIA HENLY CAMPAIGN COMMITTEE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-FT2767-C-003",
+   "contributions": 1750.0
+  },
+  {
+   "name": "NEWTON FOR SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-R1G978-C-001",
+   "contributions": 16300.0
+  },
+  {
+   "name": "CECIL BROCKMAN FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-58A3R7-C-001",
+   "contributions": 6800.0
+  },
+  {
+   "name": "HARRIS FOR THE PEOPLE",
+   "chamber": "house",
+   "party": "UNA",
+   "committee": "STA-78N8WX-C-001",
+   "contributions": 520.94
+  },
+  {
+   "name": "FORSTER FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-R7NF2C-C-001",
+   "contributions": 3364.1
+  },
+  {
+   "name": "DAVE FORSYTH FOR NC SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-989S51-C-001",
+   "contributions": 12286.4
+  },
+  {
+   "name": "ELECT KYLE WHISNANT NC SENATE",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-59105X-C-001",
+   "contributions": 866.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT ED GEORGE",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-33S8BA-C-002",
+   "contributions": 189.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT KEVIN TERRETT",
+   "chamber": "senate",
+   "party": "LIB",
+   "committee": "STA-U8S43O-C-001",
+   "contributions": 341.5
+  },
+  {
+   "name": "COMMITTEE TO ELECT BRAD HESSEL",
+   "chamber": "senate",
+   "party": "LIB",
+   "committee": "STA-OOL3NX-C-001",
+   "contributions": 2158.55
+  },
+  {
+   "name": "COMMITTEE TO ELECT CRISTAL ROBINSON",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-4XG111-C-001",
+   "contributions": 500.0
+  },
+  {
+   "name": "TRINA BOYD FOR DISTRICT 104",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-0JHR7M-C-001",
+   "contributions": 1371.15
+  },
+  {
+   "name": "COMMITTEE TO ELECT PATRICK BOWERSOX",
+   "chamber": "senate",
+   "party": "LIB",
+   "committee": "STA-CBH6SF-C-001",
+   "contributions": 339.51
+  },
+  {
+   "name": "ANGELA MCCARTY FOR SENATE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-F1RN8O-C-002",
+   "contributions": 139.51
+  },
+  {
+   "name": "FRIENDS OF DR GREG MURPHY",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-28M1YS-C-001",
+   "contributions": 2500.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT MARY MISKIMON",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-4X2TMV-C-001",
+   "contributions": 125.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT MICHAEL CURTIS MUNGER",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-ZL17Z2-C-003",
+   "contributions": 200.0
+  },
+  {
+   "name": "JULIA C HOWARD FOR HOUSE",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C2019N-C-002",
+   "contributions": 4000.0
+  },
+  {
+   "name": "COMM TO ELECT DON MIAL",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-1628Q1-C-001",
+   "contributions": 2000.0
+  },
+  {
+   "name": "THE COMMITTEE TO ELECT MATTHEW ORR",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-THJ31Z-C-001",
+   "contributions": 1139.51
+  },
+  {
+   "name": "PERROTTA 4 NC",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-IQ08OT-C-001",
+   "contributions": 1260.0
+  },
+  {
+   "name": "JACKIE4NC44",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-87EJ85-C-001",
+   "contributions": 600.0
+  },
+  {
+   "name": "FRIENDS OF ASHLEE ADAMS",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-757547-C-001",
+   "contributions": 900.0
+  },
+  {
+   "name": "MOORE AND LEE COMMUNITIES FOR TASHERRA MCDUFFIE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-4EZH11-C-001",
+   "contributions": 139.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT MICHAEL OAKES",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-2POWFJ-C-001",
+   "contributions": 524.5
+  },
+  {
+   "name": "COMMITTEE TO ELECT M. SEMONE PEMBERTON",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-D4Y98K-C-001",
+   "contributions": 150.0
+  },
+  {
+   "name": "JIM PERRY COMMITTEE",
+   "chamber": "senate",
+   "party": "REP",
+   "committee": "STA-L92814-C-001",
+   "contributions": 860.8
+  },
+  {
+   "name": "BRANDALL REDD FOR NORTH CAROLINA HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-X41LY8-C-001",
+   "contributions": 452.4
+  },
+  {
+   "name": "COMMITTEE TO ELECT GARY K. SHIPMAN FOR NC HOUSE",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-3E302S-C-001",
+   "contributions": 394.46
+  },
+  {
+   "name": "FONTENOT FOR HOUSE 15",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-L6JK20-C-001",
+   "contributions": 98.34
+  },
+  {
+   "name": "COMMITTEE TO ELECT RAYMOND SMITH",
+   "chamber": "senate",
+   "party": "DEM",
+   "committee": "STA-76E2TP-C-001",
+   "contributions": 150.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT MICAO PENAFLOR",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-URJ204-C-001",
+   "contributions": 200.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT RYAN BROWN",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-2XI6NO-C-001",
+   "contributions": 200.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT SAMMIE BROOKS",
+   "chamber": "senate",
+   "party": "LIB",
+   "committee": "STA-87FKJ3-C-001",
+   "contributions": 180.0
+  },
+  {
+   "name": "KAT MCDONALD FOR NC",
+   "chamber": "senate",
+   "party": "LIB",
+   "committee": "STA-9F190D-C-001",
+   "contributions": 180.0
+  },
+  {
+   "name": "TEAM GROO",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-MJVZZA-C-001",
+   "contributions": 180.0
+  },
+  {
+   "name": "FREE NC",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-HSZ3ZJ-C-001",
+   "contributions": 360.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHRIS ROBINSON",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-JJO20C-C-001",
+   "contributions": 200.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT CHRIS COSTELLO",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-809B23-C-001",
+   "contributions": 200.0
+  },
+  {
+   "name": "JOSH MORRIS FOR NC",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-4E07NZ-C-001",
+   "contributions": 200.0
+  },
+  {
+   "name": "COMMITTEE TO ELECT LUCAS EVERETT JONES",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-XZ6XG7-C-001",
+   "contributions": 139.51
+  },
+  {
+   "name": "COMMITTEE TO ELECT WAYNE COCKRELL",
+   "chamber": "house",
+   "party": "LIB",
+   "committee": "STA-76T3CV-C-001",
+   "contributions": 139.51
+  },
+  {
+   "name": "NICOLE FOR NC",
+   "chamber": "house",
+   "party": "DEM",
+   "committee": "STA-LJJMK1-C-001",
+   "contributions": 4.41
+  },
+  {
+   "name": "JIM WHITWORTH CAMPAIGN",
+   "chamber": "house",
+   "party": "REP",
+   "committee": "STA-C0900N-C-002",
+   "contributions": 105.0
+  }
+ ]
+}

@@ -103,7 +103,7 @@ function buildRace(d: Dump, stateVotes: number): Race | null {
   const stateSkew = SKEW * (3 + 4 * gauss());
   const SIGMA_F = SIGMA_BY_OFFICE[d.office];
   const prior: RacePrior = {
-    office, id: d.race, civicId: null, label: d.race, state: st, stateName: st, href: "",
+    office, id: d.race, civicId: null, label: d.race, state: st, stateName: st, href: "", past: [],
     dem: { name: "D", party: "D", incumbent: false, photo: null }, rep: { name: "R", party: "R", incumbent: false, photo: null },
     seatParty: null, seatHolder: null, special: /special/i.test(d.race), rcv: false, jungle: false, tpl: null, beta: d.beta,
     forecast: { margin: d.pred, sigma: SIGMA_F, probability: 0.5, rating: "", contest: "contested", interval80: [d.pred - 1.28 * SIGMA_F, d.pred + 1.28 * SIGMA_F] },
@@ -259,6 +259,16 @@ if (argv.includes("--grid")) {
     const r = run({ name: "", night: off({ sigmaState, sigmaNonwhite: demo ? 1.5 * demo : 0.01, sigmaCollege: demo || 0.01, sigmaLean: demo || 0.01 }), needle: { ...DEFAULT_PARAMS, nightShare } });
     const z = r.buckets[0];
     console.log(`  share ${nightShare} state ${sigmaState} demo×${demo}:  ${f1(z.mae)} / ${pc(z.cover)} / ${f2(z.logs)}  ·  ${f1(r.all.mae)} / ${pc(r.all.cover)} / ${f2(r.all.logs)}  ·  ${r.seats.map((s) => f2(s.mae)).join(" · ")}`);
+  }
+}
+
+// The fit's entry threshold × office offsets × vote weighting together (--choose; compare --skew 0, 1, 2).
+if (argv.includes("--choose")) {
+  console.log("\nChoose (nothing-in MAE / cover · all MAE / cover / log score · seat MAE S·G·H):");
+  for (const minComplete of [0.2, 0.35, 0.5, 0.8]) for (const sigmaOffice of [1, 0.01]) for (const votesSat of [20_000, 200_000]) {
+    const r = run({ name: "", night: off({ minComplete, sigmaOffice, votesSat }) });
+    const z = r.buckets[0];
+    console.log(`  min ${String(minComplete).padEnd(4)} office ${String(sigmaOffice).padEnd(4)} sat ${String(votesSat / 1000).padStart(3)}k:  ${f1(z.mae)} / ${pc(z.cover)}  ·  ${f2(r.all.mae)} / ${pc(r.all.cover)} / ${f2(r.all.logs)}  ·  ${r.seats.map((s) => f2(s.mae)).join(" · ")}`);
   }
 }
 

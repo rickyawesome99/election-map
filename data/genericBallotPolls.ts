@@ -274,5 +274,15 @@ export const genericBallotPolls: GenericBallotPoll[] = [
   { pollster: "Emerson", startDate: "2026-10-24", endDate: "2026-10-26", sample: 1000, population: "LV", dem: 52, rep: 42, diff: -10 },
   { pollster: "Harvard-Harris", startDate: "2026-10-24", endDate: "2026-10-26", sample: null, population: "LV", dem: 52, rep: 48, diff: -4 },
   { pollster: "Economist/YouGov", startDate: "2026-10-23", endDate: "2026-10-26", sample: 1263, population: "LV", dem: 50, rep: 41, diff: -9 },
-  { pollster: "Reuters/Ipsos", startDate: "2026-10-22", endDate: "2026-10-26", sample: 1164, population: "LV", dem: 53, rep: 44, diff: -9 }
+  { pollster: "Reuters/Ipsos", startDate: "2026-10-22", endDate: "2026-10-26", sample: 1164, population: "LV", dem: 53, rep: 44, diff: -9 },
+  { pollster: "Rasmussen Reports", startDate: "2026-10-22", endDate: "2026-10-28", sample: 1442, population: "LV", dem: 49, rep: 43, diff: -6 },
+  { pollster: "THP/MM**", startDate: "2026-10-28", endDate: "2026-10-29", sample: 1158, population: "LV", dem: 54, rep: 41, diff: -13 },
+  { pollster: "NBC News", startDate: "2026-10-28", endDate: "2026-10-30", sample: 1000, population: "RV", dem: 52, rep: 45, diff: -7 },
+  { pollster: "Big Data Poll", startDate: "2026-10-27", endDate: "2026-10-30", sample: 3214, population: "LV", dem: 52, rep: 40, diff: -12 },
+  { pollster: "Economist/YouGov", startDate: "2026-10-27", endDate: "2026-10-30", sample: 3915, population: "LV", dem: 53, rep: 44, diff: -9 },
+  { pollster: "I&I/TIPP", startDate: "2026-10-27", endDate: "2026-10-30", sample: 1158, population: "LV", dem: 52, rep: 42, diff: -10 },
+  { pollster: "Financial Times", startDate: "2026-10-30", endDate: "2026-11-01", sample: 2090, population: "LV", dem: 52, rep: 45, diff: -7 },
+  { pollster: "Reuters/Ipsos", startDate: "2026-10-29", endDate: "2026-11-01", sample: 1212, population: "LV", dem: 52, rep: 44, diff: -8 },
+  { pollster: "Atlas Intel", startDate: "2026-10-28", endDate: "2026-11-01", sample: 3566, population: "A", dem: 56, rep: 41, diff: -15 },
+  { pollster: "Morning Consult", startDate: "2026-10-26", endDate: "2026-11-01", sample: 16929, population: "LV", dem: 51, rep: 43, diff: -8 }
 ];

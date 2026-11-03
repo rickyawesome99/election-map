@@ -11,7 +11,7 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
 import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
-import { OFFICE_LABEL, type Party, type RaceHistory } from "@/lib/resultsTypes";
+import { OFFICE_LABEL, type Party, type PastRaceResult, type RaceHistory } from "@/lib/resultsTypes";
 import { MarginTrend } from "@/components/results/SeatTrend";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 
@@ -57,6 +57,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const [view, setView] = useState<MapView>("counted");
   const [trendView, setTrendView] = useState<CountyView>("projected");
   const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in">("votes");
+  // A tapped county row stays tinted (phones have no hover); tapping it again clears it.
+  const [tappedFips, setTappedFips] = useState<string | null>(null);
   const hasVotes = !!live && live.total > 0;
   const liveByFips = useMemo(() => new Map((live?.counties ?? []).filter((c) => c.fips).map((c) => [c.fips!, c])), [live]);
   // A jungle or ranked-choice race's D and R sides are party blocs (lib/resultsFeed.ts tallyRegion),
@@ -92,6 +94,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(view === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }), ...blocSides } }];
   }), [proj, liveByFips, view, prior.counties, blocSides]);
   const maxLeftNet = useMemo(() => Math.max(0, ...entries.map((e) => Math.abs(e.result.remaining?.net ?? 0))), [entries]);
+  // The Remaining view's totals: every county's votes left and the net they are expected to add (R-positive).
+  const left = useMemo(() => entries.reduce((a, e) => ({ votes: a.votes + (e.result.remaining?.votes ?? 0), net: a.net + (e.result.remaining?.net ?? 0) }), { votes: 0, net: 0 }), [entries]);
 
   const tplByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.tpl])), [prior.counties]);
   const benchByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.benchmark])), [prior.counties]);
@@ -161,7 +165,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
             {hasVotes
               ? <><b style={{ color: "var(--app-text-primary)" }}>{fmtInt(proj.counted)}</b> votes counted · {topLead
                 ? <><b style={{ color: partyColor(topLead.party) }}>{lastName(topLead.leader)}</b> leads {lastName(topLead.second)} by {fmtInt(topLead.votes)} · parties <b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b></>
-                : <><b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b>{voteLead != null ? ` (${fmtInt(voteLead)}-vote lead)` : ""}</>} · <b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)}</b> of ~{fmtInt(proj.projectedTotal)} projected</>
+                : <><b style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</b>{voteLead != null && <> (<span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtInt(voteLead)}-vote lead</span>)</>}</>} · <b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)}</b> of ~{fmtInt(proj.projectedTotal)} projected</>
               : <>No votes counted · ~{fmtInt(proj.projectedTotal)} expected</>}
           </p>
 
@@ -198,7 +202,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                     {v === "counted" ? "Counted" : "Projected"}
                   </button>
                 ))}
-                <span style={muted}>margin over the night</span>
+                <span className="whitespace-nowrap pb-0.5" style={{ ...muted, borderBottom: "2px solid transparent" }}>margin over the night</span>
               </div>
               <MarginTrend points={history[trendView]} prior={prior} kind={trendView} />
             </div>
@@ -216,7 +220,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
           </div>
         </div>
 
-        <div className="min-w-0">
+        <div className="min-w-0 lg:flex lg:flex-col">
           <div className="mb-2 flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider sm:gap-4">
             {(["counted", "projected", "remaining"] as MapView[]).map((v) => (
               <button key={v} onClick={() => setView(v)} className="whitespace-nowrap pb-0.5 uppercase transition-colors hover:text-[var(--app-text-primary)]"
@@ -227,10 +231,12 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
             {noDetail && <span className="font-normal normal-case tracking-normal" style={veryMuted}>loading counties…</span>}
           </div>
           {prior.office === "house" ? (
-            <HouseDistrictCountyMap piecesUrl={`/house-county-pieces/2026/${prior.state}.json`} district={district} districtLabel={prior.label} stateAbbr={prior.state} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
+            <HouseDistrictCountyMap piecesUrl={`/house-county-pieces/2026/${prior.state}.json`} district={district} districtLabel={prior.label} stateAbbr={prior.state} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, left, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
           ) : (
-            <PastElectionCountyMap stateAbbr={prior.state} stateName={prior.stateName} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
+            <PastElectionCountyMap stateAbbr={prior.state} stateName={prior.stateName} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, left, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
           )}
+          {/* Priors cached from before `past` existed (an open tab, the CDN after a deploy) have none */}
+          {(prior.past?.length ?? 0) > 0 && <PastResults past={prior.past} />}
 
         </div>
       </div>
@@ -270,7 +276,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                   const inPct = <><span style={{ color: inColor(inSt), fontWeight: inSt === "none" ? undefined : 600 }}>{inSt === "done" && "✓ "}{fmtIn(counted ? Math.max(c.f * 100, 0.01) : 0, c.done)}</span>{l?.pct != null && !c.done ? <span className="text-[10px]" style={veryMuted}> ({Math.round(l.pct)})</span> : null}</>;
                   const sub = "text-[10.5px] font-normal sm:hidden";
                   return (
-                    <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)", opacity: counted ? 1 : 0.6 }}>
+                    <tr key={c.fips} onClick={() => setTappedFips((f) => (f === c.fips ? null : c.fips))} className="cursor-pointer transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]"
+                      style={{ borderBottom: "1px solid var(--app-border)", opacity: counted ? 1 : 0.6, background: tappedFips === c.fips ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined }}>
                       <td className="py-1.5 leading-tight sm:whitespace-nowrap">
                         {countyDisplayName(c.fips, c.name).replace(/ County$/, "")}
                         <div className={sub} style={muted}>{inPct} in</div>
@@ -348,26 +355,90 @@ function CandidateRow({ c, hasVotes, state }: { c: Cand; hasVotes: boolean; stat
 // The colour key under the map, as on the past-election pages (lib/colorScale getRaceColor's buckets).
 const SWATCHES = ["#1b408c", "#587ccc", "#8bafff", "#959bb3", "#cf8980", "#ff8b98", "#ff5864", "#be1c29"];
 // The race's reporting note sits on its left, in the caption so a county's click panel opens below it.
+// Every view's caption reserves the Remaining view's two lines (CAPTION_H), so switching the map's
+// tab never moves what sits below it.
+const CAPTION_H = "min-h-[36px]";
 const mapCaption = (note: string) => (
-  <div className="mt-1 flex items-start justify-between gap-3">
+  <div className={`mt-1 flex items-start justify-between gap-3 ${CAPTION_H}`}>
     <p className="text-[11px]" style={veryMuted}>{note}</p>
     <span className="mt-1 flex shrink-0 items-center gap-px" aria-hidden="true">{SWATCHES.map((s) => <i key={s} className="block h-2 w-3.5" style={{ background: s }} />)}</span>
   </div>
 );
 
-// The Remaining view's key: circle area is the net votes left; the largest circle's figure.
-const remainingCaption = (note: string, maxNet: number, prior: Prior) => (
-  <div className="mt-1 flex items-start justify-between gap-3">
+// The Remaining view's key: circle area is the net votes left; the largest circle's figure. Under
+// it, the totals: votes left across the race and the net lead they are expected to add.
+const remainingCaption = (note: string, maxNet: number, left: { votes: number; net: number }, prior: Prior) => (
+  <div className={`mt-1 flex items-start justify-between gap-3 ${CAPTION_H}`}>
     <p className="text-[11px]" style={veryMuted}>{note}</p>
-    <span className="mt-0.5 flex shrink-0 items-center gap-2 text-[10.5px] tabular-nums" style={muted}>
-      <span className="flex items-center gap-1" aria-hidden="true">
-        <i className="block h-2 w-2 rounded-full" style={{ background: partyColor(prior.dem.party), opacity: 0.72 }} />
-        <i className="block h-3 w-3 rounded-full" style={{ background: partyColor(prior.rep.party), opacity: 0.72 }} />
+    <span className="mt-0.5 flex shrink-0 flex-col items-end gap-0.5 text-[10.5px] tabular-nums" style={muted}>
+      <span className="flex items-center gap-2">
+        <span className="flex items-center gap-1" aria-hidden="true">
+          <i className="block h-2 w-2 rounded-full" style={{ background: partyColor(prior.dem.party), opacity: 0.72 }} />
+          <i className="block h-3 w-3 rounded-full" style={{ background: partyColor(prior.rep.party), opacity: 0.72 }} />
+        </span>
+        {maxNet >= 1 ? <>Net votes left · largest {fmtInt(maxNet)}</> : "Nothing left to count"}
       </span>
-      {maxNet >= 1 ? <>Net votes left · largest {fmtInt(maxNet)}</> : "Nothing left to count"}
+      {left.votes >= 1 && (
+        <span style={veryMuted}>
+          ≈{fmtInt(left.votes)} votes left · expected to net <b style={{ color: Math.round(left.net) === 0 ? "var(--app-text-primary)" : partyColor(left.net > 0 ? prior.rep.party : prior.dem.party) }}>{fmtVoteMargin(Math.round(left.net), prior)}</b>
+        </span>
+      )}
     </span>
   </div>
 );
+
+/** Under the map: the seat's two latest elections and the 2024 presidential vote in the same place,
+ *  each as winner (bold) vs runner-up by last name and the margin as a serif figure. At lg it
+ *  stretches to the foot of the left column, the rows sharing the height. A House race held on
+ *  other lines is marked, since its margin isn't this district's. */
+function PastResults({ past }: { past: PastRaceResult[] }) {
+  // Rows tint on hover and, on phones, stay tinted once tapped (tap again to clear), as the county
+  // table's do; a row with a past-election page also flashes darker as the tap opens it.
+  const [tapped, setTapped] = useState<string | null>(null);
+  return (
+    <div className="mt-3 flex flex-col lg:flex-1">
+      <div className="flex items-baseline gap-2 border-b pb-1.5" style={{ borderColor: "var(--app-text-primary)" }}>
+        <span className="text-[11px] font-bold uppercase tracking-wider">Past results</span>
+        <span className="text-[11px]" style={veryMuted}>last two elections for this seat · 2024 president{past.some((r) => r.office === "House") ? " on 2026 lines" : ""}</span>
+      </div>
+      <div className="flex flex-col lg:flex-1">
+        {past.map((r) => {
+          const repWon = r.margin > 0;
+          const winner = repWon ? r.rep : r.dem, loser = repWon ? r.dem : r.rep;
+          const color = partyColor(winner.party);
+          const unopposed = Math.abs(r.margin) >= 99.9 || !loser.name;
+          const body = (
+            <>
+              <span className="flex flex-col">
+                <span className="tabular-nums" style={serif("1.35rem")}>{r.year}</span>
+                <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider" style={muted}>{r.office}{r.special ? " special" : ""}</span>
+              </span>
+              <span className="min-w-0">
+                {/* Winner vs runner-up on one line, each in their party's colour, in the candidate rows' serif */}
+                <span className="block truncate">
+                  <span style={serif("1.3rem", color)}>{winner.name ? lastName(winner.name) : winner.party}</span>
+                  {unopposed
+                    ? <span className="text-[13px]" style={veryMuted}> unopposed</span>
+                    : <><span className="text-[13px]" style={veryMuted}> vs </span><span style={serif("1.3rem", partyColor(loser.party))}>{lastName(loser.name!)}</span></>}
+                </span>
+                {r.oldLines && <span className="mt-1 inline-block rounded px-1 py-px text-[9px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }} title="Held on different district lines than 2026's">old lines</span>}
+              </span>
+              <span className="text-right tabular-nums" style={serif(unopposed ? "1.1rem" : "1.75rem", color)}>{unopposed ? "Unopposed" : `${winner.party}+${Math.abs(r.margin).toFixed(1)}`}</span>
+            </>
+          );
+          const cls = "grid min-h-[4.5rem] grid-cols-[4.5rem_minmax(0,1fr)_auto] items-center gap-4 border-b py-3 lg:flex-1 sm:grid-cols-[5rem_minmax(0,1fr)_auto]";
+          const key = `${r.year}-${r.office}`;
+          const tint = `${cls} cursor-pointer transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] active:bg-[color-mix(in_srgb,var(--app-text-primary)_9%,transparent)]`;
+          const style = { borderColor: "var(--app-border)", background: tapped === key ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined };
+          const onClick = () => setTapped((t) => (t === key ? null : key));
+          return r.href
+            ? <Link key={key} href={r.href} prefetch={false} onClick={onClick} className={tint} style={style}>{body}</Link>
+            : <div key={key} onClick={onClick} className={tint} style={style}>{body}</div>;
+        })}
+      </div>
+    </div>
+  );
+}
 
 /** A horizontal needle: the projected margin with its 80% band over a D–R axis, the forecast and the counted margin as ticks. */
 function Needle({ margin, sigma, forecast, current, prior }: { margin: number; sigma: number; forecast: number; current: number | null; prior: Prior }) {

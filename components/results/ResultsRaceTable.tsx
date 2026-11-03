@@ -3,6 +3,7 @@
 import { lastName } from "@/lib/personName";
 import { fmtClose, fmtInt, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import type { Party } from "@/lib/resultsTypes";
+import { useTouchHover } from "@/lib/useTouchHover";
 import type { ResultsRow } from "@/components/results/ResultsPage";
 
 // The Results page's race table, built like the /historical race list (components/PastRaceTable):
@@ -47,7 +48,7 @@ export function SplitBar({ row, compact }: { row: ResultsRow; compact: boolean }
   const won = (p: Party) => proj.locked && proj.winner === p;
   const pct = (v: number) => (hasVotes ? (v / live!.total) * 100 : null);
   return (
-    <div className={`flex overflow-hidden transition-[filter] duration-150 group-hover:brightness-[0.93] ${compact ? "h-6 rounded" : "h-10 rounded-md"}`}>
+    <div className={`flex overflow-hidden transition-[filter] duration-150 group-hover:brightness-[0.93] group-data-touch:brightness-[0.93] ${compact ? "h-6 rounded" : "h-10 rounded-md"}`}>
       <Segment name={prior.dem.name} party={prior.dem.party} inc={prior.dem.incumbent} share={dShare} pct={pct(live?.dem ?? 0)} won={won(prior.dem.party) && prior.dem.party !== prior.rep.party} align="left" compact={compact} />
       <Segment name={prior.rep.name} party={prior.rep.party} inc={prior.rep.incumbent} share={100 - dShare} pct={pct(live?.rep ?? 0)} won={won(prior.rep.party)} align="right" compact={compact} />
     </div>
@@ -56,9 +57,8 @@ export function SplitBar({ row, compact }: { row: ResultsRow; compact: boolean }
 
 function raceNote(row: ResultsRow): string | null {
   const { prior } = row;
-  if (prior.forecast.contest.startsWith("uncontested")) return "Uncontested";
   if (prior.forecast.contest.startsWith("same-party")) return "Same party";
-  if (prior.rcv) return "RCV first choices";
+  if (prior.rcv) return "RCV";
   if (prior.jungle) return "Jungle round";
   return null;
 }
@@ -86,9 +86,17 @@ function CandidateStack({ row }: { row: ResultsRow }) {
     { c: prior.rep, votes: live?.rep ?? 0 },
   ];
   const leader = hasVotes ? (live!.dem >= live!.rep ? 0 : 1) : -1;
+  // An uncontested race has a placeholder on the missing side: that line just says so.
+  const { contest } = prior.forecast;
+  const missing = contest.startsWith("uncontested") ? (contest.endsWith("D") ? 1 : 0) : -1;
   return (
     <div className="grid gap-1">
       {lines.map(({ c, votes }, i) => {
+        if (i === missing) return (
+          <div key={i} className={`grid min-h-[1.5em] items-center gap-x-2 text-[13px] lg:gap-x-3 ${STACK_COLS}`}>
+            <span className="truncate text-[11px] font-bold uppercase tracking-wider" style={MUTED}>Uncontested</span>
+          </div>
+        );
         const pct = hasVotes ? (votes / live!.total) * 100 : null;
         const won = proj.locked && proj.winner === c.party && (i === 1 || prior.dem.party !== prior.rep.party);
         const lead = i === leader;
@@ -110,6 +118,8 @@ function CandidateStack({ row }: { row: ResultsRow }) {
 }
 
 export default function ResultsRaceTable({ rows, selected, onSelect }: { rows: ResultsRow[]; selected: string | null; onSelect: (r: ResultsRow) => void }) {
+  // A finger over a row shows the mouse hover (data-touch, useTouchHover).
+  useTouchHover();
   return (
     <div>
       <div className={`hidden pt-2.5 pb-1.5 text-[10px] font-bold uppercase tracking-wider ${GRID}`} style={MUTED}>
@@ -134,13 +144,13 @@ export default function ResultsRaceTable({ rows, selected, onSelect }: { rows: R
             ? `${fmtClose(prior.pollsClose.first).replace(/ [AP]M$/, "")}/${fmtClose(prior.pollsClose.last)}`
             : fmtClose(prior.pollsClose.first);
           return (
-            <div key={key} data-race-row={key} role="button" tabIndex={0} onClick={() => onSelect(row)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(row); } }}
-              className={`group -mx-2 flex cursor-pointer flex-col gap-1 rounded-md border-b px-2 py-2 transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] lg:border-b-0 lg:py-1 ${GRID}`}
+            <div key={key} data-race-row={key} data-touch-hover="" role="button" tabIndex={0} onClick={() => onSelect(row)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(row); } }}
+              className={`group -mx-2 flex cursor-pointer flex-col gap-1 rounded-md border-b px-2 py-2 transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] data-touch:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] lg:border-b-0 lg:py-1 ${GRID}`}
               style={{ borderColor: "var(--app-border)", background: selected === key ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined }}>
               {/* Race (+ margin on phones) */}
               <div className="flex items-baseline justify-between gap-2 lg:flex-col lg:items-start lg:gap-0.5">
                 <div className="flex min-w-0 items-baseline gap-1.5 lg:flex-col lg:items-start lg:gap-0.5">
-                  <span className="text-[15px] font-bold group-hover:underline lg:text-sm">{prior.label}</span>
+                  <span className="text-[15px] font-bold group-hover:underline group-data-touch:underline lg:text-sm">{prior.label}</span>
                   <span className="hidden whitespace-nowrap rounded-full px-1.5 py-px text-[10px] font-semibold tabular-nums lg:inline-block" title={`Polls close ${close} ET${prior.pollsClose.note ? ` · ${prior.pollsClose.note}` : ""}`}
                     style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>{close}</span>
                   {(prior.office === "house" || note) && (

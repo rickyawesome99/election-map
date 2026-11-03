@@ -604,15 +604,16 @@ export function buildStatePage(state: StateInfo): StatePageData {
   if (houseRaces.length > 0) {
     // The first election on today's lines; cdRedraws are election years, newest first.
     vintage.push({
-      label: "Congressional map · first used",
+      label: "Congressional map",
       value: houseRaces.length === 1 ? "at-large" : cdRedraws.length ? String(cdRedraws[0]) : "before 2016",
+      sub: houseRaces.length === 1 ? undefined : "first used",
     });
   }
   for (const c of chambers) {
     const info = c.map.mapInfo;
     const era = c.map.eras.at(-1);
     const firstUsed = era?.electionYears[0] ?? info?.firstCycle ?? era?.firstYear;
-    vintage.push({ label: `${c.label} map · first used`, value: firstUsed != null ? String(firstUsed) : "—" });
+    vintage.push({ label: `${c.label} map`, value: firstUsed != null ? String(firstUsed) : "—", sub: firstUsed != null ? "first used" : undefined });
   }
   vintage.push({ label: "Next redistricting", value: "after the 2030 census", sub: "unless a court orders otherwise" });
 
