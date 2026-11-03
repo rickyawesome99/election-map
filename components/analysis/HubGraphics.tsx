@@ -3,7 +3,7 @@
 // (aria-hidden): the row's title and description carry the meaning. No data, no script.
 import type { ReactNode } from "react";
 
-export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar";
+export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "editorial";
 
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
@@ -183,9 +183,27 @@ function Calendar() {
   );
 }
 
+/** A fight card: two portraits on a split party tint, VS between them, one call marked. */
+function Editorial() {
+  return (
+    <Frame>
+      <rect x="10" y="2" width="170" height="80" rx="6" fill={DEM} fillOpacity=".12" />
+      <rect x="180" y="2" width="170" height="80" rx="6" fill={REP} fillOpacity=".12" />
+      <rect x="96" y="10" width="52" height="64" rx="4" fill={BG} stroke={DEM} strokeWidth="2.5" />
+      <circle cx="122" cy="34" r="10" fill={DEM} fillOpacity=".55" />
+      <path d="M104 72 q18 -26 36 0" fill={DEM} fillOpacity=".55" />
+      <rect x="96" y="64" width="52" height="10" fill={DEM} />
+      <rect x="212" y="10" width="52" height="64" rx="4" fill={BG} stroke={REP} strokeWidth="2.5" strokeOpacity=".6" />
+      <circle cx="238" cy="34" r="10" fill={VERY_MUTED} />
+      <path d="M220 72 q18 -26 36 0" fill={VERY_MUTED} />
+      <text x="180" y="50" textAnchor="middle" fontSize="22" fontWeight="900" fontStyle="italic" fontFamily="Georgia, serif" fill={INK}>VS</text>
+    </Frame>
+  );
+}
+
 const GRAPHICS: Record<HubGraphicId, () => ReactNode> = {
   forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote, genericBallot: GenericBallot,
-  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar,
+  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, editorial: Editorial,
 };
 
 export default function HubGraphic({ id }: { id: HubGraphicId }) {

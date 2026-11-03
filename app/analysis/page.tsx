@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import HubGraphic, { type HubGraphicId } from "@/components/analysis/HubGraphics";
 import { Fig } from "@/components/StandfirstHeader";
+import { EDITORIAL_GOVERNOR, EDITORIAL_SENATE } from "@/data/editorialPrediction";
 import { electionYear } from "@/data/forecastData";
 import { analysisHubFigures } from "@/lib/analysisHub";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
@@ -56,6 +57,8 @@ export default function AnalysisPage() {
     {
       title: "Forecasting & Polling",
       entries: [
+        { href: "/analysis/editorial-prediction", kicker: "Editorial", title: "CT Strategies Editorial Prediction", graphic: "editorial",
+          description: <>The CT Strategies Editorial Board&rsquo;s own {electionYear} calls: the generic ballot, the House, and <Fig>{EDITORIAL_SENATE.length}</Fig> Senate and <Fig>{EDITORIAL_GOVERNOR.length}</Fig> governor races, each set against the model and the RCP average.</> },
         { href: "/analysis/forecasts", kicker: "Forecasts", title: "Forecast Comparison", graphic: "forecasts",
           description: <>Every published forecast lined up against ours on all <Fig>{f.forecasts.races}</Fig> House, Senate and governor races: <Fig>{f.forecasts.models}</Fig> statistical models and <Fig>{f.forecasts.raters}</Fig> race raters, chamber toplines, and every race with every call.</> },
         { href: "/analysis/markets", kicker: "Markets", title: "Prediction Markets", graphic: "markets",
