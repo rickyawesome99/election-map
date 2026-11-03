@@ -627,3 +627,27 @@ html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
   .rc-card::before { transition: none; }
   .rc-glyph path { animation: none; }
 }
+
+/* ── Editorial prediction page (/analysis/editorial-prediction) ── */
+.ed-photo { transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s; }
+.ed-vs { transition: transform .3s cubic-bezier(.2,.8,.2,1); }
+.ed-profile { opacity: 0; transition: opacity .2s; }
+.ed-fighter:active .ed-photo { transform: scale(.96); }
+.ed-mark-inner { display: inline-flex; transition: transform .18s; }
+.ed-mark[data-active] .ed-mark-inner { transform: scale(1.4); }
+.ed-mark, .ed-fig, .ed-seg { transition: opacity .18s; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.ed-fig { padding: 2px 4px; margin: -2px -4px; }
+.ed-fig[data-active] { background: color-mix(in srgb, var(--app-text-primary) 6%, transparent); }
+.ed-seg[data-active] > span { filter: brightness(1.12); }
+.ed-row { transition: background .15s; }
+.ed-row:hover, .ed-row:focus-within { background: color-mix(in srgb, var(--app-text-primary) 5%, transparent); }
+.ed-tip { animation: ed-tip-in .14s ease-out; }
+@keyframes ed-tip-in { from { opacity: 0; translate: 0 3px; } to { opacity: 1; translate: 0 0; } }
+@media (hover: hover) {
+  .ed-fighter:hover .ed-photo { transform: translateY(-6px) scale(1.04); }
+  .ed-fighter:hover .ed-profile { opacity: 1; }
+  .ed-card:hover .ed-vs { transform: scale(1.12) rotate(-4deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ed-photo, .ed-vs, .ed-mark-inner, .ed-tip { transition: none; animation: none; }
+}

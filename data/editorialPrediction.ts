@@ -25,8 +25,12 @@ export const EDITORIAL_HOUSE = {
   dem: 234,
   rep: 201,
   demNetFlips: 20,
-  text: `Not enough time to go into specific seats, will agree with model’s take on this one. 20 flips seems like a sensible result taking into account Republican redistricting wins this cycle along, although the unfavorable national environment will still give Democrats a decent majority here.`,
+  text: `Not enough time to go into specific seats, will agree with model’s take on this one. 20 flips seems like a sensible result taking into account Republican redistricting wins this cycle, although the unfavorable national environment will still give Democrats a decent majority here.`,
 };
+
+// Chamber totals after the board's calls, Democrats first.
+export const EDITORIAL_SENATE_COMPOSITION = { dem: 51, rep: 49 };
+export const EDITORIAL_GOVERNOR_COMPOSITION = { dem: 26, rep: 24 };
 
 export const EDITORIAL_SENATE: EditorialRace[] = [
   { id: "LA", model: 11.7, rcp: null, pick: 12,
@@ -34,9 +38,9 @@ export const EDITORIAL_SENATE: EditorialRace[] = [
   { id: "MT-2", model: 9.8, rcp: null, pick: 10,
     text: `Dem vote will be split between Bodnar and Bankhead, so I think Alme pulls through rather comfortably although under 15.` },
   { id: "MS-2", model: 12.6, rcp: null, pick: 7,
-    text: `Hyde-Smith has been an underperformer in both her senate runs and we will see the state tighten up again around to where she was in 2018. Colom has ran a decent campaign.` },
+    text: `Hyde-Smith has been an underperformer in both her senate runs and we will see the state tighten up again around to where she was in 2018. Colom has run a decent campaign.` },
   { id: "FL-2", model: 6, rcp: 6.3, pick: 6,
-    text: `Florida will be closer than in 22 and 24 but it has shifted too red to be competitive even in this environment. Additionally Moody is a decent candidate while Nixon’s DSA affiliation will be an issue with Flordia’s Hispanic voters` },
+    text: `Florida will be closer than in 22 and 24 but it has shifted too red to be competitive even in this environment. Additionally Moody is a decent candidate while Nixon’s DSA affiliation will be an issue with Florida’s Hispanic voters` },
   { id: "NE-2", model: 4.5, rcp: 3.7, pick: 4,
     text: `Dan Osborn goes for it again in a much more favorable year although against a stronger incumbent in Pete Ricketts. I think this race is narrow solely because of the national environment, but I see a comfortable Ricketts win.` },
   { id: "SC", model: 2.8, rcp: 2.6, pick: 2,
@@ -54,7 +58,7 @@ export const EDITORIAL_SENATE: EditorialRace[] = [
   { id: "ME-2", model: -3.1, rcp: -3.6, pick: -2.5,
     text: `Another clash of fundamentals. Collins is a strong over performer who outran Trump heavily in 2020, one of the last vestiges of a pre polarization era. Democrats had a mess with Graham Platner dropping out and Troy Jackson’s selection. Jackson might be the weakest Democrat Senate candidate this cycle, but I think polarization will finally catch up to Susan Collins this time around. Collins’s win in 2020 wasn’t as strong when you take into account the fact Democrats votes were split between a progressive Independent and Gideon, making Collins effectively win by only 3 points. That’s a much easier task for Jackson to complete even though he is a bad candidate. Maybe Collins will shock the world one last time and prove the polls and doubters wrong again. Will be exciting to watch this one.` },
   { id: "MI-2", model: -4.1, rcp: -5.3, pick: -2.5,
-    text: `Another very interesting drama filled race filled with different storylines. Abdul El-Sayed won a closely contested primary against Haley Stevens and is running to be the first Muslim elected to the US Senate as a progressive in a swing state Trump won. He has alienated traditional Democratic groups such as Jewish and Black voters, and Steven’s last minute endorsement of Rogers adds further intrigue. Rogers is coming off a close loss in 2024 and is running an impressive campaign, making inroads with Democrats and Independents and hoping to pull up a decent upset. Unfortunately, the environment is just too blue for Rogers and the polls have been swinging heavily in favor of El-Sayed at the last second. I think the national environment will carry El-Sayed here.` },
+    text: `Another very interesting drama filled race filled with different storylines. Abdul El-Sayed won a closely contested primary against Haley Stevens and is running to be the first Muslim elected to the US Senate as a progressive in a swing state Trump won. He has alienated traditional Democratic groups such as Jewish and Black voters, and Stevens’s last minute endorsement of Rogers adds further intrigue. Rogers is coming off a close loss in 2024 and is running an impressive campaign, making inroads with Democrats and Independents and hoping to pull up a decent upset. Unfortunately, the environment is just too blue for Rogers and the polls have been swinging heavily in favor of El-Sayed at the last second. I think the national environment will carry El-Sayed here.` },
   { id: "MN-2", model: -5.5, rcp: -5.2, pick: -5.5,
     text: `Unexpectedly close race given the national environment. We will see if Minnesota Democrats take a hit after the fraud stuff from early this year. I don’t think Republicans have any chance in flipping this state but even a sub 10 point margin will be a curious result for the future of this state.` },
   { id: "NH", model: -8.5, rcp: -8, pick: -8,
@@ -75,7 +79,7 @@ export const EDITORIAL_GOVERNOR: EditorialRace[] = [
   { id: "NH", model: 6.2, rcp: 6, pick: 6,
     text: `Ayotte is a popular Republican governor in New Hampshire and will win comfortably although not by as much as in 2024.` },
   { id: "FL", model: 4.7, rcp: 4, pick: 5,
-    text: `Republicans and outrunning polling in Florida. What else is new? Like the Senate race, it won’t be a total blowout but Republicans should win it somewhat comfortably although narrower.` },
+    text: `Republicans are outrunning polling in Florida. What else is new? Like the Senate race, it won’t be a total blowout but Republicans should win it somewhat comfortably although narrower.` },
   { id: "KS", model: 3.1, rcp: -0.2, pick: 3,
     text: `Republicans are set to finally take the governorship back here after Laura Kelly won it twice. Kansas governor races are always close and they tend to not stick with the same party multiple times. Kansas being a true swing state on both the Governor and Senate levels is very interesting.` },
   { id: "VT", model: 12.6, rcp: null, pick: 3,
@@ -85,7 +89,7 @@ export const EDITORIAL_GOVERNOR: EditorialRace[] = [
   { id: "GA", model: -0.2, rcp: -0.3, pick: 0.5,
     text: `I feel like the Lance Bottoms hype is purely due to the down ballot effect of Ossoff, but Rick Jackson is running a good campaign, outraising his opponent by an insane amount, and Georgia is still inherently a lean red state. Jackson holds on.` },
   { id: "OH", model: -1.9, rcp: -4.5, pick: -2,
-    text: `I said very early on in early 2025 that Vivek’s governor run wasn’t going to be the as automatic as people thought. I always thought he was gonna be a rather controversial candidate and now he has fumbled away a winnable race against a weak Democrat purely on his own self inflicted mistakes. From Christmas crashouts, various aura loss moments, not capitalizing on Amy Acton’s weakness, and questionable gamble that was the ad, it seems like Amy Acton has all the momentum despite being a weak candidate herself. That plus the national environment means that I will have Acton as the favorite to win.` },
+    text: `I said very early on in early 2025 that Vivek’s governor run wasn’t going to be as automatic as people thought. I always thought he was gonna be a rather controversial candidate and now he has fumbled away a winnable race against a weak Democrat purely on his own self inflicted mistakes. From Christmas crashouts, various aura loss moments, not capitalizing on Amy Acton’s weakness, and questionable gamble that was the ad, it seems like Amy Acton has all the momentum despite being a weak candidate herself. That plus the national environment means that I will have Acton as the favorite to win.` },
   { id: "WI", model: -4, rcp: -5.4, pick: -4,
     text: `We were less than a half percentage point away from the most interesting governor race, but Crowley’s win locks the state up for Republicans. Sure Crowley is weak and Tiffany isn’t bad, but this race has quietly faded from prominence and will get eaten up by the national environment.` },
   { id: "IA", model: -5.3, rcp: -7.5, pick: -4.5,
@@ -93,7 +97,7 @@ export const EDITORIAL_GOVERNOR: EditorialRace[] = [
   { id: "OR", model: -7.1, rcp: null, pick: -4.5,
     text: `Sneaky close race for a seat that has been decided by single digits since 2016. Kotek is unpopular but the state is too blue to elect a Republican. I see another somewhat close loss for Republicans here. Remains out of reach` },
   { id: "MI", model: -7.7, rcp: -8, pick: -6,
-    text: `John James might be the unluckiest recent political candidate. Runs statewide in 18 and 29 and loses both times. Then in the two red favorable years he runs for house and wins, but then on his third statewide attempt he is totally uncompetitive and once again screwed by the national environment. Benson easily wins.` },
+    text: `John James might be the unluckiest recent political candidate. Runs statewide in 18 and 20 and loses both times. Then in the two red favorable years he runs for house and wins, but then on his third statewide attempt he is totally uncompetitive and once again screwed by the national environment. Benson easily wins.` },
   { id: "AZ", model: -9.4, rcp: -10.7, pick: -6.5,
     text: `Arizona Republicans continue underwhelming statewide candidate streak, this time not even competitive in a rather quiet governor race here. Nothing too surprising here.` },
   { id: "AK", model: -2.5, rcp: -7.5, pick: -7,
