@@ -156,6 +156,48 @@ export function projectedSeatWinners(districts: SeatWinnerDistrict[]): SeatWinne
   return out;
 }
 
+/** One seat after the election, as projectedSeatWinners counts it, with how sure the call is. */
+export type ProjectedSeat = {
+  party: "D" | "R" | "I" | "O" | "none";
+  /** "contested": follows `margin`; "safe": uncontested or decided by the field; "not-up": a sitting member. */
+  status: "contested" | "safe" | "not-up";
+  margin: number | null;
+};
+
+/**
+ * projectedSeatWinners seat by seat: the same rules, one entry per seat, so a chart can color each
+ * seat by its own margin and still add up to the headline count.
+ */
+export function projectedSeats(districts: SeatWinnerDistrict[]): ProjectedSeat[] {
+  const out: ProjectedSeat[] = [];
+  const push = (party: ProjectedSeat["party"], status: ProjectedSeat["status"], margin: number | null, n: number) => { for (let i = 0; i < n; i++) out.push({ party, status, margin }); };
+  for (const d of districts) {
+    const pr = d.projection;
+    const total = d.seats ?? Math.max(d.incumbents.length, 1);
+    const up = !pr || pr.contest === "not-up" ? 0 : Math.min(pr.seats, total);
+    if (pr && up > 0) {
+      const contested = pr.contest === "contested" && pr.margin != null;
+      const winner = pr.contest === "uncontested-D" ? "D" : pr.contest === "uncontested-R" ? "R" : contested ? (pr.margin! <= 0 ? "D" : "R")
+        : pr.contest === "other" && pr.pI === 1 ? "I" : null;
+      const status: ProjectedSeat["status"] = contested ? "contested" : "safe";
+      const margin = contested ? pr.margin : null;
+      const g = pr.guaranteed ?? { dem: 0, rep: 0 };
+      if (pr.contest === "split" || (pr.contest === "contested" && (g.dem || g.rep))) {
+        const dem = Math.min(up, g.dem), rep = Math.min(up - dem, g.rep);
+        push("D", "safe", null, dem); push("R", "safe", null, rep);
+        const rest = Math.max(0, up - g.dem - g.rep);
+        if (rest) push(winner ?? "none", status, margin, rest);
+      } else if (pr.contest === "independent" && pr.indep && pr.pI != null) {
+        const party = pr.indep.slot === "D" ? "R" : "D";
+        push(pr.pI >= 0.5 ? "I" : party, "contested", null, Math.min(up, pr.indep.seats));
+        push(party, "safe", null, Math.max(0, up - pr.indep.seats));
+      } else push(winner ?? "none", winner ? status : "safe", winner ? margin : null, up);
+    }
+    for (const inc of d.incumbents.slice(0, total - up)) push((["D", "R", "I"].includes(inc.party) ? inc.party : "O") as ProjectedSeat["party"], "not-up", null, 1);
+  }
+  return out;
+}
+
 /** "O" where the modeled independent is favored, for map fills and seat tallies. */
 export function independentWinner(pr: Pick<AtlasProjection, "contest" | "pI">): "O" | null {
   return pr.contest === "independent" && pr.pI != null && pr.pI >= 0.5 ? "O" : null;

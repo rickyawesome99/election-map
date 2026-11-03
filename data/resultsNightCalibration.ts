@@ -2,7 +2,7 @@
 // night model (lib/resultsNight.ts) replayed over the 2018–2024 Senate, governor and House county results
 // in a simulated reporting order, scored against the final margins; shown on /analysis/internal-methodology/turnout#results-night.
 export const NIGHT_BACKTEST = {
-  "generated": "2026-11-02",
+  "generated": "2026-11-03",
   "years": [
     {
       "year": 2018,
@@ -34,7 +34,7 @@ export const NIGHT_BACKTEST = {
     }
   ],
   "params": {
-    "sigmaNational": 3,
+    "sigmaNational": 2,
     "sigmaState": 2.5,
     "sigmaOffice": 1,
     "sigmaNonwhite": 0.75,
@@ -42,7 +42,8 @@ export const NIGHT_BACKTEST = {
     "sigmaLean": 0.5,
     "sigmaFitCounty": 6,
     "votesSat": 20000,
-    "minComplete": 0.5
+    "minComplete": 0.8,
+    "sigmaMirage": 3
   },
   "sigmaForecast": {
     "S": 6.722,
@@ -56,10 +57,10 @@ export const NIGHT_BACKTEST = {
       "name": "baseline needle (no night model)",
       "all": {
         "n": 24894,
-        "mae": 2.567,
-        "cover": 0.944,
-        "rmsz": 0.656,
-        "logs": -1.607
+        "mae": 2.62,
+        "cover": 0.941,
+        "rmsz": 0.663,
+        "logs": -1.622
       },
       "buckets": [
         {
@@ -73,42 +74,42 @@ export const NIGHT_BACKTEST = {
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.715,
-          "cover": 0.973,
-          "rmsz": 0.53,
-          "logs": -2.637
+          "mae": 4.882,
+          "cover": 0.971,
+          "rmsz": 0.545,
+          "logs": -2.653
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 3.311,
-          "cover": 0.986,
-          "rmsz": 0.452,
-          "logs": -2.346
+          "mae": 3.524,
+          "cover": 0.982,
+          "rmsz": 0.479,
+          "logs": -2.386
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.184,
-          "cover": 0.987,
-          "rmsz": 0.47,
-          "logs": -1.894
+          "mae": 2.264,
+          "cover": 0.982,
+          "rmsz": 0.478,
+          "logs": -1.927
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.103,
-          "cover": 0.964,
-          "rmsz": 0.583,
-          "logs": -1.019
+          "mae": 1.122,
+          "cover": 0.96,
+          "rmsz": 0.59,
+          "logs": -1.04
         },
         {
           "bucket": "90–99%",
           "n": 5458,
-          "mae": 0.392,
-          "cover": 0.988,
-          "rmsz": 0.389,
-          "logs": -0.489
+          "mae": 0.403,
+          "cover": 0.985,
+          "rmsz": 0.4,
+          "logs": -0.495
         }
       ],
       "offices": [
@@ -167,17 +168,17 @@ export const NIGHT_BACKTEST = {
         {
           "office": "senate",
           "n": 215,
-          "mae": 0.433
+          "mae": 0.437
         },
         {
           "office": "governor",
           "n": 215,
-          "mae": 0.265
+          "mae": 0.247
         },
         {
           "office": "house",
           "n": 108,
-          "mae": 1.287
+          "mae": 1.13
         }
       ]
     },
@@ -185,118 +186,118 @@ export const NIGHT_BACKTEST = {
       "name": "night model, live constants",
       "all": {
         "n": 24894,
-        "mae": 2.381,
-        "cover": 0.939,
-        "rmsz": 0.654,
-        "logs": -1.582
+        "mae": 2.4,
+        "cover": 0.944,
+        "rmsz": 0.631,
+        "logs": -1.595
       },
       "buckets": [
         {
           "bucket": "0% (nothing in)",
           "n": 5689,
           "mae": 4.816,
-          "cover": 0.795,
-          "rmsz": 1.053,
-          "logs": -2.364
+          "cover": 0.814,
+          "rmsz": 1.01,
+          "logs": -2.354
         },
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.342,
-          "cover": 0.98,
-          "rmsz": 0.501,
-          "logs": -2.604
+          "mae": 4.628,
+          "cover": 0.978,
+          "rmsz": 0.528,
+          "logs": -2.635
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 2.897,
-          "cover": 0.991,
-          "rmsz": 0.411,
-          "logs": -2.314
+          "mae": 3.055,
+          "cover": 0.986,
+          "rmsz": 0.42,
+          "logs": -2.358
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.041,
-          "cover": 0.991,
-          "rmsz": 0.444,
-          "logs": -1.875
+          "mae": 1.993,
+          "cover": 0.992,
+          "rmsz": 0.423,
+          "logs": -1.913
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.066,
-          "cover": 0.969,
-          "rmsz": 0.569,
-          "logs": -1.009
+          "mae": 1.007,
+          "cover": 0.97,
+          "rmsz": 0.537,
+          "logs": -1.027
         },
         {
           "bucket": "90–99%",
           "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.38,
-          "logs": -0.486
+          "mae": 0.367,
+          "cover": 0.99,
+          "rmsz": 0.366,
+          "logs": -0.482
         }
       ],
       "offices": [
         {
           "office": "senate",
           "n": 1010,
-          "mae": 4.437,
-          "cover": 0.816,
-          "rmsz": 0.972,
-          "logs": -2.31
+          "mae": 4.401,
+          "cover": 0.854,
+          "rmsz": 0.917,
+          "logs": -2.291
         },
         {
           "office": "governor",
           "n": 746,
-          "mae": 6.462,
-          "cover": 0.95,
-          "rmsz": 0.686,
+          "mae": 6.424,
+          "cover": 0.953,
+          "rmsz": 0.673,
           "logs": -2.74
         },
         {
           "office": "house",
           "n": 3933,
-          "mae": 4.601,
-          "cover": 0.761,
-          "rmsz": 1.128,
-          "logs": -2.306
+          "mae": 4.617,
+          "cover": 0.777,
+          "rmsz": 1.083,
+          "logs": -2.298
         }
       ],
       "hours": [
         {
           "hour": "by 9 PM",
           "n": 2962,
-          "mae": 4.916,
-          "cover": 0.808,
-          "rmsz": 1.041,
-          "logs": -2.351
+          "mae": 4.81,
+          "cover": 0.824,
+          "rmsz": 0.982,
+          "logs": -2.329
         },
         {
           "hour": "9–11 PM",
           "n": 2199,
-          "mae": 4.614,
-          "cover": 0.79,
-          "rmsz": 1.016,
-          "logs": -2.323
+          "mae": 4.75,
+          "cover": 0.806,
+          "rmsz": 0.992,
+          "logs": -2.334
         },
         {
           "hour": "after 11 PM",
           "n": 528,
-          "mae": 5.095,
-          "cover": 0.746,
-          "rmsz": 1.253,
-          "logs": -2.602
+          "mae": 5.12,
+          "cover": 0.79,
+          "rmsz": 1.216,
+          "logs": -2.582
         }
       ],
       "seats": [
         {
           "office": "senate",
           "n": 215,
-          "mae": 0.372
+          "mae": 0.293
         },
         {
           "office": "governor",
@@ -306,7 +307,7 @@ export const NIGHT_BACKTEST = {
         {
           "office": "house",
           "n": 108,
-          "mae": 1.241
+          "mae": 1.185
         }
       ]
     },
@@ -314,247 +315,118 @@ export const NIGHT_BACKTEST = {
       "name": "without the national term",
       "all": {
         "n": 24894,
-        "mae": 2.387,
-        "cover": 0.945,
-        "rmsz": 0.631,
-        "logs": -1.582
+        "mae": 2.402,
+        "cover": 0.946,
+        "rmsz": 0.623,
+        "logs": -1.596
       },
       "buckets": [
         {
           "bucket": "0% (nothing in)",
           "n": 5689,
-          "mae": 4.824,
-          "cover": 0.82,
-          "rmsz": 0.992,
-          "logs": -2.35
+          "mae": 4.837,
+          "cover": 0.824,
+          "rmsz": 0.99,
+          "logs": -2.352
         },
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.359,
-          "cover": 0.979,
-          "rmsz": 0.495,
-          "logs": -2.613
+          "mae": 4.616,
+          "cover": 0.978,
+          "rmsz": 0.523,
+          "logs": -2.636
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 2.913,
-          "cover": 0.991,
-          "rmsz": 0.409,
-          "logs": -2.322
+          "mae": 3.033,
+          "cover": 0.986,
+          "rmsz": 0.417,
+          "logs": -2.361
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.048,
-          "cover": 0.991,
-          "rmsz": 0.443,
-          "logs": -1.879
+          "mae": 1.996,
+          "cover": 0.993,
+          "rmsz": 0.422,
+          "logs": -1.916
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.067,
-          "cover": 0.969,
-          "rmsz": 0.569,
-          "logs": -1.01
+          "mae": 1.009,
+          "cover": 0.97,
+          "rmsz": 0.537,
+          "logs": -1.028
         },
         {
           "bucket": "90–99%",
           "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.38,
-          "logs": -0.486
+          "mae": 0.368,
+          "cover": 0.99,
+          "rmsz": 0.367,
+          "logs": -0.483
         }
       ],
       "offices": [
         {
           "office": "senate",
           "n": 1010,
-          "mae": 4.595,
-          "cover": 0.846,
-          "rmsz": 0.921,
-          "logs": -2.31
+          "mae": 4.616,
+          "cover": 0.849,
+          "rmsz": 0.917,
+          "logs": -2.309
         },
         {
           "office": "governor",
           "n": 746,
-          "mae": 6.534,
+          "mae": 6.55,
           "cover": 0.953,
-          "rmsz": 0.673,
+          "rmsz": 0.674,
           "logs": -2.745
         },
         {
           "office": "house",
           "n": 3933,
-          "mae": 4.558,
-          "cover": 0.789,
-          "rmsz": 1.059,
-          "logs": -2.286
+          "mae": 4.569,
+          "cover": 0.793,
+          "rmsz": 1.057,
+          "logs": -2.288
         }
       ],
       "hours": [
         {
           "hour": "by 9 PM",
           "n": 2962,
-          "mae": 4.857,
-          "cover": 0.826,
-          "rmsz": 0.979,
+          "mae": 4.826,
+          "cover": 0.833,
+          "rmsz": 0.974,
           "logs": -2.336
         },
         {
           "hour": "9–11 PM",
           "n": 2199,
-          "mae": 4.676,
-          "cover": 0.82,
-          "rmsz": 0.957,
-          "logs": -2.318
+          "mae": 4.746,
+          "cover": 0.821,
+          "rmsz": 0.958,
+          "logs": -2.322
         },
         {
           "hour": "after 11 PM",
           "n": 528,
-          "mae": 5.255,
+          "mae": 5.282,
           "cover": 0.788,
-          "rmsz": 1.189,
-          "logs": -2.565
+          "rmsz": 1.191,
+          "logs": -2.569
         }
       ],
       "seats": [
         {
           "office": "senate",
           "n": 215,
-          "mae": 0.419
-        },
-        {
-          "office": "governor",
-          "n": 215,
-          "mae": 0.288
-        },
-        {
-          "office": "house",
-          "n": 108,
-          "mae": 1.046
-        }
-      ]
-    },
-    {
-      "name": "without the state terms",
-      "all": {
-        "n": 24894,
-        "mae": 2.399,
-        "cover": 0.94,
-        "rmsz": 0.651,
-        "logs": -1.58
-      },
-      "buckets": [
-        {
-          "bucket": "0% (nothing in)",
-          "n": 5689,
-          "mae": 4.802,
-          "cover": 0.8,
-          "rmsz": 1.042,
-          "logs": -2.349
-        },
-        {
-          "bucket": "<10%",
-          "n": 2526,
-          "mae": 4.491,
-          "cover": 0.979,
-          "rmsz": 0.517,
-          "logs": -2.613
-        },
-        {
-          "bucket": "10–30%",
-          "n": 2134,
-          "mae": 2.991,
-          "cover": 0.989,
-          "rmsz": 0.417,
-          "logs": -2.319
-        },
-        {
-          "bucket": "30–60%",
-          "n": 3015,
-          "mae": 2.039,
-          "cover": 0.99,
-          "rmsz": 0.443,
-          "logs": -1.875
-        },
-        {
-          "bucket": "60–90%",
-          "n": 6072,
-          "mae": 1.061,
-          "cover": 0.97,
-          "rmsz": 0.568,
-          "logs": -1.008
-        },
-        {
-          "bucket": "90–99%",
-          "n": 5458,
-          "mae": 0.383,
-          "cover": 0.988,
-          "rmsz": 0.379,
-          "logs": -0.486
-        }
-      ],
-      "offices": [
-        {
-          "office": "senate",
-          "n": 1010,
-          "mae": 4.796,
-          "cover": 0.799,
-          "rmsz": 1.001,
-          "logs": -2.334
-        },
-        {
-          "office": "governor",
-          "n": 746,
-          "mae": 6.403,
-          "cover": 0.953,
-          "rmsz": 0.686,
-          "logs": -2.738
-        },
-        {
-          "office": "house",
-          "n": 3933,
-          "mae": 4.5,
-          "cover": 0.772,
-          "rmsz": 1.107,
-          "logs": -2.279
-        }
-      ],
-      "hours": [
-        {
-          "hour": "by 9 PM",
-          "n": 2962,
-          "mae": 4.911,
-          "cover": 0.801,
-          "rmsz": 1.046,
-          "logs": -2.349
-        },
-        {
-          "hour": "9–11 PM",
-          "n": 2199,
-          "mae": 4.556,
-          "cover": 0.806,
-          "rmsz": 0.999,
-          "logs": -2.307
-        },
-        {
-          "hour": "after 11 PM",
-          "n": 528,
-          "mae": 5.219,
-          "cover": 0.769,
-          "rmsz": 1.188,
-          "logs": -2.525
-        }
-      ],
-      "seats": [
-        {
-          "office": "senate",
-          "n": 215,
-          "mae": 0.405
+          "mae": 0.326
         },
         {
           "office": "governor",
@@ -564,7 +436,136 @@ export const NIGHT_BACKTEST = {
         {
           "office": "house",
           "n": 108,
-          "mae": 1.139
+          "mae": 1.102
+        }
+      ]
+    },
+    {
+      "name": "without the state terms",
+      "all": {
+        "n": 24894,
+        "mae": 2.411,
+        "cover": 0.945,
+        "rmsz": 0.628,
+        "logs": -1.593
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.794,
+          "cover": 0.819,
+          "rmsz": 0.999,
+          "logs": -2.341
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.678,
+          "cover": 0.979,
+          "rmsz": 0.531,
+          "logs": -2.636
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 3.162,
+          "cover": 0.986,
+          "rmsz": 0.431,
+          "logs": -2.364
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 2.021,
+          "cover": 0.989,
+          "rmsz": 0.425,
+          "logs": -1.915
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.006,
+          "cover": 0.97,
+          "rmsz": 0.536,
+          "logs": -1.027
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.364,
+          "cover": 0.992,
+          "rmsz": 0.364,
+          "logs": -0.482
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.7,
+          "cover": 0.815,
+          "rmsz": 0.943,
+          "logs": -2.311
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.38,
+          "cover": 0.953,
+          "rmsz": 0.674,
+          "logs": -2.74
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.517,
+          "cover": 0.795,
+          "rmsz": 1.063,
+          "logs": -2.273
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.797,
+          "cover": 0.826,
+          "rmsz": 0.985,
+          "logs": -2.327
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.671,
+          "cover": 0.819,
+          "rmsz": 0.976,
+          "logs": -2.317
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.288,
+          "cover": 0.778,
+          "rmsz": 1.163,
+          "logs": -2.52
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.363
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.316
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 1.093
         }
       ]
     },
@@ -572,128 +573,128 @@ export const NIGHT_BACKTEST = {
       "name": "without the office offsets",
       "all": {
         "n": 24894,
-        "mae": 2.377,
-        "cover": 0.942,
-        "rmsz": 0.647,
-        "logs": -1.58
+        "mae": 2.39,
+        "cover": 0.946,
+        "rmsz": 0.625,
+        "logs": -1.593
       },
       "buckets": [
         {
           "bucket": "0% (nothing in)",
           "n": 5689,
-          "mae": 4.789,
-          "cover": 0.805,
-          "rmsz": 1.035,
-          "logs": -2.35
+          "mae": 4.787,
+          "cover": 0.824,
+          "rmsz": 0.995,
+          "logs": -2.344
         },
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.357,
-          "cover": 0.983,
-          "rmsz": 0.501,
-          "logs": -2.606
+          "mae": 4.628,
+          "cover": 0.979,
+          "rmsz": 0.527,
+          "logs": -2.635
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 2.898,
-          "cover": 0.991,
-          "rmsz": 0.411,
-          "logs": -2.316
+          "mae": 3.018,
+          "cover": 0.987,
+          "rmsz": 0.418,
+          "logs": -2.358
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.045,
-          "cover": 0.991,
-          "rmsz": 0.445,
-          "logs": -1.875
+          "mae": 1.989,
+          "cover": 0.992,
+          "rmsz": 0.423,
+          "logs": -1.914
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.066,
-          "cover": 0.969,
-          "rmsz": 0.569,
-          "logs": -1.009
+          "mae": 1.008,
+          "cover": 0.97,
+          "rmsz": 0.537,
+          "logs": -1.027
         },
         {
           "bucket": "90–99%",
           "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.38,
-          "logs": -0.486
+          "mae": 0.367,
+          "cover": 0.99,
+          "rmsz": 0.366,
+          "logs": -0.482
         }
       ],
       "offices": [
         {
           "office": "senate",
           "n": 1010,
-          "mae": 4.49,
-          "cover": 0.865,
-          "rmsz": 0.957,
-          "logs": -2.3
+          "mae": 4.475,
+          "cover": 0.877,
+          "rmsz": 0.912,
+          "logs": -2.291
         },
         {
           "office": "governor",
           "n": 746,
-          "mae": 6.466,
-          "cover": 0.95,
-          "rmsz": 0.685,
+          "mae": 6.422,
+          "cover": 0.953,
+          "rmsz": 0.672,
           "logs": -2.74
         },
         {
           "office": "house",
           "n": 3933,
-          "mae": 4.548,
-          "cover": 0.763,
-          "rmsz": 1.107,
-          "logs": -2.289
+          "mae": 4.557,
+          "cover": 0.786,
+          "rmsz": 1.064,
+          "logs": -2.283
         }
       ],
       "hours": [
         {
           "hour": "by 9 PM",
           "n": 2962,
-          "mae": 4.843,
-          "cover": 0.804,
-          "rmsz": 1.028,
-          "logs": -2.342
+          "mae": 4.794,
+          "cover": 0.831,
+          "rmsz": 0.981,
+          "logs": -2.332
         },
         {
           "hour": "9–11 PM",
           "n": 2199,
-          "mae": 4.601,
-          "cover": 0.812,
-          "rmsz": 0.993,
-          "logs": -2.306
+          "mae": 4.665,
+          "cover": 0.823,
+          "rmsz": 0.963,
+          "logs": -2.311
         },
         {
           "hour": "after 11 PM",
           "n": 528,
-          "mae": 5.272,
-          "cover": 0.786,
-          "rmsz": 1.229,
-          "logs": -2.579
+          "mae": 5.255,
+          "cover": 0.795,
+          "rmsz": 1.186,
+          "logs": -2.551
         }
       ],
       "seats": [
         {
           "office": "senate",
           "n": 215,
-          "mae": 0.367
+          "mae": 0.312
         },
         {
           "office": "governor",
           "n": 215,
-          "mae": 0.321
+          "mae": 0.33
         },
         {
           "office": "house",
           "n": 108,
-          "mae": 1.009
+          "mae": 0.954
         }
       ]
     },
@@ -701,128 +702,128 @@ export const NIGHT_BACKTEST = {
       "name": "without the demographic slopes",
       "all": {
         "n": 24894,
-        "mae": 2.453,
-        "cover": 0.943,
-        "rmsz": 0.654,
-        "logs": -1.59
+        "mae": 2.469,
+        "cover": 0.945,
+        "rmsz": 0.64,
+        "logs": -1.608
       },
       "buckets": [
         {
           "bucket": "0% (nothing in)",
           "n": 5689,
-          "mae": 4.949,
-          "cover": 0.822,
-          "rmsz": 1.034,
-          "logs": -2.373
+          "mae": 4.95,
+          "cover": 0.834,
+          "rmsz": 1.005,
+          "logs": -2.374
         },
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.328,
-          "cover": 0.979,
-          "rmsz": 0.504,
-          "logs": -2.61
+          "mae": 4.536,
+          "cover": 0.978,
+          "rmsz": 0.524,
+          "logs": -2.636
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 3.122,
-          "cover": 0.988,
-          "rmsz": 0.435,
-          "logs": -2.328
+          "mae": 3.169,
+          "cover": 0.982,
+          "rmsz": 0.434,
+          "logs": -2.369
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.159,
+          "mae": 2.127,
           "cover": 0.989,
-          "rmsz": 0.467,
-          "logs": -1.887
+          "rmsz": 0.448,
+          "logs": -1.927
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.099,
+          "mae": 1.075,
           "cover": 0.964,
-          "rmsz": 0.582,
-          "logs": -1.017
+          "rmsz": 0.564,
+          "logs": -1.043
         },
         {
           "bucket": "90–99%",
           "n": 5458,
           "mae": 0.391,
-          "cover": 0.986,
-          "rmsz": 0.388,
-          "logs": -0.489
+          "cover": 0.985,
+          "rmsz": 0.389,
+          "logs": -0.491
         }
       ],
       "offices": [
         {
           "office": "senate",
           "n": 1010,
-          "mae": 5.01,
-          "cover": 0.811,
-          "rmsz": 1.012,
-          "logs": -2.37
+          "mae": 4.927,
+          "cover": 0.833,
+          "rmsz": 0.963,
+          "logs": -2.352
         },
         {
           "office": "governor",
           "n": 746,
-          "mae": 7.209,
-          "cover": 0.952,
-          "rmsz": 0.744,
-          "logs": -2.786
+          "mae": 7.166,
+          "cover": 0.953,
+          "rmsz": 0.731,
+          "logs": -2.785
         },
         {
           "office": "house",
           "n": 3933,
-          "mae": 4.504,
-          "cover": 0.8,
-          "rmsz": 1.086,
-          "logs": -2.295
+          "mae": 4.535,
+          "cover": 0.812,
+          "rmsz": 1.058,
+          "logs": -2.301
         }
       ],
       "hours": [
         {
           "hour": "by 9 PM",
           "n": 2962,
-          "mae": 4.923,
-          "cover": 0.823,
-          "rmsz": 1.033,
-          "logs": -2.367
+          "mae": 4.9,
+          "cover": 0.835,
+          "rmsz": 1.008,
+          "logs": -2.374
         },
         {
           "hour": "9–11 PM",
           "n": 2199,
-          "mae": 4.924,
-          "cover": 0.814,
-          "rmsz": 1.031,
-          "logs": -2.371
+          "mae": 4.959,
+          "cover": 0.83,
+          "rmsz": 0.998,
+          "logs": -2.369
         },
         {
           "hour": "after 11 PM",
           "n": 528,
-          "mae": 5.197,
-          "cover": 0.847,
-          "rmsz": 1.049,
-          "logs": -2.409
+          "mae": 5.19,
+          "cover": 0.848,
+          "rmsz": 1.01,
+          "logs": -2.392
         }
       ],
       "seats": [
         {
           "office": "senate",
           "n": 215,
-          "mae": 0.381
+          "mae": 0.312
         },
         {
           "office": "governor",
           "n": 215,
-          "mae": 0.367
+          "mae": 0.377
         },
         {
           "office": "house",
           "n": 108,
-          "mae": 1.009
+          "mae": 0.852
         }
       ]
     },
@@ -830,84 +831,342 @@ export const NIGHT_BACKTEST = {
       "name": "without the lean slope only",
       "all": {
         "n": 24894,
-        "mae": 2.375,
-        "cover": 0.943,
-        "rmsz": 0.643,
-        "logs": -1.58
+        "mae": 2.386,
+        "cover": 0.947,
+        "rmsz": 0.622,
+        "logs": -1.594
       },
       "buckets": [
         {
           "bucket": "0% (nothing in)",
           "n": 5689,
-          "mae": 4.784,
-          "cover": 0.813,
-          "rmsz": 1.022,
-          "logs": -2.348
+          "mae": 4.777,
+          "cover": 0.825,
+          "rmsz": 0.988,
+          "logs": -2.347
         },
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.335,
-          "cover": 0.978,
-          "rmsz": 0.501,
-          "logs": -2.606
+          "mae": 4.581,
+          "cover": 0.979,
+          "rmsz": 0.523,
+          "logs": -2.634
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 2.909,
-          "cover": 0.991,
-          "rmsz": 0.41,
-          "logs": -2.316
+          "mae": 3.036,
+          "cover": 0.987,
+          "rmsz": 0.417,
+          "logs": -2.359
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.045,
-          "cover": 0.991,
-          "rmsz": 0.444,
-          "logs": -1.876
+          "mae": 2,
+          "cover": 0.993,
+          "rmsz": 0.422,
+          "logs": -1.914
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.067,
-          "cover": 0.97,
-          "rmsz": 0.569,
-          "logs": -1.009
+          "mae": 1.01,
+          "cover": 0.971,
+          "rmsz": 0.537,
+          "logs": -1.027
         },
         {
           "bucket": "90–99%",
           "n": 5458,
-          "mae": 0.385,
-          "cover": 0.988,
-          "rmsz": 0.38,
-          "logs": -0.486
+          "mae": 0.368,
+          "cover": 0.99,
+          "rmsz": 0.368,
+          "logs": -0.483
         }
       ],
       "offices": [
         {
           "office": "senate",
           "n": 1010,
-          "mae": 4.481,
-          "cover": 0.834,
-          "rmsz": 0.956,
-          "logs": -2.303
+          "mae": 4.438,
+          "cover": 0.854,
+          "rmsz": 0.908,
+          "logs": -2.291
         },
         {
           "office": "governor",
           "n": 746,
-          "mae": 6.59,
-          "cover": 0.952,
-          "rmsz": 0.696,
+          "mae": 6.568,
+          "cover": 0.953,
+          "rmsz": 0.682,
           "logs": -2.748
         },
         {
           "office": "house",
           "n": 3933,
-          "mae": 4.519,
-          "cover": 0.781,
-          "rmsz": 1.089,
+          "mae": 4.525,
+          "cover": 0.793,
+          "rmsz": 1.054,
+          "logs": -2.285
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.807,
+          "cover": 0.836,
+          "rmsz": 0.968,
+          "logs": -2.327
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.656,
+          "cover": 0.819,
+          "rmsz": 0.958,
+          "logs": -2.318
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.115,
+          "cover": 0.786,
+          "rmsz": 1.198,
+          "logs": -2.58
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.307
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.335
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 1.037
+        }
+      ]
+    },
+    {
+      "name": "night share 1 (all of the prior)",
+      "all": {
+        "n": 24894,
+        "mae": 2.4,
+        "cover": 0.938,
+        "rmsz": 0.661,
+        "logs": -1.599
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.816,
+          "cover": 0.79,
+          "rmsz": 1.088,
+          "logs": -2.384
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.628,
+          "cover": 0.977,
+          "rmsz": 0.533,
+          "logs": -2.627
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 3.055,
+          "cover": 0.985,
+          "rmsz": 0.424,
+          "logs": -2.35
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 1.993,
+          "cover": 0.992,
+          "rmsz": 0.426,
+          "logs": -1.907
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.007,
+          "cover": 0.97,
+          "rmsz": 0.538,
+          "logs": -1.024
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.367,
+          "cover": 0.99,
+          "rmsz": 0.366,
+          "logs": -0.482
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.401,
+          "cover": 0.812,
+          "rmsz": 0.967,
+          "logs": -2.296
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.424,
+          "cover": 0.953,
+          "rmsz": 0.679,
+          "logs": -2.734
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.617,
+          "cover": 0.754,
+          "rmsz": 1.177,
+          "logs": -2.341
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.81,
+          "cover": 0.811,
+          "rmsz": 1.031,
+          "logs": -2.34
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.75,
+          "cover": 0.779,
+          "rmsz": 1.082,
+          "logs": -2.363
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.12,
+          "cover": 0.723,
+          "rmsz": 1.387,
+          "logs": -2.726
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.293
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.33
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 1.185
+        }
+      ]
+    },
+    {
+      "name": "night share 0.25",
+      "all": {
+        "n": 24894,
+        "mae": 2.4,
+        "cover": 0.946,
+        "rmsz": 0.618,
+        "logs": -1.595
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.816,
+          "cover": 0.823,
+          "rmsz": 0.977,
+          "logs": -2.346
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.628,
+          "cover": 0.978,
+          "rmsz": 0.526,
+          "logs": -2.638
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 3.055,
+          "cover": 0.987,
+          "rmsz": 0.418,
+          "logs": -2.363
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 1.993,
+          "cover": 0.992,
+          "rmsz": 0.421,
+          "logs": -1.916
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.007,
+          "cover": 0.971,
+          "rmsz": 0.536,
+          "logs": -1.028
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.367,
+          "cover": 0.99,
+          "rmsz": 0.366,
+          "logs": -0.482
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.401,
+          "cover": 0.864,
+          "rmsz": 0.896,
+          "logs": -2.291
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.424,
+          "cover": 0.953,
+          "rmsz": 0.67,
+          "logs": -2.743
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.617,
+          "cover": 0.787,
+          "rmsz": 1.044,
           "logs": -2.284
         }
       ],
@@ -915,26 +1174,413 @@ export const NIGHT_BACKTEST = {
         {
           "hour": "by 9 PM",
           "n": 2962,
-          "mae": 4.862,
-          "cover": 0.823,
-          "rmsz": 1.006,
-          "logs": -2.33
+          "mae": 4.81,
+          "cover": 0.83,
+          "rmsz": 0.957,
+          "logs": -2.324
         },
         {
           "hour": "9–11 PM",
           "n": 2199,
-          "mae": 4.593,
-          "cover": 0.809,
-          "rmsz": 0.987,
-          "logs": -2.313
+          "mae": 4.75,
+          "cover": 0.82,
+          "rmsz": 0.956,
+          "logs": -2.328
         },
         {
           "hour": "after 11 PM",
           "n": 528,
-          "mae": 5.14,
-          "cover": 0.769,
-          "rmsz": 1.233,
-          "logs": -2.599
+          "mae": 5.12,
+          "cover": 0.792,
+          "rmsz": 1.157,
+          "logs": -2.545
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.293
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.33
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 1.185
+        }
+      ]
+    },
+    {
+      "name": "counties from 20% counted",
+      "all": {
+        "n": 24894,
+        "mae": 2.335,
+        "cover": 0.943,
+        "rmsz": 0.626,
+        "logs": -1.589
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.766,
+          "cover": 0.807,
+          "rmsz": 1.009,
+          "logs": -2.344
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.283,
+          "cover": 0.98,
+          "rmsz": 0.491,
+          "logs": -2.611
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 2.884,
+          "cover": 0.989,
+          "rmsz": 0.396,
+          "logs": -2.344
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 1.961,
+          "cover": 0.993,
+          "rmsz": 0.417,
+          "logs": -1.909
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.008,
+          "cover": 0.971,
+          "rmsz": 0.538,
+          "logs": -1.027
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.368,
+          "cover": 0.99,
+          "rmsz": 0.367,
+          "logs": -0.483
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.551,
+          "cover": 0.813,
+          "rmsz": 0.955,
+          "logs": -2.32
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.59,
+          "cover": 0.952,
+          "rmsz": 0.691,
+          "logs": -2.751
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.475,
+          "cover": 0.778,
+          "rmsz": 1.072,
+          "logs": -2.273
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.897,
+          "cover": 0.814,
+          "rmsz": 1.008,
+          "logs": -2.342
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.526,
+          "cover": 0.81,
+          "rmsz": 0.961,
+          "logs": -2.298
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.034,
+          "cover": 0.756,
+          "rmsz": 1.194,
+          "logs": -2.551
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.312
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.349
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 0.806
+        }
+      ]
+    },
+    {
+      "name": "counties from 80% counted",
+      "all": {
+        "n": 24894,
+        "mae": 2.4,
+        "cover": 0.944,
+        "rmsz": 0.631,
+        "logs": -1.595
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.816,
+          "cover": 0.814,
+          "rmsz": 1.01,
+          "logs": -2.354
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.628,
+          "cover": 0.978,
+          "rmsz": 0.528,
+          "logs": -2.635
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 3.055,
+          "cover": 0.986,
+          "rmsz": 0.42,
+          "logs": -2.358
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 1.993,
+          "cover": 0.992,
+          "rmsz": 0.423,
+          "logs": -1.913
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.007,
+          "cover": 0.97,
+          "rmsz": 0.537,
+          "logs": -1.027
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.367,
+          "cover": 0.99,
+          "rmsz": 0.366,
+          "logs": -0.482
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.401,
+          "cover": 0.854,
+          "rmsz": 0.917,
+          "logs": -2.291
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.424,
+          "cover": 0.953,
+          "rmsz": 0.673,
+          "logs": -2.74
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.617,
+          "cover": 0.777,
+          "rmsz": 1.083,
+          "logs": -2.298
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.81,
+          "cover": 0.824,
+          "rmsz": 0.982,
+          "logs": -2.329
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.75,
+          "cover": 0.806,
+          "rmsz": 0.992,
+          "logs": -2.334
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.12,
+          "cover": 0.79,
+          "rmsz": 1.216,
+          "logs": -2.582
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.293
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.33
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 1.185
+        }
+      ]
+    },
+    {
+      "name": "without the early-vote term",
+      "all": {
+        "n": 24894,
+        "mae": 2.416,
+        "cover": 0.943,
+        "rmsz": 0.64,
+        "logs": -1.593
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.816,
+          "cover": 0.814,
+          "rmsz": 1.01,
+          "logs": -2.354
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.618,
+          "cover": 0.978,
+          "rmsz": 0.528,
+          "logs": -2.634
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 3.042,
+          "cover": 0.986,
+          "rmsz": 0.423,
+          "logs": -2.35
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 2.018,
+          "cover": 0.99,
+          "rmsz": 0.435,
+          "logs": -1.901
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.054,
+          "cover": 0.971,
+          "rmsz": 0.564,
+          "logs": -1.022
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.387,
+          "cover": 0.988,
+          "rmsz": 0.384,
+          "logs": -0.488
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.401,
+          "cover": 0.854,
+          "rmsz": 0.917,
+          "logs": -2.291
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.424,
+          "cover": 0.953,
+          "rmsz": 0.673,
+          "logs": -2.74
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.617,
+          "cover": 0.777,
+          "rmsz": 1.083,
+          "logs": -2.298
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.81,
+          "cover": 0.824,
+          "rmsz": 0.982,
+          "logs": -2.329
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.75,
+          "cover": 0.806,
+          "rmsz": 0.992,
+          "logs": -2.334
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.12,
+          "cover": 0.79,
+          "rmsz": 1.216,
+          "logs": -2.582
         }
       ],
       "seats": [
@@ -946,260 +1592,260 @@ export const NIGHT_BACKTEST = {
         {
           "office": "governor",
           "n": 215,
-          "mae": 0.33
+          "mae": 0.344
         },
         {
           "office": "house",
           "n": 108,
-          "mae": 1.12
+          "mae": 1.111
         }
       ]
     },
     {
-      "name": "night share 1 (all of the prior)",
+      "name": "weights ∝ votes (sat 200k)",
       "all": {
         "n": 24894,
-        "mae": 2.381,
-        "cover": 0.932,
-        "rmsz": 0.707,
-        "logs": -1.593
+        "mae": 2.405,
+        "cover": 0.947,
+        "rmsz": 0.625,
+        "logs": -1.601
       },
       "buckets": [
         {
           "bucket": "0% (nothing in)",
           "n": 5689,
-          "mae": 4.816,
-          "cover": 0.764,
-          "rmsz": 1.189,
-          "logs": -2.423
+          "mae": 4.834,
+          "cover": 0.827,
+          "rmsz": 0.998,
+          "logs": -2.356
         },
         {
           "bucket": "<10%",
           "n": 2526,
-          "mae": 4.342,
+          "mae": 4.606,
           "cover": 0.979,
-          "rmsz": 0.509,
-          "logs": -2.591
+          "rmsz": 0.525,
+          "logs": -2.636
         },
         {
           "bucket": "10–30%",
           "n": 2134,
-          "mae": 2.897,
-          "cover": 0.991,
-          "rmsz": 0.416,
-          "logs": -2.303
+          "mae": 3.092,
+          "cover": 0.986,
+          "rmsz": 0.422,
+          "logs": -2.37
         },
         {
           "bucket": "30–60%",
           "n": 3015,
-          "mae": 2.041,
+          "mae": 1.983,
           "cover": 0.991,
-          "rmsz": 0.447,
-          "logs": -1.869
+          "rmsz": 0.414,
+          "logs": -1.926
         },
         {
           "bucket": "60–90%",
           "n": 6072,
-          "mae": 1.066,
-          "cover": 0.969,
-          "rmsz": 0.57,
-          "logs": -1.007
+          "mae": 1.008,
+          "cover": 0.971,
+          "rmsz": 0.533,
+          "logs": -1.036
         },
         {
           "bucket": "90–99%",
           "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.38,
-          "logs": -0.486
+          "mae": 0.375,
+          "cover": 0.99,
+          "rmsz": 0.371,
+          "logs": -0.485
         }
       ],
       "offices": [
         {
           "office": "senate",
           "n": 1010,
-          "mae": 4.437,
-          "cover": 0.78,
-          "rmsz": 1.095,
-          "logs": -2.35
-        },
-        {
-          "office": "governor",
-          "n": 746,
-          "mae": 6.462,
-          "cover": 0.95,
-          "rmsz": 0.7,
-          "logs": -2.729
-        },
-        {
-          "office": "house",
-          "n": 3933,
-          "mae": 4.601,
-          "cover": 0.724,
-          "rmsz": 1.282,
-          "logs": -2.384
-        }
-      ],
-      "hours": [
-        {
-          "hour": "by 9 PM",
-          "n": 2962,
-          "mae": 4.916,
-          "cover": 0.779,
-          "rmsz": 1.143,
-          "logs": -2.382
-        },
-        {
-          "hour": "9–11 PM",
-          "n": 2199,
-          "mae": 4.614,
-          "cover": 0.753,
-          "rmsz": 1.167,
-          "logs": -2.383
-        },
-        {
-          "hour": "after 11 PM",
-          "n": 528,
-          "mae": 5.095,
-          "cover": 0.723,
-          "rmsz": 1.495,
-          "logs": -2.824
-        }
-      ],
-      "seats": [
-        {
-          "office": "senate",
-          "n": 215,
-          "mae": 0.372
-        },
-        {
-          "office": "governor",
-          "n": 215,
-          "mae": 0.33
-        },
-        {
-          "office": "house",
-          "n": 108,
-          "mae": 1.241
-        }
-      ]
-    },
-    {
-      "name": "night share 0.25",
-      "all": {
-        "n": 24894,
-        "mae": 2.381,
-        "cover": 0.944,
-        "rmsz": 0.633,
-        "logs": -1.581
-      },
-      "buckets": [
-        {
-          "bucket": "0% (nothing in)",
-          "n": 5689,
-          "mae": 4.816,
-          "cover": 0.815,
-          "rmsz": 0.997,
-          "logs": -2.349
-        },
-        {
-          "bucket": "<10%",
-          "n": 2526,
-          "mae": 4.342,
-          "cover": 0.981,
-          "rmsz": 0.497,
-          "logs": -2.612
-        },
-        {
-          "bucket": "10–30%",
-          "n": 2134,
-          "mae": 2.897,
-          "cover": 0.991,
-          "rmsz": 0.408,
-          "logs": -2.32
-        },
-        {
-          "bucket": "30–60%",
-          "n": 3015,
-          "mae": 2.041,
-          "cover": 0.991,
-          "rmsz": 0.442,
-          "logs": -1.878
-        },
-        {
-          "bucket": "60–90%",
-          "n": 6072,
-          "mae": 1.066,
-          "cover": 0.97,
-          "rmsz": 0.568,
-          "logs": -1.01
-        },
-        {
-          "bucket": "90–99%",
-          "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.379,
-          "logs": -0.486
-        }
-      ],
-      "offices": [
-        {
-          "office": "senate",
-          "n": 1010,
-          "mae": 4.437,
-          "cover": 0.842,
+          "mae": 4.58,
+          "cover": 0.84,
           "rmsz": 0.928,
-          "logs": -2.305
+          "logs": -2.311
         },
         {
           "office": "governor",
           "n": 746,
-          "mae": 6.462,
-          "cover": 0.95,
-          "rmsz": 0.68,
-          "logs": -2.745
+          "mae": 6.706,
+          "cover": 0.953,
+          "rmsz": 0.688,
+          "logs": -2.753
         },
         {
           "office": "house",
           "n": 3933,
-          "mae": 4.601,
-          "cover": 0.782,
-          "rmsz": 1.062,
-          "logs": -2.285
+          "mae": 4.544,
+          "cover": 0.8,
+          "rmsz": 1.063,
+          "logs": -2.292
         }
       ],
       "hours": [
         {
           "hour": "by 9 PM",
           "n": 2962,
-          "mae": 4.916,
-          "cover": 0.821,
-          "rmsz": 0.993,
-          "logs": -2.341
+          "mae": 4.915,
+          "cover": 0.832,
+          "rmsz": 1.004,
+          "logs": -2.368
         },
         {
           "hour": "9–11 PM",
           "n": 2199,
-          "mae": 4.614,
-          "cover": 0.818,
-          "rmsz": 0.956,
+          "mae": 4.679,
+          "cover": 0.835,
+          "rmsz": 0.958,
           "logs": -2.311
         },
         {
           "hour": "after 11 PM",
           "n": 528,
-          "mae": 5.095,
+          "mae": 5.027,
           "cover": 0.767,
-          "rmsz": 1.169,
-          "logs": -2.547
+          "rmsz": 1.119,
+          "logs": -2.472
         }
       ],
       "seats": [
         {
           "office": "senate",
           "n": 215,
-          "mae": 0.372
+          "mae": 0.367
+        },
+        {
+          "office": "governor",
+          "n": 215,
+          "mae": 0.344
+        },
+        {
+          "office": "house",
+          "n": 108,
+          "mae": 0.907
+        }
+      ]
+    },
+    {
+      "name": "lean slope prior σ 2",
+      "all": {
+        "n": 24894,
+        "mae": 2.414,
+        "cover": 0.925,
+        "rmsz": 0.744,
+        "logs": -1.626
+      },
+      "buckets": [
+        {
+          "bucket": "0% (nothing in)",
+          "n": 5689,
+          "mae": 4.862,
+          "cover": 0.736,
+          "rmsz": 1.298,
+          "logs": -2.512
+        },
+        {
+          "bucket": "<10%",
+          "n": 2526,
+          "mae": 4.658,
+          "cover": 0.974,
+          "rmsz": 0.546,
+          "logs": -2.618
+        },
+        {
+          "bucket": "10–30%",
+          "n": 2134,
+          "mae": 3.068,
+          "cover": 0.985,
+          "rmsz": 0.432,
+          "logs": -2.341
+        },
+        {
+          "bucket": "30–60%",
+          "n": 3015,
+          "mae": 1.994,
+          "cover": 0.992,
+          "rmsz": 0.429,
+          "logs": -1.902
+        },
+        {
+          "bucket": "60–90%",
+          "n": 6072,
+          "mae": 1.007,
+          "cover": 0.97,
+          "rmsz": 0.54,
+          "logs": -1.022
+        },
+        {
+          "bucket": "90–99%",
+          "n": 5458,
+          "mae": 0.367,
+          "cover": 0.99,
+          "rmsz": 0.366,
+          "logs": -0.482
+        }
+      ],
+      "offices": [
+        {
+          "office": "senate",
+          "n": 1010,
+          "mae": 4.419,
+          "cover": 0.771,
+          "rmsz": 1.173,
+          "logs": -2.402
+        },
+        {
+          "office": "governor",
+          "n": 746,
+          "mae": 6.389,
+          "cover": 0.952,
+          "rmsz": 0.698,
+          "logs": -2.72
+        },
+        {
+          "office": "house",
+          "n": 3933,
+          "mae": 4.686,
+          "cover": 0.686,
+          "rmsz": 1.411,
+          "logs": -2.501
+        }
+      ],
+      "hours": [
+        {
+          "hour": "by 9 PM",
+          "n": 2962,
+          "mae": 4.875,
+          "cover": 0.745,
+          "rmsz": 1.252,
+          "logs": -2.466
+        },
+        {
+          "hour": "9–11 PM",
+          "n": 2199,
+          "mae": 4.782,
+          "cover": 0.73,
+          "rmsz": 1.271,
+          "logs": -2.472
+        },
+        {
+          "hour": "after 11 PM",
+          "n": 528,
+          "mae": 5.126,
+          "cover": 0.706,
+          "rmsz": 1.62,
+          "logs": -2.939
+        }
+      ],
+      "seats": [
+        {
+          "office": "senate",
+          "n": 215,
+          "mae": 0.302
         },
         {
           "office": "governor",
@@ -1209,265 +1855,7 @@ export const NIGHT_BACKTEST = {
         {
           "office": "house",
           "n": 108,
-          "mae": 1.241
-        }
-      ]
-    },
-    {
-      "name": "counties from 20% counted",
-      "all": {
-        "n": 24894,
-        "mae": 2.362,
-        "cover": 0.939,
-        "rmsz": 0.651,
-        "logs": -1.579
-      },
-      "buckets": [
-        {
-          "bucket": "0% (nothing in)",
-          "n": 5689,
-          "mae": 4.771,
-          "cover": 0.796,
-          "rmsz": 1.046,
-          "logs": -2.351
-        },
-        {
-          "bucket": "<10%",
-          "n": 2526,
-          "mae": 4.214,
-          "cover": 0.981,
-          "rmsz": 0.489,
-          "logs": -2.596
-        },
-        {
-          "bucket": "10–30%",
-          "n": 2134,
-          "mae": 2.916,
-          "cover": 0.991,
-          "rmsz": 0.411,
-          "logs": -2.313
-        },
-        {
-          "bucket": "30–60%",
-          "n": 3015,
-          "mae": 2.056,
-          "cover": 0.991,
-          "rmsz": 0.446,
-          "logs": -1.875
-        },
-        {
-          "bucket": "60–90%",
-          "n": 6072,
-          "mae": 1.067,
-          "cover": 0.969,
-          "rmsz": 0.57,
-          "logs": -1.009
-        },
-        {
-          "bucket": "90–99%",
-          "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.38,
-          "logs": -0.486
-        }
-      ],
-      "offices": [
-        {
-          "office": "senate",
-          "n": 1010,
-          "mae": 4.562,
-          "cover": 0.81,
-          "rmsz": 0.997,
-          "logs": -2.331
-        },
-        {
-          "office": "governor",
-          "n": 746,
-          "mae": 6.61,
-          "cover": 0.95,
-          "rmsz": 0.7,
-          "logs": -2.749
-        },
-        {
-          "office": "house",
-          "n": 3933,
-          "mae": 4.476,
-          "cover": 0.763,
-          "rmsz": 1.111,
-          "logs": -2.281
-        }
-      ],
-      "hours": [
-        {
-          "hour": "by 9 PM",
-          "n": 2962,
-          "mae": 4.911,
-          "cover": 0.8,
-          "rmsz": 1.044,
-          "logs": -2.348
-        },
-        {
-          "hour": "9–11 PM",
-          "n": 2199,
-          "mae": 4.52,
-          "cover": 0.8,
-          "rmsz": 0.997,
-          "logs": -2.301
-        },
-        {
-          "hour": "after 11 PM",
-          "n": 528,
-          "mae": 5.034,
-          "cover": 0.756,
-          "rmsz": 1.235,
-          "logs": -2.578
-        }
-      ],
-      "seats": [
-        {
-          "office": "senate",
-          "n": 215,
-          "mae": 0.381
-        },
-        {
-          "office": "governor",
-          "n": 215,
-          "mae": 0.349
-        },
-        {
-          "office": "house",
-          "n": 108,
-          "mae": 1.12
-        }
-      ]
-    },
-    {
-      "name": "counties from 80% counted",
-      "all": {
-        "n": 24894,
-        "mae": 2.396,
-        "cover": 0.94,
-        "rmsz": 0.652,
-        "logs": -1.584
-      },
-      "buckets": [
-        {
-          "bucket": "0% (nothing in)",
-          "n": 5689,
-          "mae": 4.83,
-          "cover": 0.801,
-          "rmsz": 1.046,
-          "logs": -2.363
-        },
-        {
-          "bucket": "<10%",
-          "n": 2526,
-          "mae": 4.477,
-          "cover": 0.976,
-          "rmsz": 0.519,
-          "logs": -2.616
-        },
-        {
-          "bucket": "10–30%",
-          "n": 2134,
-          "mae": 2.898,
-          "cover": 0.99,
-          "rmsz": 0.412,
-          "logs": -2.318
-        },
-        {
-          "bucket": "30–60%",
-          "n": 3015,
-          "mae": 2.03,
-          "cover": 0.991,
-          "rmsz": 0.441,
-          "logs": -1.875
-        },
-        {
-          "bucket": "60–90%",
-          "n": 6072,
-          "mae": 1.063,
-          "cover": 0.97,
-          "rmsz": 0.568,
-          "logs": -1.008
-        },
-        {
-          "bucket": "90–99%",
-          "n": 5458,
-          "mae": 0.384,
-          "cover": 0.988,
-          "rmsz": 0.379,
-          "logs": -0.486
-        }
-      ],
-      "offices": [
-        {
-          "office": "senate",
-          "n": 1010,
-          "mae": 4.393,
-          "cover": 0.834,
-          "rmsz": 0.95,
-          "logs": -2.294
-        },
-        {
-          "office": "governor",
-          "n": 746,
-          "mae": 6.409,
-          "cover": 0.952,
-          "rmsz": 0.679,
-          "logs": -2.736
-        },
-        {
-          "office": "house",
-          "n": 3933,
-          "mae": 4.642,
-          "cover": 0.765,
-          "rmsz": 1.124,
-          "logs": -2.31
-        }
-      ],
-      "hours": [
-        {
-          "hour": "by 9 PM",
-          "n": 2962,
-          "mae": 4.822,
-          "cover": 0.817,
-          "rmsz": 1.011,
-          "logs": -2.332
-        },
-        {
-          "hour": "9–11 PM",
-          "n": 2199,
-          "mae": 4.772,
-          "cover": 0.794,
-          "rmsz": 1.035,
-          "logs": -2.347
-        },
-        {
-          "hour": "after 11 PM",
-          "n": 528,
-          "mae": 5.115,
-          "cover": 0.748,
-          "rmsz": 1.258,
-          "logs": -2.61
-        }
-      ],
-      "seats": [
-        {
-          "office": "senate",
-          "n": 215,
-          "mae": 0.372
-        },
-        {
-          "office": "governor",
-          "n": 215,
-          "mae": 0.316
-        },
-        {
-          "office": "house",
-          "n": 108,
-          "mae": 1.194
+          "mae": 1.231
         }
       ]
     }

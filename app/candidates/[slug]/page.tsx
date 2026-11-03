@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { CandidateHistoryEntry } from "@/lib/candidateIndex";
-import { candidatePhoto } from "@/lib/candidatePhotos";
+import { candidatePhoto, candidatePhotosBySlug } from "@/lib/candidatePhotos";
 import { getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
 import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
@@ -119,7 +119,9 @@ export default async function CandidatePage({
     name: leg!.name, slug: leg!.slug, party: legParty, tab: "house" as const, state: leg!.stateName,
     currentPosition: leg!.position, currentRace: undefined, history: [],
   };
-  const photo = candidatePhoto(candidate.name, candidate.state);
+  // The photo registry is keyed by name and holds federal and governor candidates only, so a
+  // legislator with no federal record who shares a name ("elizabeth-warren-ca") is someone else.
+  const photo = federal ? candidatePhoto(candidate.name, candidate.state) : candidatePhotosBySlug[leg!.slug] ?? null;
   const accent = partyAccent(candidate.party);
   const subtle = partySubtle(candidate.party);
 

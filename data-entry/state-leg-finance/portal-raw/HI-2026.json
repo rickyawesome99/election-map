@@ -1,1264 +1,1094 @@
 {
  "state": "HI",
  "cycle": 2026,
- "source": "Hawaii Campaign Spending Commission disclosure reports (total contributions, election period to date)",
- "fetched": "2026-10-17",
- "dataThrough": "10/17/2026",
+ "source": "Hawaii Campaign Spending Commission (itemized contributions over $100 only)",
+ "fetched": "2026-11-02",
+ "dataThrough": "11/02/2026",
  "candidates": [
   {
-   "name": "Reno Abihai",
+   "name": "Takenouchi, Jenna",
    "chamber": "house",
-   "contributions": 37338.87
+   "reg": "CC11744",
+   "period": "2024-2026",
+   "contributions": 42850.0
   },
   {
-   "name": "Micah Aiu",
+   "name": "Knight, Angela",
    "chamber": "house",
-   "contributions": 86487.64
+   "reg": "CC12125",
+   "period": "2024-2026",
+   "contributions": 5823.0
   },
   {
-   "name": "David Alcos",
+   "name": "Marten, Lisa",
    "chamber": "house",
-   "contributions": 16529.59
+   "reg": "CC11541",
+   "period": "2024-2026",
+   "contributions": 12300.0
   },
   {
-   "name": "Julia Allen",
+   "name": "Weaver, Charla",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC12075",
+   "period": "2024-2026",
+   "contributions": 55023.21
   },
   {
-   "name": "Nadia Alves",
+   "name": "Kalama, Micah",
    "chamber": "house",
-   "contributions": 30164.75
+   "reg": "CC12117",
+   "period": "2024-2026",
+   "contributions": 6830.0
   },
   {
-   "name": "Terez Amato",
+   "name": "Youngstrom, Rocklin",
    "chamber": "house",
-   "contributions": 16177.45
+   "reg": "CC12199",
+   "period": "2024-2026",
+   "contributions": 650.0
   },
   {
-   "name": "Brittany Anderson",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Ikaika* Anderson",
-   "chamber": null,
-   "contributions": 30323.85
-  },
-  {
-   "name": "Jillian Anderson",
+   "name": "Kitagawa, Lisa",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC11341",
+   "period": "2024-2026",
+   "contributions": 42000.0
   },
   {
-   "name": "Henry Aquino",
+   "name": "Nakamura, Nadine",
+   "chamber": "house",
+   "reg": "CC10590",
+   "period": "2024-2026",
+   "contributions": 121001.04
+  },
+  {
+   "name": "Alves, Nadia",
+   "chamber": "house",
+   "reg": "CC12109",
+   "period": "2024-2026",
+   "contributions": 24602.0
+  },
+  {
+   "name": "Lowen, Nicole",
+   "chamber": "house",
+   "reg": "CC10861",
+   "period": "2024-2026",
+   "contributions": 17324.22
+  },
+  {
+   "name": "Nagatani, Anthony",
+   "chamber": "house",
+   "reg": "CC12110",
+   "period": "2024-2026",
+   "contributions": 35550.0
+  },
+  {
+   "name": "Aynessazian, Tanya",
    "chamber": "senate",
-   "contributions": 35100.0
+   "reg": "CC12019",
+   "period": "2024-2026",
+   "contributions": 3166.0
   },
   {
-   "name": "Josiah Araki",
+   "name": "Abihai, Reno",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC12091",
+   "period": "2024-2026",
+   "contributions": 36264.75
   },
   {
-   "name": "Gregory Arianoff",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Kimberly Arianoff",
+   "name": "Rhoads, Karl",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC10195",
+   "period": "2022-2026",
+   "contributions": 35621.17
   },
   {
-   "name": "Dylan Armstrong",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Robert Armstrong",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "David Asing",
-   "chamber": "house",
-   "contributions": 600.0
-  },
-  {
-   "name": "Ranell Asuega-Fualaau",
-   "chamber": "house",
-   "contributions": 1778.12
-  },
-  {
-   "name": "Brenton Awa",
+   "name": "McDermott, Bob",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC12081",
+   "period": "2022-2026",
+   "contributions": 18867.92
   },
   {
-   "name": "P.M.* Azinga",
+   "name": "Kila, Darius",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC11780",
+   "period": "2024-2026",
+   "contributions": 152841.06
   },
   {
-   "name": "Karl Baker",
-   "chamber": null,
-   "contributions": 16025.0
-  },
-  {
-   "name": "Rosalyn Baker",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Ernest Balinbin",
+   "name": "Souza, Kanani",
    "chamber": "house",
-   "contributions": 660.0
+   "reg": "CC11574",
+   "period": "2024-2026",
+   "contributions": 10950.0
   },
   {
-   "name": "Eric Barsatan",
+   "name": "Barsatan, Eric",
    "chamber": "house",
-   "contributions": 1300.0
+   "reg": "CC12194",
+   "period": "2024-2026",
+   "contributions": 1200.0
   },
   {
-   "name": "Patricia Beekman",
-   "chamber": "senate",
-   "contributions": 25.0
-  },
-  {
-   "name": "Della Belatti",
-   "chamber": null,
-   "contributions": 133445.94
-  },
-  {
-   "name": "Tom Brower",
+   "name": "Dupio, Gaius II",
    "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Nani Brown",
-   "chamber": "senate",
-   "contributions": 11230.26
-  },
-  {
-   "name": "Travis Bumanglag",
-   "chamber": "house",
-   "contributions": 985.0
-  },
-  {
-   "name": "Romy Cachola",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Ernest Caravalho",
-   "chamber": "house",
-   "contributions": 1105.0
-  },
-  {
-   "name": "Hope Cermelj",
-   "chamber": "house",
-   "contributions": 620.0
-  },
-  {
-   "name": "Hope Cermelj",
-   "chamber": "house",
-   "contributions": 620.0
-  },
-  {
-   "name": "Hope Cermelj",
-   "chamber": "house",
-   "contributions": 620.0
-  },
-  {
-   "name": "Dickie Chang",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Kelton Chang",
-   "chamber": null,
-   "contributions": 2900.0
-  },
-  {
-   "name": "Stanley Chang",
-   "chamber": "senate",
-   "contributions": 149478.46
-  },
-  {
-   "name": "Corinne Ching",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Wallyn Christian",
-   "chamber": "senate",
-   "contributions": 13048.33
-  },
-  {
-   "name": "Cory Chun",
-   "chamber": "house",
-   "contributions": 36385.0
-  },
-  {
-   "name": "Cory Chun",
-   "chamber": "house",
-   "contributions": 36385.0
-  },
-  {
-   "name": "John Clark",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Linda Clark",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Mark Clemente",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Roger Clemente",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Misty Cluett",
-   "chamber": "house",
-   "contributions": 5915.0
-  },
-  {
-   "name": "Jeffrey Coakley",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Elle Cochran",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Timothy Connelly",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Richard Creagan",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "David Croswell",
-   "chamber": "senate",
-   "contributions": 7561.15
-  },
-  {
-   "name": "Jocelyn Cruz",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Jamaica Cullen",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Sy Cullen",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Danny de Gracia",
-   "chamber": "house",
-   "contributions": 26474.0
-  },
-  {
-   "name": "Shotaro Dabbs",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Asheemo Daily",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Tim Dalhouse",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Blessingstar De La Cruz",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Lynn DeCoite",
-   "chamber": "senate",
-   "contributions": 121242.9
-  },
-  {
-   "name": "Samantha DeCorte",
-   "chamber": "senate",
-   "contributions": 3250.0
-  },
-  {
-   "name": "Donovan Dela Cruz",
-   "chamber": "senate",
-   "contributions": 462665.18
-  },
-  {
-   "name": "Desire DeSoto",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Gaius II Dupio",
-   "chamber": "house",
+   "reg": "CC11988",
+   "period": "2024-2026",
    "contributions": 200.0
   },
   {
-   "name": "Brandon Elefante",
+   "name": "Rosenlee, Corey",
+   "chamber": "house",
+   "reg": "CC11708",
+   "period": "2024-2026",
+   "contributions": 26625.0
+  },
+  {
+   "name": "Char, Nathaniel",
+   "chamber": "house",
+   "reg": "CC12076",
+   "period": "2024-2026",
+   "contributions": 61961.66
+  },
+  {
+   "name": "Poepoe, Mahinamalamalama",
+   "chamber": "house",
+   "reg": "CC11892",
+   "period": "2024-2026",
+   "contributions": 13893.2
+  },
+  {
+   "name": "Mizuno, John",
+   "chamber": "house",
+   "reg": "CC10241",
+   "period": "2024-2026",
+   "contributions": 19350.0
+  },
+  {
+   "name": "Fukunaga, Carol",
    "chamber": "senate",
-   "contributions": 59420.25
+   "reg": "CC10284",
+   "period": "2022-2026",
+   "contributions": 38850.0
   },
   {
-   "name": "Stacelynn Eli",
+   "name": "Quilingking, Tess*",
+   "chamber": "house",
+   "reg": "CC12204",
+   "period": "2024-2026",
+   "contributions": 925.0
+  },
+  {
+   "name": "Paris, Anthony",
+   "chamber": "house",
+   "reg": "CC11599",
+   "period": "2024-2026",
+   "contributions": 14400.0
+  },
+  {
+   "name": "Gabbard, Mike",
    "chamber": "senate",
-   "contributions": 20.0
+   "reg": "CC10279",
+   "period": "2022-2026",
+   "contributions": 1416.96
   },
   {
-   "name": "Kalani English",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Jason Espero",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Cindy Evans",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Luke Evslin",
+   "name": "Everett, Christina",
    "chamber": "house",
-   "contributions": 36325.0
+   "reg": "CC12064",
+   "period": "2024-2026",
+   "contributions": 6765.48
   },
   {
-   "name": "Richard Fale",
+   "name": "Test",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC12073",
+   "period": "2024-2026",
+   "contributions": 28750.0
   },
   {
-   "name": "Kurt* Fevella",
-   "chamber": "senate",
-   "contributions": 37731.96
-  },
-  {
-   "name": "Christopher Fidelibus",
+   "name": "Kaapu, Carole",
    "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Frederick* Fogel",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Lori Ford",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Beth Fukumoto",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Elton Fukumoto",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Carol Fukunaga",
-   "chamber": "senate",
-   "contributions": 39300.0
-  },
-  {
-   "name": "Mike Gabbard",
-   "chamber": "senate",
-   "contributions": 1616.96
-  },
-  {
-   "name": "Daniel Gabriel",
-   "chamber": "house",
-   "contributions": 9910.0
-  },
-  {
-   "name": "Noe Galeai",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Ernesto Ganaden",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Diamond Garcia",
-   "chamber": "house",
-   "contributions": 34959.05
-  },
-  {
-   "name": "Reginald Garcia",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Andrew Garrett",
-   "chamber": "house",
-   "contributions": 44674.0
-  },
-  {
-   "name": "Cedric Gates",
-   "chamber": "senate",
-   "contributions": 2000.0
-  },
-  {
-   "name": "Joe Gedeon",
-   "chamber": "house",
-   "contributions": 78076.6
-  },
-  {
-   "name": "Travis Goodwin",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Tina Grandinetti",
-   "chamber": "house",
-   "contributions": 21356.3
-  },
-  {
-   "name": "Janie Gueso",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Sharon Har",
-   "chamber": "house",
-   "contributions": 2000.0
-  },
-  {
-   "name": "Daisy Hartsfield",
-   "chamber": "house",
-   "contributions": 37170.0
-  },
-  {
-   "name": "Mark Hashem",
-   "chamber": "house",
-   "contributions": 39614.49
-  },
-  {
-   "name": "Troy Hashimoto",
-   "chamber": "senate",
-   "contributions": 144767.2
-  },
-  {
-   "name": "Steve Haumschild",
-   "chamber": "house",
-   "contributions": 3535.65
-  },
-  {
-   "name": "Erik Ho",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Keikilani Ho",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Cristina Holt",
-   "chamber": "house",
-   "contributions": 9910.56
-  },
-  {
-   "name": "Daniel Holt",
-   "chamber": "senate",
-   "contributions": 51941.27
-  },
-  {
-   "name": "Shaena Hoohuli",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Anna Hudson",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Linda Ichiyama",
-   "chamber": "house",
-   "contributions": 65325.0
-  },
-  {
-   "name": "Greggor Ilagan",
-   "chamber": "house",
-   "contributions": 50667.39
-  },
-  {
-   "name": "Jeffrey Imamura",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Mark Ing",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Ken Inouye",
-   "chamber": "house",
-   "contributions": 5.0
-  },
-  {
-   "name": "Lorraine Inouye",
-   "chamber": "senate",
-   "contributions": 21201.0
-  },
-  {
-   "name": "Kim Coco Iwamoto",
-   "chamber": "house",
-   "contributions": 19126.75
-  },
-  {
-   "name": "Michael Jauch",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Aaron Johanson",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Dan Johnson",
-   "chamber": "house",
-   "contributions": 2222.0
-  },
-  {
-   "name": "Gabriel Johnson",
-   "chamber": null,
-   "contributions": 4950.09
-  },
-  {
-   "name": "Kyle Jones",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Carole Kaapu",
-   "chamber": "house",
+   "reg": "CC11838",
+   "period": "2024-2026",
    "contributions": 600.0
   },
   {
-   "name": "Carole Kaapu",
+   "name": "Lee Loy, Susan",
    "chamber": "house",
-   "contributions": 600.0
+   "reg": "CC11193",
+   "period": "2024-2026",
+   "contributions": 42091.89
   },
   {
-   "name": "Carole Kaapu",
+   "name": "Rahman, Inam",
    "chamber": "house",
-   "contributions": 600.0
+   "reg": "CC11807",
+   "period": "2024-2026",
+   "contributions": 1765.4
   },
   {
-   "name": "Taylor Kaaumoana",
+   "name": "Hartsfield, Daisy",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC12163",
+   "period": "2024-2026",
+   "contributions": 33550.0
   },
   {
-   "name": "Kirstin Kahaloa",
+   "name": "Kapela, Jeanne",
    "chamber": "house",
-   "contributions": 51959.22
+   "reg": "CC11353",
+   "period": "2024-2026",
+   "contributions": 33176.87
   },
   {
-   "name": "Kaiali'i Kahele",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Micah Kalama",
-   "chamber": "house",
-   "contributions": 9100.0
-  },
-  {
-   "name": "Dru Kanuha",
+   "name": "Wakai, Glenn",
    "chamber": "senate",
-   "contributions": 22374.22
+   "reg": "CC10208",
+   "period": "2022-2026",
+   "contributions": 159850.0
   },
   {
-   "name": "Jeanne Kapela",
+   "name": "Wittenhagen, Zak",
    "chamber": "house",
-   "contributions": 36997.03
+   "reg": "CC12071",
+   "period": "2024-2026",
+   "contributions": 200.0
   },
   {
-   "name": "Gilbert Keith-Agaran",
+   "name": "Patel, Sne",
+   "chamber": "house",
+   "reg": "CC11661",
+   "period": "2024-2026",
+   "contributions": 75670.35
+  },
+  {
+   "name": "Chang, Stanley",
    "chamber": "senate",
-   "contributions": 48343.04
+   "reg": "CC10525",
+   "period": "2022-2026",
+   "contributions": 153783.46
   },
   {
-   "name": "Jonathan* Kennealy",
+   "name": "Ichiyama, Linda",
    "chamber": "house",
-   "contributions": 584.64
+   "reg": "CC10561",
+   "period": "2024-2026",
+   "contributions": 60750.0
   },
   {
-   "name": "Jarrett Keohokalole",
+   "name": "Gabriel, Daniel",
+   "chamber": "house",
+   "reg": "CC12021",
+   "period": "2024-2026",
+   "contributions": 9610.0
+  },
+  {
+   "name": "Olds, Ikaika",
+   "chamber": "house",
+   "reg": "CC11743",
+   "period": "2024-2026",
+   "contributions": 28990.97
+  },
+  {
+   "name": "Schimmelfennig, Chadley",
+   "chamber": "house",
+   "reg": "CC12145",
+   "period": "2024-2026",
+   "contributions": 4400.0
+  },
+  {
+   "name": "Phomsouvanh, Andrew",
+   "chamber": "house",
+   "reg": "CC12097",
+   "period": "2024-2026",
+   "contributions": 29950.0
+  },
+  {
+   "name": "San Buenaventura, Joy",
    "chamber": "senate",
-   "contributions": 80274.88
+   "reg": "CC11014",
+   "period": "2022-2026",
+   "contributions": 120262.22
   },
   {
-   "name": "Paele Kiakona",
+   "name": "Lee, Michael",
    "chamber": "house",
-   "contributions": 30319.79
+   "reg": "CC11820",
+   "period": "2024-2026",
+   "contributions": 56875.0
   },
   {
-   "name": "Michelle Kidani",
-   "chamber": "senate",
-   "contributions": 24030.0
-  },
-  {
-   "name": "Darius Kila",
+   "name": "Asuega-Fualaau, Ranell",
    "chamber": "house",
-   "contributions": 139301.06
+   "reg": "CC12126",
+   "period": "2024-2026",
+   "contributions": 1578.12
   },
   {
-   "name": "Donna Kim",
-   "chamber": "senate",
-   "contributions": 185142.54
-  },
-  {
-   "name": "Lisa Kitagawa",
+   "name": "Saiki, Scott",
    "chamber": "house",
-   "contributions": 44488.88
-  },
-  {
-   "name": "Angela Knight",
-   "chamber": "house",
-   "contributions": 6213.0
-  },
-  {
-   "name": "Breeani Kobayashi",
-   "chamber": null,
-   "contributions": 5000.0
-  },
-  {
-   "name": "Dale Kobayashi",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Ron Kouchi",
-   "chamber": "senate",
-   "contributions": 271746.33
-  },
-  {
-   "name": "Matthias Kusch",
-   "chamber": "house",
-   "contributions": 39557.05
-  },
-  {
-   "name": "Mae Patricia La Chica",
-   "chamber": "house",
-   "contributions": 46158.69
-  },
-  {
-   "name": "Rachele Lamosao",
-   "chamber": "senate",
-   "contributions": 180906.8
-  },
-  {
-   "name": "Alice Lee",
-   "chamber": null,
-   "contributions": 1050.0
-  },
-  {
-   "name": "Brendon Lee",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Christopher Lee",
-   "chamber": "senate",
-   "contributions": 65996.33
-  },
-  {
-   "name": "Michael Lee",
-   "chamber": "house",
-   "contributions": 52493.88
-  },
-  {
-   "name": "Margaret Lim",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Margaret Lim",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Nicole Lowen",
-   "chamber": "house",
-   "contributions": 18599.22
-  },
-  {
-   "name": "Sylvia Luke",
-   "chamber": null,
-   "contributions": 963118.76
-  },
-  {
-   "name": "Gabby Macaraeg",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Christy MacPherson",
-   "chamber": "senate",
-   "contributions": 75479.57
-  },
-  {
-   "name": "Sylvie Madison",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Austin Maglinti",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Lisa Marten",
-   "chamber": "house",
-   "contributions": 13950.0
-  },
-  {
-   "name": "Austin Martin",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Umi Martin",
-   "chamber": null,
-   "contributions": 7020.0
-  },
-  {
-   "name": "Rosebella Martinez",
-   "chamber": "house",
-   "contributions": 4930.0
-  },
-  {
-   "name": "Troy Martinez",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Scot Matayoshi",
-   "chamber": "house",
-   "contributions": 119865.0
-  },
-  {
-   "name": "Lauren Matsumoto",
-   "chamber": "house",
-   "contributions": 35653.5
-  },
-  {
-   "name": "Dalene McCormick",
-   "chamber": "house",
-   "contributions": 2202.59
-  },
-  {
-   "name": "Bob McDermott",
-   "chamber": "senate",
-   "contributions": 12258.31
-  },
-  {
-   "name": "Angus McKelvey",
-   "chamber": "senate",
-   "contributions": 7770.0
-  },
-  {
-   "name": "Dennis Miller",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Tyson Miyake",
-   "chamber": "house",
-   "contributions": 102541.22
-  },
-  {
-   "name": "John Mizuno",
-   "chamber": "house",
-   "contributions": 20530.0
-  },
-  {
-   "name": "May Mizuno",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Daynette Morikawa",
-   "chamber": "house",
-   "contributions": 40140.0
-  },
-  {
-   "name": "Maurice Morita",
-   "chamber": "house",
-   "contributions": 2250.0
-  },
-  {
-   "name": "Sharon Moriwaki",
-   "chamber": "senate",
-   "contributions": 62775.0
-  },
-  {
-   "name": "Jake Morrow",
-   "chamber": "house",
-   "contributions": 13974.95
-  },
-  {
-   "name": "Victor Muh",
-   "chamber": "house",
-   "contributions": 152.05
-  },
-  {
-   "name": "Chris Muraoka",
-   "chamber": "house",
-   "contributions": 38506.65
-  },
-  {
-   "name": "Trevor Nagamine",
-   "chamber": "house",
-   "contributions": 5945.0
-  },
-  {
-   "name": "Anthony Nagatani",
-   "chamber": "house",
-   "contributions": 41773.74
-  },
-  {
-   "name": "Tricia Nakamatsu",
-   "chamber": "senate",
-   "contributions": 127646.5
-  },
-  {
-   "name": "Jordan Nakamura",
-   "chamber": "senate",
-   "contributions": 31803.31
-  },
-  {
-   "name": "Nadine Nakamura",
-   "chamber": "house",
-   "contributions": 124016.04
-  },
-  {
-   "name": "Scott Nishimoto",
-   "chamber": null,
-   "contributions": 94150.0
-  },
-  {
-   "name": "Val Okimoto",
-   "chamber": null,
-   "contributions": 102057.0
-  },
-  {
-   "name": "Ikaika Olds",
-   "chamber": "house",
-   "contributions": 29922.22
-  },
-  {
-   "name": "Dennis Onishi",
-   "chamber": null,
-   "contributions": 22125.0
-  },
-  {
-   "name": "Richard Onishi",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Mark Owens",
-   "chamber": "senate",
-   "contributions": 4023.25
-  },
-  {
-   "name": "Ashley Oyama",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Alexander Ozawa",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Trevor Ozawa",
-   "chamber": null,
-   "contributions": 150371.28
-  },
-  {
-   "name": "Kahi Pacarro",
-   "chamber": "house",
-   "contributions": 43597.25
-  },
-  {
-   "name": "Anthony Paris",
-   "chamber": "house",
-   "contributions": 14970.0
-  },
-  {
-   "name": "Michael Parrish",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Sne Patel",
-   "chamber": "house",
-   "contributions": 62871.21
-  },
-  {
-   "name": "Monique Perreira",
-   "chamber": "house",
-   "contributions": 407.18
-  },
-  {
-   "name": "Amy Perruso",
-   "chamber": "house",
-   "contributions": 19628.25
-  },
-  {
-   "name": "Andrew Phomsouvanh",
-   "chamber": "house",
-   "contributions": 35728.0
-  },
-  {
-   "name": "Mahinamalamalama Poepoe",
-   "chamber": "house",
-   "contributions": 15175.09
-  },
-  {
-   "name": "Tess* Quilingking",
-   "chamber": "house",
-   "contributions": 923.05
-  },
-  {
-   "name": "Sean Quinlan",
-   "chamber": "house",
-   "contributions": 44750.0
-  },
-  {
-   "name": "Michael Ratcliffe",
-   "chamber": "house",
-   "contributions": 14820.0
-  },
-  {
-   "name": "Karl Rhoads",
-   "chamber": "senate",
-   "contributions": 36614.17
-  },
-  {
-   "name": "Herbert Richards",
-   "chamber": "senate",
-   "contributions": 25675.0
-  },
-  {
-   "name": "Alejandra Rodas",
-   "chamber": "house",
-   "contributions": 1950.0
-  },
-  {
-   "name": "Corey Rosenlee",
-   "chamber": "house",
-   "contributions": 29141.9
-  },
-  {
-   "name": "Karlen Ross",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Pohai Ryan",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Rita Ryan",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Cheryl Rzonca",
-   "chamber": "senate",
-   "contributions": 0.0
-  },
-  {
-   "name": "Scott Saiki",
-   "chamber": "house",
+   "reg": "CC10197",
+   "period": "2024-2026",
    "contributions": 1465.5
   },
   {
-   "name": "Benjamin Sakai",
+   "name": "Perreira, Monique",
+   "chamber": "house",
+   "reg": "CC11873",
+   "period": "2024-2026",
+   "contributions": 512.3
+  },
+  {
+   "name": "Morikawa, Daynette",
+   "chamber": "house",
+   "reg": "CC10631",
+   "period": "2024-2026",
+   "contributions": 39400.0
+  },
+  {
+   "name": "Vasquez-Dela Cerna, Lynn*",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC12164",
+   "period": "2022-2026",
+   "contributions": 3560.0
   },
   {
-   "name": "Joy San Buenaventura",
+   "name": "Keith-Agaran, Gilbert",
    "chamber": "senate",
-   "contributions": 125647.22
+   "reg": "CC10537",
+   "period": "2022-2026",
+   "contributions": 47693.04
   },
   {
-   "name": "Calvin Say",
-   "chamber": null,
-   "contributions": 0.0
+   "name": "Fujinaka, Janel",
+   "chamber": "house",
+   "reg": "CC12067",
+   "period": "2024-2026",
+   "contributions": 9425.0
   },
   {
-   "name": "Jackson Sayama",
+   "name": "Nagamine, Trevor",
+   "chamber": "house",
+   "reg": "CC12157",
+   "period": "2024-2026",
+   "contributions": 5300.0
+  },
+  {
+   "name": "Matson, Shannon",
+   "chamber": "house",
+   "reg": "CC11576",
+   "period": "2024-2026",
+   "contributions": 17526.26
+  },
+  {
+   "name": "Sayama, Jackson",
    "chamber": "senate",
-   "contributions": 77530.0
+   "reg": "CC11526",
+   "period": "2024-2026",
+   "contributions": 72925.0
   },
   {
-   "name": "Benjamin Shafer",
+   "name": "Cluett, Misty",
+   "chamber": "house",
+   "reg": "CC12174",
+   "period": "2024-2026",
+   "contributions": 4680.0
+  },
+  {
+   "name": "Logue, James",
+   "chamber": "house",
+   "reg": "CC11262",
+   "period": "2024-2026",
+   "contributions": 4750.0
+  },
+  {
+   "name": "Todd, Christopher",
+   "chamber": "house",
+   "reg": "CC11336",
+   "period": "2024-2026",
+   "contributions": 77064.22
+  },
+  {
+   "name": "Reed, Kenna",
+   "chamber": "house",
+   "reg": "CC12114",
+   "period": "2024-2026",
+   "contributions": 10550.0
+  },
+  {
+   "name": "Test, Hannah",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC12084",
+   "period": "2024-2026",
+   "contributions": 8050.0
   },
   {
-   "name": "Maile Shimabukuro",
+   "name": "Balinbin, Ernest",
+   "chamber": "house",
+   "reg": "CC11321",
+   "period": "2024-2026",
+   "contributions": 300.0
+  },
+  {
+   "name": "Templo, Shirley",
+   "chamber": "house",
+   "reg": "CC11885",
+   "period": "2024-2026",
+   "contributions": 15463.75
+  },
+  {
+   "name": "Reyes Oda, Julie",
+   "chamber": "house",
+   "reg": "CC11839",
+   "period": "2024-2026",
+   "contributions": 35434.99
+  },
+  {
+   "name": "Kouchi, Ron",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC10226",
+   "period": "2022-2026",
+   "contributions": 270646.33
   },
   {
-   "name": "Garner Shimizu",
+   "name": "Perruso, Amy",
    "chamber": "house",
-   "contributions": 62325.12
+   "reg": "CC11345",
+   "period": "2024-2026",
+   "contributions": 23020.0
   },
   {
-   "name": "Garner Shimizu",
+   "name": "Grandinetti, Tina",
    "chamber": "house",
-   "contributions": 62325.12
+   "reg": "CC11962",
+   "period": "2024-2026",
+   "contributions": 21555.0
   },
   {
-   "name": "Anthony Silva",
-   "chamber": "house",
-   "contributions": 9202.76
-  },
-  {
-   "name": "Robert Silva",
+   "name": "Croswell, David",
    "chamber": "senate",
-   "contributions": 6311.8
+   "reg": "CC12198",
+   "period": "2022-2026",
+   "contributions": 7431.15
   },
   {
-   "name": "Keone Simon",
-   "chamber": null,
-   "contributions": 250.0
+   "name": "Evslin, Luke",
+   "chamber": "house",
+   "reg": "CC11346",
+   "period": "2024-2026",
+   "contributions": 33450.0
   },
   {
-   "name": "Mary Smart",
+   "name": "Matayoshi, Scot",
+   "chamber": "house",
+   "reg": "CC11339",
+   "period": "2024-2026",
+   "contributions": 120715.0
+  },
+  {
+   "name": "Makuaole-Perrin, Chantel",
+   "chamber": "house",
+   "reg": "CC11991",
+   "period": "2024-2026",
+   "contributions": 6500.0
+  },
+  {
+   "name": "Quinlan, Sean",
+   "chamber": "house",
+   "reg": "CC11250",
+   "period": "2024-2026",
+   "contributions": 44100.0
+  },
+  {
+   "name": "Kaiwi, Wayne",
+   "chamber": "house",
+   "reg": "CC12123",
+   "period": "2024-2026",
+   "contributions": 17650.0
+  },
+  {
+   "name": "Hussey, Ikaika",
+   "chamber": "house",
+   "reg": "CC11311",
+   "period": "2024-2026",
+   "contributions": 6500.0
+  },
+  {
+   "name": "Matsumoto, Lauren",
+   "chamber": "house",
+   "reg": "CC10863",
+   "period": "2024-2026",
+   "contributions": 30655.0
+  },
+  {
+   "name": "Kahaloa, Kirstin",
+   "chamber": "house",
+   "reg": "CC11852",
+   "period": "2024-2026",
+   "contributions": 48774.22
+  },
+  {
+   "name": "Olson, Ashley",
+   "chamber": "house",
+   "reg": "CC12096",
+   "period": "2024-2026",
+   "contributions": 9359.95
+  },
+  {
+   "name": "Ross, Ian",
+   "chamber": "house",
+   "reg": "CC11738",
+   "period": "2024-2026",
+   "contributions": 59238.49
+  },
+  {
+   "name": "Keawekane, Kiana",
+   "chamber": "house",
+   "reg": "CC11970",
+   "period": "2024-2026",
+   "contributions": 800.0
+  },
+  {
+   "name": "Johnson, Dan",
+   "chamber": "house",
+   "reg": "CC11705",
+   "period": "2024-2026",
+   "contributions": 1992.0
+  },
+  {
+   "name": "McCormick, Dalene",
+   "chamber": "house",
+   "reg": "CC12188",
+   "period": "2024-2026",
+   "contributions": 2284.35
+  },
+  {
+   "name": "Rodas, Alejandra",
+   "chamber": "house",
+   "reg": "CC12137",
+   "period": "2024-2026",
+   "contributions": 1650.0
+  },
+  {
+   "name": "Garcia, Diamond",
+   "chamber": "house",
+   "reg": "CC11430",
+   "period": "2024-2026",
+   "contributions": 43023.05
+  },
+  {
+   "name": "Nakamatsu, Tricia",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC12108",
+   "period": "2022-2026",
+   "contributions": 134188.11
   },
   {
-   "name": "Corinne Solomon",
+   "name": "Hazlebeck, David",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC12083",
+   "period": "2024-2026",
+   "contributions": 11374.5
   },
   {
-   "name": "Kanani Souza",
+   "name": "Ratcliffe, Michael",
    "chamber": "house",
-   "contributions": 9525.0
+   "reg": "CC12098",
+   "period": "2024-2026",
+   "contributions": 12610.0
   },
   {
-   "name": "Kapono Souza",
+   "name": "Bumanglag, Travis",
+   "chamber": "house",
+   "reg": "CC12106",
+   "period": "2024-2026",
+   "contributions": 425.0
+  },
+  {
+   "name": "Alcos, David",
+   "chamber": "house",
+   "reg": "CC11643",
+   "period": "2024-2026",
+   "contributions": 14075.0
+  },
+  {
+   "name": "Kiakona, Paele",
+   "chamber": "house",
+   "reg": "CC12115",
+   "period": "2024-2026",
+   "contributions": 32546.16
+  },
+  {
+   "name": "Gedeon, Joe",
+   "chamber": "house",
+   "reg": "CC12065",
+   "period": "2024-2026",
+   "contributions": 89706.6
+  },
+  {
+   "name": "Woodson, Justin",
+   "chamber": "house",
+   "reg": "CC10993",
+   "period": "2024-2026",
+   "contributions": 21350.0
+  },
+  {
+   "name": "MacPherson, Christy",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC12062",
+   "period": "2022-2026",
+   "contributions": 64303.57
   },
   {
-   "name": "Keoni Souza",
-   "chamber": null,
-   "contributions": 13195.54
-  },
-  {
-   "name": "Emil* Svrcina",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Gregg Takayama",
-   "chamber": "house",
-   "contributions": 35050.0
-  },
-  {
-   "name": "Jenna Takenouchi",
-   "chamber": "house",
-   "contributions": 45850.0
-  },
-  {
-   "name": "Mark Talaeai",
-   "chamber": "house",
-   "contributions": 21321.44
-  },
-  {
-   "name": "Adrian Tam",
-   "chamber": "house",
-   "contributions": 78641.02
-  },
-  {
-   "name": "Nicholas Tancheff",
+   "name": "Christian, Wallyn",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC11956",
+   "period": "2024-2026",
+   "contributions": 12204.65
   },
   {
-   "name": "Shirley Templo",
+   "name": "Plong, Tom",
    "chamber": "house",
-   "contributions": 19897.95
+   "reg": "CC12079",
+   "period": "2024-2026",
+   "contributions": 2811.19
   },
   {
-   "name": "Alan Texeira",
-   "chamber": null,
-   "contributions": 0.0
-  },
-  {
-   "name": "Theresa Texeira",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Kathleen Thurston",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Christopher Todd",
-   "chamber": "house",
-   "contributions": 79169.22
-  },
-  {
-   "name": "James Tokioka",
-   "chamber": "house",
-   "contributions": 0.0
-  },
-  {
-   "name": "Helen Tupai",
+   "name": "Silva, Robert",
    "chamber": "senate",
-   "contributions": 0.0
+   "reg": "CC12150",
+   "period": "2022-2026",
+   "contributions": 2192.0
   },
   {
-   "name": "Seaula (Jr Tupai) Tupai",
-   "chamber": null,
-   "contributions": 1700.0
-  },
-  {
-   "name": "Andria Tupola",
-   "chamber": null,
-   "contributions": 132041.2
-  },
-  {
-   "name": "Derek Turbin",
+   "name": "Eastman, Bulla",
    "chamber": "house",
-   "contributions": 81656.91
+   "reg": "CC12128",
+   "period": "2024-2026",
+   "contributions": 24510.37
   },
   {
-   "name": "Josiah Ubando",
+   "name": "Medeiros, Sheila",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC11978",
+   "period": "2024-2026",
+   "contributions": 25690.07
   },
   {
-   "name": "Nancy Valdez",
-   "chamber": "house",
-   "contributions": 8492.05
-  },
-  {
-   "name": "Glenn Wakai",
+   "name": "Cabanilla, Rida*",
    "chamber": "senate",
-   "contributions": 161425.0
+   "reg": "CC12101",
+   "period": "2022-2026",
+   "contributions": 7100.0
   },
   {
-   "name": "Sheila Walker",
+   "name": "Asing, David",
    "chamber": "house",
-   "contributions": 8185.0
+   "reg": "CC12141",
+   "period": "2024-2026",
+   "contributions": 400.0
   },
   {
-   "name": "Gene Ward",
+   "name": "Morita, Maurice",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC11796",
+   "period": "2024-2026",
+   "contributions": 1400.0
   },
   {
-   "name": "James Wataru",
+   "name": "Holt, Daniel",
    "chamber": "house",
-   "contributions": 79450.0
+   "reg": "CC11268",
+   "period": "2024-2026",
+   "contributions": 49591.27
   },
   {
-   "name": "Charla Weaver",
+   "name": "Wataru, James",
    "chamber": "house",
-   "contributions": 53279.11
+   "reg": "CC12070",
+   "period": "2024-2026",
+   "contributions": 78600.0
   },
   {
-   "name": "Tiana Wilbur",
+   "name": "Pierick, Elijah",
+   "chamber": "senate",
+   "reg": "CC11837",
+   "period": "2024-2026",
+   "contributions": 53253.59
+  },
+  {
+   "name": "Amato, Terez",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC11005",
+   "period": "2024-2026",
+   "contributions": 20439.75
   },
   {
-   "name": "Herman Wilson",
-   "chamber": null,
-   "contributions": 0.0
+   "name": "Kitashima, Kelly*",
+   "chamber": "senate",
+   "reg": "CC12231",
+   "period": "2024-2026",
+   "contributions": 37927.51
   },
   {
-   "name": "Kanoa Wilson",
+   "name": "Cochran, Elle",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC11742",
+   "period": "2024-2026",
+   "contributions": 5250.0
   },
   {
-   "name": "Kevin Wilson",
-   "chamber": "house",
-   "contributions": 0.0
+   "name": "Lamosao, Rachele",
+   "chamber": "senate",
+   "reg": "CC11779",
+   "period": "2024-2026",
+   "contributions": 185260.46
   },
   {
-   "name": "Zak Wittenhagen",
+   "name": "Garrett, Andrew",
    "chamber": "house",
-   "contributions": 220.0
+   "reg": "CC11350",
+   "period": "2024-2026",
+   "contributions": 42100.0
   },
   {
-   "name": "Justin Woodson",
+   "name": "Caravalho, Ernest",
    "chamber": "house",
-   "contributions": 22635.0
+   "reg": "CC11295",
+   "period": "2024-2026",
+   "contributions": 1000.0
   },
   {
-   "name": "Ryan Yamane",
+   "name": "Test, Sept. 15",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC12235",
+   "period": "2024-2026",
+   "contributions": 225.0
   },
   {
-   "name": "Kyle Yamashita",
+   "name": "Holt, Cristina",
    "chamber": "house",
-   "contributions": 81127.2
+   "reg": "CC12127",
+   "period": "2024-2026",
+   "contributions": 7667.56
   },
   {
-   "name": "Amanda Ybanez",
+   "name": "Martinez, Rosebella",
    "chamber": "house",
-   "contributions": 0.0
+   "reg": "CC10788",
+   "period": "2024-2026",
+   "contributions": 3725.0
   },
   {
-   "name": "Angela* Young",
+   "name": "La Chica, Mae Patricia",
    "chamber": "house",
-   "contributions": 1793.19
+   "reg": "CC11408",
+   "period": "2024-2026",
+   "contributions": 40262.81
+  },
+  {
+   "name": "Kong, Samuel",
+   "chamber": "house",
+   "reg": "CC11102",
+   "period": "2024-2026",
+   "contributions": 20225.0
+  },
+  {
+   "name": "Valdez, Nancy",
+   "chamber": "house",
+   "reg": "CC11964",
+   "period": "2024-2026",
+   "contributions": 6876.06
+  },
+  {
+   "name": "Kuoha, Keoni",
+   "chamber": "house",
+   "reg": "CC12169",
+   "period": "2024-2026",
+   "contributions": 20549.23
+  },
+  {
+   "name": "Pacarro, Kahi",
+   "chamber": "house",
+   "reg": "CC12090",
+   "period": "2024-2026",
+   "contributions": 33612.0
+  },
+  {
+   "name": "Kaopua, Suzanne",
+   "chamber": "house",
+   "reg": "CC12122",
+   "period": "2024-2026",
+   "contributions": 16207.91
+  },
+  {
+   "name": "Miyake, Tyson",
+   "chamber": "house",
+   "reg": "CC11947",
+   "period": "2024-2026",
+   "contributions": 100989.41
+  },
+  {
+   "name": "Fitzgerald, Jesse",
+   "chamber": "house",
+   "reg": "CC12191",
+   "period": "2024-2026",
+   "contributions": 2851.0
+  },
+  {
+   "name": "Morrow, Jake",
+   "chamber": "house",
+   "reg": "CC12116",
+   "period": "2024-2026",
+   "contributions": 10574.7
+  },
+  {
+   "name": "Kusch, Matthias",
+   "chamber": "house",
+   "reg": "CC11746",
+   "period": "2024-2026",
+   "contributions": 33575.0
+  },
+  {
+   "name": "Aiu, Micah",
+   "chamber": "house",
+   "reg": "CC11823",
+   "period": "2024-2026",
+   "contributions": 99198.76
+  },
+  {
+   "name": "Kennealy, Jonathan*",
+   "chamber": "house",
+   "reg": "CC12192",
+   "period": "2024-2026",
+   "contributions": 484.64
+  },
+  {
+   "name": "Faatea, Faatea",
+   "chamber": "house",
+   "reg": "CC12099",
+   "period": "2024-2026",
+   "contributions": 4650.0
+  },
+  {
+   "name": "Owens, Mark",
+   "chamber": "senate",
+   "reg": "CC12131",
+   "period": "2022-2026",
+   "contributions": 8613.15
+  },
+  {
+   "name": "Heim, Arjuna",
+   "chamber": "house",
+   "reg": "CC12102",
+   "period": "2024-2026",
+   "contributions": 25150.0
+  },
+  {
+   "name": "Walker, Sheila",
+   "chamber": "house",
+   "reg": "CC11765",
+   "period": "2024-2026",
+   "contributions": 15465.0
+  },
+  {
+   "name": "Shimizu, Garner",
+   "chamber": "house",
+   "reg": "CC11909",
+   "period": "2024-2026",
+   "contributions": 63710.0
+  },
+  {
+   "name": "Young, Angela*",
+   "chamber": "house",
+   "reg": "CC12227",
+   "period": "2024-2026",
+   "contributions": 1693.19
+  },
+  {
+   "name": "Muraoka, Chris",
+   "chamber": "house",
+   "reg": "CC11981",
+   "period": "2024-2026",
+   "contributions": 41522.54
+  },
+  {
+   "name": "Ahu Isa, Lei",
+   "chamber": "senate",
+   "reg": "CC12118",
+   "period": "2022-2026",
+   "contributions": 15850.0
+  },
+  {
+   "name": "Tarnas, David",
+   "chamber": "house",
+   "reg": "CC11188",
+   "period": "2024-2026",
+   "contributions": 52248.86
+  },
+  {
+   "name": "Doctolero, Loren",
+   "chamber": "house",
+   "reg": "CC12088",
+   "period": "2024-2026",
+   "contributions": 33154.01
+  },
+  {
+   "name": "Dela Cruz, Donovan",
+   "chamber": "senate",
+   "reg": "CC10171",
+   "period": "2022-2026",
+   "contributions": 454495.18
+  },
+  {
+   "name": "Silva, Anthony",
+   "chamber": "house",
+   "reg": "CC12206",
+   "period": "2024-2026",
+   "contributions": 17138.0
+  },
+  {
+   "name": "Chun, Cory",
+   "chamber": "house",
+   "reg": "CC11752",
+   "period": "2024-2026",
+   "contributions": 33910.0
+  },
+  {
+   "name": "Brown, Nani",
+   "chamber": "senate",
+   "reg": "CC12068",
+   "period": "2022-2026",
+   "contributions": 5191.0
+  },
+  {
+   "name": "Yoder, Steve",
+   "chamber": "house",
+   "reg": "CC12026",
+   "period": "2024-2026",
+   "contributions": 1000.0
+  },
+  {
+   "name": "McCreary, Robin",
+   "chamber": "house",
+   "reg": "CC12093",
+   "period": "2024-2026",
+   "contributions": 1317.47
+  },
+  {
+   "name": "Tam, Adrian",
+   "chamber": "house",
+   "reg": "CC11554",
+   "period": "2024-2026",
+   "contributions": 75045.0
+  },
+  {
+   "name": "Ihara, Les",
+   "chamber": "senate",
+   "reg": "CC10178",
+   "period": "2022-2026",
+   "contributions": 1000.0
+  },
+  {
+   "name": "Nakamura, Jordan",
+   "chamber": "senate",
+   "reg": "CC12080",
+   "period": "2022-2026",
+   "contributions": 24337.87
+  },
+  {
+   "name": "Fevella, Kurt*",
+   "chamber": "senate",
+   "reg": "CC11359",
+   "period": "2022-2026",
+   "contributions": 37283.93
+  },
+  {
+   "name": "Hashem, Mark",
+   "chamber": "house",
+   "reg": "CC10626",
+   "period": "2024-2026",
+   "contributions": 34814.49
+  },
+  {
+   "name": "Talaeai, Mark",
+   "chamber": "house",
+   "reg": "CC11835",
+   "period": "2024-2026",
+   "contributions": 24359.14
+  },
+  {
+   "name": "Turbin, Derek",
+   "chamber": "house",
+   "reg": "CC11534",
+   "period": "2024-2026",
+   "contributions": 78964.92
+  },
+  {
+   "name": "Iwamoto, Kim Coco",
+   "chamber": "house",
+   "reg": "CC11265",
+   "period": "2024-2026",
+   "contributions": 11510.0
+  },
+  {
+   "name": "Keefe, Jacqueline*",
+   "chamber": "house",
+   "reg": "CC12086",
+   "period": "2024-2026",
+   "contributions": 2559.0
+  },
+  {
+   "name": "Ilagan, Greggor",
+   "chamber": "house",
+   "reg": "CC10819",
+   "period": "2024-2026",
+   "contributions": 44457.39
+  },
+  {
+   "name": "de Gracia, Danny",
+   "chamber": "house",
+   "reg": "CC12103",
+   "period": "2024-2026",
+   "contributions": 40919.0
+  },
+  {
+   "name": "Takayama, Gregg",
+   "chamber": "house",
+   "reg": "CC10914",
+   "period": "2024-2026",
+   "contributions": 31850.0
+  },
+  {
+   "name": "Lee, Christopher",
+   "chamber": "senate",
+   "reg": "CC10395",
+   "period": "2022-2026",
+   "contributions": 62303.0
+  },
+  {
+   "name": "Yamashita, Kyle",
+   "chamber": "house",
+   "reg": "CC10232",
+   "period": "2024-2026",
+   "contributions": 69950.0
+  },
+  {
+   "name": "Kim, Donna",
+   "chamber": "senate",
+   "reg": "CC10254",
+   "period": "2022-2026",
+   "contributions": 180032.54
+  },
+  {
+   "name": "Kealoha, Kekoa",
+   "chamber": "house",
+   "reg": "CC12078",
+   "period": "2024-2026",
+   "contributions": 18468.07
   }
  ]
 }

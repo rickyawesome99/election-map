@@ -164,6 +164,43 @@ export function DistrictLocatorMap({ stateAbbr, districts, current, note }: { st
   );
 }
 
+type MiniFrame = { viewBox: string; outline: string; districts: Map<string, { d: string; tiny: boolean; cx: number; cy: number }> };
+const miniFrames = new WeakMap<NonNullable<StateShapes>, MiniFrame>();
+
+// One projection per state for every row's mini locator, so a 52-row list projects once.
+function miniFrame(shapes: NonNullable<StateShapes>): MiniFrame {
+  let f = miniFrames.get(shapes);
+  if (!f) {
+    const proj = geoMercator().fitExtent([[2, 2], [98, 98]], shapes.outline as GeoPermissibleObjects);
+    const path = geoPath(proj);
+    const [[x0, y0], [x1, y1]] = path.bounds(shapes.outline as GeoPermissibleObjects);
+    const districts = new Map<string, { d: string; tiny: boolean; cx: number; cy: number }>();
+    for (const feat of shapes.districts) {
+      const [[a0, b0], [a1, b1]] = path.bounds(feat);
+      const [cx, cy] = path.centroid(feat);
+      districts.set(feat.properties.GEOID, { d: path(feat) ?? "", tiny: Math.max(a1 - a0, b1 - b0) < 9, cx, cy });
+    }
+    f = { viewBox: `${x0 - 3} ${y0 - 3} ${x1 - x0 + 6} ${y1 - y0 + 6}`, outline: path(shapes.outline) ?? "", districts };
+    miniFrames.set(shapes, f);
+  }
+  return f;
+}
+
+/** A list row's locator: the state outline with one district filled (a dot where it's too small to see). */
+export function MiniDistrictLocator({ stateAbbr, geoid, fill, size = 36 }: { stateAbbr: string; geoid: string; fill: string; size?: number }) {
+  const shapes = useShapes(stateAbbr);
+  if (!shapes) return <span className="block shrink-0" style={{ width: size, height: size }} />;
+  const f = miniFrame(shapes);
+  const d = f.districts.get(geoid);
+  return (
+    <svg viewBox={f.viewBox} width={size} height={size} className="block shrink-0" aria-hidden="true">
+      <path d={f.outline} fill="var(--app-tab-bg)" stroke="var(--app-border)" strokeWidth={1} vectorEffect="non-scaling-stroke" />
+      {d && <path d={d.d} fill={fill} />}
+      {d?.tiny && Number.isFinite(d.cx) && <circle cx={d.cx} cy={d.cy} r={6} fill={fill} stroke="var(--app-bg)" strokeWidth={1.5} vectorEffect="non-scaling-stroke" />}
+    </svg>
+  );
+}
+
 /** The state's outline in one fill (its race's rating color) — the statewide pages' locator. */
 export function StateLocatorMap({ stateAbbr, fill, label }: { stateAbbr: string; fill: string; label: string }) {
   const shapes = useShapes(stateAbbr);

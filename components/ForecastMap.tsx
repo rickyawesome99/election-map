@@ -120,7 +120,6 @@ export type ForecastMapProps = {
    * race this cycle, both computed by the server page. */
   races?: ForecastSummary[];
   noElection?: NoElectionEntry[];
-  genericBallotDiff?: number;
   /** States tab (lib/stateRows.buildStateRows). */
   stateRows?: StateRow[];
 };
@@ -247,7 +246,7 @@ const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme })
 
 export default function ForecastMap({
   activeTab, raceType = "senate",
-  races = NO_RACES, noElection = NO_ENTRIES, genericBallotDiff = 0, stateRows = NO_ROWS,
+  races = NO_RACES, noElection = NO_ENTRIES, stateRows = NO_ROWS,
 }: ForecastMapProps) {
   const router = useRouter();
   const [selected, setSelected] = useState<ForecastSummary | null>(null);
@@ -297,12 +296,6 @@ export default function ForecastMap({
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
   const repSeats = SEAT_HOLDOVERS[raceType].rep + data.filter((race) => race.margin > 0).length;
   const totalSeats = TOTAL_SEATS_BY_TYPE[raceType];
-  const genericBallot = { diff: genericBallotDiff };
-  const tossUps = useMemo(() => data.filter((race) => Math.abs(race.margin) < 1).length, [data]);
-  const flipped = useMemo(
-    () => data.filter(isProjectedFlip).length,
-    [data]
-  );
 
   const onHover = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null) => {
     setHovered(race);
@@ -346,9 +339,6 @@ export default function ForecastMap({
               repSeats={repSeats}
               totalSeats={totalSeats}
               seatsUp={data.length}
-              genericBallotDiff={genericBallot.diff}
-              tossUps={tossUps}
-              flipped={flipped}
             />
             <RaceTypeHeader raceType={raceType} onSelect={selectRaceType} count={data.length} />
           </div>

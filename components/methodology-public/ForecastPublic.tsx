@@ -24,7 +24,7 @@ function buildOf(race: ForecastedRace) {
   const tpl = race.raceType === "house" ? calculateDistrictTpl(race.id) : calculateStateTpl(race.stateAbbr, race.state);
   const inc = [race.candidates?.dem, race.candidates?.rep].find((c) => c?.incumbent) ?? null;
   const incPts = computeIncumbentPts(race.office, inc ? alignedParty(inc) : null, inc?.appointed ?? false);
-  return { tpl, env: effectiveEnvironment(race.stateAbbr), incPts, money: raceMoneyTerm(race).pts, quality: candidateQuality(race).pts };
+  return { tpl, env: effectiveEnvironment(race.stateAbbr, race.office), incPts, money: raceMoneyTerm(race).pts, quality: candidateQuality(race).pts };
 }
 
 export default function ForecastPublic() {
@@ -80,7 +80,7 @@ export default function ForecastPublic() {
             body: <>We call this the seat&rsquo;s <strong>True Partisan Lean</strong>: what a typical Republican would get against a typical Democrat in a year that favored neither party, measured from every election there since 2016. Senate and governor races use the state&rsquo;s lean; House races use the district&rsquo;s, on the lines in place for 2026.</>,
             more: <A href="/methodology/state-tpl">How lean is measured →</A> },
           { title: "The national mood", figureLabel: "national mood now", figure: <Margin v={env.eHat} />,
-            body: <>The generic ballot asks voters which party they want in Congress. We turn its average into a national environment (now <Margin v={env.eHat} />) and apply it to each race, more strongly in states that have swung hard with the country before and less in states that have not. Generic-ballot polls have missed in the past, so the forecast allows for that rather than taking them at face value.</> },
+            body: <>The generic ballot asks voters which party they want in Congress. We turn its average into a national environment (now <Margin v={env.eHat} />) and apply it to each race, more strongly in states that have swung hard with the country before and less in states that have not. House races feel the full swing of the national House vote, since that vote is nothing more than the sum of the House races; Senate and governor races, which history shows move less with the mood, feel a damped version. Generic-ballot polls have missed in the past, so the forecast allows for that rather than taking them at face value. <A href="/analysis/generic-ballot">How the generic ballot becomes a popular vote →</A></> },
           { title: "Incumbency", figure: <>{inc.H.toFixed(1)} · {inc.S.toFixed(1)} · {inc.G.toFixed(1)}</>, figureLabel: "points: House · Senate · Gov.",
             body: <>A sitting member running again gets a boost toward their party. The Senate and governor values are measured from past races; the House value was set by testing. Someone who was appointed to the seat and has never won it gets no boost: appointees have historically done no better than a newcomer.</> },
           { title: "Fundraising", figure: <>±{F.MONEY_CAP.S}</>, figureLabel: "most it moves a Senate race",

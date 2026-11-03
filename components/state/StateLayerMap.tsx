@@ -46,6 +46,7 @@ export default function StateLayerMap({
   chambers,
   selectedHouse,
   onSelectHouse,
+  onOpenHouse,
   selectedLegKey,
   onSelectLeg,
 }: {
@@ -61,6 +62,8 @@ export default function StateLayerMap({
   chambers: Partial<Record<Chamber, ChamberMapData>>;
   selectedHouse: ForecastedRace | null;
   onSelectHouse: (race: ForecastedRace | null) => void;
+  /** Desktop: open a past race's page on click instead of selecting it. */
+  onOpenHouse?: (href: string) => void;
   selectedLegKey: string | null;
   onSelectLeg: (key: string | null) => void;
 }) {
@@ -125,6 +128,7 @@ export default function StateLayerMap({
       houseRaces={houseRaces}
       historicalResults={housePastResults}
       pastHrefs={housePastHrefs}
+      onOpen={onOpenHouse}
       stateAbbr={stateAbbr}
       stateFips={stateFips}
       selectedYear={year}

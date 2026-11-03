@@ -30,7 +30,7 @@ import {
 } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
-import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment, type NationalEnvironment } from "@/lib/tplCompute";
+import { projectRace, raceSigma, winProbabilityD, getTplFit, getNationalEnvironment, nationalSigmaFor, type NationalEnvironment } from "@/lib/tplCompute";
 import { atForecastDate } from "@/lib/forecastClock";
 import { marginToRating } from "@/lib/colorScale";
 import { alignedParty, THREE_WAY_RACES } from "@/data/raceEligibility";
@@ -259,7 +259,7 @@ const MIN_IDIOSYNCRATIC_SHARE = 0.5;
 
 export function simulateChamber(raceType: RaceType, races: ForecastedRace[] = forecastsFor(raceType), sims = 5000, seed = 20261103): ChamberSimulation {
   const rand = mulberry32(seed);
-  const sigmaE = getNationalEnvironment().sigmaE;
+  const sigmaE = nationalSigmaFor(OFFICE_OF[raceType]); // House: the House-vote scale (see HOUSE_ENV_ON_VOTE_SCALE)
   const holdover = SEAT_HOLDOVERS[raceType].dem;
   const counts = new Array<number>(sims);
   // Per race: the demographic loadings, and the noise left to the race itself. The race-level

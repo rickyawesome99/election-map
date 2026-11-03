@@ -26,7 +26,7 @@ function row(r: ForecastedRace): Record<string, string | number> {
   const incumbent = c ? [c.dem, c.rep].find((x) => x.incumbent) ?? null : null;
   const incumbentParty = incumbent ? alignedParty(incumbent) : null;
   const tpl = r.office === "H" ? calculateDistrictTpl(r.id) : calculateStateTpl(r.stateAbbr, r.state);
-  const environment = effectiveEnvironment(r.stateAbbr);
+  const environment = effectiveEnvironment(r.stateAbbr, r.office);
   const incumbentPts = computeIncumbentPts(r.office, incumbentParty, incumbent?.appointed ?? false);
   const money = raceFundraising2026(r.raceType, r.id);
   const moneyTerm = raceMoneyTerm(r);

@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { ForecastSummary } from "@/lib/forecastTypes";
-import { getRatingColors, marginToRating, fmtLean } from "@/lib/colorScale";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import RaceTable, { CandidateName } from "./RaceTable";
 import { PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 
@@ -61,18 +61,12 @@ export function ForecastHero({
   repSeats,
   totalSeats,
   seatsUp,
-  genericBallotDiff,
-  tossUps,
-  flipped,
 }: {
   raceType: RaceType;
   demSeats: number;
   repSeats: number;
   totalSeats: number;
   seatsUp: number;
-  genericBallotDiff: number;
-  tossUps: number;
-  flipped: number;
 }) {
   const threshold = Math.floor(totalSeats / 2) + 1;
   const demPct = (demSeats / totalSeats) * 100;
@@ -99,20 +93,6 @@ export function ForecastHero({
         </div>
         <div className="mt-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
           {threshold} needed for control &middot; {seatsUp} of {totalSeats} seats up in {electionYear}
-        </div>
-        <div className="mt-3 flex border-t" style={{ borderColor: "var(--app-border)" }}>
-          <div className="flex-1 border-r py-2 pr-3" style={{ borderColor: "var(--app-border)" }}>
-            <div className="text-base font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtLean(genericBallotDiff)}</div>
-            <div className="mt-0.5 font-mono text-[9px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Generic Ballot</div>
-          </div>
-          <div className="flex-1 border-r px-3 py-2" style={{ borderColor: "var(--app-border)" }}>
-            <div className="text-base font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{tossUps}</div>
-            <div className="mt-0.5 font-mono text-[9px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Toss-Ups</div>
-          </div>
-          <div className="flex-1 py-2 pl-3">
-            <div className="text-base font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{flipped}</div>
-            <div className="mt-0.5 font-mono text-[9px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Seats Flipped</div>
-          </div>
         </div>
       </div>
 

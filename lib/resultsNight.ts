@@ -23,13 +23,27 @@
 // counting starts its uncounted counties from the same baseline and then adds its own residual swing
 // the way the needle always has (lib/resultsNeedle.ts).
 //
+// The early-vote term (2026-11-02). The votes a county posts first are unlike its final count — the
+// mail, counted first in most states, leans more Democratic; where election-day votes come first the
+// first count leans Republican and the mail lands later — so a county's counted margin at completeness
+// f is its final less about s (1 − f), with s the state's skew. Read naively, every part-counted county
+// pulls a race the wrong way until it finishes. s is learned per state from the counties with votes in
+// (all of them, not only the ones in the main fit): within each race, counties further along show less
+// of the skew, so s is the within-race weighted regression of a county's residual on (f − 1). It is
+// hierarchical: a national skew pooled over every state (shrunk toward zero, SIGMA_MIRAGE), and each
+// state's own shrunk toward that, so a state whose counties are just starting is read with what the
+// earlier states showed. The needle then reads a part-counted county's remainder as o + s rather than
+// o, and its implied final as o + s (1 − f). Positive s = the first votes lean Democratic.
+//
 // Calibrated on a replay of the 2018–2024 Senate, governor and House results reported in a simulated
 // order (scripts/resultsNightBacktest.ts); see /analysis/internal-methodology/turnout#results-night.
 
 import type { CountyPrior, RacePrior, ResultsOffice } from "@/lib/resultsTypes";
 
-/** Prior sigma on the national swing (per unit of β), in points: the size of a poll miss. */
-export const SIGMA_NATIONAL = 3;
+/** Prior sigma on the national swing (per unit of β), in points. Below the size of a poll miss (the
+ *  forecast's σ_E 3) so the term stays nearer zero while few states are in: at 3 the band ran
+ *  over-confident late in the replay, at 2 the error is the same and the coverage is back. */
+export const SIGMA_NATIONAL = 2;
 /** Prior sigma on a state's shared miss beyond the national swing. */
 export const SIGMA_STATE = 2.5;
 /** Prior sigma on an office's offset from the national swing. */
@@ -45,24 +59,32 @@ export const SIGMA_LEAN = 0.5;
 export const SIGMA_FIT_COUNTY = 6;
 /** Counted votes at which a county carries full weight in the fit (smaller counties pro rata). */
 export const VOTES_SAT = 20_000;
-/** A county enters the fit once this share of its corrected expectation is counted. */
-export const MIN_COMPLETE = 0.5;
+/** Prior sigma on a state's early-vote skew s, in points: how far the votes a county posts first run from
+ *  its final count. */
+export const SIGMA_MIRAGE = 3;
+/** A county enters the fit once this share of its corrected expectation is counted. 0.5 and 0.8 score
+ *  alike under the replay's usual early-vote skew; with the skew doubled (a 2020-sized mail mirage)
+ *  0.5 reads the national swing too Democratic and 0.8 holds. */
+export const MIN_COMPLETE = 0.8;
 
 export type NightParams = {
   sigmaNational: number; sigmaState: number; sigmaOffice: number;
   sigmaNonwhite: number; sigmaCollege: number; sigmaLean: number;
-  sigmaFitCounty: number; votesSat: number; minComplete: number;
+  sigmaFitCounty: number; votesSat: number; minComplete: number; sigmaMirage: number;
 };
 export const DEFAULT_NIGHT_PARAMS: NightParams = {
   sigmaNational: SIGMA_NATIONAL, sigmaState: SIGMA_STATE, sigmaOffice: SIGMA_OFFICE,
   sigmaNonwhite: SIGMA_NONWHITE, sigmaCollege: SIGMA_COLLEGE, sigmaLean: SIGMA_LEAN,
-  sigmaFitCounty: SIGMA_FIT_COUNTY, votesSat: VOTES_SAT, minComplete: MIN_COMPLETE,
+  sigmaFitCounty: SIGMA_FIT_COUNTY, votesSat: VOTES_SAT, minComplete: MIN_COMPLETE, sigmaMirage: SIGMA_MIRAGE,
 };
 
-/** One county's finished (or nearly finished) count against its prior: an observation for the fit. */
+/** One county's count so far against its prior: an observation for the fit (the shared terms read it
+ *  once it is MIN_COMPLETE counted; the early-vote term reads every county with votes). */
 export type NightObservation = {
   office: ResultsOffice;
   state: string;
+  /** The race it belongs to (office + id), for the within-race contrast behind the early-vote term. */
+  race: string;
   beta: number;
   county: CountyPrior;
   /** Counted votes. */
@@ -100,7 +122,14 @@ export type NightFit = {
   slopes: { nonwhite: { value: number; se: number }; college: { value: number; se: number }; lean: { value: number; se: number } };
   /** States with at least one county in the fit. */
   states: Record<string, { value: number; se: number; n: number }>;
+  /** Each state's early-vote skew s (positive = the first votes lean Democratic), with its standard
+   *  error and the weight of part-counted counties behind it. */
+  mirage: Record<string, { value: number; se: number; n: number }>;
+  /** The national early-vote skew every state's is shrunk toward. */
+  mirageNational: { value: number; se: number; n: number };
   shiftFor: (race: RacePrior) => NightShift;
+  /** A state's early-vote skew; the national one, with the prior's sigma added, where no county of it is part-counted. */
+  mirageFor: (state: string) => { value: number; se: number };
 };
 
 const OFFICES: ResultsOffice[] = ["senate", "governor", "house"];
@@ -164,6 +193,39 @@ export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT
   const states: NightFit["states"] = {};
   for (const [st, i] of stateIndex) states[st] = { value: theta[FIXED + i], se: se(FIXED + i), n: stateN[st] ?? 0 };
 
+  // The early-vote term: per state, the within-race weighted regression of each county's residual
+  // (its swing less the shared terms' prediction for it) on x = f − 1, over every county with votes.
+  // Finished counties (x = 0) anchor each race's level; the part-counted ones carry the contrast.
+  const byRace = new Map<string, { state: string; rows: { x: number; e: number; w: number }[] }>();
+  for (const o of obs) {
+    if (o.votes <= 0) continue;
+    const w = Math.min(1, o.votes / P.votesSat);
+    const { office, state } = colOf(o);
+    const pred = o.beta * theta[0] + theta[office] + (state >= 0 ? theta[state] : 0) + o.county.nonwhite * theta[4] + o.county.college * theta[5] + o.county.lean * theta[6];
+    const g = byRace.get(o.race) ?? { state: o.state, rows: [] };
+    g.rows.push({ x: Math.min(0, o.f - 1), e: o.swing - pred, w });
+    byRace.set(o.race, g);
+  }
+  const acc: Record<string, { sxx: number; sxy: number; n: number }> = {};
+  for (const { state, rows } of byRace.values()) {
+    let W = 0, mx = 0, me = 0;
+    for (const r of rows) { W += r.w; mx += r.w * r.x; me += r.w * r.e; }
+    if (W <= 0) continue;
+    mx /= W; me /= W;
+    const a = (acc[state] ??= { sxx: 0, sxy: 0, n: 0 });
+    for (const r of rows) { a.sxx += r.w * (r.x - mx) * (r.x - mx); a.sxy += r.w * (r.x - mx) * (r.e - me); if (r.x < 0) a.n += r.w; }
+  }
+  const lambda = noise / (P.sigmaMirage * P.sigmaMirage);
+  let txx = 0, txy = 0, tn = 0;
+  for (const a of Object.values(acc)) { txx += a.sxx; txy += a.sxy; tn += a.n; }
+  const mirageNational = { value: txy / (txx + lambda), se: Math.sqrt(noise / (txx + lambda)), n: tn };
+  const mirage: NightFit["mirage"] = {};
+  for (const [st, a] of Object.entries(acc)) if (a.n > 0) {
+    const pull = lambda / (a.sxx + lambda);
+    mirage[st] = { value: mirageNational.value + (a.sxy - a.sxx * mirageNational.value) / (a.sxx + lambda), se: Math.sqrt(noise / (a.sxx + lambda) + (pull * mirageNational.se) ** 2), n: a.n };
+  }
+  const mirageFor = (state: string) => mirage[state] ?? { value: mirageNational.value, se: Math.sqrt(mirageNational.se ** 2 + P.sigmaMirage ** 2) };
+
   const quad = (x: number[], M: number[][]) => { let s = 0; for (let i = 0; i < x.length; i++) { if (x[i] === 0) continue; for (let j = 0; j < x.length; j++) if (x[j] !== 0) s += x[i] * M[i][j] * x[j]; } return s; };
   const shiftFor = (race: RacePrior): NightShift => {
     const { office, state } = colOf(race);
@@ -189,7 +251,7 @@ export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT
     national: { value: theta[0], se: se(0) },
     office: { senate: { value: theta[1], se: se(1) }, governor: { value: theta[2], se: se(2) }, house: { value: theta[3], se: se(3) } },
     slopes: { nonwhite: { value: theta[4], se: se(4) }, college: { value: theta[5], se: se(5) }, lean: { value: theta[6], se: se(6) } },
-    states, shiftFor,
+    states, mirage, mirageNational, shiftFor, mirageFor,
   };
 }
 

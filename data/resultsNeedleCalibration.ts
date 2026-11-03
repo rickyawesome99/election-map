@@ -2,7 +2,7 @@
 // (lib/resultsNeedle.ts) replayed over civicAPI's snapshot histories of the 2025 Virginia and New
 // Jersey governor races, scored against the final margin; shown on /analysis/internal-methodology/turnout#results-needle.
 export const NEEDLE_BACKTEST = {
-  "generated": "2026-10-27",
+  "generated": "2026-11-03",
   "races": [
     {
       "state": "VA",
@@ -22,68 +22,69 @@ export const NEEDLE_BACKTEST = {
     }
   ],
   "params": {
-    "kSwing": 0.1,
+    "kSwing": 0.2,
     "kTurnout": 0.1,
     "sigmaCounty": 6,
     "nearDone": 0.97,
     "sigmaFloor": 1.5,
-    "ownExp": 1,
+    "ownExp": 2,
     "sigmaLate": 10,
-    "maxExtraShare": 0.25
+    "maxExtraShare": 0.25,
+    "nightShare": 0.5
   },
   "buckets": [
     {
       "bucket": "<10%",
       "n": 7,
-      "mae": 6.27,
+      "mae": 6.87,
       "cover": 1,
-      "rmsz": 0.61,
-      "logs": -2.56,
+      "rmsz": 0.64,
+      "logs": -2.59,
       "totalErr": 0.062
     },
     {
       "bucket": "10–30%",
       "n": 20,
-      "mae": 3.96,
+      "mae": 2.89,
       "cover": 1,
-      "rmsz": 0.56,
-      "logs": -2.21,
+      "rmsz": 0.39,
+      "logs": -2.17,
       "totalErr": 0.124
     },
     {
       "bucket": "30–60%",
       "n": 25,
-      "mae": 3.05,
+      "mae": 1.97,
       "cover": 1,
-      "rmsz": 0.64,
-      "logs": -1.81,
+      "rmsz": 0.41,
+      "logs": -1.73,
       "totalErr": 0.116
     },
     {
       "bucket": "60–90%",
       "n": 50,
-      "mae": 2.12,
-      "cover": 0.74,
-      "rmsz": 1.06,
-      "logs": -1.29,
+      "mae": 1.4,
+      "cover": 1,
+      "rmsz": 0.73,
+      "logs": -1.03,
       "totalErr": 0.025
     },
     {
       "bucket": "90–99%",
       "n": 95,
-      "mae": 1.1,
-      "cover": 0.968,
-      "rmsz": 0.8,
-      "logs": -0.72,
+      "mae": 1.04,
+      "cover": 1,
+      "rmsz": 0.75,
+      "logs": -0.68,
       "totalErr": 0.006
     },
     {
       "bucket": "all",
       "n": 197,
-      "mae": 2.08,
-      "cover": 0.919,
-      "rmsz": 0.83,
-      "logs": -1.22,
+      "mae": 1.65,
+      "cover": 1,
+      "rmsz": 0.67,
+      "logs": -1.12,
       "totalErr": 0.039
     }
   ]

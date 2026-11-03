@@ -108,6 +108,8 @@ export default function PastElectionCountyMap({
   panelSize = "compact",
   fill = false,
   bubbles = false,
+  focus = null,
+  onSelectedChange,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -129,6 +131,10 @@ export default function PastElectionCountyMap({
   fill?: boolean;
   /** Draw each county's remaining net votes as a circle over plain land (the Results page). */
   bubbles?: boolean;
+  /** Select a county from outside (a table row): each new `n` selects `fips`, opening its panel; a null `fips` clears it. */
+  focus?: { fips: string | null; name: string; n: number } | null;
+  /** Called when the selected county changes, from a click on the map or the panel's close. */
+  onSelectedChange?: (fips: string | null) => void;
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   const maxNet = useMemo(() => (bubbles ? bubbleMaxNet(counties) : 0), [bubbles, counties]);
@@ -139,7 +145,15 @@ export default function PastElectionCountyMap({
   }, [demParty, repParty, bubbles]);
 
   const [hovered, setHovered] = useState<Hovered | null>(null);
-  const [selected, setSelected] = useState<Hovered | null>(null);
+  const [selected, setSelectedState] = useState<Hovered | null>(null);
+  const setSelected = (c: Hovered | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); };
+  // A new focus request from outside selects that county (set during render, not in an effect).
+  // Starts unset, so a map remounted for another layer picks up the county already selected.
+  const [focusN, setFocusN] = useState<number | undefined>(undefined);
+  if (focus && focus.n !== focusN) {
+    setFocusN(focus.n);
+    setSelectedState(focus.fips ? { fips: focus.fips, name: focus.name, result: byFips.get(focus.fips) ?? null } : null);
+  }
   // With reservePanel the panel's space is held open by an invisible stand-in stacked in the
   // same grid cell as the real panel, so opening a county can grow the space but never shrink
   // it (the state page sizes its counties table to this column). The stand-in is the tallest

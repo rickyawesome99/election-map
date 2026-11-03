@@ -47,6 +47,24 @@ export default function StateCountiesSection({
   onLayer: (key: string) => void;
 }) {
   const [showAll, setShowAll] = useState(false);
+  // A row click selects its county on the map (outlined, its panel open); a map click marks the row.
+  const [focus, setFocus] = useState<{ fips: string | null; name: string; n: number } | null>(null);
+  const [selectedFips, setSelectedFips] = useState<string | null>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
+  // A map click or the panel's close: mark that row, and on a close drop the focus (same n, so the
+  // open map isn't re-triggered, but a map remounted for another layer doesn't reopen it).
+  const onMapSelect = (fips: string | null) => {
+    setSelectedFips(fips);
+    if (!fips) setFocus((f) => (f ? { ...f, fips: null } : f));
+  };
+  const selectRow = (r: CountyRow) => {
+    // Clicking the selected row again clears the selection and closes the panel.
+    if (selectedFips === r.fips) { setFocus((f) => ({ fips: null, name: "", n: (f?.n ?? 0) + 1 })); setSelectedFips(null); return; }
+    setFocus((f) => ({ fips: r.fips, name: r.name, n: (f?.n ?? 0) + 1 }));
+    setSelectedFips(r.fips);
+    // Stacked on phones the map is above the table, so bring it into view.
+    if (window.matchMedia("(max-width: 767px)").matches) mapRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   // Side by side, the table box is as tall as the map column; whether its rows overflow decides the toggle.
   const scrollRef = useRef<HTMLDivElement>(null);
   const [overflows, setOverflows] = useState(false);
@@ -90,7 +108,7 @@ export default function StateCountiesSection({
       key={key}
       type="button"
       onClick={() => onLayer(key)}
-      className="shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-medium transition-colors"
+      className="ix-press shrink-0 rounded-full px-2.5 py-0.5 text-[11px] font-medium transition-colors"
       style={activeLayer === key
         ? { background: "var(--app-text-primary)", color: "var(--app-bg)", border: "1px solid var(--app-text-primary)" }
         : { background: "transparent", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
@@ -102,7 +120,7 @@ export default function StateCountiesSection({
     const active = sort.key === key;
     return (
       <th className={`pb-2 ${align === "left" ? "text-left" : "text-right"} text-[10px] uppercase tracking-wider font-semibold align-bottom md:whitespace-nowrap`} style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
-        <button type="button" className="uppercase hover:underline" onClick={() => setSort((s) => ({ key, dir: s.key === key ? (s.dir === 1 ? -1 : 1) : key === "name" ? 1 : -1 }))}>
+        <button type="button" className="ix-press uppercase hover:underline" onClick={() => setSort((s) => ({ key, dir: s.key === key ? (s.dir === 1 ? -1 : 1) : key === "name" ? 1 : -1 }))}>
           {label}{active ? (sort.dir === -1 ? " ↓" : " ↑") : ""}
         </button>
       </th>
@@ -114,12 +132,12 @@ export default function StateCountiesSection({
       <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3 pb-3 mb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Counties</h2>
         <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-          {rows.length} {areaLabel.toLowerCase() === "parish" ? "parishes" : areaLabel.toLowerCase() === "borough" ? "boroughs" : "counties"} · click a name to open its page
+          {rows.length} {areaLabel.toLowerCase() === "parish" ? "parishes" : areaLabel.toLowerCase() === "borough" ? "boroughs" : "counties"} · click a row to find it on the map, a name to open its page
         </span>
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-[2fr_3fr]">
-        <div className="min-w-0">
+        <div ref={mapRef} className="min-w-0 scroll-mt-20">
           <div className="mb-2 flex flex-wrap gap-1.5">
             {chip(TPL_LAYER, "County TPL")}
             {layers.map((l) => chip(l.key, l.label))}
@@ -137,9 +155,11 @@ export default function StateCountiesSection({
               height={340}
               reservePanel
               caption={layer.caption ? <div className="px-1 pt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>{layer.caption}</div> : undefined}
+              focus={focus}
+              onSelectedChange={onMapSelect}
             />
           ) : (
-            <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} countyTpl={countyTpl} countyVotes={countyVotes} height={340} reservePanel />
+            <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} countyTpl={countyTpl} countyVotes={countyVotes} height={340} reservePanel focus={focus} onSelectedChange={onMapSelect} />
           )}
         </div>
 
@@ -175,9 +195,15 @@ export default function StateCountiesSection({
             </thead>
             <tbody>
               {sorted.map((r, i) => (
-                <tr key={r.fips} className={!showAll && i >= SHOW_FIRST ? "hidden md:table-row" : undefined} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  <td className="py-2 pr-2 text-left font-semibold">
-                    <Link prefetch={false} href={`/historical/${r.fips}`} className="hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.name}</Link>
+                <tr
+                  key={r.fips}
+                  onClick={() => selectRow(r)}
+                  aria-selected={selectedFips === r.fips}
+                  className={`cursor-pointer transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] ${!showAll && i >= SHOW_FIRST ? "hidden md:table-row" : ""}`}
+                  style={{ borderBottom: "1px solid var(--app-border)", background: selectedFips === r.fips ? "var(--app-tab-bg)" : undefined, boxShadow: selectedFips === r.fips ? "inset 2px 0 0 var(--app-text-primary)" : undefined }}
+                >
+                  <td className="py-2 pr-2 pl-1.5 text-left font-semibold">
+                    <Link prefetch={false} href={`/historical/${r.fips}`} onClick={(e) => e.stopPropagation()} className="hover:underline" style={{ color: "var(--app-text-primary)" }}>{r.name}</Link>
                   </td>
                   <td className="py-2 pr-2 text-right font-bold tabular-nums" style={{ color: marginColor(r.tpl) }}>{fmtMargin(r.tpl)}</td>
                   <td className="py-2 pr-2 text-right tabular-nums" style={{ color: marginColor(r.pres2024) }}>{fmtMargin(r.pres2024)}</td>
@@ -204,7 +230,7 @@ export default function StateCountiesSection({
                 setScrollPos({ top: false, end: false });
                 setShowAll((v) => !v);
               }}
-              className={`mt-3 text-xs font-semibold hover:underline md:absolute md:bottom-0 md:left-0 ${rows.length > SHOW_FIRST ? "" : "hidden md:inline"} ${overflows || showAll ? "" : "md:hidden"}`}
+              className={`ix-press mt-3 text-xs font-semibold hover:underline md:absolute md:bottom-0 md:left-0 ${rows.length > SHOW_FIRST ? "" : "hidden md:inline"} ${overflows || showAll ? "" : "md:hidden"}`}
               style={{ color: "var(--app-text-primary)" }}
             >
               {showAll ? "Show fewer" : `Show all ${rows.length} ↓`}

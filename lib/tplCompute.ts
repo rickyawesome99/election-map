@@ -1229,7 +1229,7 @@ export function projectRace(race: ProjectedMarginInput): { model: number; pollin
 function preMoneyMargin(race: ProjectedMarginInput, incumbentPts: number): number {
   if (race.raceType === "house") {
     const stateAbbr = statesData.find((s) => s.name === race.state)?.abbr ?? "";
-    return calculateDistrictTpl(race.id) + effectiveEnvironment(stateAbbr) + incumbentPts;
+    return calculateDistrictTpl(race.id) + effectiveEnvironment(stateAbbr, "H") + incumbentPts;
   }
   // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
   const stateAbbr = race.id.replace(/-\d+$/, "");
@@ -1299,7 +1299,9 @@ export function raceMoneyTerm(race: ProjectedMarginInput): RaceMoneyTerm {
 //   PV_hat  = GB_now + ENV_MISS_SHRINK × mean(miss)
 //   E_hat   = c + s × PV_hat
 //   σ_E     = sqrt( NATIONAL_SIGMA_STRUCTURAL² + (|s| × sqrt(sd(miss)² + (horizon × sd(drift))²))² )
-//   race environment term = β*(state) × E_hat
+//   race environment term = β*(state) × E_hat                      (Senate, Governor)
+//                         = β*(state) × E_hat / s = β* × (PV_hat − pv0)   (House, HOUSE_ENV_ON_VOTE_SCALE)
+//   σ_E,House = sqrt( NATIONAL_SIGMA_STRUCTURAL² + sd(miss)² + (horizon × sd(drift))² )  (vote scale, not × s)
 // The structural part of σ_E (2026-10-23) is the shared error the forecast carries even with
 // the House vote known — see the constant's comment in data/tplModelData.ts.
 
@@ -1339,6 +1341,7 @@ export interface NationalEnvironment {
   pvHat: number;          // GB + shrunk historical miss
   eHat: number;           // on the model's E scale — the number β* multiplies
   sigmaE: number;         // shared national error, E scale
+  sigmaEHouse: number;    // the same error on the House-vote scale (HOUSE_ENV_ON_VOTE_SCALE; = sigmaE when off)
   daysToElection: number;
   horizon: number;        // days to election / mid-September horizon, capped at 1.5
 }
@@ -1355,14 +1358,29 @@ export function getNationalEnvironment(asOf: Date = forecastNow()): NationalEnvi
   const daysToElection = Math.max(0, (ELECTION_DATE.getTime() - asOf.getTime()) / 86400000);
   const horizon = Math.min(1.5, daysToElection / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
   const sigmaPv = Math.sqrt(m.sdMiss ** 2 + (horizon * m.sdDrift) ** 2);
-  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE: Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * sigmaPv), daysToElection, horizon };
+  const sigmaE = Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * sigmaPv);
+  const env = { gb, pvHat, eHat: m.c + m.s * pvHat, sigmaE, sigmaEHouse: F.HOUSE_ENV_ON_VOTE_SCALE ? Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, sigmaPv) : sigmaE, daysToElection, horizon };
   nationalEnvironmentCache.set(day, env);
   return env;
 }
 
-// The environment points a race receives: β*(state) × E_hat.
-export function effectiveEnvironment(stateAbbr: string): number {
-  return getNationalEnvironment().eHat * (getTplFit().beta[stateAbbr]?.shrunk ?? 1);
+// Scale from the E scale to an office's own: 1 for Senate and Governor; for the House, with
+// HOUSE_ENV_ON_VOTE_SCALE, 1/s so the race feels the House-vote swing itself (E_hat / s = PV_hat − pv0).
+export function envScaleFor(office?: "H" | "S" | "G"): number {
+  if (office !== "H" || !F.HOUSE_ENV_ON_VOTE_SCALE) return 1;
+  const s = Math.abs(getEnvironmentModel().s);
+  return s > 0 ? 1 / s : 1;
+}
+
+// The shared national error an office's races carry: σ_E on the E scale, or the House-vote scale for the House.
+export function nationalSigmaFor(office?: "H" | "S" | "G"): number {
+  const env = getNationalEnvironment();
+  return office === "H" ? env.sigmaEHouse : env.sigmaE;
+}
+
+// The environment points a race receives: β*(state) × E_hat × envScaleFor(office).
+export function effectiveEnvironment(stateAbbr: string, office?: "H" | "S" | "G"): number {
+  return getNationalEnvironment().eHat * envScaleFor(office) * (getTplFit().beta[stateAbbr]?.shrunk ?? 1);
 }
 
 // ── Forecast uncertainty (Phase 3 of the forecast revamp) ────────────────────
@@ -1376,7 +1394,7 @@ export function effectiveEnvironment(stateAbbr: string): number {
 export function raceSigma(raceType: "H" | "S" | "G", stateAbbr: string, pollWeight = 0, raceMult = 1): number {
   const beta = getTplFit().beta[stateAbbr]?.shrunk ?? 1;
   const w = pollWeight;
-  return Math.sqrt((beta * getNationalEnvironment().sigmaE) ** 2 + (raceMult * (1 - w) * F.RACE_SIGMA[raceType]) ** 2 + (raceMult * w * F.POLL_SIGMA[raceType]) ** 2);
+  return Math.sqrt((beta * nationalSigmaFor(raceType)) ** 2 + (raceMult * (1 - w) * F.RACE_SIGMA[raceType]) ** 2 + (raceMult * w * F.POLL_SIGMA[raceType]) ** 2);
 }
 
 export function normalCdf(z: number): number {

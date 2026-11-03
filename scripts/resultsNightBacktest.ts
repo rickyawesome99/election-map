@@ -227,10 +227,14 @@ const CONFIGS: Config[] = [
   { name: "  night share 0.25", night: DEFAULT_NIGHT_PARAMS, needle: { ...DEFAULT_PARAMS, nightShare: 0.25 } },
   { name: "  counties from 20% counted", night: off({ minComplete: 0.2 }) },
   { name: "  counties from 80% counted", night: off({ minComplete: 0.8 }) },
+  { name: "  without the early-vote term", night: off({ sigmaMirage: 0.01 }) },
+  { name: "  weights ∝ votes (sat 200k)", night: off({ votesSat: 200_000 }) },
+  { name: "  lean slope prior σ 2", night: off({ sigmaLean: 2 }) },
 ];
 
 const results = CONFIGS.map(run);
 show(results[0]); show(results[1]);
+for (const r of results) if (r.name.includes("without the early-vote")) show(r);
 console.log("\nEvery configuration — races with nothing counted: MAE / 80% cover, by hour; then all rows MAE / cover / log score; projected-seat MAE S · G · H");
 for (const r of results) {
   const z = r.buckets[0];
@@ -255,6 +259,16 @@ if (argv.includes("--grid")) {
     const r = run({ name: "", night: off({ sigmaState, sigmaNonwhite: demo ? 1.5 * demo : 0.01, sigmaCollege: demo || 0.01, sigmaLean: demo || 0.01 }), needle: { ...DEFAULT_PARAMS, nightShare } });
     const z = r.buckets[0];
     console.log(`  share ${nightShare} state ${sigmaState} demo×${demo}:  ${f1(z.mae)} / ${pc(z.cover)} / ${f2(z.logs)}  ·  ${f1(r.all.mae)} / ${pc(r.all.cover)} / ${f2(r.all.logs)}  ·  ${r.seats.map((s) => f2(s.mae)).join(" · ")}`);
+  }
+}
+
+// How much the needle should trust a race's own part-counted counties: shrinkage on the shared swing
+// and the exponent on a county's completeness (--sensitivity; compare --skew 0 and 1).
+if (argv.includes("--sensitivity")) {
+  console.log("\nNeedle sensitivity — counting races: MAE / 80% cover by counted share; all rows MAE / cover / log score; seat MAE S · G · H");
+  for (const kSwing of [0.1, 0.2, 0.4]) for (const ownExp of [1, 1.5, 2, 3]) {
+    const r = run({ name: "", night: DEFAULT_NIGHT_PARAMS, needle: { ...DEFAULT_PARAMS, kSwing, ownExp } });
+    console.log(`  kSwing ${String(kSwing).padEnd(4)} ownExp ${String(ownExp).padEnd(3)} ${r.buckets.slice(1).map((b) => `${b.bucket} ${f1(b.mae)}/${pc(b.cover)}`).join("  ")}  ·  ${f1(r.all.mae)} / ${pc(r.all.cover)} / ${f2(r.all.logs)}  ·  ${r.seats.map((s) => f2(s.mae)).join(" · ")}`);
   }
 }
 

@@ -15,7 +15,8 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { countyPresidentialData } from "../data/countyPresidentialData";
 import { normalizeRace } from "../lib/resultsFeed";
-import { DEFAULT_PARAMS, normalCdf, projectRace, type NeedleParams } from "../lib/resultsNeedle";
+import { DEFAULT_PARAMS, nightObservations, normalCdf, projectRace, type NeedleParams } from "../lib/resultsNeedle";
+import { DEFAULT_NIGHT_PARAMS, fitNight } from "../lib/resultsNight";
 import type { RacePrior } from "../lib/resultsTypes";
 import { countyLoadings } from "../lib/resultsNightLoadings";
 
@@ -71,6 +72,8 @@ function priorFor(r: (typeof RACES)[number]): RacePrior {
 type Snap = { ts: string; share: number; counted: number; current: number | null; margin: number; sigma: number; total: number; swing: number; tau: number; matched: number };
 type RaceRun = { race: (typeof RACES)[number]; final: number; finalTotal: number; snaps: Snap[] };
 
+const MIRAGE = process.argv.includes("--mirage");
+const MIRAGE_ONLY = { ...DEFAULT_NIGHT_PARAMS, sigmaNational: 0.01, sigmaState: 0.01, sigmaOffice: 0.01, sigmaNonwhite: 0.01, sigmaCollege: 0.01, sigmaLean: 0.01 };
 const BUCKETS: [number, number, string][] = [[0, 0.1, "<10%"], [0.1, 0.3, "10–30%"], [0.3, 0.6, "30–60%"], [0.6, 0.9, "60–90%"], [0.9, 0.995, "90–99%"]];
 
 async function replay(r: (typeof RACES)[number], P: NeedleParams, raw: { ts: string; data: unknown }[], prior: RacePrior): Promise<RaceRun> {
@@ -80,8 +83,11 @@ async function replay(r: (typeof RACES)[number], P: NeedleParams, raw: { ts: str
   for (const { ts, data } of raw) {
     const live = normalizeRace(prior, data as never);
     if (live.total <= 0) continue;
-    // Calls lock the probability but not the margin; score the margin as if uncalled.
-    const p = projectRace(prior, { ...live, called: false, winner: null, percentReporting: Math.min(live.percentReporting, 99.5) }, P);
+    // Calls lock the probability but not the margin; score the margin as if uncalled. With --mirage the
+    // state's early-vote skew is learned from this race's own counties (the shared terms held at zero).
+    const snap = { ...live, called: false, winner: null, percentReporting: Math.min(live.percentReporting, 99.5) };
+    const fit = MIRAGE ? fitNight(nightObservations(prior, snap, P), MIRAGE_ONLY) : null;
+    const p = projectRace(prior, snap, P, fit);
     snaps.push({ ts, share: live.total / final.total, counted: live.total, current: p.currentMargin, margin: p.margin, sigma: p.sigma, total: p.projectedTotal, swing: p.swing, tau: p.turnoutFactor, matched: p.counties.filter((c) => c.counted > 0).length });
   }
   return { race: r, final: finalMargin, finalTotal: final.total, snaps };
@@ -117,7 +123,10 @@ async function main() {
   }
   const runAll = async (P: NeedleParams) => Promise.all(histories.map((h) => replay(h.r, P, h.raw, h.prior)));
 
-  const runs = await runAll(DEFAULT_PARAMS);
+  // --needle='{"kSwing":0.2}' overrides constants for the main run.
+  const over = process.argv.find((a) => a.startsWith("--needle="));
+  const BASE: NeedleParams = { ...DEFAULT_PARAMS, ...(over ? JSON.parse(over.slice("--needle=".length)) : {}) };
+  const runs = await runAll(BASE);
   for (const run of runs) {
     console.log(`\n${run.race.state}: final ${f1(run.final)} on ${run.finalTotal.toLocaleString()} votes`);
     console.log("  time (UTC)        in     counted   current  → needle   ±σ    z     proj.total  swing   τ   counties");
@@ -126,7 +135,7 @@ async function main() {
     }
   }
   const sc = score(runs);
-  console.log(`\nCurrent constants ${JSON.stringify(DEFAULT_PARAMS)}`);
+  console.log(`\nCurrent constants ${JSON.stringify(BASE)}`);
   console.log("  bucket    n   MAE   80% cover  RMS z   log score   total err");
   for (const [b, a] of sc.buckets) console.log(`  ${b.padEnd(8)} ${String(a.n).padStart(3)}  ${f1(a.mae).padStart(4)}  ${pc(a.cover).padStart(6)}     ${f2(a.rmsz).padStart(5)}   ${f2(a.logs).padStart(6)}     ${pc(a.totalErr)}`);
   console.log(`  ${"all".padEnd(8)} ${String(sc.all.n).padStart(3)}  ${f1(sc.all.mae).padStart(4)}  ${pc(sc.all.cover).padStart(6)}     ${f2(sc.all.rmsz).padStart(5)}   ${f2(sc.all.logs).padStart(6)}     ${pc(sc.all.totalErr)}`);

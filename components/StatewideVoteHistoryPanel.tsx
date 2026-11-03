@@ -42,7 +42,7 @@ export function ResultCard({ entry, state }: { entry: StatewideHistoryEntry; /**
             <span className="min-w-0 truncate text-xs font-semibold" style={{ color: "var(--app-text-muted)" }}>{entry.label}</span>
           </div>
           <span
-            className="shrink-0 whitespace-nowrap text-sm font-bold tabular-nums"
+            className="vh-margin shrink-0 whitespace-nowrap text-sm font-bold tabular-nums"
             style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}
           >
             {winner}+{margin}

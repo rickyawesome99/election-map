@@ -5,6 +5,7 @@ import {
   type PastResult,
 } from "@/data/forecastData";
 import { FIPS_TO_STATE } from "@/lib/fips";
+import { seatFlipped } from "@/lib/seatFlips";
 import { houseDistrictCountyRows, houseDistrictCountyGaps, type HouseDistrictCountySource, type HouseDistrictCountyStatus } from "@/lib/houseDistrictCounty";
 import { countySenateData, type CountyYearResult } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
@@ -332,6 +333,7 @@ export function pastRaceTableRows(office: PastElectionOffice, year: number): Pas
       prevMargin,
       prevYear: prev?.year ?? null,
       prevWinnerParty: prev && prevMargin != null ? (prevMargin < 0 ? prev.demParty ?? "D" : prev.repParty ?? "R") : null,
+      flipped: seatFlipped(office, office === "house" ? seat.geoid ?? seat.seatId : seat.stateAbbr, r, seat.results),
       totalVotes: r.totalVotes ?? null,
       uncontested: (!r.demCandidate && r.demPct === 0) || (!r.repCandidate && r.repPct === 0),
     });

@@ -59,6 +59,8 @@ export default function StateCountyMap({
   countyTpl,
   countyVotes,
   reservePanel = false,
+  focus = null,
+  onSelectedChange,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -72,9 +74,16 @@ export default function StateCountyMap({
   countyVotes?: Record<string, number | null>;
   /** Keep the selected-county panel's space even when nothing is selected (an invisible stand-in). */
   reservePanel?: boolean;
+  /** Select a county from outside (a table row): each new `n` selects `fips`, opening its panel; a null `fips` clears it. */
+  focus?: { fips: string | null; name: string; n: number } | null;
+  /** Called when the selected county changes, from a click on the map or the panel's close. */
+  onSelectedChange?: (fips: string | null) => void;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
-  const [selected, setSelected] = useState<County | null>(null);
+  const [selected, setSelectedState] = useState<County | null>(null);
+  const setSelected = (c: County | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); };
+  // Starts unset, so a map remounted for another layer picks up the county already selected.
+  const [focusN, setFocusN] = useState<number | undefined>(undefined);
   // With reservePanel an invisible stand-in holds the panel's space, stacked in the same grid
   // cell as the real panel so a selection can grow the space but never shrink it.
   const standIn: County | null = reservePanel ? { fips: "00000", name: stateName, tpl: 0 } : null;
@@ -106,6 +115,11 @@ export default function StateCountyMap({
     if (containerRef.current) ro.observe(containerRef.current);
     return () => ro.disconnect();
   }, [measure]);
+  // A new focus request from outside selects that county (set during render, not in an effect).
+  if (focus && focus.n !== focusN) {
+    setFocusN(focus.n);
+    setSelectedState(focus.fips ? { fips: focus.fips, name: focus.name, tpl: getCountyTpl(focus.fips) } : null);
+  }
 
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
 

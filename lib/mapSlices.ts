@@ -26,9 +26,11 @@ import {
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { withAtLargeAlias } from "@/lib/congressionalDistricts";
 import { statePastElectionHrefs } from "@/lib/pastElections";
+import { seatFlipped } from "@/lib/seatFlips";
 import { lastName } from "@/lib/personName";
 import {
   MAP_LEVELS, MAP_OFFICES, yearsForLevel,
+  controlLevelFor,
   type MapLevel, type MapOffice, type MapSlice, type NormalizedResult, type SliceEntry, type SliceNames,
 } from "@/lib/mapSliceTypes";
 export { MAP_LEVELS, MAP_OFFICES, yearsForLevel };
@@ -351,6 +353,10 @@ function collectStateAggregateResults(office: MapOffice, year: number): Normaliz
 // ── Candidate names for the hover card ───────────────────────────────────────
 
 const surname = (n?: string) => (n ? lastName(n) : null);
+const sliceNames = (r: PastResult): SliceNames =>
+  r.demIncumbent ? [surname(r.demCandidate), surname(r.repCandidate), 0]
+  : r.repIncumbent ? [surname(r.demCandidate), surname(r.repCandidate), 1]
+  : [surname(r.demCandidate), surname(r.repCandidate)];
 
 /** Surnames per race for one office and year (see MapSlice.names). Statewide: the race the map
  * colours a state by (regular, else the special when that was the only race), plus "XX:S" for a
@@ -360,7 +366,7 @@ function buildSliceNames(office: MapOffice, year: number): Record<string, SliceN
   if (office === "house") {
     for (const [id, results] of mergedHouseResultsById()) {
       const r = results.find((pr) => pr.year === year);
-      if (r) out[id] = [surname(r.demCandidate), surname(r.repCandidate)];
+      if (r) out[id] = sliceNames(r);
     }
     return out;
   }
@@ -368,7 +374,7 @@ function buildSliceNames(office: MapOffice, year: number): Record<string, SliceN
     let matches: PastResult[] = [];
     if (office === "president") {
       const r = presPastResults[abbr]?.find((pr) => pr.year === year);
-      if (r) matches = [{ year, demPct: r.demPct, repPct: r.repPct, demCandidate: r.demCandidate, repCandidate: r.repCandidate }];
+      if (r) matches = [{ year, demPct: r.demPct, repPct: r.repPct, demCandidate: r.demCandidate, repCandidate: r.repCandidate, demIncumbent: r.demIncumbent, repIncumbent: r.repIncumbent }];
     } else if (office === "governor") {
       const race = governorData.find((r) => r.id === abbr);
       const past = race?.pastResults ?? governorNoElection.find((e) => e.abbr === abbr)?.pastResults ?? [];
@@ -381,8 +387,8 @@ function buildSliceNames(office: MapOffice, year: number): Record<string, SliceN
     const regular = matches.filter((pr) => pr.electionType !== "Special");
     const special = matches.filter((pr) => pr.electionType === "Special");
     const main = regular.length > 0 ? regular : special;
-    if (main.length === 1) out[abbr] = [surname(main[0].demCandidate), surname(main[0].repCandidate)];
-    if (special.length === 1) out[`${abbr}:S`] = [surname(special[0].demCandidate), surname(special[0].repCandidate)];
+    if (main.length === 1) out[abbr] = sliceNames(main[0]);
+    if (special.length === 1) out[`${abbr}:S`] = sliceNames(special[0]);
   }
   return out;
 }
@@ -396,6 +402,48 @@ function countyHouseNameKey(fips: string, year: number, names: Record<string, Sl
   for (const id of [base, base.slice(0, 2) + "00", base.slice(0, 2) + "01"]) if (names[id]) return id;
   return undefined;
 }
+
+// ── Party control (the map's Control view; the flip rule is lib/seatFlips.ts) ─
+
+/** Flags for a state's map race (regular, else the special when it was the only race) and its
+ * same-year Senate special, matching computeStatewideResult's choice. */
+function statewideFlips(office: MapOffice, year: number, abbr: string): { flipped?: boolean; specialFlipped?: boolean } {
+  if (office === "president") {
+    const history: PastResult[] = (presPastResults[abbr] ?? []).map((p) => ({ year: p.year, demPct: p.demPct, repPct: p.repPct, margin: p.margin }));
+    const r = history.find((p) => p.year === year);
+    return r ? { flipped: seatFlipped(office, abbr, r, history) } : {};
+  }
+  const seats: PastResult[][] = office === "governor"
+    ? [governorData.find((g) => g.id === abbr)?.pastResults ?? governorNoElection.find((e) => e.abbr === abbr)?.pastResults ?? []]
+    : [
+      senateData.find((s) => s.id === abbr)?.pastResults ?? senateNoElection.find((e) => e.abbr === abbr)?.pastResults ?? [],
+      senateData.find((s) => s.id === `${abbr}-2`)?.pastResults ?? senateHoldovers.find((e) => e.abbr === abbr)?.pastResults ?? [],
+    ];
+  const races = seats.flatMap((history) => history.filter((r) => r.year === year).map((r) => ({ r, history, special: r.electionType === "Special" })));
+  const flip = (x: (typeof races)[number]) => seatFlipped(office, abbr, x.r, x.history);
+  const regular = races.filter((x) => !x.special);
+  const special = races.filter((x) => x.special);
+  const main = regular.length > 0 ? regular : special;
+  return {
+    ...(main.length === 1 ? { flipped: flip(main[0]) } : {}),
+    ...(office === "senate" && special.length === 1 ? { specialFlipped: flip(special[0]) } : {}),
+  };
+}
+
+/** House flags by district GEOID (data keys, before the at-large alias). */
+function houseFlips(year: number): Map<string, boolean> {
+  const out = new Map<string, boolean>();
+  for (const [id, history] of mergedHouseResultsById()) {
+    const r = history.find((pr) => pr.year === year);
+    if (!r) continue;
+    out.set(id, seatFlipped("house", id, r, history));
+  }
+  return out;
+}
+
+/** House races whose winner never took the seat, "geoid:year": NC-09 2018 was never certified
+ * (the seat stayed vacant until the 2019 special), so the seat totals leave it out. */
+const NOT_SEATED = new Set(["3709:2018"]);
 
 // ── Slice assembly ───────────────────────────────────────────────────────────
 
@@ -438,6 +486,8 @@ export function buildMapSlice(level: MapLevel, office: MapOffice, year: number):
     // The boundary files use the Census "XX00" at-large GEOID; the data uses "XX01".
     const aliased = new Map<string, GeoResult>();
     for (const [geoid, value] of regular) withAtLargeAlias(aliased, geoid, value);
+    const flips = new Map<string, boolean>();
+    if (controlLevelFor(office) === "district") for (const [geoid, f] of houseFlips(year)) withAtLargeAlias(flips, geoid, f);
     const specialAliased = new Map<string, GeoResult>();
     if (special) for (const [geoid, value] of special) withAtLargeAlias(specialAliased, geoid, value);
     for (const [geoid, gr] of aliased) {
@@ -451,6 +501,8 @@ export function buildMapSlice(level: MapLevel, office: MapOffice, year: number):
         // House race data, regardless of the office being viewed; else the state page.
         moreInfoHref: houseDistrictNames.has(gr.label.toLowerCase()) ? `/house/${gr.label.toLowerCase()}` : `/states/${gr.stateAbbr.toLowerCase()}`,
         ...(gr.nameKey ? { nameKey: gr.nameKey } : {}),
+        ...(gr.result && flips.has(geoid) ? { flipped: flips.get(geoid) } : {}),
+        ...(office === "house" && NOT_SEATED.has(`${geoid}:${year}`) ? { notSeated: true } : {}),
       };
     }
     return { level, office, year, entries, names, aggregate: aggregate(collectDistrictAggregateResults(office, year)) };
@@ -472,6 +524,7 @@ export function buildMapSlice(level: MapLevel, office: MapOffice, year: number):
       moreInfoHref: hrefs.regular ?? `/states/${gr.stateAbbr.toLowerCase()}`,
       // The House state view sums every district, so it reads "Democrats" / "Republicans".
       ...(office !== "house" ? { nameKey: gr.stateAbbr } : {}),
+      ...(controlLevelFor(office) === "state" ? statewideFlips(office, year, gr.stateAbbr) : {}),
     };
   }
   return { level, office, year, entries, names, aggregate: aggregate(collectStateAggregateResults(office, year)) };

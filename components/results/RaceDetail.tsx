@@ -210,6 +210,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                   <>Counties finished elsewhere imply <span style={{ color: marginSideColor(proj.night.shift, prior) }}>{fmtMargin(proj.night.shift, prior, 1)}</span> here vs the forecast ±{proj.night.se.toFixed(1)} (national {fmtMargin(proj.night.national, prior, 1)} · {prior.state} {fmtMargin(proj.night.state, prior, 1)} · {OFFICE_LABEL[prior.office].toLowerCase()} races {fmtMargin(proj.night.office, prior, 1)} · electorate {fmtMargin(proj.night.demo, prior, 1)}). </>
                 )}
                 {hasVotes && <>This race&apos;s counties are running <span style={{ color: marginSideColor(proj.swing, prior) }}>{fmtMargin(proj.swing, prior, 1)}</span> against that baseline (shrunk while little is in) · finished counties turned out ×{proj.turnoutFactor.toFixed(2)} their expected vote.</>}
+                {hasVotes && Math.abs(proj.night.mirage.value) >= 0.3 && <> The votes counted first in {prior.state} run <span style={{ color: marginSideColor(-proj.night.mirage.value, prior) }}>{fmtMargin(-proj.night.mirage.value, prior, 1)}</span> of where their counties finish (±{proj.night.mirage.se.toFixed(1)}); part-counted counties here are read with that removed.</>}
               </p>
             )}
           </div>

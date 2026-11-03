@@ -140,7 +140,7 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
             onTouchStart={prefetch === false ? () => router.prefetch(targetHref) : undefined}
             onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
             className={tabClass}
-            style={{ color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+            style={{ color: "var(--app-text-primary)" }}
           >
             {label}
           </Link>

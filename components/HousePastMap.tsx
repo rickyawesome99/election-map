@@ -97,6 +97,7 @@ export default function HousePastMap({
   houseRaces,
   historicalResults,
   pastHrefs = {},
+  onOpen,
   stateAbbr,
   stateFips,
   selectedYear,
@@ -105,6 +106,8 @@ export default function HousePastMap({
   historicalResults: Record<string, PastResult[]>;
   /** `${geoid}:${year}` -> that race's past-election page, from lib/pastElections (server-only). */
   pastHrefs?: Record<string, string>;
+  /** Where set, a click opens the district's race page (its href) instead of the selection panel. */
+  onOpen?: (href: string) => void;
   stateAbbr: string;
   stateFips: string;
   selectedYear: number;
@@ -275,6 +278,8 @@ export default function HousePastMap({
                       onMouseLeave={() => setHovered(null)}
                       onClick={() => {
                         if (!entry || !geoId) return;
+                        const href = pastHrefs[`${entry.district.id}:${selectedYear}`];
+                        if (onOpen && href) { onOpen(href); return; }
                         setSelected(isSelected ? null : { ...entry, geoid: geoId });
                       }}
                       style={{

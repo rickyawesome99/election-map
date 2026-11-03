@@ -56,9 +56,10 @@ function swingOf(row: PastRaceRow): number | null {
   return row.prevMargin == null || row.redrawn ? null : row.margin - row.prevMargin;
 }
 
-/** The seat changed party since its previous election (never across a House redraw). Falls back
- * to the previous margin's sign when a table cached before prevWinnerParty existed lacks it. */
+/** The seat changed party (row.flipped, the map's Control rule). A table cached before that field
+ * existed falls back to the previous election's winner, never across a House redraw. */
 function isFlip(row: PastRaceRow): boolean {
+  if (row.flipped != null) return row.flipped;
   if (row.redrawn || row.uncontested || row.prevMargin == null) return false;
   const prev = row.prevWinnerParty ?? (row.prevMargin < 0 ? "D" : "R");
   return prev !== winnerOf(row).party;
@@ -91,9 +92,12 @@ function FlipTag({ row }: { row: PastRaceRow }) {
 /** One side of the bar: solid when this candidate won, tinted when they lost. */
 function Segment({ c, won, share, align, compact }: { c: PastRaceCandidate; won: boolean; share: number; align: "left" | "right"; compact: boolean }) {
   const showName = c.name && share >= NAME_MIN_SHARE;
+  // Phones: the right side's dot leads the name, mirroring the left side's trailing dot.
+  const dotFirst = compact && align === "right";
   const name = showName ? (
     <span className="min-w-0 truncate" title={c.name ?? undefined}>
-      {lastName(c.name!)}{c.incumbent && <span aria-label="incumbent" title="Incumbent">{compact ? " •" : " · inc."}</span>}
+      {dotFirst && c.incumbent && <span aria-label="incumbent" title="Incumbent">• </span>}
+      {lastName(c.name!)}{!dotFirst && c.incumbent && <span aria-label="incumbent" title="Incumbent">{compact ? " •" : " · inc."}</span>}
     </span>
   ) : null;
   const pct = <span className="shrink-0 tabular-nums">{c.pct > 0 ? `${c.pct.toFixed(1)}%` : ""}</span>;

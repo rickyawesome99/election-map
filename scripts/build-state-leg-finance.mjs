@@ -40,6 +40,20 @@ function add(abbr, cycle, chamber, district, record, source, through) {
   candidates += 1;
 }
 
+// Transparency USA's 2026 crawl froze in mid-October (the site went behind a Cloudflare challenge),
+// so for the 2026 cycle a district the state's own portal file covers takes the portal's figures;
+// TU keeps only the districts the portal could not place.
+const stDir = `${SRC}/state`;
+const PORTAL_FIRST_CYCLES = new Set([2026]);
+const portalFirst = new Set();
+for (const file of existsSync(stDir) ? readdirSync(stDir).filter((f) => /^[A-Z]{2}-\d{4}\.json$/.test(f)) : []) {
+  const parsed = JSON.parse(readFileSync(`${stDir}/${file}`, "utf8"));
+  if (!PORTAL_FIRST_CYCLES.has(Number(parsed.cycle))) continue;
+  for (const chamber of ["house", "senate"]) {
+    for (const district of Object.keys(parsed[chamber] ?? {})) portalFirst.add(`${parsed.state}-${parsed.cycle}-${chamber}-${district}`);
+  }
+}
+
 // Transparency USA
 const tuDir = `${SRC}/tu`;
 for (const file of existsSync(tuDir) ? readdirSync(tuDir).filter((f) => /^[A-Z]{2}-\d{4}\.json$/.test(f)).sort() : []) {
@@ -48,6 +62,7 @@ for (const file of existsSync(tuDir) ? readdirSync(tuDir).filter((f) => /^[A-Z]{
   const seen = new Set();
   for (const race of parsed.races) {
     if (!race.district) continue;
+    if (portalFirst.has(`${abbr}-${cycle}-${race.chamber}-${race.district}`)) continue;
     const general = race.elections.find((e) => /^general/i.test(e.label));
     if (!general) continue;
     for (const c of general.candidates) {
@@ -83,7 +98,6 @@ for (const file of existsSync(ftmDir) ? readdirSync(ftmDir).filter((f) => /^[A-Z
 
 // State portals (portal-raw → assign-state-leg-finance.ts), same shape as FTM plus a per-file source.
 // A district-cycle another source already has stays with that source: one race, one source.
-const stDir = `${SRC}/state`;
 for (const file of existsSync(stDir) ? readdirSync(stDir).filter((f) => /^[A-Z]{2}-\d{4}\.json$/.test(f)).sort() : []) {
   const parsed = JSON.parse(readFileSync(`${stDir}/${file}`, "utf8"));
   const { state: abbr, cycle } = parsed;

@@ -9,8 +9,9 @@ import Geographies from "@/components/maps/Geographies";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { electionCalendar, senateSpecialCalendar } from "@/data/electionCalendar";
+import { FlipPatternDefs, FlipSwatch, flipFill } from "@/components/FlipStripes";
 import {
-  MAP_LEVELS, MAP_OFFICES, mapSliceUrl, yearsForLevel,
+  MAP_LEVELS, MAP_OFFICES, controlLevelFor, mapSliceUrl, yearsForLevel,
   type MapLevel, type MapOffice, type MapSlice, type NormalizedResult,
 } from "@/lib/mapSliceTypes";
 import { useStaticJson } from "@/lib/useStaticJson";
@@ -49,6 +50,9 @@ type Selection = {
   moreInfoHref: string | null;
   /** This area's race in MapSlice.names; null where it has no single race. */
   nameKey: string | null;
+  /** Control view: the shown race changed party hands / its winner was never seated. */
+  flipped?: boolean;
+  notSeated?: boolean;
 };
 
 function hasElectionInState(raceType: RaceType, year: number, stateAbbr: string, specialOnly = false): boolean {
@@ -77,6 +81,14 @@ const MAP_LEGEND = [
   { color: "#f08282", label: "Lean R" },
   { color: "#c04040", label: "Likely R" },
   { color: "#8b1a1a", label: "Safe R" },
+];
+
+// The Control view paints every race in its winner's Safe colour, striped where the seat flipped.
+const CONTROL_D = getRaceColor(-100);
+const CONTROL_R = getRaceColor(100);
+const CONTROL_LEGEND = [
+  { color: CONTROL_D, label: "Democratic" },
+  { color: CONTROL_R, label: "Republican" },
 ];
 
 const STAT_LABEL = "mb-1 text-[10px] font-bold uppercase tracking-wide";
@@ -155,12 +167,14 @@ const StateOutlines = memo(function StateOutlines({ t }: { t: Theme }) {
 type LayerLevel = GeoLevel;
 
 const GeoLayer = memo(function GeoLayer({
-  level, geographies, entries, specialOnly, raceType, year, isPresident, selectedKey, t, onHover, onSelect,
+  level, geographies, entries, specialOnly, control, raceType, year, isPresident, selectedKey, t, onHover, onSelect,
 }: {
   level: LayerLevel;
   geographies: (GeoFeature | DistrictGeoFeature)[];
   entries: MapSlice["entries"];
   specialOnly: boolean;
+  /** Party control instead of margin (only passed on the level controlLevelFor names). */
+  control: boolean;
   raceType: RaceType;
   year: number;
   isPresident: boolean;
@@ -227,18 +241,22 @@ const GeoLayer = memo(function GeoLayer({
           const gr = entries[key];
           result = gr ? resultOf(key) : null;
           hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr ?? "", specialOnly) : false;
-          sel = gr ? { key, title: gr.label ?? key, subtitle: gr.stateName ?? "", hasElection, result, moreInfoHref: gr.moreInfoHref ?? null, nameKey: gr.nameKey ?? null } : null;
+          sel = gr ? { key, title: gr.label ?? key, subtitle: gr.stateName ?? "", hasElection, result, moreInfoHref: gr.moreInfoHref ?? null, nameKey: gr.nameKey ?? null, flipped: !!gr.flipped, notSeated: !!gr.notSeated } : null;
         } else {
           key = String((geo as GeoFeature).id ?? "").padStart(2, "0");
           const gr = entries[key];
           result = gr ? resultOf(key) : null;
           hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr ?? "", specialOnly) : false;
           const href = specialOnly ? (gr?.specialMoreInfoHref ?? gr?.moreInfoHref) : gr?.moreInfoHref;
-          sel = gr ? { key, title: gr.stateName ?? key, subtitle: "", hasElection, result, moreInfoHref: href ?? null, nameKey: gr.nameKey ?? null } : null;
+          sel = gr ? { key, title: gr.stateName ?? key, subtitle: "", hasElection, result, moreInfoHref: href ?? null, nameKey: gr.nameKey ?? null, flipped: !!(specialOnly ? gr.specialFlipped : gr.flipped) } : null;
         }
         const isSelected = selectedKey === key;
         const clickable = result !== null;
-        const fill = result ? getRaceColor(result.margin) : (hasElection ? t.mapUnfilled : t.noElection);
+        const controlColor = result && (result.margin > 0 ? CONTROL_R : CONTROL_D);
+        const fill = !result ? (hasElection ? t.mapUnfilled : t.noElection)
+          : !control ? getRaceColor(result.margin)
+          : sel?.notSeated ? t.mapUnfilled
+          : sel?.flipped ? flipFill(controlColor!) : controlColor!;
         return (
           <Geography
             key={geo.rsmKey}
@@ -281,6 +299,10 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   // off whenever it wouldn't apply (wrong office, or a senate year with no double election) and
   // doesn't come back silently pre-toggled if the user navigates back to a double year later.
   const [specialOnlyFor, setSpecialOnlyFor] = useState<string | null>(null);
+  // Party control instead of margin. It applies (and its button shows) only on the level that
+  // office's seats are counted at; it survives a move between two such views and switches off on
+  // any move to a view without it.
+  const [controlView, setControlView] = useState(false);
   // Last intentionally-settled pan/zoom (as opposed to whatever react-simple-maps'
   // internal d3-zoom transform currently is, which can drift by a pixel or two from a
   // plain click — see gestureRef below).
@@ -293,6 +315,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
   function selectRaceType(rt: RaceType) {
     setRaceType(rt);
+    if (geoLevel !== controlLevelFor(rt)) setControlView(false);
     const years = getYearsForLevel(rt, geoLevel);
     if (!years.includes(year)) setYear(years[0]);
     setSelected(null);
@@ -300,6 +323,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
   function selectGeoLevel(level: GeoLevel) {
     setGeoLevel(level);
+    if (level !== controlLevelFor(raceType)) setControlView(false);
     const years = getYearsForLevel(raceType, level);
     if (!years.includes(year)) setYear(years[0]);
     setSelected(null);
@@ -330,6 +354,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const hasSpecialThisYear = raceType === "senate" && SENATE_DOUBLE_YEARS.has(year);
   const specialOnly = hasSpecialThisYear && specialOnlyFor === `${raceType}:${year}`;
   const setSpecialOnly = (on: boolean) => setSpecialOnlyFor(on ? `${raceType}:${year}` : null);
+  const canControl = geoLevel === controlLevelFor(raceType);
+  const control = controlView && canControl;
   const seatCount = popVoteData.find(
     (row) => row.year === year && row.type.toLowerCase() === raceType,
   );
@@ -390,15 +416,35 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     if (r.votesKnown === false || r.totalVotes === 0) {
       const winner = r.margin > 0 ? repParty : demParty;
       const winnerName = (r.margin > 0 ? names?.[1] : names?.[0]) ?? `The ${partyWord(winner)}`;
-      return { ...base, kind: "message", headline: { text: "Uncontested", party: winner }, message: `${winnerName} ran unopposed in ${year}, so no vote count was reported.` };
+      const winnerInc = names?.[2] === (r.margin > 0 ? 1 : 0) ? "*" : "";
+      return { ...base, kind: "message", headline: { text: "Uncontested", party: winner }, message: `${winnerName}${winnerInc} ran unopposed in ${year}, so no vote count was reported.` };
     }
+    // Control view: tag the winner when the seat flipped or they never took it.
+    const winnerNote = control ? (sel.notSeated ? "Not seated" : sel.flipped ? "Flip" : undefined) : undefined;
     return {
       ...base, kind: "result",
-      dem: { name: demName, party: demParty, pct: r.demPct, votes: r.demVotes },
-      rep: { name: repName, party: repParty, pct: r.repPct, votes: r.repVotes },
+      dem: { name: demName, party: demParty, pct: r.demPct, votes: r.demVotes, incumbent: names?.[2] === 0, note: r.margin > 0 ? undefined : winnerNote },
+      rep: { name: repName, party: repParty, pct: r.repPct, votes: r.repVotes, incumbent: names?.[2] === 1, note: r.margin > 0 ? winnerNote : undefined },
       margin: r.margin, totalVotes: r.totalVotes,
     };
   };
+
+  const controlButton = (className: string) => canControl && (
+    <button
+      type="button"
+      onClick={() => setControlView(!controlView)}
+      aria-pressed={control}
+      title={control ? "Showing who won each seat — click to show vote margins" : "Show who won each seat, with flipped seats striped"}
+      className={`h-7 shrink-0 rounded-md px-2 text-xs font-semibold sm:px-2.5 ${className}`}
+      style={
+        control
+          ? { background: t.textPrimary, color: t.bg, border: `1px solid ${t.textPrimary}` }
+          : { background: "transparent", color: t.textMuted, border: `1px solid ${t.border}` }
+      }
+    >
+      Party control
+    </button>
+  );
 
   return (
     <>
@@ -473,6 +519,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 Specials<span className="hidden sm:inline"> only</span>
               </button>
             )}
+            {/* Phones carry this button in the results strip instead, opposite the margin label. */}
+            {controlButton("hidden md:block")}
             {/* Phones: a dropdown, so office, year, specials and geography share one line. */}
             <select
               value={geoLevel}
@@ -500,12 +548,15 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           style={{ borderTop: `2px solid ${t.textPrimary}`, borderBottom: `1px solid ${t.border}`, opacity: sliceLoading ? 0.55 : 1 }}
         >
           {/* Margin */}
-          <div className="col-span-2 md:col-span-1 md:pr-6">
+          <div className="col-span-2 flex items-center justify-between gap-3 md:col-span-1 md:block md:pr-6">
+            <div className="min-w-0">
             <div className={STAT_LABEL} style={{ color: t.textMuted }}>{sliceLoading ? "Loading results…" : `${year} ${raceLabel} · National margin`}</div>
             <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.65rem", lineHeight: 1.1, color: stats.margin <= 0 ? t.demText : t.repText }}>
               {marginLabel(stats.margin)}
             </div>
             <div className="mt-0.5 text-xs tabular-nums" style={{ color: t.textVeryMuted }}>{stats.totalVotes.toLocaleString()} votes</div>
+            </div>
+            {controlButton("md:hidden")}
           </div>
 
           {/* Popular vote share bar */}
@@ -567,6 +618,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
               height: "100%",
             }}
           >
+            <FlipPatternDefs colors={[CONTROL_D, CONTROL_R]} />
             <ZoomableGroup
               center={mapView.center}
               zoom={mapView.zoom}
@@ -612,7 +664,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 <>
                   <Geographies geography={COUNTIES_URL}>
                     {({ geographies }: { geographies: GeoFeature[] }) => (
-                      <GeoLayer level="county" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                      <GeoLayer level="county" geographies={geographies} entries={entries} specialOnly={specialOnly} control={false} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
                     )}
                   </Geographies>
 
@@ -628,7 +680,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                   parseGeographies={parseDistrictGeographies}
                 >
                   {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
-                    <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                    <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} control={control} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
                   )}
                 </Geographies>
                 <StateOutlines t={t} />
@@ -639,7 +691,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 <>
                 <Geographies geography={STATES_URL}>
                   {({ geographies }: { geographies: GeoFeature[] }) => (
-                    <GeoLayer level="state" geographies={geographies} entries={entries} specialOnly={specialOnly} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                    <GeoLayer level="state" geographies={geographies} entries={entries} specialOnly={specialOnly} control={control} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
                   )}
                 </Geographies>
                 <StateOutlines t={t} />
@@ -677,12 +729,18 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
         {/* ── Map legend ── */}
         <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 md:gap-x-4">
-          {MAP_LEGEND.map(({ color, label }) => (
+          {(control ? CONTROL_LEGEND : MAP_LEGEND).map(({ color, label }) => (
             <div key={label} className="flex items-center gap-1 md:gap-1.5">
               <span className="h-2 w-2 shrink-0 rounded-full md:h-2.5 md:w-2.5" style={{ background: color }} />
               <span className="whitespace-nowrap text-[9px] font-medium md:text-[10px]" style={{ color: t.textMuted }}>{label}</span>
             </div>
           ))}
+          {control && (
+            <div className="flex items-center gap-1 md:gap-1.5">
+              <FlipSwatch size={10} />
+              <span className="whitespace-nowrap text-[9px] font-medium md:text-[10px]" style={{ color: t.textMuted }}>Flipped</span>
+            </div>
+          )}
         </div>
 
         {/* ── Mobile selected geography (compact) ── */}

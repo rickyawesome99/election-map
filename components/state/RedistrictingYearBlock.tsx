@@ -81,7 +81,7 @@ export default function RedistrictingYearBlock({ stateAbbr, stateFips, year, las
                 tabIndex={0}
                 onClick={() => setSelectedId(active ? null : d.id)}
                 onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setSelectedId(active ? null : d.id); } }}
-                className="min-w-0 cursor-pointer py-2 pl-2.5 scroll-mt-24"
+                className="min-w-0 cursor-pointer py-2 pl-2.5 pr-2 scroll-mt-24 rounded-r-md transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]"
                 style={{ borderLeft: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`, background: active ? "var(--app-tab-bg)" : undefined }}
               >
                 <div className="flex flex-wrap items-center gap-2 mb-1">

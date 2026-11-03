@@ -26,10 +26,21 @@ export type SliceEntry = {
    * district GEOID for the House. Absent where the area has no single race (House state view, a
    * county split between districts), which the hover card reads as "Democrats" / "Republicans". */
   nameKey?: string;
+  /** Control view: the race (`result`'s) changed party hands — see lib/mapSlices.ts flippedRace.
+   * Only on the views that offer Control (statewide offices by state, the House by district). */
+  flipped?: boolean;
+  /** The same for `special`. */
+  specialFlipped?: boolean;
+  /** The winner never took the seat (an uncertified race), so Control leaves the area unfilled. */
+  notSeated?: boolean;
 };
 
-/** Candidate surnames for the hover card, [dem slot, rep slot]; null where a slot is empty. */
-export type SliceNames = [string | null, string | null];
+/** Where the Control toggle shows: the level each office's seats are counted at. */
+export const controlLevelFor = (office: MapOffice): MapLevel => (office === "house" ? "district" : "state");
+
+/** Candidate surnames for the hover card, [dem slot, rep slot]; null where a slot is empty. The
+ * third element, when present, is the slot (0 dem, 1 rep) that held the incumbent. */
+export type SliceNames = [string | null, string | null, (0 | 1)?];
 
 export type MapSlice = {
   level: MapLevel;

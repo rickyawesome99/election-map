@@ -8,6 +8,7 @@ import { CHAMBERS, comparisonFor } from "@/lib/forecastComparison";
 import { forecastNow } from "@/lib/forecastClock";
 import { marketBoard } from "@/lib/marketBoard";
 import { pollingMisses } from "@/lib/pollingMisses";
+import { genericBallotPopularVote } from "@/lib/genericBallotPopularVote";
 import { PREDICTORS, projectHouse } from "@/lib/popVotePredictors";
 import { fmtPct, worstMiss } from "@/lib/predictionMarketDisplay";
 import { marketRaceRows, scoredMarkets, tally } from "@/lib/predictionMarkets";
@@ -27,6 +28,7 @@ export type AnalysisHubFigures = {
   pollsters: { graded: string; polls: string; firstYear: string; active: string };
   misses: { polls: string; races: string; states: string; firstYear: string; party: string; miss: string; missColor: string };
   popularVote: { low: string; high: string; lowColor: string; highColor: string } | null;
+  genericBallot: { gb: string; gbColor: string; miss: string; years: string; sum: string; sumColor: string };
   turnout: { presYear: string; presRate: string; midYear: string; midRate: string; votes: string };
   calendar: { firstYear: string; lastYear: string; races: string; redraws: string; seats: string };
 };
@@ -34,6 +36,7 @@ export type AnalysisHubFigures = {
 let cache: AnalysisHubFigures | null = null;
 
 export function analysisHubFigures(): AnalysisHubFigures {
+  const gbpv = genericBallotPopularVote();
   if (cache) return cache;
 
   // Forecast Comparison: the forecasters read and the races with at least one outside call.
@@ -91,6 +94,7 @@ export function analysisHubFigures(): AnalysisHubFigures {
     },
     // Margins are R-positive; the page prints the more Democratic end first, so low = spread[1].
     popularVote: spread ? { low: fmtMargin(spread[1]), high: fmtMargin(spread[0]), lowColor: marginColor(spread[1]), highColor: marginColor(spread[0]) } : null,
+    genericBallot: { gb: fmtMargin(gbpv.now.gb), gbColor: marginColor(gbpv.now.gb), miss: Math.abs(gbpv.miss.contested.mean).toFixed(1), years: String(gbpv.years.length), sum: fmtMargin(gbpv.now.sumAll), sumColor: marginColor(gbpv.now.sumAll) },
     turnout: {
       presYear: String(lastPres.year),
       presRate: `${lastPres.rate.president!.toFixed(1)}%`,

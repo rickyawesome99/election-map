@@ -124,7 +124,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const financeDetail = raceFinanceDetail2026("house", race.id);
   const moneyTerm = raceMoneyTerm(race);
   const fundraisingPts = moneyTerm.pts;
-  const gb = effectiveEnvironment(stateAbbr);
+  const gb = effectiveEnvironment(stateAbbr, "H");
   const polling = racePollingFor(race);
   const pollMargin = polling.avg?.diff ?? null;
   const projectedMargin = computeProjectedMargin(race);

@@ -3,7 +3,7 @@
 // (aria-hidden): the row's title and description carry the meaning. No data, no script.
 import type { ReactNode } from "react";
 
-export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "turnout" | "precincts" | "delegation" | "calendar";
+export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar";
 
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
@@ -102,6 +102,27 @@ function PopularVote() {
   );
 }
 
+/** Generic ballot (ring) against the House vote (dot) per year: the dot sits to the Republican side of the ring. */
+function GenericBallot() {
+  const pairs: [number, number, number][] = [[2016, 40, 46], [2018, 22, 24], [2020, 21, 36], [2022, 43, 50], [2024, 41, 50]];
+  return (
+    <Frame>
+      <line x1="24" y1="44" x2="344" y2="44" stroke={MUTED} strokeWidth="1.5" strokeDasharray="3 3" />
+      {pairs.map(([year, gb, pv], i) => {
+        const x = 46 + i * 64;
+        return (
+          <g key={year}>
+            <line x1={x} y1={gb} x2={x} y2={pv} stroke={MUTED} strokeWidth="2.5" strokeLinecap="round" />
+            <circle cx={x} cy={gb} r="5" fill="none" stroke={DEM} strokeWidth="2.5" />
+            <circle cx={x} cy={pv} r="5" fill={REP} />
+            <text x={x} y="80" fontSize="10" fontWeight="700" fill={MUTED} textAnchor="middle">{year}</text>
+          </g>
+        );
+      })}
+    </Frame>
+  );
+}
+
 /** Turnout bars since 2016: presidential years full, midterms lighter, the next midterm dashed. */
 function Turnout() {
   const bars: [number, number, boolean][] = [[2016, 48, true], [2018, 36, false], [2020, 53, true], [2022, 34, false], [2024, 49, true]];
@@ -163,7 +184,7 @@ function Calendar() {
 }
 
 const GRAPHICS: Record<HubGraphicId, () => ReactNode> = {
-  forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote,
+  forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote, genericBallot: GenericBallot,
   turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar,
 };
 

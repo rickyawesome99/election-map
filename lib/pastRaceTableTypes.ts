@@ -33,6 +33,8 @@ export type PastRaceRow = {
   prevYear: number | null;
   /** Party of the previous election's winner, for the Flip tag (a same-party race keeps its true party). */
   prevWinnerParty: PastRaceParty | null;
+  /** The seat changed party (lib/seatFlips.ts, the map's Control view rule). */
+  flipped?: boolean;
   totalVotes: number | null;
   uncontested: boolean;
 };

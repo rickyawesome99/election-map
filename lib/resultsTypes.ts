@@ -158,7 +158,11 @@ export type RaceProjection = {
   swing: number;
   /** What the rest of the country's counted counties imply for this race before its own count
    *  (lib/resultsNight.ts), R-positive points, by part; `se` its standard error. Zero with nothing in anywhere. */
-  night: { shift: number; national: number; state: number; office: number; demo: number; se: number };
+  night: {
+    shift: number; national: number; state: number; office: number; demo: number; se: number;
+    /** The state's early-vote skew applied to this race's part-counted counties (positive = the first votes lean Democratic). */
+    mirage: { value: number; se: number };
+  };
   /** Turnout running at this multiple of the expectation, from finished counties. */
   turnoutFactor: number;
   /** Projected final margin, R-positive. */

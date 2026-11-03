@@ -203,6 +203,20 @@ export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
 export const FORECAST_CONSTANTS = {
   ENV_MISS_SHRINK: 0.5,
   ENV_DAYS_MID_SEPT_TO_ELECTION: 49,
+  // ── House races on the House-vote scale (2026-11-02) ────────────────────────────────────
+  // E is one environment fitted across every office, so it moves about s (≈ 0.57) points per
+  // point of House popular vote: Senate, Governor and presidential margins swing less than the
+  // House vote does, and in 2022 the other way. Applying that damped E to House races is a
+  // contradiction in the aggregate — the House vote IS the sum of House margins — and it left
+  // the 2026 House projections summing to D+4.9 against a PV_hat of D+7.4. With this on, a
+  // House race's environment term is β* × E_hat / s = β* × (PV_hat − pv0): the full House-vote
+  // swing from the level at which E is zero. The House national error is likewise the structural
+  // term ⊕ the generic ballot's own error on the vote scale (not × s). Senate and Governor keep E.
+  // Backtest (forwardBacktest --lambda, oracle E): the House response to E is year-dependent —
+  // ≈1 in 2024, ≈2+ in 2018 and 2022 — and the struct-mode pooled MAE is flat (4.56 → 4.60)
+  // because the test years' E_hat sat near zero; 2018 (n 6) improves 7.7 → 5.9, 2020 (n 5)
+  // worsens 5.1 → 6.8. Adopted on the aggregate argument (user decision 2026-11-02).
+  HOUSE_ENV_ON_VOTE_SCALE: true,
   // ── Shared national error (2026-10-23 review) ───────────────────────────────────────
   // σ_E² = NATIONAL_SIGMA_STRUCTURAL² + (|s| × √(sd(miss)² + (horizon × rms(drift))²))²
   // The second term is the generic ballot's own error (poll miss + September→November drift)

@@ -99,6 +99,8 @@ const HORIZON_POLLRULES = argv.includes("--horizon-pollrules");
 const HORIZON_COMPINC = argv.includes("--horizon-compinc");
 const halfLifeOf = (office: "H" | "S" | "G") => halfLifeOverride ?? F.POLL_HALF_LIFE_DAYS[office];
 const NO_PARTISAN = argv.includes("--no-partisan");
+// --no-house-scale: score House races on the E scale (the pre-2026-11-02 rule) instead of the House-vote scale.
+const HOUSE_SCALE = F.HOUSE_ENV_ON_VOTE_SCALE && !argv.includes("--no-house-scale");
 // Shift applied to party/campaign-sponsored polls toward the sponsor's opponent (pts of margin).
 const PARTISAN_SHIFT = Number(argOf("--partisan-shift") ?? 0);
 const THETA: Theta = LIVE;
@@ -439,6 +441,16 @@ function sigmaE(exclude: number): number {
   const m = structModel(exclude);
   return Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * Math.sqrt(m.sdMiss ** 2 + m.sdDrift ** 2));
 }
+// The same per office at horizon factor hf: House races carry the generic ballot's error on the
+// vote scale (not × s) under HOUSE_SCALE — mirrors nationalSigmaFor() in lib/tplCompute.ts.
+function sigmaEFor(office: "S" | "G" | "H", exclude: number, hf = 1): number {
+  const m = structModel(exclude);
+  const gbErr = Math.sqrt(m.sdMiss ** 2 + (hf * m.sdDrift) ** 2);
+  return Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, (office === "H" && HOUSE_SCALE ? 1 : Math.abs(m.s)) * gbErr);
+}
+// E-scale → office scale: House races take E_hat / s (the House-vote swing itself) under HOUSE_SCALE —
+// mirrors envScaleFor() in lib/tplCompute.ts, with s fitted without the target year.
+const envScale = (x: { office: "S" | "G" | "H"; year: number }) => (x.office === "H" && HOUSE_SCALE ? 1 / Math.abs(structModel(x.year).s) : 1);
 function envEstimate(mode: EnvMode, Y: number): number | null {
   const h = envHistory[Y];
   if (mode === "fitted") return fitUpTo(Y).E[Y] ?? null;
@@ -462,17 +474,17 @@ const qwOf = (office: Pred["office"]) => (NO_QUALITY ? 0 : F.QUALITY_WEIGHT[offi
 // (0 where a side is unknown); "zero"/"structural"/"slope-only" mask the receipts entirely
 // (the --money test: how much of the receipts signal the imputation recovers).
 let moneyVariant: "live" | "zero" | "structural" | "slope-only" = "live";
-const structuralFf = (x: Pred, E: number, noIntercept = false) => { const m = moneyModelAsOf(x.year)[x.office]; return forwardFf(structuralGap(noIntercept ? { ...m, intercept: 0 } : m, x.incSign, x.lean + x.beta * E + x.inc)); };
-const sgOf = (x: Pred, E: number) => structuralGap(moneyModelAsOf(x.year)[x.office], x.incSign, x.lean + x.beta * E + x.inc);
+const structuralFf = (x: Pred, E: number, noIntercept = false) => { const m = moneyModelAsOf(x.year)[x.office]; return forwardFf(structuralGap(noIntercept ? { ...m, intercept: 0 } : m, x.incSign, x.lean + x.beta * E * envScale(x) + x.inc)); };
+const sgOf = (x: Pred, E: number) => structuralGap(moneyModelAsOf(x.year)[x.office], x.incSign, x.lean + x.beta * E * envScale(x) + x.inc);
 const ffOf = (x: Pred, E: number) =>
   moneyVariant === "zero" ? 0 : moneyVariant === "slope-only" ? structuralFf(x, E, true) : moneyVariant === "structural" ? structuralFf(x, E)
   : moneyPts(x.office, x.gap, sgOf(x, E));
 // Competitive-seat incumbency (FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY, House): extra pts toward a
 // House incumbent, full at an even pre-incumbency margin and fading to 0 at ±compIncWidth.
 let compIncK = F.COMPETITIVE_INCUMBENCY.H, compIncWidth = F.COMPETITIVE_INCUMBENCY_WIDTH; // live values; --horizon-compinc sweeps them
-const compInc = (x: Pred, E: number) => (x.office !== "H" || compIncK === 0 || x.incSign === 0 ? 0 : x.incSign * compIncK * Math.max(0, 1 - Math.abs(x.lean + x.beta * E) / compIncWidth));
+const compInc = (x: Pred, E: number) => (x.office !== "H" || compIncK === 0 || x.incSign === 0 ? 0 : x.incSign * compIncK * Math.max(0, 1 - Math.abs(x.lean + x.beta * E * envScale(x)) / compIncWidth));
 const predOf = (x: Pred, E: number, drop: { inc?: boolean; ff?: boolean; env?: boolean; quality?: boolean } = {}, qw: number | null = null) =>
-  x.lean + (drop.env ? 0 : x.beta * E) + (drop.inc ? 0 : x.inc + compInc(x, E)) + (drop.ff ? 0 : ffOf(x, E)) + (drop.quality ? 0 : (qw ?? qwOf(x.office)) * x.quality);
+  x.lean + (drop.env ? 0 : x.beta * E * envScale(x)) + (drop.inc ? 0 : x.inc + compInc(x, E)) + (drop.ff ? 0 : ffOf(x, E)) + (drop.quality ? 0 : (qw ?? qwOf(x.office)) * x.quality);
 function score(preds: Pred[], E: number, drop: { inc?: boolean; ff?: boolean; env?: boolean; quality?: boolean } = {}): Score | null {
   if (preds.length < 3) return null;
   const p = preds.map((x) => predOf(x, E, drop));
@@ -554,10 +566,10 @@ for (const office of OFFICES) {
   const brier = (pOf: (r: Row) => number) => mean(rows.map((r) => (pOf(r) - (r.actual <= 0 ? 1 : 0)) ** 2));
   const bLogit = brier((r) => marginToProbability(r.pred));
   const bNorm = brier((r) => Phi(-r.pred / total));
-  const sigmaP3 = (r: Row) => Math.sqrt((r.beta * sigmaE(r.year)) ** 2 + withinRsd(rows, years.filter((y) => y !== r.year)) ** 2);
+  const sigmaP3 = (r: Row) => Math.sqrt((r.beta * sigmaEFor(office, r.year)) ** 2 + withinRsd(rows, years.filter((y) => y !== r.year)) ** 2);
   const bP3 = brier((r) => Phi(-r.pred / sigmaP3(r)));
   const coverP3 = mean(rows.map((r) => (Math.abs(r.res) <= 1.2816 * sigmaP3(r) ? 1 : 0)));
-  const coverAt = (sig: number) => mean(rows.map((r) => (Math.abs(r.res) <= 1.2816 * Math.sqrt((r.beta * sigmaE(r.year)) ** 2 + sig ** 2) ? 1 : 0)));
+  const coverAt = (sig: number) => mean(rows.map((r) => (Math.abs(r.res) <= 1.2816 * Math.sqrt((r.beta * sigmaEFor(office, r.year)) ** 2 + sig ** 2) ? 1 : 0)));
   console.log(`    ${LABEL[office]} 80% coverage by RACE_SIGMA: ` + [wr, F.RACE_SIGMA[office], 5, 5.5, 6, 6.5, 9, 9.5].map((v) => `${v.toFixed(1)}→${(coverAt(v) * 100).toFixed(0)}%`).join("  "));
   console.log(`  ${LABEL[office].padEnd(8)} ${String(rows.length).padStart(3)}  ${mean(rows.map((r) => Math.abs(r.res))).toFixed(2)}   ${mean(yearBias.map(Math.abs)).toFixed(2).padStart(8)}   ${within.toFixed(2).padStart(8)}   ${wr.toFixed(2).padStart(8)}   ${national.toFixed(2).padStart(10)}   ${bLogit.toFixed(3).padStart(14)}   ${bNorm.toFixed(3).padStart(15)}   ${bP3.toFixed(3).padStart(16)}   ${(coverP3 * 100).toFixed(0).padStart(9)}%`);
 }
@@ -591,7 +603,7 @@ if (ABLATE) {
 // error); struct = the live rule from the mid-September generic ballot. The lean's own strip
 // (fitted on years ≤ Y−1) is untouched, so this is the forward response alone.
 if (argv.includes("--lambda")) {
-  const lambdas = [0.8, 0.9, 1, 1.1, 1.2, 1.4, 1.6];
+  const lambdas = [0.8, 1, 1.2, 1.4, 1.6, 1.75, 2, 2.25];
   console.log("\nEnvironment scale λ on the forward term — MAE (bias), no shift removed");
   for (const mode of ["fitted", "pv", "struct"] as EnvMode[]) {
     for (const office of OFFICES) {
@@ -1067,7 +1079,7 @@ function horizonBacktest(days: number[], opt: HorizonOpts = {}): HorizonRow[] {
       const m = structModel(Y);
       const E = m.c + m.s * (gb + F.ENV_MISS_SHRINK * m.meanMiss);
       const hf = Math.min(1.5, d / F.ENV_DAYS_MID_SEPT_TO_ELECTION);
-      const sigE = Math.hypot(F.NATIONAL_SIGMA_STRUCTURAL, Math.abs(m.s) * Math.sqrt(m.sdMiss ** 2 + (hf * m.sdDrift) ** 2));
+      const sigEOf = (office: "S" | "G" | "H") => sigmaEFor(office, Y, hf);
       const betaOf = new Map<string, number>(); for (const x of predsByYear.get(Y)!) betaOf.set(pollKeyOf(x), x.beta);
       // normalize: share of the undecided allocated in proportion to the decided shares (1 = full two-party).
       const nz = opt.normalize ?? F.POLL_UNDECIDED_ALLOCATION;
@@ -1088,9 +1100,9 @@ function horizonBacktest(days: number[], opt: HorizonOpts = {}): HorizonRow[] {
           const ps = avg.polls;
           opt.collect.push({ days: d, year: Y, office: x.office, race: x.key, actual: +x.actual.toFixed(2), model: +model.toFixed(2), poll: +avg.diff.toFixed(2), nEff: +avg.nEff.toFixed(3), n: avg.n,
             nD: ps.filter((q) => q.partisan === "D").length, nR: ps.filter((q) => q.partisan === "R").length, ageMin: Math.round(Math.min(...ps.map((q) => q.ageDays))), ageMean: Math.round(mean(ps.map((q) => q.ageDays))),
-            inc: x.incSign, beta: +x.beta.toFixed(3), sigE: +sigE.toFixed(3) });
+            inc: x.incSign, beta: +x.beta.toFixed(3), sigE: +sigEOf(x.office).toFixed(3) });
         }
-        const sigma = Math.sqrt((x.beta * sigE) ** 2 + ((1 - w) * F.RACE_SIGMA[x.office]) ** 2 + (w * F.POLL_SIGMA[x.office]) ** 2);
+        const sigma = Math.sqrt((x.beta * sigEOf(x.office)) ** 2 + ((1 - w) * F.RACE_SIGMA[x.office]) ** 2 + (w * F.POLL_SIGMA[x.office]) ** 2);
         const p = Math.max(0.005, Math.min(0.995, Phi(-margin / sigma)));
         cells[x.office].push({ res: x.actual - margin, resModel: x.actual - model, z: Math.abs(x.actual - margin) / sigma, p, won: x.actual <= 0 ? 1 : 0, w, polled: !!avg, year: Y, called: (margin <= 0) === (x.actual <= 0) });
       }
@@ -1315,7 +1327,7 @@ if (EMIT) {
   // Everything under env=struct (the live environment rule) and the LIVE constants, so the page
   // always describes the model as it is. Re-run after any change to the model or its data.
   const r2 = (v: number) => +v.toFixed(2), r3 = (v: number) => +v.toFixed(3);
-  const liveSigma = (office: "S" | "G" | "H", r: Row) => Math.sqrt((r.beta * sigmaE(r.year)) ** 2 + F.RACE_SIGMA[office] ** 2);
+  const liveSigma = (office: "S" | "G" | "H", r: Row) => Math.sqrt((r.beta * sigmaEFor(office, r.year)) ** 2 + F.RACE_SIGMA[office] ** 2);
   const byYear = YEARS.flatMap((Y) => {
     const E = envEstimate("struct", Y); if (E == null) return [];
     return OFFICES.flatMap((office) => {

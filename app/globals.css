@@ -550,3 +550,28 @@ html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
   .vh-lean, .vh-margin, .vh-tab-line, .vh-seg-thumb, .ix-press, .ix-lift { transition: none; }
   .vh-row:hover .vh-lean, .vh-row:hover .vh-margin, .ix-press:active:not(:disabled), .ix-lift:hover, .ix-lift:active { transform: none; }
 }
+
+/* State page "On the ballot" (components/state/BallotSection.tsx): statewide matchup cards, then
+   House and chamber ledger rows. Desktop rows share five columns (office · Democrat · Republican ·
+   margin · rating); under 768px each row is two lines, office + result over the two candidates. */
+.bl-card { border-top: 2px solid var(--app-text-primary); padding: 12px 0 20px; min-width: 0; display: block; }
+.bl-ledger { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 14px; }
+.bl-row { display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; grid-template-areas: "off res" "dem rep"; row-gap: 10px; padding-block: 12px; border-bottom: 1px solid var(--app-border); }
+.bl-row > * { min-width: 0; display: flex; align-items: center; }
+.bl-off { grid-area: off; gap: 10px; }
+.bl-dem { grid-area: dem; gap: 9px; }
+.bl-rep { grid-area: rep; gap: 9px; }
+.bl-span { grid-column: 1 / -1; grid-row: 2; }
+.bl-seats { grid-column: 1 / -1; grid-row: 2; }
+.bl-mg, .bl-pill { grid-area: res; justify-content: flex-end; }
+.bl-mg { padding-right: calc(4.6rem + 8px); }
+.bl-row:focus-visible { outline: 2px solid var(--app-text-primary); outline-offset: -2px; }
+@media (min-width: 768px) {
+  .bl-ledger { grid-template-columns: 11rem minmax(0, 1fr) minmax(0, 1fr) 5.4rem 4.6rem; column-gap: 24px; }
+  .bl-row { grid-template-areas: none; row-gap: 0; }
+  .bl-row-house { padding-block: 9px; }
+  .bl-row > * { grid-area: auto; }
+  .bl-off { padding-left: 6px; }
+  .bl-span, .bl-seats { grid-column: span 2; grid-row: auto; }
+  .bl-mg { padding-right: 0; }
+}

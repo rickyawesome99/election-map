@@ -23,12 +23,12 @@ import { housePastElectionHrefs, pastElectionHref } from "@/lib/pastElections";
 import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { chamberSummary } from "@/lib/stateLegChamberSummary";
 import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
-import { fieldPersons, projectedNomineeShare } from "@/lib/stateLegAtlas";
-import { stateEntry } from "@/lib/turnout";
+import { fieldPersons, projectedNomineeShare, projectedSeats, type ProjectedSeat } from "@/lib/stateLegAtlas";
 import { projectionStateSlice } from "@/lib/turnoutModel";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import { ABBR_TO_FIPS } from "@/lib/fips";
-import { getRaceColor, getRatingColors } from "@/lib/colorScale";
+import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
+import { candidatePhoto } from "@/lib/candidatePhotos";
 import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 import type { StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
 import type { UpcomingChamber } from "@/lib/stateLegUpcoming";
@@ -56,7 +56,7 @@ export type HeroBody = {
 
 // ── On the ballot ────────────────────────────────────────────────────────────
 
-export type BallotCandidate = { name: string; party: "D" | "R" | "I"; incumbent: boolean };
+export type BallotCandidate = { name: string; party: "D" | "R" | "I"; incumbent: boolean; photo: string | null };
 export type BallotRace = {
   kind: "race";
   label: string;
@@ -73,6 +73,7 @@ export type BallotHoldover = {
   name: string;
   party: "D" | "R" | "I";
   nextElection: number | string;
+  photo: string | null;
 };
 export type HouseRow = {
   id: string;
@@ -83,6 +84,10 @@ export type HouseRow = {
   rating: string;
   /** The departing seat holder where neither nominee is an incumbent, else null. */
   openHolder: string | null;
+  /** The district's GEOID on the 2026 lines (state FIPS + 2-digit number), for its locator map. */
+  geoid: string;
+  dem: BallotCandidate | null;
+  rep: BallotCandidate | null;
 };
 
 /** The 2026 projection's shading for a chamber's districts, computed here so the map never needs the model. */
@@ -131,11 +136,16 @@ export type ChamberBlock = {
   districts: number | null;
   open: number | null;
   within5: number;
+  /**
+   * Every seat after the election, most Democratic first: a rating ("Lean D") from its own projected
+   * margin, "Safe D/R" where uncontested or decided by the field, "not-up D/R/I" for sitting members
+   * off the ballot, "I" for an independent's seat, "none" unprojected. Sums to projDem / projRep.
+   */
+  seatTones: string[] | null;
   within10: number;
   map: ChamberMapData;
 };
 
-export type TurnoutStat = { label: string; votes: number; rate: number | null; sub: string };
 
 // ── Results since 2016 ───────────────────────────────────────────────────────
 
@@ -179,7 +189,6 @@ export type StatePageData = {
   tpl: number | null;
   ballotSentence: string;
   bodies: HeroBody[];
-  turnout: TurnoutStat[];
   governor: BallotRace | BallotHoldover | null;
   senate: (BallotRace | BallotHoldover)[];
   house: { rows: HouseRow[]; demProj: number; repProj: number; open: number };
@@ -249,6 +258,21 @@ function chamberShading(summary: ReturnType<typeof chamberSummary>, chamberLabel
   return { fill, tip, legend, note: `${electionYear} ${chamberLabel} projection: lean on today's lines + national environment + incumbency; solid party colour = only one major party on the ballot.` };
 }
 
+// Most Democratic first: sitting D members, safe D, contested seats by margin (0 is D), independents
+// and unprojected between the two sides, then the mirror image for Republicans.
+function seatTones(seats: ProjectedSeat[]): string[] {
+  const score = (x: ProjectedSeat) => {
+    if (x.party !== "D" && x.party !== "R") return 0.0001;
+    const side = x.party === "D" ? -1 : 1;
+    return x.status === "not-up" ? side * 2000 : x.status === "safe" || x.margin == null ? side * 1000 : x.margin;
+  };
+  return [...seats].sort((a, b) => score(a) - score(b)).map((x) =>
+    x.status === "not-up" ? `not-up ${x.party === "D" || x.party === "R" ? x.party : "I"}`
+      : x.party === "I" || x.party === "O" ? "I"
+        : x.party === "none" ? "none"
+          : x.status === "safe" || x.margin == null ? `Safe ${x.party}` : marginToRating(x.margin));
+}
+
 function chamberBlock(state: StateInfo, chamber: Chamber, unicameral: boolean): ChamberBlock | null {
   const s = chamberSummary(state.abbr, state.name, chamber);
   if (s.roster.length === 0) return null;
@@ -301,6 +325,7 @@ function chamberBlock(state: StateInfo, chamber: Chamber, unicameral: boolean): 
     open: s.fieldStats?.open ?? null,
     within5: within(5),
     within10: within(10),
+    seatTones: p ? seatTones(projectedSeats(s.roster.map((d) => ({ seats: d.seats, incumbents: d.incumbents ?? [], projection: p.districts.find((x) => x.key === d.number) ?? null })))) : null,
     map: {
       chamber,
       isUnicameral: unicameral,
@@ -322,45 +347,21 @@ function raceParty(race: ForecastedRace): "D" | "R" | "I" {
   return race.margin <= 0 ? "D" : "R";
 }
 
+function ballotCandidates(race: ForecastedRace): Pick<BallotRace, "dem" | "rep"> {
+  const c = race.candidates;
+  const one = (n: NonNullable<ForecastedRace["candidates"]>["dem"]): BallotCandidate => ({ name: n.name, party: n.party, incumbent: n.incumbent, photo: candidatePhoto(n.name, race.state) });
+  return { dem: c ? one(c.dem) : null, rep: c ? one(c.rep) : null };
+}
+
 function toBallotRace(race: ForecastedRace, label: string, href: string): BallotRace {
   return {
     kind: "race",
     label,
     href,
-    dem: race.candidates ? { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent } : null,
-    rep: race.candidates ? { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent } : null,
+    ...ballotCandidates(race),
     margin: race.margin,
     rating: race.rating,
   };
-}
-
-/** Turnout as the page states it: ballots in the top race and the share of citizen adults that is. */
-function turnoutStats(abbr: string): TurnoutStat[] {
-  const out: TurnoutStat[] = [];
-  const officeWord = (o: string) => (o === "president" ? "president" : o === "senate" ? "Senate" : o === "governor" ? "governor" : "House");
-  try {
-    const slice = projectionStateSlice(abbr);
-    const statewide = slice.races.filter((r) => r.office !== "house").sort((a, b) => b.votes - a.votes)[0];
-    if (statewide) {
-      out.push({ label: `${electionYear} expected`, votes: statewide.votes, rate: statewide.rate ?? null, sub: `top race: ${officeWord(statewide.office)}` });
-    } else {
-      const house = slice.races.filter((r) => r.office === "house");
-      if (house.length) {
-        const votes = house.reduce((a, r) => a + r.votes, 0);
-        const cvap = house[0].cvap;
-        out.push({ label: `${electionYear} expected`, votes, rate: cvap ? (votes / cvap) * 100 : null, sub: "House races only" });
-      }
-    }
-  } catch { /* no estimate for this state */ }
-  for (const year of [2022, 2024]) {
-    try {
-      const e = stateEntry(abbr, year);
-      if (!e?.top) continue;
-      const race = e.races[e.top.office as keyof typeof e.races];
-      out.push({ label: `${year} ${officeWord(e.top.office)}`, votes: e.top.votes, rate: race?.rate ?? null, sub: year === 2024 ? "last presidential" : "last midterm" });
-    } catch { /* year not on file */ }
-  }
-  return out;
 }
 
 export function buildStatePage(state: StateInfo): StatePageData {
@@ -384,13 +385,13 @@ export function buildStatePage(state: StateInfo): StatePageData {
   const governor: StatePageData["governor"] = projectedGovernor
     ? toBallotRace(projectedGovernor, "Governor", `/governor/${projectedGovernor.id.toLowerCase()}`)
     : governorNoEl
-      ? { kind: "holdover", label: "Governor", href: `/governor/${governorNoEl.abbr.toLowerCase()}`, name: governorNoEl.incumbent, party: governorNoEl.party as "D" | "R" | "I", nextElection: governorNoEl.nextElection }
+      ? { kind: "holdover", label: "Governor", href: `/governor/${governorNoEl.abbr.toLowerCase()}`, name: governorNoEl.incumbent, party: governorNoEl.party as "D" | "R" | "I", nextElection: governorNoEl.nextElection, photo: candidatePhoto(governorNoEl.incumbent, abbr) }
       : null;
   const senate: StatePageData["senate"] = [];
   if (projectedSenate1) senate.push(toBallotRace(projectedSenate1, "Senate (Seat 1)", `/senate/${projectedSenate1.id.toLowerCase()}`));
-  else if (senateSeat1NoEl) senate.push({ kind: "holdover", label: "Senate (Seat 1)", href: `/senate/${senateSeat1NoEl.abbr.toLowerCase()}`, name: senateSeat1NoEl.incumbent, party: senateSeat1NoEl.party as "D" | "R" | "I", nextElection: senateSeat1NoEl.nextElection });
+  else if (senateSeat1NoEl) senate.push({ kind: "holdover", label: "Senate (Seat 1)", href: `/senate/${senateSeat1NoEl.abbr.toLowerCase()}`, name: senateSeat1NoEl.incumbent, party: senateSeat1NoEl.party as "D" | "R" | "I", nextElection: senateSeat1NoEl.nextElection, photo: candidatePhoto(senateSeat1NoEl.incumbent, abbr) });
   if (projectedSenate2) senate.push(toBallotRace(projectedSenate2, "Senate (Seat 2)", `/senate/${projectedSenate2.id.toLowerCase().replace(/-2$/, "2")}`));
-  else if (senateSeat2Holdover) senate.push({ kind: "holdover", label: "Senate (Seat 2)", href: `/senate/${senateSeat2Holdover.abbr.toLowerCase()}2`, name: senateSeat2Holdover.incumbent, party: senateSeat2Holdover.party as "D" | "R" | "I", nextElection: senateSeat2Holdover.nextElection });
+  else if (senateSeat2Holdover) senate.push({ kind: "holdover", label: "Senate (Seat 2)", href: `/senate/${senateSeat2Holdover.abbr.toLowerCase()}2`, name: senateSeat2Holdover.incumbent, party: senateSeat2Holdover.party as "D" | "R" | "I", nextElection: senateSeat2Holdover.nextElection, photo: candidatePhoto(senateSeat2Holdover.incumbent, abbr) });
 
   const houseRows: HouseRow[] = houseRaces.map((race) => {
     const distNum = race.name.split("-")[1];
@@ -403,6 +404,8 @@ export function buildStatePage(state: StateInfo): StatePageData {
       margin: race.margin,
       rating: race.rating,
       openHolder: open ? (race.seatHolder ?? "open seat") : null,
+      geoid: `${stateFips}${distNum === "AL" ? "00" : distNum.padStart(2, "0")}`,
+      ...ballotCandidates(race),
     };
   });
 
@@ -599,20 +602,17 @@ export function buildStatePage(state: StateInfo): StatePageData {
   )].sort((a, b) => b - a);
   const vintage: VintageItem[] = [];
   if (houseRaces.length > 0) {
+    // The first election on today's lines; cdRedraws are election years, newest first.
     vintage.push({
-      label: "Congressional map",
-      value: cdRedraws.length ? `redrawn ${cdRedraws[0]}` : "unchanged since 2016",
-      sub: cdRedraws.length > 1 ? `earlier redraw${cdRedraws.length > 2 ? "s" : ""} ${cdRedraws.slice(1).join(", ")}` : cdRedraws.length === 1 ? "first used that November" : undefined,
+      label: "Congressional map · first used",
+      value: houseRaces.length === 1 ? "at-large" : cdRedraws.length ? String(cdRedraws[0]) : "before 2016",
     });
   }
   for (const c of chambers) {
     const info = c.map.mapInfo;
     const era = c.map.eras.at(-1);
-    vintage.push({
-      label: `${c.label} map`,
-      value: info?.enactedDate ? `enacted ${info.enactedDate}` : info?.firstCycle ? `first used ${info.firstCycle}` : era ? `since ${era.firstYear}` : "—",
-      sub: info?.source ?? era?.source,
-    });
+    const firstUsed = era?.electionYears[0] ?? info?.firstCycle ?? era?.firstYear;
+    vintage.push({ label: `${c.label} map · first used`, value: firstUsed != null ? String(firstUsed) : "—" });
   }
   vintage.push({ label: "Next redistricting", value: "after the 2030 census", sub: "unless a court orders otherwise" });
 
@@ -662,7 +662,6 @@ export function buildStatePage(state: StateInfo): StatePageData {
     tpl: Number.isFinite(tpl) ? tpl : null,
     ballotSentence,
     bodies,
-    turnout: turnoutStats(abbr),
     governor,
     senate,
     house: {

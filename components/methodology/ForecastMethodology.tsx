@@ -9,7 +9,7 @@ import { ALIGNED_INDEPENDENTS, THREE_WAY_RACES } from "@/data/raceEligibility";
 import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
 import {
   getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
-  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
+  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, envScaleFor, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
   computeCandidateEffects, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE,
 } from "@/lib/tplCompute";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
@@ -22,7 +22,7 @@ const hsg = (o: Record<"H" | "S" | "G", number>, fmt: (v: number) => string = St
 // Every FORECAST_CONSTANTS key and the section of this tab that documents it. `satisfies` makes the
 // type-check fail when a constant is added without being documented here.
 const DOCUMENTED_IN = {
-  ENV_MISS_SHRINK: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment", NATIONAL_SIGMA_STRUCTURAL: "environment",
+  ENV_MISS_SHRINK: "environment", ENV_DAYS_MID_SEPT_TO_ELECTION: "environment", NATIONAL_SIGMA_STRUCTURAL: "environment", HOUSE_ENV_ON_VOTE_SCALE: "environment",
   APPOINTED_INCUMBENCY_SHARE: "incumbency", COMPETITIVE_INCUMBENCY: "incumbency", COMPETITIVE_INCUMBENCY_WIDTH: "incumbency",
   MONEY_BASIS: "fundraising", MONEY_K: "fundraising", MONEY_CAP: "fundraising", PARTIAL_CYCLE_GAP_SCALE: "fundraising",
   QUALITY_WEIGHT: "candidates", OBSERVABLE_PRIOR_FEATURES: "candidates",
@@ -35,7 +35,7 @@ const DOCUMENTED_IN = {
 function ledgerOf(race: ForecastedRace) {
   const tpl = race.raceType === "house" ? calculateDistrictTpl(race.id) : calculateStateTpl(race.stateAbbr, race.state);
   const incPts = raceIncumbencyPts(race);
-  return { tpl, env: effectiveEnvironment(race.stateAbbr), incPts, money: raceMoneyTerm(race), quality: candidateQuality(race) };
+  return { tpl, env: effectiveEnvironment(race.stateAbbr, race.office), incPts, money: raceMoneyTerm(race), quality: candidateQuality(race) };
 }
 
 export default function ForecastMethodology() {
@@ -118,8 +118,10 @@ export default function ForecastMethodology() {
           { name: "PV_hat", formula: `GB + ${F.ENV_MISS_SHRINK} × mean(House vote − final GB)`, now: <><M v={env.gb} /> + {F.ENV_MISS_SHRINK} × <M v={envModel.meanMiss} /> = <M v={env.pvHat} /></> },
           { name: "E_hat", formula: "c + s × PV_hat", now: <>{signed(envModel.c, 2)} + {envModel.s.toFixed(2)} × PV_hat = <M v={env.eHat} /></> },
           { name: "σ_E", formula: "√( NATIONAL_SIGMA_STRUCTURAL² + (|s| × √( sd(miss)² + (horizon × rms(drift))² ))² )", now: <>√({F.NATIONAL_SIGMA_STRUCTURAL}² + ({envModel.s.toFixed(2)} × √({envModel.sdMiss.toFixed(1)}² + ({env.horizon.toFixed(2)} × {envModel.sdDrift.toFixed(1)})²))²) = <N>{env.sigmaE.toFixed(2)}</N></> },
-          { name: "Environment pts", formula: "β*(state) × E_hat", now: <>e.g. β* 1.00 → <M v={env.eHat} /></> },
-        ]} note={<>horizon = days to the election ÷ {F.ENV_DAYS_MID_SEPT_TO_ELECTION}, capped at 1.5 ({Math.round(env.daysToElection)} days → {env.horizon.toFixed(2)}), so the generic-ballot part of σ_E narrows as election day approaches; the structural part does not.</>} />
+          { name: "Environment pts, Senate / Governor", formula: "β*(state) × E_hat", now: <>e.g. β* 1.00 → <M v={env.eHat} /></> },
+          { name: "Environment pts, House", formula: F.HOUSE_ENV_ON_VOTE_SCALE ? "β*(state) × E_hat / s  = β* × (PV_hat − pv0)" : "β*(state) × E_hat", now: <>e.g. β* 1.00 → <M v={env.eHat * envScaleFor("H")} /></> },
+          { name: "σ_E, House", formula: F.HOUSE_ENV_ON_VOTE_SCALE ? "√( NATIONAL_SIGMA_STRUCTURAL² + sd(miss)² + (horizon × rms(drift))² )" : "σ_E", now: <N>{env.sigmaEHouse.toFixed(2)}</N> },
+        ]} note={<>horizon = days to the election ÷ {F.ENV_DAYS_MID_SEPT_TO_ELECTION}, capped at 1.5 ({Math.round(env.daysToElection)} days → {env.horizon.toFixed(2)}), so the generic-ballot part of σ_E narrows as election day approaches; the structural part does not. House races read the environment on the House-vote scale (E_hat ÷ s): see &ldquo;Why a conversion&rdquo; below.</>} />
         <Block label="Generic-ballot average" meta={`${genericBallotPolls.length} polls on file`}>
           <Defs items={[
             { term: "One poll per pollster", def: "Only each pollster's most recent survey counts, so weekly trackers cannot dominate by volume." },
@@ -130,6 +132,7 @@ export default function ForecastMethodology() {
         </Block>
         <Block label="Why a conversion" meta={`c and s fitted over ${envModel.years.join(", ")}`}>
           <P>E(year) is fitted jointly across every office and centered on the 2016–2025 average, so it is damped relative to the House popular vote: a one-point move in the House vote is worth {envModel.s.toFixed(2)} points of E, and E is zero when the House vote is <M v={envModel.pv0} />. Both numbers are properties of this model, so they are regressed from the model&rsquo;s own fitted E against the actual House vote rather than assumed.</P>
+          <P>The damping is right for Senate and Governor races, which swing less than the House vote does, but not for the House itself: the House popular vote is the sum of the House margins, so House races must move one for one with it. Since 2026-11-02 (HOUSE_ENV_ON_VOTE_SCALE) a House race&rsquo;s environment term is β* × E_hat ÷ s, the full swing of the House vote from the level at which E is zero ({envModel.pv0 < 0 ? "D" : "R"}+{Math.abs(envModel.pv0).toFixed(1)}), and its national error is the structural term plus the generic ballot&rsquo;s own error on the vote scale. Before the change the 2026 House projections summed to a national vote of D+4.9 against a PV_hat of D+7.4; the Senate and Governor terms are unchanged. The oracle-E backtest (<Code>--lambda</Code>) finds the House response to E year-dependent, about 1 in 2024 and 2 or more in 2018 and 2022, and the pooled struct-mode House error is flat either way (4.56 → 4.61), so this is an aggregate-consistency rule rather than a backtest win. See <Link href="/analysis/generic-ballot" className="underline">Generic Ballot vs Popular Vote</Link>.</P>
           <DataTable align="lrrrrr" head={["Year", "Fitted E", "GB mid-Sept", "GB final", "House vote", "Miss (vote − final GB)"]}
             rows={nationalEnvironmentHistory.filter((r) => fit.E[r.year] != null && r.housePv != null).map((r) => [
               r.year, <M key="e" v={fit.E[r.year]} />, <M key="s" v={r.gbMidSept} />, <M key="f" v={r.gbFinal} />, <M key="p" v={r.housePv} />, <M key="m" v={r.housePv != null && r.gbFinal != null ? r.housePv - r.gbFinal : null} />,
@@ -144,7 +147,8 @@ export default function ForecastMethodology() {
           { name: "ENV_DAYS_MID_SEPT_TO_ELECTION", value: F.ENV_DAYS_MID_SEPT_TO_ELECTION, basis: "data", meaning: "The horizon the drift variance in the history table was measured over; drift scales linearly with days remaining." },
           { name: "c, s", value: `${signed(envModel.c, 2)}, ${envModel.s.toFixed(2)}`, basis: "fitted", meaning: "E = c + s × House popular vote, OLS over the even years on file.", source: <Code>getEnvironmentModel()</Code> },
           { name: "NATIONAL_SIGMA_STRUCTURAL", value: F.NATIONAL_SIGMA_STRUCTURAL, basis: "measured", meaning: "Shared national error (E scale) the forecast carries even with the House vote known: the lean window, the E↔vote conversion, and whatever moves a whole office in one year. Added in quadrature to the generic ballot's own error.", source: <>Set so the mid-September σ_E reproduces the forward backtest&rsquo;s realized spread of yearly Senate biases ({CAL.pooled.find((p) => p.office === "S")?.nationalSd}; Governor {CAL.pooled.find((p) => p.office === "G")?.nationalSd}, House {CAL.pooled.find((p) => p.office === "H")?.nationalSd} on far fewer early-year races): √(2.6² + {CAL.environment.sigmaEMidSept}²). Before 2026-10-23 this term was 0 and the national part of every race&rsquo;s error was being absorbed as independent race noise, which averages out across a chamber; the seat ranges were the narrowest of any published model.</> },
-          { name: "σ_E", value: env.sigmaE.toFixed(2), basis: "fitted", meaning: "Shared national error on the E scale today. Every race carries β* × σ_E, and the chamber simulation draws it once per run.", source: <Code>getNationalEnvironment()</Code> },
+          { name: "σ_E", value: env.sigmaE.toFixed(2), basis: "fitted", meaning: "Shared national error on the E scale today. Every Senate and Governor race carries β* × σ_E, and the chamber simulation draws it once per run.", source: <Code>getNationalEnvironment()</Code> },
+          { name: "HOUSE_ENV_ON_VOTE_SCALE", value: String(F.HOUSE_ENV_ON_VOTE_SCALE), basis: "decision", meaning: `House races take the environment on the House-vote scale: β* × E_hat ÷ s (today ×${envScaleFor("H").toFixed(2)}) and the national error √(NATIONAL_SIGMA_STRUCTURAL² + GB error²) without the × s (today ${env.sigmaEHouse.toFixed(2)}). Senate and Governor races keep the E scale.`, source: "The House vote is the sum of House margins, so the House must move one for one with it; adopted 2026-11-02 on that argument, the backtest being flat (see the changelog)." },
         ]} />
       </Section>
 

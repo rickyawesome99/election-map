@@ -11,7 +11,7 @@ import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
 import type { RaceFinanceDetail } from "@/data/fundraisingData";
 import { formatProjectedMargin, projectedMarginColor, leanColor } from "@/lib/colorScale";
-import { getNationalEnvironment, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
+import { getNationalEnvironment, nationalSigmaFor, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
 
 type PollRow = {
   label: string;
@@ -1270,7 +1270,7 @@ export function ForecastCalculationCard({
       <br /><br />
       Some states swing harder with the national mood than others, so that figure is scaled up or down by how much this state has usually moved.
       <br /><br />
-      The national mood could still shift by about {env.sigmaE.toFixed(1)} points either way before election day. That doesn&apos;t change this number, but it is built into the win chance.
+      The national mood could still shift by about {nationalSigmaFor(tplLabel.startsWith("District") ? "H" : "S").toFixed(1)} points either way before election day. That doesn&apos;t change this number, but it is built into the win chance.
     </>
   );
   const appointedShare = FORECAST_CONSTANTS.APPOINTED_INCUMBENCY_SHARE;

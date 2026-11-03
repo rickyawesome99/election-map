@@ -203,8 +203,8 @@ export default function StateHero({
               >
                 {isD ? "D" : "R"}+{Math.abs(tpl).toFixed(1)}
               </div>
-              <Link href={`/model/${abbr.toLowerCase()}`} className="mt-1.5 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
-                How it&apos;s computed →
+              <Link href={`/model/${abbr.toLowerCase()}`} className="group mt-1.5 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
+                How it&apos;s computed <span className="inline-block transition-transform duration-200 group-hover:translate-x-[2px] motion-reduce:transition-none">→</span>
               </Link>
             </div>
           )}
@@ -219,8 +219,8 @@ export default function StateHero({
                 {isD ? "D" : "R"}+{Math.abs(tpl).toFixed(1)}
               </span>
             </div>
-            <Link href={`/model/${abbr.toLowerCase()}`} className="text-xs font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
-              How it&apos;s computed →
+            <Link href={`/model/${abbr.toLowerCase()}`} className="group text-xs font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
+              How it&apos;s computed <span className="inline-block transition-transform duration-200 group-hover:translate-x-[2px] motion-reduce:transition-none">→</span>
             </Link>
           </div>
         )}
