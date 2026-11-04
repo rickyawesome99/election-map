@@ -35,8 +35,10 @@ jobs:
         run: npm run lint
 
       # The forecast is final (lib/forecastClock.ts FORECAST_FINAL_AT): fail if anything moved it.
+      # The forecast reads data/generated/chamber-margins.json, which the build's prebuild writes;
+      # this step runs before the build, so it generates the file itself.
       - name: Final forecast lock
-        run: npm run check-lock
+        run: npm run chamber-margins && npm run check-lock
 
       - name: Build
         run: npm run build

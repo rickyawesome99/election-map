@@ -17,7 +17,7 @@ import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed"
 import { nightObservations, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
 import { areaSwings, fitNight, type NightFit } from "@/lib/resultsNight";
 import NightPanel from "@/components/results/NightPanel";
-import { closeMinutes, fmtClose, fmtDateTime, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
+import { closeMinutes, fmtClose, fmtDateTime, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, fmtInt, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
 
@@ -35,6 +35,8 @@ const DETAIL_EVERY_MS = 5 * 60_000;
 /** The live trend charts start at the first poll close, 6 PM ET (points stored earlier in this
  *  browser, from tests, are left out). */
 const NIGHT_STARTS_AT = Date.parse("2026-11-03T23:00:00Z");
+/** Races listed under Latest updates. */
+const LATEST_SHOWN = 8;
 /** The local intake store is read this often. */
 const STORE_EVERY_MS = 10_000;
 /** The seat charts take at most one point per this long. */
@@ -80,6 +82,8 @@ export default function ResultsPage() {
   const [liveVersion, setLiveVersion] = useState(0);
   const [refreshing, setRefreshing] = useState(false);
   const [lastRefresh, setLastRefresh] = useState<number | null>(null);
+  // When the page last heard from the feed or the intake store (lastRefresh: when the data last changed).
+  const [lastChecked, setLastChecked] = useState<number | null>(null);
   const [failed, setFailed] = useState(0);
   const [auto, setAuto] = useState(true);
   const [allowTest, setAllowTest] = useState(false);
@@ -89,7 +93,8 @@ export default function ResultsPage() {
   const [uncalledOnly, setUncalledOnly] = useState(false);
   // Key races: contested races the forecast has within COMPETITIVE points.
   const [keyOnly, setKeyOnly] = useState(false);
-  const [raceView, setRaceView] = useState<"table" | "closing">("table");
+  const [raceView, setRaceView] = useState<"table" | "closing" | "state">("table");
+  const [stateView, setStateView] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const selectedRef = useRef<string | null>(null);
   selectedRef.current = selected;
@@ -192,6 +197,7 @@ export default function ResultsPage() {
     passesDone.current++;
     setFailed(result.failed);
     setLastRefresh(Date.now());
+    setLastChecked(Date.now());
     setLiveVersion((v) => v + 1);
     setRefreshing(false);
   }, [allPriors, fetchOrder]);
@@ -210,6 +216,7 @@ export default function ResultsPage() {
         if (!res.ok || stopped) return;
         const d = (await res.json()) as { available: boolean; now: number; races: LiveRace[] };
         if (!d.available) return;
+        setLastChecked(Date.now());
         if (!storeRef.current) { storeRef.current = true; setStoreMode(true); abortRef.current?.abort(); setRefreshing(false); }
         storeCursor.current = Math.max(storeCursor.current, d.now);
         for (const live of d.races) putLive(live);
@@ -357,6 +364,29 @@ export default function ResultsPage() {
   }, [priors, liveVersion, showTest]);
 
   const testSeen = useMemo(() => { void liveVersion; for (const l of liveRef.current.values()) if (l.testData) return true; return false; }, [liveVersion]);
+
+  // Latest updates: when each race's vote total last moved and by how much. A race first seen
+  // with votes enters at its payload's fetch time (with the intake, the time its count changed).
+  const changesRef = useRef(new Map<number, { at: number; total: number; added: number }>());
+  const [changesVersion, setChangesVersion] = useState(0);
+  useEffect(() => {
+    if (replay != null) return;
+    let moved = false;
+    for (const o of RESULTS_OFFICES) for (const { prior, live } of rowsByOffice[o]) {
+      if (!live || !prior.civicId || live.testData || live.total <= 0) continue;
+      const prev = changesRef.current.get(prior.civicId);
+      if (prev && prev.total === live.total) continue;
+      changesRef.current.set(prior.civicId, { at: live.fetchedAt, total: live.total, added: prev ? live.total - prev.total : live.total });
+      moved = true;
+    }
+    if (moved) setChangesVersion((v) => v + 1);
+  }, [rowsByOffice, replay]);
+  const latestUpdates = useMemo(() => {
+    void changesVersion;
+    const rows = new Map(RESULTS_OFFICES.flatMap((o) => rowsByOffice[o]).filter((r) => r.prior.civicId).map((r) => [r.prior.civicId!, r]));
+    return [...changesRef.current.entries()].sort((a, b) => b[1].at - a[1].at).slice(0, LATEST_SHOWN)
+      .flatMap(([id, c]) => { const row = rows.get(id); return row ? [{ row, ...c }] : []; });
+  }, [changesVersion, rowsByOffice]);
 
   const tallies = useMemo(() => Object.fromEntries(RESULTS_OFFICES.map((o) => [o, tallyChamber(rowsByOffice[o], SEAT_HOLDOVERS[o])])) as Record<ResultsOffice, ChamberTally>, [rowsByOffice]);
 
@@ -517,6 +547,21 @@ export default function ResultsPage() {
     };
   }, [selected, replay, liveRaces, archiveSeries, activeSet, archive, nightSeries]);
 
+  // By state: one state's governor, Senate and House races together. Until a state is picked, the
+  // state whose count moved last (else the first alphabetically).
+  const stateOptions = useMemo(() => {
+    const m = new Map<string, string>();
+    for (const o of RESULTS_OFFICES) for (const r of rowsByOffice[o]) m.set(r.prior.state, r.prior.stateName);
+    return [...m.entries()].sort((a, b) => a[1].localeCompare(b[1]));
+  }, [rowsByOffice]);
+  const shownState = stateView ?? latestUpdates[0]?.row.prior.state ?? stateOptions[0]?.[0] ?? null;
+  const stateRows = useMemo(() => {
+    if (!shownState) return [];
+    const order: Record<ResultsOffice, number> = { senate: 0, governor: 1, house: 2 };
+    return RESULTS_OFFICES.flatMap((o) => rowsByOffice[o]).filter((r) => r.prior.state === shownState)
+      .sort((a, b) => order[a.prior.office] - order[b.prior.office] || Number(a.prior.special) - Number(b.prior.special) || a.prior.label.localeCompare(b.prior.label, "en", { numeric: true }));
+  }, [rowsByOffice, shownState]);
+
   const sortedRows = useMemo(() => {
     const rows = rowsByOffice[office].filter((r) => (!uncalledOnly || !(r.proj.locked && r.proj.winner)) && (!keyOnly || isCompetitive(r.prior)));
     const abs = (v: number | null) => (v == null ? 999 : Math.abs(v));
@@ -545,7 +590,8 @@ export default function ResultsPage() {
     <>
       {/* Status line */}
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs" style={muted}>
-        <span>Results from <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">{CIVIC_ATTRIBUTION.label}</a>{lastRefresh ? ` · ${replay != null ? "snapshot from" : "fetched"} ${fmtTime(lastRefresh)}` : ""}{failed ? ` · ${failed} races failed to load` : ""}</span>
+        <span>Results from <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">{CIVIC_ATTRIBUTION.label}</a>{replay != null && lastRefresh ? ` · snapshot from ${fmtTime(lastRefresh)}` : ""}{failed ? ` · ${failed} races failed to load` : ""}</span>
+        {replay == null && lastRefresh != null && <LastUpdated data={lastRefresh} checked={lastChecked} />}
         {replay == null && !feedOpen ? (
           <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
             Live results begin on election night, after the first polls close at 6 PM ET on November 3.{archive.length > 0 && <> <button onClick={() => startReplay(0)} className="font-normal underline" style={muted}>Preview a simulated night</button></>}
@@ -607,6 +653,16 @@ export default function ResultsPage() {
     <div className="space-y-3">{status}</div>
     <div className="mt-6 space-y-10">
 
+      {/* Latest updates: the races whose count moved most recently */}
+      {replay == null && latestUpdates.length > 0 && (
+        <section>
+          <LedgerSectionHead label="Latest updates" meta="races whose count moved most recently" />
+          <ol className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+            {latestUpdates.map(({ row, at, added }) => <LatestUpdate key={row.prior.civicId} row={row} at={at} added={added} onSelect={select} />)}
+          </ol>
+        </section>
+      )}
+
       {/* Dashboard (a tighter gap to the map than the page's other sections) */}
       <section className="mb-5">
         <LedgerSectionHead label="Balance of power" meta={anyIn ? <BarLegend /> : "nothing counted yet"} />
@@ -635,12 +691,18 @@ export default function ResultsPage() {
         <div className="mb-2 flex items-center gap-1">
           <Tab active={raceView === "table"} onClick={() => setRaceView("table")}>Table</Tab>
           <Tab active={raceView === "closing"} onClick={() => setRaceView("closing")}>By poll close</Tab>
+          <Tab active={raceView === "state"} onClick={() => setRaceView("state")}>By state</Tab>
         </div>
-        <LedgerSectionHead label={raceView === "table" ? `${OFFICE_LABEL[office]} races` : "Races by poll closing time"}
+        <LedgerSectionHead label={raceView === "table" ? `${OFFICE_LABEL[office]} races` : raceView === "state" ? `${stateOptions.find(([st]) => st === shownState)?.[1] ?? ""} races` : "Races by poll closing time"}
           meta={raceView === "table"
             ? `${uncalledOnly || keyOnly ? `${sortedRows.length} of ${rowsByOffice[office].length} races` : `${rowsByOffice[office].length} races`}${keyOnly ? ` · forecast within ${COMPETITIVE}` : ""} · click a row to open it`
+            : raceView === "state" ? `${stateRows.length} race${stateRows.length === 1 ? "" : "s"} · statewide, then House · click a card to open it`
             : "governor, Senate, then the closest House races"}
-          right={raceView === "table" && (
+          right={raceView === "state" ? (
+            <label className="text-xs" style={muted}>State <select value={shownState ?? ""} onChange={(e) => setStateView(e.target.value)} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="State">
+              {stateOptions.map(([st, name]) => <option key={st} value={st}>{name}</option>)}
+            </select></label>
+          ) : raceView === "table" && (
           <div className="flex flex-wrap items-center gap-1">
             <OfficeTabs office={office} setOffice={setOffice} />
             <Sep />
@@ -657,6 +719,8 @@ export default function ResultsPage() {
             <ResultsRaceTable rows={sortedRows} selected={selected} onSelect={select} />
             {sortedRows.length === 0 && (uncalledOnly || keyOnly) && <p className="mt-3 text-sm" style={muted}>{uncalledOnly && keyOnly ? `Every key ${OFFICE_LABEL[office]} race has been called.` : uncalledOnly ? `Every ${OFFICE_LABEL[office]} race has been called.` : `No ${OFFICE_LABEL[office]} race is forecast within ${COMPETITIVE} points.`}</p>}
           </>
+        ) : raceView === "state" ? (
+          <StateView rows={stateRows} selected={selected} onSelect={select} />
         ) : (
           <ClosingTable rowsByOffice={rowsByOffice} selected={selected} onSelect={select} />
         )}
@@ -693,6 +757,41 @@ function BarLegend() {
       <span className="inline-flex items-center gap-1">{sw("var(--party-dem)")}{sw("var(--party-rep)")} called</span>
       <span className="inline-flex items-center gap-1">{sw("color-mix(in srgb, var(--party-dem) 38%, var(--app-bg))")}{sw("color-mix(in srgb, var(--party-rep) 38%, var(--app-bg))")} leading</span>
       <span className="inline-flex items-center gap-1">{sw("var(--app-tab-bg)")} no votes yet</span>
+    </span>
+  );
+}
+
+/** One line of Latest updates: the time the count moved, the race, the votes added, the counted
+ *  margin and the share of the expected vote in. Opens the race. */
+function LatestUpdate({ row, at, added, onSelect }: { row: ResultsRow; at: number; added: number; onSelect: (row: ResultsRow) => void }) {
+  const { prior, proj } = row;
+  const name = prior.office === "house" ? `${prior.label} · ${prior.stateName}` : `${prior.stateName} ${OFFICE_LABEL[prior.office]}${prior.special ? " (special)" : ""}`;
+  const time = new Date(at).toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", second: "2-digit", timeZone: "America/New_York" });
+  const pct = proj.countedShare * 100;
+  return (
+    <li style={{ borderBottom: "1px solid var(--app-border)" }}>
+      <button onClick={() => onSelect(row)} className="flex w-full min-w-0 items-baseline gap-2 py-2 text-left text-[13px] hover:opacity-80 sm:gap-3">
+        <span className="w-[4.75rem] shrink-0 tabular-nums text-[12px] sm:w-[5.5rem]" style={{ color: "var(--app-text-muted)" }}>{time}</span>
+        <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: "var(--app-text-primary)" }}>{name}</span>
+        <span className="hidden shrink-0 tabular-nums text-[12px] sm:inline" style={{ color: "var(--app-text-muted)" }}>+{fmtInt(added)} votes</span>
+        <span className="w-14 shrink-0 text-right font-bold tabular-nums" style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>
+        <span className="w-12 shrink-0 text-right tabular-nums text-[12px]" style={{ color: inColor(inState(pct)) }}>{fmtIn(pct)} in</span>
+      </button>
+    </li>
+  );
+}
+
+/** The status line's clock: when the results last changed, and how long ago the page last
+ *  heard from the feed (ticking, so a stalled feed shows). */
+function LastUpdated({ data, checked }: { data: number; checked: number | null }) {
+  const [now, setNow] = useState(() => Date.now());
+  useEffect(() => { const id = setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(id); }, []);
+  const ago = checked == null ? null : Math.max(0, Math.round((now - checked) / 1000));
+  const agoText = ago == null ? "" : ago < 60 ? `${ago} s ago` : `${Math.floor(ago / 60)} min ago`;
+  return (
+    <span className="tabular-nums">
+      <b style={{ color: "var(--app-text-primary)" }}>Latest data {fmtTime(data)}</b>
+      {agoText && <span style={ago != null && ago > 180 ? { color: "var(--party-rep)", fontWeight: 600 } : undefined}> · checked {agoText}</span>}
     </span>
   );
 }
@@ -784,6 +883,86 @@ function RaceCard({ row, selected, onSelect, index }: { row: ResultsRow; selecte
       </div>
       </div>
     </button>
+  );
+}
+
+/** By state: one state's races as cards (the poll-close view's), statewide first, then every
+ *  House seat in district order, under a header with the state's count and poll closing. */
+function StateView({ rows, selected, onSelect }: { rows: ResultsRow[]; selected: string | null; onSelect: (r: ResultsRow) => void }) {
+  useTouchHover(tiltCard, untiltCard);
+  if (!rows.length) return null;
+  const p0 = rows[0].prior;
+  const statewide = rows.filter((r) => r.prior.office !== "house");
+  const house = rows.filter((r) => r.prior.office === "house");
+  const counted = rows.reduce((a, r) => a + (r.live?.total ?? 0), 0);
+  const total = rows.reduce((a, r) => a + r.proj.projectedTotal, 0);
+  const called = rows.filter((r) => r.proj.locked && r.proj.winner).length;
+  const group = (label: string, list: ResultsRow[], offset: number) => list.length > 0 && (
+    <div className="py-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
+      <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-wider" style={muted}>{label}</div>
+      <div className="grid grid-cols-2 gap-x-3 gap-y-3 sm:grid-cols-3 lg:grid-cols-6">
+        {list.map((r, i) => <RaceCard key={raceHash(r.prior)} row={r} selected={selected} onSelect={onSelect} index={offset + i} />)}
+      </div>
+    </div>
+  );
+  return (
+    <div>
+      <div className="flex items-center gap-3 pb-2" style={{ borderBottom: "1px solid var(--app-text-primary)" }}>
+        <StateGlyph state={p0.state} className="h-10 w-10 shrink-0" />
+        <div className="min-w-0">
+          <div className="text-xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{p0.stateName}</div>
+          <div className="text-[11px] tabular-nums" style={muted}>
+            {total ? `${Math.round((counted / total) * 100)}% of the expected vote counted` : ""} · {called} of {rows.length} called · polls close {fmtClose(p0.pollsClose.first)}{p0.pollsClose.last !== p0.pollsClose.first ? `–${fmtClose(p0.pollsClose.last)}` : ""} ET
+          </div>
+        </div>
+      </div>
+      {house.length > 0 && (
+        <div className="py-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
+          <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-wider" style={muted}>House popular vote</div>
+          <div className="grid grid-cols-2 gap-x-3 gap-y-3 sm:grid-cols-3 lg:grid-cols-6"><HousePopularVote rows={house} /></div>
+        </div>
+      )}
+      {group("Statewide", statewide, 0)}
+      {group(`House · ${house.length} ${house.length === 1 ? "seat" : "seats"}`, house, statewide.length)}
+    </div>
+  );
+}
+
+/** The state's House popular vote: every House race's votes summed by party, margin over all votes
+ *  (R-positive), beside the needle's projection (each seat's projected margin weighted by its
+ *  projected vote). Uncontested seats count as the feed reports them. */
+function HousePopularVote({ rows }: { rows: ResultsRow[] }) {
+  let dem = 0, rep = 0, total = 0, projVotes = 0, projSum = 0;
+  for (const { live, proj } of rows) {
+    if (live && live.total > 0) { dem += live.dem; rep += live.rep; total += live.total; }
+    if (proj.projectedTotal > 0) { projVotes += proj.projectedTotal; projSum += proj.margin * proj.projectedTotal; }
+  }
+  const margin = total > 0 ? ((rep - dem) / total) * 100 : null;
+  const projected = projVotes > 0 ? projSum / projVotes : null;
+  const counted = projVotes > 0 ? Math.min(100, (total / projVotes) * 100) : 0;
+  const pct = (v: number) => `${((v / total) * 100).toFixed(1)}%`;
+  return (
+    <div onPointerMove={tiltToPointer} onPointerLeave={resetTilt} data-touch-hover="" title={total > 0 ? `D ${fmtInt(dem)} · R ${fmtInt(rep)} · ${fmtInt(total)} votes counted` : undefined}
+      className="rc-card group block h-full w-full self-start py-1 pl-3 text-left align-top" style={{ borderLeft: "1px solid var(--app-border)" }}>
+      <div className="flex min-h-full flex-col justify-start">
+      <div className="truncate text-sm font-semibold">{rows.length} {rows.length === 1 ? "seat" : "seats"} combined</div>
+      {margin != null ? (
+        <>
+          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums"><span key={fmtCall(margin)} className="rc-tick" style={{ color: callSideColor(margin) }}>{fmtCall(margin)}</span></div>
+          <div className="mt-1 text-[10px] tabular-nums" style={veryMuted}><span style={{ color: inColor(inState(counted)), fontWeight: 600 }}>{fmtIn(counted)}</span> counted · <span style={{ color: "var(--party-dem)", fontWeight: 600 }}>D {pct(dem)}</span> <span style={{ color: "var(--party-rep)", fontWeight: 600 }}>R {pct(rep)}</span></div>
+          {projected != null && <div className="overflow-hidden text-[11px] tabular-nums" style={muted}>Proj. Margin <b key={fmtCall(projected)} className="rc-tick" style={{ color: callSideColor(projected) }}>{fmtCall(projected)}</b></div>}
+        </>
+      ) : (
+        <>
+          <div className="mt-1 text-lg font-extrabold leading-none tabular-nums" style={{ color: callSideColor(projected) }}>{fmtCall(projected)}</div>
+          <div className="mt-1 text-[10px]" style={veryMuted}>No votes counted yet · projected</div>
+        </>
+      )}
+      <div className="mt-2 h-[3px] overflow-hidden rounded-full" style={{ background: "var(--app-tab-bg)" }}>
+        <div className="rc-progress h-full rounded-full" style={{ width: `${counted}%`, background: callSideColor(margin) }} />
+      </div>
+      </div>
+    </div>
   );
 }
 

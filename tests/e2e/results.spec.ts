@@ -10,7 +10,15 @@ type Prior = { id: string; civicId: number | null; office: string; label: string
 // browser clock at 9 PM ET that night.
 const ELECTION_NIGHT = new Date("2026-11-04T02:00:00Z");
 
+// The local intake store (scripts/results-live.mjs, dev only) and the dev archive would hand the
+// page tonight's real results; the tests read the stubbed feed alone, as the deployed site does.
+async function stubLocal(page: Page) {
+  await page.route("**/api/results/live**", (route) => route.fulfill({ json: { available: false, now: 0, races: [] } }));
+  await page.route("**/api/results/archive**", (route) => route.fulfill({ json: new URL(route.request().url()).pathname.endsWith("/series") ? { senate: [], governor: [], house: [] } : { snapshots: [] } }));
+}
+
 async function stubFeed(page: Page) {
+  await stubLocal(page);
   const priors: Prior[] = [];
   for (const office of ["senate", "governor", "house"]) {
     const res = await page.request.get(`/api/results/priors/${office}`);
@@ -47,11 +55,21 @@ test("the dashboard, map and tables fill from the feed and a race opens with its
   await stubFeed(page);
   await page.clock.setFixedTime(ELECTION_NIGHT);
   await page.goto("/results");
-  await expect(page.getByText(/fetched \d/)).toBeVisible({ timeout: 60_000 });
+  await expect(page.getByText(/Latest data \d/)).toBeVisible({ timeout: 60_000 });
   // Every race is reporting; the Senate tile says so and the popular vote is in.
   const senate = page.locator("section", { hasText: "Balance of power" }).locator("h3", { hasText: "Senate" }).locator("..").locator("..");
   await expect(senate).toContainText("35/35 reporting");
   await expect(senate).toContainText("Popular vote");
+  // Latest updates lists the races whose count moved.
+  await expect(page.locator("section", { hasText: "Latest updates" }).locator("li").first()).toContainText(/[DR]\+\d/);
+  // By state: one state's races as cards, its House popular vote first.
+  await page.getByRole("button", { name: "By state" }).click();
+  await page.getByLabel("State", { exact: true }).selectOption("GA");
+  const georgia = page.locator("section", { hasText: "Georgia races" });
+  await expect(georgia).toContainText("House popular vote");
+  await expect(georgia).toContainText("Statewide");
+  await expect(georgia).toContainText("GA-01");
+  await page.getByRole("button", { name: "Table", exact: true }).click();
   // The race table's rows show a counted margin and a projection.
   const first = page.locator("[data-race-row]").first();
   await expect(first).toContainText(/[DR]\+\d/);
@@ -69,6 +87,7 @@ test("the dashboard, map and tables fill from the feed and a race opens with its
 });
 
 test("a test-data payload is hidden", async ({ page }) => {
+  await stubLocal(page);
   await page.route("https://civicapi.org/api/v2/**", (route) => route.fulfill({ json: { percent_reporting: 90, test_data: true, candidates: [{ name: "A", party: "Democratic", votes: 100, percent: 60 }, { name: "B", party: "Republican", votes: 50, percent: 40 }] } }));
   await page.clock.setFixedTime(ELECTION_NIGHT);
   await page.goto("/results");
@@ -85,39 +104,10 @@ test("the overview links to the results page", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "2026 Results" })).toBeVisible({ timeout: 30_000 });
 });
 
-test("the replay control steps through archived snapshots", async ({ page }) => {
-  // The archive route is stubbed: two snapshots, the second with more votes in one race.
-  const priors = await stubFeed(page);
-  const tx = priors.find((p) => p.id === "TX-2")!;
-  const snap = (mult: number) => ({ fetchedAt: `2026-11-04T0${mult}:00:00.000Z`, races: { [String(tx.civicId)]: {
-    percent_reporting: 40 * mult, test_data: false, candidates: [{ name: tx.dem.name, party: "Democratic", votes: 1000 * mult, percent: 50 }, { name: tx.rep.name, party: "Republican", votes: 900 * mult, percent: 45 }],
-    region_results: Object.fromEntries(tx.counties.slice(0, 3).map((c) => [c.fips, { name: c.name, type: "County", fips: c.fips, candidates: [{ name: tx.dem.name, party: "Democratic", votes: 300 * mult }, { name: tx.rep.name, party: "Republican", votes: 300 * mult }] }])),
-  } } });
-  await page.route("**/api/results/archive**", (route) => {
-    const file = new URL(route.request().url()).searchParams.get("file");
-    if (!file) return route.fulfill({ json: { snapshots: [{ file: "sim-test/2026-11-04T01-00-00-000Z.json.gz", fetchedAt: "2026-11-04T01:00:00.000Z", set: "sim-test" }, { file: "sim-test/2026-11-04T02-00-00-000Z.json.gz", fetchedAt: "2026-11-04T02:00:00.000Z", set: "sim-test" }] } });
-    return route.fulfill({ json: snap(file.includes("T02") ? 2 : 1) });
-  });
-  await page.clock.setFixedTime(ELECTION_NIGHT);
-  await page.goto("/results");
-  await expect(page.getByText("Replay archive")).toBeVisible({ timeout: 60_000 });
-  await page.getByText("Start from the first snapshot").click();
-  await expect(page.getByText(/snapshot from/)).toBeVisible();
-  // Only Texas is in the snapshot: the Senate tile shows one race reporting, with the first snapshot's votes.
-  const senate = page.locator("section", { hasText: "Balance of power" }).locator("h3", { hasText: "Senate" }).locator("..").locator("..");
-  await expect(senate).toContainText("1/35 reporting");
-  // One race: Texas's share of votes moves with the snapshot (1,000 D of 1,900, then the same split doubled).
-  await expect(senate).toContainText("D 52.6%");
-  await page.getByLabel("Next snapshot").click();
-  await expect(page.getByText(/2 \/ 2/)).toBeVisible();
-  await page.getByRole("button", { name: "Back to live" }).click();
-  await expect(page.getByText(/fetched \d/)).toBeVisible({ timeout: 60_000 });
-  await expect(senate).toContainText("35/35 reporting");
-});
-
 test("before election night the page reads nothing from civicAPI", async ({ page }) => {
   await page.clock.setFixedTime(new Date("2026-10-26T16:00:00Z"));
   let calls = 0;
+  await stubLocal(page);
   await page.route("https://civicapi.org/**", (route) => { calls++; return route.abort(); });
   await page.goto("/results");
   await expect(page.getByText("Live results begin on election night")).toBeVisible({ timeout: 60_000 });
@@ -126,48 +116,18 @@ test("before election night the page reads nothing from civicAPI", async ({ page
   expect(calls).toBe(0);
 });
 
-test("?test=1 previews the stored simulated night without reading civicAPI", async ({ page }) => {
-  await page.clock.setFixedTime(new Date("2026-10-26T16:00:00Z"));
-  let calls = 0;
-  await page.route("https://civicapi.org/**", (route) => { calls++; return route.abort(); });
-  await page.route("**/api/results/archive**", (route) => {
-    if (new URL(route.request().url()).pathname.endsWith("/series")) return route.fulfill({ json: { senate: [], governor: [], house: [] } });
-    const file = new URL(route.request().url()).searchParams.get("file");
-    if (!file) return route.fulfill({ json: { snapshots: [{ file: "sim-test/2026-11-04T01-00-00-000Z.json.gz", fetchedAt: "2026-11-04T01:00:00.000Z", set: "sim-test" }] } });
-    return route.fulfill({ json: { fetchedAt: "2026-11-04T01:00:00.000Z", races: {} } });
-  });
+test("election night shows real results only: no simulated night, no replay control", async ({ page }) => {
+  // The replay is switched off for the night (ResultsPage SHOW_REPLAY): even with ?test=1 and a
+  // simulated night in the archive, the page neither lists nor replays it.
+  await stubFeed(page);
+  await page.unroute("**/api/results/archive**");
+  await page.route("**/api/results/archive**", (route) => route.fulfill({ json: { snapshots: [{ file: "sim-test/2026-11-04T01-00-00-000Z.json.gz", fetchedAt: "2026-11-04T01:00:00.000Z", set: "sim-test" }] } }));
+  await page.clock.setFixedTime(ELECTION_NIGHT);
   await page.goto("/results?test=1");
-  await expect(page.getByText("SIMULATED NIGHT")).toBeVisible({ timeout: 60_000 });
-  await expect(page.getByText(/1 \/ 1/)).toBeVisible();
-  expect(calls).toBe(0);
-});
-
-test("without the dev archive the preview replays the published simulated night", async ({ page }) => {
-  await page.clock.setFixedTime(new Date("2026-10-26T16:00:00Z"));
-  let calls = 0;
-  await page.route("https://civicapi.org/**", (route) => { calls++; return route.abort(); });
-  // As on the deployed site: the archive routes list nothing.
-  await page.route("**/api/results/archive**", (route) => route.fulfill({ json: { snapshots: [] } }));
-  await page.goto("/results");
-  await page.getByRole("button", { name: "Preview a simulated night" }).click({ timeout: 60_000 });
-  await expect(page.getByText("SIMULATED NIGHT")).toBeVisible();
-  await page.getByRole("slider", { name: "Snapshot" }).fill("64");
-  await expect(page.getByText(/65 \/ 65/)).toBeVisible();
-  const senate = page.locator("section", { hasText: "Balance of power" }).locator("h3", { hasText: "Senate" }).locator("..").locator("..");
-  await expect(senate).toContainText(/[1-9]\d*\/35 reporting/, { timeout: 30_000 });
-  // The night model's read of the finished counties, and a race's footnote carrying its share of it.
-  const night = page.locator("section", { hasText: "What early results say" });
-  await expect(night).toContainText("National swing");
-  await expect(night).toContainText(/counties' weight/);
-  // Mid-count, the urban / suburban / rural rows (the early-vote skew is fitted but not shown).
-  await page.getByRole("slider", { name: "Snapshot" }).fill("20");
-  await expect(page.getByText(/21 \/ 65/)).toBeVisible();
-  await expect(night).toContainText("By type of county", { timeout: 30_000 });
-  await page.getByRole("slider", { name: "Snapshot" }).fill("64");
-  await expect(page.getByText(/65 \/ 65/)).toBeVisible();
-  await page.evaluate(() => { window.location.hash = "#senate-GA"; });
-  await expect(page.getByText(/against that baseline/)).toBeVisible({ timeout: 30_000 });
-  expect(calls).toBe(0);
+  await expect(page.getByText(/Latest data \d/)).toBeVisible({ timeout: 60_000 });
+  await expect(page.getByText("Replay archive")).toHaveCount(0);
+  await expect(page.getByText("SIMULATED NIGHT")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: "Preview a simulated night" })).toHaveCount(0);
 });
 
 test("on a 320px phone the page, race table and county table fit without sideways scrolling", async ({ page }) => {
@@ -179,7 +139,7 @@ test("on a 320px phone the page, race table and county table fit without sideway
     .filter((e) => e.scrollWidth > e.clientWidth + 1 && (e === document.documentElement || /(auto|scroll)/.test(getComputedStyle(e).overflowX)))
     .map((e) => `${e.tagName}.${e.className} ${e.clientWidth}/${e.scrollWidth}`));
   await page.goto("/results");
-  await expect(page.getByText(/fetched \d/)).toBeVisible({ timeout: 60_000 });
+  await expect(page.getByText(/Latest data \d/)).toBeVisible({ timeout: 60_000 });
   expect(await overflow()).toEqual([]);
   await page.goto("/results#senate-GA");
   await expect(page.locator("#race-detail table tbody tr").first()).toContainText("50%", { timeout: 60_000 });
