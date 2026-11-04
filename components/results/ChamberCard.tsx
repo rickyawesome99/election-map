@@ -78,16 +78,16 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
         </div>
       </div>
 
-      <div className="max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] xl:mt-3 xl:grid xl:grid-cols-[minmax(0,1fr)_6rem_minmax(0,1.25fr)] xl:gap-x-4 xl:border-t xl:pt-2" style={{ borderColor: "var(--app-border)" }}>
+      <div className="max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] xl:mt-3 xl:grid xl:grid-cols-[minmax(0,1.2fr)_6rem_minmax(0,1fr)] xl:gap-x-4 xl:border-t xl:pt-2" style={{ borderColor: "var(--app-border)" }}>
         {/* Popular vote: two lines (at xl, without the raw counts, and the share counted under them) */}
         <div className="mt-3 border-t pt-2 max-sm:col-span-2 xl:mt-0 xl:border-t-0 xl:pt-0" style={{ borderColor: "var(--app-border)" }}>
           <div className="flex items-baseline justify-between gap-2">
-            <span className={label} style={muted}>Popular vote{pv.projectedTotal ? <span className="ml-2 font-sans text-[11px] font-normal normal-case tracking-normal xl:hidden">{pvCounted} counted</span> : null}</span>
+            <span className={`${label} xl:whitespace-nowrap`} style={muted}>Popular vote{pv.projectedTotal ? <span className="ml-2 font-sans text-[11px] font-normal normal-case tracking-normal xl:hidden">{pvCounted} counted</span> : null}</span>
             <b className="text-sm tabular-nums" style={{ color: callSideColor(pvMargin) }}>{pv.total > 0 ? fmtCall(pvMargin) : "—"}</b>
           </div>
           <div className="mt-0.5 flex items-baseline justify-between gap-2 text-sm tabular-nums">
-            <span><b style={{ color: "var(--party-dem)" }}>D {pv.total > 0 ? `${((pv.dem / pv.total) * 100).toFixed(1)}%` : "—"}</b> <span className="xl:hidden" style={muted}>{pv.total > 0 ? fmtInt(pv.dem) : ""}</span></span>
-            <span><span className="xl:hidden" style={muted}>{pv.total > 0 ? fmtInt(pv.rep) : ""}</span> <b style={{ color: "var(--party-rep)" }}>{pv.total > 0 ? `${((pv.rep / pv.total) * 100).toFixed(1)}%` : "—"} R</b></span>
+            <span className="whitespace-nowrap"><b style={{ color: "var(--party-dem)" }}>D {pv.total > 0 ? `${((pv.dem / pv.total) * 100).toFixed(1)}%` : "—"}</b> <span className="xl:hidden" style={muted}>{pv.total > 0 ? fmtInt(pv.dem) : ""}</span></span>
+            <span className="whitespace-nowrap"><span className="xl:hidden" style={muted}>{pv.total > 0 ? fmtInt(pv.rep) : ""}</span> <b style={{ color: "var(--party-rep)" }}>{pv.total > 0 ? `${((pv.rep / pv.total) * 100).toFixed(1)}%` : "—"} R</b></span>
           </div>
           {pv.projectedTotal ? <div className="mt-0.5 hidden text-[10.5px] tabular-nums xl:block" style={muted} title={pv.total > 0 ? `${fmtInt(pv.dem)} D · ${fmtInt(pv.rep)} R` : undefined}>{pvCounted} counted</div> : null}
           {/* At xl the seats-not-up note sits under the share counted (in the flow: pinned to the

@@ -17,7 +17,7 @@ const TrendChart = dynamic(() => import("@/components/results/SeatTrendChart"), 
 /** The margin chart's y axis width; the time labels under it indent by the same. */
 const AXIS_WIDTH = 34;
 
-function Frame({ points, label, note, children, axis = false }: { points: SeatPoint[]; label: string; note: string; children: React.ReactNode; /** The chart has a y axis: time labels indented past it. */ axis?: boolean }) {
+function Frame({ points, label, note, noteClass = "", children, axis = false }: { points: SeatPoint[]; label: string; note: string; /** Extra classes for the note (hidden where the chart is too narrow for it). */ noteClass?: string; children: React.ReactNode; /** The chart has a y axis: time labels indented past it. */ axis?: boolean }) {
   if (points.length < 2) {
     // The same height as a drawn chart, time-label row included: the chamber card pins its
     // seats-not-up note to that row, so a shorter placeholder would pull it up into the popular vote.
@@ -31,8 +31,10 @@ function Frame({ points, label, note, children, axis = false }: { points: SeatPo
   return (
     <div>
       <div className="relative h-16 [&_*:focus]:outline-none" style={{ touchAction: "pan-y" }} role="img" aria-label={label}>{children}</div>
-      <div className="mt-0.5 flex justify-between text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)", paddingLeft: axis ? AXIS_WIDTH : 0 }}>
-        <span>{fmtTime(points[0].t)}</span><span>{note}</span><span>{fmtTime(points[points.length - 1].t)}</span>
+      {/* One line however narrow the chart: the times never wrap, the note gives way (truncated). At xl
+          the chamber cards' chart is too narrow for it at all: the bar above already says the majority. */}
+      <div className="mt-0.5 flex justify-between gap-1.5 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)", paddingLeft: axis ? AXIS_WIDTH : 0 }}>
+        <span className="shrink-0 whitespace-nowrap">{fmtTime(points[0].t)}</span><span className={`min-w-0 truncate ${noteClass}`} title={note}>{note}</span><span className="shrink-0 whitespace-nowrap">{fmtTime(points[points.length - 1].t)}</span>
       </div>
     </div>
   );
@@ -44,7 +46,7 @@ export default function SeatTrend({ points, majority, total }: { points: SeatPoi
   // Coloured by the seat count as shown (rounded), so a label reading "26" at a 26-seat majority is never red.
   const colorOf = (v: number) => (Math.round(v) >= majority ? "var(--party-dem)" : "var(--party-rep)");
   return (
-    <Frame points={points} label={`Projected Democratic seats over time, now ${Math.round(points[points.length - 1]?.mean ?? 0)}`} note={`dashed: ${majority} for majority`}>
+    <Frame points={points} label={`Projected Democratic seats over time, now ${Math.round(points[points.length - 1]?.mean ?? 0)}`} note={`dashed: ${majority} for majority`} noteClass="xl:hidden">
       <TrendChart points={points} reference={majority} lo={lo} hi={hi} topColor="var(--party-dem)" bottomColor="var(--party-rep)" colorOf={colorOf}
         fmtValue={(v) => `${Math.round(v)} D seats`} fmtRange={(a, b) => `${Math.round(a)}–${Math.round(b)}`} />
     </Frame>

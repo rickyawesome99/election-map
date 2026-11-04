@@ -70,6 +70,9 @@ export const MIRAGE_VOTES_SAT = 20_000;
  *  200k, 0.35 scores best or tied on the replay at every early-vote skew (none, usual, doubled) and on
  *  both simulated nights; the early-vote term reads the part-counted counties' skew out. */
 export const MIN_COMPLETE = 0.35;
+/** Rounds of refitting the shared terms on swings net of the early-vote skew (and the skew on the new
+ *  residuals); 0 = the shared terms read raw swings, as before 2026-11-03. */
+export const MIRAGE_ITERATIONS = 3;
 
 export type NightParams = {
   sigmaNational: number; sigmaState: number; sigmaOffice: number;
@@ -156,7 +159,6 @@ export function observationWeight(votes: number, f: number, P: NightParams = DEF
  */
 export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT_PARAMS): NightFit {
   const stateIndex = new Map<string, number>();
-  const stateN: Record<string, number> = {};
   for (const o of obs) if (observationWeight(o.votes, o.f, P) > 0 && !stateIndex.has(o.state)) stateIndex.set(o.state, stateIndex.size);
   const FIXED = 7; // national, 3 offices, 3 slopes
   const k = FIXED + stateIndex.size;
@@ -172,62 +174,85 @@ export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT
   prec[0] = 1 / (P.sigmaNational * P.sigmaNational);
   prec[1] = prec[2] = prec[3] = 1 / (P.sigmaOffice * P.sigmaOffice);
   prec[4] = 1 / (P.sigmaNonwhite * P.sigmaNonwhite); prec[5] = 1 / (P.sigmaCollege * P.sigmaCollege); prec[6] = 1 / (P.sigmaLean * P.sigmaLean);
-  // Normal equations.
-  const A = Array.from({ length: k }, (_, i) => { const r = new Array<number>(k).fill(0); r[i] = prec[i]; return r; });
-  const b = new Array<number>(k).fill(0);
   const noise = P.sigmaFitCounty * P.sigmaFitCounty;
-  let n = 0, votes = 0;
-  for (const o of obs) {
-    const w = observationWeight(o.votes, o.f, P);
-    if (w <= 0) continue;
-    const { office, state } = colOf(o);
-    const x = row(o.beta, office, state, o.county);
-    const wn = w / noise;
-    for (let i = 0; i < k; i++) {
-      if (x[i] === 0) continue;
-      const xi = x[i] * wn;
-      b[i] += xi * o.swing;
-      for (let j = 0; j < k; j++) if (x[j] !== 0) A[i][j] += xi * x[j];
+  const lambda = noise / (P.sigmaMirage * P.sigmaMirage);
+
+  // The shared terms and the early-vote skew are fitted in turn: the shared fit reads each county's
+  // swing net of its state's skew, s (1 − f), and the skew is read off the residuals of that fit.
+  // A county 35–90% counted still carries part of the mirage; fitted on its raw swing, the shared
+  // terms took that part as national swing and every race overreacted to the early vote, only
+  // easing back as the counties finished (2026-11-03 election night: national D+8 with s ≈ 7).
+  const sharedFit = (skewOf: (o: NightObservation) => number) => {
+    const A = Array.from({ length: k }, (_, i) => { const r = new Array<number>(k).fill(0); r[i] = prec[i]; return r; });
+    const b = new Array<number>(k).fill(0);
+    let n = 0, votes = 0;
+    const stateN: Record<string, number> = {};
+    for (const o of obs) {
+      const w = observationWeight(o.votes, o.f, P);
+      if (w <= 0) continue;
+      const { office, state } = colOf(o);
+      const x = row(o.beta, office, state, o.county);
+      const wn = w / noise;
+      const y = o.swing + skewOf(o) * (1 - Math.min(1, o.f));
+      for (let i = 0; i < k; i++) {
+        if (x[i] === 0) continue;
+        const xi = x[i] * wn;
+        b[i] += xi * y;
+        for (let j = 0; j < k; j++) if (x[j] !== 0) A[i][j] += xi * x[j];
+      }
+      n += w; votes += o.votes; stateN[o.state] = (stateN[o.state] ?? 0) + w;
     }
-    n += w; votes += o.votes; stateN[o.state] = (stateN[o.state] ?? 0) + w;
-  }
-  const cov = invertSpd(A);
-  const theta = cov.map((r) => r.reduce((a, v, j) => a + v * b[j], 0));
-  const se = (i: number) => Math.sqrt(Math.max(0, cov[i][i]));
-  const states: NightFit["states"] = {};
-  for (const [st, i] of stateIndex) states[st] = { value: theta[FIXED + i], se: se(FIXED + i), n: stateN[st] ?? 0 };
+    const cov = invertSpd(A);
+    const theta = cov.map((r) => r.reduce((a, v, j) => a + v * b[j], 0));
+    return { cov, theta, n, votes, stateN };
+  };
 
   // The early-vote term: per state, the within-race weighted regression of each county's residual
   // (its swing less the shared terms' prediction for it) on x = f − 1, over every county with votes.
   // Finished counties (x = 0) anchor each race's level; the part-counted ones carry the contrast.
-  const byRace = new Map<string, { state: string; rows: { x: number; e: number; w: number }[] }>();
-  for (const o of obs) {
-    if (o.votes <= 0) continue;
-    const w = Math.min(1, o.votes / P.mirageVotesSat);
-    const { office, state } = colOf(o);
-    const pred = o.beta * theta[0] + theta[office] + (state >= 0 ? theta[state] : 0) + o.county.nonwhite * theta[4] + o.county.college * theta[5] + o.county.lean * theta[6];
-    const g = byRace.get(o.race) ?? { state: o.state, rows: [] };
-    g.rows.push({ x: Math.min(0, o.f - 1), e: o.swing - pred, w });
-    byRace.set(o.race, g);
+  const skewFit = (theta: number[]) => {
+    const byRace = new Map<string, { state: string; rows: { x: number; e: number; w: number }[] }>();
+    for (const o of obs) {
+      if (o.votes <= 0) continue;
+      const w = Math.min(1, o.votes / P.mirageVotesSat);
+      const { office, state } = colOf(o);
+      const pred = o.beta * theta[0] + theta[office] + (state >= 0 ? theta[state] : 0) + o.county.nonwhite * theta[4] + o.county.college * theta[5] + o.county.lean * theta[6];
+      const g = byRace.get(o.race) ?? { state: o.state, rows: [] };
+      g.rows.push({ x: Math.min(0, o.f - 1), e: o.swing - pred, w });
+      byRace.set(o.race, g);
+    }
+    const acc: Record<string, { sxx: number; sxy: number; n: number }> = {};
+    for (const { state, rows } of byRace.values()) {
+      let W = 0, mx = 0, me = 0;
+      for (const r of rows) { W += r.w; mx += r.w * r.x; me += r.w * r.e; }
+      if (W <= 0) continue;
+      mx /= W; me /= W;
+      const a = (acc[state] ??= { sxx: 0, sxy: 0, n: 0 });
+      for (const r of rows) { a.sxx += r.w * (r.x - mx) * (r.x - mx); a.sxy += r.w * (r.x - mx) * (r.e - me); if (r.x < 0) a.n += r.w; }
+    }
+    let txx = 0, txy = 0, tn = 0;
+    for (const a of Object.values(acc)) { txx += a.sxx; txy += a.sxy; tn += a.n; }
+    const mirageNational = { value: txy / (txx + lambda), se: Math.sqrt(noise / (txx + lambda)), n: tn };
+    const mirage: NightFit["mirage"] = {};
+    for (const [st, a] of Object.entries(acc)) if (a.n > 0) {
+      const pull = lambda / (a.sxx + lambda);
+      mirage[st] = { value: mirageNational.value + (a.sxy - a.sxx * mirageNational.value) / (a.sxx + lambda), se: Math.sqrt(noise / (a.sxx + lambda) + (pull * mirageNational.se) ** 2), n: a.n };
+    }
+    return { mirage, mirageNational };
+  };
+
+  let shared = sharedFit(() => 0);
+  let skew = skewFit(shared.theta);
+  for (let iter = 0; iter < MIRAGE_ITERATIONS; iter++) {
+    const sk = skew;
+    shared = sharedFit((o) => (sk.mirage[o.state] ?? sk.mirageNational).value);
+    skew = skewFit(shared.theta);
   }
-  const acc: Record<string, { sxx: number; sxy: number; n: number }> = {};
-  for (const { state, rows } of byRace.values()) {
-    let W = 0, mx = 0, me = 0;
-    for (const r of rows) { W += r.w; mx += r.w * r.x; me += r.w * r.e; }
-    if (W <= 0) continue;
-    mx /= W; me /= W;
-    const a = (acc[state] ??= { sxx: 0, sxy: 0, n: 0 });
-    for (const r of rows) { a.sxx += r.w * (r.x - mx) * (r.x - mx); a.sxy += r.w * (r.x - mx) * (r.e - me); if (r.x < 0) a.n += r.w; }
-  }
-  const lambda = noise / (P.sigmaMirage * P.sigmaMirage);
-  let txx = 0, txy = 0, tn = 0;
-  for (const a of Object.values(acc)) { txx += a.sxx; txy += a.sxy; tn += a.n; }
-  const mirageNational = { value: txy / (txx + lambda), se: Math.sqrt(noise / (txx + lambda)), n: tn };
-  const mirage: NightFit["mirage"] = {};
-  for (const [st, a] of Object.entries(acc)) if (a.n > 0) {
-    const pull = lambda / (a.sxx + lambda);
-    mirage[st] = { value: mirageNational.value + (a.sxy - a.sxx * mirageNational.value) / (a.sxx + lambda), se: Math.sqrt(noise / (a.sxx + lambda) + (pull * mirageNational.se) ** 2), n: a.n };
-  }
+  const { cov, theta, n, votes, stateN } = shared;
+  const { mirage, mirageNational } = skew;
+  const se = (i: number) => Math.sqrt(Math.max(0, cov[i][i]));
+  const states: NightFit["states"] = {};
+  for (const [st, i] of stateIndex) states[st] = { value: theta[FIXED + i], se: se(FIXED + i), n: stateN[st] ?? 0 };
   const mirageFor = (state: string) => mirage[state] ?? { value: mirageNational.value, se: Math.sqrt(mirageNational.se ** 2 + P.sigmaMirage ** 2) };
 
   const quad = (x: number[], M: number[][]) => { let s = 0; for (let i = 0; i < x.length; i++) { if (x[i] === 0) continue; for (let j = 0; j < x.length; j++) if (x[j] !== 0) s += x[i] * M[i][j] * x[j]; } return s; };

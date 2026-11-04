@@ -6,8 +6,8 @@ import {
 } from "@/lib/turnoutModel";
 import { firstRoundNotes } from "@/lib/turnout";
 import { COUNTY_MARGIN_CLAMP, OTHER_SHARE_CAP, impliedGenericBallot, projectRaceResults } from "@/lib/countyProjection";
-import { K_SWING_SHARE, K_TURNOUT_SHARE, MAX_EXTRA_SHARE, MIN_SHARE, NEAR_DONE, NIGHT_SHARE, OWN_WEIGHT_EXP, SIGMA_COUNTY, SIGMA_FLOOR, SIGMA_FLOOR_DONE, SIGMA_LATE } from "@/lib/resultsNeedle";
-import { MIN_COMPLETE, MIRAGE_VOTES_SAT, SIGMA_COLLEGE, SIGMA_FIT_COUNTY, SIGMA_LEAN, SIGMA_MIRAGE, SIGMA_NATIONAL, SIGMA_NONWHITE, SIGMA_OFFICE, SIGMA_STATE, VOTES_SAT } from "@/lib/resultsNight";
+import { FEED_DONE_MIN_SHARE, K_SWING_SHARE, K_TURNOUT_SHARE, MAX_EXTRA_SHARE, MIN_SHARE, NEAR_DONE, NIGHT_SHARE, OWN_WEIGHT_EXP, SIGMA_COUNTY, SIGMA_FLOOR, SIGMA_FLOOR_DONE, SIGMA_LATE } from "@/lib/resultsNeedle";
+import { MIN_COMPLETE, MIRAGE_ITERATIONS, MIRAGE_VOTES_SAT, SIGMA_COLLEGE, SIGMA_FIT_COUNTY, SIGMA_LEAN, SIGMA_MIRAGE, SIGMA_NATIONAL, SIGMA_NONWHITE, SIGMA_OFFICE, SIGMA_STATE, VOTES_SAT } from "@/lib/resultsNight";
 import { NEEDLE_BACKTEST as NB } from "@/data/resultsNeedleCalibration";
 import { NIGHT_BACKTEST as NT } from "@/data/resultsNightCalibration";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, StatRow, type ConstantRow, type LedgerLine } from "./kit";
@@ -20,13 +20,13 @@ const DOCUMENTED_IN = {
   OTHER_SHARE_CAP: "turnout#county-results", COUNTY_MARGIN_CLAMP: "turnout#county-results",
   // lib/resultsNeedle.ts (the election-night needle on /results)
   K_SWING_SHARE: "turnout#results-needle", K_TURNOUT_SHARE: "turnout#results-needle", SIGMA_COUNTY: "turnout#results-needle",
-  NEAR_DONE: "turnout#results-needle", MIN_SHARE: "turnout#results-needle", SIGMA_FLOOR: "turnout#results-needle",
+  NEAR_DONE: "turnout#results-needle", FEED_DONE_MIN_SHARE: "turnout#results-needle", MIN_SHARE: "turnout#results-needle", SIGMA_FLOOR: "turnout#results-needle",
   OWN_WEIGHT_EXP: "turnout#results-needle", SIGMA_LATE: "turnout#results-needle", SIGMA_FLOOR_DONE: "turnout#results-needle", MAX_EXTRA_SHARE: "turnout#results-needle",
   NIGHT_SHARE: "turnout#results-night",
   // lib/resultsNight.ts (the night model behind the needle)
   SIGMA_NATIONAL: "turnout#results-night", SIGMA_STATE: "turnout#results-night", SIGMA_OFFICE: "turnout#results-night",
   SIGMA_NONWHITE: "turnout#results-night", SIGMA_COLLEGE: "turnout#results-night", SIGMA_LEAN: "turnout#results-night",
-  SIGMA_FIT_COUNTY: "turnout#results-night", VOTES_SAT: "turnout#results-night", MIN_COMPLETE: "turnout#results-night", SIGMA_MIRAGE: "turnout#results-night", MIRAGE_VOTES_SAT: "turnout#results-night",
+  SIGMA_FIT_COUNTY: "turnout#results-night", VOTES_SAT: "turnout#results-night", MIN_COMPLETE: "turnout#results-night", SIGMA_MIRAGE: "turnout#results-night", MIRAGE_VOTES_SAT: "turnout#results-night", MIRAGE_ITERATIONS: "turnout#results-night",
 } as const;
 void DOCUMENTED_IN;
 
@@ -152,6 +152,7 @@ export default function TurnoutMethodology() {
           { name: "SIGMA_LATE", value: `${SIGMA_LATE} pts`, meaning: "Late-vote sigma per unit of uncounted share: the votes counted last are unlike the rest", basis: "calibrated", source: "Without it the 80% band covered the final margin 8% of the time; 10 with the 1.5 floor, from the 2026-10-26 grid on the corrected replay (7 left the 60–90% bucket at 56% coverage)" },
           { name: "OWN_WEIGHT_EXP", value: OWN_WEIGHT_EXP, meaning: "Exponent on completeness in the weight a county's remainder gives its own deviation", basis: "calibrated", source: "Trusting a county's own deviation sooner (0.5, 0.25) did not lower the error; later (2) did — the first votes a county posts lean more Democratic than its final, and at 1 the needle followed them" },
           { name: "NEAR_DONE", value: NEAR_DONE, meaning: "Share of the corrected expectation at which a county counts as finished", basis: "designed" },
+          { name: "FEED_DONE_MIN_SHARE", value: FEED_DONE_MIN_SHARE, meaning: "Share of the expected vote a race (or county) must have counted before the feed's 100% reporting is taken as finished", basis: "designed", source: "Election night 2026: civicAPI listed Vermont governor at 100% with 4 towns and ~3k of ~300k votes in; its percent runs over the regions it lists so far" },
           { name: "MIN_SHARE", value: MIN_SHARE, meaning: "Counted share below which a topline projection is the prior", basis: "designed" },
           { name: "SIGMA_FLOOR", value: `${SIGMA_FLOOR} pts`, meaning: "Floor on a race's projected sigma until the race is complete (late mail and provisionals land after the counties look done)", basis: "calibrated", source: "Below 1.25 the last tenth of the count covered the final margin about half the time; 1.5 covers 97%" },
           { name: "SIGMA_FLOOR_DONE", value: `${SIGMA_FLOOR_DONE} pts`, meaning: "Floor once the feed has the race complete", basis: "designed" },
@@ -186,6 +187,7 @@ export default function TurnoutMethodology() {
           { name: "NIGHT_SHARE", value: NIGHT_SHARE, meaning: "Share of the terms' prior variance the needle takes off a race's forecast sigma (λ)", basis: "calibrated", source: "1 over-tightened the band (76%); 0.25 and 0.5 both cover 80–81%, 0.5 has the better log score" },
           { name: "SIGMA_MIRAGE", value: `${SIGMA_MIRAGE} pts`, meaning: "Prior sigma on the early-vote skew s: the national one toward zero, each state's toward the national", basis: "calibrated", source: "On the real 2025 VA/NJ snapshots the term cut the needle's error from 1.9 to 1.6 pts (60–90% counted 1.9 → 1.4, band cover 78% → 100%); on the replay it is neutral under the usual skew and with none, and with the skew doubled lowers the error (3.5 → 3.3, cover 80% → 84%). 1.5, 3 and 6 score alike; 3 kept" },
           { name: "MIRAGE_VOTES_SAT", value: MIRAGE_VOTES_SAT.toLocaleString(), meaning: "Counted votes at which a county carries full weight in the early-vote regression", basis: "calibrated", source: "Kept at 20,000 when the shared terms moved to VOTES_SAT 200,000 (2026-11-03): at 200,000 the real 2025 VA/NJ replay lost (MAE 1.6 → 1.8, 60–90% counted cover 100% → 82%)" },
+          { name: "MIRAGE_ITERATIONS", value: MIRAGE_ITERATIONS, meaning: "Rounds of refitting the shared terms on county swings net of the state's early-vote skew s (1 − f), and s on the new residuals", basis: "designed", source: "Election night 2026 (s ≈ 7): fitted on raw swings, the 35–90%-counted counties' mirage read as national swing (D+8.0 → D+6.4 with it). Replay: slightly worse overall (nothing-in MAE 6.0 → 6.1, House seats 1.81 → 2.17), faster in the R-miss years 2020/2024, slower in 2018; adopted live on the night's judgment (real D overperformance plus some mirage)" },
         ]} />
         <Block label={`Replay · ${NT.years.map((y) => y.year).join(", ")} Senate, governor and House`} meta={`${NT.years.reduce((a, y) => a + y.races, 0)} races in a simulated reporting order · scripts/resultsNightBacktest.ts --emit, ${NT.generated}`}>
           <DataTable head={["Race counted", "Rows", "Needle alone MAE", "80% band", "With the night model MAE", "80% band", "Log score"]} rows={NT.configs[0].buckets.map((b, i) => { const n = NT.configs[1].buckets[i]; return [b.bucket, b.n, `${b.mae.toFixed(1)} pts`, `${Math.round(b.cover * 100)}%`, `${n.mae.toFixed(1)} pts`, `${Math.round(n.cover * 100)}%`, `${b.logs.toFixed(2)} → ${n.logs.toFixed(2)}`]; })}

@@ -7,6 +7,7 @@ import CandidateLink from "@/components/CandidateLink";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
 import PastElectionCountyMap, { type CountyMapEntry, type CountySide } from "@/components/PastElectionCountyMap";
 import { partyOf } from "@/lib/resultsFeed";
+import { settledParty } from "@/lib/resultsNeedle";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
@@ -69,8 +70,16 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     return { sides: { dem: { name: lead("dem", "D"), party: prior.dem.party }, rep: { name: lead("rep", "R"), party: prior.rep.party } } };
   }, [prior, live]);
 
+  const settled = settledParty(prior);
+  const settledLabel = prior.forecast.contest.startsWith("same-party") ? "Same party" : "Unopposed";
   const entries: CountyMapEntry[] = useMemo(() => proj.counties.flatMap((c) => {
     const l = liveByFips.get(c.fips);
+    // An unopposed or same-party race fills every county in its party's colour, in every view: there is
+    // no two-party margin to map, and many such races never report a vote.
+    if (settled) {
+      const d = settled === "D";
+      return [{ fips: c.fips, name: c.name, result: { demVotes: d ? l?.total ?? 0 : 0, repVotes: d ? 0 : l?.total ?? 0, totalVotes: l?.total ?? 0, demPct: d ? 100 : 0, repPct: d ? 0 : 100, margin: d ? -100 : 100, reporting: settledLabel, ...blocSides } }];
+    }
     const reporting = `${fmtIn(c.f * 100, c.done)} in`;
     const counted = !!l && l.total > 0;
     // Remaining: the projected final, less what is counted. The net is the projected final lead
@@ -92,7 +101,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     const m = c.projectedMargin, other = prior.counties.find((p) => p.fips === c.fips)?.other ?? 0;
     const repPct = (100 - other + m) / 2, demPct = (100 - other - m) / 2;
     return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(view === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }), ...blocSides } }];
-  }), [proj, liveByFips, view, prior.counties, blocSides]);
+  }), [proj, liveByFips, view, prior.counties, blocSides, settled, settledLabel]);
   const maxLeftNet = useMemo(() => Math.max(0, ...entries.map((e) => Math.abs(e.result.remaining?.net ?? 0))), [entries]);
   // The Remaining view's totals: every county's votes left and the net they are expected to add (R-positive).
   const left = useMemo(() => entries.reduce((a, e) => ({ votes: a.votes + (e.result.remaining?.votes ?? 0), net: a.net + (e.result.remaining?.net ?? 0) }), { votes: 0, net: 0 }), [entries]);
@@ -158,7 +167,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
             {/* The share of the expected vote counted, not the feed's own reporting figure: civicAPI's
                 race-level percent ran far ahead of the vote on election night (KY Senate 16% with one
                 county in, ~1% of the vote). The feed's figure stays in the tooltip. */}
-            {live && <span className="tabular-nums" title={`Share of the expected vote counted (our estimate). The feed reports ${fmtIn(live.percentReporting)}.`}><b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{(proj.locked || inState(proj.countedShare * 100) === "done") && "✓ "}{fmtIn(proj.countedShare * 100)}</b> of the expected vote in</span>}
+            {live && settled && <span>{prior.forecast.contest.startsWith("same-party") ? "Same-party race" : "Unopposed"}</span>}
+            {live && !settled && <span className="tabular-nums" title={`Share of the expected vote counted (our estimate). The feed reports ${fmtIn(live.percentReporting)}.`}><b style={{ color: inColor(inState(proj.countedShare * 100)) }}>{(proj.locked || inState(proj.countedShare * 100) === "done") && "✓ "}{fmtIn(proj.countedShare * 100)}</b> of the expected vote in</span>}
           </p>
 
           <div className="mt-3">
@@ -177,49 +187,58 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <div className="text-[10.5px] font-bold uppercase tracking-wider" style={muted}>{prior.jungle ? "Projected party margin" : "Projected final margin"}</div>
               <div className="text-[11.5px] font-semibold tabular-nums" style={{ color: proj.locked || hasVotes ? partyColor(pSide.party) : "var(--app-text-muted)" }}>
-                {proj.locked ? `Called for ${proj.winner} by the feed` : hasVotes ? `${Math.round(pWin * 100)}% ${pSide.party} ${lastName(pSide.name)}` : "nothing counted: the forecast"}
+                {settled ? (prior.forecast.contest.startsWith("same-party") ? `Same-party race: ${settled}` : `Unopposed: ${settled}`) : proj.locked ? `Called for ${proj.winner} by the feed` : hasVotes ? `${Math.round(pWin * 100)}% ${pSide.party} ${lastName(pSide.name)}` : "nothing counted: the forecast"}
               </div>
             </div>
-            <div className="mt-1 flex flex-wrap items-end gap-x-3 gap-y-1">
-              <div>
-                <div className="flex items-baseline gap-2">
-                  <span className="tabular-nums" style={serif("2.25rem", callSideColor(proj.margin, prior))}>{fmtCall(proj.margin, prior)}</span>
-                  <span className="text-sm tabular-nums" style={muted}>± {proj.sigma.toFixed(1)}</span>
-                </div>
-                <div className="mt-1 text-[12.5px] tabular-nums" style={muted}>
-                  80% range <b style={{ color: callSideColor(lo80, prior) }}>{fmtCall(lo80, prior)}</b> to <b style={{ color: callSideColor(hi80, prior) }}>{fmtCall(hi80, prior)}</b>
-                </div>
-              </div>
-              <span className="ml-auto text-right text-[13px] tabular-nums" style={muted}>
-                {prior.tpl != null && <><span title="The district's TPL: its partisan lean from past results, before the environment, incumbency, money and candidates">TPL <b style={{ color: marginSideColor(prior.tpl, prior) }}>{fmtMargin(prior.tpl, prior)}</b></span> · </>}
-                forecast {fmtCall(prior.forecast.margin, prior)} ({prior.forecast.rating})
-              </span>
-            </div>
-            <Needle margin={proj.margin} sigma={proj.sigma} forecast={prior.forecast.margin} current={proj.currentMargin} prior={prior} />
-            <div className="mt-4">
-              {/* Projected or counted margin over the night, one chart with a toggle in its heading. */}
-              <div className="mb-1 flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider">
-                {(["projected", "counted"] as CountyView[]).map((v) => (
-                  <button key={v} onClick={() => setTrendView(v)} className="whitespace-nowrap pb-0.5 uppercase tracking-wider transition-colors hover:text-[var(--app-text-primary)]"
-                    style={trendView === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
-                    {v === "counted" ? "Counted" : "Projected"}
-                  </button>
-                ))}
-                <span className="whitespace-nowrap pb-0.5" style={{ ...muted, borderBottom: "2px solid transparent" }}>margin over the night</span>
-              </div>
-              <MarginTrend points={history[trendView]} prior={prior} kind={trendView} />
-            </div>
-            {/* The needle's internal inputs, as a footnote: what the rest of the night implies for this
-                race, then this race's own counties against that baseline. */}
-            {(hasVotes || Math.abs(proj.night.shift) >= 0.05) && (
-              <p className="mt-3 text-[11px] tabular-nums" style={veryMuted}>
-                {Math.abs(proj.night.shift) >= 0.05 && (
-                  <>Counties finished elsewhere imply <span style={{ color: marginSideColor(proj.night.shift, prior) }}>{fmtMargin(proj.night.shift, prior, 1)}</span> here vs the forecast ±{proj.night.se.toFixed(1)} (national {fmtMargin(proj.night.national, prior, 1)} · {prior.state} {fmtMargin(proj.night.state, prior, 1)} · {OFFICE_LABEL[prior.office].toLowerCase()} races {fmtMargin(proj.night.office, prior, 1)} · electorate {fmtMargin(proj.night.demo, prior, 1)}). </>
-                )}
-                {hasVotes && <>This race&apos;s counties are running <span style={{ color: marginSideColor(proj.swing, prior) }}>{fmtMargin(proj.swing, prior, 1)}</span> against that baseline (shrunk while little is in) · finished counties turned out ×{proj.turnoutFactor.toFixed(2)} their expected vote.</>}
-                {hasVotes && Math.abs(proj.night.mirage.value) >= 0.3 && <> The votes counted first in {prior.state} run <span style={{ color: marginSideColor(-proj.night.mirage.value, prior) }}>{fmtMargin(-proj.night.mirage.value, prior, 1)}</span> of where their counties finish (±{proj.night.mirage.se.toFixed(1)}); part-counted counties here are read with that removed.</>}
+            {/* An unopposed or same-party race has no two-party margin to project: the needle, its range
+                and the trend are left out. */}
+            {settled ? (
+              <p className="mt-1 text-[13px]" style={muted}>
+                {prior.forecast.contest.startsWith("same-party") ? <>Both candidates are {settled === "D" ? "Democrats" : "Republicans"}: the seat is {settled === "D" ? "Democratic" : "Republican"} whoever wins.</> : <>Unopposed: the seat goes to {settled === "D" ? "the Democrat" : "the Republican"}, so there is no margin to project.</>}
+                {" "}Forecast {fmtCall(prior.forecast.margin, prior)} ({prior.forecast.rating}).
               </p>
-            )}
+            ) : (<>
+              <div className="mt-1 flex flex-wrap items-end gap-x-3 gap-y-1">
+                <div>
+                  <div className="flex items-baseline gap-2">
+                    <span className="tabular-nums" style={serif("2.25rem", callSideColor(proj.margin, prior))}>{fmtCall(proj.margin, prior)}</span>
+                    <span className="text-sm tabular-nums" style={muted}>± {proj.sigma.toFixed(1)}</span>
+                  </div>
+                  <div className="mt-1 text-[12.5px] tabular-nums" style={muted}>
+                    80% range <b style={{ color: callSideColor(lo80, prior) }}>{fmtCall(lo80, prior)}</b> to <b style={{ color: callSideColor(hi80, prior) }}>{fmtCall(hi80, prior)}</b>
+                  </div>
+                </div>
+                <span className="ml-auto text-right text-[13px] tabular-nums" style={muted}>
+                  {prior.tpl != null && <><span title="The district's TPL: its partisan lean from past results, before the environment, incumbency, money and candidates">TPL <b style={{ color: marginSideColor(prior.tpl, prior) }}>{fmtMargin(prior.tpl, prior)}</b></span> · </>}
+                  forecast {fmtCall(prior.forecast.margin, prior)} ({prior.forecast.rating})
+                </span>
+              </div>
+              <Needle margin={proj.margin} sigma={proj.sigma} forecast={prior.forecast.margin} current={proj.currentMargin} prior={prior} />
+              <div className="mt-4">
+                {/* Projected or counted margin over the night, one chart with a toggle in its heading. */}
+                <div className="mb-1 flex items-center gap-3 text-[10px] font-bold uppercase tracking-wider">
+                  {(["projected", "counted"] as CountyView[]).map((v) => (
+                    <button key={v} onClick={() => setTrendView(v)} className="whitespace-nowrap pb-0.5 uppercase tracking-wider transition-colors hover:text-[var(--app-text-primary)]"
+                      style={trendView === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
+                      {v === "counted" ? "Counted" : "Projected"}
+                    </button>
+                  ))}
+                  <span className="whitespace-nowrap pb-0.5" style={{ ...muted, borderBottom: "2px solid transparent" }}>margin over the night</span>
+                </div>
+                <MarginTrend points={history[trendView]} prior={prior} kind={trendView} />
+              </div>
+              {/* The needle's internal inputs, as a footnote: what the rest of the night implies for this
+                  race, then this race's own counties against that baseline. */}
+              {(hasVotes || Math.abs(proj.night.shift) >= 0.05) && (
+                <p className="mt-3 text-[11px] tabular-nums" style={veryMuted}>
+                  {Math.abs(proj.night.shift) >= 0.05 && (
+                    <>Counties finished elsewhere imply <span style={{ color: marginSideColor(proj.night.shift, prior) }}>{fmtMargin(proj.night.shift, prior, 1)}</span> here vs the forecast ±{proj.night.se.toFixed(1)} (national {fmtMargin(proj.night.national, prior, 1)} · {prior.state} {fmtMargin(proj.night.state, prior, 1)} · {OFFICE_LABEL[prior.office].toLowerCase()} races {fmtMargin(proj.night.office, prior, 1)} · electorate {fmtMargin(proj.night.demo, prior, 1)}). </>
+                  )}
+                  {hasVotes && <>This race&apos;s counties are running <span style={{ color: marginSideColor(proj.swing, prior) }}>{fmtMargin(proj.swing, prior, 1)}</span> against that baseline (shrunk while little is in) · finished counties turned out ×{proj.turnoutFactor.toFixed(2)} their expected vote.</>}
+                  {hasVotes && Math.abs(proj.night.mirage.value) >= 0.3 && <> The votes counted first in {prior.state} run <span style={{ color: marginSideColor(-proj.night.mirage.value, prior) }}>{fmtMargin(-proj.night.mirage.value, prior, 1)}</span> of where their counties finish (±{proj.night.mirage.se.toFixed(1)}); part-counted counties here are read with that removed.</>}
+                </p>
+              )}
+            </>)}
           </div>
         </div>
 

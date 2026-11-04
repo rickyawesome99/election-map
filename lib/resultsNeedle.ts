@@ -214,6 +214,24 @@ export function nightObservations(prior: RacePrior, live: LiveRace | null, P: Ne
 /** Project one race. `live` null or with nothing counted returns the prior shifted by the night fit
  *  (the prior itself without one). */
 export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedleParams = DEFAULT_PARAMS, fit: NightFit | null = null): RaceProjection {
+  return settle(prior, projectCounted(prior, live, P, fit));
+}
+
+/** The party a race goes to before any vote is counted: an unopposed candidate's, or the party of a
+ *  same-party contest. Null for a contested race. */
+export function settledParty(prior: RacePrior): Party | null {
+  const { contest } = prior.forecast;
+  return contest === "contested" ? null : contest.endsWith("D") ? "D" : "R";
+}
+
+/** A race settled before the count (settledParty) is called for that party from the start, votes or
+ *  none (Florida prints no unopposed race on the ballot, so many never report a vote). */
+function settle(prior: RacePrior, p: RaceProjection): RaceProjection {
+  const party = settledParty(prior);
+  return party ? { ...p, locked: true, winner: party, probD: party === "D" ? 1 : 0 } : p;
+}
+
+function projectCounted(prior: RacePrior, live: LiveRace | null, P: NeedleParams, fit: NightFit | null): RaceProjection {
   const decided = prior.forecast.contest !== "contested";
   const shift = fit && !decided ? fit.shiftFor(prior) : ZERO_SHIFT;
   const mirage = fit && !decided ? fit.mirageFor(prior.state) : NO_MIRAGE;

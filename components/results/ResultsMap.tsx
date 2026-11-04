@@ -8,6 +8,7 @@ import { FlipPatternDefs, flipFill } from "@/components/FlipStripes";
 import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { getRaceColor } from "@/lib/colorScale";
+import { settledParty } from "@/lib/resultsNeedle";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { fmtInt, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
 import { useMapTooltip } from "@/lib/useMapTooltip";
@@ -31,6 +32,9 @@ export type MapMode = "status" | "current" | "projected";
 /** The fill for a race on the map, before any flip hatching; null with nothing counted. */
 function fillFor(row: ResultsRow, mode: MapMode): string | null {
   const { prior, live, proj } = row;
+  // An unopposed or same-party race is its party's from the start, in every mode, votes or none.
+  const settled = settledParty(prior);
+  if (settled) return getRaceColor(settled === "D" ? -20 : 20);
   if (!live || live.total <= 0) return null;
   if (mode === "status") {
     if (proj.locked && proj.winner) return getRaceColor(proj.winner === prior.dem.party && proj.winner !== prior.rep.party ? -20 : proj.winner === prior.rep.party ? 20 : proj.winner === "D" ? -20 : 20);

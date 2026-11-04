@@ -869,7 +869,11 @@ function RaceCard({ row, selected, onSelect, index }: { row: ResultsRow; selecte
       {hasVotes ? (
         <>
           <div className="rc-figure mt-1 overflow-hidden text-lg font-extrabold leading-none tabular-nums"><span key={current} className="rc-tick" style={{ color: on(callSideColor(proj.currentMargin, prior)) }}>{current}</span></div>
-          <div className="mt-1 text-[10px] tabular-nums" style={soft ?? veryMuted}><span style={{ color: on(inColor(inState(counted))), fontWeight: 600 }}>{fmtIn(counted)}</span> counted</div>
+          {/* The pre-election forecast margin rides at the right end of the counted line (no extra row). */}
+          <div className="mt-1 flex items-baseline justify-between gap-2 text-[10px] tabular-nums" style={soft ?? veryMuted}>
+            <span className="whitespace-nowrap"><span style={{ color: on(inColor(inState(counted))), fontWeight: 600 }}>{fmtIn(counted)}</span> counted</span>
+            <span className="truncate" title="Our final pre-election forecast margin">Fcst <b style={{ color: on(callSideColor(prior.forecast.margin, prior)) }}>{fmtCall(prior.forecast.margin, prior)}</b></span>
+          </div>
           <div className="overflow-hidden text-[11px] tabular-nums" style={soft ?? muted}>Proj. Margin <b key={projected} className="rc-tick" style={{ color: on(callSideColor(proj.margin, prior)) }}>{projected}</b></div>
         </>
       ) : (
