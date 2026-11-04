@@ -17,9 +17,13 @@ const RETRIES = 2;
 export type RawCandidate = { name?: string; party?: string; votes?: number | string; percent?: number | string; winner?: boolean; incumbent?: boolean; major_candidate?: boolean };
 type RawRegion = { name?: string; type?: string; fips?: string; percent_reporting?: number | null; candidates?: RawCandidate[] };
 type RawRace = {
-  percent_reporting?: number | null; test_data?: boolean; last_updated?: string | null; called_at?: string | null;
+  percent_reporting?: number | null; test_data?: boolean; last_updated?: string | null; called_at?: string | null; polls_close?: string | null;
   candidates?: RawCandidate[]; region_results?: Record<string, RawRegion> | null;
 };
+
+// civicAPI's test flag is trusted only until the race's polls close: on election night 2026 it stayed
+// on for every Pennsylvania race (governor and House) after real results, and a call, came in.
+const isTestData = (raw: RawRace) => !!raw.test_data && !(raw.polls_close && Date.parse(raw.polls_close) <= Date.now());
 
 const num = (v: unknown) => (typeof v === "number" ? v : typeof v === "string" ? Number(v.replace(/,/g, "")) || 0 : 0);
 
@@ -175,7 +179,7 @@ export function normalizeRace(prior: RacePrior, raw: RawRace, fetchedAt = Date.n
   }
   return {
     civicId: prior.civicId ?? 0, fetchedAt, lastUpdated: raw.last_updated ?? null, percentReporting: num(raw.percent_reporting),
-    called, calledAt: raw.called_at ?? null, winner: called ? winnerParty : null, testData: !!raw.test_data,
+    called, calledAt: raw.called_at ?? null, winner: called ? winnerParty : null, testData: isTestData(raw),
     ...t, candidates, counties,
   };
 }

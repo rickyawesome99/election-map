@@ -80,7 +80,9 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
       const d = settled === "D";
       return [{ fips: c.fips, name: c.name, result: { demVotes: d ? l?.total ?? 0 : 0, repVotes: d ? 0 : l?.total ?? 0, totalVotes: l?.total ?? 0, demPct: d ? 100 : 0, repPct: d ? 0 : 100, margin: d ? -100 : 100, reporting: settledLabel, ...blocSides } }];
     }
-    const reporting = `${fmtIn(c.f * 100, c.done)} in`;
+    // Projected from the race total alone (stale county detail), the needle counts no county as in;
+    // the label then shows the feed's own county figure.
+    const reporting = proj.tier === "topline" ? (l?.pct != null ? `${fmtIn(l.pct, l.pct >= 100)} in` : "Reporting unknown") : `${fmtIn(c.f * 100, c.done)} in`;
     const counted = !!l && l.total > 0;
     // Remaining: the projected final, less what is counted. The net is the projected final lead
     // minus the counted one, so counted + remaining always adds up to the projection.
