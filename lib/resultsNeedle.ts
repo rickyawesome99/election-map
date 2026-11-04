@@ -173,7 +173,7 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
     let v = 0, e = 0;
     for (const { prior: c, live: l } of rows) {
       const counted = countedOf(l, c);
-      const done = raceDone || (l?.pct != null && l.pct >= 100) || counted >= P.nearDone * tau * c.votes;
+      const done = raceDone || (l?.pct != null && l.pct >= 100 && counted >= FEED_DONE_MIN_SHARE * c.votes) || counted >= P.nearDone * tau * c.votes;
       if (done && counted > 0) { v += counted; e += c.votes; }
     }
     tau = e > 0 ? (v + kT) / (e + kT) : 1;
@@ -184,7 +184,7 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
   const cells: Cell[] = rows.map(({ prior: c, live: l }) => {
     const v = countedOf(l, c);
     const expected = tau * c.votes;
-    const done = raceDone || (l?.pct != null && l.pct >= 100) || v >= P.nearDone * expected;
+    const done = raceDone || (l?.pct != null && l.pct >= 100 && v >= FEED_DONE_MIN_SHARE * c.votes) || v >= P.nearDone * expected;
     const f = done ? 1 : clamp(v / Math.max(1, expected), 0, 1);
     const o = l ? marginOf(l.dem, l.rep, l.total) : null;
     counted += v;
@@ -193,13 +193,17 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
   return { tau, cells, counted: counted + extraV, extraV, extraNetR };
 }
 
-const isRaceDone = (live: LiveRace) => live.percentReporting >= 100 || live.called && live.percentReporting >= 99;
+/** The feed's 100% counts only once the count is at least this share of the expected vote: civicAPI's
+ *  percent is over the regions it lists so far, so a town-reporting state (Vermont on election night:
+ *  4 towns, ~3k votes, "100%") can read complete with a sliver counted. */
+export const FEED_DONE_MIN_SHARE = 0.5;
+const isRaceDone = (prior: RacePrior, live: LiveRace) => (live.percentReporting >= 100 || live.called && live.percentReporting >= 99) && live.total >= FEED_DONE_MIN_SHARE * prior.votes;
 
 /** A race's counties as observations for the night fit (lib/resultsNight.ts): every prior county with
  *  votes in, its completeness and its swing against the prior. Empty for decided races and races on their topline. */
 export function nightObservations(prior: RacePrior, live: LiveRace | null, P: NeedleParams = DEFAULT_PARAMS): NightObservation[] {
   if (!live || live.total <= 0 || prior.forecast.contest !== "contested") return [];
-  const pass = countyPass(prior, live, isRaceDone(live), P);
+  const pass = countyPass(prior, live, isRaceDone(prior, live), P);
   if (!pass) return [];
   const out: NightObservation[] = [];
   const race = `${prior.office}-${prior.id}`;
@@ -214,7 +218,7 @@ export function projectRace(prior: RacePrior, live: LiveRace | null, P: NeedlePa
   const shift = fit && !decided ? fit.shiftFor(prior) : ZERO_SHIFT;
   const mirage = fit && !decided ? fit.mirageFor(prior.state) : NO_MIRAGE;
   if (!live || live.total <= 0) return live ? lock(emptyProjection(prior, shift, P), live) : emptyProjection(prior, shift, P);
-  const raceDone = isRaceDone(live);
+  const raceDone = isRaceDone(prior, live);
   const E = Math.max(1, prior.votes);
   const kS = P.kSwing * E;
   const sigmaParts = raceSigmaParts(prior, shift, P);

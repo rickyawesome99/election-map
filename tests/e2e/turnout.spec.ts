@@ -73,15 +73,17 @@ test("turnout page shows the implied generic ballot", async ({ page }) => {
 
 test("race pages show the projected county map", async ({ page }) => {
   await page.goto("/senate/ga");
-  const section = page.locator("section", { has: page.getByRole("heading", { name: "Projected County Results" }) });
+  // The projected county map sits in the race's Projected Result section (merged there in v3.22).
+  const section = page.locator("section", { has: page.getByRole("heading", { name: "Projected Result" }) }).first();
   await expect(section).toBeVisible({ timeout: 20_000 });
+  await expect(section.locator("svg path").first()).toBeVisible();
   await expect(section.getByText(/estimated votes/)).toBeVisible();
   await expect(section.getByText(/How this is built/)).toBeVisible();
 
   await page.goto("/house/oh-12");
   const tabs = page.getByRole("tablist", { name: "District map view" });
   await expect(tabs.getByRole("tab", { name: "2026 projection" })).toHaveAttribute("aria-selected", "true", { timeout: 20_000 });
-  await expect(page.getByText(/Projected 2026 result by county/)).toBeVisible();
+  await expect(page.getByText(/Projected 2026 margin by county/)).toBeVisible();
   await tabs.getByRole("tab", { name: "District lines" }).click();
-  await expect(page.getByText(/Projected 2026 result by county/)).toHaveCount(0);
+  await expect(page.getByText(/Projected 2026 margin by county/)).toHaveCount(0);
 });

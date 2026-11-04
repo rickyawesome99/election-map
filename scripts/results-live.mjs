@@ -3,7 +3,7 @@
 // governor and House race on disk, and the Results page (in dev) reads that store through
 // /api/results/live instead of every browser polling civicAPI on its own.
 //
-//   - Toplines (`?light`, ~1 KB) loop continuously over the races whose polls have closed (all
+//   - Toplines (`?light`, ~1 KB) loop continuously over the races whose polls have closed, close and still-counting races first (all
 //     races every ALL_EVERY_MS), at most once per TOP_EVERY_MS per race (the feed's edge cache is
 //     15 s, so faster gains nothing).
 //   - A race whose topline changed (votes, % reporting, call) gets its full payload (counties)
@@ -24,7 +24,7 @@ const UA = { "User-Agent": "election-map-live/1.0 (+https://github.com/rickyawes
 const flag = (name) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
 const set = flag("--set") ?? new Date().toISOString().slice(0, 10);
 const until = flag("--until") ? Date.parse(flag("--until")) : Infinity;
-const CONCURRENCY = 8;
+const CONCURRENCY = 12;
 const TOP_EVERY_MS = 20_000;
 const ALL_EVERY_MS = 10 * 60_000;
 const SNAPSHOT_EVERY_MS = 2 * 60_000;
@@ -94,14 +94,37 @@ for (const row of byClose) if (!full.has(String(row.civic_id))) enqueueFull(row)
 let lastAll = 0;
 let topQueue = [];
 
+// Under election-night load the feed answers a few requests a second at best, so toplines go where
+// the count can still move a call: a closed race still counting within CLOSE_MARGIN every
+// TOP_EVERY_MS, one counting at a wider margin every WIDE_EVERY_MS, one with nothing in yet every
+// EMPTY_EVERY_MS, a race with a winner or a single candidate every SETTLED_EVERY_MS. Each batch is
+// only the most overdue few, so the close races come round again before the rest of the list is
+// worked through.
+const CLOSE_MARGIN = 20;
+const WIDE_EVERY_MS = 60_000;
+const EMPTY_EVERY_MS = 2 * 60_000;
+const SETTLED_EVERY_MS = 5 * 60_000;
+const BATCH = CONCURRENCY * 2;
+function intervalOf(row) {
+  const r = full.get(String(row.civic_id));
+  if (!r) return TOP_EVERY_MS;
+  const cands = (r.candidates ?? []).map((c) => Number(c.votes) || 0).sort((a, b) => b - a);
+  if (cands.length < 2 || (r.candidates ?? []).some((c) => c.winner)) return SETTLED_EVERY_MS;
+  const total = cands.reduce((a, v) => a + v, 0);
+  if (total <= 0) return EMPTY_EVERY_MS;
+  return ((cands[0] - cands[1]) / total) * 100 <= CLOSE_MARGIN ? TOP_EVERY_MS : WIDE_EVERY_MS;
+}
 function nextTopBatch() {
   const now = Date.now();
   const all = now - lastAll > ALL_EVERY_MS;
   if (all) lastAll = now;
   return ids
     .filter((row) => all || Date.parse(row.polls_close_utc) <= now + 5 * 60_000)
-    .filter((row) => now - (topAt.get(row.civic_id) ?? 0) >= TOP_EVERY_MS)
-    .sort((a, b) => Date.parse(a.polls_close_utc) - Date.parse(b.polls_close_utc));
+    .map((row) => ({ row, overdue: (now - (topAt.get(row.civic_id) ?? 0)) / (all && Date.parse(row.polls_close_utc) > now ? ALL_EVERY_MS : intervalOf(row)) }))
+    .filter((x) => x.overdue >= 1)
+    .sort((a, b) => b.overdue - a.overdue)
+    .slice(0, BATCH)
+    .map((x) => x.row);
 }
 
 async function worker() {

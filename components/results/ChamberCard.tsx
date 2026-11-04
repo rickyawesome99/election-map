@@ -78,7 +78,7 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
         </div>
       </div>
 
-      <div className="max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] xl:relative xl:mt-3 xl:grid xl:grid-cols-[minmax(0,1fr)_6rem_minmax(0,1.25fr)] xl:gap-x-4 xl:border-t xl:pt-2" style={{ borderColor: "var(--app-border)" }}>
+      <div className="max-sm:grid max-sm:grid-cols-[auto_minmax(0,1fr)] xl:mt-3 xl:grid xl:grid-cols-[minmax(0,1fr)_6rem_minmax(0,1.25fr)] xl:gap-x-4 xl:border-t xl:pt-2" style={{ borderColor: "var(--app-border)" }}>
         {/* Popular vote: two lines (at xl, without the raw counts, and the share counted under them) */}
         <div className="mt-3 border-t pt-2 max-sm:col-span-2 xl:mt-0 xl:border-t-0 xl:pt-0" style={{ borderColor: "var(--app-border)" }}>
           <div className="flex items-baseline justify-between gap-2">
@@ -90,6 +90,9 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
             <span><span className="xl:hidden" style={muted}>{pv.total > 0 ? fmtInt(pv.rep) : ""}</span> <b style={{ color: "var(--party-rep)" }}>{pv.total > 0 ? `${((pv.rep / pv.total) * 100).toFixed(1)}%` : "—"} R</b></span>
           </div>
           {pv.projectedTotal ? <div className="mt-0.5 hidden text-[10.5px] tabular-nums xl:block" style={muted} title={pv.total > 0 ? `${fmtInt(pv.dem)} D · ${fmtInt(pv.rep)} R` : undefined}>{pvCounted} counted</div> : null}
+          {/* At xl the seats-not-up note sits under the share counted (in the flow: pinned to the
+              row's bottom it ran into that line once it wrapped). */}
+          {notUp && <div className="mt-0.5 hidden text-[10px] tabular-nums xl:block" style={{ color: "var(--app-text-very-muted)" }}>{notUp}</div>}
         </div>
 
         {/* Needle */}
@@ -104,9 +107,6 @@ export default function ChamberCard({ office, tally, rows, history }: { office: 
           </div>
         </div>
         <div className="mt-1.5 max-sm:mt-3 max-sm:border-t max-sm:pt-2 max-sm:pl-4 xl:mt-0" style={{ borderColor: "var(--app-border)" }}><SeatTrend points={history} majority={majority} total={total} /></div>
-        {/* At xl the chart has its own column, so the seats-not-up note sits under the other two,
-            on the chart's time-label row, instead of adding a line to the card. */}
-        {notUp && <div className="absolute bottom-0 left-0 hidden text-[10px] tabular-nums xl:block" style={{ color: "var(--app-text-very-muted)" }}>{notUp}</div>}
       </div>
 
       {notUp && <div className="mt-2 text-[10px] xl:hidden" style={{ color: "var(--app-text-very-muted)" }}>{notUp}</div>}

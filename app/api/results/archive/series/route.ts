@@ -4,7 +4,8 @@ import { join } from "node:path";
 import { gunzipSync } from "node:zlib";
 import { resultsPriors } from "@/lib/resultsPriors";
 import { normalizeRace } from "@/lib/resultsFeed";
-import { projectRace, tallyChamber } from "@/lib/resultsNeedle";
+import { nightObservations, projectRace, tallyChamber } from "@/lib/resultsNeedle";
+import { fitNight } from "@/lib/resultsNight";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import { RESULTS_OFFICES, type ArchiveSeries, type LiveRace } from "@/lib/resultsTypes";
 import { raceHash } from "@/lib/resultsFormat";
@@ -34,12 +35,16 @@ export async function GET(req: Request) {
       const t = Date.parse(data.fetchedAt);
       const tallies: Record<string, { mean: number; lo: number; hi: number }> = {};
       const races: Record<string, [number, number, number | null]> = {};
+      // Projected as the page projects them: the night fit over every race first, then each race
+      // against it (without the fit these points sat at the prior and the merged live line zigzagged).
+      const pairs = RESULTS_OFFICES.map((_, i) => priors[i].races.map((prior) => {
+        const raw = prior.civicId ? data.races[String(prior.civicId)] : null;
+        const live: LiveRace | null = raw ? normalizeRace(prior, raw as never, t) : null;
+        return { prior, live };
+      }));
+      const fit = fitNight(pairs.flat().flatMap(({ prior, live }) => nightObservations(prior, live)));
       RESULTS_OFFICES.forEach((office, i) => {
-        const rows = priors[i].races.map((prior) => {
-          const raw = prior.civicId ? data.races[String(prior.civicId)] : null;
-          const live: LiveRace | null = raw ? normalizeRace(prior, raw as never, t) : null;
-          return { prior, live, proj: projectRace(prior, live) };
-        });
+        const rows = pairs[i].map(({ prior, live }) => ({ prior, live, proj: projectRace(prior, live, undefined, fit) }));
         for (const r of rows) races[raceHash(r.prior)] = [r1(r.proj.margin), r1(r.proj.sigma), r.proj.currentMargin == null ? null : r1(r.proj.currentMargin)];
         const e = tallyChamber(rows, SEAT_HOLDOVERS[office]).projectedDem;
         tallies[office] = { mean: e.seats, lo: e.lo80, hi: e.hi80 };

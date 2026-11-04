@@ -59,11 +59,15 @@ test("analysis index links to the pollster ratings", async ({ page }) => {
 test("race polls table shows the house-effect adjustment", async ({ page }) => {
   // the Grade column came off race pages in v2.79: grades are not a weight, so they live on Pollster Ratings
   await page.goto("/senate/nh");
-  const table = page.locator("table", { has: page.getByRole("columnheader", { name: "House effect" }) });
+  // The table shows each poll's margin and its house-effect-adjusted margin ("Adjusted"; "Adj." in
+  // the compact phone table).
+  const adjusted = /^(Adjusted|Adj\.)$/i;
+  const table = page.locator("table:visible", { has: page.getByRole("columnheader", { name: adjusted }) }).first();
   await expect(table).toBeVisible({ timeout: 20_000 });
-  await expect(table.getByRole("columnheader", { name: "Adjusted" })).toBeVisible();
+  await expect(table.getByRole("columnheader", { name: "Margin", exact: true })).toBeVisible();
   await expect(table.getByRole("columnheader", { name: "Grade" })).toHaveCount(0);
-  await expect(table.locator("tbody tr").first().locator("td").nth(7)).toHaveText(/^([DR]\+\d+\.\d|EVEN)$/);
+  const col = (await table.locator("th").allInnerTexts()).findIndex((h) => adjusted.test(h.trim()));
+  await expect(table.locator("tbody tr").first().locator("td").nth(col)).toHaveText(/^([DR]\+\d+\.\d|EVEN)$/);
 });
 
 test("a pollster's page lists every poll, filters by cycle, and links back from the ratings table", async ({ page }) => {
