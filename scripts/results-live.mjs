@@ -24,7 +24,7 @@ const UA = { "User-Agent": "election-map-live/1.0 (+https://github.com/rickyawes
 const flag = (name) => { const i = process.argv.indexOf(name); return i > 0 ? process.argv[i + 1] : null; };
 const set = flag("--set") ?? new Date().toISOString().slice(0, 10);
 const until = flag("--until") ? Date.parse(flag("--until")) : Infinity;
-const CONCURRENCY = 12;
+const CONCURRENCY = 8;
 const TOP_EVERY_MS = 20_000;
 const ALL_EVERY_MS = 10 * 60_000;
 const SNAPSHOT_EVERY_MS = 2 * 60_000;
@@ -46,15 +46,15 @@ function parseCsv(text) {
   });
 }
 
-async function get(path, tries = 3) {
+async function get(path, tries = 3, timeoutMs = 30_000, backoffMs = 1500) {
   for (let i = 0; i < tries; i++) {
     try {
-      const res = await fetch(BASE + path, { headers: UA, signal: AbortSignal.timeout(30_000) });
+      const res = await fetch(BASE + path, { headers: UA, signal: AbortSignal.timeout(timeoutMs) });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (e) {
       if (i === tries - 1) throw e;
-      await new Promise((r) => setTimeout(r, 1500 * (i + 1)));
+      await new Promise((r) => setTimeout(r, backoffMs * (i + 1)));
     }
   }
 }
@@ -75,8 +75,10 @@ function writeAtomic(path, text) { writeFileSync(path + ".tmp", text); renameSyn
 
 const stats = { top: 0, full: 0, failed: 0, changed: 0 };
 async function fetchFull(row) {
-  const r = await get(`race/${row.civic_id}`);
+  // A big state's full payload (Texas: 254 counties) can take over 30 s under election-night load.
+  const r = await get(`race/${row.civic_id}`, 2, 90_000);
   const id = String(row.civic_id);
+  needsFull.delete(id);
   full.set(id, r);
   fullSig.set(id, sigOf(r));
   index[id] = Date.now();
@@ -87,6 +89,8 @@ async function fetchFull(row) {
 
 // One pool of workers: full fetches (changed races) jump the queue ahead of toplines.
 const fullQueue = [];
+// Races whose stored payload is a newer topline over older county detail, until a full fetch lands.
+const needsFull = new Set();
 const queued = new Set();
 const enqueueFull = (row) => { if (!queued.has(row.civic_id)) { queued.add(row.civic_id); fullQueue.push(row); } };
 const byClose = [...ids].sort((a, b) => Date.parse(a.polls_close_utc) - Date.parse(b.polls_close_utc));
@@ -95,14 +99,16 @@ let lastAll = 0;
 let topQueue = [];
 
 // Under election-night load the feed answers a few requests a second at best, so toplines go where
-// the count can still move a call: a closed race still counting within CLOSE_MARGIN every
-// TOP_EVERY_MS, one counting at a wider margin every WIDE_EVERY_MS, one with nothing in yet every
-// EMPTY_EVERY_MS, a race with a winner or a single candidate every SETTLED_EVERY_MS. Each batch is
-// only the most overdue few, so the close races come round again before the rest of the list is
-// worked through.
+// news is likeliest: every Senate and governor race still counting every TOP_EVERY_MS; a House race
+// with nothing in yet (its first votes are news) or within CLOSE_MARGIN every HOUSE_EVERY_MS; a House
+// race counting at a wider margin every WIDE_EVERY_MS; a race with a winner or a single candidate every
+// SETTLED_EVERY_MS. Each batch is only the most overdue few, so the urgent races come round again
+// before the rest of the list is worked through. (Election night: with empty races at 2 min they were
+// reached only every ~25 min once demand outran the feed, and Texas Senate sat at zero for over an
+// hour after its polls closed; with ~200 races all at 20 s, a failed topline cost it ~10 min more.)
 const CLOSE_MARGIN = 20;
-const WIDE_EVERY_MS = 60_000;
-const EMPTY_EVERY_MS = 2 * 60_000;
+const HOUSE_EVERY_MS = 40_000;
+const WIDE_EVERY_MS = 120_000;
 const SETTLED_EVERY_MS = 5 * 60_000;
 const BATCH = CONCURRENCY * 2;
 function intervalOf(row) {
@@ -111,8 +117,9 @@ function intervalOf(row) {
   const cands = (r.candidates ?? []).map((c) => Number(c.votes) || 0).sort((a, b) => b - a);
   if (cands.length < 2 || (r.candidates ?? []).some((c) => c.winner)) return SETTLED_EVERY_MS;
   const total = cands.reduce((a, v) => a + v, 0);
-  if (total <= 0) return EMPTY_EVERY_MS;
-  return ((cands[0] - cands[1]) / total) * 100 <= CLOSE_MARGIN ? TOP_EVERY_MS : WIDE_EVERY_MS;
+  if (row.office !== "house") return TOP_EVERY_MS;
+  if (total <= 0) return HOUSE_EVERY_MS;
+  return ((cands[0] - cands[1]) / total) * 100 <= CLOSE_MARGIN ? HOUSE_EVERY_MS : WIDE_EVERY_MS;
 }
 function nextTopBatch() {
   const now = Date.now();
@@ -140,10 +147,27 @@ async function worker() {
     if (!top) { await new Promise((r) => setTimeout(r, 1000)); continue; }
     topAt.set(top.civic_id, Date.now());
     try {
-      const r = await get(`race/${top.civic_id}?light`, 2);
+      const r = await get(`race/${top.civic_id}?light`, 3, 30_000, 1000);
       stats.top++;
-      if (sigOf(r) !== fullSig.get(String(top.civic_id))) { stats.changed++; enqueueFull(top); }
-    } catch { stats.failed++; }
+      const id = String(top.civic_id);
+      if (sigOf(r) !== fullSig.get(id)) {
+        // The topline is stored at once (over the last full payload's county detail), so the race's
+        // total is current even while its full payload keeps failing; the needle reads the total alone
+        // until the county detail catches up (lib/resultsNeedle.ts countyPass).
+        stats.changed++;
+        full.set(id, { ...(full.get(id) ?? {}), ...r });
+        fullSig.set(id, sigOf(r));
+        index[id] = Date.now();
+        writeAtomic(join(LIVE, `${id}.json`), JSON.stringify(full.get(id)));
+        indexDirty = true;
+        needsFull.add(id);
+      }
+      if (needsFull.has(id)) enqueueFull(top);
+    } catch {
+      stats.failed++;
+      // A failing feed is not hammered: each worker pauses after a failed topline.
+      await new Promise((r) => setTimeout(r, 2000));
+    }
   }
 }
 

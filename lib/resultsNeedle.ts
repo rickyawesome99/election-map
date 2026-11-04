@@ -126,9 +126,30 @@ function emptyProjection(prior: RacePrior, shift: NightShift, P: NeedleParams): 
   };
 }
 
-function lock(p: RaceProjection, live: LiveRace): RaceProjection {
+/** A called race: locked to the feed's winner, and the projected margin conditioned on that call
+ *  (the needle's normal truncated to the winner's side of even), so a race called for one party never
+ *  shows a projection for the other. FL-22 on election night: called D at 79% counted while the needle,
+ *  reading a big early-vote skew, sat at R+3.0 ± 2.5; conditioned, D+1.2. */
+function lock(p: RaceProjection, live: LiveRace, prior: RacePrior): RaceProjection {
   if (!live.called || !live.winner) return p;
-  return { ...p, locked: true, winner: live.winner, probD: live.winner === "D" ? 1 : live.winner === "R" ? 0 : p.probD };
+  const locked = { ...p, locked: true, winner: live.winner, probD: live.winner === "D" ? 1 : live.winner === "R" ? 0 : p.probD };
+  // R-positive margins: the Republican side's winner is above even, the Democratic side's below.
+  const side = live.winner === prior.rep.party && live.winner !== prior.dem.party ? 1 : live.winner === prior.dem.party && live.winner !== prior.rep.party ? -1 : 0;
+  if (!side || !(p.sigma > 0)) return locked;
+  return { ...locked, ...truncatedToSide(p.margin, p.sigma, side) };
+}
+
+/** Mean and sd of N(mu, sigma) given it falls on `side` of zero (1 = above, −1 = below). */
+function truncatedToSide(mu: number, sigma: number, side: 1 | -1): { margin: number; sigma: number } {
+  // Mirror to the "above zero" case: X = side · M > 0, X ~ N(side · mu, sigma).
+  const m = side * mu, a = -m / sigma;
+  const tail = 1 - normalCdf(a);
+  // Far in the wrong tail the ratio is unstable: the conditional mean is then just past even.
+  if (tail < 1e-9) return { margin: side * Math.min(sigma * 0.1, 0.5), sigma: Math.max(0.3, sigma * 0.1) };
+  const lambda = (0.3989422804014327 * Math.exp(-0.5 * a * a)) / tail;
+  const mean = m + sigma * lambda;
+  const variance = sigma * sigma * Math.max(0, 1 + a * lambda - lambda * lambda);
+  return { margin: side * mean, sigma: Math.sqrt(variance) };
 }
 
 type Cell = { c: CountyPrior; v: number; expected: number; done: boolean; f: number; o: number | null };
@@ -167,7 +188,10 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
   // on minor candidates and write-ins, never on these two.
   const twoParty = (l: { dem: number; rep: number } | null) => (l ? l.dem + l.rep : 0);
   const listedDR = rows.reduce((a, { live: l }) => a + twoParty(l), 0) + extras.reduce((a, c) => a + twoParty(c), 0);
-  if (extraV > P.maxExtraShare * (matchedV + extraV) || listedDR > twoParty(live) * 1.02 + 100) return null;
+  // County rows adding to clearly less than the race's own count are older than it (the intake stores a
+  // fresh topline over the last county detail while a big state's full payload keeps timing out): the
+  // topline is the current basis.
+  if (extraV > P.maxExtraShare * (matchedV + extraV) || listedDR > twoParty(live) * 1.02 + 100 || listedDR < twoParty(live) * 0.9 - 100) return null;
   let tau = 1;
   for (let pass = 0; pass < 2; pass++) {
     let v = 0, e = 0;
@@ -235,13 +259,13 @@ function projectCounted(prior: RacePrior, live: LiveRace | null, P: NeedleParams
   const decided = prior.forecast.contest !== "contested";
   const shift = fit && !decided ? fit.shiftFor(prior) : ZERO_SHIFT;
   const mirage = fit && !decided ? fit.mirageFor(prior.state) : NO_MIRAGE;
-  if (!live || live.total <= 0) return live ? lock(emptyProjection(prior, shift, P), live) : emptyProjection(prior, shift, P);
+  if (!live || live.total <= 0) return live ? lock(emptyProjection(prior, shift, P), live, prior) : emptyProjection(prior, shift, P);
   const raceDone = isRaceDone(prior, live);
   const E = Math.max(1, prior.votes);
   const kS = P.kSwing * E;
   const sigmaParts = raceSigmaParts(prior, shift, P);
   const pass = countyPass(prior, live, raceDone, P);
-  if (!pass) return lock(projectTopline(prior, live, raceDone, kS, sigmaParts, shift, mirage, decided, P), live);
+  if (!pass) return lock(projectTopline(prior, live, raceDone, kS, sigmaParts, shift, mirage, decided, P), live, prior);
   const { tau, cells, extraV, extraNetR } = pass;
 
   // Pass 2: weights and the race's own swing against its night baseline (the prior plus the shift
@@ -286,7 +310,7 @@ function projectCounted(prior: RacePrior, live: LiveRace | null, P: NeedleParams
   return lock({
     tier: "county", counted: Math.round(counted), projectedTotal: Math.round(total), countedShare: total > 0 ? counted / total : 0,
     currentMargin: marginOf(live.dem, live.rep, live.total), swing, turnoutFactor: tau, margin, sigma, probD, locked: false, winner: null, night: nightOf(shift, mirage), counties,
-  }, live);
+  }, live, prior);
 }
 
 // A House race's feed county is the district's piece already (the feed lists the counties the
