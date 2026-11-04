@@ -24,21 +24,24 @@ on:
         description: Window start, ISO UTC (5:45 PM ET)
         default: "2026-11-03T22:45:00Z"
       until:
-        description: Window end, ISO UTC (noon ET Nov 4)
-        default: "2026-11-04T17:00:00Z"
+        description: Window end, ISO UTC (midnight ET Nov 5 → 6, for the late count)
+        default: "2026-11-06T05:00:00Z"
       interval:
         description: Minutes between snapshots
-        default: "2"
+        default: "30"
       chunk_minutes:
         description: Minutes archived per run (one artifact each)
-        default: "60"
+        default: "240"
       lead_minutes:
         description: Minutes before a run ends that it dispatches the next one
         default: "6"
   schedule:
-    # Watchdog, every 30 minutes through the night (UTC): Nov 3 22:00 → Nov 4 16:30.
+    # Watchdog, every 30 minutes (UTC): Nov 3 22:00 → Nov 6 04:30. The night ran on 2-minute
+    # snapshots to Nov 4 17:00; after that the restarted chain takes the late count on the defaults
+    # above (30-minute snapshots, 4-hour chunks).
     - cron: "*/30 22-23 3 11 *"
-    - cron: "*/30 0-16 4 11 *"
+    - cron: "*/30 * 4-5 11 *"
+    - cron: "*/30 0-4 6 11 *"
 
 permissions:
   actions: write
