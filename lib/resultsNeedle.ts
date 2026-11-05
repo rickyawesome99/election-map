@@ -26,8 +26,8 @@
 // Since 2026-11-02 the fit also carries each state's early-vote skew s (the votes a county posts
 // first run about s (1 − f) more Democratic than its final, positive s): a part-counted county's
 // implied final is o + s (1 − f) and its remainder o + s, so the needle stops chasing the mirage.
-// A county the feed marks 100% reported, or whose count has reached NEAR_DONE of its corrected
-// expectation, is done. Without county detail the same arithmetic runs on the race's one total.
+// A county the feed marks 100% reported, with its count near its prior expectation, is done; a
+// county the feed reports nothing for is done at NEAR_DONE of its corrected expectation. Without county detail the same arithmetic runs on the race's one total.
 //
 // The feed's race-level "percent reporting" is precinct-based and runs far ahead of the vote (in
 // the real 2025 Virginia snapshots 70% reporting was 42% of the final vote), so it is not the
@@ -58,8 +58,18 @@ export const K_SWING_SHARE = 0.2;
 export const K_TURNOUT_SHARE = 0.1;
 /** Residual dispersion of one county's swing around the shared swing, in points. */
 export const SIGMA_COUNTY = 6;
-/** A county whose count has reached this share of its corrected expectation is treated as done. */
+/** A county the feed sends no reporting figure for is treated as done at this share of its corrected
+ *  expectation. Where the feed does send one, only the feed can finish the county (countyDone). */
 export const NEAR_DONE = 0.97;
+/** The feed's 100% finishes a county once the count is at least this share of its expected vote, the
+ *  prior scaled by τ only when τ is below 1 (countyCaughtUp). Election night 2026: counties at 100% and
+ *  at least 90% of the prior later grew about 0.1%; at 100% and well under it (Utah County, 68%), 18%. */
+export const COUNTY_FEED_DONE_SHARE = 0.9;
+/** At or above this feed percent a county still reporting bounds its final total from below: count ÷ percent. */
+export const MIN_PCT_FOR_TOTAL = 50;
+/** At or above this feed percent, with the count caught up (countyCaughtUp), count ÷ percent is the
+ *  county's total, not just a bound: the statewide τ doesn't get to add votes the feed says aren't there. */
+export const PCT_TRUSTED_TOTAL = 90;
 /** Below this counted share the race-level projection is just the prior. */
 export const MIN_SHARE = 0.002;
 /** Floor on a projected race's sigma, in points, until the race is complete: the late mail and
@@ -84,8 +94,8 @@ export const MAX_EXTRA_SHARE = 0.25;
 export const NIGHT_SHARE = 0.5;
 
 /** The tunable constants, overridable for the backtests (scripts/resultsNeedleBacktest.ts, scripts/resultsNightBacktest.ts). */
-export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; sigmaFloor: number; ownExp: number; sigmaLate: number; maxExtraShare: number; nightShare: number };
-export const DEFAULT_PARAMS: NeedleParams = { kSwing: K_SWING_SHARE, kTurnout: K_TURNOUT_SHARE, sigmaCounty: SIGMA_COUNTY, nearDone: NEAR_DONE, sigmaFloor: SIGMA_FLOOR, ownExp: OWN_WEIGHT_EXP, sigmaLate: SIGMA_LATE, maxExtraShare: MAX_EXTRA_SHARE, nightShare: NIGHT_SHARE };
+export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; feedDoneShare: number; sigmaFloor: number; ownExp: number; sigmaLate: number; maxExtraShare: number; nightShare: number };
+export const DEFAULT_PARAMS: NeedleParams = { kSwing: K_SWING_SHARE, kTurnout: K_TURNOUT_SHARE, sigmaCounty: SIGMA_COUNTY, nearDone: NEAR_DONE, feedDoneShare: COUNTY_FEED_DONE_SHARE, sigmaFloor: SIGMA_FLOOR, ownExp: OWN_WEIGHT_EXP, sigmaLate: SIGMA_LATE, maxExtraShare: MAX_EXTRA_SHARE, nightShare: NIGHT_SHARE };
 
 const clamp = (x: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, x));
 
@@ -152,6 +162,20 @@ function truncatedToSide(mu: number, sigma: number, side: 1 | -1): { margin: num
   return { margin: side * mean, sigma: Math.sqrt(variance) };
 }
 
+/** Whether a county's count is close enough to its expected vote for the feed's percent to be believed.
+ *  τ only lowers the bar: it is statewide, so in a high-turnout state it would hold every county to the
+ *  surge of the others (Mississippi 2026: τ 1.14 from Hinds and Lowndes kept seven deep-red counties
+ *  "still counting" at 100% and 91–103% of their priors, 8,000 votes that never existed, R+0.4 for a tied race). */
+const countyCaughtUp = (v: number, prior: number, tau: number, P: NeedleParams) => v >= P.feedDoneShare * Math.min(tau, 1) * prior;
+
+/** Whether a county's count is finished: the feed says so where it reports a figure (the count having
+ *  caught up with the expectation is only an estimate, and 28% of such counties later grew on election
+ *  night 2026), and the estimate decides only where it reports none. */
+function countyDone(l: LiveCounty | null, v: number, prior: number, tau: number, P: NeedleParams): boolean {
+  if (l?.pct != null) return l.pct >= 100 && countyCaughtUp(v, prior, tau, P);
+  return v >= P.nearDone * tau * prior;
+}
+
 type Cell = { c: CountyPrior; v: number; expected: number; done: boolean; f: number; o: number | null };
 type CountyPass = { tau: number; cells: Cell[]; counted: number; extraV: number; extraNetR: number };
 
@@ -167,8 +191,8 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
   const covered = byFips ? prior.counties.reduce((a, c) => a + (byFips.has(c.fips) ? c.votes : 0), 0) / E : 0;
   if (!byFips || covered < 0.6) return null;
 
-  // Pass 1: turnout factor from finished counties (feed flag or ≥ NEAR_DONE of the expectation, which
-  // is circular in τ, so two passes).
+  // Pass 1: turnout factor from finished counties (countyDone reads the expectation, which is
+  // circular in τ, so two passes).
   const rows = prior.counties.map((c) => ({ prior: c, live: byFips.get(c.fips) ?? null }));
   const countedOf = (l: LiveCounty | null, c: CountyPrior) => (l ? l.total * (c.share < 0.999 && WHOLE_COUNTY_FEED ? c.share : 1) : 0);
   // Feed rows that match no prior county (a county the district's pieces leave out, a region the
@@ -197,7 +221,7 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
     let v = 0, e = 0;
     for (const { prior: c, live: l } of rows) {
       const counted = countedOf(l, c);
-      const done = raceDone || (l?.pct != null && l.pct >= 100 && counted >= FEED_DONE_MIN_SHARE * c.votes) || counted >= P.nearDone * tau * c.votes;
+      const done = raceDone || countyDone(l, counted, c.votes, tau, P);
       if (done && counted > 0) { v += counted; e += c.votes; }
     }
     tau = e > 0 ? (v + kT) / (e + kT) : 1;
@@ -207,8 +231,11 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
   let counted = 0;
   const cells: Cell[] = rows.map(({ prior: c, live: l }) => {
     const v = countedOf(l, c);
-    const expected = tau * c.votes;
-    const done = raceDone || (l?.pct != null && l.pct >= 100 && v >= FEED_DONE_MIN_SHARE * c.votes) || v >= P.nearDone * expected;
+    const done = raceDone || countyDone(l, v, c.votes, tau, P);
+    // A county the feed has short of 100% still has votes out, however far past the estimate its count has run.
+    const short = l?.pct != null && l.pct < 100 ? l.pct : null;
+    const fromPct = short != null && short >= MIN_PCT_FOR_TOTAL ? v / (short / 100) : 0;
+    const expected = short != null && short >= PCT_TRUSTED_TOTAL && countyCaughtUp(v, c.votes, tau, P) ? fromPct : Math.max(tau * c.votes, fromPct);
     const f = done ? 1 : clamp(v / Math.max(1, expected), 0, 1);
     const o = l ? marginOf(l.dem, l.rep, l.total) : null;
     counted += v;
@@ -343,6 +370,13 @@ function projectTopline(prior: RacePrior, live: LiveRace, raceDone: boolean, kS:
 
 // ── Chamber roll-ups ──────────────────────────────────────────────────────────
 
+/** A race's votes by party, for a popular vote. Both slots of a same-party contest (California's
+ *  D vs D top-two) are that party's; an independent stays on its slot's side, as in the forecast. */
+export function partyVotes(prior: { dem: { party: Party }; rep: { party: Party } }, live: { dem: number; rep: number }): { dem: number; rep: number } {
+  if (prior.dem.party !== prior.rep.party) return { dem: live.dem, rep: live.rep };
+  return prior.dem.party === "R" ? { dem: 0, rep: live.dem + live.rep } : { dem: live.dem + live.rep, rep: 0 };
+}
+
 export type ChamberTally = {
   /** Seats the feed has called. */
   called: { dem: number; rep: number; ind: number };
@@ -377,7 +411,7 @@ export function tallyChamber(rows: { prior: RacePrior; live: LiveRace | null; pr
     if (prior.seatParty && projWinner !== prior.seatParty && (proj.locked || (live && live.total > 0))) {
       flips.push({ id: prior.id, from: prior.seatParty, to: projWinner, status: proj.locked ? "called" : "projected" });
     }
-    if (live) { popular.dem += live.dem; popular.rep += live.rep; popular.oth += live.oth; popular.total += live.total; }
+    if (live) { const v = partyVotes(prior, live); popular.dem += v.dem; popular.rep += v.rep; popular.oth += live.oth; popular.total += live.total; }
     popular.projectedTotal += proj.projectedTotal;
   }
   const sd = Math.sqrt(variance);

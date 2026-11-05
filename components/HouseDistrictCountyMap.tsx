@@ -132,8 +132,10 @@ export default function HouseDistrictCountyMap({
   const card = (h: Hovered): CountyTooltipProps => {
     const title = countyDisplayName(h.fips, h.name);
     if (!h.inDistrict) return { kind: "message", title, message: `Part of this county is in ${stateAbbr}-${String(h.otherDistrict).padStart(2, "0")}, not ${districtLabel}.` };
-    if (!h.result) return { kind: "message", title, message: "No result on file for this county's share of the district." };
-    const r = h.result;
+    // The current figures, not those saved when the piece was clicked: the map's layer may have changed since.
+    const r = byFips.get(h.fips) ?? null;
+    if (!r) return { kind: "message", title, message: "No result on file for this county's share of the district." };
+    if (r.figure) return { kind: "figure", title, label: r.figure.label, value: r.figure.value, valueColor: r.figure.color };
     const sd = countySides(r, { name: demName, party: demParty }, { name: repName, party: repParty });
     return {
       kind: "result", title,

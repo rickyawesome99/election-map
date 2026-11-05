@@ -14,7 +14,7 @@ import { flipBackground } from "@/components/FlipStripes";
 import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
-import { nightObservations, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
+import { nightObservations, partyVotes, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
 import { areaSwings, fitNight, type NightFit } from "@/lib/resultsNight";
 import NightPanel from "@/components/results/NightPanel";
 import { closeMinutes, fmtClose, fmtDateTime, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, fmtInt, inColor, inState } from "@/lib/resultsFormat";
@@ -937,9 +937,11 @@ function StateView({ rows, selected, onSelect }: { rows: ResultsRow[]; selected:
  *  projected vote). Uncontested seats count as the feed reports them. */
 function HousePopularVote({ rows }: { rows: ResultsRow[] }) {
   let dem = 0, rep = 0, total = 0, projVotes = 0, projSum = 0;
-  for (const { live, proj } of rows) {
-    if (live && live.total > 0) { dem += live.dem; rep += live.rep; total += live.total; }
-    if (proj.projectedTotal > 0) { projVotes += proj.projectedTotal; projSum += proj.margin * proj.projectedTotal; }
+  for (const { prior, live, proj } of rows) {
+    if (live && live.total > 0) { const v = partyVotes(prior, live); dem += v.dem; rep += v.rep; total += live.total; }
+    // A same-party contest's margin is between two candidates of one party: all of its vote is that party's.
+    const seatMargin = prior.dem.party === prior.rep.party ? (prior.dem.party === "R" ? 100 : -100) : proj.margin;
+    if (proj.projectedTotal > 0) { projVotes += proj.projectedTotal; projSum += seatMargin * proj.projectedTotal; }
   }
   const margin = total > 0 ? ((rep - dem) / total) * 100 : null;
   const projected = projVotes > 0 ? projSum / projVotes : null;

@@ -13089,7 +13089,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "OH-2 kept most of its previous shape, adding 8 whole counties, among them Pickaway, Meigs and Gallia counties, taking in the rest of Ross County and taking in the rest of Scioto County. It was safely Republican.", "pviNew": 25, "pviOld": 9 }
   ],
   "3903": [
-    { "year": 2026, "description": "OH-3 kept its Columbus core inside Franklin County, with only small adjustments along its edges with OH-12 and OH-15. It stays the most Democratic district in the state.", "pviNew": -21, "pviOld": -20 },
+    { "year": 2026, "description": "OH-3's Columbus lines inside Franklin County were essentially unchanged. It stays the most Democratic district in the state.", "pviNew": -21, "pviOld": -20 },
     { "year": 2022, "description": "OH-3 was reshaped, trading territory with OH-12 and OH-15 within the same counties. Ohio lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -20, "pviOld": -19 }
   ],
   "3904": [
@@ -13121,7 +13121,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "OH-10 was reshaped, taking 29% of Clark County and dropping out of Fayette County. It leaned Republican.", "pviNew": 4, "pviOld": 5 }
   ],
   "3911": [
-    { "year": 2026, "description": "OH-11 kept its Cleveland-to-Akron corridor essentially unchanged, with only edge adjustments toward OH-7. It stays safely Democratic.", "pviNew": -28, "pviOld": -28 },
+    { "year": 2026, "description": "OH-11's Cleveland-to-Akron corridor was essentially unchanged. It stays safely Democratic.", "pviNew": -28, "pviOld": -28 },
     { "year": 2022, "description": "OH-11 kept most of its previous shape, raising its share of Cuyahoga County from 35% to 48% and dropping out of Summit County. It was safely Democratic.", "pviNew": -28, "pviOld": -30 }
   ],
   "3912": [
@@ -13584,7 +13584,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "AL-3 kept most of its previous shape, adding Coosa County, taking 24% of Chilton County and taking in the rest of Cherokee County. It was safely Republican.", "pviNew": 19, "pviOld": 18 }
   ],
   "0104": [
-    { "year": 2026, "description": "AL-4 handed its 62% share of Tuscaloosa County to AL-7 and otherwise held its north Alabama shape. It stays safely Republican.", "pviNew": 33, "pviOld": 33 },
+    { "year": 2026, "description": "AL-4's north Alabama lines were left unchanged, including its share of Tuscaloosa County. It stays safely Republican.", "pviNew": 33, "pviOld": 33 },
     { "year": 2024, "description": "AL-4 added Blount County and larger shares of Lauderdale and Tuscaloosa, giving up Lawrence County and its share of Etowah. It stayed safely Republican.", "pviNew": 33, "pviOld": 33 },
     { "year": 2022, "description": "AL-4 kept most of its previous shape, taking 51% of Lauderdale County, cutting its share of Tuscaloosa County from 62% to 43% and dropping out of Cherokee County. It was safely Republican.", "pviNew": 33, "pviOld": 34 }
   ],
@@ -13599,7 +13599,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "AL-6 was reshaped, taking in the rest of Blount County, giving up Coosa County and cutting its share of Chilton County from 100% to 76%. It was safely Republican.", "pviNew": 18, "pviOld": 22 }
   ],
   "0107": [
-    { "year": 2026, "description": "AL-7 expanded south and west, taking in Conecuh, Monroe and Washington counties and the rest of Tuscaloosa and Clarke, while giving up Lowndes County. It remains the state's one solidly Democratic seat.", "pviNew": -10, "pviOld": -12 },
+    { "year": 2026, "description": "AL-7 expanded south and west, taking in Conecuh, Monroe and Washington counties and the rest of Clarke, while giving up Lowndes County. It remains the state's one solidly Democratic seat.", "pviNew": -10, "pviOld": -12 },
     { "year": 2024, "description": "AL-7 raised its share of Jefferson County and Birmingham from 43% to 59% while giving up Montgomery County and parts of Clarke and Tuscaloosa. It remained the state's solidly Democratic seat.", "pviNew": -12, "pviOld": -14 },
     { "year": 2022, "description": "AL-7 kept most of its previous shape, raising its share of Jefferson County from 21% to 43% and raising its share of Tuscaloosa County from 37% to 57%. It was solidly Democratic.", "pviNew": -14, "pviOld": -19 }
   ],
@@ -13683,11 +13683,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-10 was rebuilt almost from scratch, taking 71% of Contra Costa County, giving up Stanislaus County and dropping out of San Joaquin County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -18, "pviOld": 0 }
   ],
   "0611": [
-    { "year": 2026, "description": "CA-11 gave up 8% of San Francisco to CA-15 and otherwise held its shape. It remains one of the most Democratic districts in the country.", "pviNew": -36, "pviOld": -37 },
+    { "year": 2026, "description": "CA-11's San Francisco lines were essentially unchanged. It remains one of the most Democratic districts in the country.", "pviNew": -36, "pviOld": -37 },
     { "year": 2022, "description": "CA-11 was rebuilt almost from scratch, adding San Francisco County and dropping out of Contra Costa County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -37, "pviOld": -24 }
   ],
   "0612": [
-    { "year": 2026, "description": "CA-12's Oakland-area lines were essentially unchanged, with only small exchanges along its edges. It stays safely Democratic.", "pviNew": -39, "pviOld": -40 },
+    { "year": 2026, "description": "CA-12's Oakland-area lines were essentially unchanged. It stays safely Democratic.", "pviNew": -39, "pviOld": -40 },
     { "year": 2022, "description": "CA-12 was rebuilt almost from scratch, taking 12% of Alameda County and dropping out of San Francisco County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -40, "pviOld": -38 }
   ],
   "0613": [
@@ -13699,11 +13699,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-14 was rebuilt almost from scratch, taking 78% of Alameda County, dropping out of San Mateo County and dropping out of San Francisco County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -22, "pviOld": -28 }
   ],
   "0615": [
-    { "year": 2026, "description": "CA-15 took in 8% of San Francisco from CA-11 and was otherwise essentially unchanged. It remains safely Democratic.", "pviNew": -26, "pviOld": -28 },
+    { "year": 2026, "description": "CA-15's San Mateo County and southern San Francisco lines were essentially unchanged. It remains safely Democratic.", "pviNew": -26, "pviOld": -28 },
     { "year": 2022, "description": "CA-15 was rebuilt almost from scratch, taking 25% of San Mateo County and dropping out of Alameda County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -28, "pviOld": -22 }
   ],
   "0616": [
-    { "year": 2026, "description": "CA-16's Silicon Valley lines were essentially unchanged, with only edge exchanges with CA-15, CA-17 and CA-19. It stays safely Democratic.", "pviNew": -25, "pviOld": -26 },
+    { "year": 2026, "description": "CA-16's Silicon Valley lines were essentially unchanged, with only small changes along its edges. It stays safely Democratic.", "pviNew": -25, "pviOld": -26 },
     { "year": 2022, "description": "CA-16 was rebuilt almost from scratch, taking 74% of San Mateo County, taking 14% of Santa Clara County and giving up Merced County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -26, "pviOld": -9 }
   ],
   "0617": [
@@ -13775,7 +13775,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-33 was rebuilt almost from scratch, trading territory with CA-31, CA-35 and CA-8 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was solidly Democratic.", "pviNew": -12, "pviOld": -19 }
   ],
   "0634": [
-    { "year": 2026, "description": "CA-34 took territory from CA-30 in central Los Angeles and distributed about a fifth of its old area among CA-28, CA-37 and CA-38. It remains safely Democratic.", "pviNew": -28, "pviOld": -32 },
+    { "year": 2026, "description": "CA-34's central Los Angeles lines were essentially unchanged. It remains safely Democratic.", "pviNew": -28, "pviOld": -32 },
     { "year": 2022, "description": "CA-34 kept most of its previous shape, trading territory with CA-40, CA-27 and CA-37 within the same counties. It was safely Democratic.", "pviNew": -32, "pviOld": -34 }
   ],
   "0635": [
@@ -13783,11 +13783,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-35 kept most of its previous shape, trading territory with CA-42, CA-31 and CA-39 within the same counties. It was solidly Democratic.", "pviNew": -13, "pviOld": -17 }
   ],
   "0636": [
-    { "year": 2026, "description": "CA-36's western Los Angeles County lines were essentially unchanged, with small exchanges with CA-43 and CA-32. It stays safely Democratic.", "pviNew": -21, "pviOld": -21 },
+    { "year": 2026, "description": "CA-36's western Los Angeles County lines were essentially unchanged. It stays safely Democratic.", "pviNew": -21, "pviOld": -21 },
     { "year": 2022, "description": "CA-36 was rebuilt almost from scratch, dropping out of Riverside County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -21, "pviOld": -4 }
   ],
   "0637": [
-    { "year": 2026, "description": "CA-37 took territory from CA-34 and CA-43 in central Los Angeles and gave a smaller amount to CA-44. It remains safely Democratic.", "pviNew": -33, "pviOld": -37 },
+    { "year": 2026, "description": "CA-37's central Los Angeles lines were essentially unchanged. It remains safely Democratic.", "pviNew": -33, "pviOld": -37 },
     { "year": 2022, "description": "CA-37 was reshaped, trading territory with CA-40 and CA-43 within the same counties. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -37, "pviOld": -36 }
   ],
   "0638": [
@@ -13811,7 +13811,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-42 was rebuilt almost from scratch, dropping out of Riverside County. California lost a seat in the 2020 reapportionment, which shifted lines across the state. It was safely Democratic.", "pviNew": -22, "pviOld": 7 }
   ],
   "0643": [
-    { "year": 2026, "description": "CA-43 exchanged modest territory with CA-36 and CA-44 in south Los Angeles County. It remains safely Democratic.", "pviNew": -27, "pviOld": -32 },
+    { "year": 2026, "description": "CA-43's south Los Angeles County lines were essentially unchanged. It remains safely Democratic.", "pviNew": -27, "pviOld": -32 },
     { "year": 2022, "description": "CA-43 was reshaped, trading territory with CA-44, CA-33 and CA-37 within the same counties. It was safely Democratic.", "pviNew": -32, "pviOld": -20 }
   ],
   "0644": [

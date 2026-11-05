@@ -55,6 +55,13 @@ export default function AnalysisPage() {
   const f = analysisHubFigures();
   const sections: { title: string; plain?: boolean; entries: Entry[] }[] = [
     {
+      title: "Results",
+      entries: [
+        { href: "/analysis/post-election", kicker: "Results", title: `${electionYear} Post Election Analysis`,
+          description: <>The {electionYear} Senate, governor and House results state by state: a profile for each state, from a saved count set against the final forecast.</> },
+      ],
+    },
+    {
       title: "Forecasting & Polling",
       entries: [
         { href: "/analysis/editorial-prediction", kicker: "Editorial", title: "CT Strategies Editorial Prediction", graphic: "editorial",

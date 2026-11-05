@@ -102,6 +102,8 @@ const halfLifeOf = (office: "H" | "S" | "G") => halfLifeOverride ?? F.POLL_HALF_
 const NO_PARTISAN = argv.includes("--no-partisan");
 // --house-lambda N: the House environment multiplier (default: the live HOUSE_ENV_MULTIPLIER; "vote" = 1/s, the House-vote scale).
 const HOUSE_LAMBDA_ARG = argOf("--house-lambda");
+// --house-beta-norm: divide the House environment term by the year's mean β*, so the state sensitivities average 1 and do not shrink the national number.
+const HOUSE_BETA_NORM = argv.includes("--house-beta-norm");
 // --no-poll-shade: blend race polls at face value (the pre-2026-11-03 rule) instead of shaded by half the office's historical miss.
 const POLL_SHADE = !argv.includes("--no-poll-shade");
 const pollShade = (office: "S" | "G" | "H") => (POLL_SHADE ? F.POLL_MISS_SHRINK * F.POLL_MISS_HISTORICAL[office] : 0);
@@ -560,7 +562,12 @@ function sigmaEFor(office: "S" | "G" | "H", exclude: number, hf = 1): number {
 }
 // The House environment multiplier — mirrors envScaleFor() in lib/tplCompute.ts; "vote" = 1/s with s fitted without the target year.
 const houseLambda = (Y: number) => (HOUSE_LAMBDA_ARG === "vote" ? 1 / Math.abs(structModel(Y).s) : HOUSE_LAMBDA_ARG != null ? Number(HOUSE_LAMBDA_ARG) : F.HOUSE_ENV_MULTIPLIER);
-const envScale = (x: { office: "S" | "G" | "H"; year: number }) => (x.office === "H" ? houseLambda(x.year) : 1);
+const houseBetaMeans = new Map<number, number>();
+const houseBetaMean = (Y: number) => {
+  if (!houseBetaMeans.has(Y)) houseBetaMeans.set(Y, mean(predsByYear.get(Y)!.filter((x) => x.office === "H").map((x) => x.beta)));
+  return houseBetaMeans.get(Y)!;
+};
+const envScale = (x: { office: "S" | "G" | "H"; year: number }) => (x.office === "H" ? houseLambda(x.year) / (HOUSE_BETA_NORM ? houseBetaMean(x.year) : 1) : 1);
 function envEstimate(mode: EnvMode, Y: number): number | null {
   const h = envHistory[Y];
   if (mode === "fitted") return fitUpTo(Y).E[Y] ?? null;
@@ -1245,6 +1252,15 @@ if (HORIZONS) {
   for (const r of rows) console.log(`  ${String(r.days).padStart(4)}   ${LABEL[r.office].padEnd(8)} ${String(r.n).padStart(4)}  ${String(r.polled).padStart(5)}   ${r.maeModel.toFixed(2).padStart(9)}   ${r.mae.toFixed(2).padStart(9)}   ${fmt(r.biasModel, 2).padStart(9)}   ${fmt(r.bias, 2).padStart(6)}   ${r.nationalSd.toFixed(2).padStart(10)}   ${(r.cover80 * 100).toFixed(0).padStart(8)}%   ${r.brier.toFixed(3)}   ${(r.calledRight * 100).toFixed(1).padStart(5)}%   ${r.meanW.toFixed(2).padStart(6)}   ${Object.entries(r.gb).map(([y, v]) => `${y} ${v == null ? "—" : fmt(v, 1)}`).join(" · ")}`);
 }
 
+
+// --house-env-report: the House blend at 49 and 1 days out, pooled and per year (bias = actual − forecast, R-positive).
+if (argv.includes("--house-env-report")) {
+  for (const Y of YEARS) console.log(`HOUSE-ENV ${Y}  held-out s ${structModel(Y).s.toFixed(3)}  1/s ${(1 / structModel(Y).s).toFixed(2)}  mean β ${houseBetaMean(Y).toFixed(3)}  multiplier in use ${envScale({ office: "H", year: Y }).toFixed(2)}`);
+  for (const r of horizonBacktest([49, 1]).filter((row) => row.office === "H")) {
+    const years = Object.entries(r.byYear).map(([y, c]) => `${y} MAE ${c.mae.toFixed(2)} bias ${fmt(c.bias, 2)}`).join(" · ");
+    console.log(`HOUSE-ENV ${String(r.days).padStart(2)}d  n ${r.n}  model MAE ${r.maeModel.toFixed(2)} bias ${fmt(r.biasModel, 2)}  blend MAE ${r.mae.toFixed(2)} bias ${fmt(r.bias, 2)}  cover ${(r.cover80 * 100).toFixed(0)}%  Brier ${r.brier.toFixed(3)}  called ${(r.calledRight * 100).toFixed(1)}%  | ${years}`);
+  }
+}
 
 if (HORIZON_ABLATE) {
   // Every factor dropped or varied, scored horizon-matched (model + polls blended as the site

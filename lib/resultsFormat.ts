@@ -2,11 +2,14 @@ import type { Party, RacePrior } from "@/lib/resultsTypes";
 
 // Client-safe formatting shared by the Results page's pieces.
 
+/** A race's two sides, for naming a margin's leader. */
+type Sides = { dem: { party: Party }; rep: { party: Party } };
+
 export const fmtInt = (n: number) => Math.round(n).toLocaleString("en-US");
 export const fmtPct = (n: number, d = 1) => `${n.toFixed(d)}%`;
 
 /** An R-positive margin as "D+3.2" / "R+1.0" / "Even", with the race's own party letters. */
-export function fmtMargin(m: number | null, prior?: Pick<RacePrior, "dem" | "rep">, d = 1): string {
+export function fmtMargin(m: number | null, prior?: Sides, d = 1): string {
   if (m == null || !Number.isFinite(m)) return "—";
   if (Math.abs(m) < 0.05) return "Even";
   const side = m > 0 ? prior?.rep.party ?? "R" : prior?.dem.party ?? "D";
@@ -14,7 +17,7 @@ export function fmtMargin(m: number | null, prior?: Pick<RacePrior, "dem" | "rep
 }
 
 /** A call (projected/forecast/counted margin): names its leader by the exact sign ("R+0.0"), "Even" only at a true tie. */
-export function fmtCall(m: number | null, prior?: Pick<RacePrior, "dem" | "rep">, d = 1): string {
+export function fmtCall(m: number | null, prior?: Sides, d = 1): string {
   if (m == null || !Number.isFinite(m)) return "—";
   if (m === 0) return "Even";
   const side = m > 0 ? prior?.rep.party ?? "R" : prior?.dem.party ?? "D";
@@ -22,10 +25,10 @@ export function fmtCall(m: number | null, prior?: Pick<RacePrior, "dem" | "rep">
 }
 
 export const partyColor = (p: Party | null | undefined) => (p === "R" ? "var(--party-rep)" : p === "I" ? "var(--party-ind)" : p === "D" ? "var(--party-dem)" : "var(--app-text-primary)");
-export const marginSideColor = (m: number | null, prior?: Pick<RacePrior, "dem" | "rep">) =>
+export const marginSideColor = (m: number | null, prior?: Sides) =>
   m == null || Math.abs(m) < 0.05 ? "var(--app-text-primary)" : partyColor(m > 0 ? prior?.rep.party ?? "R" : prior?.dem.party ?? "D");
 /** marginSideColor for a call: the leader's color down to a true tie, matching fmtCall. */
-export const callSideColor = (m: number | null, prior?: Pick<RacePrior, "dem" | "rep">) =>
+export const callSideColor = (m: number | null, prior?: Sides) =>
   m == null || m === 0 ? "var(--app-text-primary)" : partyColor(m > 0 ? prior?.rep.party ?? "R" : prior?.dem.party ?? "D");
 
 /** How much is counted: none (0%), partial (1–99%), or done (100%). With a `done` flag, only a

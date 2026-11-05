@@ -86,6 +86,51 @@ test("the dashboard, map and tables fill from the feed and a race opens with its
   expect(page.url()).not.toMatch(/#/);
 });
 
+test("the county table's swing view compares each seat with its own last election", async ({ page }) => {
+  const priors = await stubFeed(page);
+  await page.clock.setFixedTime(ELECTION_NIGHT);
+  const open = async (hash: string) => {
+    await page.goto(`/results#${hash}`);
+    await page.getByRole("button", { name: "Swing", exact: true }).last().click();
+    return page.locator("#race-detail table").last();
+  };
+  const heads = (t: Awaited<ReturnType<typeof open>>) => t.locator("thead th:visible").allInnerTexts();
+  // Nebraska's Ricketts seat was last up in the 2024 special, not Fischer's regular race that year.
+  let table = await open("senate-NE-2");
+  const ne = (await heads(table)).join(" | ").replace(/\s+/g, " ").toUpperCase();
+  if (page.viewportSize()!.width >= 640) expect(ne).toBe("COUNTY | MARGIN | SWING VS '24 SPECIAL | SWING VS SEN '24 | SWING VS PRES '24 | COUNTED ▾ | IN");
+  else expect(ne).toContain("SWING VS '24 SP.");
+  // Every county has a baseline, and a swing the feed's margin less it.
+  await expect(table.locator("tbody tr").first()).toContainText(/[DRI]\+\d/);
+  // Osborn is an independent in the D slot: his swings read as Democratic ones, his margins keep his own letter.
+  const seatSwing = table.locator("tbody tr").first().locator("td").nth(2);
+  await expect(seatSwing).toContainText(/^[DR]\+\d/);
+  await expect(seatSwing).not.toContainText(/\bI\+\d/);
+  await expect(table.locator("thead")).not.toContainText(/Vote\s*margin|Edge|TPL|Proj/i);
+  table = await open("senate-GA");
+  await expect(table.locator("thead")).toContainText(/vs '20/i);
+  await expect(table.locator("thead")).toContainText(/vs Sen '22/i);
+  // Ohio's special is for the Vance seat, last up in 2022; 2024's race was the state's other seat.
+  table = await open("senate-OH-2");
+  await expect(table.locator("thead")).toContainText(/vs '22/i);
+  await expect(table.locator("thead")).toContainText(/vs Sen '24/i);
+  table = await open("governor-NH");
+  await expect(table.locator("thead")).toContainText(/vs '24/i);
+  await expect(table.locator("thead")).not.toContainText(/vs Sen/i);
+  // A district inside one county is the district's own presidential result, not an estimate.
+  table = await open("house-1707");
+  await expect(table.locator("thead")).toContainText(/vs '24/i);
+  await expect(table.locator("tbody tr").first()).toContainText(/[DR]\+\d/);
+  await expect(table.locator("tbody tr").first()).not.toContainText("~");
+  // A split county in a larger district is marked as one; then back to the results.
+  const split = priors.find((p) => p.office === "house" && (p.counties as { pres24Est?: boolean }[]).some((c) => c.pres24Est))!;
+  table = await open(`house-${split.id}`);
+  await expect(table.locator("tbody")).toContainText("~");
+  await table.locator("thead th", { hasText: /pres '24|vs '24/i }).first().click();
+  await page.getByRole("button", { name: "Results", exact: true }).click();
+  await expect(table.locator("thead")).toContainText("Edge");
+});
+
 test("a test-data payload is hidden", async ({ page }) => {
   await stubLocal(page);
   await page.route("https://civicapi.org/api/v2/**", (route) => route.fulfill({ json: { percent_reporting: 90, test_data: true, candidates: [{ name: "A", party: "Democratic", votes: 100, percent: 60 }, { name: "B", party: "Republican", votes: 50, percent: 40 }] } }));
@@ -128,6 +173,45 @@ test("election night shows real results only: no simulated night, no replay cont
   await expect(page.getByText("Replay archive")).toHaveCount(0);
   await expect(page.getByText("SIMULATED NIGHT")).toHaveCount(0);
   await expect(page.getByRole("button", { name: "Preview a simulated night" })).toHaveCount(0);
+});
+
+test("the map's Swing tab colors counties by swing vs Pres '24 and its cards give that margin", async ({ page, isMobile }) => {
+  await stubFeed(page);
+  await page.clock.setFixedTime(ELECTION_NIGHT);
+  for (const race of ["senate-GA", "house-1707"]) {
+    await page.goto(`/results#${race}`);
+    await page.getByRole("button", { name: "Swing", exact: true }).first().click();
+    const detail = page.locator("#race-detail");
+    await expect(detail).toContainText("Each county's counted margin minus its 2024 presidential margin");
+    const county = detail.locator("svg path[style*='cursor'], svg path.rsm-geography").first();
+    if (!isMobile) {
+      await county.dispatchEvent("mouseover");
+      const tip = page.locator(".pointer-events-none.rounded-lg", { hasText: "Swing vs Pres '24" });
+      await expect(tip).toBeVisible();
+      await expect(tip).toContainText(/[DR]\+\d/);
+      await expect(tip).not.toContainText("Votes");
+    }
+    await county.dispatchEvent("click");
+    const panel = detail.locator("[data-county-card='panel']", { hasText: "Swing vs Pres '24" });
+    await expect(panel).toContainText(/[DR]\+\d/);
+    // The panel follows the map's tab.
+    await page.getByRole("button", { name: "Counted", exact: true }).last().click();
+    await expect(detail.locator("[data-county-card='panel']")).not.toContainText("Swing vs Pres '24");
+  }
+});
+
+test("on a 320px phone the swing view's extra Senate column fits without sideways scrolling", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 700 });
+  await stubFeed(page);
+  await page.clock.setFixedTime(ELECTION_NIGHT);
+  // The widest cases: a long county name, and a special's longer heading.
+  for (const race of ["senate-VA-2", "senate-NE-2"]) {
+    await page.goto(`/results#${race}`);
+    await page.getByRole("button", { name: "Swing", exact: true }).last().click();
+    await expect(page.locator("#race-detail table").last().locator("thead")).toContainText(/vs Sen '/i);
+    const scroller = page.locator("#race-detail table").last().locator("..");
+    expect(await scroller.evaluate((e) => e.scrollWidth - e.clientWidth)).toBeLessThanOrEqual(1);
+  }
 });
 
 test("on a 320px phone the page, race table and county table fit without sideways scrolling", async ({ page }) => {

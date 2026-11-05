@@ -386,7 +386,7 @@ function CountyPanel(props: CountyTooltipProps) {
       <>
         <div className="flex items-baseline justify-between gap-3">
           <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{props.label}</span>
-          <span className="shrink-0 font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: props.value != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{props.value ?? "No count"}</span>
+          <span className="shrink-0 font-extrabold tabular-nums" style={{ fontSize: figSize, lineHeight: 1, color: props.value != null ? props.valueColor ?? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{props.value ?? "No count"}</span>
         </div>
         {props.note && <div className="mt-1.5 text-sm leading-snug tabular-nums" style={{ color: "var(--app-text-muted)" }}>{props.note}</div>}
         {footer && <div className="mt-2">{footer}</div>}

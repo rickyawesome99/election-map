@@ -127,7 +127,7 @@ function pieceDeviations(): Map<string, number> {
 
 /** Shares keyed by county|district, with whether they came from the 2024 pieces (unchanged lines). */
 let shareBasisCache: Map<string, string> | null = null;
-function shareBasis(fips: string, districtId: string): string | undefined {
+export function shareBasis(fips: string, districtId: string): string | undefined {
   if (!shareBasisCache) shareBasisCache = new Map(countyDistrictShares2026().map((s) => [`${s.fips}|${s.district}`, s.basis]));
   return shareBasisCache.get(`${fips}|${districtId}`);
 }

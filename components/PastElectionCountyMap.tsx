@@ -30,6 +30,8 @@ export type CountyMapResult = {
   projectedMargin?: number;
   /** The Results page's vote still to count: projected votes left and the net votes they carry (R-positive). */
   remaining?: { votes: number; net: number; current: number };
+  /** The county card shows this one figure in place of the result (the Results page's Swing view): `margin` then holds the figure, for the fill. */
+  figure?: { label: string; value: string; color: string };
   /** This county's own pair in place of the map's demName/repName (a jungle round's top two):
    *  `margin` is rep less dem, and the county takes its leader's colour. */
   sides?: { dem: CountySide; rep: CountySide };
@@ -191,13 +193,16 @@ export default function PastElectionCountyMap({
   // One description of a county, drawn as the hover popup and as the click panel.
   const card = (c: Hovered): CountyTooltipProps => {
     const title = countyDisplayName(c.fips, c.name);
-    if (!c.result) return { kind: "message", title, message: "No county result on file." };
-    const sd = countySides(c.result, { name: demName, party: demParty }, { name: repName, party: repParty });
+    // The current figures, not those saved when the county was clicked: the map's layer may have changed since.
+    const result = byFips.get(c.fips) ?? null;
+    if (!result) return { kind: "message", title, message: "No county result on file." };
+    if (result.figure) return { kind: "figure", title, label: result.figure.label, value: result.figure.value, valueColor: result.figure.color };
+    const sd = countySides(result, { name: demName, party: demParty }, { name: repName, party: repParty });
     return {
       kind: "result", title,
-      dem: { name: sd.dem.name, link: isRealName(sd.dem.name), state: stateAbbr, party: sd.dem.party, pct: c.result.demPct, votes: c.result.demVotes },
-      rep: { name: sd.rep.name, link: isRealName(sd.rep.name), state: stateAbbr, party: sd.rep.party, pct: c.result.repPct, votes: c.result.repVotes },
-      margin: c.result.margin, totalVotes: c.result.totalVotes, reporting: c.result.reporting, projectedMargin: c.result.projectedMargin, remaining: c.result.remaining,
+      dem: { name: sd.dem.name, link: isRealName(sd.dem.name), state: stateAbbr, party: sd.dem.party, pct: result.demPct, votes: result.demVotes },
+      rep: { name: sd.rep.name, link: isRealName(sd.rep.name), state: stateAbbr, party: sd.rep.party, pct: result.repPct, votes: result.repVotes },
+      margin: result.margin, totalVotes: result.totalVotes, reporting: result.reporting, projectedMargin: result.projectedMargin, remaining: result.remaining,
     };
   };
 

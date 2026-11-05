@@ -2,7 +2,7 @@
 // (lib/resultsNeedle.ts) replayed over civicAPI's snapshot histories of the 2025 Virginia and New
 // Jersey governor races, scored against the final margin; shown on /analysis/internal-methodology/turnout#results-needle.
 export const NEEDLE_BACKTEST = {
-  "generated": "2026-11-03",
+  "generated": "2026-11-05",
   "races": [
     {
       "state": "VA",
@@ -26,6 +26,7 @@ export const NEEDLE_BACKTEST = {
     "kTurnout": 0.1,
     "sigmaCounty": 6,
     "nearDone": 0.97,
+    "feedDoneShare": 0.9,
     "sigmaFloor": 1.5,
     "ownExp": 2,
     "sigmaLate": 10,

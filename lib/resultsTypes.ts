@@ -34,6 +34,16 @@ export type CountyPrior = {
   nonwhite: number;
   college: number;
   lean: number;
+  /** The county table's swing view, R-positive, in points of all votes (absent from priors cached before it existed).
+   *  `pastMargin`: this place in the seat's last election (RacePrior.swingBase); null with no comparable result:
+   *  no county figure, either party absent, or a House county split differently on redrawn lines. */
+  pastMargin?: number | null;
+  /** Senate: this place in the state's last election for its other seat (RacePrior.otherSenateBase). */
+  otherSenateMargin?: number | null;
+  /** The 2024 presidential margin in this place. */
+  pres24?: number | null;
+  /** House, split county: `pres24` is an estimate, there being no presidential count by county piece (lib/resultsPriors.ts housePres24). */
+  pres24Est?: boolean;
   /** The county's NCHS 2023 urban–rural class, grouped as Pew Research does (lib/resultsPriors.ts countyArea). */
   area?: CountyArea | null;
 };
@@ -100,6 +110,13 @@ export type RacePrior = {
   votes: number;
   /** The seat's two latest elections, newest first, then the 2024 presidential vote (on 2026 lines for House). */
   past: PastRaceResult[];
+  /** What the race page's seat swing is measured from, R-positive: House, the seat's 2024 House margin (estimated
+   *  on redrawn lines, lib/resultsSnapshot.ts); else the state's 2024 presidential margin. Null with nothing to compare. */
+  seatSwingBase?: { margin: number; estimated: boolean } | null;
+  /** The election `CountyPrior.pastMargin` holds: 2024 for House, else the last time this seat was up. */
+  swingBase?: { year: number; special: boolean } | null;
+  /** Senate: the state's last Senate election, when that was the other seat (later than this seat's last, or the same year). */
+  otherSenateBase?: { year: number; special: boolean } | null;
   counties: CountyPrior[];
 };
 

@@ -21,8 +21,8 @@ import { fundraisingData, fundraisingSources, fundraisingDetails, type RaceFinan
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { presByBoundaryVintage, boundaryVintageForHouseYear } from "@/data/presByBoundaryVintage";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
-import { countySenateData } from "@/data/countySenateData";
-import { countyGovernorData } from "@/data/countyGovernorData";
+import { countySenateData } from "@/lib/locked2026CountyData";
+import { countyGovernorData } from "@/lib/locked2026CountyData";
 import { countyHouseData, type CountyYearResult } from "@/data/countyHouseData";
 import { computeGenericBallotAverage, genericBallotSeries } from "@/lib/genericBallotAverage";
 import { getRacePollAverage, pollAgingShift, pollWeight, racePollKey, type RacePollAverage, allocateUndecided } from "@/lib/racePollAverage";

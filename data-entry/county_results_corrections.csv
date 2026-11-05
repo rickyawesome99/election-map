@@ -1,0 +1,53 @@
+file,state,county_fips,field,old,new,why
+county_governor_results_2018.csv,CA,06095,dem,86694,89694,source D cell 86694 contradicts its 61.30% and D lead of 33067
+county_governor_results_2018.csv,CO,08083,oth,288,378,source other cell 288 contradicts its 3.23%
+county_governor_results_2018.csv,NV,32510,oth,1161,1352,source cell 1.92 parsed as 1; it is 192 (0.85%)
+county_governor_results_2018.csv,NY,36037,total,21801,21081,source total transposed; votes sum to 21081
+county_governor_results_2018.csv,NY,36053,gop,10153,14616,source R cell 10153 contradicts its 56.4% and R lead of 5610
+county_governor_results_2018.csv,NY,36083,dem,69116,23633,source D cell 69116 is impossible for the county; total less other and R lead 8729; closes the state D total exactly
+county_governor_results_2018.csv,NY,36083,gop,67063,32362,source R cell 67063 is impossible for the county; total less other and R lead 8729; closes the state R total exactly
+county_governor_results_2018.csv,NY,36097,oth,493,943,source other cell 493 contradicts its 12.8%
+county_governor_results_2018.csv,NY,36111,dem,24325,41400,source D cell 24325 contradicts its 52.6% and D lead of 7891
+county_governor_results_2018.csv,OR,41021,oth,114,84,source other cell 114 contradicts its 8.4%
+county_governor_results_2019.csv,KY,21073,total,21230,20951,source total contradicts its percentages; votes sum to 20951
+county_governor_results_2020.csv,WV,54003,oth,3083,3803,source other cell 3083 contradicts its 8.0%
+county_governor_results_2022.csv,FL,12077,gop,2345,2234,source R cell 2345 contradicts its 85.36%
+county_governor_results_2022.csv,OK,40041,dem,3497,3947,source D cell 3497 contradicts its 29.86% and R lead of 4911
+county_governor_results_2022.csv,OK,40065,dem,1,1450,source cell 1.450 (period for comma) parsed as 1
+county_governor_results_2022.csv,OK,40073,gop,3,3647,source cell 3.647 (period for comma) parsed as 3
+county_governor_results_2022.csv,OK,40085,gop,1,1951,source cell 1.951 (period for comma) parsed as 1
+county_governor_results_2022.csv,TN,47013,gop,6118,6188,source R cell 6118 contradicts its 81.96%
+county_governor_results_2022.csv,TN,47059,total,16951,17126,source total contradicts its percentages; votes sum to 17126
+county_governor_results_2022.csv,TX,48059,total,4378,5266,source total contradicts its percentages; votes sum to 5266
+county_governor_results_2022.csv,TX,48073,total,15736,14483,source total contradicts its percentages; votes sum to 14483
+county_governor_results_2022.csv,TX,48191,total,960,877,source total contradicts its percentages; votes sum to 877
+county_governor_results_2022.csv,TX,48195,total,1510,1522,source total contradicts its percentages; votes sum to 1522
+county_governor_results_2022.csv,TX,48205,total,1564,1574,source total contradicts its percentages; votes sum to 1574
+county_governor_results_2022.csv,TX,48253,total,4349,4992,source total contradicts its percentages; votes sum to 4992
+county_governor_results_2022.csv,TX,48379,total,6528,4987,source total contradicts its percentages; votes sum to 4987
+county_governor_results_2022.csv,TX,48427,total,14182,11117,source total contradicts its percentages; votes sum to 11117
+county_governor_results_2024.csv,IN,18163,total,74434,73434,source total contradicts its percentages; votes sum to 73434
+county_governor_results_2024.csv,NC,37047,total,25381,25831,source total contradicts its percentages; votes sum to 25831
+county_governor_results_2024.csv,NC,37055,total,24504,24777,source total contradicts its percentages; votes sum to 24777
+county_senate_results_2016.csv,IN,18167,gop,15681,16581,source R cell 15681 contradicts its 41.6% and lead of 4447; closes the state R total exactly
+county_senate_results_2016.csv,NV,32013,oth,581,1031,source other columns miss None of These Candidates; total less D and R
+county_senate_results_2016.csv,NV,32015,oth,272,159,source other columns contradict the total; total less D and R
+county_senate_results_2018.csv,ME,23005,oth,21035,22980,source cell 768 contradicts its 1.73% (2713)
+county_senate_results_2018.csv,PA,42007,total,68884,67642,source total contradicts its percentages; votes sum to 67642
+county_senate_results_2018.csv,PA,42035,total,18448,12378,source total contradicts its percentages; votes sum to 12378
+county_senate_results_2018.csv,PA,42095,total,124550,114616,source total contradicts its percentages; votes sum to 114616
+county_senate_results_2018.csv,PA,42109,total,28637,13393,source total contradicts its percentages; votes sum to 13393
+county_senate_results_2018.csv,WI,55083,total,16731,17449,source total contradicts its percentages and 19.2-point lead; votes sum to 17449
+county_senate_results_2020.csv,MN,27171,total,74069,80661,source total leaves out the other candidates; votes sum to 80661
+county_senate_results_2020.csv,NH,33005,total,42440,43595,source total leaves out the other candidates; votes sum to 43595
+county_senate_results_2020.csv,SC,45067,total,14278,14728,source total contradicts its percentages; votes sum to 14728
+county_senate_results_2020.csv,TX,48367,oth,473,1896,source misses a minor-party column; total less D and R
+county_senate_results_2020.csv,TX,48441,oth,1522,892,source other cell contradicts the total; total less D and R
+county_senate_results_2024.csv,ME,23005,oth,28883,29883,source cell 2634 contradicts its 1.9% (3634)
+county_senate_results_2024.csv,MI,26037,total,49545,49065,source total contradicts its percentages; votes sum to 49065
+county_senate_results_2024.csv,PA,42061,oth,986,536,source other cell contradicts the total; total less D and R
+county_senate_results_2024.csv,PA,42103,dem,6470,12909,source D cell 6470 contradicts its 37.30% and R lead of 7960
+county_senate_special_results_2020.csv,GA,13069,total,13129,13219,source total contradicts its percentages; votes sum to 13219
+county_senate_special_results_2020.csv,GA,13133,total,11247,10613,source total contradicts its percentages; votes sum to 10613
+county_senate_special_results_2024.csv,NE,31007,total,372,382,source total contradicts its percentages; votes sum to 382
+county_senate_special_results_2024.csv,NE,31155,total,4321,13321,source total contradicts its percentages; votes sum to 13321

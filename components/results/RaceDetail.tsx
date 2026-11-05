@@ -21,7 +21,7 @@ import type { ResultsRow } from "@/components/results/ResultsPage";
 // the county map (counted or projected margins); then the county table across the full width.
 
 type CountyView = "counted" | "projected";
-type MapView = CountyView | "remaining";
+type MapView = CountyView | "remaining" | "swing";
 type Prior = ResultsRow["prior"];
 type Cand = { name: string; party: string; slot: Party; votes: number; percent: number; winner: boolean; incumbent: boolean; photo: string | null; linked: boolean };
 
@@ -31,6 +31,8 @@ const serif = (size: string, color?: string) => ({ fontFamily: "var(--font-serif
 const OFFICE = { house: "U.S. House", senate: "U.S. Senate", governor: "Governor" } as const;
 const thCls = "whitespace-nowrap py-1.5 pl-1 text-right font-bold min-[360px]:pl-2 sm:pl-4";
 const tdCls = "whitespace-nowrap py-1.5 pl-1 text-right min-[360px]:pl-2 sm:pl-4";
+
+const swingFrom = (observed: number | null, base: number | null | undefined) => observed != null && base != null ? observed - base : null;
 
 function headline(prior: Prior, cands: Cand[], hasVotes: boolean, current: number | null): string {
   const d = prior.dem, r = prior.rep;
@@ -57,7 +59,8 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const { prior, live, proj } = row;
   const [view, setView] = useState<MapView>("counted");
   const [trendView, setTrendView] = useState<CountyView>("projected");
-  const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in">("votes");
+  const [sortKey, setSortKey] = useState<"votes" | "name" | "margin" | "in" | "swing" | "swingOther" | "swingPres">("votes");
+  const [tableView, setTableView] = useState<"results" | "swing">("results");
   // A tapped county row stays tinted (phones have no hover); tapping it again clears it.
   const [tappedFips, setTappedFips] = useState<string | null>(null);
   const hasVotes = !!live && live.total > 0;
@@ -72,7 +75,25 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
 
   const settled = settledParty(prior);
   const settledLabel = prior.forecast.contest.startsWith("same-party") ? "Same party" : "Unopposed";
-  const entries: CountyMapEntry[] = useMemo(() => proj.counties.flatMap((c) => {
+  // The swing view: a county's counted margin less its margin in the earlier race (R-positive). An
+  // unopposed or same-party race has nothing to swing, and priors cached from before these have no baselines.
+  const canSwing = !settled && prior.counties.some((c) => c.pres24 != null);
+  const mapView = view === "swing" && !canSwing ? "counted" : view;
+  const showSwing = tableView === "swing" && canSwing;
+  const swingYear = String(prior.swingBase?.year ?? 2024).slice(2);
+  const swingLabel = `This place in ${prior.swingBase?.year ?? 2024}${prior.swingBase?.special ? " (special)" : ""}`;
+  // A swing's labels count an independent in the D slot (Osborn) as a Democrat; every other figure keeps the race's own letters.
+  const swingSides = useMemo(() => ({ dem: { party: "D" as const }, rep: prior.rep }), [prior.rep]);
+  const swingBases = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c])), [prior.counties]);
+  const entries = useMemo(() => proj.counties.flatMap((c): CountyMapEntry[] => {
+    // Swing: the county's counted margin less its 2024 presidential margin, filled on the rating scale.
+    if (mapView === "swing") {
+      const counted = liveByFips.get(c.fips), base = swingBases.get(c.fips);
+      const swing = swingFrom(c.observedMargin, base?.pres24);
+      if (swing == null || !counted) return [];
+      return [{ fips: c.fips, name: c.name, result: { demVotes: counted.dem, repVotes: counted.rep, totalVotes: counted.total, demPct: (counted.dem / counted.total) * 100, repPct: (counted.rep / counted.total) * 100, margin: swing,
+        figure: { label: "Swing vs Pres '24", value: `${base?.pres24Est ? "~" : ""}${fmtMargin(swing, swingSides)}`, color: marginSideColor(swing, swingSides) } } }];
+    }
     const l = liveByFips.get(c.fips);
     // An unopposed or same-party race fills every county in its party's colour, in every view: there is
     // no two-party margin to map, and many such races never report a vote.
@@ -89,21 +110,21 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     const leftVotes = c.done ? 0 : Math.max(0, c.projectedTotal - (counted ? l!.total : 0));
     const current = counted ? l!.rep - l!.dem : 0;
     const remaining = { votes: leftVotes, net: leftVotes > 0 ? (c.projectedMargin / 100) * c.projectedTotal - current : 0, current };
-    if (view === "counted" || (view === "remaining" && counted)) {
+    if (mapView === "counted" || (mapView === "remaining" && counted)) {
       if (!counted) return [];
       // A jungle or ranked-choice race's counted map is each county's own top two (first choices);
       // its projected and remaining views are the party blocs the needle projects.
-      const pair = view === "counted" && l!.top?.length === 2 ? junglePair(l!.top) : null;
+      const pair = mapView === "counted" && l!.top?.length === 2 ? junglePair(l!.top) : null;
       if (pair) {
         const { dem: d, rep: r } = pair;
         return [{ fips: c.fips, name: c.name, result: { demVotes: d.votes, repVotes: r.votes, totalVotes: l!.total, demPct: (d.votes / l!.total) * 100, repPct: (r.votes / l!.total) * 100, margin: ((r.votes - d.votes) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, sides: { dem: d, rep: r } } }];
       }
-      return [{ fips: c.fips, name: c.name, result: { demVotes: l!.dem, repVotes: l!.rep, totalVotes: l!.total, demPct: (l!.dem / l!.total) * 100, repPct: (l!.rep / l!.total) * 100, margin: ((l!.rep - l!.dem) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, ...(view === "remaining" ? { remaining } : {}), ...blocSides } }];
+      return [{ fips: c.fips, name: c.name, result: { demVotes: l!.dem, repVotes: l!.rep, totalVotes: l!.total, demPct: (l!.dem / l!.total) * 100, repPct: (l!.rep / l!.total) * 100, margin: ((l!.rep - l!.dem) / l!.total) * 100, reporting, projectedMargin: c.projectedMargin, ...(mapView === "remaining" ? { remaining } : {}), ...blocSides } }];
     }
     const m = c.projectedMargin, other = prior.counties.find((p) => p.fips === c.fips)?.other ?? 0;
     const repPct = (100 - other + m) / 2, demPct = (100 - other - m) / 2;
-    return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(view === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }), ...blocSides } }];
-  }), [proj, liveByFips, view, prior.counties, blocSides, settled, settledLabel]);
+    return [{ fips: c.fips, name: c.name, result: { demVotes: Math.round((c.projectedTotal * demPct) / 100), repVotes: Math.round((c.projectedTotal * repPct) / 100), totalVotes: c.projectedTotal, demPct, repPct, margin: m, ...(mapView === "remaining" ? { reporting: "0% in", projectedMargin: m, remaining } : { reporting: "Projected" }), ...blocSides } }];
+  }), [proj, liveByFips, mapView, prior.counties, blocSides, settled, settledLabel, swingBases, swingSides]);
   const maxLeftNet = useMemo(() => Math.max(0, ...entries.map((e) => Math.abs(e.result.remaining?.net ?? 0))), [entries]);
   // The Remaining view's totals: every county's votes left and the net they are expected to add (R-positive).
   const left = useMemo(() => entries.reduce((a, e) => ({ votes: a.votes + (e.result.remaining?.votes ?? 0), net: a.net + (e.result.remaining?.net ?? 0) }), { votes: 0, net: 0 }), [entries]);
@@ -112,14 +133,19 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const benchByFips = useMemo(() => new Map(prior.counties.map((c) => [c.fips, c.benchmark])), [prior.counties]);
   const sorted = useMemo(() => {
     const rows = proj.counties.map((c) => ({ c, l: liveByFips.get(c.fips) ?? null }));
+    const swingOf = (c: (typeof rows)[number]["c"]) => {
+      const base = swingBases.get(c.fips);
+      return swingFrom(c.observedMargin, sortKey === "swing" ? base?.pastMargin : sortKey === "swingOther" ? base?.otherSenateMargin : base?.pres24) ?? 999;
+    };
     rows.sort((a, b) => {
+      if (sortKey.startsWith("swing")) return swingOf(a.c) - swingOf(b.c);
       if (sortKey === "name") return a.c.name.localeCompare(b.c.name);
       if (sortKey === "margin") return (a.c.observedMargin ?? 999) - (b.c.observedMargin ?? 999);
       if (sortKey === "in") return b.c.f - a.c.f || b.c.expected - a.c.expected;
       return b.c.expected - a.c.expected;
     });
     return rows;
-  }, [proj, liveByFips, sortKey]);
+  }, [proj, liveByFips, sortKey, swingBases]);
 
   // The feed's candidates, each matched to the forecast's D or R slot (anyone else is "I"), most
   // votes first; before any votes, the two nominees.
@@ -133,6 +159,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     }).sort((a, b) => b.votes - a.votes).slice(0, 5);
   }, [live, prior]);
 
+  const swingNote = `Each county's counted margin minus its 2024 presidential margin, colored by size of the swing.${prior.counties.some((c) => c.pres24Est) ? " ~ marks an estimate for part of a split county." : ""}`;
   const pD = proj.probD, pSide = pD >= 0.5 ? prior.dem : prior.rep, pWin = pD >= 0.5 ? pD : 1 - pD;
   const district = prior.office === "house" ? Number(prior.id.slice(2)) : 0;
   const noDetail = hasVotes && !live?.counties;
@@ -246,42 +273,58 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
 
         <div className="min-w-0 lg:flex lg:flex-col">
           <div className="mb-2 flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider sm:gap-4">
-            {(["counted", "projected", "remaining"] as MapView[]).map((v) => (
+            {((canSwing ? ["counted", "projected", "remaining", "swing"] : ["counted", "projected", "remaining"]) as MapView[]).map((v) => (
               <button key={v} onClick={() => setView(v)} className="whitespace-nowrap pb-0.5 uppercase transition-colors hover:text-[var(--app-text-primary)]"
-                style={view === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
-                {v === "counted" ? "Counted" : v === "projected" ? "Projected" : "Remaining"}
+                style={mapView === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
+                {v === "counted" ? "Counted" : v === "projected" ? "Projected" : v === "remaining" ? "Remaining" : "Swing"}
               </button>
             ))}
             {noDetail && <span className="font-normal normal-case tracking-normal" style={veryMuted}>loading counties…</span>}
           </div>
           {prior.office === "house" ? (
-            <HouseDistrictCountyMap piecesUrl={`/house-county-pieces/2026/${prior.state}.json`} district={district} districtLabel={prior.label} stateAbbr={prior.state} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, left, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
+            <HouseDistrictCountyMap piecesUrl={`/house-county-pieces/2026/${prior.state}.json`} district={district} districtLabel={prior.label} stateAbbr={prior.state} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={mapView === "remaining" ? remainingCaption(note, maxLeftNet, left, prior) : mapCaption(mapView === "swing" ? swingNote : note)} panelSize="compact" bubbles={mapView === "remaining"} />
           ) : (
-            <PastElectionCountyMap stateAbbr={prior.state} stateName={prior.stateName} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={view === "remaining" ? remainingCaption(note, maxLeftNet, left, prior) : mapCaption(note)} panelSize="compact" bubbles={view === "remaining"} />
+            <PastElectionCountyMap stateAbbr={prior.state} stateName={prior.stateName} counties={entries} demName={prior.dem.name} repName={prior.rep.name} demParty={prior.dem.party} repParty={prior.rep.party} height={280} caption={mapView === "remaining" ? remainingCaption(note, maxLeftNet, left, prior) : mapCaption(mapView === "swing" ? swingNote : note)} panelSize="compact" bubbles={mapView === "remaining"} />
           )}
           {/* Priors cached from before `past` existed (an open tab, the CDN after a deploy) have none */}
-          {(prior.past?.length ?? 0) > 0 && <PastResults past={prior.past} />}
+          {(prior.past?.length ?? 0) > 0 && <SeatStatistics past={prior.past} swing={proj.currentMargin != null && prior.seatSwingBase ? proj.currentMargin - prior.seatSwingBase.margin : null} swingEstimated={!!prior.seatSwingBase?.estimated} swingVs={prior.office === "house" ? "House" : "Pres"} swingSides={swingSides} />}
 
         </div>
       </div>
       {proj.counties.length > 0 && (
         <div className="mx-auto mt-10 max-w-4xl">
-          <LedgerSectionHead label="Counties" meta={`${reporting} of ${proj.counties.length} reporting, ${done} done`} />
+          <LedgerSectionHead label="Counties" meta={`${reporting} of ${proj.counties.length} reporting, ${done} done`} right={canSwing ? (
+            <span className="inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-wider sm:gap-4">
+              {(["results", "swing"] as const).map((v) => (
+                <button key={v} type="button" aria-pressed={tableView === v} onClick={() => { setTableView(v); if (v === "results" && sortKey.startsWith("swing")) setSortKey("votes"); }} className="whitespace-nowrap pb-0.5 uppercase transition-colors hover:text-[var(--app-text-primary)]"
+                  style={tableView === v ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" } : { ...muted, borderBottom: "2px solid transparent" }}>
+                  {v === "results" ? "Results" : "Swing"}
+                </button>
+              ))}
+            </span>
+          ) : undefined} />
           {/* Phones get five columns, some with two figures stacked (counted over projected margin,
               the vote margin, model over TPL, counted over projected total, % in under the name);
-              sm+ spreads them across nine. */}
+              sm+ spreads them across nine. The swing view does the same: four on phones (the seat's swing
+              over the presidential one), six on sm+, each with one more for a Senate race's other seat. */}
           <div className="overflow-x-auto">
             <table className="w-full text-[11px] tabular-nums min-[360px]:text-[12px] sm:text-[13px]" style={{ borderCollapse: "collapse" }}>
               <thead>
                 <tr className="text-left align-bottom text-[10.5px] uppercase tracking-wider" style={muted}>
-                  {([
+                  {((showSwing ? [
+                    ["County", "name", "all"], ["Margin", "margin", "all"],
+                    [`Swing vs '${swingYear}${prior.swingBase?.special ? " special" : ""}`, "swing", "all", undefined, "vs pres '24"],
+                    ...(prior.otherSenateBase ? [[`Swing vs Sen '${String(prior.otherSenateBase.year).slice(2)}`, "swingOther", "all"]] : []),
+                    ["Swing vs pres '24", "swingPres", "wide"],
+                    ["Counted", "votes", "all"], ["In", "in", "wide"],
+                  ] : [
                     ["County", "name", "all"], ["Vote margin", null, "all"],
                     ["Margin", "margin", "all", undefined, "proj."], ["Proj.", null, "wide"],
                     ["Edge", null, "all", undefined, "TPL"], ["TPL", null, "wide"],
                     ["Counted", "votes", "all", undefined, "of proj."], ["Proj. total", null, "wide"], ["In", "in", "wide"],
-                  ] as [string, typeof sortKey | null, "all" | "wide" | "narrow", string?, string?][]).map(([h, k, vis, color, sub], i) => (
+                  ]) as [string, typeof sortKey | null, "all" | "wide" | "narrow", string?, string?][]).map(([h, k, vis, color, sub], i) => (
                     <th key={`${h}-${vis}`} className={`${i === 0 ? "py-1.5 font-bold" : thCls} ${h === "Vote margin" ? "!text-left" : ""} ${vis === "wide" ? "hidden sm:table-cell" : vis === "narrow" ? "sm:hidden" : ""}`} style={{ borderBottom: "1px solid var(--app-border)", cursor: k ? "pointer" : undefined, color: k === sortKey ? "var(--app-text-primary)" : color }} onClick={() => k && setSortKey(k)}>
-                      {h === "Vote margin" ? <>Vote<br className="sm:hidden" /><span className="hidden sm:inline"> </span>margin</> : h === "Counted" ? <><span className="sm:hidden">Votes</span><span className="hidden sm:inline">Counted</span></> : h}{k === sortKey ? " ▾" : ""}
+                      {h === "Vote margin" ? <>Vote<br className="sm:hidden" /><span className="hidden sm:inline"> </span>margin</> : h === "Counted" ? <><span className="sm:hidden">Votes</span><span className="hidden sm:inline">Counted</span></> : h.startsWith("Swing") ? <>Swing<br className="sm:hidden" /><span className="hidden sm:inline"> </span>{h.endsWith(" special") ? <><span className="sm:hidden">{h.slice(6, -7)} sp.</span><span className="hidden sm:inline">{h.slice(6)}</span></> : h.slice(6)}</> : h}{k === sortKey ? " ▾" : ""}
                       {sub && <div className="text-[9.5px] font-semibold normal-case tracking-normal sm:hidden" style={veryMuted}>{sub}</div>}
                     </th>
                   ))}
@@ -299,18 +342,34 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                   const inSt = inState(counted ? Math.max(c.f * 100, 0.01) : 0, c.done);
                   const inPct = <><span style={{ color: inColor(inSt), fontWeight: inSt === "none" ? undefined : 600 }}>{inSt === "done" && "✓ "}{fmtIn(counted ? Math.max(c.f * 100, 0.01) : 0, c.done)}</span>{l?.pct != null && !c.done ? <span className="text-[10px]" style={veryMuted}> ({Math.round(l.pct)})</span> : null}</>;
                   const sub = "text-[10.5px] font-normal sm:hidden";
+                  const base = swingBases.get(c.fips);
+                  const seatSwing = swingFrom(c.observedMargin, base?.pastMargin), otherSwing = swingFrom(c.observedMargin, base?.otherSenateMargin), presSwing = swingFrom(c.observedMargin, base?.pres24);
+                  const presEst = base?.pres24Est && presSwing != null ? "~" : "";
+                  const presTitle = base?.pres24 != null ? `${base.pres24Est ? "An estimated" : "The"} 2024 presidential margin here: ${fmtMargin(base.pres24)}` : undefined;
                   return (
                     <tr key={c.fips} onClick={() => setTappedFips((f) => (f === c.fips ? null : c.fips))} className="cursor-pointer transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]"
                       style={{ borderBottom: "1px solid var(--app-border)", opacity: counted ? 1 : 0.6, background: tappedFips === c.fips ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined }}>
-                      <td className="py-1.5 leading-tight sm:whitespace-nowrap">
+                      <td className={`py-1.5 leading-tight sm:whitespace-nowrap ${showSwing && prior.otherSenateBase ? "max-[359px]:[overflow-wrap:anywhere]" : ""}`}>
                         {countyDisplayName(c.fips, c.name).replace(/ County$/, "")}
                         <div className={sub} style={muted}>{inPct} in</div>
                       </td>
-                      <td className={`${tdCls} !text-left font-bold sm:text-[14px] sm:[font-family:var(--font-serif)]`} style={{ color: counted ? marginSideColor(l!.rep - l!.dem, prior) : undefined }}>{counted ? fmtVoteMargin(l!.rep - l!.dem, prior) : "—"}</td>
+                      {!showSwing && <td className={`${tdCls} !text-left font-bold sm:text-[14px] sm:[font-family:var(--font-serif)]`} style={{ color: counted ? marginSideColor(l!.rep - l!.dem, prior) : undefined }}>{counted ? fmtVoteMargin(l!.rep - l!.dem, prior) : "—"}</td>}
                       <td className={`${tdCls} font-semibold`} style={{ color: callSideColor(c.observedMargin, prior) }}>
                         {fmtCall(c.observedMargin, prior)}
-                        <div className={sub} style={{ color: callSideColor(c.projectedMargin, prior) }}>{fmtCall(c.projectedMargin, prior)}</div>
+                        {!showSwing && <div className={sub} style={{ color: callSideColor(c.projectedMargin, prior) }}>{fmtCall(c.projectedMargin, prior)}</div>}
                       </td>
+                      {showSwing ? (
+                        <>
+                          <td className={tdCls} title={base?.pastMargin != null ? `${swingLabel}: ${fmtMargin(base.pastMargin, swingSides)}` : undefined} style={{ color: seatSwing != null ? marginSideColor(seatSwing, swingSides) : "var(--app-text-very-muted)" }}>
+                            {fmtMargin(seatSwing, swingSides)}
+                            <div className={sub} title={presTitle} style={{ color: presSwing != null ? marginSideColor(presSwing, swingSides) : "var(--app-text-very-muted)" }}>{presEst}{fmtMargin(presSwing, swingSides)}</div>
+                          </td>
+                          {prior.otherSenateBase && <td className={tdCls} title={base?.otherSenateMargin != null ? `This place in ${prior.otherSenateBase.year}, the state's other Senate seat: ${fmtMargin(base.otherSenateMargin, swingSides)}` : undefined} style={{ color: otherSwing != null ? marginSideColor(otherSwing, swingSides) : "var(--app-text-very-muted)" }}>{fmtMargin(otherSwing, swingSides)}</td>}
+                          <td className={`${tdCls} hidden sm:table-cell`} title={presTitle} style={{ color: presSwing != null ? marginSideColor(presSwing, swingSides) : "var(--app-text-very-muted)" }}>{presEst}{fmtMargin(presSwing, swingSides)}</td>
+                          <td className={tdCls}>{counted ? fmtInt(l!.total) : "—"}</td>
+                          <td className={`${tdCls} hidden sm:table-cell`} style={muted}>{inPct}</td>
+                        </>
+                      ) : (<>
                       <td className={`${tdCls} hidden sm:table-cell`} style={{ color: callSideColor(c.projectedMargin, prior) }}>{fmtCall(c.projectedMargin, prior)}</td>
                       <td className={tdCls} title={bench != null ? `A tied race has this county at ${fmtMargin(bench, prior)}` : undefined}
                         style={{ color: vsBench != null ? marginSideColor(vsBench, prior) : "var(--app-text-very-muted)" }}>
@@ -324,15 +383,24 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
                       </td>
                       <td className={`${tdCls} hidden sm:table-cell`} style={muted}>{fmtInt(c.projectedTotal)}</td>
                       <td className={`${tdCls} hidden sm:table-cell`} style={muted}>{inPct}</td>
+                      </>)}
                     </tr>
                   );
                 })}
               </tbody>
             </table>
           </div>
+          {showSwing ? (
+          <p className="mt-3 text-[11px] leading-relaxed" style={veryMuted}>
+            <b style={muted}>Swing:</b> each county&apos;s counted margin minus its margin in the earlier race, named for the side it moved toward; it can still move where votes are being counted. {prior.office === "house"
+              ? <>Swing vs &apos;24 is the same place&apos;s 2024 House vote: on redrawn lines, the whole county&apos;s, so a county the new lines split shows —, as does one where a major party was missing in 2024. The ~ marks an estimate: no 2024 presidential count exists for part of a split county, so it comes from the county&apos;s count, fitted to the district&apos;s actual presidential result.</>
+              : <>{swingLabel} is {prior.office === "senate" ? "the last time this seat was up" : "the last election for governor"}; {prior.otherSenateBase && <>Swing vs Sen &apos;{String(prior.otherSenateBase.year).slice(2)} is the state&apos;s last Senate race, for its other seat, with different candidates. </>}— means no county result on file, or a major party missing from that race.</>}
+          </p>
+          ) : (
           <p className="mt-3 text-[11px] leading-relaxed" style={veryMuted}>
             <b style={muted}>Edge:</b> how far each county&apos;s counted margin runs from the margin it would show if the race finished tied (the model&apos;s county pattern, shifted to even). {fmtMargin(-3.2, prior)} means the county is running 3.2 points better for {isRealName(prior.dem.name) ? lastName(prior.dem.name) : "the Democrat"} than a tie needs; a county with no votes yet is EVEN.
           </p>
+          )}
         </div>
       )}
     </section>
@@ -411,53 +479,59 @@ const remainingCaption = (note: string, maxNet: number, left: { votes: number; n
   </div>
 );
 
-/** Under the map: the seat's two latest elections and the 2024 presidential vote in the same place,
- *  each as winner (bold) vs runner-up by last name and the margin as a serif figure. At lg it
- *  stretches to the foot of the left column, the rows sharing the height. A House race held on
- *  other lines is marked, since its margin isn't this district's. */
-function PastResults({ past }: { past: PastRaceResult[] }) {
+/** Under the map: the counted margin's swing from 2024, then the 2024 presidential vote in the same
+ *  place and the seat's two latest elections, each as a margin in a serif figure. At lg it stretches
+ *  to the foot of the left column, the rows sharing the height; below that the four rows fill what
+ *  three taller rows did. The swing row stays with no figure yet, so the box never changes size. A
+ *  House race held on other lines is marked, since its margin isn't this district's. */
+function SeatStatistics({ past, swing, swingEstimated, swingVs, swingSides }: { past: PastRaceResult[]; swing: number | null; swingEstimated: boolean; swingVs: "House" | "Pres"; swingSides: { dem: { party: Party }; rep: { party: Party } } }) {
   // Rows tint on hover and, on phones, stay tinted once tapped (tap again to clear), as the county
   // table's do; a row with a past-election page also flashes darker as the tap opens it.
   const [tapped, setTapped] = useState<string | null>(null);
+  const tag = (label: string, title: string) => <span className="rounded px-1 py-px text-[9px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }} title={title}>{label}</span>;
+  const rows = [
+    {
+      key: "swing", head: "Swing", label: `vs ${swingVs} '24`, href: null,
+      tag: swing != null && swingEstimated ? tag("estimated", "This seat's lines moved for 2026, so its 2024 House margin is estimated on them") : null,
+      figure: `${swing != null && swingEstimated ? "~" : ""}${fmtCall(swing, swingSides)}`, color: callSideColor(swing, swingSides), size: "1.75rem",
+    },
+    // The presidential vote, then the seat's own elections, newest first.
+    ...[...past].sort((a, b) => Number(b.office === "President") - Number(a.office === "President")).map((r) => {
+      const winner = r.margin > 0 ? r.rep : r.dem, loser = r.margin > 0 ? r.dem : r.rep;
+      const unopposed = Math.abs(r.margin) >= 99.9 || !loser.name;
+      return {
+        key: `${r.year}-${r.office}`, head: String(r.year), label: `${r.office}${r.special ? " special" : ""}`, href: r.href,
+        // A state has two Senate seats; these rows are always this race's (RacePrior.past), not the other's.
+        tag: r.oldLines ? tag("old lines", "Held on different district lines than 2026's") : r.office === "Senate" ? tag("this seat", "An election for this same Senate seat, not the state's other one") : null,
+        figure: unopposed ? "Unopposed" : `${winner.party}+${Math.abs(r.margin).toFixed(1)}`, color: partyColor(winner.party), size: unopposed ? "1.1rem" : "1.75rem",
+      };
+    }),
+  ];
   return (
     <div className="mt-3 flex flex-col lg:flex-1">
       <div className="flex items-baseline gap-2 border-b pb-1.5" style={{ borderColor: "var(--app-text-primary)" }}>
-        <span className="text-[11px] font-bold uppercase tracking-wider">Past results</span>
+        <span className="text-[11px] font-bold uppercase tracking-wider">Seat statistics</span>
         <span className="text-[11px]" style={veryMuted}>last two elections for this seat · 2024 president{past.some((r) => r.office === "House") ? " on 2026 lines" : ""}</span>
       </div>
       <div className="flex flex-col lg:flex-1">
-        {past.map((r) => {
-          const repWon = r.margin > 0;
-          const winner = repWon ? r.rep : r.dem, loser = repWon ? r.dem : r.rep;
-          const color = partyColor(winner.party);
-          const unopposed = Math.abs(r.margin) >= 99.9 || !loser.name;
+        {rows.map((r) => {
           const body = (
             <>
-              <span className="flex flex-col">
-                <span className="tabular-nums" style={serif("1.35rem")}>{r.year}</span>
-                <span className="mt-0.5 text-[10px] font-bold uppercase tracking-wider" style={muted}>{r.office}{r.special ? " special" : ""}</span>
+              <span className="tabular-nums" style={serif("1.35rem")}>{r.head}</span>
+              <span className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-0.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider" style={muted}>{r.label}</span>
+                {r.tag}
               </span>
-              <span className="min-w-0">
-                {/* Winner vs runner-up on one line, each in their party's colour, in the candidate rows' serif */}
-                <span className="block truncate">
-                  <span style={serif("1.3rem", color)}>{winner.name ? lastName(winner.name) : winner.party}</span>
-                  {unopposed
-                    ? <span className="text-[13px]" style={veryMuted}> unopposed</span>
-                    : <><span className="text-[13px]" style={veryMuted}> vs </span><span style={serif("1.3rem", partyColor(loser.party))}>{lastName(loser.name!)}</span></>}
-                </span>
-                {r.oldLines && <span className="mt-1 inline-block rounded px-1 py-px text-[9px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }} title="Held on different district lines than 2026's">old lines</span>}
-              </span>
-              <span className="text-right tabular-nums" style={serif(unopposed ? "1.1rem" : "1.75rem", color)}>{unopposed ? "Unopposed" : `${winner.party}+${Math.abs(r.margin).toFixed(1)}`}</span>
+              <span className="text-right tabular-nums" style={serif(r.size, r.color)}>{r.figure}</span>
             </>
           );
-          const cls = "grid min-h-[4.5rem] grid-cols-[4.5rem_minmax(0,1fr)_auto] items-center gap-4 border-b py-3 lg:flex-1 sm:grid-cols-[5rem_minmax(0,1fr)_auto]";
-          const key = `${r.year}-${r.office}`;
+          const cls = "grid min-h-[3.375rem] grid-cols-[4.5rem_minmax(0,1fr)_auto] items-center gap-2 border-b py-2 lg:flex-1 sm:grid-cols-[5rem_minmax(0,1fr)_auto] sm:gap-4";
           const tint = `${cls} cursor-pointer transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] active:bg-[color-mix(in_srgb,var(--app-text-primary)_9%,transparent)]`;
-          const style = { borderColor: "var(--app-border)", background: tapped === key ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined };
-          const onClick = () => setTapped((t) => (t === key ? null : key));
+          const style = { borderColor: "var(--app-border)", background: tapped === r.key ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined };
+          const onClick = () => setTapped((t) => (t === r.key ? null : r.key));
           return r.href
-            ? <Link key={key} href={r.href} prefetch={false} onClick={onClick} className={tint} style={style}>{body}</Link>
-            : <div key={key} onClick={onClick} className={tint} style={style}>{body}</div>;
+            ? <Link key={r.key} href={r.href} prefetch={false} onClick={onClick} className={tint} style={style}>{body}</Link>
+            : <div key={r.key} onClick={onClick} className={tint} style={style}>{body}</div>;
         })}
       </div>
     </div>

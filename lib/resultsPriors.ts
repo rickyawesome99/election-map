@@ -7,12 +7,17 @@ import { boundaryVintageForHouseYear, presByBoundaryVintage, PRES_YEARS_FOR_VINT
 import { pastElectionHref } from "@/lib/pastElections";
 import { statesData } from "@/data/statesData";
 import { forecastRace } from "@/lib/forecast";
-import { projectRaceResults } from "@/lib/countyProjection";
+import { projectRaceResults, shareBasis, type ProjectedCounty } from "@/lib/countyProjection";
+import { countyGovernorData } from "@/data/countyGovernorData";
+import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countySenateData } from "@/data/countySenateData";
+import { ABBR_TO_FIPS } from "@/lib/fips";
 import { calculateDistrictTpl, getTplFit } from "@/lib/tplCompute";
 import { countyLoadings } from "@/lib/resultsNightLoadings";
 import { parseCsv } from "@/lib/turnout";
 import { raceHref } from "@/lib/raceLinks";
 import { candidatePhoto } from "@/lib/candidatePhotos";
+import { house2024Baselines } from "@/lib/resultsSnapshot";
 import type { CountyArea, PastRaceResult, PriorsSlice, RacePrior, ResultsOffice } from "@/lib/resultsTypes";
 
 // The election-night priors: every 2026 race's forecast, nominees, poll-closing time, civicAPI id
@@ -110,13 +115,131 @@ function pastFor(office: ResultsOffice, race: RaceForecast, state: string, href:
   }];
 }
 
+let houseSwingCache: ReturnType<typeof house2024Baselines> | null = null;
+
+/** The race page's seat swing baseline. As on /analysis/post-election, a House seat needs a D vs R race in 2026. */
+function seatSwingBase(office: ResultsOffice, race: RaceForecast, contested: boolean, past: PastRaceResult[]): RacePrior["seatSwingBase"] {
+  if (!contested) return null;
+  if (office !== "house") {
+    const pres = past.find((r) => r.office === "President");
+    return pres ? { margin: pres.margin, estimated: false } : null;
+  }
+  if (race.candidates?.dem.party !== "D" || race.candidates?.rep.party !== "R") return null;
+  const base = (houseSwingCache ??= house2024Baselines()).get(race.name);
+  return base ? { margin: Math.round(base.margin * 100) / 100, estimated: base.estimated } : null;
+}
+
+// ── The county table's swing baselines ────────────────────────────────────────
+
+const r2 = (v: number) => Math.round(v * 100) / 100;
+type Tally = { demVotes: number; repVotes: number; othVotes: number; totalVotes: number };
+/** A margin to swing from: both major parties on the ballot here, or there is nothing to compare. A row
+ *  whose votes don't add up to its total is a scrape error in the source file, so it is no baseline either. */
+const contestedMargin = ({ demVotes, repVotes, othVotes, totalVotes }: Tally) =>
+  demVotes > 0 && repVotes > 0 && totalVotes > 0 && Math.abs(demVotes + repVotes + othVotes - totalVotes) <= totalVotes * 0.02 ? r2(((repVotes - demVotes) / totalVotes) * 100) : null;
+
+/** County FIPS → its 2024 House results, one row per district (the race id's form, "0512"). */
+let house2024Cache: Map<string, (Tally & { district: string })[]> | null = null;
+function house2024(): NonNullable<typeof house2024Cache> {
+  if (house2024Cache) return house2024Cache;
+  house2024Cache = new Map();
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_district_county_results.csv"), "utf8"))) {
+    if (r.year !== "2024" || r.status === "missing" || !ABBR_TO_FIPS[r.state]) continue;
+    const pieces = house2024Cache.get(r.county_fips) ?? [];
+    pieces.push({ district: ABBR_TO_FIPS[r.state] + r.district.padStart(2, "0"), demVotes: Number(r.dem || 0), repVotes: Number(r.gop || 0), othVotes: Number(r.oth || 0), totalVotes: Number(r.total || 0) });
+    house2024Cache.set(r.county_fips, pieces);
+  }
+  return house2024Cache;
+}
+
+/** The same place's 2024 House margin. Where the 2026 shares came from the 2024 pieces the lines held, so
+ *  it is the district's own piece. On redrawn lines it is the whole county's House vote, so only for a
+ *  county the district now holds entire; a piece of a county split on new lines has no 2024 count. */
+function houseBaseline(fips: string, raceId: string, share: number): number | null {
+  const pieces = house2024().get(fips);
+  if (!pieces) return null;
+  if (shareBasis(fips, raceId) === "pieces2024") {
+    const own = pieces.find((p) => p.district === raceId);
+    return own ? contestedMargin(own) : null;
+  }
+  if (share < 0.999 || pieces.some((p) => contestedMargin(p) == null)) return null;
+  return contestedMargin(pieces.reduce((a, p) => ({ demVotes: a.demVotes + p.demVotes, repVotes: a.repVotes + p.repVotes, othVotes: a.othVotes + p.othVotes, totalVotes: a.totalVotes + p.totalVotes }), { demVotes: 0, repVotes: 0, othVotes: 0, totalVotes: 0 }));
+}
+
+/** The 2024 presidential margin in each of a House district's counties. A whole county is its count. No
+ *  count exists for a piece of a split county, so a piece is estimated: the county's margin, plus the
+ *  piece's 2024 House deviation from its county where there is one, then one shift across the district's
+ *  pieces so the district adds up to its actual 2024 presidential margin. A district inside one county
+ *  therefore reads exactly. */
+function housePres24(raceId: string, counties: ProjectedCounty[]): Map<string, { margin: number; estimated: boolean }> {
+  const rows = counties.flatMap((c) => {
+    const p = countyPresidentialData[c.fips]?.years[2024];
+    if (!p) return [];
+    const split = c.share < 0.999;
+    return [{ fips: c.fips, split, votes: p.totalVotes * c.share, margin: p.margin + (split ? c.pieceDeviation ?? 0 : 0) }];
+  });
+  const target = districtPresidentialData[String(Number(raceId))]?.pres24Margin;
+  const votes = rows.reduce((a, r) => a + r.votes, 0), splitVotes = rows.reduce((a, r) => a + (r.split ? r.votes : 0), 0);
+  const shift = target != null && splitVotes > 0 ? (target * votes - rows.reduce((a, r) => a + r.margin * r.votes, 0)) / splitVotes : 0;
+  return new Map(rows.map((r) => [r.fips, { margin: r2(r.split ? Math.max(-100, Math.min(100, r.margin + shift)) : r.margin), estimated: r.split && rows.length > 1 }]));
+}
+
+type SenateRow = { state_abbr: string; year: string; class: string; type: string };
+let senateRowsCache: SenateRow[] | null = null;
+const senateRows = () => (senateRowsCache ??= parseCsv(readFileSync(join(process.cwd(), "data-entry", "senate_past_results.csv"), "utf8")) as SenateRow[]);
+
+/** The state's last Senate election, if it was for the seat other than this race's. The seat is told apart by
+ *  its class, found from the seat's own last election; the other seat counts from that same year on. */
+function otherSenateElection(state: string, seatYear: number, seatSpecial: boolean): { year: number; special: boolean } | null {
+  const rows = senateRows().filter((r) => r.state_abbr === state);
+  const own = rows.find((r) => Number(r.year) === seatYear && (r.type === "Special") === seatSpecial);
+  const latest = own && rows.filter((r) => r.class !== own.class).sort((a, b) => Number(b.year) - Number(a.year) || (a.type === "Special" ? 1 : -1))[0];
+  return latest && Number(latest.year) >= seatYear ? { year: Number(latest.year), special: latest.type === "Special" } : null;
+}
+
+/** Each county's swing baselines, and the election the seat's baseline is. A Senate seat's is its own
+ *  latest election, special or not, never the state's other seat. */
+function swingBaselines(office: ResultsOffice, race: RaceForecast, state: string, counties: ProjectedCounty[]) {
+  const last = office === "house" ? null : [...(race.pastResults ?? [])].sort((a, b) => b.year - a.year || (a.electionType === "Special" ? 1 : -1))[0];
+  const special = last?.electionType === "Special";
+  const pres = office === "house" ? housePres24(race.id, counties) : null;
+  const other = office === "senate" && last ? otherSenateElection(state, last.year, special) : null;
+  const otherTally = (fips: string): Tally | undefined => {
+    if (!other) return undefined;
+    const c = countySenateData[fips];
+    return other.special ? c?.specialYears[other.year] : c?.years[other.year];
+  };
+  const seatTally = (fips: string): Tally | undefined => {
+    if (!last) return undefined;
+    if (office === "governor") return countyGovernorData[fips]?.years[last.year];
+    const c = countySenateData[fips];
+    return special ? c?.specialYears[last.year] : c?.years[last.year];
+  };
+  return {
+    swingBase: office === "house" ? { year: 2024, special: false } : last ? { year: last.year, special } : null,
+    otherSenateBase: other,
+    byFips: new Map(counties.map((c) => {
+      const tally = seatTally(c.fips), otherRow = otherTally(c.fips);
+      const pres24 = pres ? pres.get(c.fips) : { margin: countyPresidentialData[c.fips]?.years[2024]?.margin, estimated: false };
+      return [c.fips, {
+        pastMargin: office === "house" ? houseBaseline(c.fips, race.id, c.share) : tally ? contestedMargin(tally) : null,
+        ...(other ? { otherSenateMargin: otherRow ? contestedMargin(otherRow) : null } : {}),
+        pres24: pres24?.margin ?? null,
+        ...(pres24?.estimated ? { pres24Est: true } : {}),
+      }];
+    })),
+  };
+}
+
 function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
   const state = office === "house" ? race.name.slice(0, 2) : STATE_ABBR.get(race.state) ?? race.id.slice(0, 2);
   const f = forecastRace(race);
   const cp = projectRaceResults(office, race.id);
   const close = closing().get(state);
+  const swing = swingBaselines(office, race, state, cp?.counties ?? []);
   const special = /special/i.test(race.electionType ?? "") || race.id === "OH-2" || race.id === "FL-2";
   const href = raceHref(office, race);
+  const past = pastFor(office, race, state, href);
   return {
     office,
     id: race.id,
@@ -137,8 +260,11 @@ function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
     forecast: { margin: f.margin, sigma: f.sigma, probability: f.probability, rating: f.rating, contest: f.contest, interval80: f.interval80 },
     pollsClose: { first: close?.first_close_et ?? "20:00", last: close?.last_close_et ?? close?.first_close_et ?? "20:00", note: close?.note || null },
     votes: cp?.votes ?? 0,
-    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin), area: countyArea(c.fips) })),
-    past: pastFor(office, race, state, href),
+    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin), area: countyArea(c.fips), ...swing.byFips.get(c.fips) })),
+    past,
+    seatSwingBase: seatSwingBase(office, race, f.contest === "contested", past),
+    swingBase: swing.swingBase,
+    otherSenateBase: swing.otherSenateBase,
   };
 }
 
