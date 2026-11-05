@@ -45,20 +45,19 @@ export function house2024Baselines(): Map<string, NonNullable<PostElectionRow["h
 }
 
 /** Each state's 2024 House popular vote on every seat, unopposed ones included: margin over all votes,
- *  R-positive, as the 2026 card reads. A slot's votes go to the party actually on it: a same-party
- *  final's second finalist sits in the other slot, and a tagged stand-in for a missing major party
- *  counts for neither. */
+ *  R-positive, as the 2026 card reads. A same-party final's second finalist sits in the other slot,
+ *  so those votes go to their true party; an independent standing in a slot counts for that slot's
+ *  party, as partyVotes does for 2026. */
 export function house2024PopularVote(): Record<string, number> {
   const votes = new Map<string, { dem: number; rep: number; total: number }>();
   for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8"))) {
     if (r.year !== "2024") continue;
     const v = votes.get(r.state_abbr) ?? { dem: 0, rep: 0, total: 0 };
     v.total += num(r.total_votes);
-    const demSlot = slotCandidate(r.dem_candidate).party ?? "D", repSlot = slotCandidate(r.rep_candidate).party ?? "R";
-    for (const [slot, n] of [[demSlot, num(r.dem_votes)], [repSlot, num(r.rep_votes)]] as const) {
-      if (slot === "D") v.dem += n;
-      else if (slot === "R") v.rep += n;
-    }
+    if (slotCandidate(r.dem_candidate).party === "R") v.rep += num(r.dem_votes);
+    else v.dem += num(r.dem_votes);
+    if (slotCandidate(r.rep_candidate).party === "D") v.dem += num(r.rep_votes);
+    else v.rep += num(r.rep_votes);
     votes.set(r.state_abbr, v);
   }
   return Object.fromEntries([...votes].map(([state, { dem, rep, total }]) => [state, ((rep - dem) / total) * 100]));

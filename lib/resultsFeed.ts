@@ -27,6 +27,42 @@ const isTestData = (raw: RawRace) => !!raw.test_data && !(raw.polls_close && Dat
 
 const num = (v: unknown) => (typeof v === "number" ? v : typeof v === "string" ? Number(v.replace(/,/g, "")) || 0 : 0);
 
+/** Known bad feed counts, each candidate's [feed, corrected]. On Nov 4 2026 civicAPI's TX Senate jumped
+ *  Paxton in Dallas (190,514 → 349,341, Talarico and Brown frozen) and Guadalupe (34,445 → 61,962).
+ *  The corrections are estimates, not county returns: Guadalupe's total follows its governor total,
+ *  and Dallas takes the rest of the gap to the statewide count (WFAA, Nov 4), landing within 116 of
+ *  Dallas's governor total. A county is fixed only while it still reads the bad count, and the topline
+ *  only while Paxton is above `toplineAbove`, so the feed's own fix turns this off. */
+const FEED_FIXES: Record<number, { name: string; toplineAbove: number; counties: Record<string, Record<string, [number, number]>> }> = {
+  87438: {
+    name: "Ken Paxton",
+    toplineAbove: 4_400_000,
+    counties: {
+      "48113": { "James Talarico": [527_355, 563_783], "Ken Paxton": [349_341, 206_616], "Ted Brown": [12_135, 13_607] },
+      "48187": { "Ken Paxton": [61_962, 37_036] },
+    },
+  },
+};
+
+function applyFeedFix(civicId: number | null | undefined, raw: RawRace): RawRace {
+  const fix = civicId ? FEED_FIXES[civicId] : undefined;
+  if (!fix) return raw;
+  const corrections = Object.values(fix.counties);
+  const votes = (c: RawCandidate) => num(c.votes) + corrections.reduce((a, county) => a + (county[c.name ?? ""] ? county[c.name ?? ""][1] - county[c.name ?? ""][0] : 0), 0);
+  const badTopline = num(raw.candidates?.find((c) => c.name === fix.name)?.votes) > fix.toplineAbove;
+  const total = (raw.candidates ?? []).reduce((a, c) => a + votes(c), 0);
+  const fixRegion = (r: RawRegion | null): RawRegion | null => {
+    const county = r?.fips ? fix.counties[r.fips] : undefined;
+    if (!r || !county || num(r.candidates?.find((c) => c.name === fix.name)?.votes) !== county[fix.name][0]) return r;
+    return { ...r, candidates: r.candidates?.map((c) => (c.name && county[c.name] ? { ...c, votes: county[c.name][1] } : c)) };
+  };
+  return {
+    ...raw,
+    candidates: badTopline ? raw.candidates?.map((c) => ({ ...c, votes: votes(c), percent: Math.round((votes(c) / total) * 1e4) / 100 })) : raw.candidates,
+    region_results: raw.region_results && (Object.fromEntries(Object.entries(raw.region_results).map(([k, r]) => [k, fixRegion(r)])) as RawRace["region_results"]),
+  };
+}
+
 const PARTY_OF: Record<string, Party> = { Democratic: "D", Democrat: "D", "Democratic-Farmer-Labor": "D", "Democratic-NPL": "D", Republican: "R" };
 export const partyOf = (p: string | undefined): Party | null => (p ? PARTY_OF[p] ?? (/^(Independent|Nonpartisan|No Party|Unaffiliated)/i.test(p) ? "I" : null) : null);
 
@@ -122,7 +158,8 @@ function tallyRegion(prior: RacePrior, cands: RawCandidate[] | undefined, demNam
 }
 
 /** The feed's payload → LiveRace. `counties` stays null for a topline (light) payload. */
-export function normalizeRace(prior: RacePrior, raw: RawRace, fetchedAt = Date.now()): LiveRace {
+export function normalizeRace(prior: RacePrior, feed: RawRace, fetchedAt = Date.now()): LiveRace {
+  const raw = applyFeedFix(prior.civicId, feed);
   const cands = raw.candidates ?? [];
   const { dem, rep } = matchSlots(prior, cands);
   const t = tallyRegion(prior, cands, dem?.name ?? null, rep?.name ?? null);

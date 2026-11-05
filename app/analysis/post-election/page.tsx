@@ -35,7 +35,7 @@ export default function PostElectionPage() {
             <strong className="font-semibold">Vs. GB.</strong> A Senate or governor race&rsquo;s margin minus the state&rsquo;s House popular vote margin.
           </p>
           <p>
-            <strong className="font-semibold">Vs. 24 GB.</strong> Beside Statewide: the state&rsquo;s House popular vote margin minus its 2024 House popular vote margin. Both years count every seat, including unopposed ones, as a share of all votes cast.
+            <strong className="font-semibold">Vs. 24 GB.</strong> Beside Statewide: the state&rsquo;s House popular vote margin minus its 2024 House popular vote margin. Both years count every seat, including unopposed ones, as a share of all votes cast. An independent running in place of a major-party candidate counts with that party.
           </p>
           <p>
             <strong className="font-semibold">Swing.</strong> A House seat&rsquo;s margin minus its 2024 margin. It&rsquo;s blank if either year had no Democrat against a Republican.
