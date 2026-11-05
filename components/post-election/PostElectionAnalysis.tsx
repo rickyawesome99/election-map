@@ -29,7 +29,7 @@ const subscribeHash = (onChange: () => void) => {
   return () => window.removeEventListener("hashchange", onChange);
 };
 
-export default function PostElectionAnalysis({ rows, legislature }: { rows: PostElectionRow[]; legislature: Record<string, LegChamberResult[]> }) {
+export default function PostElectionAnalysis({ rows, legislature, housePv24 }: { rows: PostElectionRow[]; legislature: Record<string, LegChamberResult[]>; housePv24: Record<string, number> }) {
   const router = useRouter();
   useTouchHover(tiltCard, untiltCard);
   const hash = useSyncExternalStore(subscribeHash, () => window.location.hash, () => "");
@@ -84,7 +84,7 @@ export default function PostElectionAnalysis({ rows, legislature }: { rows: Post
         {BANDS.map(([m, label]) => <span key={label} className="flex items-center gap-1.5"><i className="inline-block h-2.5 w-4" style={{ background: getRaceColor(m) }} />{label}</span>)}
       </div>
       {stateRows.length > 0
-        ? <StateSection rows={stateRows} legislature={legislature[picked] ?? []} onSelect={openRace} />
+        ? <StateSection rows={stateRows} legislature={legislature[picked] ?? []} housePv24={housePv24[picked] ?? null} onSelect={openRace} />
         : <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>Pick a state to open its profile.</p>}
     </div>
   );

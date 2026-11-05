@@ -112,6 +112,11 @@ test("a state's legislature cards show its chambers, with or without a 2026 elec
   await expect(page.getByText(/^25 up · \d+ called$/)).toBeVisible();
 });
 
+test("the Statewide heading shows the House popular vote against 2024", async ({ page }) => {
+  await page.goto("/analysis/post-election#IN");
+  await expect(page.locator("div.py-3", { hasText: "Statewide" }).locator("div.font-mono").first()).toHaveText(/^Statewide · D\+\d+\.\d vs 24 GB$/);
+});
+
 test("statewide cards show Vs. GB, House cards show Swing, with an asterisk only where the lines moved", async ({ page }) => {
   await page.goto("/analysis/post-election#TX");
   const cards = page.locator("button.rc-card");

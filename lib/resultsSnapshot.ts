@@ -44,6 +44,26 @@ export function house2024Baselines(): Map<string, NonNullable<PostElectionRow["h
   return out;
 }
 
+/** Each state's 2024 House popular vote on every seat, unopposed ones included: margin over all votes,
+ *  R-positive, as the 2026 card reads. A slot's votes go to the party actually on it: a same-party
+ *  final's second finalist sits in the other slot, and a tagged stand-in for a missing major party
+ *  counts for neither. */
+export function house2024PopularVote(): Record<string, number> {
+  const votes = new Map<string, { dem: number; rep: number; total: number }>();
+  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8"))) {
+    if (r.year !== "2024") continue;
+    const v = votes.get(r.state_abbr) ?? { dem: 0, rep: 0, total: 0 };
+    v.total += num(r.total_votes);
+    const demSlot = slotCandidate(r.dem_candidate).party ?? "D", repSlot = slotCandidate(r.rep_candidate).party ?? "R";
+    for (const [slot, n] of [[demSlot, num(r.dem_votes)], [repSlot, num(r.rep_votes)]] as const) {
+      if (slot === "D") v.dem += n;
+      else if (slot === "R") v.rep += n;
+    }
+    votes.set(r.state_abbr, v);
+  }
+  return Object.fromEntries([...votes].map(([state, { dem, rep, total }]) => [state, ((rep - dem) / total) * 100]));
+}
+
 export function readResultsSnapshot(): ResultsSnapshot {
   const house24 = house2024Baselines();
   const raw = parseCsv(readFileSync(join(process.cwd(), "data-entry", "results_2026_seats.csv"), "utf8"));

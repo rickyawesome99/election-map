@@ -4,7 +4,7 @@ import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { ELECTION_YEAR } from "@/lib/electionYear";
 import { CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
 import { fmtDateTime } from "@/lib/resultsFormat";
-import { readResultsSnapshot } from "@/lib/resultsSnapshot";
+import { house2024PopularVote, readResultsSnapshot } from "@/lib/resultsSnapshot";
 import { readStateLegSnapshot } from "@/lib/stateLegResultsSnapshot";
 
 export const metadata = {
@@ -21,7 +21,7 @@ export default function PostElectionPage() {
         As of <Fig>{fmtDateTime(asOf)}</Fig>
       </StandfirstHeader>
       <main className="mx-auto max-w-7xl px-4 pb-6 pt-6 sm:px-6 sm:pb-8">
-        <PostElectionAnalysis rows={rows} legislature={legislature.byState} />
+        <PostElectionAnalysis rows={rows} legislature={legislature.byState} housePv24={house2024PopularVote()} />
         <details className="mt-10 max-w-3xl text-xs leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
           <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>Sources and how to read this page</summary>
           <div className="mt-2 space-y-2">
@@ -33,6 +33,9 @@ export default function PostElectionPage() {
           </p>
           <p>
             <strong className="font-semibold">Vs. GB.</strong> A Senate or governor race&rsquo;s margin minus the state&rsquo;s House popular vote margin.
+          </p>
+          <p>
+            <strong className="font-semibold">Vs. 24 GB.</strong> Beside Statewide: the state&rsquo;s House popular vote margin minus its 2024 House popular vote margin. Both years count every seat, including unopposed ones, as a share of all votes cast.
           </p>
           <p>
             <strong className="font-semibold">Swing.</strong> A House seat&rsquo;s margin minus its 2024 margin. It&rsquo;s blank if either year had no Democrat against a Republican.

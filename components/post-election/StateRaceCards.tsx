@@ -5,6 +5,7 @@ import { flipBackground } from "@/components/FlipStripes";
 import { partyVotes } from "@/lib/resultsNeedle";
 import { callSideColor, fmtCall, fmtIn, fmtInt, inColor, inState, partyColor, raceHash } from "@/lib/resultsFormat";
 import type { LegChamberResult, LegSeats, PostElectionRow } from "@/lib/postElectionTypes";
+import type { Party } from "@/lib/resultsTypes";
 
 // One state's profile on /analysis/post-election: its count, then its race cards. Began as a copy of
 // the Results page's By state view and is now this page's own.
@@ -108,19 +109,20 @@ function RaceCard({ row, popularVote, onSelect, index }: { row: PostElectionRow;
 /** One state: the Statewide section (House popular vote, governor, Senate, the state's legislature), then every House seat in
  *  district order, under a header with the state's count. The caller holds
  *  useTouchHover(tiltCard, untiltCard), once per page. */
-export function StateSection({ rows, legislature, onSelect }: { rows: PostElectionRow[]; legislature: LegChamberResult[]; onSelect: (r: PostElectionRow) => void }) {
+export function StateSection({ rows, legislature, housePv24, onSelect }: { rows: PostElectionRow[]; legislature: LegChamberResult[]; housePv24: number | null; onSelect: (r: PostElectionRow) => void }) {
   if (!rows.length) return null;
   const p0 = rows[0].prior;
   const statewide = rows.filter((r) => r.prior.office !== "house");
   const house = rows.filter((r) => r.prior.office === "house");
   const popularVote = housePopularVote(house).margin;
+  const vs24 = popularVote != null && housePv24 != null ? popularVote - housePv24 : null;
   const counted = rows.reduce((a, r) => a + (r.live?.total ?? 0), 0);
   const total = rows.reduce((a, r) => a + r.proj.projectedTotal, 0);
   const called = rows.filter((r) => r.proj.locked && r.proj.winner).length;
   // Who breaks a tied chamber: the called governor's race, or the sitting governor where none is on the ballot.
   const governorRace = rows.find((r) => r.prior.office === "governor");
   const governorParty = governorRace ? (governorRace.proj.locked ? governorRace.proj.winner : null) : legislature[0]?.incumbentGovernor ?? null;
-  const group = (label: string, list: PostElectionRow[], offset: number, lead?: React.ReactNode, trail?: React.ReactNode) => (list.length > 0 || lead || trail) && (
+  const group = (label: React.ReactNode, list: PostElectionRow[], offset: number, lead?: React.ReactNode, trail?: React.ReactNode) => (list.length > 0 || lead || trail) && (
     <div className="py-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
       <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-wider" style={muted}>{label}</div>
       <div className="grid grid-cols-2 gap-x-3 gap-y-3 sm:grid-cols-3 lg:grid-cols-5">
@@ -141,9 +143,9 @@ export function StateSection({ rows, legislature, onSelect }: { rows: PostElecti
           </div>
         </div>
       </div>
-      {group("Statewide", statewide, 0, house.length > 0 ? <HousePopularVote rows={house} /> : undefined,
+      {group(<>Statewide{vs24 != null && <span title={`House popular vote: 2026 ${fmtCall(popularVote)}, 2024 ${fmtCall(housePv24)}`}> · <span style={{ color: callSideColor(vs24) }}>{fmtCall(vs24)}</span> vs 24 GB</span>}</>, statewide, 0, house.length > 0 ? <HousePopularVote rows={house} /> : undefined,
         legislature.map((c, i) => <LegislatureCard key={c.chamber} result={c} unicameral={legislature.length === 1} governorParty={governorParty} index={statewide.length + i} />))}
-      {group(`House · ${house.length} ${house.length === 1 ? "seat" : "seats"} · ${delegationLabel(house)}`, house, statewide.length)}
+      {group(<>House · {house.length} {house.length === 1 ? "seat" : "seats"} · {delegationLabel(house)}</>, house, statewide.length)}
     </div>
   );
 }
@@ -177,7 +179,7 @@ function chamberControl({ seats, total }: LegChamberResult, governorParty: strin
   return null;
 }
 
-/** A state's House delegation as called: "7D 7R 1 Uncalled". The party with more seats first (D on a tie), no party with none. */
+/** A state's House delegation as called: "7D 7R 1 Uncalled", each party in its colour. The party with more seats first (D on a tie), no party with none. */
 function delegationLabel(house: PostElectionRow[]) {
   const seats = new Map<string, number>();
   let uncalled = 0;
@@ -186,8 +188,13 @@ function delegationLabel(house: PostElectionRow[]) {
     else uncalled++;
   }
   const order = ["D", "R", "I"];
-  const parties = [...seats.entries()].sort((a, b) => b[1] - a[1] || order.indexOf(a[0]) - order.indexOf(b[0])).map(([party, n]) => `${n}${party}`);
-  return [...parties, uncalled > 0 ? `${uncalled} Uncalled` : ""].filter(Boolean).join(" ");
+  const parties = [...seats.entries()].sort((a, b) => b[1] - a[1] || order.indexOf(a[0]) - order.indexOf(b[0]));
+  return (
+    <>
+      {parties.map(([party, n], i) => <span key={party} style={{ color: partyColor(party as Party) }}>{i > 0 && " "}{n}{party}</span>)}
+      {uncalled > 0 && `${parties.length > 0 ? " " : ""}${uncalled} Uncalled`}
+    </>
+  );
 }
 
 function LegislatureCard({ result, unicameral, governorParty, index }: { result: LegChamberResult; unicameral: boolean; governorParty: string | null; index: number }) {
