@@ -23,6 +23,8 @@ export type CountyPrior = {
   votes: number;
   /** Expected margin, R-positive, in points of all votes. */
   margin: number;
+  /** The feed's percent and count before it changed what its percent means (lib/resultsFeed.ts). */
+  hold?: { pct: number; total: number };
   /** Expected third-party share, in points. */
   other: number;
   /** The county's TPL (the whole county's, for a House piece), R-positive; null without one. */
@@ -108,6 +110,9 @@ export type RacePrior = {
   pollsClose: { first: string; last: string; note: string | null };
   /** Expected total votes. */
   votes: number;
+  /** The late count's baseline (data-entry/results_2026_late_baseline.csv): `hold` as on CountyPrior, and the
+   *  count the late lean is measured from, its total and R-minus-D votes (lib/resultsNeedle.ts). */
+  late?: { hold: { pct: number; total: number }; leanTotal: number; leanNetR: number };
   /** The seat's two latest elections, newest first, then the 2024 presidential vote (on 2026 lines for House). */
   past: PastRaceResult[];
   /** What the race page's seat swing is measured from, R-positive: House, the seat's 2024 House margin (estimated

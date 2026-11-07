@@ -1,3 +1,4 @@
+import { LATE_COUNT_FROM, PCT_HOLD_GROWTH } from "@/lib/resultsNeedle";
 import type { LiveCandidate, LiveCounty, LiveRace, Party, RacePrior } from "@/lib/resultsTypes";
 
 // The browser's client for civicAPI (also used on the server by the archive's seat series) (https://civicapi.org — free, no key; attribution on the page).
@@ -157,6 +158,13 @@ function tallyRegion(prior: RacePrior, cands: RawCandidate[] | undefined, demNam
   return { dem, rep, oth: Math.max(0, total - dem - rep), total, ...(multi ? { top: topTwo(cands) } : {}) };
 }
 
+/** Between Nov 6 and 7 2026 civicAPI's percent_reporting stopped measuring what is counted: 6,408 of
+ *  8,410 county rows fell from 100%, FL-26 from 100% to 70.3% as its count dropped by 9. A percent
+ *  below its old figure stands only once the count has grown past the Nov 5 total: California's old
+ *  100% was false, and its counties have added far more than PCT_HOLD_GROWTH since. */
+const heldPct = (pct: number, total: number, hold: { pct: number; total: number } | undefined) =>
+  hold && pct < hold.pct && total < hold.total * (1 + PCT_HOLD_GROWTH) ? hold.pct : pct;
+
 /** The feed's payload → LiveRace. `counties` stays null for a topline (light) payload. */
 export function normalizeRace(prior: RacePrior, feed: RawRace, fetchedAt = Date.now()): LiveRace {
   const raw = applyFeedFix(prior.civicId, feed);
@@ -213,9 +221,14 @@ export function normalizeRace(prior: RacePrior, feed: RawRace, fetchedAt = Date.
       });
     }
     counties = [...direct.values(), ...other];
+    if (fetchedAt >= LATE_COUNT_FROM) {
+      const holds = new Map(prior.counties.map((c) => [c.fips, c.hold]));
+      counties = counties.map((c) => (c.fips && c.pct != null ? { ...c, pct: heldPct(c.pct, c.total, holds.get(c.fips)) } : c));
+    }
   }
+  const racePct = num(raw.percent_reporting);
   return {
-    civicId: prior.civicId ?? 0, fetchedAt, lastUpdated: raw.last_updated ?? null, percentReporting: num(raw.percent_reporting),
+    civicId: prior.civicId ?? 0, fetchedAt, lastUpdated: raw.last_updated ?? null, percentReporting: fetchedAt >= LATE_COUNT_FROM ? heldPct(racePct, t.total, prior.late?.hold) : racePct,
     called, calledAt: raw.called_at ?? null, winner: called ? winnerParty : null, testData: isTestData(raw),
     ...t, candidates, counties,
   };

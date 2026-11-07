@@ -200,6 +200,26 @@ test("the map's Swing tab colors counties by swing vs Pres '24 and its cards giv
   }
 });
 
+test("the national map's Swing tab compares each office with Pres '24", async ({ page, isMobile }) => {
+  await stubFeed(page);
+  await page.clock.setFixedTime(ELECTION_NIGHT);
+  await page.goto("/results");
+  await page.getByRole("button", { name: "Swing", exact: true }).click();
+  for (const [office, note] of [["House", "Each district's counted margin minus its 2024 presidential margin on the 2026 lines"], ["Senate", "Each state's counted margin"], ["Governor", "Each state's counted margin"]]) {
+    await page.getByRole("button", { name: office, exact: true }).first().click();
+    await expect(page.getByText(note)).toBeVisible();
+    await expect(page.getByText("Called flip")).toHaveCount(0);
+  }
+  if (!isMobile) {
+    // Some states have no governor race, so hover until one answers.
+    const tip = page.locator(".pointer-events-none.rounded-lg", { hasText: "Pres '24" });
+    for (let i = 0; i < 12 && !(await tip.count()); i++) await page.locator("svg path.rsm-geography").nth(i).dispatchEvent("mouseover");
+    await expect(tip).toContainText("Swing");
+    await expect(tip).toContainText(/[DR]\+\d/);
+    await expect(tip).not.toContainText("Forecast");
+  }
+});
+
 test("on a 320px phone the swing view's extra Senate column fits without sideways scrolling", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 700 });
   await stubFeed(page);

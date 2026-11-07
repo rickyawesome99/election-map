@@ -10,7 +10,7 @@ import { useDarkMode } from "@/lib/useDarkMode";
 import { getRaceColor } from "@/lib/colorScale";
 import { settledParty } from "@/lib/resultsNeedle";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { fmtInt, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
+import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { lastName } from "@/lib/personName";
 import type { ResultsRow } from "@/components/results/ResultsPage";
@@ -26,12 +26,31 @@ const HOUSE_LINES_URL = "/congressional-districts-2026-lite-state-lines.json";
 
 /** status: called races in the party's Safe colour, races still counting in the leader's Likely
  *  colour (the convention of results maps); current: the counted margin on the rating scale;
- *  projected: the needle's margin on the same scale. */
-export type MapMode = "status" | "current" | "projected";
+ *  projected: the needle's margin on the same scale; swing: the counted margin less the 2024
+ *  presidential margin, as on the race page's map. */
+export type MapMode = "status" | "current" | "projected" | "swing";
+
+/** The 2024 presidential margin a race swings from, on the district's 2026 lines or the state's.
+ *  Null where 2026 isn't one side against a Republican (unopposed, same-party, D vs independent):
+ *  an independent in the D slot reads as the Democrat, one in the R slot has no 2024 counterpart. */
+function presBase(row: ResultsRow): number | null {
+  if (settledParty(row.prior) || row.prior.rep.party !== "R") return null;
+  return row.prior.past.find((r) => r.office === "President")?.margin ?? null;
+}
+
+/** The race's counted margin less its presidential margin (R-positive); null with no votes or no base. */
+function presSwing(row: ResultsRow): number | null {
+  const base = presBase(row);
+  return base == null || !row.live || row.live.total <= 0 || row.proj.currentMargin == null ? null : row.proj.currentMargin - base;
+}
 
 /** The fill for a race on the map, before any flip hatching; null with nothing counted. */
 function fillFor(row: ResultsRow, mode: MapMode): string | null {
   const { prior, live, proj } = row;
+  if (mode === "swing") {
+    const swing = presSwing(row);
+    return swing == null ? null : getRaceColor(swing);
+  }
   // An unopposed or same-party race is its party's from the start, in every mode, votes or none.
   const settled = settledParty(prior);
   if (settled) return getRaceColor(settled === "D" ? -20 : 20);
@@ -69,7 +88,7 @@ const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t
         if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID as string | undefined)) return null;
         const row = find(geo);
         const base = row ? fillFor(row, mode) ?? t.mapUnfilled : t.noElection;
-        const flipped = !!row && isCalledFlip(row);
+        const flipped = mode !== "swing" && !!row && isCalledFlip(row);
         const fill = flipped ? flipFill(base) : base;
         const isSel = !!row && selected === `${row.prior.office}-${row.prior.id}`;
         return (
@@ -128,7 +147,7 @@ export default function ResultsMap({ office, rows, mode, selected, onSelect }: {
         )}
       </div>
       <MapLegend mode={mode} office={office} t={t} />
-      {hover && <ResultTooltip row={hover} boxRef={tip.tooltipRef} />}
+      {hover && <ResultTooltip row={hover} mode={mode} boxRef={tip.tooltipRef} />}
     </div>
   );
 }
@@ -138,8 +157,9 @@ export default function ResultsMap({ office, rows, mode, selected, onSelect }: {
 // reporting, its projected margin with sigma, and the forecast.
 const tipLabel = "text-[10px] font-semibold uppercase tracking-[0.06em]";
 
-function ResultTooltip({ row, boxRef }: { row: ResultsRow; boxRef: (node: HTMLDivElement | null) => void }) {
+function ResultTooltip({ row, mode, boxRef }: { row: ResultsRow; mode: MapMode; boxRef: (node: HTMLDivElement | null) => void }) {
   const { prior, live, proj } = row;
+  const swing = mode === "swing" ? presSwing(row) : null;
   const office = prior.office === "house" ? "House" : prior.office === "senate" ? `Senate${prior.special ? " special" : ""}` : "Governor";
   const title = prior.office === "house" ? prior.label : `${prior.stateName} · ${office}`;
   const hasVotes = !!live && live.total > 0;
@@ -201,9 +221,19 @@ function ResultTooltip({ row, boxRef }: { row: ResultsRow; boxRef: (node: HTMLDi
         );
       })}
       <div className="mt-2 flex justify-between gap-2 border-t pt-2" style={{ borderColor: "var(--app-border)" }}>
-        {fig("Forecast", <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span>)}
-        {fig("Projected", <><span style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</span><span className="text-[10px] font-normal" style={veryMuted}> ±{proj.sigma.toFixed(1)}</span></>)}
-        {fig("Margin", <span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>)}
+        {swing != null ? (
+          <>
+            {fig("Margin", <span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>)}
+            {fig("Pres '24", <span style={{ color: marginSideColor(presBase(row)) }}>{fmtMargin(presBase(row))}</span>)}
+            {fig("Swing", <span style={{ color: marginSideColor(swing) }}>{fmtMargin(swing)}</span>)}
+          </>
+        ) : (
+          <>
+            {fig("Forecast", <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span>)}
+            {fig("Projected", <><span style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</span><span className="text-[10px] font-normal" style={veryMuted}> ±{proj.sigma.toFixed(1)}</span></>)}
+            {fig("Margin", <span style={{ color: callSideColor(proj.currentMargin, prior) }}>{fmtCall(proj.currentMargin, prior)}</span>)}
+          </>
+        )}
       </div>
       <div className="mt-1.5 flex justify-between gap-2 text-[10px] tabular-nums" style={veryMuted}>
         <span>{Math.round(proj.countedShare * 100)}% of expected vote in · feed {Math.round(live.percentReporting)}%</span>
@@ -217,10 +247,16 @@ function MapLegend({ mode, office, t }: { mode: MapMode; office: ResultsOffice; 
   const sw = (bg: string) => <i className="inline-block h-2.5 w-4" style={{ background: bg }} />;
   const item = (key: string, swatches: React.ReactNode, text: string) => <span key={key} className="flex items-center gap-1.5 text-[10px]" style={{ color: "var(--app-text-muted)" }}>{swatches}{text}</span>;
   const flip = item("flip", <i className="inline-block h-2.5 w-4" style={{ background: `repeating-linear-gradient(45deg, rgba(255,255,255,0.75) 0 1.5px, transparent 1.5px 4px), ${getRaceColor(-20)}` }} />, "Called flip");
-  const none = item("none", sw(t.mapUnfilled), "No votes yet");
+  const swing = mode === "swing";
+  const none = item("none", sw(t.mapUnfilled), swing ? "No votes, or no D vs R race" : "No votes yet");
   const noRace = item("noRace", sw(t.noElection), "No election");
   const items = mode === "status"
     ? [item("lead", <>{sw(getRaceColor(-10))}{sw(getRaceColor(10))}</>, "Leading"), item("called", <>{sw(getRaceColor(-20))}{sw(getRaceColor(20))}</>, "Called"), flip, none, ...(office === "house" ? [] : [noRace])]
-    : [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label, i) => item(label, sw(getRaceColor([-20, -10, -3, -0.5, 0.5, 3, 10, 20][i])), label.replace("Safe", "15+").replace("Likely", "5–15").replace("Lean", "1–5").replace("Tilt", "<1"))), flip, none, ...(office === "house" ? [] : [noRace])];
-  return <div className="flex flex-wrap gap-x-4 gap-y-2 border-t pt-3" style={{ borderColor: "var(--app-border)" }}>{items}</div>;
+    : [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label, i) => item(label, sw(getRaceColor([-20, -10, -3, -0.5, 0.5, 3, 10, 20][i])), label.replace("Safe", "15+").replace("Likely", "5–15").replace("Lean", "1–5").replace("Tilt", "<1"))), ...(swing ? [] : [flip]), none, ...(office === "house" ? [] : [noRace])];
+  return (
+    <div className="border-t pt-3" style={{ borderColor: "var(--app-border)" }}>
+      {swing && <p className="mb-2 text-[10px]" style={{ color: "var(--app-text-muted)" }}>Each {office === "house" ? "district's" : "state's"} counted margin minus its 2024 presidential margin{office === "house" ? " on the 2026 lines" : ""}, colored by size of the swing.</p>}
+      <div className="flex flex-wrap gap-x-4 gap-y-2">{items}</div>
+    </div>
+  );
 }

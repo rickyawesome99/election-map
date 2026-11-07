@@ -677,7 +677,7 @@ export default function ResultsPage() {
           <div className="flex flex-wrap items-center gap-1">
             <OfficeTabs office={office} setOffice={setOffice} />
             <Sep />
-            {(["status", "current", "projected"] as MapMode[]).map((m) => <Tab key={m} active={mapMode === m} onClick={() => setMapMode(m)}>{m === "status" ? "Status" : m === "current" ? "Margin" : "Projected margin"}</Tab>)}
+            {(["status", "current", "projected", "swing"] as MapMode[]).map((m) => <Tab key={m} active={mapMode === m} onClick={() => setMapMode(m)}>{m === "status" ? "Status" : m === "current" ? "Margin" : m === "projected" ? "Projected margin" : "Swing"}</Tab>)}
           </div>
         } />
         <ResultsMap office={office} rows={rowsByOffice[office]} mode={mapMode} selected={selected} onSelect={select} />

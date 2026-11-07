@@ -260,12 +260,25 @@ function priorFor(office: ResultsOffice, race: RaceForecast): RacePrior | null {
     forecast: { margin: f.margin, sigma: f.sigma, probability: f.probability, rating: f.rating, contest: f.contest, interval80: f.interval80 },
     pollsClose: { first: close?.first_close_et ?? "20:00", last: close?.last_close_et ?? close?.first_close_et ?? "20:00", note: close?.note || null },
     votes: cp?.votes ?? 0,
-    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin), area: countyArea(c.fips), ...swing.byFips.get(c.fips) })),
+    late: lateBaseline().get(`${office}|${race.id}|`),
+    counties: (cp?.counties ?? []).map((c) => ({ fips: c.fips, name: c.name, share: c.share, votes: c.votes, margin: c.margin, hold: lateBaseline().get(`${office}|${race.id}|${c.fips}`)?.hold, other: Math.round(((100 - c.demPct - c.repPct) || 0) * 100) / 100, tpl: c.tpl, benchmark: c.benchmark, ...countyLoadings(c.fips, c.margin), area: countyArea(c.fips), ...swing.byFips.get(c.fips) })),
     past,
     seatSwingBase: seatSwingBase(office, race, f.contest === "contested", past),
     swingBase: swing.swingBase,
     otherSenateBase: swing.otherSenateBase,
   };
+}
+
+type LateRow = { hold: { pct: number; total: number }; leanTotal: number; leanNetR: number };
+let lateCache: Map<string, LateRow> | null = null;
+/** Keyed office|race|fips, with no fips for the race's own row. Empty until the baseline is built
+ *  (scripts/build-results-late-baseline.ts reads these priors). */
+function lateBaseline(): Map<string, LateRow> {
+  if (lateCache) return lateCache;
+  let rows: Record<string, string>[] = [];
+  try { rows = parseCsv(readFileSync(join(process.cwd(), "data-entry", "results_2026_late_baseline.csv"), "utf8")); } catch { rows = []; }
+  lateCache = new Map(rows.map((r) => [`${r.office}|${r.race_id}|${r.fips}`, { hold: { pct: Number(r.pct), total: Number(r.total) }, leanTotal: Number(r.lean_total), leanNetR: Number(r.lean_net_r) }]));
+  return lateCache;
 }
 
 const DATA: Record<ResultsOffice, RaceForecast[]> = { senate: senateData, governor: governorData, house: houseData };

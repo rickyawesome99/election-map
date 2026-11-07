@@ -8,7 +8,8 @@
 // margins in points of all votes). dem_/rep_ votes are the race's two slots, as on the Results page:
 // a multi-field race's are party blocs (AK and ME first choices, the Louisiana jungle), and in a
 // same-party contest both are one party's. Sum party_d_votes / party_r_votes for a popular vote;
-// `candidates` has everyone. In the
+// `candidates` has everyone. feed_pct_reporting is the percent the needle reads, which is held at the
+// feed's old figure until votes arrive (lib/resultsFeed.ts heldPct), so a held row isn't what the feed sent. In the
 // county file blank votes mean the feed sent no row for that county, 0 means it sent a zero, and
 // blank forecast columns mark a row the feed sent that the county projection lacks.
 //

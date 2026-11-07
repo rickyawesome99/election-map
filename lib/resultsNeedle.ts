@@ -28,6 +28,9 @@
 // implied final is o + s (1 − f) and its remainder o + s, so the needle stops chasing the mirage.
 // A county the feed marks 100% reported, with its count near its prior expectation, is done; a
 // county the feed reports nothing for is done at NEAR_DONE of its corrected expectation. Without county detail the same arithmetic runs on the race's one total.
+// Since 2026-11-06 the late count (LATE_COUNT_FROM) reads two things differently: the feed's percents
+// are held at their old figures until votes arrive (lib/resultsFeed.ts), and the skew s is the race's
+// late lean (lateLean), since by then the votes left run more Democratic than the count, not less.
 //
 // The feed's race-level "percent reporting" is precinct-based and runs far ahead of the vote (in
 // the real 2025 Virginia snapshots 70% reporting was 42% of the final vote), so it is not the
@@ -92,6 +95,21 @@ export const MAX_EXTRA_SHARE = 0.25;
  *  prior for a race's shared terms, times this, is what the fit can take off the race's sigma. Below 1
  *  because the fit also explains county-prior noise that is not the race's own miss. */
 export const NIGHT_SHARE = 0.5;
+
+/** From this time the race's own late votes replace the night's early-vote skew, and the feed's percents
+ *  are held (lib/resultsFeed.ts). Just after the archive's last snapshot with the feed's old percents,
+ *  so replays of the night are untouched. */
+export const LATE_COUNT_FROM = Date.parse("2026-11-06T05:01:00Z");
+/** A percent below its old figure stands once the count has grown this much. Rows that fell and grew
+ *  under 2% averaged about 90% in, with no votes to match; at 5%+ the low percents had real votes behind them. */
+export const PCT_HOLD_GROWTH = 0.02;
+/** What the votes left run against the count before a race has late votes of its own, in points,
+ *  negative = more Democratic. Median over 193 contested races Nov 5–7 2026 −8.8 (vote-weighted −6.3);
+ *  Alaska's 2024 late count, about −7.5. */
+export const LATE_LEAN_PRIOR = -8;
+/** Votes of the race's own late count that weigh as much as LATE_LEAN_PRIOR. Predicting Nov 6–7 from
+ *  Nov 5–6: error 17.3 with no term, 14.5 on the prior alone, 13.4 at this value. */
+export const LATE_LEAN_K = 30_000;
 
 /** The tunable constants, overridable for the backtests (scripts/resultsNeedleBacktest.ts, scripts/resultsNightBacktest.ts). */
 export type NeedleParams = { kSwing: number; kTurnout: number; sigmaCounty: number; nearDone: number; feedDoneShare: number; sigmaFloor: number; ownExp: number; sigmaLate: number; maxExtraShare: number; nightShare: number };
@@ -250,6 +268,25 @@ function countyPass(prior: RacePrior, live: LiveRace, raceDone: boolean, P: Need
 export const FEED_DONE_MIN_SHARE = 0.5;
 const isRaceDone = (prior: RacePrior, live: LiveRace) => (live.percentReporting >= 100 || live.called && live.percentReporting >= 99) && live.total >= FEED_DONE_MIN_SHARE * prior.votes;
 
+const inLateCount = (prior: RacePrior, live: LiveRace) => !!prior.late && live.fetchedAt >= LATE_COUNT_FROM;
+
+/** The late count's early-vote slot: the skew the votes left carry against the count (o + value), from
+ *  how the race's votes since the baseline ran against its count then, shrunk to LATE_LEAN_PRIOR. On
+ *  election night the skew said later votes run more Republican; days on, the mail and provisionals run
+ *  more Democratic, so the night's figure is the wrong way round. Null before the late count. */
+function lateLean(prior: RacePrior, live: LiveRace): number | null {
+  if (!inLateCount(prior, live)) return null;
+  const { leanTotal, leanNetR } = prior.late!;
+  const added = Math.max(0, live.total - leanTotal);
+  if (!added || !leanTotal) return LATE_LEAN_PRIOR;
+  const lateMargin = ((live.rep - live.dem - leanNetR) / added) * 100;
+  return (added * (lateMargin - (leanNetR / leanTotal) * 100) + LATE_LEAN_K * LATE_LEAN_PRIOR) / (added + LATE_LEAN_K);
+}
+
+/** A complete race's sigma floor is for a count that is over: in the late count only a call says so,
+ *  since provisionals and late mail land after the feed's 100%. */
+const sigmaFloorFor = (prior: RacePrior, live: LiveRace, raceDone: boolean, P: NeedleParams) => (raceDone && (live.called || !inLateCount(prior, live)) ? SIGMA_FLOOR_DONE : P.sigmaFloor);
+
 /** A race's counties as observations for the night fit (lib/resultsNight.ts): every prior county with
  *  votes in, its completeness and its swing against the prior. Empty for decided races and races on their topline. */
 export function nightObservations(prior: RacePrior, live: LiveRace | null, P: NeedleParams = DEFAULT_PARAMS): NightObservation[] {
@@ -285,7 +322,9 @@ function settle(prior: RacePrior, p: RaceProjection): RaceProjection {
 function projectCounted(prior: RacePrior, live: LiveRace | null, P: NeedleParams, fit: NightFit | null): RaceProjection {
   const decided = prior.forecast.contest !== "contested";
   const shift = fit && !decided ? fit.shiftFor(prior) : ZERO_SHIFT;
-  const mirage = fit && !decided ? fit.mirageFor(prior.state) : NO_MIRAGE;
+  const nightMirage = fit && !decided ? fit.mirageFor(prior.state) : NO_MIRAGE;
+  const late = live && !decided ? lateLean(prior, live) : null;
+  const mirage = late != null ? { value: late, se: nightMirage.se } : nightMirage;
   if (!live || live.total <= 0) return live ? lock(emptyProjection(prior, shift, P), live, prior) : emptyProjection(prior, shift, P);
   const raceDone = isRaceDone(prior, live);
   const E = Math.max(1, prior.votes);
@@ -332,7 +371,7 @@ function projectCounted(prior: RacePrior, live: LiveRace | null, P: NeedleParams
   const lateSigma = P.sigmaLate * uncounted;
   // The early-vote skew's own uncertainty, on the uncounted part of the part-counted counties.
   const mirageSigma = total > 0 && !raceDone ? mirage.se * partial / total : 0;
-  const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(sharedSigma * sharedSigma + countySigma * countySigma + lateSigma * lateSigma + mirageSigma * mirageSigma));
+  const sigma = Math.max(sigmaFloorFor(prior, live, raceDone, P), Math.sqrt(sharedSigma * sharedSigma + countySigma * countySigma + lateSigma * lateSigma + mirageSigma * mirageSigma));
   const probD = decided ? prior.forecast.probability : normalCdf(-margin / sigma);
   return lock({
     tier: "county", counted: Math.round(counted), projectedTotal: Math.round(total), countedShare: total > 0 ? counted / total : 0,
@@ -359,7 +398,7 @@ function projectTopline(prior: RacePrior, live: LiveRace, raceDone: boolean, kS:
   const margin = f < MIN_SHARE ? m : (v * o + (T - v) * clamp(remainder, -100, 100)) / T;
   const uncounted = clamp((T - v) / T, 0, 1);
   const sharedSigma = Math.sqrt((sigmaParts.own * shrink) ** 2 + sigmaParts.shared ** 2) * uncounted;
-  const sigma = Math.max(raceDone ? SIGMA_FLOOR_DONE : P.sigmaFloor, Math.sqrt(sharedSigma * sharedSigma + Math.pow(P.sigmaCounty * uncounted * 0.5, 2) + Math.pow(P.sigmaLate * uncounted, 2) + Math.pow(mirage.se * uncounted, 2)));
+  const sigma = Math.max(sigmaFloorFor(prior, live, raceDone, P), Math.sqrt(sharedSigma * sharedSigma + Math.pow(P.sigmaCounty * uncounted * 0.5, 2) + Math.pow(P.sigmaLate * uncounted, 2) + Math.pow(mirage.se * uncounted, 2)));
   const probD = decided ? prior.forecast.probability : normalCdf(-margin / sigma);
   return {
     tier: "topline", counted: v, projectedTotal: Math.round(T), countedShare: T > 0 ? v / T : 0, currentMargin: marginOf(live.dem, live.rep, live.total),
