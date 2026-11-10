@@ -26,7 +26,9 @@ const PRIOR_CONTROL: Record<number, Record<string, "D" | "R" | null>> = {
 };
 
 const num = (v: string | undefined) => Number((v ?? "").replace(/,/g, "")) || 0;
-const read = (file: string) => parseCsv(readFileSync(join(process.cwd(), "data-entry", file), "utf8"));
+// Each path spelled out at its call: Vercel's file tracing follows only a literal
+// join(process.cwd(), ...), and a computed file name ships all of data-entry/ (5 GB) with the function.
+const read = (path: string) => parseCsv(readFileSync(path, "utf8"));
 
 type Slots = { dem: { name: string; party: Party }; rep: { name: string; party: Party } };
 
@@ -86,7 +88,7 @@ function href(office: PastElectionOffice, ids: string[], year: number): string |
  *  latest election the file has on both), or with no D vs R race before, the presidential margin on
  *  the new lines alone. */
 function houseBaselines(year: number, house: Record<string, string>[]): Map<string, NonNullable<PostElectionRow["housePrev"]>> {
-  const vintage = read("pres_by_boundary_vintage.csv");
+  const vintage = read(join(process.cwd(), "data-entry", "pres_by_boundary_vintage.csv"));
   const presYears = (boundary: number) => new Set(vintage.filter((r) => num(r.boundary_year) === boundary).map((r) => num(r.pres_year)));
   const onBoth = [...presYears(year)].filter((p) => presYears(year - 2).has(p));
   const presYear = onBoth.length ? Math.max(...onBoth) : null;
@@ -106,7 +108,7 @@ function houseBaselines(year: number, house: Record<string, string>[]): Map<stri
 
 function legislature(year: number, abbrOf: Map<string, string>, governors: Record<string, string>[]): Record<string, LegChamberResult[]> {
   const byChamber = new Map<string, Record<string, string>[]>();
-  for (const r of read("state_leg.csv")) {
+  for (const r of read(join(process.cwd(), "data-entry", "state_leg.csv"))) {
     const abbr = abbrOf.get(r.state_name);
     if (!abbr || !r.total_seats || num(r.year) > year) continue;
     const k = `${abbr}-${r.type === "Senate" ? "senate" : "house"}`;
@@ -142,7 +144,7 @@ function legislature(year: number, abbrOf: Map<string, string>, governors: Recor
 
 export function readPastPostElection(year: number): PastPostElection {
   // The House file names the 50 states plainly (the presidential one has "Nebraska AL").
-  const house = read("house_past_results.csv");
+  const house = read(join(process.cwd(), "data-entry", "house_past_results.csv"));
   const stateName = new Map(house.map((r) => [r.state_abbr, r.state_name]));
   const abbrOf = new Map([...stateName].map(([abbr, name]) => [name, abbr]));
   const rows: PostElectionRow[] = [];
@@ -158,7 +160,7 @@ export function readPastPostElection(year: number): PastPostElection {
       href("house", [r.district_name.toLowerCase(), r.district_name.replace(/-01$/, "-AL").toLowerCase()], year), housePrev));
   }
 
-  const senate = read("senate_past_results.csv");
+  const senate = read(join(process.cwd(), "data-entry", "senate_past_results.csv"));
   for (const r of senate) {
     if (num(r.year) !== year || !stateName.has(r.state_abbr)) continue;
     const special = r.type === "Special";
@@ -167,13 +169,13 @@ export function readPastPostElection(year: number): PastPostElection {
     rows.push(row("senate", `${abbr}${special ? "-S" : ""}`, abbr, abbr, stateName.get(abbr)!, special, r, previous(senate.filter((x) => x.state_abbr === abbr && x.class === r.class), year), href("senate", ids, year)));
   }
 
-  const governors = read("governor_past_results.csv");
+  const governors = read(join(process.cwd(), "data-entry", "governor_past_results.csv"));
   for (const r of governors) {
     if (num(r.year) !== year || !stateName.has(r.state_abbr)) continue;
     rows.push(row("governor", r.state_abbr, r.state_abbr, r.state_abbr, stateName.get(r.state_abbr)!, false, r, previous(governors.filter((x) => x.state_abbr === r.state_abbr), year), href("governor", [r.state_abbr.toLowerCase()], year)));
   }
 
-  const president = read("president_past_results.csv");
+  const president = read(join(process.cwd(), "data-entry", "president_past_results.csv"));
   for (const r of president) {
     if (num(r.year) !== year || !stateName.has(r.state_abbr)) continue;
     rows.push(row("president", r.state_abbr, r.state_abbr, r.state_abbr, stateName.get(r.state_abbr)!, false, r, previous(president.filter((x) => x.state_abbr === r.state_abbr), year), href("president", [r.state_abbr.toLowerCase()], year)));
