@@ -11,6 +11,7 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { fmt1, marginColor } from "./format";
+import { startPendingNav } from "@/lib/navPending";
 
 // The hub's choropleth: states or 2026 House districts, filled by any R-positive value (the
 // blended TPL, or one cycle's WRS under the year lens). Click opens a small panel with a link
@@ -92,7 +93,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const selected = selectedKey === undefined ? ownSelected : rows.find((r) => r.key === selectedKey) ?? null;
   const router = useRouter();
   const setSelected = (row: MapRow | null) => {
-    if (navigateOnClick && row) { router.push(row.href); return; }
+    if (navigateOnClick && row) { startPendingNav(row.href); router.push(row.href); return; }
     setSelectedState(row); onSelect?.(row);
   };
   const { onMouseMove: onTipMove, tooltipRef } = useMapTooltip(14, 8);

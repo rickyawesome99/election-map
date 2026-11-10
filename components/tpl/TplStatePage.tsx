@@ -15,6 +15,7 @@ import { MATRIX_ROWS, OFFICE_LABELS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, 
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut, CandidateLink, M, StatRow, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { startPendingNav } from "@/lib/navPending";
 
 // One state's page: hero, the year × office matrix with the races behind the selected cell,
 // the result ledger, the District TPL section (its own matrix and table for the selected
@@ -97,7 +98,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 pt-3 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
             <SeatCrumbs crumbs={[{ label: "TPL", href: "/model" }, { label: data.name }]} />
             <div className="flex items-center gap-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
-              <select aria-label="State" value={data.id} onChange={(e) => router.push(stateHref(e.target.value))} className="cursor-pointer rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
+              <select aria-label="State" value={data.id} onChange={(e) => { const href = stateHref(e.target.value); startPendingNav(href); router.push(href); }} className="cursor-pointer rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
                 {[...statesData].sort((a, b) => a.name.localeCompare(b.name)).map((s) => <option key={s.abbr} value={s.id}>{s.abbr} — {s.name}</option>)}
               </select>
               <Link href="/analysis/internal-methodology/state-tpl" className="hidden whitespace-nowrap hover:underline sm:inline" prefetch={false}>How State TPL works <ArrowOut /></Link>

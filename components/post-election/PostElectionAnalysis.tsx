@@ -107,7 +107,10 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
   const at = years.indexOf(year);
   const older = years[at + 1] ?? null, newer = at > 0 ? years[at - 1] : null;
   const pickYear = (y: number) => {
-    if (y !== year) router.push(`${yearPath(y, years[0])}${window.location.hash}`, { scroll: false });
+    if (y === year) return;
+    const href = `${yearPath(y, years[0])}${window.location.hash}`;
+    startPendingNav(href);
+    router.push(href, { scroll: false });
   };
 
   return (

@@ -6,7 +6,7 @@ import AppHeader from "./AppHeader";
 import SubNavBar, { NavTabs } from "./SubNavBar";
 import PendingPage from "./PendingPage";
 import { refreshSafariChrome, syncThemeColor, useDarkMode } from "@/lib/useDarkMode";
-import { pendingKindFor, setPendingNav, usePendingNav } from "@/lib/navPending";
+import { navRendered, startPendingNav, setPendingNav, usePendingNav } from "@/lib/navPending";
 
 export default function AppShell() {
   const pathname = usePathname();
@@ -14,10 +14,11 @@ export default function AppShell() {
   const pending = usePendingNav();
 
   // The new page has landed (or a back/forward moved elsewhere): drop the loading cover.
-  useEffect(() => { setPendingNav(null); }, [pathname]);
+  useEffect(() => { navRendered(); }, [pathname]);
 
   // Any in-site link to a page with a placeholder layout (the top tabs, race, past result,
-  // chamber, state, candidate) puts that placeholder up on click, wherever the link sits.
+  // chamber, state, candidate) puts that placeholder up on click, wherever the link sits, and
+  // every in-site link's navigation is watched for a stall (lib/navPending).
   // Capture phase, so it runs before handlers that stop propagation.
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -25,12 +26,13 @@ export default function AppShell() {
       const a = (e.target as Element | null)?.closest?.("a[href]");
       if (!(a instanceof HTMLAnchorElement) || (a.target && a.target !== "_self") || a.hasAttribute("download")) return;
       const url = new URL(a.href, window.location.href);
-      if (url.origin !== window.location.origin || url.pathname === window.location.pathname) return;
-      const kind = pendingKindFor(url.pathname);
-      if (kind) setPendingNav({ kind, path: url.pathname, href: url.href });
+      startPendingNav(url.href);
     };
+    // Back or Forward: wherever it lands, the click before it is no longer where the reader is going.
+    const onPopState = () => setPendingNav(null);
     document.addEventListener("click", onClick, true);
-    return () => document.removeEventListener("click", onClick, true);
+    window.addEventListener("popstate", onPopState);
+    return () => { document.removeEventListener("click", onClick, true); window.removeEventListener("popstate", onPopState); };
   }, []);
 
   // The sticky header's height, so the loading placeholder starts where page content does.
