@@ -5,8 +5,7 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { AXIS_TICKS, Mark, pctOf, tickLabel } from "@/components/editorial/editorialAxis";
 import { MarginReadout, SegmentBar } from "@/components/editorial/EditorialReadouts";
 import { StandfirstHeader } from "@/components/StandfirstHeader";
-import { governorData, senateData, type RaceForecast, type RaceType } from "@/data/forecastData";
-import { THREE_WAY_RACES } from "@/data/raceEligibility";
+import type { RaceType } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { EDITORIAL_AS_OF, EDITORIAL_GENERIC_BALLOT as GB, EDITORIAL_GOVERNOR, EDITORIAL_HOUSE as HOUSE, EDITORIAL_SENATE, EDITORIAL_SENATE_COMPOSITION as SENATE_COMPOSITION, EDITORIAL_GOVERNOR_COMPOSITION as GOVERNOR_COMPOSITION, type EditorialRace } from "@/data/editorialPrediction";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -84,23 +83,15 @@ function FightCard({ fighters, stateName }: { fighters: Fighter[]; stateName: st
 }
 
 // ── Races ─────────────────────────────────────────────────────────────────────
-type Resolved = EditorialRace & { anchor: string; abbr: string; stateName: string; href: string; fighters: Fighter[] };
+type Resolved = Omit<EditorialRace, "fighters"> & { anchor: string; abbr: string; stateName: string; href: string; fighters: Fighter[] };
 
-function resolve(raceType: RaceType, data: RaceForecast[], races: EditorialRace[]): Resolved[] {
-  const office = raceType === "senate" ? "S" : "G";
+// Everything shown comes from the frozen entry; only state names and links are looked up.
+function resolve(raceType: RaceType, races: EditorialRace[]): Resolved[] {
   return races.map((e) => {
-    const race = data.find((r) => r.id === e.id);
-    if (!race?.candidates) throw new Error(`editorialPrediction: no ${raceType} race ${e.id} with candidates`);
     const abbr = e.id.replace(/-\d+$/, "");
-    const stateName = statesData.find((s) => s.abbr === abbr)?.name ?? race.state;
-    const third = THREE_WAY_RACES[`${office}:${e.id}`];
-    const demSide = [race.candidates.dem, ...(third ? [{ name: third.name, party: third.party }] : [])];
-    const fighters: Fighter[] = [
-      // A third candidate sits on the side of the party they belong to, outside the slot they share it with.
-      ...[...demSide].reverse().map((c, i, arr) => ({ ...c, winner: e.pick < 0 && i === arr.length - 1 })),
-      { ...race.candidates.rep, winner: e.pick > 0 },
-    ].map((c) => ({ name: c.name, party: c.party, winner: c.winner, photo: candidatePhoto(c.name, abbr), href: candidatePageHref(c.name, abbr) }));
-    return { ...e, abbr, stateName, anchor: `${raceType}-${abbr.toLowerCase()}`, href: raceHref(raceType, race), fighters };
+    const stateName = statesData.find((s) => s.abbr === abbr)?.name ?? abbr;
+    const fighters: Fighter[] = e.fighters.map((c) => ({ name: c.name, party: c.party, winner: !!c.winner, photo: candidatePhoto(c.name, abbr), href: candidatePageHref(c.name, abbr) }));
+    return { ...e, abbr, stateName, anchor: `${raceType}-${abbr.toLowerCase()}`, href: raceHref(raceType, { name: e.id, id: e.id }), fighters };
   });
 }
 
@@ -151,7 +142,7 @@ function Composition({ dem, rep, line, pill, tips, unit = "seats" }: { dem: numb
   return (
     <>
       <div className="mt-6 flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
-        <div className="flex items-baseline gap-3 font-black tabular-nums leading-none" style={{ ...SERIF, fontSize: "clamp(3.2rem, 12vw, 6rem)", letterSpacing: "-0.04em" }}>
+        <div className="flex items-baseline gap-3 font-black tabular-nums leading-none" style={{ ...SERIF, fontSize: "clamp(2.2rem, 7vw, 3.4rem)", letterSpacing: "-0.04em" }}>
           <span style={{ color: "var(--party-dem)" }}>{dem}<span className="ml-1 text-[0.35em] font-bold">D</span></span>
           <span className="text-[0.5em]" style={{ color: "var(--app-text-very-muted)" }}>–</span>
           <span style={{ color: "var(--party-rep)" }}>{rep}<span className="ml-1 text-[0.35em] font-bold">R</span></span>
@@ -159,7 +150,7 @@ function Composition({ dem, rep, line, pill, tips, unit = "seats" }: { dem: numb
         {pill && <span className="mb-2 rounded-full px-3 py-1 text-[12px] font-extrabold uppercase tracking-wider text-white" style={{ background: "var(--party-dem)" }}>{pill}</span>}
       </div>
       <div className="mt-4">
-        <SegmentBar height={24} ariaLabel={`${dem} Democratic ${unit}, ${rep} Republican ${unit}`} marker={{ pct: (line / total) * 100, label: String(line) }} segments={[
+        <SegmentBar height={14} ariaLabel={`${dem} Democratic ${unit}, ${rep} Republican ${unit}`} marker={{ pct: (line / total) * 100, label: String(line) }} segments={[
           { key: "dem", width: (dem / total) * 100, color: "var(--party-dem)", tip: tips?.[0] ?? `Democrats ${dem}` },
           { key: "rep", width: (rep / total) * 100, color: "var(--party-rep)", tip: tips?.[1] ?? `Republicans ${rep}` },
         ]} />
@@ -170,16 +161,16 @@ function Composition({ dem, rep, line, pill, tips, unit = "seats" }: { dem: numb
 
 function SectionTitle({ id, kicker, title }: { id: string; kicker: string; title: string }) {
   return (
-    <div id={id} className="scroll-mt-28 pt-16">
+    <div id={id} className="scroll-mt-28 pt-12">
       <div className="text-[11px] font-bold uppercase tracking-[0.16em]" style={{ color: "var(--app-text-muted)" }}>{kicker}</div>
-      <h2 className="mt-1 pb-3 font-bold leading-[0.95]" style={{ ...SERIF, fontSize: "clamp(2rem, 6vw, 3.4rem)", letterSpacing: "-0.025em", borderBottom: "2px solid var(--app-text-primary)" }}>{title}</h2>
+      <h2 className="mt-1 pb-3 font-bold leading-[0.95]" style={{ ...SERIF, fontSize: "clamp(1.6rem, 4vw, 2.2rem)", letterSpacing: "-0.025em", borderBottom: "2px solid var(--app-text-primary)" }}>{title}</h2>
     </div>
   );
 }
 
 export default function EditorialPredictionPage() {
-  const senate = resolve("senate", senateData, EDITORIAL_SENATE);
-  const governor = resolve("governor", governorData, EDITORIAL_GOVERNOR);
+  const senate = resolve("senate", EDITORIAL_SENATE);
+  const governor = resolve("governor", EDITORIAL_GOVERNOR);
   const jump = [["generic-ballot", "Generic Ballot"], ["house", "House"], ["senate", "Senate"], ["governor", "Governor"]];
 
   return (
@@ -197,11 +188,11 @@ export default function EditorialPredictionPage() {
           ))}
         </nav>
 
-        <div className="mt-8 font-black leading-none tabular-nums" aria-hidden style={{ ...SERIF, fontSize: "clamp(5rem, 22vw, 11rem)", letterSpacing: "-0.05em", background: "linear-gradient(100deg, var(--party-dem) 20%, var(--party-rep) 85%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>2026</div>
+        <div className="mt-8 font-black leading-none tabular-nums" aria-hidden style={{ ...SERIF, fontSize: "clamp(3rem, 12vw, 5.5rem)", letterSpacing: "-0.05em", background: "linear-gradient(100deg, var(--party-dem) 20%, var(--party-rep) 85%)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent" }}>2026</div>
 
         {/* ── Generic ballot ── */}
         <SectionTitle id="generic-ballot" kicker="The national environment" title="Generic Ballot" />
-        <div className="mt-6"><MarginReadout model={GB.model} rcp={GB.rcp} pick={GB.pick} modelHref="/analysis/generic-ballot" modelLabel="Model final" /></div>
+        <div className="mt-6"><MarginReadout model={GB.model} rcp={GB.rcp} pick={GB.pick} modelHref="/analysis/generic-ballot" modelLabel="Model final" height={24} /></div>
         <div className="mt-10">
           <LedgerSectionHead label="Trump approval · RCP" meta={<b className="tabular-nums" style={{ color: "var(--party-dem)" }}>{GB.approval.net}</b>} />
           <div className="flex items-end justify-between gap-4">

@@ -1,4 +1,11 @@
-import type { LiveRace, PriorCandidate, RacePrior, RaceProjection } from "@/lib/resultsTypes";
+import type { LiveRace, PriorCandidate, RacePrior, RaceProjection, ResultsOffice } from "@/lib/resultsTypes";
+
+/** The 2026 page's offices, plus the president on a presidential year's page. */
+export type PostElectionOffice = ResultsOffice | "president";
+
+/** Past years with a page (lib/pastPostElection.ts), newest first. Each needs its offices in the
+ *  past-results files and its legislatures in state_leg.csv. */
+export const PAST_POST_ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
 
 export type LegSeats = { dem: number; rep: number; oth: number };
 
@@ -20,18 +27,23 @@ export type LegChamberResult = {
   incumbentGovernor: string;
   /** Who ran the chamber going into the election; null for a tie or a bipartisan coalition. */
   priorControl: "D" | "R" | null;
+  /** A past year's chamber with no earlier election on file: no net change or change of control to show. */
+  noPrior?: boolean;
 };
 
 /** One race on /analysis/post-election, as lib/resultsSnapshot.ts reads it from the saved CSV. */
 export type PostElectionRow = {
-  prior: Pick<RacePrior, "office" | "id" | "label" | "state" | "stateName" | "special" | "seatParty"> & {
+  prior: Pick<RacePrior, "id" | "label" | "state" | "stateName" | "special" | "seatParty"> & {
+    office: PostElectionOffice;
     dem: Pick<PriorCandidate, "name" | "party" | "incumbent">;
     rep: Pick<PriorCandidate, "name" | "party" | "incumbent">;
     forecast: Pick<RacePrior["forecast"], "margin" | "rating" | "contest">;
   };
   live: Pick<LiveRace, "dem" | "rep" | "oth" | "total"> | null;
   proj: Pick<RaceProjection, "locked" | "winner" | "currentMargin" | "margin" | "countedShare" | "projectedTotal">;
-  /** House: the district's 2024 margin (R-positive) the card's swing is measured from; `estimated`
-   *  when its lines moved for 2026. Null when either year has no D vs R race to compare. */
-  house24: { margin: number; estimated: boolean } | null;
+  /** House: the district's margin two years before (R-positive) the card's swing is measured from;
+   *  `estimated` when its lines moved since. Null when either year has no D vs R race to compare. */
+  housePrev: { margin: number; estimated: boolean } | null;
+  /** A past year's race (lib/pastPostElection.ts): its past-election page, and the seat's previous result. */
+  past?: { href: string | null; prev: { year: number; margin: number } | null };
 };

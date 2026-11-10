@@ -4,7 +4,7 @@ import { join } from "node:path";
 import { classifyEligibility } from "@/data/raceEligibility";
 import { parseCsv } from "@/lib/turnout";
 import type { PostElectionRow } from "@/lib/postElectionTypes";
-import type { Party, ResultsOffice } from "@/lib/resultsTypes";
+import type { Party } from "@/lib/resultsTypes";
 
 // The saved results behind /analysis/post-election: data-entry/results_2026_seats.csv, written by
 // hand-run `npm run results-snapshot` (scripts/build-results-snapshot.ts). Read at build; nothing
@@ -16,7 +16,7 @@ const num = (v: string) => Number(v) || 0;
 const party = (v: string) => (v || null) as Party | null;
 
 /** "Evan Low (D)": a slot's candidate carrying their true party, as house_past_results.csv writes it. */
-function slotCandidate(cell: string) {
+export function slotCandidate(cell: string) {
   const m = /^(.*) \(([A-Z])\)$/.exec(cell);
   return m ? { name: m[1], party: m[2] } : { name: cell || undefined, party: undefined };
 }
@@ -26,11 +26,11 @@ function slotCandidate(cell: string) {
  *  presidential margin between the maps (the shift boundaryStripFor applies in lib/tplCompute.ts), or
  *  with no D vs R race in 2024, the presidential margin on the new lines alone. A seat on unmoved
  *  lines with no such race has nothing to compare. */
-export function house2024Baselines(): Map<string, NonNullable<PostElectionRow["house24"]>> {
+export function house2024Baselines(): Map<string, NonNullable<PostElectionRow["housePrev"]>> {
   const redrawn = new Set(parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_redistrict.csv"), "utf8")).filter((r) => r.new_26 === "Yes").map((r) => r.district_name));
   const presOld = new Map(parseCsv(readFileSync(join(process.cwd(), "data-entry", "pres_by_boundary_vintage.csv"), "utf8")).filter((r) => r.boundary_year === "2024" && r.pres_year === "2024").map((r) => [r.district_name, { margin: num(r.margin), total: num(r.total_votes) }]));
   const presNew = new Map(parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_pres_2026_dist.csv"), "utf8")).map((r) => [r.code, { margin: ((num(r.pres24_rep) - num(r.pres24_dem)) / num(r.pres24_total)) * 100, total: num(r.pres24_total) }]));
-  const out = new Map<string, NonNullable<PostElectionRow["house24"]>>();
+  const out = new Map<string, NonNullable<PostElectionRow["housePrev"]>>();
   for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8"))) {
     if (r.year !== "2024") continue;
     const dem = slotCandidate(r.dem_candidate), rep = slotCandidate(r.rep_candidate);
@@ -44,14 +44,14 @@ export function house2024Baselines(): Map<string, NonNullable<PostElectionRow["h
   return out;
 }
 
-/** Each state's 2024 House popular vote on every seat, unopposed ones included: margin over all votes,
- *  R-positive, as the 2026 card reads. A same-party final's second finalist sits in the other slot,
+/** Each state's House popular vote in a year on every seat, unopposed ones included: margin over all
+ *  votes, R-positive, as the cards read. A same-party final's second finalist sits in the other slot,
  *  so those votes go to their true party; an independent standing in a slot counts for that slot's
- *  party, as partyVotes does for 2026. */
-export function house2024PopularVote(): Record<string, number> {
+ *  party, as partyVotes does. */
+function houseVotesByState(year: number) {
   const votes = new Map<string, { dem: number; rep: number; total: number }>();
   for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8"))) {
-    if (r.year !== "2024") continue;
+    if (r.year !== String(year)) continue;
     const v = votes.get(r.state_abbr) ?? { dem: 0, rep: 0, total: 0 };
     v.total += num(r.total_votes);
     if (slotCandidate(r.dem_candidate).party === "R") v.rep += num(r.dem_votes);
@@ -60,7 +60,18 @@ export function house2024PopularVote(): Record<string, number> {
     else v.rep += num(r.rep_votes);
     votes.set(r.state_abbr, v);
   }
-  return Object.fromEntries([...votes].map(([state, { dem, rep, total }]) => [state, ((rep - dem) / total) * 100]));
+  return votes;
+}
+
+export function houseStatePopularVote(year: number): Record<string, number> {
+  return Object.fromEntries([...houseVotesByState(year)].map(([state, { dem, rep, total }]) => [state, ((rep - dem) / total) * 100]));
+}
+
+/** The national House popular vote in a year, summed the same way; null for a year not in the file. */
+export function houseNationalPopularVote(year: number): number | null {
+  let dem = 0, rep = 0, total = 0;
+  for (const v of houseVotesByState(year).values()) { dem += v.dem; rep += v.rep; total += v.total; }
+  return total > 0 ? ((rep - dem) / total) * 100 : null;
 }
 
 export function readResultsSnapshot(): ResultsSnapshot {
@@ -72,7 +83,7 @@ export function readResultsSnapshot(): ResultsSnapshot {
     const dem = num(r.dem_votes), rep = num(r.rep_votes), oth = num(r.other_votes), total = num(r.total_votes);
     return {
       prior: {
-        office: r.office as ResultsOffice, id: r.race_id, label: r.label, state: r.state, stateName: r.state_name, special: r.special === "1", seatParty: party(r.seat_party),
+        office: r.office as PostElectionRow["prior"]["office"], id: r.race_id, label: r.label, state: r.state, stateName: r.state_name, special: r.special === "1", seatParty: party(r.seat_party),
         dem: { name: r.dem_name, party: r.dem_party as Party, incumbent: r.dem_incumbent === "1" },
         rep: { name: r.rep_name, party: r.rep_party as Party, incumbent: r.rep_incumbent === "1" },
         forecast: { margin: num(r.forecast_margin), rating: r.forecast_rating, contest: r.contest as PostElectionRow["prior"]["forecast"]["contest"] },
@@ -83,7 +94,7 @@ export function readResultsSnapshot(): ResultsSnapshot {
         currentMargin: total > 0 ? ((rep - dem) / total) * 100 : null,
         margin: num(r.projected_margin), countedShare: num(r.counted_share), projectedTotal: num(r.projected_total),
       },
-      house24: r.office === "house" && r.contest === "contested" && r.dem_party === "D" && r.rep_party === "R" ? house24.get(r.label) ?? null : null,
+      housePrev: r.office === "house" && r.contest === "contested" && r.dem_party === "D" && r.rep_party === "R" ? house24.get(r.label) ?? null : null,
     };
   });
   return { asOf, rows };

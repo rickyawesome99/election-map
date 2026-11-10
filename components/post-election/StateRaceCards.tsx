@@ -3,7 +3,7 @@
 import StateGlyph from "@/components/results/StateGlyph";
 import { flipBackground } from "@/components/FlipStripes";
 import { partyVotes } from "@/lib/resultsNeedle";
-import { callSideColor, fmtCall, fmtIn, fmtInt, inColor, inState, partyColor, raceHash } from "@/lib/resultsFormat";
+import { callSideColor, fmtCall, fmtIn, fmtInt, inColor, inState, partyColor } from "@/lib/resultsFormat";
 import type { LegChamberResult, LegSeats, PostElectionRow } from "@/lib/postElectionTypes";
 import type { Party } from "@/lib/resultsTypes";
 
@@ -35,16 +35,22 @@ function resetTilt(e: React.PointerEvent<HTMLElement>) {
   if (e.pointerType === "mouse") untiltCard(e.currentTarget);
 }
 
-/** A state's races in card order: governor, Senate, then House by district. */
+/** A race's key, and on the 2026 page its hash on /results (as raceHash). */
+export const rowKey = (p: PostElectionRow["prior"]) => `${p.office}-${p.id}`;
+
+/** Two years before, as the page's headings write it: "24". */
+const prevYY = (year: number) => String(year - 2).slice(2);
+
+/** A state's races in card order: president, governor, Senate, then House by district. */
 export function sortStateRows<R extends PostElectionRow>(rows: R[]): R[] {
-  const order = { governor: 0, senate: 1, house: 2 };
+  const order = { president: 0, governor: 1, senate: 2, house: 3 };
   return [...rows].sort((a, b) => order[a.prior.office] - order[b.prior.office] || Number(a.prior.special) - Number(b.prior.special) || a.prior.label.localeCompare(b.prior.label, "en", { numeric: true }));
 }
 
-function RaceCard({ row, popularVote, onSelect, index }: { row: PostElectionRow; popularVote: number | null; onSelect: (r: PostElectionRow) => void; index: number }) {
-  const { prior, proj, live, house24 } = row;
+function RaceCard({ row, popularVote, year, onSelect, index }: { row: PostElectionRow; popularVote: number | null; year: number; onSelect: (r: PostElectionRow) => void; index: number }) {
+  const { prior, proj, live, housePrev, past } = row;
   const hasVotes = !!live && live.total > 0;
-  const office = prior.office === "house" ? "House" : prior.office === "senate" ? `Senate${prior.special ? " special" : ""}` : "Governor";
+  const office = prior.office === "house" ? "House" : prior.office === "senate" ? `Senate${prior.special ? " special" : ""}` : prior.office === "president" ? "President" : "Governor";
   const name = prior.office === "house" ? prior.label : office;
   const ratingColor = prior.forecast.rating.startsWith("Toss") ? "var(--app-text-primary)" : prior.forecast.rating.endsWith("D") ? "var(--party-dem)" : "var(--party-rep)";
   // A called race fills its box with the winner's colour (as the race table's winner bar), every
@@ -62,10 +68,10 @@ function RaceCard({ row, popularVote, onSelect, index }: { row: PostElectionRow;
   // The figure over the projection, in margin terms: a House seat's swing from 2024, or how far a
   // statewide race ran ahead of the state's House popular vote.
   const isHouse = prior.office === "house";
-  const compareTo = isHouse ? house24?.margin ?? null : popularVote;
+  const compareTo = isHouse ? housePrev?.margin ?? null : popularVote;
   const compared = proj.currentMargin != null && compareTo != null ? proj.currentMargin - compareTo : null;
   const comparedTitle = isHouse
-    ? (house24 ? `2024: ${fmtCall(house24.margin)}${house24.estimated ? ", estimated on the 2026 lines" : ""}` : "No 2024 or 2026 Democrat vs Republican race to compare")
+    ? (housePrev ? `${year - 2}: ${fmtCall(housePrev.margin)}${housePrev.estimated ? `, estimated on the ${year} lines` : ""}` : `No ${year - 2} or ${year} Democrat vs Republican race to compare`)
     : `${office} margin minus the state's House popular vote margin (${fmtCall(popularVote)})`;
   // Motion (globals.css rc-*): the cards rise in staggered, a figure rolls in whenever it changes
   // (keyed on its text), the call fades the fill in and pops its badge, a race still counting
@@ -80,13 +86,20 @@ function RaceCard({ row, popularVote, onSelect, index }: { row: PostElectionRow;
           <span className="truncate text-[15px] font-semibold">{name}</span>
           {hasVotes && !won && <span className="rc-live" style={{ color: callSideColor(proj.currentMargin, prior) }} title="Counting" />}
         </span>
-        {won && <span key={won} className="rc-badge font-mono text-[10px] font-bold uppercase tracking-wider" style={{ color: on(partyColor(won)) }} title={flipped ? `Called; flips a seat ${prior.seatParty} held` : undefined}>{flipped ? "Flip" : "Called"}</span>}
+        {won && (!past || flipped) && <span key={won} className="rc-badge font-mono text-[10px] font-bold uppercase tracking-wider" style={{ color: on(partyColor(won)) }} title={flipped ? `${past ? "Flips" : "Called; flips"} a seat ${prior.seatParty} ${past ? "won last time" : "held"}` : undefined}>{flipped ? "Flip" : "Called"}</span>}
       </div>
       {hasVotes ? (
         <>
           <div className="rc-figure mt-1 overflow-hidden text-xl font-extrabold leading-none tabular-nums"><span key={current} className="rc-tick" style={{ color: on(callSideColor(proj.currentMargin, prior)) }}>{current}</span></div>
-          <div className="mt-1 truncate text-[11px] tabular-nums" style={soft ?? veryMuted} title={comparedTitle}>{isHouse ? "Swing" : "Vs. GB"} <b style={{ color: on(callSideColor(compared, prior)) }}>{fmtCall(compared, prior)}{compared != null && house24?.estimated && "*"}</b></div>
-          <div className="overflow-hidden text-xs tabular-nums" style={soft ?? muted}>Proj. Margin <b key={projected} className="rc-tick" style={{ color: on(callSideColor(proj.margin, prior)) }}>{projected}</b></div>
+          <div className="mt-1 truncate text-[11px] tabular-nums" style={soft ?? veryMuted} title={comparedTitle}>{isHouse ? "Swing" : "Vs. GB"} <b style={{ color: on(callSideColor(compared, prior)) }}>{fmtCall(compared, prior)}{compared != null && housePrev?.estimated && "*"}</b></div>
+          {past
+            ? <div className="overflow-hidden text-xs tabular-nums" style={soft ?? muted} title={past.prev ? `The seat's previous result, ${past.prev.year}` : "No previous result"}>{past.prev ? <>{past.prev.year} <b style={{ color: on(callSideColor(past.prev.margin, prior)) }}>{fmtCall(past.prev.margin, prior)}</b></> : "No previous result"}</div>
+            : <div className="overflow-hidden text-xs tabular-nums" style={soft ?? muted}>Proj. Margin <b key={projected} className="rc-tick" style={{ color: on(callSideColor(proj.margin, prior)) }}>{projected}</b></div>}
+        </>
+      ) : past ? (
+        <>
+          <div className="mt-1 text-xl font-extrabold leading-none">Unopposed</div>
+          <div className="mt-1 text-[11px]" style={soft ?? veryMuted}>No votes reported</div>
         </>
       ) : (
         <>
@@ -99,7 +112,7 @@ function RaceCard({ row, popularVote, onSelect, index }: { row: PostElectionRow;
         <div className="h-[3px] min-w-0 flex-1 overflow-hidden rounded-full" style={{ background: fill ? "rgba(255,255,255,0.28)" : "var(--app-tab-bg)" }}>
           <div className="rc-progress h-full rounded-full" style={{ width: `${counted}%`, background: fill ? "rgba(255,255,255,0.9)" : callSideColor(proj.currentMargin, prior) }} />
         </div>
-        {hasVotes && <span className="w-8 shrink-0 text-right text-[11px] font-semibold leading-none tabular-nums" style={{ color: on(inColor(inState(counted))) }} title="Share of the expected vote counted">{fmtIn(counted)}</span>}
+        {hasVotes && !past && <span className="w-8 shrink-0 text-right text-[11px] font-semibold leading-none tabular-nums" style={{ color: on(inColor(inState(counted))) }} title="Share of the expected vote counted">{fmtIn(counted)}</span>}
       </div>
       </div>
     </button>
@@ -109,13 +122,16 @@ function RaceCard({ row, popularVote, onSelect, index }: { row: PostElectionRow;
 /** One state: the Statewide section (House popular vote, governor, Senate, the state's legislature), then every House seat in
  *  district order, under a header with the state's count. The caller holds
  *  useTouchHover(tiltCard, untiltCard), once per page. */
-export function StateSection({ rows, legislature, housePv24, onSelect }: { rows: PostElectionRow[]; legislature: LegChamberResult[]; housePv24: number | null; onSelect: (r: PostElectionRow) => void }) {
+export function StateSection({ rows, legislature, year, housePvPrev, onSelect }: { rows: PostElectionRow[]; legislature: LegChamberResult[]; year: number; housePvPrev: number | null; onSelect: (r: PostElectionRow) => void }) {
   if (!rows.length) return null;
   const p0 = rows[0].prior;
-  const statewide = rows.filter((r) => r.prior.office !== "house");
+  const past = !!rows[0].past;
+  const president = rows.find((r) => r.prior.office === "president");
+  const statewide = rows.filter((r) => r.prior.office !== "house" && r.prior.office !== "president");
   const house = rows.filter((r) => r.prior.office === "house");
   const popularVote = housePopularVote(house).margin;
-  const vs24 = popularVote != null && housePv24 != null ? popularVote - housePv24 : null;
+  const vsPrev = popularVote != null && housePvPrev != null ? popularVote - housePvPrev : null;
+  const flips = rows.filter((r) => r.proj.winner && r.prior.seatParty && r.proj.winner !== r.prior.seatParty).length;
   const counted = rows.reduce((a, r) => a + (r.live?.total ?? 0), 0);
   const total = rows.reduce((a, r) => a + r.proj.projectedTotal, 0);
   const called = rows.filter((r) => r.proj.locked && r.proj.winner).length;
@@ -127,7 +143,7 @@ export function StateSection({ rows, legislature, housePv24, onSelect }: { rows:
       <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-wider" style={muted}>{label}</div>
       <div className="grid grid-cols-2 gap-x-3 gap-y-3 sm:grid-cols-3 lg:grid-cols-5">
         {lead}
-        {list.map((r, i) => <RaceCard key={raceHash(r.prior)} row={r} popularVote={popularVote} onSelect={onSelect} index={offset + i} />)}
+        {list.map((r, i) => <RaceCard key={rowKey(r.prior)} row={r} popularVote={popularVote} year={year} onSelect={onSelect} index={offset + i} />)}
         {trail}
       </div>
     </div>
@@ -139,12 +155,18 @@ export function StateSection({ rows, legislature, housePv24, onSelect }: { rows:
         <div className="min-w-0">
           <div className="text-xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{p0.stateName}</div>
           <div className="text-[11px] tabular-nums" style={muted}>
-            {total ? `${Math.round((counted / total) * 100)}% of the expected vote counted · ` : ""}{called} of {rows.length} called
+            {past
+              ? `${rows.length} races · ${flips} ${flips === 1 ? "flip" : "flips"}`
+              : <>{total ? `${Math.round((counted / total) * 100)}% of the expected vote counted · ` : ""}{called} of {rows.length} called</>}
           </div>
         </div>
       </div>
-      {group(<>Statewide{vs24 != null && <span title={`House popular vote: 2026 ${fmtCall(popularVote)}, 2024 ${fmtCall(housePv24)}`}> · <span style={{ color: callSideColor(vs24) }}>{fmtCall(vs24)}</span> vs 24 GB</span>}</>, statewide, 0, house.length > 0 ? <HousePopularVote rows={house} /> : undefined,
-        legislature.map((c, i) => <LegislatureCard key={c.chamber} result={c} unicameral={legislature.length === 1} governorParty={governorParty} index={statewide.length + i} />))}
+      {group(<>Statewide{vsPrev != null && <span title={`House popular vote: ${year} ${fmtCall(popularVote)}, ${year - 2} ${fmtCall(housePvPrev)}`}> · <span style={{ color: callSideColor(vsPrev) }}>{fmtCall(vsPrev)}</span> vs {prevYY(year)} GB</span>}</>, statewide, 0,
+        <>
+          {house.length > 0 && <HousePopularVote rows={house} past={past} />}
+          {president && <RaceCard row={president} popularVote={popularVote} year={year} onSelect={onSelect} index={0} />}
+        </>,
+        legislature.map((c, i) => <LegislatureCard key={c.chamber} result={c} unicameral={legislature.length === 1} governorParty={governorParty} year={year} index={statewide.length + i} />))}
       {group(<>House · {house.length} {house.length === 1 ? "seat" : "seats"} · {delegationLabel(house)}</>, house, statewide.length)}
     </div>
   );
@@ -197,14 +219,14 @@ function delegationLabel(house: PostElectionRow[]) {
   );
 }
 
-function LegislatureCard({ result, unicameral, governorParty, index }: { result: LegChamberResult; unicameral: boolean; governorParty: string | null; index: number }) {
+function LegislatureCard({ result, unicameral, governorParty, year, index }: { result: LegChamberResult; unicameral: boolean; governorParty: string | null; year: number; index: number }) {
   const { chamber, total, up, calledSeats, noElection, seats, leading, flipped, net } = result;
   const name = unicameral ? "Legislature" : chamber === "senate" ? "State Senate" : "State House";
   // A settled chamber fills like a called race, every figure in white, with no badge: the bar keeps its colours inside a white outline.
   const control = chamberControl(result, governorParty);
   const fill = control === "R" ? "var(--party-rep-fill)" : control === "D" ? "var(--party-dem-fill)" : null;
   // Control changed hands: the race cards' flip stripes over the fill.
-  const flippedControl = !!control && control !== result.priorControl;
+  const flippedControl = !!control && !result.noPrior && control !== result.priorControl;
   const soft = fill ? { color: "rgba(255,255,255,0.82)" } : null;
   const segments = [
     { n: seats.dem - flipped.dem, bg: "var(--party-dem-fill)", label: "Democratic, settled" },
@@ -225,13 +247,13 @@ function LegislatureCard({ result, unicameral, governorParty, index }: { result:
       <div className="@container flex min-h-[94px] flex-col justify-start">
       <div className="flex items-baseline justify-between gap-2">
         <span className="truncate text-[15px] font-semibold">{name}</span>
-        {!noElection && netBadge(net, !!fill)}
+        {!noElection && !result.noPrior && netBadge(net, !!fill)}
       </div>
       <div className="mt-1 whitespace-nowrap text-xl font-extrabold leading-none tabular-nums">
         <span style={fill ? undefined : { color: "var(--party-dem)" }}>{seats.dem}D</span> - <span style={fill ? undefined : { color: "var(--party-rep)" }}>{seats.rep}R</span>
         {seats.oth > 0 && <> - <span style={soft ?? muted}>{seats.oth}I</span></>}
       </div>
-      <div className="mt-1 text-xs tabular-nums" style={soft ?? muted}>{noElection ? "No 2026 Elections" : `${up} up · ${calledSeats} called`}</div>
+      <div className="mt-1 text-xs tabular-nums" style={soft ?? muted}>{noElection ? `No ${year} Elections` : leading.dem + leading.rep + leading.oth === 0 && calledSeats === up ? `${up} up` : `${up} up · ${calledSeats} called`}</div>
       {/* mt-auto: every chamber's bar sits at the card's foot */}
       <div className="mt-auto pt-2">
         <div className="relative flex h-3.5 overflow-hidden" style={fill ? { outline: "1px solid rgba(255,255,255,0.8)" } : undefined} role="img" aria-label={`${name}: ${seats.dem} Democrats, ${seats.rep} Republicans${seats.oth ? `, ${seats.oth} independents and others` : ""}${noElection ? "" : `; ${flipped.dem + flipped.rep + flipped.oth} flips; leading in ${leading.dem} more Democratic and ${leading.rep} more Republican seats`}`}>
@@ -254,10 +276,41 @@ export function housePopularVote(rows: PostElectionRow[]) {
   return { dem, rep, total, margin: total > 0 ? ((rep - dem) / total) * 100 : null };
 }
 
+const BALLOT_OFFICES = [["house", "House"], ["president", "President"], ["senate", "Senate"], ["governor", "Governor"]] as const;
+
+/** The national generic ballot for each office: every race's counted votes summed by party (as
+ *  housePopularVote), margin over all votes cast, R-positive. Other is everyone else on the ballot. */
+export function GenericBallots({ rows }: { rows: PostElectionRow[] }) {
+  const offices = BALLOT_OFFICES.filter(([office]) => rows.some((r) => r.prior.office === office));
+  return (
+    <div>
+      <div className="mb-2 font-mono text-[10px] font-bold uppercase tracking-wider" style={muted}>Generic ballot</div>
+      <div className={`grid gap-x-3 gap-y-3 lg:grid-cols-5 ${offices.length > 3 ? "grid-cols-2 sm:grid-cols-4" : "grid-cols-3"}`}>
+        {offices.map(([office, name]) => {
+          const { dem, rep, total, margin } = housePopularVote(rows.filter((r) => r.prior.office === office));
+          const pct = (v: number) => `${((v / total) * 100).toFixed(1)}%`;
+          return (
+            <div key={office} title={total > 0 ? `D ${fmtInt(dem)} · R ${fmtInt(rep)} · Other ${fmtInt(total - dem - rep)} · ${fmtInt(total)} votes counted` : undefined}
+              className="py-1 pl-3" style={{ borderLeft: "1px solid var(--app-border)" }}>
+              <div className="truncate text-sm font-semibold">{name}</div>
+              <div className="mt-0.5" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(20px, 4.5vw, 24px)", lineHeight: 1.05, color: callSideColor(margin) }}>{fmtCall(margin)}</div>
+              {total > 0 && (
+                <div className="mt-0.5 text-[11px] tabular-nums" style={veryMuted}>
+                  <span style={{ color: "var(--party-dem)", fontWeight: 600 }}>D {pct(dem)}</span> <span style={{ color: "var(--party-rep)", fontWeight: 600 }}>R {pct(rep)}</span> <span style={{ fontWeight: 600 }}>Other {pct(total - dem - rep)}</span>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 /** The state's House popular vote: every House race's votes summed by party, margin over all votes
  *  (R-positive), beside the needle's projection (each seat's projected margin weighted by its
  *  projected vote). Uncontested seats count as the feed reports them. */
-function HousePopularVote({ rows }: { rows: PostElectionRow[] }) {
+function HousePopularVote({ rows, past }: { rows: PostElectionRow[]; past: boolean }) {
   const { dem, rep, total, margin } = housePopularVote(rows);
   let projVotes = 0, projSum = 0;
   for (const { prior, proj } of rows) {
@@ -277,7 +330,7 @@ function HousePopularVote({ rows }: { rows: PostElectionRow[] }) {
         <>
           <div className="mt-1 text-xl font-extrabold leading-none tabular-nums"><span key={fmtCall(margin)} className="rc-tick" style={{ color: callSideColor(margin) }}>{fmtCall(margin)}</span></div>
           <div className="mt-1 text-[11px] tabular-nums" style={veryMuted}><span style={{ color: "var(--party-dem)", fontWeight: 600 }}>D {pct(dem)}</span> <span style={{ color: "var(--party-rep)", fontWeight: 600 }}>R {pct(rep)}</span></div>
-          {projected != null && <div className="overflow-hidden text-xs tabular-nums" style={muted}>Proj. Margin <b key={fmtCall(projected)} className="rc-tick" style={{ color: callSideColor(projected) }}>{fmtCall(projected)}</b></div>}
+          {projected != null && !past && <div className="overflow-hidden text-xs tabular-nums" style={muted}>Proj. Margin <b key={fmtCall(projected)} className="rc-tick" style={{ color: callSideColor(projected) }}>{fmtCall(projected)}</b></div>}
         </>
       ) : (
         <>
@@ -290,7 +343,7 @@ function HousePopularVote({ rows }: { rows: PostElectionRow[] }) {
         <div className="h-[3px] min-w-0 flex-1 overflow-hidden rounded-full" style={{ background: "var(--app-tab-bg)" }}>
           <div className="rc-progress h-full rounded-full" style={{ width: `${counted}%`, background: callSideColor(margin) }} />
         </div>
-        {margin != null && <span className="w-8 shrink-0 text-right text-[11px] font-semibold leading-none tabular-nums" style={{ color: inColor(inState(counted)) }} title="Share of the expected vote counted">{fmtIn(counted)}</span>}
+        {margin != null && !past && <span className="w-8 shrink-0 text-right text-[11px] font-semibold leading-none tabular-nums" style={{ color: inColor(inState(counted)) }} title="Share of the expected vote counted">{fmtIn(counted)}</span>}
       </div>
       </div>
     </div>

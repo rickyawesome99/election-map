@@ -90,7 +90,7 @@ export function MarginReadout({ model, rcp, pick, modelHref, modelLabel = "Model
           <div className="min-w-0 pl-3 sm:pl-6" style={{ borderLeft: "2px solid var(--app-text-primary)" }}>
             {fig("pick", <>
               {label("pick", pick, BOARD)}
-              <div className="mt-1 font-bold tabular-nums leading-[0.9]" style={{ ...SERIF, fontSize: "clamp(2.4rem, 7vw, 3.6rem)", letterSpacing: "-0.03em", color: marginColor(pick) }}>{fmtMargin(pick).replace(".0", "")}</div>
+              <div className="mt-1 font-bold tabular-nums leading-[0.9]" style={{ ...SERIF, fontSize: "clamp(1.8rem, 5vw, 2.6rem)", letterSpacing: "-0.03em", color: marginColor(pick) }}>{fmtMargin(pick).replace(".0", "")}</div>
             </>)}
           </div>
         </div>

@@ -66,7 +66,13 @@ export default function AppShell() {
     };
   }, []);
 
+  // Switching years on the post-election page keeps the reader where they were.
+  const lastPathname = useRef(pathname);
   useEffect(() => {
+    const from = lastPathname.current;
+    lastPathname.current = pathname;
+    const postElection = /^\/analysis\/post-election(\/|$)/;
+    if (from !== pathname && postElection.test(from) && postElection.test(pathname)) return;
     if (pathname !== "/" && !pathname.startsWith("/analysis")) return;
     window.requestAnimationFrame(() => {
       window.scrollTo({ top: 0, behavior: "auto" });

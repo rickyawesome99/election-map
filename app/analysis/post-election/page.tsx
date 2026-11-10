@@ -4,8 +4,9 @@ import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { ELECTION_YEAR } from "@/lib/electionYear";
 import { CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
 import { fmtDateTime } from "@/lib/resultsFormat";
-import { house2024PopularVote, readResultsSnapshot } from "@/lib/resultsSnapshot";
+import { houseNationalPopularVote, houseStatePopularVote, readResultsSnapshot } from "@/lib/resultsSnapshot";
 import { readStateLegSnapshot } from "@/lib/stateLegResultsSnapshot";
+import { PAST_POST_ELECTION_YEARS } from "@/lib/postElectionTypes";
 
 export const metadata = {
   title: `${ELECTION_YEAR} Post Election Analysis`,
@@ -20,8 +21,8 @@ export default function PostElectionPage() {
       <StandfirstHeader kicker="Analysis" title={`${ELECTION_YEAR} Post Election Analysis`}>
         As of <Fig>{fmtDateTime(asOf)}</Fig>
       </StandfirstHeader>
-      <main className="mx-auto max-w-7xl px-4 pb-6 pt-6 sm:px-6 sm:pb-8">
-        <PostElectionAnalysis rows={rows} legislature={legislature.byState} housePv24={house2024PopularVote()} />
+      <main className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 sm:pb-8">
+        <PostElectionAnalysis rows={rows} legislature={legislature.byState} year={ELECTION_YEAR} years={[ELECTION_YEAR, ...PAST_POST_ELECTION_YEARS]} housePvPrev={houseStatePopularVote(ELECTION_YEAR - 2)} nationalPvPrev={houseNationalPopularVote(ELECTION_YEAR - 2)} />
         <details className="mt-10 max-w-3xl text-xs leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
           <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>Sources and how to read this page</summary>
           <div className="mt-2 space-y-2">
