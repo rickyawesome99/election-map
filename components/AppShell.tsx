@@ -14,7 +14,11 @@ export default function AppShell() {
   const pending = usePendingNav();
 
   // The new page has landed (or a back/forward moved elsewhere): drop the loading cover.
-  useEffect(() => { navRendered(); }, [pathname]);
+  // The new page's viewport tags arrive in the light theme: put the reader's theme back on them.
+  useEffect(() => {
+    navRendered();
+    syncThemeColor(document.documentElement.classList.contains("dark"));
+  }, [pathname]);
 
   // Any in-site link to a page with a placeholder layout (the top tabs, race, past result,
   // chamber, state, candidate) puts that placeholder up on click, wherever the link sits, and

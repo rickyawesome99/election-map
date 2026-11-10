@@ -6,17 +6,22 @@ const THEME_STORAGE_KEY = "darkMode";
 const LIGHT_APP_BG = "#f9f8f5";
 const DARK_APP_BG = "#0d1117";
 
+// Sets every tag of this name and never removes one. React owns the tags the layout's viewport
+// renders, and in dark mode there are two: the server's (which React won't adopt once its content
+// reads dark) and the one React adds in its place. Removing React's made every later navigation
+// throw as React tried to take it out again ("Cannot read properties of null (reading 'removeChild')").
 function syncMeta(name: string, content: string, options: { removeMedia?: boolean } = {}): void {
   const metas = Array.from(document.querySelectorAll<HTMLMetaElement>(`meta[name="${name}"]`));
-  const [primary, ...duplicates] = metas;
-  const meta = primary ?? document.createElement("meta");
-
-  meta.name = name;
-  meta.content = content;
-  if (options.removeMedia) meta.removeAttribute("media");
-  if (!primary) document.head.appendChild(meta);
-
-  duplicates.forEach((duplicate) => duplicate.remove());
+  if (!metas.length) {
+    const meta = document.createElement("meta");
+    meta.name = name;
+    document.head.appendChild(meta);
+    metas.push(meta);
+  }
+  for (const meta of metas) {
+    if (meta.content !== content) meta.content = content;
+    if (options.removeMedia) meta.removeAttribute("media");
+  }
 }
 
 export function syncThemeColor(darkMode: boolean): void {
