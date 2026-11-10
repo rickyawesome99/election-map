@@ -12,6 +12,10 @@ export const ELECTION_DATE = "2026-11-03";
  *  before the first polls close); before it the feed only serves test data the page hides.
  *  ?test=1 and the replay control bypass it. */
 export const FEED_OPENS_AT = Date.parse("2026-11-03T22:00:00Z");
+/** The trend charts' time window: 6:01 PM ET on election night to 6:01 PM ET two days later, where
+ *  nearly all of the movement happened. Points outside it are cut, the line ending (or starting)
+ *  at the window's edge. */
+export const TREND_WINDOW: [number, number] = [Date.parse("2026-11-03T23:01:00Z"), Date.parse("2026-11-05T23:01:00Z")];
 
 /** One county (or, for a House race, the district's piece of a county) of the pre-election projection. */
 export type CountyPrior = {

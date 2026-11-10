@@ -3,7 +3,7 @@
 import { useId, useMemo } from "react";
 import { Area, ComposedChart, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { SeatPoint } from "@/lib/resultsTypes";
-import { fmtTime } from "@/lib/resultsFormat";
+import { fmtDateTime } from "@/lib/resultsFormat";
 
 // The Recharts half of the Results page's trend charts (loaded on its own, like the Overview's
 // PollTrendChart): an 80% band, the projection as a line, a dashed reference line, and a hover
@@ -83,7 +83,7 @@ function ChartTooltip({ active, payload, colorOf, fmtValue, fmtRange, title = "P
     <div className="whitespace-nowrap rounded-lg px-2.5 py-2 text-[11px]" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.18)" }}>
       <div className="mb-1 text-[10px] font-semibold uppercase tracking-[0.06em]">
         <span style={{ color: "var(--app-text-primary)" }}>{title}</span>
-        <span style={{ color: "var(--app-text-muted)" }}> · {fmtTime(p.t)}</span>
+        <span style={{ color: "var(--app-text-muted)" }}> · {fmtDateTime(p.t)}</span>
       </div>
       <div className="flex items-baseline gap-2 tabular-nums">
         <span className="text-[13px] font-extrabold leading-none" style={{ color: colorOf(p.mean) }}>{fmtValue(p.mean)}</span>
