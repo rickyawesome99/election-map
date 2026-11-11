@@ -80,10 +80,10 @@ test("race pages show the projected county map", async ({ page }) => {
   await expect(section.getByText(/estimated votes/)).toBeVisible();
   await expect(section.getByText(/How this is built/)).toBeVisible();
 
+  // House pages: the projection is the section's only map; district lines moved to District Boundaries & PVI History.
   await page.goto("/house/oh-12");
-  const tabs = page.getByRole("tablist", { name: "District map view" });
-  await expect(tabs.getByRole("tab", { name: "2026 projection" })).toHaveAttribute("aria-selected", "true", { timeout: 20_000 });
-  await expect(page.getByText(/Projected 2026 margin by county/)).toBeVisible();
-  await tabs.getByRole("tab", { name: "District lines" }).click();
-  await expect(page.getByText(/Projected 2026 margin by county/)).toHaveCount(0);
+  await expect(page.getByText(/Projected 2026 margin by county/)).toBeVisible({ timeout: 20_000 });
+  const boundaries = page.locator("section", { has: page.getByRole("heading", { name: "District Boundaries & PVI History" }) }).first();
+  await boundaries.scrollIntoViewIfNeeded();
+  await expect(boundaries.getByRole("img", { name: /lines · OH-12/ }).first()).toBeVisible({ timeout: 20_000 });
 });

@@ -5,14 +5,19 @@ import type { PointerEvent as ReactPointerEvent, MouseEvent as ReactMouseEvent }
 
 // Pan/zoom for a hand-drawn d3-geo SVG: wheel zooms about the cursor, drag pans, two-finger pinch
 // zooms on touch. Apply `transform` to a <g> wrapping the paths (and give stroked paths
-// vector-effect="non-scaling-stroke"). The view is clamped so the map always fills the frame.
+// vector-effect="non-scaling-stroke"). The view is clamped so the map always fills the frame, or,
+// given `bounds` (the drawn content's box in the unzoomed frame), so the frame's centre stays over
+// the content and the reader can zoom out as far as `minZoom` to see all of it.
 // A drag of more than a few pixels swallows the click that ends it, so panning never selects.
 
 export type PanZoom = { k: number; x: number; y: number };
 const IDENTITY: PanZoom = { k: 1, x: 0, y: 0 };
 const DRAG_TOLERANCE = 4;
 
-export function usePanZoom(width: number, height: number, maxZoom = 12) {
+export function usePanZoom(width: number, height: number, maxZoom = 12, opts?: { minZoom?: number; bounds?: [[number, number], [number, number]] | null }) {
+  const minZoom = Math.min(1, opts?.minZoom ?? 1);
+  const bounds = opts?.bounds ?? null;
+  const b0x = bounds?.[0][0], b0y = bounds?.[0][1], b1x = bounds?.[1][0], b1y = bounds?.[1][1];
   const [view, setView] = useState<PanZoom>(IDENTITY);
   const svgRef = useRef<SVGSVGElement>(null);
   const pointers = useRef(new Map<number, { x: number; y: number }>());
@@ -20,17 +25,27 @@ export function usePanZoom(width: number, height: number, maxZoom = 12) {
   const suppressClick = useRef(false);
 
   const clamp = useCallback((v: PanZoom): PanZoom => {
-    const k = Math.min(maxZoom, Math.max(1, v.k));
+    const k = Math.min(maxZoom, Math.max(minZoom, v.k));
+    if (b0x != null && b0y != null && b1x != null && b1y != null) {
+      // Zoomed out far enough that the content fits along an axis: keep all of it on screen there.
+      // Otherwise keep the frame's centre over the content.
+      const axis = (t: number, lo: number, hi: number, dim: number) =>
+        k < 1 && k * (hi - lo) <= dim
+          ? Math.min(dim - k * hi, Math.max(-k * lo, t))
+          : Math.min(dim / 2 - k * lo, Math.max(dim / 2 - k * hi, t));
+      return { k, x: axis(v.x, b0x, b1x, width), y: axis(v.y, b0y, b1y, height) };
+    }
     return { k, x: Math.min(0, Math.max(width * (1 - k), v.x)), y: Math.min(0, Math.max(height * (1 - k), v.y)) };
-  }, [width, height, maxZoom]);
+  }, [width, height, maxZoom, minZoom, b0x, b0y, b1x, b1y]);
 
   const zoomAbout = useCallback((factor: number, px: number, py: number) => {
     setView((v) => {
-      const k = Math.min(maxZoom, Math.max(1, v.k * factor));
+      const k = Math.min(maxZoom, Math.max(minZoom, v.k * factor));
       const f = k / v.k;
-      return clamp({ k, x: px - (px - v.x) * f, y: py - (py - v.y) * f });
+      const x = px - (px - v.x) * f, y = py - (py - v.y) * f;
+      return clamp({ k, x, y });
     });
-  }, [clamp, maxZoom]);
+  }, [clamp, maxZoom, minZoom]);
 
   // Reset when the frame is resized: the paths are re-projected to the new size.
   const [frame, setFrame] = useState(`${width}x${height}`);
@@ -108,7 +123,7 @@ export function usePanZoom(width: number, height: number, maxZoom = 12) {
   return {
     view,
     transform: `translate(${view.x},${view.y}) scale(${view.k})`,
-    zoomed: view.k > 1.001,
+    zoomed: Math.abs(view.k - 1) > 0.001 || Math.abs(view.x) > 0.5 || Math.abs(view.y) > 0.5,
     zoomBy,
     reset,
     svgProps: {

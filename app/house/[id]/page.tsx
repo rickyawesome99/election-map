@@ -7,12 +7,13 @@ import { getRatingColors } from "@/lib/colorScale";
 import RaceHero from "@/components/RaceHero";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import HouseDistrictMapTabs from "@/components/HouseDistrictMapTabs";
+import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
+import HouseRedistrictingSection from "@/components/HouseRedistrictingSection";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
-import { AboutRaceCard, incumbentFact, LedgerSubhead, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, incumbentFact, LedgerSubhead, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateDistrictTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
@@ -283,29 +284,29 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               );
               return countyProjection ? <ProjectedVoteSection p={countyProjection} candidates={rows} state={race.state} footnote={false} /> : rows;
             })()}
-            <div className="mt-4">
-              <HouseDistrictMapTabs
-                raceId={race.id}
-                stateAbbr={stateAbbr}
-                margin={projectedMargin}
-                boundaryYears={(() => {
-                  const entries = houseDistrictInfo[race.id] ?? [];
-                  if (entries.length === 0) return [];
-                  const years = new Set(entries.map(e => e.year));
-                  years.add(2016);
-                  return [...years].sort((a, b) => b - a);
-                })()}
-                projection={countyProjection ? {
-                  piecesUrl: `/house-county-pieces/${electionYear}/${stateAbbr}.json`,
-                  district: districtNum === "AL" ? 1 : parseInt(districtNum, 10),
-                  districtLabel: race.name,
-                  counties: projectedCountyMapEntries(countyProjection),
-                  demName: countyProjection.demName, repName: countyProjection.repName,
-                  demParty: countyProjection.demParty, repParty: countyProjection.repParty,
-                  margin: countyProjection.margin, votes: countyProjection.votes,
-                } : null}
-              />
-            </div>
+            {countyProjection && (
+              <div className="mt-4">
+                <HouseDistrictCountyMap
+                  stateContext
+                  panelSize="wide"
+                  piecesUrl={`/house-county-pieces/${electionYear}/${stateAbbr}.json`}
+                  district={districtNum === "AL" ? 1 : parseInt(districtNum, 10)}
+                  districtLabel={race.name}
+                  stateAbbr={stateAbbr}
+                  counties={projectedCountyMapEntries(countyProjection)}
+                  demName={countyProjection.demName}
+                  repName={countyProjection.repName}
+                  demParty={countyProjection.demParty}
+                  repParty={countyProjection.repParty}
+                  height={240}
+                  caption={
+                    <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                      Projected {electionYear} margin by county, from the district forecast and each county&apos;s lean. <Link href="/analysis/internal-methodology/turnout#county-results" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.
+                    </div>
+                  }
+                />
+              </div>
+            )}
           </section>
 
           <section>
@@ -380,7 +381,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           {boundaryEntries.length > 0 && (
             <section>
               <LedgerSectionHead label="District Boundaries & PVI History" />
-              <HouseOnlyDistrictBoundariesSection bare scrollable maxHeight="380px" entries={boundaryEntries} />
+              <HouseRedistrictingSection raceId={race.id} stateAbbr={stateAbbr} label={`${stateAbbr}-${districtNum === "AL" ? "AL" : parseInt(districtNum, 10)}`} entries={boundaryEntries} />
             </section>
           )}
 
