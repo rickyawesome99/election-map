@@ -1,0 +1,76 @@
+http://localhost:3000/methodology/war
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+WAR · WINS ABOVE REPLACEMENT
+How much better than a generic nominee
+
+Borrowed from baseball, WAR measures how much a candidate added over a replacement-level nominee: a typical, non-incumbent candidate of the same party running in the same seat, in the same year, against the same opponent. It is counted in points of margin. A positive WAR means the candidate did better than that stand-in would have; a negative one means they did worse.
+
+4,742
+candidate races scored, 2016 to 2025
+2,951
+candidates
+HOW IT'S BUILT
+Three numbers
+1
+Expected result
+What two typical nominees would have done in that seat that year: the place’s partisan lean, moved to that year’s politics, plus the national mood, incumbency, and the money gap two typical candidates would have had.
+2
+Expected against this opponent
+A typical nominee does worse against a strong opponent and better against a weak one. Every candidate's strength is estimated from all the races they have run, and the expected result is moved by the opponent's. If the candidate is the incumbent, their incumbency is also taken out, because a replacement would not have been the incumbent.
+3
+WAR
+The actual result minus the expected result against this opponent, counted toward the candidate. Positive is good for the candidate, whichever party they belong to.
+WORKED EXAMPLE · LIVE
+Phil Scott, 2022
+
+The 2022 VT governor race, against Brenda Siegel. Phil Scott ran far ahead of what a typical Republican could have managed in the state, which makes the gap easy to see.
+
+← MORE DEMOCRATIC
+MORE REPUBLICAN →
+Expected result
+two typical nominees
+D+27.8
+Opponent's strength
+Brenda Siegel
+R +8.2
+Incumbency taken out
+a replacement wouldn't be the incumbent
+D +5.4
+Expected against this opponent
+D+25.0
+Actual result
+R+47.0
+D+50
+Even
+R+50
+
+WAR: +71.9 points for Phil Scott, the gap between the last two rows.
+
+LIVE
+Highest and lowest
+CANDIDATES WHO RAN FURTHEST FROM EXPECTATIONS
+House, Senate and governor races · each candidate once
+CANDIDATE	RACE	WAR
+Phil Scott	2024 VT Governor	+73.1
+Charlie Baker	2018 MA Governor	+60.3
+Larry Hogan	2018 MD Governor	+35.7
+Andy Beshear	2023 KY Governor	+30.6
+Jim Justice	2016 WV Governor	+27.2
+Bill Cole	2016 WV Governor	−27.2
+Arthur Jones	2018 IL House	−21.9
+Dan Feltes	2020 NH Governor	−21.6
+Louie Campos	2016 CA House	−21.6
+Martha Roby	2016 AL House	−19.5
+QUESTIONS
+Reading WAR
+Why do both candidates in a race get credit?
+Each candidate keeps whatever the race left unexplained, the way a batter and a pitcher both get credit for the same hit. So two opponents' WARs don't add up to the race's result.
+Does money count?
+Money a typical candidate would have raised in that situation is part of the expected result. Raising more than that counts toward the candidate.
+Is it used in the forecast?
+A closely related number is: the forecast’s candidate ingredient uses each nominee’s strength measured the same way, but with incumbency and all fundraising counted separately.
+What are its limits?
+Records start in 2016, so a long career before that is invisible. A candidate whose strength changed a lot over the years is measured with one number. A House member's own results are part of their district's lean, which slightly understates House WAR.
+
+SEE ITEvery candidate’s record is on TPL › Candidates.

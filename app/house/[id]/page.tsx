@@ -11,6 +11,8 @@ import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
 import HouseRedistrictingSection from "@/components/HouseRedistrictingSection";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
+import ElectionResultSection, { ElectionResultFootnote, electionResultMeta } from "@/components/ElectionResultSection";
+import { raceResult2026 } from "@/lib/raceResults2026";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
 import { AboutRaceCard, incumbentFact, LedgerSubhead, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
@@ -133,6 +135,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
   const countyProjection = projectRaceResults("house", race.id);
+  // The counted result, which the race page shows in place of the projection (archived in data/forecast-final-2026/).
+  const result = raceResult2026("house", race.id);
   const raceHistory = getRaceForecastHistory("house", race);
   const quality = candidateQuality(race);
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
@@ -266,6 +270,34 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
 
           <section>
+            {result ? (<>
+              <LedgerSectionHead label="Election Result" meta={electionResultMeta(result)} />
+              <ElectionResultSection
+                r={result}
+                state={race.state}
+                dem={{ photo: demPhoto, incumbent: race.candidates?.dem.incumbent }}
+                rep={{ photo: repPhoto, incumbent: race.candidates?.rep.incumbent }}
+              />
+              {result.counties.length > 0 ? (
+                <div className="mt-4">
+                  <HouseDistrictCountyMap
+                    stateContext
+                    panelSize="wide"
+                    piecesUrl={`/house-county-pieces/${electionYear}/${stateAbbr}.json`}
+                    district={districtNum === "AL" ? 1 : parseInt(districtNum, 10)}
+                    districtLabel={race.name}
+                    stateAbbr={stateAbbr}
+                    counties={result.counties}
+                    demName={result.demName}
+                    repName={result.repName}
+                    demParty={result.demParty}
+                    repParty={result.repParty}
+                    height={240}
+                    caption={<div className="px-1"><ElectionResultFootnote r={result} house /></div>}
+                  />
+                </div>
+              ) : <ElectionResultFootnote r={result} house />}
+            </>) : (<>
             <LedgerSectionHead label={countyProjection ? "Projected Result" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {(() => {
               const rows = (
@@ -307,6 +339,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                 />
               </div>
             )}
+            </>)}
           </section>
 
           <section>
@@ -380,7 +413,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
           {boundaryEntries.length > 0 && (
             <section>
-              <LedgerSectionHead label="District Boundaries & PVI History" />
+              <LedgerSectionHead label="Redistricting History" />
               <HouseRedistrictingSection raceId={race.id} stateAbbr={stateAbbr} label={`${stateAbbr}-${districtNum === "AL" ? "AL" : parseInt(districtNum, 10)}`} entries={boundaryEntries} />
             </section>
           )}

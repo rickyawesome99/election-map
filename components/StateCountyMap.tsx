@@ -4,7 +4,8 @@ import { useMapTooltip } from "@/lib/useMapTooltip";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { countyDisplayName } from "@/lib/countyName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
+import { useStaticJson } from "@/lib/useStaticJson";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { getRaceColor } from "@/lib/colorScale";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
@@ -13,6 +14,8 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 // a state page only fetches its own counties instead of every state's (previously 3.0 MB
 // national file on every load).
 const countiesUrl = (stateAbbr: string) => `/state-counties/${stateAbbr}.json`;
+
+const DEFAULT_PROJ: [number, number, number] = [-96, 38, 800];
 
 // Same projection table as StateDistrictMap
 const STATE_PROJ: Record<string, [number, number, number]> = {
@@ -81,7 +84,7 @@ export default function StateCountyMap({
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelectedState] = useState<County | null>(null);
-  const setSelected = (c: County | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); };
+  const setSelected = useCallback((c: County | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); }, [onSelectedChange]);
   // Starts unset, so a map remounted for another layer picks up the county already selected.
   const [focusN, setFocusN] = useState<number | undefined>(undefined);
   // With reservePanel an invisible stand-in holds the panel's space, stacked in the same grid
@@ -91,8 +94,11 @@ export default function StateCountyMap({
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
-  const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
+  // Null until measured, so the map isn't drawn at a guessed size first.
+  const [mapViewport, setMapViewport] = useState<{ width: number; height: number } | null>(null);
+  // Fetched once per tab through the shared cache and handed to react-simple-maps parsed: given
+  // the URL, it refetched the file on every mount (Reset remounts it).
+  const { data: topo } = useStaticJson<object>(countiesUrl(stateAbbr));
   const getCountyTpl = useCallback((fips: string): number | null => {
     if (!showTpl) return null;
     return countyTpl?.[fips] ?? null;
@@ -105,10 +111,8 @@ export default function StateCountyMap({
       width: Math.max(1, Math.round(width)),
       height: Math.max(1, Math.round(height)),
     };
-    setMapViewport(nextViewport);
-    const cfg = fitStateProjection(stateAbbr, nextViewport.width, nextViewport.height);
-    if (cfg) setAutoProj(cfg);
-  }, [stateAbbr]);
+    setMapViewport((cur) => (cur && cur.width === nextViewport.width && cur.height === nextViewport.height ? cur : nextViewport));
+  }, []);
   useEffect(() => {
     measure();
     const ro = new ResizeObserver(measure);
@@ -121,12 +125,78 @@ export default function StateCountyMap({
     setSelectedState(focus.fips ? { fips: focus.fips, name: focus.name, tpl: getCountyTpl(focus.fips) } : null);
   }
 
-  const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
+  const autoProj = useMemo<ProjectionConfig | null>(() => (mapViewport ? fitStateProjection(stateAbbr, mapViewport.width, mapViewport.height) : null), [stateAbbr, mapViewport]);
+  const proj = STATE_PROJ[stateAbbr] ?? DEFAULT_PROJ;
 
   const mapStroke = "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
   const defaultFill = "var(--map-unfilled)";
   const highlightFill = "#eab308";
+
+  // The map, memoized apart from hover: every mouseenter otherwise rebuilt all of the state's
+  // counties with fresh style objects.
+  const mapSvg = useMemo(() => {
+    const vp = mapViewport;
+    if (!vp || !topo) return null;
+    return (
+      <ComposableMap
+        width={vp.width}
+        height={vp.height}
+        projection="geoMercator"
+        projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
+        style={{ width: "100%", height: "100%" }}
+      >
+        <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
+        <Geographies geography={topo}>
+          {({ geographies }: { geographies: CountyGeometry[] }) =>
+            geographies
+              .map((geo) => {
+                const fips = String(geo.id);
+                const name = geo.properties?.name ?? "";
+                const tpl = getCountyTpl(fips);
+                const county: County = { fips, name, tpl };
+                const isSelected = selected?.fips === fips;
+                const isHighlighted = !isSelected && fips === highlightFips;
+                const baseFill = showTpl && tpl != null ? getRaceColor(tpl) : defaultFill;
+                const fill = isHighlighted ? highlightFill : baseFill;
+
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => setHovered(county)}
+                    onMouseLeave={() => setHovered(null)}
+                    onClick={() => setSelected(isSelected ? null : county)}
+                    style={{
+                      default: {
+                        fill,
+                        stroke: isSelected || isHighlighted ? hoverStroke : mapStroke,
+                        strokeWidth: isSelected || isHighlighted ? 1.5 : 0.5,
+                        outline: "none",
+                      },
+                      hover: {
+                        fill: baseFill,
+                        stroke: hoverStroke,
+                        strokeWidth: 1,
+                        outline: "none",
+                        cursor: "pointer",
+                      },
+                      pressed: {
+                        fill: baseFill,
+                        stroke: hoverStroke,
+                        strokeWidth: 1.5,
+                        outline: "none",
+                      },
+                    }}
+                  />
+                );
+              })
+          }
+        </Geographies>
+        </ZoomableGroup>
+      </ComposableMap>
+    );
+  }, [mapViewport, topo, autoProj, proj, mapKey, getCountyTpl, selected, setSelected, highlightFips, showTpl]);
 
   // One description of a county, drawn as the hover popup and as the click panel. Without the
   // TPL layer (the county page's locator map) it is just the name and FIPS.
@@ -146,62 +216,7 @@ export default function StateCountyMap({
         {/* Hover tooltip */}
         {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
 
-        <ComposableMap
-          width={mapViewport.width}
-          height={mapViewport.height}
-          projection="geoMercator"
-          projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
-          style={{ width: "100%", height: "100%" }}
-        >
-          <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
-          <Geographies geography={countiesUrl(stateAbbr)}>
-            {({ geographies }: { geographies: CountyGeometry[] }) =>
-              geographies
-                .map((geo) => {
-                  const fips = String(geo.id);
-                  const name = geo.properties?.name ?? "";
-                  const tpl = getCountyTpl(fips);
-                  const county: County = { fips, name, tpl };
-                  const isSelected = selected?.fips === fips;
-                  const isHighlighted = !isSelected && fips === highlightFips;
-                  const baseFill = showTpl && tpl != null ? getRaceColor(tpl) : defaultFill;
-                  const fill = isHighlighted ? highlightFill : baseFill;
-
-                  return (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      onMouseEnter={() => setHovered(county)}
-                      onMouseLeave={() => setHovered(null)}
-                      onClick={() => setSelected(isSelected ? null : county)}
-                      style={{
-                        default: {
-                          fill,
-                          stroke: isSelected || isHighlighted ? hoverStroke : mapStroke,
-                          strokeWidth: isSelected || isHighlighted ? 1.5 : 0.5,
-                          outline: "none",
-                        },
-                        hover: {
-                          fill: baseFill,
-                          stroke: hoverStroke,
-                          strokeWidth: 1,
-                          outline: "none",
-                          cursor: "pointer",
-                        },
-                        pressed: {
-                          fill: baseFill,
-                          stroke: hoverStroke,
-                          strokeWidth: 1.5,
-                          outline: "none",
-                        },
-                      }}
-                    />
-                  );
-                })
-            }
-          </Geographies>
-          </ZoomableGroup>
-        </ComposableMap>
+        {mapSvg}
 
         {/* State label badge */}
         {showLabel && (

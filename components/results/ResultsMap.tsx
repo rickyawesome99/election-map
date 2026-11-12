@@ -118,26 +118,33 @@ export default function ResultsMap({ office, rows, mode, selected, onSelect }: {
   const [zoomKey, setZoomKey] = useState(0);
   const [zoomed, setZoomed] = useState(false);
   const [zoomOffice, setZoomOffice] = useState(office);
-  const STATE_LINE = { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, vectorEffect: "non-scaling-stroke" as const, outline: "none", pointerEvents: "none" as const };
   if (zoomOffice !== office) { setZoomOffice(office); setZoomKey((k) => k + 1); setZoomed(false); }
+  // The map, memoized apart from hover: every mouseenter otherwise rebuilt the House map's
+  // state-line layer.
+  const mapSvg = useMemo(() => {
+    const STATE_LINE = { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, vectorEffect: "non-scaling-stroke" as const, outline: "none", pointerEvents: "none" as const };
+    return (
+      <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} width={960} height={600} style={{ width: "100%", height: "100%" }}>
+        <FlipPatternDefs colors={flipColors} />
+        <ZoomableGroup key={zoomKey} minZoom={1} maxZoom={16} filterZoomEvent={filterMapZoomEvent} onMoveEnd={({ zoom }: { zoom: number }) => setZoomed((z) => zoom > 1.01 || z)}>
+        <Geographies geography={isHouse ? HOUSE_URL : STATES_URL}>
+          {({ geographies }: { geographies: GeoFeature[] }) => <Layer geographies={geographies} office={office} rows={rows} mode={mode} selected={selected} t={t} onHover={setHover} onSelect={onSelect} />}
+        </Geographies>
+        {isHouse && (
+          <Geographies geography={HOUSE_LINES_URL}>
+            {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
+              <Geography key={geo.rsmKey} geography={geo} style={{ default: STATE_LINE, hover: STATE_LINE, pressed: STATE_LINE }} />
+            ))}
+          </Geographies>
+        )}
+        </ZoomableGroup>
+      </ComposableMap>
+    );
+  }, [t, flipColors, zoomKey, isHouse, office, rows, mode, selected, onSelect]);
   return (
     <div className="relative" onMouseMove={tip.onMouseMove}>
       <div className="relative h-[300px] sm:h-[440px]">
-        <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} width={960} height={600} style={{ width: "100%", height: "100%" }}>
-          <FlipPatternDefs colors={flipColors} />
-          <ZoomableGroup key={zoomKey} minZoom={1} maxZoom={16} filterZoomEvent={filterMapZoomEvent} onMoveEnd={({ zoom }: { zoom: number }) => setZoomed(zoom > 1.01 || zoomed)}>
-          <Geographies geography={isHouse ? HOUSE_URL : STATES_URL}>
-            {({ geographies }: { geographies: GeoFeature[] }) => <Layer geographies={geographies} office={office} rows={rows} mode={mode} selected={selected} t={t} onHover={setHover} onSelect={onSelect} />}
-          </Geographies>
-          {isHouse && (
-            <Geographies geography={HOUSE_LINES_URL}>
-              {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
-                <Geography key={geo.rsmKey} geography={geo} style={{ default: STATE_LINE, hover: STATE_LINE, pressed: STATE_LINE }} />
-              ))}
-            </Geographies>
-          )}
-          </ZoomableGroup>
-        </ComposableMap>
+        {mapSvg}
         {zoomed && (
           <button onClick={() => { setZoomKey((k) => k + 1); setZoomed(false); }}
             className="absolute left-2 top-2 z-10 rounded-lg px-2.5 py-1 text-xs font-medium backdrop-blur-sm"

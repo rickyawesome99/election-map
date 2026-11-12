@@ -1,0 +1,1223 @@
+http://localhost:3000/analysis/internal-methodology/forecast
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+FORECAST · HOUSE, SENATE, GOVERNOR
+One equation, three offices
+
+All 506 races on the Forecast tab are projected by the same additive model. A structural Model margin is built from the seat’s partisan lean and four adjustments, then blended with the race’s Polling Average in proportion to how much polling evidence exists. All margins are R-positive: R+ is a Republican lead, D+ a Democratic one. House, Senate and Governor differ only in which lean they start from and in the per-office constants listed below.
+
+Model
+TPL + Environment + Incumbent + Fundraising + Candidates
+Projected Margin
+(1 − w) × Model + w × (Polling Avg + POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office])
+w
+min(POLL_W_MAX, nEff / (nEff + POLL_K))
+0 with no polls
+σ²
+(β*·σ_E)² + k²·[((1 − w)·RACE_SIGMA)² + (w·POLL_SIGMA)²]
+Win Probability
+Φ(−Projected Margin / σ)
+Rating
+band of the Projected Margin
+Tilt < 1 · Lean < 5 · Likely < 15 · Safe
+WORKED EXAMPLE
+live · Kansas Senate, the closest polled Senate race right now
+STATE TPLstructural lean, neutral year
+R+14.1
++
+ENVIRONMENTβ* 1.02 × E −4.7
+D+4.8
++
+INCUMBENT
+R+3.3
++
+FUNDRAISINGfiled gap −56% · typical +19%
+D+4.0
++
+CANDIDATESweight 1 × (R effect −0.1 − D effect 0.0)
+D+0.1
+=
+MODEL25% weight
+R+8.6
+POLLING AVG75% weight · 14 pollsters
+D+4.3
+=
+PROJECTED MARGINσ 5.3 · R 51% · Tilt R
+R+0.2
+BY OFFICE
+every constant that differs between the three forecasts
+	HOUSE	SENATE	GOVERNOR
+Races forecast	435	35	36
+Lean the Model starts from	District TPL	State TPL	State TPL
+Incumbency (pts)	3.0 fixed	3.3 fitted	4.8 fitted
+Money: k / cap	0.04 / ±3	0.06 / ±4	0.04 / ±3
+Candidate weight	0.75	1	1.5
+Poll k (one fresh poll =)	2 (33%)	3 (25%)	2 (33%)
+Race σ, model alone	5.5	5.5	8.5
+Race σ, polls alone	6.4	5.5	6.8
+Races with polls now	113 of 435	30 of 35	34 of 36
+Receipts on file, both sides	400 of 435	35 of 35	36 of 36
+Non-zero Candidates term	360 of 435	29 of 35	24 of 36
+Backtest MAE, model alone	6.28	4.92	8.84
+TERM 1
+Partisan lean (TPL)
+
+The starting point is the seat’s True Partisan Lean: the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is an absolute margin, not a lean relative to the nation. Senate and Governor races read the State TPL; House races read the District TPL, which is built on the 2026 lines.
+
+Because TPL is built by stripping incumbency, fundraising and the national environment out of past results, the forecast adds the same three things back for 2026 with the same tables. A change to a strip therefore moves the forecast twice, in opposite directions, and mostly cancels; a change to the lean itself moves it one for one.
+
+TERM 2
+National environment
+
+The generic ballot is not added to a race directly. It is converted onto the model’s own environment scale E, then multiplied by the state’s elasticity β*. Polling error is treated as uncertainty, not as a prediction.
+
+GB
+generic-ballot average
+D+9.0
+PV_hat
+GB + 0.5 × mean(House vote − final GB)
+D+9.0 + 0.5 × R+1.9 = D+8.1
+E_hat
+c + s × PV_hat
++0.59 + 0.66 × PV_hat = D+4.7
+σ_E
+√( NATIONAL_SIGMA_STRUCTURAL² + (|s| × √( sd(miss)² + (horizon × rms(drift))² ))² )
+√(2.6² + (0.66 × √(2.1² + (0.00 × 1.5)²))²) = 2.95
+Environment pts, Senate / Governor
+β*(state) × E_hat
+e.g. β* 1.00 → D+4.7
+Environment pts, House
+β*(state) × E_hat × HOUSE_ENV_MULTIPLIER
+e.g. β* 1.00 → D+6.6
+σ_E, House
+√( NATIONAL_SIGMA_STRUCTURAL² + (HOUSE_ENV_MULTIPLIER × |s| × √( sd(miss)² + (horizon × rms(drift))² ))² )
+3.25
+horizon = days to the election ÷ 49, capped at 1.5 (0 days → 0.00), so the generic-ballot part of σ_E narrows as election day approaches; the structural part does not. House races read the environment on the House-vote scale (E_hat ÷ s): see “Why a conversion” below.
+GENERIC-BALLOT AVERAGE
+268 polls on file
+One poll per pollster
+Only each pollster's most recent survey counts, so weekly trackers cannot dominate by volume.
+Recency
+Full weight for 14 days after the field period ends, then halving every further 14 days (race polls use the office's own half-life, see Polling).
+Sample size
+Weight ∝ √sample, capped at 3,000; an unpublished sample takes the median of the others.
+Average
+Σ weight × (R% − D%) ÷ Σ weight. Currently D+9.0.
+WHY A CONVERSION
+c and s fitted over 2016, 2018, 2020, 2022, 2024
+
+E(year) is fitted jointly across every office and centered on the 2016–2025 average, so it is damped relative to the House popular vote: a one-point move in the House vote is worth 0.66 points of E, and E is zero when the House vote is D+0.9. Both numbers are properties of this model, so they are regressed from the model’s own fitted E against the actual House vote rather than assumed.
+
+House races take the environment term times HOUSE_ENV_MULTIPLIER. On 2026-11-02 it was set to the House-vote scale (1 ÷ s, about 1.5 to 1.8) on the argument that the House popular vote is the sum of the House margins; on 2026-11-03 the forward backtest first scored 2018 and 2020 House races on the lines of the day (411 and 419 races instead of 6 and 5), and the clean sweep finds the House’s response to E year-dependent: at a multiplier of 1 the model ran 3 to 4 points too Republican across 2018 and about 0.8 too Republican in 2022, while 2020 and 2024 — the Republican polling-miss years — want less. Pooled error is nearly flat from 1 to 1.75; pooled bias rises with the multiplier. The value is a judgment between the year types and is recorded in the changelog with the sweep. The sum of the House projections sits below PV_hat whenever the multiplier is under 1 ÷ s; see Generic Ballot vs Popular Vote.
+
+YEAR	FITTED E	GB MID-SEPT	GB FINAL	HOUSE VOTE, OFFICIAL	HOUSE VOTE, UNCONTESTED IMPUTED	MISS (IMPUTED VOTE − FINAL GB)
+2016	R+1.5	D+2.5	D+0.6	R+1.1	R+0.9	R+1.5
+2018	D+4.4	D+7.8	D+6.7	D+8.6	D+7.8	D+1.1
+2020	D+1.2	D+6.4	D+6.9	D+3.0	D+2.1	R+4.8
+2022	R+1.0	D+1.8	R+0.3	R+2.7	R+1.9	R+1.6
+2024	R+2.8	D+1.8	D+0.4	R+2.6	R+2.1	R+2.5
+Mean miss R+1.9, sd 2.1; September→November drift rms 1.5. Since 2026-10-23 the 2018–2024 generic-ballot columns are the live averaging recipe itself run over the 538 poll archive as of September 15 and election eve, so the miss is measured on the quantity the model shades; 2016 predates the archive and stays on RealClearPolitics’ basis (data-entry/national_environment_history.csv).
+STATE ELASTICITY Β*
+range 0.50 (WA) to 1.55 (WV)
+
+β* is how strongly a state moves with the national environment, fitted alongside TPL and shrunk halfway to 1: β* = clamp(1 + 0.5 × (β̂ − 1), 0.5, 1.6). A House race uses its state’s β*. See State TPL → the fit.
+
+ENV_MISS_SHRINK
+0.5
+Share of the historical mean generic-ballot miss applied to the point estimate. The remainder, and all of the miss's variance, live in σ_E.
+JUDGMENT CALL
+Polling gaps are not predictable; half is a hedge between trusting and ignoring the average miss.
+ENV_PV_BASIS
+imputed
+The House vote the conversion c, s and the miss are fitted against: the official total, or the total with every uncontested and same-party seat filled with the two-party vote a D-vs-R race there would have produced (/analysis/generic-ballot). The generic ballot asks every voter, including those in seats with no contest, so it measures the imputed quantity.
+JUDGMENT CALL
+Switched to imputed 2026-11-03: s 0.57 → 0.66; backtest neutral or better in every office (Senate model MAE 5.04 → 4.91, 80% coverage 73% → 77%; Governor 8.92 → 8.84; House 6.28 → 6.26; one-day blends 3.88 → 3.84 / 4.80 → 4.73 / 5.94 → 5.93).
+ENV_DAYS_MID_SEPT_TO_ELECTION
+49
+The horizon the drift variance in the history table was measured over; drift scales linearly with days remaining.
+FROM DATA
+c, s
++0.59, 0.66
+E = c + s × House popular vote, OLS over the even years on file.
+FITTED LIVE
+getEnvironmentModel()
+NATIONAL_SIGMA_STRUCTURAL
+2.6
+Shared national error (E scale) the forecast carries even with the House vote known: the lean window, the E↔vote conversion, and whatever moves a whole office in one year. Added in quadrature to the generic ballot's own error.
+SET FROM A MEASUREMENT
+Set so the mid-September σ_E reproduces the forward backtest’s realized spread of yearly Senate biases (2.48; Governor 3.53, House 1.86 on far fewer early-year races): √(2.6² + 3.12²). Before 2026-10-23 this term was 0 and the national part of every race’s error was being absorbed as independent race noise, which averages out across a chamber; the seat ranges were the narrowest of any published model.
+σ_E
+2.95
+Shared national error on the E scale today. Every Senate and Governor race carries β* × σ_E, and the chamber simulation draws it once per run.
+FITTED LIVE
+getNationalEnvironment()
+HOUSE_ENV_MULTIPLIER
+1.4
+Multiplier on the House environment term and on the generic-ballot part of its national error. 1 = the shared E scale; 1.52 today would be the House-vote scale (β* × E_hat ÷ s). House environment today -6.62, σ_E 3.25.
+JUDGMENT CALL
+The clean 1,284-race sweep (2026-11-03) finds the House response to E year-dependent — 2018 and 2022 want 2 or more, 2024 about 1.2, 2020 under 0.8 — with pooled error nearly flat from 1 to 1.75 (oracle E 6.20 / 6.14 at 1.4 / 6.16; live rule 6.26 / 6.27 / 6.38) and pooled bias rising with the multiplier because 2020 and 2024 were Republican polling-miss years. See the changelog.
+TERM 3
+Incumbency
+
+Points for an incumbent seeking re-election, toward the incumbent’s party. An open seat scores 0. The same table is what TPL strips from past results.
+
+OFFICE	POINTS	ROWS BEHIND IT	HOW SET
+House	±3.0	—	Fixed. A state-level lean cannot separate House incumbency from district lean, so it is not fitted there; a sweep through strip, candidate effects and forward term puts the optimum at 2.5–3.
+Senate	±3.3	134	Fitted inside the TPL fit from incumbent-held Senate races, with the fundraising strip already applied.
+Governor	±4.8	64	Fitted the same way from incumbent-held Governor races.
+Because the fitted values are estimated after the fundraising strip, they are the advantage NET of the money incumbents raise — incumbency and fundraising cannot double-count.
+Appointed incumbents
+An incumbent who holds the seat by appointment or succession and has never won it receives 0% of the advantage — scored as an open seat, with no penalty either. Of nine historical appointees, eight ran behind an open-seat generic nominee even with no incumbency credited.
+Aligned independents
+An independent who stands in for a party counts as that party’s incumbent: Bernie Sanders (D), Angus King (D), Kevin Kiley (R).
+Not modeled
+Open-seat carryover for the outgoing party and a freshman-incumbent discount were both tested and rejected (see Tested, not adopted).
+TERM 4
+Fundraising
+
+Points for money raised beyond what a race like this normally sees. Incumbents and the favored party almost always out-raise, and lean and incumbency already account for that, so only the gap beyond the typical one is information.
+
+gap%            = (R receipts − D receipts) / (R + D) × 100
+structural gap% = a + b × incumbentSign + c × preMoneyMargin        per office, clamped ±100
+                  preMoneyMargin = TPL + Environment + Incumbent   incumbentSign: R +1 · D −1 · open 0
+Fundraising pts = clamp( MONEY_K × (PARTIAL_CYCLE_GAP_SCALE × gap% − structural gap%), ±MONEY_CAP )
+STRUCTURAL MONEY MODEL
+the gap a generic pair in the same situation would have — re-fitted live
+OFFICE	INTERCEPT A	INCUMBENT B	MARGIN C	RACES	R²
+House	−1.8	+34.4	+1.30	1935	0.80
+Senate	−21.1	+15.8	+1.90	166	0.67
+Governor	−1.7	+22.7	+1.22	117	0.52
+OLS over every 2016–2025 race with both nominees' receipts known. Read b as: incumbency alone is worth that many points of money gap.
+MONEY_BASIS
+residual
+Pay points on the residual gap (beyond structural) rather than the raw gap.
+BACKTEST-CALIBRATED
+forwardBacktest --money: raw gap S 5.61 / G 9.20 / H 4.81 → residual 5.04 / 8.90 / 4.59; raw House money was worse than no money at all (4.76).
+MONEY_K
+H 0.04 · S 0.06 · G 0.04
+Points of margin per point of residual gap.
+BACKTEST-CALIBRATED
+Senate keeps improving to the sweep edge and is kept one step inside; House is flat across .04–.06; Governor takes the conservative pair (no September snapshot to confirm on).
+MONEY_CAP
+H ±3 · S ±4 · G ±3
+Most the term can move a race. Self-funders hit it.
+BACKTEST-CALIBRATED
+PARTIAL_CYCLE_GAP_SCALE
+H 0.9 · S 0.9 · G 0.9
+2026 receipts are a mid-September snapshot; past cycles are full-cycle. The trailing side closes about a tenth of the gap late.
+BACKTEST-CALIBRATED
+gap_final = 0.91 × gap_sept (Senate, n 63) / 0.90 × (House, n 380), from FEC report summaries for 2022 and 2024. Governor borrows the value.
+Receipts unknown
+A race with either side's receipts missing scores 0 points, which under the residual basis means "the typical gap for this situation is assumed". Imputing the structural gap under the raw basis was tested and rejected.
+Sources
+House and Senate: FEC candidate-committee total receipts. Governor: state filings (TransparencyUSA, FollowTheMoney, state portals). Both sides of a race always come from one source. Source of truth: data-entry/fundraising_2016_2026.csv.
+$0 vs blank
+$0 means a confirmed non-filer (under the FEC's $5,000 threshold); blank means unknown. Only blank is treated as missing.
+TERM 5
+Candidates
+
+Each nominee’s track record: how much better than a generic nominee of their party they have run before, net of lean, environment, incumbency and money. A nominee with no general-election record on file is a generic nominee (0).
+
+Candidates pts = QUALITY_WEIGHT[office] × (effect_R − effect_D)
+effect         = ridge candidate effect, solved as of 2026 over every scorable race 2016–2025
+                 minimise Σ w·(r − a_R + a_D)² + λ·Σ a²        λ = 1
+                 w = decay^(2026 − year)   decay 0.9 statewide · 0.8 House
+r              = actual − (lean-in-that-year + β*·E + incumbency + FULL-money points)
+The effects are the same machinery as WAR, with one difference: here the expected margin includes the full residual-basis money term, so that money stays a separate forward term and the effect does not contain it.
+QUALITY_WEIGHT
+H 0.75 · S 1 · G 1.5
+Multiplier on the effect difference, per office.
+BACKTEST-CALIBRATED
+forwardBacktest --quality, leakage-free (effects rebuilt as of each test year): House error bottoms near 0.75, Senate at 1.0, Governor keeps improving past 1.5 (persistent personal brands) and is held off the sweep edge.
+WAR_LAMBDA
+1
+Ridge penalty: an unseen candidate is replacement level. A one-race candidate keeps 1/(1+λ) of what is left after a known opponent's effect.
+SET FROM A MEASUREMENT
+Matches the leave-one-out persistence slope (≈ 0.68) of repeat candidates' residuals.
+WAR_RECENCY_DECAY
+0.8 House · 0.9 statewide
+Per-year fade of a past race's weight. A statewide personal brand is assumed to persist longer than a House record.
+JUDGMENT CALL
+forwardBacktest --decay-sweep is flat within 0.06 MAE across 0.8–1.0.
+OBSERVABLE_PRIOR_FEATURES
+[ ] (off)
+Optional prior from observables (prior office tier, prior win) used as the ridge shrinkage target and as the whole term for a nominee with no record.
+TESTED, SWITCHED OFF
+Net of the full money gap it carries nothing: no feature set moves pooled MAE by more than 0.02.
+Matching
+Records are keyed state | party | normalized name and pooled across offices, so a House record follows a member into a Senate race. The name must match the historical spelling exactly; a surname fallback was rejected after it paired John E. Sununu with Chris Sununu’s races.
+Coverage
+2,903 candidates have an effect on file; 413 of 506 races carry a non-zero term.
+Placeholders
+A placeholder nominee ("Democratic Candidate", TBD) scores 0.
+BLEND
+Race polling
+
+Where a race has general-election polls, their average is a second estimate of the same margin. It earns its share of the projection by evidence: no polls, the Model stands alone; many fresh polls, they dominate. 1,472 polls across 177 races are on file, and 177 races currently carry a polling average.
+
+poll margin_i = (R% − D%) + aging shift_i − house effect_i
+weight_i      = recency_i × √min(sample_i, 3000)         recency: 1 for 14 days, then halving every POLL_HALF_LIFE_DAYS[office]
+Polling Avg   = Σ weight_i × poll margin_i / Σ weight_i   one poll per pollster (its latest)
+nEff          = Σ recency_i                                effective number of fresh polls
+w             = min(POLL_W_MAX, nEff / (nEff + POLL_K[office]))
+blend         = (1 − w) × Model + w × (Polling Avg + POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office])
+POLL MISS SHADE
+Senate +1.65 · Governor +0.90 · House +1.25 (R-positive)
+
+House effects are relative to the field, so a miss the whole field shares passes straight through them — and the field has shared one. The final polls (each pollster’s last poll from October 1, Polling Misses) have landed Republican of the result on average in every even year since 2016: Senate R+3.3 over 152 races, Governor R+1.8 over 101. The contested House vote has landed Republican of the final generic ballot in all five cycles, R+2.5 (Generic Ballot vs Popular Vote); with no House race-poll history on file, the House takes that figure. Since 2026-11-03 the blend reads each office’s poll average POLL_MISS_SHRINK × that miss toward the Republican — the same half-shade the generic ballot gets, applied once per race after house effects, whatever the pollsters. The displayed Polling Avg is the face value; the shade is shown beside it on the race page. The midterm misses (2018 ≈ 0, 2022 ≈ 1.7) were smaller than the presidential ones, which is one reason the shade is half rather than full.
+
+HOW MUCH A POLL AVERAGE COUNTS
+w by effective poll count
+OFFICE	K	NEFF 0.5	1	2	4	8	∞
+House	2	20%	33%	50%	67%	75%	75%
+Senate	3	14%	25%	40%	57%	73%	75%
+Governor	2	20%	33%	50%	67%	75%	75%
+POLL AGING
+aging shift = POLL_AGING_SHARE × β*(state) × (GB now − GB on the poll's end date)
+A poll reads the race on its field date; the national environment has moved since. The generic ballot on a past date is the live recipe over the polls completed by then (read at the first date with five pollsters for anything older).
+HOUSE EFFECTS
+229 pollster keys estimated this cycle
+poll margin = race level + house effect(pollster, partisan flag) + noise
+h           = (Σ (margin − race level) + k × prior) / (n + k),   |h| ≤ cap
+Solved by alternating means over every race at least two pollsters have polled in the window. A firm’s party/campaign polls are tracked separately from its public work. Effects are relative to the field, not to the truth: they cannot fix a miss every pollster shares. Live table: Pollster Ratings.
+POLL_K
+H 2 · S 3 · G 2
+Pseudo-polls of model evidence the poll average must outweigh.
+JUDGMENT CALL
+forwardBacktest --polls fitted Senate 3, Governor ≤ 0.1, House 1. Governor and House were raised to 2 so a single fresh poll carries at most a third of a projection (a one-poll Governor race had swung 15 pts); backtest cost Governor 6.1 → 7.4, House 3.57 → 3.65, both still well under model-only.
+POLL_MISS_SHRINK
+0.5
+Share of the office's historical final-poll miss added to the poll average in the blend (R-positive). The rest of the miss stays in POLL_SIGMA and σ_E.
+JUDGMENT CALL
+User decision 2026-11-03, mirroring ENV_MISS_SHRINK; see the Poll miss shade block and the changelog for the backtest.
+POLL_MISS_HISTORICAL
+H 2.5 · S 3.3 · G 1.8
+Mean of result − final poll average, R-positive: Senate and Governor from /analysis/polling-misses (2016–2024 final polls), House = the contested House vote − final generic ballot (/analysis/generic-ballot).
+SET FROM A MEASUREMENT
+lib/pollingMisses.ts, lib/genericBallotPopularVote.ts
+POLL_W_MAX
+0.75
+Ceiling on w: the Model keeps at least 1 − POLL_W_MAX of every projection, however many polls a race has.
+JUDGMENT CALL
+User decision 2026-10-09. The polls of 2016, 2018, 2020 and 2024 missed in the same direction across the whole field, which house effects (relative to the field) cannot catch, so the most heavily polled races should not run on polls alone. Binding in the 10 races that were at w 0.79–0.86.
+POLL_SIGMA
+H 6.4 · S 5.5 · G 6.8
+Robust spread of actual − poll average over polled races; enters the race σ with weight w.
+BACKTEST-CALIBRATED
+POLL_AGING_SHARE
+1
+1 = a race moves point-for-point (through β*) with the national ballot; 0 = never aged.
+JUDGMENT CALL
+Backtest effect is tiny (blend < 0.05) because old polls already carry little weight; 1 kept as the principled value.
+HOUSE_EFFECTS
+true
+Subtract each pollster's current-cycle lean from its polls.
+BACKTEST-CALIBRATED
+forwardBacktest --pollsters: Senate poll average 6.64 → 6.27 (mid-Sept), House 5.11 → 4.75.
+HOUSE_EFFECT_K
+2
+Pseudo-polls shrinking each lean toward its prior. k 1–5 are within 0.03 of each other.
+BACKTEST-CALIBRATED
+HOUSE_EFFECT_WINDOW_DAYS
+200
+Only polls this recent inform the leans. 120–300 days are within 0.03.
+BACKTEST-CALIBRATED
+HOUSE_EFFECT_CAP
+±5
+Bound on any one lean: two pollsters 30 pts apart on different question wordings is not a house effect. Neutral in the backtest (±0.02).
+DESIGNED, NOT CALIBRATED
+HOUSE_EFFECT_PARTISAN_PRIOR
+0
+Prior lean assumed for a party or campaign poll before any evidence. A fixed prior helped the House poll average but hurt its blend.
+TESTED, SWITCHED OFF
+POLL_HALF_LIFE_DAYS
+H 45 · S 14 · G 45
+Days over which a poll's weight halves, after 14 days at full weight. nEff is the sum of these weights, so a longer half-life also raises w in races whose polls are old.
+BACKTEST-CALIBRATED
+The generic ballot's 14 was inherited unfitted. forwardBacktest --polls --half-life (2026-10-23, 2018–24 archive, blend at the live k): House 14 → 45 cuts the mid-October blend error 3.56 → 3.43 and November 1 3.54 → 3.43, Governor 5.96 → 5.71 and 5.48 → 5.27; Senate 4.27 → 4.30, so it keeps 14. An August poll is still the best evidence in a sparsely polled House race in October, and the aging shift already moves it with the national ballot.
+POLL_UNDECIDED_ALLOCATION
+1
+Share of a poll's undecided respondents split between the two candidates in proportion to their shares: margin × (1 + share × min(100 − D% − R%, cap) / (D% + R%)). The leader's lead grows and the order never changes; no direction (incumbent, challenger, party) is assumed for the undecided.
+BACKTEST-CALIBRATED
+forwardBacktest --horizon-undecided (2026-10-23), blend MAE Senate / Governor / House at 11 days out: raw 4.35 / 5.50 / 4.26, full allocation capped at 10 pts 4.26 / 5.25 / 4.24; at 28 days raw 4.44 / 5.89 / 4.33, capped 4.40 / 5.66 / 4.33.
+POLL_UNDECIDED_CAP
+10
+Most points of the share outside the two candidates treated as undecided. Beyond it the remainder is a third candidate's vote or non-voters and is left out, because results are margins of the total vote (Montana Senate's Democrat polls near 17%).
+BACKTEST-CALIBRATED
+Uncapped full allocation scores slightly better overall (Senate 4.15 at 11 days) but hands a three-way race's independent vote to the two party nominees (Montana Senate R+25 → R+31); caps of 7–15 are within 0.05 of each other.
+Full weight / sample
+14 d · 3,000
+Full-weight days and sample cap of the averaging recipe, shared with the generic ballot.
+DESIGNED, NOT CALIBRATED
+lib/racePollAverage.ts
+What is ingested
+General-election polls naming both nominees, from the polling tables of each race's Wikipedia page. Partisan polls are kept and flagged (D)/(R): dropping or shifting them costs House coverage and accuracy.
+Cycle window
+Only polls that went into the field on or after 1 January 2026 count. Recency weighting had already left an off-year poll near-weightless, but it could still fill a race's table, stand as a pollster's latest survey, or hand a race with no 2026 polling a polling average of its own.
+Pollster grades
+Shown beside every poll but never a weight: a pollster's accuracy against the field has not carried into the next cycle (correlation 0.00).
+Multi-candidate tables
+Where a table lists several candidates of one party (pre-primary top-two, jungle), each party's candidates are summed and normalized to two-party.
+Alaska
+For all three Alaska races (Senate, Governor, AK-01) only a poll's ranked-choice FINAL ROUND between the two finalists (Wikipedia's ranked-choice table, round 3) is entered, by hand; a pollster's several final-round scenarios are averaged, and a poll with no two-candidate round is left out. First-choice toplines are never party-summed; the weekly scrape reads only the ranked-choice table for these races, and rows entered by hand from a pollster's own release (with decimals) are kept. AK-01's finalists are Nick Begich and the independent Bill Hill.
+OUTPUT
+Win probability, range and rating
+
+A race’s error has two parts: a national miss shared by every race through β*, and noise of its own. The Model and the polling average err independently, so blending them narrows the race’s own noise; the national part is kept in full because polls miss nationally too. The split matters more than the total: a race’s own probability depends only on σ, but the seat ranges and the control odds depend on how much of σ is shared.
+
+σ²            = (β* × σ_E)²  +  k² × [ ((1 − w) × RACE_SIGMA)²  +  (w × POLL_SIGMA)² ]
+k             = THREE_WAY_SIGMA_MULT in a three-way race, else 1
+P(D wins)     = Φ(−margin / σ)          clamped to 0.5% – 99.5%
+80% range     = margin ± 1.2816 × σ
+RACE_SIGMA
+H 5.5 · S 5.5 · G 8.5
+Race-level error of the Model alone, beyond the national shock.
+BACKTEST-CALIBRATED
+Set from the forward backtest’s 80%-coverage table under the live σ_E (the robust within-year spread reads S 4.89 · G 8.22 · H 6.59); the live values cover S 80% · G 81% · H 74% of results inside the 80% range. Lowered on 2026-10-23 when NATIONAL_SIGMA_STRUCTURAL took over the national part of the error (they were H 5.3 · S 6.0 · G 9.4).
+THREE_WAY_SIGMA_MULT
+1.35
+Multiplier on a three-way race’s own error (RACE_SIGMA and POLL_SIGMA; the national shock is unchanged). A three-way race has a third candidate in double digits beside the two slots: MT-2 (Alani Bankhead, D).
+SET FROM A MEASUREMENT
+scripts/threeWayBacktest.py: final-21-day poll averages of 2008–2024 Senate, Governor and House races against the result, each miss scaled by the RMSE of ordinary races with as many pollsters. Ordinary races 1.00 (933); a third candidate with 15%+ of the vote 1.34 (15 races, 90% bootstrap 0.91–1.76, log score best between 1.25 and 1.5). An independent in a two-way race (KS-Sen 2014, UT-Sen 2022, NE-Sen 2024) missed no more than an ordinary race once one-poll races are set aside, so those races are not widened.
+RATING BANDS
+a band of the projected MARGIN — never of the probability
+RATING	PROJECTED MARGIN
+Tilt	under 1 pt
+Lean	1 to 5
+Likely	5 to 15
+Safe	15 or more
+A projection always names a leader: a race inside ±0.05 reads D+0.0 or R+0.0, never EVEN.
+RULES
+Races that are not one Democrat against one Republican
+
+15 of the 506 races are decided by rule rather than by margin.
+
+Uncontested
+One major party fielded no nominee (a placeholder name on one side). Decided: probability pinned at 99.5%, rating Safe, displayed margin floored at ±20 toward the unopposed party, no simulation noise. Currently 6.
+Same-party general
+Both general-election slots belong to one party after alignment (California top-two, an incumbent-vs-incumbent pairing). Decided the same way. Currently 9.
+Both nominees unknown
+Stays contested and is scored structurally with no incumbency or candidate term (Louisiana's open all-party primaries).
+Unaligned independents
+An independent standing in for a missing party (Osborn in Nebraska and six others) stays contested: structural margin, their own track record, and polls. A win counts toward the slot's party in the seat totals.
+Three-way races
+When an independent holds a slot and that party’s own nominee is also on the ballot in double digits, the independent fills the slot and the nominee is a third candidate: Montana Senate is Kurt Alme (R) against Seth Bodnar (I), with Democrat Alani Bankhead third. Polls read the independent’s column and are never party-summed with the nominee’s; the race’s own error is widened by THREE_WAY_SIGMA_MULT. As with any unaligned independent, a win counts toward the slot’s party in the seat totals.
+Louisiana House
+All six seats are a Nov 3 all-party primary with a Dec 12 runoff. The modeled margin is the party-summed R-vs-D quantity, so an R-vs-R runoff is still the modeled Republican win.
+Exact tie
+If the blend lands on exactly 0 the side is taken from the Model, then the polls, then the pre-money lean.
+AGGREGATION
+Seat counts and chamber control
+
+Summing win probabilities gives the expected seats but not their spread, because races miss together. Chamber totals come from 5,000 seeded simulations (the same seed on server and client, so the numbers never flicker).
+
+simulated margin = margin + β* × z  +  load_nonwhite × z_nw  +  load_college × z_col  +  z_state  +  ε
+z ~ N(0, σ_E)                         one national shock per run, shared by every race
+z_nw ~ N(0, 1.5) · z_col ~ N(0, 1)       one shock per demographic axis per run
+z_state ~ N(0, STATE_SHOCK[office])          one shock per state per run (House 3.5; Senate and Governor 0)
+load = (race's share − average share of its kind) / 10      districts vs the 435, states vs the 50
+ε ~ N(0, idio)     idio² = max( ½² × raceVar, raceVar − demographic variance − STATE_SHOCK² ),  raceVar = σ² − (β*·σ_E)²
+The demographic and state shocks are carved OUT of each race's own noise, so a race's total spread and win probability are identical with or without them; only how seats move together changes. Decided races add their seat with no noise.
+CHAMBER	NOT UP (D / R)	EXPECTED D SEATS	80% RANGE	D CONTROL NEEDS	P(D CONTROL)
+House	0 / 0	236.4 of 435	219–255	218	91%
+Senate	34 / 31	51.6 of 100	48–55	51	65%
+Governors	6 / 8	26.6 of 50	23–30	—	—
+Senate control needs 51 Democratic seats: a 50–50 tie goes to the Republican vice president. Independents who caucus with the Democrats are counted with them.
+DEMOGRAPHIC_SHOCK
+nonwhite 1.5 · college 1
+sd of the per-cycle slope, in pts of margin per 10 pts of share (nonwhite = 100 − White alone non-Hispanic; college = adults 25+ with a BA).
+SET FROM A MEASUREMENT
+Nonwhite 1.5 = rms of the 2022 and 2024 House residual slopes (+1.3, +1.6). College 1.0 sits between the 0.5 those residuals show and the 3.0 rms of county presidential swings.
+STATE_SHOCK
+H 3.5 · S 0 · G 0
+sd of the error House seats in the same state share, beyond the national and demographic shocks (pts of margin).
+SET FROM A MEASUREMENT
+Forward-backtest residuals, 2018–2024 House on the lines of the day (1,284 races), each year's national miss removed: the within-state-year shared component is 3.7 / 4.2 / 2.4 in 2018 / 2020 / 2022+24, 3.5 pooled (17% of residual variance), 3.5–3.9 in states with six or more scored seats. Senate races show no shared regional error in any year and governors only in 2018, so the statewide entries are 0 and there is no region term — the Midwest-vs-Sun-Belt pattern is the demographic shock's job. Effect: House P(D control) 83.3% → 84.6%, 80% range 214–246 → 215–247 (2026-11-03).
+Simulations / seed
+5,000 / 20261103
+Deterministic PRNG so every render agrees.
+DESIGNED, NOT CALIBRATED
+
+A shock, not a trend: carrying 2022’s nonwhite slope into 2024 would have helped, but the slope has flipped sign across cycles and the 2025 Governor results reversed 2024’s. No demographic term enters the mean projection.
+
+SERIES
+Forecast over time
+
+The Overview’s chamber charts and the Forecast Over Time chart on every race page come from the same series: the whole forecast rerun once per day from the first day the generic-ballot average rested on five pollsters to today, at every build.
+
+Each day is today’s model on the data that existed then. The forecast clock is set to that day, so a poll counts only once its field period had ended, poll aging and pollster house effects are measured from that day, and the national environment’s horizon is that day’s distance to the election. Everything else is as it stands now: a later model change, map correction or candidate fix applies to every day, nominees are the eventual ones even before their primaries, and fundraising is the latest filing. It shows how the forecast moves with the polls, not what the site published on a given day. Today’s point equals the live forecast.
+
+A race page plots the projected margin, signed toward the candidate favored by today’s margin so the line never flips mid-series, on a scale symmetric about even, and reads that day’s win probability into the caption. A race with no polls moves only with the national environment and the horizon. The series is written by scripts/buildForecastHistory.ts (npm’s prebuild and predev hooks) to data/generated/forecast-history.json.
+
+BACKTEST · GENERATED 2026-11-03
+Calibration
+
+The forward backtest predicts every eligible Senate and Governor race, and every House race on the district lines in force that year (2018 and 2020 on the 2012-cycle maps, with The Downballot’s presidential results on those lines; 2022 and 2024 on the 2026 lines where no redraw followed), in 2018, 2020, 2022, 2024 the way the site would have in mid-September of that year: lean, β*, E and incumbency are all re-fitted on years before the one being scored, candidate effects are rebuilt from earlier races only, and no national shift is removed before scoring. Model alone unless stated.
+
+POOLED ACCURACY
+bias = actual − predicted, R-positive
+OFFICE	RACES	MAE	WINNER CALLED	MEAN BIAS	|BIAS| PER YEAR	80% RANGE COVERS	BRIER
+Senate	133	4.92	94%	R+1.15	2.68	80%	0.058
+Governor	94	8.84	89%	R+3.78	5.04	81%	0.092
+House	1284	6.28	95%	R+1.34	2.19	74%	0.039
+Brier score of P(D wins) under the live spreads; a coin flip scores 0.250. A positive bias means results ran more Republican than predicted.
+ARE THE PROBABILITIES HONEST?
+all three offices pooled, live spreads
+FORECAST P(D WINS)	RACES	MEAN FORECAST	DEMOCRAT ACTUALLY WON
+0% – 5%	555	0.8%	2.0%
+5% – 25%	116	13.1%	12.1%
+25% – 50%	57	35.9%	33.3%
+50% – 75%	68	62.8%	67.6%
+75% – 95%	89	85.7%	84.3%
+95% – 100%	626	99.3%	99.0%
+WHAT EACH TERM IS WORTH
+pooled MAE when a term is dropped
+VARIANT	SENATE	GOVERNOR	HOUSE
+Full model	4.92	8.84	6.28
+No candidates	4.94	10.27	6.37
+No fundraising	5.55	9.32	6.68
+No incumbency	5.93	9.68	6.86
+No environment	5.40	9.01	6.93
+Lean only	7.04	11.52	7.80
+WHAT POLLS ADD
+polled races only, blend at the live POLL_K, no aging or house effects
+AS OF	OFFICE	POLLED / ALL	MAE MODEL	MAE POLLS	MAE BLEND	MEAN W
+Mid-September	Senate	106 / 133	4.76	6.24	4.20	0.39
+Mid-September	Governor	80 / 94	9.24	5.48	6.30	0.52
+Mid-September	House	297 / 1284	6.25	6.03	5.07	0.32
+Mid-October	Senate	117 / 133	4.70	5.93	3.92	0.46
+Mid-October	Governor	87 / 94	9.00	5.59	5.37	0.60
+Mid-October	House	352 / 1284	5.97	6.22	4.78	0.38
+November 1	Senate	124 / 133	4.85	5.32	3.90	0.50
+November 1	Governor	89 / 94	8.93	4.83	4.85	0.62
+November 1	House	381 / 1284	5.85	5.89	4.62	0.39
+BY DAYS TO THE ELECTION
+each past year replayed the same number of days before its own election · model + polls, as the site runs
+DAYS OUT	SENATE	GOVERNOR	HOUSE
+98	4.65 · R+1.5 · 79%	6.81 · R+2.8 · 80%	6.23 · R+1.3 · 75%
+84	4.77 · R+1.4 · 78%	6.84 · R+2.7 · 79%	6.16 · R+1.0 · 75%
+70	4.62 · R+1.6 · 81%	6.97 · R+3.0 · 79%	6.11 · R+1.3 · 75%
+56	4.59 · R+1.6 · 80%	6.67 · R+3.1 · 79%	6.07 · R+1.3 · 75%
+49	4.42 · R+1.7 · 78%	6.25 · R+2.9 · 79%	6.00 · R+1.4 · 75%
+42	4.32 · R+1.9 · 81%	5.87 · R+3.1 · 78%	5.98 · R+1.6 · 75%
+35	4.25 · R+1.9 · 80%	5.63 · R+3.0 · 80%	5.98 · R+1.6 · 74%
+28	4.09 · R+1.6 · 82%	5.55 · R+2.6 · 82%	5.97 · R+1.3 · 74%
+21	4.04 · R+1.3 · 81%	5.41 · R+1.9 · 85%	5.96 · R+1.0 · 74%
+14	4.05 · R+1.0 · 81%	5.30 · R+1.6 · 85%	5.99 · R+0.8 · 73%
+7	3.97 · R+1.0 · 83%	4.87 · R+1.6 · 87%	6.01 · R+1.0 · 74%
+1 · today	3.84 · R+0.9 · 82%	4.71 · R+1.6 · 88%	5.96 · R+0.7 · 73%
+Each cell: forecast MAE · mean bias (actual − forecast, R-positive) · share of results inside the 80% range. Every input that changes over a campaign is rebuilt as of that day from the 538 archive: the generic-ballot average (live recipe), E and σ_E (σ_E’s drift term scaled by the days left), and the race-poll averages (per-office half-life, aging, house effects as of that day); lean, β*, incumbency and candidate effects come from years before the one scored. Money uses full-cycle receipts at every horizon. The bias of the model alone, before polls, at the row marked today: Senate +0.6 · Governor +2.9 · House +0.6. Four elections at every horizon, so a bias of ±1.5 is within noise.
+BY YEAR
+YEAR	OFFICE	RACES	E USED	MAE	BIAS	R
+2018	Senate	34	D+4.6	5.97	D+2.99	0.94
+2018	Governor	36	D+4.6	9.65	R+2.17	0.66
+2018	House	411	D+4.6	6.79	D+1.46	0.96
+2020	Senate	33	D+3.1	4.80	R+2.97	0.96
+2020	Governor	11	D+3.1	11.64	R+11.08	0.81
+2020	House	419	D+3.1	7.66	R+3.29	0.96
+2022	Senate	33	R+0.3	4.84	R+1.59	0.96
+2022	Governor	36	R+0.3	7.52	R+3.16	0.92
+2022	House	209	R+0.3	4.56	R+1.17	0.98
+2024	Senate	33	D+0.3	4.03	R+3.16	0.98
+2024	Governor	11	D+0.3	7.75	R+3.76	0.91
+2024	House	245	D+0.3	4.53	R+2.84	0.99
+House rows exist only where no redraw is on file after that year — a handful of districts in 2018 and 2020. The backtest scores money with full-cycle receipts, a mild optimism against a September snapshot.
+SO THEY ARE NOT RE-TESTED BLIND
+Tested, not adopted
+Open-seat carryover
+Points toward the outgoing holder's party: Senate −0.4 ± 1.2, House −1.1 ± 0.8, Governor −4.2 (−0.7 to −6.4 across folds). The sign is a retirement slump, and out-of-sample error does not improve.
+Freshman-incumbent effect
+Senate −0.9 ± 1.0, House −1.0 ± 0.7, Governor +4.4 driven by 2018, when Baker, Hogan and Scott had no record on file. No out-of-sample gain.
+Prior-office quality prior
+Net of the full money gap, holding prior office predicts nothing (state legislators −0.78 vs novices −0.77 as House challengers). The quality-challenger effect is expressed through receipts.
+"Impute, never zero" money
+Giving every race with missing receipts the structural gap under the raw basis raised error in all three offices.
+Pollster-accuracy weights
+Weighting polls by exp(−λ × rating score) moves no poll average at any strength; nor does subtracting a pollster's HISTORICAL house effect.
+Dropping or shifting partisan polls
+Costs House coverage (104 → 68 polled races) and error (3.68 → 4.16); shifting them 3 or 6 pts toward the opponent also hurts.
+Demographic trend term
+The nonwhite-share slope is real within a cycle but has flipped sign across cycles; kept as a simulation shock only.
+Appointed-incumbent penalty
+Appointees ran a mean 5.6 pts behind an open-seat generic, but on n = 9; a negative share would be an extrapolation. Share stays 0.
+Special-election over-performance
+Rejected as a metric by decision; not built.
+Raw fundraising strip (k 0.02, cap 2) in the forecast
+Still what TPL strips backward, but forward it was worse than no money term at all for the House.
+OPEN ITEMS
+Known limitations
+House bias
+The backtest shows House results running more Republican than predicted in 2022 and 2024 (pooled +1.34).
+Governor
+The structural model is weakest here (personal brands, cross-party governors), which is why polls carry Governor races fastest. Governor money k and the partial-cycle scale are borrowed from House/Senate, and 15 of the 2026 races have no state filings on file.
+House backtest coverage
+District presidential data is on 2026 lines only, so 2018 and 2020 contribute a handful of House rows; a wave-year district elasticity cannot be tested.
+Environment history
+Five even years identify c, s and the generic-ballot part of σ_E. The 2018–2024 generic-ballot values are the live recipe over the 538 archive; 2016 is RealClearPolitics' final (the archive starts in 2018), and RCP ran 1–2 pts more Republican than the recipe in 2022 and 2024, so that one row is on a slightly different basis.
+Pre-2016 records
+Candidate effects start in 2016, so long-tenured incumbents' earlier over-performance is invisible.
+Poll freshness
+2026 polls are scraped from Wikipedia and need periodic re-scraping; expert ratings and state-legislature track records are not inputs.
+REFERENCE
+Code and commands
+CONSTANT INDEX
+every key of FORECAST_CONSTANTS, and where it is documented above
+ENV_MISS_SHRINK
+ENV_PV_BASIS
+ENV_DAYS_MID_SEPT_TO_ELECTION
+NATIONAL_SIGMA_STRUCTURAL
+HOUSE_ENV_MULTIPLIER
+APPOINTED_INCUMBENCY_SHARE
+COMPETITIVE_INCUMBENCY
+COMPETITIVE_INCUMBENCY_WIDTH
+MONEY_BASIS
+MONEY_K
+MONEY_CAP
+PARTIAL_CYCLE_GAP_SCALE
+QUALITY_WEIGHT
+OBSERVABLE_PRIOR_FEATURES
+POLL_K
+POLL_MISS_SHRINK
+POLL_MISS_HISTORICAL
+POLL_HALF_LIFE_DAYS
+POLL_UNDECIDED_ALLOCATION
+POLL_UNDECIDED_CAP
+POLL_W_MAX
+POLL_SIGMA
+THREE_WAY_SIGMA_MULT
+POLL_AGING_SHARE
+HOUSE_EFFECTS
+HOUSE_EFFECT_K
+HOUSE_EFFECT_WINDOW_DAYS
+HOUSE_EFFECT_PARTISAN_PRIOR
+HOUSE_EFFECT_CAP
+RACE_SIGMA
+DEMOGRAPHIC_SHOCK
+STATE_SHOCK
+WHERE IT LIVES
+lib/forecast.ts
+forecastRace (margin, σ, probability, rating, contest), seat totals, chamber simulation.
+lib/tplCompute.ts
+projectRace, environment, incumbency, raceMoneyTerm, candidateQuality, raceSigma, winProbabilityD, racePollingFor.
+lib/racePollAverage.ts · lib/pollsterHouseEffects.ts · lib/genericBallotAverage.ts
+Poll averaging, aging, house effects, generic ballot.
+data/tplModelData.ts
+FORECAST_CONSTANTS — every tunable above, with its provenance comment.
+lib/colorScale.ts
+marginToRating bands and colors.
+data-entry/*.csv → data/*.ts
+Seats and nominees (build.js), race polls (build-race-polls.js), fundraising (generate-fundraising-data.py), environment history (build-national-environment.js).
+RE-RUN AFTER A CHANGE
+npx tsx scripts/forwardBacktest.ts --env struct --emit
+Re-score the model and regenerate the Calibration tables on this page (data/forecastCalibration.ts).
+… --ablate · --money · --sept-money · --quality · --polls · --pollsters · --seat-status · --appointed · --decay-sweep · --prior-sweep
+The sweep behind each calibrated constant; run the matching one before changing it.
+npx tsx scripts/tplBacktest.ts
+TPL tracking harness — must still PASS after any change to strips or the fit.
+npx playwright test tests/e2e/forecast-derived.spec.ts
+Rating = band of the displayed margin on every list; race-page derived rows.
+WHAT CHANGED, AND WHEN
+Revision history
+Nov 3, 2026
+CHANGE
+Forecast locked as final (8:30 AM ET, November 3)
+
+FORECAST_FINAL_AT in lib/forecastClock.ts pins the forecast clock at 2026-11-03 13:30 UTC. Every date-dependent input reads that instant instead of the wall clock: poll aging, the race, generic-ballot and approval averages, house effects, the environment's horizon, the Overview, the forecast-over-time series (it ends on November 3) and the daily snapshot. Without the lock the numbers would keep drifting through the day on poll aging alone: a nine-hour later run moves 36 races by 0.1 points and Senate control by 0.1 points. The locked numbers are data/forecast-history/2026-11-03.json. `npm run check-lock` (also a CI step) rebuilds the snapshot and fails on any difference, so a later data or code change cannot silently move the final forecast. Every forecast page carries a "Final forecast" pill (components/FinalForecastPill.tsx): race pages, the Senate / House / Governor forecast pages, the Overview, state pages and the legislature pages.
+
+EFFECT Final: House D 236.4 seats (80% 219–255), P(D control) 91.4%; Senate D 51.6 (48–55), 65.2%; governors D 26.6 (23–30); generic ballot D+9.0.
+
+Nov 3, 2026
+DATA FIX
+Candidate identity: one person, one WAR record across spellings
+
+The WAR / candidate-effect key is state | party | name, and the name was matched exactly after dropping punctuation. Two things split one person's record in two. Accents were deleted rather than folded ("Raúl" → "ral", "André" → "andr", "Barragán" → "barragn"), and results files carry different spellings in different years (James / Jim Himes, Mike / Michael Turner, Mary Gay / Mary Scanlon, Becca / Rebecca Balint, Jefferson / Jeff Van Drew…). For 2026 nominees on a new ballot spelling the lookup found nothing, so they were forecast as if they had no track record (an incumbent's effect read exactly 0). The final pre-lock audit (scripts/audit-war-identity.ts) compared every same-state, same-party, same-surname pair of keys. New SAME_PERSON_IN_STATE in lib/candidateSlug.ts maps 70 spellings to one name each (25 people on the 2026 ballot, 42 past candidates only; canonical = the 2026 ballot name, else the most recent). warCandidateKey folds accents and applies the map, and data/candidateOffices.ts is re-keyed through it, so the observable prior pools both spellings' offices. Candidate pages merge on the same map, and the old slugs redirect. Party switchers also keep one record (PARTY_SWITCHERS fixes the party label in their key: Jolly R→D, Bengs D→independent, Van Drew D→R; user decision). This is safe because an effect is signed toward the candidate, not the party. Left deliberately split: different people with one surname (Peter / Paul King, Sherrod / Shontel Brown, Adam / Adrienne Bell, Mark / Max Rice, Chris / John Sununu, Raúl / Adelita Grijalva).
+
+EFFECT OH-10 R+4.4 → R+6.3 (P(D) 20% → 11%), FL-27 R+3.7 → R+4.9 (25% → 18%), NY-01 R+3.6 → R+4.5 (30% → 25%), VA-02 D+3.6 → D+2.9 (75% → 71%), NJ-02 R+8.3 → R+9.1, SD-Sen R+24.4 → R+26.7 (Bengs's 2022 record), FL-Gov R+4.65 → R+4.68; 43 races move by 0.05 pts or more, all other changes are in safe seats. House mean 236.6 → 236.4 seats, P(D House) 91.5% → 91.4%; Senate and governors unchanged. Forward backtest neutral (pooled MAE S 4.91 → 4.92, G 8.84 → 8.84, H 6.27 → 6.28; coverage and Brier unchanged); Calibration tables re-emitted.
+
+Nov 3, 2026
+DATA FIX
+Race polls: final election-morning refresh, plus a RealClearPolling cross-check
+
+The last Wikipedia scrape added 3 polls (Targoz TN-Gov and TN-Sen, GrayHouse (R) NE-Sen) and moved the SC-Sen Rasmussen start date to October 27, where Wikipedia corrected it. Every poll on RealClearPolling's November 1 and 2 lists was then checked against the file: 9 were missing and were added from the pollsters' own releases. Trafalgar (R) MI-Sen; Rasmussen OH-Gov and SC-Gov (October 27–31); InsiderAdvantage (R) AK-Sen ranked-choice final round 50–50; NYT/Siena AK-Gov 54–46 and AK-01 Begich 52–48 final rounds, which Wikipedia lists only as first choices; UNH NH-01, NH-02 and ME-02. UNH's district subsamples could not be read, so they are set at about half the statewide sample, as in September (1,020 / 1,020 / 790). Polls that appear on both sites with slightly different numbers keep Wikipedia's figures.
+
+EFFECT ME-02 Lean D → Lean R (D+1.0 → R+1.3), NH-01 D+6.1 → D+8.1, NH-02 Safe D → Likely D, AK-Gov D+1.9 → D+2.5, SC-Gov R+11.3 → R+10.9; TN-Gov Likely → Safe R. P(Democratic Senate control) 66% → 65%; House unchanged by these polls.
+
+Nov 3, 2026
+CHANGE
+House environment multiplier 1.2 (HOUSE_ENV_MULTIPLIER) — and a correction to this morning's revert
+
+Correction first: the environment-scale sweep cited in the morning's revert entry had been run while the House-vote switch was still on, so every column sat on top of the 1.77 multiplier — its "×1" was really ×1.77 and its "×1.75" really ×3.1. The statement that 2018 rejected the multiplier by 4.6 points was a misreading, and the switch was turned off on it. Rerun cleanly (switch off, imputed basis, 1,284 House races): with the oracle E the 2018 House bias is −4.2 at ×1, −1.6 at ×1.75 and +0.2 at ×2.25 (411 races); 2022 wants ×2 or more, 2024 about ×1.2, 2020 under ×0.8; pooled oracle MAE 6.20 / 6.16 / 6.14 / 6.16 at ×1 / 1.2 / 1.4 / 1.75. Under the live rule the pooled model-only MAE is 6.26 / 6.25 / 6.27 / 6.38 and the full blend one day out 5.93 / 5.93 / 5.96 / 6.01, with pooled bias R+0.2 / +0.5 / +0.7 / +0.7 — the bias rises with the multiplier because 2020 and 2024 were Republican polling-miss years, which the miss shades address separately. The House's response to E is year-dependent and the pooled optimum sits between 1.2 and 1.4. The boolean switch is replaced by a numeric HOUSE_ENV_MULTIPLIER on the House environment term and on the generic-ballot part of its national error (σ_E,House = √(NATIONAL_SIGMA_STRUCTURAL² + (λ × |s| × GB error)²)); the backtest mirrors it with --house-lambda N|vote. Set first to 1.2 (identical blend error to 1) and then, the same hour, to 1.4 — the oracle-E optimum (user decision 2026-11-03). Between 1.2 and 1.4 nothing in the backtest separates the values: one-day blend error 5.93 / 5.94 / 5.96 at 1.2 / 1.3 / 1.4, bias R+0.5 / +0.6 / +0.7, and each tenth trades 0.4 pts of 2018 miss for 0.2 pts of 2020 miss (2018 model-only bias −2.3 / −1.9 / −1.5; 2020 +2.9 / +3.1 / +3.3). The choice is a judgment about which year type 2026 resembles; the user's reading of the environment favours the wave-year end.
+
+EFFECT Live at 1.4: House environment per β*=1 D+4.73 → D+6.62 (σ_E,House 2.95 → 3.25); expected Democratic seats 232.1 → 236.6, 80% range 216–249 → 219–255, P(Democratic control) 87% → 92%. Implied national House vote D+5.6 → D+7.2 (contested D+3.7 → D+5.2). Each tenth of the multiplier is worth about half a point of House margin, a seat and a quarter, and 0.4 pts of national vote; the same nine to eleven races sit within 1.5 pts at every setting. Senate and Governors untouched by the multiplier.
+
+Nov 3, 2026
+DATA FIX
+Fundraising: final pre-election read — governors from the states' own portals, FEC receipts and outside spending
+
+Governor receipts for 31 of 36 races re-read from each state's official campaign-finance portal under the rule the October 23 portal rows used (contributions from 2025-01-01 through the latest filed report, cash + in-kind, loans excluded, public funds counted). 18 of them (AZ CA CO GA IA IL MI MN NM NY PA SC TX WI WY, plus AL ID KS MA MD) had come from Transparency USA, which now sits behind a Cloudflare challenge; its figures were frozen at about October 10 and often months staler. The pre-general reports explain most of the rise (IA Lahn $1.2M → $30.5M with the RGA, GA Jackson $119M → $244M self-funded, IL Pritzker $25.6M → $91.4M self-funded, WI Crowley $1.4M → $31.4M in party transfers). Idaho is now a portal figure (was a rounded news estimate); Michigan's James drops one of two identical $1.8M 10/16 in-kind media entries as a duplicate. AK (DataDome CAPTCHA), FL, NH, NV and OH (bot walls) keep their earlier rows. FEC weball receipts moved one side (MO-07, +$900): the pre-general reports were already in the November 1 read, and nothing newer is published before the post-general report. Outside spending through November 1.
+
+EFFECT Governor margins move up to 1.2 pts (SC R+10.0 → R+11.3, IA D+5.8 → D+5.3, WI D+3.6 → D+4.0, OR D+7.4 → D+7.1, OK R+15.4 → R+15.7), no rating changes; expected Democratic governors 26.54 → 26.52. House and Senate unchanged.
+
+Nov 3, 2026
+CHANGE
+Environment conversion and miss fitted against the uncontested-imputed House vote (ENV_PV_BASIS imputed)
+
+E = c + s × PV and the historical miss (PV − final generic ballot) were fitted against the official House total, in which an unopposed seat gives its whole vote to one party. The generic ballot asks every voter which party's House candidate they prefer, including voters in seats with no contest, so the quantity it measures is the House vote with every uncontested and same-party seat filled with the two-party result a D-vs-R race there would have produced — the imputed basis built for /analysis/generic-ballot (district presidential margin on the lines run plus that year's contested House−presidential offset, at the state's median contested turnout, scaled to percent of total). data-entry/national_environment_history.csv gains house_pv_imputed (2016 R+0.9, 2018 D+7.8, 2020 D+2.1, 2022 R+1.9, 2024 R+2.1 against official R+1.1 / D+8.6 / D+3.0 / R+2.7 / R+2.6); getEnvironmentModel and the backtest read it through housePvOnBasis / --env-basis. The fit moves from E = 0.52 + 0.57 × PV to 0.59 + 0.66 × PV, mean miss 1.8 → 1.9, so each race's environment term reads about 0.65 pts more Democratic today (E_hat D+4.06 → D+4.73). Raised as a basis inconsistency on 2026-11-02; adopted only after the backtest came back neutral or better in every office.
+
+EFFECT Backtest, model alone: Senate MAE 5.04 → 4.91, |bias|/yr 2.94 → 2.67, 80% coverage 73% → 77%; Governor 8.92 → 8.84; House 6.28 → 6.26 (1,284 races). Blend one day out: Senate 3.88 → 3.84, Governor 4.80 → 4.73, House 5.94 → 5.93; bias within 0.2 of before. Live: House expected Democratic seats 230.5 → 232.1, 80% range 215–247 → 216–249, P(Democratic control) 84.6% → 87.3%; Senate 51.5 → 51.6, 63.8% → 65.4%; Governors 26.4 → 26.5. Implied national House vote D+5.2 → D+5.6 (contested D+3.2 → D+3.7).
+
+Nov 3, 2026
+DATA FIX
+Generic Ballot vs Popular Vote: the "every vote" basis credited same-party finalists and stand-ins to the wrong party
+
+lib/genericBallotPopularVote.ts summed the dem and rep vote columns as Democratic and Republican votes. In a California or Washington same-party final the second finalist sits in the other column tagged "(D)" or "(R)", and a stand-in for a missing major party is tagged "(I)" or by party initial, so the raw total counted a second Democrat's votes as Republican and an independent's as a major party's. Votes are now credited to the party actually on each column, and tagged stand-ins count for neither. The corrected "every vote" margins match the official House totals to a tenth in every year (2016 R+1.1, 2018 D+8.7 vs official D+8.6, 2020 D+3.1 vs D+3.0, 2022 R+2.8 vs R+2.7, 2024 R+2.7 vs R+2.6); before the fix they read R+1.7 / D+8.0 / D+2.0 / R+3.2 / R+2.9. The contested and imputed bases were unaffected.
+
+EFFECT Page only (the forecast never read this column): raw-basis mean miss R+2.4 → R+1.8, the chart's "every vote" marks and the yearly table move accordingly.
+
+Nov 3, 2026
+CHANGE
+Chamber simulation: one shock per state for House seats (STATE_SHOCK H 3.5), no region term
+
+The simulation drew a national shock, two demographic shocks and independent race noise, so two House seats in the same state were correlated only through those channels. The expanded backtest's residuals (2018–2024 House on the lines of the day, 1,284 races, each year's national miss removed) show a component shared within a state-year of 3.7 / 4.2 / 2.4 pts sd in 2018 / 2020 / 2022+24, 3.5 pooled — 17% of the residual variance, present in every cycle, 3.5–3.9 in states with six or more scored seats and under 1 in states with three to five. A per-state draw of that size now enters every House seat in the state, carved out of the race's own noise like the demographic shock, so race probabilities and ratings are unchanged. Statewide races get no state or region term: Senate residuals share no regional error in any year (0.00 pooled and in 2020, 2022, 2024), and the governor figure (4.8) is 2018's Northeast Republican governors alone — a candidate pattern, not a regional one. The Midwest-vs-Sun-Belt pattern visible across states in 2018 and 2020 is what the demographic shock already models, so a region term would double-count it.
+
+EFFECT House: P(Democratic control) 83.3% → 84.6%, 80% range 214–246 → 215–247, seat sd 12.5 → 12.6; expected seats 229.8 → 230.5 (seed path). Senate and Governors unchanged (entries 0). The small effect is the point: with each race's spread held fixed, only the co-movement of competitive seats in the same state changes, and those seats are spread across many states.
+
+Nov 3, 2026
+CHANGE
+House environment back on the E scale (HOUSE_ENV_ON_VOTE_SCALE off) and House race error 5.0 → 5.5, on the first 2018/2020 House backtest
+
+The 2026-11-02 change put House races on the House-vote scale (β* × E_hat ÷ s, ×1.77) on the argument that the House vote is the sum of the House margins; its only race-level evidence was 6 House races of 2018. The backtest now scores 2018 and 2020 House races on the lines of the day (see the entry below), and they do not support it: with the oracle E the 2018 House bias is −0.2 at ×1 and +4.6 at ×1.75 (411 races); under the live environment rule a multiplier of about 1.2 zeroes 2018 and ×1.75 over-shoots by 2.6; pooled over 1,284 House races the live blend one day out ran R+1.0 biased with the scale and R+0.2 without it, MAE 6.00 against 5.94. The aggregate identity fails because district leans are anchored on presidential margins, which already carry part of each year's House swing. The switch is off; the machinery stays for the harness. RACE_SIGMA.H rises to 5.5: the four-cycle robust House spread reads 6.5 and 5.0 covered 71% at the nominal 80%; the 2018/2020 leans rest on thinner history than the live leans, so the live value sits between the two-cycle and four-cycle readings. The poll shade of earlier today is unchanged: on the House it is neutral (bias R+0.3 → R+0.2, MAE within 0.03) and its Senate gain stands.
+
+EFFECT Live: House expected Democratic seats 237.2 → 229.8, 80% range 218–256 → 214–246, P(Democratic control) 91% → 83%; Senate and Governors unchanged. Implied national House vote D+7.6 → D+5.2 (contested seats D+5.6 → D+3.2). Backtest (1,284 House races, 1 day out): MAE 6.00 → 5.94, bias R+1.0 → R+0.2, 80% coverage 70% → 72%.
+
+Nov 3, 2026
+DATA FIX
+Forward backtest: 2018 and 2020 House races scored on the district lines of the day (6 + 5 → 411 + 419 races)
+
+House races were scored only where the district's 2026 lines were in force, which left 6 races in 2018 and 5 in 2020 — the two years with a real national environment. scripts/forwardBacktest.ts now builds those years on the map actually used (--house-vintage, default on): presidential results by district on the 2012-cycle, 2016, 2018 and 2020 maps from The Downballot (data-entry/pres_by_cd_downballot/), House results on those lines from data-entry/house_past_results.csv and the MIT Election Lab 1976–2024 returns for 2012 and 2014 (data-entry/house_past_results_pre2016/, parsed and validated against our 2016 rows: 430 of 435 within 2,000 votes), FEC receipts for 2016+ (2012/2014 nominees not yet matched, strip 0), the district's own polls (785 House polls in 159 races in 2018) and candidate records, with a lean built by the same decay-weighted two-pass Huber aggregation as calculateDistrictModel. Environment strips for 2008/2012/2014 rows use the structural conversion of that year's actual House vote. Mid-decade redraws (FL/VA/NC 2016, PA 2018, NC 2020) start a district's House rows at the new map. --house-vintage off reproduces the earlier numbers exactly.
+
+EFFECT House sample 465 → 1,284 races. Model-only MAE 2018 6.66 (bias D+1.3), 2020 7.85 (R+3.8), 2022 4.56, 2024 4.58. Findings: the House response to E is ≈1 (the vote-scale rule reverted, entry above); the poll shade is neutral on the House; House seats in the same state share 3.5 pts of error (17% of residual variance) in every cycle, the figure for a future state shock; the robust House spread with wave years is 6.5. Calibration tables re-emitted on the expanded sample.
+
+Nov 3, 2026
+CHANGE
+Race polls shaded by half their office's historical final-poll miss (POLL_MISS_SHRINK 0.5 × POLL_MISS_HISTORICAL S 3.3 / G 1.8 / H 2.5)
+
+House effects are measured against the field, so a miss every pollster shares passes straight through them. The field has shared one: each pollster's last poll of a race from October 1 (the /analysis/polling-misses rule) has landed Republican of the result on average in every even year since 2016 — Senate R+3.3 over 152 races (4.6 / −0.1 / 7.2 / 1.7 / 3.4 in 2016–2024), Governor R+1.8 over 101 — and the contested House vote has landed Republican of the final generic ballot in all five cycles (R+2.5, /analysis/generic-ballot), which the House takes in place of a race-poll history it does not have. On the eve of the election the poll averages sat Democratic of the structural model in 51 of 72 competitive House races (mean 2.8 pts), 13 of 14 competitive Senate races (4.7) and 12 of 14 competitive Governor races (5.6), at poll weights of 0.7 in the statewide races. The blend now reads each office's poll average POLL_MISS_SHRINK × its historical miss toward the Republican — the same half-shade the generic ballot receives through ENV_MISS_SHRINK, and for the same reason: the direction of the miss has repeated, its size has not (2018 ≈ 0, 2022 ≈ 1.7), so half is shaded and the rest stays in POLL_SIGMA and σ_E. Applied once per race after house effects, whatever the pollsters; the displayed Polling Avg stays at face value and the race page states the shade beside it. Pollster quality weights, a per-pollster miss and the partisan-sponsor prior remain off: the earlier tests found none of them persists cycle to cycle, while the field-wide direction has. The October 22 review's verdict on this evidence was widen rather than shift; the shift is the user's decision of 2026-11-03.
+
+EFFECT Live: House expected Democratic seats 239.1 → 237.2, P(Democratic control) 93% → 91%; Senate 52.4 → 51.5, 77% → 64%; Governors 26.9 → 26.4. Kansas Senate D+0.9 → R+0.4 and Iowa Senate D+0.6 → R+0.7 cross the line; Georgia Governor D+1.0 → D+0.3. Implied national House vote D+7.8 → D+7.6 (contested seats D+5.8 → D+5.6). Horizon-matched backtest, blend of model and polls, one day out: Senate MAE 4.14 → 3.88 and bias +1.52 → +0.73, Governor 4.84 → 4.80 (bias +1.97 → +1.43), House 4.29 → 4.31 (bias +0.86 → +0.72); 28 days out Senate 4.40 → 4.12, Governor 5.66 → 5.59, House 4.30 → 4.29; 80% coverage within a point of before at every horizon. --polls (Nov 1, k refit leave-one-year-out): Senate blend 4.60 → 4.02, Governor 4.53 → 4.45, House 3.50 → 3.32. Caveat: the shade's size is measured on the same 2016–2024 races the backtest scores, so these are in-sample for the direction; only k is held out by year.
+
+Nov 2, 2026
+DATA FIX
+Election-eve poll refresh: race polls through November 2, generic ballot and approval through November 1
+
+`npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. New this run: final AtlasIntel, Emerson, Survey 160 and New York Times/Siena polls across the Midwest, Maine, Ohio and Texas; a Research Co. wave (450 LV) in 21 Senate and Governor races; University of New Hampshire polls in five New England states; Trafalgar (R) in Ohio, South Carolina and Texas; InsiderAdvantage (R) in Georgia and Minnesota; and back-filled CU Boulder/YouGov (Colorado), UMass Lowell (Massachusetts, New Hampshire) and Concord (D) (Ohio) polls from October. A Greg Rigamer LA-06 poll from August was picked up (party-summed, jungle race). Wikipedia corrected the New York Times/Siena Texas Senate poll's start date from October 23 to October 27 (same release as the Governor poll); the on-file row's date was fixed in place. From RealClearPolitics (the user's screenshots): 10 generic ballot polls (newest Financial Times, Reuters/Ipsos, AtlasIntel and Morning Consult, all ending November 1) and 11 approval polls, including a back-filled Wall Street Journal October 14–22 poll. No method change.
+
+EFFECT 104 new race polls (49 Governor, 4 House, 51 Senate); 1,460 polls in 177 races, newest ending 2026-11-02. Generic ballot average D+8.3 → D+9.0; net Trump approval −21.4 → −21.0. Combined: House expected Democratic seats 236.3 → 239.1, P(Democratic control) 90% → 93%. Senate 51.9 → 52.4, 70% → 77%. Governors 26.3 → 26.9. 34 rating changes, most of them ~0.7-pt generic-ballot moves across a band edge; the poll-driven ones: Kansas Senate Tilt R → Tilt D (R+0.9 → D+0.9), Iowa Senate Tilt R → Tilt D (R+0.2 → D+0.6), Alaska Senate Lean R → Tilt R, Florida Senate Likely R → Lean R, Michigan Senate Lean D → Likely D, Nevada Governor Lean R → Tilt R, Vermont Governor Safe R → Likely R, Colorado Governor Likely D → Safe D. Largest same-rating moves: Rhode Island Governor D+28.8 → D+33.9, LA-06 R+28.3 → R+24.5, Louisiana Senate R+14.0 → R+11.2, New Hampshire Governor R+7.7 → R+5.7, Kansas Governor R+4.6 → R+2.8.
+
+Nov 2, 2026
+CHANGE
+House races take the environment on the House-vote scale (HOUSE_ENV_ON_VOTE_SCALE): β* × E_hat ÷ s, national error without the × s
+
+E is one environment fitted across every office, so it moves about s = 0.57 points per point of House popular vote: Senate, Governor and presidential margins swing less than the House vote does, and in 2022 the other way. The forecast converted the generic ballot to PV_hat (D+7.4 today) and then to E_hat (D+3.7), and House races received β* × E_hat — so the 435 House projections summed to a national House vote of D+4.9 (D+2.9 on contested seats) while the model's own House-vote estimate was D+7.4. That is a contradiction in the aggregate: the House vote IS the sum of the House margins. Decomposing the House sum showed the whole gap was the environment term (incumbency, money, quality and the poll blend net to under half a point). House races now take β* × E_hat ÷ s = β* × (PV_hat − pv0), the full House-vote swing from the level at which E is zero, and carry the national error on the vote scale, √(NATIONAL_SIGMA_STRUCTURAL² + GB error²) rather than with the GB error × s. Senate and Governor are unchanged. The same rule is applied in scripts/forwardBacktest.ts (--no-house-scale restores the old scoring).
+
+EFFECT Live: House projections sum to D+7.1 (contested D+5.1); House mean 229.7 → 236.3 seats, 80% range 213–246 → 217–255, P(D control) 82% → 90%; Senate and Governor untouched. Backtest (env=struct, 465 House races): pooled MAE 4.56 → 4.61, mean |year bias| 4.06 → 4.16, national-sd 4.70 → 4.51, 80% coverage 79% → 81%; by year 2018 (n 6) 7.70 → 5.82, 2020 (n 5) 5.13 → 6.90, 2022 4.56 → 4.56, 2024 4.48 → 4.58. Oracle-E --lambda: the House response to E is ≈1 in 2024 and ≥2 in 2018/2022, so the backtest cannot settle a single multiplier; adopted on the aggregate argument (user decision), to be judged on the 2026 contested House vote.
+
+Nov 1, 2026
+DATA FIX
+FEC receipts refreshed with the pre-general reports
+
+scripts/fetch-fec-race-finance.py re-read the FEC's weball26 summary (2026-11-01 vintage, mostly through October 14) for every 2026 House and Senate nominee with an FEC id; the receipts drive the money term. The candidate-committee detail (cash on hand, spending, small-dollar share) and the 24/48-hour outside-spending reports were refreshed in the same run (display only). Montana's Seth Bodnar now has his own detail row. No method change.
+
+EFFECT 810 receipt figures updated (2 newly filled). House: expected Democratic seats 229.6 → 229.7, P(Democratic control) 82% unchanged. Senate 51.9, 70% unchanged. Governors 26.3 unchanged. Largest margin move 1.2 pts (MA-01 D+23.2 → D+22.0; Louisiana Senate R+14.4 → R+14.0). Rating changes, all at a band edge: Alaska Senate Lean R → Tilt R (R+1.0), FL-27 Likely R → Lean R (R+5.0), WI-01 Likely R → Lean R (R+4.9), NC-14 Safe R → Likely R (R+15.0), NY-04 Likely D → Safe D (D+15.0).
+
+Nov 1, 2026
+DATA FIX
+Race polls refreshed through November 1
+
+`npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. New this run: a YouGov wave across ten Senate and Governor races (October 26–29), the final New York Times/Siena polls in Kansas, Maine, Michigan, Nebraska, Ohio and Texas, Data for Progress (D) in Maine, Michigan and Texas, USC in four California districts, four new Florida polls in both statewide races (Political Matrix/The Listener Group, InsiderAdvantage (R), Big Data Poll, Stetson), Alaska Survey Research's ranked-choice final round in the Senate race, and back-filled Lake Research Partners (D) polls from late September in Arizona and Colorado. Montana State University Billings' House polls (adults, 31% undecided in MT-02) were picked up; MT-02 has an independent, Michael Eisenhauer, at 9–15%, but at R+23 it is not added to the three-way races. No on-file row was newly removed from Wikipedia. No method change.
+
+EFFECT 59 new polls (24 Governor, 6 House, 29 Senate); 1,356 polls in 175 races, newest ending 2026-11-01. House: expected Democratic seats 229.5 → 229.6, P(Democratic control) 81% → 82%. Senate 51.7 → 51.9, 67% → 70%. Governors 26.2 → 26.3. Six rating changes: Kansas Senate Lean R → Tilt R (R+1.4 → R+0.9), Kansas Governor Likely R → Lean R (R+5.1 → R+4.6), Florida Governor Likely R → Lean R (R+5.2 → R+4.7), CA-22 Lean D → Likely D (D+5.0 → D+5.7), Illinois Senate Safe D → Likely D (D+15.5 → D+14.5), Colorado Governor Safe D → Likely D (D+15.3 → D+14.4). Largest same-rating moves: CA-01 D+17.3 → D+15.1, MT-02 R+25.3 → R+23.3, MT-01 D+1.0 → D+3.0, MN-08 R+11.5 → R+10.1, Nebraska Governor R+7.5 → R+8.8.
+
+Oct 30, 2026
+CHANGE
+Montana Senate re-centered on Alme vs Bodnar; three-way races widened; non-caucusing independents
+
+Montana's Senate race was modeled as Kurt Alme (R) against the Democratic nominee Alani Bankhead, who has run third in every poll since July (Wikipedia's aggregate average: Alme 41.0, independent Seth Bodnar 30.5, Bankhead 17.4). Bodnar now fills the Democratic slot as an unaligned independent (data-entry/senate_seats.csv "Seth Bodnar (I)"), the way Dan Osborn does in Nebraska. The race's 18 on-file polls were rewritten to Bodnar's share from the same full-field question (user-approved exception to the append-only rule), and scripts/fetch-race-polls.py now reads an "(I)" slot's own column without party-summing the party's nominee into it. Bodnar's FEC receipts ($4.92M through October 14, candidate S6MT00287) replace Bankhead's $0.19M in the money term. One rule is new: three-way races (data/raceEligibility.ts THREE_WAY_RACES, a third candidate polling in double digits; only Montana Senate today) multiply the race's own error by THREE_WAY_SIGMA_MULT = 1.35, measured by scripts/threeWayBacktest.py: in 2008–2024 races where a third candidate took 15% or more, final-three-week poll averages missed by 1.34× the error of ordinary races with as many pollsters (15 races, 90% bootstrap 0.91–1.76; log score best between 1.25 and 1.5). Two-way independent races (Kansas 2014, Utah 2022, Nebraska 2024) missed no more than ordinary races, so Nebraska is not widened. As with Osborn, a Bodnar win counts toward the Democratic side of the seat totals and the control odds (user decision, for continuity).
+
+EFFECT Montana Senate R+20.6 Safe R (vs Bankhead) → R+9.9 Likely R vs Bodnar; Model R+13.2 → R+8.0 (the money term flips to Bodnar), poll average R+25.5 → R+11.1; σ 5.6 → 6.7; P(Bodnar) 7.1% (Polymarket 13%). Senate expected Democratic seats 51.6 → 51.7, P(Democratic control) 67% unchanged (66.9% → 67.2%). Other races moved only through the pollster house effects, which are re-estimated with Montana's rewritten polls (the Bankhead shares had ranged 10–21 across pollsters): at most 0.5 pts (Arizona Governor D+8.0 → D+8.5, OH-07, FL-22, PA-01, MT-02); House 229.4 → 229.6, P(Democratic control) 81% → 82%; two band-edge rating changes, MI-10 Tilt D → Lean D (D+1.0) and Vermont Governor Safe R → Likely R (R+15.0).
+
+Oct 30, 2026
+DATA FIX
+Race polls refreshed through October 29
+
+Daily `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. New this run: Emerson College and Washington Post/SSPG in Kansas (Governor and Senate), Noble Predictive Insights in Arizona and Nevada Governor, KSTP/SurveyUSA in Minnesota, Quantus Insights in Texas, Workbench Strategy (D) in Florida, Berkeley IGS in California Governor, Michigan State University/Verasight, and Hart Research (D) in Louisiana Senate. Wikipedia lists Patinkin Research Strategies' (D) South Carolina Senate poll as October 29–27; it is on file as October 27–29 (the toplines are dated October 30). No on-file row was newly removed from Wikipedia. No method change.
+
+EFFECT 18 new polls (9 Governor, 9 Senate); 1,297 polls in 172 races, newest ending 2026-10-29. House: expected Democratic seats 229.4, P(Democratic control) 81% unchanged. Senate 51.4 → 51.6, 64% → 66%. Governors 26.1 → 26.2. Two rating changes: Louisiana Senate Safe R → Likely R (R+17.5 → R+14.4) and PA-10 Tilt R → Tilt D (at the band edge). Largest same-rating moves: Kansas Governor R+6.6 → R+5.1, Kansas Senate R+2.8 → R+1.3, Montana Senate R+21.7 → R+20.6.
+
+Oct 30, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 29
+
+Polls RealClearPolitics has added since the October 28 update, taken from the user's screenshots of RCP's tables, were appended to data-entry/generic_ballot_polls.csv (1: Emerson October 24–26, D+10) and data-entry/trump_approval_polls.csv (3: Emerson October 24–26, Rasmussen Reports October 25–29, RMG Research October 19–27), and both were rebuilt with their data-entry scripts. Nothing in the method changed.
+
+EFFECT Generic ballot D+8.3 unchanged (RCP's own average D+8.2). Approval net −21.5 → −21.4 (38.3 approve, 59.7 disapprove; RCP −21.3).
+
+Oct 29, 2026
+DATA FIX
+RedBox Research / A Fight Worth Having poll series and an unnamed Ohio poll removed
+
+All 30 RedBox Research (D) polls of October 20–23 sponsored by A Fight Worth Having were deleted from data-entry/race_polls.csv: 22 House districts plus Arizona, Florida, Nevada and Ohio Governor and Florida, Kansas, Michigan and Ohio Senate. Wikipedia's editors have been removing the series race by race as an unreliable source (AZ-01 and AZ-06 on October 28, five Florida districts on October 29); the whole series is dropped at once rather than following the removals district by district. scripts/fetch-race-polls.py now skips any poll whose citation is on afightworthhaving.com (BLOCKED_SOURCES), so the series cannot return; RedBox polls for other sponsors are still read. The Ohio Governor poll of October 23–26 reported by Axios as an unnamed GOP poll (on file as "Undisclosed GOP pollster") was also deleted: with no pollster, its house effect cannot be estimated, and Wikipedia removed it for the same reason. Public Policy Polling's (D) FL-13 poll of October 14–15, removed from Wikipedia in the same edit as the Florida RedBox rows, is kept. No method change.
+
+EFFECT 31 polls deleted; 1,279 polls in 172 races. House: expected Democratic seats 230.0 → 229.4, P(Democratic control) 83% → 81%. Senate 51.5 and 64% unchanged. Governors 26.1 unchanged. Eight rating changes: MI-10 Tilt R → Tilt D (R+0.9 → D+1.0), PA-08 Tilt D → Tilt R (D+0.7 → R+0.2), PA-10 Tilt D → Tilt R (D+1.0 → R+0.0), OH-07 Lean D → Tilt D, MT-01 Tilt D → Lean D, FL-27 and WI-01 Lean R → Likely R, Nevada Governor Tilt R → Lean R (R+1.0 → R+1.9). Largest same-rating moves: OH-09 D+4.1 → D+2.4, OH-01 D+7.4 → D+6.1, AZ-01 D+4.7 → D+3.4, AZ-06 D+2.8 → D+1.6.
+
+Oct 29, 2026
+DATA FIX
+Race polls refreshed through October 28
+
+Daily `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. New this run: an SSRS multi-state wave (Kansas, Maine, Michigan, Texas), co/efficient (R) Iowa, Texas Southern University, and back-filled Concord Public Opinion Partners (D) Ohio polls from late August. Wikipedia removed seven on-file rows today, all kept pending a decision: the unnamed GOP Ohio Governor poll of October 23–26 (an IP editor: "we don't even have its name"), and, citing WP:RS (editor Jjose172, as for AZ-01/AZ-06 the day before), RedBox Research (D) / A Fight Worth Having polls in FL-13, FL-14, FL-22, FL-25 and FL-27 together with Public Policy Polling's (D) FL-13 poll of October 14–15. No method change.
+
+EFFECT 26 new polls (11 Governor, 1 House, 14 Senate); 1,310 polls in 173 races, newest ending 2026-10-28. House: expected Democratic seats 229.9 → 230.0, P(Democratic control) 83% unchanged. Senate 51.3 → 51.5, 62% → 64%. Governors 26.1 unchanged. Two rating changes, both at a band edge: Georgia Governor Tilt R → Tilt D (R+0.0 → D+0.1) and Vermont Governor Safe R → Likely R (R+15.1 → R+15.0).
+
+Oct 28, 2026
+DATA FIX
+Race polls refreshed again (through October 27), plus one generic-ballot and one approval poll
+
+Second `npm run refresh` of the day, append-only as before. RedBox Research (D) polls sponsored by A Fight Worth Having arrived in 18 more House districts; Wikipedia's editor Jjose172 removed the AZ-01 and AZ-06 rows from that series today citing WP:RS, while the same series stays listed in every other race, so the two Arizona rows on file were kept. An Ohio Governor poll (October 23–26, 800 LV, 50/42) reported by Axios as an unnamed GOP poll is listed on Wikipedia with a {{TBA}} pollster and a style attribute missing its closing pipe, which the scraper had read as the pollster name; the row is now "Undisclosed GOP pollster" (R), and scripts/fetch-race-polls.py strips attributes typed without their pipe. A GOTV Polling Tennessee Governor poll (October 25–26) was picked up on a re-run. From RealClearPolitics (the user's screenshots): Cygnal's October 23–24 generic ballot (D+9) and Rasmussen's October 21–27 approval wave (41/57) were appended. No method change.
+
+EFFECT 47 new race polls (16 Governor, 20 House, 11 Senate); 1,284 polls in 173 races, newest ending 2026-10-27. Generic ballot D+8.3 and approval −21.6 unchanged (RCP D+8.2 and −21.6). House: expected Democratic seats 229.3 → 229.9, P(Democratic control) 81% → 83%. Senate 51.3, 61% → 62%. Governors 26.0 → 26.1. Seven rating changes: PA-10 Tilt R → Tilt D (EVEN → D+0.9), PA-08 Tilt R → Tilt D (R+0.2 → D+0.6), OH-07 Tilt D → Lean D, MT-01 Lean D → Tilt D, FL-27 and WI-01 Likely R → Lean R, Georgia Governor Tilt D → Tilt R (D+0.1 → EVEN). Largest same-rating moves: Alabama Senate R+24.3 → R+22.2, Alabama Governor R+17.3 → R+15.2, OH-09 D+2.4 → D+4.1, FL-25 D+2.5 → D+3.9.
+
+Oct 28, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 26
+
+Polls RealClearPolitics has added since the October 26 export, taken from the user's screenshots of RCP's tables, were appended to data-entry/generic_ballot_polls.csv (3: Harvard-Harris October 24–26, NPR/PBS/Marist October 22–25, Economist/YouGov October 23–26) and data-entry/trump_approval_polls.csv (4: the same three and Rasmussen Reports October 20–26), and both were rebuilt with their data-entry scripts. Nothing in the method changed.
+
+EFFECT Generic ballot D+8.3 unchanged (Harvard-Harris D+4 offset by Marist D+8 and YouGov D+9; R 42.7 → 42.8; RCP's own average D+8.0). Approval net −21.6 unchanged (38.3 approve, 60.0 disapprove; RCP −21.7). No forecast total moved at one decimal.
+
+Oct 28, 2026
+DATA FIX
+Race polls refreshed through October 27
+
+Daily `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. Echelon Insights' (R) October 16–23 multi-state wave added 13 rows across Florida, Georgia, Iowa, Maine, Nebraska and Ohio. Alaska Survey Research's October 23–25 governor poll was read from its ranked-choice final round (53/47). An Impact Research (D) NJ-02 poll from October 7–10 was back-filled. Wikipedia now prints ActiVote's October 1–21 Pennsylvania Governor poll with decimals (61.5/38.5 vs 62/39 on file); left as is, like the earlier MassINC, Nebraska Senate and Ohio Governor differences. No method change.
+
+EFFECT 36 new polls (19 Governor, 4 House, 13 Senate); 1,237 polls in 172 races, newest ending 2026-10-27. House: expected Democratic seats 229.2 → 229.4, P(Democratic control) 81% unchanged. Senate 51.2 → 51.3, 60% → 62%. Governors 26.1 → 26.0. Two rating changes: Georgia Governor Tilt R → Tilt D (R+0.1 → D+0.1) and Nevada Governor Lean R → Tilt R (R+1.5 → R+1.0). Largest same-rating moves: IN-05 R+9.5 → R+7.5, AZ-01 D+3.4 → D+4.6, NJ-02 R+9.0 → R+10.1, AZ-06 D+1.6 → D+2.6, Alaska Governor D+2.8 → D+1.8.
+
+Oct 26, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 26
+
+Polls RealClearPolitics has added since the October 21 export were appended to data-entry/generic_ballot_polls.csv (9, newest Reuters/Ipsos October 22–26, including back-filled CNN October 15–18, CNBC October 15–19 and NY Times/Siena October 12–19) and data-entry/trump_approval_polls.csv (10, newest Reuters/Ipsos October 22–26, with the same back-filled CNN, CNBC and Times/Siena polls and RMG Research October 12–20), and both were rebuilt with their data-entry scripts. RCP's table was taken from the user's screenshots, because RCP now serves a bot check to scripted requests. Rasmussen's October 13–19 approval wave is still on file although RCP's table now shows only its October 19–25 wave. Nothing in the method changed.
+
+EFFECT Generic ballot D+8.2 → D+8.3 (D 50.5 → 51.0, R 42.3 → 42.6; RCP's own average D+8.1). Approval net −21.3 → −21.6 (38.3 approve, 60.0 disapprove; RCP −21.9). House: expected Democratic seats 229.1 → 229.3, P(Democratic control) 80% → 81%. Senate 51.2 and 60% unchanged. Governors 26.1 unchanged.
+
+Oct 26, 2026
+DATA FIX
+Race polls refreshed through October 23
+
+Daily `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. Wikipedia corrected Harper Polling's North Carolina Senate poll for the Carolina Journal from September 18–20 to October 18–20 (same 49/39 result and source); the scrape appended the October row, and the on-file September copy was deleted as a duplicate. Two Nebraska Senate polls now show different numbers on Wikipedia than on file (Impact Research October 14–20: 47/49 on Wikipedia vs 48/50 on file; co/efficient September 28–30: 40/45 vs 43/48); the rows on file were left as is, as were the MassINC Massachusetts Senate and Verasight/VoteHub Ohio Governor differences. No method change.
+
+EFFECT 40 new polls (10 Governor, 17 House, 13 Senate), 39 net after the duplicate; 1,201 polls in 171 races, newest ending 2026-10-23. House: expected Democratic seats 228.8 → 229.1, P(Democratic control) 80% unchanged. Senate 51.1 → 51.2, 59% → 60%. Governors 26.0 → 26.1. Eight rating changes: MI-10 Tilt D → Lean R (D+0.9 → R+1.0, RedBox 42–47), PA-10 Tilt D → Tilt R, PA-08 Lean R → Tilt R, PA-07 Tilt D → Lean D (the three Times/Inquirer/Siena polls), CO-03 Likely R → Lean R, CO-08 Tilt D → Lean D, Nebraska Senate Likely R → Lean R (R+5.7 → R+4.3), Mississippi Senate Safe R → Likely R. Largest same-rating move: Idaho Senate R+25.2 → R+21.2.
+
+Oct 23, 2026
+DATA FIX
+Governor money filled for the 15 races that had none, and Alabama's Democratic total corrected
+
+Fifteen 2026 governor races (AK AR CT HI ID KS MD ME NE OK OR RI SD TN VT) had no receipts, because TransparencyUSA does not cover them and now blocks scripted access. They were filled from each state's own campaign-finance portal: total contributions to the nominee's committee from January 1, 2025 (or the committee's start), cash plus in-kind, loans excluded. Connecticut counts Lamont's personal funds ($15.4M) and Fazio's Citizens' Election Program grants ($18.8M), as the FollowTheMoney totals in the 2018 and 2022 rows did. Idaho's Sunshine portal was down, so its two figures are rounded news estimates (Pickens about $0.30M, Little about $3.6M), to be re-pulled. Alabama's Doug Jones had $0 from a TransparencyUSA coverage gap and now has $6.48M from the Alabama FCPA download; Tuberville moves $16.27M → $16.63M. Coverage ends between July 23 (Kansas) and October 21 (Oregon), because several states' pre-general reports are not due until October 26–29. data/fundraisingData.ts was regenerated with scripts/generate-fundraising-data.py, which now labels these rows "State campaign-finance filings".
+
+EFFECT No governor race moved by more than 0.9 points. Rhode Island D+28.2 → D+29.1; Alaska D+2.1 → D+2.9 (P(Democratic win) 64% → 69%); Tennessee R+15.4 → R+16.2; Alabama R+18.1 → R+17.3; Oklahoma R+15.6 → R+14.8; Oregon D+7.5 → D+6.8 (91% → 88%); Kansas R+5.9 → R+6.1. Expected Democratic wins among the 36 races 20.00 → 20.02. One rating change: Oklahoma Safe R → Likely R (Munson $1.71M vs Mazzei $1.47M, his $11.9M in loans excluded).
+
+Oct 23, 2026
+CHANGE
+House incumbents in competitive seats get up to 2 extra points
+
+New FORECAST_CONSTANTS.COMPETITIVE_INCUMBENCY {H 2, S 0, G 0} and COMPETITIVE_INCUMBENCY_WIDTH 10: a House incumbent gets sign × 2 × max(0, 1 − |TPL + environment| / 10) on top of the fixed 3 — the full 2 when the seat is even before incumbency, 1 at a 5-point lean, nothing beyond 10. competitiveIncumbencyPts / raceIncumbencyPts in lib/tplCompute.ts; projectRace adds it to the Model; the money term's structural gap keeps the plain incumbency, as in the backtest. The race pages' Incumbent row and the methodology worked example now show the total, and the Incumbent tooltip explains the extra. The forward harness applies the same term (compInc, defaulting to the live constants), and the Calibration tables were re-emitted. Evidence in the next entry: incumbents in close House seats beat the model on both sides in 2022 and 2024; on a fixed set of close races the term cuts error at every horizon and passes leave-one-year-out at 28 and 49 days.
+
+EFFECT House map (every race given to its favorite) 234 → 233 Democratic; expected Democratic seats 229.8 → 228.8; 80% range 214–247 → 213–246; P(Democratic control) 82% → 81%. Senate and Governors unchanged. 56 House races move. WI-03 (Van Orden) flips to the Republican side, D+0.9 → R+0.7. Closer for Democrats: PA-07 D+1.2 → D+0.1, PA-10 D+1.3 → D+0.4, CO-08 D+1.8 → D+0.9, OH-07 D+1.1 → D+0.6, IA-03 D+2.3 → D+1.1, AZ-06 D+2.7 → D+1.6, IA-01 Likely D → Lean D. Safer for Democratic incumbents: FL-25 D+0.3 → D+1.6, OH-09 D+1.1 → D+2.2, WA-03 and TX-34 Lean D → Likely D. PA-08 R+0.3 → R+1.4; OH-10 and OH-15 Lean R → Likely R.
+
+Oct 23, 2026
+TESTED, NOT ADOPTED
+Where the House model misses, and extra incumbency in competitive seats (the test behind the change above)
+
+The House model's Republican-side miss (forward backtest, mid-September, model only) sits mostly in safe seats: safe Democratic-held +3.5 (2022 +2.1, 2024 +5.0), safe Republican-held +1.3, but competitive Republican incumbents +1.7 (2022 +2.2, 2024 +1.6) and competitive Democratic incumbents −1.1 (−1.4, −0.7): incumbents in close seats beat the model on both sides, and forecasts within 3 pts missed −0.8. A uniform House correction learned leave-one-year-out (+2.7 / +1.0) cut House MAE in 2024 but lowered close-race calls (2022 75% → 70%, 2024 78% → 74%), so it is not a fix. scripts/forwardBacktest.ts --horizon-compinc adds K pts toward a House incumbent, full at an even pre-incumbency margin and fading to 0 at ±width, scored on a fixed set of close races (|model| ≤ 6). K 2 width 10: close-race MAE 2.74 → 2.65 (49 days), 2.77 → 2.70 (28), 2.68 → 2.67 (11); Brier 0.141 → 0.140, 0.138 → 0.136, 0.146 → 0.144; all-race MAE 4.244 → 4.237 at 11 days; the leave-one-year-out choice beats live in both years at 28 and 49 days and in one of two at 11. K 3+ and wider fades are worse. Consistent with Split Ticket's finding that battleground House incumbents over-perform.
+
+EFFECT Adopted the same day as COMPETITIVE_INCUMBENCY (entry above).
+
+Oct 23, 2026
+TESTED, NOT ADOPTED
+Poll-age cutoff and less trust in high-undecided polls: neither adopted
+
+scripts/forwardBacktest.ts --horizon-pollrules (optional RaceAverageRules on computeRacePollAverage; the live forecast passes none). Blend MAE at 11 days out, live Senate / Governor / House 4.264 / 5.246 / 4.244, House close races 3.150. (1) House polls older than N days kept in the table but weighted 0: 60 d 4.263 (close 3.198), 75 d 4.259, 90 d 4.248 (close 3.168), 120 d 4.253, all within noise and none better at 28 days either (live 4.332; 90 d 4.343). Polls 46–90 days old have matched the model's accuracy and the ones older than that already carry little weight under the 45-day half-life, so a cutoff only removes information. (2) No undecided allocation for polls with more than 20% (15%) choosing neither candidate: worse for Senate 4.316 (4.334) and Governor 5.271 (5.324), House 4.257 — individual high-undecided polls are noisy, but inside an average with other polls and house effects the allocation still helps, so it stays. (3) Poll weight × decided share^p: p 1 / 2 / 4 move Governor 5.228 / 5.210 / 5.188 and Senate 4.267 / 4.270 / 4.274, House ±0.002 — mixed by office and within noise; applying the same factor to the evidence count (so w falls too) is worse everywhere (Governor 5.486 at p 2).
+
+EFFECT No constant changed; live forecast unchanged.
+
+Oct 23, 2026
+CHANGE
+Race polls: undecided voters split between the candidates, up to 10 points per poll
+
+A race poll entered the average as its raw margin, R% − D%, so a poll with many respondents choosing neither candidate read as closer than it is (the Utah Debate Commission's House polls leave 25–30% undecided: UT-03 at 45–26 entered as R+19). Now up to POLL_UNDECIDED_CAP (10) points of each poll's share outside the two candidates count as undecided and POLL_UNDECIDED_ALLOCATION (all) of them are split in proportion to the two candidates' shares: margin × (1 + min(100 − D − R, 10) / (D + R)). Proportional means no direction is assumed: the leader's lead grows and the order never changes. Beyond 10 points the remainder is treated as a third candidate's vote or non-voters and left out, because results are margins of the total vote (Montana Senate's independent polls near 30%; uncapped, Montana would have moved R+19 → R+24). Applied in computeRacePollAverage (lib/racePollAverage.ts; the average reports the points added as `undecided`, dem/rep stay raw) and to the margins the current-cycle house effects are estimated on; the harness uses the same rule. Tested with --horizon-undecided at 11 and 28 days out, blend MAE Senate / Governor / House: raw 4.352 / 5.504 / 4.264 and 4.442 / 5.889 / 4.331; capped 4.264 / 5.246 / 4.244 and 4.397 / 5.659 / 4.332 (uncapped full 4.151 / 5.220 / 4.244 and 4.398 / 5.681 / 4.362; half uncapped 4.240 / 5.331 / 4.244 and 4.368 / 5.743 / 4.338). Calibration tables re-emitted; race-page poll tooltip and the Polling constants on /methodology updated.
+
+EFFECT Chamber totals barely move because leads widen on both sides: House expected Democratic seats 229.7 → 229.8, P(Democratic control) 81% → 82%; Senate 51.0 → 51.1, 59% → 60%; Governors 26.0. Rating changes: KY-06 and OH-07 Tilt D → Lean D (D+0.6 → D+1.0, D+0.8 → D+1.1), RI-02 Likely D → Safe D, Tennessee Governor Likely R → Safe R. Largest moves are safe seats with high-undecided polls: Montana Senate R+19.1 → R+21.6, Rhode Island Governor D+25.1 → D+28.2, Pennsylvania Governor D+19.8 → D+21.5, UT-01 D+31.1 → D+32.4; the Utah House polls themselves now read about 2–3 pts wider.
+
+Oct 23, 2026
+TESTED, NOT ADOPTED
+House poll weight by amount of polling, sponsorship and undecided share
+
+scripts/forwardBacktest.ts --horizon-polldump writes every polled 2018–2024 race at 49/28/21/11/1 days out (model, poll average, nEff, pollsters, sponsors); --horizon-undecided tests allocating undecided voters. House, 11 days out (128 polled races, almost all 2022 and 2024): one-pollster races (46) get w 0.22 and the error-minimizing weight is 0.25–0.28, so a lone poll is not over-weighted; races with three or more pollsters get 0.48–0.55 against an optimum of 0.60–0.70, so heavily polled House races are, if anything, under-weighted. Races polled only by Republican sponsors (8) missed by 6 pts toward Republicans and deserved w ≈ 0.1 (they get 0.23); races polled only by Democratic sponsors (16) missed by 1 pt and deserved about as much as mixed ones; a symmetric half weight for one-side-sponsored races is neutral (3.445 vs 3.443). Rules tested, House blend MAE at 28 / 11 days (live 3.419 / 3.443): one pollster capped at w 0.15 3.374 / 3.427; weight by pollster count n/(n+2) 3.322 / 3.349; k 1 3.450 / 3.469; k 3 3.491 / 3.531. Undecided allocation (share of undecided split in proportion to the decided shares), all offices at 11 days, MAE Senate / Governor / House: raw (live) 4.352 / 5.504 / 4.264, half 4.240 / 5.331 / 4.244, full two-party 4.151 / 5.220 / 4.244; at 28 days half 4.368 / 5.743 / 4.338 against live 4.442 / 5.889 / 4.331. None adopted yet; live effect of each on the chamber totals is under 2 seats.
+
+EFFECT No constant changed; live forecast unchanged.
+
+Oct 23, 2026
+TESTED, NOT ADOPTED
+Every factor re-tested on the horizon-matched backtest: no further change indicated
+
+scripts/forwardBacktest.ts --horizon-ablate scores 27 variants at 49, 28 and 11 days before each 2018–2024 election (model and polls blended as the site runs), with per-year results and a leave-one-year-out choice for the tunable levers; --horizon-pollshift tests uniform and lean-scaled shifts of the race polls on all races and on competitive races (|model| ≤ 10). Kept as they are: incumbency (dropping it costs 0.65 / 0.60 / 0.38 MAE Senate / Governor / House at 11 days, every year), fundraising (0.27 / 0.15 / 0.16), polls (model alone 0.72 / 3.33 / 0.22 worse), environment (small pooled effect, but it is the term that carried 2018: dropping it costs 2018 Senate 0.74 and House 1.16), house effects, aging, POLL_W_MAX (0.75 vs 1.0 within 0.03), the 45-day House/Governor half-life (14 would cost Governor 0.31) and 14 for the Senate (longer loses leave-one-year-out). Tested and not adopted: (1) a uniform Republican shift of race polls — +2 cuts Senate MAE 4.35 → 4.11 at 11 days, but Senate Brier worsens 0.049 → 0.051, Governor and House get worse, and in competitive Senate races it helps only 2020 and 2024 and hurts 2018 (3.37 → 3.74) and 2022 (3.09 → 3.40): the competitive-race miss was a presidential-year one; (2) a shift scaled by the seat's lean (0.5–2 pts per 10 pts) — at most 0.09 Senate, worse for Governor; (3) GB shading 1 or 1.5 — within 0.03 at 11 days and worse leave-one-year-out; (4) Governor candidate weight × 1.5 (2.25) — −0.25 MAE, but 57 of the 23 net points of gain are Phil Scott's four Vermont races and the other races lose 34, so it is one personal brand, not a rule; (5) Senate candidate weight 0 or 0.5 — −0.07 / −0.04 at 11 days, within noise and the opposite of the model-only test (5.04 → 5.11 without it), live effect NE-Sen R+6.0 → R+9.4, AK-Sen R+0.9 → R+2.1; (6) Governor POLL_K × 0.5 — −0.30 at 11 days but equal leave-one-year-out (5.52 vs 5.50) and the cap on a single poll is a deliberate rule. Noted: Governor 80% ranges cover 85–88% inside two weeks (77% at 49 days), a slight late over-width.
+
+EFFECT No constant changed; live forecast unchanged.
+
+Oct 23, 2026
+TESTED, NOT ADOPTED
+Backtest at every distance from the election, not only mid-September
+
+The forward backtest scored the environment from the mid-September generic ballot, so its bias included the September→November drift that a forecast run late in October has already absorbed. scripts/forwardBacktest.ts --horizons (also written by --emit) now replays every past year at the same number of days before its own election as each horizon from 98 days to 1 (plus the live forecast's own distance), rebuilding the generic-ballot average, E and σ_E (drift term scaled by days left) and the race-poll averages (per-office half-life, aging, house effects as of that day) from the 538 archive; lean, β*, incumbency and candidate effects are fitted on earlier years as before, money is full-cycle at every horizon. It scores the forecast as the site produces it, model and polls blended. New Calibration table "By days to the election" on /methodology marks the row matching today. No constant was changed by it.
+
+EFFECT At 11 days out (today's distance), forecast MAE / bias / 80% coverage: Senate 4.35 / +1.20 / 80%, Governor 5.50 / +1.93 / 85%, House 4.26 / +1.21 / 82%; the model alone, before polls, is biased +0.22 / +2.47 / +1.15. At 49 days out the same figures are 4.68 / +1.86 / 77%, 6.59 / +3.06 / 77%, 4.42 / +2.18 / 80%. So about half of the September House bias is drift the live forecast no longer carries, the Senate model alone is close to unbiased late, and the remaining Senate bias at this horizon comes from the race polls (Senate poll averages ran 3–7 pts too Democratic in 2020, 2022 and 2024 and about even in 2018). Coverage stays at 77–88% at every horizon, so the error bands are wide enough for the bias that remains.
+
+Oct 23, 2026
+DATA FIX
+Generic-ballot history put on the model's own averaging basis
+
+The environment conversion shades the live generic ballot by half of the historical miss (House vote minus final generic ballot), but data-entry/national_environment_history.csv had RealClearPolitics' final averages in that column and mid-September values entered from memory, while the number being shaded is our own average (one poll per pollster, 14-day half-life, √sample). Run over the 538 poll archive (data-entry/generic_ballot_polls_history.csv), the live recipe reads 1–2 pts more Democratic than RCP on the 2022 and 2024 election eves (R+0.3 and D+0.4 against RCP's R+2.5 and R+0.3) and 0.2–0.6 off in 2018 and 2020, and its mid-September averages were 0.8–1.3 pts more Democratic than the from-memory values in 2022 and 2024. The 2018–2024 rows now carry the recipe's own September 15 and election-eve averages (D+7.85 / D+6.70, D+6.38 / D+6.88, D+1.84 / R+0.30, D+1.76 / D+0.39); 2016 predates the archive and stays on RCP's basis, noted in the file. node data-entry/build-national-environment.js rebuilt data/nationalEnvironmentHistory.ts; the harness and the Calibration tables were re-run. Measured in the 2026-10-22 methodology review.
+
+EFFECT Mean miss R+1.34 → R+1.81 (shading 0.67 → 0.91), sd 1.96 → 2.22, September→November drift rms 1.70 → 1.53; c and s unchanged (+0.52, 0.57). Live: PV_hat D+7.5 → D+7.3, E D+3.74 → D+3.61, σ_E 2.84 → 2.90. House expected Democratic seats 230.0 → 229.7, P(Democratic control) 82% → 81%; Senate 51.1 → 51.0, 59% → 59%; Governors 26.0 unchanged. Four band-edge rating moves: CA-22 Likely D → Lean D (D+5.0 → D+4.9), MI-10 and WI-03 Lean D → Tilt D (D+1.0 → D+0.9), NC-14 Likely R → Safe R (R+15.0 → R+15.1). Backtest on the consistent basis: mid-September E for 2022 R+1.1 → R+0.3 and 2024 0.0 → D+0.3 (the recipe's September averages were more Democratic than the old inputs, by more than the larger shading takes back), so pooled MAE Senate 5.04 → 5.04, Governor 8.86 → 8.91, House 4.55 → 4.59 and bias Senate +0.54 → +0.71, Governor +2.86 → +3.15, House +1.56 → +2.01 — the honest figures; the old inputs had flattered 2022 and 2024. Coverage 80 / 80 / 79%, Brier unchanged.
+
+Oct 23, 2026
+CHANGE
+Race-poll recency half-life fitted per office: 45 days for House and Governor, 14 for Senate
+
+A race poll's weight had halved every 14 days after two weeks at full weight, a value inherited from the generic-ballot recipe and never fitted for race polls. The 2026-10-22 methodology review swept it on the 2018–2024 archive (scripts/forwardBacktest.ts --polls --half-life N, blend at the live POLL_K and POLL_W_MAX): House 14 → 45 days cuts the mid-October blend error 3.57 → 3.43 and the November 1 error 3.51 → 3.43, Governor 5.48 → 5.38 and 4.98 → 4.96 (5.97 → 5.71 / 5.48 → 5.27 at the live k in the Calibration table); the Senate is flat to slightly worse (4.24 → 4.27 at 45), so it keeps 14. In a sparsely polled House or Governor race an August poll is still the best evidence in October, and the aging shift already moves it with the national ballot; in the densely polled Senate the fresh polls carry the signal and a long tail adds noise. New FORECAST_CONSTANTS.POLL_HALF_LIFE_DAYS {H 45, S 14, G 45}, read by lib/racePollAverage.ts (getRacePollAverage; computeRacePollAverage takes the half-life as an argument and the harness passes the office's). The generic-ballot average keeps 14. Because nEff is the sum of recency weights, w also rises in races whose polls are old.
+
+EFFECT Live, on top of the shared-error change of the same day: House expected Democratic seats 228.7 → 230.1, P(Democratic control) 80% → 82%; Senate unchanged (51.1, 59%); Governors 25.8 → 26.0. 51 House races and 14 Governor races move by 0.5 pt or more, almost all safe seats whose only polls were old. Rating changes: OH-07 Likely R → Tilt D (R+5.2 → D+0.9; its four polls, June–August and averaging D+13, had decayed to weight 0.06 and now carry 0.40), TX-15 Tilt D → Lean D (D+0.9 → D+2.0), FL-27 Likely R → Lean R (R+5.7 → R+4.1), Vermont and Tennessee Governor Safe R → Likely R (R+17.6 → R+14.4, R+15.9 → R+14.6). Largest other moves: ID-01 R+36.5 → R+31.9, GA-11 R+20.6 → R+17.0, UT-02 R+20.5 → R+16.9, NV-02 R+9.0 → R+6.4, AL-02 R+4.1 → R+2.7, Idaho Governor R+29.1 → R+25.9.
+
+Oct 23, 2026
+CHANGE
+Shared national error widened to the backtest's realized year-to-year spread; race-level σ lowered to match
+
+The national shock every race carries through β* (σ_E) had been the generic ballot's own error alone: |s| × √(sd(miss)² + (horizon × rms(drift))²) = 1.47 on the E scale in mid-September and 1.13 twelve days out. The forward backtest's own yearly biases of the mid-September forecast have a standard deviation of 2.97 (Senate, four years of 33 races), 3.91 (Governor) and 4.74 (House, on 6 and 5 races in 2018 and 2020), so two thirds of the shared error was being carried as independent race noise inside RACE_SIGMA. Independent noise averages out across a chamber and shared noise does not: the House 80% seat range (220–237) was the narrowest of the eleven published 2026 models and P(Democratic House) the highest (95%) even though the seat mean (228) was among the lowest. σ_E is now √(NATIONAL_SIGMA_STRUCTURAL² + (|s| × √(sd(miss)² + (horizon × rms(drift))²))²) with NATIONAL_SIGMA_STRUCTURAL 2.6, the shared error that remains with the House vote known (the lean window, the E↔vote conversion, whatever moves a whole office in one year), set so the mid-September σ_E reproduces the Senate figure: √(2.6² + 1.47²) = 2.99. RACE_SIGMA was lowered from H 5.3 / S 6.0 / G 9.4 to H 5.0 / S 5.5 / G 8.5 from the harness's 80%-coverage table under the new σ_E (House 5.0 → 80%, Senate 5.5 → 80%, Governor between 8.1 → 78% and 9.0 → 82%), so each race's total spread, and its own win probability, is close to what it was; what changed is how much of that spread the races share. The harness's sigmaE() carries the same term, and the Calibration tables were re-emitted: coverage S 80% / G 79% / H 80%, Brier unchanged at 0.060 / 0.093 / 0.024, probability bins within 0.03 of where they were. Methodology: the environment and uncertainty sections document the new constant. Measured in the 2026-10-22 methodology review (its re-simulation of the live margins with a 3-pt shared error gave House 82%, Senate 59%).
+
+EFFECT σ_E today 1.13 → 2.84. House: expected Democratic seats 228.3 → 228.5, 80% range 220–237 → 213–245, P(Democratic control) 95% → 80%. Senate: 51.1 unchanged, range 49–53 → 48–54, P(Democratic control) 65% → 59%. Governors 25.8, range 24–28 → 23–29. No race changes rating; individual win probabilities move by at most a few points (a Lean seat at D+3 reads 72% rather than 74%).
+
+Oct 22, 2026
+CHANGE
+Forecast over time on every race page
+
+The per-race series the daily rerun already wrote (margin and P(D) per day, scripts/buildForecastHistory.ts) is now charted on each House, Senate and Governor race page, under Forecast Calculation: the projected margin, signed toward the candidate favored by today's margin so the line never flips mid-series, on a scale symmetric about even, with that day's win probability in the caption. Safe races are shown too. A new Forecast over time section on this page documents the series for both the Overview and the race pages. No method change; no number moved.
+
+Oct 22, 2026
+DATA FIX
+Past-race poll archive scores independents in the Democratic slot
+
+The 2018–2024 race poll archive (data-entry/race_polls_history.csv, built by scripts/build-race-polls-history.py from the 538 archive) kept only Democratic and Republican answers, so every poll of a race whose main challenger was an independent was dropped: Nebraska Senate 2024 (Osborn), Utah Senate 2022 (McMullin), Vermont Senate 2018/2024 (Sanders), Arkansas Senate 2020 (Harrington), ND-01 2022, SD-01 2022 and NV-02 2024. In Maine 2018 and 2024 the polls were scored with the minor Democratic nominee against the Republican while the results file has Angus King in the Democratic slot. The Democratic slot is now whoever the past-results CSV puts there, matched by surname — the rule the pollster-grading build already used — with the top Democrat as the fallback. The calibration tables were re-emitted.
+
+EFFECT 62 more archive polls in 9 races (6,698 → 6,760), and Maine's 10 existing 2018/2024 polls re-scored with King (2018: R+23.4 → D+20.7 average). Calibration table, Senate, polls alone: mid-September error 6.64 → 6.13, mid-October 6.51 → 5.94, November 1 6.02 → 5.44; poll–model blend 4.64 → 4.47, 4.50 → 4.27, 4.54 → 4.26. Governor and House rows unchanged. The live forecast is unchanged (POLL_K is not refit from this file). Past-election pages now show late polls for these races, e.g. Nebraska Senate 2024: 7 polls averaging R+3.0 against an R+6.7 result.
+
+Oct 22, 2026
+DATA FIX
+Race polls refreshed through October 21
+
+Weekly `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. Wikipedia's "Versalight/VoteHub" Ohio Senate special entry was renamed to Verasight/VoteHub, matching the same poll's Governor row. A duplicate Independent Voter Project California Governor row (September 23–October 2, the same 2,906-voter 48/38 poll already on file as September 23–28, the dates Wikipedia now shows) was deleted. The scrape's list of on-file rows Wikipedia no longer shows was traced through the page histories. Nine were a poll's second, hypothetical match-up that Wikipedia has moved into its "Hypothetical polling" boxes because the real field differs, and were deleted, keeping each poll's full-field row: Montana Senate head-to-heads without the independent Seth Bodnar (Tavern June and July, Hart June, GQR July), Kansas Senate Tavern January, ID-01 SurveyUSA's Fulcher–Peterson two-way without Sarah Zabel (I), WA-03 Emerson July, and the second California Governor rows of Berkeley IGS and CEPP in May. Two were kept: Pollfinity's October 8–12 New York Governor poll and HighGround's August 15–18 Arizona Governor poll were each typed over by a later poll (Quinnipiac October 15–19; HighGround's own October 6–8 wave) in edits with no summary, not removed for quality. Wedgewood Polls stays blocked from the scrape. MassINC's September Massachusetts Senate poll still differs from the file (54/28 on Wikipedia, 52/26 on file); left as is. No method change.
+
+EFFECT 63 new polls (19 Governor, 28 House, 16 Senate) in 45 races; 1,135 polls in 168 races after the deletions, newest ending 2026-10-21. The nine deletions moved two races across a band edge through the refitted house effects: OH-15 Likely R → Lean R (R+4.9) and Minnesota Senate Lean D → Likely D (D+5.1). House: expected Democratic seats 226.7 → 228.3, P(Democratic control) 93% → 95%. Senate 51.0 → 51.1, 63% → 65%. Governors 25.8 unchanged. Fourteen rating changes: NC-11 Lean R → Lean D (R+2.1 → D+2.1, Emerson 56–43), TX-15 Lean R → Tilt D, KY-06 Tilt R → Tilt D, IA-02 Tilt R → Tilt D, MO-02 Likely R → Lean R, AZ-02 Likely R → Lean R, FL-13 Likely R → Lean R, PA-08 Lean R → Tilt R, IA-01 Lean D → Likely D, MI-07 Tilt D → Lean D, FL-14 Tilt D → Lean D, MT-01 Tilt D → Lean D, FL-25 Lean D → Tilt D, Iowa Governor Lean D → Likely D. Largest same-rating moves: IN-05 R+13.4 → R+10.4, NE-01 R+11.0 → R+8.2, AR-02 R+13.6 → R+10.8, South Carolina Governor R+8.3 → R+10.4.
+
+Oct 21, 2026
+DATA FIX
+2026 House/Senate finances refreshed with Q3 and pre-general reports
+
+Receipts re-read from the FEC's weball26 summary of October 21 by scripts/fetch-fec-race-finance.py, with cash on hand, spending, small-dollar share (OpenFEC candidate totals) and outside spending (24/48-hour independent-expenditure file through October 21) refreshed alongside. The latest report now ends September 30 for 809 of 924 nominees and October 14 (pre-general) for 62; on October 15 it was June 30 for 505. Ten nominees who had no FEC id on file were matched to the candidate master and now carry their filings, most notably Maine Senate's Troy Jackson ($20.4M against Susan Collins' $21.4M, previously blank and imputed) and NC-11's Jennifer Balkcom ($0.36M); 40 more registered-but-unfiled nominees got their FEC id so later refreshes pick them up, and stay blank. Governor figures are untouched: TransparencyUSA now serves a Cloudflare challenge to every request, and Massachusetts OCPF had no new reports. No method change.
+
+EFFECT 808 House/Senate sides changed; 377 of 506 races moved, mean 0.23 points. NC-11 R+4.7 → R+2.1 is the largest move. 11 rating changes: Alaska and Iowa Senate Lean R → Tilt R, FL-14, ME-02, MI-07 and PA-07 Tilt R → Tilt D, IA-02 Lean R → Tilt R, MI-10 Tilt D → Lean D, CA-22 Lean D → Likely D, OH-01 Likely D → Lean D, OH-10 Likely R → Lean R. House expected Democratic seats 225.3 → 226.7, P(Democratic control) 90.0% → 92.8%. Senate 50.8 → 51.0, 58.7% → 63.5%. Governors 25.8 unchanged.
+
+Oct 21, 2026
+DATA FIX
+Wedgewood Polls removed as a hoax pollster
+
+Wikipedia removed every Wedgewood Polls entry on October 20 ("confirmed to be a hoax pollster"); the scrape's new "no longer on Wikipedia" report surfaced the 19 rows still on file, all from July–October 2026 and sourced to Google Drive links, and they were deleted by hand: Senate in Georgia, Iowa, Kansas, Michigan, Mississippi (special), Nebraska, Texas, the Ohio special and two in Maine; Governor in Georgia, Iowa, Kansas, Michigan, Nebraska, Nevada, Ohio and Texas; and NV-02. The pollster is gone from the ratings page. The append-only merge never removes a row itself; that report is now the check for upstream removals.
+
+EFFECT 1,082 polls in 167 races. Mississippi Senate special R+13.0 → R+16.1, Likely R → Safe R (its only October poll was Wedgewood's 48–52); Michigan Governor D+6.9 → D+6.6; Iowa Governor D+5.0 → D+5.0, Likely D → Lean D at the band edge. Senate: expected Democratic seats 50.9 → 50.8, P(Democratic control) 60.7% → 59.2%. House 225.3 unchanged (90%). Governors 25.9 → 25.8.
+
+Oct 21, 2026
+CHANGE
+Alaska Governor and AK-01 polls: ranked-choice final round only, like the Senate
+
+The Alaska Senate rule now covers all three Alaska races: a poll's row is the ranked-choice round with only the two finalists left (Wikipedia's "Ranked-choice polls" table, round 3), a pollster's several final-round scenarios are averaged, and a poll with no two-candidate round is left out. The weekly scrape now reads all three races from the page's ranked-choice table itself (scripts/fetch-race-polls.py extract_rcv: the round or rounds in which only the two nominees are still live, averaged; a poll without one is left out; it reproduces every hand-entered row within rounding, and a scraped row within 1 point of an on-file row is not flagged, so decimals taken from a pollster's release survive), instead of skipping Alaska. Every party-summed row was removed — 13 for Governor, 14 for AK-01 — including every pre-primary poll (a different field: Tom Begich led the Governor race until the August 18 primary) and the first-past-the-post-only polls since (co/efficient and Cygnal for Governor; Public Policy Polling October 14–15, Bullfinch, GBAO and Tavern for the House; Alaska Survey Research's August 20–23 House survey, which stopped at a first round Begich won outright). Governor, Wilson (R) v Kreiss-Tomkins (D): Fabrizio Ward/Impact Research September 8–11 (45–55), New York Times/Siena September 24–October 1 (48–52), Alaska Survey Research October 1–3 (46–54) and October 15–18 (45–55, which the party sum had read as 50–50), Data for Progress October 8–16 (47–53 and 50–50 averaged to 48.5–51.5). AK-01, Begich (R) v the independent Bill Hill, who fills the Democratic slot: Alaska Survey Research August 2–5 (53.5–46.5, the hypothetical third round in its release) and October 1–3 (52.7–47.3, decimals from its release), Fabrizio Ward/Impact Research (57–43), Times/Siena (53–47), Data for Progress (50–49 and 50–50 averaged to 50–49.5). The Senate row set is unchanged, but the current-cycle house effects are refitted without the removed rows, which moves it and twenty other races by up to 0.2 points.
+
+EFFECT Alaska Governor: 4 pollsters in the average (was 10 rows), poll average D+0.7 → D+6.8, margin R+1.8 → D+1.3, Lean R → Lean D, P(Kreiss-Tomkins) 37% → 59%. AK-01: poll average R+0.6 → R+4.9, margin R+3.0 → R+6.2, Lean R → Likely R, P(Hill) 26% → 8%. Alaska Senate (house effects only): poll average D+4.0 → D+2.4, margin R+0.4 → R+1.3, Tilt R → Lean R, P(Peltola) 46% → 38%. Chambers: House 225.5 → 225.3 (P(D) 90.4% → 90.0%), Senate 51.0 → 50.9 (63.4% → 60.7%), Governors 25.6 → 25.9.
+
+Oct 21, 2026
+CHANGE
+Alaska Senate polls: the two-candidate round, scenarios averaged
+
+The Alaska Senate rule (ranked-choice final round only, hand-entered) is made precise: a poll's row is the round with only Sullivan and Peltola left — Wikipedia's "Ranked-choice polls" table, round 3, or the single redistribution where a pollster eliminates both minor Republicans at once (InsiderAdvantage) — not the first round in which a candidate passes 50%. When a pollster publishes several round-3 scenarios for where exhausted minor-Republican ballots go (Data for Progress's "Sullivan hypothetical" footnotes), the row is their plain average. Four polls were missing from the file under the old by-hand process: Alaska Survey Research September 10–12 (52–48) and October 1–3 (51–49), InsiderAdvantage (R) October 9–10 (Peltola 50, Sullivan 48, 2% unranked) and Data for Progress (D) October 8–16 (49–51 and 50–50 averaged to 50.5–49.5). The July 28–August 4 Data for Progress row, entered as the 47–53 continuation alone, is re-entered as the mean of its three scenarios (47–53, 48–52, 48–52 → 52.3–47.7). Wikipedia's table is now the first source for these rows; the pollster's release supplies decimals when it has them (ASR's October thread has none). The scraper still never touches the race.
+
+EFFECT Alaska Senate: 9 polls on file, 4 pollsters in the average (was 3), poll average D+7.1 → D+4.0, projected margin R+3.5 → R+0.4, Lean R → Tilt R, P(Peltola) 25.9% → 46.1%. Senate: expected Democratic seats 50.8 → 51.0, P(Democratic control) 57.8% → 63.4%. House and governors unchanged beyond rounding (pollster recounts move six other races by 0.1).
+
+Oct 21, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 19
+
+Polls RealClearPolitics has added since the October 17 export were appended to data-entry/generic_ballot_polls.csv (7, newest Reuters/Ipsos October 16–19, including back-filled NBC News Decision Desk September 28–October 12 and THP/MM September 7–13) and data-entry/trump_approval_polls.csv (6, newest Reuters/Ipsos and Rasmussen October 13–19, including the same back-filled NBC poll), and both were rebuilt with their data-entry scripts. Every poll already on file matches RCP's table. Nothing in the method changed.
+
+EFFECT Generic ballot D+8.0 → D+8.2 (D 49.8 → 50.5, R 41.8 → 42.2; RCP's own average D+8.3); approval net −21.2 unchanged at one decimal (38.5 approve, 59.7 disapprove — Reuters/Ipsos fell to 34/65 while NBC, Echelon and ABC/Washington Post/Ipsos improved). Every race moves Democratic by at most 0.2 points. House: expected Democratic seats 225.1 → 225.5, P(Democratic control) 89.1% → 90.4%. Senate 50.7 → 50.8, 55.0% → 57.8%. Governors 25.5 → 25.7. Four rating changes, all at a band edge: Iowa Governor and OH-01 Lean D → Likely D (again at D+5.0), ME-02 Tilt R → Tilt D, and KY-06 Lean R → Tilt R (reversing the same day's race-poll change).
+
+Oct 21, 2026
+DATA FIX
+Race polls refreshed through October 20
+
+Weekly `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. One new alias maps "University of Georgia" to the rated University of Georgia School of Public and International Affairs; The Alabama Poll, NPA Polling, Cross Timbers Poll and Workbench Strategy have no rating. Two Cross Timbers Poll Oklahoma Governor polls are kept as Wikipedia lists them despite samples of 86 and 91 likely voters (±12–15 points). Wikipedia now shows MassINC's September 14–22 Massachusetts Senate poll as 54/28 where the file has 52/26, and still party-sums four on-file AK-01 polls and the June Alaska Survey Research governor poll differently from the file; the rows on file were left as is. No method change.
+
+EFFECT 55 new polls (27 Governor, 7 House, 21 Senate) in 35 races; 1,114 polls in 167 races, newest ending 2026-10-20. Senate: expected Democratic seats 50.8 → 50.7, P(Democratic control) 57% → 55% (Iowa, Ohio and Texas polled Republican-leaning). House 224.9 → 225.1 (89% unchanged). Governors 25.5 unchanged. Three rating changes: Illinois Senate Likely D → Safe D, Georgia Governor Lean R → Tilt R, KY-06 Tilt R → Lean R. Largest margin moves: Oklahoma Governor R+26.9 → R+15.4 (its first 2026 polls: the two Cross Timbers surveys and a Workbench Strategy (D) poll), Alabama Governor R+23.9 → R+18.4, OH-10 R+8.6 → R+5.3.
+
+Oct 19, 2026
+TESTED, NOT ADOPTED
+A larger House environment term: tested, not adopted
+
+The same question as the state legislative test, put to the federal forecast's forward backtest: the forward term β*(state) × E multiplied by λ (0.8–1.6) per office, with the lean refitted on the years before each target and no shift removed before scoring (scripts/forwardBacktest.ts --lambda). Three environments: the oracle E(Y), the actual House vote through the structural line (no polling error), and the live rule from the mid-September generic ballot.
+
+EFFECT House, pooled 2018–2024 (n 465; 2022 209 and 2024 245 districts, but only 6 and 5 in 2018 and 2020, since district presidential data is on today's lines): best λ 0.8 under the oracle (MAE 4.41 → 4.38) and under the actual House vote (4.47 → 4.44). Under the live rule λ is flat, because the 2024 environment read from the generic ballot is about 0 and the +2.7 bias that year is the polling miss. Senate (n 133) and Governor (n 94) prefer about λ 1.4, by 0.10 and 0.16, led by 2018 Senate and an 11-race 2024 Governor class. Nothing supports a larger House term, but the House has no wave-year test: 2018 cannot be scored at the district level until presidential results exist on the 2018 lines.
+
+Oct 17, 2026
+DATA FIX
+Pollster grades: same-surname nominees no longer graded as a tie
+
+The 2023–24 graded-poll build (scripts/build-pollster-graded-polls.py) keyed each poll's answers by surname alone, so when both nominees shared one the Republican's share overwrote the Democrat's and the poll was recorded as Even. Answers now carry their party, and a shared surname is resolved by party; a unique surname still matches regardless of party, because the results file's Democratic slot sometimes holds an independent. Only SD-01 2024 (Dusty vs Sheryl Johnson) was affected: Emerson's R+36 and Mason-Dixon's R+37 had been stored as ties against an R+44 result.
+
+EFFECT Display only (grades are shown, not a weight; the live house effects use 2026 polls). Emerson's score −0.58 → −0.79 (still A−); the race's 37-point phantom error also moved the field benchmark everyone is scored against, so 57 of 171 graded rows shifted by a few hundredths and five crossed a band edge: SurveyUSA and Impact Research B → B−, St. Pete Polls C+ → C, McLaughlin C → C−, SoonerPoll C− → D.
+
+Oct 17, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 15
+
+Polls RealClearPolitics has added since the October 10 export were appended to data-entry/generic_ballot_polls.csv (12, newest RMG Research October 12–13, including back-filled Morning Consult September 28–October 4, Rasmussen October 1–7 and THP/MM October 4–6) and data-entry/trump_approval_polls.csv (9, newest Rasmussen October 11–15, including a back-filled THP/MM September 7–13), and both were rebuilt with their data-entry scripts. Nothing in the method changed.
+
+EFFECT Generic ballot D+8.0 → D+8.1 (D 49.6 → 49.8, R 41.6 → 41.8; RCP's own average D+8.0); approval net −22.4 → −21.3. Every race moves Democratic by at most 0.2 points. House: expected Democratic seats 224.9 → 225.2, P(Democratic control) 88.6% → 89.4%. Senate 50.8 → 50.9, 59.3% → 60.8%. Governors 25.6 unchanged. Three rating changes, all at a band edge: Iowa Governor and OH-01 Lean D → Likely D (back to where they stood before this week's race polls) and TX-24 Safe R → Likely R.
+
+Oct 17, 2026
+DATA FIX
+Race polls refreshed through October 16
+
+Weekly `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. One new alias maps "University of Houston" to the rated University of Houston Hobby School. A Global Strategy Group PA-01 poll Wikipedia dates October 1–8, 2025 was appended but falls before the 1 January 2026 cut, so the model never reads it. Wikipedia now party-sums four on-file AK-01 polls and the June Alaska Survey Research governor poll differently from the file; the rows on file were left as is. No method change.
+
+EFFECT 93 new polls (35 Governor, 20 House, 38 Senate) in 55 races; 1,059 polls in 164 races, newest ending 2026-10-16. House: expected Democratic seats 224.4 → 224.9, P(Democratic control) 87% → 89%. Senate 50.8 unchanged (59%). Governors 25.5 → 25.6. 9 rating changes: GA-07 and Mississippi Senate Safe R → Likely R, AK-01 and MN-01 Likely R → Lean R, KY-06 Lean R → Tilt R, ME-02 Tilt R → Tilt D, Iowa Senate Tilt R → Lean R, Iowa Governor and OH-01 Likely D → Lean D (both at D+5.0, reversed by the generic-ballot update the same day).
+
+Oct 15, 2026
+TESTED, NOT ADOPTED
+Cash on hand, spending, outside spending and small-dollar share as money terms: not adopted
+
+For 544 House and Senate races in the forward backtest (2018–2024), each nominee's finances were rebuilt as of their Q3 report (coverage ending by September 30, newest amendment of each report), with outside spending from the FEC 24/48-hour independent-expenditure files through September 30 (spending that supports a candidate plus spending that opposes their opponent). Each measure was then fitted, with every year held out in turn (leave-one-year-out), against the residual left before the money term, alone and on top of receipts. Receipts and spending correlate at 0.95–0.98, and receipts and cash on hand at 0.73–0.80.
+
+EFFECT Nothing beat the live receipts term. House leave-one-year-out MAE: no money 4.53, live receipts term 4.51, cash-on-hand gap alone 4.50 (worse than receipts in 2018/2020/2022, better only in 2024; paired t −1.7). Adding cash on hand, outside spending or small-dollar share to the live term made House and Senate error worse or left it unchanged. Senate: live term 5.76; + outside spending 5.70, but the sign flips by year (paired t −0.5). Small-dollar share has no consistent sign in either chamber. The extra figures are shown on the race pages only.
+
+Oct 15, 2026
+DATA FIX
+2026 House/Senate receipts refreshed; cash on hand, spending, outside spending and small-dollar share added to race pages
+
+Receipts re-read from the FEC's weball26 summary of October 15 by the new scripts/fetch-fec-race-finance.py, which also pulls each nominee's cash on hand, disbursements and unitemized share of individual contributions (OpenFEC candidate totals, same two-year window), and outside spending from the FEC's daily 24/48-hour independent-expenditure file (superseded filings and junk entries over $100M dropped). Q3 reports (through September 30) are due today; 121 of 874 nominees' latest report already ends September 30, 505 still June 30. The new figures are displayed only. The forecast still reads receipts alone. Maine's Troy Jackson (nominated by convention July 25) has no FEC filing processed yet and stays blank.
+
+EFFECT 100 House/Senate sides changed. 49 races moved, all Safe/Likely, none more than 1.1 points (GA-07 R+21.2 → R+20.1). No rating changes. House expected Democratic seats 224.51 → 224.52, P(control) 87.0% unchanged. Senate and governors unchanged.
+
+Oct 9, 2026
+CHANGE
+A ceiling on the poll average's share of a projection
+
+The poll share of a race's projected margin, w = nEff / (nEff + POLL_K), approached 1 as polls piled up: the most heavily polled Senate and Governor races (Michigan, Texas, Maine, Ohio, Iowa) ran 79–86% on their polls. It is now w = min(POLL_W_MAX, nEff / (nEff + POLL_K)) with POLL_W_MAX = 0.75, so the structural model keeps at least a quarter of every projection however many polls a race has (lib/racePollAverage.ts pollWeight, which the forward backtest now calls instead of recomputing the weight). User decision: the polls of 2016, 2018, 2020 and 2024 missed in the same direction across the whole field, which the pollster house effects — measured relative to the field — cannot catch, so no race should run on polls alone. POLL_K is unchanged, so lightly polled races are untouched; the cap binds in 10 races today.
+
+EFFECT Nine races move, seven toward Republicans: Texas Governor R+2.6 → R+3.4, Ohio Governor D+2.1 → D+1.7, Texas Senate D+2.6 → D+2.3, Iowa Governor D+7.3 → D+6.9, Iowa Senate D+0.3 → EVEN; Maine Senate D+2.9 → D+3.1 the other way (its model is bluer than its polls). No rating changes. Chambers: Governors 26.22 → 26.15 expected Democratic; House 229.7 and Senate 51.2 (P(Democratic control) 95% / 68%) unchanged to the decimal. Forward backtest, blend MAE at the live constants: Senate 4.69 → 4.67 (mid-September), 4.54 → 4.52 (mid-October), 4.60 → 4.59 (November 1); Governor 5.86 → 5.89 (mid-October), 5.40 → 5.44 (November 1); House unchanged. Mean w falls 0.01–0.02 at each horizon.
+
+Oct 10, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 8
+
+Polls RealClearPolitics has added since the October 4 export were appended to data-entry/generic_ballot_polls.csv (6: Economist/YouGov, Morning Consult, Cygnal, Reuters/Ipsos, Pew and a back-filled September 24–27 Rasmussen) and data-entry/trump_approval_polls.csv (7, newest Rasmussen October 4–8), and both were rebuilt with their data-entry scripts. Every poll already on file matches RCP's table. Nothing in the method changed.
+
+EFFECT Generic ballot D+8.4 → D+7.9 (D 50.8 → 49.8, R 42.4 → 41.9), matching RCP's own average; approval net −21.4 → −22.3. Every race moves Republican, mean 0.36 pts, max 0.6. House: expected Democratic seats 229.7 → 228.3, P(Democratic control) 95.1% → 92.5%. Senate 51.3 → 51.1, 69.1% → 63.3%. Governors 26.1 → 25.9. 18 rating changes, including Iowa Senate Tilt D → Tilt R, Nevada Governor Tilt D → Tilt R, MI-07 Tilt D → Tilt R, Georgia Governor Tilt R → Lean R and Minnesota Senate Likely D → Lean D.
+
+Oct 10, 2026
+DATA FIX
+2026 fundraising refreshed
+
+House and Senate receipts re-read from the FEC's weball26 summary of October 10, matched by FEC id. Most candidates' latest report still ends June 30 or at a summer pre-primary date; Q3 reports (through September 30) are due October 15. Six nominees with no filing in September now have one: GA-08 Kelly Esti, MA-08 Robert Burke, MO-08 Christopher Reichard, NY-10 Jennifer Moore, PA-04 Aurora Stuski and South Carolina Senate's Darline Graham. Governor receipts re-read from TransparencyUSA (new filings in Alabama, Minnesota and Texas) and Massachusetts OCPF. The 15 governor races with no state-portal source are still blank. No method change.
+
+EFFECT 50 House/Senate sides and 7 governor sides changed. South Carolina Senate R+6.1 → R+3.9, Likely R → Lean R: Graham's $0.35M through August 5, against Annie Andrews' $10.8M through June 30, is the first money on file for her side. Every other race moved less than 1.2 points. Senate: expected Democratic seats 51.2 → 51.3, P(Democratic control) 67.5% → 69.1%. House 229.7 → 229.7 (94.9% → 95.1%). Governors 26.1 unchanged.
+
+Oct 9, 2026
+DATA FIX
+Race polls refreshed through October 8
+
+Weekly `npm run refresh` of every 2026 race's Wikipedia polling tables, append-only as before. Two new aliases map Wikipedia's spellings to rated pollsters (UMass Lowell/YouGov → UMass Lowell Center for Public Opinion; The Washington Post/SSPG → Washington Post/GMU Schar School). The scraper reads Wikipedia's June Alaska Survey Research governor poll as D 47.8 / R 52.2 party-summed where the file has 42.2 / 57.8; the row on file was left as is. No method change.
+
+EFFECT 90 new polls (44 Governor, 12 House, 34 Senate) in 46 races; 967 polls in 159 races, newest ending 2026-10-08. Senate: expected Democratic seats 51.1 → 51.2, P(Democratic control) 66% → 68%. House 229.1 → 229.7 (94% → 95%). Governors 26.2 unchanged. 6 rating changes: NC-01 Tilt R → Lean D, KY-06 Lean R → Tilt R, Nevada Governor Lean D → Tilt D, New Mexico Governor Safe D → Likely D, Vermont Governor Safe R → Likely R, FL-16 Lean R → Likely R.
+
+Oct 5, 2026
+CHANGE
+Forecast over time: the model rerun once per day since January
+
+Every build reruns the whole forecast for each day from January 12 (the first day the generic-ballot average has five pollsters) to today: forecastAsOf(day) sets the forecast clock to that day, so only polls whose field period had ended count, poll aging and pollster house effects are measured from that day, and the national environment's horizon is that day's distance to the election. The Overview charts the House and Senate control odds and expected Democratic governorships from it. It is today's model on each day's polls, not a record of what the site published: a later model change, map correction or candidate fix applies to every day, nominees are the eventual ones even before their primaries, fundraising is the latest filing, and a poll counts from its field end date even if it was published later. Fixed along the way: the generic-ballot average took each pollster's latest poll whatever the as-of date; it now ignores polls that end after it (no effect on today's number).
+
+EFFECT Today's point equals the live forecast. House P(Democratic control) runs from 41% on January 12 to 94% today, the Senate from 9% to 68%; the largest one-day move is the Senate's +6 pts on September 9. Polls entered later (the October 4 generic-ballot update) land on the days they were fielded, not the day they were added. 267 days in about 20 s of build time (scripts/buildForecastHistory.ts, four worker processes).
+
+Oct 4, 2026
+DATA FIX
+Generic ballot and Trump approval polls updated through October 2
+
+New RealClearPolitics exports replace data-entry/generic_ballot_polls.csv (219 polls, January 2 – October 2) and data-entry/trump_approval_polls.csv (319 polls); both rebuilt with their data-entry scripts. The generic ballot feeds the national environment, so every race's structural margin and the race-poll aging shift move with it; nothing in the method changed.
+
+EFFECT Generic ballot D+6.4 → D+8.4 (D 48.1 → 50.7, R 41.7 → 42.3); approval net −18.1 → −21.4. Every race moves Democratic, mean 1.35 pts, max 2.1. House: expected Democratic seats 224.5 → 229.4, P(Democratic control) 81% → 94%. Senate 50.5 → 51.3, 52% → 68%. Governors 25.5 → 26.3. 46 rating changes, including Iowa Senate Tilt R → Tilt D, Nevada Governor Tilt R → Lean D, FL-14, FL-22 Tilt R → Lean D, and IA-02, MI-07, MI-10, NC-01 Tilt R → Tilt D.
+
+Oct 4, 2026
+DATA FIX
+Race polls refreshed through October 3, and the refresh is now one command
+
+The Senate, Governor and House poll file had last been scraped in mid-September. `npm run refresh` now re-scrapes every 2026 race's Wikipedia polling tables (scripts/fetch-race-polls.py, the same table rules as before: both nominees named in the header, first row per poll, full-field matchup preferred, top-four fields party-summed), appends only polls not already on file so hand-entered rows survive, skips Alaska Senate (RCV final rounds, hand-entered) and same-party generals, rebuilds data/racePolls.ts and the pollster-rating counts, and prints what moved. The scraper reproduces 634 of the 649 2026 polls already on file; the other 15 come from tables Wikipedia has since removed and stay in the file. Eight new aliases map Wikipedia's spellings to rated pollsters (New York Times/Siena University → NYT/Siena, DCCC, UMass/YouGov, Braun/Vermont Public). The overview now shows how current the race polls are.
+
+EFFECT 223 new polls (80 Governor, 51 House, 92 Senate); 877 polls in 154 races, newest ending 2026-10-03; 15 races polled for the first time. Senate: expected Democratic seats 50.1 → 50.5, P(Democratic control) 41% → 52%. House 223.7 → 224.5 (80% → 81%). Governors 24.9 → 25.5. 21 rating changes, including Ohio Governor Lean R → Tilt D, ME-02 and PA-07 Lean R → Tilt D, Kansas Senate Likely R → Lean R, Iowa Senate Lean R → Tilt R.
+
+Oct 4, 2026
+DATA FIX
+Missouri back on its 2022 congressional map
+
+The Missouri Supreme Court struck down the 2025 mid-decade map on Sept. 3, 2026, and the state votes on its 2022 lines in November. Every 2026 layer now carries those lines for Missouri: the boundary files (from the Census 119th-Congress districts), the district PVI (recomputed by the column's 30/70 formula on 2022-line presidential results), the presidential results District TPL reads (2020 from The Downballot, 2024 from the official district cuts, 2016 from an overlay of Dave's Redistricting VTD data that reproduces the published 2020 and 2024 figures within 0.07 and 0.04 points), the demographics (the published ACS figures, which already describe these lines, replace the tract estimate), the turnout model's county shares and the House pages' county pieces. Missouri no longer counts as redrawn, so its eight seats also re-enter the forward backtest's stable-lines House set.
+
+EFFECT MO-05 R+9.7 Likely R → D+28.7 Safe D; MO-04 R+20.2 → R+39.8, MO-06 R+24.0 → R+35.4, MO-03 R+18.0 → R+24.5, MO-02 R+10.8 → R+7.7. House: expected Democratic seats 222.6 → 223.7, P(Democratic control) 75.2% → 80.0%. Backtest House MAE (all years) 4.58 → 4.51 on 465 races instead of 449; 2026 turnout estimate 110.40M → 110.36M House votes.
+
+Sep 29, 2026
+CHANGE
+Projected results by county on every race page, and the implied generic ballot
+
+Senate and governor pages' county map and a new default tab on the House page's district map show the 2026 projected result by county: the race's forecast margin, unchanged, spread over its counties by county TPL — a House district's piece of a split county adds the piece's 2024 deviation from its county, from the district-by-county results, where the lines are unchanged and every piece was contested — plus one shift solved so the turnout-weighted mean equals the forecast (lib/countyProjection.ts; House on the 2026 county pieces, cut from the site's 2026 boundary file by scripts/build-house-county-pieces.py 2026). Decided races paint 100% for the side that has them. Adding every race back up gives the implied generic ballot on /analysis/turnout, with the House figure decomposed into the forecast's shrunk expectation, decided seats, turnout weighting and third parties. No forecast margin changes.
+
+EFFECT Implied 2026 ballot: House D+4.6 (contested races only D+2.4; equal-weighted D+4.4), Senate D+1.0 over 35 races, governor D+6.5 over 36, all three D+4.3; polling generic ballot D+6.4, the forecast's expected House vote D+5.7.
+
+Sep 23, 2026
+CHANGE
+Race polls are kept only from 1 January 2026
+
+A poll counts toward a race's average, and appears in its table, only if it went into the field on or after 2026-01-01; data-entry/race_polls.csv keeps the earlier polls as archive and data-entry/build-race-polls.js no longer emits them (118 of 772 rows). Recency weighting already left an off-year poll effectively weightless, but it could still be a pollster's latest survey — and so the row that firm contributed to the table — or give a race with no 2026 polling a polling average of its own. The generic-ballot and Trump-approval files are already 2026-only, and the historical archive the poll weight is fitted on (race_polls_history.csv) is untouched. The 2026 poll counts on the Pollster Ratings page use the same window.
+
+EFFECT 654 polls across 139 races remain. Illinois Governor, NY-01 and VA-01 had only pre-2026 polls and are now Model-only; 32 other races show fewer pollsters. Nothing else moves: largest margin change 0.0003 (California Governor), no rating changes, chamber simulations identical.
+
+Sep 21, 2026
+CHANGE
+Current-cycle pollster house effects removed from every race poll
+
+Each poll is read net of its pollster's lean against the other pollsters in the races they share this cycle (shrunk by 2 pseudo-polls, capped at ±5, 200-day window). Pollster accuracy grades are displayed but are not a weight: past accuracy does not persist into the next cycle, house effects do.
+
+EFFECT Backtest: Senate poll average 6.64 → 6.27 (mid-Sept), House 5.11 → 4.75; blend gains in the Senate, ±0.07 elsewhere. Live: mean |Δ margin| 0.18 over polled races.
+
+Sep 21, 2026
+CHANGE
+Demographic shock added to the chamber simulation; simulation noise aligned to each race's own spread
+
+One zero-mean shock per axis (nonwhite share sd 1.5, college share sd 1.0 pts per 10 pts of share) is shared by demographically similar races, carved out of each race's own noise so no win probability moves. Race noise in the simulation is now the race's own σ² − (β*σ_E)² rather than the office default. No demographic TREND term enters the mean projection — 2025 reversed 2024's nonwhite swing.
+
+EFFECT House 80% seat range 215–233 → 214–234; Senate P(D control) 36% → 42% from the noise alignment.
+
+Sep 21, 2026
+CHANGE
+Poll aging
+
+Each race poll is shifted by POLL_AGING_SHARE (1) × β* × (generic ballot now − generic ballot on the poll's end date) before averaging.
+
+EFFECT Backtest blend moves < 0.05; poll average alone Senate 6.64 → 6.60, House 5.11 → 5.03. Kept at 1 on principle.
+
+Sep 21, 2026
+TESTED, NOT ADOPTED
+Open-seat carryover and freshman-incumbent terms — not adopted
+
+Leave-one-year-out with year fixed effects: open-seat carryover Senate −0.4 ± 1.2, House −1.1 ± 0.8, Governor −4.2 (unstable); freshman effect Senate −0.9, House −1.0, Governor +4.4 (2018-driven). Neither improves out-of-sample error. The same run swept House incumbency through strip, candidate effects and forward term: optimum 2.5–3, so the fixed 3 stays.
+
+Sep 21, 2026
+DATA FIX
+90 House incumbent flags corrected
+
+Returning members whose district NUMBER changed in redistricting (70 in 2022, Pennsylvania's 12 in 2018, plus six same-number cases) had been flagged as open seats in house_past_results.csv.
+
+EFFECT 155 live House margins move by < 1 pt; one rating change (CA-22 Lean → Likely D).
+
+Sep 21, 2026
+CHANGE
+Alaska Senate polls: ranked-choice final round only
+
+The S,AK,Senate rows hold only a poll's RCV final round between the two finalists, entered by hand; first-choice toplines and party-summed rows are not ingested. Party-summing assumed every minor-Republican vote transfers, which the RCV polls contradict.
+
+Sep 20, 2026
+CHANGE
+Money term moved to the residual gap
+
+Forward money points are paid on the receipts gap BEYOND what a generic pair in the same situation would have: clamp(MONEY_K × (0.9 × gap% − structural gap%), ±MONEY_CAP), k H .04 / S .06 / G .04, cap H 3 / S 4 / G 3. The 0.9 scales a mid-September snapshot to a full-cycle gap. Missing receipts score 0, which now means "typical gap assumed". The candidate effects behind the forward Candidates term use the same basis. The backward TPL strip is unchanged (raw gap, k .02, cap 2).
+
+EFFECT Forward MAE S / G / H: raw gap 5.61 / 9.20 / 4.81 → residual 5.04 / 8.90 / 4.59. "Impute, never zero" was tested and rejected (5.93 / 9.50 / 4.94).
+
+Sep 16, 2026
+CHANGE
+Race polling blended into the projection
+
+margin = (1 − w) × model + w × poll average, w = nEff / (nEff + POLL_K). Fitted k was S 3 / G 0.1 / H 1; set to H 2 / S 3 / G 2 so a single fresh poll carries at most a third of a projection. Race spread becomes (β*σ_E)² + ((1−w)·RACE_SIGMA)² + (w·POLL_SIGMA)². Hand-entered RCP fields no longer enter the forecast.
+
+EFFECT Backtest (polled races, mid-Sept): Senate 5.40 → 4.65, Governor 9.76 → 7.4 at the chosen k, House 4.28 → 3.65. Senate P(D control) 21% → 37%.
+
+Sep 16, 2026
+CHANGE
+Non-two-party generals
+
+Same-party generals (CA top-two D-v-D, CA-40 R-v-R) and races with one placeholder nominee are decided: probability pinned at 99.5%, rating Safe, margin floored at ±20, no simulation noise. Kevin Kiley is modeled as the R-aligned incumbent. Unaligned independents standing in for a missing party (Osborn and six others) stay contested, scored structurally plus their own record and polls; a win counts for the slot's party.
+
+Sep 16, 2026
+CHANGE
+Statewide candidate effects decay more slowly
+
+Senate / Governor / President races fade at 0.9 per year in the candidate-effect solve, House at 0.8. The decay sweep is flat within 0.06 MAE across 0.8–1.0, so 0.9 is a judgment call.
+
+Sep 16, 2026
+CHANGE
+Appointed incumbents receive no incumbency
+
+An incumbent who has never won the seat (R*/D* in the CSVs) gets APPOINTED_INCUMBENCY_SHARE = 0 of the office's advantage, both when TPL strips incumbency and when the forecast adds it. 8 of 9 historical appointees ran behind an open-seat generic even at share 0 (mean −5.6); no penalty is applied either.
+
+Sep 16, 2026
+TESTED, NOT ADOPTED
+Observable prior on candidate quality (prior office, prior win) — built, switched off
+
+Net of the full money gap, prior office carries nothing: legislator coefficient −0.2 to −0.8, no feature set moves pooled MAE by more than 0.02, and the prior-win version raised House error 4.83 → 4.98. The literature's 2–4 pt quality-challenger effect is expressed through receipts, which this model keeps as its own term. OBSERVABLE_PRIOR_FEATURES = []; data and code kept.
+
+Sep 16, 2026
+CHANGE
+Candidate-quality term from ridge track records
+
+Candidates pts = QUALITY_WEIGHT[office] × (effect_R − effect_D), weights H 0.75 / S 1.0 / G 1.5 from a leakage-free sweep. Replaced the manual WQ/LQ quality tiers and the VT/NH governor overrides.
+
+EFFECT Pooled MAE S 5.96 → 5.69, G 10.95 → 9.38, H 5.18 → 4.83.
+
+Sep 16, 2026
+CHANGE
+Win probability and chamber simulation
+
+P(D) = Φ(−margin / σ), σ² = (β*σ_E)² + RACE_SIGMA², clamped to 0.5–99.5%. Chamber totals from 5,000 seeded simulations sharing one national shock through β*. Replaced the logistic 0.13 curve. Rating remains a band of the MARGIN, not of the probability.
+
+Sep 16, 2026
+CHANGE
+Structural environment term
+
+The generic ballot is converted onto the model's E scale: E = c + s × House vote (fitted from the model's own E), with half the historical mean poll miss applied to the point estimate and the rest of the miss plus September→November drift carried as the shared national error σ_E. Replaced "margin += generic ballot × β*".
+
+EFFECT Pooled MAE vs the raw generic-ballot rule: S 6.30 → 5.96, G 11.29 → 10.95, H 5.87 → 5.18.
+
+Sep 16, 2026
+CHANGE
+Forecast fields derived, not entered
+
+lib/forecast.ts became the single source of a race's margin, probability, spread and rating; hand-entered probability / margin / rating fields were removed from the data.
+
+Sep 8, 2026
+CHANGE
+Senate and Governor incumbency fitted inside the TPL fit
+
+Estimated jointly with lean / β / E from the incumbent-signed residual with the fundraising strip already applied (so it is net of incumbents' money). Replaced hand-set S 2 / G 7. House stays a fixed 3 — a state-level lean cannot separate House incumbency from district lean.

@@ -1,0 +1,78 @@
+http://localhost:3000/methodology/state-tpl
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+TRUE PARTISAN LEAN · STATES
+A state's lean in a neutral year
+
+True Partisan Lean, or TPL, answers one question: if a typical Republican ran against a typical Democrat in a year that favored neither party, who would win this state, and by how much? It is the starting point of every Senate and governor forecast.
+
+D+30.9
+Hawaii, the most Democratic state
+R+41.8
+Wyoming, the most Republican state
+R+1.8
+the median state
+R+0.1
+Wisconsin, the closest to even
+HOW IT'S BUILT
+Four steps
+
+A single election result says as much about that year's candidates and national mood as it does about the state. TPL uses many results at once and takes those things out.
+
+1
+Collect every race since 2016
+President, Senate, governor, U.S. House and the state legislature, including odd-year elections. A race counts only if a real Republican faced a real Democrat. Where one party had no candidate, the race is filled in from the area’s presidential vote instead of being counted as a 100-point blowout.
+2,606
+RACES IN THE FIT
+2
+Take out what isn't about the place
+Each result has three things removed: the national mood that year (some states swing more with the country than others, and that is measured too), the advantage of an incumbent on the ballot, and any unusual fundraising gap. What’s left is how the place itself voted.
+3
+Average across offices and years
+The presidential race counts most, because every voter sees the same two candidates. Recent years count more than older ones, and each year back counts 75% as much as the year after it.
+4
+Turn down the outliers
+A candidate who runs far from the state’s usual result, like Joe Manchin in West Virginia or Phil Scott in Vermont, would otherwise drag the lean. Their races count for less, so the lean describes the state rather than one politician. Their personal strength shows up in WAR instead.
+EACH OFFICE’S WEIGHT
+share of a year's lean
+President
+60%
+U.S. House
+20%
+Senate
+10%
+State legislature
+7%
+Governor
+3%
+EACH YEAR’S WEIGHT
+relative to 2024
+2024
+100%
+2022
+56%
+2020
+32%
+2018
+18%
+2016
+10%
+TRACK RECORD
+How well does it predict?
+
+We built each state's lean from results through 2022 and compared it with the 2024 results, after allowing for the national shift between those years. The table shows the typical miss in points, next to two simpler ways of guessing.
+
+2024 RESULT	TPL	2020 PRESIDENTIAL RESULT	AVERAGE, NOTHING REMOVED
+President	2.2	1.9	2.5
+Senate	4.9	5.0	4.7
+Lower is better. The last presidential result is hard to beat at predicting the next one; TPL's job is to describe every office on one scale, which a single presidential result cannot do.
+QUESTIONS
+Reading a lean
+Is it relative to the nation?
+No. It is an actual margin: R+5 means a typical Republican wins by 5 points in a neutral year. It is not a comparison with the country as a whole.
+Why not just use the last presidential result?
+Presidential results move with the candidates at the top of the ticket and that year's national mood. TPL averages over many races and years with those effects removed, so it changes slowly and works for every office.
+Does it include this year?
+No. It is built from past results only. The forecast adds 2026's conditions on top of it.
+
+SEE ITEvery state’s lean, with the races behind it, is on the TPL tab.

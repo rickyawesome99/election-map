@@ -83,3 +83,6 @@ data/generated/
 # Election-night civicAPI snapshots (scripts/archive-results.mjs; hundreds of MB over a night)
 data-entry/results-archive/
 data-entry/results-live/
+
+# Race page screenshots (scripts/archive-race-page-shots.mjs)
+data-entry/page-archive-2026/

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { statesData } from "@/data/statesData";
 import { electionYear } from "@/data/forecastData";
 import { stateDemographics } from "@/data/demographics";
-import { buildStatePage, GENERAL_ELECTION } from "@/lib/statePage";
+import { buildStatePage } from "@/lib/statePage";
 import StateHero from "@/components/state/StateHero";
 import StateExplorer from "@/components/state/StateExplorer";
 import StateDemographicsSection from "@/components/StateDemographicsSection";
@@ -42,7 +42,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       <StateHero name={state.name} abbr={state.abbr} tpl={data.tpl} ballotSentence={data.ballotSentence} bodies={data.bodies} />
 
       <main className={`${PAGE_CONTAINER} pt-2 pb-8`}>
-        <StateExplorer data={data} electionYear={electionYear} generalElection={GENERAL_ELECTION} />
+        <StateExplorer data={data} electionYear={electionYear} />
 
         {stateDemographics[state.abbr] && (
           <div className="mt-2">

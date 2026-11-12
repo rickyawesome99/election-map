@@ -1,0 +1,259 @@
+http://localhost:3000/analysis/internal-methodology/war
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+WAR · WINS ABOVE REPLACEMENT
+How much better than a generic nominee
+
+WAR is how far a candidate’s actual margin ran ahead of what a replacement-level nominee of their party — a generic non-incumbent — would have managed against the same opponent in the same seat and year, in points of margin. It is built from three numbers, each answering a different question. Table: TPL → Candidates.
+
+Expected Result
+Generic vs generic. The margin this seat would produce in that year with two replacement-level nominees: the seat’s lean in that year, the national environment, incumbency, and the money gap a generic pair in that situation would have.
+Vs. Opponent
+Generic non-incumbent vs this specific opponent. The Expected Result moved by the opponent’s own candidate effect — facing a strong opponent lowers what a generic nominee would be expected to do — and, when the candidate is the incumbent, with their own incumbency taken out: a replacement-level nominee never holds the seat.
+Candidate WAR
+Actual − Vs. Opponent, signed toward the candidate. Equal to the candidate’s own effect, plus whatever the race left unexplained, plus — for an incumbent — what their incumbency was worth.
+Expected      = lean-in-that-year + β*·E(year) + incumbency + structural money pts         R-positive
+residual r    = Actual − Expected                       = a_R − a_D + ε      one per race, two candidates
+Incumb.       = Expected − Expected with no incumbent    incumbent's row only, signed toward them; 0 otherwise
+Vs. Opponent  = Expected − s × Incumb. − s × a_opponent   s = +1 for a Republican, −1 for a Democrat
+WAR           = s × (Actual − Vs. Opponent)             = a_candidate + s × ε + Incumb.
+Positive WAR is always good for the candidate, whichever party. Because each side keeps the whole unexplained leftover ε, the two candidates’ WARs do not sum to the residual — as a batter and a pitcher both book the same hit. The ridge solves on r, with incumbency stripped; Incumb. is added back only to the reported WAR, so the candidate effects the forecast reads are unchanged by it.
+NOW	
+Candidate-race rows	4,742
+Races	2,371
+Candidates (≥ 2 races)	2,903 (968)
+House · Senate · Governor · President rows	3870 · 338 · 234 · 300
+NUMBER 1
+Expected Result (generic vs generic)
+
+A lean is one number for 2016–2025, but a race is a fact about its own year. Scoring an old race against a present-day lean would charge the candidate for everything the electorate did since, so the anchor is moved to the race's year.
+
+Senate / Governor:  base = fitted state lean + trend(Y) + β*·E(Y) + incumbency
+House:              base = District TPL + trend(Y) + shift + β*·E(Y) + incumbency
+President:          base = fitted state lean + β*·E(Y)                                   (no trend — it would be circular)
+No-D / no-R race:   base = imputed presidential baseline (NM) + β*·E(Y) + incumbency      (Osborn-class; no money term)
+trend(Y) = neutral presidential margin interpolated to year Y − the presidential average the lean embodies
+Expected = base + clamp(FF_K × structural gap%, ±FF_MAX)
+State anchor
+The Huber-fitted state lean from the TPL fit — outlier-resistant, so Manchin’s own wins do not inflate his baseline. It has no recency decay, so its presidential average is an equal-year one.
+District anchor
+District TPL, whose presidential average is recency-weighted to match. shift is the boundary shift: the actual margin was recorded on the map the race was run on, so the expectation must sit on that turf too. The member’s own House margins feed District TPL, which slightly shrinks House WAR.
+Trend interpolation
+Presidential margins exist every four years; other years interpolate linearly between the bracketing ones (2018 = ½·2016 + ½·2020; 2025 clamps to 2024).
+Excluded
+Same-party generals and Louisiana's fragmented jungle generals (no R-vs-D margin to sign), and State Legislature rows (no candidate).
+Relocated House races
+Carry their boundary weight into the candidate-effect fit, discounted exactly as they are in District TPL.
+STRUCTURAL MONEY
+only the money a generic pair would have had goes into Expected
+
+The TPL strips the full fundraising gap because it wants the seat’s lean. For a quality metric, money is partly the candidate. So the gap is split: the structural part — predicted from incumbency and the pre-money margin — enters Expected; the money a candidate raised beyond their situation stays in the residual and is credited to them. The prediction needs no receipts, so every non-imputed race gets the term.
+
+structural gap% = a + b × incumbentSign + c × base
+OLS per office over races with both receipts known; base = the expected margin before money.
+OFFICE	INTERCEPT A	INCUMBENT B	MARGIN C	RACES	R²
+Senate	−21.1	+15.8	+1.90	166	0.67
+Governor	−1.7	+22.7	+1.22	117	0.52
+House	−1.8	+34.4	+1.30	1935	0.80
+NUMBER 2
+Vs. Opponent (generic vs this opponent)
+
+A single race yields one residual for two candidates and cannot split it. Candidate effects are what make the opponent-specific expectation identifiable: they are estimated across every race each candidate has run.
+
+minimise  Σ w_j × (r_j − a_R + a_D)²  +  λ × Σ ρ(a_c)                    λ = 1
+ρ(a) = 2τ² × (√(1 + (a/τ)²) − 1)       ≈ a² near zero, 2τ|a| far out      τ = 10 · 5 for a candidate who has run as the incumbent
+w_j = boundary weight × decay^|year_j − Y|                               decay 0.9 statewide · 0.8 House
+one solve per target year Y, warm-started — an effect is always "as of" the race being scored
+Weighted coordinate descent on the normal equations, the penalty re-weighted each sweep (λ_c = λ / √(1 + (a_c/τ)²)), to convergence. The penalty is strictly convex, so the solution is unique.
+The ridge penalty
+Encodes “an unseen candidate is replacement level”. A one-race candidate keeps what is left after a known opponent’s effect, shrunk by 1/(1+λ); two one-race candidates split the residual evenly (⅓ each as effect, leaving ε = ⅓), so each books a WAR of ⅔ of it.
+The heavy tail
+A squared penalty finds one +43 candidate and five −15 opponents cheaper than one +75 candidate, so every Democrat who faced Phil Scott absorbed part of his popularity and booked a WAR of −30 or worse. Beyond τ the penalty grows only linearly, so an extraordinary candidate is no longer cheaper to explain as a run of terrible opponents; below τ it is the same ridge, and all but a few dozen rows are unchanged. τ is smaller for a candidate who has run as the incumbent at least once in the window, because the tail belongs to them: of the 12 races more than 30 points off Expected, 9 favor the incumbent and 1 goes against. That is also what splits a one-race pair such as Baker and Gonzalez; a pair with no incumbent (Justice and Cole) still splits evenly. An opponent’s WAR against such a candidate is bounded but not zero, and where the candidate’s own strength moved over time (Scott in 2016 against 2024) the early opponents read too high: see Known limitations.
+Pooling
+Effects are keyed state | party | normalized name and pooled across offices: Hogan’s Governor and Senate races inform one effect.
+Recency
+The race being scored always carries full weight; a candidate's other races fade with distance. The same candidate therefore shows different effects on different rows. Measured persistence of repeat candidates' residuals: slope ≈ 0.45 at 1–4 year gaps, 0.26 at 5–6, ≈ 0 at 7–9.
+Effective races
+Σ of the recency weights, shown beside each Effect on the WAR tab.
+The replacement is a non-incumbent
+Expected carries the office’s incumbency term, so the ridge measures an incumbent against a generic incumbent — the right basis for isolating quality (that is the Effect column, and what the forecast uses). WAR asks a different question: how much better than freely available talent, and freely available talent never holds the seat. So an incumbent’s row adds back Incumb. = Expected minus the same expectation with no incumbent in the race: the office’s incumbency term plus the incumbent share of the structural money term, re-priced on the open-seat margin. Challengers and open seats add nothing (the opponent’s incumbency is a fact of the race either way); appointed incumbents carry no incumbency term, so only the money share. Part of the incumbency advantage is deterrence of strong challengers, and that part is already netted out through the opponent’s effect, so the add-back does not double-count it.
+WAR_LAMBDA
+1
+Ridge penalty on candidate effects.
+SET FROM A MEASUREMENT
+Leave-one-out persistence of repeat candidates' residuals: r = 0.66 (0.38 excluding |r| > 25), slope 0.68 → λ ≈ 1. Harness calibration by leave-one-race-out is deferred.
+WAR_TAIL
+10
+τ: where the penalty on a candidate effect turns from squared to linear, in points.
+BACKTEST-CALIBRATED
+10-fold held-out error on repeat candidates' races: ridge 3.91, τ 10 for everyone 3.88, 10 / 5 3.87 (statewide 6.35 → 6.12 → 6.01); flat from 8 / 4 to 15 / 5.
+WAR_TAIL_INCUMBENT
+5
+τ for a candidate who ran as the incumbent at least once in the window.
+BACKTEST-CALIBRATED
+Same test; races with |residual| > 30: 9 favor the incumbent, 1 against, 2 open seats.
+WAR_RECENCY_DECAY
+0.8
+Per-year fade of a past House race (2 yrs 0.64 · 4 yrs 0.41 · 8 yrs 0.17).
+SET FROM A MEASUREMENT
+Tracks the measured persistence curve.
+WAR_RECENCY_DECAY_STATEWIDE
+0.9
+The same for Senate / Governor / President races: a statewide brand persists longer.
+JUDGMENT CALL
+Decay sweep flat within 0.06 MAE across 0.8–1.0.
+FF_K · FF_MAX
+0.02 · ±2
+Points per point of STRUCTURAL money gap in Expected, and its cap — the TPL strip's constants.
+BACKTEST-CALIBRATED
+NUMBER 3 · WORKED EXAMPLE, LIVE
+Candidate WAR
+
+Phil Scott, 2022 VT Governor against Brenda Siegel.
+
+EXPECTED RESULTgeneric vs generic
+D+27.8
++
+OPPONENT'S EFFECTBrenda Siegel −8.2 toward their own side
+R+8.2
++
+OWN INCUMBENCY, REMOVEDIncumb. +5.4 toward the candidate: a replacement would not hold the seat
+D+5.4
+=
+VS. OPPONENTgeneric non-incumbent vs this opponent
+D+25.0
+ACTUAL
+R+47.0
+=
+CANDIDATE WARown effect +60.2 (5 races, 3.8 effective) + leftover +6.4 + incumbency +5.4
++71.9
+
+Identity on every row: WAR = s × (Actual − Vs. Opponent) = own effect + s × ε + Incumb. The Residual column on the WAR tab is s × (Actual − Expected), the race’s net two-candidate effect before attribution. Margins are colored by the party they favor (D+ / R+); WAR is candidate-signed, so it is not.
+
+HIGHEST AND LOWEST
+down-ballot rows, live
+CANDIDATE	RACE	ACTUAL	EXPECTED	VS. OPP	WAR
+Phil Scott	2024 VT Governor	R+51.6	D+26.0	D+21.5	+73.1
+Phil Scott	2022 VT Governor	R+47.0	D+27.8	D+25.0	+71.9
+Phil Scott	2020 VT Governor	R+41.1	D+30.0	D+28.9	+70.0
+Charlie Baker	2018 MA Governor	R+33.5	D+27.2	D+26.8	+60.3
+Phil Scott	2018 VT Governor	R+14.9	D+30.9	D+42.6	+57.5
+Phil Scott	2016 VT Governor	R+8.7	D+26.2	D+39.5	+48.2
+Bill Cole	2016 WV Governor	D+6.8	R+38.7	R+20.4	−27.2
+Arthur Jones	2018 IL House	D+47.1	D+22.8	D+25.2	−21.9
+Dan Feltes	2020 NH Governor	R+31.8	D+1.5	R+10.2	−21.6
+Louie Campos	2016 CA House	R+35.1	R+11.7	R+13.6	−21.6
+Martha Roby	2016 AL House	R+8.2	R+35.2	R+27.7	−19.5
+Eliot Glassheim	2016 ND Senate	R+61.5	R+40.3	R+44.4	−17.1
+TWO VERSIONS
+WAR on the tab vs. the forecast's Candidates term
+	WAR TAB	FORECAST → CANDIDATES
+Money in Expected	Structural gap only, k 0.02 cap ±2	FULL residual-basis money (k 0.04/0.06/0.04) — money is its own forward term
+Incumbency	Stripped from Expected for the ridge; an incumbent's own incumbency added back to WAR (Incumb.)	Stripped from the effects; the forecast adds incumbency as its own term
+Reads as	Value over a replacement-level (non-incumbent) nominee, money beyond the situation included	Quality net of money and incumbency
+Penalty on effects	Heavy-tailed: squared up to τ (10 · 5 for incumbents), linear beyond	Plain ridge (squared throughout) — the heavy tail has not been through the forward backtest
+Solved as of	Each race's own year	2026, from races through 2025
+Used for	The WAR column	QUALITY_WEIGHT × (effect_R − effect_D) — see Forecast
+OPEN ITEMS
+Known limitations
+House self-influence
+Same-candidate persistence of House WAR from 2022 to 2024 is .37 against .58 for Split Ticket's metric, because the district anchor contains the candidate's own margins. Proposed fix: jackknife District TPL per candidate, or anchor House to president + swing.
+One effect per candidate per solve
+A candidate whose strength moved a lot inside the window is fitted with a single effect, pooled over all their races with a gentle decay. Phil Scott's is about +57 as of 2016, when he actually ran 36 ahead of Expected, so Sue Minter is credited with holding him to that (+21) and his own 2016 WAR (+49) exceeds his residual. The heavy tail made this more visible: it stopped shrinking his effect. A per-candidate trend or a steeper decay would address it.
+One national environment
+A single E(year) scaled by β* can flip sign against a per-state environment (HI, NH in 2024).
+Window
+Records start in 2016: Baker, Manchin and Justice are one-race candidates here. House coverage before 2022 is thin.
+No standard error
+Effects carry an effective race count but no interval.
+Benchmarks
+Inside Elections VAR ≈ our residual ÷ 2 (r .93; share vs margin scale). Split Ticket WAR vs our residual r .84 (Senate .90, House .80). Both comparisons are on the residual, not WAR: Split Ticket controls for incumbency, Strength in Numbers counts it toward WAR as we now do, Inside Elections leaves it in the score.
+REFERENCE
+Code and commands
+WHERE IT LIVES
+lib/tplCompute.ts
+buildWarPending (anchors, trend, shift), computeWarTable, fitWarMoneyModel, solveCandidateEffects, attributeWar; computeCandidateEffects for the forecast.
+components/TplModelPage.tsx
+The WAR sub-tab.
+RE-RUN AFTER A CHANGE
+npx tsx scripts/forwardBacktest.ts --env struct --quality · --decay-sweep
+The leakage-free test of whether candidate effects predict forward, and of the decay.
+npx playwright test -g war
+WAR tab filters and column count.
+WHAT CHANGED, AND WHEN
+Revision history
+Nov 3, 2026
+DATA FIX
+Candidate identity: one person, one WAR record across spellings
+
+The WAR / candidate-effect key is state | party | name, and the name was matched exactly after dropping punctuation. Two things split one person's record in two. Accents were deleted rather than folded ("Raúl" → "ral", "André" → "andr", "Barragán" → "barragn"), and results files carry different spellings in different years (James / Jim Himes, Mike / Michael Turner, Mary Gay / Mary Scanlon, Becca / Rebecca Balint, Jefferson / Jeff Van Drew…). For 2026 nominees on a new ballot spelling the lookup found nothing, so they were forecast as if they had no track record (an incumbent's effect read exactly 0). The final pre-lock audit (scripts/audit-war-identity.ts) compared every same-state, same-party, same-surname pair of keys. New SAME_PERSON_IN_STATE in lib/candidateSlug.ts maps 70 spellings to one name each (25 people on the 2026 ballot, 42 past candidates only; canonical = the 2026 ballot name, else the most recent). warCandidateKey folds accents and applies the map, and data/candidateOffices.ts is re-keyed through it, so the observable prior pools both spellings' offices. Candidate pages merge on the same map, and the old slugs redirect. Party switchers also keep one record (PARTY_SWITCHERS fixes the party label in their key: Jolly R→D, Bengs D→independent, Van Drew D→R; user decision). This is safe because an effect is signed toward the candidate, not the party. Left deliberately split: different people with one surname (Peter / Paul King, Sherrod / Shontel Brown, Adam / Adrienne Bell, Mark / Max Rice, Chris / John Sununu, Raúl / Adelita Grijalva).
+
+EFFECT OH-10 R+4.4 → R+6.3 (P(D) 20% → 11%), FL-27 R+3.7 → R+4.9 (25% → 18%), NY-01 R+3.6 → R+4.5 (30% → 25%), VA-02 D+3.6 → D+2.9 (75% → 71%), NJ-02 R+8.3 → R+9.1, SD-Sen R+24.4 → R+26.7 (Bengs's 2022 record), FL-Gov R+4.65 → R+4.68; 43 races move by 0.05 pts or more, all other changes are in safe seats. House mean 236.6 → 236.4 seats, P(D House) 91.5% → 91.4%; Senate and governors unchanged. Forward backtest neutral (pooled MAE S 4.91 → 4.92, G 8.84 → 8.84, H 6.27 → 6.28; coverage and Brier unchanged); Calibration tables re-emitted.
+
+Oct 4, 2026
+CHANGE
+WAR: heavy-tailed penalty, so a star's opponents stop absorbing the star's margin
+
+The ridge's squared penalty made one +43 candidate and five −15 opponents cheaper than one +75 candidate, so every Democrat who faced Phil Scott took part of his popularity as their own negative effect, and — since each side also books the whole unexplained leftover — a WAR of −30 or worse. The WAR solve now uses a pseudo-Huber penalty, λ·2τ²(√(1 + (a/τ)²) − 1): the same ridge near zero, linear beyond τ, strictly convex. WAR_TAIL τ = 10; WAR_TAIL_INCUMBENT τ = 5 for a candidate who ran as the incumbent at least once in the window, because the tail is theirs (races with |residual| > 30: 9 favor the incumbent, 1 against, 2 open) — which also decides a one-race pair such as Baker and Gonzalez, while a pair with no incumbent (Justice and Cole) still splits evenly. The definition of WAR, Expected and Incumb. are unchanged. The forecast's candidate effects stay on the plain ridge: the heavy tail has not been through the forward backtest. Not fixed: a candidate gets one pooled effect per solve, so where their strength moved inside the window (Scott 2016 → 2024) the early opponents read too high.
+
+EFFECT 145 of 4,442 down-ballot rows move by more than 1 pt (77 statewide, 68 House), 23 by more than 5; rows below −20 fall from 9 to 4. Charlestin −36.0 → −17.6, Siegel −30.6 → −13.0, Zuckerman −29.8 → −12.6, Gonzalez −42.8 → −10.7, Jealous −27.0 → −17.5; Scott 2024 +65.8 → +73.4, Baker +47.8 → +63.4, Beshear 2023 +27.6 → +33.0. The other direction: Minter 2016 +3.3 → +21.1, Hallquist −6.0 → +11.2. 10-fold held-out error on repeat candidates' races 3.91 → 3.87 (statewide 6.35 → 6.01, House 3.60 → 3.59). No forecast number moves.
+
+Sep 24, 2026
+CHANGE
+WAR is measured against a non-incumbent replacement
+
+The replacement-level nominee was implicitly a generic nominee of the same incumbency status, so an incumbent was scored against a generic incumbent. A freely available nominee never holds the seat, so the incumbent's row now adds back Incumb. = Expected − the same expectation with no incumbent in the race (the office's incumbency term plus the incumbent share of the structural money term, re-priced on the open-seat margin). Vs. Opponent becomes generic non-incumbent vs this opponent; WAR = Effect + leftover + Incumb. Challengers and open seats are unchanged; appointed incumbents get only the money share. The ridge still solves on the incumbency-stripped residual, so Effect, the forecast's Candidates term and the structural money model are untouched.
+
+EFFECT 1,872 incumbent rows credited: Senate 3.1–3.3, House 3.0–3.8, Governor 4.5–5.0 pts (appointed 0.3–0.5). Mean incumbent WAR Senate +0.2 → +3.3, House −0.3 → +3.4, Governor +3.7 → +8.5; challengers and open seats unchanged. No forecast number moves.
+
+Sep 21, 2026
+DATA FIX
+90 House incumbent flags corrected
+
+Returning members whose district NUMBER changed in redistricting (70 in 2022, Pennsylvania's 12 in 2018, plus six same-number cases) had been flagged as open seats in house_past_results.csv.
+
+EFFECT 155 live House margins move by < 1 pt; one rating change (CA-22 Lean → Likely D).
+
+Sep 20, 2026
+CHANGE
+Money term moved to the residual gap
+
+Forward money points are paid on the receipts gap BEYOND what a generic pair in the same situation would have: clamp(MONEY_K × (0.9 × gap% − structural gap%), ±MONEY_CAP), k H .04 / S .06 / G .04, cap H 3 / S 4 / G 3. The 0.9 scales a mid-September snapshot to a full-cycle gap. Missing receipts score 0, which now means "typical gap assumed". The candidate effects behind the forward Candidates term use the same basis. The backward TPL strip is unchanged (raw gap, k .02, cap 2).
+
+EFFECT Forward MAE S / G / H: raw gap 5.61 / 9.20 / 4.81 → residual 5.04 / 8.90 / 4.59. "Impute, never zero" was tested and rejected (5.93 / 9.50 / 4.94).
+
+Sep 16, 2026
+CHANGE
+Statewide candidate effects decay more slowly
+
+Senate / Governor / President races fade at 0.9 per year in the candidate-effect solve, House at 0.8. The decay sweep is flat within 0.06 MAE across 0.8–1.0, so 0.9 is a judgment call.
+
+Sep 16, 2026
+CHANGE
+Year-local anchoring and boundary shift
+
+House races before 2026 are relocated onto today's lines by the presidential delta between the two maps (BS pts) and downweighted by 1 / (1 + (|shift| / 10)²) — replacing the current-era-only filter that discarded 1,700 of 2,154 House rows. WAR expectations add a trend term so an old race is scored against the seat's lean in its own year.
+
+Sep 10, 2026
+CHANGE
+WAR scored against the opponent-specific expectation
+
+WAR = actual − (expected − opponent's effect), so a candidate keeps their own effect plus the whole unexplained leftover. The two sides' WARs no longer sum to the residual; two one-race candidates each get ⅔ of it. Replaced the even ε/2 split.
+
+Sep 9, 2026
+CHANGE
+Only structural money in WAR's expected margin
+
+Expected carries clamp(0.02 × structural gap%, ±2), where the structural gap is a per-office regression on incumbency and the pre-money margin. Money raised beyond the situation stays in the residual and is credited to the candidate.
+
+Sep 8, 2026
+CHANGE
+Ridge candidate attribution with recency weighting
+
+A race residual is split into two candidate effects by a ridge fit (λ = 1) pooled across offices by state | party | name, solved as of each race's year with weights decay^|Δyears|.
+
+Sep 8, 2026
+CHANGE
+Senate and Governor incumbency fitted inside the TPL fit
+
+Estimated jointly with lean / β / E from the incumbent-signed residual with the fundraising strip already applied (so it is net of incumbents' money). Replaced hand-set S 2 / G 7. House stays a fixed 3 — a state-level lean cannot separate House incumbency from district lean.

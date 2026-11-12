@@ -1,0 +1,568 @@
+http://localhost:3000/analysis/internal-methodology/turnout
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+TURNOUT
+What the turnout page measures
+
+The Turnout page shows votes cast in every general election since 2016 — President, Senate, governor and House — by state, House district and county, as a share of citizen voting-age population, and estimates 2026 turnout for every Senate, governor and House race down to the county. Everything is computed on the server from the certified results already on the site plus one new input, CVAP.
+
+DEFINITIONS
+Turnout
+Votes cast in the race ÷ CVAP. Votes, not ballots: no state reports ballots cast consistently, and blank or spoiled ballots add nothing to a race. VEP and total ballots from the U.S. Elections Project are shown beside the state figures as a cross-check.
+CVAP
+Citizens 18 and over from ACS table B05003 (scripts/fetch-cvap.py → data-entry/cvap.csv), one five-year release per election year (2016 → 2012–16 … 2024 → 2020–24; 2025 reuses 2024). Districts come on the Congress each release reports — the lines the election was run on. Connecticut's counties after 2021 are the 2021 release scaled by the state's growth, since the Census now publishes planning regions there.
+First round
+A race decided in a runoff or by ranked-choice rounds is counted at its first round (data-entry/turnout_first_round.csv, 15 races), the electorate that turned out; the race pages keep the decisive round. By-district figures for those races are the runoff round scaled to the first-round total.
+Top race
+The race with the most votes in a geography that year — the president in a presidential year; Senate, governor or the House total in a midterm. Drop-off is a race's votes as a share of it.
+Unopposed seats
+Shown as recorded (zero in FL, OK and LA, which tally no votes for an unopposed candidate) and flagged; the estimate imputes them as contested.
+ESTIMATE · LEVEL
+A state's top-of-the-ticket electorate
+
+The 2026 estimate is a level × distribution model (lib/turnoutModel.ts). The level is set per state from its own midterm history; the distribution splits it across counties and districts.
+
+votesS = CVAPS(2024) × Σy wy · rateS(y) · ticketS(y) · exp(slope × clamp(|m2026| − |my|, ±30))
+rateS(y) = top-race votes ÷ CVAP in midterm y  ·  w2022 = 0.6, w2018 = 0.4
+ticketS(y) puts the basis year on the target year's footing: ÷ 0.92 when the basis midterm had only House races and 2026 has a statewide race, × 0.92 the other way round. my is the basis year's top-race margin; m2026 the forecast margin of the state's closest Senate or governor race. Senate and governor votes are the level × the state's blended office-to-top ratio. The range is each basis midterm alone.
+WORKED EXAMPLE · GEORGIA SENATE
+2018 TOP-RACE TURNOUT|margin| 1.4 → 0.4, × 1.003 · weight 0.4
+54.45%
+2022 TOP-RACE TURNOUT|margin| 7.5 → 0.4, × 1.020 · weight 0.6
+52.47%
+=
+BLENDED RATE× CVAP 7,834,503 (2020–24)
+53.26%
+=
+2026 TOP-RACE VOTESrange 4,110,689 – 4,265,998
+4,172,813
+×
+SENATE FACTORSenate votes ÷ top-race votes, blended
+0.9956
+=
+GEORGIA SENATE ESTIMATE53% of CVAP · 2022 first round 3,935,924
+4,154,358
+CONSTANTS
+ELECTION_YEAR / BASE_PRES_YEAR
+2026 / 2024
+The target year and the presidential election whose county shares and CVAP release anchor it.
+FIXED PRIOR
+MIDTERM_WEIGHTS
+2022: 0.6, 2018: 0.4
+Weight of each basis midterm in the level and office terms. The more recent midterm carries more of the signal; the older one keeps a single odd year from dominating. Each alone gives the range shown with every estimate.
+JUDGMENT CALL
+HOUSE_ONLY_TICKET_FACTOR
+0.92
+Top-race turnout with only House races on the ballot, relative to the same state with a Senate or governor race. From the 9 states whose ticket changed between 2018 and 2022: their excess log change against the other states implies 0.916.
+FITTED LIVE
+COMPETITIVENESS_SLOPE
+-0.0028
+Change in log turnout per point of the top race's absolute margin. Fitted on the 41 states with a statewide race in both 2018 and 2022 (2018→2022 change in log turnout on the change in |margin|, slope −0.28% per point, r −0.40). For 2026 the margin is the site's forecast for the state's closest Senate or governor race.
+FITTED LIVE
+COMPETITIVENESS_CAP
+±30 pts
+The largest margin change the term is allowed to see.
+FIXED PRIOR
+SHRINK_VOTES
+20,000
+Pseudo-votes a county's own midterm propensity and office factors are weighed against the state prior (n / (n + K), n = its 2024 presidential votes). Grid below: the county-share error is lowest at 20,000.
+FITTED LIVE
+DISTRICT_DROPOFF_WEIGHT
+0.5
+How far a district's own most recent House drop-off is trusted against the state's contested-seat mean, when the lines have not moved and the seat was contested. One observation per district, so half.
+JUDGMENT CALL
+ESTIMATE · DISTRIBUTION
+Counties
+
+A county's share of its state's midterm electorate is its 2024 presidential share times its midterm propensity — how much more or less of the state's midterm vote it casts than of its presidential vote — blended over the basis midterms and shrunk toward 1 with 20,000 pseudo-votes. An office factor (the county's Senate-, governor- or House-to-top ratio relative to the state's, shrunk the same way) tilts it per office, and the state's counties are renormalised to the state total.
+
+WORKED EXAMPLE · FULTON COUNTY IN THE GEORGIA SENATE RACE
+FULTON COUNTY 2024 PRESIDENTIAL SHARE535,238 of 5,250,905
+10.19%
+×
+MIDTERM PROPENSITYmidterm share ÷ presidential share, blended, shrunk toward 1
+1.018
+×
+SENATE FACTOR VS. STATEshrunk toward 1
+0.980
+=
+SHARE OF THE GEORGIA SENATE ESTIMATEafter renormalising the state's counties to 100%
+10.20%
+=
+FULTON COUNTY ESTIMATE54% of its CVAP · range 417,439 – 433,211
+423,748
+
+The county's top race in a midterm is the state's top statewide race (the same race everywhere, so shares add up), or its House votes where the state had only House races and every district touching the county was contested. A county with no usable midterm history takes the state prior.
+
+ESTIMATE · HOUSE
+Districts
+
+A district's estimate is the sum over its counties of (county estimate × the share of the county inside the district × the district's House drop-off). Drop-off is House votes ÷ the top statewide race within the district, contested seats only, so an unopposed seat is imputed as if contested.
+
+Own drop-off
+The district's 2022 figure, weighted 0.5 against the state's contested-seat mean, when the state has not redrawn since and the seat was contested. Redrawn districts and 2022's unopposed seats take the state mean; a state with no statewide race in a basis midterm takes the national mean.
+County shares
+data-entry/county_district_shares_2026.csv (scripts/build-county-district-shares-2026.py): where the 2026 lines are the 2024 lines, each county piece's share of the county's 2024 House votes; in the ten states that redrew, every census tract placed in a 2026 district by its internal point and the shares are tract-summed CVAP. Slivers under 0.5% are dropped.
+115,615,272
+2026 HOUSE VOTES, ALL DISTRICTS
+111,302,892 – 121,905,382
+2022-LIKE · 2018-LIKE
+48.1%
+OF CVAP (2020–24)
+113,662,891
+2018 HOUSE VOTES (51.2% TOP-RACE TURNOUT)
+107,661,224
+2022 HOUSE VOTES (46.5% TOP-RACE TURNOUT)
+PROJECTED RESULTS
+County results and the implied generic ballot
+
+The race pages' county maps (lib/countyProjection.ts) spread each race's forecast margin over its counties on the turnout estimate. The race margin is the forecast's, unchanged; the county figures are how it is expected to be made up. Adding every race back up gives the national vote the forecast and the turnout estimate imply together.
+
+marginc = clamp(leanc + s, ±98)  ·  s solved so that Σc votesc · marginc / Σc votesc = forecast margin
+repc = (100 − otherc + marginc) / 2  ·  demc = (100 − otherc − marginc) / 2
+leanc is the county's TPL (its neutral-environment lean; the county's 2024 presidential margin where the county model has nothing to rest on); otherc its 2024 third-party share, capped at 8%. House counties are the district's pieces; a piece of a split county adds its 2024 deviation from the whole county (the piece's House margin minus the county's, same race, from the district-by-county results) where the lines are unchanged and every piece of the county was contested, so a county cut between a suburban and a rural district leans differently on each side. Redrawn states' pieces keep the county's lean. A decided race — one major party absent, or two nominees of the same party — is painted 100% for the side that has it rather than solved.
+WORKED EXAMPLE · FULTON COUNTY IN THE GEORGIA SENATE RACE
+FULTON COUNTY TPLneutral-environment lean
+D+45.3
++
+SHIFT SHARED BY EVERY GEORGIA COUNTYsolved for the forecast margin D+9.1
+D+11.2
+=
+FULTON COUNTY PROJECTED MARGIN77.7% – 21.2% on 423,748 estimated votes
+D+56.5
+IMPLIED GENERIC BALLOT
+every race's projected votes added up
+BALLOT	RACES	VOTES	DEM	REP	MARGIN	TWO-PARTY
+House	435	115,615,263	53%	45.4%	D+7.6	D+7.7
+Senate	35	75,115,088	50.4%	48%	D+2.4	D+2.5
+Governor	36	92,692,672	53.1%	45.3%	D+7.7	D+7.9
+All three combined	506	283,423,023	52.3%	46.1%	D+6.3	D+6.4
+Polling generic ballot D+9.0; the forecast's expected House vote D+8.1. House: contested races only D+5.7, contested races weighted equally D+7.2; 15 decided seats add a net -2,394,192 votes.
+ELECTION NIGHT
+The results needle
+
+On /results the county projection above is the prior for a projected final margin that moves as counties report (lib/resultsNeedle.ts, run in the browser on every refresh of the civicAPI feed). Each county's counted votes keep their counted margin; its uncounted remainder starts from the prior plus a shared swing estimated from the counties that have reported, shrunk toward zero while little is in. The feed's race-level “percent reporting” is precinct-based and runs far ahead of the vote (in the real 2025 Virginia snapshots 70% reporting was 42% of the final vote), so completeness is measured against the turnout estimate instead. The needle never calls a race; calls are the feed's and lock the probability.
+
+τ = (Σdone vc + kT) / (Σdone Ec + kT)  ·  the turnout factor from finished counties, kT = 0.1 × E
+ec = max(τEc, vc / pc)  ·  fc = min(1, vc / ec)  ·  Tc = vc if done, else max(vc, ec)
+s = Σ wc(oc − mc) / (Σ wc + kS)  ·  wc = vc fc, kS = 0.2 × E
+rc = mc + s + fc2(oc − mc − s)  ·  Mc = (vc oc + (Tc − vc) rc) / Tc
+σ² = (σforecast · √(kS / (kS + Σw)) · u)² + Σc ((Tc − vc) σcounty / T)² + (σlate · u)²  ·  u = uncounted share  ·  P(D) = Φ(−M / σ)
+Ec and mc are the county's expected votes and margin from the projection above; vc and oc its counted votes and margin. pc is the feed's reporting figure for the county, used from 50% to under 100%. A county has caught up when its count is at least 90% of min(τ, 1) Ec: τ is statewide, so it may lower the bar but not raise it. A caught-up county is done at the feed's 100%, and from 90% its ec is vc / pc alone; only a county the feed sends no figure for can finish on the count alone, at 97%. House races use the district's county pieces, which the feed reports directly. Feed regions are matched to the priors by FIPS, else by name (Virginia's cities city-side, so Richmond City is not Richmond County); Rhode Island's towns, Chicago (reported apart from suburban Cook), Shannon SD and Kalawao HI add into their prior county, and a county listed at two levels (New England's counties beside their towns) counts once. Rows that match no prior county count as they stand, at their own margin. Where county detail covers under 60% of a race's expected vote, where unmatched rows hold over a quarter of the county rows' votes, or where the county rows' two-party vote runs more than 2% past the race's (the same votes listed twice), the same arithmetic runs on the race total alone. Where one ballot carries several candidates of a party (Louisiana's jungle round, and Alaska's and Maine's ranked-choice first choices), each side is a party bloc: the forecast's named candidate plus every Democrat, against every Republican, so the needle projects the party margin (for ranked-choice races, the final round) and the county map shows each county's own top two. Decided races keep the forecast. From 2026-11-06 05:01 UTC the race is in its late count, with two changes. civicAPI's percent stopped measuring what is counted, so a county or race below its last old percent keeps that percent until its count has grown 2% past its Nov 5 total. And the early-vote skew gives way to the late lean: the remainder runs oc + ℓ, with ℓ = (A (L − o₀) + k -8) / (A + k), A the votes the race has added since Nov 5 at margin L, o₀ its margin then, k = 30,000. Only a call then brings the sigma floor down to 0.3.
+K_SWING_SHARE
+0.2
+Prior-equivalent votes on the shared swing, as a share of the race's expected vote
+BACKTEST-CALIBRATED
+0.1 was the best log score on the 2025 VA/NJ replay among 0.02–0.4; raised to 0.2 with OWN_WEIGHT_EXP 2 (2026-11-02), which cut the error at 10–60% counted by a quarter against the early-vote mirage
+K_TURNOUT_SHARE
+0.1
+Prior-equivalent votes on the turnout factor
+BACKTEST-CALIBRATED
+0.05 and 0.1 score alike; 0.1 kept
+SIGMA_COUNTY
+6 pts
+Residual dispersion of one county's swing around the shared swing
+BACKTEST-CALIBRATED
+3, 6 and 12 score alike once the late-vote term is in; 6 kept
+SIGMA_LATE
+10 pts
+Late-vote sigma per unit of uncounted share: the votes counted last are unlike the rest
+BACKTEST-CALIBRATED
+Without it the 80% band covered the final margin 8% of the time; 10 with the 1.5 floor, from the 2026-10-26 grid on the corrected replay (7 left the 60–90% bucket at 56% coverage)
+OWN_WEIGHT_EXP
+2
+Exponent on completeness in the weight a county's remainder gives its own deviation
+BACKTEST-CALIBRATED
+Trusting a county's own deviation sooner (0.5, 0.25) did not lower the error; later (2) did — the first votes a county posts lean more Democratic than its final, and at 1 the needle followed them
+NEAR_DONE
+0.97
+Share of the corrected expectation at which a county the feed sends no reporting figure for counts as finished
+DESIGNED, NOT CALIBRATED
+COUNTY_FEED_DONE_SHARE
+0.9
+Share of min(τ, 1) × the prior votes a county must have counted before the feed's percent is believed: its 100% finishes the county
+SET FROM A MEASUREMENT
+Election night 2026: counties at the feed's 100% and 90%+ of their prior later added about 0.1% more votes; well under it (Utah County, 68%), 18%. Replay: 0.9 gave the best margin MAE and 80% coverage of 0.5–0.95; 0.7–0.9 score alike on min(τ, 1)
+MIN_PCT_FOR_TOTAL
+50%
+Feed percent from which a county still reporting bounds its final total from below (count ÷ percent)
+DESIGNED, NOT CALIBRATED
+The percent is precinct-based and runs ahead of the vote, so count ÷ percent is a floor on the total, not an estimate of it; below this it says little
+PCT_TRUSTED_TOTAL
+90%
+Feed percent from which a caught-up county's total is count ÷ percent, not the larger of that and τ × prior
+SET FROM A MEASUREMENT
+Election night 2026 replay: margin MAE 2.047 → 2.046 at any of 80, 90 or 95; applied without the caught-up test it was worse (2.06–2.08), because the percent runs ahead of the vote while a county is still far short
+FEED_DONE_MIN_SHARE
+0.5
+Share of the expected vote a race must have counted before the feed's 100% reporting is taken as finished
+DESIGNED, NOT CALIBRATED
+Election night 2026: civicAPI listed Vermont governor at 100% with 4 towns and ~3k of ~300k votes in; its percent runs over the regions it lists so far
+MIN_SHARE
+0.002
+Counted share below which a topline projection is the prior
+DESIGNED, NOT CALIBRATED
+SIGMA_FLOOR
+1.5 pts
+Floor on a race's projected sigma until the race is complete (late mail and provisionals land after the counties look done)
+BACKTEST-CALIBRATED
+Below 1.25 the last tenth of the count covered the final margin about half the time; 1.5 covers 97%
+SIGMA_FLOOR_DONE
+0.3 pts
+Floor once the feed has the race complete
+DESIGNED, NOT CALIBRATED
+MAX_EXTRA_SHARE
+0.25
+Share of the county rows' votes in rows matching no prior county above which the race runs on its topline
+DESIGNED, NOT CALIBRATED
+PCT_HOLD_GROWTH
+2%
+Late count: growth past the Nov 5 total at which a percent below its old figure stands
+SET FROM A MEASUREMENT
+6,408 of 8,410 county rows fell from 100% between Nov 6 and 7 2026; 5,562 of them had grown under 0.05%, and the percents fell far more sharply where counts had grown 5%+. Not replayed: the feed's change is one snapshot
+LATE_LEAN_PRIOR
+-8 pts
+Late count: what the votes left run against the count before a race has late votes of its own
+SET FROM A MEASUREMENT
+Votes added Nov 5–7 2026 against the count on Nov 5, 193 contested races: median −8.8, vote-weighted −6.3. Alaska's 2024 late count, about −7.5 (first choices R+4.1 the day after to R+2.0 final). Measured on the same days it is applied to
+LATE_LEAN_K
+30,000
+Late count: votes of the race's own late count that weigh as much as the prior lean
+BACKTEST-CALIBRATED
+Predicting 131 races' votes Nov 6–7 from their votes Nov 5–6: error 17.3 pts with no term, 14.5 on the prior alone, 13.4 at 30,000 (vote-weighted, the best of 3,000–300,000). A race's own lean is noisy, correlation .44 between the two periods
+REPLAY · VA AND NJ 2025 GOVERNOR
+214 civicAPI snapshots · scripts/resultsNeedleBacktest.ts --emit, 2026-11-05
+COUNTED	SNAPSHOTS	NEEDLE MAE	80% BAND COVERED	RMS Z	TOTAL-VOTE ERROR
+<10%	7	6.9 pts	100%	0.64	6%
+10–30%	20	2.9 pts	100%	0.39	12%
+30–60%	25	2.0 pts	100%	0.41	12%
+60–90%	50	1.4 pts	100%	0.73	3%
+90–99%	95	1.0 pts	100%	0.75	1%
+All	197	1.6 pts	100%	0.67	4%
+Run with the night model's early-vote term learned from the race's own counties (--mirage), as on the night. Priors as the 2026 ones would have been a year out: each county's 2021 governor votes and its 2024 presidential margin shifted to the election-eve polling average (VA D+7.6, final D+15.4; NJ D+4.1, final D+13). Both races broke well past their polls, so the replay is a hard case for the shared swing. The snapshots carry no county percent-reporting, as on the night. The point estimate's error barely moves with any constant: the last tenth of the vote is what it is.
+
+Data: civicAPI (civicapi.org; free, attribution required) — every 2026 Senate, governor and House race by county, race calls, poll-closing times; ids in data-entry/civicapi_race_ids.csv (npm run civic-ids). npm run archive-results keeps a gzipped snapshot of every race every few minutes on the night (data-entry/results-archive/, not committed); the page's Replay control (dev only, through /api/results/archive) steps through them, and scripts/simulate-results-night.mjs builds a simulated night from a finished snapshot (counties on randomized ramps after their poll close, an early-vote skew that fades, calls on clear margins) for rehearsing the page and the needle. Poll-closing times: data-entry/poll_closing_2026.csv (The Green Papers).
+
+ELECTION NIGHT
+The night model: what finished counties say about the races still out
+
+The needle above reads each race from its own counties, so a race with nothing counted sat at its forecast however the rest of the country was running. Since 2026-11-01 the page first fits, once per feed refresh, every county that is at least half counted in any race (lib/resultsNight.ts): its swing against its prior is explained by terms the races share — a national swing carried into each state through the forecast's elasticity β, an offset per office, a term per state that the Senate, governor and House races in the state all see, and three slopes in the county's electorate. Each term is a Bayesian ridge with its own prior sigma, so a state with two counties in borrows the national swing and a slope stays near zero until counties of varied makeup are in. A race with nothing counted is projected at its prior plus the fit's shift for it, with the fit's standard error; a counting race starts its uncounted counties from that baseline and adds its own residual swing as before. Since 2026-11-02 the fit also learns each state's early-vote skew: the votes a county posts first are unlike its final count (the mail, counted first in most states, leans Democratic; where election-day votes come first the early count leans Republican), so a county's counted margin at completeness f runs about s (1 − f) from its final. Within each race, counties further along show less of it, so s is the within-race regression of a county's residual on (f − 1), over every county with votes: a national s pooled across states, and each state's own shrunk toward it. The needle reads a part-counted county's implied final as o + s (1 − f) and its remainder as o + s, instead of chasing the early count until the county finishes. The Results page shows the fit under the balance of power, and each race's footnote its share of it.
+
+yc = oc − mc = βstate g + doffice + sstate + bnw xnw + bcol xcol + blean xlean + ε  ·  x = the county's share (or prior margin) less the national electorate's, per 10 pts
+Σ = (XᵀWX / σc² + K)⁻¹  ·  θ = Σ XᵀWy / σc²  ·  K = diag(1/σg², 1/σd², 1/σs², 1/σb²)  ·  wc = min(1, vc / Vsat) once fc ≥ 0.35
+shiftr = xrᵀθ at the race's vote-weighted average county  ·  ser² = xrᵀ Σ xr (+ σs² for a state with nothing in)
+σown² = max(¼ σforecast², σforecast² − λ · prior-ser²)  ·  shared² = λ ser²  ·  λ = 0.5  ·  the needle's shared term becomes √((σown · shrink)² + shared²) · u
+early vote: ec = yc − xcᵀθ, within each race ẽ, x̃ = (f − 1) demeaned by weight  ·  s̄ = Σ w x̃ ẽ / (Σ w x̃² + σc²/σm²) over every state  ·  sstate = s̄ + (Σ w x̃ ẽ − s̄ Σ w x̃²) / (Σ w x̃² + σc²/σm²) over its own  ·  the needle's oc becomes oc + s (1 − fc) in the swing and oc + s in the remainder
+The baseline a counting race's uncounted counties start from is mc + shiftr plus the county's own demographic term beyond the race average; the race's swing s in the needle is then its residual against that. Decided races and races on their topline contribute no observations and take no shift. House pieces load their whole county's demographics. λ is below 1 because the fit also explains county-prior noise that is not the race's own miss: with all of the prior variance removed the 80% band covered 76% of races not yet counting on the replay; with half, 80%.
+SIGMA_NATIONAL
+2 pts
+Prior sigma on the national swing per unit of β: the size of a poll miss
+BACKTEST-CALIBRATED
+Started at the forecast's σ_E (3.0); tightened to 2 on 2026-11-02, which kept the replay's error and restored the 80% band's coverage (80% → 81%, after 11 PM 75% → 79%) by holding the term closer to zero while few states are in. The fitted swing is still within a point of the year's actual mean miss by 10 PM ET in 2020, 2022 and 2024
+SIGMA_STATE
+2.5 pts
+Prior sigma on a state's shared miss beyond the national swing
+BACKTEST-CALIBRATED
+1.5, 2.5 and 4 score alike on the replay; 2.5 kept (the 2018–2024 forward backtest's same-state residual correlation of .22 implies about 3)
+SIGMA_OFFICE
+1 pt
+Prior sigma on an office's offset from the national swing
+DESIGNED, NOT CALIBRATED
+SIGMA_NONWHITE
+0.75 pts
+Prior sigma on the slope per 10 pts of nonwhite share
+BACKTEST-CALIBRATED
+Half the forecast's demographic shock. At the full shock the slopes cost calibration (80% band 75%) without lowering the error; at zero the error is 0.1 pt higher and the governor seat count worse; half scored best
+SIGMA_COLLEGE
+0.5 pts
+Prior sigma on the slope per 10 pts of college share
+BACKTEST-CALIBRATED
+Same grid
+SIGMA_LEAN
+0.5 pts
+Prior sigma on the slope per 10 pts of the county's prior margin
+BACKTEST-CALIBRATED
+Same grid
+SIGMA_FIT_COUNTY
+6 pts
+Noise sigma of one fully-weighted county's swing around the shared terms
+DESIGNED, NOT CALIBRATED
+The needle's SIGMA_COUNTY
+VOTES_SAT
+200,000
+Counted votes at which a county carries full weight (smaller counties pro rata)
+BACKTEST-CALIBRATED
+With MIN_COMPLETE 0.35, the joint grid's best; weights close to the votes, so the national and office terms read the vote-weighted swing. Raised from 20,000 on 2026-11-03
+MIN_COMPLETE
+0.35
+Share of its corrected expectation a county must have counted to enter the fit
+BACKTEST-CALIBRATED
+Joint grid with VOTES_SAT and the office offsets (2026-11-03): 0.35 with VOTES_SAT 200k scores best or tied on the 2018–24 replay with the early-vote skew off, usual and doubled (nothing-in MAE 6.0 / 6.0 / 6.1 vs 6.7 / 6.6 / 6.4 at 0.8 and 20k) and on both simulated nights. Raised to 0.8 on 2026-11-02, lowered to 0.35 on 2026-11-03
+NIGHT_SHARE
+0.5
+Share of the terms' prior variance the needle takes off a race's forecast sigma (λ)
+BACKTEST-CALIBRATED
+1 over-tightened the band (76%); 0.25 and 0.5 both cover 80–81%, 0.5 has the better log score
+SIGMA_MIRAGE
+3 pts
+Prior sigma on the early-vote skew s: the national one toward zero, each state's toward the national
+BACKTEST-CALIBRATED
+On the real 2025 VA/NJ snapshots the term cut the needle's error from 1.9 to 1.6 pts (60–90% counted 1.9 → 1.4, band cover 78% → 100%); on the replay it is neutral under the usual skew and with none, and with the skew doubled lowers the error (3.5 → 3.3, cover 80% → 84%). 1.5, 3 and 6 score alike; 3 kept
+MIRAGE_VOTES_SAT
+20,000
+Counted votes at which a county carries full weight in the early-vote regression
+BACKTEST-CALIBRATED
+Kept at 20,000 when the shared terms moved to VOTES_SAT 200,000 (2026-11-03): at 200,000 the real 2025 VA/NJ replay lost (MAE 1.6 → 1.8, 60–90% counted cover 100% → 82%)
+MIRAGE_ITERATIONS
+3
+Rounds of refitting the shared terms on county swings net of the state's early-vote skew s (1 − f), and s on the new residuals
+DESIGNED, NOT CALIBRATED
+Election night 2026 (s ≈ 7): fitted on raw swings, the 35–90%-counted counties' mirage read as national swing (D+8.0 → D+6.4 with it). Replay: slightly worse overall (nothing-in MAE 6.0 → 6.1, House seats 1.81 → 2.17), faster in the R-miss years 2020/2024, slower in 2018; adopted live on the night's judgment (real D overperformance plus some mirage)
+REPLAY · 2018, 2020, 2022, 2024 SENATE, GOVERNOR AND HOUSE
+1508 races in a simulated reporting order · scripts/resultsNightBacktest.ts --emit, 2026-11-03
+RACE COUNTED	ROWS	NEEDLE ALONE MAE	80% BAND	WITH THE NIGHT MODEL MAE	80% BAND	LOG SCORE
+0% (nothing in)	14376	6.4 pts	85%	6.0 pts	87%	-2.71 → -2.65
+<10%	4572	5.6 pts	96%	5.1 pts	97%	-2.75 → -2.72
+10–30%	4274	4.1 pts	98%	3.7 pts	98%	-2.49 → -2.46
+30–60%	6016	2.6 pts	97%	2.4 pts	97%	-2.01 → -2.00
+60–90%	12062	1.2 pts	95%	1.1 pts	96%	-1.06 → -1.06
+90–99%	10052	0.4 pts	99%	0.4 pts	99%	-0.50 → -0.49
+Priors: each race's margin is the forward backtest's mid-September structural prediction for it (sigma = that office's residual sd: Senate 6.7, governor 12.5, House 8.8), each county's margin its previous presidential margin shifted to it. Counties report after their state's 2026 poll-closing time on randomized ramps, the votes counted first leaning more Democratic by a state-level skew (mean +3, sd 4) plus county noise, fading as the count completes. “0% (nothing in)” rows are races with no votes while some county elsewhere has finished — where the night model does all the work. Races not yet counting, by office: senate 5.1 → 4.5, governor 7.6 → 6.8, house 6.5 → 6.0; by hour: by 9 PM 6.3 → 6.0, 9–11 PM 6.6 → 5.8, after 11 PM 6.7 → 6.1.
+CONFIGURATION	NOT YET COUNTING: MAE	80% BAND	LOG SCORE	ALL ROWS: MAE	LOG SCORE	PROJECTED-SEAT MAE S · G · H
+baseline needle (no night model)	6.4 pts	85%	-2.71	3.3 pts	-1.79	0.43 · 0.27 · 2.66
+night model, live constants	6.0 pts	87%	-2.65	3.0 pts	-1.77	0.36 · 0.36 · 1.79
+without the national term	6.1 pts	87%	-2.67	3.1 pts	-1.77	0.40 · 0.30 · 2.32
+without the state terms	5.9 pts	87%	-2.65	3.0 pts	-1.77	0.37 · 0.36 · 2.06
+without the office offsets	6.0 pts	87%	-2.65	3.0 pts	-1.77	0.40 · 0.35 · 1.75
+without the demographic slopes	6.3 pts	85%	-2.69	3.2 pts	-1.78	0.39 · 0.33 · 2.00
+without the lean slope only	6.2 pts	85%	-2.68	3.1 pts	-1.78	0.41 · 0.38 · 1.97
+night share 1 (all of the prior)	6.0 pts	86%	-2.66	3.0 pts	-1.77	0.36 · 0.36 · 1.79
+night share 0.25	6.0 pts	87%	-2.65	3.0 pts	-1.77	0.36 · 0.36 · 1.79
+counties from 20% counted	5.9 pts	87%	-2.64	3.0 pts	-1.76	0.36 · 0.35 · 1.72
+counties from 80% counted	6.2 pts	86%	-2.68	3.1 pts	-1.78	0.43 · 0.33 · 2.30
+without the early-vote term	6.0 pts	87%	-2.65	3.1 pts	-1.77	0.32 · 0.34 · 1.77
+weights ∝ votes (sat 200k)	6.0 pts	87%	-2.65	3.0 pts	-1.77	0.36 · 0.36 · 1.79
+lean slope prior σ 2	6.0 pts	81%	-2.85	3.0 pts	-1.82	0.35 · 0.35 · 1.74
+Each term switched off in turn (its prior sigma set to 0.01). The national term is what moves the seat counts least and the Senate most; the state terms carry the calibration; the demographic slopes lower the error slightly at the cost of some band coverage, which is why their priors are half the forecast's shock. Reporting order is simulated, not observed: the replay bounds how far to trust the fit, it does not reproduce a real night.
+BACKTEST
+2022 predicted from 2018
+
+The same code run for 2022 with 2018 as the only basis midterm and the 2020 presidential vote as the anchor (scripts/turnoutBacktest.ts). One basis midterm is the only honest test the data allow, so the state-level bias is largely the 2018→2022 national swing; the county-share and district errors are what the machinery can be judged on. The competitiveness term uses 2022's actual margins here.
+
+	N	MEAN ABS. ERROR	BIAS
+State top-race votes	50	8.1%	6.2%
+without the competitiveness term	50	9.0%	7.4%
+County top-race votes (vote-weighted)	3140	9.1%	4.8%
+County share of the state, level known	3140	4.39%	—
+Contested House districts, 2022 lines	393	11.4%	9.8%
+without the competitiveness term	393	12.4%	10.6%
+Largest state misses: ND senate +29%, TN governor +24%, MS house +23%, IN senate +19%, CA governor +18%, MO senate +17% — mostly a hot 2018 race followed by a quiet 2022 one, which is what the competitiveness term now catches in part.
+SHRINK_VOTES GRID
+county-share error, level known
+K	COUNTY SHARE	COUNTY VOTES	DISTRICTS
+0	4.52%	9.2%	11.6%
+2,000	4.46%	9.1%	11.5%
+5,000	4.43%	9.1%	11.5%
+10,000	4.41%	9.1%	11.5%
+20,000	4.39%	9.1%	11.4%
+50,000	4.41%	9.1%	11.4%
+100,000	4.46%	9.2%	11.3%
+∞ (state prior only)	5.23%	9.5%	11.3%
+TICKET EFFECT
+states whose ticket changed 2018 → 2022
+STATE	2018	2022	LOG CHANGE	EXCESS VS. OTHERS
+DE	statewide	House only	-0.178	-0.096
+KY	House only	statewide	-0.078	0.004
+LA	House only	statewide	-0.056	0.026
+MS	statewide	House only	-0.290	-0.208
+MT	statewide	House only	-0.139	-0.058
+NC	House only	statewide	-0.013	0.069
+NJ	statewide	House only	-0.243	-0.161
+VA	statewide	House only	-0.131	-0.050
+WV	statewide	House only	-0.202	-0.120
+Other states' mean log change -0.082; implied House-only factor 0.916, used as 0.92.
+REFERENCE
+Files and commands
+WHERE IT LIVES
+data-entry/cvap.csv
+CVAP and VAP by state, county and district, one ACS release per election year
+data-entry/vep_by_state.csv
+U.S. Elections Project VEP, VAP and total ballots by state, 2016–2024
+data-entry/turnout_first_round.csv
+first-round totals for runoff and ranked-choice races, with sources
+data-entry/county_district_shares_2026.csv
+county → 2026 district shares (2024 pieces or tract CVAP)
+lib/turnout.ts
+the data hub: statewide, by-district and county turnout entries and slices
+lib/turnoutModel.ts
+the 2026 estimate, its constants and backtest
+lib/countyProjection.ts
+projected county results per race and the implied generic ballot
+public/house-county-pieces/2026/
+county × district pieces on the 2026 lines (scripts/build-house-county-pieces.py 2026)
+data/turnoutCalibration.ts
+the backtest tables above (generated)
+app/api/turnout/…
+static JSON slices per (level, year), per state's county splits, and all counties' estimates
+RE-RUN AFTER A CHANGE
+python3 scripts/fetch-cvap.py
+refetch CVAP (needs CENSUS_API_KEY)
+python3 scripts/build-county-district-shares-2026.py
+rebuild the county → district shares after a boundary change
+npx tsx --conditions=react-server scripts/turnoutBacktest.ts --emit
+rerun the backtest and rewrite data/turnoutCalibration.ts
+WHAT CHANGED, AND WHEN
+Revision history
+Nov 11, 2026
+CHANGE
+County House factor: a county is averaged over the midterms it has, not over both
+
+A coding error, found in the post-election turnout review and fixed after the election at the user's direction because it was a mistake in the build, not something learned from the results. A county's House factor averages its House-to-top-race ratio over 2018 and 2022 (weights 0.4 and 0.6), counting a year only if every district touching the county was contested. The sum was divided by the weight of both years even where the county had one, so a county contested in 2022 only got about 0.6 of its ratio and one contested in 2018 only about 0.4 (Cook 0.40, Dallas 0.41, Tarrant 0.42, Manhattan 0.43, Nassau, Queens, Fulton, Allegheny, Broward and Palm Beach 0.61–0.64). Each county is now divided by the weight of the years it has. The same loop builds the Senate and governor factors, where no county was missing a year, so those are unchanged. The forecast does not read turnout: margins, ratings, probabilities and the lock are untouched (check-lock passes). The final-forecast archive (data/forecast-final-2026) was rebuilt with the corrected House votes and carries a note. Not fixed here: a few counties whose county House file is incomplete still carry low factors (Duval and St. Johns FL, Jackson MO, Hillsborough and Orange FL, Middlesex NJ), and Louisiana's run about 1.15.
+
+EFFECT 139 counties in 12 states (TX 45, GA 27, PA 18, AL 14, SC 12, WI 11). 68 House districts move by more than 1%: IL-07 80,494 → 198,357 (191,697 cast), TX-24 93,779 → 226,470 (321,448), NY-12 102,369 → 245,207 (250,781). Projected national House vote 110,648,401 → 115,615,263 (115.8M counted on Nov 9 with California unfinished). Finished contested districts, published against the Nov 9 count: average miss 16.1% → 6.8%, lean +12.2% → +2.1%, within 10% 67% → 77%. The implied House popular vote moves about half a point toward Democrats (D+7.1 → D+7.6) because the cut counties were mostly Democratic cities.
+
+Nov 6, 2026
+CHANGE
+Results needle: a late-count mode, after the feed's percent stopped measuring what is counted
+
+Between Nov 6 and 7 civicAPI's percent_reporting changed meaning: 6,408 of 8,410 county rows fell from 100%, 5,562 of them with under 0.05% more votes (FL-26 100% → 70.3% as its count fell by 9; Kansas's implied total is about 87% of each county's 2024 presidential vote in both its races). The needle read the gap as uncounted votes, mostly in red rural counties. In the late count (LATE_COUNT_FROM), a percent below its old figure now stands only once the count has grown PCT_HOLD_GROWTH past its Nov 5 total (data-entry/results_2026_late_baseline.csv), since California's old 100% was false. The night's early-vote skew said the remainder runs more Republican than the count; days on it runs more Democratic, so the skew is replaced by the race's late lean, its votes since Nov 5 against its margin then, shrunk to LATE_LEAN_PRIOR with LATE_LEAN_K. Only a call now brings the sigma floor down to SIGMA_FLOOR_DONE. Payloads fetched before LATE_COUNT_FROM are untouched, so replays and backtests are too.
+
+EFFECT Uncalled: Kansas governor R+0.36 → D+0.70 (remainder 63,811 → 0), Mississippi Senate R+0.10 → D+0.21 (37,624 → about 8,800), Alaska Senate R+1.49 → D+0.09, Alaska governor R+1.19 → D+0.42, AK-01 R+1.33 → D+0.23, NC-05 R+3.5 → D+0.04, MN-01 R+0.6 → D+0.1, FL-09 R+1.0 → D+0.5, FL-26 D+2.6 → R+0.8. House projected total 128.5M → 122.1M against 114.0M counted. Late-lean test, predicting 131 races' votes Nov 6–7 from Nov 5–6: error 17.3 pts with no term, 13.4 with it. The prior was measured on the same days, and the hold rule cannot be replayed (one snapshot of the change). 2025 VA/NJ backtest unchanged (MAE 1.9, cover 94%); forecast lock unchanged. Not fixed: same-party seats keep leaning on the forecast (CA-34 projects the trailing finalist), and TN-04 stays R+1.1 on the feed's unchanged 76%.
+
+Nov 5, 2026
+CHANGE
+Results needle: the statewide turnout factor can no longer keep a county at the feed's 100% counting
+
+The 2026-11-04 rule asked a county at the feed's 100% for COUNTY_FEED_DONE_SHARE of τ × prior. τ is statewide, so in a high-turnout state the bar rose above a county's own prior: Mississippi's τ of 1.14, set by Hinds and Lowndes, kept seven deep-red counties at the feed's 100% and 91–103% of their priors counting, with 7,963 votes that did not exist netting R+3,947. The bar is now COUNTY_FEED_DONE_SHARE of min(τ, 1) × prior. A caught-up county the feed has at PCT_TRUSTED_TOTAL or more now totals count ÷ percent, not the larger of that and τ × prior (Tishomingo at 98.8% had 567 votes left, now 77).
+
+EFFECT Mississippi Senate R+0.41 → D+0.03 (counted D+0.18, Jackson the one sizeable county out), projected total 966,458 → 958,006; projected Senate D +1, House and governors unchanged. Replay of 10 snapshots of the night against the latest count (2,292 race-snapshots, excludes races within 0.1% of final): margin MAE 2.050 → 2.046, last tenth 0.931 → 0.925, 80% coverage 88 → 88%, projected total error 13.8 → 13.7%. Utah's slow counties stay open (τ near 1). 2025 VA/NJ backtest unchanged (no county figures).
+
+Nov 4, 2026
+CHANGE
+Results needle: only the feed finishes a county, and only with the votes there
+
+A county counted as done when the feed marked it 100% with half its expected vote in, or when its count reached 97% of the estimate, so Utah's UT-02 and UT-04 read 100% counted with the feed's race figures at 80% and 70%. Where the feed sends a county figure, a county is now done only at the feed's 100% with its count at COUNTY_FEED_DONE_SHARE of the corrected expectation; NEAR_DONE applies only where the feed sends none. A county still under 100% (from MIN_PCT_FOR_TOTAL) also has its final total bounded from below by count ÷ percent, so a count past the estimate still has votes out.
+
+EFFECT Replay of the night's archive over races since settled: margin MAE 2.30 → 2.26, 80% coverage 79 → 82%, races shown 100% with the feed under 100% that later grew over 1%: 17 → 10%, but projected total error 11.2 → 13.8% (worse). Latest snapshot: Utah's House vote D+3.1 → R+1.1 projected, House projected D seats 258 → 257 (MI-04), Senate 55 → 54 (MS), neither race called. 2025 VA/NJ backtest unchanged (no county figures).
+
+Nov 3, 2026
+CHANGE
+Results night: shared swing fitted net of the early-vote skew; feed 100% needs half the vote; unopposed races settled; called races conditioned on the call
+
+Three election-night changes to the results needle. (1) The night model's shared terms (national, state, office, demographic) had read each county's raw counted swing once it was MIN_COMPLETE counted, while only the per-race step removed the early-vote skew. Counties 35–90% counted still carry part of the mirage, so with tonight's skew (≈7 pts D) the national term read D+8 and every race overreacted, easing back as counties finished. fitNight now alternates: shared terms on swings plus s·(1 − f), then s on the new residuals, MIRAGE_ITERATIONS rounds. (2) A race or county the feed marks 100% reporting counts as finished only once its count reaches FEED_DONE_MIN_SHARE of the expected vote (Vermont governor read 100% with ~1% in and locked). (3) Unopposed and same-party races are called for their party from the start (needle locked, filled on both maps), votes or none: Florida prints no unopposed race on the ballot. (4) A race the feed calls has its projected margin conditioned on the call (the needle's normal truncated to the winner's side of even): FL-22 was called D at 79% counted while the needle sat at R+3.0 ± 2.5; conditioned, D+1.2 ± 1.0. Also: the archive series route (dev seat charts) now projects with the night fit, as the page does, which had made the seat trend zigzag between the two.
+
+EFFECT Live 8:30 PM ET: national swing D+8.0 → D+6.4, GA Senate D+20.1 → D+19.6. Replay: nothing-in MAE 6.0 → 6.1, House seat MAE 1.81 → 2.17 (worse), 2020/2024 national swing found ~1 h sooner, 2018 slower. Needle backtest (2025 VA/NJ) unchanged by (2).
+
+Nov 3, 2026
+CHANGE
+Results night model: counties enter the fit at 35% counted (MIN_COMPLETE 0.8 → 0.35) with weights close to their votes (VOTES_SAT 20,000 → 200,000; the early-vote regression keeps 20,000 as MIRAGE_VOTES_SAT)
+
+Re-running the 2018–24 replay against the forecast as it stands on election morning (poll-miss shade, House race sigma 5.5) showed the night model, as tuned on November 2, no longer beating the bare needle on races with nothing counted (MAE 6.6 vs 6.4, House projected-seat error 3.12 vs 2.66). A joint grid over the entry threshold (0.2, 0.35, 0.5, 0.8), the office offsets (on, off) and the weighting (20k, 200k), each scored with the replay's early-vote skew off, usual and doubled, and on both simulated nights: 0.35 with 200k is best or tied on all of them. Office offsets stay on (off helps House seats but costs Senate seats at every skew). 0.8 had been chosen against a doubled mirage under 20k weights; with the early-vote term reading part-counted counties' skew out and vote-proportional weights, the earlier entry no longer drags the national term Democratic. The early-vote regression had shared VOTES_SAT; at 200k it lost on the real 2025 VA/NJ snapshots (MAE 1.6 → 1.8, 60–90% counted cover 100% → 82%), so it keeps its own 20k (MIRAGE_VOTES_SAT) and VA/NJ is unchanged.
+
+EFFECT Replay, races with nothing counted (skew off / usual / doubled): MAE 6.7 / 6.6 / 6.4 → 6.0 / 6.0 / 6.1, 80% cover 83% → 87%; all rows 3.28 → 3.0 (usual skew); projected-seat error S 0.43 → 0.36, G 0.35 → 0.36, H 3.12 → 1.79. Real 2025 VA/NJ: unchanged (MAE 1.6, cover 100%). Realistic simulated night: all-race MAE 2.91 → 2.81, races with nothing counted 4.58 → 4.37 (signed R+1.8 → R+1.1). Stress simulated night: 6.60 → 5.91.
+
+Nov 3, 2026
+DATA FIX
+Results feed: a surname match fills a candidate slot with the candidate of the slot's party first
+
+civicAPI's Alaska Senate race lists Dan Sullivan (R, the incumbent) and Daniel J. Jr. Sullivan (nonpartisan), two different candidates. The slot matcher took the first surname match, so the Republican slot went to the nonpartisan Sullivan and, under Alaska's party-bloc tally, his votes counted as Republican. Among candidates sharing the nominee's surname the one in the slot's party now wins; the other's votes count as other.
+
+EFFECT Alaska Senate: Daniel J. Jr. Sullivan's votes move from R to other. No other race has two candidates with a nominee's surname.
+
+Nov 2, 2026
+TESTED, NOT ADOPTED
+Night model: vote-proportional county weights and a freer lean slope — not adopted
+
+On the stress-test simulated night (civicAPI's random test results) the fit's House offset sat at D+4.5 all night against a vote-weighted House miss of R+1.6, pulling races with nothing counted (NV-02) several points Democratic until their own votes arrived. Cause: a county carries up to one observation's weight (full at VOTES_SAT 20,000 votes), so the national and office terms estimate the county-count-weighted mean swing while race margins are vote-weighted; in that random data the many small rural counties run Democratic of their very Republican priors and the big ones do not, and the lean slope's prior (σ 0.5 per 10 pts) cannot absorb it. Tested VOTES_SAT 100k, 200k and 2M (weights close to proportional to votes) and SIGMA_LEAN 2.
+
+EFFECT Replay: 200k nothing-in MAE 4.8 → 4.8, cover 81% → 83%, House seat error 1.19 → 0.91 but Senate 0.29 → 0.37; 2M worse (5.0); SIGMA_LEAN 2 collapsed the band (cover 74%). Realistic simulated night, races with nothing counted: 3.85 → 3.89 (200k). A wash on every consistent dataset, so the weighting stays; the stress set's pattern needs county results that contradict their own priors by size, which a real feed does not produce.
+
+Nov 2, 2026
+CHANGE
+Results needle: the early-vote term — the night model learns each state's mail/early skew and the needle reads part-counted counties with it removed (SIGMA_MIRAGE 3)
+
+Across the realistic simulated night the projection of a counting race sat about a point Democratic of its final through the middle of the count (30–60% counted: mean −1.3) and closed only when the last counties finished: the votes a county posts first lean more Democratic than its final, and the needle extrapolated them. The night fit now learns the skew s: within each race, counties further along show less of it, so s is the within-race weighted regression of a county's residual (its swing less the shared terms) on (f − 1), over every county with votes — a national s pooled across states, shrunk toward zero, and each state's own shrunk toward the national. The needle reads a part-counted county's implied final as o + s (1 − f) and its remainder as o + s (the fading mirage), with the term's standard error on the uncounted part of the part-counted counties. The Results page lists the national and state skews under "What early results say" and a race's footnote names its state's. A state-only version (no national pool) recovered only a fifth of the simulated bias, because the shrinkage held each state's estimate near zero; the pooled one recovers about half.
+
+EFFECT Real 2025 VA/NJ snapshots: MAE 1.9 → 1.6 (60–90% counted 1.9 → 1.4, 80% band cover 78% → 100%), log score −1.19 → −1.12. 2018–24 replay: unchanged under the usual early-vote skew and with none (±0.01 log score); with the skew doubled, all-rows MAE 3.5 → 3.3, cover 80% → 84%, projected-seat error S .65 → .52, G .48 → .37, H 1.78 → 1.61. Realistic simulated night: mean signed error at 30–60% counted −1.3 → −0.8 (MAE 1.7 → 1.5), 60–80% −0.9 → −0.5.
+
+Nov 2, 2026
+CHANGE
+Results needle: less weight on a county's first votes (MIN_COMPLETE 0.5 → 0.8, SIGMA_NATIONAL 3 → 2, K_SWING_SHARE 0.1 → 0.2, OWN_WEIGHT_EXP 1 → 2)
+
+The first votes a county posts lean more Democratic than its final (mail counted first), and the needle followed them: on the realistic simulated night a race with nothing counted dipped 4 points over the first two hours and came back, all of it the night model's national term read from other states' half-counted counties (2 pts too Democratic at 9 PM ET against that night's truth; the finished counties alone read it right). A county now enters the night fit at 80% counted, not 50%, and the prior on the national term is tighter (σ 2, from the forecast's 3), holding it nearer zero while few states are in. For a race's own count, a county's uncounted remainder trusts the county's own deviation by the square of its completeness (a county a third in gets a tenth of it, not a third), and the shared swing's shrinkage doubles. Tested on the real 2025 VA/NJ snapshot histories and the 2018–24 replay with the simulated early-vote skew off, as usual, and doubled; 0.4 / 3 on the needle scored better still on VA/NJ but worse on the replay without a skew, and two real races are not enough to go that far.
+
+EFFECT SIGMA_NATIONAL 2: replay error unchanged (nothing-in MAE 4.8), 80% band cover 80% → 81% (after 11 PM 75% → 79%), seats unchanged. MIN_COMPLETE: no change under the replay's usual skew; with it doubled, nothing-in MAE 5.1 → 4.9, cover 78% → 80%, House projected-seat error 2.16 → 1.78. Needle constants on the VA/NJ replay: MAE 2.1 → 1.9 (10–30% counted 4.0 → 3.1, 30–60% 3.0 → 2.4, 60–90% 2.1 → 1.9, first tenth 6.3 → 6.9), 80% cover 92% → 94%, log score −1.22 → −1.19; 2018–24 replay margins unchanged within 0.1, House seat error 1.24 → 1.06, and with the skew off 10–30% counted 2.5 → 2.8.
+
+Nov 1, 2026
+CHANGE
+Results needle: the night model — what finished counties anywhere imply for the races still out
+
+The needle projected each race from its own counties alone, so a race with nothing counted sat at its forecast however the rest of the country was running. lib/resultsNight.ts now fits, once per feed refresh, every half-counted county's swing against its prior across all races to shared terms: a national swing carried into each state through its elasticity β, an office offset, a state term shared by the Senate, governor and House races in the state, and three slopes in the county's nonwhite share, college share and prior lean. Each is a Bayesian ridge with its own prior sigma (SIGMA_NATIONAL 3, SIGMA_STATE 2.5, SIGMA_OFFICE 1, SIGMA_NONWHITE 0.75, SIGMA_COLLEGE 0.5, SIGMA_LEAN 0.5; county noise SIGMA_FIT_COUNTY 6, full weight at VOTES_SAT 20,000 votes, in from MIN_COMPLETE 0.5 counted). A race with nothing counted is its prior plus the fit's shift for it, with the fit's standard error; a counting race starts its uncounted counties from that baseline and adds its own residual swing as before. The needle takes NIGHT_SHARE 0.5 of the terms' prior variance off a race's forecast sigma (all of it over-tightened the band). New scripts/resultsNightBacktest.ts replays the 2018–2024 Senate, governor and House county results in a simulated reporting order (poll-closing times, county ramps, an early-vote skew) and chose the constants on a grid; the Results page shows the fit (national swing, office offsets, slopes, states off their projection, the races not yet counting that moved most) and each race's footnote shows its share.
+
+EFFECT On the replay, races with nothing counted yet while others are in: MAE 5.2 → 4.8 pts (Senate 5.1 → 4.4, governor 7.4 → 6.5, House 4.8 → 4.6), 80% band covering 83% → 80%, log score −2.42 → −2.36; the fitted national swing is within a point of the year's actual mean miss by 10 PM ET in 2020, 2022 and 2024. Counting races are unchanged beyond the first tenth (MAE 4.7 → 4.3 there). The 2025 VA/NJ replay of the needle alone is unchanged.
+
+Oct 29, 2026
+CHANGE
+Results needle: party blocs in jungle and ranked-choice races
+
+The feed parser tracked one candidate per side, matched by surname, then party. Where a ballot carries several candidates of a party, that picked the wrong one and sent the rest to "other": in the replay, Louisiana's LA-03 compared two minor candidates (D+0.6 with the Republican over 56%), Alaska's Senate followed a 3,564-vote Sullivan instead of the 117k-vote Republican, the governor race followed Wilson instead of Bronson, and AK-01's D side was the independent Hill without the Democrat. In Louisiana's jungle round and Alaska's and Maine's ranked-choice races (first choices) each side is now a party bloc: the forecast's named candidate plus every Democrat, against every Republican, which is what the forecast and the county priors measure (for ranked-choice, a stand-in for the final round). The race detail names each county's own top two on the counted map, gives the counted lead between the top two candidates beside the bloc margin, and labels Louisiana's needle "Projected party margin". Other races are unchanged.
+
+Oct 29, 2026
+CHANGE
+Results page: projected seats are the sum of projected winners
+
+Each chamber card's projected Democratic seats (and its trend line over the night) was the sum of every race's win probability plus seats not up. It is now the count of called seats plus each uncalled race's projected winner (the needle's projected margin decides). The 80% range still comes from the races' win probabilities (normal approximation) and is widened when needed so it contains the count. public/results-sim was re-published.
+
+Oct 26, 2026
+CHANGE
+Results needle: feed regions matched to the priors, double listings guarded, late band recalibrated
+
+civicAPI lists some states' votes at several levels at once (Maine county + township; Massachusetts, New Hampshire, Vermont county + town; Connecticut county + planning region + town; Rhode Island counties beside its towns, all typed County), sends Virginia's independent cities with no FIPS as "Alexandria City", reports Chicago apart from suburban Cook, and still uses Shannon County SD and Kalawao HI. The feed parser now matches cities to their priors city-side (Richmond City vs Richmond County), rolls Rhode Island towns, Chicago, Oglala Lakota and Kalawao into their prior county, and keeps one row per county. The needle carries feed rows that match no prior county at their own margin, and falls back to the race total when those are over a quarter of the county rows' votes or when the county rows' two-party vote exceeds the race's by more than 2% (the same votes listed twice). The 2025 replay had never matched Virginia's 34 cities: they had looked like a fifth of the state still out, and that phantom remainder was what kept the late band wide. With them matched the late votes land after every county looks done, so SIGMA_FLOOR 0.3 → 1.5 until the race is complete (0.3 after) and SIGMA_LATE 7 → 10, from the backtest grid. The simulated night (scripts/simulate-results-night.mjs) had summed every level into its race totals (Maine at 100% read "48% of ~916k projected"); it now sums one.
+
+EFFECT On the corrected 2025 replay the old constants covered the final margin 47% of the time at the 80% band (26% in the last tenth); the new ones 92% (97%), RMS z 0.83, MAE 2.1. Every race in 49 simulated snapshots and the latest real snapshot now counts the feed's total.
+
+Oct 25, 2026
+CHANGE
+Results needle calibrated on the 2025 Virginia and New Jersey governor snapshot histories
+
+scripts/resultsNeedleBacktest.ts replays civicAPI's election-night snapshots (142 VA, 19 NJ) through the needle with priors built as the 2026 ones would have been a year out. The shared and county sigma terms alone covered the final margin 8% of the time at the 80% band: the votes counted last are unlike the rest (Virginia's final 2% ran about D+80). A late-vote sigma proportional to the uncounted share (SIGMA_LATE 7) was added; K_SWING_SHARE 0.08 → 0.1 and SIGMA_FLOOR 0.15 → 0.3 from the same grid. Trusting a county's own deviation sooner than its completeness (OWN_WEIGHT_EXP below 1) was tested and did not lower the error.
+
+EFFECT 80% band coverage 8% → ~95% over the night, RMS z 2.6 → 0.9; the needle's mean absolute error (2.2 points over the night, 1.2 in the last tenth) is unchanged.
+
+Oct 25, 2026
+CHANGE
+Election-night results page and needle
+
+New /results page: live counts from civicAPI for every Senate, governor and House race against the forecast, with a projected final margin per race. The needle takes the county projection as its prior, measures each county's completeness against the turnout estimate (the feed's precinct-based percent reporting runs far ahead of the vote), estimates one shared swing from reporting counties with shrinkage, and gives the uncounted remainder the prior plus swing, trusting a county's own deviation in proportion to its completeness. Constants are first settings, to be calibrated on the 2025 Virginia and New Jersey governor snapshot histories.
+
+Oct 18, 2026
+CHANGE
+County TPL: each House year Huber-checked against the county's own statewide lean
+
+A county's House figure carries its local candidates, and with no single incumbent to attribute (the county aggregate spans every district touching it) there is no incumbency strip to take them out. The gap entered at the full House weight: Cuellar won Zapata County, TX by D+34 in 2024 as Trump carried it by R+22, so Zapata's lean read D+6.4, and the border counties' projected Senate results came out 10–30 pts bluer than their recent record. A near-unopposed seat did the same in the other direction (Oktibbeha, MS: a 2024 House row of R+93 put the county at R+11.8 against a presidential R+0.3). County TPL now aggregates twice: once over the President, Senate and Governor rows alone to anchor the county's lean, then over every row with each House year's base weight × min(1, HUBER_C / |House NM − anchor|), the state model's House-year check with the county's own statewide lean as the anchor. No statewide row is Huber-weighted (a county far from its state is not an outlier). The projected county results on race pages read County TPL, so they move with it.
+
+EFFECT Holdout (lean from the years before the target, one shift per state, vote-weighted RMSE across counties): 2024 President 5.84 → 5.18, 2024 Senate 4.69 → 4.16, 2022 Governor 4.11 → 3.80, 2022 Senate 4.02 → 3.77, county House 2024 6.97 → 6.90 and 2022 6.96 → 7.02. Dropping the House rows altogether scored best on the statewide targets (4.81 / 3.85 / 3.70 / 3.73) but worst on House (7.18 / 7.24), so they are discounted rather than dropped. Median county moves 0.14 pts; 38 of 3,142 move more than 5 (Zapata TX D+6.4 → R+6.7, Starr TX D+13.6 → D+2.0, Oktibbeha MS R+11.8 → D+1.0, Bristol MA D+19.4 → D+7.3). Texas Senate projection: Zapata D+18.4 → D+4.9, Hidalgo D+23.1 → D+21.3.
+
+Oct 4, 2026
+DATA FIX
+Missouri back on its 2022 congressional map
+
+The Missouri Supreme Court struck down the 2025 mid-decade map on Sept. 3, 2026, and the state votes on its 2022 lines in November. Every 2026 layer now carries those lines for Missouri: the boundary files (from the Census 119th-Congress districts), the district PVI (recomputed by the column's 30/70 formula on 2022-line presidential results), the presidential results District TPL reads (2020 from The Downballot, 2024 from the official district cuts, 2016 from an overlay of Dave's Redistricting VTD data that reproduces the published 2020 and 2024 figures within 0.07 and 0.04 points), the demographics (the published ACS figures, which already describe these lines, replace the tract estimate), the turnout model's county shares and the House pages' county pieces. Missouri no longer counts as redrawn, so its eight seats also re-enter the forward backtest's stable-lines House set.
+
+EFFECT MO-05 R+9.7 Likely R → D+28.7 Safe D; MO-04 R+20.2 → R+39.8, MO-06 R+24.0 → R+35.4, MO-03 R+18.0 → R+24.5, MO-02 R+10.8 → R+7.7. House: expected Democratic seats 222.6 → 223.7, P(Democratic control) 75.2% → 80.0%. Backtest House MAE (all years) 4.58 → 4.51 on 465 races instead of 449; 2026 turnout estimate 110.40M → 110.36M House votes.
+
+Sep 29, 2026
+CHANGE
+Projected results by county on every race page, and the implied generic ballot
+
+Senate and governor pages' county map and a new default tab on the House page's district map show the 2026 projected result by county: the race's forecast margin, unchanged, spread over its counties by county TPL — a House district's piece of a split county adds the piece's 2024 deviation from its county, from the district-by-county results, where the lines are unchanged and every piece was contested — plus one shift solved so the turnout-weighted mean equals the forecast (lib/countyProjection.ts; House on the 2026 county pieces, cut from the site's 2026 boundary file by scripts/build-house-county-pieces.py 2026). Decided races paint 100% for the side that has them. Adding every race back up gives the implied generic ballot on /analysis/turnout, with the House figure decomposed into the forecast's shrunk expectation, decided seats, turnout weighting and third parties. No forecast margin changes.
+
+EFFECT Implied 2026 ballot: House D+4.6 (contested races only D+2.4; equal-weighted D+4.4), Senate D+1.0 over 35 races, governor D+6.5 over 36, all three D+4.3; polling generic ballot D+6.4, the forecast's expected House vote D+5.7.
+
+Sep 28, 2026
+CHANGE
+Turnout page and the 2026 turnout estimate
+
+New /analysis/turnout: votes cast in every general election since 2016 (President, Senate, governor, House) by state, House district and county as a share of citizen voting-age population (ACS B05003, one five-year release per election year; scripts/fetch-cvap.py), with the U.S. Elections Project's VEP and total ballots as a statewide cross-check. Runoff and ranked-choice races count at their first round (data-entry/turnout_first_round.csv, 15 races; by-district figures scaled from the runoff round); unopposed House seats are shown as recorded and flagged. The 2026 estimate is a level × distribution model (lib/turnoutModel.ts): a state's top-of-the-ticket votes = CVAP(2024) × a 60/40 blend of its 2022 and 2018 top-race turnout rates, × 0.92 when its ticket gains or loses a statewide race, × exp(−0.0028 × the change in the top race's |margin|, the site's forecast margin for 2026); counties split it by 2024 presidential share × midterm propensity (shrunk with 20,000 pseudo-votes); House districts take their county pieces (2024 pieces, or tract CVAP in the ten redrawn states) × the district's contested-seat drop-off from the top race, so unopposed seats are imputed as contested.
+
+EFFECT Backtest, 2022 from 2018 alone: state top-race MAE 8.1% (bias +6.2%, the 2018→2022 swing; 9.0% / +7.4% without the competitiveness term), county share of the state 4.4% vote-weighted with the level known, contested House districts 11.5%. 2026: 110.4M House votes (106.3–116.4M), 45.9% of CVAP, against 113.7M in 2018 and 107.7M in 2022.

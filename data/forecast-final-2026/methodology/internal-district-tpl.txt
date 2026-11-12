@@ -1,0 +1,177 @@
+http://localhost:3000/analysis/internal-methodology/district-tpl
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+DISTRICT TPL
+A district's lean, on the 2026 lines
+
+District TPL runs the State TPL pipeline at district level: the same additive strips, the parent state’s β*, the same decay, coverage and Huber weighting — so district and state leans sit on one scale. Its inputs are the district’s presidential results re-aggregated onto the 2026 map, plus every House race from 2016 to 2024, each relocated onto today’s lines. It is the lean every House forecast starts from.
+
+President rows (2016 · 2020 · 2024, on 2026 lines):   NM = Raw − β*·E(year)
+House rows (2016–2024):                               NM = Raw + incumbency strip + fundraising strip + BS − β*·E(year)
+District TPL = the State TPL aggregation over those rows   (P 0.6 / H 0.2 redistributed; year decay 0.75 × coverage)
+Centered     = TPL − median of the 435 district TPLs
+NOW	
+Districts	435
+House rows used	1,935
+…relocated across a redraw (|shift| ≥ 0.5)	1,256 (mean weight 0.63)
+Presidential-only districts	2
+Median district TPL	R+1.9
+AGAINST STATE TPL
+What differs
+Inputs
+President and House only. Senate, Governor and State Legislature results are not available by congressional district.
+Ineligible House races
+Skipped, not imputed: the presidential rows already carry the district's lean, so imputing from them would count it twice.
+Elasticity
+The parent state's β*. A district-level elasticity cannot be tested — the only wave year with House rows on current lines is 2018, with five of them.
+Robust weighting
+Two-pass Huber: aggregate once unweighted to anchor the lean, then downweight each row by min(1, 7 / |NM − that anchor|) and aggregate again. (The state model anchors its statewide rows on the fitted lean instead, and checks its House rows as one turnout-weighted year rather than one by one — a district's own rows across years are one seat, so the row-level check stays here.)
+Appointed incumbents
+Not distinguished at district level; a House incumbent always gets the full strip.
+Presidential data
+2016, 2020 and 2024 presidential votes re-aggregated to the 2026 boundaries (data/districtPresidentialData.ts), full-total-vote basis. Verified on the new maps of all ten redrawn states.
+STEP 3B
+Boundary shift
+
+A House margin is a fact about the map that race was run on; District TPL is a property of the 2026 map. Rebuilding an old race on new lines is impossible even in principle — today's NC-14 is assembled from pieces of three 2022 districts, each of which held a different contest. So the race is relocated instead, by the presidential difference between the two maps.
+
+shift  = pres_P(lines used in year Y) − pres_P(2026 lines)        same election P, two maps
+BS pts = −shift
+weight = 1 / (1 + (|shift| / BS_WEIGHT_K)²)                        BS_WEIGHT_K = 10
+aggWeight = weight × Huber factor
+P is the presidential election contemporaneous with the map; a midterm uses both neighbours weighted by distance (2018 = ½·2016 + ½·2020). Each term is a same-election, two-map difference, so no election-to-election trend leaks in.
+
+What transfers is performance relative to the presidential baseline, not the margin: “ran a point behind the top of the ticket” carries over, “won by 15” does not. The uniform shift assumes that relative performance is constant across the district’s territory, which is weakest exactly where the shift is largest — hence the weight.
+
+|SHIFT| (PTS)	WEIGHT
+0	1.00
+2	0.96
+5	0.80
+10	0.50
+20	0.20
+32	0.09
+BS_WEIGHT_K
+10
+Shift (pts) at which a relocated race counts half.
+DESIGNED, NOT CALIBRATED
+NOT calibrated: the TPL harnesses exercise only the state model, so there is no district-level target to fit it against. Fitting it needs a district holdout (predict each district's House margin from a TPL built without that race).
+Old-lines presidential data
+data/presByBoundaryVintage.ts, per map and presidential year. Two cells had no published source and were built from precinct returns: 2020 president on North Carolina’s 2018 map, and 2024 president on the 2022 maps of AL / GA / LA / NC / NY. A neighbour missing on the old map drops out and the rest renormalize.
+SHARED WITH STATE TPL
+Strips and constants
+incumbency
+H 3.0 · S 3.3 · G 4.8
+Points the incumbent's party is worth, stripped toward the other party. Senate and Governor are fitted inside the fit; House is a fixed 3. President and State Legislature carry none.
+FITTED LIVE
+See Forecast → Incumbency.
+FF_K · FF_MAX
+0.02 · ±2
+Fundraising strip = −clamp(FF_K × gap%, ±FF_MAX), gap% = (R$ − D$)/(R$ + D$) × 100. Applied only where both receipts are known; never to President or imputed rows.
+BACKTEST-CALIBRATED
+tplCalibrate FF sweep on the clean presidential target. Larger k overcorrects: the receipts gap partly double-counts incumbency. (The forecast uses a different, residual-basis money rule.)
+
+Environment E(year), β*, year decay, type weights and HUBER_C are exactly those documented under State TPL. With only President and House present, the base weights P 0.6 / H 0.2 redistribute to 75% / 25% in a presidential year, and a midterm year is House alone at coverage 0.2.
+
+WORKED EXAMPLE · LIVE
+NC-14
+
+The most heavily relocated seat on the map. Full ledger: District TPL.
+
+2022 HOUSE
+Pat Harrigan (R) vs Jeff Jackson (D)
+RAW MARGINR% − D% of the full total vote
+D+15.4
++
+INCUMBENCY STRIPopen seat
+EVEN
++
+FUNDRAISING STRIPreceipts D $5.7M · R $0.9M
+R+1.5
++
+BOUNDARY SHIFTold lines −31.8 vs 2026 lines
+R+31.8
++
+ENVIRONMENT STRIP−β* × E(year)
+D+0.8
+=
+NEUTRAL MARGIN (NM)aggregation weight 0.09
+R+17.0
+YEAR AGGREGATION
+YEAR	OFFICES PRESENT	COVERAGE	RECENCY	FINAL WEIGHT	YEAR MARGIN (WRS)
+2016	P 100%	0.60	0.056	5.2%	R+20.2
+2020	P 100%	0.60	0.178	16.3%	R+17.1
+2022	H 100%	0.20	0.316	9.7%	R+17.0
+2024	P 75% · H 25%	0.80	0.563	68.8%	R+12.6
+Offices present shows each type's redistributed share within the year; a House year more than HUBER_C from its anchor (the state's fitted lean; for a county, its statewide-rows lean) shows its Huber factor. Final weight = recency × coverage, normalized over the years with data.
+DISTRICT TPL
+R+14.1
+=
+CENTERED− median district
+R+12.3
+OPEN ITEMS
+Known limitations
+No district holdout
+Neither BS_WEIGHT_K nor the district weighting has its own validation target; the forward backtest's House error is the only indirect check.
+Self-influence
+A member’s own House margins feed their district’s TPL, which slightly shrinks House WAR.
+Uniform-shift assumption
+Home-county overperformance does not transfer to voters a member never represented.
+REFERENCE
+Code and commands
+WHERE IT LIVES
+lib/tplCompute.ts
+calculateDistrictModel, boundaryStripFor, presInterpWeights.
+data/districtPresidentialData.ts
+President by district on 2026 lines.
+data/presByBoundaryVintage.ts
+President by district on each earlier map.
+lib/redistrictingCalendar.ts · houseDistrictInfo
+Which map each House year was run on.
+RE-RUN AFTER A CHANGE
+npx tsx scripts/forwardBacktest.ts --env struct --emit
+The House rows of the forward backtest are the working check on District TPL.
+python3 scripts/build-pres-on-old-lines-from-precincts.py
+Rebuilds the precinct-derived old-lines cells.
+WHAT CHANGED, AND WHEN
+Revision history
+Oct 4, 2026
+DATA FIX
+Missouri back on its 2022 congressional map
+
+The Missouri Supreme Court struck down the 2025 mid-decade map on Sept. 3, 2026, and the state votes on its 2022 lines in November. Every 2026 layer now carries those lines for Missouri: the boundary files (from the Census 119th-Congress districts), the district PVI (recomputed by the column's 30/70 formula on 2022-line presidential results), the presidential results District TPL reads (2020 from The Downballot, 2024 from the official district cuts, 2016 from an overlay of Dave's Redistricting VTD data that reproduces the published 2020 and 2024 figures within 0.07 and 0.04 points), the demographics (the published ACS figures, which already describe these lines, replace the tract estimate), the turnout model's county shares and the House pages' county pieces. Missouri no longer counts as redrawn, so its eight seats also re-enter the forward backtest's stable-lines House set.
+
+EFFECT MO-05 R+9.7 Likely R → D+28.7 Safe D; MO-04 R+20.2 → R+39.8, MO-06 R+24.0 → R+35.4, MO-03 R+18.0 → R+24.5, MO-02 R+10.8 → R+7.7. House: expected Democratic seats 222.6 → 223.7, P(Democratic control) 75.2% → 80.0%. Backtest House MAE (all years) 4.58 → 4.51 on 465 races instead of 449; 2026 turnout estimate 110.40M → 110.36M House votes.
+
+Sep 21, 2026
+DATA FIX
+90 House incumbent flags corrected
+
+Returning members whose district NUMBER changed in redistricting (70 in 2022, Pennsylvania's 12 in 2018, plus six same-number cases) had been flagged as open seats in house_past_results.csv.
+
+EFFECT 155 live House margins move by < 1 pt; one rating change (CA-22 Lean → Likely D).
+
+Sep 16, 2026
+CHANGE
+Year-local anchoring and boundary shift
+
+House races before 2026 are relocated onto today's lines by the presidential delta between the two maps (BS pts) and downweighted by 1 / (1 + (|shift| / 10)²) — replacing the current-era-only filter that discarded 1,700 of 2,154 House rows. WAR expectations add a trend term so an old race is scored against the seat's lean in its own year.
+
+Sep 15, 2026
+DATA FIX
+All margins on a full-total-vote basis
+
+District presidential margins and State Legislature aggregates had been two-party shares; both now divide by the full total vote like every other margin in the model. Largest in 2016 (1–2 pts).
+
+Sep 8, 2026
+CHANGE
+Fundraising strip; type-weighted fit rows; Louisiana jungle rule
+
+FF strip = −clamp(0.02 × gap%, ±2), calibrated on the clean presidential target. Fit rows are weighted RACE_TYPE_WEIGHTS / count(state, year, type) so House rows cannot outvote the presidential row. LA jungle generals decided without a runoff (top-two < 90%) are "fragmented" and imputed. District TPL moved onto the state pipeline.
+
+EFFECT 2024 presidential holdout MAE 2.90 → 2.49 — the largest single gain of the rebuild.
+
+Sep 7, 2026
+CHANGE
+TPL rebuild: additive strips, fitted environment and elasticity, eligibility gate
+
+margin = lean + β*·E(year) + incumbency + fundraising + residual, every strip additive and applied once. E(y) and β* from a Huber alternating least-squares fit over 2016–2025 (odd years included). Ineligible races are imputed from the nearest presidential result at half weight. Calibration adopted year decay 0.75 and type weights P .60 / H .20 / S .10 / L .07 / G .03. Deleted: NES table, swing-ratio S, multiplicative wave factor, presidential-approval IF, WQ/LQ quality tiers, the 50-pt competitiveness blend.

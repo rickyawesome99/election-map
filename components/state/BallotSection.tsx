@@ -10,11 +10,12 @@ import { useRevealOnce } from "@/lib/useRevealOnce";
 import { MiniDistrictLocator } from "@/components/RaceLocator";
 
 /**
- * The state page's "On the ballot" section: statewide races as matchup cards (photos, the margin
- * between them, the projected two-party vote), then the House delegation and the legislature's
- * chambers as ledger rows (Democrat · Republican · margin · rating), so a long list stays a list.
+ * The state page's "On the ballot" section, in two parts. Federal: the Senate seats as matchup
+ * cards (photos, the margin between them), then the House delegation
+ * as ledger rows (Democrat · Republican · margin · rating). State: the governor and the
+ * legislature's chambers as ledger rows, so a long list stays a list.
  * Motion is the race pages' (globals.css .vh-*): rows rise in staggered once on screen, tint on
- * hover, the margin swells and arrows lean; the vote bars grow in from each side.
+ * hover, the margin swells and arrows lean.
  */
 
 // The race pages' stagger: 55 ms a row, capped so a long list doesn't trail.
@@ -116,25 +117,6 @@ function Result({ margin, dem, rep, size, origin = "right center" }: { margin: n
   );
 }
 
-/** Projected two-party vote from the margin (D share = 50 − margin / 2). */
-function VoteBar({ margin, dem, rep, delay = 0 }: { margin: number; dem: BallotCandidate; rep: BallotCandidate; delay?: number }) {
-  if (samePair(dem, rep)) return <IdleTrack label={`Top-two · both ${dem.party === "D" ? "Democrats" : "Republicans"}`} />;
-  const d = Math.max(0, Math.min(100, 50 - margin / 2));
-  return (
-    <div className="grid gap-1">
-      <div className="flex justify-between text-xs font-bold tabular-nums">
-        <span style={{ color: partyColor(dem.party) }}>{d.toFixed(1)}%</span>
-        <span className="text-[10.5px] font-medium uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>proj. vote</span>
-        <span style={{ color: partyColor(rep.party) }}>{(100 - d).toFixed(1)}%</span>
-      </div>
-      <div className="flex h-2 gap-[2px] overflow-hidden rounded-[2px]">
-        <i className="vh-bar-d block h-full" style={{ width: `${d}%`, background: partyColor(dem.party), animationDelay: `${delay}ms` }} />
-        <i className="vh-bar-r block h-full" style={{ width: `${100 - d}%`, background: partyColor(rep.party), animationDelay: `${delay}ms` }} />
-      </div>
-    </div>
-  );
-}
-
 function IdleTrack({ label }: { label: string }) {
   return (
     <div className="grid gap-1">
@@ -150,12 +132,15 @@ function officeLabel(label: string): { title: string; sub: string | null } {
   return m ? { title: "U.S. Senate", sub: `Seat ${m[1]}` } : { title: label, sub: null };
 }
 
+// The Federal heading's rule runs across both Senate seats, so the cards drop their own.
+const NO_RULE = { borderTop: "none" } as const;
+
 /** A statewide race as a matchup card. */
 function RaceCard({ race, state, delay }: { race: BallotRace; state: string; delay: number }) {
   const { title, sub } = officeLabel(race.label);
   const open = race.dem && race.rep && !race.dem.incumbent && !race.rep.incumbent;
   return (
-    <div className="bl-card vh-row" style={{ animationDelay: `${delay}ms` }}>
+    <div className="bl-card vh-row" style={{ ...NO_RULE, animationDelay: `${delay}ms` }}>
       <Link prefetch={false} href={race.href} aria-label={`View ${race.label} race`} className="absolute inset-0" />
       <div className="relative pointer-events-none grid gap-3">
         <div className="flex items-center gap-2.5 min-h-[30px]">
@@ -176,7 +161,6 @@ function RaceCard({ race, state, delay }: { race: BallotRace; state: string; del
               <Name c={race.dem} state={state} dot="after" />
               <Name c={race.rep} state={state} dot="before" align="right" />
             </div>
-            <VoteBar margin={race.margin} dem={race.dem} rep={race.rep} delay={delay + 140} />
           </>
         ) : (
           <div className="flex items-center justify-between gap-3 py-6">
@@ -193,7 +177,7 @@ function RaceCard({ race, state, delay }: { race: BallotRace; state: string; del
 function HoldoverCard({ seat, delay }: { seat: BallotHoldover; delay: number }) {
   const { title, sub } = officeLabel(seat.label);
   return (
-    <Link prefetch={false} href={seat.href} className="bl-card vh-row grid gap-3 content-start" style={{ animationDelay: `${delay}ms` }}>
+    <Link prefetch={false} href={seat.href} className="bl-card vh-row !flex flex-col gap-3" style={{ ...NO_RULE, animationDelay: `${delay}ms` }}>
       <div className="flex items-center gap-2.5 min-h-[30px]">
         <Eyebrow sub={sub}>{title}</Eyebrow>
         <QuietPill>Not up</QuietPill>
@@ -205,17 +189,19 @@ function HoldoverCard({ seat, delay }: { seat: BallotHoldover; delay: number }) 
           <div className="mt-1 text-[13px]" style={{ color: "var(--app-text-very-muted)" }}>{partyWord(seat.party)} · next election {seat.nextElection}</div>
         </div>
       </div>
-      <IdleTrack label="No race this year" />
+      {/* Pinned to the card's foot, level with the matchup's names beside it. */}
+      <div className="mt-auto"><IdleTrack label="No race this year" /></div>
     </Link>
   );
 }
 
-export function StatewideCards({ governor, senate, state }: { governor: BallotRace | BallotHoldover | null; senate: (BallotRace | BallotHoldover)[]; state: string }) {
-  const items = [governor, ...senate].filter((x): x is BallotRace | BallotHoldover => x != null);
+/** The two Senate seats side by side. */
+export function SenateCards({ senate, state }: { senate: (BallotRace | BallotHoldover)[]; state: string }) {
+  const items = senate;
   const { ref, vh } = useRevealOnce();
   if (items.length === 0) return null;
   return (
-    <div ref={ref} data-vh={vh} className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div ref={ref} data-vh={vh} className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
       {items.map((x, i) => (x.kind === "race" ? <RaceCard key={x.href} race={x} state={state} delay={enter(i)} /> : <HoldoverCard key={x.href} seat={x} delay={enter(i)} />))}
     </div>
   );
@@ -316,12 +302,65 @@ const squaresWidth = (total: number) => {
   return Math.max(300, cols * (Math.min(12, Math.max(3.4, 560 / cols - 2)) + 2));
 };
 
-/** Each chamber as a ledger row: projected seats as squares across the candidate columns, control odds and rating. */
-export function ChamberLedger({ chambers, electionYear }: { chambers: ChamberBlock[]; electionYear: number }) {
+/** The governor's race as a ledger row in the chambers' columns: Democrat · Republican · margin · rating. */
+function GovernorRow({ gov, state, electionYear }: { gov: BallotRace | BallotHoldover; state: string; electionYear: number }) {
+  if (gov.kind !== "race") {
+    return (
+      <div className="bl-row vh-row">
+        <div className="bl-off">
+          <span className="min-w-0 leading-tight">
+            <Link href={gov.href} prefetch={false} className="text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Governor</Link>
+            <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>Not on the {electionYear} ballot</span>
+          </span>
+        </div>
+        <div className="bl-span gap-3">
+          <Photo name={gov.name} party={gov.party} photo={gov.photo} w={40} />
+          <span className="min-w-0 leading-tight">
+            <Link href={gov.href} prefetch={false} className="block truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.12rem", color: partyColor(gov.party) }}>{gov.name}</Link>
+            <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>{partyWord(gov.party)} · next election {gov.nextElection}</span>
+          </span>
+        </div>
+        <div className="bl-mg" />
+        <div className="bl-pill"><QuietPill>Not up</QuietPill></div>
+      </div>
+    );
+  }
+  const open = gov.dem && gov.rep && !gov.dem.incumbent && !gov.rep.incumbent;
+  return (
+    <div className="bl-row vh-row">
+      <div className="bl-off">
+        <span className="min-w-0 leading-tight">
+          <Link href={gov.href} prefetch={false} className="text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Governor</Link>
+          {open && <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>Open seat</span>}
+          <Link href={gov.href} prefetch={false} className="mt-0.5 block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View race <span className="vh-lean" data-dir="r">→</span></Link>
+        </span>
+      </div>
+      {gov.dem && gov.rep ? (
+        <>
+          <div className="bl-dem"><Photo name={gov.dem.name} party={gov.dem.party} photo={gov.dem.photo} w={40} /><Name c={gov.dem} state={state} dot="after" /></div>
+          <div className="bl-rep"><Photo name={gov.rep.name} party={gov.rep.party} photo={gov.rep.photo} w={40} /><Name c={gov.rep} state={state} dot="after" /></div>
+        </>
+      ) : (
+        <div className="bl-span text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
+      )}
+      <div className="bl-mg"><Result margin={gov.margin} dem={gov.dem} rep={gov.rep} size="1.2rem" /></div>
+      <div className="bl-pill"><RatingPill rating={gov.rating} /></div>
+    </div>
+  );
+}
+
+/**
+ * The state offices as ledger rows: the governor first, then each chamber with its projected seats
+ * as squares across the candidate columns, control odds and rating.
+ */
+export function StateLedger({ governor, chambers, state, electionYear }: { governor: BallotRace | BallotHoldover | null; chambers: ChamberBlock[]; state: string; electionYear: number }) {
   const { ref, vh } = useRevealOnce();
+  const offset = governor ? 1 : 0;
   return (
     <div ref={ref} data-vh={vh} className="bl-ledger">
-      {chambers.map((c, i) => {
+      {governor && <GovernorRow gov={governor} state={state} electionYear={electionYear} />}
+      {chambers.map((c, j) => {
+        const i = j + offset;
         const hasProj = c.upText != null && c.projDem != null && c.projRep != null && !!c.projTotal;
         const dem = Math.round(c.projDem ?? 0), rep = Math.round(c.projRep ?? 0), total = c.projTotal ?? 0;
         const lead = c.pDem != null && c.pDem >= 0.5;

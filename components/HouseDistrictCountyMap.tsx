@@ -106,7 +106,8 @@ export default function HouseDistrictCountyMap({
     // Alaska's Aleutians cross the antimeridian: unrotated, the fit spans the whole globe and the
     // state shrinks into one corner. Centre the projection on the state instead.
     const projection = geoMercator().rotate(stateAbbr === "AK" ? [154, 0] : [0, 0]).fitExtent([[6, 6], [size.width - 6, size.height - 6]], { type: "FeatureCollection", features: shown });
-    const path = geoPath(projection);
+    // One decimal place is sub-pixel at any zoom we allow and halves the path text.
+    const path = geoPath(projection).digits(1);
     // County outer borders: edges between pieces of different counties, or on the outside.
     const countyBorders = mesh(topo, topo.objects.pieces, (a, b) => {
       const pa = (a as unknown as { properties: PieceProps }).properties, pb = (b as unknown as { properties: PieceProps }).properties;
@@ -117,7 +118,10 @@ export default function HouseDistrictCountyMap({
       const da = (a as unknown as { properties: { d: number } }).properties.d, db = (b as unknown as { properties: { d: number } }).properties.d;
       return da === district || db === district;
     }) as MultiLineString;
-    if (!stateContext) return { mine, context, touched, path, countyBorders, districtOutline, rest: [] as PieceFeature[], restBorders: null, otherDistricts: null, stateBounds: null, minZoom: 1 };
+    // Path strings are built once per frame size: zoom and pan move the <g>, never the paths.
+    const d = (g: Geometry | Feature | null) => (g ? path(g as Feature) ?? undefined : undefined);
+    const drawn = (ps: PieceFeature[]) => ps.map((p) => ({ p, d: d(p) }));
+    if (!stateContext) return { mine: drawn(mine), context: drawn(context), touched, path, countyBordersD: d(countyBorders), districtOutlineD: d(districtOutline), rest: [] as { p: PieceFeature; d: string | undefined }[], restBordersD: undefined, otherDistrictsD: undefined, stateBounds: null, minZoom: 1 };
     const rest = pieces.filter((p) => !touched.has(p.properties.c));
     const restBorders = mesh(topo, topo.objects.pieces, (a, b) => {
       const pa = (a as unknown as { properties: PieceProps }).properties, pb = (b as unknown as { properties: PieceProps }).properties;
@@ -132,22 +136,13 @@ export default function HouseDistrictCountyMap({
     const [[x0, y0], [x1, y1]] = stateBounds;
     // Zooming out stops once the whole state fits, with a little margin.
     const minZoom = Math.min(1, 0.92 * Math.min(size.width / Math.max(1, x1 - x0), size.height / Math.max(1, y1 - y0)));
-    return { mine, context, touched, path, countyBorders, districtOutline, rest, restBorders, otherDistricts, stateBounds, minZoom };
+    return { mine: drawn(mine), context: drawn(context), touched, path, countyBordersD: d(countyBorders), districtOutlineD: d(districtOutline), rest: drawn(rest), restBordersD: d(restBorders), otherDistrictsD: d(otherDistricts), stateBounds, minZoom };
   }, [topo, district, size, stateAbbr, stateContext]);
 
   const zoom = usePanZoom(size.width, size.height, 12, scene?.stateBounds ? { minZoom: scene.minZoom, bounds: scene.stateBounds } : undefined);
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelected] = useState<Hovered | null>(null);
   const { onMouseMove, tooltipRef } = useMapTooltip(12, 8);
-
-  const describe = (p: PieceFeature): Hovered => ({
-    fips: p.properties.c,
-    name: p.properties.n,
-    inDistrict: p.properties.d === district,
-    otherDistrict: p.properties.d === district ? null : p.properties.d,
-    sharesCounty: scene?.touched.has(p.properties.c) ?? false,
-    result: p.properties.d === district ? byFips.get(p.properties.c) ?? null : null,
-  });
 
   // One description of a county piece, drawn as the hover popup and as the click panel.
   const card = (h: Hovered): CountyTooltipProps => {
@@ -171,6 +166,65 @@ export default function HouseDistrictCountyMap({
 
   const patternId = `hatch-${stateAbbr}-${district}`;
 
+  // The pieces and lines, memoized apart from hover, selection and zoom: on Texas they are ~300
+  // paths, and re-rendering them on every mouseenter or wheel tick is what made the map lag.
+  const lowerLayer = useMemo(() => {
+    if (!scene) return null;
+    const describe = (p: PieceFeature): Hovered => ({
+      fips: p.properties.c, name: p.properties.n,
+      inDistrict: p.properties.d === district,
+      otherDistrict: p.properties.d === district ? null : p.properties.d,
+      sharesCounty: scene.touched.has(p.properties.c),
+      result: p.properties.d === district ? byFips.get(p.properties.c) ?? null : null,
+    });
+    const outside = (p: PieceFeature, d: string | undefined, key: string, fill: string, fillOpacity?: number) => (
+      <path key={key} d={d} fill={fill} fillOpacity={fillOpacity} stroke="none"
+        onMouseEnter={() => setHovered(describe(p))} onMouseLeave={() => setHovered(null)}
+        onClick={() => setSelected((s) => (s?.fips === p.properties.c && !s.inDistrict ? null : describe(p)))} />
+    );
+    return (
+      <>
+        {scene.rest.map(({ p, d }) => outside(p, d, `rest-${p.properties.c}-${p.properties.d}`, "var(--map-unfilled)", 0.6))}
+        {scene.restBordersD && <path d={scene.restBordersD} fill="none" stroke="var(--app-bg)" strokeWidth={0.6} pointerEvents="none" vectorEffect="non-scaling-stroke" />}
+        {scene.otherDistrictsD && <path d={scene.otherDistrictsD} fill="none" stroke="var(--app-text-very-muted)" strokeWidth={1} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />}
+        {scene.context.map(({ p, d }) => outside(p, d, `ctx-${p.properties.c}-${p.properties.d}`, `url(#${patternId})`))}
+        {scene.mine.map(({ p, d }) => {
+          const h = describe(p);
+          return (
+            <path key={`in-${p.properties.c}`} d={d} fill={fillFor(h.result)} style={{ cursor: "pointer" }}
+              onMouseEnter={() => setHovered(h)} onMouseLeave={() => setHovered(null)}
+              onClick={() => setSelected((s) => (s?.fips === p.properties.c && s.inDistrict ? null : h))} />
+          );
+        })}
+      </>
+    );
+    // fillFor reads only bubbles, demParty and repParty.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scene, district, byFips, bubbles, demParty, repParty, patternId]);
+
+  const upperLayer = useMemo(() => {
+    if (!scene) return null;
+    return (
+      <>
+        <path d={scene.countyBordersD} fill="none" stroke={bubbles ? BUBBLE_LINE : "var(--app-bg)"} strokeWidth={0.8} pointerEvents="none" vectorEffect="non-scaling-stroke" />
+        <path d={scene.districtOutlineD} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.4} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />
+        {/* Remaining view: a circle on the district's share of each county, largest first. */}
+        {bubbles && scene.mine
+          .map(({ p }) => ({ p, net: byFips.get(p.properties.c)?.remaining?.net ?? 0 }))
+          .filter((b) => b.net !== 0)
+          .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
+          .map(({ p, net }) => {
+            const [cx, cy] = scene.path.centroid(p);
+            if (!Number.isFinite(cx) || !Number.isFinite(cy)) return null;
+            return <circle key={`b-${p.properties.c}`} cx={cx} cy={cy} r={bubbleRadius(net, maxNet, bubbleMaxR(size.width, size.height))} fill={bubbleColor(net, demParty, repParty)} fillOpacity={0.72} stroke="var(--app-bg)" strokeWidth={0.75} pointerEvents="none" />;
+          })}
+      </>
+    );
+  }, [scene, bubbles, byFips, maxNet, size, demParty, repParty]);
+
+  // The selected in-district county's outline, drawn over its fill (under the county borders, as before).
+  const selectedD = selected?.inDistrict ? scene?.mine.find(({ p }) => p.properties.c === selected.fips)?.d : undefined;
+
   return (
     <div className={fill ? "md:flex md:h-full md:flex-col" : undefined}>
       <div ref={containerRef} className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onMouseMove}>
@@ -185,40 +239,9 @@ export default function HouseDistrictCountyMap({
               </pattern>
             </defs>
             <g transform={zoom.transform}>
-            {scene.rest.map((p) => (
-              <path key={`rest-${p.properties.c}-${p.properties.d}`} d={scene.path(p) ?? undefined} fill="var(--map-unfilled)" fillOpacity={0.6} stroke="none"
-                onMouseEnter={() => setHovered(describe(p))} onMouseLeave={() => setHovered(null)}
-                onClick={() => setSelected((s) => (s?.fips === p.properties.c && !s.inDistrict ? null : describe(p)))} />
-            ))}
-            {scene.restBorders && <path d={scene.path(scene.restBorders) ?? undefined} fill="none" stroke="var(--app-bg)" strokeWidth={0.6} pointerEvents="none" vectorEffect="non-scaling-stroke" />}
-            {scene.otherDistricts && <path d={scene.path(scene.otherDistricts) ?? undefined} fill="none" stroke="var(--app-text-very-muted)" strokeWidth={1} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />}
-            {scene.context.map((p) => (
-              <path key={`ctx-${p.properties.c}-${p.properties.d}`} d={scene.path(p) ?? undefined} fill={`url(#${patternId})`} stroke="none"
-                onMouseEnter={() => setHovered(describe(p))} onMouseLeave={() => setHovered(null)}
-                onClick={() => setSelected((s) => (s?.fips === p.properties.c && !s.inDistrict ? null : describe(p)))} />
-            ))}
-            {scene.mine.map((p) => {
-              const h = describe(p);
-              const isSel = selected?.fips === p.properties.c && selected.inDistrict;
-              return (
-                <path key={`in-${p.properties.c}`} d={scene.path(p) ?? undefined} fill={fillFor(h.result)} stroke={isSel ? "var(--app-text-primary)" : "none"} strokeWidth={isSel ? 1.5 : 0} vectorEffect="non-scaling-stroke"
-                  style={{ cursor: "pointer" }}
-                  onMouseEnter={() => setHovered(h)} onMouseLeave={() => setHovered(null)}
-                  onClick={() => setSelected(isSel ? null : h)} />
-              );
-            })}
-            <path d={scene.path(scene.countyBorders) ?? undefined} fill="none" stroke={bubbles ? BUBBLE_LINE : "var(--app-bg)"} strokeWidth={0.8} pointerEvents="none" vectorEffect="non-scaling-stroke" />
-            <path d={scene.path(scene.districtOutline) ?? undefined} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.4} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />
-            {/* Remaining view: a circle on the district's share of each county, largest first. */}
-            {bubbles && scene.mine
-              .map((p) => ({ p, net: byFips.get(p.properties.c)?.remaining?.net ?? 0 }))
-              .filter((b) => b.net !== 0)
-              .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
-              .map(({ p, net }) => {
-                const [cx, cy] = scene.path.centroid(p);
-                if (!Number.isFinite(cx) || !Number.isFinite(cy)) return null;
-                return <circle key={`b-${p.properties.c}`} cx={cx} cy={cy} r={bubbleRadius(net, maxNet, bubbleMaxR(size.width, size.height))} fill={bubbleColor(net, demParty, repParty)} fillOpacity={0.72} stroke="var(--app-bg)" strokeWidth={0.75} pointerEvents="none" />;
-              })}
+            {lowerLayer}
+            {selectedD && <path d={selectedD} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.5} pointerEvents="none" vectorEffect="non-scaling-stroke" />}
+            {upperLayer}
             </g>
           </svg>
         )}

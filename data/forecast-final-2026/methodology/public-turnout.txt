@@ -1,0 +1,63 @@
+http://localhost:3000/methodology/turnout
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+TURNOUT
+Who votes, and how many will
+
+The Turnout page shows how many people voted in every general election since 2016, by state, district and county, and estimates how many will vote in 2026. Turnout is counted as votes cast in a race divided by the number of adult citizens who live there. That’s the closest measure of the eligible population that is available for every county and district.
+
+115.6M
+House votes expected in 2026
+48.1%
+of adult citizens
+111.3M – 121.9M
+range: turnout like 2022 to turnout like 2018
+THE 2026 ESTIMATE
+Three steps
+
+The estimate starts with each state's total and then splits it among the state's counties and districts.
+
+1
+A state's total, from its own midterms
+Each state’s turnout rate in the last two midterms, with 2022 counting more than 2018, applied to today’s adult citizen population. It is nudged up where this year’s top race looks closer than last time and down where it looks less competitive, and down in a state with no Senate or governor race on the ballot.
+4.15M
+GEORGIA SENATE VOTES
+2
+Split among counties
+Each county gets its share of the state's last presidential vote, adjusted for how much more or less it tends to turn out in midterms than in presidential years. Places with few voters are pulled toward the state's pattern so that one odd year doesn't decide it.
+3
+Then among districts
+A House district adds up the counties, and the parts of counties, inside it. It's then adjusted for the voters who skip the House race in that district, where that's measured from a contested race.
+PROJECTED RESULTS
+County results on the race pages
+
+The county maps on each race page spread the race's forecast margin across its counties. Every county moves by the same amount from its own partisan lean, by whatever amount makes the counties add up to the forecast. The race's margin never changes; the map shows how it would most likely be made up.
+
+D+56.5
+Fulton County in the Georgia Senate race, on 423,748 expected votes
+D+6.3
+every race's projected votes added up, nationwide
+ELECTION NIGHT
+The results needle
+
+On election night the Results page shows the count for every race next to the forecast, and a projected final margin. Each county starts at its projected result above. As it reports, the votes already counted stand as they are, and the rest of the county is moved by however much the counties that have reported are running ahead of or behind their projections. Early in the night that shared shift is held close to zero, because a few counties can mislead; it loosens as more comes in. A county's own first votes count for little too, since the ballots posted first (often the mail) usually lean more Democratic than the county's final, and the projection should not chase them. A county counts as finished only when the feed reports it complete and its count is close to what was expected; a count that has merely caught up with our estimate is not treated as final. The page also measures that early-vote lean as the night goes on — nationally and for each state, from how counties further along in their count differ from those just starting — and reads every part-counted county with it removed, so the projection does not sit on the wrong side of the final until the last votes land. The projection never calls a race: calls come from the results provider, civicAPI, and the needle only stops moving once one is made. The counties that have finished anywhere also speak for the races still out: from them the page reads a national swing, each state's own miss and how the swing runs with a county's makeup, and moves the projection of every race not yet counting by what those imply for it, with a wider band the less is in. Days after the election the rules change: the ballots still out are late mail and provisionals, which usually run more Democratic than the count, so each race's remainder follows how its own latest votes have broken, leaning on the national pattern until it has enough of them. A county counted as finished stays finished until its count really grows.
+
+SEE ITLive on the Results page from November 3.
+
+TRACK RECORD
+How it did in 2022
+
+We ran the same estimate for 2022 using only 2018 as its guide and compared it with the actual count. Most of the state-level miss is the national change in turnout between the two years. How the vote is shared out among counties and districts is the part the method is responsible for.
+
+8.1%
+typical miss on a state's total
+4.4%
+typical miss on a county's share of its state
+11.4%
+typical miss on a House district's total
+Why adult citizens, not registered voters?
+Registration rules and list maintenance differ from state to state. Adult citizens are measured the same way everywhere by the Census Bureau.
+What about runoffs?
+A race decided in a runoff or by ranked-choice rounds is counted at its first round, the electorate that actually turned out.
+
+SEE ITThe full numbers for every state, county and district are on the Turnout page.

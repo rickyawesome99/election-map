@@ -11,10 +11,6 @@ import { stateLegMapInfo, type ChamberMapInfo } from "@/data/stateLegMapInfo";
 import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
-import { countySenateData, type CountyYearResult } from "@/data/countySenateData";
-import { countyGovernorData } from "@/data/countyGovernorData";
-import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
-import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { forecastRace, type ForecastedRace } from "@/lib/forecast";
 import { calculateStateModel, type YearAggregation } from "@/lib/tplCompute";
 import { redistrictingByState, type RedistrictEvent } from "@/lib/redistrictingCalendar";
@@ -24,8 +20,6 @@ import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { chamberSummary } from "@/lib/stateLegChamberSummary";
 import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
 import { fieldPersons, projectedNomineeShare, projectedSeats, type ProjectedSeat } from "@/lib/stateLegAtlas";
-import { projectionStateSlice } from "@/lib/turnoutModel";
-import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -165,15 +159,6 @@ export type CountyLayer = {
   repParty: "D" | "R" | "I";
   caption?: string;
 };
-export type CountyRow = {
-  fips: string;
-  name: string;
-  tpl: number | null;
-  pres2024: number | null;
-  votes2024: number | null;
-  est2026: number | null;
-  share: number | null;
-};
 
 export type RedistrictingYear = {
   year: number;
@@ -210,7 +195,7 @@ export type StatePageData = {
     chart: ChartResult[];
     vintage: VintageItem[];
   };
-  counties: { tpl: Record<string, number | null>; layers: CountyLayer[]; rows: CountyRow[]; areaLabel: string };
+  counties: { tpl: Record<string, number | null>; layers: CountyLayer[]; votes: Record<string, number | null> };
   /** The TPL's per-year inputs (weighted lean by cycle), for the trend chart. */
   tplTrend: YearAggregation[];
   /** Every year a House map changed here, newest first. */
@@ -481,73 +466,8 @@ export function buildStatePage(state: StateInfo): StatePageData {
       demName: row?.demCandidate ?? "Democrat", repName: row?.repCandidate ?? "Republican", demParty: "D", repParty: "R",
     });
   }
-  // Every Senate and governor year since 2016 with county results, newest first, after the
-  // presidential layers. A same-year special Senate election gets its own layer.
-  const yearsOf = (data: Record<string, { state: string; years: Partial<Record<number, unknown>> }>, field: "years" | "specialYears" = "years") => {
-    const years = new Set<number>();
-    for (const f of Object.keys(data)) {
-      const c = data[f] as { state: string } & Partial<Record<"years" | "specialYears", Partial<Record<number, unknown>>>>;
-      if (c.state === abbr) for (const y of Object.keys(c[field] ?? {})) if (Number(y) >= 2016) years.add(Number(y));
-    }
-    return [...years].sort((x, y) => y - x);
-  };
-  const countyEntries = <T extends { state: string; countyName: string }>(data: Record<string, T>, pick: (c: T) => CountyYearResult | undefined) =>
-    Object.keys(data).flatMap((f) => { const c = data[f]; const r = c.state === abbr ? pick(c) : undefined; return r ? [{ fips: f, name: c.countyName, result: { demVotes: r.demVotes, repVotes: r.repVotes, totalVotes: r.totalVotes, demPct: r.demPct, repPct: r.repPct, margin: r.margin } }] : []; });
-  const senateLayers: (CountyLayer & { year: number })[] = [];
-  for (const special of [false, true]) {
-    for (const y of yearsOf(countySenateData, special ? "specialYears" : "years")) {
-      const names = special ? undefined : senateCandidatesByYear[abbr]?.[y];
-      const row = senatePast.find((r) => r.year === y && isSpecialElection(r.electionType) === special);
-      senateLayers.push({
-        year: y,
-        key: `senate-${special ? "special-" : ""}${y}`, label: `${y} Senate${special ? " Sp." : ""}`,
-        entries: countyEntries(countySenateData, (c) => (special ? c.specialYears : c.years)[y]),
-        demName: names?.dem ?? row?.demCandidate ?? "Democrat", repName: names?.rep ?? row?.repCandidate ?? "Republican",
-        demParty: row?.demParty ?? "D", repParty: row?.repParty ?? "R",
-      });
-    }
-  }
-  for (const l of senateLayers.sort((x, y) => x.year === y.year ? 0 : y.year - x.year)) layers.push(l);
-  for (const y of yearsOf(countyGovernorData)) {
-    const names = governorCandidatesByYear[abbr]?.[y];
-    const row = govPast.find((r) => r.year === y);
-    layers.push({
-      key: `governor-${y}`, label: `${y} Gov.`,
-      entries: countyEntries(countyGovernorData, (c) => c.years[y]),
-      demName: names?.dem ?? row?.demCandidate ?? "Democrat", repName: names?.rep ?? row?.repCandidate ?? "Republican",
-      demParty: row?.demParty ?? "D", repParty: row?.repParty ?? "R",
-    });
-  }
-  // The 2026 projection for the state's top statewide race, where there is one.
-  const projOffice = governorRace ? "governor" : senateSeat1Race ? "senate" : null;
-  if (projOffice) {
-    const pr = projectRaceResults(projOffice, abbr);
-    if (pr) layers.unshift({
-      key: "projected-2026", label: `${electionYear} projected`, entries: projectedCountyMapEntries(pr),
-      demName: pr.demName, repName: pr.repName, demParty: pr.demParty, repParty: pr.repParty,
-      caption: `Projected county results for the ${electionYear} ${projOffice === "governor" ? "governor" : "Senate"} race`,
-    });
-  }
-
-  // Largest counties: by 2024 presidential ballots, with the 2026 estimate for the top race.
-  let est: Map<string, number> = new Map();
-  let estTotal = 0;
-  try {
-    const slice = projectionStateSlice(abbr);
-    const top = slice.races.filter((r) => r.office !== "house").sort((a, b) => b.votes - a.votes)[0];
-    if (top) {
-      for (const c of top.counties) est.set(c.fips, (est.get(c.fips) ?? 0) + c.votes);
-    } else {
-      for (const r of slice.races) for (const c of r.counties) est.set(c.fips, (est.get(c.fips) ?? 0) + c.votes);
-    }
-    estTotal = [...est.values()].reduce((a, b) => a + b, 0);
-  } catch { est = new Map(); }
-  const rows: CountyRow[] = countyFips.map((f) => {
-    const c = countyPresidentialData[f];
-    const r24 = c.years[2024];
-    const e = est.get(f) ?? null;
-    return { fips: f, name: c.countyName, tpl: countyTpl[f] ?? null, pres2024: r24?.margin ?? null, votes2024: r24?.totalVotes ?? null, est2026: e, share: e != null && estTotal > 0 ? (e / estTotal) * 100 : null };
-  }).sort((a, b) => (b.votes2024 ?? 0) - (a.votes2024 ?? 0));
+  // Each county's 2024 presidential ballots, for the TPL map's panel.
+  const countyVotes: Record<string, number | null> = Object.fromEntries(countyFips.map((f) => [f, countyPresidentialData[f].years[2024]?.totalVotes ?? null]));
 
   const layerKeyFor = (group: "president" | "senate" | "governor", year: number) => layers.some((l) => l.key === `${group}-${year}`) ? `${group}-${year}` : null;
 
@@ -688,7 +608,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
       chart,
       vintage,
     },
-    counties: { tpl: countyTpl, layers, rows, areaLabel: abbr === "LA" ? "Parish" : abbr === "AK" ? "Borough" : "County" },
+    counties: { tpl: countyTpl, layers, votes: countyVotes },
     tplTrend: model.yearAggregations,
     redistricting,
   };

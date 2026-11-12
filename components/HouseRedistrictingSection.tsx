@@ -9,7 +9,7 @@ import { loadTopo } from "@/lib/useTopology";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 
 /**
- * The House page's District Boundaries & PVI History: a tab per map that moved the district's lines,
+ * The House page's Redistricting History: a tab per map that moved the district's lines,
  * labelled with its PVI change, and the selected map's description and before/after mini-maps, laid out like the
  * Legislative Atlas's redistricting history (components/atlas/AtlasEraMaps.tsx). Both panels share
  * one extent, fitted to the old and new district together, so the eye can move straight across.

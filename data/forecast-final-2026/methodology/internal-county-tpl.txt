@@ -1,0 +1,132 @@
+http://localhost:3000/analysis/internal-methodology/county-tpl
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+COUNTY TPL
+The state pipeline, measured in one county
+
+County TPL takes the same statewide races the State TPL uses and reads them at county granularity. Every formula, strip and weight is the shared code path, so a change to the state model changes every county with it. It appears on each county page (Historical → a county) and feeds no forecast.
+
+NM         = county Adjusted margin + incumbency strip + fundraising strip − β*(parent state) × E(year)
+anchor     = the State TPL aggregation over the county's President, Senate and Governor rows
+County TPL = the State TPL aggregation over all the county's rows, each House year × min(1, HUBER_C / |House NM − anchor|)
+AGAINST STATE TPL
+What differs
+President, Senate, Governor
+Genuinely the same statewide race, so the incumbent, the appointed flag and the candidates' receipts are inherited from the state's race list. Only the margin is the county's own.
+House
+A county's House figure is a same-year aggregate across every district touching it, so there is no single incumbent or pair of candidates: no incumbency strip, no fundraising strip. A year counts as ineligible — and is imputed like any other — when one party drew no votes in the county (an unopposed race); a county split between a contested and an unopposed district stays eligible, since the aggregate has no per-district breakdown.
+State Legislature
+Not included — no county-level legislature results.
+Imputation
+An ineligible race (statewide, or an unopposed House year) is imputed from the COUNTY'S nearest presidential result, at weight 0.5, stripping the source year's environment.
+Huber: House years only, against the county's own lean
+No statewide row is Huber-weighted: a county sitting far from its STATE's lean is not an outlier, it is a county. Each House year is checked as a whole instead, as in the state model, but against the county's own statewide lean (its President, Senate and Governor rows aggregated alone): the year's House weight × min(1, 7 / |House NM − that lean|). A county's House vote carries its local candidates — Cuellar won Zapata County, TX by D+34 in 2024 as Trump carried it by R+22 — and with no incumbency strip possible that gap entered at full weight. A county with no statewide rows keeps its House years unchecked.
+Elasticity
+The parent state's β*; no county elasticity is estimated.
+Senate specials
+Special-election results live in a separate bucket of the county Senate data, so a regular and a special in one year each read their own margin.
+No data
+Alaska (no county equivalents report results) and Kalawao County, HI have no rows; the county page says so rather than showing a fabricated EVEN.
+Baseline for comparison
+There is no national TPL; the county page compares against the median state TPL (R+1.8).
+WORKED EXAMPLE · LIVE
+Franklin County, Ohio
+
+County page: Franklin County.
+
+2022 SENATE
+county margin, statewide strips
+RAW MARGINR% − D% of the full total vote
+D+32.5
++
+INCUMBENCY STRIPopen seat
+EVEN
++
+FUNDRAISING STRIPreceipts D $57.8M · R $16.0M
+R+1.1
++
+ENVIRONMENT STRIP−β* × E(year)
+D+0.9
+=
+NEUTRAL MARGIN (NM)aggregation weight 1.00
+D+32.2
+YEAR AGGREGATION
+YEAR	OFFICES PRESENT	COVERAGE	RECENCY	FINAL WEIGHT	YEAR MARGIN (WRS)
+2016	P 77% · S 13% · H 10% (Huber ×0.38)	0.78	0.056	5.3%	D+24.0
+2018	G 9% · S 30% · H 61%	0.33	0.100	4.0%	D+26.9
+2020	P 75% · H 25%	0.80	0.178	17.2%	D+28.6
+2022	G 9% · S 30% · H 61%	0.33	0.316	12.6%	D+28.9
+2024	P 67% · S 11% · H 22%	0.90	0.563	61.0%	D+31.0
+Offices present shows each type's redistributed share within the year; a House year more than HUBER_C from its anchor (the state's fitted lean; for a county, its statewide-rows lean) shows its Huber factor. Final weight = recency × coverage, normalized over the years with data.
+COUNTY TPL
+D+29.8
+OHIO STATE TPL
+R+8.9
+SHARED WITH STATE TPL
+Strips and constants
+incumbency
+H 3.0 · S 3.3 · G 4.8
+Points the incumbent's party is worth, stripped toward the other party. Senate and Governor are fitted inside the fit; House is a fixed 3. President and State Legislature carry none.
+FITTED LIVE
+See Forecast → Incumbency.
+APPOINTED_INCUMBENCY_SHARE
+0
+Share of the advantage stripped for an incumbent who had never won the seat. 0 = treated as an open seat.
+JUDGMENT CALL
+FF_K · FF_MAX
+0.02 · ±2
+Fundraising strip = −clamp(FF_K × gap%, ±FF_MAX), gap% = (R$ − D$)/(R$ + D$) × 100. Applied only where both receipts are known; never to President or imputed rows.
+BACKTEST-CALIBRATED
+tplCalibrate FF sweep on the clean presidential target. Larger k overcorrects: the receipts gap partly double-counts incumbency. (The forecast uses a different, residual-basis money rule.)
+
+Eligibility, E(year), β*, race-type weights, year decay and coverage are exactly those documented under State TPL.
+
+REFERENCE
+Code and commands
+WHERE IT LIVES
+lib/tplCompute.ts
+calculateCountyModel, generateCountyRaceList, getCountyHistoricalMargins.
+data/county{Presidential,Senate,Governor,House}Data.ts
+County margins, keyed by 5-digit FIPS.
+components/CountyTplCard.tsx
+The ledger on each county page.
+RE-RUN AFTER A CHANGE
+npx tsx scripts/tplBacktest.ts
+County TPL has no harness of its own; it inherits the state pipeline's.
+WHAT CHANGED, AND WHEN
+Revision history
+Oct 18, 2026
+CHANGE
+County TPL: each House year Huber-checked against the county's own statewide lean
+
+A county's House figure carries its local candidates, and with no single incumbent to attribute (the county aggregate spans every district touching it) there is no incumbency strip to take them out. The gap entered at the full House weight: Cuellar won Zapata County, TX by D+34 in 2024 as Trump carried it by R+22, so Zapata's lean read D+6.4, and the border counties' projected Senate results came out 10–30 pts bluer than their recent record. A near-unopposed seat did the same in the other direction (Oktibbeha, MS: a 2024 House row of R+93 put the county at R+11.8 against a presidential R+0.3). County TPL now aggregates twice: once over the President, Senate and Governor rows alone to anchor the county's lean, then over every row with each House year's base weight × min(1, HUBER_C / |House NM − anchor|), the state model's House-year check with the county's own statewide lean as the anchor. No statewide row is Huber-weighted (a county far from its state is not an outlier). The projected county results on race pages read County TPL, so they move with it.
+
+EFFECT Holdout (lean from the years before the target, one shift per state, vote-weighted RMSE across counties): 2024 President 5.84 → 5.18, 2024 Senate 4.69 → 4.16, 2022 Governor 4.11 → 3.80, 2022 Senate 4.02 → 3.77, county House 2024 6.97 → 6.90 and 2022 6.96 → 7.02. Dropping the House rows altogether scored best on the statewide targets (4.81 / 3.85 / 3.70 / 3.73) but worst on House (7.18 / 7.24), so they are discounted rather than dropped. Median county moves 0.14 pts; 38 of 3,142 move more than 5 (Zapata TX D+6.4 → R+6.7, Starr TX D+13.6 → D+2.0, Oktibbeha MS R+11.8 → D+1.0, Bristol MA D+19.4 → D+7.3). Texas Senate projection: Zapata D+18.4 → D+4.9, Hidalgo D+23.1 → D+21.3.
+
+Sep 28, 2026
+CHANGE
+County TPL: unopposed House years are imputed instead of entering at ±100
+
+County House rows were hard-coded eligible, so an unopposed race (stored as a 100/0 placeholder, or counted with one party at zero votes) entered County TPL as a ±100 margin — while State and District TPL impute the same seat from its presidential lean. A county House year is now ineligible when one party drew no votes in the county (same-party when the county carries a top-two same-party note), and is imputed from the county's nearest presidential result like any other ineligible row. A county split between a contested and an unopposed district stays eligible: the county aggregate has no per-district breakdown. The Raw ≥50 rule is not involved — it was removed in the rebuild; lopsided presidential margins enter County TPL as is.
+
+EFFECT 689 of 3,142 counties move (mean |Δ| 3.5 pts, median 2.5; 308 by more than 3). Largest: Noxubee MS D+28.6 → D+48.9; Madison AL R+25.1 → R+9.2; Jefferson Davis MS D+0.1 → D+15.7; Louisiana parishes under unopposed 2022/2024 House races move 12–15 pts toward their presidential lean.
+
+Sep 15, 2026
+DATA FIX
+All margins on a full-total-vote basis
+
+District presidential margins and State Legislature aggregates had been two-party shares; both now divide by the full total vote like every other margin in the model. Largest in 2016 (1–2 pts).
+
+Sep 8, 2026
+CHANGE
+Fundraising strip; type-weighted fit rows; Louisiana jungle rule
+
+FF strip = −clamp(0.02 × gap%, ±2), calibrated on the clean presidential target. Fit rows are weighted RACE_TYPE_WEIGHTS / count(state, year, type) so House rows cannot outvote the presidential row. LA jungle generals decided without a runoff (top-two < 90%) are "fragmented" and imputed. District TPL moved onto the state pipeline.
+
+EFFECT 2024 presidential holdout MAE 2.90 → 2.49 — the largest single gain of the rebuild.
+
+Sep 7, 2026
+CHANGE
+TPL rebuild: additive strips, fitted environment and elasticity, eligibility gate
+
+margin = lean + β*·E(year) + incumbency + fundraising + residual, every strip additive and applied once. E(y) and β* from a Huber alternating least-squares fit over 2016–2025 (odd years included). Ineligible races are imputed from the nearest presidential result at half weight. Calibration adopted year decay 0.75 and type weights P .60 / H .20 / S .10 / L .07 / G .03. Deleted: NES table, swing-ratio S, multiplicative wave factor, presidential-approval IF, WQ/LQ quality tiers, the 50-pt competitiveness blend.

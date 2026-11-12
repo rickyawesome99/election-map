@@ -7,6 +7,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { getRaceColor } from "@/lib/colorScale";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { useStaticJson } from "@/lib/useStaticJson";
 import { countyDisplayName } from "@/lib/countyName";
 import { isRealName } from "@/lib/personName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
@@ -73,6 +74,7 @@ export const bubbleColor = (net: number, demParty: "D" | "R" | "I", repParty: "D
 
 const countiesUrl = (stateAbbr: string) => `/state-counties/${stateAbbr}.json`;
 
+const DEFAULT_PROJ: [number, number, number] = [-96, 38, 800];
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
   AR: [-92.4, 34.9, 5500],  CA: [-119.5, 37.2, 2200],  CO: [-105.5, 39.0, 4200],
@@ -148,7 +150,7 @@ export default function PastElectionCountyMap({
 
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelectedState] = useState<Hovered | null>(null);
-  const setSelected = (c: Hovered | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); };
+  const setSelected = useCallback((c: Hovered | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); }, [onSelectedChange]);
   // A new focus request from outside selects that county (set during render, not in an effect).
   // Starts unset, so a map remounted for another layer picks up the county already selected.
   const [focusN, setFocusN] = useState<number | undefined>(undefined);
@@ -167,18 +169,20 @@ export default function PastElectionCountyMap({
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-  const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
-  const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
+  // Null until measured: the map isn't drawn at a guessed size first, since the remount at the
+  // real size threw that whole render away.
+  const [mapViewport, setMapViewport] = useState<{ width: number; height: number } | null>(null);
+  // Fetched once per tab through the shared cache and handed to react-simple-maps parsed: given
+  // the URL, it refetched the file on every mount (the remount at the measured size, Reset).
+  const { data: topo } = useStaticJson<object>(countiesUrl(stateAbbr));
 
   const measure = useCallback(() => {
     const el = containerRef.current;
     if (!el) return;
     const { width, height } = el.getBoundingClientRect();
     const next = { width: Math.max(1, Math.round(width)), height: Math.max(1, Math.round(height)) };
-    setMapViewport(next);
-    const cfg = fitStateProjection(stateAbbr, next.width, next.height);
-    if (cfg) setAutoProj(cfg);
-  }, [stateAbbr]);
+    setMapViewport((cur) => (cur && cur.width === next.width && cur.height === next.height ? cur : next));
+  }, []);
   useEffect(() => {
     measure();
     const ro = new ResizeObserver(measure);
@@ -186,9 +190,73 @@ export default function PastElectionCountyMap({
     return () => ro.disconnect();
   }, [measure]);
 
-  const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
+  const autoProj = useMemo<ProjectionConfig | null>(() => (mapViewport ? fitStateProjection(stateAbbr, mapViewport.width, mapViewport.height) : null), [stateAbbr, mapViewport]);
+  const proj = STATE_PROJ[stateAbbr] ?? DEFAULT_PROJ;
   const mapStroke = bubbles ? BUBBLE_LINE : "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
+
+  // The map, memoized apart from hover: every mouseenter otherwise rebuilt all of the state's
+  // counties with fresh style objects.
+  const mapSvg = useMemo(() => {
+    const vp = mapViewport;
+    if (!vp || !topo) return null;
+    return (
+      <ComposableMap
+        width={vp.width}
+        height={vp.height}
+        projection="geoMercator"
+        projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
+        style={{ width: "100%", height: "100%" }}
+      >
+        {/* Keyed on the viewport too: when the map resizes (a panel opening under a `fill` map,
+            a window resize) the zoom layer keeps its old transform and the state lands off-screen,
+            so it starts fresh at the new size instead. Only a move the reader made (a d3 event
+            with a sourceEvent) offers Reset; the remount's own move does not. */}
+        <ZoomableGroup
+          key={`${mapKey}:${vp.width}x${vp.height}`}
+          filterZoomEvent={filterMapZoomEvent}
+          onMoveEnd={(_: unknown, e?: { sourceEvent?: unknown }) => { if (e?.sourceEvent) setViewChanged(true); }}
+        >
+          <Geographies geography={topo}>
+            {({ geographies, path }: { geographies: CountyGeometry[]; path: { centroid: (g: CountyGeometry) => [number, number] } }) => <>
+              {geographies.map((geo) => {
+                const fips = String(geo.id);
+                const result = byFips.get(fips) ?? null;
+                const county: Hovered = { fips, name: geo.properties?.name ?? "", result };
+                const isSelected = selected?.fips === fips;
+                const fill = fillFor(result);
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => setHovered(county)}
+                    onMouseLeave={() => setHovered(null)}
+                    onClick={() => setSelected(isSelected ? null : county)}
+                    style={{
+                      default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 1.5 : 0.5, outline: "none" },
+                      hover: { fill, stroke: hoverStroke, strokeWidth: 1, outline: "none", cursor: "pointer" },
+                      pressed: { fill, stroke: hoverStroke, strokeWidth: 1.5, outline: "none" },
+                    }}
+                  />
+                );
+              })}
+              {/* Circles over the land, largest first so small ones stay on top; they let the
+                  pointer through to the county under them. */}
+              {bubbles && geographies
+                .map((geo) => ({ geo, net: byFips.get(String(geo.id))?.remaining?.net ?? 0 }))
+                .filter((b) => b.net !== 0)
+                .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
+                .map(({ geo, net }) => {
+                  const [cx, cy] = path.centroid(geo);
+                  if (!Number.isFinite(cx) || !Number.isFinite(cy)) return null;
+                  return <circle key={`b-${geo.rsmKey}`} cx={cx} cy={cy} r={bubbleRadius(net, maxNet, bubbleMaxR(vp.width, vp.height))} fill={bubbleColor(net, demParty, repParty)} fillOpacity={0.72} stroke="var(--app-bg)" strokeWidth={0.75} pointerEvents="none" />;
+                })}
+            </>}
+          </Geographies>
+        </ZoomableGroup>
+      </ComposableMap>
+    );
+  }, [mapViewport, topo, autoProj, proj, mapKey, byFips, selected, fillFor, setSelected, mapStroke, bubbles, maxNet, demParty, repParty]);
 
   // One description of a county, drawn as the hover popup and as the click panel.
   const card = (c: Hovered): CountyTooltipProps => {
@@ -211,60 +279,7 @@ export default function PastElectionCountyMap({
       <div ref={containerRef} className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onTooltipMove}>
         {hovered && <CountyTooltip {...card(hovered)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />}
 
-        <ComposableMap
-          width={mapViewport.width}
-          height={mapViewport.height}
-          projection="geoMercator"
-          projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
-          style={{ width: "100%", height: "100%" }}
-        >
-          {/* Keyed on the viewport too: when the map resizes (a panel opening under a `fill` map,
-              a window resize) the zoom layer keeps its old transform and the state lands off-screen,
-              so it starts fresh at the new size instead. Only a move the reader made (a d3 event
-              with a sourceEvent) offers Reset; the remount's own move does not. */}
-          <ZoomableGroup
-            key={`${mapKey}:${mapViewport.width}x${mapViewport.height}`}
-            filterZoomEvent={filterMapZoomEvent}
-            onMoveEnd={(_: unknown, e?: { sourceEvent?: unknown }) => { if (e?.sourceEvent) setViewChanged(true); }}
-          >
-            <Geographies geography={countiesUrl(stateAbbr)}>
-              {({ geographies, path }: { geographies: CountyGeometry[]; path: { centroid: (g: CountyGeometry) => [number, number] } }) => <>
-                {geographies.map((geo) => {
-                  const fips = String(geo.id);
-                  const result = byFips.get(fips) ?? null;
-                  const county: Hovered = { fips, name: geo.properties?.name ?? "", result };
-                  const isSelected = selected?.fips === fips;
-                  const fill = fillFor(result);
-                  return (
-                    <Geography
-                      key={geo.rsmKey}
-                      geography={geo}
-                      onMouseEnter={() => setHovered(county)}
-                      onMouseLeave={() => setHovered(null)}
-                      onClick={() => setSelected(isSelected ? null : county)}
-                      style={{
-                        default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 1.5 : 0.5, outline: "none" },
-                        hover: { fill, stroke: hoverStroke, strokeWidth: 1, outline: "none", cursor: "pointer" },
-                        pressed: { fill, stroke: hoverStroke, strokeWidth: 1.5, outline: "none" },
-                      }}
-                    />
-                  );
-                })}
-                {/* Circles over the land, largest first so small ones stay on top; they let the
-                    pointer through to the county under them. */}
-                {bubbles && geographies
-                  .map((geo) => ({ geo, net: byFips.get(String(geo.id))?.remaining?.net ?? 0 }))
-                  .filter((b) => b.net !== 0)
-                  .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
-                  .map(({ geo, net }) => {
-                    const [cx, cy] = path.centroid(geo);
-                    if (!Number.isFinite(cx) || !Number.isFinite(cy)) return null;
-                    return <circle key={`b-${geo.rsmKey}`} cx={cx} cy={cy} r={bubbleRadius(net, maxNet, bubbleMaxR(mapViewport.width, mapViewport.height))} fill={bubbleColor(net, demParty, repParty)} fillOpacity={0.72} stroke="var(--app-bg)" strokeWidth={0.75} pointerEvents="none" />;
-                  })}
-              </>}
-            </Geographies>
-          </ZoomableGroup>
-        </ComposableMap>
+        {mapSvg}
 
         {viewChanged && (
           <button

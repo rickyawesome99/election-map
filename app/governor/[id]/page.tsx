@@ -11,6 +11,8 @@ import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLe
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
+import ElectionResultSection, { ElectionResultFootnote, electionResultMeta } from "@/components/ElectionResultSection";
+import { raceResult2026 } from "@/lib/raceResults2026";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, candidateQuality } from "@/lib/tplCompute";
@@ -195,6 +197,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const projectedMargin = computeProjectedMargin(race);
   const forecast = forecastRace(race);
   const countyProjection = projectRaceResults("governor", race.id);
+  // The counted result, which the race page shows in place of the projection (archived in data/forecast-final-2026/).
+  const result = raceResult2026("governor", race.id);
   const raceHistory = getRaceForecastHistory("governor", race);
   const quality = candidateQuality(race);
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
@@ -243,6 +247,31 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
 
 
           <section>
+            {result ? (<>
+              <LedgerSectionHead label="Election Result" meta={electionResultMeta(result)} />
+              <ElectionResultSection
+                r={result}
+                state={race.state}
+                dem={{ photo: demPhoto, incumbent: race.candidates?.dem.incumbent }}
+                rep={{ photo: repPhoto, incumbent: race.candidates?.rep.incumbent }}
+              />
+              {result.counties.length > 0 ? (
+                <div className="mt-4">
+                  <PastElectionCountyMap
+                    panelSize="wide"
+                    stateAbbr={id.toUpperCase()}
+                    stateName={race.name}
+                    counties={result.counties}
+                    demName={result.demName}
+                    repName={result.repName}
+                    demParty={result.demParty}
+                    repParty={result.repParty}
+                    height={240}
+                    caption={<div key="caption" className="px-1"><ElectionResultFootnote r={result} /></div>}
+                  />
+                </div>
+              ) : <ElectionResultFootnote r={result} />}
+            </>) : (<>
             <LedgerSectionHead label={countyProjection ? "Projected Result" : "Candidates"} meta={countyProjection ? `${countyProjection.votes.toLocaleString()} estimated votes` : undefined} />
             {race.candidates ? (() => {
               const rows = (
@@ -274,6 +303,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                 />
               </div>
             )}
+            </>)}
           </section>
 
           <section>

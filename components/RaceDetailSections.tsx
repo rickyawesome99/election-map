@@ -111,6 +111,10 @@ type CandidateCardEntry = {
   placeholder?: boolean;
   // Projected votes (lib/countyProjection.ts); shown small under the share when present.
   votes?: number;
+  /** The race's called winner (the Election Result section): a check beside the name. */
+  winner?: boolean;
+  /** Shown in place of the party name, for a candidate of neither major party ("Libertarian"). */
+  partyName?: string;
 };
 
 type DetailDensity = "default" | "compact";
@@ -323,7 +327,7 @@ export function CandidatesSection({
         {candidates.map((candidate) => {
           const accentColor = partyAccent(candidate.party);
           const displayName = candidate.placeholder ? "TBD" : candidate.name;
-          const displayParty = partyLabel(candidate.party);
+          const displayParty = candidate.partyName ?? partyLabel(candidate.party);
           return (
             <div key={`${candidate.name}-${candidate.party}`} className="flex h-full flex-col items-center text-center w-full">
               <div
@@ -668,7 +672,7 @@ export function CandidatesAndPollsCard({
         {candidates.map((candidate) => {
           const accentColor = partyAccent(candidate.party);
           const displayName = candidate.placeholder ? "TBD" : candidate.name;
-          const displayParty = partyLabel(candidate.party);
+          const displayParty = candidate.partyName ?? partyLabel(candidate.party);
           return (
             <div key={`${candidate.name}-${candidate.party}`} className="flex flex-col items-center text-center">
               <div
@@ -728,8 +732,9 @@ export function CandidatesLedgerSection({
   candidates,
   compact = false,
 }: {
-  candidates: [CandidateCardEntry, CandidateCardEntry];
-  /** Tighter row spacing, for the race pages' Projected Result section that also carries the map. */
+  /** The two nominees; the Election Result section also passes any other candidate with a row of their own. */
+  candidates: CandidateCardEntry[];
+  /** Tighter row spacing, for the race pages' result section that also carries the map. */
   compact?: boolean;
 }) {
   return (
@@ -737,7 +742,7 @@ export function CandidatesLedgerSection({
       {candidates.map((candidate, i) => {
         const accentColor = partyAccent(candidate.party);
         const displayName = candidate.placeholder ? "TBD" : candidate.name;
-        const displayParty = partyLabel(candidate.party);
+        const displayParty = candidate.partyName ?? partyLabel(candidate.party);
         const isLast = i === candidates.length - 1;
         return (
           <div
@@ -779,6 +784,13 @@ export function CandidatesLedgerSection({
                   )}
                   {candidate.incumbent && !candidate.placeholder && (
                     <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
+                  )}
+                  {candidate.winner && (
+                    <svg viewBox="0 0 16 16" width="18" height="18" className="shrink-0" role="img" aria-label="Winner">
+                      <title>Winner</title>
+                      <circle cx="8" cy="8" r="8" fill={accentColor} />
+                      <path d="M4.5 8.3l2.3 2.3 4.7-5" fill="none" stroke="var(--app-bg)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   )}
                 </div>
                 <div className={`text-sm font-medium${compact ? "" : " mt-0.5"}`} style={{ color: accentColor }}>{displayParty}</div>
@@ -1384,23 +1396,16 @@ export function ForecastCalculationCard({
     ];
     return (
       <div className="flex flex-col">
-        {/* Hero: the answer */}
+        {/* Hero: the answer, with the favored side's win chance on the same line at right */}
         <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div className="min-w-0">
             <InfoTooltip label="Projected Margin">{marginTooltip}</InfoTooltip>
             <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(2.5rem, 7vw, 3.75rem)", lineHeight: 0.95, color: finalAccent }}>
               {formatProjectedMargin(projectedMargin)}
             </div>
-            <p className="mt-3 text-sm" style={{ maxWidth: "52ch", lineHeight: 1.5, color: "var(--app-text-muted)", textWrap: "pretty" }}>
-              {pollingAvg == null ? (
-                <>No polls on file, so this is the Model alone at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig>.</>
-              ) : (
-                <>Blends the Model at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig> with a polling average of <LedgerFig color={pollColor}>{fmtMargin(pollingAvg)}</LedgerFig> ({pollMeta}){polling?.shade ? <>, read {Math.abs(polling.shade).toFixed(1)} pts {polling.shade > 0 ? "R" : "D"} of face value for the historical poll miss</> : null}.</>
-              )}
-            </p>
           </div>
           {probabilityD != null && (
-            <div className="flex flex-col items-start sm:items-end">
+            <div className="ml-auto flex flex-col items-end text-right">
               <InfoTooltip label={winD ? "Dem win chance" : "Rep win chance"}>
                 How likely this candidate is to win, given how far off forecasts like this have been in past elections, including misses in the national mood that hit every race at once. Races with plenty of polling are a bit more certain.
               </InfoTooltip>
@@ -1409,6 +1414,28 @@ export function ForecastCalculationCard({
               </div>
             </div>
           )}
+        </div>
+        <p className="mt-3 text-sm" style={{ lineHeight: 1.5, color: "var(--app-text-muted)", textWrap: "pretty" }}>
+          {pollingAvg == null ? (
+            <>No polls on file, so this is the Model alone at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig>.</>
+          ) : (
+            <>Blends the Model at <LedgerFig color={projectedMarginColor(modelMargin)}>{formatProjectedMargin(modelMargin)}</LedgerFig> with a polling average of <LedgerFig color={pollColor}>{fmtMargin(pollingAvg)}</LedgerFig> ({pollMeta}){polling?.shade ? <>, read {Math.abs(polling.shade).toFixed(1)} pts {polling.shade > 0 ? "R" : "D"} of face value for the historical poll miss</> : null}.</>
+          )}
+        </p>
+
+        {/* The structural terms that sum to the Model: no rules, each cell tints on hover (the race
+            pages' row tint). Pulled out by the cells' padding so their text lines up with the section. */}
+        <div className="mt-5 -mx-2 grid grid-cols-2 sm:grid-cols-3 md:grid-flow-col md:auto-cols-fr md:grid-cols-none">
+          {termCells.map((c) => (
+            <div key={c.key} className="vh-row vh-row-boxed flex flex-col gap-1 px-2 py-2.5 hover:z-10 focus-within:z-10">
+              {c.label}
+              <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: c.color }}>{c.value}</span>
+            </div>
+          ))}
+          <div className="vh-row vh-row-boxed flex flex-col gap-1 px-2 py-2.5 hover:z-10 focus-within:z-10">
+            <InfoTooltip label="= Model" labelStyle={{ color: "var(--app-text-primary)" }}>{modelTooltip}</InfoTooltip>
+            <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
+          </div>
         </div>
 
         {/* Blend lever: Model and Polling Avg on one axis, the projection at their weighted balance point */}
@@ -1449,20 +1476,6 @@ export function ForecastCalculationCard({
             </span>
           )}
           <span>R+{extent}</span>
-        </div>
-
-        {/* The structural terms that sum to the Model */}
-        <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-flow-col md:auto-cols-fr md:grid-cols-none" style={{ borderTop: "2px solid var(--app-text-primary)" }}>
-          {termCells.map((c) => (
-            <div key={c.key} className="flex flex-col gap-1 py-2.5 pr-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
-              {c.label}
-              <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: c.color }}>{c.value}</span>
-            </div>
-          ))}
-          <div className="flex flex-col gap-1 py-2.5 pr-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
-            <InfoTooltip label="= Model" labelStyle={{ color: "var(--app-text-primary)" }}>{modelTooltip}</InfoTooltip>
-            <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
-          </div>
         </div>
       </div>
     );

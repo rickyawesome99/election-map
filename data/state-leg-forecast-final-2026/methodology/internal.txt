@@ -1,0 +1,840 @@
+http://localhost:3000/analysis/internal-methodology/state-leg
+Saved 2026-11-11 from the dev server; the final 2026 state-legislature projection (lock 2026-11-03T13:30:00.000Z).
+
+LEGISLATIVE ATLAS
+One page per chamber, one record per district
+
+The chamber pages (/states/[state]/legislature/house and /senate, Nebraska's single chamber under senate) show every state legislative district: its members, every general election since 2016 with named candidates, its presidential vote on each map it has existed on, its demographics and its redistricting history. A district is addressed by hash (#hd-31, #sd-5), so a link from search or the district finder opens the page on that seat. Nothing here is a model: this tab documents the three datasets the pages are built from and the measured error of the one that is estimated.
+
+Scope
+General elections only. Special elections are not collected, and a seat whose only race in a year was a special concurrent with the general shows its votes without names.
+District keys
+The boundary data's own codes: numbers almost everywhere, letters for the Alaska Senate, county code plus number in New Hampshire (BE1), names in Vermont and Massachusetts. A past year's row is the race held under that key on that year's map, which can be a different place: Ohio renumbered its whole House in 2022, so HD-31's 2020 row is a Cincinnati seat and its 2022 row a Summit County one. The lines column and the redistricting section say so.
+Downstream
+The corrected chamber margin is live in the State TPL; the district projection and the State Legislatures board are documented below.
+DATASET A
+President 2016, 2020 and 2024 on every map era
+
+For every chamber, the presidential vote inside each district on the current map AND on each superseded map in public/state-leg-districts-historical/. 50 states, 220 chamber-eras. The 2024 figure on the current map is the precinct-exact one from the legislature page; everything else is an overlay.
+
+METHOD
+
+Dave's Redistricting publishes each state's 2016, 2020 and (for 38 states) 2024 presidential returns disaggregated to census blocks and re-aggregated to 2020 VTDs, with geometry. Each VTD is intersected with the era's district polygons in an equal-area projection and its votes split by the share of its area in each district; slivers under 0.2% are dropped and the rest renormalised so every VTD is allocated in full. Per-district rounding is largest-remainder per party, so a chamber's sum reproduces the state total exactly. The 2020 VTDs are used for the 2011-cycle maps too, since no 2010-VTD geometry is published.
+
+MEASURED ERROR
+the overlay's 2024 margin vs the precinct-exact 2024 file, per district, current map only
+
+Median mean absolute error across the 75 chambers with an independent 2024 answer: 0.04 points of margin. The error is almost entirely where a district line cuts a large rural VTD unevenly in population, so the worst chambers are rural Houses. A state whose 2024 file was itself produced by the same overlay reads 0 by construction and is not evidence. Full table on the audit page, section 4.
+
+STATE	CHAMBER	DISTRICTS	MEAN ERROR	WORST DISTRICT
+MT	House	100	2.47	16.9
+MO	House	163	1.45	13.9
+AZ	Senate	30	1.27	4.9
+WY	House	62	1.01	8.1
+TN	House	99	0.79	4.7
+The five chambers the overlay fits worst.
+KNOWN GAPS
+No 2024 in DRA
+AK AR CT ID ME MI ND NJ OK OR PA SD have 2024 only on the current map (the precinct-exact file); cross-era comparisons there use 2020.
+New Hampshire floterials
+Have no polygon in any boundary file. On the current map their presidential figures are the sum of the base districts they overlay (the roster's components), which gives them presidential rows, an imputation in the chamber margin and a projection; on the superseded 2020 map they are still absent.
+DATASET B
+Candidates, incumbency and winners
+
+Names, party, votes and, where the source carries them, incumbency and the winner, attached to the per-district results. Live coverage: 28,772 of 28,808 district-years named (99.9%), 28,769 with a marked winner, 21,609 with a marked incumbent, 10,168 unopposed, 721 with no published count.
+
+SOURCES, IN ORDER OF PRECEDENCE
+2016–2022
+Klarner's State Legislative Election Returns candidate file: one row per candidate per contest, with exper = inc for the incumbent and outcome = w for the winner. Regular generals only (etype g; Louisiana's jungle rounds, with the runoff winning where one was held). Names: the file's surname field runs compound surnames together and sometimes glues on a middle name or another candidate's surname ("Siffordthayn" for Bill Sifford, who ran against Steven Thayn), so where it marks a surname as compound the name as filed and the file's own part types decide — a known hyphenated or compound surname is shown with its hyphen or space; a merely possible one only where another source spells the same person with one; an extra word glued on is dropped for the filed surname.
+2024
+MEDSL precinct returns (names only) for 75 chamber-years; the Wikipedia chamber-election articles for Arizona, Iowa, Oregon, Nebraska and New Mexico; the New York State Board of Elections canvass, kept per fusion line so the list matches the party-line vote buckets.
+Odd years
+Klarner through 2021; the Wikipedia articles for Louisiana, Mississippi, New Jersey and Virginia 2023 and New Jersey and Virginia 2025; the Mississippi recapitulation sheet and the Louisiana Secretary of State workbooks where the articles fell short.
+Hand-transcribed years
+New Hampshire 2022 House (the state's election-database export, which also corrected the earlier county-PDF parse) and Vermont 2018 Senate (the election archive's town export).
+Derived flags
+Where a source marked no winners, incumbents or unopposed seats in a chamber-year, they are derived: winners by name-match to the sitting member elected that year (which resolves Idaho, Washington and West Virginia post races), then top-N by votes; incumbents by name-match to the chamber's winners in the previous four years; unopposed where no more real candidates than seats. A derived flag never sits beside a sourced one in the same chamber-year.
+INVARIANT
+
+A candidate list is written only when its votes sum to the district's recorded total (exactly for the official sources, within 0.6% for Wikipedia's transcriptions). No vote number was changed by any of these passes, with one exception recorded in the change log: New Hampshire's 2022 House, where the official export showed the earlier parse had double-counted 17 districts.
+
+DATASET C
+Redistricting history and the crosswalk
+
+For each pair of consecutive maps, what every new district is made of: 8,530 district-transitions, 7,058 of them with changed lines.
+
+METHOD
+
+The two maps' polygons are intersected and each piece gets its 2020 Census population by area-apportioning the same VTD file's counts, so a new district's composition is measured in people rather than land. The record carries the previous-map districts it draws from with their population shares, its county composition on both maps, and its 2020 presidential margin on both sets of lines from dataset A. The description is generated from those numbers, geography first and the lean shift as a number, in the style of the House redistricting descriptions.
+
+The contributor shares are also the crosswalk the 2026 projection will use: a seat's pre-redraw results are relocated onto today's lines by population overlap and corrected by the presidential delta between the two polygons.
+
+DATASET D
+The 2026 field
+
+Every district on the 2026 ballot with its general-election candidates, from Ballotpedia's chamber election pages (fetched 2026-10-10): 94 chambers, 5,668 districts, 3,830 with both major parties, 1,066 with no incumbent running. Ballotpedia's own caveat applies: the lists may be incomplete until every state certifies its ballot. Special elections on the same November ballot, which the chamber pages leave out, are added from data-entry/state-leg-specials-2026.csv (Ballotpedia's special-election list and each district page, checked against Wikipedia): the seat is up in 2026 — the whole district, or in a multi-member district the one member's seat, run as its own race — and a special for the weeks left of a term whose regular race is on the same ballot is skipped. Nebraska's candidates carry their party from data-entry/nebraska_2026_candidate_parties.csv.
+
+METHOD
+
+Each page's “general election 2026” candidate table is read: one row per district with Democratic, Republican and Other columns, “(i)” after an incumbent, “(N seats)” on a multi-member district and a party or write-in tag on the Other entries. District rows are matched to the boundary data's keys the same way the results are; unmatched rows are reported, never guessed. A seat counts as contested when both major parties have a non-write-in candidate, and as open when nobody in the field is marked an incumbent.
+
+WHY A SEAT IS OPEN
+Wikipedia chamber articles, fetched 2026-10-10
+
+The English Wikipedia article on each chamber's 2026 election keeps a list of members not seeking re-election with the reason (scripts/fetch-state-leg-outgoing-2026.py): 968 outgoing members across 81 chambers (362 retiring, 246 running for other office, 203 term-limited, 113 lost primary, 29 not running, 15 resigned). The articles write these three ways (district first, ordinal first, or name first with “representing district N”); each line is parsed to a district key, a name, a party (from the subsection or inline) and the reason as written. Chambers whose article carries the status only in a results table (North Dakota, West Virginia Senate) or not at all are absent. Shown on the district header (“Not running”) and on the member's candidate page.
+
+DATASET E
+Fundraising
+
+Each general-election candidate's total contributions for the cycle, per the state's own filings: 50 states, 540 chamber-cycles (2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026), 33,255 district-cycles, 57,382 of 65,802 listed candidates matched to a filing. Shown on the district header (the current cycle, with its data-through date) and as a Raised column in the electoral history, and the input to the projection's money term (below).
+
+SOURCES
+Transparency USA
+Republishes 25 states' campaign-finance filings (AL AZ CA CO FL GA IA ID IL IN MI MN NC NH NM NV NY OH PA SC TX VA WA WI WY) with one page per race and cycle, 2018 through 2026 (Virginia 2017 through 2025). scripts/fetch-state-leg-finance-tu.py reads every legislative race page of a cycle: candidate, party, incumbency, total contributions, total expenditures and ballot status, general and primary. The current cycle's figures are to-date and grow with each report.
+FollowTheMoney
+The other 25 states and 2016 everywhere, through the API used for the governor rows (scripts/fetch-state-leg-finance-ftm.py; one call per state, cycle and chamber). Its data stops at the 2024 election year, and the free tier's quota is small, so this half fills as keys allow.
+State portals
+For the states Transparency USA does not cover, each state's own disclosure system, one script per state (scripts/fetch-state-leg-finance-{st}.py): race or committee totals where the portal publishes them (Oklahoma, Nebraska, Kentucky, Tennessee, Massachusetts, Vermont, Maine, North Dakota, New Jersey's post-election summary), the sum of itemized contributions elsewhere. Portals list every filer, so scripts/assign-state-leg-finance.ts keeps a record only when its name matches a general-election candidate of that cycle, within the district when the portal names one. Private contributions only: Connecticut's and Maine's public grants are left out. New Jersey's joint slate committees are split evenly among their members. Maryland's 2022 cycle starts in November 2020, so it undercounts; Hawaii and Missouri use report totals. Oregon's ORESTAR blocks a crawler after a few hundred searches, so its data is read through the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app), a daily copy of every ORESTAR transaction export since 2006: a committee's contributions over the two calendar years to the election, the committee placed on a district when its office names one that cycle's candidate and otherwise matched by full name statewide.
+2016 and older cycles
+Transparency USA starts with 2018, so the 2016 cycle (Virginia's 2017) of its states comes from the same kind of state records, one script each, and so do Kansas's 2016 House (the Ethics Commission's published summary), North Dakota's 2016 (its statements then printed only contributions over $200, so that is the 2016 figure for every candidate), West Virginia's 2016 (paper filers stay blank) and South Dakota (filing PDFs; state law bars commercial use). Maine 2016, Maryland 2018 and Ohio 2016 come from The Accountability Project's public copies of the old state exports (Ohio's: contributions, fundraiser and other income and in-kind, Transparency USA's definition, which it reproduces within 1% for 174 of 202 candidates in 2018; its office and district columns are the candidate's current ones, so Ohio matches by name). Where candidates filed on paper the scanned reports were read by eye: West Virginia 2016 (the election-year-to-date box) and New Hampshire 2016 (the last report's campaign-to-date receipts less any surplus carried in; New Hampshire's e-filers come from its transaction export). Idaho's 2018–2022 come from the state instead of Transparency USA (whose files held the 2026 race pages, a crawl error, and which now refuses requests): 2018 from the Secretary of State's archived contribution file, which reproduces the reports' calendar-year-to-date totals; 2020 and 2022 from the Sunshine portal, every donation including unitemized and in-kind, less returns, without loans or credit-card line items (with loans it reproduces the year-end reports' totals for 61 of 65 candidates checked), plus 2019 from each committee's archived annual report. The portal records a candidate's latest office and district, not the race's, so a record is placed in a district only where the race's own map gives it one, and otherwise matched by full name. Arkansas's 2018–2022 legacy filings are listed by registration year, usually the odd year before the election, so both years are read. Mississippi (2019 and 2023, four-year terms) sums the term's four calendar years from the Secretary of State's portal: e-filers' typed reports, and for paper filers the calendar-year-to-date box, read by OCR or by eye and kept when the form's own arithmetic holds, or, where too many boxes are blank to check it, when nothing on the form contradicts the year-to-date figure (a part larger than the total, a balance that does not close); a candidate with any year unread is blank. Kansas 2016 Senate and 2018–2026 come from the Secretary of State's campaign finance viewer: each receipts-and-expenditures report's contributions plus in-kind, summed over the reports whose periods fall in the cycle's two years. Paper reports are read by OCR or by eye and count when the summary's own arithmetic holds. The filings' printed periods are often wrong (stale forms, an e-filing system that printed post-election reports as the whole year), so periods are checked against the cash on hand each report carries forward from the one before: a report is placed where its cash chain puts it, and a candidate with a report that cannot be placed, a hole between reports the cash does not bridge, or two same-date versions of one report more than 10% and $250 apart is blank.
+Not used
+Stanford DIME's public recipients file lists state legislative candidates but withholds their receipt totals (the NIMSP-sourced figures), and its 2024 coverage is California and Ohio only. OpenSecrets' state profiles (the NIMSP data, from October 2026) cover every state but sit behind a Cloudflare check that needs a headed browser, under a non-commercial licence; declined.
+JOIN
+
+A filing is matched to the atlas's candidate for that district and year (the 2026 field, or the result's names) by name: the full name, then first and last name with nicknames canonicalised (“Mike” is “Michael”), then a first initial and surname within the same party, then the surname alone when it is unique on both sides. A state-portal record arrives already matched (scripts/assign-state-leg-finance.ts, which also reads committee names such as “Parrish for NC House”) and carries the candidate it was matched to, so it joins on that. A filing that matches nobody is kept as unmatched and shown; a candidate with no filing is null, never zero. The two-party money gap is (R − D) / (R + D) over the matched Democratic and Republican candidates, undefined when either side is missing.
+
+THE MODEL
+The 2026 district projection
+
+Every seat on the 2026 ballot (6,163 seats, 94 chambers, 5 in play) is projected from the atlas's own data and simulated chamber by chamber on the State Legislatures board. The environment is the forecast's fitted E (today D+4.7, σ 2.9).
+
+LEAN
+row NM   = margin − INCUMBENCY_PTS × incumbent sign − β*(state) × E(year) − money(race)       seat rows: the district's general in each year it was contested
+           margin − β*(state) × E(year) + PRES_GAP_K × gap(chamber)                     presidential rows on today's lines (2016, 2020, 2024)
+gap      = Σ_years 2^i × mean_seats [seat-row NM − the seat's mean presidential NM] / Σ 2^i      years with PRES_GAP_MIN_SEATS seat rows on today's lines, i rising toward the latest
+           capped at the latest year's own gap (no larger, same sign, else 0): a habit is carried only as strong as it last was
+seat margin (multi-member, unequal slates) = (R̄ − D̄) / (R̄ + D̄) × (R + D) / total      R̄, D̄ the average nominee's votes; equal slates: (R − D) / total
+relocate = Σ share_i × margin_i / coverage  +  [pres(today) − Σ share_i × pres_i / coverage]   a race on a superseded map, through the crosswalk
+lean     = Σ_years YEAR_WEIGHT × coverage × [ Σ_types TYPE_WEIGHT × mean NM ] / Σ YEAR_WEIGHT × coverage     two-pass Huber on seat rows
+           in the latest year with a seat row, that row's TYPE_WEIGHT × RECENT_SEAT_BOOST (L 0.2 → 0.6: half of that year's lean)
+share_i is the population share of today's district that was in old district i (dataset C); coverage is the share covered by contested old districts, and a row below MIN_COVERAGE is dropped. The presidential delta is taken in the presidential year nearest the race. money(race) is the race's money term at its full-cycle receipts (below), averaged over a relocated row's old districts like its margin; taking it out keeps one cycle's lopsided fundraising from passing into the district's lean. The gap is the chamber's down-ballot habit: where voters split their tickets the same way year after year (Vermont's Republicans run about 16 points ahead of their presidential nominee, West Virginia's Democrats about 10, down from 34 in 2016, which is why the gap is capped at its latest value), presidential rows alone would misplace every seat, and most of all the ones with no contested race of their own to correct them. In a multi-member district where one party ran fewer nominees than the other, summed votes hand the fuller slate a margin no seat is decided on (two Democrats and one Republican for two seats is about double the Democratic votes); the average nominee against the average nominee is the measure the seat is decided on, and the backtest scores against it.
+FORWARD
+margin = lean + β*(state) × E(2026) + INCUMBENCY_PTS × incumbent sign + money(2026)      incumbent sign from the 2026 field's marked incumbent
+σ²     = SIGMA² + STATE_SHOCK² + (β* × σ_E)²        P(D) = Φ(−margin / σ)
+chamber: 5,000 draws of a shared national shock N(0, σ_E) × β*, a shared chamber shock N(0, STATE_SHOCK), and N(0, SIGMA) per seat; seats not up hold their member; a field with one major party is decided unless a credible independent is on it (below)
+headline seats = each seat's projected winner, summed (the chamber map's count); the 80% range and the control odds come from the draws
+decided seats: in a multi-member district a party keeps max(0, seats − the other party's nominees); a post (Idaho's A/B, Washington's 1/2) with one party's nominee is that party's; only the remaining seats are drawn
+Multi-member districts draw each seat left after the decided ones on the district's margin. A nominee on both major lines (Oregon and Vermont cross-nominate, New York fuses) is one person, in the party they sit for — or, for a newcomer, the party holding the seat — and a past race with one person on both lines is no D-vs-R contest and contributes no seat row. The chamber shock is what makes a chamber's seats move together beyond the national swing: a state-wide miss (a governor's race on the same ballot, a state issue, a redistricting the lean has not caught up with) lands on every seat at once, so chamber ranges are wider than independent seats would give. A seat with no listed field has no projection, and a chamber whose unprojected seats could decide control reports no control odds. Nebraska's ballot is nonpartisan: each candidate is placed in their party (registration, or a state party's endorsement where the two differ — data-entry/nebraska_2026_candidate_parties.csv), the caucus they would sit with, and its past races are read the same way; a candidate with neither stays an independent.
+TYPE_WEIGHTS
+P 0.6 / L 0.2
+Presidential rows against the seat's own races, renormalised over the types present in a year — the District TPL's President/House ratio. The sweep below finds the holdout flat between a 0.25 and a 0.40 seat share once the latest race is boosted, so the designed ratio is kept.
+DESIGNED, NOT CALIBRATED
+RECENT_SEAT_BOOST
+×3
+The seat row's type weight in the latest year that has one, so the seat's most recent race carries half of that year's lean. State Navigate's emphasis on the last legislative result, tested here: MAE after incumbency 5.85 → 5.74 (2022) and 5.39 → 5.18 (2024), better than any uniform reweighting, flat from ×2 to ×3, worse by ×5.
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts --sweep
+INCUMBENCY_PTS
+2.3
+Points a sitting state legislator is worth beyond the money they raise. The holdout fits 3.3 (2022) and 1.3 (2024) with the money term, the slate margin and the down-ballot gap in; set at their rounded mean.
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts
+SIGMA
+6
+Seat-level noise beyond the national and chamber shocks: the holdout residual spread after the chamber shock is taken out (6.3 in 2022, 5.8 in 2024; the total spread is 7.1 and 6.8, robust 5.9 and 5.0, so the tails are heavy and the full spread is kept).
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts
+STATE_SHOCK
+3.4
+Chamber-level shock shared by every seat of a chamber in a year: the spread of chamber-mean residuals less what independent seat noise alone would put there (method of moments over chambers with 10+ contested seats; 3.23 in 2022 and 3.53 in 2024).
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts
+PRES_GAP_K
+0.5
+The share of the chamber's seat-minus-presidential gap added to every presidential row. Best in both holdout years (sweep below); a full shift over-reaches, since part of a year's gap is that year's candidates and does not come back.
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts --pres-gap
+PRES_GAP_MIN_SEATS
+5
+A year enters the gap with at least this many seat rows on (nearly, 90% coverage) today's lines.
+DESIGNED, NOT CALIBRATED
+MIN_COVERAGE
+0.5
+A relocated row needs contested old districts covering this share of today's population.
+DESIGNED, NOT CALIBRATED
+SIMS
+5000
+Draws per chamber.
+FIXED PRIOR
+MONEY
+
+Fundraising enters the way it does in the federal forecast: as the part of a race's money gap that its situation does not already explain. An incumbent, or a party running in friendly territory, usually out-raises the other side, and the lean and incumbency terms already count that; only the money beyond the expected gap moves the margin. The expected gap is fitted on 17,562 contested races with both sides' money on file (2016 2234, 2017 102, 2018 2878, 2019 144, 2020 2791, 2021 127, 2022 2876, 2023 158, 2024 2909, 2025 102, 2026 3241): an incumbent's side raises 30.9 points of gap more, each point of presidential margin adds 0.97, R² 0.50. It uses no election result, so the backtest fits it on every year without leaking an outcome, and it is refitted from whatever money is on file each time the site is built: a state or cycle added to dataset E joins the fit and the term with no other step.
+
+gap%        = (R − D) / (R + D) × 100      the two sides' cycle contributions (dataset E)
+expected%   = a(year) + b × incumbent sign + c × presidential margin on that year's lines      least squares, every chamber pooled
+money(race) = clamp(MONEY_K × (scale × gap% − expected%), ±MONEY_CAP)      scale = PARTIAL_CYCLE_GAP_SCALE for 2026, 1 for a past race
+either side's money missing → 0: the typical gap for the race's situation (the lean and incumbency already carry it), not "no money"
+A year's own intercept absorbs a cycle's party-wide money tilt (and 2026's partial level). Multi-member districts sum each party's nominees. The strip on past seat rows uses the same term at full-cycle receipts. Districts the money data does not reach yet carry no money term, so as coverage fills, more seats get one.
+MONEY_K
+0.03
+Points of margin per point of money gap beyond the expected one: the sweep's best cell in both holdout years when set (2026-10-18); since the slate margin and down-ballot gap, 0.04 edges it by 0.002, within noise, so it is kept.
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts --money
+MONEY_CAP
+1.5
+The term's cap. The holdout gains shrink as the cap grows — a large residual gap over-predicts — so the money term is a nudge of up to 1.5 points.
+BACKTEST-CALIBRATED
+scripts/stateLegBacktest.ts --money
+PARTIAL_CYCLE_GAP_SCALE
+0.9
+2026 receipts are to-date (each state's data-through date). Borrowed from the federal forecast, where the final gap is 0.90–0.91 × the September gap; there are no mid-cycle snapshots of state filings to measure the legislative ratio.
+JUDGMENT CALL
+MONEY SWEEP
+generated 2026-11-03 · scripts/stateLegBacktest.ts --money --emit
+
+The same holdout with the money term at each K and cap (K 0 is no money term anywhere), scored after fitted incumbency on every contested seat and on the seats whose race has both sides' money on file. The term is applied to the held-out year's full-cycle receipts. Re-run after new money lands: the table shows whether the gain holds and whether the best cell moves.
+
+YEAR	K	CAP	SEATS	WITH MONEY	MAE (INC.)	MAE, MONEY SEATS	INC. PTS
+2022	0	—	2651	2201	5.273	5.219	3.38
+2022	0.02	1	2651	2201	5.204	5.134	3.33
+2022	0.03	1	2651	2201	5.198	5.127	3.31
+2022	0.04	1	2651	2201	5.196	5.124	3.31
+2022	0.06	1	2651	2201	5.194	5.123	3.30
+2022	0.08	1	2651	2201	5.194	5.123	3.30
+2022	0.12	1	2651	2201	5.193	5.121	3.30
+2022	0.02	1.5	2651	2201	5.203	5.132	3.35
+2022	0.03	1.5	2651	2201	5.190	5.116	3.31
+2022	0.04	1.5	2651	2201	5.188	5.114	3.29
+2022	0.06	1.5	2651	2201	5.189	5.115	3.27
+2022	0.08	1.5	2651	2201	5.191	5.117	3.26
+2022	0.12	1.5	2651	2201	5.195	5.123	3.26
+2022	0.02	3	2651	2201	5.210	5.141	3.38
+2022	0.03	3	2651	2201	5.209	5.139	3.36
+2022	0.04	3	2651	2201	5.218	5.148	3.32
+2022	0.06	3	2651	2201	5.241	5.174	3.24
+2022	0.08	3	2651	2201	5.268	5.206	3.19
+2022	0.12	3	2651	2201	5.305	5.251	3.16
+2024	0	—	3347	2909	4.744	4.689	1.32
+2024	0.02	1	3347	2909	4.681	4.613	1.33
+2024	0.03	1	3347	2909	4.678	4.609	1.32
+2024	0.04	1	3347	2909	4.679	4.609	1.31
+2024	0.06	1	3347	2909	4.680	4.611	1.30
+2024	0.08	1	3347	2909	4.684	4.615	1.30
+2024	0.12	1	3347	2909	4.687	4.619	1.30
+2024	0.02	1.5	3347	2909	4.682	4.612	1.37
+2024	0.03	1.5	3347	2909	4.671	4.599	1.34
+2024	0.04	1.5	3347	2909	4.671	4.598	1.32
+2024	0.06	1.5	3347	2909	4.678	4.604	1.30
+2024	0.08	1.5	3347	2909	4.682	4.608	1.30
+2024	0.12	1.5	3347	2909	4.690	4.618	1.29
+2024	0.02	3	3347	2909	4.685	4.614	1.39
+2024	0.03	3	3347	2909	4.681	4.607	1.41
+2024	0.04	3	3347	2909	4.696	4.621	1.41
+2024	0.06	3	3347	2909	4.730	4.656	1.35
+2024	0.08	3	3347	2909	4.760	4.690	1.32
+2024	0.12	3	3347	2909	4.805	4.739	1.28
+INDEPENDENTS
+
+A ballot with one major party is usually decided, but not where an established independent is the real opponent. 16 such races are modeled this cycle (7 sitting independents, 4 with a strong last race, 5 backed by a major party), and 5 seats have no major party on the ballot and go to an independent outright.
+
+credible   = sitting  |  ≥ IND_RECORD_SHARE in their last head-to-head in the seat  |  backed by the absent party (data/stateLegIndependents.ts)
+advantage  = ± (lean + β*(state) × E(2026))  +  INCUMBENCY_PTS × (inc_I − inc_opp)  +  personal       sign: the independent takes the absent party's place
+personal   = (Σ_last two residual + IND_SHRINK_K × prior) / (n + IND_SHRINK_K)      prior = IND_PRIOR_PTS, or 0 for a backed newcomer
+residual   = past advantage − [± (lean + β* × E(year)) + INCUMBENCY_PTS × (inc_I − inc_opp)]      head-to-heads against the same party, on today's lines
+P(I)       = Φ(advantage / √(σ² + IND_SIGMA²))
+A party that backs an independent over its own nominee (Alaska's Senate S, where the Democrats list Bryce Edgmon above their nominee and ranked choice transfers the nominee's votes) puts the independent in its place. An appointed incumbent counts as sitting but gets no incumbency, the federal forecast's rule. In a multi-member district where the party fields a nominee for every seat (Vermont's Chittenden-15), the independent is racing that party's last nominee inside one electorate: lean and environment drop out, only incumbency and noise remain, and the other seats go to the party. Independents on a ballot with both major parties and no backing are not modeled.
+IND_RECORD_SHARE
+40%
+A non-incumbent independent is modeled when they took this share of their last head-to-head in the seat; below it, a perennial candidate.
+DESIGNED, NOT CALIBRATED
+IND_PRIOR_PTS
+14
+How far a sitting or proven independent runs ahead of a generic nominee of the party they stand in for, before their own record. The holdout's median gap is 16.1; the mean is pulled higher by Alyse Galvin and John Mark Windle.
+BACKTEST-CALIBRATED
+scripts/stateLegIndependentBacktest.ts
+IND_SHRINK_K
+1
+Pseudo-races of the prior in the personal effect: one head-to-head on record counts half.
+BACKTEST-CALIBRATED
+scripts/stateLegIndependentBacktest.ts
+IND_SIGMA
+4
+Extra seat noise in an independent's race: the holdout's robust residual spread (8) net of SIGMA and STATE_SHOCK, rounded: √(8² − 6² − 3.4²). It was 0 while SIGMA was 7.0; the independents' own spread barely moved (7.6 → 7.9) when the slate margin and down-ballot gap tightened SIGMA.
+BACKTEST-CALIBRATED
+scripts/stateLegIndependentBacktest.ts
+INDEPENDENTS HOLDOUT
+generated 2026-10-23 · scripts/stateLegIndependentBacktest.ts --emit
+
+Every past general on today's lines where an independent the rule would model faced exactly one major party (16 races, 2018–2024), predicted from the lean before that year, the year's fitted environment, incumbency and the independent's earlier record. Small sample: the prior is set at the median gap rather than the grid's best fit, which leans on two outliers.
+
+PRIOR	K	RMSE	BIAS	Σ (ROBUST)	WINNERS
+0	0.5	23.3	+14.7	14.6	12/16
+0	1	23.4	+15.9	12.3	12/16
+0	2	23.7	+17.0	10.4	11/16
+7	0.5	19.4	+9.2	9.7	13/16
+7	1	19.4	+10.0	8.6	14/16
+7	2	19.4	+10.7	7.6	14/16
+14	0.5	16.8	+3.7	8.6	14/16
+14	1	16.6	+4.1	8.0	14/16
+14	2	16.5	+4.5	5.2	14/16
+21	0.5	16.0	-1.9	7.7	15/16
+21	1	15.9	-1.8	5.2	15/16
+21	2	15.8	-1.8	4.5	15/16
+DOWN-BALLOT GAP
+generated 2026-10-23 · scripts/stateLegBacktest.ts --pres-gap --emit
+
+Added after Vermont was the holdout's worst state in both years. Across chambers, a chamber's past seat-minus-presidential gap predicts its next miss (correlation about 0.45), and the presidential rows are moved toward it by k. Vermont itself gains little in the holdout: its 2024 Republican surge (some 15 points beyond the projection in every seat) was not in its earlier gap. It is in the gap now, and the 2026 projection carries half of it. Left: MAE after fitted incumbency by k, with Vermont's seats alone. Right: the largest live gaps (R-positive).
+
+YEAR	K	MAE (INC.)	INC. PTS	VERMONT MAE
+2022	0	5.311	3.00	9.5
+2022	0.25	5.220	3.16	9.7
+2022	0.5	5.190	3.31	9.9
+2022	0.75	5.224	3.47	10.1
+2022	1	5.306	3.63	10.3
+2024	0	4.744	1.23	17.6
+2024	0.25	4.694	1.29	17.0
+2024	0.5	4.672	1.34	16.5
+2024	0.75	4.680	1.39	16.0
+2024	1	4.716	1.45	15.4
+STATE	CHAMBER	GAP
+VT	House	R+16.1
+VT	Senate	R+15.7
+WV	Senate	D+11.2
+WV	House	D+10.2
+CA	Senate	R+7.6
+LA	House	R+7.5
+CA	House	R+7.4
+OK	Senate	D+7.3
+OK	House	D+7.1
+NE	Senate	D+6.0
+KY	House	D+5.8
+MA	House	R+5.7
+WEIGHT SWEEP
+generated 2026-10-23 · scripts/stateLegBacktest.ts --sweep --emit
+
+Two questions put to the holdout after the State Navigate comparison (their lean leans on the last legislative result): how much of the lean the seat's own races should carry, and whether the most recent of them deserves extra weight. Left: the seat share with no boost, where 0.25 is the live ratio. Right: the latest seat row's weight × k at the live ratio and at a 0.40 share. The boost beats every uniform reweighting; ×3 is adopted.
+
+YEAR	SEAT SHARE	MAE (INC.)	BIAS	INC. PTS	Σ (ROBUST)
+2022	0.10	5.34	+0.16	3.81	6.06
+2022	0.20	5.22	+0.04	3.72	5.87
+2022	0.25	5.19	-0.01	3.67	5.85
+2022	0.30	5.19	-0.07	3.62	5.90
+2022	0.40	5.23	-0.17	3.53	6.11
+2022	0.50	5.36	-0.27	3.45	6.20
+2022	0.60	5.56	-0.37	3.36	6.51
+2022	0.70	5.83	-0.46	3.27	6.86
+2022	0.80	6.15	-0.54	3.19	7.18
+2024	0.10	4.88	+0.82	2.10	5.04
+2024	0.20	4.79	+0.64	1.92	5.05
+2024	0.25	4.78	+0.56	1.84	5.04
+2024	0.30	4.79	+0.49	1.76	5.07
+2024	0.40	4.85	+0.37	1.63	5.17
+2024	0.50	4.94	+0.26	1.52	5.26
+2024	0.60	5.05	+0.17	1.42	5.37
+2024	0.70	5.18	+0.09	1.33	5.49
+2024	0.80	5.33	+0.02	1.25	5.64
+YEAR	SEAT SHARE	BOOST	MAE (INC.)	BIAS	Σ (ROBUST)
+2022	0.25	×1	5.19	-0.01	5.85
+2022	0.25	×1.5	5.17	-0.07	5.88
+2022	0.25	×2	5.16	-0.12	5.89
+2022	0.25	×3	5.19	-0.21	5.92
+2022	0.25	×5	5.32	-0.33	6.16
+2024	0.25	×1	4.78	+0.56	5.04
+2024	0.25	×1.5	4.71	+0.51	5.05
+2024	0.25	×2	4.68	+0.47	4.98
+2024	0.25	×3	4.67	+0.41	4.98
+2024	0.25	×5	4.72	+0.32	5.06
+2022	0.40	×1	5.23	-0.17	6.11
+2022	0.40	×1.5	5.26	-0.24	6.13
+2022	0.40	×2	5.31	-0.30	6.18
+2022	0.40	×3	5.44	-0.38	6.38
+2022	0.40	×5	5.65	-0.49	6.64
+2024	0.40	×1	4.85	+0.37	5.17
+2024	0.40	×1.5	4.80	+0.32	5.12
+2024	0.40	×2	4.79	+0.29	5.09
+2024	0.40	×3	4.81	+0.24	5.10
+2024	0.40	×5	4.89	+0.18	5.23
+ENVIRONMENT SCALE
+generated 2026-10-23 · scripts/stateLegBacktest.ts --env --emit
+
+Whether legislative seats respond more strongly to the national environment than the statewide races E is fitted on: the term β* × E multiplied by λ on the forward term and the past seat rows' strip, scored with the mean bias left in, since a uniform environment miss is what is being tested. 2018 and 2020 ran on superseded maps; their results are relocated onto today's lines through the crosswalk. “Fitted” projects into the environment fitted from that year's statewide results; “polled” into the one the live chain would have read from the final generic ballot. With the fitted environment, λ = 1 is within 0.06 of the best cell in every year. With the polled one, the best λ follows the year's poll miss. Not adopted; the change log has the full reading.
+
+ENVIRONMENT	YEAR	E	Λ 0.8	Λ 1	Λ 1.2	Λ 1.4	Λ 1.6	Λ 2
+fitted	2018	-4.39	5.31 (-1.3)	5.16 (-0.3)	5.17 (+0.8)	5.32 (+1.8)	5.61 (+2.8)	6.58 (+4.8)
+fitted	2020	-1.21	4.73 (+1.0)	4.70 (+0.8)	4.70 (+0.6)	4.70 (+0.3)	4.73 (+0.1)	4.81 (-0.3)
+fitted	2022	0.98	5.19 (+0.4)	5.20 (+0.0)	5.24 (-0.4)	5.31 (-0.8)	5.40 (-1.2)	5.63 (-2.0)
+fitted	2024	2.80	4.64 (+0.8)	4.64 (+0.3)	4.69 (-0.3)	4.78 (-0.8)	4.92 (-1.3)	5.30 (-2.4)
+polled	2018	-3.24	5.55 (-2.2)	5.32 (-1.4)	5.18 (-0.6)	5.13 (+0.2)	5.18 (+1.0)	5.54 (+2.6)
+polled	2020	-2.95	5.06 (+2.3)	5.10 (+2.4)	5.14 (+2.6)	5.20 (+2.7)	5.27 (+2.8)	5.43 (+3.1)
+polled	2022	2.32	5.26 (-0.6)	5.40 (-1.3)	5.58 (-1.9)	5.82 (-2.6)	6.11 (-3.3)	6.80 (-4.6)
+polled	2024	1.07	4.84 (+2.1)	4.80 (+1.9)	4.76 (+1.7)	4.73 (+1.5)	4.71 (+1.3)	4.68 (+1.0)
+HOLDOUT
+generated 2026-11-03 · scripts/stateLegBacktest.ts --emit
+
+Each district's lean is built from the years before Y and projected into Y with the fitted environment and the race's actual incumbent, then scored against the contested districts on today's lines. Incumbency is fitted from the residuals and σ is their spread after it. The worst states are Vermont (a state-wide Republican surge in 2024 that no earlier year foretold), ranked-choice Alaska and nonpartisan Nebraska, where a seat's own margin is a poor measure of the district. A multi-member race is scored on the slate-adjusted seat margin above.
+
+YEAR	DISTRICTS	BIAS	MAE	MAE AFTER INC.	INCUMBENCY (PTS)	INCUMBENT RACES	Σ (ROBUST)	CHAMBER SHOCK Τ	SEAT Σ AFTER Τ
+2022	2651	-0.21	5.63	5.19	3.31	1647	7.09 (5.92)	3.23 (65 chambers)	6.31
+2024	3347	+0.41	4.76	4.67	1.34	2276	6.75 (4.98)	3.53 (75 chambers)	5.76
+NOT IN THE MODEL
+Candidate quality and polls
+No track-record or polling term; the seat's own history is the only candidate signal.
+Below the chamber
+The chamber shock is one number per chamber; a regional swing inside a state (one metro moving against the rest) is still independent seat noise.
+THE MODEL
+The 2026 chamber popular vote
+
+Each seat on the ballot gets a projected vote count, split between the parties by its district projection, and the chamber's seats add up two ways: raw, the aggregate the certified results will print, and adjusted, with every seat that lacks a major party imputed as the contested race it would have been — the rule the corrected past chamber margins apply with the presidential vote, here applied with the projection. Today: 174.1M votes over 5,660 districts in 88 chambers, 1,951 of them imputed in the adjusted figure. Both numbers head every chamber page beside the corrected chamber margin.
+
+VOTES
+level     = the state's 2026 top-of-the-ticket votes from the turnout estimate (/analysis/internal-methodology/turnout: CVAP × blended midterm rates, ticket and competitiveness terms)
+share_d   = the district's share of the chamber's 2024 presidential vote on today's lines (dataset A)
+factor_d  = votes cast in the seat's race per seat per expected top-race vote: leg votes ÷ [seats × top votes(year) × share_d(that cycle's presidential election)]
+            measured in each basis midterm from the seat's own contested race; on a superseded map, the population-weighted mean of the old districts (dataset C, coverage ≥ MIN_COVERAGE)
+            blended on BASIS_WEIGHTS, shrunk toward the chamber's contested mean: (pres votes_d × own + DROPOFF_SHRINK_VOTES × mean) / (pres votes_d + DROPOFF_SHRINK_VOTES)
+V_d       = level × share_d × factor_d × seats up      × UNOPPOSED_TURNOUT for a printed unopposed race or two nominees of one party; 0 where the state prints no count (FL, HI, OK, TX)
+A multi-member district's votes are candidate votes, as the certified aggregates are: each voter casts several, so a chamber like Arizona's House or New Hampshire's runs past the ballots cast, and its factor says so. A seat with no contested race in either basis midterm takes the chamber mean per seat. The level is the turnout estimate's, so its range (each basis midterm alone) carries through to the chamber total.
+SPLIT AND SUMS
+contested    R = (100 − other + margin) / 2 · D = (100 − other − margin) / 2       margin = the district projection's (lean + β*·E + incumbency), points of the full vote
+other        the chamber's other-party share over its last two elections in races of the same kind (a minor candidate on the ballot or not; one party with a minor candidate), shrunk toward the national figure with OTHER_SHRINK_RACES pseudo-races
+one party    all but the other share to it; a modeled independent takes the absent party's place on their projected advantage
+multi-member each seat's share of the district's votes on its own contest: a post with one party, a guaranteed seat, the rest on the margin
+raw          Σ counted districts                 adjusted = Σ every seat as a contested two-party race: V_d at contested turnout, the projection's margin, the chamber's no-minor-candidate other share
+The adjusted figure is the chamber's preference, not its ballot: Massachusetts prints D+58 in a House where 120 seats have no Republican, and the imputed sum lands near its lean. A seat with no lean (no presidential figure on its lines) stays as its raw race in both sums; Nebraska's nonpartisan votes are summed by each candidate's party.
+BASIS_WEIGHTS
+2022 0.6 / 2018 0.4
+The turnout estimate's midterm weights (2022 0.6 / 2018 0.4): a seat's turnout factor from the last two midterms. Adding the 2020 presidential-year race to the 2022 holdout basis changed district error by less than 0.1 point, so the midterm basis is kept.
+DESIGNED, NOT CALIBRATED
+DROPOFF_SHRINK_VOTES
+2,000
+Presidential votes of the chamber mean a seat's own factor is weighed against. The 2022-from-2018 holdout's district-share error is lowest here (7.28% against 7.33% with no shrink and 8.18% with the chamber mean alone); chamber totals barely move.
+BACKTEST-CALIBRATED
+scripts/stateLegPopularVoteBacktest.ts
+UNOPPOSED_TURNOUT
+0.82
+Votes cast per seat in a printed unopposed race relative to a contested one in the same chamber-year: the median over 267 chamber-years 2018–2024 with both kinds (0.817; mean 0.826; Alaska near 1, Delaware's and Connecticut's 2022 near 0.65).
+BACKTEST-CALIBRATED
+scripts/stateLegPopularVoteBacktest.ts
+OTHER_SHRINK_RACES
+5
+Pseudo-races of the national other-share mean in each chamber's own figure, so a chamber with two such races does not set its own.
+DESIGNED, NOT CALIBRATED
+HOLDOUT
+generated 2026-10-23 · scripts/stateLegPopularVoteBacktest.ts --emit
+
+2022 predicted from 2018 alone on the chambers whose 2022 election ran on today's lines: the level from the turnout estimate's own backtest configuration, every seat's factor from its 2018 race relocated onto the 2022 lines, the split from the district projection with rows before 2022 and the fitted E(2022) on the year's actual ballot. The first row is the whole model; the second takes the actual top-of-the-ticket vote as the level and so measures the factor model alone — the gap between them is the turnout estimate's 2018→2022 miss. The 2024 row uses the live basis weights with the actual presidential vote as the level. Margin error is the raw chamber popular-vote margin against the certified aggregate; the worst of it is the projection's 2022 Florida miss, a chamber shock the margins share.
+
+BASIS → TARGET	LEVEL	CHAMBERS	DISTRICTS	VOTES MAPE (BIAS)	SHARE MAPE	CHAMBER MAPE (BIAS)	MARGIN MAE (BIAS)	TOTAL MAPE (BIAS)
+2022 ← 2018	turnout estimate	71	2,581	11.5% (+5.9%)	7.3%	8.5% (+6.5%)	3.1 (-1.9)	8.8% (+5.7%)
+2022 ← 2018	actual	71	2,581	7.8% (+0.7%)	7.3%	2.7% (+0.7%)	3.1 (-1.9)	3.5% (-0.1%)
+2022 ← 2018	actual	71	2,581	7.8% (+0.7%)	7.3%	2.7% (+0.7%)	3.1 (-1.9)	3.5% (-0.1%)
+2022 ← 2018+2020	actual	72	2,639	7.8% (-0.5%)	7.3%	2.6% (-0.5%)	3.1 (-1.8)	3.3% (-1.3%)
+2022 ← 2020	actual	68	2,535	8.6% (-1.7%)	7.8%	3.1% (-2.5%)	3.0 (-1.6)	3.7% (-3.1%)
+2024 ← 2022/2018	actual	80	3,268	6.1% (+2.4%)	5.3%	3.2% (+3.0%)	2.1 (-0.2)	3.4% (+2.5%)
+
+The shrink grid, 2022 from 2018 with the turnout estimate's level: how far a seat's own 2018 factor is trusted against the chamber mean.
+
+SHRINK (PRES VOTES)	VOTES MAPE	SHARE MAPE	CHAMBER MAPE	MARGIN MAE
+0	11.48%	7.33%	8.50%	3.12
+2,000	11.54%	7.28%	8.51%	3.12
+5,000	11.62%	7.30%	8.50%	3.11
+10,000	11.70%	7.37%	8.48%	3.11
+20,000	11.80%	7.48%	8.45%	3.11
+50,000	11.95%	7.67%	8.40%	3.12
+chamber mean only	12.27%	8.18%	8.25%	3.17
+
+Today's widest raw-to-adjusted gaps: RI Senate D+70.8 → D+25.0 · SD Senate R+69.3 → R+24.6 · SD House R+58.1 → R+23.5 · RI House D+57.6 → D+23.7 · KY Senate R+52.8 → R+21.3.
+
+REPRODUCING IT
+Files and commands
+WHERE IT LIVES
+data-entry/state-leg-pres-by-era/<ST>.json
+dataset A, per state: chamber → era → district → {pop2020, splitPct, 2016, 2020, 2024}
+data-entry/state-leg-results/<ST>-<year>.json
+per-district results with the candidates array (dataset B)
+data-entry/state-leg-redistricting/<ST>.json
+dataset C, per state: chamber → era redrawn into → district → record
+data/stateLegPresByEra.ts · stateLegResults.ts · stateLegRedistricting.ts
+server-only modules built from the three above
+data-entry/state-leg-candidates-2026/<ST>.json
+dataset D, per state: chamber → district → {seats, candidates}
+data/stateLegIndependents.ts
+hand-curated independents: major-party backing (with sources), backing over a party's own nominee, appointed incumbents, exclusions
+data-entry/state-leg-outgoing-2026/<ST>.json
+outgoing members with reasons, per state: chamber → district → [{name, party, category, reason}]
+data-entry/state-leg-finance/{tu,ftm}/<ST>-<cycle>.json
+dataset E, per state and cycle: every legislative race's candidates with contributions and expenditures
+public/state-leg-atlas/<chamber>/<ST>.json
+the per-chamber slice a chamber page fetches, assembled from every module
+RE-RUN AFTER A CHANGE
+python3 scripts/build-state-leg-pres-by-era.py <ST>
+dataset A for one state (downloads the DRA VTD file into the scratch cache)
+python3 scripts/build-state-leg-candidates-from-{klarner,wikipedia,sos}.py --write · derive-state-leg-candidate-flags.py --write
+dataset B passes, then the flag derivation
+python3 scripts/build-state-leg-redistricting.py <ST>
+dataset C for one state
+python3 scripts/fetch-state-leg-candidates-2026.py [ST] · node scripts/build-state-leg-candidates-2026.mjs
+dataset D (clear the HTML cache to refetch)
+python3 scripts/fetch-state-leg-outgoing-2026.py [ST] · node scripts/build-state-leg-outgoing-2026.mjs
+outgoing members and reasons from the Wikipedia chamber articles (cached wikitext)
+python3 scripts/fetch-state-leg-finance-tu.py --cycle 2026 [ST] · fetch-state-leg-finance-ftm.py --cycle 2024 [ST] · node scripts/build-state-leg-finance.mjs
+dataset E: one cycle of Transparency USA (slow, polite crawl) or FollowTheMoney, then the module
+node scripts/build-state-leg-pres-by-era.mjs · build-state-leg-results.mjs · split-state-leg-results.mjs · build-state-leg-redistricting.mjs
+rebuild the modules and the legislature page's result slices
+npx tsx --conditions=react-server scripts/stateLegBacktest.ts --emit
+the projection holdout; writes data/stateLegValidation.ts
+npx tsx --conditions=react-server scripts/stateLegBacktest.ts --sweep --emit
+the seat-share and recent-row weight sweeps; writes data/stateLegTypeWeightSweep.ts
+npx tsx --conditions=react-server scripts/stateLegBacktest.ts --money --emit
+the money term's K × cap sweep; writes data/stateLegMoneySweep.ts
+npm run state-leg-money
+after new fundraising lands: rebuild dataset E's module, re-run the holdout and the money sweep (methodology tables), rebuild the chamber slices; the expected-gap fit refreshes itself
+npx tsx --conditions=react-server scripts/stateLegIndependentBacktest.ts --emit
+the independent rule's holdout; writes data/stateLegIndependentValidation.ts
+npx tsx --conditions=react-server scripts/stateLegPopularVoteBacktest.ts --emit
+the chamber popular vote's holdout and the unopposed-turnout measurement; writes data/stateLegPopularVoteValidation.ts
+npx tsx --conditions=react-server scripts/buildStateLegAtlasSlices.ts [ST]
+rebuild the chamber slices the atlas pages read (projection included)
+WHAT CHANGED, AND WHEN
+Revision history
+Nov 3, 2026
+CHANGE
+Forecast locked as final (8:30 AM ET, November 3)
+
+FORECAST_FINAL_AT in lib/forecastClock.ts pins the forecast clock at 2026-11-03 13:30 UTC. Every date-dependent input reads that instant instead of the wall clock: poll aging, the race, generic-ballot and approval averages, house effects, the environment's horizon, the Overview, the forecast-over-time series (it ends on November 3) and the daily snapshot. Without the lock the numbers would keep drifting through the day on poll aging alone: a nine-hour later run moves 36 races by 0.1 points and Senate control by 0.1 points. The locked numbers are data/forecast-history/2026-11-03.json. `npm run check-lock` (also a CI step) rebuilds the snapshot and fails on any difference, so a later data or code change cannot silently move the final forecast. Every forecast page carries a "Final forecast" pill (components/FinalForecastPill.tsx): race pages, the Senate / House / Governor forecast pages, the Overview, state pages and the legislature pages.
+
+EFFECT Final: House D 236.4 seats (80% 219–255), P(D control) 91.4%; Senate D 51.6 (48–55), 65.2%; governors D 26.6 (23–30); generic ballot D+9.0.
+
+Nov 3, 2026
+DATA FIX
+State legislative fundraising: final 2026 read, and 2026 portal figures replace Transparency USA where they agree
+
+Transparency USA's 2026 crawl (October 11, most states' data through May–September) can no longer be refreshed: the site went behind a Cloudflare challenge. The states' own portals were re-read for 2026 instead: the 22 portal states (AR CT DE HI KY MA MD ME MT NE OK OR RI SD TN UT VT WV refreshed; AK behind a CAPTCHA, KS/MO not refreshed) and 17 Transparency USA states whose portal scripts read 2026 (AZ CA CO FL IA IL IN MI MN NC NY PA SC TX WA WY, AR). For the 2026 cycle scripts/build-state-leg-finance.mjs now takes a district's portal figures over TU's only when the portal has every TU candidate with money there, by surname, at no less than 90% of the TU total (PORTAL_MIN_RATIO): money raised to date cannot shrink, so a lower figure means the name match took the wrong committee (NY: John Liu $846k on TU, $1,000 on a stray filer). Decided per district over all its TU races, since WA House runs two posts as separate races. Otherwise the whole district stays on TU. WI (the portal's committee ranking returns ~100 Assembly committees topping out at $36k, against TU's 196 with $1.16M at the top), OH (Cloudflare), NV (no current bulk file), NM, GA and ID (the scripts found no 2026 candidates) and NH stay on TU. The MA fetcher was caching OCPF's 429 "Too many requests" body as data: it now waits and retries, one request a second.
+
+EFFECT 2026 money on file, before → after: CA $102M → $156M, IL $67M → $103M, TX $107M → $137M, PA $29M → $53M, MI $9.5M → $27M, NC $28M → $42M, FL $37M → $54M; no state loses a candidate with money. 2,625 districts' money term moves, coverage up in SC (84 → 101), PA (98 → 108), TX (120 → 129); 11 favourite changes from money alone, all within 1.2 pts of even except MI House 46 and MI Senate 9. Holdout sweep unchanged (past cycles untouched): best cell still K .03–.04, cap 1.5.
+
+Oct 22, 2026
+TESTED, NOT ADOPTED
+Per-chamber environment damping (not adopted)
+
+Tested whether chambers that seem not to follow national swings (Vermont's Democrats held 95, 92, 104 and 87 House seats from 2018 to 2024 whatever the national environment) should get a scaled environment term. If a chamber follows β*·E fully, its seat-minus-presidential gap is unrelated to β*·E(year); a slope s means it responds as 1 + s. Scored leave-one-year-out on 72 chambers with 4+ years of gaps (347 chamber-years, 2016–2024, including the 2018 D+4.4 year): each chamber's gap predicted from its other years, with and without the slope. The 2022/2024 seat holdout cannot test this, because their environments (R+1.0, R+2.8) are too small for a scale to move anything.
+
+EFFECT No gain at any setting. Gap-prediction MAE: no slope 2.91; per-chamber slope 3.47 unshrunk, 3.02 / 2.97 / 2.94 shrunk with K 25 / 50 / 100, worse as shrinkage is relaxed; a single pooled slope (−0.11, i.e. legislatures follow about 89% of the environment) 2.91. A time trend instead: 3.02. Per-chamber slopes are noise: Vermont Senate's runs from +2.5 to −1.7 depending on which year is left out, and Vermont House has only two years on today's lines. The seat-level environment sweep agrees: in 2018 the best λ is 1.0 (MAE 5.16, against 5.31 at 0.8). Vermont's remaining excess over its sitting Democrats (2026 House: 114 projected against 87) is therefore the national environment applied at full strength, as the evidence supports, not a fitted term.
+
+Oct 22, 2026
+CHANGE
+Down-ballot gap on presidential rows (capped at its latest value); slate-adjusted margin in multi-member races
+
+Two changes prompted by Vermont, the holdout's worst state in both years (2022 MAE 11.4, 2024 17.5). (1) Each chamber's presidential rows now carry PRES_GAP_K = 0.5 × the chamber's seat-minus-presidential gap: per election year, the mean over seats with a seat row on today's lines of that row's neutral margin less the seat's mean presidential one, years weighted doubling toward the latest (PRES_GAP_MIN_SEATS 5), then capped at the latest year's own gap (no larger, same sign, else 0). The cap was added after West Virginia: its Democratic edge has faded every cycle (−34, −23, −19, −14, −10 from 2016), and the weighted mean of −13.9 overshot it. The cap ties the uncapped rule nationally (2024 4.672 vs 4.667) and improves West Virginia's holdout (2022 7.9 → 7.7, 2024 7.6 → 7.3). Across chambers the past gap predicts the next year's chamber miss (correlation ~0.45, slope 0.24–0.31), and k 0.5 is best in both holdout years (scripts/stateLegBacktest.ts --pres-gap). Live gaps: Vermont House R+16.1 and Senate R+15.7 (17 and 20 points in 2024 alone), West Virginia House D+10.2 and Senate D+11.2, California R+7.5. It matters most for seats with no contested race of their own, which fell back on presidential rows: Vermont Republicans unopposed in 2024 (Addison-Rutland, Franklin-2, Orleans-2) had been projected D by 17 points. (2) A multi-member race where the parties ran unequal slates (more than one winner, D and R nominee counts differ) is now measured as the average R nominee against the average D nominee, scaled to the majors' share of the vote; summed votes gave the fuller slate about double the votes (2 D and 1 R for two seats). Equal slates are unchanged. 486 races since 2016 are affected (NH 89, AZ 79, VT 73, WA 57, ID 48, SD 39, MD 30, NJ 29, ND 23, WV 13). In Washington and Idaho, which elect by position, these are districts with one contested position and one single-party one. The average there is still far nearer the contested position than the sum (WA LD-1 2024: sum D+64, average D+40, the contested position D+38 to D+42). A per-position margin would be exact and is not built. Both the lean's seat rows and the backtest's target use it. Refit from the re-run holdout under the existing rules: INCUMBENCY_PTS 2.7 → 2.3 (3.31 / 1.34), SIGMA 7.0 → 6.0 (seat noise after τ 6.31 / 5.76), STATE_SHOCK 3.4 unchanged (3.23 / 3.53), IND_SIGMA 0 → 4 (independents' robust spread 7.9, now above √(SIGMA² + STATE_SHOCK²)). The money sweep's best cell moved to k 0.04 by 0.002; MONEY_K kept. Every state-leg harness was re-emitted.
+
+EFFECT Holdout MAE after incumbency 5.70 → 5.19 (2022) and 5.10 → 4.67 (2024); of that, the gap term alone takes 5.31 → 5.19 and 4.74 → 4.67 on the new target. Vermont: 11.4 → 10.0 and 17.5 → 16.4. Its 2024 surge was not in its earlier gap, so it stays the worst state. The live projection carries half of it. Nationally 3,377 → 3,374 projected Democratic seats. Arizona House 26–34 → 33–27 headline, 27.8 → 30.8 expected D (P(D control) 5% → 57%): Arizona Democrats often run one nominee for two seats, and summing had read those districts too Republican. NH House 223 → 220 D (P 87% → 83%), NH Senate 12–12 → 11–13 (43% → 35%), Arizona Senate 15–15 → 14–16 (40% → 35%), West Virginia House 10 → 12 D (expected 12.5 → 13.8; 14 before the cap), Washington House 62 → 64 D, Florida Senate 13 → 11 D, South Carolina House 40 → 38 D. Vermont House 116 → 114 D (expected 115.8 → 111.4) and Senate 22 D unchanged. The rest of Vermont's excess over its 87 sitting Democrats is the environment term (β* 1.18 × the D+3.7 swing since 2024 ≈ 7.7 points), which this change does not touch.
+
+Oct 21, 2026
+DATA FIX
+Fundraising: Oregon 2016–2026 from the ORESTAR mirror
+
+ORESTAR blocks a crawler after a few hundred searches, and its "Committees by Election" search lists only committees still naming that election, so the earlier Oregon figures (scripts/fetch-state-leg-finance-or.cjs) covered 40 committees in 2016 and a surname match inside the district sometimes took a relative's committee (Diane Linthicum, SD-28 2024, carried Dennis Linthicum's $334,318; her own committee raised $88,827). The data now comes from the Oregon Campaign Finance mirror (orestar-dashboard.vercel.app, code MIT on GitHub), a daily copy of every ORESTAR transaction export since 2006 with a public read-only SQL endpoint and a committee index (candidate, party, current office): scripts/fetch-state-leg-finance-or-mirror.py sums each candidate committee's contribution rows over the two calendar years to the election (one query per cycle, seven requests in all) and names the committee's chamber and district only when its current office names a candidate of that surname in that cycle's field, otherwise the record is matched by full name statewide, so a committee that moved offices with its candidate still lands. A committee with no contribution row in the window writes no figure (17 former $0 rows are now blank). The mirror agrees with the ORESTAR exports already on file to the cent (Pam Marsh 2015–2016 $74,382.27; Julie Fahey 11/2020–11/2022 $460,606.67; every 2016–2020 overlap identical).
+
+EFFECT Oregon general-election candidates with a figure: 30 → 128 of 152 (2016), 38 → 118 of 139 (2018), 54 → 131 of 143 (2020), 78 → 133 of 147 (2022), 83 → 118 of 208 (2024), 102 → 115 of 146 (2026); districts with money 28–69 → 74–75 of 75 every cycle. Money on file: 33,244 district-cycles. Money-term holdout: seats with both sides' money 2,201 (2022) and 2,909 (2024); MAE after incumbency 5.77 → 5.70 (2022) and 5.19 → 5.10 (2024); the live K 0.03 / cap 1.5 remains the sweep's best cell.
+
+Oct 21, 2026
+DATA FIX
+Candidate names 2016–2022: compound surnames and glued-on words
+
+Klarner's candidate file (the 2016–2022 results) builds its surname field by running compound surnames together ("Powershannley", "Vonimhof", "Kreisstomkins"), sometimes keeps only one part ("Lorena Gonzalez" for Gonzalez Fletcher), and sometimes glues on a middle name, a suffix ("Frenchvi") or another candidate's surname ("Bill Siffordthayn": Sifford ran against Steven Thayn; Willie C. Randall carried his opponent J. Randall Minchew's first name). Where the file lists a surname's parts, the name as filed and the part types now decide (scripts/build-state-leg-candidates-from-klarner.py surname_fix): a hyphenated part known → hyphen (Ros-Lehtinen); a compound part known → space (Van Valkenburg); a compound part merely possible — which also covers single surnames such as MacGillivray and Condodemetraky — only where a source that keeps spacing (2023+ results, the 2026 field, fundraising filings) spells the surname that way or names the same first name with the last part alone (Dustin Manwaring → Dustin Whitney Manwaring); otherwise the name is unchanged; a filed surname that is only one of the parts → the filed surname (and the filed first name where the two disagree). A middle name repeating the compound's first part is dropped (Lori Den Hartog, not Den Den Hartog). Applied as a rename in place (--fix-names), so no other field of the results files changed.
+
+EFFECT 1,716 candidate-rows renamed across 186 state-year files; vote counts untouched. Money on file 33,054 → 33,097 district-cycles; general-election candidates with fundraising matched +156 (58,047 → 58,203) where the misspelling had blocked the name match — e.g. Idaho's Sifford, Nilsson Troy, Whitney Manwaring and Yamamoto Hanson now carry their fundraising. Candidate identity merges: about 200 pairs that were merged across two spellings now have one spelling.
+
+Oct 21, 2026
+DATA FIX
+Fundraising: Idaho 2018–2022 from the state
+
+The Transparency USA files for these cycles held the 2026 race pages and were withdrawn; Transparency USA now refuses requests, so the state's own records are used. 2018: the Secretary of State's archived candidate contribution workbook (candidate_contributions.xlsx — not 2018_cand_cont.xlsx, which holds only ~2,000 mostly statewide rows), cash and in-kind, loans left out; it reproduces the reports' calendar-year-to-date total contributions exactly (James Woodward, SD-1: 2017 $24,345.00, 2018 $40,733.79). 2020 and 2022: the Sunshine portal's donations (its API, no login), Normal + Unitemized + In-Kind + Cash − Return; loans and "Credit Card Item" rows (the card statement's line items, filed with the bank as donor) left out. With loans added back the sum equals the December-Annual 2020 report's year-to-date contributions for 61 of 65 legislative candidates whose report parses, the rest within $250–$4,500. The portal starts January 1, 2020, so the 2020 cycle adds 2019 from each legislative committee's archived annual report (193 typed forms read from their text, 2 scanned amendments by eye; every one a full-year report whose own arithmetic holds): page 2's total contributions less new loans. A candidate with no 2019 report is taken to have raised nothing in 2019. The portal stores each candidate's latest office and district, not the race's (Tammy Nichols's 2020 House money is labeled State Senator), so a record is placed in a district only from the race's own map — the 2019 report's district for 2020, the portal's for 2022 (Idaho's 2022 map is still in use) — in whichever chamber that district's race had a candidate of the surname, and is otherwise matched statewide by full name; two portal candidates sharing a full name, or a 2019 report that could belong to more than one, leave the candidate blank.
+
+EFFECT Display only. Money on file: 50 states, 33,054 district-cycles (was 32,845). Idaho general-election candidates with a figure: 2018 157 of 169 (was 0), 2020 149 of 169 (was 0), 2022 153 of 163 (was 0); 2020 and 2022 cover all 70 districts.
+
+Oct 20, 2026
+DATA FIX
+Fundraising: Kansas 2016 Senate and 2018–2026
+
+From the Secretary of State's campaign finance viewer: every receipts-and-expenditures report of each general-election candidate, contributions plus in-kind, summed over the cycle's two years. The download had silently lost most past reports: paper filings open in a second popup (the scan) that was never captured, the bot check sometimes answered in place of a report, and the viewer keeps the results grid's page across searches, so after the first search every page jump failed. All three fixed; pages the server cannot render (House 2026 pages 12–14 for a few hours) are searched by surname instead, and reports filed under a typo (district 46 for 48, "STIFFLERN", a blank district) were found by name search and filed under the candidate. Paper reports: OCR, then the unreadable ones by eye (about 300), kept only when the summary's own arithmetic holds; an in-kind figure that could not be read, or a printed period that cannot be the report's, rejects the read. Printed periods are often wrong — the 2018 paper pre-primary form says "January 1 through December 31, 2018", the e-filing system printed many post-election reports as the whole year and some July–October reports as starting April 10, January reports on stale forms print the year before last — so each period is checked against the cash on hand carried from report to report: a report that opens with another's closing cash follows it, a period cannot end after the report was filed, a long report with no money or opening with the same cash as one inside it is another version, one opening and closing with the first and last reports' cash is a restatement. The build's old rule — a longer overlapping period always replaces the shorter ones — would have dropped the real reports in 46 candidate-cycles (Poskin 2022: $2,672 instead of $85,630); no published Kansas year used it (2026 has no overlapping periods). A candidate is blank when a report cannot be placed, when a hole between two reports is not bridged by the cash, or when two versions of one report filed the same day (a paper amendment keeps the original filing date) differ by more than 10% and $250 — of 175 such pairs half differ by under 5%. Also fixed: e-filed reports' closing cash read as $4.00 (the 4 in "Subtract Line 4 from 3").
+
+EFFECT Display only. Money on file: 50 states, 32,845 district-cycles. Kansas candidates with a figure: 2016 Senate 63 of 75 (was 0), 2018 153 of 183 (was 0), 2020 243 of 272 (was 0), 2022 163 of 181 (was 0), 2024 238 of 269 (was 0), 2026 198 of 206 (was the earlier partial build). The House 2016 figures (the Ethics Commission summary) are unchanged.
+
+Oct 19, 2026
+DATA FIX
+2024 seat counts checked against every chamber's election article
+
+Every 2024 chamber's seats after the election and seats won were checked against its Wikipedia election article (2022 too: all 88 match). Beyond Vermont's House, three were wrong (scripts/fix-state-leg-2024-seat-cards.py): Hawaii's House carried the pre-election 45–6 (the result was 42–9), and Oklahoma's and Florida's Senates counted only the races printed on the November ballot, leaving out seats settled in a primary or unopposed. California's AD-32 (won by Vince Fong, who stayed in Congress) and Minnesota's 40B (the winner ruled ineligible) are counted as the election left them, which is where Wikipedia's seated-member counts differ.
+
+EFFECT Hawaii House 2024 45–6 → 42–9; Oklahoma Senate seats won 1 D / 10 R of 11 → 2 D / 22 R of 24; Florida Senate 4 D / 14 R of 18 → 6 D / 14 R of 20.
+
+Oct 19, 2026
+TESTED, NOT ADOPTED
+A national legislative shock in the chamber simulation: tested, not adopted
+
+Given the fitted environment, the average seat in a year misses by an amount every chamber shares (live incumbency: 2018 −0.64, 2020 +1.35, 2022 +0.75, 2024 +0.38; RMS 0.86). The chamber shock τ is measured with that year bias removed, so the variance budget leaves it out. Adding it would widen each chamber's shared term from τ² to τ² + s² without moving any margin. Test: each held-out chamber's mean residual (chambers with 10+ contested seats, bias left in), scored under N(0, τ² + s² + SIGMA²/n) with s the RMS of the other years' biases (leave one year out), against s = 0; also each seat's P(D) (scripts/stateLegBacktest.ts --leg-shock).
+
+EFFECT 258 chamber-years: log score −2.7236 → −2.7237, 80% interval coverage 84.1% → 84.5%, 50% coverage 61.2% → 62.4%; 11,542 seats: log loss 0.1521 and Brier 0.0443 either way. The live chamber intervals already cover more than their nominal share, so widening them makes calibration slightly worse. Not adopted.
+
+Oct 19, 2026
+DATA FIX
+Vermont 2024: Republicans on the Democratic line restored; House seats 87–56–7
+
+MEDSL files a Vermont Republican who also won the Democratic line as "Republican/Democratic", and the 2024 reader kept any label naming both major parties as Other. Vermont's first-named party is the candidate's own, so 13 Republicans (10 House — Franklin County's delegation, Malay, McFaun — and Brock, Norris and Westman in the Senate) sat in the Other column and their districts read as having no Republican (scripts/fix-vermont-2024-fusion.py). The 2024 House seat card, from a separate winner count, read 105 D – 37 R – 8 other; the result was 87 D – 56 R – 4 Progressive – 3 Independent (Wikipedia seats_after, Ballotpedia). District votes keep Prog/Dem candidates as Democrats, as 2016–2022 do; seat counts put Progressives with the other parties.
+
+EFFECT Vermont 2024 House: 105–37–8 → 87–56–7 seats, R vote 31.8% → 38.4%; Senate R vote 35.1% → 41.1% (seats unchanged, 16–13–1).
+
+Oct 19, 2026
+DATA FIX
+"Now" is the chamber today, third parties and vacancies included
+
+The current composition on /legislatures, the chamber pages and the state page was the count after each chamber's last election (stateLegData), which missed every later party switch, special election and vacancy — Jason Pizzo (FL, no affiliation), Emily Buss (UT, Forward), the North Carolina and Indiana independents, the 2025 Iowa and Pennsylvania special-election flips — and carried a wrong Vermont House (105–37–8; the 2024 election left it near 87–56–7). It now reads data/stateLegComposition.ts, each Ballotpedia chamber page's partisan-composition box captured October 2026 (data-entry/state-leg-composition/, scripts/build-state-leg-composition.mjs), with two corrections from our own sources: Vermont's Joseph Parsons as an Independent (the legislature's label) and Nebraska's Victor Rountree with the Democrats he caucuses with. Hold/Flip and Net compare against it.
+
+EFFECT 28 sitting non-D/R legislators nationwide (29 with Parsons), all counted. The projection itself is unchanged: holdovers already came from the incumbent roster.
+
+Oct 19, 2026
+CHANGE
+Special elections on the November ballot are projected
+
+A seat was on the 2026 ballot only when its regular term ended (plus North Dakota House 9 and 15, resyncing to their cycle). Ballotpedia's chamber pages leave out specials, so the 23 state legislative specials on the November 3 ballot for seats not otherwise up were missing: unexpired terms in CO SD17/21/29/31, KS SD24/25, HI SD18/19, AR SD1, FL SD21, NE LD41, NM SD33, OK SD17, SC SD15, WY SD6, VA HD20, LA HD92 (a jungle primary), MS HD70/77, one seat of ND HD20/26/42 and of WV SD3/17. data-entry/state-leg-specials-2026.csv now lists them; the incumbent build marks the seat up in 2026 (the whole district, or the one member's seat in a multi-member district) and the candidate build adds the field (in West Virginia, a separate "Special" race beside the regular one). Three specials for the weeks left of a term whose regular race is on the same ballot (AR HD8, TX SD22, TX HD93) are skipped. Mississippi's are nonpartisan with no party on file: on the ballot, unprojected. Each special is labeled as one on the district page (with the term it fills and the vacancy), the map's hover and the candidates' pages.
+
+EFFECT 21 districts and 23 seats added; six chambers otherwise off the 2026 ballot now have a seat up (VA/LA/MS houses, KS/NM/SC senates). Projected winners follow each seat's lean: the appointed Colorado, Hawaii and Kansas incumbents favored, LA HD92 D 85%.
+
+Oct 19, 2026
+DATA FIX
+Fusion members' party read from their first line
+
+Open States labels a fusion member by every line they won on ("Democratic/Working Families", "Republican/Conservative"), and the incumbent build mapped anything but a plain party name to Other: 86 New York, 26 Connecticut, 6 Vermont and 1 Oregon member. The first line is the member's party. The 2026 projection was untouched (every one of those seats is up and the field sets the incumbent's party), but the backtests, which read past incumbents' parties, moved slightly, and the sitting member's color on maps, tables and district pages was wrong. Vermont's own labels are now applied per member (data-entry/state-leg-party-overrides/vt_*.json): the four Progressives (Cina, Logan, Tomlinson; Vyhovsky in the Senate) count as other, and Donahue and Parsons as Independents, as legislature.vermont.gov lists them.
+
+EFFECT District projection holdout: 2022 MAE 5.72 → 5.71, bias +0.86 → +0.55; 2024 MAE 5.12 → 5.11. Chamber popular-vote backtest margin MAE 3.47 → 3.40. Vermont House roster 90–57–3 → 87–55–8.
+
+Oct 19, 2026
+CHANGE
+Chamber outcome odds: majority and supermajority status
+
+Each chamber simulation now reports the share of draws ending in each status — D Supermajority, D Majority, Tie, No majority (third-party seats leave both short), R Majority, R Supermajority — with supermajority the veto-override line (lib/chamberOutcome.ts). /legislatures shows the status now and the likeliest projected status; chamber pages show every status's chance.
+
+Oct 19, 2026
+CHANGE
+State Legislature rows measure the whole chamber: staggered seats not up are estimated, unprinted unopposed seats imputed
+
+A staggered chamber puts one seat class on the ballot each cycle, and the class up can lean several points either way of the chamber (Ohio's Senate alternated R+16 and D+4 presidential classes; Colorado's swung about 15 points between classes), so the row moved with the calendar rather than the voters. The contested row now adds every seat not up as an estimate: its presidential margin on the year's lines plus the gap the contested seats up that year ran from theirs, fitted on presidential lean (gap = a + b·(P − P̄), vote-weighted; slope shrunk by n/(n + LEG_NOT_UP_SLOPE_K) and P clamped to the fitted range; a chamber with under 5 contested seats borrows the other chamber's gap), weighted by its presidential vote × the chamber's turnout ratio. The estimate carries the year's own environment, so it joins the contested row, not the unopposed one. Separately, a district on the map with NO results row is now classified: in a chamber that elects every seat at once, or a staggered seat whose last regular election was that year, it is an unprinted unopposed race (MEDSL 2024 and the Louisiana files omit them) and is imputed like any unopposed seat — 69 Oklahoma House seats in 2024, 40–48 Louisiana House seats per year, 15 Florida and 16 Hawaii House seats, 13 Oklahoma Senate seats; MA Senate, VT House and NH House absences are left out because they match result rows the map keys miss. New: notUp summary in lib/stateLegChamberMargin.ts, notUpPool / legislatureRowPool in lib/chamberMargins.ts, LEG_NOT_UP_MODE "slope" and LEG_NOT_UP_SLOPE_K 10 in lib/tplCompute.ts (TPL_LEG_NOT_UP / TPL_LEG_NOT_UP_K override; CHAMBER_MARGIN_NO_ABSENT=1 drops the absent-district rule), scripts/stateLegNotUpBacktest.ts.
+
+EFFECT Hidden-seat-class test (308 chamber-years that elected every seat, half the contested seats hidden): estimating the hidden half as the visible half, the old row, misses by 5.93 points (full-row 2.97); flat gap 2.86 (1.43); slope k 10 2.77 (1.38), k 5–10 best on both alternate and random splits. 2024 State TPL holdout flat within noise: P 2.24 → 2.24, S 4.90 → 4.91, H 3.41 → 3.42 (the row is 0.07 of a year). Live State TPLs: 13 states move 0.1 or more, mean 0.08 — Oklahoma R+30.5 → R+30.9, Wyoming R+42.1 → R+41.8, Louisiana R+20.0 → R+19.7, North Dakota, Alaska, Utah, Montana, Texas 0.2 more R, Colorado 0.2 less D. Displayed corrected chamber margins: Oklahoma 2024 R+24.8 → R+34.0, Florida 2024 R+19.8 → R+15.8, Louisiana 2023 R+31.2 → R+23.8, 2019 R+20.1 → R+18.7, North Dakota 2024 R+41.7 → R+40.5.
+
+Oct 19, 2026
+CHANGE
+Nebraska projected: each nonpartisan candidate in their party
+
+Nebraska's ballot is nonpartisan, so every 2026 candidate came in as "Nonpartisan" and the Legislature's 24 seats on the ballot had no projection (and no control odds). Each candidate is now placed in their party — registration, and the state party's endorsement where the two differ — the caucus they would sit with (data-entry/nebraska_2026_candidate_parties.csv, laid over the Ballotpedia list by scripts/build-state-leg-candidates-2026.mjs). Sources: the Nebraska Examiner's post-primary slate, the NEGOP and NDP 2026 candidate lists, the NDP's primary-night statement. Two registered nonpartisans backed by the Democratic Party (Maxwell-Ostdiek LD4, Smith LD32) count as Democrats; three with no party backing (Winter LD24, Woodson LD28, Scranton LD42) stay independents and their races go to the lone major-party candidate. LD6 and LD8 (D vs D) and LD38 (R vs R) are one-party races. The District 41 special election for the term's last two years (appointed Sen. Fred Meyer's seat; Johnson R vs Heneger D), missing from Ballotpedia's chamber page, is added. Past Nebraska races were already read by endorsement party, so the lean and the backtest are unchanged; the chamber popular vote now covers Nebraska too.
+
+EFFECT Nebraska Legislature: 25 seats on the ballot, all projected; 17.3 D / 31.7 R expected (80% range 16–19 D) against 15 D / 33 R / 1 I now (net +2 D); Republican control 100%, the 30-seat veto-override line 96%. Chamber popular vote R+21 raw, R+20 adjusted. Backtests unchanged (popular-vote margin bias −2.45 → −2.44).
+
+Oct 19, 2026
+TESTED, NOT ADOPTED
+A larger legislative environment term: tested, not adopted; the gap to State Navigate and ElectIndex is deliberate
+
+Our seat margins run about 3.4 points more Republican than State Navigate's and ElectIndex's across every rating band and state, so the environment term was put to the holdout. The live term is β*(state) × E(2026). E is the forecast's national environment: a generic ballot of D+8.1 becomes a House vote of D+7.4 (half the historical poll miss added back), and the line E = 0.53 + 0.56 × House vote fitted on 2016–2024 maps that to E = −3.6. On the same seats, that already puts the 2026 projection D+6.8 from the 2024 legislative results, about the size of the 2016→2018 swing (D+6.5 on seats contested both times, on unchanged maps, against a 9.7-point swing in the House vote). The test multiplied the term by λ: on the forward term only, on the forward term and the past seat rows' strip (legislative seats respond λ× to E in every year), or on every row. It was scored on 2022 and 2024 as before, and on 2018 and 2020, whose results ran on superseded maps and were relocated onto today's lines through the crosswalk. Unlike the standard holdout, the mean bias was left in the error, since a uniform environment miss is what is being tested. Two target environments were used: E(Y) as fitted from that year's statewide results, and E as the live chain would have read it from the final generic ballot.
+
+EFFECT With the fitted environment, the best λ is 1.0–1.2 in every year, and no year gains more than 0.06 of MAE. With seat rows scaled, λ 1.2 does 6.085 → 6.027 in 2018, 5.130 → 5.123 in 2020, 5.749 → 5.734 in 2022 and 5.083 → 5.121 in 2024, so 2024 gets worse. λ 1.2 would move 2026 seats about 0.7 points toward D, a fifth of the gap. With the generic-ballot environment, the best λ follows each year's poll miss rather than any stable legislative response: about 1.6 in 2018 (polls under-read the wave; bias at λ 1 is 1.9 toward D), under 0.8 in 2020 (polls overstated Democrats; bias 3.1 toward R), 0.8 in 2022 and 2.0 in 2024. Matching the other models would need E ≈ −7, a House vote near D+13.5 on the fitted line, or the full 10-point national swing since 2024 reaching every seat. No holdout year supports either. The remaining risk is the generic-ballot-to-environment step shared with the federal forecast (2018 shows it can under-read a wave), not the legislative term. scripts/stateLegBacktest.ts --env --emit; table on this tab.
+
+Oct 19, 2026
+DATA FIX
+Fundraising: committee-named filings now join; North Dakota 2016; Idaho 2018–2022 withdrawn
+
+State-portal records are matched to candidates by scripts/assign-state-leg-finance.ts, which also reads committee names ("PARRISH FOR NC HOUSE", "Upmeyer for House"), but the record kept the committee's name and lib/stateLegMoney.ts re-joined by person name, so a matched filing named for its committee was dropped from the page and the money term. The assign step now writes the candidate it matched, and the join uses it first. North Dakota 2016: the year-end statements then printed only the over-$200 total, which the parser missed; that total is now the 2016 figure for every candidate (2018 on keeps the full total). North Dakota 2026 has nothing yet: legislative committees file in election years only, so 2026's arrive in January 2027. Idaho's 2018, 2020 and 2022 Transparency USA files held the 2026 race pages (the crawl's cycle error), so 2026 receipts sat on past races; they are withdrawn until Transparency USA can be refetched (it answers 403 today).
+
+EFFECT Districts with money: 91.7% → 92.8% of 2016–2026 general elections; contested races with both sides' money 75.6% → 77.7%. North Carolina, Wisconsin and Iowa 2016 40–50% → 86–87%; Delaware every cycle 74–83% → 98–100%; Oregon 2026 60% → 92%; Missouri 2016–2018 ~60% → 77%; North Dakota 2016 0% → 91%; Idaho 2018–2022 → 0% (was wrong data). Money-term holdout: seats with both sides' money 2,000 → 2,046 (2022) and 2,788 → 2,816 (2024); MAE after incumbency 5.72 → 5.71 (2022), 5.12 (2024); the live K 0.03 / cap 1.5 remains the sweep's best cell.
+
+Oct 19, 2026
+DATA FIX
+Fundraising: Oregon 2016–2026, Arkansas paper scans
+
+Oregon from ORESTAR: each candidate committee's contributions over the two calendar years up to the election, from the Campaign Finance Transactions export (scripts/fetch-state-leg-finance-or.cjs, then the .py build). Candidates who spend little may file a certificate of limited activity instead of forming a committee, so they have no figure, and the 2016–2020 committee lists are short. Arkansas 2018–2022 registrations whose newest report is a scan with the cumulative box left blank: every report's line-7 contributions for the period was read by eye and summed (scripts/fetch-state-leg-finance-ar-scans-{list,combine}.py). A registration counts only when every scanned report balances or matches its own cumulative column, each date gap is bridged by the carried cash or cumulative, the sum equals the largest cumulative the filer wrote, and the reports reach the election year's primary. Pages filed under the wrong candidate, or shared by two filers, blank the registration. 17 legacy filings return a server error on every request and stay blank.
+
+EFFECT Money on file: 32,470 district-cycles (was 32,265). Oregon general-election candidates with a filing: 30 (2016), 38 (2018), 54 (2020), 79 (2022), 83 (2024), 102 (2026); districts 28–69 of 75. Arkansas: 10 of 55 scanned registrations recovered; +5 general-election candidates. Money-term holdout unchanged at the reported precision.
+
+Oct 18, 2026
+CHANGE
+State legislative projection: a money term, in the forecast and in the district lean
+
+Fundraising (dataset E) now enters the 2026 district projection the way it enters the federal forecast: money(race) = clamp(MONEY_K × (scale × gap% − expected gap%), ±MONEY_CAP), gap% = (R − D) / (R + D) of the two sides' contributions. The expected gap is a least-squares fit, pooled over every chamber, on every contested race with both sides' money on file: a per-year intercept + 30.8 points for the incumbent's side + 0.97 per point of presidential margin (16,170 races, R² 0.50). It uses no result, so it is refitted from whatever money is on file at each build (lib/stateLegMoneyModel.ts), and the backtest can fit it on every year without leakage. The same term at full-cycle receipts is taken out of each past seat row before it enters the lean, so a district's lean no longer carries one cycle's lopsided fundraising. Missing money on either side gives 0, the typical gap for the seat. 2026 receipts are to-date and scaled by 0.9, borrowed from the federal forecast. MONEY_K 0.03 and MONEY_CAP 1.5 are the best cell of a K × cap sweep on the 2022 and 2024 holdouts in both years (scripts/stateLegBacktest.ts --money); the gain falls as the cap grows, and a log-ratio basis and a forward-only term (no strip) did no better. Incumbency, seat noise and the chamber shock were re-measured with the term in. `npm run state-leg-money` rebuilds everything downstream when new fundraising lands.
+
+EFFECT Holdout MAE after incumbency: 2022 5.78 → 5.72, 2024 5.20 → 5.12; on seats with both sides' money, 5.68 → 5.61 and 5.15 → 5.05. INCUMBENCY_PTS 3.0 → 2.7, STATE_SHOCK 3.5 → 3.4, SIGMA unchanged at 7.0. In 2026, 3,030 of 3,799 contested seats carry a money term (mean ±0.9 points, 649 at the cap, balanced between the parties); the projected favourite changes in 32 seats, all within about 2 points either way. Chamber control odds move by 6 points or less (Arizona Senate D 46% → 40%, New Hampshire Senate 38% → 43%); expected Democratic seats nationally +6.5.
+
+Oct 18, 2026
+DATA FIX
+Fundraising: Mississippi 2019 and 2023
+
+Mississippi's legislators serve four-year terms, so a cycle is the four calendar years up to the election. Each year's figure is the calendar-year-to-date contributions on the report that closes it (the annual report, or the January periodic report filed the next year). E-filers' typed reports are read directly, summing each report's period total because the typed year-to-date carries over unevenly. Paper reports (mostly handwritten) were read with OCR and the rest by eye. Each fund table counts when the form's own arithmetic holds (Jan 1 balance + contributions − disbursements = closing balance, or itemized + non-itemized = the period total). Where too many boxes are blank to check, the table still counts unless something on it contradicts the year-to-date figure (a part larger than the total, a filled-in balance that does not close); the same figure copied into both fund tables counts once. These 15 weaker reads are listed in data-entry/state-leg-finance/manual/MS-weak.json. A candidate with any year unread is blank, never a partial sum.
+
+EFFECT Display only. Money on file: 50 states, 32,265 district-cycles (was 32,024). Mississippi general-election candidates with a figure: 112 of 225 in 2019, 116 of 221 in 2023 (the weaker check added 2 and 4). Most of the remaining blanks are paper reports whose figures do not reconcile, or whose summary page is missing from the filing.
+
+Oct 18, 2026
+DATA FIX
+Fundraising: Ohio and New Hampshire 2016, paper filers read by eye, Arkansas registration years, wider name matching
+
+Ohio 2016 from The Accountability Project's public copy of the Secretary of State's yearly candidate contribution files (contributions + fundraiser + other income + in-kind, which reproduces Transparency USA's 2018 totals within 1% for 174 of 202 candidates); the file's office and district are the candidate's current ones, so it is matched by name. New Hampshire 2016: the scanned paper reports in the state's system were read by eye (the last report's campaign-to-date total receipts less surplus carried in from a previous campaign — the column runs across the primary and the general, so the two are not added), e-filers from its transaction export. West Virginia 2016 paper filers: the election-year-to-date box of the latest scanned report, read by eye. Arkansas 2018–2022: the legacy filings are listed under the committee's registration year, usually the odd year before the election, and only the election year had been read; a registration whose newest report is a scan is now null rather than an older report's smaller cumulative. Matching (scripts/assign-state-leg-finance.ts): a committee's own name is tried after the filer's ("Friends of Wes Retherford" for Richard Retherford), and words run together count ("Dallesandro" for D'Allesandro, "Obrien" for O'Brien).
+
+EFFECT Display only. Money on file: 49 states, 32,024 district-cycles (was ~30,900). Ohio 2016: 183 of 205 general-election candidates, all 115 districts. New Hampshire 2016: 334 of 764 candidates in 172 of 228 districts (filing is required only above $500). West Virginia 2016 blanks 128 → 15. Arkansas candidates with a figure: 2018 52 → 155, 2020 23 → 143, 2022 91 → 170. The matching changes added about 250 correct pairs across 25 states and removed none.
+
+Oct 17, 2026
+DATA FIX
+Fundraising: 2016 for the Transparency USA states, older cycles and fuller totals from state records
+
+Transparency USA starts in 2018, so the 2016 cycle (Virginia's 2017) now comes from each state's own records: Arizona See The Money, California Cal-Access, Colorado TRACER, Florida's contribution database, Georgia's legacy ethics search, Idaho's archive (itemized over $50 only), Illinois ISBE D-2 totals, Indiana and Iowa bulk files, Michigan MiTN, Minnesota's district viewer, Nevada's 2021 database dump, New Mexico's legacy CFIS, New York's open data, North Carolina's transaction search, Pennsylvania's exports, South Carolina's ethics API, Texas TEC's database, Virginia's legacy reports (2017), Washington PDC, Wisconsin's API and Wyoming's report. Other gaps filled: Kansas 2016 House (the Ethics Commission's published summary), Maine 2016 and Maryland 2018 (The Accountability Project's public copies of the old state exports), West Virginia 2016 (the SOS historical reports; paper filers stay blank) and South Dakota (its filing PDFs; SDCL 12-27-33 bars commercial use). Hawaii and Missouri now use report totals (election-period-to-date; report summaries) instead of itemized gifts only. Rules kept: private contributions only (Arizona's and Minnesota's public funding and transfers from an earlier committee left out; California's loans left out), a committee is matched to a general-election candidate by name, inside the district where the record has one, and a candidate with several committees keeps the largest (leadership funds and PACs excluded). Shared matching gained two committee-name rules: the candidate's first and last name both in the committee name, or the surname alone when the name also says the chamber ("Moore for House").
+
+EFFECT Display only. Money on file: 27,323 → 31,288 district-cycles (49 states); every 2016 Transparency USA state now has a 2016 cycle except New Hampshire (e-filing was voluntary) and Ohio (its records sit behind a Cloudflare check). Spot checks exact against the filings: Corcoran FL $311,908.34, Madigan IL $5,601,837.75, Ralston GA $1,008,793.84, Roem VA $978,781.63, Heastie NY $1,048,882.66, Davis TX $1,046,043.41, Lucas SC $135,349.03, Thibodeau ME $29,424.81, Hunt NE $135,072.26.
+
+Oct 16, 2026
+DATA FIX
+Fundraising (dataset E) extended to 17 more states from their own campaign-finance portals
+
+Dataset E covered the 25 Transparency USA states plus Alaska 2016–2020. It now adds AR (2024, 2026), CT, DE, HI, KY, LA (2019, 2023), MA, MD (2022 from 11/2020, 2026), ME (2018 on), ND (2016–2024), NE, NJ (2017–2025), OK, TN, UT, VT and WV (2018 on) from each state's own disclosure system (scripts/fetch-state-leg-finance-{st}.py), AK 2022–2026, MO 2020–2026 (itemized only), MT, RI and TN 2016–2026, and OR 2016–2020 in part (ORESTAR began refusing requests; the rest resumes from the cache). Portals list every filer, so scripts/assign-state-leg-finance.ts keeps a record only when its name matches a general-election candidate of that cycle, inside the district when the portal gives one. Contributions are PRIVATE money only: Connecticut's Citizens' Election Program and Maine's Clean Election grants are left out. A cycle is the two calendar years ending with the election (four in Louisiana and Maryland, whose terms are four years; a race's own committee in Kentucky, Oklahoma, Tennessee, New Jersey and Maine). Known undercounts: Hawaii and Missouri publish only itemized gifts (over $100), Maryland's 2022 cycle starts in November 2020, Arkansas 2018–2022 has e-filers only. Statewide name matching never accepts an initial alone (it had put Governor Jeff Landry's committee on House candidate Jacob Landry). Each district page's Electoral history names the source of every year's Raised figures. Declined: OpenSecrets' state profiles (needs a headed browser past Cloudflare, CC BY-NC-SA).
+
+EFFECT Display only — the projection has no money term yet. Money on file: 26 → 47 states, 16,635 → 27,323 district-cycles. A committee with no contribution rows on file is null, never $0. Spot checks against the filings: Mariano MA 2022 $472,192.34, Hanshaw WV 2022 $203,888.77, Lamberth TN 2022 $199,724, Scutari NJ 2023 $2,645,000, Hunt NE 2018 $135,072.26, McCall OK 2022 $463,314.89 (all exact).
+
+Oct 16, 2026
+CHANGE
+Chamber projection headline = the sum of each seat's projected winner
+
+A chamber's 2026 projection headline (its chamber page and the state page) showed the simulation's mean seat count rounded, while the chamber map's counter summed each seat's projected winner, so the two could disagree by a seat or more: a party trailing narrowly in several seats is credited with fractions of them in the mean. The headline now uses the counter's rule, from one shared function (lib/stateLegAtlas.ts projectedSeatWinners): a contested seat to the side of its margin, an uncontested one to the only major party, seats the field decides to their party, a modeled independent's seat to whoever is favored, seats not up to their member. The 80% range and the control odds are still read from the 5,000 draws; /legislatures keeps the simulation means, shown to a decimal.
+
+EFFECT Pennsylvania Senate D 23 → D 22 (the mean credited Democrats about one seat across SD-6, 16, 24 and 40, each R-favored), Pennsylvania House D 105 → D 104.
+
+Oct 16, 2026
+DATA FIX
+2026 popular vote for the 11 states with no 2024 presidential column on today's lines
+
+Dataset A (stateLegPresByEra) carries no 2024 presidential vote on the current map for Alaska, Arkansas, Connecticut, Idaho, Maine, Michigan, New Jersey, North Dakota, Oklahoma, Oregon, Pennsylvania and South Dakota, and the popular vote splits the state level by each district's share of the 2024 presidential vote, so all 22 of those chambers came out blank. The model now falls back to the precinct-exact 2024 file the district pages already read (stateLegPres2024), which covers every district in those chambers.
+
+EFFECT Chambers with a 2026 popular vote 65 → 87 (New Jersey has no 2026 legislative election). Pennsylvania House D+3.2 adjusted, Senate D+2.4; Michigan House D+2.0, Senate D+3.9. 2024 holdout now 80 chambers (from 59): district votes MAPE 6.33% → 6.21%, share 5.59% → 5.46%, raw chamber margin MAE 2.13 → 2.08. The 2022-from-2018 holdout is unchanged; the unopposed-turnout median (267 chamber-years, from 250) is still 0.82.
+
+Oct 16, 2026
+CHANGE
+2026 chamber popular vote, raw and adjusted
+
+Every seat on a chamber's 2026 ballot gets a projected vote count and a party split, and the chamber's seats are summed two ways on its page beside the corrected chamber margin: raw (the aggregate the certified results will print, unopposed seats at UNOPPOSED_TURNOUT 0.82 of a contested race, none at all where the state prints no count) and adjusted (every seat lacking a major party imputed as the contested race it would have been, on the district projection's margin — the corrected past margins' rule applied with the projection instead of the presidential vote). Votes = the turnout estimate's state level × the district's share of the 2024 presidential vote × a per-seat factor measured from the seat's own 2022 and 2018 races (relocated through the crosswalk across redistricting, shrunk toward the chamber mean with DROPOFF_SHRINK_VOTES 2,000) × seats up. Shares divide the full vote, with the chamber's recent other-party share by kind of race. New: lib/stateLegPopularVote.ts, scripts/stateLegPopularVoteBacktest.ts.
+
+EFFECT 2022 from 2018 (71 chambers on today's lines, 2,581 contested districts): district votes MAPE 11.5% with the turnout estimate's level (+5.9% bias, the estimate's 2018→2022 miss) and 7.8% with the actual level; district share of the chamber 7.3%; chamber totals 2.7%; raw chamber margin MAE 3.5 (bias −2.5, Florida's 2022 chamber shock the worst). 2024 from the live weights with the actual level: votes 6.3%, share 5.6%, margin MAE 2.1. Shrink grid flat from 0 to 5,000; the chamber mean alone is worse on districts (8.2% share). Today's widest raw-to-adjusted gaps: Rhode Island Senate D+70 → D+23, Massachusetts House D+59 → D+32, Kentucky Senate R+54 → R+24.
+
+Oct 16, 2026
+DATA FIX
+Delaware and Vermont Senate 2020-era presidential blocks held House districts — rebuilt
+
+Dataset A's 2020-era block for both senates carried 41 (Delaware) and 104 (Vermont) districts against chambers of 21 and 16, so every 2016–2020 senate race on those lines was matched to a House-sized presidential figure, and dataset C's crosswalk for the two chambers was built on the same wrong polygons. Cause: scripts/build-state-leg-pres-by-era.py cached the era file's GeoJSON conversion by file name and mtime, and house/DE-2020.json and senate/DE-2020.json share a name. The cache key now includes the chamber; both blocks and both crosswalks were rebuilt (21/21 and 13/13 districts, sums matching the certified totals). A second Vermont fault surfaced in the rebuild: the Python port of the boundary-code rule stripped only the current map's "Senatorial District" suffix, so the 2020-era Senate keys came out as "Addison State Senate District" and matched no result; it now mirrors lib/stateLegBoundaryCode.ts. The popular-vote model also ignores any era block with over 1.3× the chamber's districts, and the projection, TPL and popular-vote holdouts were re-run.
+
+EFFECT Delaware Senate's 2026 turnout factor 1.40 → 1.03 per seat; Vermont Senate's 2018 races now join (11 of 16 districts relocated). Popular-vote holdout chamber totals (actual level) 3.6% → 2.7% MAPE over 71 chambers.
+
+Oct 14, 2026
+CHANGE
+The seat's most recent race carries half of its year's lean; chamber shock and independent noise refitted
+
+The State Navigate comparison showed the largest single-seat disagreements in split-ticket districts (Vermont's Rutland Senate, New York's AD-99) where their lean rests on the last legislative result and ours on the presidential rows. Tested two ways on the holdout (scripts/stateLegBacktest.ts --sweep): the seat rows' share of every year's lean from 0.10 to 0.80 (optimum 0.30–0.40 against the live 0.25, a gain of 0.02–0.09 MAE), and the latest seat row's weight × k with the ratio unchanged (×2–×3 best: MAE after incumbency 5.85 → 5.74 in 2022 and 5.39 → 5.18 in 2024, bias +1.16 → +0.76 and +0.92 → +0.55; ×5 worse). RECENT_SEAT_BOOST = 3 adopted: in the latest year with a seat row that row's type weight is 0.6 against the presidential 0.6, so the seat's own last race is half of that year's lean; TYPE_WEIGHTS stay at P 0.6 / L 0.2. Refitted on the new residuals: STATE_SHOCK 4.0 → 3.5 (chamber-mean spread 3.3 / 3.5), INCUMBENCY_PTS stays 3 (fits 3.6 / 1.8), SIGMA stays 7 (7.2 / 6.9); the independent holdout's robust spread falls from 9.6 to 7.1, inside SIGMA and STATE_SHOCK, so IND_SIGMA 5 → 0.
+
+EFFECT Holdout MAE after incumbency 5.85 → 5.74 (2022), 5.39 → 5.18 (2024). Seats on the ballot projected D 3,029 → 3,013, R 3,073 → 3,090 (the seat rows lean more Republican than the presidential rows in 2024's electorate). Against State Navigate's contested seats the margin correlation rises 0.974 → 0.976 and the mean gap to 3.4 points, ours the more Republican.
+
+Oct 14, 2026
+CHANGE
+Seats a party cannot lose are decided, not drawn; a fusion nominee is one person
+
+Two gaps a comparison with State Navigate's forecast surfaced. (1) Multi-member districts drew every seat on the district's margin even where a party fielded fewer nominees than seats, so a Republican running alone against two Democrats for two seats was given a chance at both. A party now keeps max(0, seats − the other party's nominees) outright, and a post with one party's nominee (Idaho's A/B, Washington's 1/2) is that party's; only the remaining seats are drawn, and a district with none left is "split" (ND HD-11: one Democrat, one Republican, two seats). (2) A candidate nominated by both major parties (Oregon and Vermont cross-nominate; New York fuses) was two nominees, so the race scored as contested on a margin with no opponent — Simcha Felder's 2024 line split made NY SD-22 lean R+44 — and the Vermont Senate's Rutland Republicans, each on both lines, read as a D-vs-R race (lean D+2.6 from the presidential rows) instead of three unopposed Republicans. lib/stateLegAtlas.ts fieldPersons() folds a person's lines into one nominee, in the party they sit for (the roster) or, for a newcomer, the party holding the seat; a past result with one person on both lines contributes no seat row.
+
+EFFECT 114 districts carry decided seats (73 Democratic, 68 Republican); 19 fusion fields and 5 past results re-read. Seats on the ballot projected D 3,042 → 3,029, R 3,061 → 3,073. The two-party holdout is unchanged to two decimals.
+
+Oct 13, 2026
+CHANGE
+Independents are forecast: a credible independent on a one-party ballot is a contest, not a decided seat
+
+A field with one major party used to decide the seat for that party, so Alaska's coalition independents (Schrage, Himschoot, Holland), Maine's Sharon Frost, Rhode Island's Jon Brien and Utah's Emily Buss were booked as certain losses, and no seat could go to an independent. Now a credible independent — sitting, ≥ IND_RECORD_SHARE (40%) in their last head-to-head in the seat, or backed by the absent party (data/stateLegIndependents.ts, researched with sources: Alaska Democrats' candidate pages, the Maine Senate GOP's spending for Stephen Carey) — takes the absent party's place: advantage = ± (lean + β*·E) + incumbency + a personal effect, the mean residual of their last two head-to-heads in the seat shrunk toward IND_PRIOR_PTS (14; 0 for a backed newcomer) with K = IND_SHRINK_K (1), and IND_SIGMA (5) more noise. A party backing an independent over its own nominee under ranked choice (Bryce Edgmon, Alaska SD-S) puts the independent in its place; an appointed incumbent (Buss) gets no incumbency, the federal rule; a multi-member district where the party fields a nominee for every seat (Vermont's Chittenden-15) is a race inside one electorate decided by incumbency and noise. A ballot with no major party at all (Galvin, Whipps, Lipsky, Sibilia, Tennessee's write-in-only 93rd) is an independent seat outright; Nebraska stays unprojected. The chamber simulation now counts D, R and other seats separately, so expected Republican seats no longer absorb unprojected ones.
+
+EFFECT 16 independent races modeled, 8 favored (Himschoot 99%, Schrage 99%, Edgmon 99%, Holland 96%, Frost 91%, Headrick 64%, Brien 59%, Johnson 58%); 12 projected independent seats nationally, 3 of them gains from a party. Holdout (16 past head-to-heads 2018–24): winner called 14/16 vs 13/16 with no prior and 12/16 for the generic-nominee rule the forecast used to imply, RMSE 17.3 vs 24.5. The two-party holdout is unchanged.
+
+Oct 13, 2026
+DATA FIX
+Hawaii's canceled generals go to the primary winners; Tennessee's 93rd is a write-in independent seat
+
+Hawaii cancels a general when one party's primary was the only contest; scripts/fetch-state-leg-candidates-2026.py only handled a single filer (Oklahoma), so HD 24 (Adrian Tam), HD 37 (Trish La Chica) and SD 25 (Chris Lee) were stored as "General election canceled" under party O and left unprojected. The parser now takes the primary winners (Ballotpedia's check mark) when they are all one party. Tennessee's HD 93 has no one on the printed ballot and only independent write-ins (G.A. Hardaway died after a petition error kept him off; the Democratic primary went to a write-in, Britney Thornton, who is not on the general's write-in list); it now reads as an independent seat rather than an empty field.
+
+EFFECT 3 Hawaii seats decided for the Democrats and 1 Tennessee seat to an independent: seats forecast 6,107 → 6,115 together with the four no-major-party seats.
+
+Oct 11, 2026
+DATA FIX
+One candidate page per person across spellings, chamber switches and redraws
+
+Spellings of one name were joined only when they shared a seat, so a member who moved from the House to the Senate (Roger A. Nutt, HD 34 → SD 12) or whose district a redraw renumbered (Andy Josephson, HD 17 → HD 13) had two pages. lib/stateLegCandidateIdentity.ts now parses each spelling (nicknames — Bill/William, Deb/Deborah, quoted ones; middle names and initials; surname particles and apostrophes; generational suffixes; New York ballot-line tags) and the index joins two spellings when the names agree and the seats are linked: the same seat; seats whose territory overlaps (data-entry/state-leg-seat-links.json from scripts/build-state-leg-seat-links.py: every House/Senate and old/new-map polygon pair covering ≥ 10% of the smaller one), unless one ran as a Democrat and the other as a Republican; or two seats that both overlap one district, with a party in common. Never joined: disagreeing middle names (not checked on a shared seat, where it is a typo or maiden name), different suffixes (Hanna Sr./Jr.), or two different seats in one year. Groups join only when every spelling in one is compatible with every spelling in the other. Every merged spelling's slug, and its accent-free form, still resolves. Unlinked pairs with agreeing names are listed by scripts/audit-state-leg-candidate-identity.ts for rulings in data/stateLegCandidateIdentityOverrides.ts.
+
+EFFECT 38,407 → 36,914 pages: 426 joins on overlapping seats, 27 on neighbouring ones, and about 1,170 same-seat joins the old exact first-and-last rule missed (nicknames, particles, initials). 6 joins the old rule made are now split: three suffix pairs (Hanna Sr./Jr. in PA, Craven Sr./Jr. in RI, Harold V. Jones II/III in GA — the last probably a source typo), the Buccos in NJ, two SC Luke Rankins, and GA's William Harris vs William C. Harris. 64 pairs are left for review.
+
+Oct 11, 2026
+DATA FIX
+State legislative fundraising, cycle by cycle, starting with 2026
+
+Dataset E: every general-election candidate's total contributions per the state filings, from Transparency USA's race pages for its 25 states (2018–2026, Virginia 2017–2025; scripts/fetch-state-leg-finance-tu.py, cached crawl) and FollowTheMoney for the rest and for 2016 (scripts/fetch-state-leg-finance-ftm.py, as the API's quota allows). lib/stateLegMoney.ts joins the filings to the atlas's candidates by name (nicknames canonicalised; a filing that matches nobody is kept as unmatched, a candidate without one is null, not zero) and reduces each race to a two-party money gap. Shown on the district header for the current cycle (with its data-through date), as a Raised column in the electoral history, and on candidate pages. The projection's money term is not yet fitted; that follows once the 2022 and 2024 cycles are in.
+
+Oct 11, 2026
+DATA FIX
+Why each open state legislative seat is open: outgoing members with reasons
+
+The English Wikipedia article on each chamber's 2026 election lists members not seeking re-election with the reason (term-limited, retiring, running for another office, resigned, lost renomination). scripts/fetch-state-leg-outgoing-2026.py parses those sections for every chamber on the ballot (968 members, 81 chambers; three line formats; North Dakota and the West Virginia, Pennsylvania, Nevada and New Hampshire Senates carry no list) into data/stateLegOutgoing2026.ts. Shown on the district header as a "Not running" line beside the 2026 ballot, and on the member's candidate page. The Ballotpedia field stays the authority on who is running.
+
+Oct 11, 2026
+DATA FIX
+Candidate pages for every state legislative candidate, 2016–2026, and redistricting maps on every district
+
+Every person who stood in a state legislative general election since 2016, is on a 2026 ballot or sits in a chamber today has a page at /candidates/[name]-[state] (lib/stateLegCandidateIndex.ts: 38,388 people, 65,428 races), beside the federal candidate pages and merged with them where the same name ran in the same state (366 people). Spellings that share first and last name and a seat are one person; any spelling's slug resolves. Each district's redistricting history now draws before/after maps from the boundary files: the previous map shaded by each old district's share of today's population, today's district outlined, and the new map beside it; New Hampshire floterials draw their base districts.
+
+Oct 11, 2026
+CHANGE
+A chamber-level shock in the state legislative simulation
+
+The chamber simulation drew one national shock shared by every seat and independent SIGMA noise per seat, so a state-wide miss (a governor's race on the same ballot, a state issue, a map the lean has not caught up with) was treated as independent seat noise and chamber ranges were too narrow. The backtest now splits the residual spread into a chamber-level shock τ (method of moments on chamber-mean residuals, chambers with 10+ contested seats: 3.8 in 2024, 3.9 in 2022) and the seat noise after it (7.0 / 7.2). STATE_SHOCK = 4 is one draw shared by every seat of a chamber in each simulation and enters each seat's σ; SIGMA 8 → 7 so a single seat's spread is unchanged (√(7² + 4²) ≈ 8.1).
+
+EFFECT Per-seat margins and ratings unchanged. Chamber 80% seat ranges widen from 3.6 to 6.2 seats on average; 7 chambers in play (20–80%) instead of 6. New Hampshire House P(D majority) 100% → 83%, Pennsylvania House 92% → 76%, Maine House 100% → 88%, Minnesota House 100% → 93%, Wisconsin Assembly 37% → 45%, Arizona House 6% → 17%, Michigan Senate 77% → 69%.
+
+Oct 11, 2026
+DATA FIX
+New Hampshire floterials recombined from their base districts
+
+The 39 House floterial (overlay) districts have no polygon in any boundary file and so had no presidential figure: no presidential rows in the projection, no imputation in the chamber margin (skipped), no lean trend. On the current map each is the sum of the base districts it sits on (the roster's components), so scripts/build-state-leg-pres-by-era.mjs now writes that sum into the current era (overlayOf marks it). The superseded 2020-map floterials are still absent. The atlas draws the base districts as the floterial's map.
+
+EFFECT 39 districts gain 2016/2020/2024 presidential rows and a fuller 2026 projection; the New Hampshire chamber margin's skipped count on the current map falls to zero (State TPL moves by less than 0.1).
+
+Oct 10, 2026
+CHANGE
+2026 projection for every state legislative district, and the State Legislatures board
+
+lib/stateLegForecast.ts: a district lean from the seat's contested generals (races on a superseded map relocated onto today's lines through the population crosswalk and the presidential delta) and the presidential vote on today's lines, P/L type weights 0.6/0.2, year decay and Huber as in the State TPL; projected with β* × E(2026) and a fitted state-legislative incumbency of 3 points; a field with one major party is decided outright; σ 8 race noise plus the national shock; 5,000-draw chamber simulation with holdovers. Shown as the atlas's default colour mode, a per-district outlook ledger, a chamber header stat and /legislatures.
+
+EFFECT Holdout (scripts/stateLegBacktest.ts): 2024, 3,348 contested districts on today's lines, MAE 5.5 → 5.4 after incumbency (fitted 2.4), σ 8.0; 2022, 2,615 districts, MAE 6.4 → 5.9, incumbency 4.0, σ 8.2. Today: 88 chambers, 6 in play (Arizona Senate, Michigan House and Senate, New Hampshire Senate, Wisconsin House and Senate).
+
+Oct 10, 2026
+DATA FIX
+2026 general-election candidates for every state legislative district on the ballot
+
+Ballotpedia's chamber election pages, read from their "general election 2026" candidate tables: Democratic, Republican and Other candidates per district, incumbents marked, multi-member districts' seat counts, write-ins flagged (scripts/fetch-state-leg-candidates-2026.py → data/stateLegCandidates2026.ts). Shown on the district atlas (header line, Open seats and Unopposed filters, a chamber-level field stat) and ready for the 2026 projection's contest rules.
+
+Oct 10, 2026
+CHANGE
+State Legislature rows rebuilt district by district: a contested pool and an imputed unopposed pool
+
+The State TPL's State Legislature entry was the raw chamber aggregate — every counted district's votes summed — which counted a printed unopposed race as a 100–0 result and omitted an unprinted one, so it reported the margin of whichever seats happened to be contested and overstated the dominant party wherever unopposed races are printed. Each year now carries two rows that share the L weight on their turnout (lib/stateLegChamberMargin.ts): the contested pool (districts where both major parties drew votes, their own margin and votes) and the unopposed pool, imputed district by district from the presidential vote on the map the race was run on (data/stateLegPresByEra.ts, nearest presidential year), weighted by that presidential vote scaled to the chamber's legislative-to-presidential turnout ratio and stripping the environment of the source presidential year — the rule imputed House seats already followed. IMPUTED_LEG_ROW_WEIGHT = 1 (0.5 tested, no better). The environment fit is unchanged in form: imputed rows never enter it, so it now sees the contested pool. TPL_RAW_LEG=1 restores the old row for comparison.
+
+EFFECT 2024 holdout: President 2.46 → 2.24, Senate 5.02 → 4.90, House average 3.06 → 3.41 (the harness references were re-baselined and the validation table re-emitted). 44 of 50 state TPLs move, 24 by half a point or more, mean 0.75, 34 toward Democrats: the states that print unopposed races compress toward their presidential lean — Wyoming R+44.7 → R+42.1, South Dakota R+30.8 → R+28.4, North Dakota R+35.0 → R+33.1, West Virginia R+36.2 → R+34.4, and on the other side Rhode Island D+20.3 → D+17.9 and Massachusetts D+30.0 → D+27.9.
+
+Oct 10, 2026
+DATA FIX
+Legislative District Atlas: presidential results on every map era, named candidates, redistricting history
+
+Three datasets behind the new per-chamber district pages (/states/[state]/legislature/[chamber]). (A) 2016, 2020 and 2024 presidential votes inside every state legislative district on the current map and on each superseded map, from Dave's Redistricting 2020-VTD returns area-apportioned onto each era's polygons; the 2024-on-current cell stays the precinct-exact one. (B) Candidate names for every general election 2016–2025: Klarner's candidate file (names, incumbency, winners) for 2016–2022, MEDSL and the state canvasses for 2024, Wikipedia and the Secretaries of State for the odd years; winners, incumbents and unopposed flags derived where a source carried none. (C) Per-district redistricting history from population-weighted overlays of consecutive maps, with generated descriptions and the old-to-new crosswalk the 2026 projection will use.
+
+EFFECT 99 chamber pages. 28,771 of 28,807 district-years named (99.9%). Overlay error on the 2024 holdout: median 0.04 points of margin across 73 chambers, worst Montana House 2.5. No model output changed.
+
+Oct 10, 2026
+DATA FIX
+New Hampshire 2022 House votes corrected from the state's election-database export
+
+The county-PDF parse behind data-entry/new_hampshire_2022_legislature.csv had double-counted 17 districts whose candidate header spanned two groups, tripled Hillsborough 16, mis-assigned Rockingham 13 and 16 and Strafford 15, and omitted Strafford 16. The CSV is now regenerated from the Secretary of State's own tabulation (the NH election database's export), where every district's candidate votes equal its Total Votes Cast row; the statewide row in state_leg.csv follows.
+
+EFFECT Chamber total 2,275,330 → 2,089,636; Democratic 1,154,052 → 1,044,611, Republican 1,102,958 → 1,033,731; margin D+2.2 → D+0.5. New Hampshire's State TPL moves with its 2022 State Legislature row (5% race-type weight).

@@ -429,6 +429,105 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     };
   };
 
+  // The map, memoized apart from hover: rebuilding it on every mouseenter re-walked all ~3,200
+  // county shapes (react-simple-maps' zoom context) even though none of them changed.
+  const mapSvg = useMemo(() => (
+      <ComposableMap
+        width={975}
+        height={610}
+        projection="geoAlbersUsa"
+        projectionConfig={{ scale: 1200 }}
+        preserveAspectRatio="xMidYMid slice"
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <FlipPatternDefs colors={[CONTROL_D, CONTROL_R]} />
+        <ZoomableGroup
+          center={mapView.center}
+          zoom={mapView.zoom}
+          // Default view sits at zoom 1, which is also the furthest you can zoom out.
+          minZoom={1}
+          filterZoomEvent={filterMapZoomEvent}
+          onMoveStart={() => { gestureRef.current = null; }}
+          onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
+            if (!gestureRef.current) gestureRef.current = { startX: x, startY: y, startK: k, lastX: x, lastY: y, lastK: k };
+            else { gestureRef.current.lastX = x; gestureRef.current.lastY = y; gestureRef.current.lastK = k; }
+          }}
+          onMoveEnd={({ coordinates, zoom }: { coordinates: [number, number] | null; zoom: number }) => {
+            const validCenter = coordinates
+              && coordinates.length === 2
+              && coordinates.every(Number.isFinite);
+            const gesture = gestureRef.current;
+            gestureRef.current = null;
+            if (!validCenter || !Number.isFinite(zoom)) return;
+
+            // A plain click still nudges d3-zoom's internal transform by a pixel or two
+            // (it has no click/drag tolerance of its own). Detect that here by pixel
+            // distance + zoom delta over the gesture, and snap back to rest instead of
+            // committing it as a real pan.
+            const pixelDist = gesture ? Math.hypot(gesture.lastX - gesture.startX, gesture.lastY - gesture.startY) : 0;
+            const zoomDelta = gesture ? Math.abs(gesture.lastK - gesture.startK) : 0;
+            if (pixelDist < 4 && zoomDelta < 0.001) {
+              setMapView({ center: coordinates, zoom });
+              requestAnimationFrame(() => setMapView(settledViewRef.current));
+              return;
+            }
+
+            const next = { center: coordinates, zoom };
+            settledViewRef.current = next;
+            setMapView(next);
+            setViewChanged(
+              zoom !== 1
+              || Math.abs(coordinates[0] - DEFAULT_MAP_CENTER[0]) > 0.001
+              || Math.abs(coordinates[1] - DEFAULT_MAP_CENTER[1]) > 0.001
+            );
+          }}
+        >
+          {geoLevel === "county" && (
+            <>
+              <Geographies geography={COUNTIES_URL}>
+                {({ geographies }: { geographies: GeoFeature[] }) => (
+                  <GeoLayer level="county" geographies={geographies} entries={entries} specialOnly={specialOnly} control={false} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+                )}
+              </Geographies>
+
+              <StateOutlines t={t} />
+            </>
+          )}
+
+          {geoLevel === "district" && (
+            <>
+            <Geographies
+              key={districtGeoUrl}
+              geography={districtGeoUrl}
+              parseGeographies={parseDistrictGeographies}
+            >
+              {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
+                <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} control={control} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+              )}
+            </Geographies>
+            <StateOutlines t={t} />
+            </>
+          )}
+
+          {geoLevel === "state" && (
+            <>
+            <Geographies geography={STATES_URL}>
+              {({ geographies }: { geographies: GeoFeature[] }) => (
+                <GeoLayer level="state" geographies={geographies} entries={entries} specialOnly={specialOnly} control={control} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
+              )}
+            </Geographies>
+            <StateOutlines t={t} />
+            </>
+          )}
+        </ZoomableGroup>
+      </ComposableMap>
+  ), [t, geoLevel, entries, specialOnly, control, raceType, year, isPresident, selectedKey, districtGeoUrl, mapView, onHover, onSelect]);
+
   const controlButton = (className: string) => canControl && (
     <button
       type="button"
@@ -605,100 +704,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           {/* Hover tooltip */}
           {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
 
-          <ComposableMap
-            width={975}
-            height={610}
-            projection="geoAlbersUsa"
-            projectionConfig={{ scale: 1200 }}
-            preserveAspectRatio="xMidYMid slice"
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-            }}
-          >
-            <FlipPatternDefs colors={[CONTROL_D, CONTROL_R]} />
-            <ZoomableGroup
-              center={mapView.center}
-              zoom={mapView.zoom}
-              // Default view sits at zoom 1, which is also the furthest you can zoom out.
-              minZoom={1}
-              filterZoomEvent={filterMapZoomEvent}
-              onMoveStart={() => { gestureRef.current = null; }}
-              onMove={({ x, y, zoom: k }: { x: number; y: number; zoom: number }) => {
-                if (!gestureRef.current) gestureRef.current = { startX: x, startY: y, startK: k, lastX: x, lastY: y, lastK: k };
-                else { gestureRef.current.lastX = x; gestureRef.current.lastY = y; gestureRef.current.lastK = k; }
-              }}
-              onMoveEnd={({ coordinates, zoom }: { coordinates: [number, number] | null; zoom: number }) => {
-                const validCenter = coordinates
-                  && coordinates.length === 2
-                  && coordinates.every(Number.isFinite);
-                const gesture = gestureRef.current;
-                gestureRef.current = null;
-                if (!validCenter || !Number.isFinite(zoom)) return;
-
-                // A plain click still nudges d3-zoom's internal transform by a pixel or two
-                // (it has no click/drag tolerance of its own). Detect that here by pixel
-                // distance + zoom delta over the gesture, and snap back to rest instead of
-                // committing it as a real pan.
-                const pixelDist = gesture ? Math.hypot(gesture.lastX - gesture.startX, gesture.lastY - gesture.startY) : 0;
-                const zoomDelta = gesture ? Math.abs(gesture.lastK - gesture.startK) : 0;
-                if (pixelDist < 4 && zoomDelta < 0.001) {
-                  setMapView({ center: coordinates, zoom });
-                  requestAnimationFrame(() => setMapView(settledViewRef.current));
-                  return;
-                }
-
-                const next = { center: coordinates, zoom };
-                settledViewRef.current = next;
-                setMapView(next);
-                setViewChanged(
-                  zoom !== 1
-                  || Math.abs(coordinates[0] - DEFAULT_MAP_CENTER[0]) > 0.001
-                  || Math.abs(coordinates[1] - DEFAULT_MAP_CENTER[1]) > 0.001
-                );
-              }}
-            >
-              {geoLevel === "county" && (
-                <>
-                  <Geographies geography={COUNTIES_URL}>
-                    {({ geographies }: { geographies: GeoFeature[] }) => (
-                      <GeoLayer level="county" geographies={geographies} entries={entries} specialOnly={specialOnly} control={false} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                    )}
-                  </Geographies>
-
-                  <StateOutlines t={t} />
-                </>
-              )}
-
-              {geoLevel === "district" && (
-                <>
-                <Geographies
-                  key={districtGeoUrl}
-                  geography={districtGeoUrl}
-                  parseGeographies={parseDistrictGeographies}
-                >
-                  {({ geographies }: { geographies: DistrictGeoFeature[] }) => (
-                    <GeoLayer level="district" geographies={geographies} entries={entries} specialOnly={specialOnly} control={control} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                  )}
-                </Geographies>
-                <StateOutlines t={t} />
-                </>
-              )}
-
-              {geoLevel === "state" && (
-                <>
-                <Geographies geography={STATES_URL}>
-                  {({ geographies }: { geographies: GeoFeature[] }) => (
-                    <GeoLayer level="state" geographies={geographies} entries={entries} specialOnly={specialOnly} control={control} raceType={raceType} year={year} isPresident={isPresident} selectedKey={selectedKey} t={t} onHover={onHover} onSelect={onSelect} />
-                  )}
-                </Geographies>
-                <StateOutlines t={t} />
-                </>
-              )}
-            </ZoomableGroup>
-          </ComposableMap>
+          {mapSvg}
 
           {viewChanged && (
             <button

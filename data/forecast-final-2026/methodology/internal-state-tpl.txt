@@ -1,0 +1,368 @@
+http://localhost:3000/analysis/internal-methodology/state-tpl
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+STATE TPL · TRUE PARTISAN LEAN
+A state's lean in a neutral year
+
+State TPL is the margin a generic Republican against a generic Democrat would produce in a neutral national year. It is built from every eligible race from 2016 to 2025 — President, Senate, Governor, House and State Legislature, odd years included — by stripping three additive distortions from each and averaging across offices and years. It is the lean the Senate and Governor forecasts start from. Live ledgers: TPL tab.
+
+margin(state, race, year) = lean + β*·E(year) + incumbency + fundraising + residual
+NM   = Adjusted margin + incumbency strip + fundraising strip − β*·E(year)      each strip additive, applied once
+TPL  = Σ year weight × WRS(year)        WRS = type-weighted mean of that year's NMs
+Centered TPL = TPL − median of the 50 state TPLs
+R-positive throughout. Candidate quality is deliberately not a term: outlier candidates are downweighted instead, and their residuals become WAR.
+NOW	
+Races in the fit	2,606
+Races aggregated / imputed / statewide rows Huber-downweighted / House years Huber-downweighted	3,068 / 462 / 166 / 21
+Median state TPL	R+1.8
+Most Democratic · most Republican	HI D+30.9 · WY R+41.8
+STEP 0
+Which races count
+
+A margin is a usable Republican-vs-Democrat measurement only if a genuine (or caucus-aligned) nominee of each major party was on the general ballot. There is no margin threshold: a legitimate blowout stays at face value.
+
+CLASS	MEANING	TREATMENT
+eligible	A real Republican against a real Democrat	Used as is
+no-dem / no-rep	A major party absent — nobody, or a minor-party or unaligned independent stand-in (Osborn NE 2024, McMullin UT 2022)	Imputed
+same-party	Top-two or runoff between two candidates of one party	Imputed
+fragmented	Louisiana jungle general decided without a runoff: the top candidate of each party understates split fields. Detected as D% + R% < 90 in LA	Imputed
+Aligned independents
+Count as their party’s nominee: Bernie Sanders (D), Angus King (D), Kevin Kiley (R). Every other independent does not.
+Write-in-scale slots
+A slot under 5% while the opponent clears 90%, or under 2% outright, is treated as unfilled.
+Margin basis
+Every margin is R% − D% as a percent of the FULL total vote, third parties included — never a two-party share.
+STEP 1
+Adjusted margin and imputation
+Eligible race
+Adjusted = Raw, untouched.
+Ineligible race (⊘)
+Adjusted is imputed from the seat’s nearest presidential result: district-level for a House seat (restricted to the boundary vintage the race was run on), statewide otherwise. Imputed rows skip the incumbency and fundraising strips, strip the environment of the SOURCE presidential year, and enter aggregation at weight 0.5. An imputed House row instead keeps weight 1 × the source presidential year’s turnout share: it is that district’s share of the state’s House vote, and halving it would drop half the district out of the state’s sum.
+State Legislature
+Two rows per year over every chamber on the ballot that year, built district by district (Legislative atlas). The contested pool is the margin of the districts where both major parties drew votes, as a share of their full total, weighted by those votes. The unopposed pool (⊘) is imputed: each uncontested, one-party or uncounted district contributes its presidential margin on the map it was run on, weighted by that presidential vote scaled to the chamber's legislative-to-presidential turnout ratio; the row strips the environment of that presidential year. A district on the year's map with no results row at all (MEDSL's 2024 files and Louisiana's omit unprinted unopposed races) joins the unopposed pool when its seat was up — every seat, in a chamber that elects them all at once. A staggered chamber's seats not up join the contested row as estimates, so the row measures the whole chamber rather than whichever seat class was on the ballot (the classes can differ by several points in lean): each is its presidential margin plus the gap the contested seats ran from theirs that year (below). Before 2026-10-10 the entry was the raw chamber aggregate, which counted a printed unopposed race as a 100–0 result and so overstated the dominant party in every state that prints them. A year counts once every chamber that WAS on the ballot is sourced (staggered senates sit out some years; Nebraska is unicameral).
+Senate specials
+A state with a regular and a special Senate race in one year carries both rows; both feed that year's Senate mean.
+STEPS 2–3
+Incumbency and fundraising strips
+
+Each strip removes what the incumbent's party, or a money advantage, added to the margin — so what remains describes the seat, not the candidates' circumstances. The forecast adds incumbency back for 2026 from the same table.
+
+incumbency
+H 3.0 · S 3.3 · G 4.8
+Points the incumbent's party is worth, stripped toward the other party. Senate and Governor are fitted inside the fit; House is a fixed 3. President and State Legislature carry none.
+FITTED LIVE
+See Forecast → Incumbency.
+APPOINTED_INCUMBENCY_SHARE
+0
+Share of the advantage stripped for an incumbent who had never won the seat. 0 = treated as an open seat.
+JUDGMENT CALL
+FF_K · FF_MAX
+0.02 · ±2
+Fundraising strip = −clamp(FF_K × gap%, ±FF_MAX), gap% = (R$ − D$)/(R$ + D$) × 100. Applied only where both receipts are known; never to President or imputed rows.
+BACKTEST-CALIBRATED
+tplCalibrate FF sweep on the clean presidential target. Larger k overcorrects: the receipts gap partly double-counts incumbency. (The forecast uses a different, residual-basis money rule.)
+STEP 4
+The fit: environment, elasticity, incumbency
+
+One national environment number per year, one elasticity per state, and the Senate and Governor incumbency values are estimated together by Huber-weighted alternating least squares over the full eligible panel.
+
+adj  = margin + fundraising strip + incumbency strip   ≈   lean(state) + β(state) × E(year)
+row base weight = RACE_TYPE_WEIGHTS[type] / count(state, year, type)
+w    = base × min(1, HUBER_C / |residual|)                                 HUBER_C = 7
+E(y) = Σ w·β·(adj − lean) / Σ w·β²  ×  n / (n + SPARSE_YEAR_K)             SPARSE_YEAR_K = 4
+β*   = clamp(1 + BETA_SHRINK × (β̂ − 1), BETA_MIN, BETA_MAX)               = clamp(1 + 0.5(β̂ − 1), 0.5, 1.6)
+inc(office) = Σ w·sign·(margin + FF strip − lean − β*·E) / Σ w            over incumbent-held Senate / Governor rows
+4 alternating rounds (converged by round 4). The base weight makes a state-year's House rows share the House weight instead of outvoting its single presidential row, so the fitted lean answers the same question TPL does.
+FITTED NATIONAL ENVIRONMENT E(YEAR)
+identified from within-state changes, so which seats happen to be up cannot skew it
+	2016	2017	2018	2019	2020	2021	2022	2023	2024	2025
+E	R+1.5	R+0.3	D+4.4	R+2.0	D+1.2	R+4.3	R+1.0	R+0.3	R+2.8	D+0.6
+Centered so the period average is about zero. Odd years get their own E from the VA / NJ / KY / LA / MS races, shrunk hard by the sparse-year factor.
+STATE ELASTICITY Β*
+how strongly a state moves with the nation
+LEAST ELASTIC	Β*	RAW Β̂	MOST ELASTIC	Β*	RAW Β̂
+WA	0.50	-0.11	WV	1.55	2.10
+LA	0.53	0.06	MT	1.41	1.82
+OR	0.61	0.22	WY	1.30	1.61
+UT	0.63	0.25	ID	1.27	1.54
+AR	0.69	0.39	ND	1.26	1.52
+The forecast multiplies the national environment by the same β*; counties and districts use their parent state's.
+HUBER_C
+7
+Residual size (pts) beyond which a race is downweighted: every row in the fit, and in aggregation each statewide row and each whole House year (House rows carry no row-level factor — a packed district is not an outlier). This is what keeps Manchin, Scott and Hogan from dragging a state's lean.
+DESIGNED, NOT CALIBRATED
+tplCalibrate: 4–10 move the objective ≤ 0.01. Disabling Huber won ~0.02 on presidential targets at the cost of Senate accuracy and robustness — rejected by design.
+SPARSE_YEAR_K
+4
+E(y) shrink n/(n + K): reins in thin odd years.
+DESIGNED, NOT CALIBRATED
+2–8 move the objective ≤ 0.01.
+BETA_SHRINK · MIN · MAX
+0.5 · 0.5 · 1.6
+Halfway shrink of each state's raw elasticity toward 1, then clamped. No negative elasticity is possible.
+DESIGNED, NOT CALIBRATED
+0.3–0.7 move the objective ≤ 0.01.
+FIT_ITERATIONS
+4
+Alternating least-squares rounds.
+DESIGNED, NOT CALIBRATED
+STEPS 5–6
+Robust weighting and aggregation
+aggWeight    = (imputed ? 0.5 : 1) × min(1, HUBER_C / |NM − fitted lean|)         statewide rows (P, S, G, Leg)
+aggWeight    = (imputed ? 1 : 1) × total votes / mean House turnout that year     House rows — no row-level Huber; an imputed district keeps its share
+aggWeight    = (imputed ? 1 : 1) × Huber × pool turnout / mean pool turnout that year   State Legislature rows — contested pool and unopposed pool share the L weight on their electorates
+type NM      = aggWeight-weighted mean of the type's NMs that year
+House factor = min(1, HUBER_C / |House NM − fitted lean|)      one Huber check on the whole House year, applied to its type weight
+WRS(year)    = Σ type weight × type NM      base weights (House × its factor) redistributed among the types present
+year weight  ∝ 0.75^(2026 − year) × coverage    coverage = Σ base type weights present that year (House × its factor)
+TPL          = Σ normalized year weight × WRS
+Coverage is what stops a sparse odd year (one governor race) from dominating through redistribution. A year with no races drops out and the rest renormalize. House rows are turnout-weighted because the districts sum to the state: each district's result is a share of the state's House vote, and a packed D+60 seat is not an outlier. Row-level Huber on House rows handed every packed-map state's House aggregate to the party with more middling seats (Georgia 2024: R+10 against a turnout-weighted R+2 and a presidential NM of R+0.3), so the outlier check is applied once to the whole House year instead. An imputed House row is weighted by the turnout of the presidential result it borrows, not by its own depressed turnout.
+RACE-TYPE WEIGHTS
+OFFICE	BASE WEIGHT	FLOOR
+President	0.60	.20
+House	0.20	.10
+Senate	0.10	.05
+State Legislature	0.07	.03
+Governor	0.03	.02
+Calibrated (tplCalibrate, leakage-free two-round holdout): the knee of the presidential-weight curve. The objective marginally preferred P .65–.70, driven almost entirely by the 2024 presidential target; declined to keep the multi-office identity. A later re-run proposed P .70 / S .08 / H .12 and was also declined.
+YEAR WEIGHTS
+recency only, before coverage
+	2016	2017	2018	2019	2020	2021	2022	2023	2024	2025
+weight	0.056	0.075	0.100	0.133	0.178	0.237	0.316	0.422	0.563	0.750
+Geometric decay per year, anchored on 2026. Calibrated: monotone improvement from 1.0 down to 0.75 on both holdout rounds; 0.65–0.70 no better.
+IMPUTED_RACE_WEIGHT
+0.5
+An imputed statewide row is a lean borrowed from a presidential result, not an observation of its own.
+DESIGNED, NOT CALIBRATED
+0.25–1.0 move the calibration objective ≤ 0.01.
+IMPUTED_HOUSE_ROW_WEIGHT
+1
+An imputed House row is a turnout-weighted share of the state's House vote, so it keeps its full share; its value is the district's own presidential lean.
+JUDGMENT CALL
+0.5 → 1.0 costs 0.025 on the calibration objective; kept at 1 so the districts still sum to the state.
+IMPUTED_LEG_ROW_WEIGHT
+1
+The State Legislature's unopposed pool keeps its full turnout share for the same reason a House seat does: it is that part of the chamber's electorate.
+BACKTEST-CALIBRATED
+2024 holdout, 2026-10-10: at 0.5 President 2.25 / Senate 4.89 / House 3.52 against 2.24 / 4.90 / 3.41 at 1 — no better on the two targets that improved, worse on the third.
+LEG_NOT_UP_MODE
+slope
+How a staggered chamber's not-up seats are estimated: off (left out), flat (presidential margin + the contested seats' mean gap) or slope (the gap fitted on presidential lean).
+BACKTEST-CALIBRATED
+Hidden-seat-class test, below.
+LEG_NOT_UP_SLOPE_K
+10
+Shrinkage of the gap's slope: b × n / (n + k) on n contested seats, so a chamber with few contested races leans on the flat gap.
+BACKTEST-CALIBRATED
+Same test: k 5–10 best; k 0 and k ≥ 50 slightly worse.
+WORKED EXAMPLE · LIVE
+Ohio
+
+One race taken through the strips, then the state’s year aggregation. Full ledger: Ohio State TPL.
+
+2022 SENATE
+JD Vance (R) vs Tim Ryan (D)
+RAW MARGINR% − D% of the full total vote
+R+6.1
++
+INCUMBENCY STRIPopen seat
+EVEN
++
+FUNDRAISING STRIPreceipts D $57.8M · R $16.0M
+R+1.1
++
+ENVIRONMENT STRIP−β* × E(year)
+D+0.9
+=
+NEUTRAL MARGIN (NM)aggregation weight 1.00
+R+6.3
+YEAR AGGREGATION
+YEAR	OFFICES PRESENT	COVERAGE	RECENCY	FINAL WEIGHT	YEAR MARGIN (WRS)
+2016	P 62% · S 10% · H 21% · L 7%	0.97	0.056	5.9%	R+8.9
+2018	G 8% · S 25% · H 50% · L 18%	0.40	0.100	4.3%	R+6.2
+2020	P 69% · H 23% · L 8%	0.87	0.178	16.8%	R+10.0
+2022	G 8% · S 25% · H 50% · L 18%	0.40	0.316	13.7%	R+9.9
+2024	P 62% · S 10% · H 21% · L 7%	0.97	0.563	59.2%	R+8.5
+Offices present shows each type's redistributed share within the year; a House year more than HUBER_C from its anchor (the state's fitted lean; for a county, its statewide-rows lean) shows its Huber factor. Final weight = recency × coverage, normalized over the years with data.
+STATE TPL
+R+8.9
+MEDIAN STATE
+R+1.8
+=
+CENTERED TPLTPL − median
+R+7.1
+HIDDEN SEAT CLASSES · GENERATED 2026-10-23
+Seats not up for election
+
+A staggered chamber puts a different half (or third) of its seats on the ballot each cycle, and the seats up one year can lean several points either way of the chamber. The State Legislature row adds the seats that sat out as estimates, carried in that year’s own environment.
+
+gap_j        = legislative margin − presidential margin           each contested seat up, on the lines it was run on
+a, b         = vote-weighted fit of gap_j = a + b·(P_j − P̄)          P̄ = the contested seats' vote-weighted mean presidential margin
+seat estimate = P_i + a + b·n/(n + 10)·(clamp(P_i) − P̄)    each seat not up; clamp = the range of P_j the fit saw
+weight       = the seat's presidential votes × the chamber's legislative/presidential turnout ratio
+row          = contested seats' votes + not-up estimates, combined on those weights
+A chamber with fewer than 5 contested seats borrows the other chamber's gap that year. Which seats were not up: a staggered chamber's districts with no results row, except a seat whose last regular election was that year (an unprinted unopposed race, imputed as unopposed instead). Live setting: slope.
+ESTIMATOR	ALTERNATE: HIDDEN HALF	ALTERNATE: FULL ROW	RANDOM: HIDDEN HALF	RANDOM: FULL ROW
+none	5.91	2.96	7.18	3.59
+flat	2.85	1.43	2.85	1.43
+slope k=0	2.79	1.39	2.82	1.41
+slope k=5	2.76	1.38	2.78	1.39
+slope k=10	2.76	1.38	2.77	1.39
+slope k=20	2.77	1.38	2.78	1.39
+slope k=50	2.80	1.40	2.80	1.40
+slope k=100	2.82	1.41	2.81	1.41
+MAE in margin points over 308 chamber-years that elected every seat at once: each is split into two classes (alternate districts, and 20 random halves), and one half's contested seats are estimated from the other's. "none" is the row before this term — the hidden half assumed to vote like the visible one.
+HOLDOUT · GENERATED 2026-10-19
+Validation
+
+Each predictor is built from information through 2022 and scored on the 2024 results across the states, after removing a uniform national shift (the median residual). The full pipeline should beat its own ablations.
+
+TARGET	PREDICTOR	STATES	MAE	R	SHIFT REMOVED
+2024 President	TPL holdout (full NM pipeline)	50	2.24	0.990	R+2.56
+2024 President	Adjusted only (no IF/CQ/WA)	50	2.21	0.990	R+2.76
+2024 President	Raw, clipped ±50	50	2.53	0.987	R+2.63
+2024 President	2020 presidential alone	50	1.93	0.994	R+4.05
+2024 Senate	TPL holdout (full NM pipeline)	33	4.91	0.949	D+0.76
+2024 Senate	Adjusted only (no IF/CQ/WA)	33	4.75	0.950	R+0.31
+2024 Senate	Raw, clipped ±50	33	4.74	0.951	R+0.57
+2024 Senate	2020 presidential alone	33	4.95	0.947	R+1.38
+2024 House avg (adjusted)	TPL holdout (full NM pipeline)	50	3.42	0.990	R+1.84
+2024 House avg (adjusted)	Adjusted only (no IF/CQ/WA)	50	2.60	0.992	R+1.81
+2024 House avg (adjusted)	Raw, clipped ±50	50	2.73	0.992	R+1.57
+2024 House avg (adjusted)	2020 presidential alone	50	2.79	0.985	R+3.41
+Acceptance against the recorded reference values: PASS. 2020 presidential alone still beats TPL on the 2024 presidential target — TPL trades that for being the better predictor of Senate and multi-office results. House TPL trails "Adjusted only" because the raw House target still contains the incumbency and money that TPL strips.
+OPEN ITEMS
+Known limitations
+State Legislature pools
+A district with no presidential figure on its lines (New Hampshire's floterials, a key the boundary data lacks) is skipped rather than guessed; the environment fit still sees only the contested pool, since imputed rows never enter it.
+House incumbency
+Fixed, not fitted, in this state-anchored fit.
+Tracking harness
+The holdout does not re-fit E and β inside the window (the calibration script does); a strict refit-per-holdout harness is open.
+No national TPL
+The model is built state-up; the median state is the stand-in national baseline.
+REFERENCE
+Code and commands
+CONSTANT INDEX
+every key of TPL_GLOBAL_CONSTANTS, and where it is documented
+RACE_TYPE_WEIGHTS
+YEAR_WEIGHTS
+YEARS
+HUBER_C
+FIT_ITERATIONS
+SPARSE_YEAR_K
+BETA_SHRINK
+BETA_MIN
+BETA_MAX
+BS_WEIGHT_K
+WHERE IT LIVES
+lib/tplCompute.ts
+generateRaceList, getRawMargin, getTplFit, calculateStateModel, aggregateYears.
+data/tplModelData.ts
+TPL_GLOBAL_CONSTANTS with calibration provenance.
+data/raceEligibility.ts
+classifyEligibility, ALIGNED_INDEPENDENTS, the Louisiana jungle rule.
+data/fundraisingData.ts ← data-entry/fundraising_2016_2026.csv
+Receipts behind the fundraising strip.
+components/TplModelPage.tsx
+The ledger UI on the TPL tab.
+docs/TPL_MODEL_SPEC.md
+Long-form design history.
+RE-RUN AFTER A CHANGE
+npx tsx scripts/tplBacktest.ts --emit
+Tracking holdout with acceptance test; regenerates the Validation table. Re-baseline its reference values after an intentional change.
+npx tsx --conditions=react-server scripts/stateLegNotUpBacktest.ts --emit
+Hidden-seat-class test of the not-up seat estimate; regenerates the Seats-not-up table.
+npx tsx scripts/tplCalibrate.ts --baseline
+Leakage-free objective for decay, type weights, Huber, shrinkage and imputed weight.
+npx tsx scripts/tplBacktest.ts --matrix · --fit
+Cross-office predictiveness matrix; fitted E and β* extremes.
+WHAT CHANGED, AND WHEN
+Revision history
+Oct 19, 2026
+CHANGE
+State Legislature rows measure the whole chamber: staggered seats not up are estimated, unprinted unopposed seats imputed
+
+A staggered chamber puts one seat class on the ballot each cycle, and the class up can lean several points either way of the chamber (Ohio's Senate alternated R+16 and D+4 presidential classes; Colorado's swung about 15 points between classes), so the row moved with the calendar rather than the voters. The contested row now adds every seat not up as an estimate: its presidential margin on the year's lines plus the gap the contested seats up that year ran from theirs, fitted on presidential lean (gap = a + b·(P − P̄), vote-weighted; slope shrunk by n/(n + LEG_NOT_UP_SLOPE_K) and P clamped to the fitted range; a chamber with under 5 contested seats borrows the other chamber's gap), weighted by its presidential vote × the chamber's turnout ratio. The estimate carries the year's own environment, so it joins the contested row, not the unopposed one. Separately, a district on the map with NO results row is now classified: in a chamber that elects every seat at once, or a staggered seat whose last regular election was that year, it is an unprinted unopposed race (MEDSL 2024 and the Louisiana files omit them) and is imputed like any unopposed seat — 69 Oklahoma House seats in 2024, 40–48 Louisiana House seats per year, 15 Florida and 16 Hawaii House seats, 13 Oklahoma Senate seats; MA Senate, VT House and NH House absences are left out because they match result rows the map keys miss. New: notUp summary in lib/stateLegChamberMargin.ts, notUpPool / legislatureRowPool in lib/chamberMargins.ts, LEG_NOT_UP_MODE "slope" and LEG_NOT_UP_SLOPE_K 10 in lib/tplCompute.ts (TPL_LEG_NOT_UP / TPL_LEG_NOT_UP_K override; CHAMBER_MARGIN_NO_ABSENT=1 drops the absent-district rule), scripts/stateLegNotUpBacktest.ts.
+
+EFFECT Hidden-seat-class test (308 chamber-years that elected every seat, half the contested seats hidden): estimating the hidden half as the visible half, the old row, misses by 5.93 points (full-row 2.97); flat gap 2.86 (1.43); slope k 10 2.77 (1.38), k 5–10 best on both alternate and random splits. 2024 State TPL holdout flat within noise: P 2.24 → 2.24, S 4.90 → 4.91, H 3.41 → 3.42 (the row is 0.07 of a year). Live State TPLs: 13 states move 0.1 or more, mean 0.08 — Oklahoma R+30.5 → R+30.9, Wyoming R+42.1 → R+41.8, Louisiana R+20.0 → R+19.7, North Dakota, Alaska, Utah, Montana, Texas 0.2 more R, Colorado 0.2 less D. Displayed corrected chamber margins: Oklahoma 2024 R+24.8 → R+34.0, Florida 2024 R+19.8 → R+15.8, Louisiana 2023 R+31.2 → R+23.8, 2019 R+20.1 → R+18.7, North Dakota 2024 R+41.7 → R+40.5.
+
+Oct 11, 2026
+DATA FIX
+New Hampshire floterials recombined from their base districts
+
+The 39 House floterial (overlay) districts have no polygon in any boundary file and so had no presidential figure: no presidential rows in the projection, no imputation in the chamber margin (skipped), no lean trend. On the current map each is the sum of the base districts it sits on (the roster's components), so scripts/build-state-leg-pres-by-era.mjs now writes that sum into the current era (overlayOf marks it). The superseded 2020-map floterials are still absent. The atlas draws the base districts as the floterial's map.
+
+EFFECT 39 districts gain 2016/2020/2024 presidential rows and a fuller 2026 projection; the New Hampshire chamber margin's skipped count on the current map falls to zero (State TPL moves by less than 0.1).
+
+Oct 10, 2026
+CHANGE
+State Legislature rows rebuilt district by district: a contested pool and an imputed unopposed pool
+
+The State TPL's State Legislature entry was the raw chamber aggregate — every counted district's votes summed — which counted a printed unopposed race as a 100–0 result and omitted an unprinted one, so it reported the margin of whichever seats happened to be contested and overstated the dominant party wherever unopposed races are printed. Each year now carries two rows that share the L weight on their turnout (lib/stateLegChamberMargin.ts): the contested pool (districts where both major parties drew votes, their own margin and votes) and the unopposed pool, imputed district by district from the presidential vote on the map the race was run on (data/stateLegPresByEra.ts, nearest presidential year), weighted by that presidential vote scaled to the chamber's legislative-to-presidential turnout ratio and stripping the environment of the source presidential year — the rule imputed House seats already followed. IMPUTED_LEG_ROW_WEIGHT = 1 (0.5 tested, no better). The environment fit is unchanged in form: imputed rows never enter it, so it now sees the contested pool. TPL_RAW_LEG=1 restores the old row for comparison.
+
+EFFECT 2024 holdout: President 2.46 → 2.24, Senate 5.02 → 4.90, House average 3.06 → 3.41 (the harness references were re-baselined and the validation table re-emitted). 44 of 50 state TPLs move, 24 by half a point or more, mean 0.75, 34 toward Democrats: the states that print unopposed races compress toward their presidential lean — Wyoming R+44.7 → R+42.1, South Dakota R+30.8 → R+28.4, North Dakota R+35.0 → R+33.1, West Virginia R+36.2 → R+34.4, and on the other side Rhode Island D+20.3 → D+17.9 and Massachusetts D+30.0 → D+27.9.
+
+Oct 10, 2026
+DATA FIX
+New Hampshire 2022 House votes corrected from the state's election-database export
+
+The county-PDF parse behind data-entry/new_hampshire_2022_legislature.csv had double-counted 17 districts whose candidate header spanned two groups, tripled Hillsborough 16, mis-assigned Rockingham 13 and 16 and Strafford 15, and omitted Strafford 16. The CSV is now regenerated from the Secretary of State's own tabulation (the NH election database's export), where every district's candidate votes equal its Total Votes Cast row; the statewide row in state_leg.csv follows.
+
+EFFECT Chamber total 2,275,330 → 2,089,636; Democratic 1,154,052 → 1,044,611, Republican 1,102,958 → 1,033,731; margin D+2.2 → D+0.5. New Hampshire's State TPL moves with its 2022 State Legislature row (5% race-type weight).
+
+Sep 22, 2026
+CHANGE
+Imputed House rows keep their full turnout share
+
+With the state's House year taken as a turnout-weighted sum of its districts, an uncontested or same-party district entering at half weight dropped half of that district's voters out of the state's total. Imputed House rows now enter at IMPUTED_HOUSE_ROW_WEIGHT = 1 × their source presidential year's turnout share; their value is the district's own presidential lean, which is a better estimate of that share than a missing race. Imputed statewide rows stay at IMPUTED_RACE_WEIGHT = 0.5.
+
+EFFECT Calibration objective 4.656 → 4.681 (0.75 would be 4.670); accepted so the districts still sum to the state.
+
+Sep 21, 2026
+CHANGE
+House rows turnout-weighted, with one Huber check per House year instead of one per district
+
+A state's House rows no longer carry the per-row Huber factor against the state's fitted lean. A packed D+60 district is a district, not an outlier, and the factor handed every packed-map state's House aggregate to the party with more middling seats (Georgia 2024: House aggregate R+10.1 against a presidential NM of R+0.3; 76% of all House rows were downweighted). House rows now enter their year's House mean weighted by total votes cast — the districts sum to the state's House vote — with imputed rows weighted by the turnout of the presidential result they borrow, not their own depressed turnout. The Huber check is applied once to the whole House year: its base type weight is multiplied by min(1, HUBER_C / |House NM − fitted lean|) before redistribution and coverage. Statewide rows, the environment fit, District TPL and County TPL are unchanged. Equal-weighting the districts was 0.08 worse on the standard calibration rounds than turnout weighting; two-party votes and total votes were within 0.01.
+
+EFFECT 2024 holdout: P 2.49 → 2.40, S 4.88 → 4.94, H 2.94 → 3.08 (H is scored against an equal-weighted target). Calibration objective 4.645 → 4.656; on added 2018/2020 Democratic-swing rounds the cost is 0.04. Live: mean |Δ TPL| 0.60, 13 states move ≥ 1 pt, nearly all toward D (LA −2.2, MS −2.1, GA −1.9, AL −1.5, MO −1.5); GA 2024 House NM R+10.1 → R+2.2. 19 of 250 House years are Huber-downweighted.
+
+Sep 21, 2026
+TESTED, NOT ADOPTED
+No Huber on House rows at all, and district-anchored Huber
+
+Dropping the House Huber factor outright (equal-weighted plain mean, no year-level check) was tested first, as was anchoring each House row's Huber residual on its own district's presidential lean rather than the state's. Both remove the packed-district skew but give up the shrinkage the year-level check keeps.
+
+EFFECT Calibration objective 4.645 → 4.751 (no Huber) and 4.784 (district-anchored), worse on all five targets; on the 2018/2020 Democratic-swing rounds no-Huber cost only 0.025, so part of the standard-round loss is the two Republican-swing holdout years flattering an R-leaning House aggregate. Not adopted; the House-year Huber above ties the old objective within 0.011.
+
+Sep 16, 2026
+CHANGE
+Appointed incumbents receive no incumbency
+
+An incumbent who has never won the seat (R*/D* in the CSVs) gets APPOINTED_INCUMBENCY_SHARE = 0 of the office's advantage, both when TPL strips incumbency and when the forecast adds it. 8 of 9 historical appointees ran behind an open-seat generic even at share 0 (mean −5.6); no penalty is applied either.
+
+Sep 15, 2026
+DATA FIX
+All margins on a full-total-vote basis
+
+District presidential margins and State Legislature aggregates had been two-party shares; both now divide by the full total vote like every other margin in the model. Largest in 2016 (1–2 pts).
+
+Sep 8, 2026
+CHANGE
+Senate and Governor incumbency fitted inside the TPL fit
+
+Estimated jointly with lean / β / E from the incumbent-signed residual with the fundraising strip already applied (so it is net of incumbents' money). Replaced hand-set S 2 / G 7. House stays a fixed 3 — a state-level lean cannot separate House incumbency from district lean.
+
+Sep 8, 2026
+CHANGE
+Fundraising strip; type-weighted fit rows; Louisiana jungle rule
+
+FF strip = −clamp(0.02 × gap%, ±2), calibrated on the clean presidential target. Fit rows are weighted RACE_TYPE_WEIGHTS / count(state, year, type) so House rows cannot outvote the presidential row. LA jungle generals decided without a runoff (top-two < 90%) are "fragmented" and imputed. District TPL moved onto the state pipeline.
+
+EFFECT 2024 presidential holdout MAE 2.90 → 2.49 — the largest single gain of the rebuild.
+
+Sep 7, 2026
+CHANGE
+TPL rebuild: additive strips, fitted environment and elasticity, eligibility gate
+
+margin = lean + β*·E(year) + incumbency + fundraising + residual, every strip additive and applied once. E(y) and β* from a Huber alternating least-squares fit over 2016–2025 (odd years included). Ineligible races are imputed from the nearest presidential result at half weight. Calibration adopted year decay 0.75 and type weights P .60 / H .20 / S .10 / L .07 / G .03. Deleted: NES table, swing-ratio S, multiplicative wave factor, presidential-approval IF, WQ/LQ quality tiers, the 50-pt competitiveness blend.

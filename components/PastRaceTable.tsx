@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { startPendingNav } from "@/lib/navPending";
 import { fmtLean, leanColor } from "@/lib/colorScale";
@@ -127,7 +127,8 @@ function SplitBar({ row, compact }: { row: PastRaceRow; compact: boolean }) {
   );
 }
 
-export default function PastRaceTable({ office, year }: { office: MapOffice; year: number }) {
+// Memoized: it sits under the /historical map, whose every hover re-renders its parent.
+export default memo(function PastRaceTable({ office, year }: { office: MapOffice; year: number }) {
   const router = useRouter();
   const { data, loading } = useStaticJson<TableData>(pastRaceTableUrl(office, year));
   const rows = data?.rows ?? null;
@@ -331,4 +332,4 @@ export default function PastRaceTable({ office, year }: { office: MapOffice; yea
       )}
     </section>
   );
-}
+});

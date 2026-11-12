@@ -1,0 +1,50 @@
+http://localhost:3000/methodology/state-leg
+Saved 2026-11-11 from the dev server; the final 2026 state-legislature projection (lock 2026-11-03T13:30:00.000Z).
+
+LEGISLATIVE ATLAS
+Every state legislative seat
+
+The state legislature pages show every district in every chamber: who represents it, every general election since 2016 with the candidates’ names, how it voted for president on each map it has existed on, who lives there, and how its lines have changed. They also carry a 2026 projection for every seat on the ballot.
+
+6,163
+seats on the 2026 ballot
+94
+chambers projected
+5
+chambers where neither party is a clear favorite
+THE RECORDS
+What the pages are built from
+1
+Presidential results by district, on every map
+Precinct-level presidential returns, assigned to the district lines of each era. That lets a district be compared across redistricting.
+2
+Candidates and results
+Official results where states publish them, checked so that the candidates' votes add up to each district's total.
+3
+Redistricting
+For every new map, which old districts each new district was drawn from, measured in people rather than land.
+4
+The 2026 field and fundraising
+Each chamber's 2026 candidates and their reported fundraising, matched to the districts they're running in.
+THE MODEL
+The 2026 projection
+
+Each seat is projected with the same recipe as the congressional forecast, built from the atlas's own records.
+
+1
+The district's lean
+Its presidential results on today's lines and its own legislative races, with the most recent legislative race counting extra. Older races from before a redraw are moved onto today's lines. Where a state's voters regularly split their tickets (Vermont Republicans run well ahead of their presidential nominee, for example), that habit is carried forward.
+2
+This year's conditions
+The same national mood as the congressional forecast, plus incumbency and the unusual part of any fundraising gap.
+3
+Odds for the chamber
+Each chamber is simulated thousands of times. Every run has one national surprise and one surprise for the whole state, so a chamber's seats can move together. Seats not up this year stay with their current holder.
+How accurate has it been?
+Projecting 2024 from earlier years, the typical seat missed by 4.7 points across 3,347 contested districts.
+What about independents?
+Where an established independent is the real opponent, such as a sitting independent or one backed by a major party, the seat is forecast as a contest instead of being handed to the only party on the ballot.
+What is the chamber popular vote?
+Each chamber page shows two totals for 174 million projected votes. Raw is what the official count will show. Adjusted fills in every uncontested seat as if both parties had run, which is a better read of how the state actually leans.
+
+SEE ITThe State Legislatures board, and each state’s chamber pages.

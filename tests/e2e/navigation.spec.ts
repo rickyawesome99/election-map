@@ -95,7 +95,7 @@ test("race table links render the destination page on the first click", async ({
   await expect(page).toHaveURL(/\/senate\/al$/);
   await expect(page.getByRole("link", { name: "Alabama" }).first()).toBeVisible();
   await expect(page.getByRole("heading", { name: "Alabama U.S. Senate", level: 1 })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Projected Result" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Election Result" })).toBeVisible();
 });
 
 test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {

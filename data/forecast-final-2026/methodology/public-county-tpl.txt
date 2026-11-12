@@ -1,0 +1,24 @@
+http://localhost:3000/methodology/county-tpl
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+TRUE PARTISAN LEAN · COUNTIES
+The same lean, county by county
+
+County TPL runs the state recipe on each county's share of the same statewide races: president, Senate and governor, plus the county's House vote. Because the code is shared, a change to the state model changes every county with it. It appears on each county page and does not feed the forecast directly.
+
+D+29.8
+Franklin County, Ohio (Columbus)
+R+8.9
+Ohio as a whole
+HOW IT DIFFERS
+What changes at county level
+Statewide races
+The same race in every county, so the incumbent and the money are the state race's. Only the margin is the county's own.
+House races
+A county often sits in more than one district, so its House vote mixes several races. No single incumbent or money gap can be taken out, and a year where one party ran no one in the county is filled in from its presidential vote.
+Outliers
+A county far from its state's lean is not an outlier; it's just a different place. Only a House year that runs far from the county's own statewide results is turned down, since a popular local member can carry a county their party usually loses.
+Missing places
+Alaska reports no county results, so it has no county leans.
+
+SEE ITOpen any county from the Historical tab.

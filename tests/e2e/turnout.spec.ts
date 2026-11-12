@@ -71,19 +71,20 @@ test("turnout page shows the implied generic ballot", async ({ page }) => {
   await expect(section.getByText(/^(D|R)\+\d+\.\d$|^EVEN$/).first()).toBeVisible();
 });
 
-test("race pages show the projected county map", async ({ page }) => {
+test("race pages show the counted county map", async ({ page }) => {
   await page.goto("/senate/ga");
-  // The projected county map sits in the race's Projected Result section (merged there in v3.22).
-  const section = page.locator("section", { has: page.getByRole("heading", { name: "Projected Result" }) }).first();
+  // The county map sits in the race's Election Result section, which replaced the Projected Result
+  // section after the election (the projection is archived in data/forecast-final-2026/).
+  const section = page.locator("section", { has: page.getByRole("heading", { name: "Election Result" }) }).first();
   await expect(section).toBeVisible({ timeout: 20_000 });
   await expect(section.locator("svg path").first()).toBeVisible();
-  await expect(section.getByText(/estimated votes/)).toBeVisible();
-  await expect(section.getByText(/How this is built/)).toBeVisible();
+  await expect(section.getByText(/^[\d,]+ votes/).first()).toBeVisible();
+  await expect(section.getByText(/Votes counted as of/)).toBeVisible();
 
-  // House pages: the projection is the section's only map; district lines moved to District Boundaries & PVI History.
+  // House pages: the counted result is the section's only map; district lines moved to Redistricting History.
   await page.goto("/house/oh-12");
-  await expect(page.getByText(/Projected 2026 margin by county/)).toBeVisible({ timeout: 20_000 });
-  const boundaries = page.locator("section", { has: page.getByRole("heading", { name: "District Boundaries & PVI History" }) }).first();
+  await expect(page.getByText(/by the district's part of each county/)).toBeVisible({ timeout: 20_000 });
+  const boundaries = page.locator("section", { has: page.getByRole("heading", { name: "Redistricting History" }) }).first();
   await boundaries.scrollIntoViewIfNeeded();
   await expect(boundaries.getByRole("img", { name: /lines · OH-12/ }).first()).toBeVisible({ timeout: 20_000 });
 });

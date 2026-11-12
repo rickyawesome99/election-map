@@ -1,0 +1,33 @@
+http://localhost:3000/methodology/district-tpl
+Saved 2026-11-11 from the dev server; the final 2026 forecast (lock 2026-11-03T13:30:00.000Z).
+
+TRUE PARTISAN LEAN · DISTRICTS
+A district's lean, on the 2026 lines
+
+District TPL asks the same question as the state version, for each of the 435 House districts, and it is the starting point of every House forecast. It is measured on the district lines in place for 2026, including in the states that have redrawn their maps.
+
+D+79.5
+PA-03, the most Democratic
+R+63.2
+AL-04, the most Republican
+R+1.9
+the median district
+32
+districts within 5 points of even
+HOW IT DIFFERS
+Same recipe, two ingredients
+
+District TPL follows the same steps as the state version, so a district and its state can be compared directly. Two things are different.
+
+1
+Only presidential and House races
+Senate, governor and state legislative results are not reported by congressional district, so a district's lean comes from the 2016, 2020 and 2024 presidential votes counted inside its 2026 lines, plus its House races since 2016.
+2
+Old races are moved onto the new lines
+When a district has been redrawn, its old House results were cast on different ground. We can't rebuild an old race on new lines, so we shift it by how much more Republican or Democratic the new lines voted for president than the old ones. Races that moved a long way count for less.
+Does it use the state's swing?
+Yes. A district moves with the national mood as much as its state does.
+Does a member's own record affect it?
+A little: a long-serving member's own House results are part of their district's lean, the way any past result is.
+
+SEE ITEach state’s districts, with their leans, are on that state’s page under the TPL tab.

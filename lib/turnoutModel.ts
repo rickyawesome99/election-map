@@ -379,8 +379,10 @@ export function runModel(config: ModelConfig = LIVE_CONFIG): ModelRun {
     }
     // Office factors relative to the state's own, per county, shrunk toward 1.
     for (const office of ["senate", "governor", "house"] as Office[]) {
-      let ws = 0;
-      const acc = new Map<string, number>();
+      // Each county is averaged over the midterms it has a figure for: a county whose districts were
+      // all contested in only one basis year keeps that year's ratio rather than a fraction of it.
+      const acc = new Map<string, number>(), wsum = new Map<string, number>();
+      const add = (f: string, weight: number, ratio: number) => { acc.set(f, (acc.get(f) ?? 0) + weight * ratio); wsum.set(f, (wsum.get(f) ?? 0) + weight); };
       for (const m of midterms) {
         const lvS = stateLevelVotes(state, m.year);
         const { races, senateSpecial } = statewideRaces(state, m.year);
@@ -397,13 +399,12 @@ export function runModel(config: ModelConfig = LIVE_CONFIG): ModelRun {
             const ok = h && (h.districts ?? []).length > 0 && (h.districts ?? []).every((n) => contested.get(`${f.slice(0, 2)}${String(n).padStart(2, "0")}|${m.year}`) === true);
             if (!ok) v = null;
           }
-          if (t && v != null && v > 0 && t.office !== office) acc.set(f, (acc.get(f) ?? 0) + m.weight * ((v / t.votes) / stateRatio));
-          else if (t && v != null && v > 0 && t.office === office) acc.set(f, (acc.get(f) ?? 0) + m.weight * 1);
+          if (t && v != null && v > 0 && t.office !== office) add(f, m.weight, (v / t.votes) / stateRatio);
+          else if (t && v != null && v > 0 && t.office === office) add(f, m.weight, 1);
         }
-        ws += m.weight;
       }
       for (const [f, w] of weights) {
-        const own = acc.has(f) && ws > 0 ? acc.get(f)! / ws : null;
+        const own = acc.has(f) ? acc.get(f)! / wsum.get(f)! : null;
         w.officeFactor[office] = shrink(own, 1, w.pres, config.shrinkVotes);
       }
     }

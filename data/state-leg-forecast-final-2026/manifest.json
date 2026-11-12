@@ -1,0 +1,71 @@
+{
+  "title": "Final 2026 state-legislature projection",
+  "lockedAt": "2026-11-03T13:30:00.000Z",
+  "commit": "a79b7d6",
+  "note": "A ballpark model: a district lean from presidential and past legislative results on today's lines, plus the national environment, incumbency and a small money term, simulated per chamber. Margins R-positive (negative = Democratic lead). pD / pI = Democratic / independent win probability. Seats not up in 2026 are holdovers and are counted in each chamber's holdover tally, not listed in districts.json. buildup.json rows: [year, kind, era, raw, relocated, coverage, presDelta, incPts, envPts, moneyPts, gapPts, NM, huber, weight].",
+  "environment": {
+    "eHat": -4.73,
+    "sigmaE": 2.95,
+    "genericBallot": -9
+  },
+  "inputs": {
+    "candidatesFetched": "2026-10-10",
+    "compositionAsOf": "2026-10"
+  },
+  "constants": {
+    "forecast": {
+      "TYPE_WEIGHTS": {
+        "P": 0.6,
+        "L": 0.2
+      },
+      "RECENT_SEAT_BOOST": 3,
+      "INCUMBENCY_PTS": 2.3,
+      "SIGMA": 6,
+      "STATE_SHOCK": 3.4,
+      "MIN_COVERAGE": 0.5,
+      "IND_RECORD_SHARE": 40,
+      "IND_PRIOR_PTS": 14,
+      "IND_SHRINK_K": 1,
+      "IND_SIGMA": 4,
+      "MONEY_K": 0.03,
+      "MONEY_CAP": 1.5,
+      "PARTIAL_CYCLE_GAP_SCALE": 0.9,
+      "PRES_GAP_K": 0.5,
+      "PRES_GAP_MIN_SEATS": 5,
+      "SIMS": 5000
+    },
+    "popularVote": {
+      "BASIS_WEIGHTS": {
+        "2018": 0.4,
+        "2022": 0.6
+      },
+      "DROPOFF_SHRINK_VOTES": 2000,
+      "UNOPPOSED_TURNOUT": 0.82,
+      "OTHER_SHRINK_RACES": 5
+    }
+  },
+  "national": {
+    "chambers": 94,
+    "withControlOdds": 94,
+    "favoredDem": 42,
+    "favoredRep": 49,
+    "expectedDemControlled": 41.4,
+    "seatsUp": 6163,
+    "expectedSeats": {
+      "dem": 3443.4,
+      "rep": 3674.4,
+      "oth": 15.2
+    }
+  },
+  "counts": {
+    "chambers": 94,
+    "districts": 5668
+  },
+  "files": [
+    "chambers.json",
+    "districts.json",
+    "buildup.json",
+    "methodology/internal.txt",
+    "methodology/public.txt"
+  ]
+}

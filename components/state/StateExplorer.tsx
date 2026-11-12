@@ -1,12 +1,11 @@
 "use client";
 
-import FinalForecastPill from "@/components/FinalForecastPill";
 import { useCallback, useMemo, useState, type ReactNode } from "react";
 import Link from "next/link";
 import type { Chamber } from "@/data/stateLegDistricts";
 import type { ForecastedRace } from "@/lib/forecast";
 import type { BallotRace, ChamberBlock, HouseRow, StatePageData } from "@/lib/statePage";
-import { ChamberLedger, HouseLedger, StatewideCards } from "./BallotSection";
+import { HouseLedger, SenateCards, StateLedger } from "./BallotSection";
 import { SegToggle, SlidingTabs } from "./StateMotion";
 import { useRevealOnce } from "@/lib/useRevealOnce";
 import { useDesktopPointer } from "@/lib/useDesktopPointer";
@@ -20,7 +19,8 @@ import CandidateLink from "@/components/CandidateLink";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
 import { ResultCard } from "@/components/StatewideVoteHistoryPanel";
 import StateLayerMap, { chamberOfLayer, layerYears, type MapLayer } from "./StateLayerMap";
-import StateCountiesSection, { TPL_LAYER } from "./StateCountiesSection";
+import StateCountyMap from "@/components/StateCountyMap";
+import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import StateResultsGraph, { bodyEntriesFromDelegation, bodyEntriesFromStateLeg } from "./StateResultsGraph";
 
 const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
@@ -31,6 +31,7 @@ const marginColor = (m: number) => (m <= 0 ? "var(--party-dem)" : "var(--party-r
 const partyColor = (p: string) => (p === "D" ? "var(--party-dem)" : p === "R" ? "var(--party-rep)" : "var(--party-ind)");
 // One party/incumbency tag everywhere on the page: (D), (R), (D Inc), (R Inc).
 const partyTag = (p: string, incumbent?: boolean) => `(${p}${incumbent ? " Inc" : ""})`;
+const TPL_LAYER = "tpl";
 
 function SectionHead({ id, title, right, badge, children }: { id?: string; title: string; right?: ReactNode; badge?: ReactNode; children?: ReactNode }) {
   return (
@@ -45,10 +46,9 @@ function SectionHead({ id, title, right, badge, children }: { id?: string; title
   );
 }
 
-// `flush` drops the rule for blocks that draw their own (the statewide cards' top rules).
-function SubHead({ id, children, right, flush = false }: { id?: string; children: ReactNode; right?: ReactNode; flush?: boolean }) {
+function SubHead({ id, children, right }: { id?: string; children: ReactNode; right?: ReactNode }) {
   return (
-    <div id={id} className={`flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 pt-6 pb-2 scroll-mt-20 ${flush ? "" : "mb-1"}`} style={flush ? undefined : { borderBottom: "2px solid var(--app-text-primary)" }}>
+    <div id={id} className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 pt-6 pb-2 mb-1 scroll-mt-20" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
       <span className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{children}</span>
       {right && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{right}</span>}
     </div>
@@ -56,23 +56,26 @@ function SubHead({ id, children, right, flush = false }: { id?: string; children
 }
 
 /**
- * Sections 2–4 of the state page: the ballot beside the map, results since 2016 and the counties.
- * They share one client component because the map's layer and year are set from all three: a
- * ballot row, a results card and a county chip each change what the maps draw.
+ * Sections 2–3 of the state page: the map (counties by default, then the district layers), the
+ * ballot and results since 2016. They share one client component because a ballot row drives
+ * the map's layer and selection.
  */
 type ResultsOffice = "statewide" | "federal" | "stateHouse" | "stateSenate";
 
-export default function StateExplorer({ data, electionYear, generalElection }: { data: StatePageData; electionYear: number; generalElection: string }) {
+export default function StateExplorer({ data, electionYear }: { data: StatePageData; electionYear: number }) {
   const { state, stateFips, houseRaces, housePastResults, housePastHrefs, chambers, results } = data;
   const chamberData = useMemo(() => Object.fromEntries(chambers.map((c) => [c.chamber, c.map])) as Partial<Record<Chamber, ChamberBlock["map"]>>, [chambers]);
   const blockOf = (chamber: Chamber) => chambers.find((c) => c.chamber === chamber);
   const layerOf = (chamber: Chamber): MapLayer => (chamber === "house" ? "stateHouse" : "stateSenate");
 
-  const layers: { id: MapLayer; label: string }[] = [
+  // "counties" is the county map (County TPL + presidential results); the rest are StateLayerMap's.
+  const hasCounties = Object.keys(data.counties.tpl).length > 0 || data.counties.layers.length > 0;
+  const layers: { id: MapLayer | "counties"; label: string }[] = [
+    ...(hasCounties ? [{ id: "counties" as const, label: "Counties" }] : []),
     ...(houseRaces.length ? [{ id: "house" as const, label: "U.S. House" }] : []),
     ...chambers.map((c) => ({ id: layerOf(c.chamber), label: c.label })),
   ];
-  const [layer, setLayerState] = useState<MapLayer>(layers[0]?.id ?? "house");
+  const [layer, setLayerState] = useState<MapLayer | "counties">(layers[0]?.id ?? "house");
   const [year, setYear] = useState<number>(electionYear);
   const [selectedHouse, setSelectedHouse] = useState<ForecastedRace | null>(null);
   // On desktop a House district click on the map opens its race page (hover already shows the
@@ -92,12 +95,13 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
   // mid widths, each with its own scrollbox, and the page scroll fought them.
   const [resultsOffice, setResultsOffice] = useState<ResultsOffice>("statewide");
   const [countyLayer, setCountyLayer] = useState<string>(TPL_LAYER);
+  const countyMapLayer = data.counties.layers.find((l) => l.key === countyLayer) ?? null;
   const { ref: resultsRef, vh: resultsVh } = useRevealOnce<HTMLElement>();
 
-  const years = useMemo(() => layerYears(layer, housePastResults, houseRaces, chamberData), [layer, housePastResults, houseRaces, chamberData]);
+  const years = useMemo(() => (layer === "counties" ? [] : layerYears(layer, housePastResults, houseRaces, chamberData)), [layer, housePastResults, houseRaces, chamberData]);
   const activeYear = year === electionYear || years.includes(year) ? year : electionYear;
 
-  const show = useCallback((next: MapLayer, nextYear: number = electionYear) => {
+  const show = useCallback((next: MapLayer | "counties", nextYear: number = electionYear) => {
     setLayerState(next);
     setYear(nextYear);
     setSelectedHouse(null);
@@ -112,7 +116,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
     setSelectedHouse((cur) => (cur?.id === race?.id ? null : race));
   };
 
-  const legChamber = chamberOfLayer(layer);
+  const legChamber = layer === "counties" ? null : chamberOfLayer(layer);
   const legData = legChamber ? chamberData[legChamber] : undefined;
   const legDistrict = legData && selectedLegKey ? legData.roster.find((d) => d.number === selectedLegKey) ?? null : null;
   const legProj = legData && selectedLegKey ? legData.projByKey[selectedLegKey] : undefined;
@@ -201,10 +205,34 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
           <SlidingTabs tabs={layers.map((l) => ({ key: l.id, label: l.label }))} active={layer} onChange={(id) => show(id, activeYear === electionYear || years.includes(activeYear) ? activeYear : electionYear)} />
         </div>
         <div className="mb-3 flex flex-wrap items-center gap-1">
-          {chip(`${electionYear} projection`, activeYear === electionYear, () => { setYear(electionYear); setSelectedLegKey(null); }, "proj")}
-          {years.map((y) => chip(String(y), activeYear === y, () => { setYear(y); setSelectedHouse(null); setSelectedLegKey(null); }, String(y)))}
+          {layer === "counties" ? (
+            <>
+              {chip("TPL", countyLayer === TPL_LAYER, () => setCountyLayer(TPL_LAYER), TPL_LAYER)}
+              {data.counties.layers.map((l) => chip(l.label, countyLayer === l.key, () => setCountyLayer(l.key), l.key))}
+            </>
+          ) : (
+            <>
+              {chip(`${electionYear} projection`, activeYear === electionYear, () => { setYear(electionYear); setSelectedLegKey(null); }, "proj")}
+              {years.map((y) => chip(String(y), activeYear === y, () => { setYear(y); setSelectedHouse(null); setSelectedLegKey(null); }, String(y)))}
+            </>
+          )}
         </div>
 
+        {layer === "counties" ? (countyMapLayer ? (
+          <PastElectionCountyMap
+            key={countyMapLayer.key}
+            stateAbbr={state.abbr}
+            stateName={state.name}
+            counties={countyMapLayer.entries}
+            demName={countyMapLayer.demName}
+            repName={countyMapLayer.repName}
+            demParty={countyMapLayer.demParty}
+            repParty={countyMapLayer.repParty}
+            height={360}
+          />
+        ) : (
+          <StateCountyMap stateAbbr={state.abbr} stateName={state.name} showTpl showLabel={false} countyTpl={data.counties.tpl} countyVotes={data.counties.votes} height={360} />
+        )) : (
         <StateLayerMap
           stateAbbr={state.abbr}
           stateName={state.name}
@@ -222,6 +250,7 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
           selectedLegKey={selectedLegKey}
           onSelectLeg={setSelectedLegKey}
         />
+        )}
 
         {/* Selected district */}
         {layer === "house" && selectedHouse && !desktop && (() => {
@@ -392,19 +421,11 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
 
       {/* ── 2 · On the ballot ── */}
       <section id="ballot" className="mt-6">
-        <SectionHead title={`On the ballot · ${generalElection}`} badge={<FinalForecastPill />} right={
-          <>
-            {(data.governor?.kind === "race" ? 1 : 0) + senateRaces.length} statewide · {houseRaces.length} district{houseRaces.length === 1 ? "" : "s"} · {chambers.length} chamber{chambers.length === 1 ? "" : "s"}
-          </>
-        } />
-
         <div className="min-w-0">
-            {(data.governor || data.senate.length > 0) && (
-              <>
-                <SubHead flush right={<span className="inline-flex items-center gap-1.5"><i className="inline-block rounded-full" style={{ width: 7, height: 7, background: "var(--app-text-very-muted)" }} />incumbent</span>}>Statewide</SubHead>
-                <StatewideCards governor={data.governor} senate={data.senate} state={state.abbr} />
-              </>
+            {(data.senate.length > 0 || houseRaces.length > 0) && (
+              <SubHead id="federal" right={<span className="inline-flex items-center gap-1.5"><i className="inline-block rounded-full" style={{ width: 7, height: 7, background: "var(--app-text-very-muted)" }} />incumbent</span>}>Federal</SubHead>
             )}
+            {data.senate.length > 0 && <SenateCards senate={data.senate} state={state.abbr} />}
 
             {houseRaces.length > 0 && (
               <>
@@ -422,10 +443,11 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
               </>
             )}
 
-            {chambers.length > 0 && (
+            {(data.governor || chambers.length > 0) && (
               <>
-                <SubHead id="legislature" right="each seat by its projected rating · line = majority">State Legislature</SubHead>
-                <ChamberLedger chambers={chambers} electionYear={electionYear} />
+                <SubHead id="state" right={chambers.length > 0 ? "each seat by its projected rating · line = majority" : undefined}>State</SubHead>
+                <span id="legislature" className="block scroll-mt-20" />
+                <StateLedger governor={data.governor} chambers={chambers} state={state.abbr} electionYear={electionYear} />
               </>
             )}
         </div>
@@ -518,19 +540,6 @@ export default function StateExplorer({ data, electionYear, generalElection }: {
         )}
       </section>
 
-      {/* ── 4 · Counties ── */}
-      {data.counties.rows.length > 0 && (
-        <StateCountiesSection
-          stateAbbr={state.abbr}
-          stateName={state.name}
-          areaLabel={data.counties.areaLabel}
-          countyTpl={data.counties.tpl}
-          layers={data.counties.layers}
-          rows={data.counties.rows}
-          activeLayer={countyLayer}
-          onLayer={setCountyLayer}
-        />
-      )}
     </>
   );
 }

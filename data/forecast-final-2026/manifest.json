@@ -1,0 +1,64 @@
+{
+  "title": "Final 2026 forecast and projected results",
+  "lockedAt": "2026-11-03T13:30:00.000Z",
+  "commit": "a79b7d6",
+  "note": "Margins are R-positive (negative = Democratic lead). pDem = Democratic win probability. Projected votes are the county projection (lib/countyProjection.ts) summed; the margin is the forecast's, the total the turnout estimate's (lib/turnoutModel.ts). Topline numbers match data/forecast-history/2026-11-03.json.",
+  "corrections": [
+    "2026-11-11: House projected votes rebuilt after a weighting error in the county House factor (lib/turnoutModel.ts) was fixed. It had cut 139 counties in 10 states to about 40% or 60% of their House vote; 68 districts moved by more than 1%. Forecast margins, ratings, probabilities and all Senate and governor figures are as locked."
+  ],
+  "environment": {
+    "genericBallot": -9,
+    "eHat": -4.7,
+    "sigmaE": 2.9
+  },
+  "inputs": {
+    "racePollsThrough": "2026-11-02",
+    "racePolls": 1472,
+    "genericBallotThrough": "2026-11-01"
+  },
+  "chambers": {
+    "house": {
+      "meanDem": 236.4,
+      "lo80": 219,
+      "hi80": 255,
+      "pDemControl": 0.914
+    },
+    "senate": {
+      "meanDem": 51.6,
+      "lo80": 48,
+      "hi80": 55,
+      "pDemControl": 0.652
+    },
+    "governor": {
+      "meanDem": 26.6,
+      "lo80": 23,
+      "hi80": 30,
+      "pDemControl": null
+    }
+  },
+  "counts": {
+    "races": 506,
+    "senate": 35,
+    "governor": 36,
+    "house": 435,
+    "countyRows": 8377
+  },
+  "files": [
+    "races.json",
+    "counties-senate.json",
+    "counties-governor.json",
+    "counties-house.json",
+    "methodology/internal-forecast.txt",
+    "methodology/public-forecast.txt",
+    "methodology/internal-state-tpl.txt",
+    "methodology/public-state-tpl.txt",
+    "methodology/internal-district-tpl.txt",
+    "methodology/public-district-tpl.txt",
+    "methodology/internal-county-tpl.txt",
+    "methodology/public-county-tpl.txt",
+    "methodology/internal-war.txt",
+    "methodology/public-war.txt",
+    "methodology/internal-turnout.txt",
+    "methodology/public-turnout.txt"
+  ]
+}
