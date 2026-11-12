@@ -4,6 +4,7 @@ import Link from "next/link";
 import StateVoteHistoryChart from "./StateVoteHistoryChart";
 import VoteHistoryTabbedSection from "./VoteHistoryTabbedSection";
 import CandidateLink from "./CandidateLink";
+import { HeadToHead, ResultRowFrame, RowEyebrow, RowMargin, RowYear, Side } from "./ResultRowKit";
 
 export type StatewideHistoryEntry = {
   key: string;
@@ -17,6 +18,8 @@ export type StatewideHistoryEntry = {
   repVotes?: number;
   demCandidate?: string;
   repCandidate?: string;
+  demIncumbent?: boolean;
+  repIncumbent?: boolean;
 };
 
 type ChartResult = { year: number; race: string; demPct: number; repPct: number; label?: string };
@@ -67,6 +70,44 @@ export function ResultCard({ entry, state }: { entry: StatewideHistoryEntry; /**
         })}
       </div>
     </div>
+  );
+}
+
+/** The same result as one head-to-head row (the state page's results list; ResultRowKit). */
+export function ResultRow({ entry, state, delay }: { entry: StatewideHistoryEntry; state?: string; delay?: number }) {
+  const winner = entry.demPct > entry.repPct ? "D" : "R";
+  const two = entry.demPct + entry.repPct;
+  const side = (party: "D" | "R") => {
+    const dem = party === "D";
+    const candidate = dem ? entry.demCandidate : entry.repCandidate;
+    const votes = dem ? entry.demVotes : entry.repVotes;
+    const incumbent = dem ? entry.demIncumbent : entry.repIncumbent;
+    // The incumbent mark: a party-colored asterisk after the Democrat's name and before the
+    // Republican's, on the side facing the other candidate.
+    return (
+      <Side
+        party={party}
+        align={dem ? "left" : "right"}
+        top={
+          <span className="inline-flex max-w-full items-center gap-1.5" title={incumbent ? `${candidate ?? ""} (incumbent)` : undefined}>
+            {incumbent && !dem && <span className="shrink-0 self-start font-bold leading-none -mr-1" style={{ color: "var(--party-rep)" }} aria-label="incumbent">*</span>}
+            <span className="min-w-0 truncate">{candidate ? <CandidateLink name={candidate} state={state} className="relative pointer-events-auto hover:underline" /> : (dem ? "Democrat" : "Republican")}</span>
+            {incumbent && dem && <span className="shrink-0 self-start font-bold leading-none -ml-1" style={{ color: "var(--party-dem)" }} aria-label="incumbent">*</span>}
+          </span>
+        }
+        headline={`${(dem ? entry.demPct : entry.repPct).toFixed(1)}%`}
+        detail={votes?.toLocaleString() ?? "—"}
+      />
+    );
+  };
+  return (
+    <ResultRowFrame
+      delay={delay}
+      link={entry.href && <Link prefetch={false} href={entry.href} aria-label={`${entry.year} ${entry.label} results`} className="absolute inset-0" />}
+      left={<RowYear year={entry.year}><RowEyebrow>{entry.label}</RowEyebrow></RowYear>}
+      middle={<HeadToHead dem={side("D")} rep={side("R")} split={two > 0 ? (entry.demPct / two) * 100 : null} />}
+      margin={<RowMargin party={winner} value={`${winner}+${Math.abs(entry.demPct - entry.repPct).toFixed(1)}`} />}
+    />
   );
 }
 

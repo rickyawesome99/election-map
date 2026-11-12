@@ -7,7 +7,7 @@ import { RaceRail, type RailItem } from "@/components/RaceLocator";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, LedgerSubhead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
@@ -23,10 +23,8 @@ import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import FinalForecastPill from "@/components/FinalForecastPill";
-import { forecastIsFinal } from "@/lib/forecastClock";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
 
-const GENERAL_ELECTION = "November 3, 2026";
 
 // abbr is the state's two letters; each row links to its /governor/[id]/[year] page when one exists.
 function enrichGovResults(pastResults: PastResult[] | undefined, abbr: string): DetailPastResult[] {
@@ -134,7 +132,6 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
             <VoteHistoryTabbedSection
               variant="plain"
               defaultTabKey="race-results"
-              height="400px"
               tabs={[
                 {
                   key: "race-results",
@@ -233,22 +230,32 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         nav={<RaceRail items={GOVERNOR_RAIL} current={race.id.toLowerCase()} label="Choose a governor's race" />}
         fitTitle={{ chars: `${race.name} Governor`.length, emPerChar: 0.62, reservePx: 0 }}
         title={<>{race.name} Governor</>}
-        candidates={race.candidates ? [race.candidates.dem, race.candidates.rep] : null}
-        state={race.state}
-        fallbackSub={`${electionYear} Gubernatorial Race · General ${GENERAL_ELECTION}`}
         projectedMargin={projectedMargin}
         pollMargin={pollMargin}
-        pollsters={polling.avg?.n ?? null}
         marketDemProb={marketDemProb}
+        tpl={stateTpl}
+        introBelow
       />
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
-
+          <section>
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
+              items={[
+                incumbentFact(currentGovernorName, currentGovernorParty, candidatePageHref(currentGovernorName, race.state)),
+                { label: "Term Length", value: "4 years" },
+              ]}
+            >
+              <StateDemographicsSubsection abbr={id} />
+            </AboutRaceCard>
+          </section>
 
           <section>
             {result ? (<>
-              <LedgerSectionHead label="Election Result" meta={electionResultMeta(result)} />
+              <LedgerSectionHead label="2026 Election" meta={electionResultMeta(result)} />
               <ElectionResultSection
                 r={result}
                 state={race.state}
@@ -325,31 +332,12 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               probabilityD={forecast.probability}
               interval80={forecast.interval80}
             />
-          </section>
-
-          {raceHistory && (
-            <section>
-              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · ${forecastIsFinal ? "the final model" : "today's model"} on each day's polls`} />
-              <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
+            {raceHistory && (<>
+              <LedgerSubhead rule={false} top="mt-3" label="Forecast Over Time" meta={<Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>} />
+              <RaceForecastTrend inline dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Projected margin over time, rerun on polls available each day and the latest model. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
-            </section>
-          )}
-
-          <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
-              items={[
-                incumbentFact(currentGovernorName, currentGovernorParty, candidatePageHref(currentGovernorName, race.state)),
-                { label: "Term Length", value: "4 years" },
-              ]}
-            >
-              <StateDemographicsSubsection abbr={id} />
-            </AboutRaceCard>
+            </>)}
           </section>
 
           {polling.avg && race.candidates && (
@@ -377,7 +365,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             <VoteHistoryTabbedSection
               variant="plain"
               defaultTabKey="race-results"
-              height="400px"
               tabs={[
                 {
                   key: "race-results",

@@ -73,9 +73,9 @@ test("turnout page shows the implied generic ballot", async ({ page }) => {
 
 test("race pages show the counted county map", async ({ page }) => {
   await page.goto("/senate/ga");
-  // The county map sits in the race's Election Result section, which replaced the Projected Result
+  // The county map sits in the race's results section (headed 2026 Election), which replaced the Projected Result
   // section after the election (the projection is archived in data/forecast-final-2026/).
-  const section = page.locator("section", { has: page.getByRole("heading", { name: "Election Result" }) }).first();
+  const section = page.locator("section", { has: page.getByRole("heading", { name: "2026 Election", exact: true }) }).first();
   await expect(section).toBeVisible({ timeout: 20_000 });
   await expect(section.locator("svg path").first()).toBeVisible();
   await expect(section.getByText(/^[\d,]+ votes/).first()).toBeVisible();

@@ -479,7 +479,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
       label: presRaceLabel(res.stateAbbr),
       href: res.stateAbbr === abbr ? pastElectionHref("president", abbr.toLowerCase(), res.year) : undefined,
       demPct: res.demPct, repPct: res.repPct, demVotes: res.demVotes, repVotes: res.repVotes,
-      demCandidate: res.demCandidate, repCandidate: res.repCandidate,
+      demCandidate: res.demCandidate, repCandidate: res.repCandidate, demIncumbent: res.demIncumbent, repIncumbent: res.repIncumbent,
       countyLayer: res.stateAbbr === abbr ? layerKeyFor("president", res.year) : null,
     })),
     ...senatePast.map((res, idx) => ({
@@ -489,7 +489,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
       label: isSpecialElection(res.electionType) ? "Senate Special" : "Senate",
       href: pastElectionHref("senate", (res.seat === 2 ? `${abbr}2` : abbr).toLowerCase(), res.year) ?? `/senate/${(res.seat === 2 ? `${abbr}2` : abbr).toLowerCase()}`,
       demPct: res.demPct, repPct: res.repPct, demVotes: res.demVotes, repVotes: res.repVotes,
-      demCandidate: res.demCandidate, repCandidate: res.repCandidate,
+      demCandidate: res.demCandidate, repCandidate: res.repCandidate, demIncumbent: res.demIncumbent, repIncumbent: res.repIncumbent,
       countyLayer: isSpecialElection(res.electionType) ? null : layerKeyFor("senate", res.year),
     })),
     ...(govPageId ? govPast.map((res) => ({
@@ -499,7 +499,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
       label: "Governor",
       href: pastElectionHref("governor", govPageId, res.year) ?? `/governor/${govPageId}`,
       demPct: res.demPct, repPct: res.repPct, demVotes: res.demVotes, repVotes: res.repVotes,
-      demCandidate: res.demCandidate, repCandidate: res.repCandidate,
+      demCandidate: res.demCandidate, repCandidate: res.repCandidate, demIncumbent: res.demIncumbent, repIncumbent: res.repIncumbent,
       countyLayer: layerKeyFor("governor", res.year),
     })) : []),
   ];

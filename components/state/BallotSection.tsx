@@ -47,9 +47,9 @@ function QuietPill({ children }: { children: string }) {
 
 function Eyebrow({ children, sub }: { children: string; sub?: string | null }) {
   return (
-    <span className="min-w-0 flex-1">
-      <span className="block text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{children}</span>
-      {sub && <span className="block truncate text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>{sub}</span>}
+    <span className="flex min-w-0 flex-1 items-baseline gap-2">
+      <span className="shrink-0 text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{children}</span>
+      {sub && <span className="truncate text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>{sub}</span>}
     </span>
   );
 }
@@ -76,8 +76,8 @@ function Photo({ name, party, photo, w }: { name: string; party: string; photo: 
 
 /**
  * Given name over surname, so every name is the same two lines whatever its length; a long surname
- * steps down a size and truncates last. An incumbent's party-colored dot sits on the side of the
- * surname that faces the other candidate.
+ * steps down a size and truncates last. An incumbent's party-colored asterisk sits on the side of
+ * the surname that faces the other candidate.
  */
 function Name({ c, state, dot, align = "left", size = "md" }: { c: BallotCandidate; state: string; dot: "before" | "after"; align?: "left" | "right"; size?: "md" | "sm" }) {
   const parts = c.name.split(" ");
@@ -85,12 +85,13 @@ function Name({ c, state, dot, align = "left", size = "md" }: { c: BallotCandida
   const surname = parts.length > 1 ? parts.slice(1).join(" ") : c.name;
   const base = size === "md" ? 1.12 : 1;
   const fontSize = `${surname.length > 13 ? base * 0.8 : surname.length > 10 ? base * 0.9 : base}rem`;
-  const incDot = c.incumbent ? <i className="inline-block shrink-0 rounded-full" style={{ width: 7, height: 7, background: partyColor(c.party) }} aria-label="incumbent" /> : null;
+  // The incumbent mark: a party-colored asterisk tucked against the surname.
+  const incMark = (side: "before" | "after") => c.incumbent ? <span className={`shrink-0 self-start font-bold leading-none ${side === "after" ? "-ml-1" : "-mr-1"}`} style={{ color: partyColor(c.party) }} aria-label="incumbent">*</span> : null;
   return (
     <span className={`grid min-w-0 leading-[1.15] ${align === "right" ? "text-right" : ""}`}>
       <span className="truncate text-xs font-medium" style={{ color: "var(--app-text-muted)" }}>{given}{c.party === "I" ? " · Ind." : ""}</span>
       <span className={`flex min-w-0 items-center gap-1.5 ${align === "right" ? "justify-end" : ""}`} title={c.incumbent ? `${c.name} (incumbent)` : c.name}>
-        {dot === "before" && incDot}
+        {dot === "before" && incMark("before")}
         <CandidateLink
           name={c.name}
           state={state}
@@ -100,7 +101,7 @@ function Name({ c, state, dot, align = "left", size = "md" }: { c: BallotCandida
         >
           {surname}
         </CandidateLink>
-        {dot === "after" && incDot}
+        {dot === "after" && incMark("after")}
       </span>
     </span>
   );

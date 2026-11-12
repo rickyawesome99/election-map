@@ -79,6 +79,8 @@ export default function ElectionResultSection({ r, state, dem, rep }: { r: RaceR
       pct: r.total > 0 ? Math.round(c.pct * 10) / 10 : 100,
       votes: r.total > 0 ? c.votes : undefined,
       winner: c.winner,
+      // Over/under the final forecast's projected share, in points.
+      vsProjected: r.total > 0 && c.projectedPct != null ? c.pct - c.projectedPct : undefined,
     };
   });
   return (

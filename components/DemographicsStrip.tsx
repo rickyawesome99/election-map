@@ -36,9 +36,12 @@ export default function DemographicsStrip({
   if (stats.length === 0) return null;
 
   if (layout === "grid") {
+    // The race pages read the size of the place first: population, then median income, then the shares.
+    const income = stats.find((s) => s.label === "median income");
+    const ordered = income ? [...stats.filter((s) => s !== income && s.label === "population"), income, ...stats.filter((s) => s !== income && s.label !== "population")] : stats;
     return (
       <dl className="flex flex-wrap gap-x-9 gap-y-3">
-        {stats.map((s) => (
+        {ordered.map((s) => (
           <div key={s.label}>
             <dd className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{s.value}</dd>
             <dt className="text-xs" style={{ color: "var(--app-text-muted)" }}>{s.label[0].toUpperCase() + s.label.slice(1)}</dt>

@@ -64,6 +64,7 @@ export default function StateCountyMap({
   reservePanel = false,
   focus = null,
   onSelectedChange,
+  onOpen,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -81,6 +82,8 @@ export default function StateCountyMap({
   focus?: { fips: string | null; name: string; n: number } | null;
   /** Called when the selected county changes, from a click on the map or the panel's close. */
   onSelectedChange?: (fips: string | null) => void;
+  /** Desktop: open the county's page on click instead of selecting it. */
+  onOpen?: (href: string) => void;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelectedState] = useState<County | null>(null);
@@ -166,7 +169,7 @@ export default function StateCountyMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => setSelected(isSelected ? null : county)}
+                    onClick={() => (onOpen ? onOpen(`/historical/${county.fips}`) : setSelected(isSelected ? null : county))}
                     style={{
                       default: {
                         fill,
@@ -196,7 +199,7 @@ export default function StateCountyMap({
         </ZoomableGroup>
       </ComposableMap>
     );
-  }, [mapViewport, topo, autoProj, proj, mapKey, getCountyTpl, selected, setSelected, highlightFips, showTpl]);
+  }, [mapViewport, topo, autoProj, proj, mapKey, getCountyTpl, selected, setSelected, highlightFips, showTpl, onOpen]);
 
   // One description of a county, drawn as the hover popup and as the click panel. Without the
   // TPL layer (the county page's locator map) it is just the name and FIPS.

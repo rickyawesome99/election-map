@@ -58,13 +58,14 @@ export function SlidingTabs<K extends string>({ tabs, active, onChange, size = "
   );
 }
 
+// Short enough (with -my-1) to sit in a section heading's line without making the heading taller.
 export function SegToggle<K extends string>({ options, value, onChange, label }: { options: [{ key: K; label: string }, { key: K; label: string }]; value: K; onChange: (key: K) => void; label: string }) {
   const second = value === options[1].key;
   return (
-    <div role="radiogroup" aria-label={label} className="relative inline-flex w-max self-start rounded-full p-0.5 text-[11px] font-semibold" style={{ background: "var(--app-tab-bg)" }}>
+    <div role="radiogroup" aria-label={label} className="relative -my-1 inline-flex w-max self-start rounded-full p-0.5 text-[11px] font-semibold" style={{ background: "var(--app-tab-bg)" }}>
       <span aria-hidden className="vh-seg-thumb absolute inset-y-0.5 left-0.5 rounded-full" style={{ width: "calc(50% - 2px)", transform: second ? "translateX(100%)" : "none", background: "var(--app-panel)" }} />
       {options.map((o) => (
-        <button key={o.key} type="button" role="radio" aria-checked={value === o.key} onClick={() => onChange(o.key)} className="ix-press relative z-[1] w-[4.5rem] rounded-full py-1 transition-colors" style={{ color: value === o.key ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
+        <button key={o.key} type="button" role="radio" aria-checked={value === o.key} onClick={() => onChange(o.key)} className="ix-press relative z-[1] w-[4.5rem] rounded-full py-[3px] leading-[14px] transition-colors" style={{ color: value === o.key ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
           {o.label}
         </button>
       ))}

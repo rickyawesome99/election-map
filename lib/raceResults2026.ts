@@ -7,7 +7,7 @@ import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 // ── 2026 results for the race pages ───────────────────────────────────────────
 // The saved post-election results (data-entry/results_2026_seats.csv + results_2026_counties.csv,
 // written by the hand-run `npm run results-snapshot`, see lib/resultsSnapshot.ts), shaped for a
-// race page's Election Result section. Nothing here touches the live feed: a page shows what the
+// race page's results section (headed 2026 Election). Nothing here touches the live feed: a page shows what the
 // files hold. The forecast these replaced is archived in data/forecast-final-2026/.
 //
 // The CSVs' dem_/rep_ columns are SLOTS and, where a party runs several candidates (Alaska's top
@@ -30,6 +30,8 @@ export type ResultCandidate = {
   winner: boolean;
   /** Which of the race's two slots the candidate holds; null for a candidate outside them. */
   slot: "dem" | "rep" | null;
+  /** The final forecast's projected share for this person (data/forecast-final-2026/), when they were a projected nominee. */
+  projectedPct: number | null;
 };
 
 export type RaceResult2026 = {
@@ -87,6 +89,19 @@ function parseCandidates(cell: string) {
   });
 }
 
+type ArchivedRace = { office: string; id: string; dem: { name: string } | null; rep: { name: string } | null; projected: { shares: { dem: number; rep: number } } | null };
+
+/** The archived final projection's share per nominee, by office|id. */
+function projectedShares(): Map<string, { name: string; pct: number }[]> {
+  const races = JSON.parse(readFileSync(join(process.cwd(), "data", "forecast-final-2026", "races.json"), "utf8")) as Record<string, ArchivedRace>;
+  const out = new Map<string, { name: string; pct: number }[]>();
+  for (const r of Object.values(races)) {
+    if (!r.projected) continue;
+    out.set(`${r.office}|${r.id}`, (["dem", "rep"] as const).flatMap((s) => (r[s] ? [{ name: r[s]!.name, pct: r.projected!.shares[s] }] : [])));
+  }
+  return out;
+}
+
 let cache: Map<string, RaceResult2026> | null = null;
 
 function load(): Map<string, RaceResult2026> {
@@ -110,11 +125,15 @@ function load(): Map<string, RaceResult2026> {
     });
   }
 
+  const projections = projectedShares();
   const out = new Map<string, RaceResult2026>();
   for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "results_2026_seats.csv"), "utf8"))) {
     const office = r.office as RaceResult2026["office"];
     const total = num(r.total_votes);
     const pool = parseCandidates(r.candidates);
+    const projected = projections.get(`${office}|${r.race_id}`) ?? [];
+    // By name, not slot: Louisiana's finalists and some late swaps aren't the nominees the model projected.
+    const projectedPct = (name: string) => projected.find((p) => sameSurname(p.name, name))?.pct ?? null;
     const called = r.called === "1";
     const taken = new Set<number>();
     const slotRows: ResultCandidate[] = [];
@@ -127,12 +146,12 @@ function load(): Map<string, RaceResult2026> {
       if (hit) taken.add(hit.i);
       // No match (or no count printed): the slot's own column, which is the candidate's when the party ran one.
       const votes = hit ? hit.c.votes : num(r[`${slot}_votes`]);
-      slotRows.push({ name, party, votes, pct: total > 0 ? (votes / total) * 100 : 0, winner: false, slot });
+      slotRows.push({ name, party, votes, pct: total > 0 ? (votes / total) * 100 : 0, winner: false, slot, projectedPct: projectedPct(name) });
     }
     const outside = pool.filter((_, i) => !taken.has(i));
     const ownRows: ResultCandidate[] = outside
       .filter((c) => total > 0 && (c.votes / total) * 100 >= MIN_OWN_ROW_PCT)
-      .map((c) => ({ name: c.name, party: c.party, ...(c.partyLabel ? { partyLabel: c.partyLabel } : {}), votes: c.votes, pct: (c.votes / total) * 100, winner: false, slot: null }));
+      .map((c) => ({ name: c.name, party: c.party, ...(c.partyLabel ? { partyLabel: c.partyLabel } : {}), votes: c.votes, pct: (c.votes / total) * 100, winner: false, slot: null, projectedPct: projectedPct(c.name) }));
     const candidates = [...slotRows, ...ownRows].sort((a, b) => b.votes - a.votes);
     if (called && r.winner_name) {
       const w = candidates.find((c) => sameSurname(c.name, r.winner_name) && (c.party === r.winner_party || !r.winner_party));
@@ -144,6 +163,10 @@ function load(): Map<string, RaceResult2026> {
     const slotOwn = (slot: "dem" | "rep") => slotRows.find((c) => c.slot === slot)?.votes ?? 0;
     const bloc = { dem: num(r.dem_votes) > slotOwn("dem"), rep: num(r.rep_votes) > slotOwn("rep") };
     const dParty = (r.dem_party || "D") as ResultParty, rParty = (r.rep_party || "R") as ResultParty;
+    // No like-for-like projection: a same-party final (the model never projected one), or a party that ran
+    // several candidates (Alaska, Louisiana), where the projected share was the party's, not one person's.
+    const blocParties = new Set([...(bloc.dem ? [dParty] : []), ...(bloc.rep ? [rParty] : [])]);
+    for (const c of candidates) if (r.contest.startsWith("same-party") || blocParties.has(c.party)) c.projectedPct = null;
     out.set(`${office}|${r.race_id}`, {
       office, raceId: r.race_id, contest: r.contest, total,
       rcv: r.state === "AK",

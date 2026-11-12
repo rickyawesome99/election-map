@@ -104,7 +104,8 @@ export default function VoteHistoryTabbedSection({
             </div>
           )}
         </div>
-        <div className="min-h-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto pr-1">
+        {/* Scrolls only inside a fixed height; without one (Senate, Governor) the list runs its full length. */}
+        <div className={`min-h-0 min-w-0 flex-1 ${height || maxHeight ? "overflow-x-hidden overflow-y-auto pr-1" : ""}`}>
           <div key={activeTab.key} className="vh-tab-in h-full">
             {activeTab.content}
           </div>

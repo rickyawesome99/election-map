@@ -5,6 +5,7 @@ import type { HouseDelegationEntry, StateLegEntry } from "@/data/forecastData";
 import type { Chamber } from "@/data/stateLegDistricts";
 import type { UpcomingChamber } from "@/lib/stateLegUpcoming";
 import { MajorityPill, majorityStatus } from "./StateLegAboutSection";
+import { HeadToHead, partyVar, ResultRowFrame, RowEyebrow, RowMargin, RowNet, RowYear, Side } from "./ResultRowKit";
 
 type CompositionEntry = StateLegEntry | HouseDelegationEntry;
 /** Verified size of the chamber on screen, and the seats a veto override takes in it. */
@@ -253,6 +254,87 @@ function EntryCard({
   );
 }
 
+// "rows": one cycle per head-to-head row (ResultRowKit): year and the cycle's details on the left,
+// each party's seats over its vote with a seat-split bar (majority line) between, vote margin right.
+function UpcomingRow({ upcoming, delay }: { upcoming: UpcomingChamber; delay: number }) {
+  const { year, seatsUp, totalSeats, wholeChamber, parity, termYears } = upcoming;
+  const headline = wholeChamber ? `All ${totalSeats} seats up` : totalSeats != null ? `${seatsUp} of ${totalSeats} seats up` : `${seatsUp} seats up`;
+  const detail = [termYears != null ? `${termYears}-year terms` : null, parity ? `${parity}-numbered districts` : null].filter(Boolean).join(" · ");
+  return (
+    <ResultRowFrame
+      delay={delay}
+      left={<RowYear year={year}><RowEyebrow>Upcoming</RowEyebrow></RowYear>}
+      middle={
+        <div className="flex flex-wrap items-baseline gap-x-2">
+          <span className="text-base font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{headline}</span>
+          {detail && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{detail}</span>}
+        </div>
+      }
+      net={null}
+      margin={null}
+    />
+  );
+}
+
+function EntryRow({ entry, majorityInfo, net = null, seatsUp = null, newMap = false, delay }: { entry: CompositionEntry; majorityInfo?: MajorityInfo | null; net?: { party: "D" | "R"; seats: number } | null; seatsUp?: number | null; newMap?: boolean; delay: number }) {
+  const hasSeats = entry.demSeats != null && entry.repSeats != null;
+  const hasVoteData = entry.demPct != null && entry.repPct != null;
+  const othPct = "othPct" in entry ? entry.othPct : undefined;
+  const winner = hasVoteData ? (entry.demPct! > entry.repPct! ? "D" : "R") : null;
+  const margin = hasVoteData ? Math.abs(entry.demPct! - entry.repPct!).toFixed(1) : null;
+  const chamberSize = ("totalSeats" in entry ? entry.totalSeats : undefined) ?? majorityInfo?.totalSeats;
+  const status = hasSeats && majorityInfo && chamberSize
+    ? majorityStatus(entry.demSeats!, entry.repSeats!, Math.floor(chamberSize / 2) + 1, supermajorityFor(chamberSize, majorityInfo))
+    : null;
+  // Seats up rides under the margin (in place of its "vote" caption) to keep the year column short.
+  const upText = seatsUp != null ? (chamberSize != null && seatsUp >= chamberSize ? `all ${seatsUp} up` : `${seatsUp}${chamberSize != null ? ` of ${chamberSize}` : ""} up`) : null;
+  const meta = othPct != null && othPct >= 0.5 ? `other ${othPct.toFixed(1)}%` : "";
+  // The bar is the seat split; a state chamber's bar marks the seats a majority takes.
+  const seatTotal = hasSeats ? (chamberSize ?? entry.demSeats! + entry.repSeats!) : 0;
+  const side = (party: "D" | "R") => {
+    const dem = party === "D";
+    const seats = dem ? entry.demSeats : entry.repSeats;
+    const pct = dem ? entry.demPct : entry.repPct;
+    const votes = dem ? entry.demVotes : entry.repVotes;
+    return (
+      <Side
+        party={party}
+        align={dem ? "left" : "right"}
+        headline={seats != null ? `${seats}${party}` : `${party}`}
+        detail={hasVoteData ? (
+          <>
+            <span className="font-semibold" style={{ color: partyVar(party) }}>{pct!.toFixed(1)}%</span>
+            <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
+            {votes != null ? votes.toLocaleString() : "—"}
+          </>
+        ) : <span style={{ color: "var(--app-text-very-muted)" }}>votes unavailable</span>}
+      />
+    );
+  };
+  return (
+    <ResultRowFrame
+      delay={delay}
+      left={
+        <RowYear year={entry.year}>
+          {newMap && <span className="text-[9px] font-bold uppercase tracking-wider" style={{ color: "var(--redistrict-cd)" }}>New map</span>}
+          {status && <MajorityPill status={status} className="justify-self-start" />}
+          {meta && <span className="text-[11px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
+        </RowYear>
+      }
+      middle={
+        <HeadToHead
+          dem={side("D")}
+          rep={side("R")}
+          split={hasSeats && seatTotal > 0 ? (entry.demSeats! / seatTotal) * 100 : null}
+          tick={hasSeats && majorityInfo && seatTotal > 1 ? ((Math.floor(seatTotal / 2) + 1) / seatTotal) * 100 : null}
+        />
+      }
+      net={<RowNet net={net} />}
+      margin={<RowMargin party={winner} value={winner && margin ? `${winner}+${margin}` : "—"} caption={upText ?? "vote"} />}
+    />
+  );
+}
+
 export default function StateLegCompositionBox({
   federalEntries = [],
   houseEntries,
@@ -273,9 +355,9 @@ export default function StateLegCompositionBox({
   newMapYears,
   layout = "column",
 }: {
-  /** "grid": the cards flow in a responsive grid with no heading, tabs or scrollbox — the state
-   *  page's office tabs, where one office is on screen at a time and the page scrolls instead. */
-  layout?: "column" | "grid";
+  /** "grid": the cards flow in a responsive grid with no heading, tabs or scrollbox. "rows": the
+   *  same, one cycle per full-width row (the state page's office tabs, where the page scrolls). */
+  layout?: "column" | "grid" | "rows";
   /** Replaces the default "Legislative Composition · Since 2016" heading. */
   title?: React.ReactNode;
   /** Fine print on the heading's right, e.g. the chamber's size. */
@@ -381,6 +463,32 @@ export default function StateLegCompositionBox({
       })}
     </>
   );
+
+  if (layout === "rows") {
+    return (
+      <div className="flex flex-col">
+        {/* Every row as tall as the tallest, the upcoming cycle's too (a New map tag or third-party
+            line adds height). */}
+        <div className="grid auto-rows-fr">
+        {upcoming && chamber && <UpcomingRow upcoming={upcoming} delay={0} />}
+        {entries.map((entry, i) => {
+          const prev = entries.reduce<CompositionEntry | undefined>((best, other) => (other.year < entry.year && (!best || other.year > best.year) ? other : best), undefined);
+          return (
+            <EntryRow
+              key={`${entry.year}-${"type" in entry ? entry.type : "US House"}`}
+              entry={entry}
+              majorityInfo={chamber ? majorityInfo : null}
+              net={netChange(entry, prev)}
+              seatsUp={chamber ? seatsUpByYear?.[entry.year] ?? null : null}
+              newMap={newMapYears?.includes(entry.year) ?? false}
+              delay={Math.min(i + (upcoming && chamber ? 1 : 0), 8) * 55}
+            />
+          );
+        })}
+        </div>
+      </div>
+    );
+  }
 
   if (layout === "grid") {
     return <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{cards}</div>;

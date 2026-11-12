@@ -7,7 +7,7 @@ import { RaceRail, type RailItem } from "@/components/RaceLocator";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, LedgerSubhead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
@@ -23,10 +23,8 @@ import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import FinalForecastPill from "@/components/FinalForecastPill";
-import { forecastIsFinal } from "@/lib/forecastClock";
 import { StatePill, OfficePill, HeldPill, SeatPill, PILL, type SeatNavLink } from "@/components/RaceHeroPills";
 
-const GENERAL_ELECTION = "November 3, 2026";
 
 // seatUrlId is the seat's URL id ("pa" / "pa2"); each row links to its /senate/[id]/[year] page when one exists.
 // The party the incumbent ran under at their latest win. senateNoElection/senateHoldovers store
@@ -206,7 +204,6 @@ function NoElectionPage({
               <VoteHistoryTabbedSection
                 variant="plain"
                 defaultTabKey="race-results"
-                height="400px"
                 tabs={[
                   {
                     key: "race-results",
@@ -350,22 +347,32 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         nav={<RaceRail items={SENATE_RAIL} current={senateUrlId(race.id)} label="Choose a Senate race" />}
         fitTitle={{ chars: `${race.name} U.S. Senate`.length, emPerChar: 0.58, reservePx: 0 }}
         title={<>{race.name} U.S. Senate</>}
-        candidates={race.candidates ? [race.candidates.dem, race.candidates.rep] : null}
-        state={race.state}
-        fallbackSub={`${electionYear} ${race.electionType ?? "Regular"} U.S. Senate Race${race.seatClass ? ` · Class ${race.seatClass}` : ""} · General ${GENERAL_ELECTION}`}
         projectedMargin={projectedMargin}
         pollMargin={pollMargin}
-        pollsters={polling.avg?.n ?? null}
         marketDemProb={marketDemProb}
+        tpl={stateTpl}
+        introBelow
       />
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
-
+          <section>
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
+              items={[
+                incumbentFact(currentSenatorName, currentSenatorParty, candidatePageHref(currentSenatorName, race.state)),
+                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
+              ]}
+            >
+              <StateDemographicsSubsection abbr={abbr} />
+            </AboutRaceCard>
+          </section>
 
           <section>
             {result ? (<>
-              <LedgerSectionHead label="Election Result" meta={electionResultMeta(result)} />
+              <LedgerSectionHead label="2026 Election" meta={electionResultMeta(result)} />
               <ElectionResultSection
                 r={result}
                 state={race.state}
@@ -442,31 +449,12 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               probabilityD={forecast.probability}
               interval80={forecast.interval80}
             />
-          </section>
-
-          {raceHistory && (
-            <section>
-              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · ${forecastIsFinal ? "the final model" : "today's model"} on each day's polls`} />
-              <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
+            {raceHistory && (<>
+              <LedgerSubhead rule={false} top="mt-3" label="Forecast Over Time" meta={<Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>} />
+              <RaceForecastTrend inline dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Projected margin over time, rerun on polls available each day and the latest model. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
-            </section>
-          )}
-
-          <section>
-            <LedgerSectionHead label="About this Race" />
-            <AboutRaceCard
-              bare
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
-              items={[
-                incumbentFact(currentSenatorName, currentSenatorParty, candidatePageHref(currentSenatorName, race.state)),
-                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-              ]}
-            >
-              <StateDemographicsSubsection abbr={abbr} />
-            </AboutRaceCard>
+            </>)}
           </section>
 
           {polling.avg && race.candidates && (
@@ -496,7 +484,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               <VoteHistoryTabbedSection
                 variant="plain"
                 defaultTabKey="race-results"
-                height="400px"
                 tabs={[
                   {
                     key: "race-results",

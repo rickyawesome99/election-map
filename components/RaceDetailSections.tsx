@@ -9,6 +9,7 @@ import { stateDemographics } from "@/data/demographics";
 import { FORECAST_CONSTANTS } from "@/data/tplModelData";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
+import ExpandableTbody from "@/components/ExpandableTbody";
 import type { RaceFinanceDetail } from "@/data/fundraisingData";
 import { formatProjectedMargin, projectedMarginColor, leanColor } from "@/lib/colorScale";
 import { getNationalEnvironment, nationalSigmaFor, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
@@ -66,9 +67,10 @@ export function incumbentFact(name: string | null | undefined, party: string | n
 // footer blocks. Used by the About sections and their Demographics subsection.
 export function LedgerFacts({ items, className }: { items: DetailInfoItem[]; className?: string }) {
   return (
-    <dl className={`grid gap-x-6 gap-y-3 ${className ?? ""}`} style={{ gridTemplateColumns: "repeat(auto-fill, minmax(10.5rem, 1fr))" }}>
+    // Each fact as wide as its value (a long incumbent name stays on one line), wrapping only at the row's end.
+    <dl className={`flex flex-wrap gap-x-6 gap-y-3 ${className ?? ""}`}>
       {items.map((item) => (
-        <div key={item.label}>
+        <div key={item.label} className="min-w-[10.5rem]">
           <dt className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{item.label}</dt>
           <dd className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700 }}><DetailInfoValue {...item} /></dd>
         </div>
@@ -78,9 +80,9 @@ export function LedgerFacts({ items, className }: { items: DetailInfoItem[]; cla
 }
 
 // A subsection inside a ledger section: a small label on a thin rule, with an optional note at right.
-export function LedgerSubhead({ label, meta }: { label: string; meta?: ReactNode }) {
+export function LedgerSubhead({ label, meta, rule = true, top = "mt-7" }: { label: string; meta?: ReactNode; rule?: boolean; /** Space above, as a margin class. */ top?: string }) {
   return (
-    <div className="mt-7 mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-0.5 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
+    <div className={`${top} flex flex-wrap items-baseline gap-x-3 gap-y-0.5 ${rule ? "mb-3 pb-2" : "mb-1.5"}`} style={rule ? { borderBottom: "1px solid var(--app-border)" } : undefined}>
       <h3 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{label}</h3>
       {meta && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
     </div>
@@ -94,7 +96,7 @@ export function StateDemographicsSubsection({ abbr }: { abbr: string }) {
   if (!demographics) return null;
   return (
     <>
-      <LedgerSubhead label="Demographics" meta="ACS 2020–24 5-year estimates." />
+      <LedgerSubhead rule={false} label="Demographics" meta="ACS 2020–24 5-year estimates." />
       <DemographicsStrip {...demographics} layout="grid" />
     </>
   );
@@ -111,10 +113,12 @@ type CandidateCardEntry = {
   placeholder?: boolean;
   // Projected votes (lib/countyProjection.ts); shown small under the share when present.
   votes?: number;
-  /** The race's called winner (the Election Result section): a check beside the name. */
+  /** The race's called winner (the results section, headed 2026 Election): a check beside the name. */
   winner?: boolean;
   /** Shown in place of the party name, for a candidate of neither major party ("Libertarian"). */
   partyName?: string;
+  /** The counted share minus the final forecast's projected share, in points: "▲2.1%" left of the share. */
+  vsProjected?: number;
 };
 
 type DetailDensity = "default" | "compact";
@@ -233,6 +237,17 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
 
 
 /** A vote share to one decimal ("44.0", not "44"), except a whole 0 or 100 (an unopposed seat). */
+/** A counted share against the forecast's projection: ▲ over, ▼ under, in points. */
+function VsProjected({ pts }: { pts: number }) {
+  const r = Math.round(pts * 10) / 10;
+  const arrow = r > 0 ? "▲" : r < 0 ? "▼" : "";
+  return (
+    <span className="text-sm font-semibold" style={{ opacity: 0.75 }} title={`${r > 0 ? "Over" : r < 0 ? "Under" : "Matched"} the final forecast's projected share by ${Math.abs(r).toFixed(1)} points`}>
+      {arrow}{Math.abs(r).toFixed(1)}%
+    </span>
+  );
+}
+
 function fmtCandidatePct(pct: number): string {
   return pct === 0 || pct === 100 ? String(pct) : pct.toFixed(1);
 }
@@ -732,7 +747,7 @@ export function CandidatesLedgerSection({
   candidates,
   compact = false,
 }: {
-  /** The two nominees; the Election Result section also passes any other candidate with a row of their own. */
+  /** The two nominees; the results section (headed 2026 Election) also passes any other candidate with a row of their own. */
   candidates: CandidateCardEntry[];
   /** Tighter row spacing, for the race pages' result section that also carries the map. */
   compact?: boolean;
@@ -797,7 +812,10 @@ export function CandidatesLedgerSection({
               </div>
             </div>
             <div className="shrink-0 text-right tabular-nums" style={{ color: accentColor }}>
-              <div className="text-3xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{fmtCandidatePct(candidate.pct)}%</div>
+              <div className="flex items-baseline justify-end gap-2">
+                {candidate.vsProjected != null && <VsProjected pts={candidate.vsProjected} />}
+                <div className="text-3xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{fmtCandidatePct(candidate.pct)}%</div>
+              </div>
               {candidate.votes != null && (
                 <div className={`text-sm font-medium${compact ? "" : " mt-0.5"}`}>{candidate.votes.toLocaleString("en-US")} votes</div>
               )}
@@ -979,8 +997,8 @@ function financeReportNote(detail: RaceFinanceDetail): string | null {
   return parts.length ? parts.join(" · ") : null;
 }
 
-// Cash on hand, spending, outside spending and small-dollar share, D · R per cell, laid out like the
-// Forecast Calculation's term cells. Outside spending on a side = independent expenditures supporting
+// Cash on hand, spending, outside spending and small-dollar share, D · R per cell, laid out (and
+// tinted on hover) like the Forecast Calculation's term cells. Outside spending on a side = independent expenditures supporting
 // that candidate plus those opposing the opponent, so the two figures read as "help" for each side.
 function FinanceDetailCells({ detail }: { detail: RaceFinanceDetail }) {
   const d = detail.dem, r = detail.rep;
@@ -1001,9 +1019,10 @@ function FinanceDetailCells({ detail }: { detail: RaceFinanceDetail }) {
   const visible = rows.filter((row) => row.dem != null || row.rep != null);
   if (!visible.length) return null;
   return (
-    <div className="mt-5 grid grid-cols-2 md:grid-flow-col md:auto-cols-fr md:grid-cols-none" style={{ borderTop: "2px solid var(--app-text-primary)" }}>
+    <div className="mt-1.5" style={LEDGER_ROW_STYLE}>
+    <div className="-mx-2 grid grid-cols-2 md:grid-flow-col md:auto-cols-fr md:grid-cols-none">
       {visible.map((row) => (
-        <div key={row.label} className="flex flex-col gap-1 py-2.5 pr-3" style={LEDGER_ROW_STYLE}>
+        <div key={row.label} className="vh-row vh-row-boxed flex flex-col gap-1 px-2 py-2.5 hover:z-10 focus-within:z-10">
           <InfoTooltip label={row.label}>{row.tip}</InfoTooltip>
           <span className="text-xl font-bold leading-tight tabular-nums whitespace-nowrap" style={{ fontFamily: "var(--font-serif)" }}>
             <span style={{ color: partyAccent("D") }}>{row.dem ?? "—"}</span>
@@ -1012,6 +1031,7 @@ function FinanceDetailCells({ detail }: { detail: RaceFinanceDetail }) {
           </span>
         </div>
       ))}
+    </div>
     </div>
   );
 }
@@ -1400,7 +1420,7 @@ export function ForecastCalculationCard({
         <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
           <div className="min-w-0">
             <InfoTooltip label="Projected Margin">{marginTooltip}</InfoTooltip>
-            <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(2.5rem, 7vw, 3.75rem)", lineHeight: 0.95, color: finalAccent }}>
+            <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(2.1rem, 5.6vw, 3rem)", lineHeight: 0.95, color: finalAccent }}>
               {formatProjectedMargin(projectedMargin)}
             </div>
           </div>
@@ -1409,7 +1429,7 @@ export function ForecastCalculationCard({
               <InfoTooltip label={winD ? "Dem win chance" : "Rep win chance"}>
                 How likely this candidate is to win, given how far off forecasts like this have been in past elections, including misses in the national mood that hit every race at once. Races with plenty of polling are a bit more certain.
               </InfoTooltip>
-              <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(2.25rem, 6vw, 3rem)", lineHeight: 1, color: winD ? "var(--party-dem)" : "var(--party-rep)" }}>
+              <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(1.85rem, 4.8vw, 2.4rem)", lineHeight: 1, color: winD ? "var(--party-dem)" : "var(--party-rep)" }}>
                 {(winD ? probabilityD : 1 - probabilityD) >= 0.995 ? ">99" : Math.round((winD ? probabilityD : 1 - probabilityD) * 100)}%
               </div>
             </div>
@@ -1437,6 +1457,12 @@ export function ForecastCalculationCard({
             <span className="text-2xl font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: projectedMarginColor(modelMargin) }}>{formatProjectedMargin(modelMargin)}</span>
           </div>
         </div>
+        {interval80 && interval80[1] - interval80[0] > 0.05 && (
+          <div className="mt-1 flex items-center gap-1.5 text-[10px] font-semibold tabular-nums">
+            <InfoTooltip label="80% range" labelStyle={{ color: "var(--app-text-very-muted)" }}>Eight times out of ten, the final result should land somewhere in this range (the grey band).</InfoTooltip>
+            <span style={{ color: "var(--app-text-muted)" }}>{formatProjectedMargin(interval80[0])} to {formatProjectedMargin(interval80[1])}</span>
+          </div>
+        )}
 
         {/* Blend lever: Model and Polling Avg on one axis, the projection at their weighted balance point */}
         <div className="relative mt-6" style={{ height: xPoll != null ? 100 : 70 }} role="img"
@@ -1466,16 +1492,9 @@ export function ForecastCalculationCard({
           )}
           {/* The projection: its number is the hero above, so the tick goes unlabeled */}
           <div className="absolute rounded-sm" style={{ top: AXIS_Y - 15, height: 30, width: 4, left: `${xProj}%`, transform: "translateX(-50%)", background: finalAccent }} />
-        </div>
-        <div className="mt-1 flex items-center justify-between gap-3 text-[10px] font-semibold tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-          <span>D+{extent}</span>
-          {interval80 && interval80[1] - interval80[0] > 0.05 && (
-            <span className="flex items-center gap-1.5">
-              <InfoTooltip label="80% range" labelStyle={{ color: "var(--app-text-very-muted)" }}>Eight times out of ten, the final result should land somewhere in this range (the grey band).</InfoTooltip>
-              <span style={{ color: "var(--app-text-muted)" }}>{formatProjectedMargin(interval80[0])} to {formatProjectedMargin(interval80[1])}</span>
-            </span>
-          )}
-          <span>R+{extent}</span>
+          {/* The axis ends, just under the line */}
+          <span className="absolute left-0 text-[10px] font-semibold tabular-nums" style={{ top: AXIS_Y + 6, color: "var(--app-text-very-muted)" }}>D+{extent}</span>
+          <span className="absolute right-0 text-[10px] font-semibold tabular-nums" style={{ top: AXIS_Y + 6, color: "var(--app-text-very-muted)" }}>R+{extent}</span>
         </div>
       </div>
     );
@@ -2136,6 +2155,9 @@ export function CountyDemographicsCard({
 // each carries in the average (lib/racePollAverage.ts). Only a pollster's latest poll of
 // the race is listed, as only it counts. Flat rows on the page background, like the other
 // ledger sections.
+/** Polls listed before the race page's "Show all N polls" button. */
+const POLLS_FIRST = 10;
+
 export function RacePollsSection({ polling, demName, repName }: { polling: RacePolling; demName: string; repName: string }) {
   const avg = polling.avg;
   if (!avg) return null;
@@ -2146,7 +2168,7 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
   const surname = (n: string) => n.replace(/\s*\(.*\)\s*$/, "").trim().split(/\s+/).slice(-1)[0];
   return (
     <div className="flex flex-col">
-      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 py-4">
+      <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1 pt-0.5 pb-1.5">
         <span className="text-[30px] font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: marginColor(avg.diff) }}>{fmtMargin(avg.diff)}</span>
         <span className="text-[12px] font-semibold" style={{ color: "var(--app-text-primary)" }}>Polling average</span>
       </div>
@@ -2162,8 +2184,7 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
             <th className="text-right font-semibold py-2">Wt.</th>
           </tr>
         </thead>
-        <tbody>
-          {avg.polls.map((p) => (
+        <ExpandableTbody pill first={POLLS_FIRST} colSpan={6} noun="polls" rows={avg.polls.map((p) => (
             <tr key={`${p.pollster}-${p.endDate}`} className="align-top" style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
               <td className="py-2 pr-2">
                 <div>{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({p.partisan})</span> : null}</div>
@@ -2178,8 +2199,7 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
               <td className="py-2 pr-2 text-right font-semibold whitespace-nowrap" style={{ color: marginColor(p.diff + p.shift - p.house) }}>{fmtMargin(p.diff + p.shift - p.house)}</td>
               <td className="py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>{maxWeight > 0 ? `${Math.round((p.weight / maxWeight) * 100)}%` : "—"}</td>
             </tr>
-          ))}
-        </tbody>
+          ))} />
       </table>
       <div className="hidden sm:block overflow-x-auto">
         <table className="w-full text-sm tabular-nums" style={{ borderCollapse: "collapse" }}>
@@ -2195,8 +2215,7 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
               <th className="text-right font-semibold py-2">Weight</th>
             </tr>
           </thead>
-          <tbody>
-            {avg.polls.map((p) => (
+          <ExpandableTbody pill first={POLLS_FIRST} colSpan={8} noun="polls" rows={avg.polls.map((p) => (
               <tr key={`${p.pollster}-${p.endDate}`} style={{ borderTop: "1px solid color-mix(in srgb, var(--app-border) 72%, transparent)", color: "var(--app-text-primary)" }}>
                 <td className="py-1.5 pr-2 whitespace-nowrap">{p.pollster}{p.partisan ? <span className="ml-1 text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({p.partisan})</span> : null}</td>
                 <td className="py-1.5 pr-2 whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{p.startDate === p.endDate ? fmtDate(p.endDate) : `${fmtDate(p.startDate)} – ${fmtDate(p.endDate)}`}</td>
@@ -2207,8 +2226,7 @@ export function RacePollsSection({ polling, demName, repName }: { polling: RaceP
                 <td className="py-1.5 pr-2 text-right font-semibold" style={{ color: marginColor(p.diff + p.shift - p.house) }}>{fmtMargin(p.diff + p.shift - p.house)}</td>
                 <td className="py-1.5 text-right" style={{ color: "var(--app-text-very-muted)" }}>{maxWeight > 0 ? `${Math.round((p.weight / maxWeight) * 100)}%` : "—"}</td>
               </tr>
-            ))}
-          </tbody>
+            ))} />
         </table>
       </div>
     </div>

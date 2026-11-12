@@ -138,14 +138,16 @@ const RACE_HEIGHT = 140;
 /** One race's forecast over time: the projected margin, signed toward the candidate favored by
  *  today's margin (so the line never flips mid-series) on a scale symmetric about the zero line.
  *  The line and the area between it and the zero line take the color of whoever leads there. Scrubbing
- *  the chart rewrites the headline above it (margin, win odds, date); leaving it puts today back. */
-export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
+ *  the chart rewrites the headline above it (margin, win odds, date); leaving it puts today back.
+ *  `inline`: set inside the Forecast Calculation section, under its own subhead (less top space). */
+export function RaceForecastTrend({ dates, probD, margins, dem, rep, inline = false }: {
   dates: string[];
   probD: number[];
   /** R-positive. */
   margins: number[];
   dem: { name: string; party: Party };
   rep: { name: string; party: Party };
+  inline?: boolean;
 }) {
   const [hover, setHover] = useState<number | null>(null);
   const clipId = useId().replace(/:/g, "");
@@ -180,14 +182,14 @@ export function RaceForecastTrend({ dates, probD, margins, dem, rep }: {
   };
 
   return (
-    <div className="min-w-0 py-4">
+    <div className={inline ? "min-w-0 pt-3" : "min-w-0 py-4"}>
       <div className="flex flex-wrap items-baseline gap-x-5 gap-y-1" aria-live="polite">
-        <span className="text-[30px] font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: PARTY_TEXT[shownParty] }}>
+        <span className="text-[20px] font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: PARTY_TEXT[shownParty] }}>
           {margin(margins[shown])}
         </span>
         <span className="text-[12px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>
           <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{leader}</span>
-          {" · "}Projected margin · {hover == null ? (forecastIsFinal ? "final, " : "today, ") : ""}{longDate(dates[shown])}
+          {" · "}{hover == null ? (forecastIsFinal ? "Final, " : "Today, ") : ""}{longDate(dates[shown])}
         </span>
       </div>
       <div className="mt-4 flex">

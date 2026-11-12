@@ -17,7 +17,7 @@ import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import CandidateLink from "@/components/CandidateLink";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
-import { ResultCard } from "@/components/StatewideVoteHistoryPanel";
+import { ResultRow } from "@/components/StatewideVoteHistoryPanel";
 import StateLayerMap, { chamberOfLayer, layerYears, type MapLayer } from "./StateLayerMap";
 import StateCountyMap from "@/components/StateCountyMap";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
@@ -78,11 +78,11 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
   const [layer, setLayerState] = useState<MapLayer | "counties">(layers[0]?.id ?? "house");
   const [year, setYear] = useState<number>(electionYear);
   const [selectedHouse, setSelectedHouse] = useState<ForecastedRace | null>(null);
-  // On desktop a House district click on the map opens its race page (hover already shows the
-  // details); phones keep the tap-to-select panel.
+  // On desktop a House district or county click on the map opens its page (hover already shows
+  // the details); phones keep the tap-to-select panel.
   const desktop = useDesktopPointer();
   const router = useRouter();
-  const openPage = (href: string) => { startPendingNav(href); router.push(href); };
+  const openPage = useCallback((href: string) => { startPendingNav(href); router.push(href); }, [router]);
   const mapSelectHouse = (race: ForecastedRace | null) => {
     // null is a click on the already-selected district (a ballot row selected it): open that one.
     const target = race ?? selectedHouse;
@@ -229,9 +229,10 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
             demParty={countyMapLayer.demParty}
             repParty={countyMapLayer.repParty}
             height={360}
+            onOpen={desktop ? openPage : undefined}
           />
         ) : (
-          <StateCountyMap stateAbbr={state.abbr} stateName={state.name} showTpl showLabel={false} countyTpl={data.counties.tpl} countyVotes={data.counties.votes} height={360} />
+          <StateCountyMap stateAbbr={state.abbr} stateName={state.name} showTpl showLabel={false} countyTpl={data.counties.tpl} countyVotes={data.counties.votes} height={360} onOpen={desktop ? openPage : undefined} />
         )) : (
         <StateLayerMap
           stateAbbr={state.abbr}
@@ -423,7 +424,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
       <section id="ballot" className="mt-6">
         <div className="min-w-0">
             {(data.senate.length > 0 || houseRaces.length > 0) && (
-              <SubHead id="federal" right={<span className="inline-flex items-center gap-1.5"><i className="inline-block rounded-full" style={{ width: 7, height: 7, background: "var(--app-text-very-muted)" }} />incumbent</span>}>Federal</SubHead>
+              <SubHead id="federal" right={<span className="inline-flex items-baseline gap-1"><b>*</b>incumbent</span>}>Federal</SubHead>
             )}
             {data.senate.length > 0 && <SenateCards senate={data.senate} state={state.abbr} />}
 
@@ -456,7 +457,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
       {/* ── 3 · Results since 2016 ── */}
       <section id="results" ref={resultsRef} data-vh={resultsVh} className="mt-10">
         <SectionHead title="Results since 2016" right={
-          <SegToggle label="Results view" options={[{ key: "cards", label: "Cards" }, { key: "graph", label: "Graph" }]} value={resultsView} onChange={setResultsView} />
+          <SegToggle label="Results view" options={[{ key: "cards", label: "List" }, { key: "graph", label: "Graph" }]} value={resultsView} onChange={setResultsView} />
         } />
 
         <>
@@ -477,17 +478,16 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
             <>
 
             {officeTab.key === "statewide" && (
-              <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
-                {results.statewide.map((entry, i) => (
-                  <div key={entry.key} className="vh-row" style={{ animationDelay: `${Math.min(i, 8) * 55}ms` }}>
-                    <ResultCard entry={entry} state={state.abbr} />
-                  </div>
+              <div className="flex flex-col">
+                {/* Newest first; within a year the server's office order (president, Senate, governor) holds. */}
+                {[...results.statewide].sort((a, b) => b.year - a.year).map((entry, i) => (
+                  <ResultRow key={entry.key} entry={entry} state={state.abbr} delay={Math.min(i, 8) * 55} />
                 ))}
               </div>
             )}
             {officeTab.key === "federal" && (
               <StateLegCompositionBox
-                layout="grid"
+                layout="rows"
                 federalEntries={results.federal}
                 houseEntries={[]}
                 senateEntries={[]}
@@ -496,7 +496,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
             )}
             {officeTab.key === "stateHouse" && (
               <StateLegCompositionBox
-                layout="grid"
+                layout="rows"
                 chamber="house"
                 isUnicameral={results.isUnicameral}
                 federalEntries={[]}
@@ -510,7 +510,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
             )}
             {officeTab.key === "stateSenate" && (
               <StateLegCompositionBox
-                layout="grid"
+                layout="rows"
                 chamber="senate"
                 federalEntries={[]}
                 houseEntries={results.stateHouse}
@@ -528,7 +528,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
 
         {/* Map vintage: when each body's lines were last drawn, which is where a seat split stops comparing cleanly. */}
         {results.vintage.length > 0 && (
-          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 pt-3 sm:flex sm:flex-wrap sm:gap-x-8" style={{ borderTop: "1px solid var(--app-border)" }}>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-3 pt-3 sm:flex sm:flex-wrap sm:gap-x-8" style={{ borderTop: "1px solid var(--app-border)" }}>
             {results.vintage.map((v) => (
               <div key={v.label} className="min-w-0 sm:min-w-[120px]">
                 <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{v.label}</div>

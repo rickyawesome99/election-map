@@ -27,12 +27,10 @@ import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { pastElectionHref } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import FinalForecastPill from "@/components/FinalForecastPill";
-import { forecastIsFinal } from "@/lib/forecastClock";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
 import { RaceRail, DistrictLocatorMap, StateLocatorMap, type SwitcherDistrict, type RailItem } from "@/components/RaceLocator";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 
-const GENERAL_ELECTION = "November 3, 2026";
 
 function statewideRaceHref(stateAbbr: string, raceName: string, year: number): string | undefined {
   if (raceName === "President") return `/states/${stateAbbr.toLowerCase()}`;
@@ -102,11 +100,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const race = houseData.find((r) => r.name.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
 
-  // Parse district label for display (e.g. "CA-12" → state + district number)
   const [stateAbbr, districtNum] = race.name.split("-");
-  const districtLabel = districtNum === "AL"
-    ? `${race.state} At-Large`
-    : `${race.state}'s ${districtNum}${getOrdinalSuffix(parseInt(districtNum))} Congressional District`;
   const incumbentCandidate = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
@@ -255,23 +249,35 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           ? <DistrictLocatorMap stateAbbr={stateAbbr} districts={switcherDistricts} current={race.name} note={`colored by ${electionYear} forecast rating`} />
           : <StateLocatorMap stateAbbr={stateAbbr} fill={bg} label={`${race.state}, an at-large district`} />}
         title={<span className="whitespace-nowrap">{race.name}</span>}
-        candidates={race.candidates ? [race.candidates.dem, race.candidates.rep] : null}
-        state={race.state}
-        fallbackSub={`${electionYear} U.S. House Race · ${districtLabel} · General ${GENERAL_ELECTION}`}
         projectedMargin={projectedMargin}
         pollMargin={pollMargin}
-        pollsters={polling.avg?.n ?? null}
         marketDemProb={marketDemProb}
+        tpl={districtTpl}
         mapBesideTitle
+        introBelow
       />
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
         <div className="flex flex-col gap-8">
-
+          <section>
+            <AboutRaceCard
+              bare
+              title="About this District"
+              description={race.raceDesc}
+              items={[incumbentFact(currentRepName, currentRepParty, candidatePageHref(currentRepName, race.state))]}
+            >
+              {demographics && (
+                <>
+                  <LedgerSubhead rule={false} label="Demographics" meta={demographicsNote} />
+                  <DemographicsStrip {...demographics} layout="grid" />
+                </>
+              )}
+            </AboutRaceCard>
+          </section>
 
           <section>
             {result ? (<>
-              <LedgerSectionHead label="Election Result" meta={electionResultMeta(result)} />
+              <LedgerSectionHead label="2026 Election" meta={electionResultMeta(result)} />
               <ElectionResultSection
                 r={result}
                 state={race.state}
@@ -360,33 +366,12 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               probabilityD={forecast.probability}
               interval80={forecast.interval80}
             />
-          </section>
-
-          {raceHistory && (
-            <section>
-              <LedgerSectionHead label="Forecast Over Time" meta={`${raceHistory.dates.length} days · ${forecastIsFinal ? "the final model" : "today's model"} on each day's polls`} />
-              <RaceForecastTrend dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
+            {raceHistory && (<>
+              <LedgerSubhead rule={false} top="mt-3" label="Forecast Over Time" meta={<Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>} />
+              <RaceForecastTrend inline dates={raceHistory.dates} probD={raceHistory.probD} margins={raceHistory.margins}
                 dem={{ name: race.candidates?.dem.name ?? "Democrat", party: race.candidates?.dem.party ?? "D" }}
                 rep={{ name: race.candidates?.rep.name ?? "Republican", party: race.candidates?.rep.party ?? "R" }} />
-              <div className="px-1 pt-2 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>Projected margin over time, rerun on polls available each day and the latest model. <Link href="/analysis/internal-methodology#over-time" className="underline underline-offset-2" prefetch={false}>How this is built</Link>.</div>
-            </section>
-          )}
-
-          <section>
-            <LedgerSectionHead label="About this District" />
-            <AboutRaceCard
-              bare
-              title="About this District"
-              description={race.raceDesc}
-              items={[incumbentFact(currentRepName, currentRepParty, candidatePageHref(currentRepName, race.state))]}
-            >
-              {demographics && (
-                <>
-                  <LedgerSubhead label="Demographics" meta={demographicsNote} />
-                  <DemographicsStrip {...demographics} layout="grid" />
-                </>
-              )}
-            </AboutRaceCard>
+            </>)}
           </section>
 
           {polling.avg && race.candidates && (
@@ -410,13 +395,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               detail={financeDetail}
             />
           </section>
-
-          {boundaryEntries.length > 0 && (
-            <section>
-              <LedgerSectionHead label="Redistricting History" />
-              <HouseRedistrictingSection raceId={race.id} stateAbbr={stateAbbr} label={`${stateAbbr}-${districtNum === "AL" ? "AL" : parseInt(districtNum, 10)}`} entries={boundaryEntries} />
-            </section>
-          )}
 
           <section>
             <VoteHistoryTabbedSection
@@ -453,14 +431,15 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             />
           </section>
 
+          {boundaryEntries.length > 0 && (
+            <section>
+              <LedgerSectionHead label="Redistricting History" />
+              <HouseRedistrictingSection raceId={race.id} stateAbbr={stateAbbr} label={`${stateAbbr}-${districtNum === "AL" ? "AL" : parseInt(districtNum, 10)}`} entries={boundaryEntries} />
+            </section>
+          )}
+
         </div>
       </main>
     </div>
   );
-}
-
-function getOrdinalSuffix(n: number): string {
-  const s = ["th", "st", "nd", "rd"];
-  const v = n % 100;
-  return s[(v - 20) % 10] || s[v] || s[0];
 }

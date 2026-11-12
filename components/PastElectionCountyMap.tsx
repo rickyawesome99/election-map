@@ -114,6 +114,7 @@ export default function PastElectionCountyMap({
   bubbles = false,
   focus = null,
   onSelectedChange,
+  onOpen,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -139,6 +140,8 @@ export default function PastElectionCountyMap({
   focus?: { fips: string | null; name: string; n: number } | null;
   /** Called when the selected county changes, from a click on the map or the panel's close. */
   onSelectedChange?: (fips: string | null) => void;
+  /** Desktop: open the county's page on click instead of selecting it. */
+  onOpen?: (href: string) => void;
 }) {
   const byFips = useMemo(() => new Map(counties.map((c) => [c.fips, c.result])), [counties]);
   const maxNet = useMemo(() => (bubbles ? bubbleMaxNet(counties) : 0), [bubbles, counties]);
@@ -231,7 +234,7 @@ export default function PastElectionCountyMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => setSelected(isSelected ? null : county)}
+                    onClick={() => (onOpen ? onOpen(`/historical/${county.fips}`) : setSelected(isSelected ? null : county))}
                     style={{
                       default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 1.5 : 0.5, outline: "none" },
                       hover: { fill, stroke: hoverStroke, strokeWidth: 1, outline: "none", cursor: "pointer" },
@@ -256,7 +259,7 @@ export default function PastElectionCountyMap({
         </ZoomableGroup>
       </ComposableMap>
     );
-  }, [mapViewport, topo, autoProj, proj, mapKey, byFips, selected, fillFor, setSelected, mapStroke, bubbles, maxNet, demParty, repParty]);
+  }, [mapViewport, topo, autoProj, proj, mapKey, byFips, selected, fillFor, setSelected, mapStroke, bubbles, maxNet, demParty, repParty, onOpen]);
 
   // One description of a county, drawn as the hover popup and as the click panel.
   const card = (c: Hovered): CountyTooltipProps => {

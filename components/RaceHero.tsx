@@ -1,18 +1,13 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 import { fmtLean, formatProjectedMargin, leanColor, projectedMarginColor } from "@/lib/colorScale";
-import { candidatePageHref } from "@/lib/candidatePages";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 /**
  * The header of a race page (House, Senate, Governor). Pill row with the race switcher at its
- * right end (under the title on a phone); the title; under it, the matchup and one small line of
- * the model's checks — projected margin, polling average, markets. House pages add the district
+ * right end (under the title on a phone); the title; under it, one small line of the model's checks — projected margin, polling average, markets, TPL. House pages add the district
  * locator map at the far end of the title line. The projected margin also tints the header's
  * background.
  */
-
-export type HeroCandidate = { name: string; party: string };
 
 /** The leader's win chance, rounded the way the Forecast Calculation card rounds it (">99%" from 99.5%). */
 export function winChanceLabel(probabilityD: number): { text: string; party: "D" | "R" } {
@@ -44,7 +39,7 @@ function Stat({ label, children }: { label: string; children: ReactNode }) {
 }
 
 export default function RaceHero({
-  pills, nav, map, title, fitTitle, candidates, state, fallbackSub, projectedMargin, pollMargin, pollsters, marketDemProb, mapBesideTitle,
+  pills, nav, map, title, fitTitle, projectedMargin, pollMargin, marketDemProb, tpl, mapBesideTitle, introBelow,
 }: {
   pills: ReactNode;
   nav?: ReactNode;
@@ -53,16 +48,15 @@ export default function RaceHero({
   title: ReactNode;
   /** Size a long statewide title to fit one line: its character count, the office's width per character, and the px of any controls set inside it (seat arrows). */
   fitTitle?: { chars: number; emPerChar: number; reservePx: number };
-  /** Dem-slot and Rep-slot nominees; null when not set yet (fallbackSub shows instead). */
-  candidates: [HeroCandidate, HeroCandidate] | null;
-  state: string;
-  fallbackSub: string;
   projectedMargin: number;
   pollMargin: number | null;
-  pollsters: number | null;
   marketDemProb: number | null;
+  /** The district's or state's TPL (R-positive), the Model's starting point. */
+  tpl: number;
   /** Put the map at the right end of the title line (short House titles) instead of beside the matchup. */
   mapBesideTitle?: boolean;
+  /** The page opens with text that reads as part of the header (House: the incumbent and district blurb), so less space under it. */
+  introBelow?: boolean;
 }) {
   const mkt = marketDemProb == null ? null : winChanceLabel(marketDemProb);
   const b = (color: string, text: string) => <b className="font-bold tabular-nums" style={{ color }}>{text}</b>;
@@ -72,13 +66,13 @@ export default function RaceHero({
         background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
       }}
     >
-      <div className={`${PAGE_CONTAINER} pt-6 pb-8`}>
+      <div className={`${PAGE_CONTAINER} pt-6 ${introBelow ? "pb-[21px]" : "pb-8"}`}>
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
           <div className="flex items-center gap-2 flex-wrap">{pills}</div>
           {nav && <div className="hidden sm:block">{nav}</div>}
         </div>
 
-        {/* House: the map at the right, its top on the title's cap line; the title and the matchup under it stay together on the left. */}
+        {/* House: the map at the right, its top on the title's cap line; the title and the checks under it stay together on the left. */}
         <div className={mapBesideTitle ? "mt-2 flex items-start justify-between gap-4" : "mt-2"}>
         <div className="min-w-0">
         <h1
@@ -90,39 +84,22 @@ export default function RaceHero({
         {/* On a phone the switcher sits under the title instead of wrapping under the pills. */}
         {nav && <div className="mt-3 sm:hidden">{nav}</div>}
 
-        {/* Under the title: the locator map, with the matchup and the model's checks beside it. The
+        {/* Under the title: the locator map, with the model's checks beside it. The
             projected margin itself leads the Forecast Calculation section below. */}
         <div className="mt-4 flex items-center gap-4 sm:gap-5">
           {map && !mapBesideTitle && <div className="w-16 sm:w-24 shrink-0">{map}</div>}
           <div className="min-w-0">
-            <div className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-              {candidates ? (
-                <>
-                  {candidates.map((c, i) => {
-                    const href = candidatePageHref(c.name, state);
-                    const name = <span style={{ color: "var(--app-text-primary)" }}>{c.name}</span>;
-                    return (
-                      <span key={c.name}>
-                        {i > 0 && " vs. "}
-                        {href ? <Link prefetch={false} href={href} className="hover:underline">{name}</Link> : name} ({c.party})
-                      </span>
-                    );
-                  })}
-                </>
-              ) : fallbackSub}
-            </div>
-            <div className="mt-1.5 flex flex-wrap gap-x-5 gap-y-1 text-[13px]" style={{ color: "var(--app-text-muted)" }}>
-              <Stat label="Proj. margin">{b(projectedMarginColor(projectedMargin), formatProjectedMargin(projectedMargin))}</Stat>
-              <Stat label="Polling avg.">
-                {pollMargin == null ? b("var(--app-text-very-muted)", "—") : b(leanColor(pollMargin), fmtLean(pollMargin))}
-                {pollsters ? ` · ${pollsters} pollster${pollsters === 1 ? "" : "s"}` : ""}
-              </Stat>
+            <div className="flex flex-wrap gap-x-5 gap-y-1 text-[13px]" style={{ color: "var(--app-text-muted)" }}>
+              <Stat label="Proj.">{b(projectedMarginColor(projectedMargin), formatProjectedMargin(projectedMargin))}</Stat>
+              <Stat label="Polls">{pollMargin == null ? b("var(--app-text-very-muted)", "—") : b(leanColor(pollMargin), fmtLean(pollMargin))}</Stat>
               <Stat label="Markets">{mkt ? b(partyColor(mkt.party), mkt.text) : b("var(--app-text-very-muted)", "—")}</Stat>
+              <Stat label="TPL">{b(leanColor(tpl), fmtLean(tpl))}</Stat>
             </div>
           </div>
         </div>
         </div>
-        {map && mapBesideTitle && <div className="w-28 sm:w-44 shrink-0" style={{ marginTop: `calc(${TITLE_MAX} * 0.15)` }}>{map}</div>}
+        {/* With the page's intro text right under the header, the map hangs into it (beside the short incumbent line) instead of pushing it down. */}
+        {map && mapBesideTitle && <div className="w-28 sm:w-44 shrink-0" style={{ marginTop: `calc(${TITLE_MAX} * 0.124 - 2px)`, marginBottom: introBelow ? "-3rem" : undefined }}>{map}</div>}
         </div>
       </div>
     </div>
