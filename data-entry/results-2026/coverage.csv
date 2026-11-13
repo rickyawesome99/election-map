@@ -1,0 +1,216 @@
+state,office,expected,found,missing,not_in_roster,source,not_on_ballot,flagged,with_counties,with_precincts,max_civicapi_diff_pct,max_ap_diff_pct
+AL,senate,1,1,,,civicAPI,0,0,1,0,,
+AL,governor,1,1,,,civicAPI,0,0,1,0,,
+AL,house,7,7,,,civicAPI,0,0,7,0,,
+AL,state_house,105,105,,,civicAPI,0,105,69,0,,0.026
+AL,state_senate,35,35,,,civicAPI,0,35,19,0,,0.01
+AK,senate,1,1,,,civicAPI,0,0,1,0,,
+AK,governor,1,1,,,civicAPI,0,0,1,0,,
+AK,house,1,1,,,civicAPI,0,0,1,0,,
+AK,state_house,40,40,,,AP via NYT (unofficial),0,40,0,0,,
+AK,state_senate,10,10,,,AP via NYT (unofficial),0,10,0,0,,
+AZ,governor,1,1,,,Arizona Secretary of State,0,0,1,1,0.0,
+AZ,house,9,9,,,Arizona Secretary of State,0,0,9,9,0.0,
+AZ,state_house,30,30,,,Arizona Secretary of State,0,0,30,30,0.0,1.71
+AZ,state_senate,30,30,,,Arizona Secretary of State,0,0,30,30,0.0,1.702
+AR,senate,1,1,,,civicAPI,0,0,1,0,,
+AR,governor,1,1,,,civicAPI,0,0,1,0,,
+AR,house,4,4,,,civicAPI,0,0,4,0,,
+AR,state_house,101,101,,,AP via NYT (unofficial)/civicAPI,0,1,100,0,,0.119
+AR,state_senate,18,18,,,civicAPI,0,0,18,0,,0.066
+CA,governor,1,1,,,civicAPI,0,0,1,0,,
+CA,house,52,52,,,civicAPI,0,0,52,0,,
+CA,state_house,80,80,,,civicAPI,0,0,80,0,,30.554
+CA,state_senate,20,20,,,civicAPI,0,0,20,0,,24.629
+CO,senate,1,1,,,civicAPI,0,0,1,0,,
+CO,governor,1,1,,,civicAPI,0,0,1,0,,
+CO,house,8,8,,,civicAPI,0,0,8,0,,
+CO,state_house,65,65,,,civicAPI,0,0,65,0,,0.075
+CO,state_senate,21,21,,,civicAPI,0,0,21,0,,0.028
+CT,governor,1,1,,,civicAPI,0,0,1,0,,
+CT,house,5,5,,,civicAPI,0,0,5,0,,
+CT,state_house,151,151,,,civicAPI,0,0,151,0,,0.601
+CT,state_senate,36,36,,,civicAPI,0,0,36,0,,364.049
+DE,senate,1,1,,,civicAPI,0,0,1,0,,
+DE,house,1,1,,,civicAPI,0,0,1,0,,
+DE,state_house,41,41,,,AP via NYT (unofficial),0,41,0,0,,
+DE,state_senate,11,11,,,AP via NYT (unofficial),0,11,0,0,,
+FL,senate,1,1,,,civicAPI,0,0,1,0,,
+FL,governor,1,1,,,civicAPI,0,0,1,0,,
+FL,house,28,28,,,civicAPI,0,1,28,0,,
+FL,state_house,120,120,,,civicAPI,28,1,91,0,,0.704
+FL,state_senate,21,21,,,civicAPI,2,0,19,0,,0.0
+GA,senate,1,1,,,Georgia Secretary of State,0,0,1,1,0.0,
+GA,governor,1,1,,,Georgia Secretary of State,0,0,1,1,0.0,
+GA,house,14,14,,,Georgia Secretary of State,0,0,14,14,0.0,
+GA,state_house,180,180,,,Georgia Secretary of State,0,0,180,180,0.0,0.317
+GA,state_senate,56,56,,,Georgia Secretary of State,0,0,56,56,0.0,0.002
+HI,governor,1,1,,,Hawaii Office of Elections,0,0,1,1,0.0,
+HI,house,2,2,,,Hawaii Office of Elections,0,0,2,2,0.0,
+HI,state_house,50,50,,43,Hawaii Office of Elections,20,0,31,31,0.0,0.0
+HI,state_senate,15,15,,,Hawaii Office of Elections,9,0,6,6,0.0,0.0
+ID,senate,1,1,,,Idaho Secretary of State,0,0,1,1,0.0,
+ID,governor,1,1,,,Idaho Secretary of State,0,0,1,1,0.0,
+ID,house,2,2,,,Idaho Secretary of State,0,0,2,2,0.0,
+ID,state_house,70,70,,,Idaho Secretary of State,0,0,70,70,0.0,0.0
+ID,state_senate,35,35,,,Idaho Secretary of State,0,0,35,35,0.0,0.0
+IL,senate,1,1,,,civicAPI,0,0,1,0,,
+IL,governor,1,1,,,civicAPI,0,0,1,0,,
+IL,house,17,17,,,civicAPI,0,0,17,0,,
+IL,state_house,118,118,,,civicAPI,0,102,23,0,,3.709
+IL,state_senate,39,39,,,civicAPI,0,34,9,0,,3.518
+IN,house,9,9,,,civicAPI,0,1,9,0,,
+IN,state_house,100,100,,,civicAPI,0,12,97,0,,5.492
+IN,state_senate,25,25,,,civicAPI,0,3,25,0,,3.522
+IA,senate,1,1,,,civicAPI,0,0,1,0,,
+IA,governor,1,1,,,civicAPI,0,0,1,0,,
+IA,house,4,4,,,civicAPI,0,0,4,0,,
+IA,state_house,100,100,,,civicAPI,0,2,100,0,,3.922
+IA,state_senate,25,25,,,civicAPI,0,0,25,0,,0.399
+KS,senate,1,1,,,civicAPI,0,0,1,0,,
+KS,governor,1,1,,,civicAPI,0,0,1,0,,
+KS,house,4,4,,,civicAPI,0,0,4,0,,
+KS,state_house,125,125,,,civicAPI,0,40,87,0,,1.328
+KS,state_senate,2,2,,,civicAPI,0,1,1,0,,0.0
+KY,senate,1,1,,,civicAPI,0,0,1,0,,
+KY,house,6,6,,,civicAPI,0,0,6,0,,
+KY,state_house,100,100,,,AP via NYT (unofficial)/civicAPI,0,94,50,0,,
+KY,state_senate,19,19,,,AP via NYT (unofficial)/civicAPI,0,19,8,0,,
+LA,senate,1,1,,,civicAPI,0,0,1,0,,
+LA,house,6,6,,,civicAPI,0,0,6,0,,
+LA,state_house,1,1,,,AP via NYT (unofficial),0,1,0,0,,
+ME,senate,1,1,,,civicAPI,0,0,1,0,,
+ME,governor,1,1,,,civicAPI,0,0,1,0,,
+ME,house,2,2,,,civicAPI,0,0,2,0,,
+ME,state_house,151,151,,,civicAPI,0,14,151,0,,43.682
+ME,state_senate,35,35,,,civicAPI,0,9,35,0,,15.577
+MD,governor,1,1,,,civicAPI,0,0,1,0,,
+MD,house,8,8,,,civicAPI,0,0,8,0,,
+MD,state_house,71,71,,,civicAPI,0,8,64,0,,7.996
+MD,state_senate,47,47,,,civicAPI,0,6,43,0,,7.015
+MA,senate,1,1,,,civicAPI,0,0,1,0,,
+MA,governor,1,1,,,civicAPI,0,0,1,0,,
+MA,house,9,9,,,civicAPI,0,0,9,0,,
+MA,state_house,160,160,,,AP via NYT (unofficial),0,160,0,0,,
+MA,state_senate,40,40,,,AP via NYT (unofficial),0,40,0,0,,
+MI,senate,1,1,,,civicAPI,0,0,1,0,,
+MI,governor,1,1,,,civicAPI,0,0,1,0,,
+MI,house,13,13,,,civicAPI,0,0,13,0,,
+MI,state_house,110,110,,,AP via NYT (unofficial)/civicAPI,0,70,71,0,,76.307
+MI,state_senate,38,38,,,AP via NYT (unofficial)/civicAPI,0,28,31,0,,0.437
+MN,senate,1,1,,,Minnesota Secretary of State,0,0,1,1,0.0,
+MN,governor,1,1,,,Minnesota Secretary of State,0,0,1,1,0.0,
+MN,house,8,8,,,Minnesota Secretary of State,0,0,8,8,0.0,
+MN,state_house,134,134,,,Minnesota Secretary of State,0,0,134,134,,0.181
+MN,state_senate,67,67,,,Minnesota Secretary of State,0,0,67,67,,0.092
+MS,senate,1,1,,,civicAPI,0,0,1,0,,
+MS,house,4,4,,,civicAPI,0,0,4,0,,
+MS,state_house,2,2,,,civicAPI,0,1,1,0,,0.0
+MO,house,8,8,,,civicAPI,0,0,8,0,,
+MO,state_house,163,163,,,civicAPI,0,163,0,0,,10.52
+MO,state_senate,17,17,,,civicAPI,0,17,0,0,,0.0
+MT,senate,1,1,,,Montana Secretary of State,0,0,1,0,0.0,
+MT,house,2,2,,,Montana Secretary of State,0,0,2,0,0.0,
+MT,state_house,100,100,,,Montana Secretary of State,0,0,100,0,,0.827
+MT,state_senate,25,25,,,Montana Secretary of State,0,0,25,0,,0.031
+NE,senate,1,1,,,civicAPI,0,0,1,0,,
+NE,governor,1,1,,,civicAPI,0,0,1,0,,
+NE,house,3,3,,,civicAPI,0,0,3,0,,
+NE,state_senate,25,25,,,civicAPI,0,5,25,0,,1.361
+NV,governor,1,1,,,civicAPI,0,0,1,0,,
+NV,house,4,4,,,civicAPI,0,0,4,0,,
+NV,state_house,42,42,,,civicAPI,0,31,42,0,,0.0
+NV,state_senate,11,11,,,civicAPI,0,8,11,0,,0.046
+NH,senate,1,1,,,civicAPI,0,0,1,0,,
+NH,governor,1,1,,,civicAPI,0,0,1,0,,
+NH,house,2,2,,,civicAPI,0,0,2,0,,
+NH,state_house,203,203,,,AP via NYT (unofficial),0,203,0,0,,
+NH,state_senate,24,24,,,AP via NYT (unofficial),0,24,0,0,,
+NJ,senate,1,1,,,civicAPI,0,0,1,0,,
+NJ,house,12,12,,,civicAPI,0,0,12,0,,
+NM,senate,1,1,,,civicAPI,0,0,1,0,,
+NM,governor,1,1,,,civicAPI,0,0,1,0,,
+NM,house,3,3,,,civicAPI,0,0,3,0,,
+NM,state_house,70,70,,,civicAPI,0,0,70,0,,0.203
+NM,state_senate,1,1,,,civicAPI,0,0,1,0,,0.0
+NY,governor,1,1,,,civicAPI,0,0,1,0,,
+NY,house,26,26,,,civicAPI,0,0,26,0,,
+NY,state_house,150,150,,,civicAPI,0,13,150,0,,18.723
+NY,state_senate,63,63,,,civicAPI,0,5,63,0,,17.894
+NC,senate,1,1,,,North Carolina State Board of Elections,0,0,1,1,0.0,
+NC,house,14,14,,,North Carolina State Board of Elections,0,0,14,14,0.0,
+NC,state_house,120,120,,,North Carolina State Board of Elections,0,0,120,120,0.0,0.078
+NC,state_senate,50,50,,,North Carolina State Board of Elections,0,0,50,50,0.0,0.063
+ND,house,1,1,,,civicAPI,0,0,1,0,,
+ND,state_house,27,27,,,civicAPI,0,0,27,0,,2.169
+ND,state_senate,24,24,,,civicAPI,0,0,24,0,,0.7
+OH,senate,1,1,,,civicAPI,0,0,1,0,,
+OH,governor,1,1,,,civicAPI,0,0,1,0,,
+OH,house,15,15,,,civicAPI,0,0,15,0,,
+OH,state_house,99,99,,,civicAPI,0,0,99,0,,0.394
+OH,state_senate,17,17,,,civicAPI,0,0,17,0,,0.07
+OK,senate,1,1,,,civicAPI,0,1,1,0,,
+OK,governor,1,1,,,civicAPI,0,1,1,0,,
+OK,house,5,5,,,civicAPI,0,1,5,0,,
+OK,state_house,101,101,,,civicAPI,46,55,0,0,,0.0
+OK,state_senate,25,25,,,civicAPI,10,15,0,0,,0.0
+OR,senate,1,1,,,civicAPI,0,0,1,0,,
+OR,governor,1,1,,,civicAPI,0,0,1,0,,
+OR,house,6,6,,,civicAPI,0,0,6,0,,
+OR,state_house,60,60,,,civicAPI,0,0,60,0,,25.338
+OR,state_senate,15,15,,,civicAPI,0,0,15,0,,19.718
+PA,governor,1,1,,,civicAPI,0,0,1,0,,
+PA,house,17,17,,,civicAPI,0,0,17,0,,
+PA,state_house,203,203,,,civicAPI,0,1,203,0,,1.935
+PA,state_senate,25,25,,,civicAPI,0,0,25,0,,0.815
+RI,senate,1,1,,,civicAPI,0,0,1,0,,
+RI,governor,1,1,,,civicAPI,0,0,1,0,,
+RI,house,2,2,,,civicAPI,0,0,2,0,,
+RI,state_house,75,75,,,civicAPI,0,0,75,0,,0.016
+RI,state_senate,38,38,,,civicAPI,0,0,38,0,,0.02
+SC,senate,1,1,,,civicAPI,0,0,1,0,,
+SC,governor,1,1,,,civicAPI,0,0,1,0,,
+SC,house,7,7,,,civicAPI,0,0,7,0,,
+SC,state_house,124,124,,,civicAPI,0,0,124,0,,2.355
+SC,state_senate,1,1,,,civicAPI,0,0,1,0,,0.0
+SD,senate,1,1,,,civicAPI,0,1,1,0,,
+SD,governor,1,1,,,civicAPI,0,1,1,0,,
+SD,house,1,1,,,civicAPI,0,1,1,0,,
+SD,state_house,37,37,,,civicAPI,0,1,37,0,,0.055
+SD,state_senate,35,35,,,civicAPI,0,1,35,0,,0.056
+TN,senate,1,1,,,civicAPI,0,0,1,0,,
+TN,governor,1,1,,,civicAPI,0,0,1,0,,
+TN,house,9,9,,,civicAPI,0,0,9,0,,
+TN,state_house,99,99,,,civicAPI,0,99,34,0,,0.0
+TN,state_senate,17,17,,,civicAPI,0,17,9,0,,0.0
+TX,senate,1,1,,,civicAPI,0,0,1,0,,
+TX,governor,1,1,,,civicAPI,0,0,1,0,,
+TX,house,38,38,,,civicAPI,0,0,38,0,,
+TX,state_house,151,151,,,civicAPI,0,0,151,0,,0.428
+TX,state_senate,17,17,,,civicAPI,0,1,17,0,,67.821
+UT,house,4,4,,,Utah Lieutenant Governor,0,0,4,0,0.031,
+UT,state_house,75,75,,,Utah Lieutenant Governor,0,0,75,0,0.095,9.179
+UT,state_senate,15,15,,,Utah Lieutenant Governor,0,0,15,0,0.019,1.424
+VT,governor,1,1,,,civicAPI,0,0,1,0,,
+VT,house,1,1,,,civicAPI,0,0,1,0,,
+VT,state_house,109,109,,,AP via NYT (unofficial),0,109,0,0,,
+VT,state_senate,16,16,,,AP via NYT (unofficial),0,16,0,0,,
+VA,senate,1,1,,,civicAPI,0,0,1,0,,
+VA,house,11,11,,,civicAPI,0,0,11,0,,
+VA,state_house,1,1,,,civicAPI,0,0,1,0,,1.017
+WA,house,10,10,,,Washington Secretary of State,0,4,10,10,0.392,
+WA,state_house,98,98,,,Washington Secretary of State,0,34,98,98,0.548,16.165
+WA,state_senate,24,24,,,Washington Secretary of State,0,12,24,24,0.584,11.753
+WV,senate,1,1,,,civicAPI,0,0,1,0,,
+WV,house,2,2,,,civicAPI,0,0,2,0,,
+WV,state_house,100,100,,,civicAPI,0,0,100,0,,0.0
+WV,state_senate,19,19,,,civicAPI,0,0,19,0,,0.0
+WI,governor,1,1,,,civicAPI,0,0,1,0,,
+WI,house,8,8,,,civicAPI,0,0,8,0,,
+WI,state_house,99,99,,,civicAPI,0,99,14,0,,0.004
+WI,state_senate,17,17,,,civicAPI,0,17,3,0,,0.0
+WY,senate,1,1,,,civicAPI,0,0,1,0,,
+WY,governor,1,1,,,civicAPI,0,0,1,0,,
+WY,house,1,1,,,civicAPI,0,0,1,0,,
+WY,state_house,62,62,,,civicAPI,0,62,34,0,,2.812
+WY,state_senate,17,17,,,civicAPI,0,17,13,0,,1.495

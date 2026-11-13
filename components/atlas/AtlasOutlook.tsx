@@ -8,6 +8,8 @@ import { projectedMarginColor, fmtMargin } from "@/lib/colorScale";
 // Every row of the working tints on hover and fades in staggered, as in the race pages' ledgers
 // (globals.css .vh-row); fade rather than rise, since the race table sits in a scroll box.
 const ROW = "vh-row vh-row-boxed vh-row-fade";
+// Table rows take the table form (.vh-tr): a ::before on a <tr> becomes an extra cell and shifts the columns.
+const TR = "vh-tr vh-hover";
 const enter = (i: number) => Math.min(i, 8) * 55;
 const marginText = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : projectedMarginColor(m));
 
@@ -60,7 +62,7 @@ function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep
           </thead>
           <tbody>
             {[...indep.record].reverse().map((r, i) => (
-              <tr key={r.year} className={ROW} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
+              <tr key={r.year} className={TR} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                 <td className="py-1.5 pr-3 font-semibold">{r.year} vs {r.opponentParty}</td>
                 <td className="py-1.5 pr-3 text-right">{r.share.toFixed(1)}%</td>
                 <td className="py-1.5 pr-3 text-right">{fmtI(r.advantage, r.opponentParty)}</td>
@@ -138,7 +140,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
               </thead>
               <tbody>
                 {[...pr.rows].sort((a, b) => b.year - a.year || (a.kind === "P" ? -1 : 1)).map((r, i) => (
-                  <tr key={`${r.year}-${r.kind}`} className={ROW} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.75 : 1, animationDelay: `${enter(i)}ms` }}>
+                  <tr key={`${r.year}-${r.kind}`} className={TR} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.75 : 1, animationDelay: `${enter(i)}ms` }}>
                     <td className="py-1.5 pr-3 font-semibold whitespace-nowrap">{r.label}</td>
                     <td className="py-1.5 pr-3 whitespace-nowrap" style={{ color: r.relocated ? "var(--app-text-muted)" : "var(--app-text-primary)" }}>
                       {r.relocated ? `${eraLabel(r.era)} → today's` : "today's lines"}{r.coverage < 0.999 && <span style={{ color: "var(--app-text-very-muted)" }}> · {Math.round(r.coverage * 100)}% covered</span>}

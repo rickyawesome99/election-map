@@ -120,7 +120,8 @@ export default function AtlasDistrictDetail({
   district,
   eras,
   electionYear,
-  navigator,
+  selector,
+  locatorMap,
   chamberLabel,
   onBack,
 }: {
@@ -129,8 +130,10 @@ export default function AtlasDistrictDetail({
   district: AtlasDistrict;
   eras: AtlasEra[];
   electionYear: number;
-  /** The district selector and locator map, placed between the hero and "About this district". */
-  navigator?: React.ReactNode;
+  /** The district selector, at the end of the pill row (under the title on a phone). */
+  selector?: React.ReactNode;
+  /** The chamber's locator map, at the right of the title line. */
+  locatorMap?: React.ReactNode;
   /** "State House": the first pill reads "MN State House" and returns to the chamber's district explorer. */
   chamberLabel?: string;
   onBack?: () => void;
@@ -172,12 +175,7 @@ export default function AtlasDistrictDetail({
   const uniq = (xs: (number | null | undefined)[]) => [...new Set(xs.filter((x): x is number => x != null))];
   const elected = uniq(incs.map((i) => i.lastElection ?? district.lastElection));
   const nextElections = uniq(incs.length ? incs.map((i) => i.nextElection ?? district.nextElection) : [district.nextElection]);
-  const partyWord = (p: string) => (p === "D" ? "Democrat" : p === "R" ? "Republican" : "Independent");
   const aboutItems: { label: string; value: React.ReactNode }[] = [
-    { label: incs.length > 1 ? "Incumbents" : "Incumbent", value: incs.length === 0 ? "Vacant" : joinNodes(incs.map((inc) => <CandidateLink key={inc.name} name={inc.name} abbr={abbr} color="var(--app-text-primary)" weight={700} />)) },
-    ...(incs.length ? [{ label: "Party", value: parties.size === 1
-      ? <span style={{ color: PARTY_COLOR[incs[0].party] }}>{partyWord(incs[0].party)}</span>
-      : joinNodes(incs.map((inc) => <span key={inc.name} style={{ color: PARTY_COLOR[inc.party] }}>{partyWord(inc.party)}</span>)) }] : []),
     ...(elected.length ? [{ label: "Elected", value: elected.join(", ") }] : []),
     ...(nextElections.length ? [{ label: "Next Election", value: nextElections.join(", ") }] : []),
     ...(district.outgoing2026?.length ? [{ label: "Incumbent not running", value: joinNodes(district.outgoing2026.map((o) => (
@@ -190,7 +188,9 @@ export default function AtlasDistrictDetail({
     ...(currentEra ? [{ label: "Map", value: <>{currentEra.source ?? "current map"}{currentEra.enactedDate && <>, enacted {currentEra.enactedDate}</>}{currentEra.years.length > 0 && <>, first used {currentEra.years[0]}</>}</> }] : []),
     ...(district.presByEra.length > 1 ? [{ label: "Prior maps", value: district.presByEra.filter((e) => e.era !== "current").map((e) => eraLabel(eras, e.era).replace(" map", "")).join(", ") }] : []),
   ];
+  // The header's one line of checks, like a House page's Proj. · Polls · Markets · TPL.
   const stats = [
+    ...(headline ? [{ label: "Proj.", value: headline.value, color: headline.color }] : []),
     pr?.contest === "contested" && pr.pD != null
       ? { label: "Win Prob.", value: `${Math.round(Math.max(pr.pD, 1 - pr.pD) * 100)}% ${pr.pD >= 0.5 ? "D" : "R"}`, color: pr.pD >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }
       : pr?.contest === "independent" && pr.indep && pr.pI != null
@@ -202,7 +202,7 @@ export default function AtlasDistrictDetail({
       : pr?.contest === "not-up" && pr.lean != null
         ? { label: "TPL Lean", value: fmtLean(pr.lean), color: leanColor(pr.lean) }
         : { label: "Win Prob.", value: pr?.contest === "uncontested-D" ? "100% D" : pr?.contest === "uncontested-R" ? "100% R" : "—", color: pr?.contest === "uncontested-D" ? "var(--party-dem)" : pr?.contest === "uncontested-R" ? "var(--party-rep)" : muted },
-    { label: "2024 President", value: fmtMargin(pres24), color: pres24 == null ? muted : marginText(pres24) },
+    { label: "2024 Pres.", value: fmtMargin(pres24), color: pres24 == null ? muted : marginText(pres24) },
     (() => {
       // A race an independent won: their margin over the runner-up, not the two-party one.
       const top = [...(lastResult?.candidates ?? [])].filter((c) => c.votes != null).sort((a, b) => (b.votes ?? 0) - (a.votes ?? 0));
@@ -215,53 +215,50 @@ export default function AtlasDistrictDetail({
   ];
 
   return (
-    <div className="max-w-3xl mx-auto flex flex-col gap-8">
-      {/* Header — mirrors the House race pages' hero: title left, projected margin right, stat row */}
+    <div className="flex flex-col gap-8">
+      {/* Header — the House race pages' hero: pills with the district selector at their end, the
+          title with the locator map at its right, one small line of checks under the title. */}
       <div>
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-          <div className="vh-in min-w-0">
-            <div className="flex items-center gap-2 flex-wrap">
-              {onBack && chamberLabel && (
-                <button type="button" onClick={onBack} aria-label={`All ${chamberLabel} districts`} className={`${PILL} ix-lift hover:underline`} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
-                  {abbr} {chamberLabel}
-                </button>
-              )}
-              {rating && <span className={PILL} style={{ background: rating.bg, color: rating.text }}>{pr!.rating}</span>}
-              {up ? <Pill tone="primary">Up in {electionYear}</Pill> : district.nextElection ? <Pill>Next election {district.nextElection}</Pill> : null}
-              {up && district.candidates2026?.special && <Pill>Special</Pill>}
-              {heldBy && <Pill tone={heldParty ?? "muted"}>{heldBy}</Pill>}
-              {district.seats != null && district.seats > 1 && <Pill>{district.seats} seats</Pill>}
-            </div>
-            <h2 className="mt-2" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.75rem, 4.5vw, 2.6rem)", fontWeight: 700, lineHeight: 1, letterSpacing: "-0.02em" }}>
+        <div className="vh-in flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+          <div className="flex items-center gap-2 flex-wrap">
+            {onBack && chamberLabel && (
+              <button type="button" onClick={onBack} aria-label={`All ${chamberLabel} districts`} className={`${PILL} ix-lift hover:underline`} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+                {abbr} {chamberLabel}
+              </button>
+            )}
+            {rating && <span className={PILL} style={{ background: rating.bg, color: rating.text }}>{pr!.rating}</span>}
+            {up ? <Pill tone="primary">Up in {electionYear}</Pill> : district.nextElection ? <Pill>Next election {district.nextElection}</Pill> : null}
+            {up && district.candidates2026?.special && <Pill>Special</Pill>}
+            {heldBy && <Pill tone={heldParty ?? "muted"}>{heldBy}</Pill>}
+            {district.seats != null && district.seats > 1 && <Pill>{district.seats} seats</Pill>}
+          </div>
+          {selector && <div className="hidden w-full max-w-sm sm:block">{selector}</div>}
+        </div>
+        <div className="mt-2 flex items-start justify-between gap-4">
+          <div className="vh-in min-w-0" style={{ animationDelay: "60ms" }}>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.25rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance" }}>
               {district.label}
             </h2>
-            <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-              {up ? `${electionYear} ${abbr} ${chamber === "house" ? "House" : "Senate"} ${district.candidates2026?.special ? "special election" : "race"}` : `${abbr} ${chamber === "house" ? "House" : "Senate"} district`}{counties.length > 0 && <> · {counties.length === 1 ? `${counties[0].county} County` : `${counties.length} counties`}</>}
+            {selector && <div className="mt-3 sm:hidden">{selector}</div>}
+            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-[13px]" style={{ color: "var(--app-text-muted)" }}>
+              {stats.map((st) => (
+                <span key={st.label} className="whitespace-nowrap">{st.label} <b className="font-bold tabular-nums" style={{ color: st.color }}>{st.value}</b></span>
+              ))}
             </div>
+            {/* The House page's opening fact: "Name (R)" in the party's serif colour under a small label. */}
+            <dl className="mt-6">
+              <dt className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{incs.length > 1 ? "Incumbents" : "Incumbent"}</dt>
+              <dd style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700 }}>
+                {incs.length === 0 ? <span style={{ color: "var(--app-text-muted)" }}>Vacant</span> : joinNodes(incs.map((inc) => {
+                  const color = PARTY_COLOR[inc.party] ?? "var(--app-text-primary)";
+                  return <span key={inc.name} style={{ color }}><CandidateLink name={inc.name} abbr={abbr} color={color} weight={700} /> ({inc.party})</span>;
+                }))}
+              </dd>
+            </dl>
           </div>
-          {headline && (
-            <div className="vh-in shrink-0 sm:text-right" style={{ animationDelay: "110ms" }}>
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{headline.label}</div>
-              <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5vw, 3.25rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: headline.color }}>
-                {headline.value}
-              </div>
-            </div>
-          )}
+          {locatorMap && <div className="vh-in w-28 shrink-0 sm:w-44" style={{ animationDelay: "110ms" }}>{locatorMap}</div>}
         </div>
-
-        {/* Stat row */}
-        <div className="mt-7 grid grid-cols-3 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
-          {stats.map((st, i) => (
-            <div key={st.label} className={`vh-in min-w-0 ${i === 0 ? "pr-2 sm:pr-8" : i === 1 ? "px-2 sm:px-8" : "pl-2 sm:pl-8"}`} style={{ borderRight: i < 2 ? "1px solid var(--app-border)" : undefined, animationDelay: `${200 + i * 70}ms` }}>
-              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: st.color }}>{st.value}</div>
-              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{st.label}</div>
-            </div>
-          ))}
-        </div>
-
       </div>
-
-      {navigator}
 
       {/* About — the House district page's format: demographics, then one inline label/value row */}
       <Reveal>
@@ -318,7 +315,7 @@ export default function AtlasDistrictDetail({
                   const m = resultMargin(r);
                   const pct = (v: number | null) => (r.totalVotes && v != null ? `${((v / r.totalVotes) * 100).toFixed(1)}%` : "—");
                   return (
-                    <tr key={r.year} className="vh-row vh-row-boxed vh-row-fade" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
+                    <tr key={r.year} className="vh-tr vh-hover" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                       <td className="py-2 pr-4 font-semibold align-top w-[1%] whitespace-nowrap">{r.year}{r.uncontested && <div className="mt-1"><Pill>Unopposed</Pill></div>}</td>
                       <td className="py-2 pr-3 align-top min-w-[220px]"><Candidates r={r} abbr={abbr} /></td>
                       {hasMoney && <td className="py-2 pr-3 text-right align-top"><Raised r={r} money={district.money?.find((x) => x.year === r.year)} /></td>}
@@ -362,7 +359,7 @@ export default function AtlasDistrictDetail({
             </thead>
             <tbody>
               {presRows.map((row, i) => (
-                <tr key={row.year} className="vh-row vh-row-boxed vh-row-fade" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
+                <tr key={row.year} className="vh-tr vh-hover" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
                   <td className="py-1.5 pr-3 font-semibold">{row.year}</td>
                   <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: row.then ? marginText(row.then.margin) : "var(--app-text-very-muted)" }}>{fmtMargin(row.then?.margin)}</td>
                   <td className="py-1.5 pr-3 text-left text-xs whitespace-nowrap" style={{ color: "var(--app-text-very-muted)" }}>{row.thenEra ? eraLabel(eras, row.thenEra) : ""}</td>

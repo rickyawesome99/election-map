@@ -5,6 +5,7 @@ import { useMapTooltip } from "@/lib/useMapTooltip";
 import type { Chamber } from "@/data/stateLegDistricts";
 import { shortDistrictName } from "@/lib/stateLegAtlas";
 import { flipBackground } from "@/components/FlipStripes";
+import { HOVER_LABEL, HoverBox, HoverFoot, HoverRow, HoverRows, HoverTitle, HoverTotal } from "@/components/StateLegHoverCard";
 
 export type BoxItem = {
   key: string;
@@ -19,6 +20,11 @@ export type BoxItem = {
   tip?: BoxTip;
 };
 
+// One labeled box, in both the district grid and the seat strip.
+const BOX_W = 36;
+const BOX_H = 30;
+const GAP = 4;
+
 export type BoxTipLine = { label: string; value?: string; color?: string; sub?: string };
 export type BoxTip = {
   heading: string;
@@ -27,6 +33,25 @@ export type BoxTip = {
   total?: { label: string; value: string; color?: string };
   note?: string;
 };
+
+/** The hover card shared by the box grid and the seat strip. */
+function BoxTooltip({ tip, tooltipRef }: { tip: BoxTip; tooltipRef: React.Ref<HTMLDivElement> }) {
+  return (
+    <HoverBox boxRef={tooltipRef}>
+      <HoverTitle>{tip.heading}</HoverTitle>
+      <HoverRows>
+        {tip.lines.map((l, i) => <HoverRow key={i} label={l.label} value={l.value} color={l.color} sub={l.sub} />)}
+      </HoverRows>
+      {tip.total && (
+        <HoverTotal
+          left={<span className={HOVER_LABEL} style={{ color: "var(--app-text-muted)" }}>{tip.total.label}</span>}
+          right={<span className="text-[13px] font-bold" style={{ color: tip.total.color ?? "var(--app-text-primary)" }}>{tip.total.value}</span>}
+        />
+      )}
+      {tip.note && <HoverFoot>{tip.note}</HoverFoot>}
+    </HoverBox>
+  );
+}
 
 /**
  * One box per district, the atlas's primary selector. Boxes are laid out by district key order so
@@ -40,18 +65,22 @@ export default function DistrictBoxGrid({
   items,
   selectedKey,
   onSelect,
+  onHover,
 }: {
   chamber: Chamber;
   items: BoxItem[];
   selectedKey: string | null;
   onSelect: (key: string) => void;
+  /** The hovered district's key, or null when the pointer leaves (the atlas outlines it on the map). */
+  onHover?: (key: string | null) => void;
 }) {
   // Named districts (VT, MA, NH codes) need wider boxes than two-digit numbers; the width follows
   // the longest key so "Chittenden-Central" and "1st Essex" fit without truncation.
   const longest = useMemo(() => Math.max(0, ...items.map((i) => i.key.length)), [items]);
   const wide = useMemo(() => items.some((i) => !/^\d{1,3}[A-Za-z]?$/.test(i.key)), [items]);
-  const minWidth = !wide ? 34 : longest > 14 ? 128 : longest > 9 ? 100 : 72;
+  const minWidth = !wide ? BOX_W : longest > 14 ? 128 : longest > 9 ? 100 : 72;
   const [hovered, setHovered] = useState<string | null>(null);
+  useEffect(() => { onHover?.(hovered); }, [hovered, onHover]);
   const { onMouseMove, tooltipRef } = useMapTooltip(14, 8);
   const hoveredTip = hovered ? items.find((i) => i.key === hovered)?.tip : undefined;
   const scroller = useRef<HTMLDivElement | null>(null);
@@ -72,8 +101,9 @@ export default function DistrictBoxGrid({
     <div
       role="listbox"
       aria-label={`${chamber === "house" ? "House" : "Senate"} districts`}
-      className="grid gap-[3px]"
-      style={{ gridTemplateColumns: `repeat(auto-fill, minmax(${minWidth}px, 1fr))` }}
+      className="grid"
+      // Numbered boxes are a fixed size, the same as the seat strip's; named ones stretch to fit.
+      style={{ gap: GAP, gridTemplateColumns: wide ? `repeat(auto-fill, minmax(${minWidth}px, 1fr))` : `repeat(auto-fill, ${BOX_W}px)`, gridAutoRows: `${BOX_H}px` }}
     >
       {items.map((it, i) => {
         const selected = it.key === selectedKey;
@@ -89,7 +119,7 @@ export default function DistrictBoxGrid({
             onMouseEnter={() => setHovered(it.key)}
             onFocus={() => setHovered(it.key)}
             onBlur={() => setHovered(null)}
-            className="ab-box h-[26px] rounded-[3px] text-[10px] font-semibold tabular-nums truncate px-0.5"
+            className="ab-box rounded-[3px] text-[11px] font-semibold tabular-nums truncate px-0.5"
             style={{
               // Pops in row by row on load (globals.css .ab-box); a long chamber stops staggering by ~0.5 s.
               animationDelay: `${Math.min(i, 160) * 3}ms`,
@@ -109,33 +139,89 @@ export default function DistrictBoxGrid({
     </div>
     {moreBelow && <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-10" style={{ background: "linear-gradient(to bottom, transparent, var(--app-bg))" }} />}
     </div>
-    {hoveredTip && (
-      <div
-        ref={tooltipRef}
-        className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
-        style={{ width: 240, padding: "6px 8px", background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)", boxShadow: "0 4px 16px rgba(0,0,0,0.3)" }}
-      >
-        <div className="font-bold text-xs mb-1.5">{hoveredTip.heading}</div>
-        <div className="flex flex-col gap-0.5">
-          {hoveredTip.lines.map((l, i) => (
-            <div key={i} className="flex items-baseline justify-between gap-2" style={{ fontSize: 11 }}>
-              <span className="min-w-0 truncate" style={{ color: l.color ?? "var(--app-text-muted)" }}>
-                {l.label}
-                {l.sub && <span className="ml-1" style={{ fontSize: 9, color: "var(--app-text-very-muted)" }}>{l.sub}</span>}
-              </span>
-              {l.value && <span className="shrink-0 font-semibold tabular-nums" style={{ color: l.color ?? "var(--app-text-primary)" }}>{l.value}</span>}
+    {hoveredTip && <BoxTooltip tip={hoveredTip} tooltipRef={tooltipRef} />}
+    </div>
+  );
+}
+
+export type SeatBox = BoxItem & {
+  /** The district's key twice over in a multi-member district, so React needs its own. */
+  id: string;
+  /** Printed in the square where the district has a short number; long names go unlabeled. */
+  label: string | null;
+};
+
+
+/**
+ * The chamber one square per seat, already ordered D to R by the caller, read like text: most
+ * Democratic top left, most Republican bottom right.
+ * A multi-member district has a square for each seat, and hovering one outlines them all. Columns
+ * follow the width.
+ */
+export function SeatStrip({ items, onSelect, onHover }: { items: SeatBox[]; onSelect: (key: string) => void; onHover?: (key: string | null) => void }) {
+  const labeled = items.every((i) => i.label != null && i.label.length <= 3);
+  const cw = labeled ? BOX_W : 18, ch = labeled ? BOX_H : 18;
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [width, setWidth] = useState<number | null>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setWidth(el.clientWidth));
+    ro.observe(el);
+    setWidth(el.clientWidth);
+    return () => ro.disconnect();
+  }, []);
+  const [hovered, setHovered] = useState<string | null>(null);
+  useEffect(() => { onHover?.(hovered); }, [hovered, onHover]);
+  const { onMouseMove, tooltipRef } = useMapTooltip(14, 8);
+  const hoveredTip = hovered ? items.find((i) => i.key === hovered)?.tip : undefined;
+
+  const n = items.length;
+  const fit = width ? Math.max(1, Math.floor((width + GAP) / (cw + GAP))) : 1;
+  const cols = Math.min(fit, n);
+  return (
+    <div ref={ref} className="relative" onMouseMove={onMouseMove} onMouseLeave={() => setHovered(null)}>
+      {width != null && n > 0 ? (
+        <div className="flex justify-start pb-2">
+          <div className="relative">
+            <div
+              role="listbox"
+              aria-label="Seats, Democratic to Republican"
+              className="grid"
+              style={{ gap: GAP, gridTemplateColumns: `repeat(${cols}, ${cw}px)`, gridAutoRows: `${ch}px` }}
+            >
+              {items.map((it, i) => (
+                <button
+                  key={it.id}
+                  type="button"
+                  role="option"
+                  aria-selected={false}
+                  aria-label={it.title}
+                  onClick={() => onSelect(it.key)}
+                  onMouseEnter={() => setHovered(it.key)}
+                  onFocus={() => setHovered(it.key)}
+                  onBlur={() => setHovered(null)}
+                  className="ab-box rounded-[3px] text-[11px] font-semibold tabular-nums"
+                  style={{
+                    animationDelay: `${Math.min(i, 160) * 3}ms`,
+                    background: it.flip ? flipBackground(it.fill) : it.fill,
+                    color: it.darkText ? "#1d1f22" : "#fff",
+                    opacity: it.dimmed ? 0.22 : 1,
+                    outline: it.key === hovered ? "2px solid var(--app-text-primary)" : "none",
+                    outlineOffset: 1,
+                    cursor: "pointer",
+                  }}
+                >
+                  {labeled ? it.label : null}
+                </button>
+              ))}
             </div>
-          ))}
-        </div>
-        {hoveredTip.total && (
-          <div className="mt-1 pt-1 flex items-baseline justify-between gap-2" style={{ borderTop: "1px solid var(--app-border)", fontSize: 11 }}>
-            <span style={{ color: "var(--app-text-muted)" }}>{hoveredTip.total.label}</span>
-            <span className="font-bold tabular-nums" style={{ color: hoveredTip.total.color ?? "var(--app-text-primary)" }}>{hoveredTip.total.value}</span>
           </div>
-        )}
-        {hoveredTip.note && <div className="mt-1 italic" style={{ fontSize: 9, color: "var(--app-text-very-muted)" }}>{hoveredTip.note}</div>}
-      </div>
-    )}
+        </div>
+      ) : (
+        <div style={{ height: 2 * ch + GAP + 8 }} />
+      )}
+      {hoveredTip && <BoxTooltip tip={hoveredTip} tooltipRef={tooltipRef} />}
     </div>
   );
 }

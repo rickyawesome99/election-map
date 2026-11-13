@@ -4,7 +4,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, use
 import StateLegDistrictMap from "@/components/StateLegDistrictMap";
 import StateLegDistrictTable from "@/components/StateLegDistrictTable";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
-import DistrictBoxGrid, { type BoxItem, type BoxTip, type BoxTipLine } from "./DistrictBoxGrid";
+import DistrictBoxGrid, { SeatStrip, type BoxItem, type BoxTip, type BoxTipLine, type SeatBox } from "./DistrictBoxGrid";
 import DistrictCountBar, { type ProjectedSeats } from "./DistrictCountBar";
 import AtlasDistrictDetail from "./AtlasDistrictDetail";
 import { LocatorMap } from "./AtlasEraMaps";
@@ -26,25 +26,39 @@ import type { StateLegDistrictResult } from "@/data/stateLegResults";
 
 type ColorMode = "projection" | "seats" | "president" | "results";
 type Filter = "all" | "up" | "competitive" | "open" | "unopposed";
+type BoxOrder = "sorted" | "district";
 
+// The open district lives in the URL hash. Besides hash and history changes, the hash is re-read
+// whenever the page is shown again (pageshow) and the tab comes back into view: Safari can restore
+// a cached copy of the page on Back with the address already moved but no hashchange or popstate,
+// which left the district on screen over the chamber's URL.
 function subscribeHash(onChange: () => void) {
+  const onVisible = () => { if (document.visibilityState === "visible") onChange(); };
   window.addEventListener("hashchange", onChange);
   window.addEventListener("popstate", onChange);
+  window.addEventListener("pageshow", onChange);
+  document.addEventListener("visibilitychange", onVisible);
   return () => {
     window.removeEventListener("hashchange", onChange);
     window.removeEventListener("popstate", onChange);
+    window.removeEventListener("pageshow", onChange);
+    document.removeEventListener("visibilitychange", onVisible);
   };
 }
 
 const PARTY_FILL: Record<string, string> = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)", O: "var(--party-ind)" };
 const NO_DATA = "var(--app-tab-bg)";
+// The chamber map's height follows the state's shape within these bounds (px).
+const MAP_FIT = { min: 300, max: 560 };
 const SPLIT_FILL = "#4B0082";
+// A seat not on this year's ballot in the sorted projection strip: its sitting member's party, faded.
+const HOLDOVER_FILL: Record<string, string> = { D: "var(--party-dem-muted)", R: "var(--party-rep-muted)", I: "var(--party-ind-muted)", O: "var(--party-ind-muted)" };
 
-/** A one-line swatch legend under the box grid (rounded squares, matching the boxes). */
+/** A swatch legend under the seat boxes (rounded squares, matching the boxes). */
 function BoxLegend({ items }: { items: { label: string; bg: string }[] }) {
   if (items.length === 0) return null;
   return (
-    <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs" style={{ color: "var(--app-text-muted)" }}>
+    <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs" style={{ color: "var(--app-text-muted)" }}>
       {items.map((it) => (
         <span key={it.label} className="inline-flex items-center gap-1.5">
           <span className="inline-block h-3 w-3 rounded-sm" style={{ background: it.bg, border: "1px solid var(--app-border)" }} />
@@ -101,8 +115,8 @@ function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, election
     const flip = projectedFlip(d);
     if (flip) lines.push({ label: "Projected flip", value: `${flip.from} → ${flip.to}`, color: PARTY_TEXT[flip.to] });
     if (pr.contest === "contested" && pr.margin != null) {
-      const g = pr.guaranteed && (pr.guaranteed.dem || pr.guaranteed.rep) ? ` · decided by the field: ${[pr.guaranteed.dem ? `${pr.guaranteed.dem} D` : "", pr.guaranteed.rep ? `${pr.guaranteed.rep} R` : ""].filter(Boolean).join(", ")}` : "";
-      return { heading, lines, total: { label: `Projected${pr.rating ? ` · ${pr.rating}` : ""}`, value: fmtMargin(pr.margin), color: marginColor(pr.margin) }, note: pr.pD != null ? `P(Democratic) ${Math.round(pr.pD * 100)}% · P(Republican) ${Math.round((1 - pr.pD) * 100)}%${g}` : undefined };
+      const g = pr.guaranteed && (pr.guaranteed.dem || pr.guaranteed.rep) ? `Decided by the field: ${[pr.guaranteed.dem ? `${pr.guaranteed.dem} D` : "", pr.guaranteed.rep ? `${pr.guaranteed.rep} R` : ""].filter(Boolean).join(", ")}` : undefined;
+      return { heading, lines, total: { label: `Projected${pr.rating ? ` · ${pr.rating}` : ""}`, value: fmtMargin(pr.margin), color: marginColor(pr.margin) }, note: g };
     }
     if (pr.contest === "uncontested-D" || pr.contest === "uncontested-R") {
       const dem = pr.contest === "uncontested-D";
@@ -176,6 +190,7 @@ export default function LegislativeAtlas({
   historicalMaps,
   houseEntries,
   senateEntries,
+  adjustedMargins,
   electionYear,
   summary,
 }: {
@@ -191,6 +206,8 @@ export default function LegislativeAtlas({
   historicalMaps: Record<string, number>;
   houseEntries: StateLegEntry[];
   senateEntries: StateLegEntry[];
+  /** Year → the chamber's corrected margin (lib/stateLegChamberMargin.ts), R-positive. */
+  adjustedMargins: Record<number, number>;
   electionYear: number;
   /** The chamber's headline numbers (server-rendered), shown above the explorer. */
   summary: React.ReactNode;
@@ -200,6 +217,19 @@ export default function LegislativeAtlas({
   const hashKey = keyFromHash(hash, chamber);
   const [modeChoice, setModeChoice] = useState<ColorMode | null>(null);
   const [filter, setFilter] = useState<Filter>("all");
+  const [boxOrder, setBoxOrder] = useState<BoxOrder>("sorted");
+  // The district under the pointer in the seat boxes, outlined on the map.
+  const [boxHover, setBoxHover] = useState<string | null>(null);
+  // The map column's height, to center it in the window while it sticks.
+  const mapColRef = useRef<HTMLDivElement>(null);
+  const [mapColH, setMapColH] = useState(0);
+  useEffect(() => {
+    const el = mapColRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setMapColH(el.offsetHeight));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
   const [query, setQuery] = useState("");
   const [resultsYear, setResultsYear] = useState<number | null>(null);
   const [preResultsMode, setPreResultsMode] = useState<ColorMode | null>(null);
@@ -371,16 +401,70 @@ export default function LegislativeAtlas({
       }),
     [districts, mode, passes, isUp, electionYear, activeYear],
   );
+  // The sorted strip: one square per seat, ordered D to R by the color mode's own measure.
+  // Projection: margin, with an unopposed seat past every contested one and a seat not on the
+  // ballot its sitting member's (faded, between the two), most D to most R by its 2024 margin.
+  // Seat party: each member's own party, the district's 2024 margin within it. Others: the margin.
+  // Seats with nothing to sort by go last; ties keep district order.
+  const seatBoxes: SeatBox[] = useMemo(() => {
+    const out: (SeatBox & { score: number; order: number })[] = [];
+    const sign = (party: string) => (party === "D" ? -1 : party === "R" ? 1 : 0);
+    districts.forEach((d, di) => {
+      const box = boxes[di];
+      const total = d.seats ?? Math.max(d.incumbents.length, 1);
+      const short = shortDistrictName(chamber, d.key).replace(/^[HS]D /, "");
+      const label = /^(\d{1,3}[A-Za-z]?|[A-Z]{1,2})$/.test(short) ? short : null;
+      const pres = d.presCurrent["2024"]?.margin ?? 0;
+      const pr = d.projection;
+      const up = mode !== "projection" || !pr || pr.contest === "not-up" ? (mode === "projection" ? 0 : total) : Math.min(pr.seats, total);
+      for (let i = 0; i < total; i++) {
+        let fill = box.fill, darkText = box.darkText, flip = box.flip, score = NaN;
+        if (mode === "projection") {
+          if (i < up && pr) {
+            if ((pr.contest === "contested" || pr.contest === "independent") && pr.margin != null) score = pr.contest === "independent" && (pr.pI ?? 0) >= 0.5 ? 0 : pr.margin;
+            else if (pr.contest === "uncontested-D") score = -200;
+            else if (pr.contest === "uncontested-R") score = 200;
+            else if (pr.contest === "split" || pr.contest === "other") score = 0;
+          } else {
+            const inc = d.incumbents[i - up];
+            fill = inc ? HOLDOVER_FILL[inc.party] ?? NO_DATA : NO_DATA;
+            darkText = !inc;
+            flip = false;
+            if (inc) score = sign(inc.party) * 150 + pres * 0.4;
+          }
+        } else if (mode === "seats") {
+          const inc = d.incumbents[i];
+          fill = inc ? PARTY_FILL[inc.party] ?? NO_DATA : NO_DATA;
+          darkText = !inc;
+          if (inc) score = sign(inc.party) * 100 + pres / 2;
+        } else if (mode === "president") {
+          score = d.presCurrent["2024"]?.margin ?? NaN;
+        } else {
+          const r = d.results.find((x) => x.year === activeYear);
+          const m = r ? resultMargin(r) : null;
+          if (r?.uncontested && r.noCount) score = fill === PARTY_FILL.R ? 200 : -200;
+          else if (m != null) score = m;
+        }
+        out.push({ ...box, id: `${d.key}#${i}`, label, fill, darkText, flip, score, order: di * 100 + i });
+      }
+    });
+    out.sort((a, b) => (Number.isNaN(a.score) ? 1 : 0) - (Number.isNaN(b.score) ? 1 : 0) || (Number.isNaN(a.score) ? 0 : a.score - b.score) || a.order - b.order);
+    return out;
+  }, [districts, boxes, mode, chamber, activeYear]);
+  const sorted = boxOrder === "sorted";
+
   // The grid's own colours beyond the margin scale the map legend already shows, listed only when
   // some box in this view uses them.
   const boxLegend = useMemo(() => {
-    const used = new Set(boxes.map((b) => b.fill));
+    const shownBoxes: BoxItem[] = sorted ? seatBoxes : boxes;
+    const used = new Set(shownBoxes.map((b) => b.fill));
     const out: { label: string; bg: string }[] = [];
     if (mode === "projection") {
       if (used.has(PARTY_FILL.D) || used.has(PARTY_FILL.R)) out.push({ label: "Unopposed", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
       if (used.has(PARTY_FILL.I)) out.push({ label: "Independent favored", bg: PARTY_FILL.I });
       if (used.has(SPLIT_FILL)) out.push({ label: "Split by the field", bg: SPLIT_FILL });
-      if (boxes.some((b) => b.flip)) out.push(FLIP_LEGEND);
+      if (shownBoxes.some((b) => b.flip)) out.push(FLIP_LEGEND);
+      if (Object.values(HOLDOVER_FILL).some((f) => used.has(f))) out.push({ label: `Not up in ${electionYear}`, bg: `linear-gradient(135deg, ${HOLDOVER_FILL.D} 50%, ${HOLDOVER_FILL.R} 50%)` });
       if (used.has(NO_DATA)) out.push({ label: "No projection", bg: NO_DATA });
     } else if (mode === "seats") {
       if (used.has(PARTY_FILL.D)) out.push({ label: "Democrat", bg: PARTY_FILL.D });
@@ -389,11 +473,16 @@ export default function LegislativeAtlas({
       if (used.has(SPLIT_FILL)) out.push({ label: "Both parties", bg: SPLIT_FILL });
       if (used.has(NO_DATA)) out.push({ label: "Vacant", bg: NO_DATA });
     } else {
-      if (mode === "results" && boxes.some((b) => b.fill === PARTY_FILL.D || b.fill === PARTY_FILL.R)) out.push({ label: "Unopposed, no count", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
+      if (mode === "results" && shownBoxes.some((b) => b.fill === PARTY_FILL.D || b.fill === PARTY_FILL.R)) out.push({ label: "Unopposed, no count", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
       if (used.has(NO_DATA)) out.push({ label: mode === "results" ? "No result" : "No data", bg: NO_DATA });
     }
     return out;
-  }, [boxes, mode]);
+  }, [boxes, seatBoxes, sorted, mode, electionYear]);
+  // The districts the filters set aside, faded on the map as their boxes are; null when none are.
+  const dimmedKeys = useMemo(() => {
+    const keys = boxes.filter((b) => b.dimmed).map((b) => b.key);
+    return keys.length ? new Set(keys) : null;
+  }, [boxes]);
   const fills = useMemo(() => Object.fromEntries(boxes.filter((b) => b.fill !== NO_DATA).map((b) => [b.key, b.fill])), [boxes]);
 
   const shown = districts.filter(passes).length;
@@ -420,7 +509,6 @@ export default function LegislativeAtlas({
         tip[d.key] = [
           { label: "Projected margin", value: fmtM(pr.margin), color: pr.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" },
           { label: "Rating", value: pr.rating ?? "" },
-          { label: "P(Democratic)", value: `${Math.round(pr.pD * 100)}%` },
           ...(d.candidates2026 ? [{ label: "Field", value: contest2026(d.candidates2026, d.incumbents)?.label ?? "" }] : []),
         ];
       } else if (pr.contest === "uncontested-D" || pr.contest === "uncontested-R") {
@@ -467,57 +555,45 @@ export default function LegislativeAtlas({
   const prev = navIdx > 0 ? navList[navIdx - 1] : null;
   const next = navIdx >= 0 && navIdx < navList.length - 1 ? navList[navIdx + 1] : null;
   const allKeys = useMemo(() => districts.map((d) => d.key), [districts]);
-  const filtered = navList !== districts && navList.length < districts.length;
 
   // The table and history sit below the fold: they rise in once scrolled to.
   const { ref: lowerRef, vh: lowerVh } = useRevealOnce();
 
   const MODE_LABEL: Record<ColorMode, string> = { projection: `${electionYear} projection`, seats: "Seat party", president: "2024 President", results: "Past results" };
-  // The selector strip, placed inside the district page just above "About this district".
+  // The district page's header takes these two apart, like a House race page: the selector at the
+  // pill row's end (under the title on a phone), the locator map at the title line's right.
   const navBtn = "ix-press ix-rail-btn h-8 w-8 shrink-0 grid place-items-center rounded-full text-base disabled:opacity-30";
-  const navigator = (
-    <div ref={navRef} className="flex items-center gap-5 py-4" style={{ borderTop: "1px solid var(--app-border)", borderBottom: "1px solid var(--app-border)" }}>
-      <div className="min-w-0 flex-1">
-        <div className="flex items-center gap-2">
-          <button type="button" className={navBtn} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }} disabled={!prev} onClick={() => prev && select(prev.key)} aria-label={prev ? `Previous: ${prev.label}` : "Previous district"}>‹</button>
-          <select
-            value={selected?.key ?? ""}
-            onChange={(e) => select(e.target.value)}
-            aria-label="Choose a district"
-            className="min-w-0 flex-1 max-w-xs text-sm px-3 py-1.5 rounded-full"
-            style={{ background: "var(--app-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
-          >
-            {districts.map((d) => (
-              <option key={d.key} value={d.key}>
-                {shortDistrictName(chamber, d.key)} · {d.incumbents.map((i) => `${i.name} (${i.party})`).join(", ") || "vacant"}
-              </option>
-            ))}
-          </select>
-          <button type="button" className={navBtn} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }} disabled={!next} onClick={() => next && select(next.key)} aria-label={next ? `Next: ${next.label}` : "Next district"}>›</button>
-        </div>
-        {selected && (
-          <div className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-            {navIdx + 1} of {navList.length}{filtered ? " filtered" : ""} districts · map colored by {MODE_LABEL[mode].toLowerCase()}{mode === "results" && activeYear ? ` (${activeYear})` : ""}; click any district to open it
-          </div>
-        )}
-      </div>
-      {data && selected && (
-        <div className="w-36 sm:w-48 shrink-0">
-          <LocatorMap abbr={abbr} chamber={chamber} keys={allKeys} selectedKey={selected.key} onSelect={select} fills={fills} />
-        </div>
-      )}
+  const navSelector = (
+    <div ref={navRef} className="flex items-center gap-2">
+      <button type="button" className={navBtn} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }} disabled={!prev} onClick={() => prev && select(prev.key)} aria-label={prev ? `Previous: ${prev.label}` : "Previous district"}>‹</button>
+      <select
+        value={selected?.key ?? ""}
+        onChange={(e) => select(e.target.value)}
+        aria-label="Choose a district"
+        className="min-w-0 flex-1 max-w-xs text-sm px-3 py-1.5 rounded-full"
+        style={{ background: "var(--app-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
+      >
+        {districts.map((d) => (
+          <option key={d.key} value={d.key}>
+            {shortDistrictName(chamber, d.key)} · {d.incumbents.map((i) => `${i.name} (${i.party})`).join(", ") || "vacant"}
+          </option>
+        ))}
+      </select>
+      <button type="button" className={navBtn} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }} disabled={!next} onClick={() => next && select(next.key)} aria-label={next ? `Next: ${next.label}` : "Next district"}>›</button>
     </div>
   );
-
+  const navMap = data && selected
+    ? <LocatorMap abbr={abbr} chamber={chamber} keys={allKeys} selectedKey={selected.key} onSelect={select} fills={fills} />
+    : null;
 
   return (
     <>
       {/* ── District view ── */}
       {inDistrict && (
         // Keyed on the district, so stepping to the next one plays its entrance again.
-        <div key={selected?.key ?? "loading"} className="vh-tab-in max-w-3xl mx-auto">
+        <div key={selected?.key ?? "loading"} className="vh-tab-in">
           {selected && data ? (
-            <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} navigator={navigator} chamberLabel={chamberLabel} onBack={backToExplorer} />
+            <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} selector={navSelector} locatorMap={navMap} chamberLabel={chamberLabel} onBack={backToExplorer} />
           ) : (
             <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{failed ? "The district data for this chamber could not be loaded." : "Loading district…"}</p>
           )}
@@ -587,8 +663,10 @@ export default function LegislativeAtlas({
             <DistrictCountBar districts={roster} pres2024={pres2024} results={results} viewMode={mapMode} projected={projectedSeats} />
           </div>
 
-          <div className="grid gap-6 grid-cols-1 lg:grid-cols-[minmax(0,3fr)_minmax(260px,2fr)]">
-            <div className="min-w-0">
+          {/* The map two-thirds, the seat boxes beside it. Where the boxes run longer than the map
+              (big chambers), the map holds centered in the window while they scroll past. */}
+          <div className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+            <div ref={mapColRef} className="min-w-0 lg:sticky lg:self-start" style={{ top: `max(4.5rem, calc(50vh - ${mapColH / 2}px))` }}>
               <StateLegDistrictMap
                 stateAbbr={abbr}
                 stateName={stateName}
@@ -608,22 +686,59 @@ export default function LegislativeAtlas({
                 upcomingYear={electionYear}
                 selectedKey={null}
                 onSelect={select}
+                fitHeight={MAP_FIT}
+                highlightKey={boxHover}
+                dimmedKeys={dimmedKeys}
+                hideFinePrint
               />
             </div>
+            {/* The seat boxes beside the map: by default every seat ordered D to R, or one box
+                per district in number order. */}
             <div className="min-w-0">
-              {data ? (
-                <DistrictBoxGrid chamber={chamber} items={boxes} selectedKey={null} onSelect={select} />
-              ) : (
-                <div className="h-24 rounded" style={{ background: "var(--app-tab-bg)" }} />
-              )}
-              <BoxLegend items={boxLegend} />
+              <div className="mb-3 flex items-center justify-between gap-3">
+                <h3 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Seats</h3>
+                <SlidingPills label="Box order" options={[{ key: "sorted", label: "D → R" }, { key: "district", label: "District order" }]} value={boxOrder} onChange={setBoxOrder} />
+              </div>
+              <div key={boxOrder} className="vh-tab-in">
+                {!data ? (
+                  <div className="h-24 rounded" style={{ background: "var(--app-tab-bg)" }} />
+                ) : sorted ? (
+                  <SeatStrip items={seatBoxes} onSelect={select} onHover={setBoxHover} />
+                ) : (
+                  <DistrictBoxGrid chamber={chamber} items={boxes} selectedKey={null} onSelect={select} onHover={setBoxHover} />
+                )}
+              </div>
+              <div className="mt-2"><BoxLegend items={boxLegend} /></div>
             </div>
           </div>
         </section>
 
-        {/* Stacked: in the page's 4xl column the table needs the full width for its seven columns. */}
+        {/* Stacked, chamber history first: in the page's 4xl column the table needs the full width for its seven columns. */}
         <div ref={lowerRef} data-vh={lowerVh} className="grid gap-8 grid-cols-1">
-          <section className="vh-in flex h-[25rem] min-w-0 flex-col md:h-[34rem]">
+          <section className="vh-in min-w-0">
+            <div className="mb-2 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+              <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Chamber history</h2>
+            </div>
+            {/* The state page's results rows, each a control that puts its year on the map. */}
+            <StateLegCompositionBox
+              layout="rows"
+              houseEntries={houseEntries}
+              senateEntries={senateEntries}
+              isUnicameral={isUnicameral}
+              chamber={chamber}
+              majorityInfo={mapInfo}
+              activeYear={mode === "results" ? activeYear : null}
+              selectableYears={electionYears}
+              onSelectYear={selectYear}
+              upcoming={upcoming}
+              upcomingActive={filter === "up"}
+              onSelectUpcoming={() => setFilter((f) => (f === "up" ? "all" : "up"))}
+              seatsUpByYear={seatsUpByYear}
+              adjustedMargins={adjustedMargins}
+            />
+          </section>
+          {/* No fixed height: the table runs the full length of its rows and the page scrolls. */}
+          <section className="vh-in flex min-w-0 flex-col" style={{ animationDelay: "120ms" }}>
             <div className="mb-2 flex shrink-0 items-baseline justify-between gap-3 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
               <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
                 {mode === "results" ? `${activeYear} ${chamberLabel} Results` : `${chamberLabel} Districts`}
@@ -646,30 +761,8 @@ export default function LegislativeAtlas({
               viewMode={mapMode}
               selectedKey={null}
               onSelect={select}
+              first={20}
             />
-          </section>
-          <section className="vh-in flex h-[25rem] min-w-0 flex-col md:h-[34rem]" style={{ animationDelay: "120ms" }}>
-            <div className="mb-2 shrink-0 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-              <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>Chamber history</h2>
-            </div>
-            <div className="relative min-h-0 flex-1">
-              <div className="absolute inset-0 flex flex-col">
-                <StateLegCompositionBox
-                  houseEntries={houseEntries}
-                  senateEntries={senateEntries}
-                  isUnicameral={isUnicameral}
-                  chamber={chamber}
-                  majorityInfo={mapInfo}
-                  activeYear={mode === "results" ? activeYear : null}
-                  selectableYears={electionYears}
-                  onSelectYear={selectYear}
-                  upcoming={upcoming}
-                  upcomingActive={filter === "up"}
-                  onSelectUpcoming={() => setFilter((f) => (f === "up" ? "all" : "up"))}
-                  seatsUpByYear={seatsUpByYear}
-                />
-              </div>
-            </div>
           </section>
         </div>
       </div>

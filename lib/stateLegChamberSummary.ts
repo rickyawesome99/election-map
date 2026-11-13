@@ -35,17 +35,21 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
   })() : null;
 
   // Latest corrected chamber margin: contested votes + uncontested seats imputed from president.
-  const margin = (() => {
+  // Every year's, too: the chamber history rows show it beside the raw vote margin.
+  const marginsByYear = (() => {
+    const out: { year: number; raw: number; corrected: number | null; imputed: number }[] = [];
     const years = getChamberMargins(abbr);
     for (const y of Object.keys(years).map(Number).sort((a, b) => b - a)) {
       const d = years[y].chambers.find((c) => c.chamber === chamber);
       if (!d || d.rawMargin == null) continue;
       const w = d.contested.weight + d.imputed.weight;
       const corrected = w > 0 ? ((d.contested.margin ?? 0) * d.contested.weight + (d.imputed.margin ?? 0) * d.imputed.weight) / w : null;
-      return { year: y, raw: d.rawMargin, corrected, imputed: d.imputed.districts };
+      out.push({ year: y, raw: d.rawMargin, corrected, imputed: d.imputed.districts });
     }
-    return null;
+    return out;
   })();
+  const margin = marginsByYear[0] ?? null;
+  const adjustedMargins: Record<number, number> = Object.fromEntries(marginsByYear.filter((m) => m.corrected != null).map((m) => [m.year, m.corrected!]));
 
   // The projected popular vote of the seats on the ballot: raw (as the ballot stands) and adjusted
   // (every one-party seat imputed as a contested race), lib/stateLegPopularVote.ts.
@@ -61,7 +65,7 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
     };
   })();
 
-  return { unicameral, roster, mapInfo, calendar, seats, totalSeats, upcoming, currentEra, projection, fieldStats, margin, popularVote };
+  return { unicameral, roster, mapInfo, calendar, seats, totalSeats, upcoming, currentEra, projection, fieldStats, margin, adjustedMargins, popularVote };
 }
 
 export type ChamberSummaryData = ReturnType<typeof chamberSummary>;

@@ -1,0 +1,51 @@
+state,kind,adapter,source,url,levels,notes
+AL,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Alabama Secretary of State (HTML by contest): https://www2.alabamavotes.gov/electionNight/statewideResultsByContest.aspx?ecode=1001305
+AK,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+AZ,direct,enhanced_voting,Arizona Secretary of State,https://app.enhancedvoting.com/cdn/results/Arizona/export-110326GeneralElection.json,state;county;precinct,
+AR,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,"Direct source not read yet: Arkansas Secretary of State (totalresults API, county): https://enr-results-api.totalresults.com/Contest/GetContestResults?cId=arkansas&electionID=11b07106-031e-4d7c-911a-d01fb473d6dd&contestType=Statewide"
+CA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+CO,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+CT,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Connecticut Secretary of the State (town JSON; CTM's election 108/53943 URL now 404s)
+DE,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Delaware Department of Elections (HTML): https://elections.delaware.gov/results/enr/GE2026.html
+FL,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+GA,direct,enhanced_voting,Georgia Secretary of State,https://results.sos.ga.gov/cdn/results/Georgia/export-11032026GeneralAndSpecialElection.json,state;county;precinct,
+HI,direct,hi_oe,Hawaii Office of Elections,https://elections.hawaii.gov/wp-content/results/2026%20General/media.txt,state;county;precinct,
+ID,direct,enhanced_voting,Idaho Secretary of State,https://results.voteidaho.gov/cdn/results/id/export-nov2026.json,state;county;precinct,
+IL,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+IN,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Indiana Election Division (JSON per office category): https://enr.indianavoters.in.gov/site/data/OffCatC_1037_B.json
+IA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+KS,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+KY,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+LA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Louisiana Secretary of State (precinct CSV per contest): https://voterportal.sos.la.gov/ElectionResults/ElectionResults/Data?blob=20261103/csv/ByPrecinct_67997.csv
+ME,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+MD,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Maryland State Board of Elections (HTML): https://elections.maryland.gov/elections/2026/general_Results/gen_results_2026_4_8.html
+MA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+MI,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+MN,direct,mn_sos,Minnesota Secretary of State,https://electionresultsfiles.sos.mn.gov/20261103/allracesbyprecinct.txt,state;county;precinct,
+MS,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+MO,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+MT,direct,results_export,Montana Secretary of State,https://electionresults.mt.gov/ResultsExport.aspx,state;county,
+NE,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Nebraska Secretary of State (GetMapData POST): https://neresultswebservice.azurewebsites.us/ResultsAjax.svc/GetMapData
+NV,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+NH,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: New Hampshire Secretary of State (town files; page 403s to scripts): https://www.sos.nh.gov/2026-general-election-results
+NJ,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+NM,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+NY,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+NC,direct,ncsbe,North Carolina State Board of Elections,https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/results_pct_20261103.zip,state;county;precinct,
+ND,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: North Dakota Secretary of State (totalresults API): https://api.resultsnd.sos.nd.gov/Contest/GetContestResults?cId=north-dakota&electionID=348&contestType=SW
+OH,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+OK,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+OR,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source read but not used: Oregon Secretary of State ResultsExport.aspx gives statewide XML only (no counties): https://results.oregonvotes.gov/ResultsExport.aspx
+PA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+RI,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Rhode Island Board of Elections (results/public/api ballot items): https://electionresults.ri.gov/results/public/api/elections/rhodeisland/2026StatewideGeneralElection/data/ballot-item/01000000-59ac-daed-66fe-08df1e27a40e
+SC,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+SD,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,"Direct source not read yet: South Dakota Secretary of State ResultsExport.aspx (same platform as MT, but its export postback returns the page, not a file): https://electionresults.sd.gov/ResultsExport.aspx"
+TN,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+TX,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Texas Secretary of State (civix ENR JSON): https://goelect.txelections.civixapps.com/api-ivis-system/api/s3/enr/election/53815
+UT,direct,enhanced_voting,Utah Lieutenant Governor,https://electionresults.utah.gov/cdn/results/Utah/export-General11032026.json,state;county,
+VT,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Vermont Secretary of State: https://electionresults.vermont.gov/
+VA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Virginia Department of Elections (results/public/api ballot items): https://enr.elections.virginia.gov/results/public/api/elections/Virginia/2026-November-General/data/ballot-item/01000000-f030-c43d-c993-08df1fee52e3
+WA,direct,enhanced_voting,Washington Secretary of State,https://results.votewa.gov/cdn/results/washington/export-20261103.json,state;county;precinct,
+WV,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+WI,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+WY,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,

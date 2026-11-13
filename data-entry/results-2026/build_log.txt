@@ -1,0 +1,59 @@
+built 2026-11-13T02:02:26Z
+civicAPI: 5166 races from 5166 payloads; 0 skipped
+AZ: 70 races from Arizona Secretary of State
+GA: 252 races from Georgia Secretary of State
+HI: 40 races from Hawaii Office of Elections
+ID: 109 races from Idaho Secretary of State
+MN: 211 races from Minnesota Secretary of State
+MT: 128 races from Montana Secretary of State
+NC: 185 races from North Carolina State Board of Elections
+UT: 94 races from Utah Lieutenant Governor
+WA: 132 races from Washington Secretary of State
+AP fill-in (unofficial): 756 races: AK 50 AR 1 DE 52 KY 61 LA 1 MA 200 MI 39 NH 227 VT 125
+not on the ballot (unopposed, AP roster names only): 115
+coverage: 6262 of 6262 expected races have results
+direct vs civicAPI: 3 races differ by over 0.5%
+  WA-S-43 WA Senate District 43: direct 63,855 vs civicAPI 63,484 (+0.584%)
+  WA-H-43-P2 WA House District 43 - Position 2: direct 51,696 vs civicAPI 51,414 (+0.548%)
+  WA-H-43-P1 WA House District 43 - Position 1: direct 62,342 vs civicAPI 62,020 (+0.519%)
+vs AP state-leg snapshot (2026-11-12): 292 races differ by over 1%
+  CT-S-15: civicAPI 20,743 vs AP 4,470 (+364.049%)
+  MI-H-8: civicAPI 24,110 vs AP 13,675 (+76.307%)
+  TX-S-22-SP: civicAPI 106,733 vs AP 331,688 (-67.821%)
+  MI-H-5: civicAPI 24,288 vs AP 15,282 (+58.932%)
+  ME-H-10: civicAPI 4,378 vs AP 3,047 (+43.682%)
+  CA-H-2: civicAPI 171,873 vs AP 131,649 (+30.554%)
+  ME-H-6: civicAPI 3,950 vs AP 3,053 (+29.381%)
+  OR-H-22: civicAPI 20,014 vs AP 15,968 (+25.338%)
+  ME-H-74: civicAPI 3,472 vs AP 4,630 (-25.011%)
+  CA-S-2: civicAPI 344,563 vs AP 276,471 (+24.629%)
+  ME-H-7: civicAPI 3,392 vs AP 2,740 (+23.796%)
+  ME-H-52: civicAPI 3,857 vs AP 4,978 (-22.519%)
+  CA-H-12: civicAPI 165,061 vs AP 136,576 (+20.857%)
+  ME-H-48: civicAPI 4,514 vs AP 5,646 (-20.05%)
+  OR-S-11: civicAPI 46,422 vs AP 38,776 (+19.718%)
+  CA-H-21: civicAPI 170,467 vs AP 142,399 (+19.711%)
+  NY-H-14: civicAPI 49,184 vs AP 60,514 (-18.723%)
+  NY-S-5: civicAPI 109,461 vs AP 133,317 (-17.894%)
+  OR-H-17: civicAPI 32,221 vs AP 27,435 (+17.445%)
+  WA-H-12-P2: Washington Secretary of State 72,149 vs AP 62,109 (+16.165%)
+  ME-H-33: civicAPI 4,389 vs AP 3,783 (+16.019%)
+  OR-H-19: civicAPI 29,063 vs AP 25,087 (+15.849%)
+  NY-H-17: civicAPI 44,483 vs AP 52,797 (-15.747%)
+  OR-H-21: civicAPI 26,140 vs AP 22,600 (+15.664%)
+  ME-S-26: civicAPI 17,891 vs AP 21,192 (-15.577%)
+  ME-H-18: civicAPI 4,436 vs AP 3,863 (+14.833%)
+  ME-H-45: civicAPI 3,940 vs AP 4,615 (-14.626%)
+  CA-H-37: civicAPI 160,574 vs AP 141,121 (+13.785%)
+  ME-S-7: civicAPI 19,443 vs AP 22,343 (-12.979%)
+  ME-H-144: civicAPI 3,447 vs AP 3,943 (-12.579%)
+  CA-H-58: civicAPI 101,529 vs AP 90,248 (+12.5%)
+  CA-H-63: civicAPI 131,536 vs AP 117,095 (+12.333%)
+  WA-S-7: Washington Secretary of State 63,373 vs AP 56,708 (+11.753%)
+  CA-H-23: civicAPI 183,316 vs AP 164,050 (+11.744%)
+  ME-S-2: civicAPI 16,644 vs AP 14,912 (+11.615%)
+  NY-H-15: civicAPI 45,156 vs AP 50,950 (-11.372%)
+  CA-H-25: civicAPI 130,167 vs AP 117,024 (+11.231%)
+  MO-H-146: civicAPI 15,570 vs AP 14,088 (+10.52%)
+  CA-H-60: civicAPI 85,835 vs AP 77,730 (+10.427%)
+  NY-H-18: civicAPI 29,576 vs AP 32,992 (-10.354%)

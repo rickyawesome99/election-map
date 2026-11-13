@@ -358,17 +358,22 @@ function ChamberSkeleton() {
         <div className="mt-6 flex gap-6 pb-3" style={RULE}><Sk className="h-4 w-20" /><Sk className="h-4 w-20" /></div>
       </Hero>
       <Body>
-        {/* ChamberSummary: seats now → 2026 with two stacked bars | vote margin, then the 3-stat facts row. */}
-        <div className="mt-6 grid gap-x-10 gap-y-6 pt-3 md:grid-cols-[1.45fr_1fr]" style={{ borderTop: "2px solid var(--app-text-primary)" }}>
-          <div className="space-y-3"><Sk className="h-3.5 w-44" /><Sk className="h-10 w-64 max-w-full" /><Sk className="h-2 w-full rounded-full" /><Sk className="h-3.5 w-full rounded-full" /><Sk className="h-3 w-2/3" /></div>
-          <div className="space-y-3"><Sk className="h-3.5 w-36" /><Sk className="h-7 w-52 max-w-full" /><Sk className="h-5 w-44 max-w-full" /><Sk className="h-3 w-40" /></div>
+        {/* ChamberSummary: today's seats as a header, the 3-stat facts row, the projection card; then
+            the explorer controls and the map (2/3) beside the seat boxes (1/3). */}
+        <div className="mt-2 grid items-start gap-x-8 gap-y-3 pt-2 md:grid-cols-[minmax(0,1fr)_15rem] md:pr-7">
+          <div className="space-y-2.5"><Sk className="h-3 w-48" /><Sk className="h-12 w-64 max-w-full" /></div>
+          <div className="space-y-2"><Sk className="h-3 w-32" /><Sk className="h-7 w-44" /></div>
         </div>
-        <div className="mt-7 py-5" style={{ borderTop: "1px solid var(--app-border)" }}><StatStrip cols={3} mobileCols={2} big="h-5" /></div>
-        <Pills widths={["w-28", "w-20", "w-24", "w-24"]} />
-        <div className="mt-6 grid gap-6 md:grid-cols-[3fr_2fr]">
+        <div className="mt-6"><StatStrip cols={3} mobileCols={2} big="h-5" /></div>
+        <div className="mt-6 grid items-start gap-x-8 gap-y-3 rounded-2xl p-5 sm:p-7 md:grid-cols-[minmax(0,1fr)_15rem]" style={{ border: "1px solid var(--app-border)" }}>
+          <div className="space-y-2.5"><Sk className="h-4 w-48" /><Sk className="h-10 w-52 max-w-full" /><Sk className="mt-4 h-3.5 w-full rounded-full" /></div>
+          <div className="space-y-2"><Sk className="h-3 w-32" /><Sk className="h-7 w-44" /></div>
+        </div>
+        <div className="mt-6 pb-3" style={RULE}><Pills widths={["w-28", "w-20", "w-24", "w-24"]} /></div>
+        <div className="mt-6 grid gap-8 lg:grid-cols-[2fr_1fr]">
           <Sk className="h-64 sm:h-80" />
           <div className="grid grid-cols-8 content-start gap-1">
-            {Array.from({ length: 64 }, (_, i) => <Sk key={i} className="aspect-[3/2] rounded-sm" />)}
+            {Array.from({ length: 48 }, (_, i) => <Sk key={i} className="aspect-[6/5] rounded-sm" />)}
           </div>
         </div>
         <SectionHead className="mt-10" />

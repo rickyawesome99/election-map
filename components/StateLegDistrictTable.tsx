@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-import { useMemo, useRef, useEffect } from "react";
+import { Children, cloneElement, isValidElement, useMemo, useRef, useEffect, useState, type CSSProperties, type ReactElement } from "react";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { StateLegDistrictResult } from "@/data/stateLegResults";
 import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
@@ -76,6 +76,15 @@ export function districtRowCount(
   return districts.length;
 }
 
+// A row laid out but not seen: no height, no rule, hidden, and out of the accessibility tree.
+const FOLDED_CELL: CSSProperties = { paddingTop: 0, paddingBottom: 0, lineHeight: 0, borderTop: 0, borderBottom: 0 };
+function foldRow(row: ReactElement<{ style?: CSSProperties; children?: React.ReactNode }>) {
+  const cells = Children.map(row.props.children, (cell) =>
+    isValidElement<{ style?: CSSProperties }>(cell) ? cloneElement(cell, { style: { ...cell.props.style, ...FOLDED_CELL } }) : cell,
+  );
+  return cloneElement(row, { style: { ...row.props.style, visibility: "hidden", borderBottom: 0 }, "aria-hidden": true, onClick: undefined } as object, cells);
+}
+
 export default function StateLegDistrictTable({
   districts,
   chamber,
@@ -90,8 +99,11 @@ export default function StateLegDistrictTable({
   onSelect,
   atlasHref,
   candidateHref,
+  first,
 }: {
   districts: StateLegDistrict[];
+  /** Show only this many rows, with the state pages' "Show all N districts" button under them. */
+  first?: number;
   /** Builds a member's candidate page URL; names link there when given. */
   candidateHref?: (name: string) => string;
   /** Builds the district's atlas page URL; the district cell links there when given. */
@@ -121,6 +133,12 @@ export default function StateLegDistrictTable({
 
   const columns = isResultsView ? RESULTS_COLUMNS : SEATS_COLUMNS;
   const rowCount = isResultsView ? resultRows.length : districts.length;
+  const [showAll, setShowAll] = useState(false);
+  const folded = first != null && !showAll && rowCount > first;
+  // Folded rows stay in the table, collapsed to nothing, so the columns are sized to every row from
+  // the start and "Show all" never moves them.
+  const sizer = (i: number) => folded && i >= first!;
+  const fold = (i: number, row: ReactElement<{ style?: CSSProperties; children?: React.ReactNode }>) => (sizer(i) ? foldRow(row) : row);
 
   // A selected row is usually far below the fold in a chamber of 100-plus districts, so a click
   // on the map would highlight a row nobody can see. Only this box's own scrollTop is moved, and
@@ -146,7 +164,9 @@ export default function StateLegDistrictTable({
   // (the district panel on the legislature page) — all this renders is the scrollable table.
   return (
     <div className="flex min-h-0 min-w-0 flex-1 flex-col">
-      <div ref={scrollBoxRef} className="min-h-0 min-w-0 flex-1 overflow-x-auto overflow-y-auto">
+      {/* With rows folded (`first`) the table is as tall as its rows and never scrolls down: the
+          folded rows' invisible text spills a few px past their zero-height cells, so it is clipped. */}
+      <div ref={scrollBoxRef} className={`min-h-0 min-w-0 flex-1 overflow-x-auto ${first != null ? "overflow-y-hidden" : "overflow-y-auto"}`}>
         <table className="w-full text-[11px] md:text-sm">
           <thead>
             <tr className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
@@ -187,13 +207,13 @@ export default function StateLegDistrictTable({
                 </td>
               </tr>
             ) : isResultsView ? (
-              resultRows.map(([key, result]) => {
+              resultRows.map(([key, result], i) => {
                 const margin = districtResultMargin(result);
                 const isSelected = selectedKey === key;
                 // The unattributed-votes row is listed but is not a district, so there is
                 // nothing on the map for it to select.
                 const selectable = !!onSelect && !isUnassignedResultKey(key);
-                return (
+                return fold(i, (
                   <tr
                     key={key}
                     ref={isSelected ? selectedRowRef : undefined}
@@ -258,14 +278,14 @@ export default function StateLegDistrictTable({
                       {result.uncontested && margin != null && <span style={{ color: "var(--app-text-very-muted)" }}> *</span>}
                     </td>
                   </tr>
-                );
+                ));
               })
             ) : (
-              districts.map((d) => {
+              districts.map((d, i) => {
                 const incumbents = d.incumbents ?? [];
                 const pres = pres2024[d.number];
                 const isSelected = selectedKey === d.number;
-                return (
+                return fold(i, (
                   <tr
                     key={d.id}
                     ref={isSelected ? selectedRowRef : undefined}
@@ -350,12 +370,20 @@ export default function StateLegDistrictTable({
                       ) : "—"}
                     </td>
                   </tr>
-                );
+                ));
               })
             )}
           </tbody>
         </table>
       </div>
+
+      {folded && (
+        <div className="flex justify-center pt-3.5">
+          <button type="button" onClick={() => setShowAll(true)} className="ix-press rounded-full px-4 py-1.5 text-[13px] font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>
+            Show all {rowCount} districts
+          </button>
+        </div>
+      )}
 
       {isResultsView && resultRows.some(([, r]) => r.uncontested) && (
         <div className="shrink-0 pt-2 text-[10px] italic" style={{ color: "var(--app-text-very-muted)" }}>

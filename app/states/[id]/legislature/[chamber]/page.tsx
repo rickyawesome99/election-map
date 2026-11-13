@@ -95,6 +95,7 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
           historicalMaps={stateLegHistoricalMaps[state.abbr]?.[chamber] ?? {}}
           houseEntries={entries.filter((e) => e.type === "House")}
           senateEntries={entries.filter((e) => e.type === "Senate")}
+          adjustedMargins={s.adjustedMargins}
           electionYear={electionYear}
           summary={<ChamberSummary s={s} electionYear={electionYear} />}
         />

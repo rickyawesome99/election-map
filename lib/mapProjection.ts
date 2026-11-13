@@ -56,6 +56,17 @@ const STATE_BBOX: Record<string, [number, number, number, number]> = {
 
 export type ProjectionConfig = { center: [number, number]; scale: number };
 
+
+/** Height ÷ width of the state's bounding box on a Mercator map, for sizing a box to the state. */
+export function stateMercatorAspect(stateAbbr: string): number | null {
+  const bbox = STATE_BBOX[stateAbbr];
+  if (!bbox) return null;
+  const [west, south, east, north] = bbox;
+  const proj = geoMercator();
+  const [x0, y0] = proj([west, north])!;
+  const [x1, y1] = proj([east, south])!;
+  return x1 > x0 ? (y1 - y0) / (x1 - x0) : null;
+}
 export function fitStateProjection(
   stateAbbr: string,
   width: number,

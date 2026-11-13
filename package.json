@@ -29,6 +29,7 @@
     "civic-ids": "python3 scripts/fetch-civicapi-race-ids.py",
     "archive-results": "node scripts/archive-results.mjs",
     "results-snapshot": "tsx --conditions=react-server scripts/build-results-snapshot.ts",
+    "results-2026": "python3 scripts/results_2026/fetch.py && python3 scripts/results_2026/build.py",
     "publish-sim-night": "tsx --conditions=react-server scripts/publish-sim-night.ts",
     "typecheck": "tsc --noEmit"
   },

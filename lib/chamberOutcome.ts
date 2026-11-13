@@ -10,6 +10,11 @@ export const OUTCOME_LABEL: Record<ChamberOutcome, string> = {
   dSuper: "D Supermajority", dMaj: "D Majority", tie: "Tie", none: "No majority", rMaj: "R Majority", rSuper: "R Supermajority",
 };
 
+/** Short forms for tight columns (the /legislatures "Now" status). */
+export const OUTCOME_SHORT: Record<ChamberOutcome, string> = {
+  dSuper: "D Super", dMaj: "D Maj.", tie: "Tie", none: "No maj.", rMaj: "R Maj.", rSuper: "R Super",
+};
+
 export const outcomeColor = (o: ChamberOutcome): string | null =>
   o === "dSuper" || o === "dMaj" ? "var(--party-dem)" : o === "rSuper" || o === "rMaj" ? "var(--party-rep)" : null;
 

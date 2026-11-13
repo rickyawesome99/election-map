@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import Segmented from "@/components/MarketSegmented";
-import { CHAMBER_OUTCOMES, OUTCOME_LABEL, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
+import { CHAMBER_OUTCOMES, OUTCOME_LABEL, OUTCOME_SHORT, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
 
 // The /legislatures Chambers table. The page builds these slim rows on the server (the full
 // projections carry every district), and the table only sorts and draws them.
@@ -127,7 +127,7 @@ function OutlookCell({ r, pill = false }: { r: ChamberRow; pill?: boolean }) {
   return <span className="whitespace-nowrap font-semibold" style={{ color }}>{label}</span>;
 }
 
-/** The status the chamber is likeliest to end in, with its chance; the hover lists every status. */
+/** The status the chamber is likeliest to end in; the hover lists every status with its chance. */
 function ProjectedStatusCell({ r }: { r: ChamberRow }) {
   if (!r.outcomes) return <span style={{ color: "var(--app-text-muted)" }}>—</span>;
   const o = r.outcomes;
@@ -137,14 +137,13 @@ function ProjectedStatusCell({ r }: { r: ChamberRow }) {
   return (
     <span className="whitespace-nowrap tabular-nums" title={title}>
       <span className="font-semibold" style={{ color: outcomeColor(top) ?? "var(--app-text-muted)" }}>{OUTCOME_LABEL[top]}</span>
-      <span style={{ color: "var(--app-text-muted)" }}> {o[top] > 0.995 ? ">99%" : pct(o[top])}</span>
     </span>
   );
 }
 
 function NowStatus({ s }: { s: ChamberOutcome | null }) {
   if (!s) return null;
-  return <div className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: outcomeColor(s) ?? "var(--app-text-muted)" }}>{OUTCOME_LABEL[s]}</div>;
+  return <div className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: outcomeColor(s) ?? "var(--app-text-muted)" }} title={OUTCOME_LABEL[s]}>{OUTCOME_SHORT[s]}</div>;
 }
 
 /** The chamber today: D–R(–other). */
@@ -183,12 +182,13 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
           state in the serif, odds + outlook at right, and a rule down the left edge in the favored
           party's color (full strength for a flip) to set each card off from the next. */}
       <div className="flex flex-col gap-2 sm:hidden">
-        {sorted.map((r) => {
+        {sorted.map((r, i) => {
           const o = outlookOf(r);
           const rule = !o ? "var(--app-border)" : o.flip ? partyColor(o.party) : `color-mix(in srgb, ${partyColor(o.party)} 40%, var(--app-bg))`;
           return (
             // Off-screen cards skip layout and paint until scrolled near (~190 px tall on a phone).
-            <div key={r.key} className="py-3.5 pl-3" style={{ borderLeft: `3px solid ${rule}`, borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 195px" }}>
+            // .vh-row: tints on hover / tap like the site's other row cards.
+            <div key={r.key} className="vh-row vh-row-boxed vh-row-fade py-3.5 pl-3" style={{ borderLeft: `3px solid ${rule}`, borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 195px", animationDelay: `${Math.min(i, 10) * 30}ms` }}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0">
                   <MiniLabel>{r.label} · {r.seatsUp} of {r.totalSeats ?? "—"} up</MiniLabel>
@@ -215,23 +215,26 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
         <table className="w-full text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
           <thead>
             <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-              {[["Chamber", "left", ""], ["Seats up", "right", ""], ["Now", "right", ""], ["Projected seats · 80% range", "left", "min-w-[13rem]"], ["Outlook", "left", ""], ["Control odds", "right", ""], ["Net", "right", ""], ["Projected status", "right", ""], ["Unopp.", "right", ""]].map(([h, a, w]) => (
-                <th key={h} className={`whitespace-nowrap py-1.5 pr-3 text-[10px] font-semibold uppercase tracking-wider text-${a} ${w}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
+              {[["Chamber", "left", ""], ["Now", "right", ""], ["Projected seats · 80% range", "left", "min-w-[13rem]"], ["Outlook", "left", ""], ["Control", "right", ""], ["Net", "right", ""], ["Projected status", "right", ""], ["Unopp.", "right", ""]].map(([h, a, w]) => (
+                <th key={h} className={`whitespace-nowrap py-1.5 pr-3 first:pl-2 last:pr-2 text-[10px] font-semibold uppercase tracking-wider text-${a} ${w}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
               ))}
             </tr>
           </thead>
           <tbody>
-            {sorted.map((r) => (
-              <tr key={r.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <td className="whitespace-nowrap py-2 pr-3 font-semibold"><Link href={r.href} prefetch={false} className="hover:underline">{r.stateName} {r.label}</Link></td>
-                <td className="whitespace-nowrap py-2 pr-3 text-right">{r.seatsUp}<span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}> / {r.totalSeats ?? "—"}</span></td>
+            {/* Each row tints on hover and fades in (.vh-tr, the table form of .vh-row). */}
+            {sorted.map((r, i) => (
+              <tr key={r.key} className="vh-tr" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${Math.min(i, 12) * 30}ms` }}>
+                <td className="whitespace-nowrap py-2 pl-2 pr-3">
+                  <Link href={r.href} prefetch={false} className="font-semibold hover:underline">{r.stateName} {r.label}</Link>
+                  <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{r.seatsUp} of {r.totalSeats ?? "—"} seats up</div>
+                </td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right"><NowSplit now={r.now} /><NowStatus s={r.nowStatus} /></td>
                 <td className="py-2 pr-3"><SeatsCell r={r} /></td>
                 <td className="py-2 pr-3"><OutlookCell r={r} /></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right"><OddsCell d={r.pDem} r={r.pRep} /></td>
                 <td className="whitespace-nowrap py-2 pr-3 text-right"><NetCell r={r} /></td>
                 <td className="py-2 pr-3 text-right"><ProjectedStatusCell r={r} /></td>
-                <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{r.unopposed}{r.unprojected ? <span title="seats with no projection"> · {r.unprojected} n/p</span> : null}</td>
+                <td className="py-2 pr-2 text-right" style={{ color: "var(--app-text-muted)" }}>{r.unopposed}{r.unprojected ? <span title="seats with no projection"> · {r.unprojected} n/p</span> : null}</td>
               </tr>
             ))}
           </tbody>
