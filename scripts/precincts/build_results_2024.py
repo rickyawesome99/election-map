@@ -152,12 +152,15 @@ def classify(st: str, col: str) -> tuple[str, str, str, str] | None:
     return None
 
 
+IND_AS_DEM = {"KIN", "SAN"}  # Angus King (ME), Bernie Sanders (VT)
+
+
 def slot_columns(cands: list[tuple[str, str, int]]) -> tuple[str | None, str | None]:
     """cands = [(column, party letter, total votes)] for ONE contest → (D-slot column, R-slot column).
 
     The site's convention for single-winner races: the R slot is the leading Republican; the D slot is
-    the leading candidate who is not a Republican (so King, Sanders and Osborn sit in the D slot, as does
-    the lone Libertarian against an unopposed Republican). With no Republican on the ballot the R slot
+    the Democrat (King and Sanders in their races), or with no Democrat on the ballot the leading
+    independent (Osborn), or failing that the leading minor-party candidate. With no Republican on the ballot the R slot
     is the runner-up (a same-party general, or the leading minor candidate against an unopposed Democrat)."""
     live = sorted([c for c in cands if c[2] > 0], key=lambda c: -c[2])
     # Write-in and scatter buckets ("O", "W") never fill a slot: an unopposed race keeps an empty side.
@@ -165,7 +168,15 @@ def slot_columns(cands: list[tuple[str, str, int]]) -> tuple[str | None, str | N
     reps = [c for c in named if c[1] == "R"]
     non = [c for c in named if c[1] != "R"]
     r = reps[0] if reps else None
-    d = non[0] if non else None
+    # D slot: the Democrat, unless an independent outpolled them (King, Sanders). A minor-party candidate
+    # (Libertarian, Green...) takes the slot only when no Democrat or independent ran (Alaska 2016:
+    # Metcalfe (D) holds it although Miller (L) finished ahead).
+    dem = next((c for c in non if c[1] == "D"), None)
+    ind = next((c for c in non if c[1] in ("I", "N", "U")), None)
+    # An independent displaces a Democrat only for the two who sit with the Democrats (IND_AS_DEM); in
+    # Alaska 2016 Stock (I) outpolled Metcalfe (D) and Metcalfe keeps the slot, as on the site.
+    aligned = next((c for c in non if c[1] in ("I", "N", "U") and c[0][-3:].upper() in IND_AS_DEM), None)
+    d = (aligned if aligned and (not dem or aligned[2] > dem[2]) else dem) or ind or (non[0] if non else None)
     # Same-party generals (CA, WA top-two; LA when two of one party lead): the runner-up takes the empty slot.
     if d is None and len(reps) > 1:
         d = reps[1]

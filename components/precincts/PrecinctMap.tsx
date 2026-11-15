@@ -74,6 +74,14 @@ export default function PrecinctMap(props: PrecinctMapProps) {
       maxZoom: 15,
     });
     mapRef.current = map;
+    // The whole-state view is as far out as the map goes: readers can zoom in, never out past it.
+    // (Re-fitted on resize, so rotating a phone or widening the window keeps the state in frame.)
+    const lockOut = () => {
+      const cam = map.cameraForBounds(bounds, { padding: 24 });
+      if (cam?.zoom !== undefined) map.setMinZoom(Math.max(0, cam.zoom - 0.01));
+    };
+    lockOut();
+    map.on("resize", lockOut);
     map.touchZoomRotate.disableRotation();
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
 
