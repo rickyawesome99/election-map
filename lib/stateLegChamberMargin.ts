@@ -1,6 +1,6 @@
 import "server-only";
 
-import { stateLegResults } from "@/data/stateLegResults";
+import { stateLegResults } from "@/lib/locked2026StateLegResults";
 import { stateLegPresByEra } from "@/data/stateLegPresByEra";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { stateLegCalendar } from "@/data/stateLegCalendar";

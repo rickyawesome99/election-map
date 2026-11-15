@@ -1,7 +1,8 @@
 import "server-only";
 
 import { electionYear } from "@/data/forecastData";
-import { stateLegResults, type StateLegDistrictResult } from "@/data/stateLegResults";
+import { type StateLegDistrictResult } from "@/data/stateLegResults";
+import { stateLegResults } from "@/lib/locked2026StateLegResults";
 import { stateLegPresByEra } from "@/data/stateLegPresByEra";
 import { stateLegPres2024 } from "@/data/stateLegPres2024";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";

@@ -1,7 +1,7 @@
 "use client";
 
 import { Fragment } from "react";
-import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import { LedgerSectionHead, LedgerSubhead } from "@/components/LedgerSectionHead";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import AtlasTrendChart from "./AtlasTrendChart";
 import AtlasOutlook from "./AtlasOutlook";
@@ -50,6 +50,10 @@ function Pill({ children, tone = "muted" }: { children: React.ReactNode; tone?: 
     </span>
   );
 }
+
+// Chambers whose multi-member districts elect each seat as its own race (Washington's Position 1/2,
+// Idaho's Seat A/B), so the label holds even when no 2026 ballot is loaded to show the posts.
+const POST_CHAMBERS = new Set(["WA-house", "ID-house"]);
 
 function eraLabel(eras: AtlasEra[], key: string): string {
   const e = eras.find((x) => x.key === key);
@@ -175,7 +179,25 @@ export default function AtlasDistrictDetail({
   const uniq = (xs: (number | null | undefined)[]) => [...new Set(xs.filter((x): x is number => x != null))];
   const elected = uniq(incs.map((i) => i.lastElection ?? district.lastElection));
   const nextElections = uniq(incs.length ? incs.map((i) => i.nextElection ?? district.nextElection) : [district.nextElection]);
+  // How many members the district elects: the sourced count where there is one (NH House), else the
+  // most seen among today's incumbents and the 2026 ballot (a vacancy can hide one in either).
+  const posts = new Set((district.candidates2026?.candidates ?? []).map((c) => c.post).filter((x): x is string => !!x && x !== "Special"));
+  const members = district.seats ?? Math.max(incs.length, district.candidates2026?.seats ?? 0, posts.size, 1);
+  const staggered = members > 1 && uniq(incs.map((i) => i.nextElection ?? district.nextElection)).length > 1;
+  const byPost = members > 1 && (posts.size > 1 || POST_CHAMBERS.has(`${abbr.toUpperCase()}-${chamber}`));
+  const districtType = members > 1
+    ? `${members}-member district${byPost ? ", separate posts" : staggered ? ", staggered terms" : ""}${district.overlay ? " (floterial)" : ""}`
+    : district.overlay ? "Floterial district" : null;
+  // How many votes each voter casts. One race for all the seats is block voting: vote for up to
+  // as many candidates as there are seats (a voter may stop at one). Posts are separate races,
+  // one vote in each; a staggered district puts one seat on the ballot at a time.
+  const votingRule = members <= 1 ? null
+    : byPost ? `One vote in each of the ${Math.max(posts.size, members)} post races`
+    : staggered ? "One vote; one seat is up at a time"
+    : `Vote for up to ${members}; the top ${members} win`;
   const aboutItems: { label: string; value: React.ReactNode }[] = [
+    ...(districtType ? [{ label: "Type", value: districtType }] : []),
+    ...(votingRule ? [{ label: "Voting", value: votingRule }] : []),
     ...(elected.length ? [{ label: "Elected", value: elected.join(", ") }] : []),
     ...(nextElections.length ? [{ label: "Next Election", value: nextElections.join(", ") }] : []),
     ...(district.outgoing2026?.length ? [{ label: "Incumbent not running", value: joinNodes(district.outgoing2026.map((o) => (
@@ -185,8 +207,8 @@ export default function AtlasDistrictDetail({
       </Fragment>
     ))) }] : []),
     ...(counties.length ? [{ label: counties.length === 1 ? "County" : "Counties", value: counties.map((c) => `${c.county}${counties.length > 1 && c.popPct < 99 ? ` (${c.popPct.toFixed(0)}%)` : ""}`).join(", ") }] : []),
-    ...(currentEra ? [{ label: "Map", value: <>{currentEra.source ?? "current map"}{currentEra.enactedDate && <>, enacted {currentEra.enactedDate}</>}{currentEra.years.length > 0 && <>, first used {currentEra.years[0]}</>}</> }] : []),
-    ...(district.presByEra.length > 1 ? [{ label: "Prior maps", value: district.presByEra.filter((e) => e.era !== "current").map((e) => eraLabel(eras, e.era).replace(" map", "")).join(", ") }] : []),
+    // The year the current map was first used; the commission, enactment date and prior maps are left out.
+    ...(currentEra?.years.length ? [{ label: "Map", value: `${currentEra.years[0]}` }] : []),
   ];
   // The header's one line of checks, like a House page's Proj. · Polls · Markets · TPL.
   const stats = [
@@ -260,14 +282,10 @@ export default function AtlasDistrictDetail({
         </div>
       </div>
 
-      {/* About — the House district page's format: demographics, then one inline label/value row */}
+      {/* About — the House district page's format: the facts row, then a Demographics subsection
+          with the big-figure grid strip. */}
       <Reveal>
         <LedgerSectionHead label="About this District" />
-        {district.demographics ? (
-          <div className="mb-4"><DemographicsStrip {...district.demographics} /></div>
-        ) : (
-          <p className="mb-4 text-sm" style={{ color: "var(--app-text-muted)" }}>No demographic data.</p>
-        )}
         <div className="flex flex-wrap gap-x-6 gap-y-1.5">
           {aboutItems.map((it) => (
             <div key={it.label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
@@ -275,8 +293,11 @@ export default function AtlasDistrictDetail({
             </div>
           ))}
         </div>
-        {district.demographics && (
-          <p className="text-xs mt-4" style={{ color: "var(--app-text-very-muted)" }}>ACS 2020–24 5-year estimates.</p>
+        <LedgerSubhead rule={false} label="Demographics" meta={district.demographics ? "ACS 2020–24 5-year estimates." : undefined} top={aboutItems.length ? "mt-7" : "mt-0"} />
+        {district.demographics ? (
+          <DemographicsStrip {...district.demographics} layout="grid" />
+        ) : (
+          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>No demographic data.</p>
         )}
       </Reveal>
 

@@ -1,6 +1,6 @@
 import "server-only";
 
-import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { calculateCountyModel } from "@/lib/tplCompute";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 

@@ -1,7 +1,7 @@
 import "server-only";
 
 import { stateLegFinance } from "@/data/stateLegFinance";
-import { stateLegResults } from "@/data/stateLegResults";
+import { stateLegResults } from "@/lib/locked2026StateLegResults";
 import { stateLegPresByEra } from "@/data/stateLegPresByEra";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import type { Chamber } from "@/data/stateLegDistricts";

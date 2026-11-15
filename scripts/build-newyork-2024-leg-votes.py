@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """New York's 2024 legislative results, from the State Board of Elections canvass.
 
+FUSION RULE CHANGED 2026-11-14 (user): a candidate's votes on every party line now count for that
+candidate's party. The per-line convention described below is what this script still emits; the
+fold-in is applied afterwards to data-entry/state-leg-results/NY-2024.json (see the block notes there
+and scripts/correct-statewide-from-districts.py). Re-running --write here would undo it.
+
+
 New York was the last chamber-year pair whose district sum would not reconcile. MEDSL's 2024
 file - both the bundled volume and the per-state one, which are byte-identical here - leaves
 **12.6% of New York's legislative vote on rows carrying no district at all** (Suffolk County

@@ -127,6 +127,16 @@ def compose(abbr, chamber, new_code, rec, from_label, to_label):
     return " ".join(parts)
 
 
+def load_calendar():
+    """data/stateLegCalendar.ts's JSON body: abbr -> chamber -> {eras: [{firstYear, ...}]}."""
+    src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "stateLegCalendar.ts")).read()
+    start = src.index("= {", src.index("export const stateLegCalendar")) + 2
+    return json.loads(src[start:].strip().rstrip(";"))
+
+
+CALENDAR = load_calendar()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("abbr")
@@ -152,9 +162,17 @@ def main():
         if len(eras) < 2:
             print(f"{abbr} {chamber}: one era only, nothing to compare")
             continue
+        cal_eras = ((CALENDAR.get(abbr) or {}).get(chamber) or {}).get("eras") or []
+        old_eras = sorted(era_years, key=int)
         def label_of(e):
+            # An old map is named for the first election held on it (lib/stateLegMapLabel.ts):
+            # the calendar's era firstYear, matched by position from the end, current map last.
             if e == "current":
                 return "current"
+            i = old_eras.index(e) if e in old_eras else -1
+            j = len(cal_eras) - 1 - (len(old_eras) - i)
+            if i >= 0 and 0 <= j < len(cal_eras) and cal_eras[j].get("firstYear"):
+                return str(cal_eras[j]["firstYear"])
             ys = era_years.get(e)
             if not ys:
                 return e

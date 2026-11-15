@@ -1,4 +1,5 @@
 import "server-only";
+import { stateLegOldMapLabel } from "@/lib/stateLegMapLabel";
 
 import { electionYear } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
@@ -45,7 +46,7 @@ export type StateLegRace = {
   /** "HD 31", "SD 5", "BE1", "Addison-1" */
   districtShort: string;
   districtLabel: string;
-  /** "current" or the superseded vintage the race was run on, and its label ("2016–2020 map"). */
+  /** "current" or the superseded vintage the race was run on, and its label ("2012 map": the first year it was used). */
   era: string;
   eraLabel: string;
   href: string;
@@ -138,7 +139,8 @@ function eraLabelFor(abbr: string, chamber: Chamber, year: number): { era: strin
   const vintage = map[String(year)];
   if (vintage == null) return { era: "current", label: "current map" };
   const years = Object.entries(map).filter(([, v]) => v === vintage).map(([y]) => Number(y)).sort();
-  const label = years.length <= 1 ? `${years[0] ?? vintage} map` : `${years[0]}–${years[years.length - 1]} map`;
+  const fallback = years.length <= 1 ? `${years[0] ?? vintage}` : `${years[0]}–${years[years.length - 1]}`;
+  const label = `${stateLegOldMapLabel(abbr, chamber, vintage, fallback)} map`;
   return { era: String(vintage), label };
 }
 

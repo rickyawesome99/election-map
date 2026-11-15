@@ -2,7 +2,7 @@ import "server-only";
 
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { electionYear } from "@/data/forecastData";
-import { stateLegResults } from "@/data/stateLegResults";
+import { stateLegResults } from "@/lib/locked2026StateLegResults";
 import { stateLegPresByEra } from "@/data/stateLegPresByEra";
 import { stateLegRedistricting } from "@/data/stateLegRedistricting";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";

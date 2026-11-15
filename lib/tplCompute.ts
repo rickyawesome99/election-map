@@ -20,7 +20,7 @@ import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { fundraisingData, fundraisingSources, fundraisingDetails, type RaceFinanceDetail } from "@/data/fundraisingData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { presByBoundaryVintage, boundaryVintageForHouseYear } from "@/data/presByBoundaryVintage";
-import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { countySenateData } from "@/lib/locked2026CountyData";
 import { countyGovernorData } from "@/lib/locked2026CountyData";
 import { countyHouseData, type CountyYearResult } from "@/data/countyHouseData";

@@ -2,7 +2,7 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { governorData, houseData, senateData, type RaceForecast } from "@/data/forecastData";
-import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { contestOf, forecastRace, type Contest } from "@/lib/forecast";
 import { calculateCountyModel, getNationalEnvironment } from "@/lib/tplCompute";
 import { countyDistrictShares2026, projectAll } from "@/lib/turnoutModel";

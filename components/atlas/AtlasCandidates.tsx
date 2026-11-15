@@ -3,7 +3,8 @@ import Link from "next/link";
 
 import Image from "next/image";
 import type { AtlasDistrict } from "@/lib/stateLegAtlas";
-import { contest2026, fieldPersons, fmtMoney, projectedNomineeShare } from "@/lib/stateLegAtlas";
+import { FundraisingLedgerSection, formatReceipts } from "@/components/FundraisingLedger";
+import { contest2026, fieldPersons, projectedNomineeShare } from "@/lib/stateLegAtlas";
 import { candidateSlug } from "@/lib/candidateSlug";
 
 type Party = "D" | "R" | "I" | "O";
@@ -145,56 +146,84 @@ export function AtlasFundraisingSection({ district, electionYear }: { district: 
   if (!m) {
     return <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Fundraising TBD — no {electionYear} campaign-finance records on file for this state yet.</p>;
   }
+  const footnote = <>Contributions per {m.source}, through {m.dataThrough ?? "the latest report"}.</>;
   const sideOrder: Record<string, number> = { D: 0, I: 1, O: 1, R: 2 };
   const rows = [...m.candidates].sort((a, b) => sideOrder[a.party] - sideOrder[b.party] || (b.contributions ?? -1) - (a.contributions ?? -1));
+  const money = district.projection?.money ?? null;
+  const gapNote = m.gapPct != null ? <> That is a {Math.abs(m.gapPct).toFixed(0)}-point gap in two-party money.</> : null;
+
+  // One Democrat against one Republican, both with money on file: the House race page's section,
+  // with the seat's money term (lib/stateLegMoneyModel.ts, R-positive like the House's) and its typical gap.
+  const dRow = rows.length === 2 && rows[0].party === "D" ? rows[0] : null;
+  const rRow = rows.length === 2 && rows[1].party === "R" ? rows[1] : null;
+  if (dRow && rRow && dRow.matched && rRow.matched) {
+    return (
+      <FundraisingLedgerSection
+        dem={dRow.contributions ?? 0}
+        rep={rRow.contributions ?? 0}
+        demName={dRow.name}
+        repName={rRow.name}
+        fundraisingPts={money?.pts ?? null}
+        typicalGapPct={money?.structuralGapPct ?? null}
+        footnote={footnote}
+        animateBar
+        summaryExtra={gapNote}
+      />
+    );
+  }
+
+  // Any other field (a multi-member seat, an independent, a candidate with no filings found): the
+  // same type and bar, one figure per candidate.
   const total = rows.reduce((s, r) => s + (r.matched ? r.contributions ?? 0 : 0), 0);
   const shareOf = (r: (typeof rows)[number]) => (r.matched && total > 0 ? ((r.contributions ?? 0) / total) * 100 : null);
   const lead = m.demTotal != null && m.repTotal != null && m.demTotal !== m.repTotal ? (m.demTotal > m.repTotal ? "D" : "R") : null;
   const twoSided = rows.length === 2;
 
-  const label = (r: (typeof rows)[number], i: number, alignRight: boolean) => {
-    const share = shareOf(r);
-    return (
-      <div key={`${r.name}-${i}`} className={`min-w-0 ${alignRight ? "text-right" : ""}`}>
-        <div className="text-xs truncate" style={{ color: "var(--app-text-muted)" }}>{r.name} ({r.party === "O" ? "I" : r.party})</div>
-        <div className="text-lg font-bold tabular-nums leading-tight" style={{ color: r.matched ? PARTY_COLOR[r.party] : "var(--app-text-very-muted)" }}>
-          {r.matched ? fmtMoney(r.contributions) : <span className="text-sm font-normal italic">no filings found</span>}
-          {share != null && <span className="ml-1.5 text-xs font-medium" style={{ color: "var(--app-text-very-muted)" }}>{share.toFixed(0)}%</span>}
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div>
-      <div className={twoSided ? "flex items-end justify-between gap-4" : "flex flex-wrap gap-x-6 gap-y-2"}>
-        {rows.map((r, i) => label(r, i, twoSided && i === 1))}
+      <div className={twoSided ? "flex items-end justify-between gap-6" : "flex flex-wrap gap-x-8 gap-y-3"}>
+        {rows.map((r, i) => {
+          const share = shareOf(r);
+          const right = twoSided && i === 1;
+          return (
+            <div key={`${r.name}-${i}`} className={`min-w-0 ${right ? "text-right" : ""}`}>
+              <div className="text-[11px] font-semibold uppercase tracking-wider truncate" style={{ color: "var(--app-text-muted)" }}>{r.name} ({r.party === "O" ? "I" : r.party})</div>
+              <div className="mt-1 flex items-baseline gap-2 tabular-nums" style={{ justifyContent: right ? "flex-end" : "flex-start" }}>
+                {r.matched ? (
+                  <span style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "clamp(1.6rem, 4vw, 1.9rem)", lineHeight: 1, color: PARTY_COLOR[r.party] }}>{formatReceipts(r.contributions ?? 0)}</span>
+                ) : (
+                  <span className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>no filings found</span>
+                )}
+                {share != null && <span className="text-[11px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{share.toFixed(0)}%</span>}
+              </div>
+            </div>
+          );
+        })}
       </div>
       {total > 0 && (
-        <div className="mt-2 flex h-2.5 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
-          {rows.map((r, i) => {
-            const share = shareOf(r);
-            // The race pages' vote bar motion: the first side grows from the left, the last from the right.
-            return share ? <div key={`${r.name}-${i}`} className={i === rows.length - 1 && i > 0 ? "vh-bar-r" : "vh-bar-d"} title={`${r.name}: ${fmtMoney(r.contributions)}`} style={{ width: `${share}%`, background: PARTY_COLOR[r.party], borderLeft: i > 0 ? "1px solid var(--app-bg)" : undefined, animationDelay: "120ms" }} /> : null;
-          })}
+        <div className="relative mt-4" style={{ height: 22 }}>
+          <div className="absolute inset-x-0 flex overflow-hidden rounded-full" style={{ top: 7, height: 8, background: "var(--app-tab-bg)" }}>
+            {rows.map((r, i) => {
+              const share = shareOf(r);
+              // The race pages' vote bar motion: the first side grows from the left, the last from the right.
+              return share ? <div key={`${r.name}-${i}`} className={i === rows.length - 1 && i > 0 ? "vh-bar-r" : "vh-bar-d"} title={`${r.name}: ${formatReceipts(r.contributions ?? 0)}`} style={{ width: `${share}%`, background: PARTY_COLOR[r.party], borderLeft: i > 0 ? "1px solid var(--app-bg)" : undefined, animationDelay: "120ms" }} /> : null;
+            })}
+          </div>
+          <div className="absolute" style={{ left: "50%", top: 0, height: 22, borderLeft: "1px dashed var(--app-text-very-muted)" }} />
         </div>
       )}
-      <p className="mt-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
-        <b className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtMoney(total)}</b> raised
-        {m.demTotal != null && m.repTotal != null && (
-          <>
-            {" · "}
-            <b className="tabular-nums" style={{ color: lead ? PARTY_COLOR[lead] : "var(--app-text-primary)" }}>
-              {lead ? `${lead}+${fmtMoney(Math.abs(m.demTotal - m.repTotal))}` : "Even"}
-            </b>
-            {lead && " advantage"}
-            {m.gapPct != null && <> · {Math.abs(m.gapPct).toFixed(0)}-point gap in two-party money</>}
-          </>
-        )}
+      <p className="mt-3 text-sm" style={{ lineHeight: 1.5, color: "var(--app-text-muted)", textWrap: "pretty" }}>
+        <b className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{formatReceipts(total)}</b> raised in all
+        {m.demTotal != null && m.repTotal != null && (lead
+          ? <>; {lead === "D" ? "Democrats" : "Republicans"} lead by <b className="tabular-nums" style={{ color: PARTY_COLOR[lead] }}>{formatReceipts(Math.abs(m.demTotal - m.repTotal))}</b></>
+          : <>; the parties have raised the same amount</>)}
+        .
+        {gapNote}
+        {money && (Math.abs(money.pts) < 0.05
+          ? <> Measured against the typical split for a race like this, it moves the forecast by no points.</>
+          : <> Measured against the typical split for a race like this, the forecast counts it as <b className="tabular-nums" style={{ color: PARTY_COLOR[money.pts > 0 ? "R" : "D"] }}>{money.pts > 0 ? "R" : "D"}+{Math.abs(money.pts).toFixed(1)}</b>.</>)}
       </p>
-      <p className="mt-1 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-        Contributions per {m.source}, through {m.dataThrough ?? "the latest report"}. Not yet a term in the projection.
-      </p>
+      <p className="mt-3 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{footnote}</p>
     </div>
   );
 }

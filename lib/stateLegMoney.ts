@@ -1,7 +1,7 @@
 import "server-only";
 
 import { stateLegFinance, type StateLegFinanceCandidate } from "@/data/stateLegFinance";
-import { stateLegResults } from "@/data/stateLegResults";
+import { stateLegResults } from "@/lib/locked2026StateLegResults";
 import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import { electionYear } from "@/data/forecastData";
 import type { Chamber } from "@/data/stateLegDistricts";

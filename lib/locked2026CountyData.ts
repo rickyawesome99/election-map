@@ -1,6 +1,7 @@
 import { countyGovernorData as correctedGovernor } from "@/data/countyGovernorData";
 import { countySenateData as correctedSenate } from "@/data/countySenateData";
-import { lockedGovernorRows, lockedSenateRows, type LockedRow } from "@/data/countyRowsLocked2026";
+import { countyPresidentialData as correctedPresidential } from "@/data/countyPresidentialData";
+import { lockedGovernorRows, lockedPresidentialRows, lockedSenateRows, type LockedRow } from "@/data/countyRowsLocked2026";
 
 // The county Senate and governor data the 2026 model reads. The 2026 forecast is locked and graded as
 // published, so its county figures (County TPL, the turnout split) keep the rows as they stood at the lock;
@@ -17,3 +18,5 @@ function atLock<T extends { years: Record<number, unknown> }>(data: Record<strin
 
 export const countySenateData = atLock(correctedSenate, lockedSenateRows);
 export const countyGovernorData = atLock(correctedGovernor, lockedGovernorRows);
+// Oregon 2024 (corrected 2026-11-14 from the RDH precinct file); see data/countyRowsLocked2026.ts.
+export const countyPresidentialData = atLock(correctedPresidential, lockedPresidentialRows);

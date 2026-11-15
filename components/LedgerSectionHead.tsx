@@ -18,3 +18,13 @@ export function LedgerSectionHead({ label, meta, right, rightClassName = "ml-aut
     </div>
   );
 }
+
+// A subsection inside a ledger section: a small label on a thin rule, with an optional note at right.
+export function LedgerSubhead({ label, meta, rule = true, top = "mt-7" }: { label: string; meta?: ReactNode; rule?: boolean; /** Space above, as a margin class. */ top?: string }) {
+  return (
+    <div className={`${top} flex flex-wrap items-baseline gap-x-3 gap-y-0.5 ${rule ? "mb-3 pb-2" : "mb-1.5"}`} style={rule ? { borderBottom: "1px solid var(--app-border)" } : undefined}>
+      <h3 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{label}</h3>
+      {meta && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
+    </div>
+  );
+}

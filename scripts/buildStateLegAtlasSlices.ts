@@ -73,7 +73,8 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       : vintageYears.get(key) ?? [];
     // The calendar's eras are in the same chronological order; match by position from the end.
     const cal = calendarEras[calendarEras.length - (eraKeys.length - i)];
-    const label = key === "current" ? "current" : years.length === 1 ? String(years[0]) : years.length ? `${years[0]}–${years[years.length - 1]}` : key;
+    // An old map is named for the first election held on it (lib/stateLegMapLabel.ts), e.g. "2012".
+    const label = key === "current" ? "current" : cal?.firstYear != null ? String(cal.firstYear) : years.length === 1 ? String(years[0]) : years.length ? `${years[0]}–${years[years.length - 1]}` : key;
     return { key, label, years, source: cal?.source, enactedDate: cal?.enactedDate, note: cal?.note, verified: cal?.verified ?? false };
   });
 

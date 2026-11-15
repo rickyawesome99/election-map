@@ -71,14 +71,82 @@ CORRECTIONS = {
     },
     ("Arizona", 2024, "House"): {
         "abbr": "AZ",
-        "source": "Wikipedia district tables",
+        "source": "Redistricting Data Hub 2024 precinct results",
         "note": "",
         "why": (
-            "D and R match the district sum EXACTLY (1,951,102 and 2,412,962). The whole "
-            "difference is the 43,383-vote Other bucket: the prior row was a Wikipedia infobox, "
-            "whose convention is major parties only, so its oth_votes was 0. All 30 districts "
-            "are present on the district side against MEDSL's 28."
+            "Second correction (2026-11-14). The Wikipedia district tables this row was first "
+            "corrected from held an incomplete count: 22 of 30 districts were below the sum of the "
+            "RDH 2024 precinct file, 18 of them by 15-35% (LD14 R 91,716 vs 145,344). MEDSL agrees "
+            "with RDH in every district MEDSL covers completely (LD6, LD8, LD11). User rule: RDH "
+            "precinct data is trusted over existing site data."
         ),
+    },
+    ("Indiana", 2024, "Senate"): {
+        "abbr": "IN",
+        "source": "Redistricting Data Hub 2024 precinct results",
+        "note": "",
+        "why": (
+            "MEDSL's Indiana 2024 file is unreliable: SD10 was exactly doubled, SD40 was 9,378 "
+            "against 38,424 in the RDH precinct file, SD7/SD9/SD35 were 20-45% high. Districts and "
+            "this row both move to the RDH precinct sums (2026-11-14)."
+        ),
+    },
+    ("Maine", 2024, "Senate"): {
+        "abbr": "ME",
+        "source": "Redistricting Data Hub 2024 precinct results",
+        "note": "",
+        "why": (
+            "MEDSL-based totals ran about 0.7% below the RDH precinct file in 34 of 35 districts, "
+            "consistent with centrally counted overseas ballots that RDH allocates and MEDSL omits."
+        ),
+    },
+    ("Maine", 2024, "House"): {
+        "abbr": "ME",
+        "source": "Redistricting Data Hub 2024 precinct results",
+        "note": "",
+        "why": "Same cause as the Maine Senate row: MEDSL-based totals about 0.7% low across the chamber.",
+    },
+    ("North Dakota", 2024, "Senate"): {
+        "abbr": "ND",
+        "source": "MEDSL State Precinct-Level Returns 2024; SD2 from RDH 2024 precinct results",
+        "note": "",
+        "why": "SD2 was half the RDH precinct sum for both parties (635/3,145 vs 1,154/6,615).",
+    },
+    ("Oklahoma", 2024, "Senate"): {
+        "abbr": "OK",
+        "source": "MEDSL State Precinct-Level Returns 2024; SD46 from RDH 2024 precinct results",
+        "note": "",
+        "why": "SD46 had no district row (MEDSL's rows for it are doubled); RDH has D 12,722, R 7,228, I 1,107.",
+    },
+    ("Oregon", 2024, "House"): {
+        "abbr": "OR",
+        "source": "Wikipedia district tables; HD9 from RDH 2024 precinct results",
+        "note": "",
+        "why": "HD9 was missing its Democrat, William Mrkvicka (14,196 votes).",
+    },
+    ("Connecticut", 2024, "Senate"): {
+        "abbr": "CT",
+        "source": "Redistricting Data Hub 2024 precinct results",
+        "note": "",
+        "why": "Fusion rule (user, 2026-11-14): a candidate's cross-endorsement line votes count for that candidate's party. The prior row counted the major-party line only.",
+    },
+    ("Connecticut", 2024, "House"): {
+        "abbr": "CT",
+        "source": "Redistricting Data Hub 2024 precinct results",
+        "note": "",
+        "why": "Fusion rule, as for the Connecticut Senate row.",
+    },
+    ("New York", 2024, "Senate"): {
+        "abbr": "NY",
+        "source": "New York State Board of Elections 2024 canvass",
+        "note": "Fusion rule: a candidate's votes on every party line count for that candidate's party.",
+        "why": "Fusion rule (user, 2026-11-14). Same canvass, different convention: the prior row counted only the Democratic and Republican lines and put Working Families, Conservative and other line votes in Other (599,150 votes in 54 districts). They now count for the candidate who received them.",
+    },
+    ("New York", 2024, "House"): {
+        "abbr": "NY",
+        "source": "New York State Board of Elections 2024 canvass",
+        "note": "Fusion rule: a candidate's votes on every party line count for that candidate's party.",
+        "why": "Fusion rule, as for the New York Senate row (564,139 votes in 119 districts moved out of Other).",
     },
     ("New Jersey", 2025, "House"): {
         "abbr": "NJ",

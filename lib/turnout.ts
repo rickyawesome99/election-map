@@ -1,7 +1,8 @@
 import "server-only";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { countyPresidentialData } from "@/data/countyPresidentialData";
+// Locked rows: this module feeds the 2026 turnout split (see lib/locked2026CountyData.ts).
+import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { countyHouseData } from "@/data/countyHouseData";

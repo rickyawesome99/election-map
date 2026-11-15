@@ -1,7 +1,7 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { countySenateData } from "@/lib/locked2026CountyData";
 import { countyGovernorData } from "@/lib/locked2026CountyData";
 import { countyHouseData } from "@/data/countyHouseData";

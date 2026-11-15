@@ -51,8 +51,6 @@ export const STATE_LEG_IDENTITY_MERGE: IdentityRuling[] = [
   ["NH", "William M. Marsh", "Bill Marsh", "Rep. William Marsh of Brookfield left the GOP in Sept 2021 and ran SD-3 as a Democrat in 2022 and 2024"],
   ["NJ", "Patricia A. Johnson", "Patricia \"Pat\" Johnson", "Pat Johnson lived in Lawrence for the 2021 LD-15 Assembly run, moved home to Hamilton for the 2023 LD-14 Senate run (NJ Globe)"],
   ["NY", "Ruben D. Cruz II", "Ruben Cruz II", "Richmond Hill, Queens; SD-16 2022, AD-24 2024, AD-38 2026 (Queens Ledger)"],
-  ["NY", "Ruben D. Cruz II (CON)", "Ruben Cruz II", "the same 2024 candidate's Conservative line"],
-  ["NY", "Ruben D. Cruz II (CSP)", "Ruben Cruz II", "the same 2024 candidate's Common Sense line"],
   ["OH", "Katie Oneill", "Katie O'Neill", "environmental attorney, Chagrin Falls native who moved to Nelsonville for HD-94 2020 and ran SD-18 2024 (one Ballotpedia page)"],
   ["OR", "Michael Newgard", "Michael Steven Newgard", "Clackamas County Guard pilot; HD-41 2020 and HD-40 2024 (Capital Chronicle cites the 2020 run)"],
   ["RI", "Barbara Quigley", "Barbara J. Quigley", "registered nurse, one Ballotpedia/BallotReady profile for SD-15 2022 and HD-22 2026; no second Barbara Quigley in RI sources"],
