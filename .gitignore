@@ -89,3 +89,7 @@ data-entry/page-archive-2026/
 
 # Raw downloads for the 2026 official-results file (scripts/results_2026/fetch.py; ~1 GB)
 data-entry/results-2026/raw/
+
+# Precinct project (2026-11): raw downloads and repaired anchor layers are rebuilt by scripts/precincts/
+data-entry/precincts/raw/
+data-entry/precincts/anchor/

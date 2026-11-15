@@ -104,6 +104,7 @@ export default function AnalysisPage() {
       entries: [
         { href: "/analysis/internal-methodology", kicker: "Models", title: "Internal Methodology", description: "The working specification of every model: each constant, formula and fitted value read live from the code, the backtests behind them, and the full change log." },
         { href: "/analysis/state-leg-models", kicker: "Models", title: "State Legislature Model Comparison", description: "Our state legislative forecast against State Navigate’s and ElectIndex’s: toplines, agreement, every chamber’s control odds and every district’s three calls." },
+        { href: "/audit/precincts", kicker: "Audit", title: "Precinct Data Tracker", description: "Every state, year and office in the precinct project: what is loaded, what reconciles with the site\u2019s county and district totals, and what is still missing." },
         { href: "/audit/state-leg-results", kicker: "Audit", title: "State Leg Results Audit", description: "Coverage and provenance of the 2016–2025 statewide chamber-year figures, plus the district-sum-vs-statewide reconciliation." },
         { href: "/audit/state-leg-pres2024", kicker: "Audit", title: "State Leg 2024 President Audit", description: "Temporary sanity check comparing aggregated state legislative district votes to official state totals." },
       ],

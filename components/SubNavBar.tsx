@@ -13,6 +13,7 @@ const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = 
   { key: "forecast",         label: "Forecast" },
   { key: "legislatures",     label: "Legislatures", prefetch: false },
   { key: "historical",       label: "Historical" },
+  { key: "precincts",        label: "Precincts" },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
   { key: "district-finder",  label: "District Finder" },
 ];
@@ -23,6 +24,7 @@ function getActiveTab(pathname: string): string | null {
   // The national board and every state's chamber pages (/states/ks/legislature/house).
   if (pathname === "/legislatures" || /^\/states\/[^/]+\/legislature(\/|$)/.test(pathname)) return "legislatures";
   if (pathname === "/historical" || pathname.startsWith("/historical/")) return "historical";
+  if (pathname === "/precincts") return "precincts";
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";

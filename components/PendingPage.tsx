@@ -509,12 +509,35 @@ function ResultsSkeleton() {
   );
 }
 
+// /precincts: standfirst header, the control row over a rule, then the map beside the detail panel.
+function PrecinctsSkeleton() {
+  return (
+    <>
+      <Hero className="pb-0">
+        <Title>Precinct Results</Title>
+        <Sk className="mt-4 h-4 w-full max-w-xl" />
+        <Sk className="mt-2 h-4 w-80 max-w-full" />
+      </Hero>
+      <Body>
+        <div className="mt-6 flex flex-wrap gap-2 pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+          <Sk className="h-7 w-44 rounded-md" /><Sk className="h-7 w-72 max-w-full rounded-md" /><Sk className="h-7 w-56 max-w-full rounded-md" />
+        </div>
+        <div className="mt-3 grid gap-5 lg:grid-cols-[minmax(0,1fr)_340px]">
+          <Sk className="h-[420px] w-full sm:h-[600px]" />
+          <div className="space-y-3"><Sk className="h-6 w-40" /><Sk className="h-4 w-full" /><Sk className="h-4 w-3/4" /></div>
+        </div>
+      </Body>
+    </>
+  );
+}
+
 const SKELETONS: Record<PendingKind, (p: { path: string }) => ReactNode> = {
   results: ResultsSkeleton,
   overview: OverviewSkeleton,
   forecast: ForecastSkeleton,
   legislatures: LegislaturesSkeleton,
   historical: HistoricalSkeleton,
+  precincts: PrecinctsSkeleton,
   model: ModelSkeleton,
   analysis: AnalysisSkeleton,
   finder: FinderSkeleton,
