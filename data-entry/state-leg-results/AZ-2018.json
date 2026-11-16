@@ -500,9 +500,9 @@
    },
    "18": {
     "demVotes": 103245,
-    "repVotes": 39578,
+    "repVotes": 83847,
     "othVotes": 0,
-    "totalVotes": 142823,
+    "totalVotes": 187092,
     "candidates": [
      {
       "name": "Denise Epstein",
@@ -516,6 +516,12 @@
       "party": "D",
       "votes": 50253,
       "winner": true
+     },
+     {
+      "name": "Jill Norgaard",
+      "party": "R",
+      "votes": 44269,
+      "incumbent": true
      },
      {
       "name": "Greg Patterson",

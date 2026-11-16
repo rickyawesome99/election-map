@@ -262,13 +262,11 @@ RUNOFF = "Louisiana's November election is an all-party primary. The site holds 
 KNOWN: dict[tuple[str, int, str], dict[str, str]] = {
     ("LA", 2016, "USH"): {"2": RUNOFF, "3": RUNOFF, "4": RUNOFF, "5": RUNOFF},
     ("LA", 2020, "USH"): {"5": RUNOFF},
+    ("ME", 2022, "USH"): {"2": "Maine's 2nd was decided by ranked choice: precincts report first choices, the site holds the final round."},
+    ("ME", 2018, "USH"): {"2": "Maine's 2nd was decided by ranked choice: precincts report first choices, the site holds the final round."},
     ("AZ", 2018, "USH"): {"7": "No Republican ran in District 7: the Green candidate (18,706) takes the second side here, the site shows the Republican write-in."},
     ("NY", 2018, "SLDU"): {"17": "Felder held the Democratic, Republican and Conservative lines in District 17: the site lists him as other, here his votes sit on the Democratic side."},
     ("WY", 2016, "SLDL"): {"4": "District 4: the source lists Michaels (1,185) as a Democrat, the site as other."},
-    ("OR", 2016, "SLDL"): {k: "Districts 34, 35 and 47: the Republican nominee also held the Independent Party line and the site lists them as other. Site figure to correct." for k in ("34", "35", "47")},
-    ("AZ", 2018, "SLDL"): {"18": "District 18: the site's results leave out Republican Jill Norgaard (44,269). Site figure to correct."},
-    ("AR", 2016, "SLDL"): {"99": "District 99: the site holds no vote count for Fortner (R, 9,487). Site figure to correct.", "9": "District 9: unopposed Democrat; the source counts 15,327, the site 6,519."},
-    ("MT", 2020, "SLDL"): {k: "Districts 3, 19 and 84 were unopposed and the site holds a placeholder of 10,000 votes for each. Site figure to correct." for k in ("3", "19", "84")},
 }
 
 
@@ -316,6 +314,10 @@ def district_note(st: str, year: int, office: str, o: pd.DataFrame) -> str:
 # State-years where a seat's unexpired term and full term were both on the ballot and the source merges them
 # (Michigan House 11 and 28, Montana Senate 26, all 2016). The doubled-row rule is applied only here: elsewhere
 # two rows for a precinct are separate counts (Detroit's absentee boards share their precinct's name).
+# Contests in the source that are not the regular general election and have no regular count to stand beside:
+# Arkansas House 99 in 2016 (Fortner was unopposed for the full term and no votes were tallied; the rows are the
+# same-day special for the unexpired term, checked against the Secretary of State's results).
+NOT_THE_GENERAL = {("AR", 2016, "SLDL", "99")}
 SAME_DAY_SPECIALS = {("MI", 2016), ("MT", 2016), ("HI", 2016)}  # Hawaii's 1st: Hanabusa won the unexpired term and the full term the same day
 VT_COUNTY = {"ADD": "ADDISON", "BEN": "BENNINGTON", "CAL": "CALEDONIA", "CHI": "CHITTENDEN", "ESX": "ESSEX", "FRA": "FRANKLIN", "GI": "GRAND ISLE", "LAM": "LAMOILLE",
              "ORA": "ORANGE", "ORL": "ORLEANS", "RUT": "RUTLAND", "WAS": "WASHINGTON", "WDH": "WINDHAM", "WDR": "WINDSOR", "CT": "CENTRAL", "N": "NORTH", "SE": "SOUTH EAST"}
@@ -393,6 +395,10 @@ def relabel_districts(df: pd.DataFrame, st: str, year: int) -> pd.DataFrame:
     if st == "NH":  # House districts are numbered within a county: Belknap 1 is "BE1"
         m = (df["office"] == "SLDL") & df["district"].str.fullmatch(r"\d+") & df["county"].isin(NH_COUNTY)
         df.loc[m, "district"] = df.loc[m, "county"].map(NH_COUNTY) + df.loc[m, "district"]
+    gone = [d for (s_, y_, o_, d) in NOT_THE_GENERAL if (s_, y_) == (st, year)]
+    if gone:
+        df = df[~(df["office"].isin([o_ for (s_, y_, o_, _d) in NOT_THE_GENERAL if (s_, y_) == (st, year)]) & df["district"].isin(gone))].copy()
+        leg = df["office"].isin(["SLDU", "SLDL"])
     if (st, year) in SAME_DAY_SPECIALS:
         df = undouble(df, st, year)
         leg = df["office"].isin(["SLDU", "SLDL"])
@@ -565,13 +571,22 @@ def load_one(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, 
     firsts: dict[tuple[str, str, str], set[str]] = defaultdict(set)
     for o_, d_, c_ in zip(lines["office"], lines["district"], lines["candidate"]):
         firsts[(o_, d_, surname(c_))].add(person_key(c_))
+    # the first party named on each candidate's label ("INDEPENDENT, REPUBLICAN" → I)
+    def first_party(p_: str) -> str:
+        x = re.split(r"[,/]", p_.strip())[0].strip()
+        return "D" if x.startswith("DEM") else "R" if x.startswith("REP") else "I"
+    df_party_first = {k: first_party(v) for k, v in df[~df["scatter"]].groupby(ck)["party"].agg(lambda x: x.mode().iat[0] if len(x.mode()) else "").items()}
     for (office, district, cand), g in lines.groupby(ck):
         by = dict(zip(g["line"], g["votes"]))
         major = max((l for l in ("D", "R") if l in by), key=lambda l: by[l], default=None)
         sn = surname(cand)
         exact = site.get((office, district, person_key(cand))) or (site.get((office, district, sn)) if len(firsts[(office, district, sn)]) == 1 else None)
         looked = exact or site.get((office, "*", sn)) or (tags or {}).get(office.replace("_S", ""), {}).get(sn[:3])
-        if exact in ("D", "R") and office in ("SLDU", "SLDL"):
+        own = df_party_first.get((office, district, cand), "")
+        if exact == "I" and office in ("SLDU", "SLDL") and own not in ("D", "R"):
+            major = None  # "Independent, Republican" (Oregon): the candidate's own party comes first, and the site lists them as other
+            by = {"I": 1}
+        elif exact in ("D", "R") and office in ("SLDU", "SLDL"):
             major = exact  # the site's district results name this candidate: its party wins over a stray label
         elif "B" in by or ("D" in by and "R" in by):
             major = (looked if looked in ("D", "R") else None) or major or "D"  # cross-filed: the site's party for them

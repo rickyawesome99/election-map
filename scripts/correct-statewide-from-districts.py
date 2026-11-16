@@ -118,6 +118,18 @@ CORRECTIONS = {
         "note": "",
         "why": "SD46 had no district row (MEDSL's rows for it are doubled); RDH has D 12,722, R 7,228, I 1,107.",
     },
+    ("Arizona", 2018, "House"): {
+        "abbr": "AZ",
+        "source": "Klarner SLERS 1967-2022; LD18 from the signed official canvass",
+        "note": "",
+        "why": "LD18 was missing Republican Jill Norgaard (44,269 votes; signed canvass of 3 Dec 2018, p. 8; precinct returns agree).",
+    },
+    ("Montana", 2020, "House"): {
+        "abbr": "MT",
+        "source": "Klarner SLERS 1967-2022; HD3, HD19, HD84 from the 2020 legislative canvass",
+        "note": "",
+        "why": "Three winners' or losers' totals were 10,000 too high (HD3 Powers 12,393 for 2,393; HD19 McKamey 14,288 for 4,288; HD84 Hull 12,819 for 2,819) and HD19's Libertarian (762) was missing. Canvass and precinct returns agree.",
+    },
     ("Oregon", 2024, "House"): {
         "abbr": "OR",
         "source": "Wikipedia district tables; HD9 from RDH 2024 precinct results",

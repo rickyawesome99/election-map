@@ -23222,9 +23222,9 @@ export const stateLegResults: Record<
      },
      "18": {
       "demVotes": 103245,
-      "repVotes": 39578,
+      "repVotes": 83847,
       "othVotes": 0,
-      "totalVotes": 142823,
+      "totalVotes": 187092,
       "candidates": [
        {
         "name": "Denise Epstein",
@@ -23238,6 +23238,12 @@ export const stateLegResults: Record<
         "party": "D",
         "votes": 50253,
         "winner": true
+       },
+       {
+        "name": "Jill Norgaard",
+        "party": "R",
+        "votes": 44269,
+        "incumbent": true
        },
        {
         "name": "Greg Patterson",
@@ -285244,21 +285250,22 @@ export const stateLegResults: Record<
       ]
      },
      "3": {
-      "demVotes": 12393,
+      "demVotes": 2393,
       "repVotes": 3586,
       "othVotes": 0,
-      "totalVotes": 15979,
+      "totalVotes": 5979,
       "candidates": [
-       {
-        "name": "Debo Powers",
-        "party": "D",
-        "votes": 12393,
-        "winner": true
-       },
        {
         "name": "Braxton Mitchell",
         "party": "R",
-        "votes": 3586
+        "votes": 3586,
+        "winner": true
+       },
+       {
+        "name": "Debo Powers",
+        "party": "D",
+        "votes": 2393,
+        "incumbent": true
        }
       ]
      },
@@ -285538,17 +285545,22 @@ export const stateLegResults: Record<
      },
      "19": {
       "demVotes": 0,
-      "repVotes": 14288,
-      "othVotes": 0,
-      "totalVotes": 14288,
+      "repVotes": 4288,
+      "othVotes": 762,
+      "totalVotes": 5050,
       "uncontested": true,
       "candidates": [
        {
         "name": "Wendy McKamey",
         "party": "R",
-        "votes": 14288,
+        "votes": 4288,
         "incumbent": true,
         "winner": true
+       },
+       {
+        "name": "George Anthony Schultz",
+        "party": "O",
+        "votes": 762
        }
       ]
      },
@@ -286729,21 +286741,21 @@ export const stateLegResults: Record<
      },
      "84": {
       "demVotes": 3256,
-      "repVotes": 12819,
+      "repVotes": 2819,
       "othVotes": 0,
-      "totalVotes": 16075,
+      "totalVotes": 6075,
       "candidates": [
-       {
-        "name": "Charlie Hull",
-        "party": "R",
-        "votes": 12819,
-        "winner": true
-       },
        {
         "name": "Mary Ann Dunwell",
         "party": "D",
         "votes": 3256,
-        "incumbent": true
+        "incumbent": true,
+        "winner": true
+       },
+       {
+        "name": "Charlie Hull",
+        "party": "R",
+        "votes": 2819
        }
       ]
      },
