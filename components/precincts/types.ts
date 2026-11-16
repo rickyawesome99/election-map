@@ -64,3 +64,10 @@ export const RATING_SCALE: { label: string; color: string }[] = [
   { label: "Safe R", color: "#be1c29" },
 ];
 export const MARGIN_STEPS: (string | number)[] = ["#1b408c", -15, "#587ccc", -5, "#8bafff", -1, "#959bb3", 0, "#cf8980", 1, "#ff8b98", 5, "#ff5864", 15, "#be1c29"];
+
+// public/precincts/demographics/{ST}.json: 2020 Census block counts summed to each 2024 precinct.
+// Every column is a count by pid order, except medage (median age × 10; -1 where nobody lives).
+export const DEMOGRAPHIC_FIELDS = ["pop", "vap", "white", "black", "hisp", "asian", "aian", "nhpi", "a18_34", "a35_49", "a50_64", "a65",
+  "medage", "female", "hu", "occ", "own", "hhpop", "married", "alone", "kids"] as const;
+export type DemographicField = (typeof DEMOGRAPHIC_FIELDS)[number];
+export type StateDemographics = { st: string; n: number; first_pid: number; cols: Record<DemographicField, number[]> };

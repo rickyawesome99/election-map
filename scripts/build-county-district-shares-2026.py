@@ -37,6 +37,19 @@ spec.loader.exec_module(cd)
 CVAP_VARS = ["B05003_008E", "B05003_012E", "B05003_019E", "B05003_023E"]
 
 
+def pieces_at_lock():
+    """The district-by-county rows as they stood when the 2026 forecast was locked. Fifteen districts were repaired
+    afterwards (scripts/precincts/correct_site_house_counties.py) and this file is an input of the locked model, so a
+    rerun must read what it read then: today's rows with those districts put back from the at-lock copy."""
+    rows = list(csv.DictReader(open(PIECES)))
+    locked_path = os.path.join(ROOT, "data-entry/house_district_county_results_locked2026.csv")
+    if not os.path.exists(locked_path):
+        return rows
+    locked = list(csv.DictReader(open(locked_path)))
+    repaired = {(r["year"], r["state"], r["district"]) for r in locked}
+    return [r for r in rows if (r["year"], r["state"], r["district"]) not in repaired] + [r for r in locked if r["status"] != "absent"]
+
+
 def fetch_tract_cvap(state_fips, key):
     path = os.path.join(cd.CACHE, f"tracts_cvap_{cd.VINTAGE}_{state_fips}.json")
     if os.path.exists(path):
@@ -67,7 +80,7 @@ def main():
 
     # ── pieces2024 for unchanged states ──
     by_county = {}
-    for r in csv.DictReader(open(PIECES)):
+    for r in pieces_at_lock():
         if r["year"] != "2024" or r["status"] == "missing":
             continue
         st = fips_by_abbr[r["state"]]

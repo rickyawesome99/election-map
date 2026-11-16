@@ -1,11 +1,14 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { governorData, houseData, senateData, type RaceForecast } from "@/data/forecastData";
+import { governorData, senateData, type RaceForecast } from "@/data/forecastData";
+import { houseData } from "@/lib/locked2026HousePast"; // House past results as at the 2026 lock
+
 import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { contestOf, forecastRace, type Contest } from "@/lib/forecast";
 import { calculateCountyModel, getNationalEnvironment } from "@/lib/tplCompute";
 import { countyDistrictShares2026, projectAll } from "@/lib/turnoutModel";
+import { houseDistrictCountyRowsAtLock } from "@/lib/locked2026HouseDistrictCounty";
 import { parseCsv } from "@/lib/turnout";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
@@ -105,7 +108,7 @@ function countyLean(fips: string): { lean: number; basis: ProjectedCounty["leanB
 let pieceDeviationCache: Map<string, number> | null = null;
 function pieceDeviations(): Map<string, number> {
   if (pieceDeviationCache) return pieceDeviationCache;
-  const rows = parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_district_county_results.csv"), "utf8")).filter((r) => r.year === "2024" && r.status !== "missing");
+  const rows = houseDistrictCountyRowsAtLock().filter((r) => r.year === "2024" && r.status !== "missing"); // rows as at the 2026 lock
   const byCounty = new Map<string, { district: string; dem: number; gop: number; total: number }[]>();
   for (const r of rows) {
     const fips = ABBR_TO_FIPS[r.state];

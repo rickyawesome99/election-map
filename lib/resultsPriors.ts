@@ -1,7 +1,9 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { governorData, houseData, senateData, presPastResults, type RaceForecast } from "@/data/forecastData";
+import { governorData, senateData, presPastResults, type RaceForecast } from "@/data/forecastData";
+import { houseData } from "@/lib/locked2026HousePast"; // House past results as at the 2026 lock
+
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { boundaryVintageForHouseYear, presByBoundaryVintage, PRES_YEARS_FOR_VINTAGE } from "@/data/presByBoundaryVintage";
 import { pastElectionHref } from "@/lib/pastElections";
@@ -14,6 +16,7 @@ import { countySenateData } from "@/data/countySenateData";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { calculateDistrictTpl, getTplFit } from "@/lib/tplCompute";
 import { countyLoadings } from "@/lib/resultsNightLoadings";
+import { houseDistrictCountyRowsAtLock } from "@/lib/locked2026HouseDistrictCounty";
 import { parseCsv } from "@/lib/turnout";
 import { raceHref } from "@/lib/raceLinks";
 import { candidatePhoto } from "@/lib/candidatePhotos";
@@ -143,7 +146,7 @@ let house2024Cache: Map<string, (Tally & { district: string })[]> | null = null;
 function house2024(): NonNullable<typeof house2024Cache> {
   if (house2024Cache) return house2024Cache;
   house2024Cache = new Map();
-  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_district_county_results.csv"), "utf8"))) {
+  for (const r of houseDistrictCountyRowsAtLock()) { // rows as at the 2026 lock
     if (r.year !== "2024" || r.status === "missing" || !ABBR_TO_FIPS[r.state]) continue;
     const pieces = house2024Cache.get(r.county_fips) ?? [];
     pieces.push({ district: ABBR_TO_FIPS[r.state] + r.district.padStart(2, "0"), demVotes: Number(r.dem || 0), repVotes: Number(r.gop || 0), othVotes: Number(r.oth || 0), totalVotes: Number(r.total || 0) });

@@ -2912,10 +2912,23 @@
    },
    "50": {
     "demVotes": 0,
-    "repVotes": 7054,
+    "repVotes": 2606,
     "othVotes": 0,
-    "totalVotes": 7054,
-    "uncontested": true
+    "totalVotes": 2606,
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Scott DeLano",
+      "party": "R",
+      "votes": 1468,
+      "winner": true
+     },
+     {
+      "name": "Dixie Newman",
+      "party": "R",
+      "votes": 1138
+     }
+    ]
    },
    "51": {
     "demVotes": 0,

@@ -6,12 +6,12 @@ import {
   senateNoElection,
   governorData,
   governorNoElection,
-  houseData,
   houseStatewideResults,
   houseDistrictInfo,
   stateLegData,
   type PastResult,
 } from "@/data/forecastData";
+import { houseData } from "@/lib/locked2026HousePast"; // House past results as at the 2026 lock
 import { statesData } from "@/data/statesData";
 import { candidateOffices, type CandidateOfficeRecord } from "@/data/candidateOffices";
 import { SAME_PERSON, SAME_PERSON_IN_STATE } from "@/lib/candidateSlug";

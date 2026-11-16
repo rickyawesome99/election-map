@@ -112,9 +112,9 @@
    },
    "6": {
     "demVotes": 20144,
-    "repVotes": 13935,
-    "othVotes": 466,
-    "totalVotes": 34545,
+    "repVotes": 12303,
+    "othVotes": 81,
+    "totalVotes": 32528,
     "candidates": [
      {
       "name": "Rip Sullivan",
@@ -127,17 +127,6 @@
       "name": "Kristin Hoffman",
       "party": "R",
       "votes": 12303
-     },
-     {
-      "name": "Jed Arnold",
-      "party": "R",
-      "votes": 1632,
-      "winner": true
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 385
      },
      {
       "name": "Write-in",
@@ -551,10 +540,11 @@
     ]
    },
    "24": {
-    "demVotes": 18456,
-    "repVotes": 6425,
-    "othVotes": 1495,
-    "totalVotes": 26376,
+    "demVotes": 14614,
+    "repVotes": 0,
+    "othVotes": 1475,
+    "totalVotes": 16089,
+    "uncontested": true,
     "candidates": [
      {
       "name": "Luke Torian",
@@ -564,25 +554,9 @@
       "winner": true
      },
      {
-      "name": "Ellen Campbell",
-      "party": "R",
-      "votes": 6425,
-      "winner": true
-     },
-     {
-      "name": "Jade D. Harris",
-      "party": "D",
-      "votes": 3842
-     },
-     {
       "name": "Write-in",
       "party": "O",
       "votes": 1475
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 20
      }
     ]
    },
@@ -837,10 +811,11 @@
     ]
    },
    "35": {
-    "demVotes": 7679,
-    "repVotes": 25757,
-    "othVotes": 837,
-    "totalVotes": 34273,
+    "demVotes": 0,
+    "repVotes": 22104,
+    "othVotes": 826,
+    "totalVotes": 22930,
+    "uncontested": true,
     "candidates": [
      {
       "name": "Chris Runion",
@@ -850,25 +825,9 @@
       "winner": true
      },
      {
-      "name": "Holly Seibold",
-      "party": "D",
-      "votes": 7679,
-      "winner": true
-     },
-     {
-      "name": "Monique L. Baroudi",
-      "party": "R",
-      "votes": 3653
-     },
-     {
       "name": "Write-in",
       "party": "O",
       "votes": 826
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 11
      }
     ]
    },
@@ -990,9 +949,9 @@
    },
    "41": {
     "demVotes": 12346,
-    "repVotes": 13036,
+    "repVotes": 12529,
     "othVotes": 29,
-    "totalVotes": 25411,
+    "totalVotes": 24904,
     "candidates": [
      {
       "name": "Chris Obenshain",
@@ -1004,17 +963,6 @@
       "name": "Lily Franklin",
       "party": "D",
       "votes": 12346
-     },
-     {
-      "name": "Chris Obenshain",
-      "party": "R",
-      "votes": 294,
-      "winner": true
-     },
-     {
-      "name": "Lowell Bowman",
-      "party": "R",
-      "votes": 213
      },
      {
       "name": "Write-in",
@@ -2132,10 +2080,10 @@
     ]
    },
    "89": {
-    "demVotes": 18654,
-    "repVotes": 16095,
-    "othVotes": 90,
-    "totalVotes": 34839,
+    "demVotes": 14218,
+    "repVotes": 14739,
+    "othVotes": 77,
+    "totalVotes": 29034,
     "candidates": [
      {
       "name": "Baxter Ennis",
@@ -2149,25 +2097,9 @@
       "votes": 14218
      },
      {
-      "name": "Jackie Glass",
-      "party": "D",
-      "votes": 4436,
-      "winner": true
-     },
-     {
-      "name": "Giovanni G. \"Gio\" Dolmo",
-      "party": "R",
-      "votes": 1356
-     },
-     {
       "name": "Write-in",
       "party": "O",
       "votes": 77
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 13
      }
     ]
    },
@@ -2595,10 +2527,10 @@
     "uncontested": true
    },
    "7": {
-    "demVotes": 33717,
-    "repVotes": 62385,
-    "othVotes": 89,
-    "totalVotes": 96191,
+    "demVotes": 13794,
+    "repVotes": 43158,
+    "othVotes": 55,
+    "totalVotes": 57007,
     "candidates": [
      {
       "name": "Bill Stanley",
@@ -2606,17 +2538,6 @@
       "votes": 43158,
       "incumbent": true,
       "winner": true
-     },
-     {
-      "name": "Aaron Rouse",
-      "party": "D",
-      "votes": 19923,
-      "winner": true
-     },
-     {
-      "name": "Kevin Adams",
-      "party": "R",
-      "votes": 19227
      },
      {
       "name": "Deborah \"Renie\" Gates",
@@ -2627,11 +2548,6 @@
       "name": "Write-in",
       "party": "O",
       "votes": 55
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 34
      }
     ]
    },
@@ -2661,10 +2577,11 @@
     ]
    },
    "9": {
-    "demVotes": 13552,
-    "repVotes": 43372,
-    "othVotes": 3391,
-    "totalVotes": 60315,
+    "demVotes": 0,
+    "repVotes": 41877,
+    "othVotes": 3354,
+    "totalVotes": 45231,
+    "uncontested": true,
     "candidates": [
      {
       "name": "Frank Ruff",
@@ -2674,25 +2591,9 @@
       "winner": true
      },
      {
-      "name": "Lamont Bagby",
-      "party": "D",
-      "votes": 13552,
-      "winner": true
-     },
-     {
       "name": "Write-in",
       "party": "O",
       "votes": 3354
-     },
-     {
-      "name": "Steve Imholt",
-      "party": "R",
-      "votes": 1495
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 37
      }
     ]
    },
@@ -3382,10 +3283,10 @@
     ]
    },
    "38": {
-    "demVotes": 53252,
-    "repVotes": 39842,
-    "othVotes": 239,
-    "totalVotes": 93333,
+    "demVotes": 47623,
+    "repVotes": 21742,
+    "othVotes": 200,
+    "totalVotes": 69565,
     "candidates": [
      {
       "name": "Jennifer Boysko",
@@ -3400,25 +3301,9 @@
       "votes": 21742
      },
      {
-      "name": "Travis Hackworth",
-      "party": "R",
-      "votes": 18100,
-      "winner": true
-     },
-     {
-      "name": "Laurie A. Buchwald",
-      "party": "D",
-      "votes": 5629
-     },
-     {
       "name": "Write-in",
       "party": "O",
       "votes": 200
-     },
-     {
-      "name": "Write-in",
-      "party": "O",
-      "votes": 39
      }
     ]
    },

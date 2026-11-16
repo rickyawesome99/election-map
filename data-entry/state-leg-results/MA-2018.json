@@ -3168,11 +3168,11 @@
      }
     ]
    },
-   "Hampden and Hampshire": {
+   "First Hampden and Hampshire": {
     "demVotes": 51633,
-    "repVotes": 45300,
+    "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 96933,
+    "totalVotes": 51633,
     "uncontested": true,
     "candidates": [
      {
@@ -3181,7 +3181,16 @@
       "votes": 51633,
       "incumbent": true,
       "winner": true
-     },
+     }
+    ]
+   },
+   "Second Hampden and Hampshire": {
+    "demVotes": 0,
+    "repVotes": 45300,
+    "othVotes": 0,
+    "totalVotes": 45300,
+    "uncontested": true,
+    "candidates": [
      {
       "name": "Donald F. Humason Jr.",
       "party": "R",
@@ -3191,11 +3200,11 @@
      }
     ]
    },
-   "Middlesex and Norfolk": {
-    "demVotes": 115074,
+   "First Middlesex and Norfolk": {
+    "demVotes": 60727,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 115074,
+    "totalVotes": 60727,
     "uncontested": true,
     "candidates": [
      {
@@ -3204,7 +3213,16 @@
       "votes": 60727,
       "incumbent": true,
       "winner": true
-     },
+     }
+    ]
+   },
+   "Second Middlesex and Norfolk": {
+    "demVotes": 54347,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 54347,
+    "uncontested": true,
+    "candidates": [
      {
       "name": "Karen E. Spilka",
       "party": "D",
@@ -3230,24 +3248,33 @@
      }
     ]
    },
-   "Suffolk and Middlesex": {
-    "demVotes": 95677,
+   "First Suffolk and Middlesex": {
+    "demVotes": 44854,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 95677,
+    "totalVotes": 44854,
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph A. Boncore",
+      "party": "D",
+      "votes": 44854,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
+   },
+   "Second Suffolk and Middlesex": {
+    "demVotes": 50823,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 50823,
     "uncontested": true,
     "candidates": [
      {
       "name": "William N. Brownsberger",
       "party": "D",
       "votes": 50823,
-      "incumbent": true,
-      "winner": true
-     },
-     {
-      "name": "Joseph A. Boncore",
-      "party": "D",
-      "votes": 44854,
       "incumbent": true,
       "winner": true
      }

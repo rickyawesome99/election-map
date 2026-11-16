@@ -7,6 +7,7 @@ import { countySenateData } from "@/lib/locked2026CountyData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { countyHouseData } from "@/data/countyHouseData";
 import { houseDistrictInfo } from "@/data/forecastData";
+import { housePastCsvAtLock } from "@/lib/locked2026HousePast";
 import { raceCalendar } from "@/data/raceCalendar";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { pastElectionHref } from "@/lib/pastElections";
@@ -191,7 +192,7 @@ export function turnoutRaw(): Raw {
   }
 
   const houseDistricts: HouseDistrictRace[] = [];
-  for (const r of parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8"))) {
+  for (const r of parseCsv(housePastCsvAtLock())) { // the certified House file as at the 2026 lock
     const year = Number(r.year);
     const key = frKey("house", r.state_abbr, year, r.district_name);
     const fr = firstRound.get(key);

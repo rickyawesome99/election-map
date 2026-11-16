@@ -2440,7 +2440,6 @@
     "repVotes": 10908,
     "othVotes": 2443,
     "totalVotes": 25734,
-    "uncontested": true,
     "candidates": [
      {
       "name": "Jane Kitchel",
@@ -2548,10 +2547,9 @@
    },
    "chittenden": {
     "demVotes": 232217,
-    "repVotes": 0,
-    "othVotes": 0,
-    "totalVotes": 232217,
-    "uncontested": true,
+    "repVotes": 25346,
+    "othVotes": 17021,
+    "totalVotes": 274584,
     "candidates": [
      {
       "name": "Tim Ashe",
@@ -2592,6 +2590,16 @@
       "party": "D",
       "votes": 31192,
       "winner": true
+     },
+     {
+      "name": "John C. Gifford",
+      "party": "R",
+      "votes": 25346
+     },
+     {
+      "name": "Tom Licata",
+      "party": "O",
+      "votes": 17021
      }
     ]
    },

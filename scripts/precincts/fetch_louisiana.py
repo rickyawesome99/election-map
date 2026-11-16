@@ -46,6 +46,9 @@ def get(date: str, path: str) -> dict | None:
         cache.parent.mkdir(parents=True, exist_ok=True)
         out = subprocess.run(["curl", "-s", "-A", "Mozilla/5.0 (precinct pipeline)", "--max-time", "60", BASE + f"{date}/{path}"], capture_output=True, text=True).stdout
         time.sleep(0.15)
+        if not out.lstrip().startswith("{"):  # one retry: a failed download cached as empty once dropped a whole parish (Webster, Senate 36, 2023)
+            time.sleep(2)
+            out = subprocess.run(["curl", "-s", "-A", "Mozilla/5.0 (precinct pipeline)", "--max-time", "60", BASE + f"{date}/{path}"], capture_output=True, text=True).stdout
         cache.write_text(out if out.lstrip().startswith("{") else "null")
     try:
         return json.loads(cache.read_text())

@@ -22,3 +22,33 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source,status,geom
 2022,IL,3,,,,,,,,absent,,
 2022,IL,4,,,,,,,,absent,,
 2022,IL,6,,,,,,,,absent,,
+2016,CA,24,06079,San Luis Obispo,62727,65503,0,128230,aggregate,close,yes,no
+2016,CA,24,06083,Santa Barbara,98887,74423,0,173310,aggregate,close,yes,no
+2016,CA,24,06111,Ventura,2429,1647,0,4076,aggregate,close,yes,yes
+2024,NJ,3,34005,Burlington,120027,83808,3695,207530,aggregate,unverified,yes,yes
+2024,NJ,3,34021,Mercer,35836,23925,1825,61586,aggregate,unverified,yes,yes
+2024,NJ,3,34025,Monmouth,35445,52931,2335,90711,aggregate,unverified,yes,yes
+2024,NJ,5,34003,Bergen,196798,126340,7028,330166,aggregate,unverified,yes,yes
+2024,NJ,5,34031,Passaic,13322,17540,751,31613,aggregate,unverified,yes,yes
+2024,NJ,5,34037,Sussex,18220,27789,1289,47298,aggregate,unverified,yes,yes
+2024,NJ,7,34019,Hunterdon,34744,42257,1448,78449,medsl,close,yes,no
+2024,NJ,7,34027,Morris,28768,35812,1263,65843,medsl,close,yes,yes
+2024,NJ,7,34035,Somerset,42416,44577,1732,88725,medsl,close,yes,yes
+2024,NJ,7,34037,Sussex,12827,20483,1086,34396,medsl,close,yes,yes
+2024,NJ,7,34039,Union,57269,44040,1554,102863,medsl,close,yes,yes
+2024,NJ,7,34041,Warren,22261,35290,1263,58814,medsl,close,yes,no
+2024,NJ,8,34013,Essex,12852,6751,984,20587,aggregate,close,yes,yes
+2024,NJ,8,34017,Hudson,88618,51375,11169,151162,aggregate,close,yes,yes
+2024,NJ,8,34039,Union,14248,9419,839,24506,aggregate,close,yes,yes
+2024,NJ,9,34003,Bergen,61684,66518,4062,132264,aggregate,unverified,yes,yes
+2024,NJ,9,34017,Hudson,9287,7958,649,17894,aggregate,unverified,yes,yes
+2024,NJ,9,34031,Passaic,63722,47544,4369,115635,aggregate,unverified,yes,yes
+2024,NJ,10,34013,Essex,105687,20359,3819,129865,aggregate,close,yes,yes
+2024,NJ,10,34017,Hudson,26950,7469,2567,36986,aggregate,close,yes,yes
+2024,NJ,10,34039,Union,48123,25992,1920,76035,aggregate,close,yes,yes
+2024,NJ,12,34021,Mercer,41422,11738,791,53951,aggregate,unverified,yes,yes
+2024,NJ,12,34023,Middlesex,79902,67858,4544,152304,aggregate,unverified,yes,yes
+2024,NJ,12,34035,Somerset,50435,30221,2142,82798,aggregate,unverified,yes,yes
+2024,NJ,12,34039,Union,10692,1942,289,12923,aggregate,unverified,yes,yes
+2024,NY,25,36055,Monroe,155327,92255,0,247582,aggregate,unverified,yes,no
+2024,NY,25,36069,Ontario,5617,5210,8,10835,aggregate,unverified,yes,yes

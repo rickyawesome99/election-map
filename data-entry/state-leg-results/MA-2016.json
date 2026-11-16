@@ -3109,11 +3109,11 @@
      }
     ]
    },
-   "Hampden and Hampshire": {
-    "demVotes": 73887,
-    "repVotes": 78285,
+   "First Hampden and Hampshire": {
+    "demVotes": 44602,
+    "repVotes": 35188,
     "othVotes": 0,
-    "totalVotes": 152172,
+    "totalVotes": 79790,
     "candidates": [
      {
       "name": "Eric P. Lesser",
@@ -3123,16 +3123,24 @@
       "winner": true
      },
      {
+      "name": "James Harrington",
+      "party": "R",
+      "votes": 35188
+     }
+    ]
+   },
+   "Second Hampden and Hampshire": {
+    "demVotes": 29285,
+    "repVotes": 43097,
+    "othVotes": 0,
+    "totalVotes": 72382,
+    "candidates": [
+     {
       "name": "Donald F. Humason Jr.",
       "party": "R",
       "votes": 43097,
       "incumbent": true,
       "winner": true
-     },
-     {
-      "name": "James Harrington",
-      "party": "R",
-      "votes": 35188
      },
      {
       "name": "Jerome Parker-O'Grady",
@@ -3141,11 +3149,11 @@
      }
     ]
    },
-   "Middlesex and Norfolk": {
-    "demVotes": 123898,
+   "First Middlesex and Norfolk": {
+    "demVotes": 62668,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 123898,
+    "totalVotes": 62668,
     "uncontested": true,
     "candidates": [
      {
@@ -3154,7 +3162,16 @@
       "votes": 62668,
       "incumbent": true,
       "winner": true
-     },
+     }
+    ]
+   },
+   "Second Middlesex and Norfolk": {
+    "demVotes": 61230,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 61230,
+    "uncontested": true,
+    "candidates": [
      {
       "name": "Karen E. Spilka",
       "party": "D",
@@ -3180,11 +3197,26 @@
      }
     ]
    },
-   "Suffolk and Middlesex": {
-    "demVotes": 109418,
+   "First Suffolk and Middlesex": {
+    "demVotes": 53407,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 109418,
+    "totalVotes": 53407,
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph A. Boncore",
+      "party": "D",
+      "votes": 53407,
+      "winner": true
+     }
+    ]
+   },
+   "Second Suffolk and Middlesex": {
+    "demVotes": 56011,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 56011,
     "uncontested": true,
     "candidates": [
      {
@@ -3192,12 +3224,6 @@
       "party": "D",
       "votes": 56011,
       "incumbent": true,
-      "winner": true
-     },
-     {
-      "name": "Joseph A. Boncore",
-      "party": "D",
-      "votes": 53407,
       "winner": true
      }
     ]

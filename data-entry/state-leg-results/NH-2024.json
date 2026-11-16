@@ -1142,21 +1142,21 @@
     ]
    },
    "GR7": {
-    "demVotes": 1056,
-    "repVotes": 1028,
+    "demVotes": 1057,
+    "repVotes": 1034,
     "othVotes": 1,
-    "totalVotes": 2085,
+    "totalVotes": 2092,
     "candidates": [
      {
       "name": "Janet Marie Lucas",
       "party": "D",
-      "votes": 1056,
+      "votes": 1057,
       "winner": true
      },
      {
       "name": "Jon A Gablinske",
       "party": "R",
-      "votes": 1028
+      "votes": 1034
      },
      {
       "name": "Write-In",
@@ -1623,13 +1623,13 @@
      {
       "name": "William Dolan",
       "party": "D",
-      "votes": 3201,
+      "votes": 3204,
       "winner": true
      },
      {
       "name": "Santosh Salvi",
       "party": "D",
-      "votes": 3106
+      "votes": 3103
      },
      {
       "name": "Sanjeev K Manohar",
@@ -2378,10 +2378,10 @@
     ]
    },
    "ST4": {
-    "demVotes": 12393,
-    "repVotes": 12579,
+    "demVotes": 12392,
+    "repVotes": 12583,
     "othVotes": 4,
-    "totalVotes": 24976,
+    "totalVotes": 24979,
     "candidates": [
      {
       "name": "Len Turcotte",
@@ -2393,26 +2393,26 @@
      {
       "name": "Cassandra Levesque",
       "party": "D",
-      "votes": 4288,
+      "votes": 4286,
       "winner": true,
       "incumbent": true
      },
      {
       "name": "Heath Howard",
       "party": "D",
-      "votes": 4199,
+      "votes": 4200,
       "winner": true
      },
      {
       "name": "Kurt Wuelper",
       "party": "R",
-      "votes": 4183,
+      "votes": 4184,
       "incumbent": true
      },
      {
       "name": "Seamus Casey",
       "party": "R",
-      "votes": 4047
+      "votes": 4050
      },
      {
       "name": "Adam Mulholland",
@@ -2663,21 +2663,21 @@
     ]
    },
    "SU5": {
-    "demVotes": 1669,
-    "repVotes": 1683,
+    "demVotes": 1670,
+    "repVotes": 1686,
     "othVotes": 3,
-    "totalVotes": 3355,
+    "totalVotes": 3359,
     "candidates": [
      {
       "name": "George C Grant",
       "party": "R",
-      "votes": 1683,
+      "votes": 1686,
       "winner": true
      },
      {
       "name": "Linda Tanner",
       "party": "D",
-      "votes": 1669,
+      "votes": 1670,
       "incumbent": true
      },
      {
@@ -3567,8 +3567,8 @@
    },
    "HI15": {
     "demVotes": 4149,
-    "repVotes": 2656,
-    "othVotes": 2607,
+    "repVotes": 5261,
+    "othVotes": 2,
     "totalVotes": 9412,
     "candidates": [
      {
@@ -3579,8 +3579,8 @@
       "incumbent": true
      },
      {
-      "name": "Mark Proulxr",
-      "party": "O",
+      "name": "Mark Proulx",
+      "party": "R",
       "votes": 2605,
       "winner": true
      },
@@ -3634,15 +3634,15 @@
     ]
    },
    "HI17": {
-    "demVotes": 5101,
-    "repVotes": 2330,
+    "demVotes": 5104,
+    "repVotes": 2332,
     "othVotes": 15,
-    "totalVotes": 7446,
+    "totalVotes": 7451,
     "candidates": [
      {
       "name": "Linda Disilvestro",
       "party": "D",
-      "votes": 2733,
+      "votes": 2736,
       "winner": true,
       "incumbent": true
      },
@@ -3655,7 +3655,7 @@
      {
       "name": "Ben Prescott",
       "party": "R",
-      "votes": 2330
+      "votes": 2332
      },
      {
       "name": "Write-In",
@@ -3665,21 +3665,21 @@
     ]
    },
    "HI18": {
-    "demVotes": 4336,
-    "repVotes": 3982,
+    "demVotes": 4337,
+    "repVotes": 3984,
     "othVotes": 2,
-    "totalVotes": 8320,
+    "totalVotes": 8323,
     "candidates": [
      {
       "name": "Jessica Grill",
       "party": "D",
-      "votes": 2295,
+      "votes": 2296,
       "winner": true
      },
      {
       "name": "Steven Kesselring",
       "party": "R",
-      "votes": 2048,
+      "votes": 2050,
       "winner": true
      },
      {
@@ -3865,29 +3865,29 @@
     ]
    },
    "HI24": {
-    "demVotes": 3425,
-    "repVotes": 1621,
+    "demVotes": 3432,
+    "repVotes": 1632,
     "othVotes": 14,
-    "totalVotes": 5060,
+    "totalVotes": 5078,
     "candidates": [
      {
       "name": "Chris Herbert",
       "party": "D",
-      "votes": 1763,
+      "votes": 1767,
       "winner": true,
       "incumbent": true
      },
      {
       "name": "Donald J Bouchard",
       "party": "D",
-      "votes": 1662,
+      "votes": 1665,
       "winner": true,
       "incumbent": true
      },
      {
       "name": "Dennis M Demars",
       "party": "R",
-      "votes": 1621
+      "votes": 1632
      },
      {
       "name": "Write-In",

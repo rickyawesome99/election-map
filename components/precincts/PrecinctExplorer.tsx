@@ -9,7 +9,8 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
-import { RATING_SCALE, OFFICES, OFFICE_LABEL, marginOf, type Office, type StateIndex, type StateResults, type StateShell } from "./types";
+import { RATING_SCALE, OFFICES, OFFICE_LABEL, marginOf, type Office, type StateDemographics, type StateIndex, type StateResults, type StateShell } from "./types";
+import PrecinctDemographics from "./PrecinctDemographics";
 
 const NationalMap = dynamic(() => import("./NationalMap"), { ssr: false, loading: () => <div style={{ aspectRatio: "975 / 610" }} /> });
 const PrecinctMap = dynamic(() => import("./PrecinctMap"), { ssr: false, loading: () => <div style={{ height: "100%" }} /> });
@@ -49,6 +50,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
   const [resetNonce, setResetNonce] = useState(0);
   const [data, setData] = useState<Map<string, StateResults | null>>(() => new Map()); // keyed "year|ST"
   const [indexes, setIndexes] = useState<Map<string, StateIndex | null>>(() => new Map()); // keyed ST
+  const [demographics, setDemographics] = useState<Map<string, StateDemographics | null>>(() => new Map()); // keyed ST
   const byAbbr = useMemo(() => new Map(states.map((s) => [s.abbr, s])), [states]);
 
   const openState = useCallback((abbr: string | null) => {
@@ -87,6 +89,14 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
       .then((index) => { if (live) setIndexes((prev) => new Map(prev).set(current, index)); });
     return () => { live = false; };
   }, [current, indexes]);
+  // Census profile for the open state: fetched the first time a precinct is picked there.
+  useEffect(() => {
+    if (!current || !wantAll || demographics.has(current)) return;
+    let live = true;
+    fetch(`/precincts/demographics/${current}.json`).then((r) => (r.ok ? (r.json() as Promise<StateDemographics>) : null)).catch(() => null)
+      .then((d) => { if (live) setDemographics((prev) => new Map(prev).set(current, d)); });
+    return () => { live = false; };
+  }, [current, wantAll, demographics]);
   useEffect(() => {
     if (!current) return;
     const need = (wantAll ? [year, ...stateYears] : [year]).filter((y, n, a) => a.indexOf(y) === n && !data.has(`${y}|${current}`));
@@ -326,12 +336,22 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                     <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>
                       {historyLoading ? "Loading earlier years… " : ""}
                       Every year is shown on this precinct&rsquo;s 2024 lines. Click a margin to put that race on the map.
-                      {anyEst ? " A margin marked ~ is an estimate: that year&rsquo;s votes were counted on different lines or for a larger area, and were divided among precincts." : ""}
+                      {anyEst ? " A margin marked ~ is an estimate: that year’s votes were counted on different lines or for a larger area, and were divided among precincts." : ""}
                     </p>
                   </div>
                 );
               })()}
-              <Link prefetch={false} href={`/states/${shell.abbr.toLowerCase()}`} className="mt-2 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Go to {shell.name} →</Link>
+              {(() => {
+                const demo = demographics.get(shell.abbr);
+                if (demo === null) return null; // no census file for this state
+                return (
+                  <div id="precinct-demographics">
+                    <div className="mt-6"><SectionHead>Who lives here</SectionHead></div>
+                    {demo ? <PrecinctDemographics demo={demo} i={i} /> : <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Loading census figures…</p>}
+                  </div>
+                );
+              })()}
+              <Link prefetch={false} href={`/states/${shell.abbr.toLowerCase()}`} className="mt-4 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Go to {shell.name} →</Link>
             </div>
           ) : shell ? (
             <div>

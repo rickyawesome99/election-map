@@ -1633,21 +1633,21 @@
     ]
    },
    "86": {
-    "demVotes": 0,
-    "repVotes": 0,
-    "othVotes": 40417,
+    "demVotes": 24228,
+    "repVotes": 16189,
+    "othVotes": 0,
     "totalVotes": 40417,
     "candidates": [
      {
       "name": "Lawrence \"Larry\" Walsh Jr.",
-      "party": "O",
+      "party": "D",
       "votes": 24228,
       "winner": true,
       "incumbent": true
      },
      {
       "name": "Jim Lanham",
-      "party": "O",
+      "party": "R",
       "votes": 16189
      }
     ]
@@ -1891,14 +1891,14 @@
     ]
    },
    "98": {
-    "demVotes": 0,
+    "demVotes": 36454,
     "repVotes": 0,
-    "othVotes": 36454,
+    "othVotes": 0,
     "totalVotes": 36454,
     "candidates": [
      {
       "name": "Natalie A Manley",
-      "party": "O",
+      "party": "D",
       "votes": 36454,
       "winner": true,
       "incumbent": true

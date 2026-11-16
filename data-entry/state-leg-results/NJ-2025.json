@@ -68,9 +68,9 @@
    },
    "3": {
     "demVotes": 95504,
-    "repVotes": 89473,
+    "repVotes": 89208,
     "othVotes": 0,
-    "totalVotes": 184977,
+    "totalVotes": 184712,
     "candidates": [
      {
       "name": "Heather Simmons",
@@ -95,53 +95,14 @@
       "name": "Lawrence Moore",
       "party": "R",
       "votes": 44385
-     },
-     {
-      "name": "Lawrence Moore",
-      "party": "R",
-      "votes": 58,
-      "winner": true
-     },
-     {
-      "name": "Chris Konawel",
-      "party": "R",
-      "votes": 49,
-      "winner": true
-     },
-     {
-      "name": "Ed Ramsay",
-      "party": "R",
-      "votes": 45,
-      "winner": true
-     },
-     {
-      "name": "Chris Konawel",
-      "party": "R",
-      "votes": 42,
-      "winner": true
-     },
-     {
-      "name": "Beth Sawyer",
-      "party": "R",
-      "votes": 35
-     },
-     {
-      "name": "Lawrence Moore",
-      "party": "R",
-      "votes": 27
-     },
-     {
-      "name": "Beth Sawyer",
-      "party": "R",
-      "votes": 9
      }
     ]
    },
    "4": {
     "demVotes": 104351,
-    "repVotes": 84177,
+    "repVotes": 84067,
     "othVotes": 0,
-    "totalVotes": 188528,
+    "totalVotes": 188418,
     "candidates": [
      {
       "name": "Dan Hutchison",
@@ -166,23 +127,6 @@
       "name": "Jerry McManus",
       "party": "R",
       "votes": 41579
-     },
-     {
-      "name": "Amanda Esposito",
-      "party": "R",
-      "votes": 47,
-      "winner": true
-     },
-     {
-      "name": "Jerry McManus",
-      "party": "R",
-      "votes": 32,
-      "winner": true
-     },
-     {
-      "name": "Barbara McCormick",
-      "party": "R",
-      "votes": 31
      }
     ]
    },
@@ -256,10 +200,10 @@
     ]
    },
    "7": {
-    "demVotes": 123704,
+    "demVotes": 123439,
     "repVotes": 60678,
     "othVotes": 0,
-    "totalVotes": 184382,
+    "totalVotes": 184117,
     "candidates": [
      {
       "name": "Carol A. Murphy",
@@ -284,17 +228,6 @@
       "name": "Dione Johnson",
       "party": "R",
       "votes": 30122
-     },
-     {
-      "name": "Balvir Singh",
-      "party": "D",
-      "votes": 172,
-      "winner": true
-     },
-     {
-      "name": "Nicole Gillespie",
-      "party": "D",
-      "votes": 93
      }
     ]
    },
@@ -939,10 +872,10 @@
     ]
    },
    "28": {
-    "demVotes": 95586,
+    "demVotes": 95261,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 95586,
+    "totalVotes": 95261,
     "candidates": [
      {
       "name": "Cleopatra Tucker",
@@ -956,25 +889,6 @@
       "party": "D",
       "votes": 47263,
       "winner": true
-     },
-     {
-      "name": "Chigozie Onyema",
-      "party": "D",
-      "votes": 141,
-      "winner": true
-     },
-     {
-      "name": "Cleopatra Tucker",
-      "party": "D",
-      "votes": 120,
-      "incumbent": true,
-      "winner": true
-     },
-     {
-      "name": "Garnet Hall",
-      "party": "D",
-      "votes": 64,
-      "incumbent": true
      }
     ]
    },
@@ -1167,10 +1081,10 @@
     ]
    },
    "35": {
-    "demVotes": 62004,
+    "demVotes": 61845,
     "repVotes": 23412,
     "othVotes": 0,
-    "totalVotes": 85416,
+    "totalVotes": 85257,
     "candidates": [
      {
       "name": "Kenyatta Stewart",
@@ -1191,20 +1105,9 @@
       "votes": 11831
      },
      {
-      "name": "Rawell Perez-Mu\u00f1oz",
+      "name": "Rawell Perez-Muñoz",
       "party": "R",
       "votes": 11581
-     },
-     {
-      "name": "Al Abdelaziz",
-      "party": "D",
-      "votes": 128,
-      "winner": true
-     },
-     {
-      "name": "Mohamed Khairullah",
-      "party": "D",
-      "votes": 31
      }
     ]
    },
@@ -1274,9 +1177,9 @@
    },
    "38": {
     "demVotes": 90457,
-    "repVotes": 65860,
+    "repVotes": 65618,
     "othVotes": 0,
-    "totalVotes": 156317,
+    "totalVotes": 156075,
     "candidates": [
      {
       "name": "Lisa Swain",
@@ -1301,33 +1204,6 @@
       "name": "Barry Wilkes",
       "party": "R",
       "votes": 32218
-     },
-     {
-      "name": "Robert Kaiser",
-      "party": "R",
-      "votes": 91,
-      "winner": true
-     },
-     {
-      "name": "Barry Wilkes",
-      "party": "R",
-      "votes": 77,
-      "winner": true
-     },
-     {
-      "name": "Trevor Ferrigno",
-      "party": "R",
-      "votes": 54
-     },
-     {
-      "name": "Jerry Taylor",
-      "party": "R",
-      "votes": 20
-     },
-     {
-      "name": "Paul Duggan",
-      "party": "R",
-      "votes": 0
      }
     ]
    },

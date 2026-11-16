@@ -16350,20 +16350,15 @@ export const stateLegResults: Record<
      },
      "96": {
       "demVotes": 4313,
-      "repVotes": 18282,
+      "repVotes": 7838,
       "othVotes": 0,
-      "totalVotes": 22595,
+      "totalVotes": 12151,
       "candidates": [
-       {
-        "name": "Jill Bryant",
-        "party": "R",
-        "votes": 10444,
-        "winner": true
-       },
        {
         "name": "Joshua Bryant",
         "party": "R",
-        "votes": 7838
+        "votes": 7838,
+        "winner": true
        },
        {
         "name": "Jon Comstock",
@@ -126119,10 +126114,11 @@ export const stateLegResults: Record<
       ]
      },
      "2": {
-      "demVotes": 24661,
-      "repVotes": 29425,
-      "othVotes": 0,
-      "totalVotes": 54086,
+      "demVotes": 0,
+      "repVotes": 50100,
+      "othVotes": 4803,
+      "totalVotes": 54903,
+      "uncontested": true,
       "candidates": [
        {
         "name": "Vito Barbieri",
@@ -126133,22 +126129,16 @@ export const stateLegResults: Record<
         "post": "1"
        },
        {
-        "name": "Richard Kohles",
-        "party": "D",
-        "votes": 20675,
+        "name": "Doug Okuniewicz",
+        "party": "R",
+        "votes": 24273,
         "winner": true,
         "post": "2"
        },
        {
-        "name": "Kathy Kahn",
-        "party": "D",
-        "votes": 3986,
-        "post": "1"
-       },
-       {
-        "name": "Doug Okuniewicz",
-        "party": "R",
-        "votes": 3598,
+        "name": "Jennifer Luoma",
+        "party": "O",
+        "votes": 4803,
         "post": "2"
        }
       ]
@@ -144210,21 +144200,21 @@ export const stateLegResults: Record<
       ]
      },
      "86": {
-      "demVotes": 0,
-      "repVotes": 0,
-      "othVotes": 40417,
+      "demVotes": 24228,
+      "repVotes": 16189,
+      "othVotes": 0,
       "totalVotes": 40417,
       "candidates": [
        {
         "name": "Lawrence \"Larry\" Walsh Jr.",
-        "party": "O",
+        "party": "D",
         "votes": 24228,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Jim Lanham",
-        "party": "O",
+        "party": "R",
         "votes": 16189
        }
       ]
@@ -144468,14 +144458,14 @@ export const stateLegResults: Record<
       ]
      },
      "98": {
-      "demVotes": 0,
+      "demVotes": 36454,
       "repVotes": 0,
-      "othVotes": 36454,
+      "othVotes": 0,
       "totalVotes": 36454,
       "candidates": [
        {
         "name": "Natalie A Manley",
-        "party": "O",
+        "party": "D",
         "votes": 36454,
         "winner": true,
         "incumbent": true
@@ -188914,11 +188904,11 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Hampden and Hampshire": {
-      "demVotes": 73887,
-      "repVotes": 78285,
+     "First Hampden and Hampshire": {
+      "demVotes": 44602,
+      "repVotes": 35188,
       "othVotes": 0,
-      "totalVotes": 152172,
+      "totalVotes": 79790,
       "candidates": [
        {
         "name": "Eric P. Lesser",
@@ -188928,16 +188918,24 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
+        "name": "James Harrington",
+        "party": "R",
+        "votes": 35188
+       }
+      ]
+     },
+     "Second Hampden and Hampshire": {
+      "demVotes": 29285,
+      "repVotes": 43097,
+      "othVotes": 0,
+      "totalVotes": 72382,
+      "candidates": [
+       {
         "name": "Donald F. Humason Jr.",
         "party": "R",
         "votes": 43097,
         "incumbent": true,
         "winner": true
-       },
-       {
-        "name": "James Harrington",
-        "party": "R",
-        "votes": 35188
        },
        {
         "name": "Jerome Parker-O'Grady",
@@ -188946,11 +188944,11 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Middlesex and Norfolk": {
-      "demVotes": 123898,
+     "First Middlesex and Norfolk": {
+      "demVotes": 62668,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 123898,
+      "totalVotes": 62668,
       "uncontested": true,
       "candidates": [
        {
@@ -188959,7 +188957,16 @@ export const stateLegResults: Record<
         "votes": 62668,
         "incumbent": true,
         "winner": true
-       },
+       }
+      ]
+     },
+     "Second Middlesex and Norfolk": {
+      "demVotes": 61230,
+      "repVotes": 0,
+      "othVotes": 0,
+      "totalVotes": 61230,
+      "uncontested": true,
+      "candidates": [
        {
         "name": "Karen E. Spilka",
         "party": "D",
@@ -188985,11 +188992,26 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Suffolk and Middlesex": {
-      "demVotes": 109418,
+     "First Suffolk and Middlesex": {
+      "demVotes": 53407,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 109418,
+      "totalVotes": 53407,
+      "uncontested": true,
+      "candidates": [
+       {
+        "name": "Joseph A. Boncore",
+        "party": "D",
+        "votes": 53407,
+        "winner": true
+       }
+      ]
+     },
+     "Second Suffolk and Middlesex": {
+      "demVotes": 56011,
+      "repVotes": 0,
+      "othVotes": 0,
+      "totalVotes": 56011,
       "uncontested": true,
       "candidates": [
        {
@@ -188997,12 +189019,6 @@ export const stateLegResults: Record<
         "party": "D",
         "votes": 56011,
         "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Joseph A. Boncore",
-        "party": "D",
-        "votes": 53407,
         "winner": true
        }
       ]
@@ -192399,11 +192415,11 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Hampden and Hampshire": {
+     "First Hampden and Hampshire": {
       "demVotes": 51633,
-      "repVotes": 45300,
+      "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 96933,
+      "totalVotes": 51633,
       "uncontested": true,
       "candidates": [
        {
@@ -192412,7 +192428,16 @@ export const stateLegResults: Record<
         "votes": 51633,
         "incumbent": true,
         "winner": true
-       },
+       }
+      ]
+     },
+     "Second Hampden and Hampshire": {
+      "demVotes": 0,
+      "repVotes": 45300,
+      "othVotes": 0,
+      "totalVotes": 45300,
+      "uncontested": true,
+      "candidates": [
        {
         "name": "Donald F. Humason Jr.",
         "party": "R",
@@ -192422,11 +192447,11 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Middlesex and Norfolk": {
-      "demVotes": 115074,
+     "First Middlesex and Norfolk": {
+      "demVotes": 60727,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 115074,
+      "totalVotes": 60727,
       "uncontested": true,
       "candidates": [
        {
@@ -192435,7 +192460,16 @@ export const stateLegResults: Record<
         "votes": 60727,
         "incumbent": true,
         "winner": true
-       },
+       }
+      ]
+     },
+     "Second Middlesex and Norfolk": {
+      "demVotes": 54347,
+      "repVotes": 0,
+      "othVotes": 0,
+      "totalVotes": 54347,
+      "uncontested": true,
+      "candidates": [
        {
         "name": "Karen E. Spilka",
         "party": "D",
@@ -192461,24 +192495,33 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Suffolk and Middlesex": {
-      "demVotes": 95677,
+     "First Suffolk and Middlesex": {
+      "demVotes": 44854,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 95677,
+      "totalVotes": 44854,
+      "uncontested": true,
+      "candidates": [
+       {
+        "name": "Joseph A. Boncore",
+        "party": "D",
+        "votes": 44854,
+        "incumbent": true,
+        "winner": true
+       }
+      ]
+     },
+     "Second Suffolk and Middlesex": {
+      "demVotes": 50823,
+      "repVotes": 0,
+      "othVotes": 0,
+      "totalVotes": 50823,
       "uncontested": true,
       "candidates": [
        {
         "name": "William N. Brownsberger",
         "party": "D",
         "votes": 50823,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Joseph A. Boncore",
-        "party": "D",
-        "votes": 44854,
         "incumbent": true,
         "winner": true
        }
@@ -195794,11 +195837,12 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Hampden and Hampshire": {
-      "demVotes": 117044,
-      "repVotes": 28078,
+     "First Hampden and Hampshire": {
+      "demVotes": 66944,
+      "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 145122,
+      "totalVotes": 66944,
+      "uncontested": true,
       "candidates": [
        {
         "name": "Eric P. Lesser",
@@ -195806,7 +195850,15 @@ export const stateLegResults: Record<
         "votes": 66944,
         "incumbent": true,
         "winner": true
-       },
+       }
+      ]
+     },
+     "Second Hampden and Hampshire": {
+      "demVotes": 50100,
+      "repVotes": 28078,
+      "othVotes": 0,
+      "totalVotes": 78178,
+      "candidates": [
        {
         "name": "John C. Velis",
         "party": "D",
@@ -195820,24 +195872,33 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Middlesex and Norfolk": {
-      "demVotes": 141090,
+     "First Middlesex and Norfolk": {
+      "demVotes": 70430,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 141090,
+      "totalVotes": 70430,
+      "uncontested": true,
+      "candidates": [
+       {
+        "name": "Cynthia Stone Creem",
+        "party": "D",
+        "votes": 70430,
+        "incumbent": true,
+        "winner": true
+       }
+      ]
+     },
+     "Second Middlesex and Norfolk": {
+      "demVotes": 70660,
+      "repVotes": 0,
+      "othVotes": 0,
+      "totalVotes": 70660,
       "uncontested": true,
       "candidates": [
        {
         "name": "Karen E. Spilka",
         "party": "D",
         "votes": 70660,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Cynthia Stone Creem",
-        "party": "D",
-        "votes": 70430,
         "incumbent": true,
         "winner": true
        }
@@ -195859,24 +195920,33 @@ export const stateLegResults: Record<
        }
       ]
      },
-     "Suffolk and Middlesex": {
-      "demVotes": 118026,
+     "First Suffolk and Middlesex": {
+      "demVotes": 57744,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 118026,
+      "totalVotes": 57744,
+      "uncontested": true,
+      "candidates": [
+       {
+        "name": "Joseph A. Boncore",
+        "party": "D",
+        "votes": 57744,
+        "incumbent": true,
+        "winner": true
+       }
+      ]
+     },
+     "Second Suffolk and Middlesex": {
+      "demVotes": 60282,
+      "repVotes": 0,
+      "othVotes": 0,
+      "totalVotes": 60282,
       "uncontested": true,
       "candidates": [
        {
         "name": "William N. Brownsberger",
         "party": "D",
         "votes": 60282,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Joseph A. Boncore",
-        "party": "D",
-        "votes": 57744,
         "incumbent": true,
         "winner": true
        }
@@ -277467,10 +277537,23 @@ export const stateLegResults: Record<
      },
      "50": {
       "demVotes": 0,
-      "repVotes": 7054,
+      "repVotes": 2606,
       "othVotes": 0,
-      "totalVotes": 7054,
-      "uncontested": true
+      "totalVotes": 2606,
+      "uncontested": true,
+      "candidates": [
+       {
+        "name": "Scott DeLano",
+        "party": "R",
+        "votes": 1468,
+        "winner": true
+       },
+       {
+        "name": "Dixie Newman",
+        "party": "R",
+        "votes": 1138
+       }
+      ]
      },
      "51": {
       "demVotes": 0,
@@ -339829,27 +339912,27 @@ export const stateLegResults: Record<
       ]
      },
      "HI16": {
-      "demVotes": 3442,
-      "repVotes": 3675,
+      "demVotes": 3441,
+      "repVotes": 3727,
       "othVotes": 0,
-      "totalVotes": 7117,
+      "totalVotes": 7168,
       "candidates": [
        {
         "name": "William Infantine",
         "party": "R",
-        "votes": 1877,
+        "votes": 1903,
         "winner": true
        },
        {
         "name": "Maxine Mosley",
         "party": "D",
-        "votes": 1799,
-        "winner": true
+        "votes": 1798
        },
        {
         "name": "Larry Gagne",
         "party": "R",
-        "votes": 1798
+        "votes": 1824,
+        "winner": true
        },
        {
         "name": "Holly Hillhouse",
@@ -342101,15 +342184,21 @@ export const stateLegResults: Record<
       ]
      },
      "RO13": {
-      "demVotes": 27312,
-      "repVotes": 39298,
+      "demVotes": 45701,
+      "repVotes": 55684,
       "othVotes": 0,
-      "totalVotes": 66610,
+      "totalVotes": 101385,
       "candidates": [
        {
         "name": "Bennie C. Nelson",
         "party": "R",
         "votes": 5950,
+        "winner": true
+       },
+       {
+        "name": "David Love",
+        "party": "R",
+        "votes": 5682,
         "winner": true
        },
        {
@@ -342149,22 +342238,46 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
+        "name": "Erica Layon",
+        "party": "R",
+        "votes": 5364,
+        "winner": true
+       },
+       {
+        "name": "David Milz",
+        "party": "R",
+        "votes": 5340,
+        "winner": true
+       },
+       {
+        "name": "Elizabeth Greenberg",
+        "party": "D",
+        "votes": 4868
+       },
+       {
         "name": "Ellen Gallo",
         "party": "D",
-        "votes": 4851,
-        "winner": true
+        "votes": 4851
        },
        {
         "name": "Craig Cunningham",
         "party": "D",
-        "votes": 4771,
-        "winner": true
+        "votes": 4771
+       },
+       {
+        "name": "Gaskill",
+        "party": "D",
+        "votes": 4652
        },
        {
         "name": "Diana West",
         "party": "D",
-        "votes": 4614,
-        "winner": true
+        "votes": 4614
+       },
+       {
+        "name": "Michelle Moge",
+        "party": "D",
+        "votes": 4614
        },
        {
         "name": "Amy B. Dattner-Levy",
@@ -342175,6 +342288,11 @@ export const stateLegResults: Record<
         "name": "Paul Doolittle",
         "party": "D",
         "votes": 4497
+       },
+       {
+        "name": "Mogill",
+        "party": "D",
+        "votes": 4255
        },
        {
         "name": "Silke Evdokimov",
@@ -342259,10 +342377,10 @@ export const stateLegResults: Record<
       ]
      },
      "RO16": {
-      "demVotes": 0,
+      "demVotes": 33520,
       "repVotes": 40111,
       "othVotes": 0,
-      "totalVotes": 40111,
+      "totalVotes": 73631,
       "candidates": [
        {
         "name": "David C. Lundgren",
@@ -342307,12 +342425,46 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
+        "name": "Combes",
+        "party": "D",
+        "votes": 5106
+       },
+       {
+        "name": "Fenn",
+        "party": "D",
+        "votes": 4997
+       },
+       {
+        "name": "Green",
+        "party": "D",
+        "votes": 4775
+       },
+       {
+        "name": "Hites",
+        "party": "D",
+        "votes": 4718
+       },
+       {
+        "name": "Siekmann",
+        "party": "D",
+        "votes": 4704
+       },
+       {
+        "name": "Warner",
+        "party": "D",
+        "votes": 4677
+       },
+       {
+        "name": "Killey",
+        "party": "D",
+        "votes": 4543
+       },
+       {
         "name": "Write-in",
         "party": "O",
         "votes": 0
        }
-      ],
-      "uncontested": true
+      ]
      },
      "RO17": {
       "demVotes": 9382,
@@ -342633,9 +342785,9 @@ export const stateLegResults: Record<
      },
      "RO25": {
       "demVotes": 37125,
-      "repVotes": 58890,
+      "repVotes": 59390,
       "othVotes": 0,
-      "totalVotes": 96015,
+      "totalVotes": 96515,
       "candidates": [
        {
         "name": "Lorie Ball",
@@ -342670,7 +342822,7 @@ export const stateLegResults: Record<
        {
         "name": "Fred Doucette",
         "party": "R",
-        "votes": 6400,
+        "votes": 6900,
         "winner": true
        },
        {
@@ -343261,21 +343413,21 @@ export const stateLegResults: Record<
       ]
      },
      "RO6": {
-      "demVotes": 1214,
-      "repVotes": 1198,
+      "demVotes": 1231,
+      "repVotes": 1208,
       "othVotes": 2,
-      "totalVotes": 2414,
+      "totalVotes": 2441,
       "candidates": [
        {
         "name": "Eric S. Turer",
         "party": "D",
-        "votes": 1214,
+        "votes": 1231,
         "winner": true
        },
        {
         "name": "Melissa A. Litchfield",
         "party": "R",
-        "votes": 1198
+        "votes": 1208
        },
        {
         "name": "Write-in",
@@ -345430,21 +345582,21 @@ export const stateLegResults: Record<
       ]
      },
      "GR7": {
-      "demVotes": 1056,
-      "repVotes": 1028,
+      "demVotes": 1057,
+      "repVotes": 1034,
       "othVotes": 1,
-      "totalVotes": 2085,
+      "totalVotes": 2092,
       "candidates": [
        {
         "name": "Janet Marie Lucas",
         "party": "D",
-        "votes": 1056,
+        "votes": 1057,
         "winner": true
        },
        {
         "name": "Jon A Gablinske",
         "party": "R",
-        "votes": 1028
+        "votes": 1034
        },
        {
         "name": "Write-In",
@@ -345911,13 +346063,13 @@ export const stateLegResults: Record<
        {
         "name": "William Dolan",
         "party": "D",
-        "votes": 3201,
+        "votes": 3204,
         "winner": true
        },
        {
         "name": "Santosh Salvi",
         "party": "D",
-        "votes": 3106
+        "votes": 3103
        },
        {
         "name": "Sanjeev K Manohar",
@@ -346666,10 +346818,10 @@ export const stateLegResults: Record<
       ]
      },
      "ST4": {
-      "demVotes": 12393,
-      "repVotes": 12579,
+      "demVotes": 12392,
+      "repVotes": 12583,
       "othVotes": 4,
-      "totalVotes": 24976,
+      "totalVotes": 24979,
       "candidates": [
        {
         "name": "Len Turcotte",
@@ -346681,26 +346833,26 @@ export const stateLegResults: Record<
        {
         "name": "Cassandra Levesque",
         "party": "D",
-        "votes": 4288,
+        "votes": 4286,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Heath Howard",
         "party": "D",
-        "votes": 4199,
+        "votes": 4200,
         "winner": true
        },
        {
         "name": "Kurt Wuelper",
         "party": "R",
-        "votes": 4183,
+        "votes": 4184,
         "incumbent": true
        },
        {
         "name": "Seamus Casey",
         "party": "R",
-        "votes": 4047
+        "votes": 4050
        },
        {
         "name": "Adam Mulholland",
@@ -346951,21 +347103,21 @@ export const stateLegResults: Record<
       ]
      },
      "SU5": {
-      "demVotes": 1669,
-      "repVotes": 1683,
+      "demVotes": 1670,
+      "repVotes": 1686,
       "othVotes": 3,
-      "totalVotes": 3355,
+      "totalVotes": 3359,
       "candidates": [
        {
         "name": "George C Grant",
         "party": "R",
-        "votes": 1683,
+        "votes": 1686,
         "winner": true
        },
        {
         "name": "Linda Tanner",
         "party": "D",
-        "votes": 1669,
+        "votes": 1670,
         "incumbent": true
        },
        {
@@ -347855,8 +348007,8 @@ export const stateLegResults: Record<
      },
      "HI15": {
       "demVotes": 4149,
-      "repVotes": 2656,
-      "othVotes": 2607,
+      "repVotes": 5261,
+      "othVotes": 2,
       "totalVotes": 9412,
       "candidates": [
        {
@@ -347867,8 +348019,8 @@ export const stateLegResults: Record<
         "incumbent": true
        },
        {
-        "name": "Mark Proulxr",
-        "party": "O",
+        "name": "Mark Proulx",
+        "party": "R",
         "votes": 2605,
         "winner": true
        },
@@ -347922,15 +348074,15 @@ export const stateLegResults: Record<
       ]
      },
      "HI17": {
-      "demVotes": 5101,
-      "repVotes": 2330,
+      "demVotes": 5104,
+      "repVotes": 2332,
       "othVotes": 15,
-      "totalVotes": 7446,
+      "totalVotes": 7451,
       "candidates": [
        {
         "name": "Linda Disilvestro",
         "party": "D",
-        "votes": 2733,
+        "votes": 2736,
         "winner": true,
         "incumbent": true
        },
@@ -347943,7 +348095,7 @@ export const stateLegResults: Record<
        {
         "name": "Ben Prescott",
         "party": "R",
-        "votes": 2330
+        "votes": 2332
        },
        {
         "name": "Write-In",
@@ -347953,21 +348105,21 @@ export const stateLegResults: Record<
       ]
      },
      "HI18": {
-      "demVotes": 4336,
-      "repVotes": 3982,
+      "demVotes": 4337,
+      "repVotes": 3984,
       "othVotes": 2,
-      "totalVotes": 8320,
+      "totalVotes": 8323,
       "candidates": [
        {
         "name": "Jessica Grill",
         "party": "D",
-        "votes": 2295,
+        "votes": 2296,
         "winner": true
        },
        {
         "name": "Steven Kesselring",
         "party": "R",
-        "votes": 2048,
+        "votes": 2050,
         "winner": true
        },
        {
@@ -348153,29 +348305,29 @@ export const stateLegResults: Record<
       ]
      },
      "HI24": {
-      "demVotes": 3425,
-      "repVotes": 1621,
+      "demVotes": 3432,
+      "repVotes": 1632,
       "othVotes": 14,
-      "totalVotes": 5060,
+      "totalVotes": 5078,
       "candidates": [
        {
         "name": "Chris Herbert",
         "party": "D",
-        "votes": 1763,
+        "votes": 1767,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Donald J Bouchard",
         "party": "D",
-        "votes": 1662,
+        "votes": 1665,
         "winner": true,
         "incumbent": true
        },
        {
         "name": "Dennis M Demars",
         "party": "R",
-        "votes": 1621
+        "votes": 1632
        },
        {
         "name": "Write-In",
@@ -357166,6 +357318,26 @@ export const stateLegResults: Record<
    "senate": {
     "source": "Wikipedia district tables",
     "districts": {
+     "1": {
+      "demVotes": 15972,
+      "repVotes": 29186,
+      "othVotes": 0,
+      "totalVotes": 45158,
+      "candidates": [
+       {
+        "name": "Michael Testa",
+        "party": "R",
+        "votes": 29186,
+        "incumbent": true,
+        "winner": true
+       },
+       {
+        "name": "Charles R. LaSpata",
+        "party": "D",
+        "votes": 15972
+       }
+      ]
+     },
      "2": {
       "demVotes": 21045,
       "repVotes": 24516,
@@ -357193,9 +357365,9 @@ export const stateLegResults: Record<
      },
      "3": {
       "demVotes": 32382,
-      "repVotes": 28088,
+      "repVotes": 28018,
       "othVotes": 0,
-      "totalVotes": 60470,
+      "totalVotes": 60400,
       "candidates": [
        {
         "name": "John J. Burzichelli",
@@ -357208,18 +357380,6 @@ export const stateLegResults: Record<
         "party": "R",
         "votes": 28018,
         "incumbent": true
-       },
-       {
-        "name": "Edward Durr",
-        "party": "R",
-        "votes": 41,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Mickey Ostrum",
-        "party": "R",
-        "votes": 29
        }
       ]
      },
@@ -357372,9 +357532,9 @@ export const stateLegResults: Record<
      },
      "11": {
       "demVotes": 34350,
-      "repVotes": 22275,
+      "repVotes": 22172,
       "othVotes": 439,
-      "totalVotes": 57064,
+      "totalVotes": 56961,
       "candidates": [
        {
         "name": "Vin Gopal",
@@ -357392,17 +357552,6 @@ export const stateLegResults: Record<
         "name": "Karen Zaletel",
         "party": "O",
         "votes": 439
-       },
-       {
-        "name": "Steve Dnistrian",
-        "party": "R",
-        "votes": 85,
-        "winner": true
-       },
-       {
-        "name": "Sara Haleva",
-        "party": "R",
-        "votes": 18
        }
       ]
      },
@@ -357657,9 +357806,9 @@ export const stateLegResults: Record<
      },
      "24": {
       "demVotes": 18821,
-      "repVotes": 33698,
+      "repVotes": 33604,
       "othVotes": 0,
-      "totalVotes": 52519,
+      "totalVotes": 52425,
       "candidates": [
        {
         "name": "Parker Space",
@@ -357671,17 +357820,6 @@ export const stateLegResults: Record<
         "name": "Edmund Khanoo",
         "party": "D",
         "votes": 18821
-       },
-       {
-        "name": "Parker Space",
-        "party": "R",
-        "votes": 80,
-        "winner": true
-       },
-       {
-        "name": "Steve Lonegan",
-        "party": "R",
-        "votes": 14
        }
       ]
      },
@@ -357707,9 +357845,9 @@ export const stateLegResults: Record<
      },
      "26": {
       "demVotes": 21571,
-      "repVotes": 28539,
+      "repVotes": 28313,
       "othVotes": 0,
-      "totalVotes": 50110,
+      "totalVotes": 49884,
       "candidates": [
        {
         "name": "Joseph Pennacchio",
@@ -357722,18 +357860,6 @@ export const stateLegResults: Record<
         "name": "Joan Waks",
         "party": "D",
         "votes": 21571
-       },
-       {
-        "name": "Joe Pennacchio",
-        "party": "R",
-        "votes": 174,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Tom Mastrangelo",
-        "party": "R",
-        "votes": 52
        }
       ]
      },
@@ -357975,9 +358101,9 @@ export const stateLegResults: Record<
      },
      "39": {
       "demVotes": 28264,
-      "repVotes": 34706,
+      "repVotes": 34448,
       "othVotes": 0,
-      "totalVotes": 62970,
+      "totalVotes": 62712,
       "candidates": [
        {
         "name": "Holly Schepisi",
@@ -357990,18 +358116,6 @@ export const stateLegResults: Record<
         "name": "Jodi A. Murphy",
         "party": "D",
         "votes": 28264
-       },
-       {
-        "name": "Holly Schepisi",
-        "party": "R",
-        "votes": 189,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Michele LaTour",
-        "party": "R",
-        "votes": 69
        }
       ]
      },
@@ -358122,30 +358236,6 @@ export const stateLegResults: Record<
         "name": "Tom Tedesco",
         "party": "R",
         "votes": 29480
-       },
-       {
-        "name": "Bethanne McCarthy Patrick",
-        "party": "R",
-        "votes": 59,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Tom Tedesco",
-        "party": "R",
-        "votes": 38,
-        "winner": true
-       },
-       {
-        "name": "Beth Sawyer",
-        "party": "R",
-        "votes": 31,
-        "incumbent": true
-       },
-       {
-        "name": "Adam Wingate",
-        "party": "R",
-        "votes": 11
        }
       ]
      },
@@ -358345,25 +358435,6 @@ export const stateLegResults: Record<
         "name": "Barry Bendar",
         "party": "O",
         "votes": 979
-       },
-       {
-        "name": "Brian E. Rumpf",
-        "party": "R",
-        "votes": 96,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Greg Myhre",
-        "party": "R",
-        "votes": 67,
-        "winner": true
-       },
-       {
-        "name": "DiAnne Gove",
-        "party": "R",
-        "votes": 56,
-        "incumbent": true
        }
       ]
      },
@@ -358395,29 +358466,6 @@ export const stateLegResults: Record<
         "name": "John LaMacchia",
         "party": "D",
         "votes": 17958
-       },
-       {
-        "name": "Gregory P. McGuckin",
-        "party": "R",
-        "votes": 63,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Paul Kanitra",
-        "party": "R",
-        "votes": 50,
-        "winner": true
-       },
-       {
-        "name": "Ruthanne Scaturro",
-        "party": "R",
-        "votes": 35
-       },
-       {
-        "name": "Ashley Lamb",
-        "party": "R",
-        "votes": 25
        }
       ]
      },
@@ -358550,43 +358598,6 @@ export const stateLegResults: Record<
         "name": "Skye Gilmartin",
         "party": "R",
         "votes": 22174
-       },
-       {
-        "name": "Rick Carabelli",
-        "party": "D",
-        "votes": 120,
-        "winner": true
-       },
-       {
-        "name": "Tennille McCoy",
-        "party": "D",
-        "votes": 111,
-        "winner": true
-       },
-       {
-        "name": "Wayne P. DeAngelo",
-        "party": "D",
-        "votes": 106,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Wayne P. DeAngelo",
-        "party": "D",
-        "votes": 58,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Tennille McCoy",
-        "party": "D",
-        "votes": 45,
-        "winner": true
-       },
-       {
-        "name": "Rick Carabelli",
-        "party": "D",
-        "votes": 41
        }
       ]
      },
@@ -358898,28 +358909,6 @@ export const stateLegResults: Record<
         "name": "Veronica Fernandez",
         "party": "O",
         "votes": 7184
-       },
-       {
-        "name": "Mike Inganamort",
-        "party": "R",
-        "votes": 78,
-        "winner": true
-       },
-       {
-        "name": "Dawn Fantasia",
-        "party": "R",
-        "votes": 69,
-        "winner": true
-       },
-       {
-        "name": "Jason Sarnoski",
-        "party": "R",
-        "votes": 25
-       },
-       {
-        "name": "Josh Aikens",
-        "party": "R",
-        "votes": 17
        }
       ]
      },
@@ -358984,25 +358973,6 @@ export const stateLegResults: Record<
         "name": "Walter Mielarczyk",
         "party": "D",
         "votes": 20962
-       },
-       {
-        "name": "Brian Bergen",
-        "party": "R",
-        "votes": 200,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Jay Webber",
-        "party": "R",
-        "votes": 165,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "BettyLou DeCroce",
-        "party": "R",
-        "votes": 46
        }
       ]
      },
@@ -359033,17 +359003,6 @@ export const stateLegResults: Record<
         "name": "Michael Mecca Jr.",
         "party": "R",
         "votes": 11732
-       },
-       {
-        "name": "Rosaura Bagolie",
-        "party": "D",
-        "votes": 107,
-        "winner": true
-       },
-       {
-        "name": "Craig A. Stanley",
-        "party": "D",
-        "votes": 59
        }
       ]
      },
@@ -359410,24 +359369,6 @@ export const stateLegResults: Record<
         "name": "Damon Englese",
         "party": "D",
         "votes": 28183
-       },
-       {
-        "name": "Robert Auth",
-        "party": "R",
-        "votes": 216,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "John V. Azzariti",
-        "party": "R",
-        "votes": 159,
-        "winner": true
-       },
-       {
-        "name": "Todd Caliguire",
-        "party": "R",
-        "votes": 109
        }
       ]
      },
@@ -359535,9 +359476,9 @@ export const stateLegResults: Record<
      },
      "3": {
       "demVotes": 95504,
-      "repVotes": 89473,
+      "repVotes": 89208,
       "othVotes": 0,
-      "totalVotes": 184977,
+      "totalVotes": 184712,
       "candidates": [
        {
         "name": "Heather Simmons",
@@ -359562,53 +359503,14 @@ export const stateLegResults: Record<
         "name": "Lawrence Moore",
         "party": "R",
         "votes": 44385
-       },
-       {
-        "name": "Lawrence Moore",
-        "party": "R",
-        "votes": 58,
-        "winner": true
-       },
-       {
-        "name": "Chris Konawel",
-        "party": "R",
-        "votes": 49,
-        "winner": true
-       },
-       {
-        "name": "Ed Ramsay",
-        "party": "R",
-        "votes": 45,
-        "winner": true
-       },
-       {
-        "name": "Chris Konawel",
-        "party": "R",
-        "votes": 42,
-        "winner": true
-       },
-       {
-        "name": "Beth Sawyer",
-        "party": "R",
-        "votes": 35
-       },
-       {
-        "name": "Lawrence Moore",
-        "party": "R",
-        "votes": 27
-       },
-       {
-        "name": "Beth Sawyer",
-        "party": "R",
-        "votes": 9
        }
       ]
      },
      "4": {
       "demVotes": 104351,
-      "repVotes": 84177,
+      "repVotes": 84067,
       "othVotes": 0,
-      "totalVotes": 188528,
+      "totalVotes": 188418,
       "candidates": [
        {
         "name": "Dan Hutchison",
@@ -359633,23 +359535,6 @@ export const stateLegResults: Record<
         "name": "Jerry McManus",
         "party": "R",
         "votes": 41579
-       },
-       {
-        "name": "Amanda Esposito",
-        "party": "R",
-        "votes": 47,
-        "winner": true
-       },
-       {
-        "name": "Jerry McManus",
-        "party": "R",
-        "votes": 32,
-        "winner": true
-       },
-       {
-        "name": "Barbara McCormick",
-        "party": "R",
-        "votes": 31
        }
       ]
      },
@@ -359723,10 +359608,10 @@ export const stateLegResults: Record<
       ]
      },
      "7": {
-      "demVotes": 123704,
+      "demVotes": 123439,
       "repVotes": 60678,
       "othVotes": 0,
-      "totalVotes": 184382,
+      "totalVotes": 184117,
       "candidates": [
        {
         "name": "Carol A. Murphy",
@@ -359751,17 +359636,6 @@ export const stateLegResults: Record<
         "name": "Dione Johnson",
         "party": "R",
         "votes": 30122
-       },
-       {
-        "name": "Balvir Singh",
-        "party": "D",
-        "votes": 172,
-        "winner": true
-       },
-       {
-        "name": "Nicole Gillespie",
-        "party": "D",
-        "votes": 93
        }
       ]
      },
@@ -360406,10 +360280,10 @@ export const stateLegResults: Record<
       ]
      },
      "28": {
-      "demVotes": 95586,
+      "demVotes": 95261,
       "repVotes": 0,
       "othVotes": 0,
-      "totalVotes": 95586,
+      "totalVotes": 95261,
       "candidates": [
        {
         "name": "Cleopatra Tucker",
@@ -360423,25 +360297,6 @@ export const stateLegResults: Record<
         "party": "D",
         "votes": 47263,
         "winner": true
-       },
-       {
-        "name": "Chigozie Onyema",
-        "party": "D",
-        "votes": 141,
-        "winner": true
-       },
-       {
-        "name": "Cleopatra Tucker",
-        "party": "D",
-        "votes": 120,
-        "incumbent": true,
-        "winner": true
-       },
-       {
-        "name": "Garnet Hall",
-        "party": "D",
-        "votes": 64,
-        "incumbent": true
        }
       ]
      },
@@ -360634,10 +360489,10 @@ export const stateLegResults: Record<
       ]
      },
      "35": {
-      "demVotes": 62004,
+      "demVotes": 61845,
       "repVotes": 23412,
       "othVotes": 0,
-      "totalVotes": 85416,
+      "totalVotes": 85257,
       "candidates": [
        {
         "name": "Kenyatta Stewart",
@@ -360661,17 +360516,6 @@ export const stateLegResults: Record<
         "name": "Rawell Perez-Muñoz",
         "party": "R",
         "votes": 11581
-       },
-       {
-        "name": "Al Abdelaziz",
-        "party": "D",
-        "votes": 128,
-        "winner": true
-       },
-       {
-        "name": "Mohamed Khairullah",
-        "party": "D",
-        "votes": 31
        }
       ]
      },
@@ -360741,9 +360585,9 @@ export const stateLegResults: Record<
      },
      "38": {
       "demVotes": 90457,
-      "repVotes": 65860,
+      "repVotes": 65618,
       "othVotes": 0,
-      "totalVotes": 156317,
+      "totalVotes": 156075,
       "candidates": [
        {
         "name": "Lisa Swain",
@@ -360768,33 +360612,6 @@ export const stateLegResults: Record<
         "name": "Barry Wilkes",
         "party": "R",
         "votes": 32218
-       },
-       {
-        "name": "Robert Kaiser",
-        "party": "R",
-        "votes": 91,
-        "winner": true
-       },
-       {
-        "name": "Barry Wilkes",
-        "party": "R",
-        "votes": 77,
-        "winner": true
-       },
-       {
-        "name": "Trevor Ferrigno",
-        "party": "R",
-        "votes": 54
-       },
-       {
-        "name": "Jerry Taylor",
-        "party": "R",
-        "votes": 20
-       },
-       {
-        "name": "Paul Duggan",
-        "party": "R",
-        "votes": 0
        }
       ]
      },
@@ -518013,26 +517830,21 @@ export const stateLegResults: Record<
       ]
      },
      "33": {
-      "demVotes": 49296,
-      "repVotes": 24992,
+      "demVotes": 34517,
+      "repVotes": 18615,
       "othVotes": 0,
-      "totalVotes": 74288,
+      "totalVotes": 53132,
       "candidates": [
        {
         "name": "Jennifer Boysko",
         "party": "D",
-        "votes": 49296,
+        "votes": 34517,
         "winner": true
        },
        {
         "name": "Suzanne Denise Fox",
         "party": "R",
         "votes": 18615
-       },
-       {
-        "name": "Joe Turnermay",
-        "party": "R",
-        "votes": 6377
        }
       ]
      },
@@ -520241,9 +520053,9 @@ export const stateLegResults: Record<
      },
      "6": {
       "demVotes": 20144,
-      "repVotes": 13935,
-      "othVotes": 466,
-      "totalVotes": 34545,
+      "repVotes": 12303,
+      "othVotes": 81,
+      "totalVotes": 32528,
       "candidates": [
        {
         "name": "Rip Sullivan",
@@ -520256,17 +520068,6 @@ export const stateLegResults: Record<
         "name": "Kristin Hoffman",
         "party": "R",
         "votes": 12303
-       },
-       {
-        "name": "Jed Arnold",
-        "party": "R",
-        "votes": 1632,
-        "winner": true
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 385
        },
        {
         "name": "Write-in",
@@ -520680,10 +520481,11 @@ export const stateLegResults: Record<
       ]
      },
      "24": {
-      "demVotes": 18456,
-      "repVotes": 6425,
-      "othVotes": 1495,
-      "totalVotes": 26376,
+      "demVotes": 14614,
+      "repVotes": 0,
+      "othVotes": 1475,
+      "totalVotes": 16089,
+      "uncontested": true,
       "candidates": [
        {
         "name": "Luke Torian",
@@ -520693,25 +520495,9 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Ellen Campbell",
-        "party": "R",
-        "votes": 6425,
-        "winner": true
-       },
-       {
-        "name": "Jade D. Harris",
-        "party": "D",
-        "votes": 3842
-       },
-       {
         "name": "Write-in",
         "party": "O",
         "votes": 1475
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 20
        }
       ]
      },
@@ -520966,10 +520752,11 @@ export const stateLegResults: Record<
       ]
      },
      "35": {
-      "demVotes": 7679,
-      "repVotes": 25757,
-      "othVotes": 837,
-      "totalVotes": 34273,
+      "demVotes": 0,
+      "repVotes": 22104,
+      "othVotes": 826,
+      "totalVotes": 22930,
+      "uncontested": true,
       "candidates": [
        {
         "name": "Chris Runion",
@@ -520979,25 +520766,9 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Holly Seibold",
-        "party": "D",
-        "votes": 7679,
-        "winner": true
-       },
-       {
-        "name": "Monique L. Baroudi",
-        "party": "R",
-        "votes": 3653
-       },
-       {
         "name": "Write-in",
         "party": "O",
         "votes": 826
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 11
        }
       ]
      },
@@ -521119,9 +520890,9 @@ export const stateLegResults: Record<
      },
      "41": {
       "demVotes": 12346,
-      "repVotes": 13036,
+      "repVotes": 12529,
       "othVotes": 29,
-      "totalVotes": 25411,
+      "totalVotes": 24904,
       "candidates": [
        {
         "name": "Chris Obenshain",
@@ -521133,17 +520904,6 @@ export const stateLegResults: Record<
         "name": "Lily Franklin",
         "party": "D",
         "votes": 12346
-       },
-       {
-        "name": "Chris Obenshain",
-        "party": "R",
-        "votes": 294,
-        "winner": true
-       },
-       {
-        "name": "Lowell Bowman",
-        "party": "R",
-        "votes": 213
        },
        {
         "name": "Write-in",
@@ -522261,10 +522021,10 @@ export const stateLegResults: Record<
       ]
      },
      "89": {
-      "demVotes": 18654,
-      "repVotes": 16095,
-      "othVotes": 90,
-      "totalVotes": 34839,
+      "demVotes": 14218,
+      "repVotes": 14739,
+      "othVotes": 77,
+      "totalVotes": 29034,
       "candidates": [
        {
         "name": "Baxter Ennis",
@@ -522278,25 +522038,9 @@ export const stateLegResults: Record<
         "votes": 14218
        },
        {
-        "name": "Jackie Glass",
-        "party": "D",
-        "votes": 4436,
-        "winner": true
-       },
-       {
-        "name": "Giovanni G. \"Gio\" Dolmo",
-        "party": "R",
-        "votes": 1356
-       },
-       {
         "name": "Write-in",
         "party": "O",
         "votes": 77
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 13
        }
       ]
      },
@@ -522724,10 +522468,10 @@ export const stateLegResults: Record<
       "uncontested": true
      },
      "7": {
-      "demVotes": 33717,
-      "repVotes": 62385,
-      "othVotes": 89,
-      "totalVotes": 96191,
+      "demVotes": 13794,
+      "repVotes": 43158,
+      "othVotes": 55,
+      "totalVotes": 57007,
       "candidates": [
        {
         "name": "Bill Stanley",
@@ -522735,17 +522479,6 @@ export const stateLegResults: Record<
         "votes": 43158,
         "incumbent": true,
         "winner": true
-       },
-       {
-        "name": "Aaron Rouse",
-        "party": "D",
-        "votes": 19923,
-        "winner": true
-       },
-       {
-        "name": "Kevin Adams",
-        "party": "R",
-        "votes": 19227
        },
        {
         "name": "Deborah \"Renie\" Gates",
@@ -522756,11 +522489,6 @@ export const stateLegResults: Record<
         "name": "Write-in",
         "party": "O",
         "votes": 55
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 34
        }
       ]
      },
@@ -522790,10 +522518,11 @@ export const stateLegResults: Record<
       ]
      },
      "9": {
-      "demVotes": 13552,
-      "repVotes": 43372,
-      "othVotes": 3391,
-      "totalVotes": 60315,
+      "demVotes": 0,
+      "repVotes": 41877,
+      "othVotes": 3354,
+      "totalVotes": 45231,
+      "uncontested": true,
       "candidates": [
        {
         "name": "Frank Ruff",
@@ -522803,25 +522532,9 @@ export const stateLegResults: Record<
         "winner": true
        },
        {
-        "name": "Lamont Bagby",
-        "party": "D",
-        "votes": 13552,
-        "winner": true
-       },
-       {
         "name": "Write-in",
         "party": "O",
         "votes": 3354
-       },
-       {
-        "name": "Steve Imholt",
-        "party": "R",
-        "votes": 1495
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 37
        }
       ]
      },
@@ -523511,10 +523224,10 @@ export const stateLegResults: Record<
       ]
      },
      "38": {
-      "demVotes": 53252,
-      "repVotes": 39842,
-      "othVotes": 239,
-      "totalVotes": 93333,
+      "demVotes": 47623,
+      "repVotes": 21742,
+      "othVotes": 200,
+      "totalVotes": 69565,
       "candidates": [
        {
         "name": "Jennifer Boysko",
@@ -523529,25 +523242,9 @@ export const stateLegResults: Record<
         "votes": 21742
        },
        {
-        "name": "Travis Hackworth",
-        "party": "R",
-        "votes": 18100,
-        "winner": true
-       },
-       {
-        "name": "Laurie A. Buchwald",
-        "party": "D",
-        "votes": 5629
-       },
-       {
         "name": "Write-in",
         "party": "O",
         "votes": 200
-       },
-       {
-        "name": "Write-in",
-        "party": "O",
-        "votes": 39
        }
       ]
      },
@@ -524225,10 +523922,10 @@ export const stateLegResults: Record<
       "uncontested": true
      },
      "26": {
-      "demVotes": 26834,
-      "repVotes": 12799,
+      "demVotes": 20430,
+      "repVotes": 8942,
       "othVotes": 85,
-      "totalVotes": 39718,
+      "totalVotes": 29457,
       "candidates": [
        {
         "name": "JJ Singh",
@@ -524241,17 +523938,6 @@ export const stateLegResults: Record<
         "name": "Ommair Butt",
         "party": "R",
         "votes": 8942
-       },
-       {
-        "name": "JJ Singh",
-        "party": "D",
-        "votes": 6404,
-        "winner": true
-       },
-       {
-        "name": "Ram Venkatachalam",
-        "party": "R",
-        "votes": 3857
        },
        {
         "name": "Write-in",
@@ -528552,7 +528238,6 @@ export const stateLegResults: Record<
       "repVotes": 10908,
       "othVotes": 2443,
       "totalVotes": 25734,
-      "uncontested": true,
       "candidates": [
        {
         "name": "Jane Kitchel",
@@ -528660,10 +528345,9 @@ export const stateLegResults: Record<
      },
      "chittenden": {
       "demVotes": 232217,
-      "repVotes": 0,
-      "othVotes": 0,
-      "totalVotes": 232217,
-      "uncontested": true,
+      "repVotes": 25346,
+      "othVotes": 17021,
+      "totalVotes": 274584,
       "candidates": [
        {
         "name": "Tim Ashe",
@@ -528704,6 +528388,16 @@ export const stateLegResults: Record<
         "party": "D",
         "votes": 31192,
         "winner": true
+       },
+       {
+        "name": "John C. Gifford",
+        "party": "R",
+        "votes": 25346
+       },
+       {
+        "name": "Tom Licata",
+        "party": "O",
+        "votes": 17021
        }
       ]
      },
@@ -530919,32 +530613,32 @@ export const stateLegResults: Record<
       ]
      },
      "Bennington": {
-      "demVotes": 27845,
+      "demVotes": 20259,
       "repVotes": 0,
-      "othVotes": 3934,
-      "totalVotes": 31779,
+      "othVotes": 2937,
+      "totalVotes": 23196,
       "candidates": [
        {
         "name": "Dick Sears",
         "party": "D",
-        "votes": 14374,
+        "votes": 10525,
         "winner": true
        },
        {
         "name": "Brian Campion",
         "party": "D",
-        "votes": 13471,
+        "votes": 9734,
         "winner": true
        },
        {
         "name": "Jeff Kaufer",
         "party": "O",
-        "votes": 3702
+        "votes": 2762
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 232
+        "votes": 175
        }
       ]
      },
@@ -530974,146 +530668,146 @@ export const stateLegResults: Record<
       ]
      },
      "Chittenden": {
-      "demVotes": 403297,
-      "repVotes": 90414,
-      "othVotes": 40059,
-      "totalVotes": 533770,
+      "demVotes": 233877,
+      "repVotes": 53545,
+      "othVotes": 23474,
+      "totalVotes": 310896,
       "candidates": [
        {
         "name": "Tim Ashe",
         "party": "D",
-        "votes": 75994,
+        "votes": 44002,
         "winner": true
        },
        {
         "name": "Virginia Ginny Lyons",
         "party": "D",
-        "votes": 71564,
+        "votes": 41617,
         "winner": true
        },
        {
         "name": "Debbie Ingram",
         "party": "D",
-        "votes": 70050,
+        "votes": 40751,
         "winner": true
        },
        {
         "name": "Michael Sirotkin",
         "party": "D",
-        "votes": 66539,
+        "votes": 38569,
         "winner": true
        },
        {
         "name": "Phil Baruth",
         "party": "D",
-        "votes": 65849,
+        "votes": 38075,
         "winner": true
        },
        {
         "name": "Christopher A. Pearson",
         "party": "D",
-        "votes": 53301,
+        "votes": 30863,
         "winner": true
        },
        {
         "name": "Alex R. Farrell",
         "party": "R",
-        "votes": 33184
+        "votes": 19602
        },
        {
         "name": "Paul Dame",
         "party": "R",
-        "votes": 29573
+        "votes": 17521
        },
        {
         "name": "Dana Maxfield",
         "party": "R",
-        "votes": 27657
+        "votes": 16422
        },
        {
         "name": "Louis Meyers",
         "party": "O",
-        "votes": 15260
+        "votes": 8848
        },
        {
         "name": "Seth Cournoyer",
         "party": "O",
-        "votes": 9266
+        "votes": 5389
        },
        {
         "name": "Loyal Ploof",
         "party": "O",
-        "votes": 7862
+        "votes": 4599
        },
        {
         "name": "Joshua H. Knox",
         "party": "O",
-        "votes": 6878
+        "votes": 4173
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 793
+        "votes": 465
        }
       ]
      },
      "Essex-Orleans": {
-      "demVotes": 18799,
+      "demVotes": 18122,
       "repVotes": 0,
-      "othVotes": 3000,
-      "totalVotes": 21799,
+      "othVotes": 2902,
+      "totalVotes": 21024,
       "candidates": [
        {
         "name": "Robert A. Starr",
         "party": "D",
-        "votes": 9722,
+        "votes": 9323,
         "winner": true
        },
        {
         "name": "John S. Rodgers",
         "party": "D",
-        "votes": 9077,
+        "votes": 8799,
         "winner": true
        },
        {
         "name": "Ron Horton",
         "party": "O",
-        "votes": 2892
+        "votes": 2795
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 108
+        "votes": 107
        }
       ]
      },
      "Franklin": {
-      "demVotes": 12745,
-      "repVotes": 21867,
+      "demVotes": 11054,
+      "repVotes": 18809,
       "othVotes": 30,
-      "totalVotes": 34642,
+      "totalVotes": 29893,
       "candidates": [
        {
         "name": "Corey Parent",
         "party": "R",
-        "votes": 11027,
+        "votes": 9387,
         "winner": true
        },
        {
         "name": "Randy Brock",
         "party": "R",
-        "votes": 10840,
+        "votes": 9422,
         "winner": true
        },
        {
         "name": "Pam McCarthy",
         "party": "D",
-        "votes": 8169
+        "votes": 7016
        },
        {
         "name": "Dustin Tanner",
         "party": "D",
-        "votes": 4576
+        "votes": 4038
        },
        {
         "name": "Write-in",
@@ -531123,21 +530817,21 @@ export const stateLegResults: Record<
       ]
      },
      "Grand Isle": {
-      "demVotes": 13903,
+      "demVotes": 8253,
       "repVotes": 0,
-      "othVotes": 342,
-      "totalVotes": 14245,
+      "othVotes": 184,
+      "totalVotes": 8437,
       "candidates": [
        {
         "name": "Richard Dick Mazza",
         "party": "D",
-        "votes": 13903,
+        "votes": 8253,
         "winner": true
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 342
+        "votes": 184
        }
       ],
       "uncontested": true
@@ -531187,48 +530881,48 @@ export const stateLegResults: Record<
       ]
      },
      "Rutland": {
-      "demVotes": 35265,
-      "repVotes": 39792,
-      "othVotes": 87,
-      "totalVotes": 75144,
+      "demVotes": 28087,
+      "repVotes": 32057,
+      "othVotes": 67,
+      "totalVotes": 60211,
       "candidates": [
        {
         "name": "Brian Collamore",
         "party": "R",
-        "votes": 14178,
+        "votes": 11380,
         "winner": true
        },
        {
         "name": "Cheryl Mazzariello Hooker",
         "party": "D",
-        "votes": 13646,
+        "votes": 10767,
         "winner": true
        },
        {
         "name": "James L. McNeil",
         "party": "R",
-        "votes": 13244,
+        "votes": 10673,
         "winner": true
        },
        {
         "name": "Greg Cox",
         "party": "D",
-        "votes": 12509
+        "votes": 9949
        },
        {
         "name": "Edward Larson",
         "party": "R",
-        "votes": 12370
+        "votes": 10004
        },
        {
         "name": "Scott Garren",
         "party": "D",
-        "votes": 9110
+        "votes": 7371
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 87
+        "votes": 67
        }
       ]
      },
@@ -531284,98 +530978,98 @@ export const stateLegResults: Record<
       ]
      },
      "Windham": {
-      "demVotes": 31483,
-      "repVotes": 5067,
-      "othVotes": 4395,
-      "totalVotes": 40945,
+      "demVotes": 22108,
+      "repVotes": 3861,
+      "othVotes": 3132,
+      "totalVotes": 29101,
       "candidates": [
        {
         "name": "Becca Balint",
         "party": "D",
-        "votes": 16423,
+        "votes": 11464,
         "winner": true
        },
        {
         "name": "Jeanette White",
         "party": "D",
-        "votes": 15060,
+        "votes": 10644,
         "winner": true
        },
        {
         "name": "Tyler Colford",
         "party": "R",
-        "votes": 5067
+        "votes": 3861
        },
        {
         "name": "Beverly Stone",
         "party": "O",
-        "votes": 2313
+        "votes": 1675
        },
        {
         "name": "Aaron Diamond Stone",
         "party": "O",
-        "votes": 1063
+        "votes": 763
        },
        {
         "name": "Jerry Levy",
         "party": "O",
-        "votes": 969
+        "votes": 659
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 50
+        "votes": 35
        }
       ]
      },
      "Windsor": {
-      "demVotes": 54796,
-      "repVotes": 26455,
-      "othVotes": 2684,
-      "totalVotes": 83935,
+      "demVotes": 42958,
+      "repVotes": 20454,
+      "othVotes": 2120,
+      "totalVotes": 65532,
       "candidates": [
        {
         "name": "Alison H. Clarkson",
         "party": "D",
-        "votes": 19230,
+        "votes": 15091,
         "winner": true
        },
        {
         "name": "Alice W. Nitka",
         "party": "D",
-        "votes": 18217,
+        "votes": 14276,
         "winner": true
        },
        {
         "name": "Richard Dick McCormack",
         "party": "D",
-        "votes": 17349,
+        "votes": 13591,
         "winner": true
        },
        {
         "name": "Randy A. Gray",
         "party": "R",
-        "votes": 9450
+        "votes": 7183
        },
        {
         "name": "Wayne D. Townsend",
         "party": "R",
-        "votes": 8763
+        "votes": 6882
        },
        {
         "name": "Jack Williams",
         "party": "R",
-        "votes": 8242
+        "votes": 6389
        },
        {
         "name": "Mason \"Cloud\" Wade",
         "party": "O",
-        "votes": 2599
+        "votes": 2055
        },
        {
         "name": "Write-in",
         "party": "O",
-        "votes": 85
+        "votes": 65
        }
       ]
      }

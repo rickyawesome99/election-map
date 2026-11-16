@@ -6,7 +6,9 @@ import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { countySenateData } from "@/lib/locked2026CountyData";
 import { countyGovernorData } from "@/lib/locked2026CountyData";
 import { countyHouseData } from "@/data/countyHouseData";
-import { senateData, governorData, houseData } from "@/data/forecastData";
+import { senateData, governorData } from "@/data/forecastData";
+import { houseData } from "@/lib/locked2026HousePast"; // House past results as at the 2026 lock
+
 import { forecastSummariesFor } from "@/lib/forecast";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { countyRunoffScale, cvapOf, parseCsv, presYears, redrawnBetween, statewideRaces, stateNameOf, turnoutRaw, STATE_ABBRS } from "@/lib/turnout";

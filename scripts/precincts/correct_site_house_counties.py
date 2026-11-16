@@ -4,7 +4,8 @@
 The site's certified district totals (house_past_results.csv) are right for these contests; its county
 breakdown was not: New Hampshire 2016 (both districts, the precinct file of the time had no county codes),
 Missouri's 5th in 2016 (Kansas City's election board was missing) and Illinois 3, 4 and 6 in 2022 (no rows).
-Each is rebuilt here from MEDSL precinct returns summed by county, and written ONLY when the district's
+Later additions: California's 24th in 2016, seven New Jersey districts and New York's 25th in 2024 (2024 from the
+Redistricting Data Hub precinct file). Each is rebuilt here from precinct returns summed by county, and written ONLY when the district's
 rows add up to the certified total for both parties within 0.1% and every precinct row has a county.
 
 The rows as they stood at the 2026 forecast lock go to data-entry/house_district_county_results_locked2026.csv,
@@ -29,7 +30,10 @@ import build_results_vest as V  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "data-entry" / "house_district_county_results.csv"
 LOCKED = ROOT / "data-entry" / "house_district_county_results_locked2026.csv"
-TARGETS = [(2016, "NH", "1"), (2016, "NH", "2"), (2016, "MO", "5"), (2022, "IL", "3"), (2022, "IL", "4"), (2022, "IL", "6")]
+TARGETS = [(2016, "NH", "1"), (2016, "NH", "2"), (2016, "MO", "5"), (2022, "IL", "3"), (2022, "IL", "4"), (2022, "IL", "6"),
+           # added after the --survey of every district off its certified total: the ones the precinct returns rebuild exactly
+           (2016, "CA", "24"), (2024, "NJ", "3"), (2024, "NJ", "5"), (2024, "NJ", "7"), (2024, "NJ", "8"), (2024, "NJ", "9"), (2024, "NJ", "10"),
+           (2024, "NJ", "12"), (2024, "NY", "25")]
 TOL = 0.001
 
 
@@ -55,7 +59,79 @@ def county_rows(year: int, st: str) -> dict[str, dict[str, list[int]]]:
     return out
 
 
+def county_rows_2024(st: str) -> dict[str, dict[str, list[int]]]:
+    """2024: from the Redistricting Data Hub precinct file (each precinct carries its county). Candidate columns name
+    their district (New Jersey, Texas); New York and Wisconsin carry party totals and a district field per precinct."""
+    import pandas as pd
+    import pyogrio
+    df = pyogrio.read_dataframe(B.rdh_layer(st), read_geometry=False)
+    up = {c.upper(): c for c in df.columns}
+    fips = V.B_FIPS[st] + pd.to_numeric(df[up["COUNTYFP"]], errors="coerce").fillna(0).astype(int).astype(str).str.zfill(3)
+    out: dict[str, dict[str, list[int]]] = defaultdict(lambda: defaultdict(lambda: [0, 0, 0]))
+
+    def add(d: str, dv: pd.Series, rv: pd.Series, ov: pd.Series) -> None:
+        for c, a, b_, o in zip(fips, dv, rv, ov):
+            if a or b_ or o:
+                x = out[d][c]
+                x[0] += int(round(a)); x[1] += int(round(b_)); x[2] += int(round(o))
+
+    if st in ("NY", "WI"):
+        dist = pd.to_numeric(df[up["CONGRESS" if st == "NY" else "CONG_DIST"]], errors="coerce").fillna(0).astype(int).astype(str)
+        num = lambda c: pd.to_numeric(df[up[c]], errors="coerce").fillna(0)  # noqa: E731
+        dv, rv = (num("G24COND"), num("G24CONR")) if st == "NY" else (num("USHDEM24"), num("USHREP24"))
+        ov = num("G24CONO") if st == "NY" else num("USHTOT24") - dv - rv
+        for d in sorted(set(dist)):
+            m = dist == d
+            for c, a, b_, o in zip(fips[m], dv[m], rv[m], ov[m]):
+                if a or b_ or o:
+                    x = out[d][c]
+                    x[0] += int(round(a)); x[1] += int(round(b_)); x[2] += int(round(o))
+        return out
+    contests: dict[str, list[tuple[str, str]]] = defaultdict(list)
+    for c in df.columns:
+        k = B.classify(st, c)
+        if k and k[0] == "USH":
+            contests[k[1]].append((c, k[2]))
+    for d, cs in contests.items():
+        v = df[[c for c, _ in cs]].apply(pd.to_numeric, errors="coerce").fillna(0)
+        dc, rc = B.slot_columns([(c, p_, int(v[c].sum())) for c, p_ in cs])
+        dv = v[dc] if dc else v.sum(axis=1) * 0
+        rv = v[rc] if rc else v.sum(axis=1) * 0
+        add(str(int(d)), dv, rv, v.sum(axis=1) - dv - rv)
+    return out
+
+
+def survey() -> None:
+    """--survey: every district-year whose county rows differ from the certified total by more than 0.5%, with what
+    the precinct returns would give. Nothing is written."""
+    certified = B.house_certified()
+    site: dict[tuple[int, str, str], list] = defaultdict(lambda: [0, 0, set(), set()])
+    with open(OUT, newline="") as f:
+        for r in csv.DictReader(f):
+            k = (int(r["year"]), r["state"], r["district"])
+            site[k][0] += B._num(r["dem"]); site[k][1] += B._num(r["gop"]); site[k][2].add(r["source"]); site[k][3].add(r["status"])
+    off = [k for k, (cd, cr) in certified.items() if abs(site[k][0] - cd) + abs(site[k][1] - cr) > 0.005 * max(1, cd + cr)]
+    cache: dict[tuple[int, str], dict | None] = {}
+    for year, st, d in sorted(off):
+        cd, cr = certified[(year, st, d)]
+        if (year, st) not in cache:
+            try:
+                cache[(year, st)] = county_rows_2024(st) if year == 2024 else county_rows(year, st)
+            except Exception as e:  # no precinct file for that state-year in this layout
+                cache[(year, st)] = None
+        rows_ = cache[(year, st)]
+        got = (rows_ or {}).get(d, {})
+        sd, sr = sum(v[0] for v in got.values()), sum(v[1] for v in got.values())
+        nocounty = sum(sum(v) for c, v in got.items() if not c)
+        verdict = "no precinct file" if rows_ is None else "no rows" if not got else "EXACT" if abs(sd - cd) <= TOL * max(cd, 1) and abs(sr - cr) <= TOL * max(cr, 1) and nocounty == 0 else f"precinct off {sd - cd:+,} / {sr - cr:+,}" + (f", {nocounty:,} without county" if nocounty else "")
+        s_ = site[(year, st, d)]
+        print(f"{year} {st}-{d:>2}: certified {cd:>7,} / {cr:>7,} | site rows {s_[0] - cd:+8,} / {s_[1] - cr:+8,} ({','.join(sorted(s_[2])) or 'none'}; {','.join(sorted(s_[3])) or '-'}) | {verdict}", flush=True)
+
+
 def main() -> None:
+    if "--survey" in sys.argv:
+        survey()
+        return
     write = "--write" in sys.argv
     certified = B.house_certified()
     with open(OUT, newline="") as f:
@@ -71,7 +147,7 @@ def main() -> None:
     done, fresh, locked_rows, new_rows = [], [], [], []
     for year, st, d in TARGETS:
         if (year, st) not in cache:
-            cache[(year, st)] = county_rows(year, st)
+            cache[(year, st)] = county_rows_2024(st) if year == 2024 else county_rows(year, st)
         got = cache[(year, st)].get(d, {})
         cd, cr = certified[(year, st, d)]
         sd, sr = sum(v[0] for v in got.values()), sum(v[1] for v in got.values())

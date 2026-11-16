@@ -2888,27 +2888,27 @@
     ]
    },
    "HI16": {
-    "demVotes": 3442,
-    "repVotes": 3675,
+    "demVotes": 3441,
+    "repVotes": 3727,
     "othVotes": 0,
-    "totalVotes": 7117,
+    "totalVotes": 7168,
     "candidates": [
      {
       "name": "William Infantine",
       "party": "R",
-      "votes": 1877,
+      "votes": 1903,
       "winner": true
      },
      {
       "name": "Maxine Mosley",
       "party": "D",
-      "votes": 1799,
-      "winner": true
+      "votes": 1798
      },
      {
       "name": "Larry Gagne",
       "party": "R",
-      "votes": 1798
+      "votes": 1824,
+      "winner": true
      },
      {
       "name": "Holly Hillhouse",
@@ -5160,15 +5160,21 @@
     ]
    },
    "RO13": {
-    "demVotes": 27312,
-    "repVotes": 39298,
+    "demVotes": 45701,
+    "repVotes": 55684,
     "othVotes": 0,
-    "totalVotes": 66610,
+    "totalVotes": 101385,
     "candidates": [
      {
       "name": "Bennie C. Nelson",
       "party": "R",
       "votes": 5950,
+      "winner": true
+     },
+     {
+      "name": "David Love",
+      "party": "R",
+      "votes": 5682,
       "winner": true
      },
      {
@@ -5208,22 +5214,46 @@
       "winner": true
      },
      {
+      "name": "Erica Layon",
+      "party": "R",
+      "votes": 5364,
+      "winner": true
+     },
+     {
+      "name": "David Milz",
+      "party": "R",
+      "votes": 5340,
+      "winner": true
+     },
+     {
+      "name": "Elizabeth Greenberg",
+      "party": "D",
+      "votes": 4868
+     },
+     {
       "name": "Ellen Gallo",
       "party": "D",
-      "votes": 4851,
-      "winner": true
+      "votes": 4851
      },
      {
       "name": "Craig Cunningham",
       "party": "D",
-      "votes": 4771,
-      "winner": true
+      "votes": 4771
+     },
+     {
+      "name": "Gaskill",
+      "party": "D",
+      "votes": 4652
      },
      {
       "name": "Diana West",
       "party": "D",
-      "votes": 4614,
-      "winner": true
+      "votes": 4614
+     },
+     {
+      "name": "Michelle Moge",
+      "party": "D",
+      "votes": 4614
      },
      {
       "name": "Amy B. Dattner-Levy",
@@ -5234,6 +5264,11 @@
       "name": "Paul Doolittle",
       "party": "D",
       "votes": 4497
+     },
+     {
+      "name": "Mogill",
+      "party": "D",
+      "votes": 4255
      },
      {
       "name": "Silke Evdokimov",
@@ -5318,10 +5353,10 @@
     ]
    },
    "RO16": {
-    "demVotes": 0,
+    "demVotes": 33520,
     "repVotes": 40111,
     "othVotes": 0,
-    "totalVotes": 40111,
+    "totalVotes": 73631,
     "candidates": [
      {
       "name": "David C. Lundgren",
@@ -5366,12 +5401,46 @@
       "winner": true
      },
      {
+      "name": "Combes",
+      "party": "D",
+      "votes": 5106
+     },
+     {
+      "name": "Fenn",
+      "party": "D",
+      "votes": 4997
+     },
+     {
+      "name": "Green",
+      "party": "D",
+      "votes": 4775
+     },
+     {
+      "name": "Hites",
+      "party": "D",
+      "votes": 4718
+     },
+     {
+      "name": "Siekmann",
+      "party": "D",
+      "votes": 4704
+     },
+     {
+      "name": "Warner",
+      "party": "D",
+      "votes": 4677
+     },
+     {
+      "name": "Killey",
+      "party": "D",
+      "votes": 4543
+     },
+     {
       "name": "Write-in",
       "party": "O",
       "votes": 0
      }
-    ],
-    "uncontested": true
+    ]
    },
    "RO17": {
     "demVotes": 9382,
@@ -5692,9 +5761,9 @@
    },
    "RO25": {
     "demVotes": 37125,
-    "repVotes": 58890,
+    "repVotes": 59390,
     "othVotes": 0,
-    "totalVotes": 96015,
+    "totalVotes": 96515,
     "candidates": [
      {
       "name": "Lorie Ball",
@@ -5729,7 +5798,7 @@
      {
       "name": "Fred Doucette",
       "party": "R",
-      "votes": 6400,
+      "votes": 6900,
       "winner": true
      },
      {
@@ -6320,21 +6389,21 @@
     ]
    },
    "RO6": {
-    "demVotes": 1214,
-    "repVotes": 1198,
+    "demVotes": 1231,
+    "repVotes": 1208,
     "othVotes": 2,
-    "totalVotes": 2414,
+    "totalVotes": 2441,
     "candidates": [
      {
       "name": "Eric S. Turer",
       "party": "D",
-      "votes": 1214,
+      "votes": 1231,
       "winner": true
      },
      {
       "name": "Melissa A. Litchfield",
       "party": "R",
-      "votes": 1198
+      "votes": 1208
      },
      {
       "name": "Write-in",

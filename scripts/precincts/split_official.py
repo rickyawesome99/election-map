@@ -127,8 +127,40 @@ def results_2026(st: str) -> None:
     }))
 
 
+ME_COUNTY = {"AND": "23001", "ARO": "23003", "CUM": "23005", "FRA": "23007", "HAN": "23009", "KEN": "23011", "KNO": "23013", "LIN": "23015", "OXF": "23017",
+             "PEN": "23019", "PIS": "23021", "SAG": "23023", "SOM": "23025", "WAL": "23027", "WAS": "23029", "YOR": "23031"}
+
+
+def maine_cd2_2018() -> None:
+    """MEDSL has no rows for Maine's 2nd district in 2018 (the ranked-choice race). The Secretary of State's workbook
+    of first choices by town and ward (maine.gov/sos/sites/maine.gov.sos/files/content/assets/Rep-congress-results.xlsx,
+    saved as raw/official/me/2018_cd2_Rep-congress-results.xlsx) is appended to MEDSL's Maine 2018 file. Overseas ballots
+    are one statewide line with no county."""
+    x = pd.read_excel(RAW / "official" / "me" / "2018_cd2_Rep-congress-results.xlsx", sheet_name=0, header=None, dtype=str).fillna("")
+    names, parties = list(x.iloc[0]), list(x.iloc[2])
+    cols = [(j, names[j].upper().strip(), {"DEM": "DEMOCRAT", "REP": "REPUBLICAN", "IND": "INDEPENDENT"}.get(parties[j].upper().strip(), parties[j].upper())) for j in range(4, len(names)) if names[j] and names[j] not in ("BLK", "TBC", "TBC by Town")]
+    rows = []
+    for i in range(3, len(x)):
+        r = list(x.iloc[i])
+        town = r[2].strip()
+        if not town:
+            continue  # the grand-total line
+        for j, name, party in cols:
+            if re.fullmatch(r"\d+", r[j]):
+                rows.append((ME_COUNTY.get(r[1].strip().upper(), ""), town.upper(), f"{town} {r[3]}".strip() if r[3] and r[3] != "1-1" else town, "USH", "2", name, party, False, "TOTAL", int(r[j])))
+    add = pd.DataFrame(rows, columns=["county", "jurisdiction", "precinct", "office", "district", "candidate", "party", "writein", "mode", "votes"])
+    f = RAW / "medsl" / "2018" / "by_state" / "ME.parquet"
+    cur = pd.read_parquet(f)
+    cur = cur[~((cur["office"] == "USH") & (cur["district"].astype(str).str.lstrip("0") == "2"))]
+    pd.concat([cur, add[cur.columns]], ignore_index=True).to_parquet(f, index=False)
+    print("ME 2018 CD2", len(add), add.groupby("candidate")["votes"].sum().to_dict())
+
+
 def main() -> None:
     st, year = sys.argv[1].upper(), int(sys.argv[2])
+    if (st, year) == ("ME", 2018):
+        maine_cd2_2018()
+        return
     if year == 2026:
         results_2026(st)
     elif st == "VA":

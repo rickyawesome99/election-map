@@ -34,7 +34,8 @@ NOT_A_CANDIDATE = re.compile(r"^(total|totals|registered voters|ballots cast.*|o
 
 # County files to read beside the statewide one, where the statewide file leaves counties out (Texas 2016:
 # Tarrant and Jefferson, which hold House districts 22, 90-99 and 101).
-EXTRA = {("TX", 2016): ["2016/counties/20161108__tx__general__tarrant__precinct.csv", "2016/counties/20161108__tx__general__jefferson__precinct.csv"]}
+EXTRA = {("NY", 2018): ["2018/counties/20181106__ny__general__orange__precinct.csv", "2018/counties/20181106__ny__general__wyoming_precinct.csv"],
+         ("TX", 2016): ["2016/counties/20161108__tx__general__tarrant__precinct.csv", "2016/counties/20161108__tx__general__jefferson__precinct.csv"]}
 
 
 def files(st: str, year: int, level: str = "precinct") -> list[Path]:
@@ -83,6 +84,15 @@ def main() -> None:
         d.columns = [c.strip().lower() for c in d.columns]
         if level == "municipal":  # the municipality stands in for the precinct; the builder keeps its votes inside that town
             d = d[d["office"].str.lower().isin(["state senate", "general assembly"])].rename(columns={"municipality": "precinct"})
+        if st == "MA" and "town" in d.columns:  # town / ward / precinct columns, a "TOTALS" line per contest, no county
+            d = d[d["town"].str.upper().str.strip() != "TOTALS"].copy()
+            idx = json.loads((ROOT / "public" / "precincts" / "index" / "MA.json").read_text())
+            tk = lambda t: re.sub(r"[^a-z]", "", t.lower())  # noqa: E731
+            town_county = {}
+            for n, c in zip(idx["names"], idx["county"]):
+                town_county.setdefault(tk(re.split(r"\s+(?:ward|precinct|pct|w\d|p\d|\d)", n, flags=re.I)[0]), idx["counties"][c][1])
+            d["county"] = [town_county.get(tk(t), "") for t in d["town"]]
+            d["precinct"] = [f"{t} {('Ward ' + w + ' ') if w else ''}Precinct {p_}".strip() for t, w, p_ in zip(d["town"], d.get("ward", ""), d["precinct"])]
         if "county" not in d.columns:
             m = re.search(r"general_+(\w+?)__precinct", p.name)
             d["county"] = m.group(1).replace("_", " ") if m else ""
@@ -90,6 +100,8 @@ def main() -> None:
             if c not in d.columns:
                 d[c] = ""
         d["office"] = d["office"].str.strip().str.lower().str.strip(" ,")
+        if st == "NY":  # Monroe files the same-day special for the unexpired term under district "25-Unexpired"
+            d = d[~d["district"].astype(str).str.contains("unexpired", case=False)].copy()
         if st == "ND":  # the seats given two-year terms after redistricting are that year's regular contests
             d["office"] = d["office"].str.replace(r" unexpired 2-year term$", "", regex=True)
         d["office"] = d["office"].map(OFFICE)
@@ -103,6 +115,11 @@ def main() -> None:
     if (st, year) == ("TX", 2016):  # the statewide file carries every precinct line twice
         d = d.drop_duplicates(["county", "precinct", "office", "district", "candidate", "party", "votes"]).reset_index(drop=True)
     d = d[d["candidate"].str.strip() != ""].reset_index(drop=True)
+    # A line with no precinct, in a county whose precincts are listed for the same contest and candidate, is that county's total.
+    kk = ["county", "office", "district", "candidate"]
+    named = set(map(tuple, d.loc[~d["precinct"].str.strip().str.fullmatch(r"(|totals?:?|county totals?:?|grand totals?:?|total county ?wide)", case=False), kk].drop_duplicates().to_numpy()))
+    blank_total = d["precinct"].str.strip().str.fullmatch(r"(|totals?:?|county totals?:?|grand totals?:?|total county ?wide)", case=False) & pd.Series([tuple(x) in named for x in d[kk].to_numpy()], index=d.index)
+    d = d[~blank_total].reset_index(drop=True)
     if st == "ME":  # each district block ends with its own total, filed under the last town's name: town, STATE UOCAVA, total
         v = pd.to_numeric(d["votes"].str.replace(",", ""), errors="coerce").fillna(0)
         g = [d[c] for c in ("office", "district", "candidate", "party")]

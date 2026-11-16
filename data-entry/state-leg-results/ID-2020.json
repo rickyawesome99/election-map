@@ -39,10 +39,11 @@
     ]
    },
    "2": {
-    "demVotes": 24661,
-    "repVotes": 29425,
-    "othVotes": 0,
-    "totalVotes": 54086,
+    "demVotes": 0,
+    "repVotes": 50100,
+    "othVotes": 4803,
+    "totalVotes": 54903,
+    "uncontested": true,
     "candidates": [
      {
       "name": "Vito Barbieri",
@@ -53,22 +54,16 @@
       "post": "1"
      },
      {
-      "name": "Richard Kohles",
-      "party": "D",
-      "votes": 20675,
+      "name": "Doug Okuniewicz",
+      "party": "R",
+      "votes": 24273,
       "winner": true,
       "post": "2"
      },
      {
-      "name": "Kathy Kahn",
-      "party": "D",
-      "votes": 3986,
-      "post": "1"
-     },
-     {
-      "name": "Doug Okuniewicz",
-      "party": "R",
-      "votes": 3598,
+      "name": "Jennifer Luoma",
+      "party": "O",
+      "votes": 4803,
       "post": "2"
      }
     ]

@@ -48,6 +48,13 @@ NOTES = {2020: {("CA", "SLDU"): "The Statewide Database file holds about half of
 LETTER = {"DEM": "D", "REP": "R", "NPP": "I", "IND": "I", "DCL": "I"}
 
 
+# A contest the Statewide Database file leaves blank in one county. Senate District 19, 2020: Santa Barbara County is
+# there (127,364 D / 69,459 R) and the Ventura County part of the district has no Senate votes at all. The certified
+# district total is 272,442 / 150,089, so 145,078 D and 80,630 R belong to those Ventura precincts. They are spread
+# over them in proportion to each precinct's presidential vote for the same party: an estimate, not a count.
+BLANK_COUNTY = {(2020, "SLDU", "19"): ("06111", 145078, 80630)}
+
+
 def load(year: int) -> tuple[pd.DataFrame, gpd.GeoDataFrame]:
     yy = f"{year % 100:02d}"
     with zipfile.ZipFile(RAW / f"state_g{yy}_sov_data_by_g{yy}_srprec.zip") as zf:
@@ -108,6 +115,15 @@ def build(year: int, truth: dict) -> str:
                 dc, rc = B.slot_columns([(c, letters[c], int(t)) for c, t in zip(cols, tot)])
                 for j, c in enumerate(cols):
                     comp[m, 0 if c == dc else 1 if c == rc else 2] += v[m, j]
+        for (y_, office_, d_), (cty, dem_add, rep_add) in BLANK_COUNTY.items():
+            if (y_, office_) != (year, office):
+                continue
+            m = ((data["cty"] == cty) & (dist == d_)).to_numpy()
+            if comp[m].sum() == 0:
+                for side, amount, tag in ((0, dem_add, "DEM"), (1, rep_add, "REP")):
+                    wcols = [c for c in vote_cols if c.startswith("PRS" + tag)]
+                    wt = data.loc[m, wcols].to_numpy().sum(axis=1) if wcols else np.ones(int(m.sum()))
+                    comp[m, side] += V.largest_remainder(amount * wt / max(wt.sum(), 1e-9), amount)
         arr = np.zeros((3, nold))
         has = (data["oid"] >= 0).to_numpy()
         np.add.at(arr, (slice(None), data["oid"].to_numpy()[has]), comp[has].T)

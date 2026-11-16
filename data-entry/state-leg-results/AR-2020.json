@@ -1684,20 +1684,15 @@
    },
    "96": {
     "demVotes": 4313,
-    "repVotes": 18282,
+    "repVotes": 7838,
     "othVotes": 0,
-    "totalVotes": 22595,
+    "totalVotes": 12151,
     "candidates": [
-     {
-      "name": "Jill Bryant",
-      "party": "R",
-      "votes": 10444,
-      "winner": true
-     },
      {
       "name": "Joshua Bryant",
       "party": "R",
-      "votes": 7838
+      "votes": 7838,
+      "winner": true
      },
      {
       "name": "Jon Comstock",

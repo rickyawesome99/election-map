@@ -65,7 +65,7 @@ SRC = {**{(s_, 2026): "official-2026" for s_ in ("AZ", "GA", "HI", "ID", "MN", "
        ("NJ", 2019): "nj-doe-2019-municipal", ("NJ", 2021): "nj-doe-2021-municipal", ("NJ", 2023): "nj-doe-2023-municipal", ("NJ", 2025): "nj-doe-2025-municipal",
        ("VA", 2021): "va-elections-2021", ("VA", 2023): "va-elections-2023", ("VA", 2025): "va-elections-2025", ("LA", 2019): "la-sos-2019", ("LA", 2023): "la-sos-2023"}
 # The second input of a --variant mix build, where it is not OpenElections.
-SECOND = {("NM", 2020): "nm-sos-2020"}
+SECOND = {("NM", 2020): "nm-sos-2020", ("NY", 2018): "openelections-2018+ny-boe-county-2018", ("NY", 2016): "openelections-2016+ny-boe-county-2016"}
 # Differences from the site's totals that have a known cause (shown on /audit/precincts).
 EXPLAINED: dict[tuple[str, str], str] = {
     ("AK", "USH"): "Ranked choice: precincts report first choices, the site holds the final round (2022 on).",
@@ -143,20 +143,24 @@ def person_key(name: str) -> str:
     return f"{sn}~{given[0][:1] if given else ''}"
 
 
+DEM_RE = re.compile(r"^(DEM|DEMOCRAT|DEMOCRATIC)\b(?! IN )")
+REP_RE = re.compile(r"^(REP|REPUBLICAN)\b")
+
+
 def line_letter(party: str) -> str:
     """One ballot line's party → D, R, I (independent / none listed), M (minor) or ? (blank)."""
     p = party.strip()
     if not p:
         return "?"
     parts = [x.strip() for x in re.split(r"[,/]", p)]
-    is_d = [x.startswith("DEM") or x in ("DPN", "DFL", "DNL") for x in parts]
-    is_r = [x.startswith("REP") or x in ("RPN", "GOP") for x in parts]
+    is_d = [bool(DEM_RE.match(x)) or x in ("DPN", "DFL", "DNL") for x in parts]
+    is_r = [bool(REP_RE.match(x)) or x in ("RPN", "GOP") for x in parts]
     if any(is_d) and any(is_r):
         return "B"  # cross-filed on both major lines (Pennsylvania, New York): settled per candidate
     for x in parts:  # the first major party named ("PROGRESSIVE/DEMOCRATIC" is a Democrat)
-        if x.startswith("DEM") or x in ("DPN", "DFL", "DNL"):
+        if DEM_RE.match(x) or x in ("DPN", "DFL", "DNL"):
             return "D"
-        if x.startswith("REP") or x in ("RPN", "GOP"):
+        if REP_RE.match(x) or x in ("RPN", "GOP"):
             return "R"
     return "I" if parts[0] in IND else "M"
 
@@ -262,11 +266,28 @@ RUNOFF = "Louisiana's November election is an all-party primary. The site holds 
 KNOWN: dict[tuple[str, int, str], dict[str, str]] = {
     ("LA", 2016, "USH"): {"2": RUNOFF, "3": RUNOFF, "4": RUNOFF, "5": RUNOFF},
     ("LA", 2020, "USH"): {"5": RUNOFF},
+    ("SC", 2016, "USH"): {k: "Districts 1, 2 and 7: the Democratic candidates also ran on the Working Families and Green lines. Precincts report the Democratic line only; the certified totals add 9,240, 4,146 and 9,290 votes from the other lines, which the state does not publish by precinct." for k in ("1", "2", "7")},
+    ("WV", 2016, "SLDU"): {"3": "District 3 filled two seats on the same day, the regular term and an unexpired one. The site adds both; precinct returns here are the regular-term contest (Boley 27,172, Vanzile 14,826)."},
     ("ME", 2022, "USH"): {"2": "Maine's 2nd was decided by ranked choice: precincts report first choices, the site holds the final round."},
     ("ME", 2018, "USH"): {"2": "Maine's 2nd was decided by ranked choice: precincts report first choices, the site holds the final round."},
     ("AZ", 2018, "USH"): {"7": "No Republican ran in District 7: the Green candidate (18,706) takes the second side here, the site shows the Republican write-in."},
     ("NY", 2018, "SLDU"): {"17": "Felder held the Democratic, Republican and Conservative lines in District 17: the site lists him as other, here his votes sit on the Democratic side."},
     ("WY", 2016, "SLDL"): {"4": "District 4: the source lists Michaels (1,185) as a Democrat, the site as other."},
+}
+
+
+# Cells where the SITE was checked against the certified canvass and is right: the precinct source is the one that is off.
+# Added to the cell's note (the cell stays "loaded": the precinct rows there are not the certified count).
+SOURCE_OFF: dict[tuple[str, int, str], str] = {
+    ("UT", 2016, "SLDU"): "Checked against the state canvass: the site is right in District 19 (Christensen 20,994, Froerer 16,381); the precinct source runs high.",
+    ("UT", 2016, "USH"): "Checked against the state canvass: the certified count for Clemens in District 1 is 73,381; the precinct source has 64,952.",
+    ("OR", 2020, "SLDU"): "Checked against the state's abstract of votes: the site is right in District 28 (Linthicum 54,800, Palcic 20,444); the precinct source is missing part of the district.",
+    ("OR", 2020, "SLDL"): "Checked against the state's abstract of votes: the site is right in Districts 15 and 55; the precinct source is missing part of each.",
+    ("MI", 2022, "SLDL"): "Checked against the certified results: the site is right in Districts 63 and 64 (DeBoyer 28,050 to Noland 15,598; Beeler 23,216 to Howell 14,653); the precinct source has half of 63 and none of 64.",
+    ("ID", 2020, "SLDL"): "Checked against Wikipedia's district tables: the site is right in Districts 26, 28, 32 and 35; the precinct source is missing part of each.",
+    ("TX", 2016, "SLDL"): "The second precinct source lacks whole counties for about twenty districts with an unopposed Republican (for example District 5: 32,942 of 51,428); the site matches the Secretary of State where checked (District 122).",
+    ("NH", 2022, "SLDL"): "Checked against the Secretary of State's Rockingham return: the precinct sources leave out the seven Democrats in Rockingham 16 (Londonderry, 33,520 votes) and the Republicans in Rockingham 1. The election database both were built from drops part of the slate in large districts.",
+    ("TX", 2016, "SLDU"): "Checked against the Secretary of State: the site is right in Districts 27 and 28 (Lucio 135,945; Perry 205,512); the second precinct source runs high there.",
 }
 
 
@@ -337,6 +358,22 @@ def site_names(st: str, year: int) -> dict[tuple[str, str], dict[str, str]]:
     return out
 
 
+def site_votes(st: str, year: int) -> dict[tuple[str, str], dict[int, str]]:
+    """(office, district key) → {a candidate's vote total: their party}, for totals no other candidate of the district shares."""
+    out: dict[tuple[str, str], dict[int, str]] = defaultdict(dict)
+    path = ROOT / "data-entry" / "state-leg-results" / f"{st}-{year}.json"
+    if path.exists():
+        j = json.loads(path.read_text())
+        for chamber, office in (("senate", "SLDU"), ("house", "SLDL")):
+            for dk, v in ((j.get(chamber) or {}).get("districts") or {}).items():
+                seen: dict[int, list[str]] = defaultdict(list)
+                for c in v.get("candidates", []):
+                    if c.get("votes"):
+                        seen[int(c["votes"])].append({"D": "D", "R": "R"}.get(c.get("party"), "I"))
+                out[(office, district_key(dk))] = {n: ps[0] for n, ps in seen.items() if len(ps) == 1 and n >= 100}
+    return out
+
+
 def undouble(df: pd.DataFrame, st: str, year: int) -> pd.DataFrame:
     # A seat filled twice on the same day (the unexpired term and the full term) arrives as two rows per precinct
     # and candidate, sometimes under two spellings as well. Where a district carries 1.5 times the site's vote or
@@ -395,6 +432,9 @@ def relabel_districts(df: pd.DataFrame, st: str, year: int) -> pd.DataFrame:
     if st == "NH":  # House districts are numbered within a county: Belknap 1 is "BE1"
         m = (df["office"] == "SLDL") & df["district"].str.fullmatch(r"\d+") & df["county"].isin(NH_COUNTY)
         df.loc[m, "district"] = df.loc[m, "county"].map(NH_COUNTY) + df.loc[m, "district"]
+        byname = {"BELKNAP": "BE", "CARROLL": "CA", "CHESHIRE": "CH", "COOS": "CO", "GRAFTON": "GR", "HILLSBOROUGH": "HI", "MERRIMACK": "ME", "ROCKINGHAM": "RO", "STRAFFORD": "ST", "SULLIVAN": "SU"}
+        m = (df["office"] == "SLDL") & df["district"].str.fullmatch(r"\d+") & df["jurisdiction"].isin(byname)  # no county code: the county's name
+        df.loc[m, "district"] = df.loc[m, "jurisdiction"].map(byname) + df.loc[m, "district"]
     gone = [d for (s_, y_, o_, d) in NOT_THE_GENERAL if (s_, y_) == (st, year)]
     if gone:
         df = df[~(df["office"].isin([o_ for (s_, y_, o_, _d) in NOT_THE_GENERAL if (s_, y_) == (st, year)]) & df["district"].isin(gone))].copy()
@@ -445,13 +485,196 @@ def relabel_districts(df: pd.DataFrame, st: str, year: int) -> pd.DataFrame:
     return df
 
 
+def county_pieces(df: pd.DataFrame, ctruth: dict) -> dict[tuple[str, str, str], list[int]]:
+    """(office, district key, county) → [Dem, Rep] in a source frame, for the offices the certified table covers."""
+    s_ = df[df["office"].isin({k[0] for k in ctruth}) & df["letter"].isin(["D", "R"])]
+    out_: dict[tuple[str, str, str], list[int]] = defaultdict(lambda: [0, 0])
+    for (o, d, c, l), v in s_.groupby(["office", "district", "county", "letter"])["votes"].sum().items():
+        out_[(o, district_key(d), c)][0 if l == "D" else 1] += int(v)
+    return out_
+
+
+def drop_hidden_county_totals(df: pd.DataFrame, ctruth: dict) -> pd.DataFrame:
+    """A city or county total filed as if it were one more precinct ("CITY OF YONKERS NY", "City of Buffalo"):
+    where a county piece runs 15% or more over its certified figure and one precinct accounts for the excess,
+    that precinct's rows for the contest are dropped."""
+    got = county_pieces(df, ctruth)
+    gone = []
+    s_ = df[df["office"].isin({k[0] for k in ctruth}) & df["letter"].isin(["D", "R"])]
+    dk_ = s_["district"].map(lambda d, memo={}: memo.setdefault(d, district_key(d)))
+    for k, t in ctruth.items():
+        have = sum(got.get(k, [0, 0]))
+        want = t[0] + t[1]
+        if not k[2] or want == 0 or have < 1.15 * want:
+            continue
+        piece = s_[(s_["office"] == k[0]) & (dk_ == k[1]) & (s_["county"] == k[2])]
+        by = piece.groupby(["jurisdiction", "precinct"])["votes"].sum()
+        if len(by) < 3:
+            continue
+        top, v = by.idxmax(), int(by.max())
+        if v >= 0.8 * (have - want) and abs(have - v - want) < abs(have - want):
+            gone.append((k[0], k[1], k[2], top[0], top[1]))
+    if not gone:
+        return df
+    dk_all = df["district"].map(lambda d, memo={}: memo.setdefault(d, district_key(d)))
+    hit = set(gone)
+    keep = [(o, d, c, j, p_) not in hit for o, d, c, j, p_ in zip(df["office"], dk_all, df["county"], df["jurisdiction"], df["precinct"])]
+    return df[keep].copy()
+
+
+def fill_from_certified(df: pd.DataFrame, ctruth: dict, st: str, year: int) -> pd.DataFrame:
+    """A county piece that no source has, or has more than 10% off its certified figure (Orange County's House vote
+    in New York 2018, the Indiana counties that publish no precinct returns): the certified county total stands in as
+    one countywide line, which the builder spreads over that county's precincts and counts as an estimate."""
+    got = county_pieces(df, ctruth)
+    fill = [(k, t) for k, t in ctruth.items() if k[2] and t[0] + t[1] > 0
+            and sum(abs(got.get(k, [0, 0])[i] - t[i]) for i in (0, 1) if t[i] > 0) > 0.10 * (t[0] + t[1])]  # a side with no certified major-party line is left alone
+    # A county whose precinct rows are a little short of its certified figure on both sides (1% to 10%: ballots the
+    # county did not report by precinct) keeps its precinct rows and gets one countywide line for the shortfall.
+    filled = {k for k, _ in fill}
+    short = []
+    for k, t in ctruth.items():
+        g = got.get(k)
+        if k in filled or not k[2] or g is None or t[0] + t[1] == 0:
+            continue
+        gap = [t[i] - g[i] if t[i] > 0 else 0 for i in (0, 1)]
+        if min(gap) >= 0 and sum(gap) > 0.01 * (t[0] + t[1]):
+            short.append((k, gap))
+    if not fill and not short:
+        return df
+    dk_all = df["district"].map(lambda d, memo={}: memo.setdefault(d, district_key(d)))
+    # the contest's leading candidate of each party, so the countywide line joins that candidate's other rows
+    lead = {}
+    for (o, d, l, c), v in df[df["letter"].isin(["D", "R"])].assign(_dk=dk_all).groupby(["office", "_dk", "letter", "candidate"])["votes"].sum().sort_values().items():
+        lead[(o, d, l)] = c
+    side_gone = {(k[0], k[1], k[2], l) for k, t in fill for l, v in (("D", t[0]), ("R", t[1])) if v > 0}
+    df = df[[(o, d, c, l) not in side_gone for o, d, c, l in zip(df["office"], dk_all, df["county"], df["letter"])]].copy()
+    template = df.iloc[0].to_dict()
+    extra = []
+    for (office, dk, county), t in fill:
+        for letter, votes, party in (("D", t[0], "DEMOCRAT"), ("R", t[1], "REPUBLICAN")):
+            if votes:
+                extra.append({**template, "county": county, "jurisdiction": "", "precinct": "COUNTYWIDE (CERTIFIED TOTAL)", "office": office, "district": dk,
+                              "candidate": lead.get((office, dk, letter), f"{party} CANDIDATE"), "party": party, "writein": False, "mode": "TOTAL", "votes": votes, "scatter": False, "line": letter, "letter": letter})
+    for (office, dk, county), gap in short:
+        for letter, votes, party in (("D", gap[0], "DEMOCRAT"), ("R", gap[1], "REPUBLICAN")):
+            if votes:
+                extra.append({**template, "county": county, "jurisdiction": "", "precinct": "COUNTYWIDE (NOT REPORTED BY PRECINCT)", "office": office, "district": dk,
+                              "candidate": lead.get((office, dk, letter), f"{party} CANDIDATE"), "party": party, "writein": False, "mode": "TOTAL", "votes": votes, "scatter": False, "line": letter, "letter": letter})
+    if not extra:
+        return df
+    df = pd.concat([df, pd.DataFrame(extra)[list(df.columns)]], ignore_index=True)
+    if short:
+        print(f"  {st} {year}: {len(short)} county pieces topped up to their certified totals")
+    print(f"  {st} {year}: {len(fill)} county pieces taken from the certified county totals ({', '.join(sorted(f'{o} {d} in {c}' for (o, d, c), _ in fill)[:10])}{'…' if len(fill) > 10 else ''})")
+    return df
+
+
+# Contests where the site's district totals were checked against the certified result and the precinct source is the
+# one that is off, but no certified figure by county is at hand. Each district more than 1% from its certified total
+# is brought to it: short on both sides, the precinct rows stay and the shortfall is added as countywide lines;
+# otherwise the district's major-party rows are replaced by countywide lines. Either way the votes are split between
+# the district's counties in proportion to the source's own vote there, and counted as an estimate.
+# A district with no source rows at all cannot be placed and is left out.
+DISTRICT_CERTIFIED = {("UT", 2016, "SLDU"), ("UT", 2016, "USH"), ("OR", 2020, "SLDU"), ("OR", 2020, "SLDL"), ("ID", 2020, "SLDL"), ("MI", 2022, "SLDL"),
+                      ("TX", 2016, "USH"), ("TX", 2016, "SLDU"), ("TX", 2016, "SLDL")}
+
+
+# State-years on the same district map as 2024, where a district with no source rows can borrow its county split from 2024.
+SAME_MAP_AS_2024 = {("MI", 2022)}
+
+
+def counties_2024(st: str, office: str, dk: str) -> pd.Series:
+    """County → votes cast in that district in 2024, from the 2024 precinct results (precinct → county from the index)."""
+    res = json.loads((OUT / st / "2024.json").read_text())
+    idx = json.loads((ROOT / "public" / "precincts" / "index" / f"{st}.json").read_text())
+    rows, dist = res["offices"].get(office), res.get("districts", {}).get(office)
+    if not rows or not dist:
+        return pd.Series(dtype=float)
+    out: dict[str, int] = defaultdict(int)
+    for r, d, c in zip(rows, dist, idx["county"]):
+        if district_key(d) == dk:
+            out[idx["counties"][c][0]] += r[0] + r[1] + r[2]
+    return pd.Series(out, dtype=float)
+
+
+def fill_from_district_truth(df: pd.DataFrame, st: str, year: int) -> pd.DataFrame:
+    offices = [o for (s_, y_, o) in DISTRICT_CERTIFIED if (s_, y_) == (st, year) and (not ONLY or o in ONLY)]
+    if not offices:
+        return df
+    dk_all = df["district"].map(lambda d, memo={}: memo.setdefault(d, district_key(d)))
+    extra, gone, n_top, n_rep, n_none = [], set(), 0, 0, 0
+    template = df.iloc[0].to_dict()
+    for office in offices:
+        truth = district_truth(st, year, office)
+        if office in SLOT:
+            # single-winner office: the two sides are the slot candidates (a Libertarian holds the first slot where no
+            # Democrat ran), so the comparison and the added lines follow the slots, not the party labels
+            comp_ = slot_table(df)
+            sub = df[(df["office"] == office) & (comp_ < 2)].assign(_dk=dk_all, _side=comp_.map({0: "D", 1: "R"}))
+        else:
+            sub = df[(df["office"] == office) & df["letter"].isin(["D", "R"])].assign(_dk=dk_all)
+            sub["_side"] = sub["letter"]
+        side_tot = {k: int(v) for k, v in sub.groupby(["_dk", "_side"])["votes"].sum().items()}
+        lead, lead_letter, lead_party = {}, {}, {}
+        for (d, l, c, lt, pt), v in sub.groupby(["_dk", "_side", "candidate", "letter", "party"])["votes"].sum().sort_values().items():
+            lead[(d, l)], lead_letter[(d, l)], lead_party[(d, l)] = c, lt, pt
+        for dk, t in truth.items():
+            if t[0] + t[1] == 0:
+                continue
+            g = [side_tot.get((dk, "D"), 0), side_tot.get((dk, "R"), 0)]
+            if abs(g[0] - t[0]) + abs(g[1] - t[1]) <= 0.01 * (t[0] + t[1]):
+                continue
+            counties = sub[sub["_dk"] == dk].groupby("county")["votes"].sum()
+            counties = counties[counties.index != ""]
+            if counties.sum() <= 0 and (st, year) in SAME_MAP_AS_2024:
+                counties = counties_2024(st, office, dk)  # no rows at all: where the district's 2024 vote was cast (same map)
+            if counties.sum() <= 0:
+                n_none += 1
+                continue
+            share = counties / counties.sum()
+            gap = [t[i] - g[i] for i in (0, 1)]
+            top_up = min(gap) >= 0
+            if top_up:
+                amounts, n_top = gap, n_top + 1
+            else:
+                amounts, n_rep = [t[0], t[1]], n_rep + 1
+                gone |= {(office, dk, lead_letter.get((dk, "D"), "D"), lead.get((dk, "D"))), (office, dk, lead_letter.get((dk, "R"), "R"), lead.get((dk, "R")))}
+            for i, (letter, party) in enumerate((("D", "DEMOCRAT"), ("R", "REPUBLICAN"))):
+                if amounts[i] <= 0:
+                    continue
+                parts = V.largest_remainder((share * amounts[i]).to_numpy(), int(amounts[i]))
+                for county, v in zip(share.index, parts):
+                    if v:
+                        lt = lead_letter.get((dk, letter), letter)
+                        extra.append({**template, "county": county, "jurisdiction": "", "precinct": "COUNTYWIDE (CERTIFIED DISTRICT TOTAL)", "office": office, "district": dk,
+                                      "candidate": lead.get((dk, letter), f"{party} CANDIDATE"), "party": lead_party.get((dk, letter), party), "writein": False, "mode": "TOTAL", "votes": int(v), "scatter": False, "line": lt, "letter": lt})
+    if not extra:
+        return df
+    if gone:
+        if any(o in SLOT for o, *_ in gone):
+            df = df[[(o, d, l, c) not in gone for o, d, l, c in zip(df["office"], dk_all, df["letter"], df["candidate"])]].copy()
+        else:
+            g2 = {(o, d, l) for o, d, l, _c in gone}
+            df = df[[(o, d, l) not in g2 for o, d, l in zip(df["office"], dk_all, df["letter"])]].copy()
+    df = pd.concat([df, pd.DataFrame(extra)[list(df.columns)]], ignore_index=True)
+    df["mk"] = df.groupby(["county", "jurisdiction", "precinct"], sort=False).ngroup()
+    print(f"  {st} {year}: districts brought to their certified totals: {n_top} topped up, {n_rep} replaced, {n_none} with no source rows left out")
+    return df
+
+
 def load_medsl(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, statewide: dict[str, dict] | None = None) -> pd.DataFrame | None:
     """--variant mix: two inputs for one state-year (MEDSL and OpenElections). Statewide offices come from MEDSL.
     Each House or legislative district comes whole from one of the two: the one whose party totals sit nearer
     the site's result for that district (MEDSL when level, or when the site holds no result)."""
     global VARIANT
     if VARIANT != "mix":
-        return load_one(st, year, tags, statewide)
+        df = load_one(st, year, tags, statewide)
+        ctruth = certified_by_county(st, year) if df is not None else {}
+        if ctruth:  # certified totals by county exist: hidden total rows go, and counties no source covers are filled
+            df = fill_from_certified(drop_hidden_county_totals(df, ctruth), ctruth, st, year)
+            df["mk"] = df.groupby(["county", "jurisdiction", "precinct"], sort=False).ngroup()
+        return fill_from_district_truth(df, st, year) if df is not None else None
     try:
         VARIANT = ""
         a = load_one(st, year, tags, statewide)
@@ -483,16 +706,114 @@ def load_medsl(st: str, year: int, tags: dict[str, dict[str, str]] | None = None
                 pick_b.add((office, k))
     ka = pd.Series([(o, district_key(d)) in pick_b for o, d in zip(a["office"], a["district"])], index=a.index)
     kb = pd.Series([(o, district_key(d)) in pick_b for o, d in zip(b["office"], b["district"])], index=b.index)
+    # Where the state certifies each district's vote by county (New York), the choice is made a county at a time:
+    # one source can be complete in one county of a district and short or doubled in the next.
+    ctruth = certified_by_county(st, year)
+    if ctruth:
+        pieces = lambda df_: county_pieces(df_, ctruth)  # noqa: E731
+        drop_hidden_totals = lambda df_: drop_hidden_county_totals(df_, ctruth)  # noqa: E731
+        a, b = drop_hidden_totals(a), drop_hidden_totals(b)
+        ka = pd.Series([(o, district_key(d)) in pick_b for o, d in zip(a["office"], a["district"])], index=a.index)
+        kb = pd.Series([(o, district_key(d)) in pick_b for o, d in zip(b["office"], b["district"])], index=b.index)
+        pa, pb = pieces(a), pieces(b)
+        take_b = set()
+        for k, t in ctruth.items():
+            if not k[2] or t[0] + t[1] == 0:
+                continue
+            ea = abs(pa[k][0] - t[0]) + abs(pa[k][1] - t[1]) if k in pa else t[0] + t[1] + 1
+            eb = abs(pb[k][0] - t[0]) + abs(pb[k][1] - t[1]) if k in pb else t[0] + t[1] + 1
+            if eb < ea:
+                take_b.add(k)
+        decided = set(ctruth)
+        ka2 = [(o, district_key(d), c) for o, d, c in zip(a["office"], a["district"], a["county"])]
+        kb2 = [(o, district_key(d), c) for o, d, c in zip(b["office"], b["district"], b["county"])]
+        ka = pd.Series([(k in take_b) if k in decided else bool(x) for k, x in zip(ka2, ka)], index=a.index)
+        kb = pd.Series([(k in take_b) if k in decided else bool(x) for k, x in zip(kb2, kb)], index=b.index)
+        pick_b = {(o, f"{d} in {c}") for o, d, c in take_b}
     # MEDSL rows with no district number are the votes of districts it could not place: once the other source
     # supplies districts for that office, they would be counted twice.
-    blank = a["office"].isin({o for o, _ in pick_b}) & a["office"].isin(DISTRICT_OFFICES) & (a["district"].map(district_key) == "")
+    blank = a["office"].isin({o for o, _ in pick_b}) & a["office"].isin(DISTRICT_OFFICES) & (a["district"].map(district_key) == "") & ~ka
     ka = ka | blank
     b = b[kb].copy()
     b["jurisdiction"] = b["jurisdiction"].astype(str)
     df = pd.concat([a[~ka], b], ignore_index=True)
+    if ctruth:
+        df = fill_from_certified(df, ctruth, st, year)
     df["mk"] = df.groupby(["county", "jurisdiction", "precinct"], sort=False).ngroup()
     print(f"  {st} {year} mix: {len(pick_b)} districts from OpenElections ({', '.join(sorted(o + ' ' + k for o, k in pick_b)[:12])}{'…' if len(pick_b) > 12 else ''})")
-    return df
+    return fill_from_district_truth(df, st, year)
+
+
+def certified_by_county(st: str, year: int) -> dict[tuple[str, str, str], list[int]]:
+    """(office, district key, county fips) → [Dem, Rep] where the state publishes certified district totals by county.
+    Limited to the offices being built (--only), so the top-of-ticket rows used to match precincts are left as they are."""
+    out = certified_all(st, year)
+    return {k: v for k, v in out.items() if k[0] in ONLY} if ONLY else out
+
+
+# Districts that lie wholly inside one county, where the precinct source is short, garbled or empty: the site's
+# certified district total is that county's figure (each checked against the state's certified result).
+SINGLE_COUNTY = {
+    ("KY", 2016, "SLDU", "19"): "21111",   # Jefferson
+    ("FL", 2018, "SLDU", "18"): "12057",   # Hillsborough: the state's own precinct file has no candidate rows for it
+    ("SC", 2018, "SLDL", "79"): "45079",   # Richland
+    ("SC", 2018, "SLDL", "80"): "45079",
+}
+
+
+def site_by_county(st: str, year: int) -> dict[tuple[str, str, str], list[int]]:
+    """Certified county figures the site already holds: governor, U.S. Senate and president by county, U.S. House by
+    district and county (only districts whose county rows add up to the certified total), and single-county districts."""
+    import csv
+    out: dict[tuple[str, str, str], list[int]] = {}
+    de = ROOT / "data-entry"
+    for office, path in (("GOV", de / f"county_governor_results_{year}.csv"), ("USS", de / f"county_senate_results_{year}.csv")):
+        if path.exists():
+            with open(path, newline="") as f:
+                for r in csv.DictReader(f):
+                    if r["state"] == st and r.get("special", "") in ("", "0", "False", "false") and B._num(r.get(f"total_{year}", "")):
+                        out[(office, "", r["county_id"].zfill(5))] = [B._num(r.get(f"dem_{year}", "")), B._num(r.get(f"gop_{year}", ""))]
+    cert = B.house_certified()
+    rows: dict[str, list] = defaultdict(list)
+    with open(de / "house_district_county_results.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["state"] == st and r["year"] == str(year):
+                rows[r["district"]].append(r)
+    for d, rs in rows.items():
+        c = cert.get((year, st, d))
+        sd, sr = sum(B._num(r["dem"]) for r in rs), sum(B._num(r["gop"]) for r in rs)
+        if c and abs(sd - c[0]) <= 0.001 * max(c[0], 1) and abs(sr - c[1]) <= 0.001 * max(c[1], 1):
+            for r in rs:
+                out[("USH", district_key(d), r["county_fips"].zfill(5))] = [B._num(r["dem"]), B._num(r["gop"])]
+    for (s_, y_, office, d), fips in SINGLE_COUNTY.items():
+        if (s_, y_) == (st, year):
+            t = district_truth(st, year, office).get(district_key(d))
+            if t:
+                out[(office, district_key(d), fips)] = [t[0], t[1]]
+    return out
+
+
+def certified_all(st: str, year: int) -> dict[tuple[str, str, str], list[int]]:
+    out = site_by_county(st, year) if (st, year) in USE_SITE_COUNTIES else {}
+    out.update(state_certified(st, year))
+    return out
+
+
+# State-years where the site's own certified county figures are used to fill counties the precinct source lacks.
+USE_SITE_COUNTIES = {("KY", 2023), ("MI", 2022), ("KY", 2016), ("FL", 2018), ("SC", 2018), ("TX", 2016), ("NJ", 2018)}
+
+
+def state_certified(st: str, year: int) -> dict[tuple[str, str, str], list[int]]:
+    if st == "NY" and (RAW / "official" / "ny" / str(year)).exists():
+        import newyork_certified
+        return {(o, district_key(d), c): v for (o, d, c), v in newyork_certified.county_truth(year).items()}
+    # any state: raw/official/{st}/certified_by_county_{year}.csv (office, district, county, dem, rep), written by that state's fetcher
+    path = RAW / "official" / st.lower() / f"certified_by_county_{year}.csv"
+    if path.exists():
+        import csv
+        with open(path, newline="") as f:
+            return {(r["office"], district_key(r["district"]), r["county"]): [int(r["dem"]), int(r["rep"])] for r in csv.DictReader(f)}
+    return {}
 
 
 def load_one(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, statewide: dict[str, dict] | None = None) -> pd.DataFrame | None:
@@ -560,6 +881,7 @@ def load_one(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, 
     ck = ["office", "district", "candidate"]
     lines = df[~df["scatter"]].groupby(ck + ["line"])["votes"].sum().reset_index()
     site = site_parties(st, year)
+    svotes = site_votes(st, year)
     letters: dict[tuple[str, str, str], str] = {}
     dtruth: dict[str, dict[str, tuple[int, int]]] = {}
     # A candidate listed once with a party and once without (two spellings) is one person: the blank
@@ -574,7 +896,7 @@ def load_one(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, 
     # the first party named on each candidate's label ("INDEPENDENT, REPUBLICAN" → I)
     def first_party(p_: str) -> str:
         x = re.split(r"[,/]", p_.strip())[0].strip()
-        return "D" if x.startswith("DEM") else "R" if x.startswith("REP") else "I"
+        return "D" if DEM_RE.match(x) else "R" if REP_RE.match(x) else "I"
     df_party_first = {k: first_party(v) for k, v in df[~df["scatter"]].groupby(ck)["party"].agg(lambda x: x.mode().iat[0] if len(x.mode()) else "").items()}
     for (office, district, cand), g in lines.groupby(ck):
         by = dict(zip(g["line"], g["votes"]))
@@ -602,6 +924,14 @@ def load_one(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, 
             tot = int(g["votes"].sum())
             if t and tot >= 200 and (tot == t[0]) != (tot == t[1]):
                 major = "D" if tot == t[0] else "R"
+        if major is None and "?" in by and not looked and office in ("SLDU", "SLDL"):
+            # No party and a name the site spells differently ("ELSIE BLAIR MAGNUS" / "Elsie Blairmagnus"): a candidate
+            # whose total is, to the vote, one site candidate's total in that district is that candidate.
+            same_total = svotes.get((office, district_key(district)), {}).get(int(g["votes"].sum()))
+            if same_total in ("D", "R"):
+                major = same_total
+            elif same_total == "I":
+                looked = "I"
         if major is None and "?" in by and not looked:
             # No party anywhere: a candidate whose total equals one side of the site's result for the contest is that side.
             if office not in dtruth:
@@ -633,7 +963,27 @@ def slot_table(df: pd.DataFrame) -> pd.Series:
     comp[~slot & (df["letter"] == "R").to_numpy()] = 1
     s = df[slot]
     # Two spellings of one name ("S. BRET GUTHRIE" / "S. BRETT GUTHRIE") are one candidate: same surname, initial and party.
-    person = pd.Series([f"{person_key(c)}~{l}" if l != "W" else c for c, l in zip(s["candidate"], s["letter"])], index=s.index)
+    # A misspelt surname ("SCOTT GARNETT" beside "SCOTT GARRETT", same party, same contest) is the same candidate too.
+    import difflib
+    canon: dict[tuple[str, str, str, str], str] = {}
+    names = s[s["letter"] != "W"].groupby(["office", "district", "letter", "candidate"])["votes"].sum()
+    for (office_, district_, letter_), g_ in names.groupby(level=[0, 1, 2]):
+        ordered = [c for (_, _, _, c), _v in sorted(g_.items(), key=lambda kv: -kv[1])]
+        heads: list[str] = []
+        for c in ordered:
+            fc = re.sub(r"[^A-Z ]", "", fold(c))
+            hit = next((h for h in heads if person_key(h) != person_key(c) and difflib.SequenceMatcher(None, re.sub(r"[^A-Z ]", "", fold(h)), fc).ratio() >= 0.9
+                        and fold(h).split()[:1] == fold(c).split()[:1]), None)
+            if not hit:  # a bare surname ("PINGREE", "BABIN") and the one fuller name of that surname and party are one person
+                same = [h for h in heads if surname(h) == surname(c)]
+                bare_c = len(fc.split()) == 1
+                bare_h = len(same) == 1 and len(re.sub(r"[^A-Z ]", "", fold(same[0])).split()) == 1
+                hit = same[0] if len(same) == 1 and (bare_c or bare_h) else None
+            if hit:
+                canon[(office_, district_, letter_, c)] = hit
+            else:
+                heads.append(c)
+    person = pd.Series([f"{person_key(canon.get((o, d, l, c), c))}~{l}" if l != "W" else c for o, d, c, l in zip(s["office"], s["district"], s["candidate"], s["letter"])], index=s.index)
     tot = s.assign(person=person).groupby(["office", "district", "person", "letter"])["votes"].sum().reset_index()
     pick: dict[tuple[str, str, str], int] = {}
     for (office, district), g in tot.groupby(["office", "district"]):
@@ -1024,6 +1374,8 @@ def build_state(st: str, year: int, truth: dict) -> str:
             dropped.append(office)
             continue  # nothing reported, or no regular contest that year (odd-year legislatures, DC's delegate)
         dnotes[(st, office)] = district_note(st, year, office, o) if office in DISTRICT_OFFICES else ""
+        if (st, year, office) in SOURCE_OFF:
+            dnotes[(st, office)] = (dnotes[(st, office)] + " " if dnotes[(st, office)] else "") + SOURCE_OFF[(st, year, office)]
         if office in DISTRICT_OFFICES and (st, year, office) in KNOWN:
             why = known_residual(st, year, office, o, None)
             if why:

@@ -3092,11 +3092,12 @@
      }
     ]
    },
-   "Hampden and Hampshire": {
-    "demVotes": 117044,
-    "repVotes": 28078,
+   "First Hampden and Hampshire": {
+    "demVotes": 66944,
+    "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 145122,
+    "totalVotes": 66944,
+    "uncontested": true,
     "candidates": [
      {
       "name": "Eric P. Lesser",
@@ -3104,7 +3105,15 @@
       "votes": 66944,
       "incumbent": true,
       "winner": true
-     },
+     }
+    ]
+   },
+   "Second Hampden and Hampshire": {
+    "demVotes": 50100,
+    "repVotes": 28078,
+    "othVotes": 0,
+    "totalVotes": 78178,
+    "candidates": [
      {
       "name": "John C. Velis",
       "party": "D",
@@ -3118,24 +3127,33 @@
      }
     ]
    },
-   "Middlesex and Norfolk": {
-    "demVotes": 141090,
+   "First Middlesex and Norfolk": {
+    "demVotes": 70430,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 141090,
+    "totalVotes": 70430,
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Cynthia Stone Creem",
+      "party": "D",
+      "votes": 70430,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
+   },
+   "Second Middlesex and Norfolk": {
+    "demVotes": 70660,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 70660,
     "uncontested": true,
     "candidates": [
      {
       "name": "Karen E. Spilka",
       "party": "D",
       "votes": 70660,
-      "incumbent": true,
-      "winner": true
-     },
-     {
-      "name": "Cynthia Stone Creem",
-      "party": "D",
-      "votes": 70430,
       "incumbent": true,
       "winner": true
      }
@@ -3157,24 +3175,33 @@
      }
     ]
    },
-   "Suffolk and Middlesex": {
-    "demVotes": 118026,
+   "First Suffolk and Middlesex": {
+    "demVotes": 57744,
     "repVotes": 0,
     "othVotes": 0,
-    "totalVotes": 118026,
+    "totalVotes": 57744,
+    "uncontested": true,
+    "candidates": [
+     {
+      "name": "Joseph A. Boncore",
+      "party": "D",
+      "votes": 57744,
+      "incumbent": true,
+      "winner": true
+     }
+    ]
+   },
+   "Second Suffolk and Middlesex": {
+    "demVotes": 60282,
+    "repVotes": 0,
+    "othVotes": 0,
+    "totalVotes": 60282,
     "uncontested": true,
     "candidates": [
      {
       "name": "William N. Brownsberger",
       "party": "D",
       "votes": 60282,
-      "incumbent": true,
-      "winner": true
-     },
-     {
-      "name": "Joseph A. Boncore",
-      "party": "D",
-      "votes": 57744,
       "incumbent": true,
       "winner": true
      }

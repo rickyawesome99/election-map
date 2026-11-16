@@ -66,6 +66,9 @@ PARTY_FIX = {
     "WV": {"GCON01RREE": "D", "GCON01RHOL": "I", "GCON02RWEN": "D"},
     # NM House 9: Patricia Lundstrom is a Democrat (unopposed); the file codes her "R".
     "NM": {"GSL09RLUN": "D"},
+    # Washington House: Justin Greywolf (11, Pos. 2) stated a Libertarian preference and Kristina Mitchell (21, Pos. 2)
+    # "Conservative"; the file codes both "R".
+    "WA": {"GSL112RGRE": "O", "GSL212RMIT": "O"},
 }
 # Single-winner offices are stored the way the rest of the site stores them: a Democratic-slot and a
 # Republican-slot candidate per contest (see slot_columns). Legislative offices are party sums, because
@@ -84,10 +87,10 @@ EXPLAINED = {
     ("MN", "SLDU"): "Only the SD45 special election was held; the site has no statewide Senate row for 2024.",
     ("LA", "USH"): "LA-04 was Republican against Republican: the runner-up sits in the D slot here, as in the CA and WA top-two races; the site leaves that slot empty for Louisiana.",
     ("TX", "SLDL"): "Uncontested seats are missing from the RDH file and come from MEDSL by precinct-name match; about 4% of those votes did not match a precinct.",
+    ("NY", "SLDU"): "District 22: Simcha Felder ran unopposed on both major-party lines. The site keeps his Republican-line (46,468) and Democratic-line (28,531) votes apart; the precinct file counts all of them as Democratic. District 42: 6,694 Conservative-line votes for a different candidate sit in the file's Republican total. The other 61 districts match the state canvass.",
     ("KY", "SLDU"): "SD29 was a write-in-only contest: the winner's votes are in the write-in bucket, not a party column.",
 }
 SITE_SUSPECT = {
-    ("NY", "SLDU"): "After the fusion rule both sides credit all party lines to the candidate; the precinct file (party totals only, compiled from county boards) still differs from the state canvass by about 1% in each direction.",
     ("NY", "SLDL"): "After the fusion rule both sides credit all party lines to the candidate; the precinct file (party totals only, compiled from county boards) still differs from the state canvass by about 1% in each direction.",
     ("NY", "USH"): "Precinct sums are about 0.7% above the site's totals for both parties.",
     ("IL", "SLDL"): "24 districts differ by 1-4% in both directions; cause not yet identified.",

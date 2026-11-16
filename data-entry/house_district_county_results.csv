@@ -293,9 +293,9 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source,status,geom
 2016,CA,23,06029,Kern,54072,137257,0,191329,aggregate,exact,yes,yes
 2016,CA,23,06037,Los Angeles,11881,15729,0,27610,aggregate,exact,yes,yes
 2016,CA,23,06107,Tulare,8515,14130,0,22645,aggregate,exact,yes,yes
-2016,CA,24,06079,San Luis Obispo,62727,65503,0,128230,aggregate,close,yes,no
-2016,CA,24,06083,Santa Barbara,98887,74423,0,173310,aggregate,close,yes,no
-2016,CA,24,06111,Ventura,2429,1647,0,4076,aggregate,close,yes,yes
+2016,CA,24,06079,San Luis Obispo,64718,68710,0,133428,precinct,exact,yes,yes
+2016,CA,24,06083,Santa Barbara,98887,74423,0,173310,precinct,exact,yes,no
+2016,CA,24,06111,Ventura,2429,1647,0,4076,precinct,exact,yes,yes
 2016,CA,25,06037,Los Angeles,99962,108545,0,208507,aggregate,exact,yes,yes
 2016,CA,25,06111,Ventura,22444,30210,0,52654,aggregate,exact,yes,yes
 2016,CA,26,06037,Los Angeles,2395,2076,0,4471,aggregate,exact,yes,yes
@@ -17210,38 +17210,38 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source,status,geom
 2024,NJ,2,34015,Gloucester,20002,25519,257,45778,aggregate,exact,yes,yes
 2024,NJ,2,34029,Ocean,21708,43696,312,65716,aggregate,exact,yes,yes
 2024,NJ,2,34033,Salem,11734,18602,452,30788,aggregate,exact,yes,no
-2024,NJ,3,34005,Burlington,120027,83808,3695,207530,aggregate,unverified,yes,yes
-2024,NJ,3,34021,Mercer,35836,23925,1825,61586,aggregate,unverified,yes,yes
-2024,NJ,3,34025,Monmouth,35445,52931,2335,90711,aggregate,unverified,yes,yes
+2024,NJ,3,34005,Burlington,120027,83808,3616,207451,precinct,exact,yes,yes
+2024,NJ,3,34021,Mercer,46562,32715,2142,81419,precinct,exact,yes,yes
+2024,NJ,3,34025,Monmouth,35445,52931,2238,90614,precinct,exact,yes,yes
 2024,NJ,4,34025,Monmouth,52612,87680,1842,142134,aggregate,exact,yes,yes
 2024,NJ,4,34029,Ocean,72191,177972,2249,252412,aggregate,exact,yes,yes
-2024,NJ,5,34003,Bergen,196798,126340,7028,330166,aggregate,unverified,yes,yes
-2024,NJ,5,34031,Passaic,13322,17540,751,31613,aggregate,unverified,yes,yes
-2024,NJ,5,34037,Sussex,18220,27789,1289,47298,aggregate,unverified,yes,yes
+2024,NJ,5,34003,Bergen,176817,119958,6278,303053,precinct,exact,yes,yes
+2024,NJ,5,34031,Passaic,13322,17540,732,31594,precinct,exact,yes,yes
+2024,NJ,5,34037,Sussex,18220,27789,1233,47242,precinct,exact,yes,yes
 2024,NJ,6,34023,Middlesex,111637,71133,8670,191440,aggregate,exact,yes,yes
 2024,NJ,6,34025,Monmouth,58585,51346,2578,112509,aggregate,exact,yes,yes
-2024,NJ,7,34019,Hunterdon,34744,42257,1448,78449,medsl,close,yes,no
-2024,NJ,7,34027,Morris,28768,35812,1263,65843,medsl,close,yes,yes
-2024,NJ,7,34035,Somerset,42416,44577,1732,88725,medsl,close,yes,yes
-2024,NJ,7,34037,Sussex,12827,20483,1086,34396,medsl,close,yes,yes
-2024,NJ,7,34039,Union,57269,44040,1554,102863,medsl,close,yes,yes
-2024,NJ,7,34041,Warren,22261,35290,1263,58814,medsl,close,yes,no
-2024,NJ,8,34013,Essex,12852,6751,984,20587,aggregate,close,yes,yes
-2024,NJ,8,34017,Hudson,88618,51375,11169,151162,aggregate,close,yes,yes
-2024,NJ,8,34039,Union,14248,9419,839,24506,aggregate,close,yes,yes
-2024,NJ,9,34003,Bergen,61684,66518,4062,132264,aggregate,unverified,yes,yes
-2024,NJ,9,34017,Hudson,9287,7958,649,17894,aggregate,unverified,yes,yes
-2024,NJ,9,34031,Passaic,63722,47544,4369,115635,aggregate,unverified,yes,yes
-2024,NJ,10,34013,Essex,105687,20359,3819,129865,aggregate,close,yes,yes
-2024,NJ,10,34017,Hudson,26950,7469,2567,36986,aggregate,close,yes,yes
-2024,NJ,10,34039,Union,48123,25992,1920,76035,aggregate,close,yes,yes
+2024,NJ,7,34019,Hunterdon,34744,42257,1407,78408,precinct,exact,yes,no
+2024,NJ,7,34027,Morris,28768,35812,1225,65805,precinct,exact,yes,yes
+2024,NJ,7,34035,Somerset,42416,44577,1645,88638,precinct,exact,yes,yes
+2024,NJ,7,34037,Sussex,12828,20491,1049,34368,precinct,exact,yes,yes
+2024,NJ,7,34039,Union,59008,44904,1521,105433,precinct,exact,yes,yes
+2024,NJ,7,34041,Warren,22261,35290,1195,58746,precinct,exact,yes,no
+2024,NJ,8,34013,Essex,12852,6751,984,20587,precinct,exact,yes,yes
+2024,NJ,8,34017,Hudson,88618,51375,10415,150408,precinct,exact,yes,yes
+2024,NJ,8,34039,Union,14964,10026,780,25770,precinct,exact,yes,yes
+2024,NJ,9,34003,Bergen,57505,62437,3716,123658,precinct,exact,yes,yes
+2024,NJ,9,34017,Hudson,9287,7958,610,17855,precinct,exact,yes,yes
+2024,NJ,9,34031,Passaic,63722,47544,4234,115500,precinct,exact,yes,yes
+2024,NJ,10,34013,Essex,105687,20359,3819,129865,precinct,exact,yes,yes
+2024,NJ,10,34017,Hudson,26950,7469,2476,36895,precinct,exact,yes,yes
+2024,NJ,10,34039,Union,49383,26577,1857,77817,precinct,exact,yes,yes
 2024,NJ,11,34013,Essex,99674,46944,2545,149163,aggregate,exact,yes,yes
 2024,NJ,11,34027,Morris,105440,96898,3002,205340,aggregate,exact,yes,yes
 2024,NJ,11,34031,Passaic,17462,20713,1227,39402,aggregate,exact,yes,yes
-2024,NJ,12,34021,Mercer,41422,11738,791,53951,aggregate,unverified,yes,yes
-2024,NJ,12,34023,Middlesex,79902,67858,4544,152304,aggregate,unverified,yes,yes
-2024,NJ,12,34035,Somerset,50435,30221,2142,82798,aggregate,unverified,yes,yes
-2024,NJ,12,34039,Union,10692,1942,289,12923,aggregate,unverified,yes,yes
+2024,NJ,12,34021,Mercer,55545,17147,972,73664,precinct,exact,yes,yes
+2024,NJ,12,34023,Middlesex,79902,67858,4316,152076,precinct,exact,yes,yes
+2024,NJ,12,34035,Somerset,50435,30221,2005,82661,precinct,exact,yes,yes
+2024,NJ,12,34039,Union,10989,1996,274,13259,precinct,exact,yes,yes
 2024,NM,1,35001,Bernalillo,142885,89533,0,232418,openelections,exact,yes,yes
 2024,NM,1,35005,Chaves,340,1692,0,2032,openelections,exact,yes,yes
 2024,NM,1,35011,De Baca,219,614,0,833,openelections,exact,yes,no
@@ -17396,8 +17396,8 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source,status,geom
 2024,NY,24,36117,Wayne,14354,28136,27,42517,aggregate,exact,yes,no
 2024,NY,24,36121,Wyoming,4183,14112,0,18295,aggregate,exact,yes,no
 2024,NY,24,36123,Yates,3826,6381,11,10218,aggregate,exact,yes,no
-2024,NY,25,36055,Monroe,155327,92255,0,247582,aggregate,unverified,yes,no
-2024,NY,25,36069,Ontario,5617,5210,8,10835,aggregate,unverified,yes,yes
+2024,NY,25,36055,Monroe,213558,135985,0,349543,precinct,exact,yes,no
+2024,NY,25,36069,Ontario,5617,5210,0,10827,precinct,exact,yes,yes
 2024,NY,26,36029,Erie,186611,91310,0,277921,aggregate,exact,yes,yes
 2024,NY,26,36063,Niagara,22520,20462,18,43000,aggregate,exact,yes,yes
 2024,OH,1,39061,Hamilton,165300,90003,0,255303,wikipedia,exact,yes,yes
