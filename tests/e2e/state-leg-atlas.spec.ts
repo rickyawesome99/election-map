@@ -40,10 +40,9 @@ test("the state page's legislature section links into the atlas and Nebraska has
 
 test("the 2026 outlook and the State Legislatures board agree on a chamber", async ({ page }) => {
   await page.goto("/states/oh/legislature/house#hd-31");
-  // The chamber header carries the 2026 status; the district hero its win probability, and the
+  // The chamber header carries the 2026 status; the district hero its projected margin, and the
   // switcher's locator map is colored by the projection where the chamber is on the ballot.
   await expect(page.getByText("Up in 2026").first()).toBeVisible();
-  await expect(page.getByText(/win prob/i).first()).toBeVisible();
   await expect(page.getByText("= Projected margin")).toBeVisible();
   await expect(page.getByText(/map colored by 2026 projection/)).toBeVisible();
 

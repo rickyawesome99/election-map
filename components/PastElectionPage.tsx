@@ -452,6 +452,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
 
 function houseSourceLabel(source: string | null): string {
   switch (source) {
+    case "precinct": return "County rows summed from precinct returns";
     case "maine-rcv": return "County rows tabulated from the Maine Secretary of State's cast-vote records";
     case "remainder": return "Shared counties by subtraction from the county canvass and the neighbouring district's certified rows";
     case "indiana": return "County rows from the Indiana Secretary of State's canvass";

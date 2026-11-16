@@ -7,7 +7,7 @@ import { join } from "node:path";
 // SUM across every district touching it, for the county pages) a split county has one row per
 // district here. Read with fs on the server so none of its ~20k rows reach the browser.
 
-export type HouseDistrictCountySource = "maine-rcv" | "indiana" | "louisiana" | "openelections" | "wikipedia" | "district" | "aggregate" | "remainder" | "medsl";
+export type HouseDistrictCountySource = "precinct" | "maine-rcv" | "indiana" | "louisiana" | "openelections" | "wikipedia" | "district" | "aggregate" | "remainder" | "medsl";
 export type HouseDistrictCountyStatus = "exact" | "close" | "final-round" | "first-round" | "unverified";
 
 export type HouseDistrictCountyRow = {

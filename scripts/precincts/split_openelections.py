@@ -27,9 +27,14 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data-entry" / "precincts" / "raw"
 OFFICE = {"governor": "GOV", "state house": "SLDL", "state senate": "SLDU", "state representative": "SLDL", "state senator": "SLDU", "house of delegates": "SLDL",
-          "general assembly": "SLDL", "u.s. house": "USH", "us house": "USH", "u.s. senate": "USS", "us senate": "USS", "president": "PRES", "governor and lieutenant governor": "GOV"}
+          "general assembly": "SLDL", "state assembly": "SLDL", "assembly": "SLDL", "u.s. house": "USH", "us house": "USH", "u.s. senate": "USS", "us senate": "USS", "president": "PRES", "governor and lieutenant governor": "GOV"}
 PARTY = {"R": "REPUBLICAN", "REP": "REPUBLICAN", "D": "DEMOCRAT", "DEM": "DEMOCRAT", "IND": "INDEPENDENT", "I": "INDEPENDENT", "NPA": "INDEPENDENT", "L": "LIBERTARIAN", "LBT": "LIBERTARIAN", "LIB": "LIBERTARIAN"}
 NOT_A_CANDIDATE = re.compile(r"^(total|totals|registered voters|ballots cast.*|over ?votes?|under ?votes?|blank.*|turnout)$", re.I)
+
+
+# County files to read beside the statewide one, where the statewide file leaves counties out (Texas 2016:
+# Tarrant and Jefferson, which hold House districts 22, 90-99 and 101).
+EXTRA = {("TX", 2016): ["2016/counties/20161108__tx__general__tarrant__precinct.csv", "2016/counties/20161108__tx__general__jefferson__precinct.csv"]}
 
 
 def files(st: str, year: int, level: str = "precinct") -> list[Path]:
@@ -42,11 +47,11 @@ def files(st: str, year: int, level: str = "precinct") -> list[Path]:
     req = urllib.request.Request(f"https://api.github.com/repos/openelections/openelections-data-{st.lower()}/git/trees/master?recursive=1", headers={"User-Agent": "precinct pipeline"})
     with urllib.request.urlopen(req, timeout=60) as r:
         tree = [x["path"] for x in json.load(r)["tree"]]
-    names = [p for p in tree if re.match(rf"{year}/(counties/|General/)?{year}\d{{4}}__{st.lower()}__general_+(\w+__)?precinct\.csv$", p)]
+    names = [p for p in tree if re.match(rf"{year}/(counties/|General/)?{year}1[01]\d{{2}}__{st.lower()}__general_+(\w+__)?precinct\.csv$", p)]
     statewide = [p for p in names if re.search(rf"__{st.lower()}__general__precinct\.csv$", p)]
     if level == "municipal":  # New Jersey: no statewide precinct file; one row per municipality
         statewide = [p for p in tree if re.match(rf"{year}/{year}\d{{4}}__{st.lower()}__general__municipal\.csv$", p)]
-    for p in statewide or names:
+    for p in (statewide or names) + EXTRA.get((st, year), []):
         subprocess.run(["curl", "-sL", "-o", str(dest / Path(p).name), f"https://raw.githubusercontent.com/openelections/openelections-data-{st.lower()}/master/{p}"], check=True)
     return sorted(dest.glob("*.csv"))
 
@@ -71,7 +76,9 @@ def main() -> None:
     variant = sys.argv[4] if len(sys.argv) > 4 else ""  # "oe": written beside the MEDSL file ({ST}.oe.parquet) to fill contests MEDSL lacks
     code = county_codes(st)
     frames = []
-    for p in files(st, year, level):
+    extra = {Path(x).name for x in EXTRA.get((st, year), [])}
+    seen: set[tuple[str, str, str]] = set()
+    for p in sorted(files(st, year, level), key=lambda q: q.name in extra):  # the statewide file first
         d = pd.read_csv(p, dtype=str, na_filter=False)
         d.columns = [c.strip().lower() for c in d.columns]
         if level == "municipal":  # the municipality stands in for the precinct; the builder keeps its votes inside that town
@@ -82,14 +89,33 @@ def main() -> None:
         for c in ("district", "party", "precinct"):
             if c not in d.columns:
                 d[c] = ""
+        d["office"] = d["office"].str.strip().str.lower().str.strip(" ,")
+        if st == "ND":  # the seats given two-year terms after redistricting are that year's regular contests
+            d["office"] = d["office"].str.replace(r" unexpired 2-year term$", "", regex=True)
+        d["office"] = d["office"].map(OFFICE)
+        d = d[d["office"].notna()]
+        ck = list(zip(d["county"].str.lower().str.strip(), d["office"], d["district"].str.strip().str.lstrip("0")))
+        if p.name in extra:  # an extra county file adds only the contests the statewide file lacks for that county
+            d = d[[k not in seen for k in ck]]
+        seen.update(ck)
         frames.append(d[["county", "precinct", "office", "district", "candidate", "party", "votes"]])
     d = pd.concat(frames, ignore_index=True)
-    d["office"] = d["office"].str.strip().str.lower().map(OFFICE)
-    d = d[d["office"].notna() & ~d["candidate"].map(lambda c: bool(NOT_A_CANDIDATE.match(c.strip())))]
+    if (st, year) == ("TX", 2016):  # the statewide file carries every precinct line twice
+        d = d.drop_duplicates(["county", "precinct", "office", "district", "candidate", "party", "votes"]).reset_index(drop=True)
+    d = d[d["candidate"].str.strip() != ""].reset_index(drop=True)
+    if st == "ME":  # each district block ends with its own total, filed under the last town's name: town, STATE UOCAVA, total
+        v = pd.to_numeric(d["votes"].str.replace(",", ""), errors="coerce").fillna(0)
+        g = [d[c] for c in ("office", "district", "candidate", "party")]
+        last = ~d.duplicated(["office", "district", "candidate", "party"], keep="last")
+        before = v.groupby(g).transform("sum") - v
+        d = d[~(last & (v == before) & (v > 0))].reset_index(drop=True)
+    d = d[~d["candidate"].map(lambda c: bool(NOT_A_CANDIDATE.match(c.strip())))]
     import difflib
     ckey = d["county"].map(fold).str.lower().str.replace(r"[^a-z]", "", regex=True)
     close = {k: (difflib.get_close_matches(k, list(code), n=1, cutoff=0.75) or [k])[0] for k in set(ckey) if k not in code}  # "Gd. Traverse"
     ckey = ckey.replace(close)
+    if st == "IL":  # city election boards report apart from their county
+        ckey = ckey.replace({"cityofchicago": "cook", "cityofbloomington": "mclean", "cityofdanville": "vermilion", "cityofeaststlouis": "stclair", "cityofgalesburg": "knox", "cityofrockford": "winnebago"})
     out = pd.DataFrame({
         "county": ckey.map(code).fillna(""), "jurisdiction": d["county"].str.upper().str.strip(), "precinct": d["precinct"].str.strip(), "office": d["office"],
         "district": d["district"].str.strip(), "candidate": d["candidate"].str.upper().str.strip(),

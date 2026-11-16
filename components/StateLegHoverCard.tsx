@@ -18,8 +18,17 @@ export function HoverBox({ boxRef, width = 228, children }: { boxRef?: Ref<HTMLD
   );
 }
 
-export function HoverTitle({ children }: { children: ReactNode }) {
-  return <div className="mb-1.5 text-[10.5px] font-bold uppercase tracking-[0.07em]" style={{ textWrap: "balance" }}>{children}</div>;
+/** The card's name; `aside` (a margin) sits in the top right, as on the Results page's county card. */
+export function HoverTitle({ children, aside }: { children: ReactNode; aside?: ReactNode }) {
+  const name = <div className="min-w-0 text-[10.5px] font-bold uppercase tracking-[0.07em]" style={{ textWrap: "balance" }}>{children}</div>;
+  return aside
+    ? <div className="mb-1.5 flex items-start justify-between gap-2">{name}<div className="shrink-0">{aside}</div></div>
+    : <div className="mb-1.5">{name}</div>;
+}
+
+/** A margin as the card's top-right figure: the site serif, in the leader's colour. */
+export function HoverFigure({ value, color }: { value: string; color?: string }) {
+  return <span className="whitespace-nowrap tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: 17, lineHeight: 1, letterSpacing: "-0.01em", color: color ?? "var(--app-text-primary)" }}>{value}</span>;
 }
 
 export function HoverRows({ children }: { children: ReactNode }) {

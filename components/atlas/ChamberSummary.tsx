@@ -116,11 +116,36 @@ function MarginPair({ title, adjusted, raw, children }: { title: string; adjuste
   );
 }
 
+/** A rounded card tinted in a party's colour (neutral without one); it reacts as a whole on hover
+ *  (globals.css .ch-card), and the rise-in sits on a wrapper so its animation doesn't hold the card's transform. */
+function TintCard({ tint, delay = 60, children }: { tint: string | null; delay?: number; children: ReactNode }) {
+  return (
+    <div className="vh-in" style={{ animationDelay: `${delay}ms` }}>
+      <div
+        className="ch-card rounded-2xl p-5 sm:p-7"
+        style={{
+          "--ch-border": tint ? `color-mix(in srgb, ${tint} 22%, var(--app-border))` : BORDER,
+          "--ch-border-hover": tint ? `color-mix(in srgb, ${tint} 40%, var(--app-border))` : "var(--app-text-very-muted)",
+          "--ch-shadow": tint ? `0 1px 2px rgb(0 0 0 / 0.04), 0 14px 32px -18px color-mix(in srgb, ${tint} 45%, transparent)` : "0 1px 2px rgb(0 0 0 / 0.04)",
+          "--ch-shadow-hover": tint ? `0 2px 4px rgb(0 0 0 / 0.05), 0 22px 44px -18px color-mix(in srgb, ${tint} 60%, transparent)` : "0 2px 4px rgb(0 0 0 / 0.05), 0 18px 36px -18px rgb(0 0 0 / 0.25)",
+          background: tint
+            ? `radial-gradient(120% 140% at 0% 0%, color-mix(in srgb, ${tint} 11%, var(--app-bg)) 0%, color-mix(in srgb, ${tint} 3%, var(--app-bg)) 55%, var(--app-bg) 100%)`
+            : "var(--app-tab-bg)",
+        } as CSSProperties}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
 /** The chamber's headline: today's seats beside the last election's vote margin, the facts row
- *  (up this year · contested · map first used), then the 2026 projection card (seats, one bar of
- *  the change, control odds) beside its projected margin, adjusted and raw. */
+ *  (up this year · contested · map first used), the 2026 results card (seats won or led, the seats
+ *  that changed hands) beside the counted vote margin. A chamber with no result on file shows the
+ *  2026 projection card instead (seats, one bar of the change, control odds, projected margin).
+ *  Margins are adjusted and raw. */
 export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryData; electionYear: number }) {
-  const { seats, totalSeats, projection, margin, popularVote, upcoming, fieldStats, mapInfo, calendar, currentEra } = s;
+  const { seats, totalSeats, projection, margin, popularVote, upcoming, fieldStats, mapInfo, calendar, currentEra, results2026 } = s;
   const total = totalSeats ?? seats?.total ?? null;
   const projTotal = projection?.totalSeats ?? total ?? 1;
   const majority = projection?.majority ?? (total ? Math.floor(total / 2) + 1 : null);
@@ -136,6 +161,12 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
   const pLead = projection && projLead ? (projLead === "D" ? projection.pDemControl : projection.pRepControl) : null;
   const pSuperLead = projection && projLead ? (projLead === "D" ? projection.pDemSuper : projection.pRepSuper) : null;
   const leadColor = projLead === "D" ? DEM : REP;
+  // The counted election: winners (leaders where uncalled) of the seats up plus the members not up.
+  const resSeats = results2026 ? { dem: results2026.seats.dem, rep: results2026.seats.rep, oth: results2026.seats.oth } : null;
+  const resStatus = resSeats && majority != null ? chamberOutcome(resSeats.dem, resSeats.rep, majority, supermajority) : null;
+  const resNet = seats && resSeats ? netSeats(resSeats, seats) : null;
+  const resLead: "D" | "R" | null = resSeats ? (resSeats.dem > resSeats.rep ? "D" : resSeats.rep > resSeats.dem ? "R" : null) : null;
+  const flipped = results2026 ? results2026.flips.D + results2026.flips.R + results2026.flips.I : 0;
   const frequency = mapInfo?.electionFrequency ?? calendar?.frequency ?? null;
   const asOf = seats ? ("asOf" in seats ? `as of ${new Date(`${seats.asOf}-15`).toLocaleDateString("en-US", { month: "short", year: "numeric" })}` : `after the ${seats.year} election`) : null;
 
@@ -212,22 +243,55 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
           </div>
         )}
         {facts}
-        {fav && (
-          // The card reacts as a whole on hover (globals.css .ch-card); the rise-in sits on a wrapper
-          // so its animation doesn't hold the card's transform.
-          <div className="vh-in" style={{ animationDelay: "60ms" }}>
-          <div
-            className="ch-card rounded-2xl p-5 sm:p-7"
-            style={{
-              "--ch-border": tint ? `color-mix(in srgb, ${tint} 22%, var(--app-border))` : BORDER,
-              "--ch-border-hover": tint ? `color-mix(in srgb, ${tint} 40%, var(--app-border))` : "var(--app-text-very-muted)",
-              "--ch-shadow": tint ? `0 1px 2px rgb(0 0 0 / 0.04), 0 14px 32px -18px color-mix(in srgb, ${tint} 45%, transparent)` : "0 1px 2px rgb(0 0 0 / 0.04)",
-              "--ch-shadow-hover": tint ? `0 2px 4px rgb(0 0 0 / 0.05), 0 22px 44px -18px color-mix(in srgb, ${tint} 60%, transparent)` : "0 2px 4px rgb(0 0 0 / 0.05), 0 18px 36px -18px rgb(0 0 0 / 0.25)",
-              background: tint
-                ? `radial-gradient(120% 140% at 0% 0%, color-mix(in srgb, ${tint} 11%, var(--app-bg)) 0%, color-mix(in srgb, ${tint} 3%, var(--app-bg)) 55%, var(--app-bg) 100%)`
-                : "var(--app-tab-bg)",
-            } as CSSProperties}
-          >
+        {results2026 && resSeats && (
+          <TintCard tint={resLead ? (resLead === "D" ? DEM : REP) : null}>
+            <div className={COLS}>
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
+                  <Mini color={INK}>{results2026.year} results</Mini>
+                  <StatusPill o={resStatus} />
+                </div>
+                <div className="mt-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <SeatFig dem={resSeats.dem} rep={resSeats.rep} oth={resSeats.oth} />
+                  {resNet && <span className="font-bold tabular-nums" style={{ fontSize: "clamp(0.95rem, 2.4vw, 1.2rem)", color: resNet.party === "D" ? DEM : REP }}>+{resNet.seats} {resNet.party}</span>}
+                </div>
+                {total && <div className="mt-4"><ChangeBar now={seats} next={resSeats} total={Math.max(total, resSeats.dem + resSeats.rep + resSeats.oth)} majority={majority} delay={80} /></div>}
+                <div className="mt-2.5 flex flex-col gap-0.5">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs tabular-nums" style={{ color: FAINT }}>
+                    {resNet && (
+                      <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
+                        <span aria-hidden className="inline-block h-2.5 w-3.5 rounded-[2px]" style={{ background: flipBackground(resNet.party === "D" ? DEM : REP, 1.4) }} />
+                        seats gained
+                      </span>
+                    )}
+                    {thresholds.filter(Boolean).map((t) => <span key={t} className="whitespace-nowrap">{t}</span>)}
+                  </div>
+                  <div className="flex flex-wrap gap-x-2.5 text-sm tabular-nums" style={{ color: MUTED }}>
+                    <span className="whitespace-nowrap">
+                      {flipped === 0 ? "No seats flipped" : <>{flipped} seat{flipped === 1 ? "" : "s"} flipped:{" "}
+                        {[
+                          results2026.flips.D ? <b key="D" style={{ color: DEM }}>{results2026.flips.D} to D</b> : null,
+                          results2026.flips.R ? <b key="R" style={{ color: REP }}>{results2026.flips.R} to R</b> : null,
+                          results2026.flips.I ? <b key="I" style={{ color: IND }}>{results2026.flips.I} to I</b> : null,
+                        ].filter(Boolean).map((x, i) => <span key={i}>{i > 0 && " · "}{x}</span>)}</>}
+                    </span>
+                    {results2026.uncalled > 0 && <span className="whitespace-nowrap" style={{ color: FAINT }}>{results2026.uncalled} of {results2026.races} races not yet called</span>}
+                  </div>
+                </div>
+              </div>
+              <div className="vh-in md:pt-1" style={{ animationDelay: "180ms" }}>
+                <MarginPair title={`${results2026.year} vote margin`} adjusted={results2026.adjusted} raw={results2026.raw.margin}>
+                  <div className="mt-2 text-xs tabular-nums" style={{ color: FAINT }}>
+                    <span style={{ color: DEM }}>D {fmtVotes(results2026.raw.dem)}</span> · <span style={{ color: REP }}>R {fmtVotes(results2026.raw.rep)}</span> · {fmtVotes(results2026.raw.votes)} votes
+                  </div>
+                </MarginPair>
+              </div>
+            </div>
+          </TintCard>
+        )}
+        {/* The projection card gives way to the counted result; it stays only where no result is on file. */}
+        {fav && !results2026 && (
+          <TintCard tint={tint}>
             <div className={COLS}>
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
@@ -263,8 +327,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
                 </div>
               ) : <div />}
             </div>
-          </div>
-          </div>
+          </TintCard>
         )}
       </section>
   );

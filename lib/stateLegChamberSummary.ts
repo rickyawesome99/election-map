@@ -6,6 +6,7 @@ import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import { contest2026 } from "@/lib/stateLegAtlas";
 import { projectChamber } from "@/lib/stateLegForecast";
 import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
+import { chamberResults2026 } from "@/lib/stateLegResults2026";
 import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { getChamberMargins } from "@/lib/chamberMargins";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
@@ -13,8 +14,8 @@ import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 /**
  * Everything the chamber header (/states/[id]/legislature/[chamber]) and the chamber cards on the
  * legislature landing page say about one chamber: seats now, the 2026 projection, the corrected
- * chamber margin, the projected popular vote, what's up this cycle and the current map. Server-only
- * (projectChamber, projectChamberPopularVote).
+ * chamber margin, the projected popular vote, the counted 2026 result, what's up this cycle and the
+ * current map. Server-only (projectChamber, projectChamberPopularVote, chamberResults2026).
  */
 export function chamberSummary(abbr: string, stateName: string, chamber: Chamber) {
   const unicameral = UNICAMERAL_STATES.has(abbr);
@@ -65,7 +66,10 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
     };
   })();
 
-  return { unicameral, roster, mapInfo, calendar, seats, totalSeats, upcoming, currentEra, projection, fieldStats, margin, adjustedMargins, popularVote };
+  // The counted 2026 election: seats won or led, seats that changed hands, the vote margin.
+  const results2026 = chamberResults2026(abbr, chamber);
+
+  return { unicameral, roster, mapInfo, calendar, seats, totalSeats, upcoming, currentEra, projection, fieldStats, margin, adjustedMargins, popularVote, results2026 };
 }
 
 export type ChamberSummaryData = ReturnType<typeof chamberSummary>;

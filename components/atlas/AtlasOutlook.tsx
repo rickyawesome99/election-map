@@ -1,6 +1,7 @@
 "use client";
 
 import { LedgerSectionHead, LedgerSubhead } from "@/components/LedgerSectionHead";
+import FinalForecastPill from "@/components/FinalForecastPill";
 import type { AtlasDistrict, AtlasEra, AtlasIndependent } from "@/lib/stateLegAtlas";
 import { projectedMarginColor, fmtMargin } from "@/lib/colorScale";
 
@@ -149,7 +150,7 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
 
   return (
     <section>
-      <LedgerSectionHead label="Forecast Calculation" />
+      <LedgerSectionHead label="Forecast Calculation" right={<FinalForecastPill />} rightClassName="self-center -my-1.5" />
 
       {/* Headline: the projected margin and the win chance, as on the race pages. */}
       {contested ? (

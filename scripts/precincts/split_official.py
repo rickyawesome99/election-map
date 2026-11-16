@@ -111,7 +111,14 @@ def results_2026(st: str) -> None:
     d = pd.read_csv(ROOT / "data-entry" / "results-2026" / "precincts" / f"{st}.csv.gz", dtype=str, na_filter=False)
     d = d[d["special"].isin(["0", ""])]
     office = d["office"].map({"senate": "USS", "governor": "GOV", "house": "USH", "state_house": "SLDL", "state_senate": "SLDU"})
-    d = d[office.notna()]
+    d = d[office.notna()].copy()
+    # Georgia counties differ in how they print a name: some append "(I)" for the incumbent and the party
+    # in brackets ("NIKEMA WILLIAMS (I) (DEM)"), which the results build reads as an independent.
+    tag = d["candidate"].str.extract(r"^(.*?)\s*(?:\(I\))?\s*\((DEM|REP)\)\s*$", flags=re.I)
+    hit = tag[1].notna()
+    d.loc[hit, "candidate"] = tag.loc[hit, 0]
+    d.loc[hit, "party_simple"] = tag.loc[hit, 1].str.upper().str[0]
+    d["candidate"] = d["candidate"].str.replace(r"\s*\(I\)\s*$", "", regex=True)
     write(st, 2026, pd.DataFrame({
         "county": d["county_fips"].str.zfill(5), "jurisdiction": d["county_name"].str.upper(), "precinct": d["precinct_name"].str.strip().where(d["precinct_name"].str.strip() != "", d["precinct_id"]),
         "office": office[d.index], "district": [re.sub(r"-P\d+$", "", x) if o in ("house", "state_house", "state_senate") else "" for x, o in zip(d["seat"], d["office"])],

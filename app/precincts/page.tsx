@@ -45,18 +45,17 @@ export default function PrecinctsPage() {
     })
     .sort((a, b) => a.name.localeCompare(b.name));
 
-  const years = coverage.years
-    .filter((y) => y % 2 === 0)
-    .map((year) => ({ year, loaded: states.some((s) => s.years[String(year)]) }));
+  // Every year in the grid; the explorer shows odd years only for a state that voted in them.
+  const years = coverage.years.map((year) => ({ year, loaded: states.some((s) => s.years[String(year)]) }));
   const precincts = states.reduce((n, s) => n + s.n, 0);
   const loadedYears = years.filter((y) => y.loaded).map((y) => y.year);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <StandfirstHeader kicker="Precincts" title="Precinct Results">
+      <StandfirstHeader title="Precinct Results">
         <Fig>{precincts.toLocaleString()}</Fig> precincts in <Fig>{states.length}</Fig> states, each with its vote for president,
-        Senate, governor, U.S. House and the state legislature. Results so far: <Fig>{loadedYears.join(", ")}</Fig>. Earlier years
-        are being fitted onto the same 2024 precinct lines.
+        Senate, governor, U.S. House and the state legislature. Every general election from <Fig>{loadedYears[0]}</Fig> to <Fig>{loadedYears.at(-1)}</Fig>
+        is fitted onto the same 2024 precinct lines, so a precinct can be followed through time.
       </StandfirstHeader>
       <main className="mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6">
         <PrecinctExplorer states={states} years={years} />

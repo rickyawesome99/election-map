@@ -242,7 +242,6 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             {forecastRating}
           </span>
           <HeldPill party={currentRepParty} />
-          <FinalForecastPill />
         </>}
         nav={<RaceRail items={railItems} current={race.name} label="Choose a district" />}
         map={switcherDistricts.length > 1
@@ -349,7 +348,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           </section>
 
           <section>
-            <LedgerSectionHead label="Forecast Calculation" />
+            <LedgerSectionHead label="Forecast Calculation" right={<FinalForecastPill />} rightClassName="self-center -my-1.5" />
             <ForecastCalculationCard
               bare
               tpl={districtTpl}

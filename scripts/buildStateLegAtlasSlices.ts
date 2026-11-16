@@ -9,7 +9,8 @@
  * (the react-server condition because the projection module is server-only)
  * Rerun after any of its inputs change: stateLegDistricts, stateLegDemographics, stateLegPres2024,
  * stateLegPresByEra, stateLegResults, stateLegRedistricting, stateLegHistoricalMaps, stateLegCalendar,
- * stateLegCandidates2026, stateLegOutgoing2026, stateLegFinance, and the turnout inputs behind lib/stateLegPopularVote.ts.
+ * stateLegCandidates2026, stateLegOutgoing2026, stateLegFinance, the turnout inputs behind lib/stateLegPopularVote.ts,
+ * and the 2026 results files (data-entry/results-2026/, read by lib/stateLegResults2026.ts).
  */
 import { mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
@@ -25,6 +26,7 @@ import { stateLegCandidates2026, stateLegCandidates2026Fetched } from "../data/s
 import { stateLegOutgoing2026 } from "../data/stateLegOutgoing2026";
 import { projectChamber, projectDistrict } from "../lib/stateLegForecast";
 import { projectChamberPopularVote } from "../lib/stateLegPopularVote";
+import { chamberResults2026, districtResults2026, unmatchedRaces2026 } from "../lib/stateLegResults2026";
 import { stateLegMoneyHistory } from "../lib/stateLegMoney";
 import { getNationalEnvironment } from "../lib/tplCompute";
 import { compareDistrictKeys, type AtlasChamber, type AtlasDistrict, type AtlasEra, type AtlasPresVote, type AtlasResult } from "../lib/stateLegAtlas";
@@ -53,6 +55,8 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
   const candidates2026 = stateLegCandidates2026[abbr]?.[chamber];
   const outgoing2026 = stateLegOutgoing2026[abbr]?.[chamber];
   const chamberProjection = projectChamber(abbr, chamber);
+  const results2026 = districtResults2026(abbr, chamber);
+  const chamberResults = chamberResults2026(abbr, chamber);
   // A chamber with nothing on the 2026 ballot has no chamber projection, but every district still
   // gets its lean ledger (contest "not-up") for the district page's lean trend.
   const popularVote = projectChamberPopularVote(abbr, chamber);
@@ -133,6 +137,7 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       if (demographics[key]) out.demographics = demographics[key];
       if (candidates2026?.[key]) out.candidates2026 = candidates2026[key];
       if (outgoing2026?.[key]) out.outgoing2026 = outgoing2026[key];
+      if (results2026.has(key)) out.result2026 = results2026.get(key)!;
       const money = stateLegMoneyHistory(abbr, chamber, key);
       if (money.length) out.money = money.map((m) => ({
         year: m.year, source: m.source, dataThrough: m.dataThrough,
@@ -167,6 +172,7 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       pDemSuper: chamberProjection.pDemSuper, pRepSuper: chamberProjection.pRepSuper, unprojected: chamberProjection.unprojected,
       eHat: +getNationalEnvironment().eHat.toFixed(2), sigmaE: +getNationalEnvironment().sigmaE.toFixed(2),
     } } : {}),
+    ...(chamberResults ? { results2026: { ...chamberResults, raw: { ...chamberResults.raw, margin: chamberResults.raw.margin == null ? null : +chamberResults.raw.margin.toFixed(2) }, adjusted: chamberResults.adjusted == null ? null : +chamberResults.adjusted.toFixed(2) } } : {}),
     eras,
     electionYears: calendar?.electionYears ?? [],
     districts,
@@ -189,4 +195,5 @@ for (const abbr of abbrs) {
     bytes += text.length;
   }
 }
+if (unmatchedRaces2026().length) console.warn(`2026 results: ${unmatchedRaces2026().length} races matched no district: ${unmatchedRaces2026().join(", ")}`);
 console.log(`wrote ${files} chamber slices to public/state-leg-atlas/ (${(bytes / 1e6).toFixed(1)} MB total, ${(bytes / files / 1e3).toFixed(0)} KB average)`);

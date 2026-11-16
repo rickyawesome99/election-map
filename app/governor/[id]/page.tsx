@@ -225,7 +225,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             {forecastRating}
           </span>
           <HeldPill party={currentGovernorParty} />
-          <FinalForecastPill />
         </>}
         nav={<RaceRail items={GOVERNOR_RAIL} current={race.id.toLowerCase()} label="Choose a governor's race" />}
         fitTitle={{ chars: `${race.name} Governor`.length, emPerChar: 0.62, reservePx: 0 }}
@@ -314,7 +313,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
           </section>
 
           <section>
-            <LedgerSectionHead label="Forecast Calculation" />
+            <LedgerSectionHead label="Forecast Calculation" right={<FinalForecastPill />} rightClassName="self-center -my-1.5" />
             <ForecastCalculationCard
               bare
               tpl={stateTpl}

@@ -1,6 +1,7 @@
 import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
+import { houseDistrictCountyRowsAtLock } from "@/lib/locked2026HouseDistrictCounty";
 import { countyPresidentialData } from "@/lib/locked2026CountyData";
 import { countySenateData } from "@/lib/locked2026CountyData";
 import { countyGovernorData } from "@/lib/locked2026CountyData";
@@ -193,7 +194,8 @@ export function countyDistrictShares2026(): CountyShare[] {
 /** Shares for a past year from the district-by-county results file (a county piece's share of the
  *  county's House votes); used by the backtest. Counties whose pieces recorded no votes are split evenly. */
 export function countyDistrictSharesFor(year: number): CountyShare[] {
-  const rows = parseCsv(readFileSync(join(process.cwd(), "data-entry", "house_district_county_results.csv"), "utf8")).filter((r) => Number(r.year) === year && r.status !== "missing");
+  // The rows as they stood at the 2026 lock (six districts were repaired afterwards; see lib/locked2026HouseDistrictCounty.ts).
+  const rows = houseDistrictCountyRowsAtLock().filter((r) => Number(r.year) === year && r.status !== "missing");
   const byCounty = new Map<string, { district: string; total: number }[]>();
   for (const r of rows) {
     const st = STATE_FIPS_BY_ABBR[r.state];

@@ -10,7 +10,7 @@ import { normalizeGeographyWinding } from "@/lib/geoWinding";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, fmtMargin } from "@/lib/colorScale";
 import { FlipPatternDefs } from "@/components/FlipStripes";
-import { HOVER_LABEL, HoverBox, HoverFoot, HoverNote, HoverRow, HoverRows, HoverTitle, HoverTotal } from "@/components/StateLegHoverCard";
+import { HOVER_LABEL, HoverBox, HoverFoot, HoverNote, HoverRow, HoverRows, HoverFigure, HoverTitle, HoverTotal } from "@/components/StateLegHoverCard";
 import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
 import { extractDistrictCode } from "@/lib/stateLegBoundaryCode";
 import { districtResultMargin } from "@/lib/useStateLegResults";
@@ -150,7 +150,7 @@ export default function StateLegDistrictMap({
    * A caller-defined shading (the atlas's 2026 projection): per-district fill, tooltip lines,
    * legend and footnote. When set it replaces the view-mode fill, tooltip body and legend.
    */
-  custom?: { fill: Record<string, string>; tip: Record<string, { label: string; value: string; color?: string }[]>; legend: { label: string; bg: string }[]; note?: string; flipColors?: string[] } | null;
+  custom?: { fill: Record<string, string>; tip: Record<string, { label: string; value: string; color?: string }[]>; legend: { label: string; bg: string }[]; note?: string; flipColors?: string[]; /** A district's margin, shown top right of its hover card. */ headline?: Record<string, { value: string; color?: string }>; /** Leave the "Last elected" line off the hover card. */ hideLastElected?: boolean } | null;
   /** Drop the legend and the fine print under it (projection note, boundary/source line). */
   hideLegend?: boolean;
   /** Keep the legend but drop the fine print under it (view note, boundary/source line). */
@@ -392,7 +392,7 @@ export default function StateLegDistrictMap({
           const tipW = hoveredCandidates.length > 0 ? 250 : 228;
           return (
             <HoverBox boxRef={tip.tooltipRef} width={tipW}>
-              <HoverTitle>{hoveredLabel}</HoverTitle>
+              <HoverTitle aside={custom?.headline?.[hoveredKey] ? <HoverFigure {...custom.headline[hoveredKey]} /> : undefined}>{hoveredLabel}</HoverTitle>
               {custom ? (
                 <HoverRows>
                   {(custom.tip[hoveredKey] ?? [{ label: "No projection", value: "" }]).map((line, i) => (
@@ -459,7 +459,7 @@ export default function StateLegDistrictMap({
               ) : (
                 <HoverNote>Vacant</HoverNote>
               )}
-              {viewMode === "seats" && hoveredDistrict?.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
+              {viewMode === "seats" && !custom?.hideLastElected && hoveredDistrict?.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
                 <HoverFoot>Last elected {hoveredDistrict.lastElection}</HoverFoot>
               )}
               {/* In the upcoming view the one thing worth saying is whether this district is voting,

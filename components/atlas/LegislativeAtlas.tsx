@@ -12,7 +12,7 @@ import { useStaticJson } from "@/lib/useStaticJson";
 import { useRevealOnce } from "@/lib/useRevealOnce";
 import { SlidingPills } from "@/components/state/StateMotion";
 import { useStateLegResults } from "@/lib/useStateLegResults";
-import { atlasSliceUrl, contest2026, projectedSeatWinners, districtHash, keyFromHash, resultMargin, shortDistrictName, type AtlasChamber, type AtlasDistrict } from "@/lib/stateLegAtlas";
+import { atlasSliceUrl, contest2026, projectedSeatWinners, districtHash, keyFromHash, resultMargin, shortDistrictName, type AtlasChamber, type AtlasDistrict, type AtlasResult2026 } from "@/lib/stateLegAtlas";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 import { candidateSlug } from "@/lib/candidateSlug";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
@@ -24,7 +24,7 @@ import type { StateLegEntry } from "@/data/forecastData";
 import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
 import type { StateLegDistrictResult } from "@/data/stateLegResults";
 
-type ColorMode = "projection" | "seats" | "president" | "results";
+type ColorMode = "election" | "projection" | "seats" | "president" | "results";
 type Filter = "all" | "up" | "competitive" | "open" | "unopposed";
 type BoxOrder = "sorted" | "district";
 
@@ -99,12 +99,50 @@ function projectedFlip(d: AtlasDistrict): { from: "D" | "R" | "I"; to: "D" | "R"
   return to && to !== from ? { from, to } : null;
 }
 const FLIP_LEGEND = { label: "Projected flip", bg: flipBackground("#6e7781") };
+const FLIPPED_LEGEND = { label: "Flipped", bg: flipBackground("#6e7781") };
+
+/** The parties holding a district's seats after the count, one entry per seat (D, then I, then R). */
+function seatParties(res: AtlasResult2026): ("D" | "R" | "I")[] {
+  return [...Array(res.winners.D).fill("D"), ...Array(res.winners.I).fill("I"), ...Array(res.winners.R).fill("R")];
+}
+
+/**
+ * How a district reads in the 2026 results view. A Democrat against a Republican is shaded by the
+ * margin; a seat with one major party, an independent winner or no printed count takes the winner's
+ * solid colour; a multi-member district that split is purple. `score` orders the seat strip D to R.
+ */
+function electionShade(res: AtlasResult2026 | undefined): { fill: string; darkText: boolean; score: number; kind: "margin" | "solid" | "split" | "none" } {
+  if (!res) return { fill: NO_DATA, darkText: true, score: NaN, kind: "none" };
+  const parties = [...new Set(seatParties(res))];
+  if (parties.length === 0) return { fill: NO_DATA, darkText: true, score: NaN, kind: "none" };
+  if (parties.length > 1) return { fill: SPLIT_FILL, darkText: false, score: 0, kind: "split" };
+  const p = parties[0];
+  const m = res.margin;
+  // The margin colours the seat only when it names the party that won it.
+  if (p !== "I" && m != null && res.dem > 0 && res.rep > 0 && (m > 0 ? "R" : "D") === p) return { fill: getRaceColor(m), darkText: Math.abs(m) < 10, score: m, kind: "margin" };
+  return { fill: PARTY_FILL[p], darkText: false, score: p === "D" ? -200 : p === "R" ? 200 : 0, kind: "solid" };
+}
 
 /** The box grid's hover card for one district under the current color mode. */
 function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, electionYear: number): BoxTip {
   // A 2026 special: the whole race ("… Special"), or one seat beside the regular race (West Virginia).
   const special = d.candidates2026?.special ? (d.candidates2026.candidates.every((c) => c.special) ? " Special" : " + Special") : "";
-  const heading = mode === "projection" ? `${d.label}${special}` : d.label;
+  const heading = mode === "projection" || mode === "election" ? `${d.label}${special}` : d.label;
+  if (mode === "election") {
+    const res = d.result2026;
+    if (!res) return { heading, lines: [{ label: `Not on the ${electionYear} ballot`, value: d.nextElection ? `next ${d.nextElection}` : undefined }] };
+    const lines: BoxTipLine[] = res.races.flatMap((r) => r.candidates.map((c) => ({
+      label: c.name, color: PARTY_TEXT[c.party],
+      sub: [c.winner ? "won" : "", r.special ? "special" : r.post ? `pos. ${r.post}` : "", c.incumbent ? "inc." : ""].filter(Boolean).join(" · ") || undefined,
+      value: c.votes == null ? "—" : c.votes.toLocaleString(),
+    })));
+    const counted = res.races.length === 1 ? res.races[0].counted : null;
+    const note = [counted != null && counted > 0 && counted < 0.995 ? `About ${Math.round(counted * 100)}% counted` : "", res.called ? "" : "Not yet called"].filter(Boolean).join(" · ") || undefined;
+    const sh = electionShade(res);
+    if (res.total <= 0) return { heading, lines, total: sh.kind === "none" ? undefined : { label: "No count printed", value: seatParties(res).join(" · "), color: sh.kind === "solid" ? PARTY_TEXT[seatParties(res)[0]] : "var(--app-text-primary)" }, note };
+    if (sh.kind === "split") return { heading, lines, total: { label: "Seats", value: `${res.winners.D} D · ${res.winners.R} R${res.winners.I ? ` · ${res.winners.I} I` : ""}`, color: "var(--app-text-primary)" }, note };
+    return { heading, lines, total: res.margin == null ? undefined : { label: res.dem > 0 && res.rep > 0 ? "Margin" : "One major party", value: fmtMargin(res.margin), color: marginColor(res.margin) }, note };
+  }
   if (mode === "projection") {
     const pr = d.projection;
     const field = d.candidates2026?.candidates ?? [];
@@ -237,8 +275,11 @@ export default function LegislativeAtlas({
   const districts = useMemo(() => data?.districts ?? [], [data]);
   const byKey = useMemo(() => new Map(districts.map((d) => [d.key, d])), [districts]);
   // The projection leads where the chamber is on the ballot; a chamber sitting 2026 out opens on seat party.
+  // Results too: where the chamber held a 2026 election, the count leads.
   const hasProjection = !!data?.projection;
-  const mode: ColorMode = modeChoice ?? (hasProjection ? "projection" : "seats");
+  const hasElection = !!data?.results2026;
+  const defaultMode: ColorMode = hasElection ? "election" : hasProjection ? "projection" : "seats";
+  const mode: ColorMode = modeChoice ?? defaultMode;
 
   // A key the data doesn't know (a stale link) falls back to the explorer once the data is in.
   const selected: AtlasDistrict | null = hashKey ? byKey.get(hashKey) ?? null : null;
@@ -320,7 +361,7 @@ export default function LegislativeAtlas({
   };
   // A history card toggles: clicking the year already on the map takes it back off.
   const selectYear = (year: number) => {
-    if (mode === "results" && year === activeYear) { setModeChoice(preResultsMode ?? (hasProjection ? "projection" : "seats")); return; }
+    if (mode === "results" && year === activeYear) { setModeChoice(preResultsMode ?? defaultMode); return; }
     setResultsYear(year);
     setModeChoice("results");
   };
@@ -364,7 +405,9 @@ export default function LegislativeAtlas({
     () =>
       districts.map((d) => {
         let fill = NO_DATA, darkText = true;
-        if (mode === "projection") {
+        if (mode === "election") {
+          ({ fill, darkText } = electionShade(d.result2026));
+        } else if (mode === "projection") {
           const pr = d.projection;
           if (pr?.contest === "contested" && pr.margin != null) { fill = getRaceColor(pr.margin); darkText = Math.abs(pr.margin) < 10; }
           else if (pr?.contest === "uncontested-D") { fill = PARTY_FILL.D; darkText = false; }
@@ -394,7 +437,7 @@ export default function LegislativeAtlas({
           fill,
           darkText,
           dimmed: !passes(d),
-          flip: mode === "projection" && fill !== NO_DATA && !!projectedFlip(d),
+          flip: fill !== NO_DATA && (mode === "projection" ? !!projectedFlip(d) : mode === "election" ? !!d.result2026?.flip : false),
           tip: boxTip(d, mode, activeYear, electionYear),
           title: `${d.label} · ${inc}${p != null ? ` · 2024 pres ${p > 0 ? "R" : "D"}+${Math.abs(p).toFixed(1)}` : ""}${c ? ` · ${electionYear}: ${c.label}` : isUp(d) ? ` · up in ${electionYear}` : ""}`,
         };
@@ -416,10 +459,29 @@ export default function LegislativeAtlas({
       const label = /^(\d{1,3}[A-Za-z]?|[A-Z]{1,2})$/.test(short) ? short : null;
       const pres = d.presCurrent["2024"]?.margin ?? 0;
       const pr = d.projection;
-      const up = mode !== "projection" || !pr || pr.contest === "not-up" ? (mode === "projection" ? 0 : total) : Math.min(pr.seats, total);
+      const res = d.result2026;
+      const won = mode === "election" && res ? seatParties(res) : [];
+      const shade = mode === "election" ? electionShade(res) : null;
+      const up = mode === "election" ? Math.min(res?.seats ?? 0, total)
+        : mode !== "projection" || !pr || pr.contest === "not-up" ? (mode === "projection" ? 0 : total) : Math.min(pr.seats, total);
+      // Members whose seats were not on the 2026 ballot (West Virginia's staggered pairs name which).
+      const notUp = d.incumbents.filter((x) => (x.nextElection ?? d.nextElection) !== electionYear);
+      const holdovers = notUp.length === total - up ? notUp : d.incumbents;
       for (let i = 0; i < total; i++) {
         let fill = box.fill, darkText = box.darkText, flip = box.flip, score = NaN;
-        if (mode === "projection") {
+        if (mode === "election") {
+          if (i < up && shade) {
+            // A split district shows each seat in its winner's colour; otherwise the district's shade.
+            if (shade.kind === "split") { const p = won[i]; fill = p ? PARTY_FILL[p] : NO_DATA; darkText = !p; score = p === "D" ? -200 : p === "R" ? 200 : p ? 0 : NaN; flip = false; }
+            else score = shade.score;
+          } else {
+            const inc = holdovers[i - up];
+            fill = inc ? HOLDOVER_FILL[inc.party] ?? NO_DATA : NO_DATA;
+            darkText = !inc;
+            flip = false;
+            if (inc) score = sign(inc.party) * 150 + pres * 0.4;
+          }
+        } else if (mode === "projection") {
           if (i < up && pr) {
             if ((pr.contest === "contested" || pr.contest === "independent") && pr.margin != null) score = pr.contest === "independent" && (pr.pI ?? 0) >= 0.5 ? 0 : pr.margin;
             else if (pr.contest === "uncontested-D") score = -200;
@@ -450,7 +512,7 @@ export default function LegislativeAtlas({
     });
     out.sort((a, b) => (Number.isNaN(a.score) ? 1 : 0) - (Number.isNaN(b.score) ? 1 : 0) || (Number.isNaN(a.score) ? 0 : a.score - b.score) || a.order - b.order);
     return out;
-  }, [districts, boxes, mode, chamber, activeYear]);
+  }, [districts, boxes, mode, chamber, activeYear, electionYear]);
   const sorted = boxOrder === "sorted";
 
   // The grid's own colours beyond the margin scale the map legend already shows, listed only when
@@ -459,7 +521,14 @@ export default function LegislativeAtlas({
     const shownBoxes: BoxItem[] = sorted ? seatBoxes : boxes;
     const used = new Set(shownBoxes.map((b) => b.fill));
     const out: { label: string; bg: string }[] = [];
-    if (mode === "projection") {
+    if (mode === "election") {
+      if (used.has(PARTY_FILL.D) || used.has(PARTY_FILL.R)) out.push({ label: "One major party or no count", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
+      if (used.has(PARTY_FILL.I)) out.push({ label: "Independent", bg: PARTY_FILL.I });
+      if (used.has(SPLIT_FILL)) out.push({ label: "Split between parties", bg: SPLIT_FILL });
+      if (shownBoxes.some((b) => b.flip)) out.push(FLIPPED_LEGEND);
+      if (Object.values(HOLDOVER_FILL).some((f) => used.has(f))) out.push({ label: `Not up in ${electionYear}`, bg: `linear-gradient(135deg, ${HOLDOVER_FILL.D} 50%, ${HOLDOVER_FILL.R} 50%)` });
+      if (used.has(NO_DATA)) out.push({ label: "No result", bg: NO_DATA });
+    } else if (mode === "projection") {
       if (used.has(PARTY_FILL.D) || used.has(PARTY_FILL.R)) out.push({ label: "Unopposed", bg: `linear-gradient(135deg, ${PARTY_FILL.D} 50%, ${PARTY_FILL.R} 50%)` });
       if (used.has(PARTY_FILL.I)) out.push({ label: "Independent favored", bg: PARTY_FILL.I });
       if (used.has(SPLIT_FILL)) out.push({ label: "Split by the field", bg: SPLIT_FILL });
@@ -491,13 +560,49 @@ export default function LegislativeAtlas({
     const ok = new Set(districts.filter(passes).map((d) => d.key));
     return roster.filter((d) => ok.has(d.number));
   }, [data, roster, districts, passes]);
-  const mapMode: MapViewMode = mode === "projection" ? "seats" : mode;
+  const mapMode: MapViewMode = mode === "projection" || mode === "election" ? "seats" : mode;
   // The counter in the projection view: each district's seats go to its projected leader (the
   // map's colour), an uncontested seat to the only major party on the ballot, and seats not up
   // to their sitting member. Whole chamber, like the other counters.
-  const projectedSeats = useMemo((): ProjectedSeats | null => (mode === "projection" ? projectedSeatWinners(districts) : null), [mode, districts]);
-  const fmtM = (m: number) => (m === 0 ? "Even" : `${m > 0 ? "R" : "D"}+${Math.abs(m).toFixed(1)}`);
+  // In the results view: the winners (leaders where uncalled) of the seats up plus the members not up.
+  const projectedSeats = useMemo((): ProjectedSeats | null => {
+    if (mode === "projection") return projectedSeatWinners(districts);
+    const s = mode === "election" ? data?.results2026?.seats : null;
+    return s ? { D: s.dem, R: s.rep, I: s.oth, O: 0, none: s.none } : null;
+  }, [mode, districts, data]);
   const customShading = useMemo(() => {
+    if (mode === "election") {
+      const fill: Record<string, string> = {};
+      const tip: Record<string, { label: string; value: string; color?: string }[]> = {};
+      const flipColors: string[] = [];
+      // The margin sits top right of the hover card, as on the other result cards.
+      const headline: Record<string, { value: string; color?: string }> = {};
+      for (const d of districts) {
+        const res = d.result2026;
+        if (!res) { tip[d.key] = [{ label: "Not on the ballot", value: d.nextElection ? `next ${d.nextElection}` : "" }]; continue; }
+        const sh = electionShade(res);
+        const lines: { label: string; value: string; color?: string }[] = [];
+        // The leading candidates, up to four, then the margin or the seats.
+        for (const r of res.races) for (const c of r.candidates.slice(0, Math.max(2, r.seats + 1))) {
+          if (lines.length >= 4) break;
+          lines.push({ label: `${c.name}${c.winner ? " ✓" : ""}`, value: c.pct != null ? `${c.pct.toFixed(1)}%` : c.party === "O" ? "I" : c.party, color: PARTY_TEXT[c.party] });
+        }
+        if (sh.kind === "split") lines.push({ label: "Seats", value: `${res.winners.D} D · ${res.winners.R} R${res.winners.I ? ` · ${res.winners.I} I` : ""}` });
+        else if (res.margin != null && res.dem > 0 && res.rep > 0) headline[d.key] = { value: fmtMargin(res.margin), color: res.margin === 0 ? undefined : marginColor(res.margin) };
+        else if (res.total <= 0) lines.push({ label: "No count printed", value: "" });
+        const counted = res.races.length === 1 ? res.races[0].counted : null;
+        if (counted != null && counted > 0 && counted < 0.995) lines.push({ label: "Counted", value: `about ${Math.round(counted * 100)}%` });
+        if (!res.called) lines.push({ label: "Not yet called", value: "" });
+        if (sh.kind !== "none") fill[d.key] = sh.fill;
+        if (res.flip && fill[d.key]) {
+          flipColors.push(fill[d.key]);
+          fill[d.key] = flipFill(fill[d.key]);
+        }
+        tip[d.key] = lines;
+      }
+      const legend = [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label) => ({ label, bg: getRatingColors(label).bg })), FLIPPED_LEGEND];
+      return { fill, tip, legend, flipColors, headline, hideLastElected: true, note: `${electionYear} results as counted: shaded by the winner's (or leader's) margin; solid party colour = one major party on the ballot or no count printed; stripes = the seat changed hands.` };
+    }
     if (mode !== "projection") return null;
     const fill: Record<string, string> = {};
     const tip: Record<string, { label: string; value: string; color?: string }[]> = {};
@@ -507,14 +612,14 @@ export default function LegislativeAtlas({
       if (pr.contest === "contested" && pr.margin != null && pr.pD != null) {
         fill[d.key] = getRaceColor(pr.margin);
         tip[d.key] = [
-          { label: "Projected margin", value: fmtM(pr.margin), color: pr.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" },
+          { label: "Projected margin", value: fmtMargin(pr.margin), color: pr.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" },
           { label: "Rating", value: pr.rating ?? "" },
           ...(d.candidates2026 ? [{ label: "Field", value: contest2026(d.candidates2026, d.incumbents)?.label ?? "" }] : []),
         ];
       } else if (pr.contest === "uncontested-D" || pr.contest === "uncontested-R") {
         const dem = pr.contest === "uncontested-D";
         fill[d.key] = dem ? PARTY_FILL.D : PARTY_FILL.R;
-        tip[d.key] = [{ label: dem ? "No Republican on the ballot" : "No Democrat on the ballot", value: dem ? "Democratic hold/gain" : "Republican hold/gain", color: dem ? "var(--party-dem)" : "var(--party-rep)" }, ...(pr.lean != null ? [{ label: "Lean", value: fmtM(pr.lean) }] : [])];
+        tip[d.key] = [{ label: dem ? "No Republican on the ballot" : "No Democrat on the ballot", value: dem ? "Democratic hold/gain" : "Republican hold/gain", color: dem ? "var(--party-dem)" : "var(--party-rep)" }, ...(pr.lean != null ? [{ label: "Lean", value: fmtMargin(pr.lean) }] : [])];
       } else if (pr.contest === "independent" && pr.indep && pr.pI != null && pr.margin != null) {
         const opp = pr.indep.slot === "D" ? "R" : "D";
         fill[d.key] = pr.pI >= 0.5 ? PARTY_FILL.I : getRaceColor(pr.margin);
@@ -528,7 +633,7 @@ export default function LegislativeAtlas({
         tip[d.key] = [{ label: "No major party on the ballot", value: "Independent", color: "var(--party-ind)" }];
       } else if (pr.contest === "split" && pr.guaranteed) {
         fill[d.key] = SPLIT_FILL;
-        tip[d.key] = [{ label: "Every seat decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R` }, ...(pr.lean != null ? [{ label: "Lean", value: fmtM(pr.lean) }] : [])];
+        tip[d.key] = [{ label: "Every seat decided by the field", value: `${pr.guaranteed.dem} D · ${pr.guaranteed.rep} R` }, ...(pr.lean != null ? [{ label: "Lean", value: fmtMargin(pr.lean) }] : [])];
       } else {
         tip[d.key] = [{ label: "No projection", value: pr.contest === "other" ? "no major-party field" : "no candidates listed" }];
       }
@@ -559,7 +664,7 @@ export default function LegislativeAtlas({
   // The table and history sit below the fold: they rise in once scrolled to.
   const { ref: lowerRef, vh: lowerVh } = useRevealOnce();
 
-  const MODE_LABEL: Record<ColorMode, string> = { projection: `${electionYear} projection`, seats: "Seat party", president: "2024 President", results: "Past results" };
+  const MODE_LABEL: Record<ColorMode, string> = { election: `${electionYear} results`, projection: `${electionYear} projection`, seats: "Seat party", president: "2024 President", results: "Past results" };
   // The district page's header takes these two apart, like a House race page: the selector at the
   // pill row's end (under the title on a phone), the locator map at the title line's right.
   const navBtn = "ix-press ix-rail-btn h-8 w-8 shrink-0 grid place-items-center rounded-full text-base disabled:opacity-30";
@@ -611,7 +716,7 @@ export default function LegislativeAtlas({
             <div className="flex flex-wrap items-center gap-1">
               <SlidingPills
                 label="Color by"
-                options={(Object.keys(MODE_LABEL) as ColorMode[]).filter((m) => (m !== "projection" || hasProjection) && (m !== "results" || electionYears.length > 0)).map((m) => ({ key: m, label: MODE_LABEL[m] }))}
+                options={(Object.keys(MODE_LABEL) as ColorMode[]).filter((m) => (m !== "election" || hasElection) && (m !== "projection" || hasProjection) && (m !== "results" || electionYears.length > 0)).map((m) => ({ key: m, label: MODE_LABEL[m] }))}
                 value={mode}
                 onChange={setMode}
               />
@@ -660,7 +765,7 @@ export default function LegislativeAtlas({
           </div>
           {/* Keyed on the view, so the tally fades over when the colours change. */}
           <div key={`${mode}-${mode === "results" ? activeYear : ""}-${results ? 1 : 0}`} className="vh-tab-in mb-4" style={{ minHeight: 22 }}>
-            <DistrictCountBar districts={roster} pres2024={pres2024} results={results} viewMode={mapMode} projected={projectedSeats} />
+            <DistrictCountBar districts={roster} pres2024={pres2024} results={results} viewMode={mapMode} projected={projectedSeats} noneLabel={mode === "election" ? "No result" : undefined} projectedMargin={mode === "election" ? data?.results2026?.raw.margin ?? null : null} />
           </div>
 
           {/* The map two-thirds, the seat boxes beside it. Where the boxes run longer than the map

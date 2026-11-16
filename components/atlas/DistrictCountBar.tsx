@@ -33,27 +33,32 @@ function resultWinner(result: StateLegDistrictResult): "D" | "R" | "O" | null {
 // (matching the hero stat row, including multi-member districts as one seat per incumbent),
 // district-level 2024 presidential winners in "president" mode, or the districts each party
 // carried in the selected past election, alongside that election's chamber-wide vote margin.
-// `projected` (the atlas's 2026 projection view) replaces the tally with projected seats.
+// `projected` (the atlas's 2026 projection and 2026 results views) replaces the tally with those seats.
 export default function DistrictCountBar({
   districts,
   pres2024,
   results,
   viewMode,
   projected,
+  noneLabel = "No projection",
+  projectedMargin = null,
 }: {
   districts: StateLegDistrict[];
   pres2024: Record<string, StateLegPres2024>;
   results: Record<string, StateLegDistrictResult> | null;
   viewMode: MapViewMode;
   projected?: ProjectedSeats | null;
+  /** With `projected`: what a seat with no winner is called, and the chamber's vote margin when the seats are a counted result. */
+  noneLabel?: string;
+  projectedMargin?: number | null;
 }) {
   const { stats, aggregateMargin } = useMemo(() => {
     if (projected) {
       const entries: { key: string; label: string; value: number; color: string }[] = (["D", "R", "I", "O"] as const)
         .filter((p) => projected[p] || p === "D" || p === "R")
         .map((p) => ({ key: p, label: p, value: projected[p], color: PARTY_COLOR[p] }));
-      if (projected.none > 0) entries.push({ key: "none", label: "No projection", value: projected.none, color: "var(--app-text-very-muted)" });
-      return { stats: entries, aggregateMargin: null };
+      if (projected.none > 0) entries.push({ key: "none", label: noneLabel, value: projected.none, color: "var(--app-text-very-muted)" });
+      return { stats: entries, aggregateMargin: projectedMargin };
     }
     if (viewMode === "upcoming") {
       let up = 0;
@@ -140,7 +145,7 @@ export default function DistrictCountBar({
       .map((p) => ({ key: p, label: p, value: counts[p], color: PARTY_COLOR[p] }));
     if (vacant > 0) entries.push({ key: "vacant", label: "Vacant", value: vacant, color: "var(--app-text-very-muted)" });
     return { stats: entries, aggregateMargin: null };
-  }, [districts, pres2024, results, viewMode, projected]);
+  }, [districts, pres2024, results, viewMode, projected, noneLabel, projectedMargin]);
 
   if (stats.length === 0) return null;
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import Segmented from "@/components/MarketSegmented";
+import FinalForecastPill from "@/components/FinalForecastPill";
 import { CHAMBER_OUTCOMES, OUTCOME_LABEL, OUTCOME_SHORT, outcomeColor, type ChamberOutcome } from "@/lib/chamberOutcome";
 
 // The /legislatures Chambers table. The page builds these slim rows on the server (the full
@@ -175,6 +176,7 @@ export default function LegislatureChambersTable({ rows }: { rows: ChamberRow[] 
     <>
       <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-2 pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
         <h2 className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Chambers</h2>
+        <FinalForecastPill />
         <span className="sm:ml-auto"><Segmented label="Sort chambers" value={sort} onChange={setSort} options={SORTS} /></span>
       </div>
       {/* Phones: one card per chamber with every column, the bars at full width. */}

@@ -35,6 +35,8 @@ export type StateResults = {
   offices: Partial<Record<Office, [number, number, number][]>>;
   districts: Partial<Record<Office, string[]>>;
   basis?: Partial<Record<Office, "slot" | "party">>;
+  // Percent (0-100) of each precinct's vote that was fitted from other boundaries or spread from a larger unit.
+  est?: Partial<Record<Office, number[]>>;
 };
 
 // public/precincts/index/{ST}.json

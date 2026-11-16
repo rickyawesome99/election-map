@@ -66,6 +66,9 @@ def read(path: Path, keep: set[str]) -> pd.DataFrame:
         ch["office"] = ch["office"].str.upper().map(lambda o, memo={}: memo.setdefault(o, office_code(o)))
         ch = ch[ch["office"].isin(keep) & (ch["stage"].str.upper() == "GEN")]
         special = ch["special"].str.upper() == "TRUE"
+        # Maryland's 7th, November 2020: the regular election, flagged as a special in the source (the special was in April).
+        if "house_2020" in path.name:
+            special &= ~((ch["st"] == "MD") & ch["district"].str.lstrip("0").str.replace(r"\.0$", "", regex=True).eq("7"))
         # Specials are dropped, except a U.S. Senate special: kept apart as "USS_S", only as a matching key.
         ch = ch[~special | (ch["office"] == "USS")].copy()
         ch.loc[special.reindex(ch.index) & (ch["office"] == "USS"), "office"] = "USS_S"

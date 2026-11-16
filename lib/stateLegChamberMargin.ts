@@ -116,129 +116,140 @@ function combine(a: ChamberPool, b: ChamberPool): ChamberPool {
   return { margin, weight, districts: a.districts + b.districts };
 }
 
+type YearChambers = (typeof stateLegResults)[string][string];
+
+/**
+ * One election year's chamber margins from that year's district results. getChamberMargins runs it
+ * over the results on file; lib/stateLegResults2026.ts runs it over the 2026 count, which is kept
+ * out of that file (the locked 2026 projection reads it).
+ */
+export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearChambers): ChamberMarginYear | null {
+  const year = Number(yearKey);
+  const details: ChamberMarginDetail[] = [];
+  const gaps = new Map<Chamber, NotUpPool["gap"]>();
+  const notUpRowsBy = new Map<Chamber, { margin: number; presTotal: number }[]>();
+  for (const chamber of ["house", "senate"] as Chamber[]) {
+    const block = chambers[chamber];
+    if (!block) continue;
+    if (UNICAMERAL_STATES.has(abbr) && chamber === "house") continue;
+    const era = String(stateLegHistoricalMaps[abbr]?.[chamber]?.[yearKey] ?? "current");
+    const presEra = stateLegPresByEra[abbr]?.[chamber]?.[era] ?? {};
+    const presIndex = indexByNormalizedKey(presEra);
+    const available = PRES_YEARS.filter((y) => Object.values(presEra).some((d) => d[String(y) as "2016" | "2020" | "2024"]));
+    const srcYear = nearestPresYear(year, available);
+    const srcKey = srcYear == null ? null : (String(srcYear) as "2016" | "2020" | "2024");
+
+    let cDem = 0, cRep = 0, cTot = 0, cN = 0, cPres = 0, unmatched = 0;
+    const gapSeats: GapSeat[] = [];
+    let rawDem = 0, rawRep = 0, rawTot = 0;
+    const imputedRows: { margin: number; presTotal: number }[] = [];
+    let skipped = 0;
+    for (const [key, r] of Object.entries(block.districts)) {
+      if (isUnassignedResultKey(key)) {
+        // MEDSL's unattributed "Statewide" votes belong in the raw aggregate but are no district.
+        rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0;
+        continue;
+      }
+      const pres = srcKey ? lookupByDistrictCode(presIndex, abbr, chamber, key)?.[srcKey] : undefined;
+      const contested = !r.noCount && (r.demVotes ?? 0) > 0 && (r.repVotes ?? 0) > 0 && (r.totalVotes ?? 0) > 0;
+      if (!r.noCount) { rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0; }
+      if (!pres) unmatched += 1;
+      if (contested) {
+        cDem += r.demVotes!; cRep += r.repVotes!; cTot += r.totalVotes!; cN += 1;
+        if (pres) {
+          cPres += pres.totalVotes;
+          gapSeats.push({ leg: ((r.repVotes! - r.demVotes!) / r.totalVotes!) * 100, pres: pres.margin, votes: r.totalVotes! });
+        }
+      } else if (pres) {
+        imputedRows.push({ margin: pres.margin, presTotal: pres.totalVotes });
+      } else {
+        skipped += 1;
+      }
+    }
+    // Districts on the year's map with no results row: unreported (imputed above) or not up.
+    const staggered = stateLegCalendar[abbr]?.[chamber]?.staggered ?? false;
+    const resultIndex = indexByNormalizedKey(block.districts);
+    const seatIndex = indexByNormalizedKey(Object.fromEntries((stateLegDistricts[abbr]?.[chamber] ?? []).map((d) => [d.number, d])));
+    const notUpRows: { margin: number; presTotal: number }[] = [];
+    let unreported = 0;
+    for (const [key, d] of Object.entries(presEra)) {
+      if (NO_ABSENT || d.overlayOf || lookupByDistrictCode(resultIndex, abbr, chamber, key)) continue;
+      const pres = srcKey ? d[srcKey] : undefined;
+      const lastElection = era === "current" ? lookupByDistrictCode(seatIndex, abbr, chamber, key)?.lastElection : undefined;
+      const wasUp = !staggered || lastElection === year;
+      if (wasUp && unmatched > 0) continue; // most likely the unmatched row itself, already counted
+      if (!pres) { skipped += 1; continue; }
+      if (wasUp) { imputedRows.push({ margin: pres.margin, presTotal: pres.totalVotes }); unreported += 1; }
+      else notUpRows.push({ margin: pres.margin, presTotal: pres.totalVotes });
+    }
+    const turnoutRatio = cPres > 0 ? cTot / cPres : 1;
+    let iW = 0, iM = 0;
+    for (const row of imputedRows) { const w = row.presTotal * turnoutRatio; iW += w; iM += row.margin * w; }
+    const contestedPool = pool(cDem, cRep, cTot, cN);
+    const imputedPool: ChamberPool = { margin: iW > 0 ? iM / iW : null, weight: iW, districts: imputedRows.length };
+    const notUpPres = notUpRows.reduce((a, r) => a + r.presTotal, 0);
+    details.push({
+      chamber, era, srcYear, turnoutRatio,
+      contested: contestedPool, imputed: imputedPool, skipped,
+      rawMargin: rawTot > 0 ? ((rawRep - rawDem) / rawTot) * 100 : null,
+      unreported,
+      notUp: notUpRows.length === 0 ? null : {
+        districts: notUpRows.length,
+        weight: notUpPres * turnoutRatio,
+        presMargin: notUpRows.reduce((a, r) => a + r.margin * r.presTotal, 0) / notUpPres,
+        presMarginClamped: 0,
+        gap: null,
+      },
+    });
+    gaps.set(chamber, gapSeats.length >= MIN_GAP_SEATS ? fitGap(gapSeats) : null);
+    notUpRowsBy.set(chamber, notUpRows);
+  }
+  if (details.length === 0) return null;
+  // The not-up seats' gap: their own chamber's contested seats, else the other chamber's that
+  // year (a senate with fewer than MIN_GAP_SEATS contested), else none and the pool is dropped.
+  // The clamp holds each seat's presidential margin inside the range the gap was fitted on.
+  for (const d of details) {
+    if (!d.notUp) continue;
+    const gap = gaps.get(d.chamber) ?? [...gaps.values()].find((g) => g != null) ?? null;
+    if (!gap) { d.notUp = null; continue; }
+    const rows = notUpRowsBy.get(d.chamber)!;
+    const tot = rows.reduce((a, r) => a + r.presTotal, 0);
+    d.notUp.presMarginClamped = rows.reduce((a, r) => a + Math.min(gap.max, Math.max(gap.min, r.margin)) * r.presTotal, 0) / tot;
+    d.notUp.gap = { ...gap, from: gaps.get(d.chamber) ? "own" : "other" };
+  }
+  const contested = details.map((d) => d.contested).reduce(combine);
+  const imputedBase = details.map((d) => d.imputed).reduce(combine);
+  // One source year for the year's imputed pool: the heaviest chamber's.
+  const srcYear = details.filter((d) => d.imputed.weight > 0).sort((a, b) => b.imputed.weight - a.imputed.weight)[0]?.srcYear ?? null;
+  // Raw aggregate across chambers, votes-weighted the way the old L row was.
+  let rDem = 0, rTot = 0, rRep = 0;
+  for (const d of details) {
+    for (const r of Object.values(chambers[d.chamber]!.districts)) {
+      if (r.noCount) continue;
+      rDem += r.demVotes ?? 0; rRep += r.repVotes ?? 0; rTot += r.totalVotes ?? 0;
+    }
+  }
+  const all = combine(contested, imputedBase);
+  return {
+    year,
+    contested,
+    imputed: { ...imputedBase, srcYear },
+    skipped: details.reduce((s, d) => s + d.skipped, 0),
+    rawMargin: rTot > 0 ? ((rRep - rDem) / rTot) * 100 : null,
+    correctedMargin: all.margin,
+    chambers: details,
+  };
+}
+
 const _cache = new Map<string, Record<number, ChamberMarginYear>>();
 
 export function getChamberMargins(abbr: string): Record<number, ChamberMarginYear> {
   const cached = _cache.get(abbr);
   if (cached) return cached;
   const out: Record<number, ChamberMarginYear> = {};
-  const years = stateLegResults[abbr] ?? {};
-  for (const [yearKey, chambers] of Object.entries(years)) {
-    const year = Number(yearKey);
-    const details: ChamberMarginDetail[] = [];
-    const gaps = new Map<Chamber, NotUpPool["gap"]>();
-    const notUpRowsBy = new Map<Chamber, { margin: number; presTotal: number }[]>();
-    for (const chamber of ["house", "senate"] as Chamber[]) {
-      const block = chambers[chamber];
-      if (!block) continue;
-      if (UNICAMERAL_STATES.has(abbr) && chamber === "house") continue;
-      const era = String(stateLegHistoricalMaps[abbr]?.[chamber]?.[yearKey] ?? "current");
-      const presEra = stateLegPresByEra[abbr]?.[chamber]?.[era] ?? {};
-      const presIndex = indexByNormalizedKey(presEra);
-      const available = PRES_YEARS.filter((y) => Object.values(presEra).some((d) => d[String(y) as "2016" | "2020" | "2024"]));
-      const srcYear = nearestPresYear(year, available);
-      const srcKey = srcYear == null ? null : (String(srcYear) as "2016" | "2020" | "2024");
-
-      let cDem = 0, cRep = 0, cTot = 0, cN = 0, cPres = 0, unmatched = 0;
-      const gapSeats: GapSeat[] = [];
-      let rawDem = 0, rawRep = 0, rawTot = 0;
-      const imputedRows: { margin: number; presTotal: number }[] = [];
-      let skipped = 0;
-      for (const [key, r] of Object.entries(block.districts)) {
-        if (isUnassignedResultKey(key)) {
-          // MEDSL's unattributed "Statewide" votes belong in the raw aggregate but are no district.
-          rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0;
-          continue;
-        }
-        const pres = srcKey ? lookupByDistrictCode(presIndex, abbr, chamber, key)?.[srcKey] : undefined;
-        const contested = !r.noCount && (r.demVotes ?? 0) > 0 && (r.repVotes ?? 0) > 0 && (r.totalVotes ?? 0) > 0;
-        if (!r.noCount) { rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0; }
-        if (!pres) unmatched += 1;
-        if (contested) {
-          cDem += r.demVotes!; cRep += r.repVotes!; cTot += r.totalVotes!; cN += 1;
-          if (pres) {
-            cPres += pres.totalVotes;
-            gapSeats.push({ leg: ((r.repVotes! - r.demVotes!) / r.totalVotes!) * 100, pres: pres.margin, votes: r.totalVotes! });
-          }
-        } else if (pres) {
-          imputedRows.push({ margin: pres.margin, presTotal: pres.totalVotes });
-        } else {
-          skipped += 1;
-        }
-      }
-      // Districts on the year's map with no results row: unreported (imputed above) or not up.
-      const staggered = stateLegCalendar[abbr]?.[chamber]?.staggered ?? false;
-      const resultIndex = indexByNormalizedKey(block.districts);
-      const seatIndex = indexByNormalizedKey(Object.fromEntries((stateLegDistricts[abbr]?.[chamber] ?? []).map((d) => [d.number, d])));
-      const notUpRows: { margin: number; presTotal: number }[] = [];
-      let unreported = 0;
-      for (const [key, d] of Object.entries(presEra)) {
-        if (NO_ABSENT || d.overlayOf || lookupByDistrictCode(resultIndex, abbr, chamber, key)) continue;
-        const pres = srcKey ? d[srcKey] : undefined;
-        const lastElection = era === "current" ? lookupByDistrictCode(seatIndex, abbr, chamber, key)?.lastElection : undefined;
-        const wasUp = !staggered || lastElection === year;
-        if (wasUp && unmatched > 0) continue; // most likely the unmatched row itself, already counted
-        if (!pres) { skipped += 1; continue; }
-        if (wasUp) { imputedRows.push({ margin: pres.margin, presTotal: pres.totalVotes }); unreported += 1; }
-        else notUpRows.push({ margin: pres.margin, presTotal: pres.totalVotes });
-      }
-      const turnoutRatio = cPres > 0 ? cTot / cPres : 1;
-      let iW = 0, iM = 0;
-      for (const row of imputedRows) { const w = row.presTotal * turnoutRatio; iW += w; iM += row.margin * w; }
-      const contestedPool = pool(cDem, cRep, cTot, cN);
-      const imputedPool: ChamberPool = { margin: iW > 0 ? iM / iW : null, weight: iW, districts: imputedRows.length };
-      const notUpPres = notUpRows.reduce((a, r) => a + r.presTotal, 0);
-      details.push({
-        chamber, era, srcYear, turnoutRatio,
-        contested: contestedPool, imputed: imputedPool, skipped,
-        rawMargin: rawTot > 0 ? ((rawRep - rawDem) / rawTot) * 100 : null,
-        unreported,
-        notUp: notUpRows.length === 0 ? null : {
-          districts: notUpRows.length,
-          weight: notUpPres * turnoutRatio,
-          presMargin: notUpRows.reduce((a, r) => a + r.margin * r.presTotal, 0) / notUpPres,
-          presMarginClamped: 0,
-          gap: null,
-        },
-      });
-      gaps.set(chamber, gapSeats.length >= MIN_GAP_SEATS ? fitGap(gapSeats) : null);
-      notUpRowsBy.set(chamber, notUpRows);
-    }
-    if (details.length === 0) continue;
-    // The not-up seats' gap: their own chamber's contested seats, else the other chamber's that
-    // year (a senate with fewer than MIN_GAP_SEATS contested), else none and the pool is dropped.
-    // The clamp holds each seat's presidential margin inside the range the gap was fitted on.
-    for (const d of details) {
-      if (!d.notUp) continue;
-      const gap = gaps.get(d.chamber) ?? [...gaps.values()].find((g) => g != null) ?? null;
-      if (!gap) { d.notUp = null; continue; }
-      const rows = notUpRowsBy.get(d.chamber)!;
-      const tot = rows.reduce((a, r) => a + r.presTotal, 0);
-      d.notUp.presMarginClamped = rows.reduce((a, r) => a + Math.min(gap.max, Math.max(gap.min, r.margin)) * r.presTotal, 0) / tot;
-      d.notUp.gap = { ...gap, from: gaps.get(d.chamber) ? "own" : "other" };
-    }
-    const contested = details.map((d) => d.contested).reduce(combine);
-    const imputedBase = details.map((d) => d.imputed).reduce(combine);
-    // One source year for the year's imputed pool: the heaviest chamber's.
-    const srcYear = details.filter((d) => d.imputed.weight > 0).sort((a, b) => b.imputed.weight - a.imputed.weight)[0]?.srcYear ?? null;
-    // Raw aggregate across chambers, votes-weighted the way the old L row was.
-    let rDem = 0, rTot = 0, rRep = 0;
-    for (const d of details) {
-      for (const r of Object.values(chambers[d.chamber]!.districts)) {
-        if (r.noCount) continue;
-        rDem += r.demVotes ?? 0; rRep += r.repVotes ?? 0; rTot += r.totalVotes ?? 0;
-      }
-    }
-    const all = combine(contested, imputedBase);
-    out[year] = {
-      year,
-      contested,
-      imputed: { ...imputedBase, srcYear },
-      skipped: details.reduce((s, d) => s + d.skipped, 0),
-      rawMargin: rTot > 0 ? ((rRep - rDem) / rTot) * 100 : null,
-      correctedMargin: all.margin,
-      chambers: details,
-    };
+  for (const [yearKey, chambers] of Object.entries(stateLegResults[abbr] ?? {})) {
+    const y = chamberMarginYear(abbr, yearKey, chambers);
+    if (y) out[y.year] = y;
   }
   _cache.set(abbr, out);
   return out;

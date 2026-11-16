@@ -2,9 +2,9 @@
 import Link from "next/link";
 
 import Image from "next/image";
-import type { AtlasDistrict } from "@/lib/stateLegAtlas";
+import type { AtlasDistrict, AtlasRace2026, AtlasResult2026, AtlasResultCandidate2026 } from "@/lib/stateLegAtlas";
 import { FundraisingLedgerSection, formatReceipts } from "@/components/FundraisingLedger";
-import { contest2026, fieldPersons, projectedNomineeShare } from "@/lib/stateLegAtlas";
+import { contest2026, fieldPersons, personKey, projectedNomineeShare } from "@/lib/stateLegAtlas";
 import { candidateSlug } from "@/lib/candidateSlug";
 
 type Party = "D" | "R" | "I" | "O";
@@ -140,6 +140,171 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
           })}
         </div>
       ))}
+    </div>
+  );
+}
+
+// ── The counted 2026 election (lib/stateLegResults2026.ts) ────────────────────
+// The section that held the projected vote before the election, in the House race pages' form:
+// candidates by votes, a check on a called winner, each share against the projected one.
+
+/** A candidate outside the two major parties gets a row of their own from this share of the vote. */
+const MIN_OWN_ROW_PCT = 5;
+const fmtInt = (n: number) => n.toLocaleString("en-US");
+const fmtPct = (pct: number) => (pct === 0 || pct === 100 ? String(pct) : pct.toFixed(1));
+
+/** The leader's margin over the runner-up in points of all votes, named for the leader: their party
+ *  ("R+6.9"), or their surname when the top two share one. "EVEN" only on equal counts; null with
+ *  one candidate, no count, or a race for several seats. */
+function leadMargin(r: AtlasRace2026): { label: string; color: string } | null {
+  const [a, b] = r.candidates;
+  if (r.seats !== 1 || !a || !b || r.total <= 0 || a.votes == null || b.votes == null) return null;
+  if (a.votes === b.votes) return { label: "EVEN", color: "var(--app-text-primary)" };
+  const pts = ((a.votes - b.votes) / r.total) * 100;
+  const who = a.party === b.party ? `${a.name.split(" ").pop()} ` : a.party === "O" ? "I" : a.party;
+  return { label: `${who}+${pts.toFixed(1)}`, color: PARTY_COLOR[a.party] };
+}
+
+/** One race's meta line: the count, the leader's margin, how much of the expected vote is in, and the call. */
+function raceMeta(r: AtlasRace2026): React.ReactNode {
+  if (r.total <= 0) return r.candidates.length <= r.seats ? "Unopposed · no count printed" : "No votes counted yet";
+  const lead = leadMargin(r);
+  const parts: string[] = [];
+  if (r.seats > 1) parts.push(`${r.seats} seats`);
+  if (r.counted != null && r.counted > 0 && r.counted < 0.995) parts.push(`about ${Math.round(r.counted * 100)}% counted`);
+  if (!r.called) parts.push("not yet called");
+  return (
+    <>
+      {fmtInt(r.total)} votes
+      {lead && <> · <span className="font-semibold" style={{ color: lead.color }}>{lead.label}</span></>}
+      {parts.map((t) => ` · ${t}`).join("")}
+    </>
+  );
+}
+
+/** The 2026 Election section head's meta: the race's own line, or the district's total where it held several races. */
+export function result2026Meta(res: AtlasResult2026): React.ReactNode {
+  if (res.races.length === 1) return raceMeta(res.races[0]);
+  const total = res.races.reduce((s, r) => s + r.total, 0);
+  return `${total > 0 ? `${fmtInt(total)} votes · ` : ""}${res.races.length} races`;
+}
+
+/** A counted share against the projected one: ▲ over, ▼ under, in points. */
+function VsProjected({ pts }: { pts: number }) {
+  const r = Math.round(pts * 10) / 10;
+  const arrow = r > 0 ? "▲" : r < 0 ? "▼" : "";
+  return (
+    <span className="text-sm font-semibold" style={{ opacity: 0.75 }} title={`${r > 0 ? "Over" : r < 0 ? "Under" : "Matched"} the final projection's share by ${Math.abs(r).toFixed(1)} points`}>
+      {arrow}{Math.abs(r).toFixed(1)}%
+    </span>
+  );
+}
+
+function ResultRow({ c, abbr, last, i, soleUncounted, vsProjected }: { c: AtlasResultCandidate2026; abbr: string; last: boolean; i: number; soleUncounted: boolean; vsProjected: number | null }) {
+  const color = PARTY_COLOR[c.party];
+  // An unopposed race with no count printed: the one candidate has the whole (uncounted) vote.
+  const pct = c.pct ?? (soleUncounted ? 100 : null);
+  return (
+    <div className="vh-row flex items-center justify-between gap-3 py-2.5" style={{ borderBottom: last ? "none" : "1px solid var(--app-border)", animationDelay: `${Math.min(i, 8) * 55}ms` }}>
+      <div className="flex items-center gap-4 min-w-0">
+        <Portrait party={c.party} />
+        <div className="min-w-0">
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <CandidateLink name={c.name} abbr={abbr} color={color} weight={700} style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem" }} />
+            {c.incumbent && <span className="text-[10px] font-semibold px-1.5 py-0.5 shrink-0" style={{ color }}>Inc.</span>}
+            {c.winner && (
+              <svg viewBox="0 0 16 16" width="18" height="18" className="shrink-0" role="img" aria-label="Winner">
+                <title>Winner</title>
+                <circle cx="8" cy="8" r="8" fill={color} />
+                <path d="M4.5 8.3l2.3 2.3 4.7-5" fill="none" stroke="var(--app-bg)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            )}
+          </div>
+          <div className="text-sm font-medium" style={{ color }}>{partyName(c.party, c.partyLabel)}</div>
+        </div>
+      </div>
+      {pct != null && (
+        <div className="shrink-0 text-right tabular-nums" style={{ color }}>
+          <div className="flex items-baseline justify-end gap-2">
+            {vsProjected != null && <VsProjected pts={vsProjected} />}
+            <div className="vh-margin text-3xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{fmtPct(pct)}%</div>
+          </div>
+          {c.votes != null && <div className="text-sm font-medium">{fmtInt(c.votes)} votes</div>}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
+ * The district's counted 2026 race(s): one row per candidate, most votes first, with a check on a
+ * called winner and each share set against the final projection's where it projected one nominee
+ * per party. A candidate of neither major party under MIN_OWN_ROW_PCT joins the write-ins in "Others".
+ */
+export function AtlasResultSection({ district, abbr }: { district: AtlasDistrict; abbr: string }) {
+  const res = district.result2026;
+  if (!res) return null;
+  const field = district.candidates2026;
+  const c = field ? contest2026(field, district.incumbents) : null;
+  const pr = district.projection;
+  const persons = field ? fieldPersons(field, district.incumbents) : [];
+  const multiPost = new Set(persons.map((x) => x.post ?? "")).size > 1;
+  /** The final projection's share of all votes for this person, where it split the vote by nominee. */
+  const projected = (name: string, race: AtlasRace2026): number | null => {
+    if (race.seats !== 1 || res.races.length !== 1 || race.total <= 0) return null;
+    const x = persons.find((p) => personKey(p.name) === personKey(name));
+    const p = x ? projectedNomineeShare(x, persons, multiPost, pr?.contest === "contested" ? pr.margin : null, pr?.votes) : null;
+    return p && p.votes != null ? p.share : null;
+  };
+  const sources = [...new Set(res.races.map((r) => r.source))];
+  const unofficialAp = res.races.some((r) => r.unofficial);
+  const anyCount = res.races.some((r) => r.total > 0);
+  const asOf = res.asOf ? new Date(res.asOf).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" }) : null;
+
+  return (
+    <div>
+      {field?.special && c && (
+        <p className="mb-2 text-sm" style={{ color: "var(--app-text-muted)" }}>
+          <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{c.special === "post" ? "Includes a special election" : "Special election"}</span>
+          {" "}for the rest of the term, through {field.special.termEnds}{field.special.vacancy ? ` — ${field.special.vacancy.replace(/\.$/, "")}` : ""}.
+        </p>
+      )}
+      {res.races.map((race, ri) => {
+        const shown = race.candidates.filter((x) => x.party !== "O" || x.winner || (x.pct ?? 0) >= MIN_OWN_ROW_PCT || race.total <= 0);
+        const rest = race.candidates.filter((x) => !shown.includes(x)).reduce((s, x) => s + (x.votes ?? 0), 0) + race.others;
+        const soleUncounted = race.total <= 0 && race.candidates.length <= race.seats;
+        return (
+          <div key={`${race.post ?? ""}-${ri}`}>
+            {res.races.length > 1 && (
+              <div className="pt-3 flex flex-wrap items-baseline gap-x-3 gap-y-0.5">
+                <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+                  {race.special ? "Special election (unexpired term)" : race.post == null ? "Regular election" : abbr === "ID" ? `Seat ${race.post}` : `Position ${race.post}`}
+                </span>
+                <span className="text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{raceMeta(race)}</span>
+              </div>
+            )}
+            {shown.map((x, i) => {
+              const proj = projected(x.name, race);
+              return <ResultRow key={`${x.name}-${i}`} c={x} abbr={abbr} i={i} last={i === shown.length - 1 && rest <= 0} soleUncounted={soleUncounted} vsProjected={proj != null && x.pct != null ? x.pct - proj : null} />;
+            })}
+            {rest > 0 && race.total > 0 && (
+              <div className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderTop: "1px solid var(--app-border)" }}>
+                <span className="h-6 rounded-sm" style={{ background: "var(--party-ind)", opacity: 0.6 }} />
+                <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}>Others</div>
+                <div className="text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                  <div className="text-2xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{((rest / race.total) * 100).toFixed(1)}%</div>
+                  <div className="text-[11px]">{fmtInt(rest)} votes</div>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
+      <p className="mt-3 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+        {!anyCount
+          ? "No count is on file for this race: the state prints none for an unopposed seat, or the count has not been read yet."
+          : <>Votes counted{asOf ? ` as of ${asOf}` : ""}, from {unofficialAp ? "the Associated Press's count (no official count read yet)" : sources.join(" and ")}. Unofficial until certified.</>}
+      </p>
     </div>
   );
 }

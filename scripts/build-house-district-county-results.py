@@ -41,13 +41,15 @@ YEARS = [2016, 2018, 2020, 2022, 2024]
 # Per-district-by-county sources produced by the sibling fetchers, keyed by the source name the
 # output CSV records. Highest priority first.
 OFFICIAL_SOURCES = {
+    # districts rebuilt from precinct returns, each equal to its certified total (scripts/precincts/correct_site_house_counties.py)
+    "precinct": "data-entry/house_district_county_precinct.csv",
     "maine-rcv": "data-entry/house_district_county_maine_rcv.csv",
     "indiana": "data-entry/house_district_county_indiana.csv",
     "louisiana": "data-entry/house_district_county_louisiana.csv",
     "openelections": "data-entry/house_district_county_openelections.csv",
     "wikipedia": "data-entry/house_district_county_wikipedia.csv",
 }
-OFFICIAL_PRIORITY = ["maine-rcv", "indiana", "louisiana", "openelections", "wikipedia"]
+OFFICIAL_PRIORITY = ["precinct", "maine-rcv", "indiana", "louisiana", "openelections", "wikipedia"]
 # General elections actually DECIDED by ranked-choice rounds (the certified total is the final
 # round). By-county rows for these must be the final round too — a source that only has the
 # first round is labelled `first-round`, never passed off as the result. ME-01 and ME-02 2020

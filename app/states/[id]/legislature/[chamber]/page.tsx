@@ -1,4 +1,3 @@
-import FinalForecastPill from "@/components/FinalForecastPill";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { statesData } from "@/data/statesData";
@@ -68,7 +67,6 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
         <div className={`${PAGE_CONTAINER} pt-6`}>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <StatePill name={state.name} abbr={state.abbr} />
-            <FinalForecastPill />
             <div className="ml-auto">
               <StateSwitcher id={state.id} chamber={chamber} />
             </div>

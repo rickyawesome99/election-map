@@ -5,7 +5,7 @@ import { LedgerSectionHead, LedgerSubhead } from "@/components/LedgerSectionHead
 import DemographicsStrip from "@/components/DemographicsStrip";
 import AtlasTrendChart from "./AtlasTrendChart";
 import AtlasOutlook from "./AtlasOutlook";
-import { AtlasCandidatesSection, AtlasFundraisingSection, CandidateLink, PARTY_COLOR } from "./AtlasCandidates";
+import { AtlasCandidatesSection, AtlasFundraisingSection, AtlasResultSection, CandidateLink, PARTY_COLOR, result2026Meta } from "./AtlasCandidates";
 import { AtlasOverlayMap, AtlasTransitionMaps } from "./AtlasEraMaps";
 import type { Chamber } from "@/data/stateLegDistricts";
 import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/stateLegAtlas";
@@ -278,18 +278,9 @@ export default function AtlasDistrictDetail({
   ];
   // The header's one line of checks, like a House page's Proj. · Polls · Markets · TPL.
   const stats = [
+    // The district's structural lean (the Forecast Calculation's first term), then the projection built on it.
+    ...(pr?.lean != null ? [{ label: "TPL", value: fmtLean(pr.lean), color: leanColor(pr.lean) }] : []),
     ...(headline ? [{ label: "Proj.", value: headline.value, color: headline.color }] : []),
-    pr?.contest === "contested" && pr.pD != null
-      ? { label: "Win Prob.", value: `${Math.round(Math.max(pr.pD, 1 - pr.pD) * 100)}% ${pr.pD >= 0.5 ? "D" : "R"}`, color: pr.pD >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }
-      : pr?.contest === "independent" && pr.indep && pr.pI != null
-        ? { label: "Win Prob.", value: `${Math.round(Math.max(pr.pI, 1 - pr.pI) * 100)}% ${pr.pI >= 0.5 ? "I" : pr.indep.slot === "D" ? "R" : "D"}`, color: pr.pI >= 0.5 ? "var(--party-ind)" : pr.indep.slot === "D" ? "var(--party-rep)" : "var(--party-dem)" }
-      : pr?.contest === "other" && pr.pI === 1
-        ? { label: "Win Prob.", value: "100% I", color: "var(--party-ind)" }
-      : pr?.contest === "split"
-        ? { label: "Win Prob.", value: "Decided", color: muted }
-      : pr?.contest === "not-up" && pr.lean != null
-        ? { label: "TPL Lean", value: fmtLean(pr.lean), color: leanColor(pr.lean) }
-        : { label: "Win Prob.", value: pr?.contest === "uncontested-D" ? "100% D" : pr?.contest === "uncontested-R" ? "100% R" : "—", color: pr?.contest === "uncontested-D" ? "var(--party-dem)" : pr?.contest === "uncontested-R" ? "var(--party-rep)" : muted },
     { label: "2024 Pres.", value: fmtMargin(pres24), color: pres24 == null ? muted : marginText(pres24) },
     (() => {
       // A race an independent won: their margin over the runner-up, not the two-party one.
@@ -367,12 +358,19 @@ export default function AtlasDistrictDetail({
         )}
       </Reveal>
 
+      {/* The counted election takes the place of the projected vote; a district with no result on file keeps the projection. */}
+      {district.result2026 && (
+        <Reveal>
+          <LedgerSectionHead label={`${electionYear} Election`} meta={result2026Meta(district.result2026)} />
+          <AtlasResultSection district={district} abbr={abbr} />
+        </Reveal>
+      )}
       {district.candidates2026 && (
         <>
-          <Reveal>
+          {!district.result2026 && <Reveal>
             <LedgerSectionHead label={district.projection?.votes ? `${electionYear} Projected Vote` : `${electionYear} Candidates`} meta={`${district.projection?.votes ? `${district.projection.votes.total.toLocaleString("en-US")} estimated votes · ` : ""}Ballotpedia list${district.candidates2026.seats && district.candidates2026.seats > 1 ? ` · ${district.candidates2026.seats} seats` : ""}`} />
             <AtlasCandidatesSection district={district} abbr={abbr} />
-          </Reveal>
+          </Reveal>}
           <Reveal>
             <LedgerSectionHead label="Fundraising" />
             <AtlasFundraisingSection district={district} electionYear={electionYear} />

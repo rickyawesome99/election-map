@@ -46,6 +46,8 @@ export type AtlasDistrict = {
   candidates2026?: StateLegDistrictCandidates2026;
   /** The 2026 projection (lib/stateLegForecast.ts), where the chamber is on the ballot. */
   projection?: AtlasProjection;
+  /** The 2026 count for the district's races (lib/stateLegResults2026.ts), where it was on the ballot. */
+  result2026?: AtlasResult2026;
   /** Members not seeking re-election in 2026 and why (Wikipedia's retirement lists). */
   outgoing2026?: StateLegOutgoing2026[];
   /** Fundraising per cycle, newest first, where a source covers the state (lib/stateLegMoney.ts). */
@@ -53,6 +55,88 @@ export type AtlasDistrict = {
   /** An overlay district (a New Hampshire floterial): no polygon of its own, sits on `components`. */
   overlay?: boolean;
   components?: string[];
+};
+
+/** Seats by party; `I` is everyone outside the two major parties. */
+export type PartySeats = { D: number; R: number; I: number };
+
+export type AtlasResultCandidate2026 = {
+  name: string;
+  party: "D" | "R" | "O";
+  /** The source's label for a candidate of neither major party ("Libertarian", "Independent"). */
+  partyLabel?: string;
+  /** Null where the state prints no count for the race. */
+  votes: number | null;
+  /** Share of all votes cast in the race. */
+  pct: number | null;
+  /** Called the winner of a seat (a race for several seats can be called for some before all). */
+  winner?: boolean;
+  incumbent?: boolean;
+};
+
+/** One race on the 2026 ballot: the district's seat(s), or one post or special election within it. */
+export type AtlasRace2026 = {
+  /** Idaho's seat A/B, Washington's position 1/2, or "Special" for a special run beside the regular race. */
+  post: string | null;
+  special: boolean;
+  seats: number;
+  /** All votes cast, write-ins included; 0 where no count is printed. */
+  total: number;
+  called: boolean;
+  /** Share of the expected vote counted, 0–1 (AP's estimate, scaled to this count); null where unknown. */
+  counted: number | null;
+  /** Counts are AP's rather than an official source's. */
+  unofficial: boolean;
+  source: string;
+  /** Named candidates, most votes first. */
+  candidates: AtlasResultCandidate2026[];
+  /** Write-in and scattered votes. */
+  others: number;
+  /** The seats by party: the called winners, or the leaders where the race is not called. */
+  winners: PartySeats;
+};
+
+export type AtlasResult2026 = {
+  races: AtlasRace2026[];
+  dem: number;
+  rep: number;
+  oth: number;
+  total: number;
+  /** R-positive, in points of all votes; null where no count is printed. */
+  margin: number | null;
+  /** Seats on the ballot and who won or leads them. */
+  seats: number;
+  winners: PartySeats;
+  /** Every race in the district is called. */
+  called: boolean;
+  /** The parties of the members whose seats were up; null where the roster doesn't say (a vacancy). */
+  held: PartySeats | null;
+  /** Seats that changed hands, by the party gaining them. */
+  gains: PartySeats;
+  /** The district's seats all went from one party to another. */
+  flip: { from: "D" | "R" | "I"; to: "D" | "R" | "I" } | null;
+  /** When the counts were fetched (ISO). */
+  asOf: string;
+};
+
+/** A chamber after the 2026 count: winners (or leaders) of the seats up plus the members not up. */
+export type AtlasChamberResults2026 = {
+  year: number;
+  races: number;
+  seatsUp: number;
+  uncalled: number;
+  /** Races carrying AP's count because no official one was read. */
+  unofficial: number;
+  /** Only special elections were on the ballot. */
+  specialsOnly: boolean;
+  seats: { dem: number; rep: number; oth: number; none: number };
+  flips: PartySeats;
+  raw: { dem: number; rep: number; oth: number; votes: number; margin: number | null };
+  /** The corrected chamber margin (lib/stateLegChamberMargin.ts): one-party seats imputed from president. */
+  adjusted: number | null;
+  imputed: number;
+  /** When the counts were fetched. */
+  asOf: string;
 };
 
 /** One row of a district's 2026 lean ledger (lib/stateLegForecast.ts ProjectionRow, as shipped). */
@@ -247,6 +331,8 @@ export type AtlasChamber = {
   built: string;
   /** When the 2026 candidate lists were fetched, if the chamber is on the ballot. */
   candidates2026Fetched?: string;
+  /** The chamber after the 2026 count, where it held any election. */
+  results2026?: AtlasChamberResults2026;
   /** Chamber-level simulation, where the chamber is on the ballot. */
   projection?: AtlasChamberProjection;
   eras: AtlasEra[];

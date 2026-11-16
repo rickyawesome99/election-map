@@ -366,6 +366,18 @@ def _num(v: str) -> int:
         return 0
 
 
+def house_certified() -> dict[tuple[int, str, str], tuple[int, int]]:
+    """(year, state, district number as text, at-large = "1") → certified (Dem, Rep) votes, 2016-2024."""
+    out = {}
+    with open(ROOT / "data-entry" / "house_past_results.csv", newline="") as f:
+        for row in csv.DictReader(f):
+            y = int(row["year"])
+            if 2016 <= y <= 2024 and y % 2 == 0:
+                tail = row["district_name"].split("-")[-1]
+                out[(y, row["state_abbr"], str(int(tail)) if tail.isdigit() else "1")] = (_num(row["dem_votes"]), _num(row["rep_votes"]))
+    return out
+
+
 def load_truth() -> dict:
     """truth[year][office][state] = {'d': …, 'r': …}; presence also defines which contests were held."""
     t: dict = defaultdict(lambda: defaultdict(dict))
@@ -387,9 +399,10 @@ def load_truth() -> dict:
             with open(p, newline="") as f:
                 for row in csv.DictReader(f):
                     add(y, office, row["state"], _num(row.get(f"dem_{y}", "")), _num(row.get(f"gop_{y}", "")))
-    with open(de / "house_district_county_results.csv", newline="") as f:
-        for row in csv.DictReader(f):
-            add(int(row["year"]), "USH", row["state"], _num(row["dem"]), _num(row["gop"]))
+    # U.S. House: the certified district totals (house_past_results.csv), not the county breakdown, which
+    # leaves out county pieces it could not split and is short in a few dozen districts.
+    for (y, st, _d), (dv, rv) in house_certified().items():
+        add(y, "USH", st, dv, rv)
     for p in sorted((de / "state-leg-results").glob("*.json")):
         st, y = p.stem.split("-")
         j = json.loads(p.read_text())

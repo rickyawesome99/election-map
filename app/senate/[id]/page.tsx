@@ -342,7 +342,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           {isSpecialElection(race.electionType) && <SpecialBadge />}
           <HeldPill party={currentSenatorParty} />
           <SeatPill {...seatNav} />
-          <FinalForecastPill />
         </>}
         nav={<RaceRail items={SENATE_RAIL} current={senateUrlId(race.id)} label="Choose a Senate race" />}
         fitTitle={{ chars: `${race.name} U.S. Senate`.length, emPerChar: 0.58, reservePx: 0 }}
@@ -431,7 +430,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           </section>
 
           <section>
-            <LedgerSectionHead label="Forecast Calculation" />
+            <LedgerSectionHead label="Forecast Calculation" right={<FinalForecastPill />} rightClassName="self-center -my-1.5" />
             <ForecastCalculationCard
               bare
               tpl={stateTpl}
