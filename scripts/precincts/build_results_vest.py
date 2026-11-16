@@ -218,6 +218,59 @@ def build_state(st: str, year: int, truth: dict) -> str:
     return f"{st} {n:6d}  old {len(old):5d}  {line}   [{', '.join(notes)}]"
 
 
+def build_virginia_legislature(year: int, truth: dict) -> list[str]:
+    """Virginia's odd-year legislature: VEST publishes it as separate layers with one column per party
+    (G19HODDEM, G19SOVREP, ...) and the district of each precinct (HOD_DIST / SOV_DIST)."""
+    st, out = "VA", []
+    for suffix, office, tag, dcol in (("statehouse", "SLDL", "HOD", "HOD_DIST"), ("statesenate", "SLDU", "SOV", "SOV_DIST")):
+        z = RAW / "vest" / str(year) / f"va_{year}_{suffix}.zip"
+        if not z.exists() or st not in truth.get(year, {}).get(office, {}):
+            continue
+        with zipfile.ZipFile(z) as zf:
+            shp = next(n for n in zf.namelist() if n.lower().endswith(".shp"))
+        old = gpd.read_file(f"/vsizip/{z}/{shp}", engine="pyogrio")
+        old = old[~old.geometry.isna() & ~old.geometry.is_empty].reset_index(drop=True)
+        bad = ~old.geometry.is_valid
+        if bad.any():
+            old.loc[bad, "geometry"] = old.loc[bad, "geometry"].apply(make_valid)
+        old = old.to_crs(CRS)
+        old["oid"] = np.arange(len(old))
+        rows, cols_idx, w, split, first, n = crosswalk(st, old)
+        pre = f"G{year % 100:02d}{tag}"
+        cols = [c for c in old.columns if c.upper().startswith(pre)]
+        v = old[cols].apply(pd.to_numeric, errors="coerce").fillna(0)
+        d_old = v[[c for c in cols if c.upper().endswith("DEM")]].sum(axis=1).to_numpy()
+        r_old = v[[c for c in cols if c.upper().endswith("REP")]].sum(axis=1).to_numpy()
+        o_old = v.sum(axis=1).to_numpy() - d_old - r_old
+        parts = []
+        for comp in (d_old, r_old, o_old):
+            acc = np.zeros(n)
+            np.add.at(acc, cols_idx, comp[rows] * w)
+            parts.append(largest_remainder(acc, int(round(comp.sum()))))
+        tot_old = d_old + r_old + o_old
+        allv, splitv = np.zeros(n), np.zeros(n)
+        np.add.at(allv, cols_idx, tot_old[rows] * w)
+        np.add.at(splitv, cols_idx, np.where(split, tot_old[rows] * w, 0))
+        dist = old[dcol].astype(str).str.strip().to_numpy()
+        g = pd.DataFrame({"pid": cols_idx, "d": dist[rows], "v": tot_old[rows] * w + 1e-9})
+        g = g.groupby(["pid", "d"], as_index=False)["v"].sum().sort_values("v").drop_duplicates("pid", keep="last")
+        lab = [""] * n
+        for pid_, d in zip(g["pid"], g["d"]):
+            lab[int(pid_)] = d.zfill(2 if office == "SLDU" else 3) if d.isdigit() else d
+        path = OUT / st / f"{year}.json"
+        doc = json.loads(path.read_text()) if path.exists() else {"year": year, "st": st, "n": n, "first_pid": first, "offices": {}, "districts": {}, "basis": {}, "est": {}, "src": []}
+        doc["offices"][office] = [[int(a), int(b), int(c)] for a, b, c in zip(*parts)]
+        doc.setdefault("districts", {})[office] = lab
+        doc.setdefault("est", {})[office] = [int(round(100 * s_ / a)) if a > 0 else 0 for s_, a in zip(splitv, allv)]
+        doc.setdefault("basis", {})[office] = "party"
+        doc["src"] = sorted(set(doc.get("src", [])) | {f"vest-{year}"})
+        path.write_text(json.dumps(doc, separators=(",", ":")) + "\n")
+        sums = {office: {"d": int(parts[0].sum()), "r": int(parts[1].sum()), "o": int(parts[2].sum()), "precincts_with_votes": int(((parts[0] + parts[1] + parts[2]) > 0).sum()),
+                         "src": f"vest-{year}", "basis": "party", "est": round(float(splitv.sum() / allv.sum()), 4) if allv.sum() else 0.0}}
+        out.append(f"VA {year} {office}  old {len(old)}  " + update_cells(st, year, n, sums, truth))
+    return out
+
+
 B_FIPS = {
     "AL": "01", "AK": "02", "AZ": "04", "AR": "05", "CA": "06", "CO": "08", "CT": "09", "DE": "10", "DC": "11",
     "FL": "12", "GA": "13", "HI": "15", "ID": "16", "IL": "17", "IN": "18", "IA": "19", "KS": "20", "KY": "21",
@@ -237,6 +290,9 @@ def main() -> None:
             print(build_state(st, year, truth), flush=True)
         except Exception as e:  # keep going; one state's quirk should not stop the run
             print(f"{st}: FAILED {type(e).__name__}: {str(e)[:200]}", flush=True)
+        if st == "VA" and year % 2:
+            for line in build_virginia_legislature(year, truth):
+                print(line, flush=True)
 
 
 if __name__ == "__main__":

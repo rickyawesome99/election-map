@@ -9,7 +9,8 @@ import { AtlasCandidatesSection, AtlasFundraisingSection, CandidateLink, PARTY_C
 import { AtlasOverlayMap, AtlasTransitionMaps } from "./AtlasEraMaps";
 import type { Chamber } from "@/data/stateLegDistricts";
 import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/stateLegAtlas";
-import { fmtMoney, resultMargin } from "@/lib/stateLegAtlas";
+import { resultMargin } from "@/lib/stateLegAtlas";
+import { formatReceipts } from "@/components/FundraisingLedger";
 import { getRatingColors, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import { PILL } from "@/components/RaceHeroPills";
 import { useRevealOnce } from "@/lib/useRevealOnce";
@@ -61,49 +62,114 @@ function eraLabel(eras: AtlasEra[], key: string): string {
   return e.key === "current" ? "current map" : `${e.label} map`;
 }
 
-function Candidates({ r, abbr }: { r: AtlasResult; abbr: string }) {
-  const cands = (r.candidates ?? []).filter((c) => c.votes == null || c.votes > 0);
-  if (cands.length === 0) {
-    return (
-      <span style={{ color: "var(--app-text-muted)" }}>
-        {r.noCount ? "No count published" : "Party totals only"}
-      </span>
-    );
-  }
+const SUBTLE: Record<string, string> = {
+  D: "color-mix(in srgb, var(--party-dem) 14%, transparent)",
+  R: "color-mix(in srgb, var(--party-rep) 14%, transparent)",
+  O: "color-mix(in srgb, var(--party-ind) 14%, transparent)",
+};
+
+function WinnerCheck({ color }: { color: string }) {
   return (
-    <div className="flex flex-col gap-0.5">
-      {cands.map((c, i) => (
-        <div key={`${c.name}-${i}`} className="flex items-baseline gap-2 min-w-0">
-          <span className="truncate" style={{ color: PARTY_COLOR[c.party] ?? "var(--app-text-primary)" }}>
-            <CandidateLink name={c.name} abbr={abbr} color={PARTY_COLOR[c.party] ?? "var(--app-text-primary)"} weight={c.winner ? 700 : 400} />
-            <span className="ml-1 text-[11px] font-bold">({c.party})</span>
-          </span>
-          {c.incumbent && <span className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>inc.</span>}
-          {c.post && <span className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>post {c.post}</span>}
-          <span className="ml-auto tabular-nums text-xs" style={{ color: "var(--app-text-muted)" }}>{c.votes == null ? "—" : c.votes.toLocaleString()}</span>
-        </div>
-      ))}
+    <svg viewBox="0 0 16 16" width="13" height="13" className="shrink-0 self-center" role="img" aria-label="Won">
+      <title>Won</title>
+      <circle cx="8" cy="8" r="8" fill={color} />
+      <path d="M4.5 8.3l2.3 2.3 4.7-5" fill="none" stroke="var(--app-bg)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+/** One line of a result block: name (party), Inc./post/won marks, money raised, then share and votes at right. */
+function ResultLine({ name, party, color, pct, votes, incumbent, winner, post, raised, abbr }: {
+  name: React.ReactNode; party: string; color: string; pct: string; votes: number | null | undefined;
+  incumbent?: boolean; winner?: boolean; post?: string; raised?: React.ReactNode; abbr?: string;
+}) {
+  return (
+    <div className="flex items-baseline gap-2 py-[3px]">
+      <div className="flex min-w-0 flex-1 flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+        <span className="text-sm font-semibold min-w-0" style={{ color }}>
+          {typeof name === "string" && abbr ? <CandidateLink name={name} abbr={abbr} color={color} weight={600} /> : name}
+          {party && <> ({party})</>}
+        </span>
+        {incumbent && <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: SUBTLE[party] ?? SUBTLE.O, color }}>Inc.</span>}
+        {post && <span className="text-[10px] font-semibold uppercase tracking-wider shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{post}</span>}
+        {winner && <WinnerCheck color={color} />}
+        {raised}
+      </div>
+      <span className="text-sm font-bold tabular-nums w-14 text-right shrink-0" style={{ color }}>{pct}</span>
+      <span className="text-xs tabular-nums w-16 text-right shrink-0" style={{ color: "var(--app-text-primary)" }}>{votes === undefined ? "" : votes == null ? "—" : votes.toLocaleString("en-US")}</span>
     </div>
   );
 }
 
-/** Each named candidate's cycle contributions beside the result row, in the row's name order. */
-function Raised({ r, money }: { r: AtlasResult; money: AtlasMoney | undefined }) {
-  if (!money) return <span style={{ color: "var(--app-text-very-muted)" }}>—</span>;
-  const cands = (r.candidates ?? []).filter((c) => c.votes == null || c.votes > 0);
-  const byName = new Map(money.candidates.map((c) => [c.name, c]));
+/**
+ * A district's past general elections in the race pages' Vote History ledger: one block per year
+ * with the serif year, an Unopposed pill, the money gap and any old map beside it, and the margin, then a line per candidate
+ * (votes descending, as the source lists them) with share, votes and the cycle's money, and a foot
+ * with the money gap and, for an election on superseded lines, the map it was held on.
+ */
+function ElectoralHistory({ results, eras, abbr, chamber, money }: { results: AtlasResult[]; eras: AtlasEra[]; abbr: string; chamber: Chamber; money: AtlasMoney[] }) {
   return (
-    <div className="flex flex-col gap-0.5 tabular-nums text-xs">
-      {cands.map((c, i) => {
-        const m = byName.get(c.name);
-        return <span key={`${c.name}-${i}`} style={{ color: m?.matched ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{m?.matched ? fmtMoney(m.contributions) : "—"}</span>;
+    <div>
+      {results.map((r, i) => {
+        const m = resultMargin(r);
+        const total = r.totalVotes ?? 0;
+        const pct = (v: number | null | undefined) => (total > 0 && v != null ? `${((v / total) * 100).toFixed(1)}%` : "—");
+        const cands = (r.candidates ?? []).filter((c) => c.votes == null || c.votes > 0);
+        const yearMoney = money.find((x) => x.year === r.year);
+        const byName = new Map((yearMoney?.candidates ?? []).map((c) => [c.name, c]));
+        const oldMap = r.era !== "current";
+        const enterMs = enter(i);
+        return (
+          <div key={r.year} className="vh-row" style={{ padding: i === 0 ? "0.15rem 0 0.5rem" : "0.5rem 0", borderBottom: i === results.length - 1 ? "none" : "1px solid var(--app-border)", animationDelay: `${enterMs}ms` }}>
+            <div className="flex items-baseline justify-between gap-2 mb-0.5">
+              <div className="flex min-w-0 flex-wrap items-baseline gap-x-3 gap-y-1">
+                <span className="tabular-nums shrink-0" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{r.year}</span>
+                {r.uncontested && <Pill>Unopposed</Pill>}
+                {yearMoney?.gapPct != null && cands.length > 1 && (
+                  <span className="text-xs font-semibold whitespace-nowrap shrink-0" style={{ color: "var(--app-text-muted)" }} title="Gap in the two parties' shares of the money raised">
+                    Raised <span style={{ color: yearMoney.gapPct > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{yearMoney.gapPct > 0 ? "R" : "D"}+{Math.abs(yearMoney.gapPct).toFixed(0)}%</span>
+                  </span>
+                )}
+                {oldMap && (
+                  <span className="text-xs whitespace-nowrap shrink-0" style={{ color: "var(--app-text-muted)" }} title="Held on superseded lines: see Redistricting history">
+                    {eraLabel(eras, r.era).replace(/^./, (c) => c.toUpperCase())}
+                  </span>
+                )}
+              </div>
+              {r.noCount
+                ? <span className="text-xs whitespace-nowrap shrink-0" style={{ color: "var(--app-text-very-muted)" }}>No count printed</span>
+                : <span className="vh-margin tabular-nums whitespace-nowrap shrink-0" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: m == null ? "var(--app-text-very-muted)" : marginText(m) }}>{fmtMargin(m)}</span>}
+            </div>
+
+            {cands.length > 0 ? cands.map((c, j) => {
+              const color = PARTY_COLOR[c.party] ?? "var(--app-text-primary)";
+              const mm = byName.get(c.name);
+              const raised = yearMoney && c.party !== "O" ? (
+                <span className="text-[11px] tabular-nums shrink-0" style={{ color: "var(--app-text-very-muted)" }}>
+                  {mm?.matched ? `${formatReceipts(mm.contributions ?? 0)} raised` : "no filing"}
+                </span>
+              ) : null;
+              const post = c.post ? (abbr.toUpperCase() === "ID" ? `Seat ${c.post}` : POST_CHAMBERS.has(`${abbr.toUpperCase()}-${chamber}`) ? `Pos. ${c.post}` : `Post ${c.post}`) : undefined;
+              return <ResultLine key={`${c.name}-${j}`} name={c.name} abbr={abbr} party={c.party} color={color} pct={r.noCount ? "" : pct(c.votes)} votes={r.noCount ? undefined : c.votes} incumbent={c.incumbent} winner={c.winner} post={post} raised={raised} />;
+            }) : r.noCount ? (
+              <p className="text-sm py-[3px]" style={{ color: "var(--app-text-muted)" }}>Candidates not on file</p>
+            ) : (
+              // Party totals only: the source printed the parties' votes, not the people.
+              <>
+                {r.demVotes != null && r.demVotes > 0 && <ResultLine name="Democrats" party="" color={PARTY_COLOR.D} pct={pct(r.demVotes)} votes={r.demVotes} />}
+                {r.repVotes != null && r.repVotes > 0 && <ResultLine name="Republicans" party="" color={PARTY_COLOR.R} pct={pct(r.repVotes)} votes={r.repVotes} />}
+                {r.othVotes != null && r.othVotes > 0 && <ResultLine name="Others" party="" color="var(--app-text-muted)" pct={pct(r.othVotes)} votes={r.othVotes} />}
+              </>
+            )}
+
+          </div>
+        );
       })}
-      {money.gapPct != null && cands.length > 1 && <span className="text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>{money.gapPct > 0 ? "R" : "D"} +{Math.abs(money.gapPct).toFixed(0)}%</span>}
     </div>
   );
 }
 
-/** Which filings the Raised column comes from, by cycle: sources differ by state and year, and some undercount. */
+/** Which filings the "raised" figures come from, by cycle: sources differ by state and year, and some undercount. */
 function MoneySources({ money }: { money: AtlasMoney[] }) {
   const bySource = new Map<string, number[]>();
   for (const m of money) bySource.set(m.source, [...(bySource.get(m.source) ?? []), m.year]);
@@ -113,7 +179,7 @@ function MoneySources({ money }: { money: AtlasMoney[] }) {
       {[...bySource].map(([source, years], i) => (
         <span key={source}>{i > 0 && "; "}{source} ({[...years].sort((a, b) => a - b).join(", ")})</span>
       ))}
-      . A dash is a candidate with no filing on record.
+      . &ldquo;No filing&rdquo; is a candidate with none on record.
     </p>
   );
 }
@@ -322,33 +388,8 @@ export default function AtlasDistrictDetail({
         {district.results.length === 0 ? (
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>No results on file.</p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
-              <thead>
-                <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {["Year", "Candidates", ...(hasMoney ? ["Raised"] : []), "Dem", "Rep", "Margin", "Lines"].map((h) => (
-                    <th key={h} className={`py-1.5 ${h === "Year" ? "pr-4 w-[1%] whitespace-nowrap" : "pr-3"} text-[10px] uppercase tracking-wider font-semibold ${["Dem", "Rep", "Margin", "Raised"].includes(h) ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {district.results.map((r, i) => {
-                  const m = resultMargin(r);
-                  const pct = (v: number | null) => (r.totalVotes && v != null ? `${((v / r.totalVotes) * 100).toFixed(1)}%` : "—");
-                  return (
-                    <tr key={r.year} className="vh-tr vh-hover" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
-                      <td className="py-2 pr-4 font-semibold align-top w-[1%] whitespace-nowrap">{r.year}{r.uncontested && <div className="mt-1"><Pill>Unopposed</Pill></div>}</td>
-                      <td className="py-2 pr-3 align-top min-w-[220px]"><Candidates r={r} abbr={abbr} /></td>
-                      {hasMoney && <td className="py-2 pr-3 text-right align-top"><Raised r={r} money={district.money?.find((x) => x.year === r.year)} /></td>}
-                      <td className="py-2 pr-3 text-right align-top" style={{ color: "var(--party-dem)" }}>{pct(r.demVotes)}</td>
-                      <td className="py-2 pr-3 text-right align-top" style={{ color: "var(--party-rep)" }}>{pct(r.repVotes)}</td>
-                      <td className="py-2 pr-3 text-right align-top font-semibold" style={{ color: m == null ? "var(--app-text-very-muted)" : marginText(m) }}><span className="vh-margin inline-block">{fmtMargin(m)}</span></td>
-                      <td className="py-2 pr-0 align-top text-xs whitespace-nowrap" style={{ color: r.era === "current" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>{eraLabel(eras, r.era)}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+          <div>
+            <ElectoralHistory results={district.results} eras={eras} abbr={abbr} chamber={chamber} money={hasMoney ? district.money ?? [] : []} />
             {district.results.some((r) => r.era !== "current") && (
               <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                 Rows on a superseded map are the race held under this district number on those lines, which may cover different ground than today&rsquo;s district. See Redistricting history.

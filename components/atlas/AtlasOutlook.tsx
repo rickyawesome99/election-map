@@ -1,6 +1,6 @@
 "use client";
 
-import { LedgerSectionHead } from "@/components/LedgerSectionHead";
+import { LedgerSectionHead, LedgerSubhead } from "@/components/LedgerSectionHead";
 import type { AtlasDistrict, AtlasEra, AtlasIndependent } from "@/lib/stateLegAtlas";
 import { projectedMarginColor, fmtMargin } from "@/lib/colorScale";
 
@@ -33,6 +33,30 @@ const BASIS: Record<AtlasIndependent["basis"], string> = {
   endorsed: "backed by a major party",
 };
 
+const LABEL = "text-[10.5px] font-bold uppercase tracking-wider";
+const SERIF = { fontFamily: "var(--font-serif)", fontWeight: 700 } as const;
+const partyOf = (v: number) => (Math.abs(v) < 0.05 ? "var(--app-text-primary)" : v > 0 ? "var(--party-rep)" : "var(--party-dem)");
+
+/** A term in points, named for the side it helps ("D+4.3"); a term of nothing is "0.0", not a tie. */
+const fmtTerm = (v: number) => (Math.abs(v) < 0.05 ? "0.0" : fmtM(v));
+
+type Term = { label: string; value: string; color: string; note?: string; total?: boolean };
+
+/** The race pages' term cells: a small label over a serif figure, a note under it; the total set apart. */
+function TermCells({ terms }: { terms: Term[] }) {
+  return (
+    <div className="-mx-2 grid grid-cols-2 sm:grid-flow-col sm:auto-cols-fr sm:grid-cols-none">
+      {terms.map((t, i) => (
+        <div key={t.label} className={`${ROW} flex flex-col gap-1 px-2 py-2.5 hover:z-10`} style={{ animationDelay: `${enter(i)}ms` }}>
+          <span className={LABEL} style={{ color: t.total ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>{t.label}</span>
+          <span className="tabular-nums leading-tight whitespace-nowrap" style={{ ...SERIF, fontSize: "1.35rem", color: t.color }}>{t.value}</span>
+          {t.note && <span className="text-[11px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>{t.note}</span>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 /** The independent-vs-party sum that replaces the two-party one (lib/stateLegForecast.ts step 7). */
 function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep: AtlasIndependent; lean: number; envPts: number; beta: number; pI: number | null; electionYear: number }) {
   const opp = indep.slot === "D" ? "R" : "D";
@@ -52,7 +76,7 @@ function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep
         <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{indep.name}</span> ({indep.partyLabel}, {BASIS[indep.basis]}{indep.endorsedBy ? `, ${indep.endorsedBy === "D" ? "Democratic" : "Republican"}-backed` : ""}) {indep.sameElectorate ? `races the ${opp === "D" ? "Democrats'" : "Republicans'"} ${indep.opponent ?? "nominees"} for one of the district's seats; the others go to the party.` : `takes the place of the absent ${indep.slot === "D" ? "Democrat" : "Republican"} against ${indep.opponent ?? `the ${opp}`}.`}{indep.note ? ` ${indep.note}` : ""}
       </p>
       {indep.record.length > 0 && (
-        <table className="mt-3 w-full max-w-md text-xs" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
+        <table className="mt-3 w-full max-w-md text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
           <thead>
             <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
               {["Race", "Share", "Margin", "Expected", "Residual"].map((h, i) => (
@@ -73,19 +97,15 @@ function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep
           </tbody>
         </table>
       )}
-      <div className="mt-3 max-w-md text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
-        {lines.map((l, i) => (
-          <div key={l.label} className={`${ROW} flex items-baseline gap-3 py-1`} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
-            <span className="font-semibold whitespace-nowrap">{l.label}</span>
-            <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{l.note}</span>
-            <span className="ml-auto">{l.value}</span>
-          </div>
-        ))}
-        <div className={`${ROW} flex items-baseline gap-3 py-1.5`} style={{ borderBottom: "2px solid var(--app-text-primary)", animationDelay: `${enter(lines.length)}ms` }}>
-          <span className="font-bold">= Projected margin</span>
-          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{pI != null ? `P(${indep.name}) ${Math.round(pI * 100)}%` : ""}</span>
-          <span className="ml-auto font-bold" style={{ color: indep.advantage > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>{fmtI(indep.advantage, opp)}</span>
-        </div>
+      <div className="mt-3">
+        <TermCells terms={[
+          ...lines.map((l) => ({ label: l.label, value: l.value, color: "var(--app-text-primary)", note: l.note })),
+          {
+            label: "= Projected margin", total: true, value: fmtI(indep.advantage, opp),
+            color: indep.advantage > 0 ? "var(--party-ind)" : opp === "D" ? "var(--party-dem)" : "var(--party-rep)",
+            note: pI != null ? `P(${indep.name}) ${Math.round(pI * 100)}%` : undefined,
+          },
+        ]} />
       </div>
     </div>
   );
@@ -116,72 +136,101 @@ export default function AtlasOutlook({ district, eras, electionYear }: { distric
     : pr.contest === "independent" && pr.indep ? (pr.indep.advantage > 0 ? "var(--party-ind)" : pr.indep.slot === "D" ? "var(--party-rep)" : "var(--party-dem)")
     : pr.contest === "other" && pr.pI === 1 ? "var(--party-ind)" : "var(--app-text-muted)";
 
+  const contested = pr.contest === "contested" && pr.margin != null;
+  // 80% of outcomes: ± 1.2816 σ around the projected margin.
+  const lo = contested ? pr.margin! - 1.2816 * pr.sigma : null;
+  const hi = contested ? pr.margin! + 1.2816 * pr.sigma : null;
+  const winD = pr.pD != null && pr.pD >= 0.5;
+  const winPct = pr.pD == null ? null : Math.max(pr.pD, 1 - pr.pD) * 100;
+  const fmtPct = (v: number) => (v > 99.5 ? ">99" : v < 0.5 ? "<1" : String(Math.round(v)));
+  const rows = [...pr.rows].sort((a, b) => b.year - a.year || (a.kind === "P" ? -1 : 1));
+  const th = (right: boolean) => `py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${right ? "text-right" : "text-left"}`;
+  const adj = (v: string) => <span style={{ color: v === "—" ? "var(--app-text-very-muted)" : "var(--app-text-muted)" }}>{v}</span>;
+
   return (
     <section>
-      <LedgerSectionHead label="Forecast Calculation" meta={pr.contest === "contested" ? `σ ${pr.sigma.toFixed(1)} · ${pr.rows.length} race-years` : undefined} />
-      {/* The headline margin, rating and win probability sit in the page hero; this is the working. */}
-      {(pr.contest !== "contested" || pr.margin == null) && (
-        <div className="flex flex-wrap items-baseline gap-x-5 gap-y-2">
-          <span style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)", fontWeight: 700, color: headColor, lineHeight: 1 }}>{headline}</span>
+      <LedgerSectionHead label="Forecast Calculation" />
+
+      {/* Headline: the projected margin and the win chance, as on the race pages. */}
+      {contested ? (
+        <div className="flex items-end justify-between gap-6">
+          <div className="min-w-0">
+            <div className={LABEL} style={{ color: "var(--app-text-muted)" }}>Projected Margin</div>
+            <div className="vh-margin tabular-nums" style={{ ...SERIF, fontSize: "clamp(2.2rem, 6vw, 3rem)", lineHeight: 1.05, color: projectedMarginColor(pr.margin!) }}>{fmtMargin(pr.margin)}</div>
+          </div>
+          {winPct != null && (
+            <div className="text-right shrink-0">
+              <div className={LABEL} style={{ color: "var(--app-text-muted)" }}>{winD ? "Dem" : "Rep"} Win Chance</div>
+              <div className="tabular-nums" style={{ ...SERIF, fontSize: "clamp(1.8rem, 5vw, 2.4rem)", lineHeight: 1.05, color: winD ? "var(--party-dem)" : "var(--party-rep)" }}>{fmtPct(winPct)}%</div>
+            </div>
+          )}
         </div>
+      ) : (
+        <div style={{ ...SERIF, fontSize: "clamp(1.2rem, 2.5vw, 1.6rem)", color: headColor, lineHeight: 1.1 }}>{headline}</div>
       )}
-      {pr.seats > 1 && pr.contest === "contested" && <p className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{guaranteedNote ? `${guaranteedNote}; the other ${pr.contestedSeats ?? pr.seats - g.dem - g.rep} drawn on the margin.` : `${pr.seats} seats, each drawn on the same margin.`}</p>}
+      {pr.seats > 1 && pr.contest === "contested" && (
+        <p className="mt-2 text-sm" style={{ color: "var(--app-text-muted)" }}>{guaranteedNote ? `${guaranteedNote}; the other ${pr.contestedSeats ?? pr.seats - g.dem - g.rep} drawn on the margin.` : `${pr.seats} seats, each drawn on the same margin.`}</p>
+      )}
 
       {pr.contest !== "not-up" && pr.lean != null && (
         <>
-          <div className="mt-4 overflow-x-auto">
-            <table className="w-full text-xs" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
+          {pr.contest === "independent" && pr.indep ? (
+            <IndependentSum indep={pr.indep} lean={pr.lean} envPts={pr.envPts} beta={pr.beta} pI={pr.pI ?? null} electionYear={electionYear} />
+          ) : (
+            <div className="mt-5">
+              <TermCells terms={[
+                { label: "Structural lean", value: fmtM(pr.lean), color: partyOf(pr.lean), note: `weighted neutral margins, ${pr.rows.length} race-years` },
+                { label: `+ ${electionYear} Environment`, value: fmtTerm(pr.envPts), color: partyOf(pr.envPts), note: `β* ${pr.beta.toFixed(2)} × E` },
+                { label: "+ Incumbency", value: fmtTerm(pr.incPts), color: partyOf(pr.incPts), note: pr.incSign === 0 ? "open seat or none marked" : pr.incSign > 0 ? "Republican incumbent" : "Democratic incumbent" },
+                { label: "+ Money", value: fmtTerm(pr.money?.pts ?? 0), color: partyOf(pr.money?.pts ?? 0), note: pr.money
+                  ? `raised ${fmtM(pr.money.gapPct)}${pr.money.scale !== 1 ? ` (× ${pr.money.scale} to date)` : ""} vs ${fmtM(pr.money.structuralGapPct)} expected`
+                  : "either side's money not on file: the typical gap for the seat" },
+                { label: "= Projected margin", total: true, value: fmtMargin(pr.margin), color: pr.margin != null ? projectedMarginColor(pr.margin) : "var(--app-text-muted)",
+                  note: decided ? "decided by the field; the model's view of the district" : `σ ${pr.sigma.toFixed(1)}` },
+              ]} />
+              {contested && (
+                <div className="mt-1 flex flex-wrap items-baseline gap-x-2 text-xs" style={{ color: "var(--app-text-muted)" }}>
+                  <span className={LABEL}>80% range</span>
+                  <span className="font-semibold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtMargin(lo)} to {fmtMargin(hi)}</span>
+                  <span style={{ color: "var(--app-text-very-muted)" }}>· σ {pr.sigma.toFixed(1)}</span>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* The structural lean's working: every race-year made neutral, then weighted. */}
+          <LedgerSubhead label="Structural lean, race by race" />
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
               <thead>
                 <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
                   {[["Race"], ["Lines"], ["Raw"], ["Relocation"], ["Down-ballot"], ["Inc", "Incumbency"], ["Env", "Environment"], ["Money"], ["Neutral"], ["Weight"]].map(([h, full], i) => (
-                    <th key={h} title={full} className={`py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${i >= 2 ? "text-right" : "text-left"}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
+                    <th key={h} title={full} className={th(i >= 2)} style={{ color: "var(--app-text-muted)" }}>{h}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
-                {[...pr.rows].sort((a, b) => b.year - a.year || (a.kind === "P" ? -1 : 1)).map((r, i) => (
-                  <tr key={`${r.year}-${r.kind}`} className={TR} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.75 : 1, animationDelay: `${enter(i)}ms` }}>
-                    <td className="py-1.5 pr-3 font-semibold whitespace-nowrap">{r.label}</td>
-                    <td className="py-1.5 pr-3 whitespace-nowrap" style={{ color: r.relocated ? "var(--app-text-muted)" : "var(--app-text-primary)" }}>
+                {rows.map((r, i) => (
+                  <tr key={`${r.year}-${r.kind}`} className={TR} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.7 : 1, animationDelay: `${enter(i)}ms` }}>
+                    <td className="py-2 pr-3 font-semibold whitespace-nowrap">{r.label}</td>
+                    <td className="py-2 pr-3 whitespace-nowrap text-xs" style={{ color: r.relocated ? "var(--app-text-muted)" : "var(--app-text-primary)" }}>
                       {r.relocated ? `${eraLabel(r.era)} → today's` : "today's lines"}{r.coverage < 0.999 && <span style={{ color: "var(--app-text-very-muted)" }}> · {Math.round(r.coverage * 100)}% covered</span>}
                     </td>
-                    <td className="py-1.5 pr-3 text-right" style={{ color: marginText(r.raw - r.presDelta) }}>{fmtM(r.raw - r.presDelta)}</td>
-                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.relocated ? signed(r.presDelta) : "—"}</td>
-                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }} title={r.kind === "P" ? "the chamber's down-ballot gap: its seats run this far from the presidential vote (PRES_GAP_K share)" : undefined}>{r.kind === "P" && r.gapPts ? signed(r.gapPts) : "—"}</td>
-                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{r.kind === "L" && r.incSign !== 0 ? signed(r.incPts) : "—"}</td>
-                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }}>{signed(r.envPts)}</td>
-                    <td className="py-1.5 pr-3 text-right" style={{ color: "var(--app-text-muted)" }} title={r.kind === "L" ? "the race's money term, taken out of its margin (0 where either side's money is not on file)" : undefined}>{r.kind === "L" && r.moneyPts ? signed(-r.moneyPts) : "—"}</td>
-                    <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: marginText(r.NM) }}>{fmtM(r.NM)}</td>
-                    <td className="py-1.5 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{(r.weight * 100).toFixed(0)}%{r.huber < 1 && <span title="Huber-downweighted outlier" style={{ color: "var(--app-text-very-muted)" }}> ↓</span>}</td>
+                    <td className="py-2 pr-3 text-right font-semibold" style={{ color: marginText(r.raw - r.presDelta) }}>{fmtM(r.raw - r.presDelta)}</td>
+                    <td className="py-2 pr-3 text-right">{adj(r.relocated ? signed(r.presDelta) : "—")}</td>
+                    <td className="py-2 pr-3 text-right" title={r.kind === "P" ? "the chamber's down-ballot gap: its seats run this far from the presidential vote (PRES_GAP_K share)" : undefined}>{adj(r.kind === "P" && r.gapPts ? signed(r.gapPts) : "—")}</td>
+                    <td className="py-2 pr-3 text-right">{adj(r.kind === "L" && r.incSign !== 0 ? signed(r.incPts) : "—")}</td>
+                    <td className="py-2 pr-3 text-right">{adj(signed(r.envPts))}</td>
+                    <td className="py-2 pr-3 text-right" title={r.kind === "L" ? "the race's money term, taken out of its margin (0 where either side's money is not on file)" : undefined}>{adj(r.kind === "L" && r.moneyPts ? signed(-r.moneyPts) : "—")}</td>
+                    <td className="py-2 pr-3 text-right font-bold" style={{ color: marginText(r.NM) }}>{fmtM(r.NM)}</td>
+                    <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{(r.weight * 100).toFixed(0)}%{r.huber < 1 && <span title="Huber-downweighted outlier" style={{ color: "var(--app-text-very-muted)" }}> ↓</span>}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          {pr.contest === "independent" && pr.indep ? (
-            <IndependentSum indep={pr.indep} lean={pr.lean} envPts={pr.envPts} beta={pr.beta} pI={pr.pI ?? null} electionYear={electionYear} />
-          ) : (
-          <div className="mt-3 max-w-md text-sm" style={{ fontVariantNumeric: "tabular-nums" }}>
-            {[
-              { label: "Structural lean", note: "weighted neutral margins above", value: fmtM(pr.lean) },
-              { label: `+ ${electionYear} environment`, note: `β* ${pr.beta.toFixed(2)} × E`, value: signed(pr.envPts) },
-              { label: "+ Incumbency", note: pr.incSign === 0 ? "open seat or none marked" : pr.incSign > 0 ? "Republican incumbent" : "Democratic incumbent", value: signed(pr.incPts) },
-              { label: "+ Money", note: pr.money
-                ? `raised ${fmtM(pr.money.gapPct)}${pr.money.scale !== 1 ? ` (× ${pr.money.scale} to date)` : ""} vs ${fmtM(pr.money.structuralGapPct)} expected`
-                : "either side's money not on file: the typical gap for the seat", value: signed(pr.money?.pts ?? 0) },
-            ].map((l, i) => (
-              <div key={l.label} className={`${ROW} flex items-baseline gap-3 py-1`} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
-                <span className="font-semibold">{l.label}</span>
-                <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{l.note}</span>
-                <span className="ml-auto">{l.value}</span>
-              </div>
-            ))}
-            <div className={`${ROW} flex items-baseline gap-3 py-1.5`} style={{ borderBottom: "2px solid var(--app-text-primary)", animationDelay: `${enter(4)}ms` }}>
-              <span className="font-bold">= Projected margin</span>
-              <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{decided ? "the seat is decided by the field; the margin is the model's view of the district" : `σ ${pr.sigma.toFixed(1)}`}</span>
-              <span className="ml-auto font-bold" style={{ color: pr.margin != null ? projectedMarginColor(pr.margin) : undefined }}>{fmtMargin(pr.margin)}</span>
-            </div>
-          </div>
+          {rows.some((r) => r.huber < 1) && (
+            <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>Faded rows marked ↓ are outliers given less weight.</p>
           )}
         </>
       )}

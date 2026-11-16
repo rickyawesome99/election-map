@@ -33,12 +33,12 @@ function Portrait({ party }: { party: Party }) {
   return (
     <div
       className="shrink-0 overflow-hidden flex items-center justify-center"
-      style={{ width: "4.5rem", height: "4.5rem", borderRadius: "12px", border: `3px solid ${PARTY_COLOR[party]}`, background: "var(--app-tab-bg)" }}
+      style={{ width: "5.25rem", height: "5.25rem", borderRadius: "14px", border: `3px solid ${PARTY_COLOR[party]}`, background: "var(--app-tab-bg)" }}
     >
       {party === "R" ? (
-        <Image src="/candidates/placeholder-republican.png" alt="Republican" width={144} height={144} className="w-full h-full object-contain p-2" />
+        <Image src="/candidates/placeholder-republican.png" alt="Republican" width={168} height={168} className="w-full h-full object-contain p-2" />
       ) : party === "D" ? (
-        <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={144} height={144} className="w-full h-full object-contain p-2" />
+        <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={168} height={168} className="w-full h-full object-contain p-2" />
       ) : (
         <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
           <rect width="64" height="80" fill="var(--app-tab-bg)" />
@@ -99,33 +99,37 @@ export function AtlasCandidatesSection({ district, abbr }: { district: AtlasDist
               {post === "Special" ? "Special election (unexpired term)" : post === "" ? "Regular election" : abbr === "ID" ? `Seat ${post}` : `Position ${post}`}
             </div>
           )}
-          {cands.map((x, i) => {
+          {cands
+            // Leader first, as on the House pages: by projected votes (or share), highest first; a
+            // candidate with no projection keeps the ballot order after those that have one.
+            .map((x, idx) => ({ x, idx, p: projectedNomineeShare(x, cands, posts.length > 1, margin, votes) }))
+            .sort((a, b) => (b.p?.votes ?? b.p?.share ?? -1) - (a.p?.votes ?? a.p?.share ?? -1) || a.idx - b.idx)
+            .map(({ x, p }, i) => {
             const color = PARTY_COLOR[x.party];
-            const p = projectedNomineeShare(x, cands, posts.length > 1, margin, votes);
             const share = p?.share ?? null;
             const v = p?.votes != null ? { votes: p.votes } : null;
             return (
               <div
                 key={`${x.name}-${i}`}
-                className="vh-row flex items-center justify-between gap-4 py-3.5"
+                className="vh-row flex items-center justify-between gap-3 py-2.5"
                 style={{ borderBottom: i === cands.length - 1 ? "none" : "1px solid var(--app-border)", animationDelay: `${Math.min(i, 8) * 55}ms` }}
               >
                 <div className="flex items-center gap-4 min-w-0">
                   <Portrait party={x.party} />
                   <div className="min-w-0">
                     <div className="flex items-center gap-1.5 flex-wrap">
-                      <CandidateLink name={x.name} abbr={abbr} color={color} weight={700} style={{ fontFamily: "var(--font-serif)", fontSize: "1.2rem" }} />
-                      {x.incumbent && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `color-mix(in srgb, ${color} 14%, transparent)`, color }}>Inc.</span>}
+                      <CandidateLink name={x.name} abbr={abbr} color={color} weight={700} style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem" }} />
+                      {x.incumbent && <span className="text-[10px] font-semibold px-1.5 py-0.5 shrink-0" style={{ color }}>Inc.</span>}
                       {x.writeIn && <Pill>Write-in</Pill>}
                     </div>
-                    <div className="text-sm font-medium mt-0.5" style={{ color }}>{partyName(x.party, x.partyLabel)}{x.lines.length > 1 && <span className="font-normal" style={{ color: "var(--app-text-very-muted)" }}> · {x.lines.length} ballot lines{x.lines.includes("D") && x.lines.includes("R") ? " (Democratic and Republican)" : ""}</span>}</div>
+                    <div className="text-sm font-medium" style={{ color }}>{partyName(x.party, x.partyLabel)}{x.lines.length > 1 && <span className="font-normal" style={{ color: "var(--app-text-very-muted)" }}> · {x.lines.length} ballot lines{x.lines.includes("D") && x.lines.includes("R") ? " (Democratic and Republican)" : ""}</span>}</div>
                   </div>
                 </div>
                 {share != null && (
                   <div className="shrink-0 text-right tabular-nums" style={{ color }}>
-                    <div className="vh-margin text-3xl font-extrabold">{share.toFixed(1)}%</div>
+                    <div className="vh-margin text-3xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{share === 0 || share === 100 ? String(share) : share.toFixed(1)}%</div>
                     {v ? (
-                      <div className="text-sm font-medium mt-0.5">{v.votes.toLocaleString("en-US")} votes</div>
+                      <div className="text-sm font-medium">{v.votes.toLocaleString("en-US")} votes</div>
                     ) : (
                       <div className="text-[11px] mt-0.5" style={{ color: "var(--app-text-very-muted)" }}>projected</div>
                     )}

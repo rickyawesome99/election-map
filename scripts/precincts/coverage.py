@@ -51,3 +51,22 @@ def update_cells(st: str, year: int, n: int, sums: dict[str, dict], truth: dict,
     fcntl.flock(lock, fcntl.LOCK_UN)
     lock.close()
     return "  ".join(line)
+
+
+def clear_cells(st: str, year: int, offices: list[str], n: int) -> None:
+    """Back to "na": contests the site does not hold for that year (left behind by an earlier run)."""
+    if not offices:
+        return
+    lock = open(COVERAGE.with_suffix(".lock"), "w")
+    fcntl.flock(lock, fcntl.LOCK_EX)
+    cov = json.loads(COVERAGE.read_text()) if COVERAGE.exists() else {"states": {}}
+    ycell = cov["states"].setdefault(st, {"n": n, "years": {}}).setdefault("years", {}).setdefault(str(year), {})
+    changed = False
+    for o in offices:
+        if ycell.get(o, {}).get("status") not in (None, "na"):
+            ycell[o] = {"status": "na"}
+            changed = True
+    if changed:
+        COVERAGE.write_text(json.dumps(cov, separators=(",", ":"), sort_keys=True) + "\n")
+    fcntl.flock(lock, fcntl.LOCK_UN)
+    lock.close()

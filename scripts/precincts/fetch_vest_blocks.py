@@ -23,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data-entry" / "precincts" / "raw"
 UA = "Mozilla/5.0 (election-map precinct pipeline)"
-VEST_DOI = {"2016": "doi:10.7910/DVN/NH5S2I", "2018": "doi:10.7910/DVN/UBKYRU", "2020": "doi:10.7910/DVN/K7760H"}
+VEST_DOI = {"2016": "doi:10.7910/DVN/NH5S2I", "2017": "doi:10.7910/DVN/VNJAB1", "2018": "doi:10.7910/DVN/UBKYRU", "2019": "doi:10.7910/DVN/2AJUII", "2020": "doi:10.7910/DVN/K7760H", "2021": "doi:10.7910/DVN/FDMI5F"}
 STATE_FIPS = {
     "AL": "01", "AK": "02", "AZ": "04", "AR": "05", "CA": "06", "CO": "08", "CT": "09", "DE": "10", "DC": "11",
     "FL": "12", "GA": "13", "HI": "15", "ID": "16", "IL": "17", "IN": "18", "IA": "19", "KS": "20", "KY": "21",

@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+"""OpenElections precinct files → the per-state layout the MEDSL builder reads.
+
+MEDSL does not cover odd-year elections. OpenElections (volunteer-transcribed official returns, public
+on GitHub) has precinct files for some of them. This downloads a state-year's general-election precinct
+CSVs (county, precinct, office, district, candidate, party, votes) and writes
+data-entry/precincts/raw/medsl/{year}/by_state/{ST}.parquet in the layout of split_medsl.py, so
+build_results_medsl.py can place them like any other year.
+
+  python3 scripts/precincts/split_openelections.py MS 2019
+  python3 scripts/precincts/split_openelections.py KY 2023
+  python3 scripts/precincts/split_openelections.py MI 2018 precinct oe   # second input beside MEDSL's: build with --variant oe --only SLDU
+  python3 scripts/precincts/split_openelections.py NJ 2017 municipal   # town-level rows (no precinct file exists)
+"""
+from __future__ import annotations
+
+import csv
+import json
+import re
+import subprocess
+import sys
+import urllib.request
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[2]
+RAW = ROOT / "data-entry" / "precincts" / "raw"
+OFFICE = {"governor": "GOV", "state house": "SLDL", "state senate": "SLDU", "state representative": "SLDL", "state senator": "SLDU", "house of delegates": "SLDL",
+          "general assembly": "SLDL", "u.s. house": "USH", "us house": "USH", "u.s. senate": "USS", "us senate": "USS", "president": "PRES", "governor and lieutenant governor": "GOV"}
+PARTY = {"R": "REPUBLICAN", "REP": "REPUBLICAN", "D": "DEMOCRAT", "DEM": "DEMOCRAT", "IND": "INDEPENDENT", "I": "INDEPENDENT", "NPA": "INDEPENDENT", "L": "LIBERTARIAN", "LBT": "LIBERTARIAN", "LIB": "LIBERTARIAN"}
+NOT_A_CANDIDATE = re.compile(r"^(total|totals|registered voters|ballots cast.*|over ?votes?|under ?votes?|blank.*|turnout)$", re.I)
+
+
+def files(st: str, year: int, level: str = "precinct") -> list[Path]:
+    """General-election precinct files of that year in openelections-data-{st}: one statewide file if there is one, else the county files."""
+    dest = RAW / "openelections" / st / (str(year) if level == "precinct" else f"{year}-{level}")
+    dest.mkdir(parents=True, exist_ok=True)
+    have = sorted(dest.glob("*.csv"))
+    if have:
+        return have
+    req = urllib.request.Request(f"https://api.github.com/repos/openelections/openelections-data-{st.lower()}/git/trees/master?recursive=1", headers={"User-Agent": "precinct pipeline"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        tree = [x["path"] for x in json.load(r)["tree"]]
+    names = [p for p in tree if re.match(rf"{year}/(counties/|General/)?{year}\d{{4}}__{st.lower()}__general_+(\w+__)?precinct\.csv$", p)]
+    statewide = [p for p in names if re.search(rf"__{st.lower()}__general__precinct\.csv$", p)]
+    if level == "municipal":  # New Jersey: no statewide precinct file; one row per municipality
+        statewide = [p for p in tree if re.match(rf"{year}/{year}\d{{4}}__{st.lower()}__general__municipal\.csv$", p)]
+    for p in statewide or names:
+        subprocess.run(["curl", "-sL", "-o", str(dest / Path(p).name), f"https://raw.githubusercontent.com/openelections/openelections-data-{st.lower()}/master/{p}"], check=True)
+    return sorted(dest.glob("*.csv"))
+
+
+def fold(x: str) -> str:
+    import unicodedata
+    return "".join(c for c in unicodedata.normalize("NFKD", x) if not unicodedata.combining(c))
+
+
+def county_codes(st: str) -> dict[str, str]:
+    out = {}
+    with open(ROOT / "data" / "county_presidential_results_2008_2024.csv", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["state"] == st:
+                out[re.sub(r"[^a-z]", "", fold(r["county_name"]).lower().replace(" county", "").replace(" parish", ""))] = r["county_id"].zfill(5)
+    return out
+
+
+def main() -> None:
+    st, year = sys.argv[1].upper(), int(sys.argv[2])
+    level = sys.argv[3] if len(sys.argv) > 3 else "precinct"
+    variant = sys.argv[4] if len(sys.argv) > 4 else ""  # "oe": written beside the MEDSL file ({ST}.oe.parquet) to fill contests MEDSL lacks
+    code = county_codes(st)
+    frames = []
+    for p in files(st, year, level):
+        d = pd.read_csv(p, dtype=str, na_filter=False)
+        d.columns = [c.strip().lower() for c in d.columns]
+        if level == "municipal":  # the municipality stands in for the precinct; the builder keeps its votes inside that town
+            d = d[d["office"].str.lower().isin(["state senate", "general assembly"])].rename(columns={"municipality": "precinct"})
+        if "county" not in d.columns:
+            m = re.search(r"general_+(\w+?)__precinct", p.name)
+            d["county"] = m.group(1).replace("_", " ") if m else ""
+        for c in ("district", "party", "precinct"):
+            if c not in d.columns:
+                d[c] = ""
+        frames.append(d[["county", "precinct", "office", "district", "candidate", "party", "votes"]])
+    d = pd.concat(frames, ignore_index=True)
+    d["office"] = d["office"].str.strip().str.lower().map(OFFICE)
+    d = d[d["office"].notna() & ~d["candidate"].map(lambda c: bool(NOT_A_CANDIDATE.match(c.strip())))]
+    import difflib
+    ckey = d["county"].map(fold).str.lower().str.replace(r"[^a-z]", "", regex=True)
+    close = {k: (difflib.get_close_matches(k, list(code), n=1, cutoff=0.75) or [k])[0] for k in set(ckey) if k not in code}  # "Gd. Traverse"
+    ckey = ckey.replace(close)
+    out = pd.DataFrame({
+        "county": ckey.map(code).fillna(""), "jurisdiction": d["county"].str.upper().str.strip(), "precinct": d["precinct"].str.strip(), "office": d["office"],
+        "district": d["district"].str.strip(), "candidate": d["candidate"].str.upper().str.strip(),
+        "party": d["party"].str.strip().str.upper().map(lambda x: PARTY.get(x, x)), "writein": d["candidate"].str.contains(r"write.?in", case=False, regex=True),
+        "mode": "TOTAL", "votes": pd.to_numeric(d["votes"].str.replace(",", ""), errors="coerce").fillna(0).round().astype("int64"),
+    })
+    dest = RAW / "medsl" / str(year) / "by_state"
+    dest.mkdir(parents=True, exist_ok=True)
+    out.to_parquet(dest / (f"{st}.{variant}.parquet" if variant else f"{st}.parquet"), index=False)
+    missing = sorted(set(d["county"][out["county"].to_numpy() == ""]))
+    print(st, year, len(out), out["office"].value_counts().to_dict(), "counties without a code:", missing[:8])
+
+
+if __name__ == "__main__":
+    main()

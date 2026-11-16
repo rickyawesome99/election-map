@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""U.S. House and state-legislative results for 2016, 2018 and 2020, fitted onto the 2024 precincts.
+"""U.S. House and state-legislative results for 2016, 2018 and 2020, fitted onto the 2024 precincts,
+and every office for 2022 (no public shapes that year: rows go straight onto the 2024 precincts by name).
 
 MEDSL publishes these contests by precinct but without shapes; VEST publishes that year's precinct
 shapes with the statewide contests only. This joins the two, then reuses the block crosswalk of
@@ -40,19 +41,34 @@ from pathlib import Path
 import geopandas as gpd
 import numpy as np
 import pandas as pd
+import pyogrio
 
 sys.path.insert(0, str(Path(__file__).parent))
 import build_results_2024 as B  # noqa: E402
 import build_results_vest as V  # noqa: E402
-from coverage import update_cells  # noqa: E402
+from coverage import clear_cells, update_cells  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 PRE = ROOT / "data-entry" / "precincts"
 RAW = PRE / "raw"
 OUT = ROOT / "public" / "precincts" / "results"
 DISTRICT_OFFICES = ["USH", "SLDU", "SLDL"]
+# Years with no public precinct shapes: MEDSL rows go straight onto the 2024 precincts by name, and the
+# statewide offices come from MEDSL too.
+NO_SHAPES = {2022, 2023, 2025, 2026}
+SLOT = {"PRES", "USS", "GOV", "USH"}
+# Command-line switches: --variant oe reads {ST}.oe.parquet (OpenElections, for contests MEDSL lacks); --only SLDU,SLDL limits the offices written.
+VARIANT = ""
+ONLY: set[str] = set()
+# Where the per-state input was not written by split_medsl.py: what the rows really are.
+SRC = {**{(s_, 2026): "official-2026" for s_ in ("AZ", "GA", "HI", "ID", "MN", "NC", "WA")}, ("MS", 2019): "openelections-2019", ("MS", 2023): "openelections-2023", ("KY", 2023): "openelections-2023", ("NJ", 2017): "openelections-2017-municipal",
+       ("NJ", 2019): "nj-doe-2019-municipal", ("NJ", 2021): "nj-doe-2021-municipal", ("NJ", 2023): "nj-doe-2023-municipal", ("NJ", 2025): "nj-doe-2025-municipal",
+       ("VA", 2021): "va-elections-2021", ("VA", 2023): "va-elections-2023", ("VA", 2025): "va-elections-2025", ("LA", 2019): "la-sos-2019", ("LA", 2023): "la-sos-2023"}
 # Differences from the site's totals that have a known cause (shown on /audit/precincts).
 EXPLAINED: dict[tuple[str, str], str] = {
+    ("AK", "USH"): "Ranked choice: precincts report first choices, the site holds the final round (2022 on).",
+    ("ID", "USS"): "No Democrat ran in 2026: the leading independent (Achilles) takes the Democratic side here, as the site does for such races elsewhere; the 2026 results file counts by party and shows 0.",
+    ("GA", "USS"): "The site holds the December runoff that decided the seat; precinct returns here are the November general.",
     ("NE", "SLDU"): "Nonpartisan ballot. The site holds no party for these years' candidates, so its totals are not by party. Here each candidate takes the affiliation on file (2018 research, 2022-2026 rosters); the rest count as other.",
 }
 SIG_OFFICES = ["PRES", "USS", "GOV", "USS_S"]
@@ -84,7 +100,7 @@ def surname(name: str) -> str:
 
 
 STOP = {"precinct", "pct", "prec", "pre", "ward", "wd", "district", "dist", "twp", "township", "boro", "borough", "city", "town", "of", "the", "no", "x", "voting",
-        "vtd", "and", "at", "village", "vlg", "tp", "bor", "ed", "number", "num", "box", "pcnt", "wards", "precincts", "county", "co", "municipality", "mun"}
+        "vtd", "and", "at", "ad", "election", "village", "vlg", "tp", "bor", "ed", "number", "num", "box", "pcnt", "wards", "precincts", "county", "co", "municipality", "mun"}
 ABBR = {"comm": "community", "ctr": "center", "cntr": "center", "ch": "church", "bapt": "baptist", "sch": "school", "elem": "elementary", "hs": "high", "mt": "mount",
         "st": "saint", "ft": "fort", "n": "north", "s": "south", "e": "east", "w": "west", "hts": "heights", "meth": "methodist", "bldg": "building", "lib": "library",
         "rec": "recreation", "vfd": "fire", "fd": "fire", "dept": "department", "jr": "junior", "sr": "senior", "pk": "park", "hwy": "highway"}
@@ -115,12 +131,26 @@ def similarity(a: tuple[frozenset[str], tuple[str, ...]], b: tuple[frozenset[str
     return score * (1.0 if na == nb else 0.8)
 
 
+def person_key(name: str) -> str:
+    """Surname plus first initial of the given name: one key per person, tolerant of spelling ("BRET" / "BRETT")
+    but not of a different person with the same surname ("ADAM SMITH" / "SARAH SMITH")."""
+    n = re.sub(r'"[^"]*"|\([^)]*\)', " ", fold(name)).replace(".", " ")
+    toks = [t for t in re.split(r"[\s,&/]+", n) if t and t not in SUFFIX]
+    sn = surname(name)
+    given = [t for t in toks if re.sub(r"[^A-Z]", "", t) != sn and len(t) > 1]
+    return f"{sn}~{given[0][:1] if given else ''}"
+
+
 def line_letter(party: str) -> str:
     """One ballot line's party → D, R, I (independent / none listed), M (minor) or ? (blank)."""
     p = party.strip()
     if not p:
         return "?"
     parts = [x.strip() for x in re.split(r"[,/]", p)]
+    is_d = [x.startswith("DEM") or x in ("DPN", "DFL", "DNL") for x in parts]
+    is_r = [x.startswith("REP") or x in ("RPN", "GOP") for x in parts]
+    if any(is_d) and any(is_r):
+        return "B"  # cross-filed on both major lines (Pennsylvania, New York): settled per candidate
     for x in parts:  # the first major party named ("PROGRESSIVE/DEMOCRATIC" is a Democrat)
         if x.startswith("DEM") or x in ("DPN", "DFL", "DNL"):
             return "D"
@@ -152,9 +182,8 @@ def site_parties(st: str, year: int) -> dict[tuple[str, str, str], str]:
                     if k in out and out[k] != party:
                         amb.add(k)
                     out[k] = party
-    for k in amb:
-        if k[1] == "*":
-            del out[k]
+    for k in amb:  # two candidates of different parties share the surname (in the district, or statewide): no answer
+        out.pop(k, None)
     return out
 
 
@@ -193,8 +222,66 @@ def vest_tags(old: gpd.GeoDataFrame, year: int) -> dict[str, dict[str, str]]:
     return out
 
 
-def load_medsl(st: str, year: int, tags: dict[str, dict[str, str]] | None = None) -> pd.DataFrame | None:
-    path = RAW / "medsl" / str(year) / "by_state" / f"{st}.parquet"
+ORDINAL = {"FIRST": "1", "SECOND": "2", "THIRD": "3", "FOURTH": "4", "FIFTH": "5", "SIXTH": "6", "SEVENTH": "7", "EIGHTH": "8", "NINTH": "9", "TENTH": "10",
+           "ELEVENTH": "11", "TWELFTH": "12", "THIRTEENTH": "13", "FOURTEENTH": "14", "FIFTEENTH": "15", "SIXTEENTH": "16", "SEVENTEENTH": "17", "EIGHTEENTH": "18", "NINETEENTH": "19", "TWENTIETH": "20"}
+
+
+def district_key(d: str) -> str:
+    """District name as a comparison key: "First Essex and Middlesex" = "1ST ESSEX & MIDDLESEX"."""
+    toks = re.findall(r"[A-Z]+|\d+", fold(d))
+    toks = [ORDINAL.get(t, t) for t in toks if t not in ("AND", "ST", "ND", "RD", "TH", "DISTRICT")]
+    return "".join(re.sub(r"^0+(?=\d)", "", t) for t in toks)
+
+
+def district_truth(st: str, year: int, office: str) -> dict[str, tuple[int, int]]:
+    """The site's own (Dem, Rep) per district, keyed by district_key."""
+    import csv
+    out: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+    if office == "USH":
+        with open(ROOT / "data-entry" / "house_district_county_results.csv", newline="") as f:
+            for r in csv.DictReader(f):
+                if r["state"] == st and r["year"] == str(year):
+                    o = out[district_key(r["district"])]
+                    o[0] += B._num(r["dem"])
+                    o[1] += B._num(r["gop"])
+    else:
+        path = ROOT / "data-entry" / "state-leg-results" / f"{st}-{year}.json"
+        if path.exists():
+            ds = (json.loads(path.read_text()).get({"SLDU": "senate", "SLDL": "house"}[office]) or {}).get("districts") or {}
+            for k, v in ds.items():
+                out[district_key(k)] = [B._num(v.get("demVotes")), B._num(v.get("repVotes"))]
+    return {k: (v[0], v[1]) for k, v in out.items()}
+
+
+def district_note(st: str, year: int, office: str, o: pd.DataFrame) -> str:
+    """Where a statewide total differs from the site's, say which districts carry the difference."""
+    truth = district_truth(st, year, office)
+    got: dict[str, list[int]] = defaultdict(lambda: [0, 0])
+    for (d, c), v in o[o["comp"] < 2].groupby(["district", "comp"])["votes"].sum().items():
+        got[district_key(d)][c] += int(v)
+    if len(truth) == 1 and len(got) == 1:
+        got = {next(iter(truth)): next(iter(got.values()))}
+    if not truth:
+        return ""
+    with_votes = {k for k, v in truth.items() if v[0] + v[1] > 0}
+    missing = sorted(with_votes - set(got))
+    off = []
+    for k in sorted(set(truth) & set(got)):
+        t, g = truth[k], got[k]
+        two = max(1, t[0] + t[1])
+        if abs(g[0] - t[0]) / two > 0.01 or abs(g[1] - t[1]) / two > 0.01:
+            off.append((abs(g[0] - t[0]) + abs(g[1] - t[1]), f"{k} (D {g[0] - t[0]:+,}, R {g[1] - t[1]:+,})"))
+    bits = []
+    if missing:
+        bits.append(f"The source has no votes for {len(missing)} of the site's {len(with_votes)} districts ({', '.join(missing[:8])}{'…' if len(missing) > 8 else ''}).")
+    if off:
+        off.sort(reverse=True)
+        bits.append(f"{len(off)} district{'s' if len(off) != 1 else ''} differ by more than 1% ({'; '.join(x for _, x in off[:5])}{'…' if len(off) > 5 else ''}).")
+    return " ".join(bits)
+
+
+def load_medsl(st: str, year: int, tags: dict[str, dict[str, str]] | None = None, statewide: dict[str, dict] | None = None) -> pd.DataFrame | None:
+    path = RAW / "medsl" / str(year) / "by_state" / (f"{st}.{VARIANT}.parquet" if VARIANT else f"{st}.parquet")
     if not path.exists():
         return None
     df = pd.read_parquet(path)
@@ -207,6 +294,34 @@ def load_medsl(st: str, year: int, tags: dict[str, dict[str, str]] | None = None
         df[c] = df[c].astype(str).str.upper().str.strip()
     df = df[~df["candidate"].map(lambda c, memo={}: memo.setdefault(c, bool(META.match(c))))].copy()
     df["district"] = df["district"].map(norm_district)
+    # "COUNTY TOTAL" / "Ocean Totals" lines repeat the precinct lines above them: dropped where the precinct
+    # lines of that county and contest cover at least half of them (a county that reports only its total keeps it).
+    # District-wide totals (New Jersey) always go.
+    df = df[~df["precinct"].str.fullmatch(r"DISTRICT( \d+)? TOTALS?")].copy()
+    is_total = df["precinct"].str.contains(r"\bTOTALS?$", regex=True)
+    if is_total.any():
+        g3 = ["county", "office", "district", "candidate"]
+        parts_sum = df[~is_total].groupby(g3)["votes"].sum().rename("p")
+        tot_max = df[is_total].groupby(g3)["votes"].max().rename("t")
+        chk = pd.concat([parts_sum, tot_max], axis=1).dropna()
+        covered = set(chk.index[chk["p"] >= 0.5 * chk["t"]].droplevel("candidate").unique()) if len(chk) else set()
+        keys = list(zip(df["county"], df["office"], df["district"]))
+        drop = is_total & (pd.Series([k in covered for k in keys], index=df.index) | df["precinct"].str.fullmatch(r"DISTRICT( \d+)? TOTALS?"))
+        df = df[~drop].copy()
+    # A precinct that carries both a TOTAL line and by-mode lines for a contest: the TOTAL already holds them,
+    # provided the modes of those precincts do not add up to more than their TOTALs (then they are separate counts).
+    pk = ["county", "jurisdiction", "precinct", "office", "district"]
+    has_total = df[df["mode"] == "TOTAL"][pk].drop_duplicates().assign(_t=1)
+    if len(has_total) and (df["mode"] != "TOTAL").any():
+        df = df.merge(has_total, on=pk, how="left")
+        both = df[df["_t"] == 1]
+        ck3 = ["county", "office", "district"]
+        t_sum = both[both["mode"] == "TOTAL"].groupby(ck3)["votes"].sum().rename("t")
+        m_sum = both[both["mode"] != "TOTAL"].groupby(ck3)["votes"].sum().rename("m")
+        cmp_ = pd.concat([t_sum, m_sum], axis=1).dropna()
+        inside = set(cmp_.index[(cmp_["m"] > 0) & (cmp_["m"] <= 1.02 * cmp_["t"])])
+        flag = pd.Series([k in inside for k in zip(df["county"], df["office"], df["district"])], index=df.index)
+        df = df[~((df["_t"] == 1) & (df["mode"] != "TOTAL") & flag)].drop(columns=["_t"]).reset_index(drop=True)
     # TOTAL lines next to by-mode lines for the same contest in the same county: keep one of the two.
     grp = ["county", "office", "district"]
     tot = df[df["mode"] == "TOTAL"].groupby(grp)["votes"].sum().rename("t")
@@ -223,11 +338,43 @@ def load_medsl(st: str, year: int, tags: dict[str, dict[str, str]] | None = None
     lines = df[~df["scatter"]].groupby(ck + ["line"])["votes"].sum().reset_index()
     site = site_parties(st, year)
     letters: dict[tuple[str, str, str], str] = {}
+    dtruth: dict[str, dict[str, tuple[int, int]]] = {}
+    # A candidate listed once with a party and once without (two spellings) is one person: the blank
+    # line takes the party of the same surname in the same contest.
+    known: dict[tuple[str, str, str], set[str]] = defaultdict(set)
+    for o_, d_, c_, l_ in zip(lines["office"], lines["district"], lines["candidate"], lines["line"]):
+        if l_ in ("D", "R"):
+            known[(o_, d_, surname(c_))].add(l_)
+    firsts: dict[tuple[str, str, str], set[str]] = defaultdict(set)
+    for o_, d_, c_ in zip(lines["office"], lines["district"], lines["candidate"]):
+        firsts[(o_, d_, surname(c_))].add(person_key(c_))
     for (office, district, cand), g in lines.groupby(ck):
         by = dict(zip(g["line"], g["votes"]))
         major = max((l for l in ("D", "R") if l in by), key=lambda l: by[l], default=None)
         sn = surname(cand)
         looked = site.get((office, district, sn)) or site.get((office, "*", sn)) or (tags or {}).get(office.replace("_S", ""), {}).get(sn[:3])
+        exact = site.get((office, district, sn))
+        if exact in ("D", "R") and office in ("SLDU", "SLDL"):
+            major = exact  # the site's district results name this candidate: its party wins over a stray label
+        elif "B" in by or ("D" in by and "R" in by):
+            major = (looked if looked in ("D", "R") else None) or major or "D"  # cross-filed: the site's party for them
+        same = known.get((office, district, sn), set())
+        if major is None and "?" in by and len(same) == 1 and sn and len(firsts[(office, district, sn)]) == 1:
+            major = next(iter(same))
+        if major is None and "?" in by and not looked:
+            # No party anywhere: a candidate whose total equals one side of the site's result for the contest is that side.
+            if office not in dtruth:
+                if office in DISTRICT_OFFICES:
+                    dtruth[office] = district_truth(st, year, office)
+                else:
+                    sw = (statewide or {}).get(office)
+                    dtruth[office] = {"": (sw["d"], sw["r"])} if sw else {}
+            t = dtruth[office].get(district_key(district))
+            tot = int(g["votes"].sum())
+            if t and tot > 0:
+                near = [l for l, v in (("D", t[0]), ("R", t[1])) if v > 0 and abs(tot - v) <= 0.02 * v]
+                if len(near) == 1:
+                    major = near[0]
         if st == "NE" and office == "SLDU":
             major = looked if looked in ("D", "R") else None
             by = {"I": 1}
@@ -244,19 +391,19 @@ def slot_table(df: pd.DataFrame) -> pd.Series:
     comp[~slot & (df["letter"] == "D").to_numpy()] = 0
     comp[~slot & (df["letter"] == "R").to_numpy()] = 1
     s = df[slot]
-    tot = s.groupby(["office", "district", "candidate", "letter"])["votes"].sum().reset_index()
+    # Two spellings of one name ("S. BRET GUTHRIE" / "S. BRETT GUTHRIE") are one candidate: same surname, initial and party.
+    person = pd.Series([f"{person_key(c)}~{l}" if l != "W" else c for c, l in zip(s["candidate"], s["letter"])], index=s.index)
+    tot = s.assign(person=person).groupby(["office", "district", "person", "letter"])["votes"].sum().reset_index()
     pick: dict[tuple[str, str, str], int] = {}
     for (office, district), g in tot.groupby(["office", "district"]):
-        cands = [(f"{c}|{l}|", l, int(v)) for c, l, v in zip(g["candidate"], g["letter"], g["votes"])]
-        if office != "USH":  # King / Sanders rule reads the last three letters of the tag
-            cands = [(f"{c}|{l}|{surname(c)[:3]}", l, v) for (c, l, v), c in zip([(x[0].split('|')[0], x[1], x[2]) for x in cands], g["candidate"])]
-        d, r = B.slot_columns(cands)
+        cands = [(f"{c}|{l}|" + ("" if office == "USH" else c.split("~")[0][:3]), l, int(v)) for c, l, v in zip(g["person"], g["letter"], g["votes"])]
+        d, r = B.slot_columns(cands)  # the King / Sanders rule reads the last three letters of the tag
         if d:
             pick[(office, district, d.split("|")[0])] = 0
         if r:
             pick[(office, district, r.split("|")[0])] = 1
     idx = np.flatnonzero(slot)
-    vals = [pick.get(k, 2) if l != "W" else 2 for k, l in zip(zip(s["office"], s["district"], s["candidate"]), s["letter"])]
+    vals = [pick.get(k, 2) if l != "W" else 2 for k, l in zip(zip(s["office"], s["district"], person), s["letter"])]
     comp[idx] = vals
     return pd.Series(comp, index=df.index)
 
@@ -391,12 +538,23 @@ def match(df: pd.DataFrame, comp: pd.Series, old: gpd.GeoDataFrame, vcounty: pd.
     pj, pp = [key(x) for x in prec["jurisdiction"]], [key(x) for x in prec["precinct"]]
     mkeys = {"precinct": pp, "jurisdiction+precinct": [a + b for a, b in zip(pj, pp)], "jurisdiction": pj,
              "precinct0": [strip0(x) for x in pp], "segment": [strip0(key(str(x).split("_")[0])) if "_" in str(x) else "" for x in prec["precinct"]], "digits": [strip0(re.sub(r"\D", "", x)) for x in pp]}
+    pr = list(prec["precinct"])
+    mkeys["dot0"] = [strip0(m.group(1)) if (m := re.search(r"(\d+)\.0\b", x)) else "" for x in pr]  # Florida "PRECINCT 508.0"
+    mkeys["last3"] = [strip0(x[-3:]) if re.fullmatch(r"\d{10}", x) else "" for x in pr]  # Colorado 10-digit code: the last three digits are the precinct
+    mkeys["lastnum"] = [strip0(m[-1]) if (m := re.findall(r"\d+", x)) else "" for x in pr]  # Washington "SEA 37-1927" = precinct 1927
+    nyc = [re.fullmatch(r"(\d+)/(\d+)", x) for x in pr]  # New York City "001/41" = election district 1 of assembly district 41
+    if any(nyc):
+        mkeys["ad-ed"] = [f"ad{int(m.group(2))}ed{int(m.group(1))}" if m else "" for m in nyc]
+    mawp = [re.fullmatch(r"(.*)_WARD(\w+)_PRECINCT(\w+)", x) for x in pr]  # Massachusetts "BOSTON_ward1_precinct15" = "Boston Pct 1-15"
+    if any(mawp):
+        mkeys["ward-precinct"] = [key(f"{m.group(1)} PCT " + (f"{m.group(2)}-" if m.group(2).lstrip("0") else "") + m.group(3).lstrip("0")) if m else "" for m in mawp]
     edp = [re.search(r"ELECTDIST:\s*(\d+)\|PREC:\s*(\d+)", x) for x in prec["precinct"]]  # Maryland 2016: "…|electdist: 20|prec: 7" = precinct 20-007
     if any(edp):
         mkeys["edprec"] = [f"{int(m.group(1))}{int(m.group(2)):03d}" if m else "" for m in edp]
     for c in list(vkeys):
         if "+" not in c:
             vkeys[c + "~0"] = [strip0(x) for x in vkeys[c]]
+            vkeys[c + "~tail"] = [strip0(m.group()) if (m := re.search(r"\d+$", x)) else "" for x in vkeys[c]]
 
     def pairs_for(vcol: str, mvar: str) -> list[tuple[int, int]]:
         vd: dict[tuple[str, str], list[int]] = defaultdict(list)
@@ -420,7 +578,7 @@ def match(df: pd.DataFrame, comp: pd.Series, old: gpd.GeoDataFrame, vcounty: pd.
         best = max(((pairs_for(vcol, mvar), vcol, mvar) for vcol in vkeys for mvar in mkeys), key=lambda t: len(t[0]), default=([], "", ""))
         if len(best[0]) < max(3, 0.01 * (out < 0).sum()):
             break
-        if best[2] in ("digits", "jurisdiction") and len(best[0]) < 0.3 * (out < 0).sum():
+        if (best[2] in ("digits", "jurisdiction", "last3", "lastnum") or best[1].endswith("~tail")) and len(best[0]) < 0.3 * (out < 0).sum():
             break  # weak keys are only trusted when they explain a large share
         for m, v in best[0]:
             out[m] = v
@@ -523,19 +681,79 @@ def match(df: pd.DataFrame, comp: pd.Series, old: gpd.GeoDataFrame, vcounty: pd.
     return out, stats, use_county, multi
 
 
+def anchor_frame(st: str) -> tuple[pd.DataFrame, pd.Series, np.ndarray, int, int] | None:
+    """The 2024 precincts as the target of a name match: (names, county, 2024 vote as weight, first pid, n)."""
+    meta_path = PRE / "anchors" / f"{st}.json"
+    if not meta_path.exists():
+        return None
+    meta = json.loads(meta_path.read_text())["precincts"]
+    pids = sorted(int(p) for p in meta)
+    old = pd.DataFrame({"NAME": [str(meta[str(p)].get("name") or "") for p in pids], "GEOID": [str(meta[str(p)].get("geoid") or "") for p in pids]})
+    old["oid"] = np.arange(len(old))
+    county = pd.Series([str(meta[str(p)].get("county") or "") for p in pids])
+    # The id is "County-:-Name"; where the name itself is generic (Maine's "Municipal Level") the tail holds the town.
+    old["PLACE"] = [g.split("-:-", 1)[1] if "-:-" in g else "" for g in old["GEOID"]]
+    ward = [re.fullmatch(r"(.+) - ([CTV]) (\d{4}[A-Z]?)", x) for x in old["NAME"]]  # Wisconsin "ADAMS - C 0001"
+    if sum(1 for m in ward if m) > 0.8 * len(old):
+        old["CNTY_FIPS"] = county.values
+        old["MCD_NAME"] = [m.group(1) if m else "" for m in ward]
+        old["CTV"] = [m.group(2) if m else "" for m in ward]
+        old["WARDID"] = [m.group(3) if m else "" for m in ward]
+    # The state's own precinct code, where the 2024 file carries one (Minnesota's Prec_ID): official exports use it.
+    try:
+        layer = B.rdh_layer(st)
+        fields = list(pyogrio.read_info(layer)["fields"]) if layer else []
+        codes = [c for c in fields if re.fullmatch(r"(?i)prec_?id|pct_?code|precinct_?id|pctnum|vtd_?id", c)]
+        if codes and "UNIQUE_ID" in fields:
+            attr = pyogrio.read_dataframe(layer, read_geometry=False, columns=["UNIQUE_ID"] + codes).drop_duplicates("UNIQUE_ID").set_index("UNIQUE_ID")
+            for c in codes:
+                old[f"CODE_{c.upper()}"] = [str(attr[c].get(g, "")) for g in old["GEOID"]]
+    except Exception:  # an extra matching key only
+        pass
+    weight = np.ones(len(pids))
+    res = OUT / st / "2024.json"
+    if res.exists():
+        offs = json.loads(res.read_text())["offices"]
+        top = offs.get("PRES") or next(iter(offs.values()), None)
+        if top:
+            weight = np.array([sum(r) for r in top], dtype=float)
+    return old, county, weight, pids[0], len(pids)
+
+
 def build_state(st: str, year: int, truth: dict) -> str:
-    old = V.load_old(st, year) if (RAW / "medsl" / str(year) / "by_state" / f"{st}.parquet").exists() else None
-    df = load_medsl(st, year, vest_tags(old, year)) if old is not None else None
-    if old is None or df is None:
-        return f"{st}: missing inputs"
-    xw = V.crosswalk(st, old)
-    if xw is None:
-        return f"{st}: no blocks"
-    rows, cols_idx, w, split, first, n = xw
+    have = (RAW / "medsl" / str(year) / "by_state" / (f"{st}.{VARIANT}.parquet" if VARIANT else f"{st}.parquet")).exists()
+    if st == "CA":
+        return "CA: built by build_results_swdb.py (results with that election's own precinct shapes)"
+    # No shapes for that year (2022 on), or none for this state (Kentucky 2018, New Jersey 2019): by name onto the 2024 precincts.
+    if year in NO_SHAPES or V.vest_layer(st, year) is None:
+        af = anchor_frame(st) if have else None
+        if af is None:
+            return f"{st}: missing inputs"
+        old, vcounty, vweight, first, n = af
+        df = load_medsl(st, year, statewide={o: truth.get(year, {}).get(o, {}).get(st) for o in ("USS", "GOV")})
+        rows = cols_idx = np.arange(n)
+        w, split = np.ones(n), np.zeros(n, dtype=bool)
+        vsig: dict[str, np.ndarray] = {}
+        wanted = ["USS", "GOV"] + DISTRICT_OFFICES
+        by_name = True
+    else:
+        old = V.load_old(st, year) if have else None
+        df = load_medsl(st, year, vest_tags(old, year)) if old is not None else None
+        if old is None or df is None:
+            return f"{st}: missing inputs"
+        xw = V.crosswalk(st, old)
+        if xw is None:
+            return f"{st}: no blocks"
+        rows, cols_idx, w, split, first, n = xw
+        vcounty = county_of(old, st)
+        vsig, vweight = vest_signature(old, year)
+        wanted = DISTRICT_OFFICES
+        by_name = False
+    if ONLY:
+        wanted = [o for o in wanted if o in ONLY]
+    src_label = f"openelections-{year}" if VARIANT == "oe" else SRC.get((st, year), f"medsl-{year}")
     nold = len(old)
     comp = slot_table(df)
-    vcounty = county_of(old, st)
-    vsig, vweight = vest_signature(old, year)
     mk2oid, stats, use_county, multi = match(df, comp, old, vcounty, vsig, st)
     df["oid"] = mk2oid[df["mk"].to_numpy()]
     df["comp"] = comp
@@ -556,11 +774,20 @@ def build_state(st: str, year: int, truth: dict) -> str:
     est: dict[str, list[int]] = {}
     sums: dict[str, dict] = {}
     notes = []
-    for office in DISTRICT_OFFICES:
+    dnotes: dict[tuple[str, str], str] = {}
+    dropped = []
+    for office in wanted:
         o = df[(df["office"] == office) & (df["votes"] != 0)]
         if o.empty or st not in truth.get(year, {}).get(office, {}):
+            dropped.append(office)
             continue  # nothing reported, or no regular contest that year (odd-year legislatures, DC's delegate)
+        dnotes[(st, office)] = district_note(st, year, office, o) if office in DISTRICT_OFFICES else ""
+        if office not in DISTRICT_OFFICES and use_county:  # a statewide contest should have votes in every county
+            all_c, got_c = set(vc), set(o["county"]) - {""}
+            if len(got_c) < len(all_c):
+                dnotes[(st, office)] = f"The source has votes for {len(got_c)} of {len(all_c)} counties."
         arr = np.zeros((3, nold))
+        spread_tot = np.zeros(nold)
         dvotes: dict[str, np.ndarray] = {}
         m = o[o["oid"] >= 0]
         np.add.at(arr, (m["comp"].to_numpy(), m["oid"].to_numpy()), m["votes"].to_numpy())
@@ -577,10 +804,13 @@ def build_state(st: str, year: int, truth: dict) -> str:
             for c, v in byc.items():
                 arr[c, target] += v * wt
             dvotes.setdefault(district, np.zeros(nold))[target] += float(byc.sum()) * wt
+            if not exact_unit[0]:
+                spread_tot[target] += float(byc.sum()) * wt
 
         u = o[o["oid"] < 0]
         has_multi = u["mk"].isin(multi.keys())
         exact_votes = local_votes = 0.0
+        exact_unit = [False]  # set while a Wisconsin reporting unit is being split over its own wards
         # One line, several shapes: a Wisconsin reporting unit (exact), or a line that names a town (local).
         for (mk, district), g in u[has_multi].groupby(["mk", "district"]):
             target, exact = multi[mk]
@@ -588,7 +818,9 @@ def build_state(st: str, year: int, truth: dict) -> str:
                 inside = target[known_mask[district][target]]
                 if len(inside):
                     target = inside
+            exact_unit[0] = bool(exact)
             spread(target, g, district)
+            exact_unit[0] = False
             if exact:
                 exact_votes += float(g["votes"].sum())
             else:
@@ -616,6 +848,8 @@ def build_state(st: str, year: int, truth: dict) -> str:
         allv, splitv = np.zeros(n), np.zeros(n)
         np.add.at(allv, cols_idx, tot_old[rows] * w)
         np.add.at(splitv, cols_idx, np.where(split, tot_old[rows] * w, 0))
+        if not len(vsig) and len(rows) == n and bool((w == 1).all()):  # no refit here: the estimated part is what was spread rather than matched
+            splitv = spread_tot.copy()
         # District label of each 2024 precinct: the district that contributes most of its votes.
         names = sorted(dvotes)
         if names and names != [""]:
@@ -632,29 +866,51 @@ def build_state(st: str, year: int, truth: dict) -> str:
         est[office] = [int(round(100 * s / a)) if a > 0 else 0 for s, a in zip(splitv, allv)]
         total = float(o["votes"].sum())
         sums[office] = {"d": int(parts[0].sum()), "r": int(parts[1].sum()), "o": int(parts[2].sum()), "precincts_with_votes": int(((parts[0] + parts[1] + parts[2]) > 0).sum()),
-                        "src": f"medsl-{year}+vest-{year}", "basis": "slot" if office == "USH" else "party",
+                        "src": src_label + ("" if by_name else f"+vest-{year}"), "basis": "slot" if office in SLOT else "party",
                         "matched": round((float(m["votes"].sum()) + exact_votes) / total, 4) if total else 0.0, "local": round(local_votes / total, 4) if total else 0.0, "est": round(float(splitv.sum() / allv.sum()), 4) if allv.sum() else 0.0}
         notes.append(f"{office} {sums[office]['matched']:.0%}+{sums[office]['local']:.0%}")
 
-    if not offices:
-        return f"{st}: no district contests in MEDSL {year}"
     (OUT / st).mkdir(parents=True, exist_ok=True)
     path = OUT / st / f"{year}.json"
     doc = json.loads(path.read_text()) if path.exists() else {"year": year, "st": st, "n": n, "first_pid": first, "offices": {}, "districts": {}, "basis": {}, "est": {}, "src": []}
+    # An office this builder no longer produces must not linger from an earlier run (it owns these three).
+    stale = [o for o in dropped if o in doc["offices"]]
+    for o in stale:
+        for part in ("offices", "districts", "basis", "est"):
+            doc.get(part, {}).pop(o, None)
+    clear_cells(st, year, [o for o in dropped if st not in truth.get(year, {}).get(o, {})], n)
+    if not offices:
+        if stale:
+            path.write_text(json.dumps(doc, separators=(",", ":")) + "\n")
+        return f"{st}: no district contests in MEDSL {year}"
     doc["offices"].update(offices)
     doc.setdefault("districts", {}).update(districts)
     doc.setdefault("est", {}).update(est)
-    doc.setdefault("basis", {}).update({o: ("slot" if o == "USH" else "party") for o in offices})
-    doc["src"] = sorted(set(doc.get("src", [])) | {f"medsl-{year}", f"vest-{year}"})
+    doc.setdefault("basis", {}).update({o: ("slot" if o in SLOT else "party") for o in offices})
+    doc["src"] = sorted(set(doc.get("src", [])) | ({src_label} if by_name else {src_label, f"vest-{year}"}))
     path.write_text(json.dumps(doc, separators=(",", ":")) + "\n")
-    line = update_cells(st, year, n, sums, truth, explained=EXPLAINED)
+    if year == 2026:  # still being certified: say so wherever the precinct rows and the statewide figure disagree
+        for o in sums:
+            dnotes[(st, o)] = (dnotes.get((st, o)) or "") + (" " if dnotes.get((st, o)) else "") + "2026 counts are not final: the precinct export and the statewide figure were read at different stages of the count."
+    line = update_cells(st, year, n, sums, truth, explained=EXPLAINED, suspect={k: v for k, v in dnotes.items() if v})
     nm = len(mk2oid)
     return f"{st} mk {nm:6d} old {nold:5d}  fp {stats['fingerprint']} name {stats['name']} fuzzy {stats['fuzzy']} near {stats['near']} units {stats['units']} place {stats['place']} un {int((mk2oid < 0).sum()) - sum(1 for v in multi.values() if v[1])}{'' if use_county else ' (no county)'}  {line}   [{', '.join(notes)}]"
 
 
 def main() -> None:
-    year = int(sys.argv[1])
-    states = [s.upper() for s in sys.argv[2:]] or B.STATES
+    global VARIANT, ONLY
+    args = sys.argv[1:]
+    for flag in ("--variant", "--only"):
+        if flag in args:
+            i = args.index(flag)
+            value = args[i + 1]
+            del args[i:i + 2]
+            if flag == "--variant":
+                VARIANT = value
+            else:
+                ONLY = set(value.split(","))
+    year = int(args[0])
+    states = [s.upper() for s in args[1:]] or B.STATES
     truth = B.load_truth()
     for st in states:
         try:
