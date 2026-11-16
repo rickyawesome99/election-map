@@ -1,4 +1,4 @@
-built 2026-11-13T02:02:26Z
+built 2026-11-16T23:22:42Z
 civicAPI: 5166 races from 5166 payloads; 0 skipped
 AZ: 70 races from Arizona Secretary of State
 GA: 252 races from Georgia Secretary of State
@@ -7,16 +7,18 @@ ID: 109 races from Idaho Secretary of State
 MN: 211 races from Minnesota Secretary of State
 MT: 128 races from Montana Secretary of State
 NC: 185 races from North Carolina State Board of Elections
+SC: 134 races from South Carolina Election Commission
 UT: 94 races from Utah Lieutenant Governor
 WA: 132 races from Washington Secretary of State
 AP fill-in (unofficial): 756 races: AK 50 AR 1 DE 52 KY 61 LA 1 MA 200 MI 39 NH 227 VT 125
 not on the ballot (unopposed, AP roster names only): 115
 coverage: 6262 of 6262 expected races have results
-direct vs civicAPI: 3 races differ by over 0.5%
+direct vs civicAPI: 4 races differ by over 0.5%
+  SC-H-26 SC House District 26: direct 17,958 vs civicAPI 18,381 (-2.301%)
   WA-S-43 WA Senate District 43: direct 63,855 vs civicAPI 63,484 (+0.584%)
   WA-H-43-P2 WA House District 43 - Position 2: direct 51,696 vs civicAPI 51,414 (+0.548%)
   WA-H-43-P1 WA House District 43 - Position 1: direct 62,342 vs civicAPI 62,020 (+0.519%)
-vs AP state-leg snapshot (2026-11-12): 292 races differ by over 1%
+vs AP state-leg snapshot (2026-11-12): 291 races differ by over 1%
   CT-S-15: civicAPI 20,743 vs AP 4,470 (+364.049%)
   MI-H-8: civicAPI 24,110 vs AP 13,675 (+76.307%)
   TX-S-22-SP: civicAPI 106,733 vs AP 331,688 (-67.821%)

@@ -1,0 +1,32 @@
+import { chromium } from "playwright";
+const out = process.argv[2];
+const list = JSON.parse(process.argv[3]);
+const b = await chromium.launch();
+for (const [name, url] of list) {
+  const ctx = await b.newContext({ viewport: { width: 1280, height: 900 } });
+  const p = await ctx.newPage();
+  const errs = [];
+  p.on("pageerror", (e) => errs.push(String(e)));
+  const fetched = [];
+  p.on("request", (r) => { if (r.url().includes("/precincts/index/")) fetched.push("index@" + Date.now()); });
+  await p.goto("http://localhost:3000" + url, { waitUntil: "load", timeout: 180000 });
+  await p.waitForTimeout(2500);
+  await p.getByText(/^2024 precincts\.|result by precinct:|not available yet/).first().scrollIntoViewIfNeeded().catch(() => {});
+  const t0 = Date.now();
+  await p.waitForFunction(() => document.querySelectorAll('svg[aria-label$="by precinct"] path[data-p]').length > 0, null, { timeout: 60000 });
+  const tReady = Date.now() - t0;
+  const svg = p.locator('svg[aria-label$="by precinct"]').first();
+  await svg.evaluate((el) => el.scrollIntoView({ block: "center" }));
+  await p.waitForTimeout(800);
+  const stats = await p.evaluate(() => { const s = document.querySelector('svg[aria-label$="by precinct"]'); return { paths: s.querySelectorAll("path").length, pieces: s.querySelectorAll("path[data-p]").length, colored: s.querySelectorAll('path[data-k="1"]:not([fill="var(--map-unfilled)"])').length, inside: s.querySelectorAll('path[data-k="1"]').length }; });
+  const indexBeforeHover = fetched.length;
+  const piece = p.locator('svg[aria-label$="by precinct"] path[data-k="1"]').nth(2);
+  const box = await piece.boundingBox();
+  if (box) await p.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await p.waitForTimeout(1200);
+  const tip = await p.locator(".absolute.z-20").first().innerText().catch(() => "(no tooltip)");
+  console.log(name, `ready ${tReady}ms`, JSON.stringify(stats), `index fetched before hover: ${indexBeforeHover}, after: ${fetched.length}`, "| tip:", tip.replace(/\n/g, " ").slice(0, 80), errs);
+  await p.screenshot({ path: `${out}/${name}.png` });
+  await ctx.close();
+}
+await b.close();

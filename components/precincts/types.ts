@@ -35,6 +35,10 @@ export type StateResults = {
   offices: Partial<Record<Office, [number, number, number][]>>;
   districts: Partial<Record<Office, string[]>>;
   basis?: Partial<Record<Office, "slot" | "party">>;
+  // Precincts that voted in more than one district's race for an office: the `offices` row is their sum
+  // and `districts` names the larger part, so each district's own share is listed here as
+  // [precinct index, district, D, R, other]. Absent when no precinct is split.
+  split?: Partial<Record<Office, [number, string, number, number, number][]>>;
   // Percent (0-100) of each precinct's vote that was fitted from other boundaries or spread from a larger unit.
   est?: Partial<Record<Office, number[]>>;
 };

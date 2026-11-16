@@ -231,6 +231,7 @@ export default function LegislativeAtlas({
   adjustedMargins,
   electionYear,
   summary,
+  precinctResults = false,
 }: {
   abbr: string;
   stateName: string;
@@ -249,6 +250,8 @@ export default function LegislativeAtlas({
   electionYear: number;
   /** The chamber's headline numbers (server-rendered), shown above the explorer. */
   summary: React.ReactNode;
+  /** An election-year precinct return is on file for this chamber (colours the district map). */
+  precinctResults?: boolean;
 }) {
   const { data, loading, failed } = useStaticJson<AtlasChamber>(atlasSliceUrl(abbr, chamber));
   const hash = useSyncExternalStore(subscribeHash, () => window.location.hash, () => "");
@@ -698,7 +701,7 @@ export default function LegislativeAtlas({
         // Keyed on the district, so stepping to the next one plays its entrance again.
         <div key={selected?.key ?? "loading"} className="vh-tab-in">
           {selected && data ? (
-            <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} selector={navSelector} locatorMap={navMap} chamberLabel={chamberLabel} onBack={backToExplorer} />
+            <AtlasDistrictDetail abbr={abbr} chamber={chamber} district={selected} eras={data.eras} electionYear={electionYear} selector={navSelector} locatorMap={navMap} chamberLabel={chamberLabel} onBack={backToExplorer} stateName={stateName} precinctResults={precinctResults} />
           ) : (
             <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{failed ? "The district data for this chamber could not be loaded." : "Loading district…"}</p>
           )}

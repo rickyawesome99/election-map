@@ -27,7 +27,8 @@ import type { AtlasEra } from "@/lib/stateLegAtlas";
  * its features kept here so switching districts never re-parses it.
  */
 
-type DistrictFeature = Feature<Geometry, { code: string }>;
+/** `i`: the feature's position in the boundary file (public/state-leg-precincts/{chamber}/{ST}/{i}.json). */
+export type DistrictFeature = Feature<Geometry, { code: string; i: number }>;
 type EraFeatures = { byKey: Map<string, DistrictFeature>; all: DistrictFeature[] };
 
 const featureCache = new Map<string, Promise<EraFeatures | null>>();
@@ -36,7 +37,7 @@ export function eraBoundaryUrl(abbr: string, chamber: Chamber, era: string): str
   return era === "current" ? `/state-leg-districts/${chamber}/${abbr}.json` : `/state-leg-districts-historical/${chamber}/${abbr}-${era}.json`;
 }
 
-function loadEraFeatures(abbr: string, chamber: Chamber, era: string): Promise<EraFeatures | null> {
+export function loadEraFeatures(abbr: string, chamber: Chamber, era: string): Promise<EraFeatures | null> {
   const url = eraBoundaryUrl(abbr, chamber, era);
   const cacheKey = `${abbr}:${chamber}:${url}`;
   let p = featureCache.get(cacheKey);
@@ -49,12 +50,12 @@ function loadEraFeatures(abbr: string, chamber: Chamber, era: string): Promise<E
       const fc = feature(t, t.objects[objectName] as GeometryCollection) as FeatureCollection;
       const all: DistrictFeature[] = [];
       const byKey = new Map<string, DistrictFeature>();
-      for (const f of fc.features) {
+      for (const [i, f] of fc.features.entries()) {
         const props = (f.properties ?? {}) as { DISTRICT?: string; NAMELSAD?: string };
         const code = extractDistrictCode(abbr, chamber, props);
         if (!code) continue;
         const normalized = normalizeGeographyWinding(f as unknown as WindableGeography) as unknown as DistrictFeature;
-        const df: DistrictFeature = { ...normalized, properties: { code } };
+        const df: DistrictFeature = { ...normalized, properties: { code, i } };
         all.push(df);
         byKey.set(normalizeDistrictKey(code), df);
       }
@@ -77,7 +78,7 @@ function useEraFeatures(abbr: string, chamber: Chamber, era: string | null): Era
   return state?.era === era ? state.data : undefined;
 }
 
-function lookup(fe: EraFeatures | null | undefined, abbr: string, chamber: Chamber, key: string): DistrictFeature | undefined {
+export function lookup(fe: EraFeatures | null | undefined, abbr: string, chamber: Chamber, key: string): DistrictFeature | undefined {
   if (!fe) return undefined;
   const n = normalizeDistrictKey(key);
   return fe.byKey.get(n) ?? (() => { const alias = aliasDistrictKey(abbr, chamber, n); return alias ? fe.byKey.get(alias) : undefined; })();

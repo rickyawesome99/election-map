@@ -7,6 +7,7 @@ import AtlasTrendChart from "./AtlasTrendChart";
 import AtlasOutlook from "./AtlasOutlook";
 import { AtlasCandidatesSection, AtlasFundraisingSection, AtlasResultSection, CandidateLink, PARTY_COLOR, result2026Meta } from "./AtlasCandidates";
 import { AtlasOverlayMap, AtlasTransitionMaps } from "./AtlasEraMaps";
+import AtlasPrecinctMap from "./AtlasPrecinctMap";
 import type { Chamber } from "@/data/stateLegDistricts";
 import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/stateLegAtlas";
 import { resultMargin } from "@/lib/stateLegAtlas";
@@ -194,6 +195,8 @@ export default function AtlasDistrictDetail({
   locatorMap,
   chamberLabel,
   onBack,
+  stateName,
+  precinctResults = false,
 }: {
   abbr: string;
   chamber: Chamber;
@@ -207,6 +210,9 @@ export default function AtlasDistrictDetail({
   /** "State House": the first pill reads "MN State House" and returns to the chamber's district explorer. */
   chamberLabel?: string;
   onBack?: () => void;
+  stateName?: string;
+  /** An election-year precinct return is on file for this chamber (colours the district map). */
+  precinctResults?: boolean;
 }) {
   const hasMoney = (district.money ?? []).some((m) => m.year !== electionYear);
   const up = district.nextElection === electionYear || district.incumbents.some((i) => (i.nextElection ?? district.nextElection) === electionYear);
@@ -293,6 +299,25 @@ export default function AtlasDistrictDetail({
     })(),
   ];
 
+  // The district on the precinct layer, below the race like a House page's county map: inside the
+  // counted election, else inside the projected vote, else a section of its own.
+  const districtMap = (
+    <AtlasPrecinctMap
+      abbr={abbr}
+      stateName={stateName ?? abbr}
+      chamber={chamber}
+      districtKey={district.key}
+      districtLabel={district.label}
+      components={district.overlay ? district.components : undefined}
+      year={electionYear}
+      precinctResults={precinctResults}
+      up={up}
+      hasResult={!!district.result2026}
+      chamberLabel={chamberLabel ?? (chamber === "house" ? "State House" : "State Senate")}
+    />
+  );
+  const mapInRace = !!district.result2026 || !!district.candidates2026;
+
   return (
     <div className="flex flex-col gap-8">
       {/* Header — the House race pages' hero: pills with the district selector at their end, the
@@ -363,6 +388,7 @@ export default function AtlasDistrictDetail({
         <Reveal>
           <LedgerSectionHead label={`${electionYear} Election`} meta={result2026Meta(district.result2026)} />
           <AtlasResultSection district={district} abbr={abbr} />
+          <div className="mt-4">{districtMap}</div>
         </Reveal>
       )}
       {district.candidates2026 && (
@@ -370,12 +396,20 @@ export default function AtlasDistrictDetail({
           {!district.result2026 && <Reveal>
             <LedgerSectionHead label={district.projection?.votes ? `${electionYear} Projected Vote` : `${electionYear} Candidates`} meta={`${district.projection?.votes ? `${district.projection.votes.total.toLocaleString("en-US")} estimated votes · ` : ""}Ballotpedia list${district.candidates2026.seats && district.candidates2026.seats > 1 ? ` · ${district.candidates2026.seats} seats` : ""}`} />
             <AtlasCandidatesSection district={district} abbr={abbr} />
+            <div className="mt-4">{districtMap}</div>
           </Reveal>}
           <Reveal>
             <LedgerSectionHead label="Fundraising" />
             <AtlasFundraisingSection district={district} electionYear={electionYear} />
           </Reveal>
         </>
+      )}
+
+      {!mapInRace && (
+        <Reveal>
+          <LedgerSectionHead label="District Map" meta="2024 precincts" />
+          {districtMap}
+        </Reveal>
       )}
 
       {district.projection && <Reveal as="div"><AtlasOutlook district={district} eras={eras} electionYear={electionYear} /></Reveal>}

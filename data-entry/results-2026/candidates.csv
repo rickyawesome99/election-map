@@ -225,11 +225,11 @@ senate,RI,,0,RI-2,John F. Reed,Democratic,D,240694,66.78,1,1,0,civicAPI
 senate,RI,,0,RI-2,Raymond T. McKay,Republican,R,105454,29.26,2,0,0,civicAPI
 senate,RI,,0,RI-2,Michael Bahry,Independent,I,13563,3.76,3,0,0,civicAPI
 senate,RI,,0,RI-2,Write-in,Nonpartisan,W,695,0.19,4,0,0,civicAPI
-senate,SC,,0,SC,Annie Andrews,Democratic,D,1044033,51.14,1,1,0,civicAPI
-senate,SC,,0,SC,Darline Graham,Republican,R,952308,46.64,2,0,0,civicAPI
-senate,SC,,0,SC,Kasie Whitener,Libertarian,L,23599,1.16,3,0,0,civicAPI
-senate,SC,,0,SC,Mark Hackett,Constitution,O,16825,0.82,4,0,0,civicAPI
-senate,SC,,0,SC,Write-in,Nonpartisan,W,4900,0.24,5,0,0,civicAPI
+senate,SC,,0,SC,Annie Andrews,DEM,D,1044001,51.14,1,1,0,South Carolina Election Commission
+senate,SC,,0,SC,Darline Graham,REP,R,952191,46.64,2,0,0,South Carolina Election Commission
+senate,SC,,0,SC,Kasie Whitener,LIB,L,23585,1.16,3,0,0,South Carolina Election Commission
+senate,SC,,0,SC,Mark Hackett,CON,O,16811,0.82,4,0,0,South Carolina Election Commission
+senate,SC,,0,SC,Write-In,,W,4899,0.24,5,,,South Carolina Election Commission
 senate,SD,,0,SD,Mike Rounds,Republican,R,184589,60.5,1,1,0,civicAPI
 senate,SD,,0,SD,Brian Bengs,Independent,I,120513,39.5,2,0,0,civicAPI
 senate,TN,,0,TN-2,Bill Hagerty,Republican,R,1138457,55.08,1,1,0,civicAPI
@@ -393,11 +393,11 @@ governor,RI,,0,RI,Aaron C. Guckian,Republican,R,47402,13.18,3,0,0,civicAPI
 governor,RI,,0,RI,C. D. Reynolds,Independent,I,2050,0.57,4,0,0,civicAPI
 governor,RI,,0,RI,Jasjit S. Gotra,Independent,I,1674,0.47,5,0,0,civicAPI
 governor,RI,,0,RI,Write-in,Nonpartisan,W,1148,0.32,6,0,0,civicAPI
-governor,SC,,0,SC,Alan Wilson,Republican,R,1051467,51.58,1,1,0,civicAPI
-governor,SC,,0,SC,Jermaine Johnson,Democratic,D,960556,47.12,2,0,0,civicAPI
-governor,SC,,0,SC,Michael Addison,United Citizens,O,16139,0.79,3,0,0,civicAPI
-governor,SC,,0,SC,Walid Hakim,Green,G,9091,0.45,4,0,0,civicAPI
-governor,SC,,0,SC,Write-in,Nonpartisan,W,1142,0.06,5,0,0,civicAPI
+governor,SC,,0,SC,Alan Wilson,REP,R,1051334,51.58,1,1,0,South Carolina Election Commission
+governor,SC,,0,SC,Jermaine Johnson,DEM,D,960534,47.13,2,0,0,South Carolina Election Commission
+governor,SC,,0,SC,Michael Addison,UNC,O,16125,0.79,3,0,0,South Carolina Election Commission
+governor,SC,,0,SC,Walid Hakim,GRN,G,9078,0.45,4,0,0,South Carolina Election Commission
+governor,SC,,0,SC,Write-In,,W,1143,0.06,5,,,South Carolina Election Commission
 governor,SD,,0,SD,Larry Rhoden,Republican,R,193334,63.49,1,1,0,civicAPI
 governor,SD,,0,SD,Dan Ahlers,Democratic,D,111161,36.51,2,0,0,civicAPI
 governor,TN,,0,TN,Marsha Blackburn,Republican,R,955298,45.46,1,1,0,civicAPI
@@ -1580,31 +1580,31 @@ house,RI,1,0,4401,Write-in,Nonpartisan,W,229,0.14,4,0,0,civicAPI
 house,RI,2,0,4402,Seth Magaziner,Democratic,D,121020,61.92,1,1,0,civicAPI
 house,RI,2,0,4402,Victor Mellor,Republican,R,73905,37.82,2,0,0,civicAPI
 house,RI,2,0,4402,Write-in,Nonpartisan,W,511,0.26,3,0,0,civicAPI
-house,SC,1,0,4501,Nancy Lacore,Democratic,D,162103,49.66,1,1,0,civicAPI
-house,SC,1,0,4501,Jenny Costa Honeycutt,Republican,R,158751,48.63,2,0,0,civicAPI
-house,SC,1,0,4501,Bill Reeside,Libertarian,L,5351,1.64,3,0,0,civicAPI
-house,SC,1,0,4501,Write-in,Nonpartisan,W,218,0.07,4,0,0,civicAPI
-house,SC,2,0,4502,Joe Wilson,Republican,R,147791,49.82,1,1,0,civicAPI
-house,SC,2,0,4502,Zyon Khalifa,Democratic,D,144865,48.83,2,0,0,civicAPI
-house,SC,2,0,4502,Dayna Alane Smith,Workers,O,3674,1.24,3,0,0,civicAPI
-house,SC,2,0,4502,Write-in,Nonpartisan,W,334,0.11,4,0,0,civicAPI
-house,SC,3,0,4503,Sheri Biggs,Republican,R,173968,63.68,1,1,0,civicAPI
-house,SC,3,0,4503,Eunice Lehmacher,Democratic,D,93962,34.39,2,0,0,civicAPI
-house,SC,3,0,4503,Brian Corriea,Libertarian,L,5112,1.87,3,0,0,civicAPI
-house,SC,3,0,4503,Write-in,Nonpartisan,W,150,0.05,4,0,0,civicAPI
-house,SC,4,0,4504,William Timmons,Republican,R,146944,51.71,1,1,0,civicAPI
-house,SC,4,0,4504,Courtney McClain,Democratic,D,129742,45.65,2,0,0,civicAPI
-house,SC,4,0,4504,Jessica Ethridge,Libertarian,L,7215,2.54,3,0,0,civicAPI
-house,SC,4,0,4504,Write-in,Nonpartisan,W,292,0.1,4,0,0,civicAPI
-house,SC,5,0,4505,Wes Climer,Republican,R,151611,52.83,1,1,0,civicAPI
-house,SC,5,0,4505,Mallory Dittmer,Democratic,D,135234,47.12,2,0,0,civicAPI
-house,SC,5,0,4505,Write-in,Nonpartisan,W,155,0.05,3,0,0,civicAPI
-house,SC,6,0,4506,Jim Clyburn,Democratic,D,181118,69.31,1,1,0,civicAPI
-house,SC,6,0,4506,John Peterson,Republican,R,79898,30.57,2,0,0,civicAPI
-house,SC,6,0,4506,Write-in,Nonpartisan,W,318,0.12,3,0,0,civicAPI
-house,SC,7,0,4507,Russell Fry,Republican,R,172439,56.71,1,1,0,civicAPI
-house,SC,7,0,4507,John Vincent,Democratic,D,131445,43.23,2,0,0,civicAPI
-house,SC,7,0,4507,Write-in,Nonpartisan,W,204,0.07,3,0,0,civicAPI
+house,SC,1,0,4501,Nancy Lacore,DEM,D,162103,49.66,1,1,0,South Carolina Election Commission
+house,SC,1,0,4501,Jenny Costa Honeycutt,REP,R,158751,48.63,2,0,0,South Carolina Election Commission
+house,SC,1,0,4501,Bill Reeside,LIB,L,5351,1.64,3,0,0,South Carolina Election Commission
+house,SC,1,0,4501,Write-In,,W,218,0.07,4,,,South Carolina Election Commission
+house,SC,2,0,4502,Joe Wilson,REP,R,147791,49.82,1,1,0,South Carolina Election Commission
+house,SC,2,0,4502,Zyon Khalifa,DEM,D,144865,48.83,2,0,0,South Carolina Election Commission
+house,SC,2,0,4502,Dayna Alane Smith,WRK,O,3674,1.24,3,0,0,South Carolina Election Commission
+house,SC,2,0,4502,Write-In,,W,334,0.11,4,,,South Carolina Election Commission
+house,SC,3,0,4503,Sheri Biggs,REP,R,173960,63.68,1,1,0,South Carolina Election Commission
+house,SC,3,0,4503,Eunice Lehmacher,DEM,D,93955,34.39,2,0,0,South Carolina Election Commission
+house,SC,3,0,4503,Brian Corriea,LIB,L,5103,1.87,3,0,0,South Carolina Election Commission
+house,SC,3,0,4503,Write-In,,W,150,0.05,4,,,South Carolina Election Commission
+house,SC,4,0,4504,William Timmons,REP,R,146944,51.71,1,1,0,South Carolina Election Commission
+house,SC,4,0,4504,Courtney McClain,DEM,D,129742,45.65,2,0,0,South Carolina Election Commission
+house,SC,4,0,4504,Jessica Ethridge,LIB,L,7215,2.54,3,0,0,South Carolina Election Commission
+house,SC,4,0,4504,Write-In,,W,292,0.1,4,,,South Carolina Election Commission
+house,SC,5,0,4505,Wes Climer,REP,R,151497,52.81,1,1,0,South Carolina Election Commission
+house,SC,5,0,4505,Mallory Dittmer,DEM,D,135203,47.13,2,0,0,South Carolina Election Commission
+house,SC,5,0,4505,Write-In,,W,158,0.06,3,,,South Carolina Election Commission
+house,SC,6,0,4506,Jim Clyburn,DEM,D,181118,69.31,1,1,0,South Carolina Election Commission
+house,SC,6,0,4506,John Peterson,REP,R,79898,30.57,2,0,0,South Carolina Election Commission
+house,SC,6,0,4506,Write-In,,W,318,0.12,3,,,South Carolina Election Commission
+house,SC,7,0,4507,Russell Fry,REP,R,172439,56.71,1,1,0,South Carolina Election Commission
+house,SC,7,0,4507,John Vincent,DEM,D,131445,43.23,2,0,0,South Carolina Election Commission
+house,SC,7,0,4507,Write-In,,W,204,0.07,3,,,South Carolina Election Commission
 house,SD,1,0,4601,Marty Jackley,Republican,R,195588,64.0,1,1,0,civicAPI
 house,SD,1,0,4601,Nikki Gronli,Democratic,D,109997,36.0,2,0,0,civicAPI
 house,TN,1,0,4701,Diana Harshbarger,Republican,R,133592,63.81,1,1,0,civicAPI
@@ -9442,368 +9442,368 @@ state_house,RI,74,0,RI-H-74,Alex Finkelman,Democratic,D,4283,97.45,1,1,0,civicAP
 state_house,RI,74,0,RI-H-74,Write-in,Nonpartisan,W,112,2.55,2,0,0,civicAPI
 state_house,RI,75,0,RI-H-75,Lauren H. Carson,Democratic,D,3501,97.68,1,1,0,civicAPI
 state_house,RI,75,0,RI-H-75,Write-in,Nonpartisan,W,83,2.32,2,0,0,civicAPI
-state_house,SC,1,0,SC-H-1,Bill Whitmire,Republican,R,13846,75.86,1,1,0,civicAPI
-state_house,SC,1,0,SC-H-1,Jasmine Williams,Democratic,D,4385,24.03,2,0,0,civicAPI
-state_house,SC,1,0,SC-H-1,Write-in,Nonpartisan,W,20,0.11,3,0,0,civicAPI
-state_house,SC,2,0,SC-H-2,Adam Duncan,Republican,R,10982,65.93,1,1,0,civicAPI
-state_house,SC,2,0,SC-H-2,Candace Schutt,Democratic,D,5456,32.76,2,0,0,civicAPI
-state_house,SC,2,0,SC-H-2,Christopher Damian Des Marais,Libertarian,L,207,1.24,3,0,0,civicAPI
-state_house,SC,2,0,SC-H-2,Write-in,Nonpartisan,W,11,0.07,4,0,0,civicAPI
-state_house,SC,3,0,SC-H-3,Phillip Bowers,Republican,R,5614,54.16,1,1,0,civicAPI
-state_house,SC,3,0,SC-H-3,Claiborne Linvill,Democratic,D,4743,45.76,2,0,0,civicAPI
-state_house,SC,3,0,SC-H-3,Write-in,Nonpartisan,W,8,0.08,3,0,0,civicAPI
-state_house,SC,4,0,SC-H-4,Clay Counts,Republican,R,12241,80.55,1,1,0,civicAPI
-state_house,SC,4,0,SC-H-4,Derrick Kruse,Democratic,D,2934,19.31,2,0,0,civicAPI
-state_house,SC,4,0,SC-H-4,Write-in,Nonpartisan,W,21,0.14,3,0,0,civicAPI
-state_house,SC,5,0,SC-H-5,Neal Collins,Republican,R,10623,68.65,1,1,0,civicAPI
-state_house,SC,5,0,SC-H-5,David F Jones,Democratic,D,4784,30.91,2,0,0,civicAPI
-state_house,SC,5,0,SC-H-5,Write-in,Nonpartisan,W,68,0.44,3,0,0,civicAPI
-state_house,SC,6,0,SC-H-6,April Cromer,Republican,R,11408,65.6,1,1,0,civicAPI
-state_house,SC,6,0,SC-H-6,Jennifer Bachner,Democratic,D,5924,34.06,2,0,0,civicAPI
-state_house,SC,6,0,SC-H-6,Write-in,Nonpartisan,W,59,0.34,3,0,0,civicAPI
-state_house,SC,7,0,SC-H-7,Lee Gilreath,Republican,R,8649,67.43,1,1,0,civicAPI
-state_house,SC,7,0,SC-H-7,Elizabeth W Cooley,Democratic,D,4166,32.48,2,0,0,civicAPI
-state_house,SC,7,0,SC-H-7,Write-in,Nonpartisan,W,12,0.09,3,0,0,civicAPI
-state_house,SC,8,0,SC-H-8,Don Chapman,Republican,R,9710,64.97,1,1,0,civicAPI
-state_house,SC,8,0,SC-H-8,Demetrius Carson,Democratic,D,5214,34.89,2,0,0,civicAPI
-state_house,SC,8,0,SC-H-8,Write-in,Nonpartisan,W,22,0.15,3,0,0,civicAPI
-state_house,SC,9,0,SC-H-9,Blake Sanders,Republican,R,9006,65.56,1,1,0,civicAPI
-state_house,SC,9,0,SC-H-9,Johnny Estrich,Democratic,D,4716,34.33,2,0,0,civicAPI
-state_house,SC,9,0,SC-H-9,Write-in,Nonpartisan,W,15,0.11,3,0,0,civicAPI
-state_house,SC,10,0,SC-H-10,Thomas Beach,Republican,R,9871,66.06,1,1,0,civicAPI
-state_house,SC,10,0,SC-H-10,Thomas Stewart,Democratic,D,5047,33.78,2,0,0,civicAPI
-state_house,SC,10,0,SC-H-10,Write-in,Nonpartisan,W,24,0.16,3,0,0,civicAPI
-state_house,SC,11,0,SC-H-11,Craig Gagnon,Republican,R,9268,67.08,1,1,0,civicAPI
-state_house,SC,11,0,SC-H-11,Jessica Beasley,Democratic,D,4408,31.9,2,0,0,civicAPI
-state_house,SC,11,0,SC-H-11,E T Stone,United Citizens,O,138,1.0,3,0,0,civicAPI
-state_house,SC,11,0,SC-H-11,Write-in,Nonpartisan,W,3,0.02,4,0,0,civicAPI
-state_house,SC,12,0,SC-H-12,Jumelle Brooks,Democratic,D,7555,54.89,1,1,0,civicAPI
-state_house,SC,12,0,SC-H-12,Daniel Gibson,Republican,R,6204,45.08,2,0,0,civicAPI
-state_house,SC,12,0,SC-H-12,Write-in,Nonpartisan,W,4,0.03,3,0,0,civicAPI
-state_house,SC,13,0,SC-H-13,John McCravy,Republican,R,11240,66.86,1,1,0,civicAPI
-state_house,SC,13,0,SC-H-13,C Rauch Wise,Democratic,D,5554,33.04,2,0,0,civicAPI
-state_house,SC,13,0,SC-H-13,Write-in,Nonpartisan,W,16,0.1,3,0,0,civicAPI
-state_house,SC,14,0,SC-H-14,Rick Shealy,Republican,R,8961,61.99,1,1,0,civicAPI
-state_house,SC,14,0,SC-H-14,Michanna Tate,Democratic,D,5324,36.83,2,0,0,civicAPI
-state_house,SC,14,0,SC-H-14,Henry D Jones,United Citizens,O,156,1.08,3,0,0,civicAPI
-state_house,SC,14,0,SC-H-14,Write-in,Nonpartisan,W,15,0.1,4,0,0,civicAPI
-state_house,SC,15,0,SC-H-15,JA Moore,Democratic,D,6464,66.89,1,1,0,civicAPI
-state_house,SC,15,0,SC-H-15,Heather Hickman,Republican,R,2993,30.97,2,0,0,civicAPI
-state_house,SC,15,0,SC-H-15,Melissa Couture,Libertarian,L,202,2.09,3,0,0,civicAPI
-state_house,SC,15,0,SC-H-15,Write-in,Nonpartisan,W,5,0.05,4,0,0,civicAPI
-state_house,SC,16,0,SC-H-16,Mark N Willis,Republican,R,10772,58.19,1,1,0,civicAPI
-state_house,SC,16,0,SC-H-16,Lynn Ramirez,Democratic,D,7726,41.74,2,0,0,civicAPI
-state_house,SC,16,0,SC-H-16,Write-in,Nonpartisan,W,13,0.07,3,0,0,civicAPI
-state_house,SC,17,0,SC-H-17,Mike Burns,Republican,R,13659,71.61,1,1,0,civicAPI
-state_house,SC,17,0,SC-H-17,Rich Nicoloff,Democratic,D,5399,28.3,2,0,0,civicAPI
-state_house,SC,17,0,SC-H-17,Write-in,Nonpartisan,W,17,0.09,3,0,0,civicAPI
-state_house,SC,18,0,SC-H-18,Alan Morgan,Republican,R,11766,66.92,1,1,0,civicAPI
-state_house,SC,18,0,SC-H-18,Virginia B Maclure,Democratic,D,5809,33.04,2,0,0,civicAPI
-state_house,SC,18,0,SC-H-18,Write-in,Nonpartisan,W,6,0.03,3,0,0,civicAPI
-state_house,SC,19,0,SC-H-19,Patrick B Haddon,Republican,R,6754,51.38,1,1,0,civicAPI
-state_house,SC,19,0,SC-H-19,Rachel Smith,Democratic,D,6384,48.57,2,0,0,civicAPI
-state_house,SC,19,0,SC-H-19,Write-in,Nonpartisan,W,7,0.05,3,0,0,civicAPI
-state_house,SC,20,0,SC-H-20,Stephen D Frank,Republican,R,9866,60.92,1,1,0,civicAPI
-state_house,SC,20,0,SC-H-20,Polly Elbertse,Democratic,D,6309,38.95,2,0,0,civicAPI
-state_house,SC,20,0,SC-H-20,Write-in,Nonpartisan,W,21,0.13,3,0,0,civicAPI
-state_house,SC,21,0,SC-H-21,Dianne Mitchell,Republican,R,11579,60.84,1,1,0,civicAPI
-state_house,SC,21,0,SC-H-21,Dexter Reaves,Democratic,D,7438,39.08,2,0,0,civicAPI
-state_house,SC,21,0,SC-H-21,Write-in,Nonpartisan,W,16,0.08,3,0,0,civicAPI
-state_house,SC,22,0,SC-H-22,Paul Wickensimer,Republican,R,9863,52.58,1,1,0,civicAPI
-state_house,SC,22,0,SC-H-22,Josh Kendrick,Democratic,D,8880,47.34,2,0,0,civicAPI
-state_house,SC,22,0,SC-H-22,Write-in,Nonpartisan,W,16,0.09,3,0,0,civicAPI
-state_house,SC,23,0,SC-H-23,Chandra Dillard,Democratic,D,9271,98.4,1,1,0,civicAPI
-state_house,SC,23,0,SC-H-23,Write-in,Nonpartisan,W,151,1.6,2,0,0,civicAPI
-state_house,SC,24,0,SC-H-24,Bruce Bannister,Republican,R,10199,51.99,1,1,0,civicAPI
-state_house,SC,24,0,SC-H-24,Caroline Avinger,Democratic,D,9401,47.93,2,0,0,civicAPI
-state_house,SC,24,0,SC-H-24,Write-in,Nonpartisan,W,16,0.08,3,0,0,civicAPI
-state_house,SC,25,0,SC-H-25,Wendell Jones,Democratic,D,10927,98.41,1,1,0,civicAPI
-state_house,SC,25,0,SC-H-25,Write-in,Nonpartisan,W,177,1.59,2,0,0,civicAPI
-state_house,SC,26,0,SC-H-26,David W Martin,Republican,R,9990,54.35,1,1,0,civicAPI
-state_house,SC,26,0,SC-H-26,Jenny Desch,Democratic,D,8247,44.87,2,0,0,civicAPI
-state_house,SC,26,0,SC-H-26,Kiral Mace,Workers,O,122,0.66,3,0,0,civicAPI
-state_house,SC,26,0,SC-H-26,Write-in,Nonpartisan,W,22,0.12,4,0,0,civicAPI
-state_house,SC,27,0,SC-H-27,David Vaughan,Republican,R,9139,50.08,1,1,0,civicAPI
-state_house,SC,27,0,SC-H-27,John MacCarthy,Democratic,D,9101,49.87,2,0,0,civicAPI
-state_house,SC,27,0,SC-H-27,Write-in,Nonpartisan,W,8,0.04,3,0,0,civicAPI
-state_house,SC,28,0,SC-H-28,Chris Huff,Republican,R,10515,53.91,1,1,0,civicAPI
-state_house,SC,28,0,SC-H-28,Alan G Buckalew,Democratic,D,8973,46.01,2,0,0,civicAPI
-state_house,SC,28,0,SC-H-28,Write-in,Nonpartisan,W,15,0.08,3,0,0,civicAPI
-state_house,SC,29,0,SC-H-29,Dennis Moss,Republican,R,9389,68.66,1,1,0,civicAPI
-state_house,SC,29,0,SC-H-29,Marina Franco,Democratic,D,4266,31.2,2,0,0,civicAPI
-state_house,SC,29,0,SC-H-29,Write-in,Nonpartisan,W,20,0.15,3,0,0,civicAPI
-state_house,SC,30,0,SC-H-30,Brian Lawson,Republican,R,9089,70.39,1,1,0,civicAPI
-state_house,SC,30,0,SC-H-30,Stephanie Holstein,Democratic,D,3814,29.54,2,0,0,civicAPI
-state_house,SC,30,0,SC-H-30,Write-in,Nonpartisan,W,10,0.08,3,0,0,civicAPI
-state_house,SC,31,0,SC-H-31,Rosalyn Henderson-Myers,Democratic,D,7675,89.72,1,1,0,civicAPI
-state_house,SC,31,0,SC-H-31,James A Jones Sr,United Citizens,O,834,9.75,2,0,0,civicAPI
-state_house,SC,31,0,SC-H-31,Write-in,Nonpartisan,W,45,0.53,3,0,0,civicAPI
-state_house,SC,32,0,SC-H-32,Scott Montgomery,Republican,R,7527,53.88,1,1,0,civicAPI
-state_house,SC,32,0,SC-H-32,Irene Benson,Democratic,D,6433,46.05,2,0,0,civicAPI
-state_house,SC,32,0,SC-H-32,Write-in,Nonpartisan,W,11,0.08,3,0,0,civicAPI
-state_house,SC,33,0,SC-H-33,Travis A Moore,Republican,R,10008,61.88,1,1,0,civicAPI
-state_house,SC,33,0,SC-H-33,Clemson G Turregano,Democratic,D,6142,37.98,2,0,0,civicAPI
-state_house,SC,33,0,SC-H-33,Write-in,Nonpartisan,W,23,0.14,3,0,0,civicAPI
-state_house,SC,34,0,SC-H-34,Sarita Edgerton,Republican,R,9211,52.02,1,1,0,civicAPI
-state_house,SC,34,0,SC-H-34,Saville Williams,Democratic,D,8487,47.93,2,0,0,civicAPI
-state_house,SC,34,0,SC-H-34,Write-in,Nonpartisan,W,9,0.05,3,0,0,civicAPI
-state_house,SC,35,0,SC-H-35,Bill Chumley,Republican,R,12124,60.57,1,1,0,civicAPI
-state_house,SC,35,0,SC-H-35,Tatiana Skipper,Democratic,D,7873,39.33,2,0,0,civicAPI
-state_house,SC,35,0,SC-H-35,Write-in,Nonpartisan,W,21,0.1,3,0,0,civicAPI
-state_house,SC,36,0,SC-H-36,Rob Harris,Republican,R,7989,55.7,1,1,0,civicAPI
-state_house,SC,36,0,SC-H-36,Virginia McLean,Democratic,D,6337,44.18,2,0,0,civicAPI
-state_house,SC,36,0,SC-H-36,Write-in,Nonpartisan,W,17,0.12,3,0,0,civicAPI
-state_house,SC,37,0,SC-H-37,Steven Long,Republican,R,8316,56.22,1,1,0,civicAPI
-state_house,SC,37,0,SC-H-37,Seth Sauer-Hart,Democratic,D,6458,43.66,2,0,0,civicAPI
-state_house,SC,37,0,SC-H-37,Write-in,Nonpartisan,W,19,0.13,3,0,0,civicAPI
-state_house,SC,38,0,SC-H-38,Josiah Magnuson,Republican,R,12167,73.57,1,1,0,civicAPI
-state_house,SC,38,0,SC-H-38,Tammy Hahn,Democratic,D,4350,26.3,2,0,0,civicAPI
-state_house,SC,38,0,SC-H-38,Write-in,Nonpartisan,W,22,0.13,3,0,0,civicAPI
-state_house,SC,39,0,SC-H-39,Cally R Cal Forrest,Republican,R,11591,72.91,1,1,0,civicAPI
-state_house,SC,39,0,SC-H-39,Sherman Lott,Democratic,D,4290,26.99,2,0,0,civicAPI
-state_house,SC,39,0,SC-H-39,Write-in,Nonpartisan,W,16,0.1,3,0,0,civicAPI
-state_house,SC,40,0,SC-H-40,Joe White,Republican,R,9756,61.75,1,1,0,civicAPI
-state_house,SC,40,0,SC-H-40,Engle Thompson,Democratic,D,6026,38.14,2,0,0,civicAPI
-state_house,SC,40,0,SC-H-40,Write-in,Nonpartisan,W,16,0.1,3,0,0,civicAPI
-state_house,SC,41,0,SC-H-41,Annie E McDaniel,Democratic,D,11719,66.3,1,1,0,civicAPI
-state_house,SC,41,0,SC-H-41,Tibi Czentye,Republican,R,5948,33.65,2,0,0,civicAPI
-state_house,SC,41,0,SC-H-41,Write-in,Nonpartisan,W,9,0.05,3,0,0,civicAPI
-state_house,SC,42,0,SC-H-42,Doug Gilliam,Republican,R,7725,59.59,1,1,0,civicAPI
-state_house,SC,42,0,SC-H-42,Robert Larry Williams,Democratic,D,5217,40.25,2,0,0,civicAPI
-state_house,SC,42,0,SC-H-42,Write-in,Nonpartisan,W,21,0.16,3,0,0,civicAPI
-state_house,SC,43,0,SC-H-43,Randy Ligon,Republican,R,9454,61.98,1,1,0,civicAPI
-state_house,SC,43,0,SC-H-43,Alex Clark,Democratic,D,5780,37.89,2,0,0,civicAPI
-state_house,SC,43,0,SC-H-43,Write-in,Nonpartisan,W,19,0.12,3,0,0,civicAPI
-state_house,SC,44,0,SC-H-44,Mike Neese,Republican,R,12063,52.46,1,1,0,civicAPI
-state_house,SC,44,0,SC-H-44,Katie Crosby,Democratic,D,10909,47.44,2,0,0,civicAPI
-state_house,SC,44,0,SC-H-44,Write-in,Nonpartisan,W,23,0.1,3,0,0,civicAPI
-state_house,SC,45,0,SC-H-45,Brandon Newton,Republican,R,8733,56.18,1,1,0,civicAPI
-state_house,SC,45,0,SC-H-45,Nicole Ventour,Democratic,D,6784,43.64,2,0,0,civicAPI
-state_house,SC,45,0,SC-H-45,Write-in,Nonpartisan,W,29,0.19,3,0,0,civicAPI
-state_house,SC,46,0,SC-H-46,Heath Sessions,Republican,R,8769,51.66,1,1,0,civicAPI
-state_house,SC,46,0,SC-H-46,Omar L McCrorey,Democratic,D,8192,48.26,2,0,0,civicAPI
-state_house,SC,46,0,SC-H-46,Write-in,Nonpartisan,W,13,0.08,3,0,0,civicAPI
-state_house,SC,47,0,SC-H-47,Tommy Pope,Republican,R,11599,66.47,1,1,0,civicAPI
-state_house,SC,47,0,SC-H-47,Justin Bennett,Democratic,D,5827,33.39,2,0,0,civicAPI
-state_house,SC,47,0,SC-H-47,Write-in,Nonpartisan,W,23,0.13,3,0,0,civicAPI
-state_house,SC,48,0,SC-H-48,Brandon Guffey,Republican,R,10835,56.82,1,1,0,civicAPI
-state_house,SC,48,0,SC-H-48,Rustin Terry,Democratic,D,8213,43.07,2,0,0,civicAPI
-state_house,SC,48,0,SC-H-48,Write-in,Nonpartisan,W,21,0.11,3,0,0,civicAPI
-state_house,SC,49,0,SC-H-49,John R King,Democratic,D,10962,98.01,1,1,0,civicAPI
-state_house,SC,49,0,SC-H-49,Write-in,Nonpartisan,W,223,1.99,2,0,0,civicAPI
-state_house,SC,50,0,SC-H-50,Keishan M Scott,Democratic,D,9540,62.18,1,1,0,civicAPI
-state_house,SC,50,0,SC-H-50,William Oden,Republican,R,5793,37.76,2,0,0,civicAPI
-state_house,SC,50,0,SC-H-50,Write-in,Nonpartisan,W,9,0.06,3,0,0,civicAPI
-state_house,SC,51,0,SC-H-51,David Weeks,Democratic,D,10123,98.55,1,1,0,civicAPI
-state_house,SC,51,0,SC-H-51,Write-in,Nonpartisan,W,149,1.45,2,0,0,civicAPI
-state_house,SC,52,0,SC-H-52,Malcolm Taylor,Democratic,D,13106,97.97,1,1,0,civicAPI
-state_house,SC,52,0,SC-H-52,Write-in,Nonpartisan,W,272,2.03,2,0,0,civicAPI
-state_house,SC,53,0,SC-H-53,Richard Richie Yow,Republican,R,8770,65.74,1,1,0,civicAPI
-state_house,SC,53,0,SC-H-53,Bruce M Wallace,Democratic,D,4562,34.2,2,0,0,civicAPI
-state_house,SC,53,0,SC-H-53,Write-in,Nonpartisan,W,8,0.06,3,0,0,civicAPI
-state_house,SC,54,0,SC-H-54,Jason Luck,Democratic,D,9128,98.49,1,1,0,civicAPI
-state_house,SC,54,0,SC-H-54,Write-in,Nonpartisan,W,140,1.51,2,0,0,civicAPI
-state_house,SC,55,0,SC-H-55,Jackie Hayes,Democratic,D,9434,98.25,1,1,0,civicAPI
-state_house,SC,55,0,SC-H-55,Write-in,Nonpartisan,W,168,1.75,2,0,0,civicAPI
-state_house,SC,56,0,SC-H-56,Tim McGinnis,Republican,R,13919,63.23,1,1,0,civicAPI
-state_house,SC,56,0,SC-H-56,Jacqualyn Meadow,Democratic,D,8081,36.71,2,0,0,civicAPI
-state_house,SC,56,0,SC-H-56,Write-in,Nonpartisan,W,12,0.05,3,0,0,civicAPI
-state_house,SC,57,0,SC-H-57,Cynthia O Ford,Democratic,D,8120,51.6,1,1,0,civicAPI
-state_house,SC,57,0,SC-H-57,Lucas Atkinson,Republican,R,7610,48.36,2,0,0,civicAPI
-state_house,SC,57,0,SC-H-57,Write-in,Nonpartisan,W,5,0.03,3,0,0,civicAPI
-state_house,SC,58,0,SC-H-58,Jeff Johnson,Republican,R,10149,65.22,1,1,0,civicAPI
-state_house,SC,58,0,SC-H-58,Sha-Ron E Jones,Democratic,D,5397,34.69,2,0,0,civicAPI
-state_house,SC,58,0,SC-H-58,Write-in,Nonpartisan,W,14,0.09,3,0,0,civicAPI
-state_house,SC,59,0,SC-H-59,Terry Alexander,Democratic,D,9435,97.91,1,1,0,civicAPI
-state_house,SC,59,0,SC-H-59,Write-in,Nonpartisan,W,201,2.09,2,0,0,civicAPI
-state_house,SC,60,0,SC-H-60,Phillip Lowe,Republican,R,8228,54.07,1,1,0,civicAPI
-state_house,SC,60,0,SC-H-60,Adrian Peguese Carter,Democratic,D,6969,45.8,2,0,0,civicAPI
-state_house,SC,60,0,SC-H-60,Write-in,Nonpartisan,W,19,0.12,3,0,0,civicAPI
-state_house,SC,61,0,SC-H-61,Carla Schuessler,Republican,R,8343,59.08,1,1,0,civicAPI
-state_house,SC,61,0,SC-H-61,Carol Goodman,Democratic,D,5540,39.23,2,0,0,civicAPI
-state_house,SC,61,0,SC-H-61,David Herndon,Libertarian,L,229,1.62,3,0,0,civicAPI
-state_house,SC,61,0,SC-H-61,Write-in,Nonpartisan,W,9,0.06,4,0,0,civicAPI
-state_house,SC,62,0,SC-H-62,Robert Williams,Democratic,D,9858,97.8,1,1,0,civicAPI
-state_house,SC,62,0,SC-H-62,Write-in,Nonpartisan,W,222,2.2,2,0,0,civicAPI
-state_house,SC,63,0,SC-H-63,Jay Jordan,Republican,R,8856,56.63,1,1,0,civicAPI
-state_house,SC,63,0,SC-H-63,Kory Haskins,Democratic,D,6770,43.29,2,0,0,civicAPI
-state_house,SC,63,0,SC-H-63,Write-in,Nonpartisan,W,11,0.07,3,0,0,civicAPI
-state_house,SC,64,0,SC-H-64,Michele Demery,Democratic,D,8683,52.06,1,1,0,civicAPI
-state_house,SC,64,0,SC-H-64,Fawn Pedalino,Republican,R,7976,47.82,2,0,0,civicAPI
-state_house,SC,64,0,SC-H-64,Write-in,Nonpartisan,W,20,0.12,3,0,0,civicAPI
-state_house,SC,65,0,SC-H-65,Cody T Mitchell,Republican,R,9636,67.78,1,1,0,civicAPI
-state_house,SC,65,0,SC-H-65,Tanisha Baskin,Democratic,D,4566,32.12,2,0,0,civicAPI
-state_house,SC,65,0,SC-H-65,Write-in,Nonpartisan,W,15,0.11,3,0,0,civicAPI
-state_house,SC,66,0,SC-H-66,Heather Hart,Democratic,D,9059,51.28,1,1,0,civicAPI
-state_house,SC,66,0,SC-H-66,Jackie Terribile,Republican,R,8591,48.63,2,0,0,civicAPI
-state_house,SC,66,0,SC-H-66,Write-in,Nonpartisan,W,15,0.08,3,0,0,civicAPI
-state_house,SC,67,0,SC-H-67,Murrell Smith,Republican,R,8585,55.86,1,1,0,civicAPI
-state_house,SC,67,0,SC-H-67,Lisa Davey,Democratic,D,6773,44.07,2,0,0,civicAPI
-state_house,SC,67,0,SC-H-67,Write-in,Nonpartisan,W,12,0.08,3,0,0,civicAPI
-state_house,SC,68,0,SC-H-68,Heather Ammons Crawford,Republican,R,11379,63.05,1,1,0,civicAPI
-state_house,SC,68,0,SC-H-68,Judy Davies,Democratic,D,6659,36.89,2,0,0,civicAPI
-state_house,SC,68,0,SC-H-68,Write-in,Nonpartisan,W,11,0.06,3,0,0,civicAPI
-state_house,SC,69,0,SC-H-69,Chris Wooten,Republican,R,9951,60.42,1,1,0,civicAPI
-state_house,SC,69,0,SC-H-69,Emery K Chaplin,Democratic,D,6085,36.95,2,0,0,civicAPI
-state_house,SC,69,0,SC-H-69,Allen Broadus,Libertarian,L,419,2.54,3,0,0,civicAPI
-state_house,SC,69,0,SC-H-69,Write-in,Nonpartisan,W,14,0.09,4,0,0,civicAPI
-state_house,SC,70,0,SC-H-70,Robert Reese,Democratic,D,12629,97.74,1,1,0,civicAPI
-state_house,SC,70,0,SC-H-70,Write-in,Nonpartisan,W,292,2.26,2,0,0,civicAPI
-state_house,SC,71,0,SC-H-71,Nathan Ballentine,Republican,R,11839,58.17,1,1,0,civicAPI
-state_house,SC,71,0,SC-H-71,Julie Zimmerman,Democratic,D,8494,41.73,2,0,0,civicAPI
-state_house,SC,71,0,SC-H-71,Write-in,Nonpartisan,W,20,0.1,3,0,0,civicAPI
-state_house,SC,72,0,SC-H-72,Seth Rose,Democratic,D,6933,83.39,1,1,0,civicAPI
-state_house,SC,72,0,SC-H-72,Dixie Kvatek,Republican,R,1370,16.48,2,0,0,civicAPI
-state_house,SC,72,0,SC-H-72,Write-in,Nonpartisan,W,11,0.13,3,0,0,civicAPI
-state_house,SC,73,0,SC-H-73,Chris Hart,Democratic,D,10405,81.17,1,1,0,civicAPI
-state_house,SC,73,0,SC-H-73,Allen Robertson,Republican,R,2410,18.8,2,0,0,civicAPI
-state_house,SC,73,0,SC-H-73,Write-in,Nonpartisan,W,3,0.02,3,0,0,civicAPI
-state_house,SC,74,0,SC-H-74,J Todd Rutherford,Democratic,D,10980,85.31,1,1,0,civicAPI
-state_house,SC,74,0,SC-H-74,Collin Shelton,Republican,R,1873,14.55,2,0,0,civicAPI
-state_house,SC,74,0,SC-H-74,Write-in,Nonpartisan,W,18,0.14,3,0,0,civicAPI
-state_house,SC,75,0,SC-H-75,Heather Bauer,Democratic,D,9199,56.99,1,1,0,civicAPI
-state_house,SC,75,0,SC-H-75,Tracy Robins,Republican,R,6688,41.43,2,0,0,civicAPI
-state_house,SC,75,0,SC-H-75,Joshua Parks,Libertarian,L,249,1.54,3,0,0,civicAPI
-state_house,SC,75,0,SC-H-75,Write-in,Nonpartisan,W,6,0.04,4,0,0,civicAPI
-state_house,SC,76,0,SC-H-76,Leon Howard,Democratic,D,12502,99.44,1,1,0,civicAPI
-state_house,SC,76,0,SC-H-76,Write-in,Nonpartisan,W,71,0.56,2,0,0,civicAPI
-state_house,SC,77,0,SC-H-77,Kambrell Houston Garvin,Democratic,D,17164,99.02,1,1,0,civicAPI
-state_house,SC,77,0,SC-H-77,Write-in,Nonpartisan,W,170,0.98,2,0,0,civicAPI
-state_house,SC,78,0,SC-H-78,Beth Bernstein,Democratic,D,12979,71.66,1,1,0,civicAPI
-state_house,SC,78,0,SC-H-78,Sonia Pollard,Republican,R,4821,26.62,2,0,0,civicAPI
-state_house,SC,78,0,SC-H-78,Angelo Joyner Sr,Libertarian,L,304,1.68,3,0,0,civicAPI
-state_house,SC,78,0,SC-H-78,Write-in,Nonpartisan,W,8,0.04,4,0,0,civicAPI
-state_house,SC,79,0,SC-H-79,Hamilton R Grant,Democratic,D,15424,99.21,1,1,0,civicAPI
-state_house,SC,79,0,SC-H-79,Write-in,Nonpartisan,W,123,0.79,2,0,0,civicAPI
-state_house,SC,80,0,SC-H-80,Kathy Landing,Republican,R,11207,57.01,1,1,0,civicAPI
-state_house,SC,80,0,SC-H-80,Benjamin E Brown,Democratic,D,8437,42.92,2,0,0,civicAPI
-state_house,SC,80,0,SC-H-80,Write-in,Nonpartisan,W,13,0.07,3,0,0,civicAPI
-state_house,SC,81,0,SC-H-81,Charles Hartz,Republican,R,12127,60.2,1,1,0,civicAPI
-state_house,SC,81,0,SC-H-81,Pete Swales,Democratic,D,7996,39.69,2,0,0,civicAPI
-state_house,SC,81,0,SC-H-81,Write-in,Nonpartisan,W,21,0.1,3,0,0,civicAPI
-state_house,SC,82,0,SC-H-82,William Bill Clyburn,Democratic,D,8550,61.94,1,1,0,civicAPI
-state_house,SC,82,0,SC-H-82,Suzy Spurgeon,Republican,R,5237,37.94,2,0,0,civicAPI
-state_house,SC,82,0,SC-H-82,Write-in,Nonpartisan,W,16,0.12,3,0,0,civicAPI
-state_house,SC,83,0,SC-H-83,Bill Hixon,Republican,R,10426,63.97,1,1,0,civicAPI
-state_house,SC,83,0,SC-H-83,Jason Payne,Democratic,D,5853,35.91,2,0,0,civicAPI
-state_house,SC,83,0,SC-H-83,Write-in,Nonpartisan,W,18,0.11,3,0,0,civicAPI
-state_house,SC,84,0,SC-H-84,Melissa Oremus,Republican,R,8456,54.77,1,1,0,civicAPI
-state_house,SC,84,0,SC-H-84,Darnell Holston,Democratic,D,6966,45.12,2,0,0,civicAPI
-state_house,SC,84,0,SC-H-84,Write-in,Nonpartisan,W,18,0.12,3,0,0,civicAPI
-state_house,SC,85,0,SC-H-85,Jay Kilmartin,Republican,R,11209,55.87,1,1,0,civicAPI
-state_house,SC,85,0,SC-H-85,Steven J Asbill Jr,Democratic,D,8824,43.98,2,0,0,civicAPI
-state_house,SC,85,0,SC-H-85,Write-in,Nonpartisan,W,29,0.14,3,0,0,civicAPI
-state_house,SC,86,0,SC-H-86,Tommy Paradise,Republican,R,9189,60.07,1,1,0,civicAPI
-state_house,SC,86,0,SC-H-86,Malcolm Green,Democratic,D,6096,39.85,2,0,0,civicAPI
-state_house,SC,86,0,SC-H-86,Write-in,Nonpartisan,W,12,0.08,3,0,0,civicAPI
-state_house,SC,87,0,SC-H-87,Paula Rawl Calhoon,Republican,R,13010,68.83,1,1,0,civicAPI
-state_house,SC,87,0,SC-H-87,Reid Beaman,Democratic,D,5877,31.09,2,0,0,civicAPI
-state_house,SC,87,0,SC-H-87,Write-in,Nonpartisan,W,16,0.08,3,0,0,civicAPI
-state_house,SC,88,0,SC-H-88,John Lastinger,Republican,R,7926,57.05,1,1,0,civicAPI
-state_house,SC,88,0,SC-H-88,Jeremy Jones,Democratic,D,5957,42.88,2,0,0,civicAPI
-state_house,SC,88,0,SC-H-88,Write-in,Nonpartisan,W,9,0.06,3,0,0,civicAPI
-state_house,SC,89,0,SC-H-89,Joe Madge,Democratic,D,7263,50.33,1,1,0,civicAPI
-state_house,SC,89,0,SC-H-89,Micah Caskey,Republican,R,7156,49.59,2,0,0,civicAPI
-state_house,SC,89,0,SC-H-89,Write-in,Nonpartisan,W,11,0.08,3,0,0,civicAPI
-state_house,SC,90,0,SC-H-90,Justin Bamberg,Democratic,D,10830,97.62,1,1,0,civicAPI
-state_house,SC,90,0,SC-H-90,Write-in,Nonpartisan,W,264,2.38,2,0,0,civicAPI
-state_house,SC,91,0,SC-H-91,Lonnie Hosey,Democratic,D,8476,58.0,1,1,0,civicAPI
-state_house,SC,91,0,SC-H-91,Daniel Alexander,Republican,R,6129,41.94,2,0,0,civicAPI
-state_house,SC,91,0,SC-H-91,Write-in,Nonpartisan,W,10,0.07,3,0,0,civicAPI
-state_house,SC,92,0,SC-H-92,Byron Walters,Democratic,D,7461,51.58,1,1,0,civicAPI
-state_house,SC,92,0,SC-H-92,Brandon Cox,Republican,R,7001,48.4,2,0,0,civicAPI
-state_house,SC,92,0,SC-H-92,Write-in,Nonpartisan,W,3,0.02,3,0,0,civicAPI
-state_house,SC,93,0,SC-H-93,Jerry Govan,Democratic,D,9910,59.95,1,1,0,civicAPI
-state_house,SC,93,0,SC-H-93,Alex Morris,Republican,R,6617,40.03,2,0,0,civicAPI
-state_house,SC,93,0,SC-H-93,Write-in,Nonpartisan,W,4,0.02,3,0,0,civicAPI
-state_house,SC,94,0,SC-H-94,Gil Gatch,Republican,R,7696,50.52,1,1,0,civicAPI
-state_house,SC,94,0,SC-H-94,Sally Hebert,Democratic,D,7519,49.35,2,0,0,civicAPI
-state_house,SC,94,0,SC-H-94,Write-in,Nonpartisan,W,20,0.13,3,0,0,civicAPI
-state_house,SC,95,0,SC-H-95,Gilda Cobb-Hunter,Democratic,D,11163,97.89,1,1,0,civicAPI
-state_house,SC,95,0,SC-H-95,Write-in,Nonpartisan,W,241,2.11,2,0,0,civicAPI
-state_house,SC,96,0,SC-H-96,Hunter Hackett,Republican,R,7618,59.78,1,1,0,civicAPI
-state_house,SC,96,0,SC-H-96,Vivian Elston,Democratic,D,5120,40.18,2,0,0,civicAPI
-state_house,SC,96,0,SC-H-96,Write-in,Nonpartisan,W,6,0.05,3,0,0,civicAPI
-state_house,SC,97,0,SC-H-97,Robby Robbins,Republican,R,9620,58.77,1,1,0,civicAPI
-state_house,SC,97,0,SC-H-97,Cathy A Jaggars,Democratic,D,6745,41.2,2,0,0,civicAPI
-state_house,SC,97,0,SC-H-97,Write-in,Nonpartisan,W,5,0.03,3,0,0,civicAPI
-state_house,SC,98,0,SC-H-98,Sonja Ogletree Satani,Democratic,D,7691,54.99,1,1,0,civicAPI
-state_house,SC,98,0,SC-H-98,Greg Ford,Republican,R,6288,44.96,2,0,0,civicAPI
-state_house,SC,98,0,SC-H-98,Write-in,Nonpartisan,W,8,0.06,3,0,0,civicAPI
-state_house,SC,99,0,SC-H-99,Jarrod Brooks,Republican,R,10063,58.18,1,1,0,civicAPI
-state_house,SC,99,0,SC-H-99,Samuel Price,Democratic,D,7221,41.75,2,0,0,civicAPI
-state_house,SC,99,0,SC-H-99,Write-in,Nonpartisan,W,13,0.08,3,0,0,civicAPI
-state_house,SC,100,0,SC-H-100,Sylleste Davis,Republican,R,8113,50.8,1,1,0,civicAPI
-state_house,SC,100,0,SC-H-100,Crystal Y Campbell,Democratic,D,7841,49.1,2,0,0,civicAPI
-state_house,SC,100,0,SC-H-100,Write-in,Nonpartisan,W,16,0.1,3,0,0,civicAPI
-state_house,SC,101,0,SC-H-101,Roger K Kirby,Democratic,D,10011,69.51,1,1,0,civicAPI
-state_house,SC,101,0,SC-H-101,Arnie Borowsky,Republican,R,4362,30.29,2,0,0,civicAPI
-state_house,SC,101,0,SC-H-101,Write-in,Nonpartisan,W,30,0.21,3,0,0,civicAPI
-state_house,SC,102,0,SC-H-102,Montez Aiken,Democratic,D,9906,57.18,1,1,0,civicAPI
-state_house,SC,102,0,SC-H-102,Harriet Holman,Republican,R,7380,42.6,2,0,0,civicAPI
-state_house,SC,102,0,SC-H-102,Write-in,Nonpartisan,W,39,0.23,3,0,0,civicAPI
-state_house,SC,103,0,SC-H-103,Carl Anderson,Democratic,D,9999,97.77,1,1,0,civicAPI
-state_house,SC,103,0,SC-H-103,Write-in,Nonpartisan,W,228,2.23,2,0,0,civicAPI
-state_house,SC,104,0,SC-H-104,William Bailey,Republican,R,17929,66.87,1,1,0,civicAPI
-state_house,SC,104,0,SC-H-104,George M Blumenthal,Democratic,D,8869,33.08,2,0,0,civicAPI
-state_house,SC,104,0,SC-H-104,Write-in,Nonpartisan,W,12,0.04,3,0,0,civicAPI
-state_house,SC,105,0,SC-H-105,Kevin Hardee,Republican,R,13302,66.6,1,1,0,civicAPI
-state_house,SC,105,0,SC-H-105,David Wilson,Democratic,D,6647,33.28,2,0,0,civicAPI
-state_house,SC,105,0,SC-H-105,Write-in,Nonpartisan,W,23,0.12,3,0,0,civicAPI
-state_house,SC,106,0,SC-H-106,Val Guest,Republican,R,15018,66.81,1,1,0,civicAPI
-state_house,SC,106,0,SC-H-106,Marisa McCann,Democratic,D,7457,33.17,2,0,0,civicAPI
-state_house,SC,106,0,SC-H-106,Write-in,Nonpartisan,W,3,0.01,3,0,0,civicAPI
-state_house,SC,107,0,SC-H-107,Case Brittain,Republican,R,10820,60.48,1,1,0,civicAPI
-state_house,SC,107,0,SC-H-107,Christine Giguere,Democratic,D,7058,39.45,2,0,0,civicAPI
-state_house,SC,107,0,SC-H-107,Write-in,Nonpartisan,W,13,0.07,3,0,0,civicAPI
-state_house,SC,108,0,SC-H-108,Lee Hewitt,Republican,R,14480,64.01,1,1,0,civicAPI
-state_house,SC,108,0,SC-H-108,Kathy Redwine,Democratic,D,8133,35.95,2,0,0,civicAPI
-state_house,SC,108,0,SC-H-108,Write-in,Nonpartisan,W,8,0.04,3,0,0,civicAPI
-state_house,SC,109,0,SC-H-109,Tiffany Spann-Wilder,Democratic,D,9145,98.14,1,1,0,civicAPI
-state_house,SC,109,0,SC-H-109,Write-in,Nonpartisan,W,173,1.86,2,0,0,civicAPI
-state_house,SC,110,0,SC-H-110,Tom Hartnett,Republican,R,9812,51.54,1,1,0,civicAPI
-state_house,SC,110,0,SC-H-110,KJ Atwood,Democratic,D,9213,48.4,2,0,0,civicAPI
-state_house,SC,110,0,SC-H-110,Write-in,Nonpartisan,W,12,0.06,3,0,0,civicAPI
-state_house,SC,111,0,SC-H-111,Wendell G Gilliard,Democratic,D,11732,98.52,1,1,0,civicAPI
-state_house,SC,111,0,SC-H-111,Write-in,Nonpartisan,W,176,1.48,2,0,0,civicAPI
-state_house,SC,112,0,SC-H-112,Joe Bustos,Republican,R,12200,53.1,1,1,0,civicAPI
-state_house,SC,112,0,SC-H-112,Jenna Arsenault,Democratic,D,10761,46.84,2,0,0,civicAPI
-state_house,SC,112,0,SC-H-112,Write-in,Nonpartisan,W,15,0.07,3,0,0,civicAPI
-state_house,SC,113,0,SC-H-113,Courtney Waters,Democratic,D,8958,98.87,1,1,0,civicAPI
-state_house,SC,113,0,SC-H-113,Write-in,Nonpartisan,W,102,1.13,2,0,0,civicAPI
-state_house,SC,114,0,SC-H-114,Gary Brewer,Republican,R,10740,50.82,1,1,0,civicAPI
-state_house,SC,114,0,SC-H-114,Kelly Hough,Democratic,D,10391,49.17,2,0,0,civicAPI
-state_house,SC,114,0,SC-H-114,Write-in,Nonpartisan,W,3,0.01,3,0,0,civicAPI
-state_house,SC,115,0,SC-H-115,Nick Uricchio,Democratic,D,12983,57.04,1,1,0,civicAPI
-state_house,SC,115,0,SC-H-115,Johnnie Garmon,Republican,R,9763,42.89,2,0,0,civicAPI
-state_house,SC,115,0,SC-H-115,Write-in,Nonpartisan,W,15,0.07,3,0,0,civicAPI
-state_house,SC,116,0,SC-H-116,Clay Middleton,Democratic,D,11632,55.52,1,1,0,civicAPI
-state_house,SC,116,0,SC-H-116,James E Teeple,Republican,R,9309,44.43,2,0,0,civicAPI
-state_house,SC,116,0,SC-H-116,Write-in,Nonpartisan,W,11,0.05,3,0,0,civicAPI
-state_house,SC,117,0,SC-H-117,Jordan Pace,Republican,R,9874,50.84,1,1,0,civicAPI
-state_house,SC,117,0,SC-H-117,Ashley Painter,Democratic,D,9537,49.1,2,0,0,civicAPI
-state_house,SC,117,0,SC-H-117,Write-in,Nonpartisan,W,11,0.06,3,0,0,civicAPI
-state_house,SC,118,0,SC-H-118,Bill Herbkersman,Republican,R,12103,58.41,1,1,0,civicAPI
-state_house,SC,118,0,SC-H-118,Bernie Scolaro,Democratic,D,8605,41.53,2,0,0,civicAPI
-state_house,SC,118,0,SC-H-118,Write-in,Nonpartisan,W,11,0.05,3,0,0,civicAPI
-state_house,SC,119,0,SC-H-119,Leon Stavrinakis,Democratic,D,12579,63.18,1,1,0,civicAPI
-state_house,SC,119,0,SC-H-119,Lee Edwards,Republican,R,7312,36.73,2,0,0,civicAPI
-state_house,SC,119,0,SC-H-119,Write-in,Nonpartisan,W,18,0.09,3,0,0,civicAPI
-state_house,SC,120,0,SC-H-120,Weston Newton,Republican,R,14364,61.79,1,1,0,civicAPI
-state_house,SC,120,0,SC-H-120,Debbie Subera-Wiggin,Democratic,D,8871,38.16,2,0,0,civicAPI
-state_house,SC,120,0,SC-H-120,Write-in,Nonpartisan,W,10,0.04,3,0,0,civicAPI
-state_house,SC,121,0,SC-H-121,Shannon N DeLoach,Democratic,D,8689,62.64,1,1,0,civicAPI
-state_house,SC,121,0,SC-H-121,Shelley Gay Yuhas,Republican,R,5147,37.1,2,0,0,civicAPI
-state_house,SC,121,0,SC-H-121,Write-in,Nonpartisan,W,36,0.26,3,0,0,civicAPI
-state_house,SC,122,0,SC-H-122,Korey Williams,Democratic,D,9750,52.08,1,1,0,civicAPI
-state_house,SC,122,0,SC-H-122,Bill Hager,Republican,R,8960,47.86,2,0,0,civicAPI
-state_house,SC,122,0,SC-H-122,Write-in,Nonpartisan,W,11,0.06,3,0,0,civicAPI
-state_house,SC,123,0,SC-H-123,Jeff Bradley,Republican,R,12237,55.92,1,1,0,civicAPI
-state_house,SC,123,0,SC-H-123,Ann C Shippy,Democratic,D,9642,44.06,2,0,0,civicAPI
-state_house,SC,123,0,SC-H-123,Write-in,Nonpartisan,W,6,0.03,3,0,0,civicAPI
-state_house,SC,124,0,SC-H-124,Shannon Erickson,Republican,R,9956,57.76,1,1,0,civicAPI
-state_house,SC,124,0,SC-H-124,Shauna Bishop,Democratic,D,7265,42.15,2,0,0,civicAPI
-state_house,SC,124,0,SC-H-124,Write-in,Nonpartisan,W,17,0.1,3,0,0,civicAPI
+state_house,SC,1,0,SC-H-1,Bill Whitmire,REP,R,13846,75.86,1,1,0,South Carolina Election Commission
+state_house,SC,1,0,SC-H-1,Jasmine Williams,DEM,D,4385,24.03,2,0,0,South Carolina Election Commission
+state_house,SC,1,0,SC-H-1,Write-In,,W,20,0.11,3,,,South Carolina Election Commission
+state_house,SC,2,0,SC-H-2,Adam Duncan,REP,R,10982,65.93,1,1,0,South Carolina Election Commission
+state_house,SC,2,0,SC-H-2,Candace Schutt,DEM,D,5456,32.76,2,0,0,South Carolina Election Commission
+state_house,SC,2,0,SC-H-2,Christopher Damian Des Marais,LIB,L,207,1.24,3,0,0,South Carolina Election Commission
+state_house,SC,2,0,SC-H-2,Write-In,,W,11,0.07,4,,,South Carolina Election Commission
+state_house,SC,3,0,SC-H-3,Phillip Bowers,REP,R,5614,54.16,1,1,0,South Carolina Election Commission
+state_house,SC,3,0,SC-H-3,Claiborne Linvill,DEM,D,4743,45.76,2,0,0,South Carolina Election Commission
+state_house,SC,3,0,SC-H-3,Write-In,,W,8,0.08,3,,,South Carolina Election Commission
+state_house,SC,4,0,SC-H-4,Clay Counts,REP,R,12241,80.55,1,1,0,South Carolina Election Commission
+state_house,SC,4,0,SC-H-4,Derrick Kruse,DEM,D,2934,19.31,2,0,0,South Carolina Election Commission
+state_house,SC,4,0,SC-H-4,Write-In,,W,21,0.14,3,,,South Carolina Election Commission
+state_house,SC,5,0,SC-H-5,Neal Collins,REP,R,10623,68.65,1,1,0,South Carolina Election Commission
+state_house,SC,5,0,SC-H-5,David F Jones,DEM,D,4784,30.91,2,0,0,South Carolina Election Commission
+state_house,SC,5,0,SC-H-5,Write-In,,W,68,0.44,3,,,South Carolina Election Commission
+state_house,SC,6,0,SC-H-6,April Cromer,REP,R,11408,65.6,1,1,0,South Carolina Election Commission
+state_house,SC,6,0,SC-H-6,Jennifer Bachner,DEM,D,5924,34.06,2,0,0,South Carolina Election Commission
+state_house,SC,6,0,SC-H-6,Write-In,,W,59,0.34,3,,,South Carolina Election Commission
+state_house,SC,7,0,SC-H-7,Lee Gilreath,REP,R,8649,67.43,1,1,0,South Carolina Election Commission
+state_house,SC,7,0,SC-H-7,Elizabeth W Cooley,DEM,D,4166,32.48,2,0,0,South Carolina Election Commission
+state_house,SC,7,0,SC-H-7,Write-In,,W,12,0.09,3,,,South Carolina Election Commission
+state_house,SC,8,0,SC-H-8,Don Chapman,REP,R,9710,64.97,1,1,0,South Carolina Election Commission
+state_house,SC,8,0,SC-H-8,Demetrius Carson,DEM,D,5214,34.89,2,0,0,South Carolina Election Commission
+state_house,SC,8,0,SC-H-8,Write-In,,W,22,0.15,3,,,South Carolina Election Commission
+state_house,SC,9,0,SC-H-9,Blake Sanders,REP,R,9006,65.56,1,1,0,South Carolina Election Commission
+state_house,SC,9,0,SC-H-9,Johnny Estrich,DEM,D,4716,34.33,2,0,0,South Carolina Election Commission
+state_house,SC,9,0,SC-H-9,Write-In,,W,15,0.11,3,,,South Carolina Election Commission
+state_house,SC,10,0,SC-H-10,Thomas Beach,REP,R,9871,66.06,1,1,0,South Carolina Election Commission
+state_house,SC,10,0,SC-H-10,Thomas Stewart,DEM,D,5047,33.78,2,0,0,South Carolina Election Commission
+state_house,SC,10,0,SC-H-10,Write-In,,W,24,0.16,3,,,South Carolina Election Commission
+state_house,SC,11,0,SC-H-11,Craig Gagnon,REP,R,9268,67.08,1,1,0,South Carolina Election Commission
+state_house,SC,11,0,SC-H-11,Jessica Beasley,DEM,D,4408,31.9,2,0,0,South Carolina Election Commission
+state_house,SC,11,0,SC-H-11,E T Stone,UNC,O,138,1.0,3,0,0,South Carolina Election Commission
+state_house,SC,11,0,SC-H-11,Write-In,,W,3,0.02,4,,,South Carolina Election Commission
+state_house,SC,12,0,SC-H-12,Jumelle Brooks,DEM,D,7555,54.89,1,1,0,South Carolina Election Commission
+state_house,SC,12,0,SC-H-12,Daniel Gibson,REP,R,6204,45.08,2,0,0,South Carolina Election Commission
+state_house,SC,12,0,SC-H-12,Write-In,,W,4,0.03,3,,,South Carolina Election Commission
+state_house,SC,13,0,SC-H-13,John McCravy,REP,R,11240,66.86,1,1,0,South Carolina Election Commission
+state_house,SC,13,0,SC-H-13,C Rauch Wise,DEM,D,5554,33.04,2,0,0,South Carolina Election Commission
+state_house,SC,13,0,SC-H-13,Write-In,,W,16,0.1,3,,,South Carolina Election Commission
+state_house,SC,14,0,SC-H-14,Rick Shealy,REP,R,8961,61.99,1,1,0,South Carolina Election Commission
+state_house,SC,14,0,SC-H-14,Michanna Tate,DEM,D,5324,36.83,2,0,0,South Carolina Election Commission
+state_house,SC,14,0,SC-H-14,Henry D Jones,UNC,O,156,1.08,3,0,0,South Carolina Election Commission
+state_house,SC,14,0,SC-H-14,Write-In,,W,15,0.1,4,,,South Carolina Election Commission
+state_house,SC,15,0,SC-H-15,JA Moore,DEM,D,6464,66.89,1,1,0,South Carolina Election Commission
+state_house,SC,15,0,SC-H-15,Heather Hickman,REP,R,2993,30.97,2,0,0,South Carolina Election Commission
+state_house,SC,15,0,SC-H-15,Melissa Couture,LIB,L,202,2.09,3,0,0,South Carolina Election Commission
+state_house,SC,15,0,SC-H-15,Write-In,,W,5,0.05,4,,,South Carolina Election Commission
+state_house,SC,16,0,SC-H-16,Mark N Willis,REP,R,10772,58.19,1,1,0,South Carolina Election Commission
+state_house,SC,16,0,SC-H-16,Lynn Ramirez,DEM,D,7726,41.74,2,0,0,South Carolina Election Commission
+state_house,SC,16,0,SC-H-16,Write-In,,W,13,0.07,3,,,South Carolina Election Commission
+state_house,SC,17,0,SC-H-17,Mike Burns,REP,R,13659,71.61,1,1,0,South Carolina Election Commission
+state_house,SC,17,0,SC-H-17,Rich Nicoloff,DEM,D,5399,28.3,2,0,0,South Carolina Election Commission
+state_house,SC,17,0,SC-H-17,Write-In,,W,17,0.09,3,,,South Carolina Election Commission
+state_house,SC,18,0,SC-H-18,Alan Morgan,REP,R,11766,66.92,1,1,0,South Carolina Election Commission
+state_house,SC,18,0,SC-H-18,Virginia B Maclure,DEM,D,5809,33.04,2,0,0,South Carolina Election Commission
+state_house,SC,18,0,SC-H-18,Write-In,,W,6,0.03,3,,,South Carolina Election Commission
+state_house,SC,19,0,SC-H-19,Patrick B Haddon,REP,R,6754,51.38,1,1,0,South Carolina Election Commission
+state_house,SC,19,0,SC-H-19,Rachel Smith,DEM,D,6384,48.57,2,0,0,South Carolina Election Commission
+state_house,SC,19,0,SC-H-19,Write-In,,W,7,0.05,3,,,South Carolina Election Commission
+state_house,SC,20,0,SC-H-20,Stephen D Frank,REP,R,9866,60.92,1,1,0,South Carolina Election Commission
+state_house,SC,20,0,SC-H-20,Polly Elbertse,DEM,D,6309,38.95,2,0,0,South Carolina Election Commission
+state_house,SC,20,0,SC-H-20,Write-In,,W,21,0.13,3,,,South Carolina Election Commission
+state_house,SC,21,0,SC-H-21,Dianne Mitchell,REP,R,11579,60.84,1,1,0,South Carolina Election Commission
+state_house,SC,21,0,SC-H-21,Dexter Reaves,DEM,D,7438,39.08,2,0,0,South Carolina Election Commission
+state_house,SC,21,0,SC-H-21,Write-In,,W,16,0.08,3,,,South Carolina Election Commission
+state_house,SC,22,0,SC-H-22,Paul Wickensimer,REP,R,9863,52.58,1,1,0,South Carolina Election Commission
+state_house,SC,22,0,SC-H-22,Josh Kendrick,DEM,D,8880,47.34,2,0,0,South Carolina Election Commission
+state_house,SC,22,0,SC-H-22,Write-In,,W,16,0.09,3,,,South Carolina Election Commission
+state_house,SC,23,0,SC-H-23,Chandra Dillard,DEM,D,9271,98.4,1,1,0,South Carolina Election Commission
+state_house,SC,23,0,SC-H-23,Write-In,,W,151,1.6,2,,,South Carolina Election Commission
+state_house,SC,24,0,SC-H-24,Bruce Bannister,REP,R,10199,51.99,1,1,0,South Carolina Election Commission
+state_house,SC,24,0,SC-H-24,Caroline Avinger,DEM,D,9401,47.93,2,0,0,South Carolina Election Commission
+state_house,SC,24,0,SC-H-24,Write-In,,W,16,0.08,3,,,South Carolina Election Commission
+state_house,SC,25,0,SC-H-25,Wendell Jones,DEM,D,10927,98.41,1,1,0,South Carolina Election Commission
+state_house,SC,25,0,SC-H-25,Write-In,,W,177,1.59,2,,,South Carolina Election Commission
+state_house,SC,26,0,SC-H-26,David W Martin,REP,R,9740,54.24,1,1,0,South Carolina Election Commission
+state_house,SC,26,0,SC-H-26,Jenny Desch,DEM,D,8083,45.01,2,0,0,South Carolina Election Commission
+state_house,SC,26,0,SC-H-26,Kiral Mace,WRK,O,116,0.65,3,0,0,South Carolina Election Commission
+state_house,SC,26,0,SC-H-26,Write-In,,W,19,0.11,4,,,South Carolina Election Commission
+state_house,SC,27,0,SC-H-27,David Vaughan,REP,R,9139,50.08,1,1,0,South Carolina Election Commission
+state_house,SC,27,0,SC-H-27,John MacCarthy,DEM,D,9101,49.87,2,0,0,South Carolina Election Commission
+state_house,SC,27,0,SC-H-27,Write-In,,W,8,0.04,3,,,South Carolina Election Commission
+state_house,SC,28,0,SC-H-28,Chris Huff,REP,R,10515,53.91,1,1,0,South Carolina Election Commission
+state_house,SC,28,0,SC-H-28,Alan G Buckalew,DEM,D,8973,46.01,2,0,0,South Carolina Election Commission
+state_house,SC,28,0,SC-H-28,Write-In,,W,15,0.08,3,,,South Carolina Election Commission
+state_house,SC,29,0,SC-H-29,Dennis Moss,REP,R,9389,68.66,1,1,0,South Carolina Election Commission
+state_house,SC,29,0,SC-H-29,Marina Franco,DEM,D,4266,31.2,2,0,0,South Carolina Election Commission
+state_house,SC,29,0,SC-H-29,Write-In,,W,20,0.15,3,,,South Carolina Election Commission
+state_house,SC,30,0,SC-H-30,Brian Lawson,REP,R,9089,70.39,1,1,0,South Carolina Election Commission
+state_house,SC,30,0,SC-H-30,Stephanie Holstein,DEM,D,3814,29.54,2,0,0,South Carolina Election Commission
+state_house,SC,30,0,SC-H-30,Write-In,,W,10,0.08,3,,,South Carolina Election Commission
+state_house,SC,31,0,SC-H-31,Rosalyn Henderson-Myers,DEM,D,7675,89.72,1,1,0,South Carolina Election Commission
+state_house,SC,31,0,SC-H-31,James A Jones Sr,UNC,O,834,9.75,2,0,0,South Carolina Election Commission
+state_house,SC,31,0,SC-H-31,Write-In,,W,45,0.53,3,,,South Carolina Election Commission
+state_house,SC,32,0,SC-H-32,Scott Montgomery,REP,R,7527,53.88,1,1,0,South Carolina Election Commission
+state_house,SC,32,0,SC-H-32,Irene Benson,DEM,D,6433,46.05,2,0,0,South Carolina Election Commission
+state_house,SC,32,0,SC-H-32,Write-In,,W,11,0.08,3,,,South Carolina Election Commission
+state_house,SC,33,0,SC-H-33,Travis A Moore,REP,R,10008,61.88,1,1,0,South Carolina Election Commission
+state_house,SC,33,0,SC-H-33,Clemson G Turregano,DEM,D,6142,37.98,2,0,0,South Carolina Election Commission
+state_house,SC,33,0,SC-H-33,Write-In,,W,23,0.14,3,,,South Carolina Election Commission
+state_house,SC,34,0,SC-H-34,Sarita Edgerton,REP,R,9211,52.02,1,1,0,South Carolina Election Commission
+state_house,SC,34,0,SC-H-34,Saville Williams,DEM,D,8487,47.93,2,0,0,South Carolina Election Commission
+state_house,SC,34,0,SC-H-34,Write-In,,W,9,0.05,3,,,South Carolina Election Commission
+state_house,SC,35,0,SC-H-35,Bill Chumley,REP,R,12124,60.57,1,1,0,South Carolina Election Commission
+state_house,SC,35,0,SC-H-35,Tatiana Skipper,DEM,D,7873,39.33,2,0,0,South Carolina Election Commission
+state_house,SC,35,0,SC-H-35,Write-In,,W,21,0.1,3,,,South Carolina Election Commission
+state_house,SC,36,0,SC-H-36,Rob Harris,REP,R,7989,55.7,1,1,0,South Carolina Election Commission
+state_house,SC,36,0,SC-H-36,Virginia McLean,DEM,D,6337,44.18,2,0,0,South Carolina Election Commission
+state_house,SC,36,0,SC-H-36,Write-In,,W,17,0.12,3,,,South Carolina Election Commission
+state_house,SC,37,0,SC-H-37,Steven Long,REP,R,8316,56.22,1,1,0,South Carolina Election Commission
+state_house,SC,37,0,SC-H-37,Seth Sauer-Hart,DEM,D,6458,43.66,2,0,0,South Carolina Election Commission
+state_house,SC,37,0,SC-H-37,Write-In,,W,19,0.13,3,,,South Carolina Election Commission
+state_house,SC,38,0,SC-H-38,Josiah Magnuson,REP,R,12167,73.57,1,1,0,South Carolina Election Commission
+state_house,SC,38,0,SC-H-38,Tammy Hahn,DEM,D,4350,26.3,2,0,0,South Carolina Election Commission
+state_house,SC,38,0,SC-H-38,Write-In,,W,22,0.13,3,,,South Carolina Election Commission
+state_house,SC,39,0,SC-H-39,Cally R Cal Forrest,REP,R,11586,72.93,1,1,0,South Carolina Election Commission
+state_house,SC,39,0,SC-H-39,Sherman Lott,DEM,D,4284,26.97,2,0,0,South Carolina Election Commission
+state_house,SC,39,0,SC-H-39,Write-In,,W,16,0.1,3,,,South Carolina Election Commission
+state_house,SC,40,0,SC-H-40,Joe White,REP,R,9756,61.75,1,1,0,South Carolina Election Commission
+state_house,SC,40,0,SC-H-40,Engle Thompson,DEM,D,6026,38.14,2,0,0,South Carolina Election Commission
+state_house,SC,40,0,SC-H-40,Write-In,,W,16,0.1,3,,,South Carolina Election Commission
+state_house,SC,41,0,SC-H-41,Annie E McDaniel,DEM,D,11719,66.3,1,1,0,South Carolina Election Commission
+state_house,SC,41,0,SC-H-41,Tibi Czentye,REP,R,5948,33.65,2,0,0,South Carolina Election Commission
+state_house,SC,41,0,SC-H-41,Write-In,,W,9,0.05,3,,,South Carolina Election Commission
+state_house,SC,42,0,SC-H-42,Doug Gilliam,REP,R,7725,59.59,1,1,0,South Carolina Election Commission
+state_house,SC,42,0,SC-H-42,Robert Larry Williams,DEM,D,5217,40.25,2,0,0,South Carolina Election Commission
+state_house,SC,42,0,SC-H-42,Write-In,,W,21,0.16,3,,,South Carolina Election Commission
+state_house,SC,43,0,SC-H-43,Randy Ligon,REP,R,9454,61.98,1,1,0,South Carolina Election Commission
+state_house,SC,43,0,SC-H-43,Alex Clark,DEM,D,5780,37.89,2,0,0,South Carolina Election Commission
+state_house,SC,43,0,SC-H-43,Write-In,,W,19,0.12,3,,,South Carolina Election Commission
+state_house,SC,44,0,SC-H-44,Mike Neese,REP,R,12063,52.46,1,1,0,South Carolina Election Commission
+state_house,SC,44,0,SC-H-44,Katie Crosby,DEM,D,10909,47.44,2,0,0,South Carolina Election Commission
+state_house,SC,44,0,SC-H-44,Write-In,,W,23,0.1,3,,,South Carolina Election Commission
+state_house,SC,45,0,SC-H-45,Brandon Newton,REP,R,8733,56.18,1,1,0,South Carolina Election Commission
+state_house,SC,45,0,SC-H-45,Nicole Ventour,DEM,D,6784,43.64,2,0,0,South Carolina Election Commission
+state_house,SC,45,0,SC-H-45,Write-In,,W,29,0.19,3,,,South Carolina Election Commission
+state_house,SC,46,0,SC-H-46,Heath Sessions,REP,R,8769,51.66,1,1,0,South Carolina Election Commission
+state_house,SC,46,0,SC-H-46,Omar L McCrorey,DEM,D,8192,48.26,2,0,0,South Carolina Election Commission
+state_house,SC,46,0,SC-H-46,Write-In,,W,13,0.08,3,,,South Carolina Election Commission
+state_house,SC,47,0,SC-H-47,Tommy Pope,REP,R,11599,66.47,1,1,0,South Carolina Election Commission
+state_house,SC,47,0,SC-H-47,Justin Bennett,DEM,D,5827,33.39,2,0,0,South Carolina Election Commission
+state_house,SC,47,0,SC-H-47,Write-In,,W,23,0.13,3,,,South Carolina Election Commission
+state_house,SC,48,0,SC-H-48,Brandon Guffey,REP,R,10835,56.82,1,1,0,South Carolina Election Commission
+state_house,SC,48,0,SC-H-48,Rustin Terry,DEM,D,8213,43.07,2,0,0,South Carolina Election Commission
+state_house,SC,48,0,SC-H-48,Write-In,,W,21,0.11,3,,,South Carolina Election Commission
+state_house,SC,49,0,SC-H-49,John R King,DEM,D,10962,98.01,1,1,0,South Carolina Election Commission
+state_house,SC,49,0,SC-H-49,Write-In,,W,223,1.99,2,,,South Carolina Election Commission
+state_house,SC,50,0,SC-H-50,Keishan M Scott,DEM,D,9540,62.18,1,1,0,South Carolina Election Commission
+state_house,SC,50,0,SC-H-50,William Oden,REP,R,5793,37.76,2,0,0,South Carolina Election Commission
+state_house,SC,50,0,SC-H-50,Write-In,,W,9,0.06,3,,,South Carolina Election Commission
+state_house,SC,51,0,SC-H-51,David Weeks,DEM,D,10123,98.55,1,1,0,South Carolina Election Commission
+state_house,SC,51,0,SC-H-51,Write-In,,W,149,1.45,2,,,South Carolina Election Commission
+state_house,SC,52,0,SC-H-52,Malcolm Taylor,DEM,D,13106,97.97,1,1,0,South Carolina Election Commission
+state_house,SC,52,0,SC-H-52,Write-In,,W,272,2.03,2,,,South Carolina Election Commission
+state_house,SC,53,0,SC-H-53,Richard Richie Yow,REP,R,8770,65.74,1,1,0,South Carolina Election Commission
+state_house,SC,53,0,SC-H-53,Bruce M Wallace,DEM,D,4562,34.2,2,0,0,South Carolina Election Commission
+state_house,SC,53,0,SC-H-53,Write-In,,W,8,0.06,3,,,South Carolina Election Commission
+state_house,SC,54,0,SC-H-54,Jason Luck,DEM,D,9128,98.49,1,1,0,South Carolina Election Commission
+state_house,SC,54,0,SC-H-54,Write-In,,W,140,1.51,2,,,South Carolina Election Commission
+state_house,SC,55,0,SC-H-55,Jackie Hayes,DEM,D,9434,98.25,1,1,0,South Carolina Election Commission
+state_house,SC,55,0,SC-H-55,Write-In,,W,168,1.75,2,,,South Carolina Election Commission
+state_house,SC,56,0,SC-H-56,Tim McGinnis,REP,R,13919,63.23,1,1,0,South Carolina Election Commission
+state_house,SC,56,0,SC-H-56,Jacqualyn Meadow,DEM,D,8081,36.71,2,0,0,South Carolina Election Commission
+state_house,SC,56,0,SC-H-56,Write-In,,W,12,0.05,3,,,South Carolina Election Commission
+state_house,SC,57,0,SC-H-57,Cynthia O Ford,DEM,D,8120,51.6,1,1,0,South Carolina Election Commission
+state_house,SC,57,0,SC-H-57,Lucas Atkinson,REP,R,7610,48.36,2,0,0,South Carolina Election Commission
+state_house,SC,57,0,SC-H-57,Write-In,,W,5,0.03,3,,,South Carolina Election Commission
+state_house,SC,58,0,SC-H-58,Jeff Johnson,REP,R,10149,65.22,1,1,0,South Carolina Election Commission
+state_house,SC,58,0,SC-H-58,Sha-Ron E Jones,DEM,D,5397,34.69,2,0,0,South Carolina Election Commission
+state_house,SC,58,0,SC-H-58,Write-In,,W,14,0.09,3,,,South Carolina Election Commission
+state_house,SC,59,0,SC-H-59,Terry Alexander,DEM,D,9435,97.91,1,1,0,South Carolina Election Commission
+state_house,SC,59,0,SC-H-59,Write-In,,W,201,2.09,2,,,South Carolina Election Commission
+state_house,SC,60,0,SC-H-60,Phillip Lowe,REP,R,8228,54.07,1,1,0,South Carolina Election Commission
+state_house,SC,60,0,SC-H-60,Adrian Peguese Carter,DEM,D,6969,45.8,2,0,0,South Carolina Election Commission
+state_house,SC,60,0,SC-H-60,Write-In,,W,19,0.12,3,,,South Carolina Election Commission
+state_house,SC,61,0,SC-H-61,Carla Schuessler,REP,R,8343,59.08,1,1,0,South Carolina Election Commission
+state_house,SC,61,0,SC-H-61,Carol Goodman,DEM,D,5540,39.23,2,0,0,South Carolina Election Commission
+state_house,SC,61,0,SC-H-61,David Herndon,LIB,L,229,1.62,3,0,0,South Carolina Election Commission
+state_house,SC,61,0,SC-H-61,Write-In,,W,9,0.06,4,,,South Carolina Election Commission
+state_house,SC,62,0,SC-H-62,Robert Williams,DEM,D,9858,97.8,1,1,0,South Carolina Election Commission
+state_house,SC,62,0,SC-H-62,Write-In,,W,222,2.2,2,,,South Carolina Election Commission
+state_house,SC,63,0,SC-H-63,Jay Jordan,REP,R,8856,56.63,1,1,0,South Carolina Election Commission
+state_house,SC,63,0,SC-H-63,Kory Haskins,DEM,D,6770,43.29,2,0,0,South Carolina Election Commission
+state_house,SC,63,0,SC-H-63,Write-In,,W,11,0.07,3,,,South Carolina Election Commission
+state_house,SC,64,0,SC-H-64,Michele Demery,DEM,D,8683,52.06,1,1,0,South Carolina Election Commission
+state_house,SC,64,0,SC-H-64,Fawn Pedalino,REP,R,7976,47.82,2,0,0,South Carolina Election Commission
+state_house,SC,64,0,SC-H-64,Write-In,,W,20,0.12,3,,,South Carolina Election Commission
+state_house,SC,65,0,SC-H-65,Cody T Mitchell,REP,R,9636,67.78,1,1,0,South Carolina Election Commission
+state_house,SC,65,0,SC-H-65,Tanisha Baskin,DEM,D,4566,32.12,2,0,0,South Carolina Election Commission
+state_house,SC,65,0,SC-H-65,Write-In,,W,15,0.11,3,,,South Carolina Election Commission
+state_house,SC,66,0,SC-H-66,Heather Hart,DEM,D,9059,51.28,1,1,0,South Carolina Election Commission
+state_house,SC,66,0,SC-H-66,Jackie Terribile,REP,R,8591,48.63,2,0,0,South Carolina Election Commission
+state_house,SC,66,0,SC-H-66,Write-In,,W,15,0.08,3,,,South Carolina Election Commission
+state_house,SC,67,0,SC-H-67,Murrell Smith,REP,R,8585,55.86,1,1,0,South Carolina Election Commission
+state_house,SC,67,0,SC-H-67,Lisa Davey,DEM,D,6773,44.07,2,0,0,South Carolina Election Commission
+state_house,SC,67,0,SC-H-67,Write-In,,W,12,0.08,3,,,South Carolina Election Commission
+state_house,SC,68,0,SC-H-68,Heather Ammons Crawford,REP,R,11379,63.05,1,1,0,South Carolina Election Commission
+state_house,SC,68,0,SC-H-68,Judy Davies,DEM,D,6659,36.89,2,0,0,South Carolina Election Commission
+state_house,SC,68,0,SC-H-68,Write-In,,W,11,0.06,3,,,South Carolina Election Commission
+state_house,SC,69,0,SC-H-69,Chris Wooten,REP,R,9951,60.42,1,1,0,South Carolina Election Commission
+state_house,SC,69,0,SC-H-69,Emery K Chaplin,DEM,D,6085,36.95,2,0,0,South Carolina Election Commission
+state_house,SC,69,0,SC-H-69,Allen Broadus,LIB,L,419,2.54,3,0,0,South Carolina Election Commission
+state_house,SC,69,0,SC-H-69,Write-In,,W,14,0.09,4,,,South Carolina Election Commission
+state_house,SC,70,0,SC-H-70,Robert Reese,DEM,D,12629,97.74,1,1,0,South Carolina Election Commission
+state_house,SC,70,0,SC-H-70,Write-In,,W,292,2.26,2,,,South Carolina Election Commission
+state_house,SC,71,0,SC-H-71,Nathan Ballentine,REP,R,11839,58.17,1,1,0,South Carolina Election Commission
+state_house,SC,71,0,SC-H-71,Julie Zimmerman,DEM,D,8494,41.73,2,0,0,South Carolina Election Commission
+state_house,SC,71,0,SC-H-71,Write-In,,W,20,0.1,3,,,South Carolina Election Commission
+state_house,SC,72,0,SC-H-72,Seth Rose,DEM,D,6933,83.39,1,1,0,South Carolina Election Commission
+state_house,SC,72,0,SC-H-72,Dixie Kvatek,REP,R,1370,16.48,2,0,0,South Carolina Election Commission
+state_house,SC,72,0,SC-H-72,Write-In,,W,11,0.13,3,,,South Carolina Election Commission
+state_house,SC,73,0,SC-H-73,Chris Hart,DEM,D,10405,81.17,1,1,0,South Carolina Election Commission
+state_house,SC,73,0,SC-H-73,Allen Robertson,REP,R,2410,18.8,2,0,0,South Carolina Election Commission
+state_house,SC,73,0,SC-H-73,Write-In,,W,3,0.02,3,,,South Carolina Election Commission
+state_house,SC,74,0,SC-H-74,J Todd Rutherford,DEM,D,10980,85.31,1,1,0,South Carolina Election Commission
+state_house,SC,74,0,SC-H-74,Collin Shelton,REP,R,1873,14.55,2,0,0,South Carolina Election Commission
+state_house,SC,74,0,SC-H-74,Write-In,,W,18,0.14,3,,,South Carolina Election Commission
+state_house,SC,75,0,SC-H-75,Heather Bauer,DEM,D,9199,56.99,1,1,0,South Carolina Election Commission
+state_house,SC,75,0,SC-H-75,Tracy Robins,REP,R,6688,41.43,2,0,0,South Carolina Election Commission
+state_house,SC,75,0,SC-H-75,Joshua Parks,LIB,L,249,1.54,3,0,0,South Carolina Election Commission
+state_house,SC,75,0,SC-H-75,Write-In,,W,6,0.04,4,,,South Carolina Election Commission
+state_house,SC,76,0,SC-H-76,Leon Howard,DEM,D,12502,99.44,1,1,0,South Carolina Election Commission
+state_house,SC,76,0,SC-H-76,Write-In,,W,71,0.56,2,,,South Carolina Election Commission
+state_house,SC,77,0,SC-H-77,Kambrell Houston Garvin,DEM,D,17164,99.02,1,1,0,South Carolina Election Commission
+state_house,SC,77,0,SC-H-77,Write-In,,W,170,0.98,2,,,South Carolina Election Commission
+state_house,SC,78,0,SC-H-78,Beth Bernstein,DEM,D,12979,71.66,1,1,0,South Carolina Election Commission
+state_house,SC,78,0,SC-H-78,Sonia Pollard,REP,R,4821,26.62,2,0,0,South Carolina Election Commission
+state_house,SC,78,0,SC-H-78,Angelo Joyner Sr,LIB,L,304,1.68,3,0,0,South Carolina Election Commission
+state_house,SC,78,0,SC-H-78,Write-In,,W,8,0.04,4,,,South Carolina Election Commission
+state_house,SC,79,0,SC-H-79,Hamilton R Grant,DEM,D,15424,99.21,1,1,0,South Carolina Election Commission
+state_house,SC,79,0,SC-H-79,Write-In,,W,123,0.79,2,,,South Carolina Election Commission
+state_house,SC,80,0,SC-H-80,Kathy Landing,REP,R,11207,57.01,1,1,0,South Carolina Election Commission
+state_house,SC,80,0,SC-H-80,Benjamin E Brown,DEM,D,8437,42.92,2,0,0,South Carolina Election Commission
+state_house,SC,80,0,SC-H-80,Write-In,,W,13,0.07,3,,,South Carolina Election Commission
+state_house,SC,81,0,SC-H-81,Charles Hartz,REP,R,12127,60.2,1,1,0,South Carolina Election Commission
+state_house,SC,81,0,SC-H-81,Pete Swales,DEM,D,7996,39.69,2,0,0,South Carolina Election Commission
+state_house,SC,81,0,SC-H-81,Write-In,,W,21,0.1,3,,,South Carolina Election Commission
+state_house,SC,82,0,SC-H-82,William Bill Clyburn,DEM,D,8549,61.95,1,1,0,South Carolina Election Commission
+state_house,SC,82,0,SC-H-82,Suzy Spurgeon,REP,R,5234,37.93,2,0,0,South Carolina Election Commission
+state_house,SC,82,0,SC-H-82,Write-In,,W,16,0.12,3,,,South Carolina Election Commission
+state_house,SC,83,0,SC-H-83,Bill Hixon,REP,R,10426,63.97,1,1,0,South Carolina Election Commission
+state_house,SC,83,0,SC-H-83,Jason Payne,DEM,D,5853,35.91,2,0,0,South Carolina Election Commission
+state_house,SC,83,0,SC-H-83,Write-In,,W,18,0.11,3,,,South Carolina Election Commission
+state_house,SC,84,0,SC-H-84,Melissa Oremus,REP,R,8456,54.77,1,1,0,South Carolina Election Commission
+state_house,SC,84,0,SC-H-84,Darnell Holston,DEM,D,6966,45.12,2,0,0,South Carolina Election Commission
+state_house,SC,84,0,SC-H-84,Write-In,,W,18,0.12,3,,,South Carolina Election Commission
+state_house,SC,85,0,SC-H-85,Jay Kilmartin,REP,R,11209,55.87,1,1,0,South Carolina Election Commission
+state_house,SC,85,0,SC-H-85,Steven J Asbill Jr,DEM,D,8824,43.98,2,0,0,South Carolina Election Commission
+state_house,SC,85,0,SC-H-85,Write-In,,W,29,0.14,3,,,South Carolina Election Commission
+state_house,SC,86,0,SC-H-86,Tommy Paradise,REP,R,9189,60.07,1,1,0,South Carolina Election Commission
+state_house,SC,86,0,SC-H-86,Malcolm Green,DEM,D,6096,39.85,2,0,0,South Carolina Election Commission
+state_house,SC,86,0,SC-H-86,Write-In,,W,12,0.08,3,,,South Carolina Election Commission
+state_house,SC,87,0,SC-H-87,Paula Rawl Calhoon,REP,R,13010,68.83,1,1,0,South Carolina Election Commission
+state_house,SC,87,0,SC-H-87,Reid Beaman,DEM,D,5877,31.09,2,0,0,South Carolina Election Commission
+state_house,SC,87,0,SC-H-87,Write-In,,W,16,0.08,3,,,South Carolina Election Commission
+state_house,SC,88,0,SC-H-88,John Lastinger,REP,R,7926,57.05,1,1,0,South Carolina Election Commission
+state_house,SC,88,0,SC-H-88,Jeremy Jones,DEM,D,5957,42.88,2,0,0,South Carolina Election Commission
+state_house,SC,88,0,SC-H-88,Write-In,,W,9,0.06,3,,,South Carolina Election Commission
+state_house,SC,89,0,SC-H-89,Joe Madge,DEM,D,7263,50.33,1,1,0,South Carolina Election Commission
+state_house,SC,89,0,SC-H-89,Micah Caskey,REP,R,7156,49.59,2,0,0,South Carolina Election Commission
+state_house,SC,89,0,SC-H-89,Write-In,,W,11,0.08,3,,,South Carolina Election Commission
+state_house,SC,90,0,SC-H-90,Justin Bamberg,DEM,D,10830,97.62,1,1,0,South Carolina Election Commission
+state_house,SC,90,0,SC-H-90,Write-In,,W,264,2.38,2,,,South Carolina Election Commission
+state_house,SC,91,0,SC-H-91,Lonnie Hosey,DEM,D,8476,58.0,1,1,0,South Carolina Election Commission
+state_house,SC,91,0,SC-H-91,Daniel Alexander,REP,R,6129,41.94,2,0,0,South Carolina Election Commission
+state_house,SC,91,0,SC-H-91,Write-In,,W,10,0.07,3,,,South Carolina Election Commission
+state_house,SC,92,0,SC-H-92,Byron Walters,DEM,D,7461,51.58,1,1,0,South Carolina Election Commission
+state_house,SC,92,0,SC-H-92,Brandon Cox,REP,R,7001,48.4,2,0,0,South Carolina Election Commission
+state_house,SC,92,0,SC-H-92,Write-In,,W,3,0.02,3,,,South Carolina Election Commission
+state_house,SC,93,0,SC-H-93,Jerry Govan,DEM,D,9910,59.95,1,1,0,South Carolina Election Commission
+state_house,SC,93,0,SC-H-93,Alex Morris,REP,R,6617,40.03,2,0,0,South Carolina Election Commission
+state_house,SC,93,0,SC-H-93,Write-In,,W,4,0.02,3,,,South Carolina Election Commission
+state_house,SC,94,0,SC-H-94,Gil Gatch,REP,R,7696,50.52,1,1,0,South Carolina Election Commission
+state_house,SC,94,0,SC-H-94,Sally Hebert,DEM,D,7519,49.35,2,0,0,South Carolina Election Commission
+state_house,SC,94,0,SC-H-94,Write-In,,W,20,0.13,3,,,South Carolina Election Commission
+state_house,SC,95,0,SC-H-95,Gilda Cobb-Hunter,DEM,D,11163,97.89,1,1,0,South Carolina Election Commission
+state_house,SC,95,0,SC-H-95,Write-In,,W,241,2.11,2,,,South Carolina Election Commission
+state_house,SC,96,0,SC-H-96,Hunter Hackett,REP,R,7618,59.78,1,1,0,South Carolina Election Commission
+state_house,SC,96,0,SC-H-96,Vivian Elston,DEM,D,5120,40.18,2,0,0,South Carolina Election Commission
+state_house,SC,96,0,SC-H-96,Write-In,,W,6,0.05,3,,,South Carolina Election Commission
+state_house,SC,97,0,SC-H-97,Robby Robbins,REP,R,9620,58.77,1,1,0,South Carolina Election Commission
+state_house,SC,97,0,SC-H-97,Cathy A Jaggars,DEM,D,6745,41.2,2,0,0,South Carolina Election Commission
+state_house,SC,97,0,SC-H-97,Write-In,,W,5,0.03,3,,,South Carolina Election Commission
+state_house,SC,98,0,SC-H-98,Sonja Ogletree Satani,DEM,D,7691,54.99,1,1,0,South Carolina Election Commission
+state_house,SC,98,0,SC-H-98,Greg Ford,REP,R,6288,44.96,2,0,0,South Carolina Election Commission
+state_house,SC,98,0,SC-H-98,Write-In,,W,8,0.06,3,,,South Carolina Election Commission
+state_house,SC,99,0,SC-H-99,Jarrod Brooks,REP,R,10063,58.18,1,1,0,South Carolina Election Commission
+state_house,SC,99,0,SC-H-99,Samuel Price,DEM,D,7221,41.75,2,0,0,South Carolina Election Commission
+state_house,SC,99,0,SC-H-99,Write-In,,W,13,0.08,3,,,South Carolina Election Commission
+state_house,SC,100,0,SC-H-100,Sylleste Davis,REP,R,8113,50.8,1,1,0,South Carolina Election Commission
+state_house,SC,100,0,SC-H-100,Crystal Y Campbell,DEM,D,7841,49.1,2,0,0,South Carolina Election Commission
+state_house,SC,100,0,SC-H-100,Write-In,,W,16,0.1,3,,,South Carolina Election Commission
+state_house,SC,101,0,SC-H-101,Roger K Kirby,DEM,D,10011,69.51,1,1,0,South Carolina Election Commission
+state_house,SC,101,0,SC-H-101,Arnie Borowsky,REP,R,4362,30.29,2,0,0,South Carolina Election Commission
+state_house,SC,101,0,SC-H-101,Write-In,,W,30,0.21,3,,,South Carolina Election Commission
+state_house,SC,102,0,SC-H-102,Montez Aiken,DEM,D,9906,57.18,1,1,0,South Carolina Election Commission
+state_house,SC,102,0,SC-H-102,Harriet Holman,REP,R,7380,42.6,2,0,0,South Carolina Election Commission
+state_house,SC,102,0,SC-H-102,Write-In,,W,39,0.23,3,,,South Carolina Election Commission
+state_house,SC,103,0,SC-H-103,Carl Anderson,DEM,D,9999,97.77,1,1,0,South Carolina Election Commission
+state_house,SC,103,0,SC-H-103,Write-In,,W,228,2.23,2,,,South Carolina Election Commission
+state_house,SC,104,0,SC-H-104,William Bailey,REP,R,17929,66.87,1,1,0,South Carolina Election Commission
+state_house,SC,104,0,SC-H-104,George M Blumenthal,DEM,D,8869,33.08,2,0,0,South Carolina Election Commission
+state_house,SC,104,0,SC-H-104,Write-In,,W,12,0.04,3,,,South Carolina Election Commission
+state_house,SC,105,0,SC-H-105,Kevin Hardee,REP,R,13302,66.6,1,1,0,South Carolina Election Commission
+state_house,SC,105,0,SC-H-105,David Wilson,DEM,D,6647,33.28,2,0,0,South Carolina Election Commission
+state_house,SC,105,0,SC-H-105,Write-In,,W,23,0.12,3,,,South Carolina Election Commission
+state_house,SC,106,0,SC-H-106,Val Guest,REP,R,15018,66.81,1,1,0,South Carolina Election Commission
+state_house,SC,106,0,SC-H-106,Marisa McCann,DEM,D,7457,33.17,2,0,0,South Carolina Election Commission
+state_house,SC,106,0,SC-H-106,Write-In,,W,3,0.01,3,,,South Carolina Election Commission
+state_house,SC,107,0,SC-H-107,Case Brittain,REP,R,10820,60.48,1,1,0,South Carolina Election Commission
+state_house,SC,107,0,SC-H-107,Christine Giguere,DEM,D,7058,39.45,2,0,0,South Carolina Election Commission
+state_house,SC,107,0,SC-H-107,Write-In,,W,13,0.07,3,,,South Carolina Election Commission
+state_house,SC,108,0,SC-H-108,Lee Hewitt,REP,R,14480,64.01,1,1,0,South Carolina Election Commission
+state_house,SC,108,0,SC-H-108,Kathy Redwine,DEM,D,8133,35.95,2,0,0,South Carolina Election Commission
+state_house,SC,108,0,SC-H-108,Write-In,,W,8,0.04,3,,,South Carolina Election Commission
+state_house,SC,109,0,SC-H-109,Tiffany Spann-Wilder,DEM,D,9145,98.14,1,1,0,South Carolina Election Commission
+state_house,SC,109,0,SC-H-109,Write-In,,W,173,1.86,2,,,South Carolina Election Commission
+state_house,SC,110,0,SC-H-110,Tom Hartnett,REP,R,9812,51.54,1,1,0,South Carolina Election Commission
+state_house,SC,110,0,SC-H-110,KJ Atwood,DEM,D,9213,48.4,2,0,0,South Carolina Election Commission
+state_house,SC,110,0,SC-H-110,Write-In,,W,12,0.06,3,,,South Carolina Election Commission
+state_house,SC,111,0,SC-H-111,Wendell G Gilliard,DEM,D,11732,98.52,1,1,0,South Carolina Election Commission
+state_house,SC,111,0,SC-H-111,Write-In,,W,176,1.48,2,,,South Carolina Election Commission
+state_house,SC,112,0,SC-H-112,Joe Bustos,REP,R,12200,53.1,1,1,0,South Carolina Election Commission
+state_house,SC,112,0,SC-H-112,Jenna Arsenault,DEM,D,10761,46.84,2,0,0,South Carolina Election Commission
+state_house,SC,112,0,SC-H-112,Write-In,,W,15,0.07,3,,,South Carolina Election Commission
+state_house,SC,113,0,SC-H-113,Courtney Waters,DEM,D,8958,98.87,1,1,0,South Carolina Election Commission
+state_house,SC,113,0,SC-H-113,Write-In,,W,102,1.13,2,,,South Carolina Election Commission
+state_house,SC,114,0,SC-H-114,Gary Brewer,REP,R,10740,50.82,1,1,0,South Carolina Election Commission
+state_house,SC,114,0,SC-H-114,Kelly Hough,DEM,D,10391,49.17,2,0,0,South Carolina Election Commission
+state_house,SC,114,0,SC-H-114,Write-In,,W,3,0.01,3,,,South Carolina Election Commission
+state_house,SC,115,0,SC-H-115,Nick Uricchio,DEM,D,12983,57.04,1,1,0,South Carolina Election Commission
+state_house,SC,115,0,SC-H-115,Johnnie Garmon,REP,R,9763,42.89,2,0,0,South Carolina Election Commission
+state_house,SC,115,0,SC-H-115,Write-In,,W,15,0.07,3,,,South Carolina Election Commission
+state_house,SC,116,0,SC-H-116,Clay Middleton,DEM,D,11632,55.52,1,1,0,South Carolina Election Commission
+state_house,SC,116,0,SC-H-116,James E Teeple,REP,R,9309,44.43,2,0,0,South Carolina Election Commission
+state_house,SC,116,0,SC-H-116,Write-In,,W,11,0.05,3,,,South Carolina Election Commission
+state_house,SC,117,0,SC-H-117,Jordan Pace,REP,R,9874,50.84,1,1,0,South Carolina Election Commission
+state_house,SC,117,0,SC-H-117,Ashley Painter,DEM,D,9537,49.1,2,0,0,South Carolina Election Commission
+state_house,SC,117,0,SC-H-117,Write-In,,W,11,0.06,3,,,South Carolina Election Commission
+state_house,SC,118,0,SC-H-118,Bill Herbkersman,REP,R,12103,58.41,1,1,0,South Carolina Election Commission
+state_house,SC,118,0,SC-H-118,Bernie Scolaro,DEM,D,8605,41.53,2,0,0,South Carolina Election Commission
+state_house,SC,118,0,SC-H-118,Write-In,,W,11,0.05,3,,,South Carolina Election Commission
+state_house,SC,119,0,SC-H-119,Leon Stavrinakis,DEM,D,12579,63.18,1,1,0,South Carolina Election Commission
+state_house,SC,119,0,SC-H-119,Lee Edwards,REP,R,7312,36.73,2,0,0,South Carolina Election Commission
+state_house,SC,119,0,SC-H-119,Write-In,,W,18,0.09,3,,,South Carolina Election Commission
+state_house,SC,120,0,SC-H-120,Weston Newton,REP,R,14364,61.79,1,1,0,South Carolina Election Commission
+state_house,SC,120,0,SC-H-120,Debbie Subera-Wiggin,DEM,D,8871,38.16,2,0,0,South Carolina Election Commission
+state_house,SC,120,0,SC-H-120,Write-In,,W,10,0.04,3,,,South Carolina Election Commission
+state_house,SC,121,0,SC-H-121,Shannon N DeLoach,DEM,D,8689,62.64,1,1,0,South Carolina Election Commission
+state_house,SC,121,0,SC-H-121,Shelley Gay Yuhas,REP,R,5147,37.1,2,0,0,South Carolina Election Commission
+state_house,SC,121,0,SC-H-121,Write-In,,W,36,0.26,3,,,South Carolina Election Commission
+state_house,SC,122,0,SC-H-122,Korey Williams,DEM,D,9750,52.08,1,1,0,South Carolina Election Commission
+state_house,SC,122,0,SC-H-122,Bill Hager,REP,R,8960,47.86,2,0,0,South Carolina Election Commission
+state_house,SC,122,0,SC-H-122,Write-In,,W,11,0.06,3,,,South Carolina Election Commission
+state_house,SC,123,0,SC-H-123,Jeff Bradley,REP,R,12237,55.92,1,1,0,South Carolina Election Commission
+state_house,SC,123,0,SC-H-123,Ann C Shippy,DEM,D,9642,44.06,2,0,0,South Carolina Election Commission
+state_house,SC,123,0,SC-H-123,Write-In,,W,6,0.03,3,,,South Carolina Election Commission
+state_house,SC,124,0,SC-H-124,Shannon Erickson,REP,R,9956,57.76,1,1,0,South Carolina Election Commission
+state_house,SC,124,0,SC-H-124,Shauna Bishop,DEM,D,7265,42.15,2,0,0,South Carolina Election Commission
+state_house,SC,124,0,SC-H-124,Write-In,,W,17,0.1,3,,,South Carolina Election Commission
 state_house,SD,1,0,SD-H-1,Daniel Kjos,Republican,R,5446,39.06,1,1,0,civicAPI
 state_house,SD,1,0,SD-H-1,Nick Fosness,Republican,R,5144,36.89,2,1,0,civicAPI
 state_house,SD,1,0,SD-H-1,Courtney Gale Enfield,Democratic,D,3354,24.05,3,0,0,civicAPI
@@ -13813,9 +13813,9 @@ state_senate,RI,37,0,RI-S-37,Write-in,Nonpartisan,W,244,2.97,2,0,0,civicAPI
 state_senate,RI,38,0,RI-S-38,Victoria Gu,Democratic,D,7835,64.02,1,1,0,civicAPI
 state_senate,RI,38,0,RI-S-38,Westin J. Place,Republican,R,4393,35.89,2,0,0,civicAPI
 state_senate,RI,38,0,RI-S-38,Write-in,Nonpartisan,W,11,0.09,3,0,0,civicAPI
-state_senate,SC,15,1,SC-S-15-SP,James Burns,Republican,R,26529,53.7,1,1,0,civicAPI
-state_senate,SC,15,1,SC-S-15-SP,Chad Williams,Democratic,D,22837,46.23,2,0,0,civicAPI
-state_senate,SC,15,1,SC-S-15-SP,Write-in,Nonpartisan,W,38,0.08,3,0,0,civicAPI
+state_senate,SC,15,1,SC-S-15-SP,James Burns,REP,R,26529,53.7,1,1,0,South Carolina Election Commission
+state_senate,SC,15,1,SC-S-15-SP,Chad Williams,DEM,D,22837,46.23,2,0,0,South Carolina Election Commission
+state_senate,SC,15,1,SC-S-15-SP,Write-In,,W,38,0.08,3,,,South Carolina Election Commission
 state_senate,SD,1,0,SD-S-1,Michael H. Rohl,Republican,R,6026,100.0,1,1,0,civicAPI
 state_senate,SD,2,0,SD-S-2,John Sjaarda,Republican,R,7111,100.0,1,1,0,civicAPI
 state_senate,SD,3,0,SD-S-3,"Katherine ""Katie"" Washnok",Republican,R,5223,100.0,1,1,0,civicAPI

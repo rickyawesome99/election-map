@@ -7,6 +7,7 @@ where the file has them, otherwise build.py sums the counties).
     mn_sos            MN               allracesbyprecinct.txt, ';'-separated, no header
     hi_oe             HI               media.txt, tab-separated, by precinct split
     results_export    MT               ResultsExport.aspx xlsx (postback), county; see fetch.py
+    clarity           SC               Clarity ENR, one detail.xml per county, every contest by precinct
 """
 import csv, io, re, zipfile
 from collections import defaultdict
@@ -152,4 +153,42 @@ def results_export(state):
     return out, unmatched
 
 
-ADAPTERS = {"results_export": results_export, "enhanced_voting": enhanced_voting, "ncsbe": ncsbe, "mn_sos": mn_sos, "hi_oe": hi_oe}
+def clarity(state):
+    """Clarity/Scytl ENR county detail.xml files (raw/direct/<ST>/<County>.zip, see fetch.py):
+    Contest > Choice > VoteType > Precinct. Early and mail votes sit under each voter's home
+    precinct; "Failsafe", "Provisional" and "Failsafe Provisional" are county-wide pseudo-precincts
+    and stay in as their own units (like NC's ABSENTEE rows). Choice text carries the party prefix
+    ("REP Darline Graham"); a governor ticket also names the running mate, printed "A / B", "A/B" or
+    "A/ B" depending on the county, which is dropped."""
+    import glob
+    import xml.etree.ElementTree as ET
+    out, unmatched = [], set()
+    for path in sorted(glob.glob(str(RAW / "direct" / state / "*.zip"))):
+        county = path.rsplit("/", 1)[1][:-4]
+        if county.startswith("_"):
+            continue
+        fips = county_fips(state, county)
+        if not fips:
+            unmatched.add(county)
+        with zipfile.ZipFile(path) as z:
+            root = ET.fromstring(z.read("detail.xml"))
+        for contest in root.findall("Contest"):
+            text = re.sub(r"\s+", " ", contest.get("text") or "")
+            if not classify(text):
+                continue
+            vote_for = num(contest.get("voteFor")) or 1
+            for ch in contest.findall("Choice"):
+                party = ch.get("party") or ""
+                name = re.sub(r"\s+", " ", re.split(r"\s*/\s*", re.sub(rf"^{re.escape(party)}\s+", "", ch.get("text") or ""))[0]).strip()
+                per = defaultdict(int)
+                for vt in ch.findall("VoteType"):
+                    for p in vt.findall("Precinct"):
+                        per[p.get("name").strip()] += num(p.get("votes"))
+                for pct, votes in per.items():
+                    r = _row(state, text, "precinct", f"{fips}:{pct}", pct, name, "" if party == "NON" else party, votes, fips, vote_for=vote_for)
+                    if r:
+                        out.append(r)
+    return out, unmatched
+
+
+ADAPTERS = {"clarity": clarity, "results_export": results_export, "enhanced_voting": enhanced_voting, "ncsbe": ncsbe, "mn_sos": mn_sos, "hi_oe": hi_oe}

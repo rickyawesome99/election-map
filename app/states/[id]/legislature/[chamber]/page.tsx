@@ -11,6 +11,15 @@ import ChamberSummary from "@/components/atlas/ChamberSummary";
 import StateSwitcher from "@/components/StateSwitcher";
 import { StatePill } from "@/components/RaceHeroPills";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import precinctCoverage from "@/data/precincts/coverage.json";
+
+// A precinct return for the election year is on file for this chamber: its district maps colour the
+// precincts by result; every other chamber's district maps stay grey.
+function hasPrecinctResults(abbr: string, chamber: Chamber, year: number): boolean {
+  const states = (precinctCoverage as { states: Record<string, { years?: Record<string, Record<string, { status?: string }>> }> }).states;
+  const status = states[abbr]?.years?.[String(year)]?.[chamber === "house" ? "SLDL" : "SLDU"]?.status;
+  return status === "reconciled" || status === "explained" || status === "loaded";
+}
 
 const CHAMBERS: Chamber[] = ["house", "senate"];
 
@@ -96,6 +105,7 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
           adjustedMargins={s.adjustedMargins}
           electionYear={electionYear}
           summary={<ChamberSummary s={s} electionYear={electionYear} />}
+          precinctResults={hasPrecinctResults(state.abbr, chamber, electionYear)}
         />
       </main>
     </div>

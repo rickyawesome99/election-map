@@ -31,7 +31,9 @@ def get(url, tries=4):
     for i in range(tries):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
-                return r.read()
+                body = r.read()
+                # Some servers (Clarity ENR) gzip even unasked; zips and other payloads pass through.
+                return gzip.decompress(body) if body[:2] == b"\x1f\x8b" else body
         except Exception as e:  # noqa: BLE001
             if i == tries - 1:
                 raise
@@ -89,12 +91,40 @@ def fetch_results_export(s, manifest):
         print(f"  {s['state']} {s['source']} {target}: {len(body):,} bytes")
 
 
+def fetch_clarity(s, manifest):
+    """Clarity/Scytl ENR (SC): the state election's electionsettings.json lists each county's own
+    sub-election ("Name|id|version|updated|..."); each county's reports/detailxml.zip holds every
+    contest by precinct. The state-level detailxml.zip (by county) is kept as a cross-check."""
+    base = s["url"].rstrip("/")                       # e.g. https://www.enr-scvotes.org/SC/127300
+    root = base.rsplit("/", 1)[0]                     # https://www.enr-scvotes.org/SC
+    ver = get(f"{base}/current_ver.txt").decode().strip()
+    settings = json.loads(get(f"{base}/{ver}/json/en/electionsettings.json"))
+    counties = settings["settings"]["electiondetails"]["participatingcounties"]
+    dest = RAW / "direct" / s["state"]
+    dest.mkdir(parents=True, exist_ok=True)
+    (dest / "_state.zip").write_bytes(get(f"{base}/{ver}/reports/detailxml.zip"))
+    size = 0
+    for entry in counties:
+        name, cid = entry.split("|")[:2]
+        cver = get(f"{root}/{name.replace(' ', '_')}/{cid}/current_ver.txt").decode().strip()
+        body = get(f"{root}/{name.replace(' ', '_')}/{cid}/{cver}/reports/detailxml.zip")
+        if not body.startswith(b"PK"):
+            raise RuntimeError(f"{s['state']} {name}: detailxml.zip is not a zip")
+        (dest / f"{name}.zip").write_bytes(body)
+        size += len(body)
+    stamp(manifest, f"direct/{s['state']}", s["url"], size)
+    print(f"  {s['state']} {s['source']}: {len(counties)} counties, {size:,} bytes (state version {ver})")
+
+
 def fetch_direct(manifest, only=None):
     for s in sources():
         if s["kind"] != "direct" or (only and s["state"] not in only):
             continue
         if s["adapter"] == "results_export":
             fetch_results_export(s, manifest)
+            continue
+        if s["adapter"] == "clarity":
+            fetch_clarity(s, manifest)
             continue
         body = get(s["url"])
         path = RAW / "direct" / f"{s['state']}.{EXT[s['adapter']]}"

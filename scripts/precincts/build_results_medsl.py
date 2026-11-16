@@ -1362,6 +1362,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
 
     offices: dict[str, list[list[int]]] = {}
     districts: dict[str, list[str]] = {}
+    split: dict[str, list[list]] = {}
     est: dict[str, list[int]] = {}
     sums: dict[str, dict] = {}
     notes = []
@@ -1389,12 +1390,16 @@ def build_state(st: str, year: int, truth: dict) -> str:
         arr = np.zeros((3, nold))
         spread_tot = np.zeros(nold)
         dvotes: dict[str, np.ndarray] = {}
+        dv3: dict[str, np.ndarray] = {}  # district → (side, precinct) votes: what a split precinct gave each district
         m = o[o["oid"] >= 0]
         np.add.at(arr, (m["comp"].to_numpy(), m["oid"].to_numpy()), m["votes"].to_numpy())
         for district, g in m.groupby("district"):
             a = np.zeros(nold)
             np.add.at(a, g["oid"].to_numpy(), g["votes"].to_numpy())
             dvotes[district] = a
+            a3 = np.zeros((3, nold))
+            np.add.at(a3, (g["comp"].to_numpy(), g["oid"].to_numpy()), g["votes"].to_numpy())
+            dv3[district] = a3
         known_mask = {d: a > 0 for d, a in dvotes.items()}  # where each district is known to vote, before any spreading
 
         def spread(target: np.ndarray, g: pd.DataFrame, district: str) -> None:
@@ -1403,6 +1408,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
             byc = g.groupby("comp")["votes"].sum()
             for c, v in byc.items():
                 arr[c, target] += v * wt
+                dv3.setdefault(district, np.zeros((3, nold)))[c, target] += v * wt
             dvotes.setdefault(district, np.zeros(nold))[target] += float(byc.sum()) * wt
             if not exact_unit[0]:
                 spread_tot[target] += float(byc.sum()) * wt
@@ -1462,6 +1468,25 @@ def build_state(st: str, year: int, truth: dict) -> str:
             width = 2 if office in ("USH", "SLDU") else 3
             fmt = [d.zfill(width) if d.isdigit() else d for d in names]
             districts[office] = [fmt[k] if k >= 0 else "" for k in label]
+            # A precinct that voted in more than one district's race: the row above is the sum and the
+            # label names the larger part, so each district's own share is kept as well,
+            # [precinct index, district, D, R, other]. The district pages' maps read these.
+            if office in DISTRICT_OFFICES and len(names) > 1:
+                per = []
+                for dname in names:
+                    a3 = dv3.get(dname)
+                    sides = np.zeros((3, n), dtype=np.int64)
+                    if a3 is not None:
+                        for c in range(3):
+                            acc = np.zeros(n)
+                            np.add.at(acc, cols_idx, a3[c][rows] * w)
+                            sides[c] = V.largest_remainder(acc, int(round(a3[c].sum())))
+                    per.append(sides)
+                tot = np.stack([p_.sum(axis=0) for p_ in per])  # district × precinct
+                multi_d = np.flatnonzero((tot > 0).sum(axis=0) > 1)
+                entries = [[int(j), fmt[k], int(per[k][0, j]), int(per[k][1, j]), int(per[k][2, j])] for j in multi_d for k in range(len(names)) if tot[k, j] > 0]
+                if entries:
+                    split[office] = entries
         offices[office] = [[int(a), int(b), int(c)] for a, b, c in zip(*parts)]
         est[office] = [int(round(100 * s / a)) if a > 0 else 0 for s, a in zip(splitv, allv)]
         total = float(o["votes"].sum())
@@ -1476,7 +1501,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
     # An office this builder no longer produces must not linger from an earlier run (it owns these three).
     stale = [o for o in dropped if o in doc["offices"]]
     for o in stale:
-        for part in ("offices", "districts", "basis", "est"):
+        for part in ("offices", "districts", "basis", "est", "split"):
             doc.get(part, {}).pop(o, None)
     clear_cells(st, year, [o for o in dropped if st not in truth.get(year, {}).get(o, {})], n)
     if not offices:
@@ -1485,6 +1510,12 @@ def build_state(st: str, year: int, truth: dict) -> str:
         return f"{st}: no district contests in MEDSL {year}"
     doc["offices"].update(offices)
     doc.setdefault("districts", {}).update(districts)
+    doc.setdefault("split", {})
+    for o in offices:  # this run owns each office it built: no split entries from an earlier run linger
+        doc["split"].pop(o, None)
+    doc["split"].update(split)
+    if not doc["split"]:
+        doc.pop("split")
     doc.setdefault("est", {}).update(est)
     doc.setdefault("basis", {}).update({o: ("slot" if o in SLOT else "party") for o in offices})
     doc["src"] = sorted(set(doc.get("src", [])) | ({src_label} if by_name else {src_label, f"vest-{year}"}))

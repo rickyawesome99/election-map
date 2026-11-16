@@ -38,7 +38,7 @@ OK,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
 OR,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source read but not used: Oregon Secretary of State ResultsExport.aspx gives statewide XML only (no counties): https://results.oregonvotes.gov/ResultsExport.aspx
 PA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
 RI,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Rhode Island Board of Elections (results/public/api ballot items): https://electionresults.ri.gov/results/public/api/elections/rhodeisland/2026StatewideGeneralElection/data/ballot-item/01000000-59ac-daed-66fe-08df1e27a40e
-SC,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+SC,direct,clarity,South Carolina Election Commission,https://www.enr-scvotes.org/SC/127300,state;county;precinct,Clarity ENR; one detailxml.zip per county (46)
 SD,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,"Direct source not read yet: South Dakota Secretary of State ResultsExport.aspx (same platform as MT, but its export postback returns the page, not a file): https://electionresults.sd.gov/ResultsExport.aspx"
 TN,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
 TX,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Texas Secretary of State (civix ENR JSON): https://goelect.txelections.civixapps.com/api-ivis-system/api/s3/enr/election/53815

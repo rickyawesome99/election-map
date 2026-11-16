@@ -2814,62 +2814,62 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,RI,2,44003,Kent,38639,26168,185,64992,civicAPI
 2026,RI,2,44007,Providence,46257,27195,221,73673,civicAPI
 2026,RI,2,44009,Washington,35812,20538,104,56454,civicAPI
-2026,SC,1,45013,Beaufort,39347,45378,1285,86010,civicAPI
-2026,SC,1,45015,Berkeley,46733,42453,1648,90834,civicAPI
-2026,SC,1,45019,Charleston,49307,44642,1498,95447,civicAPI
-2026,SC,1,45029,Colleton,605,724,39,1368,civicAPI
-2026,SC,1,45035,Dorchester,24026,22564,1055,47645,civicAPI
-2026,SC,1,45053,Jasper,2085,2990,44,5119,civicAPI
-2026,SC,2,45003,Aiken,29020,37801,729,67550,civicAPI
-2026,SC,2,45011,Barnwell,3697,3897,67,7661,civicAPI
-2026,SC,2,45063,Lexington,44551,68594,1906,115051,civicAPI
-2026,SC,2,45075,Orangeburg,4995,3485,64,8544,civicAPI
-2026,SC,2,45079,Richland,62602,34014,1242,97858,civicAPI
-2026,SC,3,45001,Abbeville,3130,5743,132,9005,civicAPI
-2026,SC,3,45007,Anderson,23713,48406,1446,73565,civicAPI
-2026,SC,3,45037,Edgefield,4285,6349,163,10797,civicAPI
-2026,SC,3,45045,Greenville,11765,15763,611,28139,civicAPI
-2026,SC,3,45047,Greenwood,10233,13879,417,24529,civicAPI
-2026,SC,3,45059,Laurens,8574,14368,411,23353,civicAPI
-2026,SC,3,45065,McCormick,2324,3046,83,5453,civicAPI
-2026,SC,3,45071,Newberry,5423,8693,222,14338,civicAPI
-2026,SC,3,45073,Oconee,9140,22680,600,32420,civicAPI
-2026,SC,3,45077,Pickens,13106,30420,1072,44598,civicAPI
-2026,SC,3,45081,Saluda,2269,4621,105,6995,civicAPI
-2026,SC,4,45045,Greenville,85328,95410,5482,186220,civicAPI
-2026,SC,4,45083,Spartanburg,44414,51534,2025,97973,civicAPI
-2026,SC,5,45021,Cherokee,5677,11892,13,17582,civicAPI
-2026,SC,5,45023,Chester,6092,5894,5,11991,civicAPI
-2026,SC,5,45039,Fairfield,5917,3679,4,9600,civicAPI
-2026,SC,5,45055,Kershaw,11705,14039,16,25760,civicAPI
-2026,SC,5,45057,Lancaster,19126,23511,13,42650,civicAPI
-2026,SC,5,45061,Lee,4194,2100,0,6294,civicAPI
-2026,SC,5,45083,Spartanburg,6843,14261,13,21117,civicAPI
-2026,SC,5,45085,Sumter,15559,11252,14,26825,civicAPI
-2026,SC,5,45087,Union,3810,5545,5,9360,civicAPI
-2026,SC,5,45091,York,56311,59438,72,115821,civicAPI
-2026,SC,6,45005,Allendale,1963,538,0,2501,civicAPI
-2026,SC,6,45009,Bamberg,2995,1619,3,4617,civicAPI
-2026,SC,6,45017,Calhoun,3259,3200,5,6464,civicAPI
-2026,SC,6,45019,Charleston,53841,24959,110,78910,civicAPI
-2026,SC,6,45027,Clarendon,6919,6625,2,13546,civicAPI
-2026,SC,6,45029,Colleton,6098,6208,13,12319,civicAPI
-2026,SC,6,45035,Dorchester,7960,6467,30,14457,civicAPI
-2026,SC,6,45041,Florence,2369,1105,1,3475,civicAPI
-2026,SC,6,45049,Hampton,3849,2778,6,6633,civicAPI
-2026,SC,6,45053,Jasper,6515,5738,8,12261,civicAPI
-2026,SC,6,45075,Orangeburg,16754,5482,26,22262,civicAPI
-2026,SC,6,45079,Richland,53774,8863,101,62738,civicAPI
-2026,SC,6,45085,Sumter,6774,2692,8,9474,civicAPI
-2026,SC,6,45089,Williamsburg,8048,3624,5,11677,civicAPI
-2026,SC,7,45025,Chesterfield,6010,7746,9,13765,civicAPI
-2026,SC,7,45031,Darlington,12160,11327,27,23514,civicAPI
-2026,SC,7,45033,Dillon,4615,4184,1,8800,civicAPI
-2026,SC,7,45041,Florence,24202,21103,33,45338,civicAPI
-2026,SC,7,45043,Georgetown,13887,16944,15,30846,civicAPI
-2026,SC,7,45051,Horry,59361,103922,109,163392,civicAPI
-2026,SC,7,45067,Marion,6893,4336,4,11233,civicAPI
-2026,SC,7,45069,Marlboro,4317,2877,6,7200,civicAPI
+2026,SC,1,45013,Beaufort,39347,45378,1285,86010,South Carolina Election Commission
+2026,SC,1,45015,Berkeley,46733,42453,1648,90834,South Carolina Election Commission
+2026,SC,1,45019,Charleston,49307,44642,1498,95447,South Carolina Election Commission
+2026,SC,1,45029,Colleton,605,724,39,1368,South Carolina Election Commission
+2026,SC,1,45035,Dorchester,24026,22564,1055,47645,South Carolina Election Commission
+2026,SC,1,45053,Jasper,2085,2990,44,5119,South Carolina Election Commission
+2026,SC,2,45003,Aiken,29020,37801,729,67550,South Carolina Election Commission
+2026,SC,2,45011,Barnwell,3697,3897,67,7661,South Carolina Election Commission
+2026,SC,2,45063,Lexington,44551,68594,1906,115051,South Carolina Election Commission
+2026,SC,2,45075,Orangeburg,4995,3485,64,8544,South Carolina Election Commission
+2026,SC,2,45079,Richland,62602,34014,1242,97858,South Carolina Election Commission
+2026,SC,3,45001,Abbeville,3130,5743,132,9005,South Carolina Election Commission
+2026,SC,3,45007,Anderson,23713,48406,1446,73565,South Carolina Election Commission
+2026,SC,3,45037,Edgefield,4285,6349,163,10797,South Carolina Election Commission
+2026,SC,3,45045,Greenville,11765,15763,611,28139,South Carolina Election Commission
+2026,SC,3,45047,Greenwood,10233,13879,417,24529,South Carolina Election Commission
+2026,SC,3,45059,Laurens,8574,14368,411,23353,South Carolina Election Commission
+2026,SC,3,45065,McCormick,2324,3046,83,5453,South Carolina Election Commission
+2026,SC,3,45071,Newberry,5423,8693,222,14338,South Carolina Election Commission
+2026,SC,3,45073,Oconee,9140,22680,600,32420,South Carolina Election Commission
+2026,SC,3,45077,Pickens,13106,30420,1072,44598,South Carolina Election Commission
+2026,SC,3,45081,Saluda,2262,4613,96,6971,South Carolina Election Commission
+2026,SC,4,45045,Greenville,85328,95410,5482,186220,South Carolina Election Commission
+2026,SC,4,45083,Spartanburg,44414,51534,2025,97973,South Carolina Election Commission
+2026,SC,5,45021,Cherokee,5677,11892,13,17582,South Carolina Election Commission
+2026,SC,5,45023,Chester,6092,5894,5,11991,South Carolina Election Commission
+2026,SC,5,45039,Fairfield,5917,3679,4,9600,South Carolina Election Commission
+2026,SC,5,45055,Kershaw,11705,14039,16,25760,South Carolina Election Commission
+2026,SC,5,45057,Lancaster,19126,23511,13,42650,South Carolina Election Commission
+2026,SC,5,45061,Lee,4194,2100,0,6294,South Carolina Election Commission
+2026,SC,5,45083,Spartanburg,6843,14261,13,21117,South Carolina Election Commission
+2026,SC,5,45085,Sumter,15559,11252,14,26825,South Carolina Election Commission
+2026,SC,5,45087,Union,3810,5545,5,9360,South Carolina Election Commission
+2026,SC,5,45091,York,56280,59324,75,115679,South Carolina Election Commission
+2026,SC,6,45005,Allendale,1963,538,0,2501,South Carolina Election Commission
+2026,SC,6,45009,Bamberg,2995,1619,3,4617,South Carolina Election Commission
+2026,SC,6,45017,Calhoun,3259,3200,5,6464,South Carolina Election Commission
+2026,SC,6,45019,Charleston,53841,24959,110,78910,South Carolina Election Commission
+2026,SC,6,45027,Clarendon,6919,6625,2,13546,South Carolina Election Commission
+2026,SC,6,45029,Colleton,6098,6208,13,12319,South Carolina Election Commission
+2026,SC,6,45035,Dorchester,7960,6467,30,14457,South Carolina Election Commission
+2026,SC,6,45041,Florence,2369,1105,1,3475,South Carolina Election Commission
+2026,SC,6,45049,Hampton,3849,2778,6,6633,South Carolina Election Commission
+2026,SC,6,45053,Jasper,6515,5738,8,12261,South Carolina Election Commission
+2026,SC,6,45075,Orangeburg,16754,5482,26,22262,South Carolina Election Commission
+2026,SC,6,45079,Richland,53774,8863,101,62738,South Carolina Election Commission
+2026,SC,6,45085,Sumter,6774,2692,8,9474,South Carolina Election Commission
+2026,SC,6,45089,Williamsburg,8048,3624,5,11677,South Carolina Election Commission
+2026,SC,7,45025,Chesterfield,6010,7746,9,13765,South Carolina Election Commission
+2026,SC,7,45031,Darlington,12160,11327,27,23514,South Carolina Election Commission
+2026,SC,7,45033,Dillon,4615,4184,1,8800,South Carolina Election Commission
+2026,SC,7,45041,Florence,24202,21103,33,45338,South Carolina Election Commission
+2026,SC,7,45043,Georgetown,13887,16944,15,30846,South Carolina Election Commission
+2026,SC,7,45051,Horry,59361,103922,109,163392,South Carolina Election Commission
+2026,SC,7,45067,Marion,6893,4336,4,11233,South Carolina Election Commission
+2026,SC,7,45069,Marlboro,4317,2877,6,7200,South Carolina Election Commission
 2026,SD,1,46003,Aurora,254,709,0,963,civicAPI
 2026,SD,1,46005,Beadle,1319,3498,0,4817,civicAPI
 2026,SD,1,46007,Bennett,317,519,0,836,civicAPI
