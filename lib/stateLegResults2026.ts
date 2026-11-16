@@ -23,7 +23,6 @@ import { personKey, type AtlasChamberResults2026, type AtlasRace2026, type Atlas
 
 export const RESULTS_YEAR = 2026;
 
-const DIR = ["data-entry", "results-2026"] as const;
 const num = (v: string | undefined) => Number(v) || 0;
 const NOT_A_PERSON = /write.?in|scatter|blank|void|under.?vote|over.?vote|none of/i;
 const tidy = (s: string) => s.replace(/\s+/g, " ").trim();
@@ -88,16 +87,17 @@ let cache: Loaded | null = null;
 
 function load(): Loaded {
   if (cache) return cache;
-  const read = (...p: string[]) => parseCsv(readFileSync(join(process.cwd(), ...p), "utf8"));
-  const races = parseCsv(readFileSync(join(process.cwd(), ...DIR, "races.csv"), "utf8")).filter((r) => r.office === "state_house" || r.office === "state_senate");
+  // Every path is spelled out in literals: a path built from a variable makes Next's file tracing
+  // pull the whole repo into each server function (Vercel's 250 MB limit).
+  const races = parseCsv(readFileSync(join(process.cwd(), "data-entry", "results-2026", "races.csv"), "utf8")).filter((r) => r.office === "state_house" || r.office === "state_senate");
   const candRows = new Map<string, Record<string, string>[]>();
-  for (const c of parseCsv(readFileSync(join(process.cwd(), ...DIR, "candidates.csv"), "utf8"))) {
+  for (const c of parseCsv(readFileSync(join(process.cwd(), "data-entry", "results-2026", "candidates.csv"), "utf8"))) {
     if (c.office !== "state_house" && c.office !== "state_senate") continue;
     if (!candRows.has(c.race_id)) candRows.set(c.race_id, []);
     candRows.get(c.race_id)!.push(c);
   }
   const ap = new Map<string, ApRow>();
-  for (const a of read("data-entry", "results_2026_state_leg.csv")) {
+  for (const a of parseCsv(readFileSync(join(process.cwd(), "data-entry", "results_2026_state_leg.csv"), "utf8"))) {
     if (a.race_type.includes("Primary")) continue;
     const id = `${a.state}-${a.chamber === "house" ? "H" : "S"}-${apSeat(a.seat)}${a.race_type.includes("Special") ? "-SP" : ""}`;
     ap.set(id, {
