@@ -91,29 +91,43 @@ def fetch_results_export(s, manifest):
         print(f"  {s['state']} {s['source']} {target}: {len(body):,} bytes")
 
 
-def fetch_clarity(s, manifest):
-    """Clarity/Scytl ENR (SC): the state election's electionsettings.json lists each county's own
+# Clarity recount elections whose counts replace the general's for the contests they hold.
+CLARITY_RECOUNTS = {"SC": ["https://www.enr-scvotes.org/SC/127592"]}   # Statewide General Election Recount
+
+
+def _clarity_election(base, dest):
+    """One Clarity/Scytl ENR election: its electionsettings.json lists each county's own
     sub-election ("Name|id|version|updated|..."); each county's reports/detailxml.zip holds every
     contest by precinct. The state-level detailxml.zip (by county) is kept as a cross-check."""
-    base = s["url"].rstrip("/")                       # e.g. https://www.enr-scvotes.org/SC/127300
+    base = base.rstrip("/")                           # e.g. https://www.enr-scvotes.org/SC/127300
     root = base.rsplit("/", 1)[0]                     # https://www.enr-scvotes.org/SC
     ver = get(f"{base}/current_ver.txt").decode().strip()
     settings = json.loads(get(f"{base}/{ver}/json/en/electionsettings.json"))
     counties = settings["settings"]["electiondetails"]["participatingcounties"]
-    dest = RAW / "direct" / s["state"]
     dest.mkdir(parents=True, exist_ok=True)
     (dest / "_state.zip").write_bytes(get(f"{base}/{ver}/reports/detailxml.zip"))
     size = 0
     for entry in counties:
         name, cid = entry.split("|")[:2]
-        cver = get(f"{root}/{name.replace(' ', '_')}/{cid}/current_ver.txt").decode().strip()
-        body = get(f"{root}/{name.replace(' ', '_')}/{cid}/{cver}/reports/detailxml.zip")
+        slug = f"{root}/{name.replace(' ', '_')}/{cid}"
+        body = get(f"{slug}/{get(f'{slug}/current_ver.txt').decode().strip()}/reports/detailxml.zip")
         if not body.startswith(b"PK"):
-            raise RuntimeError(f"{s['state']} {name}: detailxml.zip is not a zip")
+            raise RuntimeError(f"{base} {name}: detailxml.zip is not a zip")
         (dest / f"{name}.zip").write_bytes(body)
         size += len(body)
+    return len(counties), size, ver
+
+
+def fetch_clarity(s, manifest):
+    """SC: the general election into raw/direct/SC/, each recount into raw/direct/SC/recount-<id>/."""
+    dest = RAW / "direct" / s["state"]
+    n, size, ver = _clarity_election(s["url"], dest)
+    print(f"  {s['state']} {s['source']}: {n} counties, {size:,} bytes (state version {ver})")
+    for url in CLARITY_RECOUNTS.get(s["state"], []):
+        rn, rsize, rver = _clarity_election(url, dest / f"recount-{url.rstrip('/').rsplit('/', 1)[1]}")
+        size += rsize
+        print(f"  {s['state']} recount {url}: {rn} counties, {rsize:,} bytes (version {rver})")
     stamp(manifest, f"direct/{s['state']}", s["url"], size)
-    print(f"  {s['state']} {s['source']}: {len(counties)} counties, {size:,} bytes (state version {ver})")
 
 
 def fetch_direct(manifest, only=None):

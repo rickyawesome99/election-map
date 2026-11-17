@@ -1,6 +1,4 @@
 import "server-only";
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
 import { governorData, senateData, type RaceForecast } from "@/data/forecastData";
 import { houseData } from "@/lib/locked2026HousePast"; // House past results as at the 2026 lock
 
@@ -9,7 +7,6 @@ import { contestOf, forecastRace, type Contest } from "@/lib/forecast";
 import { calculateCountyModel, getNationalEnvironment } from "@/lib/tplCompute";
 import { countyDistrictShares2026, projectAll } from "@/lib/turnoutModel";
 import { houseDistrictCountyRowsAtLock } from "@/lib/locked2026HouseDistrictCounty";
-import { parseCsv } from "@/lib/turnout";
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 

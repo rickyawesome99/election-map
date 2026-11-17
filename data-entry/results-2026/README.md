@@ -34,7 +34,8 @@ state's own file is read. An official count with votes always wins.
 | `mn_sos` | MN | precinct (summed up) |
 | `hi_oe` | HI | precinct (summed up; county from the House district) |
 | `results_export` | MT | state, county |
-| `civicapi` | the other 41 states | state, county |
+| `clarity` | SC | precinct (summed up); one Clarity ENR detail.xml per county; the state's recount election (`CLARITY_RECOUNTS` in fetch.py) replaces SC-02, HD-27, HD-89 |
+| `civicapi` | the other 40 states | state, county |
 | AP fill-in (unofficial) | state legislatures of AK, DE, MA, NH, VT; KY/MI zeros | state only |
 
 `sources.csv` also lists the direct sources not read yet (from Call the Map's page) with their URLs.

@@ -96,3 +96,6 @@ data-entry/precincts/anchor/
 data/precincts/coverage.lock
 data-entry/medsl/president_2016_precinct.tab
 data-entry/medsl/president_2020_precinct.csv
+
+# scratch scripts (screenshots etc.)
+*.tmp.mjs

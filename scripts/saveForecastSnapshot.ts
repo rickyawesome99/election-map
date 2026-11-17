@@ -87,6 +87,8 @@ if (process.argv.includes("--check")) {
   if (diffs.length) {
     console.error(`FORECAST LOCK BROKEN: ${diffs.length} difference(s) from ${path.relative(process.cwd(), file)}`);
     for (const d of diffs.slice(0, 40)) console.error(`  ${d}`);
+    // On GitHub Actions, also as ::error annotations: the public checks API shows them without the job log.
+    if (process.env.GITHUB_ACTIONS) for (const d of diffs.slice(0, 10)) console.log(`::error::Forecast lock: ${d.replace(/%/g, "%25").replace(/\n/g, "%0A")}`);
     process.exit(1);
   }
   console.log(`Forecast lock OK: ${Object.keys(races).length} races and all chambers match ${path.relative(process.cwd(), file)}`);

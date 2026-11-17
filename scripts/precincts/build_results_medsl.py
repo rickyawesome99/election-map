@@ -61,7 +61,7 @@ SLOT = {"PRES", "USS", "GOV", "USH"}
 VARIANT = ""
 ONLY: set[str] = set()
 # Where the per-state input was not written by split_medsl.py: what the rows really are.
-SRC = {**{(s_, 2026): "official-2026" for s_ in ("AZ", "GA", "HI", "ID", "MN", "NC", "WA")}, ("MS", 2019): "openelections-2019", ("MS", 2023): "openelections-2023", ("KY", 2023): "openelections-2023", ("NJ", 2017): "openelections-2017-municipal",
+SRC = {**{(s_, 2026): "official-2026" for s_ in ("AZ", "GA", "HI", "ID", "MN", "NC", "SC", "WA")}, ("MS", 2019): "openelections-2019", ("MS", 2023): "openelections-2023", ("KY", 2023): "openelections-2023", ("NJ", 2017): "openelections-2017-municipal",
        ("NJ", 2019): "nj-doe-2019-municipal", ("NJ", 2021): "nj-doe-2021-municipal", ("NJ", 2023): "nj-doe-2023-municipal", ("NJ", 2025): "nj-doe-2025-municipal",
        ("VA", 2021): "va-elections-2021", ("VA", 2023): "va-elections-2023", ("VA", 2025): "va-elections-2025", ("LA", 2019): "la-sos-2019", ("LA", 2023): "la-sos-2023"}
 # The second input of a --variant mix build, where it is not OpenElections.

@@ -153,42 +153,56 @@ def results_export(state):
     return out, unmatched
 
 
+def _clarity_rows(state, path, unmatched):
+    """(county, contest text) → Rows from one Clarity county detail.xml zip."""
+    import xml.etree.ElementTree as ET
+    county = path.rsplit("/", 1)[1][:-4]
+    fips = county_fips(state, county)
+    if not fips:
+        unmatched.add(county)
+    with zipfile.ZipFile(path) as z:
+        root = ET.fromstring(z.read("detail.xml"))
+    out = defaultdict(list)
+    for contest in root.findall("Contest"):
+        text = re.sub(r"\s+", " ", contest.get("text") or "")
+        if not classify(text):
+            continue
+        vote_for = num(contest.get("voteFor")) or 1
+        for ch in contest.findall("Choice"):
+            party = ch.get("party") or ""
+            name = re.sub(r"\s+", " ", re.split(r"\s*/\s*", re.sub(rf"^{re.escape(party)}\s+", "", ch.get("text") or ""))[0]).strip()
+            per = defaultdict(int)
+            for vt in ch.findall("VoteType"):
+                for p in vt.findall("Precinct"):
+                    per[p.get("name").strip()] += num(p.get("votes"))
+            for pct, votes in per.items():
+                r = _row(state, text, "precinct", f"{fips}:{pct}", pct, name, "" if party == "NON" else party, votes, fips, vote_for=vote_for)
+                if r:
+                    out[(county, text)].append(r)
+    return out
+
+
 def clarity(state):
     """Clarity/Scytl ENR county detail.xml files (raw/direct/<ST>/<County>.zip, see fetch.py):
     Contest > Choice > VoteType > Precinct. Early and mail votes sit under each voter's home
     precinct; "Failsafe", "Provisional" and "Failsafe Provisional" are county-wide pseudo-precincts
     and stay in as their own units (like NC's ABSENTEE rows). Choice text carries the party prefix
     ("REP Darline Graham"); a governor ticket also names the running mate, printed "A / B", "A/B" or
-    "A/ B" depending on the county, which is dropped."""
+    "A/ B" depending on the county, which is dropped. A contest a recount election holds
+    (raw/direct/<ST>/recount-<id>/, later ids last) takes the recount's counts in every county."""
     import glob
-    import xml.etree.ElementTree as ET
-    out, unmatched = [], set()
-    for path in sorted(glob.glob(str(RAW / "direct" / state / "*.zip"))):
-        county = path.rsplit("/", 1)[1][:-4]
-        if county.startswith("_"):
-            continue
-        fips = county_fips(state, county)
-        if not fips:
-            unmatched.add(county)
-        with zipfile.ZipFile(path) as z:
-            root = ET.fromstring(z.read("detail.xml"))
-        for contest in root.findall("Contest"):
-            text = re.sub(r"\s+", " ", contest.get("text") or "")
-            if not classify(text):
-                continue
-            vote_for = num(contest.get("voteFor")) or 1
-            for ch in contest.findall("Choice"):
-                party = ch.get("party") or ""
-                name = re.sub(r"\s+", " ", re.split(r"\s*/\s*", re.sub(rf"^{re.escape(party)}\s+", "", ch.get("text") or ""))[0]).strip()
-                per = defaultdict(int)
-                for vt in ch.findall("VoteType"):
-                    for p in vt.findall("Precinct"):
-                        per[p.get("name").strip()] += num(p.get("votes"))
-                for pct, votes in per.items():
-                    r = _row(state, text, "precinct", f"{fips}:{pct}", pct, name, "" if party == "NON" else party, votes, fips, vote_for=vote_for)
-                    if r:
-                        out.append(r)
-    return out, unmatched
+    unmatched = set()
+    general = {}
+    for path in sorted(glob.glob(str(RAW / "direct" / state / "[!_]*.zip"))):
+        general.update(_clarity_rows(state, path, unmatched))
+    for folder in sorted(glob.glob(str(RAW / "direct" / state / "recount-*"))):
+        recount = {}
+        for path in sorted(glob.glob(f"{folder}/[!_]*.zip")):
+            recount.update(_clarity_rows(state, path, unmatched))
+        for text in {t for _, t in recount}:
+            general = {k: v for k, v in general.items() if k[1] != text}
+        general.update(recount)
+    return [r for rows in general.values() for r in rows], unmatched
 
 
 ADAPTERS = {"clarity": clarity, "results_export": results_export, "enhanced_voting": enhanced_voting, "ncsbe": ncsbe, "mn_sos": mn_sos, "hi_oe": hi_oe}

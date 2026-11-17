@@ -146,17 +146,32 @@ const files: Record<string, string> = {
 // The commit changes on every commit, so --check leaves it out of the comparison.
 const manifestText = (m: typeof manifest) => `${JSON.stringify(m, null, 2)}\n`;
 
+// The first line where two texts part, for a --check failure message. On GitHub Actions each failure is
+// also written as an ::error annotation, which the public checks API shows without the job log.
+const firstDiff = (a: string, b: string) => {
+  const x = a.split("\n"), y = b.split("\n");
+  const n = x.findIndex((l, k) => l !== y[k]);
+  const at = n === -1 ? Math.min(x.length, y.length) : n;
+  const l1 = x[at] ?? "<end>", l2 = y[at] ?? "<end>";
+  let c = 0;
+  while (c < l1.length && l1[c] === l2[c]) c++;
+  const from = Math.max(0, c - 120);
+  return `line ${at + 1}, char ${c + 1}: on disk …${l1.slice(from, c + 60)}… / rebuilt …${l2.slice(from, c + 60)}…`;
+};
+const annotate = (lines: string[]) => { if (process.env.GITHUB_ACTIONS) for (const l of lines) console.log(`::error::${l.replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A")}`); };
+
 if (process.argv.includes("--check")) {
   const diffs: string[] = [];
   for (const [name, text] of Object.entries(files)) {
     const f = path.join(DIR, name);
     if (!fs.existsSync(f)) { diffs.push(`${name}: missing`); continue; }
-    if (fs.readFileSync(f, "utf8") !== text) diffs.push(`${name}: differs`);
+    { const disk = fs.readFileSync(f, "utf8"); if (disk !== text) diffs.push(`${name}: differs at ${firstDiff(disk, text)}`); }
   }
   const savedManifest = JSON.parse(fs.readFileSync(path.join(DIR, "manifest.json"), "utf8"));
-  if (JSON.stringify({ ...savedManifest, commit: null }) !== JSON.stringify({ ...manifest, commit: null })) diffs.push("manifest.json: differs");
+  if (JSON.stringify({ ...savedManifest, commit: null }) !== JSON.stringify({ ...manifest, commit: null })) diffs.push(`manifest.json: differs at ${firstDiff(JSON.stringify({ ...savedManifest, commit: null }, null, 1), JSON.stringify({ ...manifest, commit: null }, null, 1))}`);
   if (diffs.length) {
     console.error(`Final-forecast archive differs from the model:\n  ${diffs.join("\n  ")}`);
+    annotate(diffs.map((d) => `Final-forecast archive: ${d}`));
     process.exit(1);
   }
   console.log(`Final-forecast archive OK: ${manifest.counts.races} races, ${manifest.counts.countyRows} county rows match data/forecast-final-2026/`);

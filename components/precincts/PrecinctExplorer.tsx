@@ -6,11 +6,12 @@
 
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 import { RATING_SCALE, OFFICES, OFFICE_LABEL, marginOf, type Office, type StateDemographics, type StateIndex, type StateResults, type StateShell } from "./types";
 import PrecinctDemographics from "./PrecinctDemographics";
+import { chamberDistrictHref } from "@/lib/statePageLinks";
 
 const NationalMap = dynamic(() => import("./NationalMap"), { ssr: false, loading: () => <div style={{ aspectRatio: "975 / 610" }} /> });
 const PrecinctMap = dynamic(() => import("./PrecinctMap"), { ssr: false, loading: () => <div style={{ height: "100%" }} /> });
@@ -19,7 +20,7 @@ const PrecinctMap = dynamic(() => import("./PrecinctMap"), { ssr: false, loading
 const OFFICE_SHORT: Record<Office, [string, string?]> = {
   PRES: ["Pres"], USS: ["Sen"], GOV: ["Gov"], USH: ["House"], SLDU: ["State", "Sen"], SLDL: ["State", "House"],
 };
-const EST_FLAG = 10; // percent of a precinct-year's vote that was fitted from other boundaries before it is marked "~"
+const EST_FLAG = 10; // percent of a precinct-year's vote that was fitted from other boundaries before it is italicized
 
 // Typography shared with the site's county cards and ledgers (components/CountyTooltip, RaceDetailSections).
 const LABEL = "text-[10px] font-semibold uppercase tracking-[0.06em]";
@@ -33,6 +34,82 @@ const pill = (active: boolean, enabled = true): React.CSSProperties => ({
   opacity: enabled ? 1 : 0.55,
   cursor: enabled ? "pointer" : "default",
 });
+
+// The district page behind a precinct's district code, or null where the code can't be matched to
+// one. House: /house/st-nn. Legislature: the chamber explorer, keyed by the atlas's district key
+// (legKey below). MA, NH House and VT codes are the source's own abbreviations, not atlas keys, so they stay unlinked.
+function districtHref(abbr: string, o: Office, code: string, year: number): string | null {
+  if (o === "USH") {
+    const n = code === "AL" ? 1 : parseInt(code, 10);
+    return Number.isFinite(n) && n > 0 ? `/house/${abbr.toLowerCase()}-${String(n).padStart(2, "0")}` : null;
+  }
+  if (o !== "SLDU" && o !== "SLDL") return null;
+  const chamber = o === "SLDU" ? "senate" : "house";
+  if (abbr === "MA" || abbr === "VT" || (abbr === "NH" && chamber === "house")) return null;
+  const key = legKey(abbr, o, code, year);
+  if (!/^\d+[A-Z]?$|^[A-Z]$/.test(key)) return null;
+  if (abbr === "MN" && chamber === "house" && /^\d+$/.test(key)) return null; // MN House keys are always 1A/1B
+  return chamberDistrictHref(abbr.toLowerCase(), chamber, key);
+}
+
+// A precinct file's legislative district code as the site's district key ("1", "1A", "B"). Codes vary
+// by source: WA writes "DISTRICT 1, POSITION 1", "001, POSITION 1", or in 2024 "011" (district 01,
+// position 1); ID House seats carry a letter ("01A") the site's districts don't. Mirrors leg_key() in
+// scripts/precincts/build_one_party.py.
+function legKey(abbr: string, o: Office, code: string, year: number): string {
+  let k = code.trim().toUpperCase().replace(/^DISTRICT\s+/, "").replace(/(,\s*POSITION.*|-P\d+)$/, "");
+  if (o === "SLDL" && abbr === "WA" && year === 2024 && /^\d{3}$/.test(k)) k = k.slice(0, -1);
+  if (o === "SLDL" && abbr === "ID") k = k.replace(/[A-Z]$/, "");
+  return k.replace(/^0+(?=\d)/, "");
+}
+
+// Races where one of the two parties had no candidate, from public/precincts/one-party.json
+// (scripts/precincts/build_one_party.py, built from the site's district-level results). Where that
+// file doesn't cover a state-year-office, the fallback is a district (statewide: state) with no votes
+// on one side in the precinct rows.
+type OnePartyData = {
+  covered: Record<string, Record<string, Office[]>>;
+  races: Record<string, Record<string, Partial<Record<Office, Record<string, "D" | "R" | "same">>>>>;
+};
+type OneParty = { long: string };
+const districtSums = new WeakMap<StateResults, Map<Office, Map<string, [number, number]>>>();
+function sidesOf(res: StateResults, o: Office, district: string): [number, number] | undefined {
+  let byOffice = districtSums.get(res);
+  if (!byOffice) districtSums.set(res, (byOffice = new Map()));
+  let sums = byOffice.get(o);
+  if (!sums) {
+    const m = new Map<string, [number, number]>();
+    const ds = res.districts[o] ?? [];
+    (res.offices[o] ?? []).forEach((row, n) => {
+      const d = ds[n];
+      if (!d || !row) return;
+      const t = m.get(d) ?? [0, 0];
+      t[0] += row[0]; t[1] += row[1];
+      m.set(d, t);
+    });
+    byOffice.set(o, (sums = m));
+  }
+  return sums.get(district);
+}
+function describeOneParty(kind: "D" | "R" | "same"): OneParty {
+  if (kind === "same") return { long: "Both candidates were of one party, so the margin is between two of its candidates, not a D-vs-R race." };
+  return { long: `No ${kind === "D" ? "Republican" : "Democrat"} ran, so the margin is not a D-vs-R race.` };
+}
+function onePartyRace(shell: StateShell, res: StateResults | null | undefined, o: Office, i: number, year: number, data: OnePartyData | null): OneParty | null {
+  if (!res || o === "PRES") return null;
+  const statewide = o === "USS" || o === "GOV";
+  const district = statewide ? "*" : res.districts[o]?.[i];
+  if (!district) return null;
+  if (data?.covered[shell.abbr]?.[year]?.includes(o)) {
+    const kind = data.races[shell.abbr]?.[year]?.[o]?.[statewide ? "*" : legKey(shell.abbr, o, district, year)];
+    return kind ? describeOneParty(kind) : null;
+  }
+  const sum = statewide ? shell.years[String(year)]?.[o] : undefined;
+  const sides = statewide ? (sum ? [sum.d, sum.r] : undefined) : sidesOf(res, o, district);
+  if (!sides || (sides[0] > 0 && sides[1] > 0) || sides[0] + sides[1] === 0) return null;
+  return describeOneParty(sides[1] === 0 ? "D" : "R");
+}
+const ONE_PARTY_OPACITY = 0.45;
 
 function SectionHead({ children }: { children: React.ReactNode }) {
   return <div className={`${KICKER} pb-1.5`} style={{ color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" }}>{children}</div>;
@@ -49,6 +126,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
   const [moved, setMoved] = useState(false);
   const [resetNonce, setResetNonce] = useState(0);
   const [data, setData] = useState<Map<string, StateResults | null>>(() => new Map()); // keyed "year|ST"
+  const [onePartyData, setOnePartyData] = useState<OnePartyData | null>(null);
   const [indexes, setIndexes] = useState<Map<string, StateIndex | null>>(() => new Map()); // keyed ST
   const [demographics, setDemographics] = useState<Map<string, StateDemographics | null>>(() => new Map()); // keyed ST
   const byAbbr = useMemo(() => new Map(states.map((s) => [s.abbr, s])), [states]);
@@ -89,6 +167,13 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
       .then((index) => { if (live) setIndexes((prev) => new Map(prev).set(current, index)); });
     return () => { live = false; };
   }, [current, indexes]);
+  useEffect(() => {
+    if (selectedPid === null || onePartyData) return;
+    let live = true;
+    fetch("/precincts/one-party.json").then((r) => (r.ok ? (r.json() as Promise<OnePartyData>) : null)).catch(() => null)
+      .then((d) => { if (live && d) setOnePartyData(d); });
+    return () => { live = false; };
+  }, [selectedPid, onePartyData]);
   // Census profile for the open state: fetched the first time a precinct is picked there.
   useEffect(() => {
     if (!current || !wantAll || demographics.has(current)) return;
@@ -119,6 +204,9 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
   const shown: Office = available.has(office) ? office : (OFFICES.find((o) => available.has(o)) ?? office);
 
   const i = shell && selectedPid !== null ? selectedPid - shell.first : -1;
+  // On wide screens the sidebar scrolls inside the map's height; a new precinct starts at its top.
+  const asideRef = useRef<HTMLElement>(null);
+  useEffect(() => { asideRef.current?.scrollTo({ top: 0 }); }, [i, current]);
   const selName = i >= 0 ? cached?.index?.names[i] : undefined;
   const selCounty = i >= 0 && cached?.index ? cached.index.counties[cached.index.county[i]]?.[1] : undefined;
   const selRow = i >= 0 ? cached?.results?.offices[shown]?.[i] : undefined;
@@ -126,6 +214,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
   const historyOffices = useMemo(() => (shell ? OFFICES.filter((o) => Object.values(shell.years).some((y) => y[o])) : []), [shell]);
   const historyLoading = !!current && stateYears.some((y) => !data.has(`${y}|${current}`));
   const selMargin = marginOf(selRow);
+  const selOneParty = shell && i >= 0 && selMargin !== null ? onePartyRace(shell, cached?.results, shown, i, year, onePartyData) : null;
   const stateSum = shell?.years[String(year)]?.[shown];
   const stateMargin = stateSum ? marginOf([stateSum.d, stateSum.r, stateSum.o]) : null;
 
@@ -221,7 +310,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
         </div>
 
         {/* panel */}
-        <aside className="min-w-0">
+        <aside ref={asideRef} className="min-w-0 lg:max-h-[max(400px,min(72vh,680px))] lg:overflow-y-auto lg:overscroll-contain lg:pr-2" style={{ scrollbarWidth: "thin" }}>
           {shell && i >= 0 && cached?.results ? (
             <div>
               <div className="flex items-start justify-between gap-3">
@@ -233,7 +322,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
               </div>
               <div className="mt-2 flex items-end justify-between gap-3">
                 <div>
-                  <div className="tabular-nums" style={{ ...SERIF_FIGURE, fontSize: 30, color: marginColor(selMargin) }}>{selMargin === null ? "—" : fmtMargin(selMargin)}</div>
+                  <div className="tabular-nums" title={selOneParty?.long} style={{ ...SERIF_FIGURE, fontSize: 30, color: marginColor(selMargin), opacity: selOneParty ? ONE_PARTY_OPACITY : undefined }}>{selMargin === null ? "—" : fmtMargin(selMargin)}</div>
                   <div className={`mt-0.5 ${LABEL}`} style={{ color: "var(--app-text-muted)" }}>{OFFICE_LABEL[shown]} · {year}</div>
                 </div>
                 {selRow && selMargin !== null && (
@@ -260,16 +349,25 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                     if (!row) return null;
                     const m = marginOf(row);
                     const district = cached.results!.districts[o]?.[i];
+                    const one = m === null ? null : onePartyRace(shell, cached.results, o, i, year, onePartyData);
                     return (
                       <tr key={o} onClick={() => setOffice(o)} className="cursor-pointer" style={{ borderTop: "1px solid var(--app-border)", background: o === shown ? "var(--app-tab-bg)" : undefined }}>
                         <td className="py-1.5 pr-2 text-[13px]" style={{ color: "var(--app-text-primary)" }}>
                           <span className="font-semibold">{OFFICE_LABEL[o]}</span>
-                          {district && <span className="ml-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{district.replace(/^0+(?=\d)/, "")}</span>}
+                          {district && (() => {
+                            const href = districtHref(shell.abbr, o, district, year);
+                            const label = district.replace(/^0+(?=\d)/, "");
+                            return href ? (
+                              <Link prefetch={false} href={href} onClick={(e) => e.stopPropagation()} title={`Go to ${OFFICE_LABEL[o]} district ${label}`} className="ml-1.5 text-[11px] underline decoration-dotted underline-offset-2 hover:decoration-solid" style={{ color: "var(--app-text-muted)" }}>{label}</Link>
+                            ) : (
+                              <span className="ml-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{label}</span>
+                            );
+                          })()}
                         </td>
                         <td className="py-1.5 pl-1 text-right text-xs" style={{ color: "var(--party-dem)" }}>{m === null ? "" : row[0].toLocaleString()}</td>
                         <td className="py-1.5 pl-2 text-right text-xs" style={{ color: "var(--party-rep)" }}>{m === null ? "" : row[1].toLocaleString()}</td>
-                        <td className="py-1.5 pl-2 text-right text-[13px] font-bold" style={{ color: marginColor(m), whiteSpace: "nowrap" }}>
-                          {m === null ? <span className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>no contest</span> : fmtMargin(m)}
+                        <td className="py-1.5 pl-2 text-right text-[13px] font-bold" title={one?.long} style={{ color: marginColor(m), whiteSpace: "nowrap" }}>
+                          {m === null ? <span className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>no contest</span> : <span style={{ opacity: one ? ONE_PARTY_OPACITY : undefined }}>{fmtMargin(m)}</span>}
                         </td>
                       </tr>
                     );
@@ -277,11 +375,12 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                 </tbody>
               </table>
               <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>
-                For president, Senate, governor and U.S. House the two sides are the leading candidates. Legislative rows are party totals.
+                For president, Senate, governor and U.S. House the two sides are the leading candidates. Legislative rows are party totals. A faded margin had no candidate from one of the two parties: unopposed, or two candidates of one party.
               </p>
 
               {stateYears.length > 1 && (() => {
                 let anyEst = false;
+                let anyOne = false;
                 const body = stateYears.map((y) => {
                   const res = data.get(`${y}|${shell.abbr}`);
                   return (
@@ -294,6 +393,8 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                         const m = marginOf(row);
                         const est = m !== null && (res?.est?.[o]?.[i] ?? 0) > EST_FLAG;
                         if (est) anyEst = true;
+                        const one = m === null ? null : onePartyRace(shell, res, o, i, y, onePartyData);
+                        if (one) anyOne = true;
                         const on = y === year && o === shown;
                         return (
                           <td key={o} className="py-1.5 pl-0.5 text-right text-[10.5px] font-semibold" style={{ whiteSpace: "nowrap", background: on ? "var(--app-tab-bg)" : undefined }}>
@@ -302,11 +403,11 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                             ) : (
                               <button
                                 onClick={() => { setYear(y); setOffice(o); }}
-                                title={`${OFFICE_LABEL[o]} ${y}: Democrat ${row[0].toLocaleString()}, Republican ${row[1].toLocaleString()}, other ${row[2].toLocaleString()}${est ? ". Estimate: divided from different lines or a larger area." : ""}`}
+                                title={`${OFFICE_LABEL[o]} ${y}: Democrat ${row[0].toLocaleString()}, Republican ${row[1].toLocaleString()}, other ${row[2].toLocaleString()}${est ? ". Estimate: divided from different lines or a larger area." : ""}${one ? `. ${one.long}` : ""}`}
                                 className="hover:underline"
-                                style={{ color: marginColor(m), fontStyle: est ? "italic" : undefined }}
+                                style={{ color: marginColor(m), fontStyle: est ? "italic" : undefined, opacity: one ? ONE_PARTY_OPACITY : undefined }}
                               >
-                                {est ? "~" : ""}{fmtMargin(m)}
+                                {fmtMargin(m)}
                               </button>
                             )}
                           </td>
@@ -336,7 +437,8 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                     <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>
                       {historyLoading ? "Loading earlier years… " : ""}
                       Every year is shown on this precinct&rsquo;s 2024 lines. Click a margin to put that race on the map.
-                      {anyEst ? " A margin marked ~ is an estimate: that year’s votes were counted on different lines or for a larger area, and were divided among precincts." : ""}
+                      {anyOne ? " A faded margin had no candidate from one of the two parties." : ""}
+                      {anyEst ? " A margin in italics is an estimate: that year’s votes were counted on different lines or for a larger area, and were divided among precincts." : ""}
                     </p>
                   </div>
                 );
