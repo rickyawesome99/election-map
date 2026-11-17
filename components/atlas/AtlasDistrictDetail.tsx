@@ -412,7 +412,7 @@ export default function AtlasDistrictDetail({
         </Reveal>
       )}
 
-      {district.projection && <Reveal as="div"><AtlasOutlook district={district} eras={eras} electionYear={electionYear} /></Reveal>}
+      {district.projection && <Reveal as="div"><AtlasOutlook district={district} eras={eras} electionYear={electionYear} chamber={chamber} /></Reveal>}
 
       {/* Electoral history */}
       <Reveal>
