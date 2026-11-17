@@ -32,6 +32,9 @@ LAYER = "precincts"
 # z4 so a whole large state (TX, CA, MT, AK fit at z4–5 on a laptop, lower on a phone) renders from its
 # own archive; the 120 KB cap coalesces the smallest polygons at those zooms, where they are sub-pixel.
 MIN_ZOOM, MAX_ZOOM = 4, 12
+# Alaska (Aleutians across the antimeridian) only fits at ~z3.2 on a laptop and ~z1.5 on a phone, and
+# MapLibre draws nothing below an archive's min zoom, so its archive starts lower.
+MIN_ZOOM_OVERRIDE = {"AK": 1}
 MAX_TILE_BYTES = 120_000
 
 STATES = [
@@ -56,7 +59,7 @@ def build(state: str, verbose: bool) -> Path | None:
     out = OUT_DIR / f"{state}.pmtiles"
     cmd = [
         tippecanoe(), "-o", str(out), "-l", LAYER,
-        "-Z", str(MIN_ZOOM), "-z", str(MAX_ZOOM),
+        "-Z", str(MIN_ZOOM_OVERRIDE.get(state, MIN_ZOOM)), "-z", str(MAX_ZOOM),
         "--use-attribute-for-id=pid",       # integer pid becomes the vector-tile feature id (feature-state key)
         "-y", "pid", "-y", "st",            # keep only these attributes
         "-pn",                               # no simplification of shared nodes (replaces --detect-shared-borders)

@@ -61,7 +61,7 @@ export function ElectionResultFootnote({ r, house = false }: { r: RaceResult2026
         : <>Votes counted as of {fmtDate(r.asOf)}{house ? ", by the district's part of each county" : ", by county"}, from the <a href="https://civicapi.org" className="underline underline-offset-2" target="_blank" rel="noreferrer">civicAPI</a> feed. Unofficial until certified.</>}
       {r.total > 0 ? blocNote : ""}
       {r.called && !resultCalled(r) ? ` The seat is called for the ${r.winnerParty === "R" ? "Republicans" : "Democrats"}; the race between the two finalists is not.` : ""}{" "}
-      <Link href="/analysis/post-election" className="underline underline-offset-2" prefetch={false}>All results</Link>.
+      <Link href="/overview" className="underline underline-offset-2" prefetch={false}>All results</Link>.
     </p>
   );
 }

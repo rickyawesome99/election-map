@@ -9,7 +9,7 @@ export const PAST_POST_ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
 
 export type LegSeats = { dem: number; rep: number; oth: number };
 
-/** One state legislative chamber on /analysis/post-election. `seats` are settled: called, or not up
+/** One state legislative chamber on the post-election analysis (/overview). `seats` are settled: called, or not up
  *  (with no 2026 election, the chamber's current seats). `leading` are uncalled, by who is ahead. */
 export type LegChamberResult = {
   chamber: "house" | "senate";
@@ -31,7 +31,7 @@ export type LegChamberResult = {
   noPrior?: boolean;
 };
 
-/** One race on /analysis/post-election, as lib/resultsSnapshot.ts reads it from the saved CSV. */
+/** One race on the post-election analysis (/overview), as lib/resultsSnapshot.ts reads it from the saved CSV. */
 export type PostElectionRow = {
   prior: Pick<RacePrior, "id" | "label" | "state" | "stateName" | "special" | "seatParty"> & {
     office: PostElectionOffice;

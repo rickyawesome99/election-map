@@ -8,7 +8,7 @@ import { parseCsv } from "@/lib/turnout";
 import type { LegChamberResult, LegSeats, PostElectionRow } from "@/lib/postElectionTypes";
 import type { Party } from "@/lib/resultsTypes";
 
-// A past year on /analysis/post-election, in the 2026 page's shapes, from the historical results
+// A past year of the post-election analysis (/overview/[year]), in the 2026 page's shapes, from the historical results
 // files the past-election pages are built on: data-entry/{house,senate,governor,president}_past_results.csv
 // and state_leg.csv. Every race is final, so each is called for its winner. A flip is a seat won by a
 // party other than the one that won it last time (the same district number for the House).

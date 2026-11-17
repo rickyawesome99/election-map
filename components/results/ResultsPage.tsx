@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { memo, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { useTouchHover } from "@/lib/useTouchHover";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { StandfirstHeader } from "@/components/StandfirstHeader";
@@ -13,41 +13,32 @@ import ChamberCard from "@/components/results/ChamberCard";
 import { flipBackground } from "@/components/FlipStripes";
 import ResultsRaceTable from "@/components/results/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
-import { fetchRaces, normalizeRace, CIVIC_ATTRIBUTION } from "@/lib/resultsFeed";
-import { nightObservations, partyVotes, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
-import { areaSwings, fitNight, type NightFit } from "@/lib/resultsNight";
+import { LATE_COUNT_FROM, partyVotes, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
 import NightPanel from "@/components/results/NightPanel";
-import { closeMinutes, fmtClose, fmtDateTime, fmtTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, fmtInt, inColor, inState } from "@/lib/resultsFormat";
+import { reviveNightFit, type NightFit } from "@/lib/resultsNight";
+import { closeMinutes, fmtClose, fmtDateTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, fmtInt, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
-import { ELECTION_DATE, FEED_OPENS_AT, OFFICE_LABEL, RESULTS_OFFICES, type LiveRace, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type ArchiveSeries, type RaceHistory } from "@/lib/resultsTypes";
+import { OFFICE_LABEL, RESULTS_ARCHIVE, RESULTS_OFFICES, type LiveRace, type ResultsArchiveChunk, type ResultsArchiveFrame, type ResultsArchiveManifest, type PriorsSlice, type RacePrior, type RaceProjection, type ResultsOffice, type SeatSeries, type RaceMarginSeries, type RaceHistory } from "@/lib/resultsTypes";
 
-// The election-night Results page. Priors (forecast, nominees, county projection, closing times,
-// civicAPI ids) come from the static slice /api/results/priors/{office}; live counts come
-// straight from civicAPI in the browser (lib/resultsFeed.ts); the needle (lib/resultsNeedle.ts)
-// runs on every refresh. Nothing here imports the forecast or a dataset.
+// The 2026 Results page: a static archive of the count as it came in, 6 PM ET Nov 3 → 6 PM ET
+// Nov 16. Nothing here reads a live feed or the clock. The priors (forecast, nominees, county
+// projection, closing times) come from the static slice /api/results/priors/{office}; the count
+// from public/results-archive-2026/ (scripts/publish-results-archive.ts): a manifest of 338
+// frames, chunk files of a keyframe plus each later frame's changed races (with the night model's
+// fit precomputed per frame), the chambers' seat series and, read only once a race opens, every
+// race's margin series. A frame shows the needle (lib/resultsNeedle.ts) run against that board.
+// Speed: a chunk's boards are built once and cached, the chunks either side are fetched ahead,
+// and the heavy render trails the slider (useDeferredValue) so stepping never blocks.
 
 export type ResultsRow = { prior: RacePrior; live: LiveRace | null; proj: RaceProjection };
-type ArchiveSnapshot = { file: string; fetchedAt: string; set?: string };
+type Board = { index: number; t: number; races: Map<number, LiveRace>; frame: ResultsArchiveFrame; fit: NightFit };
 
-const AUTO_EVERY_MS = 120_000;
-/** County detail is refetched for competitive races at most this often; the selected race every refresh. */
-const DETAIL_EVERY_MS = 5 * 60_000;
-/** The live trend charts start at the first poll close, 6 PM ET (points stored earlier in this
- *  browser, from tests, are left out). */
-const NIGHT_STARTS_AT = Date.parse("2026-11-03T23:00:00Z");
+const DIR = `/${RESULTS_ARCHIVE.dir}`;
 /** Races listed under Latest updates. */
 const LATEST_SHOWN = 8;
-/** The local intake store is read this often. */
-const STORE_EVERY_MS = 10_000;
-/** The seat charts take at most one point per this long. */
-const SEAT_POINT_MS = 110_000;
-/** An open race page re-reads its own county detail this often. */
-const SELECTED_EVERY_MS = 30_000;
-/** A refresh pass running longer than this is presumed hung and restarted. */
-const STUCK_MS = 5 * 60_000;
+/** Play: one frame per this long. */
+const PLAY_EVERY_MS = 700;
 const COMPETITIVE = 15;
-/** Points kept per race in the live margin record before the older half is thinned. */
-const RACE_HISTORY_CAP = 160;
 /** z for the 80% band. */
 const Z80 = 1.2816;
 const muted = { color: "var(--app-text-muted)" };
@@ -55,38 +46,57 @@ const veryMuted = { color: "var(--app-text-very-muted)" };
 
 type SortKey = "close" | "margin" | "projected" | "forecast" | "in";
 
-// A published snapshot is the archive's .json.gz as is. Hosts serve it as application/gzip, but
-// one that adds Content-Encoding hands over plain JSON already: only gunzip what starts gzipped.
+// A chunk is published gzipped. Hosts serve it as application/gzip, but one that adds
+// Content-Encoding hands over plain JSON already: only gunzip what starts gzipped.
 async function readGzipJson(res: Response): Promise<unknown> {
   const bytes = new Uint8Array(await res.arrayBuffer());
   if (bytes[0] !== 0x1f || bytes[1] !== 0x8b) return JSON.parse(new TextDecoder().decode(bytes));
   return new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"))).json();
 }
 
+/** Two rows show the same thing: the same race payload and every headline figure equal. */
+function sameRow(a: ResultsRow, b: ResultsRow): boolean {
+  const p = a.proj, q = b.proj;
+  return a.live === b.live && p.margin === q.margin && p.sigma === q.sigma && p.probD === q.probD && p.locked === q.locked && p.winner === q.winner
+    && p.currentMargin === q.currentMargin && p.countedShare === q.countedShare && p.projectedTotal === q.projectedTotal && p.counted === q.counted
+    && p.tier === q.tier && p.turnoutFactor === q.turnoutFactor && p.swing === q.swing && p.night.shift === q.night.shift && p.night.se === q.night.se;
+}
+
 const isCompetitive = (p: RacePrior) => p.forecast.contest === "contested" && Math.abs(p.forecast.margin) < COMPETITIVE;
+
+/** Every frame's board in a chunk, built once: the keyframe, then each frame's changed races laid
+ *  over the one before. The needle reads a race's fetchedAt only against LATE_COUNT_FROM (its
+ *  late-count rules), so each race is stamped with the frame's side of that line, and a race that
+ *  did not change keeps the very same object from frame to frame (cheap redraws downstream). */
+function buildBoards(chunk: ResultsArchiveChunk): Board[] {
+  const out: Board[] = [];
+  let prev = new Map<number, LiveRace>();
+  const stored = new Map<number, LiveRace>();
+  chunk.frames.forEach((frame, k) => {
+    const stamp = frame.t >= LATE_COUNT_FROM ? LATE_COUNT_FROM : RESULTS_ARCHIVE.start;
+    const changed = new Set<number>();
+    for (const l of frame.races) { stored.set(l.civicId, l); changed.add(l.civicId); }
+    const races = new Map<number, LiveRace>();
+    for (const [id, l] of stored) {
+      const before = prev.get(id);
+      races.set(id, before && !changed.has(id) && before.fetchedAt === stamp ? before : { ...l, fetchedAt: stamp });
+    }
+    prev = races;
+    out.push({ index: chunk.first + k, t: frame.t, races, frame, fit: reviveNightFit(frame.fit) });
+  });
+  return out;
+}
 
 export default function ResultsPage() {
   const [priors, setPriors] = useState<Record<ResultsOffice, PriorsSlice> | null>(null);
+  const [manifest, setManifest] = useState<ResultsArchiveManifest | null>(null);
+  const [seatSeries, setSeatSeries] = useState<SeatSeries | null>(null);
+  const [raceSeries, setRaceSeries] = useState<RaceMarginSeries | null>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
-  const liveRef = useRef(new Map<number, LiveRace>());
-  const detailAt = useRef(new Map<number, number>());
-  const abortRef = useRef<AbortController | null>(null);
-  const passStarted = useRef(0);
-  const passesDone = useRef(0);
-  // Dev with scripts/results-live.mjs running: the page reads its store (/api/results/live)
-  // instead of polling civicAPI itself.
-  const storeRef = useRef(false);
-  const storeCursor = useRef(0);
-  const pollStoreRef = useRef<() => Promise<void>>(async () => {});
-  const [storeMode, setStoreMode] = useState(false);
-  const [liveVersion, setLiveVersion] = useState(0);
-  const [refreshing, setRefreshing] = useState(false);
-  const [lastRefresh, setLastRefresh] = useState<number | null>(null);
-  // When the page last heard from the feed or the intake store (lastRefresh: when the data last changed).
-  const [lastChecked, setLastChecked] = useState<number | null>(null);
-  const [failed, setFailed] = useState(0);
-  const [auto, setAuto] = useState(true);
-  const [allowTest, setAllowTest] = useState(false);
+  // The frame asked for (the slider) and the board shown; the board follows once its chunk is in.
+  const [frame, setFrame] = useState<number | null>(null);
+  const [board, setBoard] = useState<Board | null>(null);
+  const [playing, setPlaying] = useState(false);
   const [office, setOffice] = useState<ResultsOffice>("house");
   const [mapMode, setMapMode] = useState<MapMode>("status");
   const [sort, setSort] = useState<SortKey>("close");
@@ -97,34 +107,22 @@ export default function ResultsPage() {
   const [stateView, setStateView] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const selectedRef = useRef<string | null>(null);
-  selectedRef.current = selected;
-  // Replay: the archive script's snapshots, read from the dev-only archive routes, or on the
-  // deployed site (where those are empty) from the simulated nights scripts/publish-sim-night.ts
-  // copied to public/results-sim/. While a snapshot is shown the live feed is not read.
-  const [archiveAll, setArchiveAll] = useState<ArchiveSnapshot[]>([]);
-  const [archiveStatic, setArchiveStatic] = useState(false);
-  // Sets: only the simulated nights (sim-*) for now, the pre-election preview; the latest set is
-  // the default. The archiver's dated sets are civicAPI test data and are left out.
-  const archiveSets = useMemo(() => Array.from(new Set(archiveAll.map((a) => a.set ?? "archive"))).filter((set) => set.startsWith("sim-")), [archiveAll]);
-  const [archiveSet, setArchiveSet] = useState<string | null>(null);
-  const activeSet = archiveSet && archiveSets.includes(archiveSet) ? archiveSet : archiveSets[archiveSets.length - 1] ?? null;
-  const archive = useMemo(() => archiveAll.filter((a) => (a.set ?? "archive") === activeSet), [archiveAll, activeSet]);
-  const [replay, setReplay] = useState<number | null>(null);
-  const replayRef = useRef<number | null>(null);
-  replayRef.current = replay;
-  const [replayLoading, setReplayLoading] = useState(false);
+  useEffect(() => { selectedRef.current = selected; }, [selected]);
 
-  // Priors, once.
+  // Priors, the manifest and the seat series, once, in parallel; the page opens on the last frame.
   useEffect(() => {
-    Promise.all(RESULTS_OFFICES.map((o) => loadStaticJson<PriorsSlice>(`/api/results/priors/${o}`)))
-      .then(([house, senate, governor]) => setPriors({ senate, governor, house }))
-      .catch((e: Error) => setLoadError(e.message));
+    Promise.all([
+      Promise.all(RESULTS_OFFICES.map((o) => loadStaticJson<PriorsSlice>(`/api/results/priors/${o}`))),
+      fetch(`${DIR}/manifest.json`).then((r) => { if (!r.ok) throw new Error(`archive manifest ${r.status}`); return r.json() as Promise<ResultsArchiveManifest>; }),
+    ]).then(([[house, senate, governor], m]) => {
+      setPriors({ senate, governor, house });
+      setManifest(m);
+      setFrame((f) => f ?? m.frames.length - 1);
+    }).catch((e: Error) => setLoadError(e.message));
+    fetch(`${DIR}/seats.json`).then((r) => (r.ok ? r.json() : null)).then((s: SeatSeries | null) => { if (s) setSeatSeries(s); }).catch(() => {});
   }, []);
 
-  // ?test=1 previews the page on the stored simulated night (a replay; civicAPI is not read). A
-  // live test payload still reads as "nothing in".
   useEffect(() => {
-    setAllowTest(new URLSearchParams(window.location.search).get("test") === "1");
     const readHash = () => setSelected(window.location.hash ? decodeURIComponent(window.location.hash.slice(1)) : null);
     readHash();
     window.addEventListener("hashchange", readHash);
@@ -132,363 +130,104 @@ export default function ResultsPage() {
     return () => { window.removeEventListener("hashchange", readHash); window.removeEventListener("popstate", readHash); };
   }, []);
 
-  const allPriors = useMemo(() => (priors ? [...priors.senate.races, ...priors.governor.races, ...priors.house.races] : []), [priors]);
-  // Refresh order: by poll close, earliest first, so a slow pass reaches the races with votes in
-  // before the ones still voting ("00:00" is Alaska, after midnight).
-  const fetchOrder = useMemo(() => {
-    const key = (p: RacePrior) => { const [h, m] = p.pollsClose.first.split(":").map(Number); return (h < 12 ? h + 24 : h) * 60 + m; };
-    return [...allPriors].sort((a, b) => key(a) - key(b));
-  }, [allPriors]);
-
+  // Every race's margin over the count, only once a race is open.
   useEffect(() => {
-    if (!SHOW_REPLAY) return;
-    const list = (url: string) => fetch(url, { cache: "no-store" }).then((r) => (r.ok ? r.json() : { snapshots: [] })).then((d: { snapshots?: ArchiveSnapshot[] }) => d.snapshots ?? []).catch(() => [] as ArchiveSnapshot[]);
-    list("/api/results/archive").then(async (snaps) => {
-      if (snaps.some((a) => a.set?.startsWith("sim-"))) return setArchiveAll(snaps);
-      const published = await list("/results-sim/manifest.json");
-      setArchiveStatic(published.length > 0);
-      setArchiveAll(published);
-    });
-  }, []);
+    if (!selected || raceSeries) return;
+    fetch(`${DIR}/races.json`).then((r) => (r.ok ? r.json() : null)).then((s: RaceMarginSeries | null) => { if (s) setRaceSeries(s); }).catch(() => {});
+  }, [selected, raceSeries]);
 
-  // Before election night the feed is closed: no civicAPI requests at all. A page left open flips
-  // itself on at FEED_OPENS_AT.
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => {
-    if (now >= FEED_OPENS_AT) return;
-    const id = setTimeout(() => setNow(Date.now()), Math.min(FEED_OPENS_AT - now + 500, 60 * 60_000));
-    return () => clearTimeout(id);
-  }, [now]);
-  const feedOpen = now >= FEED_OPENS_AT;
-  const feedOpenRef = useRef(feedOpen);
-  feedOpenRef.current = feedOpen;
-
-  const refresh = useCallback(async () => {
-    if (!allPriors.length || replayRef.current != null || !feedOpenRef.current) return;
-    if (storeRef.current) return pollStoreRef.current();
-    // A pass still running is left to finish: under election-night load one can outlast the
-    // 2-minute timer, and restarting it from the top meant the races at the end of the list
-    // (House) were never reached. Only a pass stuck for STUCK_MS is cut off.
-    if (abortRef.current && !abortRef.current.signal.aborted && Date.now() - passStarted.current < STUCK_MS) return;
-    abortRef.current?.abort();
-    const ctl = new AbortController();
-    abortRef.current = ctl;
-    passStarted.current = Date.now();
-    setRefreshing(true);
-    const now = Date.now();
-    const firstPass = !passesDone.current;
-    const detail = (p: RacePrior) => {
-      if (!p.civicId) return false;
-      if (selectedRef.current === raceHash(p)) return true;
-      // The first pass after a load takes toplines only, so every race is current as fast as
-      // the feed allows; county detail follows on the next pass.
-      return !firstPass && isCompetitive(p) && now - (detailAt.current.get(p.civicId) ?? 0) > DETAIL_EVERY_MS;
-    };
-    let n = 0;
-    const result = await fetchRaces(fetchOrder, detail, (p, live) => {
-      const prev = liveRef.current.get(p.civicId!);
-      if (live.counties) detailAt.current.set(p.civicId!, now);
-      // A topline refresh keeps the county detail fetched earlier (at most DETAIL_EVERY_MS old).
-      liveRef.current.set(p.civicId!, live.counties || !prev?.counties ? live : { ...live, counties: prev.counties });
-      if (++n % 10 === 0) setLiveVersion((v) => v + 1);
-    }, ctl.signal);
-    if (ctl.signal.aborted) return;
-    abortRef.current = null;
-    passesDone.current++;
-    setFailed(result.failed);
-    setLastRefresh(Date.now());
-    setLastChecked(Date.now());
-    setLiveVersion((v) => v + 1);
-    setRefreshing(false);
-  }, [allPriors, fetchOrder]);
-
-  const putLive = useCallback((live: LiveRace) => {
-    const prev = liveRef.current.get(live.civicId);
-    if (prev && prev.fetchedAt >= live.fetchedAt) return;
-    liveRef.current.set(live.civicId, live.counties || !prev?.counties ? live : { ...live, counties: prev.counties });
-  }, []);
-  useEffect(() => {
-    if (!allPriors.length || replay != null || !feedOpen) return;
-    let stopped = false;
-    const poll = async () => {
-      try {
-        const res = await fetch(`/api/results/live?since=${storeCursor.current}`, { cache: "no-store" });
-        if (!res.ok || stopped) return;
-        const d = (await res.json()) as { available: boolean; now: number; races: LiveRace[] };
-        if (!d.available) return;
-        setLastChecked(Date.now());
-        if (!storeRef.current) { storeRef.current = true; setStoreMode(true); abortRef.current?.abort(); setRefreshing(false); }
-        storeCursor.current = Math.max(storeCursor.current, d.now);
-        for (const live of d.races) putLive(live);
-        if (d.races.length) { setLastRefresh(d.now); setFailed(0); setLiveVersion((v) => v + 1); }
-      } catch { /* store unreachable: keep what we have */ }
-    };
-    pollStoreRef.current = poll;
-    poll();
-    const id = setInterval(() => { if (document.visibilityState === "visible") poll(); }, STORE_EVERY_MS);
-    return () => { stopped = true; clearInterval(id); };
-  }, [allPriors, replay, feedOpen, putLive]);
-
-  // Results survive a reload: every race's last payload is kept in this browser and put back
-  // before the first fetch, and (in dev, where the archive route is live) the archiver's latest
-  // snapshot of the night fills in whatever is newer. A race only ever moves to a newer payload.
-  const restored = useRef(false);
-  useEffect(() => {
-    if (!allPriors.length || restored.current) return;
-    restored.current = true;
-    const ids = new Set(allPriors.map((p) => p.civicId));
-    let newest = 0;
-    try {
-      const saved = JSON.parse(localStorage.getItem(LIVE_STORE) ?? "null") as LiveRace[] | null;
-      if (Array.isArray(saved)) for (const l of saved) if (ids.has(l.civicId) && !l.testData) { putLive(l); newest = Math.max(newest, l.fetchedAt); }
-    } catch { /* storage unavailable: start from the feed */ }
-    if (newest) { setLastRefresh((t) => t ?? newest); setLiveVersion((v) => v + 1); }
-    fetch("/api/results/archive", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).then(async (d: { snapshots?: ArchiveSnapshot[] } | null) => {
-      const snap = (d?.snapshots ?? []).filter((a) => a.set?.startsWith(ELECTION_DATE)).sort((a, b) => a.fetchedAt.localeCompare(b.fetchedAt)).pop();
-      if (!snap) return;
-      const res = await fetch(`/api/results/archive?file=${encodeURIComponent(snap.file)}`, { cache: "no-store" });
-      if (!res.ok) return;
-      const data = (await res.json()) as { fetchedAt: string; races: Record<string, unknown> };
-      const at = Date.parse(data.fetchedAt) || Date.parse(snap.fetchedAt);
-      for (const p of allPriors) {
-        const raw = p.civicId ? data.races[String(p.civicId)] : null;
-        if (raw) putLive(normalizeRace(p, raw as never, at));
-      }
-      setLastRefresh((t) => Math.max(t ?? 0, at));
-      setLiveVersion((v) => v + 1);
-    }).catch(() => {});
-  }, [allPriors, putLive]);
-  useEffect(() => {
-    if (replay != null || !liveVersion) return;
-    const id = setTimeout(() => {
-      const all = Array.from(liveRef.current.values()).filter((l) => !l.testData);
-      try { localStorage.setItem(LIVE_STORE, JSON.stringify(all)); }
-      catch { try { localStorage.setItem(LIVE_STORE, JSON.stringify(all.map((l) => ({ ...l, counties: null })))); } catch { /* storage full or unavailable */ } }
-    }, 3000);
-    return () => clearTimeout(id);
-  }, [liveVersion, replay]);
-
-  // First load, then every AUTO_EVERY_MS while the tab is visible.
-  useEffect(() => { if (allPriors.length && feedOpen) refresh(); }, [allPriors, refresh, feedOpen]);
-  useEffect(() => {
-    if (!auto) return;
-    const id = setInterval(() => { if (document.visibilityState === "visible") refresh(); }, AUTO_EVERY_MS);
-    return () => clearInterval(id);
-  }, [auto, refresh]);
-
-  // A snapshot from the archive replaces everything the live feed had (every race, counties included).
-  const loadSnapshot = useCallback(async (index: number) => {
-    const snap = archive[index];
-    if (!snap || !allPriors.length) return;
-    setReplayLoading(true);
-    try {
-      const res = await fetch(archiveStatic ? `/results-sim/${snap.file}` : `/api/results/archive?file=${encodeURIComponent(snap.file)}`, { cache: archiveStatic ? "force-cache" : "no-store" });
-      if (!res.ok) throw new Error(`archive ${res.status}`);
-      const data = (archiveStatic ? await readGzipJson(res) : await res.json()) as { fetchedAt: string; races: Record<string, unknown> };
-      const at = Date.parse(data.fetchedAt) || Date.parse(snap.fetchedAt);
-      const next = new Map<number, LiveRace>();
-      for (const p of allPriors) {
-        const raw = p.civicId ? data.races[String(p.civicId)] : null;
-        if (raw) next.set(p.civicId!, normalizeRace(p, raw as never, at));
-      }
-      liveRef.current = next;
-      detailAt.current = new Map();
-      setLastRefresh(at);
-      setFailed(0);
-      setLiveVersion((v) => v + 1);
-    } catch (e) {
-      if (process.env.NODE_ENV !== "production") console.warn(e);
-    } finally {
-      setReplayLoading(false);
+  // Chunks: fetched once, boards built once, kept for the session (14 MB for all 15).
+  const chunks = useRef(new Map<number, Promise<Board[]>>());
+  const chunkOf = useCallback((index: number) => (manifest ? manifest.chunks.findLastIndex((c) => c.first <= index) : -1), [manifest]);
+  const loadChunk = useCallback((ci: number) => {
+    if (!manifest || ci < 0 || ci >= manifest.chunks.length) return null;
+    let p = chunks.current.get(ci);
+    if (!p) {
+      p = fetch(`${DIR}/${manifest.chunks[ci].file}`).then((res) => { if (!res.ok) throw new Error(`archive ${res.status}`); return readGzipJson(res); }).then((c) => buildBoards(c as ResultsArchiveChunk));
+      p.catch(() => chunks.current.delete(ci));
+      chunks.current.set(ci, p);
     }
-  }, [archive, allPriors, archiveStatic]);
+    return p;
+  }, [manifest]);
 
-  const startReplay = useCallback((index: number) => {
-    const i = Math.max(0, Math.min(archive.length - 1, index));
-    abortRef.current?.abort();
-    setRefreshing(false);
-    setReplay(i);
-    loadSnapshot(i);
-  }, [archive.length, loadSnapshot]);
-
-  const exitReplay = useCallback(() => {
-    setReplay(null);
-    replayRef.current = null;
-    liveRef.current = new Map();
-    detailAt.current = new Map();
-    setLiveVersion((v) => v + 1);
-    refresh();
-  }, [refresh]);
-
-  // ?test=1: start the replay at the first snapshot once the archive and the priors are in.
-  const previewStarted = useRef(false);
+  // The asked-for frame's board; a later request wins over a slower earlier one. The chunks either
+  // side are fetched while the browser is idle, so stepping across a chunk edge is instant.
+  const wanted = useRef<number | null>(null);
   useEffect(() => {
-    if (!allowTest || previewStarted.current || !archive.length || !allPriors.length) return;
-    previewStarted.current = true;
-    startReplay(0);
-  }, [allowTest, archive.length, allPriors.length, startReplay]);
+    if (frame == null || !manifest) return;
+    wanted.current = frame;
+    const ci = chunkOf(frame);
+    loadChunk(ci)?.then((boards) => {
+      if (wanted.current !== frame) return;
+      setBoard(boards[frame - manifest.chunks[ci].first]);
+      const ahead = () => { loadChunk(ci + 1); loadChunk(ci - 1); };
+      if ("requestIdleCallback" in window) requestIdleCallback(ahead, { timeout: 2000 }); else setTimeout(ahead, 300);
+    }).catch((e: Error) => setLoadError(e.message));
+  }, [frame, manifest, chunkOf, loadChunk]);
 
-  // The selected race's county detail: as soon as it is selected (a restored copy may be stale),
-  // then every SELECTED_EVERY_MS while its page is open, apart from the slower full pass.
+  const last = manifest ? manifest.frames.length - 1 : 0;
+  const step = useCallback((to: number) => setFrame(Math.max(0, Math.min(last, to))), [last]);
+
+  // Play: a frame every PLAY_EVERY_MS, waiting for each board before the next; stops at the end.
   useEffect(() => {
-    if (!selected || !allPriors.length || replay != null || !feedOpen) return;
-    const p = allPriors.find((x) => raceHash(x) === selected);
-    if (!p || !p.civicId) return;
-    if (storeMode) return;
-    const pull = () => fetchRaces([p], () => true, (pr, live) => { liveRef.current.set(pr.civicId!, live); detailAt.current.set(pr.civicId!, Date.now()); setLiveVersion((v) => v + 1); });
-    pull();
-    const id = setInterval(() => { if (document.visibilityState === "visible") pull(); }, SELECTED_EVERY_MS);
-    return () => clearInterval(id);
-  }, [selected, allPriors, replay, feedOpen, storeMode]);
+    if (!playing || frame == null || board?.index !== frame) return;
+    const id = setTimeout(() => (frame >= last ? setPlaying(false) : setFrame(frame + 1)), frame >= last ? 0 : PLAY_EVERY_MS);
+    return () => clearTimeout(id);
+  }, [playing, frame, board, last]);
 
-  // Replaying an archive shows whatever it holds, test data included.
-  const showTest = replay != null;
-  // Every race's live state, then the night fit over all of them (what the counties finished
-  // anywhere imply for the races still out), then each race projected against that baseline.
-  const { rowsByOffice, nightFit, nightAreas } = useMemo(() => {
-    void liveVersion;
-    const pairs = {} as Record<ResultsOffice, { prior: RacePrior; live: LiveRace | null }[]>;
-    for (const o of RESULTS_OFFICES) {
-      pairs[o] = (priors?.[o].races ?? []).map((prior) => {
-        const raw = prior.civicId ? liveRef.current.get(prior.civicId) ?? null : null;
-        const live = raw && raw.testData && !showTest ? null : raw;
-        return { prior, live };
-      });
-    }
-    const obs = RESULTS_OFFICES.flatMap((o) => pairs[o].flatMap(({ prior, live }) => nightObservations(prior, live)));
-    const fit: NightFit = fitNight(obs);
-    const areas = areaSwings(obs);
+  // Arrow keys step (Shift: an hour's worth, 12 frames), Home/End jump, space plays; not while typing.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (el && (el.tagName === "INPUT" || el.tagName === "SELECT" || el.tagName === "TEXTAREA" || el.isContentEditable) && !(el instanceof HTMLInputElement && el.type === "range")) return;
+      if (frame == null) return;
+      const by = e.shiftKey ? 12 : 1;
+      if (e.key === "ArrowRight") { e.preventDefault(); setPlaying(false); step(frame + by); }
+      else if (e.key === "ArrowLeft") { e.preventDefault(); setPlaying(false); step(frame - by); }
+      else if (e.key === "Home") { e.preventDefault(); setPlaying(false); step(0); }
+      else if (e.key === "End") { e.preventDefault(); setPlaying(false); step(last); }
+      else if (e.key === " " && !(el instanceof HTMLButtonElement)) { e.preventDefault(); setPlaying((p) => !p); }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [frame, last, step]);
+
+  // The heavy render (map, tables, cards) trails the slider: the slider and its label move at once.
+  const shown = useDeferredValue(board);
+
+  // Every race projected against the frame's board with its precomputed night fit. A race whose
+  // count and figures did not change keeps last frame's row object, so the memoized table rows, map
+  // shapes and cards under it skip their redraw (the open race is always fresh: its county figures
+  // can move while the headline does not).
+  const [rowCache] = useState(() => new Map<string, ResultsRow>());
+  const rowsByOffice = useMemo(() => {
     const out = {} as Record<ResultsOffice, ResultsRow[]>;
-    for (const o of RESULTS_OFFICES) out[o] = pairs[o].map(({ prior, live }) => ({ prior, live, proj: projectRace(prior, live, undefined, fit) }));
-    return { rowsByOffice: out, nightFit: fit, nightAreas: areas };
-  }, [priors, liveVersion, showTest]);
-
-  const testSeen = useMemo(() => { void liveVersion; for (const l of liveRef.current.values()) if (l.testData) return true; return false; }, [liveVersion]);
-
-  // Latest updates: when each race's vote total last moved and by how much. A race first seen
-  // with votes enters at its payload's fetch time (with the intake, the time its count changed).
-  const changesRef = useRef(new Map<number, { at: number; total: number; added: number }>());
-  const [changesVersion, setChangesVersion] = useState(0);
-  useEffect(() => {
-    if (replay != null) return;
-    let moved = false;
-    for (const o of RESULTS_OFFICES) for (const { prior, live } of rowsByOffice[o]) {
-      if (!live || !prior.civicId || live.testData || live.total <= 0) continue;
-      const prev = changesRef.current.get(prior.civicId);
-      if (prev && prev.total === live.total) continue;
-      changesRef.current.set(prior.civicId, { at: live.fetchedAt, total: live.total, added: prev ? live.total - prev.total : live.total });
-      moved = true;
-    }
-    if (moved) setChangesVersion((v) => v + 1);
-  }, [rowsByOffice, replay]);
-  const latestUpdates = useMemo(() => {
-    void changesVersion;
-    const rows = new Map(RESULTS_OFFICES.flatMap((o) => rowsByOffice[o]).filter((r) => r.prior.civicId).map((r) => [r.prior.civicId!, r]));
-    return [...changesRef.current.entries()].sort((a, b) => b[1].at - a[1].at).slice(0, LATEST_SHOWN)
-      .flatMap(([id, c]) => { const row = rows.get(id); return row ? [{ row, ...c }] : []; });
-  }, [changesVersion, rowsByOffice]);
+    const cache = rowCache;
+    for (const o of RESULTS_OFFICES) out[o] = (priors?.[o].races ?? []).map((prior) => {
+      const live = shown && prior.civicId ? shown.races.get(prior.civicId) ?? null : null;
+      const row: ResultsRow = { prior, live, proj: projectRace(prior, live, undefined, shown?.fit) };
+      const key = raceHash(prior), prev = cache.get(key);
+      if (prev && key !== selected && sameRow(prev, row)) return prev;
+      cache.set(key, row);
+      return row;
+    });
+    return out;
+  }, [priors, shown, selected, rowCache]);
 
   const tallies = useMemo(() => Object.fromEntries(RESULTS_OFFICES.map((o) => [o, tallyChamber(rowsByOffice[o], SEAT_HOLDOVERS[o])])) as Record<ResultsOffice, ChamberTally>, [rowsByOffice]);
 
-  // The seat charts' history. Live: one point per refresh, kept in this browser so a reload does
-  // not lose the night (a per-viewer convenience; nothing depends on it). Replay: the needle run
-  // over every snapshot of the archive set on the server, shown up to the current snapshot.
-  // Real results only: "night" keys hold points recorded from the live feed tonight. The older
-  // keys were filled before the election (tests, simulated nights) and are deleted.
-  useEffect(() => {
-    try { for (const k of [`results-seat-history-${ELECTION_DATE}`, `results-race-history-${ELECTION_DATE}`, `results-seat-history-${ELECTION_DATE}-test`, `results-race-history-${ELECTION_DATE}-test`]) localStorage.removeItem(k); } catch { /* storage unavailable */ }
-  }, []);
-  const liveKey = `results-seat-history-night-${ELECTION_DATE}${showTest ? "-test" : ""}`;
-  const [liveSeries, setLiveSeries] = useState<SeatSeries>({ senate: [], governor: [], house: [] });
-  useEffect(() => {
-    // Points stamped in the future (a simulated night replayed in this browser) would block new ones.
-    try {
-      const raw = localStorage.getItem(liveKey), end = Date.now() + 60_000;
-      const saved = raw ? (JSON.parse(raw) as SeatSeries) : { senate: [], governor: [], house: [] };
-      setLiveSeries(Object.fromEntries(RESULTS_OFFICES.map((o) => [o, (saved[o] ?? []).filter((pt) => pt.t <= end)])) as SeatSeries);
-    } catch { setLiveSeries({ senate: [], governor: [], house: [] }); }
-  }, [liveKey]);
-  useEffect(() => {
-    if (replay != null || !lastRefresh || refreshing) return;
-    setLiveSeries((prev) => {
-      if (prev.senate.length && prev.senate[prev.senate.length - 1].t > lastRefresh - SEAT_POINT_MS) return prev;
-      const next = Object.fromEntries(RESULTS_OFFICES.map((o) => {
-        const e = tallies[o].projectedDem;
-        return [o, [...prev[o], { t: lastRefresh, mean: e.seats, lo: e.lo80, hi: e.hi80 }].slice(-500)];
-      })) as SeatSeries;
-      try { localStorage.setItem(liveKey, JSON.stringify(next)); } catch { /* storage unavailable: keep it in memory */ }
-      return next;
-    });
-  }, [lastRefresh, refreshing, replay, tallies, liveKey]);
-  // Each counting race's projected margin, the same way: one [t, margin, sigma, counted] per refresh while
-  // it changes, kept compact and capped (older points thinned) so the night fits in storage.
-  const raceKey = `results-race-history-night-${ELECTION_DATE}${showTest ? "-test" : ""}`;
-  const [liveRaces, setLiveRaces] = useState<Record<string, [number, number, number, (number | null)?][]>>({});
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(raceKey), end = Date.now() + 60_000;
-      const saved = (raw ? JSON.parse(raw) : {}) as Record<string, [number, number, number, (number | null)?][]>;
-      setLiveRaces(Object.fromEntries(Object.entries(saved).map(([k, pts]) => [k, pts.filter(([t]) => t <= end)])));
-    } catch { setLiveRaces({}); }
-  }, [raceKey]);
-  useEffect(() => {
-    if (replay != null || !lastRefresh || refreshing) return;
-    setLiveRaces((prev) => {
-      const next = { ...prev };
-      let changed = false;
-      for (const o of RESULTS_OFFICES) for (const { prior, live, proj } of rowsByOffice[o]) {
-        if (!live || live.total <= 0) continue;
-        const k = raceHash(prior), pts = next[k] ?? [], last = pts[pts.length - 1];
-        const r1 = (v: number) => Math.round(v * 10) / 10;
-        const pt: [number, number, number, number | null] = [lastRefresh, r1(proj.margin), r1(proj.sigma), proj.currentMargin == null ? null : r1(proj.currentMargin)];
-        if (last && last[0] >= lastRefresh) continue;
-        // An unchanged projection only moves the last point's time forward.
-        const same = (q: (typeof pts)[number]) => q[1] === pt[1] && q[2] === pt[2] && (q[3] ?? null) === pt[3];
-        const out = last && same(last) && pts.length > 1 && same(pts[pts.length - 2]) ? [...pts.slice(0, -1), pt] : [...pts, pt];
-        next[k] = out.length > RACE_HISTORY_CAP ? [...out.slice(0, RACE_HISTORY_CAP / 2).filter((_, i) => i % 2 === 0), ...out.slice(RACE_HISTORY_CAP / 2)] : out;
-        changed = true;
-      }
-      if (!changed) return prev;
-      try { localStorage.setItem(raceKey, JSON.stringify(next)); } catch { /* storage unavailable: keep it in memory */ }
-      return next;
-    });
-  }, [lastRefresh, refreshing, replay, rowsByOffice, raceKey]);
-  // Live, in dev: the night so far as the archiver recorded it (the needle over every snapshot,
-  // projected on the server), so the trend charts cover the whole night and not only the
-  // refreshes this tab saw. Empty in prod, where the archive route lists nothing.
-  const [nightSeries, setNightSeries] = useState<ArchiveSeries | null>(null);
-  useEffect(() => {
-    if (replay != null || !feedOpen) return;
-    const pull = () => fetch(`/api/results/archive/series?set=${ELECTION_DATE}`, { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null)).then((series: ArchiveSeries | null) => { if (series && RESULTS_OFFICES.every((o) => Array.isArray(series[o]) && series[o].length)) setNightSeries(series); }).catch(() => {});
-    pull();
-    const id = setInterval(() => { if (document.visibilityState === "visible") pull(); }, AUTO_EVERY_MS);
-    return () => clearInterval(id);
-  }, [replay, feedOpen]);
-  const [archiveSeries, setArchiveSeries] = useState<{ set: string; series: ArchiveSeries } | null>(null);
-  useEffect(() => {
-    if (replay == null || !activeSet || archiveSeries?.set === activeSet) return;
-    fetch(archiveStatic ? `/results-sim/${activeSet}/series.json` : `/api/results/archive/series?set=${encodeURIComponent(activeSet)}`, { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : null)).then((series: ArchiveSeries | null) => { if (series && RESULTS_OFFICES.every((o) => Array.isArray(series[o]))) setArchiveSeries({ set: activeSet, series }); }).catch(() => {});
-  }, [replay, activeSet, archiveSeries?.set, archiveStatic]);
+  // Latest updates: the races whose count moved since the previous frame, most votes added first.
+  const latestUpdates = useMemo(() => {
+    if (!shown) return [];
+    const rows = new Map(RESULTS_OFFICES.flatMap((o) => rowsByOffice[o]).filter((r) => r.prior.civicId).map((r) => [r.prior.civicId!, r]));
+    return shown.frame.moved.slice(0, LATEST_SHOWN).flatMap(([id, added]) => { const row = rows.get(id); return row ? [{ row, at: shown.t, added }] : []; });
+  }, [shown, rowsByOffice]);
+
+  // The seat charts up to the frame shown.
   const seatHistory: SeatSeries = useMemo(() => {
-    if (replay == null) {
-      // Points from before the night or from the future (a simulated night replayed earlier in this
-      // browser ran on a virtual clock) are left out, and the line always ends on the projection
-      // the card shows.
-      const end = Date.now() + 60_000;
-      return Object.fromEntries(RESULTS_OFFICES.map((o) => {
-        const pts = [...(nightSeries?.[o] ?? []), ...liveSeries[o]].filter((pt) => pt.t >= NIGHT_STARTS_AT && pt.t <= end).sort((a, b) => a.t - b.t);
-        const e = tallies[o].projectedDem;
-        const t = Math.max(lastRefresh ?? 0, pts.length ? pts[pts.length - 1].t + 1 : 0);
-        return [o, t >= NIGHT_STARTS_AT ? [...pts, { t, mean: e.seats, lo: e.lo80, hi: e.hi80 }] : pts];
-      })) as SeatSeries;
-    }
-    const series = archiveSeries?.set === activeSet ? archiveSeries.series : null;
-    const now = archive[replay] ? Date.parse(archive[replay].fetchedAt) : Infinity;
-    if (!series) return { senate: [], governor: [], house: [] };
-    return Object.fromEntries(RESULTS_OFFICES.map((o) => [o, series[o].filter((p) => p.t <= now + 1)])) as SeatSeries;
-  }, [replay, liveSeries, archiveSeries, activeSet, archive, nightSeries, tallies, lastRefresh]);
+    const t = shown?.t ?? -Infinity;
+    return Object.fromEntries(RESULTS_OFFICES.map((o) => [o, (seatSeries?.[o] ?? []).filter((p) => p.t <= t)])) as SeatSeries;
+  }, [seatSeries, shown]);
 
   // A race opens as its own page: the hash is pushed (so the browser's Back closes it), the
   // results page's scroll position is kept and restored on the way back.
@@ -524,31 +263,20 @@ export default function ResultsPage() {
     return null;
   }, [selected, rowsByOffice]);
 
-  // The open race's projected and counted margins over the night, from the live record or the
-  // replayed archive. The counted series has no band and starts at the first counted vote.
+  // The open race's projected and counted margins up to the frame shown. The counted series has no
+  // band and starts at the first counted vote.
   const raceHistory: RaceHistory = useMemo(() => {
-    const empty: RaceHistory = { projected: [], counted: [] };
-    if (!selected) return empty;
-    let rows: [number, number, number, number | null][];
-    if (replay == null) {
-      const night = (nightSeries?.races?.[selected] ?? []).map(([m, sg, c], i): [number, number, number, number | null] => [nightSeries!.senate[i]?.t ?? 0, m, sg, c ?? null]).filter(([t]) => t);
-      rows = [...night, ...(liveRaces[selected] ?? []).map(([t, m, sg, c]): [number, number, number, number | null] => [t, m, sg, c ?? null])].filter(([t]) => t >= NIGHT_STARTS_AT && t <= Date.now() + 60_000).sort((a, b) => a[0] - b[0]);
-    }
-    else {
-      const series = archiveSeries?.set === activeSet ? archiveSeries.series : null;
-      const pts = series?.races?.[selected];
-      if (!series || !pts) return empty;
-      const now = archive[replay] ? Date.parse(archive[replay].fetchedAt) : Infinity;
-      rows = pts.map(([m, sg, c], i): [number, number, number, number | null] => [series.senate[i]?.t ?? 0, m, sg, c ?? null]).filter(([t]) => t && t <= now + 1);
-    }
+    const pts = selected ? raceSeries?.[selected] : null;
+    if (!pts || !seatSeries || !shown) return { projected: [], counted: [] };
+    const rows = pts.slice(0, shown.index + 1).map(([m, sg, c], i) => [seatSeries.senate[i]?.t ?? 0, m, sg, c ?? null] as const).filter(([t]) => t);
     return {
       projected: rows.map(([t, m, sg]) => ({ t, mean: m, lo: m - Z80 * sg, hi: m + Z80 * sg })),
       counted: rows.flatMap(([t, , , c]) => (c == null ? [] : [{ t, mean: c, lo: c, hi: c }])),
     };
-  }, [selected, replay, liveRaces, archiveSeries, activeSet, archive, nightSeries]);
+  }, [selected, raceSeries, seatSeries, shown]);
 
   // By state: one state's governor, Senate and House races together. Until a state is picked, the
-  // state whose count moved last (else the first alphabetically).
+  // state whose count moved most in this frame (else the first alphabetically).
   const stateOptions = useMemo(() => {
     const m = new Map<string, string>();
     for (const o of RESULTS_OFFICES) for (const r of rowsByOffice[o]) m.set(r.prior.state, r.prior.stateName);
@@ -578,60 +306,18 @@ export default function ResultsPage() {
   }, [rowsByOffice, office, sort, uncalledOnly, keyOnly]);
 
   const header = (
-    <StandfirstHeader kicker="Election night" title={`${ELECTION_YEAR} Results`} href="/overview" hubLabel="Overview" />
+    <StandfirstHeader kicker="Results archive" title={`${ELECTION_YEAR} Results`} href="/overview" hubLabel="Overview" />
   );
   const main = "mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8";
-  if (loadError) return <>{header}<main className={main}><p className="text-sm" style={muted}>The priors failed to load ({loadError}). Reload the page.</p></main></>;
-  if (!priors) return <>{!selected && header}<main className={main}><p className="text-sm" style={muted}>Loading the forecast priors…</p></main></>;
+  if (loadError) return <>{header}<main className={main}><p className="text-sm" style={muted}>The results archive failed to load ({loadError}). Reload the page.</p></main></>;
+  if (!priors || !manifest || !shown || frame == null) return <>{!selected && header}<main className={main}><p className="text-sm" style={muted}>Loading the results archive…</p></main></>;
 
   const anyIn = RESULTS_OFFICES.some((o) => tallies[o].racesIn > 0);
 
   const status = (
-    <>
-      {/* Status line */}
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs" style={muted}>
-        <span>Results from <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">{CIVIC_ATTRIBUTION.label}</a>{replay != null && lastRefresh ? ` · snapshot from ${fmtTime(lastRefresh)}` : ""}{failed ? ` · ${failed} races failed to load` : ""}</span>
-        {replay == null && lastRefresh != null && <LastUpdated data={lastRefresh} checked={lastChecked} />}
-        {replay == null && !feedOpen ? (
-          <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
-            Live results begin on election night, after the first polls close at 6 PM ET on November 3.{archive.length > 0 && <> <button onClick={() => startReplay(0)} className="font-normal underline" style={muted}>Preview a simulated night</button></>}
-          </span>
-        ) : replay == null ? (
-          <>
-            <button onClick={() => refresh()} disabled={refreshing} className="rounded px-2 py-1 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)", opacity: refreshing ? 0.6 : 1 }}>{refreshing ? "Refreshing…" : "Refresh now"}</button>
-            <label className="flex items-center gap-1.5"><input type="checkbox" checked={auto} onChange={(e) => setAuto(e.target.checked)} /> {storeMode ? "live from the local intake (every 10 s)" : "auto-refresh every 2 min"}</label>
-          </>
-        ) : (
-          <button onClick={exitReplay} className="rounded px-2 py-1 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}>Back to live</button>
-        )}
-        {testSeen && !showTest && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--app-tab-bg)" }}>civicAPI is serving pre-election test data; counts are hidden until real results begin.</span>}
-        {replay != null && activeSet?.startsWith("sim-") && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--party-rep)", color: "#ffffff" }}>SIMULATED NIGHT — not results</span>}
-        {testSeen && showTest && !activeSet?.startsWith("sim-") && <span className="rounded px-2 py-0.5 font-semibold" style={{ background: "var(--party-rep)", color: "#ffffff" }}>TEST DATA — randomized by civicAPI, not results</span>}
-        {/* On a race's page: back to the dashboard, at the line's right end */}
-        {selectedRow && (
-          <button onClick={() => select(null)} className="ml-auto inline-flex shrink-0 items-center whitespace-nowrap rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider transition-colors hover:text-[var(--app-text-primary)]"
-            style={{ border: "1px solid var(--app-border)", background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>← All results</button>
-        )}
-      </div>
-
-      {/* Replay: the dev archive, or the published simulated nights */}
-      {archive.length > 0 && (
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-md px-3 py-2 text-xs" style={{ border: "1px dashed var(--app-border)", color: "var(--app-text-muted)" }}>
-          <span className="font-bold uppercase tracking-wider text-[10px]">Replay archive</span>
-          {archiveSets.length > 1 && (
-            <select value={activeSet ?? ""} onChange={(e) => { setArchiveSet(e.target.value); if (replay != null) { setReplay(null); replayRef.current = null; } }} className="rounded px-1 py-0.5 text-xs" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Archive set">
-              {archiveSets.map((set) => <option key={set} value={set}>{SET_LABEL[set] ?? (set.startsWith("sim-") ? `simulated · ${set.slice(4)}` : set)}</option>)}
-            </select>
-          )}
-          <span>{archive.length} snapshots · {fmtTime(Date.parse(archive[0].fetchedAt))}–{fmtTime(Date.parse(archive[archive.length - 1].fetchedAt))}{activeSet?.startsWith("sim-") ? " (virtual clock)" : ""}</span>
-          <button onClick={() => startReplay((replay ?? 0) - 1)} disabled={replay != null && replay <= 0} className="rounded px-2 py-0.5 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Previous snapshot">◀</button>
-          <input type="range" min={0} max={archive.length - 1} value={replay ?? 0} onChange={(e) => startReplay(Number(e.target.value))} className="w-56 sm:w-80" aria-label="Snapshot" />
-          <button onClick={() => startReplay((replay ?? -1) + 1)} disabled={replay != null && replay >= archive.length - 1} className="rounded px-2 py-0.5 font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }} aria-label="Next snapshot">▶</button>
-          <span className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{replay != null ? `${replay + 1} / ${archive.length} · ${fmtDateTime(Date.parse(archive[replay].fetchedAt))}` : "live"}{replayLoading ? " · loading…" : ""}</span>
-          {replay == null && <button onClick={() => startReplay(0)} className="underline underline-offset-2">Start from the first snapshot</button>}
-        </div>
-      )}
-    </>
+    <TimeBar frames={manifest.frames} frame={frame} shownIndex={shown.index} loading={board?.index !== frame} playing={playing}
+      onStep={(i) => { setPlaying(false); step(i); }} onScrub={step} onPlay={() => { if (frame >= last) setFrame(0); setPlaying((p) => !p); }}
+      back={selectedRow ? () => select(null) : null} />
   );
 
   // A race's own page.
@@ -639,7 +325,7 @@ export default function ResultsPage() {
     return (
       <main className={main}>
         <div id="race-detail" className="space-y-6">
-          <div className="space-y-3">{status}</div>
+          {status}
           <RaceDetail row={selectedRow} history={raceHistory} />
         </div>
       </main>
@@ -650,18 +336,19 @@ export default function ResultsPage() {
     <>
     {header}
     <main className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 sm:pb-8 sm:pt-3">
-    <div className="space-y-3">{status}</div>
+    {status}
     <div className="mt-6 space-y-10">
 
-      {/* Latest updates: the races whose count moved most recently */}
-      {replay == null && latestUpdates.length > 0 && (
-        <section>
-          <LedgerSectionHead label="Latest updates" meta="races whose count moved most recently" />
-          <ol className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
-            {latestUpdates.map(({ row, at, added }) => <LatestUpdate key={row.prior.civicId} row={row} at={at} added={added} onSelect={select} />)}
-          </ol>
-        </section>
-      )}
+      {/* Latest updates: the races whose count moved in this frame. Always LATEST_SHOWN rows, blank
+          ones filling in, so stepping through time never moves the page under it (user). */}
+      <section>
+        {/* The note sits on its own line on phones (always, so its length never changes the height) and beside the label from sm. */}
+        <LedgerSectionHead label="Latest updates" meta={<span className="block max-sm:w-[calc(100vw-2rem)] max-sm:truncate">{shown.frame.moved.length ? `${shown.frame.moved.length} ${shown.frame.moved.length === 1 ? "race" : "races"} moved since the previous snapshot${shown.frame.moved.length > LATEST_SHOWN ? `, the ${LATEST_SHOWN} biggest shown` : ""}` : "no count moved since the previous snapshot"}</span>} />
+        <ol className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+          {latestUpdates.map(({ row, at, added }) => <LatestUpdate key={row.prior.civicId} row={row} at={at} added={added} onSelect={select} />)}
+          {Array.from({ length: LATEST_SHOWN - latestUpdates.length }, (_, i) => <LatestUpdatePlaceholder key={`blank-${i}`} />)}
+        </ol>
+      </section>
 
       {/* Dashboard (a tighter gap to the map than the page's other sections) */}
       <section className="mb-5">
@@ -684,7 +371,7 @@ export default function ResultsPage() {
       </section>
 
       {/* The night model: what the counties finished anywhere imply for the races still out */}
-      {anyIn && <NightPanel fit={nightFit} areas={nightAreas} />}
+      {anyIn && <NightPanel fit={shown.fit} areas={shown.frame.areas} />}
 
       {/* Races: the sortable table, or the same races by poll-closing time */}
       <section>
@@ -727,7 +414,7 @@ export default function ResultsPage() {
       </section>
 
       <p className="max-w-3xl text-xs leading-relaxed" style={veryMuted}>
-        Counts and race calls are <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">civicAPI</a>&rsquo;s, read directly by this page. The projected margin is the needle: the pre-election county projection updated by the counties that have reported, with a shared swing shrunk toward zero while little is in. It never calls a race. Ranked-choice races (Alaska, Maine) show first choices; the projection is of the final round. Louisiana House seats are a jungle round. <Link href="/analysis/internal-methodology/turnout#results-needle" prefetch={false} className="underline underline-offset-2">How this is built</Link>.
+        Counts and race calls are <a href="https://civicapi.org" className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">civicAPI</a>&rsquo;s, recorded as they came in from 6 PM ET November 3 to 6 PM ET November 16 (unofficial; the saved results by seat and county are on the <Link href="/overview" prefetch={false} className="underline underline-offset-2">Overview</Link>). Each snapshot shows the count at that moment and what the page projected from it. The projected margin is the needle: the pre-election county projection updated by the counties that have reported, with a shared swing shrunk toward zero while little is in. It never calls a race. Ranked-choice races (Alaska, Maine) show first choices; the projection is of the final round. Louisiana House seats are a jungle round. <Link href="/analysis/internal-methodology/turnout#results-needle" prefetch={false} className="underline underline-offset-2">How this is built</Link>.
       </p>
     </div>
     </main>
@@ -761,6 +448,11 @@ function BarLegend() {
   );
 }
 
+/** An empty Latest updates line, the height of a real one (same padding, text size and rule). */
+function LatestUpdatePlaceholder() {
+  return <li aria-hidden="true" style={{ borderBottom: "1px solid var(--app-border)" }}><div className="py-2 text-[13px]">&nbsp;</div></li>;
+}
+
 /** One line of Latest updates: the time the count moved, the race, the votes added, the counted
  *  margin and the share of the expected vote in. Opens the race. */
 function LatestUpdate({ row, at, added, onSelect }: { row: ResultsRow; at: number; added: number; onSelect: (row: ResultsRow) => void }) {
@@ -781,30 +473,37 @@ function LatestUpdate({ row, at, added, onSelect }: { row: ResultsRow; at: numbe
   );
 }
 
-/** The status line's clock: when the results last changed, and how long ago the page last
- *  heard from the feed (ticking, so a stalled feed shows). */
-function LastUpdated({ data, checked }: { data: number; checked: number | null }) {
-  const [now, setNow] = useState(() => Date.now());
-  useEffect(() => { const id = setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(id); }, []);
-  const ago = checked == null ? null : Math.max(0, Math.round((now - checked) / 1000));
-  const agoText = ago == null ? "" : ago < 60 ? `${ago} s ago` : `${Math.floor(ago / 60)} min ago`;
+/** The time control: the snapshot's date and time, first / previous / play / next / final, and
+ *  the slider. The slider and the label follow input at once; the page under them follows when
+ *  the board is in (a dot shows meanwhile). Sticky, so the time stays in view while scrolling. */
+const TimeBar = memo(function TimeBar({ frames, frame, shownIndex, loading, playing, onStep, onScrub, onPlay, back }: {
+  frames: ResultsArchiveManifest["frames"]; frame: number; shownIndex: number; loading: boolean; playing: boolean;
+  onStep: (i: number) => void; onScrub: (i: number) => void; onPlay: () => void; back: (() => void) | null;
+}) {
+  const last = frames.length - 1;
+  const btn = "inline-flex h-7 min-w-7 items-center justify-center rounded px-2 text-xs font-semibold disabled:opacity-40";
+  const border = { border: "1px solid var(--app-border)", color: "var(--app-text-primary)" };
   return (
-    <span className="tabular-nums">
-      <b style={{ color: "var(--app-text-primary)" }}>Latest data {fmtTime(data)}</b>
-      {agoText && <span style={ago != null && ago > 180 ? { color: "var(--party-rep)", fontWeight: 600 } : undefined}> · checked {agoText}</span>}
-    </span>
+    <div className="sticky top-0 z-30 -mx-4 px-4 py-2 sm:-mx-6 sm:px-6" style={{ background: "var(--app-bg)", borderBottom: "1px solid var(--app-border)" }}>
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs" style={muted}>
+        <span className="min-w-[10.5rem] text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{fmtDateTime(frames[frame].t)}</span>
+        <div className="flex items-center gap-1">
+          <button onClick={() => onStep(0)} disabled={frame <= 0} className={btn} style={border} aria-label="First snapshot" title="6 PM ET Nov 3 (Home)">⏮</button>
+          <button onClick={() => onStep(frame - 1)} disabled={frame <= 0} className={btn} style={border} aria-label="Previous snapshot" title="Previous (←; Shift+← for 12)">◀</button>
+          <button onClick={onPlay} className={`${btn} w-[4.5rem]`} style={border} aria-label={playing ? "Pause" : "Play"} title="Play / pause (space)">{playing ? "❚❚ Pause" : "▶ Play"}</button>
+          <button onClick={() => onStep(frame + 1)} disabled={frame >= last} className={btn} style={border} aria-label="Next snapshot" title="Next (→; Shift+→ for 12)">▶</button>
+          <button onClick={() => onStep(last)} disabled={frame >= last} className={btn} style={border} aria-label="Final snapshot" title="Final, 6 PM ET Nov 16 (End)">⏭</button>
+        </div>
+        <input type="range" min={0} max={last} value={frame} onChange={(e) => onScrub(Number(e.target.value))} className="min-w-[10rem] flex-1" aria-label="Snapshot" />
+        <span className="tabular-nums">{frame + 1} / {frames.length}<span className="inline-block w-3 text-center" style={{ visibility: loading || shownIndex !== frame ? "visible" : "hidden" }} aria-hidden="true">•</span></span>
+        {back && (
+          <button onClick={back} className="ml-auto inline-flex shrink-0 items-center whitespace-nowrap rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider transition-colors hover:text-[var(--app-text-primary)]"
+            style={{ border: "1px solid var(--app-border)", background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>← All results</button>
+        )}
+      </div>
+    </div>
   );
-}
-
-/** Election night 2026: the page shows the live civicAPI feed only. The replay (simulated nights,
- *  archive sets) is kept but not loaded; flip this back on to replay. */
-const SHOW_REPLAY = false;
-/** This browser's copy of the night's latest payload per race (see the restore effect). */
-const LIVE_STORE = `results-live-${ELECTION_DATE}`;
-
-/** The replay's simulated nights by name: the civicAPI test results (random against our forecast,
- *  so a stress test of the needle) and the realistic one (scripts/build-realistic-results-base.ts). */
-const SET_LABEL: Record<string, string> = { "sim-night": "simulated · stress test", "sim-realistic": "simulated · realistic" };
+});
 
 /** How many races a state shows in the poll-closing view: governor and Senate, then the House
  *  races the forecast has closest, up to this many in all. */
@@ -832,7 +531,7 @@ function resetTilt(e: React.PointerEvent<HTMLElement>) {
   if (e.pointerType === "mouse") untiltCard(e.currentTarget);
 }
 
-function RaceCard({ row, selected, onSelect, index }: { row: ResultsRow; selected: string | null; onSelect: (r: ResultsRow) => void; index: number }) {
+const RaceCard = memo(function RaceCard({ row, selected, onSelect, index }: { row: ResultsRow; selected: string | null; onSelect: (r: ResultsRow) => void; index: number }) {
   const { prior, proj, live } = row;
   const key = raceHash(prior);
   const hasVotes = !!live && live.total > 0;
@@ -888,7 +587,7 @@ function RaceCard({ row, selected, onSelect, index }: { row: ResultsRow; selecte
       </div>
     </button>
   );
-}
+});
 
 /** By state: one state's races as cards (the poll-close view's), statewide first, then every
  *  House seat in district order, under a header with the state's count and poll closing. */

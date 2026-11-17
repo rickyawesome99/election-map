@@ -5,7 +5,10 @@ import type { Party, RacePrior } from "@/lib/resultsTypes";
 /** A race's two sides, for naming a margin's leader. */
 type Sides = { dem: { party: Party }; rep: { party: Party } };
 
-export const fmtInt = (n: number) => Math.round(n).toLocaleString("en-US");
+// One formatter, made once: toLocaleString builds a new one per call, which the Results page's
+// tables (thousands of counts per redraw) paid for on every step of the archive.
+const INT = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+export const fmtInt = (n: number) => INT.format(Math.round(n));
 export const fmtPct = (n: number, d = 1) => `${n.toFixed(d)}%`;
 
 /** An R-positive margin as "D+3.2" / "R+1.0" / "Even", with the race's own party letters. */

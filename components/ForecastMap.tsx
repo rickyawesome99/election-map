@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useState, useEffect, useRef, useMemo, useCallback, type CSSProperties } from "react";
+import { memo, useState, useEffect, useRef, useMemo, useCallback, type CSSProperties, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import dynamic from "next/dynamic";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
@@ -122,6 +122,10 @@ export type ForecastMapProps = {
   noElection?: NoElectionEntry[];
   /** States tab (lib/stateRows.buildStateRows). */
   stateRows?: StateRow[];
+  /** Forecast tab: the 2026 Outlook (components/ForecastOutlook.tsx) — the headline tiles at the top
+   * of the hero and the national sections under the race list. */
+  outlookHero?: ReactNode;
+  outlookSections?: ReactNode;
 };
 
 const NO_RACES: ForecastSummary[] = [];
@@ -246,7 +250,7 @@ const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme })
 
 export default function ForecastMap({
   activeTab, raceType = "senate",
-  races = NO_RACES, noElection = NO_ENTRIES, stateRows = NO_ROWS,
+  races = NO_RACES, noElection = NO_ENTRIES, stateRows = NO_ROWS, outlookHero, outlookSections,
 }: ForecastMapProps) {
   const router = useRouter();
   const [selected, setSelected] = useState<ForecastSummary | null>(null);
@@ -333,6 +337,7 @@ export default function ForecastMap({
               background: PAGE_HERO_BG,
             }}
           >
+            {outlookHero}
             <ForecastHero
               raceType={raceType}
               demSeats={demSeats}
@@ -557,6 +562,8 @@ export default function ForecastMap({
             {activeTab === "district-finder" && <DistrictFinder />}
           </>
         ), [activeTab, raceType, races])}
+
+        {activeTab === "forecast" && outlookSections}
 
       </div>
     </div>

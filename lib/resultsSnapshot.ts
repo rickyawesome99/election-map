@@ -6,7 +6,7 @@ import { parseCsv } from "@/lib/turnout";
 import type { PostElectionRow } from "@/lib/postElectionTypes";
 import type { Party } from "@/lib/resultsTypes";
 
-// The saved results behind /analysis/post-election: data-entry/results_2026_seats.csv, written by
+// The saved results behind the post-election analysis (/overview): data-entry/results_2026_seats.csv, written by
 // hand-run `npm run results-snapshot` (scripts/build-results-snapshot.ts). Read at build; nothing
 // here touches the live feed, so the page shows exactly what the file holds.
 

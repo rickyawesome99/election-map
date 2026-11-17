@@ -131,16 +131,14 @@ function OverviewSkeleton() {
   return (
     <>
       <Hero>
-        <div className="min-w-0 space-y-3"><Title>2026 Outlook</Title><Sk className="h-4 w-72 max-w-full" /><LoadingText /></div>
-
-        <div className="mt-7 grid grid-cols-6 gap-2 sm:gap-3 lg:grid-cols-5">{Array.from({ length: 5 }, (_, i) => <Sk key={i} className={`h-[92px] w-full rounded-md sm:h-[108px] ${i < 2 ? "col-span-3" : "col-span-2"} lg:col-span-1`} />)}</div>
+        <div className="min-w-0 space-y-3"><Title>2026 Results</Title><LoadingText /></div>
       </Hero>
       <Body>
+        <Sk className="mt-2 h-[260px] w-full rounded-md" />
+        <Sk className="mt-10 h-[72px] w-full rounded-md" />
         <SectionHead className="mt-8" right={<Sk className="h-2.5 w-24" />} />
         <UsMap className="mt-8" />
-        <div className="mt-6 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}><Legend /></div>
-        <SectionHead className="mt-8" right={<Sk className="h-2.5 w-24" />} />
-        <Sk className="mt-4 h-[230px] w-full rounded-[3px] sm:h-[245px]" />
+        <div className="mt-3"><Legend /></div>
       </Body>
     </>
   );
@@ -152,6 +150,8 @@ function ForecastSkeleton({ path }: { path: string }) {
   return (
     <>
       <Hero className="pb-0">
+        <div className="min-w-0 space-y-3"><Title>2026 Outlook</Title><Sk className="h-4 w-72 max-w-full" /></div>
+        <div className="mb-8 mt-7 grid grid-cols-6 gap-2 sm:gap-3 lg:grid-cols-5">{Array.from({ length: 5 }, (_, i) => <Sk key={i} className={`h-[92px] w-full rounded-md sm:h-[108px] ${i < 2 ? "col-span-3" : "col-span-2"} lg:col-span-1`} />)}</div>
         <div className="flex flex-wrap items-end gap-x-4 gap-y-2"><Title>{title}</Title><Sk className="mb-1 h-7 w-20" /><Sk className="mb-1.5 h-3.5 w-16" /></div>
         <div className="mt-4 flex gap-5" style={RULE}>
           {["house", "senate", "governor"].map((c) => (

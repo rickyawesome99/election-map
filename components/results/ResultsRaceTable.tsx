@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import { lastName } from "@/lib/personName";
 import { fmtClose, fmtInt, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import type { Party } from "@/lib/resultsTypes";
@@ -131,72 +132,75 @@ export default function ResultsRaceTable({ rows, selected, onSelect }: { rows: R
         <span className="text-right">In</span>
       </div>
       <div className="lg:flex lg:flex-col lg:gap-2">
-        {rows.map((row) => {
-          const { prior, live, proj } = row;
-          const key = raceHash(prior);
-          const hasVotes = !!live && live.total > 0;
-          const pWin = proj.probD >= 0.5 ? proj.probD : 1 - proj.probD;
-          const pSide = proj.probD >= 0.5 ? prior.dem.party : prior.rep.party;
-          const note = raceNote(row);
-          const margin = <span className="font-bold tabular-nums" style={{ ...serif, fontSize: 18, color: callSideColor(proj.currentMargin, prior) }}>{hasVotes ? fmtCall(proj.currentMargin, prior) : "—"}</span>;
-          // "7 PM"; a state split across time zones "7/8 PM" (the first close, then the last).
-          const close = prior.pollsClose.last !== prior.pollsClose.first
-            ? `${fmtClose(prior.pollsClose.first).replace(/ [AP]M$/, "")}/${fmtClose(prior.pollsClose.last)}`
-            : fmtClose(prior.pollsClose.first);
-          return (
-            <div key={key} data-race-row={key} data-touch-hover="" role="button" tabIndex={0} onClick={() => onSelect(row)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(row); } }}
-              className={`group -mx-2 flex cursor-pointer flex-col gap-1 rounded-md border-b px-2 py-2 transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] data-touch:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] lg:border-b-0 lg:py-1 ${GRID}`}
-              style={{ borderColor: "var(--app-border)", background: selected === key ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined }}>
-              {/* Race (+ margin on phones) */}
-              <div className="flex items-baseline justify-between gap-2 lg:flex-col lg:items-start lg:gap-0.5">
-                <div className="flex min-w-0 items-baseline gap-1.5 lg:flex-col lg:items-start lg:gap-0.5">
-                  <span className="text-[15px] font-bold group-hover:underline group-data-touch:underline lg:text-sm">{prior.label}</span>
-                  <span className="hidden whitespace-nowrap rounded-full px-1.5 py-px text-[10px] font-semibold tabular-nums lg:inline-block" title={`Polls close ${close} ET${prior.pollsClose.note ? ` · ${prior.pollsClose.note}` : ""}`}
-                    style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>{close}</span>
-                  {(prior.office === "house" || note) && (
-                    <span className="truncate text-[11px]" style={VERY_MUTED}>
-                      {prior.office === "house" && prior.stateName}
-                      {note && <span className={`${prior.office === "house" ? "ml-1 " : ""}font-bold uppercase tracking-wider`} style={MUTED}>{note}</span>}
-                    </span>
-                  )}
-                </div>
-                <span className="lg:hidden">{margin}</span>
-              </div>
-
-              <CandidateStack row={row} />
-
-              {/* Columns (lg+) */}
-              <div className="hidden flex-col items-end gap-0.5 lg:flex">
-                {margin}
-                {proj.locked && proj.winner && <span className="rounded px-1 py-px text-[9px] font-bold uppercase tracking-wider text-white" style={{ background: PARTY_FILL[proj.winner] }}>Called</span>}
-              </div>
-              <div className="hidden text-right lg:block">
-                {hasVotes ? <>
-                  <div className="text-sm font-bold tabular-nums" style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)} <span className="text-[11px] font-normal" style={VERY_MUTED}>±{proj.sigma.toFixed(1)}</span></div>
-                  <div className="text-[11px] tabular-nums" style={MUTED}>{proj.locked ? "Called" : `${Math.round(pWin * 100)}% ${pSide}`}</div>
-                </> : <span style={VERY_MUTED}>—</span>}
-              </div>
-              <div className="hidden text-right lg:block">
-                <div className="text-sm font-semibold tabular-nums" style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</div>
-                <div className="text-[11px]" style={MUTED}>{prior.forecast.rating}</div>
-              </div>
-              <div className="hidden text-right lg:block">
-                {hasVotes ? <>
-                  <div className="text-sm font-semibold tabular-nums" style={{ color: inColor(inState(proj.countedShare * 100)) }}>{inState(proj.countedShare * 100) === "done" && "✓ "}{fmtIn(proj.countedShare * 100)}</div>
-                  <div className="text-[11px] tabular-nums" style={MUTED}>feed {Math.round(live!.percentReporting)}%</div>
-                </> : <span className="text-sm" style={VERY_MUTED}>0%</span>}
-              </div>
-
-              {/* Phones: the lg+ columns in one line (projection + odds, % in; forecast, poll close) */}
-              <div className="flex flex-wrap justify-between gap-x-3 text-[11px] tabular-nums lg:hidden" style={VERY_MUTED}>
-                <span>{hasVotes ? <>Proj. <b style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</b> ({proj.locked ? "called" : `${Math.round(pWin * 100)}% ${pSide}`}) · <span style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)} in</span></> : <>Forecast <b style={{ color: callSideColor(prior.forecast.margin, prior) }}>{prior.forecast.rating}</b></>}</span>
-                <span>{hasVotes && <>Fcst <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span> · </>}Closes {close}</span>
-              </div>
-            </div>
-          );
-        })}
+        {rows.map((row) => <RaceRow key={raceHash(row.prior)} row={row} isSelected={selected === raceHash(row.prior)} onSelect={onSelect} />)}
       </div>
     </div>
   );
 }
 
+/** One race's row, memoized: unchanged races (the page keeps their row object across archive
+ *  frames) skip their redraw when the board steps. */
+const RaceRow = memo(function RaceRow({ row, isSelected, onSelect }: { row: ResultsRow; isSelected: boolean; onSelect: (r: ResultsRow) => void }) {
+    const { prior, live, proj } = row;
+    const key = raceHash(prior);
+    const hasVotes = !!live && live.total > 0;
+    const pWin = proj.probD >= 0.5 ? proj.probD : 1 - proj.probD;
+    const pSide = proj.probD >= 0.5 ? prior.dem.party : prior.rep.party;
+    const note = raceNote(row);
+    const margin = <span className="font-bold tabular-nums" style={{ ...serif, fontSize: 18, color: callSideColor(proj.currentMargin, prior) }}>{hasVotes ? fmtCall(proj.currentMargin, prior) : "—"}</span>;
+    // "7 PM"; a state split across time zones "7/8 PM" (the first close, then the last).
+    const close = prior.pollsClose.last !== prior.pollsClose.first
+      ? `${fmtClose(prior.pollsClose.first).replace(/ [AP]M$/, "")}/${fmtClose(prior.pollsClose.last)}`
+      : fmtClose(prior.pollsClose.first);
+    return (
+      <div key={key} data-race-row={key} data-touch-hover="" role="button" tabIndex={0} onClick={() => onSelect(row)} onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onSelect(row); } }}
+        className={`group -mx-2 flex cursor-pointer flex-col gap-1 rounded-md border-b px-2 py-2 transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] data-touch:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)] lg:border-b-0 lg:py-1 ${GRID}`}
+        style={{ borderColor: "var(--app-border)", background: isSelected ? "color-mix(in srgb, var(--app-text-primary) 7%, transparent)" : undefined }}>
+        {/* Race (+ margin on phones) */}
+        <div className="flex items-baseline justify-between gap-2 lg:flex-col lg:items-start lg:gap-0.5">
+          <div className="flex min-w-0 items-baseline gap-1.5 lg:flex-col lg:items-start lg:gap-0.5">
+            <span className="text-[15px] font-bold group-hover:underline group-data-touch:underline lg:text-sm">{prior.label}</span>
+            <span className="hidden whitespace-nowrap rounded-full px-1.5 py-px text-[10px] font-semibold tabular-nums lg:inline-block" title={`Polls close ${close} ET${prior.pollsClose.note ? ` · ${prior.pollsClose.note}` : ""}`}
+              style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>{close}</span>
+            {(prior.office === "house" || note) && (
+              <span className="truncate text-[11px]" style={VERY_MUTED}>
+                {prior.office === "house" && prior.stateName}
+                {note && <span className={`${prior.office === "house" ? "ml-1 " : ""}font-bold uppercase tracking-wider`} style={MUTED}>{note}</span>}
+              </span>
+            )}
+          </div>
+          <span className="lg:hidden">{margin}</span>
+        </div>
+
+        <CandidateStack row={row} />
+
+        {/* Columns (lg+) */}
+        <div className="hidden flex-col items-end gap-0.5 lg:flex">
+          {margin}
+          {proj.locked && proj.winner && <span className="rounded px-1 py-px text-[9px] font-bold uppercase tracking-wider text-white" style={{ background: PARTY_FILL[proj.winner] }}>Called</span>}
+        </div>
+        <div className="hidden text-right lg:block">
+          {hasVotes ? <>
+            <div className="text-sm font-bold tabular-nums" style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)} <span className="text-[11px] font-normal" style={VERY_MUTED}>±{proj.sigma.toFixed(1)}</span></div>
+            <div className="text-[11px] tabular-nums" style={MUTED}>{proj.locked ? "Called" : `${Math.round(pWin * 100)}% ${pSide}`}</div>
+          </> : <span style={VERY_MUTED}>—</span>}
+        </div>
+        <div className="hidden text-right lg:block">
+          <div className="text-sm font-semibold tabular-nums" style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</div>
+          <div className="text-[11px]" style={MUTED}>{prior.forecast.rating}</div>
+        </div>
+        <div className="hidden text-right lg:block">
+          {hasVotes ? <>
+            <div className="text-sm font-semibold tabular-nums" style={{ color: inColor(inState(proj.countedShare * 100)) }}>{inState(proj.countedShare * 100) === "done" && "✓ "}{fmtIn(proj.countedShare * 100)}</div>
+            <div className="text-[11px] tabular-nums" style={MUTED}>feed {Math.round(live!.percentReporting)}%</div>
+          </> : <span className="text-sm" style={VERY_MUTED}>0%</span>}
+        </div>
+
+        {/* Phones: the lg+ columns in one line (projection + odds, % in; forecast, poll close) */}
+        <div className="flex flex-wrap justify-between gap-x-3 text-[11px] tabular-nums lg:hidden" style={VERY_MUTED}>
+          <span>{hasVotes ? <>Proj. <b style={{ color: callSideColor(proj.margin, prior) }}>{fmtCall(proj.margin, prior)}</b> ({proj.locked ? "called" : `${Math.round(pWin * 100)}% ${pSide}`}) · <span style={{ color: inColor(inState(proj.countedShare * 100)) }}>{fmtIn(proj.countedShare * 100)} in</span></> : <>Forecast <b style={{ color: callSideColor(prior.forecast.margin, prior) }}>{prior.forecast.rating}</b></>}</span>
+          <span>{hasVotes && <>Fcst <span style={{ color: callSideColor(prior.forecast.margin, prior) }}>{fmtCall(prior.forecast.margin, prior)}</span> · </>}Closes {close}</span>
+        </div>
+      </div>
+    );
+});

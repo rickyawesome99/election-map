@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import StateGlyph from "@/components/results/StateGlyph";
 import { flipBackground } from "@/components/FlipStripes";
 import { partyVotes } from "@/lib/resultsNeedle";
@@ -7,7 +8,7 @@ import { callSideColor, fmtCall, fmtIn, fmtInt, inColor, inState, partyColor } f
 import type { LegChamberResult, LegSeats, PostElectionRow } from "@/lib/postElectionTypes";
 import type { Party } from "@/lib/resultsTypes";
 
-// One state's profile on /analysis/post-election: its count, then its race cards. Began as a copy of
+// One state's profile in the post-election analysis (/overview, past years /overview/[year]): its count, then its race cards. Began as a copy of
 // the Results page's By state view and is now this page's own.
 
 const muted = { color: "var(--app-text-muted)" };
@@ -153,7 +154,12 @@ export function StateSection({ rows, legislature, year, housePvPrev, onSelect }:
       <div className="flex items-center gap-3 pb-2" style={{ borderBottom: "1px solid var(--app-text-primary)" }}>
         <StateGlyph state={p0.state} className="h-10 w-10 shrink-0" />
         <div className="min-w-0">
-          <div className="text-xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{p0.stateName}</div>
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="text-xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{p0.stateName}</div>
+            <Link prefetch={false} href={`/states/${p0.state.toLowerCase()}`} aria-label={`Open the ${p0.stateName} state page`} className="ix-lift rounded-full px-2.5 py-0.5 text-[11px] font-bold hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+              State page <span aria-hidden>→</span>
+            </Link>
+          </div>
           <div className="text-[11px] tabular-nums" style={muted}>
             {past
               ? `${rows.length} races · ${flips} ${flips === 1 ? "flip" : "flips"}`

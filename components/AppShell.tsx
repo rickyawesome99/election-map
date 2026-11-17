@@ -77,7 +77,7 @@ export default function AppShell() {
   useEffect(() => {
     const from = lastPathname.current;
     lastPathname.current = pathname;
-    const postElection = /^\/analysis\/post-election(\/|$)/;
+    const postElection = /^\/overview(\/|$)/;
     if (from !== pathname && postElection.test(from) && postElection.test(pathname)) return;
     if (pathname !== "/" && !pathname.startsWith("/analysis")) return;
     window.requestAnimationFrame(() => {

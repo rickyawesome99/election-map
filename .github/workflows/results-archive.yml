@@ -35,13 +35,9 @@ on:
       lead_minutes:
         description: Minutes before a run ends that it dispatches the next one
         default: "6"
-  schedule:
-    # Watchdog, every 30 minutes (UTC): Nov 3 22:00 → Nov 6 04:30. The night ran on 2-minute
-    # snapshots to Nov 4 17:00; after that the restarted chain takes the late count on the defaults
-    # above (30-minute snapshots, 4-hour chunks).
-    - cron: "*/30 22-23 3 11 *"
-    - cron: "*/30 * 4-5 11 *"
-    - cron: "*/30 0-4 6 11 *"
+  # The 2026 watchdog schedule (every 30 min, Nov 3 22:00Z → Nov 6 04:30Z) was removed after the
+  # count was archived (2026-11-16): cron dates recur every year. For the next election put a
+  # schedule block back with that year's dates; the watchdog job below only runs on `schedule`.
 
 permissions:
   actions: write

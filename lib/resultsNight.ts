@@ -135,11 +135,26 @@ export type NightFit = {
   /** The national early-vote skew every state's is shrunk toward. */
   mirageNational: { value: number; se: number; n: number };
   shiftFor: (race: RacePrior) => NightShift;
+  /** The solved fit as plain data (reviveNightFit rebuilds the functions from it): stored with each
+   *  frame of the published results archive, so the page never refits. */
+  data: NightFitData;
   /** A state's early-vote skew; the national one, with the prior's sigma added, where no county of it is part-counted. */
   mirageFor: (state: string) => { value: number; se: number };
 };
 
 const OFFICES: ResultsOffice[] = ["senate", "governor", "house"];
+
+/** A fit as JSON: the coefficients θ, the upper triangle of their covariance row by row, the
+ *  states in column order, and the parts that are not functions of θ. */
+export type NightFitData = {
+  n: number; votes: number;
+  theta: number[];
+  covUpper: number[];
+  stateOrder: string[];
+  stateN: Record<string, number>;
+  mirage: NightFit["mirage"];
+  mirageNational: NightFit["mirageNational"];
+};
 
 /** The fit with no counties in: every race's shift is zero with the prior's standard error. */
 export function emptyNightFit(P: NightParams = DEFAULT_NIGHT_PARAMS): NightFit {
@@ -249,7 +264,30 @@ export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT
     skew = skewFit(shared.theta);
   }
   const { cov, theta, n, votes, stateN } = shared;
-  const { mirage, mirageNational } = skew;
+  const covUpper: number[] = [];
+  for (let i = 0; i < k; i++) for (let j = i; j < k; j++) covUpper.push(cov[i][j]);
+  return reviveNightFit({ n, votes, theta, covUpper, stateOrder: [...stateIndex.keys()], stateN, mirage: skew.mirage, mirageNational: skew.mirageNational }, P);
+}
+
+/** The fit from its data (fitNight's own result, or one read back from JSON). */
+export function reviveNightFit(data: NightFitData, P: NightParams = DEFAULT_NIGHT_PARAMS): NightFit {
+  const { n, votes, theta, covUpper, stateOrder, stateN, mirage, mirageNational } = data;
+  const FIXED = 7;
+  const k = FIXED + stateOrder.length;
+  const stateIndex = new Map(stateOrder.map((st, i) => [st, i]));
+  const cov = Array.from({ length: k }, () => new Array<number>(k).fill(0));
+  for (let i = 0, m = 0; i < k; i++) for (let j = i; j < k; j++, m++) cov[i][j] = cov[j][i] = covUpper[m];
+  const prec = new Array<number>(k).fill(1 / (P.sigmaState * P.sigmaState));
+  prec[0] = 1 / (P.sigmaNational * P.sigmaNational);
+  prec[1] = prec[2] = prec[3] = 1 / (P.sigmaOffice * P.sigmaOffice);
+  prec[4] = 1 / (P.sigmaNonwhite * P.sigmaNonwhite); prec[5] = 1 / (P.sigmaCollege * P.sigmaCollege); prec[6] = 1 / (P.sigmaLean * P.sigmaLean);
+  const colOf = (o: { office: ResultsOffice; state: string }) => ({ office: 1 + OFFICES.indexOf(o.office), state: stateIndex.has(o.state) ? FIXED + stateIndex.get(o.state)! : -1 });
+  const row = (beta: number, office: number, state: number, c: { nonwhite: number; college: number; lean: number }): number[] => {
+    const x = new Array<number>(k).fill(0);
+    x[0] = beta; x[office] = 1; x[4] = c.nonwhite; x[5] = c.college; x[6] = c.lean;
+    if (state >= 0) x[state] = 1;
+    return x;
+  };
   const se = (i: number) => Math.sqrt(Math.max(0, cov[i][i]));
   const states: NightFit["states"] = {};
   for (const [st, i] of stateIndex) states[st] = { value: theta[FIXED + i], se: se(FIXED + i), n: stateN[st] ?? 0 };
@@ -280,7 +318,7 @@ export function fitNight(obs: NightObservation[], P: NightParams = DEFAULT_NIGHT
     national: { value: theta[0], se: se(0) },
     office: { senate: { value: theta[1], se: se(1) }, governor: { value: theta[2], se: se(2) }, house: { value: theta[3], se: se(3) } },
     slopes: { nonwhite: { value: theta[4], se: se(4) }, college: { value: theta[5], se: se(5) }, lean: { value: theta[6], se: se(6) } },
-    states, mirage, mirageNational, shiftFor, mirageFor,
+    states, mirage, mirageNational, shiftFor, mirageFor, data,
   };
 }
 

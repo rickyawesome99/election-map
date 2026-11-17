@@ -7,7 +7,7 @@ import { stateLegDistricts, type Chamber, type StateLegDistrict } from "@/data/s
 import { parseCsv } from "@/lib/turnout";
 import type { LegChamberResult, LegSeats } from "@/lib/postElectionTypes";
 
-// The state legislative seats behind /analysis/post-election: data-entry/results_2026_state_leg.csv
+// The state legislative seats behind the post-election analysis (/overview): data-entry/results_2026_state_leg.csv
 // and its chambers file, written by hand-run scripts/fetch-nyt-state-leg-results.py. A chamber with
 // only specials on the ballot counts as having no 2026 election and shows its pre-election seats.
 //

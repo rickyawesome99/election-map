@@ -1,14 +1,14 @@
 import { expect, test } from "@playwright/test";
 
-// /analysis/post-election: a small box per state, opening the state's profile on a hash, from the
+// The post-election analysis on /overview (formerly /analysis/post-election): a small box per state, opening the state's profile on a hash, from the
 // saved snapshot (data-entry/results_2026_seats.csv). The figures move with each manual snapshot, so
 // these check the page's shape and that it never reads the live feed.
 
 test("every state has a box and nothing reads the feed", async ({ page }) => {
   const feed: string[] = [];
   page.on("request", (r) => { if (r.url().includes("civicapi.org") || r.url().includes("/api/results/")) feed.push(r.url()); });
-  await page.goto("/analysis/post-election");
-  await expect(page.getByRole("heading", { level: 1, name: "2026 Post Election Analysis" })).toBeVisible();
+  await page.goto("/overview");
+  await expect(page.getByRole("heading", { level: 1, name: "2026 Results" })).toBeVisible();
   const boxes = page.getByRole("navigation", { name: "States" }).getByRole("link");
   await expect(boxes).toHaveCount(50);
   await expect(page.locator("button.rc-card")).toHaveCount(0);
@@ -22,7 +22,7 @@ test("every state has a box and nothing reads the feed", async ({ page }) => {
 });
 
 test("the sort buttons reorder the boxes by margin and by closeness", async ({ page }) => {
-  await page.goto("/analysis/post-election");
+  await page.goto("/overview");
   const boxes = page.getByRole("navigation", { name: "States" }).getByRole("link");
   await expect(boxes.first()).toHaveText("AK");
   // R-positive margins read back off the boxes' labels.
@@ -47,7 +47,7 @@ test("the sort buttons reorder the boxes by margin and by closeness", async ({ p
 });
 
 test("hovering a box shows the state's House popular vote margin, on desktop only", async ({ page, isMobile }) => {
-  await page.goto("/analysis/post-election");
+  await page.goto("/overview");
   const box = page.getByRole("navigation", { name: "States" }).getByRole("link", { name: /^HI · / });
   await expect(box).not.toHaveAttribute("title");
   const tip = page.locator(".pointer-events-none", { hasText: "House popular vote" });
@@ -65,7 +65,7 @@ test("hovering a box shows the state's House popular vote margin, on desktop onl
 });
 
 test("a box opens the state on the hash with no page load, and Back and a reload keep up", async ({ page }) => {
-  await page.goto("/analysis/post-election");
+  await page.goto("/overview");
   const documents: string[] = [];
   page.on("request", (r) => { if (r.resourceType() === "document") documents.push(r.url()); });
   const states = page.getByRole("navigation", { name: "States" });
@@ -79,6 +79,12 @@ test("a box opens the state on the hash with no page load, and Back and a reload
   await expect(statewide.locator(".rc-card")).toHaveCount(5);
   await states.getByRole("link", { name: /^AL · / }).click();
   await expect(page.locator("button.rc-card")).toHaveCount(9);
+  // Clicking the picked state again unselects it and collapses the profile; Back reopens it.
+  await states.getByRole("link", { name: /^AL · / }).click();
+  await expect(page).toHaveURL(/\/overview$/);
+  await expect(page.locator("button.rc-card")).toHaveCount(0);
+  await page.goBack();
+  await expect(page.locator("button.rc-card")).toHaveCount(9);
   expect(documents).toEqual([]);
   await page.goBack();
   await expect(page).toHaveURL(/#FL$/);
@@ -90,7 +96,7 @@ test("a box opens the state on the hash with no page load, and Back and a reload
 });
 
 test("a state's legislature cards show its chambers, with or without a 2026 election", async ({ page }) => {
-  await page.goto("/analysis/post-election#OH");
+  await page.goto("/overview#OH");
   // In the Statewide row, after the federal races, House before Senate.
   const statewide = page.locator("div.py-3", { hasText: "Statewide" });
   const chambers = statewide.locator(".rc-card").filter({ hasText: /^State (House|Senate)/ });
@@ -105,27 +111,56 @@ test("a state's legislature cards show its chambers, with or without a 2026 elec
   await expect(page.getByText(/^Net (D|R)\+\d+/).first()).toBeVisible();
   // The delegation follows the seat count: called seats by party, most first, no party with none.
   await expect(page.getByText(/^House · 15 seats · (\d+[DRI] ){1,3}(\d+ Uncalled)?/)).toBeVisible();
-  await page.goto("/analysis/post-election#VA");
+  await page.goto("/overview#VA");
   await expect(page.getByText("No 2026 Elections", { exact: true })).toHaveCount(2);
-  await page.goto("/analysis/post-election#NE");
+  await page.goto("/overview#NE");
   await expect(page.getByText("Legislature", { exact: true })).toBeVisible();
   await expect(page.getByText(/^25 up · \d+ called$/)).toBeVisible();
 });
 
 test("the Statewide heading shows the House popular vote against 2024", async ({ page }) => {
-  await page.goto("/analysis/post-election#IN");
+  await page.goto("/overview#IN");
   await expect(page.locator("div.py-3", { hasText: "Statewide" }).locator("div.font-mono").first()).toHaveText(/^Statewide · D\+\d+\.\d vs 24 GB$/);
 });
 
 test("statewide cards show Vs. GB, House cards show Swing, with an asterisk only where the lines moved", async ({ page }) => {
-  await page.goto("/analysis/post-election#TX");
+  await page.goto("/overview#TX");
   const cards = page.locator("button.rc-card");
   await expect(cards.filter({ hasText: /^Senate/ }).first()).toContainText(/Vs\. GB [DR]\+\d+\.\d/);
   await expect(cards.filter({ hasText: "TX-35" })).toContainText(/Swing [DR]\+\d+\.\d\*/);
   await expect(cards.filter({ hasText: "TX-15" })).toContainText(/Swing [DR]\+\d+\.\d\*/);
   await expect(page.getByText("Fcst", { exact: false })).toHaveCount(0);
   // Michigan kept its lines, so its swings are from real 2024 results.
-  await page.goto("/analysis/post-election#MI");
+  await page.goto("/overview#MI");
   await expect(cards.filter({ hasText: "MI-07" })).toContainText(/Swing [DR]\+\d+\.\d/);
   await expect(cards.filter({ hasText: "*" })).toHaveCount(0);
+});
+
+test("the year switcher swaps only the analysis; the results box and State TPL map stay mounted", async ({ page }) => {
+  await page.goto("/overview#OH");
+  await page.locator("svg.rsm-svg").first().waitFor();
+  await page.evaluate(() => { (document.querySelector("svg.rsm-svg") as SVGElement & { __kept?: boolean }).__kept = true; });
+  const documents: string[] = [];
+  page.on("request", (r) => { if (r.resourceType() === "document") documents.push(r.url()); });
+  await page.getByRole("button", { name: /^Previous: / }).click();
+  await expect(page).toHaveURL(/\/overview\/2024#OH$/);
+  await expect(page.getByRole("heading", { level: 1, name: "2024 Results" })).toBeVisible();
+  await expect(page.getByText("Election Night Results")).toBeVisible();
+  expect(await page.evaluate(() => [...document.querySelectorAll("svg.rsm-svg")].some((s) => (s as SVGElement & { __kept?: boolean }).__kept))).toBe(true);
+  expect(documents).toEqual([]);
+});
+
+test("the year arrows keep the switcher where it was on screen", async ({ page }) => {
+  await page.goto("/overview#OH");
+  await page.locator("svg.rsm-svg").first().waitFor();
+  // Scrolled, with the arrows still clear of the sticky header (else the click itself scrolls them into view).
+  await page.evaluate(() => window.scrollTo(0, 150));
+  await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(150);
+  const top = () => page.evaluate(() => Math.round(document.querySelector('button[aria-label^="Previous"]')!.getBoundingClientRect().top));
+  const before = await top();
+  for (const year of ["2024", "2022"]) {
+    await page.getByRole("button", { name: /^Previous: / }).click();
+    await expect(page.getByRole("heading", { level: 1, name: `${year} Results` })).toBeVisible();
+    expect(await top()).toBe(before);
+  }
 });

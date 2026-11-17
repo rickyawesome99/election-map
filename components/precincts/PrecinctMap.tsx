@@ -76,12 +76,25 @@ export default function PrecinctMap(props: PrecinctMapProps) {
     mapRef.current = map;
     // The whole-state view is as far out as the map goes: readers can zoom in, never out past it.
     // (Re-fitted on resize, so rotating a phone or widening the window keeps the state in frame.)
+    // Never below the archive's own min zoom either: MapLibre draws nothing there, so a state too big
+    // for the window (Alaska, or Texas on a phone) would go blank instead of staying in view, cropped.
+    let tileMin = 0;
     const lockOut = () => {
       const cam = map.cameraForBounds(bounds, { padding: 24 });
-      if (cam?.zoom !== undefined) map.setMinZoom(Math.max(0, cam.zoom - 0.01));
+      if (cam?.zoom === undefined) return;
+      const min = Math.max(0, cam.zoom - 0.01, tileMin);
+      map.setMinZoom(min);
+      if (map.getZoom() < min) map.setZoom(min);
     };
     lockOut();
     map.on("resize", lockOut);
+    const onSource = (e: maplibregl.MapSourceDataEvent) => {
+      if (e.sourceId !== SRC || !e.isSourceLoaded) return;
+      tileMin = (map.getSource(SRC) as maplibregl.VectorTileSource | undefined)?.minzoom ?? 0;
+      map.off("sourcedata", onSource);
+      lockOut();
+    };
+    map.on("sourcedata", onSource);
     map.touchZoomRotate.disableRotation();
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
 

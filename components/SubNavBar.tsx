@@ -28,7 +28,7 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";
-  if (pathname === "/overview" || pathname === "/") return "overview";
+  if (pathname === "/overview" || pathname.startsWith("/overview/") || pathname === "/") return "overview";
   return null;
 }
 

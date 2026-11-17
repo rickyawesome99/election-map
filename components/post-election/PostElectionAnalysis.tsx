@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import CountyTooltip from "@/components/CountyTooltip";
 import { GenericBallots, StateSection, housePopularVote, rowKey, sortStateRows, tiltCard, untiltCard } from "@/components/post-election/StateRaceCards";
@@ -11,11 +11,11 @@ import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useTouchHover } from "@/lib/useTouchHover";
 import type { LegChamberResult, PostElectionRow } from "@/lib/postElectionTypes";
 
-// /analysis/post-election: a small box per state, coloured by the state's counted House popular vote
+// The post-election analysis (the newest year on /overview, formerly /analysis/post-election): a small box per state, coloured by the state's counted House popular vote
 // on the rating scale (or, with Lean vs GB on, by that vote minus the national House popular vote),
 // and the picked state's profile under them, all from the saved snapshot
 // (lib/resultsSnapshot.ts), or for a past year from the historical results (lib/pastPostElection.ts,
-// at /analysis/post-election/[year]). The state lives in the hash (#FL), so switching loads nothing
+// at /overview/[year]). The state lives in the hash (#FL), so switching loads nothing
 // and Back works, and the year toggle keeps it. A race card opens the race on /results, or a past
 // race's past-election page.
 
@@ -40,10 +40,14 @@ type BoxMeasure = "gb" | "lean" | "swing";
  *  own page, so its state starts fresh). A full load starts from the defaults, as the server renders. */
 const boxView: { sort: BoxSort; measure: BoxMeasure } = { sort: "alpha", measure: "gb" };
 
+/** Where the year switcher sat on screen when a year was picked, so the next year's page puts it back
+ *  there: the content above it (title, generic ballot cards) can differ in height between years. */
+let switcherTop: number | null = null;
+
 const YEAR_BTN = "ix-press ix-rail-btn h-7 w-7 shrink-0 grid place-items-center rounded-full text-sm disabled:opacity-30";
 
-/** The page for a year: the newest at /analysis/post-election, a past one under it. */
-const yearPath = (year: number, latest: number) => (year === latest ? "/analysis/post-election" : `/analysis/post-election/${year}`);
+/** The page for a year: the newest on /overview, a past one at /overview/[year]. */
+const yearPath = (year: number, latest: number) => (year === latest ? "/overview" : `/overview/${year}`);
 
 export default function PostElectionAnalysis({ rows, legislature, year, years, housePvPrev, nationalPvPrev }: { rows: PostElectionRow[]; legislature: Record<string, LegChamberResult[]>; year: number; years: number[]; housePvPrev: Record<string, number>; nationalPvPrev: number | null }) {
   const router = useRouter();
@@ -98,27 +102,38 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
     e.preventDefault();
     const hash = new URL(e.currentTarget.href).hash;
-    if (hash === window.location.hash) return;
-    history.pushState(null, "", hash);
+    // Clicking the picked state again unselects it and collapses its profile (user, 2026-11-17).
+    history.pushState(null, "", hash.toUpperCase() === window.location.hash.toUpperCase() ? window.location.pathname + window.location.search : hash);
     window.dispatchEvent(new HashChangeEvent("hashchange"));
   }, []);
 
   // `years` runs newest first: ‹ goes back in time, › forward.
   const at = years.indexOf(year);
   const older = years[at + 1] ?? null, newer = at > 0 ? years[at - 1] : null;
+  // The years share app/overview/layout.tsx, so a switch swaps only this section: no full-page
+  // placeholder; the old year stays up, dimmed, until the new one arrives (user, 2026-11-17).
+  const [switching, startSwitch] = useTransition();
+  const switcherRef = useRef<HTMLDivElement>(null);
+  useLayoutEffect(() => {
+    if (switcherTop == null || !switcherRef.current) return;
+    window.scrollBy(0, switcherRef.current.getBoundingClientRect().top - switcherTop);
+    switcherTop = null;
+  }, [year]);
   const pickYear = (y: number) => {
     if (y === year) return;
+    switcherTop = switcherRef.current?.getBoundingClientRect().top ?? null;
     const href = `${yearPath(y, years[0])}${window.location.hash}`;
-    startPendingNav(href);
-    router.push(href, { scroll: false });
+    startSwitch(() => router.push(href, { scroll: false }));
   };
+  // Fetch the neighbouring years when the pointer reaches the switcher, so ‹ › land at once.
+  const prefetchNeighbours = () => { for (const y of [older, newer]) if (y != null) router.prefetch(yearPath(y, years[0])); };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" aria-busy={switching || undefined} style={{ opacity: switching ? 0.55 : 1, transition: "opacity 120ms" }}>
       <GenericBallots rows={rows} />
       <div className="flex flex-wrap items-center gap-2">
         {/* As the legislative district pages' selector: ‹ › step a year, the pill opens the list. */}
-        <div className="flex items-center gap-1.5">
+        <div ref={switcherRef} className="flex items-center gap-1.5" onPointerEnter={prefetchNeighbours} onFocus={prefetchNeighbours}>
           <button type="button" className={YEAR_BTN} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }} disabled={older == null} onClick={() => older != null && pickYear(older)} aria-label={older != null ? `Previous: ${older}` : "Previous year"}>‹</button>
           <select value={year} onChange={(e) => pickYear(Number(e.target.value))} aria-label="Choose an election year" className="h-7 rounded-full px-2.5 text-xs font-semibold tabular-nums"
             style={{ background: "var(--app-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}>

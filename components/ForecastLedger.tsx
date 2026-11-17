@@ -1,5 +1,4 @@
 "use client";
-import FinalForecastPill from "@/components/FinalForecastPill";
 import Link from "next/link";
 
 import { useMemo, useState } from "react";
@@ -7,7 +6,7 @@ import type { RaceType } from "@/data/forecastData";
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { ForecastSummary } from "@/lib/forecastTypes";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
-import RaceTable, { CandidateName } from "./RaceTable";
+import { CandidateName, sortRaces, SORT_OPTIONS, type SortDir, type SortKey } from "./RaceTable";
 import { PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -77,7 +76,6 @@ export function ForecastHero({
     <>
       {/* Mobile */}
       <div className="mb-4 md:hidden">
-        <FinalForecastPill className="mb-2" />
         <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>
           {RACE_TYPE_TITLE[raceType]}
         </h1>
@@ -112,7 +110,6 @@ export function ForecastHero({
           <span className="text-sm" style={{ color: "var(--app-text-muted)" }}>
             {seatsUp} {raceType === "house" ? "districts" : "races"}
           </span>
-          <FinalForecastPill className="self-center" />
         </div>
       </div>
     </>
@@ -120,32 +117,12 @@ export function ForecastHero({
 }
 
 // ─────────────────────────────────────────────────────────────────────────
-// Race list — mobile: a tiered ledger with full detail for every rating.
-// Desktop: the same tiered ledger, laid out
-// in text columns per tier (more columns as a tier gets larger), with a
-// "show all" expand for tiers over TIER_EXPAND_AT (matters mainly for House
-// Safe, which can run into the hundreds).
+// Race list — one grid of same-size compact cards with a sort (user, 2026-11-17:
+// replaced the Cards/Table toggle and the tier sections). Flat, like the rest
+// of the site: each card is a row on the page
+// background, no box: name and candidates on the left, the margin (serif) over
+// its rating pill on the right.
 // ─────────────────────────────────────────────────────────────────────────
-type Tier = "Toss-Up" | "Lean" | "Likely" | "Safe";
-
-function tierOf(rating: string): Tier {
-  if (rating.startsWith("Tilt")) return "Toss-Up";
-  if (rating.startsWith("Lean")) return "Lean";
-  if (rating.startsWith("Likely")) return "Likely";
-  return "Safe";
-}
-
-const TIER_ORDER: Tier[] = ["Toss-Up", "Lean", "Likely", "Safe"];
-
-function TierHeader({ label, count }: { label: string; count: number }) {
-  return (
-    <div className="mb-1 flex items-baseline justify-between border-b-2 pb-1.5" style={{ borderColor: "var(--app-text-primary)" }}>
-      <h3 className="font-mono text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-primary)" }}>{label}</h3>
-      <span className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>{count} race{count === 1 ? "" : "s"}</span>
-    </div>
-  );
-}
-
 function raceHref(basePath: string, race: ForecastSummary): string {
   return `${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`;
 }
@@ -154,122 +131,46 @@ function isSpecialRace(race: ForecastSummary): boolean {
   return !!race.electionType?.toLowerCase().includes("special");
 }
 
-function MarginFigure({ margin, className = "" }: { margin: number; className?: string }) {
-  const isD = margin <= 0;
-  return (
-    <span className={`tabular-nums font-extrabold ${className}`} style={{ color: isD ? "var(--party-dem)" : "var(--party-rep)" }}>
-      {isD ? "D" : "R"}+{Math.abs(margin).toFixed(1)}
-    </span>
-  );
-}
-
-function RatingPill({ rating }: { rating: string }) {
-  const { bg, text } = getRatingColors(rating);
-  return (
-    <span className="shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold" style={{ background: bg, color: text }}>
-      {rating}
-    </span>
-  );
-}
-
-function SpecialBadge() {
-  return (
-    <span
-      className="shrink-0 rounded-full border px-1.5 py-0.5 text-[9px] font-semibold"
-      style={{ borderColor: "var(--app-border)", color: "var(--app-text-primary)" }}
-    >
-      Special
-    </span>
-  );
-}
-
-function LedgerRow({ race, basePath, showSpecialBadge }: { race: ForecastSummary; basePath: string; showSpecialBadge?: boolean }) {
+function RaceCard({ race, basePath, showSpecialBadge }: { race: ForecastSummary; basePath: string; showSpecialBadge?: boolean }) {
   const margin = race.margin ?? 0;
   const rating = marginToRating(margin);
+  const { bg, text } = getRatingColors(rating);
+  const isD = margin <= 0;
   return (
-    // content-visibility: the browser skips layout and paint for rows off screen until they near
-    // the viewport (the House ledger is ~435 rows); 95 px is a row's height on a phone.
-    // The seat link's ::after stretches over the whole row, so a click anywhere opens the race page;
-    // the candidate links sit above it (relative z-10) and still go to the candidate pages.
-    <div className="relative flex items-center justify-between gap-3 py-2.5 transition-colors hover:bg-[var(--app-panel)] md:px-2" style={{ borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 95px" }}>
+    // The seat link's ::after covers the card, so a click anywhere opens the race page; the
+    // candidate links sit above it (relative z-10) and still go to the candidate pages.
+    // content-visibility skips off-screen cards (the House grid is 435).
+    <div
+      className="group relative flex min-w-0 items-center justify-between gap-3 py-2.5 transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_4%,transparent)] md:px-1.5"
+      style={{ borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 76px" }}
+    >
       <div className="min-w-0">
-        <div className="mb-1 flex items-center gap-1.5">
-          <Link prefetch={false} href={raceHref(basePath, race)} className="truncate text-sm font-bold after:absolute after:inset-0 after:content-['']" style={{ color: "var(--app-text-primary)" }}>
+        <div className="mb-1 flex min-w-0 items-center gap-1.5">
+          <Link prefetch={false} href={raceHref(basePath, race)} className="truncate text-[13px] font-bold after:absolute after:inset-0 after:content-[''] group-hover:underline" style={{ color: "var(--app-text-primary)" }}>
             {race.name}
           </Link>
-          {showSpecialBadge && isSpecialRace(race) && <SpecialBadge />}
+          {showSpecialBadge && isSpecialRace(race) && (
+            <span className="shrink-0 rounded-full border px-1.5 py-px text-[9px] font-semibold" style={{ borderColor: "var(--app-border)", color: "var(--app-text-muted)" }}>Special</span>
+          )}
         </div>
-        <div className="flex flex-col items-start gap-0.5 [&_a]:relative [&_a]:z-10" style={{ fontFamily: "var(--font-serif)" }}>
+        <div className="flex min-w-0 flex-col gap-0.5 text-[13px] leading-snug [&_a]:relative [&_a]:z-10">
           <CandidateName candidate={race.candidates?.dem} state={race.state} slot="dem" />
           <CandidateName candidate={race.candidates?.rep} state={race.state} slot="rep" />
         </div>
       </div>
       <div className="shrink-0 text-right">
-        <MarginFigure margin={margin} className="block text-lg" />
-        <div className="mt-1"><RatingPill rating={rating} /></div>
+        <div className="text-lg font-bold leading-none tabular-nums" style={{ fontFamily: "var(--font-serif)", color: isD ? "var(--party-dem)" : "var(--party-rep)" }}>
+          {isD ? "D" : "R"}+{Math.abs(margin).toFixed(1)}
+        </div>
+        <span className="mt-1.5 inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold" style={{ background: bg, color: text }}>{rating}</span>
       </div>
     </div>
   );
 }
 
-const TIER_EXPAND_AT = 24;
-const TIER_EXPAND_SHOW = 18;
-
-function columnsFor(count: number): number {
-  if (count <= 2) return 1;
-  if (count <= 10) return 2;
-  if (count <= 24) return 3;
-  return 4;
-}
-
-function DesktopTierBlock({
-  tier,
-  races,
-  basePath,
-  showSpecialBadge,
-}: {
-  tier: Tier;
-  races: ForecastSummary[];
-  basePath: string;
-  showSpecialBadge?: boolean;
-}) {
-  const [expanded, setExpanded] = useState(false);
-  const truncated = !expanded && races.length > TIER_EXPAND_AT;
-  const visible = truncated ? races.slice(0, TIER_EXPAND_SHOW) : races;
-
-  return (
-    <div className="mt-6 first:mt-0">
-      <TierHeader label={tier} count={races.length} />
-      <div
-        style={{
-          columnCount: columnsFor(visible.length),
-          columnGap: "2.5rem",
-          columnRuleWidth: 1,
-          columnRuleStyle: "solid",
-          columnRuleColor: "var(--app-border)",
-        }}
-      >
-        {visible.map((r) => (
-          <div key={r.id} style={{ breakInside: "avoid" }}>
-            <LedgerRow race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />
-          </div>
-        ))}
-        {truncated && (
-          <div style={{ columnSpan: "all" }} className="pt-3">
-            <button
-              type="button"
-              onClick={() => setExpanded(true)}
-              className="font-mono text-[10px] font-semibold uppercase tracking-wider"
-              style={{ color: "var(--app-text-very-muted)" }}
-            >
-              Show all {races.length} {tier} races
-            </button>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
+// Long lists (the House) open on the first few rows of cards with a "show all".
+const GRID_EXPAND_AT = 48;
+const GRID_EXPAND_SHOW = 24;
 
 export function ForecastRaceCards({
   races,
@@ -280,105 +181,54 @@ export function ForecastRaceCards({
   basePath: string;
   showSpecialBadge?: boolean;
 }) {
-  const [desktopView, setDesktopView] = useState<"cards" | "table">("cards");
-  const sorted = useMemo(
-    () => [...races].sort((a, b) => Math.abs(a.margin ?? 0) - Math.abs(b.margin ?? 0)),
-    [races]
-  );
-  const byTier = useMemo(() => {
-    const groups: Record<Tier, ForecastSummary[]> = { "Toss-Up": [], Lean: [], Likely: [], Safe: [] };
-    for (const r of sorted) groups[tierOf(marginToRating(r.margin ?? 0))].push(r);
-    groups.Safe = [...groups.Safe].sort((a, b) => a.name.localeCompare(b.name));
-    return groups;
-  }, [sorted]);
+  const [sortKey, setSortKey] = useState<SortKey>("competitive");
+  const [sortDir, setSortDir] = useState<SortDir>("asc");
+  const [expanded, setExpanded] = useState(false);
+  const sorted = useMemo(() => sortRaces(races, sortKey, sortDir), [races, sortKey, sortDir]);
+  const truncated = !expanded && sorted.length > GRID_EXPAND_AT;
+  const visible = truncated ? sorted.slice(0, GRID_EXPAND_SHOW) : sorted;
+  const control = { background: "var(--app-bg)", borderColor: "var(--app-border)", color: "var(--app-text-primary)" };
 
   return (
-    <>
-      {/* Mobile: tiered ledger */}
-      <div className="md:hidden">
-        {(["Toss-Up", "Lean", "Likely"] as Tier[]).map((tier) => {
-          const rows = byTier[tier];
-          if (!rows.length) return null;
-          return (
-            <div key={tier} className="mt-6 first:mt-0">
-              <TierHeader label={tier} count={rows.length} />
-              {rows.map((r) => <LedgerRow key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
-            </div>
-          );
-        })}
-        {byTier.Safe.length > 0 && (
-          <div className="mt-6">
-            <TierHeader label="Safe" count={byTier.Safe.length} />
-            {byTier.Safe.map((r) => <LedgerRow key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
-          </div>
-        )}
-      </div>
-
-      {/* Desktop: tier-grouped column ledger — same row as mobile, column count tapers with tier size */}
-      <div className="hidden md:block">
-        <div className="mb-2 flex justify-start">
-          <div
-            className="inline-flex rounded-lg border p-0.5"
-            style={{ background: "var(--app-tab-bg)", borderColor: "var(--app-border)" }}
-            role="group"
-            aria-label="Race display"
-          >
-            <button
-              type="button"
-              onClick={() => setDesktopView("cards")}
-              aria-pressed={desktopView === "cards"}
-              className="flex items-center gap-1.5 rounded-md px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider transition-colors"
-              style={{
-                background: desktopView === "cards" ? "var(--app-panel)" : "transparent",
-                color: desktopView === "cards" ? "var(--app-text-primary)" : "var(--app-text-muted)",
-                boxShadow: desktopView === "cards" ? "0 1px 2px rgba(0,0,0,.08)" : "none",
-              }}
-            >
-              <svg aria-hidden="true" className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
-                <rect x="1" y="1" width="6" height="6" rx="1" /><rect x="9" y="1" width="6" height="6" rx="1" />
-                <rect x="1" y="9" width="6" height="6" rx="1" /><rect x="9" y="9" width="6" height="6" rx="1" />
-              </svg>
-              Cards
-            </button>
-            <button
-              type="button"
-              onClick={() => setDesktopView("table")}
-              aria-pressed={desktopView === "table"}
-              className="flex items-center gap-1.5 rounded-md px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider transition-colors"
-              style={{
-                background: desktopView === "table" ? "var(--app-panel)" : "transparent",
-                color: desktopView === "table" ? "var(--app-text-primary)" : "var(--app-text-muted)",
-                boxShadow: desktopView === "table" ? "0 1px 2px rgba(0,0,0,.08)" : "none",
-              }}
-            >
-              <svg aria-hidden="true" className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
-                <rect x="1" y="2" width="14" height="2" rx="1" /><rect x="1" y="7" width="14" height="2" rx="1" />
-                <rect x="1" y="12" width="14" height="2" rx="1" />
-              </svg>
-              Table
-            </button>
-          </div>
+    <section>
+      {/* Header: the race count and the sort, over the site's section rule */}
+      <div className="flex items-center justify-between gap-4 border-b-2 pb-2" style={{ borderColor: "var(--app-text-primary)" }}>
+        <div className="flex items-baseline gap-2">
+          <h3 className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-primary)" }}>All races</h3>
+          <span className="text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>{races.length}</span>
         </div>
-
-        {desktopView === "cards" ? (
-          <div>
-            {TIER_ORDER.map((tier) => {
-              const rows = byTier[tier];
-              if (!rows.length) return null;
-              return <DesktopTierBlock key={tier} tier={tier} races={rows} basePath={basePath} showSpecialBadge={showSpecialBadge} />;
-            })}
-          </div>
-        ) : (
-          <RaceTable
-            races={races}
-            basePath={basePath}
-            nameLabel={basePath === "/house" ? "District" : "State"}
-            showSpecialBadge={showSpecialBadge}
-            initialSortKey="competitive"
-            initialSortDir="asc"
-          />
-        )}
+        <div className="ml-auto flex items-center gap-1.5">
+          <label className="flex items-center gap-2">
+            <span className="shrink-0 text-[9px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Sort</span>
+            <select value={sortKey} onChange={(e) => { setSortKey(e.target.value as SortKey); setSortDir("asc"); }} className="rounded-md border px-2 py-1 text-xs font-semibold outline-none" style={control}>
+              {SORT_OPTIONS.map((option) => <option key={option.key} value={option.key}>{option.key === "name" && basePath === "/house" ? "District" : option.label}</option>)}
+            </select>
+          </label>
+          <button
+            type="button"
+            onClick={() => setSortDir(sortDir === "asc" ? "desc" : "asc")}
+            className="shrink-0 rounded-md border px-2 py-1 text-xs font-semibold"
+            style={control}
+            aria-label={`Sort ${sortDir === "asc" ? "ascending" : "descending"}`}
+          >
+            {sortDir === "asc" ? "▼" : "▲"}
+          </button>
+        </div>
       </div>
-    </>
+
+      <div className="mt-1 grid grid-cols-1 gap-x-8 sm:grid-cols-2 lg:grid-cols-3">
+        {visible.map((r) => <RaceCard key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
+      </div>
+      {truncated && (
+        <button
+          type="button"
+          onClick={() => setExpanded(true)}
+          className="mt-4 w-full border-t pt-3 text-center text-[10px] font-semibold uppercase tracking-wider underline decoration-dotted underline-offset-4 hover:decoration-solid"
+          style={{ borderColor: "var(--app-border)", color: "var(--app-text-muted)" }}
+        >
+          Show all {sorted.length} races
+        </button>
+      )}
+    </section>
   );
 }

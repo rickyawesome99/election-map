@@ -1,3 +1,4 @@
+import type { AreaSwing, NightFitData } from "@/lib/resultsNight";
 // Client-safe shapes for the election-night Results page (/results). The priors are built on the
 // server (lib/resultsPriors.ts) and served as a static JSON slice; the live feed and the needle
 // (lib/resultsFeed.ts, lib/resultsNeedle.ts) run in the browser against civicAPI.
@@ -12,10 +13,33 @@ export const ELECTION_DATE = "2026-11-03";
  *  before the first polls close); before it the feed only serves test data the page hides.
  *  ?test=1 and the replay control bypass it. */
 export const FEED_OPENS_AT = Date.parse("2026-11-03T22:00:00Z");
-/** The trend charts' time window: 6:01 PM ET on election night to 6:01 PM ET two days later, where
- *  nearly all of the movement happened. Points outside it are cut, the line ending (or starting)
- *  at the window's edge. */
-export const TREND_WINDOW: [number, number] = [Date.parse("2026-11-03T23:01:00Z"), Date.parse("2026-11-05T23:01:00Z")];
+/** The published archive of the count, public/<dir>/ (scripts/publish-results-archive.ts), from
+ *  6 PM ET election night to 6 PM ET Monday Nov 16, when the live intake ended. /results is a static
+ *  replay of it (no feed, no clock), opening on its last frame. */
+export const RESULTS_ARCHIVE = {
+  dir: "results-archive-2026",
+  start: Date.parse("2026-11-03T23:00:00Z"),
+  end: Date.parse("2026-11-16T23:00:00Z"),
+};
+/** The published archive's index: every frame's time (and how many races it changed; -1 = a
+ *  keyframe holding every race) and the chunk files, each starting at frame `first`. */
+export type ResultsArchiveManifest = {
+  start: number;
+  end: number;
+  frames: { t: number; changed: number }[];
+  chunks: { file: string; first: number; size: number }[];
+};
+/** One chunk: a keyframe (every race) and the frames after it, each only the races that changed.
+ *  Stored races carry fetchedAt 0; the page stamps them with the frame's time. */
+export type ResultsArchiveChunk = { first: number; frames: ResultsArchiveFrame[] };
+/** `fit`/`areas`: the night model at this frame (lib/resultsNight.ts), as the page would compute it.
+ *  `moved`: [civicId, votes added] for every race whose total moved since the previous frame. */
+export type ResultsArchiveFrame = { t: number; races: LiveRace[]; fit: NightFitData; areas: Record<CountyArea, AreaSwing>; moved: [number, number][] };
+/** The trend charts' time window: 6:01 PM ET on election night to the end of the archive (6 PM ET
+ *  Nov 16). It ended at 6:01 PM ET Nov 5 while the count was live; the user asked for the whole
+ *  count once the page became the archive. Points outside it are cut, the line ending (or
+ *  starting) at the window's edge; inside it the chart scales to the points shown. */
+export const TREND_WINDOW: [number, number] = [Date.parse("2026-11-03T23:01:00Z"), RESULTS_ARCHIVE.end];
 
 /** One county (or, for a House race, the district's piece of a county) of the pre-election projection. */
 export type CountyPrior = {

@@ -66,6 +66,28 @@ function fillFor(row: ResultsRow, mode: MapMode): string | null {
 const isCalledFlip = (row: ResultsRow) => row.proj.locked && !!row.proj.winner && !!row.prior.seatParty && row.proj.winner !== row.prior.seatParty;
 type GeoFeature = { rsmKey: string; properties?: Record<string, unknown> };
 
+/** One district or state, memoized: the Results page keeps an unchanged race's row object from one
+ *  archive frame to the next, so only the shapes whose race moved redraw on a step. */
+const Region = memo(function Region({ geo, row, mode, isSel, isHouse, t, onHover, onSelect }: {
+  geo: GeoFeature; row: ResultsRow | undefined; mode: MapMode; isSel: boolean; isHouse: boolean; t: Theme;
+  onHover: (row: ResultsRow | null) => void; onSelect: (row: ResultsRow) => void;
+}) {
+  const base = row ? fillFor(row, mode) ?? t.mapUnfilled : t.noElection;
+  const flipped = mode !== "swing" && !!row && isCalledFlip(row);
+  const fill = flipped ? flipFill(base) : base;
+  return (
+    <Geography geography={geo}
+      onMouseEnter={() => onHover(row ?? null)}
+      onMouseLeave={() => onHover(null)}
+      onClick={() => row && onSelect(row)}
+      style={{
+        default: { vectorEffect: "non-scaling-stroke", fill, stroke: isSel ? t.hoverStroke : t.mapStroke, strokeWidth: isSel ? (isHouse ? 2 : 3.5) : isHouse ? 0.4 : 1.0, outline: "none" },
+        hover: { vectorEffect: "non-scaling-stroke", fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 0.7 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
+        pressed: { vectorEffect: "non-scaling-stroke", fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 2 : 3.5, outline: "none" },
+      }} />
+  );
+});
+
 // Same frame and theme as ForecastMap: borders are gaps in the page background, as on every national map.
 const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t, onHover, onSelect }: {
   geographies: GeoFeature[]; office: ResultsOffice; rows: ResultsRow[]; mode: MapMode; selected: string | null; t: Theme;
@@ -87,21 +109,7 @@ const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t
       {geographies.map((geo) => {
         if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID as string | undefined)) return null;
         const row = find(geo);
-        const base = row ? fillFor(row, mode) ?? t.mapUnfilled : t.noElection;
-        const flipped = mode !== "swing" && !!row && isCalledFlip(row);
-        const fill = flipped ? flipFill(base) : base;
-        const isSel = !!row && selected === `${row.prior.office}-${row.prior.id}`;
-        return (
-          <Geography key={geo.rsmKey} geography={geo}
-            onMouseEnter={() => onHover(row ?? null)}
-            onMouseLeave={() => onHover(null)}
-            onClick={() => row && onSelect(row)}
-            style={{
-              default: { vectorEffect: "non-scaling-stroke", fill, stroke: isSel ? t.hoverStroke : t.mapStroke, strokeWidth: isSel ? (isHouse ? 2 : 3.5) : isHouse ? 0.4 : 1.0, outline: "none" },
-              hover: { vectorEffect: "non-scaling-stroke", fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 0.7 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
-              pressed: { vectorEffect: "non-scaling-stroke", fill, stroke: t.hoverStroke, strokeWidth: isHouse ? 2 : 3.5, outline: "none" },
-            }} />
-        );
+        return <Region key={geo.rsmKey} geo={geo} row={row} mode={mode} isSel={!!row && selected === `${row.prior.office}-${row.prior.id}`} isHouse={isHouse} t={t} onHover={onHover} onSelect={onSelect} />;
       })}
     </>
   );

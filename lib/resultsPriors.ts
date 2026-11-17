@@ -120,7 +120,7 @@ function pastFor(office: ResultsOffice, race: RaceForecast, state: string, href:
 
 let houseSwingCache: ReturnType<typeof house2024Baselines> | null = null;
 
-/** The race page's seat swing baseline. As on /analysis/post-election, a House seat needs a D vs R race in 2026. */
+/** The race page's seat swing baseline. As on the post-election analysis (/overview), a House seat needs a D vs R race in 2026. */
 function seatSwingBase(office: ResultsOffice, race: RaceForecast, contested: boolean, past: PastRaceResult[]): RacePrior["seatSwingBase"] {
   if (!contested) return null;
   if (office !== "house") {

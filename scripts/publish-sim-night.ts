@@ -1,9 +1,11 @@
-// Publishes the simulated nights (data-entry/results-archive/sim-*, from
-// scripts/simulate-results-night.mjs) to public/results-sim/ so the Results page's pre-election
-// preview works on the deployed site, where the archive directory and its API routes are empty.
-// Writes, per set, the gzipped snapshots as they are (the page gunzips them in the browser) and
-// series.json (the needle's projected seats and every race's projected and counted margin at every snapshot, as /api/results/archive/series
-// computes it), plus manifest.json listing every snapshot in the archive route's shape.
+// Packages the simulated nights (data-entry/results-archive/sim-*, from
+// scripts/simulate-results-night.mjs) for replay: per set, the gzipped snapshots as they are and
+// series.json (the needle's projected seats and every race's projected and counted margin at every
+// snapshot), plus manifest.json listing every snapshot.
+//
+// Until 2026-11-17 this went to public/results-sim/ for the pre-election preview on the site. The
+// page is now a static archive of the real count, so the package is kept locally only, in
+// data-entry/results-archive/results-sim-published/ (gitignored, not deployed).
 //
 //   npm run publish-sim-night
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
@@ -18,7 +20,7 @@ import { RESULTS_OFFICES, type ArchiveSeries, type LiveRace } from "../lib/resul
 import { raceHash } from "../lib/resultsFormat";
 
 const SRC = join(process.cwd(), "data-entry", "results-archive");
-const OUT = join(process.cwd(), "public", "results-sim");
+const OUT = join(process.cwd(), "data-entry", "results-archive", "results-sim-published");
 const FILE_RE = /^\d{4}-\d{2}-\d{2}T\d{2}-\d{2}-\d{2}-\d{3}Z\.json\.gz$/;
 
 const sets = existsSync(SRC) ? readdirSync(SRC).filter((d) => /^sim-[a-z0-9-]+$/.test(d)).sort() : [];

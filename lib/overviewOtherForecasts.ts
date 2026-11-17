@@ -1,7 +1,7 @@
-// The Overview's Other Forecasts panel, computed on the server (app/overview/page.tsx). Server-only:
+// The Forecast tab's Other Forecasts panel (components/ForecastOutlook.tsx), computed on the server (lib/outlookData.ts). Server-only:
 // it runs the forecast comparison and reads every race's market price.
 
-import type { OverviewData } from "@/components/OverviewEditorial";
+import type { OutlookData } from "@/components/ForecastOutlook";
 import { governorData, houseData, senateData, type RaceType } from "@/data/forecastData";
 import { externalForecasts, EXTERNAL_FORECASTS_READ } from "@/data/externalForecasts";
 import { comparisonFor } from "@/lib/forecastComparison";
@@ -14,16 +14,16 @@ import polymarketControl from "@/data/polymarketControl.json";
 const OVERVIEW_FORECASTERS = ["ddhq", "votehub"];
 const CHAMBER_TYPES: RaceType[] = ["house", "senate", "governor"];
 
-export function otherForecasts(): OverviewData["otherForecasts"] {
+export function otherForecasts(): OutlookData["otherForecasts"] {
   const byChamber = Object.fromEntries(CHAMBER_TYPES.map((type) => [type, comparisonFor(type).toplines])) as Record<RaceType, ReturnType<typeof comparisonFor>["toplines"]>;
-  const rows: OverviewData["otherForecasts"]["rows"] = OVERVIEW_FORECASTERS.map((id) => {
+  const rows: OutlookData["otherForecasts"]["rows"] = OVERVIEW_FORECASTERS.map((id) => {
     const f = externalForecasts.find((x) => x.id === id)!;
     return {
       id, name: f.name, short: f.shortName ?? f.name, kind: f.kind, href: f.urls.home,
       cells: Object.fromEntries(CHAMBER_TYPES.map((type) => {
         const t = byChamber[type][id];
         return [type, t?.demSeats == null || t.repSeats == null ? null : { dem: Math.round(t.demSeats), rep: Math.round(t.repSeats), tossups: t.tossups || null, pDem: t.pDemControl }];
-      })) as OverviewData["otherForecasts"]["rows"][number]["cells"],
+      })) as OutlookData["otherForecasts"]["rows"][number]["cells"],
     };
   });
   // Polymarket: every race's favourite (the polyDem price the race pages show), summed with the

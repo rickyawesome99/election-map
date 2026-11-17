@@ -32,6 +32,9 @@ const nextConfig: NextConfig = {
       tab("districtTable", "/model#districts"),
       tab("(?<tab>state|district)", "/model/:tab"),
       { source: "/", destination: "/overview", permanent: false },
+      // The post-election analysis moved under the Overview (user, 2026-11-17): 2026 on /overview, past years on /overview/[year].
+      { source: "/analysis/post-election", destination: "/overview", permanent: false },
+      { source: "/analysis/post-election/:year", destination: "/overview/:year", permanent: false },
       { source: "/model/states", destination: "/model", permanent: true },
       { source: "/model/states/:abbr", destination: "/model/:abbr", permanent: true },
       { source: "/model/table", destination: "/model", permanent: false },

@@ -31,6 +31,7 @@
     "results-snapshot": "tsx --conditions=react-server scripts/build-results-snapshot.ts",
     "results-2026": "python3 scripts/results_2026/fetch.py && python3 scripts/results_2026/build.py",
     "publish-sim-night": "tsx --conditions=react-server scripts/publish-sim-night.ts",
+    "publish-results-archive": "tsx --conditions=react-server scripts/publish-results-archive.ts",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

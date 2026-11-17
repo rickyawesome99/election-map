@@ -11,7 +11,7 @@ import { settledParty } from "@/lib/resultsNeedle";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
-import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
+import { fmtClose, fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { OFFICE_LABEL, type Party, type PastRaceResult, type RaceHistory } from "@/lib/resultsTypes";
 import { MarginTrend } from "@/components/results/SeatTrend";
 import type { ResultsRow } from "@/components/results/ResultsPage";
@@ -172,6 +172,11 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
     ? { leader: live!.candidates[0].name, second: live!.candidates[1].name, party: partyOf(live!.candidates[0].party) ?? "I", votes: live!.candidates[0].votes - live!.candidates[1].votes }
     : null;
 
+  // Poll closing in ET, as the race table writes it ("7/8 PM" where the state closes in two zones);
+  // a close after midnight ET (Alaska, Hawaii) is on Nov 4.
+  const { first, last } = prior.pollsClose;
+  const afterMidnight = Number(last.split(":")[0]) < 12;
+  const closes = `Polls close ${last !== first ? `${fmtClose(first).replace(/ [AP]M$/, "")}/${fmtClose(last)}` : fmtClose(first)} ET${afterMidnight ? " Nov 4" : ""}`;
   const eyebrow = [prior.label.replace(/ \(special\)$/, ""), OFFICE[prior.office], prior.special ? "Special election" : null, prior.jungle ? "Jungle round" : null, "November 3, 2026"].filter(Boolean).join(" · ");
   const note = [
     prior.forecast.contest !== "contested" ? "Not a contested two-party race: the projection is the forecast's." : proj.tier === "topline" ? "County detail not loaded for this race yet; projected from the race total." : proj.tier === "none" ? "No votes in." : `${reporting} of ${proj.counties.length} counties reporting, ${done} done.`,
@@ -184,7 +189,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
       <div className="grid gap-x-8 gap-y-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <div className="min-w-0">
           <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-            <div className="text-[11px] font-bold uppercase tracking-wider" style={muted}>{eyebrow}</div>
+            <div className="text-[11px] font-bold uppercase tracking-wider" style={muted}>{eyebrow} · <span className="whitespace-nowrap">{closes}</span></div>
             <Link href={prior.href} prefetch={false} className="text-xs hover:underline" style={muted}>Race page →</Link>
           </div>
           <h1 className="mt-1.5" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.5rem, 3vw, 1.85rem)", fontWeight: 700, lineHeight: 1.15, letterSpacing: "-0.01em", textWrap: "balance" }}>

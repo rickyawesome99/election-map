@@ -67,8 +67,8 @@ test("race page shows the derived probability, range and rating", async ({ page 
   await expect(page.getByText(RATING).first()).toBeVisible();
 });
 
-test("overview draws the simulated seat distribution for each chamber", async ({ page }) => {
-  await page.goto("/overview");
+test("forecast page draws the simulated seat distribution for each chamber", async ({ page }) => {
+  await page.goto("/senate");
   await expect(page.getByText("Seat Distribution")).toBeVisible();
   for (const chamber of ["House", "Senate", "Governors"]) {
     const chart = page.getByRole("img", { name: new RegExp(`^${chamber}: simulated Democratic seats`) });
