@@ -42,7 +42,7 @@ test("the sort buttons reorder the boxes by margin and by closeness", async ({ p
   await boxes.first().click();
   await expect(page.locator("button.rc-card").first()).toBeVisible();
   await expect(sorts.getByRole("button", { name: "Competitive" })).toHaveAttribute("aria-pressed", "true");
-  await sorts.getByRole("button", { name: "Alphabetical" }).click();
+  await sorts.getByRole("button", { name: "A–Z" }).click();
   await expect(boxes.first()).toHaveText("AK");
 });
 

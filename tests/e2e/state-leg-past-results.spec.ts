@@ -25,16 +25,17 @@ test("the state legislature year selector swaps results and the map era together
   // Phones show the short label ("Dem"), wider screens the full one.
   await expect(page.getByRole("columnheader", { name: /^Dem(ocratic)?$/ })).toBeVisible();
 
-  await page.getByRole("button", { name: /^2018\b/ }).click();
+  await page.getByLabel("Election year").selectOption("2018");
   await expect(page.getByRole("heading", { name: "2018 State House Results" })).toBeVisible();
   await expect
     .poll(() => boundaryRequests.some((u) => u === "/state-leg-districts-historical/house/NC-2018.json"))
     .toBe(true);
   await expect(page.getByText("2011-cycle map", { exact: false })).toHaveCount(0);
-  await expect(page.getByText(/boundaries used in 2018/)).toBeVisible();
+  // The chamber's year list marks the year on the map.
+  await expect(page.getByText("On map", { exact: true }).first()).toBeVisible();
 
   // 2016 was a different map again — the selector must not reuse 2018's file.
-  await page.getByRole("button", { name: /^2016\b/ }).click();
+  await page.getByLabel("Election year").selectOption("2016");
   await expect
     .poll(() => boundaryRequests.some((u) => u === "/state-leg-districts-historical/house/NC-2016.json"))
     .toBe(true);
@@ -45,7 +46,7 @@ test("the state legislature year selector swaps results and the map era together
 test("a chamber with no published count shows it as such rather than as a tie", async ({ page }) => {
   await page.goto("/states/ok/legislature/house");
   await page.getByRole("tab", { name: "Past results" }).click();
-  await page.getByRole("button", { name: /^2022\b/ }).click();
+  await page.getByLabel("Election year").selectOption("2022");
   await expect(page.getByRole("heading", { name: "2022 State House Results" })).toBeVisible();
   await expect(page.getByText("No vote count published").first()).toBeVisible();
   await expect(page.getByText("No count", { exact: false }).first()).toBeVisible();

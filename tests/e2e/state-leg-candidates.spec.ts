@@ -9,7 +9,7 @@ test("a state legislator's page lists their generals and links back to the distr
   await expect(page.getByText("State Representative · Ohio HD 31")).toBeVisible();
   await expect(page.getByText("4W–0L")).toBeVisible();
   await expect(page.getByRole("link", { name: /Ohio State House · HD 38/ }).first()).toBeVisible();
-  await expect(page.getByText("2016–2020 map").first()).toBeVisible();
+  await expect(page.getByText("2012 map").first()).toBeVisible();
   // Opponents link to their own pages.
   await page.getByRole("link", { name: "Rita Darrow" }).click();
   await expect(page).toHaveURL(/\/candidates\/rita-darrow-oh$/);
