@@ -158,6 +158,18 @@ const firstDiff = (a: string, b: string) => {
   const from = Math.max(0, c - 120);
   return `line ${at + 1}, char ${c + 1}: on disk …${l1.slice(from, c + 60)}… / rebuilt …${l2.slice(from, c + 60)}…`;
 };
+// Numbers equal to 1e-9 relative: the archive keeps some figures unrounded (races.json margins), and
+// their last digits differ between Apple silicon and the x64 CI runner (-14.666156355721021 here,
+// ...025 there). Nothing published reads past the first few decimals, so that noise is not a change.
+const sameValue = (a: unknown, b: unknown): boolean => {
+  if (typeof a === "number" && typeof b === "number") return a === b || Math.abs(a - b) <= 1e-9 * Math.max(1, Math.abs(a), Math.abs(b));
+  if (Array.isArray(a) || Array.isArray(b)) return Array.isArray(a) && Array.isArray(b) && a.length === b.length && a.every((x, k) => sameValue(x, b[k]));
+  if (a && b && typeof a === "object" && typeof b === "object") {
+    const ka = Object.keys(a), kb = Object.keys(b);
+    return ka.length === kb.length && ka.every((k, n) => k === kb[n] && sameValue((a as Record<string, unknown>)[k], (b as Record<string, unknown>)[k]));
+  }
+  return a === b;
+};
 const annotate = (lines: string[]) => { if (process.env.GITHUB_ACTIONS) for (const l of lines) console.log(`::error::${l.replace(/%/g, "%25").replace(/\r/g, "%0D").replace(/\n/g, "%0A")}`); };
 
 if (process.argv.includes("--check")) {
@@ -165,10 +177,10 @@ if (process.argv.includes("--check")) {
   for (const [name, text] of Object.entries(files)) {
     const f = path.join(DIR, name);
     if (!fs.existsSync(f)) { diffs.push(`${name}: missing`); continue; }
-    { const disk = fs.readFileSync(f, "utf8"); if (disk !== text) diffs.push(`${name}: differs at ${firstDiff(disk, text)}`); }
+    { const disk = fs.readFileSync(f, "utf8"); if (disk !== text && !sameValue(JSON.parse(disk), JSON.parse(text))) diffs.push(`${name}: differs at ${firstDiff(disk, text)}`); }
   }
   const savedManifest = JSON.parse(fs.readFileSync(path.join(DIR, "manifest.json"), "utf8"));
-  if (JSON.stringify({ ...savedManifest, commit: null }) !== JSON.stringify({ ...manifest, commit: null })) diffs.push(`manifest.json: differs at ${firstDiff(JSON.stringify({ ...savedManifest, commit: null }, null, 1), JSON.stringify({ ...manifest, commit: null }, null, 1))}`);
+  if (!sameValue({ ...savedManifest, commit: null }, JSON.parse(JSON.stringify({ ...manifest, commit: null })))) diffs.push(`manifest.json: differs at ${firstDiff(JSON.stringify({ ...savedManifest, commit: null }, null, 1), JSON.stringify({ ...manifest, commit: null }, null, 1))}`);
   if (diffs.length) {
     console.error(`Final-forecast archive differs from the model:\n  ${diffs.join("\n  ")}`);
     annotate(diffs.map((d) => `Final-forecast archive: ${d}`));
