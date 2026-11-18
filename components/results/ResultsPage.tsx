@@ -89,6 +89,8 @@ function buildBoards(chunk: ResultsArchiveChunk): Board[] {
 
 export default function ResultsPage() {
   const [priors, setPriors] = useState<Record<ResultsOffice, PriorsSlice> | null>(null);
+  // Latest updates folds away behind its head; closed by default (user, 2026-11-18).
+  const [latestOpen, setLatestOpen] = useState(false);
   const [manifest, setManifest] = useState<ResultsArchiveManifest | null>(null);
   const [seatSeries, setSeatSeries] = useState<SeatSeries | null>(null);
   const [raceSeries, setRaceSeries] = useState<RaceMarginSeries | null>(null);
@@ -337,17 +339,37 @@ export default function ResultsPage() {
     {header}
     <main className="mx-auto max-w-7xl px-4 pb-6 pt-2 sm:px-6 sm:pb-8 sm:pt-3">
     {status}
-    <div className="mt-6 space-y-10">
+    <div className="mt-3 space-y-10">
 
-      {/* Latest updates: the races whose count moved in this frame. Always LATEST_SHOWN rows, blank
-          ones filling in, so stepping through time never moves the page under it (user). */}
-      <section>
-        {/* The note sits on its own line on phones (always, so its length never changes the height) and beside the label from sm. */}
-        <LedgerSectionHead label="Latest updates" meta={<span className="block max-sm:w-[calc(100vw-2rem)] max-sm:truncate">{shown.frame.moved.length ? `${shown.frame.moved.length} ${shown.frame.moved.length === 1 ? "race" : "races"} moved since the previous snapshot${shown.frame.moved.length > LATEST_SHOWN ? `, the ${LATEST_SHOWN} biggest shown` : ""}` : "no count moved since the previous snapshot"}</span>} />
-        <ol className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
-          {latestUpdates.map(({ row, at, added }) => <LatestUpdate key={row.prior.civicId} row={row} at={at} added={added} onSelect={select} />)}
-          {Array.from({ length: LATEST_SHOWN - latestUpdates.length }, (_, i) => <LatestUpdatePlaceholder key={`blank-${i}`} />)}
-        </ol>
+      {/* Latest updates: the races whose count moved in this frame. Collapsed by default; when open,
+          always LATEST_SHOWN rows, blank ones filling in, so stepping through time never moves the
+          page under it (user). */}
+      <section className={latestOpen ? "" : "mb-5!"}>{/* collapsed: half the usual gap to Balance of power */}
+        {/* The whole head is the toggle: label, chevron, then the note (its own line on phones, always,
+            so its length never changes the height; beside the label from sm). */}
+        <button
+          type="button"
+          onClick={() => setLatestOpen((v) => !v)}
+          aria-expanded={latestOpen}
+          aria-controls="latest-updates-list"
+          className={`flex w-full flex-wrap items-baseline gap-1.5 text-left sm:gap-3 ${latestOpen ? "mb-3" : ""}`}
+        >
+          <span className="flex items-baseline gap-1.5">
+            <h2 className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Latest updates</h2>
+            <svg aria-hidden viewBox="0 0 10 10" className="h-2.5 w-2.5 self-center transition-transform" style={{ transform: latestOpen ? "rotate(90deg)" : "none", color: "var(--app-text-muted)" }}>
+              <path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
+          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+            <span className="block max-sm:w-[calc(100vw-2rem)] max-sm:truncate">{shown.frame.moved.length ? `${shown.frame.moved.length} ${shown.frame.moved.length === 1 ? "race" : "races"} moved since the previous snapshot${shown.frame.moved.length > LATEST_SHOWN ? `, the ${LATEST_SHOWN} biggest shown` : ""}` : "no count moved since the previous snapshot"}</span>
+          </span>
+        </button>
+        {latestOpen && (
+          <ol id="latest-updates-list" className="grid grid-cols-1 gap-x-10 sm:grid-cols-2">
+            {latestUpdates.map(({ row, at, added }) => <LatestUpdate key={row.prior.civicId} row={row} at={at} added={added} onSelect={select} />)}
+            {Array.from({ length: LATEST_SHOWN - latestUpdates.length }, (_, i) => <LatestUpdatePlaceholder key={`blank-${i}`} />)}
+          </ol>
+        )}
       </section>
 
       {/* Dashboard (a tighter gap to the map than the page's other sections) */}

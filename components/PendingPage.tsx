@@ -146,20 +146,21 @@ function OverviewSkeleton() {
 
 function ForecastSkeleton({ path }: { path: string }) {
   const chamber = path.slice(1);
-  const title = chamber === "house" ? "U.S. House" : chamber === "governor" ? "Governors" : "U.S. Senate";
   return (
     <>
       <Hero className="pb-0">
-        <div className="min-w-0 space-y-3"><Title>2026 Outlook</Title><Sk className="h-4 w-72 max-w-full" /></div>
+        <div className="min-w-0 space-y-3"><Title>2026 Outlook</Title><Sk className="h-5 w-56 max-w-full rounded-full" /></div>
         <div className="mb-8 mt-7 grid grid-cols-6 gap-2 sm:gap-3 lg:grid-cols-5">{Array.from({ length: 5 }, (_, i) => <Sk key={i} className={`h-[92px] w-full rounded-md sm:h-[108px] ${i < 2 ? "col-span-3" : "col-span-2"} lg:col-span-1`} />)}</div>
-        <div className="flex flex-wrap items-end gap-x-4 gap-y-2"><Title>{title}</Title><Sk className="mb-1 h-7 w-20" /><Sk className="mb-1.5 h-3.5 w-16" /></div>
-        <div className="mt-4 flex gap-5" style={RULE}>
+        <div className="mt-2 flex items-end justify-between gap-3" style={RULE}>
+          <div className="flex gap-5">
           {["house", "senate", "governor"].map((c) => (
             <span key={c} className="pb-2 text-[11px] font-semibold uppercase tracking-wider"
               style={{ color: c === chamber ? "var(--app-text-primary)" : "var(--app-text-muted)", borderBottom: c === chamber ? "2px solid var(--app-text-primary)" : "2px solid transparent" }}>
               {c}
             </span>
           ))}
+          </div>
+          <div className="flex items-baseline gap-2 pb-1.5"><Sk className="h-6 w-20" /><Sk className="h-3.5 w-16" /></div>
         </div>
       </Hero>
       <Body>
@@ -499,7 +500,8 @@ function ResultsSkeleton() {
       <Sk className="mt-3 h-4 w-24 rounded-full" />
       <Sk className="mt-3 h-10 w-72" />
       <Sk className="mt-4 h-4 w-80" />
-      <div className="mt-6 space-y-10">
+      <div className="mt-3 space-y-10">
+        <Sk className="mb-5! h-2.5 w-40" />{/* Latest updates, collapsed (no rule, half gap) */}
         <div><SectionHead /><div className="mt-4 grid gap-4 sm:grid-cols-3">{Array.from({ length: 3 }, (_, i) => <Sk key={i} className="h-44 w-full" />)}</div></div>
         <div><SectionHead /><Sk className="mx-auto mt-4 h-[300px] w-full sm:h-[440px]" /></div>
       </div>

@@ -172,7 +172,7 @@ export function StateSection({ rows, legislature, year, housePvPrev, onSelect }:
           {house.length > 0 && <HousePopularVote rows={house} past={past} />}
           {president && <RaceCard row={president} popularVote={popularVote} year={year} onSelect={onSelect} index={0} />}
         </>,
-        legislature.map((c, i) => <LegislatureCard key={c.chamber} result={c} unicameral={legislature.length === 1} governorParty={governorParty} year={year} index={statewide.length + i} />))}
+        legislature.map((c, i) => <LegislatureCard key={c.chamber} result={c} stateId={p0.state.toLowerCase()} unicameral={legislature.length === 1} governorParty={governorParty} year={year} index={statewide.length + i} />))}
       {group(<>House · {house.length} {house.length === 1 ? "seat" : "seats"} · {delegationLabel(house)}</>, house, statewide.length)}
     </div>
   );
@@ -225,7 +225,7 @@ function delegationLabel(house: PostElectionRow[]) {
   );
 }
 
-function LegislatureCard({ result, unicameral, governorParty, year, index }: { result: LegChamberResult; unicameral: boolean; governorParty: string | null; year: number; index: number }) {
+function LegislatureCard({ result, stateId, unicameral, governorParty, year, index }: { result: LegChamberResult; stateId: string; unicameral: boolean; governorParty: string | null; year: number; index: number }) {
   const { chamber, total, up, calledSeats, noElection, seats, leading, flipped, net } = result;
   const name = unicameral ? "Legislature" : chamber === "senate" ? "State Senate" : "State House";
   // A settled chamber fills like a called race, every figure in white, with no badge: the bar keeps its colours inside a white outline.
@@ -247,7 +247,8 @@ function LegislatureCard({ result, unicameral, governorParty, year, index }: { r
     { n: seats.rep - flipped.rep, bg: "var(--party-rep-fill)", label: "Republican, settled" },
   ];
   return (
-    <div onPointerMove={tiltToPointer} onPointerLeave={resetTilt} data-touch-hover="" data-filled={fill ? "" : undefined} className={`rc-card group block h-full w-full self-start py-1.5 pl-3 text-left align-top${fill ? " rounded-r-md pr-2" : ""}`}
+    // Opens the state's chamber overview (user, 2026-11-18); a unicameral legislature lives under "senate".
+    <Link prefetch={false} href={`/states/${stateId}/legislature/${unicameral ? "senate" : chamber}`} aria-label={`Open the ${name} overview`} onPointerMove={tiltToPointer} onPointerLeave={resetTilt} data-touch-hover="" data-filled={fill ? "" : undefined} className={`rc-card group block h-full w-full self-start py-1.5 pl-3 text-left align-top${fill ? " rounded-r-md pr-2" : ""}`}
       style={{ animationDelay: `${Math.min(index, 8) * 45}ms`, borderLeft: `1px solid ${fill ?? "var(--app-border)"}`, backgroundColor: fill ?? undefined, backgroundImage: flippedControl ? flipBackground("linear-gradient(transparent, transparent)", 3, "rgba(255,255,255,0.18)") : undefined, color: fill ? "#ffffff" : undefined }}>
       {/* The race cards' height, less this card's vertical padding */}
       <div className="@container flex min-h-[94px] flex-col justify-start">
@@ -268,7 +269,7 @@ function LegislatureCard({ result, unicameral, governorParty, year, index }: { r
         </div>
       </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

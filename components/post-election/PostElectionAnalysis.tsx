@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import CountyTooltip from "@/components/CountyTooltip";
-import { GenericBallots, StateSection, housePopularVote, rowKey, sortStateRows, tiltCard, untiltCard } from "@/components/post-election/StateRaceCards";
+import { raceHref } from "@/lib/raceLinks";
+import { GenericBallots, StateSection, housePopularVote, sortStateRows, tiltCard, untiltCard } from "@/components/post-election/StateRaceCards";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { startPendingNav } from "@/lib/navPending";
 import { callSideColor, fmtCall } from "@/lib/resultsFormat";
@@ -90,7 +91,9 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
   const picked = hash.slice(1).toUpperCase();
   const stateRows = useMemo(() => sortStateRows(states.get(picked) ?? []), [states, picked]);
   const openRace = useCallback((row: PostElectionRow) => {
-    const href = row.past ? row.past.href : `/results#${rowKey(row.prior)}`;
+    // The race's own page: a past year's past-election page, or the 2026 race page (user, 2026-11-18;
+    // these cards used to open the race on /results).
+    const href = row.past ? row.past.href : row.prior.office === "president" ? null : raceHref(row.prior.office, { name: row.prior.label, id: row.prior.id });
     if (!href) return;
     startPendingNav(href);
     router.push(href);

@@ -3,11 +3,9 @@ import Link from "next/link";
 
 import { useMemo, useState } from "react";
 import type { RaceType } from "@/data/forecastData";
-import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { ForecastSummary } from "@/lib/forecastTypes";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { CandidateName, sortRaces, SORT_OPTIONS, type SortDir, type SortKey } from "./RaceTable";
-import { PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 
 // ─────────────────────────────────────────────────────────────────────────
 // Flat race-type switcher — sits above the map as its own header (replaces
@@ -19,14 +17,20 @@ export function RaceTypeHeader({
   raceType,
   onSelect,
   count,
+  demSeats,
+  repSeats,
 }: {
   raceType: RaceType;
   onSelect: (rt: RaceType) => void;
   count: number;
+  demSeats: number;
+  repSeats: number;
 }) {
+  // Tabs on the left; the projected seat count and race count share the line on the right
+  // (user, 2026-11-17: no big "U.S. House" title — the tab says which chamber it is).
   return (
-    <div className="mb-3 flex items-end justify-between border-b" style={{ borderColor: "var(--app-border)" }}>
-      <nav className="flex gap-5">
+    <div className="mb-3 mt-2 flex items-end justify-between gap-3 border-b" style={{ borderColor: "var(--app-border)" }}>
+      <nav className="flex gap-4 sm:gap-5">
         {(["house", "senate", "governor"] as RaceType[]).map((rt) => (
           <button
             key={rt}
@@ -42,77 +46,17 @@ export function RaceTypeHeader({
           </button>
         ))}
       </nav>
-      <span className="pb-2 text-[10px] md:hidden" style={{ color: "var(--app-text-muted)" }}>
-        {count} {raceType === "house" ? "districts" : "races"}
-      </span>
+      <div className="flex items-baseline gap-x-2 pb-1.5 sm:gap-x-3">
+        <span className="flex items-baseline gap-1">
+          <span className="text-xl font-bold leading-none tabular-nums sm:text-2xl" style={{ fontFamily: "var(--font-serif)", color: "var(--party-dem)" }}>{demSeats}</span>
+          <span className="leading-none" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-very-muted)" }}>&mdash;</span>
+          <span className="text-xl font-bold leading-none tabular-nums sm:text-2xl" style={{ fontFamily: "var(--font-serif)", color: "var(--party-rep)" }}>{repSeats}</span>
+        </span>
+        <span className="whitespace-nowrap text-[11px] sm:text-sm" style={{ color: "var(--app-text-muted)" }}>
+          {count} {raceType === "house" ? "districts" : "races"}
+        </span>
+      </div>
     </div>
-  );
-}
-
-// ─────────────────────────────────────────────────────────────────────────
-// Hero — mobile gets the big scoreboard, desktop collapses to one line so
-// the map (which follows immediately) is the first large thing on screen.
-// ─────────────────────────────────────────────────────────────────────────
-const RACE_TYPE_TITLE: Record<RaceType, string> = { house: "U.S. House", senate: "U.S. Senate", governor: "Governors" };
-
-export function ForecastHero({
-  raceType,
-  demSeats,
-  repSeats,
-  totalSeats,
-  seatsUp,
-}: {
-  raceType: RaceType;
-  demSeats: number;
-  repSeats: number;
-  totalSeats: number;
-  seatsUp: number;
-}) {
-  const threshold = Math.floor(totalSeats / 2) + 1;
-  const demPct = (demSeats / totalSeats) * 100;
-  const repPct = (repSeats / totalSeats) * 100;
-
-  return (
-    <>
-      {/* Mobile */}
-      <div className="mb-4 md:hidden">
-        <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>
-          {RACE_TYPE_TITLE[raceType]}
-        </h1>
-        <div className="mt-2 flex items-baseline gap-2">
-          <span className="text-4xl font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-dem)" }}>{demSeats}</span>
-          <span className="text-2xl" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-very-muted)" }}>&mdash;</span>
-          <span className="text-4xl font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-rep)" }}>{repSeats}</span>
-        </div>
-        <div className="mt-0.5 flex max-w-[14em] justify-between font-mono text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-          <span>Democrats</span><span>Republicans</span>
-        </div>
-        <div className="mt-2 flex h-1.5 max-w-[24em] overflow-hidden rounded-full" style={{ background: "var(--app-tab-bg)" }}>
-          <div style={{ width: `${demPct}%`, background: "var(--party-dem)" }} />
-          <div style={{ width: `${repPct}%`, background: "var(--party-rep)" }} />
-        </div>
-        <div className="mt-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-          {threshold} needed for control &middot; {seatsUp} of {totalSeats} seats up in {electionYear}
-        </div>
-      </div>
-
-      {/* Desktop — title, score, and race count on one line; the map does the rest of the talking */}
-      <div className="mb-3 hidden md:block">
-        <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-          <h1 style={{ ...PAGE_TITLE_STYLE, color: "var(--app-text-primary)" }}>
-            {RACE_TYPE_TITLE[raceType]}
-          </h1>
-          <div className="flex items-baseline gap-1.5">
-            <span className="text-[2rem] font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-dem)" }}>{demSeats}</span>
-            <span style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-very-muted)" }}>&mdash;</span>
-            <span className="text-[2rem] font-bold tabular-nums" style={{ fontFamily: "var(--font-serif)", color: "var(--party-rep)" }}>{repSeats}</span>
-          </div>
-          <span className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-            {seatsUp} {raceType === "house" ? "districts" : "races"}
-          </span>
-        </div>
-      </div>
-    </>
   );
 }
 

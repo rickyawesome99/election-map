@@ -177,7 +177,7 @@ export default function RaceDetail({ row, history }: { row: ResultsRow; history:
   const { first, last } = prior.pollsClose;
   const afterMidnight = Number(last.split(":")[0]) < 12;
   const closes = `Polls close ${last !== first ? `${fmtClose(first).replace(/ [AP]M$/, "")}/${fmtClose(last)}` : fmtClose(first)} ET${afterMidnight ? " Nov 4" : ""}`;
-  const eyebrow = [prior.label.replace(/ \(special\)$/, ""), OFFICE[prior.office], prior.special ? "Special election" : null, prior.jungle ? "Jungle round" : null, "November 3, 2026"].filter(Boolean).join(" · ");
+  const eyebrow = [prior.label.replace(/ \(special\)$/, ""), OFFICE[prior.office], prior.special ? "Special election" : null, prior.jungle ? "Jungle round" : null, "Nov 3, 2026"].filter(Boolean).join(" · ");
   const note = [
     prior.forecast.contest !== "contested" ? "Not a contested two-party race: the projection is the forecast's." : proj.tier === "topline" ? "County detail not loaded for this race yet; projected from the race total." : proj.tier === "none" ? "No votes in." : `${reporting} of ${proj.counties.length} counties reporting, ${done} done.`,
     prior.rcv ? "Ranked-choice: first choices shown; the needle projects the final round as every Democrat (with the forecast's named opponent) against every Republican." : null,

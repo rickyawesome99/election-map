@@ -59,17 +59,6 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
   // the header. No held pill: the seat line right below says it.
   const holder = s.seats ? (s.seats.dem > s.seats.rep ? "D" : s.seats.rep > s.seats.dem ? "R" : null) : null;
 
-  const tab = (c: Chamber, active: boolean) => (
-    <Link
-      key={c}
-      href={`/states/${state.id}/legislature/${c}`}
-      className="ix-press pb-2.5 text-sm font-semibold transition-colors hover:text-[var(--app-text-primary)]"
-      style={{ color: active ? "var(--app-text-primary)" : "var(--app-text-muted)", borderBottom: `2px solid ${active ? "var(--app-text-primary)" : "transparent"}`, marginBottom: "-1px" }}
-    >
-      {chamberShortLabel(c, unicameral)}
-    </Link>
-  );
-
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div style={{ background: holder ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${holder === "D" ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` : "linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, var(--app-tab-bg) 0%, var(--app-bg) 65%)" }}>
@@ -83,8 +72,10 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
           <div className="flex items-center gap-3">
             <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}>{state.name} Legislature</h1>
           </div>
-          <nav className="mt-6 sm:mt-7 flex items-end gap-5" style={{ borderBottom: "1px solid var(--app-border)" }} aria-label="Chamber">
-            {unicameral ? tab("senate", true) : CHAMBERS.map((c) => tab(c, c === chamber))}
+          <nav className="mt-5 inline-flex max-w-full rounded-full p-1" style={{ background: "var(--app-tab-bg)" }} aria-label="Chamber">
+            {(unicameral ? (["senate"] as Chamber[]) : CHAMBERS).map((c) => (
+              <ChamberSwitch key={c} stateId={state.id} chamber={c} unicameral={unicameral} active={c === chamber} />
+            ))}
           </nav>
         </div>
       </div>
@@ -109,5 +100,26 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
         />
       </main>
     </div>
+  );
+}
+
+/**
+ * The chamber switcher (user, 2026-11-18: bigger and more visual than the old underline tabs, and
+ * no seat counts — the sections below already show them; then smaller, no icons): a pill-shaped
+ * toggle, the chamber on screen filled dark.
+ */
+function ChamberSwitch({ stateId, chamber, unicameral, active }: { stateId: string; chamber: Chamber; unicameral: boolean; active: boolean }) {
+  return (
+    <Link
+      href={`/states/${stateId}/legislature/${chamber}`}
+      prefetch={false}
+      aria-current={active ? "page" : undefined}
+      className="ix-press whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-semibold transition-colors"
+      style={active
+        ? { background: "var(--app-text-primary)", color: "var(--app-bg)", boxShadow: "0 1px 2px rgba(0,0,0,0.15)" }
+        : { color: "var(--app-text-muted)" }}
+    >
+      {chamberShortLabel(chamber, unicameral)}
+    </Link>
   );
 }

@@ -7,9 +7,9 @@ import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
 import { getRaceColor, marginToRating } from "@/lib/colorScale";
 import type { RaceType, NoElectionEntry } from "@/data/forecastData";
-import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, isProjectedFlip, type ForecastSummary } from "@/lib/forecastTypes";
+import { SEAT_HOLDOVERS, isProjectedFlip, type ForecastSummary } from "@/lib/forecastTypes";
 import { FlipPatternDefs, FlipSwatch, flipFill } from "./FlipStripes";
-import { RaceTypeHeader, ForecastHero, ForecastRaceCards } from "./ForecastLedger";
+import { RaceTypeHeader, ForecastRaceCards } from "./ForecastLedger";
 
 // Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
 // added to projected win counts to get full chamber totals.
@@ -299,7 +299,6 @@ export default function ForecastMap({
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
   const repSeats = SEAT_HOLDOVERS[raceType].rep + data.filter((race) => race.margin > 0).length;
-  const totalSeats = TOTAL_SEATS_BY_TYPE[raceType];
 
   const onHover = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null) => {
     setHovered(race);
@@ -338,14 +337,7 @@ export default function ForecastMap({
             }}
           >
             {outlookHero}
-            <ForecastHero
-              raceType={raceType}
-              demSeats={demSeats}
-              repSeats={repSeats}
-              totalSeats={totalSeats}
-              seatsUp={data.length}
-            />
-            <RaceTypeHeader raceType={raceType} onSelect={selectRaceType} count={data.length} />
+            <RaceTypeHeader raceType={raceType} onSelect={selectRaceType} count={data.length} demSeats={demSeats} repSeats={repSeats} />
           </div>
         )}
 

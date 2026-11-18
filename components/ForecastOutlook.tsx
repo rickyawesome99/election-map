@@ -147,8 +147,7 @@ export function OutlookHero({ data }: { data: OutlookData }) {
   return (
     <div className="pb-8">
       <h1 style={PAGE_TITLE_STYLE}>{electionYear} Outlook</h1>
-      <p className="mt-4 text-sm sm:text-base" style={{ color: t.textMuted }}>Projected Balance of Power and National Polling · General November 3, 2026</p>
-      <div className="mt-2.5 flex flex-wrap items-center gap-x-2.5 gap-y-1">
+      <div className="mt-4 flex flex-wrap items-center gap-x-2.5 gap-y-1">
         <FinalForecastPill />
         <p className="text-xs" style={{ color: t.textVeryMuted }}>{forecastIsFinal ? FORECAST_FINAL_LABEL : `Updated ${shortDate(updated)}`}</p>
       </div>
