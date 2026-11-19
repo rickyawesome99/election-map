@@ -28,12 +28,15 @@ function parseMargin(text: string): number {
 for (const chamber of ["senate", "governor", "house"] as const) {
   test(`${chamber} race list ratings are the bucket of the displayed margin`, async ({ page }) => {
     await page.goto(`/${chamber}`);
-    await expect(page.getByText(RATING).first()).toBeVisible({ timeout: 20_000 });
+    // The race list ("All races"), not the Outlook tiles above it, whose seat ratings sit beside the
+    // generic-ballot figure rather than a race margin.
+    const list = page.locator("section", { has: page.getByRole("heading", { name: "All races" }) });
+    await expect(list.getByText(RATING).first()).toBeVisible({ timeout: 20_000 });
 
     // For each rating label, the nearest ancestor holding exactly one margin figure is its row.
-    const pairs = await page.evaluate(([ratingSrc, marginSrc]) => {
+    const pairs = await list.evaluate((root, [ratingSrc, marginSrc]) => {
       const rating = new RegExp(ratingSrc), margin = new RegExp(marginSrc);
-      const leaves = [...document.querySelectorAll("body *")].filter((el) => el.children.length === 0);
+      const leaves = [...root.querySelectorAll("*")].filter((el) => el.children.length === 0);
       const out: { rating: string; margin: string }[] = [];
       for (const el of leaves) {
         const text = el.textContent?.trim() ?? "";
@@ -69,7 +72,12 @@ test("race page shows the derived probability, range and rating", async ({ page 
 
 test("forecast page draws the simulated seat distribution for each chamber", async ({ page }) => {
   await page.goto("/senate");
-  await expect(page.getByText("Seat Distribution")).toBeVisible();
+  // The national sections sit below the race list and mount as they scroll near (Deferred in
+  // components/ForecastOutlook.tsx, 2026-11-17), so scroll down until Seat Distribution is there.
+  await expect(async () => {
+    await page.mouse.wheel(0, 1500);
+    await expect(page.getByText("Seat Distribution")).toBeVisible({ timeout: 500 });
+  }).toPass({ timeout: 30_000 });
   for (const chamber of ["House", "Senate", "Governors"]) {
     const chart = page.getByRole("img", { name: new RegExp(`^${chamber}: simulated Democratic seats`) });
     await expect(chart).toBeVisible();

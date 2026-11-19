@@ -91,8 +91,9 @@ test("a box opens the state on the hash with no page load, and Back and a reload
   await expect(page.locator("button.rc-card")).toHaveCount(30);
   await page.reload();
   await expect(page.locator("button.rc-card")).toHaveCount(30);
+  // A card opens the race's own page (user, 2026-11-18; it used to open the race on /results).
   await page.locator("button.rc-card").first().click();
-  await expect(page).toHaveURL(/\/results#governor-FL/);
+  await expect(page).toHaveURL(/\/governor\/fl$/);
 });
 
 test("a state's legislature cards show its chambers, with or without a 2026 election", async ({ page }) => {
@@ -107,7 +108,7 @@ test("a state's legislature cards show its chambers, with or without a 2026 elec
   await expect(chambers.first().locator(".rc-badge")).toHaveCount(0);
   await expect(page.getByText("State Senate", { exact: true })).toBeVisible();
   await expect(page.getByText("State House", { exact: true })).toBeVisible();
-  await expect(page.getByText(/^99 up · \d+ called$/)).toBeVisible();
+  await expect(page.getByText(/^99 up( · \d+ called)?$/)).toBeVisible();
   await expect(page.getByText(/^Net (D|R)\+\d+/).first()).toBeVisible();
   // The delegation follows the seat count: called seats by party, most first, no party with none.
   await expect(page.getByText(/^House · 15 seats · (\d+[DRI] ){1,3}(\d+ Uncalled)?/)).toBeVisible();
@@ -115,7 +116,8 @@ test("a state's legislature cards show its chambers, with or without a 2026 elec
   await expect(page.getByText("No 2026 Elections", { exact: true })).toHaveCount(2);
   await page.goto("/overview#NE");
   await expect(page.getByText("Legislature", { exact: true })).toBeVisible();
-  await expect(page.getByText(/^25 up · \d+ called$/)).toBeVisible();
+  // "· N called" drops once every seat is called and none is merely leading.
+  await expect(page.getByText(/^25 up( · \d+ called)?$/)).toBeVisible();
 });
 
 test("the Statewide heading shows the House popular vote against 2024", async ({ page }) => {

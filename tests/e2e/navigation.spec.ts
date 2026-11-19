@@ -1,4 +1,4 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 
 const RACE_PAGE = /\/senate\/[a-z]{2}\d?$/;
 
@@ -46,6 +46,14 @@ async function expectRaceOpened(page: import("@playwright/test").Page, projectNa
   }
 }
 
+// The Forecast tab has no chamber title since 2026-11-17 (user: "the tab says which chamber it is"):
+// the chamber tabs above the race list mark the open one with aria-current.
+const chamberTab = (page: Page, label: "House" | "Senate" | "Governor") =>
+  page.locator("nav button[aria-current]").filter({ hasText: new RegExp(`^${label}$`) });
+async function expectChamber(page: Page, label: "House" | "Senate" | "Governor") {
+  await expect(chamberTab(page, label)).toHaveAttribute("aria-current", "true");
+}
+
 test("top-level tabs keep the URL and visible page in sync", async ({ page }) => {
   await page.goto("/overview");
 
@@ -61,35 +69,35 @@ test("top-level tabs keep the URL and visible page in sync", async ({ page }) =>
 
   await page.getByRole("link", { name: "Forecast", exact: true }).click();
   await expect(page).toHaveURL(/\/senate$/);
-  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
+  await expectChamber(page, "Senate");
 });
 
 test("forecast tab returns to the last selected chamber after visiting analysis", async ({ page }) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
+  await expectChamber(page, "Senate");
 
-  await page.getByRole("button", { name: "Governor" }).click();
+  await chamberTab(page, "Governor").click();
   await expect(page).toHaveURL(/\/governor$/);
-  await expect(page.getByRole("heading", { name: "Governors" })).toBeVisible();
+  await expectChamber(page, "Governor");
 
   await page.getByRole("link", { name: "Analysis" }).click();
   await expect(page).toHaveURL(/\/analysis$/);
 
   await page.getByRole("link", { name: "Forecast", exact: true }).click();
   await expect(page).toHaveURL(/\/governor$/);
-  await expect(page.getByRole("heading", { name: "Governors" })).toBeVisible();
+  await expectChamber(page, "Governor");
 });
 
 test("a forecast-map state opens its race page on click, its preview card on tap", async ({ page }, testInfo) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
+  await expectChamber(page, "Senate");
   await openFirstInteractiveMapFeature(page, testInfo.project.name);
   await expectRaceOpened(page, testInfo.project.name);
 });
 
 test("race table links render the destination page on the first click", async ({ page }) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
+  await expectChamber(page, "Senate");
 
   await page.getByRole("link", { name: "Alabama" }).first().click();
   await expect(page).toHaveURL(/\/senate\/al$/);
@@ -100,15 +108,15 @@ test("race table links render the destination page on the first click", async ({
 
 test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {
   await page.goto("/senate");
-  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
+  await expectChamber(page, "Senate");
 
-  await page.getByRole("button", { name: "House" }).click();
+  await chamberTab(page, "House").click();
   await expect(page).toHaveURL(/\/house$/);
-  await expect(page.getByRole("heading", { name: "U.S. House" })).toBeVisible();
+  await expectChamber(page, "House");
 
-  await page.getByRole("button", { name: "Senate" }).click();
+  await chamberTab(page, "Senate").click();
   await expect(page).toHaveURL(/\/senate$/);
-  await expect(page.getByRole("heading", { name: "U.S. Senate" })).toBeVisible();
+  await expectChamber(page, "Senate");
   await openFirstInteractiveMapFeature(page, testInfo.project.name);
   await expectRaceOpened(page, testInfo.project.name);
 });

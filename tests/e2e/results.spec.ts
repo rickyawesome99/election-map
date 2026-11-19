@@ -44,7 +44,10 @@ test("the archive opens on the final count and steps, jumps and plays through ti
   await expect(slider(page)).toHaveValue("14");
   await page.keyboard.press("ArrowLeft");
   await expect(slider(page)).toHaveValue("13");
-  // Latest updates keeps one height whatever the number of races that moved (blank rows fill in).
+  // Latest updates is folded away by default (user, 2026-11-18); open it. Open, it keeps one height
+  // whatever the number of races that moved (blank rows fill in).
+  await page.getByRole("button", { name: /^Latest updates/ }).click();
+  await expect(page.getByRole("button", { name: /^Latest updates/ })).toHaveAttribute("aria-expanded", "true");
   const latest = page.locator("section", { hasText: "Latest updates" }).first();
   const h0 = await latest.evaluate((e) => e.getBoundingClientRect().height);
   // Mid-night: counts are in and Latest updates lists what moved since the snapshot before.
