@@ -43,9 +43,14 @@ export interface Theta {
   betaShrink: number;
   sparseK: number;
   typeW: Record<string, number>;
+  typeWMid?: Record<string, number>; // non-presidential years; absent = typeW (the pre-2026-11 behaviour)
   inc: Record<string, number | null>; // null = estimated inside each window's fit (S/G); number = fixed prior (H)
   ffK: number;
   ffCap: number;
+  // Office environments (test, 2026-11-19): each office and year gets its own offset from the blended
+  // E, d(type, year) = weighted mean of that office's residuals that year, shrunk n / (n + officeEnvK).
+  // A row is then neutralised with E(year) + d(type, year). Absent = one blended E for every office.
+  officeEnvK?: number;
 }
 
 // The pre-calibration baseline the coordinate search starts from (kept verbatim
@@ -55,9 +60,9 @@ export const CURRENT: Theta = {
   huberC: G.HUBER_C,
   impW: 0.5,
   impWHouse: IMPUTED_HOUSE_ROW_WEIGHT,
-  betaShrink: G.BETA_SHRINK,
+  betaShrink: 0.5, // the model's value until the elasticity was removed (2026-11-19); LIVE sets 0
   sparseK: G.SPARSE_YEAR_K,
-  typeW: { ...G.RACE_TYPE_WEIGHTS },
+  typeW: { P: 0.6, S: 0.1, H: 0.2, L: 0.07, G: 0.03 },
   inc: { H: 3, S: null, G: null }, // S/G fitted since 2026-09-08 (FL Gov 2022 sanity check); H fixed
   ffK: 0.02, // adopted 2026-09-07 (FF sweep: clean P-target optimum; S/H targets are
   ffCap: 2,  // biased against strips — see the IF note in tplCalibrate; forward model shares these)
@@ -66,9 +71,22 @@ export const CURRENT: Theta = {
 // The constants the live model actually runs with (data/tplModelData.ts).
 export const LIVE: Theta = {
   ...CURRENT,
-  lambda: G.YEAR_WEIGHTS[2025] / G.YEAR_WEIGHTS[2024],
+  // Decay per year of age. Was YEAR_WEIGHTS[2025] / YEAR_WEIGHTS[2024] = 1.333 (inverted) until 2026-11-19:
+  // the tool's "live" constants weighted OLDER years more. See methodologyChangelog 2026-11-19.
+  lambda: G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025],
   typeW: { ...G.RACE_TYPE_WEIGHTS },
+  typeWMid: { ...G.RACE_TYPE_WEIGHTS_MIDTERM },
+  betaShrink: 0, // β = 1 in every state
 };
+
+// The constants the 2026 forecast was locked with (per-state elasticity, one weight set), for
+// comparisons against the model as it stood before the 2026-11-19 changes.
+export const LOCKED_2026: Theta = { ...CURRENT, lambda: 0.75, typeW: { P: 0.6, S: 0.1, H: 0.2, L: 0.07, G: 0.03 } };
+const BETA_MIN = 0.5, BETA_MAX = 1.6; // the removed elasticity's clamp, for betaShrink > 0 variants
+
+// Base type weight of a row: presidential years use typeW, every other year typeWMid when given.
+export const isPresYear = (year: number) => year % 4 === 0;
+export const typeWFor = (t: Theta, year: number): Record<string, number> => (!isPresYear(year) && t.typeWMid ? t.typeWMid : t.typeW);
 
 export const mean = (xs: number[]) => xs.reduce((a, b) => a + b, 0) / xs.length;
 export function median(xs: number[]): number {
@@ -130,7 +148,9 @@ export function ffPts(t: Theta, gapPct: number | null): number {
   return -Math.max(-t.ffCap, Math.min(t.ffCap, gapPct * t.ffK));
 }
 
-export interface Fit { E: Record<number, number>; beta: Record<string, number>; lean: Record<string, number>; inc: Record<string, number>; }
+export interface Fit { E: Record<number, number>; beta: Record<string, number>; lean: Record<string, number>; inc: Record<string, number>; d: Record<string, number>; }
+/** The environment a row of `type` in `year` is neutralised with: blended E plus the office's offset (0 without office environments). */
+export const envOf = (fit: Fit, type: string, year: number): number | null => (fit.E[year] == null ? null : fit.E[year] + (fit.d[`${type}${year}`] ?? 0));
 
 export function fitWindow(t: Theta, maxYear: number): Fit {
   const src = panel.filter((r) => !r.imputed && r.value != null && r.year <= maxYear);
@@ -146,7 +166,7 @@ export function fitWindow(t: Theta, maxYear: number): Fit {
     incSign: (r.incumbent === "R" ? 1 : r.incumbent === "D" ? -1 : 0) * (r.incumbentAppointed ? F.APPOINTED_INCUMBENCY_SHARE : 1),
     raw: r.value! + ffPts(t, r.ffGapPct),
     adj: r.value! + incPts(inc, r.type, r.incumbent, r.incumbentAppointed) + ffPts(t, r.ffGapPct),
-    base: (t.typeW[r.type] ?? 0.05) / typeCount[`${r.abbr}:${r.year}:${r.type}`],
+    base: (typeWFor(t, r.year)[r.type] ?? 0.05) / typeCount[`${r.abbr}:${r.year}:${r.type}`],
     w: 1,
   }));
   const years = [...new Set(rows.map((r) => r.year))].sort();
@@ -160,9 +180,11 @@ export function fitWindow(t: Theta, maxYear: number): Fit {
     lean[abbr] = mean(byState[abbr].map((r) => r.adj));
     beta[abbr] = 1;
   }
+  const d: Record<string, number> = {};
+  const dOf = (r: { type: string; year: number }) => d[`${r.type}${r.year}`] ?? 0;
   for (let it = 0; it < G.FIT_ITERATIONS; it += 1) {
     for (const r of rows) {
-      const res = r.adj - lean[r.abbr] - beta[r.abbr] * E[r.year];
+      const res = r.adj - lean[r.abbr] - beta[r.abbr] * E[r.year] - dOf(r);
       r.w = r.base * (Math.abs(res) <= t.huberC ? 1 : t.huberC / Math.abs(res));
     }
     for (const y of years) {
@@ -174,24 +196,29 @@ export function fitWindow(t: Theta, maxYear: number): Fit {
       let num = 0, den = 0;
       for (const r of byState[abbr]) { const e = E[r.year]; num += r.w * e * (r.adj - lean[abbr]); den += r.w * e * e; }
       const raw = den > 0 ? num / den : 1;
-      beta[abbr] = Math.max(G.BETA_MIN, Math.min(G.BETA_MAX, 1 + t.betaShrink * (raw - 1)));
+      beta[abbr] = Math.max(BETA_MIN, Math.min(BETA_MAX, 1 + t.betaShrink * (raw - 1)));
     }
     for (const abbr of Object.keys(byState)) {
       let num = 0, den = 0;
-      for (const r of byState[abbr]) { num += r.w * (r.adj - beta[abbr] * E[r.year]); den += r.w; }
+      for (const r of byState[abbr]) { num += r.w * (r.adj - beta[abbr] * E[r.year] - dOf(r)); den += r.w; }
       if (den > 0) lean[abbr] = num / den;
+    }
+    if (t.officeEnvK != null) {
+      const acc: Record<string, { num: number; den: number; n: number }> = {};
+      for (const r of rows) { const a = (acc[`${r.type}${r.year}`] ??= { num: 0, den: 0, n: 0 }); a.num += r.w * (r.adj - lean[r.abbr] - beta[r.abbr] * E[r.year]); a.den += r.w; a.n += 1; }
+      for (const [k, a] of Object.entries(acc)) d[k] = a.den > 0 ? (a.num / a.den) * (a.n / (a.n + t.officeEnvK)) : 0;
     }
     for (const type of fittedInc) {
       let num = 0, den = 0;
       for (const r of rows) {
         if (r.type !== type || r.incSign === 0) continue;
-        num += r.w * r.incSign * (r.raw - lean[r.abbr] - beta[r.abbr] * E[r.year]); den += r.w;
+        num += r.w * r.incSign * (r.raw - lean[r.abbr] - beta[r.abbr] * E[r.year] - dOf(r)); den += r.w;
       }
       if (den > 0) inc[type] = num / den;
     }
     for (const r of rows) r.adj = r.raw - r.incSign * (inc[r.type] ?? 0);
   }
-  return { E, beta, lean, inc };
+  return { E, beta, lean, inc, d };
 }
 
 // State TPL as of `maxYear`, from a fit over the same window: the recency-decayed,
@@ -212,9 +239,10 @@ export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): num
       let num = 0, den = 0;
       for (const r of rows.filter((x) => x.year === year && x.type === type)) {
         const envYear = r.imputed ? r.srcYear ?? r.year : r.year;
+        // An imputed row is a presidential margin, so it carries the presidential office's environment.
         const nm = r.imputed
-          ? r.value! - beta * (fit.E[envYear] ?? 0)
-          : r.value! + incPts(fit.inc, r.type, r.incumbent, r.incumbentAppointed) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0);
+          ? r.value! - beta * (fit.E[envYear] ?? 0) - (fit.d[`P${envYear}`] ?? 0)
+          : r.value! + incPts(fit.inc, r.type, r.incumbent, r.incumbentAppointed) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0) - (fit.d[`${r.type}${year}`] ?? 0);
         const resid = lean != null ? nm - lean : 0;
         const huber = type === "H" ? 1 : Math.abs(resid) <= t.huberC ? 1 : t.huberC / Math.abs(resid);
         const w = (r.imputed ? (type === "H" ? t.impWHouse : t.impW) : 1) * huber * (type === "H" ? r.turnoutWeight : 1);
@@ -228,8 +256,9 @@ export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): num
     }
     const present = TYPES.filter((x) => typeNMs[x] != null);
     if (present.length === 0) continue;
-    const coverage = present.reduce((a, x) => a + (t.typeW[x] ?? 0) * typeFactor[x], 0);
-    const wrs = present.reduce((a, x) => a + (((t.typeW[x] ?? 0) * typeFactor[x]) / coverage) * typeNMs[x]!, 0);
+    const tw = typeWFor(t, year);
+    const coverage = present.reduce((a, x) => a + (tw[x] ?? 0) * typeFactor[x], 0);
+    const wrs = present.reduce((a, x) => a + (((tw[x] ?? 0) * typeFactor[x]) / coverage) * typeNMs[x]!, 0);
     yearAggs.push({ year, wrs, coverage });
   }
   if (yearAggs.length === 0) return null;

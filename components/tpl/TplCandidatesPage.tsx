@@ -411,7 +411,7 @@ function CandidateRecord({ name, rows, opponents }: { name: string; rows: WarSli
               </tbody>
             </table>
           </div>
-          <Foot>Expected is generic vs generic (lean + β* × E(year) + incumbency + structural money). vs Opp removes the opponent&apos;s own effect. WAR = Actual − vs Opp, signed toward the candidate. Actual and expected are R-positive margins.</Foot>
+          <Foot>Expected is generic vs generic (lean + E(year) + incumbency + structural money). vs Opp removes the opponent&apos;s own effect. WAR = Actual − vs Opp, signed toward the candidate. Actual and expected are R-positive margins.</Foot>
         </div>
       </div>
     </div>

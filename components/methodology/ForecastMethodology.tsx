@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FORECAST_CONSTANTS as F, TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
+import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { FORECAST_CALIBRATION as CAL } from "@/data/forecastCalibration";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { racePolls } from "@/data/racePolls";
@@ -10,10 +10,11 @@ import { ALIGNED_INDEPENDENTS, THREE_WAY_RACES } from "@/data/raceEligibility";
 // published, frozen (lib/final2026.ts); the model's machinery below (fit, constants, house effects) reads the live code.
 import { forecastsFor, getChamberSimulations, getNationalEnvironment, incumbentAdvantage, raceCard, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/final2026";
 import {
-  getTplFit, getEnvironmentModel, getWarMoneyModel, liveHouseEffects,
+  getWarMoneyModel, liveHouseEffects,
   housePvOnBasis, pollMissShade, envScaleFor,
   computeCandidateEffects, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE,
 } from "@/lib/tplCompute";
+import { lockedTplFit2026, LOCKED_BETA } from "@/lib/lockedTplFit2026";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
 import { Block, Code, Constants, D, DataTable, Defs, Derivation, FilesAndCommands, Formula, Ledger, M, N, P, R, Section, pct, signed } from "./kit";
 
@@ -40,8 +41,9 @@ function ledgerOf(race: ForecastedRace) {
 }
 
 export default function ForecastMethodology() {
-  const fit = getTplFit();
-  const envModel = getEnvironmentModel();
+  // The fit the 2026 forecast ran on (lib/lockedTplFit2026.ts), not the live one: since 2026-11-19 the
+  // live TPL fit includes 2026, has no state elasticity and a different zero.
+  const { fit, environmentModel: envModel } = lockedTplFit2026();
   const env = getNationalEnvironment();
   const inc = incumbentAdvantage();
   const money = getWarMoneyModel();
@@ -141,7 +143,7 @@ export default function ForecastMethodology() {
             caption={<>Mean miss <M v={envModel.meanMiss} />, sd {envModel.sdMiss.toFixed(1)}; September→November drift rms {envModel.sdDrift.toFixed(1)}. Since 2026-10-23 the 2018–2024 generic-ballot columns are the live averaging recipe itself run over the 538 poll archive as of September 15 and election eve, so the miss is measured on the quantity the model shades; 2016 predates the archive and stays on RealClearPolitics&rsquo; basis (<Code>data-entry/national_environment_history.csv</Code>).</>} />
         </Block>
         <Block label="State elasticity β*" meta={`range ${betas[0]?.[1].shrunk.toFixed(2)} (${betas[0]?.[0]}) to ${betas.at(-1)?.[1].shrunk.toFixed(2)} (${betas.at(-1)?.[0]})`}>
-          <P>β* is how strongly a state moves with the national environment, fitted alongside TPL and shrunk halfway to 1: β* = clamp(1 + {G.BETA_SHRINK} × (β̂ − 1), {G.BETA_MIN}, {G.BETA_MAX}). A House race uses its state&rsquo;s β*. See <Link href="/analysis/internal-methodology/state-tpl#fit" className="underline underline-offset-2">State TPL → the fit</Link>.</P>
+          <P>β* is how strongly a state moves with the national environment, fitted alongside TPL and shrunk halfway to 1: β* = clamp(1 + {LOCKED_BETA.SHRINK} × (β̂ − 1), {LOCKED_BETA.MIN}, {LOCKED_BETA.MAX}). A House race uses its state&rsquo;s β*. This is the 2026 forecast as it ran: the elasticity was removed from TPL on 2026-11-19, after the results showed it did not predict which states swung more. See <Link href="/analysis/internal-methodology/state-tpl#fit" className="underline underline-offset-2">State TPL → the fit</Link>.</P>
         </Block>
         <Constants rows={[
           { name: "ENV_MISS_SHRINK", value: F.ENV_MISS_SHRINK, basis: "decision", meaning: "Share of the historical mean generic-ballot miss applied to the point estimate. The remainder, and all of the miss's variance, live in σ_E.", source: "Polling gaps are not predictable; half is a hedge between trusting and ignoring the average miss." },

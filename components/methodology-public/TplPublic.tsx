@@ -14,13 +14,19 @@ const TYPE_NAME = { P: "President", H: "U.S. House", S: "Senate", L: "State legi
 
 function WeightCharts() {
   const types = (["P", "H", "S", "L", "G"] as const).map((t) => ({ label: TYPE_NAME[t], value: G.RACE_TYPE_WEIGHTS[t] })).sort((a, b) => b.value - a.value);
+  const midTotal = (["H", "S", "L", "G"] as const).reduce((a, t) => a + G.RACE_TYPE_WEIGHTS_MIDTERM[t], 0);
+  const mid = (["H", "L", "S", "G"] as const).map((t) => ({ label: TYPE_NAME[t], value: G.RACE_TYPE_WEIGHTS_MIDTERM[t] / midTotal })).sort((a, b) => b.value - a.value);
   const years = [...G.YEARS].sort((a, b) => b - a).filter((y) => y % 2 === 0);
   const top = G.YEAR_WEIGHTS[years[0]];
   return (
-    <div className="grid gap-8 lg:grid-cols-2">
+    <div className="grid gap-8 lg:grid-cols-3">
       <div>
-        <Label meta="share of a year's lean">Each office&rsquo;s weight</Label>
+        <Label meta="share of the year's lean">Presidential year</Label>
         <ShareBars rows={types} max={types[0].value} />
+      </div>
+      <div>
+        <Label meta="share of the year's lean">Midterm year</Label>
+        <ShareBars rows={mid} max={mid[0].value} />
       </div>
       <div>
         <Label meta={`relative to ${years[0]}`}>Each year&rsquo;s weight</Label>
@@ -36,13 +42,11 @@ export function StateTplPublic() {
   const median = getMedianStateTpl();
   const closest = [...models].sort((a, b) => Math.abs(a.tpl) - Math.abs(b.tpl))[0];
   const fit = getTplFit();
-  const row = (target: string, predictor: string) => TPL_VALIDATION.rows.find((r) => r.target === target && r.predictor === predictor);
-  const tplName = "TPL holdout (full NM pipeline)", presName = "2020 presidential alone", rawName = "Raw, clipped ±50";
 
   return (
     <>
       <Chapter id="overview" kicker="True Partisan Lean · States" title="A state's lean in a neutral year"
-        intro={<>True Partisan Lean, or TPL, answers one question: if a typical Republican ran against a typical Democrat in a year that favored neither party, who would win this state, and by how much? It is the starting point of every Senate and governor forecast.</>}>
+        intro={<>True Partisan Lean, or TPL, answers one question: if a typical Republican ran against a typical Democrat in a year that favored neither party, who would win this state, and by how much? It is a baseline, not a forecast: a forecast starts from it and adds the year and the candidates.</>}>
         <KeyFigures items={[
           { value: <Margin v={ranked[0].tpl} />, label: `${ranked[0].name}, the most Democratic state` },
           { value: <Margin v={ranked.at(-1)!.tpl} />, label: `${ranked.at(-1)!.name}, the most Republican state` },
@@ -54,30 +58,31 @@ export function StateTplPublic() {
       <Chapter id="steps" kicker="How it's built" title="Four steps"
         intro="A single election result says as much about that year's candidates and national mood as it does about the state. TPL uses many results at once and takes those things out.">
         <Steps items={[
-          { title: "Collect every race since 2016", figure: fit.rowsUsed.toLocaleString(), figureLabel: "races in the fit",
+          { title: `Collect every race since ${G.YEARS[0]}`, figure: fit.rowsUsed.toLocaleString(), figureLabel: "races in the fit",
             body: <>President, Senate, governor, U.S. House and the state legislature, including odd-year elections. A race counts only if a real Republican faced a real Democrat. Where one party had no candidate, the race is filled in from the area&rsquo;s presidential vote instead of being counted as a 100-point blowout.</> },
           { title: "Take out what isn't about the place",
-            body: <>Each result has three things removed: the national mood that year (some states swing more with the country than others, and that is measured too), the advantage of an incumbent on the ballot, and any unusual fundraising gap. What&rsquo;s left is how the place itself voted.</> },
+            body: <>Each result has three things removed: the national mood that year (one number for the whole country), the advantage of an incumbent on the ballot, and any unusual fundraising gap. What&rsquo;s left is how the place itself voted. A year that favored neither party is defined as one where the national vote for the U.S. House would be tied if every seat had a candidate from both parties.</> },
           { title: "Average across offices and years",
-            body: <>The presidential race counts most, because every voter sees the same two candidates. Recent years count more than older ones, and each year back counts {Math.round((G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025]) * 100)}% as much as the year after it.</> },
+            body: <>In a presidential year the presidential race counts most, because every voter sees the same two candidates. A midterm has no such race, so the U.S. House and the state legislature, where every part of the state votes, carry most of that year. Recent years count more than older ones, and each year back counts {Math.round((G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025]) * 100)}% as much as the year after it.</> },
           { title: "Turn down the outliers",
             body: <>A candidate who runs far from the state&rsquo;s usual result, like Joe Manchin in West Virginia or Phil Scott in Vermont, would otherwise drag the lean. Their races count for less, so the lean describes the state rather than one politician. Their personal strength shows up in <A href="/methodology/war">WAR</A> instead.</> },
         ]} />
         <WeightCharts />
       </Chapter>
 
-      <Chapter id="validation" kicker="Track record" title="How well does it predict?"
-        intro="We built each state's lean from results through 2022 and compared it with the 2024 results, after allowing for the national shift between those years. The table shows the typical miss in points, next to two simpler ways of guessing.">
-        <SimpleTable align="lrrr" head={["2024 result", "TPL", "2020 presidential result", "Average, nothing removed"]} rows={(["2024 President", "2024 Senate"] as const).map((t) => [
-          t.replace("2024 ", ""), row(t, tplName)?.mae.toFixed(1) ?? "—", row(t, presName)?.mae.toFixed(1) ?? "—", row(t, rawName)?.mae.toFixed(1) ?? "—",
-        ])} caption="Lower is better. The last presidential result is hard to beat at predicting the next one; TPL's job is to describe every office on one scale, which a single presidential result cannot do." />
+      <Chapter id="validation" kicker="Track record" title="Does it do its job?"
+        intro="TPL is not meant to predict a result by itself. The test is what is left of a result once the year's national mood and the candidates are accounted for. For each election we built the lean from earlier years only, supplied that year's national mood exactly, added incumbency, money and the candidates' own records, and measured how far the result still was from the total.">
+        <SimpleTable align="lrrr" head={["Office", "Races", "Left over with TPL", "Left over with the last presidential result"]} rows={TPL_VALIDATION.pooled.map((p) => [
+          p.office, p.n.toLocaleString(), p.tplFull.toFixed(1), p.presFull.toFixed(1),
+        ])} caption={`Typical leftover in points, ${TPL_VALIDATION.years[0]} to ${TPL_VALIDATION.years.at(-1)}. Lower is better. The last column runs the same sum with the area's most recent presidential margin in place of TPL.`} />
       </Chapter>
 
       <Chapter id="faq" kicker="Questions" title="Reading a lean">
         <QA items={[
           { q: "Is it relative to the nation?", a: "No. It is an actual margin: R+5 means a typical Republican wins by 5 points in a neutral year. It is not a comparison with the country as a whole." },
           { q: "Why not just use the last presidential result?", a: "Presidential results move with the candidates at the top of the ticket and that year's national mood. TPL averages over many races and years with those effects removed, so it changes slowly and works for every office." },
-          { q: "Does it include this year?", a: "No. It is built from past results only. The forecast adds 2026's conditions on top of it." },
+          { q: "Does it include 2026?", a: "Yes, since November 19, on the votes counted so far. The 2026 forecast was made before the election from the lean as it stood then, and that forecast is kept as it was published." },
+          { q: "Is a state's trend part of it?", a: "No. The lean is where a place stands, and it moves only as new results come in. Which way a place has been moving is shown beside it as a separate figure." },
         ]} />
         <SeeIt>Every state&rsquo;s lean, with the races behind it, is on the <A href="/model">TPL</A> tab.</SeeIt>
       </Chapter>
@@ -96,7 +101,7 @@ export function DistrictTplPublic() {
   return (
     <>
       <Chapter id="overview" kicker="True Partisan Lean · Districts" title="A district's lean, on the 2026 lines"
-        intro={<>District TPL asks the same question as the state version, for each of the <Num>{calcs.length}</Num> House districts, and it is the starting point of every House forecast. It is measured on the district lines in place for 2026, including in the states that have redrawn their maps.</>}>
+        intro={<>District TPL asks the same question as the state version, for each of the <Num>{calcs.length}</Num> House districts, and it is where a House forecast starts. It is measured on the district lines in place for 2026, including in the states that have redrawn their maps.</>}>
         <KeyFigures items={[
           { value: <Margin v={sorted[0].tpl} />, label: `${nameOf(sorted[0].id)}, the most Democratic` },
           { value: <Margin v={sorted.at(-1)!.tpl} />, label: `${nameOf(sorted.at(-1)!.id)}, the most Republican` },
@@ -109,12 +114,12 @@ export function DistrictTplPublic() {
         intro="District TPL follows the same steps as the state version, so a district and its state can be compared directly. Two things are different.">
         <Steps items={[
           { title: "Only presidential and House races",
-            body: "Senate, governor and state legislative results are not reported by congressional district, so a district's lean comes from the 2016, 2020 and 2024 presidential votes counted inside its 2026 lines, plus its House races since 2016." },
+            body: "Senate, governor and state legislative results are not reported by congressional district, so a district's lean comes from the 2016, 2020 and 2024 presidential votes counted inside its 2026 lines, plus its House races since 2016, including 2026 as counted so far." },
           { title: "Old races are moved onto the new lines",
-            body: "When a district has been redrawn, its old House results were cast on different ground. We can't rebuild an old race on new lines, so we shift it by how much more Republican or Democratic the new lines voted for president than the old ones. Races that moved a long way count for less." },
+            body: "When a district has been redrawn, its old House results were cast on different ground. We can't rebuild an old race on new lines, so we shift it by how much more Republican or Democratic the new lines voted for president than the old ones." },
         ]} />
         <QA items={[
-          { q: "Does it use the state's swing?", a: "Yes. A district moves with the national mood as much as its state does." },
+          { q: "Does the national mood count the same everywhere?", a: "Yes. One number per year is taken out of every state and district alike." },
           { q: "Does a member's own record affect it?", a: "A little: a long-serving member's own House results are part of their district's lean, the way any past result is." },
         ]} />
         <SeeIt>Each state&rsquo;s districts, with their leans, are on that state&rsquo;s page under the <A href="/model">TPL</A> tab.</SeeIt>

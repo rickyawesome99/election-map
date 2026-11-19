@@ -8,7 +8,7 @@ import { fmtLean, leanColor } from "@/lib/colorScale";
  * TPL blends, and the dashed line is today's TPL. The weight row under the chart says how much of
  * the TPL each cycle is.
  */
-export default function StateTplTrendSection({ abbr, tpl, yearAggregations }: { abbr: string; tpl: number | null; yearAggregations: YearAggregation[] }) {
+export default function StateTplTrendSection({ abbr, tpl, yearAggregations, trend }: { abbr: string; tpl: number | null; yearAggregations: YearAggregation[]; trend?: { last: number; prior: number | null } | null }) {
   const years = yearAggregations.filter((y) => y.racesPresent.length > 0).sort((a, b) => a.year - b.year);
   if (years.length === 0) return null;
   return (
@@ -22,6 +22,13 @@ export default function StateTplTrendSection({ abbr, tpl, yearAggregations }: { 
           <Link href={`/model/${abbr.toLowerCase()}`} className="underline underline-offset-2 hover:opacity-80">full calculation</Link>
         </span>
       </div>
+      {trend && (
+        <p className="mb-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
+          Trend: <b style={{ color: leanColor(trend.last) }}>{fmtLean(trend.last)}</b> from 2020 to 2024, measured as the state&apos;s presidential shift beyond the country&apos;s
+          {trend.prior != null && <> (2016 to 2020: <b style={{ color: leanColor(trend.prior) }}>{fmtLean(trend.prior)}</b>)</>}.
+          {" "}It says which way the state has been moving. It is shown beside the TPL and is not part of it.
+        </p>
+      )}
       <CountyLeanTrendChart yearAggregations={yearAggregations} height={200} fitAxis reference={tpl != null ? { value: tpl, label: `TPL ${fmtLean(tpl)}` } : undefined} />
       <div className="mt-3 overflow-x-auto">
         <table className="text-xs tabular-nums" style={{ minWidth: `${years.length * 5}rem` }}>

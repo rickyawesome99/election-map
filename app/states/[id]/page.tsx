@@ -50,7 +50,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
           </div>
         )}
 
-        <StateTplTrendSection abbr={state.abbr} tpl={data.tpl} yearAggregations={data.tplTrend} />
+        <StateTplTrendSection abbr={state.abbr} tpl={data.tpl} yearAggregations={data.tplTrend} trend={data.leanTrend} />
         <StateRedistrictingSection stateAbbr={state.abbr} stateFips={data.stateFips} stateName={state.name} years={data.redistricting} />
       </main>
     </div>

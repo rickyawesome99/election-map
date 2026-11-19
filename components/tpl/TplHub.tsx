@@ -22,7 +22,7 @@ const BANDS = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Li
 const BAND_COLOR: Record<string, string> = { "Safe D": "#1b408c", "Likely D": "#587ccc", "Lean D": "#8bafff", "Tilt D": "#959bb3", "Tilt R": "#cf8980", "Lean R": "#ff8b98", "Likely R": "#ff5864", "Safe R": "#be1c29" };
 
 // A table row: districts carry no elasticity or race count of their own.
-type Row = { key: string; name: string; sub: string; value: number; href: string; beta?: number; races?: number };
+type Row = { key: string; name: string; sub: string; value: number; href: string; trend?: number | null; since24?: number | null; races?: number };
 
 // One electoral-vote unit: a state, ME/NE's district votes by district code, or DC with its
 // latest presidential margin standing in for the TPL it doesn't have.
@@ -42,8 +42,8 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
 
   const rows = useMemo(() => {
     const list: Row[] = geo === "states"
-      ? summary.states.map((s) => ({ key: s.name, name: s.name, sub: s.abbr, value: lens === "all" ? s.tpl : s.yearWrs[lens] ?? s.tpl, href: stateHref(s.id), beta: s.beta, races: lens === "all" ? s.races : s.yearRaces[lens] ?? 0 }))
-      : summary.districts.map((d) => ({ key: d.id, name: d.code, sub: d.stateName, value: lens === "all" ? d.tpl : d.yearWrs[lens] ?? d.tpl, href: districtHref(d.state, d.code) }));
+      ? summary.states.map((s) => ({ key: s.name, name: s.name, sub: s.abbr, value: lens === "all" ? s.tpl : s.yearWrs[lens] ?? s.tpl, href: stateHref(s.id), trend: s.trend, since24: s.since24, races: lens === "all" ? s.races : s.yearRaces[lens] ?? 0 }))
+      : summary.districts.map((d) => ({ key: d.id, name: d.code, sub: d.stateName, value: lens === "all" ? d.tpl : d.yearWrs[lens] ?? d.tpl, href: districtHref(d.state, d.code), since24: d.since24 }));
     return list;
   }, [summary, geo, lens]);
 
@@ -132,7 +132,8 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
                   <th className={TH}>{geo === "states" ? "State" : "District"}</th>
                   <th className={TH_R}>{valueLabel}</th>
                   <th className={TH_R}>Centered</th>
-                  {geo === "states" && <><th className={TH_R} title="Elasticity: how far the state moves per point of national environment">β*</th><th className={TH_R} title={lens === "all" ? "Races in the state's TPL aggregation" : `Races in the state's ${lens} WRS`}>Races</th></>}
+                  {lens === "all" && <th className={TH_R} title="The lean now minus the lean as it stood after the 2024 election, both under today's model: what 2025 and 2026 added, with the national environment removed.">Since 2024</th>}
+                  {geo === "states" && <><th className={TH_R} title="Trend: how much further the state moved than the country between the 2020 and 2024 presidential elections. Shown beside TPL, not part of it.">Trend</th><th className={TH_R} title={lens === "all" ? "Races in the state's TPL aggregation" : `Races in the state's ${lens} WRS`}>Races</th></>}
                 </tr>
               </thead>
               <tbody>
@@ -145,7 +146,8 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
                     </td>
                     <td className={TD_R}><M v={r.value} digits={1} bold /></td>
                     <td className={TD_R}><M v={r.value - median} digits={1} /></td>
-                    {geo === "states" && <><td className={TD_R} style={{ color: "var(--app-text-muted)" }}>{r.beta?.toFixed(2)}</td><td className={TD_R} style={{ color: "var(--app-text-muted)" }}>{r.races}</td></>}
+                    {lens === "all" && <td className={TD_R}>{r.since24 != null ? <M v={r.since24} digits={1} /> : "—"}</td>}
+                    {geo === "states" && <><td className={TD_R}>{r.trend != null ? <M v={r.trend} digits={1} /> : "—"}</td><td className={TD_R} style={{ color: "var(--app-text-muted)" }}>{r.races}</td></>}
                   </tr>
                 ))}
               </tbody>

@@ -34,7 +34,7 @@ export default function WarMethodology() {
           { term: "Candidate WAR", def: <><strong>Actual − Vs. Opponent</strong>, signed toward the candidate. Equal to the candidate&rsquo;s own effect, plus whatever the race left unexplained, plus — for an incumbent — what their incumbency was worth.</> },
         ]} />
         <Formula lines={[
-          "Expected      = lean-in-that-year + β*·E(year) + incumbency + structural money pts         R-positive",
+          "Expected      = lean-in-that-year + E(year) + incumbency + structural money pts         R-positive",
           "residual r    = Actual − Expected                       = a_R − a_D + ε      one per race, two candidates",
           "Incumb.       = Expected − Expected with no incumbent    incumbent's row only, signed toward them; 0 otherwise",
           "Vs. Opponent  = Expected − s × Incumb. − s × a_opponent   s = +1 for a Republican, −1 for a Democrat",
@@ -51,10 +51,10 @@ export default function WarMethodology() {
       <Section id="expected" kicker="Number 1" title="Expected Result (generic vs generic)"
         lede="A lean is one number for 2016–2025, but a race is a fact about its own year. Scoring an old race against a present-day lean would charge the candidate for everything the electorate did since, so the anchor is moved to the race's year.">
         <Formula lines={[
-          "Senate / Governor:  base = fitted state lean + trend(Y) + β*·E(Y) + incumbency",
-          "House:              base = District TPL + trend(Y) + shift + β*·E(Y) + incumbency",
-          "President:          base = fitted state lean + β*·E(Y)                                   (no trend — it would be circular)",
-          "No-D / no-R race:   base = imputed presidential baseline (NM) + β*·E(Y) + incumbency      (Osborn-class; no money term)",
+          "Senate / Governor:  base = fitted state lean + trend(Y) + E(Y) + incumbency",
+          "House:              base = District TPL + trend(Y) + shift + E(Y) + incumbency",
+          "President:          base = fitted state lean + E(Y)                                   (no trend — it would be circular)",
+          "No-D / no-R race:   base = imputed presidential baseline (NM) + E(Y) + incumbency      (Osborn-class; no money term)",
           "trend(Y) = neutral presidential margin interpolated to year Y − the presidential average the lean embodies",
           "Expected = base + clamp(FF_K × structural gap%, ±FF_MAX)",
         ]} />
@@ -129,7 +129,7 @@ export default function WarMethodology() {
         <Defs items={[
           { term: "House self-influence", def: "Same-candidate persistence of House WAR from 2022 to 2024 is .37 against .58 for Split Ticket's metric, because the district anchor contains the candidate's own margins. Proposed fix: jackknife District TPL per candidate, or anchor House to president + swing." },
           { term: "One effect per candidate per solve", def: "A candidate whose strength moved a lot inside the window is fitted with a single effect, pooled over all their races with a gentle decay. Phil Scott's is about +57 as of 2016, when he actually ran 36 ahead of Expected, so Sue Minter is credited with holding him to that (+21) and his own 2016 WAR (+49) exceeds his residual. The heavy tail made this more visible: it stopped shrinking his effect. A per-candidate trend or a steeper decay would address it." },
-          { term: "One national environment", def: "A single E(year) scaled by β* can flip sign against a per-state environment (HI, NH in 2024)." },
+          { term: "One national environment", def: "A single E(year), the same in every state, can flip sign against a per-state environment (HI, NH in 2024)." },
           { term: "Window", def: "Records start in 2016: Baker, Manchin and Justice are one-race candidates here. House coverage before 2022 is thin." },
           { term: "No standard error", def: "Effects carry an effective race count but no interval." },
           { term: "Benchmarks", def: "Inside Elections VAR ≈ our residual ÷ 2 (r .93; share vs margin scale). Split Ticket WAR vs our residual r .84 (Senate .90, House .80). Both comparisons are on the residual, not WAR: Split Ticket controls for incumbency, Strength in Numbers counts it toward WAR as we now do, Inside Elections leaves it in the score." },

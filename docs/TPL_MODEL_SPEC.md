@@ -10,6 +10,38 @@ Design history and rationale: the "TPL Rebuild Spec" artifact and its companion
 > carries the revision history (`data/methodologyChangelog.ts`). This file is the long-form
 > design history and rationale; where the two disagree, the Methodology tab and the code win.
 
+## 2026-11-19 revision (read this first)
+
+After the 2026 election the model was reviewed against the results and changed. The sections
+below describe the model as rebuilt on 2026-09-07; where they disagree with this list, this list
+and the code are right. Full reasoning and numbers: `data/methodologyChangelog.ts` (2026-11-19).
+
+- **What TPL is for.** A baseline, not a forecast: the partisan lean of a place with the year
+  (environment) and the race (incumbency, money, candidates, a missing opponent) removed. Its one
+  predictive claim is conditional: given the environment and the race terms, the lean supplies the
+  rest. It is validated that way (`scripts/forwardBacktest.ts --conditional --emit` →
+  `data/tplValidation.ts`), never as a predictor with nothing else supplied.
+- **No state elasticity.** `margin = lean(state) + E(year) + incumbency + FF + residual`. β*, and
+  BETA_SHRINK / BETA_MIN / BETA_MAX, are gone. `TplFit.beta` is 1 for every state, kept only so
+  code written for the 2026 forecast still reads a multiplier.
+- **Neutral point.** E = 0 is a tied national U.S. House vote with every seat contested
+  (`TPL_NEUTRAL_ANCHOR = "house-vote"`): E is regressed on that vote over the even years and the
+  intercept is subtracted from every E and added to every lean. Before, E = 0 was the average of
+  the model's years, so every lean moved when a wave year entered.
+- **Years.** 2016–2026. 2026 enters through an overlay (`lib/tpl2026Inputs.ts`,
+  `npm run tpl-inputs-2026`) until it is certified and merged into the historical CSVs. County TPL
+  and the candidate table do not have 2026 rows yet.
+- **Two weight sets.** `RACE_TYPE_WEIGHTS` (presidential years: P .60 / H .20 / S .10 / L .07 /
+  G .03) and `RACE_TYPE_WEIGHTS_MIDTERM` (every other year: H .25 / L .10 / S .04 / G .01).
+- **District TPL has no row weights.** The Huber factor and the boundary weight described in
+  Step 3b never reached the number (one House row per district-year) and were removed.
+  `BS_WEIGHT_K` still weights relocated races in the candidate table.
+- **Trend** is a separate figure (`lib/leanTrend.ts`), shown beside TPL and never inside it.
+- **The 2026 forecast** is frozen (`lib/final2026.ts`) and its documentation reads the fit as
+  locked (`lib/lockedTplFit2026.ts`). None of this changes it.
+- **Tool fix.** `scripts/tplWindowFit.ts` had the live decay inverted (1.333 for 0.75); the
+  forward backtest's published House error fell from 6.28 to 5.14 when corrected.
+
 ## Purpose
 
 TPL estimates each state's structural partisan lean: the margin a **generic

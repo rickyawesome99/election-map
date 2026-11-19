@@ -13,16 +13,17 @@ import "server-only";
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
+import { stateLeanTrend, districtLeanTrend } from "@/lib/leanTrend";
 import { pastElectionHref, type PastElectionOffice } from "@/lib/pastElections";
 import {
   calculateStateModel,
   calculateDistrictModel,
   computeWarTable,
   getTplFit,
+  leanAsOf,
   incumbentAdvantage,
   type ComputedRace,
   type YearAggregation,
-  type TplFitStateBeta,
   type WarRow,
 } from "@/lib/tplCompute";
 import type {
@@ -128,17 +129,21 @@ function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: strin
 
 // ── Summary (the map hub) ─────────────────────────────────────────────────────
 
+// "Since 2024": the lean now minus the lean as it stood after the 2024 election, both under today's model.
+const SINCE_YEAR = 2024;
+const since = (now: number, then: number | null) => (then == null ? null : now - then);
+
 let summaryCache: ModelSummary | null = null;
 export function buildModelSummary(): ModelSummary {
   if (summaryCache) return summaryCache;
   const fit = getTplFit();
   const states: StateScore[] = statesData.map((s) => {
     const calc = calculateStateModel(s.abbr, s.name);
-    return { abbr: s.abbr, id: s.id, name: s.name, tpl: calc.tpl, yearWrs: yearWrsOf(calc.yearAggregations), beta: fit.beta[s.abbr]?.shrunk ?? 1, races: calc.races.filter((r) => r.inAggregation).length, yearRaces: yearRacesOf(calc.races) };
+    return { abbr: s.abbr, id: s.id, name: s.name, tpl: calc.tpl, since24: since(calc.tpl, leanAsOf(calc.races, SINCE_YEAR, fit.lean[s.abbr])), yearWrs: yearWrsOf(calc.yearAggregations), trend: stateLeanTrend(s.abbr)?.last ?? null, races: calc.races.filter((r) => r.inAggregation).length, yearRaces: yearRacesOf(calc.races) };
   });
   const districts: DistrictScore[] = Object.entries(districtPresidentialData).map(([id, d]) => {
     const calc = calculateDistrictModel(id);
-    return { id, code: d.code, state: d.state, stateName: d.stateName, tpl: calc.tpl, yearWrs: yearWrsOf(calc.yearAggregations) };
+    return { id, code: d.code, state: d.state, stateName: d.stateName, tpl: calc.tpl, since24: since(calc.tpl, leanAsOf(calc.races, SINCE_YEAR)), yearWrs: yearWrsOf(calc.yearAggregations) };
   });
   const war = warSlice();
   // The newest full cycle: odd years hold only a handful of governor races.
@@ -177,12 +182,11 @@ export function stateModelSlice(abbrRaw: string): StatePageData | null {
   const fit = getTplFit();
   const calc = calculateStateModel(state.abbr, state.name);
   const rank = [...summary.states].sort((a, b) => b.tpl - a.tpl).findIndex((s) => s.abbr === state.abbr) + 1;
-  const beta: TplFitStateBeta | null = fit.beta[state.abbr] ?? null;
   return {
     abbr: state.abbr, id: state.id, name: state.name,
     tpl: calc.tpl, medianStateTpl: summary.medianStateTpl, medianDistrictTpl: summary.medianDistrictTpl, rank,
-    beta, E: fit.E, fitYears: fit.years, incumbentAdvantage: incumbentAdvantage(),
-    typeWeights: G.RACE_TYPE_WEIGHTS, yearDecay: summary.yearDecay,
+    trend: stateLeanTrend(state.abbr), since24: summary.states.find((s) => s.abbr === state.abbr)?.since24 ?? null, E: fit.E, fitYears: fit.years, incumbentAdvantage: incumbentAdvantage(),
+    typeWeights: G.RACE_TYPE_WEIGHTS, typeWeightsMidterm: G.RACE_TYPE_WEIGHTS_MIDTERM, yearDecay: summary.yearDecay,
     races: calc.races.map((r) => toTplRace(state.abbr, r)),
     yearAggregations: calc.yearAggregations,
     districts: districtsOf(state.abbr),
@@ -214,7 +218,7 @@ export function districtModelSlice(id: string): DistrictPageData | null {
   return {
     id, code: d.code, state: d.state, stateName: d.stateName,
     name: atLarge ? `${d.stateName} At-Large` : `${d.stateName}'s ${ordinal(num)}`,
-    tpl: calc.tpl, stateTpl: stateCalc?.tpl ?? 0, eraStart: calc.eraStart,
+    tpl: calc.tpl, stateTpl: stateCalc?.tpl ?? 0, trend: districtLeanTrend(id), since24: since(calc.tpl, leanAsOf(calc.races, SINCE_YEAR)), eraStart: calc.eraStart,
     incumbent: latestHouse ? { name: (latestHouse.rawMargin! > 0 ? latestHouse.repCandidate : latestHouse.demCandidate) ?? "", party: latestHouse.rawMargin! > 0 ? "R" : "D", since: latestHouse.year } : null,
     seatHref: `/house/${d.code.toLowerCase()}`,
     races, yearAggregations: calc.yearAggregations,

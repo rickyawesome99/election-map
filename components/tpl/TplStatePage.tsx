@@ -9,7 +9,7 @@ import { useStaticJson } from "@/lib/useStaticJson";
 import { DistrictDetail, DistrictTiles } from "./DistrictSection";
 import { RaceTable, TableCaption } from "./RaceTable";
 import { TplMatrix, type MatrixSelection } from "./TplMatrix";
-import { AdjustedModal, BetaModal, FormulaModal, GLOSSARY, RaceCalcModal, type FormulaKey } from "./TplModals";
+import { AdjustedModal, FormulaModal, GLOSSARY, RaceCalcModal, type FormulaKey } from "./TplModals";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
 import { MATRIX_ROWS, OFFICE_LABELS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
@@ -45,7 +45,6 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const [race, setRace] = useState<TplRace | null>(null);
   const [formula, setFormula] = useState<FormulaKey | null>(null);
   const [adjusted, setAdjusted] = useState(false);
-  const [betaOpen, setBetaOpen] = useState(false);
   const [glossary, setGlossary] = useState(false);
 
   // ── District section ─────────────────────────────────────────────────────
@@ -83,7 +82,6 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
 
   const weighted = years.filter((y) => y.finalWeight > 0).sort((a, b) => b.year - a.year);
   const centered = data.tpl - data.medianStateTpl;
-  const beta = data.beta?.shrunk ?? 1;
   const imputed = data.races.filter((r) => r.imputed).length;
   const tint = data.tpl > 0 ? "var(--party-rep)" : "var(--party-dem)";
   // Rank from the state's own side: 1st most Republican, or counted up from the D end.
@@ -116,7 +114,8 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
               <div className="mt-1 self-baseline text-xs sm:col-start-2 sm:row-start-2 sm:mt-2 sm:text-right" style={{ color: "var(--app-text-muted)" }}>Centered <M v={centered} digits={1} bold /> vs. 50-State Median</div>
             </div>
             <StatRow items={[
-              { value: <>{beta.toFixed(2)}<span className="ml-0.5 text-xs opacity-50">ⓘ</span></>, label: "Elasticity β*", onClick: () => setBetaOpen(true), title: "The elasticity derivation and the fitted E table" },
+              { value: data.trend ? fmt1(data.trend.last) : "—", label: "Trend 2020→24", color: data.trend ? marginColor(data.trend.last) : "var(--app-text-very-muted)", title: `How much further ${data.name} moved than the country between the 2020 and 2024 presidential elections${data.trend?.prior != null ? ` (2016 to 2020: ${fmt1(data.trend.prior)})` : ""}. A companion to TPL, not part of it.` },
+              { value: data.since24 != null ? <>{data.since24 > 0 ? "R" : "D"}+{Math.abs(data.since24).toFixed(1)}</> : "—", label: "Since 2024", color: data.since24 != null ? marginColor(data.since24) : "var(--app-text-very-muted)", title: data.since24 != null ? `Under today's model, ${data.name} read ${fmt1(data.tpl - data.since24)} after the 2024 election and reads ${fmt1(data.tpl)} now: what 2025 and 2026 added, with the national environment removed.` : undefined },
               { value: imputed, label: "Imputed ⊘", color: imputed ? undefined : "var(--app-text-very-muted)" },
               { value: data.races.length, label: "Races" },
               { value: ordinal(sideRank.n), label: `Most ${sideRank.side}`, color: tint },
@@ -245,10 +244,9 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
         </section>
       </main>
 
-      {race && <RaceCalcModal race={race} beta={beta} E={data.E} incumbentAdvantage={data.incumbentAdvantage} onClose={() => setRace(null)} onFormula={setFormula} onAdjusted={() => setAdjusted(true)} />}
+      {race && <RaceCalcModal race={race} E={data.E} incumbentAdvantage={data.incumbentAdvantage} onClose={() => setRace(null)} onFormula={setFormula} onAdjusted={() => setAdjusted(true)} />}
       {race && adjusted && <AdjustedModal race={race} onClose={() => setAdjusted(false)} />}
       {formula && <FormulaModal formula={formula} onClose={() => setFormula(null)} />}
-      {betaOpen && <BetaModal stateName={data.name} abbr={data.abbr} beta={data.beta} E={data.E} years={data.fitYears} onClose={() => setBetaOpen(false)} />}
     </div>
   );
 }

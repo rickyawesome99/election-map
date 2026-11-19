@@ -2,7 +2,10 @@
 // passed as props or fetched from app/api/model/*. Only `import type` from the compute hub, so
 // nothing here reaches the browser bundle.
 
-import type { TplFitStateBeta, YearAggregation } from "@/lib/tplCompute";
+import type { YearAggregation } from "@/lib/tplCompute";
+
+/** Which way a place has been moving (lib/leanTrend.ts): its presidential shift beyond the nation's, R-positive. Shown beside TPL, never inside it. */
+export type LeanTrend = { last: number; prior: number | null };
 
 export type RaceType = "P" | "S" | "G" | "H" | "L";
 export type WarOffice = "P" | "S" | "G" | "H";
@@ -41,8 +44,8 @@ export type TplRace = {
   repWar: number | null;
 };
 
-export type StateScore = { abbr: string; id: string; name: string; tpl: number; yearWrs: Record<number, number>; beta: number; races: number; yearRaces: Record<number, number> };
-export type DistrictScore = { id: string; code: string; state: string; stateName: string; tpl: number; yearWrs: Record<number, number> };
+export type StateScore = { abbr: string; id: string; name: string; tpl: number; yearWrs: Record<number, number>; trend: number | null; since24: number | null; races: number; yearRaces: Record<number, number> };
+export type DistrictScore = { id: string; code: string; state: string; stateName: string; tpl: number; since24: number | null; yearWrs: Record<number, number> };
 export type HubCandidate = { candidate: string; party: string; office: WarOffice; race: string; state: string; year: number; war: number };
 
 export type ModelSummary = {
@@ -90,11 +93,14 @@ export type StatePageData = {
   medianDistrictTpl: number;
   /** 1 = most Republican of the 50. */
   rank: number;
-  beta: TplFitStateBeta | null;
+  trend: LeanTrend | null;
+  /** TPL now minus TPL as it stood after 2024 under today's model (leanAsOf), R-positive. */
+  since24: number | null;
   E: Record<number, number>;
   fitYears: number[];
   incumbentAdvantage: Record<string, number>;
   typeWeights: Record<string, number>;
+  typeWeightsMidterm: Record<string, number>;
   yearDecay: number;
   races: TplRace[];
   yearAggregations: YearAggregation[];
@@ -110,6 +116,8 @@ export type DistrictPageData = {
   name: string;
   tpl: number;
   stateTpl: number;
+  trend: LeanTrend | null;
+  since24: number | null;
   eraStart: number;
   incumbent: { name: string; party: "D" | "R"; since: number } | null;
   seatHref: string;

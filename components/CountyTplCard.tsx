@@ -123,7 +123,7 @@ export default function CountyTplCard({
         style={{ color: "var(--app-text-very-muted)" }}
       >
         {hasImputed && <span>⊘ Ineligible race (missing major-party nominee or same-party general) — imputed from the county&apos;s nearest presidential result, half weight.</span>}
-        <span>House rows are countywide district aggregates — no single incumbent, so no incumbency strip. Env = −β* × E(year) using the parent state&apos;s elasticity.</span>
+        <span>House rows are countywide district aggregates — no single incumbent, so no incumbency strip. Env = −E(year), the national environment, the same everywhere.</span>
       </div>
 
       <div className="mt-6">

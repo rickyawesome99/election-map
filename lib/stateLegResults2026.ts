@@ -5,7 +5,7 @@ import { parseCsv } from "@/lib/turnout";
 import { stateLegDistricts, UNICAMERAL_STATES, type Chamber, type StateLegDistrict } from "@/data/stateLegDistricts";
 import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import type { StateLegChamberResults, StateLegDistrictResult } from "@/data/stateLegResults";
-import { chamberMarginYear } from "@/lib/stateLegChamberMargin";
+import { chamberMarginYear, type ChamberMarginYear } from "@/lib/stateLegChamberMargin";
 import { personKey, type AtlasChamberResults2026, type AtlasRace2026, type AtlasResult2026, type AtlasResultCandidate2026, type PartySeats } from "@/lib/stateLegAtlas";
 
 // ── 2026 state-legislative results for the legislature pages ──────────────────
@@ -254,6 +254,24 @@ export function districtResults2026(abbr: string, chamber: Chamber): Map<string,
 /** Results-file races that matched no district on the site (the build script reports them). */
 export function unmatchedRaces2026(): string[] {
   return load().unmatched;
+}
+
+/**
+ * The year's corrected chamber margins in the shape the State TPL reads for every other year
+ * (contested pool, unopposed pool, a staggered chamber's seats not up), from the 2026 count.
+ * Only chambers that held a regular election enter. scripts/buildTplInputs2026.ts writes it to
+ * data/generated/tpl-inputs-2026.json so the model does not carry this module's sources.
+ */
+export function chamberMargins2026(abbr: string): ChamberMarginYear | null {
+  const chambers: Partial<Record<Chamber, StateLegChamberResults>> = {};
+  for (const chamber of ["house", "senate"] as Chamber[]) {
+    const block = load().blocks.get(`${abbr}|${chamber}`);
+    if (!block) continue;
+    const races = [...districtResults2026(abbr, chamber).values()].flatMap((d) => d.races);
+    if (races.some((r) => !r.special)) chambers[chamber] = block;
+  }
+  if (Object.keys(chambers).length === 0) return null;
+  return chamberMarginYear(abbr, String(RESULTS_YEAR), chambers as Parameters<typeof chamberMarginYear>[2]);
 }
 
 /**

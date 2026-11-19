@@ -54,7 +54,8 @@ import path from "node:path";
 import os from "node:os";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
-import { panel, fitWindow, stateTpl, LIVE, incPts, ffPts, mean, type Fit, type Theta } from "./tplWindowFit";
+import { panel, fitWindow, stateTpl, LIVE, LOCKED_2026, incPts, ffPts, mean, typeWFor, type Fit, type Theta } from "./tplWindowFit";
+import { tplInputs2026 } from "@/lib/tpl2026Inputs";
 import { houseData, houseDistrictInfo, type PastResult } from "@/data/forecastData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { fundraisingData } from "@/data/fundraisingData";
@@ -71,7 +72,8 @@ import { marginToProbability, fitWarMoneyModel, type WarMoneyModel, solveCandida
 // ── CLI ──────────────────────────────────────────────────────────────────────
 const argv = process.argv.slice(2);
 const argOf = (flag: string) => { const i = argv.indexOf(flag); return i >= 0 ? argv[i + 1] : undefined; };
-const YEARS = (argOf("--years") ?? "2018,2020,2022,2024").split(",").map(Number);
+const CONDITIONAL = argv.includes("--conditional");
+const YEARS = (argOf("--years") ?? (CONDITIONAL ? "2018,2020,2022,2024,2026" : "2018,2020,2022,2024")).split(",").map(Number);
 const ENV = argOf("--env") ?? "all";
 const ABLATE = argv.includes("--ablate");
 const QUALITY_SWEEP = argv.includes("--quality");
@@ -109,7 +111,10 @@ const POLL_SHADE = !argv.includes("--no-poll-shade");
 const pollShade = (office: "S" | "G" | "H") => (POLL_SHADE ? F.POLL_MISS_SHRINK * F.POLL_MISS_HISTORICAL[office] : 0);
 // Shift applied to party/campaign-sponsored polls toward the sponsor's opponent (pts of margin).
 const PARTISAN_SHIFT = Number(argOf("--partisan-shift") ?? 0);
-const THETA: Theta = LIVE;
+// --locked-2026: the TPL constants the 2026 forecast was locked with (per-state elasticity, one
+// weight set) instead of the live ones. The Calibration tables on the Forecast tab describe that
+// forecast, so `--env struct --emit` is run with this flag.
+const THETA: Theta = argv.includes("--locked-2026") ? LOCKED_2026 : argOf("--office-env") != null ? { ...LIVE, officeEnvK: Number(argOf("--office-env")) } : LIVE; // --office-env K: office environments (test)
 let H_INC = 3; // fixed House incumbency prior (INCUMBENT_ADVANTAGE_FIXED); --seat-status sweeps it
 
 // ── national environment history (data/nationalEnvironmentHistory.ts) ───────
@@ -156,6 +161,7 @@ interface Pred {
   // Seat status (Phase 7). sign: +1 R / −1 D — the incumbent's party, or for an open seat the party
   // that held it going in (0 = unknown / independent holder).
   seat: { status: "veteran" | "freshman" | "appointed" | "open"; sign: number };
+  pres?: number | null; // the last presidential margin before the race, on the lines it was run on (--conditional's rival baseline)
   gap: number | null; // money gap %, null where a side's receipts are unknown
   incSign: number;    // +1 R incumbent · −1 D incumbent · 0 open (the structural money model's regressor)
 }
@@ -184,14 +190,14 @@ function districtLeanAsOf(race: typeof houseData[number], Y: number, fit: Fit): 
   const rows: { year: number; type: "P" | "H"; nm: number; w: number }[] = [];
   for (const [year, margin] of [[2016, dp.pres16RepPct - dp.pres16DemPct], [2020, dp.pres20RepPct - dp.pres20DemPct], [2024, dp.pres24RepPct - dp.pres24DemPct]] as [number, number][]) {
     if (year >= Y) continue;
-    rows.push({ year, type: "P", nm: margin - beta * (fit.E[year] ?? 0), w: 1 });
+    rows.push({ year, type: "P", nm: margin - beta * (fit.E[year] ?? 0) - (fit.d[`P${year}`] ?? 0), w: 1 });
   }
   for (const r of race.pastResults ?? []) {
     if (r.year < Math.max(2016, eraStart) || r.year > Y - 1) continue;
     if (classifyEligibility(r, dp.state) !== "eligible") continue;
     const incumbent = r.demIncumbent ? "D" : r.repIncumbent ? "R" : "Open";
     const gap = gapOf(fundraisingData[`H:${race.name}:${r.year}`]);
-    const nm = r.repPct - r.demPct + incPts({ H: H_INC }, "H", incumbent) + ffPts(THETA, gap) - beta * (fit.E[r.year] ?? 0);
+    const nm = r.repPct - r.demPct + incPts({ H: H_INC }, "H", incumbent) + ffPts(THETA, gap) - beta * (fit.E[r.year] ?? 0) - (fit.d[`H${r.year}`] ?? 0);
     rows.push({ year: r.year, type: "H", nm, w: 1 });
   }
   if (rows.length === 0) return null;
@@ -212,8 +218,9 @@ function leanFromRows(rows: { year: number; type: "P" | "H"; nm: number; w: numb
         if (w > 0) typeMeans[type] = rs.reduce((a, r) => a + r.w * r.nm, 0) / w;
       }
       const present = (["P", "H"] as const).filter((t) => typeMeans[t] != null);
-      const coverage = present.reduce((a, t) => a + G.RACE_TYPE_WEIGHTS[t], 0);
-      const wrs = present.reduce((a, t) => a + (G.RACE_TYPE_WEIGHTS[t] / coverage) * typeMeans[t]!, 0);
+      const tw = typeWFor(THETA, year);
+      const coverage = present.reduce((a, t) => a + tw[t], 0);
+      const wrs = present.reduce((a, t) => a + (tw[t] / coverage) * typeMeans[t]!, 0);
       const yw = THETA.lambda ** (Y - year) * coverage;
       num += yw * wrs; den += yw;
     }
@@ -456,14 +463,14 @@ function vintageDistrictLeanAsOf(code: string, st: string, Y: number, fit: Fit):
   for (const [year, margin] of pres.get(`${MAP_OF_HOUSE_YEAR[Y]}|${code}`) ?? []) {
     if (year >= Y) continue;
     const E = envForStrip(year, Y, fit); if (E == null) continue;
-    rows.push({ year, type: "P", nm: margin - beta * E, w: 1 });
+    rows.push({ year, type: "P", nm: margin - beta * E - (fit.d[`P${year}`] ?? 0), w: 1 });
   }
   for (let year = Math.max(2012, eraStartFor(st, Y)); year <= Y - 2; year += 2) {
     const r = house.get(year)?.get(code); if (!r) continue;
     if (classifyEligibility(r, st) !== "eligible") continue;
     const E = envForStrip(year, Y, fit); if (E == null) continue;
     const gap = year >= 2016 ? gapOf(fundraisingData[`H:${code}:${year}`]) : null;
-    rows.push({ year, type: "H", nm: r.repPct - r.demPct + incPts({ H: H_INC }, "H", r.incumbent) + ffPts(THETA, gap) - beta * E, w: 1 });
+    rows.push({ year, type: "H", nm: r.repPct - r.demPct + incPts({ H: H_INC }, "H", r.incumbent) + ffPts(THETA, gap) - beta * E - (fit.d[`H${year}`] ?? 0), w: 1 });
   }
   if (rows.length === 0) return null;
   return leanFromRows(rows, Y);
@@ -484,7 +491,9 @@ function vintageHousePreds(Y: number, fit: Fit, effects: Map<string, number>): P
       seat = { status: prev && prevWinner === name && prev.incumbent === r.incumbent ? "veteran" : "freshman", sign: r.incumbent === "R" ? 1 : -1 };
     }
     const gap = gapOf(fundraisingData[`H:${code}:${Y}`]);
+    const presOnMap = [...(vintageData().pres.get(`${MAP_OF_HOUSE_YEAR[Y]}|${code}`) ?? [])].filter(([py]) => py < Y).sort((a, b) => b[0] - a[0])[0];
     out.push({
+      pres: presOnMap ? presOnMap[1] : null,
       office: "H", year: Y, key: code, actual: r.repPct - r.demPct,
       lean, beta: fit.beta[st] ?? 1, inc: -incPts({ H: H_INC }, "H", r.incumbent), ff: forwardFf(gap), gap, incSign: incSignOf(r.incumbent), seat,
       quality: qualityOf(Y, effects, st, r.incumbent, { name: r.demCandidate, party: tagParty(r.demCandidate, "D") }, { name: r.repCandidate, party: tagParty(r.repCandidate, "R") }),
@@ -502,15 +511,22 @@ function buildPreds(Y: number): Pred[] {
     if (r.type !== "S" && r.type !== "G") continue;
     const lean = stateTpl(THETA, fit, r.abbr, Y - 1);
     if (lean == null) continue;
+    const lastPres = panel.filter((p) => p.abbr === r.abbr && p.type === "P" && p.year < Y && p.value != null).sort((a, b) => b.year - a.year)[0];
     out.push({
+      pres: lastPres?.value ?? null,
       office: r.type, year: Y, key: `${r.abbr} ${r.race}`, actual: r.value,
       lean, beta: fit.beta[r.abbr] ?? 1, inc: forwardIncS(fit, r.type, r.incumbent, r.incumbentAppointed), ff: forwardFf(r.ffGapPct), gap: r.ffGapPct, incSign: incSignOf(r.incumbent), seat: statewideSeat(r),
       quality: qualityOf(Y, effects, r.abbr, r.incumbent, { name: r.demCandidate, party: r.demParty }, { name: r.repCandidate, party: r.repParty }),
     });
   }
   if (HOUSE_VINTAGE && VINTAGE_YEARS.has(Y)) { out.push(...vintageHousePreds(Y, fit, effects)); return out; }
+  // 2026 is not in house_past_results.csv yet: its rows come from the model's 2026 overlay.
+  const overlay2026 = Y === 2026 ? new Map(tplInputs2026().races.filter((r) => r.office === "H" && r.eligibility === "eligible").map((r) => [r.label, r])) : null;
   for (const race of houseData) {
-    const pr = (race.pastResults ?? []).find((x) => x.year === Y) as PastResult | undefined;
+    const o = overlay2026?.get(race.name);
+    const pr = (o
+      ? { year: 2026, demPct: o.demPct, repPct: o.repPct, demIncumbent: o.incumbent === "D", repIncumbent: o.incumbent === "R", demCandidate: o.demCandidate, repCandidate: o.repCandidate, demParty: o.demParty, repParty: o.repParty }
+      : (race.pastResults ?? []).find((x) => x.year === Y)) as PastResult | undefined;
     if (!pr) continue;
     const dp = districtPresidentialData[String(parseInt(race.id, 10))];
     if (!dp || classifyEligibility(pr, dp.state) !== "eligible") continue;
@@ -519,6 +535,7 @@ function buildPreds(Y: number): Pred[] {
     const incumbent = pr.demIncumbent ? "D" : pr.repIncumbent ? "R" : "Open";
     const x = pr as PastResult & { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string };
     out.push({
+      pres: Y > 2024 ? dp.pres24RepPct - dp.pres24DemPct : Y > 2020 ? dp.pres20RepPct - dp.pres20DemPct : dp.pres16RepPct - dp.pres16DemPct,
       office: "H", year: Y, key: race.name, actual: pr.repPct - pr.demPct,
       lean, beta: fit.beta[dp.state] ?? 1, inc: -incPts({ H: H_INC }, "H", incumbent), ff: forwardFf(gapOf(fundraisingData[`H:${race.name}:${Y}`])), gap: gapOf(fundraisingData[`H:${race.name}:${Y}`]), incSign: incSignOf(incumbent), seat: houseSeat(race, dp.state, pr, Y),
       quality: qualityOf(Y, effects, dp.state, incumbent, { name: x.demCandidate, party: x.demParty }, { name: x.repCandidate, party: x.repParty }),
@@ -614,6 +631,83 @@ const OFFICES: ("S" | "G" | "H")[] = ["S", "G", "H"];
 const LABEL = { S: "Senate", G: "Governor", H: "House" };
 const predsByYear = new Map<number, Pred[]>();
 for (const Y of YEARS) predsByYear.set(Y, buildPreds(Y));
+
+// --conditional [--emit]: the conditional test of TPL as a baseline (the Validation table on
+// /analysis/internal-methodology/state-tpl and /methodology since 2026-11-19).
+//
+// TPL is a measurement of a place, not a forecast. Its one predictive claim is conditional: given
+// the year's environment and the race's own terms, the lean supplies the rest. So every eligible
+// Senate, governor and House race of year Y is taken apart as
+//
+//   result = lean (built from years ≤ Y−1) + environment + incumbency + money + candidate record + leftover
+//
+// with the environment SUPPLIED EXACTLY: one number per office and year, solved so the median
+// leftover is zero. No poll enters and no forecast of the year is on trial. The figure is the mean
+// size of the leftover. The same equation is then run with the last presidential margin (on the
+// lines the race was run on) in place of the lean, which is the fair form of "does a presidential
+// margin do the same job".
+if (CONDITIONAL) {
+  const solve = (ps: Pred[], drop: Parameters<typeof predOf>[2]) => {
+    let E = 0;
+    for (let i = 0; i < 6; i += 1) E += median(ps.map((x) => x.actual - predOf(x, E, drop))) / (envScale(ps[0]) || 1);
+    const res = ps.map((x) => x.actual - predOf(x, E, drop));
+    const m = median(res);
+    return { mae: mean(res.map((v) => Math.abs(v - m))), env: E * (envScale(ps[0]) || 1) + m };
+  };
+  const ALONE = { inc: true, ff: true, quality: true };
+  interface Row { year: number; office: string; n: number; environment: number; tplAlone: number; tplFull: number; presAlone: number; presFull: number }
+  const rows: Row[] = [];
+  const r2 = (v: number) => Math.round(v * 100) / 100;
+  console.log("\n── Conditional test: mean leftover (pts) once the year's environment is supplied ──");
+  console.log("year office    n   environment   TPL alone  TPL + race terms   pres alone  pres + race terms");
+  for (const Y of YEARS) for (const office of OFFICES) {
+    const ps = predsByYear.get(Y)!.filter((x) => x.office === office && x.pres != null);
+    if (ps.length < 8) continue;
+    const asPres = ps.map((x) => ({ ...x, lean: x.pres! }));
+    const a = solve(ps, ALONE), f = solve(ps, {}), pa = solve(asPres, ALONE), pf = solve(asPres, {});
+    rows.push({ year: Y, office: LABEL[office], n: ps.length, environment: r2(f.env), tplAlone: r2(a.mae), tplFull: r2(f.mae), presAlone: r2(pa.mae), presFull: r2(pf.mae) });
+    console.log(`${Y} ${LABEL[office].padEnd(9)} ${String(ps.length).padStart(3)}   ${fmt(f.env, 1).padStart(8)}      ${a.mae.toFixed(2)}        ${f.mae.toFixed(2)}             ${pa.mae.toFixed(2)}         ${pf.mae.toFixed(2)}`);
+  }
+  const pooled = OFFICES.map((office) => {
+    const rs = rows.filter((r) => r.office === LABEL[office]);
+    const n = rs.reduce((s, r) => s + r.n, 0);
+    const w = (k: "tplAlone" | "tplFull" | "presAlone" | "presFull") => r2(rs.reduce((s, r) => s + r[k] * r.n, 0) / n);
+    return { office: LABEL[office], n, years: rs.length, tplAlone: w("tplAlone"), tplFull: w("tplFull"), presAlone: w("presAlone"), presFull: w("presFull"), tplBetterIn: rs.filter((r) => r.tplFull < r.presFull).length };
+  });
+  for (const p of pooled) console.log(`all  ${p.office.padEnd(9)} ${String(p.n).padStart(4)}                 ${p.tplAlone.toFixed(2)}        ${p.tplFull.toFixed(2)}             ${p.presAlone.toFixed(2)}         ${p.presFull.toFixed(2)}     TPL lower in ${p.tplBetterIn} of ${p.years} years`);
+  // Does the leftover depend on the lean? Slope of the full equation's leftover on the lean, per
+  // office and year, then the leave-one-year-out test of a fixed office slope: fit the slope on the
+  // other years, apply it to this one (lean × (1 + slope) in place of lean), re-solve the environment.
+  console.log("\n── Leftover on lean (full equation): slope per point of lean, by year; then a fixed office slope tested out of year ──");
+  const slopeOf = (ps: Pred[]) => {
+    const { env } = solve(ps, {}); void env;
+    let E = 0; for (let i = 0; i < 6; i += 1) E += median(ps.map((x) => x.actual - predOf(x, E))) / (envScale(ps[0]) || 1);
+    const xs = ps.map((x) => x.lean), ys = ps.map((x) => x.actual - predOf(x, E));
+    return ols(xs, ys).b;
+  };
+  for (const office of OFFICES) {
+    const byYear = YEARS.map((Y) => ({ Y, ps: predsByYear.get(Y)!.filter((x) => x.office === office && x.pres != null) })).filter((g) => g.ps.length >= 8);
+    const slopes = byYear.map((g) => slopeOf(g.ps));
+    let line = `${LABEL[office].padEnd(9)} slopes ${byYear.map((g, i) => `${g.Y} ${fmt(slopes[i], 3)}`).join("  ")}  | out-of-year: `;
+    let base = 0, adj = 0, n = 0;
+    byYear.forEach((g, i) => {
+      const others = byYear.filter((_, j) => j !== i);
+      const k = others.reduce((a, o, j) => a + slopes[byYear.indexOf(o)] * o.ps.length + 0 * j, 0) / others.reduce((a, o) => a + o.ps.length, 0);
+      const scaled = g.ps.map((x) => ({ ...x, lean: x.lean * (1 + k) }));
+      const b = solve(g.ps, {}).mae, a2 = solve(scaled, {}).mae;
+      base += b * g.ps.length; adj += a2 * g.ps.length; n += g.ps.length;
+      line += `${g.Y} ${b.toFixed(2)}→${a2.toFixed(2)} (k ${fmt(k, 2)})  `;
+    });
+    console.log(line + `| pooled ${(base / n).toFixed(2)} → ${(adj / n).toFixed(2)}`);
+  }
+  if (EMIT) {
+    const file = path.join(process.cwd(), "data", "tplValidation.ts");
+    const body = { generatedAt: new Date().toISOString().slice(0, 10), years: YEARS, rows, pooled };
+    fs.writeFileSync(file, `// GENERATED by \`npx tsx --conditions=react-server scripts/forwardBacktest.ts --conditional --emit\` — do not edit by hand.\n// The conditional test behind the Validation table on /analysis/internal-methodology/state-tpl and /methodology:\n// every eligible Senate, governor and House race of each year, with the lean built from earlier years only, the\n// year's environment supplied exactly (one number per office) and the race's own terms added. Each figure is the\n// mean leftover in points; the pres* columns run the same equation with the last presidential margin in place of TPL.\nexport const TPL_VALIDATION = ${JSON.stringify(body, null, 2)};\n`);
+    console.log(`wrote ${path.relative(process.cwd(), file)}`);
+  }
+  process.exit(0);
+}
 
 console.log(`Forward backtest — model as of Y−1, no shift removal (R-positive; bias = actual − predicted); quality weight H ${qwOf("H")} · S ${qwOf("S")} · G ${qwOf("G")}\n`);
 console.log("Fitted national environment E(y) (full panel) vs the generic ballot:");
@@ -1534,7 +1628,7 @@ if (EMIT) {
     horizons: horizonBacktest(HORIZON_DAYS).map((r) => ({ days: r.days, office: r.office, n: r.n, polled: r.polled, maeModel: r2(r.maeModel), mae: r2(r.mae), biasModel: r2(r.biasModel), bias: r2(r.bias), nationalSd: r2(r.nationalSd), cover80: r3(r.cover80), brier: r3(r.brier), calledRight: r3(r.calledRight), meanW: r2(r.meanW) })),
   };
   const file = path.join(process.cwd(), "data", "forecastCalibration.ts");
-  fs.writeFileSync(file, `// GENERATED by \`npx tsx scripts/forwardBacktest.ts --env struct --emit\` — do not edit by hand.\n// The forward backtest behind the Calibration section of /methodology: every eligible Senate / Governor race\n// (and House races on stable lines) predicted as of mid-September from a fit on years ≤ Y−1, under the live\n// constants. Re-run after any change to the model or its data so the page keeps describing the model as it is.\nexport const FORECAST_CALIBRATION = ${JSON.stringify(out, null, 2)} as const;\n`);
+  fs.writeFileSync(file, `// GENERATED by \`npx tsx --conditions=react-server scripts/forwardBacktest.ts --locked-2026 --env struct --emit\` — do not edit by hand.\n// The forward backtest behind the Calibration section of /methodology: every eligible Senate / Governor race\n// (and House races on stable lines) predicted as of mid-September from a fit on years ≤ Y−1, under the TPL\n// constants the 2026 forecast was locked with (--locked-2026). It describes that forecast; regenerate it only\n// to correct the tool, as on 2026-11-19 (the inverted decay), not to follow later changes to the lean.\nexport const FORECAST_CALIBRATION = ${JSON.stringify(out, null, 2)} as const;\n`);
   console.log(`\nwrote ${file}`);
 }
 

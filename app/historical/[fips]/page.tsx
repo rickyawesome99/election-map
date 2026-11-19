@@ -10,6 +10,7 @@ import { houseData, senateData, senateNoElection, senateHoldovers } from "@/data
 import { countyDemographics } from "@/data/countyDemographics";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { calculateCountyModel } from "@/lib/tplCompute";
+import { countyLeanTrend } from "@/lib/leanTrend";
 import { marginToRating, getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
 import BackButton from "@/components/BackButton";
 import { pastElectionHref } from "@/lib/pastElections";
@@ -250,10 +251,11 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
     return { ...res, swing };
   });
 
-  // TPL aggregation covers 2016–2025 incl. odd years (see G.YEARS / G.YEAR_WEIGHTS in
+  // TPL aggregation covers 2016–2026 incl. odd years (a county has no 2026 rows yet) (see G.YEARS / G.YEAR_WEIGHTS in
   // data/tplModelData.ts, which calculateCountyModel already keys off) — only the Past
   // Race Results ledger above reaches back to 2008.
   const calc = calculateCountyModel(fips);
+  const trend = countyLeanTrend(fips);
   const hasCountyData = !!calc && calc.races.some((r) => r.NM != null);
   const tpl = hasCountyData ? calc!.tpl : null;
   const rating = tpl != null ? marginToRating(tpl) : null;
@@ -328,6 +330,11 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
                 >
                   {fmtLean(tpl)}
                 </div>
+                {trend && (
+                  <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-muted)" }} title="How much further the county moved than the country between the 2020 and 2024 presidential elections. A companion to County TPL, not part of it.">
+                    Trend 2020→24 <b style={{ color: leanColor(trend.last) }}>{fmtLean(trend.last)}</b>
+                  </div>
+                )}
               </div>
             )}
           </div>

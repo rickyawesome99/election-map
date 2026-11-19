@@ -24,6 +24,7 @@ import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale"
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 import type { StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
+import { stateLeanTrend } from "@/lib/leanTrend";
 import type { UpcomingChamber } from "@/lib/stateLegUpcoming";
 
 export const GENERAL_ELECTION = "November 3, 2026";
@@ -197,6 +198,8 @@ export type StatePageData = {
   counties: { tpl: Record<string, number | null>; layers: CountyLayer[]; votes: Record<string, number | null> };
   /** The TPL's per-year inputs (weighted lean by cycle), for the trend chart. */
   tplTrend: YearAggregation[];
+  /** Presidential shift 2020→2024 (and 2016→2020) beyond the nation's: a companion to TPL (lib/leanTrend.ts). */
+  leanTrend: { last: number; prior: number | null } | null;
   /** Every year a House map changed here, newest first. */
   redistricting: RedistrictingYear[];
 };
@@ -609,6 +612,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
     },
     counties: { tpl: countyTpl, layers, votes: countyVotes },
     tplTrend: model.yearAggregations,
+    leanTrend: stateLeanTrend(state.abbr),
     redistricting,
   };
 }

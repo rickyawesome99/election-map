@@ -31,14 +31,12 @@ import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { fundraisingData } from "@/data/fundraisingData";
 import { chamberResults2026 } from "@/lib/stateLegResults2026";
-import { panel, fitWindow, stateTpl, LIVE, incPts, ffPts, mean, median, type Theta, type PanelRow, type Fit } from "./tplWindowFit";
+import { panel, fitWindow, stateTpl, LIVE, LOCKED_2026, incPts, ffPts, mean, median, type Theta, type PanelRow, type Fit } from "./tplWindowFit";
 
-// scripts/tplWindowFit.ts defines LIVE.lambda as YEAR_WEIGHTS[2025] / YEAR_WEIGHTS[2024] = 1 / 0.75 = 1.333:
-// the ratio is upside down, so the tool's "live" constants weight OLDER years more. The model itself
-// (lib/tplCompute.ts) uses YEAR_WEIGHTS directly and is unaffected. Corrected here, in this process
-// only; the inverted value is kept as a variant in section C so its cost is on the page.
-const LAMBDA_AS_SHIPPED = LIVE.lambda;
-LIVE.lambda = G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025];
+// Until 2026-11-19 scripts/tplWindowFit.ts defined LIVE.lambda upside down (1 / 0.75 = 1.333), so the
+// tool's "live" constants weighted OLDER years more. Fixed there; the inverted value is kept as a
+// variant in section C so its cost stays on the page.
+const LAMBDA_AS_SHIPPED = 1 / LIVE.lambda;
 
 const EXT = process.argv.includes("--ext");
 const outIdx = process.argv.indexOf("--out");
@@ -139,7 +137,8 @@ for (const abbr of ABBRS) {
     rows26.push({ abbr, type: "L", race: "State Legislature", year: 2026, value: leg26[abbr], imputed: false, eligibility: "eligible", srcYear: null, incumbent: "-", incumbentAppointed: false, ffGapPct: null, turnoutWeight: 1 });
   }
 }
-panel.push(...rows26);
+// Since 2026-11-19 the live model carries 2026 itself, so the panel already has these rows.
+if (!panel.some((r) => r.year === 2026)) panel.push(...rows26);
 
 // ── optional 2012/2014 "lite" extension ──────────────────────────────────────
 if (EXT) {
@@ -214,9 +213,17 @@ function target(abbr: string, type: string, year: number, stripped: boolean): nu
 }
 const presOf = (abbr: string, year: number) => panel.find((r) => r.abbr === abbr && r.type === "P" && r.year === year)?.value ?? null;
 
+// Sections A, B, E and F test the model AS LOCKED before the 2026 election. They need the live
+// model to hold no 2026 result, which was true until 2026-11-19; they are skipped once 2026 is in
+// the model's years (their published results are in the 2026-11-19 review and the change log).
+const LOCKED = !G.YEARS.includes(2026);
+if (!LOCKED) console.log("\n(sections A, B, E, F skipped: the live model now includes 2026, so it is no longer the locked model)");
+interface DRow { id: string; code: string; abbr: string; tpl: number; pOnly: number; p16: number; p20: number; p24: number; houseRows: number; redrawn: boolean; raw: number | null; strip: number | null; inc: string; }
+const stateTplLive: Record<string, number> = {};
+let D0: DRow[] = [];
+if (LOCKED) {
 // ── A: State TPL as locked vs 2026 ───────────────────────────────────────────
 console.log("\n══ A · State TPL as locked (information through 2025) vs 2026 ══");
-const stateTplLive: Record<string, number> = {};
 for (const { abbr, name } of statesData) stateTplLive[abbr] = calculateStateModel(abbr, name).tpl;
 const pvi = (abbr: string) => { const a = presOf(abbr, 2024), b = presOf(abbr, 2020); return a != null && b != null ? 0.75 * a + 0.25 * b : null; };
 const pres3 = (abbr: string) => { const v = [2016, 2020, 2024].map((y) => presOf(abbr, y)); return v.every((x) => x != null) ? mean(v as number[]) : null; };
@@ -245,7 +252,6 @@ out.states = ABBRS.map((a) => ({ abbr: a, tpl: r2(stateTplLive[a]), lean: r2(fit
 
 // ── B: District TPL as locked vs 2026 House ──────────────────────────────────
 console.log("\n══ B · District TPL as locked vs 2026 House, district by district ══");
-interface DRow { id: string; code: string; abbr: string; tpl: number; pOnly: number; p16: number; p20: number; p24: number; houseRows: number; redrawn: boolean; raw: number | null; strip: number | null; inc: string; }
 function districtRows(): DRow[] {
   const rows: DRow[] = [];
   for (const [id, d] of Object.entries(districtPresidentialData)) {
@@ -260,7 +266,7 @@ function districtRows(): DRow[] {
   }
   return rows;
 }
-const D0 = districtRows();
+D0 = districtRows();
 const dPreds: [string, (r: DRow) => number][] = [
   ["District TPL (locked)", (r) => r.tpl],
   ["Presidential rows only (same weights)", (r) => r.pOnly],
@@ -360,6 +366,8 @@ function districtAgg(id: string, o: { apply: boolean; k: number; huberC: number;
   out.Bweights = Bw;
 }
 
+}
+
 // ── C: multi-round holdout over the window fit ───────────────────────────────
 console.log("\n══ C · Multi-round holdout (fit on years ≤ Y−1, predict year Y; incumbency-removed targets) ══");
 const ROUNDS = EXT ? [2016, 2018, 2020, 2022, 2024, 2026] : [2020, 2022, 2024, 2026];
@@ -379,6 +387,7 @@ const clone = (t: Theta, patch: Partial<Theta>): Theta => ({ ...JSON.parse(JSON.
 const tw = (P: number, S: number, H: number, L: number, Gv: number) => ({ P, S, H, L, G: Gv });
 const variants: [string, string, Predictor][] = [
   ["live", "Live constants", thetaPred(LIVE)],
+  ["live", "Constants as locked for 2026 (β*, one weight set)", thetaPred(LOCKED_2026)],
   ["base", "Last presidential result alone", (y) => ABBRS.map((a) => lastPres(a, y))],
   ["base", "0.75 × last + 0.25 × previous president", (y) => ABBRS.map((a) => { const p = lastPres(a, y), q = lastPres(a, y, 1); return p == null ? null : q == null ? p : 0.75 * p + 0.25 * q; })],
   ["typeW", "President only (P 1.0)", thetaPred(clone(LIVE, { typeW: tw(1, 1e-6, 1e-6, 1e-6, 1e-6) }))],
@@ -393,7 +402,7 @@ const variants: [string, string, Predictor][] = [
   ["decay", "decay 0.60", thetaPred(clone(LIVE, { lambda: 0.6 }))],
   ["decay", "decay 0.87", thetaPred(clone(LIVE, { lambda: 0.87 }))],
   ["decay", "decay 1.00 (no recency)", thetaPred(clone(LIVE, { lambda: 1 }))],
-  ["beta", "β = 1 everywhere (shrink 0)", thetaPred(clone(LIVE, { betaShrink: 0 }))],
+  ["beta", "β* shrunk halfway (shrink 0.5, the old model)", thetaPred(clone(LIVE, { betaShrink: 0.5 }))],
   ["beta", "β unshrunk (shrink 1)", thetaPred(clone(LIVE, { betaShrink: 1 }))],
   ["huber", "Huber off", thetaPred(clone(LIVE, { huberC: 1e9 }))],
   ["huber", "Huber C 4", thetaPred(clone(LIVE, { huberC: 4 }))],
@@ -477,6 +486,7 @@ console.log(`β̂ split-half (years ≤${earlyMax} vs later, unshrunk, clamped):
 out.D = { E: years.map((y) => ({ year: y, pre: r2(fitPre.E[y]), post: r2(fitAll.E[y]), rows: rowsPerYear(y) })), inc: { pre: fitPre.inc, post: fitAll.inc }, medMove: r2(medMove),
   moves: moves.map((m) => ({ abbr: m.abbr, pre: r2(m.pre), post: r2(m.post), rel: r2(m.d - medMove), betaPre: r2(m.betaPre), betaPost: r2(m.betaPost) })), betaR: r2(ols(bPre, bPost).r), betaSplit: { r: r2(split.r), slope: r2(split.slope), earlyMax } };
 
+if (LOCKED) {
 // ── E: does β* predict the 2026 swing? ───────────────────────────────────────
 console.log("\n══ E · Elasticity: residual 2026 − TPL against β* ══");
 const Eout: Record<string, unknown>[] = [];
@@ -533,6 +543,8 @@ for (const [type, label] of [["S", "Senate"], ["G", "Governor"], ["H", "House (s
 }
 out.F = Fout;
 
+}
+
 // ── G: office slopes on the state's lean ─────────────────────────────────────
 console.log("\n══ G · Each office's neutral margin against the state's lean (fit through 2026) ══");
 const Gout: Record<string, unknown>[] = [];
@@ -551,5 +563,55 @@ for (const type of OFFICES) {
   Gout.push({ office: type, n: o.n, slope: r2(o.slope), intercept: r2(o.intercept), r: r2(o.r), spread: r2(mad) });
 }
 out.G = Gout;
+
+
+// ── H: design tests for the post-2026 model (2026-11-19, after the user's review) ──
+if (process.argv.includes("--design")) {
+  console.log("\n══ H · Design tests: β = 1 base ══");
+  const B1: Theta = { ...clone(LIVE, { betaShrink: 0 }), typeWMid: undefined }; // β = 1, the presidential set in every year
+  const mid = (S: number, H: number, L: number, Gv: number) => ({ P: 0.6, S, H, L, G: Gv });
+  const scaled = (k: number) => mid(0.1 * k, 0.2 * k, 0.07 * k, 0.03 * k);
+  const hv: [string, Theta][] = [
+    ["β=1, one weight set (S .10 H .20 L .07 G .03)", B1],
+    ["live midterm set (H .25 L .10 S .04 G .01)", LIVE],
+    ["office environments, K 0 (no shrink)", clone(LIVE, { officeEnvK: 0 })],
+    ["office environments, K 10", clone(LIVE, { officeEnvK: 10 })],
+    ["office environments, K 30", clone(LIVE, { officeEnvK: 30 })],
+    ["office environments, K 100", clone(LIVE, { officeEnvK: 100 })],
+    ["midterm ×0.5 (sum .20)", clone(B1, { typeWMid: scaled(0.5) })],
+    ["midterm ×1.5 (sum .60)", clone(B1, { typeWMid: scaled(1.5) })],
+    ["midterm ×2.0 (sum .80)", clone(B1, { typeWMid: scaled(2) })],
+    ["midterm ×2.5 (sum 1.0)", clone(B1, { typeWMid: scaled(2.5) })],
+    ["midterm ×4 (sum 1.6)", clone(B1, { typeWMid: scaled(4) })],
+    ["mid H .25 L .10 S .04 G .01", clone(B1, { typeWMid: mid(0.04, 0.25, 0.1, 0.01) })],
+    ["mid H .20 L .15 S .04 G .01", clone(B1, { typeWMid: mid(0.04, 0.2, 0.15, 0.01) })],
+    ["mid H .15 L .15 S .08 G .02", clone(B1, { typeWMid: mid(0.08, 0.15, 0.15, 0.02) })],
+    ["mid H .13 L .05 S .20 G .02", clone(B1, { typeWMid: mid(0.2, 0.13, 0.05, 0.02) })],
+    ["mid H .30 L .07 S .03 G .00", clone(B1, { typeWMid: mid(0.03, 0.3, 0.07, 1e-6) })],
+    ["mid H .14 L .14 S .12 G .00", clone(B1, { typeWMid: mid(0.12, 0.14, 0.14, 1e-6) })],
+    ["mid H .40 L .20 S .15 G .05 (sum .80)", clone(B1, { typeWMid: mid(0.15, 0.4, 0.2, 0.05) })],
+    ["mid H .50 L .30 S .15 G .05 (sum 1.0)", clone(B1, { typeWMid: mid(0.15, 0.5, 0.3, 0.05) })],
+    ["mid H .40 L .40 S .15 G .05 (sum 1.0)", clone(B1, { typeWMid: mid(0.15, 0.4, 0.4, 0.05) })],
+    ["mid H .30 L .30 S .15 G .05 (sum .80)", clone(B1, { typeWMid: mid(0.15, 0.3, 0.3, 0.05) })],
+    ["pres P.70 S.08 H.12 L.07 G.03 + mid live", clone(B1, { typeW: tw(0.7, 0.08, 0.12, 0.07, 0.03), typeWMid: mid(0.1, 0.2, 0.07, 0.03) })],
+    ["pres P.70… + mid ×2", clone(B1, { typeW: tw(0.7, 0.08, 0.12, 0.07, 0.03), typeWMid: scaled(2) })],
+    ["pres P.50 S.12 H.25 L.10 G.03 + mid ×2", clone(B1, { typeW: tw(0.5, 0.12, 0.25, 0.1, 0.03), typeWMid: scaled(2) })],
+    ["pres P.60 S.05 H.20 L.15 G.00 + mid H.4 L.3 S.1", clone(B1, { typeW: tw(0.6, 0.05, 0.2, 0.15, 1e-6), typeWMid: mid(0.1, 0.4, 0.3, 1e-6) })],
+  ];
+  const Hout: Record<string, unknown>[] = [];
+  console.log("variant".padEnd(50) + "all21  presYr  midYr   P-tgt  S-tgt  H-tgt  L-tgt  | 2018   2022   2026 (S,H,L mean)");
+  for (const [label, t] of hv) {
+    const pf = thetaPred(t);
+    const cells: Record<string, number> = {};
+    for (const y of ROUNDS) { const p = pf(y); for (const o of ["P", "S", "H", "L"]) { const e = evaluate(p, tgt(o, y)); if (e) cells[`${o}${y}`] = e.mae; } }
+    const sel = (f: (k: string) => boolean) => { const v = Object.entries(cells).filter(([k]) => f(k)).map(([, x]) => x); return v.length ? mean(v) : NaN; };
+    const yr = (k: string) => Number(k.slice(1));
+    const row = { label, all: sel(() => true), pres: sel((k) => yr(k) % 4 === 0), mid: sel((k) => yr(k) % 4 !== 0), P: sel((k) => k[0] === "P"), S: sel((k) => k[0] === "S"), H: sel((k) => k[0] === "H"), L: sel((k) => k[0] === "L"),
+      y18: sel((k) => yr(k) === 2018), y22: sel((k) => yr(k) === 2022), y26: sel((k) => yr(k) === 2026) };
+    console.log(label.padEnd(50) + [row.all, row.pres, row.mid, row.P, row.S, row.H, row.L].map((v) => v.toFixed(3).padStart(6)).join(" ") + "  | " + [row.y18, row.y22, row.y26].map((v) => v.toFixed(3).padStart(6)).join(" "));
+    Hout.push(row);
+  }
+  out.H = Hout;
+}
 
 if (OUT) { fs.writeFileSync(OUT, JSON.stringify(out, null, 1)); console.log(`\nwrote ${OUT}`); }

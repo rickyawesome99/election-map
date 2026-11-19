@@ -41,7 +41,9 @@ export interface RaceModelInputs {
 
 // Years covered by the state/county TPL aggregation (odd years included since the
 // Phase 3 rebuild — VA/NJ/KY/LA/MS odd-year governor races are first-class).
-const TPL_YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+// 2026 was added on 2026-11-19 on the counts as they stood (lib/tpl2026Inputs.ts); the numbers
+// move again when the results are certified.
+const TPL_YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
 
 // Recency decay: weight(y) ∝ YEAR_DECAY^(ANCHOR_YEAR − y), anchored to the cycle
 // being forecast. In aggregation the year weight is additionally scaled by the
@@ -62,23 +64,32 @@ export const TPL_GLOBAL_CONSTANTS = {
   // marginally preferred P .65 (−0.056) and P .70 (−0.076), but those gains come
   // almost entirely from the 2024 presidential target and erode the multi-office
   // identity; floors (P .20 / H .10 / S .05 / L .03 / G .02) are the hard bounds.
+  // RACE_TYPE_WEIGHTS is the PRESIDENTIAL-year set. Every other year uses RACE_TYPE_WEIGHTS_MIDTERM
+  // (2026-11-19, user decision: a midterm is a down-ballot-only election with its own structure, so
+  // its offices are weighed on their own terms, not as the presidential set with P deleted). The
+  // midterm set sums to the same 0.40 the down-ballot offices carry in a presidential year, so a
+  // midterm year still counts 0.4 of a presidential year; inside it the House and the State
+  // Legislature (each a whole-state vote with every seat filled) take more and the two
+  // single-candidate statewide offices less. Six-round holdout, β = 1: 3.90 → 3.87, i.e. within
+  // noise; no midterm set tested moved the score by more than 0.05 either way.
   RACE_TYPE_WEIGHTS: { P: 0.60, S: 0.10, H: 0.20, L: 0.07, G: 0.03 } as Record<string, number>,
+  RACE_TYPE_WEIGHTS_MIDTERM: { P: 0, S: 0.04, H: 0.25, L: 0.10, G: 0.01 } as Record<string, number>,
   YEAR_WEIGHTS: Object.fromEntries(
     TPL_YEARS.map((y) => [y, YEAR_DECAY ** (ANCHOR_YEAR - y)])
   ) as Record<number, number>,
   YEARS: TPL_YEARS as number[],
-  // Environment/elasticity fit (see getTplFit in lib/tplCompute.ts).
-  // Phase 4 calibration: HUBER_C 4–10, SPARSE_YEAR_K 2–8, BETA_SHRINK 0.3–0.7 and
+  // Environment fit (see getTplFit in lib/tplCompute.ts).
+  // Phase 4 calibration: HUBER_C 4–10, SPARSE_YEAR_K 2–8 and
   // imputed weight 0.25–1.0 all moved the objective ≤ 0.01 — kept at their
-  // designed values. Disabling Huber entirely won ~0.02 on presidential targets
+  // designed values. (BETA_SHRINK / BETA_MIN / BETA_MAX, the per-state elasticity's
+  // constants, were removed with it on 2026-11-19.) Disabling Huber entirely won ~0.02 on presidential targets
   // by sacrificing Senate accuracy and robustness — rejected by design.
   HUBER_C: 7,          // residual scale (pts) beyond which a statewide race — or, in the state model, a whole House year — is downweighted (House rows carry no row-level factor; see aggregateYears)
   FIT_ITERATIONS: 4,   // alternating least-squares rounds
   SPARSE_YEAR_K: 4,    // E(y) shrink factor n/(n + K) — reins in thin odd years
-  BETA_SHRINK: 0.5,    // β* = 1 + BETA_SHRINK × (β̂ − 1)
-  BETA_MIN: 0.5,
-  BETA_MAX: 1.6,
-  // Boundary-shift confidence (District TPL only — see boundaryStripFor in tplCompute).
+  // Boundary-shift confidence (see boundaryStripFor in tplCompute). It weights a relocated House
+  // race in the CANDIDATE TABLE only. It was documented as a District TPL weight until 2026-11-19
+  // but never reached that number (one House row per district-year: the weight cancels).
   // A pre-2026 House race is relocated onto current lines by the presidential delta
   // between the two maps, then weighted 1 / (1 + (|shift| / K)²). At K = 10 a race moved
   // 5 pts (the median for the 2016–2020 eras) enters at 0.80, one moved 10 pts at 0.50,
@@ -89,6 +100,13 @@ export const TPL_GLOBAL_CONSTANTS = {
   // House margin in year Y from its TPL built without that race).
   BS_WEIGHT_K: 10,
 };
+
+// Where the level of E(year), and so of every TPL, is pinned (getTplFit, "NEUTRAL POINT"):
+//   "house-vote"  E = 0 is a tied national U.S. House vote with every seat contested
+//   "window"      E averages about zero over the model's years (the behaviour until 2026-11-19)
+// The choice moves every state, district and county by the same amount and changes no
+// difference between two places.
+export const TPL_NEUTRAL_ANCHOR: "house-vote" | "window" = "house-vote";
 
 // ── State Wave Sensitivity Coefficients (SUPERSEDED) ────────────────────────
 // Superseded by the fitted elasticity β* (getTplFit in lib/tplCompute.ts) as of
