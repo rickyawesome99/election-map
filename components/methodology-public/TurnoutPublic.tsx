@@ -1,6 +1,7 @@
 import { TURNOUT_BACKTEST as B } from "@/data/turnoutCalibration";
-import { ELECTION_YEAR, MIDTERM_WEIGHTS, projectAll, projectionNational } from "@/lib/turnoutModel";
-import { impliedGenericBallot, projectRaceResults } from "@/lib/countyProjection";
+import { ELECTION_YEAR, MIDTERM_WEIGHTS } from "@/lib/turnoutModel";
+// The 2026 estimate as published (frozen).
+import { impliedGenericBallot, projectAll, projectionNational, projectRaceResults } from "@/lib/final2026";
 import { A, Chapter, KeyFigures, Margin, QA, SeeIt, Steps } from "./kit";
 
 // Public Turnout tab: the plain-language version of components/methodology/TurnoutMethodology.tsx,

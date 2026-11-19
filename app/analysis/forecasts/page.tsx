@@ -4,7 +4,7 @@ import { LedgerSectionHead } from "@/components/RaceDetailSections";
 import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { electionYear, type RaceType } from "@/data/forecastData";
 import { externalForecasts, EXTERNAL_FORECASTS_READ, type ExternalForecaster } from "@/data/externalForecasts";
-import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecast";
+import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
 import { CHAMBERS, CHAMBER_LABEL, PROB_BANDS, comparisonFor } from "@/lib/forecastComparison";
 
 export const metadata = {

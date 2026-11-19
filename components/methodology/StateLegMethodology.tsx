@@ -6,10 +6,12 @@ import { stateLegOutgoing2026, stateLegOutgoing2026Fetched } from "@/data/stateL
 import { stateLegMoneyCoverage } from "@/lib/stateLegMoney";
 import { contest2026 } from "@/lib/stateLegAtlas";
 import { buildPresByEraAuditRows } from "@/lib/stateLegPresByEraAudit";
-import { STATE_LEG_FORECAST_CONSTANTS as SC, projectAllChambers } from "@/lib/stateLegForecast";
+import { STATE_LEG_FORECAST_CONSTANTS as SC } from "@/lib/stateLegForecast";
+// The 2026 projection and environment as published (frozen).
+import { projectAllChambers, projectAllChamberPopularVotes, getNationalEnvironment } from "@/lib/final2026";
 import { STATE_LEG_VALIDATION } from "@/data/stateLegValidation";
 import { STATE_LEG_POPVOTE_VALIDATION as PV } from "@/data/stateLegPopularVoteValidation";
-import { STATE_LEG_POPVOTE_CONSTANTS as PC, projectAllChamberPopularVotes } from "@/lib/stateLegPopularVote";
+import { STATE_LEG_POPVOTE_CONSTANTS as PC } from "@/lib/stateLegPopularVote";
 import { MIDTERM_WEIGHTS } from "@/lib/turnoutModel";
 import { STATE_LEG_INDEPENDENT_VALIDATION as IV } from "@/data/stateLegIndependentValidation";
 import { STATE_LEG_TYPE_WEIGHT_SWEEP as SW } from "@/data/stateLegTypeWeightSweep";
@@ -17,7 +19,6 @@ import { STATE_LEG_MONEY_SWEEP as MS } from "@/data/stateLegMoneySweep";
 import { STATE_LEG_ENV_SCALE_SWEEP as ES } from "@/data/stateLegEnvScaleSweep";
 import { STATE_LEG_PRES_GAP_SWEEP as GS } from "@/data/stateLegPresGapSweep";
 import { structuralMoneyModel } from "@/lib/stateLegMoneyModel";
-import { getNationalEnvironment } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, N, P, Section, type ConstantRow } from "./kit";
 
 // Every STATE_LEG_FORECAST_CONSTANTS key and where it is documented on this tab.

@@ -13,7 +13,9 @@ import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
 import ExpandableTbody from "@/components/ExpandableTbody";
 import { formatProjectedMargin, projectedMarginColor, leanColor } from "@/lib/colorScale";
-import { getNationalEnvironment, nationalSigmaFor, incumbentAdvantage, type RacePolling, type RaceMoneyTerm } from "@/lib/tplCompute";
+import type { RacePolling, RaceMoneyTerm } from "@/lib/tplCompute";
+// The 2026 forecast as published: environment, national σ and incumbency from the frozen files.
+import { getNationalEnvironment, nationalSigmaFor, incumbentAdvantage } from "@/lib/final2026";
 
 type PollRow = {
   label: string;

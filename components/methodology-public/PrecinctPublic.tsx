@@ -1,5 +1,5 @@
 import { getPrecinctDistrict, precinctDistrictSlugs } from "@/lib/precinctDistrict/registry";
-import { projectDistrict } from "@/lib/precinctDistrict/project";
+import { precinctDistrictProjection } from "@/lib/final2026"; // the 2026 outlook as published
 import { A, BuildUp, Chapter, Label, QA, SeeIt, Steps } from "./kit";
 
 // Public Precinct districts tab: the plain-language version of
@@ -9,7 +9,7 @@ import { A, BuildUp, Chapter, Label, QA, SeeIt, Steps } from "./kit";
 export default function PrecinctPublic() {
   const slug = precinctDistrictSlugs()[0];
   const data = getPrecinctDistrict(slug)!;
-  const p = projectDistrict(data);
+  const p = precinctDistrictProjection(slug);
   const name = data.config.shortName;
 
   return (

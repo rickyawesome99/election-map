@@ -1,6 +1,6 @@
 import { STATE_LEG_VALIDATION } from "@/data/stateLegValidation";
-import { projectAllChambers } from "@/lib/stateLegForecast";
-import { projectAllChamberPopularVotes } from "@/lib/stateLegPopularVote";
+// The 2026 projection as published (frozen).
+import { projectAllChambers, projectAllChamberPopularVotes } from "@/lib/final2026";
 import { A, Chapter, KeyFigures, QA, SeeIt, Steps } from "./kit";
 
 // Public Legislative atlas tab: the plain-language version of

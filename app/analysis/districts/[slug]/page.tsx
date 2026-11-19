@@ -1,10 +1,9 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import { electionYear, presPastResults, senateData, governorData } from "@/data/forecastData";
-import { forecastRace } from "@/lib/forecast";
+import { forecastRace, projectDistrict as projectLegDistrict, precinctDistrictProjection, stateLegMoneyConstants } from "@/lib/final2026";
 import { getPrecinctDistrict, precinctDistrictSlugs, PRECINCT_DISTRICT_ALIASES } from "@/lib/precinctDistrict/registry";
 import { marginOf, sumBallots, sumOffice, topOfTicket } from "@/lib/precinctDistrict/aggregate";
 import { officeCandidates } from "@/lib/precinctDistrict/explorer";
-import { projectDistrict } from "@/lib/precinctDistrict/project";
 import DistrictHeader, { type HeaderStats } from "@/components/precinct-district/DistrictHeader";
 import Outlook, { type StatewideContext } from "@/components/precinct-district/Outlook";
 import PrecinctExplorer from "@/components/precinct-district/PrecinctExplorer";
@@ -14,7 +13,6 @@ import DataNotes from "@/components/precinct-district/DataNotes";
 import TargetList from "@/components/precinct-district/TargetList";
 import ModelComparison, { type LegModelSummary } from "@/components/precinct-district/ModelComparison";
 import { targetList } from "@/lib/precinctDistrict/targets";
-import { projectDistrict as projectLegDistrict, STATE_LEG_FORECAST_CONSTANTS } from "@/lib/stateLegForecast";
 import { stateLegDistricts } from "@/data/stateLegDistricts";
 import { districtHash } from "@/lib/stateLegAtlas";
 import { LedgerSectionHead } from "@/components/RaceDetailSections";
@@ -67,7 +65,7 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
     precincts: latest.precincts.length,
   };
 
-  const projection = projectDistrict(data);
+  const projection = precinctDistrictProjection(slug);
   const targets = targetList(data, projection);
 
   // The site's general state legislature model for the same seat, for the comparison section.
@@ -78,7 +76,7 @@ export default async function PrecinctDistrictPage({ params }: { params: Promise
     href: `/states/${config.state.toLowerCase()}/legislature/${config.chamber}${districtHash(config.chamber, legDistrict!.number)}`,
     margin: legP.margin, sigma: legP.sigma, pD: legP.pD, rating: legP.rating,
     lean: legP.lean, envPts: legP.envPts, incPts: legP.incPts,
-    money: legP.money ? { pts: legP.money.pts, K: STATE_LEG_FORECAST_CONSTANTS.MONEY_K, CAP: STATE_LEG_FORECAST_CONSTANTS.MONEY_CAP, gapPct: legP.money.gapPct, structuralGapPct: legP.money.structuralGapPct } : null,
+    money: legP.money ? { pts: legP.money.pts, K: stateLegMoneyConstants().K, CAP: stateLegMoneyConstants().CAP, gapPct: legP.money.gapPct, structuralGapPct: legP.money.structuralGapPct } : null,
     rows: { pres: legP.rows.filter((r) => r.kind === "P").length, seat: legP.rows.filter((r) => r.kind === "L").length, relocated: legP.rows.filter((r) => r.relocated).length, years: legYears.length ? [Math.min(...legYears), Math.max(...legYears)] : null },
   } : null;
 

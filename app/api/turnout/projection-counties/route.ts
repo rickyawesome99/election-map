@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { projectionCountySlice } from "@/lib/turnoutModel";
+import { projectionCountySlice } from "@/lib/final2026";
 
 // Static JSON: every county's 2026 turnout estimate by office (lib/turnoutModel.ts), for the map.
 export const dynamic = "force-static";

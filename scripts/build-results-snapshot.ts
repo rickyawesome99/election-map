@@ -24,7 +24,7 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { gunzipSync } from "node:zlib";
-import { resultsPriors } from "@/lib/resultsPriors";
+import { resultsPriors } from "@/lib/final2026"; // the election-day priors, frozen
 import { CIVIC_BASE, normalizeRace } from "@/lib/resultsFeed";
 import { nightObservations, partyVotes, projectRace } from "@/lib/resultsNeedle";
 import { fitNight } from "@/lib/resultsNight";

@@ -11,7 +11,9 @@
 // Re-run after any model change (ours is computed here, like the atlas slices) or a fresh fetch.
 import fs from "node:fs";
 import path from "node:path";
-import { projectAllChambers, type DistrictProjection } from "@/lib/stateLegForecast";
+import type { DistrictProjection } from "@/lib/stateLegForecast";
+// Our side of the comparison is the 2026 projection as published (frozen).
+import { projectAllChambers } from "@/lib/final2026";
 import { stateLegDistricts, type Chamber } from "@/data/stateLegDistricts";
 import { statesData } from "@/data/statesData";
 import { indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";

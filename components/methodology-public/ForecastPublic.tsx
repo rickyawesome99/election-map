@@ -2,12 +2,9 @@ import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { FORECAST_CALIBRATION as CAL } from "@/data/forecastCalibration";
 import { racePolls } from "@/data/racePolls";
 import { pollWeight } from "@/lib/racePollAverage";
-import { forecastsFor, getChamberSimulations, type ForecastedRace } from "@/lib/forecast";
-import {
-  getNationalEnvironment, incumbentAdvantage, calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, computeIncumbentPts,
-  raceMoneyTerm, candidateQuality,
-} from "@/lib/tplCompute";
-import { alignedParty } from "@/data/raceEligibility";
+import { forecastsFor, getChamberSimulations, type ForecastedRace } from "@/lib/final2026";
+// Every 2026 number here is the final forecast as published (frozen, lib/final2026.ts).
+import { getNationalEnvironment, incumbentAdvantage, raceCard } from "@/lib/final2026";
 import { A, BuildUp, Chapter, KeyFigures, Label, Margin, Num, QA, RatingScale, SeeIt, ShareBars, SimpleTable, Steps } from "./kit";
 
 // Public Forecast tab: the plain-language version of components/methodology/ForecastMethodology.tsx.
@@ -21,10 +18,8 @@ const odds = (p: number) => {
 };
 
 function buildOf(race: ForecastedRace) {
-  const tpl = race.raceType === "house" ? calculateDistrictTpl(race.id) : calculateStateTpl(race.stateAbbr, race.state);
-  const inc = [race.candidates?.dem, race.candidates?.rep].find((c) => c?.incumbent) ?? null;
-  const incPts = computeIncumbentPts(race.office, inc ? alignedParty(inc) : null, inc?.appointed ?? false);
-  return { tpl, env: effectiveEnvironment(race.stateAbbr, race.office), incPts, money: raceMoneyTerm(race).pts, quality: candidateQuality(race).pts };
+  const c = raceCard(race.raceType, race.id);
+  return { tpl: c.tpl, env: c.gb, incPts: c.baseIncumbentPts, money: c.moneyTerm.pts, quality: c.quality.pts };
 }
 
 export default function ForecastPublic() {

@@ -18,7 +18,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { gunzipSync, gzipSync } from "node:zlib";
-import { resultsPriors } from "../lib/resultsPriors";
+import { resultsPriors } from "../lib/final2026"; // the election-day priors, frozen
 import { normalizeRace } from "../lib/resultsFeed";
 import { nightObservations, projectRace, tallyChamber } from "../lib/resultsNeedle";
 import { areaSwings, fitNight } from "../lib/resultsNight";

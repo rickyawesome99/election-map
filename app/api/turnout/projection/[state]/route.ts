@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { projectionStates, projectionStateSlice } from "@/lib/turnoutModel";
+import { projectionStates, projectionStateSlice } from "@/lib/final2026";
 
 // Static JSON: one state's 2026 turnout estimates with their county splits (lib/turnoutModel.ts).
 export const dynamic = "force-static";

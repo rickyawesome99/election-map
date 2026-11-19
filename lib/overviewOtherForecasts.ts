@@ -6,7 +6,7 @@ import { governorData, houseData, senateData, type RaceType } from "@/data/forec
 import { externalForecasts, EXTERNAL_FORECASTS_READ } from "@/data/externalForecasts";
 import { comparisonFor } from "@/lib/forecastComparison";
 import { POLYMARKET_2026_READ } from "@/lib/marketBoard";
-import { SEAT_HOLDOVERS } from "@/lib/forecast";
+import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
 import polymarketControl from "@/data/polymarketControl.json";
 
 // The Other Forecasts panel: Polymarket, DDHQ and VoteHub (user, 2026-10-22), the two models read through the

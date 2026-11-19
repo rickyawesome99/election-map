@@ -6,7 +6,7 @@ import { electionYear } from "@/data/forecastData";
 
 const FORECAST_YEAR = electionYear;
 import { fmtMargin, marginColor } from "@/lib/colorScale";
-import { genericBallotPopularVote } from "@/lib/genericBallotPopularVote";
+import { genericBallotPopularVote } from "@/lib/final2026";
 
 export const metadata = {
   title: `Generic Ballot vs Popular Vote — ${electionYear} Forecast`,

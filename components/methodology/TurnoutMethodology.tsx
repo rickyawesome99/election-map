@@ -2,10 +2,11 @@ import Link from "next/link";
 import { TURNOUT_BACKTEST as B } from "@/data/turnoutCalibration";
 import {
   BASE_PRES_YEAR, COMPETITIVENESS_CAP, COMPETITIVENESS_SLOPE, DISTRICT_DROPOFF_WEIGHT, ELECTION_YEAR, HOUSE_ONLY_TICKET_FACTOR, MIDTERM_WEIGHTS, SHRINK_VOTES,
-  projectAll, projectionNational, runModel,
 } from "@/lib/turnoutModel";
+// The 2026 estimate as published (frozen).
+import { impliedGenericBallot, projectAll, projectionNational, projectRaceResults, turnoutLevel } from "@/lib/final2026";
 import { firstRoundNotes } from "@/lib/turnout";
-import { COUNTY_MARGIN_CLAMP, OTHER_SHARE_CAP, impliedGenericBallot, projectRaceResults } from "@/lib/countyProjection";
+import { COUNTY_MARGIN_CLAMP, OTHER_SHARE_CAP } from "@/lib/countyProjection";
 import { COUNTY_FEED_DONE_SHARE, FEED_DONE_MIN_SHARE, K_SWING_SHARE, K_TURNOUT_SHARE, LATE_COUNT_FROM, LATE_LEAN_K, LATE_LEAN_PRIOR, MAX_EXTRA_SHARE, MIN_PCT_FOR_TOTAL, MIN_SHARE, NEAR_DONE, NIGHT_SHARE, OWN_WEIGHT_EXP, PCT_HOLD_GROWTH, PCT_TRUSTED_TOTAL, SIGMA_COUNTY, SIGMA_FLOOR, SIGMA_FLOOR_DONE, SIGMA_LATE } from "@/lib/resultsNeedle";
 import { MIN_COMPLETE, MIRAGE_ITERATIONS, MIRAGE_VOTES_SAT, SIGMA_COLLEGE, SIGMA_FIT_COUNTY, SIGMA_LEAN, SIGMA_MIRAGE, SIGMA_NATIONAL, SIGMA_NONWHITE, SIGMA_OFFICE, SIGMA_STATE, VOTES_SAT } from "@/lib/resultsNight";
 import { NEEDLE_BACKTEST as NB } from "@/data/resultsNeedleCalibration";
@@ -35,9 +36,8 @@ const pct = (v: number, d = 1) => `${(v * 100).toFixed(d)}%`;
 const int = (v: number) => Math.round(v).toLocaleString();
 
 export default function TurnoutMethodology() {
-  const run = runModel();
   const nat = projectionNational();
-  const ga = run.levels.get("GA")!;
+  const ga = turnoutLevel("GA");
   const gaRace = projectAll().find((r) => r.id === "S-GA")!;
   const fulton = gaRace.counties.find((c) => c.fips === "13121")!;
   const first = firstRoundNotes();

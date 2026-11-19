@@ -8,7 +8,7 @@ import { CHAMBERS, comparisonFor } from "@/lib/forecastComparison";
 import { forecastNow } from "@/lib/forecastClock";
 import { marketBoard } from "@/lib/marketBoard";
 import { pollingMisses } from "@/lib/pollingMisses";
-import { genericBallotPopularVote } from "@/lib/genericBallotPopularVote";
+import { genericBallotPopularVote, projectionNational } from "@/lib/final2026";
 import { PREDICTORS, projectHouse } from "@/lib/popVotePredictors";
 import { fmtPct, worstMiss } from "@/lib/predictionMarketDisplay";
 import { marketRaceRows, scoredMarkets, tally } from "@/lib/predictionMarkets";
@@ -16,7 +16,6 @@ import { calendarTotals } from "@/lib/raceCalendarQuery";
 import { redistrictingTotals } from "@/lib/redistrictingCalendar";
 import { computeTrumpApprovalAverage } from "@/lib/trumpApprovalAverage";
 import { nationalRows } from "@/lib/turnout";
-import { projectionNational } from "@/lib/turnoutModel";
 import { upcomingTotals } from "@/lib/upcomingElections";
 
 // The figures the /analysis hub rows quote, each taken from the same source as the page it links

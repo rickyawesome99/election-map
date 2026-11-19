@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
-import { getTplFit, getNationalEnvironment, getWarMoneyModel } from "@/lib/tplCompute";
+import { getTplFit, getWarMoneyModel } from "@/lib/tplCompute";
+// The 2026 outlook and environment as published (frozen).
+import { getNationalEnvironment, precinctDistrictProjection } from "@/lib/final2026";
 import { getPrecinctDistrict, precinctDistrictSlugs } from "@/lib/precinctDistrict/registry";
-import { projectDistrict, PROJECTION_CONSTANTS } from "@/lib/precinctDistrict/project";
+import { PROJECTION_CONSTANTS } from "@/lib/precinctDistrict/project";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, pct, signed, type ConstantRow, type LedgerLine } from "./kit";
 
 // Every PROJECTION_CONSTANTS key and where it is documented on this tab.
@@ -16,7 +18,7 @@ export default function PrecinctMethodology() {
   const fit = getTplFit();
   const env = getNationalEnvironment();
   const slugs = precinctDistrictSlugs();
-  const examples = slugs.map((slug) => ({ slug, data: getPrecinctDistrict(slug)!, p: projectDistrict(getPrecinctDistrict(slug)!) }));
+  const examples = slugs.map((slug) => ({ slug, data: getPrecinctDistrict(slug)!, p: precinctDistrictProjection(slug) }));
   const ex = examples[0];
 
   const constants: ConstantRow[] = [

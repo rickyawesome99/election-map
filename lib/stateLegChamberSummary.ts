@@ -4,8 +4,8 @@ import { stateLegMapInfo } from "@/data/stateLegMapInfo";
 import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { stateLegCandidates2026 } from "@/data/stateLegCandidates2026";
 import { contest2026 } from "@/lib/stateLegAtlas";
-import { projectChamber } from "@/lib/stateLegForecast";
-import { projectChamberPopularVote } from "@/lib/stateLegPopularVote";
+// The 2026 projection as published (frozen); the rest of the summary is live data.
+import { projectChamber, projectChamberPopularVote } from "@/lib/final2026";
 import { chamberResults2026 } from "@/lib/stateLegResults2026";
 import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { getChamberMargins } from "@/lib/chamberMargins";

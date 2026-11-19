@@ -1,0 +1,60 @@
+{
+  "note": "The final 2026 forecast as pages show it, frozen from the locked model. Read by lib/final2026.ts; never regenerate after the model changes. Hashes are checked by `npm run check-final-2026`.",
+  "lockedAt": "2026-11-03T13:30:00.000Z",
+  "frozenAt": "2026-11-19T05:31:57.036Z",
+  "commit": "dcd6c4d96194fcd10fcd988c5fc8090be9af4fbe",
+  "files": {
+    "races.json": {
+      "bytes": 178506,
+      "sha256": "ac828ebe6a13a498540c3397ee302208936e4b3dcaad71b13d29aa01201710a7"
+    },
+    "race-cards.json": {
+      "bytes": 785198,
+      "sha256": "0cc19fdbaa06ffce77f2cb73158b2d001cea57d6c0842030b675892f34f33d14"
+    },
+    "chambers.json": {
+      "bytes": 3425,
+      "sha256": "abbd7b394e0ea2a7e6413bb59e6140356f9e163d3fd8954555ab7f442fbe9688"
+    },
+    "outlook.json": {
+      "bytes": 184087,
+      "sha256": "a6de3aeb667931401a8030c734ee120ae5fedbaf5d3e6dc74bc191bebda4fcd0"
+    },
+    "history.json": {
+      "bytes": 1747339,
+      "sha256": "4a59996089216eda6a558ab22d9b5ba896400d2726e242c3b255f62493fafe3e"
+    },
+    "national.json": {
+      "bytes": 348,
+      "sha256": "7e8507c66dd40015e50be5f7d568f2d92eb84a8159076774e2af6d7a83d524cc"
+    },
+    "projections.json": {
+      "bytes": 2078451,
+      "sha256": "bf7f7d0440e0b343c9e95272df36d744ed57ae7636ce54154536c728f9c17cda"
+    },
+    "turnout.json": {
+      "bytes": 3548226,
+      "sha256": "ba89fbf6b479cb1ce492e7790ae81955ac0a5d545b8a816fecdf3ef6e002d0d1"
+    },
+    "state-leg-chambers.json": {
+      "bytes": 117732,
+      "sha256": "4429eb240b2f46df387b074ec9ffcdb8122bc3def7951214d45a7f771f156ef5"
+    },
+    "state-leg-districts.json": {
+      "bytes": 17261834,
+      "sha256": "e29ed1ca24287a73885a65fc21cb7dd8f55e027946aa55349324b15352760c8a"
+    },
+    "generic-ballot.json": {
+      "bytes": 46877,
+      "sha256": "63e8036e0b5dd576b5d86803af3616ca2cbf6646e0b62b04aa3db2753e762a34"
+    },
+    "results-priors.json": {
+      "bytes": 2878487,
+      "sha256": "9f2ea5f510d27a4be1d61a25f0d9086e09f3a1d08d70615723ce0d3baf584e67"
+    },
+    "precinct-districts.json": {
+      "bytes": 31339,
+      "sha256": "df86634a9808e738bda5909aba7e34eeb6110be926b3e30c75f55ad202767211"
+    }
+  }
+}

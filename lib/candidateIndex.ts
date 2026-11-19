@@ -1,5 +1,5 @@
 import { senateNoElection, senateHoldovers, governorNoElection, electionYear, presPastResults, type NoElectionEntry } from "@/data/forecastData";
-import { forecastsFor, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, type ForecastedRace } from "@/lib/final2026";
 import { popVoteData } from "@/data/popVoteData";
 import { candidateSlug, canonicalCandidateName } from "./candidateSlug";
 

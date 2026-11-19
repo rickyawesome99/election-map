@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { resultsPriors } from "@/lib/resultsPriors";
+import { resultsPriors } from "@/lib/final2026"; // the election-day priors, frozen
 import { RESULTS_OFFICES, type ResultsOffice } from "@/lib/resultsTypes";
 
 // Static JSON: the Results page's priors for one office, rendered once at build time. The page

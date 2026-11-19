@@ -9,15 +9,12 @@ import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, LedgerSubhead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
-import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
 import ElectionResultSection, { ElectionResultFootnote, electionResultMeta } from "@/components/ElectionResultSection";
 import { raceResult2026 } from "@/lib/raceResults2026";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateStateTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
-import { forecastRace } from "@/lib/forecast";
-import { getRaceForecastHistory } from "@/lib/forecastHistory";
+import { forecastRace, raceCard, projectRaceResults, projectedCountyMapEntries, getRaceForecastHistory } from "@/lib/final2026";
 import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
@@ -289,29 +286,31 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
 
   if (!race) notFound();
 
-  const stateTpl = calculateStateTpl(abbr, race.name);
   const demPhoto = race.candidates ? candidatePhoto(race.candidates.dem.name, race.state) : null;
   const repPhoto = race.candidates ? candidatePhoto(race.candidates.rep.name, race.state) : null;
   const incumbent = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
   const incumbentParty = incumbent ? alignedParty(incumbent) : null;
-  const incumbentPts = raceIncumbencyPts(race); // office advantage + competitive-seat extra
-  const fundraising = raceFundraising2026("senate", race.id);
-  const fundraisingSource = raceFundraisingSource2026("senate", race.id);
-  const financeDetail = raceFinanceDetail2026("senate", race.id);
-  const moneyTerm = raceMoneyTerm(race);
+  // Every forecast number on this page is the final 2026 forecast, frozen (lib/final2026.ts).
+  const card = raceCard("senate", race.id);
+  const incumbentPts = card.incumbentPts; // office advantage + competitive-seat extra
+  const fundraising = card.fundraising;
+  const fundraisingSource = card.fundraisingSource;
+  const financeDetail = card.financeDetail;
+  const stateTpl = card.tpl;
+  const moneyTerm = card.moneyTerm;
   const fundraisingPts = moneyTerm.pts;
-  const gb = effectiveEnvironment(abbr);
-  const polling = racePollingFor(race);
+  const gb = card.gb;
+  const polling = card.polling;
   const pollMargin = polling.avg?.diff ?? null;
-  const projectedMargin = computeProjectedMargin(race);
+  const projectedMargin = card.projectedMargin;
   const forecast = forecastRace(race);
   const countyProjection = projectRaceResults("senate", race.id);
   // The counted result, which the race page shows in place of the projection (archived in data/forecast-final-2026/).
   const result = raceResult2026("senate", race.id);
   const raceHistory = getRaceForecastHistory("senate", race);
-  const quality = candidateQuality(race);
+  const quality = card.quality;
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
   const { bg, text } = getRatingColors(forecastRating);
   // Headline shares are the projected vote's (shares of all votes, others set aside), except in a

@@ -8,7 +8,7 @@
 
 import { houseData, type RaceType } from "@/data/forecastData";
 import { externalForecasts, type ExternalForecaster, type ExternalRaceCall, type ExternalRating } from "@/data/externalForecasts";
-import { forecastsFor, getChamberSimulations, seatTotals, SEAT_HOLDOVERS, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations, seatTotals, SEAT_HOLDOVERS, type ForecastedRace } from "@/lib/final2026";
 
 export const RATING_SCALE: ExternalRating[] = ["Safe D", "Likely D", "Lean D", "Tilt D", "Toss-up", "Tilt R", "Lean R", "Likely R", "Safe R"];
 export const ratingOrdinal = (r: string): number => { const i = RATING_SCALE.indexOf(r as ExternalRating); return i < 0 ? 0 : i - 4; };

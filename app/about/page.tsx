@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { electionYear } from "@/data/forecastData";
 import { racePollsMeta } from "@/data/racePolls";
-import { forecastsFor, getChamberSimulations } from "@/lib/forecast";
+import { forecastsFor, getChamberSimulations } from "@/lib/final2026";
 import { Section, Block, P, Defs } from "@/components/methodology/kit";
 import { Margin } from "@/components/methodology-public/kit";
 import { StandfirstHeader } from "@/components/StandfirstHeader";

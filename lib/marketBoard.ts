@@ -3,7 +3,7 @@
 // by scripts/fetch-polymarket-2026.py), beside this site's own probability. Server-only: it runs the forecast.
 
 import { governorData, houseData, senateData, type RaceForecast, type RaceType } from "@/data/forecastData";
-import { forecastRace } from "@/lib/forecast";
+import { forecastRace } from "@/lib/final2026";
 import type { MarketBoardOffice, MarketBoardRace } from "@/lib/marketBoardDisplay";
 
 /** When the polyDem column was last re-read from Polymarket (scripts/fetch-polymarket-2026.py). Bump with the data. */

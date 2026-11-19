@@ -1,6 +1,5 @@
 import ForecastMap from "@/components/ForecastMap";
-import { forecastSummariesFor } from "@/lib/forecast";
-import { outlookData } from "@/lib/outlookData";
+import { forecastSummariesFor, outlookData } from "@/lib/final2026";
 import { OutlookHero, OutlookSections } from "@/components/ForecastOutlook";
 
 export default function HousePage() {

@@ -25,8 +25,8 @@ import { stateLegHistoricalMaps } from "../data/stateLegHistoricalMaps";
 import { stateLegCalendar } from "../data/stateLegCalendar";
 import { stateLegCandidates2026, stateLegCandidates2026Fetched } from "../data/stateLegCandidates2026";
 import { stateLegOutgoing2026 } from "../data/stateLegOutgoing2026";
-import { projectChamber, projectDistrict } from "../lib/stateLegForecast";
-import { projectChamberPopularVote } from "../lib/stateLegPopularVote";
+// The 2026 projection as published (frozen), so rebuilding the slices never moves it.
+import { projectChamber, projectDistrict, projectChamberPopularVote } from "../lib/final2026";
 import { chamberResults2026, districtResults2026, unmatchedRaces2026 } from "../lib/stateLegResults2026";
 import { statewideByDistrict2026 } from "../lib/stateLegStatewide2026";
 import { stateLegMoneyHistory } from "../lib/stateLegMoney";

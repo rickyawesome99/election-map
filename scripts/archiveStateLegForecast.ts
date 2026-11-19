@@ -51,6 +51,12 @@ async function saveMethodology() {
   }
   await browser.close();
 }
+// The 2026 forecast is frozen (data/forecast-final-2026/frozen/, lib/final2026.ts) and this archive is
+// part of the record (lib/raceResults2026.ts reads it). Once the live model changes, rewriting it would
+// replace the published numbers with the new model's, so writing needs an explicit --rewrite.
+if (!process.argv.includes("--check") && !process.argv.includes("--methodology") && !process.argv.includes("--rewrite")) {
+  throw new Error("The 2026 archive is a frozen record: refusing to rewrite it. Use --check to compare, or --rewrite if you really mean to regenerate it from the CURRENT model.");
+}
 if (process.argv.includes("--methodology")) saveMethodology().then(() => process.exit(0), (e) => { console.error(e); process.exit(1); });
 else main();
 

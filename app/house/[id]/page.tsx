@@ -9,7 +9,6 @@ import { notFound } from "next/navigation";
 import { candidatePhoto } from "@/lib/candidatePhotos";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
 import HouseRedistrictingSection from "@/components/HouseRedistrictingSection";
-import { projectRaceResults, projectedCountyMapEntries } from "@/lib/countyProjection";
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
 import ElectionResultSection, { ElectionResultFootnote, electionResultMeta } from "@/components/ElectionResultSection";
 import { raceResult2026 } from "@/lib/raceResults2026";
@@ -18,9 +17,7 @@ import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRI
 import { AboutRaceCard, incumbentFact, LedgerSubhead, CandidatesLedgerSection, ForecastCalculationCard, FundraisingLedgerSection, HouseOnlyRecentStatewideResultsSection, LedgerSectionHead, RacePollsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
-import { calculateDistrictTpl, effectiveEnvironment, raceIncumbencyPts, racePollingFor, computeProjectedMargin, raceMoneyTerm, raceFundraising2026, raceFundraisingSource2026, raceFinanceDetail2026, candidateQuality } from "@/lib/tplCompute";
-import { forecastRace, forecastsFor } from "@/lib/forecast";
-import { getRaceForecastHistory } from "@/lib/forecastHistory";
+import { forecastRace, forecastsFor, raceCard, projectRaceResults, projectedCountyMapEntries, getRaceForecastHistory } from "@/lib/final2026";
 import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
@@ -116,23 +113,25 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
     : REDRAWN_SINCE_ACS_VINTAGE.has(stateAbbr)
     ? `ACS 2020–24. ${race.state} enacted a new congressional map for ${electionYear}; these figures are for the district's previous lines.`
     : "ACS 2020–24 5-year estimates.";
-  const districtTpl = calculateDistrictTpl(race.id);
-  const incumbentPts = raceIncumbencyPts(race); // office advantage + competitive-seat extra
-  const fundraising = raceFundraising2026("house", race.id);
-  const fundraisingSource = raceFundraisingSource2026("house", race.id);
-  const financeDetail = raceFinanceDetail2026("house", race.id);
-  const moneyTerm = raceMoneyTerm(race);
+  // Every forecast number on this page is the final 2026 forecast, frozen (lib/final2026.ts).
+  const card = raceCard("house", race.id);
+  const incumbentPts = card.incumbentPts; // office advantage + competitive-seat extra
+  const fundraising = card.fundraising;
+  const fundraisingSource = card.fundraisingSource;
+  const financeDetail = card.financeDetail;
+  const districtTpl = card.tpl;
+  const moneyTerm = card.moneyTerm;
   const fundraisingPts = moneyTerm.pts;
-  const gb = effectiveEnvironment(stateAbbr, "H");
-  const polling = racePollingFor(race);
+  const gb = card.gb;
+  const polling = card.polling;
   const pollMargin = polling.avg?.diff ?? null;
-  const projectedMargin = computeProjectedMargin(race);
+  const projectedMargin = card.projectedMargin;
   const forecast = forecastRace(race);
   const countyProjection = projectRaceResults("house", race.id);
   // The counted result, which the race page shows in place of the projection (archived in data/forecast-final-2026/).
   const result = raceResult2026("house", race.id);
   const raceHistory = getRaceForecastHistory("house", race);
-  const quality = candidateQuality(race);
+  const quality = card.quality;
   const forecastRating = forecast.rating; // Safe for a decided (same-party or uncontested) race, whatever the margin
   const { bg, text } = getRatingColors(forecastRating);
   // Headline shares are the projected vote's (shares of all votes, others set aside), except in a

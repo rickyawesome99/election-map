@@ -5,7 +5,7 @@ import "server-only";
 
 import { statesData } from "@/data/statesData";
 import { governorNoElection, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
-import { forecastsFor, type ForecastedRace } from "@/lib/forecast";
+import { forecastsFor, type ForecastedRace } from "@/lib/final2026";
 import type { StateRow } from "@/components/StatesOverviewMap";
 
 function racePartyOverview(race: ForecastedRace): "D" | "R" | "I" {

@@ -6,10 +6,12 @@ import { racePolls } from "@/data/racePolls";
 import { pollWeight } from "@/lib/racePollAverage";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
 import { ALIGNED_INDEPENDENTS, THREE_WAY_RACES } from "@/data/raceEligibility";
-import { forecastsFor, getChamberSimulations, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/forecast";
+// The 2026 forecast's outputs (races, chambers, each race's ledger, the environment) are the final forecast as
+// published, frozen (lib/final2026.ts); the model's machinery below (fit, constants, house effects) reads the live code.
+import { forecastsFor, getChamberSimulations, getNationalEnvironment, incumbentAdvantage, raceCard, SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE, type ForecastedRace } from "@/lib/final2026";
 import {
-  getTplFit, getEnvironmentModel, getNationalEnvironment, getWarMoneyModel, incumbentAdvantage, liveHouseEffects,
-  calculateStateTpl, calculateDistrictTpl, effectiveEnvironment, housePvOnBasis, pollMissShade, envScaleFor, raceIncumbencyPts, raceMoneyTerm, candidateQuality,
+  getTplFit, getEnvironmentModel, getWarMoneyModel, liveHouseEffects,
+  housePvOnBasis, pollMissShade, envScaleFor,
   computeCandidateEffects, FF_K, FF_MAX, WAR_LAMBDA, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE,
 } from "@/lib/tplCompute";
 import { formatProjectedMargin, projectedMarginColor } from "@/lib/colorScale";
@@ -33,9 +35,8 @@ const DOCUMENTED_IN = {
 
 /** The live ledger of one race, term by term — the same numbers its race page shows. */
 function ledgerOf(race: ForecastedRace) {
-  const tpl = race.raceType === "house" ? calculateDistrictTpl(race.id) : calculateStateTpl(race.stateAbbr, race.state);
-  const incPts = raceIncumbencyPts(race);
-  return { tpl, env: effectiveEnvironment(race.stateAbbr, race.office), incPts, money: raceMoneyTerm(race), quality: candidateQuality(race) };
+  const c = raceCard(race.raceType, race.id);
+  return { tpl: c.tpl, env: c.gb, incPts: c.incumbentPts, money: c.moneyTerm, quality: c.quality };
 }
 
 export default function ForecastMethodology() {
@@ -49,8 +50,8 @@ export default function ForecastMethodology() {
   const byOffice = { H: forecastsFor("house"), S: forecastsFor("senate"), G: forecastsFor("governor") };
   const polled = (rs: ForecastedRace[]) => rs.filter((r) => r.pollMargin != null).length;
   const decided = all.filter((r) => r.contest !== "contested");
-  const withQuality = (rs: ForecastedRace[]) => rs.filter((r) => Math.abs(candidateQuality(r).pts) > 1e-9).length;
-  const withMoney = (rs: ForecastedRace[]) => rs.filter((r) => raceMoneyTerm(r).known).length;
+  const withQuality = (rs: ForecastedRace[]) => rs.filter((r) => Math.abs(raceCard(r.raceType, r.id).quality.pts) > 1e-9).length;
+  const withMoney = (rs: ForecastedRace[]) => rs.filter((r) => raceCard(r.raceType, r.id).moneyTerm.known).length;
   const betas = Object.entries(fit.beta).filter(([, b]) => b.n > 0).sort((a, b) => a[1].shrunk - b[1].shrunk);
   const houseFx = liveHouseEffects().table;
   const pollCount = Object.values(racePolls).reduce((a, p) => a + p.length, 0);

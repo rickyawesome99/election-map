@@ -4,7 +4,8 @@ import { findStateLegCandidate, getAllStateLegCandidatePages, getStateLegCandida
 import { pastElectionHref } from "@/lib/pastElections";
 import { warForCandidate } from "@/lib/modelSlices";
 import { stateLegMoney } from "@/lib/stateLegMoney";
-import { personKey, projectDistrict } from "@/lib/stateLegForecast";
+import { personKey } from "@/lib/stateLegForecast";
+import { projectDistrict } from "@/lib/final2026"; // the 2026 projection as published
 import { fieldPersons } from "@/lib/stateLegAtlas";
 import { stateLegDistricts } from "@/data/stateLegDistricts";
 import type { LegProjection, RaceMoney } from "@/components/candidates/StateLegRaceRow";

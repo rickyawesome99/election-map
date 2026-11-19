@@ -2,8 +2,8 @@ import { electionYear } from "@/data/forecastData";
 import TurnoutPage from "@/components/turnout/TurnoutPage";
 import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import { firstRoundNotes, nationalRows, stateSeries } from "@/lib/turnout";
-import { impliedGenericBallot } from "@/lib/countyProjection";
-import { COMPETITIVENESS_SLOPE, DISTRICT_DROPOFF_WEIGHT, HOUSE_ONLY_TICKET_FACTOR, MIDTERM_WEIGHTS, SHRINK_VOTES, projectionNational, projectionSummary } from "@/lib/turnoutModel";
+import { impliedGenericBallot, projectionNational, projectionSummary } from "@/lib/final2026";
+import { COMPETITIVENESS_SLOPE, DISTRICT_DROPOFF_WEIGHT, HOUSE_ONLY_TICKET_FACTOR, MIDTERM_WEIGHTS, SHRINK_VOTES } from "@/lib/turnoutModel";
 
 export const metadata = {
   title: `Turnout — ${electionYear} Analysis`,

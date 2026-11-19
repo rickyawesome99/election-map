@@ -3,7 +3,7 @@ import { statesData } from "@/data/statesData";
 import { UNICAMERAL_STATES } from "@/data/stateLegDistricts";
 import { chamberOutcome } from "@/lib/chamberOutcome";
 import { stateLegCompositionAsOf } from "@/data/stateLegComposition";
-import { projectAllChambers } from "@/lib/stateLegForecast";
+import { projectAllChambers } from "@/lib/final2026";
 import { chamberResults2026, districtResults2026 } from "@/lib/stateLegResults2026";
 import { currentChamberSeats, latestChamberSeats } from "@/lib/stateLegSeats";
 import { stateLegMapInfo } from "@/data/stateLegMapInfo";

@@ -1,5 +1,5 @@
 import { electionYear, governorData, houseData, senateData, type RaceForecast } from "@/data/forecastData";
-import { forecastsFor } from "@/lib/forecast";
+import { forecastsFor } from "@/lib/final2026";
 import { raceCalendarYears, type RaceClass, type RaceKind } from "@/data/raceCalendar";
 
 /**
