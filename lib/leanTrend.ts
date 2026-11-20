@@ -2,6 +2,7 @@ import "server-only";
 import { presPastResults } from "@/data/forecastData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { getTplFit } from "@/lib/tplCompute";
 
 // Trend: which way a place has been moving, published BESIDE its True Partisan Lean and never
 // inside it (user decision 2026-11-19). TPL says where a place stands and moves only as results
@@ -9,42 +10,35 @@ import { countyPresidentialData } from "@/data/countyPresidentialData";
 // presidential years (a quarter of the last shift: 3.83 against 3.93 overall, worse in 2018,
 // nothing in 2026), so the lean stays steady and the direction of travel is its own figure.
 //
-//   trend = (presidential margin 2024 − 2020) − (national margin 2024 − 2020)        R-positive
+//   trend = (presidential margin 2024 − 2020) − (E(2024) − E(2020))                  R-positive
 //
-// i.e. how much further the place moved than the country did between the last two presidential
-// elections, on today's lines for a district. `prior` is the same figure for 2016 → 2020, so a
-// reader can tell a sustained move (Florida, the Rio Grande Valley) from a one-cycle one.
+// E is the national environment TPL itself removes (getTplFit), so the trend is the change in the
+// place's environment-neutral presidential margin, on today's lines for a district. Until
+// 2026-11-19 (later the same day) the reference was the national popular-vote swing instead. The
+// popular vote is vote-weighted, so the 2024 swings of California, New York, Texas and Florida
+// set it (R+5.9) well above what the typical state did (median R+3.4; E moved R+4.0), and most
+// states then read as trending Democratic for having moved right by less than the big ones. E is
+// fitted with every state counting equally, so no handful of states moves anyone else's figure.
+// `prior` is the same figure for 2016 → 2020, so a reader can tell a sustained move (Florida, the
+// Rio Grande Valley) from a one-cycle one.
 
 export interface LeanTrend {
-  /** 2020 → 2024, relative to the nation. Positive = moved toward Republicans. */
+  /** 2020 → 2024, beyond the national environment's change. Positive = moved toward Republicans. */
   last: number;
-  /** 2016 → 2020, relative to the nation; null where 2016 is not on file. */
+  /** 2016 → 2020 on the same basis; null where 2016 is not on file. */
   prior: number | null;
-}
-
-let national: Record<number, number> | null = null;
-/** National presidential margin (R − D, percent of all votes) summed from the state results. */
-export function nationalPresMargin(year: number): number | null {
-  if (!national) {
-    national = {};
-    for (const y of [2016, 2020, 2024]) {
-      let d = 0, r = 0, t = 0;
-      for (const [abbr, rows] of Object.entries(presPastResults)) {
-        if (abbr.length !== 2) continue; // statewide rows only (Maine and Nebraska districts are separate keys)
-        const row = rows.find((x) => x.year === y);
-        if (!row?.totalVotes) continue;
-        d += row.demVotes ?? 0; r += row.repVotes ?? 0; t += row.totalVotes;
-      }
-      if (t > 0) national[y] = ((r - d) / t) * 100;
-    }
-  }
-  return national[year] ?? null;
+  /** The place's presidential margins behind `last` (R − D, percent of all votes). */
+  from: number;
+  to: number;
+  /** E(2024) − E(2020): what the national environment did between them. */
+  env: number;
 }
 
 function trendOf(m: Partial<Record<2016 | 2020 | 2024, number | null | undefined>>): LeanTrend | null {
-  const n16 = nationalPresMargin(2016), n20 = nationalPresMargin(2020), n24 = nationalPresMargin(2024);
-  if (m[2024] == null || m[2020] == null || n20 == null || n24 == null) return null;
-  return { last: m[2024]! - m[2020]! - (n24 - n20), prior: m[2016] != null && n16 != null ? m[2020]! - m[2016]! - (n20 - n16) : null };
+  const E = getTplFit().E;
+  if (m[2024] == null || m[2020] == null || E[2020] == null || E[2024] == null) return null;
+  const env = E[2024] - E[2020];
+  return { last: m[2024]! - m[2020]! - env, prior: m[2016] != null && E[2016] != null ? m[2020]! - m[2016]! - (E[2020] - E[2016]) : null, from: m[2020]!, to: m[2024]!, env };
 }
 
 export function stateLeanTrend(abbr: string): LeanTrend | null {

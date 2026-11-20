@@ -109,17 +109,21 @@ function aggregate(
   const yearSignals: { year: number; wrs: number; coverage: number }[] = [];
   for (const year of years) {
     const typeNMs: Partial<Record<string, number>> = {};
+    const discount: Record<string, number> = {};
     for (const t of TYPES) {
       const pairs = races
         .filter((r) => r.year === year && r.raceType === t)
-        .map((r) => [value(r), r.aggWeight] as const)
-        .filter((pair): pair is readonly [number, number] => pair[0] != null);
+        .map((r) => [value(r), r.aggWeight, r.turnoutWeight ?? 1] as const)
+        .filter((pair): pair is readonly [number, number, number] => pair[0] != null);
       const wsum = pairs.reduce((a, [, w]) => a + w, 0);
       if (wsum > 0) typeNMs[t] = pairs.reduce((a, [v, w]) => a + v * w, 0) / wsum;
+      // The rows' own discounts as a factor on the office's weight (aggregateYears, 2026-11-19).
+      const full = pairs.reduce((a, [, , s]) => a + s, 0);
+      discount[t] = full > 0 && process.env.TPL_ROW_DISCOUNT !== "off" ? Math.min(1, wsum / full) : 1;
     }
     const present = TYPES.filter((t) => typeNMs[t] != null);
     if (present.length === 0) continue;
-    const factor = (t: string) => (t === "H" ? houseYearFactor(typeNMs.H ?? null, houseAnchor) : 1);
+    const factor = (t: string) => (t === "H" ? houseYearFactor(typeNMs.H ?? null, houseAnchor) : discount[t] ?? 1);
     const totalW = present.reduce((s, t) => s + (G.RACE_TYPE_WEIGHTS[t] ?? 0) * factor(t), 0);
     yearSignals.push({
       year,

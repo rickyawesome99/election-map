@@ -331,7 +331,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
                   {fmtLean(tpl)}
                 </div>
                 {trend && (
-                  <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-muted)" }} title="How much further the county moved than the country between the 2020 and 2024 presidential elections. A companion to County TPL, not part of it.">
+                  <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-muted)" }} title="The county's 2020 to 2024 presidential shift, minus the change in the national environment TPL removes (every state counting equally, not the popular vote). A companion to County TPL, not part of it.">
                     Trend 2020→24 <b style={{ color: leanColor(trend.last) }}>{fmtLean(trend.last)}</b>
                   </div>
                 )}

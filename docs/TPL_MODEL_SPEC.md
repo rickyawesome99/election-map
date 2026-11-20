@@ -36,7 +36,20 @@ and the code are right. Full reasoning and numbers: `data/methodologyChangelog.t
 - **District TPL has no row weights.** The Huber factor and the boundary weight described in
   Step 3b never reached the number (one House row per district-year) and were removed.
   `BS_WEIGHT_K` still weights relocated races in the candidate table.
-- **Trend** is a separate figure (`lib/leanTrend.ts`), shown beside TPL and never inside it.
+- **Row discounts reach the office weight.** A statewide row's Huber factor and an imputed row's
+  0.5 only act against other rows of the same office and year, and there is usually one. They now
+  also scale that office's weight in the year (`aggregateYears`, the type factor), as the House
+  year's single Huber factor already did. Before, both cancelled on a lone row.
+- **State Legislature is one whole-chamber row.** Contested seats on their votes; unopposed seats
+  and a staggered chamber's seats not up each estimated as presidential margin + the contested
+  seats' gap that year (`LEG_UNOPPOSED_MODE = "gap"`, `lib/chamberMargins.ts`). The fit of E
+  therefore sees whole chambers, not contested seats only (E(2026) D+9.5 → D+10.8). The old
+  presidential-margin "unopposed seats" row remains only where no gap can be fitted.
+- **Presidential vote by legislative district:** 2024 on the current map falls back to
+  `data/stateLegPres2024.ts` where `data/stateLegPresByEra.ts` has no 2024 column (12 states).
+- **Trend** is a separate figure (`lib/leanTrend.ts`), shown beside TPL and never inside it:
+  the 2020→2024 presidential shift minus E(2024) − E(2020), the model's own environment change
+  (not the popular-vote swing, which large states dominate).
 - **The 2026 forecast** is frozen (`lib/final2026.ts`) and its documentation reads the fit as
   locked (`lib/lockedTplFit2026.ts`). None of this changes it.
 - **Tool fix.** `scripts/tplWindowFit.ts` had the live decay inverted (1.333 for 0.75); the

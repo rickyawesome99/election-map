@@ -8,12 +8,13 @@ import { statesData } from "@/data/statesData";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { DistrictDetail, DistrictTiles } from "./DistrictSection";
 import { RaceTable, TableCaption } from "./RaceTable";
-import { TplMatrix, type MatrixSelection } from "./TplMatrix";
-import { AdjustedModal, FormulaModal, GLOSSARY, RaceCalcModal, type FormulaKey } from "./TplModals";
+import { ResultTable } from "./ResultTable";
+import { MatrixStatus, TplMatrix, type MatrixSelection } from "./TplMatrix";
+import { AdjustedModal, FormulaModal, GLOSSARY, RaceCalcModal, TrendModal, type FormulaKey } from "./TplModals";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
 import { MATRIX_ROWS, OFFICE_LABELS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
-import { AllRacesButton, ArrowOut, CandidateLink, M, StatRow, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
+import { AllRacesButton, ArrowOut, CandidateLink, M, Fact, Fig, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import { startPendingNav } from "@/lib/navPending";
 
@@ -24,11 +25,6 @@ import { startPendingNav } from "@/lib/navPending";
 const TYPE_ORDER: Record<string, number> = { P: 0, G: 1, S: 2, H: 3, L: 4 };
 
 /** Keeps the last loaded value so a selection change never renders an empty section. */
-// The State result table packs tighter on phones so all six columns fit without scrolling.
-const RTH = "whitespace-nowrap px-1 py-2 text-[10px] font-bold uppercase tracking-wider text-left sm:px-2";
-const RTD = "whitespace-nowrap px-1 py-1.5 tabular-nums sm:px-2";
-const RTD_R = `${RTD} text-right`;
-const OP = "w-3 px-0 py-1.5 text-center sm:px-1";
 
 function useLatest<T>(value: T | null, fallback: T | null): T | null {
   const [last, setLast] = useState<T | null>(fallback);
@@ -46,6 +42,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const [formula, setFormula] = useState<FormulaKey | null>(null);
   const [adjusted, setAdjusted] = useState(false);
   const [glossary, setGlossary] = useState(false);
+  const [trendOpen, setTrendOpen] = useState(false);
 
   // ── District section ─────────────────────────────────────────────────────
   const [districtId, setDistrictId] = useState<string>(initialDistrict?.id ?? data.districts[0]?.id ?? "");
@@ -86,6 +83,11 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const tint = data.tpl > 0 ? "var(--party-rep)" : "var(--party-dem)";
   // Rank from the state's own side: 1st most Republican, or counted up from the D end.
   const sideRank = data.tpl > 0 ? { n: data.rank, side: "Republican" } : { n: 51 - data.rank, side: "Democratic" };
+  // The picker's states in alphabetical order; the arrows step through them and wrap at the ends.
+  const sortedStates = useMemo(() => [...statesData].sort((a, b) => a.name.localeCompare(b.name)), []);
+  const at = sortedStates.findIndex((s) => s.id === data.id);
+  const prevState = sortedStates[(at - 1 + sortedStates.length) % sortedStates.length];
+  const nextState = sortedStates[(at + 1) % sortedStates.length];
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -96,13 +98,17 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 pt-3 pb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
             <SeatCrumbs crumbs={[{ label: "TPL", href: "/model" }, { label: data.name }]} />
             <div className="flex items-center gap-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
+              <div className="flex items-center gap-1">
+              <StepLink href={stateHref(prevState.id)} label={`Previous state: ${prevState.name}`} dir="prev" />
               <select aria-label="State" value={data.id} onChange={(e) => { const href = stateHref(e.target.value); startPendingNav(href); router.push(href); }} className="cursor-pointer rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
-                {[...statesData].sort((a, b) => a.name.localeCompare(b.name)).map((s) => <option key={s.abbr} value={s.id}>{s.abbr} — {s.name}</option>)}
+                {sortedStates.map((s) => <option key={s.abbr} value={s.id}>{s.abbr} — {s.name}</option>)}
               </select>
+              <StepLink href={stateHref(nextState.id)} label={`Next state: ${nextState.name}`} dir="next" />
+              </div>
               <Link href="/analysis/internal-methodology/state-tpl" className="hidden whitespace-nowrap hover:underline sm:inline" prefetch={false}>How State TPL works <ArrowOut /></Link>
             </div>
           </div>
-          <div className="pb-6 pt-5">
+          <div className="pb-3 pt-5">
             {/* Two rows from sm up: name | TPL figure on the bottom edge, then the Centered line
                 under the figure. Stacked in source order on phones. */}
             <div className="grid grid-cols-1 gap-x-8 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end">
@@ -113,19 +119,23 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
               </div>
               <div className="mt-1 self-baseline text-xs sm:col-start-2 sm:row-start-2 sm:mt-2 sm:text-right" style={{ color: "var(--app-text-muted)" }}>Centered <M v={centered} digits={1} bold /> vs. 50-State Median</div>
             </div>
-            <StatRow items={[
-              { value: data.trend ? fmt1(data.trend.last) : "—", label: "Trend 2020→24", color: data.trend ? marginColor(data.trend.last) : "var(--app-text-very-muted)", title: `How much further ${data.name} moved than the country between the 2020 and 2024 presidential elections${data.trend?.prior != null ? ` (2016 to 2020: ${fmt1(data.trend.prior)})` : ""}. A companion to TPL, not part of it.` },
-              { value: data.since24 != null ? <>{data.since24 > 0 ? "R" : "D"}+{Math.abs(data.since24).toFixed(1)}</> : "—", label: "Since 2024", color: data.since24 != null ? marginColor(data.since24) : "var(--app-text-very-muted)", title: data.since24 != null ? `Under today's model, ${data.name} read ${fmt1(data.tpl - data.since24)} after the 2024 election and reads ${fmt1(data.tpl)} now: what 2025 and 2026 added, with the national environment removed.` : undefined },
-              { value: imputed, label: "Imputed ⊘", color: imputed ? undefined : "var(--app-text-very-muted)" },
-              { value: data.races.length, label: "Races" },
-              { value: ordinal(sideRank.n), label: `Most ${sideRank.side}`, color: tint },
-            ]} />
+            {/* The page's facts as one compact line: small labels beside their figures. */}
+            <dl className="mt-5 flex flex-wrap items-baseline gap-x-8 gap-y-2 text-sm">
+              <Fact label="Trend 2020→24" title={`${data.name}'s 2020 to 2024 presidential shift beyond the national environment's${data.trend?.prior != null ? ` (2016 to 2020: ${fmt1(data.trend.prior)})` : ""}. Click for the calculation. A companion to TPL, not part of it.`}>
+                {data.trend ? <button type="button" onClick={() => setTrendOpen(true)} className="underline decoration-dotted underline-offset-4"><Fig><M v={data.trend.last} digits={1} bold /></Fig></button> : <span style={VERY_MUTED}>—</span>}
+              </Fact>
+              <Fact label="Since 2024" title={data.since24 != null ? `Under today's model, ${data.name} read ${fmt1(data.tpl - data.since24)} after the 2024 election and reads ${fmt1(data.tpl)} now: what 2025 and 2026 added, with the national environment removed.` : undefined}>
+                {data.since24 != null ? <Fig><M v={data.since24} digits={1} bold /></Fig> : <span style={VERY_MUTED}>—</span>}
+              </Fact>
+              <Fact label="Rank"><Fig color={tint}>{ordinal(sideRank.n)}</Fig> most {sideRank.side}</Fact>
+              <Fact label="Races"><Fig>{data.races.length}</Fig>{imputed > 0 && <span style={{ color: "var(--app-text-muted)" }}> · {imputed} imputed ⊘</span>}</Fact>
+            </dl>
           </div>
         </div>
       </div>
 
       <main className={`${PAGE_CONTAINER} pb-14`}>
-        <div className="flex items-center gap-4 overflow-x-auto py-2.5 text-xs font-semibold" style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
+        <div className="flex items-center gap-4 overflow-x-auto py-1 text-xs font-semibold" style={{ color: "var(--app-text-muted)" }}>
           <button type="button" onClick={() => setGlossary((v) => !v)} className="shrink-0 font-medium hover:underline" aria-expanded={glossary}>Glossary {glossary ? "▴" : "▾"}</button>
         </div>
         {glossary && (
@@ -139,8 +149,8 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           </dl>
         )}
 
-        <section id="matrix" className="mt-8 scroll-mt-24">
-          <LedgerSectionHead label="State TPL · neutralized margins by year and office" meta="NM = Adjusted + IF + FF + ENV · Click a cell for its races" />
+        <section id="matrix" className="mt-5 scroll-mt-24">
+          <LedgerSectionHead label="State TPL · neutralized margins by year and office" meta={<MatrixStatus selection={sel} offices={MATRIX_ROWS} onSelect={setSel} />} />
           <TplMatrix
             years={years}
             offices={MATRIX_ROWS}
@@ -166,38 +176,10 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           </>}
         </section>
 
-        <section id="result" className="mt-8 scroll-mt-24">
-          <LedgerSectionHead label="State result" meta="TPL = Σ weight × WRS · centered on the 50-state median" />
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)]">
-            <div className="min-w-0 overflow-x-auto"><table className="w-full border-collapse text-xs">
-              <thead>
-                <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
-                  <th className={RTH}>Year</th><th className={`${RTH} text-right`}>Weight</th><th className={OP} /><th className={`${RTH} text-right`}>WRS</th><th className={OP} /><th className={`${RTH} text-right`}><span className="sm:hidden">Contrib.</span><span className="hidden sm:inline">Contribution</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                {weighted.map((y) => (
-                  <tr key={y.year} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                    <td className={RTD}>{y.year}</td>
-                    <td className={RTD_R}>{y.finalWeight.toFixed(3)}</td>
-                    <td className={OP} style={{ color: "var(--app-text-muted)" }}>×</td>
-                    <td className={RTD_R}><M v={y.WRS} /></td>
-                    <td className={OP} style={{ color: "var(--app-text-muted)" }}>=</td>
-                    <td className={RTD_R}>{(y.finalWeight * y.WRS).toFixed(2)}</td>
-                  </tr>
-                ))}
-                <tr style={{ borderTop: "2px solid var(--app-text-primary)" }}>
-                  <td className="px-1 py-2 text-sm font-extrabold leading-tight sm:whitespace-nowrap sm:px-2">{data.name} TPL</td>
-                  <td colSpan={4} className="px-1 py-1.5 tabular-nums sm:px-2" style={{ color: "var(--app-text-muted)" }}>− median {fmt2(data.medianStateTpl)} → Centered <M v={centered} bold /></td>
-                  <td className="whitespace-nowrap px-1 py-2 text-right text-sm font-extrabold tabular-nums sm:px-2"><M v={data.tpl} /></td>
-                </tr>
-              </tbody>
-            </table></div>
-            <p className="min-w-0 text-xs leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-              Year weights: recency decay {data.yearDecay.toFixed(2)} per year anchored to 2026, scaled by each year&apos;s type-weight coverage, then normalized. A year with no {data.name} race gets weight 0. Centering subtracts the median of all 50 state TPLs so states compare on one scale.{" "}
-              <Link href="/analysis/internal-methodology/state-tpl" className="underline" prefetch={false}>Full method <ArrowOut /></Link>
-            </p>
-          </div>
+        <section id="result" className="mt-10 scroll-mt-24">
+          <LedgerSectionHead label="State result" meta="TPL = Σ weight × WRS"
+            right={<Link href="/analysis/internal-methodology/state-tpl" className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }} prefetch={false}>Full method <ArrowOut /></Link>} />
+          <ResultTable years={weighted} tpl={data.tpl} label={`${data.name} TPL`} centered={centered} median={data.medianStateTpl} medianLabel="50-state median" onWeight={() => setFormula("YW")} />
         </section>
 
         <section id="districts" className="mt-10 scroll-mt-24">
@@ -205,7 +187,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
             right={<Link href="/model#districts" className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>District map ›</Link>} />
           <DistrictTiles districts={data.districts} selected={districtId} onSelect={selectDistrict} />
           {district ? (
-            <DistrictDetail d={district} stateId={data.id} medianDistrictTpl={data.medianDistrictTpl} onRace={setRace} onFormula={setFormula} />
+            <DistrictDetail d={district} medianDistrictTpl={data.medianDistrictTpl} onRace={setRace} onFormula={setFormula} />
           ) : (
             <div className="py-8 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>{districtSlice.failed ? "This district's calculation could not be loaded." : "Loading…"}</div>
           )}
@@ -217,7 +199,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           <div className="-mx-1 overflow-x-auto px-1">
             <table className="w-full border-collapse text-xs max-sm:text-[11px] sm:min-w-[560px]">
               <thead>
-                <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
+                <tr style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
                   <th className={`${TH} max-sm:pl-0`}>Candidate</th><th className={`${TH} hidden sm:table-cell`}>Race</th><th className={`${TH} hidden sm:table-cell`}>Year</th><th className={`${TH_R} max-sm:px-1`}><span className="sm:hidden">Act.</span><span className="hidden sm:inline">Actual</span></th><th className={`${TH_R} max-sm:px-1`}><span className="sm:hidden">Exp.</span><span className="hidden sm:inline">Expected</span></th><th className={`${TH_R} max-sm:px-1`}>vs Opp</th><th className={`${TH_R} hidden md:table-cell`}>Effect</th><th className={`${TH_R} max-sm:pr-0 max-sm:pl-1`}>WAR</th>
                 </tr>
               </thead>
@@ -225,7 +207,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
                 {data.statewideWar.slice(0, 14).map((r, i) => (
                   <tr key={i} style={{ borderBottom: "1px solid var(--app-border)" }}>
                     <td className={`${TD} max-sm:whitespace-normal max-sm:pl-0`}>
-                      <CandidateLink name={r.candidate} state={r.state} party={r.party} />
+                      <CandidateLink name={r.candidate} state={r.state} party={r.party} tint />
                       {/* Phones: the race and year under the name instead of their own columns. */}
                       <span className="mt-0.5 block text-[11px] sm:hidden" style={{ color: "var(--app-text-muted)" }}>{r.year} · {OFFICE_LABELS[r.office]}{r.race.includes("Special") ? " special" : ""}</span>
                     </td>
@@ -247,6 +229,18 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
       {race && <RaceCalcModal race={race} E={data.E} incumbentAdvantage={data.incumbentAdvantage} onClose={() => setRace(null)} onFormula={setFormula} onAdjusted={() => setAdjusted(true)} />}
       {race && adjusted && <AdjustedModal race={race} onClose={() => setAdjusted(false)} />}
       {formula && <FormulaModal formula={formula} onClose={() => setFormula(null)} />}
+      {trendOpen && data.trend && <TrendModal name={data.name} trend={data.trend} onClose={() => setTrendOpen(false)} />}
     </div>
+  );
+}
+
+/** A round arrow beside the state picker, to the previous or next state alphabetically. */
+function StepLink({ href, label, dir }: { href: string; label: string; dir: "prev" | "next" }) {
+  return (
+    <Link href={href} prefetch={false} aria-label={label} title={label}
+      className="flex h-6 w-6 items-center justify-center rounded-full transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_10%,transparent)]"
+      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+      <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d={dir === "prev" ? "M6.5 1.5 3 5l3.5 3.5" : "M3.5 1.5 7 5 3.5 8.5"} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" /></svg>
+    </Link>
   );
 }

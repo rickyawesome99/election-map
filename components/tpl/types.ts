@@ -4,8 +4,8 @@
 
 import type { YearAggregation } from "@/lib/tplCompute";
 
-/** Which way a place has been moving (lib/leanTrend.ts): its presidential shift beyond the nation's, R-positive. Shown beside TPL, never inside it. */
-export type LeanTrend = { last: number; prior: number | null };
+/** Which way a place has been moving (lib/leanTrend.ts): its 2020→24 presidential shift (`from` → `to`) beyond the national environment's (`env`), R-positive. Shown beside TPL, never inside it. */
+export type LeanTrend = { last: number; prior: number | null; from: number; to: number; env: number };
 
 export type RaceType = "P" | "S" | "G" | "H" | "L";
 export type WarOffice = "P" | "S" | "G" | "H";
@@ -40,6 +40,8 @@ export type TplRace = {
   detailHref?: string;
   /** That election's own results page, when one exists (/senate/oh2/2022). */
   pastHref?: string;
+  /** State Legislature row: seats counted on their votes, and seats estimated (unopposed; not up). */
+  legPools?: { contested: number; unopposed: number; notUp: number };
   demWar: number | null;
   repWar: number | null;
 };

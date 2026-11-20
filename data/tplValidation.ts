@@ -4,7 +4,7 @@
 // year's environment supplied exactly (one number per office) and the race's own terms added. Each figure is the
 // mean leftover in points; the pres* columns run the same equation with the last presidential margin in place of TPL.
 export const TPL_VALIDATION = {
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-20",
   "years": [
     2018,
     2020,
@@ -17,19 +17,19 @@ export const TPL_VALIDATION = {
       "year": 2018,
       "office": "Senate",
       "n": 34,
-      "environment": -8.3,
-      "tplAlone": 6.47,
-      "tplFull": 5.42,
+      "environment": -8.08,
+      "tplAlone": 6.52,
+      "tplFull": 5.41,
       "presAlone": 6.68,
-      "presFull": 5.47
+      "presFull": 5.46
     },
     {
       "year": 2018,
       "office": "Governor",
       "n": 36,
-      "environment": -5.38,
-      "tplAlone": 10.53,
-      "tplFull": 9.53,
+      "environment": -5.44,
+      "tplAlone": 10.56,
+      "tplFull": 9.54,
       "presAlone": 10.54,
       "presFull": 9.53
     },
@@ -37,7 +37,7 @@ export const TPL_VALIDATION = {
       "year": 2018,
       "office": "House",
       "n": 411,
-      "environment": -7.19,
+      "environment": -6.93,
       "tplAlone": 5.21,
       "tplFull": 4.94,
       "presAlone": 6.1,
@@ -47,28 +47,28 @@ export const TPL_VALIDATION = {
       "year": 2020,
       "office": "Senate",
       "n": 33,
-      "environment": -0.8,
-      "tplAlone": 5.14,
-      "tplFull": 4.29,
+      "environment": -0.11,
+      "tplAlone": 5.11,
+      "tplFull": 4.31,
       "presAlone": 4.63,
-      "presFull": 4.05
+      "presFull": 3.97
     },
     {
       "year": 2020,
       "office": "Governor",
       "n": 11,
-      "environment": 3.72,
-      "tplAlone": 12.77,
-      "tplFull": 8.4,
+      "environment": 4.69,
+      "tplAlone": 12.99,
+      "tplFull": 8.23,
       "presAlone": 14.58,
-      "presFull": 9.99
+      "presFull": 9.96
     },
     {
       "year": 2020,
       "office": "House",
       "n": 419,
-      "environment": 1.38,
-      "tplAlone": 5.9,
+      "environment": 1.47,
+      "tplAlone": 5.89,
       "tplFull": 4.81,
       "presAlone": 5.57,
       "presFull": 4.94
@@ -77,11 +77,11 @@ export const TPL_VALIDATION = {
       "year": 2022,
       "office": "Senate",
       "n": 33,
-      "environment": 1.01,
-      "tplAlone": 5.77,
-      "tplFull": 4.58,
+      "environment": 0.84,
+      "tplAlone": 5.68,
+      "tplFull": 4.52,
       "presAlone": 5.44,
-      "presFull": 4.73
+      "presFull": 4.67
     },
     {
       "year": 2022,
@@ -89,17 +89,17 @@ export const TPL_VALIDATION = {
       "n": 36,
       "environment": 3.79,
       "tplAlone": 9.44,
-      "tplFull": 6.63,
+      "tplFull": 6.58,
       "presAlone": 9.13,
-      "presFull": 6.07
+      "presFull": 6.04
     },
     {
       "year": 2022,
       "office": "House",
       "n": 209,
-      "environment": 1.21,
+      "environment": 1.31,
       "tplAlone": 4.24,
-      "tplFull": 4.31,
+      "tplFull": 4.3,
       "presAlone": 4.12,
       "presFull": 4.24
     },
@@ -107,29 +107,29 @@ export const TPL_VALIDATION = {
       "year": 2024,
       "office": "Senate",
       "n": 33,
-      "environment": 2.86,
-      "tplAlone": 4.62,
-      "tplFull": 2.66,
+      "environment": 2.85,
+      "tplAlone": 4.7,
+      "tplFull": 2.86,
       "presAlone": 4.66,
-      "presFull": 2.58
+      "presFull": 2.6
     },
     {
       "year": 2024,
       "office": "Governor",
       "n": 11,
-      "environment": 4.57,
-      "tplAlone": 12.06,
-      "tplFull": 6.76,
+      "environment": 4.35,
+      "tplAlone": 12.23,
+      "tplFull": 6.93,
       "presAlone": 13.37,
-      "presFull": 7.23
+      "presFull": 7.25
     },
     {
       "year": 2024,
       "office": "House",
       "n": 245,
-      "environment": 2.51,
-      "tplAlone": 4.19,
-      "tplFull": 3.38,
+      "environment": 3,
+      "tplAlone": 4.16,
+      "tplFull": 3.39,
       "presAlone": 4.07,
       "presFull": 3.55
     },
@@ -137,29 +137,29 @@ export const TPL_VALIDATION = {
       "year": 2026,
       "office": "Senate",
       "n": 31,
-      "environment": -14.75,
-      "tplAlone": 4.55,
-      "tplFull": 5.12,
+      "environment": -14.69,
+      "tplAlone": 4.58,
+      "tplFull": 5.08,
       "presAlone": 4.89,
-      "presFull": 5.67
+      "presFull": 5.6
     },
     {
       "year": 2026,
       "office": "Governor",
       "n": 36,
-      "environment": -11.8,
-      "tplAlone": 7.96,
-      "tplFull": 6.75,
+      "environment": -11.21,
+      "tplAlone": 8,
+      "tplFull": 6.71,
       "presAlone": 8.41,
-      "presFull": 7.07
+      "presFull": 7.05
     },
     {
       "year": 2026,
       "office": "House",
       "n": 416,
-      "environment": -12.55,
+      "environment": -12.5,
       "tplAlone": 4.49,
-      "tplFull": 5.09,
+      "tplFull": 5.1,
       "presAlone": 4.97,
       "presFull": 5.4
     }
@@ -170,27 +170,27 @@ export const TPL_VALIDATION = {
       "n": 164,
       "years": 5,
       "tplAlone": 5.33,
-      "tplFull": 4.41,
+      "tplFull": 4.43,
       "presAlone": 5.27,
-      "presFull": 4.49,
+      "presFull": 4.45,
       "tplBetterIn": 3
     },
     {
       "office": "Governor",
       "n": 130,
       "years": 5,
-      "tplAlone": 9.84,
-      "tplFull": 7.63,
+      "tplAlone": 9.89,
+      "tplFull": 7.6,
       "presAlone": 10.14,
-      "presFull": 7.73,
+      "presFull": 7.72,
       "tplBetterIn": 3
     },
     {
       "office": "House",
       "n": 1700,
       "years": 5,
-      "tplAlone": 4.94,
-      "tplFull": 4.64,
+      "tplAlone": 4.93,
+      "tplFull": 4.65,
       "presAlone": 5.16,
       "presFull": 4.98,
       "tplBetterIn": 4

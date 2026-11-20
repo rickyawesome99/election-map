@@ -1,7 +1,8 @@
 import "server-only";
 
 import { stateLegResults } from "@/lib/locked2026StateLegResults";
-import { stateLegPresByEra } from "@/data/stateLegPresByEra";
+import { stateLegPresByEra, type PresByEraVote } from "@/data/stateLegPresByEra";
+import { stateLegPres2024 } from "@/data/stateLegPres2024";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { stateLegDistricts, UNICAMERAL_STATES, type Chamber } from "@/data/stateLegDistricts";
@@ -23,7 +24,10 @@ import type { NotUpPool } from "@/lib/chamberMargins";
  *   imputed    no count, or one major party absent → the district's presidential margin on the
  *              map it was run on (data/stateLegPresByEra.ts, the presidential year nearest the
  *              race, later on a tie), weighted by that presidential total scaled to the chamber's
- *              legislative/presidential turnout ratio among its contested seats;
+ *              legislative/presidential turnout ratio among its contested seats. On the current
+ *              map the 2024 figure falls back to data/stateLegPres2024.ts where the era table has
+ *              none (the eleven states Dave's Redistricting carries no 2024 data for; until
+ *              2026-11-19 their 2024 and 2026 seats were imputed from 2020);
  *   skipped    ineligible with no presidential figure on its lines (New Hampshire floterials,
  *              a key the boundary data does not carry) — counted, not guessed.
  *
@@ -66,6 +70,12 @@ export interface ChamberMarginDetail {
   unreported: number;
   /** The seats not up this year, summarized for the State TPL; null when none (or no gap). */
   notUp: NotUpPool | null;
+  /**
+   * The imputed (unopposed) seats in the same summary, so the State TPL can add the contested
+   * seats' gap to their presidential margin as it does for the seats not up; null when there are
+   * none or no chamber supplies a gap (the State TPL then keeps them at the presidential margin).
+   */
+  unopposed: NotUpPool | null;
 }
 
 export interface ChamberMarginYear {
@@ -128,6 +138,7 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
   const details: ChamberMarginDetail[] = [];
   const gaps = new Map<Chamber, NotUpPool["gap"]>();
   const notUpRowsBy = new Map<Chamber, { margin: number; presTotal: number }[]>();
+  const imputedRowsBy = new Map<Chamber, { margin: number; presTotal: number }[]>();
   for (const chamber of ["house", "senate"] as Chamber[]) {
     const block = chambers[chamber];
     if (!block) continue;
@@ -135,7 +146,16 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
     const era = String(stateLegHistoricalMaps[abbr]?.[chamber]?.[yearKey] ?? "current");
     const presEra = stateLegPresByEra[abbr]?.[chamber]?.[era] ?? {};
     const presIndex = indexByNormalizedKey(presEra);
-    const available = PRES_YEARS.filter((y) => Object.values(presEra).some((d) => d[String(y) as "2016" | "2020" | "2024"]));
+    // The current map's precinct-built 2024 figures, for a district the era table has no 2024 for.
+    const pres24Index = era === "current" ? indexByNormalizedKey(stateLegPres2024[abbr]?.[chamber] ?? {}) : null;
+    const pres24Of = (key: string): PresByEraVote | undefined => {
+      const p = pres24Index ? lookupByDistrictCode(pres24Index, abbr, chamber, key) : undefined;
+      if (!p || !p.totalVotes || p.demVotes == null || p.repVotes == null) return undefined;
+      return { demVotes: p.demVotes, repVotes: p.repVotes, othVotes: p.totalVotes - p.demVotes - p.repVotes, totalVotes: p.totalVotes, demPct: p.demPct, repPct: p.repPct, margin: ((p.repVotes - p.demVotes) / p.totalVotes) * 100 };
+    };
+    const presOf = (d: (typeof presEra)[string] | undefined, key: string, y: "2016" | "2020" | "2024"): PresByEraVote | undefined =>
+      d?.[y] ?? (y === "2024" ? pres24Of(key) : undefined);
+    const available = PRES_YEARS.filter((y) => Object.entries(presEra).some(([key, d]) => presOf(d, key, String(y) as "2016" | "2020" | "2024")));
     const srcYear = nearestPresYear(year, available);
     const srcKey = srcYear == null ? null : (String(srcYear) as "2016" | "2020" | "2024");
 
@@ -150,7 +170,7 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
         rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0;
         continue;
       }
-      const pres = srcKey ? lookupByDistrictCode(presIndex, abbr, chamber, key)?.[srcKey] : undefined;
+      const pres = srcKey ? presOf(lookupByDistrictCode(presIndex, abbr, chamber, key), key, srcKey) : undefined;
       const contested = !r.noCount && (r.demVotes ?? 0) > 0 && (r.repVotes ?? 0) > 0 && (r.totalVotes ?? 0) > 0;
       if (!r.noCount) { rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0; }
       if (!pres) unmatched += 1;
@@ -174,7 +194,7 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
     let unreported = 0;
     for (const [key, d] of Object.entries(presEra)) {
       if (NO_ABSENT || d.overlayOf || lookupByDistrictCode(resultIndex, abbr, chamber, key)) continue;
-      const pres = srcKey ? d[srcKey] : undefined;
+      const pres = srcKey ? presOf(d, key, srcKey) : undefined;
       const lastElection = era === "current" ? lookupByDistrictCode(seatIndex, abbr, chamber, key)?.lastElection : undefined;
       const wasUp = !staggered || lastElection === year;
       if (wasUp && unmatched > 0) continue; // most likely the unmatched row itself, already counted
@@ -200,22 +220,35 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
         presMarginClamped: 0,
         gap: null,
       },
+      unopposed: null,
     });
     gaps.set(chamber, gapSeats.length >= MIN_GAP_SEATS ? fitGap(gapSeats) : null);
     notUpRowsBy.set(chamber, notUpRows);
+    imputedRowsBy.set(chamber, imputedRows);
   }
   if (details.length === 0) return null;
   // The not-up seats' gap: their own chamber's contested seats, else the other chamber's that
   // year (a senate with fewer than MIN_GAP_SEATS contested), else none and the pool is dropped.
   // The clamp holds each seat's presidential margin inside the range the gap was fitted on.
+  // The unopposed seats get the same gap from the same place (2026-11-19).
   for (const d of details) {
-    if (!d.notUp) continue;
     const gap = gaps.get(d.chamber) ?? [...gaps.values()].find((g) => g != null) ?? null;
-    if (!gap) { d.notUp = null; continue; }
-    const rows = notUpRowsBy.get(d.chamber)!;
-    const tot = rows.reduce((a, r) => a + r.presTotal, 0);
-    d.notUp.presMarginClamped = rows.reduce((a, r) => a + Math.min(gap.max, Math.max(gap.min, r.margin)) * r.presTotal, 0) / tot;
-    d.notUp.gap = { ...gap, from: gaps.get(d.chamber) ? "own" : "other" };
+    const from = gaps.get(d.chamber) ? "own" as const : "other" as const;
+    const clamped = (rows: { margin: number; presTotal: number }[], tot: number) =>
+      rows.reduce((a, r) => a + Math.min(gap!.max, Math.max(gap!.min, r.margin)) * r.presTotal, 0) / tot;
+    if (d.notUp) {
+      if (!gap) d.notUp = null;
+      else {
+        const rows = notUpRowsBy.get(d.chamber)!;
+        d.notUp.presMarginClamped = clamped(rows, rows.reduce((a, r) => a + r.presTotal, 0));
+        d.notUp.gap = { ...gap, from };
+      }
+    }
+    const imputedRows = imputedRowsBy.get(d.chamber)!;
+    const tot = imputedRows.reduce((a, r) => a + r.presTotal, 0);
+    if (gap && tot > 0 && d.imputed.margin != null) {
+      d.unopposed = { districts: imputedRows.length, weight: d.imputed.weight, presMargin: d.imputed.margin, presMarginClamped: clamped(imputedRows, tot), gap: { ...gap, from } };
+    }
   }
   const contested = details.map((d) => d.contested).reduce(combine);
   const imputedBase = details.map((d) => d.imputed).reduce(combine);

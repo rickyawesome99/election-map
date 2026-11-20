@@ -55,27 +55,6 @@ export function Segmented<T extends string>({ options, value, onChange, label }:
   );
 }
 
-/** The row of figures under a hero: value over an uppercase label, separated by rules. */
-export function StatRow({ items }: { items: { value: ReactNode; label: ReactNode; color?: string; onClick?: () => void; title?: string; href?: string }[] }) {
-  return (
-    <div className="mt-6 flex flex-wrap gap-x-7 gap-y-4 pt-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-      {items.map((it, i) => {
-        const value = (
-          <div className={`text-xl font-extrabold tabular-nums ${it.onClick || it.href ? "cursor-pointer underline decoration-dotted underline-offset-4" : ""}`} style={{ color: it.color ?? "var(--app-text-primary)" }} title={it.title}>
-            {it.value}
-          </div>
-        );
-        return (
-          <div key={i} className={i < items.length - 1 ? "pr-7" : ""} style={i < items.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
-            {it.href ? <Link href={it.href}>{value}</Link> : it.onClick ? <button type="button" onClick={it.onClick} className="text-left">{value}</button> : value}
-            <div className="mt-1 text-[11px] font-semibold uppercase tracking-wider" style={VERY_MUTED}>{it.label}</div>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
 /** Wins Above Replacement, as a tinted chip. */
 export function WarChip({ war, size = "xs" }: { war: number | null | undefined; size?: "xs" | "sm" }) {
   if (war == null) return null;
@@ -90,13 +69,14 @@ export function WarChip({ war, size = "xs" }: { war: number | null | undefined; 
 }
 
 /** A candidate name that opens their record in the candidates view. */
-export function CandidateLink({ name, label, state, party, war, className = "" }: { name: string | undefined; /** Shown in place of the name (e.g. the surname); the full name goes in the tooltip. */ label?: string; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; className?: string }) {
+export function CandidateLink({ name, label, state, party, war, tint, className = "" }: { name: string | undefined; /** Shown in place of the name (e.g. the surname); the full name goes in the tooltip. */ label?: string; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; /** Color the name by party instead of a D/R letter after it. */ tint?: boolean; className?: string }) {
   if (!name) return <span style={VERY_MUTED}>—</span>;
   const p = party === "D" || party === "R" ? party : party ? "I" : undefined;
+  const color = p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : p ? "var(--party-ind)" : undefined;
   return (
     <span className={`inline-flex flex-wrap items-center gap-1.5 ${className}`}>
-      <Link href={`/model/candidates?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={label ? name : undefined}>{label ?? name}</Link>
-      {p && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
+      <Link href={`/model/candidates?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: tint && color ? `color-mix(in srgb, ${color} 40%, transparent)` : "var(--app-border)", color: tint ? color : undefined }} title={label ? name : undefined}>{label ?? name}</Link>
+      {p && !tint && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
       <WarChip war={war} />
     </span>
   );
@@ -114,9 +94,9 @@ export function Foot({ children }: { children: ReactNode }) {
 }
 
 /** The thin secondary rule head used inside a section. */
-export function SubHead({ label, meta, right }: { label: ReactNode; meta?: ReactNode; right?: ReactNode }) {
+export function SubHead({ label, meta, right, strong, top = "mt-5" }: { label: ReactNode; meta?: ReactNode; right?: ReactNode; /** The thick dark rule of a section head, for a table that has no rule of its own on top. */ strong?: boolean; /** Space above, as a margin class. */ top?: string }) {
   return (
-    <div className="mt-5 mb-2 flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
+    <div className={`${top} mb-2 flex flex-wrap items-baseline gap-x-3 gap-y-1 pb-2`} style={{ borderBottom: strong ? "2px solid var(--app-text-primary)" : "1px solid var(--app-border)" }}>
       <h3 className="text-[11px] font-bold uppercase tracking-wider" style={MUTED}>{label}</h3>
       {meta && <span className="text-xs" style={VERY_MUTED}>{meta}</span>}
       {right && <span className="ml-auto flex items-center gap-2">{right}</span>}
@@ -138,4 +118,19 @@ export function AllRacesButton({ count, hidden, onToggle }: { count: number; hid
       {hidden ? `Show all ${count} races` : "Hide races"}
     </button>
   );
+}
+
+/** One labeled figure in a hero's facts line: a small label beside its value. */
+export function Fact({ label, title, children }: { label: string; title?: string; children: ReactNode }) {
+  return (
+    <div className="flex items-baseline gap-2" title={title}>
+      <dt className="text-[11px] font-semibold uppercase tracking-wider" style={VERY_MUTED}>{label}</dt>
+      <dd className="tabular-nums" style={{ color: "var(--app-text-primary)" }}>{children}</dd>
+    </div>
+  );
+}
+
+/** A facts-line figure in the serif display face, as the TPL figure above it. "sm" for the district hero. */
+export function Fig({ color, size = "md", children }: { color?: string; size?: "md" | "sm"; children: ReactNode }) {
+  return <span className={`${size === "sm" ? "text-base" : "text-xl"} font-bold tabular-nums`} style={{ fontFamily: "var(--font-serif)", color }}>{children}</span>;
 }

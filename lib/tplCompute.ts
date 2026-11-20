@@ -34,7 +34,7 @@ import { racePolls } from "@/data/racePolls";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { forecastNow } from "@/lib/forecastClock";
 import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/raceEligibility";
-import { getChamberMargins, legislatureRowPool, type NotUpMode } from "@/lib/chamberMargins";
+import { getChamberMargins, legislatureRowPool, unopposedPresPool, type NotUpMode, type UnopposedMode } from "@/lib/chamberMargins";
 import type { ChamberMarginYear } from "@/lib/stateLegChamberMargin";
 import { tplInputs2026, TPL_2026, type Tpl2026Race } from "@/lib/tpl2026Inputs";
 
@@ -61,6 +61,8 @@ export interface RaceStub {
    * uncontested districts on the lines they were run on (lib/stateLegChamberMargin.ts).
    */
   presetImputation?: { margin: number; year: number; desc: string; totalVotes?: number };
+  /** The State Legislature row's makeup: seats counted as contested, and seats estimated (unopposed; not up). */
+  legPools?: { contested: number; unopposed: number; notUp: number };
 }
 
 // ── Computed race types ───────────────────────────────────────────────────────
@@ -141,6 +143,14 @@ export const IMPUTED_LEG_ROW_WEIGHT = 1;
 // 2026-10-19. TPL_LEG_NOT_UP=off|flat|slope and TPL_LEG_NOT_UP_K override them for the harnesses.
 export const LEG_NOT_UP_MODE: NotUpMode = "slope";
 export const LEG_NOT_UP_SLOPE_K = 10;
+// The unopposed seats join the same row the same way: presidential margin plus the contested
+// seats' gap (user decision 2026-11-19). Until then they were a separate row at the presidential
+// margin alone, which left out the down-ballot gap the not-up seats were given. A chamber with no
+// gap to use (fewer than five contested seats in either chamber) keeps the old treatment, as the
+// "State Legislature (unopposed seats)" row. TPL_LEG_UNOPPOSED=pres|gap overrides for the harnesses.
+export const LEG_UNOPPOSED_MODE: UnopposedMode = "gap";
+const legUnopposedMode = (process.env.TPL_LEG_UNOPPOSED as UnopposedMode | undefined) ?? LEG_UNOPPOSED_MODE;
+const legRowPool = (cm: ChamberMarginYear) => legislatureRowPool(cm, legNotUpMode, legNotUpK, legUnopposedMode);
 const legNotUpMode = (process.env.TPL_LEG_NOT_UP as NotUpMode | undefined) ?? LEG_NOT_UP_MODE;
 const legNotUpK = process.env.TPL_LEG_NOT_UP_K != null ? Number(process.env.TPL_LEG_NOT_UP_K) : LEG_NOT_UP_SLOPE_K;
 
@@ -320,6 +330,9 @@ export function raceTypeWeightsFor(year: number): Record<string, number> {
 // and coverage, so a delegation-wide result that contradicts the state's lean counts less
 // within its year and, through coverage, against the other years.
 
+// TPL_ROW_DISCOUNT=off restores the pre-2026-11-19 behaviour for the harnesses.
+const ROW_DISCOUNT_AS_TYPE_FACTOR = process.env.TPL_ROW_DISCOUNT !== "off";
+
 export function houseYearFactor(houseNM: number | null, houseAnchor: number | null | undefined): number {
   if (houseNM == null || houseAnchor == null) return 1;
   const resid = Math.abs(houseNM - houseAnchor);
@@ -330,16 +343,24 @@ function aggregateYears(races: ComputedRace[], houseAnchor?: number | null): { y
   const yearAggregations = G.YEARS.map((year) => {
     const yearRaces = races.filter((race) => race.year === year && race.NM != null);
     const typeNMs: Record<string, number | null> = {};
+    const typeDiscount: Record<string, number> = {};
     for (const type of ["P", "G", "S", "H", "L"]) {
       const typeRaces = yearRaces.filter((race) => race.raceType === type);
       const typeWeight = typeRaces.reduce((sum, race) => sum + race.aggWeight, 0);
       typeNMs[type] = typeWeight > 0
         ? typeRaces.reduce((sum, race) => sum + race.aggWeight * (race.NM ?? 0), 0) / typeWeight
         : null;
+      // What the rows' own discounts (Huber, the imputed half weight) average to, on the rows'
+      // turnout shares. A row's weight acts only against other rows of its office that year, and
+      // a state-year nearly always has ONE presidential, Senate, governor or legislature row, so
+      // until 2026-11-19 those discounts cancelled and an outlier or an imputed race entered at
+      // its office's full weight. They now scale the office's weight in the year as well.
+      const full = typeRaces.reduce((sum, race) => sum + (race.turnoutWeight ?? 1), 0);
+      typeDiscount[type] = full > 0 ? Math.min(1, typeWeight / full) : 1;
     }
     const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
     const typeFactors: Record<string, number> = {};
-    for (const type of racesPresent) typeFactors[type] = type === "H" ? houseYearFactor(typeNMs.H, houseAnchor) : 1;
+    for (const type of racesPresent) typeFactors[type] = type === "H" ? houseYearFactor(typeNMs.H, houseAnchor) : ROW_DISCOUNT_AS_TYPE_FACTOR ? typeDiscount[type] : 1;
     const W = raceTypeWeightsFor(year);
     const totalBase = racesPresent.reduce((sum, type) => sum + (W[type] ?? 0) * typeFactors[type], 0);
     const redistributedWeights: Record<string, number> = {};
@@ -431,16 +452,18 @@ export function getRawMargin(
   }
 
   if (race === "State Legislature") {
-    // The CONTESTED pool of the year's legislative districts — every seat where both major
-    // parties drew votes — as a share of the full total vote. The unopposed seats are the
-    // separate "State Legislature (unopposed seats)" row, imputed district by district from the
-    // presidential vote on the lines they were run on (lib/stateLegChamberMargin.ts). The old
-    // chamber aggregate (every counted district summed) survives there as `rawMargin`.
+    // The whole chamber: the contested pool (every seat where both major parties drew votes, as
+    // a share of the full total vote) plus the unopposed seats and a staggered chamber's seats not
+    // up, each estimated as its presidential margin on the lines it was run on plus the gap the
+    // contested seats ran from theirs (lib/chamberMargins.ts). Unopposed seats with no gap to use
+    // are the separate "State Legislature (unopposed seats)" row. The old chamber aggregate
+    // (every counted district summed) survives as `rawMargin`.
     const cm = chamberMarginsOf(stateAbbr)[year];
-    return cm ? legislatureRowPool(cm, legNotUpMode, legNotUpK).margin : null;
+    return cm ? legRowPool(cm).margin : null;
   }
   if (race === "State Legislature (unopposed seats)") {
-    return chamberMarginsOf(stateAbbr)[year]?.imputed.margin ?? null;
+    const cm = chamberMarginsOf(stateAbbr)[year];
+    return cm ? unopposedPresPool(cm, legUnopposedMode).margin : null;
   }
   if (race === "State Legislature (raw aggregate)") {
     return chamberMarginsOf(stateAbbr)[year]?.rawMargin ?? null;
@@ -596,10 +619,11 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
   const chamberMargins = chamberMarginsOf(stateAbbr);
   if (chamberMargins[TPL_2026] && !legYears.includes(TPL_2026)) legYears.push(TPL_2026);
 
-  // Two rows per year, sharing the L type weight on their turnout: the contested pool (an
-  // eligible row with its own margin) and the unopposed pool (an imputed row whose lean is the
-  // turnout-weighted presidential margin of the uncontested districts on the map they were run
-  // on, stripping the environment of that presidential year as an imputed House seat does).
+  // One row per year for the whole chamber (contested seats, plus the unopposed and not-up seats
+  // estimated from their presidential margin and the contested seats' gap). A second row appears
+  // only where unopposed seats have no gap to use: an imputed row at the turnout-weighted
+  // presidential margin of those districts, stripping the environment of that presidential year
+  // as an imputed House seat does; the two then share the L type weight on their turnout.
   // Ablation for the backtest and the change log: TPL_RAW_LEG=1 restores the pre-2026-10-10
   // single row per year carrying the raw chamber aggregate (every counted district summed).
   const rawLeg = process.env.TPL_RAW_LEG === "1";
@@ -615,17 +639,19 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
       continue;
     }
     if (cm.contested.margin != null) {
-      stubs.push({ ...makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref), totalVotes: legislatureRowPool(cm, legNotUpMode, legNotUpK).weight });
+      const row = legRowPool(cm);
+      stubs.push({ ...makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref), totalVotes: row.weight, legPools: { contested: cm.contested.districts, unopposed: row.unopposed, notUp: row.notUp } });
     }
-    if (cm.imputed.margin != null && cm.imputed.srcYear != null) {
+    const rest = unopposedPresPool(cm, legUnopposedMode);
+    if (rest.margin != null && rest.srcYear != null) {
       stubs.push({
         ...makeStub("State Legislature (unopposed seats)", "L", year, undefined, "-", historicalMargins, stateHref, "unopposed"),
-        totalVotes: cm.imputed.weight,
+        totalVotes: rest.weight,
         presetImputation: {
-          margin: cm.imputed.margin,
-          year: cm.imputed.srcYear,
-          desc: `presidential vote of the ${cm.imputed.districts} unopposed district${cm.imputed.districts === 1 ? "" : "s"} on the lines they were run on`,
-          totalVotes: cm.imputed.weight,
+          margin: rest.margin,
+          year: rest.srcYear,
+          desc: `presidential vote of the ${rest.districts} unopposed district${rest.districts === 1 ? "" : "s"} on the lines they were run on`,
+          totalVotes: rest.weight,
         },
       });
     }

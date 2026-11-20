@@ -60,30 +60,61 @@ export interface NotUpPool {
 }
 
 export type NotUpMode = "off" | "flat" | "slope";
+/** How the unopposed seats enter: "pres" = presidential margin alone (until 2026-11-19), "gap" = plus the contested seats' gap. */
+export type UnopposedMode = "pres" | "gap";
 
-/** The not-up seats of one chamber as a pool, or null when there are none to estimate. */
-export function notUpPool(d: ChamberMarginDetail, mode: NotUpMode, slopeK: number): ChamberPool | null {
-  const nu = d.notUp;
+function estimatedPool(nu: NotUpPool | null | undefined, mode: NotUpMode, slopeK: number): ChamberPool | null {
   if (mode === "off" || !nu?.gap) return null;
   const { a, b, n, center } = nu.gap;
   const slope = mode === "slope" ? (b * n) / (n + slopeK) : 0;
   return { margin: nu.presMargin + a + slope * (nu.presMarginClamped - center), weight: nu.weight, districts: nu.districts };
 }
 
+/** The not-up seats of one chamber as a pool, or null when there are none to estimate. */
+export function notUpPool(d: ChamberMarginDetail, mode: NotUpMode, slopeK: number): ChamberPool | null {
+  return estimatedPool(d.notUp, mode, slopeK);
+}
+
 /**
- * The State TPL's "State Legislature" row: the contested pool plus every staggered chamber's
- * estimated not-up seats, so the row measures the whole chamber rather than the seat class that
- * happened to be on the ballot. Both carry the year's own environment (the estimate is the
- * contested seats' gap carried onto the rest), which is why they share a row.
+ * The unopposed seats of one chamber as a pool estimated the same way (presidential margin plus
+ * the contested seats' gap), or null when there are none or no gap could be fitted. The gap's
+ * shape follows the not-up setting; with not-up estimation off it is the flat mean gap.
  */
-export function legislatureRowPool(cm: ChamberMarginYear, mode: NotUpMode, slopeK: number): ChamberPool {
+export function unopposedPool(d: ChamberMarginDetail, unopposed: UnopposedMode, mode: NotUpMode, slopeK: number): ChamberPool | null {
+  if (unopposed !== "gap") return null;
+  return estimatedPool(d.unopposed, mode === "off" ? "flat" : mode, slopeK);
+}
+
+/**
+ * The unopposed seats NOT estimated with a gap: every chamber's when the mode is "pres", else
+ * only a chamber's that has no gap to borrow (fewer than five contested seats in either chamber).
+ * They stay at the presidential margin and strip the source presidential year's environment.
+ */
+export function unopposedPresPool(cm: ChamberMarginYear, unopposed: UnopposedMode): ChamberPool & { srcYear: number | null } {
+  const rest = cm.chambers.filter((d) => d.imputed.weight > 0 && d.imputed.margin != null && !(unopposed === "gap" && d.unopposed?.gap));
+  const weight = rest.reduce((a, d) => a + d.imputed.weight, 0);
+  const srcYear = [...rest].sort((a, b) => b.imputed.weight - a.imputed.weight)[0]?.srcYear ?? null;
+  return { margin: weight > 0 ? rest.reduce((a, d) => a + d.imputed.margin! * d.imputed.weight, 0) / weight : null, weight, districts: rest.reduce((a, d) => a + d.imputed.districts, 0), srcYear };
+}
+
+/**
+ * The State TPL's "State Legislature" row: the contested pool plus the estimated seats — every
+ * staggered chamber's seats not up, and (2026-11-19) the unopposed seats — so the row measures the
+ * whole chamber rather than the seats that happened to draw two candidates. All three carry the
+ * year's own environment (an estimate is the contested seats' gap carried onto the seat's
+ * presidential margin), which is why they share a row.
+ */
+export function legislatureRowPool(cm: ChamberMarginYear, mode: NotUpMode, slopeK: number, unopposed: UnopposedMode = "gap"): ChamberPool & { notUp: number; unopposed: number } {
   let { margin, weight, districts } = cm.contested;
   let sum = (margin ?? 0) * weight;
-  for (const d of cm.chambers) {
-    const p = notUpPool(d, mode, slopeK);
-    if (!p || p.margin == null) continue;
-    sum += p.margin * p.weight; weight += p.weight; districts += p.districts;
+  const counts = { notUp: 0, unopposed: 0 };
+  // With no contested seats there is no row to join: the unopposed seats stay presidential.
+  for (const d of cm.contested.margin == null ? [] : cm.chambers) {
+    for (const [kind, p] of [["notUp", notUpPool(d, mode, slopeK)], ["unopposed", unopposedPool(d, unopposed, mode, slopeK)]] as const) {
+      if (!p || p.margin == null) continue;
+      sum += p.margin * p.weight; weight += p.weight; districts += p.districts; counts[kind] += p.districts;
+    }
   }
   margin = weight > 0 && (cm.contested.margin != null) ? sum / weight : cm.contested.margin;
-  return { margin, weight, districts };
+  return { margin, weight, districts, ...counts };
 }

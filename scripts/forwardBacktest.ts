@@ -700,6 +700,27 @@ if (CONDITIONAL) {
     });
     console.log(line + `| pooled ${(base / n).toFixed(2)} → ${(adj / n).toFixed(2)}`);
   }
+  // Proportional swing (tested 2026-11-20): a party having a bad year loses a share of its voters
+  // everywhere, so it loses more points where it has more of them. In margin terms the year's
+  // swing in a place is E − κ·|E|·lean/100 instead of a uniform E: κ = 1 is the pure theory (every
+  // lost voter switches sides), and it takes no fitted slope, so every year is out of sample.
+  // The environment is re-solved with the term in place.
+  console.log("\n── Proportional swing: lean × (1 − κ·|environment|/100) in place of lean, environment re-solved ──");
+  const solveProp = (ps: Pred[], kappa: number) => {
+    let env = solve(ps, {}).env, out = solve(ps, {});
+    for (let i = 0; i < 5; i += 1) { out = solve(ps.map((x) => ({ ...x, lean: x.lean * (1 - (kappa * Math.abs(env)) / 100) })), {}); env = out.env; }
+    return out;
+  };
+  const KAPPAS = [0, 0.5, 1, 1.5, 2, 3];
+  for (const office of OFFICES) {
+    const byYear = YEARS.map((Y) => ({ Y, ps: predsByYear.get(Y)!.filter((x) => x.office === office && x.pres != null) })).filter((g) => g.ps.length >= 8);
+    const n = byYear.reduce((a, g) => a + g.ps.length, 0);
+    console.log(`${LABEL[office].padEnd(9)} κ      ${byYear.map((g) => String(g.Y)).join("   ")}   pooled`);
+    for (const k of KAPPAS) {
+      const maes = byYear.map((g) => solveProp(g.ps, k).mae);
+      console.log(`          ${k.toFixed(1).padEnd(6)} ${maes.map((m) => m.toFixed(2)).join("   ")}   ${(maes.reduce((a, m, i) => a + m * byYear[i].ps.length, 0) / n).toFixed(2)}`);
+    }
+  }
   if (EMIT) {
     const file = path.join(process.cwd(), "data", "tplValidation.ts");
     const body = { generatedAt: new Date().toISOString().slice(0, 10), years: YEARS, rows, pooled };

@@ -120,7 +120,7 @@ function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: strin
     ffDetail: r.ffDetail, envPts: r.envPts, BS_pts: r.BS_pts ?? null, boundaryShift: r.boundaryShift ?? null,
     NM: r.NM, aggWeight: r.aggWeight, inAggregation: r.inAggregation,
     imputed: r.imputed, imputedSourceYear: r.imputedSourceYear, imputedSourceDesc: r.imputedSourceDesc, minValidYear: r.minValidYear,
-    detailHref: r.detailHref, pastHref: pastHrefOf(stateAbbr, r),
+    detailHref: r.detailHref, pastHref: pastHrefOf(stateAbbr, r), legPools: r.legPools,
     // Presidential WAR is a statewide number, so a district's presidential row shows the nominees without it.
     demWar: office && r.demCandidate ? warFor(stateAbbr, office, r.race, r.year, r.demCandidate) : null,
     repWar: office && r.repCandidate ? warFor(stateAbbr, office, r.race, r.year, r.repCandidate) : null,

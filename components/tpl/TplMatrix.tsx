@@ -8,7 +8,7 @@ import type { YearAggregation } from "./types";
 // of neutralized margins (tint deepens with size, full at 20 points), the breakdown of the
 // number above. Shares and cell notes live in the tooltip. Clicking a cell, a column head or
 // an office label selects which races the table beneath shows, and a chip above the grid
-// names it; the selected cells get a faint outline. Clicking the same thing again shows all races. Years
+// names it (MatrixStatus, placed in the section heading); the selected cells get a faint outline. Clicking the same thing again shows all races. Years
 // with no race are left out, so a state without off-year elections shows only its even cycles.
 // Phones get short office names, 'YY years and bare numbers (the tint carries the party).
 
@@ -30,6 +30,20 @@ function Margin({ v, bareOnPhone = true }: { v: number; bareOnPhone?: boolean })
   return <><span className="sm:hidden">{v === 0 ? "0" : Math.abs(v).toFixed(1)}</span><span className="hidden sm:inline">{fmt1(v)}</span></>;
 }
 
+/** What the matrix has selected, for the section heading: "All races", or a chip naming the
+ *  selection with an × back to all. Both are h-6, so the heading never changes height. */
+export function MatrixStatus({ selection, offices, onSelect }: { selection: MatrixSelection; offices: MatrixOffice[]; onSelect: (s: MatrixSelection) => void }) {
+  if (selection.year === "all" && selection.type === "all") return <span className="inline-flex h-6 items-center">All races</span>;
+  const officeLabel = (key: string) => offices.find((o) => o.key === key)?.label ?? key;
+  const chip = selection.year === "all" ? `All ${officeLabel(String(selection.type))} races` : selection.type === "all" ? `All ${selection.year} races` : `${selection.year} · ${officeLabel(selection.type)}`;
+  return (
+    <span className="inline-flex h-6 items-center gap-1.5 rounded-full pl-2.5 pr-1 text-xs font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
+      {chip}
+      <button type="button" onClick={() => onSelect(ALL)} aria-label="Show all races" className="grid h-5 w-5 place-items-center rounded-full text-sm leading-none hover:bg-[var(--app-border)]" style={{ color: "var(--app-text-muted)" }}>×</button>
+    </span>
+  );
+}
+
 const HIT = "block w-full rounded transition-colors hover:bg-[var(--app-tab-bg)]";
 
 export function TplMatrix({ years: allYears, offices, cellFor, selection, onSelect, weightLabel = "wt" }: {
@@ -48,8 +62,6 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
   const picked = (year: number, key: string) => !isAll && (selection.year === "all" || selection.year === year) && (selection.type === "all" || selection.type === key);
   const RING = "1.5px solid color-mix(in srgb, var(--app-text-primary) 55%, transparent)";
   const pick = (s: MatrixSelection) => onSelect(s.year === selection.year && s.type === selection.type ? ALL : s);
-  const officeLabel = (key: string) => offices.find((o) => o.key === key)?.label ?? key;
-  const chip = selection.year === "all" ? `All ${officeLabel(String(selection.type))} races` : selection.type === "all" ? `All ${selection.year} races` : `${selection.year} · ${officeLabel(selection.type)}`;
   // More than five columns: phones drop the R+/D+ on the WRS too.
   const crowded = years.length > 5;
   // Odd-year states (NJ, VA…) carry up to ten columns; the serif year totals step down so they don't collide.
@@ -57,14 +69,6 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
 
   return (
     <div>
-      <div className="mb-2 flex min-h-7 flex-wrap items-center gap-2 text-xs" style={{ color: "var(--app-text-muted)" }}>
-        {isAll ? <span>All races · click a cell, year or office to narrow the table below</span> : (
-          <span className="inline-flex items-center gap-1.5 rounded-full py-0.5 pl-2.5 pr-1 font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
-            {chip}
-            <button type="button" onClick={() => onSelect(ALL)} aria-label="Show all races" className="grid h-5 w-5 place-items-center rounded-full text-sm leading-none hover:bg-[var(--app-border)]" style={{ color: "var(--app-text-muted)" }}>×</button>
-          </span>
-        )}
-      </div>
       <table className="w-full table-fixed tabular-nums" style={{ borderCollapse: "separate", borderSpacing: 3 }}>
         <colgroup>
           <col className="w-[46px] sm:w-[104px]" />

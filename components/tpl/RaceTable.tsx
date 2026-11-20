@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { lastName } from "@/lib/personName";
+import { useTouchHover } from "@/lib/useTouchHover";
 import type { FormulaKey } from "./TplModals";
 import { fmt2, marginBg, marginColor, signed } from "./format";
 import type { TplRace } from "./types";
@@ -10,7 +11,7 @@ import { ArrowOut, CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
 
 // The per-race table under a matrix. One row per race with the two nominees,
 // the strips, the neutralized margin and the aggregation weight. Clicking a row opens its step-by-step calculation; the
-// links inside a row go where they say. Phones keep only Race, Raw, NM and Wt.
+// links inside a row go where they say. Phones keep only Race, Raw, NM and WT.
 
 // Nominees show by surname (full name on hover). Race and nominee cells wrap; the numbers stay on one line. From sm up the table is
 // fixed-layout with set column widths, so columns don't shift with name lengths.
@@ -32,14 +33,15 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
     </th>
   );
   const stop = (e: React.MouseEvent) => e.stopPropagation();
-  // When any row carries the imputed second line, the rest reserve its height (number centered
-  // in it) so rows match.
-  const anyImputed = races.some((r) => r.imputed);
+  // Every row reserves the height of an imputed row's second line (number centered in it), so rows
+  // are the same height in every view, with or without imputed races.
+  // A finger gets the same row tint as the mouse (data-touch, styled with :hover in globals.css).
+  useTouchHover();
   return (
     <div className="-mx-1 overflow-x-auto px-1">
       <table className="w-full border-collapse sm:min-w-[640px] sm:table-fixed text-xs">
         <thead>
-          <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
+          <tr style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
             <th className={`${TH} sm:w-[22%]`}>Race</th>
             <th className={`${TH} hidden sm:table-cell`}>Winner</th>
             <th className={`${TH} hidden sm:table-cell`}>Runner-up</th>
@@ -49,7 +51,7 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
             {variant === "district" && strip("BS", "BS", "Boundary shift")}
             {strip("ENV", "ENV", "Environment adjustment")}
             <th className={`${TH_R} sm:w-20`}><button type="button" onClick={() => onFormula("NM")} className="hover:underline" title="Neutralized margin">NM<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
-            <th className={`${TH_R} sm:w-12`} title="Weight in aggregation">Wt</th>
+            <th className={`${TH_R} sm:w-12`}><button type="button" onClick={() => onFormula("WT")} className="hover:underline" title="Weight in aggregation: how it is set for each office">WT<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
           </tr>
         </thead>
         <tbody>
@@ -66,20 +68,18 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
             const href = r.pastHref ?? r.detailHref;
             const num = (v: number | null, cls = "") => <td className={`${TD_R} ${cls}`} style={{ color: v ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{v ? signed(v) : "—"}</td>;
             return (
-              <tr key={`${r.raceType}-${r.year}-${r.race}-${i}`} onClick={() => onRow(r)} className="cursor-pointer" style={{ borderBottom: "1px solid var(--app-border)" }}
+              <tr key={`${r.raceType}-${r.year}-${r.race}-${i}`} onClick={() => onRow(r)} data-touch-hover className="tbl-tr cursor-pointer" style={{ borderBottom: "1px solid var(--app-border)" }}
                 title="Open this race's step-by-step calculation">
-                <td className={`${TD_WRAP} font-medium`}>
-                  <span className="mr-1.5 rounded px-1 py-px font-mono text-[9px] font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{r.raceType}</span>
-                  {showYear && <span className="mr-1.5" style={{ color: "var(--app-text-muted)" }}>{r.year} ·</span>}
+                <td className={`${TD_WRAP} font-semibold`}>
+                  {showYear && <span className="mr-1.5 font-normal" style={{ color: "var(--app-text-muted)" }}>{r.year}</span>}
                   {href ? <Link href={href} onClick={stop} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={r.pastHref ? "Full results for this election" : "Seat page"}>{label}</Link> : label}
                   {r.imputed && <span className="ml-1" style={VERY_MUTED} title="Imputed from the presidential baseline">⊘</span>}
                 </td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} label={winner.name && lastName(winner.name)} state={state} party={winner.party} /></td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} label={loser.name && lastName(loser.name)} state={state} party={loser.party} /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} label={winner.name && lastName(winner.name)} state={state} party={winner.party} tint /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} label={loser.name && lastName(loser.name)} state={state} party={loser.party} tint /></td>
                 <td className={TD_R} style={{ color: marginColor(r.rawMargin) }}>
                   {r.imputed ? <>{fmt2(r.rawMargin)}<span className="block text-[10px]" style={VERY_MUTED} title="Adjusted (imputed)">⊘ {fmt2(r.adjustedMargin)}</span></>
-                    : anyImputed ? <span className="flex min-h-8 items-center justify-end">{fmt2(r.rawMargin)}</span>
-                    : fmt2(r.rawMargin)}
+                    : <span className="flex min-h-8 items-center justify-end">{fmt2(r.rawMargin)}</span>}
                 </td>
                 {num(r.incumbencyPts, "hidden sm:table-cell")}
                 {num(r.FF_pts, "hidden sm:table-cell")}

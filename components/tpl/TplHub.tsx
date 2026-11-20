@@ -133,7 +133,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
                   <th className={TH_R}>{valueLabel}</th>
                   <th className={TH_R}>Centered</th>
                   {lens === "all" && <th className={TH_R} title="The lean now minus the lean as it stood after the 2024 election, both under today's model: what 2025 and 2026 added, with the national environment removed.">Since 2024</th>}
-                  {geo === "states" && <><th className={TH_R} title="Trend: how much further the state moved than the country between the 2020 and 2024 presidential elections. Shown beside TPL, not part of it.">Trend</th><th className={TH_R} title={lens === "all" ? "Races in the state's TPL aggregation" : `Races in the state's ${lens} WRS`}>Races</th></>}
+                  {geo === "states" && <><th className={TH_R} title="Trend: the state's 2020 to 2024 presidential shift, minus the change in the national environment TPL removes (every state counting equally, not the popular vote). Shown beside TPL, not part of it.">Trend</th><th className={TH_R} title={lens === "all" ? "Races in the state's TPL aggregation" : `Races in the state's ${lens} WRS`}>Races</th></>}
                 </tr>
               </thead>
               <tbody>

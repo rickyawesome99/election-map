@@ -8,7 +8,9 @@
 // tracking harness (tplBacktest.ts) is the guard for the live pipeline; this file
 // is the guard for anything that needs "the model as of year Y".
 
-import { calculateStateModel, IMPUTED_HOUSE_ROW_WEIGHT } from "@/lib/tplCompute";
+import { calculateStateModel, IMPUTED_HOUSE_ROW_WEIGHT, IMPUTED_LEG_ROW_WEIGHT } from "@/lib/tplCompute";
+
+const ROW_DISCOUNT = process.env.TPL_ROW_DISCOUNT !== "off";
 import { TPL_GLOBAL_CONSTANTS as G, FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { statesData } from "@/data/statesData";
 
@@ -51,6 +53,9 @@ export interface Theta {
   // E, d(type, year) = weighted mean of that office's residuals that year, shrunk n / (n + officeEnvK).
   // A row is then neutralised with E(year) + d(type, year). Absent = one blended E for every office.
   officeEnvK?: number;
+  // The rows' own discounts (Huber, imputed half weight) also scale their office's weight in the
+  // year (aggregateYears since 2026-11-19). Absent = they only act within the office, as before.
+  rowDiscount?: boolean;
 }
 
 // The pre-calibration baseline the coordinate search starts from (kept verbatim
@@ -77,6 +82,7 @@ export const LIVE: Theta = {
   typeW: { ...G.RACE_TYPE_WEIGHTS },
   typeWMid: { ...G.RACE_TYPE_WEIGHTS_MIDTERM },
   betaShrink: 0, // β = 1 in every state
+  rowDiscount: true,
 };
 
 // The constants the 2026 forecast was locked with (per-state elasticity, one weight set), for
@@ -236,7 +242,7 @@ export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): num
     const typeNMs: Partial<Record<string, number>> = {};
     const typeFactor: Record<string, number> = {};
     for (const type of TYPES) {
-      let num = 0, den = 0;
+      let num = 0, den = 0, full = 0;
       for (const r of rows.filter((x) => x.year === year && x.type === type)) {
         const envYear = r.imputed ? r.srcYear ?? r.year : r.year;
         // An imputed row is a presidential margin, so it carries the presidential office's environment.
@@ -245,13 +251,18 @@ export function stateTpl(t: Theta, fit: Fit, abbr: string, maxYear: number): num
           : r.value! + incPts(fit.inc, r.type, r.incumbent, r.incumbentAppointed) + ffPts(t, r.ffGapPct) - beta * (fit.E[year] ?? 0) - (fit.d[`${r.type}${year}`] ?? 0);
         const resid = lean != null ? nm - lean : 0;
         const huber = type === "H" ? 1 : Math.abs(resid) <= t.huberC ? 1 : t.huberC / Math.abs(resid);
-        const w = (r.imputed ? (type === "H" ? t.impWHouse : t.impW) : 1) * huber * (type === "H" ? r.turnoutWeight : 1);
-        num += w * nm; den += w;
+        // House and State Legislature rows are shares of the state's vote (turnout-weighted, an
+        // imputed one at its full share); the other offices' imputed rows enter at impW.
+        const share = type === "H" || type === "L" ? r.turnoutWeight : 1;
+        const w = (r.imputed ? (type === "H" ? t.impWHouse : type === "L" ? IMPUTED_LEG_ROW_WEIGHT : t.impW) : 1) * huber * share;
+        num += w * nm; den += w; full += share;
       }
       if (den > 0) {
         typeNMs[type] = num / den;
         const tr = type === "H" && lean != null ? Math.abs(typeNMs[type]! - lean) : 0;
-        typeFactor[type] = tr <= t.huberC ? 1 : t.huberC / tr;
+        // Every other office: the rows' own discounts scale the office's weight in the year
+        // (aggregateYears, 2026-11-19; TPL_ROW_DISCOUNT=off for the behaviour before).
+        typeFactor[type] = type === "H" ? (tr <= t.huberC ? 1 : t.huberC / tr) : t.rowDiscount && ROW_DISCOUNT ? Math.min(1, den / full) : 1;
       }
     }
     const present = TYPES.filter((x) => typeNMs[x] != null);

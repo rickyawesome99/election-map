@@ -24,7 +24,7 @@ export default function StateTplTrendSection({ abbr, tpl, yearAggregations, tren
       </div>
       {trend && (
         <p className="mb-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
-          Trend: <b style={{ color: leanColor(trend.last) }}>{fmtLean(trend.last)}</b> from 2020 to 2024, measured as the state&apos;s presidential shift beyond the country&apos;s
+          Trend: <b style={{ color: leanColor(trend.last) }}>{fmtLean(trend.last)}</b> from 2020 to 2024, measured as the state&apos;s presidential shift beyond the change in the national environment
           {trend.prior != null && <> (2016 to 2020: <b style={{ color: leanColor(trend.prior) }}>{fmtLean(trend.prior)}</b>)</>}.
           {" "}It says which way the state has been moving. It is shown beside the TPL and is not part of it.
         </p>
