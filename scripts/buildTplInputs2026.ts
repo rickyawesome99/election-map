@@ -74,11 +74,12 @@ let offNum = 0, offDen = 0;
 for (const r of house) {
   const d = districtPresidentialData[String(parseInt(r.race_id, 10))];
   if (!isContested(r) || !d) continue;
-  const two = num(r.dem_votes) + num(r.rep_votes);
-  offNum += (((num(r.rep_votes) - num(r.dem_votes)) / two) * 100 - d.pres24Margin) * two; offDen += two;
+  // Both sides as share of the total vote (pres24Margin is), weighted by the seat's total.
+  const t = Math.max(num(r.total_votes), num(r.dem_votes) + num(r.rep_votes));
+  offNum += (((num(r.rep_votes) - num(r.dem_votes)) / t) * 100 - d.pres24Margin) * t; offDen += t;
 }
 const offset = offDen > 0 ? offNum / offDen : 0;
-const medTurnout = new Map(statesData.map((s) => [s.abbr, median(house.filter((r) => r.state === s.abbr && isContested(r)).map((r) => num(r.dem_votes) + num(r.rep_votes)))]));
+const medTurnout = new Map(statesData.map((s) => [s.abbr, median(house.filter((r) => r.state === s.abbr && isContested(r)).map((r) => Math.max(num(r.total_votes), num(r.dem_votes) + num(r.rep_votes))))]));
 let rawD = 0, rawR = 0, rawT = 0, cD = 0, cR = 0, cT = 0, iD = 0, iR = 0, iT = 0, imputedSeats = 0;
 for (const r of house) {
   const pd = num(r.party_d_votes), pr = num(r.party_r_votes), total = num(r.total_votes);
@@ -89,14 +90,12 @@ for (const r of house) {
   imputedSeats += 1;
   const m = Math.max(-95, Math.min(95, d.pres24Margin + offset));
   const v = medTurnout.get(r.state) || total || 250000;
-  iD += (v * (1 - m / 100)) / 2; iR += (v * (1 + m / 100)) / 2; iT += v;
+  iD -= (v * m) / 200; iR += (v * m) / 200; iT += v; // D−R gap = m% of the filled seat's total
 }
 const pct = (d: number, r: number, t: number) => (t > 0 ? +(((r - d) / t) * 100).toFixed(2) : 0);
-// The imputed basis is scaled to percent of the total vote the way the 2016–2024 column in
-// data-entry/national_environment_history.csv is: the two-party imputed margin × the contested
-// seats' two-party share of their total.
-const twoPartyShare = cT > 0 ? (cD + cR) / cT : 1;
-const housePv = { raw: pct(rawD, rawR, rawT), contested: pct(cD, cR, cT), imputed: +((((iR - iD) / (iR + iD)) * 100) * twoPartyShare).toFixed(2), offset: +offset.toFixed(2), imputedSeats, seats: house.length };
+// Every basis is share of the total vote, like the 2016–2024 column in
+// data-entry/national_environment_history.csv (lib/genericBallotPopularVote.ts).
+const housePv = { raw: pct(rawD, rawR, rawT), contested: pct(cD, cR, cT), imputed: pct(iD, iR, iT), offset: +offset.toFixed(2), imputedSeats, seats: house.length };
 
 const out: Tpl2026Inputs = { generatedAt: new Date().toISOString(), asOf, races, legislature, housePv };
 const file = path.join(process.cwd(), "data", "generated", "tpl-inputs-2026.json");

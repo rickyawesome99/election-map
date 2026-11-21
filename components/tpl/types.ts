@@ -29,7 +29,12 @@ export type TplRace = {
   envPts: number | null;
   BS_pts: number | null;
   boundaryShift: number | null;
+  /** Neutral margin with the year's environment already removed (what the model aggregates). */
   NM: number | null;
+  /** NM before the environment is removed: NM + E(year). What the race table and the matrix show; the environment comes off once, on the year's total. */
+  preEnv: number | null;
+  /** Imputed rows only: E(year) − E(source year), which carries the stand-in presidential margin into the race year's environment. 0 otherwise. */
+  envCarry: number;
   aggWeight: number;
   inAggregation: boolean;
   imputed: boolean;
@@ -50,6 +55,25 @@ export type StateScore = { abbr: string; id: string; name: string; tpl: number; 
 export type DistrictScore = { id: string; code: string; state: string; stateName: string; tpl: number; since24: number | null; yearWrs: Record<number, number> };
 export type HubCandidate = { candidate: string; party: string; office: WarOffice; race: string; state: string; year: number; war: number };
 
+/** One year of the nation graded the way a state is: each office's neutralized margin (before the
+ *  environment is removed) averaged over the states that held it, each state counting by its
+ *  presidential turnout, then combined with the year's office weights. */
+export type NationalYear = {
+  year: number;
+  /** Office → the national neutralized margin and how many states it rests on. */
+  cells: Record<string, { nm: number; states: number }>;
+  /** Office → its share of the year's margin (office weights redistributed among the offices present). */
+  shares: Record<string, number>;
+  /** The year's national margin before the environment is removed. */
+  margin: number;
+  /** The model's fitted environment E(year). */
+  env: number;
+  /** National U.S. House vote with every seat contested (even years), the quantity that pins E = 0. */
+  housePv: number | null;
+  /** Normalized year weight (recency × coverage), as a state's years are weighted. */
+  weight: number;
+};
+
 export type ModelSummary = {
   states: StateScore[];
   medianStateTpl: number;
@@ -61,6 +85,9 @@ export type ModelSummary = {
   topWar: { year: number; rows: HubCandidate[] };
   racesScored: number;
   performances: number;
+  national: NationalYear[];
+  /** Σ weight × (margin − env): the nation's TPL under the state grading. */
+  nationalTpl: number;
 };
 
 /** A slimmed WAR row: what the candidates view and the state page's candidates section show. */
@@ -86,6 +113,8 @@ export type WarSlim = {
   pastHref?: string;
 };
 
+export type TplAsOf = { year: number; tpl: number; wrs: number; weight: number };
+
 export type StatePageData = {
   abbr: string;
   id: string;
@@ -98,6 +127,8 @@ export type StatePageData = {
   trend: LeanTrend | null;
   /** TPL now minus TPL as it stood after 2024 under today's model (leanAsOf), R-positive. */
   since24: number | null;
+  /** TPL as it stood after each weighted year under today's model (leanAsOf), oldest first, beside that year's WRS. */
+  tplOverTime: TplAsOf[];
   E: Record<number, number>;
   fitYears: number[];
   incumbentAdvantage: Record<string, number>;
@@ -125,6 +156,7 @@ export type DistrictPageData = {
   seatHref: string;
   races: TplRace[];
   yearAggregations: YearAggregation[];
+  tplOverTime: TplAsOf[];
 };
 
 export type { YearAggregation };

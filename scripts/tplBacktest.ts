@@ -53,6 +53,9 @@
 //   and districts absent from MEDSL/Louisiana results imputed as unopposed): P 2.24/2.21/2.53/1.93
 //   · S 4.91/4.75/4.74/4.95 · H 3.42/2.60/2.73/2.79 — flat within noise (L is 0.07 of a year);
 //   the estimator itself is tested in scripts/stateLegNotUpBacktest.ts.
+//   HUBER_C 7 → 15 (2026-11-20, user decision; see methodologyChangelog): P 2.19/2.18/2.48/1.93
+//   · S 4.99/4.84/4.84/4.95 · H 3.38/2.52/2.62/2.79 — President and House slightly better, Senate
+//   slightly worse, all inside 0.11.
 // The 0.10 tolerance catches any real formula change, which moves these by far more.
 
 import fs from "node:fs";
@@ -175,10 +178,10 @@ function buildRows(): StateRow[] {
 // ── default mode: holdout + ablation vs baselines ────────────────────────────
 
 const EXPECTED: Record<string, Record<string, number>> = {
-  // reference values (imputed House rows at full share, 2026-09-22, measured in-harness): target → predictor → MAE
-  p24: { nmHold: 2.24, adjHold: 2.21, rawHold: 2.53, pres2020: 1.93 },
-  s24: { nmHold: 4.91, adjHold: 4.75, rawHold: 4.74, pres2020: 4.95 },
-  h24: { nmHold: 3.42, adjHold: 2.60, rawHold: 2.73, pres2020: 2.79 },
+  // reference values (HUBER_C 15, 2026-11-20, measured in-harness): target → predictor → MAE
+  p24: { nmHold: 2.19, adjHold: 2.18, rawHold: 2.48, pres2020: 1.93 },
+  s24: { nmHold: 4.99, adjHold: 4.84, rawHold: 4.84, pres2020: 4.95 },
+  h24: { nmHold: 3.38, adjHold: 2.52, rawHold: 2.62, pres2020: 2.79 },
 };
 
 function runHoldout(): void {

@@ -2,18 +2,20 @@
 
 import type { ReactNode } from "react";
 import { useTouchHover } from "@/lib/useTouchHover";
-import { fmt2, marginColor } from "./format";
+import { fmt2, marginColor, signed } from "./format";
 import type { YearAggregation } from "./types";
 import { ArrowOut, M, VERY_MUTED } from "./ui";
 
 // The result ledger under a State or District TPL: one row per weighted year with a dot plot
-// after the year, then its weight, WRS and contribution, and the TPL total at the right.
+// after the year, then its weight, its margin, the year's environment, the WRS left once the
+// environment is removed (margin + ENV), set in the serif margin face as the row's headline
+// figure, and the TPL total at the right.
 
 const RTH = "whitespace-nowrap px-1 py-2 text-[10px] font-bold uppercase tracking-wider text-left sm:px-2";
 const RTD = "whitespace-nowrap px-1 py-1.5 tabular-nums sm:px-2";
 const RTD_R = `${RTD} text-right`;
 
-export function ResultTable({ years, tpl, label, centered, median, medianLabel, onWeight }: {
+export function ResultTable({ years, tpl, label, centered, median, medianLabel, onWeight, onEnv }: {
   /** The years with weight, newest first. */
   years: YearAggregation[];
   tpl: number;
@@ -23,13 +25,14 @@ export function ResultTable({ years, tpl, label, centered, median, medianLabel, 
   /** "50-state median", "435-district median". */
   medianLabel: string;
   onWeight: () => void;
+  onEnv: () => void;
 }) {
   useTouchHover();
   const maxWeight = Math.max(...years.map((y) => y.finalWeight), 0.0001);
   const plot = plotScale([0, tpl, ...years.map((y) => y.WRS)]);
   return (
     <>
-    {/* One row per year: a dot plot after the year, then weight, WRS and contribution. Each
+    {/* One row per year: a dot plot after the year, then weight, margin, environment and WRS. Each
         year's dot sits at its WRS on a shared D–R axis, sized by its weight; the vertical
         line is TPL, the weighted center of the dots. */}
     <div className="-mx-1 overflow-x-auto px-1">
@@ -44,14 +47,14 @@ export function ResultTable({ years, tpl, label, centered, median, medianLabel, 
                 ))}
               </div>
             </th>
-            <th className={`${RTH} text-right sm:w-[14%]`}><button type="button" onClick={onWeight} className="uppercase hover:underline" title="How year weights are set">Weight <ArrowOut /></button></th>
-            <th className={`${RTH} text-right sm:w-[14%]`}>WRS</th>
-            <th className={`${RTH} text-right sm:w-[14%]`}><span className="sm:hidden">Contrib.</span><span className="hidden sm:inline">Contribution</span></th>
+            <th className={`${RTH} text-right sm:w-[11%]`}><button type="button" onClick={onWeight} className="uppercase hover:underline" title="How year weights are set">Weight <ArrowOut /></button></th>
+            <th className={`${RTH} text-right sm:w-[11%]`} title="The year's weighted office average, before the environment is removed: the figure at the top of the matrix">Margin</th>
+            <th className={`${RTH} text-right sm:w-[11%]`}><button type="button" onClick={onEnv} className="uppercase hover:underline" title="The year's national environment, removed once from the year's margin">Env <ArrowOut /></button></th>
+            <th className={`${RTH} text-right sm:w-[13%]`} style={{ color: "var(--app-text-primary)" }} title="Weighted Race Score: margin + ENV">WRS</th>
           </tr>
         </thead>
         <tbody>
           {years.map((y) => {
-            const c = y.finalWeight * y.WRS;
             const r = 3.5 + 7.5 * Math.sqrt(y.finalWeight / maxWeight);
             return (
               <tr key={y.year} data-touch-hover className="tbl-tr" style={{ borderBottom: "1px solid var(--app-border)" }}>
@@ -63,8 +66,9 @@ export function ResultTable({ years, tpl, label, centered, median, medianLabel, 
                   </PlotTrack>
                 </td>
                 <td className={RTD_R}>{(y.finalWeight * 100).toFixed(0)}%</td>
-                <td className={RTD_R}><M v={y.WRS} /></td>
-                <td className={`${RTD_R} font-semibold`}><M v={c} /></td>
+                <td className={RTD_R}><M v={y.WRS + (y.env ?? 0)} /></td>
+                <td className={RTD_R} style={{ color: "var(--app-text-muted)" }}>{y.env ? signed(-y.env) : "—"}</td>
+                <td className={`${RTD_R} text-base font-bold sm:text-[1.2rem]`} style={{ fontFamily: "var(--font-serif)", color: marginColor(y.WRS) }}>{fmt2(y.WRS)}</td>
               </tr>
             );
           })}
@@ -78,7 +82,7 @@ export function ResultTable({ years, tpl, label, centered, median, medianLabel, 
                 <span className="absolute top-0 -translate-x-1/2 whitespace-nowrap text-[10px] font-bold uppercase tracking-wider" style={{ left: `${plot.x(tpl)}%`, color: marginColor(tpl) }}>▲ TPL</span>
               </div>
             </td>
-            <td colSpan={3} />
+            <td colSpan={4} />
           </tr>
         </tfoot>
       </table>

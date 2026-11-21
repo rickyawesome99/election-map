@@ -67,7 +67,7 @@ export type NationalEnvironmentYear = {
   approvalFinal: number | null;
   presidentParty: "D" | "R";
   housePv: number | null;        // actual national House popular-vote margin (official, % of total vote)
-  housePvImputed: number | null; // the same with every uncontested / same-party seat filled with the two-party vote a D-vs-R race there would have produced (lib/genericBallotPopularVote.ts, scaled to % of total) — the basis the generic ballot measures
+  housePvImputed: number | null; // the same with every uncontested / same-party seat filled with the vote a D-vs-R race there would have produced (lib/genericBallotPopularVote.ts, % of total vote) — the basis the generic ballot measures
   notes: string;
 };
 

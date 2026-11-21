@@ -1,6 +1,6 @@
 import "server-only";
 
-import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
+import { TPL_GLOBAL_CONSTANTS as G, SEAT_HUBER_C } from "@/data/tplModelData";
 import { electionYear } from "@/data/forecastData";
 import { stateLegResults } from "@/lib/locked2026StateLegResults";
 import { stateLegPresByEra } from "@/data/stateLegPresByEra";
@@ -40,7 +40,7 @@ import { raceMoneyTerm, type RaceMoneyTerm } from "@/lib/stateLegMoneyModel";
  *                districts like its margin (0 where the money is not on file).
  *   3. Lean      per year: P and L rows combined on TYPE_WEIGHTS (renormalised over the types
  *                present; the seat row's weight × RECENT_SEAT_BOOST in the latest year that has one),
- *                years on YEAR_WEIGHTS × coverage, two-pass Huber (HUBER_C) on seat rows.
+ *                years on YEAR_WEIGHTS × coverage, two-pass Huber (SEAT_HUBER_C) on seat rows.
  *   4. Forward   margin = lean + β* × E(2026) + INCUMBENCY_PTS × incumbent sign (the 2026 field's
  *                incumbent) + money; no Democrat or no Republican in the field decides the seat outright.
  *   4b. Money    clamp(MONEY_K × (scale × gap% − structural gap%), ±MONEY_CAP), gap% = (R − D) / (R + D)
@@ -553,7 +553,7 @@ export function projectDistrict(abbr: string, chamber: Chamber, district: StateL
   };
   let lean = computeLean();
   if (lean != null) {
-    for (const r of rows) if (r.kind === "L") { const res = Math.abs(r.NM - lean); r.huber = res <= G.HUBER_C ? 1 : G.HUBER_C / res; }
+    for (const r of rows) if (r.kind === "L") { const res = Math.abs(r.NM - lean); r.huber = res <= SEAT_HUBER_C ? 1 : SEAT_HUBER_C / res; }
     lean = computeLean();
   }
 

@@ -10,7 +10,8 @@ import type { TplRace } from "./types";
 import { ArrowOut, CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
 
 // The per-race table under a matrix. One row per race with the two nominees,
-// the strips, the neutralized margin and the aggregation weight. Clicking a row opens its step-by-step calculation; the
+// the strips, the neutralized margin (before the year's environment is removed: that comes off
+// once, on the year's total in the result table) and the aggregation weight. Clicking a row opens its step-by-step calculation; the
 // links inside a row go where they say. Phones keep only Race, Raw, NM and WT.
 
 // Nominees show by surname (full name on hover). Race and nominee cells wrap; the numbers stay on one line. From sm up the table is
@@ -49,7 +50,6 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
             {strip("IF", "IF", "Incumbency points")}
             {strip("FF", "FF", "Fundraising points")}
             {variant === "district" && strip("BS", "BS", "Boundary shift")}
-            {strip("ENV", "ENV", "Environment adjustment")}
             <th className={`${TH_R} sm:w-20`}><button type="button" onClick={() => onFormula("NM")} className="hover:underline" title="Neutralized margin">NM<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
             <th className={`${TH_R} sm:w-12`}><button type="button" onClick={() => onFormula("WT")} className="hover:underline" title="Weight in aggregation: how it is set for each office">WT<span className="hidden sm:inline"> <ArrowOut /></span></button></th>
           </tr>
@@ -75,17 +75,16 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
                   {href ? <Link href={href} onClick={stop} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }} title={r.pastHref ? "Full results for this election" : "Seat page"}>{label}</Link> : label}
                   {r.imputed && <span className="ml-1" style={VERY_MUTED} title="Imputed from the presidential baseline">⊘</span>}
                 </td>
-                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} label={winner.name && lastName(winner.name)} state={state} party={winner.party} tint /></td>
+                <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={winner.name} label={winner.name && lastName(winner.name)} state={state} party={winner.party} tint className="font-bold" /></td>
                 <td className={`${TD_WRAP} hidden sm:table-cell`} onClick={stop}><CandidateLink name={loser.name} label={loser.name && lastName(loser.name)} state={state} party={loser.party} tint /></td>
                 <td className={TD_R} style={{ color: marginColor(r.rawMargin) }}>
-                  {r.imputed ? <>{fmt2(r.rawMargin)}<span className="block text-[10px]" style={VERY_MUTED} title="Adjusted (imputed)">⊘ {fmt2(r.adjustedMargin)}</span></>
+                  {r.imputed ? <>{fmt2(r.rawMargin)}<span className="block text-[10px]" style={VERY_MUTED} title={r.envCarry ? `Adjusted (imputed): the ${r.imputedSourceYear} presidential margin carried into ${r.year}'s environment` : "Adjusted (imputed)"}>⊘ {fmt2(r.adjustedMargin == null ? null : r.adjustedMargin + r.envCarry)}</span></>
                     : <span className="flex min-h-8 items-center justify-end">{fmt2(r.rawMargin)}</span>}
                 </td>
                 {num(r.incumbencyPts, "hidden sm:table-cell")}
                 {num(r.FF_pts, "hidden sm:table-cell")}
                 {variant === "district" && num(r.raceType === "H" ? r.BS_pts : null, "hidden sm:table-cell")}
-                {num(r.envPts, "hidden sm:table-cell")}
-                <td className={`${TD_R} font-bold`}><span className="rounded px-1.5 py-0.5" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmt2(r.NM)}</span></td>
+                <td className={`${TD_R} font-bold`}><span className="rounded px-1.5 py-0.5" style={{ color: marginColor(r.preEnv), background: marginBg(r.preEnv) }}>{fmt2(r.preEnv)}</span></td>
                 <td className={`${TD_R}`} style={{ color: "var(--app-text-muted)" }}>{r.aggWeight.toFixed(2)}</td>
               </tr>
             );

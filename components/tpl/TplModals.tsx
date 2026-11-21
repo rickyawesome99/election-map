@@ -18,10 +18,11 @@ export const FORMULA_PANELS: Record<FormulaKey, FormulaPanel> = {
   Adjusted: {
     title: "Adjusted Margin",
     lede: "The race's actual margin, unless it wasn't a real Republican-vs-Democrat contest. Then the seat's nearest presidential result stands in for it.",
-    equation: "Adjusted = Raw                          eligible race\nAdjusted = nearest presidential margin   ⊘ ineligible race",
+    equation: "Adjusted = Raw                          eligible race\nAdjusted = nearest presidential margin   ⊘ ineligible race\n           + E(race year) − E(its year)",
     points: [
       { label: "Ineligible", text: "One major party had no nominee, or both finalists were from the same party (California and Washington top-two, Louisiana runoffs)." },
       { label: "Stand-in", text: "The seat's closest presidential result. For House races it comes from the same district lines." },
+      { label: "Its year", text: "A presidential margin from another year carries that year's national environment. It is moved into the race year's environment (the difference between the two years' E), so every row of a year sits in the same environment and it can be removed once, on the year's total." },
       { label: "Independents", text: "Bernie Sanders and Angus King count as Democrats. Other independents don't." },
       { label: "Afterwards", text: "Imputed rows skip the incumbency and fundraising adjustments and count half as much." },
     ],
@@ -50,14 +51,15 @@ export const FORMULA_PANELS: Record<FormulaKey, FormulaPanel> = {
   },
   ENV: {
     title: "Environment Adjustment (ENV)",
-    lede: "Some years are simply good for one party. ENV removes that year's national tilt, so races from 2018 and 2022 can be compared on equal terms.",
-    equation: "ENV = −E(year)      the same in every state",
+    lede: "Some years are simply good for one party. ENV removes that year's national tilt, so 2018 and 2022 can be compared on equal terms. It is taken off once, from the year's margin, not from each race.",
+    equation: "ENV = −E(year)      the same in every state\nWRS = year's margin + ENV",
     points: [
       { label: "E(year)", text: "How far the country leaned that year: positive for Republicans, negative for Democrats. One number per year, 2016–2026, odd years included." },
       { label: "How it's found", text: "Estimated alongside every state's lean from contested races, using how each state moved against its own past. Which seats happen to be up, uncontested races, and big swings in a few large states can't distort it, as they would the popular vote." },
       { label: "Zero", text: "E = 0 is a year in which the national House vote, with every seat contested, would be tied." },
       { label: "Sign", text: "Negative ENV takes out a Republican-leaning year; positive takes out a Democratic-leaning one." },
-      { label: "Imputed rows", text: "Use E from the presidential year the stand-in result came from." },
+      { label: "Where it shows", text: "The race table and the matrix show margins before the environment is removed. The result table lists each year's margin, its ENV and the WRS that is left." },
+      { label: "Imputed rows", text: "A stand-in presidential margin from another year is first moved into the race year's environment (see Adjusted), so the year's single ENV is right for it too." },
     ],
     note: "Until November 19, 2026 each state also had its own multiplier on E. It didn't predict which states swung more in 2026, so it was removed.",
   },
@@ -74,19 +76,19 @@ export const FORMULA_PANELS: Record<FormulaKey, FormulaPanel> = {
   },
   NM: {
     title: "Neutralized Margin (NM)",
-    lede: "The race with every distortion taken out: what a generic Republican would get against a generic Democrat here in a neutral year.",
-    equation: "NM = Adjusted + IF + FF + ENV\n     (+ BS for a district's House race)",
+    lede: "The race with the candidates' structural edges taken out: what a generic Republican would get against a generic Democrat here, in that year. The year's national environment is still in it and comes off afterwards, once, from the year's total.",
+    equation: "NM = Adjusted + IF + FF\n     (+ BS for a district's House race)",
     points: [
       { label: "Just addition", text: "Every adjustment is in points and applied once. Nothing is multiplied or counted twice." },
-      { label: "Imputed rows", text: "NM = imputed lean − E(source year), counted at half weight." },
+      { label: "Imputed rows", text: "NM = the stand-in presidential margin, moved into the race year's environment. A Senate or governor row counts half." },
       { label: "Candidates", text: "Not an adjustment. Unusually strong or weak candidates (Manchin, Scott, Hogan…) are downweighted when races are averaged, and what's left over becomes their WAR." },
     ],
   },
   WT: {
     title: "Weight (WT)",
     lede: "How much a race counts when the year's races are averaged. Most count 1. A race that sits far from the state's usual result counts less, and House districts count by how many people voted in them.",
-    equation: "President, Senate, Governor, Legislature\n  WT = outlier factor\nHouse district\n  WT = its votes ÷ average district's votes\n\noutlier factor   (gap = NM − state's lean)\n  1          gap within 7 pts\n  7 ÷ gap    gap larger than that",
-    example: "NM is 14 pts from the state's lean → 7 ÷ 14 = 0.50",
+    equation: "President, Senate, Governor, Legislature\n  WT = outlier factor\nHouse district\n  WT = its votes ÷ average district's votes\n\noutlier factor   (gap = NM + ENV − state's lean)\n  1          gap within 15 pts\n  15 ÷ gap   gap larger than that",
+    example: "30 pts from the state's lean → 15 ÷ 30 = 0.50",
     points: [
       { label: "Outliers", text: "A candidate who runs far from the state's usual result (Manchin, Scott, Hogan) would otherwise drag the lean. Their race counts less, smoothly and never down to zero, so the lean describes the state rather than one politician." },
       { label: "House", text: "No outlier factor on a single district: a lopsided district is still part of the state. Districts count by votes cast, so together they add up to the state's real House vote. The outlier check is made once, on the state's whole House result for the year." },
@@ -115,16 +117,16 @@ export const FORMULA_PANELS: Record<FormulaKey, FormulaPanel> = {
 export const GLOSSARY: { abbr: string; term: string; desc: string }[] = [
   { abbr: "TPL", term: "True Partisan Lean", desc: "The place's neutral partisan composition — what a generic R vs generic D race in a neutral year would produce. Recency-weighted average of WRS scores, 2016–2026, odd years included. A baseline, not a forecast." },
   { abbr: "Centered TPL", term: "Centered True Partisan Lean", desc: "TPL minus the median TPL of the 50 states (or 435 districts). How a place compares to the typical one, with systematic model bias removed." },
-  { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted + IF pts + FF pts + ENV pts (+ BS pts for a district's House race). Every strip is additive and applied exactly once." },
-  { abbr: "WRS", term: "Weighted Race Score", desc: "One year's TPL signal: the weighted average of NMs across all race types present that cycle." },
+  { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted + IF pts + FF pts (+ BS pts for a district's House race): the race with incumbency and money removed, still in its own year's environment. Every strip is additive and applied exactly once." },
+  { abbr: "WRS", term: "Weighted Race Score", desc: "One year's TPL signal: the year's margin (the weighted average of NMs across the race types present) plus ENV, which removes that year's national environment." },
   { abbr: "IF", term: "Incumbency Points", desc: "Additive, party-signed strip subtracted in the incumbent party's direction. Senate and Governor values are estimated inside the joint fit; House keeps a fixed 3." },
   { abbr: "FF", term: "Fundraising Points", desc: "Additive fundraising strip, −clamp(0.02 × money-gap%, ±2), where both candidates' receipts are known." },
-  { abbr: "ENV", term: "Environment Adjustment", desc: "−E(y): strips the fitted national environment from the margin, the same in every state. Negative when a Republican-leaning year is being removed." },
+  { abbr: "ENV", term: "Environment Adjustment", desc: "−E(y): strips the fitted national environment, the same in every state, once from each year's margin. Negative when a Republican-leaning year is being removed." },
   { abbr: "BS", term: "Boundary Shift", desc: "District TPL only: relocates a House race run on earlier lines onto today's." },
   { abbr: "E(y)", term: "Fitted National Environment", desc: "One number per year, estimated jointly with every state's lean from within-state changes. Positive = R-favored; zero is a tied national House vote with every seat contested." },
   { abbr: "Since 2024", term: "Change Since 2024", desc: "The lean now minus the lean as it stood after the 2024 election, both under today's model and today's fitted environment. It is what the 2025 and 2026 results added for this place, with the national environment removed." },
   { abbr: "Trend", term: "Trend", desc: "A place's presidential shift between the last two presidential elections, minus the change in the national environment over the same years. The environment is the one TPL removes, fitted with every state counting equally, so it is not the national popular vote. Shown beside TPL and never part of it: TPL says where a place stands, the trend which way it has been moving." },
-  { abbr: "⊘", term: "Imputed Race", desc: "An ineligible race (missing major-party nominee or same-party general): the margin is replaced by the seat's nearest presidential result and the row carries half weight." },
+  { abbr: "⊘", term: "Imputed Race", desc: "An ineligible race (missing major-party nominee or same-party general): the margin is replaced by the seat's nearest presidential result, moved into the race year's environment. A Senate or governor row carries half weight." },
   { abbr: "WAR", term: "Wins Above Replacement", desc: "How far a candidate's actual margin ran ahead of what a replacement-level nominee of their party would have managed against the same opponent, in points." },
   { abbr: "P G S H L", term: "Race Type Codes", desc: "P = President, G = Governor, S = U.S. Senate, H = U.S. House, L = State Legislature." },
 ];
@@ -192,7 +194,8 @@ export function AdjustedModal({ race, onClose }: { race: TplRace; onClose: () =>
     { label: "Stored margin (not used)", value: <span style={{ color: marginColor(race.rawMargin) }}>{fmt2(race.rawMargin)}</span>, note: "The as-reported result of the ineligible race — shown for reference only." },
     { label: "Why ineligible", value: ELIGIBILITY_LABELS[race.eligibility as keyof typeof ELIGIBILITY_LABELS] ?? "Ineligible race", note: "Without a genuine nominee from each major party, the margin is not an R-vs-D measurement." },
     { label: `Imputed from ${race.imputedSourceDesc ?? "presidential baseline"}${race.imputedSourceYear ? ` (${race.imputedSourceYear})` : ""}`, value: <span style={{ color: marginColor(race.adjustedMargin) }}>{fmt2(race.adjustedMargin)}</span>, note: race.raceType === "H" ? "Restricted to the district's current boundary vintage." : undefined },
-    { label: "Downstream treatment", value: "IF / FF skipped — NM = imputed lean · half weight in aggregation" },
+    ...(race.envCarry ? [{ label: `Moved into ${race.year}'s environment`, value: <span style={{ color: marginColor((race.adjustedMargin ?? 0) + race.envCarry) }}>{signed(race.envCarry)} → {fmt2((race.adjustedMargin ?? 0) + race.envCarry)}</span>, note: `E(${race.year}) − E(${race.imputedSourceYear}): the stand-in result sits in its own year's environment, so it is carried into this one before the year's environment is removed.` }] : []),
+    { label: "Downstream treatment", value: race.raceType === "H" || race.raceType === "L" ? "IF / FF skipped — NM = imputed margin · full share in aggregation" : "IF / FF skipped — NM = imputed margin · half weight in aggregation" },
   ];
   return (
     <ModalShell onClose={onClose} label="Adjusted margin" maxW="max-w-sm">
@@ -260,8 +263,8 @@ export function RaceCalcModal({ race, E, incumbentAdvantage, onClose, onFormula,
     : r.incumbent === "R" && r.rawMargin != null ? (r.rawMargin > 0 ? "R won" : "R lost")
     : r.incumbent === "D" && r.rawMargin != null ? (r.rawMargin < 0 ? "D won" : "D lost")
     : r.incumbent;
-  const envYear = r.imputed ? r.imputedSourceYear ?? r.year : r.year;
-  const e = E[envYear] ?? 0;
+  const e = E[r.year] ?? 0;
+  const adjusted = r.adjustedMargin == null ? null : r.adjustedMargin + r.envCarry;
   const cell = "px-1.5 py-2";
   const head = (label: string, formula?: FormulaKey, onClick?: () => void) => (
     <td className={`${cell} font-semibold ${formula || onClick ? "cursor-pointer select-none" : ""}`} style={{ color: "var(--app-text-primary)" }} onClick={formula ? () => onFormula(formula) : onClick}>
@@ -270,11 +273,10 @@ export function RaceCalcModal({ race, E, incumbentAdvantage, onClose, onFormula,
   );
   const rows: { head: ReactNode; detail: string; value: ReactNode }[] = [
     { head: head("Raw margin"), detail: r.legPools ? legPoolsText(r.legPools) : "repPct − demPct, live from site data", value: <b style={{ color: marginColor(r.rawMargin) }}>{fmt2(r.rawMargin)}</b> },
-    { head: head("Adjusted", undefined, r.imputed ? onAdjusted : undefined), detail: r.imputed ? `⊘ ${ELIGIBILITY_LABELS[r.eligibility as keyof typeof ELIGIBILITY_LABELS] ?? "Ineligible race"} — imputed from ${r.imputedSourceDesc} (${r.imputedSourceYear})` : "Unchanged — eligible race (both major parties on the ballot)", value: <b style={{ color: marginColor(r.adjustedMargin) }}>{fmt2(r.adjustedMargin)}</b> },
+    { head: head("Adjusted", undefined, r.imputed ? onAdjusted : undefined), detail: r.imputed ? `⊘ ${ELIGIBILITY_LABELS[r.eligibility as keyof typeof ELIGIBILITY_LABELS] ?? "Ineligible race"} — imputed from ${r.imputedSourceDesc} (${r.imputedSourceYear})${r.envCarry ? `, moved ${signed(r.envCarry)} into ${r.year}'s environment` : ""}` : "Unchanged — eligible race (both major parties on the ballot)", value: <b style={{ color: marginColor(adjusted) }}>{fmt2(adjusted)}</b> },
     { head: head("Incumbency", "IF"), detail: r.imputed ? "Imputed row — no incumbency to strip" : r.incumbent === "R" || r.incumbent === "D" ? `${r.incumbent} incumbent — ${(incumbentAdvantage[r.raceType] ?? 0).toFixed(1)} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}` : r.raceType === "P" ? "President — national approval effects live in E(y)" : r.raceType === "L" ? "Chamber aggregate — no single incumbent" : "Open seat — no adjustment", value: <b style={{ color: r.incumbencyPts ? marginColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>{r.incumbencyPts ? signed(r.incumbencyPts) : "—"}</b> },
     { head: head("Fundraising", "FF"), detail: r.ffDetail ? `R $${(r.ffDetail.rep / 1e6).toFixed(2)}M vs D $${(r.ffDetail.dem / 1e6).toFixed(2)}M raised` : "No receipts data (President, imputed, or unavailable)", value: <b style={{ color: r.FF_pts ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>{r.FF_pts ? signed(r.FF_pts) : "—"}</b> },
     ...(r.BS_pts != null && r.raceType === "H" ? [{ head: head("Boundary shift", "BS" as FormulaKey), detail: `Run on earlier lines that leaned ${fmt2(r.boundaryShift)} relative to today's · weight ${r.aggWeight.toFixed(2)}`, value: <b style={{ color: r.BS_pts ? marginColor(r.BS_pts) : "var(--app-text-very-muted)" }}>{r.BS_pts ? signed(r.BS_pts) : "—"}</b> }] : []),
-    { head: head("Environment", "ENV"), detail: `−E(${envYear}) ${e >= 0 ? "R" : "D"}+${Math.abs(e).toFixed(1)}${r.imputed ? " (source year)" : ""}`, value: <span className="font-mono" style={{ color: "var(--app-text-muted)" }}>{r.envPts ? signed(r.envPts) : "—"}</span> },
   ];
   return (
     <ModalShell onClose={onClose} label={`${r.race} ${r.year} calculation`} maxW="max-w-3xl">
@@ -288,7 +290,7 @@ export function RaceCalcModal({ race, E, incumbentAdvantage, onClose, onFormula,
           </div>
           <div className="text-right">
             <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>Neutralized margin</div>
-            <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.75rem", fontWeight: 700, color: marginColor(r.NM) }}>{fmt2(r.NM)}</div>
+            <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.75rem", fontWeight: 700, color: marginColor(r.preEnv) }}>{fmt2(r.preEnv)}</div>
           </div>
         </div>
         <div className="overflow-x-auto">
@@ -310,11 +312,14 @@ export function RaceCalcModal({ race, E, incumbentAdvantage, onClose, onFormula,
               ))}
               <tr style={{ borderTop: "2px solid var(--app-text-primary)" }}>
                 <td colSpan={2} className="px-1.5 py-2.5 font-bold" style={{ color: "var(--app-text-primary)" }}>Neutralized margin</td>
-                <td className="px-1.5 py-2.5 text-right font-bold tabular-nums" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmt2(r.NM)}</td>
+                <td className="px-1.5 py-2.5 text-right font-bold tabular-nums" style={{ color: marginColor(r.preEnv), background: marginBg(r.preEnv) }}>{fmt2(r.preEnv)}</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <p className="mt-3 text-[11px] leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+          {r.year}&apos;s national environment, <button type="button" onClick={() => onFormula("ENV")} className="underline decoration-dotted underline-offset-2">E({r.year})</button> = <b style={{ color: marginColor(e) }}>{fmt2(e)}</b>, is still in this margin. It is removed once, from the year&apos;s total, in the result table.
+        </p>
       </div>
     </ModalShell>
   );

@@ -139,6 +139,16 @@ function holdBackDrops(all: RacePrior[], raw: Map<number, Payload>): Map<number,
   return held;
 }
 
+/** Alaska ranked-choice races that went to a tabulation: the seat row carries the FINAL round (site rule), which
+ *  the feed never sends (it stays on first choices). dem / rep are the slots' final-round votes; exhausted ballots
+ *  drop out of the total. County rows stay first-choice: the Division prints no rounds by county.
+ *  Source: Division of Elections RCV Detailed Report, https://www.elections.alaska.gov/enr/26GENR/results/RCV-USRep.pdf
+ *  (unofficial, tabulated 2026-11-18; certification targeted 2026-11-25, recheck then). Senate and governor were
+ *  won on first choices, so they need no entry. */
+const RCV_FINAL_ROUND: Record<string, { dem: number; rep: number; candidates: string }> = {
+  "house|0201": { dem: 132961, rep: 140346, candidates: "Nick Begich III (Republican) 140346; Bill Hill (Nonpartisan) 132961" },
+};
+
 async function main() {
   const priors = Object.fromEntries(RESULTS_OFFICES.map((o) => [o, resultsPriors(o).races])) as Record<ResultsOffice, RacePrior[]>;
   const all = RESULTS_OFFICES.flatMap((o) => priors[o]);
@@ -180,6 +190,15 @@ async function main() {
       forecast_margin: round(prior.forecast.margin), forecast_rating: prior.forecast.rating, projected_margin: round(proj.margin), projected_sigma: round(proj.sigma), projected_total: proj.projectedTotal, projection_tier: proj.tier,
       county_votes: live?.counties ? countyVotes : "", candidates: live?.candidates.map((c) => `${c.name} (${c.party}) ${c.votes}`).join("; "), last_updated: live?.lastUpdated, fetched_at: live ? new Date(live.fetchedAt).toISOString() : "", source: prior.civicId && held.has(prior.civicId) ? "held" : "feed",
     });
+
+    const final = RCV_FINAL_ROUND[`${prior.office}|${prior.id}`];
+    if (final && live && live.total > 0) {
+      const total = final.dem + final.rep;
+      Object.assign(seats[seats.length - 1], {
+        dem_votes: final.dem, rep_votes: final.rep, other_votes: 0, total_votes: total, party_d_votes: final.dem, party_r_votes: final.rep,
+        margin: round(marginOf(final.dem, final.rep, total)), candidates: final.candidates, source: "rcv_final",
+      });
+    }
 
     const base = { office: prior.office, race_id: prior.id, label: prior.label, state: prior.state };
     const byFips = new Map(liveCounties.filter((c) => c.fips).map((c) => [c.fips!, c]));

@@ -14,7 +14,7 @@
 //   2. Lean                           year means by RACE_TYPE_WEIGHTS (renormalized over the
 //      types present), except that State House rows carry the state legislature model's seat
 //      weight (TYPE_WEIGHTS.L, × RECENT_SEAT_BOOST in the latest year with one) so the seat's own
-//      results pull the lean as they do there; years by YEAR_WEIGHTS, two-pass Huber (HUBER_C)
+//      results pull the lean as they do there; years by YEAR_WEIGHTS, two-pass Huber (SEAT_HUBER_C)
 //      on race residuals. No separate down-ballot term: the seat rows carry it.
 //   3. Environment                    + β* × E(2026), the live national environment estimate.
 //   4. Seat                           open seat → no incumbency term.
@@ -34,7 +34,7 @@
 //   Turnout                           2026 ballots per precinct = mean of its midterm turnout rates
 //      (ballots ÷ registered, on today's lines) × today's registration; each midterm alone gives the range.
 
-import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
+import { TPL_GLOBAL_CONSTANTS as G, SEAT_HUBER_C } from "@/data/tplModelData";
 import { getTplFit, getNationalEnvironment, winProbabilityD } from "@/lib/tplCompute";
 import { STATE_LEG_FORECAST_CONSTANTS as L } from "@/lib/stateLegForecast";
 import type { MoneyCalibration, OfficeKey, PrecinctDistrictData, YearResults } from "./types";
@@ -247,7 +247,7 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
   const lean0 = aggregate().lean;
   for (const r of rows) {
     const resid = r.NM - lean0;
-    r.huber = Math.abs(resid) <= G.HUBER_C ? 1 : G.HUBER_C / Math.abs(resid);
+    r.huber = Math.abs(resid) <= SEAT_HUBER_C ? 1 : SEAT_HUBER_C / Math.abs(resid);
   }
   const { lean, years: yearAggs } = aggregate();
   // each row's share of the lean = year weight × its type's share within the year × its share within the type
@@ -370,6 +370,6 @@ export function projectDistrict(data: PrecinctDistrictData): DistrictProjection 
     money, margin, sigma, pD, interval80: [margin - 1.28 * sigma, margin + 1.28 * sigma],
     baseline: { year: latestYear, sthouse: distLeg, top: distTop, topOffice, blend: distBlend },
     shift, turnout, precincts,
-    constants: { ...PROJECTION_CONSTANTS, HUBER_C: G.HUBER_C, SEAT_SIGMA: L.SIGMA, STATE_SHOCK: L.STATE_SHOCK, incumbencyPts: incH, MONEY_K: L.MONEY_K, MONEY_CAP: L.MONEY_CAP },
+    constants: { ...PROJECTION_CONSTANTS, HUBER_C: SEAT_HUBER_C, SEAT_SIGMA: L.SIGMA, STATE_SHOCK: L.STATE_SHOCK, incumbencyPts: incH, MONEY_K: L.MONEY_K, MONEY_CAP: L.MONEY_CAP },
   };
 }

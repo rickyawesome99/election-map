@@ -96,6 +96,8 @@ export interface YearAggregation {
   WRS: number;
   coverage: number;    // Σ base type weight × type factor of types present — scales the year weight
   finalWeight: number; // normalized share of TPL contributed by this year
+  /** E(year), set by lib/modelSlices.ts for display: the pages show a year's margins before the environment is removed (typeNMs + env, WRS + env) and remove it once, on the year's total. */
+  env?: number;
 }
 
 export interface StateModelCalculation {

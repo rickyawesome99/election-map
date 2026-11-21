@@ -13,7 +13,7 @@ export type NationalEnvironmentYear = {
   approvalFinal: number | null;
   presidentParty: "D" | "R";
   housePv: number | null;        // actual national House popular-vote margin (official, % of total vote)
-  housePvImputed: number | null; // the same with every uncontested / same-party seat filled with the two-party vote a D-vs-R race there would have produced (lib/genericBallotPopularVote.ts, scaled to % of total) — the basis the generic ballot measures
+  housePvImputed: number | null; // the same with every uncontested / same-party seat filled with the vote a D-vs-R race there would have produced (lib/genericBallotPopularVote.ts, % of total vote) — the basis the generic ballot measures
   notes: string;
 };
 
@@ -59,7 +59,7 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": -12.5,
     "presidentParty": "D",
     "housePv": 2.7,
-    "housePvImputed": 1.9,
+    "housePvImputed": 2,
     "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (65 pollsters) and election eve 2022-11-07 (75 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   },
   {
@@ -70,7 +70,7 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": -15.2,
     "presidentParty": "D",
     "housePv": 2.6,
-    "housePvImputed": 2.1,
+    "housePvImputed": 2.2,
     "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (53 pollsters) and election eve 2024-11-04 (58 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   }
 ];

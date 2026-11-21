@@ -27,7 +27,16 @@ and the code are right. Full reasoning and numbers: `data/methodologyChangelog.t
 - **Neutral point.** E = 0 is a tied national U.S. House vote with every seat contested
   (`TPL_NEUTRAL_ANCHOR = "house-vote"`): E is regressed on that vote over the even years and the
   intercept is subtracted from every E and added to every lean. Before, E = 0 was the average of
-  the model's years, so every lean moved when a wave year entered.
+  the model's years, so every lean moved when a wave year entered. The House vote fills each
+  uncontested / same-party seat with its presidential margin on its lines plus one national offset
+  (the contested seats' total-vote-weighted House − presidential gap), at the state's median
+  contested total vote. Every margin there is share of the TOTAL vote, like the presidential side
+  (since 2026-11-20; before, the House side was two-party and the national figure was rescaled).
+- **Outlier band.** `HUBER_C` = 15 since 2026-11-20 (7 before; user decision). With one national
+  environment for every state, a 7-point band also discounted states that swing more than the
+  nation in a wave, not only crossover candidates. The seat-level models (legislative districts,
+  precinct districts) keep 7 as `SEAT_HUBER_C`. Fitted incumbency rose with it (Senate 3.0 → 3.6,
+  Governor 3.7 → 5.0), since popular incumbents are no longer discounted when it is estimated.
 - **Years.** 2016–2026. 2026 enters through an overlay (`lib/tpl2026Inputs.ts`,
   `npm run tpl-inputs-2026`) until it is certified and merged into the historical CSVs. County TPL
   and the candidate table do not have 2026 rows yet.

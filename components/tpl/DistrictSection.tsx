@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { getRaceColor } from "@/lib/colorScale";
 import { RaceTable, TableCaption } from "./RaceTable";
 import { ResultTable } from "./ResultTable";
+import { TplOverTime } from "./TplOverTime";
 import { MatrixStatus, TplMatrix, type MatrixSelection } from "./TplMatrix";
 import type { FormulaKey } from "./TplModals";
 import { fmt1, marginColor, signed } from "./format";
@@ -42,7 +43,7 @@ export function DistrictDetail({ d, medianDistrictTpl, onRace, onFormula }: {
   d: DistrictPageData; medianDistrictTpl: number; onRace: (r: TplRace) => void; onFormula: (k: FormulaKey) => void;
 }) {
   const [sel, setSel] = useState<MatrixSelection>({ year: "all", type: "all" });
-  const [racesHidden, setRacesHidden] = useState(false);
+  const [racesHidden, setRacesHidden] = useState(true);
   // A different district resets the selection to every race.
   const [forId, setForId] = useState(d.id);
   if (forId !== d.id) { setForId(d.id); setSel({ year: "all", type: "all" }); }
@@ -90,7 +91,7 @@ export function DistrictDetail({ d, medianDistrictTpl, onRace, onFormula }: {
           const nm = y.typeNMs[key];
           if (nm == null) return null;
           const bs = key === "H" ? bsByYear[y.year] : null;
-          return { nm, share: y.redistributedWeights[key] ?? 0, note: bs != null && bs !== 0 ? `BS ${signed(bs, 1)}` : undefined };
+          return { nm: nm + (y.env ?? 0), share: y.redistributedWeights[key] ?? 0, note: bs != null && bs !== 0 ? `BS ${signed(bs, 1)}` : undefined };
         }}
       />
 
@@ -101,9 +102,14 @@ export function DistrictDetail({ d, medianDistrictTpl, onRace, onFormula }: {
         <TableCaption>Click a row for the step-by-step calculation.</TableCaption>
       </>}
 
-      <SubHead top="mt-10" label="District result" meta="TPL = Σ weight × WRS"
+      <SubHead top="mt-10" label="District result" meta="WRS = margin + ENV · TPL = Σ weight × WRS"
         right={<Link href="/analysis/internal-methodology/district-tpl" className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }} prefetch={false}>How District TPL works <ArrowOut /></Link>} />
-      <ResultTable years={weighted} tpl={d.tpl} label={`${d.code} District TPL`} centered={centered} median={medianDistrictTpl} medianLabel="435-district median" onWeight={() => onFormula("YW")} />
+      <ResultTable years={weighted} tpl={d.tpl} label={`${d.code} District TPL`} centered={centered} median={medianDistrictTpl} medianLabel="435-district median" onWeight={() => onFormula("YW")} onEnv={() => onFormula("ENV")} />
+
+      {d.tplOverTime.length > 1 && <>
+        <SubHead top="mt-10" label="District TPL over time" meta="TPL as it stood after each election, under today's model" />
+        <TplOverTime points={d.tplOverTime} name={d.code} />
+      </>}
     </div>
   );
 }

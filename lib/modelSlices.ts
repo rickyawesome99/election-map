@@ -12,6 +12,7 @@ import "server-only";
 
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
+import { presPastResults } from "@/data/forecastData";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { stateLeanTrend, districtLeanTrend } from "@/lib/leanTrend";
 import { pastElectionHref, type PastElectionOffice } from "@/lib/pastElections";
@@ -21,13 +22,14 @@ import {
   computeWarTable,
   getTplFit,
   leanAsOf,
+  raceTypeWeightsFor,
   incumbentAdvantage,
   type ComputedRace,
   type YearAggregation,
   type WarRow,
 } from "@/lib/tplCompute";
 import type {
-  DistrictPageData, DistrictScore, HubCandidate, ModelSummary, StatePageData, StateScore, TplRace, WarSlim,
+  DistrictPageData, DistrictScore, HubCandidate, ModelSummary, NationalYear, StatePageData, TplAsOf, StateScore, TplRace, WarSlim,
 } from "@/components/tpl/types";
 
 export type { ModelSummary, StatePageData, DistrictPageData, WarSlim } from "@/components/tpl/types";
@@ -108,6 +110,13 @@ export function pastHrefOf(stateAbbr: string, r: ComputedRace): string | undefin
   }
 }
 
+// The pages show margins BEFORE the environment is removed and take it off once, on the year's
+// total. Every row of a year then carries the same E(year): an imputed row, whose stand-in
+// presidential margin comes from another year, is first carried into the race year's environment
+// (envCarry), which is the same arithmetic as stripping E(source year) from it directly.
+const envOf = (year: number) => getTplFit().E[year] ?? 0;
+const withEnv = (aggs: YearAggregation[]): YearAggregation[] => aggs.map((a) => ({ ...a, env: envOf(a.year) }));
+
 function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: string; rep?: string }): TplRace {
   // District presidential rows carry no nominee names; the state's row for that year does.
   const dem = r.demCandidate ?? presNames?.dem;
@@ -118,7 +127,7 @@ function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: strin
     demCandidate: dem, repCandidate: rep, demParty: r.demParty, repParty: r.repParty,
     rawMargin: r.rawMargin, adjustedMargin: r.adjustedMargin, incumbencyPts: r.incumbencyPts, FF_pts: r.FF_pts,
     ffDetail: r.ffDetail, envPts: r.envPts, BS_pts: r.BS_pts ?? null, boundaryShift: r.boundaryShift ?? null,
-    NM: r.NM, aggWeight: r.aggWeight, inAggregation: r.inAggregation,
+    NM: r.NM, preEnv: r.NM == null ? null : r.NM + envOf(r.year), envCarry: r.imputed && r.envPts != null ? r.envPts + envOf(r.year) : 0, aggWeight: r.aggWeight, inAggregation: r.inAggregation,
     imputed: r.imputed, imputedSourceYear: r.imputedSourceYear, imputedSourceDesc: r.imputedSourceDesc, minValidYear: r.minValidYear,
     detailHref: r.detailHref, pastHref: pastHrefOf(stateAbbr, r), legPools: r.legPools,
     // Presidential WAR is a statewide number, so a district's presidential row shows the nominees without it.
@@ -133,12 +142,59 @@ function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: strin
 const SINCE_YEAR = 2024;
 const since = (now: number, then: number | null) => (then == null ? null : now - then);
 
+// ── The nation, graded as a state ─────────────────────────────────────────────
+// A reference for reading the fitted environment: the same neutralized margins the states are
+// built from (incumbency and money removed, missing contests filled in), before any environment
+// is removed, averaged across the states that held each office. A state counts by its total
+// presidential vote in the nearest presidential year (ties to the later one), so every office uses
+// the same state sizes and an uncontested race's thin turnout cannot shrink a state. The offices
+// are then combined with the year's office weights, redistributed among the offices present,
+// and the years weighted by recency × coverage, exactly as a state's are.
+const OFFICES = ["P", "H", "S", "L", "G"];
+function stateSize(abbr: string, year: number): number {
+  const rows = (presPastResults[abbr] ?? []).filter((r) => (r.totalVotes ?? 0) > 0);
+  const nearest = rows.sort((a, b) => Math.abs(a.year - year) - Math.abs(b.year - year) || b.year - a.year)[0];
+  return nearest?.totalVotes ?? 0;
+}
+function nationalReference(stateAggs: Record<string, YearAggregation[]>): NationalYear[] {
+  const fit = getTplFit();
+  const housePv = new Map((fit.neutral?.points ?? []).map((p) => [p.year, p.housePv]));
+  const years: NationalYear[] = [];
+  for (const year of G.YEARS) {
+    const env = fit.E[year] ?? 0;
+    const cells: NationalYear["cells"] = {};
+    for (const type of OFFICES) {
+      let num = 0, den = 0, n = 0;
+      for (const [abbr, aggs] of Object.entries(stateAggs)) {
+        const nm = aggs.find((a) => a.year === year)?.typeNMs[type];
+        const size = stateSize(abbr, year);
+        if (nm == null || size <= 0) continue;
+        num += size * (nm + env); den += size; n += 1;
+      }
+      if (den > 0) cells[type] = { nm: num / den, states: n };
+    }
+    const present = OFFICES.filter((t) => cells[t]);
+    if (present.length === 0) continue;
+    const W = raceTypeWeightsFor(year);
+    const coverage = present.reduce((sum, t) => sum + (W[t] ?? 0), 0);
+    if (coverage <= 0) continue;
+    const shares = Object.fromEntries(present.map((t) => [t, (W[t] ?? 0) / coverage]));
+    const margin = present.reduce((sum, t) => sum + shares[t] * cells[t].nm, 0);
+    years.push({ year, cells, shares, margin, env, housePv: housePv.get(year) ?? null, weight: (G.YEAR_WEIGHTS[year] ?? 0) * coverage });
+  }
+  const total = years.reduce((sum, y) => sum + y.weight, 0);
+  for (const y of years) y.weight = total > 0 ? y.weight / total : 0;
+  return years;
+}
+
 let summaryCache: ModelSummary | null = null;
 export function buildModelSummary(): ModelSummary {
   if (summaryCache) return summaryCache;
   const fit = getTplFit();
+  const stateAggs: Record<string, YearAggregation[]> = {};
   const states: StateScore[] = statesData.map((s) => {
     const calc = calculateStateModel(s.abbr, s.name);
+    stateAggs[s.abbr] = calc.yearAggregations;
     return { abbr: s.abbr, id: s.id, name: s.name, tpl: calc.tpl, since24: since(calc.tpl, leanAsOf(calc.races, SINCE_YEAR, fit.lean[s.abbr])), yearWrs: yearWrsOf(calc.yearAggregations), trend: stateLeanTrend(s.abbr)?.last ?? null, races: calc.races.filter((r) => r.inAggregation).length, yearRaces: yearRacesOf(calc.races) };
   });
   const districts: DistrictScore[] = Object.entries(districtPresidentialData).map(([id, d]) => {
@@ -150,7 +206,10 @@ export function buildModelSummary(): ModelSummary {
   const latestYear = Math.max(...war.map((r) => r.year).filter((y) => y % 2 === 0));
   const latest = war.filter((r) => r.year === latestYear).sort((a, b) => b.war - a.war);
   const toHub = (r: WarSlim): HubCandidate => ({ candidate: r.candidate, party: r.party, office: r.office, race: r.race, state: r.state, year: r.year, war: r.war });
+  const national = nationalReference(stateAggs);
   summaryCache = {
+    national,
+    nationalTpl: national.reduce((sum, y) => sum + y.weight * (y.margin - y.env), 0),
     states,
     medianStateTpl: median(states.map((s) => s.tpl)),
     districts,
@@ -175,6 +234,17 @@ function districtsOf(abbr: string): StatePageData["districts"] {
     .sort((a, b) => a.num - b.num);
 }
 
+/** TPL as it stood after each weighted year under today's model, oldest first. Pass the state's fitted lean for a state. */
+function tplOverTime(calc: { races: Parameters<typeof leanAsOf>[0]; yearAggregations: YearAggregation[] }, houseAnchor?: number | null): TplAsOf[] {
+  return calc.yearAggregations
+    .filter((y) => y.finalWeight > 0)
+    .sort((a, b) => a.year - b.year)
+    .flatMap((y) => {
+      const asOf = leanAsOf(calc.races, y.year, houseAnchor);
+      return asOf == null ? [] : [{ year: y.year, tpl: asOf, wrs: y.WRS, weight: y.finalWeight }];
+    });
+}
+
 export function stateModelSlice(abbrRaw: string): StatePageData | null {
   const state = statesData.find((s) => s.abbr === abbrRaw.toUpperCase());
   if (!state) return null;
@@ -188,7 +258,8 @@ export function stateModelSlice(abbrRaw: string): StatePageData | null {
     trend: stateLeanTrend(state.abbr), since24: summary.states.find((s) => s.abbr === state.abbr)?.since24 ?? null, E: fit.E, fitYears: fit.years, incumbentAdvantage: incumbentAdvantage(),
     typeWeights: G.RACE_TYPE_WEIGHTS, typeWeightsMidterm: G.RACE_TYPE_WEIGHTS_MIDTERM, yearDecay: summary.yearDecay,
     races: calc.races.map((r) => toTplRace(state.abbr, r)),
-    yearAggregations: calc.yearAggregations,
+    yearAggregations: withEnv(calc.yearAggregations),
+    tplOverTime: tplOverTime(calc, fit.lean[state.abbr]),
     districts: districtsOf(state.abbr),
     statewideWar: warSlice().filter((r) => r.state === state.abbr && r.office !== "H").sort((a, b) => b.year - a.year || b.war - a.war),
   };
@@ -221,7 +292,7 @@ export function districtModelSlice(id: string): DistrictPageData | null {
     tpl: calc.tpl, stateTpl: stateCalc?.tpl ?? 0, trend: districtLeanTrend(id), since24: since(calc.tpl, leanAsOf(calc.races, SINCE_YEAR)), eraStart: calc.eraStart,
     incumbent: latestHouse ? { name: (latestHouse.rawMargin! > 0 ? latestHouse.repCandidate : latestHouse.demCandidate) ?? "", party: latestHouse.rawMargin! > 0 ? "R" : "D", since: latestHouse.year } : null,
     seatHref: `/house/${d.code.toLowerCase()}`,
-    races, yearAggregations: calc.yearAggregations,
+    races, yearAggregations: withEnv(calc.yearAggregations), tplOverTime: tplOverTime(calc),
   };
 }
 

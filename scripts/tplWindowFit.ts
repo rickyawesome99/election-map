@@ -62,7 +62,7 @@ export interface Theta {
 // from the 2026-09-07 run so its printed objective stays comparable).
 export const CURRENT: Theta = {
   lambda: 0.87,
-  huberC: G.HUBER_C,
+  huberC: 7, // the value until 2026-11-20; LIVE reads the current one
   impW: 0.5,
   impWHouse: IMPUTED_HOUSE_ROW_WEIGHT,
   betaShrink: 0.5, // the model's value until the elasticity was removed (2026-11-19); LIVE sets 0
@@ -79,6 +79,7 @@ export const LIVE: Theta = {
   // Decay per year of age. Was YEAR_WEIGHTS[2025] / YEAR_WEIGHTS[2024] = 1.333 (inverted) until 2026-11-19:
   // the tool's "live" constants weighted OLDER years more. See methodologyChangelog 2026-11-19.
   lambda: G.YEAR_WEIGHTS[2024] / G.YEAR_WEIGHTS[2025],
+  huberC: G.HUBER_C,
   typeW: { ...G.RACE_TYPE_WEIGHTS },
   typeWMid: { ...G.RACE_TYPE_WEIGHTS_MIDTERM },
   betaShrink: 0, // β = 1 in every state

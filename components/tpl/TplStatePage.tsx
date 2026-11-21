@@ -9,6 +9,7 @@ import { useStaticJson } from "@/lib/useStaticJson";
 import { DistrictDetail, DistrictTiles } from "./DistrictSection";
 import { RaceTable, TableCaption } from "./RaceTable";
 import { ResultTable } from "./ResultTable";
+import { TplOverTime } from "./TplOverTime";
 import { MatrixStatus, TplMatrix, type MatrixSelection } from "./TplMatrix";
 import { AdjustedModal, FormulaModal, GLOSSARY, RaceCalcModal, TrendModal, type FormulaKey } from "./TplModals";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
@@ -37,7 +38,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const years = data.yearAggregations;
   // Opens on every race, so nothing in the matrix is dimmed until the reader picks something.
   const [sel, setSel] = useState<MatrixSelection>({ year: "all", type: "all" });
-  const [racesHidden, setRacesHidden] = useState(false);
+  const [racesHidden, setRacesHidden] = useState(true);
   const [race, setRace] = useState<TplRace | null>(null);
   const [formula, setFormula] = useState<FormulaKey | null>(null);
   const [adjusted, setAdjusted] = useState(false);
@@ -74,8 +75,8 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const title = sel.type === "all" && sel.year === "all" ? "All races" : sel.type === "all" ? `All ${sel.year} races` : sel.year === "all" ? `All ${RACE_TYPE_LABELS[sel.type as keyof typeof RACE_TYPE_LABELS]} races` : `${sel.year} · ${RACE_TYPE_LABELS[sel.type as keyof typeof RACE_TYPE_LABELS]}`;
   const selYear = sel.year !== "all" ? years.find((y) => y.year === sel.year) : undefined;
   const meta = [`${rows.length} row${rows.length === 1 ? "" : "s"}`,
-    sel.type === "H" && selYear ? `averaged into ${fmt2(selYear.typeNMs.H)} with turnout × Huber weights` : null,
-    sel.type === "all" && selYear ? `WRS ${fmt2(selYear.WRS)}` : null].filter(Boolean).join(" · ");
+    sel.type === "H" && selYear && selYear.typeNMs.H != null ? `averaged into ${fmt2(selYear.typeNMs.H + (selYear.env ?? 0))} by votes cast` : null,
+    sel.type === "all" && selYear ? `margin ${fmt2(selYear.WRS + (selYear.env ?? 0))} · WRS ${fmt2(selYear.WRS)} after the environment` : null].filter(Boolean).join(" · ");
 
   const weighted = years.filter((y) => y.finalWeight > 0).sort((a, b) => b.year - a.year);
   const centered = data.tpl - data.medianStateTpl;
@@ -160,7 +161,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
               const nm = y.typeNMs[key];
               if (nm == null) return null;
               const f = y.typeFactors?.[key] ?? 1;
-              return { nm, share: y.redistributedWeights[key] ?? 0, note: f < 0.999 ? `×${f.toFixed(2)}` : undefined };
+              return { nm: nm + (y.env ?? 0), share: y.redistributedWeights[key] ?? 0, note: f < 0.999 ? `×${f.toFixed(2)}` : undefined };
             }}
           />
         </section>
@@ -177,10 +178,17 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
         </section>
 
         <section id="result" className="mt-10 scroll-mt-24">
-          <LedgerSectionHead label="State result" meta="TPL = Σ weight × WRS"
+          <LedgerSectionHead label="State result" meta="WRS = margin + ENV · TPL = Σ weight × WRS"
             right={<Link href="/analysis/internal-methodology/state-tpl" className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }} prefetch={false}>Full method <ArrowOut /></Link>} />
-          <ResultTable years={weighted} tpl={data.tpl} label={`${data.name} TPL`} centered={centered} median={data.medianStateTpl} medianLabel="50-state median" onWeight={() => setFormula("YW")} />
+          <ResultTable years={weighted} tpl={data.tpl} label={`${data.name} TPL`} centered={centered} median={data.medianStateTpl} medianLabel="50-state median" onWeight={() => setFormula("YW")} onEnv={() => setFormula("ENV")} />
         </section>
+
+        {data.tplOverTime.length > 1 && (
+          <section id="over-time" className="mt-10 scroll-mt-24">
+            <LedgerSectionHead label="TPL over time" meta="TPL as it stood after each election, under today's model" />
+            <TplOverTime points={data.tplOverTime} name={data.name} />
+          </section>
+        )}
 
         <section id="districts" className="mt-10 scroll-mt-24">
           <LedgerSectionHead label={`District TPL · ${data.name}'s ${data.districts.length} district${data.districts.length === 1 ? "" : "s"}`} meta={`2026 lines · 435-district median ${fmt1(data.medianDistrictTpl)} · pick a district`}

@@ -21,12 +21,15 @@ import { calculateStateTpl, effectiveEnvironment, envScaleFor, getEnvironmentMod
 //              seat contributes its whole vote to one party.
 //   contested  only seats where a Democrat faced a Republican. Drops unopposed seats and
 //              same-party finals (California / Washington top-two, Louisiana).
-//   imputed    the contested seats plus each dropped seat filled with the two-party vote a
-//              D-vs-R contest there would have produced: the district's presidential margin
-//              (on the lines the race was run on) plus that year's average gap between the
-//              contested seats' House margins and their presidential margins, at the median
-//              turnout of the state's contested seats.
-// All margins are two-party (R − D) ÷ (R + D), R-positive, like the rest of the site.
+//   imputed    the contested seats plus each dropped seat filled with the vote a D-vs-R
+//              contest there would have produced: the district's presidential margin (on the
+//              lines the race was run on) plus that year's average gap between the contested
+//              seats' House margins and their presidential margins, at the median total vote
+//              of the state's contested seats.
+// All margins here are SHARE OF THE TOTAL VOTE, (R − D) ÷ total, R-positive — the basis the
+// presidential margins in data/presByBoundaryVintage.ts and the official House popular vote are
+// on, so the seat gap compares like with like (until 2026-11-20 the House side was two-party and
+// the national result was rescaled to total afterwards).
 
 export type HouseVoteBasis = "raw" | "contested" | "imputed";
 export type SeatKind = "contested" | "unopposed-D" | "unopposed-R" | "same-party-D" | "same-party-R";
@@ -129,6 +132,10 @@ export function seatKind(r: { demName: string; repName: string; dem: number; rep
 }
 
 const twoParty = (d: number, r: number) => (r + d > 0 ? ((r - d) / (r + d)) * 100 : 0);
+/** (R − D) as a percent of the seat's total vote. */
+const ofTotal = (d: number, r: number, t: number) => (t > 0 ? ((r - d) / t) * 100 : 0);
+/** A seat's total vote, never below its two major candidates' (two 2016–24 rows record less). */
+const seatTotal = (r: Row) => Math.max(r.total, r.dem + r.rep);
 const r1 = (v: number) => Math.round(v * 10) / 10;
 const median = (a: number[]) => { const s = [...a].sort((p, q) => p - q); return s.length ? s[Math.floor(s.length / 2)] : 0; };
 
@@ -142,25 +149,27 @@ function presMarginOnLines(r: Row): number | null {
 function yearVote(rows: Row[], year: number): YearHouseVote {
   const yr = rows.filter((r) => r.year === year);
   const kinds = new Map(yr.map((r) => [r, seatKind(r)] as const));
-  // imputation offset: contested seats' House margin minus presidential margin, vote-weighted
+  // imputation offset: contested seats' House margin minus presidential margin, both as share of
+  // the total vote, weighted by the seat's total vote
   let num = 0, den = 0;
   for (const r of yr) {
     if (kinds.get(r) !== "contested") continue;
     const pm = presMarginOnLines(r);
     if (pm == null) continue;
-    num += (twoParty(r.dem, r.rep) - pm) * (r.dem + r.rep); den += r.dem + r.rep;
+    const t = seatTotal(r);
+    num += (ofTotal(r.dem, r.rep, t) - pm) * t; den += t;
   }
   const offset = den > 0 ? num / den : 0;
   const medianTurnout = new Map<string, number>();
-  for (const s of statesData) medianTurnout.set(s.abbr, median(yr.filter((r) => r.abbr === s.abbr && kinds.get(r) === "contested").map((r) => r.dem + r.rep)));
+  for (const s of statesData) medianTurnout.set(s.abbr, median(yr.filter((r) => r.abbr === s.abbr && kinds.get(r) === "contested").map(seatTotal)));
   const stateName = new Map(statesData.map((s) => [s.abbr, s.name]));
   const kindCount: YearHouseVote["kinds"] = { "unopposed-D": 0, "unopposed-R": 0, "same-party-D": 0, "same-party-R": 0 };
-  let ND = 0, NR = 0, CD = 0, CR = 0, ID = 0, IR = 0, imputedSeats = 0;
+  let ND = 0, NR = 0, NT = 0, CD = 0, CR = 0, CT = 0, ID = 0, IR = 0, IT = 0, imputedSeats = 0;
   const states: StateHouseVote[] = [];
   for (const s of statesData) {
     const sr = yr.filter((r) => r.abbr === s.abbr);
     if (!sr.length) continue;
-    let d = 0, rr = 0, cd = 0, cr = 0, id = 0, ir = 0, nc = 0;
+    let d = 0, rr = 0, t = 0, cd = 0, cr = 0, ct = 0, id = 0, ir = 0, it = 0, nc = 0;
     const dropped: DroppedSeat[] = [];
     for (const r of sr) {
       const k = kinds.get(r)!;
@@ -170,21 +179,25 @@ function yearVote(rows: Row[], year: number): YearHouseVote {
       const repTag = /\(([A-Z])\)\s*$/.exec(r.repName)?.[1], demTag = /\(([A-Z])\)\s*$/.exec(r.demName)?.[1];
       if (demTag == null) d += r.dem; else if (demTag === "R") rr += r.dem;
       if (repTag == null) rr += r.rep; else if (repTag === "D") d += r.rep;
-      if (k === "contested") { nc++; cd += r.dem; cr += r.rep; id += r.dem; ir += r.rep; continue; }
+      const st = seatTotal(r);
+      t += st;
+      if (k === "contested") { nc++; cd += r.dem; cr += r.rep; ct += st; id += r.dem; ir += r.rep; it += st; continue; }
       kindCount[k] += 1;
       dropped.push({ code: r.code, kind: k, votes: r.dem + r.rep });
       const pm = presMarginOnLines(r);
-      if (pm == null) { id += r.dem; ir += r.rep; continue; } // no presidential result on these lines: keep the recorded vote
+      if (pm == null) { id += r.dem; ir += r.rep; it += st; continue; } // no presidential result on these lines: keep the recorded vote
       imputedSeats++;
+      // A filled seat casts its state's median contested total; its D−R gap is m% of that. The
+      // third-party share rides inside the total, so R and D are split around it, not around v.
       const m = Math.max(-95, Math.min(95, pm + offset));
-      const v = medianTurnout.get(s.abbr) || r.dem + r.rep || 250000;
-      id += (v * (1 - m / 100)) / 2; ir += (v * (1 + m / 100)) / 2;
+      const v = medianTurnout.get(s.abbr) || st || 250000;
+      id -= (v * m) / 200; ir += (v * m) / 200; it += v;
     }
-    ND += d; NR += rr; CD += cd; CR += cr; ID += id; IR += ir;
-    states.push({ abbr: s.abbr, state: stateName.get(s.abbr) ?? s.abbr, seats: sr.length, contestedSeats: nc, raw: r1(twoParty(d, rr)), contested: nc ? r1(twoParty(cd, cr)) : null, imputed: r1(twoParty(id, ir)), dropped });
+    ND += d; NR += rr; NT += t; CD += cd; CR += cr; CT += ct; ID += id; IR += ir; IT += it;
+    states.push({ abbr: s.abbr, state: stateName.get(s.abbr) ?? s.abbr, seats: sr.length, contestedSeats: nc, raw: r1(ofTotal(d, rr, t)), contested: nc ? r1(ofTotal(cd, cr, ct)) : null, imputed: r1(ofTotal(id, ir, it)), dropped });
   }
   const h = nationalEnvironmentHistory.find((e) => e.year === year);
-  return { year, gbMidSept: h?.gbMidSept ?? null, gbFinal: h?.gbFinal ?? null, raw: r1(twoParty(ND, NR)), contested: r1(twoParty(CD, CR)), imputed: r1(twoParty(ID, IR)), seats: yr.length, kinds: kindCount, offset: r1(offset), imputedSeats, states };
+  return { year, gbMidSept: h?.gbMidSept ?? null, gbFinal: h?.gbFinal ?? null, raw: r1(ofTotal(ND, NR, NT)), contested: r1(ofTotal(CD, CR, CT)), imputed: r1(ofTotal(ID, IR, IT)), seats: yr.length, kinds: kindCount, offset: r1(offset), imputedSeats, states };
 }
 
 function projected2026(): StateProjected2026[] {

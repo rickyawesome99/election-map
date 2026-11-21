@@ -6,6 +6,7 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { marginToRating } from "@/lib/colorScale";
 import { OFFICE_LABELS, districtHref, fmt1, stateHref } from "./format";
 import { MapLegend, TplMap } from "./TplMaps";
+import { NationalReference } from "./NationalReference";
 import { useTplGeo } from "./TplGeo";
 import type { ModelSummary } from "./types";
 import { CandidateLink, Foot, M, Pills, Segmented, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
@@ -163,6 +164,8 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
           </Foot>
         </div>
       </div>
+
+      <NationalReference years={summary.national} tpl={summary.nationalTpl} />
 
       <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="min-w-0">

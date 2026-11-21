@@ -84,7 +84,10 @@ export const TPL_GLOBAL_CONSTANTS = {
   // designed values. (BETA_SHRINK / BETA_MIN / BETA_MAX, the per-state elasticity's
   // constants, were removed with it on 2026-11-19.) Disabling Huber entirely won ~0.02 on presidential targets
   // by sacrificing Senate accuracy and robustness — rejected by design.
-  HUBER_C: 7,          // residual scale (pts) beyond which a statewide race — or, in the state model, a whole House year — is downweighted (House rows carry no row-level factor; see aggregateYears)
+  // 7 → 15 on 2026-11-20 (user decision): with one national E for every state, a 7-point band also
+  // discounted states that swing more than the nation in a wave (the 2026 Senate races in AL, AR, KS,
+  // MS, SC, TN, TX ran 9–14 pts more Democratic than lean + E), not only crossover candidates.
+  HUBER_C: 15,         // residual scale (pts) beyond which a statewide race — or, in the state model, a whole House year — is downweighted (House rows carry no row-level factor; see aggregateYears)
   FIT_ITERATIONS: 4,   // alternating least-squares rounds
   SPARSE_YEAR_K: 4,    // E(y) shrink factor n/(n + K) — reins in thin odd years
   // Boundary-shift confidence (see boundaryStripFor in tplCompute). It weights a relocated House
@@ -106,6 +109,13 @@ export const TPL_GLOBAL_CONSTANTS = {
 //   "window"      E averages about zero over the model's years (the behaviour until 2026-11-19)
 // The choice moves every state, district and county by the same amount and changes no
 // difference between two places.
+// The seat-level models (a legislative district's own rows in lib/stateLegForecast.ts, a precinct
+// district's in lib/precinctDistrict/project.ts) keep the 7-point band HUBER_C had until 2026-11-20:
+// the reason for widening it was state-level wave swing, which is not what a seat row's distance
+// from its own district's lean measures.
+// TPL_SEAT_HUBER overrides it for the harnesses.
+export const SEAT_HUBER_C = Number(process.env.TPL_SEAT_HUBER ?? 7);
+
 export const TPL_NEUTRAL_ANCHOR: "house-vote" | "window" = "house-vote";
 
 // ── State Wave Sensitivity Coefficients (SUPERSEDED) ────────────────────────

@@ -4,8 +4,9 @@ import { fmt1, marginColor } from "./format";
 import type { YearAggregation } from "./types";
 
 // The year × office matrix as a scoreboard: years run across (oldest first), and each column
-// opens with the year, its WRS and its weight bar; the office rows beneath are a heat grid
-// of neutralized margins (tint deepens with size, full at 20 points), the breakdown of the
+// opens with the year, its margin (the weighted office average, before the year's environment is
+// removed: WRS + env) and its weight bar; the office rows beneath are a heat grid
+// of neutralized margins, also before the environment (tint deepens with size, full at 20 points), the breakdown of the
 // number above. Shares and cell notes live in the tooltip. Clicking a cell, a column head or
 // an office label selects which races the table beneath shows, and a chip above the grid
 // names it (MatrixStatus, placed in the section heading); the selected cells get a faint outline. Clicking the same thing again shows all races. Years
@@ -18,14 +19,14 @@ export type MatrixCell = { nm: number; share: number; note?: string } | null;
 
 const ALL: MatrixSelection = { year: "all", type: "all" };
 
-function heat(nm: number): string {
+export function heat(nm: number): string {
   if (nm === 0) return "var(--app-tab-bg)";
   const pct = 7 + (Math.min(Math.abs(nm), 20) / 20) * 43;
   return `color-mix(in srgb, ${nm > 0 ? "var(--party-rep)" : "var(--party-dem)"} ${pct.toFixed(1)}%, transparent)`;
 }
 
 /** R+28.0 on wider screens, the bare 28.0 on phones. */
-function Margin({ v, bareOnPhone = true }: { v: number; bareOnPhone?: boolean }) {
+export function Margin({ v, bareOnPhone = true }: { v: number; bareOnPhone?: boolean }) {
   if (!bareOnPhone) return <>{fmt1(v)}</>;
   return <><span className="sm:hidden">{v === 0 ? "0" : Math.abs(v).toFixed(1)}</span><span className="hidden sm:inline">{fmt1(v)}</span></>;
 }
@@ -77,15 +78,15 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
         <tbody>
           <tr>
             <td />
-            {years.map((y) => (
+            {years.map((y) => { const total = y.WRS + (y.env ?? 0); return (
                 <td key={y.year} className="pb-1.5 text-center align-bottom">
-                  <button type="button" onClick={() => pick({ year: y.year, type: "all" })} title={`${y.year}: every race that year`}
-                    className={`${HIT} rounded-b-none pb-2 pt-1.5`} style={{ borderBottom: `2px solid ${marginColor(y.WRS)}` }}>
+                  <button type="button" onClick={() => pick({ year: y.year, type: "all" })} title={`${y.year}: every race that year. Margin ${fmt1(total)} before the year's environment is removed`}
+                    className={`${HIT} rounded-b-none pb-2 pt-1.5`} style={{ borderBottom: `2px solid ${marginColor(total)}` }}>
                     <span className="block text-[11px] font-bold sm:text-xs" style={{ color: "var(--app-text-muted)" }}>
                       <span className="sm:hidden">&rsquo;{String(y.year).slice(2)}</span><span className="hidden sm:inline">{y.year}</span>
                     </span>
-                    <span className={`block whitespace-nowrap text-[13px] font-bold leading-tight ${dense ? "sm:text-[0.95rem] lg:text-[1.1rem]" : "sm:text-[1.35rem]"}`} style={{ fontFamily: "var(--font-serif)", color: marginColor(y.WRS) }}>
-                      <Margin v={y.WRS} bareOnPhone={crowded} />
+                    <span className={`block whitespace-nowrap text-[13px] font-bold leading-tight ${dense ? "sm:text-[0.95rem] lg:text-[1.1rem]" : "sm:text-[1.35rem]"}`} style={{ fontFamily: "var(--font-serif)", color: marginColor(total) }}>
+                      <Margin v={total} bareOnPhone={crowded} />
                     </span>
                     <span className="mx-auto mt-1 block h-1 w-4/5 overflow-hidden rounded-sm sm:w-3/5" style={{ background: "var(--app-tab-bg)" }}>
                       <span className="block h-full" style={{ width: `${(y.finalWeight / maxW) * 100}%`, background: "var(--app-text-muted)" }} />
@@ -93,7 +94,7 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
                     <span className="mt-0.5 hidden text-[11px] sm:block" style={{ color: "var(--app-text-muted)" }} title={`${weightLabel} ${y.finalWeight.toFixed(3)}`}>{Math.round(y.finalWeight * 100)}%</span>
                   </button>
                 </td>
-            ))}
+            ); })}
           </tr>
           {offices.map((o) => (
             <tr key={o.key}>
@@ -106,7 +107,7 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
               {years.map((y) => {
                 const cell = cellFor(y, o.key);
                 if (!cell) return <td key={y.year} />;
-                const share = `${Math.round(cell.share * 1000) / 10}% of ${y.year}'s WRS`;
+                const share = `${Math.round(cell.share * 1000) / 10}% of ${y.year}'s margin`;
                 return (
                   <td key={y.year} className="relative h-[30px] rounded-sm p-0 text-center sm:h-[48px] lg:h-[60px]"
                     style={{ background: heat(cell.nm), outline: picked(y.year, o.key) ? RING : undefined, outlineOffset: 1 }}>
