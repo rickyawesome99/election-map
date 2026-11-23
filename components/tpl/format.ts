@@ -47,13 +47,13 @@ export const WAR_BAD = "#ef4444";
 
 export const RACE_TYPE_LABELS: Record<RaceType, string> = { P: "President", S: "Senate", G: "Governor", H: "House", L: "State Leg" };
 export const MATRIX_ROWS: { key: RaceType; label: string; short: string }[] = [
-  { key: "P", label: "President", short: "Pres." }, { key: "H", label: "House Avg.", short: "House" }, { key: "S", label: "Senate", short: "Sen." }, { key: "L", label: "State Leg.", short: "Leg." }, { key: "G", label: "Governor", short: "Gov." },
+  { key: "P", label: "President", short: "Pres." }, { key: "H", label: "House", short: "House" }, { key: "S", label: "Senate", short: "Sen." }, { key: "L", label: "State Leg.", short: "Leg." }, { key: "G", label: "Governor", short: "Gov." },
 ];
 export const OFFICE_LABELS: Record<WarOffice, string> = { P: "President", S: "Senate", G: "Governor", H: "House" };
 
 /** The candidates view with one person selected. */
 export function candidateHref(name: string, state?: string): string {
-  return `/model/candidates?c=${candidateSlug(name, state)}`;
+  return `/war?c=${candidateSlug(name, state)}`;
 }
 export { candidateSlug };
 

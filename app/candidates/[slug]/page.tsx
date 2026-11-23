@@ -160,7 +160,7 @@ export default async function CandidatePage({
   const hasCurrent = !!candidate.currentRace || legCurrent.length > 0;
   const totalPast = pastEntries.length + legPast.length;
 
-  // Wins Above Replacement, the same numbers as the TPL tab's candidate record (/model/candidates).
+  // Wins Above Replacement, the same numbers as the WAR tab's candidate record (/war).
   const war: WarSlim[] = page.war;
   const career = careerWar(war);
   const isPresidential = war.some((r) => r.office === "P");
@@ -269,7 +269,7 @@ export default async function CandidatePage({
                     {isPresidential
                       ? <>avg of {war.length} state results &middot;{" "}</>
                       : <>{war.length} scored race{war.length === 1 ? "" : "s"} &middot;{" "}</>}
-                    <Link prefetch={false} href={`/model/candidates?c=${candidate.slug}`} className="underline hover:no-underline">WAR breakdown &rsaquo;</Link>
+                    <Link prefetch={false} href={`/war?c=${candidate.slug}`} className="underline hover:no-underline">WAR breakdown &rsaquo;</Link>
                   </div>
                 </div>
               )}

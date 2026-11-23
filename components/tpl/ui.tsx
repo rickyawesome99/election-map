@@ -75,7 +75,7 @@ export function CandidateLink({ name, label, state, party, war, tint, className 
   const color = p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : p ? "var(--party-ind)" : undefined;
   return (
     <span className={`inline-flex flex-wrap items-center gap-1.5 ${className}`}>
-      <Link href={`/model/candidates?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: tint && color ? `color-mix(in srgb, ${color} 40%, transparent)` : "var(--app-border)", color: tint ? color : undefined }} title={label ? name : undefined}>{label ?? name}</Link>
+      <Link href={`/war?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: tint && color ? `color-mix(in srgb, ${color} 40%, transparent)` : "var(--app-border)", color: tint ? color : undefined }} title={label ? name : undefined}>{label ?? name}</Link>
       {p && !tint && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
       <WarChip war={war} />
     </span>

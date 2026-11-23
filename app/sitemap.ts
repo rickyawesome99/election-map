@@ -21,7 +21,7 @@ import { generateStaticParams as methodologyPages } from "@/app/methodology/[[..
 // (views of a query string, reached from the pages listed here), and the redirects /states
 // (→ /analysis/delegation) and /analysis/oh-31 (→ its /analysis/districts page, listed below).
 const STATIC = [
-  "/overview", "/house", "/senate", "/governor", "/historical", "/model", "/model/candidates",
+  "/overview", "/house", "/senate", "/governor", "/historical", "/model", "/war",
   "/analysis", "/analysis/calendar", "/analysis/delegation", "/analysis/forecasts", "/analysis/markets",
   "/analysis/editorial-prediction", "/analysis/generic-ballot", "/analysis/polling-misses", "/analysis/pollsters", "/analysis/popular-vote", "/analysis/turnout",
   "/district-finder", "/about",

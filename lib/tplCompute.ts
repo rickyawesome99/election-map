@@ -37,6 +37,7 @@ import { classifyEligibility, alignedParty, type RaceEligibility } from "@/data/
 import { getChamberMargins, legislatureRowPool, unopposedPresPool, type NotUpMode, type UnopposedMode } from "@/lib/chamberMargins";
 import type { ChamberMarginYear } from "@/lib/stateLegChamberMargin";
 import { tplInputs2026, TPL_2026, type Tpl2026Race } from "@/lib/tpl2026Inputs";
+import { districtBallot, type DistrictBallotEntry } from "@/lib/districtBallot";
 
 // ── Race stub type ────────────────────────────────────────────────────────────
 
@@ -1754,7 +1755,19 @@ export interface WarRow {
   state: string;
   year: number;
   actual: number;   // R-positive margin as run
-  expected: number; // R-positive expected margin (lean + β*E + incumbency + structural money)
+  expected: number; // R-positive expected margin: baseline + incumbency + structural money (generic v generic)
+  /** The state's (House row: the district's) own vote that year with this race left out (R-positive,
+   *  incumbency and money removed from every race, nothing removed for the national environment).
+   *  null where nothing else was on the ballot or the district has no figure. */
+  generic: number | null;
+  /** 0–1: how much of the baseline is `generic`; the rest is `leanBaseline`. */
+  genericWeight: number;
+  /** House rows: points (R-positive) added to Expected for how the state's other House races ran
+   *  against their own districts' baselines that year. 0 on a statewide row. */
+  houseOthers: number;
+  /** lean + trend (+ shift) + E(year): the modelled baseline, used alone until 2026-11-23 and now
+   *  the fallback for a thin ballot. */
+  leanBaseline: number;
   moneyGapPct: number | null; // (R$ − D$)/(R$ + D$) × 100 where both receipts are known
   structuralGapPct: number;   // the money gap a generic pair in this situation would have (see WarMoneyModel)
   ffStructuralPts: number;    // R-positive pts of that structural gap in `expected` (FF_K × structural, capped ±FF_MAX)
@@ -1773,6 +1786,9 @@ export interface WarRow {
   /** < 1 for a House race relocated across a redistricting — how far it had to move, as a
    *  confidence multiplier. Discounts it in the ridge exactly as it is discounted in TPL. */
   boundaryWeight?: number;
+  /** House rows: the first election year of the lines the race was run on (0 = before any redraw
+   *  on file). Two races of one seat with the same value were run on the same lines. */
+  linesFrom?: number;
   note: string;
   /** The seat id the past-election and seat pages key on (senate "oh2", governor "oh", house "oh-09",
    *  president: the state id "oh") — so the model pages can link a row to its results without
@@ -2077,9 +2093,174 @@ export function fitWarMoneyModel(rows: { gap: number; incSign: number; base: num
   return { intercept: coef[0], incSign: coef[1], base: coef[2], n, r2: sst > 0 ? 1 - ssr / sst : 0 };
 }
 
-let _warCache: WarRow[] | null = null;
+// ── Own-year baseline for statewide WAR (2026-11-23) ──────────────────────────
+// Until 2026-11-23 a Senate, governor or presidential race was scored against a PREDICTION of
+// where its state should have landed: lean + trend + E(year). E is one national number, so a
+// state that moved more or less than the nation that year handed the difference to every
+// candidate on its ballot (2026: two same-party statewide candidates in one state scored alike
+// at r = 0.57; every Texas Democrat +13).
+//
+// WAR is graded after the election, so the state's movement does not have to be predicted. It is
+// read off the rest of the ballot: the state's own blended vote that year, built exactly as
+// State TPL builds a year (same rows, incumbency and money strips, office weights, turnout
+// weights and outlier factors) with NOTHING removed for the environment, and with the race being
+// scored left out so a candidate is never graded against themselves.
+//
+//   generic(state, year, race) = the state's year score, environment left in, without `race`
+//   baseline = w × generic + (1 − w) × (lean + trend + E)
+//   w        = min(1, Σ base office weight of the offices left on the ballot ÷ the House weight)
+//
+// w is 1 in every even year with a House vote. An odd-year governor race with only a legislature
+// beside it gets 0.10 / 0.25 = 0.4; one with nothing else (Kentucky) gets 0 and keeps the modelled
+// baseline whole.
+//
+// A seat nobody contested is not evidence of how the state voted THAT year, so here (and only
+// here; State TPL is unchanged) a filled row is treated differently:
+//   · an uncontested House seat is filled with its presidential margin PLUS the gap the state's
+//     contested seats ran from their own presidential margins that year, as the legislature's
+//     unopposed seats already are; with no contested seat to measure a gap, it is dropped;
+//   · an imputed Senate or governor race, and the legislature's no-gap unopposed pool, are dropped.
+// The forward candidate effects are NOT on this baseline; they keep `base`.
+//
+// HOUSE (same day). A House race is graded the same way against its DISTRICT's own vote that
+// year: everything the district's voters cast a ballot for except the House race itself
+// (President, Senate, governor and both legislative chambers), summed from precincts on the
+// lines the race was run on (lib/districtBallot.ts, scripts/buildDistrictBallot.ts), at the
+// year's office weights without the House. Senate and governor margins carry the incumbency and
+// money strips of the state's race. The first test (2026-11-20) used President, Senate and
+// governor alone and was too noisy; with the legislature in, the baseline holds up, and it carries
+// far less of the district itself than the modelled one did (in a seat where neither candidate
+// repeats, consecutive scores correlated 0.43 on the modelled baseline and 0.21 on this one).
+//
+//   w = min(1, Σ office weight of the offices the district has a figure for ÷ the legislature's weight)
+//
+// so a presidential year is always whole, a midterm district with a legislature figure is whole,
+// and one with only a Senate or governor race beside it leans on the modelled baseline.
+//
+// CHECKS. Older precinct files place some votes approximately (a county's absentee line spread
+// over its precincts), so a state total can be right while a district's is not, and the year's
+// district of a precinct is itself read off its House votes. Three checks, each against something
+// independent of the precinct file:
+//   · the presidential vote summed on the district's precincts must be within
+//     WAR_DISTRICT_CHECK_PTS of the site's own presidential result for that district on those
+//     lines, and its turnout within WAR_DISTRICT_TURNOUT_BAND; a district that fails, or has no
+//     presidential result to compare, keeps the modelled baseline entirely;
+//   · the House margin summed from precincts must be within WAR_DISTRICT_HOUSE_CHECK_PTS of the
+//     certified one;
+//   · an office whose precinct total is outside WAR_DISTRICT_OFFICE_BAND of the House total is
+//     incomplete there (an absentee board missing from one contest) and is left out.
+//
+// THE OTHER HOUSE RACES (user decision, 2026-11-23). A district's ballot holds one House race, so
+// the House vote itself cannot be part of its own baseline the way a state's is for a Senate race.
+// It enters through the state's other House races: how far each of them ran from ITS district's
+// baseline that year. That gap is common to the state (in a midterm the district baseline is
+// mostly the legislature, and a state's legislative vote can sit many points from its
+// congressional vote: Massachusetts and California 2018 to the right of it, West Virginia 2018 to
+// the left) and is not any one candidate's doing. So a House race's Expected is moved by
+//
+//   others = μ(year) + n ÷ (n + WAR_HOUSE_OTHERS_K) × (mean gap of the state's n OTHER House races − μ(year))
+//
+// where a race's gap is actual − Expected before this term and μ(year) is the mean gap of every
+// House race that year. The race itself is never in its own figure; a one-seat state gets μ(year).
+export type WarBaseline = "own-year" | "own-year-no-others" | "own-year-statewide" | "lean";
+export const WAR_HOUSE_OTHERS_K = 3;
+export const WAR_DISTRICT_CHECK_PTS = 2;
+export const WAR_DISTRICT_TURNOUT_BAND: [number, number] = [0.85, 1.15];
+export const WAR_DISTRICT_HOUSE_CHECK_PTS = 3;
+export const WAR_DISTRICT_OFFICE_BAND: [number, number] = [0.8, 1.25];
+export const WAR_BASELINE: WarBaseline = "own-year";
+// WAR_BASELINE=lean restores the modelled baseline for the harness (scripts/warBaselineTest.ts);
+// own-year-statewide is the own-year baseline for statewide races only (House modelled);
+// own-year-no-others is everything but the other-House-races term.
+const warBaselineDefault = (process.env.WAR_BASELINE as WarBaseline | undefined) ?? WAR_BASELINE;
+/** Statewide races are scored through this year. 2026 is on the counts as they stand (the TPL
+ *  overlay); House rows still end at 2025 (2026 precinct results cover eight states).
+ *  WAR_LAST_YEAR=2025 with WAR_BASELINE=lean reproduces the table as it was before 2026-11-23. */
+export const WAR_STATEWIDE_LAST_YEAR = process.env.WAR_LAST_YEAR != null ? Number(process.env.WAR_LAST_YEAR) : HAS_2026 ? TPL_2026 : 2025;
+
+export interface OwnYearGeneric {
+  margin: number | null; // R-positive; null when nothing else was on the ballot
+  weight: number;        // w above
+  offices: string[];     // office types behind `margin`
+  houseFilled: number;   // uncontested House seats filled from the contested seats' gap
+  houseDropped: number;  // uncontested House seats dropped (no contested seat that year)
+}
+
+/** A district's own vote in a year without its House race. `stateStrip` gives the incumbency +
+ *  money strip of the state's Senate ("S") or governor ("G") race that year, or undefined where
+ *  the state had no scorable race for that office. */
+function districtOwnYearGeneric(ballot: DistrictBallotEntry | null, year: number, houseMargin: number, sitePres: ImputedLean | null, stateStrip: (type: "S" | "G") => number | undefined): OwnYearGeneric {
+  const none: OwnYearGeneric = { margin: null, weight: 0, offices: [], houseFilled: 0, houseDropped: 0 };
+  if (!ballot || !ballot.H || Math.abs(ballot.H[0] - houseMargin) > WAR_DISTRICT_HOUSE_CHECK_PTS) return none;
+  // Are these precincts really this district? The presidential vote on them says.
+  const mine = sitePres && sitePres.desc !== "statewide presidential result" ? ballot.pres?.[String(sitePres.year)] : undefined;
+  if (!mine || Math.abs(mine[0] - sitePres!.margin) > WAR_DISTRICT_CHECK_PTS) return none;
+  if (sitePres!.totalVotes && (mine[1] / sitePres!.totalVotes < WAR_DISTRICT_TURNOUT_BAND[0] || mine[1] / sitePres!.totalVotes > WAR_DISTRICT_TURNOUT_BAND[1])) return none;
+  const complete = (o?: [number, number]) => !!o && o[1] / ballot.H![1] >= WAR_DISTRICT_OFFICE_BAND[0] && o[1] / ballot.H![1] <= WAR_DISTRICT_OFFICE_BAND[1];
+  const W = raceTypeWeightsFor(year);
+  const parts: [string, number][] = [];
+  if (complete(ballot.P)) parts.push(["P", ballot.P![0]]);
+  for (const t of ["S", "G"] as const) {
+    const strip = stateStrip(t);
+    if (complete(ballot[t]) && strip != null) parts.push([t, ballot[t]![0] + strip]);
+  }
+  if (ballot.L != null) parts.push(["L", ballot.L]);
+  const weightSum = parts.reduce((sum, [t]) => sum + (W[t] ?? 0), 0);
+  if (weightSum <= 0) return none;
+  return { margin: parts.reduce((sum, [t, v]) => sum + (W[t] ?? 0) * v, 0) / weightSum, weight: Math.min(1, weightSum / W.L), offices: parts.map(([t]) => t), houseFilled: 0, houseDropped: 0 };
+}
+
+function houseMinValidYear(district: string | undefined, year: number): number {
+  const districtId = district ? houseData.find((r) => r.name === district)?.id : undefined;
+  const earlier = districtId ? (houseDistrictInfo[districtId] ?? []).map((e) => e.year).filter((y) => y <= year) : [];
+  return earlier.length > 0 ? Math.max(...earlier) : 0;
+}
+
+function houseMaxValidYear(district: string | undefined, year: number): number {
+  const districtId = district ? houseData.find((r) => r.name === district)?.id : undefined;
+  const later = districtId ? (houseDistrictInfo[districtId] ?? []).map((e) => e.year).filter((y) => y > year) : [];
+  return later.length > 0 ? Math.min(...later) : Number.POSITIVE_INFINITY;
+}
+
+function stateOwnYearGeneric(stateAbbr: string, stateRaces: ComputedRace[], year: number, exclude: ComputedRace, leanPlusE: number): OwnYearGeneric {
+  // A row's margin with incumbency and money removed and the environment left in.
+  const own = (r: ComputedRace) => r.adjustedMargin! + (r.incumbencyPts ?? 0) + (r.FF_pts ?? 0);
+  const rows = stateRaces.filter((r) => r.year === year && r !== exclude && r.adjustedMargin != null && r.NM != null);
+  let gapNum = 0, gapDen = 0;
+  for (const r of rows) {
+    if (r.raceType !== "H" || r.imputed) continue;
+    const pres = nearestPresidentialLean(stateAbbr, r.district, year, r.minValidYear, houseMaxValidYear(r.district, year));
+    if (!pres || pres.desc === "statewide presidential result") continue; // no district presidential vote to compare with
+    gapNum += r.aggWeight * (own(r) - pres.margin);
+    gapDen += r.aggWeight;
+  }
+  const gap = gapDen > 0 ? gapNum / gapDen : null;
+  const kept: ComputedRace[] = [];
+  let houseFilled = 0, houseDropped = 0;
+  for (const r of rows) {
+    if (!r.imputed) kept.push({ ...r, NM: own(r) });
+    else if (r.raceType === "H" && gap != null) { kept.push({ ...r, NM: r.adjustedMargin! + gap }); houseFilled += 1; }
+    else if (r.raceType === "H") houseDropped += 1;
+  }
+  // The anchor of the House-year outlier factor moves with the rows: |House − (lean + E)| here is
+  // |House NM − lean| in the state model.
+  const agg = aggregateYears(kept, leanPlusE).yearAggregations.find((a) => a.year === year);
+  const offices = agg?.racesPresent ?? [];
+  if (!agg || offices.length === 0) return { margin: null, weight: 0, offices: [], houseFilled, houseDropped };
+  const W = raceTypeWeightsFor(year);
+  const weight = Math.min(1, offices.reduce((sum, t) => sum + (W[t] ?? 0), 0) / W.H);
+  return { margin: agg.WRS, weight, offices, houseFilled, houseDropped };
+}
+
+const _warCache = new Map<WarBaseline, WarRow[]>();
 let _warMoneyCache: Record<string, WarMoneyModel> | null = null;
-type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string; base: number;
+type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string;
+  /** Pre-money expected margin on the MODELLED baseline (lean + trend + E + incumbency). The forward
+   *  candidate effects and the structural money model read this one; so does a House row's WAR. */
+  base: number;
+  linesFrom?: number;
+  /** The same on the OWN-YEAR baseline (WAR table only). */
+  ownBase?: number; own?: OwnYearGeneric; ownNote?: string;
   /** R-positive incumbency points inside `base` (0 for open seats and appointed incumbents); base − incPts is the same seat with no incumbent. */
   incPts: number; incSign: number; gap: number | null; withMoney: boolean; boundaryWeight?: number; note: string };
 let _warPendingCache: WarPending[] | null = null;
@@ -2130,6 +2311,9 @@ function buildWarPending(): WarPending[] {
   if (_warPendingCache) return _warPendingCache;
   const fit = getTplFit();
   const pending: WarPending[] = [];
+  // Incumbency + money strip of each state's regular Senate and governor race, for the district
+  // baseline of a House race (the district's Senate margin is that race counted inside its lines).
+  const stateStrips = new Map<string, number>();
   const gapOf = (r: ComputedRace) => r.ffDetail && r.ffDetail.dem + r.ffDetail.rep > 0 ? ((r.ffDetail.rep - r.ffDetail.dem) / (r.ffDetail.rep + r.ffDetail.dem)) * 100 : null;
   const incSignOf = (r: ComputedRace) => (r.incumbent === "R" ? 1 : r.incumbent === "D" ? -1 : 0);
 
@@ -2147,21 +2331,33 @@ function buildWarPending(): WarPending[] {
     const presBar = presWSum > 0 ? presRows.reduce((a, x) => a + x.aggWeight * x.NM!, 0) / presWSum : null;
     const presNM = new Map(presRows.map((x) => [x.year, x.NM!]));
     for (const r of stateRaces) {
-      if (r.raceType === "L" || r.raceType === "H" || r.year > 2025 || r.rawMargin == null) continue;
+      if ((r.raceType === "S" || r.raceType === "G") && !r.imputed && r.eligibility === "eligible" && r.rawMargin != null && r.race !== "Senate Special") stateStrips.set(`${abbr}|${r.year}|${r.raceType}`, (r.incumbencyPts ?? 0) + (r.FF_pts ?? 0));
+    }
+    for (const r of stateRaces) {
+      if (r.raceType === "L" || r.raceType === "H" || r.year > WAR_STATEWIDE_LAST_YEAR || r.rawMargin == null) continue;
       const E = fit.E[r.year] ?? 0;
       const office = r.raceType as WarRow["office"];
+      // The state's own vote that year without this race, blended toward the modelled baseline
+      // where little else was on the ballot (see "Own-year baseline" above).
+      const own = stateOwnYearGeneric(abbr, stateRaces, r.year, r, lean + E);
+      const ownCore = (leanCore: number) => (own.margin == null ? leanCore : own.weight * own.margin + (1 - own.weight) * leanCore);
+      const ownNote = own.margin == null || own.weight === 0 ? `vs state lean in ${r.year} (nothing else on the ballot)`
+        : own.weight < 1 ? `vs the state's ${r.year} vote (${Math.round(own.weight * 100)}%) and its lean (${Math.round((1 - own.weight) * 100)}%)`
+        : `vs the state's ${r.year} vote`;
       if (!r.imputed && r.eligibility === "eligible") {
         // Presidential rows are NOT trend-anchored: their own margin IS the trend input, so the
         // residual would collapse to the constant down-ballot offset by construction.
         const yearPres = r.raceType === "P" ? null : interpolatedPresNM(presNM, r.year);
         const trend = yearPres != null && presBar != null ? yearPres - presBar : 0;
         const incPts = -(r.incumbencyPts ?? 0);
-        pending.push({ r, office, raceLabel: r.race, state: abbr, base: lean + trend + beta * E + incPts, incPts, incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: r.raceType === "P" ? "vs state fitted lean" : `vs state lean in ${r.year}` });
+        const leanCore = lean + trend + beta * E;
+        pending.push({ r, office, raceLabel: r.race, state: abbr, base: leanCore + incPts, ownBase: ownCore(leanCore) + incPts, own, ownNote, incPts, incSign: incSignOf(r), gap: gapOf(r), withMoney: true, note: r.raceType === "P" ? "vs state fitted lean" : `vs state lean in ${r.year}` });
       } else if (r.imputed && r.NM != null && (r.eligibility === "no-dem" || r.eligibility === "no-rep")) {
         // Same-party and jungle-fragmented generals carry no signable R-vs-D margin.
         // Imputed baselines carry no money term (the imputation is a presidential lean).
         const incPts = -incumbencyPtsFor(r.raceType, r.incumbent, r.incumbentAppointed);
-        pending.push({ r, office, raceLabel: r.race, state: abbr, base: r.NM + beta * E + incPts, incPts, incSign: incSignOf(r), gap: null, withMoney: false, note: "vs imputed presidential baseline" });
+        const leanCore = r.NM + beta * E;
+        pending.push({ r, office, raceLabel: r.race, state: abbr, base: leanCore + incPts, ownBase: ownCore(leanCore) + incPts, own, ownNote: own.margin == null || own.weight === 0 ? "vs imputed presidential baseline" : ownNote, incPts, incSign: incSignOf(r), gap: null, withMoney: false, note: "vs imputed presidential baseline" });
       }
     }
   }
@@ -2203,7 +2399,16 @@ function buildWarPending(): WarPending[] {
       const shift = -(r.BS_pts ?? 0);
       const relocated = r.boundaryShift != null && Math.abs(r.boundaryShift) >= 0.5;
       const incPts = -(r.incumbencyPts ?? 0);
-      pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, base: calc.tpl + trend + shift + beta * (fit.E[r.year] ?? 0) + incPts, incPts, incSign: incSignOf(r), gap: gapOf(r), withMoney: true, boundaryWeight: r.boundaryWeight ?? 1, note: relocated ? `vs district lean in ${r.year}, on that year's lines` : `vs district lean in ${r.year}` });
+      // The district's own vote that year without the House race, on the lines it was run on.
+      const leanCore = calc.tpl + trend + shift + beta * (fit.E[r.year] ?? 0);
+      const districtNumber = parseInt(r.race.split("-").pop() ?? "", 10);
+      const sitePres = nearestPresidentialLean(calc.stateAbbr, r.district, r.year, houseMinValidYear(r.district, r.year), houseMaxValidYear(r.district, r.year));
+      const own = districtOwnYearGeneric(Number.isFinite(districtNumber) ? districtBallot("run", r.year, calc.stateAbbr, districtNumber) : null, r.year, r.rawMargin, sitePres, (t) => stateStrips.get(`${calc.stateAbbr}|${r.year}|${t}`));
+      const ownBase = (own.margin == null ? leanCore : own.weight * own.margin + (1 - own.weight) * leanCore) + incPts;
+      const ownNote = own.margin == null ? undefined
+        : own.weight < 1 ? `vs the district's ${r.year} vote (${Math.round(own.weight * 100)}%) and its lean (${Math.round((1 - own.weight) * 100)}%)`
+        : `vs the district's ${r.year} vote, on that year's lines`;
+      pending.push({ r, office: "H", raceLabel: r.race, state: calc.stateAbbr, linesFrom: houseMinValidYear(r.district, r.year), base: leanCore + incPts, ownBase, own, ownNote, incPts, incSign: incSignOf(r), gap: gapOf(r), withMoney: true, boundaryWeight: r.boundaryWeight ?? 1, note: relocated ? `vs district lean in ${r.year}, on that year's lines` : `vs district lean in ${r.year}` });
     }
   }
   _warPendingCache = pending;
@@ -2216,38 +2421,66 @@ export function getWarMoneyModel(): Record<string, WarMoneyModel> {
   return _warMoneyCache!;
 }
 
-export function computeWarTable(): WarRow[] {
-  if (_warCache) return _warCache;
+export function computeWarTable(baseline: WarBaseline = warBaselineDefault): WarRow[] {
+  const hit = _warCache.get(baseline);
+  if (hit) return hit;
   const pending = buildWarPending();
 
   // Structural money model per office, from races with both receipts known.
   const money: Record<string, WarMoneyModel> = {};
   for (const office of ["S", "G", "H"] as const) {
-    money[office] = fitWarMoneyModel(pending.filter((p) => p.office === office && p.withMoney && p.gap != null).map((p) => ({ gap: p.gap!, incSign: p.incSign, base: p.base })));
+    // Fitted on the modelled baseline and on races through 2025, as before 2026-11-23: the forward
+    // money term (structuralMoneyGap) reads this model, and it must not move with WAR's baseline.
+    money[office] = fitWarMoneyModel(pending.filter((p) => p.office === office && p.withMoney && p.gap != null && p.r.year <= 2025).map((p) => ({ gap: p.gap!, incSign: p.incSign, base: p.base })));
   }
   money.P = { intercept: 0, incSign: 0, base: 0, n: 0, r2: 0 };
   _warMoneyCache = money;
+
+  const price = (p: WarPending) => {
+    const ownYear = p.ownBase != null && (baseline === "own-year" || baseline === "own-year-no-others" || (baseline === "own-year-statewide" && p.office !== "H"));
+    const m = money[p.office];
+    const preMoney = ownYear ? p.ownBase! : p.base;
+    const structuralGapPct = p.withMoney ? m.intercept + m.incSign * p.incSign + m.base * preMoney : 0;
+    const ffStructuralPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * structuralGapPct)) : 0;
+    return { ownYear, preMoney, structuralGapPct, ffStructuralPts, expected: preMoney + ffStructuralPts };
+  };
+  // The other House races (see above): each race's gap before the term, then the state's others.
+  const houseOthers = new Map<WarPending, number>();
+  if (baseline === "own-year") {
+    const house = pending.filter((p) => p.office === "H").map((p) => ({ p, gap: p.r.rawMargin! - price(p).expected }));
+    const avg = (v: number[]) => v.reduce((a, b) => a + b, 0) / v.length;
+    const byYear = new Map<number, number[]>(), byState = new Map<string, { sum: number; n: number }>();
+    for (const h of house) {
+      (byYear.get(h.p.r.year) ?? byYear.set(h.p.r.year, []).get(h.p.r.year)!).push(h.gap);
+      const k = `${h.p.state}|${h.p.r.year}`, e = byState.get(k) ?? byState.set(k, { sum: 0, n: 0 }).get(k)!;
+      e.sum += h.gap; e.n += 1;
+    }
+    for (const h of house) {
+      const mu = avg(byYear.get(h.p.r.year)!), e = byState.get(`${h.p.state}|${h.p.r.year}`)!, n = e.n - 1;
+      houseOthers.set(h.p, n > 0 ? mu + (n / (n + WAR_HOUSE_OTHERS_K)) * ((e.sum - h.gap) / n - mu) : mu);
+    }
+  }
 
   const out: WarRow[] = [];
   const incumbents = new Set<string>(); // ran as the incumbent at least once: the heavier tail (WAR_TAIL_INCUMBENT)
   for (const p of pending) {
     const m = money[p.office];
-    const structuralGapPct = p.withMoney ? m.intercept + m.incSign * p.incSign + m.base * p.base : 0;
-    const ffStructuralPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * structuralGapPct)) : 0;
-    const expected = p.base + ffStructuralPts;
+    const { ownYear, preMoney, structuralGapPct, ffStructuralPts, expected: expectedBefore } = price(p);
+    const others = houseOthers.get(p) ?? 0;
+    const expected = expectedBefore + others;
     // The replacement is a non-incumbent: the same seat, year and opponent with NO incumbent in
     // the race — incumbency out of the base, and the structural money a generic pair would have
     // re-priced with incSign 0 on that base. The difference is what the incumbent's own
     // incumbency is worth, credited to the incumbent's row only (2026-09-24, user decision:
     // "a replacement-level nominee wouldn't be an incumbent in any practical scenario").
     // Appointed incumbents carry no incumbency in base (share 0) but do get the money part.
-    const openBase = p.base - p.incPts;
+    const openBase = preMoney - p.incPts;
     const ffOpenPts = p.withMoney ? Math.max(-FF_MAX, Math.min(FF_MAX, FF_K * (m.intercept + m.base * openBase))) : 0;
-    const replacementR = expected - (openBase + ffOpenPts); // R-positive
+    const replacementR = expectedBefore - (openBase + ffOpenPts); // R-positive
     const incumbentSlot = p.r.incumbent === "R" ? "R" : p.r.incumbent === "D" ? "D" : null;
     // residual/effect/war are filled by attributeWar() once every race is collected.
     const seatId = p.office === "H" ? p.raceLabel.replace(/^House /, "").toLowerCase() : p.r.detailHref?.split("/").pop();
-    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, seatId, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, note: p.note };
+    const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, seatId, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, generic: ownYear ? p.own!.margin : null, genericWeight: ownYear ? p.own!.weight : 0, houseOthers: others, leanBaseline: p.base - p.incPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, linesFrom: p.linesFrom, note: ownYear ? p.ownNote ?? p.note : p.note };
     if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base, replacementPts: incumbentSlot === "D" ? -replacementR : 0 });
     if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base, replacementPts: incumbentSlot === "R" ? replacementR : 0 });
     if (incumbentSlot === "D" && p.r.demCandidate) incumbents.add(warCandidateKey(p.state, p.r.demParty ?? "D", p.r.demCandidate));
@@ -2256,8 +2489,8 @@ export function computeWarTable(): WarRow[] {
 
   attributeWar(out, incumbents);
   out.sort((a, b) => b.war - a.war);
-  _warCache = out;
-  return _warCache;
+  _warCache.set(baseline, out);
+  return out;
 }
 
 // ── Display helpers ───────────────────────────────────────────────────────────

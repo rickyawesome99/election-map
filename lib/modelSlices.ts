@@ -4,7 +4,7 @@ import "server-only";
 // ── /model page data slices ───────────────────────────────────────────────────
 // The TPL tab is three prerendered pages — the map hub (/model), one page per state
 // (/model/oh, with that state's districts inside it) and the candidates view
-// (/model/candidates) — all client components that must never import lib/tplCompute
+// (/war) — all client components that must never import lib/tplCompute
 // (it drags the compute hub and every dataset behind it into the browser bundle). Everything
 // they show is computed here at build time and passed as props; the two selections a reader
 // makes on the page (another district, the full WAR table) come from the static routes under
@@ -12,6 +12,8 @@ import "server-only";
 
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
+import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyDisplayName } from "@/lib/countyName";
 import { presPastResults } from "@/data/forecastData";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { stateLeanTrend, districtLeanTrend } from "@/lib/leanTrend";
@@ -19,6 +21,7 @@ import { pastElectionHref, type PastElectionOffice } from "@/lib/pastElections";
 import {
   calculateStateModel,
   calculateDistrictModel,
+  calculateCountyModel,
   computeWarTable,
   getTplFit,
   leanAsOf,
@@ -29,10 +32,10 @@ import {
   type WarRow,
 } from "@/lib/tplCompute";
 import type {
-  DistrictPageData, DistrictScore, HubCandidate, ModelSummary, NationalYear, StatePageData, TplAsOf, StateScore, TplRace, WarSlim,
+  CountyScore, DistrictPageData, DistrictScore, HubCandidate, ModelSummary, NationalYear, StatePageData, TplAsOf, StateScore, TplRace, WarSlim,
 } from "@/components/tpl/types";
 
-export type { ModelSummary, StatePageData, DistrictPageData, WarSlim } from "@/components/tpl/types";
+export type { CountyScore, ModelSummary, StatePageData, DistrictPageData, WarSlim } from "@/components/tpl/types";
 
 /** The cycles every state has a result for — what the map's year lens can switch between. */
 export const LENS_YEARS = [2016, 2018, 2020, 2022, 2024];
@@ -187,6 +190,24 @@ function nationalReference(stateAggs: Record<string, YearAggregation[]>): Nation
   return years;
 }
 
+// Every county with a County TPL, for the hub's Counties map and ranked table. Values are rounded
+// to two decimals to keep the file small (~3,100 rows); the county pipeline has no 2026 rows yet,
+// so this is the lean as of the county files' last year.
+let countyCache: CountyScore[] | null = null;
+export function countySlice(): CountyScore[] {
+  if (countyCache) return countyCache;
+  const round = (v: number) => Math.round(v * 100) / 100;
+  const out: CountyScore[] = [];
+  for (const [fips, county] of Object.entries(countyPresidentialData)) {
+    const calc = calculateCountyModel(fips);
+    if (!calc || !calc.races.some((race) => race.NM != null)) continue;
+    const wrs = yearWrsOf(calc.yearAggregations);
+    out.push({ fips, name: countyDisplayName(fips, county.countyName), state: county.state, tpl: round(calc.tpl), yearWrs: Object.fromEntries(Object.entries(wrs).map(([y, v]) => [y, round(v)])) });
+  }
+  countyCache = out;
+  return out;
+}
+
 let summaryCache: ModelSummary | null = null;
 export function buildModelSummary(): ModelSummary {
   if (summaryCache) return summaryCache;
@@ -261,7 +282,6 @@ export function stateModelSlice(abbrRaw: string): StatePageData | null {
     yearAggregations: withEnv(calc.yearAggregations),
     tplOverTime: tplOverTime(calc, fit.lean[state.abbr]),
     districts: districtsOf(state.abbr),
-    statewideWar: warSlice().filter((r) => r.state === state.abbr && r.office !== "H").sort((a, b) => b.year - a.year || b.war - a.war),
   };
 }
 

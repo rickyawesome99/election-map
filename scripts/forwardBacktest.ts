@@ -55,6 +55,7 @@ import os from "node:os";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { panel, fitWindow, stateTpl, LIVE, LOCKED_2026, incPts, ffPts, mean, typeWFor, type Fit, type Theta } from "./tplWindowFit";
+import { districtBallot } from "@/lib/districtBallot";
 import { tplInputs2026 } from "@/lib/tpl2026Inputs";
 import { houseData, houseDistrictInfo, type PastResult } from "@/data/forecastData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
@@ -73,6 +74,13 @@ import { marginToProbability, fitWarMoneyModel, type WarMoneyModel, solveCandida
 const argv = process.argv.slice(2);
 const argOf = (flag: string) => { const i = argv.indexOf(flag); return i >= 0 ? argv[i + 1] : undefined; };
 const CONDITIONAL = argv.includes("--conditional");
+// --district-ballot[=SGL]: TEST (2026-11-23). District leans also read the district's Senate (S),
+// governor (G) and legislature (L) vote of every earlier even year, summed from precincts onto the
+// 2024 House lines (lib/districtBallot.ts, "now" lines). District TPL itself reads only President
+// and House; this measures what the fuller ballot would add under the conditional test.
+const DISTRICT_BALLOT = argv.find((a) => a.startsWith("--district-ballot"));
+const BALLOT_OFFICES = DISTRICT_BALLOT ? (DISTRICT_BALLOT.split("=")[1] ?? "SGL") : "";
+let ballotDistricts = 0, ballotRows = 0;
 const YEARS = (argOf("--years") ?? (CONDITIONAL ? "2018,2020,2022,2024,2026" : "2018,2020,2022,2024")).split(",").map(Number);
 const ENV = argOf("--env") ?? "all";
 const ABLATE = argv.includes("--ablate");
@@ -187,7 +195,34 @@ function districtLeanAsOf(race: typeof houseData[number], Y: number, fit: Fit): 
   if (infoYears.some((y) => y > Y)) return null;
   const eraStart = infoYears.filter((y) => y <= Y).length ? Math.max(...infoYears.filter((y) => y <= Y)) : 2016;
   const beta = fit.beta[dp.state] ?? 1;
-  const rows: { year: number; type: "P" | "H"; nm: number; w: number }[] = [];
+  const rows: LeanRow[] = [];
+  if (BALLOT_OFFICES) {
+    // The 2024 House lines are today's only where the state has not redrawn since, and only where the
+    // precincts really are this district: the 2024 presidential vote summed on them must match the
+    // site's own figure for the district.
+    const number = parseInt(race.id.slice(-2), 10);
+    const sitePres24 = dp.pres24RepPct - dp.pres24DemPct;
+    const check = districtBallot("now", 2024, dp.state, number)?.pres?.["2024"];
+    if (!infoYears.includes(2026) && check && Math.abs(check[0] - sitePres24) <= 2) {
+      let added = 0;
+      for (const year of [2016, 2018, 2020, 2022, 2024]) {
+        if (year >= Y) continue;
+        const b = districtBallot("now", year, dp.state, number);
+        if (!b) continue;
+        const env = beta * (fit.E[year] ?? 0);
+        const whole = (o?: [number, number]) => !!o && (!b.H || (o[1] / b.H[1] >= 0.8 && o[1] / b.H[1] <= 1.25));
+        for (const t of ["S", "G"] as const) {
+          if (!BALLOT_OFFICES.includes(t) || !whole(b[t])) continue;
+          const st = panel.find((r) => r.abbr === dp.state && r.year === year && r.type === t && !r.imputed && r.eligibility === "eligible" && r.value != null && r.race !== "Senate Special");
+          if (!st) continue;
+          rows.push({ year, type: t, nm: b[t]![0] + incPts(fit.inc, t, st.incumbent, st.incumbentAppointed) + ffPts(THETA, st.ffGapPct) - env - (fit.d[`${t}${year}`] ?? 0), w: 1 });
+          added += 1;
+        }
+        if (BALLOT_OFFICES.includes("L") && b.L != null) { rows.push({ year, type: "L", nm: b.L - env - (fit.d[`L${year}`] ?? 0), w: 1 }); added += 1; }
+      }
+      if (added > 0) { ballotDistricts += 1; ballotRows += added; }
+    }
+  }
   for (const [year, margin] of [[2016, dp.pres16RepPct - dp.pres16DemPct], [2020, dp.pres20RepPct - dp.pres20DemPct], [2024, dp.pres24RepPct - dp.pres24DemPct]] as [number, number][]) {
     if (year >= Y) continue;
     rows.push({ year, type: "P", nm: margin - beta * (fit.E[year] ?? 0) - (fit.d[`P${year}`] ?? 0), w: 1 });
@@ -206,18 +241,20 @@ function districtLeanAsOf(race: typeof houseData[number], Y: number, fit: Fit): 
 
 // Decay- and coverage-weighted mean of a district's stripped rows with two-pass Huber — the
 // aggregation calculateDistrictModel uses, shared by the 2026-lines and lines-of-the-day leans.
-function leanFromRows(rows: { year: number; type: "P" | "H"; nm: number; w: number }[], Y: number): number {
+type LeanRow = { year: number; type: "P" | "H" | "S" | "G" | "L"; nm: number; w: number };
+const LEAN_TYPES = ["P", "H", "S", "G", "L"] as const;
+function leanFromRows(rows: LeanRow[], Y: number): number {
   const aggregate = () => {
     const years = [...new Set(rows.map((r) => r.year))];
     let num = 0, den = 0;
     for (const year of years) {
-      const typeMeans: Partial<Record<"P" | "H", number>> = {};
-      for (const type of ["P", "H"] as const) {
+      const typeMeans: Partial<Record<LeanRow["type"], number>> = {};
+      for (const type of LEAN_TYPES) {
         const rs = rows.filter((r) => r.year === year && r.type === type);
         const w = rs.reduce((a, r) => a + r.w, 0);
         if (w > 0) typeMeans[type] = rs.reduce((a, r) => a + r.w * r.nm, 0) / w;
       }
-      const present = (["P", "H"] as const).filter((t) => typeMeans[t] != null);
+      const present = LEAN_TYPES.filter((t) => typeMeans[t] != null);
       const tw = typeWFor(THETA, year);
       const coverage = present.reduce((a, t) => a + tw[t], 0);
       const wrs = present.reduce((a, t) => a + (tw[t] / coverage) * typeMeans[t]!, 0);

@@ -2,9 +2,9 @@
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 
-export type Geo = "states" | "districts";
+export type Geo = "states" | "districts" | "counties";
 
-// The hub's States/Districts toggle, held in context so every part of the hub reads one setting.
+// The hub's States/Districts/Counties toggle, held in context so every part of the hub reads one setting.
 const GeoContext = createContext<{ geo: Geo; setGeo: (g: Geo) => void } | null>(null);
 
 export function TplGeoProvider({ children }: { children: ReactNode }) {
@@ -14,6 +14,7 @@ export function TplGeoProvider({ children }: { children: ReactNode }) {
     // One-time sync from the URL after mount; the hash is not available during SSR.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     if (window.location.hash === "#districts") setGeo("districts");
+    else if (window.location.hash === "#counties") setGeo("counties");
   }, []);
   return <GeoContext.Provider value={{ geo, setGeo }}>{children}</GeoContext.Provider>;
 }

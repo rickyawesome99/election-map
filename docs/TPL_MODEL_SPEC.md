@@ -333,6 +333,32 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   district imputation via the pres-by-leg-district data is future work.
 - **Governor fundraising** is the open Phase 5 item (state filings; OpenSecrets/
   Transparency USA cover it only partially and only via rendered pages).
+- **WAR statewide baseline (2026-11-23):** a Senate, governor or presidential race is no
+  longer scored against the modelled `lean + trend + E(year)`. Its baseline is the state's
+  own blended vote that year (`stateOwnYearGeneric`: the State TPL year aggregation with the
+  environment left in and the race being scored left out), blended toward the modelled
+  baseline by `w = min(1, office weight left on the ballot ÷ House weight)` for thin ballots
+  (odd-year governor races 0.4; nothing else on the ballot 0). Inside that baseline an
+  uncontested House seat is filled with its presidential margin plus the contested seats'
+  own-year gap (dropped where no seat was contested) and imputed Senate/governor rows are
+  dropped. Statewide rows run through 2026 (`WAR_STATEWIDE_LAST_YEAR`); House rows keep the
+  modelled baseline and end at 2025; `computeCandidateEffects` (the forecast) and the
+  structural money fit keep the modelled base. Everything below describing "expected" for a
+  statewide race refers to the pre-change model. Harness: `scripts/warBaselineTest.ts`
+  (`WAR_BASELINE=lean WAR_LAST_YEAR=2025` reproduces the old table).
+- **WAR House baseline (2026-11-23):** a House race is graded against its district's own
+  vote that year without the House race (`districtOwnYearGeneric`): President, Senate,
+  governor and both legislative chambers from `data/generated/district-ballot.json`
+  (`scripts/buildDistrictBallot.ts`, `npm run district-ballot`, in prebuild/predev; read by
+  `lib/districtBallot.ts`), on the lines the race was run on. `w = min(1, office weight with
+  a figure ÷ legislature weight)`; a district that fails the presidential check
+  (`WAR_DISTRICT_CHECK_PTS` 2, turnout band 0.85–1.15), the House check (3) or has nothing
+  to check against keeps the modelled baseline. 1,634 of 1,935 races are wholly on it.
+  Expected for a House race also carries the state's OTHER House races: `others = μ(year) +
+  n/(n + WAR_HOUSE_OTHERS_K) × (their mean gap − μ(year))`, gap = actual − Expected before
+  the term (user decision). `WarBaseline` = `own-year` | `own-year-no-others` |
+  `own-year-statewide` | `lean`. Tested and not applied: District TPL with the district's
+  S/G/L vote added (`forwardBacktest.ts --conditional --district-ballot`, no gain).
 - **WAR** (Phase 6): `computeWarTable()` — each race yields one residual
   r = actual − expected, where expected = lean + β*·E(year) + incumbency +
   **structural** money advantage. Anchors: S/G/P races vs the state's Huber-fitted lean;

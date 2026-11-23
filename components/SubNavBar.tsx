@@ -10,6 +10,7 @@ import { usePendingNav } from "@/lib/navPending";
 const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = [
   { key: "overview",         label: "Overview" },
   { key: "model",            label: "TPL", prefetch: false },
+  { key: "war",              label: "WAR", prefetch: false },
   { key: "forecast",         label: "Forecast" },
   { key: "legislatures",     label: "Legislatures", prefetch: false },
   { key: "historical",       label: "Historical" },
@@ -26,6 +27,7 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/historical" || pathname.startsWith("/historical/")) return "historical";
   if (pathname === "/precincts") return "precincts";
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
+  if (pathname === "/war") return "war";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";
   if (pathname === "/overview" || pathname.startsWith("/overview/") || pathname === "/") return "overview";
@@ -103,7 +105,7 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
     ? "relative hidden h-full min-w-0 items-stretch gap-0.5 lg:flex"
     : "scrollbar-none relative flex min-w-0 gap-1 overflow-x-auto overflow-y-hidden";
   const tabClass = variant === "header"
-    ? "relative z-10 flex shrink-0 items-center whitespace-nowrap px-2 text-sm font-semibold xl:px-3 transition-colors duration-150"
+    ? "relative z-10 flex shrink-0 items-center whitespace-nowrap px-1.5 text-sm font-semibold min-[1120px]:px-2 xl:px-3 transition-colors duration-150"
     : "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
 
   return (

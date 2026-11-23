@@ -18,7 +18,7 @@ export type CandidatePagePayload = {
   legRaces: { projection: LegProjection; money: RaceMoney }[];
   /** Aligned with federal.history: where each row links. */
   historyHrefs: string[];
-  /** Wins Above Replacement rows, the same numbers as /model/candidates. */
+  /** Wins Above Replacement rows, the same numbers as /war. */
   war: WarSlim[];
 };
 

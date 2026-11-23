@@ -13,7 +13,7 @@ import { useMapTooltip } from "@/lib/useMapTooltip";
 import { fmt1, marginColor } from "./format";
 import { startPendingNav } from "@/lib/navPending";
 
-// The hub's choropleth: states or 2026 House districts, filled by any R-positive value (the
+// The hub's choropleth: states, 2026 House districts or counties, filled by any R-positive value (the
 // blended TPL, or one cycle's WRS under the year lens). Click opens a small panel with a link
 // to the place's page; on phones the panel sits under the map instead of over it.
 
@@ -25,9 +25,13 @@ const DISTRICTS_GEO_URL = "/congressional-districts-2026-lite.json";
 // Interior state borders derived from the lite file (same script).
 const STATE_LINES_GEO_URL = "/congressional-districts-2026-lite-state-lines.json";
 
+// The same county file and line weights as the Historical Results map: hairline county edges in
+// the page color under a bold state-line overlay.
+const COUNTIES_GEO_URL = "/us-counties.json";
+
 export type MapRow = { key: string; name: string; value: number; href: string };
 
-type GeoFeature = { rsmKey: string; properties?: { name?: string; GEOID?: string } };
+type GeoFeature = { rsmKey: string; id?: string | number; properties?: { name?: string; GEOID?: string } };
 
 // GeoJSON GEOID → districtPresidentialData key. At-large districts use "00" in GeoJSON but
 // "01" in the data, so replace before stripping leading zeros.
@@ -62,12 +66,13 @@ const WIDE_FRAME = { width: 800, height: 480, projectionConfig: { scale: 1000 } 
 const WIDE_SHIFT = 29;
 
 export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceColor, formatValue = fmt1, valueColor = marginColor, onSelect, navigateOnClick = false, zoomable = true, wide = false, fill = false, panel = true, selectedKey, framed = true }: {
-  mode: "states" | "districts"; rows: MapRow[]; valueLabel: string; linkLabel: string;
+  mode: "states" | "districts" | "counties"; rows: MapRow[]; valueLabel: string; linkLabel: string;
   colorOf?: (value: number) => string; formatValue?: (value: number) => string; valueColor?: (value: number) => string;
   /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
   onSelect?: (row: MapRow | null) => void;
-  /** true = a click/tap goes straight to the place's href instead of opening the panel (the TPL hub's States view). */
-  navigateOnClick?: boolean;
+  /** true = a click/tap goes straight to the place's href instead of opening the panel (the TPL hub's States view).
+   *  "mouse" = only a mouse click does; a tap still opens the panel, since a phone has no hover to name a small county first (the hub's Counties view). */
+  navigateOnClick?: boolean | "mouse";
   /** false = a fixed view: no wheel/pinch/drag zoom and no Reset button (/analysis/polling-misses). */
   zoomable?: boolean;
   /** true = a wide 800×480 frame instead of 800×600, so the map fills the md+ box's 16:9-ish
@@ -92,8 +97,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const [ownSelected, setSelectedState] = useState<MapRow | null>(null);
   const selected = selectedKey === undefined ? ownSelected : rows.find((r) => r.key === selectedKey) ?? null;
   const router = useRouter();
-  const setSelected = (row: MapRow | null) => {
-    if (navigateOnClick && row) { startPendingNav(row.href); router.push(row.href); return; }
+  const setSelected = (row: MapRow | null, viaTouch = false) => {
+    if (row && (navigateOnClick === true || (navigateOnClick === "mouse" && !viaTouch))) { startPendingNav(row.href); router.push(row.href); return; }
     setSelectedState(row); onSelect?.(row);
   };
   const { onMouseMove: onTipMove, tooltipRef } = useMapTooltip(14, 8);
@@ -107,13 +112,27 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const layers = useMemo(() => {
     const byKey = new Map(rows.map((r) => [r.key, r]));
     const rowOf = (geo: GeoFeature): MapRow | undefined =>
-      mode === "states" ? byKey.get(geo.properties?.name ?? "") : byKey.get(geoidToDistrictKey(geo.properties?.GEOID ?? ""));
+      mode === "states" ? byKey.get(geo.properties?.name ?? "")
+      : mode === "counties" ? byKey.get(String(geo.id ?? "").padStart(5, "0"))
+      : byKey.get(geoidToDistrictKey(geo.properties?.GEOID ?? ""));
+    // Line weights per geography: resting edge, hovered, selected.
+    const W = mode === "counties" ? { base: 0.3, hover: 0.5, sel: 1.75 } : mode === "districts" ? { base: 0.5, hover: 1, sel: 2 } : { base: 1, hover: 1.5, sel: 3.5 };
+    const stateLines = (url: string) => (
+      <Geographies geography={url}>
+        {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
+          <Geography key={geo.rsmKey} geography={geo} style={{
+            default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+            hover: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+            pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+          }} />
+        ))}
+      </Geographies>
+    );
 
     const shape = (geo: GeoFeature) => {
       const row = rowOf(geo);
       const isSelected = !!row && selected?.key === row.key;
       const fill = row ? colorOf(row.value) : mapUnfilled;
-      const thin = mode === "districts";
       return (
         <Geography
           key={geo.rsmKey}
@@ -134,12 +153,12 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
             touchStartRef.current = null;
             if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
             ignoreClickRef.current = Date.now() + 500;
-            setSelected(isSelected ? null : row);
+            setSelected(isSelected ? null : row, true);
           }}
           style={{
-            default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? (thin ? 2 : 3.5) : thin ? 0.5 : 1, outline: "none" },
-            hover:   { fill: row ? fill : hoverUnfilled, stroke: hoverStroke, strokeWidth: thin ? 1 : 1.5, outline: "none", cursor: row ? "pointer" : "default" },
-            pressed: { fill, stroke: hoverStroke, strokeWidth: thin ? 2 : 3.5, outline: "none" },
+            default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? W.sel : W.base, outline: "none" },
+            hover:   { fill: row ? fill : hoverUnfilled, stroke: hoverStroke, strokeWidth: W.hover, outline: "none", cursor: row ? "pointer" : "default" },
+            pressed: { fill, stroke: hoverStroke, strokeWidth: W.sel, outline: "none" },
           }}
         />
       );
@@ -151,20 +170,19 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
           <Geographies geography={STATES_GEO_URL}>
             {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
           </Geographies>
+        ) : mode === "counties" ? (
+          <>
+            <Geographies geography={COUNTIES_GEO_URL}>
+              {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
+            </Geographies>
+            {stateLines(STATES_GEO_URL)}
+          </>
         ) : (
           <>
             <Geographies geography={DISTRICTS_GEO_URL}>
               {({ geographies }: { geographies: GeoFeature[] }) => geographies.map(shape)}
             </Geographies>
-            <Geographies geography={STATE_LINES_GEO_URL}>
-              {({ geographies }: { geographies: GeoFeature[] }) => geographies.map((geo) => (
-                <Geography key={geo.rsmKey} geography={geo} style={{
-                  default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                  hover: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                  pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
-                }} />
-              ))}
-            </Geographies>
+            {stateLines(STATE_LINES_GEO_URL)}
           </>
         )}
       </g>

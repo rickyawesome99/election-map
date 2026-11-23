@@ -53,6 +53,8 @@ export type TplRace = {
 
 export type StateScore = { abbr: string; id: string; name: string; tpl: number; yearWrs: Record<number, number>; trend: number | null; since24: number | null; races: number; yearRaces: Record<number, number> };
 export type DistrictScore = { id: string; code: string; state: string; stateName: string; tpl: number; since24: number | null; yearWrs: Record<number, number> };
+/** One county on the hub's Counties map: fetched on demand (/api/model/counties), never in the page payload. */
+export type CountyScore = { fips: string; name: string; state: string; tpl: number; yearWrs: Record<number, number> };
 export type HubCandidate = { candidate: string; party: string; office: WarOffice; race: string; state: string; year: number; war: number };
 
 /** One year of the nation graded the way a state is: each office's neutralized margin (before the
@@ -138,7 +140,6 @@ export type StatePageData = {
   races: TplRace[];
   yearAggregations: YearAggregation[];
   districts: { id: string; code: string; num: number; tpl: number }[];
-  statewideWar: WarSlim[];
 };
 
 export type DistrictPageData = {

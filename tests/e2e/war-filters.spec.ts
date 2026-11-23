@@ -1,13 +1,13 @@
 import { expect, test } from "@playwright/test";
 
-// The candidates view: search and the filters keep the race table in sync, and clicking a
+// The candidates view: search and the filters keep the table in sync, and clicking a
 // name opens that person's record under the table.
 test("Candidates search, filters and the candidate record stay in sync", async ({ page }) => {
   const errors: string[] = [];
   page.on("console", (message) => {
     if (message.type() === "error") errors.push(message.text());
   });
-  await page.goto("/model/candidates");
+  await page.goto("/war");
   const search = page.getByRole("searchbox", { name: "Search performances" });
   const table = page.locator("table").first();
   const rows = table.locator("tbody tr");
@@ -21,13 +21,14 @@ test("Candidates search, filters and the candidate record stay in sync", async (
   // The newest cycle renders in; the full table follows.
   await expect(page.getByText(/candidate-performances/).first()).toBeVisible();
   await search.fill("vt governor");
-  await checkColumn(1, /VT Gov/);
+  await checkColumn(3, /Gov · VT/);
   await search.fill("Phil Scott");
   await checkColumn(2, /Phil Scott/i);
   await search.fill("");
   await page.getByLabel("Filter by year").selectOption("2022");
   await page.getByRole("button", { name: "S", exact: true }).click();
-  await checkColumn(1, /^S2022/);
+  await checkColumn(3, /^Sen/);
+  await checkColumn(4, /^2022$/);
   await search.fill("no-such-candidate");
   await expect(page.getByText("No performances match the filters.")).toBeVisible();
   await search.fill("");
@@ -50,5 +51,7 @@ test("Old sub-tab URLs forward to the new layout", async ({ page }) => {
   await page.goto("/model/states/ga");
   await expect(page).toHaveURL(/\/model\/ga$/);
   await page.goto("/model/war");
-  await expect(page).toHaveURL(/\/model\/candidates$/);
+  await expect(page).toHaveURL(/\/war$/);
+  await page.goto("/model/candidates?state=OH");
+  await expect(page).toHaveURL(/\/war\?state=OH$/);
 });

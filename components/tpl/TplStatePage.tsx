@@ -13,9 +13,9 @@ import { TplOverTime } from "./TplOverTime";
 import { MatrixStatus, TplMatrix, type MatrixSelection } from "./TplMatrix";
 import { AdjustedModal, FormulaModal, GLOSSARY, RaceCalcModal, TrendModal, type FormulaKey } from "./TplModals";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
-import { MATRIX_ROWS, OFFICE_LABELS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
+import { MATRIX_ROWS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
-import { AllRacesButton, ArrowOut, CandidateLink, M, Fact, Fig, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
+import { AllRacesButton, ArrowOut, M, Fact, Fig, VERY_MUTED } from "./ui";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import { startPendingNav } from "@/lib/navPending";
 
@@ -199,38 +199,6 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
           ) : (
             <div className="py-8 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>{districtSlice.failed ? "This district's calculation could not be loaded." : "Loading…"}</div>
           )}
-        </section>
-
-        <section id="candidates" className="mt-10 scroll-mt-24">
-          <LedgerSectionHead label={`${data.name} candidates`} meta="statewide races · click a name for the record"
-            right={<Link href={`/model/candidates?state=${data.abbr}`} className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>All {data.name} races in Candidates ›</Link>} />
-          <div className="-mx-1 overflow-x-auto px-1">
-            <table className="w-full border-collapse text-xs max-sm:text-[11px] sm:min-w-[560px]">
-              <thead>
-                <tr style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
-                  <th className={`${TH} max-sm:pl-0`}>Candidate</th><th className={`${TH} hidden sm:table-cell`}>Race</th><th className={`${TH} hidden sm:table-cell`}>Year</th><th className={`${TH_R} max-sm:px-1`}><span className="sm:hidden">Act.</span><span className="hidden sm:inline">Actual</span></th><th className={`${TH_R} max-sm:px-1`}><span className="sm:hidden">Exp.</span><span className="hidden sm:inline">Expected</span></th><th className={`${TH_R} max-sm:px-1`}>vs Opp</th><th className={`${TH_R} hidden md:table-cell`}>Effect</th><th className={`${TH_R} max-sm:pr-0 max-sm:pl-1`}>WAR</th>
-                </tr>
-              </thead>
-              <tbody>
-                {data.statewideWar.slice(0, 14).map((r, i) => (
-                  <tr key={i} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                    <td className={`${TD} max-sm:whitespace-normal max-sm:pl-0`}>
-                      <CandidateLink name={r.candidate} state={r.state} party={r.party} tint />
-                      {/* Phones: the race and year under the name instead of their own columns. */}
-                      <span className="mt-0.5 block text-[11px] sm:hidden" style={{ color: "var(--app-text-muted)" }}>{r.year} · {OFFICE_LABELS[r.office]}{r.race.includes("Special") ? " special" : ""}</span>
-                    </td>
-                    <td className={`${TD} hidden sm:table-cell`}>{r.pastHref ? <Link href={r.pastHref} className="underline decoration-dotted underline-offset-4" style={{ textDecorationColor: "var(--app-border)" }}>{OFFICE_LABELS[r.office]}{r.race.includes("Special") ? " special" : ""}</Link> : OFFICE_LABELS[r.office]}</td>
-                    <td className={`${TD} hidden sm:table-cell`}>{r.year}</td>
-                    <td className={`${TD_R} max-sm:px-1`}><M v={r.actual} digits={1} /></td>
-                    <td className={`${TD_R} max-sm:px-1`}><M v={r.expected} digits={1} /></td>
-                    <td className={`${TD_R} max-sm:px-1`}><M v={r.vsOpp} digits={1} /></td>
-                    <td className={`${TD_R} hidden md:table-cell`}>{r.effect > 0 ? "+" : ""}{r.effect.toFixed(1)} <span style={VERY_MUTED}>n={r.effectN}</span></td>
-                    <td className={`${TD_R} max-sm:pr-0 max-sm:pl-1`}><WarChip war={r.war} /></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </section>
       </main>
 

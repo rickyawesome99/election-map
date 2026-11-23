@@ -6,40 +6,19 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { statesData } from "@/data/statesData";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 import { useStaticJson } from "@/lib/useStaticJson";
-import { TplViewSwitch } from "./TplSubNav";
+import { HeaderMethodLink } from "./HeaderMethodLink";
 import { OFFICE_LABELS, WAR_BAD, WAR_GOOD, candidateSlug, careerWar, districtHref, marginColor, stateHref } from "./format";
 import type { WarSlim } from "./types";
-import { CandidateLink, Foot, M, Pills, Segmented, SubHead, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
+import { CandidateLink, Foot, M, Pills, SubHead, TD, TD_R, TH, TH_R, VERY_MUTED, WarChip } from "./ui";
 
-// The candidates view: one row per race with both nominees and their WAR (or one row per
-// candidate-performance), filters and search, and — when a name is clicked anywhere on the
+// The candidates view: one row per candidate-performance (a candidate in a race), filters and search, and — when a name is clicked anywhere on the
 // site — that person's record under the table. The selection lives in the URL (?c=slug) so
 // links land on a person; the full table is fetched once the page is open.
 
 type Office = "all" | "P" | "S" | "G" | "H";
 type Party = "all" | "D" | "R" | "I";
 type Year = "all" | number;
-type View = "race" | "candidate";
 type Sort = "winner" | "runner" | "newest" | "closest";
-
-type RaceGroup = { key: string; state: string; office: WarSlim["office"]; race: string; year: number; actual: number; expected: number; winner: WarSlim | null; loser: WarSlim | null; pastHref?: string };
-
-function groupRaces(rows: WarSlim[]): RaceGroup[] {
-  const map = new Map<string, WarSlim[]>();
-  for (const r of rows) {
-    const k = `${r.state}|${r.office}|${r.race}|${r.year}`;
-    (map.get(k) ?? map.set(k, []).get(k)!).push(r);
-  }
-  const out: RaceGroup[] = [];
-  for (const [key, rs] of map) {
-    const first = rs[0];
-    const rSlot = rs.find((r) => r.party === "R") ?? null;
-    const dSlot = rs.find((r) => r !== rSlot) ?? null;
-    const rWon = first.actual > 0;
-    out.push({ key, state: first.state, office: first.office, race: first.race, year: first.year, actual: first.actual, expected: first.expected, winner: rWon ? rSlot : dSlot, loser: rWon ? dSlot : rSlot, pastHref: first.pastHref });
-  }
-  return out;
-}
 
 function raceLabel(r: { office: WarSlim["office"]; race: string }): string {
   return r.office === "H" ? r.race.replace(/^House /, "") : r.race.replace(/\bSenate\b/, "Sen").replace(/\bGovernor\b/, "Gov");
@@ -74,12 +53,12 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
   const selectCandidate = (slug: string | null, row: string | null = null) => {
     setSelectedSlug(slug);
     setAnchorRow(row);
-    window.history.pushState(null, "", slug ? `/model/candidates?c=${encodeURIComponent(slug)}` : "/model/candidates");
+    window.history.pushState(null, "", slug ? `/war?c=${encodeURIComponent(slug)}` : "/war");
   };
   const onClickCapture = (e: React.MouseEvent) => {
     const a = (e.target as HTMLElement).closest("a[href]");
     if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
-    const m = a.getAttribute("href")?.match(/^\/model\/candidates\?c=([^&#]+)/);
+    const m = a.getAttribute("href")?.match(/^\/war\?c=([^&#]+)/);
     if (!m) return;
     e.preventDefault();
     selectCandidate(decodeURIComponent(m[1]), a.closest("tr[data-row]")?.getAttribute("data-row") ?? null);
@@ -89,7 +68,6 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
   const rows = full.data ?? initialRows;
   const loadedAll = !!full.data;
 
-  const [view, setView] = useState<View>("race");
   const [office, setOffice] = useState<Office>("all");
   const [party, setParty] = useState<Party>("all");
   const [year, setYear] = useState<Year>(initialYear);
@@ -123,18 +101,6 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
         : r.candidate.toLowerCase().includes(t) || r.race.toLowerCase().includes(t) || OFFICE_LABELS[r.office].toLowerCase().includes(t)));
   }, [rows, office, party, year, state, query, stateAbbrs]);
 
-  const races = useMemo(() => {
-    // A party or name filter should still show the whole race the matching row belongs to.
-    const keys = new Set(filtered.map((r) => `${r.state}|${r.office}|${r.race}|${r.year}`));
-    const groups = groupRaces(rows.filter((r) => keys.has(`${r.state}|${r.office}|${r.race}|${r.year}`)));
-    const w = (g: RaceGroup) => g.winner?.war ?? -Infinity, l = (g: RaceGroup) => g.loser?.war ?? -Infinity;
-    if (sort === "winner") groups.sort((a, b) => w(b) - w(a));
-    else if (sort === "runner") groups.sort((a, b) => l(b) - l(a));
-    else if (sort === "closest") groups.sort((a, b) => Math.abs(a.actual) - Math.abs(b.actual));
-    else groups.sort((a, b) => b.year - a.year || a.state.localeCompare(b.state) || a.race.localeCompare(b.race, undefined, { numeric: true }));
-    return groups;
-  }, [rows, filtered, sort]);
-
   const performances = useMemo(() => {
     const list = [...filtered];
     if (sort === "winner") list.sort((a, b) => b.war - a.war);
@@ -156,7 +122,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
     }
     return { name: mine[0].candidate, rows: mine, opponents };
   }, [rows, selectedSlug]);
-  const shownKeys = useMemo(() => new Set(view === "race" ? races.slice(0, limit).map((g) => g.key) : performances.slice(0, limit).map(perfKey)), [view, races, performances, limit]);
+  const shownKeys = useMemo(() => new Set(performances.slice(0, limit).map(perfKey)), [performances, limit]);
   const inlineAt = record && anchorRow && shownKeys.has(anchorRow) ? anchorRow : null;
   // Only the above-the-table fallback scrolls; an inline record opens where the reader is.
   const recordRef = useRef<HTMLDivElement>(null);
@@ -178,7 +144,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
     </tr>
   );
 
-  const counts = view === "race" ? `${races.length.toLocaleString()} race${races.length === 1 ? "" : "s"}` : `${performances.length.toLocaleString()} candidate-performance${performances.length === 1 ? "" : "s"}`;
+  const counts = `${performances.length.toLocaleString()} candidate-performance${performances.length === 1 ? "" : "s"}`;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -189,7 +155,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
               <div className="min-w-0">
                 <h1 style={PAGE_TITLE_STYLE}>Candidates</h1>
                 <p className="mt-2 max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
-                  Wins Above Replacement (WAR): how far each nominee ran ahead of a replacement-level candidate of their party in every race 2016–2025, once the seat&apos;s lean, the year&apos;s environment, incumbency and structural money are taken out.
+                  Wins Above Replacement (WAR): how far each nominee ran ahead of a replacement-level candidate of their party in every race since 2016 (House through 2025), once the state&apos;s own vote that year (for a House race, the district&apos;s), incumbency and structural money are taken out.
                 </p>
               </div>
               <div className="flex shrink-0 items-end justify-between gap-6 sm:justify-end sm:gap-8">
@@ -198,18 +164,17 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1 }}>{totals.races.toLocaleString()}</div>
                 <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>{totals.performances.toLocaleString()} candidate-performances</div>
               </div>
-              <TplViewSwitch to="map" layout="inline" />
+              <HeaderMethodLink model="war" layout="inline" />
               </div>
             </div>
-            <TplViewSwitch to="map" />
+            <HeaderMethodLink model="war" />
           </div>
         </div>
       </div>
 
       <main className={`${PAGE_CONTAINER} pb-14`} onClickCapture={onClickCapture}>
         <section className="mt-6">
-          <LedgerSectionHead label={view === "race" ? "Races" : "Candidate-performances"} meta={`${counts}${loadedAll ? "" : ` · ${initialYear} loaded, the rest on its way`}`}
-            right={<Segmented label="View" options={[{ key: "race", label: "By race" }, { key: "candidate", label: "By candidate" }]} value={view} onChange={setView} />} />
+          <LedgerSectionHead label="Candidate-performances" meta={`${counts}${loadedAll ? "" : ` · ${initialYear} loaded, the rest on its way`}`} />
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
             <span className="flex items-center gap-1.5"><span className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Office</span>
               <Pills label="Office" size="xs" value={office} onChange={setOffice} options={[{ key: "all" as Office, label: "All" }, { key: "P" as Office, label: "P" }, { key: "S" as Office, label: "S" }, { key: "G" as Office, label: "G" }, { key: "H" as Office, label: "H" }]} /></span>
@@ -227,8 +192,8 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
               </select></span>
             <span className="flex items-center gap-1.5"><span className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Sort</span>
               <select aria-label="Sort" value={sort} onChange={(e) => setSort(e.target.value as Sort)} className="rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}>
-                <option value="winner">{view === "race" ? "Biggest winner WAR" : "▲ Overperformers"}</option>
-                <option value="runner">{view === "race" ? "Biggest runner-up WAR" : "▼ Underperformers"}</option>
+                <option value="winner">▲ Overperformers</option>
+                <option value="runner">▼ Underperformers</option>
                 <option value="closest">Closest races</option>
                 <option value="newest">Newest first</option>
               </select></span>
@@ -240,38 +205,6 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
           {record && !inlineAt && <div ref={recordRef} className="mb-8 mt-6 scroll-mt-24">{recordPanel}</div>}
 
           <div className="-mx-1 mt-3 overflow-x-auto px-1">
-            {view === "race" ? (
-              <table className="w-full border-collapse text-xs sm:min-w-[640px]">
-                <thead>
-                  <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
-                    <th className={TH}>Race</th><th className={TH}><span className="sm:hidden">Winner · Runner-up</span><span className="hidden sm:inline">Winner · WAR</span></th><th className={`${TH} hidden sm:table-cell`}>Runner-up · WAR</th><th className={TH_R}>Actual</th><th className={TH_R}>Expected</th><th className={`${TH_R} hidden md:table-cell`}>TPL</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {races.length === 0 && <tr><td colSpan={6} className="px-2 py-6 text-center" style={VERY_MUTED}>No performances match the filters.</td></tr>}
-                  {races.slice(0, limit).map((g) => (
-                    <Fragment key={g.key}>
-                    <tr data-row={g.key} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                      <td className={`${TD} font-medium`}>
-                        <span className="mr-1.5 hidden rounded px-1 py-px font-mono text-[9px] font-semibold sm:inline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>{g.office}</span>
-                        {/* Phones: year and state over the race, so the row fits without scrolling. House labels already carry the state. */}
-                        <span className="block sm:inline">{g.year}{g.office === "H" ? "" : ` · ${g.state}`}</span>{" "}{g.pastHref ? <Link href={g.pastHref} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)" }}>{raceLabel(g)}</Link> : raceLabel(g)}
-                      </td>
-                      <td className={TD}>
-                        <CandidateLink name={g.winner?.candidate} state={g.winner?.state} party={g.winner?.party} war={g.winner?.war} />
-                        <span className="mt-1 block sm:hidden"><CandidateLink name={g.loser?.candidate} state={g.loser?.state} party={g.loser?.party} war={g.loser?.war} /></span>
-                      </td>
-                      <td className={`${TD} hidden sm:table-cell`}><CandidateLink name={g.loser?.candidate} state={g.loser?.state} party={g.loser?.party} war={g.loser?.war} /></td>
-                      <td className={TD_R}><M v={g.actual} digits={1} /></td>
-                      <td className={TD_R}><M v={g.expected} digits={1} /></td>
-                      <td className={`${TD_R} hidden md:table-cell`}><Link href={placeHref(g)} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: "var(--app-border)", color: "var(--app-text-muted)" }}>{g.office === "H" ? raceLabel(g) : g.state} ›</Link></td>
-                    </tr>
-                    {inlineRecord(g.key, 6)}
-                    </Fragment>
-                  ))}
-                </tbody>
-              </table>
-            ) : (
               <table className="w-full border-collapse text-xs max-sm:text-[11px] sm:min-w-[640px]">
                 <thead>
                   <tr style={{ borderBottom: "2px solid var(--app-text-primary)", color: "var(--app-text-muted)" }}>
@@ -304,11 +237,10 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
                   ))}
                 </tbody>
               </table>
-            )}
           </div>
           <Foot>
-            {(view === "race" ? races.length : performances.length) > limit && <><button type="button" onClick={() => setLimit((l) => l + 200)} className="underline">Show more</button> · </>}
-            WAR is each candidate&apos;s Wins Above Replacement in that race, signed toward them. Expected is generic vs generic for that seat and year. TPL opens the state page, or the district inside it; the race name opens the election&apos;s own page. Click any name for the record.{view !== "race" && <> Residual is Actual − Expected signed toward the candidate (the race&apos;s net result, so the two sides mirror each other). Incumb. is what an incumbent&apos;s own incumbency is worth against a non-incumbent replacement, already inside WAR; challengers and open seats show —.</>}
+            {performances.length > limit && <><button type="button" onClick={() => setLimit((l) => l + 200)} className="underline">Show more</button> · </>}
+            WAR is each candidate&apos;s Wins Above Replacement in that race, signed toward them. Expected is generic vs generic for that seat and year. The race name opens the election&apos;s own page. Click any name for the record. Residual is Actual − Expected signed toward the candidate (the race&apos;s net result, so the two sides mirror each other). Incumb. is what an incumbent&apos;s own incumbency is worth against a non-incumbent replacement, already inside WAR; challengers and open seats show —.
           </Foot>
         </section>
 
@@ -411,7 +343,7 @@ function CandidateRecord({ name, rows, opponents }: { name: string; rows: WarSli
               </tbody>
             </table>
           </div>
-          <Foot>Expected is generic vs generic (lean + E(year) + incumbency + structural money). vs Opp removes the opponent&apos;s own effect. WAR = Actual − vs Opp, signed toward the candidate. Actual and expected are R-positive margins.</Foot>
+          <Foot>Expected is generic vs generic: the state&apos;s (for a House race, the district&apos;s) own vote that year without the race, plus incumbency and structural money. vs Opp removes the opponent&apos;s own effect. WAR = Actual − vs Opp, signed toward the candidate. Actual and expected are R-positive margins.</Foot>
         </div>
       </div>
     </div>

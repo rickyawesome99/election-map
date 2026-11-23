@@ -1,18 +1,17 @@
 import { electionYear, presPastResults } from "@/data/forecastData";
 import { TplHub } from "@/components/tpl/TplHub";
 import { TplGeoProvider } from "@/components/tpl/TplGeo";
-import { TplViewSwitch } from "@/components/tpl/TplSubNav";
+import { HeaderMethodLink } from "@/components/tpl/HeaderMethodLink";
 import { fmtLean, leanColor } from "@/lib/colorScale";
 import { buildModelSummary } from "@/lib/modelSlices";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
 export const metadata = {
   title: `True Partisan Lean — ${electionYear} Model`,
-  description: "Every state's and district's neutral partisan lean, with the races, years and candidates behind each number.",
+  description: "Every state's and district's neutral partisan lean, with the races and years behind each number.",
 };
 
-// The TPL tab's landing page: the national map with the ranked table, then the distribution,
-// the cycle's standout candidates and the section links. Everything is computed at build time
+// The TPL tab's landing page: the national map with the ranked table, then the national reference. Everything is computed at build time
 // in lib/modelSlices.ts; the map's year lens and sorts run on the summary alone.
 export default function ModelHubPage() {
   const summary = buildModelSummary();
@@ -42,10 +41,10 @@ export default function ModelHubPage() {
                 <div className="mt-1 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, color: leanColor(summary.medianStateTpl) }}>{fmtLean(summary.medianStateTpl)}</div>
                 <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>435-district median <span style={{ color: leanColor(summary.medianDistrictTpl) }}>{fmtLean(summary.medianDistrictTpl)}</span></div>
               </div>
-              <TplViewSwitch to="candidates" layout="inline" />
+              <HeaderMethodLink model="tpl" layout="inline" />
               </div>
             </div>
-            <TplViewSwitch to="candidates" />
+            <HeaderMethodLink model="tpl" />
           </div>
         </div>
       </div>

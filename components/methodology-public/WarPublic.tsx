@@ -25,7 +25,7 @@ export default function WarPublic() {
       <Chapter id="overview" kicker="WAR · Wins Above Replacement" title="How much better than a generic nominee"
         intro={<>Borrowed from baseball, WAR measures how much a candidate added over a <em>replacement-level</em> nominee: a typical, non-incumbent candidate of the same party running in the same seat, in the same year, against the same opponent. It is counted in points of margin. A positive WAR means the candidate did better than that stand-in would have; a negative one means they did worse.</>}>
         <KeyFigures items={[
-          { value: rows.length.toLocaleString(), label: "candidate races scored, 2016 to 2025" },
+          { value: rows.length.toLocaleString(), label: "candidate races scored, 2016 to 2026" },
           { value: candidates.toLocaleString(), label: "candidates" },
         ]} />
       </Chapter>
@@ -33,7 +33,7 @@ export default function WarPublic() {
       <Chapter id="steps" kicker="How it's built" title="Three numbers">
         <Steps items={[
           { title: "Expected result",
-            body: <>What two typical nominees would have done in that seat that year: the place&rsquo;s <A href="/methodology/state-tpl">partisan lean</A>, moved to that year&rsquo;s politics, plus the national mood, incumbency, and the money gap two typical candidates would have had.</> },
+            body: <>What two typical nominees would have done in that seat that year. The starting point is how the place itself voted that year in the other races on its ballot: the state for a Senate, governor or presidential race, and the district for a House race (its vote for president, Senate, governor and the state legislature, adjusted by how the state&rsquo;s other House candidates ran against theirs). A place that swung further than the country therefore does not make its candidates look better or worse than they were. Incumbency and the money gap two typical candidates would have had are then added.</> },
           { title: "Expected against this opponent",
             body: "A typical nominee does worse against a strong opponent and better against a weak one. Every candidate's strength is estimated from all the races they have run, and the expected result is moved by the opponent's. If the candidate is the incumbent, their incumbency is also taken out, because a replacement would not have been the incumbent." },
           { title: "WAR",
@@ -67,9 +67,10 @@ export default function WarPublic() {
           { q: "Why do both candidates in a race get credit?", a: "Each candidate keeps whatever the race left unexplained, the way a batter and a pitcher both get credit for the same hit. So two opponents' WARs don't add up to the race's result." },
           { q: "Does money count?", a: "Money a typical candidate would have raised in that situation is part of the expected result. Raising more than that counts toward the candidate." },
           { q: "Is it used in the forecast?", a: <>A closely related number is: the forecast&rsquo;s <A href="/methodology">candidate ingredient</A> uses each nominee&rsquo;s strength measured the same way, but with incumbency and all fundraising counted separately.</> },
-          { q: "What are its limits?", a: "Records start in 2016, so a long career before that is invisible. A candidate whose strength changed a lot over the years is measured with one number. A House member's own results are part of their district's lean, which slightly understates House WAR." },
+          { q: "Why grade a candidate against their own state's or district's vote?", a: "Because that vote is known once the election is over, and it is a closer yardstick than a national average. In a year when one state moves much further than the country, every candidate there would otherwise be credited or blamed for it. Where little else was on the ballot, as in an odd-year governor race, or where a district's precinct results are not reliable enough to use, the place's partisan lean and the national mood fill in." },
+          { q: "What are its limits?", a: "Records start in 2016, so a long career before that is invisible. A candidate whose strength changed a lot over the years is measured with one number. A candidate who lifts the rest of their party's ticket raises the bar they are measured against. In a state with only a few House seats, each candidate's result moves the bar the others are measured against. House races are scored through 2025; Senate and governor races include 2026, on the count as it stands." },
         ]} />
-        <SeeIt>Every candidate&rsquo;s record is on <A href="/model/candidates">TPL › Candidates</A>.</SeeIt>
+        <SeeIt>Every candidate&rsquo;s record is on the <A href="/war">WAR</A> tab.</SeeIt>
       </Chapter>
     </>
   );

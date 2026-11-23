@@ -39,7 +39,9 @@ const nextConfig: NextConfig = {
       { source: "/model/states/:abbr", destination: "/model/:abbr", permanent: true },
       { source: "/model/table", destination: "/model", permanent: false },
       { source: "/model/districtTable", destination: "/model#districts", permanent: false },
-      { source: "/model/war", destination: "/model/candidates", permanent: false },
+      // Candidates (WAR) left the TPL tab for a tab of its own (user, 2026-11-23). Query strings (?c=, ?state=) carry over.
+      { source: "/model/candidates", destination: "/war", permanent: true },
+      { source: "/model/war", destination: "/war", permanent: false },
       { source: "/methodology/sources", destination: "/sources", permanent: true },
     ];
   },

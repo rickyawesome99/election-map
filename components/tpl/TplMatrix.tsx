@@ -6,7 +6,7 @@ import type { YearAggregation } from "./types";
 // The year × office matrix as a scoreboard: years run across (oldest first), and each column
 // opens with the year, its margin (the weighted office average, before the year's environment is
 // removed: WRS + env) and its weight bar; the office rows beneath are a heat grid
-// of neutralized margins, also before the environment (tint deepens with size, full at 20 points), the breakdown of the
+// of neutralized margins, also before the environment (tint deepens with size, full at 20 points; the text turns white once the tint is dark), the breakdown of the
 // number above. Shares and cell notes live in the tooltip. Clicking a cell, a column head or
 // an office label selects which races the table beneath shows, and a chip above the grid
 // names it (MatrixStatus, placed in the section heading); the selected cells get a faint outline. Clicking the same thing again shows all races. Years
@@ -21,9 +21,17 @@ const ALL: MatrixSelection = { year: "all", type: "all" };
 
 export function heat(nm: number): string {
   if (nm === 0) return "var(--app-tab-bg)";
-  const pct = 7 + (Math.min(Math.abs(nm), 20) / 20) * 43;
-  return `color-mix(in srgb, ${nm > 0 ? "var(--party-rep)" : "var(--party-dem)"} ${pct.toFixed(1)}%, transparent)`;
+  return `color-mix(in srgb, ${nm > 0 ? "var(--party-rep)" : "var(--party-dem)"} ${heatPct(nm).toFixed(1)}%, transparent)`;
 }
+
+/** Tint strength of a cell: 7% at a tie, HEAT_MAX at 20 points and beyond. */
+const HEAT_MAX = 85;
+const heatPct = (nm: number) => 7 + (Math.min(Math.abs(nm), 20) / 20) * (HEAT_MAX - 7);
+/** Past this tint the party color no longer reads on its own tint, so the cell's text turns white. */
+const HEAT_WHITE_FROM = 55;
+export const heatIsDark = (nm: number) => nm !== 0 && heatPct(nm) >= HEAT_WHITE_FROM;
+/** Text color for a figure sitting on heat(nm). */
+export const heatText = (nm: number) => (heatIsDark(nm) ? "#fff" : marginColor(nm));
 
 /** R+28.0 on wider screens, the bare 28.0 on phones. */
 export function Margin({ v, bareOnPhone = true }: { v: number; bareOnPhone?: boolean }) {
@@ -113,9 +121,10 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
                     style={{ background: heat(cell.nm), outline: picked(y.year, o.key) ? RING : undefined, outlineOffset: 1 }}>
                     <button type="button" onClick={() => pick({ year: y.year, type: o.key })}
                       className={`absolute inset-0 whitespace-nowrap rounded-sm text-[11.5px] font-bold ${picked(y.year, o.key) ? "" : "hover:shadow-[inset_0_0_0_1px_var(--app-text-muted)]"} focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--app-text-primary)] sm:text-[12.5px] lg:text-sm`}
-                      style={{ color: marginColor(cell.nm) }}
+                      style={{ color: heatText(cell.nm) }}
                       title={`${o.label} ${y.year}: ${fmt1(cell.nm)} · ${share}${cell.note ? ` · ${cell.note}` : ""}. Click for its races.`}>
                       <Margin v={cell.nm} />
+                      <span className="hidden text-[11px] font-normal leading-tight sm:block" style={heatIsDark(cell.nm) ? { color: "#fff", opacity: 0.85 } : { color: "var(--app-text-primary)", opacity: 0.6 }}>{Math.round(cell.share * 100)}%</span>
                     </button>
                   </td>
                 );
