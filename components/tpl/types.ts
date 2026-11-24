@@ -111,6 +111,20 @@ export type WarSlim = {
   effectN: number;
   oppEffect: number;
   war: number;
+  // The terms behind Expected and WAR, for the row's calculation on the WAR tab (rounded to 0.01).
+  /** The state's (House: the district's) own vote that year with this race left out, R-positive; null where nothing else was on the ballot. */
+  base?: number | null;
+  /** 0–1: how much of the baseline is `base`; the modelled baseline (`leanBase`) carries the rest. */
+  baseW?: number;
+  leanBase?: number;
+  /** House rows: points added to Expected for how the state's other House races ran that year. */
+  houseOthers?: number;
+  /** R-positive points of structural money in Expected. */
+  moneyPts?: number;
+  /** The candidate's record going into the race (their other races, recency-weighted and shrunk), signed toward them. */
+  record?: number;
+  /** Effective races behind the record: recency weights over the other races, plus one. */
+  effectW?: number;
   seatId?: string;
   pastHref?: string;
 };

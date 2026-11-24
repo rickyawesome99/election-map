@@ -18,7 +18,7 @@ from common import RAW, STATES, UA, sources
 
 CIVIC = "https://civicapi.org/api/v2"
 CIVIC_TYPES = {"US Senate", "Governor", "House of Representatives", "State House", "State Senate"}
-EXT = {"enhanced_voting": "json", "ncsbe": "zip", "mn_sos": "txt", "hi_oe": "txt"}
+EXT = {"enhanced_voting": "json", "ncsbe": "zip", "mn_sos": "txt", "hi_oe": "txt", "wy_sos": "zip"}
 # ResultsExport.aspx (MT; SD and OR run the same platform but their exports differ, see sources.csv): ASP.NET page whose export links are postbacks returning xlsx.
 EXPORT_TARGETS = {"MT": ["Statewide", "Legislative"]}
 
@@ -72,6 +72,42 @@ def fetch_civicapi(manifest):
             done += 1
             if done % 500 == 0:
                 print(f"  {done}/{len(ids)}")
+
+
+def fetch_results_export_counties(s, manifest):
+    """SD: the same ResultsExport.aspx platform as MT, but the precinct figures are only in the
+    per-county exports (one link per county on the page, each a __doPostBack target) →
+    raw/direct/SD/<County>.xlsx. The page is fetched afresh for every county (its hidden
+    __VIEWSTATE / __EVENTVALIDATION fields go back with the postback)."""
+    import html, http.cookiejar, re, urllib.parse
+
+    def page_form(opener):
+        page = opener.open(urllib.request.Request(s["url"], headers=UA), timeout=120).read().decode("utf-8", "replace")
+        form = {}
+        for tag in re.findall(r"<input[^>]*type=\"hidden\"[^>]*>", page):
+            n, v = re.search(r'name="([^"]*)"', tag), re.search(r'value="([^"]*)"', tag)
+            if n:
+                form[n.group(1)] = html.unescape(v.group(1)) if v else ""
+        return page, form
+
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
+    page, _ = page_form(opener)
+    targets = [(t, html.unescape(name).strip()) for t, name in re.findall(r"__doPostBack\(&#39;(ctl00\$MainContent\$ctl\d+)&#39;,&#39;&#39;\)\">([^<]+)<", page)]
+    if len(targets) < 60:
+        raise RuntimeError(f"{s['state']}: expected one export link per county, found {len(targets)}")
+    dest = RAW / "direct" / s["state"]
+    dest.mkdir(parents=True, exist_ok=True)
+    size = 0
+    for target, county in targets:
+        _, form = page_form(opener)
+        data = urllib.parse.urlencode({**form, "__EVENTTARGET": target, "__EVENTARGUMENT": ""}).encode()
+        body = opener.open(urllib.request.Request(s["url"], data=data, headers=UA), timeout=300).read()
+        if not body.startswith(b"PK"):
+            raise RuntimeError(f"{s['state']} {county} export did not return a workbook")
+        (dest / f"{county}.xlsx").write_bytes(body)
+        size += len(body)
+    stamp(manifest, f"direct/{s['state']}", s["url"], size)
+    print(f"  {s['state']} {s['source']}: {len(targets)} counties, {size:,} bytes")
 
 
 def fetch_results_export(s, manifest):
@@ -136,6 +172,9 @@ def fetch_direct(manifest, only=None):
             continue
         if s["adapter"] == "results_export":
             fetch_results_export(s, manifest)
+            continue
+        if s["adapter"] == "results_export_counties":
+            fetch_results_export_counties(s, manifest)
             continue
         if s["adapter"] == "clarity":
             fetch_clarity(s, manifest)

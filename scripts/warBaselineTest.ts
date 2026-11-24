@@ -1,7 +1,7 @@
 // WAR on its two baselines, side by side (2026-11-23).
 //   lean      lean + trend + E(year): a prediction of where the state or district should have landed
 //   own-year  the state's (district's) own vote that year with the race left out (the live baseline)
-// Both tables score the same races (statewide through WAR_STATEWIDE_LAST_YEAR, House through 2025).
+// Both tables score the same races (through WAR_STATEWIDE_LAST_YEAR).
 // The statewide section compares lean with own-year; the House section compares own-year-statewide
 // (House still modelled) with own-year, so each section isolates one change.
 //
@@ -90,7 +90,7 @@ for (const r of rows.filter((x) => x.own.year === 2026 && (x.own.state === "TX" 
   const oneSide = hp.filter((r, i, a) => a.findIndex((x) => x.o.state === r.o.state && x.o.race === r.o.race && x.o.year === r.o.year) === i);
   console.log(`\n\n══ House ══  candidate rows ${hp.length}, races ${oneSide.length}`);
   console.log(`  races wholly on the district's own vote ${oneSide.filter((r) => r.o.genericWeight >= 1).length} · part ${oneSide.filter((r) => r.o.genericWeight > 0 && r.o.genericWeight < 1).length} · modelled baseline only ${oneSide.filter((r) => r.o.genericWeight === 0).length}`);
-  for (const y of [2016, 2018, 2020, 2022, 2024]) { const v = oneSide.filter((r) => r.o.year === y); console.log(`    ${y}: ${v.length} races · whole ${v.filter((r) => r.o.genericWeight >= 1).length} · part ${v.filter((r) => r.o.genericWeight > 0 && r.o.genericWeight < 1).length} · none ${v.filter((r) => r.o.genericWeight === 0).length}`); }
+  for (const y of [2016, 2018, 2020, 2022, 2024, 2026]) { const v = oneSide.filter((r) => r.o.year === y); console.log(`    ${y}: ${v.length} races · whole ${v.filter((r) => r.o.genericWeight >= 1).length} · part ${v.filter((r) => r.o.genericWeight > 0 && r.o.genericWeight < 1).length} · none ${v.filter((r) => r.o.genericWeight === 0).length}`); }
   const cen = (b: "m" | "o") => { const out = new Map<HP, number>(); for (const y of new Set(hp.map((r) => r.o.year))) { const g = hp.filter((r) => r.o.year === y); const mu = mean(g.filter((r) => r.o.party === "R").map((r) => r[b].actual - r[b].expected)); for (const r of g) out.set(r, (r.o.party === "R" ? 1 : -1) * (r[b].actual - r[b].expected - mu)); } return out; };
   const sc = { m: cen("m"), o: cen("o") };
   const both = (label: string, ps: [HP, HP][]) => console.log(`  ${label.padEnd(50)} n ${String(ps.length).padStart(4)}   modelled ${f2(corr(ps.map(([a]) => sc.m.get(a)!), ps.map(([, b]) => sc.m.get(b)!)))}   own-year ${f2(corr(ps.map(([a]) => sc.o.get(a)!), ps.map(([, b]) => sc.o.get(b)!)))}`);
@@ -98,7 +98,8 @@ for (const r of rows.filter((x) => x.own.year === 2026 && (x.own.state === "TX" 
   const byC = new Map<string, HP[]>(); for (const r of hp) (byC.get(r.key) ?? byC.set(r.key, []).get(r.key)!).push(r);
   const cons: [HP, HP][] = []; for (const v of byC.values()) { v.sort((a, b) => a.o.year - b.o.year); for (let i = 1; i < v.length; i++) if (v[i].o.year !== v[i - 1].o.year) cons.push([v[i - 1], v[i]]); }
   console.log("repeat: a candidate's score against their next race's");
-  both("all", tr(cons)); both("second race 2018 or 2020", tr(cons.filter(([, b]) => b.o.year <= 2020))); both("second race 2022 or 2024", tr(cons.filter(([, b]) => b.o.year >= 2022)));
+  both("all", tr(cons)); both("second race 2018 or 2020", tr(cons.filter(([, b]) => b.o.year <= 2020))); both("second race 2022 or 2024", tr(cons.filter(([, b]) => b.o.year >= 2022 && b.o.year <= 2024))); both("second race 2026", tr(cons.filter(([, b]) => b.o.year === 2026)));
+  both("second race 2026, on the district's own vote", tr(cons.filter(([, b]) => b.o.year === 2026 && b.o.genericWeight >= 1))); both("second race 2026, modelled baseline", tr(cons.filter(([, b]) => b.o.year === 2026 && b.o.genericWeight === 0)));
   // The same seat on unchanged lines in consecutive elections, by how many of the two candidates
   // are the same people. With neither the same there is no candidate quality in common: what
   // still repeats is the district.
@@ -115,7 +116,7 @@ for (const r of rows.filter((x) => x.own.year === 2026 && (x.own.state === "TX" 
   both("repeat, both races wholly on the district's vote", tr(whole(cons)));
   const share = (b: "m" | "o") => { const g = new Map<string, HP[]>(); for (const r of hp) { const k = `${r.o.state}|${r.o.year}|${r.o.party}`; (g.get(k) ?? g.set(k, []).get(k)!).push(r); } let between = 0, n = 0; for (const v of g.values()) { if (v.length < 3) continue; const mu = mean(v.map((r) => sc[b].get(r)!)); between += v.length * mu * mu; n += v.length; } return between / n / mean(hp.map((r) => sc[b].get(r)! ** 2)); };
   console.log(`share of score variance that is a state-party-year average (3+ seats): modelled ${f2(share("m"))}   own-year ${f2(share("o"))}`);
-  console.log("spread of scores (sd, pts) by year: " + [2016, 2018, 2020, 2022, 2024].map((y) => { const v = hp.filter((r) => r.o.year === y); return `${y} ${sd(v.map((r) => sc.m.get(r)!)).toFixed(1)} → ${sd(v.map((r) => sc.o.get(r)!)).toFixed(1)}`; }).join(" · "));
+  console.log("spread of scores (sd, pts) by year: " + [2016, 2018, 2020, 2022, 2024, 2026].map((y) => { const v = hp.filter((r) => r.o.year === y); return `${y} ${sd(v.map((r) => sc.m.get(r)!)).toFixed(1)} → ${sd(v.map((r) => sc.o.get(r)!)).toFixed(1)}`; }).join(" · "));
   const mv = hp.map((r) => ({ r, d: r.o.war - r.m.war })).sort((a, b) => Math.abs(b.d) - Math.abs(a.d)); const ab = mv.map((x) => Math.abs(x.d)).sort((a, b) => a - b);
   console.log(`WAR change: median |Δ| ${f2(ab[Math.floor(ab.length / 2)])}, 90th pct ${f2(ab[Math.floor(ab.length * 0.9)])}; rows moved > 2: ${ab.filter((x) => x > 2).length}, > 5: ${ab.filter((x) => x > 5).length}, > 10: ${ab.filter((x) => x > 10).length}; WAR old against new r ${f2(corr(hp.map((r) => r.m.war), hp.map((r) => r.o.war)))}`);
   console.log("largest moves:");

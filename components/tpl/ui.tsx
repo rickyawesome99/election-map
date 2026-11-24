@@ -56,27 +56,27 @@ export function Segmented<T extends string>({ options, value, onChange, label }:
 }
 
 /** Wins Above Replacement, as a tinted chip. */
-export function WarChip({ war, size = "xs" }: { war: number | null | undefined; size?: "xs" | "sm" }) {
+export function WarChip({ war, size = "xs" }: { war: number | null | undefined; size?: "xs" | "sm" | "md" }) {
   if (war == null) return null;
   const tone = war > 0.05 ? "good" : war < -0.05 ? "bad" : "zero";
   const color = tone === "good" ? WAR_GOOD : tone === "bad" ? WAR_BAD : "var(--app-text-muted)";
   return (
-    <span className={`inline-flex items-center rounded-full font-bold tabular-nums ${size === "sm" ? "px-2 py-0.5 text-xs" : "px-1.5 py-px text-[11px]"}`}
+    <span className={`inline-flex items-center rounded-full font-bold tabular-nums ${size === "md" ? "min-w-[3.4rem] justify-center px-2.5 py-0.5 text-[13px] lg:text-sm" : size === "sm" ? "px-2 py-0.5 text-xs" : "px-1.5 py-px text-[11px]"}`}
       style={{ color, background: tone === "zero" ? "var(--app-tab-bg)" : `color-mix(in srgb, ${color} 14%, transparent)` }} title="Wins Above Replacement">
       {war > 0 ? "+" : war < 0 ? "−" : ""}{Math.abs(war).toFixed(1)}
     </span>
   );
 }
 
-/** A candidate name that opens their record in the candidates view. */
-export function CandidateLink({ name, label, state, party, war, tint, className = "" }: { name: string | undefined; /** Shown in place of the name (e.g. the surname); the full name goes in the tooltip. */ label?: string; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; /** Color the name by party instead of a D/R letter after it. */ tint?: boolean; className?: string }) {
+/** A candidate name that opens their candidate page. */
+export function CandidateLink({ name, label, state, party, war, tint, letter, className = "" }: { name: string | undefined; /** Shown in place of the name (e.g. the surname); the full name goes in the tooltip. */ label?: string; /** The race's state (two candidates can share a name). */ state?: string; party?: string; war?: number | null; /** Color the name by party instead of a D/R letter after it. */ tint?: boolean; /** With tint: keep the D/R letter as well. */ letter?: boolean; className?: string }) {
   if (!name) return <span style={VERY_MUTED}>—</span>;
   const p = party === "D" || party === "R" ? party : party ? "I" : undefined;
   const color = p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : p ? "var(--party-ind)" : undefined;
   return (
     <span className={`inline-flex flex-wrap items-center gap-1.5 ${className}`}>
-      <Link href={`/war?c=${encodeURIComponent(candidateSlug(name, state))}`} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: tint && color ? `color-mix(in srgb, ${color} 40%, transparent)` : "var(--app-border)", color: tint ? color : undefined }} title={label ? name : undefined}>{label ?? name}</Link>
-      {p && !tint && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
+      <Link href={`/candidates/${candidateSlug(name, state)}`} prefetch={false} className="underline decoration-dotted underline-offset-4 hover:decoration-solid" style={{ textDecorationColor: tint && color ? `color-mix(in srgb, ${color} 40%, transparent)` : "var(--app-border)", color: tint ? color : undefined }} title={label ? name : undefined}>{label ?? name}</Link>
+      {p && (!tint || letter) && <span className="text-[11px] font-bold" style={{ color: p === "R" ? "var(--party-rep)" : p === "D" ? "var(--party-dem)" : "var(--party-ind)" }}>{p}</span>}
       <WarChip war={war} />
     </span>
   );

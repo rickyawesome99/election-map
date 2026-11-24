@@ -16,11 +16,14 @@ test("a state legislator's page lists their generals and links back to the distr
   await expect(page.getByText("Lost").first()).toBeVisible();
 });
 
-test("a 2026 candidate without history shows the projected race, and spellings resolve to one page", async ({ page }) => {
+test("a 2026 candidate's race is a row of the electoral history with its result, and spellings resolve to one page", async ({ page }) => {
   await page.goto("/candidates/j-noah-spinner-oh");
-  await expect(page.getByRole("heading", { name: "2026 Race" })).toBeVisible();
+  // The counted 2026 race sits in the history, not in a "2026 Race" section with a projection.
+  await expect(page.getByRole("heading", { name: "Electoral History" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "2026 Race" })).toHaveCount(0);
   await expect(page.getByRole("link", { name: /Ohio State House · HD 31/ })).toBeVisible();
-  await expect(page.getByText(/P\(D\) \d+%/)).toBeVisible();
+  await expect(page.getByText(/^(Won|Lost)$/).first()).toBeVisible();
+  await expect(page.getByText(/\d+W.\d+L/).first()).toBeVisible();
   await expect(page.getByRole("link", { name: "Mike Kahoe" })).toBeVisible();
 
   // "Adam Miller" (2024, MEDSL) and "Adam C. Miller" (Klarner) are one person.

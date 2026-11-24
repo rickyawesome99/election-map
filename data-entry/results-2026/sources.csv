@@ -39,7 +39,7 @@ OR,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source re
 PA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
 RI,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Rhode Island Board of Elections (results/public/api ballot items): https://electionresults.ri.gov/results/public/api/elections/rhodeisland/2026StatewideGeneralElection/data/ballot-item/01000000-59ac-daed-66fe-08df1e27a40e
 SC,direct,clarity,South Carolina Election Commission,https://www.enr-scvotes.org/SC/127300,state;county;precinct,Clarity ENR; one detailxml.zip per county (46)
-SD,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,"Direct source not read yet: South Dakota Secretary of State ResultsExport.aspx (same platform as MT, but its export postback returns the page, not a file): https://electionresults.sd.gov/ResultsExport.aspx"
+SD,direct,results_export_counties,South Dakota Secretary of State,https://electionresults.sd.gov/ResultsExport.aspx,state;county;precinct,"Per-county ResultsExport workbooks (671 of 671 precincts); still titled Unofficial after the 2026-11-10 canvass; no party in the files (civicAPI's used)"
 TN,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
 TX,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source not read yet: Texas Secretary of State (civix ENR JSON): https://goelect.txelections.civixapps.com/api-ivis-system/api/s3/enr/election/53815
 UT,direct,enhanced_voting,Utah Lieutenant Governor,https://electionresults.utah.gov/cdn/results/Utah/export-General11032026.json,state;county,
@@ -48,4 +48,4 @@ VA,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,Direct source no
 WA,direct,enhanced_voting,Washington Secretary of State,https://results.votewa.gov/cdn/results/washington/export-20261103.json,state;county;precinct,
 WV,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
 WI,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
-WY,civicapi,civicapi,civicAPI,https://civicapi.org,state;county,
+WY,direct,wy_sos,Wyoming Secretary of State,https://sos.wyo.gov/Elections/Docs/2026/Results/General/2026_Wyoming_General_Results.zip,state;county;precinct,"Official canvass workbooks (dated 2026-11-09, certified 2026-11-10); civicAPI had uncontested legislative seats at 0 votes"

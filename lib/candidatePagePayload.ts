@@ -11,15 +11,35 @@ import type { StateLegCandidatePage } from "@/lib/stateLegCandidateIndex";
 import type { WarSlim } from "@/lib/modelSlices";
 import type { LegProjection, RaceMoney } from "@/components/candidates/StateLegRaceRow";
 
+/** A candidate's WAR row with the opponent's WAR in the same race (null when the opponent has no scored row). */
+export type CandidateWarRow = WarSlim & { oppWar?: number | null };
+
+/** A 2026 race as counted (data-entry results, the same files the race and district pages read),
+ *  ready to draw as a row of the candidate's electoral history. */
+export type CandidateResult2026 = {
+  contestants: { name: string; party: string; partyTag: string; votes: number | null; pct: number | null; winner: boolean; self: boolean; incumbent?: boolean; slug?: string }[];
+  /** Democratic share of the two-party vote, 0–100; null without a count. */
+  demShare: number | null;
+  /** R-positive, in points of all votes; null without a count. */
+  margin: number | null;
+  called: boolean;
+  /** Whether this candidate won; null until the race is called. */
+  won: boolean | null;
+  /** Share of the expected vote counted, 0–1, where known. */
+  counted: number | null;
+};
+
 export type CandidatePagePayload = {
   federal: CandidatePage | null;
   leg: StateLegCandidatePage | null;
   /** Aligned with leg.races: the 2026 projection (current races only) and the fundraising line. */
-  legRaces: { projection: LegProjection; money: RaceMoney }[];
+  legRaces: { projection: LegProjection; money: RaceMoney; result2026?: CandidateResult2026 | null }[];
   /** Aligned with federal.history: where each row links. */
   historyHrefs: string[];
+  /** Aligned with federal.history: the 2026 result of a current race, where one is on file. */
+  historyResults2026?: (CandidateResult2026 | null)[];
   /** Wins Above Replacement rows, the same numbers as /war. */
-  war: WarSlim[];
+  war: CandidateWarRow[];
 };
 
 /** `Record<slug, payload>` per shard: one file per state (state legislative slugs end in the

@@ -30,6 +30,11 @@ const read = (p: string) => fs.readFileSync(path.join(process.cwd(), p), "utf8")
 const num = (v: string | undefined) => Number(String(v ?? "").replace(/,/g, "")) || 0;
 const PLACEHOLDER = /^(Democratic|Republican) Candidate$/i;
 
+const appointedSenators = new Set(
+  parseCsv(read("data-entry/senate_seats.csv"))
+    .filter((r) => r.next_election === "2026" && /\*$/.test(r.incumbent ?? ""))
+    .map((r) => `${r.state_abbr}|${r.type === "Special" ? "Special" : "Regular"}`),
+);
 const rows = parseCsv(read("data-entry/results_2026_seats.csv"));
 const races: Tpl2026Race[] = [];
 let asOf = "";
@@ -51,8 +56,11 @@ for (const r of rows) {
     demCandidate: demName || undefined, repCandidate: repName || undefined,
     demParty: r.dem_party !== "D" ? r.dem_party : undefined, repParty: r.rep_party !== "R" ? r.rep_party : undefined,
     incumbent: r.rep_incumbent === "1" ? "R" : r.dem_incumbent === "1" ? "D" : "Open",
-    // The two appointed senators on the 2026 ballot (Moody FL, Husted OH), both in special elections.
-    appointed: office === "S" && r.special === "1" && (r.rep_incumbent === "1" || r.dem_incumbent === "1"),
+    // Appointed senators on the 2026 ballot, from the seat file's "R*" / "D*" incumbent marker:
+    // Moody (FL) and Husted (OH) in special elections, and Darline Graham (SC), appointed in July
+    // 2026 to a seat that was up in the regular election. Until 2026-11-24 only a special election
+    // set the flag, so Graham carried a full incumbency advantage she had never earned.
+    appointed: office === "S" && (r.rep_incumbent === "1" || r.dem_incumbent === "1") && appointedSenators.has(`${r.state}|${r.special === "1" ? "Special" : "Regular"}`),
     eligibility,
     countedShare: Number(r.counted_share) || 0,
     called: r.called === "1",

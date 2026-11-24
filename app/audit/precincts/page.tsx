@@ -1,5 +1,8 @@
 import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import coverageJson from "@/data/precincts/coverage.json";
+import { CERTIFIED_2026, CERTIFIED_2026_AS_OF, type Certification } from "@/data/precincts/certified2026";
+
+const fmtDate = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 
 export const metadata = {
   title: "Precinct Data Tracker",
@@ -95,6 +98,17 @@ export default function PrecinctTrackerPage() {
   const contests = tally.reconciled + tally.explained + tally.loaded + tally.missing;
   open.sort((a, b) => (a.cell.status === b.cell.status ? 0 : a.cell.status === "loaded" ? -1 : 1) || Math.max(Math.abs(b.cell.diffD ?? 0), Math.abs(b.cell.diffR ?? 0)) - Math.max(Math.abs(a.cell.diffD ?? 0), Math.abs(a.cell.diffR ?? 0)));
 
+  // 2026 certification: every certified state, plus uncertified states whose precinct rows are already loaded.
+  const cert = states
+    .map((st) => {
+      const cells = Object.values(coverage.states[st].years["2026"] ?? {});
+      const held = cells.filter((c) => c.status !== "na").length;
+      const done = cells.filter((c) => c.status === "reconciled" || c.status === "explained" || c.status === "loaded").length;
+      return { st, cert: CERTIFIED_2026[st] as Certification | undefined, held, done };
+    })
+    .filter((c) => c.cert || c.done > 0)
+    .sort((a, b) => (a.cert ? 0 : 1) - (b.cert ? 0 : 1) || (a.cert?.date ?? "").localeCompare(b.cert?.date ?? "") || a.st.localeCompare(b.st));
+
   const th = "px-1.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-left";
   const td = "px-1.5 py-1 text-xs";
 
@@ -180,7 +194,56 @@ export default function PrecinctTrackerPage() {
         </section>
 
         <section>
-          <SectionHeading n={2} title="Differences from the site&rsquo;s totals">
+          <SectionHeading n={2} title="2026 certification">
+            The precinct page shows a state&rsquo;s 2026 results only after the state certifies. Until then the
+            count is still moving, so loaded 2026 precinct rows for an uncertified state stay off the page. Certified states
+            with no precinct rows still need the state&rsquo;s precinct file read. List as of {CERTIFIED_2026_AS_OF}:{" "}
+            {cert.filter((c) => c.cert).length} states certified, {cert.filter((c) => c.cert && c.held > 0 && c.done === c.held).length} of
+            them with every 2026 contest loaded.
+          </SectionHeading>
+          <div style={{ overflowX: "auto" }}>
+            <table className="w-full" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
+              <thead>
+                <tr style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
+                  <th className={th}>State</th>
+                  <th className={th}>Certified</th>
+                  <th className={th}>By</th>
+                  <th className={th}>2026 contests</th>
+                  <th className={th}>Precinct page</th>
+                  <th className={th}>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                {cert.map((c) => (
+                  <tr key={c.st} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                    <td className={`${td} font-semibold`}>{c.st}</td>
+                    <td className={td} style={{ whiteSpace: "nowrap" }}>
+                      {c.cert ? <a href={c.cert.source} target="_blank" rel="noreferrer" style={{ textDecoration: "underline" }}>{fmtDate(c.cert.date)}</a> : "Not yet"}
+                    </td>
+                    <td className={td} style={{ color: "var(--app-text-muted)" }}>{c.cert?.body ?? "—"}</td>
+                    <td className={td} style={{ whiteSpace: "nowrap" }}>
+                      <span className="inline-flex items-center gap-2">
+                        <span className="inline-flex gap-[3px]">
+                          {offices.map((o) => (
+                            <Box key={o} cell={coverage.states[c.st]?.years["2026"]?.[o] ?? { status: "na" }} label={`${c.st} 2026 ${OFFICE_LABEL[o]}`} />
+                          ))}
+                        </span>
+                        {c.done}/{c.held}
+                      </span>
+                    </td>
+                    <td className={td} style={{ whiteSpace: "nowrap" }}>
+                      {c.cert ? (c.done ? "Shown" : "Waiting for precinct file") : "Held back until certified"}
+                    </td>
+                    <td className={td} style={{ color: "var(--app-text-muted)", minWidth: 280 }}>{c.cert?.note ?? ""}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <SectionHeading n={3} title="Differences from the site&rsquo;s totals">
             Contests where precinct votes are in but the statewide sum differs from the site&rsquo;s total, largest gap
             first. The difference is in points of the site&rsquo;s two-party vote. Typical causes: an independent the
             site counts in the Democratic column, uncontested seats left out of one source, countywide absentee votes

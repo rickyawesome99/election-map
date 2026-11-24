@@ -173,11 +173,11 @@ SC,governor,1,1,,,South Carolina Election Commission,0,0,1,1,0.009,
 SC,house,7,7,,,South Carolina Election Commission,0,0,7,7,0.049,
 SC,state_house,124,124,,,South Carolina Election Commission,0,1,124,124,2.301,0.0
 SC,state_senate,1,1,,,South Carolina Election Commission,0,0,1,1,0.0,0.0
-SD,senate,1,1,,,civicAPI,0,1,1,0,,
-SD,governor,1,1,,,civicAPI,0,1,1,0,,
-SD,house,1,1,,,civicAPI,0,1,1,0,,
-SD,state_house,37,37,,,civicAPI,0,1,37,0,,0.0
-SD,state_senate,35,35,,,civicAPI,0,1,35,0,,0.0
+SD,senate,1,1,,,South Dakota Secretary of State,0,0,1,1,0.0,
+SD,governor,1,1,,,South Dakota Secretary of State,0,0,1,1,0.0,
+SD,house,1,1,,,South Dakota Secretary of State,0,0,1,1,0.0,
+SD,state_house,37,37,,,South Dakota Secretary of State,0,1,37,37,3.36,0.0
+SD,state_senate,35,35,,,South Dakota Secretary of State,0,0,35,35,0.0,0.0
 TN,senate,1,1,,,civicAPI,0,0,1,0,,
 TN,governor,1,1,,,civicAPI,0,0,1,0,,
 TN,house,9,9,,,civicAPI,0,0,9,0,,
@@ -209,8 +209,8 @@ WI,governor,1,1,,,civicAPI,0,0,1,0,,
 WI,house,8,8,,,civicAPI,0,0,8,0,,
 WI,state_house,99,99,,,civicAPI,0,99,14,0,,0.0
 WI,state_senate,17,17,,,civicAPI,0,17,3,0,,0.0
-WY,senate,1,1,,,civicAPI,0,0,1,0,,
-WY,governor,1,1,,,civicAPI,0,0,1,0,,
-WY,house,1,1,,,civicAPI,0,0,1,0,,
-WY,state_house,62,62,,,civicAPI,0,62,34,0,,2.812
-WY,state_senate,17,17,,,civicAPI,0,17,13,0,,1.495
+WY,senate,1,1,,,Wyoming Secretary of State,0,1,1,1,0.555,
+WY,governor,1,1,,,Wyoming Secretary of State,0,1,1,1,0.647,
+WY,house,1,1,,,Wyoming Secretary of State,0,1,1,1,0.563,
+WY,state_house,62,62,,,Wyoming Secretary of State,0,28,62,62,2.893,0.0
+WY,state_senate,17,17,,,Wyoming Secretary of State,0,4,17,17,1.518,0.0

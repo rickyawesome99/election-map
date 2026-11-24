@@ -8,6 +8,8 @@ where the file has them, otherwise build.py sums the counties).
     hi_oe             HI               media.txt, tab-separated, by precinct split
     results_export    MT               ResultsExport.aspx xlsx (postback), county; see fetch.py
     clarity           SC               Clarity ENR, one detail.xml per county, every contest by precinct
+    results_export_counties  SD        ResultsExport.aspx per-county workbooks (postback per county), precinct
+    wy_sos            WY               SoS official results zip: precinct-by-precinct workbook, one sheet per county
 """
 import csv, io, re, zipfile
 from collections import defaultdict
@@ -205,4 +207,99 @@ def clarity(state):
     return [r for rows in general.values() for r in rows], unmatched
 
 
-ADAPTERS = {"clarity": clarity, "results_export": results_export, "enhanced_voting": enhanced_voting, "ncsbe": ncsbe, "mn_sos": mn_sos, "hi_oe": hi_oe}
+def results_export_counties(state):
+    """ResultsExport.aspx per-county workbooks (SD; raw/direct/SD/<County>.xlsx, see fetch.py): one sheet
+    per contest, a header row [contest, "Precinct", candidate, ...] (no party: build.py takes civicAPI's),
+    one row per precinct, then TOTALS, which is checked against the precinct sum. Some counties report
+    absentee ballots as one "Absentee Precinct" row; it stays in as its own unit, like NC's ABSENTEE rows."""
+    import glob
+    import openpyxl
+    out, unmatched = [], set()
+    for path in sorted(glob.glob(str(RAW / "direct" / state / "*.xlsx"))):
+        county = path.rsplit("/", 1)[1][:-5]
+        fips = county_fips(state, county)
+        if not fips:
+            unmatched.add(county)
+        wb = openpyxl.load_workbook(path, read_only=True)
+        for ws in wb.worksheets:
+            contest, cands, sums = None, None, defaultdict(int)
+            for row in ws.iter_rows(values_only=True):
+                if len(row) > 2 and row[1] == "Precinct" and row[0]:
+                    contest = re.sub(r"\s+", " ", str(row[0])).strip()
+                    cands = [re.sub(r"\s+", " ", str(c)).strip() if c else None for c in row[2:]] if classify(contest) else None
+                    if cands and classify(contest)[0] == "governor":  # "Larry Rhoden and Tony Venhuizen": the ticket's first name
+                        cands = [re.split(r"\s+and\s+", c)[0] if c else None for c in cands]
+                    continue
+                if not cands or not row[1]:
+                    continue
+                pct = re.sub(r"\s+", " ", str(row[1])).strip()
+                if pct.upper() == "TOTALS":
+                    for cand, v in zip(cands, row[2:]):
+                        if cand and num(v) != sums[cand]:
+                            raise ValueError(f"{state} {county} {contest} {cand}: precincts {sums[cand]} vs TOTALS {v}")
+                    cands = None
+                    continue
+                for cand, v in zip(cands, row[2:]):
+                    if cand:
+                        sums[cand] += num(v)
+                        r = _row(state, contest, "precinct", f"{fips}:{pct}", pct, cand, "", num(v), fips)
+                        if r:
+                            out.append(r)
+    return out, unmatched
+
+
+def wy_sos(state="WY"):
+    """Wyoming Secretary of State's official results zip (raw/direct/WY.zip) → "2026 County General PbP -
+    OFFICIAL.xlsx": one sheet per county; a row of contest names over a "Precinct" header row of candidates
+    ("Chuck\\nGray (R)", then Write-Ins / Overvotes / Undervotes); precincts "13-1" (House district-precinct)
+    below, which Excel reads as dates in a few counties (Carbon, Converse, Crook: "01-02" = 2 January).
+    Each county's own Total row is checked against its precinct sum. Legislative contests print as
+    "House District 13" / "Senate District 9"; they are passed to classify() as "State House …"."""
+    from datetime import datetime
+    import openpyxl
+    with zipfile.ZipFile(RAW / "direct" / "WY.zip") as z:
+        name = next(n for n in z.namelist() if "PbP - OFFICIAL" in n and "TBC" not in n)
+        wb = openpyxl.load_workbook(io.BytesIO(z.read(name)), read_only=True, data_only=True)
+    out, unmatched = [], set()
+    for sheet in wb.sheetnames:
+        fips = county_fips(state, sheet)
+        if not fips:
+            unmatched.add(sheet)
+        grid = [list(r) for r in wb[sheet].iter_rows(values_only=True)]
+        cols, sums = [], defaultdict(int)  # cols: (column, contest, candidate, party)
+        for i, r in enumerate(grid):
+            head = r[0]
+            if isinstance(head, datetime):
+                head = f"{head.month:02d}-{head.day:02d}"
+            head = str(head or "").strip()
+            if head == "Precinct" and i > 0:
+                contest, cols = "", []
+                for j in range(1, len(r)):
+                    contest = re.sub(r"\s+", " ", str(grid[i - 1][j])).strip() if grid[i - 1][j] else contest
+                    cell = re.sub(r"\s+", " ", str(r[j] or "")).strip()
+                    if not cell or is_overunder(cell):
+                        continue
+                    text = re.sub(r"^(House|Senate) District", r"State \1 District", contest)
+                    if not classify(text):
+                        continue
+                    m = re.fullmatch(r"(.*?)\s*\(([A-Z]+)\)", cell)
+                    cols.append((j, text, *((m.group(1), m.group(2)) if m else (cell, ""))))
+                continue
+            if cols and head == "Total":
+                for j, text, cand, _p in cols:
+                    if isinstance(r[j], (int, float)) and int(r[j]) != sums[(text, cand)]:
+                        raise ValueError(f"WY {sheet} {text} {cand}: precincts {sums[(text, cand)]} vs Total row {r[j]}")
+                continue
+            if not cols or not re.fullmatch(r"\d+-\d+", head):
+                continue  # titles, blank lines, "Precincts Continue on Next Page"
+            for j, text, cand, party in cols:
+                v = r[j] if j < len(r) else None
+                if isinstance(v, (int, float)):
+                    sums[(text, cand)] += int(v)
+                    row = _row(state, text, "precinct", f"{fips}:{head}", head, cand, party, int(v), fips)
+                    if row:
+                        out.append(row)
+    return out, unmatched
+
+
+ADAPTERS = {"results_export_counties": results_export_counties, "wy_sos": wy_sos, "clarity": clarity, "results_export": results_export, "enhanced_voting": enhanced_voting, "ncsbe": ncsbe, "mn_sos": mn_sos, "hi_oe": hi_oe}

@@ -231,8 +231,8 @@ senate,SC,,0,SC,Darline Graham,REP,R,952191,46.64,2,0,0,South Carolina Election 
 senate,SC,,0,SC,Kasie Whitener,LIB,L,23585,1.16,3,0,0,South Carolina Election Commission
 senate,SC,,0,SC,Mark Hackett,CON,O,16811,0.82,4,0,0,South Carolina Election Commission
 senate,SC,,0,SC,Write-In,,W,4899,0.24,5,,,South Carolina Election Commission
-senate,SD,,0,SD,Mike Rounds,Republican,R,184590,60.5,1,1,0,civicAPI
-senate,SD,,0,SD,Brian Bengs,Independent,I,120513,39.5,2,0,0,civicAPI
+senate,SD,,0,SD,Mike Rounds,Republican,R,184590,60.5,1,1,0,South Dakota Secretary of State
+senate,SD,,0,SD,Brian Bengs,Independent,I,120513,39.5,2,0,0,South Dakota Secretary of State
 senate,TN,,0,TN-2,Bill Hagerty,Republican,R,1138457,55.08,1,1,0,civicAPI
 senate,TN,,0,TN-2,Marquita Bradshaw,Democratic,D,886974,42.91,2,0,0,civicAPI
 senate,TN,,0,TN-2,Robert Jones,Independent,I,9398,0.45,3,0,0,civicAPI
@@ -258,8 +258,9 @@ senate,VA,,0,VA-2,Write-in,Nonpartisan,W,9801,0.27,3,0,0,civicAPI
 senate,WV,,0,WV-2,Shelley Moore Capito,Republican,R,266772,58.3,1,1,0,civicAPI
 senate,WV,,0,WV-2,Rachel Fetty Anderson,Democratic,D,173656,37.95,2,0,0,civicAPI
 senate,WV,,0,WV-2,S. Marshall Wilson,Constitution,O,17183,3.75,3,0,0,civicAPI
-senate,WY,,0,WY-2,Harriet Hageman,Republican,R,122174,65.24,1,1,0,civicAPI
-senate,WY,,0,WY-2,James W. Byrd,Democratic,D,65105,34.76,2,0,0,civicAPI
+senate,WY,,0,WY-2,Harriet Hageman,R,R,122174,64.88,1,1,0,Wyoming Secretary of State
+senate,WY,,0,WY-2,James W. Byrd,D,D,65105,34.57,2,0,0,Wyoming Secretary of State
+senate,WY,,0,WY-2,Write-Ins,,W,1039,0.55,3,,,Wyoming Secretary of State
 governor,AK,,0,AK,"Jonathan S. ""JKT"" Kreiss-Tomkins",Democratic,D,145449,51.23,1,1,0,civicAPI
 governor,AK,,0,AK,Bernadette M. Wilson,Republican,R,79336,27.94,2,0,0,civicAPI
 governor,AK,,0,AK,Dave Bronson,Republican,R,38767,13.65,3,0,0,civicAPI
@@ -412,8 +413,8 @@ governor,SC,,0,SC,Jermaine Johnson,DEM,D,960534,47.13,2,0,0,South Carolina Elect
 governor,SC,,0,SC,Michael Addison,UNC,O,16125,0.79,3,0,0,South Carolina Election Commission
 governor,SC,,0,SC,Walid Hakim,GRN,G,9078,0.45,4,0,0,South Carolina Election Commission
 governor,SC,,0,SC,Write-In,,W,1143,0.06,5,,,South Carolina Election Commission
-governor,SD,,0,SD,Larry Rhoden,Republican,R,193335,63.49,1,1,0,civicAPI
-governor,SD,,0,SD,Dan Ahlers,Democratic,D,111161,36.51,2,0,0,civicAPI
+governor,SD,,0,SD,Larry Rhoden,Republican,R,193335,63.49,1,1,0,South Dakota Secretary of State
+governor,SD,,0,SD,Dan Ahlers,Democratic,D,111161,36.51,2,0,0,South Dakota Secretary of State
 governor,TN,,0,TN,Marsha Blackburn,Republican,R,955298,45.46,1,1,0,civicAPI
 governor,TN,,0,TN,Jerri Green,Democratic,D,902615,42.96,2,0,0,civicAPI
 governor,TN,,0,TN,David Hatley,Independent,I,195288,9.29,3,0,0,civicAPI
@@ -455,9 +456,10 @@ governor,WI,,0,WI,Mark Grimek,Write-In,W,0,0.0,9,0,0,civicAPI
 governor,WI,,0,WI,Brayden Donnelly,Write-In,W,0,0.0,10,0,0,civicAPI
 governor,WI,,0,WI,Christine Kirchmiller,Write-In,W,0,0.0,11,0,0,civicAPI
 governor,WI,,0,WI,Reese Woods / Daniel Wagner,Write-In,W,0,0.0,12,0,0,civicAPI
-governor,WY,,0,WY,Eric Barlow,Republican,R,128496,68.56,1,1,0,civicAPI
-governor,WY,,0,WY,Rebecca Bextel,Constitution,O,31444,16.78,2,0,0,civicAPI
-governor,WY,,0,WY,Kenneth Casner,Democratic,D,27472,14.66,3,0,0,civicAPI
+governor,WY,,0,WY,Eric Barlow,R,R,128496,68.12,1,1,0,Wyoming Secretary of State
+governor,WY,,0,WY,Rebecca Bextel,C,O,31444,16.67,2,0,0,Wyoming Secretary of State
+governor,WY,,0,WY,Kenneth Casner,D,D,27472,14.56,3,0,0,Wyoming Secretary of State
+governor,WY,,0,WY,Write-Ins,,W,1212,0.64,4,,,Wyoming Secretary of State
 house,AK,1,0,0201,Nick Begich III,Republican,R,136337,47.6,1,1,0,civicAPI
 house,AK,1,0,0201,Bill Hill,Nonpartisan,I,119826,41.84,2,0,0,civicAPI
 house,AK,1,0,0201,Eric Hafner,Democratic,D,22715,7.93,3,0,0,civicAPI
@@ -1621,8 +1623,8 @@ house,SC,6,0,4506,Write-In,,W,318,0.12,3,,,South Carolina Election Commission
 house,SC,7,0,4507,Russell Fry,REP,R,172439,56.71,1,1,0,South Carolina Election Commission
 house,SC,7,0,4507,John Vincent,DEM,D,131445,43.23,2,0,0,South Carolina Election Commission
 house,SC,7,0,4507,Write-In,,W,204,0.07,3,,,South Carolina Election Commission
-house,SD,1,0,4601,Marty Jackley,Republican,R,195589,64.0,1,1,0,civicAPI
-house,SD,1,0,4601,Nikki Gronli,Democratic,D,109997,36.0,2,0,0,civicAPI
+house,SD,1,0,4601,Marty Jackley,Republican,R,195589,64.0,1,1,0,South Dakota Secretary of State
+house,SD,1,0,4601,Nikki Gronli,Democratic,D,109997,36.0,2,0,0,South Dakota Secretary of State
 house,TN,1,0,4701,Diana Harshbarger,Republican,R,133592,63.81,1,1,0,civicAPI
 house,TN,1,0,4701,Kristi Burke,Democratic,D,69207,33.06,2,0,0,civicAPI
 house,TN,1,0,4701,Joshua Ray Ashburn,Independent,I,2102,1.0,3,0,0,civicAPI
@@ -1833,34 +1835,34 @@ house,VT,1,0,5001,Adam Ortiz,Independent,I,2196,0.72,6,0,0,civicAPI
 house,VT,1,0,5001,Write-in,Nonpartisan,W,246,0.08,7,0,0,civicAPI
 house,WA,1,0,5301,Suzan DelBene,(Prefers Democratic Party),D,199681,67.5,1,1,0,Washington Secretary of State
 house,WA,1,0,5301,Mary Silva,(Prefers Republican Party),R,95175,32.17,2,0,0,Washington Secretary of State
-house,WA,1,0,5301,Write-in,,W,963,0.33,3,0,0,Washington Secretary of State
+house,WA,1,0,5301,Write-in,Nonpartisan,W,963,0.33,3,0,0,Washington Secretary of State
 house,WA,2,0,5302,Rick Larsen,(Prefers Democratic Party),D,231685,66.51,1,1,0,Washington Secretary of State
 house,WA,2,0,5302,Edwin H. Feller,(Prefers Republican Party),R,115300,33.1,2,0,0,Washington Secretary of State
-house,WA,2,0,5302,Write-in,,W,1373,0.39,3,0,0,Washington Secretary of State
+house,WA,2,0,5302,Write-in,Nonpartisan,W,1373,0.39,3,0,0,Washington Secretary of State
 house,WA,3,0,5303,Marie Gluesenkamp Perez,(Prefers Democratic Party),D,190386,53.68,1,1,0,Washington Secretary of State
 house,WA,3,0,5303,John Braun,(Prefers Republican Party),R,160969,45.39,2,0,0,Washington Secretary of State
-house,WA,3,0,5303,Write-in,,W,3299,0.93,3,0,0,Washington Secretary of State
+house,WA,3,0,5303,Write-in,Nonpartisan,W,3299,0.93,3,0,0,Washington Secretary of State
 house,WA,4,0,5304,Amanda McKinney,(Prefers Republican Party),R,131054,53.64,1,1,0,Washington Secretary of State
 house,WA,4,0,5304,John Duresky,(Prefers Democratic Party),D,112721,46.13,2,0,0,Washington Secretary of State
-house,WA,4,0,5304,Write-in,,W,567,0.23,3,0,0,Washington Secretary of State
+house,WA,4,0,5304,Write-in,Nonpartisan,W,567,0.23,3,0,0,Washington Secretary of State
 house,WA,5,0,5305,Michael Baumgartner,(Prefers Republican Party),R,172154,52.16,1,1,0,Washington Secretary of State
 house,WA,5,0,5305,Carmela Conroy,(Prefers Democratic Party),D,156703,47.48,2,0,0,Washington Secretary of State
-house,WA,5,0,5305,Write-in,,W,1183,0.36,3,0,0,Washington Secretary of State
+house,WA,5,0,5305,Write-in,Nonpartisan,W,1183,0.36,3,0,0,Washington Secretary of State
 house,WA,6,0,5306,Emily Randall,(Prefers Democratic Party),D,224970,62.47,1,1,0,Washington Secretary of State
 house,WA,6,0,5306,Teresa Fox,(Prefers Republican Party),R,134427,37.33,2,0,0,Washington Secretary of State
-house,WA,6,0,5306,Write-in,,W,708,0.2,3,0,0,Washington Secretary of State
+house,WA,6,0,5306,Write-in,Nonpartisan,W,708,0.2,3,0,0,Washington Secretary of State
 house,WA,7,0,5307,Pramila Jayapal,(Prefers Democratic Party),D,328188,87.63,1,1,0,Washington Secretary of State
 house,WA,7,0,5307,Nirav Sheth,(Prefers Republican Party),R,44989,12.01,2,0,0,Washington Secretary of State
-house,WA,7,0,5307,Write-in,,W,1357,0.36,3,0,0,Washington Secretary of State
+house,WA,7,0,5307,Write-in,Nonpartisan,W,1357,0.36,3,0,0,Washington Secretary of State
 house,WA,8,0,5308,Kim Schrier,(Prefers Democratic Party),D,195320,57.16,1,1,0,Washington Secretary of State
 house,WA,8,0,5308,Spencer Meline,(Prefers Republican Party),R,145598,42.61,2,0,0,Washington Secretary of State
-house,WA,8,0,5308,Write-in,,W,799,0.23,3,0,0,Washington Secretary of State
+house,WA,8,0,5308,Write-in,Nonpartisan,W,799,0.23,3,0,0,Washington Secretary of State
 house,WA,9,0,5309,Adam Smith,(Prefers Democratic Party),D,191970,75.73,1,1,0,Washington Secretary of State
 house,WA,9,0,5309,Doug Basler,(Prefers Republican Party),R,59674,23.54,2,0,0,Washington Secretary of State
-house,WA,9,0,5309,Write-in,,W,1834,0.72,3,0,0,Washington Secretary of State
+house,WA,9,0,5309,Write-in,Nonpartisan,W,1834,0.72,3,0,0,Washington Secretary of State
 house,WA,10,0,5310,Marilyn Strickland,(Prefers Democratic Party),D,178471,64.02,1,1,0,Washington Secretary of State
 house,WA,10,0,5310,Chris D. Chung,(Prefers Republican Party),R,98590,35.37,2,0,0,Washington Secretary of State
-house,WA,10,0,5310,Write-in,,W,1701,0.61,3,0,0,Washington Secretary of State
+house,WA,10,0,5310,Write-in,Nonpartisan,W,1701,0.61,3,0,0,Washington Secretary of State
 house,WI,1,0,5501,Mitchell Berman,Democratic,D,158839,51.96,1,1,0,civicAPI
 house,WI,1,0,5501,Bryan Steil,Republican,R,146885,48.04,2,0,0,civicAPI
 house,WI,2,0,5502,Mark Pocan,Democratic,D,317125,100.0,1,1,0,civicAPI
@@ -1890,10 +1892,11 @@ house,WV,1,0,5401,Vince George,Democratic,D,82705,39.63,2,0,0,civicAPI
 house,WV,1,0,5401,Belinda Fox-Spencer,Constitution,O,6921,3.32,3,0,0,civicAPI
 house,WV,2,0,5402,Riley Moore,Republican,R,144109,59.37,1,1,0,civicAPI
 house,WV,2,0,5402,Ace Parsi,Democratic,D,98615,40.63,2,0,0,civicAPI
-house,WY,1,0,5601,Chuck Gray,Republican,R,99906,54.53,1,1,0,civicAPI
-house,WY,1,0,5601,Lisa F. Kinney,Democratic,D,61689,33.67,2,0,0,civicAPI
-house,WY,1,0,5601,Shawn Johnson,Libertarian,L,13667,7.46,3,0,0,civicAPI
-house,WY,1,0,5601,Jeffrey Haggit,Constitution,O,7961,4.34,4,0,0,civicAPI
+house,WY,1,0,5601,Chuck Gray,R,R,99906,54.22,1,1,0,Wyoming Secretary of State
+house,WY,1,0,5601,Lisa F. Kinney,D,D,61689,33.48,2,0,0,Wyoming Secretary of State
+house,WY,1,0,5601,Shawn Johnson,L,L,13667,7.42,3,0,0,Wyoming Secretary of State
+house,WY,1,0,5601,Jeffrey Haggit,C,O,7961,4.32,4,0,0,Wyoming Secretary of State
+house,WY,1,0,5601,Write-Ins,,W,1031,0.56,5,,,Wyoming Secretary of State
 state_house,AK,1,0,AK-H-1,Jeremy Bynum,R,R,4002,58.61,1,1,,AP via NYT (unofficial)
 state_house,AK,1,0,AK-H-1,Grant EchoHawk,NP,I,2808,41.12,2,0,,AP via NYT (unofficial)
 state_house,AK,1,0,AK-H-1,Total Write-ins,OTH,W,18,0.26,3,0,,AP via NYT (unofficial)
@@ -3640,8 +3643,8 @@ state_house,HI,40,0,HI-H-40,Julie Reyes Oda,R,R,2919,51.38,1,1,0,Hawaii Office o
 state_house,HI,40,0,HI-H-40,Rose Martinez,D,D,2762,48.62,2,0,0,Hawaii Office of Elections
 state_house,HI,42,0,HI-H-42,Diamond Garcia,R,R,3002,51.11,1,1,0,Hawaii Office of Elections
 state_house,HI,42,0,HI-H-42,Anthony Makana Paris,D,D,2872,48.89,2,0,0,Hawaii Office of Elections
-state_house,HI,43,0,HI-state_house-43,Kanani Souza,,I,2591,51.01,1,0,0,Hawaii Office of Elections
-state_house,HI,43,0,HI-state_house-43,Sheila Medeiros,,I,2488,48.99,2,0,0,Hawaii Office of Elections
+state_house,HI,43,0,HI-state_house-43,Kanani Souza,Republican,R,2591,51.01,1,0,0,Hawaii Office of Elections
+state_house,HI,43,0,HI-state_house-43,Sheila Medeiros,Republican,R,2488,48.99,2,0,0,Hawaii Office of Elections
 state_house,HI,44,0,HI-H-44,Darius K. Kila,D,D,3190,63.37,1,1,0,Hawaii Office of Elections
 state_house,HI,44,0,HI-H-44,Charla (Kahealani) Weaver,R,R,1844,36.63,2,0,0,Hawaii Office of Elections
 state_house,HI,45,0,HI-H-45,Chris Muraoka,R,R,2447,54.15,1,1,0,Hawaii Office of Elections
@@ -9869,116 +9872,116 @@ state_house,SC,123,0,SC-H-123,Write-In,,W,6,0.03,3,,,South Carolina Election Com
 state_house,SC,124,0,SC-H-124,Shannon Erickson,REP,R,9956,57.76,1,1,0,South Carolina Election Commission
 state_house,SC,124,0,SC-H-124,Shauna Bishop,DEM,D,7265,42.15,2,0,0,South Carolina Election Commission
 state_house,SC,124,0,SC-H-124,Write-In,,W,17,0.1,3,,,South Carolina Election Commission
-state_house,SD,1,0,SD-H-1,Daniel Kjos,Republican,R,5446,39.06,1,1,0,civicAPI
-state_house,SD,1,0,SD-H-1,Nick Fosness,Republican,R,5144,36.89,2,1,0,civicAPI
-state_house,SD,1,0,SD-H-1,Courtney Gale Enfield,Democratic,D,3354,24.05,3,0,0,civicAPI
-state_house,SD,2,0,SD-H-2,Adam Long,Republican,R,6594,40.98,1,1,0,civicAPI
-state_house,SD,2,0,SD-H-2,Manuel Luschas,Republican,R,5309,32.99,2,1,0,civicAPI
-state_house,SD,2,0,SD-H-2,Blake Rife,Democratic,D,4188,26.03,3,0,0,civicAPI
-state_house,SD,3,0,SD-H-3,Spencer Sommers,Republican,R,4354,37.04,1,1,0,civicAPI
-state_house,SD,3,0,SD-H-3,Timothy Hanigan,Republican,R,3772,32.09,2,0,0,civicAPI
-state_house,SD,3,0,SD-H-3,Erin Ronayne Rudner,Democratic,D,3629,30.87,3,0,0,civicAPI
-state_house,SD,4,0,SD-H-4,Ryan Kohl,Republican,R,6856,39.5,1,1,0,civicAPI
-state_house,SD,4,0,SD-H-4,Fred Deutsch,Republican,R,6131,35.32,2,1,0,civicAPI
-state_house,SD,4,0,SD-H-4,Emelia Enquist,Democratic,D,2725,15.7,3,0,0,civicAPI
-state_house,SD,4,0,SD-H-4,Samuel Froehlke,Independent,I,1646,9.48,4,0,0,civicAPI
-state_house,SD,5,0,SD-H-5,Matt Roby,Republican,R,5825,46.04,1,1,0,civicAPI
-state_house,SD,5,0,SD-H-5,Byron I. Callies,Republican,R,4137,32.7,2,1,0,civicAPI
-state_house,SD,5,0,SD-H-5,Neal Tapio,Independent,I,2691,21.27,3,0,0,civicAPI
-state_house,SD,6,0,SD-H-6,Jerry Jongeling,Republican,R,4925,32.72,1,1,0,civicAPI
-state_house,SD,6,0,SD-H-6,Elliott Neff,Republican,R,4365,29.0,2,1,0,civicAPI
-state_house,SD,6,0,SD-H-6,Austin Wolf,Democratic,D,3066,20.37,3,0,0,civicAPI
-state_house,SD,6,0,SD-H-6,Garret M Campbell,Democratic,D,2694,17.9,4,0,0,civicAPI
-state_house,SD,7,0,SD-H-7,Mellissa Heermann,Republican,R,4699,37.1,1,1,0,civicAPI
-state_house,SD,7,0,SD-H-7,Roger DeGroot,Republican,R,4457,35.19,2,1,0,civicAPI
-state_house,SD,7,0,SD-H-7,Blake Stevens,Democratic,D,3509,27.71,3,0,0,civicAPI
-state_house,SD,8,0,SD-H-8,Jon Nelson,Republican,R,6188,52.06,1,1,0,civicAPI
-state_house,SD,8,0,SD-H-8,Todd Wilkinson,Republican,R,5699,47.94,2,1,0,civicAPI
-state_house,SD,9,0,SD-H-9,Tesa Schwans,Republican,R,4576,35.39,1,1,0,civicAPI
-state_house,SD,9,0,SD-H-9,Megan Tschetter,Republican,R,4255,32.91,2,1,0,civicAPI
-state_house,SD,9,0,SD-H-9,Amanda Potter,Democratic,D,4098,31.7,3,0,0,civicAPI
-state_house,SD,10,0,SD-H-10,Kathleen Brudvig,Democratic,D,4183,31.36,1,1,0,civicAPI
-state_house,SD,10,0,SD-H-10,Adam Bair,Democratic,D,3764,28.22,2,1,0,civicAPI
-state_house,SD,10,0,SD-H-10,John Pohlman,Republican,R,2852,21.38,3,0,0,civicAPI
-state_house,SD,10,0,SD-H-10,Kimberly Petterson,Republican,R,2540,19.04,4,0,0,civicAPI
-state_house,SD,11,0,SD-H-11,Sonja Mentzer,Democratic,D,4234,30.15,1,0,0,civicAPI
-state_house,SD,11,0,SD-H-11,Brian Mulder,Republican,R,4191,29.85,2,0,0,civicAPI
-state_house,SD,11,0,SD-H-11,Keri K. Weems,Republican,R,4062,28.93,3,0,0,civicAPI
-state_house,SD,11,0,SD-H-11,Tracey Quint,Libertarian,L,1554,11.07,4,0,0,civicAPI
-state_house,SD,12,0,SD-H-12,Stephanie Arne,Democratic,D,4270,36.35,1,1,0,civicAPI
-state_house,SD,12,0,SD-H-12,Amber Arlint,Republican,R,4126,35.12,2,1,0,civicAPI
-state_house,SD,12,0,SD-H-12,Kerry Loudenslager,Republican,R,3351,28.53,3,0,0,civicAPI
-state_house,SD,13,0,SD-H-13,Jack R Kolbeck,Republican,R,5874,35.09,1,1,0,civicAPI
-state_house,SD,13,0,SD-H-13,Ali Rae Horsted,Democratic,D,5588,33.39,2,1,0,civicAPI
-state_house,SD,13,0,SD-H-13,John Hughes,Republican,R,5276,31.52,3,0,0,civicAPI
-state_house,SD,14,0,SD-H-14,Taylor Rae Rehfeldt,Republican,R,5503,35.71,1,1,0,civicAPI
-state_house,SD,14,0,SD-H-14,Erinn Williams,Democratic,D,5258,34.12,2,1,0,civicAPI
-state_house,SD,14,0,SD-H-14,Tyler Tordsen,Republican,R,4651,30.18,3,0,0,civicAPI
-state_house,SD,15,0,SD-H-15,Kadyn Wittman,Democratic,D,3204,32.77,1,1,0,civicAPI
-state_house,SD,15,0,SD-H-15,June CopperStad,Democratic,D,2906,29.72,2,1,0,civicAPI
-state_house,SD,15,0,SD-H-15,Joni Tschetter,Republican,R,1886,19.29,3,0,0,civicAPI
-state_house,SD,15,0,SD-H-15,Andre Zachariahs,Republican,R,1781,18.22,4,0,0,civicAPI
-state_house,SD,16,0,SD-H-16,Lisa Bogue,Republican,R,5355,39.42,1,1,0,civicAPI
-state_house,SD,16,0,SD-H-16,John Shubeck,Republican,R,4837,35.6,2,1,0,civicAPI
-state_house,SD,16,0,SD-H-16,Tim Rhead,Democratic,D,3394,24.98,3,0,0,civicAPI
-state_house,SD,17,0,SD-H-17,Chris Kassin,Republican,R,4588,31.59,1,1,0,civicAPI
-state_house,SD,17,0,SD-H-17,Troy Redler,Republican,R,3797,26.14,2,1,0,civicAPI
-state_house,SD,17,0,SD-H-17,Leslie Gerrish,Democratic,D,3442,23.7,3,0,0,civicAPI
-state_house,SD,17,0,SD-H-17,Austin Brunick,Democratic,D,2697,18.57,4,0,0,civicAPI
-state_house,SD,18,0,SD-H-18,Mike Stevens,Republican,R,5106,35.61,1,1,0,civicAPI
-state_house,SD,18,0,SD-H-18,John R. Marquardt,Republican,R,3853,26.87,2,1,0,civicAPI
-state_house,SD,18,0,SD-H-18,Karen Springer,Democratic,D,3021,21.07,3,0,0,civicAPI
-state_house,SD,18,0,SD-H-18,Jarod Holcomb,Democratic,D,2357,16.44,4,0,0,civicAPI
-state_house,SD,19,0,SD-H-19,Jessica Bahmuller,Republican,R,5580,42.28,1,1,0,civicAPI
-state_house,SD,19,0,SD-H-19,Drew Peterson,Republican,R,5506,41.72,2,1,0,civicAPI
-state_house,SD,19,0,SD-H-19,Heidi Hora,Democratic,D,2112,16.0,3,0,0,civicAPI
-state_house,SD,20,0,SD-H-20,Jeff Bathke,Republican,R,4559,52.25,1,1,0,civicAPI
-state_house,SD,20,0,SD-H-20,Terry Sabers,Republican,R,4167,47.75,2,1,0,civicAPI
-state_house,SD,21,0,SD-H-21,Jim Halverson,Republican,R,5529,52.74,1,1,0,civicAPI
-state_house,SD,21,0,SD-H-21,Marty Overweg,Republican,R,4954,47.26,2,1,0,civicAPI
-state_house,SD,22,0,SD-H-22,Lana Greenfield,Republican,R,4376,39.17,1,1,0,civicAPI
-state_house,SD,22,0,SD-H-22,Kevin Van Diepen,Republican,R,4318,38.65,2,1,0,civicAPI
-state_house,SD,22,0,SD-H-22,Cully Williams,Democratic,D,2478,22.18,3,0,0,civicAPI
-state_house,SD,23,0,SD-H-23,Spencer Gosch,Republican,R,5579,42.72,1,1,0,civicAPI
-state_house,SD,23,0,SD-H-23,Dick Werner,Republican,R,5190,39.74,2,1,0,civicAPI
-state_house,SD,23,0,SD-H-23,Garett Heinz,Independent,I,2290,17.54,3,0,0,civicAPI
-state_house,SD,24,0,SD-H-24,Mike Weisgram,Republican,R,6309,50.74,1,1,0,civicAPI
-state_house,SD,24,0,SD-H-24,Laurie Gill,Republican,R,6124,49.26,2,1,0,civicAPI
-state_house,SD,25,0,SD-H-25,Carrie Sanderson,Republican,R,6325,57.88,1,1,0,civicAPI
-state_house,SD,25,0,SD-H-25,Nick Buchholz,Republican,R,4603,42.12,2,1,0,civicAPI
-state_house,SD,26A,0,SD-H-26A,Eric E. Emery,Democratic,D,1523,64.48,1,1,0,civicAPI
-state_house,SD,26A,0,SD-H-26A,Ron Frederick,Republican,R,839,35.52,2,0,0,civicAPI
-state_house,SD,26B,0,SD-H-26B,Angi Hanzlik,Republican,R,2420,68.3,1,1,0,civicAPI
-state_house,SD,26B,0,SD-H-26B,Lewis J. GrassRope,Democratic,D,1123,31.7,2,0,0,civicAPI
-state_house,SD,27,0,SD-H-27,Liz May,Republican,R,2455,33.65,1,1,0,civicAPI
-state_house,SD,27,0,SD-H-27,Evangeline Poor Bear,Independent,I,1602,21.96,2,0,0,civicAPI
-state_house,SD,27,0,SD-H-27,Joe Flood,Independent,I,1474,20.2,3,0,0,civicAPI
-state_house,SD,27,0,SD-H-27,Elizabeth Lone Eagle,Independent,I,1009,13.83,4,0,0,civicAPI
-state_house,SD,27,0,SD-H-27,Jay Yohner,Independent,I,756,10.36,5,0,0,civicAPI
-state_house,SD,28A,0,SD-H-28A,Jana Hunt,Republican,R,1832,58.55,1,1,0,civicAPI
-state_house,SD,28A,0,SD-H-28A,"Chastity ""Chas"" Jewett",Democratic,D,1297,41.45,2,0,0,civicAPI
-state_house,SD,28B,0,SD-H-28B,Travis Ismay,Republican,R,3274,100.0,1,1,0,civicAPI
-state_house,SD,29,0,SD-H-29,Gary L Cammack,Republican,R,5160,52.71,1,1,0,civicAPI
-state_house,SD,29,0,SD-H-29,Gary Deering,Republican,R,4630,47.29,2,1,0,civicAPI
-state_house,SD,30,0,SD-H-30,Trish Ladner,Republican,R,7726,41.44,1,1,0,civicAPI
-state_house,SD,30,0,SD-H-30,Tim R Goodwin,Republican,R,7389,39.63,2,1,0,civicAPI
-state_house,SD,30,0,SD-H-30,Bret Swanson,Democratic,D,3530,18.93,3,0,0,civicAPI
-state_house,SD,31,0,SD-H-31,Scott Odenbach,Republican,R,6253,38.81,1,1,0,civicAPI
-state_house,SD,31,0,SD-H-31,Mary J. Fitzgerald,Republican,R,5991,37.19,2,1,0,civicAPI
-state_house,SD,31,0,SD-H-31,Morgan Plucker,Democratic,D,3867,24.0,3,0,0,civicAPI
-state_house,SD,32,0,SD-H-32,Nicole Uhre-Balk,Democratic,D,3283,32.76,1,1,0,civicAPI
-state_house,SD,32,0,SD-H-32,Steve Duffy,Republican,R,2666,26.6,2,1,0,civicAPI
-state_house,SD,32,0,SD-H-32,Zachary Martin,Republican,R,2317,23.12,3,0,0,civicAPI
-state_house,SD,32,0,SD-H-32,Samuel Hare Sr,Independent,I,1756,17.52,4,0,0,civicAPI
-state_house,SD,33,0,SD-H-33,Curt Massie,Republican,R,5825,38.75,1,1,0,civicAPI
-state_house,SD,33,0,SD-H-33,Phil Jensen,Republican,R,5403,35.94,2,1,0,civicAPI
-state_house,SD,33,0,SD-H-33,Kari Hall,Democratic,D,3804,25.31,3,0,0,civicAPI
-state_house,SD,34,0,SD-H-34,Mike Derby,Republican,R,5453,38.26,1,1,0,civicAPI
-state_house,SD,34,0,SD-H-34,Becky J Drury,Republican,R,4941,34.67,2,1,0,civicAPI
-state_house,SD,34,0,SD-H-34,Victor Diego Dominquez,Democratic,D,3858,27.07,3,0,0,civicAPI
-state_house,SD,35,0,SD-H-35,Jason Fleming,Republican,R,3751,39.5,1,1,0,civicAPI
-state_house,SD,35,0,SD-H-35,Dale Bartscher,Republican,R,3262,34.35,2,1,0,civicAPI
-state_house,SD,35,0,SD-H-35,Ken Jeakins,Democratic,D,2483,26.15,3,0,0,civicAPI
+state_house,SD,1,0,SD-H-1,Daniel Kjos,Republican,R,5446,39.06,1,1,0,South Dakota Secretary of State
+state_house,SD,1,0,SD-H-1,Nick Fosness,Republican,R,5144,36.89,2,1,0,South Dakota Secretary of State
+state_house,SD,1,0,SD-H-1,Courtney Gale Enfield,Democratic,D,3354,24.05,3,0,0,South Dakota Secretary of State
+state_house,SD,2,0,SD-H-2,Adam Long,Republican,R,6594,40.98,1,1,0,South Dakota Secretary of State
+state_house,SD,2,0,SD-H-2,Manuel Luschas,Republican,R,5309,32.99,2,1,0,South Dakota Secretary of State
+state_house,SD,2,0,SD-H-2,Blake Rife,Democratic,D,4188,26.03,3,0,0,South Dakota Secretary of State
+state_house,SD,3,0,SD-H-3,Spencer Sommers,Republican,R,4354,37.04,1,1,0,South Dakota Secretary of State
+state_house,SD,3,0,SD-H-3,Timothy Hanigan,Republican,R,3772,32.09,2,0,0,South Dakota Secretary of State
+state_house,SD,3,0,SD-H-3,Erin Ronayne Rudner,Democratic,D,3629,30.87,3,0,0,South Dakota Secretary of State
+state_house,SD,4,0,SD-H-4,Ryan Kohl,Republican,R,6856,39.5,1,1,0,South Dakota Secretary of State
+state_house,SD,4,0,SD-H-4,Fred Deutsch,Republican,R,6131,35.32,2,1,0,South Dakota Secretary of State
+state_house,SD,4,0,SD-H-4,Emelia Enquist,Democratic,D,2725,15.7,3,0,0,South Dakota Secretary of State
+state_house,SD,4,0,SD-H-4,Samuel Froehlke,Independent,I,1646,9.48,4,0,0,South Dakota Secretary of State
+state_house,SD,5,0,SD-H-5,Matt Roby,Republican,R,5825,46.04,1,1,0,South Dakota Secretary of State
+state_house,SD,5,0,SD-H-5,Byron I. Callies,Republican,R,4137,32.7,2,1,0,South Dakota Secretary of State
+state_house,SD,5,0,SD-H-5,Neal Tapio,Independent,I,2691,21.27,3,0,0,South Dakota Secretary of State
+state_house,SD,6,0,SD-H-6,Jerry Jongeling,Republican,R,4925,32.72,1,1,0,South Dakota Secretary of State
+state_house,SD,6,0,SD-H-6,Elliott Neff,Republican,R,4365,29.0,2,1,0,South Dakota Secretary of State
+state_house,SD,6,0,SD-H-6,Austin Wolf,Democratic,D,3066,20.37,3,0,0,South Dakota Secretary of State
+state_house,SD,6,0,SD-H-6,Garret M Campbell,Democratic,D,2694,17.9,4,0,0,South Dakota Secretary of State
+state_house,SD,7,0,SD-H-7,Mellissa Heermann,Republican,R,4699,37.1,1,1,0,South Dakota Secretary of State
+state_house,SD,7,0,SD-H-7,Roger DeGroot,Republican,R,4457,35.19,2,1,0,South Dakota Secretary of State
+state_house,SD,7,0,SD-H-7,Blake Stevens,Democratic,D,3509,27.71,3,0,0,South Dakota Secretary of State
+state_house,SD,8,0,SD-H-8,Jon Nelson,Republican,R,6188,52.06,1,1,0,South Dakota Secretary of State
+state_house,SD,8,0,SD-H-8,Todd Wilkinson,Republican,R,5699,47.94,2,1,0,South Dakota Secretary of State
+state_house,SD,9,0,SD-H-9,Tesa Schwans,Republican,R,4576,35.39,1,1,0,South Dakota Secretary of State
+state_house,SD,9,0,SD-H-9,Megan Tschetter,Republican,R,4255,32.91,2,1,0,South Dakota Secretary of State
+state_house,SD,9,0,SD-H-9,Amanda Potter,Democratic,D,4098,31.7,3,0,0,South Dakota Secretary of State
+state_house,SD,10,0,SD-H-10,Kathleen Brudvig,Democratic,D,4183,31.36,1,1,0,South Dakota Secretary of State
+state_house,SD,10,0,SD-H-10,Adam Bair,Democratic,D,3764,28.22,2,1,0,South Dakota Secretary of State
+state_house,SD,10,0,SD-H-10,John Pohlman,Republican,R,2852,21.38,3,0,0,South Dakota Secretary of State
+state_house,SD,10,0,SD-H-10,Kimberly Petterson,Republican,R,2540,19.04,4,0,0,South Dakota Secretary of State
+state_house,SD,11,0,SD-H-11,Sonja Mentzer,Democratic,D,4234,30.15,1,0,0,South Dakota Secretary of State
+state_house,SD,11,0,SD-H-11,Brian Mulder,Republican,R,4191,29.85,2,0,0,South Dakota Secretary of State
+state_house,SD,11,0,SD-H-11,Keri K. Weems,Republican,R,4062,28.93,3,0,0,South Dakota Secretary of State
+state_house,SD,11,0,SD-H-11,Tracey Quint,Libertarian,L,1554,11.07,4,0,0,South Dakota Secretary of State
+state_house,SD,12,0,SD-H-12,Stephanie Arne,Democratic,D,4270,36.35,1,1,0,South Dakota Secretary of State
+state_house,SD,12,0,SD-H-12,Amber Arlint,Republican,R,4126,35.12,2,1,0,South Dakota Secretary of State
+state_house,SD,12,0,SD-H-12,Kerry Loudenslager,Republican,R,3351,28.53,3,0,0,South Dakota Secretary of State
+state_house,SD,13,0,SD-H-13,Jack R Kolbeck,Republican,R,5874,35.09,1,1,0,South Dakota Secretary of State
+state_house,SD,13,0,SD-H-13,Ali Rae Horsted,Democratic,D,5588,33.39,2,1,0,South Dakota Secretary of State
+state_house,SD,13,0,SD-H-13,John Hughes,Republican,R,5276,31.52,3,0,0,South Dakota Secretary of State
+state_house,SD,14,0,SD-H-14,Taylor Rae Rehfeldt,Republican,R,5503,35.71,1,1,0,South Dakota Secretary of State
+state_house,SD,14,0,SD-H-14,Erinn Williams,Democratic,D,5258,34.12,2,1,0,South Dakota Secretary of State
+state_house,SD,14,0,SD-H-14,Tyler Tordsen,Republican,R,4651,30.18,3,0,0,South Dakota Secretary of State
+state_house,SD,15,0,SD-H-15,Kadyn Wittman,Democratic,D,3204,32.77,1,1,0,South Dakota Secretary of State
+state_house,SD,15,0,SD-H-15,June CopperStad,Democratic,D,2906,29.72,2,1,0,South Dakota Secretary of State
+state_house,SD,15,0,SD-H-15,Joni Tschetter,Republican,R,1886,19.29,3,0,0,South Dakota Secretary of State
+state_house,SD,15,0,SD-H-15,Andre Zachariahs,Republican,R,1781,18.22,4,0,0,South Dakota Secretary of State
+state_house,SD,16,0,SD-H-16,Lisa Bogue,Republican,R,5355,39.42,1,1,0,South Dakota Secretary of State
+state_house,SD,16,0,SD-H-16,John Shubeck,Republican,R,4837,35.6,2,1,0,South Dakota Secretary of State
+state_house,SD,16,0,SD-H-16,Tim Rhead,Democratic,D,3394,24.98,3,0,0,South Dakota Secretary of State
+state_house,SD,17,0,SD-H-17,Chris Kassin,Republican,R,4588,31.59,1,1,0,South Dakota Secretary of State
+state_house,SD,17,0,SD-H-17,Troy Redler,Republican,R,3797,26.14,2,1,0,South Dakota Secretary of State
+state_house,SD,17,0,SD-H-17,Leslie Gerrish,Democratic,D,3442,23.7,3,0,0,South Dakota Secretary of State
+state_house,SD,17,0,SD-H-17,Austin Brunick,Democratic,D,2697,18.57,4,0,0,South Dakota Secretary of State
+state_house,SD,18,0,SD-H-18,Mike Stevens,Republican,R,5106,35.61,1,1,0,South Dakota Secretary of State
+state_house,SD,18,0,SD-H-18,John R. Marquardt,Republican,R,3853,26.87,2,1,0,South Dakota Secretary of State
+state_house,SD,18,0,SD-H-18,Karen Springer,Democratic,D,3021,21.07,3,0,0,South Dakota Secretary of State
+state_house,SD,18,0,SD-H-18,Jarod Holcomb,Democratic,D,2357,16.44,4,0,0,South Dakota Secretary of State
+state_house,SD,19,0,SD-H-19,Jessica Bahmuller,Republican,R,5580,42.28,1,1,0,South Dakota Secretary of State
+state_house,SD,19,0,SD-H-19,Drew Peterson,Republican,R,5506,41.72,2,1,0,South Dakota Secretary of State
+state_house,SD,19,0,SD-H-19,Heidi Hora,Democratic,D,2112,16.0,3,0,0,South Dakota Secretary of State
+state_house,SD,20,0,SD-H-20,Jeff Bathke,Republican,R,4559,52.25,1,1,0,South Dakota Secretary of State
+state_house,SD,20,0,SD-H-20,Terry Sabers,Republican,R,4167,47.75,2,1,0,South Dakota Secretary of State
+state_house,SD,21,0,SD-H-21,Jim Halverson,Republican,R,5529,52.74,1,1,0,South Dakota Secretary of State
+state_house,SD,21,0,SD-H-21,Marty Overweg,Republican,R,4954,47.26,2,1,0,South Dakota Secretary of State
+state_house,SD,22,0,SD-H-22,Lana Greenfield,Republican,R,4376,39.17,1,1,0,South Dakota Secretary of State
+state_house,SD,22,0,SD-H-22,Kevin Van Diepen,Republican,R,4318,38.65,2,1,0,South Dakota Secretary of State
+state_house,SD,22,0,SD-H-22,Cully Williams,Democratic,D,2478,22.18,3,0,0,South Dakota Secretary of State
+state_house,SD,23,0,SD-H-23,Spencer Gosch,Republican,R,5579,42.72,1,1,0,South Dakota Secretary of State
+state_house,SD,23,0,SD-H-23,Dick Werner,Republican,R,5190,39.74,2,1,0,South Dakota Secretary of State
+state_house,SD,23,0,SD-H-23,Garett Heinz,Independent,I,2290,17.54,3,0,0,South Dakota Secretary of State
+state_house,SD,24,0,SD-H-24,Mike Weisgram,Republican,R,6309,50.74,1,1,0,South Dakota Secretary of State
+state_house,SD,24,0,SD-H-24,Laurie Gill,Republican,R,6124,49.26,2,1,0,South Dakota Secretary of State
+state_house,SD,25,0,SD-H-25,Carrie Sanderson,Republican,R,6325,57.88,1,1,0,South Dakota Secretary of State
+state_house,SD,25,0,SD-H-25,Nick Buchholz,Republican,R,4603,42.12,2,1,0,South Dakota Secretary of State
+state_house,SD,26A,0,SD-H-26A,Eric E. Emery,Democratic,D,1523,64.48,1,1,0,South Dakota Secretary of State
+state_house,SD,26A,0,SD-H-26A,Ron Frederick,Republican,R,839,35.52,2,0,0,South Dakota Secretary of State
+state_house,SD,26B,0,SD-H-26B,Angi Hanzlik,Republican,R,2420,68.3,1,1,0,South Dakota Secretary of State
+state_house,SD,26B,0,SD-H-26B,Lewis J. GrassRope,Democratic,D,1123,31.7,2,0,0,South Dakota Secretary of State
+state_house,SD,27,0,SD-H-27,Liz May,Republican,R,2455,33.65,1,1,0,South Dakota Secretary of State
+state_house,SD,27,0,SD-H-27,Evangeline Poor Bear,Independent,I,1602,21.96,2,0,0,South Dakota Secretary of State
+state_house,SD,27,0,SD-H-27,Joe Flood,Independent,I,1474,20.2,3,0,0,South Dakota Secretary of State
+state_house,SD,27,0,SD-H-27,Elizabeth Lone Eagle,Independent,I,1009,13.83,4,0,0,South Dakota Secretary of State
+state_house,SD,27,0,SD-H-27,Jay Yohner,Independent,I,756,10.36,5,0,0,South Dakota Secretary of State
+state_house,SD,28A,0,SD-H-28A,Jana Hunt,Republican,R,1832,58.55,1,1,0,South Dakota Secretary of State
+state_house,SD,28A,0,SD-H-28A,"Chastity ""Chas"" Jewett",Democratic,D,1297,41.45,2,0,0,South Dakota Secretary of State
+state_house,SD,28B,0,SD-H-28B,Travis Ismay,Republican,R,3384,100.0,1,1,0,South Dakota Secretary of State
+state_house,SD,29,0,SD-H-29,Gary L Cammack,Republican,R,5160,52.71,1,1,0,South Dakota Secretary of State
+state_house,SD,29,0,SD-H-29,Gary Deering,Republican,R,4630,47.29,2,1,0,South Dakota Secretary of State
+state_house,SD,30,0,SD-H-30,Trish Ladner,Republican,R,7726,41.44,1,1,0,South Dakota Secretary of State
+state_house,SD,30,0,SD-H-30,Tim R Goodwin,Republican,R,7389,39.63,2,1,0,South Dakota Secretary of State
+state_house,SD,30,0,SD-H-30,Bret Swanson,Democratic,D,3530,18.93,3,0,0,South Dakota Secretary of State
+state_house,SD,31,0,SD-H-31,Scott Odenbach,Republican,R,6253,38.81,1,1,0,South Dakota Secretary of State
+state_house,SD,31,0,SD-H-31,Mary J. Fitzgerald,Republican,R,5991,37.19,2,1,0,South Dakota Secretary of State
+state_house,SD,31,0,SD-H-31,Morgan Plucker,Democratic,D,3867,24.0,3,0,0,South Dakota Secretary of State
+state_house,SD,32,0,SD-H-32,Nicole Uhre-Balk,Democratic,D,3283,32.76,1,1,0,South Dakota Secretary of State
+state_house,SD,32,0,SD-H-32,Steve Duffy,Republican,R,2666,26.6,2,1,0,South Dakota Secretary of State
+state_house,SD,32,0,SD-H-32,Zachary Martin,Republican,R,2317,23.12,3,0,0,South Dakota Secretary of State
+state_house,SD,32,0,SD-H-32,Samuel Hare Sr,Independent,I,1756,17.52,4,0,0,South Dakota Secretary of State
+state_house,SD,33,0,SD-H-33,Curt Massie,Republican,R,5825,38.75,1,1,0,South Dakota Secretary of State
+state_house,SD,33,0,SD-H-33,Phil Jensen,Republican,R,5403,35.94,2,1,0,South Dakota Secretary of State
+state_house,SD,33,0,SD-H-33,Kari Hall,Democratic,D,3804,25.31,3,0,0,South Dakota Secretary of State
+state_house,SD,34,0,SD-H-34,Mike Derby,Republican,R,5453,38.26,1,1,0,South Dakota Secretary of State
+state_house,SD,34,0,SD-H-34,Becky J Drury,Republican,R,4941,34.67,2,1,0,South Dakota Secretary of State
+state_house,SD,34,0,SD-H-34,Victor Diego Dominquez,Democratic,D,3858,27.07,3,0,0,South Dakota Secretary of State
+state_house,SD,35,0,SD-H-35,Jason Fleming,Republican,R,3751,39.5,1,1,0,South Dakota Secretary of State
+state_house,SD,35,0,SD-H-35,Dale Bartscher,Republican,R,3262,34.35,2,1,0,South Dakota Secretary of State
+state_house,SD,35,0,SD-H-35,Ken Jeakins,Democratic,D,2483,26.15,3,0,0,South Dakota Secretary of State
 state_house,TN,1,0,TN-H-1,Jessica Means,Republican,R,0,0,1,1,0,civicAPI
 state_house,TN,2,0,TN-H-2,Gary Stidham,Republican,R,0,0,1,1,0,civicAPI
 state_house,TN,3,0,TN-H-3,Timothy Hill,Republican,R,15151,76.85,1,1,0,civicAPI
@@ -10918,286 +10921,286 @@ state_house,VT,windsorwindham,0,VT-H-windsorwindham,Thomas Charlton,R,R,916,40.4
 state_house,VT,windsorwindham,0,VT-H-windsorwindham,Total Write-ins,OTH,W,4,0.18,3,0,,AP via NYT (unofficial)
 state_house,WA,1-P1,0,WA-H-1-P1,Davina Duerr,(Prefers Democratic Party),D,51940,73.04,1,1,0,Washington Secretary of State
 state_house,WA,1-P1,0,WA-H-1-P1,Maggie Wang,(Prefers Republican Party),R,19083,26.84,2,0,0,Washington Secretary of State
-state_house,WA,1-P1,0,WA-H-1-P1,Write-in,,W,86,0.12,3,0,0,Washington Secretary of State
+state_house,WA,1-P1,0,WA-H-1-P1,Write-in,Nonpartisan,W,86,0.12,3,0,0,Washington Secretary of State
 state_house,WA,1-P2,0,WA-H-1-P2,Shelley Kloba,(Prefers Democratic Party),D,51341,72.46,1,1,0,Washington Secretary of State
 state_house,WA,1-P2,0,WA-H-1-P2,Cliff Moon,(Prefers Republican Party),R,19397,27.37,2,0,0,Washington Secretary of State
-state_house,WA,1-P2,0,WA-H-1-P2,Write-in,,W,121,0.17,3,0,0,Washington Secretary of State
+state_house,WA,1-P2,0,WA-H-1-P2,Write-in,Nonpartisan,W,121,0.17,3,0,0,Washington Secretary of State
 state_house,WA,2-P1,0,WA-H-2-P1,Andrew Barkis,(Prefers Republican Party),R,33962,56.84,1,1,0,Washington Secretary of State
 state_house,WA,2-P1,0,WA-H-2-P1,William Dehnel,(Prefers Labor Democrat Party),D,25714,43.03,2,0,0,Washington Secretary of State
-state_house,WA,2-P1,0,WA-H-2-P1,Write-in,,W,79,0.13,3,0,0,Washington Secretary of State
+state_house,WA,2-P1,0,WA-H-2-P1,Write-in,Nonpartisan,W,79,0.13,3,0,0,Washington Secretary of State
 state_house,WA,2-P2,0,WA-H-2-P2,Matt Marshall,(Prefers Republican Party),R,33772,56.43,1,1,0,Washington Secretary of State
 state_house,WA,2-P2,0,WA-H-2-P2,Angela Taylor,(Prefers Democratic Party),D,26006,43.45,2,0,0,Washington Secretary of State
-state_house,WA,2-P2,0,WA-H-2-P2,Write-in,,W,69,0.12,3,0,0,Washington Secretary of State
+state_house,WA,2-P2,0,WA-H-2-P2,Write-in,Nonpartisan,W,69,0.12,3,0,0,Washington Secretary of State
 state_house,WA,3-P1,0,WA-H-3-P1,Natasha Hill,(Prefers Democrat Party),D,42997,66.13,1,1,0,Washington Secretary of State
 state_house,WA,3-P1,0,WA-H-3-P1,Tony Kiepe,(Prefers Republican Party),R,21890,33.67,2,0,0,Washington Secretary of State
-state_house,WA,3-P1,0,WA-H-3-P1,Write-in,,W,135,0.21,3,0,0,Washington Secretary of State
+state_house,WA,3-P1,0,WA-H-3-P1,Write-in,Nonpartisan,W,135,0.21,3,0,0,Washington Secretary of State
 state_house,WA,3-P2,0,WA-H-3-P2,Luc Jasmin III,(Prefers Democratic Party),D,41687,64.18,1,1,0,Washington Secretary of State
 state_house,WA,3-P2,0,WA-H-3-P2,Natalie Poulson,(Prefers Republican Party),R,23152,35.65,2,0,0,Washington Secretary of State
-state_house,WA,3-P2,0,WA-H-3-P2,Write-in,,W,111,0.17,3,0,0,Washington Secretary of State
+state_house,WA,3-P2,0,WA-H-3-P2,Write-in,Nonpartisan,W,111,0.17,3,0,0,Washington Secretary of State
 state_house,WA,4-P1,0,WA-H-4-P1,Hillary Q. Pham,(Prefers Republican Party),R,29663,49.38,1,1,0,Washington Secretary of State
 state_house,WA,4-P1,0,WA-H-4-P1,Trent Maier,(Prefers Republican Party),R,26442,44.02,2,0,0,Washington Secretary of State
-state_house,WA,4-P1,0,WA-H-4-P1,Write-in,,W,3961,6.59,3,0,0,Washington Secretary of State
+state_house,WA,4-P1,0,WA-H-4-P1,Write-in,Nonpartisan,W,3961,6.59,3,0,0,Washington Secretary of State
 state_house,WA,4-P2,0,WA-H-4-P2,Rob Chase,(Prefers Republican Party),R,38760,56.67,1,1,0,Washington Secretary of State
 state_house,WA,4-P2,0,WA-H-4-P2,Rob Tupper,(Prefers Democratic Party),D,29457,43.07,2,0,0,Washington Secretary of State
-state_house,WA,4-P2,0,WA-H-4-P2,Write-in,,W,183,0.27,3,0,0,Washington Secretary of State
+state_house,WA,4-P2,0,WA-H-4-P2,Write-in,Nonpartisan,W,183,0.27,3,0,0,Washington Secretary of State
 state_house,WA,5-P1,0,WA-H-5-P1,Zach Hall,(Prefers Democratic Party),D,41418,56.63,1,1,0,Washington Secretary of State
 state_house,WA,5-P1,0,WA-H-5-P1,Michelle Bennett,(Prefers Republican Party),R,31655,43.28,2,0,0,Washington Secretary of State
-state_house,WA,5-P1,0,WA-H-5-P1,Write-in,,W,66,0.09,3,0,0,Washington Secretary of State
+state_house,WA,5-P1,0,WA-H-5-P1,Write-in,Nonpartisan,W,66,0.09,3,0,0,Washington Secretary of State
 state_house,WA,5-P2,0,WA-H-5-P2,Lisa Callan,(Prefers Democratic Party),D,42578,58.46,1,1,0,Washington Secretary of State
 state_house,WA,5-P2,0,WA-H-5-P2,Patrick Peacock,(Prefers Republican Party),R,30180,41.44,2,0,0,Washington Secretary of State
-state_house,WA,5-P2,0,WA-H-5-P2,Write-in,,W,73,0.1,3,0,0,Washington Secretary of State
+state_house,WA,5-P2,0,WA-H-5-P2,Write-in,Nonpartisan,W,73,0.1,3,0,0,Washington Secretary of State
 state_house,WA,6-P1,0,WA-H-6-P1,Alan Nolan,(Prefers Republican Party),R,33953,53.64,1,1,0,Washington Secretary of State
 state_house,WA,6-P1,0,WA-H-6-P1,Michaela Kelso,(Prefers Democratic Party),D,29219,46.16,2,0,0,Washington Secretary of State
-state_house,WA,6-P1,0,WA-H-6-P1,Write-in,,W,124,0.2,3,0,0,Washington Secretary of State
+state_house,WA,6-P1,0,WA-H-6-P1,Write-in,Nonpartisan,W,124,0.2,3,0,0,Washington Secretary of State
 state_house,WA,6-P2,0,WA-H-6-P2,Jonathan Bingle,(Prefers Republican Party),R,35863,56.64,1,1,0,Washington Secretary of State
 state_house,WA,6-P2,0,WA-H-6-P2,Julia Payne,(Prefers Democratic Party),D,27329,43.16,2,0,0,Washington Secretary of State
-state_house,WA,6-P2,0,WA-H-6-P2,Write-in,,W,130,0.21,3,0,0,Washington Secretary of State
+state_house,WA,6-P2,0,WA-H-6-P2,Write-in,Nonpartisan,W,130,0.21,3,0,0,Washington Secretary of State
 state_house,WA,7-P1,0,WA-H-7-P1,Andrew Engell,(Prefers Republican Party),R,49831,96.44,1,1,0,Washington Secretary of State
-state_house,WA,7-P1,0,WA-H-7-P1,Write-in,,W,1840,3.56,2,0,0,Washington Secretary of State
+state_house,WA,7-P1,0,WA-H-7-P1,Write-in,Nonpartisan,W,1840,3.56,2,0,0,Washington Secretary of State
 state_house,WA,7-P2,0,WA-H-7-P2,Hunter Abell,(Prefers Republican Party),R,49329,96.55,1,1,0,Washington Secretary of State
-state_house,WA,7-P2,0,WA-H-7-P2,Write-in,,W,1762,3.45,2,0,0,Washington Secretary of State
+state_house,WA,7-P2,0,WA-H-7-P2,Write-in,Nonpartisan,W,1762,3.45,2,0,0,Washington Secretary of State
 state_house,WA,8-P1,0,WA-H-8-P1,Stephanie Barnard,(Prefers Republican Party),R,40312,96.56,1,1,0,Washington Secretary of State
-state_house,WA,8-P1,0,WA-H-8-P1,Write-in,,W,1435,3.44,2,0,0,Washington Secretary of State
+state_house,WA,8-P1,0,WA-H-8-P1,Write-in,Nonpartisan,W,1435,3.44,2,0,0,Washington Secretary of State
 state_house,WA,8-P2,0,WA-H-8-P2,April Connors,(Prefers Republican Party),R,40374,96.52,1,1,0,Washington Secretary of State
-state_house,WA,8-P2,0,WA-H-8-P2,Write-in,,W,1456,3.48,2,0,0,Washington Secretary of State
+state_house,WA,8-P2,0,WA-H-8-P2,Write-in,Nonpartisan,W,1456,3.48,2,0,0,Washington Secretary of State
 state_house,WA,9-P1,0,WA-H-9-P1,Mary Dye,(Prefers Republican Party),R,46392,93.35,1,1,0,Washington Secretary of State
-state_house,WA,9-P1,0,WA-H-9-P1,Write-in,,W,3304,6.65,2,0,0,Washington Secretary of State
+state_house,WA,9-P1,0,WA-H-9-P1,Write-in,Nonpartisan,W,3304,6.65,2,0,0,Washington Secretary of State
 state_house,WA,9-P2,0,WA-H-9-P2,Joe Schmick,(Prefers Republican Party),R,40373,60.84,1,1,0,Washington Secretary of State
 state_house,WA,9-P2,0,WA-H-9-P2,Karina Wallace,(Prefers Democratic Party),D,25875,38.99,2,0,0,Washington Secretary of State
-state_house,WA,9-P2,0,WA-H-9-P2,Write-in,,W,107,0.16,3,0,0,Washington Secretary of State
+state_house,WA,9-P2,0,WA-H-9-P2,Write-in,Nonpartisan,W,107,0.16,3,0,0,Washington Secretary of State
 state_house,WA,10-P1,0,WA-H-10-P1,Clyde Shavers,(Prefers Democratic Party),D,43185,56.55,1,1,0,Washington Secretary of State
 state_house,WA,10-P1,0,WA-H-10-P1,Robert (Chili) Hicks,(Prefers Republican Party),R,33081,43.32,2,0,0,Washington Secretary of State
-state_house,WA,10-P1,0,WA-H-10-P1,Write-in,,W,102,0.13,3,0,0,Washington Secretary of State
+state_house,WA,10-P1,0,WA-H-10-P1,Write-in,Nonpartisan,W,102,0.13,3,0,0,Washington Secretary of State
 state_house,WA,10-P2,0,WA-H-10-P2,Dave Paul,(Prefers Democratic Party),D,44484,58.39,1,1,0,Washington Secretary of State
 state_house,WA,10-P2,0,WA-H-10-P2,Tim Hazelo,(Prefers Republican Party),R,31607,41.48,2,0,0,Washington Secretary of State
-state_house,WA,10-P2,0,WA-H-10-P2,Write-in,,W,99,0.13,3,0,0,Washington Secretary of State
+state_house,WA,10-P2,0,WA-H-10-P2,Write-in,Nonpartisan,W,99,0.13,3,0,0,Washington Secretary of State
 state_house,WA,11-P1,0,WA-H-11-P1,David Hackney,(Prefers Democratic Party),D,25002,56.98,1,1,0,Washington Secretary of State
 state_house,WA,11-P1,0,WA-H-11-P1,Ashley Fedan,(Prefers Democratic Party),D,17606,40.13,2,0,0,Washington Secretary of State
-state_house,WA,11-P1,0,WA-H-11-P1,Write-in,,W,1267,2.89,3,0,0,Washington Secretary of State
+state_house,WA,11-P1,0,WA-H-11-P1,Write-in,Nonpartisan,W,1267,2.89,3,0,0,Washington Secretary of State
 state_house,WA,11-P2,0,WA-H-11-P2,Steve Bergquist,(Prefers Democratic Party),D,37321,96.27,1,1,0,Washington Secretary of State
-state_house,WA,11-P2,0,WA-H-11-P2,Write-in,,W,1448,3.73,2,0,0,Washington Secretary of State
+state_house,WA,11-P2,0,WA-H-11-P2,Write-in,Nonpartisan,W,1448,3.73,2,0,0,Washington Secretary of State
 state_house,WA,12-P1,0,WA-H-12-P1,Stacy Willoughby,(Prefers Democratic Party),D,36969,50.64,1,0,0,Washington Secretary of State
 state_house,WA,12-P1,0,WA-H-12-P1,Brian Burnett,(Prefers Republican Party),R,35973,49.28,2,0,0,Washington Secretary of State
-state_house,WA,12-P1,0,WA-H-12-P1,Write-in,,W,59,0.08,3,0,0,Washington Secretary of State
+state_house,WA,12-P1,0,WA-H-12-P1,Write-in,Nonpartisan,W,59,0.08,3,0,0,Washington Secretary of State
 state_house,WA,12-P2,0,WA-H-12-P2,Mike Steele,(Prefers Republican Party),R,39757,54.72,1,1,0,Washington Secretary of State
 state_house,WA,12-P2,0,WA-H-12-P2,Maggie Adams,(Prefers Democratic Party),D,32812,45.16,2,0,0,Washington Secretary of State
-state_house,WA,12-P2,0,WA-H-12-P2,Write-in,,W,92,0.13,3,0,0,Washington Secretary of State
+state_house,WA,12-P2,0,WA-H-12-P2,Write-in,Nonpartisan,W,92,0.13,3,0,0,Washington Secretary of State
 state_house,WA,13-P1,0,WA-H-13-P1,Tom Dent,(Prefers Republican Party),R,34584,65.87,1,1,0,Washington Secretary of State
 state_house,WA,13-P1,0,WA-H-13-P1,"Juan ""Jerry"" Garcia",(Prefers Democratic Party),D,17850,34.0,2,0,0,Washington Secretary of State
-state_house,WA,13-P1,0,WA-H-13-P1,Write-in,,W,71,0.14,3,0,0,Washington Secretary of State
+state_house,WA,13-P1,0,WA-H-13-P1,Write-in,Nonpartisan,W,71,0.14,3,0,0,Washington Secretary of State
 state_house,WA,13-P2,0,WA-H-13-P2,Joshua Thompson,(Prefers Republican Party),R,23454,52.54,1,1,0,Washington Secretary of State
 state_house,WA,13-P2,0,WA-H-13-P2,Deanna Martinez,(Prefers Republican Party),R,20175,45.19,2,0,0,Washington Secretary of State
-state_house,WA,13-P2,0,WA-H-13-P2,Write-in,,W,1013,2.27,3,0,0,Washington Secretary of State
+state_house,WA,13-P2,0,WA-H-13-P2,Write-in,Nonpartisan,W,1013,2.27,3,0,0,Washington Secretary of State
 state_house,WA,14-P1,0,WA-H-14-P1,Chelsea Dimas,(Prefers Democratic Party),D,16407,57.48,1,1,0,Washington Secretary of State
 state_house,WA,14-P1,0,WA-H-14-P1,Gloria Mendoza,(Prefers Republican Party),R,12026,42.13,2,0,0,Washington Secretary of State
-state_house,WA,14-P1,0,WA-H-14-P1,Write-in,,W,110,0.39,3,0,0,Washington Secretary of State
+state_house,WA,14-P1,0,WA-H-14-P1,Write-in,Nonpartisan,W,110,0.39,3,0,0,Washington Secretary of State
 state_house,WA,14-P2,0,WA-H-14-P2,Ezequiel Morfin,(Prefers Democratic Party),D,16709,58.21,1,1,0,Washington Secretary of State
 state_house,WA,14-P2,0,WA-H-14-P2,Deb Manjarrez,(Prefers Republican Party),R,11865,41.34,2,0,0,Washington Secretary of State
-state_house,WA,14-P2,0,WA-H-14-P2,Write-in,,W,129,0.45,3,0,0,Washington Secretary of State
+state_house,WA,14-P2,0,WA-H-14-P2,Write-in,Nonpartisan,W,129,0.45,3,0,0,Washington Secretary of State
 state_house,WA,15-P1,0,WA-H-15-P1,Chris Corry,(Prefers Republican Party),R,33911,61.04,1,1,0,Washington Secretary of State
 state_house,WA,15-P1,0,WA-H-15-P1,Jack McEntire,(Prefers Democratic Party),D,21565,38.82,2,0,0,Washington Secretary of State
-state_house,WA,15-P1,0,WA-H-15-P1,Write-in,,W,76,0.14,3,0,0,Washington Secretary of State
+state_house,WA,15-P1,0,WA-H-15-P1,Write-in,Nonpartisan,W,76,0.14,3,0,0,Washington Secretary of State
 state_house,WA,15-P2,0,WA-H-15-P2,Reedy Berg,(Prefers Republican Party),R,33678,61.67,1,1,0,Washington Secretary of State
 state_house,WA,15-P2,0,WA-H-15-P2,Liz Hallock,(Prefers No Kings Party),O,20707,37.92,2,0,0,Washington Secretary of State
-state_house,WA,15-P2,0,WA-H-15-P2,Write-in,,W,226,0.41,3,0,0,Washington Secretary of State
+state_house,WA,15-P2,0,WA-H-15-P2,Write-in,Nonpartisan,W,226,0.41,3,0,0,Washington Secretary of State
 state_house,WA,16-P1,0,WA-H-16-P1,Mark Klicker,(Prefers Republican Party),R,33500,57.54,1,1,0,Washington Secretary of State
 state_house,WA,16-P1,0,WA-H-16-P1,Kyle Palmer,(Prefers Democratic Party),D,24674,42.38,2,0,0,Washington Secretary of State
-state_house,WA,16-P1,0,WA-H-16-P1,Write-in,,W,50,0.09,3,0,0,Washington Secretary of State
+state_house,WA,16-P1,0,WA-H-16-P1,Write-in,Nonpartisan,W,50,0.09,3,0,0,Washington Secretary of State
 state_house,WA,16-P2,0,WA-H-16-P2,Skyler Rude,(Prefers Republican Party),R,31276,53.91,1,1,0,Washington Secretary of State
 state_house,WA,16-P2,0,WA-H-16-P2,Derek Sarley,(Prefers Democratic Party),D,26676,45.98,2,0,0,Washington Secretary of State
-state_house,WA,16-P2,0,WA-H-16-P2,Write-in,,W,68,0.12,3,0,0,Washington Secretary of State
+state_house,WA,16-P2,0,WA-H-16-P2,Write-in,Nonpartisan,W,68,0.12,3,0,0,Washington Secretary of State
 state_house,WA,17-P1,0,WA-H-17-P1,Ben Christly,(Prefers Democratic Party),D,42503,55.32,1,1,0,Washington Secretary of State
 state_house,WA,17-P1,0,WA-H-17-P1,Kevin Waters,(Prefers Republican Party),R,34184,44.5,2,0,0,Washington Secretary of State
-state_house,WA,17-P1,0,WA-H-17-P1,Write-in,,W,139,0.18,3,0,0,Washington Secretary of State
+state_house,WA,17-P1,0,WA-H-17-P1,Write-in,Nonpartisan,W,139,0.18,3,0,0,Washington Secretary of State
 state_house,WA,17-P2,0,WA-H-17-P2,Diana H. Perez,(Prefers Democratic Party),D,42560,55.38,1,1,0,Washington Secretary of State
 state_house,WA,17-P2,0,WA-H-17-P2,David Stuebe,(Prefers Republican Party),R,34165,44.46,2,0,0,Washington Secretary of State
-state_house,WA,17-P2,0,WA-H-17-P2,Write-in,,W,120,0.16,3,0,0,Washington Secretary of State
+state_house,WA,17-P2,0,WA-H-17-P2,Write-in,Nonpartisan,W,120,0.16,3,0,0,Washington Secretary of State
 state_house,WA,18-P1,0,WA-H-18-P1,Randi L. Knott,(Prefers Democratic Party),D,38518,52.39,1,1,0,Washington Secretary of State
 state_house,WA,18-P1,0,WA-H-18-P1,Stephanie McClintock,(Prefers Republican Party),R,34872,47.44,2,0,0,Washington Secretary of State
-state_house,WA,18-P1,0,WA-H-18-P1,Write-in,,W,125,0.17,3,0,0,Washington Secretary of State
+state_house,WA,18-P1,0,WA-H-18-P1,Write-in,Nonpartisan,W,125,0.17,3,0,0,Washington Secretary of State
 state_house,WA,18-P2,0,WA-H-18-P2,Deken Letinich,(Prefers Democratic Party),D,39448,53.78,1,1,0,Washington Secretary of State
 state_house,WA,18-P2,0,WA-H-18-P2,John Ley,(Prefers Republican Party),R,33742,46.0,2,0,0,Washington Secretary of State
-state_house,WA,18-P2,0,WA-H-18-P2,Write-in,,W,159,0.22,3,0,0,Washington Secretary of State
+state_house,WA,18-P2,0,WA-H-18-P2,Write-in,Nonpartisan,W,159,0.22,3,0,0,Washington Secretary of State
 state_house,WA,19-P1,0,WA-H-19-P1,Jim Walsh,(Prefers Republican Party),R,38030,55.33,1,1,0,Washington Secretary of State
 state_house,WA,19-P1,0,WA-H-19-P1,Kevin Moynihan,(Prefers Democratic Party),D,30624,44.55,2,0,0,Washington Secretary of State
-state_house,WA,19-P1,0,WA-H-19-P1,Write-in,,W,85,0.12,3,0,0,Washington Secretary of State
+state_house,WA,19-P1,0,WA-H-19-P1,Write-in,Nonpartisan,W,85,0.12,3,0,0,Washington Secretary of State
 state_house,WA,19-P2,0,WA-H-19-P2,Joel McEntire,(Prefers Republican Party),R,37405,54.85,1,1,0,Washington Secretary of State
 state_house,WA,19-P2,0,WA-H-19-P2,Terry Carlson,(Prefers Democratic Party),D,30631,44.91,2,0,0,Washington Secretary of State
-state_house,WA,19-P2,0,WA-H-19-P2,Write-in,,W,165,0.24,3,0,0,Washington Secretary of State
+state_house,WA,19-P2,0,WA-H-19-P2,Write-in,Nonpartisan,W,165,0.24,3,0,0,Washington Secretary of State
 state_house,WA,20-P1,0,WA-H-20-P1,Peter Abbarno,(Prefers Republican Party),R,51775,65.36,1,1,0,Washington Secretary of State
 state_house,WA,20-P1,0,WA-H-20-P1,Andy Zahn,(Prefers Democratic Party),D,27242,34.39,2,0,0,Washington Secretary of State
-state_house,WA,20-P1,0,WA-H-20-P1,Write-in,,W,194,0.24,3,0,0,Washington Secretary of State
+state_house,WA,20-P1,0,WA-H-20-P1,Write-in,Nonpartisan,W,194,0.24,3,0,0,Washington Secretary of State
 state_house,WA,20-P2,0,WA-H-20-P2,Ed Orcutt,(Prefers Republican Party),R,49577,62.64,1,1,0,Washington Secretary of State
 state_house,WA,20-P2,0,WA-H-20-P2,Evan Jones,(Prefers Democratic Party),D,29405,37.16,2,0,0,Washington Secretary of State
-state_house,WA,20-P2,0,WA-H-20-P2,Write-in,,W,158,0.2,3,0,0,Washington Secretary of State
+state_house,WA,20-P2,0,WA-H-20-P2,Write-in,Nonpartisan,W,158,0.2,3,0,0,Washington Secretary of State
 state_house,WA,21-P1,0,WA-H-21-P1,Strom Peterson,(Prefers Democratic Party),D,31829,57.84,1,1,0,Washington Secretary of State
 state_house,WA,21-P1,0,WA-H-21-P1,Jason Moon,(Prefers Democratic Party),D,22438,40.77,2,0,0,Washington Secretary of State
-state_house,WA,21-P1,0,WA-H-21-P1,Write-in,,W,767,1.39,3,0,0,Washington Secretary of State
+state_house,WA,21-P1,0,WA-H-21-P1,Write-in,Nonpartisan,W,767,1.39,3,0,0,Washington Secretary of State
 state_house,WA,21-P2,0,WA-H-21-P2,Lillian Ortiz-Self,(Prefers Democratic Party),D,41197,71.99,1,1,0,Washington Secretary of State
 state_house,WA,21-P2,0,WA-H-21-P2,Bruce Guthrie,(Prefers Libertarian Party),O,15724,27.48,2,0,0,Washington Secretary of State
-state_house,WA,21-P2,0,WA-H-21-P2,Write-in,,W,305,0.53,3,0,0,Washington Secretary of State
+state_house,WA,21-P2,0,WA-H-21-P2,Write-in,Nonpartisan,W,305,0.53,3,0,0,Washington Secretary of State
 state_house,WA,22-P1,0,WA-H-22-P1,Beth Doglio,(Prefers Democratic Party),D,53528,71.93,1,1,0,Washington Secretary of State
 state_house,WA,22-P1,0,WA-H-22-P1,Don Hewett,(Prefers Republican Party),R,20673,27.78,2,0,0,Washington Secretary of State
-state_house,WA,22-P1,0,WA-H-22-P1,Write-in,,W,212,0.28,3,0,0,Washington Secretary of State
+state_house,WA,22-P1,0,WA-H-22-P1,Write-in,Nonpartisan,W,212,0.28,3,0,0,Washington Secretary of State
 state_house,WA,22-P2,0,WA-H-22-P2,Lisa Parshley,(Prefers Democratic Party),D,44159,65.97,1,1,0,Washington Secretary of State
 state_house,WA,22-P2,0,WA-H-22-P2,Jamie Keenan-deVargas,(Prefers Democratic Party),D,20809,31.09,2,0,0,Washington Secretary of State
-state_house,WA,22-P2,0,WA-H-22-P2,Write-in,,W,1969,2.94,3,0,0,Washington Secretary of State
+state_house,WA,22-P2,0,WA-H-22-P2,Write-in,Nonpartisan,W,1969,2.94,3,0,0,Washington Secretary of State
 state_house,WA,23-P1,0,WA-H-23-P1,Tarra Simmons,(Prefers Democratic Party),D,34719,49.42,1,0,0,Washington Secretary of State
 state_house,WA,23-P1,0,WA-H-23-P1,Daria Ilgen,(Prefers Democratic Party),D,34184,48.66,2,0,0,Washington Secretary of State
-state_house,WA,23-P1,0,WA-H-23-P1,Write-in,,W,1347,1.92,3,0,0,Washington Secretary of State
+state_house,WA,23-P1,0,WA-H-23-P1,Write-in,Nonpartisan,W,1347,1.92,3,0,0,Washington Secretary of State
 state_house,WA,23-P2,0,WA-H-23-P2,Greg Nance,(Prefers Democratic Party),D,52654,69.78,1,1,0,Washington Secretary of State
 state_house,WA,23-P2,0,WA-H-23-P2,Lance Byrd,(Prefers Republican Party),R,22655,30.02,2,0,0,Washington Secretary of State
-state_house,WA,23-P2,0,WA-H-23-P2,Write-in,,W,151,0.2,3,0,0,Washington Secretary of State
+state_house,WA,23-P2,0,WA-H-23-P2,Write-in,Nonpartisan,W,151,0.2,3,0,0,Washington Secretary of State
 state_house,WA,24-P1,0,WA-H-24-P1,Adam Bernbaum,(Prefers Democratic Party),D,49969,60.54,1,1,0,Washington Secretary of State
 state_house,WA,24-P1,0,WA-H-24-P1,Eric W. Pratt,(Prefers Republican Party),R,32509,39.39,2,0,0,Washington Secretary of State
-state_house,WA,24-P1,0,WA-H-24-P1,Write-in,,W,63,0.08,3,0,0,Washington Secretary of State
+state_house,WA,24-P1,0,WA-H-24-P1,Write-in,Nonpartisan,W,63,0.08,3,0,0,Washington Secretary of State
 state_house,WA,24-P2,0,WA-H-24-P2,Kaylee Kuehn,(Prefers Democratic Party),D,44175,54.61,1,1,0,Washington Secretary of State
 state_house,WA,24-P2,0,WA-H-24-P2,Marcia Kelbon,(States No Party Preference),O,36514,45.14,2,0,0,Washington Secretary of State
-state_house,WA,24-P2,0,WA-H-24-P2,Write-in,,W,204,0.25,3,0,0,Washington Secretary of State
+state_house,WA,24-P2,0,WA-H-24-P2,Write-in,Nonpartisan,W,204,0.25,3,0,0,Washington Secretary of State
 state_house,WA,25-P1,0,WA-H-25-P1,David Berg,(Prefers Democratic Party),D,29015,50.83,1,1,0,Washington Secretary of State
 state_house,WA,25-P1,0,WA-H-25-P1,Michael Keaton,(Prefers Republican Party),R,28026,49.1,2,0,0,Washington Secretary of State
-state_house,WA,25-P1,0,WA-H-25-P1,Write-in,,W,38,0.07,3,0,0,Washington Secretary of State
+state_house,WA,25-P1,0,WA-H-25-P1,Write-in,Nonpartisan,W,38,0.07,3,0,0,Washington Secretary of State
 state_house,WA,25-P2,0,WA-H-25-P2,Jenn Marie Strickling,(Prefers Democratic Party),D,28515,50.04,1,0,0,Washington Secretary of State
 state_house,WA,25-P2,0,WA-H-25-P2,Cyndy Jacobsen,(Prefers Republican Party),R,28435,49.9,2,0,0,Washington Secretary of State
-state_house,WA,25-P2,0,WA-H-25-P2,Write-in,,W,36,0.06,3,0,0,Washington Secretary of State
+state_house,WA,25-P2,0,WA-H-25-P2,Write-in,Nonpartisan,W,36,0.06,3,0,0,Washington Secretary of State
 state_house,WA,26-P1,0,WA-H-26-P1,Adison Richards,(Prefers Democratic Party),D,43191,55.24,1,1,0,Washington Secretary of State
 state_house,WA,26-P1,0,WA-H-26-P1,David Olson,(Prefers Republican Party),R,34903,44.64,2,0,0,Washington Secretary of State
-state_house,WA,26-P1,0,WA-H-26-P1,Write-in,,W,89,0.11,3,0,0,Washington Secretary of State
+state_house,WA,26-P1,0,WA-H-26-P1,Write-in,Nonpartisan,W,89,0.11,3,0,0,Washington Secretary of State
 state_house,WA,26-P2,0,WA-H-26-P2,Renee Hernandez Greenfield,(Prefers Democratic Party),D,41777,53.47,1,1,0,Washington Secretary of State
 state_house,WA,26-P2,0,WA-H-26-P2,Katy Cornell,(Prefers Republican Party),R,36241,46.38,2,0,0,Washington Secretary of State
-state_house,WA,26-P2,0,WA-H-26-P2,Write-in,,W,118,0.15,3,0,0,Washington Secretary of State
+state_house,WA,26-P2,0,WA-H-26-P2,Write-in,Nonpartisan,W,118,0.15,3,0,0,Washington Secretary of State
 state_house,WA,27-P1,0,WA-H-27-P1,Laurie Jinkins,(Prefers Democratic Party),D,47236,76.47,1,1,0,Washington Secretary of State
 state_house,WA,27-P1,0,WA-H-27-P1,Carole Sue Braaten,(Prefers Republican Party),R,14394,23.3,2,0,0,Washington Secretary of State
-state_house,WA,27-P1,0,WA-H-27-P1,Write-in,,W,139,0.23,3,0,0,Washington Secretary of State
+state_house,WA,27-P1,0,WA-H-27-P1,Write-in,Nonpartisan,W,139,0.23,3,0,0,Washington Secretary of State
 state_house,WA,27-P2,0,WA-H-27-P2,Jake Fey,(Prefers Democratic Party),D,47920,96.64,1,1,0,Washington Secretary of State
-state_house,WA,27-P2,0,WA-H-27-P2,Write-in,,W,1668,3.36,2,0,0,Washington Secretary of State
+state_house,WA,27-P2,0,WA-H-27-P2,Write-in,Nonpartisan,W,1668,3.36,2,0,0,Washington Secretary of State
 state_house,WA,28-P1,0,WA-H-28-P1,Mari Leavitt,(Prefers Democratic Party),D,30325,64.33,1,1,0,Washington Secretary of State
 state_house,WA,28-P1,0,WA-H-28-P1,Kathy Richardson,(Prefers Republican Party),R,16750,35.53,2,0,0,Washington Secretary of State
-state_house,WA,28-P1,0,WA-H-28-P1,Write-in,,W,67,0.14,3,0,0,Washington Secretary of State
+state_house,WA,28-P1,0,WA-H-28-P1,Write-in,Nonpartisan,W,67,0.14,3,0,0,Washington Secretary of State
 state_house,WA,28-P2,0,WA-H-28-P2,Dan Bronoske,(Prefers Democratic Party),D,30510,66.74,1,1,0,Washington Secretary of State
 state_house,WA,28-P2,0,WA-H-28-P2,Kerry Hills,(Prefers Nonpartisan Party),O,14966,32.74,2,0,0,Washington Secretary of State
-state_house,WA,28-P2,0,WA-H-28-P2,Write-in,,W,242,0.53,3,0,0,Washington Secretary of State
+state_house,WA,28-P2,0,WA-H-28-P2,Write-in,Nonpartisan,W,242,0.53,3,0,0,Washington Secretary of State
 state_house,WA,29-P1,0,WA-H-29-P1,Krista Perez,(Prefers Democratic Party),D,17678,50.35,1,1,0,Washington Secretary of State
 state_house,WA,29-P1,0,WA-H-29-P1,Melanie Morgan,(Prefers Democratic Party),D,16340,46.54,2,0,0,Washington Secretary of State
-state_house,WA,29-P1,0,WA-H-29-P1,Write-in,,W,1089,3.1,3,0,0,Washington Secretary of State
+state_house,WA,29-P1,0,WA-H-29-P1,Write-in,Nonpartisan,W,1089,3.1,3,0,0,Washington Secretary of State
 state_house,WA,29-P2,0,WA-H-29-P2,Patrick Stickney,(Prefers Democratic Party),D,16968,49.14,1,1,0,Washington Secretary of State
 state_house,WA,29-P2,0,WA-H-29-P2,Joe Bushnell,(Prefers Democratic Party),D,16414,47.54,2,0,0,Washington Secretary of State
-state_house,WA,29-P2,0,WA-H-29-P2,Write-in,,W,1146,3.32,3,0,0,Washington Secretary of State
+state_house,WA,29-P2,0,WA-H-29-P2,Write-in,Nonpartisan,W,1146,3.32,3,0,0,Washington Secretary of State
 state_house,WA,30-P1,0,WA-H-30-P1,Jamila E. Taylor,(Prefers Democratic Party),D,29323,65.67,1,1,0,Washington Secretary of State
 state_house,WA,30-P1,0,WA-H-30-P1,Tiffany Bowyer,(Prefers Republican Party),R,15289,34.24,2,0,0,Washington Secretary of State
-state_house,WA,30-P1,0,WA-H-30-P1,Write-in,,W,41,0.09,3,0,0,Washington Secretary of State
+state_house,WA,30-P1,0,WA-H-30-P1,Write-in,Nonpartisan,W,41,0.09,3,0,0,Washington Secretary of State
 state_house,WA,30-P2,0,WA-H-30-P2,Kristine Reeves,(Prefers Democratic Party),D,28675,65.47,1,1,0,Washington Secretary of State
 state_house,WA,30-P2,0,WA-H-30-P2,Paul McDaniel,(Prefers Independent Party),O,15005,34.26,2,0,0,Washington Secretary of State
-state_house,WA,30-P2,0,WA-H-30-P2,Write-in,,W,118,0.27,3,0,0,Washington Secretary of State
+state_house,WA,30-P2,0,WA-H-30-P2,Write-in,Nonpartisan,W,118,0.27,3,0,0,Washington Secretary of State
 state_house,WA,31-P1,0,WA-H-31-P1,Drew Stokesbary,(Prefers Republican Party),R,37263,56.78,1,1,0,Washington Secretary of State
 state_house,WA,31-P1,0,WA-H-31-P1,Stephen Szczurko-Walton,(Prefers Democratic Party),D,28321,43.16,2,0,0,Washington Secretary of State
-state_house,WA,31-P1,0,WA-H-31-P1,Write-in,,W,39,0.06,3,0,0,Washington Secretary of State
+state_house,WA,31-P1,0,WA-H-31-P1,Write-in,Nonpartisan,W,39,0.06,3,0,0,Washington Secretary of State
 state_house,WA,31-P2,0,WA-H-31-P2,Joshua Penner,(Prefers Republican Party),R,35474,54.12,1,1,0,Washington Secretary of State
 state_house,WA,31-P2,0,WA-H-31-P2,John Bielka,(Prefers Democrat Party),D,30017,45.8,2,0,0,Washington Secretary of State
-state_house,WA,31-P2,0,WA-H-31-P2,Write-in,,W,53,0.08,3,0,0,Washington Secretary of State
+state_house,WA,31-P2,0,WA-H-31-P2,Write-in,Nonpartisan,W,53,0.08,3,0,0,Washington Secretary of State
 state_house,WA,32-P1,0,WA-H-32-P1,Danica Noble,(Prefers Democratic Party),D,32084,50.94,1,1,0,Washington Secretary of State
 state_house,WA,32-P1,0,WA-H-32-P1,Keith Scully,(Prefers Democratic Party),D,29905,47.48,2,0,0,Washington Secretary of State
-state_house,WA,32-P1,0,WA-H-32-P1,Write-in,,W,990,1.57,3,0,0,Washington Secretary of State
+state_house,WA,32-P1,0,WA-H-32-P1,Write-in,Nonpartisan,W,990,1.57,3,0,0,Washington Secretary of State
 state_house,WA,32-P2,0,WA-H-32-P2,Lauren Davis,(Prefers Democratic Party),D,43670,69.95,1,1,0,Washington Secretary of State
 state_house,WA,32-P2,0,WA-H-32-P2,Imraan Siddiqi,(Prefers Democratic Party),D,17843,28.58,2,0,0,Washington Secretary of State
-state_house,WA,32-P2,0,WA-H-32-P2,Write-in,,W,913,1.46,3,0,0,Washington Secretary of State
+state_house,WA,32-P2,0,WA-H-32-P2,Write-in,Nonpartisan,W,913,1.46,3,0,0,Washington Secretary of State
 state_house,WA,33-P1,0,WA-H-33-P1,Edwin Obras,(Prefers Democratic Party),D,34792,73.57,1,1,0,Washington Secretary of State
 state_house,WA,33-P1,0,WA-H-33-P1,Chris Martinez,(Prefers Republican Party),R,12433,26.29,2,0,0,Washington Secretary of State
-state_house,WA,33-P1,0,WA-H-33-P1,Write-in,,W,66,0.14,3,0,0,Washington Secretary of State
+state_house,WA,33-P1,0,WA-H-33-P1,Write-in,Nonpartisan,W,66,0.14,3,0,0,Washington Secretary of State
 state_house,WA,33-P2,0,WA-H-33-P2,Mia Su-Ling Gregerson,(Prefers Democratic Party),D,34720,74.01,1,1,0,Washington Secretary of State
 state_house,WA,33-P2,0,WA-H-33-P2,Yuri Marinchik,(Prefers Republican Party),R,12113,25.82,2,0,0,Washington Secretary of State
-state_house,WA,33-P2,0,WA-H-33-P2,Write-in,,W,78,0.17,3,0,0,Washington Secretary of State
+state_house,WA,33-P2,0,WA-H-33-P2,Write-in,Nonpartisan,W,78,0.17,3,0,0,Washington Secretary of State
 state_house,WA,34-P1,0,WA-H-34-P1,Brianna K. Thomas,(Prefers Democratic Party),D,59356,98.02,1,1,0,Washington Secretary of State
-state_house,WA,34-P1,0,WA-H-34-P1,Write-in,,W,1198,1.98,2,0,0,Washington Secretary of State
+state_house,WA,34-P1,0,WA-H-34-P1,Write-in,Nonpartisan,W,1198,1.98,2,0,0,Washington Secretary of State
 state_house,WA,34-P2,0,WA-H-34-P2,Joe Fitzgibbon,(Prefers Democratic Party),D,47173,67.64,1,1,0,Washington Secretary of State
 state_house,WA,34-P2,0,WA-H-34-P2,Mary Anito,(Prefers Democratic Party),D,21839,31.31,2,0,0,Washington Secretary of State
-state_house,WA,34-P2,0,WA-H-34-P2,Write-in,,W,733,1.05,3,0,0,Washington Secretary of State
+state_house,WA,34-P2,0,WA-H-34-P2,Write-in,Nonpartisan,W,733,1.05,3,0,0,Washington Secretary of State
 state_house,WA,35-P1,0,WA-H-35-P1,Dan Griffey,(Prefers Republican Party),R,41073,52.36,1,1,0,Washington Secretary of State
 state_house,WA,35-P1,0,WA-H-35-P1,Jim Pierson,(Prefers Democratic Party),D,37276,47.52,2,0,0,Washington Secretary of State
-state_house,WA,35-P1,0,WA-H-35-P1,Write-in,,W,99,0.13,3,0,0,Washington Secretary of State
+state_house,WA,35-P1,0,WA-H-35-P1,Write-in,Nonpartisan,W,99,0.13,3,0,0,Washington Secretary of State
 state_house,WA,35-P2,0,WA-H-35-P2,Travis Couture,(Prefers Republican Party),R,40873,52.1,1,1,0,Washington Secretary of State
 state_house,WA,35-P2,0,WA-H-35-P2,Maria Littlesun,(Prefers Democratic Party),D,37474,47.77,2,0,0,Washington Secretary of State
-state_house,WA,35-P2,0,WA-H-35-P2,Write-in,,W,97,0.12,3,0,0,Washington Secretary of State
+state_house,WA,35-P2,0,WA-H-35-P2,Write-in,Nonpartisan,W,97,0.12,3,0,0,Washington Secretary of State
 state_house,WA,36-P1,0,WA-H-36-P1,Julia Grant Reed,(Prefers Democratic Party),D,69577,98.73,1,1,0,Washington Secretary of State
-state_house,WA,36-P1,0,WA-H-36-P1,Write-in,,W,898,1.27,2,0,0,Washington Secretary of State
+state_house,WA,36-P1,0,WA-H-36-P1,Write-in,Nonpartisan,W,898,1.27,2,0,0,Washington Secretary of State
 state_house,WA,36-P2,0,WA-H-36-P2,Liz Berry,(Prefers Democratic Party),D,69271,98.73,1,1,0,Washington Secretary of State
-state_house,WA,36-P2,0,WA-H-36-P2,Write-in,,W,889,1.27,2,0,0,Washington Secretary of State
+state_house,WA,36-P2,0,WA-H-36-P2,Write-in,Nonpartisan,W,889,1.27,2,0,0,Washington Secretary of State
 state_house,WA,37-P1,0,WA-H-37-P1,Kelabe Tewolde,(Prefers Democratic Party),D,41662,65.04,1,1,0,Washington Secretary of State
 state_house,WA,37-P1,0,WA-H-37-P1,Sharon Tomiko Santos,(Prefers Democratic Party),D,22047,34.42,2,0,0,Washington Secretary of State
-state_house,WA,37-P1,0,WA-H-37-P1,Write-in,,W,347,0.54,3,0,0,Washington Secretary of State
+state_house,WA,37-P1,0,WA-H-37-P1,Write-in,Nonpartisan,W,347,0.54,3,0,0,Washington Secretary of State
 state_house,WA,37-P2,0,WA-H-37-P2,Jaelynn Scott,(Prefers Democratic Party),D,55266,87.56,1,1,0,Washington Secretary of State
 state_house,WA,37-P2,0,WA-H-37-P2,Evon McCorkle,(Prefers Independent Party),O,7443,11.79,2,0,0,Washington Secretary of State
-state_house,WA,37-P2,0,WA-H-37-P2,Write-in,,W,406,0.64,3,0,0,Washington Secretary of State
+state_house,WA,37-P2,0,WA-H-37-P2,Write-in,Nonpartisan,W,406,0.64,3,0,0,Washington Secretary of State
 state_house,WA,38-P1,0,WA-H-38-P1,Julio Cortes,(Prefers Democratic Party),D,33932,66.33,1,1,0,Washington Secretary of State
 state_house,WA,38-P1,0,WA-H-38-P1,Thomas (Jeff) Kelly,(Prefers Cascade Party),O,16806,32.85,2,0,0,Washington Secretary of State
-state_house,WA,38-P1,0,WA-H-38-P1,Write-in,,W,416,0.81,3,0,0,Washington Secretary of State
+state_house,WA,38-P1,0,WA-H-38-P1,Write-in,Nonpartisan,W,416,0.81,3,0,0,Washington Secretary of State
 state_house,WA,38-P2,0,WA-H-38-P2,Mary Fosse,(Prefers Democratic Party),D,38946,93.42,1,1,0,Washington Secretary of State
-state_house,WA,38-P2,0,WA-H-38-P2,Write-in,,W,2742,6.58,2,0,0,Washington Secretary of State
+state_house,WA,38-P2,0,WA-H-38-P2,Write-in,Nonpartisan,W,2742,6.58,2,0,0,Washington Secretary of State
 state_house,WA,39-P1,0,WA-H-39-P1,Sam Low,(Prefers Republican Party),R,36372,54.57,1,1,0,Washington Secretary of State
 state_house,WA,39-P1,0,WA-H-39-P1,Kathryn Lewandowsky,(Prefers Democratic Party),D,30212,45.33,2,0,0,Washington Secretary of State
-state_house,WA,39-P1,0,WA-H-39-P1,Write-in,,W,65,0.1,3,0,0,Washington Secretary of State
+state_house,WA,39-P1,0,WA-H-39-P1,Write-in,Nonpartisan,W,65,0.1,3,0,0,Washington Secretary of State
 state_house,WA,39-P2,0,WA-H-39-P2,Steve Ewing,(Prefers Republican Party),R,34633,52.17,1,1,0,Washington Secretary of State
 state_house,WA,39-P2,0,WA-H-39-P2,Ida Keeley,(Prefers Democratic Party),D,31679,47.72,2,0,0,Washington Secretary of State
-state_house,WA,39-P2,0,WA-H-39-P2,Write-in,,W,72,0.11,3,0,0,Washington Secretary of State
+state_house,WA,39-P2,0,WA-H-39-P2,Write-in,Nonpartisan,W,72,0.11,3,0,0,Washington Secretary of State
 state_house,WA,40-P1,0,WA-H-40-P1,Debra Lekanoff,(Prefers Democratic Party),D,57620,72.35,1,1,0,Washington Secretary of State
 state_house,WA,40-P1,0,WA-H-40-P1,Cindy Carter,(Prefers Republican Party),R,21945,27.55,2,0,0,Washington Secretary of State
-state_house,WA,40-P1,0,WA-H-40-P1,Write-in,,W,79,0.1,3,0,0,Washington Secretary of State
+state_house,WA,40-P1,0,WA-H-40-P1,Write-in,Nonpartisan,W,79,0.1,3,0,0,Washington Secretary of State
 state_house,WA,40-P2,0,WA-H-40-P2,Alex Ramel,(Prefers Democratic Party),D,57375,73.78,1,1,0,Washington Secretary of State
 state_house,WA,40-P2,0,WA-H-40-P2,Joseph Segault,(States No Party Preference),O,20169,25.94,2,0,0,Washington Secretary of State
-state_house,WA,40-P2,0,WA-H-40-P2,Write-in,,W,223,0.29,3,0,0,Washington Secretary of State
+state_house,WA,40-P2,0,WA-H-40-P2,Write-in,Nonpartisan,W,223,0.29,3,0,0,Washington Secretary of State
 state_house,WA,41-P1,0,WA-H-41-P1,Janice Zahn,(Prefers Democratic Party),D,45639,70.79,1,1,0,Washington Secretary of State
 state_house,WA,41-P1,0,WA-H-41-P1,Elle Nguyen,(Prefers Republican Party),R,18738,29.06,2,0,0,Washington Secretary of State
-state_house,WA,41-P1,0,WA-H-41-P1,Write-in,,W,96,0.15,3,0,0,Washington Secretary of State
+state_house,WA,41-P1,0,WA-H-41-P1,Write-in,Nonpartisan,W,96,0.15,3,0,0,Washington Secretary of State
 state_house,WA,41-P2,0,WA-H-41-P2,My-Linh T Thai,(Prefers Democratic Party),D,38407,60.19,1,1,0,Washington Secretary of State
 state_house,WA,41-P2,0,WA-H-41-P2,Michael Rosen,(Prefers Independent Party),O,25310,39.66,2,0,0,Washington Secretary of State
-state_house,WA,41-P2,0,WA-H-41-P2,Write-in,,W,93,0.15,3,0,0,Washington Secretary of State
+state_house,WA,41-P2,0,WA-H-41-P2,Write-in,Nonpartisan,W,93,0.15,3,0,0,Washington Secretary of State
 state_house,WA,42-P1,0,WA-H-42-P1,Alicia Rule,(Prefers Democratic Party),D,45947,58.75,1,1,0,Washington Secretary of State
 state_house,WA,42-P1,0,WA-H-42-P1,Misty Flowers,(Prefers Republican Party),R,32167,41.13,2,0,0,Washington Secretary of State
-state_house,WA,42-P1,0,WA-H-42-P1,Write-in,,W,91,0.12,3,0,0,Washington Secretary of State
+state_house,WA,42-P1,0,WA-H-42-P1,Write-in,Nonpartisan,W,91,0.12,3,0,0,Washington Secretary of State
 state_house,WA,42-P2,0,WA-H-42-P2,Joe Timmons,(Prefers Democratic Party),D,44094,56.37,1,1,0,Washington Secretary of State
 state_house,WA,42-P2,0,WA-H-42-P2,Justin Pike,(Prefers Republican Party),R,34061,43.55,2,0,0,Washington Secretary of State
-state_house,WA,42-P2,0,WA-H-42-P2,Write-in,,W,65,0.08,3,0,0,Washington Secretary of State
+state_house,WA,42-P2,0,WA-H-42-P2,Write-in,Nonpartisan,W,65,0.08,3,0,0,Washington Secretary of State
 state_house,WA,43-P1,0,WA-H-43-P1,Nicole Macri,(Prefers Democratic Party),D,58361,91.08,1,1,0,Washington Secretary of State
 state_house,WA,43-P1,0,WA-H-43-P1,Alby Clendennin,(Prefers Democratic Party),D,5210,8.13,2,0,0,Washington Secretary of State
-state_house,WA,43-P1,0,WA-H-43-P1,Write-in,,W,507,0.79,3,0,0,Washington Secretary of State
+state_house,WA,43-P1,0,WA-H-43-P1,Write-in,Nonpartisan,W,507,0.79,3,0,0,Washington Secretary of State
 state_house,WA,43-P2,0,WA-H-43-P2,Shaun Scott,(Prefers Democratic Party),D,52003,97.83,1,1,0,Washington Secretary of State
-state_house,WA,43-P2,0,WA-H-43-P2,Write-in,,W,1153,2.17,2,0,0,Washington Secretary of State
+state_house,WA,43-P2,0,WA-H-43-P2,Write-in,Nonpartisan,W,1153,2.17,2,0,0,Washington Secretary of State
 state_house,WA,44-P1,0,WA-H-44-P1,Brandy Donaghy,(Prefers Democratic Party),D,37956,59.94,1,1,0,Washington Secretary of State
 state_house,WA,44-P1,0,WA-H-44-P1,Chris Elder,(Prefers Republican Party),R,25324,39.99,2,0,0,Washington Secretary of State
-state_house,WA,44-P1,0,WA-H-44-P1,Write-in,,W,45,0.07,3,0,0,Washington Secretary of State
+state_house,WA,44-P1,0,WA-H-44-P1,Write-in,Nonpartisan,W,45,0.07,3,0,0,Washington Secretary of State
 state_house,WA,44-P2,0,WA-H-44-P2,April Berg,(Prefers Democratic Party),D,38749,61.18,1,1,0,Washington Secretary of State
 state_house,WA,44-P2,0,WA-H-44-P2,Tonya Stadlman,(Prefers Republican Party),R,24545,38.75,2,0,0,Washington Secretary of State
-state_house,WA,44-P2,0,WA-H-44-P2,Write-in,,W,47,0.07,3,0,0,Washington Secretary of State
+state_house,WA,44-P2,0,WA-H-44-P2,Write-in,Nonpartisan,W,47,0.07,3,0,0,Washington Secretary of State
 state_house,WA,45-P1,0,WA-H-45-P1,Roger Goodman,(Prefers Democratic Party),D,48438,71.48,1,1,0,Washington Secretary of State
 state_house,WA,45-P1,0,WA-H-45-P1,JoAnn Tolentino,(Prefers Republican Party),R,19250,28.41,2,0,0,Washington Secretary of State
-state_house,WA,45-P1,0,WA-H-45-P1,Write-in,,W,81,0.12,3,0,0,Washington Secretary of State
+state_house,WA,45-P1,0,WA-H-45-P1,Write-in,Nonpartisan,W,81,0.12,3,0,0,Washington Secretary of State
 state_house,WA,45-P2,0,WA-H-45-P2,Vanessa Kritzer,(Prefers Democratic Party),D,49613,74.84,1,1,0,Washington Secretary of State
 state_house,WA,45-P2,0,WA-H-45-P2,John P Gibbons,(Prefers Republican Party),R,16496,24.88,2,0,0,Washington Secretary of State
-state_house,WA,45-P2,0,WA-H-45-P2,Write-in,,W,180,0.27,3,0,0,Washington Secretary of State
+state_house,WA,45-P2,0,WA-H-45-P2,Write-in,Nonpartisan,W,180,0.27,3,0,0,Washington Secretary of State
 state_house,WA,46-P1,0,WA-H-46-P1,Gerry Pollet,(Prefers Democratic Party),D,45676,62.69,1,1,0,Washington Secretary of State
 state_house,WA,46-P1,0,WA-H-46-P1,Will Dreher,(Prefers Democratic Party),D,26727,36.68,2,0,0,Washington Secretary of State
-state_house,WA,46-P1,0,WA-H-46-P1,Write-in,,W,458,0.63,3,0,0,Washington Secretary of State
+state_house,WA,46-P1,0,WA-H-46-P1,Write-in,Nonpartisan,W,458,0.63,3,0,0,Washington Secretary of State
 state_house,WA,46-P2,0,WA-H-46-P2,Darya Farivar,(Prefers Democratic Party),D,66101,89.56,1,1,0,Washington Secretary of State
 state_house,WA,46-P2,0,WA-H-46-P2,Rodney 'Star' Thornley,(Prefers Independent Party),O,7440,10.08,2,0,0,Washington Secretary of State
-state_house,WA,46-P2,0,WA-H-46-P2,Write-in,,W,269,0.36,3,0,0,Washington Secretary of State
+state_house,WA,46-P2,0,WA-H-46-P2,Write-in,Nonpartisan,W,269,0.36,3,0,0,Washington Secretary of State
 state_house,WA,47-P1,0,WA-H-47-P1,Debra Jean Entenman,(Prefers Democratic Party),D,32085,63.69,1,1,0,Washington Secretary of State
 state_house,WA,47-P1,0,WA-H-47-P1,Cobi Clark,(Prefers Libertarian Party),O,18007,35.75,2,0,0,Washington Secretary of State
-state_house,WA,47-P1,0,WA-H-47-P1,Write-in,,W,282,0.56,3,0,0,Washington Secretary of State
+state_house,WA,47-P1,0,WA-H-47-P1,Write-in,Nonpartisan,W,282,0.56,3,0,0,Washington Secretary of State
 state_house,WA,47-P2,0,WA-H-47-P2,Chris Stearns,(Prefers Democratic Party),D,32585,62.82,1,1,0,Washington Secretary of State
 state_house,WA,47-P2,0,WA-H-47-P2,Ted Cooke,(Prefers Republican Party),R,19246,37.1,2,0,0,Washington Secretary of State
-state_house,WA,47-P2,0,WA-H-47-P2,Write-in,,W,43,0.08,3,0,0,Washington Secretary of State
+state_house,WA,47-P2,0,WA-H-47-P2,Write-in,Nonpartisan,W,43,0.08,3,0,0,Washington Secretary of State
 state_house,WA,48-P1,0,WA-H-48-P1,Osman Salahuddin,(Prefers Democratic Party),D,33860,69.19,1,1,0,Washington Secretary of State
 state_house,WA,48-P1,0,WA-H-48-P1,Jeffery Poppe,(Prefers Republican Party),R,15010,30.67,2,0,0,Washington Secretary of State
-state_house,WA,48-P1,0,WA-H-48-P1,Write-in,,W,67,0.14,3,0,0,Washington Secretary of State
+state_house,WA,48-P1,0,WA-H-48-P1,Write-in,Nonpartisan,W,67,0.14,3,0,0,Washington Secretary of State
 state_house,WA,48-P2,0,WA-H-48-P2,Jessica Forsythe,(Prefers Democratic Party),D,23451,52.67,1,1,0,Washington Secretary of State
 state_house,WA,48-P2,0,WA-H-48-P2,Amy Walen,(Prefers Democratic Party),D,20425,45.88,2,0,0,Washington Secretary of State
-state_house,WA,48-P2,0,WA-H-48-P2,Write-in,,W,647,1.45,3,0,0,Washington Secretary of State
+state_house,WA,48-P2,0,WA-H-48-P2,Write-in,Nonpartisan,W,647,1.45,3,0,0,Washington Secretary of State
 state_house,WA,49-P1,0,WA-H-49-P1,Kim D. Harless,(Prefers Democratic Party),D,41752,69.43,1,1,0,Washington Secretary of State
 state_house,WA,49-P1,0,WA-H-49-P1,Sarah Mittelman,(Prefers Republican Party),R,18220,30.3,2,0,0,Washington Secretary of State
-state_house,WA,49-P1,0,WA-H-49-P1,Write-in,,W,165,0.27,3,0,0,Washington Secretary of State
+state_house,WA,49-P1,0,WA-H-49-P1,Write-in,Nonpartisan,W,165,0.27,3,0,0,Washington Secretary of State
 state_house,WA,49-P2,0,WA-H-49-P2,Monica Jurado Stonier,(Prefers Democratic Party),D,42721,71.42,1,1,0,Washington Secretary of State
 state_house,WA,49-P2,0,WA-H-49-P2,Derek Thompson,(Prefers Republican Party),R,16934,28.31,2,0,0,Washington Secretary of State
-state_house,WA,49-P2,0,WA-H-49-P2,Write-in,,W,160,0.27,3,0,0,Washington Secretary of State
+state_house,WA,49-P2,0,WA-H-49-P2,Write-in,Nonpartisan,W,160,0.27,3,0,0,Washington Secretary of State
 state_house,WI,1,0,WI-H-1,Joel Kitchens,Republican,R,18292,57.35,1,1,0,civicAPI
 state_house,WI,1,0,WI-H-1,Renee Paplham,Democratic,D,13603,42.65,2,0,0,civicAPI
 state_house,WI,2,0,WI-H-2,Shae Sortwell,Republican,R,16071,57.72,1,1,0,civicAPI
@@ -11601,98 +11604,160 @@ state_house,WV,99,0,WV-H-99,Regina Dyer,Democratic,D,3661,55.18,1,1,0,civicAPI
 state_house,WV,99,0,WV-H-99,Wayne M. Clark,Republican,R,2974,44.82,2,0,0,civicAPI
 state_house,WV,100,0,WV-H-100,Jenny Thacker,Democratic,D,3426,53.38,1,1,0,civicAPI
 state_house,WV,100,0,WV-H-100,William Ridenour,Republican,R,2992,46.62,2,0,0,civicAPI
-state_house,WY,1,0,WY-H-1,Troy Claycomb,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,2,0,WY-H-2,JD Williams,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,3,0,WY-H-3,Earl Collier,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,4,0,WY-H-4,Jeremy Haroldson,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,5,0,WY-H-5,Joe Speckner,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,6,0,WY-H-6,Tomi Strock,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,7,0,WY-H-7,Bob Nicholas,Republican,R,1993,62.89,1,1,0,civicAPI
-state_house,WY,7,0,WY-H-7,Gavin Lobmeyer,Democratic,D,1176,37.11,2,0,0,civicAPI
-state_house,WY,8,0,WY-H-8,Luke Reiner,Republican,R,3120,77.09,1,1,0,civicAPI
-state_house,WY,8,0,WY-H-8,Brenda J Lyttle,Democratic,D,927,22.91,2,0,0,civicAPI
-state_house,WY,9,0,WY-H-9,Boyd O. Wiggam,Republican,R,1792,63.01,1,1,0,civicAPI
-state_house,WY,9,0,WY-H-9,Stephen D. Latham,Democratic,D,1052,36.99,2,0,0,civicAPI
-state_house,WY,10,0,WY-H-10,Justin Fornstrom,Republican,R,2911,83.41,1,1,0,civicAPI
-state_house,WY,10,0,WY-H-10,Tony Perry,Constitution,O,579,16.59,2,0,0,civicAPI
-state_house,WY,11,0,WY-H-11,Britney Tennant,Democratic,D,1080,47.81,1,1,0,civicAPI
-state_house,WY,11,0,WY-H-11,Dan McIntosh,Republican,R,1027,45.46,2,0,0,civicAPI
-state_house,WY,11,0,WY-H-11,Ryan Shollenberger,Libertarian,L,152,6.73,3,0,0,civicAPI
-state_house,WY,12,0,WY-H-12,Clarence Styvar,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,13,0,WY-H-13,Ken Chestek,Democratic,D,1682,66.43,1,1,0,civicAPI
-state_house,WY,13,0,WY-H-13,Shane Swett,Republican,R,850,33.57,2,0,0,civicAPI
-state_house,WY,14,0,WY-H-14,Trey Sherwood,Democratic,D,2268,61.85,1,1,0,civicAPI
-state_house,WY,14,0,WY-H-14,Emily Study,Republican,R,1399,38.15,2,0,0,civicAPI
-state_house,WY,15,0,WY-H-15,Pamela Thayer,Republican,R,1499,79.02,1,1,0,civicAPI
-state_house,WY,15,0,WY-H-15,Cheryl Hulme,Constitution,O,398,20.98,2,0,0,civicAPI
-state_house,WY,16,0,WY-H-16,Mike Yin,Democratic,D,0,0,1,1,0,civicAPI
-state_house,WY,17,0,WY-H-17,Elizabeth Bingham,Republican,R,1426,67.33,1,1,0,civicAPI
-state_house,WY,17,0,WY-H-17,Rah Reinholz,Democratic,D,692,32.67,2,0,0,civicAPI
-state_house,WY,18,0,WY-H-18,Kenneth D Roberts,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,19,0,WY-H-19,Chad Stephens,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,20,0,WY-H-20,Albert Sommers,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,21,0,WY-H-21,McKay L. Erickson,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,22,0,WY-H-22,Andrew Byron,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,23,0,WY-H-23,Liz Storer,Democratic,D,3274,67.2,1,1,0,civicAPI
-state_house,WY,23,0,WY-H-23,Shannon A. Brennan,Republican,R,1598,32.8,2,0,0,civicAPI
-state_house,WY,24,0,WY-H-24,Quin Blair,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,25,0,WY-H-25,John Wetzel,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,26,0,WY-H-26,Dalton Banks,Republican,R,2557,81.75,1,1,0,civicAPI
-state_house,WY,26,0,WY-H-26,Ralph Nieder-Westermann,Democratic,D,571,18.25,2,0,0,civicAPI
-state_house,WY,27,0,WY-H-27,Martha Lawley,Republican,R,2700,84.64,1,1,0,civicAPI
-state_house,WY,27,0,WY-H-27,Theresa Livingston,Democratic,D,490,15.36,2,0,0,civicAPI
-state_house,WY,28,0,WY-H-28,Allen Hogg,Republican,R,3309,86.78,1,1,0,civicAPI
-state_house,WY,28,0,WY-H-28,Larry Alwin,Democratic,D,504,13.22,2,0,0,civicAPI
-state_house,WY,29,0,WY-H-29,Myca Sturtevant,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,30,0,WY-H-30,Ryan Koltiska,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,31,0,WY-H-31,Douglas Moore,Republican,R,1521,80.95,1,1,0,civicAPI
-state_house,WY,31,0,WY-H-31,Dave Hardesty,Independent,I,358,19.05,2,0,0,civicAPI
-state_house,WY,32,0,WY-H-32,Ken Clouston,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,33,0,WY-H-33,Ivan D. Posey,Democratic,D,1383,65.11,1,1,0,civicAPI
-state_house,WY,33,0,WY-H-33,Justin Morgan,Republican,R,741,34.89,2,0,0,civicAPI
-state_house,WY,34,0,WY-H-34,Pepper L Ottman,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,35,0,WY-H-35,Christopher Dresang,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,36,0,WY-H-36,Art Washut,Republican,R,1377,66.07,1,1,0,civicAPI
-state_house,WY,36,0,WY-H-36,Stewart McAdoo,Democratic,D,707,33.93,2,0,0,civicAPI
-state_house,WY,37,0,WY-H-37,Brian Costello,Republican,R,2468,72.7,1,1,0,civicAPI
-state_house,WY,37,0,WY-H-37,Betsy Erickson,Democratic,D,927,27.3,2,0,0,civicAPI
-state_house,WY,38,0,WY-H-38,Robert L. Hendry,Republican,R,1783,74.76,1,1,0,civicAPI
-state_house,WY,38,0,WY-H-38,Catherine McQueen,Democratic,D,602,25.24,2,0,0,civicAPI
-state_house,WY,39,0,WY-H-39,Cody Wylie,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,40,0,WY-H-40,Marilyn Connolly,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,41,0,WY-H-41,Erin Edwards,Republican,R,1602,58.49,1,1,0,civicAPI
-state_house,WY,41,0,WY-H-41,Stacy Becker,Democratic,D,1137,41.51,2,0,0,civicAPI
-state_house,WY,42,0,WY-H-42,Rob Geringer,Republican,R,2376,77.37,1,1,0,civicAPI
-state_house,WY,42,0,WY-H-42,Jim VanDyke,Democratic,D,695,22.63,2,0,0,civicAPI
-state_house,WY,43,0,WY-H-43,Jessica Crowder,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,44,0,WY-H-44,Lee Filer,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,45,0,WY-H-45,Karlee Provenza,Democratic,D,2275,74.71,1,1,0,civicAPI
-state_house,WY,45,0,WY-H-45,Ross Davenport,Republican,R,770,25.29,2,0,0,civicAPI
-state_house,WY,46,0,WY-H-46,Cam Wright,Republican,R,2787,74.14,1,1,0,civicAPI
-state_house,WY,46,0,WY-H-46,Gary Wilken,Democratic,D,972,25.86,2,0,0,civicAPI
-state_house,WY,47,0,WY-H-47,Eamon O'Toole,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,48,0,WY-H-48,James Wamsley,Republican,R,1568,71.05,1,1,0,civicAPI
-state_house,WY,48,0,WY-H-48,Suzie Schmid,Democratic,D,639,28.95,2,0,0,civicAPI
-state_house,WY,49,0,WY-H-49,David Walton,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,50,0,WY-H-50,David Hill,Republican,R,3213,86.0,1,1,0,civicAPI
-state_house,WY,50,0,WY-H-50,Carrie Satterwhite,Libertarian,L,523,14.0,2,0,0,civicAPI
-state_house,WY,51,0,WY-H-51,Laurie Bratten,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,52,0,WY-H-52,Ronda Boller,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,53,0,WY-H-53,Christopher R Knapp,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,54,0,WY-H-54,Lloyd Charles Larsen,Republican,R,3156,79.9,1,1,0,civicAPI
-state_house,WY,54,0,WY-H-54,Holly M. Butler,Libertarian,L,794,20.1,2,0,0,civicAPI
-state_house,WY,55,0,WY-H-55,Carl Manning,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,56,0,WY-H-56,Elissa Campbell,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,57,0,WY-H-57,Julie Jarvis,Republican,R,1277,72.72,1,1,0,civicAPI
-state_house,WY,57,0,WY-H-57,Luc Colgrove,Democratic,D,479,27.28,2,0,0,civicAPI
-state_house,WY,58,0,WY-H-58,Bill Allemand,Republican,R,1401,63.71,1,1,0,civicAPI
-state_house,WY,58,0,WY-H-58,Keenan Morgan,Democratic,D,571,25.97,2,0,0,civicAPI
-state_house,WY,58,0,WY-H-58,Joseph Porambo,Libertarian,L,227,10.32,3,0,0,civicAPI
-state_house,WY,59,0,WY-H-59,J.R. Riggins,Republican,R,1407,66.71,1,1,0,civicAPI
-state_house,WY,59,0,WY-H-59,Laurie Longtine,Democratic,D,702,33.29,2,0,0,civicAPI
-state_house,WY,60,0,WY-H-60,Tony Niemiec,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,61,0,WY-H-61,Andrew Server,Republican,R,0,0,1,1,0,civicAPI
-state_house,WY,62,0,WY-H-62,Kevin J. Campbell,Republican,R,0,0,1,1,0,civicAPI
+state_house,WY,1,0,WY-H-1,Troy Claycomb,R,R,3688,96.19,1,1,0,Wyoming Secretary of State
+state_house,WY,1,0,WY-H-1,Write-Ins,,W,146,3.81,2,,,Wyoming Secretary of State
+state_house,WY,2,0,WY-H-2,JD Williams,R,R,2850,97.04,1,1,0,Wyoming Secretary of State
+state_house,WY,2,0,WY-H-2,Write-Ins,,W,87,2.96,2,,,Wyoming Secretary of State
+state_house,WY,3,0,WY-H-3,Earl Collier,R,R,2288,96.34,1,1,0,Wyoming Secretary of State
+state_house,WY,3,0,WY-H-3,Write-Ins,,W,87,3.66,2,,,Wyoming Secretary of State
+state_house,WY,4,0,WY-H-4,Jeremy Haroldson,R,R,2533,90.27,1,1,0,Wyoming Secretary of State
+state_house,WY,4,0,WY-H-4,Write-Ins,,W,273,9.73,2,,,Wyoming Secretary of State
+state_house,WY,5,0,WY-H-5,Joe Speckner,R,R,3226,98.5,1,1,0,Wyoming Secretary of State
+state_house,WY,5,0,WY-H-5,Write-Ins,,W,49,1.5,2,,,Wyoming Secretary of State
+state_house,WY,6,0,WY-H-6,Tomi Strock,R,R,2175,87.95,1,1,0,Wyoming Secretary of State
+state_house,WY,6,0,WY-H-6,Write-Ins,,W,298,12.05,2,,,Wyoming Secretary of State
+state_house,WY,7,0,WY-H-7,Bob Nicholas,R,R,1993,62.26,1,1,0,Wyoming Secretary of State
+state_house,WY,7,0,WY-H-7,Gavin Lobmeyer,D,D,1176,36.74,2,0,0,Wyoming Secretary of State
+state_house,WY,7,0,WY-H-7,Write-Ins,,W,32,1.0,3,,,Wyoming Secretary of State
+state_house,WY,8,0,WY-H-8,Luke Reiner,R,R,3120,76.38,1,1,0,Wyoming Secretary of State
+state_house,WY,8,0,WY-H-8,Brenda J Lyttle,D,D,927,22.69,2,0,0,Wyoming Secretary of State
+state_house,WY,8,0,WY-H-8,Write-Ins,,W,38,0.93,3,,,Wyoming Secretary of State
+state_house,WY,9,0,WY-H-9,Boyd O. Wiggam,R,R,1792,62.46,1,1,0,Wyoming Secretary of State
+state_house,WY,9,0,WY-H-9,Stephen D. Latham,D,D,1052,36.67,2,0,0,Wyoming Secretary of State
+state_house,WY,9,0,WY-H-9,Write-Ins,,W,25,0.87,3,,,Wyoming Secretary of State
+state_house,WY,10,0,WY-H-10,Justin Fornstrom,R,R,2911,82.53,1,1,0,Wyoming Secretary of State
+state_house,WY,10,0,WY-H-10,Tony Perry,C,O,579,16.42,2,0,0,Wyoming Secretary of State
+state_house,WY,10,0,WY-H-10,Write-Ins,,W,37,1.05,3,,,Wyoming Secretary of State
+state_house,WY,11,0,WY-H-11,Britney Tennant,D,D,1080,47.75,1,1,0,Wyoming Secretary of State
+state_house,WY,11,0,WY-H-11,Dan McIntosh,R,R,1027,45.4,2,0,0,Wyoming Secretary of State
+state_house,WY,11,0,WY-H-11,Ryan Shollenberger,L,L,152,6.72,3,0,0,Wyoming Secretary of State
+state_house,WY,11,0,WY-H-11,Write-Ins,,W,3,0.13,4,,,Wyoming Secretary of State
+state_house,WY,12,0,WY-H-12,Clarence Styvar,R,R,1360,93.28,1,1,0,Wyoming Secretary of State
+state_house,WY,12,0,WY-H-12,Write-Ins,,W,98,6.72,2,,,Wyoming Secretary of State
+state_house,WY,13,0,WY-H-13,Ken Chestek,D,D,1682,66.25,1,1,0,Wyoming Secretary of State
+state_house,WY,13,0,WY-H-13,Shane Swett,R,R,850,33.48,2,0,0,Wyoming Secretary of State
+state_house,WY,13,0,WY-H-13,Write-Ins,,W,7,0.28,3,,,Wyoming Secretary of State
+state_house,WY,14,0,WY-H-14,Trey Sherwood,D,D,2268,61.66,1,1,0,Wyoming Secretary of State
+state_house,WY,14,0,WY-H-14,Emily Study,R,R,1399,38.04,2,0,0,Wyoming Secretary of State
+state_house,WY,14,0,WY-H-14,Write-Ins,,W,11,0.3,3,,,Wyoming Secretary of State
+state_house,WY,15,0,WY-H-15,Pamela Thayer,R,R,1499,77.67,1,1,0,Wyoming Secretary of State
+state_house,WY,15,0,WY-H-15,Cheryl Hulme,C,O,398,20.62,2,0,0,Wyoming Secretary of State
+state_house,WY,15,0,WY-H-15,Write-Ins,,W,33,1.71,3,,,Wyoming Secretary of State
+state_house,WY,16,0,WY-H-16,Mike Yin,D,D,2875,97.79,1,1,0,Wyoming Secretary of State
+state_house,WY,16,0,WY-H-16,Write-Ins,,W,65,2.21,2,,,Wyoming Secretary of State
+state_house,WY,17,0,WY-H-17,Elizabeth Bingham,R,R,1426,66.98,1,1,0,Wyoming Secretary of State
+state_house,WY,17,0,WY-H-17,Rah Reinholz,D,D,692,32.5,2,0,0,Wyoming Secretary of State
+state_house,WY,17,0,WY-H-17,Write-Ins,,W,11,0.52,3,,,Wyoming Secretary of State
+state_house,WY,18,0,WY-H-18,Kenneth D Roberts,R,R,2691,97.29,1,1,0,Wyoming Secretary of State
+state_house,WY,18,0,WY-H-18,Write-Ins,,W,75,2.71,2,,,Wyoming Secretary of State
+state_house,WY,19,0,WY-H-19,Chad Stephens,R,R,2414,95.42,1,1,0,Wyoming Secretary of State
+state_house,WY,19,0,WY-H-19,Write-Ins,,W,116,4.58,2,,,Wyoming Secretary of State
+state_house,WY,20,0,WY-H-20,Albert Sommers,R,R,3349,95.77,1,1,0,Wyoming Secretary of State
+state_house,WY,20,0,WY-H-20,Write-Ins,,W,148,4.23,2,,,Wyoming Secretary of State
+state_house,WY,21,0,WY-H-21,McKay L. Erickson,R,R,3159,98.63,1,1,0,Wyoming Secretary of State
+state_house,WY,21,0,WY-H-21,Write-Ins,,W,44,1.37,2,,,Wyoming Secretary of State
+state_house,WY,22,0,WY-H-22,Andrew Byron,R,R,3055,97.01,1,1,0,Wyoming Secretary of State
+state_house,WY,22,0,WY-H-22,Write-Ins,,W,94,2.99,2,,,Wyoming Secretary of State
+state_house,WY,23,0,WY-H-23,Liz Storer,D,D,3274,67.17,1,1,0,Wyoming Secretary of State
+state_house,WY,23,0,WY-H-23,Shannon A. Brennan,R,R,1598,32.79,2,0,0,Wyoming Secretary of State
+state_house,WY,23,0,WY-H-23,Write-Ins,,W,2,0.04,3,,,Wyoming Secretary of State
+state_house,WY,24,0,WY-H-24,Quin Blair,R,R,3029,96.46,1,1,0,Wyoming Secretary of State
+state_house,WY,24,0,WY-H-24,Write-Ins,,W,111,3.54,2,,,Wyoming Secretary of State
+state_house,WY,25,0,WY-H-25,John Wetzel,R,R,2543,95.31,1,1,0,Wyoming Secretary of State
+state_house,WY,25,0,WY-H-25,Write-Ins,,W,125,4.69,2,,,Wyoming Secretary of State
+state_house,WY,26,0,WY-H-26,Dalton Banks,R,R,2557,81.56,1,1,0,Wyoming Secretary of State
+state_house,WY,26,0,WY-H-26,Ralph Nieder-Westermann,D,D,571,18.21,2,0,0,Wyoming Secretary of State
+state_house,WY,26,0,WY-H-26,Write-Ins,,W,7,0.22,3,,,Wyoming Secretary of State
+state_house,WY,27,0,WY-H-27,Martha Lawley,R,R,2700,84.14,1,1,0,Wyoming Secretary of State
+state_house,WY,27,0,WY-H-27,Theresa Livingston,D,D,490,15.27,2,0,0,Wyoming Secretary of State
+state_house,WY,27,0,WY-H-27,Write-Ins,,W,19,0.59,3,,,Wyoming Secretary of State
+state_house,WY,28,0,WY-H-28,Allen Hogg,R,R,3309,86.31,1,1,0,Wyoming Secretary of State
+state_house,WY,28,0,WY-H-28,Larry Alwin,D,D,504,13.15,2,0,0,Wyoming Secretary of State
+state_house,WY,28,0,WY-H-28,Write-Ins,,W,21,0.55,3,,,Wyoming Secretary of State
+state_house,WY,29,0,WY-H-29,Myca Sturtevant,R,R,2537,96.43,1,1,0,Wyoming Secretary of State
+state_house,WY,29,0,WY-H-29,Write-Ins,,W,94,3.57,2,,,Wyoming Secretary of State
+state_house,WY,30,0,WY-H-30,Ryan Koltiska,R,R,2963,95.43,1,1,0,Wyoming Secretary of State
+state_house,WY,30,0,WY-H-30,Write-Ins,,W,142,4.57,2,,,Wyoming Secretary of State
+state_house,WY,31,0,WY-H-31,Douglas Moore,R,R,1521,79.68,1,1,0,Wyoming Secretary of State
+state_house,WY,31,0,WY-H-31,Dave Hardesty,I,I,358,18.75,2,0,0,Wyoming Secretary of State
+state_house,WY,31,0,WY-H-31,Write-Ins,,W,30,1.57,3,,,Wyoming Secretary of State
+state_house,WY,32,0,WY-H-32,Ken Clouston,R,R,2124,98.24,1,1,0,Wyoming Secretary of State
+state_house,WY,32,0,WY-H-32,Write-Ins,,W,38,1.76,2,,,Wyoming Secretary of State
+state_house,WY,33,0,WY-H-33,Ivan D. Posey,D,D,1383,65.08,1,1,0,Wyoming Secretary of State
+state_house,WY,33,0,WY-H-33,Justin Morgan,R,R,741,34.87,2,0,0,Wyoming Secretary of State
+state_house,WY,33,0,WY-H-33,Write-Ins,,W,1,0.05,3,,,Wyoming Secretary of State
+state_house,WY,34,0,WY-H-34,Pepper L Ottman,R,R,2930,95.94,1,1,0,Wyoming Secretary of State
+state_house,WY,34,0,WY-H-34,Write-Ins,,W,124,4.06,2,,,Wyoming Secretary of State
+state_house,WY,35,0,WY-H-35,Christopher Dresang,R,R,2642,96.42,1,1,0,Wyoming Secretary of State
+state_house,WY,35,0,WY-H-35,Write-Ins,,W,98,3.58,2,,,Wyoming Secretary of State
+state_house,WY,36,0,WY-H-36,Art Washut,R,R,1377,65.63,1,1,0,Wyoming Secretary of State
+state_house,WY,36,0,WY-H-36,Stewart McAdoo,D,D,707,33.7,2,0,0,Wyoming Secretary of State
+state_house,WY,36,0,WY-H-36,Write-Ins,,W,14,0.67,3,,,Wyoming Secretary of State
+state_house,WY,37,0,WY-H-37,Brian Costello,R,R,2468,71.62,1,1,0,Wyoming Secretary of State
+state_house,WY,37,0,WY-H-37,Betsy Erickson,D,D,927,26.9,2,0,0,Wyoming Secretary of State
+state_house,WY,37,0,WY-H-37,Write-Ins,,W,51,1.48,3,,,Wyoming Secretary of State
+state_house,WY,38,0,WY-H-38,Robert L. Hendry,R,R,1783,72.66,1,1,0,Wyoming Secretary of State
+state_house,WY,38,0,WY-H-38,Catherine McQueen,D,D,602,24.53,2,0,0,Wyoming Secretary of State
+state_house,WY,38,0,WY-H-38,Write-Ins,,W,69,2.81,3,,,Wyoming Secretary of State
+state_house,WY,39,0,WY-H-39,Cody Wylie,R,R,1872,97.35,1,1,0,Wyoming Secretary of State
+state_house,WY,39,0,WY-H-39,Write-Ins,,W,51,2.65,2,,,Wyoming Secretary of State
+state_house,WY,40,0,WY-H-40,Marilyn Connolly,R,R,3677,95.98,1,1,0,Wyoming Secretary of State
+state_house,WY,40,0,WY-H-40,Write-Ins,,W,154,4.02,2,,,Wyoming Secretary of State
+state_house,WY,41,0,WY-H-41,Erin Edwards,R,R,1602,57.36,1,1,0,Wyoming Secretary of State
+state_house,WY,41,0,WY-H-41,Stacy Becker,D,D,1137,40.71,2,0,0,Wyoming Secretary of State
+state_house,WY,41,0,WY-H-41,Write-Ins,,W,54,1.93,3,,,Wyoming Secretary of State
+state_house,WY,42,0,WY-H-42,Rob Geringer,R,R,2376,76.62,1,1,0,Wyoming Secretary of State
+state_house,WY,42,0,WY-H-42,Jim VanDyke,D,D,695,22.41,2,0,0,Wyoming Secretary of State
+state_house,WY,42,0,WY-H-42,Write-Ins,,W,30,0.97,3,,,Wyoming Secretary of State
+state_house,WY,43,0,WY-H-43,Jessica Crowder,R,R,2443,95.02,1,1,0,Wyoming Secretary of State
+state_house,WY,43,0,WY-H-43,Write-Ins,,W,128,4.98,2,,,Wyoming Secretary of State
+state_house,WY,44,0,WY-H-44,Lee Filer,R,R,1256,90.49,1,1,0,Wyoming Secretary of State
+state_house,WY,44,0,WY-H-44,Write-Ins,,W,132,9.51,2,,,Wyoming Secretary of State
+state_house,WY,45,0,WY-H-45,Karlee Provenza,D,D,2275,74.47,1,1,0,Wyoming Secretary of State
+state_house,WY,45,0,WY-H-45,Ross Davenport,R,R,770,25.2,2,0,0,Wyoming Secretary of State
+state_house,WY,45,0,WY-H-45,Write-Ins,,W,10,0.33,3,,,Wyoming Secretary of State
+state_house,WY,46,0,WY-H-46,Cam Wright,R,R,2787,73.54,1,1,0,Wyoming Secretary of State
+state_house,WY,46,0,WY-H-46,Gary Wilken,D,D,972,25.65,2,0,0,Wyoming Secretary of State
+state_house,WY,46,0,WY-H-46,Write-Ins,,W,31,0.82,3,,,Wyoming Secretary of State
+state_house,WY,47,0,WY-H-47,Eamon O'Toole,R,R,2523,97.79,1,1,0,Wyoming Secretary of State
+state_house,WY,47,0,WY-H-47,Write-Ins,,W,57,2.21,2,,,Wyoming Secretary of State
+state_house,WY,48,0,WY-H-48,James Wamsley,R,R,1568,70.28,1,1,0,Wyoming Secretary of State
+state_house,WY,48,0,WY-H-48,Suzie Schmid,D,D,639,28.64,2,0,0,Wyoming Secretary of State
+state_house,WY,48,0,WY-H-48,Write-Ins,,W,24,1.08,3,,,Wyoming Secretary of State
+state_house,WY,49,0,WY-H-49,David Walton,R,R,2262,96.5,1,1,0,Wyoming Secretary of State
+state_house,WY,49,0,WY-H-49,Write-Ins,,W,82,3.5,2,,,Wyoming Secretary of State
+state_house,WY,50,0,WY-H-50,David Hill,R,R,3213,85.16,1,1,0,Wyoming Secretary of State
+state_house,WY,50,0,WY-H-50,Carrie Satterwhite,L,L,523,13.86,2,0,0,Wyoming Secretary of State
+state_house,WY,50,0,WY-H-50,Write-Ins,,W,37,0.98,3,,,Wyoming Secretary of State
+state_house,WY,51,0,WY-H-51,Laurie Bratten,R,R,3774,94.71,1,1,0,Wyoming Secretary of State
+state_house,WY,51,0,WY-H-51,Write-Ins,,W,211,5.29,2,,,Wyoming Secretary of State
+state_house,WY,52,0,WY-H-52,Ronda Boller,R,R,1989,97.98,1,1,0,Wyoming Secretary of State
+state_house,WY,52,0,WY-H-52,Write-Ins,,W,41,2.02,2,,,Wyoming Secretary of State
+state_house,WY,53,0,WY-H-53,Christopher R Knapp,R,R,1407,95.98,1,1,0,Wyoming Secretary of State
+state_house,WY,53,0,WY-H-53,Write-Ins,,W,59,4.02,2,,,Wyoming Secretary of State
+state_house,WY,54,0,WY-H-54,Lloyd Charles Larsen,R,R,3156,78.68,1,1,0,Wyoming Secretary of State
+state_house,WY,54,0,WY-H-54,Holly M. Butler,L,L,794,19.8,2,0,0,Wyoming Secretary of State
+state_house,WY,54,0,WY-H-54,Write-Ins,,W,61,1.52,3,,,Wyoming Secretary of State
+state_house,WY,55,0,WY-H-55,Carl Manning,R,R,2334,97.53,1,1,0,Wyoming Secretary of State
+state_house,WY,55,0,WY-H-55,Write-Ins,,W,59,2.47,2,,,Wyoming Secretary of State
+state_house,WY,56,0,WY-H-56,Elissa Campbell,R,R,2098,95.97,1,1,0,Wyoming Secretary of State
+state_house,WY,56,0,WY-H-56,Write-Ins,,W,88,4.03,2,,,Wyoming Secretary of State
+state_house,WY,57,0,WY-H-57,Julie Jarvis,R,R,1277,70.71,1,1,0,Wyoming Secretary of State
+state_house,WY,57,0,WY-H-57,Luc Colgrove,D,D,479,26.52,2,0,0,Wyoming Secretary of State
+state_house,WY,57,0,WY-H-57,Write-Ins,,W,50,2.77,3,,,Wyoming Secretary of State
+state_house,WY,58,0,WY-H-58,Bill Allemand,R,R,1401,63.19,1,1,0,Wyoming Secretary of State
+state_house,WY,58,0,WY-H-58,Keenan Morgan,D,D,571,25.76,2,0,0,Wyoming Secretary of State
+state_house,WY,58,0,WY-H-58,Joseph Porambo,L,L,227,10.24,3,0,0,Wyoming Secretary of State
+state_house,WY,58,0,WY-H-58,Write-Ins,,W,18,0.81,4,,,Wyoming Secretary of State
+state_house,WY,59,0,WY-H-59,J.R. Riggins,R,R,1407,66.06,1,1,0,Wyoming Secretary of State
+state_house,WY,59,0,WY-H-59,Laurie Longtine,D,D,702,32.96,2,0,0,Wyoming Secretary of State
+state_house,WY,59,0,WY-H-59,Write-Ins,,W,21,0.99,3,,,Wyoming Secretary of State
+state_house,WY,60,0,WY-H-60,Tony Niemiec,R,R,1848,94.96,1,1,0,Wyoming Secretary of State
+state_house,WY,60,0,WY-H-60,Write-Ins,,W,98,5.04,2,,,Wyoming Secretary of State
+state_house,WY,61,0,WY-H-61,Andrew Server,R,R,1515,93.63,1,1,0,Wyoming Secretary of State
+state_house,WY,61,0,WY-H-61,Write-Ins,,W,103,6.37,2,,,Wyoming Secretary of State
+state_house,WY,62,0,WY-H-62,Kevin J. Campbell,R,R,2297,97.95,1,1,0,Wyoming Secretary of State
+state_house,WY,62,0,WY-H-62,Write-Ins,,W,48,2.05,2,,,Wyoming Secretary of State
 state_senate,AK,districta,0,AK-S-districta,Bert Stedman,R,R,11422,96.53,1,1,,AP via NYT (unofficial)
 state_senate,AK,districta,0,AK-S-districta,Total Write-ins,OTH,W,410,3.47,2,0,,AP via NYT (unofficial)
 state_senate,AK,districtc,0,AK-S-districtc,Louise Stutes,R,R,7803,56.76,1,1,,AP via NYT (unofficial)
@@ -13891,56 +13956,56 @@ state_senate,RI,38,0,RI-S-38,Write-in,Nonpartisan,W,11,0.09,3,0,0,civicAPI
 state_senate,SC,15,1,SC-S-15-SP,James Burns,REP,R,26529,53.7,1,1,0,South Carolina Election Commission
 state_senate,SC,15,1,SC-S-15-SP,Chad Williams,DEM,D,22837,46.23,2,0,0,South Carolina Election Commission
 state_senate,SC,15,1,SC-S-15-SP,Write-In,,W,38,0.08,3,,,South Carolina Election Commission
-state_senate,SD,1,0,SD-S-1,Michael H. Rohl,Republican,R,6026,100.0,1,1,0,civicAPI
-state_senate,SD,2,0,SD-S-2,John Sjaarda,Republican,R,7111,100.0,1,1,0,civicAPI
-state_senate,SD,3,0,SD-S-3,"Katherine ""Katie"" Washnok",Republican,R,5223,100.0,1,1,0,civicAPI
-state_senate,SD,4,0,SD-S-4,Stephanie Sauder,Republican,R,7565,100.0,1,1,0,civicAPI
-state_senate,SD,5,0,SD-S-5,Glen A. Vilhauer,Republican,R,6113,100.0,1,1,0,civicAPI
-state_senate,SD,6,0,SD-S-6,Ernie Otten,Republican,R,5582,100.0,1,1,0,civicAPI
-state_senate,SD,7,0,SD-S-7,Tim Reed,Republican,R,5313,100.0,1,1,0,civicAPI
-state_senate,SD,8,0,SD-S-8,Casey Crabtree,Republican,R,6100,59.81,1,1,0,civicAPI
-state_senate,SD,8,0,SD-S-8,Clint Hoyer,Independent,I,4099,40.19,2,0,0,civicAPI
-state_senate,SD,9,0,SD-S-9,Joy Hohn,Republican,R,5306,100.0,1,1,0,civicAPI
-state_senate,SD,10,0,SD-S-10,Liz Larson,Democratic,D,4487,62.63,1,1,0,civicAPI
-state_senate,SD,10,0,SD-S-10,Michael Dupic,Republican,R,2677,37.37,2,0,0,civicAPI
-state_senate,SD,11,0,SD-S-11,Chris Karr,Republican,R,4210,50.21,1,0,0,civicAPI
-state_senate,SD,11,0,SD-S-11,Aaron Matson,Democratic,D,4175,49.79,2,0,0,civicAPI
-state_senate,SD,12,0,SD-S-12,Kari Shanard-Koenders,Republican,R,4011,50.85,1,1,0,civicAPI
-state_senate,SD,12,0,SD-S-12,Joe Zweifel,Democratic,D,3877,49.15,2,0,0,civicAPI
-state_senate,SD,13,0,SD-S-13,Sue Peterson,Republican,R,6449,100.0,1,1,0,civicAPI
-state_senate,SD,14,0,SD-S-14,Larry P. Zikmund,Republican,R,5530,100.0,1,1,0,civicAPI
-state_senate,SD,15,0,SD-S-15,Erik Muckey,Democratic,D,3292,63.3,1,1,0,civicAPI
-state_senate,SD,15,0,SD-S-15,Brenda Lawrence,Republican,R,1909,36.7,2,0,0,civicAPI
-state_senate,SD,16,0,SD-S-16,Kevin D. Jensen,Republican,R,6478,100.0,1,1,0,civicAPI
-state_senate,SD,17,0,SD-S-17,Sydney Davis,Republican,R,4926,100.0,1,1,0,civicAPI
-state_senate,SD,18,0,SD-S-18,Lauren Nelson,Republican,R,4485,57.66,1,1,0,civicAPI
-state_senate,SD,18,0,SD-S-18,Kay Swihart,Democratic,D,3294,42.34,2,0,0,civicAPI
-state_senate,SD,19,0,SD-S-19,Kyle Schoenfish,Republican,R,6177,77.92,1,1,0,civicAPI
-state_senate,SD,19,0,SD-S-19,Russell E. Graeff,Democratic,D,1750,22.08,2,0,0,civicAPI
-state_senate,SD,20,0,SD-S-20,Paul Miskimins,Republican,R,5335,100.0,1,1,0,civicAPI
-state_senate,SD,21,0,SD-S-21,Mykala Voita,Republican,R,6192,75.82,1,1,0,civicAPI
-state_senate,SD,21,0,SD-S-21,Dan Andersson,Democratic,D,1975,24.18,2,0,0,civicAPI
-state_senate,SD,22,0,SD-S-22,Brandon R. Wipf,Republican,R,5124,100.0,1,1,0,civicAPI
-state_senate,SD,23,0,SD-S-23,Mark Lapka,Republican,R,6267,100.0,1,1,0,civicAPI
-state_senate,SD,24,0,SD-S-24,Jim Mehlhaff,Republican,R,6993,100.0,1,1,0,civicAPI
-state_senate,SD,25,0,SD-S-25,Bart Sample,Republican,R,5719,57.97,1,1,0,civicAPI
-state_senate,SD,25,0,SD-S-25,Bryan J. Breitling,Independent,I,4147,42.03,2,0,0,civicAPI
-state_senate,SD,26,0,SD-S-26,Rebecca Reimer,Republican,R,3187,54.07,1,1,0,civicAPI
-state_senate,SD,26,0,SD-S-26,Shawn Bordeaux,Democratic,D,2707,45.93,2,0,0,civicAPI
-state_senate,SD,27,0,SD-S-27,Anthony Kathol,Republican,R,2271,42.66,1,1,0,civicAPI
-state_senate,SD,27,0,SD-S-27,Celestine Stadnick,Democratic,D,2037,38.26,2,0,0,civicAPI
-state_senate,SD,27,0,SD-S-27,Peri Pourier,Independent,I,1016,19.08,3,0,0,civicAPI
-state_senate,SD,28,0,SD-S-28,Sam Marty,Republican,R,5576,100.0,1,1,0,civicAPI
-state_senate,SD,29,0,SD-S-29,William J. Meirose,Republican,R,6105,100.0,1,1,0,civicAPI
-state_senate,SD,30,0,SD-S-30,Amber Hulse,Republican,R,8709,100.0,1,1,0,civicAPI
-state_senate,SD,31,0,SD-S-31,Randy Deibert,Republican,R,6941,100.0,1,1,0,civicAPI
-state_senate,SD,32,0,SD-S-32,Helene Duhamel,Republican,R,3317,52.38,1,1,0,civicAPI
-state_senate,SD,32,0,SD-S-32,Jeff Shelton,Democratic,D,3015,47.62,2,0,0,civicAPI
-state_senate,SD,33,0,SD-S-33,David Johnson,Republican,R,6427,65.08,1,1,0,civicAPI
-state_senate,SD,33,0,SD-S-33,Christopher Baumgartner,Democratic,D,3449,34.92,2,0,0,civicAPI
-state_senate,SD,34,0,SD-S-34,Taffy Howard,Republican,R,4943,52.3,1,1,0,civicAPI
-state_senate,SD,34,0,SD-S-34,Michael Calabrese,Democratic,D,4508,47.7,2,0,0,civicAPI
-state_senate,SD,35,0,SD-S-35,Greg Blanc,Republican,R,4213,100.0,1,1,0,civicAPI
+state_senate,SD,1,0,SD-S-1,Michael H. Rohl,Republican,R,6026,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,2,0,SD-S-2,John Sjaarda,Republican,R,7111,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,3,0,SD-S-3,"Katherine ""Katie"" Washnok",Republican,R,5223,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,4,0,SD-S-4,Stephanie Sauder,Republican,R,7565,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,5,0,SD-S-5,Glen A. Vilhauer,Republican,R,6113,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,6,0,SD-S-6,Ernie Otten,Republican,R,5582,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,7,0,SD-S-7,Tim Reed,Republican,R,5313,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,8,0,SD-S-8,Casey Crabtree,Republican,R,6100,59.81,1,1,0,South Dakota Secretary of State
+state_senate,SD,8,0,SD-S-8,Clint Hoyer,Independent,I,4099,40.19,2,0,0,South Dakota Secretary of State
+state_senate,SD,9,0,SD-S-9,Joy Hohn,Republican,R,5306,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,10,0,SD-S-10,Liz Larson,Democratic,D,4487,62.63,1,1,0,South Dakota Secretary of State
+state_senate,SD,10,0,SD-S-10,Michael Dupic,Republican,R,2677,37.37,2,0,0,South Dakota Secretary of State
+state_senate,SD,11,0,SD-S-11,Chris Karr,Republican,R,4210,50.21,1,0,0,South Dakota Secretary of State
+state_senate,SD,11,0,SD-S-11,Aaron Matson,Democratic,D,4175,49.79,2,0,0,South Dakota Secretary of State
+state_senate,SD,12,0,SD-S-12,Kari Shanard-Koenders,Republican,R,4011,50.85,1,1,0,South Dakota Secretary of State
+state_senate,SD,12,0,SD-S-12,Joe Zweifel,Democratic,D,3877,49.15,2,0,0,South Dakota Secretary of State
+state_senate,SD,13,0,SD-S-13,Sue Peterson,Republican,R,6449,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,14,0,SD-S-14,Larry P. Zikmund,Republican,R,5530,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,15,0,SD-S-15,Erik Muckey,Democratic,D,3292,63.3,1,1,0,South Dakota Secretary of State
+state_senate,SD,15,0,SD-S-15,Brenda Lawrence,Republican,R,1909,36.7,2,0,0,South Dakota Secretary of State
+state_senate,SD,16,0,SD-S-16,Kevin D. Jensen,Republican,R,6478,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,17,0,SD-S-17,Sydney Davis,Republican,R,4926,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,18,0,SD-S-18,Lauren Nelson,Republican,R,4485,57.66,1,1,0,South Dakota Secretary of State
+state_senate,SD,18,0,SD-S-18,Kay Swihart,Democratic,D,3294,42.34,2,0,0,South Dakota Secretary of State
+state_senate,SD,19,0,SD-S-19,Kyle Schoenfish,Republican,R,6177,77.92,1,1,0,South Dakota Secretary of State
+state_senate,SD,19,0,SD-S-19,Russell E. Graeff,Democratic,D,1750,22.08,2,0,0,South Dakota Secretary of State
+state_senate,SD,20,0,SD-S-20,Paul Miskimins,Republican,R,5335,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,21,0,SD-S-21,Mykala Voita,Republican,R,6192,75.82,1,1,0,South Dakota Secretary of State
+state_senate,SD,21,0,SD-S-21,Dan Andersson,Democratic,D,1975,24.18,2,0,0,South Dakota Secretary of State
+state_senate,SD,22,0,SD-S-22,Brandon R. Wipf,Republican,R,5124,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,23,0,SD-S-23,Mark Lapka,Republican,R,6267,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,24,0,SD-S-24,Jim Mehlhaff,Republican,R,6993,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,25,0,SD-S-25,Bart Sample,Republican,R,5719,57.97,1,1,0,South Dakota Secretary of State
+state_senate,SD,25,0,SD-S-25,Bryan J. Breitling,Independent,I,4147,42.03,2,0,0,South Dakota Secretary of State
+state_senate,SD,26,0,SD-S-26,Rebecca Reimer,Republican,R,3187,54.07,1,1,0,South Dakota Secretary of State
+state_senate,SD,26,0,SD-S-26,Shawn Bordeaux,Democratic,D,2707,45.93,2,0,0,South Dakota Secretary of State
+state_senate,SD,27,0,SD-S-27,Anthony Kathol,Republican,R,2271,42.66,1,1,0,South Dakota Secretary of State
+state_senate,SD,27,0,SD-S-27,Celestine Stadnick,Democratic,D,2037,38.26,2,0,0,South Dakota Secretary of State
+state_senate,SD,27,0,SD-S-27,Peri Pourier,Independent,I,1016,19.08,3,0,0,South Dakota Secretary of State
+state_senate,SD,28,0,SD-S-28,Sam Marty,Republican,R,5576,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,29,0,SD-S-29,William J. Meirose,Republican,R,6105,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,30,0,SD-S-30,Amber Hulse,Republican,R,8709,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,31,0,SD-S-31,Randy Deibert,Republican,R,6941,100.0,1,1,0,South Dakota Secretary of State
+state_senate,SD,32,0,SD-S-32,Helene Duhamel,Republican,R,3317,52.38,1,1,0,South Dakota Secretary of State
+state_senate,SD,32,0,SD-S-32,Jeff Shelton,Democratic,D,3015,47.62,2,0,0,South Dakota Secretary of State
+state_senate,SD,33,0,SD-S-33,David Johnson,Republican,R,6427,65.08,1,1,0,South Dakota Secretary of State
+state_senate,SD,33,0,SD-S-33,Christopher Baumgartner,Democratic,D,3449,34.92,2,0,0,South Dakota Secretary of State
+state_senate,SD,34,0,SD-S-34,Taffy Howard,Republican,R,4943,52.3,1,1,0,South Dakota Secretary of State
+state_senate,SD,34,0,SD-S-34,Michael Calabrese,Democratic,D,4508,47.7,2,0,0,South Dakota Secretary of State
+state_senate,SD,35,0,SD-S-35,Greg Blanc,Republican,R,4213,100.0,1,1,0,South Dakota Secretary of State
 state_senate,TN,1,0,TN-S-1,J. Adam Lowe,Republican,R,0,0,1,1,0,civicAPI
 state_senate,TN,3,0,TN-S-3,Rusty Crowe,Republican,R,0,0,1,1,0,civicAPI
 state_senate,TN,5,0,TN-S-5,Jimmy Matlock,Republican,R,41483,61.16,1,1,0,civicAPI
@@ -14103,70 +14168,70 @@ state_senate,VT,windsor,0,VT-S-windsor,Jack Williams,R,R,7573,9.68,6,0,,AP via N
 state_senate,VT,windsor,0,VT-S-windsor,Joe Izzo,IND,I,2476,3.16,7,0,,AP via NYT (unofficial)
 state_senate,VT,windsor,0,VT-S-windsor,Total Write-ins,OTH,W,75,0.1,8,0,,AP via NYT (unofficial)
 state_senate,WA,6,0,WA-S-6,Jeff Holy,(Prefers Republican Party),R,41774,91.58,1,1,0,Washington Secretary of State
-state_senate,WA,6,0,WA-S-6,Write-in,,W,3839,8.42,2,0,0,Washington Secretary of State
+state_senate,WA,6,0,WA-S-6,Write-in,Nonpartisan,W,3839,8.42,2,0,0,Washington Secretary of State
 state_senate,WA,7,0,WA-S-7,Shelly Short,(Prefers Republican Party),R,44919,67.12,1,1,0,Washington Secretary of State
 state_senate,WA,7,0,WA-S-7,Ronald L McCoy,(Prefers Independent Party),O,21632,32.32,2,0,0,Washington Secretary of State
-state_senate,WA,7,0,WA-S-7,Write-in,,W,375,0.56,3,0,0,Washington Secretary of State
+state_senate,WA,7,0,WA-S-7,Write-in,Nonpartisan,W,375,0.56,3,0,0,Washington Secretary of State
 state_senate,WA,8,0,WA-S-8,Nikki Torres,(Prefers Republican Party),R,27469,52.69,1,1,0,Washington Secretary of State
 state_senate,WA,8,0,WA-S-8,Gabe Galbraith,(Prefers Republican Party),R,23628,45.33,2,0,0,Washington Secretary of State
-state_senate,WA,8,0,WA-S-8,Write-in,,W,1032,1.98,3,0,0,Washington Secretary of State
+state_senate,WA,8,0,WA-S-8,Write-in,Nonpartisan,W,1032,1.98,3,0,0,Washington Secretary of State
 state_senate,WA,13,0,WA-S-13,Alex Ybarra,(Prefers Republican Party),R,38808,96.73,1,1,0,Washington Secretary of State
-state_senate,WA,13,0,WA-S-13,Write-in,,W,1310,3.27,2,0,0,Washington Secretary of State
+state_senate,WA,13,0,WA-S-13,Write-in,Nonpartisan,W,1310,3.27,2,0,0,Washington Secretary of State
 state_senate,WA,15,0,WA-S-15,Jeremie Dufault,(Prefers Republican Party),R,40122,94.37,1,1,0,Washington Secretary of State
-state_senate,WA,15,0,WA-S-15,Write-in,,W,2395,5.63,2,0,0,Washington Secretary of State
+state_senate,WA,15,0,WA-S-15,Write-in,Nonpartisan,W,2395,5.63,2,0,0,Washington Secretary of State
 state_senate,WA,21,0,WA-S-21,Marko Liias,(Prefers Democratic Party),D,42325,72.1,1,1,0,Washington Secretary of State
 state_senate,WA,21,0,WA-S-21,Riaz Khan,(Prefers Republican Party),R,16192,27.58,2,0,0,Washington Secretary of State
-state_senate,WA,21,0,WA-S-21,Write-in,,W,190,0.32,3,0,0,Washington Secretary of State
+state_senate,WA,21,0,WA-S-21,Write-in,Nonpartisan,W,190,0.32,3,0,0,Washington Secretary of State
 state_senate,WA,26,0,WA-S-26,Deborah Krishnadasan,(Prefers Democratic Party),D,44066,56.21,1,1,0,Washington Secretary of State
 state_senate,WA,26,0,WA-S-26,Gary Parker,(Prefers Republican Party),R,34252,43.69,2,0,0,Washington Secretary of State
-state_senate,WA,26,0,WA-S-26,Write-in,,W,83,0.11,3,0,0,Washington Secretary of State
+state_senate,WA,26,0,WA-S-26,Write-in,Nonpartisan,W,83,0.11,3,0,0,Washington Secretary of State
 state_senate,WA,29,0,WA-S-29,Sharlett Mena,(Prefers Democratic Party),D,25050,70.81,1,1,0,Washington Secretary of State
 state_senate,WA,29,0,WA-S-29,David Anderson,(Prefers Democratic Party),D,9302,26.3,2,0,0,Washington Secretary of State
-state_senate,WA,29,0,WA-S-29,Write-in,,W,1022,2.89,3,0,0,Washington Secretary of State
+state_senate,WA,29,0,WA-S-29,Write-in,Nonpartisan,W,1022,2.89,3,0,0,Washington Secretary of State
 state_senate,WA,30,0,WA-S-30,Claire Wilson,(Prefers Democratic Party),D,28778,64.35,1,1,0,Washington Secretary of State
 state_senate,WA,30,0,WA-S-30,Michael Rutland,(Prefers Republican Party),R,15903,35.56,2,0,0,Washington Secretary of State
-state_senate,WA,30,0,WA-S-30,Write-in,,W,41,0.09,3,0,0,Washington Secretary of State
+state_senate,WA,30,0,WA-S-30,Write-in,Nonpartisan,W,41,0.09,3,0,0,Washington Secretary of State
 state_senate,WA,31,0,WA-S-31,Phil Fortunato,(Prefers Republican Party),R,35987,54.53,1,1,0,Washington Secretary of State
 state_senate,WA,31,0,WA-S-31,Tamara Stramel,(Prefers Democratic Party),D,29966,45.41,2,0,0,Washington Secretary of State
-state_senate,WA,31,0,WA-S-31,Write-in,,W,39,0.06,3,0,0,Washington Secretary of State
+state_senate,WA,31,0,WA-S-31,Write-in,Nonpartisan,W,39,0.06,3,0,0,Washington Secretary of State
 state_senate,WA,32,0,WA-S-32,Cindy Ryu,(Prefers Democratic Party),D,32999,50.93,1,1,0,Washington Secretary of State
 state_senate,WA,32,0,WA-S-32,Jesse Salomon,(Prefers Democratic Party),D,30812,47.55,2,0,0,Washington Secretary of State
-state_senate,WA,32,0,WA-S-32,Write-in,,W,982,1.52,3,0,0,Washington Secretary of State
+state_senate,WA,32,0,WA-S-32,Write-in,Nonpartisan,W,982,1.52,3,0,0,Washington Secretary of State
 state_senate,WA,33,0,WA-S-33,Tina L. Orwall,(Prefers Democratic Party),D,36916,95.26,1,1,0,Washington Secretary of State
-state_senate,WA,33,0,WA-S-33,Write-in,,W,1836,4.74,2,0,0,Washington Secretary of State
+state_senate,WA,33,0,WA-S-33,Write-in,Nonpartisan,W,1836,4.74,2,0,0,Washington Secretary of State
 state_senate,WA,34,0,WA-S-34,Emily Alvarado,(Prefers Democratic Party),D,60397,97.97,1,1,0,Washington Secretary of State
-state_senate,WA,34,0,WA-S-34,Write-in,,W,1254,2.03,2,0,0,Washington Secretary of State
+state_senate,WA,34,0,WA-S-34,Write-in,Nonpartisan,W,1254,2.03,2,0,0,Washington Secretary of State
 state_senate,WA,35,0,WA-S-35,Drew C MacEwen,(Prefers Republican Party),R,39427,50.12,1,0,0,Washington Secretary of State
 state_senate,WA,35,0,WA-S-35,Carolina Mejia,(Prefers Democratic Party),D,39143,49.76,2,0,0,Washington Secretary of State
-state_senate,WA,35,0,WA-S-35,Write-in,,W,90,0.11,3,0,0,Washington Secretary of State
+state_senate,WA,35,0,WA-S-35,Write-in,Nonpartisan,W,90,0.11,3,0,0,Washington Secretary of State
 state_senate,WA,36,0,WA-S-36,Noel C. Frame,(Prefers Democratic Party),D,74066,87.6,1,1,0,Washington Secretary of State
 state_senate,WA,36,0,WA-S-36,Jillian England,(Prefers Republican Party),R,10337,12.23,2,0,0,Washington Secretary of State
-state_senate,WA,36,0,WA-S-36,Write-in,,W,149,0.18,3,0,0,Washington Secretary of State
+state_senate,WA,36,0,WA-S-36,Write-in,Nonpartisan,W,149,0.18,3,0,0,Washington Secretary of State
 state_senate,WA,37,0,WA-S-37,Chipalo Street,(Prefers Democratic Party),D,45451,71.92,1,1,0,Washington Secretary of State
 state_senate,WA,37,0,WA-S-37,Tatiana Brown,(Prefers Democratic Party),D,17291,27.36,2,0,0,Washington Secretary of State
-state_senate,WA,37,0,WA-S-37,Write-in,,W,457,0.72,3,0,0,Washington Secretary of State
+state_senate,WA,37,0,WA-S-37,Write-in,Nonpartisan,W,457,0.72,3,0,0,Washington Secretary of State
 state_senate,WA,38,0,WA-S-38,June Robinson,(Prefers Democratic Party),D,34848,65.36,1,1,0,Washington Secretary of State
 state_senate,WA,38,0,WA-S-38,Brad Bender,(Prefers Republican Party),R,18389,34.49,2,0,0,Washington Secretary of State
-state_senate,WA,38,0,WA-S-38,Write-in,,W,84,0.16,3,0,0,Washington Secretary of State
+state_senate,WA,38,0,WA-S-38,Write-in,Nonpartisan,W,84,0.16,3,0,0,Washington Secretary of State
 state_senate,WA,42,0,WA-S-42,Michael Alvarez Shepard,(Prefers Democratic Party),D,44335,56.52,1,1,0,Washington Secretary of State
 state_senate,WA,42,0,WA-S-42,Erika Creydt,(Prefers Republican Party),R,34019,43.37,2,0,0,Washington Secretary of State
-state_senate,WA,42,0,WA-S-42,Write-in,,W,91,0.12,3,0,0,Washington Secretary of State
+state_senate,WA,42,0,WA-S-42,Write-in,Nonpartisan,W,91,0.12,3,0,0,Washington Secretary of State
 state_senate,WA,43,0,WA-S-43,Jamie Pedersen,(Prefers Democratic Party),D,47139,71.49,1,1,0,Washington Secretary of State
 state_senate,WA,43,0,WA-S-43,Hannah Sabio-Howell,(Prefers Democratic Party),D,18200,27.6,2,0,0,Washington Secretary of State
-state_senate,WA,43,0,WA-S-43,Write-in,,W,598,0.91,3,0,0,Washington Secretary of State
+state_senate,WA,43,0,WA-S-43,Write-in,Nonpartisan,W,598,0.91,3,0,0,Washington Secretary of State
 state_senate,WA,44,0,WA-S-44,John Lovick,(Prefers Democratic Party),D,39645,62.21,1,1,0,Washington Secretary of State
 state_senate,WA,44,0,WA-S-44,Sherri Larkin,(Prefers Republican Party),R,24032,37.71,2,0,0,Washington Secretary of State
-state_senate,WA,44,0,WA-S-44,Write-in,,W,50,0.08,3,0,0,Washington Secretary of State
+state_senate,WA,44,0,WA-S-44,Write-in,Nonpartisan,W,50,0.08,3,0,0,Washington Secretary of State
 state_senate,WA,45,0,WA-S-45,Manka Dhingra,(Prefers Democratic Party),D,48725,93.47,1,1,0,Washington Secretary of State
-state_senate,WA,45,0,WA-S-45,Write-in,,W,3402,6.53,2,0,0,Washington Secretary of State
+state_senate,WA,45,0,WA-S-45,Write-in,Nonpartisan,W,3402,6.53,2,0,0,Washington Secretary of State
 state_senate,WA,46,0,WA-S-46,Javier Valdez,(Prefers Democratic Party),D,68372,89.86,1,1,0,Washington Secretary of State
 state_senate,WA,46,0,WA-S-46,Sandra Stephens,(Prefers Republican Party),R,7606,10.0,2,0,0,Washington Secretary of State
-state_senate,WA,46,0,WA-S-46,Write-in,,W,113,0.15,3,0,0,Washington Secretary of State
+state_senate,WA,46,0,WA-S-46,Write-in,Nonpartisan,W,113,0.15,3,0,0,Washington Secretary of State
 state_senate,WA,47,0,WA-S-47,Claudia Kauffman,(Prefers Democratic Party),D,32147,61.3,1,1,0,Washington Secretary of State
 state_senate,WA,47,0,WA-S-47,Kristina Soltys,(Prefers Republican Party),R,20253,38.62,2,0,0,Washington Secretary of State
-state_senate,WA,47,0,WA-S-47,Write-in,,W,43,0.08,3,0,0,Washington Secretary of State
+state_senate,WA,47,0,WA-S-47,Write-in,Nonpartisan,W,43,0.08,3,0,0,Washington Secretary of State
 state_senate,WA,48,0,WA-S-48,Vandana Slatter,(Prefers Democratic Party),D,36735,96.76,1,1,0,Washington Secretary of State
-state_senate,WA,48,0,WA-S-48,Write-in,,W,1229,3.24,2,0,0,Washington Secretary of State
+state_senate,WA,48,0,WA-S-48,Write-in,Nonpartisan,W,1229,3.24,2,0,0,Washington Secretary of State
 state_senate,WI,1,0,WI-S-1,Nic Cravillion,Republican,R,49821,57.96,1,1,0,civicAPI
 state_senate,WI,1,0,WI-S-1,Mark Becker,Independent,I,36141,42.04,2,0,0,civicAPI
 state_senate,WI,3,0,WI-S-3,Tim Carpenter,Democratic,D,0,0,1,1,0,civicAPI
@@ -14240,25 +14305,42 @@ state_senate,WV,17,0,WV-S-17,Tom Takubo,Republican,R,14767,52.83,1,1,0,civicAPI
 state_senate,WV,17,0,WV-S-17,Wes Holden,Democratic,D,13186,47.17,2,0,0,civicAPI
 state_senate,WV,17,1,WV-S-17-SP,Richie Robb,Democratic,D,14787,53.24,1,1,0,civicAPI
 state_senate,WV,17,1,WV-S-17-SP,Anne B. Charnock,Republican,R,12988,46.76,2,0,0,civicAPI
-state_senate,WY,1,0,WY-S-1,Ogden Driskill,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,3,0,WY-S-3,Cheri E Steinmetz,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,5,0,WY-S-5,Lauren Schoenfeld,Republican,R,3357,70.73,1,1,0,civicAPI
-state_senate,WY,5,0,WY-S-5,Ted Hanlon,Democratic,D,1389,29.27,2,0,0,civicAPI
-state_senate,WY,6,1,WY-S-6-SP,Taft Love,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,7,0,WY-S-7,Mark Rinne,Republican,R,3276,59.21,1,1,0,civicAPI
-state_senate,WY,7,0,WY-S-7,Jim Lee,Democratic,D,2257,40.79,2,0,0,civicAPI
-state_senate,WY,9,0,WY-S-9,Chris Rothfuss,Democratic,D,0,0,1,1,0,civicAPI
-state_senate,WY,11,0,WY-S-11,Bob Davis,Republican,R,3615,73.15,1,1,0,civicAPI
-state_senate,WY,11,0,WY-S-11,Jim Wilson,Democratic,D,1030,20.84,2,0,0,civicAPI
-state_senate,WY,11,0,WY-S-11,Don VanMatre,Constitution,O,297,6.01,3,0,0,civicAPI
-state_senate,WY,13,0,WY-S-13,Stacy Jones,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,15,0,WY-S-15,Wendy Davis Schuler,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,17,0,WY-S-17,Mike Gierau,Democratic,D,0,0,1,1,0,civicAPI
-state_senate,WY,19,0,WY-S-19,R. J. Kost,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,21,0,WY-S-21,Melissa Butcher,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,23,0,WY-S-23,Abby Angelos,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,25,0,WY-S-25,Cale Case,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,27,0,WY-S-27,Kevin Helling,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,29,0,WY-S-29,Lisa Engebretsen,Republican,R,0,0,1,1,0,civicAPI
-state_senate,WY,31,0,WY-S-31,Evie Brennan,Republican,R,3174,68.21,1,1,0,civicAPI
-state_senate,WY,31,0,WY-S-31,Shifa Hamid,Democratic,D,1479,31.79,2,0,0,civicAPI
+state_senate,WY,1,0,WY-S-1,Ogden Driskill,R,R,5107,90.42,1,1,0,Wyoming Secretary of State
+state_senate,WY,1,0,WY-S-1,Write-Ins,,W,541,9.58,2,,,Wyoming Secretary of State
+state_senate,WY,3,0,WY-S-3,Cheri E Steinmetz,R,R,5792,96.99,1,1,0,Wyoming Secretary of State
+state_senate,WY,3,0,WY-S-3,Write-Ins,,W,180,3.01,2,,,Wyoming Secretary of State
+state_senate,WY,5,0,WY-S-5,Lauren Schoenfeld,R,R,3357,70.03,1,1,0,Wyoming Secretary of State
+state_senate,WY,5,0,WY-S-5,Ted Hanlon,D,D,1389,28.97,2,0,0,Wyoming Secretary of State
+state_senate,WY,5,0,WY-S-5,Write-Ins,,W,48,1.0,3,,,Wyoming Secretary of State
+state_senate,WY,6,1,WY-S-6-SP,Taft Love,R,R,6142,95.65,1,1,0,Wyoming Secretary of State
+state_senate,WY,6,1,WY-S-6-SP,Write-Ins,,W,279,4.35,2,,,Wyoming Secretary of State
+state_senate,WY,7,0,WY-S-7,Mark Rinne,R,R,3276,58.32,1,1,0,Wyoming Secretary of State
+state_senate,WY,7,0,WY-S-7,Jim Lee,D,D,2257,40.18,2,0,0,Wyoming Secretary of State
+state_senate,WY,7,0,WY-S-7,Write-Ins,,W,84,1.5,3,,,Wyoming Secretary of State
+state_senate,WY,9,0,WY-S-9,Chris Rothfuss,D,D,4432,94.94,1,1,0,Wyoming Secretary of State
+state_senate,WY,9,0,WY-S-9,Write-Ins,,W,236,5.06,2,,,Wyoming Secretary of State
+state_senate,WY,11,0,WY-S-11,Bob Davis,R,R,3615,72.94,1,1,0,Wyoming Secretary of State
+state_senate,WY,11,0,WY-S-11,Jim Wilson,D,D,1030,20.78,2,0,0,Wyoming Secretary of State
+state_senate,WY,11,0,WY-S-11,Don VanMatre,C,O,297,5.99,3,0,0,Wyoming Secretary of State
+state_senate,WY,11,0,WY-S-11,Write-Ins,,W,14,0.28,4,,,Wyoming Secretary of State
+state_senate,WY,13,0,WY-S-13,Stacy Jones,R,R,3789,97.25,1,1,0,Wyoming Secretary of State
+state_senate,WY,13,0,WY-S-13,Write-Ins,,W,107,2.75,2,,,Wyoming Secretary of State
+state_senate,WY,15,0,WY-S-15,Wendy Davis Schuler,R,R,4835,96.31,1,1,0,Wyoming Secretary of State
+state_senate,WY,15,0,WY-S-15,Write-Ins,,W,185,3.69,2,,,Wyoming Secretary of State
+state_senate,WY,17,0,WY-S-17,Mike Gierau,D,D,6662,97.64,1,1,0,Wyoming Secretary of State
+state_senate,WY,17,0,WY-S-17,Write-Ins,,W,161,2.36,2,,,Wyoming Secretary of State
+state_senate,WY,19,0,WY-S-19,R. J. Kost,R,R,5311,95.08,1,1,0,Wyoming Secretary of State
+state_senate,WY,19,0,WY-S-19,Write-Ins,,W,275,4.92,2,,,Wyoming Secretary of State
+state_senate,WY,21,0,WY-S-21,Melissa Butcher,R,R,6656,95.77,1,1,0,Wyoming Secretary of State
+state_senate,WY,21,0,WY-S-21,Write-Ins,,W,294,4.23,2,,,Wyoming Secretary of State
+state_senate,WY,23,0,WY-S-23,Abby Angelos,R,R,4015,96.77,1,1,0,Wyoming Secretary of State
+state_senate,WY,23,0,WY-S-23,Write-Ins,,W,134,3.23,2,,,Wyoming Secretary of State
+state_senate,WY,25,0,WY-S-25,Cale Case,R,R,4670,95.19,1,1,0,Wyoming Secretary of State
+state_senate,WY,25,0,WY-S-25,Write-Ins,,W,236,4.81,2,,,Wyoming Secretary of State
+state_senate,WY,27,0,WY-S-27,Kevin Helling,R,R,4392,97.88,1,1,0,Wyoming Secretary of State
+state_senate,WY,27,0,WY-S-27,Write-Ins,,W,95,2.12,2,,,Wyoming Secretary of State
+state_senate,WY,29,0,WY-S-29,Lisa Engebretsen,R,R,4531,95.69,1,1,0,Wyoming Secretary of State
+state_senate,WY,29,0,WY-S-29,Write-Ins,,W,204,4.31,2,,,Wyoming Secretary of State
+state_senate,WY,31,0,WY-S-31,Evie Brennan,R,R,3174,67.49,1,1,0,Wyoming Secretary of State
+state_senate,WY,31,0,WY-S-31,Shifa Hamid,D,D,1479,31.45,2,0,0,Wyoming Secretary of State
+state_senate,WY,31,0,WY-S-31,Write-Ins,,W,50,1.06,3,,,Wyoming Secretary of State

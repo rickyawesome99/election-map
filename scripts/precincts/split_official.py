@@ -13,7 +13,8 @@ data-entry/precincts/raw/medsl/{year}/by_state/{ST}.parquet (columns as in split
   KS 2022             Secretary of State, Kansas House by precinct (xlsx: one long sheet + four county sheets)
                       sos.ks.gov/elections/22elec/2022-General-Election-Kansas-House-of-Representatives-Results-By-Precinct.xlsx
                       → data-entry/precincts/raw/official/ks/ks_house_2022.xlsx   (appended to MEDSL's Kansas 2022 file)
-  AZ GA HI ID MN NC WA 2026   the official precinct rows kept by the site's 2026 results build
+  AZ GA HI ID MN NC SC SD WA WY 2026   the official precinct rows kept by the site's 2026 results build
+  ND 2026             Secretary of State results JSON (north_dakota_2026)
   LA 2019 2023        Secretary of State results service, one JSON per race and parish (fetch_louisiana.py)
 
   python3 scripts/precincts/split_official.py VA 2023
@@ -127,6 +128,38 @@ def results_2026(st: str) -> None:
     }))
 
 
+PARTY_WORD = {"D": "DEMOCRAT", "DEM": "DEMOCRAT", "R": "REPUBLICAN", "REP": "REPUBLICAN", "L": "LIBERTARIAN", "LIB": "LIBERTARIAN",
+              "C": "CONSTITUTION", "CON": "CONSTITUTION", "IND": "INDEPENDENT", "I": "INDEPENDENT", "G": "GREEN", "NON": ""}
+
+
+def north_dakota_2026() -> None:
+    """Secretary of State results site, election 348 (the 2026 general; "IsOfficial": true after the Nov 18
+    canvass): resultsnd.sos.nd.gov/results/north-dakota/348/FullDataFile.json → raw/official/nd/nd_2026.json.
+    Contest → county (FIPS) → precinct ("094501" = county 09, LD 45, precinct 01, as in MEDSL's 2022 file).
+    Absentee and early votes are already in the precincts (one vote type). The three unexpired-term House
+    races (LD 20, 26, 42) are separate contests and are left out, as the site leaves out specials."""
+    import json
+    d = json.loads((RAW / "official" / "nd" / "nd_2026.json").read_text())
+    rows = []
+    for c in d["ContestData"]:
+        name = c["ContestName"].strip()
+        if name == "Representative in Congress":
+            office, dist = "USH", "1"
+        elif m := re.fullmatch(r"State (Senator|Representative) District (\d+)", name):
+            office, dist = ("SLDU" if m.group(1) == "Senator" else "SLDL"), m.group(2).lstrip("0")
+        else:
+            continue
+        for fips, county in c["Locations"].items():
+            for p in county["Locations"].values():
+                for ch in p["Choices"] + p.get("WriteinChoices", []):
+                    cand = re.sub(r"\s+", " ", ch["Name"]).strip().upper()
+                    rows.append((fips, county["LocationName"].upper(), p["LocationName"], office, dist, cand,
+                                 PARTY_WORD.get(ch.get("PartyID", "").strip(), ch.get("PartyID", "").strip()), "WRITE" in cand, "TOTAL", ch.get("TotalVotes", 0)))
+    df = pd.DataFrame(rows, columns=COLS)
+    print("ND 2026", len(df), df.groupby("office")["votes"].sum().to_dict())
+    write("ND", 2026, df)
+
+
 ME_COUNTY = {"AND": "23001", "ARO": "23003", "CUM": "23005", "FRA": "23007", "HAN": "23009", "KEN": "23011", "KNO": "23013", "LIN": "23015", "OXF": "23017",
              "PEN": "23019", "PIS": "23021", "SAG": "23023", "SOM": "23025", "WAL": "23027", "WAS": "23029", "YOR": "23031"}
 
@@ -161,7 +194,9 @@ def main() -> None:
     if (st, year) == ("ME", 2018):
         maine_cd2_2018()
         return
-    if year == 2026:
+    if (st, year) == ("ND", 2026):
+        north_dakota_2026()
+    elif year == 2026:
         results_2026(st)
     elif st == "VA":
         virginia(year)

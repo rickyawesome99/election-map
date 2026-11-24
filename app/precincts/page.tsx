@@ -4,6 +4,7 @@ import { OFFICES, type Office, type OfficeSummary, type StateShell } from "@/com
 import { statesData } from "@/data/statesData";
 import coverageJson from "@/data/precincts/coverage.json";
 import statesJson from "@/data/precincts/states.json";
+import { CERTIFIED_2026 } from "@/data/precincts/certified2026";
 
 export const metadata = {
   title: "Precinct Results",
@@ -32,6 +33,8 @@ export default function PrecinctsPage() {
     .map((abbr) => {
       const years: StateShell["years"] = {};
       for (const [y, cells] of Object.entries(coverage.states[abbr].years)) {
+        // 2026 appears state by state as each certifies; counts before that are still moving.
+        if (y === "2026" && !CERTIFIED_2026[abbr]) continue;
         const out: Partial<Record<Office, OfficeSummary>> = {};
         for (const o of OFFICES) {
           const c = cells[o];
@@ -49,12 +52,13 @@ export default function PrecinctsPage() {
   const years = coverage.years.map((year) => ({ year, loaded: states.some((s) => s.years[String(year)]) }));
   const precincts = states.reduce((n, s) => n + s.n, 0);
   const loadedYears = years.filter((y) => y.loaded).map((y) => y.year);
+  const certified2026 = states.filter((s) => s.years["2026"]);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <StandfirstHeader title="Precinct Results">
         <Fig>{precincts.toLocaleString()}</Fig> precincts in <Fig>{states.length}</Fig> states, each with its vote for president,
-        Senate, governor, U.S. House and the state legislature. Every general election from <Fig>{loadedYears[0]}</Fig> to <Fig>{loadedYears.at(-1)}</Fig>
+        Senate, governor, U.S. House and the state legislature. Every general election from <Fig>{loadedYears[0]}</Fig> to <Fig>{loadedYears.at(-1)}</Fig>{" "}
         is fitted onto the same 2024 precinct lines, so a precinct can be followed through time.
       </StandfirstHeader>
       <main className="mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6">
@@ -63,7 +67,9 @@ export default function PrecinctsPage() {
           Precinct boundaries are each state&rsquo;s November 2024 lines. This map was created using data from the Redistricting
           Data Hub; District of Columbia boundaries are from Open Data DC. Results not carried in those files come from the MIT
           Election Data and Science Lab&rsquo;s precinct returns. Some states report early or absentee votes for a whole county;
-          those votes are allocated to precincts by the source and are estimates at precinct level.
+          those votes are allocated to precincts by the source and are estimates at precinct level. 2026 results are added
+          state by state once a state certifies its count and publishes it by precinct: so far{" "}
+          {certified2026.length ? certified2026.map((s) => s.name).join(", ") : "none"}.
         </p>
       </main>
     </div>

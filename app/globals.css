@@ -518,6 +518,13 @@ body {
 .vh-row::before { content: ""; position: absolute; inset: 0 -0.5rem; border-radius: 10px; background: color-mix(in srgb, var(--app-text-primary) 5%, transparent); opacity: 0; transition: opacity 180ms ease; z-index: -1; pointer-events: none; }
 .vh-row:hover::before { opacity: 1; }
 .vh-row-boxed::before { inset: 0; border-radius: 8px; }
+/* The row's hover tint alone, with no entrance of its own (a block that rises in with its parent):
+   the candidate pages' race rows. Inside .vh-press (a row that opens something) it darkens while
+   pressed, like a .tbl-tr row of the WAR table (5% under the pointer, 9% pressed). */
+.vh-tint { position: relative; isolation: isolate; }
+.vh-tint::before { content: ""; position: absolute; inset: 0 -0.5rem; border-radius: 10px; background: color-mix(in srgb, var(--app-text-primary) 5%, transparent); opacity: 0; transition: opacity 180ms ease, background-color 150ms ease; z-index: -1; pointer-events: none; }
+.vh-tint:hover::before { opacity: 1; }
+.vh-press:active .vh-tint::before { opacity: 1; background: color-mix(in srgb, var(--app-text-primary) 9%, transparent); }
 /* A table row inside a scroll box fades instead of rising, so its travel never flashes a scrollbar;
    "from"-only with backwards fill, so a row dimmed inline (an outlier) keeps its opacity once in. */
 @keyframes vh-fade-from { from { opacity: 0; } }
@@ -550,7 +557,7 @@ body {
 @keyframes vh-enter { from { opacity: 0; transform: translateY(10px); } }
 .vh-in { animation: vh-enter 520ms cubic-bezier(0.22, 1, 0.36, 1) backwards; }
 /* Held until the section is on screen, so rows at the foot of the page don't finish unseen. */
-[data-vh="wait"] .vh-row, [data-vh="wait"] .vh-bar-d, [data-vh="wait"] .vh-bar-r, [data-vh="wait"] .vh-in, [data-vh="wait"].vh-in { animation-play-state: paused; }
+[data-vh="wait"] .vh-row, [data-vh="wait"] .vh-bar-d, [data-vh="wait"] .vh-bar-r, [data-vh="wait"] .vh-in, [data-vh="wait"].vh-in, [data-vh="wait"] .rg-grow, [data-vh="wait"] .rg-fade { animation-play-state: paused; }
 .vh-tab-in { animation: vh-tab-in 260ms ease-out both; }
 .vh-tab-line { transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), width 300ms cubic-bezier(0.22, 1, 0.36, 1); }
 .vh-seg-thumb { transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.14); }

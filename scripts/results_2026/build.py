@@ -178,7 +178,8 @@ def rename(race, names, civic):
     new.contests = race.contests
     for c, v in race.state.items():
         new.state[nm(c)] += v
-        new.party.setdefault(nm(c), race.party.get(c, ""))
+        # A source that prints no party (SD's county workbooks) takes civicAPI's for the matched name.
+        new.party.setdefault(nm(c), race.party.get(c, "") or (civic.party.get(nm(c), "") if civic else ""))
     for (f, c), v in race.county.items():
         new.county[(f, nm(c))] += v
     new.county_name = race.county_name

@@ -2870,71 +2870,72 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,SC,7,45051,Horry,59361,103922,109,163392,South Carolina Election Commission
 2026,SC,7,45067,Marion,6893,4336,4,11233,South Carolina Election Commission
 2026,SC,7,45069,Marlboro,4317,2877,6,7200,South Carolina Election Commission
-2026,SD,1,46003,Aurora,254,709,0,963,civicAPI
-2026,SD,1,46005,Beadle,1319,3498,0,4817,civicAPI
-2026,SD,1,46007,Bennett,317,519,0,836,civicAPI
-2026,SD,1,46009,Bon Homme,527,1610,0,2137,civicAPI
-2026,SD,1,46011,Brookings,4610,6853,0,11463,civicAPI
-2026,SD,1,46013,Brown,4252,7756,0,12008,civicAPI
-2026,SD,1,46015,Brule,500,1259,0,1759,civicAPI
-2026,SD,1,46017,Buffalo,211,165,0,376,civicAPI
-2026,SD,1,46019,Butte,686,2755,0,3441,civicAPI
-2026,SD,1,46021,Campbell,84,514,0,598,civicAPI
-2026,SD,1,46023,Charles Mix,791,1867,0,2658,civicAPI
-2026,SD,1,46025,Clark,296,1233,0,1529,civicAPI
-2026,SD,1,46027,Clay,2244,1822,0,4066,civicAPI
-2026,SD,1,46029,Codington,2979,6883,0,9862,civicAPI
-2026,SD,1,46031,Corson,331,395,0,726,civicAPI
-2026,SD,1,46033,Custer,1244,3413,0,4657,civicAPI
-2026,SD,1,46035,Davison,1802,4231,0,6033,civicAPI
-2026,SD,1,46037,Day,775,1477,0,2252,civicAPI
-2026,SD,1,46039,Deuel,400,1278,0,1678,civicAPI
-2026,SD,1,46041,Dewey,720,556,0,1276,civicAPI
-2026,SD,1,46043,Douglas,149,1089,0,1238,civicAPI
-2026,SD,1,46045,Edmunds,305,1125,0,1430,civicAPI
-2026,SD,1,46047,Fall River,819,2446,0,3265,civicAPI
-2026,SD,1,46049,Faulk,123,693,0,816,civicAPI
-2026,SD,1,46051,Grant,757,2140,0,2897,civicAPI
-2026,SD,1,46053,Gregory,325,1243,0,1568,civicAPI
-2026,SD,1,46055,Haakon,88,745,0,833,civicAPI
-2026,SD,1,46057,Hamlin,447,1773,0,2220,civicAPI
-2026,SD,1,46059,Hand,219,1045,0,1264,civicAPI
-2026,SD,1,46061,Hanson,255,923,0,1178,civicAPI
-2026,SD,1,46063,Harding,45,612,0,657,civicAPI
-2026,SD,1,46065,Hughes,2027,4420,0,6447,civicAPI
-2026,SD,1,46067,Hutchinson,508,2026,0,2534,civicAPI
-2026,SD,1,46069,Hyde,94,413,0,507,civicAPI
-2026,SD,1,46071,Jackson,245,528,0,773,civicAPI
-2026,SD,1,46073,Jerauld,165,525,0,690,civicAPI
-2026,SD,1,46075,Jones,59,391,0,450,civicAPI
-2026,SD,1,46077,Kingsbury,534,1520,0,2054,civicAPI
-2026,SD,1,46079,Lake,1400,3010,0,4410,civicAPI
-2026,SD,1,46081,Lawrence,3797,7043,0,10840,civicAPI
-2026,SD,1,46083,Lincoln,10081,16237,0,26318,civicAPI
-2026,SD,1,46085,Lyman,335,779,0,1114,civicAPI
-2026,SD,1,46091,Marshall,593,1063,0,1656,civicAPI
-2026,SD,1,46087,McCook,532,1627,0,2159,civicAPI
-2026,SD,1,46089,McPherson,126,862,0,988,civicAPI
-2026,SD,1,46093,Meade,2486,7507,0,9993,civicAPI
-2026,SD,1,46095,Mellette,213,389,0,602,civicAPI
-2026,SD,1,46097,Miner,218,669,0,887,civicAPI
-2026,SD,1,46099,Minnehaha,30943,36090,0,67033,civicAPI
-2026,SD,1,46101,Moody,858,1607,0,2465,civicAPI
-2026,SD,1,46103,Pennington,14532,23677,0,38209,civicAPI
-2026,SD,1,46105,Perkins,189,1066,0,1255,civicAPI
-2026,SD,1,46107,Potter,149,769,0,918,civicAPI
-2026,SD,1,46109,Roberts,1151,1816,0,2967,civicAPI
-2026,SD,1,46111,Sanborn,226,599,0,825,civicAPI
-2026,SD,1,46115,Spink,621,1625,0,2246,civicAPI
-2026,SD,1,46117,Stanley,323,989,0,1312,civicAPI
-2026,SD,1,46119,Sully,105,604,0,709,civicAPI
-2026,SD,1,46121,Todd,1225,415,0,1640,civicAPI
-2026,SD,1,46123,Tripp,319,1607,0,1926,civicAPI
-2026,SD,1,46125,Turner,768,2465,0,3233,civicAPI
-2026,SD,1,46127,Union,1898,3907,0,5805,civicAPI
-2026,SD,1,46129,Walworth,306,1328,0,1634,civicAPI
-2026,SD,1,46135,Yankton,2898,4795,0,7693,civicAPI
-2026,SD,1,46137,Ziebach,284,286,0,570,civicAPI
+2026,SD,1,46003,Aurora,254,709,0,963,South Dakota Secretary of State
+2026,SD,1,46005,Beadle,1319,3498,0,4817,South Dakota Secretary of State
+2026,SD,1,46007,Bennett,317,519,0,836,South Dakota Secretary of State
+2026,SD,1,46009,Bon Homme,527,1610,0,2137,South Dakota Secretary of State
+2026,SD,1,46011,Brookings,4610,6853,0,11463,South Dakota Secretary of State
+2026,SD,1,46013,Brown,4252,7756,0,12008,South Dakota Secretary of State
+2026,SD,1,46015,Brule,500,1259,0,1759,South Dakota Secretary of State
+2026,SD,1,46017,Buffalo,211,165,0,376,South Dakota Secretary of State
+2026,SD,1,46019,Butte,686,2755,0,3441,South Dakota Secretary of State
+2026,SD,1,46021,Campbell,84,514,0,598,South Dakota Secretary of State
+2026,SD,1,46023,Charles Mix,791,1867,0,2658,South Dakota Secretary of State
+2026,SD,1,46025,Clark,296,1233,0,1529,South Dakota Secretary of State
+2026,SD,1,46027,Clay,2244,1822,0,4066,South Dakota Secretary of State
+2026,SD,1,46029,Codington,2979,6883,0,9862,South Dakota Secretary of State
+2026,SD,1,46031,Corson,331,395,0,726,South Dakota Secretary of State
+2026,SD,1,46033,Custer,1244,3413,0,4657,South Dakota Secretary of State
+2026,SD,1,46035,Davison,1802,4231,0,6033,South Dakota Secretary of State
+2026,SD,1,46037,Day,775,1477,0,2252,South Dakota Secretary of State
+2026,SD,1,46039,Deuel,400,1278,0,1678,South Dakota Secretary of State
+2026,SD,1,46041,Dewey,720,556,0,1276,South Dakota Secretary of State
+2026,SD,1,46043,Douglas,149,1089,0,1238,South Dakota Secretary of State
+2026,SD,1,46045,Edmunds,305,1125,0,1430,South Dakota Secretary of State
+2026,SD,1,46047,Fall River,819,2446,0,3265,South Dakota Secretary of State
+2026,SD,1,46049,Faulk,123,693,0,816,South Dakota Secretary of State
+2026,SD,1,46051,Grant,757,2140,0,2897,South Dakota Secretary of State
+2026,SD,1,46053,Gregory,325,1243,0,1568,South Dakota Secretary of State
+2026,SD,1,46055,Haakon,88,745,0,833,South Dakota Secretary of State
+2026,SD,1,46057,Hamlin,447,1773,0,2220,South Dakota Secretary of State
+2026,SD,1,46059,Hand,219,1045,0,1264,South Dakota Secretary of State
+2026,SD,1,46061,Hanson,255,923,0,1178,South Dakota Secretary of State
+2026,SD,1,46063,Harding,45,612,0,657,South Dakota Secretary of State
+2026,SD,1,46065,Hughes,2027,4420,0,6447,South Dakota Secretary of State
+2026,SD,1,46067,Hutchinson,508,2026,0,2534,South Dakota Secretary of State
+2026,SD,1,46069,Hyde,94,413,0,507,South Dakota Secretary of State
+2026,SD,1,46071,Jackson,245,528,0,773,South Dakota Secretary of State
+2026,SD,1,46073,Jerauld,165,525,0,690,South Dakota Secretary of State
+2026,SD,1,46075,Jones,59,391,0,450,South Dakota Secretary of State
+2026,SD,1,46077,Kingsbury,534,1520,0,2054,South Dakota Secretary of State
+2026,SD,1,46079,Lake,1400,3010,0,4410,South Dakota Secretary of State
+2026,SD,1,46081,Lawrence,3797,7043,0,10840,South Dakota Secretary of State
+2026,SD,1,46083,Lincoln,10081,16237,0,26318,South Dakota Secretary of State
+2026,SD,1,46085,Lyman,335,779,0,1114,South Dakota Secretary of State
+2026,SD,1,46091,Marshall,593,1063,0,1656,South Dakota Secretary of State
+2026,SD,1,46087,McCook,532,1627,0,2159,South Dakota Secretary of State
+2026,SD,1,46089,McPherson,126,862,0,988,South Dakota Secretary of State
+2026,SD,1,46093,Meade,2486,7507,0,9993,South Dakota Secretary of State
+2026,SD,1,46095,Mellette,213,389,0,602,South Dakota Secretary of State
+2026,SD,1,46097,Miner,218,669,0,887,South Dakota Secretary of State
+2026,SD,1,46099,Minnehaha,30943,36090,0,67033,South Dakota Secretary of State
+2026,SD,1,46101,Moody,858,1607,0,2465,South Dakota Secretary of State
+2026,SD,1,46102,Oglala Lakota,1915,308,0,2223,South Dakota Secretary of State
+2026,SD,1,46103,Pennington,14532,23677,0,38209,South Dakota Secretary of State
+2026,SD,1,46105,Perkins,189,1066,0,1255,South Dakota Secretary of State
+2026,SD,1,46107,Potter,149,769,0,918,South Dakota Secretary of State
+2026,SD,1,46109,Roberts,1151,1816,0,2967,South Dakota Secretary of State
+2026,SD,1,46111,Sanborn,226,599,0,825,South Dakota Secretary of State
+2026,SD,1,46115,Spink,621,1625,0,2246,South Dakota Secretary of State
+2026,SD,1,46117,Stanley,323,989,0,1312,South Dakota Secretary of State
+2026,SD,1,46119,Sully,105,604,0,709,South Dakota Secretary of State
+2026,SD,1,46121,Todd,1225,415,0,1640,South Dakota Secretary of State
+2026,SD,1,46123,Tripp,319,1607,0,1926,South Dakota Secretary of State
+2026,SD,1,46125,Turner,768,2465,0,3233,South Dakota Secretary of State
+2026,SD,1,46127,Union,1898,3907,0,5805,South Dakota Secretary of State
+2026,SD,1,46129,Walworth,306,1328,0,1634,South Dakota Secretary of State
+2026,SD,1,46135,Yankton,2898,4795,0,7693,South Dakota Secretary of State
+2026,SD,1,46137,Ziebach,284,286,0,570,South Dakota Secretary of State
 2026,TN,1,47019,Carter,3943,10160,607,14710,civicAPI
 2026,TN,1,47029,Cocke,1949,6652,412,9013,civicAPI
 2026,TN,1,47059,Greene,4653,14047,574,19274,civicAPI
@@ -3735,26 +3736,26 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,WV,2,54097,Upshur,1763,3828,0,5591,civicAPI
 2026,WV,2,54103,Wetzel,1124,2278,0,3402,civicAPI
 2026,WV,2,54107,Wood,8336,14045,0,22381,civicAPI
-2026,WY,1,56001,Albany,7469,4495,1057,13021,civicAPI
-2026,WY,1,56003,Big Horn,712,2798,468,3978,civicAPI
-2026,WY,1,56005,Campbell,1921,7642,1170,10733,civicAPI
-2026,WY,1,56007,Carbon,1110,2565,509,4184,civicAPI
-2026,WY,1,56009,Converse,836,2825,545,4206,civicAPI
-2026,WY,1,56011,Crook,421,2205,378,3004,civicAPI
-2026,WY,1,56013,Fremont,4608,6339,1722,12669,civicAPI
-2026,WY,1,56015,Goshen,964,2927,510,4401,civicAPI
-2026,WY,1,56017,Hot Springs,463,1255,319,2037,civicAPI
-2026,WY,1,56019,Johnson,846,2164,443,3453,civicAPI
-2026,WY,1,56021,Laramie,12537,13715,3544,29796,civicAPI
-2026,WY,1,56023,Lincoln,1495,4810,836,7141,civicAPI
-2026,WY,1,56025,Natrona,7017,11210,3177,21404,civicAPI
-2026,WY,1,56027,Niobrara,136,616,117,869,civicAPI
-2026,WY,1,56029,Park,2945,7473,1231,11649,civicAPI
-2026,WY,1,56031,Platte,721,2259,420,3400,civicAPI
-2026,WY,1,56033,Sheridan,3795,6801,1174,11770,civicAPI
-2026,WY,1,56035,Sublette,858,2211,488,3557,civicAPI
-2026,WY,1,56037,Sweetwater,3425,6013,1330,10768,civicAPI
-2026,WY,1,56039,Teton,7098,2372,705,10175,civicAPI
-2026,WY,1,56041,Uinta,1364,3824,778,5966,civicAPI
-2026,WY,1,56043,Washakie,567,1780,324,2671,civicAPI
-2026,WY,1,56045,Weston,381,1607,383,2371,civicAPI
+2026,WY,1,56001,Albany,7469,4495,1112,13076,Wyoming Secretary of State
+2026,WY,1,56003,Big Horn,712,2798,490,4000,Wyoming Secretary of State
+2026,WY,1,56005,Campbell,1921,7642,1219,10782,Wyoming Secretary of State
+2026,WY,1,56007,Carbon,1110,2565,529,4204,Wyoming Secretary of State
+2026,WY,1,56009,Converse,836,2825,569,4230,Wyoming Secretary of State
+2026,WY,1,56011,Crook,421,2205,391,3017,Wyoming Secretary of State
+2026,WY,1,56013,Fremont,4608,6339,1775,12722,Wyoming Secretary of State
+2026,WY,1,56015,Goshen,964,2927,529,4420,Wyoming Secretary of State
+2026,WY,1,56017,Hot Springs,463,1255,328,2046,Wyoming Secretary of State
+2026,WY,1,56019,Johnson,846,2164,465,3475,Wyoming Secretary of State
+2026,WY,1,56021,Laramie,12537,13715,3789,30041,Wyoming Secretary of State
+2026,WY,1,56023,Lincoln,1495,4810,882,7187,Wyoming Secretary of State
+2026,WY,1,56025,Natrona,7017,11210,3323,21550,Wyoming Secretary of State
+2026,WY,1,56027,Niobrara,136,616,123,875,Wyoming Secretary of State
+2026,WY,1,56029,Park,2945,7473,1303,11721,Wyoming Secretary of State
+2026,WY,1,56031,Platte,721,2259,439,3419,Wyoming Secretary of State
+2026,WY,1,56033,Sheridan,3795,6801,1246,11842,Wyoming Secretary of State
+2026,WY,1,56035,Sublette,858,2211,520,3589,Wyoming Secretary of State
+2026,WY,1,56037,Sweetwater,3425,6013,1363,10801,Wyoming Secretary of State
+2026,WY,1,56039,Teton,7098,2372,733,10203,Wyoming Secretary of State
+2026,WY,1,56041,Uinta,1364,3824,800,5988,Wyoming Secretary of State
+2026,WY,1,56043,Washakie,567,1780,337,2684,Wyoming Secretary of State
+2026,WY,1,56045,Weston,381,1607,394,2382,Wyoming Secretary of State

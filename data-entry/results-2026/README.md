@@ -9,6 +9,9 @@ npm run results-2026        # fetch.py (raw downloads, ~5 min) then build.py (~2
 ```
 
 Re-run only when asked: counts keep changing until certification, and each run overwrites the files.
+A state listed `direct` in `sources.csv` always wins over civicAPI race by race, so refreshing civicAPI
+never undoes a direct state's counts (WY's legislature, SD's HD-28B); if a direct download fails, that
+state falls back to civicAPI and build_log.txt says so.
 
 ## Where the counts come from
 
@@ -35,7 +38,9 @@ state's own file is read. An official count with votes always wins.
 | `hi_oe` | HI | precinct (summed up; county from the House district) |
 | `results_export` | MT | state, county |
 | `clarity` | SC | precinct (summed up); one Clarity ENR detail.xml per county; the state's recount election (`CLARITY_RECOUNTS` in fetch.py) replaces SC-02, HD-27, HD-89 |
-| `civicapi` | the other 40 states | state, county |
+| `wy_sos` | WY | precinct (summed up); the Secretary of State's official results zip (precinct-by-precinct workbook, each county's Total row checked). Added 2026-11-23: civicAPI had 46 uncontested legislative seats at 0 votes and no write-ins |
+| `results_export_counties` | SD | precinct (summed up); ResultsExport.aspx, one postback per county (66 workbooks, TOTALS checked). The files print no party: civicAPI's party is taken for the matched name. Still titled "Unofficial" after the Nov 10 canvass; 74 of 75 races equal civicAPI to the vote, and HD-28B differs because civicAPI lacks Butte Precinct-20 (110 votes). Added 2026-11-23 |
+| `civicapi` | the other 38 states | state, county |
 | AP fill-in (unofficial) | state legislatures of AK, DE, MA, NH, VT; KY/MI zeros | state only |
 
 `sources.csv` also lists the direct sources not read yet (from Call the Map's page) with their URLs.
@@ -100,5 +105,4 @@ In the AP-filled chambers, unopposed races that AP doesn't count are at 0 votes,
   WA races carry `precincts_incomplete`. WA's county figures are complete.
 - AK reports the 2019 census areas Chugach (02063) and Copper River (02066), not Valdez-Cordova
   (02261) as in the past-year files.
-- SD and OR run MT's export platform, but SD's postback returns the page, and OR's export is
-  statewide XML with no counties, so both stay on civicAPI.
+- OR runs MT's export platform, but its export is statewide XML with no counties, so it stays on civicAPI.

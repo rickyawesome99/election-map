@@ -53,7 +53,7 @@ export const OFFICE_LABELS: Record<WarOffice, string> = { P: "President", S: "Se
 
 /** The candidates view with one person selected. */
 export function candidateHref(name: string, state?: string): string {
-  return `/war?c=${candidateSlug(name, state)}`;
+  return `/candidates/${candidateSlug(name, state)}`;
 }
 export { candidateSlug };
 

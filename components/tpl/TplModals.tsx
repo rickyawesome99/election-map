@@ -164,6 +164,23 @@ function ModalHead({ title, sub, onClose }: { title: ReactNode; sub?: ReactNode;
   );
 }
 
+/** A plain list of what each column of a table means, opened from a small button above it. */
+export function ColumnGuideModal({ title, sub, columns, onClose }: { title: string; sub?: string; columns: { name: string; desc: string }[]; onClose: () => void }) {
+  return (
+    <ModalShell onClose={onClose} label={title}>
+      <ModalHead title={title} sub={sub} onClose={onClose} />
+      <dl className="px-5 pb-5 pt-2">
+        {columns.map((c, i) => (
+          <div key={c.name} className="grid grid-cols-[84px_1fr] gap-3 py-2.5 text-xs leading-relaxed" style={{ borderTop: i === 0 ? undefined : "1px solid var(--app-border)" }}>
+            <dt className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-primary)", paddingTop: 2 }}>{c.name}</dt>
+            <dd style={{ color: "var(--app-text-muted)" }}>{c.desc}</dd>
+          </div>
+        ))}
+      </dl>
+    </ModalShell>
+  );
+}
+
 export function FormulaModal({ formula, onClose }: { formula: FormulaKey; onClose: () => void }) {
   const panel = FORMULA_PANELS[formula];
   return (

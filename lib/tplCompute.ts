@@ -1772,23 +1772,29 @@ export interface WarRow {
   structuralGapPct: number;   // the money gap a generic pair in this situation would have (see WarMoneyModel)
   ffStructuralPts: number;    // R-positive pts of that structural gap in `expected` (FF_K × structural, capped ±FF_MAX)
   residual: number; // actual − expected, signed toward this candidate (the race's net two-candidate effect)
-  effect: number;   // ridge-estimated candidate effect as of this race's year, signed toward this candidate
-  effectN: number;  // races the effect is estimated from (count)
-  effectW: number;  // effective races: Σ recency weights over those races (this race = 1)
-  opponentEffect: number;     // the opponent's ridge effect as of this race's year, signed toward the OPPONENT (0 if no opponent)
+  /** The candidate's RECORD going into the race: their strength in their OTHER races, recency-weighted
+   *  and shrunk (0 for a first race), signed toward them. WAR = record + share of the surprise + Incumb.
+   *  Not set by the ridge attribution. */
+  record?: number;
+  effect: number;   // the candidate's standing AS OF the race: the record with this race included (shown as "Effect")
+  effectN: number;  // races on file for the candidate (count, this one included)
+  effectW: number;  // effective races: Σ recency weights over the other races, plus 1 for this one
+  opponentEffect: number;     // the opponent's strength IN THIS RACE (their record plus their share of the surprise), signed toward the OPPONENT (0 if no opponent)
   /** Points the candidate's own incumbency is worth against a NON-incumbent replacement, signed toward
    *  the candidate: the office's incumbency term plus the incumbent share of the structural money
    *  term, i.e. `expected` − the same expectation with no incumbent in the race. 0 for challengers
    *  and open seats. Not in `expected` or `residual` (the ridge basis); added to WAR only. */
   replacementPts: number;
   expectedVsOpponent: number; // R-positive expected margin for a generic NON-incumbent nominee of this party vs this specific opponent
-  war: number;      // actual − expectedVsOpponent, signed toward this candidate = effect + the race's unexplained leftover + replacementPts
+  war: number;      // actual − expectedVsOpponent, signed toward this candidate = record + this candidate's share of the race's surprise + replacementPts (= strength in the race + replacementPts)
   /** < 1 for a House race relocated across a redistricting — how far it had to move, as a
    *  confidence multiplier. Discounts it in the ridge exactly as it is discounted in TPL. */
   boundaryWeight?: number;
   /** House rows: the first election year of the lines the race was run on (0 = before any redraw
    *  on file). Two races of one seat with the same value were run on the same lines. */
   linesFrom?: number;
+  /** Ran as the incumbent having won the seat before (not an appointee). */
+  electedIncumbent?: boolean;
   note: string;
   /** The seat id the past-election and seat pages key on (senate "oh2", governor "oh", house "oh-09",
    *  president: the state id "oh") — so the model pages can link a row to its results without
@@ -2017,6 +2023,121 @@ export function solveCandidateEffects(
   return { a, stats };
 }
 
+// ── Attribution by record (2026-11-24) ───────────────────────────────────────
+// One race yields one number for two candidates: r = Actual − Expected. Until 2026-11-24 the WAR
+// table split it with the ridge above and then gave each side the race's whole leftover. Two
+// things followed. (1) A first-time candidate's effect was estimated from the very race it was
+// then used to score, so each side's score fed the other's: an opponent rated strong raised the
+// candidate's WAR, whose pooled strength had made the opponent look strong. (2) A candidate with a
+// long record has one pooled effect, so an off year could only be explained as a strong opponent:
+// Phil Scott ran 31 ahead of Expected in 2026 against 71–76 in 2020–2024, kept an effect of +54,
+// and Amanda Janoo was booked at +15; in the years he beat his own average his opponents were
+// booked as weak. The data says the reverse. Where an established candidate (two or more earlier
+// races) fell short of their own record against a first-time opponent who later ran again, the
+// shortfall predicted nothing about the opponent's next race (slope 0.01, n 94), while the
+// established candidate's own deviation carried into their next race at 0.56 (n 390).
+//
+// So each candidate gets a strength IN THIS RACE, built from two things that never include the
+// race's own result on the other side:
+//
+//   record(c, t)  = Σ w(t′) × strength(c, t′) over c's OTHER races ÷ (Σ w + λ)    shrunk toward 0
+//   surprise(t)   = r − (record(R) − record(D))
+//   strength(R,t) = record(R) + φ_R × surprise      strength(D,t) = record(D) − φ_D × surprise
+//   φ_c           = v_c ÷ (v_R + v_D),   v_c = (1 + W_c)^γ,   W_c = Σ w over c's other races
+//
+// w(t′) is the recency and boundary weight the ridge used. γ > 0 gives more of a surprise to the
+// candidate WITH the record (it is their strength that moved); two newcomers split it evenly; a
+// candidate with no opponent on file takes all of it. The strengths are solved together by
+// iteration (each record is built from the others' strengths). By construction
+// strength(R) − strength(D) = r: the two scores account for what happened, once.
+//
+// λ and γ are fitted on races held out entirely (scripts/warAttributionTest.ts): each race removed,
+// its candidates' other races re-solved without it, their records used to predict it. Error is
+// flat for γ between 0.5 and 2 and lowest near λ 0.25–0.5; γ < 0 (the newcomer absorbs the
+// surprise, which is what the ridge did) is the worst in every row. The ridge with its heavy tail
+// predicts held-out races as well (3.69 against 3.70): the gain here is not accuracy, it is that
+// a row no longer scores a race with a number taken from that race, and the two rows add up.
+export type WarAttribution = "record" | "ridge";
+export const WAR_ATTRIBUTION: WarAttribution = "record";
+const warAttributionDefault = (process.env.WAR_ATTRIBUTION as WarAttribution | undefined) ?? WAR_ATTRIBUTION;
+export const WAR_RECORD_LAMBDA = 0.5;
+export const WAR_SURPRISE_GAMMA = 1;
+/** Extra record weight of a candidate running as the ELECTED incumbent (appointed ones excepted). */
+export const WAR_INCUMBENT_RECORD = 2;
+export interface RecordShare { record: number; weight: number; share: number; strength: number; n: number;
+  /** The record with this race included at full weight: the candidate's standing as of the race. */
+  rating: number }
+export function allocateByRecord(races: EffectRace[], gamma: number, lambda: number = WAR_LAMBDA, decay: (office?: string) => number = recencyDecayFor, incumbentRecord = 0): Map<EffectRace, { R?: RecordShare; D?: RecordShare }> {
+  type Slot = { race: EffectRace; side: "R" | "D"; q: number; others: { slot: Slot; w: number }[]; W: number };
+  const byCandidate = new Map<string, Slot[]>();
+  const slots = new Map<EffectRace, { R?: Slot; D?: Slot }>();
+  for (const race of races) {
+    const pair: { R?: Slot; D?: Slot } = {};
+    for (const side of ["R", "D"] as const) {
+      const key = race[side];
+      if (!key) continue;
+      const slot: Slot = { race, side, q: 0, others: [], W: 0 };
+      pair[side] = slot;
+      (byCandidate.get(key) ?? byCandidate.set(key, []).get(key)!).push(slot);
+    }
+    slots.set(race, pair);
+  }
+  for (const list of byCandidate.values()) for (const a of list) {
+    for (const b of list) if (b !== a) { const w = (b.race.w ?? 1) * decay(b.race.office) ** Math.abs(b.race.year - a.race.year); a.others.push({ slot: b, w }); a.W += w; }
+  }
+  const record = (s?: Slot) => (s ? s.others.reduce((sum, o) => sum + o.w * o.slot.q, 0) / (s.W + lambda) : 0);
+  // An elected incumbent has a record whether or not it falls inside the window (Baker in 2018 has
+  // no earlier race on file, and it was not Gonzalez who made that race a 58-point surprise).
+  const v = (s?: Slot) => (s ? (1 + s.W + (s.race.inc === s.side ? incumbentRecord : 0)) ** gamma : 0);
+  for (const [race, pair] of slots) { if (pair.R) pair.R.q = pair.D ? race.r / 2 : race.r; if (pair.D) pair.D.q = pair.R ? -race.r / 2 : -race.r; }
+  for (let it = 0; it < 500; it += 1) {
+    let maxDelta = 0;
+    for (const [race, pair] of slots) {
+      const mR = record(pair.R), mD = record(pair.D), surprise = race.r - (mR - mD), shareR = v(pair.R) / (v(pair.R) + v(pair.D));
+      if (pair.R) { const next = mR + shareR * surprise; maxDelta = Math.max(maxDelta, Math.abs(next - pair.R.q)); pair.R.q = next; }
+      if (pair.D) { const next = mD - (1 - shareR) * surprise; maxDelta = Math.max(maxDelta, Math.abs(next - pair.D.q)); pair.D.q = next; }
+    }
+    if (maxDelta < 1e-7) break;
+  }
+  const out = new Map<EffectRace, { R?: RecordShare; D?: RecordShare }>();
+  for (const [race, pair] of slots) {
+    const shareR = v(pair.R) / (v(pair.R) + v(pair.D));
+    const of = (s: Slot | undefined, share: number): RecordShare | undefined => (s ? { record: record(s), weight: s.W, share, strength: s.q, n: s.others.length + 1, rating: (s.others.reduce((sum, o) => sum + o.w * o.slot.q, 0) + s.q) / (s.W + 1 + lambda) } : undefined);
+    out.set(race, { R: of(pair.R, shareR), D: of(pair.D, 1 - shareR) });
+  }
+  return out;
+}
+
+/** Fill effect / vs-opponent / WAR on every row by record (see "Attribution by record"). */
+function attributeWarByRecord(rows: WarRow[]): void {
+  type Race = EffectRace & { rows: WarRow[] };
+  const races = new Map<string, Race>();
+  for (const row of rows) {
+    const k = `${row.state}|${row.office}|${row.race}|${row.year}`;
+    const rc = races.get(k) ?? races.set(k, { r: row.actual - row.expected, year: row.year, office: row.office, w: row.boundaryWeight ?? 1, rows: [] }).get(k)!;
+    rc.rows.push(row);
+    if (row.party === "R") rc.R = warCandidateKey(row.state, row.party, row.candidate);
+    else rc.D = warCandidateKey(row.state, row.party, row.candidate);
+    if (row.electedIncumbent) rc.inc = row.party === "R" ? "R" : "D";
+  }
+  const shares = allocateByRecord([...races.values()], WAR_SURPRISE_GAMMA, WAR_RECORD_LAMBDA, recencyDecayFor, WAR_INCUMBENT_RECORD);
+  for (const rc of races.values()) {
+    const pair = shares.get(rc)!;
+    for (const row of rc.rows) {
+      const s = row.party === "R" ? 1 : -1;
+      const mine = row.party === "R" ? pair.R! : pair.D!, theirs = row.party === "R" ? pair.D : pair.R;
+      row.residual = s * rc.r;
+      row.record = mine.record; // strength in their OTHER races, shrunk
+      row.effect = mine.rating; // the same with this race in: their standing as of the race
+      row.effectN = mine.n;
+      row.effectW = mine.weight + 1;
+      row.opponentEffect = theirs?.strength ?? 0; // the opponent's strength in THIS race
+      row.expectedVsOpponent = row.expected - s * row.replacementPts - s * row.opponentEffect;
+      row.war = mine.strength + row.replacementPts; // = s·(actual − expectedVsOpponent)
+    }
+  }
+}
+
 function attributeWar(rows: WarRow[], incumbents: Set<string>): void {
   type Race = EffectRace & { rows: WarRow[] };
   const races = new Map<string, Race>();
@@ -2173,8 +2294,10 @@ export const WAR_BASELINE: WarBaseline = "own-year";
 // own-year-statewide is the own-year baseline for statewide races only (House modelled);
 // own-year-no-others is everything but the other-House-races term.
 const warBaselineDefault = (process.env.WAR_BASELINE as WarBaseline | undefined) ?? WAR_BASELINE;
-/** Statewide races are scored through this year. 2026 is on the counts as they stand (the TPL
- *  overlay); House rows still end at 2025 (2026 precinct results cover eight states).
+/** Races are scored through this year, House included since 2026-11-24. 2026 is on the counts as
+ *  they stand (the TPL overlay). 2026 precinct results cover eight states (AZ GA HI ID MN NC SC
+ *  WA): a 2026 House race elsewhere has no district ballot yet and is scored on the modelled
+ *  baseline plus the state's other House races, until its state's precinct file is in.
  *  WAR_LAST_YEAR=2025 with WAR_BASELINE=lean reproduces the table as it was before 2026-11-23. */
 export const WAR_STATEWIDE_LAST_YEAR = process.env.WAR_LAST_YEAR != null ? Number(process.env.WAR_LAST_YEAR) : HAS_2026 ? TPL_2026 : 2025;
 
@@ -2252,7 +2375,7 @@ function stateOwnYearGeneric(stateAbbr: string, stateRaces: ComputedRace[], year
   return { margin: agg.WRS, weight, offices, houseFilled, houseDropped };
 }
 
-const _warCache = new Map<WarBaseline, WarRow[]>();
+const _warCache = new Map<string, WarRow[]>();
 let _warMoneyCache: Record<string, WarMoneyModel> | null = null;
 type WarPending = { r: ComputedRace; office: WarRow["office"]; raceLabel: string; state: string;
   /** Pre-money expected margin on the MODELLED baseline (lean + trend + E + incumbency). The forward
@@ -2388,9 +2511,7 @@ function buildWarPending(): WarPending[] {
     const presBar = presWSum > 0 ? presRows.reduce((acc, x, i) => acc + presW[i] * x.NM!, 0) / presWSum : calc.tpl;
     const presNM = new Map(presRows.map((x) => [x.year, x.NM!]));
     for (const r of calc.races) {
-      // The candidate table still ends at 2025 (as the statewide loop above does): 2026 is in the
-      // lean but its races are not yet scored as candidate records.
-      if (r.raceType !== "H" || r.rawMargin == null || r.year > 2025) continue;
+      if (r.raceType !== "H" || r.rawMargin == null || r.year > WAR_STATEWIDE_LAST_YEAR) continue;
       const yearPres = interpolatedPresNM(presNM, r.year);
       const trend = yearPres != null ? yearPres - presBar : 0;
       // `actual` is the margin as recorded on the map the race was RUN on, so the expectation
@@ -2421,8 +2542,9 @@ export function getWarMoneyModel(): Record<string, WarMoneyModel> {
   return _warMoneyCache!;
 }
 
-export function computeWarTable(baseline: WarBaseline = warBaselineDefault): WarRow[] {
-  const hit = _warCache.get(baseline);
+export function computeWarTable(baseline: WarBaseline = warBaselineDefault, attribution: WarAttribution = warAttributionDefault): WarRow[] {
+  const cacheKey = `${baseline}|${attribution}`;
+  const hit = _warCache.get(cacheKey);
   if (hit) return hit;
   const pending = buildWarPending();
 
@@ -2481,15 +2603,16 @@ export function computeWarTable(baseline: WarBaseline = warBaselineDefault): War
     // residual/effect/war are filled by attributeWar() once every race is collected.
     const seatId = p.office === "H" ? p.raceLabel.replace(/^House /, "").toLowerCase() : p.r.detailHref?.split("/").pop();
     const base = { office: p.office, race: p.raceLabel, state: p.state, year: p.r.year, seatId, actual: p.r.rawMargin!, expected, moneyGapPct: p.gap, structuralGapPct, ffStructuralPts, generic: ownYear ? p.own!.margin : null, genericWeight: ownYear ? p.own!.weight : 0, houseOthers: others, leanBaseline: p.base - p.incPts, residual: 0, effect: 0, effectN: 0, effectW: 0, opponentEffect: 0, replacementPts: 0, expectedVsOpponent: 0, war: 0, boundaryWeight: p.boundaryWeight ?? 1, linesFrom: p.linesFrom, note: ownYear ? p.ownNote ?? p.note : p.note };
-    if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base, replacementPts: incumbentSlot === "D" ? -replacementR : 0 });
-    if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base, replacementPts: incumbentSlot === "R" ? replacementR : 0 });
+    const elected = !p.r.incumbentAppointed;
+    if (p.r.demCandidate) out.push({ candidate: p.r.demCandidate, party: p.r.demParty ?? "D", ...base, replacementPts: incumbentSlot === "D" ? -replacementR : 0, electedIncumbent: incumbentSlot === "D" && elected });
+    if (p.r.repCandidate) out.push({ candidate: p.r.repCandidate, party: p.r.repParty ?? "R", ...base, replacementPts: incumbentSlot === "R" ? replacementR : 0, electedIncumbent: incumbentSlot === "R" && elected });
     if (incumbentSlot === "D" && p.r.demCandidate) incumbents.add(warCandidateKey(p.state, p.r.demParty ?? "D", p.r.demCandidate));
     if (incumbentSlot === "R" && p.r.repCandidate) incumbents.add(warCandidateKey(p.state, p.r.repParty ?? "R", p.r.repCandidate));
   }
 
-  attributeWar(out, incumbents);
+  if (attribution === "record") attributeWarByRecord(out); else attributeWar(out, incumbents);
   out.sort((a, b) => b.war - a.war);
-  _warCache.set(baseline, out);
+  _warCache.set(cacheKey, out);
   return out;
 }
 

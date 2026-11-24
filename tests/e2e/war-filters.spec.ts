@@ -1,8 +1,8 @@
 import { expect, test } from "@playwright/test";
 
-// The candidates view: search and the filters keep the table in sync, and clicking a
-// name opens that person's record under the table.
-test("Candidates search, filters and the candidate record stay in sync", async ({ page }) => {
+// The candidates view: search and the filters keep the table in sync, and clicking a row
+// opens that race's WAR calculation under it.
+test("Candidates search, filters and the row calculation stay in sync", async ({ page }) => {
   const errors: string[] = [];
   page.on("console", (message) => {
     if (message.type() === "error") errors.push(message.text());
@@ -21,26 +21,34 @@ test("Candidates search, filters and the candidate record stay in sync", async (
   // The newest cycle renders in; the full table follows.
   await expect(page.getByText(/candidate-performances/).first()).toBeVisible();
   await search.fill("vt governor");
-  await checkColumn(3, /Gov · VT/);
+  await checkColumn(4, /Gov · VT/);
   await search.fill("Phil Scott");
   await checkColumn(2, /Phil Scott/i);
   await search.fill("");
   await page.getByLabel("Filter by year").selectOption("2022");
   await page.getByRole("button", { name: "S", exact: true }).click();
-  await checkColumn(3, /^Sen/);
-  await checkColumn(4, /^2022$/);
+  await checkColumn(3, /^2022$/);
+  await checkColumn(4, /^Sen/);
   await search.fill("no-such-candidate");
   await expect(page.getByText("No performances match the filters.")).toBeVisible();
   await search.fill("");
 
-  // A name opens the record and puts the selection in the URL.
+  // A row opens the race's calculation under it; the name links to the candidate's page.
   await page.getByRole("button", { name: "All", exact: true }).first().click();
   await page.getByLabel("Filter by year").selectOption("2024");
   await search.fill("Phil Scott");
-  await rows.first().getByRole("link", { name: "Phil Scott" }).click();
-  await expect(page).toHaveURL(/c=phil-scott/);
-  await expect(page.getByText("Selected candidate")).toBeVisible();
-  await expect(page.getByText("WAR by cycle")).toBeVisible();
+  await expect(rows.first().getByRole("link", { name: "Phil Scott" })).toHaveAttribute("href", "/candidates/phil-scott");
+  await rows.first().locator("td").nth(5).click();
+  await expect(rows.first()).toHaveAttribute("aria-expanded", "true");
+  await expect(page.getByText(/How Phil Scott.s 2024 WAR is built/i)).toBeVisible();
+  await expect(page.getByText("generic vs generic")).toBeVisible();
+  await rows.first().locator("td").nth(5).click();
+  await expect(page.getByText(/WAR is built/i)).toHaveCount(0);
+
+  // ?c=slug (the candidate page's "WAR breakdown" link) narrows the table to that candidate.
+  await page.goto("/war?c=phil-scott");
+  await expect(page.getByText("Showing every scored race for")).toBeVisible();
+  await checkColumn(2, /Phil Scott/i);
 
   expect(errors.filter((error) => /same key|unique.*key|hydration/i.test(error))).toEqual([]);
 });

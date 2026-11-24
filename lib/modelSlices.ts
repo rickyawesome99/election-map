@@ -61,11 +61,14 @@ function yearRacesOf(races: { year: number; inAggregation: boolean }[]): Record<
 
 const OFFICE_OF: Record<WarRow["office"], PastElectionOffice> = { P: "president", S: "senate", G: "governor", H: "house" };
 
+const r2 = (v: number) => Math.round(v * 100) / 100;
 function slimWar(r: WarRow): WarSlim {
   return {
     candidate: r.candidate, party: r.party, office: r.office, race: r.race, state: r.state, year: r.year,
     actual: r.actual, expected: r.expected, vsOpp: r.expectedVsOpponent, residual: r.residual, incumb: r.replacementPts, effect: r.effect, effectN: r.effectN,
     oppEffect: r.opponentEffect, war: r.war, seatId: r.seatId,
+    base: r.generic == null ? null : r2(r.generic), baseW: r2(r.genericWeight), leanBase: r2(r.leanBaseline), houseOthers: r2(r.houseOthers),
+    moneyPts: r2(r.ffStructuralPts), record: r2(r.record ?? 0), effectW: r2(r.effectW),
     pastHref: r.seatId ? pastElectionHref(OFFICE_OF[r.office], r.seatId, r.year) : undefined,
   };
 }

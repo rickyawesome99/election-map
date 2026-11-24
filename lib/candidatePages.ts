@@ -5,6 +5,10 @@ import { gunzipSync } from "node:zlib";
 import { candidateSlug } from "@/lib/candidateSlug";
 import type { CandidatePagePayload, CandidatePageShard } from "@/lib/candidatePagePayload";
 
+// Each payload's WAR rows carry the opponent's WAR in the same race (oppWar), and its current races
+// their 2026 result where one is on file (historyResults2026, legRaces[].result2026): lib/candidatePageBuild.ts.
+// A page without a federal record carries WAR rows from its own state's races only.
+// WAR rows also carry the terms of the race's calculation (base, moneyPts, record…) for the page's WAR breakdown.
 // Reads the candidate pages precomputed by scripts/buildCandidatePages.ts (npm run candidate-pages,
 // part of the prebuild / predev chain) from data/generated/candidate-pages/. One shard per state for
 // the state legislative slugs (which end in the state's abbreviation, "-oh") and federal.json for the
