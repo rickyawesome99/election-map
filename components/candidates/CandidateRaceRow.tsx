@@ -79,6 +79,15 @@ export function OutcomePill({ won }: { won: boolean | null }) {
   );
 }
 
+/** Turns over while the row's panel is open (ExpandableRace sets data-open on the `group` around it). */
+function Chevron({ className = "" }: { className?: string }) {
+  return (
+    <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" className={`transition-transform duration-200 group-data-[open=true]:rotate-180 ${className}`} style={{ color: "var(--app-text-very-muted)" }}>
+      <path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 const FIG = { fontFamily: "var(--font-serif)", fontWeight: 700, letterSpacing: "-0.01em", lineHeight: 1 } as const;
 
 /** A small labelled figure under a race: "EXPECTED D+39.7". */
@@ -130,12 +139,10 @@ export function CandidateRaceRow({
         <span className="vh-margin inline-block whitespace-nowrap tabular-nums" style={{ ...FIG, fontSize: "1.3rem", color: marginColor(margin) }}>{marginLabel ?? fmtMargin(margin)}</span>
         {marginCaption && <span className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{marginCaption}</span>}
         {status ?? <OutcomePill won={won ?? null} />}
-        {expandable && (
-          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" className="mr-1 mt-1 transition-transform duration-200 group-data-[open=true]:rotate-180" style={{ color: "var(--app-text-very-muted)" }}>
-            <path d="M3 4.5 6 7.5 9 4.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        )}
+        {expandable && <Chevron className="mr-1 mt-1 max-sm:hidden" />}
       </div>
+      {/* Phones: the chevron sits at the end of the figures' line (the row's last line), not under the outcome. */}
+      {expandable && <Chevron className="absolute bottom-[1.6rem] right-1 sm:hidden" />}
       <div className="col-span-2 col-start-1 row-start-2 min-w-0 sm:col-span-1 sm:col-start-2 sm:row-start-1">
         <ContestantLines rows={contestants} />
         <div className="mt-2.5"><SplitBar demShare={demShare} /></div>

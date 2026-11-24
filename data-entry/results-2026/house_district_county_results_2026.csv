@@ -305,13 +305,13 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,CA,22,06107,Tulare,13949,7052,0,21001,civicAPI
 2026,CA,23,06029,Kern,2211,2385,0,4596,civicAPI
 2026,CA,23,06037,Los Angeles,2337,1508,0,3845,civicAPI
-2026,CA,23,06065,Riverside,5726,8154,0,13880,civicAPI
+2026,CA,23,06065,Riverside,5728,8157,0,13885,civicAPI
 2026,CA,23,06071,San Bernardino,96861,98074,0,194935,civicAPI
 2026,CA,24,06079,San Luis Obispo,50833,29865,0,80698,civicAPI
 2026,CA,24,06083,Santa Barbara,105956,50600,0,156556,civicAPI
 2026,CA,24,06111,Ventura,39800,19023,0,58823,civicAPI
 2026,CA,25,06025,Imperial,28020,13232,0,41252,civicAPI
-2026,CA,25,06065,Riverside,115278,60029,0,175307,civicAPI
+2026,CA,25,06065,Riverside,115605,60160,0,175765,civicAPI
 2026,CA,25,06071,San Bernardino,2316,1675,0,3991,civicAPI
 2026,CA,26,06037,Los Angeles,42401,29690,0,72091,civicAPI
 2026,CA,26,06111,Ventura,135830,72923,0,208753,civicAPI
@@ -324,19 +324,19 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,CA,31,06071,San Bernardino,22604,13436,0,36040,civicAPI
 2026,CA,32,06037,Los Angeles,156719,64991,0,221710,civicAPI
 2026,CA,32,06111,Ventura,28622,25779,0,54401,civicAPI
-2026,CA,33,06065,Riverside,2648,1450,0,4098,civicAPI
+2026,CA,33,06065,Riverside,2652,1452,0,4104,civicAPI
 2026,CA,33,06071,San Bernardino,138828,61966,0,200794,civicAPI
 2026,CA,34,06037,Los Angeles,174856,0,0,174856,civicAPI
 2026,CA,35,06037,Los Angeles,27007,8955,0,35962,civicAPI
-2026,CA,35,06065,Riverside,27402,20781,0,48183,civicAPI
+2026,CA,35,06065,Riverside,27541,20873,0,48414,civicAPI
 2026,CA,35,06071,San Bernardino,87172,40301,0,127473,civicAPI
 2026,CA,36,06037,Los Angeles,224204,82778,0,306982,civicAPI
 2026,CA,37,06037,Los Angeles,183681,0,0,183681,civicAPI
 2026,CA,38,06037,Los Angeles,120491,40566,0,161057,civicAPI
 2026,CA,38,06059,Orange,25026,29629,0,54655,civicAPI
-2026,CA,39,06065,Riverside,135694,60164,0,195858,civicAPI
+2026,CA,39,06065,Riverside,135939,60232,0,196171,civicAPI
 2026,CA,40,06059,Orange,0,92406,0,92406,civicAPI
-2026,CA,40,06065,Riverside,0,158302,0,158302,civicAPI
+2026,CA,40,06065,Riverside,0,158689,0,158689,civicAPI
 2026,CA,41,06037,Los Angeles,141881,59508,0,201389,civicAPI
 2026,CA,41,06059,Orange,29435,22633,0,52068,civicAPI
 2026,CA,42,06037,Los Angeles,87182,23986,0,111168,civicAPI
@@ -347,7 +347,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,CA,45,06059,Orange,115823,82013,0,197836,civicAPI
 2026,CA,46,06059,Orange,139756,55564,0,195320,civicAPI
 2026,CA,47,06059,Orange,167158,118161,0,285319,civicAPI
-2026,CA,48,06065,Riverside,80068,57995,0,138063,civicAPI
+2026,CA,48,06065,Riverside,80153,58060,0,138213,civicAPI
 2026,CA,48,06073,San Diego,87438,54500,0,141938,civicAPI
 2026,CA,49,06059,Orange,28241,30331,0,58572,civicAPI
 2026,CA,49,06073,San Diego,165020,100724,0,265744,civicAPI
@@ -887,13 +887,13 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,ID,2,16081,Teton,3529,2247,304,6080,Idaho Secretary of State
 2026,ID,2,16083,Twin Falls,7765,17238,2472,27475,Idaho Secretary of State
 2026,IL,1,17031,Cook,137504,16971,0,154475,civicAPI
-2026,IL,1,17091,Kankakee,5410,7365,0,12775,civicAPI
+2026,IL,1,17091,Kankakee,5433,7381,0,12814,civicAPI
 2026,IL,1,17197,Will,33915,42612,0,76527,civicAPI
 2026,IL,2,17019,Champaign,2035,2466,0,4501,civicAPI
 2026,IL,2,17031,Cook,128520,12203,0,140723,civicAPI
 2026,IL,2,17053,Ford,996,2619,0,3615,civicAPI
 2026,IL,2,17075,Iroquois,2275,7496,0,9771,civicAPI
-2026,IL,2,17091,Kankakee,10153,11185,0,21338,civicAPI
+2026,IL,2,17091,Kankakee,10191,11201,7,21399,civicAPI
 2026,IL,2,17105,Livingston,2738,6509,0,9247,civicAPI
 2026,IL,2,17183,Vermilion,3504,8836,0,12340,civicAPI
 2026,IL,2,17197,Will,10696,6154,0,16850,civicAPI
@@ -925,17 +925,17 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,IL,11,17197,Will,19767,6482,0,26249,civicAPI
 2026,IL,12,17003,Alexander,672,929,0,1601,civicAPI
 2026,IL,12,17023,Clark,1616,4707,0,6323,civicAPI
-2026,IL,12,17025,Clay,868,4567,0,5435,civicAPI
+2026,IL,12,17025,Clay,870,4572,0,5442,civicAPI
 2026,IL,12,17027,Clinton,3551,10803,0,14354,civicAPI
 2026,IL,12,17029,Coles,1452,3755,0,5207,civicAPI
-2026,IL,12,17033,Crawford,1669,4923,0,6592,civicAPI
+2026,IL,12,17033,Crawford,1674,4924,0,6598,civicAPI
 2026,IL,12,17035,Cumberland,909,3816,0,4725,civicAPI
 2026,IL,12,17047,Edwards,408,2172,0,2580,civicAPI
 2026,IL,12,17049,Effingham,3041,12321,0,15362,civicAPI
 2026,IL,12,17055,Franklin,3598,9273,0,12871,civicAPI
 2026,IL,12,17059,Gallatin,578,1392,0,1970,civicAPI
 2026,IL,12,17065,Hamilton,657,2595,0,3252,civicAPI
-2026,IL,12,17069,Hardin,302,1098,0,1400,civicAPI
+2026,IL,12,17069,Hardin,305,1098,0,1403,civicAPI
 2026,IL,12,17077,Jackson,10177,7704,0,17881,civicAPI
 2026,IL,12,17079,Jasper,793,3655,0,4448,civicAPI
 2026,IL,12,17081,Jefferson,3409,9039,0,12448,civicAPI
@@ -959,7 +959,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,IL,12,17199,Williamson,8310,15673,0,23983,civicAPI
 2026,IL,13,17019,Champaign,37576,9795,0,47371,civicAPI
 2026,IL,13,17115,Macon,7086,5637,0,12723,civicAPI
-2026,IL,13,17117,Macoupin,6451,10897,0,17348,civicAPI
+2026,IL,13,17117,Macoupin,6546,10946,0,17492,civicAPI
 2026,IL,13,17119,Madison,35147,26336,0,61483,civicAPI
 2026,IL,13,17147,Piatt,1956,2525,0,4481,civicAPI
 2026,IL,13,17167,Sangamon,32644,23510,0,56154,civicAPI
@@ -995,7 +995,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,IL,15,17109,McDonough,1637,3600,0,5237,civicAPI
 2026,IL,15,17129,Menard,1584,3402,0,4986,civicAPI
 2026,IL,15,17131,Mercer,1253,1843,0,3096,civicAPI
-2026,IL,15,17135,Montgomery,3216,6845,0,10061,civicAPI
+2026,IL,15,17135,Montgomery,3232,6856,0,10088,civicAPI
 2026,IL,15,17137,Morgan,4027,6950,0,10977,civicAPI
 2026,IL,15,17139,Moultrie,1352,3666,0,5018,civicAPI
 2026,IL,15,17147,Piatt,1000,1920,0,2920,civicAPI
@@ -1016,7 +1016,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,IL,16,17099,LaSalle,2711,4808,0,7519,civicAPI
 2026,IL,16,17103,Lee,4969,7146,0,12115,civicAPI
 2026,IL,16,17105,Livingston,682,2441,0,3123,civicAPI
-2026,IL,16,17123,Marshall,1566,3143,0,4709,civicAPI
+2026,IL,16,17123,Marshall,1569,3145,0,4714,civicAPI
 2026,IL,16,17111,McHenry,2262,2013,0,4275,civicAPI
 2026,IL,16,17113,McLean,17341,19941,0,37282,civicAPI
 2026,IL,16,17141,Ogle,7415,12169,0,19584,civicAPI
@@ -1033,7 +1033,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,IL,17,17095,Knox,8646,8102,0,16748,civicAPI
 2026,IL,17,17109,McDonough,2341,1691,0,4032,civicAPI
 2026,IL,17,17113,McLean,20593,8641,0,29234,civicAPI
-2026,IL,17,17131,Mercer,1351,1794,0,3145,civicAPI
+2026,IL,17,17131,Mercer,1355,1794,0,3149,civicAPI
 2026,IL,17,17143,Peoria,23277,12618,0,35895,civicAPI
 2026,IL,17,17161,Rock Island,30828,16874,0,47702,civicAPI
 2026,IL,17,17177,Stephenson,5617,5438,0,11055,civicAPI
@@ -2289,7 +2289,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,NH,2,33013,Merrimack,39902,23799,1631,65332,civicAPI
 2026,NH,2,33015,Rockingham,14537,14966,667,30170,civicAPI
 2026,NH,2,33019,Sullivan,10924,7760,583,19267,civicAPI
-2026,NJ,1,34005,Burlington,5739,2344,42,8125,civicAPI
+2026,NJ,1,34005,Burlington,5833,2371,42,8246,civicAPI
 2026,NJ,1,34007,Camden,129363,43758,0,173121,civicAPI
 2026,NJ,1,34015,Gloucester,50233,31052,250,81535,civicAPI
 2026,NJ,2,34001,Atlantic,51267,39902,1108,92277,civicAPI
@@ -2298,7 +2298,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,NJ,2,34015,Gloucester,18207,15128,278,33613,civicAPI
 2026,NJ,2,34029,Ocean,19152,26423,495,46070,civicAPI
 2026,NJ,2,34033,Salem,9933,10765,365,21063,civicAPI
-2026,NJ,3,34005,Burlington,103909,51362,3371,158642,civicAPI
+2026,NJ,3,34005,Burlington,105442,51864,3453,160759,civicAPI
 2026,NJ,3,34021,Mercer,41202,17306,1249,59757,civicAPI
 2026,NJ,3,34025,Monmouth,29282,29163,1089,59534,civicAPI
 2026,NJ,4,34025,Monmouth,45927,50346,120,96393,civicAPI
@@ -2309,11 +2309,11 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,NJ,6,34023,Middlesex,98526,35214,693,134433,civicAPI
 2026,NJ,6,34025,Monmouth,49629,30033,205,79867,civicAPI
 2026,NJ,7,34019,Hunterdon,33916,27869,906,62691,civicAPI
-2026,NJ,7,34027,Morris,26709,21780,842,49331,civicAPI
+2026,NJ,7,34027,Morris,27830,22193,886,50909,civicAPI
 2026,NJ,7,34035,Somerset,42353,27587,966,70906,civicAPI
 2026,NJ,7,34037,Sussex,12494,12319,459,25272,civicAPI
 2026,NJ,7,34039,Union,56715,27365,1329,85409,civicAPI
-2026,NJ,7,34041,Warren,20646,20428,909,41983,civicAPI
+2026,NJ,7,34041,Warren,20981,20568,933,42482,civicAPI
 2026,NJ,8,34013,Essex,11725,0,916,12641,civicAPI
 2026,NJ,8,34017,Hudson,85028,0,12894,97922,civicAPI
 2026,NJ,8,34039,Union,15329,0,1487,16816,civicAPI
@@ -2324,7 +2324,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,NJ,10,34017,Hudson,22532,3203,92,25827,civicAPI
 2026,NJ,10,34039,Union,45234,14543,0,59777,civicAPI
 2026,NJ,11,34013,Essex,76694,30173,1074,107941,civicAPI
-2026,NJ,11,34027,Morris,80199,64723,1514,146436,civicAPI
+2026,NJ,11,34027,Morris,83912,66116,1575,151603,civicAPI
 2026,NJ,11,34031,Passaic,13605,12473,294,26372,civicAPI
 2026,NJ,12,34021,Mercer,45297,9840,1483,56620,civicAPI
 2026,NJ,12,34023,Middlesex,68434,39166,1699,109299,civicAPI
@@ -2446,7 +2446,7 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,NY,21,36019,Clinton,17024,11846,51,28921,civicAPI
 2026,NY,21,36031,Essex,9157,6491,27,15675,civicAPI
 2026,NY,21,36033,Franklin,9097,6698,32,15827,civicAPI
-2026,NY,21,36035,Fulton,7746,10205,82,18033,civicAPI
+2026,NY,21,36035,Fulton,7866,10307,82,18255,civicAPI
 2026,NY,21,36041,Hamilton,1209,1612,0,2821,civicAPI
 2026,NY,21,36043,Herkimer,8726,12681,0,21407,civicAPI
 2026,NY,21,36045,Jefferson,1927,2338,15,4280,civicAPI
@@ -3546,56 +3546,56 @@ year,state,district,county_fips,county_name,dem,gop,oth,total,source
 2026,VT,1,50023,Washington,21228,8261,1027,30516,civicAPI
 2026,VT,1,50025,Windham,15702,4863,633,21198,civicAPI
 2026,VT,1,50027,Windsor,18999,8028,969,27996,civicAPI
-2026,WA,1,53033,King,87527,29069,465,117061,Washington Secretary of State
-2026,WA,1,53061,Snohomish,112154,66106,498,178758,Washington Secretary of State
+2026,WA,1,53033,King,87536,29073,466,117075,Washington Secretary of State
+2026,WA,1,53061,Snohomish,112205,66132,500,178837,Washington Secretary of State
 2026,WA,2,53029,Island,27821,16440,99,44360,Washington Secretary of State
-2026,WA,2,53055,San Juan,8757,2419,55,11231,Washington Secretary of State
+2026,WA,2,53055,San Juan,8830,2437,55,11322,Washington Secretary of State
 2026,WA,2,53057,Skagit,34871,22976,152,57999,Washington Secretary of State
-2026,WA,2,53061,Snohomish,84214,34920,427,119561,Washington Secretary of State
-2026,WA,2,53073,Whatcom,76022,38545,640,115207,Washington Secretary of State
-2026,WA,3,53011,Clark,137481,92235,2321,232037,Washington Secretary of State
+2026,WA,2,53061,Snohomish,84257,34934,427,119618,Washington Secretary of State
+2026,WA,2,53073,Whatcom,76295,38623,644,115562,Washington Secretary of State
+2026,WA,3,53011,Clark,137530,92256,2324,232110,Washington Secretary of State
 2026,WA,3,53015,Cowlitz,22215,25754,440,48409,Washington Secretary of State
-2026,WA,3,53041,Lewis,13803,23953,228,37984,Washington Secretary of State
-2026,WA,3,53049,Pacific,6615,5712,98,12425,Washington Secretary of State
-2026,WA,3,53059,Skamania,3163,3044,45,6252,Washington Secretary of State
-2026,WA,3,53067,Thurston,5938,8922,148,15008,Washington Secretary of State
-2026,WA,3,53069,Wahkiakum,1171,1349,19,2539,Washington Secretary of State
+2026,WA,3,53041,Lewis,13954,24071,234,38259,Washington Secretary of State
+2026,WA,3,53049,Pacific,6625,5722,98,12445,Washington Secretary of State
+2026,WA,3,53059,Skamania,3177,3062,45,6284,Washington Secretary of State
+2026,WA,3,53067,Thurston,5944,8926,148,15018,Washington Secretary of State
+2026,WA,3,53069,Wahkiakum,1194,1371,19,2584,Washington Secretary of State
 2026,WA,4,53001,Adams,1027,1245,11,2283,Washington Secretary of State
 2026,WA,4,53005,Benton,34317,42392,165,76874,Washington Secretary of State
 2026,WA,4,53017,Douglas,6876,10133,34,17043,Washington Secretary of State
 2026,WA,4,53021,Franklin,10607,10610,28,21245,Washington Secretary of State
 2026,WA,4,53025,Grant,9640,18093,38,27771,Washington Secretary of State
-2026,WA,4,53039,Klickitat,5609,5874,17,11500,Washington Secretary of State
-2026,WA,4,53047,Okanogan,7770,8930,19,16719,Washington Secretary of State
+2026,WA,4,53039,Klickitat,5625,5885,17,11527,Washington Secretary of State
+2026,WA,4,53047,Okanogan,7803,8945,19,16767,Washington Secretary of State
 2026,WA,4,53077,Yakima,36875,33777,255,70907,Washington Secretary of State
 2026,WA,5,53001,Adams,446,1565,11,2022,Washington Secretary of State
 2026,WA,5,53003,Asotin,3614,5503,23,9140,Washington Secretary of State
 2026,WA,5,53013,Columbia,576,1377,8,1961,Washington Secretary of State
-2026,WA,5,53019,Ferry,1128,2268,7,3403,Washington Secretary of State
+2026,WA,5,53019,Ferry,1135,2270,7,3412,Washington Secretary of State
 2026,WA,5,53021,Franklin,574,2008,9,2591,Washington Secretary of State
-2026,WA,5,53023,Garfield,280,975,4,1259,Washington Secretary of State
+2026,WA,5,53023,Garfield,283,992,4,1279,Washington Secretary of State
 2026,WA,5,53043,Lincoln,1419,4208,16,5643,Washington Secretary of State
-2026,WA,5,53051,Pend Oreille,2198,4683,25,6906,Washington Secretary of State
-2026,WA,5,53063,Spokane,119099,114334,885,234318,Washington Secretary of State
+2026,WA,5,53051,Pend Oreille,2208,4697,25,6930,Washington Secretary of State
+2026,WA,5,53063,Spokane,119414,114535,886,234835,Washington Secretary of State
 2026,WA,5,53065,Stevens,6505,15698,86,22289,Washington Secretary of State
 2026,WA,5,53071,Walla Walla,11832,12537,48,24417,Washington Secretary of State
 2026,WA,5,53075,Whitman,9032,6998,61,16091,Washington Secretary of State
 2026,WA,6,53009,Clallam,23342,17574,50,40966,Washington Secretary of State
 2026,WA,6,53027,Grays Harbor,14928,14483,43,29454,Washington Secretary of State
 2026,WA,6,53031,Jefferson,16423,5320,37,21780,Washington Secretary of State
-2026,WA,6,53035,Kitsap,82658,47920,333,130911,Washington Secretary of State
-2026,WA,6,53045,Mason,15616,14725,35,30376,Washington Secretary of State
+2026,WA,6,53035,Kitsap,82725,47957,333,131015,Washington Secretary of State
+2026,WA,6,53045,Mason,15657,14759,36,30452,Washington Secretary of State
 2026,WA,6,53053,Pierce,72003,34405,210,106618,Washington Secretary of State
-2026,WA,7,53033,King,328188,44989,1357,374534,Washington Secretary of State
+2026,WA,7,53033,King,328219,44995,1357,374571,Washington Secretary of State
 2026,WA,8,53007,Chelan,18462,17076,69,35607,Washington Secretary of State
 2026,WA,8,53017,Douglas,130,164,1,295,Washington Secretary of State
-2026,WA,8,53033,King,121830,63750,523,186103,Washington Secretary of State
+2026,WA,8,53033,King,121838,63752,523,186113,Washington Secretary of State
 2026,WA,8,53037,Kittitas,10078,11073,53,21204,Washington Secretary of State
 2026,WA,8,53053,Pierce,31567,38773,116,70456,Washington Secretary of State
-2026,WA,8,53061,Snohomish,13253,14762,37,28052,Washington Secretary of State
-2026,WA,9,53033,King,191970,59674,1834,253478,Washington Secretary of State
+2026,WA,8,53061,Snohomish,13260,14768,37,28065,Washington Secretary of State
+2026,WA,9,53033,King,192002,59681,1834,253517,Washington Secretary of State
 2026,WA,10,53053,Pierce,97752,59089,702,157543,Washington Secretary of State
-2026,WA,10,53067,Thurston,80719,39501,999,121219,Washington Secretary of State
+2026,WA,10,53067,Thurston,80788,39538,999,121325,Washington Secretary of State
 2026,WI,1,55059,Kenosha,34843,32156,0,66999,civicAPI
 2026,WI,1,55079,Milwaukee,35843,29226,0,65069,civicAPI
 2026,WI,1,55101,Racine,40727,41443,0,82170,civicAPI

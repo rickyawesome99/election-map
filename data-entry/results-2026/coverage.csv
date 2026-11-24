@@ -20,8 +20,8 @@ AR,state_house,101,101,,,AP via NYT (unofficial)/civicAPI,0,1,100,0,,0.0
 AR,state_senate,18,18,,,civicAPI,0,0,18,0,,0.0
 CA,governor,1,1,,,civicAPI,0,0,1,0,,
 CA,house,52,52,,,civicAPI,0,0,52,0,,
-CA,state_house,80,80,,,civicAPI,0,0,80,0,,1.532
-CA,state_senate,20,20,,,civicAPI,0,0,20,0,,1.031
+CA,state_house,80,80,,,civicAPI,0,0,80,0,,0.063
+CA,state_senate,20,20,,,civicAPI,0,0,20,0,,0.0
 CO,senate,1,1,,,civicAPI,0,0,1,0,,
 CO,governor,1,1,,,civicAPI,0,0,1,0,,
 CO,house,8,8,,,civicAPI,0,0,8,0,,
@@ -57,8 +57,8 @@ ID,state_senate,35,35,,,Idaho Secretary of State,0,0,35,35,0.0,0.0
 IL,senate,1,1,,,civicAPI,0,0,1,0,,
 IL,governor,1,1,,,civicAPI,0,0,1,0,,
 IL,house,17,17,,,civicAPI,0,0,17,0,,
-IL,state_house,118,118,,,civicAPI,0,102,23,0,,0.0
-IL,state_senate,39,39,,,civicAPI,0,34,9,0,,0.0
+IL,state_house,118,118,,,civicAPI,0,97,29,0,,0.253
+IL,state_senate,39,39,,,civicAPI,0,32,14,0,,0.132
 IN,house,9,9,,,civicAPI,0,1,9,0,,
 IN,state_house,100,100,,,civicAPI,0,6,97,0,,1.812
 IN,state_senate,25,25,,,civicAPI,0,1,25,0,,0.953
@@ -86,8 +86,8 @@ ME,state_house,151,151,,,civicAPI,0,14,151,0,,43.682
 ME,state_senate,35,35,,,civicAPI,0,8,35,0,,15.577
 MD,governor,1,1,,,civicAPI,0,0,1,0,,
 MD,house,8,8,,,civicAPI,0,0,8,0,,
-MD,state_house,71,71,,,civicAPI,0,8,64,0,,1.037
-MD,state_senate,47,47,,,civicAPI,0,6,43,0,,1.125
+MD,state_house,71,71,,,civicAPI,0,8,64,0,,0.676
+MD,state_senate,47,47,,,civicAPI,0,6,43,0,,0.643
 MA,senate,1,1,,,civicAPI,0,0,1,0,,
 MA,governor,1,1,,,civicAPI,0,0,1,0,,
 MA,house,9,9,,,civicAPI,0,0,9,0,,
@@ -139,8 +139,8 @@ NY,state_house,150,150,,,civicAPI,0,14,150,0,,19.112
 NY,state_senate,63,63,,,civicAPI,0,8,63,0,,18.3
 NC,senate,1,1,,,North Carolina State Board of Elections,0,0,1,1,0.0,
 NC,house,14,14,,,North Carolina State Board of Elections,0,0,14,14,0.0,
-NC,state_house,120,120,,,North Carolina State Board of Elections,0,0,120,120,0.0,0.046
-NC,state_senate,50,50,,,North Carolina State Board of Elections,0,0,50,50,0.0,0.017
+NC,state_house,120,120,,,North Carolina State Board of Elections,0,0,120,120,0.0,0.043
+NC,state_senate,50,50,,,North Carolina State Board of Elections,0,0,50,50,0.0,0.016
 ND,house,1,1,,,civicAPI,0,0,1,0,,
 ND,state_house,27,27,,,civicAPI,0,0,27,0,,0.0
 ND,state_senate,24,24,,,civicAPI,0,0,24,0,,0.0
@@ -198,9 +198,9 @@ VT,state_senate,16,16,,,AP via NYT (unofficial),0,16,0,0,,
 VA,senate,1,1,,,civicAPI,0,0,1,0,,
 VA,house,11,11,,,civicAPI,0,0,11,0,,
 VA,state_house,1,1,,,civicAPI,0,0,1,0,,0.0
-WA,house,10,10,,,Washington Secretary of State,0,4,10,10,0.014,
-WA,state_house,98,98,,,Washington Secretary of State,0,37,98,98,0.955,0.447
-WA,state_senate,24,24,,,Washington Secretary of State,0,13,24,24,0.924,0.303
+WA,house,10,10,,,Washington Secretary of State,0,4,10,10,0.173,
+WA,state_house,98,98,,,Washington Secretary of State,0,37,98,98,0.955,0.31
+WA,state_senate,24,24,,,Washington Secretary of State,0,13,24,24,1.024,0.256
 WV,senate,1,1,,,civicAPI,0,0,1,0,,
 WV,house,2,2,,,civicAPI,0,0,2,0,,
 WV,state_house,100,100,,,civicAPI,0,2,100,0,,7.587

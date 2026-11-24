@@ -1,4 +1,4 @@
-built 2026-11-24T03:47:34Z
+built 2026-11-24T04:26:46Z
 civicAPI: 5166 races from 5166 payloads; 0 skipped
 AZ: 70 races from Arizona Secretary of State
 GA: 252 races from Georgia Secretary of State
@@ -15,7 +15,7 @@ WY: 82 races from Wyoming Secretary of State
 AP fill-in (unofficial): 756 races: AK 50 AR 1 DE 52 KY 61 LA 1 MA 200 MI 39 NH 227 VT 125
 not on the ballot (unopposed, AP roster names only): 115
 coverage: 6262 of 6262 expected races have results
-direct vs civicAPI: 33 races differ by over 0.5%
+direct vs civicAPI: 35 races differ by over 0.5%
   SD-H-28B SD House District 28B: direct 3,384 vs civicAPI 3,274 (+3.36%)
   WY-H-38 WY House District 38: direct 2,454 vs civicAPI 2,385 (+2.893%)
   WY-H-57 WY House District 57: direct 1,806 vs civicAPI 1,756 (+2.847%)
@@ -29,6 +29,7 @@ direct vs civicAPI: 33 races differ by over 0.5%
   WY-H-48 WY House District 48: direct 2,231 vs civicAPI 2,207 (+1.087%)
   WY-S-31 WY Senate District 31: direct 4,703 vs civicAPI 4,653 (+1.075%)
   WY-H-10 WY House District 10: direct 3,527 vs civicAPI 3,490 (+1.06%)
+  WA-S-33 WA Senate District 33: direct 38,355 vs civicAPI 38,752 (-1.024%)
   WY-S-5 WY Senate District 5: direct 4,794 vs civicAPI 4,746 (+1.011%)
   WY-H-7 WY House District 7: direct 3,201 vs civicAPI 3,169 (+1.01%)
   WY-H-59 WY House District 59: direct 2,130 vs civicAPI 2,109 (+0.996%)
@@ -42,6 +43,7 @@ direct vs civicAPI: 33 races differ by over 0.5%
   WY-H-9 WY House District 9: direct 2,869 vs civicAPI 2,844 (+0.879%)
   WY-H-46 WY House District 46: direct 3,790 vs civicAPI 3,759 (+0.825%)
   WY-H-58 WY House District 58: direct 2,217 vs civicAPI 2,199 (+0.819%)
+  WA-H-11-P2 WA House District 11 - Position 2: direct 38,644 vs civicAPI 38,945 (-0.773%)
   WY-H-36 WY House District 36: direct 2,098 vs civicAPI 2,084 (+0.672%)
   WY Wyoming: direct 188,624 vs civicAPI 187,412 (+0.647%)
   WY-H-27 WY House District 27: direct 3,209 vs civicAPI 3,190 (+0.596%)
@@ -49,7 +51,7 @@ direct vs civicAPI: 33 races differ by over 0.5%
   WY-2 Wyoming: direct 188,318 vs civicAPI 187,279 (+0.555%)
   WY-H-28 WY House District 28: direct 3,834 vs civicAPI 3,813 (+0.551%)
   WY-H-17 WY House District 17: direct 2,129 vs civicAPI 2,118 (+0.519%)
-vs AP state-leg snapshot (2026-11-12): 255 races differ by over 1%
+vs AP state-leg snapshot (2026-11-12): 248 races differ by over 1%
   MI-H-8: civicAPI 24,110 vs AP 13,675 (+76.307%)
   TX-S-22-SP: civicAPI 106,733 vs AP 331,688 (-67.821%)
   MI-H-5: civicAPI 24,288 vs AP 15,282 (+58.932%)

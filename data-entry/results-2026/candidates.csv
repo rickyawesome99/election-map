@@ -32,9 +32,9 @@ senate,ID,,0,ID,Jim Risch,Republican,R,402983,56.5,1,1,0,Idaho Secretary of Stat
 senate,ID,,0,ID,Todd Achilles,Independent,I,239422,33.57,2,0,0,Idaho Secretary of State
 senate,ID,,0,ID,Natalie M Fleming,Independent,I,50134,7.03,3,0,0,Idaho Secretary of State
 senate,ID,,0,ID,Matt Loesby,Libertarian,L,20742,2.91,4,0,0,Idaho Secretary of State
-senate,IL,,0,IL,Juliana Stratton,Democratic,D,2616741,62.08,1,1,0,civicAPI
-senate,IL,,0,IL,Don Tracy,Republican,R,1531246,36.33,2,0,0,civicAPI
-senate,IL,,0,IL,Whitfield Harrington Jr.,American Center Party,O,67249,1.6,3,0,0,civicAPI
+senate,IL,,0,IL,Juliana Stratton,Democratic,D,2616916,62.08,1,1,0,civicAPI
+senate,IL,,0,IL,Don Tracy,Republican,R,1531348,36.33,2,0,0,civicAPI
+senate,IL,,0,IL,Whitfield Harrington Jr.,American Center Party,O,67258,1.6,3,0,0,civicAPI
 senate,KS,,0,KS,Adam Hamilton,Democratic,D,561143,51.02,1,1,0,civicAPI
 senate,KS,,0,KS,Roger Marshall,Republican,R,505558,45.96,2,0,0,civicAPI
 senate,KS,,0,KS,David C Graham,Libertarian,L,33195,3.02,3,0,0,civicAPI
@@ -89,15 +89,15 @@ senate,NH,,0,NH,Chris Pappas,Democratic,D,355898,55.84,1,1,0,civicAPI
 senate,NH,,0,NH,John E. Sununu,Republican,R,268559,42.14,2,0,0,civicAPI
 senate,NH,,0,NH,Edmond Laplante,Constitution,O,12089,1.9,3,0,0,civicAPI
 senate,NH,,0,NH,Write-in,Nonpartisan,W,778,0.12,4,0,0,civicAPI
-senate,NJ,,0,NJ-2,Cory Booker,Democratic,D,1847506,62.45,1,1,0,civicAPI
-senate,NJ,,0,NJ-2,Justin Murphy,Republican,R,1030222,34.82,2,0,0,civicAPI
-senate,NJ,,0,NJ-2,Veronica Fernandez,Independent,I,49301,1.67,3,0,0,civicAPI
-senate,NJ,,0,NJ-2,Joanne Kuniansky,Socialist Workers,O,27901,0.94,4,0,0,civicAPI
-senate,NJ,,0,NJ-2,Write-in,Nonpartisan,W,3303,0.11,5,0,0,civicAPI
-senate,NJ,,0,NJ-2,Edwardo Castillo,Write-In,W,5,0.0,6,0,0,civicAPI
-senate,NJ,,0,NJ-2,Eduardo Castillo,Independent,I,3,0.0,7,0,0,civicAPI
-senate,NJ,,0,NJ-2,Dan A. Dewey,Write-In,W,3,0.0,8,0,0,civicAPI
-senate,NJ,,0,NJ-2,Jesus Christ,Write-In,W,3,0.0,9,0,0,civicAPI
+senate,NJ,,0,NJ-2,Cory Booker,Democratic,D,1854310,62.48,1,1,0,civicAPI
+senate,NJ,,0,NJ-2,Justin Murphy,Republican,R,1032568,34.79,2,0,0,civicAPI
+senate,NJ,,0,NJ-2,Veronica Fernandez,Independent,I,49499,1.67,3,0,0,civicAPI
+senate,NJ,,0,NJ-2,Joanne Kuniansky,Socialist Workers,O,28058,0.95,4,0,0,civicAPI
+senate,NJ,,0,NJ-2,Write-in,Nonpartisan,W,3322,0.11,5,0,0,civicAPI
+senate,NJ,,0,NJ-2,Edwardo Castillo,Write-In,W,6,0.0,6,0,0,civicAPI
+senate,NJ,,0,NJ-2,Jesus Christ,Write-In,W,4,0.0,7,0,0,civicAPI
+senate,NJ,,0,NJ-2,Eduardo Castillo,Independent,I,3,0.0,8,0,0,civicAPI
+senate,NJ,,0,NJ-2,Dan A. Dewey,Write-In,W,3,0.0,9,0,0,civicAPI
 senate,NJ,,0,NJ-2,Andrew Brake,Independent,I,2,0.0,10,0,0,civicAPI
 senate,NJ,,0,NJ-2,Thomas Massie,Write-In,W,2,0.0,11,0,0,civicAPI
 senate,NJ,,0,NJ-2,Free Palestine,Write-In,W,2,0.0,12,0,0,civicAPI
@@ -107,102 +107,118 @@ senate,NJ,,0,NJ-2,Hind Rajab,Write-In,W,2,0.0,15,0,0,civicAPI
 senate,NJ,,0,NJ-2,Hasan Piker,Write-In,W,2,0.0,16,0,0,civicAPI
 senate,NJ,,0,NJ-2,Chris Fields,Write-In,W,2,0.0,17,0,0,civicAPI
 senate,NJ,,0,NJ-2,None of the Above,Write-In,W,2,0.0,18,0,0,civicAPI
-senate,NJ,,0,NJ-2,Eduardo Castille,Independent,I,1,0.0,19,0,0,civicAPI
-senate,NJ,,0,NJ-2,Geoff Rickly,Independent,I,1,0.0,20,0,0,civicAPI
-senate,NJ,,0,NJ-2,Nova Piatt,Independent,I,1,0.0,21,0,0,civicAPI
-senate,NJ,,0,NJ-2,Edward Smith,Independent,I,1,0.0,22,0,0,civicAPI
-senate,NJ,,0,NJ-2,Johnathan Porter Aka Blue,Independent,I,1,0.0,23,0,0,civicAPI
-senate,NJ,,0,NJ-2,Ai Dan,Independent,I,1,0.0,24,0,0,civicAPI
-senate,NJ,,0,NJ-2,Hugh Jass,Independent,I,1,0.0,25,0,0,civicAPI
-senate,NJ,,0,NJ-2,Evan Pustizzi,Independent,I,1,0.0,26,0,0,civicAPI
-senate,NJ,,0,NJ-2,Jeremy Wilford,Independent,I,1,0.0,27,0,0,civicAPI
-senate,NJ,,0,NJ-2,Gary Stout,Write-In,W,1,0.0,28,0,0,civicAPI
-senate,NJ,,0,NJ-2,Heier,Write-In,W,1,0.0,29,0,0,civicAPI
-senate,NJ,,0,NJ-2,Someone From Out of State,Write-In,W,1,0.0,30,0,0,civicAPI
-senate,NJ,,0,NJ-2,William Hunt,Write-In,W,1,0.0,31,0,0,civicAPI
-senate,NJ,,0,NJ-2,Andy Kim,Write-In,W,1,0.0,32,0,0,civicAPI
-senate,NJ,,0,NJ-2,Bryce Harper,Write-In,W,1,0.0,33,0,0,civicAPI
-senate,NJ,,0,NJ-2,Richard tabor,Write-In,W,1,0.0,34,0,0,civicAPI
-senate,NJ,,0,NJ-2,Fred Porter,Write-In,W,1,0.0,35,0,0,civicAPI
-senate,NJ,,0,NJ-2,God,Write-In,W,1,0.0,36,0,0,civicAPI
-senate,NJ,,0,NJ-2,Loretta Kelly,Write-In,W,1,0.0,37,0,0,civicAPI
-senate,NJ,,0,NJ-2,Emily Wallace,Write-In,W,1,0.0,38,0,0,civicAPI
-senate,NJ,,0,NJ-2,optimus prime,Write-In,W,1,0.0,39,0,0,civicAPI
-senate,NJ,,0,NJ-2,Clifford P. Case,Write-In,W,1,0.0,40,0,0,civicAPI
-senate,NJ,,0,NJ-2,Jeff Van Drew,Write-In,W,1,0.0,41,0,0,civicAPI
-senate,NJ,,0,NJ-2,Scott Frost,Write-In,W,1,0.0,42,0,0,civicAPI
-senate,NJ,,0,NJ-2,Katie Bansil,Write-In,W,1,0.0,43,0,0,civicAPI
-senate,NJ,,0,NJ-2,Lucca Lima,Write-In,W,1,0.0,44,0,0,civicAPI
-senate,NJ,,0,NJ-2,Michael Clay,Write-In,W,1,0.0,45,0,0,civicAPI
-senate,NJ,,0,NJ-2,Death to Isreal,Write-In,W,1,0.0,46,0,0,civicAPI
-senate,NJ,,0,NJ-2,Frank Pallone,Write-In,W,1,0.0,47,0,0,civicAPI
-senate,NJ,,0,NJ-2,Mr. Potato Head,Write-In,W,1,0.0,48,0,0,civicAPI
-senate,NJ,,0,NJ-2,Steven P Naphy,Write-In,W,1,0.0,49,0,0,civicAPI
-senate,NJ,,0,NJ-2,Analia Mejia,Write-In,W,1,0.0,50,0,0,civicAPI
-senate,NJ,,0,NJ-2,Laura Fitzgerald,Write-In,W,1,0.0,51,0,0,civicAPI
-senate,NJ,,0,NJ-2,Dominic Serrentino,Write-In,W,1,0.0,52,0,0,civicAPI
-senate,NJ,,0,NJ-2,Undecided,Write-In,W,1,0.0,53,0,0,civicAPI
-senate,NJ,,0,NJ-2,Joseph D. Quinn II,Write-In,W,1,0.0,54,0,0,civicAPI
-senate,NJ,,0,NJ-2,John Garza,Write-In,W,1,0.0,55,0,0,civicAPI
-senate,NJ,,0,NJ-2,Nurul Mukul,Write-In,W,1,0.0,56,0,0,civicAPI
-senate,NJ,,0,NJ-2,Leah O'Leary,Write-In,W,1,0.0,57,0,0,civicAPI
-senate,NJ,,0,NJ-2,Ayishat Akanbi,Write-In,W,1,0.0,58,0,0,civicAPI
-senate,NJ,,0,NJ-2,William Curtin,Write-In,W,1,0.0,59,0,0,civicAPI
-senate,NJ,,0,NJ-2,Tellirico,Write-In,W,1,0.0,60,0,0,civicAPI
-senate,NJ,,0,NJ-2,Tessa Tabor,Write-In,W,1,0.0,61,0,0,civicAPI
-senate,NJ,,0,NJ-2,Mario Walker,Write-In,W,1,0.0,62,0,0,civicAPI
-senate,NJ,,0,NJ-2,Carole Melman,Write-In,W,1,0.0,63,0,0,civicAPI
-senate,NJ,,0,NJ-2,Patricia Niculescu,Write-In,W,1,0.0,64,0,0,civicAPI
-senate,NJ,,0,NJ-2,Mom,Write-In,W,1,0.0,65,0,0,civicAPI
-senate,NJ,,0,NJ-2,Seamus O'toole,Write-In,W,1,0.0,66,0,0,civicAPI
-senate,NJ,,0,NJ-2,Nancy Berkley,Write-In,W,1,0.0,67,0,0,civicAPI
-senate,NJ,,0,NJ-2,Troy Green,Write-In,W,1,0.0,68,0,0,civicAPI
-senate,NJ,,0,NJ-2,Robert Bockius,Write-In,W,1,0.0,69,0,0,civicAPI
-senate,NJ,,0,NJ-2,Yeat,Write-In,W,1,0.0,70,0,0,civicAPI
-senate,NJ,,0,NJ-2,Elmo,Write-In,W,1,0.0,71,0,0,civicAPI
-senate,NJ,,0,NJ-2,Mickey Mouse,Write-In,W,1,0.0,72,0,0,civicAPI
-senate,NJ,,0,NJ-2,Uncommitted,Write-In,W,1,0.0,73,0,0,civicAPI
-senate,NJ,,0,NJ-2,Melissa Knezick,Write-In,W,1,0.0,74,0,0,civicAPI
-senate,NJ,,0,NJ-2,Adam Hamway,Write-In,W,1,0.0,75,0,0,civicAPI
-senate,NJ,,0,NJ-2,Steven Knezick,Write-In,W,1,0.0,76,0,0,civicAPI
-senate,NJ,,0,NJ-2,Tom Knezick,Write-In,W,1,0.0,77,0,0,civicAPI
-senate,NJ,,0,NJ-2,No One,Write-In,W,1,0.0,78,0,0,civicAPI
-senate,NJ,,0,NJ-2,They All Suck,Write-In,W,1,0.0,79,0,0,civicAPI
-senate,NJ,,0,NJ-2,Ian Grimes,Write-In,W,1,0.0,80,0,0,civicAPI
-senate,NJ,,0,NJ-2,Steven Trembly,Write-In,W,1,0.0,81,0,0,civicAPI
-senate,NJ,,0,NJ-2,Terry Sadie and Fatty,Write-In,W,1,0.0,82,0,0,civicAPI
-senate,NJ,,0,NJ-2,Murphy,Write-In,W,1,0.0,83,0,0,civicAPI
-senate,NJ,,0,NJ-2,Abdul El-Sayed,Write-In,W,1,0.0,84,0,0,civicAPI
-senate,NJ,,0,NJ-2,Zohran Mamdani,Write-In,W,1,0.0,85,0,0,civicAPI
-senate,NJ,,0,NJ-2,Bruno Pereira,Write-In,W,1,0.0,86,0,0,civicAPI
-senate,NJ,,0,NJ-2,Abdul Malik Al Houthi,Write-In,W,1,0.0,87,0,0,civicAPI
-senate,NJ,,0,NJ-2,Mitchell Brown,Write-In,W,1,0.0,88,0,0,civicAPI
-senate,NJ,,0,NJ-2,Daryl Murray,Write-In,W,1,0.0,89,0,0,civicAPI
-senate,NJ,,0,NJ-2,Tom Hammar,Write-In,W,1,0.0,90,0,0,civicAPI
-senate,NJ,,0,NJ-2,Ric Flair,Write-In,W,1,0.0,91,0,0,civicAPI
-senate,NJ,,0,NJ-2,Paulie Gualtieri,Write-In,W,1,0.0,92,0,0,civicAPI
-senate,NJ,,0,NJ-2,Impeach Trump,Write-In,W,1,0.0,93,0,0,civicAPI
-senate,NJ,,0,NJ-2,Tom Mitchell,Write-In,W,1,0.0,94,0,0,civicAPI
-senate,NJ,,0,NJ-2,Sean Combs,Write-In,W,1,0.0,95,0,0,civicAPI
-senate,NJ,,0,NJ-2,Robert Spicer,Write-In,W,1,0.0,96,0,0,civicAPI
-senate,NJ,,0,NJ-2,Richard I. Carpenter,Write-In,W,1,0.0,97,0,0,civicAPI
-senate,NJ,,0,NJ-2,Murtaza,Write-In,W,1,0.0,98,0,0,civicAPI
-senate,NJ,,0,NJ-2,Aneka Miller,Write-In,W,1,0.0,99,0,0,civicAPI
-senate,NJ,,0,NJ-2,Steve Rinella,Write-In,W,1,0.0,100,0,0,civicAPI
-senate,NJ,,0,NJ-2,Ab E SD,Write-In,W,1,0.0,101,0,0,civicAPI
-senate,NJ,,0,NJ-2,Chingchien Wu,Write-In,W,1,0.0,102,0,0,civicAPI
-senate,NJ,,0,NJ-2,Toto Brown,Write-In,W,1,0.0,103,0,0,civicAPI
-senate,NJ,,0,NJ-2,Adolf H,Write-In,W,1,0.0,104,0,0,civicAPI
-senate,NJ,,0,NJ-2,Tineen Howard,Write-In,W,1,0.0,105,0,0,civicAPI
-senate,NJ,,0,NJ-2,Khamani Wade,Write-In,W,1,0.0,106,0,0,civicAPI
-senate,NJ,,0,NJ-2,William L Odom Jr.,Write-In,W,1,0.0,107,0,0,civicAPI
-senate,NJ,,0,NJ-2,Rush Holt,Write-In,W,1,0.0,108,0,0,civicAPI
-senate,NJ,,0,NJ-2,John James Baker,Write-In,W,1,0.0,109,0,0,civicAPI
-senate,NJ,,0,NJ-2,Vic Kaplan,Write-In,W,1,0.0,110,0,0,civicAPI
-senate,NJ,,0,NJ-2,Adam Moses,Write-In,W,1,0.0,111,0,0,civicAPI
-senate,NJ,,0,NJ-2,Noah Kahan,Write-In,W,1,0.0,112,0,0,civicAPI
-senate,NJ,,0,NJ-2,David Smith,Write-In,W,1,0.0,113,0,0,civicAPI
-senate,NJ,,0,NJ-2,Shawn Riggins,Independent,I,0,0.0,114,0,0,civicAPI
+senate,NJ,,0,NJ-2,David Smith,Write-In,W,2,0.0,19,0,0,civicAPI
+senate,NJ,,0,NJ-2,Eduardo Castille,Independent,I,1,0.0,20,0,0,civicAPI
+senate,NJ,,0,NJ-2,Geoff Rickly,Independent,I,1,0.0,21,0,0,civicAPI
+senate,NJ,,0,NJ-2,Nova Piatt,Independent,I,1,0.0,22,0,0,civicAPI
+senate,NJ,,0,NJ-2,Edward Smith,Independent,I,1,0.0,23,0,0,civicAPI
+senate,NJ,,0,NJ-2,Johnathan Porter Aka Blue,Independent,I,1,0.0,24,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ai Dan,Independent,I,1,0.0,25,0,0,civicAPI
+senate,NJ,,0,NJ-2,Hugh Jass,Independent,I,1,0.0,26,0,0,civicAPI
+senate,NJ,,0,NJ-2,Evan Pustizzi,Independent,I,1,0.0,27,0,0,civicAPI
+senate,NJ,,0,NJ-2,Jeremy Wilford,Independent,I,1,0.0,28,0,0,civicAPI
+senate,NJ,,0,NJ-2,Gary Stout,Write-In,W,1,0.0,29,0,0,civicAPI
+senate,NJ,,0,NJ-2,Heier,Write-In,W,1,0.0,30,0,0,civicAPI
+senate,NJ,,0,NJ-2,Someone From Out of State,Write-In,W,1,0.0,31,0,0,civicAPI
+senate,NJ,,0,NJ-2,William Hunt,Write-In,W,1,0.0,32,0,0,civicAPI
+senate,NJ,,0,NJ-2,Andy Kim,Write-In,W,1,0.0,33,0,0,civicAPI
+senate,NJ,,0,NJ-2,Bryce Harper,Write-In,W,1,0.0,34,0,0,civicAPI
+senate,NJ,,0,NJ-2,Richard tabor,Write-In,W,1,0.0,35,0,0,civicAPI
+senate,NJ,,0,NJ-2,Fred Porter,Write-In,W,1,0.0,36,0,0,civicAPI
+senate,NJ,,0,NJ-2,God,Write-In,W,1,0.0,37,0,0,civicAPI
+senate,NJ,,0,NJ-2,Loretta Kelly,Write-In,W,1,0.0,38,0,0,civicAPI
+senate,NJ,,0,NJ-2,Emily Wallace,Write-In,W,1,0.0,39,0,0,civicAPI
+senate,NJ,,0,NJ-2,optimus prime,Write-In,W,1,0.0,40,0,0,civicAPI
+senate,NJ,,0,NJ-2,Clifford P. Case,Write-In,W,1,0.0,41,0,0,civicAPI
+senate,NJ,,0,NJ-2,Jeff Van Drew,Write-In,W,1,0.0,42,0,0,civicAPI
+senate,NJ,,0,NJ-2,Scott Frost,Write-In,W,1,0.0,43,0,0,civicAPI
+senate,NJ,,0,NJ-2,Katie Bansil,Write-In,W,1,0.0,44,0,0,civicAPI
+senate,NJ,,0,NJ-2,Lucca Lima,Write-In,W,1,0.0,45,0,0,civicAPI
+senate,NJ,,0,NJ-2,Michael Clay,Write-In,W,1,0.0,46,0,0,civicAPI
+senate,NJ,,0,NJ-2,Death to Isreal,Write-In,W,1,0.0,47,0,0,civicAPI
+senate,NJ,,0,NJ-2,Frank Pallone,Write-In,W,1,0.0,48,0,0,civicAPI
+senate,NJ,,0,NJ-2,Mr. Potato Head,Write-In,W,1,0.0,49,0,0,civicAPI
+senate,NJ,,0,NJ-2,Steven P Naphy,Write-In,W,1,0.0,50,0,0,civicAPI
+senate,NJ,,0,NJ-2,Analia Mejia,Write-In,W,1,0.0,51,0,0,civicAPI
+senate,NJ,,0,NJ-2,Laura Fitzgerald,Write-In,W,1,0.0,52,0,0,civicAPI
+senate,NJ,,0,NJ-2,Dominic Serrentino,Write-In,W,1,0.0,53,0,0,civicAPI
+senate,NJ,,0,NJ-2,Undecided,Write-In,W,1,0.0,54,0,0,civicAPI
+senate,NJ,,0,NJ-2,Joseph D. Quinn II,Write-In,W,1,0.0,55,0,0,civicAPI
+senate,NJ,,0,NJ-2,John Garza,Write-In,W,1,0.0,56,0,0,civicAPI
+senate,NJ,,0,NJ-2,Nurul Mukul,Write-In,W,1,0.0,57,0,0,civicAPI
+senate,NJ,,0,NJ-2,Leah O'Leary,Write-In,W,1,0.0,58,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ayishat Akanbi,Write-In,W,1,0.0,59,0,0,civicAPI
+senate,NJ,,0,NJ-2,William Curtin,Write-In,W,1,0.0,60,0,0,civicAPI
+senate,NJ,,0,NJ-2,Tellirico,Write-In,W,1,0.0,61,0,0,civicAPI
+senate,NJ,,0,NJ-2,Tessa Tabor,Write-In,W,1,0.0,62,0,0,civicAPI
+senate,NJ,,0,NJ-2,Mario Walker,Write-In,W,1,0.0,63,0,0,civicAPI
+senate,NJ,,0,NJ-2,Carole Melman,Write-In,W,1,0.0,64,0,0,civicAPI
+senate,NJ,,0,NJ-2,Patricia Niculescu,Write-In,W,1,0.0,65,0,0,civicAPI
+senate,NJ,,0,NJ-2,Mom,Write-In,W,1,0.0,66,0,0,civicAPI
+senate,NJ,,0,NJ-2,Seamus O'toole,Write-In,W,1,0.0,67,0,0,civicAPI
+senate,NJ,,0,NJ-2,Nancy Berkley,Write-In,W,1,0.0,68,0,0,civicAPI
+senate,NJ,,0,NJ-2,Troy Green,Write-In,W,1,0.0,69,0,0,civicAPI
+senate,NJ,,0,NJ-2,Robert Bockius,Write-In,W,1,0.0,70,0,0,civicAPI
+senate,NJ,,0,NJ-2,Yeat,Write-In,W,1,0.0,71,0,0,civicAPI
+senate,NJ,,0,NJ-2,Elmo,Write-In,W,1,0.0,72,0,0,civicAPI
+senate,NJ,,0,NJ-2,Mickey Mouse,Write-In,W,1,0.0,73,0,0,civicAPI
+senate,NJ,,0,NJ-2,Uncommitted,Write-In,W,1,0.0,74,0,0,civicAPI
+senate,NJ,,0,NJ-2,Melissa Knezick,Write-In,W,1,0.0,75,0,0,civicAPI
+senate,NJ,,0,NJ-2,Adam Hamway,Write-In,W,1,0.0,76,0,0,civicAPI
+senate,NJ,,0,NJ-2,Steven Knezick,Write-In,W,1,0.0,77,0,0,civicAPI
+senate,NJ,,0,NJ-2,Tom Knezick,Write-In,W,1,0.0,78,0,0,civicAPI
+senate,NJ,,0,NJ-2,No One,Write-In,W,1,0.0,79,0,0,civicAPI
+senate,NJ,,0,NJ-2,They All Suck,Write-In,W,1,0.0,80,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ian Grimes,Write-In,W,1,0.0,81,0,0,civicAPI
+senate,NJ,,0,NJ-2,Steven Trembly,Write-In,W,1,0.0,82,0,0,civicAPI
+senate,NJ,,0,NJ-2,Terry Sadie and Fatty,Write-In,W,1,0.0,83,0,0,civicAPI
+senate,NJ,,0,NJ-2,Murphy,Write-In,W,1,0.0,84,0,0,civicAPI
+senate,NJ,,0,NJ-2,Abdul El-Sayed,Write-In,W,1,0.0,85,0,0,civicAPI
+senate,NJ,,0,NJ-2,Zohran Mamdani,Write-In,W,1,0.0,86,0,0,civicAPI
+senate,NJ,,0,NJ-2,Bruno Pereira,Write-In,W,1,0.0,87,0,0,civicAPI
+senate,NJ,,0,NJ-2,Abdul Malik Al Houthi,Write-In,W,1,0.0,88,0,0,civicAPI
+senate,NJ,,0,NJ-2,Mitchell Brown,Write-In,W,1,0.0,89,0,0,civicAPI
+senate,NJ,,0,NJ-2,Daryl Murray,Write-In,W,1,0.0,90,0,0,civicAPI
+senate,NJ,,0,NJ-2,Tom Hammar,Write-In,W,1,0.0,91,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ric Flair,Write-In,W,1,0.0,92,0,0,civicAPI
+senate,NJ,,0,NJ-2,Paulie Gualtieri,Write-In,W,1,0.0,93,0,0,civicAPI
+senate,NJ,,0,NJ-2,Impeach Trump,Write-In,W,1,0.0,94,0,0,civicAPI
+senate,NJ,,0,NJ-2,Tom Mitchell,Write-In,W,1,0.0,95,0,0,civicAPI
+senate,NJ,,0,NJ-2,Sean Combs,Write-In,W,1,0.0,96,0,0,civicAPI
+senate,NJ,,0,NJ-2,Robert Spicer,Write-In,W,1,0.0,97,0,0,civicAPI
+senate,NJ,,0,NJ-2,Richard I. Carpenter,Write-In,W,1,0.0,98,0,0,civicAPI
+senate,NJ,,0,NJ-2,Murtaza,Write-In,W,1,0.0,99,0,0,civicAPI
+senate,NJ,,0,NJ-2,Aneka Miller,Write-In,W,1,0.0,100,0,0,civicAPI
+senate,NJ,,0,NJ-2,Steve Rinella,Write-In,W,1,0.0,101,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ab E SD,Write-In,W,1,0.0,102,0,0,civicAPI
+senate,NJ,,0,NJ-2,Chingchien Wu,Write-In,W,1,0.0,103,0,0,civicAPI
+senate,NJ,,0,NJ-2,Toto Brown,Write-In,W,1,0.0,104,0,0,civicAPI
+senate,NJ,,0,NJ-2,Adolf H,Write-In,W,1,0.0,105,0,0,civicAPI
+senate,NJ,,0,NJ-2,Tineen Howard,Write-In,W,1,0.0,106,0,0,civicAPI
+senate,NJ,,0,NJ-2,Khamani Wade,Write-In,W,1,0.0,107,0,0,civicAPI
+senate,NJ,,0,NJ-2,William L Odom Jr.,Write-In,W,1,0.0,108,0,0,civicAPI
+senate,NJ,,0,NJ-2,Rush Holt,Write-In,W,1,0.0,109,0,0,civicAPI
+senate,NJ,,0,NJ-2,John James Baker,Write-In,W,1,0.0,110,0,0,civicAPI
+senate,NJ,,0,NJ-2,Vic Kaplan,Write-In,W,1,0.0,111,0,0,civicAPI
+senate,NJ,,0,NJ-2,Adam Moses,Write-In,W,1,0.0,112,0,0,civicAPI
+senate,NJ,,0,NJ-2,Noah Kahan,Write-In,W,1,0.0,113,0,0,civicAPI
+senate,NJ,,0,NJ-2,Homer Simpson,Write-In,W,1,0.0,114,0,0,civicAPI
+senate,NJ,,0,NJ-2,Kara Webster,Write-In,W,1,0.0,115,0,0,civicAPI
+senate,NJ,,0,NJ-2,Sarah Fawcett-Lee,Write-In,W,1,0.0,116,0,0,civicAPI
+senate,NJ,,0,NJ-2,Quincy Magee,Write-In,W,1,0.0,117,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ron Paul,Write-In,W,1,0.0,118,0,0,civicAPI
+senate,NJ,,0,NJ-2,Patrick Doyle,Write-In,W,1,0.0,119,0,0,civicAPI
+senate,NJ,,0,NJ-2,Lawrence Hamm,Write-In,W,1,0.0,120,0,0,civicAPI
+senate,NJ,,0,NJ-2,Paxton Couchoud,Write-In,W,1,0.0,121,0,0,civicAPI
+senate,NJ,,0,NJ-2,Enoch Streeter,Write-In,W,1,0.0,122,0,0,civicAPI
+senate,NJ,,0,NJ-2,Matthew Bledsoe,Write-In,W,1,0.0,123,0,0,civicAPI
+senate,NJ,,0,NJ-2,Troy Singleton,Write-In,W,1,0.0,124,0,0,civicAPI
+senate,NJ,,0,NJ-2,Ben D. Ziobec,Write-In,W,1,0.0,125,0,0,civicAPI
+senate,NJ,,0,NJ-2,Aminat Jenrola Olajide,Write-In,W,1,0.0,126,0,0,civicAPI
+senate,NJ,,0,NJ-2,Joe Augustyn,Write-In,W,1,0.0,127,0,0,civicAPI
+senate,NJ,,0,NJ-2,Donald Duck,Write-In,W,1,0.0,128,0,0,civicAPI
+senate,NJ,,0,NJ-2,Murphy Conoway Jr,Write-In,W,1,0.0,129,0,0,civicAPI
+senate,NJ,,0,NJ-2,Shawn Riggins,Independent,I,0,0.0,130,0,0,civicAPI
 senate,NM,,0,NM-2,Ben Ray Luján,Democratic,D,459052,63.27,1,1,0,civicAPI
 senate,NM,,0,NM-2,Larry Marker,Republican,R,266524,36.73,2,0,0,civicAPI
 senate,OH,,1,OH-2,Sherrod Brown,Democratic,D,2301042,50.0,1,1,0,civicAPI
@@ -278,8 +294,8 @@ governor,AZ,,0,AZ,Unofficial Write-in,,W,1728,0.07,5,,,Arizona Secretary of Stat
 governor,AZ,,0,AZ,Alice Novoa,Republican,R,18,0.0,6,0,0,Arizona Secretary of State
 governor,AZ,,0,AZ,Gertritrude Gonzalez,Republican,R,11,0.0,7,0,0,Arizona Secretary of State
 governor,AZ,,0,AZ,Unassigned Write-in,,W,9,0.0,8,,,Arizona Secretary of State
-governor,CA,,0,CA,Xavier Becerra,Democratic,D,8714981,65.65,1,1,0,civicAPI
-governor,CA,,0,CA,Steve Hilton,Republican,R,4560914,34.35,2,0,0,civicAPI
+governor,CA,,0,CA,Xavier Becerra,Democratic,D,8715994,65.64,1,1,0,civicAPI
+governor,CA,,0,CA,Steve Hilton,Republican,R,4561547,34.36,2,0,0,civicAPI
 governor,CO,,0,CO,Phil Weiser,Democratic,D,1639123,61.13,1,1,0,civicAPI
 governor,CO,,0,CO,Victor Marx,Republican,R,890478,33.21,2,0,0,civicAPI
 governor,CO,,0,CO,Greg Lopez,Independent,I,74134,2.76,3,0,0,civicAPI
@@ -315,13 +331,13 @@ governor,ID,,0,ID,Paul Sand,Libertarian,L,11568,1.61,4,0,0,Idaho Secretary of St
 governor,ID,,0,ID,Pro-Life,Constitution,O,9508,1.32,5,0,0,Idaho Secretary of State
 governor,ID,,0,ID,Uncertified write-ins,,W,1645,0.23,6,,,Idaho Secretary of State
 governor,ID,,0,ID,Jacob Burnett (Write-in),Independent,W,145,0.02,7,,,Idaho Secretary of State
-governor,IL,,0,IL,JB Pritzker,Democratic,D,2571962,60.83,1,1,0,civicAPI
-governor,IL,,0,IL,Darren Bailey,Republican,R,1513865,35.81,2,0,0,civicAPI
-governor,IL,,0,IL,Collin Corbett,Independent,I,142159,3.36,3,0,0,civicAPI
-governor,IL,,0,IL,Mike Vick,Nonpartisan,I,32,0.0,4,0,0,civicAPI
-governor,IL,,0,IL,Griselda Romero,Nonpartisan,I,15,0.0,5,0,0,civicAPI
+governor,IL,,0,IL,JB Pritzker,Democratic,D,2572127,60.83,1,1,0,civicAPI
+governor,IL,,0,IL,Darren Bailey,Republican,R,1513969,35.81,2,0,0,civicAPI
+governor,IL,,0,IL,Collin Corbett,Independent,I,142179,3.36,3,0,0,civicAPI
+governor,IL,,0,IL,Mike Vick,Nonpartisan,I,39,0.0,4,0,0,civicAPI
+governor,IL,,0,IL,Griselda Romero,Nonpartisan,I,23,0.0,5,0,0,civicAPI
 governor,IL,,0,IL,Mike Vick(Gary Pierce,Nonpartisan,I,14,0.0,6,0,0,civicAPI
-governor,IL,,0,IL,Patricia L. Tillman,Nonpartisan,I,6,0.0,7,0,0,civicAPI
+governor,IL,,0,IL,Patricia L. Tillman,Nonpartisan,I,7,0.0,7,0,0,civicAPI
 governor,IL,,0,IL,Misty Metroz,Nonpartisan,I,3,0.0,8,0,0,civicAPI
 governor,IL,,0,IL,Eyde Arndell,Nonpartisan,I,0,0.0,9,0,0,civicAPI
 governor,IL,,0,IL,Rafael Varela,Nonpartisan,I,0,0.0,10,0,0,civicAPI
@@ -381,8 +397,8 @@ governor,NV,,0,NV,Aaron Ford,Democratic,D,563151,51.59,1,1,0,civicAPI
 governor,NV,,0,NV,Joe Lombardo,Republican,R,480595,44.03,2,0,0,civicAPI
 governor,NV,,0,NV,Danielle Ford,No Political Party,O,31765,2.91,3,0,0,civicAPI
 governor,NV,,0,NV,None of These Candidates,,I,16070,1.47,4,0,0,civicAPI
-governor,NY,,0,NY,Kathy Hochul,Democratic,D,3637914,59.86,1,1,0,civicAPI
-governor,NY,,0,NY,Bruce Blakeman,Republican,R,2426500,39.93,2,0,0,civicAPI
+governor,NY,,0,NY,Kathy Hochul,Democratic,D,3638027,59.86,1,1,0,civicAPI
+governor,NY,,0,NY,Bruce Blakeman,Republican,R,2426620,39.93,2,0,0,civicAPI
 governor,NY,,0,NY,Write-in,Nonpartisan,W,12826,0.21,3,0,0,civicAPI
 governor,OH,,0,OH,Amy Acton,Democratic,D,2404178,52.3,1,1,0,civicAPI
 governor,OH,,0,OH,Vivek Ramaswamy,Republican,R,2039730,44.37,2,0,0,civicAPI
@@ -581,12 +597,12 @@ house,CA,21,0,0621,Jim Costa,Democratic,D,109833,65.02,1,1,0,civicAPI
 house,CA,21,0,0621,Kyle Kirkland,Republican,R,59081,34.98,2,0,0,civicAPI
 house,CA,22,0,0622,Randy Villegas,Democratic,D,103271,68.15,1,1,0,civicAPI
 house,CA,22,0,0622,David Valadao,Republican,R,48267,31.85,2,0,0,civicAPI
-house,CA,23,0,0623,Jay Obernolte,Republican,R,110121,50.69,1,1,0,civicAPI
-house,CA,23,0,0623,Tessa Lynn Hodge,Democratic,D,107135,49.31,2,0,0,civicAPI
+house,CA,23,0,0623,Jay Obernolte,Republican,R,110124,50.69,1,1,0,civicAPI
+house,CA,23,0,0623,Tessa Lynn Hodge,Democratic,D,107137,49.31,2,0,0,civicAPI
 house,CA,24,0,0624,Salud Carbajal,Democratic,D,196589,66.4,1,1,0,civicAPI
 house,CA,24,0,0624,Bob Smith,Republican,R,99488,33.6,2,0,0,civicAPI
-house,CA,25,0,0625,Raul Ruiz,Democratic,D,145614,66.02,1,1,0,civicAPI
-house,CA,25,0,0625,Joe Males,Republican,R,74936,33.98,2,0,0,civicAPI
+house,CA,25,0,0625,Raul Ruiz,Democratic,D,145941,66.03,1,1,0,civicAPI
+house,CA,25,0,0625,Joe Males,Republican,R,75067,33.97,2,0,0,civicAPI
 house,CA,26,0,0626,Jacqui Irwin,Democratic,D,178231,63.46,1,1,0,civicAPI
 house,CA,26,0,0626,Sam Gallucci,Republican,R,102613,36.54,2,0,0,civicAPI
 house,CA,27,0,0627,George Whitesides,Democratic,D,149213,64.22,1,1,0,civicAPI
@@ -601,22 +617,22 @@ house,CA,31,0,0631,Gil Cisneros,Democratic,D,158613,66.42,1,1,0,civicAPI
 house,CA,31,0,0631,Eric Ching,Republican,R,80204,33.58,2,0,0,civicAPI
 house,CA,32,0,0632,Brad Sherman,Democratic,D,185341,67.13,1,1,0,civicAPI
 house,CA,32,0,0632,Larry Thompson,Republican,R,90770,32.87,2,0,0,civicAPI
-house,CA,33,0,0633,Pete Aguilar,Democratic,D,141476,69.05,1,1,0,civicAPI
-house,CA,33,0,0633,Stephanie Vargas,Republican,R,63416,30.95,2,0,0,civicAPI
+house,CA,33,0,0633,Pete Aguilar,Democratic,D,141480,69.05,1,1,0,civicAPI
+house,CA,33,0,0633,Stephanie Vargas,Republican,R,63418,30.95,2,0,0,civicAPI
 house,CA,34,0,0634,Angela Gonzales-Torres,Democratic,D,108765,62.2,1,1,0,civicAPI
 house,CA,34,0,0634,Jimmy Gomez,Democratic,D,66091,37.8,2,0,0,civicAPI
-house,CA,35,0,0635,Norma Torres,Democratic,D,141581,66.9,1,1,0,civicAPI
-house,CA,35,0,0635,Mike Cargile,Republican,R,70037,33.1,2,0,0,civicAPI
+house,CA,35,0,0635,Norma Torres,Democratic,D,141720,66.9,1,1,0,civicAPI
+house,CA,35,0,0635,Mike Cargile,Republican,R,70129,33.1,2,0,0,civicAPI
 house,CA,36,0,0636,Ted Lieu,Democratic,D,224204,73.03,1,1,0,civicAPI
 house,CA,36,0,0636,Houston Brignano,Republican,R,82778,26.97,2,0,0,civicAPI
 house,CA,37,0,0637,Sydney Kamlager-Dove,Democratic,D,111654,60.79,1,1,0,civicAPI
 house,CA,37,0,0637,Samantha Mota,Democratic,D,72027,39.21,2,0,0,civicAPI
 house,CA,38,0,0638,Hilda Solis,Democratic,D,145517,67.46,1,1,0,civicAPI
 house,CA,38,0,0638,Pedro Antonio Casas,Republican,R,70195,32.54,2,0,0,civicAPI
-house,CA,39,0,0639,Mark Takano,Democratic,D,135694,69.28,1,1,0,civicAPI
-house,CA,39,0,0639,Steve Manos,Republican,R,60164,30.72,2,0,0,civicAPI
-house,CA,40,0,0640,Ken Calvert,Republican,R,131635,52.51,1,1,0,civicAPI
-house,CA,40,0,0640,Young Kim,Republican,R,119073,47.49,2,0,0,civicAPI
+house,CA,39,0,0639,Mark Takano,Democratic,D,135939,69.3,1,1,0,civicAPI
+house,CA,39,0,0639,Steve Manos,Republican,R,60232,30.7,2,0,0,civicAPI
+house,CA,40,0,0640,Ken Calvert,Republican,R,131834,52.5,1,1,0,civicAPI
+house,CA,40,0,0640,Young Kim,Republican,R,119261,47.5,2,0,0,civicAPI
 house,CA,41,0,0641,Linda Sánchez,Democratic,D,171316,67.59,1,1,0,civicAPI
 house,CA,41,0,0641,Mitch Clemmons,Republican,R,82141,32.41,2,0,0,civicAPI
 house,CA,42,0,0642,Robert Garcia,Democratic,D,175529,61.96,1,1,0,civicAPI
@@ -631,8 +647,8 @@ house,CA,46,0,0646,Lou Correa,Democratic,D,139756,71.55,1,1,0,civicAPI
 house,CA,46,0,0646,David Pan,Republican,R,55564,28.45,2,0,0,civicAPI
 house,CA,47,0,0647,Dave Min,Democratic,D,167158,58.59,1,1,0,civicAPI
 house,CA,47,0,0647,Jenny Le Roux,Republican,R,118161,41.41,2,0,0,civicAPI
-house,CA,48,0,0648,Marni von Wilpert,Democratic,D,167506,59.82,1,1,0,civicAPI
-house,CA,48,0,0648,Jim Desmond,Republican,R,112495,40.18,2,0,0,civicAPI
+house,CA,48,0,0648,Marni von Wilpert,Democratic,D,167591,59.82,1,1,0,civicAPI
+house,CA,48,0,0648,Jim Desmond,Republican,R,112560,40.18,2,0,0,civicAPI
 house,CA,49,0,0649,Mike Levin,Democratic,D,193261,59.59,1,1,0,civicAPI
 house,CA,49,0,0649,Armen Kurdian,Republican,R,131055,40.41,2,0,0,civicAPI
 house,CA,50,0,0650,Scott Peters,Democratic,D,198428,63.79,1,1,0,civicAPI
@@ -838,10 +854,11 @@ house,ID,2,0,1602,Ellie Gilbreath,Democratic,D,133156,40.27,2,0,0,Idaho Secretar
 house,ID,2,0,1602,Tripp Hutchinson,Independent,I,11641,3.52,3,0,0,Idaho Secretary of State
 house,ID,2,0,1602,Emre Houser,Independent,I,7857,2.38,4,0,0,Idaho Secretary of State
 house,ID,2,0,1602,Will Johanson,Libertarian,L,7145,2.16,5,0,0,Idaho Secretary of State
-house,IL,1,0,1701,Jonathan Jackson,Democratic,D,176829,72.54,1,1,0,civicAPI
-house,IL,1,0,1701,Christian Maxwell,Republican,R,66948,27.46,2,0,0,civicAPI
-house,IL,2,0,1702,Donna Miller,Democratic,D,160917,73.69,1,1,0,civicAPI
-house,IL,2,0,1702,Mike Noack,Republican,R,57468,26.31,2,0,0,civicAPI
+house,IL,1,0,1701,Jonathan Jackson,Democratic,D,176852,72.54,1,1,0,civicAPI
+house,IL,1,0,1701,Christian Maxwell,Republican,R,66964,27.46,2,0,0,civicAPI
+house,IL,2,0,1702,Donna Miller,Democratic,D,160955,73.68,1,1,0,civicAPI
+house,IL,2,0,1702,Mike Noack,Republican,R,57484,26.31,2,0,0,civicAPI
+house,IL,2,0,1702,Ashley A. Banks,Nonpartisan,I,7,0.0,3,0,0,civicAPI
 house,IL,3,0,1703,Delia Ramirez,Democratic,D,158936,77.56,1,1,0,civicAPI
 house,IL,3,0,1703,Angel Oakley,Republican,R,45981,22.44,2,0,0,civicAPI
 house,IL,4,0,1704,Patty Garcia,Democratic,D,117273,71.39,1,1,0,civicAPI
@@ -862,17 +879,17 @@ house,IL,10,0,1710,Brad Schneider,Democratic,D,171351,70.45,1,1,0,civicAPI
 house,IL,10,0,1710,Carl Lambrecht,Republican,R,71862,29.55,2,0,0,civicAPI
 house,IL,11,0,1711,Bill Foster,Democratic,D,174344,64.48,1,1,0,civicAPI
 house,IL,11,0,1711,Jeffrey Walter,Republican,R,96060,35.52,2,0,0,civicAPI
-house,IL,12,0,1712,Mike Bost,Republican,R,196089,69.49,1,1,0,civicAPI
-house,IL,12,0,1712,Julie Fortier,Democratic,D,86092,30.51,2,0,0,civicAPI
-house,IL,13,0,1713,Nikki Budzinski,Democratic,D,158289,62.71,1,1,0,civicAPI
-house,IL,13,0,1713,Jeff Wilson,Republican,R,94115,37.29,2,0,0,civicAPI
+house,IL,12,0,1712,Mike Bost,Republican,R,196095,69.49,1,1,0,civicAPI
+house,IL,12,0,1712,Julie Fortier,Democratic,D,86102,30.51,2,0,0,civicAPI
+house,IL,13,0,1713,Nikki Budzinski,Democratic,D,158384,62.71,1,1,0,civicAPI
+house,IL,13,0,1713,Jeff Wilson,Republican,R,94164,37.29,2,0,0,civicAPI
 house,IL,14,0,1714,Lauren Underwood,Democratic,D,156810,62.87,1,1,0,civicAPI
 house,IL,14,0,1714,James Marter,Republican,R,92609,37.13,2,0,0,civicAPI
-house,IL,15,0,1715,Mary Miller,Republican,R,192939,66.87,1,1,0,civicAPI
-house,IL,15,0,1715,Jennifer Todd,Democratic,D,95606,33.13,2,0,0,civicAPI
-house,IL,16,0,1716,Darin LaHood,Republican,R,173911,58.69,1,1,0,civicAPI
-house,IL,16,0,1716,Paul Nolley,Democratic,D,122396,41.31,2,0,0,civicAPI
-house,IL,17,0,1717,Eric Sorensen,Democratic,D,142225,60.18,1,1,0,civicAPI
+house,IL,15,0,1715,Mary Miller,Republican,R,192950,66.86,1,1,0,civicAPI
+house,IL,15,0,1715,Jennifer Todd,Democratic,D,95622,33.14,2,0,0,civicAPI
+house,IL,16,0,1716,Darin LaHood,Republican,R,173913,58.69,1,1,0,civicAPI
+house,IL,16,0,1716,Paul Nolley,Democratic,D,122399,41.31,2,0,0,civicAPI
+house,IL,17,0,1717,Eric Sorensen,Democratic,D,142229,60.18,1,1,0,civicAPI
 house,IL,17,0,1717,Dillan Vancil,Republican,R,94124,39.82,2,0,0,civicAPI
 house,IL,17,0,1717,Brad Ahrens,Nonpartisan,I,1,0.0,3,0,0,civicAPI
 house,IN,1,0,1801,Frank Mrvan,Democratic,D,142270,63.01,1,1,0,civicAPI
@@ -1235,8 +1252,8 @@ house,NH,2,0,3302,Maggie Goodlander,Democratic,D,187657,59.01,1,1,0,civicAPI
 house,NH,2,0,3302,Lily Tang Williams,Republican,R,122645,38.57,2,0,0,civicAPI
 house,NH,2,0,3302,Robbie Mahrou,Independent,I,7478,2.35,3,0,0,civicAPI
 house,NH,2,0,3302,Write-in,Nonpartisan,W,234,0.07,4,0,0,civicAPI
-house,NJ,1,0,3401,Donald Norcross,Democratic,D,185335,70.53,1,1,0,civicAPI
-house,NJ,1,0,3401,Damon Galdo,Republican,R,77154,29.36,2,0,0,civicAPI
+house,NJ,1,0,3401,Donald Norcross,Democratic,D,185429,70.53,1,1,0,civicAPI
+house,NJ,1,0,3401,Damon Galdo,Republican,R,77181,29.36,2,0,0,civicAPI
 house,NJ,1,0,3401,Write-in,Nonpartisan,W,271,0.1,3,0,0,civicAPI
 house,NJ,1,0,3401,Robin Brownfield,Write-In,W,3,0.0,4,0,0,civicAPI
 house,NJ,1,0,3401,Carole Roskoph,Write-In,W,2,0.0,5,0,0,civicAPI
@@ -1265,83 +1282,90 @@ house,NJ,2,0,3402,Andres Jinete,Independent,I,1,0.0,6,0,0,civicAPI
 house,NJ,2,0,3402,Layla Narzikulov,Independent,I,1,0.0,7,0,0,civicAPI
 house,NJ,2,0,3402,Joe Kent,Independent,I,1,0.0,8,0,0,civicAPI
 house,NJ,2,0,3402,Jenna Weber,Independent,I,1,0.0,9,0,0,civicAPI
-house,NJ,3,0,3403,Herb Conaway,Democratic,D,174393,62.75,1,1,0,civicAPI
-house,NJ,3,0,3403,Michael McGuire,Republican,R,97831,35.2,2,0,0,civicAPI
-house,NJ,3,0,3403,Ryan Michael Kelly,Independent,I,3701,1.33,3,0,0,civicAPI
-house,NJ,3,0,3403,Steven Welzer,Green,G,1736,0.62,4,0,0,civicAPI
-house,NJ,3,0,3403,Write-in,Nonpartisan,W,179,0.06,5,0,0,civicAPI
+house,NJ,3,0,3403,Herb Conaway,Democratic,D,175926,62.82,1,1,0,civicAPI
+house,NJ,3,0,3403,Michael McGuire,Republican,R,98333,35.11,2,0,0,civicAPI
+house,NJ,3,0,3403,Ryan Michael Kelly,Independent,I,3752,1.34,3,0,0,civicAPI
+house,NJ,3,0,3403,Steven Welzer,Green,G,1756,0.63,4,0,0,civicAPI
+house,NJ,3,0,3403,Write-in,Nonpartisan,W,180,0.06,5,0,0,civicAPI
 house,NJ,3,0,3403,Jason Cullen,Write-In,W,16,0.01,6,0,0,civicAPI
-house,NJ,3,0,3403,Thomas Massie,Write-In,W,3,0.0,7,0,0,civicAPI
+house,NJ,3,0,3403,Thomas Massie,Write-In,W,4,0.0,7,0,0,civicAPI
 house,NJ,3,0,3403,Aaron Mitchell,Write-In,W,2,0.0,8,0,0,civicAPI
 house,NJ,3,0,3403,Fred A. Hartley Jr.,Write-In,W,2,0.0,9,0,0,civicAPI
 house,NJ,3,0,3403,No One,Write-In,W,2,0.0,10,0,0,civicAPI
 house,NJ,3,0,3403,None of the Above,Write-In,W,2,0.0,11,0,0,civicAPI
-house,NJ,3,0,3403,Gary Stout,Write-In,W,1,0.0,12,0,0,civicAPI
-house,NJ,3,0,3403,William Bishop,Write-In,W,1,0.0,13,0,0,civicAPI
-house,NJ,3,0,3403,Joseph Koreg Jr.,Write-In,W,1,0.0,14,0,0,civicAPI
-house,NJ,3,0,3403,Caileigh Valig,Write-In,W,1,0.0,15,0,0,civicAPI
-house,NJ,3,0,3403,Denise Trautmann,Write-In,W,1,0.0,16,0,0,civicAPI
-house,NJ,3,0,3403,Fred Porter,Write-In,W,1,0.0,17,0,0,civicAPI
-house,NJ,3,0,3403,Birdi Zasoski,Write-In,W,1,0.0,18,0,0,civicAPI
-house,NJ,3,0,3403,Anna Evans,Write-In,W,1,0.0,19,0,0,civicAPI
-house,NJ,3,0,3403,Orion Pax,Write-In,W,1,0.0,20,0,0,civicAPI
-house,NJ,3,0,3403,Kevin Cureton,Write-In,W,1,0.0,21,0,0,civicAPI
-house,NJ,3,0,3403,Anthony Chigounis,Write-In,W,1,0.0,22,0,0,civicAPI
-house,NJ,3,0,3403,Joseph C Defeo,Write-In,W,1,0.0,23,0,0,civicAPI
-house,NJ,3,0,3403,Peter Toich,Write-In,W,1,0.0,24,0,0,civicAPI
-house,NJ,3,0,3403,Adam Hamawy,Write-In,W,1,0.0,25,0,0,civicAPI
-house,NJ,3,0,3403,Laura Fitzgerald,Write-In,W,1,0.0,26,0,0,civicAPI
-house,NJ,3,0,3403,John Quinones,Write-In,W,1,0.0,27,0,0,civicAPI
-house,NJ,3,0,3403,Undecided,Write-In,W,1,0.0,28,0,0,civicAPI
-house,NJ,3,0,3403,Lana Leguia,Write-In,W,1,0.0,29,0,0,civicAPI
-house,NJ,3,0,3403,Joseph D. Quinn II,Write-In,W,1,0.0,30,0,0,civicAPI
-house,NJ,3,0,3403,Steven Bowker,Write-In,W,1,0.0,31,0,0,civicAPI
-house,NJ,3,0,3403,Hind Rajab,Write-In,W,1,0.0,32,0,0,civicAPI
-house,NJ,3,0,3403,Richard A. Coupe,Write-In,W,1,0.0,33,0,0,civicAPI
-house,NJ,3,0,3403,Ayishat Akanbi,Write-In,W,1,0.0,34,0,0,civicAPI
-house,NJ,3,0,3403,Jerry L. Woodard,Write-In,W,1,0.0,35,0,0,civicAPI
-house,NJ,3,0,3403,Al Roach,Write-In,W,1,0.0,36,0,0,civicAPI
-house,NJ,3,0,3403,John Potts,Write-In,W,1,0.0,37,0,0,civicAPI
-house,NJ,3,0,3403,Mom,Write-In,W,1,0.0,38,0,0,civicAPI
-house,NJ,3,0,3403,Brendan Meyers,Write-In,W,1,0.0,39,0,0,civicAPI
-house,NJ,3,0,3403,Dan Kennedy,Write-In,W,1,0.0,40,0,0,civicAPI
-house,NJ,3,0,3403,Jason Method,Write-In,W,1,0.0,41,0,0,civicAPI
-house,NJ,3,0,3403,Seamus O'tool,Write-In,W,1,0.0,42,0,0,civicAPI
-house,NJ,3,0,3403,Gerrad Doran Jr.,Write-In,W,1,0.0,43,0,0,civicAPI
-house,NJ,3,0,3403,Nancy Berkley,Write-In,W,1,0.0,44,0,0,civicAPI
-house,NJ,3,0,3403,Troy Green,Write-In,W,1,0.0,45,0,0,civicAPI
-house,NJ,3,0,3403,Verstappan,Write-In,W,1,0.0,46,0,0,civicAPI
-house,NJ,3,0,3403,Muhhamad Jawaad Hussian,Write-In,W,1,0.0,47,0,0,civicAPI
-house,NJ,3,0,3403,Matthew Christ,Write-In,W,1,0.0,48,0,0,civicAPI
-house,NJ,3,0,3403,Emily Connerly,Write-In,W,1,0.0,49,0,0,civicAPI
-house,NJ,3,0,3403,Michael Yekenchik,Write-In,W,1,0.0,50,0,0,civicAPI
-house,NJ,3,0,3403,Richard Evano,Write-In,W,1,0.0,51,0,0,civicAPI
-house,NJ,3,0,3403,John Ferry,Write-In,W,1,0.0,52,0,0,civicAPI
-house,NJ,3,0,3403,Tom Hammer,Write-In,W,1,0.0,53,0,0,civicAPI
-house,NJ,3,0,3403,Aaron Glenn,Write-In,W,1,0.0,54,0,0,civicAPI
-house,NJ,3,0,3403,Ralph Cifaretto,Write-In,W,1,0.0,55,0,0,civicAPI
-house,NJ,3,0,3403,Impeach Trump,Write-In,W,1,0.0,56,0,0,civicAPI
-house,NJ,3,0,3403,Matthew Heberlig,Write-In,W,1,0.0,57,0,0,civicAPI
-house,NJ,3,0,3403,Jesus Christ,Write-In,W,1,0.0,58,0,0,civicAPI
-house,NJ,3,0,3403,Richard I. Carpenter,Write-In,W,1,0.0,59,0,0,civicAPI
-house,NJ,3,0,3403,Me,Write-In,W,1,0.0,60,0,0,civicAPI
-house,NJ,3,0,3403,Steve Rinella,Write-In,W,1,0.0,61,0,0,civicAPI
-house,NJ,3,0,3403,Stetson Brown,Write-In,W,1,0.0,62,0,0,civicAPI
-house,NJ,3,0,3403,LeBron James,Write-In,W,1,0.0,63,0,0,civicAPI
-house,NJ,3,0,3403,Thomas Terifay Sr,Write-In,W,1,0.0,64,0,0,civicAPI
-house,NJ,3,0,3403,Dewey,Write-In,W,1,0.0,65,0,0,civicAPI
-house,NJ,3,0,3403,Brande Kelley,Write-In,W,1,0.0,66,0,0,civicAPI
-house,NJ,3,0,3403,Bonnie Watson Coleman,Write-In,W,1,0.0,67,0,0,civicAPI
-house,NJ,3,0,3403,Tineen Howard,Write-In,W,1,0.0,68,0,0,civicAPI
-house,NJ,3,0,3403,William L Odom Jr.,Write-In,W,1,0.0,69,0,0,civicAPI
-house,NJ,3,0,3403,Rush Holt,Write-In,W,1,0.0,70,0,0,civicAPI
-house,NJ,3,0,3403,Vic Kaplan,Write-In,W,1,0.0,71,0,0,civicAPI
-house,NJ,3,0,3403,St. Augustine of Hippo,Write-In,W,1,0.0,72,0,0,civicAPI
-house,NJ,3,0,3403,Dominic Sorretino,Write-In,W,1,0.0,73,0,0,civicAPI
-house,NJ,3,0,3403,Term Limits,Write-In,W,1,0.0,74,0,0,civicAPI
-house,NJ,3,0,3403,David Smith,Write-In,W,1,0.0,75,0,0,civicAPI
+house,NJ,3,0,3403,Jesus Christ,Write-In,W,2,0.0,12,0,0,civicAPI
+house,NJ,3,0,3403,David Smith,Write-In,W,2,0.0,13,0,0,civicAPI
+house,NJ,3,0,3403,Gary Stout,Write-In,W,1,0.0,14,0,0,civicAPI
+house,NJ,3,0,3403,William Bishop,Write-In,W,1,0.0,15,0,0,civicAPI
+house,NJ,3,0,3403,Joseph Koreg Jr.,Write-In,W,1,0.0,16,0,0,civicAPI
+house,NJ,3,0,3403,Caileigh Valig,Write-In,W,1,0.0,17,0,0,civicAPI
+house,NJ,3,0,3403,Denise Trautmann,Write-In,W,1,0.0,18,0,0,civicAPI
+house,NJ,3,0,3403,Fred Porter,Write-In,W,1,0.0,19,0,0,civicAPI
+house,NJ,3,0,3403,Birdi Zasoski,Write-In,W,1,0.0,20,0,0,civicAPI
+house,NJ,3,0,3403,Anna Evans,Write-In,W,1,0.0,21,0,0,civicAPI
+house,NJ,3,0,3403,Orion Pax,Write-In,W,1,0.0,22,0,0,civicAPI
+house,NJ,3,0,3403,Kevin Cureton,Write-In,W,1,0.0,23,0,0,civicAPI
+house,NJ,3,0,3403,Anthony Chigounis,Write-In,W,1,0.0,24,0,0,civicAPI
+house,NJ,3,0,3403,Joseph C Defeo,Write-In,W,1,0.0,25,0,0,civicAPI
+house,NJ,3,0,3403,Peter Toich,Write-In,W,1,0.0,26,0,0,civicAPI
+house,NJ,3,0,3403,Adam Hamawy,Write-In,W,1,0.0,27,0,0,civicAPI
+house,NJ,3,0,3403,Laura Fitzgerald,Write-In,W,1,0.0,28,0,0,civicAPI
+house,NJ,3,0,3403,John Quinones,Write-In,W,1,0.0,29,0,0,civicAPI
+house,NJ,3,0,3403,Undecided,Write-In,W,1,0.0,30,0,0,civicAPI
+house,NJ,3,0,3403,Lana Leguia,Write-In,W,1,0.0,31,0,0,civicAPI
+house,NJ,3,0,3403,Joseph D. Quinn II,Write-In,W,1,0.0,32,0,0,civicAPI
+house,NJ,3,0,3403,Steven Bowker,Write-In,W,1,0.0,33,0,0,civicAPI
+house,NJ,3,0,3403,Hind Rajab,Write-In,W,1,0.0,34,0,0,civicAPI
+house,NJ,3,0,3403,Richard A. Coupe,Write-In,W,1,0.0,35,0,0,civicAPI
+house,NJ,3,0,3403,Ayishat Akanbi,Write-In,W,1,0.0,36,0,0,civicAPI
+house,NJ,3,0,3403,Jerry L. Woodard,Write-In,W,1,0.0,37,0,0,civicAPI
+house,NJ,3,0,3403,Al Roach,Write-In,W,1,0.0,38,0,0,civicAPI
+house,NJ,3,0,3403,John Potts,Write-In,W,1,0.0,39,0,0,civicAPI
+house,NJ,3,0,3403,Mom,Write-In,W,1,0.0,40,0,0,civicAPI
+house,NJ,3,0,3403,Brendan Meyers,Write-In,W,1,0.0,41,0,0,civicAPI
+house,NJ,3,0,3403,Dan Kennedy,Write-In,W,1,0.0,42,0,0,civicAPI
+house,NJ,3,0,3403,Jason Method,Write-In,W,1,0.0,43,0,0,civicAPI
+house,NJ,3,0,3403,Seamus O'tool,Write-In,W,1,0.0,44,0,0,civicAPI
+house,NJ,3,0,3403,Gerrad Doran Jr.,Write-In,W,1,0.0,45,0,0,civicAPI
+house,NJ,3,0,3403,Nancy Berkley,Write-In,W,1,0.0,46,0,0,civicAPI
+house,NJ,3,0,3403,Troy Green,Write-In,W,1,0.0,47,0,0,civicAPI
+house,NJ,3,0,3403,Verstappan,Write-In,W,1,0.0,48,0,0,civicAPI
+house,NJ,3,0,3403,Muhhamad Jawaad Hussian,Write-In,W,1,0.0,49,0,0,civicAPI
+house,NJ,3,0,3403,Matthew Christ,Write-In,W,1,0.0,50,0,0,civicAPI
+house,NJ,3,0,3403,Emily Connerly,Write-In,W,1,0.0,51,0,0,civicAPI
+house,NJ,3,0,3403,Michael Yekenchik,Write-In,W,1,0.0,52,0,0,civicAPI
+house,NJ,3,0,3403,Richard Evano,Write-In,W,1,0.0,53,0,0,civicAPI
+house,NJ,3,0,3403,John Ferry,Write-In,W,1,0.0,54,0,0,civicAPI
+house,NJ,3,0,3403,Tom Hammer,Write-In,W,1,0.0,55,0,0,civicAPI
+house,NJ,3,0,3403,Aaron Glenn,Write-In,W,1,0.0,56,0,0,civicAPI
+house,NJ,3,0,3403,Ralph Cifaretto,Write-In,W,1,0.0,57,0,0,civicAPI
+house,NJ,3,0,3403,Impeach Trump,Write-In,W,1,0.0,58,0,0,civicAPI
+house,NJ,3,0,3403,Matthew Heberlig,Write-In,W,1,0.0,59,0,0,civicAPI
+house,NJ,3,0,3403,Richard I. Carpenter,Write-In,W,1,0.0,60,0,0,civicAPI
+house,NJ,3,0,3403,Me,Write-In,W,1,0.0,61,0,0,civicAPI
+house,NJ,3,0,3403,Steve Rinella,Write-In,W,1,0.0,62,0,0,civicAPI
+house,NJ,3,0,3403,Stetson Brown,Write-In,W,1,0.0,63,0,0,civicAPI
+house,NJ,3,0,3403,LeBron James,Write-In,W,1,0.0,64,0,0,civicAPI
+house,NJ,3,0,3403,Thomas Terifay Sr,Write-In,W,1,0.0,65,0,0,civicAPI
+house,NJ,3,0,3403,Dewey,Write-In,W,1,0.0,66,0,0,civicAPI
+house,NJ,3,0,3403,Brande Kelley,Write-In,W,1,0.0,67,0,0,civicAPI
+house,NJ,3,0,3403,Bonnie Watson Coleman,Write-In,W,1,0.0,68,0,0,civicAPI
+house,NJ,3,0,3403,Tineen Howard,Write-In,W,1,0.0,69,0,0,civicAPI
+house,NJ,3,0,3403,William L Odom Jr.,Write-In,W,1,0.0,70,0,0,civicAPI
+house,NJ,3,0,3403,Rush Holt,Write-In,W,1,0.0,71,0,0,civicAPI
+house,NJ,3,0,3403,Vic Kaplan,Write-In,W,1,0.0,72,0,0,civicAPI
+house,NJ,3,0,3403,St. Augustine of Hippo,Write-In,W,1,0.0,73,0,0,civicAPI
+house,NJ,3,0,3403,Dominic Sorretino,Write-In,W,1,0.0,74,0,0,civicAPI
+house,NJ,3,0,3403,Term Limits,Write-In,W,1,0.0,75,0,0,civicAPI
 house,NJ,3,0,3403,Nick Foles,Write-In,W,1,0.0,76,0,0,civicAPI
 house,NJ,3,0,3403,Crap Options,Write-In,W,1,0.0,77,0,0,civicAPI
+house,NJ,3,0,3403,Quincy Magee,Write-In,W,1,0.0,78,0,0,civicAPI
+house,NJ,3,0,3403,Sharon Easley,Write-In,W,1,0.0,79,0,0,civicAPI
+house,NJ,3,0,3403,Mark Wright,Write-In,W,1,0.0,80,0,0,civicAPI
+house,NJ,3,0,3403,Ron Paul,Write-In,W,1,0.0,81,0,0,civicAPI
+house,NJ,3,0,3403,Greg Sobocinski,Write-In,W,1,0.0,82,0,0,civicAPI
+house,NJ,3,0,3403,Anwar Crawford,Write-In,W,1,0.0,83,0,0,civicAPI
+house,NJ,3,0,3403,Matthew Bledsoe,Write-In,W,1,0.0,84,0,0,civicAPI
 house,NJ,4,0,3404,Chris Smith,Republican,R,157739,58.92,1,1,0,civicAPI
 house,NJ,4,0,3404,Rachel Peace,Democratic,D,109668,40.96,2,0,0,civicAPI
 house,NJ,4,0,3404,Write-in,Nonpartisan,W,327,0.12,3,0,0,civicAPI
@@ -1352,10 +1376,10 @@ house,NJ,5,0,3405,Write-in,Nonpartisan,W,23,0.01,4,0,0,civicAPI
 house,NJ,6,0,3406,Frank Pallone,Democratic,D,148155,69.13,1,1,0,civicAPI
 house,NJ,6,0,3406,Hillary Herzig,Republican,R,65247,30.45,2,0,0,civicAPI
 house,NJ,6,0,3406,Write-in,Nonpartisan,W,898,0.42,3,0,0,civicAPI
-house,NJ,7,0,3407,Rebecca Bennett,Democratic,D,192833,57.46,1,1,0,civicAPI
-house,NJ,7,0,3407,Thomas Kean Jr.,Republican,R,137348,40.93,2,0,0,civicAPI
-house,NJ,7,0,3407,Seamus Patrick O'Toole,Independent,I,5202,1.55,3,0,0,civicAPI
-house,NJ,7,0,3407,Write-in,Nonpartisan,W,209,0.06,4,0,0,civicAPI
+house,NJ,7,0,3407,Rebecca Bennett,Democratic,D,194289,57.54,1,1,0,civicAPI
+house,NJ,7,0,3407,Thomas Kean Jr.,Republican,R,137901,40.84,2,0,0,civicAPI
+house,NJ,7,0,3407,Seamus Patrick O'Toole,Independent,I,5269,1.56,3,0,0,civicAPI
+house,NJ,7,0,3407,Write-in,Nonpartisan,W,210,0.06,4,0,0,civicAPI
 house,NJ,8,0,3408,Rob Menendez,Democratic,D,112082,87.99,1,1,0,civicAPI
 house,NJ,8,0,3408,Craig Honts,Socialist Workers,O,5406,4.24,2,0,0,civicAPI
 house,NJ,8,0,3408,Aristotle Eliopoulos,Independent,I,5350,4.2,3,0,0,civicAPI
@@ -1368,10 +1392,10 @@ house,NJ,9,0,3409,Write-in,Nonpartisan,W,249,0.13,4,0,0,civicAPI
 house,NJ,10,0,3410,LaMonica McIver,Democratic,D,154306,84.59,1,1,0,civicAPI
 house,NJ,10,0,3410,Carmen Bucco,Republican,R,28008,15.35,2,0,0,civicAPI
 house,NJ,10,0,3410,Write-in,Nonpartisan,W,92,0.05,3,0,0,civicAPI
-house,NJ,11,0,3411,Analilia Mejia,Democratic,D,170498,60.73,1,1,0,civicAPI
-house,NJ,11,0,3411,Joe Hathaway,Republican,R,107369,38.24,2,0,0,civicAPI
-house,NJ,11,0,3411,Alan B. Bond,Independent,I,2513,0.9,3,0,0,civicAPI
-house,NJ,11,0,3411,Write-in,Nonpartisan,W,369,0.13,4,0,0,civicAPI
+house,NJ,11,0,3411,Analilia Mejia,Democratic,D,174211,60.93,1,1,0,civicAPI
+house,NJ,11,0,3411,Joe Hathaway,Republican,R,108762,38.04,2,0,0,civicAPI
+house,NJ,11,0,3411,Alan B. Bond,Independent,I,2560,0.9,3,0,0,civicAPI
+house,NJ,11,0,3411,Write-in,Nonpartisan,W,383,0.13,4,0,0,civicAPI
 house,NJ,12,0,3412,Adam Hamawy,Democratic,D,168917,70.46,1,1,0,civicAPI
 house,NJ,12,0,3412,Gregg Mele,Republican,R,66553,27.76,2,0,0,civicAPI
 house,NJ,12,0,3412,Winston Jordan,Independent,I,1887,0.79,3,0,0,civicAPI
@@ -1464,8 +1488,8 @@ house,NY,19,0,3619,Write-in,Nonpartisan,W,306,0.1,3,0,0,civicAPI
 house,NY,20,0,3620,Paul Tonko,Democratic,D,185280,63.78,1,1,0,civicAPI
 house,NY,20,0,3620,Ralph Ambrosio,Republican,R,104941,36.13,2,0,0,civicAPI
 house,NY,20,0,3620,Write-in,Nonpartisan,W,255,0.09,3,0,0,civicAPI
-house,NY,21,0,3621,Anthony Constantino,Republican,R,141533,50.64,1,1,0,civicAPI
-house,NY,21,0,3621,Blake Gendebien,Democratic,D,137302,49.13,2,0,0,civicAPI
+house,NY,21,0,3621,Anthony Constantino,Republican,R,141635,50.64,1,1,0,civicAPI
+house,NY,21,0,3621,Blake Gendebien,Democratic,D,137422,49.13,2,0,0,civicAPI
 house,NY,21,0,3621,Write-in,Nonpartisan,W,654,0.23,3,0,0,civicAPI
 house,NY,22,0,3622,John Mannion,Democratic,D,161708,58.46,1,1,0,civicAPI
 house,NY,22,0,3622,Kailee Buller,Republican,R,114691,41.46,2,0,0,civicAPI
@@ -1833,35 +1857,35 @@ house,VT,1,0,5001,Ryan P. Walton,Independent,I,2700,0.89,4,0,0,civicAPI
 house,VT,1,0,5001,Phoenix K. Altair,Independent,I,2335,0.77,5,0,0,civicAPI
 house,VT,1,0,5001,Adam Ortiz,Independent,I,2196,0.72,6,0,0,civicAPI
 house,VT,1,0,5001,Write-in,Nonpartisan,W,246,0.08,7,0,0,civicAPI
-house,WA,1,0,5301,Suzan DelBene,(Prefers Democratic Party),D,199681,67.5,1,1,0,Washington Secretary of State
-house,WA,1,0,5301,Mary Silva,(Prefers Republican Party),R,95175,32.17,2,0,0,Washington Secretary of State
-house,WA,1,0,5301,Write-in,Nonpartisan,W,963,0.33,3,0,0,Washington Secretary of State
-house,WA,2,0,5302,Rick Larsen,(Prefers Democratic Party),D,231685,66.51,1,1,0,Washington Secretary of State
-house,WA,2,0,5302,Edwin H. Feller,(Prefers Republican Party),R,115300,33.1,2,0,0,Washington Secretary of State
-house,WA,2,0,5302,Write-in,Nonpartisan,W,1373,0.39,3,0,0,Washington Secretary of State
-house,WA,3,0,5303,Marie Gluesenkamp Perez,(Prefers Democratic Party),D,190386,53.68,1,1,0,Washington Secretary of State
-house,WA,3,0,5303,John Braun,(Prefers Republican Party),R,160969,45.39,2,0,0,Washington Secretary of State
-house,WA,3,0,5303,Write-in,Nonpartisan,W,3299,0.93,3,0,0,Washington Secretary of State
-house,WA,4,0,5304,Amanda McKinney,(Prefers Republican Party),R,131054,53.64,1,1,0,Washington Secretary of State
-house,WA,4,0,5304,John Duresky,(Prefers Democratic Party),D,112721,46.13,2,0,0,Washington Secretary of State
+house,WA,1,0,5301,Suzan DelBene,(Prefers Democratic Party),D,199741,67.5,1,1,0,Washington Secretary of State
+house,WA,1,0,5301,Mary Silva,(Prefers Republican Party),R,95205,32.17,2,0,0,Washington Secretary of State
+house,WA,1,0,5301,Write-in,Nonpartisan,W,966,0.33,3,0,0,Washington Secretary of State
+house,WA,2,0,5302,Rick Larsen,(Prefers Democratic Party),D,232074,66.52,1,1,0,Washington Secretary of State
+house,WA,2,0,5302,Edwin H. Feller,(Prefers Republican Party),R,115410,33.08,2,0,0,Washington Secretary of State
+house,WA,2,0,5302,Write-in,Nonpartisan,W,1377,0.39,3,0,0,Washington Secretary of State
+house,WA,3,0,5303,Marie Gluesenkamp Perez,(Prefers Democratic Party),D,190639,53.68,1,1,0,Washington Secretary of State
+house,WA,3,0,5303,John Braun,(Prefers Republican Party),R,161162,45.38,2,0,0,Washington Secretary of State
+house,WA,3,0,5303,Write-in,Nonpartisan,W,3308,0.93,3,0,0,Washington Secretary of State
+house,WA,4,0,5304,Amanda McKinney,(Prefers Republican Party),R,131080,53.63,1,1,0,Washington Secretary of State
+house,WA,4,0,5304,John Duresky,(Prefers Democratic Party),D,112770,46.14,2,0,0,Washington Secretary of State
 house,WA,4,0,5304,Write-in,Nonpartisan,W,567,0.23,3,0,0,Washington Secretary of State
-house,WA,5,0,5305,Michael Baumgartner,(Prefers Republican Party),R,172154,52.16,1,1,0,Washington Secretary of State
-house,WA,5,0,5305,Carmela Conroy,(Prefers Democratic Party),D,156703,47.48,2,0,0,Washington Secretary of State
-house,WA,5,0,5305,Write-in,Nonpartisan,W,1183,0.36,3,0,0,Washington Secretary of State
-house,WA,6,0,5306,Emily Randall,(Prefers Democratic Party),D,224970,62.47,1,1,0,Washington Secretary of State
-house,WA,6,0,5306,Teresa Fox,(Prefers Republican Party),R,134427,37.33,2,0,0,Washington Secretary of State
-house,WA,6,0,5306,Write-in,Nonpartisan,W,708,0.2,3,0,0,Washington Secretary of State
-house,WA,7,0,5307,Pramila Jayapal,(Prefers Democratic Party),D,328188,87.63,1,1,0,Washington Secretary of State
-house,WA,7,0,5307,Nirav Sheth,(Prefers Republican Party),R,44989,12.01,2,0,0,Washington Secretary of State
+house,WA,5,0,5305,Michael Baumgartner,(Prefers Republican Party),R,172388,52.14,1,1,0,Washington Secretary of State
+house,WA,5,0,5305,Carmela Conroy,(Prefers Democratic Party),D,157038,47.5,2,0,0,Washington Secretary of State
+house,WA,5,0,5305,Write-in,Nonpartisan,W,1184,0.36,3,0,0,Washington Secretary of State
+house,WA,6,0,5306,Emily Randall,(Prefers Democratic Party),D,225078,62.47,1,1,0,Washington Secretary of State
+house,WA,6,0,5306,Teresa Fox,(Prefers Republican Party),R,134498,37.33,2,0,0,Washington Secretary of State
+house,WA,6,0,5306,Write-in,Nonpartisan,W,709,0.2,3,0,0,Washington Secretary of State
+house,WA,7,0,5307,Pramila Jayapal,(Prefers Democratic Party),D,328219,87.63,1,1,0,Washington Secretary of State
+house,WA,7,0,5307,Nirav Sheth,(Prefers Republican Party),R,44995,12.01,2,0,0,Washington Secretary of State
 house,WA,7,0,5307,Write-in,Nonpartisan,W,1357,0.36,3,0,0,Washington Secretary of State
-house,WA,8,0,5308,Kim Schrier,(Prefers Democratic Party),D,195320,57.16,1,1,0,Washington Secretary of State
-house,WA,8,0,5308,Spencer Meline,(Prefers Republican Party),R,145598,42.61,2,0,0,Washington Secretary of State
+house,WA,8,0,5308,Kim Schrier,(Prefers Democratic Party),D,195335,57.16,1,1,0,Washington Secretary of State
+house,WA,8,0,5308,Spencer Meline,(Prefers Republican Party),R,145606,42.61,2,0,0,Washington Secretary of State
 house,WA,8,0,5308,Write-in,Nonpartisan,W,799,0.23,3,0,0,Washington Secretary of State
-house,WA,9,0,5309,Adam Smith,(Prefers Democratic Party),D,191970,75.73,1,1,0,Washington Secretary of State
-house,WA,9,0,5309,Doug Basler,(Prefers Republican Party),R,59674,23.54,2,0,0,Washington Secretary of State
+house,WA,9,0,5309,Adam Smith,(Prefers Democratic Party),D,192002,75.74,1,1,0,Washington Secretary of State
+house,WA,9,0,5309,Doug Basler,(Prefers Republican Party),R,59681,23.54,2,0,0,Washington Secretary of State
 house,WA,9,0,5309,Write-in,Nonpartisan,W,1834,0.72,3,0,0,Washington Secretary of State
-house,WA,10,0,5310,Marilyn Strickland,(Prefers Democratic Party),D,178471,64.02,1,1,0,Washington Secretary of State
-house,WA,10,0,5310,Chris D. Chung,(Prefers Republican Party),R,98590,35.37,2,0,0,Washington Secretary of State
+house,WA,10,0,5310,Marilyn Strickland,(Prefers Democratic Party),D,178540,64.02,1,1,0,Washington Secretary of State
+house,WA,10,0,5310,Chris D. Chung,(Prefers Republican Party),R,98627,35.37,2,0,0,Washington Secretary of State
 house,WA,10,0,5310,Write-in,Nonpartisan,W,1701,0.61,3,0,0,Washington Secretary of State
 house,WI,1,0,5501,Mitchell Berman,Democratic,D,158839,51.96,1,1,0,civicAPI
 house,WI,1,0,5501,Bryan Steil,Republican,R,146885,48.04,2,0,0,civicAPI
@@ -1909,17 +1933,17 @@ state_house,AK,3,0,AK-H-3,Annette Kreitzer,R,R,3021,33.12,2,0,,AP via NYT (unoff
 state_house,AK,3,0,AK-H-3,Total Write-ins,OTH,W,19,0.21,3,0,,AP via NYT (unofficial)
 state_house,AK,4,0,AK-H-4,Sara Hannan,D,D,6359,96.19,1,1,,AP via NYT (unofficial)
 state_house,AK,4,0,AK-H-4,Total Write-ins,OTH,W,252,3.81,2,0,,AP via NYT (unofficial)
-state_house,AK,5,0,AK-H-5,Kathy Simpler,NP,I,3511,58.35,1,1,,AP via NYT (unofficial)
-state_house,AK,5,0,AK-H-5,Sheldon Prout,R,R,2493,41.43,2,0,,AP via NYT (unofficial)
-state_house,AK,5,0,AK-H-5,Total Write-ins,OTH,W,13,0.22,3,0,,AP via NYT (unofficial)
+state_house,AK,5,0,AK-H-5,Kathy Simpler,NP,I,3596,58.48,1,1,,AP via NYT (unofficial)
+state_house,AK,5,0,AK-H-5,Sheldon Prout,R,R,2540,41.31,2,0,,AP via NYT (unofficial)
+state_house,AK,5,0,AK-H-5,Total Write-ins,OTH,W,13,0.21,3,0,,AP via NYT (unofficial)
 state_house,AK,6,0,AK-H-6,Brent Johnson,NP,I,5088,50.24,1,,,AP via NYT (unofficial)
 state_house,AK,6,0,AK-H-6,Sarah Vance,R,R,5029,49.65,2,,,AP via NYT (unofficial)
 state_house,AK,6,0,AK-H-6,Total Write-ins,OTH,W,11,0.11,3,,,AP via NYT (unofficial)
 state_house,AK,7,0,AK-H-7,Justin Ruffridge,R,R,5538,74.68,1,1,,AP via NYT (unofficial)
 state_house,AK,7,0,AK-H-7,Kate Veh,D,D,1841,24.82,2,0,,AP via NYT (unofficial)
 state_house,AK,7,0,AK-H-7,Total Write-ins,OTH,W,37,0.5,3,0,,AP via NYT (unofficial)
-state_house,AK,8,0,AK-H-8,William Elam,R,R,6374,74.19,1,1,,AP via NYT (unofficial)
-state_house,AK,8,0,AK-H-8,Nissa Savage,NP,I,1621,18.87,2,0,,AP via NYT (unofficial)
+state_house,AK,8,0,AK-H-8,William Elam,R,R,6375,74.19,1,1,,AP via NYT (unofficial)
+state_house,AK,8,0,AK-H-8,Nissa Savage,NP,I,1621,18.86,2,0,,AP via NYT (unofficial)
 state_house,AK,8,0,AK-H-8,Frank Quinn,NP,I,568,6.61,3,0,,AP via NYT (unofficial)
 state_house,AK,8,0,AK-H-8,Total Write-ins,OTH,W,29,0.34,4,0,,AP via NYT (unofficial)
 state_house,AK,9,0,AK-H-9,Ky Holland,NP,I,5812,55.8,1,1,,AP via NYT (unofficial)
@@ -1927,11 +1951,11 @@ state_house,AK,9,0,AK-H-9,John Boyle,R,R,4589,44.06,2,0,,AP via NYT (unofficial)
 state_house,AK,9,0,AK-H-9,Total Write-ins,OTH,W,14,0.13,3,0,,AP via NYT (unofficial)
 state_house,AK,10,0,AK-H-10,Charles Kopp,R,R,5727,96.14,1,1,,AP via NYT (unofficial)
 state_house,AK,10,0,AK-H-10,Total Write-ins,OTH,W,230,3.86,2,0,,AP via NYT (unofficial)
-state_house,AK,11,0,AK-H-11,Julie Coulombe,R,R,4306,50.66,1,,,AP via NYT (unofficial)
-state_house,AK,11,0,AK-H-11,Danni Hall,D,D,4175,49.12,2,,,AP via NYT (unofficial)
-state_house,AK,11,0,AK-H-11,Total Write-ins,OTH,W,18,0.21,3,,,AP via NYT (unofficial)
-state_house,AK,12,0,AK-H-12,Calvin Schrage,NP,I,4965,68.86,1,1,,AP via NYT (unofficial)
-state_house,AK,12,0,AK-H-12,Jieun McDonald,R,R,2222,30.82,2,0,,AP via NYT (unofficial)
+state_house,AK,11,0,AK-H-11,Julie Coulombe,R,R,4306,50.66,1,1,,AP via NYT (unofficial)
+state_house,AK,11,0,AK-H-11,Danni Hall,D,D,4175,49.12,2,0,,AP via NYT (unofficial)
+state_house,AK,11,0,AK-H-11,Total Write-ins,OTH,W,18,0.21,3,0,,AP via NYT (unofficial)
+state_house,AK,12,0,AK-H-12,Calvin Schrage,NP,I,4966,68.87,1,1,,AP via NYT (unofficial)
+state_house,AK,12,0,AK-H-12,Jieun McDonald,R,R,2222,30.81,2,0,,AP via NYT (unofficial)
 state_house,AK,12,0,AK-H-12,Total Write-ins,OTH,W,23,0.32,3,0,,AP via NYT (unofficial)
 state_house,AK,13,0,AK-H-13,Lisa Keller,D,D,4455,91.09,1,1,,AP via NYT (unofficial)
 state_house,AK,13,0,AK-H-13,Total Write-ins,OTH,W,436,8.91,2,0,,AP via NYT (unofficial)
@@ -1977,13 +2001,13 @@ state_house,AK,25,0,AK-H-25,Total Write-ins,OTH,W,0,0.0,4,0,,AP via NYT (unoffic
 state_house,AK,26,0,AK-H-26,Steve St. Clair,R,R,5455,72.86,1,1,,AP via NYT (unofficial)
 state_house,AK,26,0,AK-H-26,Jeanne Troshynski,D,D,2010,26.85,2,0,,AP via NYT (unofficial)
 state_house,AK,26,0,AK-H-26,Total Write-ins,OTH,W,22,0.29,3,0,,AP via NYT (unofficial)
-state_house,AK,27,0,AK-H-27,Jubilee Underwood,R,R,3342,51.53,1,,,AP via NYT (unofficial)
-state_house,AK,27,0,AK-H-27,David Eastman,R,R,3047,46.99,2,,,AP via NYT (unofficial)
-state_house,AK,27,0,AK-H-27,Total Write-ins,OTH,W,96,1.48,3,,,AP via NYT (unofficial)
-state_house,AK,28,0,AK-H-28,Stephen Wright,R,R,2869,50.4,1,,,AP via NYT (unofficial)
-state_house,AK,28,0,AK-H-28,Elexie Moore,R,R,2823,49.6,2,,,AP via NYT (unofficial)
-state_house,AK,28,0,AK-H-28,Kathleen Kennedy,D,D,0,0.0,3,,,AP via NYT (unofficial)
-state_house,AK,28,0,AK-H-28,Total Write-ins,OTH,W,0,0.0,4,,,AP via NYT (unofficial)
+state_house,AK,27,0,AK-H-27,Jubilee Underwood,R,R,3342,51.53,1,1,,AP via NYT (unofficial)
+state_house,AK,27,0,AK-H-27,David Eastman,R,R,3047,46.99,2,0,,AP via NYT (unofficial)
+state_house,AK,27,0,AK-H-27,Total Write-ins,OTH,W,96,1.48,3,0,,AP via NYT (unofficial)
+state_house,AK,28,0,AK-H-28,Stephen Wright,R,R,2869,50.4,1,1,,AP via NYT (unofficial)
+state_house,AK,28,0,AK-H-28,Elexie Moore,R,R,2823,49.6,2,0,,AP via NYT (unofficial)
+state_house,AK,28,0,AK-H-28,Kathleen Kennedy,D,D,0,0.0,3,0,,AP via NYT (unofficial)
+state_house,AK,28,0,AK-H-28,Total Write-ins,OTH,W,0,0.0,4,0,,AP via NYT (unofficial)
 state_house,AK,29,0,AK-H-29,Gerald Nelson,R,R,3135,50.03,1,,,AP via NYT (unofficial)
 state_house,AK,29,0,AK-H-29,Steve Menard,R,R,3131,49.97,2,,,AP via NYT (unofficial)
 state_house,AK,29,0,AK-H-29,Kimberly Slone,D,D,0,0.0,3,,,AP via NYT (unofficial)
@@ -2003,14 +2027,14 @@ state_house,AK,33,0,AK-H-33,Glenn Prax,R,R,3926,64.37,1,1,,AP via NYT (unofficia
 state_house,AK,33,0,AK-H-33,Pepper McFarland,UDC,O,2173,35.63,2,0,,AP via NYT (unofficial)
 state_house,AK,33,0,AK-H-33,Barbara Haney,R,R,0,0.0,3,0,,AP via NYT (unofficial)
 state_house,AK,33,0,AK-H-33,Total Write-ins,OTH,W,0,0.0,4,0,,AP via NYT (unofficial)
-state_house,AK,34,0,AK-H-34,Joy Cottle,NP,I,3941,51.65,1,,,AP via NYT (unofficial)
-state_house,AK,34,0,AK-H-34,Harmony Tomaszewski,R,R,3677,48.19,2,,,AP via NYT (unofficial)
-state_house,AK,34,0,AK-H-34,Total Write-ins,OTH,W,12,0.16,3,,,AP via NYT (unofficial)
+state_house,AK,34,0,AK-H-34,Joy Cottle,NP,I,3941,51.65,1,1,,AP via NYT (unofficial)
+state_house,AK,34,0,AK-H-34,Harmony Tomaszewski,R,R,3677,48.19,2,0,,AP via NYT (unofficial)
+state_house,AK,34,0,AK-H-34,Total Write-ins,OTH,W,12,0.16,3,0,,AP via NYT (unofficial)
 state_house,AK,35,0,AK-H-35,Ashley Carrick,D,D,4920,60.45,1,1,,AP via NYT (unofficial)
 state_house,AK,35,0,AK-H-35,Jeffrey Rentzel,R,R,3203,39.35,2,0,,AP via NYT (unofficial)
 state_house,AK,35,0,AK-H-35,Total Write-ins,OTH,W,16,0.2,3,0,,AP via NYT (unofficial)
-state_house,AK,36,0,AK-H-36,Rebecca Schwanke,R,R,4459,57.99,1,1,,AP via NYT (unofficial)
-state_house,AK,36,0,AK-H-36,Crystal Jones,NP,I,3180,41.36,2,0,,AP via NYT (unofficial)
+state_house,AK,36,0,AK-H-36,Rebecca Schwanke,R,R,4464,57.94,1,1,,AP via NYT (unofficial)
+state_house,AK,36,0,AK-H-36,Crystal Jones,NP,I,3190,41.41,2,0,,AP via NYT (unofficial)
 state_house,AK,36,0,AK-H-36,Total Write-ins,OTH,W,50,0.65,3,0,,AP via NYT (unofficial)
 state_house,AK,37,0,AK-H-37,Evelynn Trefon,D,D,1875,58.8,1,1,,AP via NYT (unofficial)
 state_house,AK,37,0,AK-H-37,Brenda Wilson,R,R,1314,41.2,2,0,,AP via NYT (unofficial)
@@ -2540,8 +2564,8 @@ state_house,CA,34,0,CA-H-34,Charles Frederick Hughes,Republican,R,79695,52.24,1,
 state_house,CA,34,0,CA-H-34,Randall Putz,Democratic,D,72859,47.76,2,0,0,civicAPI
 state_house,CA,35,0,CA-H-35,Andrae Gonzales,Democratic,D,66974,69.81,1,1,0,civicAPI
 state_house,CA,35,0,CA-H-35,Saul Ayon,Republican,R,28970,30.19,2,0,0,civicAPI
-state_house,CA,36,0,CA-H-36,Ida S. Obeso-Martinez,Democratic,D,76354,59.8,1,1,0,civicAPI
-state_house,CA,36,0,CA-H-36,Jeff Gonzalez,Republican,R,51336,40.2,2,0,1,civicAPI
+state_house,CA,36,0,CA-H-36,Ida S. Obeso-Martinez,Democratic,D,76582,59.8,1,1,0,civicAPI
+state_house,CA,36,0,CA-H-36,Jeff Gonzalez,Republican,R,51472,40.2,2,0,1,civicAPI
 state_house,CA,37,0,CA-H-37,Gregg Hart,Democratic,D,112539,67.16,1,1,1,civicAPI
 state_house,CA,37,0,CA-H-37,Sari Domingues,Republican,R,55031,32.84,2,0,0,civicAPI
 state_house,CA,38,0,CA-H-38,Steve Bennett,Democratic,D,97311,69.84,1,1,1,civicAPI
@@ -2562,8 +2586,8 @@ state_house,CA,45,0,CA-H-45,James C. Ramos,Democratic,D,86595,72.55,1,1,1,civicA
 state_house,CA,45,0,CA-H-45,Greg Abdouch,Republican,R,32762,27.45,2,0,0,civicAPI
 state_house,CA,46,0,CA-H-46,Jesse Gabriel,Democratic,D,105249,70.87,1,1,1,civicAPI
 state_house,CA,46,0,CA-H-46,Tracey Schroeder,Republican,R,43257,29.13,2,0,0,civicAPI
-state_house,CA,47,0,CA-H-47,Leila Namvar,Democratic,D,111090,55.93,1,1,0,civicAPI
-state_house,CA,47,0,CA-H-47,Greg Wallis,Republican,R,87530,44.07,2,0,1,civicAPI
+state_house,CA,47,0,CA-H-47,Leila Namvar,Democratic,D,111190,55.94,1,1,0,civicAPI
+state_house,CA,47,0,CA-H-47,Greg Wallis,Republican,R,87578,44.06,2,0,1,civicAPI
 state_house,CA,48,0,CA-H-48,Blanca Rubio,Democratic,D,100625,69.98,1,1,1,civicAPI
 state_house,CA,48,0,CA-H-48,Dan T. Tran,Republican,R,43176,30.02,2,0,0,civicAPI
 state_house,CA,49,0,CA-H-49,Mike Fong,Democratic,D,89980,70.18,1,1,1,civicAPI
@@ -2584,18 +2608,18 @@ state_house,CA,56,0,CA-H-56,Lisa Calderon,Democratic,D,101495,68.42,1,1,1,civicA
 state_house,CA,56,0,CA-H-56,Jessica Martinez,Republican,R,46836,31.58,2,0,0,civicAPI
 state_house,CA,57,0,CA-H-57,Sade Elhawary,Democratic,D,76915,89.79,1,1,1,civicAPI
 state_house,CA,57,0,CA-H-57,Constance Jewel Menzies,Republican,R,8743,10.21,2,0,0,civicAPI
-state_house,CA,58,0,CA-H-58,Clarissa Cervantes,Democratic,D,85091,64.15,1,1,0,civicAPI
-state_house,CA,58,0,CA-H-58,Leticia Castillo,Republican,R,47544,35.85,2,0,1,civicAPI
+state_house,CA,58,0,CA-H-58,Clarissa Cervantes,Democratic,D,85333,64.17,1,1,0,civicAPI
+state_house,CA,58,0,CA-H-58,Leticia Castillo,Republican,R,47649,35.83,2,0,1,civicAPI
 state_house,CA,59,0,CA-H-59,Phillip Chen,Republican,R,109775,59.52,1,1,1,civicAPI
 state_house,CA,59,0,CA-H-59,Victor Hernandez,Green,G,74662,40.48,2,0,0,civicAPI
-state_house,CA,60,0,CA-H-60,Corey A Jackson,Democratic,D,78050,69.3,1,1,1,civicAPI
-state_house,CA,60,0,CA-H-60,Ed Delgado,Republican,R,34581,30.7,2,0,0,civicAPI
+state_house,CA,60,0,CA-H-60,Corey A Jackson,Democratic,D,78159,69.3,1,1,1,civicAPI
+state_house,CA,60,0,CA-H-60,Ed Delgado,Republican,R,34621,30.7,2,0,0,civicAPI
 state_house,CA,61,0,CA-H-61,Tina Simone McKinnor,Democratic,D,120404,84.51,1,1,1,civicAPI
 state_house,CA,61,0,CA-H-61,Brian Lockwood,Republican,R,22076,15.49,2,0,0,civicAPI
 state_house,CA,62,0,CA-H-62,José Luis Solache,Democratic,D,92219,78.06,1,1,1,civicAPI
 state_house,CA,62,0,CA-H-62,Paul Irving Jones,Republican,R,25926,21.94,2,0,0,civicAPI
-state_house,CA,63,0,CA-H-63,Natasha Johnson,Republican,R,91751,55.97,1,1,1,civicAPI
-state_house,CA,63,0,CA-H-63,Kevin Akin,Peace and Freedom,O,72181,44.03,2,0,0,civicAPI
+state_house,CA,63,0,CA-H-63,Natasha Johnson,Republican,R,92016,55.97,1,1,1,civicAPI
+state_house,CA,63,0,CA-H-63,Kevin Akin,Peace and Freedom,O,72398,44.03,2,0,0,civicAPI
 state_house,CA,64,0,CA-H-64,Blanca Pacheco,Democratic,D,105927,72.25,1,1,1,civicAPI
 state_house,CA,64,0,CA-H-64,Raul Ortiz Jr.,Republican,R,40693,27.75,2,0,0,civicAPI
 state_house,CA,65,0,CA-H-65,Ayanna Davis,Democratic,D,96526,82.27,1,1,0,civicAPI
@@ -2610,8 +2634,8 @@ state_house,CA,69,0,CA-H-69,Josh Lowenthal,Democratic,D,90117,65.72,1,1,1,civicA
 state_house,CA,69,0,CA-H-69,Carolyn J. Essex,Democratic,D,47010,34.28,2,0,0,civicAPI
 state_house,CA,70,0,CA-H-70,Paula Swift,Democratic,D,78916,52.12,1,1,0,civicAPI
 state_house,CA,70,0,CA-H-70,Tri Ta,Republican,R,72488,47.88,2,0,1,civicAPI
-state_house,CA,71,0,CA-H-71,Kate Sanchez,Republican,R,105624,53.44,1,1,1,civicAPI
-state_house,CA,71,0,CA-H-71,JJ Galvez,Democratic,D,92033,46.56,2,0,0,civicAPI
+state_house,CA,71,0,CA-H-71,Kate Sanchez,Republican,R,105684,53.44,1,1,1,civicAPI
+state_house,CA,71,0,CA-H-71,JJ Galvez,Democratic,D,92076,46.56,2,0,0,civicAPI
 state_house,CA,72,0,CA-H-72,Chris Kluwe,Democratic,D,110499,50.21,1,0,0,civicAPI
 state_house,CA,72,0,CA-H-72,Gracey Van Der Mark,Republican,R,109593,49.79,2,0,0,civicAPI
 state_house,CA,73,0,CA-H-73,Cottie Petrie-Norris,Democratic,D,98472,64.18,1,1,1,civicAPI
@@ -4096,12 +4120,13 @@ state_house,IL,25,0,IL-H-25,Antoinette Jewel Simmons,Republican,R,1855,6.42,2,0,
 state_house,IL,26,0,IL-H-26,Kam Buckner,Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,27,0,IL-H-27,Justin Q. Slaughter,Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,28,0,IL-H-28,"Robert ""Bob"" Rita",Democratic,D,0,0,1,1,0,civicAPI
-state_house,IL,29,0,IL-H-29,Thaddeus Jones,Democratic,D,0,0,1,1,0,civicAPI
+state_house,IL,29,0,IL-H-29,Thaddeus Jones,Democratic,D,3402,100.0,1,1,0,civicAPI
+state_house,IL,29,0,IL-H-29,Monet S. Wilson,Nonpartisan,I,0,0.0,2,0,0,civicAPI
 state_house,IL,30,0,IL-H-30,"William ""Will"" Davis",Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,31,0,IL-H-31,"Michael ""Mike"" Crawford",Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,32,0,IL-H-32,Lisa J. Davis,Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,33,0,IL-H-33,Marcus C. Evans Jr.,Democratic,D,0,0,1,1,0,civicAPI
-state_house,IL,34,0,IL-H-34,"Cleopatra ""Cleo"" Cowley",Democratic,D,0,0,1,1,0,civicAPI
+state_house,IL,34,0,IL-H-34,"Cleopatra ""Cleo"" Cowley",Democratic,D,3878,100.0,1,1,0,civicAPI
 state_house,IL,35,0,IL-H-35,Mary Gill,Democratic,D,27525,68.37,1,1,0,civicAPI
 state_house,IL,35,0,IL-H-35,David A. Dewar,Republican,R,12735,31.63,2,0,0,civicAPI
 state_house,IL,36,0,IL-H-36,Rick Ryan,Democratic,D,23290,68.27,1,1,0,civicAPI
@@ -4179,7 +4204,7 @@ state_house,IL,77,0,IL-H-77,Norma Hernandez,Democratic,D,16233,71.89,1,1,0,civic
 state_house,IL,77,0,IL-H-77,Anthony Airdo,Republican,R,6347,28.11,2,0,0,civicAPI
 state_house,IL,78,0,IL-H-78,Camille Lilly,Democratic,D,37022,88.64,1,1,0,civicAPI
 state_house,IL,78,0,IL-H-78,Julian-Jahleel Randolph Jemison,Republican,R,4747,11.36,2,0,0,civicAPI
-state_house,IL,79,0,IL-H-79,Jackie Haas,Republican,R,0,0,1,1,0,civicAPI
+state_house,IL,79,0,IL-H-79,Jackie Haas,Republican,R,17617,100.0,1,1,0,civicAPI
 state_house,IL,80,0,IL-H-80,Anthony DeLuca,Democratic,D,22025,64.08,1,1,0,civicAPI
 state_house,IL,80,0,IL-H-80,Adam M. Beaty,Republican,R,12348,35.92,2,0,0,civicAPI
 state_house,IL,81,0,IL-H-81,Anne Stava,Democratic,D,29709,65.76,1,1,0,civicAPI
@@ -4199,7 +4224,7 @@ state_house,IL,90,0,IL-H-90,John M. Cabello,Republican,R,8532,100.0,1,1,0,civicA
 state_house,IL,91,0,IL-H-91,Sharon Chung,Democratic,D,4482,100.0,1,1,0,civicAPI
 state_house,IL,92,0,IL-H-92,Jehan Gordon-Booth,Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,93,0,IL-H-93,Travis Weaver,Republican,R,8788,100.0,1,1,0,civicAPI
-state_house,IL,94,0,IL-H-94,Joshua S. Higgins,Republican,R,4261,100.0,1,1,0,civicAPI
+state_house,IL,94,0,IL-H-94,Joshua S. Higgins,Republican,R,7730,100.0,1,1,0,civicAPI
 state_house,IL,95,0,IL-H-95,Mike Coffey,Republican,R,1932,100.0,1,1,0,civicAPI
 state_house,IL,96,0,IL-H-96,Sue Scherer,Democratic,D,10634,100.0,1,1,0,civicAPI
 state_house,IL,97,0,IL-H-97,Jessica Dixon Heitman,Democratic,D,23889,61.43,1,1,0,civicAPI
@@ -4207,19 +4232,19 @@ state_house,IL,97,0,IL-H-97,Gabby Shanahan,Republican,R,14998,38.57,2,0,0,civicA
 state_house,IL,98,0,IL-H-98,Natalie A. Manley,Democratic,D,23977,69.77,1,1,0,civicAPI
 state_house,IL,98,0,IL-H-98,Nona Parker,Republican,R,10389,30.23,2,0,0,civicAPI
 state_house,IL,99,0,IL-H-99,Kyle A. Moore,Republican,R,0,0,1,1,0,civicAPI
-state_house,IL,100,0,IL-H-100,"Christopher ""C.D."" Davidsmeyer",Republican,R,0,0,1,1,0,civicAPI
+state_house,IL,100,0,IL-H-100,"Christopher ""C.D."" Davidsmeyer",Republican,R,4627,100.0,1,1,0,civicAPI
 state_house,IL,101,0,IL-H-101,Chris G. Miller,Republican,R,25525,65.19,1,1,0,civicAPI
 state_house,IL,101,0,IL-H-101,Douglas Fagan,Democratic,D,13629,34.81,2,0,0,civicAPI
-state_house,IL,102,0,IL-H-102,Adam M. Niemerg,Republican,R,15196,100.0,1,1,0,civicAPI
+state_house,IL,102,0,IL-H-102,Adam M. Niemerg,Republican,R,20961,100.0,1,1,0,civicAPI
 state_house,IL,103,0,IL-H-103,Carol Ammons,Democratic,D,0,0,1,1,0,civicAPI
 state_house,IL,104,0,IL-H-104,Mary Catherine Roberson,Democratic,D,18782,51.51,1,1,0,civicAPI
 state_house,IL,104,0,IL-H-104,Brandun Schweizer,Republican,R,17679,48.49,2,0,0,civicAPI
-state_house,IL,105,0,IL-H-105,Tim Ruestman,Republican,R,13308,100.0,1,1,0,civicAPI
+state_house,IL,105,0,IL-H-105,Tim Ruestman,Republican,R,16880,100.0,1,1,0,civicAPI
 state_house,IL,106,0,IL-H-106,Jason R. Bunting,Republican,R,9424,100.0,1,1,0,civicAPI
-state_house,IL,107,0,IL-H-107,Brad Halbrook,Republican,R,22392,100.0,1,1,0,civicAPI
-state_house,IL,108,0,IL-H-108,Wayne A. Rosenthal,Republican,R,771,100.0,1,1,0,civicAPI
+state_house,IL,107,0,IL-H-107,Brad Halbrook,Republican,R,23628,100.0,1,1,0,civicAPI
+state_house,IL,108,0,IL-H-108,Wayne A. Rosenthal,Republican,R,16926,100.0,1,1,0,civicAPI
 state_house,IL,109,0,IL-H-109,Charlie Meier,Republican,R,4072,100.0,1,1,0,civicAPI
-state_house,IL,110,0,IL-H-110,Blaine Wilhour,Republican,R,965,100.0,1,1,0,civicAPI
+state_house,IL,110,0,IL-H-110,Blaine Wilhour,Republican,R,6279,100.0,1,1,0,civicAPI
 state_house,IL,111,0,IL-H-111,Amy Elik,Republican,R,19529,55.17,1,1,0,civicAPI
 state_house,IL,111,0,IL-H-111,"Rosetta ""Rosie"" Brown",Democratic,D,15870,44.83,2,0,0,civicAPI
 state_house,IL,112,0,IL-H-112,Katie Stuart,Democratic,D,25005,62.43,1,1,0,civicAPI
@@ -4229,7 +4254,7 @@ state_house,IL,114,0,IL-H-114,George McClellan Jr.,Democratic,D,18309,51.02,1,0,
 state_house,IL,114,0,IL-H-114,Kevin Schmidt,Republican,R,17579,48.98,2,0,0,civicAPI
 state_house,IL,115,0,IL-H-115,David H. Friess,Republican,R,0,0,1,1,0,civicAPI
 state_house,IL,116,0,IL-H-116,Dave Severin,Republican,R,0,0,1,1,0,civicAPI
-state_house,IL,117,0,IL-H-117,Patrick Windhorst,Republican,R,0,0,1,1,0,civicAPI
+state_house,IL,117,0,IL-H-117,Patrick Windhorst,Republican,R,1220,100.0,1,1,0,civicAPI
 state_house,IL,118,0,IL-H-118,Scott Doody,Republican,R,18883,52.43,1,1,0,civicAPI
 state_house,IL,118,0,IL-H-118,"Homer ""Chip"" Markel",Democratic,D,17133,47.57,2,0,0,civicAPI
 state_house,IN,1,0,IN-H-1,Carolyn B. Jackson,Democratic,D,11608,100.0,1,1,0,civicAPI
@@ -4875,9 +4900,9 @@ state_house,MA,2ndmiddlesex,0,MA-H-2ndmiddlesex,James Arciero,D,D,0,0,1,1,,AP vi
 state_house,MA,2ndnorfolk,0,MA-H-2ndnorfolk,Tackey Chan,D,D,10861,72.68,1,1,,AP via NYT (unofficial)
 state_house,MA,2ndnorfolk,0,MA-H-2ndnorfolk,Sharon Cintolo,R,R,4045,27.07,2,0,,AP via NYT (unofficial)
 state_house,MA,2ndnorfolk,0,MA-H-2ndnorfolk,Total Write-ins,OTH,W,37,0.25,3,0,,AP via NYT (unofficial)
-state_house,MA,2ndplymouth,0,MA-H-2ndplymouth,Sarah Hewins,D,D,9323,50.25,1,,,AP via NYT (unofficial)
-state_house,MA,2ndplymouth,0,MA-H-2ndplymouth,John Gaskey,R,R,9232,49.75,2,,,AP via NYT (unofficial)
-state_house,MA,2ndplymouth,0,MA-H-2ndplymouth,Total Write-ins,OTH,W,0,0.0,3,,,AP via NYT (unofficial)
+state_house,MA,2ndplymouth,0,MA-H-2ndplymouth,Sarah Hewins,D,D,9315,50.13,1,,,AP via NYT (unofficial)
+state_house,MA,2ndplymouth,0,MA-H-2ndplymouth,John Gaskey,R,R,9264,49.85,2,,,AP via NYT (unofficial)
+state_house,MA,2ndplymouth,0,MA-H-2ndplymouth,Total Write-ins,OTH,W,3,0.02,3,,,AP via NYT (unofficial)
 state_house,MA,2ndsuffolk,0,MA-H-2ndsuffolk,Daniel Ryan,D,D,0,0,1,1,,AP via NYT (unofficial)
 state_house,MA,2ndworcester,0,MA-H-2ndworcester,Michael Nicholson,D,D,8611,56.1,1,1,,AP via NYT (unofficial)
 state_house,MA,2ndworcester,0,MA-H-2ndworcester,John Reilly,UNR,O,6623,43.15,2,0,,AP via NYT (unofficial)
@@ -8385,15 +8410,15 @@ state_house,NY,110,0,NY-H-110,Write-in,Nonpartisan,W,70,0.13,3,0,0,civicAPI
 state_house,NY,111,0,NY-H-111,Angelo L. Santabarbara,Democratic,D,24655,66.04,1,1,0,civicAPI
 state_house,NY,111,0,NY-H-111,Nicholas J. Sokaris,Republican,R,12642,33.86,2,0,0,civicAPI
 state_house,NY,111,0,NY-H-111,Write-in,Nonpartisan,W,35,0.09,3,0,0,civicAPI
-state_house,NY,112,0,NY-H-112,Mary Beth Walsh,Republican,R,33636,55.33,1,1,0,civicAPI
-state_house,NY,112,0,NY-H-112,Mario L. Fantini,Democratic,D,27129,44.62,2,0,0,civicAPI
+state_house,NY,112,0,NY-H-112,Mary Beth Walsh,Republican,R,33645,55.31,1,1,0,civicAPI
+state_house,NY,112,0,NY-H-112,Mario L. Fantini,Democratic,D,27152,44.64,2,0,0,civicAPI
 state_house,NY,112,0,NY-H-112,Write-in,Nonpartisan,W,29,0.05,3,0,0,civicAPI
 state_house,NY,113,0,NY-H-113,Carrie Woerner,Democratic,D,32489,58.45,1,1,0,civicAPI
 state_house,NY,113,0,NY-H-113,Allen Caruso,Republican,R,21707,39.05,2,0,0,civicAPI
 state_house,NY,113,0,NY-H-113,Thomas J. Kenny,Working Families,O,1366,2.46,3,0,0,civicAPI
 state_house,NY,113,0,NY-H-113,Write-in,Nonpartisan,W,27,0.05,4,0,0,civicAPI
-state_house,NY,114,0,NY-H-114,Matthew J. Simpson,Republican,R,32907,59.89,1,1,0,civicAPI
-state_house,NY,114,0,NY-H-114,John Gunther,Democratic,D,22024,40.08,2,0,0,civicAPI
+state_house,NY,114,0,NY-H-114,Matthew J. Simpson,Republican,R,32909,59.88,1,1,0,civicAPI
+state_house,NY,114,0,NY-H-114,John Gunther,Democratic,D,22032,40.09,2,0,0,civicAPI
 state_house,NY,114,0,NY-H-114,Write-in,Nonpartisan,W,16,0.03,3,0,0,civicAPI
 state_house,NY,115,0,NY-H-115,Michael Cashman,Democratic,D,36667,99.37,1,1,0,civicAPI
 state_house,NY,115,0,NY-H-115,Write-in,Nonpartisan,W,234,0.63,2,0,0,civicAPI
@@ -8402,8 +8427,8 @@ state_house,NY,116,0,NY-H-116,Write-in,Nonpartisan,W,350,1.04,2,0,0,civicAPI
 state_house,NY,117,0,NY-H-117,Tammie Nabywaniec,Republican,R,26459,68.43,1,1,0,civicAPI
 state_house,NY,117,0,NY-H-117,Dennis Gordon,Democratic,D,12183,31.51,2,0,0,civicAPI
 state_house,NY,117,0,NY-H-117,Write-in,Nonpartisan,W,23,0.06,3,0,0,civicAPI
-state_house,NY,118,0,NY-H-118,Heather A. Scribner,Republican,R,31773,66.15,1,1,0,civicAPI
-state_house,NY,118,0,NY-H-118,Colleen Maxwell,Democratic,D,16203,33.73,2,0,0,civicAPI
+state_house,NY,118,0,NY-H-118,Heather A. Scribner,Republican,R,31868,66.11,1,1,0,civicAPI
+state_house,NY,118,0,NY-H-118,Colleen Maxwell,Democratic,D,16278,33.77,2,0,0,civicAPI
 state_house,NY,118,0,NY-H-118,Write-in,Nonpartisan,W,56,0.12,3,0,0,civicAPI
 state_house,NY,119,0,NY-H-119,Michael C. Gentile,Republican,R,18578,52.41,1,1,0,civicAPI
 state_house,NY,119,0,NY-H-119,Jonathan E. Lipe,Democratic,D,16835,47.5,2,0,0,civicAPI
@@ -10657,16 +10682,16 @@ state_house,VT,benningtonrutland,0,VT-H-benningtonrutland,Total Write-ins,OTH,W,
 state_house,VT,caledonia1,0,VT-H-caledonia1,David Tucker,D,D,1121,51.97,1,1,,AP via NYT (unofficial)
 state_house,VT,caledonia1,0,VT-H-caledonia1,Debra Powers,R,R,1034,47.94,2,0,,AP via NYT (unofficial)
 state_house,VT,caledonia1,0,VT-H-caledonia1,Total Write-ins,OTH,W,2,0.09,3,0,,AP via NYT (unofficial)
-state_house,VT,caledonia2,0,VT-H-caledonia2,Michael Southworth,R,R,997,50.18,1,,,AP via NYT (unofficial)
-state_house,VT,caledonia2,0,VT-H-caledonia2,Audrey Grant,D,D,989,49.77,2,,,AP via NYT (unofficial)
-state_house,VT,caledonia2,0,VT-H-caledonia2,Total Write-ins,OTH,W,1,0.05,3,,,AP via NYT (unofficial)
+state_house,VT,caledonia2,0,VT-H-caledonia2,Michael Southworth,R,R,997,50.18,1,1,,AP via NYT (unofficial)
+state_house,VT,caledonia2,0,VT-H-caledonia2,Audrey Grant,D,D,989,49.77,2,0,,AP via NYT (unofficial)
+state_house,VT,caledonia2,0,VT-H-caledonia2,Total Write-ins,OTH,W,1,0.05,3,0,,AP via NYT (unofficial)
 state_house,VT,caledonia3,0,VT-H-caledonia3,Beth Quimby,R,R,1875,31.49,1,1,,AP via NYT (unofficial)
 state_house,VT,caledonia3,0,VT-H-caledonia3,Dennis LaBounty,D,D,1607,26.99,2,1,,AP via NYT (unofficial)
 state_house,VT,caledonia3,0,VT-H-caledonia3,Erik Lavallee,R,R,1510,25.36,3,0,,AP via NYT (unofficial)
 state_house,VT,caledonia3,0,VT-H-caledonia3,Bill Coleman,PRG,O,956,16.05,4,0,,AP via NYT (unofficial)
 state_house,VT,caledonia3,0,VT-H-caledonia3,Total Write-ins,OTH,W,7,0.12,5,0,,AP via NYT (unofficial)
 state_house,VT,caledoniaessex,0,VT-H-caledoniaessex,Amanda Cochrane,D,D,2003,31.21,1,1,,AP via NYT (unofficial)
-state_house,VT,caledoniaessex,0,VT-H-caledoniaessex,Deborah Dolgin,R,R,1332,20.76,2,0,,AP via NYT (unofficial)
+state_house,VT,caledoniaessex,0,VT-H-caledoniaessex,Deborah Dolgin,R,R,1332,20.76,2,1,,AP via NYT (unofficial)
 state_house,VT,caledoniaessex,0,VT-H-caledoniaessex,Steven Dolgin,R,R,1301,20.27,3,0,,AP via NYT (unofficial)
 state_house,VT,caledoniaessex,0,VT-H-caledoniaessex,Heather Whitemore Young,D,D,1199,18.68,4,0,,AP via NYT (unofficial)
 state_house,VT,caledoniaessex,0,VT-H-caledoniaessex,Brandolyn Bradley,IND,I,577,8.99,5,0,,AP via NYT (unofficial)
@@ -10742,20 +10767,20 @@ state_house,VT,chittenden8,0,VT-H-chittenden8,Bridget Burkhardt,D,D,1732,67.47,1
 state_house,VT,chittenden8,0,VT-H-chittenden8,Mitchel Cypes,R,R,828,32.26,2,0,,AP via NYT (unofficial)
 state_house,VT,chittenden8,0,VT-H-chittenden8,Total Write-ins,OTH,W,7,0.27,3,0,,AP via NYT (unofficial)
 state_house,VT,chittenden9,0,VT-H-chittenden9,Emilie Krasnow,D,D,0,0,1,1,,AP via NYT (unofficial)
-state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Natalie Cashen,D,D,1667,25.47,1,,,AP via NYT (unofficial)
-state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Henry Bonges,D,D,1659,25.34,2,,,AP via NYT (unofficial)
-state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Anthony Micklus,R,R,1625,24.82,3,,,AP via NYT (unofficial)
-state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Kumulia Long,R,R,1591,24.3,4,,,AP via NYT (unofficial)
-state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Total Write-ins,OTH,W,4,0.06,5,,,AP via NYT (unofficial)
+state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Natalie Cashen,D,D,1667,25.47,1,1,,AP via NYT (unofficial)
+state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Henry Bonges,D,D,1659,25.34,2,1,,AP via NYT (unofficial)
+state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Anthony Micklus,R,R,1625,24.82,3,0,,AP via NYT (unofficial)
+state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Kumulia Long,R,R,1591,24.3,4,0,,AP via NYT (unofficial)
+state_house,VT,chittendenfranklin,0,VT-H-chittendenfranklin,Total Write-ins,OTH,W,4,0.06,5,0,,AP via NYT (unofficial)
 state_house,VT,essexcaledonia,0,VT-H-essexcaledonia,John Kascenska,R,R,0,0,1,1,,AP via NYT (unofficial)
 state_house,VT,essexorleans,0,VT-H-essexorleans,David Jacobs,R,R,1478,82.43,1,1,,AP via NYT (unofficial)
 state_house,VT,essexorleans,0,VT-H-essexorleans,John Lally,OTH,O,285,15.9,2,0,,AP via NYT (unofficial)
 state_house,VT,essexorleans,0,VT-H-essexorleans,Total Write-ins,OTH,W,30,1.67,3,0,,AP via NYT (unofficial)
-state_house,VT,franklin1,0,VT-H-franklin1,Keith Billado,R,R,2129,25.68,1,,,AP via NYT (unofficial)
-state_house,VT,franklin1,0,VT-H-franklin1,Caroline Bright,D,D,2100,25.33,2,,,AP via NYT (unofficial)
-state_house,VT,franklin1,0,VT-H-franklin1,Bob Stebbins,R,R,2098,25.3,3,,,AP via NYT (unofficial)
-state_house,VT,franklin1,0,VT-H-franklin1,Julie Filiberti,D,D,1956,23.59,4,,,AP via NYT (unofficial)
-state_house,VT,franklin1,0,VT-H-franklin1,Total Write-ins,OTH,W,8,0.1,5,,,AP via NYT (unofficial)
+state_house,VT,franklin1,0,VT-H-franklin1,Keith Billado,R,R,2129,25.68,1,1,,AP via NYT (unofficial)
+state_house,VT,franklin1,0,VT-H-franklin1,Caroline Bright,D,D,2100,25.33,2,1,,AP via NYT (unofficial)
+state_house,VT,franklin1,0,VT-H-franklin1,Bob Stebbins,R,R,2098,25.3,3,0,,AP via NYT (unofficial)
+state_house,VT,franklin1,0,VT-H-franklin1,Julie Filiberti,D,D,1956,23.59,4,0,,AP via NYT (unofficial)
+state_house,VT,franklin1,0,VT-H-franklin1,Total Write-ins,OTH,W,8,0.1,5,0,,AP via NYT (unofficial)
 state_house,VT,franklin2,0,VT-H-franklin2,Eileen Dickinson,R,R,997,50.87,1,1,,AP via NYT (unofficial)
 state_house,VT,franklin2,0,VT-H-franklin2,Pam McCarthy,D,D,961,49.03,2,0,,AP via NYT (unofficial)
 state_house,VT,franklin2,0,VT-H-franklin2,Total Write-ins,OTH,W,2,0.1,3,0,,AP via NYT (unofficial)
@@ -10775,7 +10800,7 @@ state_house,VT,franklin8,0,VT-H-franklin8,Zach Scheffler,D,D,1022,55.94,1,1,,AP 
 state_house,VT,franklin8,0,VT-H-franklin8,John Brigham,R,R,798,43.68,2,0,,AP via NYT (unofficial)
 state_house,VT,franklin8,0,VT-H-franklin8,Total Write-ins,OTH,W,7,0.38,3,0,,AP via NYT (unofficial)
 state_house,VT,grandislechittenden,0,VT-H-grandislechittenden,Michael Morgan,R,R,2381,25.92,1,1,,AP via NYT (unofficial)
-state_house,VT,grandislechittenden,0,VT-H-grandislechittenden,Dave Skinner,D,D,2328,25.34,2,0,,AP via NYT (unofficial)
+state_house,VT,grandislechittenden,0,VT-H-grandislechittenden,Dave Skinner,D,D,2328,25.34,2,1,,AP via NYT (unofficial)
 state_house,VT,grandislechittenden,0,VT-H-grandislechittenden,Sylvia Jensen,D,D,2246,24.45,3,0,,AP via NYT (unofficial)
 state_house,VT,grandislechittenden,0,VT-H-grandislechittenden,Josie Henry,R,R,2227,24.24,4,0,,AP via NYT (unofficial)
 state_house,VT,grandislechittenden,0,VT-H-grandislechittenden,Total Write-ins,OTH,W,5,0.05,5,0,,AP via NYT (unofficial)
@@ -10919,71 +10944,71 @@ state_house,VT,windsororange2,0,VT-H-windsororange2,Lauren Rhim,D,D,0,0,2,1,,AP 
 state_house,VT,windsorwindham,0,VT-H-windsorwindham,William Hoser,D,D,1344,59.36,1,1,,AP via NYT (unofficial)
 state_house,VT,windsorwindham,0,VT-H-windsorwindham,Thomas Charlton,R,R,916,40.46,2,0,,AP via NYT (unofficial)
 state_house,VT,windsorwindham,0,VT-H-windsorwindham,Total Write-ins,OTH,W,4,0.18,3,0,,AP via NYT (unofficial)
-state_house,WA,1-P1,0,WA-H-1-P1,Davina Duerr,(Prefers Democratic Party),D,51940,73.04,1,1,0,Washington Secretary of State
-state_house,WA,1-P1,0,WA-H-1-P1,Maggie Wang,(Prefers Republican Party),R,19083,26.84,2,0,0,Washington Secretary of State
+state_house,WA,1-P1,0,WA-H-1-P1,Davina Duerr,(Prefers Democratic Party),D,51951,73.04,1,1,0,Washington Secretary of State
+state_house,WA,1-P1,0,WA-H-1-P1,Maggie Wang,(Prefers Republican Party),R,19085,26.83,2,0,0,Washington Secretary of State
 state_house,WA,1-P1,0,WA-H-1-P1,Write-in,Nonpartisan,W,86,0.12,3,0,0,Washington Secretary of State
-state_house,WA,1-P2,0,WA-H-1-P2,Shelley Kloba,(Prefers Democratic Party),D,51341,72.46,1,1,0,Washington Secretary of State
-state_house,WA,1-P2,0,WA-H-1-P2,Cliff Moon,(Prefers Republican Party),R,19397,27.37,2,0,0,Washington Secretary of State
+state_house,WA,1-P2,0,WA-H-1-P2,Shelley Kloba,(Prefers Democratic Party),D,51350,72.45,1,1,0,Washington Secretary of State
+state_house,WA,1-P2,0,WA-H-1-P2,Cliff Moon,(Prefers Republican Party),R,19401,27.37,2,0,0,Washington Secretary of State
 state_house,WA,1-P2,0,WA-H-1-P2,Write-in,Nonpartisan,W,121,0.17,3,0,0,Washington Secretary of State
-state_house,WA,2-P1,0,WA-H-2-P1,Andrew Barkis,(Prefers Republican Party),R,33962,56.84,1,1,0,Washington Secretary of State
-state_house,WA,2-P1,0,WA-H-2-P1,William Dehnel,(Prefers Labor Democrat Party),D,25714,43.03,2,0,0,Washington Secretary of State
+state_house,WA,2-P1,0,WA-H-2-P1,Andrew Barkis,(Prefers Republican Party),R,33971,56.83,1,1,0,Washington Secretary of State
+state_house,WA,2-P1,0,WA-H-2-P1,William Dehnel,(Prefers Labor Democrat Party),D,25724,43.04,2,0,0,Washington Secretary of State
 state_house,WA,2-P1,0,WA-H-2-P1,Write-in,Nonpartisan,W,79,0.13,3,0,0,Washington Secretary of State
-state_house,WA,2-P2,0,WA-H-2-P2,Matt Marshall,(Prefers Republican Party),R,33772,56.43,1,1,0,Washington Secretary of State
-state_house,WA,2-P2,0,WA-H-2-P2,Angela Taylor,(Prefers Democratic Party),D,26006,43.45,2,0,0,Washington Secretary of State
+state_house,WA,2-P2,0,WA-H-2-P2,Matt Marshall,(Prefers Republican Party),R,33783,56.43,1,1,0,Washington Secretary of State
+state_house,WA,2-P2,0,WA-H-2-P2,Angela Taylor,(Prefers Democratic Party),D,26014,43.45,2,0,0,Washington Secretary of State
 state_house,WA,2-P2,0,WA-H-2-P2,Write-in,Nonpartisan,W,69,0.12,3,0,0,Washington Secretary of State
-state_house,WA,3-P1,0,WA-H-3-P1,Natasha Hill,(Prefers Democrat Party),D,42997,66.13,1,1,0,Washington Secretary of State
-state_house,WA,3-P1,0,WA-H-3-P1,Tony Kiepe,(Prefers Republican Party),R,21890,33.67,2,0,0,Washington Secretary of State
-state_house,WA,3-P1,0,WA-H-3-P1,Write-in,Nonpartisan,W,135,0.21,3,0,0,Washington Secretary of State
-state_house,WA,3-P2,0,WA-H-3-P2,Luc Jasmin III,(Prefers Democratic Party),D,41687,64.18,1,1,0,Washington Secretary of State
-state_house,WA,3-P2,0,WA-H-3-P2,Natalie Poulson,(Prefers Republican Party),R,23152,35.65,2,0,0,Washington Secretary of State
-state_house,WA,3-P2,0,WA-H-3-P2,Write-in,Nonpartisan,W,111,0.17,3,0,0,Washington Secretary of State
-state_house,WA,4-P1,0,WA-H-4-P1,Hillary Q. Pham,(Prefers Republican Party),R,29663,49.38,1,1,0,Washington Secretary of State
-state_house,WA,4-P1,0,WA-H-4-P1,Trent Maier,(Prefers Republican Party),R,26442,44.02,2,0,0,Washington Secretary of State
-state_house,WA,4-P1,0,WA-H-4-P1,Write-in,Nonpartisan,W,3961,6.59,3,0,0,Washington Secretary of State
-state_house,WA,4-P2,0,WA-H-4-P2,Rob Chase,(Prefers Republican Party),R,38760,56.67,1,1,0,Washington Secretary of State
-state_house,WA,4-P2,0,WA-H-4-P2,Rob Tupper,(Prefers Democratic Party),D,29457,43.07,2,0,0,Washington Secretary of State
-state_house,WA,4-P2,0,WA-H-4-P2,Write-in,Nonpartisan,W,183,0.27,3,0,0,Washington Secretary of State
-state_house,WA,5-P1,0,WA-H-5-P1,Zach Hall,(Prefers Democratic Party),D,41418,56.63,1,1,0,Washington Secretary of State
-state_house,WA,5-P1,0,WA-H-5-P1,Michelle Bennett,(Prefers Republican Party),R,31655,43.28,2,0,0,Washington Secretary of State
+state_house,WA,3-P1,0,WA-H-3-P1,Natasha Hill,(Prefers Democrat Party),D,43106,66.13,1,1,0,Washington Secretary of State
+state_house,WA,3-P1,0,WA-H-3-P1,Tony Kiepe,(Prefers Republican Party),R,21937,33.66,2,0,0,Washington Secretary of State
+state_house,WA,3-P1,0,WA-H-3-P1,Write-in,Nonpartisan,W,136,0.21,3,0,0,Washington Secretary of State
+state_house,WA,3-P2,0,WA-H-3-P2,Luc Jasmin III,(Prefers Democratic Party),D,41798,64.2,1,1,0,Washington Secretary of State
+state_house,WA,3-P2,0,WA-H-3-P2,Natalie Poulson,(Prefers Republican Party),R,23198,35.63,2,0,0,Washington Secretary of State
+state_house,WA,3-P2,0,WA-H-3-P2,Write-in,Nonpartisan,W,112,0.17,3,0,0,Washington Secretary of State
+state_house,WA,4-P1,0,WA-H-4-P1,Hillary Q. Pham,(Prefers Republican Party),R,29716,49.39,1,1,0,Washington Secretary of State
+state_house,WA,4-P1,0,WA-H-4-P1,Trent Maier,(Prefers Republican Party),R,26476,44.0,2,0,0,Washington Secretary of State
+state_house,WA,4-P1,0,WA-H-4-P1,Write-in,Nonpartisan,W,3979,6.61,3,0,0,Washington Secretary of State
+state_house,WA,4-P2,0,WA-H-4-P2,Rob Chase,(Prefers Republican Party),R,38814,56.64,1,1,0,Washington Secretary of State
+state_house,WA,4-P2,0,WA-H-4-P2,Rob Tupper,(Prefers Democratic Party),D,29527,43.09,2,0,0,Washington Secretary of State
+state_house,WA,4-P2,0,WA-H-4-P2,Write-in,Nonpartisan,W,185,0.27,3,0,0,Washington Secretary of State
+state_house,WA,5-P1,0,WA-H-5-P1,Zach Hall,(Prefers Democratic Party),D,41419,56.63,1,1,0,Washington Secretary of State
+state_house,WA,5-P1,0,WA-H-5-P1,Michelle Bennett,(Prefers Republican Party),R,31657,43.28,2,0,0,Washington Secretary of State
 state_house,WA,5-P1,0,WA-H-5-P1,Write-in,Nonpartisan,W,66,0.09,3,0,0,Washington Secretary of State
-state_house,WA,5-P2,0,WA-H-5-P2,Lisa Callan,(Prefers Democratic Party),D,42578,58.46,1,1,0,Washington Secretary of State
-state_house,WA,5-P2,0,WA-H-5-P2,Patrick Peacock,(Prefers Republican Party),R,30180,41.44,2,0,0,Washington Secretary of State
+state_house,WA,5-P2,0,WA-H-5-P2,Lisa Callan,(Prefers Democratic Party),D,42579,58.46,1,1,0,Washington Secretary of State
+state_house,WA,5-P2,0,WA-H-5-P2,Patrick Peacock,(Prefers Republican Party),R,30181,41.44,2,0,0,Washington Secretary of State
 state_house,WA,5-P2,0,WA-H-5-P2,Write-in,Nonpartisan,W,73,0.1,3,0,0,Washington Secretary of State
-state_house,WA,6-P1,0,WA-H-6-P1,Alan Nolan,(Prefers Republican Party),R,33953,53.64,1,1,0,Washington Secretary of State
-state_house,WA,6-P1,0,WA-H-6-P1,Michaela Kelso,(Prefers Democratic Party),D,29219,46.16,2,0,0,Washington Secretary of State
+state_house,WA,6-P1,0,WA-H-6-P1,Alan Nolan,(Prefers Republican Party),R,34010,53.61,1,1,0,Washington Secretary of State
+state_house,WA,6-P1,0,WA-H-6-P1,Michaela Kelso,(Prefers Democratic Party),D,29300,46.19,2,0,0,Washington Secretary of State
 state_house,WA,6-P1,0,WA-H-6-P1,Write-in,Nonpartisan,W,124,0.2,3,0,0,Washington Secretary of State
-state_house,WA,6-P2,0,WA-H-6-P2,Jonathan Bingle,(Prefers Republican Party),R,35863,56.64,1,1,0,Washington Secretary of State
-state_house,WA,6-P2,0,WA-H-6-P2,Julia Payne,(Prefers Democratic Party),D,27329,43.16,2,0,0,Washington Secretary of State
-state_house,WA,6-P2,0,WA-H-6-P2,Write-in,Nonpartisan,W,130,0.21,3,0,0,Washington Secretary of State
-state_house,WA,7-P1,0,WA-H-7-P1,Andrew Engell,(Prefers Republican Party),R,49831,96.44,1,1,0,Washington Secretary of State
-state_house,WA,7-P1,0,WA-H-7-P1,Write-in,Nonpartisan,W,1840,3.56,2,0,0,Washington Secretary of State
-state_house,WA,7-P2,0,WA-H-7-P2,Hunter Abell,(Prefers Republican Party),R,49329,96.55,1,1,0,Washington Secretary of State
-state_house,WA,7-P2,0,WA-H-7-P2,Write-in,Nonpartisan,W,1762,3.45,2,0,0,Washington Secretary of State
+state_house,WA,6-P2,0,WA-H-6-P2,Jonathan Bingle,(Prefers Republican Party),R,35918,56.6,1,1,0,Washington Secretary of State
+state_house,WA,6-P2,0,WA-H-6-P2,Julia Payne,(Prefers Democratic Party),D,27413,43.2,2,0,0,Washington Secretary of State
+state_house,WA,6-P2,0,WA-H-6-P2,Write-in,Nonpartisan,W,130,0.2,3,0,0,Washington Secretary of State
+state_house,WA,7-P1,0,WA-H-7-P1,Andrew Engell,(Prefers Republican Party),R,49881,96.43,1,1,0,Washington Secretary of State
+state_house,WA,7-P1,0,WA-H-7-P1,Write-in,Nonpartisan,W,1844,3.57,2,0,0,Washington Secretary of State
+state_house,WA,7-P2,0,WA-H-7-P2,Hunter Abell,(Prefers Republican Party),R,49378,96.55,1,1,0,Washington Secretary of State
+state_house,WA,7-P2,0,WA-H-7-P2,Write-in,Nonpartisan,W,1766,3.45,2,0,0,Washington Secretary of State
 state_house,WA,8-P1,0,WA-H-8-P1,Stephanie Barnard,(Prefers Republican Party),R,40312,96.56,1,1,0,Washington Secretary of State
 state_house,WA,8-P1,0,WA-H-8-P1,Write-in,Nonpartisan,W,1435,3.44,2,0,0,Washington Secretary of State
 state_house,WA,8-P2,0,WA-H-8-P2,April Connors,(Prefers Republican Party),R,40374,96.52,1,1,0,Washington Secretary of State
 state_house,WA,8-P2,0,WA-H-8-P2,Write-in,Nonpartisan,W,1456,3.48,2,0,0,Washington Secretary of State
-state_house,WA,9-P1,0,WA-H-9-P1,Mary Dye,(Prefers Republican Party),R,46392,93.35,1,1,0,Washington Secretary of State
-state_house,WA,9-P1,0,WA-H-9-P1,Write-in,Nonpartisan,W,3304,6.65,2,0,0,Washington Secretary of State
-state_house,WA,9-P2,0,WA-H-9-P2,Joe Schmick,(Prefers Republican Party),R,40373,60.84,1,1,0,Washington Secretary of State
-state_house,WA,9-P2,0,WA-H-9-P2,Karina Wallace,(Prefers Democratic Party),D,25875,38.99,2,0,0,Washington Secretary of State
+state_house,WA,9-P1,0,WA-H-9-P1,Mary Dye,(Prefers Republican Party),R,46448,93.36,1,1,0,Washington Secretary of State
+state_house,WA,9-P1,0,WA-H-9-P1,Write-in,Nonpartisan,W,3306,6.64,2,0,0,Washington Secretary of State
+state_house,WA,9-P2,0,WA-H-9-P2,Joe Schmick,(Prefers Republican Party),R,40422,60.85,1,1,0,Washington Secretary of State
+state_house,WA,9-P2,0,WA-H-9-P2,Karina Wallace,(Prefers Democratic Party),D,25905,38.99,2,0,0,Washington Secretary of State
 state_house,WA,9-P2,0,WA-H-9-P2,Write-in,Nonpartisan,W,107,0.16,3,0,0,Washington Secretary of State
-state_house,WA,10-P1,0,WA-H-10-P1,Clyde Shavers,(Prefers Democratic Party),D,43185,56.55,1,1,0,Washington Secretary of State
-state_house,WA,10-P1,0,WA-H-10-P1,Robert (Chili) Hicks,(Prefers Republican Party),R,33081,43.32,2,0,0,Washington Secretary of State
+state_house,WA,10-P1,0,WA-H-10-P1,Clyde Shavers,(Prefers Democratic Party),D,43191,56.55,1,1,0,Washington Secretary of State
+state_house,WA,10-P1,0,WA-H-10-P1,Robert (Chili) Hicks,(Prefers Republican Party),R,33083,43.32,2,0,0,Washington Secretary of State
 state_house,WA,10-P1,0,WA-H-10-P1,Write-in,Nonpartisan,W,102,0.13,3,0,0,Washington Secretary of State
-state_house,WA,10-P2,0,WA-H-10-P2,Dave Paul,(Prefers Democratic Party),D,44484,58.39,1,1,0,Washington Secretary of State
-state_house,WA,10-P2,0,WA-H-10-P2,Tim Hazelo,(Prefers Republican Party),R,31607,41.48,2,0,0,Washington Secretary of State
+state_house,WA,10-P2,0,WA-H-10-P2,Dave Paul,(Prefers Democratic Party),D,44490,58.39,1,1,0,Washington Secretary of State
+state_house,WA,10-P2,0,WA-H-10-P2,Tim Hazelo,(Prefers Republican Party),R,31609,41.48,2,0,0,Washington Secretary of State
 state_house,WA,10-P2,0,WA-H-10-P2,Write-in,Nonpartisan,W,99,0.13,3,0,0,Washington Secretary of State
-state_house,WA,11-P1,0,WA-H-11-P1,David Hackney,(Prefers Democratic Party),D,25002,56.98,1,1,0,Washington Secretary of State
-state_house,WA,11-P1,0,WA-H-11-P1,Ashley Fedan,(Prefers Democratic Party),D,17606,40.13,2,0,0,Washington Secretary of State
+state_house,WA,11-P1,0,WA-H-11-P1,David Hackney,(Prefers Democratic Party),D,25007,56.99,1,1,0,Washington Secretary of State
+state_house,WA,11-P1,0,WA-H-11-P1,Ashley Fedan,(Prefers Democratic Party),D,17609,40.13,2,0,0,Washington Secretary of State
 state_house,WA,11-P1,0,WA-H-11-P1,Write-in,Nonpartisan,W,1267,2.89,3,0,0,Washington Secretary of State
-state_house,WA,11-P2,0,WA-H-11-P2,Steve Bergquist,(Prefers Democratic Party),D,37321,96.27,1,1,0,Washington Secretary of State
-state_house,WA,11-P2,0,WA-H-11-P2,Write-in,Nonpartisan,W,1448,3.73,2,0,0,Washington Secretary of State
-state_house,WA,12-P1,0,WA-H-12-P1,Stacy Willoughby,(Prefers Democratic Party),D,36969,50.64,1,0,0,Washington Secretary of State
-state_house,WA,12-P1,0,WA-H-12-P1,Brian Burnett,(Prefers Republican Party),R,35973,49.28,2,0,0,Washington Secretary of State
+state_house,WA,11-P2,0,WA-H-11-P2,Steve Bergquist,(Prefers Democratic Party),D,37328,96.59,1,1,0,Washington Secretary of State
+state_house,WA,11-P2,0,WA-H-11-P2,Write-in,Nonpartisan,W,1316,3.41,2,0,0,Washington Secretary of State
+state_house,WA,12-P1,0,WA-H-12-P1,Stacy Willoughby,(Prefers Democratic Party),D,36970,50.64,1,0,0,Washington Secretary of State
+state_house,WA,12-P1,0,WA-H-12-P1,Brian Burnett,(Prefers Republican Party),R,35979,49.28,2,0,0,Washington Secretary of State
 state_house,WA,12-P1,0,WA-H-12-P1,Write-in,Nonpartisan,W,59,0.08,3,0,0,Washington Secretary of State
-state_house,WA,12-P2,0,WA-H-12-P2,Mike Steele,(Prefers Republican Party),R,39757,54.72,1,1,0,Washington Secretary of State
-state_house,WA,12-P2,0,WA-H-12-P2,Maggie Adams,(Prefers Democratic Party),D,32812,45.16,2,0,0,Washington Secretary of State
+state_house,WA,12-P2,0,WA-H-12-P2,Mike Steele,(Prefers Republican Party),R,39763,54.72,1,1,0,Washington Secretary of State
+state_house,WA,12-P2,0,WA-H-12-P2,Maggie Adams,(Prefers Democratic Party),D,32813,45.15,2,0,0,Washington Secretary of State
 state_house,WA,12-P2,0,WA-H-12-P2,Write-in,Nonpartisan,W,92,0.13,3,0,0,Washington Secretary of State
 state_house,WA,13-P1,0,WA-H-13-P1,Tom Dent,(Prefers Republican Party),R,34584,65.87,1,1,0,Washington Secretary of State
 state_house,WA,13-P1,0,WA-H-13-P1,"Juan ""Jerry"" Garcia",(Prefers Democratic Party),D,17850,34.0,2,0,0,Washington Secretary of State
@@ -10991,11 +11016,11 @@ state_house,WA,13-P1,0,WA-H-13-P1,Write-in,Nonpartisan,W,71,0.14,3,0,0,Washingto
 state_house,WA,13-P2,0,WA-H-13-P2,Joshua Thompson,(Prefers Republican Party),R,23454,52.54,1,1,0,Washington Secretary of State
 state_house,WA,13-P2,0,WA-H-13-P2,Deanna Martinez,(Prefers Republican Party),R,20175,45.19,2,0,0,Washington Secretary of State
 state_house,WA,13-P2,0,WA-H-13-P2,Write-in,Nonpartisan,W,1013,2.27,3,0,0,Washington Secretary of State
-state_house,WA,14-P1,0,WA-H-14-P1,Chelsea Dimas,(Prefers Democratic Party),D,16407,57.48,1,1,0,Washington Secretary of State
-state_house,WA,14-P1,0,WA-H-14-P1,Gloria Mendoza,(Prefers Republican Party),R,12026,42.13,2,0,0,Washington Secretary of State
+state_house,WA,14-P1,0,WA-H-14-P1,Chelsea Dimas,(Prefers Democratic Party),D,16412,57.48,1,1,0,Washington Secretary of State
+state_house,WA,14-P1,0,WA-H-14-P1,Gloria Mendoza,(Prefers Republican Party),R,12030,42.13,2,0,0,Washington Secretary of State
 state_house,WA,14-P1,0,WA-H-14-P1,Write-in,Nonpartisan,W,110,0.39,3,0,0,Washington Secretary of State
-state_house,WA,14-P2,0,WA-H-14-P2,Ezequiel Morfin,(Prefers Democratic Party),D,16709,58.21,1,1,0,Washington Secretary of State
-state_house,WA,14-P2,0,WA-H-14-P2,Deb Manjarrez,(Prefers Republican Party),R,11865,41.34,2,0,0,Washington Secretary of State
+state_house,WA,14-P2,0,WA-H-14-P2,Ezequiel Morfin,(Prefers Democratic Party),D,16715,58.21,1,1,0,Washington Secretary of State
+state_house,WA,14-P2,0,WA-H-14-P2,Deb Manjarrez,(Prefers Republican Party),R,11869,41.34,2,0,0,Washington Secretary of State
 state_house,WA,14-P2,0,WA-H-14-P2,Write-in,Nonpartisan,W,129,0.45,3,0,0,Washington Secretary of State
 state_house,WA,15-P1,0,WA-H-15-P1,Chris Corry,(Prefers Republican Party),R,33911,61.04,1,1,0,Washington Secretary of State
 state_house,WA,15-P1,0,WA-H-15-P1,Jack McEntire,(Prefers Democratic Party),D,21565,38.82,2,0,0,Washington Secretary of State
@@ -11009,47 +11034,47 @@ state_house,WA,16-P1,0,WA-H-16-P1,Write-in,Nonpartisan,W,50,0.09,3,0,0,Washingto
 state_house,WA,16-P2,0,WA-H-16-P2,Skyler Rude,(Prefers Republican Party),R,31276,53.91,1,1,0,Washington Secretary of State
 state_house,WA,16-P2,0,WA-H-16-P2,Derek Sarley,(Prefers Democratic Party),D,26676,45.98,2,0,0,Washington Secretary of State
 state_house,WA,16-P2,0,WA-H-16-P2,Write-in,Nonpartisan,W,68,0.12,3,0,0,Washington Secretary of State
-state_house,WA,17-P1,0,WA-H-17-P1,Ben Christly,(Prefers Democratic Party),D,42503,55.32,1,1,0,Washington Secretary of State
-state_house,WA,17-P1,0,WA-H-17-P1,Kevin Waters,(Prefers Republican Party),R,34184,44.5,2,0,0,Washington Secretary of State
+state_house,WA,17-P1,0,WA-H-17-P1,Ben Christly,(Prefers Democratic Party),D,42534,55.32,1,1,0,Washington Secretary of State
+state_house,WA,17-P1,0,WA-H-17-P1,Kevin Waters,(Prefers Republican Party),R,34221,44.5,2,0,0,Washington Secretary of State
 state_house,WA,17-P1,0,WA-H-17-P1,Write-in,Nonpartisan,W,139,0.18,3,0,0,Washington Secretary of State
-state_house,WA,17-P2,0,WA-H-17-P2,Diana H. Perez,(Prefers Democratic Party),D,42560,55.38,1,1,0,Washington Secretary of State
-state_house,WA,17-P2,0,WA-H-17-P2,David Stuebe,(Prefers Republican Party),R,34165,44.46,2,0,0,Washington Secretary of State
+state_house,WA,17-P2,0,WA-H-17-P2,Diana H. Perez,(Prefers Democratic Party),D,42592,55.38,1,1,0,Washington Secretary of State
+state_house,WA,17-P2,0,WA-H-17-P2,David Stuebe,(Prefers Republican Party),R,34200,44.47,2,0,0,Washington Secretary of State
 state_house,WA,17-P2,0,WA-H-17-P2,Write-in,Nonpartisan,W,120,0.16,3,0,0,Washington Secretary of State
-state_house,WA,18-P1,0,WA-H-18-P1,Randi L. Knott,(Prefers Democratic Party),D,38518,52.39,1,1,0,Washington Secretary of State
-state_house,WA,18-P1,0,WA-H-18-P1,Stephanie McClintock,(Prefers Republican Party),R,34872,47.44,2,0,0,Washington Secretary of State
-state_house,WA,18-P1,0,WA-H-18-P1,Write-in,Nonpartisan,W,125,0.17,3,0,0,Washington Secretary of State
-state_house,WA,18-P2,0,WA-H-18-P2,Deken Letinich,(Prefers Democratic Party),D,39448,53.78,1,1,0,Washington Secretary of State
-state_house,WA,18-P2,0,WA-H-18-P2,John Ley,(Prefers Republican Party),R,33742,46.0,2,0,0,Washington Secretary of State
-state_house,WA,18-P2,0,WA-H-18-P2,Write-in,Nonpartisan,W,159,0.22,3,0,0,Washington Secretary of State
-state_house,WA,19-P1,0,WA-H-19-P1,Jim Walsh,(Prefers Republican Party),R,38030,55.33,1,1,0,Washington Secretary of State
-state_house,WA,19-P1,0,WA-H-19-P1,Kevin Moynihan,(Prefers Democratic Party),D,30624,44.55,2,0,0,Washington Secretary of State
-state_house,WA,19-P1,0,WA-H-19-P1,Write-in,Nonpartisan,W,85,0.12,3,0,0,Washington Secretary of State
-state_house,WA,19-P2,0,WA-H-19-P2,Joel McEntire,(Prefers Republican Party),R,37405,54.85,1,1,0,Washington Secretary of State
-state_house,WA,19-P2,0,WA-H-19-P2,Terry Carlson,(Prefers Democratic Party),D,30631,44.91,2,0,0,Washington Secretary of State
-state_house,WA,19-P2,0,WA-H-19-P2,Write-in,Nonpartisan,W,165,0.24,3,0,0,Washington Secretary of State
-state_house,WA,20-P1,0,WA-H-20-P1,Peter Abbarno,(Prefers Republican Party),R,51775,65.36,1,1,0,Washington Secretary of State
-state_house,WA,20-P1,0,WA-H-20-P1,Andy Zahn,(Prefers Democratic Party),D,27242,34.39,2,0,0,Washington Secretary of State
-state_house,WA,20-P1,0,WA-H-20-P1,Write-in,Nonpartisan,W,194,0.24,3,0,0,Washington Secretary of State
-state_house,WA,20-P2,0,WA-H-20-P2,Ed Orcutt,(Prefers Republican Party),R,49577,62.64,1,1,0,Washington Secretary of State
-state_house,WA,20-P2,0,WA-H-20-P2,Evan Jones,(Prefers Democratic Party),D,29405,37.16,2,0,0,Washington Secretary of State
-state_house,WA,20-P2,0,WA-H-20-P2,Write-in,Nonpartisan,W,158,0.2,3,0,0,Washington Secretary of State
-state_house,WA,21-P1,0,WA-H-21-P1,Strom Peterson,(Prefers Democratic Party),D,31829,57.84,1,1,0,Washington Secretary of State
-state_house,WA,21-P1,0,WA-H-21-P1,Jason Moon,(Prefers Democratic Party),D,22438,40.77,2,0,0,Washington Secretary of State
-state_house,WA,21-P1,0,WA-H-21-P1,Write-in,Nonpartisan,W,767,1.39,3,0,0,Washington Secretary of State
-state_house,WA,21-P2,0,WA-H-21-P2,Lillian Ortiz-Self,(Prefers Democratic Party),D,41197,71.99,1,1,0,Washington Secretary of State
-state_house,WA,21-P2,0,WA-H-21-P2,Bruce Guthrie,(Prefers Libertarian Party),O,15724,27.48,2,0,0,Washington Secretary of State
+state_house,WA,18-P1,0,WA-H-18-P1,Randi L. Knott,(Prefers Democratic Party),D,38536,52.4,1,1,0,Washington Secretary of State
+state_house,WA,18-P1,0,WA-H-18-P1,Stephanie McClintock,(Prefers Republican Party),R,34880,47.43,2,0,0,Washington Secretary of State
+state_house,WA,18-P1,0,WA-H-18-P1,Write-in,Nonpartisan,W,126,0.17,3,0,0,Washington Secretary of State
+state_house,WA,18-P2,0,WA-H-18-P2,Deken Letinich,(Prefers Democratic Party),D,39468,53.79,1,1,0,Washington Secretary of State
+state_house,WA,18-P2,0,WA-H-18-P2,John Ley,(Prefers Republican Party),R,33748,45.99,2,0,0,Washington Secretary of State
+state_house,WA,18-P2,0,WA-H-18-P2,Write-in,Nonpartisan,W,160,0.22,3,0,0,Washington Secretary of State
+state_house,WA,19-P1,0,WA-H-19-P1,Jim Walsh,(Prefers Republican Party),R,38110,55.32,1,1,0,Washington Secretary of State
+state_house,WA,19-P1,0,WA-H-19-P1,Kevin Moynihan,(Prefers Democratic Party),D,30695,44.56,2,0,0,Washington Secretary of State
+state_house,WA,19-P1,0,WA-H-19-P1,Write-in,Nonpartisan,W,84,0.12,3,0,0,Washington Secretary of State
+state_house,WA,19-P2,0,WA-H-19-P2,Joel McEntire,(Prefers Republican Party),R,37490,54.84,1,1,0,Washington Secretary of State
+state_house,WA,19-P2,0,WA-H-19-P2,Terry Carlson,(Prefers Democratic Party),D,30707,44.92,2,0,0,Washington Secretary of State
+state_house,WA,19-P2,0,WA-H-19-P2,Write-in,Nonpartisan,W,163,0.24,3,0,0,Washington Secretary of State
+state_house,WA,20-P1,0,WA-H-20-P1,Peter Abbarno,(Prefers Republican Party),R,51888,65.34,1,1,0,Washington Secretary of State
+state_house,WA,20-P1,0,WA-H-20-P1,Andy Zahn,(Prefers Democratic Party),D,27356,34.45,2,0,0,Washington Secretary of State
+state_house,WA,20-P1,0,WA-H-20-P1,Write-in,Nonpartisan,W,168,0.21,3,0,0,Washington Secretary of State
+state_house,WA,20-P2,0,WA-H-20-P2,Ed Orcutt,(Prefers Republican Party),R,49671,62.6,1,1,0,Washington Secretary of State
+state_house,WA,20-P2,0,WA-H-20-P2,Evan Jones,(Prefers Democratic Party),D,29534,37.22,2,0,0,Washington Secretary of State
+state_house,WA,20-P2,0,WA-H-20-P2,Write-in,Nonpartisan,W,140,0.18,3,0,0,Washington Secretary of State
+state_house,WA,21-P1,0,WA-H-21-P1,Strom Peterson,(Prefers Democratic Party),D,31847,57.83,1,1,0,Washington Secretary of State
+state_house,WA,21-P1,0,WA-H-21-P1,Jason Moon,(Prefers Democratic Party),D,22455,40.78,2,0,0,Washington Secretary of State
+state_house,WA,21-P1,0,WA-H-21-P1,Write-in,Nonpartisan,W,768,1.39,3,0,0,Washington Secretary of State
+state_house,WA,21-P2,0,WA-H-21-P2,Lillian Ortiz-Self,(Prefers Democratic Party),D,41226,71.99,1,1,0,Washington Secretary of State
+state_house,WA,21-P2,0,WA-H-21-P2,Bruce Guthrie,(Prefers Libertarian Party),O,15734,27.48,2,0,0,Washington Secretary of State
 state_house,WA,21-P2,0,WA-H-21-P2,Write-in,Nonpartisan,W,305,0.53,3,0,0,Washington Secretary of State
-state_house,WA,22-P1,0,WA-H-22-P1,Beth Doglio,(Prefers Democratic Party),D,53528,71.93,1,1,0,Washington Secretary of State
-state_house,WA,22-P1,0,WA-H-22-P1,Don Hewett,(Prefers Republican Party),R,20673,27.78,2,0,0,Washington Secretary of State
+state_house,WA,22-P1,0,WA-H-22-P1,Beth Doglio,(Prefers Democratic Party),D,53582,71.93,1,1,0,Washington Secretary of State
+state_house,WA,22-P1,0,WA-H-22-P1,Don Hewett,(Prefers Republican Party),R,20694,27.78,2,0,0,Washington Secretary of State
 state_house,WA,22-P1,0,WA-H-22-P1,Write-in,Nonpartisan,W,212,0.28,3,0,0,Washington Secretary of State
-state_house,WA,22-P2,0,WA-H-22-P2,Lisa Parshley,(Prefers Democratic Party),D,44159,65.97,1,1,0,Washington Secretary of State
-state_house,WA,22-P2,0,WA-H-22-P2,Jamie Keenan-deVargas,(Prefers Democratic Party),D,20809,31.09,2,0,0,Washington Secretary of State
-state_house,WA,22-P2,0,WA-H-22-P2,Write-in,Nonpartisan,W,1969,2.94,3,0,0,Washington Secretary of State
-state_house,WA,23-P1,0,WA-H-23-P1,Tarra Simmons,(Prefers Democratic Party),D,34719,49.42,1,0,0,Washington Secretary of State
-state_house,WA,23-P1,0,WA-H-23-P1,Daria Ilgen,(Prefers Democratic Party),D,34184,48.66,2,0,0,Washington Secretary of State
-state_house,WA,23-P1,0,WA-H-23-P1,Write-in,Nonpartisan,W,1347,1.92,3,0,0,Washington Secretary of State
-state_house,WA,23-P2,0,WA-H-23-P2,Greg Nance,(Prefers Democratic Party),D,52654,69.78,1,1,0,Washington Secretary of State
-state_house,WA,23-P2,0,WA-H-23-P2,Lance Byrd,(Prefers Republican Party),R,22655,30.02,2,0,0,Washington Secretary of State
+state_house,WA,22-P2,0,WA-H-22-P2,Lisa Parshley,(Prefers Democratic Party),D,44202,65.97,1,1,0,Washington Secretary of State
+state_house,WA,22-P2,0,WA-H-22-P2,Jamie Keenan-deVargas,(Prefers Democratic Party),D,20834,31.09,2,0,0,Washington Secretary of State
+state_house,WA,22-P2,0,WA-H-22-P2,Write-in,Nonpartisan,W,1972,2.94,3,0,0,Washington Secretary of State
+state_house,WA,23-P1,0,WA-H-23-P1,Tarra Simmons,(Prefers Democratic Party),D,34751,49.43,1,0,0,Washington Secretary of State
+state_house,WA,23-P1,0,WA-H-23-P1,Daria Ilgen,(Prefers Democratic Party),D,34205,48.65,2,0,0,Washington Secretary of State
+state_house,WA,23-P1,0,WA-H-23-P1,Write-in,Nonpartisan,W,1351,1.92,3,0,0,Washington Secretary of State
+state_house,WA,23-P2,0,WA-H-23-P2,Greg Nance,(Prefers Democratic Party),D,52697,69.78,1,1,0,Washington Secretary of State
+state_house,WA,23-P2,0,WA-H-23-P2,Lance Byrd,(Prefers Republican Party),R,22673,30.02,2,0,0,Washington Secretary of State
 state_house,WA,23-P2,0,WA-H-23-P2,Write-in,Nonpartisan,W,151,0.2,3,0,0,Washington Secretary of State
 state_house,WA,24-P1,0,WA-H-24-P1,Adam Bernbaum,(Prefers Democratic Party),D,49969,60.54,1,1,0,Washington Secretary of State
 state_house,WA,24-P1,0,WA-H-24-P1,Eric W. Pratt,(Prefers Republican Party),R,32509,39.39,2,0,0,Washington Secretary of State
@@ -11063,11 +11088,11 @@ state_house,WA,25-P1,0,WA-H-25-P1,Write-in,Nonpartisan,W,38,0.07,3,0,0,Washingto
 state_house,WA,25-P2,0,WA-H-25-P2,Jenn Marie Strickling,(Prefers Democratic Party),D,28515,50.04,1,0,0,Washington Secretary of State
 state_house,WA,25-P2,0,WA-H-25-P2,Cyndy Jacobsen,(Prefers Republican Party),R,28435,49.9,2,0,0,Washington Secretary of State
 state_house,WA,25-P2,0,WA-H-25-P2,Write-in,Nonpartisan,W,36,0.06,3,0,0,Washington Secretary of State
-state_house,WA,26-P1,0,WA-H-26-P1,Adison Richards,(Prefers Democratic Party),D,43191,55.24,1,1,0,Washington Secretary of State
-state_house,WA,26-P1,0,WA-H-26-P1,David Olson,(Prefers Republican Party),R,34903,44.64,2,0,0,Washington Secretary of State
+state_house,WA,26-P1,0,WA-H-26-P1,Adison Richards,(Prefers Democratic Party),D,43213,55.25,1,1,0,Washington Secretary of State
+state_house,WA,26-P1,0,WA-H-26-P1,David Olson,(Prefers Republican Party),R,34913,44.64,2,0,0,Washington Secretary of State
 state_house,WA,26-P1,0,WA-H-26-P1,Write-in,Nonpartisan,W,89,0.11,3,0,0,Washington Secretary of State
-state_house,WA,26-P2,0,WA-H-26-P2,Renee Hernandez Greenfield,(Prefers Democratic Party),D,41777,53.47,1,1,0,Washington Secretary of State
-state_house,WA,26-P2,0,WA-H-26-P2,Katy Cornell,(Prefers Republican Party),R,36241,46.38,2,0,0,Washington Secretary of State
+state_house,WA,26-P2,0,WA-H-26-P2,Renee Hernandez Greenfield,(Prefers Democratic Party),D,41799,53.47,1,1,0,Washington Secretary of State
+state_house,WA,26-P2,0,WA-H-26-P2,Katy Cornell,(Prefers Republican Party),R,36251,46.38,2,0,0,Washington Secretary of State
 state_house,WA,26-P2,0,WA-H-26-P2,Write-in,Nonpartisan,W,118,0.15,3,0,0,Washington Secretary of State
 state_house,WA,27-P1,0,WA-H-27-P1,Laurie Jinkins,(Prefers Democratic Party),D,47236,76.47,1,1,0,Washington Secretary of State
 state_house,WA,27-P1,0,WA-H-27-P1,Carole Sue Braaten,(Prefers Republican Party),R,14394,23.3,2,0,0,Washington Secretary of State
@@ -11086,121 +11111,121 @@ state_house,WA,29-P1,0,WA-H-29-P1,Write-in,Nonpartisan,W,1089,3.1,3,0,0,Washingt
 state_house,WA,29-P2,0,WA-H-29-P2,Patrick Stickney,(Prefers Democratic Party),D,16968,49.14,1,1,0,Washington Secretary of State
 state_house,WA,29-P2,0,WA-H-29-P2,Joe Bushnell,(Prefers Democratic Party),D,16414,47.54,2,0,0,Washington Secretary of State
 state_house,WA,29-P2,0,WA-H-29-P2,Write-in,Nonpartisan,W,1146,3.32,3,0,0,Washington Secretary of State
-state_house,WA,30-P1,0,WA-H-30-P1,Jamila E. Taylor,(Prefers Democratic Party),D,29323,65.67,1,1,0,Washington Secretary of State
-state_house,WA,30-P1,0,WA-H-30-P1,Tiffany Bowyer,(Prefers Republican Party),R,15289,34.24,2,0,0,Washington Secretary of State
+state_house,WA,30-P1,0,WA-H-30-P1,Jamila E. Taylor,(Prefers Democratic Party),D,29331,65.67,1,1,0,Washington Secretary of State
+state_house,WA,30-P1,0,WA-H-30-P1,Tiffany Bowyer,(Prefers Republican Party),R,15290,34.23,2,0,0,Washington Secretary of State
 state_house,WA,30-P1,0,WA-H-30-P1,Write-in,Nonpartisan,W,41,0.09,3,0,0,Washington Secretary of State
-state_house,WA,30-P2,0,WA-H-30-P2,Kristine Reeves,(Prefers Democratic Party),D,28675,65.47,1,1,0,Washington Secretary of State
-state_house,WA,30-P2,0,WA-H-30-P2,Paul McDaniel,(Prefers Independent Party),O,15005,34.26,2,0,0,Washington Secretary of State
-state_house,WA,30-P2,0,WA-H-30-P2,Write-in,Nonpartisan,W,118,0.27,3,0,0,Washington Secretary of State
-state_house,WA,31-P1,0,WA-H-31-P1,Drew Stokesbary,(Prefers Republican Party),R,37263,56.78,1,1,0,Washington Secretary of State
-state_house,WA,31-P1,0,WA-H-31-P1,Stephen Szczurko-Walton,(Prefers Democratic Party),D,28321,43.16,2,0,0,Washington Secretary of State
-state_house,WA,31-P1,0,WA-H-31-P1,Write-in,Nonpartisan,W,39,0.06,3,0,0,Washington Secretary of State
+state_house,WA,30-P2,0,WA-H-30-P2,Kristine Reeves,(Prefers Democratic Party),D,28683,65.48,1,1,0,Washington Secretary of State
+state_house,WA,30-P2,0,WA-H-30-P2,Paul McDaniel,(Prefers Independent Party),O,15006,34.26,2,0,0,Washington Secretary of State
+state_house,WA,30-P2,0,WA-H-30-P2,Write-in,Nonpartisan,W,116,0.26,3,0,0,Washington Secretary of State
+state_house,WA,31-P1,0,WA-H-31-P1,Drew Stokesbary,(Prefers Republican Party),R,37264,56.78,1,1,0,Washington Secretary of State
+state_house,WA,31-P1,0,WA-H-31-P1,Stephen Szczurko-Walton,(Prefers Democratic Party),D,28322,43.16,2,0,0,Washington Secretary of State
+state_house,WA,31-P1,0,WA-H-31-P1,Write-in,Nonpartisan,W,38,0.06,3,0,0,Washington Secretary of State
 state_house,WA,31-P2,0,WA-H-31-P2,Joshua Penner,(Prefers Republican Party),R,35474,54.12,1,1,0,Washington Secretary of State
-state_house,WA,31-P2,0,WA-H-31-P2,John Bielka,(Prefers Democrat Party),D,30017,45.8,2,0,0,Washington Secretary of State
-state_house,WA,31-P2,0,WA-H-31-P2,Write-in,Nonpartisan,W,53,0.08,3,0,0,Washington Secretary of State
-state_house,WA,32-P1,0,WA-H-32-P1,Danica Noble,(Prefers Democratic Party),D,32084,50.94,1,1,0,Washington Secretary of State
-state_house,WA,32-P1,0,WA-H-32-P1,Keith Scully,(Prefers Democratic Party),D,29905,47.48,2,0,0,Washington Secretary of State
+state_house,WA,31-P2,0,WA-H-31-P2,John Bielka,(Prefers Democrat Party),D,30019,45.8,2,0,0,Washington Secretary of State
+state_house,WA,31-P2,0,WA-H-31-P2,Write-in,Nonpartisan,W,52,0.08,3,0,0,Washington Secretary of State
+state_house,WA,32-P1,0,WA-H-32-P1,Danica Noble,(Prefers Democratic Party),D,32092,50.94,1,1,0,Washington Secretary of State
+state_house,WA,32-P1,0,WA-H-32-P1,Keith Scully,(Prefers Democratic Party),D,29915,47.49,2,0,0,Washington Secretary of State
 state_house,WA,32-P1,0,WA-H-32-P1,Write-in,Nonpartisan,W,990,1.57,3,0,0,Washington Secretary of State
-state_house,WA,32-P2,0,WA-H-32-P2,Lauren Davis,(Prefers Democratic Party),D,43670,69.95,1,1,0,Washington Secretary of State
-state_house,WA,32-P2,0,WA-H-32-P2,Imraan Siddiqi,(Prefers Democratic Party),D,17843,28.58,2,0,0,Washington Secretary of State
-state_house,WA,32-P2,0,WA-H-32-P2,Write-in,Nonpartisan,W,913,1.46,3,0,0,Washington Secretary of State
-state_house,WA,33-P1,0,WA-H-33-P1,Edwin Obras,(Prefers Democratic Party),D,34792,73.57,1,1,0,Washington Secretary of State
+state_house,WA,32-P2,0,WA-H-32-P2,Lauren Davis,(Prefers Democratic Party),D,43681,69.97,1,1,0,Washington Secretary of State
+state_house,WA,32-P2,0,WA-H-32-P2,Imraan Siddiqi,(Prefers Democratic Party),D,17849,28.59,2,0,0,Washington Secretary of State
+state_house,WA,32-P2,0,WA-H-32-P2,Write-in,Nonpartisan,W,896,1.44,3,0,0,Washington Secretary of State
+state_house,WA,33-P1,0,WA-H-33-P1,Edwin Obras,(Prefers Democratic Party),D,34799,73.58,1,1,0,Washington Secretary of State
 state_house,WA,33-P1,0,WA-H-33-P1,Chris Martinez,(Prefers Republican Party),R,12433,26.29,2,0,0,Washington Secretary of State
-state_house,WA,33-P1,0,WA-H-33-P1,Write-in,Nonpartisan,W,66,0.14,3,0,0,Washington Secretary of State
-state_house,WA,33-P2,0,WA-H-33-P2,Mia Su-Ling Gregerson,(Prefers Democratic Party),D,34720,74.01,1,1,0,Washington Secretary of State
+state_house,WA,33-P1,0,WA-H-33-P1,Write-in,Nonpartisan,W,65,0.14,3,0,0,Washington Secretary of State
+state_house,WA,33-P2,0,WA-H-33-P2,Mia Su-Ling Gregerson,(Prefers Democratic Party),D,34727,74.02,1,1,0,Washington Secretary of State
 state_house,WA,33-P2,0,WA-H-33-P2,Yuri Marinchik,(Prefers Republican Party),R,12113,25.82,2,0,0,Washington Secretary of State
-state_house,WA,33-P2,0,WA-H-33-P2,Write-in,Nonpartisan,W,78,0.17,3,0,0,Washington Secretary of State
-state_house,WA,34-P1,0,WA-H-34-P1,Brianna K. Thomas,(Prefers Democratic Party),D,59356,98.02,1,1,0,Washington Secretary of State
-state_house,WA,34-P1,0,WA-H-34-P1,Write-in,Nonpartisan,W,1198,1.98,2,0,0,Washington Secretary of State
-state_house,WA,34-P2,0,WA-H-34-P2,Joe Fitzgibbon,(Prefers Democratic Party),D,47173,67.64,1,1,0,Washington Secretary of State
-state_house,WA,34-P2,0,WA-H-34-P2,Mary Anito,(Prefers Democratic Party),D,21839,31.31,2,0,0,Washington Secretary of State
-state_house,WA,34-P2,0,WA-H-34-P2,Write-in,Nonpartisan,W,733,1.05,3,0,0,Washington Secretary of State
-state_house,WA,35-P1,0,WA-H-35-P1,Dan Griffey,(Prefers Republican Party),R,41073,52.36,1,1,0,Washington Secretary of State
-state_house,WA,35-P1,0,WA-H-35-P1,Jim Pierson,(Prefers Democratic Party),D,37276,47.52,2,0,0,Washington Secretary of State
-state_house,WA,35-P1,0,WA-H-35-P1,Write-in,Nonpartisan,W,99,0.13,3,0,0,Washington Secretary of State
-state_house,WA,35-P2,0,WA-H-35-P2,Travis Couture,(Prefers Republican Party),R,40873,52.1,1,1,0,Washington Secretary of State
-state_house,WA,35-P2,0,WA-H-35-P2,Maria Littlesun,(Prefers Democratic Party),D,37474,47.77,2,0,0,Washington Secretary of State
-state_house,WA,35-P2,0,WA-H-35-P2,Write-in,Nonpartisan,W,97,0.12,3,0,0,Washington Secretary of State
-state_house,WA,36-P1,0,WA-H-36-P1,Julia Grant Reed,(Prefers Democratic Party),D,69577,98.73,1,1,0,Washington Secretary of State
-state_house,WA,36-P1,0,WA-H-36-P1,Write-in,Nonpartisan,W,898,1.27,2,0,0,Washington Secretary of State
-state_house,WA,36-P2,0,WA-H-36-P2,Liz Berry,(Prefers Democratic Party),D,69271,98.73,1,1,0,Washington Secretary of State
+state_house,WA,33-P2,0,WA-H-33-P2,Write-in,Nonpartisan,W,76,0.16,3,0,0,Washington Secretary of State
+state_house,WA,34-P1,0,WA-H-34-P1,Brianna K. Thomas,(Prefers Democratic Party),D,59361,98.03,1,1,0,Washington Secretary of State
+state_house,WA,34-P1,0,WA-H-34-P1,Write-in,Nonpartisan,W,1191,1.97,2,0,0,Washington Secretary of State
+state_house,WA,34-P2,0,WA-H-34-P2,Joe Fitzgibbon,(Prefers Democratic Party),D,47178,67.64,1,1,0,Washington Secretary of State
+state_house,WA,34-P2,0,WA-H-34-P2,Mary Anito,(Prefers Democratic Party),D,21843,31.32,2,0,0,Washington Secretary of State
+state_house,WA,34-P2,0,WA-H-34-P2,Write-in,Nonpartisan,W,728,1.04,3,0,0,Washington Secretary of State
+state_house,WA,35-P1,0,WA-H-35-P1,Dan Griffey,(Prefers Republican Party),R,41129,52.35,1,1,0,Washington Secretary of State
+state_house,WA,35-P1,0,WA-H-35-P1,Jim Pierson,(Prefers Democratic Party),D,37333,47.52,2,0,0,Washington Secretary of State
+state_house,WA,35-P1,0,WA-H-35-P1,Write-in,Nonpartisan,W,100,0.13,3,0,0,Washington Secretary of State
+state_house,WA,35-P2,0,WA-H-35-P2,Travis Couture,(Prefers Republican Party),R,40927,52.1,1,1,0,Washington Secretary of State
+state_house,WA,35-P2,0,WA-H-35-P2,Maria Littlesun,(Prefers Democratic Party),D,37533,47.78,2,0,0,Washington Secretary of State
+state_house,WA,35-P2,0,WA-H-35-P2,Write-in,Nonpartisan,W,99,0.13,3,0,0,Washington Secretary of State
+state_house,WA,36-P1,0,WA-H-36-P1,Julia Grant Reed,(Prefers Democratic Party),D,69578,98.72,1,1,0,Washington Secretary of State
+state_house,WA,36-P1,0,WA-H-36-P1,Write-in,Nonpartisan,W,899,1.28,2,0,0,Washington Secretary of State
+state_house,WA,36-P2,0,WA-H-36-P2,Liz Berry,(Prefers Democratic Party),D,69273,98.73,1,1,0,Washington Secretary of State
 state_house,WA,36-P2,0,WA-H-36-P2,Write-in,Nonpartisan,W,889,1.27,2,0,0,Washington Secretary of State
-state_house,WA,37-P1,0,WA-H-37-P1,Kelabe Tewolde,(Prefers Democratic Party),D,41662,65.04,1,1,0,Washington Secretary of State
-state_house,WA,37-P1,0,WA-H-37-P1,Sharon Tomiko Santos,(Prefers Democratic Party),D,22047,34.42,2,0,0,Washington Secretary of State
-state_house,WA,37-P1,0,WA-H-37-P1,Write-in,Nonpartisan,W,347,0.54,3,0,0,Washington Secretary of State
-state_house,WA,37-P2,0,WA-H-37-P2,Jaelynn Scott,(Prefers Democratic Party),D,55266,87.56,1,1,0,Washington Secretary of State
-state_house,WA,37-P2,0,WA-H-37-P2,Evon McCorkle,(Prefers Independent Party),O,7443,11.79,2,0,0,Washington Secretary of State
+state_house,WA,37-P1,0,WA-H-37-P1,Kelabe Tewolde,(Prefers Democratic Party),D,41664,65.03,1,1,0,Washington Secretary of State
+state_house,WA,37-P1,0,WA-H-37-P1,Sharon Tomiko Santos,(Prefers Democratic Party),D,22052,34.42,2,0,0,Washington Secretary of State
+state_house,WA,37-P1,0,WA-H-37-P1,Write-in,Nonpartisan,W,349,0.54,3,0,0,Washington Secretary of State
+state_house,WA,37-P2,0,WA-H-37-P2,Jaelynn Scott,(Prefers Democratic Party),D,55273,87.56,1,1,0,Washington Secretary of State
+state_house,WA,37-P2,0,WA-H-37-P2,Evon McCorkle,(Prefers Independent Party),O,7444,11.79,2,0,0,Washington Secretary of State
 state_house,WA,37-P2,0,WA-H-37-P2,Write-in,Nonpartisan,W,406,0.64,3,0,0,Washington Secretary of State
-state_house,WA,38-P1,0,WA-H-38-P1,Julio Cortes,(Prefers Democratic Party),D,33932,66.33,1,1,0,Washington Secretary of State
-state_house,WA,38-P1,0,WA-H-38-P1,Thomas (Jeff) Kelly,(Prefers Cascade Party),O,16806,32.85,2,0,0,Washington Secretary of State
-state_house,WA,38-P1,0,WA-H-38-P1,Write-in,Nonpartisan,W,416,0.81,3,0,0,Washington Secretary of State
-state_house,WA,38-P2,0,WA-H-38-P2,Mary Fosse,(Prefers Democratic Party),D,38946,93.42,1,1,0,Washington Secretary of State
-state_house,WA,38-P2,0,WA-H-38-P2,Write-in,Nonpartisan,W,2742,6.58,2,0,0,Washington Secretary of State
-state_house,WA,39-P1,0,WA-H-39-P1,Sam Low,(Prefers Republican Party),R,36372,54.57,1,1,0,Washington Secretary of State
-state_house,WA,39-P1,0,WA-H-39-P1,Kathryn Lewandowsky,(Prefers Democratic Party),D,30212,45.33,2,0,0,Washington Secretary of State
+state_house,WA,38-P1,0,WA-H-38-P1,Julio Cortes,(Prefers Democratic Party),D,33943,66.34,1,1,0,Washington Secretary of State
+state_house,WA,38-P1,0,WA-H-38-P1,Thomas (Jeff) Kelly,(Prefers Cascade Party),O,16815,32.86,2,0,0,Washington Secretary of State
+state_house,WA,38-P1,0,WA-H-38-P1,Write-in,Nonpartisan,W,410,0.8,3,0,0,Washington Secretary of State
+state_house,WA,38-P2,0,WA-H-38-P2,Mary Fosse,(Prefers Democratic Party),D,38961,93.42,1,1,0,Washington Secretary of State
+state_house,WA,38-P2,0,WA-H-38-P2,Write-in,Nonpartisan,W,2743,6.58,2,0,0,Washington Secretary of State
+state_house,WA,39-P1,0,WA-H-39-P1,Sam Low,(Prefers Republican Party),R,36377,54.56,1,1,0,Washington Secretary of State
+state_house,WA,39-P1,0,WA-H-39-P1,Kathryn Lewandowsky,(Prefers Democratic Party),D,30228,45.34,2,0,0,Washington Secretary of State
 state_house,WA,39-P1,0,WA-H-39-P1,Write-in,Nonpartisan,W,65,0.1,3,0,0,Washington Secretary of State
-state_house,WA,39-P2,0,WA-H-39-P2,Steve Ewing,(Prefers Republican Party),R,34633,52.17,1,1,0,Washington Secretary of State
-state_house,WA,39-P2,0,WA-H-39-P2,Ida Keeley,(Prefers Democratic Party),D,31679,47.72,2,0,0,Washington Secretary of State
+state_house,WA,39-P2,0,WA-H-39-P2,Steve Ewing,(Prefers Republican Party),R,34638,52.16,1,1,0,Washington Secretary of State
+state_house,WA,39-P2,0,WA-H-39-P2,Ida Keeley,(Prefers Democratic Party),D,31695,47.73,2,0,0,Washington Secretary of State
 state_house,WA,39-P2,0,WA-H-39-P2,Write-in,Nonpartisan,W,72,0.11,3,0,0,Washington Secretary of State
-state_house,WA,40-P1,0,WA-H-40-P1,Debra Lekanoff,(Prefers Democratic Party),D,57620,72.35,1,1,0,Washington Secretary of State
-state_house,WA,40-P1,0,WA-H-40-P1,Cindy Carter,(Prefers Republican Party),R,21945,27.55,2,0,0,Washington Secretary of State
+state_house,WA,40-P1,0,WA-H-40-P1,Debra Lekanoff,(Prefers Democratic Party),D,57817,72.37,1,1,0,Washington Secretary of State
+state_house,WA,40-P1,0,WA-H-40-P1,Cindy Carter,(Prefers Republican Party),R,21993,27.53,2,0,0,Washington Secretary of State
 state_house,WA,40-P1,0,WA-H-40-P1,Write-in,Nonpartisan,W,79,0.1,3,0,0,Washington Secretary of State
-state_house,WA,40-P2,0,WA-H-40-P2,Alex Ramel,(Prefers Democratic Party),D,57375,73.78,1,1,0,Washington Secretary of State
-state_house,WA,40-P2,0,WA-H-40-P2,Joseph Segault,(States No Party Preference),O,20169,25.94,2,0,0,Washington Secretary of State
-state_house,WA,40-P2,0,WA-H-40-P2,Write-in,Nonpartisan,W,223,0.29,3,0,0,Washington Secretary of State
-state_house,WA,41-P1,0,WA-H-41-P1,Janice Zahn,(Prefers Democratic Party),D,45639,70.79,1,1,0,Washington Secretary of State
-state_house,WA,41-P1,0,WA-H-41-P1,Elle Nguyen,(Prefers Republican Party),R,18738,29.06,2,0,0,Washington Secretary of State
-state_house,WA,41-P1,0,WA-H-41-P1,Write-in,Nonpartisan,W,96,0.15,3,0,0,Washington Secretary of State
-state_house,WA,41-P2,0,WA-H-41-P2,My-Linh T Thai,(Prefers Democratic Party),D,38407,60.19,1,1,0,Washington Secretary of State
-state_house,WA,41-P2,0,WA-H-41-P2,Michael Rosen,(Prefers Independent Party),O,25310,39.66,2,0,0,Washington Secretary of State
-state_house,WA,41-P2,0,WA-H-41-P2,Write-in,Nonpartisan,W,93,0.15,3,0,0,Washington Secretary of State
-state_house,WA,42-P1,0,WA-H-42-P1,Alicia Rule,(Prefers Democratic Party),D,45947,58.75,1,1,0,Washington Secretary of State
-state_house,WA,42-P1,0,WA-H-42-P1,Misty Flowers,(Prefers Republican Party),R,32167,41.13,2,0,0,Washington Secretary of State
-state_house,WA,42-P1,0,WA-H-42-P1,Write-in,Nonpartisan,W,91,0.12,3,0,0,Washington Secretary of State
-state_house,WA,42-P2,0,WA-H-42-P2,Joe Timmons,(Prefers Democratic Party),D,44094,56.37,1,1,0,Washington Secretary of State
-state_house,WA,42-P2,0,WA-H-42-P2,Justin Pike,(Prefers Republican Party),R,34061,43.55,2,0,0,Washington Secretary of State
-state_house,WA,42-P2,0,WA-H-42-P2,Write-in,Nonpartisan,W,65,0.08,3,0,0,Washington Secretary of State
-state_house,WA,43-P1,0,WA-H-43-P1,Nicole Macri,(Prefers Democratic Party),D,58361,91.08,1,1,0,Washington Secretary of State
+state_house,WA,40-P2,0,WA-H-40-P2,Alex Ramel,(Prefers Democratic Party),D,57565,73.79,1,1,0,Washington Secretary of State
+state_house,WA,40-P2,0,WA-H-40-P2,Joseph Segault,(States No Party Preference),O,20219,25.92,2,0,0,Washington Secretary of State
+state_house,WA,40-P2,0,WA-H-40-P2,Write-in,Nonpartisan,W,224,0.29,3,0,0,Washington Secretary of State
+state_house,WA,41-P1,0,WA-H-41-P1,Janice Zahn,(Prefers Democratic Party),D,45642,70.79,1,1,0,Washington Secretary of State
+state_house,WA,41-P1,0,WA-H-41-P1,Elle Nguyen,(Prefers Republican Party),R,18739,29.06,2,0,0,Washington Secretary of State
+state_house,WA,41-P1,0,WA-H-41-P1,Write-in,Nonpartisan,W,95,0.15,3,0,0,Washington Secretary of State
+state_house,WA,41-P2,0,WA-H-41-P2,My-Linh T Thai,(Prefers Democratic Party),D,38410,60.19,1,1,0,Washington Secretary of State
+state_house,WA,41-P2,0,WA-H-41-P2,Michael Rosen,(Prefers Independent Party),O,25312,39.67,2,0,0,Washington Secretary of State
+state_house,WA,41-P2,0,WA-H-41-P2,Write-in,Nonpartisan,W,91,0.14,3,0,0,Washington Secretary of State
+state_house,WA,42-P1,0,WA-H-42-P1,Alicia Rule,(Prefers Democratic Party),D,46093,58.79,1,1,0,Washington Secretary of State
+state_house,WA,42-P1,0,WA-H-42-P1,Misty Flowers,(Prefers Republican Party),R,32220,41.09,2,0,0,Washington Secretary of State
+state_house,WA,42-P1,0,WA-H-42-P1,Write-in,Nonpartisan,W,92,0.12,3,0,0,Washington Secretary of State
+state_house,WA,42-P2,0,WA-H-42-P2,Joe Timmons,(Prefers Democratic Party),D,44231,56.4,1,1,0,Washington Secretary of State
+state_house,WA,42-P2,0,WA-H-42-P2,Justin Pike,(Prefers Republican Party),R,34120,43.51,2,0,0,Washington Secretary of State
+state_house,WA,42-P2,0,WA-H-42-P2,Write-in,Nonpartisan,W,66,0.08,3,0,0,Washington Secretary of State
+state_house,WA,43-P1,0,WA-H-43-P1,Nicole Macri,(Prefers Democratic Party),D,58373,91.08,1,1,0,Washington Secretary of State
 state_house,WA,43-P1,0,WA-H-43-P1,Alby Clendennin,(Prefers Democratic Party),D,5210,8.13,2,0,0,Washington Secretary of State
 state_house,WA,43-P1,0,WA-H-43-P1,Write-in,Nonpartisan,W,507,0.79,3,0,0,Washington Secretary of State
-state_house,WA,43-P2,0,WA-H-43-P2,Shaun Scott,(Prefers Democratic Party),D,52003,97.83,1,1,0,Washington Secretary of State
-state_house,WA,43-P2,0,WA-H-43-P2,Write-in,Nonpartisan,W,1153,2.17,2,0,0,Washington Secretary of State
-state_house,WA,44-P1,0,WA-H-44-P1,Brandy Donaghy,(Prefers Democratic Party),D,37956,59.94,1,1,0,Washington Secretary of State
-state_house,WA,44-P1,0,WA-H-44-P1,Chris Elder,(Prefers Republican Party),R,25324,39.99,2,0,0,Washington Secretary of State
+state_house,WA,43-P2,0,WA-H-43-P2,Shaun Scott,(Prefers Democratic Party),D,52013,97.83,1,1,0,Washington Secretary of State
+state_house,WA,43-P2,0,WA-H-43-P2,Write-in,Nonpartisan,W,1155,2.17,2,0,0,Washington Secretary of State
+state_house,WA,44-P1,0,WA-H-44-P1,Brandy Donaghy,(Prefers Democratic Party),D,37972,59.94,1,1,0,Washington Secretary of State
+state_house,WA,44-P1,0,WA-H-44-P1,Chris Elder,(Prefers Republican Party),R,25335,39.99,2,0,0,Washington Secretary of State
 state_house,WA,44-P1,0,WA-H-44-P1,Write-in,Nonpartisan,W,45,0.07,3,0,0,Washington Secretary of State
-state_house,WA,44-P2,0,WA-H-44-P2,April Berg,(Prefers Democratic Party),D,38749,61.18,1,1,0,Washington Secretary of State
-state_house,WA,44-P2,0,WA-H-44-P2,Tonya Stadlman,(Prefers Republican Party),R,24545,38.75,2,0,0,Washington Secretary of State
+state_house,WA,44-P2,0,WA-H-44-P2,April Berg,(Prefers Democratic Party),D,38767,61.18,1,1,0,Washington Secretary of State
+state_house,WA,44-P2,0,WA-H-44-P2,Tonya Stadlman,(Prefers Republican Party),R,24556,38.75,2,0,0,Washington Secretary of State
 state_house,WA,44-P2,0,WA-H-44-P2,Write-in,Nonpartisan,W,47,0.07,3,0,0,Washington Secretary of State
-state_house,WA,45-P1,0,WA-H-45-P1,Roger Goodman,(Prefers Democratic Party),D,48438,71.48,1,1,0,Washington Secretary of State
-state_house,WA,45-P1,0,WA-H-45-P1,JoAnn Tolentino,(Prefers Republican Party),R,19250,28.41,2,0,0,Washington Secretary of State
+state_house,WA,45-P1,0,WA-H-45-P1,Roger Goodman,(Prefers Democratic Party),D,48443,71.48,1,1,0,Washington Secretary of State
+state_house,WA,45-P1,0,WA-H-45-P1,JoAnn Tolentino,(Prefers Republican Party),R,19250,28.4,2,0,0,Washington Secretary of State
 state_house,WA,45-P1,0,WA-H-45-P1,Write-in,Nonpartisan,W,81,0.12,3,0,0,Washington Secretary of State
-state_house,WA,45-P2,0,WA-H-45-P2,Vanessa Kritzer,(Prefers Democratic Party),D,49613,74.84,1,1,0,Washington Secretary of State
-state_house,WA,45-P2,0,WA-H-45-P2,John P Gibbons,(Prefers Republican Party),R,16496,24.88,2,0,0,Washington Secretary of State
-state_house,WA,45-P2,0,WA-H-45-P2,Write-in,Nonpartisan,W,180,0.27,3,0,0,Washington Secretary of State
-state_house,WA,46-P1,0,WA-H-46-P1,Gerry Pollet,(Prefers Democratic Party),D,45676,62.69,1,1,0,Washington Secretary of State
-state_house,WA,46-P1,0,WA-H-46-P1,Will Dreher,(Prefers Democratic Party),D,26727,36.68,2,0,0,Washington Secretary of State
-state_house,WA,46-P1,0,WA-H-46-P1,Write-in,Nonpartisan,W,458,0.63,3,0,0,Washington Secretary of State
-state_house,WA,46-P2,0,WA-H-46-P2,Darya Farivar,(Prefers Democratic Party),D,66101,89.56,1,1,0,Washington Secretary of State
-state_house,WA,46-P2,0,WA-H-46-P2,Rodney 'Star' Thornley,(Prefers Independent Party),O,7440,10.08,2,0,0,Washington Secretary of State
+state_house,WA,45-P2,0,WA-H-45-P2,Vanessa Kritzer,(Prefers Democratic Party),D,49618,74.86,1,1,0,Washington Secretary of State
+state_house,WA,45-P2,0,WA-H-45-P2,John P Gibbons,(Prefers Republican Party),R,16496,24.89,2,0,0,Washington Secretary of State
+state_house,WA,45-P2,0,WA-H-45-P2,Write-in,Nonpartisan,W,171,0.26,3,0,0,Washington Secretary of State
+state_house,WA,46-P1,0,WA-H-46-P1,Gerry Pollet,(Prefers Democratic Party),D,45679,62.69,1,1,0,Washington Secretary of State
+state_house,WA,46-P1,0,WA-H-46-P1,Will Dreher,(Prefers Democratic Party),D,26733,36.69,2,0,0,Washington Secretary of State
+state_house,WA,46-P1,0,WA-H-46-P1,Write-in,Nonpartisan,W,457,0.63,3,0,0,Washington Secretary of State
+state_house,WA,46-P2,0,WA-H-46-P2,Darya Farivar,(Prefers Democratic Party),D,66105,89.55,1,1,0,Washington Secretary of State
+state_house,WA,46-P2,0,WA-H-46-P2,Rodney 'Star' Thornley,(Prefers Independent Party),O,7444,10.08,2,0,0,Washington Secretary of State
 state_house,WA,46-P2,0,WA-H-46-P2,Write-in,Nonpartisan,W,269,0.36,3,0,0,Washington Secretary of State
-state_house,WA,47-P1,0,WA-H-47-P1,Debra Jean Entenman,(Prefers Democratic Party),D,32085,63.69,1,1,0,Washington Secretary of State
-state_house,WA,47-P1,0,WA-H-47-P1,Cobi Clark,(Prefers Libertarian Party),O,18007,35.75,2,0,0,Washington Secretary of State
-state_house,WA,47-P1,0,WA-H-47-P1,Write-in,Nonpartisan,W,282,0.56,3,0,0,Washington Secretary of State
-state_house,WA,47-P2,0,WA-H-47-P2,Chris Stearns,(Prefers Democratic Party),D,32585,62.82,1,1,0,Washington Secretary of State
+state_house,WA,47-P1,0,WA-H-47-P1,Debra Jean Entenman,(Prefers Democratic Party),D,32088,63.7,1,1,0,Washington Secretary of State
+state_house,WA,47-P1,0,WA-H-47-P1,Cobi Clark,(Prefers Libertarian Party),O,18009,35.75,2,0,0,Washington Secretary of State
+state_house,WA,47-P1,0,WA-H-47-P1,Write-in,Nonpartisan,W,278,0.55,3,0,0,Washington Secretary of State
+state_house,WA,47-P2,0,WA-H-47-P2,Chris Stearns,(Prefers Democratic Party),D,32592,62.82,1,1,0,Washington Secretary of State
 state_house,WA,47-P2,0,WA-H-47-P2,Ted Cooke,(Prefers Republican Party),R,19246,37.1,2,0,0,Washington Secretary of State
-state_house,WA,47-P2,0,WA-H-47-P2,Write-in,Nonpartisan,W,43,0.08,3,0,0,Washington Secretary of State
-state_house,WA,48-P1,0,WA-H-48-P1,Osman Salahuddin,(Prefers Democratic Party),D,33860,69.19,1,1,0,Washington Secretary of State
-state_house,WA,48-P1,0,WA-H-48-P1,Jeffery Poppe,(Prefers Republican Party),R,15010,30.67,2,0,0,Washington Secretary of State
+state_house,WA,47-P2,0,WA-H-47-P2,Write-in,Nonpartisan,W,42,0.08,3,0,0,Washington Secretary of State
+state_house,WA,48-P1,0,WA-H-48-P1,Osman Salahuddin,(Prefers Democratic Party),D,33862,69.19,1,1,0,Washington Secretary of State
+state_house,WA,48-P1,0,WA-H-48-P1,Jeffery Poppe,(Prefers Republican Party),R,15013,30.68,2,0,0,Washington Secretary of State
 state_house,WA,48-P1,0,WA-H-48-P1,Write-in,Nonpartisan,W,67,0.14,3,0,0,Washington Secretary of State
-state_house,WA,48-P2,0,WA-H-48-P2,Jessica Forsythe,(Prefers Democratic Party),D,23451,52.67,1,1,0,Washington Secretary of State
-state_house,WA,48-P2,0,WA-H-48-P2,Amy Walen,(Prefers Democratic Party),D,20425,45.88,2,0,0,Washington Secretary of State
-state_house,WA,48-P2,0,WA-H-48-P2,Write-in,Nonpartisan,W,647,1.45,3,0,0,Washington Secretary of State
-state_house,WA,49-P1,0,WA-H-49-P1,Kim D. Harless,(Prefers Democratic Party),D,41752,69.43,1,1,0,Washington Secretary of State
-state_house,WA,49-P1,0,WA-H-49-P1,Sarah Mittelman,(Prefers Republican Party),R,18220,30.3,2,0,0,Washington Secretary of State
-state_house,WA,49-P1,0,WA-H-49-P1,Write-in,Nonpartisan,W,165,0.27,3,0,0,Washington Secretary of State
-state_house,WA,49-P2,0,WA-H-49-P2,Monica Jurado Stonier,(Prefers Democratic Party),D,42721,71.42,1,1,0,Washington Secretary of State
-state_house,WA,49-P2,0,WA-H-49-P2,Derek Thompson,(Prefers Republican Party),R,16934,28.31,2,0,0,Washington Secretary of State
-state_house,WA,49-P2,0,WA-H-49-P2,Write-in,Nonpartisan,W,160,0.27,3,0,0,Washington Secretary of State
+state_house,WA,48-P2,0,WA-H-48-P2,Jessica Forsythe,(Prefers Democratic Party),D,23453,52.67,1,1,0,Washington Secretary of State
+state_house,WA,48-P2,0,WA-H-48-P2,Amy Walen,(Prefers Democratic Party),D,20426,45.88,2,0,0,Washington Secretary of State
+state_house,WA,48-P2,0,WA-H-48-P2,Write-in,Nonpartisan,W,646,1.45,3,0,0,Washington Secretary of State
+state_house,WA,49-P1,0,WA-H-49-P1,Kim D. Harless,(Prefers Democratic Party),D,41766,69.43,1,1,0,Washington Secretary of State
+state_house,WA,49-P1,0,WA-H-49-P1,Sarah Mittelman,(Prefers Republican Party),R,18224,30.29,2,0,0,Washington Secretary of State
+state_house,WA,49-P1,0,WA-H-49-P1,Write-in,Nonpartisan,W,166,0.28,3,0,0,Washington Secretary of State
+state_house,WA,49-P2,0,WA-H-49-P2,Monica Jurado Stonier,(Prefers Democratic Party),D,42735,71.42,1,1,0,Washington Secretary of State
+state_house,WA,49-P2,0,WA-H-49-P2,Derek Thompson,(Prefers Republican Party),R,16938,28.31,2,0,0,Washington Secretary of State
+state_house,WA,49-P2,0,WA-H-49-P2,Write-in,Nonpartisan,W,161,0.27,3,0,0,Washington Secretary of State
 state_house,WI,1,0,WI-H-1,Joel Kitchens,Republican,R,18292,57.35,1,1,0,civicAPI
 state_house,WI,1,0,WI-H-1,Renee Paplham,Democratic,D,13603,42.65,2,0,0,civicAPI
 state_house,WI,2,0,WI-H-2,Shae Sortwell,Republican,R,16071,57.72,1,1,0,civicAPI
@@ -12003,8 +12028,8 @@ state_senate,CA,14,0,CA-S-14,Esmeralda Soria,Democratic,D,147103,66.25,1,1,0,civ
 state_senate,CA,14,0,CA-S-14,Darin S. DuPont,Republican,R,74939,33.75,2,0,0,civicAPI
 state_senate,CA,16,0,CA-S-16,Melissa Hurtado,Democratic,D,121806,62.71,1,1,1,civicAPI
 state_senate,CA,16,0,CA-S-16,Guillermo Asuncion Gonzalez,Republican,R,72431,37.29,2,0,0,civicAPI
-state_senate,CA,18,0,CA-S-18,Steve Padilla,Democratic,D,187090,69.66,1,1,1,civicAPI
-state_senate,CA,18,0,CA-S-18,Art Hodges,Republican,R,81484,30.34,2,0,0,civicAPI
+state_senate,CA,18,0,CA-S-18,Steve Padilla,Democratic,D,187303,69.66,1,1,1,civicAPI
+state_senate,CA,18,0,CA-S-18,Art Hodges,Republican,R,81588,30.34,2,0,0,civicAPI
 state_senate,CA,20,0,CA-S-20,Caroline Menjivar,Democratic,D,183889,76.49,1,1,1,civicAPI
 state_senate,CA,20,0,CA-S-20,Tony Rodriguez,Republican,R,56517,23.51,2,0,0,civicAPI
 state_senate,CA,22,0,CA-S-22,Susan Rubio,Democratic,D,194547,69.61,1,1,1,civicAPI
@@ -12017,8 +12042,8 @@ state_senate,CA,28,0,CA-S-28,Lola Smallwood-Cuevas,Democratic,D,234633,85.25,1,1
 state_senate,CA,28,0,CA-S-28,Joe Lisuzzo,Republican,R,40594,14.75,2,0,0,civicAPI
 state_senate,CA,30,0,CA-S-30,Bob J. Archuleta,Democratic,D,211179,69.44,1,1,1,civicAPI
 state_senate,CA,30,0,CA-S-30,Araceli Martinez,Republican,R,92934,30.56,2,0,0,civicAPI
-state_senate,CA,32,0,CA-S-32,Kelly Seyarto,Republican,R,185949,51.8,1,0,1,civicAPI
-state_senate,CA,32,0,CA-S-32,Tiffanie Tate,Democratic,D,172999,48.2,2,0,0,civicAPI
+state_senate,CA,32,0,CA-S-32,Kelly Seyarto,Republican,R,186247,51.8,1,0,1,civicAPI
+state_senate,CA,32,0,CA-S-32,Tiffanie Tate,Democratic,D,173285,48.2,2,0,0,civicAPI
 state_senate,CA,34,0,CA-S-34,Avelino Valencia,Democratic,D,169399,70.66,1,1,0,civicAPI
 state_senate,CA,34,0,CA-S-34,Rhonda Shader,Republican,R,70355,29.34,2,0,0,civicAPI
 state_senate,CA,36,0,CA-S-36,Chris Duncan,Democratic,D,201266,51.62,1,1,0,civicAPI
@@ -12461,7 +12486,7 @@ state_senate,IL,11,0,IL-S-11,Mike Porfirio,Democratic,D,0,0,1,1,0,civicAPI
 state_senate,IL,12,0,IL-S-12,Celina Villanueva,Democratic,D,0,0,1,1,0,civicAPI
 state_senate,IL,14,0,IL-S-14,Emil Jones III,Democratic,D,50268,76.85,1,1,0,civicAPI
 state_senate,IL,14,0,IL-S-14,Brian Skala,Republican,R,15145,23.15,2,0,0,civicAPI
-state_senate,IL,15,0,IL-S-15,Napoleon B. Harris III,Democratic,D,0,0,1,1,0,civicAPI
+state_senate,IL,15,0,IL-S-15,Napoleon B. Harris III,Democratic,D,3445,100.0,1,1,0,civicAPI
 state_senate,IL,17,0,IL-S-17,Elgie R. Sims Jr.,Democratic,D,56391,86.03,1,1,0,civicAPI
 state_senate,IL,17,0,IL-S-17,Frederick L. Walls,Republican,R,9157,13.97,2,0,0,civicAPI
 state_senate,IL,18,0,IL-S-18,Frances Ann Hurley,Democratic,D,50595,67.63,1,1,0,civicAPI
@@ -12497,13 +12522,13 @@ state_senate,IL,42,0,IL-S-42,"Edgardo ""Eddie"" Perez",Republican,R,22611,31.06,
 state_senate,IL,44,0,IL-S-44,Sally J. Turner,Republican,R,48601,100.0,1,1,0,civicAPI
 state_senate,IL,45,0,IL-S-45,Andrew S. Chesney,Republican,R,50495,59.91,1,1,0,civicAPI
 state_senate,IL,45,0,IL-S-45,"Joseph H. ""Joe"" Berning",Democratic,D,33794,40.09,2,0,0,civicAPI
-state_senate,IL,47,0,IL-S-47,Neil Anderson,Republican,R,13063,100.0,1,1,0,civicAPI
+state_senate,IL,47,0,IL-S-47,Neil Anderson,Republican,R,16600,100.0,1,1,0,civicAPI
 state_senate,IL,48,0,IL-S-48,Doris Turner,Democratic,D,45076,58.91,1,1,0,civicAPI
 state_senate,IL,48,0,IL-S-48,Frank Lesko,Republican,R,31440,41.09,2,0,0,civicAPI
-state_senate,IL,50,0,IL-S-50,Jil Tracy,Republican,R,0,0,1,1,0,civicAPI
-state_senate,IL,51,0,IL-S-51,Chapin Rose,Republican,R,36630,100.0,1,1,0,civicAPI
-state_senate,IL,53,0,IL-S-53,Chris Balkema,Republican,R,22638,100.0,1,1,0,civicAPI
-state_senate,IL,54,0,IL-S-54,Steve McClure,Republican,R,23861,100.0,1,1,0,civicAPI
+state_senate,IL,50,0,IL-S-50,Jil Tracy,Republican,R,4652,100.0,1,1,0,civicAPI
+state_senate,IL,51,0,IL-S-51,Chapin Rose,Republican,R,42359,100.0,1,1,0,civicAPI
+state_senate,IL,53,0,IL-S-53,Chris Balkema,Republican,R,26202,100.0,1,1,0,civicAPI
+state_senate,IL,54,0,IL-S-54,Steve McClure,Republican,R,40980,100.0,1,1,0,civicAPI
 state_senate,IL,56,0,IL-S-56,Marsia Geldert-Murphey,Democratic,D,40073,52.94,1,1,0,civicAPI
 state_senate,IL,56,0,IL-S-56,Erica Harriss,Republican,R,35617,47.06,2,0,0,civicAPI
 state_senate,IL,57,0,IL-S-57,Christopher Belt,Democratic,D,44906,60.08,1,1,0,civicAPI
@@ -13665,8 +13690,8 @@ state_senate,NY,47,0,NY-S-47,Write-in,Nonpartisan,W,203,0.19,3,0,0,civicAPI
 state_senate,NY,48,0,NY-S-48,Rachel May,Democratic,D,61123,58.1,1,1,0,civicAPI
 state_senate,NY,48,0,NY-S-48,Richard McCarron Jr,Republican,R,44009,41.83,2,0,0,civicAPI
 state_senate,NY,48,0,NY-S-48,Write-in,Nonpartisan,W,74,0.07,3,0,0,civicAPI
-state_senate,NY,49,0,NY-S-49,Mark C. Walczyk,Republican,R,70542,69.41,1,1,0,civicAPI
-state_senate,NY,49,0,NY-S-49,Cassie L. Robbins-Forbus,Democratic,D,31071,30.57,2,0,0,civicAPI
+state_senate,NY,49,0,NY-S-49,Mark C. Walczyk,Republican,R,70654,69.37,1,1,0,civicAPI
+state_senate,NY,49,0,NY-S-49,Cassie L. Robbins-Forbus,Democratic,D,31180,30.61,2,0,0,civicAPI
 state_senate,NY,49,0,NY-S-49,Write-in,Nonpartisan,W,24,0.02,3,0,0,civicAPI
 state_senate,NY,50,0,NY-S-50,Christopher J. Ryan,Democratic,D,71945,56.87,1,1,0,civicAPI
 state_senate,NY,50,0,NY-S-50,James Corl,Republican,R,54507,43.08,2,0,0,civicAPI
@@ -14167,11 +14192,11 @@ state_senate,VT,windsor,0,VT-S-windsor,Jonathan Gleason,R,R,7659,9.79,5,0,,AP vi
 state_senate,VT,windsor,0,VT-S-windsor,Jack Williams,R,R,7573,9.68,6,0,,AP via NYT (unofficial)
 state_senate,VT,windsor,0,VT-S-windsor,Joe Izzo,IND,I,2476,3.16,7,0,,AP via NYT (unofficial)
 state_senate,VT,windsor,0,VT-S-windsor,Total Write-ins,OTH,W,75,0.1,8,0,,AP via NYT (unofficial)
-state_senate,WA,6,0,WA-S-6,Jeff Holy,(Prefers Republican Party),R,41774,91.58,1,1,0,Washington Secretary of State
-state_senate,WA,6,0,WA-S-6,Write-in,Nonpartisan,W,3839,8.42,2,0,0,Washington Secretary of State
-state_senate,WA,7,0,WA-S-7,Shelly Short,(Prefers Republican Party),R,44919,67.12,1,1,0,Washington Secretary of State
-state_senate,WA,7,0,WA-S-7,Ronald L McCoy,(Prefers Independent Party),O,21632,32.32,2,0,0,Washington Secretary of State
-state_senate,WA,7,0,WA-S-7,Write-in,Nonpartisan,W,375,0.56,3,0,0,Washington Secretary of State
+state_senate,WA,6,0,WA-S-6,Jeff Holy,(Prefers Republican Party),R,41849,91.58,1,1,0,Washington Secretary of State
+state_senate,WA,6,0,WA-S-6,Write-in,Nonpartisan,W,3849,8.42,2,0,0,Washington Secretary of State
+state_senate,WA,7,0,WA-S-7,Shelly Short,(Prefers Republican Party),R,44967,67.1,1,1,0,Washington Secretary of State
+state_senate,WA,7,0,WA-S-7,Ronald L McCoy,(Prefers Independent Party),O,21672,32.34,2,0,0,Washington Secretary of State
+state_senate,WA,7,0,WA-S-7,Write-in,Nonpartisan,W,376,0.56,3,0,0,Washington Secretary of State
 state_senate,WA,8,0,WA-S-8,Nikki Torres,(Prefers Republican Party),R,27469,52.69,1,1,0,Washington Secretary of State
 state_senate,WA,8,0,WA-S-8,Gabe Galbraith,(Prefers Republican Party),R,23628,45.33,2,0,0,Washington Secretary of State
 state_senate,WA,8,0,WA-S-8,Write-in,Nonpartisan,W,1032,1.98,3,0,0,Washington Secretary of State
@@ -14179,59 +14204,59 @@ state_senate,WA,13,0,WA-S-13,Alex Ybarra,(Prefers Republican Party),R,38808,96.7
 state_senate,WA,13,0,WA-S-13,Write-in,Nonpartisan,W,1310,3.27,2,0,0,Washington Secretary of State
 state_senate,WA,15,0,WA-S-15,Jeremie Dufault,(Prefers Republican Party),R,40122,94.37,1,1,0,Washington Secretary of State
 state_senate,WA,15,0,WA-S-15,Write-in,Nonpartisan,W,2395,5.63,2,0,0,Washington Secretary of State
-state_senate,WA,21,0,WA-S-21,Marko Liias,(Prefers Democratic Party),D,42325,72.1,1,1,0,Washington Secretary of State
-state_senate,WA,21,0,WA-S-21,Riaz Khan,(Prefers Republican Party),R,16192,27.58,2,0,0,Washington Secretary of State
+state_senate,WA,21,0,WA-S-21,Marko Liias,(Prefers Democratic Party),D,42354,72.1,1,1,0,Washington Secretary of State
+state_senate,WA,21,0,WA-S-21,Riaz Khan,(Prefers Republican Party),R,16202,27.58,2,0,0,Washington Secretary of State
 state_senate,WA,21,0,WA-S-21,Write-in,Nonpartisan,W,190,0.32,3,0,0,Washington Secretary of State
-state_senate,WA,26,0,WA-S-26,Deborah Krishnadasan,(Prefers Democratic Party),D,44066,56.21,1,1,0,Washington Secretary of State
-state_senate,WA,26,0,WA-S-26,Gary Parker,(Prefers Republican Party),R,34252,43.69,2,0,0,Washington Secretary of State
+state_senate,WA,26,0,WA-S-26,Deborah Krishnadasan,(Prefers Democratic Party),D,44089,56.21,1,1,0,Washington Secretary of State
+state_senate,WA,26,0,WA-S-26,Gary Parker,(Prefers Republican Party),R,34261,43.68,2,0,0,Washington Secretary of State
 state_senate,WA,26,0,WA-S-26,Write-in,Nonpartisan,W,83,0.11,3,0,0,Washington Secretary of State
 state_senate,WA,29,0,WA-S-29,Sharlett Mena,(Prefers Democratic Party),D,25050,70.81,1,1,0,Washington Secretary of State
 state_senate,WA,29,0,WA-S-29,David Anderson,(Prefers Democratic Party),D,9302,26.3,2,0,0,Washington Secretary of State
 state_senate,WA,29,0,WA-S-29,Write-in,Nonpartisan,W,1022,2.89,3,0,0,Washington Secretary of State
-state_senate,WA,30,0,WA-S-30,Claire Wilson,(Prefers Democratic Party),D,28778,64.35,1,1,0,Washington Secretary of State
-state_senate,WA,30,0,WA-S-30,Michael Rutland,(Prefers Republican Party),R,15903,35.56,2,0,0,Washington Secretary of State
+state_senate,WA,30,0,WA-S-30,Claire Wilson,(Prefers Democratic Party),D,28786,64.35,1,1,0,Washington Secretary of State
+state_senate,WA,30,0,WA-S-30,Michael Rutland,(Prefers Republican Party),R,15904,35.55,2,0,0,Washington Secretary of State
 state_senate,WA,30,0,WA-S-30,Write-in,Nonpartisan,W,41,0.09,3,0,0,Washington Secretary of State
 state_senate,WA,31,0,WA-S-31,Phil Fortunato,(Prefers Republican Party),R,35987,54.53,1,1,0,Washington Secretary of State
-state_senate,WA,31,0,WA-S-31,Tamara Stramel,(Prefers Democratic Party),D,29966,45.41,2,0,0,Washington Secretary of State
-state_senate,WA,31,0,WA-S-31,Write-in,Nonpartisan,W,39,0.06,3,0,0,Washington Secretary of State
-state_senate,WA,32,0,WA-S-32,Cindy Ryu,(Prefers Democratic Party),D,32999,50.93,1,1,0,Washington Secretary of State
-state_senate,WA,32,0,WA-S-32,Jesse Salomon,(Prefers Democratic Party),D,30812,47.55,2,0,0,Washington Secretary of State
-state_senate,WA,32,0,WA-S-32,Write-in,Nonpartisan,W,982,1.52,3,0,0,Washington Secretary of State
-state_senate,WA,33,0,WA-S-33,Tina L. Orwall,(Prefers Democratic Party),D,36916,95.26,1,1,0,Washington Secretary of State
-state_senate,WA,33,0,WA-S-33,Write-in,Nonpartisan,W,1836,4.74,2,0,0,Washington Secretary of State
-state_senate,WA,34,0,WA-S-34,Emily Alvarado,(Prefers Democratic Party),D,60397,97.97,1,1,0,Washington Secretary of State
-state_senate,WA,34,0,WA-S-34,Write-in,Nonpartisan,W,1254,2.03,2,0,0,Washington Secretary of State
-state_senate,WA,35,0,WA-S-35,Drew C MacEwen,(Prefers Republican Party),R,39427,50.12,1,0,0,Washington Secretary of State
-state_senate,WA,35,0,WA-S-35,Carolina Mejia,(Prefers Democratic Party),D,39143,49.76,2,0,0,Washington Secretary of State
-state_senate,WA,35,0,WA-S-35,Write-in,Nonpartisan,W,90,0.11,3,0,0,Washington Secretary of State
-state_senate,WA,36,0,WA-S-36,Noel C. Frame,(Prefers Democratic Party),D,74066,87.6,1,1,0,Washington Secretary of State
+state_senate,WA,31,0,WA-S-31,Tamara Stramel,(Prefers Democratic Party),D,29968,45.41,2,0,0,Washington Secretary of State
+state_senate,WA,31,0,WA-S-31,Write-in,Nonpartisan,W,38,0.06,3,0,0,Washington Secretary of State
+state_senate,WA,32,0,WA-S-32,Cindy Ryu,(Prefers Democratic Party),D,33013,50.94,1,1,0,Washington Secretary of State
+state_senate,WA,32,0,WA-S-32,Jesse Salomon,(Prefers Democratic Party),D,30817,47.55,2,0,0,Washington Secretary of State
+state_senate,WA,32,0,WA-S-32,Write-in,Nonpartisan,W,980,1.51,3,0,0,Washington Secretary of State
+state_senate,WA,33,0,WA-S-33,Tina L. Orwall,(Prefers Democratic Party),D,36922,96.26,1,1,0,Washington Secretary of State
+state_senate,WA,33,0,WA-S-33,Write-in,Nonpartisan,W,1433,3.74,2,0,0,Washington Secretary of State
+state_senate,WA,34,0,WA-S-34,Emily Alvarado,(Prefers Democratic Party),D,60403,97.98,1,1,0,Washington Secretary of State
+state_senate,WA,34,0,WA-S-34,Write-in,Nonpartisan,W,1248,2.02,2,0,0,Washington Secretary of State
+state_senate,WA,35,0,WA-S-35,Drew C MacEwen,(Prefers Republican Party),R,39483,50.12,1,0,0,Washington Secretary of State
+state_senate,WA,35,0,WA-S-35,Carolina Mejia,(Prefers Democratic Party),D,39199,49.76,2,0,0,Washington Secretary of State
+state_senate,WA,35,0,WA-S-35,Write-in,Nonpartisan,W,91,0.12,3,0,0,Washington Secretary of State
+state_senate,WA,36,0,WA-S-36,Noel C. Frame,(Prefers Democratic Party),D,74069,87.61,1,1,0,Washington Secretary of State
 state_senate,WA,36,0,WA-S-36,Jillian England,(Prefers Republican Party),R,10337,12.23,2,0,0,Washington Secretary of State
-state_senate,WA,36,0,WA-S-36,Write-in,Nonpartisan,W,149,0.18,3,0,0,Washington Secretary of State
-state_senate,WA,37,0,WA-S-37,Chipalo Street,(Prefers Democratic Party),D,45451,71.92,1,1,0,Washington Secretary of State
-state_senate,WA,37,0,WA-S-37,Tatiana Brown,(Prefers Democratic Party),D,17291,27.36,2,0,0,Washington Secretary of State
-state_senate,WA,37,0,WA-S-37,Write-in,Nonpartisan,W,457,0.72,3,0,0,Washington Secretary of State
-state_senate,WA,38,0,WA-S-38,June Robinson,(Prefers Democratic Party),D,34848,65.36,1,1,0,Washington Secretary of State
-state_senate,WA,38,0,WA-S-38,Brad Bender,(Prefers Republican Party),R,18389,34.49,2,0,0,Washington Secretary of State
+state_senate,WA,36,0,WA-S-36,Write-in,Nonpartisan,W,139,0.16,3,0,0,Washington Secretary of State
+state_senate,WA,37,0,WA-S-37,Chipalo Street,(Prefers Democratic Party),D,45457,71.91,1,1,0,Washington Secretary of State
+state_senate,WA,37,0,WA-S-37,Tatiana Brown,(Prefers Democratic Party),D,17295,27.36,2,0,0,Washington Secretary of State
+state_senate,WA,37,0,WA-S-37,Write-in,Nonpartisan,W,458,0.72,3,0,0,Washington Secretary of State
+state_senate,WA,38,0,WA-S-38,June Robinson,(Prefers Democratic Party),D,34860,65.35,1,1,0,Washington Secretary of State
+state_senate,WA,38,0,WA-S-38,Brad Bender,(Prefers Republican Party),R,18397,34.49,2,0,0,Washington Secretary of State
 state_senate,WA,38,0,WA-S-38,Write-in,Nonpartisan,W,84,0.16,3,0,0,Washington Secretary of State
-state_senate,WA,42,0,WA-S-42,Michael Alvarez Shepard,(Prefers Democratic Party),D,44335,56.52,1,1,0,Washington Secretary of State
-state_senate,WA,42,0,WA-S-42,Erika Creydt,(Prefers Republican Party),R,34019,43.37,2,0,0,Washington Secretary of State
-state_senate,WA,42,0,WA-S-42,Write-in,Nonpartisan,W,91,0.12,3,0,0,Washington Secretary of State
-state_senate,WA,43,0,WA-S-43,Jamie Pedersen,(Prefers Democratic Party),D,47139,71.49,1,1,0,Washington Secretary of State
-state_senate,WA,43,0,WA-S-43,Hannah Sabio-Howell,(Prefers Democratic Party),D,18200,27.6,2,0,0,Washington Secretary of State
+state_senate,WA,42,0,WA-S-42,Michael Alvarez Shepard,(Prefers Democratic Party),D,44471,56.55,1,1,0,Washington Secretary of State
+state_senate,WA,42,0,WA-S-42,Erika Creydt,(Prefers Republican Party),R,34083,43.34,2,0,0,Washington Secretary of State
+state_senate,WA,42,0,WA-S-42,Write-in,Nonpartisan,W,92,0.12,3,0,0,Washington Secretary of State
+state_senate,WA,43,0,WA-S-43,Jamie Pedersen,(Prefers Democratic Party),D,47144,71.49,1,1,0,Washington Secretary of State
+state_senate,WA,43,0,WA-S-43,Hannah Sabio-Howell,(Prefers Democratic Party),D,18205,27.61,2,0,0,Washington Secretary of State
 state_senate,WA,43,0,WA-S-43,Write-in,Nonpartisan,W,598,0.91,3,0,0,Washington Secretary of State
-state_senate,WA,44,0,WA-S-44,John Lovick,(Prefers Democratic Party),D,39645,62.21,1,1,0,Washington Secretary of State
-state_senate,WA,44,0,WA-S-44,Sherri Larkin,(Prefers Republican Party),R,24032,37.71,2,0,0,Washington Secretary of State
+state_senate,WA,44,0,WA-S-44,John Lovick,(Prefers Democratic Party),D,39665,62.21,1,1,0,Washington Secretary of State
+state_senate,WA,44,0,WA-S-44,Sherri Larkin,(Prefers Republican Party),R,24041,37.71,2,0,0,Washington Secretary of State
 state_senate,WA,44,0,WA-S-44,Write-in,Nonpartisan,W,50,0.08,3,0,0,Washington Secretary of State
-state_senate,WA,45,0,WA-S-45,Manka Dhingra,(Prefers Democratic Party),D,48725,93.47,1,1,0,Washington Secretary of State
-state_senate,WA,45,0,WA-S-45,Write-in,Nonpartisan,W,3402,6.53,2,0,0,Washington Secretary of State
-state_senate,WA,46,0,WA-S-46,Javier Valdez,(Prefers Democratic Party),D,68372,89.86,1,1,0,Washington Secretary of State
-state_senate,WA,46,0,WA-S-46,Sandra Stephens,(Prefers Republican Party),R,7606,10.0,2,0,0,Washington Secretary of State
+state_senate,WA,45,0,WA-S-45,Manka Dhingra,(Prefers Democratic Party),D,48730,93.49,1,1,0,Washington Secretary of State
+state_senate,WA,45,0,WA-S-45,Write-in,Nonpartisan,W,3392,6.51,2,0,0,Washington Secretary of State
+state_senate,WA,46,0,WA-S-46,Javier Valdez,(Prefers Democratic Party),D,68378,89.85,1,1,0,Washington Secretary of State
+state_senate,WA,46,0,WA-S-46,Sandra Stephens,(Prefers Republican Party),R,7608,10.0,2,0,0,Washington Secretary of State
 state_senate,WA,46,0,WA-S-46,Write-in,Nonpartisan,W,113,0.15,3,0,0,Washington Secretary of State
-state_senate,WA,47,0,WA-S-47,Claudia Kauffman,(Prefers Democratic Party),D,32147,61.3,1,1,0,Washington Secretary of State
-state_senate,WA,47,0,WA-S-47,Kristina Soltys,(Prefers Republican Party),R,20253,38.62,2,0,0,Washington Secretary of State
+state_senate,WA,47,0,WA-S-47,Claudia Kauffman,(Prefers Democratic Party),D,32152,61.3,1,1,0,Washington Secretary of State
+state_senate,WA,47,0,WA-S-47,Kristina Soltys,(Prefers Republican Party),R,20255,38.62,2,0,0,Washington Secretary of State
 state_senate,WA,47,0,WA-S-47,Write-in,Nonpartisan,W,43,0.08,3,0,0,Washington Secretary of State
-state_senate,WA,48,0,WA-S-48,Vandana Slatter,(Prefers Democratic Party),D,36735,96.76,1,1,0,Washington Secretary of State
-state_senate,WA,48,0,WA-S-48,Write-in,Nonpartisan,W,1229,3.24,2,0,0,Washington Secretary of State
+state_senate,WA,48,0,WA-S-48,Vandana Slatter,(Prefers Democratic Party),D,36741,96.77,1,1,0,Washington Secretary of State
+state_senate,WA,48,0,WA-S-48,Write-in,Nonpartisan,W,1225,3.23,2,0,0,Washington Secretary of State
 state_senate,WI,1,0,WI-S-1,Nic Cravillion,Republican,R,49821,57.96,1,1,0,civicAPI
 state_senate,WI,1,0,WI-S-1,Mark Becker,Independent,I,36141,42.04,2,0,0,civicAPI
 state_senate,WI,3,0,WI-S-3,Tim Carpenter,Democratic,D,0,0,1,1,0,civicAPI
