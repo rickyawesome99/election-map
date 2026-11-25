@@ -65,9 +65,9 @@ function SeatBar({ t, total, majority }: { t: ChamberTopline | null; total: numb
   return (
     <div className="relative h-5 w-full overflow-hidden rounded-sm" title={label} aria-label={label}
       style={{ background: "color-mix(in srgb, var(--app-text-primary) 6%, transparent)" }}>
-      <div className="absolute inset-y-0 left-0" style={{ width: w(s.dem), background: "var(--party-dem)" }} />
+      <div className="absolute inset-y-0 left-0" style={{ width: w(s.dem), background: "var(--party-dem-fill)" }} />
       {s.toss > 0 && <div className="absolute inset-y-0" style={{ left: w(s.dem), width: w(s.toss), background: "var(--rating-tossup)" }} />}
-      <div className="absolute inset-y-0 right-0" style={{ width: w(s.rep), background: "var(--party-rep)" }} />
+      <div className="absolute inset-y-0 right-0" style={{ width: w(s.rep), background: "var(--party-rep-fill)" }} />
       {majority && <div className="absolute -inset-y-px w-0.5" style={{ left: w(majority - 0.5), background: "var(--app-bg)" }} />}
       <span className="absolute inset-y-0 left-1 flex items-center text-[10px] font-bold sm:left-1.5 sm:text-[11px] tabular-nums text-white">{seats(s.dem)}</span>
       {s.toss > 0 && s.toss / total > 0.06 && (

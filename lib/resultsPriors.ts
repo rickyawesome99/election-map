@@ -25,7 +25,7 @@ import type { CountyArea, PastRaceResult, PriorsSlice, RacePrior, ResultsOffice 
 
 // The election-night priors: every 2026 race's forecast, nominees, poll-closing time, civicAPI id
 // and pre-election county projection, in the client-safe shape the Results page's needle reads.
-// Built once at build time into the static slice /api/results/priors/{office}; the forecast it
+// Built once at build time into the static slice /api/enight/priors/{office}; the forecast it
 // carries is whatever the deploy's forecast is, so the election-day deploy is the frozen baseline.
 
 type ClosingRow = { state: string; first_close_et: string; last_close_et: string; note: string };

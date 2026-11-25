@@ -1,6 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 
-// /results: the static archive of the 2026 count (public/results-archive-2026/), 338 snapshots from
+// /enight: the static archive of the 2026 count (public/results-archive-2026/), 338 snapshots from
 // 6 PM ET Nov 3 to 6 PM ET Nov 16 with a time slider. The page reads no live feed and no clock, so
 // these tests run on the real archive with no stubs; every test fails if the page calls civicAPI or
 // the dev-only live and archive routes.
@@ -9,13 +9,13 @@ type Prior = { id: string; office: string; counties: { pres24Est?: boolean }[] }
 
 async function guard(page: Page) {
   const calls: string[] = [];
-  await page.route(/civicapi\.org|\/api\/results\/(live|archive)/, (route) => { calls.push(route.request().url()); return route.abort(); });
+  await page.route(/civicapi\.org|\/api\/enight\/(live|archive)/, (route) => { calls.push(route.request().url()); return route.abort(); });
   return calls;
 }
 
 /** Open the page (or a race on it) and wait for the archive's board. */
 async function open(page: Page, hash = "") {
-  await page.goto(`/results${hash ? `#${hash}` : ""}`);
+  await page.goto(`/enight${hash ? `#${hash}` : ""}`);
   await expect(page.getByLabel("Snapshot", { exact: true })).toBeVisible({ timeout: 60_000 });
   await expect(page.getByText("Loading the results archive")).toHaveCount(0);
 }
@@ -95,13 +95,13 @@ test("the dashboard, map and tables fill from the archive and a race opens with 
   await page.getByRole("button", { name: "Final snapshot" }).click();
   // Its back button returns to the results.
   await page.getByRole("button", { name: "← All results" }).click();
-  await expect(page.getByRole("heading", { name: "2026 Results" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "2026 Election Night" })).toBeVisible();
   expect(page.url()).not.toMatch(/#/);
   expect(calls).toEqual([]);
 });
 
 test("the county table's swing view compares each seat with its own last election", async ({ page }) => {
-  const priors: Prior[] = (await (await page.request.get("/api/results/priors/house")).json()).races;
+  const priors: Prior[] = (await (await page.request.get("/api/enight/priors/house")).json()).races;
   const openSwing = async (hash: string) => {
     await open(page, hash);
     await page.getByRole("button", { name: "Swing", exact: true }).last().click();
@@ -147,10 +147,10 @@ test("the county table's swing view compares each seat with its own last electio
 test("the overview links to the results page", async ({ page }) => {
   await page.goto("/overview");
   await page.getByRole("link", { name: /Election Night Results/ }).click();
-  await expect(page).toHaveURL(/\/results$/);
-  // Results is reached from the overview only: no tab for it (user, 2026-10-25).
-  await expect(page.locator("nav").getByRole("link", { name: "Results" })).toHaveCount(0);
-  await expect(page.getByRole("heading", { name: "2026 Results" })).toBeVisible({ timeout: 30_000 });
+  await expect(page).toHaveURL(/\/enight$/);
+  // The election-night page is reached from the overview only: the Results tab is the 2026 Results page (user, 2026-11-25).
+  await expect(page.locator("nav").getByRole("link", { name: "Election Night" })).toHaveCount(0);
+  await expect(page.getByRole("heading", { name: "2026 Election Night" })).toBeVisible({ timeout: 30_000 });
 });
 
 test("the map's Swing tab colors counties by swing vs Pres '24 and its cards give that margin", async ({ page, isMobile }) => {

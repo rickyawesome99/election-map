@@ -1,6 +1,6 @@
 // The 2026 results snapshot behind the post-election analysis (/overview): every Senate, governor and House race's
 // current count, by seat and by county, read fresh from civicAPI and run through the same steps as
-// the Results page (normalizeRace → night fit → needle), so the figures are the ones /results shows.
+// the Results page (normalizeRace → night fit → needle), so the figures are the ones /enight shows.
 //
 //   npm run results-snapshot
 //

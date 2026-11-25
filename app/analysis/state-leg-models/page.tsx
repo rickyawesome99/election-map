@@ -124,7 +124,7 @@ export default function StateLegModelsPage() {
                         <td className="py-1 pr-3 font-semibold">{r.abbr}</td><td className="py-1 pr-3 text-right" style={veryMuted}>{r.n}</td>
                         <td className="py-1 pr-3 text-right font-semibold" style={{ color: r.bias > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>{signed(r.bias)}</td>
                         <td className="py-1 pr-3 text-right">{r.mad.toFixed(1)}</td>
-                        <td className="py-1"><div style={{ height: 6, width: `${Math.min(100, Math.abs(r.bias) * 8)}%`, background: r.bias > 0 ? "var(--party-rep)" : "var(--party-dem)", opacity: 0.6 }} /></td>
+                        <td className="py-1"><div style={{ height: 6, width: `${Math.min(100, Math.abs(r.bias) * 8)}%`, background: r.bias > 0 ? "var(--party-rep-fill)" : "var(--party-dem-fill)", opacity: 0.6 }} /></td>
                       </tr>
                     ))}
                   </tbody>

@@ -164,8 +164,8 @@ export default function StateDistrictMap({
                 </div>
               )}
               <div className="flex rounded-full overflow-hidden" style={{ height: 3 }}>
-                <div style={{ width: `${demPct}%`, background: "var(--party-dem)" }} />
-                <div style={{ width: `${repPct}%`, background: "var(--party-rep)" }} />
+                <div style={{ width: `${demPct}%`, background: "var(--party-dem-fill)" }} />
+                <div style={{ width: `${repPct}%`, background: "var(--party-rep-fill)" }} />
               </div>
             </div>
           );

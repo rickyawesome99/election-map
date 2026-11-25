@@ -246,6 +246,12 @@ function projected2026(): StateProjected2026[] {
   return out;
 }
 
+/** One past year's House vote on the three bases, nationally and by state (the 2026 Results page's
+ *  2024 baseline), without the forecast's projections that genericBallotPopularVote() also builds. */
+export function houseVoteForYear(year: number): YearHouseVote {
+  return yearVote(readRows(), year);
+}
+
 let cache: GenericBallotPopularVote | null = null;
 export function genericBallotPopularVote(): GenericBallotPopularVote {
   if (cache) return cache;

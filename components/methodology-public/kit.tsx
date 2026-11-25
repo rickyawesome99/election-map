@@ -206,7 +206,7 @@ export function RatingScale({ marker, markerLabel }: { marker?: number; markerLa
       <div className="relative h-7">
         {bands.map((b, i) => (
           <div key={i} className="absolute inset-y-0" title={`${b.label} ${b.side < 0 ? "D" : "R"}: ${Math.abs(b.side < 0 ? b.hi : b.lo)}–${Math.abs(b.side < 0 ? b.lo : b.hi)}${b.label === "Safe" ? "+" : ""} pts`}
-            style={{ left: `${x(b.lo)}%`, width: `calc(${x(b.hi) - x(b.lo)}% - 2px)`, marginLeft: 1, background: b.side < 0 ? "var(--party-dem)" : "var(--party-rep)", opacity: b.op, borderRadius: 3 }} />
+            style={{ left: `${x(b.lo)}%`, width: `calc(${x(b.hi) - x(b.lo)}% - 2px)`, marginLeft: 1, background: b.side < 0 ? "var(--party-dem-fill)" : "var(--party-rep-fill)", opacity: b.op, borderRadius: 3 }} />
         ))}
         {marker != null && <div className="absolute -inset-y-1.5 w-[3px] rounded-full" style={{ left: `calc(${x(marker)}% - 1.5px)`, background: "var(--app-text-primary)", boxShadow: "0 0 0 2px var(--app-bg)" }} aria-hidden />}
       </div>

@@ -1,7 +1,7 @@
 // The final 2026 forecast, frozen for the site. Every number a page shows about the 2026 forecast —
 // races, chambers, the Outlook, the forecast-over-time series, the race pages' calculation cards,
 // projected votes down to the county, the state legislature projections, the turnout estimate, the
-// generic-ballot page and the /results priors — is written here once, from the locked model, and
+// generic-ballot page and the /enight priors — is written here once, from the locked model, and
 // read back by lib/final2026.ts. Pages read those files, never the live model, so lib/tplCompute.ts,
 // lib/forecast.ts and the rest can change (a new TPL year, a new model) without moving the 2026
 // forecast as published.

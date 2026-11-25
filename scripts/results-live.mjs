@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Election-night intake: one process keeps the latest civicAPI payload of every 2026 Senate,
 // governor and House race on disk, and the Results page (in dev) reads that store through
-// /api/results/live instead of every browser polling civicAPI on its own.
+// /api/enight/live instead of every browser polling civicAPI on its own.
 //
 //   - Toplines (`?light`, ~1 KB) loop continuously over the races whose polls have closed, close and still-counting races first (all
 //     races every ALL_EVERY_MS), at most once per TOP_EVERY_MS per race (the feed's edge cache is

@@ -190,8 +190,8 @@ export default function MarketConfidenceCharts({ markets, years }: { markets: Ma
             <div className={subhead} style={{ color: "var(--app-text-very-muted)" }}>Every market, by price band</div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1 pb-3 text-xs" style={{ color: "var(--app-text-muted)" }}>
               <span className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-[2px]" style={{ background: "var(--app-border)" }} />Favorite won</span>
-              <span className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-[2px]" style={{ background: "var(--party-dem)" }} />Democratic favorite lost</span>
-              <span className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-[2px]" style={{ background: "var(--party-rep)" }} />Republican favorite lost</span>
+              <span className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-[2px]" style={{ background: "var(--party-dem-fill)" }} />Democratic favorite lost</span>
+              <span className="flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-[2px]" style={{ background: "var(--party-rep-fill)" }} />Republican favorite lost</span>
             </div>
             <div ref={grid} className="relative">
               <BandGrid rows={rows} wrap={grid} onTip={(t) => setTip(t && { where: "grid", tip: t })} />

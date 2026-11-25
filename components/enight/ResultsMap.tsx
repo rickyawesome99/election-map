@@ -12,7 +12,7 @@ import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor } from "@/lib/resultsFormat";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { lastName } from "@/lib/personName";
-import type { ResultsRow } from "@/components/results/ResultsPage";
+import type { ResultsRow } from "@/components/enight/ResultsPage";
 import type { ResultsOffice } from "@/lib/resultsTypes";
 
 // The national results map: states (Senate, governor) or districts (House) grey until votes are

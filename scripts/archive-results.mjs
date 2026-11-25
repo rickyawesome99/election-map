@@ -13,7 +13,7 @@
 //        # election night: one folder for the whole night (the default, the UTC date, splits it at
 //        # 7 PM ET), sleeping until --start and stopping at --until
 //
-// The Results page replays these: /api/results/archive lists them (dev only — the directory is
+// The Results page replays these: /api/enight/archive lists them (dev only — the directory is
 // not deployed) and the page's Replay control steps through them.
 import { createWriteStream, existsSync, mkdirSync, readFileSync, appendFileSync } from "node:fs";
 import { join } from "node:path";

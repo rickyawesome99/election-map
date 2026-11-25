@@ -279,7 +279,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                 <CandidateRow c={e.winner === "dem" ? e.rep : e.dem} e={e} />
                 {e.otherVotes != null && e.otherVotes > 0 && (
                   <div className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px 44px minmax(0,1fr) auto" }}>
-                    <span className="h-6 rounded-sm" style={{ background: "var(--party-ind)", opacity: 0.6 }} />
+                    <span className="h-6 rounded-sm" style={{ background: "var(--party-ind-fill)", opacity: 0.6 }} />
                     <span />
                     <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}>Others</div>
                     <div className="text-right">

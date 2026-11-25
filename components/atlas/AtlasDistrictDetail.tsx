@@ -40,9 +40,9 @@ function fmtMargin(v: number | null | undefined): string {
 const PILL_TONE = {
   muted: { background: "var(--app-tab-bg)", color: "var(--app-text-muted)" },
   primary: { background: "var(--app-text-primary)", color: "var(--app-bg)" },
-  D: { background: "var(--party-dem)", color: "#fff" },
-  R: { background: "var(--party-rep)", color: "#fff" },
-  I: { background: "var(--party-ind)", color: "#fff" },
+  D: { background: "var(--party-dem-fill)", color: "#fff" },
+  R: { background: "var(--party-rep-fill)", color: "#fff" },
+  I: { background: "var(--party-ind-fill)", color: "#fff" },
 };
 
 function Pill({ children, tone = "muted" }: { children: React.ReactNode; tone?: keyof typeof PILL_TONE }) {

@@ -81,8 +81,8 @@ function SeatBar({ label, total, dem }: { label: string; total: number; dem: num
       <b style={{ color: "var(--party-dem)" }}>{seats(dem)} D</b>
       <div className="relative h-2.5 flex-1 overflow-hidden rounded-sm" role="img"
         aria-label={`Polymarket's prices add up to ${seats(dem)} Democratic and ${seats(rep)} Republican ${label} seats of ${total}`}>
-        <div className="absolute inset-y-0 left-0" style={{ width: `${demPct}%`, background: "var(--party-dem)" }} />
-        <div className="absolute inset-y-0 right-0" style={{ width: `${100 - demPct}%`, background: "var(--party-rep)" }} />
+        <div className="absolute inset-y-0 left-0" style={{ width: `${demPct}%`, background: "var(--party-dem-fill)" }} />
+        <div className="absolute inset-y-0 right-0" style={{ width: `${100 - demPct}%`, background: "var(--party-rep-fill)" }} />
         <div className="absolute inset-y-0 left-1/2 w-px" style={{ background: "var(--app-bg)" }} />
       </div>
       <b style={{ color: "var(--party-rep)" }}>{seats(rep)} R</b>

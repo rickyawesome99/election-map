@@ -6,7 +6,7 @@ import type { Chamber } from "@/data/stateLegDistricts";
 import type { ForecastedRace } from "@/lib/forecast";
 import type { BallotRace, ChamberBlock, HouseRow, StatePageData } from "@/lib/statePage";
 import { HouseLedger, SenateCards, StateLedger } from "./BallotSection";
-import { SegToggle, SlidingTabs } from "./StateMotion";
+import { SegToggle, SegTrack, SlidingPills, SlidingTabs } from "./StateMotion";
 import { useRevealOnce } from "@/lib/useRevealOnce";
 import { useDesktopPointer } from "@/lib/useDesktopPointer";
 import { useRouter } from "next/navigation";
@@ -182,42 +182,12 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
     />
   );
 
-  const chip = (label: string, on: boolean, onClick: () => void, key: string) => (
-    <button
-      key={key}
-      type="button"
-      onClick={onClick}
-      className="ix-press shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium transition-colors"
-      style={on
-        ? { background: "var(--app-text-primary)", color: "var(--app-bg)", border: "1px solid var(--app-text-primary)" }
-        : { background: "transparent", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
-    >
-      {label}
-    </button>
-  );
-
   return (
     <>
       {/* ── 1b · The map: the ballot and every past result on it, above the lists it drives ── */}
       <section className="mt-2">
         <div className="mx-auto max-w-3xl">
-        <div className="mb-3">
-          <SlidingTabs tabs={layers.map((l) => ({ key: l.id, label: l.label }))} active={layer} onChange={(id) => show(id, activeYear === electionYear || years.includes(activeYear) ? activeYear : electionYear)} />
-        </div>
-        <div className="mb-3 flex flex-wrap items-center gap-1">
-          {layer === "counties" ? (
-            <>
-              {chip("TPL", countyLayer === TPL_LAYER, () => setCountyLayer(TPL_LAYER), TPL_LAYER)}
-              {data.counties.layers.map((l) => chip(l.label, countyLayer === l.key, () => setCountyLayer(l.key), l.key))}
-            </>
-          ) : (
-            <>
-              {chip(`${electionYear} projection`, activeYear === electionYear, () => { setYear(electionYear); setSelectedLegKey(null); }, "proj")}
-              {years.map((y) => chip(String(y), activeYear === y, () => { setYear(y); setSelectedHouse(null); setSelectedLegKey(null); }, String(y)))}
-            </>
-          )}
-        </div>
-
+        <div key={layer} className="rh-fade-in">
         {layer === "counties" ? (countyMapLayer ? (
           <PastElectionCountyMap
             key={countyMapLayer.key}
@@ -252,6 +222,33 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
           onSelectLeg={setSelectedLegKey}
         />
         )}
+        </div>
+
+        {/* What the map shows, under it: the layer, then that layer's own choices. */}
+        <div className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-2" style={{ color: "var(--app-text-muted)" }}>
+          {layers.length > 1 && (
+            <SegTrack label="Map" options={layers.map((l) => ({ key: l.id, label: l.label }))} value={layer} onChange={(id) => show(id, activeYear === electionYear || years.includes(activeYear) ? activeYear : electionYear)} />
+          )}
+          <div key={layer} className="vh-tab-in">
+            {layer === "counties" ? (
+              <SlidingPills
+                bare
+                label="County map"
+                options={[{ key: TPL_LAYER, label: "TPL" }, ...data.counties.layers.map((l) => ({ key: l.key, label: l.label }))]}
+                value={countyMapLayer ? countyLayer : TPL_LAYER}
+                onChange={setCountyLayer}
+              />
+            ) : (
+              <SlidingPills
+                bare
+                label="Year"
+                options={[{ key: String(electionYear), label: `${electionYear} projection` }, ...years.map((y) => ({ key: String(y), label: String(y) }))]}
+                value={String(activeYear)}
+                onChange={(k) => { setYear(Number(k)); setSelectedHouse(null); setSelectedLegKey(null); }}
+              />
+            )}
+          </div>
+        </div>
 
         {/* Selected district */}
         {layer === "house" && selectedHouse && !desktop && (() => {

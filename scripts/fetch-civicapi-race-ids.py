@@ -2,7 +2,7 @@
 """Map every 2026 Senate / governor / House general-election race to its civicAPI race id.
 
 civicAPI (https://civicapi.org, free, no key, attribution required) is the election-night results
-feed behind /results. Its race search takes a state and a date and returns every race on that
+feed behind /enight. Its race search takes a state and a date and returns every race on that
 ballot — thousands of local ones — so this script walks the 50 states (plus DC for nothing) once,
 keeps the three federal/statewide types, and writes data-entry/civicapi_race_ids.csv:
 

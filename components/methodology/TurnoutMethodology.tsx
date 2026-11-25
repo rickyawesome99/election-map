@@ -19,7 +19,7 @@ const DOCUMENTED_IN = {
   HOUSE_ONLY_TICKET_FACTOR: "turnout#level", COMPETITIVENESS_SLOPE: "turnout#level", COMPETITIVENESS_CAP: "turnout#level",
   SHRINK_VOTES: "turnout#split", DISTRICT_DROPOFF_WEIGHT: "turnout#house",
   OTHER_SHARE_CAP: "turnout#county-results", COUNTY_MARGIN_CLAMP: "turnout#county-results",
-  // lib/resultsNeedle.ts (the election-night needle on /results)
+  // lib/resultsNeedle.ts (the election-night needle on /enight)
   K_SWING_SHARE: "turnout#results-needle", K_TURNOUT_SHARE: "turnout#results-needle", SIGMA_COUNTY: "turnout#results-needle",
   NEAR_DONE: "turnout#results-needle", COUNTY_FEED_DONE_SHARE: "turnout#results-needle", MIN_PCT_FOR_TOTAL: "turnout#results-needle", PCT_TRUSTED_TOTAL: "turnout#results-needle", FEED_DONE_MIN_SHARE: "turnout#results-needle", MIN_SHARE: "turnout#results-needle", SIGMA_FLOOR: "turnout#results-needle",
   OWN_WEIGHT_EXP: "turnout#results-needle", SIGMA_LATE: "turnout#results-needle", SIGMA_FLOOR_DONE: "turnout#results-needle", MAX_EXTRA_SHARE: "turnout#results-needle",
@@ -138,7 +138,7 @@ export default function TurnoutMethodology() {
       </Section>
 
       <Section id="results-needle" kicker="Election night" title="The results needle"
-        lede={<>On <Link href="/results" className="underline underline-offset-2" prefetch={false}>/results</Link> the county projection above is the prior for a projected final margin that moves as counties report (<Code>lib/resultsNeedle.ts</Code>, run in the browser on every refresh of the civicAPI feed). Each county&apos;s counted votes keep their counted margin; its uncounted remainder starts from the prior plus a shared swing estimated from the counties that have reported, shrunk toward zero while little is in. The feed&apos;s race-level &ldquo;percent reporting&rdquo; is precinct-based and runs far ahead of the vote (in the real 2025 Virginia snapshots 70% reporting was 42% of the final vote), so completeness is measured against the turnout estimate instead. The needle never calls a race; calls are the feed&apos;s and lock the probability.</>}>
+        lede={<>On <Link href="/enight" className="underline underline-offset-2" prefetch={false}>/enight</Link> the county projection above is the prior for a projected final margin that moves as counties report (<Code>lib/resultsNeedle.ts</Code>, run in the browser on every refresh of the civicAPI feed). Each county&apos;s counted votes keep their counted margin; its uncounted remainder starts from the prior plus a shared swing estimated from the counties that have reported, shrunk toward zero while little is in. The feed&apos;s race-level &ldquo;percent reporting&rdquo; is precinct-based and runs far ahead of the vote (in the real 2025 Virginia snapshots 70% reporting was 42% of the final vote), so completeness is measured against the turnout estimate instead. The needle never calls a race; calls are the feed&apos;s and lock the probability.</>}>
         <Formula lines={[
           <>τ = (Σ<sub>done</sub> v<sub>c</sub> + k<sub>T</sub>) / (Σ<sub>done</sub> E<sub>c</sub> + k<sub>T</sub>) &nbsp;·&nbsp; the turnout factor from finished counties, k<sub>T</sub> = {K_TURNOUT_SHARE} × E</>,
           <>e<sub>c</sub> = max(τE<sub>c</sub>, v<sub>c</sub> / p<sub>c</sub>) &nbsp;·&nbsp; f<sub>c</sub> = min(1, v<sub>c</sub> / e<sub>c</sub>) &nbsp;·&nbsp; T<sub>c</sub> = v<sub>c</sub> if done, else max(v<sub>c</sub>, e<sub>c</sub>)</>,

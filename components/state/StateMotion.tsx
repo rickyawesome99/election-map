@@ -74,7 +74,14 @@ export function SegToggle<K extends string>({ options, value, onChange, label }:
 }
 
 /** A row of pills whose filled highlight slides to the chosen one (the chamber explorer's "Color by"). */
-export function SlidingPills<K extends string>({ options, value, onChange, label }: { options: { key: K; label: string }[]; value: K; onChange: (key: K) => void; label: string }) {
+export function SlidingPills<K extends string>({ options, value, onChange, label, bare }: {
+  options: { key: K; label: string }[];
+  value: K;
+  onChange: (key: K) => void;
+  label: string;
+  /** Smaller, and unchosen pills have no fill: a secondary control beside a SegTrack. */
+  bare?: boolean;
+}) {
   const rowRef = useRef<HTMLDivElement | null>(null);
   // Measured so it can slide; until then (and on the server) the chosen pill fills itself.
   const [thumb, setThumb] = useState<{ left: number; top: number; width: number; height: number } | null>(null);
@@ -91,7 +98,7 @@ export function SlidingPills<K extends string>({ options, value, onChange, label
     return () => ro.disconnect();
   }, [value, options.length]);
   return (
-    <div ref={rowRef} role="tablist" aria-label={label} className="relative flex flex-wrap items-center gap-1">
+    <div ref={rowRef} role="tablist" aria-label={label} className={`relative flex flex-wrap items-center ${bare ? "justify-center gap-0.5" : "gap-1"}`}>
       {thumb && (
         <span aria-hidden className="vh-tab-line pointer-events-none absolute left-0 top-0 z-0 rounded-full" style={{ width: thumb.width, height: thumb.height, transform: `translate(${thumb.left}px, ${thumb.top}px)`, background: "var(--app-text-primary)" }} />
       )}
@@ -104,11 +111,56 @@ export function SlidingPills<K extends string>({ options, value, onChange, label
             role="tab"
             aria-selected={on}
             onClick={() => onChange(o.key)}
-            className="ix-press rounded-full px-2.5 py-1 text-xs font-semibold"
-            style={{ color: on ? "var(--app-bg)" : "var(--app-text-muted)", background: on ? (thumb ? "transparent" : "var(--app-text-primary)") : "var(--app-tab-bg)", transitionDuration: "260ms" }}
+            className={`ix-press rounded-full font-semibold ${bare ? "px-2 py-[3px] text-[11px] leading-[14px] tabular-nums" : "px-2.5 py-1 text-xs"} ${bare && !on ? "hover:text-[var(--app-text-primary)]" : ""}`}
+            style={{ color: on ? "var(--app-bg)" : bare ? undefined : "var(--app-text-muted)", background: on ? (thumb ? "transparent" : "var(--app-text-primary)") : bare ? "transparent" : "var(--app-tab-bg)", transitionDuration: "260ms" }}
           >
             {/* The button stays unpositioned so the thumb paints over the other pills' fill as it passes; the label sits above it. */}
             <span className="relative z-[1]">{o.label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/**
+ * A compact segmented control: one track, and a raised thumb that slides (and resizes) to the
+ * chosen option. The state page's map uses it for the layer, under the map.
+ */
+export function SegTrack<K extends string>({ options, value, onChange, label }: { options: { key: K; label: string }[]; value: K; onChange: (key: K) => void; label: string }) {
+  const rowRef = useRef<HTMLDivElement | null>(null);
+  // Measured so it can slide; until then (and on the server) the chosen option fills itself.
+  const [thumb, setThumb] = useState<{ left: number; width: number } | null>(null);
+  useLayoutEffect(() => {
+    const row = rowRef.current;
+    if (!row) return;
+    const measure = () => {
+      const btn = row.querySelector<HTMLButtonElement>('button[aria-selected="true"]');
+      setThumb(btn ? { left: btn.offsetLeft, width: btn.offsetWidth } : null);
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(row);
+    return () => ro.disconnect();
+  }, [value, options.length]);
+  return (
+    <div ref={rowRef} role="tablist" aria-label={label} className="relative inline-flex max-w-full items-center overflow-x-auto rounded-full p-0.5 [scrollbar-width:none]" style={{ background: "var(--app-tab-bg)" }}>
+      {thumb && (
+        <span aria-hidden className="vh-tab-line pointer-events-none absolute inset-y-0.5 left-0 rounded-full" style={{ width: thumb.width, transform: `translateX(${thumb.left}px)`, background: "var(--app-panel)", boxShadow: "0 1px 2px rgba(0, 0, 0, 0.14)" }} />
+      )}
+      {options.map((o) => {
+        const on = o.key === value;
+        return (
+          <button
+            key={o.key}
+            type="button"
+            role="tab"
+            aria-selected={on}
+            onClick={() => onChange(o.key)}
+            className="ix-press relative z-[1] shrink-0 whitespace-nowrap rounded-full px-2.5 py-1 text-[11px] font-semibold leading-[14px] hover:text-[var(--app-text-primary)] sm:px-3"
+            style={{ color: on ? "var(--app-text-primary)" : "var(--app-text-muted)", background: on && !thumb ? "var(--app-panel)" : "transparent" }}
+          >
+            {o.label}
           </button>
         );
       })}

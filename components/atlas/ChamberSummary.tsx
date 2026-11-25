@@ -12,6 +12,9 @@ const fmtVotes = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(2)}M` : v >= 1e
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
 const IND = "var(--party-ind)";
+const DEM_FILL = "var(--party-dem-fill)";
+const REP_FILL = "var(--party-rep-fill)";
+const IND_FILL = "var(--party-ind-fill)";
 const INK = "var(--app-text-primary)";
 const MUTED = "var(--app-text-muted)";
 const FAINT = "var(--app-text-very-muted)";
@@ -38,14 +41,14 @@ export function ChangeBar({ now, next, total, majority, h = 14, delay = 0 }: { n
   return (
     <div className="relative" style={{ height: h }}>
       <div className="absolute inset-0 overflow-hidden rounded-[2px]" style={{ background: "var(--party-ind-subtle)" }}>
-        <div className="vh-bar-d absolute inset-y-0 left-0" style={{ width: pct(shown.dem), background: DEM, ...grow }} />
-        {oth > 0 && <div className="vh-bar-d absolute inset-y-0" style={{ left: pct(shown.dem), width: pct(oth), background: IND, ...grow }} />}
-        <div className="vh-bar-r absolute inset-y-0 right-0" style={{ width: pct(shown.rep), background: REP, ...grow }} />
+        <div className="vh-bar-d absolute inset-y-0 left-0" style={{ width: pct(shown.dem), background: DEM_FILL, ...grow }} />
+        {oth > 0 && <div className="vh-bar-d absolute inset-y-0" style={{ left: pct(shown.dem), width: pct(oth), background: IND_FILL, ...grow }} />}
+        <div className="vh-bar-r absolute inset-y-0 right-0" style={{ width: pct(shown.rep), background: REP_FILL, ...grow }} />
         {now && next && next.dem > now.dem && (
-          <div className="vh-in absolute inset-y-0" style={{ left: pct(now.dem), width: pct(next.dem - now.dem), background: stripe(DEM), animationDelay: `${delay + 500}ms` }} />
+          <div className="vh-in absolute inset-y-0" style={{ left: pct(now.dem), width: pct(next.dem - now.dem), background: stripe(DEM_FILL), animationDelay: `${delay + 500}ms` }} />
         )}
         {now && next && next.rep > now.rep && (
-          <div className="vh-in absolute inset-y-0" style={{ right: pct(now.rep), width: pct(next.rep - now.rep), background: stripe(REP), animationDelay: `${delay + 500}ms` }} />
+          <div className="vh-in absolute inset-y-0" style={{ right: pct(now.rep), width: pct(next.rep - now.rep), background: stripe(REP_FILL), animationDelay: `${delay + 500}ms` }} />
         )}
       </div>
       {majority != null && (
@@ -260,7 +263,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs tabular-nums" style={{ color: FAINT }}>
                     {resNet && (
                       <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
-                        <span aria-hidden className="inline-block h-2.5 w-3.5 rounded-[2px]" style={{ background: flipBackground(resNet.party === "D" ? DEM : REP, 1.4) }} />
+                        <span aria-hidden className="inline-block h-2.5 w-3.5 rounded-[2px]" style={{ background: flipBackground(resNet.party === "D" ? DEM_FILL : REP_FILL, 1.4) }} />
                         seats gained
                       </span>
                     )}
@@ -308,7 +311,7 @@ export default function ChamberSummary({ s, electionYear }: { s: ChamberSummaryD
                   <div className="flex flex-wrap items-center gap-x-3 gap-y-0.5 text-xs tabular-nums" style={{ color: FAINT }}>
                     {net && (
                       <span className="inline-flex items-center gap-1.5 whitespace-nowrap">
-                        <span aria-hidden className="inline-block h-2.5 w-3.5 rounded-[2px]" style={{ background: flipBackground(net.party === "D" ? DEM : REP, 1.4) }} />
+                        <span aria-hidden className="inline-block h-2.5 w-3.5 rounded-[2px]" style={{ background: flipBackground(net.party === "D" ? DEM_FILL : REP_FILL, 1.4) }} />
                         projected flips
                       </span>
                     )}

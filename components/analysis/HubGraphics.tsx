@@ -3,7 +3,7 @@
 // (aria-hidden): the row's title and description carry the meaning. No data, no script.
 import type { ReactNode } from "react";
 
-export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "editorial" | "historical";
+export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "historical" | "modelReview";
 
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
@@ -201,27 +201,25 @@ function Historical() {
   );
 }
 
-/** A fight card: two portraits on a split party tint, VS between them, one call marked. */
-function Editorial() {
+/** Forecast against result: the dashed line is a perfect forecast, the dots a band below it, three missed calls ringed. */
+function ModelReview() {
+  const dots: [number, number, boolean][] = [[26, 70, false], [48, 68, false], [66, 61, false], [88, 62, false], [108, 53, false], [126, 55, false], [146, 47, false], [164, 49, false], [206, 40, true], [226, 38, true], [246, 31, true], [268, 30, true], [290, 23, true], [312, 22, true], [334, 14, true]];
+  const missed: [number, number][] = [[178, 46], [190, 41], [198, 45]];
   return (
     <Frame>
-      <rect x="10" y="2" width="170" height="80" rx="6" fill={DEM} fillOpacity=".12" />
-      <rect x="180" y="2" width="170" height="80" rx="6" fill={REP} fillOpacity=".12" />
-      <rect x="96" y="10" width="52" height="64" rx="4" fill={BG} stroke={DEM} strokeWidth="2.5" />
-      <circle cx="122" cy="34" r="10" fill={DEM} fillOpacity=".55" />
-      <path d="M104 72 q18 -26 36 0" fill={DEM} fillOpacity=".55" />
-      <rect x="96" y="64" width="52" height="10" fill={DEM} />
-      <rect x="212" y="10" width="52" height="64" rx="4" fill={BG} stroke={REP} strokeWidth="2.5" strokeOpacity=".6" />
-      <circle cx="238" cy="34" r="10" fill={VERY_MUTED} />
-      <path d="M220 72 q18 -26 36 0" fill={VERY_MUTED} />
-      <text x="180" y="50" textAnchor="middle" fontSize="22" fontWeight="900" fontStyle="italic" fontFamily="Georgia, serif" fill={INK}>VS</text>
+      <line x1="184" y1="2" x2="184" y2="82" stroke={BORDER} strokeWidth="1.5" />
+      <line x1="10" y1="42" x2="350" y2="42" stroke={BORDER} strokeWidth="1.5" />
+      <line x1="10" y1="62" x2="350" y2="2" stroke={MUTED} strokeWidth="1.5" strokeDasharray="4 4" />
+      <line x1="10" y1="76" x2="350" y2="16" stroke={INK} strokeWidth="2" />
+      {dots.map(([x, y, rep]) => <circle key={`${x}-${y}`} cx={x} cy={y} r="4" fill={rep ? REP : DEM} fillOpacity={rep ? 0.55 : 1} />)}
+      {missed.map(([x, y]) => <circle key={`${x}-${y}`} cx={x} cy={y} r="4.5" fill={DEM} stroke={INK} strokeWidth="2" />)}
     </Frame>
   );
 }
 
 const GRAPHICS: Record<HubGraphicId, () => ReactNode> = {
   forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote, genericBallot: GenericBallot,
-  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, editorial: Editorial, historical: Historical,
+  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, historical: Historical, modelReview: ModelReview,
 };
 
 export default function HubGraphic({ id }: { id: HubGraphicId }) {

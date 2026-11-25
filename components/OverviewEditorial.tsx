@@ -35,13 +35,13 @@ export default function OverviewEditorial({ data }: { data: OverviewData }) {
   return (
     <div className={`${PAGE_CONTAINER} pb-6 sm:pb-8`}>
         <div className="grid gap-8">
-          {/* The results page (live on election night, an archive of the count since Nov 16), boxed at the top (user, 2026-10-25). */}
-          <Link prefetch={false} href="/results" className="group flex flex-wrap items-center justify-between gap-3 rounded-md px-4 py-3 transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]" style={{ border: `2px solid ${t.textPrimary}` }}>
+          {/* The election-night replay (/enight; it was /results until 2026-11-25, when the Results page took that URL and a tab of its own), boxed at the top (user, 2026-10-25). */}
+          <Link prefetch={false} href="/enight" className="group flex flex-wrap items-center justify-between gap-3 rounded-md px-4 py-3 transition-colors hover:bg-[color-mix(in_srgb,var(--app-text-primary)_5%,transparent)]" style={{ border: `2px solid ${t.textPrimary}` }}>
             <div>
               <div className="text-[11px] font-bold uppercase tracking-[0.12em]">Election Night Results</div>
               <div className="mt-1 text-sm" style={{ color: t.textMuted }}>How the count came in for every Senate, governor and House race, 6 PM ET November 3 to November 16, against the forecast and the projected final margin.</div>
             </div>
-            <span className="text-sm font-semibold underline decoration-dotted underline-offset-4 group-hover:decoration-solid">Open the results page →</span>
+            <span className="text-sm font-semibold underline decoration-dotted underline-offset-4 group-hover:decoration-solid">Open the election night page →</span>
           </Link>
           <section>
             <div className="flex items-baseline justify-between gap-4 border-b-2 pb-2" style={{ borderColor: t.textPrimary }}>

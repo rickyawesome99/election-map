@@ -289,7 +289,7 @@ export function AtlasResultSection({ district, abbr }: { district: AtlasDistrict
             })}
             {rest > 0 && race.total > 0 && (
               <div className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderTop: "1px solid var(--app-border)" }}>
-                <span className="h-6 rounded-sm" style={{ background: "var(--party-ind)", opacity: 0.6 }} />
+                <span className="h-6 rounded-sm" style={{ background: "var(--party-ind-fill)", opacity: 0.6 }} />
                 <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}>Others</div>
                 <div className="text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
                   <div className="text-2xl font-bold" style={{ fontFamily: "var(--font-serif)" }}>{((rest / race.total) * 100).toFixed(1)}%</div>

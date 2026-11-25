@@ -6,15 +6,15 @@ import { useTouchHover } from "@/lib/useTouchHover";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { StandfirstHeader } from "@/components/StandfirstHeader";
 import { ELECTION_YEAR } from "@/lib/electionYear";
-import ResultsMap, { type MapMode } from "@/components/results/ResultsMap";
-import StateGlyph from "@/components/results/StateGlyph";
-import RaceDetail from "@/components/results/RaceDetail";
-import ChamberCard from "@/components/results/ChamberCard";
+import ResultsMap, { type MapMode } from "@/components/enight/ResultsMap";
+import StateGlyph from "@/components/enight/StateGlyph";
+import RaceDetail from "@/components/enight/RaceDetail";
+import ChamberCard from "@/components/enight/ChamberCard";
 import { flipBackground } from "@/components/FlipStripes";
-import ResultsRaceTable from "@/components/results/ResultsRaceTable";
+import ResultsRaceTable from "@/components/enight/ResultsRaceTable";
 import { loadStaticJson } from "@/lib/useStaticJson";
 import { LATE_COUNT_FROM, partyVotes, projectRace, tallyChamber, type ChamberTally } from "@/lib/resultsNeedle";
-import NightPanel from "@/components/results/NightPanel";
+import NightPanel from "@/components/enight/NightPanel";
 import { reviveNightFit, type NightFit } from "@/lib/resultsNight";
 import { closeMinutes, fmtClose, fmtDateTime, partyColor, raceHash, fmtCall, callSideColor, fmtIn, fmtInt, inColor, inState } from "@/lib/resultsFormat";
 import { SEAT_HOLDOVERS } from "@/lib/forecastTypes";
@@ -22,7 +22,7 @@ import { OFFICE_LABEL, RESULTS_ARCHIVE, RESULTS_OFFICES, type LiveRace, type Res
 
 // The 2026 Results page: a static archive of the count as it came in, 6 PM ET Nov 3 → 6 PM ET
 // Nov 16. Nothing here reads a live feed or the clock. The priors (forecast, nominees, county
-// projection, closing times) come from the static slice /api/results/priors/{office}; the count
+// projection, closing times) come from the static slice /api/enight/priors/{office}; the count
 // from public/results-archive-2026/ (scripts/publish-results-archive.ts): a manifest of 338
 // frames, chunk files of a keyframe plus each later frame's changed races (with the night model's
 // fit precomputed per frame), the chambers' seat series and, read only once a race opens, every
@@ -114,7 +114,7 @@ export default function ResultsPage() {
   // Priors, the manifest and the seat series, once, in parallel; the page opens on the last frame.
   useEffect(() => {
     Promise.all([
-      Promise.all(RESULTS_OFFICES.map((o) => loadStaticJson<PriorsSlice>(`/api/results/priors/${o}`))),
+      Promise.all(RESULTS_OFFICES.map((o) => loadStaticJson<PriorsSlice>(`/api/enight/priors/${o}`))),
       fetch(`${DIR}/manifest.json`).then((r) => { if (!r.ok) throw new Error(`archive manifest ${r.status}`); return r.json() as Promise<ResultsArchiveManifest>; }),
     ]).then(([[house, senate, governor], m]) => {
       setPriors({ senate, governor, house });
@@ -308,7 +308,7 @@ export default function ResultsPage() {
   }, [rowsByOffice, office, sort, uncalledOnly, keyOnly]);
 
   const header = (
-    <StandfirstHeader kicker="Results archive" title={`${ELECTION_YEAR} Results`} href="/overview" hubLabel="Overview" />
+    <StandfirstHeader kicker="Results archive" title={`${ELECTION_YEAR} Election Night`} href="/overview" hubLabel="Overview" />
   );
   const main = "mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8";
   if (loadError) return <>{header}<main className={main}><p className="text-sm" style={muted}>The results archive failed to load ({loadError}). Reload the page.</p></main></>;

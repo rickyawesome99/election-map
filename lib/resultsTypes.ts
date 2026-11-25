@@ -1,5 +1,5 @@
 import type { AreaSwing, NightFitData } from "@/lib/resultsNight";
-// Client-safe shapes for the election-night Results page (/results). The priors are built on the
+// Client-safe shapes for the election-night Results page (/enight). The priors are built on the
 // server (lib/resultsPriors.ts) and served as a static JSON slice; the live feed and the needle
 // (lib/resultsFeed.ts, lib/resultsNeedle.ts) run in the browser against civicAPI.
 
@@ -14,7 +14,7 @@ export const ELECTION_DATE = "2026-11-03";
  *  ?test=1 and the replay control bypass it. */
 export const FEED_OPENS_AT = Date.parse("2026-11-03T22:00:00Z");
 /** The published archive of the count, public/<dir>/ (scripts/publish-results-archive.ts), from
- *  6 PM ET election night to 6 PM ET Monday Nov 16, when the live intake ended. /results is a static
+ *  6 PM ET election night to 6 PM ET Monday Nov 16, when the live intake ended. /enight is a static
  *  replay of it (no feed, no clock), opening on its last frame. */
 export const RESULTS_ARCHIVE = {
   dir: "results-archive-2026",

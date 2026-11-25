@@ -24,6 +24,8 @@ const eslintConfig = defineConfig([
     "scripts/**",
     "test-results/**",
     "playwright-report/**",
+    // Retired pages kept for reference (see archive/README.md) — not built, not checked
+    "archive/**",
   ]),
 ]);
 

@@ -1,0 +1,26 @@
+// 1. app/analysis/page.tsx — import at the top:
+import { EDITORIAL_GOVERNOR, EDITORIAL_SENATE } from "@/data/editorialPrediction";
+
+// 2. app/analysis/page.tsx — entry in the "Forecasting & Polling" section (it sat second, after 2026 Model Review):
+        { href: "/analysis/editorial-prediction", kicker: "Editorial", title: "CT Strategies Editorial Prediction", graphic: "editorial",
+          description: <>The CT Strategies Editorial Board&rsquo;s own {electionYear} calls: the generic ballot, the House, and <Fig>{EDITORIAL_SENATE.length}</Fig> Senate and <Fig>{EDITORIAL_GOVERNOR.length}</Fig> governor races, each set against the model and the RCP average.</> },
+
+// 3. components/analysis/HubGraphics.tsx — add "editorial" to the HubGraphicId union, `editorial: Editorial` to GRAPHICS, and this function:
+/** A fight card: two portraits on a split party tint, VS between them, one call marked. */
+function Editorial() {
+  return (
+    <Frame>
+      <rect x="10" y="2" width="170" height="80" rx="6" fill={DEM} fillOpacity=".12" />
+      <rect x="180" y="2" width="170" height="80" rx="6" fill={REP} fillOpacity=".12" />
+      <rect x="96" y="10" width="52" height="64" rx="4" fill={BG} stroke={DEM} strokeWidth="2.5" />
+      <circle cx="122" cy="34" r="10" fill={DEM} fillOpacity=".55" />
+      <path d="M104 72 q18 -26 36 0" fill={DEM} fillOpacity=".55" />
+      <rect x="96" y="64" width="52" height="10" fill={DEM} />
+      <rect x="212" y="10" width="52" height="64" rx="4" fill={BG} stroke={REP} strokeWidth="2.5" strokeOpacity=".6" />
+      <circle cx="238" cy="34" r="10" fill={VERY_MUTED} />
+      <path d="M220 72 q18 -26 36 0" fill={VERY_MUTED} />
+      <text x="180" y="50" textAnchor="middle" fontSize="22" fontWeight="900" fontStyle="italic" fontFamily="Georgia, serif" fill={INK}>VS</text>
+    </Frame>
+  );
+}
+

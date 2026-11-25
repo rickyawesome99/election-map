@@ -4,11 +4,14 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePendingNav } from "@/lib/navPending";
+import StatesMenu from "./StatesMenu";
 
 // prefetch: false on the heaviest pages (their RSC payloads are 100-250 KB each) so every page
 // view does not download them for links the reader may never click; they prefetch on hover instead.
 const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = [
   { key: "overview",         label: "Overview" },
+  { key: "states",           label: "States" }, // a button that opens the state grid (StatesMenu)
+  { key: "results",          label: "Results", prefetch: false },
   { key: "model",            label: "TPL", prefetch: false },
   { key: "war",              label: "WAR", prefetch: false },
   { key: "forecast",         label: "Forecast" },
@@ -25,6 +28,8 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/legislatures" || /^\/states\/[^/]+\/legislature(\/|$)/.test(pathname)) return "legislatures";
   // Historical Results is an Analysis entry; it and its county pages keep their /historical URLs.
   if (pathname === "/historical" || pathname.startsWith("/historical/")) return "analysis";
+  if (/^\/states\/[^/]+$/.test(pathname)) return "states";
+  if (pathname === "/results") return "results";
   if (pathname === "/precincts") return "precincts";
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/war") return "war";
@@ -130,6 +135,8 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
           else tabRefs.current.delete(key);
           if (isActive) activeTabRef.current = el;
         };
+
+        if (key === "states") return <StatesMenu key={key} className={tabClass} active={isActive} buttonRef={setRef} />;
 
         const targetHref = href ?? (key === "forecast" ? `/${forecastChamber}` : `/${key}`);
 

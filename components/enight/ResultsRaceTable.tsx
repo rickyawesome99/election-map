@@ -5,7 +5,7 @@ import { lastName } from "@/lib/personName";
 import { fmtClose, fmtInt, raceHash, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import type { Party } from "@/lib/resultsTypes";
 import { useTouchHover } from "@/lib/useTouchHover";
-import type { ResultsRow } from "@/components/results/ResultsPage";
+import type { ResultsRow } from "@/components/enight/ResultsPage";
 
 // The Results page's race table, built like the /historical race list (components/PastRaceTable):
 // each race a head-to-head bar sized by the counted two-party share, last names, shares and votes

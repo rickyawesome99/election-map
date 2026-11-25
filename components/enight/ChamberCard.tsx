@@ -4,8 +4,8 @@ import type { ChamberTally } from "@/lib/resultsNeedle";
 import { OFFICE_LABEL, type Party, type ResultsOffice, type SeatPoint } from "@/lib/resultsTypes";
 import { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
 import { callSideColor, fmtCall, fmtInt, partyColor } from "@/lib/resultsFormat";
-import type { ResultsRow } from "@/components/results/ResultsPage";
-import SeatTrend from "@/components/results/SeatTrend";
+import type { ResultsRow } from "@/components/enight/ResultsPage";
+import SeatTrend from "@/components/enight/SeatTrend";
 
 // One chamber on the Results page, flat on the page background like the forecast hero: the called
 // seats in the serif, one balance-of-power bar (called solid, leading light, not yet counted grey,

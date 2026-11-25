@@ -99,8 +99,8 @@ function HouseEffectChart() {
   return (
     <div>
       <div className="hidden flex-wrap items-center gap-x-5 gap-y-1 pb-3 text-xs md:flex" style={{ color: "var(--app-text-muted)" }}>
-        <span className="flex items-center gap-1.5"><span className="inline-block h-2.5 w-5 rounded-sm" style={{ background: "var(--party-dem)" }} />Leans Democratic vs the field in {electionYear}</span>
-        <span className="flex items-center gap-1.5"><span className="inline-block h-2.5 w-5 rounded-sm" style={{ background: "var(--party-rep)" }} />Leans Republican</span>
+        <span className="flex items-center gap-1.5"><span className="inline-block h-2.5 w-5 rounded-sm" style={{ background: "var(--party-dem-fill)" }} />Leans Democratic vs the field in {electionYear}</span>
+        <span className="flex items-center gap-1.5"><span className="inline-block h-2.5 w-5 rounded-sm" style={{ background: "var(--party-rep-fill)" }} />Leans Republican</span>
         <span className="flex items-center gap-1.5"><span className="inline-block h-3 w-0.5" style={{ background: "var(--app-text-primary)" }} />Its historical house effect</span>
       </div>
       <div role="table" aria-label={`${electionYear} house effects by pollster`}>
@@ -115,7 +115,7 @@ function HouseEffectChart() {
               <div role="cell" className="relative hidden h-4 md:block">
                 <div className="absolute inset-y-0 left-1/2 w-px" style={{ background: "var(--app-border)" }} />
                 <div className="absolute inset-y-[3px]" style={{
-                  background: h.effect > 0 ? "var(--party-rep)" : "var(--party-dem)", width: `${pct(h.effect)}%`,
+                  background: h.effect > 0 ? "var(--party-rep-fill)" : "var(--party-dem-fill)", width: `${pct(h.effect)}%`,
                   ...(h.effect > 0 ? { left: "50%", borderRadius: "0 4px 4px 0" } : { right: "50%", borderRadius: "4px 0 0 4px" }),
                 }} />
                 {hist != null && <div className="absolute inset-y-0 w-0.5" style={{ background: "var(--app-text-primary)", left: `calc(${50 + (hist > 0 ? 1 : -1) * pct(hist)}% - 1px)`, boxShadow: "0 0 0 1px var(--app-bg)" }} />}

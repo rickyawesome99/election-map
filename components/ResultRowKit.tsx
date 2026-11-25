@@ -116,9 +116,9 @@ export function HeadToHead({ dem, rep, mid, split, other = 0, tick }: { dem: Rea
       {d != null ? (
         <div className="relative">
           <div className="flex h-1.5 gap-[2px] overflow-hidden rounded-full">
-            <i className="vh-bar-d block h-full" style={{ width: `${d}%`, background: "var(--party-dem)" }} />
-            {o > 0 && <i className="vh-bar-d block h-full" style={{ width: `${o}%`, background: "var(--party-ind)", transformOrigin: "center" }} />}
-            <i className="vh-bar-r block h-full" style={{ width: `${100 - d - o}%`, background: "var(--party-rep)" }} />
+            <i className="vh-bar-d block h-full" style={{ width: `${d}%`, background: "var(--party-dem-fill)" }} />
+            {o > 0 && <i className="vh-bar-d block h-full" style={{ width: `${o}%`, background: "var(--party-ind-fill)", transformOrigin: "center" }} />}
+            <i className="vh-bar-r block h-full" style={{ width: `${100 - d - o}%`, background: "var(--party-rep-fill)" }} />
           </div>
           {tick != null && <span className="absolute -top-1 -bottom-1 w-[2px]" style={{ left: `calc(${tick}% - 1px)`, background: "var(--app-text-primary)" }} aria-hidden />}
         </div>

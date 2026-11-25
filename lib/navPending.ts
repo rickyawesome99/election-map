@@ -157,7 +157,7 @@ export function usePendingNav(): PendingNav | null {
 
 const TAB_KINDS: Record<string, PendingKind> = {
   "/overview": "overview",
-  "/results": "results",
+  "/enight": "results",
   "/house": "forecast",
   "/senate": "forecast",
   "/governor": "forecast",

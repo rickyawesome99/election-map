@@ -276,7 +276,7 @@ function toneStyle(t: string): React.CSSProperties {
     const p = t.slice(7);
     return { background: p === "D" || p === "R" ? getRatingColors(`Safe ${p}`).bg : "var(--party-ind)" };
   }
-  if (t === "I") return { background: "var(--party-ind)" };
+  if (t === "I") return { background: "var(--party-ind-fill)" };
   if (t === "none") return { background: "var(--party-ind-subtle)" };
   return { background: getRatingColors(t).bg };
 }
@@ -289,7 +289,7 @@ function SeatSquares({ dem, rep, total, tones }: { dem: number; rep: number; tot
   const rows = total > 120 ? 3 : 2;
   const cols = Math.ceil(total / rows);
   const majCol = Math.ceil((Math.floor(total / 2) + 1) / rows);
-  const style = (i: number): React.CSSProperties => (tones?.[i] ? toneStyle(tones[i]) : { background: i < dem ? "var(--party-dem)" : i >= total - rep ? "var(--party-rep)" : "var(--party-ind-subtle)" });
+  const style = (i: number): React.CSSProperties => (tones?.[i] ? toneStyle(tones[i]) : { background: i < dem ? "var(--party-dem-fill)" : i >= total - rep ? "var(--party-rep-fill)" : "var(--party-ind-subtle)" });
   return (
     <div className="relative grid w-full gap-[2px]" style={{ gridAutoFlow: "column", gridTemplateRows: `repeat(${rows}, auto)`, gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
       {Array.from({ length: total }, (_, i) => <i key={i} className="block aspect-square rounded-[1.5px]" style={style(i)} title={tones?.[i]?.replace(/^not-up (\w)$/, "Not up · $1")} />)}

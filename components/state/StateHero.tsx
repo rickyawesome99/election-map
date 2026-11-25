@@ -5,7 +5,7 @@ import StateSwitcher from "@/components/StateSwitcher";
 
 const PARTY_COLOR = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)" } as const;
 const PARTY_NAME = { D: "Democrat", R: "Republican", I: "Independent" } as const;
-const LABEL = "text-[11px] font-bold uppercase tracking-wider";
+const LABEL = "text-[10px] font-bold uppercase tracking-wider";
 
 function partyOf(b: HeroBody): "D" | "R" | "I" | null {
   return b.dem ? "D" : b.rep ? "R" : b.oth ? "I" : null;
@@ -36,7 +36,7 @@ function SeatSquares({ body }: { body: HeroBody }) {
   const total = body.total ?? body.dem + body.rep + body.oth;
   const vacant = Math.max(0, total - body.dem - body.rep - body.oth);
   const small = total > 18;
-  const sq = small ? "h-[6px] w-[6px] rounded-[1px]" : "h-[10px] w-[10px] rounded-[2px]";
+  const sq = small ? "h-[6px] w-[6px] rounded-[1px]" : "h-[8px] w-[8px] rounded-[2px]";
   const seats: ("D" | "I" | "V" | "R")[] = [
     ...Array<"D">(body.dem).fill("D"),
     ...Array<"I">(body.oth).fill("I"),
@@ -64,7 +64,7 @@ function SeatBar({ body }: { body: HeroBody }) {
   const total = body.total ?? body.dem + body.rep + body.oth;
   const pct = (n: number) => (total > 0 ? `${Math.max(0, Math.min(100, (n / total) * 100)).toFixed(2)}%` : "0%");
   return (
-    <div className="relative h-2 w-full overflow-hidden rounded-[2px]" style={{ background: "var(--party-ind-subtle)" }}>
+    <div className="relative h-1.5 w-full overflow-hidden rounded-[2px]" style={{ background: "var(--party-ind-subtle)" }}>
       <div className="absolute inset-y-0 left-0" style={{ width: pct(body.dem), background: PARTY_COLOR.D }} />
       <div className="absolute inset-y-0 right-0" style={{ width: pct(body.rep), background: PARTY_COLOR.R }} />
       {body.notch && <div className="absolute inset-y-0 left-1/2 w-[1.5px] -translate-x-1/2" style={{ background: "var(--app-text-primary)", opacity: 0.8 }} />}
@@ -79,7 +79,7 @@ function controlChip(gov: HeroBody | undefined, chambers: HeroBody[]): { text: s
   return chambers.every((c) => majorityOf(c) === g) ? { text: `${g} trifecta`, party: g } : { text: "Divided", party: null };
 }
 
-const VALUE = "mt-1.5 truncate text-[1.35rem] sm:text-[1.6rem] font-bold tabular-nums leading-none";
+const VALUE = "mt-1 truncate text-[1.15rem] sm:text-[1.3rem] font-bold tabular-nums leading-none";
 
 /**
  * One body as a stat: label (and seat total) on top, the holder in the site's serif figure style,
@@ -94,10 +94,10 @@ function BodyCell({ body, className }: { body: HeroBody; className?: string }) {
     return (
       <div className={`flex min-w-0 items-baseline gap-3 sm:block ${className ?? ""}`}>
         <div className={`${LABEL} shrink-0`} style={{ color: "var(--app-text-very-muted)" }}>{body.label}</div>
-        <div className={`mt-0 truncate text-[1.2rem] font-bold leading-none sm:whitespace-normal sm:leading-[1.1] sm:[text-wrap:balance] sm:mt-1.5 ${(body.holder?.length ?? 0) > 17 ? "sm:text-[1.1rem]" : (body.holder?.length ?? 0) > 11 ? "sm:text-[1.3rem]" : "sm:text-[1.6rem]"}`} style={{ fontFamily: "var(--font-serif)", color: gov ? PARTY_COLOR[gov] : undefined }} title={body.holder}>
+        <div className={`mt-0 truncate text-[1.1rem] font-bold leading-none sm:whitespace-normal sm:leading-[1.1] sm:[text-wrap:balance] sm:mt-1 ${(body.holder?.length ?? 0) > 17 ? "sm:text-[1rem]" : (body.holder?.length ?? 0) > 11 ? "sm:text-[1.15rem]" : "sm:text-[1.3rem]"}`} style={{ fontFamily: "var(--font-serif)", color: gov ? PARTY_COLOR[gov] : undefined }} title={body.holder}>
           {body.holder ?? "—"}
         </div>
-        <div className="mt-2 hidden text-xs font-semibold leading-none sm:block" style={{ color: "var(--app-text-muted)" }}>
+        <div className="mt-1.5 hidden text-[11px] font-semibold leading-none sm:block" style={{ color: "var(--app-text-muted)" }}>
           {gov ? PARTY_NAME[gov] : "Vacant"}
         </div>
       </div>
@@ -117,7 +117,7 @@ function BodyCell({ body, className }: { body: HeroBody; className?: string }) {
       <div className={VALUE} style={{ fontFamily: "var(--font-serif)" }}>
         <Counts body={chamber ? { ...body, oth: 0 } : body} sep={chamber} />
       </div>
-      <div className="mt-2">
+      <div className="mt-1.5">
         {chamber ? (
           <SeatBar body={body} />
         ) : (
@@ -131,11 +131,11 @@ function BodyCell({ body, className }: { body: HeroBody; className?: string }) {
 function BodyGroup({ title, chip, children, className }: { title: string; chip?: ReturnType<typeof controlChip>; children: React.ReactNode; className?: string }) {
   return (
     <div className={`min-w-0 ${className ?? ""}`} style={{ borderColor: "var(--app-border)" }}>
-      <div className="mb-3 flex items-center gap-2.5 pb-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
-        <span className="text-[13px] font-bold" style={{ color: "var(--app-text-primary)" }}>{title}</span>
+      <div className="mb-2 flex items-center gap-2.5 pb-1.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+        <span className="text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{title}</span>
         {chip && (
           <span
-            className="rounded-[3px] px-[7px] py-px text-[11px] font-bold"
+            className="rounded-[3px] px-[6px] py-px text-[10px] font-bold"
             style={chip.party
               ? { color: PARTY_COLOR[chip.party], background: `color-mix(in srgb, ${PARTY_COLOR[chip.party]} 14%, transparent)` }
               : { color: "var(--app-text-primary)", background: "var(--party-ind-subtle)" }}
@@ -173,11 +173,11 @@ export default function StateHero({
     <div
       style={{
         background: tpl != null
-          ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
+          ? `linear-gradient(to bottom, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 24%, var(--app-bg)) 0%, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 11%, var(--app-bg)) 50%, var(--app-bg) 100%)`
           : "var(--app-bg)",
       }}
     >
-      <div className={`${PAGE_CONTAINER} pt-6 pb-4 sm:pb-6`}>
+      <div className={`${PAGE_CONTAINER} pt-6 pb-3 sm:pb-4`}>
         <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
           <div className="min-w-0">
             <div className="mb-3">
@@ -227,14 +227,14 @@ export default function StateHero({
 
         {/* Today's control, Federal beside State. Current composition only — the 2026 projections
             live in the ballot section, where they sit next to the races that produce them. */}
-        <div className="mt-5 grid gap-y-5 sm:mt-4 sm:grid-cols-[5fr_8fr] sm:gap-x-10">
+        <div className="mt-4 grid gap-y-4 sm:mt-3 sm:grid-cols-[5fr_8fr] sm:gap-x-10">
           <BodyGroup title="Federal">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+            <div className="grid grid-cols-2 gap-x-6 gap-y-3">
               {federal.map((b) => <BodyCell key={b.key} body={b} />)}
             </div>
           </BodyGroup>
           <BodyGroup title="State" chip={chip}>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-[1.4fr_1fr_1fr]">
+            <div className="grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-[1.4fr_1fr_1fr]">
               {state.map((b) => <BodyCell key={b.key} body={b} className={b.key === "governor" ? "col-span-2 sm:col-span-1" : undefined} />)}
             </div>
           </BodyGroup>

@@ -320,8 +320,8 @@ function BodyGraph({ label, entries, presidential, majority, halfLine, newMapYea
       <div className="mb-3 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
         <Legend
           items={[
-            { key: "d", label: "Democratic", swatch: <rect x={7} y={1} width={12} height={10} rx={2} fill="var(--party-dem)" /> },
-            { key: "r", label: "Republican", swatch: <rect x={7} y={1} width={12} height={10} rx={2} fill="var(--party-rep)" /> },
+            { key: "d", label: "Democratic", swatch: <rect x={7} y={1} width={12} height={10} rx={2} fill="var(--party-dem-fill)" /> },
+            { key: "r", label: "Republican", swatch: <rect x={7} y={1} width={12} height={10} rx={2} fill="var(--party-rep-fill)" /> },
             ...(seatRows.some((r) => r.oth > 0) ? [{ key: "o", label: "Other", swatch: <rect x={7} y={1} width={12} height={10} rx={2} fill="var(--party-ind-muted)" /> }] : []),
             ...(projection ? [{ key: "p", label: "2026 forecast", swatch: <rect x={7} y={1} width={12} height={10} rx={2} fill="url(#rg-hatch-legend)" stroke="var(--app-text-muted)" strokeWidth={1} /> }] : []),
             ...(presInRange.length && voteRows.length ? [{
@@ -370,9 +370,9 @@ function BodyGraph({ label, entries, presidential, majority, halfLine, newMapYea
                 <line x1={left} x2={left + iw} y1={sy(0)} y2={sy(0)} stroke="var(--app-text-muted)" strokeWidth={1} />
                 {seatRows.map((r) => {
                   const segs = [
-                    { k: "d", v: r.dem!, fill: "var(--party-dem)" },
+                    { k: "d", v: r.dem!, fill: "var(--party-dem-fill)" },
                     { k: "o", v: r.oth, fill: "var(--party-ind-muted)" },
-                    { k: "r", v: r.rep!, fill: "var(--party-rep)" },
+                    { k: "r", v: r.rep!, fill: "var(--party-rep-fill)" },
                   ].filter((s) => s.v > 0);
                   let acc = 0;
                   const dim = hoverYear != null && hoverYear !== r.year;

@@ -11,7 +11,7 @@ export default function PostElectionSources({ legislatureAsOf }: { legislatureAs
       <summary className="cursor-pointer select-none font-semibold" style={{ color: "var(--app-text-muted)" }}>Sources and how to read these results</summary>
       <div className="mt-2 space-y-2">
       <p>
-        <strong className="font-semibold">Sources.</strong> Vote counts and race calls come from <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">civicAPI</a>. State legislature seats and calls come from The New York Times and The Associated Press, saved {fmtDateTime(legislatureAsOf)}. These results don&rsquo;t update on their own; for how the count came in, night by night, see <Link href="/results" prefetch={false} className="underline underline-offset-2">Results</Link>.
+        <strong className="font-semibold">Sources.</strong> Vote counts and race calls come from <a href={CIVIC_ATTRIBUTION.href} className="underline underline-offset-2" target="_blank" rel="noopener noreferrer">civicAPI</a>. State legislature seats and calls come from The New York Times and The Associated Press, saved {fmtDateTime(legislatureAsOf)}. These results don&rsquo;t update on their own; for how the count came in, night by night, see <Link href="/enight" prefetch={false} className="underline underline-offset-2">Election Night</Link>.
       </p>
       <p>
         <strong className="font-semibold">Projected margin.</strong> Where the Results page expected the race to finish, at the time shown under the page title.

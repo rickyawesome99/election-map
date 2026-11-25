@@ -666,9 +666,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
               <span className="text-base font-bold" style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{stats.repPct.toFixed(1)}%</span>
             </div>
             <div className="relative my-1 flex h-2 overflow-hidden rounded-full" style={{ background: t.border }}>
-              <div style={{ width: `${stats.demPct}%`, background: "var(--party-dem)" }} />
+              <div style={{ width: `${stats.demPct}%`, background: "var(--party-dem-fill)" }} />
               <div className="flex-1" />
-              <div style={{ width: `${stats.repPct}%`, background: "var(--party-rep)" }} />
+              <div style={{ width: `${stats.repPct}%`, background: "var(--party-rep-fill)" }} />
               <span className="absolute inset-y-0 left-1/2 w-0.5 -translate-x-1/2" style={{ background: t.bg }} />
             </div>
             <div className="flex justify-between text-xs tabular-nums" style={{ color: t.textMuted }}>

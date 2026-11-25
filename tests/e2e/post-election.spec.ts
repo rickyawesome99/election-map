@@ -6,7 +6,7 @@ import { expect, test } from "@playwright/test";
 
 test("every state has a box and nothing reads the feed", async ({ page }) => {
   const feed: string[] = [];
-  page.on("request", (r) => { if (r.url().includes("civicapi.org") || r.url().includes("/api/results/")) feed.push(r.url()); });
+  page.on("request", (r) => { if (r.url().includes("civicapi.org") || r.url().includes("/api/enight/")) feed.push(r.url()); });
   await page.goto("/overview");
   await expect(page.getByRole("heading", { level: 1, name: "2026 Results" })).toBeVisible();
   const boxes = page.getByRole("navigation", { name: "States" }).getByRole("link");
@@ -91,7 +91,7 @@ test("a box opens the state on the hash with no page load, and Back and a reload
   await expect(page.locator("button.rc-card")).toHaveCount(30);
   await page.reload();
   await expect(page.locator("button.rc-card")).toHaveCount(30);
-  // A card opens the race's own page (user, 2026-11-18; it used to open the race on /results).
+  // A card opens the race's own page (user, 2026-11-18; it used to open the race on /enight).
   await page.locator("button.rc-card").first().click();
   await expect(page).toHaveURL(/\/governor\/fl$/);
 });

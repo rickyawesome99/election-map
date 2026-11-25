@@ -63,8 +63,8 @@ export function SplitBar({ demShare }: { demShare: number | null }) {
   const d = Math.max(0, Math.min(100, demShare));
   return (
     <div className="flex h-1.5 gap-[2px] overflow-hidden rounded-full">
-      <i className="vh-bar-d block h-full" style={{ width: `${d}%`, background: "var(--party-dem)" }} />
-      <i className="vh-bar-r block h-full" style={{ width: `${100 - d}%`, background: "var(--party-rep)" }} />
+      <i className="vh-bar-d block h-full" style={{ width: `${d}%`, background: "var(--party-dem-fill)" }} />
+      <i className="vh-bar-r block h-full" style={{ width: `${100 - d}%`, background: "var(--party-rep-fill)" }} />
     </div>
   );
 }

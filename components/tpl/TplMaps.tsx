@@ -29,7 +29,9 @@ const STATE_LINES_GEO_URL = "/congressional-districts-2026-lite-state-lines.json
 // the page color under a bold state-line overlay.
 const COUNTIES_GEO_URL = "/us-counties.json";
 
-export type MapRow = { key: string; name: string; value: number; href: string };
+/** `text` / `textColor` replace formatValue(value) / valueColor(value) in the hover box and panel, for
+ *  a map whose fill is a category (the Results page's certification map) rather than a figure. */
+export type MapRow = { key: string; name: string; value: number; href: string; text?: string; textColor?: string };
 
 type GeoFeature = { rsmKey: string; id?: string | number; properties?: { name?: string; GEOID?: string } };
 
@@ -200,7 +202,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   );
 
   const valueText = selected && (
-    <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{valueLabel} <b style={{ color: valueColor(selected.value) }}>{formatValue(selected.value)}</b></span>
+    <span className="tabular-nums" style={{ color: "var(--app-text-muted)" }}>{valueLabel} <b style={{ color: selected.textColor ?? valueColor(selected.value) }}>{selected.text ?? formatValue(selected.value)}</b></span>
   );
   const openLink = selected && (
     <Link href={selected.href} className="whitespace-nowrap font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }} title={linkLabel}>Open ›</Link>
@@ -210,7 +212,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
     <>
       <div className={fill ? "relative mx-4 aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl sm:mx-12 lg:mx-32" : "relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]"} style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
         {hovered && (!selected || !panel) && (
-          <CountyTooltip kind="figure" title={hovered.name} label={valueLabel} value={formatValue(hovered.value)} valueColor={valueColor(hovered.value)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />
+          <CountyTooltip kind="figure" title={hovered.name} label={valueLabel} value={hovered.text ?? formatValue(hovered.value)} valueColor={hovered.textColor ?? valueColor(hovered.value)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />
         )}
 
         <ComposableMap projection="geoAlbersUsa" {...(wide || fill ? WIDE_FRAME : DEFAULT_FRAME)} style={fill ? { position: "absolute", inset: 0, width: "100%", height: "100%" } : { width: "100%", height: "100%" }}>

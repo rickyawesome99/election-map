@@ -16,7 +16,7 @@ import { TREND_WINDOW, type RacePrior, type SeatPoint } from "@/lib/resultsTypes
 //                an even race dashed; the y range zooms to the line and snaps to round ticks,
 //                labelled on a y axis
 
-const TrendChart = dynamic(() => import("@/components/results/SeatTrendChart"), { ssr: false });
+const TrendChart = dynamic(() => import("@/components/enight/SeatTrendChart"), { ssr: false });
 /** The margin chart's y axis width; the time labels under it indent by the same. */
 const AXIS_WIDTH = 34;
 

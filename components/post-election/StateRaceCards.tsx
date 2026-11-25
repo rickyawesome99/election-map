@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import StateGlyph from "@/components/results/StateGlyph";
+import StateGlyph from "@/components/enight/StateGlyph";
 import { flipBackground } from "@/components/FlipStripes";
 import { partyVotes } from "@/lib/resultsNeedle";
 import { callSideColor, fmtCall, fmtIn, fmtInt, inColor, inState, partyColor } from "@/lib/resultsFormat";
@@ -36,7 +36,7 @@ function resetTilt(e: React.PointerEvent<HTMLElement>) {
   if (e.pointerType === "mouse") untiltCard(e.currentTarget);
 }
 
-/** A race's key, and on the 2026 page its hash on /results (as raceHash). */
+/** A race's key, and on the 2026 page its hash on /enight (as raceHash). */
 export const rowKey = (p: PostElectionRow["prior"]) => `${p.office}-${p.id}`;
 
 /** Two years before, as the page's headings write it: "24". */

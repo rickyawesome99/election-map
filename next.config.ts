@@ -35,6 +35,8 @@ const nextConfig: NextConfig = {
       // The post-election analysis moved under the Overview (user, 2026-11-17): 2026 on /overview, past years on /overview/[year].
       { source: "/analysis/post-election", destination: "/overview", permanent: false },
       { source: "/analysis/post-election/:year", destination: "/overview/:year", permanent: false },
+      // The editorial prediction page came off the site (user, 2026-11-25); its files are in archive/editorial-prediction/.
+      { source: "/analysis/editorial-prediction", destination: "/analysis", permanent: false },
       { source: "/model/states", destination: "/model", permanent: true },
       { source: "/model/states/:abbr", destination: "/model/:abbr", permanent: true },
       { source: "/model/table", destination: "/model", permanent: false },

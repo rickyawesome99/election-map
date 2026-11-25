@@ -45,7 +45,14 @@ export const CERTIFIED_2026: Record<string, Certification> = {
     source: "https://michiganpublic.org/politics-government/2026-11-23/michigan-certifies-november-election-results-after-record-breaking-turnout",
   },
   UT: { date: "2026-11-23", body: "State Board of Canvassers", source: "https://www.yahoo.com/news/politics/articles/utah-2026-election-results-certified-004859105.html" },
+  ID: {
+    date: "2026-11-24",
+    body: "State Board of Canvassers",
+    source: "https://www.yahoo.com/news/politics/articles/board-canvassers-certifies-idaho-general-011259881.html",
+    note: "Latah County was asked to review a result-reporting discrepancy. The SoS results file read on Nov 25 is byte-identical to the one built on Nov 23.",
+  },
+  NM: { date: "2026-11-24", body: "State Canvassing Board", source: "https://sourcenm.com/2026/11/25/new-mexico-certifies-nov-3-election-results/" },
 };
 
 /** As-of date for the list above. */
-export const CERTIFIED_2026_AS_OF = "2026-11-23";
+export const CERTIFIED_2026_AS_OF = "2026-11-25";

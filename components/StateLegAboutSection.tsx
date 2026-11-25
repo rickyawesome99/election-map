@@ -166,8 +166,8 @@ function ThresholdBar({
       {supermajority != null && label(supermajority, "Supermajority", fromRight)}
 
       <div className="relative flex h-3 overflow-hidden" style={{ borderRadius: "2px", background: "var(--app-tab-bg)" }}>
-        <div style={{ width: width(seats.dem), background: "var(--party-dem)" }} />
-        <div style={{ width: width(seats.rep), background: "var(--party-rep)", marginLeft: "auto" }} />
+        <div style={{ width: width(seats.dem), background: "var(--party-dem-fill)" }} />
+        <div style={{ width: width(seats.rep), background: "var(--party-rep-fill)", marginLeft: "auto" }} />
         <span className="absolute inset-y-0 w-px" style={{ left: mark(majority), background: "var(--app-text-primary)", opacity: 0.75 }} />
         {supermajority != null && (
           <span className="absolute inset-y-0 w-px" style={{ left: mark(supermajority), background: "var(--app-text-primary)", opacity: 0.45 }} />

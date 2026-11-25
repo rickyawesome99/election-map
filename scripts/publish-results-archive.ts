@@ -1,5 +1,5 @@
 // Publishes the 2026 count as it came in, 6 PM ET Tuesday Nov 3 → 6 PM ET Monday Nov 16, to
-// public/results-archive-2026/, so /results replays the real night (and the late count) once the
+// public/results-archive-2026/, so /enight replays the real night (and the late count) once the
 // live feed is closed (RESULTS_ARCHIVE in lib/resultsTypes.ts).
 //
 // Source: data-entry/results-archive/2026-11-03-full/ (scripts/merge-results-archive.mjs: civicAPI's

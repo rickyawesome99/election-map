@@ -17,7 +17,7 @@ import type { LegChamberResult, PostElectionRow } from "@/lib/postElectionTypes"
 // and the picked state's profile under them, all from the saved snapshot
 // (lib/resultsSnapshot.ts), or for a past year from the historical results (lib/pastPostElection.ts,
 // at /overview/[year]). The state lives in the hash (#FL), so switching loads nothing
-// and Back works, and the year toggle keeps it. A race card opens the race on /results, or a past
+// and Back works, and the year toggle keeps it. A race card opens the race on /enight, or a past
 // race's past-election page.
 
 /** The legend: the rating scale's bands, strongest D to strongest R, each with a margin inside it. */
@@ -92,14 +92,14 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
   const stateRows = useMemo(() => sortStateRows(states.get(picked) ?? []), [states, picked]);
   const openRace = useCallback((row: PostElectionRow) => {
     // The race's own page: a past year's past-election page, or the 2026 race page (user, 2026-11-18;
-    // these cards used to open the race on /results).
+    // these cards used to open the race on /enight).
     const href = row.past ? row.past.href : row.prior.office === "president" ? null : raceHref(row.prior.office, { name: row.prior.label, id: row.prior.id });
     if (!href) return;
     startPendingNav(href);
     router.push(href);
   }, [router]);
   // A native hash link leaves a history entry without the router's state, and the router ignores
-  // Back onto it: the URL returns here but /results stays rendered. Next's patched pushState keeps
+  // Back onto it: the URL returns here but /enight stays rendered. Next's patched pushState keeps
   // its state on the entry; pushState fires no hashchange, so send one for the hash store.
   const pickState = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;

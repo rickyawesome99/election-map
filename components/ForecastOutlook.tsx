@@ -60,9 +60,9 @@ function ForecastCellView({ cell, type, theme: t }: { cell: ForecastCell | null;
   return (
     <div>
       <div className="relative h-6 w-full overflow-hidden rounded-sm" aria-label={`${cell.dem} D – ${cell.rep} R${cell.tossups ? `, ${cell.tossups} toss-up` : ""}`}>
-        <div className="absolute inset-y-0 left-0" style={{ width: w(cell.dem), background: "var(--party-dem)" }} />
+        <div className="absolute inset-y-0 left-0" style={{ width: w(cell.dem), background: "var(--party-dem-fill)" }} />
         {!!cell.tossups && <div className="absolute inset-y-0" style={{ left: w(cell.dem), width: w(cell.tossups), background: "var(--rating-tossup)" }} />}
-        <div className="absolute inset-y-0 right-0" style={{ width: w(cell.rep), background: "var(--party-rep)" }} />
+        <div className="absolute inset-y-0 right-0" style={{ width: w(cell.rep), background: "var(--party-rep-fill)" }} />
         <div className="absolute -inset-y-px w-0.5" style={{ left: w(MAJORITY[type].dem - 0.5), background: t.bg }} />
         <span className="absolute inset-y-0 left-1.5 flex items-center text-[11px] font-bold tabular-nums text-white sm:text-xs">{cell.dem}</span>
         <span className="absolute inset-y-0 right-1.5 flex items-center text-[11px] font-bold tabular-nums text-white sm:text-xs">{cell.rep}</span>

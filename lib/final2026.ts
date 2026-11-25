@@ -291,7 +291,7 @@ export function genericBallotPopularVote(): GenericBallotPopularVote {
   return genericBallot();
 }
 
-/** The /results priors (lib/resultsPriors.ts): the election-day forecast, projected votes, TPL and β*
+/** The /enight priors (lib/resultsPriors.ts): the election-day forecast, projected votes, TPL and β*
  *  the needle started from. */
 export function resultsPriors(office: ResultsOffice): PriorsSlice {
   const p = priors()[office];

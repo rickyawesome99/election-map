@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import HubGraphic, { type HubGraphicId } from "@/components/analysis/HubGraphics";
 import { Fig } from "@/components/StandfirstHeader";
-import { EDITORIAL_GOVERNOR, EDITORIAL_SENATE } from "@/data/editorialPrediction";
 import { electionYear } from "@/data/forecastData";
 import { analysisHubFigures } from "@/lib/analysisHub";
+import { modelReview2026 } from "@/lib/modelReview2026";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
 
 export const metadata = {
@@ -53,12 +53,14 @@ function PlainRow({ e }: { e: Entry }) {
 
 export default function AnalysisPage() {
   const f = analysisHubFigures();
+  const mr = modelReview2026();
+  const review = { right: mr.all.right, n: mr.all.n, miss: Math.round(-mr.races.reduce((a, r) => a + r.err, 0) / mr.races.length) };
   const sections: { title: string; plain?: boolean; entries: Entry[] }[] = [
     {
       title: "Forecasting & Polling",
       entries: [
-        { href: "/analysis/editorial-prediction", kicker: "Editorial", title: "CT Strategies Editorial Prediction", graphic: "editorial",
-          description: <>The CT Strategies Editorial Board&rsquo;s own {electionYear} calls: the generic ballot, the House, and <Fig>{EDITORIAL_SENATE.length}</Fig> Senate and <Fig>{EDITORIAL_GOVERNOR.length}</Fig> governor races, each set against the model and the RCP average.</> },
+        { href: "/analysis/model-review", kicker: "Forecasts", title: "2026 Model Review", graphic: "modelReview",
+          description: <>How the final {electionYear} forecast did against the results: <Fig>{review.right}</Fig> of <Fig>{review.n}</Fig> contested races called, every race graded, where the missing <Fig><span style={{ color: "var(--party-dem)" }}>{review.miss}</span></Fig> points went, and what would change next time.</> },
         { href: "/analysis/forecasts", kicker: "Forecasts", title: "Forecast Comparison", graphic: "forecasts",
           description: <>Every published forecast lined up against ours on all <Fig>{f.forecasts.races}</Fig> House, Senate and governor races: <Fig>{f.forecasts.models}</Fig> statistical models and <Fig>{f.forecasts.raters}</Fig> race raters, chamber toplines, and every race with every call.</> },
         { href: "/analysis/markets", kicker: "Markets", title: "Prediction Markets", graphic: "markets",

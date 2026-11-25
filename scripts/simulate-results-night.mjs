@@ -173,4 +173,4 @@ for (const t of times) {
   writeFileSync(join(outDir, `${stamp}.json.gz`), gzipSync(JSON.stringify({ fetchedAt: at.toISOString(), simulated: true, races })));
   n++;
 }
-console.log(`wrote ${n} snapshots → ${outDir} (${plans.size} races, ${clamped} county ramps squeezed to finish by 10:30 AM; open /results and use Replay archive)`);
+console.log(`wrote ${n} snapshots → ${outDir} (${plans.size} races, ${clamped} county ramps squeezed to finish by 10:30 AM; open /enight and use Replay archive)`);

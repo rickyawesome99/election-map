@@ -13,8 +13,8 @@ import { countyDisplayName } from "@/lib/countyName";
 import { lastName, isRealName } from "@/lib/personName";
 import { fmtClose, fmtInt, fmtMargin, marginSideColor, partyColor, fmtCall, callSideColor, fmtIn, inColor, inState } from "@/lib/resultsFormat";
 import { OFFICE_LABEL, type Party, type PastRaceResult, type RaceHistory } from "@/lib/resultsTypes";
-import { MarginTrend } from "@/components/results/SeatTrend";
-import type { ResultsRow } from "@/components/results/ResultsPage";
+import { MarginTrend } from "@/components/enight/SeatTrend";
+import type { ResultsRow } from "@/components/enight/ResultsPage";
 
 // One race on the Results page, in the past-election pages' type (components/PastElectionPage.tsx):
 // on the left the headline, compact candidate rows and the needle with its figures; on the right
