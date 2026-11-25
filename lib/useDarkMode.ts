@@ -5,6 +5,11 @@ import { useSyncExternalStore } from "react";
 const THEME_STORAGE_KEY = "darkMode";
 const LIGHT_APP_BG = "#f9f8f5";
 const DARK_APP_BG = "#0d1117";
+// The festive theme: dark mode's text and party colors on a forest-green page. It always rides on
+// the `dark` class, so everything that asks "is it dark?" keeps answering yes.
+const FESTIVE_STORAGE_KEY = "festive";
+const FESTIVE_CLASS = "festive";
+export const FESTIVE_APP_BG = "#0c2117";
 
 // Sets every tag of this name and never removes one. React owns the tags the layout's viewport
 // renders, and in dark mode there are two: the server's (which React won't adopt once its content
@@ -25,7 +30,8 @@ function syncMeta(name: string, content: string, options: { removeMedia?: boolea
 }
 
 export function syncThemeColor(darkMode: boolean): void {
-  const appBg = darkMode ? DARK_APP_BG : LIGHT_APP_BG;
+  const festive = darkMode && document.documentElement.classList.contains(FESTIVE_CLASS);
+  const appBg = festive ? FESTIVE_APP_BG : darkMode ? DARK_APP_BG : LIGHT_APP_BG;
   const color = appBg;
   const colorScheme = darkMode ? "dark" : "light";
 
@@ -87,9 +93,12 @@ function subscribe(onStoreChange: () => void): () => void {
     attributeFilter: ["class"],
   });
 
+  // Another tab changed the theme: re-read both keys, since either one can move the page.
   const handleStorage = (event: StorageEvent) => {
-    if (event.key !== THEME_STORAGE_KEY) return;
-    const darkMode = event.newValue === "true";
+    if (event.key !== THEME_STORAGE_KEY && event.key !== FESTIVE_STORAGE_KEY) return;
+    const festive = localStorage.getItem(FESTIVE_STORAGE_KEY) === "true";
+    const darkMode = festive || localStorage.getItem(THEME_STORAGE_KEY) === "true";
+    document.documentElement.classList.toggle(FESTIVE_CLASS, festive);
     document.documentElement.classList.toggle("dark", darkMode);
     syncThemeColor(darkMode);
     onStoreChange();
@@ -103,7 +112,10 @@ function subscribe(onStoreChange: () => void): () => void {
   };
 }
 
+/** The light/dark button. Choosing either one leaves the festive theme. */
 export function setDarkMode(darkMode: boolean): void {
+  document.documentElement.classList.remove(FESTIVE_CLASS);
+  localStorage.setItem(FESTIVE_STORAGE_KEY, "false");
   document.documentElement.classList.toggle("dark", darkMode);
   syncThemeColor(darkMode);
   refreshSafariChrome();
@@ -112,4 +124,29 @@ export function setDarkMode(darkMode: boolean): void {
 
 export function useDarkMode(): boolean {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+}
+
+/** The tree button. Turning it off goes back to whichever of light or dark was chosen before. */
+export function setFestive(festive: boolean): void {
+  const darkMode = festive || localStorage.getItem(THEME_STORAGE_KEY) === "true";
+  document.documentElement.classList.toggle(FESTIVE_CLASS, festive);
+  document.documentElement.classList.toggle("dark", darkMode);
+  syncThemeColor(darkMode);
+  refreshSafariChrome();
+  localStorage.setItem(FESTIVE_STORAGE_KEY, String(festive));
+}
+
+function getFestiveSnapshot(): boolean {
+  return document.documentElement.classList.contains(FESTIVE_CLASS);
+}
+
+export function useFestive(): boolean {
+  return useSyncExternalStore(subscribe, getFestiveSnapshot, getServerSnapshot);
+}
+
+/** The page background as a hex color, for map strokes and canvases that can't read a CSS variable. */
+export function usePageBg(): string {
+  const darkMode = useDarkMode();
+  const festive = useFestive();
+  return festive ? FESTIVE_APP_BG : darkMode ? DARK_APP_BG : LIGHT_APP_BG;
 }

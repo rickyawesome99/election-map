@@ -11,8 +11,7 @@ function Stat({ value, label }: { value: string; label: string }) {
 /**
  * The inline demographic summary shared by county, district and state pages. Takes the same
  * shape everywhere (data/demographics.ts's Demographics, which data/countyDemographics.ts's
- * CountyDemographics is a subset of) and simply omits any figure its source does not carry -
- * counties have no population field, so they render one stat fewer.
+ * CountyDemographics is a subset of) and simply omits any figure its source does not carry.
  */
 export default function DemographicsStrip({
   population,

@@ -1,6 +1,8 @@
 "use client";
 
 import ThemeToggle from "@/components/ThemeToggle";
+import FestiveToggle from "@/components/FestiveToggle";
+import { FESTIVE_APP_BG, useFestive } from "@/lib/useDarkMode";
 import SearchBar from "@/components/SearchBar";
 
 export default function AppHeader({
@@ -11,13 +13,14 @@ export default function AppHeader({
   nav?: React.ReactNode;
   darkMode: boolean;
 }) {
+  const festive = useFestive();
   return (
     <header
       data-app-header
       className="flex h-14 flex-nowrap items-center gap-2 px-3 backdrop-blur-xl sm:px-6 md:gap-4"
       style={{
         borderBottom: "1px solid var(--app-border)",
-        backgroundColor: darkMode ? "#0d1117" : "#f9f8f5",
+        backgroundColor: festive ? FESTIVE_APP_BG : darkMode ? "#0d1117" : "#f9f8f5",
         backdropFilter: "blur(20px) saturate(140%)",
         WebkitBackdropFilter: "blur(20px) saturate(140%)",
       }}
@@ -38,6 +41,7 @@ export default function AppHeader({
       {nav && <div className="hidden h-full min-w-0 self-stretch lg:ml-1 lg:block xl:ml-4">{nav}</div>}
       <div className="ml-auto flex h-full shrink-0 flex-nowrap items-center gap-2">
         <SearchBar />
+        <FestiveToggle />
         <ThemeToggle />
       </div>
     </header>

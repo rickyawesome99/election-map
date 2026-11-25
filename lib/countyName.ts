@@ -13,6 +13,8 @@ const ALASKA: Record<string, "B" | "CA" | "M" | "CB"> = {
 };
 const ALASKA_SUFFIX = { B: "Borough", CA: "Census Area", M: "Municipality", CB: "City and Borough" } as const;
 
+const INDEPENDENT_CITY_STATES = new Set(["51", "24", "29", "32"]);
+
 export function countyDisplayName(fips: string, name: string): string {
   const st = fips.slice(0, 2);
   const code = fips.slice(2);
@@ -25,6 +27,7 @@ export function countyDisplayName(fips: string, name: string): string {
   // Independent cities carry county codes from 500 up (VA 510–840, Baltimore 24510, St. Louis
   // 29510, Carson City 32510). Below 500 a name ending in "City" is still a county (Charles
   // City County, VA).
-  if (Number(code) >= 500) return /\bcity$/i.test(name) ? name : `${name} City`;
+  // Only those four states have them: Texas's county codes also run past 500 (Zapata 48505).
+  if (INDEPENDENT_CITY_STATES.has(st) && Number(code) >= 500) return /\bcity$/i.test(name) ? name : `${name} City`;
   return `${name} County`;
 }

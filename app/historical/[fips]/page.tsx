@@ -1,4 +1,4 @@
-import Link from "next/link";
+import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
@@ -8,21 +8,20 @@ import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { countyHouseData } from "@/data/countyHouseData";
 import { houseData, senateData, senateNoElection, senateHoldovers } from "@/data/forecastData";
 import { countyDemographics } from "@/data/countyDemographics";
+import { countyRaces2026 } from "@/lib/raceResults2026";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { calculateCountyModel } from "@/lib/tplCompute";
 import { countyLeanTrend } from "@/lib/leanTrend";
 import { marginToRating, getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
-import BackButton from "@/components/BackButton";
 import { pastElectionHref } from "@/lib/pastElections";
 import StateCountyMap from "@/components/StateCountyMap";
+import { titleSize } from "@/components/RaceHero";
 import CountyTplCard from "@/components/CountyTplCard";
-import CountySpreadColumns from "@/components/CountySpreadColumns";
 import CountyCompareCard from "@/components/CountyCompareCard";
 import DemographicsStrip from "@/components/DemographicsStrip";
-import CountyLeanTrendChart from "@/components/CountyLeanTrendChart";
-import { AboutRaceCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, LedgerSectionHead, LedgerSubhead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
-import { StatePill } from "@/components/RaceHeroPills";
+import { StatePill, PILL } from "@/components/RaceHeroPills";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
 
@@ -52,7 +51,10 @@ function getAreaLabel(abbr: string): string {
 // redistricting - so this is computed per year, not once for the county as a whole.
 function formatDistrictLabel(stateAbbr: string, districts: number[]): string | undefined {
   if (districts.length === 0) return undefined;
-  const labels = districts.map((d) => `${stateAbbr}-${String(d).padStart(2, "0")}`);
+  return joinLabels(districts.map((d) => `${stateAbbr}-${String(d).padStart(2, "0")}`));
+}
+
+function joinLabels(labels: string[]): string {
   if (labels.length === 1) return labels[0];
   if (labels.length === 2) return `${labels[0]} & ${labels[1]}`;
   return `${labels.slice(0, -1).join(", ")} & ${labels[labels.length - 1]}`;
@@ -232,7 +234,56 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         })
     : [];
 
-  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults, ...specialSenateResults, ...houseResults].sort(
+  // 2026: the saved results the race pages show (lib/raceResults2026.ts), until 2026 is merged into
+  // the historical county files. Senate and governor are shares of every vote, like the race
+  // pages; House is the two-party split of every district piece in the county, like the past
+  // House rows above, so its swing compares like with like.
+  const races2026 = countyRaces2026(fips);
+  const statewide2026: DetailPastResult[] = races2026
+    .filter((r) => r.office !== "house")
+    .map((r) => ({
+      year: 2026,
+      demPct: (r.demVotes / r.total) * 100,
+      repPct: (r.repVotes / r.total) * 100,
+      demVotes: r.demVotes,
+      repVotes: r.repVotes,
+      demCandidate: r.demName,
+      repCandidate: r.repName,
+      demParty: r.demParty,
+      repParty: r.repParty,
+      electionType: r.office === "governor" ? "Governor" : r.special ? "Senate Special" : "Senate",
+      electionHref: r.office === "governor"
+        ? `/governor/${r.raceId.toLowerCase()}`
+        : `/senate/${r.raceId.toLowerCase().replace(/-2$/, "2")}`,
+    }));
+  const housePieces = races2026.filter((r) => r.office === "house").sort((a, b) => a.label.localeCompare(b.label, undefined, { numeric: true }));
+  const house2026: DetailPastResult[] = [];
+  if (housePieces.length > 0) {
+    const d = housePieces.reduce((a, r) => a + r.partyD, 0), rep = housePieces.reduce((a, r) => a + r.partyR, 0);
+    const sole = housePieces.length === 1 ? housePieces[0] : null;
+    const odd = housePieces.filter((r) => r.contest !== "contested");
+    if (d + rep > 0) {
+      house2026.push({
+        year: 2026,
+        demPct: (d / (d + rep)) * 100,
+        repPct: (rep / (d + rep)) * 100,
+        demVotes: d,
+        repVotes: rep,
+        // One contested district: its candidates by name; several, or an odd contest, the parties.
+        ...(sole && sole.contest === "contested"
+          ? { demCandidate: sole.demName, repCandidate: sole.repName, demParty: sole.demParty, repParty: sole.repParty }
+          : {}),
+        electionType: "House",
+        electionHref: sole && houseData.some((race) => race.name === sole.label) ? `/house/${sole.label.toLowerCase()}` : undefined,
+        districtLabel: joinLabels(housePieces.map((r) => r.label)),
+        note: odd.length > 0
+          ? `${joinLabels(odd.map((r) => r.label))} had ${odd.length === 1 ? "an " : ""}${odd.some((r) => r.contest.startsWith("uncontested")) ? "uncontested or single-party" : "single-party"} general election${odd.length === 1 ? "" : "s"}; the split counts every candidate by party.`
+          : undefined,
+      });
+    }
+  }
+
+  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults, ...specialSenateResults, ...houseResults, ...statewide2026, ...house2026].sort(
     (a, b) =>
       b.year - a.year ||
       RACE_TYPE_ORDER.indexOf(a.electionType!) - RACE_TYPE_ORDER.indexOf(b.electionType!)
@@ -251,7 +302,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
     return { ...res, swing };
   });
 
-  // TPL aggregation covers 2016–2026 incl. odd years (a county has no 2026 rows yet) (see G.YEARS / G.YEAR_WEIGHTS in
+  // TPL aggregation covers 2016–2026 incl. odd years (a county's 2026 rows come from the overlay, lib/tpl2026Inputs.ts) (see G.YEARS / G.YEAR_WEIGHTS in
   // data/tplModelData.ts, which calculateCountyModel already keys off) — only the Past
   // Race Results ledger above reaches back to 2008.
   const calc = calculateCountyModel(fips);
@@ -263,8 +314,6 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
   const heroIsD = tpl != null && tpl <= 0;
 
   const sortedResults = results.slice().sort((a, b) => b.year - a.year);
-  const latestWithVotes = sortedResults.find((r) => r.demVotes != null && r.repVotes != null);
-  const turnout = latestWithVotes ? (latestWithVotes.demVotes ?? 0) + (latestWithVotes.repVotes ?? 0) : null;
   const latestHouse = sortedResults.find((r) => r.electionType === "House" && r.districtLabel);
   const districtCount = latestHouse?.districtLabel
     ? latestHouse.districtLabel.split(/,|&/).filter((s) => s.trim().length > 0).length
@@ -279,155 +328,114 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
       : null;
   const swingFromYear = knownYearAggs.length >= 2 ? knownYearAggs[knownYearAggs.length - 2].year : null;
 
+  const soleDistrictHref = latestHouse?.districtLabel && districtCount === 1 && houseData.some((r) => r.name === latestHouse.districtLabel)
+    ? `/house/${latestHouse.districtLabel.toLowerCase()}`
+    : null;
+  // FIPS and the swing first: both are short. The districts come last and may wrap, since a large
+  // county's list (Cook: eleven districts) is wider than the page. Its hyphens are non-breaking, so
+  // the list breaks between districts and never inside "IL-06".
+  const facts = [
+    { label: "FIPS", value: fips },
+    ...(swing != null && swingFromYear != null
+      ? [{
+          label: `Swing Since ${swingFromYear}`,
+          value: swing === 0 ? "EVEN" : `${swing > 0 ? "R" : "D"}+${Math.abs(swing).toFixed(1)}`,
+          color: swing === 0 ? undefined : swing > 0 ? "var(--party-rep)" : "var(--party-dem)",
+        }]
+      : []),
+    ...(latestHouse?.districtLabel
+      ? [{ label: `District${districtCount !== 1 ? "s" : ""}`, value: latestHouse.districtLabel.replace(/-/g, "\u2011"), href: soleDistrictHref, wrap: true }]
+      : []),
+  ];
+  const demographics = countyDemographics[fips];
+
+  const checks = (label: string, value: ReactNode, title?: string) => (
+    <span className="whitespace-nowrap" title={title}>{label} {value}</span>
+  );
+  const bold = (color: string, text: string) => <b className="font-bold tabular-nums" style={{ color }}>{text}</b>;
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      {/* Hero */}
+      {/* Hero — laid out like the House pages' (components/RaceHero.tsx): pills,
+          the title with the model's checks under it, the state's county map at the right; the lean's tint fades out downward into the page. */}
       <div
         style={{
           background: tpl != null
-            ? `linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
+            ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
             : "var(--app-bg)",
         }}
       >
-        <div className={`${PAGE_CONTAINER} pt-3 pb-8 sm:pb-10`}>
-          <div className="mb-5 -ml-2">
-            <BackButton />
+        <div className={`${PAGE_CONTAINER} pt-6 pb-[21px]`}>
+          <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+            <div className="flex items-center gap-2 flex-wrap">
+              <StatePill name={stateName} abbr={county.state} />
+              <span className={PILL} style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>{areaLabel}</span>
+              {rating && ratingColors && (
+                <span className={PILL} style={{ background: ratingColors.bg, color: ratingColors.text }}>
+                  {rating}
+                </span>
+              )}
+            </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
-                <StatePill name={stateName} abbr={county.state} />
-                {rating && ratingColors && (
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: ratingColors.bg, color: ratingColors.text }}>
-                    {rating}
-                  </span>
-                )}
-              </div>
+          {/* The map hangs at the right, out of the flow, so the header is only as tall as its text. */}
+          <div className="mt-2 relative">
+            <div className="min-w-0 pr-40 sm:pr-72">
               <h1
-                className="mt-2 whitespace-nowrap"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+                className="min-w-0"
+                style={{ fontFamily: "var(--font-serif)", fontSize: titleSize(), fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", textWrap: "balance", color: "var(--app-text-primary)" }}
               >
                 {county.countyName}
               </h1>
-              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
-                {areaLabel} ·{" "}
-                <Link prefetch={false} href={`/states/${county.state.toLowerCase()}`} className="hover:underline">
-                  {stateName}
-                </Link>
-              </div>
-            </div>
-
-            {tpl != null && (
-              <div className="shrink-0 sm:text-right">
-                <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
-                  County TPL
-                </div>
-                <div
-                  className="tabular-nums"
-                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: leanColor(tpl) }}
-                >
-                  {fmtLean(tpl)}
-                </div>
-                {trend && (
-                  <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-muted)" }} title="The county's 2020 to 2024 presidential shift, minus the change in the national environment TPL removes (every state counting equally, not the popular vote). A companion to County TPL, not part of it.">
-                    Trend 2020→24 <b style={{ color: leanColor(trend.last) }}>{fmtLean(trend.last)}</b>
-                  </div>
+              <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-[13px]" style={{ color: "var(--app-text-muted)" }}>
+                {checks("County TPL", tpl != null ? bold(leanColor(tpl), fmtLean(tpl)) : bold("var(--app-text-very-muted)", "—"))}
+                {trend && checks(
+                  "Trend 2020→24",
+                  bold(leanColor(trend.last), fmtLean(trend.last)),
+                  "The county's 2020 to 2024 presidential shift, minus the change in the national environment TPL removes (every state counting equally, not the popular vote). A companion to County TPL, not part of it.",
                 )}
               </div>
-            )}
-          </div>
-
-          {/* Stat row */}
-          {(turnout != null || swing != null || districtCount != null) && (
-            <div className="mt-8 pt-5 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-              {turnout != null && latestWithVotes && (
-                <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-                  <div className="text-2xl font-extrabold tabular-nums">
-                    {turnout >= 1_000_000 ? `${(turnout / 1_000_000).toFixed(2)}M` : turnout.toLocaleString()}
-                  </div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                    {latestWithVotes.year} Turnout
-                  </div>
-                </div>
-              )}
-              {swing != null && swingFromYear != null && (
-                <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-                  <div
-                    className="text-2xl font-extrabold tabular-nums"
-                    style={{ color: swing === 0 ? "var(--app-text-primary)" : swing > 0 ? "var(--party-rep)" : "var(--party-dem)" }}
-                  >
-                    {swing === 0 ? "=" : swing > 0 ? "→R" : "←D"}{Math.abs(swing).toFixed(1)}
-                  </div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                    Swing Since {swingFromYear}
-                  </div>
-                </div>
-              )}
-              {districtCount != null && (
-                <div>
-                  <div className="text-2xl font-extrabold tabular-nums">{districtCount}</div>
-                  <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                    Congressional District{districtCount !== 1 ? "s" : ""}
-                  </div>
-                </div>
-              )}
             </div>
-          )}
+            {/* The state's counties with this one highlighted — zoomable, click a county for its card. */}
+            <div className="absolute right-0 -top-8 sm:-top-10 w-36 sm:w-64">
+              <StateCountyMap inset stateAbbr={county.state} stateName={stateName} height="clamp(130px, 32vw, 210px)" highlightFips={fips} showLabel={false} />
+            </div>
+          </div>
         </div>
       </div>
 
       <main className={`${PAGE_CONTAINER} pb-10`}>
-
-        {/* County Map */}
-        <section className="mb-10">
-          <StateCountyMap stateAbbr={county.state} stateName={stateName} height={280} highlightFips={fips} showLabel={false} />
-        </section>
-
-        <CountySpreadColumns
-          left={
-            <>
-              <section className="mb-8">
-                <LedgerSectionHead label="About This County" />
-                <AboutRaceCard
-                  bare
-                  title="About this County"
-                  description={`${county.countyName} ${areaLabel} is located in ${stateName}.`}
-                  items={[
-                    { label: "State", value: stateName },
-                    { label: "Area type", value: areaLabel },
-                    { label: "FIPS", value: fips },
-                    ...(latestHouse?.districtLabel
-                      ? [{ label: `Congressional District${districtCount !== 1 ? "s" : ""}`, value: latestHouse.districtLabel }]
-                      : []),
-                  ]}
-                />
-              </section>
-
-              {countyDemographics[fips] && (
-                <section className="mb-8">
-                  <LedgerSectionHead label="Demographics" />
-                  <DemographicsStrip {...countyDemographics[fips]} />
-                </section>
+        <div className="flex flex-col gap-8">
+          <section>
+            <AboutRaceCard bare fitFacts title={`About this ${areaLabel}`} items={facts}>
+              {demographics && (
+                <>
+                  <LedgerSubhead rule={false} label="Demographics" meta="ACS 2020–24 5-year estimates." />
+                  <DemographicsStrip {...demographics} layout="grid" />
+                </>
               )}
+            </AboutRaceCard>
+          </section>
 
-              {hasCountyData && (
-                <section>
-                  <LedgerSectionHead label={`How ${county.countyName} Compares`} meta="True Partisan Lean vs. state and a national baseline" />
-                  <CountyCompareCard
-                    fips={fips}
-                    stateAbbr={county.state}
-                    stateName={stateName}
-                    countyLabel={`${county.countyName} ${areaLabel}`}
-                  />
-                </section>
-              )}
-            </>
-          }
-          rightHead={<LedgerSectionHead label="Past Race Results" />}
-          rightBody={
-            results.length > 0 ? (
+          {hasCountyData && (
+            <section>
+              <LedgerSectionHead label={`How ${county.countyName} Compares`} />
+              <CountyCompareCard
+                fips={fips}
+                stateAbbr={county.state}
+                stateName={stateName}
+                name={county.countyName}
+                areaLabel={areaLabel}
+              />
+            </section>
+          )}
+
+          <section>
+            <LedgerSectionHead label="Past Race Results" />
+            {results.length > 0 ? (
+              // Every race since 2008 runs long, so the list scrolls in a fixed height like the House pages' vote history.
+              <div className="county-spread-fade" style={{ maxHeight: 560, overflowY: "auto", overflowX: "hidden", paddingRight: 6 }}>
               <PastElectionResultsSection
                 results={results}
                 fallbackYears={[2024, 2020, 2016, 2012, 2008]}
@@ -436,39 +444,16 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
                 cardStyle="ledger"
                 bare
               />
+              </div>
             ) : (
               <p className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>
                 No historical election results available for this {areaLabel.toLowerCase()}.
               </p>
-            )
-          }
-        />
-
-        {hasCountyData && (
-          <section className="mt-10">
-            <LedgerSectionHead label="Partisan Lean by Cycle" meta="Weighted Racial Score (WRS), by election year" />
-            <CountyLeanTrendChart yearAggregations={calc!.yearAggregations} />
+            )}
           </section>
-        )}
 
-        <section className="mt-10">
-          <LedgerSectionHead
-            label="TPL Model Calculation"
-            right={
-              tpl != null ? (
-                <span className="text-sm font-bold tabular-nums" style={{ color: leanColor(tpl) }}>
-                  {fmtLean(tpl)}
-                </span>
-              ) : undefined
-            }
-          />
-          <CountyTplCard
-            fips={fips}
-            countyLabel={`${county.countyName} ${areaLabel}`}
-            stateAbbr={county.state}
-            stateName={stateName}
-          />
-        </section>
+          <CountyTplCard fips={fips} countyLabel={`${county.countyName} ${areaLabel}`} />
+        </div>
       </main>
     </div>
   );

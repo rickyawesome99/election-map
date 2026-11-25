@@ -41,8 +41,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
   const noun = geo === "states" ? "states" : geo === "districts" ? "districts" : "counties";
   const valueLabel = lens === "all" ? "TPL" : `${lens} WRS`;
   // The table's value column names the year the lean stands at (the last year in the fit).
-  // County TPL has no 2026 rows yet, so its column carries no year.
-  const columnLabel = lens !== "all" ? valueLabel : geo === "counties" ? "TPL" : `${summary.fitYears[summary.fitYears.length - 1]} TPL`;
+  const columnLabel = lens !== "all" ? valueLabel : `${summary.fitYears[summary.fitYears.length - 1]} TPL`;
 
   const rows = useMemo(() => {
     const list: Row[] = geo === "states"
@@ -115,7 +114,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
 
       <div className="grid grid-cols-1 gap-8">
         <div className="min-w-0">
-          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : geo === "districts" ? "Open district" : "Open county page"} navigateOnClick={geo === "states" ? true : geo === "counties" ? "mouse" : false} wide framed={false} />
+          <TplMap mode={geo} rows={rows} valueLabel={valueLabel} linkLabel={geo === "states" ? "Open state page" : geo === "districts" ? "Open district" : "Open county page"} navigateOnClick={geo === "states" ? true : "mouse"} wide framed={false} />
           <Foot>{lens === "all" ? "Blended, recency-weighted True Partisan Lean" : `${lens} Weighted Race Score (WRS)`}. {geo === "states" ? "Click a state to open its page" : geo === "districts" ? "Click a district for its pipeline inside its state page" : counties.failed ? "The county leans could not be loaded" : counties.loading ? "Loading county leans…" : "Click a county to open its page"}. Pinch or scroll to zoom.</Foot>
         </div>
         <div className="min-w-0">

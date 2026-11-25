@@ -7,7 +7,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type {  } from "@/data/forecastData";
 import type { ForecastedRace } from "@/lib/forecast";
-import { useDarkMode } from "@/lib/useDarkMode";
+import { useDarkMode, usePageBg } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 
 // Per-state TopoJSON, clipped to the shoreline and split from public/congressional-districts-2026.json
@@ -82,7 +82,7 @@ export default function StateDistrictMap({
     return () => ro.disconnect();
   }, [measure]);
 
-  const mapStroke = darkMode ? "#0d1117" : "#f9f8f5";
+  const mapStroke = usePageBg();
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
 
   // Build lookup by race id; also alias Census at-large GEOIDs (end in "00") → our new "01" ids

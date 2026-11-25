@@ -8,10 +8,9 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { marginToRating, fmtLean } from "@/lib/colorScale";
-import { useDarkMode } from "@/lib/useDarkMode";
 import type { RaceType } from "@/data/forecastData";
 import type { ChamberSimulation } from "@/lib/forecast";
-import { DARK_THEME, LIGHT_THEME, type Theme } from "./ForecastMap";
+import { useSiteTheme, type Theme } from "./ForecastMap";
 import PollingAverageCard from "./PollingAverageCard";
 import type { PollingCardData } from "@/lib/pollingCardData";
 import SeatHistogram from "./SeatHistogram";
@@ -141,7 +140,7 @@ function SectionHead({ children, theme }: { children: React.ReactNode; theme: Th
 
 /** The headline: title, final-forecast pill and the five tiles. Sits inside the Forecast hero. */
 export function OutlookHero({ data }: { data: OutlookData }) {
-  const t = useDarkMode() ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const { electionYear, genericBallot: gb, approval, seats, totalSeats: TOTAL_SEATS_BY_TYPE, sims, updated } = data;
   const { house, senate, governor } = seats;
   return (
@@ -206,7 +205,7 @@ function Deferred({ anchor, placeholderClass, children }: { anchor?: string; pla
 
 /** The national sections under the race list: Other Forecasts through National Polling. */
 export function OutlookSections({ data }: { data: OutlookData }) {
-  const t = useDarkMode() ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const { otherForecasts, sims, totalSeats: TOTAL_SEATS_BY_TYPE, trend, pollingCard } = data;
   return (
     <div className="mt-12">

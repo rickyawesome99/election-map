@@ -12,6 +12,7 @@ import { STATES_10M_URL } from "@/lib/projectedMaps";
 import { getRaceColor } from "@/lib/colorScale";
 import CountyTooltip from "@/components/CountyTooltip";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { usePageBg } from "@/lib/useDarkMode";
 import { resultCard } from "./cards";
 import { marginOf, type Office, type StateShell } from "./types";
 
@@ -28,7 +29,8 @@ export default function NationalMap({ states, year, office, darkMode, onPick }: 
   const tip = useMapTooltip(14, 8);
   const byFips = new Map(states.map((s) => [s.fips, s]));
   const neutral = darkMode ? "#39424f" : "#c9ced6";
-  const stroke = darkMode ? "#0d1117" : "#faf9f6";
+  const pageBg = usePageBg();
+  const stroke = darkMode ? pageBg : "#faf9f6";
   const marginFor = (s: StateShell) => {
     const sum = s.years[String(year)]?.[office];
     return sum ? marginOf([sum.d, sum.r, sum.o]) : null;

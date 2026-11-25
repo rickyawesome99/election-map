@@ -8,6 +8,9 @@
 //                model's eligibility class
 //   legislature  each state's corrected chamber margins for 2026 (lib/stateLegResults2026.ts),
 //                the same contested / unopposed / not-up pools the model reads for other years
+//   counties     each county's 2026 Senate, Senate special, governor and summed U.S. House votes
+//                (data-entry/results-2026/), for County TPL; countyHouseIneligible marks a
+//                county whose House pieces are all uncontested, same-party or party-mislabelled
 //   housePv      the national U.S. House vote on three bases: every vote, contested seats only,
 //                and every seat contested (the uncontested and same-party seats filled as
 //                lib/genericBallotPopularVote.ts fills them for 2016–2024)
@@ -105,9 +108,72 @@ const pct = (d: number, r: number, t: number) => (t > 0 ? +(((r - d) / t) * 100)
 // data-entry/national_environment_history.csv (lib/genericBallotPopularVote.ts).
 const housePv = { raw: pct(rawD, rawR, rawT), contested: pct(cD, cR, cT), imputed: pct(iD, iR, iT), offset: +offset.toFixed(2), imputedSeats, seats: house.length };
 
-const out: Tpl2026Inputs = { generatedAt: new Date().toISOString(), asOf, races, legislature, housePv };
+// County results, for County TPL: the official-results county files (data-entry/results-2026/,
+// `npm run results-2026`), party sums per county. A county the source has no row for (Le Flore
+// OK, St. Joseph IN on 2026-11-25) is simply absent and gets no 2026 row.
+//
+// House: a county's row is the sum of its district pieces, as data/countyHouseData.ts is for
+// other years, but 2026 has the per-district breakdown, so only districts the state model counts
+// as a D-vs-R race ("eligible" above) are summed. A same-party final, an unopposed seat or an
+// independent in a major-party slot (AK-01: a nonpartisan runner-up, with the Democrat at 8%)
+// would otherwise put a one-sided or mislabelled margin into every county it touches. A county
+// with no eligible piece keeps its full sum and the class of its largest piece
+// (`countyHouseIneligible`); the model imputes it like any uncontested county House year.
+//
+// The site's county data still carries Alaska's Valdez-Cordova census area (02261); the 2026
+// files report its two successors, Chugach (02063) and Copper River (02066), which are summed.
+const COUNTY_FIPS_MERGE: Record<string, string> = { "02063": "02261", "02066": "02261" };
+const siteFips = (raw: string | undefined) => { const id = String(raw ?? "").padStart(5, "0"); return COUNTY_FIPS_MERGE[id] ?? id; };
+const validFips = (fips: string) => /^\d{5}$/.test(fips) && fips !== "00000";
+type Votes = [number, number, number];
+const addVotes = (a: Votes | undefined, d: number, r: number, t: number): Votes => [(a?.[0] ?? 0) + d, (a?.[1] ?? 0) + r, (a?.[2] ?? 0) + t];
+const counties: Tpl2026Inputs["counties"] = {};
+for (const [key, file] of [["S", "county_senate_results_2026.csv"], ["SS", "county_senate_special_results_2026.csv"], ["G", "county_governor_results_2026.csv"]] as const) {
+  for (const r of parseCsv(read(`data-entry/results-2026/${file}`))) {
+    const fips = siteFips(r.county_id), total = num(r.total_2026);
+    if (!validFips(fips) || total <= 0) continue;
+    (counties[fips] ??= {})[key] = addVotes(counties[fips][key], num(r.dem_2026), num(r.gop_2026), total);
+  }
+}
+// A slot candidate who is not of the slot's party but whom the state model still counts there
+// (CA-06: Kevin Kiley, on the ballot with no party, is its Republican) has no votes in the party
+// sums. Those districts take the two slot candidates' own county votes from counties.csv.
+const surname = (n: string) => n.toLowerCase().replace(/[^a-z ]/g, "").trim().split(/\s+/).filter((w) => !/^(jr|sr|ii|iii|iv)$/.test(w)).pop() ?? "";
+const slotRaces = new Map(races.filter((r) => r.office === "H" && r.eligibility === "eligible" && (r.demParty || r.repParty)).map((r) => [`${r.abbr}|${parseInt(r.id.slice(2), 10) || 1}`, r]));
+const slotVotes = new Map<string, Votes>(); // "ST|district|fips" → [dem slot, rep slot, total]
+if (slotRaces.size > 0) {
+  for (const r of parseCsv(read("data-entry/results-2026/counties.csv"))) {
+    if (r.office !== "house") continue;
+    const key = `${r.state}|${parseInt(r.seat, 10) || 1}`, race = slotRaces.get(key);
+    if (!race) continue;
+    const v = num(r.votes), who = surname(r.candidate);
+    const k = `${key}|${siteFips(r.county_fips)}`;
+    slotVotes.set(k, addVotes(slotVotes.get(k), who === surname(race.demCandidate ?? "") ? v : 0, who === surname(race.repCandidate ?? "") ? v : 0, v));
+  }
+}
+const houseClass = new Map(races.filter((r) => r.office === "H").map((r) => [`${r.abbr}|${parseInt(r.id.slice(2), 10) || 1}`, r.eligibility]));
+const housePieces = new Map<string, { eligible?: Votes; all?: Votes; top: { votes: number; cls: Tpl2026Race["eligibility"] } }>();
+for (const r of parseCsv(read("data-entry/results-2026/house_district_county_results_2026.csv"))) {
+  const fips = siteFips(r.county_fips), total = num(r.total);
+  const cls = houseClass.get(`${r.state}|${parseInt(r.district, 10) || 1}`);
+  if (!validFips(fips) || total <= 0 || !cls) continue;
+  const c = housePieces.get(fips) ?? { top: { votes: 0, cls } };
+  const slot = slotVotes.get(`${r.state}|${parseInt(r.district, 10) || 1}|${fips}`);
+  const [dem, gop] = slot ?? [num(r.dem), num(r.gop)];
+  c.all = addVotes(c.all, dem, gop, total);
+  if (cls === "eligible") c.eligible = addVotes(c.eligible, dem, gop, total);
+  else if (total > c.top.votes) c.top = { votes: total, cls };
+  housePieces.set(fips, c);
+}
+const countyHouseIneligible: Tpl2026Inputs["countyHouseIneligible"] = {};
+for (const [fips, c] of housePieces) {
+  (counties[fips] ??= {}).H = c.eligible ?? c.all;
+  if (!c.eligible) countyHouseIneligible[fips] = c.top.cls;
+}
+
+const out: Tpl2026Inputs = { generatedAt: new Date().toISOString(), asOf, races, legislature, housePv, counties, countyHouseIneligible };
 const file = path.join(process.cwd(), "data", "generated", "tpl-inputs-2026.json");
 fs.mkdirSync(path.dirname(file), { recursive: true });
 fs.writeFileSync(file, JSON.stringify(out));
 const el = (o: string) => races.filter((r) => r.office === o && r.eligibility === "eligible").length;
-console.log(`tpl-inputs-2026: ${races.length} races (eligible S ${el("S")} · G ${el("G")} · H ${el("H")}), ${Object.keys(legislature).length} legislatures, House vote raw ${housePv.raw} · contested ${housePv.contested} · every seat contested ${housePv.imputed} (offset ${housePv.offset}, ${imputedSeats} seats filled) → ${path.relative(process.cwd(), file)}`);
+console.log(`tpl-inputs-2026: ${races.length} races (eligible S ${el("S")} · G ${el("G")} · H ${el("H")}), ${Object.keys(legislature).length} legislatures, House vote raw ${housePv.raw} · contested ${housePv.contested} · every seat contested ${housePv.imputed} (offset ${housePv.offset}, ${imputedSeats} seats filled), ${Object.keys(counties).length} counties → ${path.relative(process.cwd(), file)}`);

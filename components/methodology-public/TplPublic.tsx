@@ -147,9 +147,10 @@ export function CountyTplPublic() {
           { q: "Statewide races", a: "The same race in every county, so the incumbent and the money are the state race's. Only the margin is the county's own." },
           { q: "House races", a: "A county often sits in more than one district, so its House vote mixes several races. No single incumbent or money gap can be taken out, and a year where one party ran no one in the county is filled in from its presidential vote." },
           { q: "Outliers", a: "A county far from its state's lean is not an outlier; it's just a different place. Only a House year that runs far from the county's own statewide results is turned down, since a popular local member can carry a county their party usually loses." },
+          { q: "Does it include 2026?", a: "Yes, since November 25, on the votes counted so far in each county. Two counties whose 2026 votes are not yet published by county have no 2026 figures." },
           { q: "Missing places", a: "Alaska reports no county results, so it has no county leans." },
         ]} />
-        <SeeIt>Open any county from the <A href="/historical">Historical</A> tab.</SeeIt>
+        <SeeIt>Open any county from <A href="/historical">Historical Results</A>, under Analysis.</SeeIt>
       </Chapter>
     </>
   );

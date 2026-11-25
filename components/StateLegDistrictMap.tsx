@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect, useCallback, useMemo, type ReactNode } from "react";
 import { fitStateProjection, stateMercatorAspect, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
-import { useDarkMode } from "@/lib/useDarkMode";
+import { useDarkMode, usePageBg } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { normalizeGeographyWinding } from "@/lib/geoWinding";
@@ -198,7 +198,7 @@ export default function StateLegDistrictMap({
 
   const stateFips = ABBR_TO_FIPS[stateAbbr];
   const districtFill = darkMode ? "#3a4a72" : "#c3d0ea";
-  const districtStroke = darkMode ? "#0d1117" : "#f9f8f5";
+  const districtStroke = usePageBg();
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const outlineFill = darkMode ? "#2a3550" : "#dbe3f0";
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];

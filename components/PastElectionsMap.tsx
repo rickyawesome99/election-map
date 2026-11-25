@@ -6,7 +6,7 @@ import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import type { HouseStatewideResult } from "@/data/forecastData";
-import { useDarkMode } from "@/lib/useDarkMode";
+import { useDarkMode, usePageBg } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 
@@ -168,7 +168,7 @@ export default function PastElectionsMap({
     return () => ro.disconnect();
   }, [measure]);
 
-  const mapStroke = darkMode ? "#0d1117" : "#f9f8f5";
+  const mapStroke = usePageBg();
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
 

@@ -39,7 +39,9 @@ and the code are right. Full reasoning and numbers: `data/methodologyChangelog.t
   Governor 3.7 → 5.0), since popular incumbents are no longer discounted when it is estimated.
 - **Years.** 2016–2026. 2026 enters through an overlay (`lib/tpl2026Inputs.ts`,
   `npm run tpl-inputs-2026`) until it is certified and merged into the historical CSVs. County TPL
-  and the candidate table do not have 2026 rows yet.
+  reads 2026 from the same overlay since 2026-11-25 (`counties`: the official-results county
+  files in `data-entry/results-2026/`; the House row sums only districts the state model counts
+  as D-vs-R races).
 - **Two weight sets.** `RACE_TYPE_WEIGHTS` (presidential years: P .60 / H .20 / S .10 / L .07 /
   G .03) and `RACE_TYPE_WEIGHTS_MIDTERM` (every other year: H .25 / L .10 / S .04 / G .01).
 - **District TPL has no row weights.** The Huber factor and the boundary weight described in
@@ -327,7 +329,7 @@ reference (post-Phase-4): 2024-President NM MAE 3.02 (pres-only baseline 1.93),
   Ineligible House races are skipped (the presidential rows already carry the
   district's lean). Same scale as State TPL — House and Senate/Governor
   forecasts read off one consistent lean (review F9 closed).
-- **County TPL** shares the state pipeline (parent state's β*, county-level
+- **County TPL** shares the state pipeline (the national E(year), county-level
   imputation, no state-lean Huber weighting).
 - **State Legislature** aggregates still contain unopposed-seat skew; per-
   district imputation via the pres-by-leg-district data is future work.

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { MAP_OFFICES, YEARS_BY_OFFICE, type MapOffice } from "@/lib/mapSliceTypes";
 import { pastRaceTableRows } from "@/lib/pastElections";
+import { STATIC_JSON_CACHE } from "@/lib/staticJsonCache";
 
 // Static JSON: the /historical races table for one office and year, written once at build time
 // from the forecast dataset's past results so none of it enters the browser bundle.
@@ -18,6 +19,6 @@ export async function GET(_req: Request, { params }: { params: Promise<{ office:
     return NextResponse.json({ error: "unknown table" }, { status: 404 });
   }
   return NextResponse.json({ office, year: y, rows: pastRaceTableRows(office as MapOffice, y) }, {
-    headers: { "Cache-Control": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400" },
+    headers: { "Cache-Control": STATIC_JSON_CACHE },
   });
 }

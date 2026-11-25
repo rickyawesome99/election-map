@@ -192,3 +192,48 @@ function load(): Map<string, RaceResult2026> {
 export function raceResult2026(office: RaceResult2026["office"], raceId: string): RaceResult2026 | null {
   return load().get(`${office}|${raceId}`) ?? null;
 }
+
+/** One 2026 race's count in one county, for the county page's Past Race Results. */
+export type CountyRace2026 = {
+  office: RaceResult2026["office"];
+  raceId: string;
+  /** The district label for House ("OH-13"). */
+  label: string;
+  special: boolean;
+  contest: string;
+  demName: string;
+  repName: string;
+  demParty: ResultParty;
+  repParty: ResultParty;
+  /** The two slots' votes (each party's bloc where it ran several). */
+  demVotes: number;
+  repVotes: number;
+  /** Votes by party, every candidate of the party summed (a same-party House final counts both for that party). */
+  partyD: number;
+  partyR: number;
+  total: number;
+};
+
+let countyCache: Map<string, CountyRace2026[]> | null = null;
+
+/** Every saved 2026 Senate, governor and House count in a county (House: one entry per district piece). */
+export function countyRaces2026(fips: string): CountyRace2026[] {
+  if (!countyCache) {
+    const races = load();
+    const seats = new Map(parseCsv(readFileSync(join(process.cwd(), "data-entry", "results_2026_seats.csv"), "utf8")).map((r) => [`${r.office}|${r.race_id}`, r]));
+    countyCache = new Map();
+    for (const c of parseCsv(readFileSync(join(process.cwd(), "data-entry", "results_2026_counties.csv"), "utf8"))) {
+      const key = `${c.office}|${c.race_id}`;
+      const race = races.get(key), seat = seats.get(key);
+      if (!c.fips || !race || !seat || num(c.total_votes) <= 0) continue;
+      if (!countyCache.has(c.fips)) countyCache.set(c.fips, []);
+      countyCache.get(c.fips)!.push({
+        office: race.office, raceId: race.raceId, label: c.label, special: seat.special === "1", contest: race.contest,
+        demName: race.demName, repName: race.repName, demParty: race.demParty, repParty: race.repParty,
+        demVotes: num(c.dem_votes), repVotes: num(c.rep_votes),
+        partyD: num(c.party_d_votes), partyR: num(c.party_r_votes), total: num(c.total_votes),
+      });
+    }
+  }
+  return countyCache.get(fips) ?? [];
+}

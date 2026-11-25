@@ -3,7 +3,7 @@
 // (aria-hidden): the row's title and description carry the meaning. No data, no script.
 import type { ReactNode } from "react";
 
-export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "editorial";
+export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "editorial" | "historical";
 
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
@@ -183,6 +183,24 @@ function Calendar() {
   );
 }
 
+/** One place's margin election by election: a line across the even mark, each point in the winner's color. */
+function Historical() {
+  const points: [number, number][] = [[2008, 20], [2010, 56], [2012, 30], [2014, 62], [2016, 50], [2018, 24], [2020, 34], [2022, 48], [2024, 54]];
+  const x = (i: number) => 30 + i * 37.5;
+  return (
+    <Frame>
+      <line x1="18" y1="40" x2="342" y2="40" stroke={MUTED} strokeWidth="1.5" strokeDasharray="4 4" />
+      <polyline points={points.map(([, y], i) => `${x(i)},${y}`).join(" ")} fill="none" stroke={VERY_MUTED} strokeWidth="2" strokeLinejoin="round" />
+      {points.map(([year, y], i) => (
+        <g key={year}>
+          <circle cx={x(i)} cy={y} r="5.5" fill={y < 40 ? DEM : REP} stroke={BG} strokeWidth="2" />
+          {i % 2 === 0 && <text x={x(i)} y="81" fontSize="10" fontWeight="700" fill={MUTED} textAnchor="middle">{year}</text>}
+        </g>
+      ))}
+    </Frame>
+  );
+}
+
 /** A fight card: two portraits on a split party tint, VS between them, one call marked. */
 function Editorial() {
   return (
@@ -203,7 +221,7 @@ function Editorial() {
 
 const GRAPHICS: Record<HubGraphicId, () => ReactNode> = {
   forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote, genericBallot: GenericBallot,
-  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, editorial: Editorial,
+  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, editorial: Editorial, historical: Historical,
 };
 
 export default function HubGraphic({ id }: { id: HubGraphicId }) {

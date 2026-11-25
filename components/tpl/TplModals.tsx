@@ -207,12 +207,14 @@ export function FormulaModal({ formula, onClose }: { formula: FormulaKey; onClos
 }
 
 export function AdjustedModal({ race, onClose }: { race: TplRace; onClose: () => void }) {
+  // A county row is imputed from the county's own presidential vote, at half weight for every office.
+  const county = race.imputedSourceDesc?.startsWith("county") ?? false;
   const rows: { label: string; value: ReactNode; note?: string }[] = [
     { label: "Stored margin (not used)", value: <span style={{ color: marginColor(race.rawMargin) }}>{fmt2(race.rawMargin)}</span>, note: "The as-reported result of the ineligible race — shown for reference only." },
     { label: "Why ineligible", value: ELIGIBILITY_LABELS[race.eligibility as keyof typeof ELIGIBILITY_LABELS] ?? "Ineligible race", note: "Without a genuine nominee from each major party, the margin is not an R-vs-D measurement." },
-    { label: `Imputed from ${race.imputedSourceDesc ?? "presidential baseline"}${race.imputedSourceYear ? ` (${race.imputedSourceYear})` : ""}`, value: <span style={{ color: marginColor(race.adjustedMargin) }}>{fmt2(race.adjustedMargin)}</span>, note: race.raceType === "H" ? "Restricted to the district's current boundary vintage." : undefined },
+    { label: `Imputed from ${race.imputedSourceDesc ?? "presidential baseline"}${race.imputedSourceYear ? ` (${race.imputedSourceYear})` : ""}`, value: <span style={{ color: marginColor(race.adjustedMargin) }}>{fmt2(race.adjustedMargin)}</span>, note: race.raceType === "H" && !county ? "Restricted to the district's current boundary vintage." : undefined },
     ...(race.envCarry ? [{ label: `Moved into ${race.year}'s environment`, value: <span style={{ color: marginColor((race.adjustedMargin ?? 0) + race.envCarry) }}>{signed(race.envCarry)} → {fmt2((race.adjustedMargin ?? 0) + race.envCarry)}</span>, note: `E(${race.year}) − E(${race.imputedSourceYear}): the stand-in result sits in its own year's environment, so it is carried into this one before the year's environment is removed.` }] : []),
-    { label: "Downstream treatment", value: race.raceType === "H" || race.raceType === "L" ? "IF / FF skipped — NM = imputed margin · full share in aggregation" : "IF / FF skipped — NM = imputed margin · half weight in aggregation" },
+    { label: "Downstream treatment", value: (race.raceType === "H" || race.raceType === "L") && !county ? "IF / FF skipped — NM = imputed margin · full share in aggregation" : "IF / FF skipped — NM = imputed margin · half weight in aggregation" },
   ];
   return (
     <ModalShell onClose={onClose} label="Adjusted margin" maxW="max-w-sm">
@@ -276,7 +278,9 @@ export function RaceCalcModal({ race, E, incumbentAdvantage, onClose, onFormula,
   onClose: () => void; onFormula: (k: FormulaKey) => void; onAdjusted: () => void;
 }) {
   const r = race;
-  const outcome = r.raceType === "P" ? "—"
+  // A county page's House row: every district race in the county added together.
+  const countyHouse = r.raceType === "H" && r.race === "House";
+  const outcome = r.raceType === "P" || countyHouse ? "—"
     : r.incumbent === "R" && r.rawMargin != null ? (r.rawMargin > 0 ? "R won" : "R lost")
     : r.incumbent === "D" && r.rawMargin != null ? (r.rawMargin < 0 ? "D won" : "D lost")
     : r.incumbent;
@@ -289,10 +293,10 @@ export function RaceCalcModal({ race, E, incumbentAdvantage, onClose, onFormula,
     </td>
   );
   const rows: { head: ReactNode; detail: string; value: ReactNode }[] = [
-    { head: head("Raw margin"), detail: r.legPools ? legPoolsText(r.legPools) : "repPct − demPct, live from site data", value: <b style={{ color: marginColor(r.rawMargin) }}>{fmt2(r.rawMargin)}</b> },
+    { head: head("Raw margin"), detail: r.legPools ? legPoolsText(r.legPools) : countyHouse ? "Republican share − Democratic share of the county's House vote, all its districts together" : "repPct − demPct, live from site data", value: <b style={{ color: marginColor(r.rawMargin) }}>{fmt2(r.rawMargin)}</b> },
     { head: head("Adjusted", undefined, r.imputed ? onAdjusted : undefined), detail: r.imputed ? `⊘ ${ELIGIBILITY_LABELS[r.eligibility as keyof typeof ELIGIBILITY_LABELS] ?? "Ineligible race"} — imputed from ${r.imputedSourceDesc} (${r.imputedSourceYear})${r.envCarry ? `, moved ${signed(r.envCarry)} into ${r.year}'s environment` : ""}` : "Unchanged — eligible race (both major parties on the ballot)", value: <b style={{ color: marginColor(adjusted) }}>{fmt2(adjusted)}</b> },
-    { head: head("Incumbency", "IF"), detail: r.imputed ? "Imputed row — no incumbency to strip" : r.incumbent === "R" || r.incumbent === "D" ? `${r.incumbent} incumbent — ${(incumbentAdvantage[r.raceType] ?? 0).toFixed(1)} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}` : r.raceType === "P" ? "President — national approval effects live in E(y)" : r.raceType === "L" ? "Chamber aggregate — no single incumbent" : "Open seat — no adjustment", value: <b style={{ color: r.incumbencyPts ? marginColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>{r.incumbencyPts ? signed(r.incumbencyPts) : "—"}</b> },
-    { head: head("Fundraising", "FF"), detail: r.ffDetail ? `R $${(r.ffDetail.rep / 1e6).toFixed(2)}M vs D $${(r.ffDetail.dem / 1e6).toFixed(2)}M raised` : "No receipts data (President, imputed, or unavailable)", value: <b style={{ color: r.FF_pts ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>{r.FF_pts ? signed(r.FF_pts) : "—"}</b> },
+    { head: head("Incumbency", "IF"), detail: r.imputed ? "Imputed row — no incumbency to strip" : r.incumbent === "R" || r.incumbent === "D" ? `${r.incumbent} incumbent — ${(incumbentAdvantage[r.raceType] ?? 0).toFixed(1)} pts stripped toward ${r.incumbent === "R" ? "D" : "R"}` : r.raceType === "P" ? "President — national approval effects live in E(y)" : r.raceType === "L" ? "Chamber aggregate — no single incumbent" : countyHouse ? "Every district race in the county added together — no single incumbent" : "Open seat — no adjustment", value: <b style={{ color: r.incumbencyPts ? marginColor(r.incumbencyPts) : "var(--app-text-very-muted)" }}>{r.incumbencyPts ? signed(r.incumbencyPts) : "—"}</b> },
+    { head: head("Fundraising", "FF"), detail: r.ffDetail ? `R $${(r.ffDetail.rep / 1e6).toFixed(2)}M vs D $${(r.ffDetail.dem / 1e6).toFixed(2)}M raised` : countyHouse ? "Every district race in the county added together — no single pair of candidates" : "No receipts data (President, imputed, or unavailable)", value: <b style={{ color: r.FF_pts ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>{r.FF_pts ? signed(r.FF_pts) : "—"}</b> },
     ...(r.BS_pts != null && r.raceType === "H" ? [{ head: head("Boundary shift", "BS" as FormulaKey), detail: `Run on earlier lines that leaned ${fmt2(r.boundaryShift)} relative to today's · weight ${r.aggWeight.toFixed(2)}`, value: <b style={{ color: r.BS_pts ? marginColor(r.BS_pts) : "var(--app-text-very-muted)" }}>{r.BS_pts ? signed(r.BS_pts) : "—"}</b> }] : []),
   ];
   return (

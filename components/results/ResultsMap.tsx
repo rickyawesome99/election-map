@@ -5,8 +5,7 @@ import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import Geographies from "@/components/maps/Geographies";
 import { FlipPatternDefs, flipFill } from "@/components/FlipStripes";
-import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
-import { useDarkMode } from "@/lib/useDarkMode";
+import { useSiteTheme, type Theme } from "@/components/ForecastMap";
 import { getRaceColor } from "@/lib/colorScale";
 import { settledParty } from "@/lib/resultsNeedle";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
@@ -118,7 +117,7 @@ const Layer = memo(function Layer({ geographies, office, rows, mode, selected, t
 export default function ResultsMap({ office, rows, mode, selected, onSelect }: { office: ResultsOffice; rows: ResultsRow[]; mode: MapMode; selected: string | null; onSelect: (row: ResultsRow) => void }) {
   const [hover, setHover] = useState<ResultsRow | null>(null);
   const tip = useMapTooltip(16, 8);
-  const t = useDarkMode() ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const flipColors = useMemo(() => Array.from(new Set(rows.filter(isCalledFlip).map((r) => fillFor(r, mode)).filter((c): c is string => !!c))), [rows, mode]);
   const isHouse = office === "house";
   // Zoom and pan (wheel, pinch, drag) as on the forecast map; Reset remounts the group. A new

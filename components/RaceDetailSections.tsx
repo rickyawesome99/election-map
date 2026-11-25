@@ -51,6 +51,8 @@ type DetailInfoItem = {
   // Optional link (e.g. the incumbent's candidate page) and text color (e.g. the party's).
   href?: string | null;
   color?: string;
+  /** In a `fit` row: a long value may break onto further lines instead of running off the page (a county's list of districts). */
+  wrap?: boolean;
 };
 
 function DetailInfoValue({ value, href, color }: DetailInfoItem) {
@@ -68,12 +70,12 @@ export function incumbentFact(name: string | null | undefined, party: string | n
 
 // Label-over-value facts: the same figure style as the Projected Result's
 // footer blocks. Used by the About sections and their Demographics subsection.
-export function LedgerFacts({ items, className }: { items: DetailInfoItem[]; className?: string }) {
+export function LedgerFacts({ items, className, fit = false }: { items: DetailInfoItem[]; className?: string; /** Each fact exactly as wide as its own label or value, with one even gap between them (no shared minimum width). */ fit?: boolean }) {
   return (
     // Each fact as wide as its value (a long incumbent name stays on one line), wrapping only at the row's end.
-    <dl className={`flex flex-wrap gap-x-6 gap-y-3 ${className ?? ""}`}>
+    <dl className={`flex flex-wrap ${fit ? "gap-x-12" : "gap-x-6"} gap-y-3 ${className ?? ""}`}>
       {items.map((item) => (
-        <div key={item.label} className="min-w-[10.5rem]">
+        <div key={item.label} className={fit ? (item.wrap ? "min-w-0 max-w-full" : "shrink-0") : "min-w-[10.5rem]"}>
           <dt className="text-[10.5px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{item.label}</dt>
           <dd className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.15rem", fontWeight: 700 }}><DetailInfoValue {...item} /></dd>
         </div>
@@ -247,6 +249,7 @@ export function AboutRaceCard({
   compact = false,
   bare = false,
   children,
+  fitFacts = false,
 }: {
   title: string;
   // Optional: a race whose lead paragraph has nothing to say yet renders the label/value row on
@@ -260,11 +263,13 @@ export function AboutRaceCard({
   bare?: boolean;
   /** Subsections under the facts (bare only), e.g. the House page's demographics. */
   children?: ReactNode;
+  /** Bare only: facts sized to their content with an even gap (see LedgerFacts). */
+  fitFacts?: boolean;
 }) {
   if (bare) {
     return (
       <div>
-        {items.length > 0 && <LedgerFacts items={items} />}
+        {items.length > 0 && <LedgerFacts items={items} fit={fitFacts} />}
         {description && (
           <p className={`text-[15px] leading-relaxed ${items.length > 0 ? "mt-4" : ""}`} style={{ color: "var(--app-text-primary)", textWrap: "pretty" }}>
             {description}
@@ -1855,74 +1860,6 @@ export function HouseOnlyRecentStatewideResultsSection({
     </section>
   );
 }
-
-/** County-page-only demographics box (right column). Values come from
- * data/countyDemographics.ts; any missing field (e.g. CT's legacy counties, see that
- * file's header comment) renders as "N/A" rather than a fabricated 0. */
-export function CountyDemographicsCard({
-  collegePct, whitePct, blackPct, hispanicPct, asianPct, medianHouseholdIncome, bare = false,
-}: {
-  collegePct?: number;
-  whitePct?: number;
-  blackPct?: number;
-  hispanicPct?: number;
-  asianPct?: number;
-  medianHouseholdIncome?: number;
-  bare?: boolean;
-}) {
-  const noCollegePct = collegePct != null ? parseFloat((100 - collegePct).toFixed(1)) : undefined;
-  const stats: { label: string; value?: number; format: "pct" | "usd" }[] = [
-    { label: "College", value: collegePct, format: "pct" },
-    { label: "No College", value: noCollegePct, format: "pct" },
-    { label: "White", value: whitePct, format: "pct" },
-    { label: "Black", value: blackPct, format: "pct" },
-    { label: "Hispanic", value: hispanicPct, format: "pct" },
-    { label: "Asian", value: asianPct, format: "pct" },
-  ];
-
-  const content = (
-    <>
-      <div className="grid grid-cols-2 gap-2">
-        {stats.map(({ label, value }) => (
-          <div key={label} className="rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
-            <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-              {label}
-            </div>
-            <div className="text-sm font-bold mt-auto tabular-nums" style={{ color: value != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-              {value != null ? `${value.toFixed(1)}%` : "N/A"}
-            </div>
-          </div>
-        ))}
-        <div className="col-span-2 rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
-          <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-            Median Household Income
-          </div>
-          <div className="text-sm font-bold mt-auto tabular-nums" style={{ color: medianHouseholdIncome != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-            {medianHouseholdIncome != null ? `$${medianHouseholdIncome.toLocaleString()}` : "N/A"}
-          </div>
-        </div>
-      </div>
-      <p className="mt-2 text-[9px]" style={{ color: "var(--app-text-very-muted)" }}>
-        Source: County Health Rankings &amp; Roadmaps / USDA ERS, ACS 5-year estimates.
-      </p>
-    </>
-  );
-
-  if (bare) return content;
-
-  return (
-    <section
-      className="rounded-xl p-3 mb-0"
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-    >
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-        Demographics
-      </h2>
-      {content}
-    </section>
-  );
-}
-
 
 // ── Race polls table (Phase 5) ───────────────────────────────────────────────
 // Every general-election poll on file for the race, newest first, with the weight

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { allMapSliceParams, buildMapSlice, MAP_LEVELS, MAP_OFFICES, yearsForLevel, type MapLevel, type MapOffice } from "@/lib/mapSlices";
+import { STATIC_JSON_CACHE } from "@/lib/staticJsonCache";
 
 // Static JSON: every slice is rendered once at build time from the county / district / state
 // datasets and served as a file, so the /historical map fetches ~100–350 KB per selection
@@ -18,6 +19,6 @@ export async function GET(_req: Request, { params }: { params: Promise<{ level: 
     return NextResponse.json({ error: "unknown slice" }, { status: 404 });
   }
   return NextResponse.json(buildMapSlice(level as MapLevel, office as MapOffice, y), {
-    headers: { "Cache-Control": "public, max-age=0, s-maxage=31536000, stale-while-revalidate=86400" },
+    headers: { "Cache-Control": STATIC_JSON_CACHE },
   });
 }

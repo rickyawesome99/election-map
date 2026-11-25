@@ -170,9 +170,25 @@ def match_names(direct, civic):
     return out
 
 
+def _bare(c):
+    return re.sub(r"\s+", " ", re.sub(r"\([^)]*\)", " ", c)).strip().lower()
+
+
 def rename(race, names, civic):
+    # A county or precinct row can spell a candidate differently from the statewide row: Georgia
+    # prints "Sanford Bishop (I)(Dem)" in some counties and "Sanford Bishop (I) (Dem)" statewide.
+    # Unmatched, the county name stayed a separate candidate with no party, and its votes fell
+    # into the "other" column (66 county rows, found 2026-11-25). Match with the bracketed
+    # markers removed when that points to exactly one statewide name.
+    bare = defaultdict(set)
+    for c in names:
+        bare[_bare(c)].add(c)
+
     def nm(c):
-        return names.get(c, c)
+        if c in names:
+            return names[c]
+        hit = bare.get(_bare(c)) or ()
+        return names[next(iter(hit))] if len(hit) == 1 and not is_write_in(c) else c
     new = Race(race.key)
     new.vote_for = race.vote_for
     new.contests = race.contests

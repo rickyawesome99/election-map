@@ -18,7 +18,7 @@ import { ArrowOut, CandidateLink, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
 // fixed-layout with set column widths, so columns don't shift with name lengths.
 const TD_WRAP = TD.replace("whitespace-nowrap", "whitespace-normal");
 
-export function RaceTable({ races, state, variant, showYear, onRow, onFormula, emptyText = "No races match." }: {
+export function RaceTable({ races, state, variant, showYear, onRow, onFormula, emptyText = "No races match.", nomineeHeads = ["Winner", "Runner-up"] }: {
   races: TplRace[];
   /** The state these races are in, for the candidate links (two candidates can share a name). */
   state?: string;
@@ -27,6 +27,8 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
   onRow: (race: TplRace) => void;
   onFormula: (k: FormulaKey) => void;
   emptyText?: string;
+  /** Headings of the two nominee columns. A county page's rows are ordered by who carried the county, not who won the race. */
+  nomineeHeads?: [string, string];
 }) {
   const strip = (label: string, k: FormulaKey, title: string) => (
     <th className={`${TH_R} hidden sm:table-cell sm:w-[3.75rem]`} style={{ color: "var(--app-text-muted)" }}>
@@ -44,8 +46,8 @@ export function RaceTable({ races, state, variant, showYear, onRow, onFormula, e
         <thead>
           <tr style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
             <th className={`${TH} sm:w-[22%]`}>Race</th>
-            <th className={`${TH} hidden sm:table-cell`}>Winner</th>
-            <th className={`${TH} hidden sm:table-cell`}>Runner-up</th>
+            <th className={`${TH} hidden sm:table-cell`}>{nomineeHeads[0]}</th>
+            <th className={`${TH} hidden sm:table-cell`}>{nomineeHeads[1]}</th>
             <th className={`${TH_R} sm:w-[4.5rem]`}>Raw</th>
             {strip("IF", "IF", "Incumbency points")}
             {strip("FF", "FF", "Fundraising points")}

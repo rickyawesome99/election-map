@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
 import { NO_RECHARTS, useRecharts } from "@/lib/useRecharts";
-import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
+import { useSiteTheme } from "@/components/ForecastMap";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import Segmented from "@/components/MarketSegmented";
 import Dropdown from "./Dropdown";
@@ -599,7 +599,7 @@ function Notes({ firstRound, model }: Pick<TurnoutPageProps, "firstRound" | "mod
 // ── Page ──────────────────────────────────────────────────────────────────────
 export default function TurnoutPage(props: TurnoutPageProps) {
   const dark = useDarkMode();
-  const t = dark ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const { states, national, projection, projectionNational } = props;
   const [view, setView] = useState<TurnoutMapView>({ level: "state", metric: "rate", office: "president", year: 2024 });
   const { level, metric, office, year } = view;

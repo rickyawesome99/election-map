@@ -7,7 +7,7 @@ import { feature as topoFeature } from "topojson-client";
 import type { Topology } from "topojson-specification";
 import type { FeatureCollection } from "geojson";
 import { useDarkMode } from "@/lib/useDarkMode";
-import { DARK_THEME, LIGHT_THEME, type Theme } from "@/components/ForecastMap";
+import { useSiteTheme, type Theme } from "@/components/ForecastMap";
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { AddressLookup, DistrictsResponse } from "@/app/api/districts/route";
 
@@ -318,7 +318,7 @@ async function fetchSuggestions(query: string, signal: AbortSignal): Promise<Sug
 
 export default function DistrictFinder() {
   const darkMode = useDarkMode();
-  const t = darkMode ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
 
   const [address, setAddress] = useState("");
   const [loading, setLoading] = useState(false);

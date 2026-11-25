@@ -46,6 +46,14 @@ export interface Tpl2026Inputs {
   asOf: string;
   races: Tpl2026Race[];
   legislature: Record<string, ChamberMarginYear>;
+  /** County FIPS → 2026 votes by office as [dem, rep, total] (party sums; total includes every
+   * other candidate). S = Senate, SS = Senate special, G = governor, H = the county's U.S. House
+   * district pieces summed, counting only districts the state model treats as a D-vs-R race.
+   * An office or county the results files have no row for is absent. */
+  counties: Record<string, Partial<Record<"S" | "SS" | "G" | "H", [number, number, number]>>>;
+  /** Counties with no D-vs-R House piece: H is then the full sum, and this is the class of the
+   * largest piece (unopposed, same-party, independent in a party slot). */
+  countyHouseIneligible: Record<string, RaceEligibility>;
   /** National U.S. House margin, R-positive, percent of total: every vote, contested seats, every seat contested. */
   housePv: { raw: number; contested: number; imputed: number; offset: number; imputedSeats: number; seats: number };
 }

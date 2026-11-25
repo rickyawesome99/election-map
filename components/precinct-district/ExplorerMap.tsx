@@ -8,7 +8,7 @@ import { useEffect, useMemo, useRef, useState, type MouseEvent as ReactMouseEven
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { geoMercator, geoPath } from "d3-geo";
 import type { FeatureCollection, Geometry } from "geojson";
-import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
+import { useSiteTheme } from "@/components/ForecastMap";
 
 export type PrecinctFeatureProps = { id: string; subdivision: string };
 export type PrecinctFC = FeatureCollection<Geometry, PrecinctFeatureProps>;
@@ -52,9 +52,9 @@ export function useIsTouchMobile(): boolean {
 }
 
 export default function ExplorerMap({
-  fc, unitOf, colorFor, isDimmed, hoveredUnit, selectedUnit, onHover, onSelect, renderTooltip, legend, darkMode, height,
+  fc, unitOf, colorFor, isDimmed, hoveredUnit, selectedUnit, onHover, onSelect, renderTooltip, legend, height,
 }: ExplorerMapProps) {
-  const t = darkMode ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const isMobile = useIsTouchMobile();
   const ref = useRef<HTMLDivElement | null>(null);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });

@@ -13,6 +13,8 @@ import "server-only";
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyHouseData } from "@/data/countyHouseData";
+import { countyTplForState } from "@/lib/countyTpl";
 import { countyDisplayName } from "@/lib/countyName";
 import { presPastResults } from "@/data/forecastData";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
@@ -22,6 +24,7 @@ import {
   calculateStateModel,
   calculateDistrictModel,
   calculateCountyModel,
+  countyHouseAnchor,
   computeWarTable,
   getTplFit,
   leanAsOf,
@@ -32,7 +35,7 @@ import {
   type WarRow,
 } from "@/lib/tplCompute";
 import type {
-  CountyScore, DistrictPageData, DistrictScore, HubCandidate, ModelSummary, NationalYear, StatePageData, TplAsOf, StateScore, TplRace, WarSlim,
+  CountyPageData, CountyScore, DistrictPageData, DistrictScore, HubCandidate, ModelSummary, NationalYear, StatePageData, TplAsOf, StateScore, TplRace, WarSlim,
 } from "@/components/tpl/types";
 
 export type { CountyScore, ModelSummary, StatePageData, DistrictPageData, WarSlim } from "@/components/tpl/types";
@@ -194,8 +197,8 @@ function nationalReference(stateAggs: Record<string, YearAggregation[]>): Nation
 }
 
 // Every county with a County TPL, for the hub's Counties map and ranked table. Values are rounded
-// to two decimals to keep the file small (~3,100 rows); the county pipeline has no 2026 rows yet,
-// so this is the lean as of the county files' last year.
+// to two decimals to keep the file small (~3,100 rows). 2026 county rows come from the overlay
+// (lib/tpl2026Inputs.ts `counties`).
 let countyCache: CountyScore[] | null = null;
 export function countySlice(): CountyScore[] {
   if (countyCache) return countyCache;
@@ -285,6 +288,8 @@ export function stateModelSlice(abbrRaw: string): StatePageData | null {
     yearAggregations: withEnv(calc.yearAggregations),
     tplOverTime: tplOverTime(calc, fit.lean[state.abbr]),
     districts: districtsOf(state.abbr),
+    countyTpl: Object.fromEntries(Object.entries(countyTplForState(state.abbr)).map(([f, v]) => [f, v == null ? null : Math.round(v * 100) / 100])),
+    countyVotes: Object.fromEntries(Object.entries(countyPresidentialData).filter(([, c]) => c.state === state.abbr).map(([f, c]) => [f, c.years[2024]?.totalVotes ?? null])),
   };
 }
 
@@ -316,6 +321,33 @@ export function districtModelSlice(id: string): DistrictPageData | null {
     incumbent: latestHouse ? { name: (latestHouse.rawMargin! > 0 ? latestHouse.repCandidate : latestHouse.demCandidate) ?? "", party: latestHouse.rawMargin! > 0 ? "R" : "D", since: latestHouse.year } : null,
     seatHref: `/house/${d.code.toLowerCase()}`,
     races, yearAggregations: withEnv(calc.yearAggregations), tplOverTime: tplOverTime(calc),
+  };
+}
+
+// ── County (the TPL section of /historical/[fips]) ────────────────────────────
+
+export function countyModelSlice(fips: string, name: string): CountyPageData | null {
+  const county = countyPresidentialData[fips];
+  const calc = calculateCountyModel(fips);
+  if (!county || !calc || !calc.races.some((r) => r.NM != null)) return null;
+  const state = statesData.find((s) => s.abbr === county.state);
+  const stateName = state?.name ?? county.state;
+  const races = calc.races.filter((r) => r.NM != null).map((r) => {
+    const row = toTplRace(county.state, r);
+    if (r.raceType !== "H") return row;
+    // A House row is a countywide aggregate: it links to a race page only when one district
+    // covered the whole county that year, and it has no seat page or candidates of its own.
+    const districts = countyHouseData[fips]?.years[r.year]?.districts;
+    return { ...row, detailHref: undefined, demWar: null, repWar: null,
+      pastHref: districts?.length === 1 ? pastElectionHref("house", `${county.state}-${String(districts[0]).padStart(2, "0")}`, r.year) : undefined };
+  });
+  return {
+    fips, name, state: county.state, stateId: state?.id ?? county.state.toLowerCase(), stateName,
+    tpl: calc.tpl, stateTpl: state ? calculateStateModel(state.abbr, state.name).tpl : 0, medianStateTpl: buildModelSummary().medianStateTpl,
+    E: getTplFit().E, incumbentAdvantage: incumbentAdvantage(),
+    races, yearAggregations: withEnv(calc.yearAggregations),
+    // As a state's: today's rows and environment, with the House check held at today's anchor.
+    tplOverTime: tplOverTime(calc, countyHouseAnchor(calc.races)),
   };
 }
 

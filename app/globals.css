@@ -87,6 +87,20 @@ html.dark {
   --poll-worse: #cf7f38;
 }
 
+/* Festive theme — the tree button. Rides on html.dark (text and party colors come from there)
+   and repaints the surfaces forest green. Keep --app-bg in step with FESTIVE_APP_BG in
+   lib/useDarkMode.ts and the restore script in app/layout.tsx. */
+html.dark.festive {
+  --app-bg: #0c2117;
+  --app-panel: #11291d;
+  --app-border: #234534;
+  --app-tab-bg: #183526;
+  --app-text-muted: #94b0a0;
+  --app-text-very-muted: #557866;
+  --map-unfilled: #1b3a2b;
+  --map-legend-bg: rgba(12,33,23,0.90);
+}
+
 html[data-theme="light"] {
   --browser-chrome-bg: var(--app-bg);
 }
@@ -215,7 +229,7 @@ body {
   }
 }
 
-/* County page "ledger spread" — see components/CountySpreadColumns.tsx */
+/* Two-column "ledger spread" — see components/PopularVoteChart.tsx */
 .county-spread {
   display: grid;
   grid-template-columns: 1fr;

@@ -9,7 +9,7 @@ import { fmtLean } from "@/lib/colorScale";
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import { useDarkMode } from "@/lib/useDarkMode";
-import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
+import { useSiteTheme, type Theme } from "@/components/ForecastMap";
 import type { OfficeKey, PrecinctDistrictData } from "@/lib/precinctDistrict/types";
 import type { DistrictProjection } from "@/lib/precinctDistrict/project";
 import { currentEra, eraOfYear, marginOf, pctD, subdivisionName as subName, topOfTicket } from "@/lib/precinctDistrict/aggregate";
@@ -98,7 +98,7 @@ function Label({ children }: { children: ReactNode }) {
 export default function PrecinctExplorer({ data, projection }: { data: PrecinctDistrictData; projection?: DistrictProjection | null }) {
   const { config, results } = data;
   const darkMode = useDarkMode();
-  const t = darkMode ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const years = useMemo(() => [...config.years].sort((a, b) => b - a), [config.years]);
   const cur = currentEra(config);
 
@@ -808,7 +808,7 @@ export default function PrecinctExplorer({ data, projection }: { data: PrecinctD
   );
 }
 
-function FragmentRow({ label, value, strong, t, color }: { label: string; value: string; strong?: boolean; t: typeof DARK_THEME; color?: string }) {
+function FragmentRow({ label, value, strong, t, color }: { label: string; value: string; strong?: boolean; t: Theme; color?: string }) {
   return (
     <>
       <span style={{ color: t.textMuted, fontWeight: strong ? 600 : 400 }}>{label}</span>

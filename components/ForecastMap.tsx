@@ -21,7 +21,7 @@ import StatesCartogramGrid from "./StatesCartogramGrid";
 import StatesLedgerList from "./StatesLedgerList";
 import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
-import { useDarkMode } from "@/lib/useDarkMode";
+import { useDarkMode, useFestive } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { startPendingNav } from "@/lib/navPending";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
@@ -103,7 +103,32 @@ export const LIGHT_THEME = {
   repMuted: "#be1c2999",
 };
 
+/** The tree button's theme: dark mode's text and party colors on forest-green surfaces
+ *  (the same greens as html.dark.festive in globals.css). */
+export const FESTIVE_THEME: typeof DARK_THEME = {
+  ...DARK_THEME,
+  bg: "#0c2117",
+  panel: "#11291d",
+  border: "#234534",
+  tabBg: "#183526",
+  textMuted: "#94b0a0",
+  textVeryMuted: "#557866",
+  hoverUnfilled: "#254a38",
+  mapUnfilled: "#1b3a2b",
+  noElection: "#3d5f50",
+  mapStroke: "#0c2117",
+  legendBg: "rgba(17,41,29,0.90)",
+  badgeBg: "rgba(17,41,29,0.90)",
+};
+
 export type Theme = typeof DARK_THEME;
+
+/** The theme object for the reader's current theme. */
+export function useSiteTheme(): Theme {
+  const darkMode = useDarkMode();
+  const festive = useFestive();
+  return festive ? FESTIVE_THEME : darkMode ? DARK_THEME : LIGHT_THEME;
+}
 
 function persistRaceType(type: RaceType) {
   localStorage.setItem("raceType", type);
@@ -261,7 +286,6 @@ export default function ForecastMap({
   const [hovered, setHovered] = useState<ForecastSummary | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const tip = useMapTooltip(16, 8);
-  const darkMode = useDarkMode();
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const statesMapBoxRef = useRef<HTMLDivElement>(null);
@@ -292,7 +316,7 @@ export default function ForecastMap({
     router.push(`/${type}`, { scroll: false });
   }
 
-  const t = darkMode ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const isHouse = activeTab === "forecast" && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
   const data = races;

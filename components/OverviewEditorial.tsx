@@ -12,9 +12,8 @@ import CountyTooltip from "@/components/CountyTooltip";
 import { fmt1, marginColor } from "@/components/tpl/format";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { formatProjectedMargin, getRaceColor } from "@/lib/colorScale";
-import { useDarkMode } from "@/lib/useDarkMode";
 import { statesData } from "@/data/statesData";
-import { DARK_THEME, LIGHT_THEME } from "./ForecastMap";
+import { useSiteTheme } from "./ForecastMap";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -27,8 +26,7 @@ export type OverviewData = {
 };
 
 export default function OverviewEditorial({ data }: { data: OverviewData }) {
-  const darkMode = useDarkMode();
-  const t = darkMode ? DARK_THEME : LIGHT_THEME;
+  const t = useSiteTheme();
   const { stateMargins } = data;
   // Desktop hover box on the State TPL map — the TPL hub's figure tooltip.
   const [hoveredState, setHoveredState] = useState<string | null>(null);

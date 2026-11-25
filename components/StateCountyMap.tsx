@@ -4,10 +4,10 @@ import { useMapTooltip } from "@/lib/useMapTooltip";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { countyDisplayName } from "@/lib/countyName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
-import { useState, useRef, useEffect, useCallback, useMemo } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo, type Ref } from "react";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
-import { getRaceColor } from "@/lib/colorScale";
+import { fmtLean, getRaceColor, leanColor } from "@/lib/colorScale";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 
 // Per-state TopoJSON, split from public/us-counties.json by scripts/split-national-maps.mjs —
@@ -16,6 +16,19 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 const countiesUrl = (stateAbbr: string) => `/state-counties/${stateAbbr}.json`;
 
 const DEFAULT_PROJ: [number, number, number] = [-96, 38, 800];
+
+// Without the TPL layer the hover popup is just the county's name ("Summit County, OH") on one line.
+function NameLabel({ text, boxRef }: { text: string; boxRef: Ref<HTMLDivElement> }) {
+  return (
+    <div
+      ref={boxRef}
+      className="absolute z-20 hidden md:block whitespace-nowrap rounded-md px-2.5 py-1 text-[13px] font-semibold shadow-md pointer-events-none"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}
+    >
+      {text}
+    </div>
+  );
+}
 
 // Same projection table as StateDistrictMap
 const STATE_PROJ: Record<string, [number, number, number]> = {
@@ -65,10 +78,13 @@ export default function StateCountyMap({
   focus = null,
   onSelectedChange,
   onOpen,
+  inset = false,
+  figureHover = false,
 }: {
   stateAbbr: string;
   stateName: string;
-  height?: number;
+  /** px, or any CSS length (e.g. a clamp() so a header map shrinks on a phone). */
+  height?: number | string;
   highlightFips?: string;
   showTpl?: boolean;
   showLabel?: boolean;
@@ -84,6 +100,11 @@ export default function StateCountyMap({
   onSelectedChange?: (fips: string | null) => void;
   /** Desktop: open the county's page on click instead of selecting it. */
   onOpen?: (href: string) => void;
+  /** Set into a page header: no background of its own (the header's tint shows through), and
+   * the clicked county's panel floats over the page below instead of pushing it down. */
+  inset?: boolean;
+  /** With showTpl: the hover popup is the TPL hub map's (name, the lean large, "TPL"), without FIPS or votes. */
+  figureHover?: boolean;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelectedState] = useState<County | null>(null);
@@ -203,21 +224,32 @@ export default function StateCountyMap({
 
   // One description of a county, drawn as the hover popup and as the click panel. Without the
   // TPL layer (the county page's locator map) it is just the name and FIPS.
+  // "Summit County, OH": the whole hover label and click card when there's no TPL layer.
+  const nameOf = (c: County) => `${countyDisplayName(c.fips, c.name)}, ${stateAbbr}`;
   const card = (c: County): CountyTooltipProps => {
+    if (!showTpl) return { title: nameOf(c), kind: "message" };
     const base = { title: countyDisplayName(c.fips, c.name), subtitle: `${stateName} · FIPS ${c.fips}` };
-    return showTpl ? { ...base, kind: "tpl", tpl: c.tpl, votes: countyVotes?.[c.fips] ?? null } : { ...base, kind: "message" };
+    return { ...base, kind: "tpl", tpl: c.tpl, votes: countyVotes?.[c.fips] ?? null };
   };
 
+  const figureCard = (c: County): CountyTooltipProps => ({
+    kind: "figure", title: nameOf(c), label: "TPL",
+    value: c.tpl == null ? "—" : fmtLean(c.tpl),
+    valueColor: c.tpl == null ? "var(--app-text-very-muted)" : leanColor(c.tpl),
+  });
+
   return (
-    <div>
+    <div className={inset ? "relative" : undefined}>
       <div
         ref={containerRef}
         className="relative"
-        style={{ height, background: "var(--app-bg)" }}
+        style={{ height, background: inset ? "transparent" : "var(--app-bg)" }}
         onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
-        {hovered && <CountyTooltip {...card(hovered)} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />}
+        {hovered && (showTpl
+          ? <CountyTooltip {...(figureHover ? figureCard(hovered) : card(hovered))} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />
+          : <NameLabel text={nameOf(hovered)} boxRef={tip.tooltipRef} />)}
 
         {mapSvg}
 
@@ -249,7 +281,20 @@ export default function StateCountyMap({
       </div>
 
       {/* Selected county info panel */}
-      {(selected || standIn) && (
+      {inset && selected && (
+        // In a header: a small floating card, just the name, a close button and the link.
+        <div
+          className="absolute right-0 top-full z-30 rounded-lg shadow-lg px-3 py-2"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}
+        >
+          <div className="flex items-center gap-2">
+            <span className="whitespace-nowrap text-sm font-bold">{nameOf(selected)}</span>
+            <CountyCardClose small onClick={() => setSelected(null)} />
+          </div>
+          <div className="mt-0.5"><CountyCardLink href={`/historical/${selected.fips}`} /></div>
+        </div>
+      )}
+      {!inset && (selected || standIn) && (
         <div
           className="grid px-4 py-3"
           style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }}

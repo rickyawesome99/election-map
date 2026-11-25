@@ -8,7 +8,7 @@ import CountyTooltip from "@/components/CountyTooltip";
 import Geographies from "@/components/maps/Geographies";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
-import { useDarkMode } from "@/lib/useDarkMode";
+import { useDarkMode, useFestive, usePageBg } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { fmt1, marginColor } from "./format";
 import { startPendingNav } from "@/lib/navPending";
@@ -88,8 +88,8 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   framed?: boolean;
 }) {
   const isDark = useDarkMode();
-  const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
-  const mapStroke     = isDark ? "#0d1117" : "#f9f8f5";
+  const mapUnfilled   = useFestive() ? "#1b3a2b" : isDark ? "#1e2530" : "#c8cdd3";
+  const mapStroke     = usePageBg();
   const hoverStroke   = isDark ? "#ffffff" : "#000000";
   const hoverUnfilled = isDark ? "#2a3441" : "#dde2e7";
 

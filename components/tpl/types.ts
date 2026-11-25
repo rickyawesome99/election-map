@@ -154,6 +154,10 @@ export type StatePageData = {
   races: TplRace[];
   yearAggregations: YearAggregation[];
   districts: { id: string; code: string; num: number; tpl: number }[];
+  /** County FIPS → County TPL (null where the county has none), for the county map at the foot of the page. */
+  countyTpl: Record<string, number | null>;
+  /** County FIPS → its 2024 presidential ballots, shown beside the TPL in the map's popup. */
+  countyVotes: Record<string, number | null>;
 };
 
 export type DistrictPageData = {
@@ -171,6 +175,25 @@ export type DistrictPageData = {
   seatHref: string;
   races: TplRace[];
   yearAggregations: YearAggregation[];
+  tplOverTime: TplAsOf[];
+};
+
+/** A county page's TPL section: the same rows and year aggregations a state page gets. */
+export type CountyPageData = {
+  fips: string;
+  /** "Franklin County". */
+  name: string;
+  state: string;
+  stateId: string;
+  stateName: string;
+  tpl: number;
+  stateTpl: number;
+  medianStateTpl: number;
+  E: Record<number, number>;
+  incumbentAdvantage: Record<string, number>;
+  races: TplRace[];
+  yearAggregations: YearAggregation[];
+  /** TPL as it stood after each weighted year under today's model, oldest first. */
   tplOverTime: TplAsOf[];
 };
 

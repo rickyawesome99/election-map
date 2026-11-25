@@ -1111,7 +1111,8 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 //   the county (see data/countyHouseData.ts), so there is no single incumbent or pair of
 //   candidates to attribute — no incumbency strip, no fundraising strip. A year is ineligible
 //   (imputed) only when one party drew no votes in the county (countyHouseEligibility).
-// - The environment strip uses the parent state's β*; no county elasticity is estimated.
+// - The environment strip is the national E(year), as for a state; no county term is estimated.
+// - 2026 rows come from the overlay's county counts (county2026), on the counts as they stand.
 // - No row-level Huber: a county far from its STATE's lean is not an outlier, it is a county.
 //   But each House year is Huber-checked as a whole against the county's OWN statewide lean
 //   (P/S/G rows aggregated alone): the year's base weight × min(1, HUBER_C / |House NM − that
@@ -1128,18 +1129,34 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 // the REGULAR race's margin, duplicating it onto both of that year's Senate rows.
 // Governor needs no equivalent split: governor specials (OR 2016) are named plain
 // "Governor" by generateRaceList and countyGovernorData stores them in `years`.
+// 2026 by county, from the overlay (data/generated/tpl-inputs-2026.json `counties`): the county
+// data files stop at 2025 until 2026 is certified and merged into them. Counts are as they stand,
+// and a county the results files have no row for gets no 2026 row.
+function county2026(fips: string, office: "S" | "SS" | "G" | "H"): CountyYearResult | undefined {
+  const v = HAS_2026 ? tplInputs2026().counties?.[fips]?.[office] : undefined;
+  if (!v || v[2] <= 0) return undefined;
+  const [demVotes, repVotes, totalVotes] = v;
+  const demPct = +((demVotes / totalVotes) * 100).toFixed(2), repPct = +((repVotes / totalVotes) * 100).toFixed(2);
+  return { demVotes, repVotes, othVotes: totalVotes - demVotes - repVotes, totalVotes, demPct, repPct, margin: +(repPct - demPct).toFixed(2), districts: [] };
+}
+
 function getCountyHistoricalMargins(race: string, fips: string): { year: number; margin: number }[] {
+  const now =
+    race === "Senate Special" ? county2026(fips, "SS")
+    : race === "Senate" ? county2026(fips, "S")
+    : race === "Governor" ? county2026(fips, "G")
+    : undefined;
   const years =
     race === "President" ? countyPresidentialData[fips]?.years
     : race === "Senate Special" ? countySenateData[fips]?.specialYears
     : race === "Senate" ? countySenateData[fips]?.years
     : race === "Governor" ? countyGovernorData[fips]?.years
     : undefined;
-  if (!years) return [];
   const out: { year: number; margin: number }[] = [];
-  for (const [year, result] of Object.entries(years)) {
+  for (const [year, result] of Object.entries(years ?? {})) {
     if (result) out.push({ year: Number(year), margin: result.margin });
   }
+  if (now && !out.some((m) => m.year === TPL_2026)) out.push({ year: TPL_2026, margin: now.margin });
   return out;
 }
 
@@ -1153,7 +1170,9 @@ function getCountyNearestPresidential(fips: string, raceYear: number): ImputedLe
 // at zero, e.g. Allen Parish LA 2024) is imputed like an uncontested seat in the state and
 // district models, instead of entering as a ±100 margin. A county split between a contested
 // and an unopposed district still reads as eligible: the aggregate carries no per-district
-// breakdown to separate them.
+// breakdown to separate them. 2026 has the breakdown: its row sums only the districts the state
+// model counts as D-vs-R races, and a county with none is marked in the overlay
+// (countyHouseIneligible; scripts/buildTplInputs2026.ts).
 function countyHouseEligibility(r: CountyYearResult): RaceEligibility {
   if (r.votesKnown === false) return r.margin > 0 ? "no-dem" : "no-rep";
   if (r.samePartyNote && (r.demVotes <= 0 || r.repVotes <= 0)) return "same-party";
@@ -1166,18 +1185,22 @@ function generateCountyRaceList(fips: string, stateAbbr: string, stateName: stri
   const statewideStubs: RaceStub[] = generateRaceList(stateAbbr, stateName)
     .filter((stub) => stub.raceType === "P" || stub.raceType === "S" || stub.raceType === "G")
     .map((stub) => ({ ...stub, historicalMargins: getCountyHistoricalMargins(stub.race, fips) }))
-    // The county files stop at 2025: a 2026 statewide race has no county margin yet, and an
-    // ineligible one would otherwise enter as a bare imputed presidential row.
+    // A 2026 statewide race enters only where the county has a 2026 count for it (county2026):
+    // without one, an ineligible race would enter as a bare imputed presidential row.
     .filter((stub) => stub.year !== TPL_2026 || stub.historicalMargins.some((m) => m.year === TPL_2026));
 
-  const houseYears = countyHouseData[fips]?.years;
+  const house2026 = county2026(fips, "H");
+  const houseYears: Partial<Record<number, CountyYearResult>> | undefined = house2026
+    ? { ...countyHouseData[fips]?.years, [TPL_2026]: house2026 }
+    : countyHouseData[fips]?.years;
   const houseHistoricalMargins: { year: number; margin: number }[] = [];
   const houseEligibility = new Map<number, RaceEligibility>();
   if (houseYears) {
     for (const [year, result] of Object.entries(houseYears)) {
       if (!result) continue;
       houseHistoricalMargins.push({ year: Number(year), margin: result.margin });
-      houseEligibility.set(Number(year), countyHouseEligibility(result));
+      const cls2026 = Number(year) === TPL_2026 && house2026 ? tplInputs2026().countyHouseIneligible?.[fips] : undefined;
+      houseEligibility.set(Number(year), cls2026 ?? countyHouseEligibility(result));
     }
   }
   const houseStubs: RaceStub[] = houseHistoricalMargins
@@ -1245,10 +1268,15 @@ export function calculateCountyModel(fips: string): StateModelCalculation | null
 
   // Two passes: the county's lean from its statewide rows alone anchors the House years' Huber
   // check (see the County TPL note above); a county with no statewide rows keeps them unchecked.
-  const statewide = races.filter((race) => race.raceType !== "H" && race.NM != null);
-  const houseAnchor = statewide.length > 0 ? aggregateYears(statewide).tpl : null;
-  const { yearAggregations, tpl } = aggregateYears(races, houseAnchor);
+  const { yearAggregations, tpl } = aggregateYears(races, countyHouseAnchor(races));
   return { races, yearAggregations, tpl };
+}
+
+/** The lean a county's House years are checked against: its President, Senate and Governor rows
+ * aggregated alone (null with no statewide rows). Also the houseAnchor to pass leanAsOf for a county. */
+export function countyHouseAnchor(races: ComputedRace[]): number | null {
+  const statewide = races.filter((race) => race.raceType !== "H" && race.NM != null);
+  return statewide.length > 0 ? aggregateYears(statewide).tpl : null;
 }
 
 export function calculateCountyTpl(fips: string): number {

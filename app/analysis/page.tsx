@@ -85,6 +85,8 @@ export default function AnalysisPage() {
     {
       title: "Reference",
       entries: [
+        { href: "/historical", kicker: "Results", title: "Historical Results", graphic: "historical",
+          description: <>Past results by state, county and congressional district from 2008, and state legislative results for every chamber from 2016, each county with its own page.</> },
         { href: "/analysis/delegation", kicker: "Seats", title: "Current Seat Delegation", graphic: "delegation",
           description: <>Which party holds each state&rsquo;s governorship, Senate seats, House seats and legislative chambers today, on a map or cartogram.</> },
         { href: "/analysis/calendar", kicker: "Calendar", title: "Election Calendar", graphic: "calendar",

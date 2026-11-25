@@ -9,6 +9,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import * as maplibregl from "maplibre-gl";
 import type { GeoJSONSource, LayerSpecification, Map as MapLibreMap, MapLayerMouseEvent, StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
+import { usePageBg } from "@/lib/useDarkMode";
 import type { FeatureCollection, Geometry, Position } from "geojson";
 import type { PrecinctFC, PrecinctFeatureProps } from "./ExplorerMap";
 
@@ -62,8 +63,8 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
   const live = useRef({ onSelect, tooltipHtml, selectedUnit });
   live.current = { onSelect, tooltipHtml, selectedUnit };
 
+  const baseStroke = usePageBg();
   const styled = useMemo<FeatureCollection<Geometry, StyledProps>>(() => {
-    const baseStroke = darkMode ? "#0d1117" : "#f9f8f5";
     return {
       type: "FeatureCollection",
       features: fc.features.map((f, i) => {
@@ -89,7 +90,7 @@ export default function StreetMap({ fc, unitOf, colorFor, isDimmed, selectedUnit
     };
     // styleKey stands in for the inputs baked into colorFor/isDimmed.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [fc, styleKey, darkMode, selectedUnit]);
+  }, [fc, styleKey, darkMode, baseStroke, selectedUnit]);
   const styledRef = useRef(styled);
   styledRef.current = styled;
 

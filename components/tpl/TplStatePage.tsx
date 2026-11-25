@@ -18,10 +18,13 @@ import type { DistrictPageData, StatePageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut, M, Fact, Fig, VERY_MUTED } from "./ui";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import { startPendingNav } from "@/lib/navPending";
+import { useDesktopPointer } from "@/lib/useDesktopPointer";
+import StateCountyMap from "@/components/StateCountyMap";
+import { MapLegend } from "./TplMaps";
 
 // One state's page: hero, the year × office matrix with the races behind the selected cell,
 // the result ledger, the District TPL section (its own matrix and table for the selected
-// district), and the state's candidates with their WAR.
+// district), and the state's County TPL map.
 
 const TYPE_ORDER: Record<string, number> = { P: 0, G: 1, S: 2, H: 3, L: 4 };
 
@@ -77,6 +80,14 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const meta = [`${rows.length} row${rows.length === 1 ? "" : "s"}`,
     sel.type === "H" && selYear && selYear.typeNMs.H != null ? `averaged into ${fmt2(selYear.typeNMs.H + (selYear.env ?? 0))} by votes cast` : null,
     sel.type === "all" && selYear ? `margin ${fmt2(selYear.WRS + (selYear.env ?? 0))} · WRS ${fmt2(selYear.WRS)} after the environment` : null].filter(Boolean).join(" · ");
+
+  // ── County map ───────────────────────────────────────────────────────────
+  // As on the state page: a mouse click opens the county's page (hover already shows its lean);
+  // a tap selects it and shows the card with the link.
+  const desktop = useDesktopPointer();
+  const openPage = (href: string) => { startPendingNav(href); router.push(href); };
+  const countyCount = Object.values(data.countyTpl).filter((v) => v != null).length;
+  const countyNoun = data.abbr === "LA" ? "parishes" : data.abbr === "AK" ? "boroughs and census areas" : "counties";
 
   const weighted = years.filter((y) => y.finalWeight > 0).sort((a, b) => b.year - a.year);
   const centered = data.tpl - data.medianStateTpl;
@@ -200,6 +211,13 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
             <div className="py-8 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>{districtSlice.failed ? "This district's calculation could not be loaded." : "Loading…"}</div>
           )}
         </section>
+
+        {countyCount > 0 && (
+          <section id="counties" className="mt-10 scroll-mt-24">
+            <LedgerSectionHead label={`County TPL · ${data.name}'s ${countyCount} ${countyNoun}`} meta={desktop ? "click a county to open its page" : "tap a county for its lean"} right={<MapLegend />} />
+            <StateCountyMap stateAbbr={data.abbr} stateName={data.name} showTpl figureHover showLabel={false} countyTpl={data.countyTpl} countyVotes={data.countyVotes} height="clamp(300px, 60vw, 520px)" onOpen={desktop ? openPage : undefined} />
+          </section>
+        )}
       </main>
 
       {race && <RaceCalcModal race={race} E={data.E} incumbentAdvantage={data.incumbentAdvantage} onClose={() => setRace(null)} onFormula={setFormula} onAdjusted={() => setAdjusted(true)} />}

@@ -380,18 +380,10 @@ export const SOURCE_GROUPS: SourceGroup[] = [
         name: "U.S. Census Bureau — ACS 2020–24 five-year Data Profiles (API)", url: "https://www.census.gov/data/developers/data-sets/acs-5year.html", kind: "official",
         uses: [
           { data: "Population, education, race and ethnicity, median household income for the nation, states, congressional districts and legislative districts", where: "scripts/fetch-acs-demographics.py → data-entry/demographics.csv" },
+          { data: "The same measures for every county, plus Connecticut's towns (rebuilt into its eight legacy counties) — counties and districts share one release", where: "scripts/fetch-acs-county-demographics.py → data-entry/county_acs_2020_24.csv → data/countyDemographics.ts" },
           { data: "The same measures at tract level, re-aggregated onto the 2026 lines for the 143 redrawn districts", where: "scripts/build-cd-demographics-2026-lines.py" },
-          { data: "Connecticut towns (2019–23), rolled up to its eight legacy counties", where: "scripts/fetch-ct-town-acs.py" },
         ],
         note: "Needs CENSUS_API_KEY. Districts are published on 119th-Congress lines only.",
-      },
-      {
-        name: "County Health Rankings & Roadmaps 2025", publisher: "University of Wisconsin Population Health Institute", url: "https://www.countyhealthrankings.org/", kind: "academic",
-        uses: [{ data: "County race and ethnicity shares and median household income (ACS-sourced)", where: "data-entry/county_health_rankings_2025.csv → data/countyDemographics.ts" }],
-      },
-      {
-        name: "USDA Economic Research Service — county education", url: "https://www.ers.usda.gov/data-products/county-level-data-sets/", kind: "official",
-        uses: [{ data: "County bachelor's-degree share, ACS 2019–23", where: "data-entry/usda_ers_education_2019_23.csv" }],
       },
       {
         name: "Redistricting Data Hub · IPUMS NHGIS", url: "https://redistrictingdatahub.org/", kind: "project",
