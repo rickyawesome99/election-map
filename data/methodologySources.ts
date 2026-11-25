@@ -113,6 +113,7 @@ export const SOURCE_GROUPS: SourceGroup[] = [
         uses: [
           { data: "2024 House by parish (replaces MEDSL, which omits early voting)", where: "data-entry/la_2024_official_results.xlsx · scripts/patch-county-house-2024-la-official.py" },
           { data: "Runoff results by parish: Senate 2016, House 2016 and 2020, Governor 2019 and 2023 (supplied by hand)", where: "scripts/patch-county-*-la.py" },
+          { data: "House November all-party primaries 2016–2024: every Democratic and every Republican candidate's votes by district", where: "data-entry/la-sos-results/ · scripts/build-la-house-november-party-vote.py → data/laHouseNovemberPartyVote.ts" },
         ],
         note: "The portal is a JavaScript app with no fetchable data; these figures were exported or transcribed by hand.",
       },

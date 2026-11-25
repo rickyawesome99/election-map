@@ -26,7 +26,7 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": 7.8,
     "presidentParty": "D",
     "housePv": 1.1,
-    "housePvImputed": 0.9,
+    "housePvImputed": 1.4,
     "notes": "gb_final (RCP final) and approval_net_final from data/popVoteData.ts; the 538 archive has no 2016 generic-ballot polls, so this row stays on RCP's basis (RCP ran 1-2 pts more Republican than the live recipe in 2022/2024, 0.2-0.6 in 2018/2020); mid-September value approximate from memory of the RCP average"
   },
   {
@@ -37,7 +37,7 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": -9.7,
     "presidentParty": "R",
     "housePv": -8.6,
-    "housePvImputed": -7.8,
+    "housePvImputed": -7.7,
     "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (39 pollsters) and election eve 2018-11-05 (44 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   },
   {
@@ -59,7 +59,7 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": -12.5,
     "presidentParty": "D",
     "housePv": 2.7,
-    "housePvImputed": 2,
+    "housePvImputed": 1.3,
     "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (65 pollsters) and election eve 2022-11-07 (75 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   },
   {
@@ -70,7 +70,7 @@ export const nationalEnvironmentHistory: NationalEnvironmentYear[] = [
     "approvalFinal": -15.2,
     "presidentParty": "D",
     "housePv": 2.6,
-    "housePvImputed": 2.2,
+    "housePvImputed": 2,
     "notes": "gb_mid_sept and gb_final = the live generic-ballot recipe (lib/genericBallotAverage.ts: one poll per pollster, 14-day half-life, sqrt-sample) over the 538 archive (data-entry/generic_ballot_polls_history.csv) as of Sept 15 (53 pollsters) and election eve 2024-11-04 (58 pollsters), replacing RCP's finals and the from-memory mid-September values on 2026-10-23 so the miss is measured on the quantity the model shades; approval values unchanged (approximate mid-Sept, final from popVoteData)"
   }
 ];

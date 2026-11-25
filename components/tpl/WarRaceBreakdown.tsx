@@ -143,7 +143,7 @@ export function WarRaceBreakdown({ row, opp, ownPage = false }: { row: WarSlim; 
         <Tile label="+ Incumb." title="What their own incumbency was worth against a non-incumbent replacement">{row.incumb !== 0 ? signed(row.incumb) : <span style={{ color: "var(--app-text-very-muted)" }}>&mdash;</span>}</Tile>
         <Tile label="= WAR"><WarChip war={row.war} size="sm" /></Tile>
         <span className="hidden self-stretch sm:block" style={{ borderLeft: "1px solid var(--app-border)" }} />
-        <Tile label="Residual" title="Actual minus Expected, toward the candidate: the race's net result before it is divided between the two">{signed(row.residual)}</Tile>
+        <Tile label="Residual" title="Actual minus Expected, naming the party it favored: the race's net result before it is divided between the two"><span style={{ color: marginColor(row.actual - row.expected) }}>{fmt1(row.actual - row.expected)}</span></Tile>
         <Tile label="Effect" title="The candidate's standing as of this race: the record with this race included">{signed(row.effect)} <span className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>n={row.effectN}</span></Tile>
         {opp && <Tile label="Opp WAR" title={`${opp.candidate}'s own WAR in this race`}><WarChip war={opp.war} size="sm" /></Tile>}
       </dl>

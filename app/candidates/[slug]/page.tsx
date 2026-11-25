@@ -428,7 +428,7 @@ export default async function CandidatePage({
             <dl className="mt-3.5 flex flex-wrap gap-x-7 gap-y-2.5">
               <RaceMetric label="Expected" title="Generic vs generic: how the place voted on the rest of its ballot that year, plus incumbency and structural money"><span style={{ color: leanColor(w.expected) }}>{fmtLean(w.expected)}</span></RaceMetric>
               <RaceMetric label="vs opponent" title="What a replacement-level, non-incumbent nominee would be expected to get against this specific opponent"><span style={{ color: leanColor(w.vsOpp) }}>{fmtLean(w.vsOpp)}</span></RaceMetric>
-              <RaceMetric label="Incumb." title="What the candidate's own incumbency was worth against a non-incumbent replacement; already inside WAR">{w.incumb !== 0 ? fmtWar(w.incumb) : <span style={{ color: "var(--app-text-very-muted)" }}>&mdash;</span>}</RaceMetric>
+              <RaceMetric label="Residual" title="Actual minus Expected, naming the party the result favored over the generic expectation, before it is divided between the two candidates"><span style={{ color: leanColor(w.actual - w.expected) }}>{fmtLean(w.actual - w.expected)}</span></RaceMetric>
               <RaceMetric label="WAR" title="Wins Above Replacement: actual margin minus vs-opponent, signed toward this candidate"><WarFigure v={w.war} /></RaceMetric>
               {w.oppWar != null && <RaceMetric label="Opp WAR" title={`The opponent's own Wins Above Replacement in this race${entry.oppName ? ` (${entry.oppName})` : ""}`}><WarFigure v={w.oppWar} /></RaceMetric>}
             </dl>

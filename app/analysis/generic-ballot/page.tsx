@@ -159,8 +159,9 @@ export default function GenericBallotPage() {
               House vote counts third-party votes in its denominator, so published figures differ from the two-party numbers here by up to a point.
             </p>
             <p>
-              <strong>Same-party seats:</strong> California and Washington top-two finals and Louisiana races between two members of one party have no two-party margin and are
-              treated like unopposed seats.
+              <strong>Same-party seats:</strong> California and Washington top-two finals have no two-party margin and are treated like unopposed seats. So is a seat
+              where one major party ran nobody and an independent or minor-party candidate took its place. Louisiana held all-party primaries in November through 2024, so
+              its seats count every Democratic candidate&rsquo;s votes against every Republican candidate&rsquo;s.
             </p>
           </div>
         </section>

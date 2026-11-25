@@ -118,9 +118,9 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
           <div className={`pb-6 sm:pb-1 ${PAGE_HERO_TOP}`}>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
               <div className="min-w-0">
-                <h1 style={PAGE_TITLE_STYLE}>Candidates</h1>
-                <p className="mt-2 max-w-2xl text-sm leading-relaxed sm:min-h-[4lh] md:min-h-[3lh]" style={{ color: "var(--app-text-muted)" }}>
-                  Wins Above Replacement (WAR): how far each nominee ran ahead of a replacement-level candidate of their party in every race since 2016, once the state&apos;s own vote that year (for a House race, the district&apos;s), incumbency and structural money are taken out.
+                <h1 style={PAGE_TITLE_STYLE}>Wins Above Replacement</h1>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed sm:min-h-[3lh] md:min-h-[2lh]" style={{ color: "var(--app-text-muted)" }}>
+                  How far each candidate ran ahead of a generic candidate of their party in every race since 2016, given the state or district&apos;s blended popular vote that year.
                 </p>
               </div>
               <div className="flex shrink-0 items-end justify-between gap-6 sm:justify-end sm:gap-8">
@@ -144,7 +144,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
               <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="5.25" fill="none" stroke="currentColor" strokeWidth="1.2" /><path d="M6 5.4v3.1" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" /><circle cx="6" cy="3.5" r="0.75" fill="currentColor" /></svg>
               What the columns mean
             </button>} />
-          {guideOpen && <ColumnGuideModal title="What the columns mean" sub="Margins name the party they favor; Residual, Effect and WAR are signed toward the candidate." columns={WAR_COLUMNS} onClose={() => setGuideOpen(false)} />}
+          {guideOpen && <ColumnGuideModal title="What the columns mean" sub="Margins and Residual name the party they favor; Effect and WAR are signed toward the candidate." columns={WAR_COLUMNS} onClose={() => setGuideOpen(false)} />}
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs">
             <span className="flex items-center gap-1.5"><span className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Office</span>
               <Pills label="Office" size="xs" value={office} onChange={setOffice} options={[{ key: "all" as Office, label: "All" }, { key: "P" as Office, label: "P" }, { key: "S" as Office, label: "S" }, { key: "G" as Office, label: "G" }, { key: "H" as Office, label: "H" }]} /></span>
@@ -222,7 +222,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
                       <td className={`${CELL_R} max-sm:px-1`}><M v={r.expected} digits={1} /></td>
                       <td className={`${CELL_R} max-sm:px-1`}><M v={r.vsOpp} digits={1} /></td>
                       <td className={`${CELL_R} max-sm:px-1`}><M v={r.actual} digits={1} /></td>
-                      <td className={`${CELL_R} hidden lg:table-cell`}>{signed1(r.residual)}</td>
+                      <td className={`${CELL_R} hidden font-bold lg:table-cell`}><M v={r.actual - r.expected} digits={1} /></td>
                       <td className={`${CELL_R} hidden lg:table-cell`}>{r.effect > 0 ? "+" : ""}{r.effect.toFixed(1)} <span className="text-[11px]" style={VERY_MUTED}>n={r.effectN}</span></td>
                       <td className={`${CELL_R} max-sm:pr-0 max-sm:pl-1`}><WarChip war={r.war} size="md" /></td>
                       <td className="w-6 p-0 pr-1 text-right" style={{ color: "var(--app-text-very-muted)" }}>
@@ -270,7 +270,7 @@ const WAR_COLUMNS: { name: string; desc: string }[] = [
   { name: "Expected", desc: "Generic vs generic: the margin this seat would produce that year with two replacement-level nominees. It starts from how the state (for a House race, the district) voted on the rest of its ballot that year, plus incumbency and the money gap a generic pair would have." },
   { name: "Vs Opp", desc: "Generic vs this opponent: what a replacement-level, non-incumbent nominee of the candidate's party would be expected to get against this specific opponent. It is Expected moved by the opponent's strength, with the candidate's own incumbency taken out." },
   { name: "Actual", desc: "The real result of the race." },
-  { name: "Residual", desc: "Actual minus Expected, signed toward the candidate: how far the race as a whole departed from generic vs generic. The two candidates in a race mirror each other." },
+  { name: "Residual", desc: "Actual minus Expected, naming the party it favored: how far the race as a whole departed from generic vs generic. Both candidates in a race show the same figure." },
   { name: "Effect", desc: "The candidate's standing as of that race, in points: their record across their scored races, this one included. n is how many races are on file for them." },
   { name: "WAR", desc: "Wins Above Replacement: Actual minus Vs Opp, signed toward the candidate. How many points better (green) or worse (red) they ran than a replacement-level nominee would have against the same opponent. A replacement is never the incumbent, so an incumbent's WAR includes what incumbency was worth: roughly 4 to 6 points depending on the office. The exact figure for each race is in the row's calculation." },
 ];

@@ -63,7 +63,8 @@ function Eligibility() {
         ["eligible", "A real Republican against a real Democrat", "Used as is"],
         ["no-dem / no-rep", "A major party absent — nobody, or a minor-party or unaligned independent stand-in (Osborn NE 2024, McMullin UT 2022)", "Imputed"],
         ["same-party", "Top-two or runoff between two candidates of one party", "Imputed"],
-        ["fragmented", "Louisiana jungle general decided without a runoff: the top candidate of each party understates split fields. Detected as D% + R% < 90 in LA", "Imputed"],
+        ["fragmented", "Louisiana Senate or Governor jungle general decided without a runoff: the top candidate of each party understates split fields. Detected as D% + R% < 90 in LA", "Imputed"],
+        ["Louisiana House, 2016–2024", "The November all-party primary: every Democratic candidate's votes against every Republican candidate's, as a share of the total vote. A seat where one party ran nobody is no-dem / no-rep", "Used as is"],
       ]} />
       <Defs items={[
         { term: "Aligned independents", def: <>Count as their party&rsquo;s nominee: {Object.entries(ALIGNED_INDEPENDENTS).map(([n, p]) => `${n} (${p})`).join(", ")}. Every other independent does not.</> },
@@ -244,6 +245,7 @@ export function StateTplMethodology() {
           { path: "lib/tpl2026Inputs.ts ← scripts/buildTplInputs2026.ts", role: "The 2026 rows, from the results CSVs, until 2026 is certified and merged into the historical files." },
           { path: "data/tplModelData.ts", role: "TPL_GLOBAL_CONSTANTS with calibration provenance." },
           { path: "data/raceEligibility.ts", role: "classifyEligibility, ALIGNED_INDEPENDENTS, the Louisiana jungle rule." },
+          { path: "data/laHouseNovemberPartyVote.ts", role: "Louisiana House November party totals by district, 2016–2024 (scripts/build-la-house-november-party-vote.py)." },
           { path: "data/fundraisingData.ts ← data-entry/fundraising_2016_2026.csv", role: "Receipts behind the fundraising strip." },
           { path: "components/TplModelPage.tsx", role: "The ledger UI on the TPL tab." },
           { path: "docs/TPL_MODEL_SPEC.md", role: "Long-form design history." },

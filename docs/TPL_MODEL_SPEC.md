@@ -112,7 +112,7 @@ the slot party):
 | `no-dem` / `no-rep` | Major party absent (nobody, or a minor-party/independent stand-in) | KY-05 unopposed; Osborn NE-Sen 2024; McMullin UT-Sen 2022 |
 | `same-party` | Top-two / runoff same-party general | CA-34 2022 (D–D); LA jungle runoffs |
 
-| `fragmented` | Louisiana jungle general decided without a runoff — the stored top-two margins understate the split party fields (Kennedy 2022: 61.6% vs the top Dem's 17.9% while the Dem vote split three ways). Detected as `demPct + repPct < 90` in a `JUNGLE_STATES` state. | LA Sen 2020/2022, Gov 2023, most LA House |
+| `fragmented` | (Senate and Governor only since 2026-11-24; Louisiana House 2016–2024 is scored on the November party vote, every D candidate against every R candidate, `data/laHouseNovemberPartyVote.ts`.) Louisiana jungle general decided without a runoff — the stored top-two margins understate the split party fields (Kennedy 2022: 61.6% vs the top Dem's 17.9% while the Dem vote split three ways). Detected as `demPct + repPct < 90` in a `JUNGLE_STATES` state. | LA Sen 2020/2022, Gov 2023, most LA House |
 
 `ALIGNED_INDEPENDENTS` (Bernie Sanders, Angus King) count as Democratic
 nominees; every other independent does not. There is no margin threshold — the

@@ -2,6 +2,7 @@ import "server-only";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { houseData } from "@/data/forecastData";
+import { laHouseNovemberPartyVote } from "@/data/laHouseNovemberPartyVote";
 import { genericBallotPolls } from "@/data/genericBallotPolls";
 import { nationalEnvironmentHistory } from "@/data/nationalEnvironmentHistory";
 import { presByBoundaryVintage, boundaryVintageForHouseYear, PRES_YEARS_FOR_VINTAGE } from "@/data/presByBoundaryVintage";
@@ -20,7 +21,11 @@ import { calculateStateTpl, effectiveEnvironment, envScaleFor, getEnvironmentMod
 //   raw        every vote in every seat, as the official total is reported. An unopposed
 //              seat contributes its whole vote to one party.
 //   contested  only seats where a Democrat faced a Republican. Drops unopposed seats and
-//              same-party finals (California / Washington top-two, Louisiana).
+//              same-party finals (California / Washington top-two), and seats where the missing
+//              party's column holds an independent or minor-party stand-in or a write-in.
+//              Louisiana 2016–2024 is counted on its November all-party primary: every
+//              Democratic candidate's votes against every Republican candidate's, per district
+//              (data/laHouseNovemberPartyVote.ts), on all three bases.
 //   imputed    the contested seats plus each dropped seat filled with the vote a D-vs-R
 //              contest there would have produced: the district's presidential margin (on the
 //              lines the race was run on) plus that year's average gap between the contested
@@ -112,20 +117,41 @@ type Row = { id: string; code: string; abbr: string; year: number; demName: stri
 function readRows(): Row[] {
   const text = readFileSync(join(process.cwd(), "data-entry", "house_past_results.csv"), "utf8");
   const lines = text.split("\n").slice(1).filter((l) => l.trim());
+  const laNovember = new Map(laHouseNovemberPartyVote.map((v) => [`${v.district}:${v.year}`, v]));
   return lines.map((l) => {
     const c = splitCsvLine(l);
-    return { id: c[0], code: c[1], abbr: c[2], year: Number(c[4]), demName: c[5] ?? "", repName: c[6] ?? "", dem: Number(c[11]) || 0, rep: Number(c[12]) || 0, total: Number(c[14]) || 0 };
+    const row = { id: c[0], code: c[1], abbr: c[2], year: Number(c[4]), demName: c[5] ?? "", repName: c[6] ?? "", dem: Number(c[11]) || 0, rep: Number(c[12]) || 0, total: Number(c[14]) || 0 };
+    // Louisiana's November election was an all-party primary through 2024, and the results file
+    // keeps one candidate per party (or the December runoff). Count the party split of the
+    // November electorate instead; a party with no candidate leaves its side empty (unopposed).
+    const la = laNovember.get(`${row.code}:${row.year}`);
+    if (la) return { ...row, demName: la.dem > 0 ? "November Democratic candidates" : "", repName: la.rep > 0 ? "November Republican candidates" : "", dem: la.dem, rep: la.rep, total: la.total };
+    return row;
   });
 }
 
 // Same-party finals are recorded with the second finalist's party in parentheses in the
 // other column ("David Kim (D)"); an unopposed seat has an empty name on the missing side.
 // A few states (Florida) do not print an unopposed seat's votes at all, so names decide first.
-export function seatKind(r: { demName: string; repName: string; dem: number; rep: number }): SeatKind {
+// A stand-in for a missing major party is tagged with its own party ("Erica Clawson (I)"): the
+// seat had no D-vs-R contest, so it is unopposed for the party that did run (until 2026-11-24
+// these were counted as contested, with the stand-in's votes credited to the missing party).
+// So is a seat whose opponent is write-in scale, by the rule data/raceEligibility.ts uses for TPL:
+// under 5% of the vote while the other side clears 90%, or under 2% outright.
+export function seatKind(r: { demName: string; repName: string; dem: number; rep: number; total?: number }): SeatKind {
   if (/\(D\)\s*$/.test(r.repName)) return "same-party-D";
   if (/\(R\)\s*$/.test(r.demName)) return "same-party-R";
+  if (/\([A-Z]+\)\s*$/.test(r.repName)) return "unopposed-D";
+  if (/\([A-Z]+\)\s*$/.test(r.demName)) return "unopposed-R";
   if (!r.repName.trim()) return "unopposed-D";
   if (!r.demName.trim()) return "unopposed-R";
+  const t = Math.max(r.total ?? 0, r.dem + r.rep);
+  if (t > 0) {
+    const d = (r.dem / t) * 100, g = (r.rep / t) * 100;
+    const writeInScale = (own: number, other: number) => own < 5 && (other >= 90 || own < 2);
+    if (r.dem > 0 && r.rep > 0 && writeInScale(g, d)) return "unopposed-D";
+    if (r.dem > 0 && r.rep > 0 && writeInScale(d, g)) return "unopposed-R";
+  }
   if (r.dem === 0 && r.rep > 0) return "unopposed-R";
   if (r.rep === 0 && r.dem > 0) return "unopposed-D";
   return "contested";

@@ -2,7 +2,7 @@ import { TplCandidatesPage } from "@/components/tpl/TplCandidatesPage";
 import { buildModelSummary, warSlice } from "@/lib/modelSlices";
 
 export const metadata = {
-  title: "Candidates — Wins Above Replacement",
+  title: "Wins Above Replacement",
   description: "Every scored race since 2016 with both nominees' Wins Above Replacement, and each candidate's record.",
 };
 

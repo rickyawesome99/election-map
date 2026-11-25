@@ -38,6 +38,22 @@ import { getChamberMargins, legislatureRowPool, unopposedPresPool, type NotUpMod
 import type { ChamberMarginYear } from "@/lib/stateLegChamberMargin";
 import { tplInputs2026, TPL_2026, type Tpl2026Race } from "@/lib/tpl2026Inputs";
 import { districtBallot, type DistrictBallotEntry } from "@/lib/districtBallot";
+import { laHouseNovemberPartyVote, type LaNovemberPartyVote } from "@/data/laHouseNovemberPartyVote";
+
+// ── Louisiana November party vote ────────────────────────────────────────────
+// Through 2024 Louisiana's November House election was an all-party primary. The results file
+// keeps the top candidate of each party (or the December runoff), which says how two people did,
+// not how many Democrats and Republicans voted: Higgins's 2016 runoff was Republican against
+// Republican, and a field of eight Republicans reads as a 20-point race for the leader. State and
+// District TPL score those seats on the party split instead: every Democratic candidate's November
+// votes against every Republican candidate's, as a share of the total (user decision 2026-11-24).
+// A seat where one party ran nobody is still imputed. WAR keeps the candidate-level rows.
+const LA_NOVEMBER = new Map(laHouseNovemberPartyVote.map((v) => [`${v.district}:${v.year}`, v]));
+export function laNovemberPartyVote(district: string | undefined, year: number): LaNovemberPartyVote | undefined {
+  return district ? LA_NOVEMBER.get(`${district}:${year}`) : undefined;
+}
+const laNovemberMargin = (v: LaNovemberPartyVote) => ((v.rep - v.dem) / v.total) * 100;
+const laNovemberEligibility = (v: LaNovemberPartyVote): RaceEligibility => (v.dem > 0 && v.rep > 0 ? "eligible" : v.dem > 0 ? "no-rep" : "no-dem");
 
 // ── Race stub type ────────────────────────────────────────────────────────────
 
@@ -449,6 +465,8 @@ export function getRawMargin(
   }
 
   if (district) {
+    const la = laNovemberPartyVote(district, year);
+    if (la) return laNovemberMargin(la);
     const dist = houseData.find((r) => r.name === district);
     const e = (dist?.pastResults ?? []).find((r) => r.year === year);
     return e != null ? e.repPct - e.demPct : null;
@@ -577,7 +595,8 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     }));
     for (const r of dist.pastResults ?? []) {
       if (r.year >= 2016) {
-        stubs.push({ ...makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, classifyEligibility(r, stateAbbr), whoOf(r), appointedFromResult(r)), totalVotes: r.totalVotes });
+        const la = laNovemberPartyVote(dist.name, r.year);
+        stubs.push({ ...makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`, la ? laNovemberEligibility(la) : classifyEligibility(r, stateAbbr), la ? undefined : whoOf(r), appointedFromResult(r)), totalVotes: la?.total ?? r.totalVotes });
       }
     }
   }
@@ -1039,9 +1058,10 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
   const houseResults: HouseResult[] = [];
   for (const r of houseRace?.pastResults ?? []) {
     if (r.year < 2016 || r.year > 2025) continue;
-    if (classifyEligibility(r, stateAbbr) !== "eligible") continue;
+    const la = laNovemberPartyVote(houseRace?.name, r.year);
+    if ((la ? laNovemberEligibility(la) : classifyEligibility(r, stateAbbr)) !== "eligible") continue;
     const x = r as PastResult & { demCandidate?: string; repCandidate?: string; demParty?: string; repParty?: string };
-    houseResults.push({ year: r.year, margin: r.repPct - r.demPct, incumbent: incumbentFromResult(r), who: { demCandidate: x.demCandidate, repCandidate: x.repCandidate, demParty: x.demParty, repParty: x.repParty } });
+    houseResults.push({ year: r.year, margin: la ? laNovemberMargin(la) : r.repPct - r.demPct, incumbent: incumbentFromResult(r), who: { demCandidate: x.demCandidate, repCandidate: x.repCandidate, demParty: x.demParty, repParty: x.repParty } });
   }
   // 2026 was run on today's lines, so it needs no relocation (boundaryStripFor returns 0).
   for (const r of houseRace ? races2026(stateAbbr, "H") : []) {
