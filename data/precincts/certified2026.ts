@@ -3,6 +3,7 @@
 //
 // Readers:
 //   app/precincts/page.tsx        shows a state's 2026 precinct results only once it is listed here
+//                                 (or in SHOWN_EARLY_2026 below: uncertified states shown on request)
 //   app/audit/precincts/page.tsx  the "2026 certification" section
 //
 // The precinct rows themselves come from data-entry/results-2026/precincts/{ST}.csv.gz (npm run results-2026)
@@ -53,6 +54,20 @@ export const CERTIFIED_2026: Record<string, Certification> = {
   },
   NM: { date: "2026-11-24", body: "State Canvassing Board", source: "https://sourcenm.com/2026/11/25/new-mexico-certifies-nov-3-election-results/" },
 };
+
+/**
+ * States shown on the precinct page BEFORE the state certifies, by the site owner's decision. `note` says
+ * what the rows are, and appears on /audit/precincts. Move the state to CERTIFIED_2026 when it certifies.
+ */
+export const SHOWN_EARLY_2026: Record<string, { since: string; note: string }> = {
+  OH: {
+    since: "2026-11-26",
+    note: "County boards' official canvass (complete Nov 24); the Secretary of State has not certified or published a statewide precinct file. Loaded county by county: Clermont, Cuyahoga, Franklin, Mercer, Ottawa and Summit so far, the other 82 counties are empty.",
+  },
+};
+
+/** True when a state's 2026 precinct results are on the precinct page. */
+export const shows2026 = (abbr: string): boolean => Boolean(CERTIFIED_2026[abbr] || SHOWN_EARLY_2026[abbr]);
 
 /** As-of date for the list above. */
 export const CERTIFIED_2026_AS_OF = "2026-11-25";

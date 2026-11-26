@@ -15,6 +15,7 @@ data-entry/precincts/raw/medsl/{year}/by_state/{ST}.parquet (columns as in split
                       → data-entry/precincts/raw/official/ks/ks_house_2022.xlsx   (appended to MEDSL's Kansas 2022 file)
   AZ GA HI ID MN NC SC SD WA WY 2026   the official precinct rows kept by the site's 2026 results build
   ND 2026             Secretary of State results JSON (north_dakota_2026)
+  OH 2026             county boards' official canvass exports, one file per county (ohio_2026); no statewide file yet
   LA 2019 2023        Secretary of State results service, one JSON per race and parish (fetch_louisiana.py)
 
   python3 scripts/precincts/split_official.py VA 2023
@@ -160,6 +161,176 @@ def north_dakota_2026() -> None:
     write("ND", 2026, df)
 
 
+OH_PARTY = {"DEM": "DEMOCRAT", "DEMOCRATIC": "DEMOCRAT", "REP": "REPUBLICAN", "REPUBLICAN": "REPUBLICAN", "LIB": "LIBERTARIAN", "LIBERTARIAN": "LIBERTARIAN",
+            "NON": "", "NONPARTISAN": "", "UNAFFILIATED": ""}
+
+
+def _ohio_contest(name: str):
+    """A county's contest title → (office, district), or None for contests the site does not map."""
+    name = re.sub(r"\s+", " ", re.sub(r"<br\s*/?>", " ", name)).strip()
+    name = re.sub(r"^For ", "", name)
+    if name.startswith("Governor"):
+        return "GOV", ""
+    if re.match(r"U\.?S\.? Senator", name):
+        return "USS", ""
+    if m := re.match(r"(Representative to Congress|State Senator|State Representative) \(?(\d+)", name):
+        return {"Representative to Congress": "USH", "State Senator": "SLDU", "State Representative": "SLDL"}[m.group(1)], m.group(2)
+    return None
+
+
+def _ohio_name(office: str, cand: str) -> str:
+    cand = re.sub(r"\s+", " ", cand).strip()
+    if office == "GOV":  # some counties print the ticket, some the governor only
+        cand = re.split(r"\s+(?:and|&|/)\s+", cand)[0]
+    return cand.upper()
+
+
+OH_TICKET = {"ACTON": "DEM", "RAMASWAMY": "REP", "KISSICK": "LIB", "BROWN": "DEM", "HUSTED": "REP", "REDPATH": "LIB"}
+_OH_ROW = re.compile(r"^\s*(.*?\S)\s+([\d,]+)(?:\s+[\d.]+%)?((?:\s+[\d,]+){2,})\s*$")
+_OH_NUMS = re.compile(r"^\s*([\d,]+)(?:\s+[\d.]+%)?((?:\s+[\d,]+){2,})\s*$")
+_OH_PARTY = re.compile(r"^(REP|DEM|LIB|OPC|NP|NON|IND|GRN)\s+(.*)$", re.I)
+
+
+def _ohio_precinct_report(pdf: Path) -> list[tuple[str, str, str, str, int]]:
+    """A county "Precinct Report" / "Precinct Summary … with Group Detail" PDF (pdftotext -layout): a precinct
+    heading, then per contest the title, "Vote For N", and one row per candidate whose first number is the
+    TOTAL. → (precinct, contest, candidate, party, votes). A long ticket wraps: the name on one line, its
+    numbers on the next."""
+    import subprocess
+    text = subprocess.run(["pdftotext", "-layout", str(pdf), "-"], capture_output=True, text=True, check=True).stdout
+    out, prec = [], None
+    for page in text.split("\f"):
+        body = [x for x in page.split("\n")[3:] if x.strip()]  # three running-header lines
+        contest, pending = None, None
+        for i, line in enumerate(body):
+            s = line.strip()
+            nxt = body[i + 1].strip() if i + 1 < len(body) else ""
+            nxt2 = body[i + 2].strip() if i + 2 < len(body) else ""
+            if re.match(r"Vote For \d", s):
+                continue
+            if re.match(r"Vote For \d", nxt):
+                contest, pending = re.sub(r"\s+", " ", s), None
+                continue
+            m = _OH_ROW.match(line)
+            nm = _OH_NUMS.match(line)
+            if nm and pending and contest:
+                name, votes = pending, nm.group(1)
+            elif m and contest and not nm:
+                name, votes = m.group(1).strip(), m.group(2)
+            else:
+                opens = re.match(r"Vote For \d", nxt2) or re.match(r"statistics", nxt, re.I) or re.match(r"statistics", nxt2, re.I)
+                if opens and not re.search(r"Turnout|Registered|Ballots Cast|\bTOTAL\b|%\s*$", s):
+                    prec, contest = re.sub(r"\s+", " ", s), None  # precinct heading: the next line opens a contest
+                elif contest and not nm and i + 1 < len(body) and _OH_NUMS.match(body[i + 1]):
+                    pending = s
+                continue
+            pending = None
+            if re.match(r"(Total Votes Cast|Overvotes|Undervotes|Contest Totals|Write-In: |Not Assigned|Unresolved)", name, re.I):
+                continue
+            pm = _OH_PARTY.match(name)
+            party, name = (pm.group(1).upper(), pm.group(2)) if pm else ("", name)
+            out.append((prec, contest, name, party, int(votes.replace(",", ""))))
+    return out
+
+
+def ohio_2026() -> None:
+    """County boards of elections, official canvass (complete by Nov 24, 2026). The state has not published a
+    statewide precinct file, so this reads whatever county files are in raw/official/oh/ and the state is
+    partial until all 88 are there. Files are named {county number}_{county}.{ext}; the number (1-88,
+    alphabetical) gives the FIPS code. All vote types are already in the precinct. The U.S. Senate race is
+    the unexpired-term election, Ohio's only one. Three layouts:
+      .pdf          "Precinct Report" / "Precinct Summary with Group Detail" (_ohio_precinct_report above)
+      .xlsx / .csv  "ElectionResultsCSV", the counties' standard precinct export: three header rows (contest /
+                    party / "Party Name"), then one row per precinct: COUNTY NUMBER, PRECINCT CODE, PRECINCT
+                    NAME, REGISTERED VOTERS, TOTAL VOTERS, one column per candidate. The last rows (COUNTY
+                    TOTALS, code ZZZ, and notes with no code) are left out.
+      .json         Enhanced Voting export (app.enhancedvoting.com/cdn/results/{county}/export-{election}.json):
+                    ballotItems → ballotOptions → precinctResults.
+    Sources (county results pages are listed at ohiosos.gov/directories/local-election-results):
+      18 Cuyahoga  app.enhancedvoting.com/cdn/results/cuyahoga-county-oh/export-GE2026.json
+      25 Franklin  vote.franklincountyohio.gov/election-info/2026 "Official Results - by Precinct (XLSX)"
+      77 Summit    app.enhancedvoting.com/cdn/results/summit-county-oh/export-Nov2026General.json
+      13 Clermont  boe.clermontcountyohio.gov/election_results/ "Precinct Report - Official Results" (OPrecinct.pdf)
+      54 Mercer    mercercountyoh.gov board-of-elections-election-results "General Detail OFFICIAL"
+      62 Ottawa    boe.ottawa.oh.gov/current-results/ "Precinct Level Official Summary"
+    """
+    import json
+    # The 2024 map names a precinct "COLS 01-A" and keeps the county's precinct code in its id ("… (AAN)").
+    # Where a county file carries the same code, the map's own name is used, so the join is exact.
+    code_name: dict[tuple[str, str], str] = {}
+    map_names: dict[str, set[str]] = {}
+    for line in (ROOT / "data-entry" / "precincts" / "anchor" / "OH.geojsonl").open():
+        a = json.loads(line)
+        a = a.get("properties", a)
+        if m := re.search(r"\(([A-Z]{3})\)$", a["geoid"]):
+            code_name[(a["county"], m.group(1))] = a["name"]
+        map_names.setdefault(a["county"], set()).add(a["name"])
+
+    def tidy(name: str) -> str:
+        name = re.sub(r"\s+", " ", name).strip()
+        name = re.sub(r"^\d{3} ", "", name)  # Summit numbers its precincts: "001 AKRON 1-A"
+        return re.sub(r"\s+-", "-", name)  # Cuyahoga: "BAY VILLAGE -01-A"
+
+    def on_map(fp: str, name: str) -> str:
+        """The map's spelling where the county's is its start: "BAY 1" → "BAY 1 (PCS)"."""
+        names = map_names.get(fp, set())
+        if name in names:
+            return name
+        longer = [n for n in names if n.startswith(name + " (")]
+        return longer[0] if len(longer) == 1 else name
+
+    rows = []
+    files = sorted(f for f in (RAW / "official" / "oh").iterdir() if f.suffix.lower() in (".xlsx", ".csv", ".json", ".pdf") and re.match(r"\d+_", f.name))
+    for f in files:
+        fp = f"39{2 * int(f.name.split('_')[0]) - 1:03d}"
+        n0 = len(rows)
+        if f.suffix.lower() == ".pdf":
+            for prec, contest, cand, party, votes in _ohio_precinct_report(f):
+                c = _ohio_contest(contest)
+                if not c or prec is None:
+                    continue
+                cand = "WRITE-IN" if cand.upper().startswith("WRITE-IN") else _ohio_name(c[0], cand)
+                party = party or OH_TICKET.get(cand.split()[-1], "")
+                rows.append((fp, "", on_map(fp, tidy(prec).upper()), c[0], c[1], cand, OH_PARTY.get(party, party), "WRITE" in cand, "TOTAL", votes))
+            print(f"  {f.name}: {len({r[2] for r in rows[n0:]})} precincts, {len(rows) - n0} rows")
+            continue
+        if f.suffix.lower() == ".json":
+            d = json.loads(f.read_text())
+            for item in d["results"]["ballotItems"]:
+                c = _ohio_contest(item["name"])
+                if not c:
+                    continue
+                for o in item["ballotOptions"]:
+                    cand = _ohio_name(c[0], o["name"])
+                    party = (o.get("politicalParty") or "").upper()
+                    for p in o.get("precinctResults") or []:
+                        rows.append((fp, "", tidy(p["name"]), c[0], c[1], cand, OH_PARTY.get(party, party), "WRITE" in cand, "TOTAL", p["voteCount"]))
+            print(f"  {f.name}: {len(rows) - n0} rows ({d.get('createdAt', '')[:10]})")
+            continue
+        t = pd.read_excel(f, header=None, dtype=str) if f.suffix.lower() == ".xlsx" else pd.read_csv(f, header=None, dtype=str, encoding="latin-1")
+        t = t.fillna("")
+        if str(t.iat[0, 0]).strip().upper() != "COUNTY NUMBER":
+            print("  skipped (not the standard export):", f.name)
+            continue
+        body = t.iloc[3:]
+        body = body[(body[1].str.strip() != "") & (body[1].str.strip().str.upper() != "ZZZ")]
+        pnames = [code_name.get((fp, code.strip().upper()), tidy(nm)) for code, nm in zip(body[1], body[2])]
+        for j in range(5, t.shape[1]):
+            name, party, cand = (re.sub(r"\s+", " ", str(t.iat[i, j])).strip() for i in (0, 1, 2))
+            c = _ohio_contest(name)
+            if not c:
+                continue
+            cand = _ohio_name(c[0], re.sub(rf"^{re.escape(party)}\s+", "", cand) if party else cand)
+            v = pd.to_numeric(body[j].str.replace(",", ""), errors="coerce")
+            for pname, votes in zip(pnames, v):
+                if pd.notna(votes):  # blank = the precinct is outside the district
+                    rows.append((fp, "", pname, c[0], c[1], cand, OH_PARTY.get(party.upper(), party.upper()), "WRITE" in cand, "TOTAL", votes))
+        print(f"  {f.name}: {len(body)} precincts, {len(rows) - n0} rows")
+    df = pd.DataFrame(rows, columns=COLS)
+    print("OH 2026", df["county"].nunique(), "of 88 counties;", df.groupby("office")["votes"].sum().astype(int).to_dict())
+    write("OH", 2026, df)
+
+
 ME_COUNTY = {"AND": "23001", "ARO": "23003", "CUM": "23005", "FRA": "23007", "HAN": "23009", "KEN": "23011", "KNO": "23013", "LIN": "23015", "OXF": "23017",
              "PEN": "23019", "PIS": "23021", "SAG": "23023", "SOM": "23025", "WAL": "23027", "WAS": "23029", "YOR": "23031"}
 
@@ -196,6 +367,8 @@ def main() -> None:
         return
     if (st, year) == ("ND", 2026):
         north_dakota_2026()
+    elif (st, year) == ("OH", 2026):
+        ohio_2026()
     elif year == 2026:
         results_2026(st)
     elif st == "VA":

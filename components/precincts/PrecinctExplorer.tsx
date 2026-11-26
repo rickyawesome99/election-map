@@ -7,7 +7,6 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { createPortal } from "react-dom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
 import { RATING_SCALE, OFFICES, OFFICE_LABEL, marginOf, type Office, type StateDemographics, type StateIndex, type StateLocale, type StateResults, type StateShell } from "./types";
@@ -15,9 +14,12 @@ import PrecinctDemographics from "./PrecinctDemographics";
 import PrecinctTrend, { type TrendPoint } from "./PrecinctTrend";
 import PlaceSearch, { type PlaceHit } from "./PlaceSearch";
 import NationalTrends, { type NationalTrendsData } from "./NationalTrends";
+import PrecinctTurnout, { type TurnoutPoint } from "./PrecinctTurnout";
 import { chamberDistrictHref } from "@/lib/statePageLinks";
 
-const NationalMap = dynamic(() => import("./NationalMap"), { ssr: false, loading: () => <div style={{ aspectRatio: "975 / 610" }} /> });
+const NationalMap = dynamic(() => import("./NationalMap"), { ssr: false, loading: () => <div style={{ height: "100%" }} /> });
+// One box for both maps, so switching between all states and one state never resizes the map.
+const MAP_BOX: React.CSSProperties = { height: "min(72vh, 680px)", minHeight: 400 };
 const PrecinctMap = dynamic(() => import("./PrecinctMap"), { ssr: false, loading: () => <div style={{ height: "100%" }} /> });
 
 // Column heads of the past-results grid: short enough for six offices in the sidebar.
@@ -169,13 +171,6 @@ export default function PrecinctExplorer({ states, years, tplWeights, national }
     window.history.replaceState(null, "", abbr ? `#${abbr}` : window.location.pathname);
   }, []);
 
-  // The address search sits in the page header (#precinct-search-slot), found after mount.
-  const [searchSlot, setSearchSlot] = useState<HTMLElement | null>(null);
-  useEffect(() => {
-    const id = requestAnimationFrame(() => setSearchSlot(document.getElementById("precinct-search-slot")));
-    return () => cancelAnimationFrame(id);
-  }, []);
-
   const goTo = useCallback((hit: PlaceHit) => {
     if (hit.abbr !== current) openState(hit.abbr);
     // zoom 0: the place is the whole state, so its full view is the answer.
@@ -303,6 +298,22 @@ export default function PrecinctExplorer({ states, years, tplWeights, national }
     const lo = thisYear.length > 1 ? thisYear.reduce((a, b) => (b.rShare < a.rShare ? b : a)) : null;
     return { bestR, bestD, spread: hi && lo ? { hi, lo, pts: hi.rShare - lo.rShare } : null };
   }, [shell, i, stateYears, data, onePartyData, year]);
+  // Turnout: each loaded year's biggest race (most votes cast), oldest first. Uncontested races count:
+  // their ballots were still cast. Estimated when that race's votes were divided from other lines.
+  const turnout = useMemo(() => {
+    if (!shell || i < 0) return [];
+    return [...stateYears].reverse().flatMap((y): TurnoutPoint[] => {
+      const res = data.get(`${y}|${shell.abbr}`);
+      if (!res) return [];
+      let best: TurnoutPoint | null = null;
+      for (const o of OFFICES) {
+        const row = res.offices[o]?.[i];
+        const votes = row ? row[0] + row[1] + row[2] : 0;
+        if (votes > (best?.votes ?? 0)) best = { year: y, votes, office: o, est: (res.est?.[o]?.[i] ?? 0) > EST_FLAG };
+      }
+      return best ? [best] : [];
+    });
+  }, [shell, i, stateYears, data]);
   // The trend: each loaded year's blended result for the selected precinct, oldest first.
   const trend = useMemo(() => {
     if (!shell || i < 0) return [];
@@ -315,11 +326,12 @@ export default function PrecinctExplorer({ states, years, tplWeights, national }
 
   return (
     <div>
-      {searchSlot && createPortal(<PlaceSearch states={states} onFound={goTo} />, searchSlot)}
-      {/* controls */}
-      <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
-        <label className="flex items-center gap-2 text-sm">
-          <span className="text-[11px] font-semibold uppercase tracking-wide" style={{ color: "var(--app-text-muted)" }}>State</span>
+      {/* controls: address search, state, office and year buttons */}
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+        <PlaceSearch states={states} onFound={goTo} />
+        {/* No visible "State" label: the picker reads "All states" or the state's name, and the row needs the room. */}
+        <label className="flex items-center text-sm">
+          <span className="sr-only">State</span>
           <select
             id="precinct-state"
             value={current ?? ""}
@@ -362,7 +374,7 @@ export default function PrecinctExplorer({ states, years, tplWeights, national }
         {/* map */}
         <div className="min-w-0">
           {shell ? (
-            <div className="relative" style={{ height: "min(72vh, 680px)", minHeight: 400 }}>
+            <div className="relative" style={MAP_BOX}>
               <PrecinctMap
                 key={`${shell.abbr}-${darkMode ? "dark" : "light"}`}
                 shell={shell}
@@ -389,7 +401,7 @@ export default function PrecinctExplorer({ states, years, tplWeights, national }
               </div>
             </div>
           ) : (
-            <NationalMap states={states} year={year} office={shown} darkMode={darkMode} onPick={openState} />
+            <div style={MAP_BOX}><NationalMap states={states} year={year} office={shown} darkMode={darkMode} onPick={openState} /></div>
           )}
           {/* legend, as on the Historical map */}
           <div className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 md:gap-x-4">
@@ -501,6 +513,15 @@ export default function PrecinctExplorer({ states, years, tplWeights, national }
                 <div id="precinct-trend">
                   <div className="mt-6"><SectionHead>Trend</SectionHead></div>
                   <div className="mt-2"><PrecinctTrend points={trend} year={year} onPick={setYear} /></div>
+                </div>
+              )}
+              {turnout.length > 1 && (
+                <div id="precinct-turnout">
+                  <div className="mt-6"><SectionHead>Turnout</SectionHead></div>
+                  <div className="mt-2">
+                    <PrecinctTurnout points={turnout} year={year} onPick={setYear}
+                      adults={demographics.get(shell.abbr)?.cols.vap[i] ?? null} />
+                  </div>
                 </div>
               )}
               {stats && (

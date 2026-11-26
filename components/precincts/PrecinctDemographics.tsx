@@ -1,18 +1,26 @@
 // The census profile in the precinct panel: who lives inside the precinct's 2024 lines, from 2020
-// Census block counts. Supporting figures only: a flat ledger, no charts.
+// Census block counts. A ledger with a thin proportion bar under each share; the largest race group
+// is set in bold with a dark bar. Neutral ink throughout: colour on this site means party.
 
 import type { DemographicField, StateDemographics } from "./types";
 
 const LABEL = "text-[10px] font-semibold uppercase tracking-[0.06em]";
 const SMALL = 100; // below this many people (or households) a share is noise: show the count alone
 
-function Row({ label, value, sub }: { label: string; value: string; sub?: string }) {
+function Row({ label, value, sub, pct, lead }: { label: string; value: string; sub?: string; pct?: number; lead?: boolean }) {
   return (
-    <tr style={{ borderTop: "1px solid var(--app-border)" }}>
-      <td className="py-1.5 pr-2 text-[13px]" style={{ color: "var(--app-text-primary)" }}>{label}</td>
-      <td className="py-1.5 pl-2 text-right text-[11px]" style={{ color: "var(--app-text-very-muted)", whiteSpace: "nowrap" }}>{sub}</td>
-      <td className="py-1.5 pl-2 text-right text-[13px] font-bold" style={{ color: "var(--app-text-primary)", whiteSpace: "nowrap", width: 1 }}>{value}</td>
-    </tr>
+    <div className="py-1.5" style={{ borderTop: "1px solid var(--app-border)" }}>
+      <div className="flex items-baseline gap-2">
+        <span className={`min-w-0 flex-1 text-[13px] ${lead ? "font-bold" : ""}`} style={{ color: "var(--app-text-primary)" }}>{label}</span>
+        {sub && <span className="text-[11px]" style={{ color: "var(--app-text-very-muted)", whiteSpace: "nowrap" }}>{sub}</span>}
+        <span className={`text-[13px] ${lead ? "font-extrabold" : "font-bold"}`} style={{ color: "var(--app-text-primary)", whiteSpace: "nowrap" }}>{value}</span>
+      </div>
+      {pct !== undefined && (
+        <div className="mt-1 h-[3px] w-full overflow-hidden rounded-full" style={{ background: "var(--app-border)" }}>
+          <div className="h-full rounded-full" style={{ width: `${Math.min(100, Math.max(0, pct))}%`, background: lead ? "var(--app-text-primary)" : "var(--app-text-muted)", opacity: lead ? 1 : 0.7 }} />
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -20,9 +28,7 @@ function Group({ title, children }: { title: string; children: React.ReactNode }
   return (
     <>
       <div className={`mt-4 pb-1 ${LABEL}`} style={{ color: "var(--app-text-muted)" }}>{title}</div>
-      <table className="w-full tabular-nums" style={{ borderCollapse: "collapse", borderBottom: "1px solid var(--app-border)" }}>
-        <tbody>{children}</tbody>
-      </table>
+      <div className="tabular-nums" style={{ borderBottom: "1px solid var(--app-border)" }}>{children}</div>
     </>
   );
 }
@@ -35,10 +41,10 @@ export default function PrecinctDemographics({ demo, i }: { demo: StateDemograph
   }
   const n = (x: number) => x.toLocaleString();
   // A share of `base` with its count beside it; the count alone when the base is too small for a share to mean much.
-  const share = (label: string, x: number, base: number) => {
-    if (base < SMALL) return <Row key={label} label={label} value={n(x)} />;
+  const share = (label: string, x: number, base: number, lead = false) => {
+    if (base < SMALL) return <Row key={label} label={label} value={n(x)} lead={lead} />;
     const p = (x / base) * 100;
-    return <Row key={label} label={label} value={`${p > 0 && p < 0.05 ? "<0.1" : p.toFixed(1)}%`} sub={n(x)} />;
+    return <Row key={label} label={label} value={`${p > 0 && p < 0.05 ? "<0.1" : p.toFixed(1)}%`} sub={n(x)} pct={p} lead={lead} />;
   };
 
   const races: [string, number][] = [["White", v("white")], ["Black", v("black")], ["Hispanic", v("hisp")], ["Asian", v("asian")]];
@@ -46,19 +52,26 @@ export default function PrecinctDemographics({ demo, i }: { demo: StateDemograph
   const minor: [string, number][] = [["Native American", v("aian")], ["Pacific Islander", v("nhpi")]];
   const shownMinor = minor.filter(([, x]) => x / pop >= 0.01);
   const rest = pop - races.reduce((s, [, x]) => s + x, 0) - shownMinor.reduce((s, [, x]) => s + x, 0);
+  const raceRows: [string, number][] = [...races, ...shownMinor, ["Other or multiracial", Math.max(0, rest)]];
+  const top = Math.max(...raceRows.map(([, x]) => x));
   const occ = v("occ");
   const medage = v("medage");
 
   return (
     <div>
-      <Group title="Population">
-        <Row label="Residents" value={n(pop)} />
-        {share("Voting age (18+)", v("vap"), pop)}
-      </Group>
+      <div className="mt-3 flex items-end justify-between gap-3">
+        <div>
+          <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: 26, lineHeight: 1.05, color: "var(--app-text-primary)" }}>{n(pop)}</div>
+          <div className={`mt-0.5 ${LABEL}`} style={{ color: "var(--app-text-muted)" }}>Residents</div>
+        </div>
+        <div className="text-right">
+          <div className="text-[13px] font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{n(v("vap"))}</div>
+          <div className={LABEL} style={{ color: "var(--app-text-muted)" }}>Voting age</div>
+        </div>
+      </div>
 
       <Group title="Race and ethnicity">
-        {[...races, ...shownMinor].map(([label, x]) => share(label, x, pop))}
-        {share("Other or multiracial", Math.max(0, rest), pop)}
+        {raceRows.map(([label, x]) => share(label, x, pop, x === top && x > 0))}
       </Group>
 
       <Group title="Age and sex">

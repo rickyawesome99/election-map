@@ -418,10 +418,15 @@ def load_truth() -> dict:
     if races.exists():
         omap = {"senate": "USS", "governor": "GOV", "house": "USH", "state_senate": "SLDU", "state_house": "SLDL"}
         with open(races, newline="") as f:
-            for row in csv.DictReader(f):
-                office = omap.get(row["office"])
-                if office and row.get("special") in ("0", "", None):
-                    add(2026, office, row["state"], _num(row["dem_votes"]), _num(row["rep_votes"]))
+            rows = list(csv.DictReader(f))
+        for row in rows:
+            office = omap.get(row["office"])
+            if office and row.get("special") in ("0", "", None):
+                add(2026, office, row["state"], _num(row["dem_votes"]), _num(row["rep_votes"]))
+        # A Senate special that was the state's only Senate race that year (Ohio, Florida) is its Senate contest.
+        for row in rows:
+            if row["office"] == "senate" and row.get("special") not in ("0", "", None) and row["state"] not in t[2026]["USS"]:
+                add(2026, "USS", row["state"], _num(row["dem_votes"]), _num(row["rep_votes"]))
     return t
 
 

@@ -1,6 +1,6 @@
 import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
 import coverageJson from "@/data/precincts/coverage.json";
-import { CERTIFIED_2026, CERTIFIED_2026_AS_OF, type Certification } from "@/data/precincts/certified2026";
+import { CERTIFIED_2026, CERTIFIED_2026_AS_OF, SHOWN_EARLY_2026, type Certification } from "@/data/precincts/certified2026";
 
 const fmtDate = (iso: string) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
 
@@ -232,9 +232,9 @@ export default function PrecinctTrackerPage() {
                       </span>
                     </td>
                     <td className={td} style={{ whiteSpace: "nowrap" }}>
-                      {c.cert ? (c.done ? "Shown" : "Waiting for precinct file") : "Held back until certified"}
+                      {c.cert ? (c.done ? "Shown" : "Waiting for precinct file") : SHOWN_EARLY_2026[c.st] ? "Shown before certification" : "Held back until certified"}
                     </td>
-                    <td className={td} style={{ color: "var(--app-text-muted)", minWidth: 280 }}>{c.cert?.note ?? ""}</td>
+                    <td className={td} style={{ color: "var(--app-text-muted)", minWidth: 280 }}>{c.cert?.note ?? SHOWN_EARLY_2026[c.st]?.note ?? ""}</td>
                   </tr>
                 ))}
               </tbody>

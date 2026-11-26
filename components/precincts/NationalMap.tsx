@@ -37,8 +37,9 @@ export default function NationalMap({ states, year, office, darkMode, onPick }: 
   };
 
   return (
-    <div className="relative" onMouseMove={tip.onMouseMove} onMouseLeave={() => setHover(null)}>
-      <ComposableMap width={975} height={610} projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} style={{ width: "100%", height: "auto", display: "block" }}>
+    // Fills the explorer's map box (the same box as the state map); the map scales to fit, centred.
+    <div className="relative h-full w-full" onMouseMove={tip.onMouseMove} onMouseLeave={() => setHover(null)}>
+      <ComposableMap width={975} height={610} projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} style={{ width: "100%", height: "100%", display: "block" }}>
         <Geographies geography={STATES_10M_URL}>
           {({ geographies }: { geographies: never[] }) =>
             (geographies as unknown as Geo[]).map((geo) => {

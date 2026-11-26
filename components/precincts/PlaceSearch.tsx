@@ -103,7 +103,7 @@ export default function PlaceSearch({ states, onFound }: { states: StateShell[];
         id="precinct-search"
         type="search"
         value={q}
-        placeholder={busy ? "Searching…" : "Search an address or place"}
+        placeholder={busy ? "Searching…" : "Search an address"}
         autoComplete="off"
         aria-label="Search an address or place"
         onChange={(e) => { setQ(e.target.value); setOpen(true); setError(null); }}
@@ -114,7 +114,7 @@ export default function PlaceSearch({ states, onFound }: { states: StateShell[];
           else if (e.key === "ArrowUp") { e.preventDefault(); setActive((i) => Math.max(i - 1, -1)); }
           else if (e.key === "Escape") setOpen(false);
         }}
-        className="w-60 px-2 py-1 text-sm"
+        className="w-44 px-2 py-1 text-sm"
         style={{ background: "var(--app-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
       />
       {showList && (

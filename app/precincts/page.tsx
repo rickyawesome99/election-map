@@ -6,7 +6,7 @@ import { statesData } from "@/data/statesData";
 import coverageJson from "@/data/precincts/coverage.json";
 import statesJson from "@/data/precincts/states.json";
 import nationalTrends from "@/data/precincts/nationalTrends.json";
-import { CERTIFIED_2026 } from "@/data/precincts/certified2026";
+import { CERTIFIED_2026, SHOWN_EARLY_2026, shows2026 } from "@/data/precincts/certified2026";
 
 export const metadata = {
   title: "Precinct Results",
@@ -36,7 +36,7 @@ export default function PrecinctsPage() {
       const years: StateShell["years"] = {};
       for (const [y, cells] of Object.entries(coverage.states[abbr].years)) {
         // 2026 appears state by state as each certifies; counts before that are still moving.
-        if (y === "2026" && !CERTIFIED_2026[abbr]) continue;
+        if (y === "2026" && !shows2026(abbr)) continue;
         const out: Partial<Record<Office, OfficeSummary>> = {};
         for (const o of OFFICES) {
           const c = cells[o];
@@ -53,26 +53,21 @@ export default function PrecinctsPage() {
   // Every year in the grid; the explorer shows odd years only for a state that voted in them.
   const years = coverage.years.map((year) => ({ year, loaded: states.some((s) => s.years[String(year)]) }));
   const precincts = states.reduce((n, s) => n + s.n, 0);
-  const certified2026 = states.filter((s) => s.years["2026"]);
+  const certified2026 = states.filter((s) => s.years["2026"] && CERTIFIED_2026[s.abbr]);
+  const early2026 = states.filter((s) => s.years["2026"] && !CERTIFIED_2026[s.abbr] && SHOWN_EARLY_2026[s.abbr]);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       {/* The top-level tabs' header (lib/pageLayout), at the explorer's wider column so the title lines up with the map. */}
       <div style={{ background: PAGE_HERO_BG }}>
-        <div className={`mx-auto max-w-7xl px-4 pb-4 sm:px-6 ${PAGE_HERO_TOP}`}>
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
-            <div className="min-w-0">
-              <h1 style={PAGE_TITLE_STYLE}>Precinct Results</h1>
-              <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
-                {precincts.toLocaleString()} precincts, with every election fitted onto 2024 precinct lines.
-              </p>
-            </div>
-            {/* PrecinctExplorer portals its address search in here. */}
-            <div id="precinct-search-slot" className="shrink-0" />
-          </div>
+        <div className={`mx-auto max-w-7xl px-4 pb-2 sm:px-6 ${PAGE_HERO_TOP}`}>
+          <h1 style={PAGE_TITLE_STYLE}>Precinct Results</h1>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+            {precincts.toLocaleString()} precincts, with every election fitted onto 2024 precinct lines.
+          </p>
         </div>
       </div>
-      <main className="mx-auto max-w-7xl px-4 pb-10 pt-4 sm:px-6">
+      <main className="mx-auto max-w-7xl px-4 pb-10 pt-1 sm:px-6">
         <PrecinctExplorer states={states} years={years} national={nationalTrends} tplWeights={{ presidential: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS, midterm: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS_MIDTERM }} />
         <p className="mt-6 max-w-4xl text-xs leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
           Precinct boundaries are each state&rsquo;s November 2024 lines. This map was created using data from the Redistricting
@@ -81,6 +76,9 @@ export default function PrecinctsPage() {
           those votes are allocated to precincts by the source and are estimates at precinct level. 2026 results are added
           state by state once a state certifies its count and publishes it by precinct: so far{" "}
           {certified2026.length ? certified2026.map((s) => s.name).join(", ") : "none"}.
+          {early2026.length
+            ? ` Shown before certification, from county canvass results and only for the counties loaded so far: ${early2026.map((s) => s.name).join(", ")}.`
+            : ""}
         </p>
       </main>
     </div>
