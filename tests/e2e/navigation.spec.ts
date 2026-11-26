@@ -67,7 +67,8 @@ test("top-level tabs keep the URL and visible page in sync", async ({ page }) =>
   await expect(page).toHaveURL(/\/model$/);
   await expect(page.getByRole("heading", { name: "True Partisan Lean", level: 1 })).toBeVisible();
 
-  await page.getByRole("link", { name: "Forecast", exact: true }).click();
+  // The forecast is an Analysis entry since 2026-11-25, no longer a tab.
+  await page.goto("/forecast");
   await expect(page).toHaveURL(/\/forecast(\?chamber=senate)?$/);
   await expectChamber(page, "Senate");
 });
@@ -83,7 +84,8 @@ test("forecast tab returns to the last selected chamber after visiting analysis"
   await page.getByRole("link", { name: "Analysis" }).click();
   await expect(page).toHaveURL(/\/analysis$/);
 
-  await page.getByRole("link", { name: "Forecast", exact: true }).click();
+  // The forecast is an Analysis entry since 2026-11-25, no longer a tab.
+  await page.goto("/forecast");
   await expect(page).toHaveURL(/\/forecast(\?chamber=governor)?$/);
   await expectChamber(page, "Governor");
 });

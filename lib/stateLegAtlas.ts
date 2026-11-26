@@ -136,6 +136,8 @@ export type AtlasChamberResults2026 = {
   raw: { dem: number; rep: number; oth: number; votes: number; margin: number | null };
   /** The corrected chamber margin (lib/stateLegChamberMargin.ts): one-party seats imputed from president. */
   adjusted: number | null;
+  /** The votes behind `adjusted` (contested plus imputed), for pooling chambers. */
+  adjustedVotes?: number;
   imputed: number;
   /** When the counts were fetched. */
   asOf: string;

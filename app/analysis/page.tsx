@@ -59,6 +59,8 @@ export default function AnalysisPage() {
     {
       title: "Forecasting & Polling",
       entries: [
+        { href: "/forecast", kicker: "Forecasts", title: `${electionYear} Forecast`, graphic: "forecast",
+          description: <>The final {electionYear} forecast, locked before the election: the projected margin, win probability and rating of all <Fig>{f.forecasts.races}</Fig> House, Senate and governor races on one map, with the national outlook behind them.</> },
         { href: "/analysis/model-review", kicker: "Forecasts", title: "2026 Model Review", graphic: "modelReview",
           description: <>How the final {electionYear} forecast did against the results: <Fig>{review.right}</Fig> of <Fig>{review.n}</Fig> contested races called, every race graded, where the missing <Fig><span style={{ color: "var(--party-dem)" }}>{review.miss}</span></Fig> points went, and what would change next time.</> },
         { href: "/analysis/forecasts", kicker: "Forecasts", title: "Forecast Comparison", graphic: "forecasts",

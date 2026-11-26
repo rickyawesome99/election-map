@@ -666,3 +666,9 @@ html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
   .rc-glyph path { animation: none; }
 }
 
+
+/* The chamber pages' seat bar (components/ChamberScoreboard.tsx): opens outward from the halfway
+   mark on load, and its figures rise in after it. */
+@keyframes seatbar-open { from { clip-path: inset(0 50% 0 50%); } to { clip-path: inset(0 0 0 0); } }
+.seatbar-open { animation: seatbar-open 900ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+@media (prefers-reduced-motion: reduce) { .seatbar-open { animation: none; } }

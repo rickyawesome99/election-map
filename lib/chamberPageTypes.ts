@@ -3,6 +3,8 @@ import type { RaceType } from "@/data/forecastData";
 
 export type SeatParty = "D" | "R" | "I";
 
+export type ChamberSeatSide = { name: string; party: SeatParty; votes: number; incumbent: boolean; placeholder: boolean };
+
 export type ChamberSeat = {
   key: string;
   /** "OH-13" for a House seat; the state's name for a Senate seat or a governorship. */
@@ -13,10 +15,15 @@ export type ChamberSeat = {
   geoid: string | null;
   href: string;
   special: boolean;
+  /** Senate: the seat's class (1, 2 or 3); null for the other chambers. */
+  seatClass: number | null;
   /** On the 2026 ballot. */
   up: boolean;
   /** A seat not up: the year it is next on the ballot. */
   nextElection: number | null;
+  /** A seat on the ballot: the race's two candidates and their votes (each party's bloc where it ran
+   *  several), for the map's hover card. `placeholder` marks a side with nobody on the ballot. */
+  race: { dem: ChamberSeatSide; rep: ChamberSeatSide; total: number } | null;
   /** Who held the seat going into the election. */
   before: { name: string; party: SeatParty };
   /** The final forecast: R-positive margin, its rating and the party favored. Null for a seat not up. */
@@ -39,6 +46,14 @@ export type ChamberSeat = {
 
 export type SeatSplit = { dem: number; rep: number; oth: number };
 
+/** A national vote margin, R-positive points of all votes cast. */
+export type ChamberPopularVote = {
+  /** Every candidate's votes under their own party label, summed over the races on the ballot. */
+  raw: { margin: number; votes: number; races: number; prev: number | null };
+  /** The same vote made comparable seat to seat; null when no race needed adjusting. */
+  adjusted: { margin: number; prev: number | null; note: string } | null;
+};
+
 export type ChamberPageData = {
   office: RaceType;
   title: string;
@@ -53,6 +68,7 @@ export type ChamberPageData = {
   projected: SeatSplit;
   after: SeatSplit;
   flips: { toD: number; toR: number };
+  popularVote: ChamberPopularVote | null;
 };
 
 export type ChamberView = "results" | "projected" | "now";

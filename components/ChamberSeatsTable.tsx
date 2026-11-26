@@ -5,11 +5,10 @@ import { useMemo, useState } from "react";
 import Segmented from "@/components/MarketSegmented";
 import type { RaceType } from "@/data/forecastData";
 import { fmtSeatMargin } from "@/lib/chamberPageFormat";
-import { fmtMargin, marginColor } from "@/lib/colorScale";
 import type { ChamberSeat, SeatParty } from "@/lib/chamberPageTypes";
 
 // The seats table on /house, /senate and /governor: one row per seat with who held it, who won it,
-// by how much, and what the final forecast said. The page builds the rows on the server
+// the outcome and by how much. The page builds the rows on the server
 // (lib/chamberPage.ts); the table sorts, filters and draws them.
 
 type Sort = "close" | "flips" | "alpha";
@@ -26,7 +25,8 @@ function closeness(s: ChamberSeat): number {
 
 function Person({ name, party }: { name: string | null; party: SeatParty | null }) {
   if (!name) return <span style={{ color: "var(--app-text-muted)" }}>—</span>;
-  return <>{name} {party && <span className="font-semibold" style={{ color: PARTY_VAR[party] }}>({party})</span>}</>;
+  // The whole name in the party's color, its letter after it for anyone who can't tell the two apart.
+  return <span className="font-semibold" style={party ? { color: PARTY_VAR[party] } : undefined}>{name}{party && <> ({party})</>}</span>;
 }
 
 /** Flips are a solid pill; holds are party-colored text. */
@@ -43,16 +43,6 @@ function MarginCell({ s }: { s: ChamberSeat }) {
   return (
     <span className="whitespace-nowrap font-semibold tabular-nums" style={{ color: s.result.unopposed ? "var(--app-text-muted)" : s.result.party ? PARTY_VAR[s.result.party] : undefined }} title={s.result.sameParty ? "Both finalists are of the same party" : undefined}>
       {fmtSeatMargin(s)}
-    </span>
-  );
-}
-
-function ForecastCell({ s }: { s: ChamberSeat }) {
-  if (!s.projected) return <span style={{ color: "var(--app-text-muted)" }}>—</span>;
-  return (
-    <span className="whitespace-nowrap tabular-nums" title="The final forecast's projected margin and rating">
-      <span className="font-semibold" style={{ color: marginColor(s.projected.margin) }}>{fmtMargin(s.projected.margin)}</span>{" "}
-      <span style={{ color: "var(--app-text-very-muted)" }}>{s.projected.rating}</span>
     </span>
   );
 }
@@ -75,7 +65,6 @@ export default function ChamberSeatsTable({ office, seats, year }: { office: Rac
   }, [seats, sort, query]);
 
   const heading = office === "governor" ? "Governorships" : "Seats";
-  const winnerHead = `${year} winner`;
 
   return (
     <>
@@ -101,12 +90,12 @@ export default function ChamberSeatsTable({ office, seats, year }: { office: Rac
 
       {shown.length > 0 && (
         // One table at every width (435 rows on /house: a second phone layout would double the page).
-        // Phones drop the Held by and Final forecast columns.
+        // Phones drop the Incumbent column.
         <div className="overflow-x-auto">
           <table className="w-full text-xs sm:text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
             <thead>
               <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                {([[office === "house" ? "District" : "State", "text-left"], ["Held by", "hidden text-left sm:table-cell"], [winnerHead, "text-left"], ["Margin", "text-right"], ["Outcome", "text-left"], ["Final forecast", "hidden text-right sm:table-cell"]] as const).map(([h, cls]) => (
+                {([[office === "house" ? "District" : "State", "text-left"], ...(office === "senate" ? [["Class", "text-left"] as const] : []), ["Incumbent", "hidden text-left sm:table-cell"], ["Winner", "text-left"], ["Outcome", "text-left"], ["Margin", "text-right"]] as const).map(([h, cls]) => (
                   <th key={h} className={`whitespace-nowrap py-1.5 pr-3 text-[10px] font-semibold uppercase tracking-wider first:pl-2 last:pr-2 ${cls}`} style={{ color: "var(--app-text-muted)" }}>{h}</th>
                 ))}
               </tr>
@@ -116,11 +105,11 @@ export default function ChamberSeatsTable({ office, seats, year }: { office: Rac
                 // Off-screen rows skip layout and paint until scrolled near.
                 <tr key={s.key} className="vh-tr" style={{ borderBottom: "1px solid var(--app-border)", contentVisibility: "auto", containIntrinsicSize: "auto 37px", animation: "none" }}>
                   <td className="py-2 pl-2 pr-3 sm:whitespace-nowrap"><Link href={s.href} prefetch={false} className="font-semibold hover:underline">{seatName(s)}</Link></td>
+                  {office === "senate" && <td className="py-2 pr-3" style={{ color: "var(--app-text-muted)" }} title={s.seatClass ? `Class ${s.seatClass}` : undefined}>{s.seatClass ?? "—"}</td>}
                   <td className="hidden py-2 pr-3 sm:table-cell"><Person name={s.before.name} party={s.before.party} /></td>
                   <td className="py-2 pr-3">{s.up ? <Person name={s.result?.name ?? null} party={s.result?.party ?? null} /> : <Person name={s.before.name} party={s.before.party} />}</td>
-                  <td className="py-2 pr-3 text-right"><MarginCell s={s} /></td>
                   <td className="py-2 pr-3"><OutcomeCell s={s} year={year} /></td>
-                  <td className="hidden py-2 pr-2 text-right sm:table-cell"><ForecastCell s={s} /></td>
+                  <td className="py-2 pr-2 text-right"><MarginCell s={s} /></td>
                 </tr>
               ))}
             </tbody>

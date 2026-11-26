@@ -327,6 +327,7 @@ export function chamberResults2026(abbr: string, chamber: Chamber): AtlasChamber
     flips,
     raw: { dem, rep, oth: Math.max(0, votes - dem - rep), votes, margin: votes > 0 ? ((rep - dem) / votes) * 100 : null },
     adjusted,
+    adjustedVotes: w,
     imputed: detail?.imputed.districts ?? 0,
     asOf: load().asOf,
   };

@@ -3,7 +3,7 @@
 // (aria-hidden): the row's title and description carry the meaning. No data, no script.
 import type { ReactNode } from "react";
 
-export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "historical" | "modelReview" | "results";
+export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "historical" | "modelReview" | "results" | "forecast";
 
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
@@ -201,6 +201,20 @@ function Historical() {
   );
 }
 
+/** Races in rating order, Safe D to Safe R: a tile each on the rating scale, the toss-up line through the middle. */
+function Forecast() {
+  // The rating colours of lib/colorScale.ts getRaceColor.
+  const scale = ["#1b408c", "#587ccc", "#8bafff", "#959bb3", "#cf8980", "#ff8b98", "#ff5864", "#be1c29"];
+  const rows = ["000001112233456677", "000011122334556777", "000001122345566777"];
+  return (
+    <Frame>
+      {rows.map((row, r) => row.split("").map((c, i) => (
+        <rect key={`${r}-${i}`} x={18 + i * 18} y={14 + r * 21} width="14" height="14" rx="2" fill={scale[Number(c)]} />
+      )))}
+    </Frame>
+  );
+}
+
 /** Three chambers' seats after the count: a D | R bar each, the halfway mark through all three. */
 function Results() {
   const rows: [number, number][] = [[14, 0.6], [36, 0.56], [58, 0.54]];
@@ -235,7 +249,7 @@ function ModelReview() {
 
 const GRAPHICS: Record<HubGraphicId, () => ReactNode> = {
   forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote, genericBallot: GenericBallot,
-  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, historical: Historical, modelReview: ModelReview, results: Results,
+  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, historical: Historical, modelReview: ModelReview, results: Results, forecast: Forecast,
 };
 
 export default function HubGraphic({ id }: { id: HubGraphicId }) {

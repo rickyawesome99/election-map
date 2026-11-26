@@ -15,7 +15,6 @@ const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = 
   { key: "chambers",         label: "Chambers" }, // a button that opens House / Senate / Governor / Legislatures (ChambersMenu)
   { key: "model",            label: "TPL", prefetch: false },
   { key: "war",              label: "WAR", prefetch: false },
-  { key: "forecast",         label: "Forecast", prefetch: false },
   { key: "precincts",        label: "Precincts" },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
   { key: "district-finder",  label: "District Finder" },
@@ -25,7 +24,8 @@ function getActiveTab(pathname: string): string | null {
   // The four chamber pages, the race and seat pages under /house, /senate and /governor, and every
   // state's legislative chamber pages (/states/ks/legislature/house).
   if (chamberLinkFor(pathname)) return "chambers";
-  if (pathname === "/forecast") return "forecast";
+  // The 2026 forecast is an Analysis entry and keeps its /forecast URL (user, 2026-11-25).
+  if (pathname === "/forecast") return "analysis";
   // Historical Results is an Analysis entry and keeps its /historical URL.
   if (pathname === "/historical") return "analysis";
   // A state's page and its county pages (/states/oh/counties/39049).
