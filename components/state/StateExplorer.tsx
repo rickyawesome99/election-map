@@ -137,14 +137,14 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
 
   const senateRaces = data.senate.filter((s): s is BallotRace => s.kind === "race");
   // The Senate heading's count, as the House heading's: a seat on the ballot goes to its projected
-  // winner (margin <= 0 is D), a seat not up to the party holding it.
-  const senateCount = (["D", "R", "I"] as const)
-    .map((party) => ({
-      party,
-      n: data.senate.filter((x) => (x.kind === "race" ? (x.margin <= 0 ? "D" : "R") : x.party) === party).length,
-      color: party === "D" ? "var(--party-dem)" : party === "R" ? "var(--party-rep)" : "var(--party-ind)",
-    }))
-    .filter((c) => c.n > 0 || c.party !== "I");
+  // winner (margin <= 0 is D), a seat not up to the party holding it. Seat counts put the
+  // independents (King, Sanders) with the Democrats they caucus with; their own rows still say I.
+  const senateSide = (x: (typeof data.senate)[number]) => (x.kind === "race" ? (x.margin <= 0 ? "D" : "R") : x.party === "R" ? "R" : "D");
+  const senateCount = (["D", "R"] as const).map((party) => ({
+    party,
+    n: data.senate.filter((x) => senateSide(x) === party).length,
+    color: party === "D" ? "var(--party-dem)" : "var(--party-rep)",
+  }));
   const officeTabs: { key: ResultsOffice; label: string; right?: string }[] = [
     { key: "statewide", label: "Statewide" },
     ...(results.federal.length ? [{ key: "federal" as const, label: "U.S. House", right: houseRaces.length ? `${houseRaces.length} seats` : undefined }] : []),

@@ -358,6 +358,16 @@ function toBallotRace(race: ForecastedRace, label: string, href: string): Ballot
   };
 }
 
+/**
+ * A sitting senator's own party. The holdover data files Angus King and Bernie Sanders under "D", the
+ * party they caucus with, which is what the chamber's seat counts want; one person shown on their own
+ * is an independent, as their own results list them ("I" in the slot they ran in).
+ */
+function ownParty(entry: { incumbent: string; party: "D" | "R" | "I" | string; pastResults?: PastResult[] }): "D" | "R" | "I" {
+  const ranAsI = (entry.pastResults ?? []).some((r) => (r.demCandidate === entry.incumbent && r.demParty === "I") || (r.repCandidate === entry.incumbent && r.repParty === "I"));
+  return ranAsI ? "I" : (entry.party as "D" | "R" | "I");
+}
+
 export function buildStatePage(state: StateInfo): StatePageData {
   const abbr = state.abbr;
   const stateFips = ABBR_TO_FIPS[abbr] ?? "";
@@ -383,9 +393,9 @@ export function buildStatePage(state: StateInfo): StatePageData {
       : null;
   const senate: StatePageData["senate"] = [];
   if (projectedSenate1) senate.push(toBallotRace(projectedSenate1, "Senate (Seat 1)", `/senate/${projectedSenate1.id.toLowerCase()}`));
-  else if (senateSeat1NoEl) senate.push({ kind: "holdover", label: "Senate (Seat 1)", href: `/senate/${senateSeat1NoEl.abbr.toLowerCase()}`, name: senateSeat1NoEl.incumbent, party: senateSeat1NoEl.party as "D" | "R" | "I", nextElection: senateSeat1NoEl.nextElection, photo: candidatePhoto(senateSeat1NoEl.incumbent, abbr) });
+  else if (senateSeat1NoEl) senate.push({ kind: "holdover", label: "Senate (Seat 1)", href: `/senate/${senateSeat1NoEl.abbr.toLowerCase()}`, name: senateSeat1NoEl.incumbent, party: ownParty(senateSeat1NoEl), nextElection: senateSeat1NoEl.nextElection, photo: candidatePhoto(senateSeat1NoEl.incumbent, abbr) });
   if (projectedSenate2) senate.push(toBallotRace(projectedSenate2, "Senate (Seat 2)", `/senate/${projectedSenate2.id.toLowerCase().replace(/-2$/, "2")}`));
-  else if (senateSeat2Holdover) senate.push({ kind: "holdover", label: "Senate (Seat 2)", href: `/senate/${senateSeat2Holdover.abbr.toLowerCase()}2`, name: senateSeat2Holdover.incumbent, party: senateSeat2Holdover.party as "D" | "R" | "I", nextElection: senateSeat2Holdover.nextElection, photo: candidatePhoto(senateSeat2Holdover.incumbent, abbr) });
+  else if (senateSeat2Holdover) senate.push({ kind: "holdover", label: "Senate (Seat 2)", href: `/senate/${senateSeat2Holdover.abbr.toLowerCase()}2`, name: senateSeat2Holdover.incumbent, party: ownParty(senateSeat2Holdover), nextElection: senateSeat2Holdover.nextElection, photo: candidatePhoto(senateSeat2Holdover.incumbent, abbr) });
 
   const houseRows: HouseRow[] = houseRaces.map((race) => {
     const distNum = race.name.split("-")[1];
