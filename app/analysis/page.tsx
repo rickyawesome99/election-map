@@ -12,42 +12,30 @@ export const metadata = {
   description: `${electionYear} U.S. election analysis`,
 };
 
-type Entry = { href: string; kicker: string; title: string; description: ReactNode; graphic?: HubGraphicId };
+type Entry = { href: string; title: string; description: ReactNode; graphic?: HubGraphicId };
 
-// The row's category pill, the same look as the page header's CategoryPill but inert: the whole
-// row is already the link.
-function Pill({ label }: { label: string }) {
-  return (
-    <span className="inline-flex self-start items-center rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}>
-      {label}
-    </span>
-  );
-}
-
+// One compact row: title and a one-line description on the left, the page's small graphic on the
+// right (sm and up). The whole row is the link; hover/press behavior comes from .hub-row.
 function Row({ e }: { e: Entry }) {
   return (
-    <Link href={e.href} prefetch={false} className={`hub-row grid grid-cols-1 gap-3 py-5 sm:py-6 ${e.graphic ? "md:grid-cols-[minmax(0,1fr)_minmax(14rem,19rem)] md:gap-8 md:items-center" : ""}`} style={{ borderBottom: "1px solid var(--app-border)" }}>
-      <div className="flex min-w-0 flex-col gap-1.5 sm:gap-2">
-        <Pill label={e.kicker} />
-        <h3 className="hub-title text-[21px] font-bold leading-[1.12] sm:text-[25px]" style={{ fontFamily: "var(--font-serif)", letterSpacing: "-0.015em" }}>{e.title}</h3>
-        <p className="max-w-[60ch] text-[14px] leading-[1.5] sm:text-[15px]" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-muted)" }}>{e.description}</p>
+    <Link href={e.href} prefetch={false} className={`hub-row grid grid-cols-1 gap-1 py-3.5 sm:items-center sm:gap-6 ${e.graphic ? "sm:grid-cols-[minmax(0,1fr)_11rem]" : "sm:grid-cols-[minmax(0,1fr)_auto]"}`} style={{ borderBottom: "1px solid var(--app-border)" }}>
+      <div className="min-w-0">
+        <h3 className="hub-title text-[17px] font-bold leading-snug sm:text-[18px]" style={{ fontFamily: "var(--font-serif)", letterSpacing: "-0.01em" }}>{e.title}</h3>
+        <p className="mt-0.5 max-w-[68ch] text-[13px] leading-snug sm:text-[13.5px]" style={{ color: "var(--app-text-muted)" }}>{e.description}</p>
       </div>
-      {e.graphic && <HubGraphic id={e.graphic} />}
+      {e.graphic
+        ? <div className="hidden sm:block"><HubGraphic id={e.graphic} /></div>
+        : <span className="hidden text-[13px] font-bold whitespace-nowrap sm:block" style={{ color: "var(--party-dem)" }}>Open →</span>}
     </Link>
   );
 }
 
-// The Internal section keeps the plain list: these pages are working tools, not reports.
-function PlainRow({ e }: { e: Entry }) {
+// Jump pills above the sections; each scrolls to its section.
+function SectionPill({ id, label }: { id: string; label: string }) {
   return (
-    <Link href={e.href} prefetch={false} className="group grid grid-cols-1 gap-1 py-3.5 sm:grid-cols-[6.5rem_minmax(0,1fr)_auto] sm:gap-4 sm:items-baseline" style={{ borderBottom: "1px solid var(--app-border)" }}>
-      <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{e.kicker}</div>
-      <div>
-        <h3 className="text-[17px] font-bold leading-snug group-hover:underline" style={{ fontFamily: "var(--font-serif)" }}>{e.title}</h3>
-        <p className="mt-0.5 text-[13px] leading-snug" style={{ color: "var(--app-text-muted)" }}>{e.description}</p>
-      </div>
-      <span className="hidden text-[13px] font-bold whitespace-nowrap sm:block" style={{ color: "var(--party-dem)" }}>Open →</span>
-    </Link>
+    <a href={`#${id}`} className="hub-pill inline-flex items-center rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-wider" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}>
+      {label}
+    </a>
   );
 }
 
@@ -55,59 +43,68 @@ export default function AnalysisPage() {
   const f = analysisHubFigures();
   const mr = modelReview2026();
   const review = { right: mr.all.right, n: mr.all.n, miss: Math.round(-mr.races.reduce((a, r) => a + r.err, 0) / mr.races.length) };
-  const sections: { title: string; plain?: boolean; entries: Entry[] }[] = [
+  const sections: { id: string; title: string; entries: Entry[] }[] = [
     {
-      title: "Forecasting & Polling",
+      id: "2026", title: "2026",
       entries: [
-        { href: "/forecast", kicker: "Forecasts", title: `${electionYear} Forecast`, graphic: "forecast",
-          description: <>The final {electionYear} forecast, locked before the election: the projected margin, win probability and rating of all <Fig>{f.forecasts.races}</Fig> House, Senate and governor races on one map, with the national outlook behind them.</> },
-        { href: "/analysis/model-review", kicker: "Forecasts", title: "2026 Model Review", graphic: "modelReview",
-          description: <>How the final {electionYear} forecast did against the results: <Fig>{review.right}</Fig> of <Fig>{review.n}</Fig> contested races called, every race graded, where the missing <Fig><span style={{ color: "var(--party-dem)" }}>{review.miss}</span></Fig> points went, and what would change next time.</> },
-        { href: "/analysis/forecasts", kicker: "Forecasts", title: "Forecast Comparison", graphic: "forecasts",
-          description: <>Every published forecast lined up against ours on all <Fig>{f.forecasts.races}</Fig> House, Senate and governor races: <Fig>{f.forecasts.models}</Fig> statistical models and <Fig>{f.forecasts.raters}</Fig> race raters, chamber toplines, and every race with every call.</> },
-        { href: "/analysis/markets", kicker: "Markets", title: "Prediction Markets", graphic: "markets",
-          description: <>Polymarket&rsquo;s price on all <Fig>{f.markets.races}</Fig> races this year, then every election-eve market since 2018: the favorite won <Fig>{f.markets.favoriteWon}</Fig> of the time, and a market backed the loser in <Fig>{f.markets.missed}</Fig> races.</> },
-        { href: "/analysis/pollsters", kicker: "Polling", title: "Pollster Ratings", graphic: "pollsters",
-          description: <><Fig>{f.pollsters.graded}</Fig> pollsters graded on <Fig>{f.pollsters.polls}</Fig> final-stretch polls since {f.pollsters.firstYear}, each scored against the result, and which way each of the <Fig>{f.pollsters.active}</Fig> active this cycle leans.</> },
-        { href: "/analysis/polling-misses", kicker: "Polling", title: "Polling Misses by State", graphic: "misses",
-          description: <><Fig>{f.misses.polls}</Fig> final polls of <Fig>{f.misses.races}</Fig> presidential, Senate and governor races in {f.misses.states} states since {f.misses.firstYear}. On average {f.misses.party} beat their polls by <Fig><span style={{ color: f.misses.missColor }}>{f.misses.miss}</span></Fig> points.</> },
-        { href: "/analysis/generic-ballot", kicker: "National", title: "Generic Ballot vs Popular Vote", graphic: "genericBallot",
-          description: <>What the generic ballot measures and three ways of counting the House vote it is compared with. In all <Fig>{f.genericBallot.years}</Fig> elections since 2016 the contested House vote landed <Fig>{f.genericBallot.miss}</Fig> points more Republican than the final poll average; today&rsquo;s <Fig><span style={{ color: f.genericBallot.gbColor }}>{f.genericBallot.gb}</span></Fig> becomes a forecast House vote of <Fig><span style={{ color: f.genericBallot.sumColor }}>{f.genericBallot.sum}</span></Fig>, state by state.</> },
-        { href: "/analysis/popular-vote", kicker: "National", title: "Popular Vote", graphic: "popularVote",
-          description: <>National margins since 2016, and whether approval, direction of country and party ID saw them coming.{f.popularVote && <> Read forward, they point to a House vote of <Fig><span style={{ color: f.popularVote.lowColor }}>{f.popularVote.low}</span></Fig> to <Fig><span style={{ color: f.popularVote.highColor }}>{f.popularVote.high}</span></Fig>.</>}</> },
+        { href: "/forecast", title: `${electionYear} Forecast`, graphic: "forecast",
+          description: <>The final forecast, locked before the election: margin, odds and rating for all <Fig>{f.forecasts.races}</Fig> House, Senate and governor races.</> },
+        { href: "/results", title: `${electionYear} Results`, graphic: "results",
+          description: <>County swings, certification, each party&rsquo;s raw vote, the adjusted House popular vote and the closest races.</> },
+        { href: "/analysis/model-review", title: "2026 Model Review", graphic: "modelReview",
+          description: <>How the forecast did: <Fig>{review.right}</Fig> of <Fig>{review.n}</Fig> contested races called, and where the missing <Fig><span style={{ color: "var(--party-dem)" }}>{review.miss}</span></Fig> points went.</> },
+        { href: "/analysis/forecasts", title: "Forecast Comparison", graphic: "forecasts",
+          description: <>Our calls against <Fig>{f.forecasts.models}</Fig> statistical models and <Fig>{f.forecasts.raters}</Fig> race raters, race by race.</> },
+        { href: "/analysis/markets", title: "Prediction Markets", graphic: "markets",
+          description: <>Polymarket on all <Fig>{f.markets.races}</Fig> races, and every election-eve market since 2018: the favorite won <Fig>{f.markets.favoriteWon}</Fig> of the time.</> },
       ],
     },
     {
-      title: "Voters & Turnout",
+      id: "polling", title: "Polling",
       entries: [
-        { href: "/analysis/turnout", kicker: "Turnout", title: "Turnout", graphic: "turnout",
-          description: <>Who votes, where, and in which races since 2016: <Fig>{f.turnout.presRate}</Fig> of eligible citizens in {f.turnout.presYear}, <Fig>{f.turnout.midRate}</Fig> in the {f.turnout.midYear} midterm, and a county-by-county estimate of about <Fig>{f.turnout.votes}</Fig> House votes for every {electionYear} race.</> },
-        { href: "/analysis/districts/oh-hd-31", kicker: "Precinct Analysis", title: "OH-31 Precinct Analysis", graphic: "precincts",
-          description: <>Ohio House District 31 precinct by precinct: results and swings since 2016 on today&rsquo;s lines, demographics, targeting metrics, and the {electionYear} outlook.</> },
+        { href: "/analysis/pollsters", title: "Pollster Ratings", graphic: "pollsters",
+          description: <><Fig>{f.pollsters.graded}</Fig> pollsters graded on <Fig>{f.pollsters.polls}</Fig> final-stretch polls since {f.pollsters.firstYear}, and which way each leans.</> },
+        { href: "/analysis/polling-misses", title: "Polling Misses by State", graphic: "misses",
+          description: <><Fig>{f.misses.polls}</Fig> final polls since {f.misses.firstYear}: on average {f.misses.party} beat their polls by <Fig><span style={{ color: f.misses.missColor }}>{f.misses.miss}</span></Fig> points.</> },
       ],
     },
     {
-      title: "Reference",
+      id: "voters", title: "Voters & Turnout",
       entries: [
-        { href: "/results", kicker: "Results", title: `${electionYear} Results`, graphic: "results",
-          description: <>The {electionYear} election in detail: county swings from the 2024 presidential vote, which states have certified, each party&rsquo;s raw vote against 2024, the biggest shifts, the adjusted House popular vote, and the closest races.</> },
-        { href: "/historical", kicker: "Results", title: "Historical Results", graphic: "historical",
-          description: <>Past results by state, county and congressional district from 2008, and state legislative results for every chamber from 2016, each county with its own page.</> },
-        { href: "/analysis/delegation", kicker: "Seats", title: "Current Seat Delegation", graphic: "delegation",
-          description: <>Which party holds each state&rsquo;s governorship, Senate seats, House seats and legislative chambers today, on a map or cartogram.</> },
-        { href: "/analysis/calendar", kicker: "Calendar", title: "Election Calendar", graphic: "calendar",
-          description: <>Which offices were on the ballot in each state and year from {f.calendar.firstYear} to {f.calendar.lastYear}: <Fig>{f.calendar.races}</Fig> races with every result, <Fig>{f.calendar.redraws}</Fig> redistrictings, and the <Fig>{f.calendar.seats}</Fig> seats up in {electionYear}.</> },
+        { href: "/analysis/generic-ballot", title: "Generic Ballot vs Popular Vote", graphic: "genericBallot",
+          description: <>Since 2016 the contested House vote landed <Fig>{f.genericBallot.miss}</Fig> points more Republican than the final generic-ballot average.</> },
+        { href: "/analysis/popular-vote", title: "Popular Vote", graphic: "popularVote",
+          description: <>National margins since 2016, and whether approval, direction of country and party ID saw them coming.</> },
+        { href: "/analysis/turnout", title: "Turnout", graphic: "turnout",
+          description: <><Fig>{f.turnout.presRate}</Fig> of eligible citizens voted in {f.turnout.presYear}, <Fig>{f.turnout.midRate}</Fig> in {f.turnout.midYear}; who votes, where, and in which races.</> },
       ],
     },
     {
-      title: "Internal",
-      plain: true,
+      id: "precincts", title: "Precinct Analysis",
       entries: [
-        { href: "/analysis/internal-methodology", kicker: "Models", title: "Internal Methodology", description: "The working specification of every model: each constant, formula and fitted value read live from the code, the backtests behind them, and the full change log." },
-        { href: "/analysis/state-leg-models", kicker: "Models", title: "State Legislature Model Comparison", description: "Our state legislative forecast against State Navigate’s and ElectIndex’s: toplines, agreement, every chamber’s control odds and every district’s three calls." },
-        { href: "/audit/precincts", kicker: "Audit", title: "Precinct Data Tracker", description: "Every state, year and office in the precinct project: what is loaded, what reconciles with the site\u2019s county and district totals, and what is still missing." },
-        { href: "/audit/state-leg-results", kicker: "Audit", title: "State Leg Results Audit", description: "Coverage and provenance of the 2016–2025 statewide chamber-year figures, plus the district-sum-vs-statewide reconciliation." },
-        { href: "/audit/state-leg-pres2024", kicker: "Audit", title: "State Leg 2024 President Audit", description: "Temporary sanity check comparing aggregated state legislative district votes to official state totals." },
+        { href: "/analysis/districts/oh-hd-31", title: "OH-31 Precinct Analysis", graphic: "precincts",
+          description: <>Ohio House District 31 precinct by precinct: results and swings since 2016, demographics and targeting.</> },
+      ],
+    },
+    {
+      id: "reference", title: "Reference",
+      entries: [
+        { href: "/historical", title: "Historical Results", graphic: "historical",
+          description: <>Results by state, county and district from 2008, and every state legislative chamber from 2016.</> },
+        { href: "/analysis/delegation", title: "Current Seat Delegation", graphic: "delegation",
+          description: <>Which party holds each state&rsquo;s governorship, Senate and House seats and legislative chambers today.</> },
+        { href: "/analysis/calendar", title: "Election Calendar", graphic: "calendar",
+          description: <>Every office on the ballot by state and year, {f.calendar.firstYear}–{f.calendar.lastYear}: <Fig>{f.calendar.races}</Fig> races and <Fig>{f.calendar.redraws}</Fig> redistrictings.</> },
+      ],
+    },
+    {
+      id: "internal", title: "Internal",
+      entries: [
+        { href: "/analysis/internal-methodology", title: "Internal Methodology", description: "Every model constant, formula and fitted value read live from the code, with backtests and the change log." },
+        { href: "/analysis/state-leg-models", title: "State Legislature Model Comparison", description: "Our state legislative forecast against State Navigate’s and ElectIndex’s, chamber by chamber and district by district." },
+        { href: "/audit/precincts", title: "Precinct Data Tracker", description: "Every state, year and office in the precinct project: loaded, reconciled, or still missing." },
+        { href: "/audit/state-leg-results", title: "State Leg Results Audit", description: "Coverage and provenance of the 2016–2025 chamber-year figures, with the district-sum reconciliation." },
+        { href: "/audit/state-leg-pres2024", title: "State Leg 2024 President Audit", description: "Aggregated state legislative district votes compared with official state totals." },
       ],
     },
   ];
@@ -122,10 +119,13 @@ export default function AnalysisPage() {
         </section>
 
         <div className={`${PAGE_CONTAINER} pb-14 pt-2`}>
+          <nav aria-label="Analysis sections" className="flex flex-wrap gap-2 pb-6">
+            {sections.map((section) => <SectionPill key={section.id} id={section.id} label={section.title} />)}
+          </nav>
           {sections.map((section) => (
-            <section key={section.title} className="pt-8 first:pt-0 sm:pt-10">
-              <h2 className="pb-3 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>{section.title}</h2>
-              {section.entries.map((e) => section.plain ? <PlainRow key={e.href} e={e} /> : <Row key={e.href} e={e} />)}
+            <section key={section.id} id={section.id} className="scroll-mt-28 sm:scroll-mt-20 pt-7 first-of-type:pt-0 sm:pt-9">
+              <h2 className="pb-2.5 text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)", borderBottom: "2px solid var(--app-text-primary)" }}>{section.title}</h2>
+              {section.entries.map((e) => <Row key={e.href} e={e} />)}
             </section>
           ))}
         </div>

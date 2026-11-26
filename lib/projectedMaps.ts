@@ -18,7 +18,6 @@ export const COUNTIES_10M_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/countie
 
 const FORECAST: MapFrame = { width: 960, height: 600, scale: 1200 }; // components/ForecastMap
 const COUNTY: MapFrame = { width: 975, height: 610, scale: 1200 }; // components/NationalCountyMap
-const OVERVIEW: MapFrame = { width: 800, height: 600, scale: 1120 }; // components/OverviewEditorial
 const LEGISLATURES: MapFrame = { width: 975, height: 610, scale: 1100 }; // components/LegislatureControlMap
 const STATES_OVERVIEW: MapFrame = { width: 800, height: 600, scale: 1100 }; // components/StatesOverviewMap
 const TPL: MapFrame = { width: 800, height: 600, scale: 1000 }; // components/tpl/TplMaps DEFAULT_FRAME
@@ -36,7 +35,7 @@ const CD_LITE_LINES = "/congressional-districts-2026-lite-state-lines.json";
 export type ProjectedMapSpec = { src: string; frame: MapFrame; winding?: boolean };
 
 export const PROJECTED_MAPS: ProjectedMapSpec[] = [
-  ...[FORECAST, COUNTY, OVERVIEW, LEGISLATURES, STATES_OVERVIEW, TPL, WIDE].map((frame) => ({ src: STATES_10M_URL, frame })),
+  ...[FORECAST, COUNTY, LEGISLATURES, STATES_OVERVIEW, TPL, WIDE].map((frame) => ({ src: STATES_10M_URL, frame })),
   ...[FORECAST, TPL, WIDE].flatMap((frame) => [{ src: CD_LITE, frame }, { src: CD_LITE_LINES, frame }]),
   { src: "/us-counties.json", frame: COUNTY },
   { src: COUNTIES_10M_URL, frame: WIDE },

@@ -161,7 +161,7 @@ export function Picked({ id, title, href, linkLabel, onClose, children }: { id: 
         {href && <Link href={href} prefetch={false} className="ix-lift whitespace-nowrap rounded-full px-2.5 py-0.5 text-[11px] font-semibold" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>{linkLabel ?? "Open"} →</Link>}
         <button type="button" onClick={onClose} aria-label="Close" className="ix-press text-sm leading-none" style={{ color: "var(--app-text-very-muted)" }}>✕</button>
       </div>
-      <div className="mt-3 flex flex-wrap items-end gap-x-8 gap-y-3">{children}</div>
+      <div className="mt-3 flex flex-wrap items-start gap-x-8 gap-y-3">{children}</div>
     </div>
   );
 }
@@ -170,7 +170,9 @@ export function PickedFig({ label, children, note }: { label: string; children: 
   return (
     <div className="min-w-0">
       <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{label}</div>
-      <div className="mt-1">{children}</div>
+      {/* Fixed-height value row, bottom-aligned, so every figure in the panel sits on one line whether
+          or not it has a note under it; figures swell from the left so they never shift past the label. */}
+      <div className="mt-1 flex h-8 items-end [&_.vh-margin]:origin-left">{children}</div>
       {note && <div className="mt-1 text-[11px] tabular-nums" style={{ color: "var(--app-text-muted)" }}>{note}</div>}
     </div>
   );

@@ -10,7 +10,7 @@ import { readStateLegSnapshot } from "@/lib/stateLegResultsSnapshot";
 
 // Since the election the Overview is the 2026 results: this page is the title and the post-election
 // analysis (formerly /analysis/post-election, moved here 2026-11-17 by the user; that URL redirects
-// here); the results-page box and State TPL map below it are in app/overview/layout.tsx, so they stay
+// here); the election-night box below it is in app/overview/layout.tsx, so it stays
 // put when the year switcher moves to /overview/[year]. The forecast's national outlook moved to the
 // Forecast tab (lib/outlookData.ts, user 2026-11-17).
 export default function OverviewPage() {

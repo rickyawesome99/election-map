@@ -513,13 +513,18 @@ body {
 .hub-row:hover .hub-title, .hub-row:active .hub-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .hub-row:focus-visible { outline: 3px solid var(--party-dem); outline-offset: -3px; border-radius: 12px; }
 .hub-graphic { display: block; width: 100%; height: auto; max-width: 19rem; }
+.hub-pill { transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease; -webkit-tap-highlight-color: transparent; }
+.hub-pill:hover, .hub-pill:active { background: var(--app-text-primary) !important; color: var(--app-bg) !important; border-color: var(--app-text-primary) !important; transform: translateY(-1px); }
+.hub-pill:focus-visible { outline: 3px solid var(--party-dem); outline-offset: 2px; }
+html:has(.hub-pill) { scroll-behavior: smooth; }
 @media (max-width: 767px) {
   .hub-row:hover, .hub-row:active { transform: scale(1.02); }
   .hub-row::before { inset: 0 -0.5rem; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hub-row, .hub-row::before { transition: none; }
-  .hub-row:hover, .hub-row:active { transform: none; }
+  .hub-row, .hub-row::before, .hub-pill { transition: none; }
+  .hub-row:hover, .hub-row:active, .hub-pill:hover, .hub-pill:active { transform: none; }
+  html:has(.hub-pill) { scroll-behavior: auto; }
 }
 
 /* Race page Vote History (components/VoteHistoryTabbedSection.tsx, PastElectionResultsSection and

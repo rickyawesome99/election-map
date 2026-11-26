@@ -138,23 +138,26 @@ test("statewide cards show Vs. GB, House cards show Swing, with an asterisk only
   await expect(cards.filter({ hasText: "*" })).toHaveCount(0);
 });
 
-test("the year switcher swaps only the analysis; the results box and State TPL map stay mounted", async ({ page }) => {
+test("the year switcher swaps only the analysis; the election-night box stays mounted", async ({ page }) => {
   await page.goto("/overview#OH");
-  await page.locator("svg.rsm-svg").first().waitFor();
-  await page.evaluate(() => { (document.querySelector("svg.rsm-svg") as SVGElement & { __kept?: boolean }).__kept = true; });
+  const box = page.locator('a[href="/enight"]', { hasText: "Election Night Results" });
+  await box.waitFor();
+  await box.evaluate((a) => { (a as HTMLElement & { __kept?: boolean }).__kept = true; });
   const documents: string[] = [];
   page.on("request", (r) => { if (r.resourceType() === "document") documents.push(r.url()); });
   await page.getByRole("button", { name: /^Previous: / }).click();
   await expect(page).toHaveURL(/\/overview\/2024#OH$/);
   await expect(page.getByRole("heading", { level: 1, name: "2024 Results" })).toBeVisible();
   await expect(page.getByText("Election Night Results")).toBeVisible();
-  expect(await page.evaluate(() => [...document.querySelectorAll("svg.rsm-svg")].some((s) => (s as SVGElement & { __kept?: boolean }).__kept))).toBe(true);
+  expect(await box.evaluate((a) => (a as HTMLElement & { __kept?: boolean }).__kept)).toBe(true);
   expect(documents).toEqual([]);
 });
 
 test("the year arrows keep the switcher where it was on screen", async ({ page }) => {
   await page.goto("/overview#OH");
-  await page.locator("svg.rsm-svg").first().waitFor();
+  await page.getByRole("button", { name: /^Previous: / }).waitFor();
+  // Let the page finish loading (this used to wait on the State TPL map, removed 2026-11-25) so late layout can't move the scroll set below.
+  await page.waitForLoadState("networkidle");
   // Scrolled, with the arrows still clear of the sticky header (else the click itself scrolls them into view).
   await page.evaluate(() => window.scrollTo(0, 150));
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(150);
