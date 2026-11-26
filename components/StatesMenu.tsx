@@ -142,8 +142,8 @@ export default function StatesMenu({
               style={{
                 gridColumn: col + 1,
                 gridRow: row + 1,
-                border: current ? "2px solid var(--app-text-primary)" : "1px solid var(--app-border)",
-                color: "var(--app-text-muted)",
+                border: `${current ? 2 : 1}px solid var(--app-text-primary)`,
+                color: "var(--app-text-primary)",
                 opacity: hit ? 1 : 0.25,
               }}
             >

@@ -100,7 +100,8 @@ function Segment({ c, won, share, align, compact }: { c: PastRaceCandidate; won:
       {lastName(c.name!)}{!dotFirst && c.incumbent && <span aria-label="incumbent" title="Incumbent">{compact ? " •" : " · inc."}</span>}
     </span>
   ) : null;
-  const pct = <span className="shrink-0 tabular-nums">{c.pct > 0 ? `${c.pct.toFixed(1)}%` : ""}</span>;
+  // A sliver too narrow for its figure drops it rather than clipping it (the row's hover has it).
+  const pct = <span className="shrink-0 tabular-nums">{c.pct > 0 && share >= (compact ? 16 : 9) ? `${c.pct.toFixed(1)}%` : ""}</span>;
   return (
     <div
       className={`flex min-w-0 items-center justify-between gap-1.5 ${compact ? "px-[7px] text-[11.5px]" : "px-3 text-[13px]"} ${won ? "font-bold" : "font-medium"}`}
@@ -115,7 +116,8 @@ function Segment({ c, won, share, align, compact }: { c: PastRaceCandidate; won:
   );
 }
 
-function SplitBar({ row, compact }: { row: PastRaceRow; compact: boolean }) {
+/** Also drawn by the past-election page's county table (PastCountyTable), from any row with two sides and a margin. */
+export function SplitBar({ row, compact }: { row: { dem: PastRaceCandidate; rep: PastRaceCandidate; margin: number }; compact: boolean }) {
   const two = row.dem.pct + row.rep.pct;
   const dShare = two > 0 ? (row.dem.pct / two) * 100 : 50;
   const demWon = row.margin < 0;

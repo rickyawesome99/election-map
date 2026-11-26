@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { useTouchHover } from "@/lib/useTouchHover";
-import { fmt2, marginColor, signed } from "./format";
+import { fmt1, marginColor, signed } from "./format";
 import type { YearAggregation } from "./types";
 import { ArrowOut, M, VERY_MUTED } from "./ui";
 
@@ -61,14 +61,14 @@ export function ResultTable({ years, tpl, label, centered, median, medianLabel, 
                 <td className={`${RTD} font-semibold`}>{y.year}</td>
                 <td className="hidden px-4 py-0 sm:table-cell">
                   <PlotTrack plot={plot} tpl={tpl}>
-                    <span className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" title={`${y.year}: WRS ${fmt2(y.WRS)}, weight ${(y.finalWeight * 100).toFixed(0)}%`}
+                    <span className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full" title={`${y.year}: WRS ${fmt1(y.WRS)}, weight ${(y.finalWeight * 100).toFixed(0)}%`}
                       style={{ left: `${plot.x(y.WRS)}%`, width: r * 2, height: r * 2, background: `color-mix(in srgb, ${marginColor(y.WRS)} 70%, transparent)`, boxShadow: `0 0 0 1.5px ${marginColor(y.WRS)}` }} />
                   </PlotTrack>
                 </td>
                 <td className={RTD_R}>{(y.finalWeight * 100).toFixed(0)}%</td>
-                <td className={RTD_R}><M v={y.WRS + (y.env ?? 0)} /></td>
-                <td className={RTD_R} style={{ color: "var(--app-text-muted)" }}>{y.env ? signed(-y.env) : "—"}</td>
-                <td className={`${RTD_R} text-base font-bold sm:text-[1.2rem]`} style={{ fontFamily: "var(--font-serif)", color: marginColor(y.WRS) }}>{fmt2(y.WRS)}</td>
+                <td className={RTD_R}><M v={y.WRS + (y.env ?? 0)} digits={1} /></td>
+                <td className={RTD_R} style={{ color: "var(--app-text-muted)" }}>{y.env ? signed(-y.env, 1) : "—"}</td>
+                <td className={`${RTD_R} text-base font-bold sm:text-[1.2rem]`} style={{ fontFamily: "var(--font-serif)", color: marginColor(y.WRS) }}>{fmt1(y.WRS)}</td>
               </tr>
             );
           })}
@@ -90,8 +90,8 @@ export function ResultTable({ years, tpl, label, centered, median, medianLabel, 
     <div className="mt-2 flex items-start justify-between gap-4 px-1 sm:px-2">
       <span className="shrink-0 whitespace-nowrap pt-1 text-sm font-bold">{label}</span>
       <div className="text-right">
-        <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", fontWeight: 700, lineHeight: 1, color: marginColor(tpl) }}>{fmt2(tpl)}</div>
-        <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>Centered <M v={centered} digits={2} bold /> after subtracting the {medianLabel} ({fmt2(median)})</div>
+        <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", fontWeight: 700, lineHeight: 1, color: marginColor(tpl) }}>{fmt1(tpl)}</div>
+        <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>Centered <M v={centered} digits={1} bold /> after subtracting the {medianLabel} ({fmt1(median)})</div>
       </div>
     </div>
     </>

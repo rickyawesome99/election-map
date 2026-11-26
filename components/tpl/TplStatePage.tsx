@@ -13,7 +13,7 @@ import { TplOverTime } from "./TplOverTime";
 import { MatrixStatus, TplMatrix, type MatrixSelection } from "./TplMatrix";
 import { AdjustedModal, FormulaModal, GLOSSARY, RaceCalcModal, TrendModal, type FormulaKey } from "./TplModals";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
-import { MATRIX_ROWS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
+import { MATRIX_ROWS, RACE_TYPE_LABELS, fmt1, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut, M, Fact, Fig, VERY_MUTED } from "./ui";
 import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
@@ -78,8 +78,8 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
   const title = sel.type === "all" && sel.year === "all" ? "All races" : sel.type === "all" ? `All ${sel.year} races` : sel.year === "all" ? `All ${RACE_TYPE_LABELS[sel.type as keyof typeof RACE_TYPE_LABELS]} races` : `${sel.year} · ${RACE_TYPE_LABELS[sel.type as keyof typeof RACE_TYPE_LABELS]}`;
   const selYear = sel.year !== "all" ? years.find((y) => y.year === sel.year) : undefined;
   const meta = [`${rows.length} row${rows.length === 1 ? "" : "s"}`,
-    sel.type === "H" && selYear && selYear.typeNMs.H != null ? `averaged into ${fmt2(selYear.typeNMs.H + (selYear.env ?? 0))} by votes cast` : null,
-    sel.type === "all" && selYear ? `margin ${fmt2(selYear.WRS + (selYear.env ?? 0))} · WRS ${fmt2(selYear.WRS)} after the environment` : null].filter(Boolean).join(" · ");
+    sel.type === "H" && selYear && selYear.typeNMs.H != null ? `averaged into ${fmt1(selYear.typeNMs.H + (selYear.env ?? 0))} by votes cast` : null,
+    sel.type === "all" && selYear ? `margin ${fmt1(selYear.WRS + (selYear.env ?? 0))} · WRS ${fmt1(selYear.WRS)} after the environment` : null].filter(Boolean).join(" · ");
 
   // ── County map ───────────────────────────────────────────────────────────
   // As on the state page: a mouse click opens the county's page (hover already shows its lean);

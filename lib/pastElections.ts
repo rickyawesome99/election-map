@@ -14,7 +14,6 @@ import { raceCalendar } from "@/data/raceCalendar";
 import { computeWarTable } from "@/lib/tplCompute";
 import { historicalRacePolls, historicalPresidentPolls, type HistoricalRacePoll } from "@/lib/racePollsHistory";
 import { candidatePhoto } from "@/lib/candidatePhotos";
-import { stateRings } from "@/lib/stateNeighbors";
 import type { PastRaceRow } from "@/lib/pastRaceTableTypes";
 
 // One page per past election, nested under its seat: /senate/pa2/2022, /governor/pa/2022,
@@ -71,10 +70,31 @@ export type HouseMapInfo = {
   status: HouseDistrictCountyStatus | null;
 };
 
+/** The WAR table's expectation for the race, R-positive, and its parts (baseline + incumbency +
+ *  structural money + other House races = expected, exactly). */
+export type PastElectionModel = {
+  expected: number;
+  residual: number;
+  /** The baseline before incumbency and money: the rest of the ballot that year, the modelled lean, or a blend. */
+  baseline: number;
+  /** 0–1: the rest of the ballot's share of `baseline` (the rest is the modelled lean); 0 when nothing else was on the ballot. */
+  ballotWeight: number;
+  ballotMargin: number | null;
+  leanMargin: number;
+  incumbency: number;
+  money: number;
+  houseOthers: number;
+  /** (R$ − D$)/(R$ + D$) × 100: what was raised, and what a generic pair here would be expected to raise. */
+  moneyGapPct: number | null;
+  structuralGapPct: number;
+};
+
 export type PastElectionPolling = {
   /** Polls whose field period ended within the window before election day. */
   polls: HistoricalRacePoll[];
   windowDays: number;
+  /** The day the window counts back from (ISO): the November general, or the decisive round. */
+  electionDay: string;
   /** Mean of (dem − rep) across the window, D-positive. */
   avgDemMargin: number;
   /** Actual D-margin minus polled D-margin; positive = polls understated Democrats. Null for runoffs. */
@@ -123,16 +143,33 @@ export type PastElection = {
   counties: PastElectionCounty[];
   countiesInState: number;
   /** Retrospective TPL/WAR post-analysis. expected/residual are R-positive. */
-  model: { expected: number; residual: number } | null;
+  model: PastElectionModel | null;
+  /** This race on the WAR page (/war?race=…), both candidates' rows. */
+  warHref: string;
   polling: PastElectionPolling | null;
   /** Every election of this seat that has a page, oldest first. */
   seatElections: { year: number; href: string; isSpecial: boolean }[];
-  /** Same-office races from the same year, nearest first: see relatedElections(). */
-  related: { title: string; items: RelatedElection[] };
+  /** Every race with a page on this state's ballot the same year: see stateBallot(). */
+  ballot: StateBallot;
   sources: string[];
 };
 
-export type RelatedElection = { href: string; label: string; winner: string; winnerParty: Party; margin: number };
+/** One race on the state's ballot: its page, the winner and margin, and whether the seat changed party. */
+export type BallotRace = {
+  href: string;
+  /** "President", "Senate", "Senate (special)", "Governor", or the House seat ("TX-07"). */
+  label: string;
+  district: number | null;
+  winner: string;
+  winnerParty: Party;
+  /** The winner's margin, points, always positive. */
+  margin: number;
+  /** The seat changed party (never across a House redraw). */
+  flip: boolean;
+  /** This page's own race. */
+  self: boolean;
+};
+export type StateBallot = { statewide: BallotRace[]; house: BallotRace[] };
 
 // ── Seats ─────────────────────────────────────────────────────────────────────
 
@@ -467,6 +504,7 @@ function buildPolling(office: PastElectionOffice, stateAbbr: string, year: numbe
   return {
     polls,
     windowDays,
+    electionDay,
     avgDemMargin,
     // The archive's polls are of the November round; when the stored result is a runoff the two
     // are not the same contest, so no error figure is reported.
@@ -502,7 +540,19 @@ export function getPastElection(office: PastElectionOffice, seatIdRaw: string, y
     return row ? row.war : null;
   };
   const anyRow = rows[0];
-  const model = anyRow ? { expected: anyRow.expected, residual: margin - anyRow.expected } : null;
+  const model: PastElectionModel | null = anyRow ? (() => {
+    // Rebuilt from the row as tplCompute prices it: own-year base = w·ballot + (1−w)·lean, plus
+    // incumbency, plus the structural money term, plus (House) the state's other races.
+    const w = anyRow.generic != null ? anyRow.genericWeight : 0;
+    const baseline = w > 0 ? w * anyRow.generic! + (1 - w) * anyRow.leanBaseline : anyRow.leanBaseline;
+    return {
+      expected: anyRow.expected, residual: margin - anyRow.expected,
+      baseline, ballotWeight: w, ballotMargin: anyRow.generic, leanMargin: anyRow.leanBaseline,
+      incumbency: anyRow.expected - anyRow.houseOthers - anyRow.ffStructuralPts - baseline,
+      money: anyRow.ffStructuralPts, houseOthers: anyRow.houseOthers,
+      moneyGapPct: anyRow.moneyGapPct, structuralGapPct: anyRow.structuralGapPct,
+    };
+  })() : null;
 
   const totalVotes = r.totalVotes ?? null;
   const demVotes = r.demVotes ?? null;
@@ -640,60 +690,49 @@ export function getPastElection(office: PastElectionOffice, seatIdRaw: string, y
     counties,
     countiesInState: office === "house" ? counties.length : stateCounties.length,
     model,
+    warHref: `/war?race=${year}-${seat.stateAbbr}-${warOffice(office)}-${encodeURIComponent(warRaceLabel(office, isSpecial, seatName))}`,
     polling: buildPolling(office, seat.stateAbbr, year, isSpecial, override?.label === "Jungle primary, decided outright" ? decidedOn : generalDay, margin, runoff, seatName),
     seatElections,
-    related: relatedElections(office, seat, year, `/${office}/${seat.seatId}/${year}`),
+    ballot: stateBallot(seat.stateAbbr, year, `/${office}/${seat.seatId}/${year}`),
     sources,
   };
 }
 
-// ── Related ───────────────────────────────────────────────────────────────────
+// ── The state's ballot ────────────────────────────────────────────────────────
 
-const RELATED_MAX: Record<PastElectionOffice, number> = { house: 12, senate: 8, governor: 8, president: 8 };
-
-/**
- * The same office's other races that year, nearest first. House: the state's other districts,
- * by distance in district number (adjacent numbers usually border); an at-large state, which has
- * none, gets its neighbours' districts instead, at most two per state so one big neighbour can't
- * fill the list. Statewide offices: the state's other Senate race that year, if any, then states
- * outward ring by ring across borders. Capped at RELATED_MAX.
- */
-function relatedElections(office: PastElectionOffice, seat: Seat, year: number, selfHref: string): { title: string; items: RelatedElection[] } {
-  const rings = stateRings(seat.stateAbbr);
-  const ranked: { ring: number; tie: number; name: string; item: RelatedElection }[] = [];
-  for (const other of seatsFor(office).values()) {
-    const r = other.results.find((x) => x.year === year);
-    if (!r || !hasPage(r)) continue;
-    const href = `/${office}/${other.seatId}/${year}`;
-    if (href === selfHref) continue;
-    const margin = r.margin ?? parseFloat((r.repPct - r.demPct).toFixed(2));
-    const demWon = margin < 0;
-    const name = (demWon ? r.demCandidate : r.repCandidate) ?? "";
-    const special = isSpecialType(r.electionType);
-    const label = office === "house" ? other.seatId.toUpperCase() : `${other.stateName}${special ? " (special)" : ""}`;
-    ranked.push({
-      ring: rings.get(other.stateAbbr) ?? 99,
-      tie: office === "house" && other.stateAbbr === seat.stateAbbr ? Math.abs((other.district ?? 1) - (seat.district ?? 1)) : 0,
-      name: office === "house" ? other.seatId : other.stateName,
-      item: { href, label, winner: name, winnerParty: (demWon ? r.demParty ?? "D" : r.repParty ?? "R"), margin },
-    });
-  }
-  ranked.sort((a, b) => a.ring - b.ring || a.tie - b.tie || a.name.localeCompare(b.name));
-  let pool = ranked;
-  if (office === "house") {
-    const inState = ranked.filter((x) => x.ring === 0);
-    const perState = new Map<string, number>();
-    pool = inState.length ? inState : ranked.filter((x) => {
-      if (x.ring !== 1) return false;
-      const st = x.name.slice(0, 2);
-      perState.set(st, (perState.get(st) ?? 0) + 1);
-      return perState.get(st)! <= 2;
-    });
-  }
-  const items = pool.slice(0, RELATED_MAX[office]).map((x) => x.item);
-  const officeWord = office === "senate" ? "Senate" : office === "governor" ? "governor" : office === "president" ? "presidential" : "House";
-  const title = items.length && pool.slice(0, items.length).every((x) => x.ring === 0)
-    ? `Other ${seat.stateName} ${officeWord} races, ${year}`
-    : `Nearby ${officeWord} races, ${year}`;
-  return { title, items };
+/** Every race with a page on the state's ballot in `year`: President, Senate (regular and
+ *  special), Governor, then the House seats in district order. */
+function stateBallot(stateAbbr: string, year: number, selfHref: string): StateBallot {
+  const races = (office: PastElectionOffice): BallotRace[] => {
+    const out: BallotRace[] = [];
+    for (const seat of seatsFor(office).values()) {
+      if (seat.stateAbbr !== stateAbbr) continue;
+      const r = seat.results.find((x) => x.year === year);
+      if (!r || !hasPage(r)) continue;
+      const m = r.margin ?? r.repPct - r.demPct;
+      const demWon = m < 0;
+      const party = (demWon ? r.demParty ?? "D" : r.repParty ?? "R") as Party;
+      const prev = [...seat.results].filter((x) => x.year < year).sort((a, b) => b.year - a.year)[0];
+      const prevM = prev ? prev.margin ?? prev.repPct - prev.demPct : null;
+      const prevParty = prev && prevM != null ? (prevM < 0 ? prev.demParty ?? "D" : prev.repParty ?? "R") : null;
+      const redrawn = office === "house" && (seat.geoid ? houseDistrictInfo[seat.geoid] ?? [] : []).some((b) => b.year === year);
+      const href = `/${office}/${seat.seatId}/${year}`;
+      out.push({
+        href,
+        label: office === "house" ? seat.seatId.toUpperCase() : office === "senate" ? (isSpecialType(r.electionType) ? "Senate (special)" : "Senate") : office === "governor" ? "Governor" : "President",
+        district: office === "house" ? seat.district ?? 1 : null,
+        winner: (demWon ? r.demCandidate : r.repCandidate) ?? "",
+        winnerParty: party,
+        margin: Math.abs(m),
+        flip: !!prevParty && prevParty !== party && !redrawn,
+        self: href === selfHref,
+      });
+    }
+    return out;
+  };
+  const senate = races("senate").sort((a, b) => a.label.length - b.label.length);
+  return {
+    statewide: [...races("president"), ...senate, ...races("governor")],
+    house: races("house").sort((a, b) => (a.district ?? 0) - (b.district ?? 0)),
+  };
 }

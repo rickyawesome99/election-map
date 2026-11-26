@@ -46,11 +46,11 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
 
         {stateDemographics[state.abbr] && (
           <div className="mt-2">
-            <StateDemographicsSection stateName={state.name} demographics={stateDemographics[state.abbr]} />
+            <StateDemographicsSection abbr={state.abbr} stateName={state.name} demographics={stateDemographics[state.abbr]} />
           </div>
         )}
 
-        <StateTplTrendSection abbr={state.abbr} tpl={data.tpl} yearAggregations={data.tplTrend} trend={data.leanTrend} />
+        <StateTplTrendSection abbr={state.abbr} name={state.name} tpl={data.tpl} yearAggregations={data.tplTrend} overTime={data.tplOverTime} trend={data.leanTrend} />
         <StateRedistrictingSection stateAbbr={state.abbr} stateFips={data.stateFips} stateName={state.name} years={data.redistricting} />
       </main>
     </div>

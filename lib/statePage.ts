@@ -12,7 +12,7 @@ import { stateLegCalendar } from "@/data/stateLegCalendar";
 import { stateLegHistoricalMaps } from "@/data/stateLegHistoricalMaps";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { forecastRace, projectChamberPopularVote, type ForecastedRace } from "@/lib/final2026";
-import { calculateStateModel, type YearAggregation } from "@/lib/tplCompute";
+import { calculateStateModel, getTplFit, type YearAggregation } from "@/lib/tplCompute";
 import { redistrictingByState, type RedistrictEvent } from "@/lib/redistrictingCalendar";
 import { countyTplForState } from "@/lib/countyTpl";
 import { housePastElectionHrefs, pastElectionHref } from "@/lib/pastElections";
@@ -25,6 +25,9 @@ import { candidatePhoto } from "@/lib/candidatePhotos";
 import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 import type { StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
 import { stateLeanTrend } from "@/lib/leanTrend";
+import { tplOverTime } from "@/lib/modelSlices";
+import { stateResultsByYear, type ResultsYear } from "@/lib/stateResultsByYear";
+import type { TplAsOf } from "@/components/tpl/types";
 import type { UpcomingChamber } from "@/lib/stateLegUpcoming";
 
 export const GENERAL_ELECTION = "November 3, 2026";
@@ -194,10 +197,14 @@ export type StatePageData = {
     upcoming: Partial<Record<Chamber, UpcomingChamber | null>>;
     chart: ChartResult[];
     vintage: VintageItem[];
+    /** Every race by year, newest first, for the "By year" view (lib/stateResultsByYear.ts). */
+    byYear: ResultsYear[];
   };
   counties: { tpl: Record<string, number | null>; layers: CountyLayer[]; votes: Record<string, number | null> };
   /** The TPL's per-year inputs (weighted lean by cycle), for the trend chart. */
   tplTrend: YearAggregation[];
+  /** TPL as it stood after each election under today's model: the TPL page's "TPL over time" graph. */
+  tplOverTime: TplAsOf[];
   /** Presidential shift 2020→2024 (and 2016→2020) beyond the national environment's: a companion to TPL (lib/leanTrend.ts). */
   leanTrend: { last: number; prior: number | null } | null;
   /** Every year a House map changed here, newest first. */
@@ -609,9 +616,18 @@ export function buildStatePage(state: StateInfo): StatePageData {
       upcoming,
       chart,
       vintage,
+      byYear: stateResultsByYear({
+        abbr,
+        statewide,
+        stateHouse: stateHouseEntries,
+        stateSenate: stateSenateEntries,
+        blended: Object.fromEntries(model.yearAggregations.filter((a) => a.racesPresent.length > 0).map((a) => [a.year, a.WRS + (getTplFit().E[a.year] ?? 0)])),
+      }),
     },
     counties: { tpl: countyTpl, layers, votes: countyVotes },
-    tplTrend: model.yearAggregations,
+    // E(year) attached, as lib/modelSlices.ts does for the TPL pages: the trend plots WRS + env.
+    tplTrend: model.yearAggregations.map((a) => ({ ...a, env: getTplFit().E[a.year] ?? 0 })),
+    tplOverTime: tplOverTime(model, getTplFit().lean[state.abbr]),
     leanTrend: stateLeanTrend(state.abbr),
     redistricting,
   };

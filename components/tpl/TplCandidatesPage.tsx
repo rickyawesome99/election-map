@@ -34,22 +34,27 @@ function raceWithState(r: { office: WarSlim["office"]; race: string; state: stri
 
 export function TplCandidatesPage({ initialRows, initialYear, totals }: { initialRows: WarSlim[]; initialYear: number; totals: { races: number; performances: number } }) {
   // ?c=slug (a candidate page's "WAR breakdown" link) narrows the table to that candidate's races;
+  // ?race=… (a past-election page) to one race;
   // ?state=OH to one state. Both are read from the URL after mount and on back/forward, not through
   // useSearchParams, which would defer the whole prerendered table to the client.
   const [candidateParam, setCandidateParam] = useState<string | null>(null);
+  // ?race=2022-AL-G-Governor (a past-election page's link): that one race, both candidates.
+  const [raceParam, setRaceParam] = useState<{ year: number; state: string; office: string; race: string } | null>(null);
   const [stateParam, setStateParam] = useState<string | null>(null);
   useEffect(() => {
     const read = () => {
       const q = new URLSearchParams(window.location.search);
       // Sync from the URL after mount and on popstate; neither is available during SSR.
       setCandidateParam(q.get("c"));
+      const rp = q.get("race")?.split("-");
+      setRaceParam(rp && rp.length >= 4 ? { year: Number(rp[0]), state: rp[1].toUpperCase(), office: rp[2].toUpperCase(), race: rp.slice(3).join("-") } : null);
       setStateParam(q.get("state")?.toUpperCase() ?? null);
     };
     read();
     window.addEventListener("popstate", read);
     return () => window.removeEventListener("popstate", read);
   }, []);
-  const clearCandidate = () => { setCandidateParam(null); window.history.pushState(null, "", "/war"); };
+  const clearCandidate = () => { setCandidateParam(null); setRaceParam(null); window.history.pushState(null, "", "/war"); };
   // The row whose calculation is open under it: one at a time, a second click closes it.
   const [openRow, setOpenRow] = useState<string | null>(null);
 
@@ -87,12 +92,13 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
     return rows.filter((r) =>
       (office === "all" || r.office === office) &&
       (party === "all" || (party === "I" ? r.party !== "D" && r.party !== "R" : r.party === party)) &&
-      (candidateParam ? candidateSlug(r.candidate, r.state) === candidateParam : year === "all" || r.year === year) &&
+      (raceParam ? r.year === raceParam.year && r.state === raceParam.state && r.office === raceParam.office && r.race === raceParam.race
+        : candidateParam ? candidateSlug(r.candidate, r.state) === candidateParam : year === "all" || r.year === year) &&
       (state === "all" || r.state === state) &&
       terms.every((t) => /^\d{4}$/.test(t) ? String(r.year) === t : stateAbbrs.has(t) ? r.state.toLowerCase() === t
         : r.candidate.toLowerCase().includes(t) || r.race.toLowerCase().includes(t) || OFFICE_LABELS[r.office].toLowerCase().includes(t)));
-  }, [rows, office, party, year, state, query, stateAbbrs, candidateParam]);
-  const candidateName = candidateParam ? rows.find((r) => candidateSlug(r.candidate, r.state) === candidateParam)?.candidate ?? candidateParam.replace(/-/g, " ") : null;
+  }, [rows, office, party, year, state, query, stateAbbrs, candidateParam, raceParam]);
+  const candidateName = raceParam ? `${raceParam.year} ${raceParam.state} ${raceParam.race}` : candidateParam ? rows.find((r) => candidateSlug(r.candidate, r.state) === candidateParam)?.candidate ?? candidateParam.replace(/-/g, " ") : null;
   // The other candidate's row in each race, for a row's calculation.
   const opponentOf = useMemo(() => {
     const byRace = new Map<string, WarSlim[]>();
@@ -173,7 +179,7 @@ export function TplCandidatesPage({ initialRows, initialYear, totals }: { initia
 
           {candidateName && (
             <div className="mt-3 flex flex-wrap items-center gap-2 text-xs" style={{ color: "var(--app-text-muted)" }}>
-              Showing every scored race for
+              {raceParam ? "Showing" : "Showing every scored race for"}
               <span className="inline-flex h-6 items-center gap-1.5 rounded-full pl-2.5 pr-1 font-semibold" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}>
                 {candidateName}
                 <button type="button" onClick={clearCandidate} aria-label="Show all candidates" className="grid h-5 w-5 place-items-center rounded-full text-sm leading-none hover:bg-[var(--app-border)]" style={{ color: "var(--app-text-muted)" }}>×</button>

@@ -8,7 +8,7 @@ import { ResultTable } from "./ResultTable";
 import { TplOverTime } from "./TplOverTime";
 import { MatrixStatus, TplMatrix, type MatrixSelection } from "./TplMatrix";
 import { AdjustedModal, FormulaModal, RaceCalcModal, type FormulaKey } from "./TplModals";
-import { MATRIX_ROWS, RACE_TYPE_LABELS, fmt2 } from "./format";
+import { MATRIX_ROWS, RACE_TYPE_LABELS, fmt1 } from "./format";
 import type { CountyPageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut } from "./ui";
 
@@ -35,7 +35,7 @@ export function CountySection({ data }: { data: CountyPageData }) {
   const title = sel.type === "all" && sel.year === "all" ? "All races" : sel.type === "all" ? `All ${sel.year} races` : sel.year === "all" ? `All ${officeLabel(sel.type)} races` : `${sel.year} · ${officeLabel(sel.type)}`;
   const selYear = sel.year !== "all" ? years.find((y) => y.year === sel.year) : undefined;
   const meta = [`${rows.length} row${rows.length === 1 ? "" : "s"}`,
-    sel.type === "all" && selYear ? `margin ${fmt2(selYear.WRS + (selYear.env ?? 0))} · WRS ${fmt2(selYear.WRS)} after the environment` : null].filter(Boolean).join(" · ");
+    sel.type === "all" && selYear ? `margin ${fmt1(selYear.WRS + (selYear.env ?? 0))} · WRS ${fmt1(selYear.WRS)} after the environment` : null].filter(Boolean).join(" · ");
   const weighted = years.filter((y) => y.finalWeight > 0).sort((a, b) => b.year - a.year);
   const centered = data.tpl - data.medianStateTpl;
 

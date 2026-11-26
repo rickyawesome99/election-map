@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { MarginField, Tip, marginAxis, partyFill, smoothPath, useWidth } from "@/components/MarginGraphKit";
-import { fmt2, marginColor } from "./format";
+import { fmt1, marginColor } from "./format";
 import type { TplAsOf } from "./types";
 import { M } from "./ui";
 
@@ -59,7 +59,7 @@ export function TplOverTime({ points, name }: { points: TplAsOf[]; name: string 
                 {labelled(p, i) && (
                   <text x={x(p.year)} y={y(p.tpl) + (below(i) ? 20 : -11)} textAnchor="middle" fontSize={compact ? 11 : 12.5} fontWeight={700} fill={marginColor(p.tpl)}
                     style={{ fontFamily: "var(--font-serif)", fontVariantNumeric: "tabular-nums", paintOrder: "stroke", stroke: "var(--app-bg)", strokeWidth: 3 }}>
-                    {fmt2(p.tpl)}
+                    {fmt1(p.tpl)}
                   </text>
                 )}
               </g>
@@ -69,10 +69,10 @@ export function TplOverTime({ points, name }: { points: TplAsOf[]; name: string 
         {hp && (
           <Tip x={x(hp.year)} width={width} top={pad.top} minWidth={176} flat>
             <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>TPL after {hp.year}</div>
-            <div className="mt-0.5 text-[22px] font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: marginColor(hp.tpl) }}>{fmt2(hp.tpl)}</div>
+            <div className="mt-0.5 text-[22px] font-bold leading-tight tabular-nums" style={{ fontFamily: "var(--font-serif)", color: marginColor(hp.tpl) }}>{fmt1(hp.tpl)}</div>
             <div className="mt-1.5 flex flex-col gap-0.5 pt-1.5 tabular-nums" style={{ borderTop: "1px solid var(--app-border)" }}>
-              {prev && <div className="flex items-baseline justify-between gap-4"><span style={{ color: "var(--app-text-muted)" }}>Change from {prev.year}</span><M v={hp.tpl - prev.tpl} digits={2} bold /></div>}
-              <div className="flex items-baseline justify-between gap-4"><span style={{ color: "var(--app-text-muted)" }}>{hp.year} WRS alone</span><M v={hp.wrs} digits={2} bold /></div>
+              {prev && <div className="flex items-baseline justify-between gap-4"><span style={{ color: "var(--app-text-muted)" }}>Change from {prev.year}</span><M v={hp.tpl - prev.tpl} digits={1} bold /></div>}
+              <div className="flex items-baseline justify-between gap-4"><span style={{ color: "var(--app-text-muted)" }}>{hp.year} WRS alone</span><M v={hp.wrs} digits={1} bold /></div>
             </div>
           </Tip>
         )}

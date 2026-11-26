@@ -6,7 +6,7 @@ import type { Chamber } from "@/data/stateLegDistricts";
 import type { ForecastedRace } from "@/lib/forecast";
 import type { BallotRace, ChamberBlock, HouseRow, StatePageData } from "@/lib/statePage";
 import { HouseLedger, SenateCards, StateLedger } from "./BallotSection";
-import { SegToggle, SegTrack, SlidingPills, SlidingTabs } from "./StateMotion";
+import { SegTrack, SlidingPills, SlidingTabs } from "./StateMotion";
 import { useRevealOnce } from "@/lib/useRevealOnce";
 import { useDesktopPointer } from "@/lib/useDesktopPointer";
 import { useRouter } from "next/navigation";
@@ -22,6 +22,7 @@ import StateLayerMap, { chamberOfLayer, layerYears, type MapLayer } from "./Stat
 import StateCountyMap from "@/components/StateCountyMap";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import StateResultsGraph, { bodyEntriesFromDelegation, bodyEntriesFromStateLeg } from "./StateResultsGraph";
+import ResultsByYear from "./ResultsByYear";
 
 const fmtProb = (p: number | null) => (p == null ? "—" : p < 0.005 ? "<1%" : p > 0.995 ? ">99%" : `${Math.round(p * 100)}%`);
 // Never "Even": the forecast always leans one way (margin <= 0 is D, as everywhere on the site), so a
@@ -90,7 +91,8 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
     else setSelectedHouse(race);
   };
   const [selectedLegKey, setSelectedLegKey] = useState<string | null>(null);
-  const [resultsView, setResultsView] = useState<"cards" | "graph">("cards");
+  // "year": every race a year held as one spread of cards; "cards"/"graph": one office at a time.
+  const [resultsView, setResultsView] = useState<"year" | "cards" | "graph">(results.byYear.length ? "year" : "cards");
   // One office's cards at a time: four columns side by side went to two staggered rows at
   // mid widths, each with its own scrollbox, and the page scroll fought them.
   const [resultsOffice, setResultsOffice] = useState<ResultsOffice>("statewide");
@@ -134,6 +136,15 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
   const legPastOnCurrentLines = legPastYear && !!legData && legData.historicalMaps[String(activeYear)] == null;
 
   const senateRaces = data.senate.filter((s): s is BallotRace => s.kind === "race");
+  // The Senate heading's count, as the House heading's: a seat on the ballot goes to its projected
+  // winner (margin <= 0 is D), a seat not up to the party holding it.
+  const senateCount = (["D", "R", "I"] as const)
+    .map((party) => ({
+      party,
+      n: data.senate.filter((x) => (x.kind === "race" ? (x.margin <= 0 ? "D" : "R") : x.party) === party).length,
+      color: party === "D" ? "var(--party-dem)" : party === "R" ? "var(--party-rep)" : "var(--party-ind)",
+    }))
+    .filter((c) => c.n > 0 || c.party !== "I");
   const officeTabs: { key: ResultsOffice; label: string; right?: string }[] = [
     { key: "statewide", label: "Statewide" },
     ...(results.federal.length ? [{ key: "federal" as const, label: "U.S. House", right: houseRaces.length ? `${houseRaces.length} seats` : undefined }] : []),
@@ -420,10 +431,21 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
       {/* ── 2 · On the ballot ── */}
       <section id="ballot" className="mt-6">
         <div className="min-w-0">
-            {(data.senate.length > 0 || houseRaces.length > 0) && (
-              <SubHead id="federal" right={<span className="inline-flex items-baseline gap-1"><b>*</b>incumbent</span>}>Federal</SubHead>
+            {data.senate.length > 0 && (
+              <SubHead id="federal" right={<span className="inline-flex items-baseline gap-1"><b>*</b>incumbent</span>}>
+                U.S. Senate
+                <span className="ml-2 normal-case tracking-normal tabular-nums">
+                  {senateCount.map((c, i) => (
+                    <span key={c.party}>
+                      {i > 0 && <span style={{ color: "var(--app-text-very-muted)" }}> · </span>}
+                      <span style={{ color: c.color }}>{c.n}{c.party}</span>
+                    </span>
+                  ))}
+                  <span style={{ color: "var(--app-text-very-muted)" }}> projected</span>
+                </span>
+              </SubHead>
             )}
-            {data.senate.length > 0 && <SenateCards senate={data.senate} state={state.abbr} />}
+            {data.senate.length > 0 && <SenateCards senate={data.senate} state={state.abbr} electionYear={electionYear} />}
 
             {houseRaces.length > 0 && (
               <>
@@ -454,9 +476,14 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
       {/* ── 3 · Results since 2016 ── */}
       <section id="results" ref={resultsRef} data-vh={resultsVh} className="mt-10">
         <SectionHead title="Results since 2016" right={
-          <SegToggle label="Results view" options={[{ key: "cards", label: "List" }, { key: "graph", label: "Graph" }]} value={resultsView} onChange={setResultsView} />
+          <SegTrack label="Results view" options={[...(results.byYear.length ? [{ key: "year" as const, label: "By year" }] : []), { key: "cards" as const, label: "By office" }, { key: "graph" as const, label: "Graph" }]} value={resultsView} onChange={setResultsView} />
         } />
 
+        {resultsView === "year" ? (
+          <div className="mt-3 vh-tab-in">
+            <ResultsByYear years={results.byYear} stateId={state.id} unicameral={results.isUnicameral} />
+          </div>
+        ) : (
         <>
             <div className="mt-3">
               <SlidingTabs
@@ -522,6 +549,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
             )}
             </div>
         </>
+        )}
 
         {/* Map vintage: when each body's lines were last drawn, which is where a seat split stops comparing cleanly. */}
         {results.vintage.length > 0 && (

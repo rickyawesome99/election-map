@@ -225,7 +225,7 @@ function delegationLabel(house: PostElectionRow[]) {
   );
 }
 
-function LegislatureCard({ result, stateId, unicameral, governorParty, year, index }: { result: LegChamberResult; stateId: string; unicameral: boolean; governorParty: string | null; year: number; index: number }) {
+export function LegislatureCard({ result, stateId, unicameral, governorParty, year, index }: { result: LegChamberResult; stateId: string; unicameral: boolean; governorParty: string | null; year: number; index: number }) {
   const { chamber, total, up, calledSeats, noElection, seats, leading, flipped, net } = result;
   const name = unicameral ? "Legislature" : chamber === "senate" ? "State Senate" : "State House";
   // A settled chamber fills like a called race, every figure in white, with no badge: the bar keeps its colours inside a white outline.

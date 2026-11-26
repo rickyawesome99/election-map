@@ -614,7 +614,6 @@ html.dark .ix-rail-btn:hover:not(:disabled) { filter: brightness(1.25); }
 /* State page "On the ballot" (components/state/BallotSection.tsx): statewide matchup cards, then
    House and chamber ledger rows. Desktop rows share five columns (office · Democrat · Republican ·
    margin · rating); under 768px each row is two lines, office + result over the two candidates. */
-.bl-card { border-top: 2px solid var(--app-text-primary); padding: 12px 0 20px; min-width: 0; display: block; }
 .bl-ledger { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 14px; }
 .bl-row { display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; grid-template-areas: "off res" "dem rep"; row-gap: 10px; padding-block: 12px; border-bottom: 1px solid var(--app-border); }
 .bl-row > * { min-width: 0; display: flex; align-items: center; }

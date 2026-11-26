@@ -39,7 +39,7 @@ type Base = {
   variant?: "tooltip" | "card" | "panel"; size?: "compact" | "wide" | "small"; aside?: ReactNode; footer?: ReactNode;
 };
 export type CountyTooltipProps = Base & (
-  | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null; /** How much of the county is counted, e.g. "50% in" (the Results page); upper right. */ reporting?: string; /** The Results page's projected final margin, R-positive: shown beside a smaller counted margin. */ projectedMargin?: number; /** The Results page's vote still to count: votes left, the net votes they carry and the net votes counted so far, both R-positive. */ remaining?: { votes: number; net: number; current: number } }
+  | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null; /** How much of the county is counted, e.g. "50% in" (the Results page); upper right. */ reporting?: string; /** The Results page's projected final margin, R-positive: shown beside a smaller counted margin. */ projectedMargin?: number; /** The Results page's vote still to count: votes left, the net votes they carry and the net votes counted so far, both R-positive. */ remaining?: { votes: number; net: number; current: number }; /** Headline the lead in votes ("R+5,209") instead of the margin: a bubbles map, whose circles are that lead. */ voteLead?: boolean }
   | { kind: "tpl"; /** R-positive; null when the county has none. */ tpl: number | null; votes: number | null }
   | { kind: "message"; headline?: { text: string; party: Party }; message?: string }
   /** One figure with its label (the turnout map, the TPL hub map): the value as the serif headline, the metric name under it, and an optional note with the numbers behind it. With no note the box shrinks to fit. */
@@ -66,6 +66,15 @@ function signed(margin: number, demParty: Party, repParty: Party, lean = false):
   if (lean ? Math.abs(margin) < 0.05 : margin === 0) return { text: "EVEN", color: "var(--app-text-primary)" };
   const party = margin > 0 ? repParty : demParty;
   return { text: `${party}+${Math.abs(margin).toFixed(1)}`, color: partyText(party) };
+}
+
+/** The headline of a result card: the margin, or with `voteLead` and both counts the lead in votes, party-signed the same way. */
+function resultFigure(p: { margin: number; voteLead?: boolean; dem: CountyTooltipSide; rep: CountyTooltipSide }): { text: string; color: string } {
+  if (!p.voteLead || p.dem.votes == null || p.rep.votes == null) return signed(p.margin, p.dem.party, p.rep.party);
+  const lead = p.rep.votes - p.dem.votes;
+  if (lead === 0) return { text: "EVEN", color: "var(--app-text-primary)" };
+  const party = lead > 0 ? p.rep.party : p.dem.party;
+  return { text: `${party}+${fmtInt(Math.abs(lead))}`, color: partyText(party) };
 }
 
 function otherShare(dem: CountyTooltipSide, rep: CountyTooltipSide, totalVotes: number | null) {
@@ -133,8 +142,8 @@ export default function CountyTooltip(props: CountyTooltipProps) {
       </>
     );
   } else {
-    const { dem, rep, margin, totalVotes } = props;
-    const fig = signed(margin, dem.party, rep.party);
+    const { dem, rep, totalVotes } = props;
+    const fig = resultFigure(props);
     const other = otherShare(dem, rep, totalVotes);
     // Projections (the forecast map) carry no vote counts, so the votes column drops out.
     const showVotes = dem.votes != null || rep.votes != null || totalVotes != null;
@@ -182,7 +191,8 @@ export default function CountyTooltip(props: CountyTooltipProps) {
             {inPct != null && reportingStrip}
             <div className="flex items-end justify-between gap-3">
               <div className="mt-1 tabular-nums" style={{ ...headline, color: fig.color }}>{fig.text}</div>
-              {totalVotes != null && <div className="pb-[3px] text-right">{votesLabel}{votesFigure(totalVotes)}</div>}
+              {/* A vote-lead headline is long (D+286,123), so the votes total gives way to it. */}
+              {totalVotes != null && !props.voteLead && <div className="pb-[3px] text-right">{votesLabel}{votesFigure(totalVotes)}</div>}
             </div>
             <div className={`${isCard ? "mt-1.5 h-1" : "mt-2 h-1.5"} flex overflow-hidden rounded-full`} style={{ background: "var(--app-tab-bg)" }}>
               <i style={{ width: `${dem.pct}%`, background: partyFill(dem.party) }} />
@@ -310,8 +320,8 @@ function CountyPanel(props: CountyTooltipProps) {
       </div>
     );
   } else if (props.kind === "result") {
-    const { dem, rep, margin, totalVotes } = props;
-    const fig = signed(margin, dem.party, rep.party);
+    const { dem, rep, totalVotes } = props;
+    const fig = resultFigure(props);
     const other = otherShare(dem, rep, totalVotes);
     // Projections (the forecast map) carry no vote counts, so the votes column drops out.
     const showVotes = dem.votes != null || rep.votes != null || totalVotes != null;

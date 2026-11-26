@@ -9,7 +9,7 @@ import type { Feature, Geometry, MultiLineString } from "geojson";
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { usePanZoom } from "@/lib/usePanZoom";
-import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleMaxR, bubbleRadius, countyResultFill, countySides, type CountyMapEntry, type CountyMapResult } from "@/components/PastElectionCountyMap";
+import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleNetOf, bubbleMaxR, bubbleRadius, countyResultFill, countySides, type CountyMapEntry, type CountyMapResult } from "@/components/PastElectionCountyMap";
 import { isRealName } from "@/lib/personName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { countyDisplayName } from "@/lib/countyName";
@@ -47,6 +47,9 @@ export default function HouseDistrictCountyMap({
   panelSize = "compact",
   fill = false,
   bubbles = false,
+  panel = true,
+  focus = null,
+  onSelectedChange,
   stateContext = false,
 }: {
   piecesUrl: string;
@@ -69,6 +72,12 @@ export default function HouseDistrictCountyMap({
   fill?: boolean;
   /** Draw each county's remaining net votes as a circle over plain land (the Results page). */
   bubbles?: boolean;
+  /** False: no selected-county panel under the map (the page shows the selection itself, via onSelectedChange). */
+  panel?: boolean;
+  /** Each new `n` selects `fips` in the district (null clears), as PastElectionCountyMap's focus. */
+  focus?: { fips: string | null; n: number } | null;
+  /** Called with the selected in-district county's FIPS (null when cleared or outside the district). */
+  onSelectedChange?: (fips: string | null) => void;
   /** Also draw the rest of the state (zoom out to see it); the opening view stays on the district. */
   stateContext?: boolean;
 }) {
@@ -142,7 +151,20 @@ export default function HouseDistrictCountyMap({
 
   const zoom = usePanZoom(size.width, size.height, 12, scene?.stateBounds ? { minZoom: scene.minZoom, bounds: scene.stateBounds } : undefined);
   const [hovered, setHovered] = useState<Hovered | null>(null);
-  const [selected, setSelected] = useState<Hovered | null>(null);
+  const [selected, setSelectedState] = useState<Hovered | null>(null);
+  const setSelected = setSelectedState;
+  // Every change, by click or from outside, is reported as the in-district county's FIPS (or null).
+  const selectedFips = selected?.inDistrict ? selected.fips : null;
+  const reportRef = useRef(onSelectedChange);
+  useEffect(() => { reportRef.current = onSelectedChange; });
+  useEffect(() => { reportRef.current?.(selectedFips); }, [selectedFips]);
+  // A new focus request selects that county's district piece (set during render, as PastElectionCountyMap does).
+  const [focusN, setFocusN] = useState<number | undefined>(undefined);
+  if (focus && focus.n !== focusN) {
+    setFocusN(focus.n);
+    const c = focus.fips ? counties.find((x) => x.fips === focus.fips) : null;
+    setSelectedState(c ? { fips: c.fips, name: c.name, inDistrict: true, otherDistrict: null, sharesCounty: false, result: c.result } : null);
+  }
   const { onMouseMove, tooltipRef } = useMapTooltip(12, 8);
 
   // One description of a county piece, drawn as the hover popup and as the click panel.
@@ -161,7 +183,7 @@ export default function HouseDistrictCountyMap({
       kind: "result", title,
       dem: { name: sd.dem.name, link: isRealName(sd.dem.name), state: stateAbbr, party: sd.dem.party, pct: r.demPct, votes: r.demVotes },
       rep: { name: sd.rep.name, link: isRealName(sd.rep.name), state: stateAbbr, party: sd.rep.party, pct: r.repPct, votes: r.repVotes },
-      margin: r.margin, totalVotes: r.totalVotes, reporting: r.reporting, projectedMargin: r.projectedMargin, remaining: r.remaining,
+      margin: r.margin, totalVotes: r.totalVotes, reporting: r.reporting, projectedMargin: r.projectedMargin, remaining: r.remaining, voteLead: r.net != null,
     };
   };
 
@@ -211,7 +233,7 @@ export default function HouseDistrictCountyMap({
         <path d={scene.districtOutlineD} fill="none" stroke="var(--app-text-primary)" strokeWidth={1.4} strokeLinejoin="round" pointerEvents="none" vectorEffect="non-scaling-stroke" />
         {/* Remaining view: a circle on the district's share of each county, largest first. */}
         {bubbles && scene.mine
-          .map(({ p }) => ({ p, net: byFips.get(p.properties.c)?.remaining?.net ?? 0 }))
+          .map(({ p }) => ({ p, net: bubbleNetOf(byFips.get(p.properties.c)) }))
           .filter((b) => b.net !== 0)
           .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
           .map(({ p, net }) => {
@@ -257,7 +279,7 @@ export default function HouseDistrictCountyMap({
         )}
       </div>
       {caption}
-      {selected && (
+      {panel && selected && (
         <div className={`px-1 ${panelSize === "small" ? "mt-1 pt-2" : "mt-2 py-3"}`} style={{ borderTop: "1px solid var(--app-border)" }}>
           <CountyTooltip
             {...card(selected)}

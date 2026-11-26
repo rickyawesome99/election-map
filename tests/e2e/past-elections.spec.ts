@@ -9,7 +9,10 @@ test("Pennsylvania 2022 Senate election page shows the result, map and post-anal
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Fetterman");
   await expect(page.getByText("2,751,012")).toBeVisible();
   await expect(page.getByText("2,487,260")).toBeVisible();
-  await expect(page.getByText("TPL expected margin")).toBeVisible();
+  // The model and polls sections under the top block.
+  await expect(page.getByRole("heading", { level: 2, name: "TPL", exact: true })).toBeVisible();
+  await expect(page.getByText("How the expectation is built")).toBeVisible();
+  await expect(page.getByRole("heading", { level: 2, name: "Polls", exact: true })).toBeVisible();
   await expect(page.getByText("Polls missed by")).toBeVisible();
   // 67 counties drawn.
   await expect(page.locator("path.rsm-geography")).toHaveCount(67, { timeout: 20_000 });
@@ -20,7 +23,7 @@ test("Pennsylvania 2022 Senate election page shows the result, map and post-anal
 test("Georgia 2022 Senate runoff is labelled and scores no polling error", async ({ page }) => {
   await page.goto("/senate/ga2/2022");
   await expect(page.getByText(/Runoff, December 6, 2022/)).toBeVisible();
-  await expect(page.getByText("Late polls, first round")).toBeVisible();
+  await expect(page.getByText("No error is scored against a runoff.")).toBeVisible();
 });
 
 test("Georgia 2020 special election page labels the special and the runoff date", async ({ page }) => {

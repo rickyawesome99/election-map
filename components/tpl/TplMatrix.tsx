@@ -4,8 +4,8 @@ import { fmt1, marginColor } from "./format";
 import type { YearAggregation } from "./types";
 
 // The year × office matrix as a scoreboard: years run across (oldest first), and each column
-// opens with the year, its margin (the weighted office average, before the year's environment is
-// removed: WRS + env) and its weight bar; the office rows beneath are a heat grid
+// opens with the year and its margin (the weighted office average, before the year's environment is
+// removed: WRS + env; year weights are shown in each page's result section); the office rows beneath are a heat grid
 // of neutralized margins, also before the environment (tint deepens with size, full at 20 points; the text turns white once the tint is dark), the breakdown of the
 // number above. Shares and cell notes live in the tooltip. Clicking a cell, a column head or
 // an office label selects which races the table beneath shows, and a chip above the grid
@@ -55,16 +55,14 @@ export function MatrixStatus({ selection, offices, onSelect }: { selection: Matr
 
 const HIT = "block w-full rounded transition-colors hover:bg-[var(--app-tab-bg)]";
 
-export function TplMatrix({ years: allYears, offices, cellFor, selection, onSelect, weightLabel = "wt" }: {
+export function TplMatrix({ years: allYears, offices, cellFor, selection, onSelect }: {
   years: YearAggregation[];
   offices: MatrixOffice[];
   cellFor: (year: YearAggregation, key: string) => MatrixCell;
   selection: MatrixSelection;
   onSelect: (s: MatrixSelection) => void;
-  weightLabel?: string;
 }) {
   const years = allYears.filter((y) => y.racesPresent.length > 0).sort((a, b) => a.year - b.year);
-  const maxW = Math.max(...years.map((y) => y.finalWeight), 0.0001);
   const isAll = selection.year === "all" && selection.type === "all";
   // Cells inside the selection get a faint outline around the cell, in the 3px gap between
   // cells, in the text color (dark on light, light on dark).
@@ -96,10 +94,6 @@ export function TplMatrix({ years: allYears, offices, cellFor, selection, onSele
                     <span className={`block whitespace-nowrap text-[13px] font-bold leading-tight ${dense ? "sm:text-[0.95rem] lg:text-[1.1rem]" : "sm:text-[1.35rem]"}`} style={{ fontFamily: "var(--font-serif)", color: marginColor(total) }}>
                       <Margin v={total} bareOnPhone={crowded} />
                     </span>
-                    <span className="mx-auto mt-1 block h-1 w-4/5 overflow-hidden rounded-sm sm:w-3/5" style={{ background: "var(--app-tab-bg)" }}>
-                      <span className="block h-full" style={{ width: `${(y.finalWeight / maxW) * 100}%`, background: "var(--app-text-muted)" }} />
-                    </span>
-                    <span className="mt-0.5 hidden text-[11px] sm:block" style={{ color: "var(--app-text-muted)" }} title={`${weightLabel} ${y.finalWeight.toFixed(3)}`}>{Math.round(y.finalWeight * 100)}%</span>
                   </button>
                 </td>
             ); })}

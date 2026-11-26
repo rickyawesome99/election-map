@@ -87,15 +87,17 @@ let warByCandidate: Map<string, WarSlim[]> | null = null;
 export function warForCandidate(name: string, state?: string | null): WarSlim[] {
   if (!warByCandidate) {
     warByCandidate = new Map();
+    // Keyed by page slug, not the spelling on file, so a row filed under another spelling
+    // (SAME_PERSON: "Maria Elvira Salazar" → "Maria Salazar") lands on the same page, and two people
+    // sharing a name (SHARED_NAMES) stay apart by state.
     for (const r of warSlice()) {
-      const list = warByCandidate.get(r.candidate);
-      if (list) list.push(r); else warByCandidate.set(r.candidate, [r]);
+      const key = candidateSlug(r.candidate, r.state);
+      const list = warByCandidate.get(key);
+      if (list) list.push(r); else warByCandidate.set(key, [r]);
     }
     for (const list of warByCandidate.values()) list.sort((a, b) => a.year - b.year);
   }
-  // Two people can share a name (lib/candidateSlug.ts): keep the rows from this person's own state.
-  const slug = candidateSlug(name, state);
-  return (warByCandidate.get(name) ?? []).filter((r) => candidateSlug(r.candidate, r.state) === slug);
+  return warByCandidate.get(candidateSlug(name, state)) ?? [];
 }
 
 // WAR looked up by (state, office, race label, year, candidate name) — the join key the race
@@ -262,7 +264,7 @@ function districtsOf(abbr: string): StatePageData["districts"] {
 }
 
 /** TPL as it stood after each weighted year under today's model, oldest first. Pass the state's fitted lean for a state. */
-function tplOverTime(calc: { races: Parameters<typeof leanAsOf>[0]; yearAggregations: YearAggregation[] }, houseAnchor?: number | null): TplAsOf[] {
+export function tplOverTime(calc: { races: Parameters<typeof leanAsOf>[0]; yearAggregations: YearAggregation[] }, houseAnchor?: number | null): TplAsOf[] {
   return calc.yearAggregations
     .filter((y) => y.finalWeight > 0)
     .sort((a, b) => a.year - b.year)

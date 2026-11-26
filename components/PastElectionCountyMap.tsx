@@ -32,6 +32,8 @@ export type CountyMapResult = {
   projectedMargin?: number;
   /** The Results page's vote still to count: projected votes left and the net votes they carry (R-positive). */
   remaining?: { votes: number; net: number; current: number };
+  /** A bubbles map with no `remaining`: the net votes the county's circle stands for (R-positive), e.g. a past result's R − D votes. */
+  net?: number;
   /** The county card shows this one figure in place of the result (the Results page's Swing view): `margin` then holds the figure, for the fill. */
   figure?: { label: string; value: string; color: string };
   /** This county's own pair in place of the map's demName/repName (a jungle round's top two):
@@ -61,7 +63,9 @@ export type CountyMapEntry = { fips: string; name: string; result: CountyMapResu
 // red or blue for the party projected to gain them, over plain land (as DDHQ / NYT draw it).
 export const BUBBLE_LAND = "var(--app-tab-bg)";
 export const BUBBLE_LINE = "var(--app-border)";
-export const bubbleMaxNet = (counties: CountyMapEntry[]) => Math.max(0, ...counties.map((c) => Math.abs(c.result.remaining?.net ?? 0)));
+/** The net votes a county's circle stands for: what is left to count where the map has that, else `net`. */
+export const bubbleNetOf = (r: CountyMapResult | null | undefined) => r?.remaining?.net ?? r?.net ?? 0;
+export const bubbleMaxNet = (counties: CountyMapEntry[]) => Math.max(0, ...counties.map((c) => Math.abs(bubbleNetOf(c.result))));
 /** Largest circle's radius for a map of this size. */
 export const bubbleMaxR = (width: number, height: number) => Math.max(12, Math.min(30, Math.min(width, height) * 0.085));
 export function bubbleRadius(net: number, maxNet: number, maxR: number): number {
@@ -113,6 +117,7 @@ export default function PastElectionCountyMap({
   panelSize = "compact",
   fill = false,
   bubbles = false,
+  panel = true,
   focus = null,
   onSelectedChange,
   onOpen,
@@ -137,6 +142,8 @@ export default function PastElectionCountyMap({
   fill?: boolean;
   /** Draw each county's remaining net votes as a circle over plain land (the Results page). */
   bubbles?: boolean;
+  /** False: no selected-county panel under the map (the page shows the selection itself, via onSelectedChange). */
+  panel?: boolean;
   /** Select a county from outside (a table row): each new `n` selects `fips`, opening its panel; a null `fips` clears it. */
   focus?: { fips: string | null; name: string; n: number } | null;
   /** Called when the selected county changes, from a click on the map or the panel's close. */
@@ -247,7 +254,7 @@ export default function PastElectionCountyMap({
               {/* Circles over the land, largest first so small ones stay on top; they let the
                   pointer through to the county under them. */}
               {bubbles && geographies
-                .map((geo) => ({ geo, net: byFips.get(String(geo.id))?.remaining?.net ?? 0 }))
+                .map((geo) => ({ geo, net: bubbleNetOf(byFips.get(String(geo.id))) }))
                 .filter((b) => b.net !== 0)
                 .sort((a, b) => Math.abs(b.net) - Math.abs(a.net))
                 .map(({ geo, net }) => {
@@ -274,7 +281,7 @@ export default function PastElectionCountyMap({
       kind: "result", title,
       dem: { name: sd.dem.name, link: isRealName(sd.dem.name), state: stateAbbr, party: sd.dem.party, pct: result.demPct, votes: result.demVotes },
       rep: { name: sd.rep.name, link: isRealName(sd.rep.name), state: stateAbbr, party: sd.rep.party, pct: result.repPct, votes: result.repVotes },
-      margin: result.margin, totalVotes: result.totalVotes, reporting: result.reporting, projectedMargin: result.projectedMargin, remaining: result.remaining,
+      margin: result.margin, totalVotes: result.totalVotes, reporting: result.reporting, projectedMargin: result.projectedMargin, remaining: result.remaining, voteLead: result.net != null,
     };
   };
 
@@ -297,7 +304,7 @@ export default function PastElectionCountyMap({
       </div>
 
       {caption}
-      {(selected || standIn) && (
+      {panel && (selected || standIn) && (
         <div className={`grid px-1 ${panelSize === "small" ? "mt-1 pt-2" : "mt-2 py-3"}`} style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }} aria-hidden={!selected}>
           {[standIn, selected].map((c, i) => c && (
             <div key={i} className={`col-start-1 row-start-1${i === 0 ? " invisible" : ""}`} aria-hidden={i === 0 || undefined}>

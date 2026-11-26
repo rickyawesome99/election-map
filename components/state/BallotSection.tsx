@@ -10,10 +10,10 @@ import { useRevealOnce } from "@/lib/useRevealOnce";
 import { MiniDistrictLocator } from "@/components/RaceLocator";
 
 /**
- * The state page's "On the ballot" section, in two parts. Federal: the Senate seats as matchup
- * cards (photos, the margin between them), then the House delegation
- * as ledger rows (Democrat · Republican · margin · rating). State: the governor and the
- * legislature's chambers as ledger rows, so a long list stays a list.
+ * The state page's "On the ballot" section, in two parts. Federal: the Senate seats, then the House
+ * delegation, as ledger rows (Democrat · Republican · margin · rating). State: the governor and the
+ * legislature's chambers as ledger rows, so a long list stays a list. The Senate seats and the
+ * governor share one row (StatewideRow).
  * Motion is the race pages' (globals.css .vh-*): rows rise in staggered once on screen, tint on
  * hover, the margin swells and arrows lean.
  */
@@ -43,15 +43,6 @@ function RatingPill({ rating }: { rating: string }) {
 
 function QuietPill({ children }: { children: string }) {
   return <span className="text-xs font-medium py-0.5 rounded-full text-center shrink-0 w-[4.6rem]" style={{ color: "var(--app-text-very-muted)", boxShadow: "inset 0 0 0 1px var(--app-border)" }}>{children}</span>;
-}
-
-function Eyebrow({ children, sub }: { children: string; sub?: string | null }) {
-  return (
-    <span className="flex min-w-0 flex-1 items-baseline gap-2">
-      <span className="shrink-0 text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>{children}</span>
-      {sub && <span className="truncate text-[11.5px]" style={{ color: "var(--app-text-very-muted)" }}>{sub}</span>}
-    </span>
-  );
 }
 
 /** The race pages' photo frame: rounded, party-colored border, the party placeholder when there's no photo. */
@@ -118,94 +109,10 @@ function Result({ margin, dem, rep, size, origin = "right center" }: { margin: n
   );
 }
 
-function IdleTrack({ label }: { label: string }) {
-  return (
-    <div className="grid gap-1">
-      <span className="text-[10.5px] font-medium uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>{label}</span>
-      <span className="block h-[2px] my-[3px]" style={{ background: "repeating-linear-gradient(90deg, var(--app-border) 0 6px, transparent 6px 10px)" }} />
-    </div>
-  );
-}
-
 // "Senate (Seat 2)" → U.S. Senate / Seat 2.
 function officeLabel(label: string): { title: string; sub: string | null } {
   const m = label.match(/^Senate \(Seat (\d)\)$/);
   return m ? { title: "U.S. Senate", sub: `Seat ${m[1]}` } : { title: label, sub: null };
-}
-
-// The Federal heading's rule runs across both Senate seats, so the cards drop their own.
-const NO_RULE = { borderTop: "none" } as const;
-
-/** A statewide race as a matchup card. */
-function RaceCard({ race, state, delay }: { race: BallotRace; state: string; delay: number }) {
-  const { title, sub } = officeLabel(race.label);
-  const open = race.dem && race.rep && !race.dem.incumbent && !race.rep.incumbent;
-  return (
-    <div className="bl-card vh-row" style={{ ...NO_RULE, animationDelay: `${delay}ms` }}>
-      <Link prefetch={false} href={race.href} aria-label={`View ${race.label} race`} className="absolute inset-0" />
-      <div className="relative pointer-events-none grid gap-3">
-        <div className="flex items-center gap-2.5 min-h-[30px]">
-          <Eyebrow sub={[sub, open ? "Open seat" : null].filter(Boolean).join(" · ") || null}>{title}</Eyebrow>
-          <RatingPill rating={race.rating} />
-        </div>
-        {race.dem && race.rep ? (
-          <>
-            <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-2.5">
-              <Photo name={race.dem.name} party={race.dem.party} photo={race.dem.photo} w={60} />
-              <div className="text-center">
-                <Result margin={race.margin} dem={race.dem} rep={race.rep} size="1.85rem" origin="center" />
-                <span className="mt-1 block text-[10.5px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>forecast</span>
-              </div>
-              <Photo name={race.rep.name} party={race.rep.party} photo={race.rep.photo} w={60} />
-            </div>
-            <div className="grid grid-cols-2 gap-3 pointer-events-auto">
-              <Name c={race.dem} state={state} dot="after" />
-              <Name c={race.rep} state={state} dot="before" align="right" />
-            </div>
-          </>
-        ) : (
-          <div className="flex items-center justify-between gap-3 py-6">
-            <span className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</span>
-            <Result margin={race.margin} dem={null} rep={null} size="1.85rem" />
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-/** A seat with no election this year: who holds it and when it's next up. */
-function HoldoverCard({ seat, delay }: { seat: BallotHoldover; delay: number }) {
-  const { title, sub } = officeLabel(seat.label);
-  return (
-    <Link prefetch={false} href={seat.href} className="bl-card vh-row !flex flex-col gap-3" style={{ ...NO_RULE, animationDelay: `${delay}ms` }}>
-      <div className="flex items-center gap-2.5 min-h-[30px]">
-        <Eyebrow sub={sub}>{title}</Eyebrow>
-        <QuietPill>Not up</QuietPill>
-      </div>
-      <div className="flex items-center gap-3">
-        <Photo name={seat.name} party={seat.party} photo={seat.photo} w={60} />
-        <div className="min-w-0">
-          <div className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.2rem", color: partyColor(seat.party) }}>{seat.name}</div>
-          <div className="mt-1 text-[13px]" style={{ color: "var(--app-text-very-muted)" }}>{partyWord(seat.party)} · next election {seat.nextElection}</div>
-        </div>
-      </div>
-      {/* Pinned to the card's foot, level with the matchup's names beside it. */}
-      <div className="mt-auto"><IdleTrack label="No race this year" /></div>
-    </Link>
-  );
-}
-
-/** The two Senate seats side by side. */
-export function SenateCards({ senate, state }: { senate: (BallotRace | BallotHoldover)[]; state: string }) {
-  const items = senate;
-  const { ref, vh } = useRevealOnce();
-  if (items.length === 0) return null;
-  return (
-    <div ref={ref} data-vh={vh} className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
-      {items.map((x, i) => (x.kind === "race" ? <RaceCard key={x.href} race={x} state={state} delay={enter(i)} /> : <HoldoverCard key={x.href} seat={x} delay={enter(i)} />))}
-    </div>
-  );
 }
 
 const FOLD_AT = 10;
@@ -303,22 +210,28 @@ const squaresWidth = (total: number) => {
   return Math.max(300, cols * (Math.min(12, Math.max(3.4, 560 / cols - 2)) + 2));
 };
 
-/** The governor's race as a ledger row in the chambers' columns: Democrat · Republican · margin · rating. */
-function GovernorRow({ gov, state, electionYear }: { gov: BallotRace | BallotHoldover; state: string; electionYear: number }) {
-  if (gov.kind !== "race") {
+/**
+ * A statewide seat as a ledger row in the chambers' columns: office · Democrat · Republican · margin ·
+ * rating. A seat with no election this year shows who holds it and when it is next up.
+ */
+function StatewideRow({ item, title, sub, state, electionYear, delay = 0 }: { item: BallotRace | BallotHoldover; title: string; sub: string | null; state: string; electionYear: number; delay?: number }) {
+  const label = (
+    <Link href={item.href} prefetch={false} className="text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>{title}</Link>
+  );
+  if (item.kind !== "race") {
     return (
-      <div className="bl-row vh-row">
+      <div className="bl-row vh-row" style={{ animationDelay: `${delay}ms` }}>
         <div className="bl-off">
           <span className="min-w-0 leading-tight">
-            <Link href={gov.href} prefetch={false} className="text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Governor</Link>
-            <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>Not on the {electionYear} ballot</span>
+            {label}
+            <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>{[sub, `Not on the ${electionYear} ballot`].filter(Boolean).join(" · ")}</span>
           </span>
         </div>
         <div className="bl-span gap-3">
-          <Photo name={gov.name} party={gov.party} photo={gov.photo} w={40} />
+          <Photo name={item.name} party={item.party} photo={item.photo} w={40} />
           <span className="min-w-0 leading-tight">
-            <Link href={gov.href} prefetch={false} className="block truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.12rem", color: partyColor(gov.party) }}>{gov.name}</Link>
-            <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>{partyWord(gov.party)} · next election {gov.nextElection}</span>
+            <Link href={item.href} prefetch={false} className="block truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.12rem", color: partyColor(item.party) }}>{item.name}</Link>
+            <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>{partyWord(item.party)} · next election {item.nextElection}</span>
           </span>
         </div>
         <div className="bl-mg" />
@@ -326,26 +239,41 @@ function GovernorRow({ gov, state, electionYear }: { gov: BallotRace | BallotHol
       </div>
     );
   }
-  const open = gov.dem && gov.rep && !gov.dem.incumbent && !gov.rep.incumbent;
+  const open = item.dem && item.rep && !item.dem.incumbent && !item.rep.incumbent;
+  const subLine = [sub, open ? "Open seat" : null].filter(Boolean).join(" · ");
   return (
-    <div className="bl-row vh-row">
+    <div className="bl-row vh-row" style={{ animationDelay: `${delay}ms` }}>
       <div className="bl-off">
         <span className="min-w-0 leading-tight">
-          <Link href={gov.href} prefetch={false} className="text-sm font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Governor</Link>
-          {open && <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>Open seat</span>}
-          <Link href={gov.href} prefetch={false} className="mt-0.5 block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View race <span className="vh-lean" data-dir="r">→</span></Link>
+          {label}
+          {subLine && <span className="block text-xs" style={{ color: "var(--app-text-very-muted)" }}>{subLine}</span>}
+          <Link href={item.href} prefetch={false} className="mt-0.5 block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View race <span className="vh-lean" data-dir="r">→</span></Link>
         </span>
       </div>
-      {gov.dem && gov.rep ? (
+      {item.dem && item.rep ? (
         <>
-          <div className="bl-dem"><Photo name={gov.dem.name} party={gov.dem.party} photo={gov.dem.photo} w={40} /><Name c={gov.dem} state={state} dot="after" /></div>
-          <div className="bl-rep"><Photo name={gov.rep.name} party={gov.rep.party} photo={gov.rep.photo} w={40} /><Name c={gov.rep} state={state} dot="after" /></div>
+          <div className="bl-dem"><Photo name={item.dem.name} party={item.dem.party} photo={item.dem.photo} w={40} /><Name c={item.dem} state={state} dot="after" /></div>
+          <div className="bl-rep"><Photo name={item.rep.name} party={item.rep.party} photo={item.rep.photo} w={40} /><Name c={item.rep} state={state} dot="after" /></div>
         </>
       ) : (
         <div className="bl-span text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
       )}
-      <div className="bl-mg"><Result margin={gov.margin} dem={gov.dem} rep={gov.rep} size="1.2rem" /></div>
-      <div className="bl-pill"><RatingPill rating={gov.rating} /></div>
+      <div className="bl-mg"><Result margin={item.margin} dem={item.dem} rep={item.rep} size="1.2rem" /></div>
+      <div className="bl-pill"><RatingPill rating={item.rating} /></div>
+    </div>
+  );
+}
+
+/** The Senate seats as ledger rows, in the governor's and the House's columns. */
+export function SenateCards({ senate, state, electionYear }: { senate: (BallotRace | BallotHoldover)[]; state: string; electionYear: number }) {
+  const { ref, vh } = useRevealOnce();
+  if (senate.length === 0) return null;
+  return (
+    <div ref={ref} data-vh={vh} className="bl-ledger">
+      {senate.map((x, i) => {
+        const { title, sub } = officeLabel(x.label);
+        return <StatewideRow key={x.href} item={x} title={title} sub={sub} state={state} electionYear={electionYear} delay={enter(i)} />;
+      })}
     </div>
   );
 }
@@ -359,7 +287,7 @@ export function StateLedger({ governor, chambers, state, electionYear }: { gover
   const offset = governor ? 1 : 0;
   return (
     <div ref={ref} data-vh={vh} className="bl-ledger">
-      {governor && <GovernorRow gov={governor} state={state} electionYear={electionYear} />}
+      {governor && <StatewideRow item={governor} title="Governor" sub={null} state={state} electionYear={electionYear} />}
       {chambers.map((c, j) => {
         const i = j + offset;
         const hasProj = c.upText != null && c.projDem != null && c.projRep != null && !!c.projTotal;
