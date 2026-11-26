@@ -19,7 +19,8 @@ test("the sitemap lists race, past-election, candidate and county pages, and no 
   expect(legXml).toContain("/candidates/bill-roemer-oh");
   for (const p of ["/about", "/senate/ga", "/senate/me2", "/house/oh-09", "/governor/oh", "/house/oh-09/2024", "/president/pa/2024", "/sources"]) expect(paths).toContain(p);
   expect(paths.some((p) => p.startsWith("/candidates/"))).toBe(true);
-  expect(paths.some((p) => p.startsWith("/historical/"))).toBe(true);
+  expect(paths).toContain("/states/oh/counties/39049");
+  expect(paths.some((p) => p.startsWith("/historical/"))).toBe(false);
   for (const p of ["/states", "/analysis/oh-31"]) expect(paths).not.toContain(p);
   expect(paths.some((p) => p.startsWith("/audit"))).toBe(false);
 });

@@ -6,11 +6,16 @@ import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { lastName } from "@/lib/personName";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
+import PastElectionPrecinctMap from "@/components/PastElectionPrecinctMap";
+import precinctStatesJson from "@/data/precincts/states.json";
+import precinctCoverageJson from "@/data/precincts/coverage.json";
+import type { Office } from "@/components/precincts/types";
 import ExpandableTbody from "@/components/ExpandableTbody";
 import { fmtMargin, marginColor, fmtLean, leanColor } from "@/lib/colorScale";
 import type { PastElection, PastElectionCandidate } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import { SeatCrumbs } from "@/components/SeatBreadcrumb";
+import { countyHref } from "@/lib/countyHref";
 
 // The one shared renderer for /senate/[id]/[year] and /governor/[id]/[year]. The top block is
 // composed to be captured as a single screenshot: eyebrow, headline, candidates, county map,
@@ -195,6 +200,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
   const repShare = e.rep.pct;
   const otherShare = e.otherPct ?? Math.max(0, 100 - demShare - repShare);
   const counted = e.counties.length;
+  const precinctShell = precinctMapFor(e);
   const areaSingular = e.stateAbbr === "LA" ? "parish" : e.stateAbbr === "AK" ? "borough" : "county";
   const areaWord = e.stateAbbr === "LA" ? "parishes" : e.stateAbbr === "AK" ? "boroughs" : "counties";
   const cap = (w: string) => w[0].toUpperCase() + w.slice(1);
@@ -314,7 +320,18 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                 pushing the rule below down. */}
             <div className="min-w-0 md:relative">
               <div className="md:absolute md:inset-0">
-              {counted > 0 || e.house ? (
+              {precinctShell ? (
+                <PastElectionPrecinctMap
+                  shell={precinctShell.shell}
+                  year={e.year}
+                  office={precinctShell.office}
+                  demName={e.dem.name}
+                  repName={e.rep.name}
+                  height={300}
+                  caption={mapCaption}
+                  fill
+                />
+              ) : counted > 0 || e.house ? (
                 <>
                   {e.house ? (
                     <HouseDistrictCountyMap
@@ -406,7 +423,7 @@ export default function PastElectionPage({ election: e }: { election: PastElecti
                     return (
                       <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
                         <td className="whitespace-nowrap py-1.5">
-                          <Link prefetch={false} href={`/historical/${c.fips}`} className="hover:underline">{c.name}</Link>
+                          <Link prefetch={false} href={countyHref(c.fips)} className="hover:underline">{c.name}</Link>
                           {c.houseSplit && <span className="ml-1.5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }} title="This county is shared with another district; the row is this district's share">split</span>}
                         </td>
                         <td className="whitespace-nowrap py-1.5 pl-1.5 text-right sm:pl-3">{fmtInt(c.result.demVotes)} <span className="text-[10px] sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>{c.result.demPct.toFixed(1)}%</span></td>
@@ -463,6 +480,21 @@ function houseSourceLabel(source: string | null): string {
     case "aggregate": return "County rows from the county canvasses, shared counties from precinct returns";
     default: return "County rows from precinct returns";
   }
+}
+
+// Places drawn by precinct instead of by county: one county-equivalent, so a county map is a single
+// blob (DC). Only when the Precincts tab has this year and office loaded for the state.
+const PRECINCT_MAP_STATES: Record<string, string> = { DC: "11" };
+const PRECINCT_OFFICE: Record<PastElection["office"], Office> = { president: "PRES", senate: "USS", governor: "GOV", house: "USH" };
+function precinctMapFor(e: PastElection) {
+  const fips = PRECINCT_MAP_STATES[e.stateAbbr];
+  if (!fips) return null;
+  const geo = (precinctStatesJson as unknown as Record<string, { n: number; first: number; bbox: [number, number, number, number] | null }>)[e.stateAbbr];
+  const office = PRECINCT_OFFICE[e.office];
+  const cell = (precinctCoverageJson as unknown as { states: Record<string, { years: Record<string, Partial<Record<Office, { status: string }>>> }> })
+    .states[e.stateAbbr]?.years[String(e.year)]?.[office];
+  if (!geo?.bbox || !cell || !["reconciled", "explained", "loaded"].includes(cell.status)) return null;
+  return { office, shell: { abbr: e.stateAbbr, name: e.stateName, fips, n: geo.n, first: geo.first, bbox: geo.bbox } };
 }
 
 // Legend swatches mirror lib/colorScale getRaceColor's buckets.

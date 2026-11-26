@@ -9,8 +9,10 @@ export function resolveDefaultBackHref(pathname: string): string {
   if (pathname.startsWith("/senate/")) return "/senate";
   if (pathname.startsWith("/governor/")) return "/governor";
   if (pathname.startsWith("/president/")) return "/analysis/delegation";
+  // A county page (/states/oh/counties/39049) falls back to its state's page.
+  const countyState = pathname.match(/^(\/states\/[^/]+)\/counties\//);
+  if (countyState) return countyState[1];
   if (pathname.startsWith("/states/")) return "/analysis/delegation";
-  if (pathname.startsWith("/historical/")) return "/historical";
   if (pathname.startsWith("/analysis/pollsters/")) return "/analysis/pollsters";
   if (pathname.startsWith("/analysis/")) return "/analysis";
   if (pathname.startsWith("/model/")) return "/model";

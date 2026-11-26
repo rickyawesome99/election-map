@@ -68,35 +68,35 @@ test("top-level tabs keep the URL and visible page in sync", async ({ page }) =>
   await expect(page.getByRole("heading", { name: "True Partisan Lean", level: 1 })).toBeVisible();
 
   await page.getByRole("link", { name: "Forecast", exact: true }).click();
-  await expect(page).toHaveURL(/\/senate$/);
+  await expect(page).toHaveURL(/\/forecast(\?chamber=senate)?$/);
   await expectChamber(page, "Senate");
 });
 
 test("forecast tab returns to the last selected chamber after visiting analysis", async ({ page }) => {
-  await page.goto("/senate");
+  await page.goto("/forecast?chamber=senate");
   await expectChamber(page, "Senate");
 
   await chamberTab(page, "Governor").click();
-  await expect(page).toHaveURL(/\/governor$/);
+  await expect(page).toHaveURL(/\/forecast(\?chamber=governor)?$/);
   await expectChamber(page, "Governor");
 
   await page.getByRole("link", { name: "Analysis" }).click();
   await expect(page).toHaveURL(/\/analysis$/);
 
   await page.getByRole("link", { name: "Forecast", exact: true }).click();
-  await expect(page).toHaveURL(/\/governor$/);
+  await expect(page).toHaveURL(/\/forecast(\?chamber=governor)?$/);
   await expectChamber(page, "Governor");
 });
 
 test("a forecast-map state opens its race page on click, its preview card on tap", async ({ page }, testInfo) => {
-  await page.goto("/senate");
+  await page.goto("/forecast?chamber=senate");
   await expectChamber(page, "Senate");
   await openFirstInteractiveMapFeature(page, testInfo.project.name);
   await expectRaceOpened(page, testInfo.project.name);
 });
 
 test("race table links render the destination page on the first click", async ({ page }) => {
-  await page.goto("/senate");
+  await page.goto("/forecast?chamber=senate");
   await expectChamber(page, "Senate");
 
   await page.getByRole("link", { name: "Alabama" }).first().click();
@@ -107,15 +107,15 @@ test("race table links render the destination page on the first click", async ({
 });
 
 test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {
-  await page.goto("/senate");
+  await page.goto("/forecast?chamber=senate");
   await expectChamber(page, "Senate");
 
   await chamberTab(page, "House").click();
-  await expect(page).toHaveURL(/\/house$/);
+  await expect(page).toHaveURL(/\/forecast(\?chamber=house)?$/);
   await expectChamber(page, "House");
 
   await chamberTab(page, "Senate").click();
-  await expect(page).toHaveURL(/\/senate$/);
+  await expect(page).toHaveURL(/\/forecast(\?chamber=senate)?$/);
   await expectChamber(page, "Senate");
   await openFirstInteractiveMapFeature(page, testInfo.project.name);
   await expectRaceOpened(page, testInfo.project.name);
@@ -126,4 +126,26 @@ test("analysis links render on the first click", async ({ page }) => {
   await page.getByRole("link", { name: "OH-31" }).click();
   await expect(page).toHaveURL(/\/analysis\/districts\/oh-hd-31$/);
   await expect(page.getByRole("heading", { name: "House District 31" })).toBeVisible();
+});
+
+// /house, /senate and /governor are chamber pages since 2026-11-25 (the forecast moved to /forecast);
+// the Chambers tab opens a menu of the four chamber pages, built like the States tab.
+test("the Chambers menu opens each chamber page", async ({ page }) => {
+  await page.goto("/overview");
+  for (const [label, url, title] of [["House", /\/house$/, "U.S. House"], ["Senate", /\/senate$/, "U.S. Senate"], ["Governor", /\/governor$/, "Governors"], ["Legislatures", /\/legislatures$/, "State Legislatures"]] as const) {
+    await page.getByRole("button", { name: "Chambers" }).click();
+    await page.getByRole("dialog", { name: "Choose a chamber" }).getByRole("link", { name: label }).click();
+    await expect(page).toHaveURL(url);
+    await expect(page.getByRole("heading", { name: title, level: 1 })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Control map" })).toBeVisible();
+  }
+});
+
+test("a chamber page lists every seat and filters them", async ({ page }) => {
+  await page.goto("/senate");
+  await expect(page.locator("tbody tr")).toHaveCount(100);
+  await page.getByRole("textbox", { name: "Filter seats" }).fill("Ohio");
+  await expect(page.locator("tbody tr")).toHaveCount(2);
+  await page.getByRole("link", { name: "Ohio (special)" }).click();
+  await expect(page).toHaveURL(/\/senate\/oh2$/);
 });

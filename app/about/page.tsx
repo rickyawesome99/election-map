@@ -43,7 +43,7 @@ export default function AboutPage() {
           <div className="max-w-3xl space-y-7">
             <Defs items={[
               { term: <A href="/overview">Overview</A>, def: "The national picture: projected control of the House and Senate, governorships, the generic ballot, and how the forecast has moved since January." },
-              { term: <A href="/senate">Forecast</A>, def: `A projected margin, win probability and rating for all ${electionYear} House, Senate and governor races, each with its polls, fundraising, projected vote and county map.` },
+              { term: <A href="/forecast">Forecast</A>, def: `A projected margin, win probability and rating for all ${electionYear} House, Senate and governor races, each with its polls, fundraising, projected vote and county map.` },
               { term: <A href="/historical">Historical</A>, def: "Past results by state, county and congressional district from 2008, and state legislative results for every chamber from 2016." },
               { term: <A href="/model">TPL</A>, def: "True Partisan Lean: each state's, district's and county's lean once candidates, incumbency and money are accounted for, plus each candidate's record against it." },
               { term: <A href="/analysis">Analysis</A>, def: "Turnout, pollster ratings, the election calendar, and this forecast set against other forecasters." },
@@ -94,7 +94,7 @@ export default function AboutPage() {
             </Block>
             <Block label="The House and Senate">
               <P>
-                The <A href="/house">House</A> and <A href="/senate">Senate</A> pages show the projected seat count, the number needed for control,
+                The <A href="/forecast?chamber=house">House</A> and <A href="/forecast?chamber=senate">Senate</A> views of the Forecast page show the projected seat count, the number needed for control,
                 a map colored by rating, and every race grouped from toss-up to safe. The <A href="/overview">Overview</A> adds the chance
                 of control. Today the {houseFav.party} win the House {pct(houseFav.p)} of the time. That means the {houseFav.other} win
                 it in about {Math.max(1, Math.round((1 - houseFav.p) * 10))} of every 10 simulated elections, which is a real chance, not a long

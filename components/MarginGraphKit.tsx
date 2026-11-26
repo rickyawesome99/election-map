@@ -41,9 +41,11 @@ export function smoothPath(pts: Pt[]): string {
 }
 
 /** A margin axis that always includes 0 (the line between the parties) and lands on round ticks. */
-export function marginAxis(values: number[]): { lo: number; hi: number; ticks: number[] } {
-  const lo0 = Math.min(0, ...values);
-  const hi0 = Math.max(0, ...values);
+/** `fit` sizes the axis to the values alone instead of always reaching Even: a centred window of at least 8 points. */
+export function marginAxis(values: number[], { fit = false }: { fit?: boolean } = {}): { lo: number; hi: number; ticks: number[] } {
+  let lo0 = Math.min(...(fit ? values : [0, ...values]));
+  let hi0 = Math.max(...(fit ? values : [0, ...values]));
+  if (fit && hi0 - lo0 < 8) { const mid = (hi0 + lo0) / 2; lo0 = mid - 4; hi0 = mid + 4; }
   const span = Math.max(hi0 - lo0, 8);
   const step = [2, 5, 10, 15, 20, 25, 50].find((s) => span / s <= 5) ?? 50;
   const lo = Math.floor((lo0 - span * 0.06) / step) * step;
@@ -137,19 +139,22 @@ export function partyFill(margin: number) {
 }
 
 /** A tooltip card that sits beside the hovered year and flips to the left past the middle. */
-export function Tip({ x, width, top, minWidth = 180, children }: { x: number; width: number; top: number; minWidth?: number; children: ReactNode }) {
+/** `flat` drops the rounded panel for the site's section look: page background, a thick dark rule on top, square corners. */
+export function Tip({ x, width, top, minWidth = 180, flat, children }: { x: number; width: number; top: number; minWidth?: number; flat?: boolean; children: ReactNode }) {
   const flip = x > width * 0.55;
   return (
     <div
-      className="pointer-events-none absolute z-10 rounded-md px-3 py-2 text-xs shadow-lg rg-tip"
+      className={`pointer-events-none absolute z-10 text-xs rg-tip ${flat ? "px-3 pb-2.5 pt-2" : "rounded-md px-3 py-2 shadow-lg"}`}
       style={{
         top,
         left: flip ? undefined : x + 14,
         right: flip ? width - x + 14 : undefined,
         minWidth,
         maxWidth: 260,
-        background: "var(--app-panel)",
+        background: flat ? "var(--app-bg)" : "var(--app-panel)",
         border: "1px solid var(--app-border)",
+        borderTop: flat ? "2px solid var(--app-text-primary)" : undefined,
+        boxShadow: flat ? "0 6px 18px -8px rgba(0,0,0,0.25)" : undefined,
         color: "var(--app-text-primary)",
       }}
     >
@@ -163,8 +168,8 @@ export function Tip({ x, width, top, minWidth = 180, children }: { x: number; wi
 export function MarginField({ x0, x1, y, ticks, lo, hi, compact, zeroLabel }: { x0: number; x1: number; y: (v: number) => number; ticks: number[]; lo: number; hi: number; compact: boolean; zeroLabel?: string }) {
   return (
     <g>
-      {hi > 0 && <rect x={x0} y={y(hi)} width={x1 - x0} height={y(0) - y(hi)} fill="var(--party-rep-subtle)" opacity={0.28} />}
-      {lo < 0 && <rect x={x0} y={y(0)} width={x1 - x0} height={y(lo) - y(0)} fill="var(--party-dem-subtle)" opacity={0.28} />}
+      {hi > 0 && <rect x={x0} y={y(hi)} width={x1 - x0} height={y(Math.max(lo, 0)) - y(hi)} fill="var(--party-rep-subtle)" opacity={0.28} />}
+      {lo < 0 && <rect x={x0} y={y(Math.min(hi, 0))} width={x1 - x0} height={y(lo) - y(Math.min(hi, 0))} fill="var(--party-dem-subtle)" opacity={0.28} />}
       {ticks.map((t) => (
         <g key={t}>
           {t !== 0 && <line x1={x0} x2={x1} y1={y(t)} y2={y(t)} stroke="var(--app-border)" strokeOpacity={0.7} strokeDasharray="2 4" />}
@@ -173,7 +178,7 @@ export function MarginField({ x0, x1, y, ticks, lo, hi, compact, zeroLabel }: { 
           </text>
         </g>
       ))}
-      <line x1={x0} x2={x1} y1={y(0)} y2={y(0)} stroke="var(--app-text-muted)" strokeWidth={1.25} />
+      {lo <= 0 && hi >= 0 && <line x1={x0} x2={x1} y1={y(0)} y2={y(0)} stroke="var(--app-text-muted)" strokeWidth={1.25} />}
     </g>
   );
 }

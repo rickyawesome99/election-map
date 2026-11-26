@@ -6,6 +6,7 @@ import { fmtLean, fmtMargin, getRaceColor, leanColor, marginColor } from "@/lib/
 import { R26_COUNTIES_URL, R26_OFFICES, type R26County, type R26CountySlice, type R26Office } from "@/lib/results2026Types";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { LazyMount, MarginFig, Notes, Picked, PickedFig, Reveal, ScaleLegend, Seg, Stat, StatRow, SwingFig, TplMap, fmtInt, swingColor } from "./ui";
+import { countyHref } from "@/lib/countyHref";
 
 // Section 1: every county's 2026 House, Senate or governor vote and its swing from the 2024
 // presidential vote. The counties come from one static slice, fetched when the map nears the screen.
@@ -22,7 +23,7 @@ function CountyMap({ office, view, onPick, picked }: { office: R26Office; view: 
   const counties = data?.[office];
   const rows = useMemo<MapRow[]>(() => (counties ?? []).flatMap((c) => {
     const value = view === "swing" ? swing(c) : margin(c);
-    return value == null ? [] : [{ key: c[0], name: `${c[1]}, ${c[2]}`, value, href: `/historical/${c[0]}` }];
+    return value == null ? [] : [{ key: c[0], name: `${c[1]}, ${c[2]}`, value, href: countyHref(c[0]) }];
   }), [counties, view]);
   const stats = useMemo(() => {
     const s = (counties ?? []).map(swing).filter((v): v is number => v != null).sort((a, b) => a - b);
@@ -43,7 +44,7 @@ function CountyMap({ office, view, onPick, picked }: { office: R26Office; view: 
         colorOf={view === "swing" ? swingColor : getRaceColor} formatValue={view === "swing" ? fmtLean : fmtMargin} valueColor={view === "swing" ? leanColor : marginColor}
         onSelect={(r) => onPick(r ? r.key : null)} selectedKey={picked} panel={false} wide />
       {sel && (
-        <Picked id={sel[0]} title={<>{sel[1]}, {sel[2]}</>} href={`/historical/${sel[0]}`} linkLabel="County page" onClose={() => onPick(null)}>
+        <Picked id={sel[0]} title={<>{sel[1]}, {sel[2]}</>} href={countyHref(sel[0])} linkLabel="County page" onClose={() => onPick(null)}>
           <PickedFig label={`${OFFICE_NAME[office]} 2026`} note={<>D {fmtInt(sel[3])} · R {fmtInt(sel[4])} · {fmtInt(sel[5])} votes</>}><MarginFig v={margin(sel)} size="1.5rem" /></PickedFig>
           <PickedFig label="President 2024"><MarginFig v={sel[6]} size="1.5rem" /></PickedFig>
           <PickedFig label="Swing"><SwingFig v={selSwing} size="1.5rem" /></PickedFig>

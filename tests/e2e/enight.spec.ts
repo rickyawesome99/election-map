@@ -148,7 +148,7 @@ test("the overview links to the results page", async ({ page }) => {
   await page.goto("/overview");
   await page.getByRole("link", { name: /Election Night Results/ }).click();
   await expect(page).toHaveURL(/\/enight$/);
-  // The election-night page is reached from the overview only: the Results tab is the 2026 Results page (user, 2026-11-25).
+  // The election-night page is reached from the overview only: the 2026 Results page is listed under Analysis (user, 2026-11-25).
   await expect(page.locator("nav").getByRole("link", { name: "Election Night" })).toHaveCount(0);
   await expect(page.getByRole("heading", { name: "2026 Election Night" })).toBeVisible({ timeout: 30_000 });
 });

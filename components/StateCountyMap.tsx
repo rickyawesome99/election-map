@@ -9,6 +9,7 @@ import { useStaticJson } from "@/lib/useStaticJson";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { fmtLean, getRaceColor, leanColor } from "@/lib/colorScale";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import { countyHref } from "@/lib/countyHref";
 
 // Per-state TopoJSON, split from public/us-counties.json by scripts/split-national-maps.mjs —
 // a state page only fetches its own counties instead of every state's (previously 3.0 MB
@@ -190,7 +191,7 @@ export default function StateCountyMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => (onOpen ? onOpen(`/historical/${county.fips}`) : setSelected(isSelected ? null : county))}
+                    onClick={() => (onOpen ? onOpen(countyHref(county.fips)) : setSelected(isSelected ? null : county))}
                     style={{
                       default: {
                         fill,
@@ -291,7 +292,7 @@ export default function StateCountyMap({
             <span className="whitespace-nowrap text-sm font-bold">{nameOf(selected)}</span>
             <CountyCardClose small onClick={() => setSelected(null)} />
           </div>
-          <div className="mt-0.5"><CountyCardLink href={`/historical/${selected.fips}`} /></div>
+          <div className="mt-0.5"><CountyCardLink href={countyHref(selected.fips)} /></div>
         </div>
       )}
       {!inset && (selected || standIn) && (
@@ -306,7 +307,7 @@ export default function StateCountyMap({
                 {...card(c)}
                 variant="panel"
                 aside={<CountyCardClose onClick={() => setSelected(null)} />}
-                footer={<CountyCardLink href={`/historical/${c.fips}`} />}
+                footer={<CountyCardLink href={countyHref(c.fips)} />}
               />
             </div>
           ))}

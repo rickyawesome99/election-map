@@ -18,7 +18,7 @@ import { forecastRace, raceCard, projectRaceResults, projectedCountyMapEntries, 
 import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
 import { pastElectionHref } from "@/lib/pastElections";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
 import FinalForecastPill from "@/components/FinalForecastPill";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
 
@@ -77,7 +77,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
       {/* Hero */}
       <div
         style={{
-          background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${accentColor} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          background: heroTint(accentColor),
           minHeight: "300px",
         }}
       >

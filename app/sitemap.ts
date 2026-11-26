@@ -16,12 +16,13 @@ import { generateStaticParams as modelStatePages } from "@/app/model/[abbr]/page
 import { generateStaticParams as precinctDistrictPages } from "@/app/analysis/districts/[slug]/page";
 import { generateStaticParams as pollsterPages } from "@/app/analysis/pollsters/[slug]/page";
 import { generateStaticParams as methodologyPages } from "@/app/methodology/[[...model]]/page";
+import { countyHref } from "@/lib/countyHref";
 
 // Every public page. Left out: /audit (internal data checks), /model/state and /model/district
 // (views of a query string, reached from the pages listed here), and the redirects /states
 // (→ /analysis/delegation) and /analysis/oh-31 (→ its /analysis/districts page, listed below).
 const STATIC = [
-  "/overview", "/results", "/enight", "/house", "/senate", "/governor", "/historical", "/model", "/war",
+  "/overview", "/results", "/enight", "/forecast", "/house", "/senate", "/governor", "/historical", "/model", "/war",
   "/analysis", "/analysis/calendar", "/analysis/delegation", "/analysis/forecasts", "/analysis/markets", "/analysis/model-review",
   "/analysis/generic-ballot", "/analysis/polling-misses", "/analysis/pollsters", "/analysis/popular-vote", "/analysis/turnout",
   "/district-finder", "/about",
@@ -72,7 +73,7 @@ export default async function sitemap({ id }: { id: number | string | Promise<nu
   paths.push("/sources");
   // Built on request rather than ahead of time, but every one of them is a real page.
   for (const slug of getAllCandidateSlugs()) paths.push(`/candidates/${slug}`);
-  for (const fips of Object.keys(countyPresidentialData)) paths.push(`/historical/${fips}`);
+  for (const fips of Object.keys(countyPresidentialData)) paths.push(countyHref(fips));
 
   return [...new Set(paths)].map((path) => ({ url: `${SITE_URL}${path}` }));
 }

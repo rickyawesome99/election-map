@@ -11,6 +11,7 @@ import { useStaticJson } from "@/lib/useStaticJson";
 import { countyDisplayName } from "@/lib/countyName";
 import { isRealName } from "@/lib/personName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
+import { countyHref } from "@/lib/countyHref";
 
 // County choropleth of ONE past statewide election. Results arrive as props from the server
 // page (never imported here — the county data files are server-only), the geometry is the
@@ -234,7 +235,7 @@ export default function PastElectionCountyMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => (onOpen ? onOpen(`/historical/${county.fips}`) : setSelected(isSelected ? null : county))}
+                    onClick={() => (onOpen ? onOpen(countyHref(county.fips)) : setSelected(isSelected ? null : county))}
                     style={{
                       default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 1.5 : 0.5, outline: "none" },
                       hover: { fill, stroke: hoverStroke, strokeWidth: 1, outline: "none", cursor: "pointer" },
@@ -306,7 +307,7 @@ export default function PastElectionCountyMap({
                 size={panelSize}
                 subtitle={`${stateName} · FIPS ${c.fips}`}
                 aside={<CountyCardClose onClick={() => setSelected(null)} />}
-                footer={<CountyCardLink href={`/historical/${c.fips}`} />}
+                footer={<CountyCardLink href={countyHref(c.fips)} />}
               />
             </div>
           ))}

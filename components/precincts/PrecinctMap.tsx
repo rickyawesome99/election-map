@@ -42,6 +42,9 @@ export interface PrecinctMapProps {
   onSelect: (pid: number | null) => void;
   onMoved: (moved: boolean) => void;
   resetNonce: number;
+  /** Zoom from which roads and place names show (default STREETS_ZOOM). A small place such as DC
+   *  fits past the default, so its embed sets this above its fitted zoom. */
+  streetsZoom?: number;
 }
 
 export default function PrecinctMap(props: PrecinctMapProps) {
@@ -107,7 +110,7 @@ export default function PrecinctMap(props: PrecinctMapProps) {
       const pageBg = getComputedStyle(document.documentElement).getPropertyValue("--app-bg").trim() || (darkMode ? "#0d1117" : "#faf9f6");
       for (const l of map.getStyle().layers) {
         if (l.type === "background") map.setPaintProperty(l.id, "background-color", pageBg);
-        else map.setLayerZoomRange(l.id, Math.max(l.minzoom ?? 0, STREETS_ZOOM), l.maxzoom ?? 24);
+        else map.setLayerZoomRange(l.id, Math.max(l.minzoom ?? 0, props.streetsZoom ?? STREETS_ZOOM), l.maxzoom ?? 24);
       }
       const before = map.getStyle().layers.find((l) => l.type === "symbol")?.id;
       map.addSource(SRC, { type: "vector", url: `pmtiles://${window.location.origin}/precincts/tiles/${shell.abbr}.pmtiles` });

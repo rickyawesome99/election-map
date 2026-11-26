@@ -6,7 +6,7 @@ import { notFound, permanentRedirect } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 import BackLink from "@/components/BackLink";
-import { PAGE_CONTAINER, PAGE_TITLE_STYLE } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, PAGE_TITLE_STYLE, heroTint } from "@/lib/pageLayout";
 import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import { WarByCycle } from "@/components/candidates/WarByCycle";
 import { Reveal } from "@/components/candidates/Reveal";
@@ -204,7 +204,7 @@ export default async function CandidatePage({
 
       {/* Header: the portrait, the name in the site's serif, office and party, and the record
           figures, across the full column on the party's tint. */}
-      <div style={{ background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, ${accent} 11%, var(--app-bg)) 0%, var(--app-bg) 62%)` }}>
+      <div style={{ background: heroTint(accent) }}>
         <header className={`${PAGE_CONTAINER} pb-6 pt-4`}>
           <BackLink fallbackHref={backHref} label={backLabel} />
 

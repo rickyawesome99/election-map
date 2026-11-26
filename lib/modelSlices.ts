@@ -324,7 +324,7 @@ export function districtModelSlice(id: string): DistrictPageData | null {
   };
 }
 
-// ── County (the TPL section of /historical/[fips]) ────────────────────────────
+// ── County (the TPL section of /states/[id]/counties/[fips]) ────────────────────────────
 
 export function countyModelSlice(fips: string, name: string): CountyPageData | null {
   const county = countyPresidentialData[fips];

@@ -15,7 +15,18 @@ export const PAGE_TITLE_STYLE = {
 } as const;
 export const PAGE_HERO_TOP = "pt-5";
 
-// The same tabs' header background: the red-to-blue party tint, faded into the page background
-// over its lower half (the race pages' fade) so the header never ends on a hard edge.
+// Header backgrounds. Every tinted header on the site fades top-down: the colour is strongest under
+// the nav bar and is gone by the foot of the header, so it never ends on a hard edge.
+const tint = (color: string, pct: number) => `color-mix(in srgb, ${color} ${pct}%, var(--app-bg))`;
+
+/** One colour (a party, a candidate's accent, a projected margin's colour) for a detail page's header. */
+export const heroTint = (color: string) =>
+  `linear-gradient(to bottom, ${tint(color, 24)} 0%, ${tint(color, 11)} 50%, var(--app-bg) 100%)`;
+
+/** The same fade with no party to show. */
+export const HERO_NEUTRAL_BG = "linear-gradient(to bottom, var(--app-tab-bg) 0%, var(--app-bg) 100%)";
+
+// The top-level tabs' header: both parties, Democrats on the left and Republicans on the right,
+// under the same top-down fade.
 export const PAGE_HERO_BG =
-  "linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)";
+  `linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(to right, ${tint("var(--party-dem)", 22)} 0%, ${tint("var(--party-rep)", 22)} 100%)`;

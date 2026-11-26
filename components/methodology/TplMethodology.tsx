@@ -12,6 +12,7 @@ import {
   FF_K, FF_MAX, IMPUTED_RACE_WEIGHT, IMPUTED_HOUSE_ROW_WEIGHT, IMPUTED_LEG_ROW_WEIGHT, LEG_NOT_UP_MODE, LEG_NOT_UP_SLOPE_K, LEG_UNOPPOSED_MODE, type ComputedRace, type YearAggregation,
 } from "@/lib/tplCompute";
 import { Block, Code, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, N, P, Section, pct, signed, type ConstantRow, type LedgerLine } from "./kit";
+import { countyHref } from "@/lib/countyHref";
 
 const TYPE_NAME: Record<string, string> = { P: "President", S: "Senate", H: "House", L: "State Legislature", G: "Governor" };
 const link = (href: string, text: ReactNode) => <Link href={href} className="underline underline-offset-2">{text}</Link>;
@@ -395,7 +396,7 @@ export function CountyTplMethodology() {
 
       {calc && exRace && (
         <Section id="example" kicker="Worked example · live" title="Franklin County, Ohio"
-          lede={<>County page: {link(`/historical/${fips}`, "Franklin County")}.</>}>
+          lede={<>County page: {link(countyHref(fips), "Franklin County")}.</>}>
           <Block label={`${exRace.year} ${exRace.race}`} meta="county margin, statewide strips"><Ledger lines={raceLedger(exRace)} /></Block>
           <Block label="Year aggregation"><YearTable aggs={calc.yearAggregations} /></Block>
           <Ledger lines={[{ label: "County TPL", value: <M v={calc.tpl} />, total: true }, { op: "", label: "Ohio State TPL", value: <M v={stateTpl} /> }]} />

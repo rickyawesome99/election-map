@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { COUNTY_PATH } from "@/lib/countyHref";
 
 // The page a click is navigating to, set before the router fetches and renders it so the tab
 // strip and the page area can switch at once. AppShell sets it from any in-site link click and
@@ -158,9 +159,11 @@ export function usePendingNav(): PendingNav | null {
 const TAB_KINDS: Record<string, PendingKind> = {
   "/overview": "overview",
   "/enight": "results",
-  "/house": "forecast",
-  "/senate": "forecast",
-  "/governor": "forecast",
+  "/forecast": "forecast",
+  // The chamber pages share the Legislatures layout: header summary, control map, table.
+  "/house": "legislatures",
+  "/senate": "legislatures",
+  "/governor": "legislatures",
   "/legislatures": "legislatures",
   "/historical": "historical",
   "/precincts": "precincts",
@@ -178,7 +181,7 @@ export function pendingKindFor(pathname: string): PendingKind | null {
   // The bare /legislature route forwards to the state page's legislature section.
   if (/^\/states\/[^/]+(\/legislature)?$/.test(pathname)) return "state";
   if (/^\/candidates\/[^/]+$/.test(pathname)) return "candidate";
-  if (/^\/historical\/\d{5}$/.test(pathname)) return "county";
+  if (COUNTY_PATH.test(pathname)) return "county";
   return null;
 }
 

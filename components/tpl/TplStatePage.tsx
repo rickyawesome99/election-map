@@ -16,7 +16,7 @@ import { SeatCrumbs } from "@/components/SeatBreadcrumb";
 import { MATRIX_ROWS, RACE_TYPE_LABELS, fmt1, fmt2, marginColor, ordinal, stateHref } from "./format";
 import type { DistrictPageData, StatePageData, TplRace } from "./types";
 import { AllRacesButton, ArrowOut, M, Fact, Fig, VERY_MUTED } from "./ui";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
 import { startPendingNav } from "@/lib/navPending";
 import { useDesktopPointer } from "@/lib/useDesktopPointer";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -103,7 +103,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: `linear-gradient(to bottom, transparent 35%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${tint} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` }}>
+      <div style={{ background: heroTint(tint) }}>
         <div className={PAGE_CONTAINER}>
           {/* Seat-style context bar, as on the past election pages: crumbs left, the state
               picker and methodology link right, closed by a heavy rule. */}

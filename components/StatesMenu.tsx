@@ -164,7 +164,7 @@ export default function StatesMenu({
         aria-haspopup="dialog"
         aria-expanded={open}
         aria-current={active ? "page" : undefined}
-        className={`${className} flex cursor-pointer items-center gap-1`}
+        className={`${className} -mr-1.5 flex cursor-pointer items-center gap-0.5 lg:-mr-0.5 xl:-mr-1.5`}
         style={{ color: "var(--app-text-primary)" }}
       >
         States

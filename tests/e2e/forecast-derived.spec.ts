@@ -27,7 +27,7 @@ function parseMargin(text: string): number {
 
 for (const chamber of ["senate", "governor", "house"] as const) {
   test(`${chamber} race list ratings are the bucket of the displayed margin`, async ({ page }) => {
-    await page.goto(`/${chamber}`);
+    await page.goto(`/forecast?chamber=${chamber}`);
     // The race list ("All races"), not the Outlook tiles above it, whose seat ratings sit beside the
     // generic-ballot figure rather than a race margin.
     const list = page.locator("section", { has: page.getByRole("heading", { name: "All races" }) });
@@ -71,7 +71,7 @@ test("race page shows the derived probability, range and rating", async ({ page 
 });
 
 test("forecast page draws the simulated seat distribution for each chamber", async ({ page }) => {
-  await page.goto("/senate");
+  await page.goto("/forecast?chamber=senate");
   // The national sections sit below the race list and mount as they scroll near (Deferred in
   // components/ForecastOutlook.tsx, 2026-11-17), so scroll down until Seat Distribution is there.
   await expect(async () => {

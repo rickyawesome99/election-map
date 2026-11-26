@@ -87,6 +87,8 @@ export default function AnalysisPage() {
     {
       title: "Reference",
       entries: [
+        { href: "/results", kicker: "Results", title: `${electionYear} Results`, graphic: "results",
+          description: <>The {electionYear} election in detail: county swings from the 2024 presidential vote, which states have certified, each party&rsquo;s raw vote against 2024, the biggest shifts, the adjusted House popular vote, and the closest races.</> },
         { href: "/historical", kicker: "Results", title: "Historical Results", graphic: "historical",
           description: <>Past results by state, county and congressional district from 2008, and state legislative results for every chamber from 2016, each county with its own page.</> },
         { href: "/analysis/delegation", kicker: "Seats", title: "Current Seat Delegation", graphic: "delegation",

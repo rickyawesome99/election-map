@@ -10,6 +10,7 @@ import { useTplGeo } from "./TplGeo";
 import { useStaticJson } from "@/lib/useStaticJson";
 import type { CountyScore, ModelSummary } from "./types";
 import { Foot, M, Pills, Segmented, TD, TD_R, TH, TH_R, VERY_MUTED } from "./ui";
+import { countyHref } from "@/lib/countyHref";
 
 // The map hub: one choropleth with a States/Districts/Counties toggle and a year lens, the ranked
 // table beside it (the state index: every state with its race count), then the national reference. The lens recolors the map by one cycle's WRS instead of the blended TPL and
@@ -48,7 +49,7 @@ export function TplHub({ summary, evUnits }: { summary: ModelSummary; evUnits: E
       ? summary.states.map((s) => ({ key: s.name, name: s.name, value: lens === "all" ? s.tpl : s.yearWrs[lens] ?? s.tpl, href: stateHref(s.id), since24: s.since24, races: lens === "all" ? s.races : s.yearRaces[lens] ?? 0 }))
       : geo === "districts" ? summary.districts.map((d) => ({ key: d.id, name: d.code, value: lens === "all" ? d.tpl : d.yearWrs[lens] ?? d.tpl, href: districtHref(d.state, d.code), since24: d.since24 }))
       // Counties have no TPL page of their own: they open the county's page.
-      : (counties.data ?? []).map((c) => ({ key: c.fips, name: `${c.name}, ${c.state}`, value: lens === "all" ? c.tpl : c.yearWrs[lens] ?? c.tpl, href: `/historical/${c.fips}` }));
+      : (counties.data ?? []).map((c) => ({ key: c.fips, name: `${c.name}, ${c.state}`, value: lens === "all" ? c.tpl : c.yearWrs[lens] ?? c.tpl, href: countyHref(c.fips) }));
     return list;
   }, [summary, geo, lens, counties.data]);
 

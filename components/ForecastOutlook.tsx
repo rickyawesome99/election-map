@@ -156,7 +156,7 @@ export function OutlookHero({ data }: { data: OutlookData }) {
         {[
           { key: "gb", label: "Generic Ballot", href: "#national-polling", value: fmtLean(gb.diff), sub: `D ${gb.dem.toFixed(1)} · R ${gb.rep.toFixed(1)}`, bg: tileColor(gb.diff <= 0 ? "D" : "R", marginToRating(gb.diff)) },
           { key: "approval", label: "Pres. Approval", href: "#national-polling", value: `${approval.diff > 0 ? "−" : "+"}${Math.abs(approval.diff).toFixed(1)}`, sub: `${approval.approve.toFixed(1)} approve · ${approval.disapprove.toFixed(1)} disapprove`, bg: tileColor(approval.diff > 0 ? "disapprove" : "approve") },
-          ...([["house", "House", "/house", house], ["senate", "Senate", "/senate", senate], ["governor", "Governors", "/governor", governor]] as const).map(([type, label, href, s]) => {
+          ...([["house", "House", "/forecast?chamber=house", house], ["senate", "Senate", "/forecast?chamber=senate", senate], ["governor", "Governors", "/forecast?chamber=governor", governor]] as const).map(([type, label, href, s]) => {
             const call = chamberCall(sims[type], TOTAL_SEATS_BY_TYPE[type]);
             return { key: type, label, href, value: `${s.dem}–${s.rep}`, sub: `${call.rating} · ${Math.round(call.odds * 100)}% ${call.party} ${type === "governor" ? "majority" : "control"}`, short: call.rating, bg: tileColor(call.party as "D" | "R", call.rating) };
           }),

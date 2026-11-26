@@ -39,7 +39,7 @@ export default function ResultsPage() {
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <LegacyHashRedirect />
       <TouchHover />
-      <StandfirstHeader kicker={String(ELECTION_YEAR)} title="Results" href="/overview" hubLabel="Overview">
+      <StandfirstHeader kicker={String(ELECTION_YEAR)} title="Results" href="/analysis" hubLabel="Analysis">
         With every seat contested, the House vote came in at <Fig><span style={{ color: marginColor(gb.y2026.imputed) }}>{fmtMargin(gb.y2026.imputed)}</span></Fig>, a shift
         of <Fig><span style={{ color: leanColor(shift) }}>{fmtLean(shift)}</span></Fig> from 2024. <Fig>{certified}</Fig> of 50 states have certified their results.
       </StandfirstHeader>

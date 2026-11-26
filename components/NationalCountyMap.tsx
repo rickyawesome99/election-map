@@ -23,6 +23,7 @@ import { popVoteData } from "@/data/popVoteData";
 import Segmented from "@/components/MarketSegmented";
 import PastRaceTable from "@/components/PastRaceTable";
 import { PAGE_CONTAINER, PAGE_HERO_TOP, PAGE_TITLE_STYLE, PAGE_HERO_BG } from "@/lib/pageLayout";
+import { countyHref } from "@/lib/countyHref";
 
 type RaceType = MapOffice;
 type GeoLevel = MapLevel;
@@ -230,7 +231,7 @@ const GeoLayer = memo(function GeoLayer({
             subtitle: `${stateInfo?.name ?? ""} · FIPS ${key}`,
             hasElection,
             result,
-            moreInfoHref: `/historical/${key}`,
+            moreInfoHref: countyHref(key),
             // Statewide offices: the county's state race. House: its one district, if it has one.
             nameKey: raceType === "house" ? (entries[key]?.nameKey ?? null) : (stateInfo?.abbr ?? null),
           };

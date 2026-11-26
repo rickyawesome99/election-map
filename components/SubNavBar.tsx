@@ -2,34 +2,36 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useCallback, useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { usePendingNav } from "@/lib/navPending";
 import StatesMenu from "./StatesMenu";
+import ChambersMenu, { chamberLinkFor } from "./ChambersMenu";
 
 // prefetch: false on the heaviest pages (their RSC payloads are 100-250 KB each) so every page
 // view does not download them for links the reader may never click; they prefetch on hover instead.
 const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = [
   { key: "overview",         label: "Overview" },
   { key: "states",           label: "States" }, // a button that opens the state grid (StatesMenu)
-  { key: "results",          label: "Results", prefetch: false },
+  { key: "chambers",         label: "Chambers" }, // a button that opens House / Senate / Governor / Legislatures (ChambersMenu)
   { key: "model",            label: "TPL", prefetch: false },
   { key: "war",              label: "WAR", prefetch: false },
-  { key: "forecast",         label: "Forecast" },
-  { key: "legislatures",     label: "Legislatures", prefetch: false },
+  { key: "forecast",         label: "Forecast", prefetch: false },
   { key: "precincts",        label: "Precincts" },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
   { key: "district-finder",  label: "District Finder" },
 ];
 
 function getActiveTab(pathname: string): string | null {
-  if (pathname === "/house" || pathname === "/senate" || pathname === "/governor"
-    || pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/")) return "forecast";
-  // The national board and every state's chamber pages (/states/ks/legislature/house).
-  if (pathname === "/legislatures" || /^\/states\/[^/]+\/legislature(\/|$)/.test(pathname)) return "legislatures";
-  // Historical Results is an Analysis entry; it and its county pages keep their /historical URLs.
-  if (pathname === "/historical" || pathname.startsWith("/historical/")) return "analysis";
-  if (/^\/states\/[^/]+$/.test(pathname)) return "states";
-  if (pathname === "/results") return "results";
+  // The four chamber pages, the race and seat pages under /house, /senate and /governor, and every
+  // state's legislative chamber pages (/states/ks/legislature/house).
+  if (chamberLinkFor(pathname)) return "chambers";
+  if (pathname === "/forecast") return "forecast";
+  // Historical Results is an Analysis entry and keeps its /historical URL.
+  if (pathname === "/historical") return "analysis";
+  // A state's page and its county pages (/states/oh/counties/39049).
+  if (/^\/states\/[^/]+(\/counties\/[^/]+)?$/.test(pathname)) return "states";
+  // The 2026 Results page is an Analysis entry and keeps its /results URL (user, 2026-11-25).
+  if (pathname === "/results") return "analysis";
   if (pathname === "/precincts") return "precincts";
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/war") return "war";
@@ -42,28 +44,6 @@ function getActiveTab(pathname: string): string | null {
 const NAV_HEIGHT = 45; // px, including the bottom rule; AppShell reserves the same space in flow
 const PIN_RELEASE_PX = 80;
 
-type Chamber = "house" | "senate" | "governor";
-const FORECAST_TAB_KEY = "raceType"; // written by ForecastMap's persistRaceType
-
-function chamberOfPath(pathname: string): Chamber | null {
-  const first = pathname.split("/")[1];
-  return first === "house" || first === "senate" || first === "governor" ? first : null;
-}
-
-function readSavedChamber(): Chamber {
-  try {
-    const saved = window.localStorage.getItem(FORECAST_TAB_KEY);
-    return saved === "house" || saved === "senate" || saved === "governor" ? saved : "senate";
-  } catch {
-    return "senate"; // storage unavailable (private mode)
-  }
-}
-
-function subscribeToStorage(onChange: () => void): () => void {
-  window.addEventListener("storage", onChange);
-  return () => window.removeEventListener("storage", onChange);
-}
-
 /** The tab strip: in the sub-bar under the header below lg, inline in the header from lg up. */
 export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   const pathname = usePathname();
@@ -71,11 +51,6 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
   // The tab of a page being navigated to shows as active straight away, before it has loaded.
   const pending = usePendingNav();
   const activeTab = getActiveTab(pending?.path ?? pathname);
-  // The Forecast tab returns to the chamber last viewed. The saved preference is re-read on
-  // every render (the tabs live in the root layout and re-render on each navigation); the
-  // server snapshot is "senate", so hydration agrees before the stored value takes over.
-  const savedChamber = useSyncExternalStore(subscribeToStorage, readSavedChamber, () => "senate" as Chamber);
-  const forecastChamber = chamberOfPath(pathname) ?? savedChamber;
   const activeTabRef = useRef<HTMLElement | null>(null);
   const tabRefs = useRef<Map<string, HTMLElement>>(new Map());
   const navRef = useRef<HTMLElement | null>(null);
@@ -137,8 +112,9 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
         };
 
         if (key === "states") return <StatesMenu key={key} className={tabClass} active={isActive} buttonRef={setRef} />;
+        if (key === "chambers") return <ChambersMenu key={key} className={tabClass} active={isActive} buttonRef={setRef} />;
 
-        const targetHref = href ?? (key === "forecast" ? `/${forecastChamber}` : `/${key}`);
+        const targetHref = href ?? `/${key}`;
 
         return (
           <Link
@@ -164,13 +140,6 @@ export function NavTabs({ variant }: { variant: "bar" | "header" }) {
 /** Below lg: the tab bar under the sticky header. Hidden from lg up, where the header carries the tabs. */
 export default function SubNavBar() {
   const pathname = usePathname();
-
-  // A chamber reached through a race page (/governor/nv) counts as the last one viewed too.
-  useEffect(() => {
-    const here = chamberOfPath(pathname);
-    if (!here) return;
-    try { window.localStorage.setItem(FORECAST_TAB_KEY, here); } catch { /* storage unavailable */ }
-  }, [pathname]);
 
   // The bar sits under the sticky header and slides up behind it once the page scrolls past it,
   // coming back at the top. The chevron tab reopens it mid-page; a pinned bar stays open until

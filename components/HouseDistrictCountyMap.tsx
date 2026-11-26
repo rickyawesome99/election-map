@@ -13,6 +13,7 @@ import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleMaxR, bubble
 import { isRealName } from "@/lib/personName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { countyDisplayName } from "@/lib/countyName";
+import { countyHref } from "@/lib/countyHref";
 
 // County map of ONE House district on the map in force that year. Counties the district shares
 // with a neighbour are drawn split at the district line: the district's share is painted by its
@@ -263,7 +264,7 @@ export default function HouseDistrictCountyMap({
             variant="panel"
             size={panelSize}
             aside={<CountyCardClose onClick={() => setSelected(null)} />}
-            footer={<CountyCardLink href={`/historical/${selected.fips}`} />}
+            footer={<CountyCardLink href={countyHref(selected.fips)} />}
           />
         </div>
       )}

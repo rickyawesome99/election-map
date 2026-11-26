@@ -3,7 +3,7 @@
 // (aria-hidden): the row's title and description carry the meaning. No data, no script.
 import type { ReactNode } from "react";
 
-export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "historical" | "modelReview";
+export type HubGraphicId = "forecasts" | "markets" | "pollsters" | "misses" | "popularVote" | "genericBallot" | "turnout" | "precincts" | "delegation" | "calendar" | "historical" | "modelReview" | "results";
 
 const DEM = "var(--party-dem)";
 const REP = "var(--party-rep)";
@@ -201,6 +201,22 @@ function Historical() {
   );
 }
 
+/** Three chambers' seats after the count: a D | R bar each, the halfway mark through all three. */
+function Results() {
+  const rows: [number, number][] = [[14, 0.6], [36, 0.56], [58, 0.54]];
+  return (
+    <Frame>
+      {rows.map(([y, d]) => (
+        <g key={y}>
+          <rect x="18" y={y} width={324 * d - 1.5} height="13" rx="2" fill={DEM} />
+          <rect x={18 + 324 * d + 1.5} y={y} width={324 * (1 - d) - 1.5} height="13" rx="2" fill={REP} />
+        </g>
+      ))}
+      <line x1="180" y1="6" x2="180" y2="79" stroke={INK} strokeWidth="2" />
+    </Frame>
+  );
+}
+
 /** Forecast against result: the dashed line is a perfect forecast, the dots a band below it, three missed calls ringed. */
 function ModelReview() {
   const dots: [number, number, boolean][] = [[26, 70, false], [48, 68, false], [66, 61, false], [88, 62, false], [108, 53, false], [126, 55, false], [146, 47, false], [164, 49, false], [206, 40, true], [226, 38, true], [246, 31, true], [268, 30, true], [290, 23, true], [312, 22, true], [334, 14, true]];
@@ -219,7 +235,7 @@ function ModelReview() {
 
 const GRAPHICS: Record<HubGraphicId, () => ReactNode> = {
   forecasts: Forecasts, markets: Markets, pollsters: Pollsters, misses: Misses, popularVote: PopularVote, genericBallot: GenericBallot,
-  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, historical: Historical, modelReview: ModelReview,
+  turnout: Turnout, precincts: Precincts, delegation: Delegation, calendar: Calendar, historical: Historical, modelReview: ModelReview, results: Results,
 };
 
 export default function HubGraphic({ id }: { id: HubGraphicId }) {

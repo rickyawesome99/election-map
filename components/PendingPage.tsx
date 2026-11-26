@@ -144,8 +144,8 @@ function OverviewSkeleton() {
   );
 }
 
-function ForecastSkeleton({ path }: { path: string }) {
-  const chamber = path.slice(1);
+function ForecastSkeleton() {
+  const chamber = "senate"; // /forecast opens on the Senate until a saved chamber or ?chamber= takes over
   return (
     <>
       <Hero className="pb-0">
@@ -174,11 +174,14 @@ function ForecastSkeleton({ path }: { path: string }) {
   );
 }
 
-function LegislaturesSkeleton() {
+// Also the placeholder for /house, /senate and /governor, which share the layout.
+const CHAMBER_TITLES: Record<string, string> = { "/house": "U.S. House", "/senate": "U.S. Senate", "/governor": "Governors" };
+
+function LegislaturesSkeleton({ path }: { path: string }) {
   return (
     <>
       <Hero>
-        <Title>State Legislatures</Title>
+        <Title>{CHAMBER_TITLES[path] ?? "State Legislatures"}</Title>
         <div className="mt-4"><Lines widths={["w-full max-w-3xl", "w-11/12 max-w-3xl", "w-1/3"]} /></div>
         <div className="mt-6 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
           <div className="flex items-end justify-between"><div className="space-y-2"><Sk className="h-2.5 w-44" /><Sk className="h-7 w-20" /><Sk className="h-2.5 w-16" /></div><div className="flex flex-col items-end space-y-2"><Sk className="h-7 w-20" /><Sk className="h-2.5 w-16" /></div></div>

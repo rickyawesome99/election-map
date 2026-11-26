@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { FIPS_TO_STATE } from "./lib/fips";
 
 const nextConfig: NextConfig = {
   // The candidate route reads one generated shard per state by a computed name, which file tracing
@@ -23,8 +24,8 @@ const nextConfig: NextConfig = {
     // the model shims); a leftover `tab=` is harmless.
     const tab = (value: string, destination: string) => ({ source: "/", has: [{ type: "query" as const, key: "tab", value }], destination, permanent: false });
     return [
-      tab("(?<tab>house|senate|governor)", "/:tab"),
-      tab("(forecast|map)", "/senate"),
+      tab("(?<tab>house|senate|governor)", "/forecast?chamber=:tab"),
+      tab("(forecast|map)", "/forecast"),
       tab("states", "/analysis/delegation"),
       tab("counties", "/historical"),
       tab("district-finder", "/district-finder"),
@@ -45,6 +46,13 @@ const nextConfig: NextConfig = {
       { source: "/model/candidates", destination: "/war", permanent: true },
       { source: "/model/war", destination: "/war", permanent: false },
       { source: "/methodology/sources", destination: "/sources", permanent: true },
+      // County pages moved under their state (user, 2026-11-25): /historical/39049 → /states/oh/counties/39049.
+      // One rule per state, keyed on the FIPS prefix, so the old URLs resolve at the edge.
+      ...Object.entries(FIPS_TO_STATE).map(([prefix, { abbr }]) => ({
+        source: `/historical/:fips(${prefix}\\d{3})`,
+        destination: `/states/${abbr.toLowerCase()}/counties/:fips`,
+        permanent: true,
+      })),
     ];
   },
 };

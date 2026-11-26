@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { fmtLean, formatProjectedMargin, leanColor, projectedMarginColor } from "@/lib/colorScale";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
 
 /**
  * The header of a race page (House, Senate, Governor). Pill row with the race switcher at its
@@ -63,7 +63,7 @@ export default function RaceHero({
   return (
     <div
       style={{
-        background: `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${projectedMarginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+        background: heroTint(projectedMarginColor(projectedMargin)),
       }}
     >
       <div className={`${PAGE_CONTAINER} pt-6 ${introBelow ? "pb-[21px]" : "pb-8"}`}>

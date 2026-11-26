@@ -10,7 +10,7 @@ import LegislativeAtlas from "@/components/atlas/LegislativeAtlas";
 import ChamberSummary from "@/components/atlas/ChamberSummary";
 import StateSwitcher from "@/components/StateSwitcher";
 import { StatePill } from "@/components/RaceHeroPills";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, heroTint, HERO_NEUTRAL_BG } from "@/lib/pageLayout";
 import precinctCoverage from "@/data/precincts/coverage.json";
 
 // A precinct return for the election year is on file for this chamber: its district maps colour the
@@ -61,7 +61,7 @@ export default async function ChamberPage({ params }: { params: Promise<{ id: st
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div style={{ background: holder ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${holder === "D" ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)` : "linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, var(--app-tab-bg) 0%, var(--app-bg) 65%)" }}>
+      <div style={{ background: holder ? heroTint(holder === "D" ? "var(--party-dem)" : "var(--party-rep)") : HERO_NEUTRAL_BG }}>
         <div className={`${PAGE_CONTAINER} pt-6`}>
           <div className="flex flex-wrap items-center gap-2 mb-3">
             <StatePill name={state.name} abbr={state.abbr} />

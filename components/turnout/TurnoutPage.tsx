@@ -15,6 +15,7 @@ import {
   cycleTypeOf, projectionSliceUrl, turnoutSliceUrl,
   type NationalYearRow, type ProjectedRace, type ProjectionStateSlice, type StateSeries, type TurnoutMapView, type TurnoutOffice, type TurnoutRace, type TurnoutSlice,
 } from "@/lib/turnoutTypes";
+import { countyHref } from "@/lib/countyHref";
 
 const TurnoutMap = dynamic(() => import("./TurnoutMap"), { loading: () => <div className="py-10 text-center text-xs" style={{ color: "var(--app-text-muted)" }}>Loading map…</div> });
 
@@ -515,7 +516,7 @@ function Projection({ states, projection, projectionNational, office }: Pick<Tur
                 {!detail && <tr><td colSpan={8} className="py-4 text-center" style={MUTED}>Loading counties…</td></tr>}
                 {shownCounties.map((c) => (
                   <tr key={c.fips} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                    <Td align="left" wrap><Link href={`/historical/${c.fips}`} className="hover:underline">{c.name}</Link></Td>
+                    <Td align="left" wrap><Link href={countyHref(c.fips)} className="hover:underline">{c.name}</Link></Td>
                     <Td muted phone={false}>{fmtInt(c.pres2024)}</Td>
                     <Td phone={false}>{c.midtermRatio.toFixed(2)}</Td>
                     <Td>{c.officeFactor.toFixed(2)}</Td>

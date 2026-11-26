@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
@@ -10,6 +10,7 @@ import { houseData, senateData, senateNoElection, senateHoldovers } from "@/data
 import { countyDemographics } from "@/data/countyDemographics";
 import { countyRaces2026 } from "@/lib/raceResults2026";
 import { FIPS_TO_STATE } from "@/lib/fips";
+import { countyHref } from "@/lib/countyHref";
 import { calculateCountyModel } from "@/lib/tplCompute";
 import { countyLeanTrend } from "@/lib/leanTrend";
 import { marginToRating, getRatingColors, fmtLean, leanColor } from "@/lib/colorScale";
@@ -20,7 +21,7 @@ import CountyTplCard from "@/components/CountyTplCard";
 import CountyCompareCard from "@/components/CountyCompareCard";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { AboutRaceCard, LedgerSectionHead, LedgerSubhead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
 import { StatePill, PILL } from "@/components/RaceHeroPills";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
@@ -101,7 +102,7 @@ export async function generateStaticParams() {
   return [];
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ fips: string }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ id: string; fips: string }> }) {
   const { fips } = await params;
   const county = countyPresidentialData[fips];
   if (!county) return { title: "County Not Found" };
@@ -113,10 +114,12 @@ export async function generateMetadata({ params }: { params: Promise<{ fips: str
   };
 }
 
-export default async function CountyPage({ params }: { params: Promise<{ fips: string }> }) {
-  const { fips } = await params;
+export default async function CountyPage({ params }: { params: Promise<{ id: string; fips: string }> }) {
+  const { id, fips } = await params;
   const county = countyPresidentialData[fips];
   if (!county) notFound();
+  // One URL per county: a county reached under another state's path goes to its own.
+  if (id !== county.state.toLowerCase()) permanentRedirect(countyHref(fips));
 
   const stateName = FIPS_TO_STATE[fips.slice(0, 2)]?.name ?? county.state;
   const areaLabel = getAreaLabel(county.state);
@@ -362,7 +365,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
       <div
         style={{
           background: tpl != null
-            ? `linear-gradient(to bottom, transparent 45%, var(--app-bg) 100%), linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
+            ? heroTint(heroIsD ? "var(--party-dem)" : "var(--party-rep)")
             : "var(--app-bg)",
         }}
       >

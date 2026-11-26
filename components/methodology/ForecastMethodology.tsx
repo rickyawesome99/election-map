@@ -70,7 +70,7 @@ export default function ForecastMethodology() {
   return (
     <>
       <Section id="overview" kicker="Forecast · House, Senate, Governor" title="One equation, three offices"
-        lede={<>All {all.length} races on the <Link href="/senate" className="underline underline-offset-2">Forecast</Link> tab are projected by the same additive model. A structural <strong>Model</strong> margin is built from the seat&rsquo;s partisan lean and four adjustments, then blended with the race&rsquo;s <strong>Polling Average</strong> in proportion to how much polling evidence exists. All margins are R-positive: <R>R+</R> is a Republican lead, <D>D+</D> a Democratic one. House, Senate and Governor differ only in which lean they start from and in the per-office constants listed below.</>}>
+        lede={<>All {all.length} races on the <Link href="/forecast" className="underline underline-offset-2">Forecast</Link> tab are projected by the same additive model. A structural <strong>Model</strong> margin is built from the seat&rsquo;s partisan lean and four adjustments, then blended with the race&rsquo;s <strong>Polling Average</strong> in proportion to how much polling evidence exists. All margins are R-positive: <R>R+</R> is a Republican lead, <D>D+</D> a Democratic one. House, Senate and Governor differ only in which lean they start from and in the per-office constants listed below.</>}>
         <Derivation rows={[
           { name: "Model", formula: "TPL + Environment + Incumbent + Fundraising + Candidates" },
           { name: "Projected Margin", formula: "(1 − w) × Model + w × (Polling Avg + POLL_MISS_SHRINK × POLL_MISS_HISTORICAL[office])" },

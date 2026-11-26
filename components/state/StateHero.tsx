@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { HeroBody } from "@/lib/statePage";
-import { PAGE_CONTAINER } from "@/lib/pageLayout";
+import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
 import StateSwitcher from "@/components/StateSwitcher";
 
 const PARTY_COLOR = { D: "var(--party-dem)", R: "var(--party-rep)", I: "var(--party-ind)" } as const;
@@ -173,7 +173,7 @@ export default function StateHero({
     <div
       style={{
         background: tpl != null
-          ? `linear-gradient(to bottom, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 24%, var(--app-bg)) 0%, color-mix(in srgb, ${isD ? "var(--party-dem)" : "var(--party-rep)"} 11%, var(--app-bg)) 50%, var(--app-bg) 100%)`
+          ? heroTint(isD ? "var(--party-dem)" : "var(--party-rep)")
           : "var(--app-bg)",
       }}
     >

@@ -1,7 +1,7 @@
 "use client";
 
-import { memo, useState, useEffect, useRef, useMemo, useCallback, type CSSProperties, type ReactNode } from "react";
-import { useRouter } from "next/navigation";
+import { memo, Suspense, useState, useEffect, useRef, useMemo, useCallback, type CSSProperties, type ReactNode } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import dynamic from "next/dynamic";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
@@ -130,9 +130,27 @@ export function useSiteTheme(): Theme {
   return festive ? FESTIVE_THEME : darkMode ? DARK_THEME : LIGHT_THEME;
 }
 
+const RACE_TYPE_KEY = "raceType";
+const isRaceType = (v: string | null): v is RaceType => v === "house" || v === "senate" || v === "governor";
+
 function persistRaceType(type: RaceType) {
-  localStorage.setItem("raceType", type);
-  document.cookie = `raceType=${type}; path=/; max-age=31536000; SameSite=Lax`;
+  try { localStorage.setItem(RACE_TYPE_KEY, type); } catch { /* storage unavailable (private mode) */ }
+}
+
+/** /forecast?chamber=house picks the chamber; with no parameter the page opens on the one last viewed.
+ *  Its own component under Suspense, so reading the query does not opt the page out of static rendering. */
+function ChamberParamSync({ onChamber }: { onChamber: (type: RaceType) => void }) {
+  // The hook only says when the query changed; the value is read from the address bar, which a tab
+  // click has already rewritten even when this effect first runs after it (the boundary can hydrate late).
+  const trigger = useSearchParams().get("chamber");
+  useEffect(() => {
+    const param = new URLSearchParams(window.location.search).get("chamber");
+    if (isRaceType(param)) { onChamber(param); return; }
+    let saved: string | null = null;
+    try { saved = localStorage.getItem(RACE_TYPE_KEY); } catch { /* storage unavailable */ }
+    if (isRaceType(saved)) onChamber(saved);
+  }, [trigger, onChamber]);
+  return null;
 }
 
 type TopLevelTab = "forecast" | "states" | "historical" | "district-finder";
@@ -140,11 +158,10 @@ type TopLevelTab = "forecast" | "states" | "historical" | "district-finder";
 
 export type ForecastMapProps = {
   activeTab: TopLevelTab;
-  raceType?: RaceType;
-  /** Forecast tab: this chamber's races (lib/forecast.forecastSummariesFor) and the states with no
-   * race this cycle, both computed by the server page. */
-  races?: ForecastSummary[];
-  noElection?: NoElectionEntry[];
+  /** Forecast tab (/forecast): every chamber's races (lib/final2026.forecastSummariesFor) and the
+   * states with no race this cycle, computed by the server page. The House / Senate / Governor
+   * toggle switches between them in place (user, 2026-11-25: one page, no navigation). */
+  forecast?: Record<RaceType, { races: ForecastSummary[]; noElection: NoElectionEntry[] }>;
   /** States tab (lib/stateRows.buildStateRows). */
   stateRows?: StateRow[];
   /** Forecast tab: the 2026 Outlook (components/ForecastOutlook.tsx) — the headline tiles at the top
@@ -274,10 +291,12 @@ const HouseStateOutlines = memo(function HouseStateOutlines({ t }: { t: Theme })
 });
 
 export default function ForecastMap({
-  activeTab, raceType = "senate",
-  races = NO_RACES, noElection = NO_ENTRIES, stateRows = NO_ROWS, outlookHero, outlookSections,
+  activeTab, forecast, stateRows = NO_ROWS, outlookHero, outlookSections,
 }: ForecastMapProps) {
   const router = useRouter();
+  const [raceType, setRaceType] = useState<RaceType>("senate");
+  const races = forecast?.[raceType].races ?? NO_RACES;
+  const noElection = forecast?.[raceType].noElection ?? NO_ENTRIES;
   const [selected, setSelected] = useState<ForecastSummary | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
   const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
@@ -291,9 +310,14 @@ export default function ForecastMap({
   const statesMapBoxRef = useRef<HTMLDivElement>(null);
   const [statesMapBoxHeight, setStatesMapBoxHeight] = useState<number | undefined>(undefined);
 
-  useEffect(() => {
-    if (activeTab === "forecast") persistRaceType(raceType);
-  }, [activeTab, raceType]);
+  // A chamber set from the URL or the saved preference: also clears the other chamber's selection.
+  const showChamber = useCallback((type: RaceType) => {
+    setRaceType(type);
+    setSelected(null);
+    setSelectedNoElection(null);
+    setHovered(null);
+    setHoveredNoElection(null);
+  }, []);
 
 
   // States tab: the list scrollbox is capped to the map/cartogram box's own height —
@@ -311,9 +335,9 @@ export default function ForecastMap({
 
   function selectRaceType(type: RaceType) {
     persistRaceType(type);
-    // Keep the reader where they are: the map and the toggle sit below the fold on phones.
-    startPendingNav(`/${type}`);
-    router.push(`/${type}`, { scroll: false });
+    showChamber(type);
+    // The address follows the tab without a navigation, so a shared link opens on the same chamber.
+    window.history.replaceState(null, "", `/forecast?chamber=${type}`);
   }
 
   const t = useSiteTheme();
@@ -342,6 +366,7 @@ export default function ForecastMap({
 
   return (
     <div className="min-h-screen overflow-x-clip" style={{ background: t.bg }}>
+      {activeTab === "forecast" && <Suspense fallback={null}><ChamberParamSync onChamber={showChamber} /></Suspense>}
 
       {/* ── Page content ── */}
       {/* Historical and Forecast use the detail pages' content column (PAGE_CONTAINER) instead of

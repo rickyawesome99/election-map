@@ -16,6 +16,7 @@ import {
   type TurnoutOffice, type TurnoutLevel, type TurnoutRace, type TurnoutEntry, type TurnoutSlice,
   type StateSeries, type StateYearRow, type NationalYearRow,
 } from "@/lib/turnoutTypes";
+import { countyHref } from "@/lib/countyHref";
 
 // ── The turnout data hub ──────────────────────────────────────────────────────
 // Everything /analysis/turnout shows is derived here, on the server, from the certified
@@ -507,7 +508,7 @@ export function countyEntries(year: number): Record<string, TurnoutEntry> {
     if (inputs.length === 0) continue;
     const priorPres = priorPresidentialYear(year);
     const priorPresVotes = hasPresData(priorPres) ? presYears(fips)[priorPres]?.totalVotes ?? null : null;
-    out[fips] = assemble(`${meta.countyName} ${areaLabel(abbr)}`, abbr, cvap, inputs, senateSpecial, priorPresVotes, `/historical/${fips}`);
+    out[fips] = assemble(`${meta.countyName} ${areaLabel(abbr)}`, abbr, cvap, inputs, senateSpecial, priorPresVotes, countyHref(fips));
   }
   return out;
 }
