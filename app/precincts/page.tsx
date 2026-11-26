@@ -1,9 +1,11 @@
-import { Fig, StandfirstHeader } from "@/components/StandfirstHeader";
+import { TPL_GLOBAL_CONSTANTS } from "@/data/tplModelData";
+import { PAGE_HERO_BG, PAGE_HERO_TOP, PAGE_TITLE_STYLE } from "@/lib/pageLayout";
 import PrecinctExplorer from "@/components/precincts/PrecinctExplorer";
 import { OFFICES, type Office, type OfficeSummary, type StateShell } from "@/components/precincts/types";
 import { statesData } from "@/data/statesData";
 import coverageJson from "@/data/precincts/coverage.json";
 import statesJson from "@/data/precincts/states.json";
+import nationalTrends from "@/data/precincts/nationalTrends.json";
 import { CERTIFIED_2026 } from "@/data/precincts/certified2026";
 
 export const metadata = {
@@ -51,18 +53,27 @@ export default function PrecinctsPage() {
   // Every year in the grid; the explorer shows odd years only for a state that voted in them.
   const years = coverage.years.map((year) => ({ year, loaded: states.some((s) => s.years[String(year)]) }));
   const precincts = states.reduce((n, s) => n + s.n, 0);
-  const loadedYears = years.filter((y) => y.loaded).map((y) => y.year);
   const certified2026 = states.filter((s) => s.years["2026"]);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <StandfirstHeader title="Precinct Results">
-        <Fig>{precincts.toLocaleString()}</Fig> precincts in <Fig>{states.length}</Fig> states, each with its vote for president,
-        Senate, governor, U.S. House and the state legislature. Every general election from <Fig>{loadedYears[0]}</Fig> to <Fig>{loadedYears.at(-1)}</Fig>{" "}
-        is fitted onto the same 2024 precinct lines, so a precinct can be followed through time.
-      </StandfirstHeader>
-      <main className="mx-auto max-w-7xl px-4 pb-10 pt-6 sm:px-6">
-        <PrecinctExplorer states={states} years={years} />
+      {/* The top-level tabs' header (lib/pageLayout), at the explorer's wider column so the title lines up with the map. */}
+      <div style={{ background: PAGE_HERO_BG }}>
+        <div className={`mx-auto max-w-7xl px-4 pb-4 sm:px-6 ${PAGE_HERO_TOP}`}>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+            <div className="min-w-0">
+              <h1 style={PAGE_TITLE_STYLE}>Precinct Results</h1>
+              <p className="mt-2 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+                {precincts.toLocaleString()} precincts, with every election fitted onto 2024 precinct lines.
+              </p>
+            </div>
+            {/* PrecinctExplorer portals its address search in here. */}
+            <div id="precinct-search-slot" className="shrink-0" />
+          </div>
+        </div>
+      </div>
+      <main className="mx-auto max-w-7xl px-4 pb-10 pt-4 sm:px-6">
+        <PrecinctExplorer states={states} years={years} national={nationalTrends} tplWeights={{ presidential: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS, midterm: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS_MIDTERM }} />
         <p className="mt-6 max-w-4xl text-xs leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
           Precinct boundaries are each state&rsquo;s November 2024 lines. This map was created using data from the Redistricting
           Data Hub; District of Columbia boundaries are from Open Data DC. Results not carried in those files come from the MIT

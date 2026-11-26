@@ -10,6 +10,7 @@ import { useDarkMode } from "@/lib/useDarkMode";
 import { useSiteTheme, type Theme } from "@/components/ForecastMap";
 import { ELECTION_YEAR as electionYear } from "@/lib/electionYear";
 import type { AddressLookup, DistrictsResponse } from "@/app/api/districts/route";
+import { GEOCODER_TIMEOUT_MS, NOMINATIM, fetchSuggestions, formatUSAddress, nominatimSearch, type NominatimAddress, type Suggestion } from "@/lib/geocode";
 
 const DistrictFinderMap = dynamic(() => import("@/components/DistrictFinderMap"), {
   ssr: false,
@@ -161,10 +162,6 @@ function parseCensusGeographies(geo: Record<string, Record<string, string>[]>): 
   return { state: stateName, stateFIPS, cdName, cdGEOID, sldlName, sldlGEOID, sldlBasename, slduName, slduGEOID, slduBasename };
 }
 
-const NOMINATIM = "https://nominatim.openstreetmap.org";
-/** Long enough for a slow answer, short enough that a dead service hands over to the fallback. */
-const GEOCODER_TIMEOUT_MS = 6000;
-
 async function lookupByCoordinates(lat: number, lng: number): Promise<DistrictInfo & { lookup: AddressLookup | null }> {
   // Rounded to the precision the server caches at (about 11 m), so repeat lookups share one URL.
   const res = await fetch(`/api/districts?lat=${lat.toFixed(4)}&lng=${lng.toFixed(4)}`);
@@ -187,25 +184,6 @@ async function reverseGeocode(lat: number, lng: number): Promise<string> {
     return data.display_name?.replace(/, United States$/, "") ?? "";
   } catch {
     return "";
-  }
-}
-
-/** Nominatim's best match for a typed address — null when it is unreachable or finds nothing. */
-async function nominatimSearch(address: string): Promise<{ lat: number; lng: number; matchedAddress: string } | null> {
-  const params = new URLSearchParams({
-    format: "json", q: address, countrycodes: "us", limit: "1", addressdetails: "0",
-  });
-  try {
-    const res = await fetch(`${NOMINATIM}/search?${params}`, {
-      headers: { Accept: "application/json" },
-      signal: AbortSignal.timeout(GEOCODER_TIMEOUT_MS),
-    });
-    if (!res.ok) return null;
-    const data: { lat: string; lon: string; display_name: string }[] = await res.json();
-    if (!data[0]) return null;
-    return { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon), matchedAddress: data[0].display_name.replace(/, United States$/, "") };
-  } catch {
-    return null;
   }
 }
 
@@ -244,76 +222,6 @@ async function geocodeAddress(address: string): Promise<GeocodeResult> {
   if (!result) throw new Error("Address not found. Try a more specific address including city and state.");
   geocodeCache.set(key, result);
   return result;
-}
-
-interface NominatimAddress {
-  house_number?: string;
-  road?: string;
-  city?: string;
-  town?: string;
-  village?: string;
-  hamlet?: string;
-  municipality?: string;
-  suburb?: string;
-  county?: string;
-  state?: string;
-  "ISO3166-2-lvl4"?: string; // e.g. "US-IL"
-}
-
-interface Suggestion {
-  displayName: string;
-  shortName: string;
-}
-
-function formatUSAddress(addr: NominatimAddress): string {
-  const street = [addr.house_number, addr.road].filter(Boolean).join(" ");
-  const city = addr.city ?? addr.town ?? addr.village ?? addr.hamlet ?? addr.municipality ?? addr.suburb ?? addr.county ?? "";
-  // ISO3166-2-lvl4 is "US-IL" → "IL"; DC comes back as "US-DC" → "DC"
-  const stateCode = addr["ISO3166-2-lvl4"]?.split("-").pop() ?? addr.state ?? "";
-  const cityState = [city, stateCode].filter(Boolean).join(" ");
-  return [street, cityState].filter(Boolean).join(", ");
-}
-
-// Suggestions come from Photon, a search-as-you-type geocoder on the same OpenStreetMap data.
-// Nominatim's usage policy forbids autocomplete against its public server.
-const PHOTON = "https://photon.komoot.io/api/";
-/** West, south, east, north — the fifty states, so suggestions stay in the country. */
-const US_BBOX = "-179.2,17.8,-65.0,71.5";
-const suggestionCache = new Map<string, Suggestion[]>();
-
-interface PhotonProperties {
-  countrycode?: string;
-  name?: string;
-  housenumber?: string;
-  street?: string;
-  city?: string;
-  county?: string;
-  state?: string;
-}
-
-async function fetchSuggestions(query: string, signal: AbortSignal): Promise<Suggestion[]> {
-  const key = query.toLowerCase();
-  const cached = suggestionCache.get(key);
-  if (cached) return cached;
-  const params = new URLSearchParams({ q: query, limit: "8", lang: "en", bbox: US_BBOX });
-  const res = await fetch(`${PHOTON}?${params}`, { signal });
-  if (!res.ok) return [];
-  const data: { features?: { properties: PhotonProperties }[] } = await res.json();
-  const seen = new Set<string>();
-  const suggestions: Suggestion[] = [];
-  for (const { properties: p } of data.features ?? []) {
-    if (p.countrycode !== "US") continue;
-    const street = p.street ? [p.housenumber, p.street].filter(Boolean).join(" ") : "";
-    // A place with no street of its own (a city, a county) is its own first line.
-    const first = street || (p.name !== p.city && p.name !== p.state ? p.name : "") || "";
-    const shortName = [first, p.city ?? p.county, p.state].filter(Boolean).join(", ");
-    if (!shortName || seen.has(shortName)) continue;
-    seen.add(shortName);
-    suggestions.push({ displayName: [p.name, shortName].filter(Boolean).join(", "), shortName });
-    if (suggestions.length === 6) break;
-  }
-  suggestionCache.set(key, suggestions);
-  return suggestions;
 }
 
 export default function DistrictFinder() {

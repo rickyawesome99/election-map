@@ -42,6 +42,8 @@ export interface PrecinctMapProps {
   onSelect: (pid: number | null) => void;
   onMoved: (moved: boolean) => void;
   resetNonce: number;
+  /** A searched place: the map flies there and drops a pin. A new nonce re-flies to the same place. */
+  target?: { lat: number; lng: number; zoom: number; nonce: number } | null;
   /** Zoom from which roads and place names show (default STREETS_ZOOM). A small place such as DC
    *  fits past the default, so its embed sets this above its fitted zoom. */
   streetsZoom?: number;
@@ -124,7 +126,8 @@ export default function PrecinctMap(props: PrecinctMapProps) {
       }, before);
       map.addLayer({
         id: "precinct-line", type: "line", source: SRC, "source-layer": LAYER, minzoom: 7,
-        paint: { "line-color": outline, "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.15, 10, 0.5, 13, 1.1], "line-opacity": 0.8 },
+        // Softer once zoomed in: the fills thin out there to show the streets, and a bold border would dominate.
+        paint: { "line-color": outline, "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.15, 10, 0.5, 13, 0.7], "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.8, 13, 0.45] },
       }, before);
       map.addLayer({
         id: "precinct-highlight", type: "line", source: SRC, "source-layer": LAYER,
@@ -195,6 +198,19 @@ export default function PrecinctMap(props: PrecinctMapProps) {
     if (props.selectedPid !== null) map.setFeatureState({ source: SRC, sourceLayer: LAYER, id: props.selectedPid }, { sel: true });
     prevSel.current = props.selectedPid;
   }, [ready, props.selectedPid]);
+
+  // A searched place: fly there and mark it. The pin stays until the next search or the state closes.
+  const pin = useRef<maplibregl.Marker | null>(null);
+  useEffect(() => {
+    const map = mapRef.current;
+    const t = props.target;
+    if (!map || !ready || !t) return;
+    pin.current?.remove();
+    pin.current = new maplibregl.Marker({ color: darkMode ? "#e6e8eb" : "#1f2328", scale: 0.8 }).setLngLat([t.lng, t.lat]).addTo(map);
+    map.flyTo({ center: [t.lng, t.lat], zoom: Math.min(t.zoom, map.getMaxZoom()), duration: 1200 });
+    live.current.onMoved(true);
+  }, [props.target, ready, darkMode]);
+  useEffect(() => () => { pin.current?.remove(); }, []);
 
   // "Reset view".
   useEffect(() => {

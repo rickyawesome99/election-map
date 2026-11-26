@@ -7,10 +7,14 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { fmtMargin, marginColor } from "@/lib/colorScale";
-import { RATING_SCALE, OFFICES, OFFICE_LABEL, marginOf, type Office, type StateDemographics, type StateIndex, type StateResults, type StateShell } from "./types";
+import { RATING_SCALE, OFFICES, OFFICE_LABEL, marginOf, type Office, type StateDemographics, type StateIndex, type StateLocale, type StateResults, type StateShell } from "./types";
 import PrecinctDemographics from "./PrecinctDemographics";
+import PrecinctTrend, { type TrendPoint } from "./PrecinctTrend";
+import PlaceSearch, { type PlaceHit } from "./PlaceSearch";
+import NationalTrends, { type NationalTrendsData } from "./NationalTrends";
 import { chamberDistrictHref } from "@/lib/statePageLinks";
 
 const NationalMap = dynamic(() => import("./NationalMap"), { ssr: false, loading: () => <div style={{ aspectRatio: "975 / 610" }} /> });
@@ -111,11 +115,34 @@ function onePartyRace(shell: StateShell, res: StateResults | null | undefined, o
 }
 const ONE_PARTY_OPACITY = 0.45;
 
-function SectionHead({ children }: { children: React.ReactNode }) {
-  return <div className={`${KICKER} pb-1.5`} style={{ color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)" }}>{children}</div>;
+// TPL's race types for the precinct offices. Both legislative chambers are "L", averaged equally.
+const TPL_TYPE: Record<Office, string> = { PRES: "P", USS: "S", GOV: "G", USH: "H", SLDU: "L", SLDL: "L" };
+/** TPL's base race-type weights (data/tplModelData.ts), handed down by the server page. */
+export type TplWeights = { presidential: Record<string, number>; midterm: Record<string, number> };
+
+// One year's blended result for a precinct: contested races at face value (estimates kept), averaged
+// within each race type, then weighed by TPL's type weights renormalized over the types present.
+function blendYear(shell: StateShell, res: StateResults, i: number, year: number, oneParty: OnePartyData | null, weights: TplWeights): TrendPoint | null {
+  const W = year % 4 === 0 ? weights.presidential : weights.midterm;
+  const byType = new Map<string, { office: Office; margin: number }[]>();
+  for (const o of OFFICES) {
+    const m = marginOf(res.offices[o]?.[i]);
+    if (m === null || onePartyRace(shell, res, o, i, year, oneParty)) continue;
+    const t = TPL_TYPE[o];
+    if (!W[t]) continue;
+    byType.set(t, [...(byType.get(t) ?? []), { office: o, margin: m }]);
+  }
+  const total = [...byType.keys()].reduce((sum, t) => sum + W[t], 0);
+  if (total <= 0) return null;
+  const parts = [...byType].flatMap(([t, rows]) => rows.map((r) => ({ ...r, weight: W[t] / total / rows.length })));
+  return { year, margin: parts.reduce((sum, p) => sum + p.weight * p.margin, 0), parts };
 }
 
-export default function PrecinctExplorer({ states, years }: { states: StateShell[]; years: { year: number; loaded: boolean }[] }) {
+function SectionHead({ children }: { children: React.ReactNode }) {
+  return <div className={`${KICKER} pb-1`} style={{ color: "var(--app-text-muted)", borderBottom: "1px solid var(--app-border)" }}>{children}</div>;
+}
+
+export default function PrecinctExplorer({ states, years, tplWeights, national }: { states: StateShell[]; years: { year: number; loaded: boolean }[]; tplWeights: TplWeights; national: NationalTrendsData }) {
   const darkMode = useDarkMode();
   const [office, setOffice] = useState<Office>("PRES");
   // Opens on the last presidential election (2024 president), not the newest year on file.
@@ -129,7 +156,11 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
   const [onePartyData, setOnePartyData] = useState<OnePartyData | null>(null);
   const [indexes, setIndexes] = useState<Map<string, StateIndex | null>>(() => new Map()); // keyed ST
   const [demographics, setDemographics] = useState<Map<string, StateDemographics | null>>(() => new Map()); // keyed ST
+  const [locales, setLocales] = useState<Map<string, StateLocale | null>>(() => new Map()); // keyed ST
+  const [stateTrends, setStateTrends] = useState<Map<string, NationalTrendsData | null>>(() => new Map()); // keyed ST
   const byAbbr = useMemo(() => new Map(states.map((s) => [s.abbr, s])), [states]);
+  // The last searched place; the map flies to it while its state is the one open.
+  const [target, setTarget] = useState<(PlaceHit & { nonce: number }) | null>(null);
 
   const openState = useCallback((abbr: string | null) => {
     setCurrent(abbr);
@@ -137,6 +168,19 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
     setMoved(false);
     window.history.replaceState(null, "", abbr ? `#${abbr}` : window.location.pathname);
   }, []);
+
+  // The address search sits in the page header (#precinct-search-slot), found after mount.
+  const [searchSlot, setSearchSlot] = useState<HTMLElement | null>(null);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setSearchSlot(document.getElementById("precinct-search-slot")));
+    return () => cancelAnimationFrame(id);
+  }, []);
+
+  const goTo = useCallback((hit: PlaceHit) => {
+    if (hit.abbr !== current) openState(hit.abbr);
+    // zoom 0: the place is the whole state, so its full view is the answer.
+    setTarget(hit.zoom > 0 ? { ...hit, nonce: Date.now() } : null);
+  }, [current, openState]);
 
   // /precincts#TX opens Texas. After hydration, so the server-rendered picker and the first client render agree.
   useEffect(() => {
@@ -182,6 +226,22 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
       .then((d) => { if (live) setDemographics((prev) => new Map(prev).set(current, d)); });
     return () => { live = false; };
   }, [current, wantAll, demographics]);
+  // The open state's own group trends, for its summary panel.
+  useEffect(() => {
+    if (!current || stateTrends.has(current)) return;
+    let live = true;
+    fetch(`/precincts/trends/${current}.json`).then((r) => (r.ok ? (r.json() as Promise<NationalTrendsData>) : null)).catch(() => null)
+      .then((d) => { if (live) setStateTrends((prev) => new Map(prev).set(current, d)); });
+    return () => { live = false; };
+  }, [current, stateTrends]);
+  // Area types for the open state: fetched the first time a precinct is picked there.
+  useEffect(() => {
+    if (!current || !wantAll || locales.has(current)) return;
+    let live = true;
+    fetch(`/precincts/locale/${current}.json`).then((r) => (r.ok ? (r.json() as Promise<StateLocale>) : null)).catch(() => null)
+      .then((d) => { if (live) setLocales((prev) => new Map(prev).set(current, d)); });
+    return () => { live = false; };
+  }, [current, wantAll, locales]);
   useEffect(() => {
     if (!current) return;
     const need = (wantAll ? [year, ...stateYears] : [year]).filter((y, n, a) => a.indexOf(y) === n && !data.has(`${y}|${current}`));
@@ -217,9 +277,45 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
   const selOneParty = shell && i >= 0 && selMargin !== null ? onePartyRace(shell, cached?.results, shown, i, year, onePartyData) : null;
   const stateSum = shell?.years[String(year)]?.[shown];
   const stateMargin = stateSum ? marginOf([stateSum.d, stateSum.r, stateSum.o]) : null;
+  // Analysis stats over every contested race on file for the selected precinct (estimates kept,
+  // uncontested races left out): its best result for each party, and the selected year's spread.
+  const stats = useMemo(() => {
+    if (!shell || i < 0) return null;
+    type Race = { year: number; office: Office; margin: number; rShare: number };
+    const races: Race[] = [];
+    for (const y of stateYears) {
+      const res = data.get(`${y}|${shell.abbr}`);
+      if (!res) continue;
+      for (const o of OFFICES) {
+        const row = res.offices[o]?.[i];
+        const m = marginOf(row);
+        if (!row || m === null || onePartyRace(shell, res, o, i, y, onePartyData)) continue;
+        races.push({ year: y, office: o, margin: m, rShare: (row[1] / (row[0] + row[1] + row[2])) * 100 });
+      }
+    }
+    if (races.length === 0) return null;
+    const bestR = races.reduce((a, b) => (b.margin > a.margin ? b : a));
+    const bestD = races.reduce((a, b) => (b.margin < a.margin ? b : a));
+    // Spread: the gap between the year's highest and lowest Republican share. At least that share of
+    // the precinct's voters backed a Republican in one race and not in another.
+    const thisYear = races.filter((r) => r.year === year);
+    const hi = thisYear.length > 1 ? thisYear.reduce((a, b) => (b.rShare > a.rShare ? b : a)) : null;
+    const lo = thisYear.length > 1 ? thisYear.reduce((a, b) => (b.rShare < a.rShare ? b : a)) : null;
+    return { bestR, bestD, spread: hi && lo ? { hi, lo, pts: hi.rShare - lo.rShare } : null };
+  }, [shell, i, stateYears, data, onePartyData, year]);
+  // The trend: each loaded year's blended result for the selected precinct, oldest first.
+  const trend = useMemo(() => {
+    if (!shell || i < 0) return [];
+    return [...stateYears].reverse().flatMap((y) => {
+      const res = data.get(`${y}|${shell.abbr}`);
+      const pt = res ? blendYear(shell, res, i, y, onePartyData, tplWeights) : null;
+      return pt ? [pt] : [];
+    });
+  }, [shell, i, stateYears, data, onePartyData, tplWeights]);
 
   return (
     <div>
+      {searchSlot && createPortal(<PlaceSearch states={states} onFound={goTo} />, searchSlot)}
       {/* controls */}
       <div className="flex flex-wrap items-center gap-x-5 gap-y-2 pb-3" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
         <label className="flex items-center gap-2 text-sm">
@@ -262,7 +358,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
         </div>
       </div>
 
-      <div className="mt-4 grid gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
+      <div className="mt-4 grid gap-6 lg:grid-cols-[minmax(0,1fr)_400px] lg:gap-0">
         {/* map */}
         <div className="min-w-0">
           {shell ? (
@@ -279,6 +375,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                 onSelect={setSelectedPid}
                 onMoved={setMoved}
                 resetNonce={resetNonce}
+                target={target?.abbr === shell.abbr ? target : null}
               />
               <div className="absolute right-2 top-2 z-10 flex gap-1.5">
                 {moved && (
@@ -310,7 +407,8 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
         </div>
 
         {/* panel */}
-        <aside ref={asideRef} className="min-w-0 lg:max-h-[max(400px,min(72vh,680px))] lg:overflow-y-auto lg:overscroll-contain lg:pr-2" style={{ scrollbarWidth: "thin" }}>
+        {/* Sidebar: hangs off the map behind a hairline rule rather than standing as its own section. */}
+        <aside ref={asideRef} className="min-w-0 border-t pt-4 lg:ml-5 lg:max-h-[max(400px,min(72vh,680px))] lg:overflow-y-auto lg:overscroll-contain lg:border-l lg:border-t-0 lg:pl-5 lg:pr-2 lg:pt-0" style={{ scrollbarWidth: "thin", borderColor: "var(--app-border)" }}>
           {shell && i >= 0 && cached?.results ? (
             <div>
               <div className="flex items-start justify-between gap-3">
@@ -374,10 +472,67 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                   })}
                 </tbody>
               </table>
-              <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>
-                For president, Senate, governor and U.S. House the two sides are the leading candidates. Legislative rows are party totals. A faded margin had no candidate from one of the two parties: unopposed, or two candidates of one party.
-              </p>
 
+              {(() => {
+                const loc = locales.get(shell.abbr);
+                const k = loc ? loc.cls[i] : -1;
+                if (!loc || k < 0) return null;
+                const dens = loc.dens[i];
+                const dist = loc.dist[i] / 10;
+                const where = k <= 1
+                  ? `${dens.toLocaleString()} homes per sq mi where its residents live, inside a metro area`
+                  : `${dist < 1 ? "Under 1" : Math.round(dist)} mi from the edge of a metro area`;
+                return (
+                  <div id="precinct-locale">
+                    <div className="mt-6"><SectionHead>Area type</SectionHead></div>
+                    <div className="mt-2 flex items-baseline justify-between gap-3">
+                      <div className="text-[20px]" style={{ ...SERIF_FIGURE, color: "var(--app-text-primary)" }}>{loc.labels[k]}</div>
+                      <div className="flex gap-1">
+                        {loc.labels.map((l, n) => (
+                          <span key={l} title={l} className="h-1.5 w-6" style={{ background: n === k ? "var(--app-text-primary)" : "var(--app-border)" }} />
+                        ))}
+                      </div>
+                    </div>
+                    <div className="mt-1 text-[11.5px]" style={{ color: "var(--app-text-muted)" }}>{where}</div>
+                  </div>
+                );
+              })()}
+              {trend.length > 1 && (
+                <div id="precinct-trend">
+                  <div className="mt-6"><SectionHead>Trend</SectionHead></div>
+                  <div className="mt-2"><PrecinctTrend points={trend} year={year} onPick={setYear} /></div>
+                </div>
+              )}
+              {stats && (
+                <div id="precinct-stats">
+                  <div className="mt-6"><SectionHead>Analysis</SectionHead></div>
+                  <div className="tabular-nums">
+                    {[
+                      { label: "Best R performance", value: fmtMargin(stats.bestR.margin), color: marginColor(stats.bestR.margin), sub: `${stats.bestR.year} ${OFFICE_LABEL[stats.bestR.office]}`, pick: () => { setYear(stats.bestR.year); setOffice(stats.bestR.office); } },
+                      { label: "Best D performance", value: fmtMargin(stats.bestD.margin), color: marginColor(stats.bestD.margin), sub: `${stats.bestD.year} ${OFFICE_LABEL[stats.bestD.office]}`, pick: () => { setYear(stats.bestD.year); setOffice(stats.bestD.office); } },
+                      stats.spread
+                        ? { label: `Ticket split, ${year}`, value: `${stats.spread.pts.toFixed(1)}%`, color: "var(--app-text-primary)", sub: `R ${stats.spread.hi.rShare.toFixed(1)}% ${OFFICE_LABEL[stats.spread.hi.office]} vs ${stats.spread.lo.rShare.toFixed(1)}% ${OFFICE_LABEL[stats.spread.lo.office]}`, pick: undefined }
+                        : { label: `Ticket split, ${year}`, value: "—", color: "var(--app-text-very-muted)", sub: "Fewer than two contested races", pick: undefined },
+                    ].map((r) => (
+                      <div key={r.label} className="flex items-baseline justify-between gap-3 py-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <div className="min-w-0">
+                          <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-primary)" }}>{r.label}</div>
+                          <div className="text-[11px]" style={{ color: "var(--app-text-muted)" }}>{r.sub}</div>
+                        </div>
+                        {r.pick ? (
+                          <button onClick={r.pick} title="Put this race on the map" className="shrink-0 text-[15px] font-bold hover:underline" style={{ color: r.color }}>{r.value}</button>
+                        ) : (
+                          <span className="shrink-0 text-[15px] font-bold" style={{ color: r.color }}>{r.value}</span>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>
+                    Contested races only. Ticket split is the gap between the year&rsquo;s highest and lowest Republican share of the vote:
+                    at least that share of voters backed a Republican in one race and not in another.
+                  </p>
+                </div>
+              )}
               {stateYears.length > 1 && (() => {
                 let anyEst = false;
                 let anyOne = false;
@@ -385,7 +540,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                   const res = data.get(`${y}|${shell.abbr}`);
                   return (
                     <tr key={y} style={{ borderTop: "1px solid var(--app-border)" }}>
-                      <td className="py-1.5 pr-1 text-left text-[12px] font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                      <td className="py-2 pr-2 text-left text-[12.5px] font-semibold" style={{ color: "var(--app-text-primary)" }}>
                         <button onClick={() => setYear(y)} className="hover:underline" style={{ fontWeight: y === year ? 800 : 600 }}>{y}</button>
                       </td>
                       {historyOffices.map((o) => {
@@ -397,7 +552,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                         if (one) anyOne = true;
                         const on = y === year && o === shown;
                         return (
-                          <td key={o} className="py-1.5 pl-0.5 text-right text-[10.5px] font-semibold" style={{ whiteSpace: "nowrap", background: on ? "var(--app-tab-bg)" : undefined }}>
+                          <td key={o} className="py-2 pl-2 text-right text-[11px] font-semibold" style={{ whiteSpace: "nowrap", background: on ? "var(--app-tab-bg)" : undefined }}>
                             {m === null || !row ? (
                               <span style={{ color: "var(--app-text-very-muted)", fontWeight: 400 }}>{res === undefined ? "" : "–"}</span>
                             ) : (
@@ -423,9 +578,9 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                       <table className="w-full tabular-nums" style={{ borderCollapse: "collapse" }}>
                         <thead>
                           <tr className={LABEL} style={{ color: "var(--app-text-muted)" }}>
-                            <th className="py-1.5 text-left align-bottom font-semibold">Year</th>
+                            <th className="pb-2 pt-1.5 text-left align-bottom font-semibold">Year</th>
                             {historyOffices.map((o) => (
-                              <th key={o} className="py-1.5 pl-1 text-right align-bottom font-semibold" style={{ lineHeight: 1.15, color: o === shown ? "var(--app-text-primary)" : undefined }}>
+                              <th key={o} className="pb-2 pt-1.5 pl-2 text-right align-bottom font-semibold" style={{ lineHeight: 1.25, color: o === shown ? "var(--app-text-primary)" : undefined }}>
                                 {OFFICE_SHORT[o][0]}{OFFICE_SHORT[o][1] && <><br />{OFFICE_SHORT[o][1]}</>}
                               </th>
                             ))}
@@ -464,6 +619,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
               {stateSum?.note && <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>{stateSum.note}</p>}
               <p className="mt-3 text-[11.5px] leading-snug" style={{ color: "var(--app-text-muted)" }}>Hover a precinct for its result. Click one for every race on its ballot.</p>
               <Link prefetch={false} href={`/states/${shell.abbr.toLowerCase()}`} className="mt-2 inline-block text-xs font-semibold hover:underline" style={{ color: "var(--app-text-primary)" }}>Go to {shell.name} →</Link>
+              {stateTrends.get(shell.abbr) && <div className="mt-6"><NationalTrends data={stateTrends.get(shell.abbr)!} /></div>}
             </div>
           ) : (
             <div>
@@ -472,6 +628,7 @@ export default function PrecinctExplorer({ states, years }: { states: StateShell
                 Click a state on the map, or choose one above, to see its precincts. The map shows each state&rsquo;s
                 statewide {OFFICE_LABEL[shown].toLowerCase()} result for {year}.
               </p>
+              <div className="mt-6"><NationalTrends data={national} /></div>
             </div>
           )}
         </aside>

@@ -74,4 +74,12 @@ export const MARGIN_STEPS: (string | number)[] = ["#1b408c", -15, "#587ccc", -5,
 export const DEMOGRAPHIC_FIELDS = ["pop", "vap", "white", "black", "hisp", "asian", "aian", "nhpi", "a18_34", "a35_49", "a50_64", "a65",
   "medage", "female", "hu", "occ", "own", "hhpop", "married", "alone", "kids"] as const;
 export type DemographicField = (typeof DEMOGRAPHIC_FIELDS)[number];
+/** public/precincts/locale/{ST}.json (scripts/precincts/build_locale.py): area type per precinct. */
+export type StateLocale = {
+  st: string; n: number; first_pid: number; labels: string[];
+  rules: { metroMin: number; urbanDensity: number; urbanRel: number; radius: [number, number][] };
+  cls: number[]; // 0 urban, 1 suburban, 2 exurban, 3 rural, -1 none
+  dens: number[]; // housing units / sq mi where the residents live
+  dist: number[]; // miles × 10 to the nearest metro urban area, 0 inside one
+};
 export type StateDemographics = { st: string; n: number; first_pid: number; cols: Record<DemographicField, number[]> };
