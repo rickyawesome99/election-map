@@ -32,6 +32,8 @@ export type ResultCandidate = {
   slot: "dem" | "rep" | null;
   /** The final forecast's projected share for this person (data/forecast-final-2026/), when they were a projected nominee. */
   projectedPct: number | null;
+  /** The seat's sitting member, as the results file flags the slot (dem_/rep_incumbent); false outside the slots. */
+  incumbent?: boolean;
 };
 
 export type RaceResult2026 = {
@@ -44,6 +46,9 @@ export type RaceResult2026 = {
   others: { votes: number; pct: number };
   called: boolean;
   winnerParty: ResultParty | null;
+  /** The party holding the seat going in (the file's seat_party), and whether the winner took it from them. */
+  seatParty: ResultParty | null;
+  flip: boolean;
   /** The share of the expected vote counted, 0–1 (the Results page's estimate when the files were saved). */
   countedShare: number;
   /** Ranked-choice count (Alaska): with a party's candidates split, the headline margin is party against party. */
@@ -146,7 +151,7 @@ function load(): Map<string, RaceResult2026> {
       if (hit) taken.add(hit.i);
       // No match (or no count printed): the slot's own column, which is the candidate's when the party ran one.
       const votes = hit ? hit.c.votes : num(r[`${slot}_votes`]);
-      slotRows.push({ name, party, votes, pct: total > 0 ? (votes / total) * 100 : 0, winner: false, slot, projectedPct: projectedPct(name) });
+      slotRows.push({ name, party, votes, pct: total > 0 ? (votes / total) * 100 : 0, winner: false, slot, projectedPct: projectedPct(name), incumbent: r[`${slot}_incumbent`] === "1" });
     }
     const outside = pool.filter((_, i) => !taken.has(i));
     const ownRows: ResultCandidate[] = outside
@@ -175,6 +180,8 @@ function load(): Map<string, RaceResult2026> {
       others: { votes: othVotes, pct: total > 0 ? (othVotes / total) * 100 : 0 },
       called,
       winnerParty: (r.winner_party || null) as ResultParty | null,
+      seatParty: (r.seat_party || null) as ResultParty | null,
+      flip: r.flip === "1",
       countedShare: num(r.counted_share),
       bloc,
       demName: bloc.dem ? `${dParty === "R" ? "Republican" : "Democratic"} candidates` : r.dem_name,

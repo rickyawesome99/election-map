@@ -41,7 +41,7 @@ OUT = ROOT / "public" / "precincts" / "results"
 COVERAGE = ROOT / "data" / "precincts" / "coverage.json"
 
 YEAR = 2024
-OFFICES = ["PRES", "USS", "GOV", "USH", "SLDU", "SLDL"]
+OFFICES = ["PRES", "USS", "USSS", "GOV", "USH", "SLDU", "SLDL"]  # USSS = a U.S. Senate special held beside the regular race
 YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
 # Statewide D and R precinct sums must each sit within this share of the site's two-party total.
 RECONCILE_TOL = 0.005
@@ -53,7 +53,7 @@ STATES = [
 ]
 
 # RDH prefixes → office. District contests drop the year (10-character DBF field limit).
-PREFIX = [("G24PRE", "PRES"), ("G24USS", "USS"), ("G24GOV", "GOV"), ("GCON", "USH"), ("GSU", "SLDU"), ("GSL", "SLDL")]
+PREFIX = [("G24PRE", "PRES"), ("G24USS", "USS"), ("S24USS", "USSS"), ("G24GOV", "GOV"), ("GCON", "USH"), ("GSU", "SLDU"), ("GSL", "SLDL")]
 # Wisconsin (LTSB layout): {office}{party}24.
 WI_PREFIX = {"PRE": "PRES", "USS": "USS", "USH": "USH", "WSS": "SLDU", "WSA": "SLDL"}
 # New York (Rosenblatt layout): district offices are party totals, G24CON{D,R,O}.
@@ -73,7 +73,7 @@ PARTY_FIX = {
 # Single-winner offices are stored the way the rest of the site stores them: a Democratic-slot and a
 # Republican-slot candidate per contest (see slot_columns). Legislative offices are party sums, because
 # multi-member districts and fusion lines make "the" Democrat ill-defined.
-SLOT_OFFICES = {"PRES", "USS", "GOV", "USH"}
+SLOT_OFFICES = {"PRES", "USS", "USSS", "GOV", "USH"}
 MEDSL_OFFICE = {"US PRESIDENT": "PRES", "US SENATE": "USS", "GOVERNOR": "GOV", "US HOUSE": "USH", "STATE SENATE": "SLDU", "STATE HOUSE": "SLDL"}
 # States/offices the RDH file does not carry, filled from the MEDSL 2024 state file by precinct-name match.
 MEDSL_FILL = {"KS": ["USH", "SLDU", "SLDL"], "DC": ["PRES"]}
@@ -146,7 +146,7 @@ def classify(st: str, col: str) -> tuple[str, str, str, str] | None:
             # {district}{party}{3-letter name}; a few surnames are 2 letters (GA "GCON04RYU"), which
             # shows up as a digit where the party letter should be.
             n = 3 if len(rest) >= 4 and not rest[-4].isdigit() else 2
-            if office in ("PRES", "USS", "GOV"):
+            if office in ("PRES", "USS", "USSS", "GOV"):
                 n = len(rest) - 1
             if st == "NE" and "NE" not in PARTY_FIX:
                 PARTY_FIX["NE"] = nebraska_party_fix()
@@ -402,6 +402,16 @@ def load_truth() -> dict:
             with open(p, newline="") as f:
                 for row in csv.DictReader(f):
                     add(y, office, row["state"], _num(row.get(f"dem_{y}", "")), _num(row.get(f"gop_{y}", "")))
+    # U.S. Senate specials held beside the regular race (MN/MS 2018, GA 2020, OK 2022, NE 2024): the
+    # certified race row (senate_past_results.csv), whose stage (runoff or general) is the one the site
+    # counts. A special that was the state's only Senate race that year (AZ 2020) is its USS contest.
+    with open(de / "senate_past_results.csv", newline="") as f:
+        sen = list(csv.DictReader(f))
+    regular = {(r["state_abbr"], int(r["year"])) for r in sen if r.get("type") != "Special"}
+    for r in sen:
+        y = int(r["year"])
+        if r.get("type") == "Special" and y >= 2016 and (r["state_abbr"], y) in regular:
+            add(y, "USSS", r["state_abbr"], _num(r["dem_votes"]), _num(r["rep_votes"]))
     # U.S. House: the certified district totals (house_past_results.csv), not the county breakdown, which
     # leaves out county pieces it could not split and is short in a few dozen districts.
     for (y, st, _d), (dv, rv) in house_certified().items():

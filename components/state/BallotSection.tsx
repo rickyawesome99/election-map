@@ -3,7 +3,7 @@
 import { useState, type KeyboardEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import type { BallotCandidate, BallotHoldover, BallotRace, ChamberBlock, HouseRow } from "@/lib/statePage";
+import type { BallotCandidate, BallotHoldover, BallotOutcome, BallotRace, ChamberBlock, ChamberOutcome, HouseRow } from "@/lib/statePage";
 import { getRatingColors } from "@/lib/colorScale";
 import CandidateLink from "@/components/CandidateLink";
 import { useRevealOnce } from "@/lib/useRevealOnce";
@@ -11,7 +11,8 @@ import { MiniDistrictLocator } from "@/components/RaceLocator";
 
 /**
  * The state page's "On the ballot" section, in two parts. Federal: the Senate seats, then the House
- * delegation, as ledger rows (Democrat · Republican · margin · rating). State: the governor and the
+ * delegation, as ledger rows (winner ✓ · runner-up · margin · hold/flip, from the 2026 count; the
+ * final forecast's Democrat · Republican · margin · rating where no count is on file). State: the governor and the
  * legislature's chambers as ledger rows, so a long list stays a list. The Senate seats and the
  * governor share one row (StatewideRow).
  * Motion is the race pages' (globals.css .vh-*): rows rise in staggered once on screen, tint on
@@ -39,6 +40,15 @@ function chamberRating(pDem: number): string {
 function RatingPill({ rating }: { rating: string }) {
   const { bg, text } = getRatingColors(rating);
   return <span className="text-xs font-semibold py-0.5 rounded-full text-center shrink-0 w-[4.6rem]" style={{ background: bg, color: text }}>{rating}</span>;
+}
+
+/** "R Hold" / "D Flip": a flip in its party's full color, a hold in the lighter tint. */
+function OutcomePill({ party, flip }: { party: "D" | "R" | "I"; flip: boolean }) {
+  const label = `${party} ${flip ? "Flip" : "Hold"}`;
+  // A hold is plain party-colored text; only a flip gets the filled pill.
+  if (!flip) return <span className="text-xs font-semibold py-0.5 text-center shrink-0 w-[4.6rem]" style={{ color: partyColor(party) }} title={`${partyWord(party)} hold`}>{label}</span>;
+  const { bg, text } = party === "I" ? { bg: "var(--party-ind)", text: "#fff" } : getRatingColors(`Safe ${party}`);
+  return <span className="text-xs font-semibold py-0.5 rounded-full text-center shrink-0 w-[4.6rem]" style={{ background: bg, color: text }} title={flip ? `${partyWord(party)} gain` : `${partyWord(party)} hold`}>{label}</span>;
 }
 
 function QuietPill({ children }: { children: string }) {
@@ -70,7 +80,7 @@ function Photo({ name, party, photo, w }: { name: string; party: string; photo: 
  * steps down a size and truncates last. An incumbent's party-colored asterisk sits on the side of
  * the surname that faces the other candidate.
  */
-function Name({ c, state, dot, align = "left", size = "md" }: { c: BallotCandidate; state: string; dot: "before" | "after"; align?: "left" | "right"; size?: "md" | "sm" }) {
+function Name({ c, state, dot, align = "left", size = "md", check = false }: { c: BallotCandidate; state: string; dot: "before" | "after"; align?: "left" | "right"; size?: "md" | "sm"; check?: boolean }) {
   const parts = c.name.split(" ");
   const given = parts.length > 1 ? parts[0] : "";
   const surname = parts.length > 1 ? parts.slice(1).join(" ") : c.name;
@@ -93,6 +103,7 @@ function Name({ c, state, dot, align = "left", size = "md" }: { c: BallotCandida
           {surname}
         </CandidateLink>
         {dot === "after" && incMark("after")}
+        {check && <span className="shrink-0 font-bold leading-none" style={{ color: "var(--app-text-primary)", fontSize: size === "md" ? "1rem" : "0.9rem" }} aria-label="winner" title="Winner">✓</span>}
       </span>
     </span>
   );
@@ -106,6 +117,30 @@ function Result({ margin, dem, rep, size, origin = "right center" }: { margin: n
     <span className="vh-margin inline-block whitespace-nowrap tabular-nums" style={{ ...FIG, fontSize: size, lineHeight: 1, transformOrigin: origin, color: same ? partyColor(dem.party) : margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
       {same ? `${dem.party} v ${rep.party}` : fmtMargin(margin)}
     </span>
+  );
+}
+
+/** The winning margin, in the winner's color; "Unopposed" with no runner-up. */
+function OutcomeMargin({ o, size }: { o: BallotOutcome; size: string }) {
+  if (o.margin == null) return <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{o.loser ? "No count" : "Unopposed"}</span>;
+  return (
+    <span className="vh-margin inline-block whitespace-nowrap tabular-nums" style={{ ...FIG, fontSize: size, lineHeight: 1, transformOrigin: "right center", color: partyColor(o.party) }}>
+      {o.party}+{o.margin.toFixed(1)}
+    </span>
+  );
+}
+
+/** Winner (✓ once called) in the first candidate column, runner-up in the second. */
+function OutcomeCells({ o, state, w, size }: { o: BallotOutcome; state: string; w: number; size?: "md" | "sm" }) {
+  return (
+    <>
+      <div className="bl-dem"><Photo name={o.winner.name} party={o.winner.party} photo={o.winner.photo} w={w} /><Name c={o.winner} state={state} dot="after" size={size} check={o.called} /></div>
+      {o.loser ? (
+        <div className="bl-rep"><Photo name={o.loser.name} party={o.loser.party} photo={o.loser.photo} w={w} /><Name c={o.loser} state={state} dot="after" size={size} /></div>
+      ) : (
+        <div className="bl-rep text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>No opponent</div>
+      )}
+    </>
   );
 }
 
@@ -140,7 +175,7 @@ export function HouseLedger({ rows, state, activeId, onSelect }: { rows: HouseRo
             style={{ background: active ? "var(--app-tab-bg)" : undefined, boxShadow: active ? "inset 2px 0 0 var(--app-text-primary)" : undefined, animationDelay: `${enter(i)}ms` }}
           >
             <div className="bl-off">
-              <MiniDistrictLocator stateAbbr={state} geoid={row.geoid} fill={getRatingColors(row.rating).bg} />
+              <MiniDistrictLocator stateAbbr={state} geoid={row.geoid} fill={getRatingColors(row.result ? (row.result.party === "I" ? "Toss-up" : `Safe ${row.result.party}`) : row.rating).bg} />
               <span className="min-w-0 leading-tight">
                 <span className="flex items-baseline gap-2">
                   <Link prefetch={false} href={row.href} onClick={(e) => e.stopPropagation()} className="whitespace-nowrap text-sm font-semibold tabular-nums hover:underline" style={{ color: "var(--app-text-primary)" }}>{row.label}</Link>
@@ -153,16 +188,26 @@ export function HouseLedger({ rows, state, activeId, onSelect }: { rows: HouseRo
                 </span>
               </span>
             </div>
-            {row.dem && row.rep ? (
+            {row.result ? (
               <>
-                <div className="bl-dem"><Photo name={row.dem.name} party={row.dem.party} photo={row.dem.photo} w={34} /><Name c={row.dem} state={state} dot="after" size="sm" /></div>
-                <div className="bl-rep"><Photo name={row.rep.name} party={row.rep.party} photo={row.rep.photo} w={34} /><Name c={row.rep} state={state} dot="after" size="sm" /></div>
+                <OutcomeCells o={row.result} state={state} w={34} size="sm" />
+                <div className="bl-mg"><OutcomeMargin o={row.result} size="1.2rem" /></div>
+                <div className="bl-pill"><OutcomePill party={row.result.party} flip={row.result.flip} /></div>
               </>
             ) : (
-              <div className="bl-span text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
+              <>
+                {row.dem && row.rep ? (
+                  <>
+                    <div className="bl-dem"><Photo name={row.dem.name} party={row.dem.party} photo={row.dem.photo} w={34} /><Name c={row.dem} state={state} dot="after" size="sm" /></div>
+                    <div className="bl-rep"><Photo name={row.rep.name} party={row.rep.party} photo={row.rep.photo} w={34} /><Name c={row.rep} state={state} dot="after" size="sm" /></div>
+                  </>
+                ) : (
+                  <div className="bl-span text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
+                )}
+                <div className="bl-mg"><Result margin={row.margin} dem={row.dem} rep={row.rep} size="1.2rem" /></div>
+                <div className="bl-pill"><RatingPill rating={row.rating} /></div>
+              </>
             )}
-            <div className="bl-mg"><Result margin={row.margin} dem={row.dem} rep={row.rep} size="1.2rem" /></div>
-            <div className="bl-pill"><RatingPill rating={row.rating} /></div>
           </div>
         );
       })}
@@ -179,6 +224,14 @@ export function HouseLedger({ rows, state, activeId, onSelect }: { rows: HouseRo
 
 // A seat's square: its rating's color; a sitting member off the ballot counts as safe for their party.
 function toneStyle(t: string): React.CSSProperties {
+  // The 2026 count: every seat in its winner's color; a flipped one is striped.
+  const m = /^(hold|flip) ([DR])$/.exec(t);
+  if (m) {
+    const c = getRatingColors(`Safe ${m[2]}`).bg;
+    return m[1] === "flip"
+      ? { background: `repeating-linear-gradient(135deg, ${c} 0 2px, var(--app-bg, #f9f8f5) 2px 3.5px)`, boxShadow: `inset 0 0 0 1px ${c}` }
+      : { background: c };
+  }
   if (t.startsWith("not-up ")) {
     const p = t.slice(7);
     return { background: p === "D" || p === "R" ? getRatingColors(`Safe ${p}`).bg : "var(--party-ind)" };
@@ -199,7 +252,7 @@ function SeatSquares({ dem, rep, total, tones }: { dem: number; rep: number; tot
   const style = (i: number): React.CSSProperties => (tones?.[i] ? toneStyle(tones[i]) : { background: i < dem ? "var(--party-dem-fill)" : i >= total - rep ? "var(--party-rep-fill)" : "var(--party-ind-subtle)" });
   return (
     <div className="relative grid w-full gap-[2px]" style={{ gridAutoFlow: "column", gridTemplateRows: `repeat(${rows}, auto)`, gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}>
-      {Array.from({ length: total }, (_, i) => <i key={i} className="block aspect-square rounded-[1.5px]" style={style(i)} title={tones?.[i]?.replace(/^not-up (\w)$/, "Not up · $1")} />)}
+      {Array.from({ length: total }, (_, i) => <i key={i} className="block aspect-square rounded-[1.5px]" style={style(i)} title={tones?.[i]?.replace(/^not-up (\w)$/, "Not up · $1").replace(/^hold (\w)$/, "$1 hold").replace(/^flip (\w)$/, "$1 flip")} />)}
       <span className="absolute -top-1 -bottom-1 w-[2px]" style={{ left: `calc(${(majCol / cols) * 100}% - ${(majCol / cols) * 2}px)`, background: "var(--app-text-primary)" }} />
       <span className="sr-only">{`${dem} Democratic, ${rep} Republican of ${total} seats`}</span>
     </div>
@@ -239,7 +292,7 @@ function StatewideRow({ item, title, sub, state, electionYear, delay = 0 }: { it
       </div>
     );
   }
-  const open = item.dem && item.rep && !item.dem.incumbent && !item.rep.incumbent;
+  const open = item.result ? !item.result.winner.incumbent && !item.result.loser?.incumbent : item.dem && item.rep && !item.dem.incumbent && !item.rep.incumbent;
   const subLine = [sub, open ? "Open seat" : null].filter(Boolean).join(" · ");
   return (
     <div className="bl-row vh-row" style={{ animationDelay: `${delay}ms` }}>
@@ -250,16 +303,26 @@ function StatewideRow({ item, title, sub, state, electionYear, delay = 0 }: { it
           <Link href={item.href} prefetch={false} className="mt-0.5 block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View race <span className="vh-lean" data-dir="r">→</span></Link>
         </span>
       </div>
-      {item.dem && item.rep ? (
+      {item.result ? (
         <>
-          <div className="bl-dem"><Photo name={item.dem.name} party={item.dem.party} photo={item.dem.photo} w={40} /><Name c={item.dem} state={state} dot="after" /></div>
-          <div className="bl-rep"><Photo name={item.rep.name} party={item.rep.party} photo={item.rep.photo} w={40} /><Name c={item.rep} state={state} dot="after" /></div>
+          <OutcomeCells o={item.result} state={state} w={40} />
+          <div className="bl-mg"><OutcomeMargin o={item.result} size="1.2rem" /></div>
+          <div className="bl-pill"><OutcomePill party={item.result.party} flip={item.result.flip} /></div>
         </>
       ) : (
-        <div className="bl-span text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
+        <>
+          {item.dem && item.rep ? (
+            <>
+              <div className="bl-dem"><Photo name={item.dem.name} party={item.dem.party} photo={item.dem.photo} w={40} /><Name c={item.dem} state={state} dot="after" /></div>
+              <div className="bl-rep"><Photo name={item.rep.name} party={item.rep.party} photo={item.rep.photo} w={40} /><Name c={item.rep} state={state} dot="after" /></div>
+            </>
+          ) : (
+            <div className="bl-span text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
+          )}
+          <div className="bl-mg"><Result margin={item.margin} dem={item.dem} rep={item.rep} size="1.2rem" /></div>
+          <div className="bl-pill"><RatingPill rating={item.rating} /></div>
+        </>
       )}
-      <div className="bl-mg"><Result margin={item.margin} dem={item.dem} rep={item.rep} size="1.2rem" /></div>
-      <div className="bl-pill"><RatingPill rating={item.rating} /></div>
     </div>
   );
 }
@@ -275,6 +338,34 @@ export function SenateCards({ senate, state, electionYear }: { senate: (BallotRa
         return <StatewideRow key={x.href} item={x} title={title} sub={sub} state={state} electionYear={electionYear} delay={enter(i)} />;
       })}
     </div>
+  );
+}
+
+/** A chamber's 2026 count: seats won as squares (striped = flipped), the vote margin, held or flipped majority. */
+function ChamberResultCells({ r }: { r: ChamberOutcome }) {
+  const flip = r.before != null && r.before !== "tie" && r.after !== "tie" && r.before !== r.after;
+  return (
+    <>
+      <div className="bl-seats">
+        <div className="grid w-full gap-1.5" style={{ maxWidth: squaresWidth(r.total) }}>
+          <div className="flex items-baseline justify-between gap-3 tabular-nums">
+            <b className="shrink-0 whitespace-nowrap" style={{ ...FIG, fontSize: "1.25rem", color: "var(--party-dem)" }}>D {r.dem}</b>
+            <span className="truncate text-xs" style={{ color: "var(--app-text-very-muted)" }}>{Math.floor(r.total / 2) + 1} for majority · {r.flips} flipped · {r.within5} within 5 pts</span>
+            <b className="shrink-0 whitespace-nowrap" style={{ ...FIG, fontSize: "1.25rem", color: "var(--party-rep)" }}>R {r.rep}</b>
+          </div>
+          <SeatSquares dem={r.dem} rep={r.rep} total={r.total} tones={r.tones.length === r.total ? r.tones : null} />
+        </div>
+      </div>
+      <div className="bl-mg flex-col !items-end gap-0.5">
+        {r.margin != null ? (
+          <>
+            <span className="vh-margin inline-block tabular-nums whitespace-nowrap" style={{ ...FIG, fontSize: "1.2rem", lineHeight: 1, color: r.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>{fmtMargin(r.margin)}</span>
+            <span className="text-[10.5px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>vote</span>
+          </>
+        ) : null}
+      </div>
+      <div className="bl-pill">{r.after === "tie" ? <QuietPill>Tied</QuietPill> : <OutcomePill party={r.after} flip={flip} />}</div>
+    </>
   );
 }
 
@@ -302,7 +393,9 @@ export function StateLedger({ governor, chambers, state, electionYear }: { gover
                 <Link href={c.exploreHref} prefetch={false} className="mt-0.5 block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>Explore {c.map.roster.length} districts <span className="vh-lean" data-dir="r">→</span></Link>
               </span>
             </div>
-            {hasProj ? (
+            {c.result ? (
+              <ChamberResultCells r={c.result} />
+            ) : hasProj ? (
               <>
                 <div className="bl-seats">
                   <div className="grid w-full gap-1.5" style={{ maxWidth: squaresWidth(total) }}>

@@ -1,12 +1,13 @@
 // Shared shapes for the precinct page. Everything here is small: the page shell gets a slim per-state
 // summary from the server; tiles, results and names are fetched per state by the browser.
 
-export const OFFICES = ["PRES", "USS", "GOV", "USH", "SLDU", "SLDL"] as const;
+export const OFFICES = ["PRES", "USS", "USSS", "GOV", "USH", "SLDU", "SLDL"] as const;
 export type Office = (typeof OFFICES)[number];
 
 export const OFFICE_LABEL: Record<Office, string> = {
   PRES: "President",
   USS: "U.S. Senate",
+  USSS: "U.S. Senate (special)",
   GOV: "Governor",
   USH: "U.S. House",
   SLDU: "State Senate",

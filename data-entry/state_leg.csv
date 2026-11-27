@@ -1,8 +1,8 @@
 state_name,year,type,freq,dem_seats,rep_seats,oth_seats,total_seats,dem_seats_won,rep_seats_won,oth_seats_won,seats_up,dem_pct,rep_pct,oth_pct,margin,dem_votes,rep_votes,oth_votes,vote_margin,total_votes,note,source
 Alabama,2022,House,4,28,77,0,105,28,77,0,105,24.7,72.9,2.4,48.2,297798,878801,29469,581003,1206068,,Klarner SLERS 1967-2022
 Alabama,2018,House,4,28,77,0,105,28,77,0,105,36.5,62.8,0.8,26.3,552461,950420,11413,397959,1514294,,Klarner SLERS 1967-2022
-Alaska,2024,House,2,14,21,5,40,14,21,5,40,25.7,56.5,17.8,30.8,74273,163207,51268,88934,288748,,MEDSL State Precinct-Level Returns 2024
-Alaska,2022,House,2,13,21,6,40,13,20,7,40,28.5,57.0,14.6,28.5,67998,136126,34765,68128,238889,,Klarner SLERS 1967-2022
+Alaska,2024,House,2,14,21,5,40,14,21,5,40,26.4,56.2,17.3,29.8,74977,159679,49229,84702,283885,Ranked-choice races count their final round (user rule 2026-11-14).,MEDSL State Precinct-Level Returns 2024; ranked-choice final rounds from the Division of Elections cast vote record
+Alaska,2022,House,2,13,21,6,40,13,20,7,40,28.2,57.0,14.8,28.8,66614,134546,34854,67932,236014,Ranked-choice races count their final round (user rule 2026-11-14).,Klarner SLERS 1967-2022; ranked-choice final rounds from the Division of Elections cast vote record
 Alaska,2020,House,2,15,21,4,40,17,21,2,40,36.5,51.7,11.7,15.2,116228,164591,37270,48363,318089,,Klarner SLERS 1967-2022
 Alaska,2018,House,2,16,23,1,40,16,23,1,40,40.7,52.6,6.7,11.9,107045,138238,17607,31193,262890,,Klarner SLERS 1967-2022
 Alaska,2016,House,2,17,21,2,40,17,21,2,40,39.6,50.9,9.5,11.3,106352,136723,25527,30371,268602,,Klarner SLERS 1967-2022
@@ -244,8 +244,8 @@ Wyoming,2016,House,2,9,51,0,60,9,51,0,60,29.0,69.3,1.6,40.3,68510,163470,3857,94
 Alabama,2022,Senate,4,8,27,0,35,8,27,0,35,23.1,73.4,3.5,50.2,281312,891805,42544,610493,1215661,,Klarner SLERS 1967-2022
 Alabama,2018,Senate,4,8,27,0,35,8,27,0,35,35.0,62.8,2.2,27.8,525581,943024,32467,417443,1501072,,Klarner SLERS 1967-2022
 Alabama,2014,Senate,4,8,27,0,35,8,27,0,35,34.9,61.1,,26.2,366756,642053,,275297,1049986,,Wikipedia (unverified)
-Alaska,2024,Senate,2,9,11,0,20,5,5,0,10,38.2,54.1,7.8,15.9,57492,81386,11688,23894,150566,,MEDSL State Precinct-Level Returns 2024
-Alaska,2022,Senate,2,9,11,0,20,8,11,0,19,28.9,65.3,5.8,36.4,68181,154004,13632,85823,235817,,Klarner SLERS 1967-2022
+Alaska,2024,Senate,2,9,11,0,20,5,5,0,10,35.9,56.2,8.0,20.3,52618,82438,11688,29820,146744,Ranked-choice races count their final round (user rule 2026-11-14).,MEDSL State Precinct-Level Returns 2024; ranked-choice final rounds from the Division of Elections cast vote record
+Alaska,2022,Senate,2,9,11,0,20,8,11,0,19,27.1,67.7,5.1,40.6,62739,156691,11864,93952,231294,Ranked-choice races count their final round (user rule 2026-11-14).,Klarner SLERS 1967-2022; ranked-choice final rounds from the Division of Elections cast vote record
 Alaska,2020,Senate,2,7,13,0,20,3,8,0,11,26.7,59.5,13.7,32.8,47112,104991,24232,57879,176335,,Klarner SLERS 1967-2022
 Alaska,2018,Senate,2,7,13,0,20,4,6,0,10,41.8,52.7,5.5,10.9,51891,65376,6803,13485,124070,,Klarner SLERS 1967-2022
 Alaska,2016,Senate,2,6,14,0,20,3,7,0,10,27.6,61.2,11.2,33.6,36138,80123,14610,43985,130871,,Klarner SLERS 1967-2022

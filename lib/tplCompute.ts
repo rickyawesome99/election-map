@@ -217,7 +217,7 @@ function nearestPresidentialLean(
 // prior in INCUMBENT_ADVANTAGE_FIXED. P: national approval effects belong to
 // E(y). L: chamber aggregate, no single incumbent.
 
-function incumbencyPtsFor(raceType: string, incumbent: string, appointed = false): number {
+export function incumbencyPtsFor(raceType: string, incumbent: string, appointed = false): number {
   const pts = (getTplFit().incumbency[raceType] ?? 0) * (appointed ? F.APPOINTED_INCUMBENCY_SHARE : 1);
   if (incumbent === "R") return -pts;
   if (incumbent === "D") return pts;
@@ -233,7 +233,7 @@ const ELECTION_CYCLE = 2026;
 // collected), and skipping beats guessing. President is excluded by design and
 // imputed rows carry no fundraising signal.
 
-function raceFundraisingFor(
+export function raceFundraisingFor(
   raceType: string,
   stateAbbr: string,
   district: string | undefined,
@@ -251,7 +251,7 @@ function raceFundraisingFor(
 }
 
 // The strip is the negative of the R-positive advantage present in the margin.
-function ffStripPts(money: { dem: number; rep: number } | null): number {
+export function ffStripPts(money: { dem: number; rep: number } | null): number {
   return money ? -computeFundraisingPts(money.rep, money.dem) : 0;
 }
 
@@ -358,7 +358,10 @@ export function houseYearFactor(houseNM: number | null, houseAnchor: number | nu
   return resid <= G.HUBER_C ? 1 : G.HUBER_C / resid;
 }
 
-function aggregateYears(races: ComputedRace[], houseAnchor?: number | null): { yearAggregations: YearAggregation[]; tpl: number } {
+/** checkedTypes: the offices whose whole year gets the outlier check against houseAnchor ("H" everywhere;
+ * the legislative-district model, lib/stateLegTpl.ts, also checks its legislature years). */
+export function aggregateYears(races: ComputedRace[], houseAnchor?: number | null, checkedTypes: readonly string[] = ["H"]): { yearAggregations: YearAggregation[]; tpl: number } {
+  const checked = new Set(checkedTypes);
   const yearAggregations = G.YEARS.map((year) => {
     const yearRaces = races.filter((race) => race.year === year && race.NM != null);
     const typeNMs: Record<string, number | null> = {};
@@ -379,7 +382,7 @@ function aggregateYears(races: ComputedRace[], houseAnchor?: number | null): { y
     }
     const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
     const typeFactors: Record<string, number> = {};
-    for (const type of racesPresent) typeFactors[type] = type === "H" ? houseYearFactor(typeNMs.H, houseAnchor) : ROW_DISCOUNT_AS_TYPE_FACTOR ? typeDiscount[type] : 1;
+    for (const type of racesPresent) typeFactors[type] = checked.has(type) ? houseYearFactor(typeNMs[type], houseAnchor) : ROW_DISCOUNT_AS_TYPE_FACTOR ? typeDiscount[type] : 1;
     const W = raceTypeWeightsFor(year);
     const totalBase = racesPresent.reduce((sum, type) => sum + (W[type] ?? 0) * typeFactors[type], 0);
     const redistributedWeights: Record<string, number> = {};
@@ -412,10 +415,10 @@ function aggregateYears(races: ComputedRace[], houseAnchor?: number | null): { y
  * place and nothing else; refitting the scale on the shorter window would add a shift common to
  * every place. Pass the state's fitted lean as houseAnchor for a state model, nothing for a district.
  */
-export function leanAsOf(races: ComputedRace[], maxYear: number, houseAnchor?: number | null): number | null {
+export function leanAsOf(races: ComputedRace[], maxYear: number, houseAnchor?: number | null, checkedTypes: readonly string[] = ["H"]): number | null {
   const rows = races.filter((r) => r.year <= maxYear);
   if (!rows.some((r) => r.NM != null && r.inAggregation)) return null;
-  return aggregateYears(rows, houseAnchor).tpl;
+  return aggregateYears(rows, houseAnchor, checkedTypes).tpl;
 }
 
 // ── getRawMargin ──────────────────────────────────────────────────────────────

@@ -20,7 +20,7 @@ type Coverage = { generated: string; offices: string[]; years: number[]; toleran
 
 const coverage = coverageJson as unknown as Coverage;
 
-const OFFICE_LABEL: Record<string, string> = { PRES: "President", USS: "U.S. Senate", GOV: "Governor", USH: "U.S. House", SLDU: "State Senate", SLDL: "State House" };
+const OFFICE_LABEL: Record<string, string> = { PRES: "President", USS: "U.S. Senate", USSS: "U.S. Senate (special)", GOV: "Governor", USH: "U.S. House", SLDU: "State Senate", SLDL: "State House" };
 const OFFICE_SHORT: Record<string, string> = { PRES: "P", USS: "S", GOV: "G", USH: "H", SLDU: "SS", SLDL: "SH" };
 
 const STATUS_COLOR: Record<Status, string> = {

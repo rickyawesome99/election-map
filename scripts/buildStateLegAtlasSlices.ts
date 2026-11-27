@@ -10,8 +10,8 @@
  * Rerun after any of its inputs change: stateLegDistricts, stateLegDemographics, stateLegPres2024,
  * stateLegPresByEra, stateLegResults, stateLegRedistricting, stateLegHistoricalMaps, stateLegCalendar,
  * stateLegCandidates2026, stateLegOutgoing2026, stateLegFinance, the turnout inputs behind lib/stateLegPopularVote.ts,
- * and the 2026 results files (data-entry/results-2026/, read by lib/stateLegResults2026.ts), and the 2026 precinct
- * files + data-entry/precincts/district-shares/ (lib/stateLegStatewide2026.ts).
+ * and the 2026 results files (data-entry/results-2026/, read by lib/stateLegResults2026.ts), and the precinct
+ * results (public/precincts/results/) + data-entry/precincts/district-shares/ (lib/stateLegStatewide.ts).
  */
 import { mkdirSync, writeFileSync } from "fs";
 import { join } from "path";
@@ -28,7 +28,7 @@ import { stateLegOutgoing2026 } from "../data/stateLegOutgoing2026";
 // The 2026 projection as published (frozen), so rebuilding the slices never moves it.
 import { projectChamber, projectDistrict, projectChamberPopularVote } from "../lib/final2026";
 import { chamberResults2026, districtResults2026, unmatchedRaces2026 } from "../lib/stateLegResults2026";
-import { statewideByDistrict2026 } from "../lib/stateLegStatewide2026";
+import { statewideByDistrict } from "../lib/stateLegStatewide";
 import { stateLegMoneyHistory } from "../lib/stateLegMoney";
 import { getNationalEnvironment } from "../lib/tplCompute";
 import { compareDistrictKeys, type AtlasChamber, type AtlasDistrict, type AtlasEra, type AtlasPresVote, type AtlasResult } from "../lib/stateLegAtlas";
@@ -59,7 +59,7 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
   const chamberProjection = projectChamber(abbr, chamber);
   const results2026 = districtResults2026(abbr, chamber);
   const chamberResults = chamberResults2026(abbr, chamber);
-  const statewide2026 = statewideByDistrict2026(abbr, chamber, roster.map((d) => d.number));
+  const statewide = statewideByDistrict(abbr, chamber, roster);
   // A chamber with nothing on the 2026 ballot has no chamber projection, but every district still
   // gets its lean ledger (contest "not-up") for the district page's lean trend.
   const popularVote = projectChamberPopularVote(abbr, chamber);
@@ -141,8 +141,8 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       if (candidates2026?.[key]) out.candidates2026 = candidates2026[key];
       if (outgoing2026?.[key]) out.outgoing2026 = outgoing2026[key];
       if (results2026.has(key)) out.result2026 = results2026.get(key)!;
-      const statewide = statewide2026.get(normalizeDistrictKey(key));
-      if (statewide?.length) out.statewide2026 = statewide;
+      const sw = statewide.get(normalizeDistrictKey(key));
+      if (sw?.length) out.statewide = sw;
       const money = stateLegMoneyHistory(abbr, chamber, key);
       if (money.length) out.money = money.map((m) => ({
         year: m.year, source: m.source, dataThrough: m.dataThrough,

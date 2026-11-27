@@ -99,21 +99,26 @@ def vest_layer(st: str, year: int) -> str | None:
 
 
 def contests(cols: list[str], yy: str) -> dict[str, dict[str, list[tuple[str, str]]]]:
-    """office → 'general' | 'runoff' → [(column, party letter)]. Specials (S..) and primaries are left out."""
+    """office → 'general' | 'runoff' → [(column, party letter)]. A U.S. Senate special held the same day
+    (S..USS, e.g. MN 2018, GA 2020) is office USSS; other specials and primaries are left out."""
     out: dict[str, dict[str, list[tuple[str, str]]]] = defaultdict(lambda: defaultdict(list))
+    runoffs: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for c in cols:
-        m = re.match(rf"^([GR])(\d\d)(PRE|USS|GOV)([A-Z])([A-Z0-9]{{2,3}})$", c.upper())
+        m = re.match(rf"^([GRS])(\d\d)(PRE|USS|GOV)([A-Z])([A-Z0-9]{{2,3}})$", c.upper())
         if not m:
             continue
         stage, cyy, off, party, tag = m.groups()
         if stage == "G" and cyy == yy:
             out[OFFICE_CODE[off]]["general"].append((c, party))
-        elif stage == "R":  # the runoff that decided this general (held weeks later, sometimes next January)
-            out[OFFICE_CODE[off]]["runoff"].append((c, party))
+        elif stage == "S" and cyy == yy and off == "USS":
+            out["USSS"]["general"].append((c, party))
+        elif stage == "R":  # a runoff that decided one of these (held weeks later, sometimes next January)
+            runoffs[OFFICE_CODE[off]].append((c, party))
     for office, st in out.items():
-        # Only the runoff of the regular contest: its candidates also appear in the general columns.
+        # Each contest takes the runoff columns whose candidates also appear in its own general columns
+        # (GA 2021: Perdue/Ossoff decided the regular race, Loeffler/Warnock the special).
         tags = {c[-3:].upper() for c, _ in st.get("general", [])}
-        st["runoff"] = [(c, p) for c, p in st.get("runoff", []) if c[-3:].upper() in tags]
+        st["runoff"] = [(c, p) for c, p in runoffs.get("USS" if office == "USSS" else office, []) if c[-3:].upper() in tags]
     return out
 
 
@@ -179,7 +184,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
     est: dict[str, list[int]] = {}
     sums: dict[str, dict] = {}
     notes = []
-    for office in ("PRES", "USS", "GOV"):
+    for office in ("PRES", "USS", "USSS", "GOV"):
         if st == "DC" and office != "PRES":
             continue  # DC's "U.S. Senator" is the shadow senator, not a Senate seat
         stage = "runoff" if cs.get(office, {}).get("runoff") else "general"

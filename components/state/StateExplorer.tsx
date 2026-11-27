@@ -139,7 +139,9 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
   // The Senate heading's count, as the House heading's: a seat on the ballot goes to its projected
   // winner (margin <= 0 is D), a seat not up to the party holding it. Seat counts put the
   // independents (King, Sanders) with the Democrats they caucus with; their own rows still say I.
-  const senateSide = (x: (typeof data.senate)[number]) => (x.kind === "race" ? (x.margin <= 0 ? "D" : "R") : x.party === "R" ? "R" : "D");
+  const senateSide = (x: (typeof data.senate)[number]) => (x.kind === "race" ? (x.result ? (x.result.party === "R" ? "R" : "D") : x.margin <= 0 ? "D" : "R") : x.party === "R" ? "R" : "D");
+  const senateCounted = data.senate.some((x) => x.kind === "race" && x.result);
+  const houseCounted = data.house.rows.some((r) => r.result);
   const senateCount = (["D", "R"] as const).map((party) => ({
     party,
     n: data.senate.filter((x) => senateSide(x) === party).length,
@@ -432,7 +434,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
       <section id="ballot" className="mt-6">
         <div className="min-w-0">
             {data.senate.length > 0 && (
-              <SubHead id="federal" right={<span className="inline-flex items-baseline gap-1"><b>*</b>incumbent</span>}>
+              <SubHead id="federal" right={<span className="inline-flex items-baseline gap-1"><b>✓</b>winner · <b>*</b>incumbent</span>}>
                 U.S. Senate
                 <span className="ml-2 normal-case tracking-normal tabular-nums">
                   {senateCount.map((c, i) => (
@@ -441,7 +443,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
                       <span style={{ color: c.color }}>{c.n}{c.party}</span>
                     </span>
                   ))}
-                  <span style={{ color: "var(--app-text-very-muted)" }}> projected</span>
+                  <span style={{ color: "var(--app-text-very-muted)" }}>{senateCounted ? "" : " projected"}</span>
                 </span>
               </SubHead>
             )}
@@ -452,10 +454,10 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
                 <SubHead right="click a district to see it on the map">
                   U.S. House · {houseRaces.length} district{houseRaces.length === 1 ? "" : "s"}
                   <span className="ml-2 normal-case tracking-normal tabular-nums">
-                    <span style={{ color: "var(--party-dem)" }}>{data.house.demProj}D</span>
+                    <span style={{ color: "var(--party-dem)" }}>{houseCounted ? data.house.demWon : data.house.demProj}D</span>
                     <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
-                    <span style={{ color: "var(--party-rep)" }}>{data.house.repProj}R</span>
-                    <span style={{ color: "var(--app-text-very-muted)" }}> projected</span>
+                    <span style={{ color: "var(--party-rep)" }}>{houseCounted ? data.house.repWon : data.house.repProj}R</span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}>{houseCounted ? " won" : " projected"}</span>
                     {data.house.open > 0 && <span style={{ color: "var(--app-text-very-muted)" }}> · {data.house.open} open seat{data.house.open === 1 ? "" : "s"}</span>}
                   </span>
                 </SubHead>
@@ -465,7 +467,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
 
             {(data.governor || chambers.length > 0) && (
               <>
-                <SubHead id="state" right={chambers.length > 0 ? "each seat by its projected rating · line = majority" : undefined}>State</SubHead>
+                <SubHead id="state" right={chambers.some((c) => c.result) ? "each seat by its winner · striped = flipped · line = majority" : chambers.length > 0 ? "each seat by its projected rating · line = majority" : undefined}>State</SubHead>
                 <span id="legislature" className="block scroll-mt-20" />
                 <StateLedger governor={data.governor} chambers={chambers} state={state.abbr} electionYear={electionYear} />
               </>

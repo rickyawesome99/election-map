@@ -62,7 +62,7 @@ export const CERTIFIED_2026: Record<string, Certification> = {
 export const SHOWN_EARLY_2026: Record<string, { since: string; note: string }> = {
   OH: {
     since: "2026-11-26",
-    note: "County boards' official canvass (complete Nov 24); the Secretary of State has not certified or published a statewide precinct file. Loaded county by county: Clermont, Cuyahoga, Franklin, Mercer, Ottawa and Summit so far, the other 82 counties are empty.",
+    note: "County boards' official canvass (complete Nov 24); the Secretary of State has not certified or published a statewide precinct file. Loaded county by county, 15 so far: Clermont, Crawford, Cuyahoga, Delaware, Franklin, Guernsey, Hancock, Lorain, Mercer, Morrow, Ottawa, Summit, Union, Warren and Wayne. The other 73 counties are empty.",
   },
 };
 

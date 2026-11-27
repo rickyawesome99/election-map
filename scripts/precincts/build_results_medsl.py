@@ -56,7 +56,7 @@ DISTRICT_OFFICES = ["USH", "SLDU", "SLDL"]
 # Years with no public precinct shapes: MEDSL rows go straight onto the 2024 precincts by name, and the
 # statewide offices come from MEDSL too.
 NO_SHAPES = {2022, 2023, 2025, 2026}
-SLOT = {"PRES", "USS", "GOV", "USH"}
+SLOT = {"PRES", "USS", "USSS", "GOV", "USH"}
 # Command-line switches: --variant oe reads {ST}.oe.parquet (OpenElections, for contests MEDSL lacks); --only SLDU,SLDL limits the offices written.
 VARIANT = ""
 ONLY: set[str] = set()
@@ -71,7 +71,6 @@ EXPLAINED: dict[tuple[str, str], str] = {
     ("AK", "USH"): "Ranked choice: precincts report first choices, the site holds the final round (2022 on).",
     ("SD", "USS"): "No Democrat ran in 2026: the independent Brian Bengs takes the Democratic side here, as the site does for such races elsewhere; the 2026 results file counts by party and shows 0.",
     ("ID", "USS"): "No Democrat ran in 2026: the leading independent (Achilles) takes the Democratic side here, as the site does for such races elsewhere; the 2026 results file counts by party and shows 0.",
-    ("GA", "USS"): "The site holds the December runoff that decided the seat; precinct returns here are the November general.",
     ("NE", "SLDU"): "Nonpartisan ballot. The site holds no party for these years' candidates, so its totals are not by party. Here each candidate takes the affiliation on file (2018 research, 2022-2026 rosters); the rest count as other.",
 }
 SIG_OFFICES = ["PRES", "USS", "GOV", "USS_S"]
@@ -1316,6 +1315,65 @@ def anchor_frame(st: str) -> tuple[pd.DataFrame, pd.Series, np.ndarray, int, int
     return old, county, weight, pids[0], len(pids)
 
 
+
+# ── where each source precinct sat on that year's legislative map ──────────────────────────────────
+# A seat's votes that match no precinct by name are spread over precincts of the county. Without a map
+# that spread could cross seat lines: in a staggered chamber the county's "free" precincts are the ones
+# whose seat was NOT up (Missouri 2018: Senate 8's votes landed in Kansas City's Senate 7 and 9). So the
+# spread is kept inside the seat as drawn that year (public/state-leg-districts-historical, or the current
+# map for a year held on it), wherever the map's district codes match the source's.
+_HIST_MAPS: dict | None = None
+
+
+def _hist_maps() -> dict:
+    global _HIST_MAPS
+    if _HIST_MAPS is None:
+        txt = (ROOT / "data" / "stateLegHistoricalMaps.ts").read_text()
+        body = txt[txt.index("=", txt.index("stateLegHistoricalMaps")) + 1:]
+        _HIST_MAPS = json.loads(body[body.index("{"): body.rindex("}") + 1])
+    return _HIST_MAPS
+
+
+def seat_key(code: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(code).lower()).lstrip("0") or "0"
+
+
+_ANCHOR_PTS: dict[str, gpd.GeoSeries] = {}
+
+
+def geo_districts(st: str, year: int, office: str, old, by_name: bool) -> np.ndarray | None:
+    """Each source precinct's district key on that year's map for a legislative office, or None (no usable map)."""
+    if office not in ("SLDU", "SLDL"):
+        return None
+    chamber = "senate" if office == "SLDU" else "house"
+    vintage = _hist_maps().get(st, {}).get(chamber, {}).get(str(year))
+    path = ROOT / "public" / ("state-leg-districts-historical" if vintage else "state-leg-districts") / chamber / (f"{st}-{vintage}.json" if vintage else f"{st}.json")
+    if not path.exists():
+        return None
+    try:
+        dist = gpd.read_file(path).set_crs(4326, allow_override=True).to_crs(5070)
+    except Exception:
+        return None
+    def key_of(row) -> str:
+        tail = str(row.get("NAMELSAD") or "").split()[-1:] or [""]
+        return seat_key(tail[0] if re.fullmatch(r"\d+[A-Za-z]?", tail[0]) else row.get("DISTRICT", ""))
+    dist["key"] = [key_of(r) for _, r in dist.iterrows()]
+    if dist["key"].duplicated().any():  # county-numbered districts (New Hampshire): codes do not identify a seat
+        return None
+    if by_name:
+        if st not in _ANCHOR_PTS:
+            a = gpd.read_file(PRE / "anchor" / f"{st}.geojsonl", engine="pyogrio")[["pid", "geometry"]].sort_values("pid")
+            _ANCHOR_PTS[st] = a.set_crs(4326, allow_override=True).to_crs(5070).geometry.make_valid().representative_point().reset_index(drop=True)
+        pts = _ANCHOR_PTS[st]
+    else:
+        pts = old.geometry.make_valid().representative_point().reset_index(drop=True)
+    if len(pts) != len(old):
+        return None
+    g = gpd.GeoDataFrame(geometry=pts.values, crs=5070)
+    j = gpd.sjoin_nearest(g, dist[["key", "geometry"]], how="left")
+    j = j[~j.index.duplicated()]
+    return j["key"].reindex(range(len(old))).fillna("").to_numpy()
+
 def build_state(st: str, year: int, truth: dict) -> str:
     have = (RAW / "medsl" / str(year) / "by_state" / (f"{st}.{VARIANT}.parquet" if VARIANT not in ("", "mix") else f"{st}.parquet")).exists()
     if st == "CA":
@@ -1330,7 +1388,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
         rows = cols_idx = np.arange(n)
         w, split = np.ones(n), np.zeros(n, dtype=bool)
         vsig: dict[str, np.ndarray] = {}
-        wanted = ["USS", "GOV"] + DISTRICT_OFFICES
+        wanted = ["USS", "USSS", "GOV"] + DISTRICT_OFFICES
         by_name = True
     else:
         old = V.load_old(st, year) if have else None
@@ -1367,7 +1425,9 @@ def build_state(st: str, year: int, truth: dict) -> str:
 
     offices: dict[str, list[list[int]]] = {}
     districts: dict[str, list[str]] = {}
-    split: dict[str, list[list]] = {}
+    # Per office, the parts of precincts that voted in more than one district. (Named apart from `split`, the
+    # crosswalk's is-a-real-split flags: sharing the name zeroed every "est" share from 2026-11-17 to 11-26.)
+    split_parts: dict[str, list[list]] = {}
     est: dict[str, list[int]] = {}
     sums: dict[str, dict] = {}
     notes = []
@@ -1375,7 +1435,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
     explained_here: dict[tuple[str, str], str] = dict(EXPLAINED)
     dropped = []
     for office in wanted:
-        o = df[(df["office"] == office) & (df["votes"] != 0)]
+        o = df[(df["office"] == ("USS_S" if office == "USSS" else office)) & (df["votes"] != 0)]
         if o.empty or st not in truth.get(year, {}).get(office, {}):
             dropped.append(office)
             continue  # nothing reported, or no regular contest that year (odd-year legislatures, DC's delegate)
@@ -1422,6 +1482,16 @@ def build_state(st: str, year: int, truth: dict) -> str:
 
         u = o[o["oid"] < 0]
         has_multi = u["mk"].isin(multi.keys())
+        geo = geo_districts(st, year, office, old, by_name)
+        geo_keys = set(geo) if geo is not None else set()
+
+        def in_seat(target: np.ndarray, district: str) -> np.ndarray:
+            """The targets inside the seat as drawn that year (all of them where the map cannot say)."""
+            k = seat_key(district)
+            if geo is None or k not in geo_keys or not len(target):
+                return target
+            inside = target[geo[target] == k]
+            return inside if len(inside) else target
         exact_votes = local_votes = 0.0
         exact_unit = [False]  # set while a Wisconsin reporting unit is being split over its own wards
         # One line, several shapes: a Wisconsin reporting unit (exact), or a line that names a town (local).
@@ -1431,6 +1501,8 @@ def build_state(st: str, year: int, truth: dict) -> str:
                 inside = target[known_mask[district][target]]
                 if len(inside):
                     target = inside
+            if not exact:
+                target = in_seat(target, district)
             exact_unit[0] = bool(exact)
             spread(target, g, district)
             exact_unit[0] = False
@@ -1448,9 +1520,20 @@ def build_state(st: str, year: int, truth: dict) -> str:
                 inside = known[np.isin(known, local)]
                 if len(inside):
                     known = inside
-            target = (free if (not pseudo and len(free)) else known) if (len(known) or len(free)) else pool
-            if not len(target):
-                target = known if len(known) else (pool if len(pool) else np.arange(nold))
+            if geo is not None and seat_key(district) in geo_keys:
+                # Keep the spread inside the seat as drawn that year: the seat's own precincts in the county,
+                # preferring those no line matched; else its known ones; else the seat statewide.
+                seat_pool = pool[geo[pool] == seat_key(district)]
+                seat_free = seat_pool[~matched_oids[seat_pool]]
+                seat_known = seat_pool[known_mask[district][seat_pool]] if district in known_mask else seat_pool[:0]
+                target = seat_free if (not pseudo and len(seat_free)) else seat_known if len(seat_known) else seat_pool
+                if not len(target):
+                    everywhere = np.flatnonzero(geo == seat_key(district))
+                    target = everywhere if len(everywhere) else pool
+            else:
+                target = (free if (not pseudo and len(free)) else known) if (len(known) or len(free)) else pool
+                if not len(target):
+                    target = known if len(known) else (pool if len(pool) else np.arange(nold))
             spread(target, g, district)
         parts = []
         for c in range(3):
@@ -1493,7 +1576,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
                 multi_d = np.flatnonzero((tot > 0).sum(axis=0) > 1)
                 entries = [[int(j), fmt[k], int(per[k][0, j]), int(per[k][1, j]), int(per[k][2, j])] for j in multi_d for k in range(len(names)) if tot[k, j] > 0]
                 if entries:
-                    split[office] = entries
+                    split_parts[office] = entries
         offices[office] = [[int(a), int(b), int(c)] for a, b, c in zip(*parts)]
         est[office] = [int(round(100 * s / a)) if a > 0 else 0 for s, a in zip(splitv, allv)]
         total = float(o["votes"].sum())
@@ -1520,7 +1603,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
     doc.setdefault("split", {})
     for o in offices:  # this run owns each office it built: no split entries from an earlier run linger
         doc["split"].pop(o, None)
-    doc["split"].update(split)
+    doc["split"].update(split_parts)
     if not doc["split"]:
         doc.pop("split")
     doc.setdefault("est", {}).update(est)

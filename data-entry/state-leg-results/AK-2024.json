@@ -96,26 +96,21 @@
    },
    "6": {
     "demVotes": 0,
-    "repVotes": 6434,
-    "othVotes": 4956,
-    "totalVotes": 11390,
+    "repVotes": 5643,
+    "othVotes": 5110,
+    "totalVotes": 10753,
     "candidates": [
      {
       "name": "Sarah L Vance",
       "party": "R",
-      "votes": 5360,
-      "winner": true,
-      "incumbent": true
+      "votes": 5643,
+      "incumbent": true,
+      "winner": true
      },
      {
       "name": "Brent Johnson",
       "party": "O",
-      "votes": 4956
-     },
-     {
-      "name": "Dawson R Slaughter",
-      "party": "R",
-      "votes": 1074
+      "votes": 5110
      }
     ]
    },
@@ -533,25 +528,20 @@
    },
    "28": {
     "demVotes": 0,
-    "repVotes": 7685,
+    "repVotes": 6347,
     "othVotes": 0,
-    "totalVotes": 7685,
+    "totalVotes": 6347,
     "candidates": [
-     {
-      "name": "Elexie Moore",
-      "party": "R",
-      "votes": 2911,
-      "winner": true
-     },
      {
       "name": "Steve Menard",
       "party": "R",
-      "votes": 2777
+      "votes": 3194,
+      "winner": true
      },
      {
-      "name": "Jessica Wright",
+      "name": "Elexie Moore",
       "party": "R",
-      "votes": 1997
+      "votes": 3153
      }
     ]
    },
@@ -689,31 +679,21 @@
     ]
    },
    "36": {
-    "demVotes": 2946,
-    "repVotes": 5456,
-    "othVotes": 491,
-    "totalVotes": 8893,
+    "demVotes": 3126,
+    "repVotes": 4057,
+    "othVotes": 0,
+    "totalVotes": 7183,
     "candidates": [
      {
       "name": "Rebecca A Schwanke",
       "party": "R",
-      "votes": 3180,
+      "votes": 4057,
       "winner": true
      },
      {
       "name": "Brandon P \"Putuuqti\" Kowalski",
       "party": "D",
-      "votes": 2946
-     },
-     {
-      "name": "Pamela Goode",
-      "party": "R",
-      "votes": 2276
-     },
-     {
-      "name": "James Fields",
-      "party": "O",
-      "votes": 491
+      "votes": 3126
      }
     ]
    },
@@ -738,32 +718,22 @@
     ]
    },
    "38": {
-    "demVotes": 2779,
+    "demVotes": 3085,
     "repVotes": 0,
-    "othVotes": 971,
-    "totalVotes": 3750,
+    "othVotes": 0,
+    "totalVotes": 3085,
     "candidates": [
      {
       "name": "Nellie D \"Unangik\" Jimmie",
       "party": "D",
-      "votes": 1380,
+      "votes": 1610,
       "winner": true
      },
      {
       "name": "Cj McCormick",
       "party": "D",
-      "votes": 1212,
+      "votes": 1475,
       "incumbent": true
-     },
-     {
-      "name": "Willy Keppel",
-      "party": "O",
-      "votes": 971
-     },
-     {
-      "name": "Victoria B Sosa",
-      "party": "D",
-      "votes": 187
      }
     ]
    },
@@ -788,26 +758,21 @@
     ]
    },
    "40": {
-    "demVotes": 2280,
+    "demVotes": 2498,
     "repVotes": 0,
-    "othVotes": 731,
-    "totalVotes": 3011,
+    "othVotes": 0,
+    "totalVotes": 2498,
     "candidates": [
      {
       "name": "Robyn \"Niayuq\" Burke",
       "party": "D",
-      "votes": 1417,
+      "votes": 1507,
       "winner": true
      },
      {
       "name": "Saima \"Ikrik\" Chase",
       "party": "D",
-      "votes": 863
-     },
-     {
-      "name": "Thomas C \"Ikaaq\" Baker",
-      "party": "O",
-      "votes": 731
+      "votes": 991
      }
     ]
    }
@@ -833,52 +798,42 @@
     "uncontested": true
    },
    "D": {
-    "demVotes": 2182,
-    "repVotes": 17082,
+    "demVotes": 0,
+    "repVotes": 17836,
     "othVotes": 0,
-    "totalVotes": 19264,
+    "totalVotes": 17836,
     "candidates": [
      {
       "name": "Jesse J Bjorkman",
       "party": "R",
-      "votes": 9234,
-      "winner": true,
-      "incumbent": true
+      "votes": 9735,
+      "incumbent": true,
+      "winner": true
      },
      {
       "name": "Ben Carpenter",
       "party": "R",
-      "votes": 7848
-     },
-     {
-      "name": "Tina Wegener",
-      "party": "D",
-      "votes": 2182
+      "votes": 8101
      }
     ]
    },
    "F": {
-    "demVotes": 7646,
-    "repVotes": 9325,
+    "demVotes": 7708,
+    "repVotes": 8637,
     "othVotes": 0,
-    "totalVotes": 16971,
+    "totalVotes": 16345,
     "candidates": [
      {
       "name": "James D Kaufman",
       "party": "R",
-      "votes": 8147,
-      "winner": true,
-      "incumbent": true
+      "votes": 8637,
+      "incumbent": true,
+      "winner": true
      },
      {
       "name": "Janice L Park",
       "party": "D",
-      "votes": 7646
-     },
-     {
-      "name": "Harold Borbridge",
-      "party": "R",
-      "votes": 1178
+      "votes": 7708
      }
     ]
    },
@@ -923,27 +878,22 @@
     ]
    },
    "L": {
-    "demVotes": 2754,
-    "repVotes": 16735,
+    "demVotes": 0,
+    "repVotes": 17721,
     "othVotes": 0,
-    "totalVotes": 19489,
+    "totalVotes": 17721,
     "candidates": [
      {
       "name": "Kelly R Merrick",
       "party": "R",
-      "votes": 9050,
-      "winner": true,
-      "incumbent": true
+      "votes": 9832,
+      "incumbent": true,
+      "winner": true
      },
      {
       "name": "Jared D Goecker",
       "party": "R",
-      "votes": 7685
-     },
-     {
-      "name": "Lee E Hammermeister",
-      "party": "D",
-      "votes": 2754
+      "votes": 7889
      }
     ]
    },

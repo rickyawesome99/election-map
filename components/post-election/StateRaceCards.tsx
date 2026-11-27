@@ -328,16 +328,22 @@ function HousePopularVote({ rows, past }: { rows: PostElectionRow[]; past: boole
   const projected = projVotes > 0 ? projSum / projVotes : null;
   const counted = projVotes > 0 ? Math.min(100, (total / projVotes) * 100) : 0;
   const pct = (v: number) => `${((v / total) * 100).toFixed(1)}%`;
+  // Filled like a called race in the party that leads the counted vote (R-positive margin); no fill
+  // before any votes or at an exact tie. Every figure goes white over the fill.
+  const fill = margin == null || margin === 0 ? null : margin > 0 ? "var(--party-rep-fill)" : "var(--party-dem-fill)";
+  const on = (c: string) => (fill ? "#ffffff" : c);
+  const soft = fill ? { color: "rgba(255,255,255,0.82)" } : null;
   return (
-    <div onPointerMove={tiltToPointer} onPointerLeave={resetTilt} data-touch-hover="" title={total > 0 ? `D ${fmtInt(dem)} · R ${fmtInt(rep)} · ${fmtInt(total)} votes counted` : undefined}
-      className="rc-card group block h-full w-full self-start py-1.5 pl-3 text-left align-top" style={{ borderLeft: "1px solid var(--app-border)" }}>
+    <div onPointerMove={tiltToPointer} onPointerLeave={resetTilt} data-touch-hover="" data-filled={fill ? "" : undefined} title={total > 0 ? `D ${fmtInt(dem)} · R ${fmtInt(rep)} · ${fmtInt(total)} votes counted` : undefined}
+      className={`rc-card group block h-full w-full self-start py-1.5 pl-3 text-left align-top${fill ? " rounded-r-md pr-2" : ""}`}
+      style={{ borderLeft: `1px solid ${fill ?? "var(--app-border)"}`, backgroundColor: fill ?? undefined, color: fill ? "#ffffff" : undefined }}>
       <div className="flex min-h-full flex-col justify-start">
       <div className="truncate text-[15px] font-semibold">House Popular Vote</div>
       {margin != null ? (
         <>
-          <div className="mt-1 text-xl font-extrabold leading-none tabular-nums"><span key={fmtCall(margin)} className="rc-tick" style={{ color: callSideColor(margin) }}>{fmtCall(margin)}</span></div>
-          <div className="mt-1 text-[11px] tabular-nums" style={veryMuted}><span style={{ color: "var(--party-dem)", fontWeight: 600 }}>D {pct(dem)}</span> <span style={{ color: "var(--party-rep)", fontWeight: 600 }}>R {pct(rep)}</span></div>
-          {projected != null && !past && <div className="overflow-hidden text-xs tabular-nums" style={muted}>Proj. Margin <b key={fmtCall(projected)} className="rc-tick" style={{ color: callSideColor(projected) }}>{fmtCall(projected)}</b></div>}
+          <div className="mt-1 text-xl font-extrabold leading-none tabular-nums"><span key={fmtCall(margin)} className="rc-tick" style={{ color: on(callSideColor(margin)) }}>{fmtCall(margin)}</span></div>
+          <div className="mt-1 text-[11px] tabular-nums" style={soft ?? veryMuted}><span style={{ color: on("var(--party-dem)"), fontWeight: 600 }}>D {pct(dem)}</span> <span style={{ color: on("var(--party-rep)"), fontWeight: 600 }}>R {pct(rep)}</span></div>
+          {projected != null && !past && <div className="overflow-hidden text-xs tabular-nums" style={soft ?? muted}>Proj. Margin <b key={fmtCall(projected)} className="rc-tick" style={{ color: on(callSideColor(projected)) }}>{fmtCall(projected)}</b></div>}
         </>
       ) : (
         <>
@@ -347,10 +353,10 @@ function HousePopularVote({ rows, past }: { rows: PostElectionRow[]; past: boole
       )}
       {/* As RaceCard: the bar and its percent share one row, the height the bar alone took. */}
       <div className="mt-px flex h-2.5 items-center gap-1.5">
-        <div className="h-[3px] min-w-0 flex-1 overflow-hidden rounded-full" style={{ background: "var(--app-tab-bg)" }}>
-          <div className="rc-progress h-full rounded-full" style={{ width: `${counted}%`, background: callSideColor(margin) }} />
+        <div className="h-[3px] min-w-0 flex-1 overflow-hidden rounded-full" style={{ background: fill ? "rgba(255,255,255,0.28)" : "var(--app-tab-bg)" }}>
+          <div className="rc-progress h-full rounded-full" style={{ width: `${counted}%`, background: fill ? "rgba(255,255,255,0.9)" : callSideColor(margin) }} />
         </div>
-        {margin != null && !past && <span className="w-8 shrink-0 text-right text-[11px] font-semibold leading-none tabular-nums" style={{ color: inColor(inState(counted)) }} title="Share of the expected vote counted">{fmtIn(counted)}</span>}
+        {margin != null && !past && <span className="w-8 shrink-0 text-right text-[11px] font-semibold leading-none tabular-nums" style={{ color: on(inColor(inState(counted))) }} title="Share of the expected vote counted">{fmtIn(counted)}</span>}
       </div>
       </div>
     </div>

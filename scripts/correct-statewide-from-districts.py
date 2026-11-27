@@ -238,6 +238,30 @@ CORRECTIONS = {
         "note": "Fusion rule: a candidate's votes on every party line count for that candidate's party.",
         "why": "Fusion rule, as for the New York Senate row (564,139 votes in 119 districts moved out of Other).",
     },
+    ("Alaska", 2022, "Senate"): {
+        "abbr": "AK",
+        "source": "Klarner SLERS 1967-2022; ranked-choice final rounds from the Division of Elections cast vote record",
+        "note": "Ranked-choice races count their final round (user rule 2026-11-14).",
+        "why": "Alaska rule (user, 2026-11-14; applied 2026-11-26): races that went past round 1 now hold their final round (scripts/precincts/correct_site_alaska_rcv.py), so the row is the district sum. The prior row summed first choices by party.",
+    },
+    ("Alaska", 2022, "House"): {
+        "abbr": "AK",
+        "source": "Klarner SLERS 1967-2022; ranked-choice final rounds from the Division of Elections cast vote record",
+        "note": "Ranked-choice races count their final round (user rule 2026-11-14).",
+        "why": "Alaska rule (user, 2026-11-14; applied 2026-11-26): races that went past round 1 now hold their final round (scripts/precincts/correct_site_alaska_rcv.py), so the row is the district sum. The prior row summed first choices by party.",
+    },
+    ("Alaska", 2024, "Senate"): {
+        "abbr": "AK",
+        "source": "MEDSL State Precinct-Level Returns 2024; ranked-choice final rounds from the Division of Elections cast vote record",
+        "note": "Ranked-choice races count their final round (user rule 2026-11-14).",
+        "why": "Alaska rule (user, 2026-11-14; applied 2026-11-26): races that went past round 1 now hold their final round (scripts/precincts/correct_site_alaska_rcv.py), so the row is the district sum. The prior row summed first choices by party.",
+    },
+    ("Alaska", 2024, "House"): {
+        "abbr": "AK",
+        "source": "MEDSL State Precinct-Level Returns 2024; ranked-choice final rounds from the Division of Elections cast vote record",
+        "note": "Ranked-choice races count their final round (user rule 2026-11-14).",
+        "why": "Alaska rule (user, 2026-11-14; applied 2026-11-26): races that went past round 1 now hold their final round (scripts/precincts/correct_site_alaska_rcv.py), so the row is the district sum. The prior row summed first choices by party.",
+    },
     ("New Jersey", 2025, "House"): {
         "abbr": "NJ",
         "source": "Wikipedia district tables",

@@ -37,6 +37,10 @@ def sources(year: int) -> list[tuple[Path, set[str]]]:
     return [(p, o) for p, o in out if p.exists()]
 
 
+# Senate seats decided in a runoff whose precinct rows sit in the same MEDSL file (stage "GEN RUNOFF").
+RUNOFF_DECIDED: dict[int, set[str]] = {2022: {"GA"}}
+
+
 def office_code(o: str) -> str | None:
     if o in ("US HOUSE", "US SENATE", "STATE SENATE", "STATE HOUSE"):
         return {"US HOUSE": "USH", "US SENATE": "USS", "STATE SENATE": "SLDU", "STATE HOUSE": "SLDL"}[o]
@@ -64,7 +68,12 @@ def read(path: Path, keep: set[str]) -> pd.DataFrame:
         if extra:  # the detailed label keeps "DEMOCRATIC-FARMER-LABOR" and fusion lines apart; fall back to the simplified one
             ch["party"] = ch["party"].where(ch["party"].str.strip() != "", ch.pop("party_simplified"))
         ch["office"] = ch["office"].str.upper().map(lambda o, memo={}: memo.setdefault(o, office_code(o)))
-        ch = ch[ch["office"].isin(keep) & (ch["stage"].str.upper() == "GEN")]
+        # A U.S. Senate runoff that decided the seat (RUNOFF_DECIDED) replaces the general: the site counts the runoff.
+        yr = re.search(r"(20\d\d)", path.name)
+        decided = RUNOFF_DECIDED.get(int(yr.group(1)) if yr else 0, set())
+        runoff = (ch["stage"].str.upper() == "GEN RUNOFF") & (ch["office"] == "USS") & ch["st"].isin(decided) & (ch["special"].str.upper() != "TRUE")
+        ch.loc[runoff, "office"] = "USS_RUN"
+        ch = ch[(ch["office"].isin(keep) & (ch["stage"].str.upper() == "GEN")) | runoff]
         special = ch["special"].str.upper() == "TRUE"
         # Maryland's 7th, November 2020: the regular election, flagged as a special in the source (the special was in April).
         if "house_2020" in path.name:
@@ -122,6 +131,10 @@ def main() -> None:
     if year == 2022 and (tn := tennessee_governor_2022()) is not None:
         frames.append(tn)
     df = pd.concat(frames, ignore_index=True)
+    for st in RUNOFF_DECIDED.get(year, set()):
+        if ((df["st"] == st) & (df["office"] == "USS_RUN")).any():
+            df = df[~((df["st"] == st) & (df["office"] == "USS"))]
+    df.loc[df["office"] == "USS_RUN", "office"] = "USS"
     out = RAW / str(year) / "by_state"
     out.mkdir(parents=True, exist_ok=True)
     for st, g in df.groupby("st"):

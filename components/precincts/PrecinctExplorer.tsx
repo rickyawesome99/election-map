@@ -22,9 +22,9 @@ const NationalMap = dynamic(() => import("./NationalMap"), { ssr: false, loading
 const MAP_BOX: React.CSSProperties = { height: "min(72vh, 680px)", minHeight: 400 };
 const PrecinctMap = dynamic(() => import("./PrecinctMap"), { ssr: false, loading: () => <div style={{ height: "100%" }} /> });
 
-// Column heads of the past-results grid: short enough for six offices in the sidebar.
+// Column heads of the past-results grid: short enough for seven offices in the sidebar.
 const OFFICE_SHORT: Record<Office, [string, string?]> = {
-  PRES: ["Pres"], USS: ["Sen"], GOV: ["Gov"], USH: ["House"], SLDU: ["State", "Sen"], SLDL: ["State", "House"],
+  PRES: ["Pres"], USS: ["Sen"], USSS: ["Sen", "Spec."], GOV: ["Gov"], USH: ["House"], SLDU: ["State", "Sen"], SLDL: ["State", "House"],
 };
 const EST_FLAG = 10; // percent of a precinct-year's vote that was fitted from other boundaries before it is italicized
 
@@ -103,7 +103,7 @@ function describeOneParty(kind: "D" | "R" | "same"): OneParty {
 }
 function onePartyRace(shell: StateShell, res: StateResults | null | undefined, o: Office, i: number, year: number, data: OnePartyData | null): OneParty | null {
   if (!res || o === "PRES") return null;
-  const statewide = o === "USS" || o === "GOV";
+  const statewide = o === "USS" || o === "USSS" || o === "GOV";
   const district = statewide ? "*" : res.districts[o]?.[i];
   if (!district) return null;
   if (data?.covered[shell.abbr]?.[year]?.includes(o)) {
@@ -118,7 +118,7 @@ function onePartyRace(shell: StateShell, res: StateResults | null | undefined, o
 const ONE_PARTY_OPACITY = 0.45;
 
 // TPL's race types for the precinct offices. Both legislative chambers are "L", averaged equally.
-const TPL_TYPE: Record<Office, string> = { PRES: "P", USS: "S", GOV: "G", USH: "H", SLDU: "L", SLDL: "L" };
+const TPL_TYPE: Record<Office, string> = { PRES: "P", USS: "S", USSS: "S", GOV: "G", USH: "H", SLDU: "L", SLDL: "L" };
 /** TPL's base race-type weights (data/tplModelData.ts), handed down by the server page. */
 export type TplWeights = { presidential: Record<string, number>; midterm: Record<string, number> };
 

@@ -22,6 +22,8 @@ import { fieldPersons, projectedNomineeShare, projectedSeats, type ProjectedSeat
 import { ABBR_TO_FIPS } from "@/lib/fips";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { candidatePhoto } from "@/lib/candidatePhotos";
+import { raceResult2026, type RaceResult2026 } from "@/lib/raceResults2026";
+import { districtResults2026 } from "@/lib/stateLegResults2026";
 import type { CountyMapEntry } from "@/components/PastElectionCountyMap";
 import type { StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
 import { stateLeanTrend } from "@/lib/leanTrend";
@@ -54,6 +56,21 @@ export type HeroBody = {
 // ── On the ballot ────────────────────────────────────────────────────────────
 
 export type BallotCandidate = { name: string; party: "D" | "R" | "I"; incumbent: boolean; photo: string | null };
+/**
+ * A 2026 race's count (lib/raceResults2026.ts): the winner (or, uncalled, the leader) and the
+ * runner-up, the winning margin in points of all votes (Alaska: the RCV final round), and whether
+ * the winner held the seat for its party or took it from the other.
+ */
+export type BallotOutcome = {
+  winner: BallotCandidate;
+  /** Null where the winner ran unopposed. */
+  loser: BallotCandidate | null;
+  /** Winner over runner-up, points of all votes, >= 0; null unopposed or with no count printed. */
+  margin: number | null;
+  party: "D" | "R" | "I";
+  flip: boolean;
+  called: boolean;
+};
 export type BallotRace = {
   kind: "race";
   label: string;
@@ -62,6 +79,7 @@ export type BallotRace = {
   rep: BallotCandidate | null;
   margin: number;
   rating: string;
+  result: BallotOutcome | null;
 };
 export type BallotHoldover = {
   kind: "holdover";
@@ -85,6 +103,7 @@ export type HouseRow = {
   geoid: string;
   dem: BallotCandidate | null;
   rep: BallotCandidate | null;
+  result: BallotOutcome | null;
 };
 
 /** The 2026 projection's shading for a chamber's districts, computed here so the map never needs the model. */
@@ -140,7 +159,27 @@ export type ChamberBlock = {
    */
   seatTones: string[] | null;
   within10: number;
+  /** The 2026 count (lib/stateLegResults2026.ts); null where the chamber held no regular election. */
+  result: ChamberOutcome | null;
   map: ChamberMapData;
+};
+
+/** A chamber after the 2026 count, beside its majority going in. */
+export type ChamberOutcome = {
+  dem: number;
+  rep: number;
+  total: number;
+  /** Seats that changed hands, all parties. */
+  flips: number;
+  /** Seats on the ballot decided by under 5 points. */
+  within5: number;
+  /** Majority party before (the October composition) and after; "tie" for an even split. */
+  before: "D" | "R" | "I" | "tie" | null;
+  after: "D" | "R" | "I" | "tie";
+  /** Corrected chamber vote margin (R-positive), else the raw one. */
+  margin: number | null;
+  /** Every seat after the count, most Democratic first: "hold D", "flip D", "I", "none", "flip R", "hold R". */
+  tones: string[];
 };
 
 
@@ -179,7 +218,7 @@ export type StatePageData = {
   bodies: HeroBody[];
   governor: BallotRace | BallotHoldover | null;
   senate: (BallotRace | BallotHoldover)[];
-  house: { rows: HouseRow[]; demProj: number; repProj: number; open: number };
+  house: { rows: HouseRow[]; demProj: number; repProj: number; demWon: number; repWon: number; open: number };
   chambers: ChamberBlock[];
   houseRaces: ForecastedRace[];
   housePastResults: Record<string, PastResult[]>;
@@ -267,6 +306,33 @@ function seatTones(seats: ProjectedSeat[]): string[] {
           : x.status === "safe" || x.margin == null ? `Safe ${x.party}` : marginToRating(x.margin));
 }
 
+const majorityOf = (dem: number, rep: number, oth: number, total: number): ChamberOutcome["after"] =>
+  dem * 2 > total ? "D" : rep * 2 > total ? "R" : oth * 2 > total ? "I" : dem === rep ? "tie" : dem > rep ? "D" : "R";
+
+function chamberOutcome(abbr: string, chamber: Chamber, s: ReturnType<typeof chamberSummary>): ChamberOutcome | null {
+  const r = s.results2026;
+  if (!r || r.specialsOnly) return null;
+  const { dem, rep, oth, none } = r.seats;
+  const total = dem + rep + oth + none;
+  const fD = Math.min(r.flips.D, dem), fR = Math.min(r.flips.R, rep);
+  const tones = [
+    ...Array<string>(dem - fD).fill("hold D"), ...Array<string>(fD).fill("flip D"),
+    ...Array<string>(oth).fill("I"), ...Array<string>(none).fill("none"),
+    ...Array<string>(fR).fill("flip R"), ...Array<string>(rep - fR).fill("hold R"),
+  ];
+  const within5 = [...districtResults2026(abbr, chamber).values()].filter((d) => d.dem > 0 && d.rep > 0 && d.margin != null && Math.abs(d.margin) < 5).length;
+  const b = s.seats;
+  return {
+    dem, rep, total,
+    flips: r.flips.D + r.flips.R + r.flips.I,
+    within5,
+    before: b ? majorityOf(b.dem, b.rep, b.oth, b.total) : null,
+    after: majorityOf(dem, rep, oth, total),
+    margin: r.adjusted ?? r.raw.margin,
+    tones,
+  };
+}
+
 function chamberBlock(state: StateInfo, chamber: Chamber, unicameral: boolean): ChamberBlock | null {
   const s = chamberSummary(state.abbr, state.name, chamber);
   if (s.roster.length === 0) return null;
@@ -319,6 +385,7 @@ function chamberBlock(state: StateInfo, chamber: Chamber, unicameral: boolean): 
     open: s.fieldStats?.open ?? null,
     within5: within(5),
     within10: within(10),
+    result: chamberOutcome(state.abbr, chamber, s),
     seatTones: p ? seatTones(projectedSeats(s.roster.map((d) => ({ seats: d.seats, incumbents: d.incumbents ?? [], projection: p.districts.find((x) => x.key === d.number) ?? null })))) : null,
     map: {
       chamber,
@@ -347,7 +414,36 @@ function ballotCandidates(race: ForecastedRace): Pick<BallotRace, "dem" | "rep">
   return { dem: c ? one(c.dem) : null, rep: c ? one(c.rep) : null };
 }
 
-function toBallotRace(race: ForecastedRace, label: string, href: string): BallotRace {
+/** The race's 2026 count as winner + runner-up, held or flipped (see BallotOutcome). */
+function raceOutcome(office: RaceResult2026["office"], race: ForecastedRace): BallotOutcome | null {
+  const r = raceResult2026(office, race.id);
+  if (!r) return null;
+  // The two slots (Alaska's RCV final round, Louisiana's finalists), else the top two by votes.
+  const slots = r.candidates.filter((c) => c.slot);
+  const pair = (slots.length >= 1 ? slots : r.candidates).slice().sort((a, b) => Number(b.winner) - Number(a.winner) || b.votes - a.votes);
+  const [w, l] = pair;
+  if (!w) return null;
+  const known = [race.candidates?.dem, race.candidates?.rep].filter(Boolean);
+  const cand = (c: typeof w): BallotCandidate => ({
+    name: c.name,
+    party: c.party,
+    incumbent: !!c.incumbent || known.some((k) => k!.incumbent && k!.name === c.name),
+    photo: candidatePhoto(c.name, race.state) ?? candidatePhoto(known.find((k) => k!.party === c.party)?.name ?? "", race.state),
+  });
+  // Alaska's ranked-choice count is party against party, as its race page reads it.
+  const margin = !l || r.total <= 0 ? null : r.rcv && r.slotMargin != null ? Math.abs(r.slotMargin) : ((w.votes - l.votes) / r.total) * 100;
+  const party = (r.winnerParty ?? w.party) as BallotOutcome["party"];
+  return {
+    winner: cand(w),
+    loser: l ? cand(l) : null,
+    margin,
+    party,
+    flip: r.seatParty ? r.seatParty !== party : r.flip,
+    called: r.called,
+  };
+}
+
+function toBallotRace(race: ForecastedRace, label: string, href: string, office: RaceResult2026["office"]): BallotRace {
   return {
     kind: "race",
     label,
@@ -355,6 +451,7 @@ function toBallotRace(race: ForecastedRace, label: string, href: string): Ballot
     ...ballotCandidates(race),
     margin: race.margin,
     rating: race.rating,
+    result: raceOutcome(office, race),
   };
 }
 
@@ -387,14 +484,14 @@ export function buildStatePage(state: StateInfo): StatePageData {
   const projectedSenate2 = senateSeat2Race ? forecastRace(senateSeat2Race) : null;
 
   const governor: StatePageData["governor"] = projectedGovernor
-    ? toBallotRace(projectedGovernor, "Governor", `/governor/${projectedGovernor.id.toLowerCase()}`)
+    ? toBallotRace(projectedGovernor, "Governor", `/governor/${projectedGovernor.id.toLowerCase()}`, "governor")
     : governorNoEl
       ? { kind: "holdover", label: "Governor", href: `/governor/${governorNoEl.abbr.toLowerCase()}`, name: governorNoEl.incumbent, party: governorNoEl.party as "D" | "R" | "I", nextElection: governorNoEl.nextElection, photo: candidatePhoto(governorNoEl.incumbent, abbr) }
       : null;
   const senate: StatePageData["senate"] = [];
-  if (projectedSenate1) senate.push(toBallotRace(projectedSenate1, "Senate (Seat 1)", `/senate/${projectedSenate1.id.toLowerCase()}`));
+  if (projectedSenate1) senate.push(toBallotRace(projectedSenate1, "Senate (Seat 1)", `/senate/${projectedSenate1.id.toLowerCase()}`, "senate"));
   else if (senateSeat1NoEl) senate.push({ kind: "holdover", label: "Senate (Seat 1)", href: `/senate/${senateSeat1NoEl.abbr.toLowerCase()}`, name: senateSeat1NoEl.incumbent, party: ownParty(senateSeat1NoEl), nextElection: senateSeat1NoEl.nextElection, photo: candidatePhoto(senateSeat1NoEl.incumbent, abbr) });
-  if (projectedSenate2) senate.push(toBallotRace(projectedSenate2, "Senate (Seat 2)", `/senate/${projectedSenate2.id.toLowerCase().replace(/-2$/, "2")}`));
+  if (projectedSenate2) senate.push(toBallotRace(projectedSenate2, "Senate (Seat 2)", `/senate/${projectedSenate2.id.toLowerCase().replace(/-2$/, "2")}`, "senate"));
   else if (senateSeat2Holdover) senate.push({ kind: "holdover", label: "Senate (Seat 2)", href: `/senate/${senateSeat2Holdover.abbr.toLowerCase()}2`, name: senateSeat2Holdover.incumbent, party: ownParty(senateSeat2Holdover), nextElection: senateSeat2Holdover.nextElection, photo: candidatePhoto(senateSeat2Holdover.incumbent, abbr) });
 
   const houseRows: HouseRow[] = houseRaces.map((race) => {
@@ -410,6 +507,7 @@ export function buildStatePage(state: StateInfo): StatePageData {
       openHolder: open ? (race.seatHolder ?? "open seat") : null,
       geoid: `${stateFips}${distNum === "AL" ? "00" : distNum.padStart(2, "0")}`,
       ...ballotCandidates(race),
+      result: raceOutcome("house", race),
     };
   });
 
@@ -608,6 +706,8 @@ export function buildStatePage(state: StateInfo): StatePageData {
       rows: houseRows,
       demProj: houseRaces.filter((r) => r.margin <= 0).length,
       repProj: houseRaces.filter((r) => r.margin > 0).length,
+      demWon: houseRows.filter((r) => r.result?.party === "D").length,
+      repWon: houseRows.filter((r) => r.result?.party === "R").length,
       open: houseRows.filter((r) => r.openHolder).length,
     },
     chambers,
