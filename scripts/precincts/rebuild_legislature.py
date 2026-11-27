@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Rebuild the state-legislative offices (SLDU, SLDL) of every past precinct year with the inputs each was
-built from, as recorded in the coverage grid's `src` (data/precincts/coverage.json):
+"""Rebuild the offices build_results_medsl.py owns (SLDU, SLDL, USH, and the statewide races of years without
+shapes) for every past precinct year, with the inputs each was built from, as recorded in the coverage grid's
+`src` (data/precincts/coverage.json):
 
   medsl-Y[+vest-Y]                          build_results_medsl.py Y ST --only OFFICE
   medsl-Y+openelections-Y… / +ny-boe / nm-sos   … --variant mix --only OFFICE
@@ -9,7 +10,8 @@ built from, as recorded in the coverage grid's `src` (data/precincts/coverage.js
   rdh, official, swdb, ak-cvr, vest-Y, rdh+medsl   skipped: other builders own them
 
 Used after a change to build_results_medsl.py that moves votes but not totals (2026-11-26: a seat's
-unmatched votes are spread only inside the seat as drawn that year). Years run in parallel (the grid is
+unmatched votes are spread only inside the seat as drawn that year, legislature and U.S. House; each side's
+votes spread by where that side votes). Years run in parallel (the grid is
 file-locked; each year writes its own results files).
 
   python3 scripts/precincts/rebuild_legislature.py --plan
@@ -30,11 +32,12 @@ COV = ROOT / "data" / "precincts" / "coverage.json"
 BUILDER = ROOT / "scripts" / "precincts" / "build_results_medsl.py"
 SRC_OE = {("MS", 2019), ("MS", 2023), ("KY", 2023), ("NJ", 2017)}  # SRC labels them openelections, default variant
 YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2025]
+OFFICES = ("SLDU", "SLDL", "USH", "USS", "USSS", "GOV")
 
 
 def recipe(st: str, year: int, src: str) -> str | None:
     """The --variant for a cell ('' default, 'mix', 'oe'), or None when another builder owns it."""
-    if re.match(r"^(rdh|official|swdb|ak-cvr)-", src) or re.fullmatch(r"vest-\d{4}", src):
+    if re.match(r"^(rdh|official|swdb|ak-cvr|vest)-", src):
         return None
     has_m, has_oe = "medsl-" in src, "openelections-" in src or "nm-sos-" in src or "ny-boe" in src
     if has_m and has_oe:
@@ -51,7 +54,7 @@ def plan(years: list[int]) -> dict[int, list[tuple[str, str, list[str]]]]:
         for y in years:
             cells = cov[st]["years"].get(str(y), {})
             by_variant: dict[str, list[str]] = defaultdict(list)
-            for office in ("SLDU", "SLDL"):
+            for office in OFFICES:
                 src = cells.get(office, {}).get("src")
                 if not src or cells[office].get("status") in ("na", "missing"):
                     continue

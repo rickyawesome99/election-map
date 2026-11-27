@@ -30,6 +30,7 @@ import zipfile
 from collections import defaultdict
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import pyogrio
 
@@ -274,6 +275,7 @@ def build_state(st: str) -> dict | None:
     geoid_of = {int(p): v["geoid"] for p, v in meta["precincts"].items()}
     offices: dict[str, list[list[int]]] = {}
     districts: dict[str, list[str]] = {}
+    split: dict[str, list[list]] = {}
     sums: dict[str, dict] = {}
     src = []
     layer = rdh_layer(st) if meta["source_kind"] == "rdh" else None
@@ -309,14 +311,17 @@ def build_state(st: str) -> dict | None:
             slot = office in SLOT_OFFICES and not (aggregated and office != "PRES" and st == "NY") and not (st == "WI")
             dcols: list[str] = []
             rcols: list[str] = []
+            per_dist: dict[str, tuple[list[str], list[str], list[str]]] = {}  # district → (D cols, R cols, all cols)
             for dist, cs in contests[office].items():
                 if slot:
                     dc, rc = slot_columns([(c, p, int(totals[c])) for c, p in cs])
-                    dcols += [dc] if dc else []
-                    rcols += [rc] if rc else []
+                    dl, rl = ([dc] if dc else []), ([rc] if rc else [])
                 else:
-                    dcols += [c for c, p in cs if p == "D"]
-                    rcols += [c for c, p in cs if p == "R"]
+                    dl, rl = [c for c, p in cs if p == "D"], [c for c, p in cs if p == "R"]
+                dcols += dl
+                rcols += rl
+                if dist:
+                    per_dist[dist] = (dl, rl, [c for c, _ in cs])
             d = v[dcols].sum(axis=1) if dcols else pd.Series(0, index=df.index)
             r = v[rcols].sum(axis=1) if rcols else pd.Series(0, index=df.index)
             o = v.sum(axis=1) - d - r
@@ -329,6 +334,21 @@ def build_state(st: str) -> dict | None:
                 top = per.idxmax(axis=1).where(per.max(axis=1) > 0, "")
                 districts[office] = [str(x) for x in top]
                 sums[office]["districts"] = int((per.sum(axis=0) > 0).sum())
+                # A precinct that voted in more than one district's race: each district's own part,
+                # [precinct index, district, D, R, other], as build_results_medsl.py writes them. The row above
+                # is the sum and the label the larger part; lib/stateLegDistrictRows.ts and the district maps read these.
+                multi = np.flatnonzero((per > 0).sum(axis=1).to_numpy() > 1)
+                if len(multi):
+                    entries = []
+                    for j in multi:
+                        for dist, (dl, rl, al) in per_dist.items():
+                            tot = float(v[al].iloc[j].sum())
+                            if tot <= 0:
+                                continue
+                            dd = int(round(float(v[dl].iloc[j].sum()))) if dl else 0
+                            rr = int(round(float(v[rl].iloc[j].sum()))) if rl else 0
+                            entries.append([int(j), str(dist), dd, rr, int(round(tot)) - dd - rr])
+                    split[office] = entries
 
     if st in MEDSL_SUPPLEMENT:
         have = {o: {re.sub(r"^0+(?=\d)", "", k) for k in set(districts.get(o, [])) if k} for o in MEDSL_SUPPLEMENT[st]}
@@ -355,7 +375,7 @@ def build_state(st: str) -> dict | None:
             src.append("medsl-2024")
 
     (OUT / st).mkdir(parents=True, exist_ok=True)
-    (OUT / st / f"{YEAR}.json").write_text(json.dumps({"year": YEAR, "st": st, "n": len(pids), "first_pid": pids[0], "offices": offices, "districts": districts, "basis": {o: sums[o]["basis"] for o in offices}, "src": src}, separators=(",", ":")) + "\n")
+    (OUT / st / f"{YEAR}.json").write_text(json.dumps({"year": YEAR, "st": st, "n": len(pids), "first_pid": pids[0], "offices": offices, "districts": districts, "basis": {o: sums[o]["basis"] for o in offices}, "src": src, **({"split": split} if split else {})}, separators=(",", ":")) + "\n")
     return {"n": len(pids), "offices": sums}
 
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { electionYear } from "@/data/forecastData";
 import ForecastPublic from "@/components/methodology-public/ForecastPublic";
-import { StateTplPublic, DistrictTplPublic, CountyTplPublic } from "@/components/methodology-public/TplPublic";
+import { StateTplPublic, DistrictTplPublic, CountyTplPublic, LegTplPublic } from "@/components/methodology-public/TplPublic";
 import WarPublic from "@/components/methodology-public/WarPublic";
 import PrecinctPublic from "@/components/methodology-public/PrecinctPublic";
 import TurnoutPublic from "@/components/methodology-public/TurnoutPublic";
@@ -21,6 +21,7 @@ const TABS = [
   { key: "state-tpl", label: "State TPL", blurb: "How a state's partisan lean is measured" },
   { key: "district-tpl", label: "District TPL", blurb: "How a House district's lean is measured" },
   { key: "county-tpl", label: "County TPL", blurb: "How a county's lean is measured" },
+  { key: "leg-tpl", label: "Legislative TPL", blurb: "How a state legislative district's lean is measured" },
   { key: "war", label: "WAR", blurb: "How a candidate's strength is measured" },
   { key: "turnout", label: "Turnout", blurb: "How turnout is measured and estimated" },
   { key: "state-leg", label: "State Legislatures", blurb: "How state legislative seats are recorded and projected" },
@@ -76,6 +77,7 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
           {active === "state-tpl" && <StateTplPublic />}
           {active === "district-tpl" && <DistrictTplPublic />}
           {active === "county-tpl" && <CountyTplPublic />}
+          {active === "leg-tpl" && <LegTplPublic />}
           {active === "war" && <WarPublic />}
           {active === "precinct-district" && <PrecinctPublic />}
           {active === "turnout" && <TurnoutPublic />}

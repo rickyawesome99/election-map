@@ -8,6 +8,7 @@ import WarMethodology from "@/components/methodology/WarMethodology";
 import PrecinctMethodology from "@/components/methodology/PrecinctMethodology";
 import TurnoutMethodology from "@/components/methodology/TurnoutMethodology";
 import StateLegMethodology from "@/components/methodology/StateLegMethodology";
+import LegTplMethodology from "@/components/methodology/LegTplMethodology";
 import SourcesMethodology from "@/components/methodology/SourcesMethodology";
 import ChangeLog, { RevisionHistory } from "@/components/methodology/ChangeLog";
 import MethodologyToc from "@/components/methodology/MethodologyToc";
@@ -24,6 +25,7 @@ const TABS = [
   { key: "state-tpl", label: "State TPL", blurb: "A state's structural lean" },
   { key: "district-tpl", label: "District TPL", blurb: "A district's lean on the 2026 lines" },
   { key: "county-tpl", label: "County TPL", blurb: "The state pipeline in one county" },
+  { key: "leg-tpl", label: "Legislative TPL", blurb: "County TPL's pipeline in every state House and Senate district" },
   { key: "war", label: "WAR", blurb: "Candidate WAR, Expected Result, Vs. Opponent" },
   { key: "precinct-district", label: "Precinct districts", blurb: "Precinct pages: eras, crosswalk, 2026 outlook, targets, the legislature-model comparison" },
   { key: "turnout", label: "Turnout", blurb: "Turnout measures and the 2026 turnout estimate" },
@@ -85,6 +87,7 @@ export default async function MethodologyPage({ params }: { params: Promise<{ mo
           {active === "state-tpl" && <><StateTplMethodology /><RevisionHistory model="state-tpl" /></>}
           {active === "district-tpl" && <><DistrictTplMethodology /><RevisionHistory model="district-tpl" /></>}
           {active === "county-tpl" && <><CountyTplMethodology /><RevisionHistory model="county-tpl" /></>}
+          {active === "leg-tpl" && <><LegTplMethodology /><RevisionHistory model="leg-tpl" /></>}
           {active === "war" && <><WarMethodology /><RevisionHistory model="war" /></>}
           {active === "precinct-district" && <><PrecinctMethodology /><RevisionHistory model="precinct-district" /></>}
           {active === "turnout" && <><TurnoutMethodology /><RevisionHistory model="turnout" /></>}

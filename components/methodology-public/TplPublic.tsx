@@ -1,5 +1,8 @@
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { TPL_VALIDATION } from "@/data/tplValidation";
+import { STATE_LEG_TPL_VALIDATION } from "@/data/stateLegTplValidation";
+import { readFileSync } from "fs";
+import { join } from "path";
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { houseData } from "@/data/forecastData";
@@ -151,6 +154,49 @@ export function CountyTplPublic() {
           { q: "Missing places", a: "Alaska reports no county results, so it has no county leans." },
         ]} />
         <SeeIt>Open any county from <A href="/historical">Historical Results</A>, under Analysis.</SeeIt>
+      </Chapter>
+    </>
+  );
+}
+
+/** The legislative-district TPL's figures for the public tab: PA House 151's built file, and the validation. */
+function legExample(): { tpl: number; stateTpl: number } | null {
+  try {
+    return JSON.parse(readFileSync(join(process.cwd(), "public", "state-leg-tpl", "house", "PA", "151.json"), "utf8")) as { tpl: number; stateTpl: number };
+  } catch {
+    return null;
+  }
+}
+
+export function LegTplPublic() {
+  const ex = legExample();
+  const v = STATE_LEG_TPL_VALIDATION.pooled;
+  return (
+    <>
+      <Chapter id="overview" kicker="True Partisan Lean · Legislative districts" title="The same lean, for every state House and Senate district"
+        intro="Legislative TPL runs the county recipe on each of the 6,814 state House and Senate districts as they are drawn today, with the district's own legislative race as a fifth ingredient beside president, U.S. Senate, governor and U.S. House. It is a measurement of how the district votes, not a forecast, and it is kept apart from the 2026 legislative forecast published before the election.">
+        {ex && <KeyFigures items={[
+          { value: <Margin v={ex.tpl} />, label: "Pennsylvania House District 151" },
+          { value: <Margin v={ex.stateTpl} />, label: "Pennsylvania as a whole" },
+        ]} />}
+      </Chapter>
+
+      <Chapter id="how" kicker="How it works" title="Votes on today's lines">
+        <QA items={[
+          { q: "Where do the votes come from?", a: "Precinct-by-precinct results for every election since 2016, each precinct placed in today's districts by where its residents live. So a race held on an older map is still measured on the district as it is drawn now. When the district's own race was held on today's map, it simply counts that race's result." },
+          { q: "Statewide races", a: "For U.S. Senate and governor, the district's own margin, with the incumbent and the money of the statewide race taken out, as for a county. A race without a Democrat against a Republican is filled in from the district's presidential vote." },
+          { q: "U.S. House and legislative races", a: "Often only part of a district had a Democrat against a Republican. That part counts as voted; the rest is filled in from its own presidential vote. The legislative race also has the sitting member's advantage and the money gap taken out, as a House race does." },
+          { q: "Popular local candidates", a: "A legislative or House result that runs far from the district's statewide results, like a long-serving member holding a seat their party usually loses, is turned down rather than taken at face value." },
+          { q: "Alaska", a: "Ranked-choice races count their final round, rebuilt from the state's ballot records." },
+          { q: "Does it include 2026?", a: "Yes, for states whose 2026 results have been published precinct by precinct; others fill in as they certify." },
+        ]} />
+      </Chapter>
+
+      <Chapter id="test" kicker="How well it works" title="The test">
+        <p className="max-w-[65ch] text-[15px] leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+          Take each legislative race, build the lean from earlier years only, add that year&apos;s national mood and the race&apos;s incumbent and money: what is left over averages <Num>{v.tplFull.toFixed(1)}</Num> points across <Num>{v.n.toLocaleString("en-US")}</Num> races, against <Num>{v.presFull.toFixed(1)}</Num> using the district&apos;s last presidential result instead. The lean comes out ahead in {v.tplBetterIn} of {v.years} years.
+        </p>
+        <SeeIt>Open any state&apos;s legislature from <A href="/legislatures">Chambers</A>, pick a district, and scroll to District TPL; or colour the chamber map by District TPL.</SeeIt>
       </Chapter>
     </>
   );

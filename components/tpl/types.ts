@@ -197,4 +197,25 @@ export type CountyPageData = {
   tplOverTime: TplAsOf[];
 };
 
+/** Row fields at their usual value, left out of the legislative-district TPL files and restored by the page. */
+export const LEG_ROW_DEFAULTS: Record<string, unknown> = { eligibility: "eligible", incumbent: "Open", incumbencyPts: 0, FF_pts: 0, envCarry: 0, aggWeight: 1, inAggregation: true, imputed: false, minValidYear: 0 };
+
+/** A state-legislative district's TPL section (lib/stateLegTplPage.ts), fetched from public/state-leg-tpl/. */
+export type StateLegTplPageData = {
+  state: string;
+  stateId: string;
+  stateName: string;
+  chamber: "house" | "senate";
+  tpl: number;
+  stateTpl: number;
+  /** The district's statewide lean (President, Senate, Governor alone): the anchor of the House / Legislature outlier check. */
+  anchor: number | null;
+  E: Record<number, number>;
+  incumbentAdvantage: Record<string, number>;
+  /** Rows as a county's, plus coverage (share of the votes in Democrat-v-Republican races) where under 1 and the round note. */
+  races: (TplRace & { coverage?: number; note?: string })[];
+  yearAggregations: YearAggregation[];
+  tplOverTime: TplAsOf[];
+};
+
 export type { YearAggregation };

@@ -26,6 +26,7 @@ import { join } from "path";
 import type { Chamber } from "../data/stateLegDistricts";
 import { indexByNormalizedKey, lookupByDistrictCode, normalizeDistrictKey } from "./stateLegDistrictKey";
 import { stateLegResults } from "../data/stateLegResults";
+import { stateLegHistoricalMaps } from "../data/stateLegHistoricalMaps";
 
 export type DistrictOffice = "PRES" | "USS" | "USSS" | "GOV" | "USH" | "L";
 type Votes = { dem: number; rep: number; oth: number };
@@ -282,7 +283,7 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
 
       let dLabel: string | undefined;
       let sameParty = false;
-      let route: (i: number) => Route;
+      let route: (i: number, seatCode?: string) => Route;
       const plain: Route = { dTo: "d", rTo: "r", contested: true, firstChoice: firstChoiceAll };
       if (office === "USH") {
         const cds = file.districts.USH ?? [];
@@ -345,8 +346,8 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           }
           seatInfo.set(code, { contested: site.demVotes > 0 && site.repVotes > 0 && !fusion, ...(multi && nD > 0 && nR > 0 && nD !== nR ? { slate: [nD, nR] as [number, number] } : {}) });
         }
-        route = (i) => {
-          const code = labels[i] ?? "";
+        route = (i, seatCode) => {
+          const code = seatCode ?? labels[i] ?? "";
           const info = seatInfo.get(code);
           return { dTo: "d", rTo: "r", contested: info?.contested ?? false, seat: code || undefined, firstChoice: firstChoiceAll, slate: info?.slate, postScale: info?.postScale };
         };
@@ -359,11 +360,28 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
         route = () => (sameParty ? { ...plain, contested: false } : plain);
       }
 
+      // The chamber's own race in a year held on TODAY's map: the district is the seat, so each precinct's votes
+      // go to the seat they were cast in (the file's own label; a precinct shared between seats by each part's
+      // own votes, the `split` block) instead of being divided by population (user decision 2026-11-27). Needs
+      // the labels to name today's districts for nearly all of the votes; otherwise population, as before.
+      const labels = file.districts[fileOffice] ?? [];
+      const splitRows = new Map<number, [string, number, number, number][]>();
+      for (const [i, code, d, r, o] of file.split?.[fileOffice] ?? []) splitRows.set(i, [...(splitRows.get(i) ?? []), [code, d, r, o]]);
+      let seatExact = office === "L" && !labelled && labels.length > 0 && !(year in (stateLegHistoricalMaps[abbr]?.[chamber] ?? {}));
+      if (seatExact) {
+        let placed = 0, all = 0;
+        votes.forEach(([d, r, o], i) => {
+          all += d + r + o;
+          const sp = splitRows.get(i);
+          if (sp) { for (const [code, a, b, c] of sp) if (toKey(code, keys)) placed += a + b + c; }
+          else if (toKey(labels[i] ?? "", keys)) placed += d + r + o;
+        });
+        seatExact = all > 0 && placed >= 0.95 * all;
+      }
+
       const sums = new Map<string, Sum>();
-      votes.forEach(([d, r, o], i) => {
-        const ps = parts!.get(i);
-        if (!ps) return;
-        const rt = route(i);
+      /** One piece of precinct i: `share` of it placed in district `key`, with these votes for the race. */
+      const addPiece = (i: number, key: string, share: number, d: number, r: number, o: number, rt: Route, splitPiece: boolean) => {
         const total = d + r + o;
         const v = { d, r, o };
         if (rt.postScale) { v.d = d * rt.postScale[0]; v.r = r * rt.postScale[1]; }
@@ -372,20 +390,37 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           v.d = ((d + r) * dBar) / (dBar + rBar);
           v.r = d + r - v.d;
         }
-        for (const p of ps) {
-          const s = sums.get(p.key) ?? emptySum();
-          const put = (into: Votes, to: To, x: number) => { const k = to === "d" ? "dem" : to === "r" ? "rep" : "oth"; into[k] += x * p.share; };
-          put(s.all, rt.dTo, v.d); put(s.all, rt.rTo, v.r); put(s.all, "o", v.o);
-          if (rt.contested) {
-            put(s.contested, rt.dTo, v.d); put(s.contested, rt.rTo, v.r); put(s.contested, "o", v.o);
-            if (rt.seat) s.seats.set(rt.seat, (s.seats.get(rt.seat) ?? 0) + total * p.share);
-          } else if (total > 0) s.unc.push({ i, share: p.share });
-          if (ps.length > 1) s.split += total * p.share;
-          if (rt.firstChoice) s.firstChoice += total * p.share;
-          s.weight += weight[i] * p.share;
-          if (total > 0) s.weightWith += weight[i] * p.share;
-          sums.set(p.key, s);
+        const s = sums.get(key) ?? emptySum();
+        const put = (into: Votes, to: To, x: number) => { const k = to === "d" ? "dem" : to === "r" ? "rep" : "oth"; into[k] += x; };
+        put(s.all, rt.dTo, v.d); put(s.all, rt.rTo, v.r); put(s.all, "o", v.o);
+        if (rt.contested) {
+          put(s.contested, rt.dTo, v.d); put(s.contested, rt.rTo, v.r); put(s.contested, "o", v.o);
+          if (rt.seat) s.seats.set(rt.seat, (s.seats.get(rt.seat) ?? 0) + total);
+        } else if (total > 0) s.unc.push({ i, share });
+        if (splitPiece) s.split += total;
+        if (rt.firstChoice) s.firstChoice += total;
+        s.weight += weight[i] * share;
+        if (total > 0) s.weightWith += weight[i] * share;
+        sums.set(key, s);
+      };
+      votes.forEach(([d, r, o], i) => {
+        if (seatExact) {
+          const sp = splitRows.get(i);
+          const pieceTotal = d + r + o;
+          if (sp) {
+            for (const [code, a, b, c] of sp) {
+              const key = toKey(code, keys);
+              if (key) addPiece(i, key, pieceTotal > 0 ? (a + b + c) / pieceTotal : 0, a, b, c, route(i, code), true);
+            }
+            return;
+          }
+          const key = toKey(labels[i] ?? "", keys);
+          if (key) { addPiece(i, key, 1, d, r, o, route(i), false); return; }
         }
+        const ps = parts!.get(i);
+        if (!ps) return;
+        const rt = route(i);
+        for (const p of ps) addPiece(i, p.key, p.share, d * p.share, r * p.share, o * p.share, rt, ps.length > 1);
       });
 
       // NH floterials: the sum of the base districts they sit on.

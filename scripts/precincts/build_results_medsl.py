@@ -581,11 +581,14 @@ def fill_from_certified(df: pd.DataFrame, ctruth: dict, st: str, year: int) -> p
 # the district's counties in proportion to the source's own vote there, and counted as an estimate.
 # A district with no source rows at all cannot be placed and is left out.
 DISTRICT_CERTIFIED = {("UT", 2016, "SLDU"), ("UT", 2016, "USH"), ("OR", 2020, "SLDU"), ("OR", 2020, "SLDL"), ("ID", 2020, "SLDL"), ("MI", 2022, "SLDL"),
-                      ("TX", 2016, "USH"), ("TX", 2016, "SLDU"), ("TX", 2016, "SLDL")}
+                      ("TX", 2016, "USH"), ("TX", 2016, "SLDU"), ("TX", 2016, "SLDL"),
+                      # MEDSL's Arkansas 2022 file drops unopposed winners (House 8, 45, 97, 39's Republican), some
+                      # candidates (House 73's Democrat, 22's Republican) and files House 98's Democrat under 5 (2026-11-26).
+                      ("AR", 2022, "SLDU"), ("AR", 2022, "SLDL")}
 
 
 # State-years on the same district map as 2024, where a district with no source rows can borrow its county split from 2024.
-SAME_MAP_AS_2024 = {("MI", 2022)}
+SAME_MAP_AS_2024 = {("MI", 2022), ("AR", 2022)}
 
 
 def counties_2024(st: str, office: str, dk: str) -> pd.Series:
@@ -611,6 +614,13 @@ def fill_from_district_truth(df: pd.DataFrame, st: str, year: int) -> pd.DataFra
     template = df.iloc[0].to_dict()
     for office in offices:
         truth = district_truth(st, year, office)
+        # Rows filed under a district the office does not have (Arkansas 2022: Senate 6's Democrat under "085")
+        # are a source mislabel: dropped here, since the district they belong to is brought to its total below.
+        if truth:
+            bogus = (df["office"] == office) & ~dk_all.isin(set(truth))
+            if bogus.any():
+                print(f"  {st} {year} {office}: {int(bogus.sum())} rows under districts the office does not have ({', '.join(sorted(set(dk_all[bogus]))[:6])}) dropped")
+                df, dk_all = df[~bogus].copy(), dk_all[~bogus]
         if office in SLOT:
             # single-winner office: the two sides are the slot candidates (a Libertarian holds the first slot where no
             # Democrat ran), so the comparison and the added lines follow the slots, not the party labels
@@ -1342,22 +1352,39 @@ _ANCHOR_PTS: dict[str, gpd.GeoSeries] = {}
 
 
 def geo_districts(st: str, year: int, office: str, old, by_name: bool) -> np.ndarray | None:
-    """Each source precinct's district key on that year's map for a legislative office, or None (no usable map)."""
-    if office not in ("SLDU", "SLDL"):
+    """Each source precinct's district key on that year's map (legislature or U.S. House), or None (no usable map)."""
+    if office == "USH":
+        # Congressional maps by election year: 115th (2016), 116th (2018; 2020 as revised, "pre2022"), 118th, 119th.
+        name = {2016: "2016", 2018: "2018", 2020: "pre2022", 2022: "2022", 2024: "2024", 2026: "2026"}.get(year)
+        path = ROOT / "public" / f"congressional-districts-{name}.json" if name else None
+        if not path or not path.exists():
+            return None
+        try:
+            dist = gpd.read_file(path)
+        except Exception:
+            return None
+        dist = dist[dist["STATEFP"] == V.B_FIPS[st]].copy()
+        if len(dist) <= 1:  # at large: nothing to keep apart
+            return None
+        cd = next(c for c in dist.columns if re.fullmatch(r"CD\d+FP", c))
+        dist = dist.set_crs(4326, allow_override=True).to_crs(5070)
+        dist["key"] = [seat_key(x) for x in dist[cd]]
+    elif office in ("SLDU", "SLDL"):
+        chamber = "senate" if office == "SLDU" else "house"
+        vintage = _hist_maps().get(st, {}).get(chamber, {}).get(str(year))
+        path = ROOT / "public" / ("state-leg-districts-historical" if vintage else "state-leg-districts") / chamber / (f"{st}-{vintage}.json" if vintage else f"{st}.json")
+        if not path.exists():
+            return None
+        try:
+            dist = gpd.read_file(path).set_crs(4326, allow_override=True).to_crs(5070)
+        except Exception:
+            return None
+        def key_of(row) -> str:
+            tail = str(row.get("NAMELSAD") or "").split()[-1:] or [""]
+            return seat_key(tail[0] if re.fullmatch(r"\d+[A-Za-z]?", tail[0]) else row.get("DISTRICT", ""))
+        dist["key"] = [key_of(r) for _, r in dist.iterrows()]
+    else:
         return None
-    chamber = "senate" if office == "SLDU" else "house"
-    vintage = _hist_maps().get(st, {}).get(chamber, {}).get(str(year))
-    path = ROOT / "public" / ("state-leg-districts-historical" if vintage else "state-leg-districts") / chamber / (f"{st}-{vintage}.json" if vintage else f"{st}.json")
-    if not path.exists():
-        return None
-    try:
-        dist = gpd.read_file(path).set_crs(4326, allow_override=True).to_crs(5070)
-    except Exception:
-        return None
-    def key_of(row) -> str:
-        tail = str(row.get("NAMELSAD") or "").split()[-1:] or [""]
-        return seat_key(tail[0] if re.fullmatch(r"\d+[A-Za-z]?", tail[0]) else row.get("DISTRICT", ""))
-    dist["key"] = [key_of(r) for _, r in dist.iterrows()]
     if dist["key"].duplicated().any():  # county-numbered districts (New Hampshire): codes do not identify a seat
         return None
     if by_name:
@@ -1373,6 +1400,18 @@ def geo_districts(st: str, year: int, office: str, old, by_name: bool) -> np.nda
     j = gpd.sjoin_nearest(g, dist[["key", "geometry"]], how="left")
     j = j[~j.index.duplicated()]
     return j["key"].reindex(range(len(old))).fillna("").to_numpy()
+
+
+def party_weights_2024(st: str, n: int) -> np.ndarray | None:
+    """(3, n) D / R / other presidential votes per 2024 precinct: where each side votes, for spreading."""
+    res = OUT / st / "2024.json"
+    if not res.exists():
+        return None
+    offs = json.loads(res.read_text())["offices"]
+    top = offs.get("PRES") or next(iter(offs.values()), None)
+    if not top or len(top) != n:
+        return None
+    return np.array(top, dtype=float).T
 
 def build_state(st: str, year: int, truth: dict) -> str:
     have = (RAW / "medsl" / str(year) / "by_state" / (f"{st}.{VARIANT}.parquet" if VARIANT not in ("", "mix") else f"{st}.parquet")).exists()
@@ -1390,6 +1429,7 @@ def build_state(st: str, year: int, truth: dict) -> str:
         vsig: dict[str, np.ndarray] = {}
         wanted = ["USS", "USSS", "GOV"] + DISTRICT_OFFICES
         by_name = True
+        pweight = party_weights_2024(st, n)
     else:
         old = V.load_old(st, year) if have else None
         df = load_medsl(st, year, vest_tags(old, year)) if old is not None else None
@@ -1403,6 +1443,8 @@ def build_state(st: str, year: int, truth: dict) -> str:
         vsig, vweight = vest_signature(old, year)
         wanted = DISTRICT_OFFICES
         by_name = False
+        top = next((vsig[o] for o in ("PRES", "USS", "GOV", "USS_S") if o in vsig), None)
+        pweight = None if top is None else np.vstack([top[:, 0], top[:, 1], np.clip(vweight - top[:, 0] - top[:, 1], 0, None)]).astype(float)
     if ONLY:
         wanted = [o for o in wanted if o in ONLY]
     src_label = f"openelections-{year}" if VARIANT == "oe" else f"medsl-{year}+{SECOND.get((st, year), f'openelections-{year}')}" if VARIANT == "mix" else SRC.get((st, year), f"medsl-{year}")
@@ -1470,15 +1512,23 @@ def build_state(st: str, year: int, truth: dict) -> str:
         known_mask = {d: a > 0 for d, a in dvotes.items()}  # where each district is known to vote, before any spreading
 
         def spread(target: np.ndarray, g: pd.DataFrame, district: str) -> None:
-            wt = vweight[target] + 1e-9
-            wt = wt / wt.sum()
+            # Each side by where that side votes: a precinct's share of the Democratic votes follows its
+            # Democratic vote in a nearby top-of-ticket race (pweight), not its turnout, so a county-wide
+            # spread no longer paints a D+70 precinct with the county's R+10 (Hempstead, New York 2022).
+            tw = vweight[target] + 1e-9
+            tw = tw / tw.sum()
             byc = g.groupby("comp")["votes"].sum()
             for c, v in byc.items():
+                wt = tw
+                if pweight is not None and int(c) < 3:
+                    pw = pweight[int(c)][target]
+                    if pw.sum() > 0:
+                        wt = (pw + 1e-9) / (pw + 1e-9).sum()
                 arr[c, target] += v * wt
                 dv3.setdefault(district, np.zeros((3, nold)))[c, target] += v * wt
-            dvotes.setdefault(district, np.zeros(nold))[target] += float(byc.sum()) * wt
-            if not exact_unit[0]:
-                spread_tot[target] += float(byc.sum()) * wt
+                dvotes.setdefault(district, np.zeros(nold))[target] += v * wt
+                if not exact_unit[0]:
+                    spread_tot[target] += v * wt
 
         u = o[o["oid"] < 0]
         has_multi = u["mk"].isin(multi.keys())

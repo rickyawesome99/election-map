@@ -128,7 +128,7 @@ export function pastHrefOf(stateAbbr: string, r: ComputedRace): string | undefin
 const envOf = (year: number) => getTplFit().E[year] ?? 0;
 const withEnv = (aggs: YearAggregation[]): YearAggregation[] => aggs.map((a) => ({ ...a, env: envOf(a.year) }));
 
-function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: string; rep?: string }): TplRace {
+export function toTplRace(stateAbbr: string, r: ComputedRace, presNames?: { dem?: string; rep?: string }): TplRace {
   // District presidential rows carry no nominee names; the state's row for that year does.
   const dem = r.demCandidate ?? presNames?.dem;
   const rep = r.repCandidate ?? presNames?.rep;

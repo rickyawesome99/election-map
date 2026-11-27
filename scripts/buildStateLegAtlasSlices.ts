@@ -13,7 +13,7 @@
  * and the 2026 results files (data-entry/results-2026/, read by lib/stateLegResults2026.ts), and the precinct
  * results (public/precincts/results/) + data-entry/precincts/district-shares/ (lib/stateLegStatewide.ts).
  */
-import { mkdirSync, writeFileSync } from "fs";
+import { mkdirSync, rmSync, writeFileSync } from "fs";
 import { join } from "path";
 import { stateLegDistricts, UNICAMERAL_STATES, type Chamber } from "../data/stateLegDistricts";
 import { stateLegDemographics } from "../data/stateLegDemographics";
@@ -29,12 +29,16 @@ import { stateLegOutgoing2026 } from "../data/stateLegOutgoing2026";
 import { projectChamber, projectDistrict, projectChamberPopularVote } from "../lib/final2026";
 import { chamberResults2026, districtResults2026, unmatchedRaces2026 } from "../lib/stateLegResults2026";
 import { statewideByDistrict } from "../lib/stateLegStatewide";
+import { stateLegTplPages } from "../lib/stateLegTplPage";
 import { stateLegMoneyHistory } from "../lib/stateLegMoney";
 import { getNationalEnvironment } from "../lib/tplCompute";
 import { compareDistrictKeys, type AtlasChamber, type AtlasDistrict, type AtlasEra, type AtlasPresVote, type AtlasResult } from "../lib/stateLegAtlas";
 import { indexByNormalizedKey, lookupByDistrictCode, normalizeDistrictKey } from "../lib/stateLegDistrictKey";
 
 const OUT_ROOT = join(process.cwd(), "public", "state-leg-atlas");
+// One file per district for the TPL section, fetched when the district view opens (lib/stateLegTplPage.ts).
+const TPL_ROOT = join(process.cwd(), "public", "state-leg-tpl");
+let tplFiles = 0, tplBytes = 0;
 const PRES_YEARS = ["2016", "2020", "2024"] as const;
 
 function presVote(v: { demPct: number; repPct: number; margin: number; totalVotes?: number | null; estimated?: boolean } | undefined): AtlasPresVote | undefined {
@@ -60,6 +64,17 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
   const results2026 = districtResults2026(abbr, chamber);
   const chamberResults = chamberResults2026(abbr, chamber);
   const statewide = statewideByDistrict(abbr, chamber, roster);
+  const tplPages = stateLegTplPages(abbr, chamber, roster);
+  {
+    const dir = join(TPL_ROOT, chamber, abbr);
+    rmSync(dir, { recursive: true, force: true });
+    mkdirSync(dir, { recursive: true });
+    for (const [k, page] of tplPages) {
+      const text = JSON.stringify(page);
+      writeFileSync(join(dir, `${k}.json`), text);
+      tplFiles += 1; tplBytes += text.length;
+    }
+  }
   // A chamber with nothing on the 2026 ballot has no chamber projection, but every district still
   // gets its lean ledger (contest "not-up") for the district page's lean trend.
   const popularVote = projectChamberPopularVote(abbr, chamber);
@@ -143,6 +158,8 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       if (results2026.has(key)) out.result2026 = results2026.get(key)!;
       const sw = statewide.get(normalizeDistrictKey(key));
       if (sw?.length) out.statewide = sw;
+      const tplPage = tplPages.get(normalizeDistrictKey(key));
+      if (tplPage) out.tpl = tplPage.tpl;
       const money = stateLegMoneyHistory(abbr, chamber, key);
       if (money.length) out.money = money.map((m) => ({
         year: m.year, source: m.source, dataThrough: m.dataThrough,
@@ -202,3 +219,4 @@ for (const abbr of abbrs) {
 }
 if (unmatchedRaces2026().length) console.warn(`2026 results: ${unmatchedRaces2026().length} races matched no district: ${unmatchedRaces2026().join(", ")}`);
 console.log(`wrote ${files} chamber slices to public/state-leg-atlas/ (${(bytes / 1e6).toFixed(1)} MB total, ${(bytes / files / 1e3).toFixed(0)} KB average)`);
+console.log(`wrote ${tplFiles} district TPL files to public/state-leg-tpl/ (${(tplBytes / 1e6).toFixed(1)} MB total, ${(tplBytes / Math.max(1, tplFiles) / 1e3).toFixed(1)} KB average)`);

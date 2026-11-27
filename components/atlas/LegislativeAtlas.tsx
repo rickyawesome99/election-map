@@ -15,7 +15,7 @@ import { useStateLegResults } from "@/lib/useStateLegResults";
 import { atlasSliceUrl, contest2026, projectedSeatWinners, districtHash, keyFromHash, resultMargin, shortDistrictName, type AtlasChamber, type AtlasDistrict, type AtlasResult2026 } from "@/lib/stateLegAtlas";
 import { summarizeUpcoming } from "@/lib/stateLegUpcoming";
 import { candidateSlug } from "@/lib/candidateSlug";
-import { getRaceColor, getRatingColors } from "@/lib/colorScale";
+import { fmtLean, getRaceColor, getRatingColors } from "@/lib/colorScale";
 import { flipBackground, flipFill } from "@/components/FlipStripes";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
@@ -24,7 +24,7 @@ import type { StateLegEntry } from "@/data/forecastData";
 import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
 import type { StateLegDistrictResult } from "@/data/stateLegResults";
 
-type ColorMode = "election" | "projection" | "seats" | "president" | "results";
+type ColorMode = "election" | "projection" | "seats" | "president" | "tpl" | "results";
 type Filter = "all" | "up" | "competitive" | "open" | "unopposed";
 type BoxOrder = "sorted" | "district";
 
@@ -177,6 +177,10 @@ function boxTip(d: AtlasDistrict, mode: ColorMode, year: number | null, election
       : [{ label: "Vacant" }];
     const up = d.nextElection === electionYear || d.incumbents.some((i) => (i.nextElection ?? d.nextElection) === electionYear);
     return { heading, lines, note: up ? `Up in ${electionYear}` : d.nextElection ? `Next election ${d.nextElection}` : undefined };
+  }
+  if (mode === "tpl") {
+    if (d.tpl == null) return { heading, lines: [{ label: "No TPL for this district" }] };
+    return { heading, lines: [], total: { label: "District TPL", value: fmtLean(d.tpl), color: marginColor(d.tpl) }, note: "Partisan baseline from every race 2016–2026 on today's lines" };
   }
   if (mode === "president") {
     const p = d.presCurrent["2024"];
@@ -425,6 +429,8 @@ export default function LegislativeAtlas({
         } else if (mode === "president") {
           const m = d.presCurrent["2024"]?.margin ?? null;
           if (m != null) { fill = getRaceColor(m); darkText = Math.abs(m) < 10; }
+        } else if (mode === "tpl") {
+          if (d.tpl != null) { fill = getRaceColor(d.tpl); darkText = Math.abs(d.tpl) < 10; }
         } else {
           // The race held under this district number in the chosen year, on that year's lines.
           const r = d.results.find((x) => x.year === activeYear);
@@ -504,6 +510,8 @@ export default function LegislativeAtlas({
           if (inc) score = sign(inc.party) * 100 + pres / 2;
         } else if (mode === "president") {
           score = d.presCurrent["2024"]?.margin ?? NaN;
+        } else if (mode === "tpl") {
+          score = d.tpl ?? NaN;
         } else {
           const r = d.results.find((x) => x.year === activeYear);
           const m = r ? resultMargin(r) : null;
@@ -563,7 +571,7 @@ export default function LegislativeAtlas({
     const ok = new Set(districts.filter(passes).map((d) => d.key));
     return roster.filter((d) => ok.has(d.number));
   }, [data, roster, districts, passes]);
-  const mapMode: MapViewMode = mode === "projection" || mode === "election" ? "seats" : mode;
+  const mapMode: MapViewMode = mode === "projection" || mode === "election" || mode === "tpl" ? "seats" : mode;
   // The counter in the projection view: each district's seats go to its projected leader (the
   // map's colour), an uncontested seat to the only major party on the ballot, and seats not up
   // to their sitting member. Whole chamber, like the other counters.
@@ -605,6 +613,20 @@ export default function LegislativeAtlas({
       }
       const legend = [...["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label) => ({ label, bg: getRatingColors(label).bg })), FLIPPED_LEGEND];
       return { fill, tip, legend, flipColors, headline, hideLastElected: true, note: `${electionYear} results as counted: shaded by the winner's (or leader's) margin; solid party colour = one major party on the ballot or no count printed; stripes = the seat changed hands.` };
+    }
+    if (mode === "tpl") {
+      const fill: Record<string, string> = {};
+      const tip: Record<string, { label: string; value: string; color?: string }[]> = {};
+      const headline: Record<string, { value: string; color?: string }> = {};
+      for (const d of districts) {
+        if (d.tpl == null) { tip[d.key] = [{ label: "No TPL for this district", value: "" }]; continue; }
+        fill[d.key] = getRaceColor(d.tpl);
+        headline[d.key] = { value: fmtLean(d.tpl), color: marginColor(d.tpl) };
+        const p = d.presCurrent["2024"]?.margin;
+        tip[d.key] = [{ label: "District TPL", value: fmtLean(d.tpl), color: marginColor(d.tpl) }, ...(p != null ? [{ label: "2024 President", value: fmtMargin(p), color: marginColor(p) }] : [])];
+      }
+      const legend = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"].map((label) => ({ label, bg: getRatingColors(label).bg }));
+      return { fill, tip, legend, flipColors: [], headline, note: "District TPL: each district's partisan baseline from every race 2016–2026 on today's lines, with the national environment, incumbency and money taken out." };
     }
     if (mode !== "projection") return null;
     const fill: Record<string, string> = {};
@@ -667,7 +689,7 @@ export default function LegislativeAtlas({
   // The table and history sit below the fold: they rise in once scrolled to.
   const { ref: lowerRef, vh: lowerVh } = useRevealOnce();
 
-  const MODE_LABEL: Record<ColorMode, string> = { election: `${electionYear} results`, projection: `${electionYear} projection`, seats: "Seat party", president: "2024 President", results: "Past results" };
+  const MODE_LABEL: Record<ColorMode, string> = { election: `${electionYear} results`, projection: `${electionYear} projection`, seats: "Seat party", president: "2024 President", tpl: "District TPL", results: "Past results" };
   // The district page's header takes these two apart, like a House race page: the selector at the
   // pill row's end (under the title on a phone), the locator map at the title line's right.
   const navBtn = "ix-press ix-rail-btn h-8 w-8 shrink-0 grid place-items-center rounded-full text-base disabled:opacity-30";
@@ -719,7 +741,7 @@ export default function LegislativeAtlas({
             <div className="flex flex-wrap items-center gap-1">
               <SlidingPills
                 label="Color by"
-                options={(Object.keys(MODE_LABEL) as ColorMode[]).filter((m) => (m !== "election" || hasElection) && (m !== "projection" || hasProjection) && (m !== "results" || electionYears.length > 0)).map((m) => ({ key: m, label: MODE_LABEL[m] }))}
+                options={(Object.keys(MODE_LABEL) as ColorMode[]).filter((m) => (m !== "election" || hasElection) && (m !== "projection" || hasProjection) && (m !== "results" || electionYears.length > 0) && (m !== "tpl" || districts.some((d) => d.tpl != null))).map((m) => ({ key: m, label: MODE_LABEL[m] }))}
                 value={mode}
                 onChange={setMode}
               />

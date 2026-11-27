@@ -101,7 +101,11 @@ export const SOURCE_GROUPS: SourceGroup[] = [
       },
       {
         name: "Alaska Division of Elections — precinct results and Cast Vote Records", url: "https://www.elections.alaska.gov/election-results/", kind: "official",
-        uses: [{ data: "Every Alaska borough and census-area figure, 2016–2024: precincts assigned to boroughs, and ranked-choice rounds re-tabulated from the CVR for 2022 onward", where: "data-entry/README-ak-cvr-reconstructions.md" }],
+        uses: [
+          { data: "Every Alaska borough and census-area figure, 2016–2024: precincts assigned to boroughs, and ranked-choice rounds re-tabulated from the CVR for 2022 onward", where: "data-entry/README-ak-cvr-reconstructions.md" },
+          { data: "Final-round precinct results for every 2022 and 2024 ranked-choice contest (Senate, U.S. House, legislature), from the CVR exports (22GENR/rcv/CVR_Export.zip, 24GENR/CVR_Export_20241130154411.zip); the 2024 export predates certification and is scaled to the certified turnout", where: "scripts/precincts/build_alaska_rcv.py → public/precincts/results/AK/{2022,2024}.json" },
+          { data: "The site's 2022 Senate row and borough rows and the 19 multi-round legislative races of 2022 and 2024, set to their final rounds (Senate from the official RCV report, 22GENR/US SEN.txt)", where: "scripts/precincts/correct_site_alaska_rcv.py" },
+        ],
         note: "Alaska reports by precinct and state house district only; no source publishes a by-borough table.",
       },
       {

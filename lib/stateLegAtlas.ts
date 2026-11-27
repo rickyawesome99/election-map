@@ -50,6 +50,8 @@ export type AtlasDistrict = {
   result2026?: AtlasResult2026;
   /** How the district, on today's lines, voted for Senate, Governor and U.S. House 2016–2026, summed from precinct returns (lib/stateLegStatewide.ts). Shown under the structural lean, not part of it. */
   statewide?: AtlasStatewide[];
+  /** The district's legislative-district TPL (lib/stateLegTpl.ts); its working is fetched from public/state-leg-tpl/. */
+  tpl?: number;
   /** Members not seeking re-election in 2026 and why (Wikipedia's retirement lists). */
   outgoing2026?: StateLegOutgoing2026[];
   /** Fundraising per cycle, newest first, where a source covers the state (lib/stateLegMoney.ts). */

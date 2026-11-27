@@ -3,8 +3,8 @@
 import { Fragment } from "react";
 import { LedgerSectionHead, LedgerSubhead } from "@/components/LedgerSectionHead";
 import DemographicsStrip from "@/components/DemographicsStrip";
-import AtlasTrendChart from "./AtlasTrendChart";
 import AtlasOutlook from "./AtlasOutlook";
+import StateLegTplSection from "@/components/tpl/StateLegTplSection";
 import { AtlasCandidatesSection, AtlasFundraisingSection, AtlasResultSection, CandidateLink, PARTY_COLOR, result2026Meta } from "./AtlasCandidates";
 import { AtlasOverlayMap, AtlasTransitionMaps } from "./AtlasEraMaps";
 import AtlasPrecinctMap from "./AtlasPrecinctMap";
@@ -432,11 +432,8 @@ export default function AtlasDistrictDetail({
         )}
       </Reveal>
 
-      {/* Trend */}
-      <Reveal>
-        <LedgerSectionHead label="TPL lean trend" meta="neutral lean on today's lines · Republican up" />
-        <AtlasTrendChart district={district} />
-      </Reveal>
+      {/* The legislative-district TPL (lib/stateLegTpl.ts): separate from the frozen 2026 lean above. */}
+      {district.tpl != null && <Reveal as="div"><StateLegTplSection abbr={abbr} chamber={chamber} districtKey={district.key} label={district.label} /></Reveal>}
 
       {/* President by boundary */}
       <Reveal>
