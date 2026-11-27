@@ -736,3 +736,30 @@ function stateBallot(stateAbbr: string, year: number, selfHref: string): StateBa
     house: races("house").sort((a, b) => (a.district ?? 0) - (b.district ?? 0)),
   };
 }
+
+/** The Swing baseline for a seat's `year` race (the 2026 race pages' county map): the seat's
+ *  previous election and each county's R-positive margin in it, as the past pages' Swing view
+ *  reads it. House counties are the district's part of each county on the lines of that year. */
+export function seatSwingBaseline(office: "senate" | "governor" | "house", seatIdRaw: string, year: number): {
+  previous: { year: number; isSpecial: boolean };
+  margins: Record<string, number>;
+  linesChanged: boolean;
+} | null {
+  const seat = seatsFor(office).get(seatIdRaw.toLowerCase());
+  if (!seat) return null;
+  const prev = [...seat.results].filter((x) => x.year < year).sort((a, b) => b.year - a.year)[0];
+  if (!prev) return null;
+  const previous = { year: prev.year, isSpecial: isSpecialType(prev.electionType) };
+  const margins: Record<string, number> = {};
+  if (office === "house") {
+    for (const row of houseDistrictCountyRows(prev.year, seat.stateAbbr, seat.district ?? 1)) margins[row.fips] = houseCountyResult(row).margin;
+  } else {
+    for (const [fips, c] of Object.entries(countySource(office))) {
+      if (c.state !== seat.stateAbbr) continue;
+      const r = countyResult(office, fips, prev.year, previous.isSpecial);
+      if (r) margins[fips] = r.margin;
+    }
+  }
+  const linesChanged = office === "house" && (seat.geoid ? houseDistrictInfo[seat.geoid] ?? [] : []).some((b) => b.year === year);
+  return { previous, margins, linesChanged };
+}

@@ -10,14 +10,15 @@ import { candidatePhoto } from "@/lib/candidatePhotos";
 import { AboutRaceCard, incumbentFact, StateDemographicsSubsection, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, FundraisingLedgerSection, LedgerSectionHead, LedgerSubhead, RacePollsSection, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import PastElectionCountyMap from "@/components/PastElectionCountyMap";
 import ProjectedVoteSection, { ProjectedVoteFootnote, withProjectedVotes } from "@/components/ProjectedVoteSection";
-import ElectionResultSection, { ElectionResultFootnote, electionResultMeta } from "@/components/ElectionResultSection";
+import ElectionResultSection, { ElectionResultFootnote, electionResultMeta, raceMapProps } from "@/components/ElectionResultSection";
+import PastElectionMapPanel from "@/components/PastElectionMapPanel";
 import { raceResult2026 } from "@/lib/raceResults2026";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { forecastRace, raceCard, projectRaceResults, projectedCountyMapEntries, getRaceForecastHistory } from "@/lib/final2026";
 import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { alignedParty } from "@/data/raceEligibility";
-import { pastElectionHref } from "@/lib/pastElections";
+import { pastElectionHref, seatSwingBaseline } from "@/lib/pastElections";
 import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
 import FinalForecastPill from "@/components/FinalForecastPill";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
@@ -262,17 +263,13 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               />
               {result.counties.length > 0 ? (
                 <div className="mt-4">
-                  <PastElectionCountyMap
-                    panelSize="wide"
+                  <PastElectionMapPanel
+                    {...raceMapProps(result, seatSwingBaseline("governor", id, 2026))}
                     stateAbbr={id.toUpperCase()}
                     stateName={race.name}
-                    counties={result.counties}
-                    demName={result.demName}
-                    repName={result.repName}
-                    demParty={result.demParty}
-                    repParty={result.repParty}
-                    height={240}
-                    caption={<div key="caption" className="px-1"><ElectionResultFootnote r={result} /></div>}
+                    areaSingular={id.toUpperCase() === "LA" ? "parish" : id.toUpperCase() === "AK" ? "borough" : "county"}
+                    areaPlural={id.toUpperCase() === "LA" ? "parishes" : id.toUpperCase() === "AK" ? "boroughs" : "counties"}
+                    race={{ height: 380, footnote: <ElectionResultFootnote r={result} /> }}
                   />
                 </div>
               ) : <ElectionResultFootnote r={result} />}

@@ -1,30 +1,22 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { readFileSync } from "fs";
-import { join } from "path";
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { STATE_LEG_TPL_VALIDATION as V } from "@/data/stateLegTplValidation";
 import { IMPUTED_RACE_WEIGHT } from "@/lib/tplCompute";
 import { STATE_LEG_FORECAST_CONSTANTS as LC } from "@/lib/stateLegForecast";
-import { MAX_MISSING } from "@/lib/stateLegDistrictRows";
-import type { StateLegTplPageData } from "@/components/tpl/types";
+import { MAX_MISSING } from "@/lib/stateLegDistrictRowsConstants";
+import EXAMPLE from "@/data/stateLegTplExample.json";
 import { Block, Constants, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, P, Section, type ConstantRow } from "./kit";
 
 // Internal Methodology → Legislative TPL: the TPL of every state House / Senate district (lib/stateLegTpl.ts).
-// Prose is hand-written; constants, the validation table and the worked example are read live.
+// Prose is hand-written; constants and the validation table are read live, the worked example from
+// data/stateLegTplExample.json (written by scripts/buildStateLegAtlasSlices.ts; tracked, since data/generated/ is rebuilt by prebuild and this is not). No file reads here:
+// they would make Vercel ship the folders they read with this page's function.
 
 const link = (href: string, text: ReactNode) => <Link href={href} className="underline decoration-dotted underline-offset-2" prefetch={false}>{text}</Link>;
 
-function example(): StateLegTplPageData | null {
-  try {
-    return JSON.parse(readFileSync(join(process.cwd(), "public", "state-leg-tpl", "house", "PA", "151.json"), "utf8")) as StateLegTplPageData;
-  } catch {
-    return null;
-  }
-}
-
 export default function LegTplMethodology() {
-  const ex = example();
+  const ex = EXAMPLE;
   const constants: ConstantRow[] = [
     { name: "INCUMBENCY_PTS (legislature)", value: LC.INCUMBENCY_PTS, basis: "calibrated", meaning: "Points stripped for the incumbent's party on a legislature row, vote-weighted over the seats the district's votes came from. The legislature's own fitted value (scripts/stateLegBacktest.ts), not the U.S. House's 3." },
     { name: "MONEY_K · MONEY_CAP (legislature)", value: `${LC.MONEY_K} · ±${LC.MONEY_CAP}`, basis: "calibrated", meaning: "The legislature's money strip, raceMoneyTerm in lib/stateLegMoneyModel.ts: clamp(K × (gap% − structural gap%), ±cap) per seat, vote-weighted. 0 where either side's money is not on file." },
@@ -51,8 +43,8 @@ export default function LegTplMethodology() {
         <Defs items={[
           { term: "President", def: "The district's own margin, no strips. From the precinct files like every other office (not the area-weighted era overlay the frozen lean uses)." },
           { term: "U.S. Senate, Governor", def: <>The district&apos;s margin; eligibility, incumbent, appointed flag and receipts are the statewide race&apos;s (generateRaceList), as in County TPL. An ineligible race (an independent in the Democratic slot, a same-party final, an unopposed race) is imputed from the district&apos;s nearest presidential margin with that year&apos;s environment, at weight {IMPUTED_RACE_WEIGHT}. Senate specials held beside a regular race are their own row. Alaska&apos;s 2022 Senate final round was Murkowski v. Tshibaka, both Republicans, so it is imputed.</> },
-          { term: "U.S. House", def: "No incumbency or money strip (County TPL's rule). Each precinct knows its congressional district: the part of the legislative district in a Democrat-v-Republican race counts as cast, the uncontested part is imputed from its own presidential margin (nearest presidential year, ties to the later one), blended by coverage c. A district with no contested part is imputed whole." },
-          { term: "State House / State Senate", def: `The chamber's own race. In a year held on today's map the district is the seat: each precinct's votes go to the seat they were cast in (the precinct file's own label, and a precinct shared between seats by each part's own votes), so the row is the seat's result. In a year held on an older map it is summed onto today's lines by population like every other office, so old maps need no relocation step. Strips as in the U.S. House district TPL: an incumbency strip (${LC.INCUMBENCY_PTS} points, the legislature's fitted value) and the legislature's money term, each vote-weighted over the seats the district's votes came from. Coverage blending as for the House. A seat counts as contested when the site's own result for it has both parties (the precinct file's seat totals can carry stray votes); a multi-member seat with unequal slates counts the average nominee of each party (the frozen model's contestedMargin rule); Washington's and Idaho's posts count only the posts with a Democrat against a Republican; a nominee on both major lines is no contest. The district page's Electoral history still shows the races as run.` },
+          { term: "U.S. House", def: "No incumbency or money strip (County TPL's rule); a write-in-scale opponent is no contest. The races table lists the congressional districts the votes were cast in, and the map when it is not today's. Each precinct knows its congressional district: the part of the legislative district in a Democrat-v-Republican race counts as cast, the uncontested part is imputed from its own presidential margin (nearest presidential year, ties to the later one), blended by coverage c. A district with no contested part is imputed whole." },
+          { term: "State House / State Senate", def: `The chamber's own race. In a year held on today's map the district is the seat: each precinct's votes go to the seat they were cast in (the precinct file's own label, and a precinct shared between seats by each part's own votes), so the row is the seat's result. In a year held on an older map it is summed onto today's lines by population like every other office, so old maps need no relocation step; the races table names that map and the seats the votes came from ("2012 map: seats 37, 34, 36"). Coverage of 99.5% or more counts as fully contested. Strips as in the U.S. House district TPL: an incumbency strip (${LC.INCUMBENCY_PTS} points, the legislature's fitted value) and the legislature's money term, each vote-weighted over the seats the district's votes came from. Coverage blending as for the House. A seat counts as contested when the site's own result for it has both parties above write-in scale (classifyEligibility's 5% / 2% rule) and the precinct file holds both sides too; precinct seat codes are resolved to the site's seats by name, position or sub-seat, then vote totals (resolveSiteSeats); a multi-member seat with unequal slates counts the average nominee of each party (the frozen model's contestedMargin rule); Washington's and Idaho's posts count only the posts with a Democrat against a Republican; a nominee on both major lines is no contest. The district page's Electoral history still shows the races as run.` },
           { term: "Outlier check", def: `County TPL checks each House year against the county's statewide lean; here both the U.S. House and the legislature years are checked against the district's own statewide lean (President, Senate, Governor aggregated alone), HUBER_C ${G.HUBER_C}. Statewide rows are not checked: a district far from its state is not an outlier.` },
           { term: "No quality weight", def: "Rows placed by precinct name or by town (all of 2022, New Jersey's legislature, odd years) count like the rest (user decision 2026-11-26)." },
           { term: "2026", def: "Rows appear for every state with a 2026 precinct file, through the same code; a state without one has no 2026 row until its file arrives. Rerun the atlas build after each certification batch." },
@@ -86,7 +78,7 @@ export default function LegTplMethodology() {
           lede={<>District page: {link("/states/pa/legislature/house#hd-151", "PA House 151")}.</>}>
           <Block label="Year aggregation" meta="margin before the environment · WRS after">
             <DataTable head={["Year", "Offices", "Margin", "Env", "WRS", "Weight"]} align="llrrrr"
-              rows={ex.yearAggregations.filter((y) => y.finalWeight > 0).sort((a, b) => b.year - a.year).map((y) => [y.year, y.racesPresent.join(" "), <M key="m" v={y.WRS + (y.env ?? 0)} />, (-(y.env ?? 0)).toFixed(1), <M key="w" v={y.WRS} />, `${Math.round(y.finalWeight * 100)}%`])} />
+              rows={[...ex.years].sort((a, b) => b.year - a.year).map((y) => [y.year, y.racesPresent.join(" "), <M key="m" v={y.WRS + y.env} />, (-y.env).toFixed(1), <M key="w" v={y.WRS} />, `${Math.round(y.finalWeight * 100)}%`])} />
           </Block>
           <Ledger lines={[{ label: "District TPL", value: <M v={ex.tpl} />, total: true }, { op: "", label: "Pennsylvania State TPL", value: <M v={ex.stateTpl} /> }, { op: "", label: "Statewide anchor (P/S/G rows alone)", value: <M v={ex.anchor} /> }]} />
           <P>The 2016 State House row is R+11 (a Republican incumbent in a D+19 district); its year is checked against the anchor and its weight cut accordingly.</P>
@@ -111,6 +103,8 @@ export default function LegTplMethodology() {
           { cmd: "npx tsx --conditions=react-server scripts/checkStateLegTpl.ts", does: "Timing and how TPL sits against the 2024 presidential margin and the frozen lean." },
           { cmd: "npx tsx --conditions=react-server scripts/checkDistrictRowSuspects.ts", does: "Rows far from the district's other results: placement errors and real crossovers." },
           { cmd: "python3 scripts/precincts/rebuild_legislature.py", does: "Rebuilds every precinct office build_results_medsl.py owns with the inputs each was built from." },
+          { cmd: "npx tsx --conditions=react-server scripts/auditStateLegTpl.ts", does: "The arithmetic audit (rows, weights, TPL) over every district, plus the state comparison." },
+          { cmd: "npx tsx --conditions=react-server scripts/checkStateLegSeatTotals.ts", does: "Precinct seat totals against the site's certified seat results, through the model's seat resolver." },
         ]} />
       </Section>
     </>

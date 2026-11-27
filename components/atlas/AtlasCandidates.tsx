@@ -288,7 +288,7 @@ export function AtlasResultSection({ district, abbr }: { district: AtlasDistrict
               return <ResultRow key={`${x.name}-${i}`} c={x} abbr={abbr} i={i} last={i === shown.length - 1 && rest <= 0} soleUncounted={soleUncounted} vsProjected={proj != null && x.pct != null ? x.pct - proj : null} />;
             })}
             {rest > 0 && race.total > 0 && (
-              <div className="grid items-center gap-x-3 py-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderTop: "1px solid var(--app-border)" }}>
+              <div className="grid items-center gap-x-3 pt-2" style={{ gridTemplateColumns: "4px minmax(0,1fr) auto", borderTop: "1px solid var(--app-border)" }}>
                 <span className="h-6 rounded-sm" style={{ background: "var(--party-ind-fill)", opacity: 0.6 }} />
                 <div className="text-[13px] font-semibold" style={{ color: "var(--app-text-muted)" }}>Others</div>
                 <div className="text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
@@ -300,7 +300,7 @@ export function AtlasResultSection({ district, abbr }: { district: AtlasDistrict
           </div>
         );
       })}
-      <p className="mt-3 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+      <p className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
         {!anyCount
           ? "No count is on file for this race: the state prints none for an unopposed seat, or the count has not been read yet."
           : <>Votes counted{asOf ? ` as of ${asOf}` : ""}, from {unofficialAp ? "the Associated Press's count (no official count read yet)" : sources.join(" and ")}. Unofficial until certified.</>}

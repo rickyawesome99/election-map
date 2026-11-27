@@ -584,11 +584,16 @@ DISTRICT_CERTIFIED = {("UT", 2016, "SLDU"), ("UT", 2016, "USH"), ("OR", 2020, "S
                       ("TX", 2016, "USH"), ("TX", 2016, "SLDU"), ("TX", 2016, "SLDL"),
                       # MEDSL's Arkansas 2022 file drops unopposed winners (House 8, 45, 97, 39's Republican), some
                       # candidates (House 73's Democrat, 22's Republican) and files House 98's Democrat under 5 (2026-11-26).
-                      ("AR", 2022, "SLDU"), ("AR", 2022, "SLDL")}
+                      ("AR", 2022, "SLDU"), ("AR", 2022, "SLDL"),
+                      # MEDSL's Vermont 2022 file puts Orange's Republican (John Klar, 4,519) under Washington (2026-11-27).
+                      ("VT", 2022, "SLDU"),
+                      # Found by the 2026-11-27 seat scan (precinct seat totals against the site's certified seat results):
+                      # Vermont 2020 Senate's county seats ran 20–40% off.
+                      ("VT", 2020, "SLDU")}
 
 
 # State-years on the same district map as 2024, where a district with no source rows can borrow its county split from 2024.
-SAME_MAP_AS_2024 = {("MI", 2022), ("AR", 2022)}
+SAME_MAP_AS_2024 = {("MI", 2022), ("AR", 2022), ("VT", 2022)}
 
 
 def counties_2024(st: str, office: str, dk: str) -> pd.Series:
@@ -1478,6 +1483,20 @@ def build_state(st: str, year: int, truth: dict) -> str:
     dropped = []
     for office in wanted:
         o = df[(df["office"] == ("USS_S" if office == "USSS" else office)) & (df["votes"] != 0)]
+        # A district office's row with no district in the source (Arizona 2016: about 60% of legislative votes;
+        # Washington 2022: a third of House votes) takes the district its matched precinct sits in on that year's
+        # map (geo_districts), when the map's codes name the office's districts.
+        if office in DISTRICT_OFFICES and not o.empty and (o["district"] == "").any():
+            geo_lab = geo_districts(st, year, office, old, by_name)
+            if geo_lab is not None:
+                known = {seat_key(d) for d in o["district"] if d}
+                blank = (o["district"] == "") & (o["oid"] >= 0)
+                fill = pd.Series([geo_lab[i] if i >= 0 else "" for i in o.loc[blank, "oid"]], index=o.index[blank])
+                fill = fill[fill.isin(known)]
+                if len(fill):
+                    o = o.copy()
+                    o.loc[fill.index, "district"] = fill
+                    print(f"  {st} {year} {office}: {len(fill)} rows with no district placed by their precinct's district on that year's map ({int(o.loc[fill.index, 'votes'].sum()):,} votes)")
         if o.empty or st not in truth.get(year, {}).get(office, {}):
             dropped.append(office)
             continue  # nothing reported, or no regular contest that year (odd-year legislatures, DC's delegate)

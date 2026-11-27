@@ -7,6 +7,13 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/candidates/[slug]": ["./data/generated/candidate-pages/*.json.gz"],
   },
+  // Pages that import model code but read no precinct or atlas file at render: keep the big data folders out of
+  // their functions (Vercel's 250 MB limit; the methodology function reached 466 MB on 2026-11-27 when a tab
+  // imported a module that reads precinct files by computed path). Those folders are served as static files.
+  outputFileTracingExcludes: {
+    "/analysis/internal-methodology/[[...model]]": ["./public/precincts/**", "./public/state-leg-tpl/**", "./public/state-leg-atlas/**", "./data-entry/precincts/**"],
+    "/methodology/[[...model]]": ["./public/precincts/**", "./public/state-leg-tpl/**", "./public/state-leg-atlas/**", "./data-entry/precincts/**"],
+  },
   images: {
     remotePatterns: [
       {

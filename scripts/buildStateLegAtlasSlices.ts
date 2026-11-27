@@ -11,9 +11,9 @@
  * stateLegPresByEra, stateLegResults, stateLegRedistricting, stateLegHistoricalMaps, stateLegCalendar,
  * stateLegCandidates2026, stateLegOutgoing2026, stateLegFinance, the turnout inputs behind lib/stateLegPopularVote.ts,
  * and the 2026 results files (data-entry/results-2026/, read by lib/stateLegResults2026.ts), and the precinct
- * results (public/precincts/results/) + data-entry/precincts/district-shares/ (lib/stateLegStatewide.ts).
+ * results (public/precincts/results/) + data-entry/precincts/district-shares/ (lib/stateLegTplPage.ts).
  */
-import { mkdirSync, rmSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "fs";
 import { join } from "path";
 import { stateLegDistricts, UNICAMERAL_STATES, type Chamber } from "../data/stateLegDistricts";
 import { stateLegDemographics } from "../data/stateLegDemographics";
@@ -28,8 +28,8 @@ import { stateLegOutgoing2026 } from "../data/stateLegOutgoing2026";
 // The 2026 projection as published (frozen), so rebuilding the slices never moves it.
 import { projectChamber, projectDistrict, projectChamberPopularVote } from "../lib/final2026";
 import { chamberResults2026, districtResults2026, unmatchedRaces2026 } from "../lib/stateLegResults2026";
-import { statewideByDistrict } from "../lib/stateLegStatewide";
 import { stateLegTplPages } from "../lib/stateLegTplPage";
+import type { StateLegTplPageData } from "../components/tpl/types";
 import { stateLegMoneyHistory } from "../lib/stateLegMoney";
 import { getNationalEnvironment } from "../lib/tplCompute";
 import { compareDistrictKeys, type AtlasChamber, type AtlasDistrict, type AtlasEra, type AtlasPresVote, type AtlasResult } from "../lib/stateLegAtlas";
@@ -63,9 +63,10 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
   const chamberProjection = projectChamber(abbr, chamber);
   const results2026 = districtResults2026(abbr, chamber);
   const chamberResults = chamberResults2026(abbr, chamber);
-  const statewide = statewideByDistrict(abbr, chamber, roster);
-  const tplPages = stateLegTplPages(abbr, chamber, roster);
-  {
+  // (written below, once the map eras are known: an old-map legislature row names its map)
+  let tplPages: Map<string, StateLegTplPageData> = new Map();
+  const writeTpl = (eraOf: (year: number) => string | null) => {
+    tplPages = stateLegTplPages(abbr, chamber, roster, eraOf);
     const dir = join(TPL_ROOT, chamber, abbr);
     rmSync(dir, { recursive: true, force: true });
     mkdirSync(dir, { recursive: true });
@@ -74,7 +75,7 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       writeFileSync(join(dir, `${k}.json`), text);
       tplFiles += 1; tplBytes += text.length;
     }
-  }
+  };
   // A chamber with nothing on the 2026 ballot has no chamber projection, but every district still
   // gets its lean ledger (contest "not-up") for the district page's lean trend.
   const popularVote = projectChamberPopularVote(abbr, chamber);
@@ -98,6 +99,12 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
     // An old map is named for the first election held on it (lib/stateLegMapLabel.ts), e.g. "2012".
     const label = key === "current" ? "current" : cal?.firstYear != null ? String(cal.firstYear) : years.length === 1 ? String(years[0]) : years.length ? `${years[0]}–${years[years.length - 1]}` : key;
     return { key, label, years, source: cal?.source, enactedDate: cal?.enactedDate, note: cal?.note, verified: cal?.verified ?? false };
+  });
+  writeTpl((year) => {
+    const v = yearToVintage[String(year)];
+    if (v == null) return null;
+    const label = eras.find((e) => e.key === String(v))?.label;
+    return label ? `${label} map` : "an older map";
   });
 
   const districts: AtlasDistrict[] = [...roster]
@@ -156,8 +163,6 @@ function buildChamber(abbr: string, chamber: Chamber): AtlasChamber | null {
       if (candidates2026?.[key]) out.candidates2026 = candidates2026[key];
       if (outgoing2026?.[key]) out.outgoing2026 = outgoing2026[key];
       if (results2026.has(key)) out.result2026 = results2026.get(key)!;
-      const sw = statewide.get(normalizeDistrictKey(key));
-      if (sw?.length) out.statewide = sw;
       const tplPage = tplPages.get(normalizeDistrictKey(key));
       if (tplPage) out.tpl = tplPage.tpl;
       const money = stateLegMoneyHistory(abbr, chamber, key);
@@ -219,4 +224,17 @@ for (const abbr of abbrs) {
 }
 if (unmatchedRaces2026().length) console.warn(`2026 results: ${unmatchedRaces2026().length} races matched no district: ${unmatchedRaces2026().join(", ")}`);
 console.log(`wrote ${files} chamber slices to public/state-leg-atlas/ (${(bytes / 1e6).toFixed(1)} MB total, ${(bytes / files / 1e3).toFixed(0)} KB average)`);
+// The methodology tabs' worked example (Pennsylvania House 151), imported statically by them so their pages need
+// no file read (a read of public/ at render would have Vercel ship that folder with the function).
+{
+  const ex = join(TPL_ROOT, "house", "PA", "151.json");
+  if (existsSync(ex)) {
+    const d = JSON.parse(readFileSync(ex, "utf8")) as StateLegTplPageData;
+    writeFileSync(join(process.cwd(), "data", "stateLegTplExample.json"), JSON.stringify({
+      label: "Pennsylvania State House District 151", href: "/states/pa/legislature/house#hd-151",
+      tpl: d.tpl, stateTpl: d.stateTpl, anchor: d.anchor,
+      years: d.yearAggregations.filter((y) => y.finalWeight > 0).map((y) => ({ year: y.year, racesPresent: y.racesPresent, WRS: y.WRS, env: y.env ?? 0, finalWeight: y.finalWeight })),
+    }) + "\n");
+  }
+}
 console.log(`wrote ${tplFiles} district TPL files to public/state-leg-tpl/ (${(tplBytes / 1e6).toFixed(1)} MB total, ${(tplBytes / Math.max(1, tplFiles) / 1e3).toFixed(1)} KB average)`);

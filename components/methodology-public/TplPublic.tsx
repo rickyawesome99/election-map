@@ -1,8 +1,7 @@
 import { TPL_GLOBAL_CONSTANTS as G } from "@/data/tplModelData";
 import { TPL_VALIDATION } from "@/data/tplValidation";
 import { STATE_LEG_TPL_VALIDATION } from "@/data/stateLegTplValidation";
-import { readFileSync } from "fs";
-import { join } from "path";
+import LEG_EXAMPLE from "@/data/stateLegTplExample.json";
 import { statesData } from "@/data/statesData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { houseData } from "@/data/forecastData";
@@ -159,17 +158,8 @@ export function CountyTplPublic() {
   );
 }
 
-/** The legislative-district TPL's figures for the public tab: PA House 151's built file, and the validation. */
-function legExample(): { tpl: number; stateTpl: number } | null {
-  try {
-    return JSON.parse(readFileSync(join(process.cwd(), "public", "state-leg-tpl", "house", "PA", "151.json"), "utf8")) as { tpl: number; stateTpl: number };
-  } catch {
-    return null;
-  }
-}
-
 export function LegTplPublic() {
-  const ex = legExample();
+  const ex = LEG_EXAMPLE;
   const v = STATE_LEG_TPL_VALIDATION.pooled;
   return (
     <>

@@ -3,7 +3,7 @@
 Writes data-entry/precincts/district-shares/{ST}-{chamber}.json: for every 2024 anchor precinct, the
 share of its 2020 population in each state-legislative district on today's lines. Used where a
 year's precinct file carries no district label for a chamber (a chamber not on that ballot, e.g.
-South Carolina's Senate in 2026, and every past year, whose labels are on that year's lines), so lib/stateLegStatewide.ts can sum Senate, Governor and U.S. House by
+South Carolina's Senate in 2026, and every past year, whose labels are on that year's lines), so lib/stateLegDistrictRows.ts can sum every office by
 district.
 
 Method: every 2020 census block goes to the district holding its interior point (TIGER INTPTLAT20/

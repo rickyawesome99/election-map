@@ -9,7 +9,7 @@ import { AtlasCandidatesSection, AtlasFundraisingSection, AtlasResultSection, Ca
 import { AtlasOverlayMap, AtlasTransitionMaps } from "./AtlasEraMaps";
 import AtlasPrecinctMap from "./AtlasPrecinctMap";
 import type { Chamber } from "@/data/stateLegDistricts";
-import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasResult } from "@/lib/stateLegAtlas";
+import type { AtlasDistrict, AtlasEra, AtlasMoney, AtlasPresVote, AtlasResult } from "@/lib/stateLegAtlas";
 import { resultMargin } from "@/lib/stateLegAtlas";
 import { formatReceipts } from "@/components/FundraisingLedger";
 import { getRatingColors, projectedMarginColor, fmtLean, leanColor } from "@/lib/colorScale";
@@ -170,6 +170,43 @@ function ElectoralHistory({ results, eras, abbr, chamber, money }: { results: At
   );
 }
 
+type PresRow = { year: "2016" | "2020" | "2024"; thenEra: string | null; then: AtlasPresVote | null; now: AtlasPresVote | null };
+
+/** Each presidential race on the lines in use that year and on today's lines, set like the
+ *  Electoral history rows: the year and both margins in the serif, the map named small. */
+function PresByBoundary({ rows, eras }: { rows: PresRow[]; eras: AtlasEra[] }) {
+  const serif = { fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, lineHeight: 1.2 } as const;
+  const muted = "var(--app-text-very-muted)";
+  const head = "pb-1.5 text-[10.5px] font-bold uppercase tracking-wider";
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
+        <thead>
+          <tr style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
+            <th className={`${head} pr-4 text-left`}>Election</th>
+            <th className={`${head} pr-4 text-right`}>Lines then</th>
+            <th className={`${head} pr-4 text-left`}>Map</th>
+            <th className={`${head} text-right`}>Today&rsquo;s lines</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, i) => (
+            <tr key={row.year} className="vh-tr vh-hover" style={{ borderBottom: i === rows.length - 1 ? "none" : "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
+              <td className="py-2 pr-4" style={{ ...serif, color: "var(--app-text-primary)" }}>{row.year}</td>
+              <td className="py-2 pr-4 text-right whitespace-nowrap" style={{ ...serif, color: row.then ? marginText(row.then.margin) : muted }}>{fmtMargin(row.then?.margin)}</td>
+              <td className="py-2 pr-4 text-left text-xs whitespace-nowrap" style={{ color: "var(--app-text-muted)" }}>{row.thenEra ? eraLabel(eras, row.thenEra).replace(/^./, (c) => c.toUpperCase()) : ""}</td>
+              <td className="py-2 text-right whitespace-nowrap">
+                {row.now?.estimated && <span className="mr-1.5 text-[11px]" style={{ color: muted }}>est.</span>}
+                <span className="vh-margin inline-block" style={{ ...serif, color: row.now ? marginText(row.now.margin) : muted }}>{fmtMargin(row.now?.margin)}</span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 /** Which filings the "raised" figures come from, by cycle: sources differ by state and year, and some undercount. */
 function MoneySources({ money }: { money: AtlasMoney[] }) {
   const bySource = new Map<string, number[]>();
@@ -284,8 +321,8 @@ export default function AtlasDistrictDetail({
   ];
   // The header's one line of checks, like a House page's Proj. · Polls · Markets · TPL.
   const stats = [
-    // The district's structural lean (the Forecast Calculation's first term), then the projection built on it.
-    ...(pr?.lean != null ? [{ label: "TPL", value: fmtLean(pr.lean), color: leanColor(pr.lean) }] : []),
+    // The district's TPL (the District TPL section below, lib/stateLegTpl.ts), then the frozen 2026 projection.
+    ...(district.tpl != null ? [{ label: "TPL", value: fmtLean(district.tpl), color: leanColor(district.tpl) }] : []),
     ...(headline ? [{ label: "Proj.", value: headline.value, color: headline.color }] : []),
     { label: "2024 Pres.", value: fmtMargin(pres24), color: pres24 == null ? muted : marginText(pres24) },
     (() => {
@@ -301,6 +338,13 @@ export default function AtlasDistrictDetail({
 
   // The district on the precinct layer, below the race like a House page's county map: inside the
   // counted election, else inside the projected vote, else a section of its own.
+  // The last time this seat was up before this year: the map's Swing baseline.
+  // Both races need both parties on the ballot for a swing (an unopposed seat's precincts are all ±100,
+  // or near it with write-ins); with no 2026 count yet, the precinct file decides.
+  const prevElection = [...district.results].filter((r) => r.year < electionYear).sort((x, y) => y.year - x.year)[0] ?? null;
+  const twoParty = (d: number | null | undefined, r: number | null | undefined) => (d ?? 0) > 0 && (r ?? 0) > 0;
+  const swingBase = prevElection && !prevElection.uncontested && twoParty(prevElection.demVotes, prevElection.repVotes)
+    && (!district.result2026 || twoParty(district.result2026.dem, district.result2026.rep)) ? prevElection : null;
   const districtMap = (
     <AtlasPrecinctMap
       abbr={abbr}
@@ -314,6 +358,7 @@ export default function AtlasDistrictDetail({
       up={up}
       hasResult={!!district.result2026}
       chamberLabel={chamberLabel ?? (chamber === "house" ? "State House" : "State Senate")}
+      previous={swingBase ? { year: swingBase.year, oldLines: swingBase.era !== "current" } : null}
     />
   );
   const mapInRace = !!district.result2026 || !!district.candidates2026;
@@ -398,10 +443,6 @@ export default function AtlasDistrictDetail({
             <AtlasCandidatesSection district={district} abbr={abbr} />
             <div className="mt-4">{districtMap}</div>
           </Reveal>}
-          <Reveal>
-            <LedgerSectionHead label="Fundraising" />
-            <AtlasFundraisingSection district={district} electionYear={electionYear} />
-          </Reveal>
         </>
       )}
 
@@ -412,7 +453,21 @@ export default function AtlasDistrictDetail({
         </Reveal>
       )}
 
-      {district.projection && <Reveal as="div"><AtlasOutlook district={district} eras={eras} electionYear={electionYear} chamber={chamber} /></Reveal>}
+      {district.projection && <Reveal as="div"><AtlasOutlook district={district} electionYear={electionYear} /></Reveal>}
+
+      {/* Fundraising sits under the Forecast Calculation (user, 2026-11-27); shown where there is a 2026 field. */}
+      {district.candidates2026 && (
+        <Reveal>
+          <LedgerSectionHead label="Fundraising" />
+          <AtlasFundraisingSection district={district} electionYear={electionYear} />
+        </Reveal>
+      )}
+
+      {/* President by boundary */}
+      <Reveal>
+        <LedgerSectionHead label="Presidential results by boundary" />
+        <PresByBoundary rows={[...presRows].reverse()} eras={eras} />
+      </Reveal>
 
       {/* Electoral history */}
       <Reveal>
@@ -434,35 +489,6 @@ export default function AtlasDistrictDetail({
 
       {/* The legislative-district TPL (lib/stateLegTpl.ts): separate from the frozen 2026 lean above. */}
       {district.tpl != null && <Reveal as="div"><StateLegTplSection abbr={abbr} chamber={chamber} districtKey={district.key} label={district.label} /></Reveal>}
-
-      {/* President by boundary */}
-      <Reveal>
-        <LedgerSectionHead label="Presidential results by boundary" />
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm max-w-xl" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
-            <thead>
-              <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <th className="py-1.5 pr-3 text-left text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Election</th>
-                <th className="py-1.5 pr-3 text-right text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Lines then</th>
-                <th className="py-1.5 pr-3 text-left text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Map</th>
-                <th className="py-1.5 pr-3 text-right text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Today&rsquo;s lines</th>
-              </tr>
-            </thead>
-            <tbody>
-              {presRows.map((row, i) => (
-                <tr key={row.year} className="vh-tr vh-hover" style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
-                  <td className="py-1.5 pr-3 font-semibold">{row.year}</td>
-                  <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: row.then ? marginText(row.then.margin) : "var(--app-text-very-muted)" }}>{fmtMargin(row.then?.margin)}</td>
-                  <td className="py-1.5 pr-3 text-left text-xs whitespace-nowrap" style={{ color: "var(--app-text-very-muted)" }}>{row.thenEra ? eraLabel(eras, row.thenEra) : ""}</td>
-                  <td className="py-1.5 pr-3 text-right font-semibold" style={{ color: row.now ? marginText(row.now.margin) : "var(--app-text-very-muted)" }}>
-                    <span className="vh-margin inline-block">{fmtMargin(row.now?.margin)}</span>{row.now?.estimated && <span className="ml-1 text-xs font-normal" style={{ color: "var(--app-text-very-muted)" }}>est.</span>}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </Reveal>
 
       {/* Redistricting */}
       <Reveal>

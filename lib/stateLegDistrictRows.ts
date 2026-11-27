@@ -3,8 +3,7 @@ import "server-only";
  * Every race a state-legislative district voted in, on TODAY's lines, 2016–2026: President, U.S. Senate
  * (and a same-day special), Governor, U.S. House and the chamber's own legislative race, summed from the
  * precinct returns (public/precincts/results/{ST}/{year}.json, all on the 2024 precinct layer;
- * scripts/precincts/). The input of the legislative-district TPL (lib/stateLegTpl.ts) and of the atlas's
- * comparison rows (lib/stateLegStatewide.ts).
+ * scripts/precincts/). The input of the legislative-district TPL (lib/stateLegTpl.ts).
  *
  * Placement:
  * - Past years: each precinct is divided among today's districts by its 2020 block population
@@ -41,7 +40,8 @@ export type DistrictRaceRow = {
   coverage: number;
   /** The uncontested part's own presidential margin (R − D, points of all votes) and its year; null with full coverage. */
   uncontestedPres: { year: number; margin: number } | null;
-  /** Legislature: that year's seats the contested votes came from, by share (for the incumbency and money terms). */
+  /** Legislature: that year's seats the contested votes came from, by share (for the incumbency and money terms).
+   *  U.S. House: the congressional districts the district's votes were cast in, by share. */
   seats?: { code: string; share: number }[];
   /** Share of the district's votes handed over from precincts split with another district. */
   splitShare: number;
@@ -66,8 +66,8 @@ type Coverage = { states: Record<string, { years: Record<string, Record<string, 
 export type RosterEntry = { number: string; geoid?: string; overlay?: boolean; components?: string[] };
 
 const SHOWN = new Set(["reconciled", "explained"]);
-/** A row is dropped when more than this share of the district has no votes for the race. */
-export const MAX_MISSING = 0.5;
+import { MAX_MISSING } from "./stateLegDistrictRowsConstants";
+export { MAX_MISSING };
 
 /** Which round a file holds where it is not the November general, or how its votes were counted. */
 const NOTES: Record<string, string> = {
@@ -194,6 +194,74 @@ function toKey(code: string, keys: Set<string>): string | null {
   return keys.has(bare) ? bare : null;
 }
 
+/** classifyEligibility's write-in-scale rule (data/raceEligibility.ts): a side under 5% while the other clears 90%,
+ * or under 2% whatever the other does, is no ballot nominee. Shares in percent of the two sides plus others. */
+const writeInScale = (own: number, other: number) => own < 5 && (other >= 90 || own < 2);
+function bothSidesFilled(d: number, r: number, total: number): boolean {
+  if (d <= 0 || r <= 0 || total <= 0) return false;
+  const dp = (d / total) * 100, rp = (r / total) * 100;
+  return !writeInScale(dp, rp) && !writeInScale(rp, dp);
+}
+
+const ORDINAL: Record<string, string> = { first: "1", second: "2", third: "3", fourth: "4", fifth: "5", sixth: "6", seventh: "7", eighth: "8", ninth: "9", tenth: "10", eleventh: "11", twelfth: "12", thirteenth: "13", fourteenth: "14", fifteenth: "15", sixteenth: "16", seventeenth: "17", eighteenth: "18", nineteenth: "19" };
+/** A seat name as a comparison key: "SECOND BARNSTABLE DISTRICT" = "2nd Barnstable", "009, POSITION 1" = "9", "Bennington-2-1" = "BENNINGTON 2 1". */
+function seatNameKey(code: string): string {
+  return code.toLowerCase()
+    .replace(/,?\s*position\s*\d+$/, "")
+    .replace(/\b(district|the)\b/g, " ").replace(/&/g, " and ")
+    .replace(/\b([a-z]+)\b/g, (w) => ORDINAL[w] ?? w)
+    .replace(/(\d+)(st|nd|rd|th)\b/g, "$1")
+    .replace(/\band\b/g, " ")
+    .replace(/[^a-z0-9]+/g, " ").trim()
+    .split(" ").map((t) => t.replace(/^0+(?=\d)/, "")).join(" ");
+}
+/**
+ * Each seat code of a precinct file → the site's own result key for that seat (data/stateLegResults.ts): the
+ * site's lookup, then the normalized name, then (abbreviated codes: Massachusetts' "BN2", Vermont's "AD3",
+ * New Hampshire's "B7") the unmatched seat result with the nearest D and R totals, one to one, within 5%.
+ */
+export function resolveSiteSeats(abbr: string, chamber: Chamber, codes: Map<string, { d: number; r: number }>, sites: Record<string, { demVotes: number; repVotes: number }>): Map<string, string> {
+  const out = new Map<string, string>();
+  const withKey: Record<string, string> = {};
+  for (const k of Object.keys(sites)) withKey[k] = k;
+  const idx = indexByNormalizedKey(withKey);
+  const byName = new Map<string, string>();
+  for (const k of Object.keys(sites)) byName.set(seatNameKey(k), k);
+  const left: string[] = [];
+  for (const code of codes.keys()) {
+    const name = seatNameKey(code);
+    const k = lookupByDistrictCode(idx, abbr, chamber, code) ?? lookupByDistrictCode(idx, abbr, chamber, code.replace(/^0+(?=\d)/, "")) ?? byName.get(name)
+      // a position of a numbered seat: Idaho's "10A" / "10B" are seat 10
+      ?? byName.get(name.replace(/^(\d+)\s*[a-z]$/, "$1"))
+      // a sub-seat of an old map's district: Vermont's "CHITTENDEN 6 1" is the site's "Chittenden-6"
+      ?? byName.get(name.replace(/\s+\d+$/, ""))
+      // Washington's "091": district 9, position 1
+      ?? (abbr === "WA" ? byName.get(code.replace(/^0*(\d{1,2})[12]$/, "$1")) : undefined);
+    if (k) out.set(code, k); else left.push(code);
+  }
+  if (left.length) {
+    const taken = new Set(out.values());
+    const pairs: { code: string; key: string; err: number }[] = [];
+    for (const code of left) {
+      const t = codes.get(code)!;
+      for (const [k, s] of Object.entries(sites)) {
+        if (taken.has(k)) continue;
+        const tot = (s.demVotes ?? 0) + (s.repVotes ?? 0);
+        if (tot <= 0) continue;
+        pairs.push({ code, key: k, err: (Math.abs(t.d - (s.demVotes ?? 0)) + Math.abs(t.r - (s.repVotes ?? 0))) / tot });
+      }
+    }
+    pairs.sort((a, b) => a.err - b.err);
+    const used = new Set<string>();
+    for (const p of pairs) {
+      if (p.err > 0.05) break;
+      if (out.has(p.code) || used.has(p.key)) continue;
+      out.set(p.code, p.key); used.add(p.key);
+    }
+  }
+  return out;
+}
+
 type Parts = Map<number, { key: string; share: number }[]>;
 
 function populationParts(abbr: string, chamber: Chamber, byGeoid: Map<string, string>, keys: Set<string>): Parts | null {
@@ -227,14 +295,15 @@ function labelParts(file: PrecinctFile, legOffice: string, keys: Set<string>): P
 
 type To = "d" | "r" | "o";
 /** How a precinct's votes for one race count: where each slot goes, whether the contest was D v R, and (legislature) its seat. */
-type Route = { dTo: To; rTo: To; contested: boolean; seat?: string; firstChoice?: boolean; slate?: [number, number]; postScale?: [number, number] };
+type Route = { dTo: To; rTo: To; contested: boolean; seat?: string; firstChoice?: boolean; slate?: [number, number]; postScale?: [number, number]; /** U.S. House: the congressional district the votes were cast in. */ cd?: string };
 
 type Sum = {
   all: Votes; contested: Votes; split: number; weight: number; weightWith: number;
   unc: { i: number; share: number }[]; seats: Map<string, number>; firstChoice: number;
+  cds: Map<string, number>;
 };
 const zero = (): Votes => ({ dem: 0, rep: 0, oth: 0 });
-const emptySum = (): Sum => ({ all: zero(), contested: zero(), split: 0, weight: 0, weightWith: 0, unc: [], seats: new Map(), firstChoice: 0 });
+const emptySum = (): Sum => ({ all: zero(), contested: zero(), split: 0, weight: 0, weightWith: 0, unc: [], seats: new Map(), firstChoice: 0, cds: new Map() });
 const margin = (v: Votes) => { const t = v.dem + v.rep + v.oth; return t > 0 ? ((v.rep - v.dem) / t) * 100 : 0; };
 const round2 = (x: number) => Math.round(x * 100) / 100;
 
@@ -284,6 +353,7 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
       let dLabel: string | undefined;
       let sameParty = false;
       let route: (i: number, seatCode?: string) => Route;
+      let siteKeyByCode = new Map<string, string>();
       const plain: Route = { dTo: "d", rTo: "r", contested: true, firstChoice: firstChoiceAll };
       if (office === "USH") {
         const cds = file.districts.USH ?? [];
@@ -294,7 +364,9 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           const row = loadRaceRows().house.get(`${abbr}-${year}-${k}`);
           const dP = row ? row.d : t.d > 0 ? "D" : null, rP = row ? row.r : t.r > 0 ? "R" : null;
           const to = (p: string | null): To => (p === "D" ? "d" : p === "R" ? "r" : "o");
-          contest.set(k, { dTo: to(dP), rTo: to(rP), contested: dP === "D" && rP === "R" && t.d > 0 && t.r > 0, firstChoice: FIRST_CHOICE_CDS.has(`${abbr}-${year}-${k}`) });
+          // A write-in-scale side (WI-3 2016: Kind 257,401 v. a 169-vote Republican) is no contest, as in classifyEligibility.
+          const filled = row ? bothSidesFilled(row.dVotes, row.rVotes, row.dVotes + row.rVotes) : bothSidesFilled(t.d, t.r, t.d + t.r);
+          contest.set(k, { dTo: to(dP), rTo: to(rP), contested: dP === "D" && rP === "R" && t.d > 0 && t.r > 0 && filled, firstChoice: FIRST_CHOICE_CDS.has(`${abbr}-${year}-${k}`), cd: String(Number(k)) });
         }
         route = (i) => contest.get(cdKey(cds[i] ?? "") ?? "") ?? plain;
       } else if (office === "L") {
@@ -316,15 +388,21 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
         // seats) counts the average nominee of each party, as the frozen model's contestedMargin does: each
         // precinct's D and R votes are re-split by d/nD : r/nR, keeping their sum. A nominee on both major
         // lines (fusion) is no D-v-R contest.
-        type SiteSeat = { demVotes: number; repVotes: number; candidates?: { name: string; party: string; votes?: number; winner?: boolean; post?: string }[] };
-        const seatIndex = indexByNormalizedKey(((stateLegResults as unknown as Record<string, Record<string, Partial<Record<Chamber, { districts: Record<string, SiteSeat> }>>>>)[abbr]?.[year]?.[chamber]?.districts) ?? {});
+        type SiteSeat = { demVotes: number; repVotes: number; totalVotes?: number; candidates?: { name: string; party: string; votes?: number; winner?: boolean; post?: string }[] };
+        const siteSeats = ((stateLegResults as unknown as Record<string, Record<string, Partial<Record<Chamber, { districts: Record<string, SiteSeat> }>>>>)[abbr]?.[year]?.[chamber]?.districts) ?? {};
+        const siteKeyOf = resolveSiteSeats(abbr, chamber, seatTotals, siteSeats);
+        siteKeyByCode = siteKeyOf;
         // Seats elected by position (Washington's 1 and 2, Idaho's A and B) are separate races summed in the
         // precinct file: only positions with a Democrat against a Republican count, by scaling each precinct's
         // D and R votes to the share of the seat's D and R votes cast in those positions.
         const seatInfo = new Map<string, { contested: boolean; slate?: [number, number]; postScale?: [number, number] }>();
         for (const [code, t] of seatTotals) {
-          const site = lookupByDistrictCode(seatIndex, abbr, chamber, code) ?? lookupByDistrictCode(seatIndex, abbr, chamber, code.replace(/^0+(?=\d)/, ""));
-          if (!site) { seatInfo.set(code, { contested: t.d > 0 && Math.min(t.d, t.r) >= 0.05 * (t.d + t.r) }); continue; }
+          const siteKey = siteKeyOf.get(code);
+          const site = siteKey ? siteSeats[siteKey] : undefined;
+          if (!site) { seatInfo.set(code, { contested: bothSidesFilled(t.d, t.r, t.d + t.r) }); continue; }
+          // The precinct file must hold both sides too: a seat whose other side's votes were filed under another
+          // seat (Vermont 2022: Orange's Republican under Washington) would otherwise read as a ±100 race.
+          const fileHasBoth = bothSidesFilled(t.d, t.r, t.d + t.r);
           const cs = site.candidates ?? [];
           const fold = (n: string) => n.toLowerCase().replace(/[^a-z]/g, "");
           const dNames = new Set(cs.filter((c) => c.party === "D").map((c) => fold(c.name)));
@@ -340,16 +418,17 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
               dAll += d; rAll += r;
               if (d > 0 && r > 0) { dIn += d; rIn += r; }
             }
-            const ok = dIn > 0 && rIn > 0 && !fusion;
+            const ok = dIn > 0 && rIn > 0 && !fusion && fileHasBoth;
             seatInfo.set(code, { contested: ok, ...(ok && (dIn < dAll || rIn < rAll) ? { postScale: [dIn / dAll, rIn / rAll] as [number, number] } : {}) });
             continue;
           }
-          seatInfo.set(code, { contested: site.demVotes > 0 && site.repVotes > 0 && !fusion, ...(multi && nD > 0 && nR > 0 && nD !== nR ? { slate: [nD, nR] as [number, number] } : {}) });
+          const siteTotal = (site as { totalVotes?: number }).totalVotes || site.demVotes + site.repVotes;
+          seatInfo.set(code, { contested: bothSidesFilled(site.demVotes, site.repVotes, siteTotal) && !fusion && fileHasBoth, ...(multi && nD > 0 && nR > 0 && nD !== nR ? { slate: [nD, nR] as [number, number] } : {}) });
         }
         route = (i, seatCode) => {
           const code = seatCode ?? labels[i] ?? "";
           const info = seatInfo.get(code);
-          return { dTo: "d", rTo: "r", contested: info?.contested ?? false, seat: code || undefined, firstChoice: firstChoiceAll, slate: info?.slate, postScale: info?.postScale };
+          return { dTo: "d", rTo: "r", contested: info?.contested ?? false, seat: siteKeyOf.get(code) ?? (code || undefined), firstChoice: firstChoiceAll, slate: info?.slate, postScale: info?.postScale };
         };
       } else {
         if (office !== "PRES") {
@@ -367,14 +446,16 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
       const labels = file.districts[fileOffice] ?? [];
       const splitRows = new Map<number, [string, number, number, number][]>();
       for (const [i, code, d, r, o] of file.split?.[fileOffice] ?? []) splitRows.set(i, [...(splitRows.get(i) ?? []), [code, d, r, o]]);
+      /** A file seat code → today's district key: directly, or through the site's key for the seat ("BN2" → "2nd Barnstable"). */
+      const rosterKeyOf = (code: string) => toKey(code, keys) ?? (siteKeyByCode.get(code) ? toKey(siteKeyByCode.get(code)!, keys) : null);
       let seatExact = office === "L" && !labelled && labels.length > 0 && !(year in (stateLegHistoricalMaps[abbr]?.[chamber] ?? {}));
       if (seatExact) {
         let placed = 0, all = 0;
         votes.forEach(([d, r, o], i) => {
           all += d + r + o;
           const sp = splitRows.get(i);
-          if (sp) { for (const [code, a, b, c] of sp) if (toKey(code, keys)) placed += a + b + c; }
-          else if (toKey(labels[i] ?? "", keys)) placed += d + r + o;
+          if (sp) { for (const [code, a, b, c] of sp) if (rosterKeyOf(code)) placed += a + b + c; }
+          else if (rosterKeyOf(labels[i] ?? "")) placed += d + r + o;
         });
         seatExact = all > 0 && placed >= 0.95 * all;
       }
@@ -397,6 +478,7 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           put(s.contested, rt.dTo, v.d); put(s.contested, rt.rTo, v.r); put(s.contested, "o", v.o);
           if (rt.seat) s.seats.set(rt.seat, (s.seats.get(rt.seat) ?? 0) + total);
         } else if (total > 0) s.unc.push({ i, share });
+        if (rt.cd && total > 0) s.cds.set(rt.cd, (s.cds.get(rt.cd) ?? 0) + total);
         if (splitPiece) s.split += total;
         if (rt.firstChoice) s.firstChoice += total;
         s.weight += weight[i] * share;
@@ -409,12 +491,12 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           const pieceTotal = d + r + o;
           if (sp) {
             for (const [code, a, b, c] of sp) {
-              const key = toKey(code, keys);
+              const key = rosterKeyOf(code);
               if (key) addPiece(i, key, pieceTotal > 0 ? (a + b + c) / pieceTotal : 0, a, b, c, route(i, code), true);
             }
             return;
           }
-          const key = toKey(labels[i] ?? "", keys);
+          const key = rosterKeyOf(labels[i] ?? "");
           if (key) { addPiece(i, key, 1, d, r, o, route(i), false); return; }
         }
         const ps = parts!.get(i);
@@ -434,6 +516,7 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           s.split += b.split; s.weight += b.weight; s.weightWith += b.weightWith; s.firstChoice += b.firstChoice;
           s.unc.push(...b.unc);
           for (const [code, w] of b.seats) s.seats.set(code, (s.seats.get(code) ?? 0) + w);
+          for (const [code, w] of b.cds) s.cds.set(code, (s.cds.get(code) ?? 0) + w);
         }
         if (s.weight > 0) sums.set(normalizeDistrictKey(d.number), s);
       }
@@ -464,6 +547,10 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           basis: labelled ? "votes" : "population",
           missing: +Math.max(0, missing).toFixed(3),
         };
+        if (office === "USH" && s.cds.size) {
+          const w = [...s.cds.values()].reduce((a, b) => a + b, 0);
+          row.seats = [...s.cds].map(([code, v]) => ({ code, share: +(v / w).toFixed(3) })).filter((x) => x.share >= 0.005).sort((a, b) => b.share - a.share);
+        }
         if (office === "L" && s.seats.size) {
           const w = [...s.seats.values()].reduce((a, b) => a + b, 0);
           row.seats = [...s.seats].map(([code, v]) => ({ code, share: +(v / w).toFixed(3) })).filter((x) => x.share >= 0.005).sort((a, b) => b.share - a.share);

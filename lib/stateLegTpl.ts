@@ -45,6 +45,8 @@ export type LegComputedRace = ComputedRace & {
   uncontestedPres?: { year: number; margin: number } | null;
   /** Legislature rows: incumbent sign of the contributing seats, vote-weighted (R +1, D −1). */
   incSign?: number;
+  /** Legislature rows: that year's seats the district's contested votes came from; U.S. House rows: its congressional districts. By share. */
+  seats?: { code: string; share: number }[];
   note?: string;
 };
 
@@ -156,10 +158,11 @@ export function legDistrictModel(abbr: string, chamber: Chamber, rows: DistrictR
     // U.S. House and the Legislature: contested part as cast, uncontested part imputed.
     let c = r.coverage;
     const u = r.uncontestedPres;
+    if (c >= 0.995) c = 1;  // a sliver under 0.5% is rounding and border noise, not an uncontested part
     if (c < 1 && !u) c = c > 0 ? 1 : 0;  // no presidential file to impute from: the contested part alone
     if (c <= 0) {
       const row = imputedRow("unopposed");
-      if (row) races.push(row);
+      if (row) races.push(r.seats?.length ? { ...row, seats: r.seats } : row);
       continue;
     }
     const mc = voteMargin(r.contested);
@@ -189,6 +192,7 @@ export function legDistrictModel(abbr: string, chamber: Chamber, rows: DistrictR
       envPts: c * env(r.year) + (1 - c) * (u ? env(u.year) : 0),
       aggWeight: c + (1 - c) * IMPUTED_RACE_WEIGHT, NM, coverage: c, uncontestedPres: c < 1 ? u : null,
       ...(r.office === "L" ? { incSign: +incSignW.toFixed(3) } : {}),
+      ...(r.seats?.length ? { seats: r.seats } : {}),
     });
   }
 

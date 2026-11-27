@@ -48,8 +48,6 @@ export type AtlasDistrict = {
   projection?: AtlasProjection;
   /** The 2026 count for the district's races (lib/stateLegResults2026.ts), where it was on the ballot. */
   result2026?: AtlasResult2026;
-  /** How the district, on today's lines, voted for Senate, Governor and U.S. House 2016–2026, summed from precinct returns (lib/stateLegStatewide.ts). Shown under the structural lean, not part of it. */
-  statewide?: AtlasStatewide[];
   /** The district's legislative-district TPL (lib/stateLegTpl.ts); its working is fetched from public/state-leg-tpl/. */
   tpl?: number;
   /** Members not seeking re-election in 2026 and why (Wikipedia's retirement lists). */
@@ -146,10 +144,6 @@ export type AtlasChamberResults2026 = {
 };
 
 /** One row of a district's 2026 lean ledger (lib/stateLegForecast.ts ProjectionRow, as shipped). */
-export type AtlasStatewide = {
-  year: number; office: "USS" | "USSS" | "GOV" | "USH"; dem: number; rep: number; oth: number; margin: number; splitShare: number; basis: "votes" | "population";
-  dLabel?: string; coverage?: number; missing?: number; note?: string;
-};
 export type AtlasProjectionRow = { year: number; kind: "P" | "L"; label: string; era: string; raw: number; relocated: boolean; coverage: number; presDelta: number; incSign: number; incPts: number; envPts: number; moneyPts?: number; gapPts?: number; NM: number; huber: number; weight: number };
 
 export type AtlasProjection = {

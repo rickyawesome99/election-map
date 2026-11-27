@@ -10,7 +10,8 @@ import { candidatePhoto } from "@/lib/candidatePhotos";
 import HouseDistrictCountyMap from "@/components/HouseDistrictCountyMap";
 import HouseRedistrictingSection from "@/components/HouseRedistrictingSection";
 import ProjectedVoteSection, { withProjectedVotes } from "@/components/ProjectedVoteSection";
-import ElectionResultSection, { ElectionResultFootnote, electionResultMeta } from "@/components/ElectionResultSection";
+import ElectionResultSection, { ElectionResultFootnote, electionResultMeta, raceMapProps } from "@/components/ElectionResultSection";
+import PastElectionMapPanel from "@/components/PastElectionMapPanel";
 import { raceResult2026 } from "@/lib/raceResults2026";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { districtDemographics, REDRAWN_SINCE_ACS_VINTAGE, TRACT_ESTIMATED_DISTRICTS } from "@/data/demographics";
@@ -21,7 +22,7 @@ import { forecastRace, forecastsFor, raceCard, projectRaceResults, projectedCoun
 import { RaceForecastTrend } from "@/components/ForecastTrend";
 import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
-import { pastElectionHref } from "@/lib/pastElections";
+import { pastElectionHref, seatSwingBaseline } from "@/lib/pastElections";
 import { PAGE_CONTAINER } from "@/lib/pageLayout";
 import FinalForecastPill from "@/components/FinalForecastPill";
 import { StatePill, OfficePill, HeldPill, PILL } from "@/components/RaceHeroPills";
@@ -284,20 +285,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               />
               {result.counties.length > 0 ? (
                 <div className="mt-4">
-                  <HouseDistrictCountyMap
-                    stateContext
-                    panelSize="wide"
-                    piecesUrl={`/house-county-pieces/${electionYear}/${stateAbbr}.json`}
-                    district={districtNum === "AL" ? 1 : parseInt(districtNum, 10)}
-                    districtLabel={race.name}
+                  <PastElectionMapPanel
+                    {...raceMapProps(result, seatSwingBaseline("house", race.name, 2026), { piecesUrl: `/house-county-pieces/${electionYear}/${stateAbbr}.json`, district: districtNum === "AL" ? 1 : parseInt(districtNum, 10), label: race.name })}
                     stateAbbr={stateAbbr}
-                    counties={result.counties}
-                    demName={result.demName}
-                    repName={result.repName}
-                    demParty={result.demParty}
-                    repParty={result.repParty}
-                    height={240}
-                    caption={<div className="px-1"><ElectionResultFootnote r={result} house /></div>}
+                    stateName={race.state}
+                    areaSingular={stateAbbr === "LA" ? "parish" : stateAbbr === "AK" ? "borough" : "county"}
+                    areaPlural={stateAbbr === "LA" ? "parishes" : stateAbbr === "AK" ? "boroughs" : "counties"}
+                    race={{ height: 380, footnote: <ElectionResultFootnote r={result} house /> }}
                   />
                 </div>
               ) : <ElectionResultFootnote r={result} house />}

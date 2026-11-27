@@ -1,18 +1,15 @@
 "use client";
 
-import { LedgerSectionHead, LedgerSubhead } from "@/components/LedgerSectionHead";
+import { LedgerSectionHead } from "@/components/LedgerSectionHead";
 import FinalForecastPill from "@/components/FinalForecastPill";
-import type { AtlasDistrict, AtlasEra, AtlasIndependent, AtlasProjectionRow, AtlasStatewide } from "@/lib/stateLegAtlas";
+import type { AtlasDistrict, AtlasIndependent } from "@/lib/stateLegAtlas";
 import { projectedMarginColor, fmtMargin } from "@/lib/colorScale";
 
-/** Margin text in the site's standard party colors (not the Safe/Likely/Lean shade scale). */
-// Every row of the working tints on hover and fades in staggered, as in the race pages' ledgers
-// (globals.css .vh-row); fade rather than rise, since the race table sits in a scroll box.
+// Rows tint on hover and fade in staggered, as in the race pages' ledgers (globals.css .vh-row).
 const ROW = "vh-row vh-row-boxed vh-row-fade";
 // Table rows take the table form (.vh-tr): a ::before on a <tr> becomes an extra cell and shifts the columns.
 const TR = "vh-tr vh-hover";
 const enter = (i: number) => Math.min(i, 8) * 55;
-const marginText = (m: number) => (Math.abs(m) < 0.05 ? "var(--app-text-primary)" : projectedMarginColor(m));
 
 function fmtM(v: number | null | undefined, digits = 1): string {
   if (v == null) return "—";
@@ -33,24 +30,6 @@ const BASIS: Record<AtlasIndependent["basis"], string> = {
   record: "strong last race in the seat",
   endorsed: "backed by a major party",
 };
-
-const STATEWIDE_LABEL = { USS: "U.S. Senate", USSS: "U.S. Senate (special)", GOV: "Governor", USH: "U.S. House" } as const;
-/** Order within a year: President, the statewide and House races, then the chamber's own race. */
-const ROW_RANK = { P: 0, USS: 1, USSS: 2, GOV: 3, USH: 4, L: 5 } as const;
-const pct = (v: number) => `${Math.round(v * 100)}%`;
-
-/** A comparison row's margin, naming an independent in the D slot ("I+4.2"). */
-function fmtSw(r: AtlasStatewide): string {
-  return r.dLabel && r.margin <= -0.05 ? `${r.dLabel}+${Math.abs(r.margin).toFixed(1)}` : fmtM(r.margin);
-}
-/** The comparison row's caveats, shown after "today's lines". */
-function swNotes(r: AtlasStatewide): string[] {
-  const out: string[] = [];
-  if (r.note) out.push(r.note);
-  if (r.coverage != null) out.push(`${pct(r.coverage)} covered`);
-  if (r.missing != null && r.missing >= 0.1) out.push(`no votes on file for ${pct(r.missing)}`);
-  return out;
-}
 
 const LABEL = "text-[10.5px] font-bold uppercase tracking-wider";
 const SERIF = { fontFamily: "var(--font-serif)", fontWeight: 700 } as const;
@@ -131,14 +110,14 @@ function IndependentSum({ indep, lean, envPts, beta, pI, electionYear }: { indep
 }
 
 /**
- * The district's 2026 outlook: the headline, the lean ledger (every row, with its relocation,
- * incumbency and environment strips), and the forward sum. Mirrors the race pages' Forecast
- * Calculation card in flat form.
+ * The district's frozen 2026 outlook: the headline and the forward sum (structural lean + environment +
+ * incumbency + money). The structural lean's race-by-race working was removed on 2026-11-27 (user): the
+ * District TPL section below the electoral history is the district's measured lean. Mirrors the race
+ * pages' Forecast Calculation card in flat form.
  */
-export default function AtlasOutlook({ district, eras, electionYear, chamber }: { district: AtlasDistrict; eras: AtlasEra[]; electionYear: number; chamber: "house" | "senate" }) {
+export default function AtlasOutlook({ district, electionYear }: { district: AtlasDistrict; electionYear: number }) {
   const pr = district.projection;
   if (!pr) return null;
-  const eraLabel = (key: string) => (key === "current" ? "today's lines" : `${eras.find((e) => e.key === key)?.label ?? key} map`);
   const decided = pr.contest === "uncontested-D" || pr.contest === "uncontested-R" || pr.contest === "split";
   const g = pr.guaranteed ?? { dem: 0, rep: 0 };
   const guaranteedNote = g.dem || g.rep ? `${[g.dem ? `${g.dem} Democratic` : "", g.rep ? `${g.rep} Republican` : ""].filter(Boolean).join(" and ")} seat${g.dem + g.rep > 1 ? "s" : ""} decided by the field` : null;
@@ -162,16 +141,6 @@ export default function AtlasOutlook({ district, eras, electionYear, chamber }: 
   const winD = pr.pD != null && pr.pD >= 0.5;
   const winPct = pr.pD == null ? null : Math.max(pr.pD, 1 - pr.pD) * 100;
   const fmtPct = (v: number) => (v > 99.5 ? ">99" : v < 0.5 ? "<1" : String(Math.round(v)));
-  const statewide = district.statewide ?? [];
-  const chamberWord = chamber === "senate" ? "Senate" : "House";
-  const rows = [...pr.rows].sort((a, b) => b.year - a.year || (a.kind === "P" ? -1 : 1));
-  // The lean's own rows and the comparison rows (Senate, Governor, U.S. House on today's lines), newest year first.
-  const ledger: ({ sw: false; r: AtlasProjectionRow } | { sw: true; r: AtlasStatewide })[] = [
-    ...rows.map((r) => ({ sw: false as const, r })),
-    ...statewide.map((r) => ({ sw: true as const, r })),
-  ].sort((a, b) => b.r.year - a.r.year || ROW_RANK[a.sw ? a.r.office : a.r.kind] - ROW_RANK[b.sw ? b.r.office : b.r.kind]);
-  const th = (right: boolean) => `py-1.5 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${right ? "text-right" : "text-left"}`;
-  const adj = (v: string) => <span style={{ color: v === "—" ? "var(--app-text-very-muted)" : "var(--app-text-muted)" }}>{v}</span>;
 
   return (
     <section>
@@ -198,14 +167,9 @@ export default function AtlasOutlook({ district, eras, electionYear, chamber }: 
         <p className="mt-2 text-sm" style={{ color: "var(--app-text-muted)" }}>{guaranteedNote ? `${guaranteedNote}; the other ${pr.contestedSeats ?? pr.seats - g.dem - g.rep} drawn on the margin.` : `${pr.seats} seats, each drawn on the same margin.`}</p>
       )}
 
-      {(pr.contest !== "not-up" || statewide.length > 0) && pr.lean != null && (
+      {pr.contest !== "not-up" && pr.lean != null && (
         <>
-          {pr.contest === "not-up" ? (
-            // A seat not on this ballot: only the lean, for the race-by-race table under it.
-            <div className="mt-5 max-w-[14rem]">
-              <TermCells terms={[{ label: "Structural lean", value: fmtM(pr.lean), color: partyOf(pr.lean), note: `weighted neutral margins, ${pr.rows.length} race-years` }]} />
-            </div>
-          ) : pr.contest === "independent" && pr.indep ? (
+          {pr.contest === "independent" && pr.indep ? (
             <IndependentSum indep={pr.indep} lean={pr.lean} envPts={pr.envPts} beta={pr.beta} pI={pr.pI ?? null} electionYear={electionYear} />
           ) : (
             <div className="mt-5">
@@ -229,66 +193,6 @@ export default function AtlasOutlook({ district, eras, electionYear, chamber }: 
             </div>
           )}
 
-          {/* The structural lean's working: every race-year made neutral, then weighted. */}
-          <LedgerSubhead label="Structural lean, race by race" />
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm" style={{ borderCollapse: "collapse", fontVariantNumeric: "tabular-nums" }}>
-              <thead>
-                <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
-                  {[["Race"], ["Lines"], ["Raw"], ["Relocation"], ["Down-ballot"], ["Inc", "Incumbency"], ["Env", "Environment"], ["Money"], ["Neutral"], ["Weight"]].map(([h, full], i) => (
-                    <th key={h} title={full} className={th(i >= 2)} style={{ color: "var(--app-text-muted)" }}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {ledger.map((e, i) => {
-                  if (e.sw) {
-                    const r = e.r;
-                    const notes = swNotes(r);
-                    const tip = r.basis === "votes"
-                      ? `precincts placed by their own ${chamberWord} district${r.splitShare >= 0.005 ? `; ${pct(r.splitShare)} of the votes from precincts split with another district, divided by each part's share of the ${chamberWord} race vote` : ""}`
-                      : `precincts placed in today's districts by 2020 population${r.splitShare >= 0.005 ? `; ${pct(r.splitShare)} of the votes from precincts split with another district` : ""}`;
-                    return (
-                      <tr key={`${r.year}-${r.office}`} className={TR} style={{ borderBottom: "1px solid var(--app-border)", animationDelay: `${enter(i)}ms` }}>
-                        <td className="py-2 pr-3 font-semibold whitespace-nowrap">{r.year} {STATEWIDE_LABEL[r.office]}</td>
-                        <td className="py-2 pr-3 text-xs" title={tip}>
-                          <div className="whitespace-nowrap">today&apos;s lines</div>
-                          {notes.map((n) => <div key={n} className="mt-0.5 text-[11px] leading-snug" style={{ color: "var(--app-text-very-muted)" }}>{n}</div>)}
-                        </td>
-                        <td className="py-2 pr-3 text-right font-semibold" style={{ color: r.dLabel && r.margin <= -0.05 ? "var(--party-ind)" : marginText(r.margin) }}>{fmtSw(r)}</td>
-                        {Array.from({ length: 6 }, (_, k) => <td key={k} className="py-2 pr-3 text-right">{adj("—")}</td>)}
-                        <td className="py-2 pr-0 text-right whitespace-nowrap text-xs" style={{ color: "var(--app-text-very-muted)" }}>not counted</td>
-                      </tr>
-                    );
-                  }
-                  const r = e.r;
-                  return (
-                  <tr key={`${r.year}-${r.kind}`} className={TR} style={{ borderBottom: "1px solid var(--app-border)", opacity: r.huber < 1 ? 0.7 : 1, animationDelay: `${enter(i)}ms` }}>
-                    <td className="py-2 pr-3 font-semibold whitespace-nowrap">{r.label}</td>
-                    <td className="py-2 pr-3 text-xs" style={{ color: r.relocated ? "var(--app-text-muted)" : "var(--app-text-primary)" }}>
-                      <div className="whitespace-nowrap">{r.relocated ? `${eraLabel(r.era)} → today's` : "today's lines"}</div>
-                      {r.coverage < 0.999 && <div className="mt-0.5 text-[11px] leading-snug" style={{ color: "var(--app-text-very-muted)" }} title="share of today's district whose old-map seats had a Democrat-vs-Republican race that year">{Math.round(r.coverage * 100)}% covered</div>}
-                    </td>
-                    <td className="py-2 pr-3 text-right font-semibold" style={{ color: marginText(r.raw - r.presDelta) }}>{fmtM(r.raw - r.presDelta)}</td>
-                    <td className="py-2 pr-3 text-right">{adj(r.relocated ? signed(r.presDelta) : "—")}</td>
-                    <td className="py-2 pr-3 text-right" title={r.kind === "P" ? "the chamber's down-ballot gap: its seats run this far from the presidential vote (PRES_GAP_K share)" : undefined}>{adj(r.kind === "P" && r.gapPts ? signed(r.gapPts) : "—")}</td>
-                    <td className="py-2 pr-3 text-right">{adj(r.kind === "L" && r.incSign !== 0 ? signed(r.incPts) : "—")}</td>
-                    <td className="py-2 pr-3 text-right">{adj(signed(r.envPts))}</td>
-                    <td className="py-2 pr-3 text-right" title={r.kind === "L" ? "the race's money term, taken out of its margin (0 where either side's money is not on file)" : undefined}>{adj(r.kind === "L" && r.moneyPts ? signed(-r.moneyPts) : "—")}</td>
-                    <td className="py-2 pr-3 text-right font-bold" style={{ color: marginText(r.NM) }}>{fmtM(r.NM)}</td>
-                    <td className="py-2 pr-0 text-right" style={{ color: "var(--app-text-muted)" }}>{(r.weight * 100).toFixed(0)}%{r.huber < 1 && <span title="Huber-downweighted outlier" style={{ color: "var(--app-text-very-muted)" }}> ↓</span>}</td>
-                  </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-          {statewide.length > 0 && (
-            <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>Rows marked &ldquo;not counted&rdquo; ({[...new Set(statewide.map((r) => STATEWIDE_LABEL[r.office]))].join(", ")}) are summed from precinct returns on today&apos;s lines and shown for comparison; they are not part of the structural lean. A U.S. House row counts only the part of the district with a Democrat against a Republican (&ldquo;covered&rdquo;). Past years place each precinct by its 2020 population{statewide.some((r) => r.basis === "votes") ? `; 2026 by the precinct's own ${chamberWord} district` : ""}.</p>
-          )}
-          {rows.some((r) => r.huber < 1) && (
-            <p className="mt-2 text-xs" style={{ color: "var(--app-text-very-muted)" }}>Faded rows marked ↓ are outliers given less weight.</p>
-          )}
         </>
       )}
       {pr.contest === "not-up" && district.nextElection && (

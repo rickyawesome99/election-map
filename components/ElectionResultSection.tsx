@@ -99,3 +99,24 @@ export default function ElectionResultSection({ r, state, dem, rep }: { r: RaceR
     </div>
   );
 }
+
+/** The race page's county map (PastElectionMapPanel with `race`): the counted counties, each with
+ *  its margin the last time this seat was up (lib/pastElections seatSwingBaseline) for the Swing view. */
+export function raceMapProps(
+  r: RaceResult2026,
+  baseline: { previous: { year: number; isSpecial: boolean }; margins: Record<string, number>; linesChanged: boolean } | null,
+  house?: { piecesUrl: string; district: number; label: string },
+) {
+  return {
+    dem: { name: r.demName, party: r.demParty },
+    rep: { name: r.repName, party: r.repParty },
+    counties: r.counties.map((c) => ({
+      fips: c.fips, name: c.name,
+      result: { demVotes: c.result.demVotes, repVotes: c.result.repVotes, totalVotes: c.result.totalVotes, demPct: c.result.demPct, repPct: c.result.repPct, margin: c.result.margin },
+      prevMargin: baseline?.margins[c.fips] ?? null,
+    })),
+    previous: baseline?.previous ?? null,
+    house: house ? { ...house, linesChanged: baseline?.linesChanged ?? false } : null,
+    noSwing: decidedContest(r) || r.demParty === r.repParty,
+  };
+}
