@@ -10,7 +10,8 @@ import "server-only";
  *       flag and money come from the statewide race (generateRaceList), as County TPL does. An ineligible
  *       race (independent, same-party, unopposed) is imputed from the district's nearest presidential
  *       margin with that year's environment, at IMPUTED_RACE_WEIGHT.
- *   H   U.S. House: no incumbency or money strip (County TPL). The part of the district in a Democrat-v-
+ *   H   U.S. House: each contested congressional district's incumbency and money strips, weighted by its share of the
+ *       contested votes (LEG_HOUSE_STRIPS, adopted 2026-11-27). The part of the district in a Democrat-v-
  *       Republican race counts as cast; the uncontested part is imputed from its own presidential margin
  *       (user decision 2026-11-26), blended by coverage c: NM = c·(m_c + env(Y)) + (1−c)·(m_u + env(Y_pres)).
  *       c = 0: the whole row is imputed from the district's nearest presidential margin.
@@ -35,6 +36,15 @@ import { STATE_LEG_FORECAST_CONSTANTS as LC } from "./stateLegForecast";
 import { raceMoneyTerm } from "./stateLegMoneyModel";
 import { indexByNormalizedKey, lookupByDistrictCode } from "./stateLegDistrictKey";
 import { districtRaceRows, voteMargin, type DistrictRaceRow, type RosterEntry } from "./stateLegDistrictRows";
+import { houseSeatInfo } from "./houseRaceInfo";
+
+/**
+ * U.S. House candidate terms (adopted 2026-11-27, user decision after the test): each contested congressional district
+ * in the row takes out its own incumbency (incumbencyPtsFor "H", the House district TPL's) and money (FEC receipts,
+ * ffStripPts), weighted by its share of the row's contested votes. scripts/stateLegTplValidation.ts: mean leftover
+ * 6.19 → 6.00 (per-chamber environment 4.86 either way). Off = the original rule (no terms on a House row).
+ */
+export const LEG_HOUSE_STRIPS = true;
 
 /** The legislative-district model's row: a County TPL row plus its coverage. */
 export type LegComputedRace = ComputedRace & {
@@ -104,7 +114,8 @@ const LABEL: Record<DistrictRaceRow["office"], string> = { PRES: "President", US
 const TYPE: Record<DistrictRaceRow["office"], ComputedRace["raceType"]> = { PRES: "P", USS: "S", USSS: "S", GOV: "G", USH: "H", L: "L" };
 
 /** One district's model from its race rows. */
-export function legDistrictModel(abbr: string, chamber: Chamber, rows: DistrictRaceRow[]): LegDistrictModel {
+export function legDistrictModel(abbr: string, chamber: Chamber, rows: DistrictRaceRow[], opts: { houseStrips?: boolean } = {}): LegDistrictModel {
+  const houseStrips = opts.houseStrips ?? LEG_HOUSE_STRIPS;
   const fit = getTplFit();
   const env = (y: number) => -(fit.E[y] ?? 0);
   const pres = rows.filter((r) => r.office === "PRES").map((r) => ({ year: r.year, margin: voteMargin(r.all) }));
@@ -167,6 +178,14 @@ export function legDistrictModel(abbr: string, chamber: Chamber, rows: DistrictR
     }
     const mc = voteMargin(r.contested);
     let incumbencyPts = 0, FF_pts = 0, incSignW = 0, incumbent = "Open";
+    if (r.office === "USH" && houseStrips && r.contestedCds?.length) {
+      for (const cd of r.contestedCds) {
+        const info = houseSeatInfo(abbr, r.year, Number(cd.code));
+        if (!info) continue;
+        incumbencyPts += cd.share * incumbencyPtsFor("H", info.incumbent);
+        FF_pts += cd.share * ffStripPts(raceFundraisingFor("H", abbr, info.name, "House", r.year));
+      }
+    }
     if (r.office === "L" && r.seats?.length) {
       let moneyW = 0;
       for (const s of r.seats) {
@@ -207,9 +226,9 @@ export function legDistrictModel(abbr: string, chamber: Chamber, rows: DistrictR
 }
 
 /** Every district of a chamber, keyed by normalized atlas district key. */
-export function legChamberModels(abbr: string, chamber: Chamber, roster: RosterEntry[]): Map<string, LegDistrictModel> {
+export function legChamberModels(abbr: string, chamber: Chamber, roster: RosterEntry[], opts: { houseStrips?: boolean } = {}): Map<string, LegDistrictModel> {
   const out = new Map<string, LegDistrictModel>();
-  for (const [key, rows] of districtRaceRows(abbr, chamber, roster)) out.set(key, legDistrictModel(abbr, chamber, rows));
+  for (const [key, rows] of districtRaceRows(abbr, chamber, roster)) out.set(key, legDistrictModel(abbr, chamber, rows, opts));
   return out;
 }
 

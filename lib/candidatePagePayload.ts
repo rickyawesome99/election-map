@@ -9,6 +9,7 @@
 import type { CandidatePage } from "@/lib/candidateIndex";
 import type { StateLegCandidatePage } from "@/lib/stateLegCandidateIndex";
 import type { WarSlim } from "@/lib/modelSlices";
+import type { LegWarSlim } from "@/components/tpl/types";
 import type { LegProjection, RaceMoney } from "@/components/candidates/StateLegRaceRow";
 
 /** A candidate's WAR row with the opponent's WAR in the same race (null when the opponent has no scored row). */
@@ -32,8 +33,10 @@ export type CandidateResult2026 = {
 export type CandidatePagePayload = {
   federal: CandidatePage | null;
   leg: StateLegCandidatePage | null;
-  /** Aligned with leg.races: the 2026 projection (current races only) and the fundraising line. */
-  legRaces: { projection: LegProjection; money: RaceMoney; result2026?: CandidateResult2026 | null }[];
+  /** Aligned with leg.races: the 2026 projection (current races only), the fundraising line and the race's WAR. */
+  legRaces: { projection: LegProjection; money: RaceMoney; result2026?: CandidateResult2026 | null;
+    /** Legislative WAR of the race (lib/stateLegWar.ts); absent where the race is not scored. */
+    war?: LegWarSlim }[];
   /** Aligned with federal.history: where each row links. */
   historyHrefs: string[];
   /** Aligned with federal.history: the 2026 result of a current race, where one is on file. */

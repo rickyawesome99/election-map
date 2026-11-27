@@ -147,7 +147,7 @@ export function CountyTplPublic() {
       <Chapter id="differences" kicker="How it differs" title="What changes at county level">
         <QA items={[
           { q: "Statewide races", a: "The same race in every county, so the incumbent and the money are the state race's. Only the margin is the county's own." },
-          { q: "House races", a: "A county often sits in more than one district, so its House vote mixes several races. No single incumbent or money gap can be taken out, and a year where one party ran no one in the county is filled in from its presidential vote." },
+          { q: "House races", a: "A county often sits in more than one district, so its House vote mixes several races. Each race's incumbent advantage and money gap are taken out for its share of the county's votes, and a year where one party ran no one in the county is filled in from its presidential vote." },
           { q: "Outliers", a: "A county far from its state's lean is not an outlier; it's just a different place. Only a House year that runs far from the county's own statewide results is turned down, since a popular local member can carry a county their party usually loses." },
           { q: "Does it include 2026?", a: "Yes, since November 25, on the votes counted so far in each county. Two counties whose 2026 votes are not yet published by county have no 2026 figures." },
           { q: "Missing places", a: "Alaska reports no county results, so it has no county leans." },
@@ -175,7 +175,7 @@ export function LegTplPublic() {
         <QA items={[
           { q: "Where do the votes come from?", a: "Precinct-by-precinct results for every election since 2016, each precinct placed in today's districts by where its residents live. So a race held on an older map is still measured on the district as it is drawn now. When the district's own race was held on today's map, it simply counts that race's result." },
           { q: "Statewide races", a: "For U.S. Senate and governor, the district's own margin, with the incumbent and the money of the statewide race taken out, as for a county. A race without a Democrat against a Republican is filled in from the district's presidential vote." },
-          { q: "U.S. House and legislative races", a: "Often only part of a district had a Democrat against a Republican. That part counts as voted; the rest is filled in from its own presidential vote. The legislative race also has the sitting member's advantage and the money gap taken out, as a House race does." },
+          { q: "U.S. House and legislative races", a: "Often only part of a district had a Democrat against a Republican. That part counts as voted; the rest is filled in from its own presidential vote. Both have the sitting member's advantage and the money gap taken out, race by race, for each race's share of the district's votes." },
           { q: "Popular local candidates", a: "A legislative or House result that runs far from the district's statewide results, like a long-serving member holding a seat their party usually loses, is turned down rather than taken at face value." },
           { q: "Alaska", a: "Ranked-choice races count their final round, rebuilt from the state's ballot records." },
           { q: "Does it include 2026?", a: "Yes, for states whose 2026 results have been published precinct by precinct; others fill in as they certify." },

@@ -49,7 +49,6 @@ for (const abbr of Object.keys(stateLegDistricts).sort()) {
           if (!near(r.NM, rebuilt, 0.05)) flag("H/L NM does not rebuild", `${id} ${r.year} ${r.race} NM ${r.NM.toFixed(2)} vs ${rebuilt.toFixed(2)} (c ${c})`);
           void want;
           if (c < 1 && c > 0 && !u) flag("partial row without uncontested part", `${id} ${r.year} ${r.race}`);
-          if (r.raceType === "H" && ((r.incumbencyPts ?? 0) !== 0 || (r.FF_pts ?? 0) !== 0)) flag("U.S. House row with strips", `${id} ${r.year}`);
         } else {
           const rebuilt = (r.rawMargin ?? 0) + (r.incumbencyPts ?? 0) + (r.FF_pts ?? 0) - (E[r.year] ?? 0);
           if (!near(r.NM, rebuilt)) flag("statewide NM does not rebuild", `${id} ${r.year} ${r.race} NM ${r.NM.toFixed(2)} vs ${rebuilt.toFixed(2)}`);

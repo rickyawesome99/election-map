@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { statesData } from "@/data/statesData";
 import { OFFICE_LABELS, WAR_BAD, WAR_GOOD, candidateSlug, districtHref, fmt1, marginColor, stateHref } from "./format";
-import type { WarSlim } from "./types";
+import type { LegWarSlim, WarSlim } from "./types";
 import { WarChip } from "./ui";
 
 // The calculation behind one row of the WAR table, drawn: every step from the place's own vote to
@@ -31,17 +31,23 @@ function Tile({ label, title, children }: { label: string; title?: string; child
   );
 }
 
-export function WarRaceBreakdown({ row, opp, ownPage = false }: { row: WarSlim; opp: Pick<WarSlim, "candidate" | "party" | "war"> | null; /** On the candidate's own page: no link back to it. */ ownPage?: boolean }) {
+const LEG_OFFICE_NAMES: Record<string, string> = { P: "President", S: "Senate", G: "governor", H: "U.S. House" };
+
+export function WarRaceBreakdown({ row, opp, ownPage = false }: { row: WarSlim | LegWarSlim; opp: Pick<WarSlim, "candidate" | "party" | "war"> | null; /** On the candidate's own page: no link back to it. */ ownPage?: boolean }) {
   const s = row.party === "R" ? 1 : -1;
   const st = statesData.find((x) => x.abbr === row.state);
-  const place = row.office === "H" ? row.race.replace(/^House /, "") : st?.name ?? row.state;
-  const placeHref = row.office === "H" ? districtHref(st?.id ?? row.state.toLowerCase(), row.race.replace(/^House /, "")) : stateHref(st?.id ?? row.state.toLowerCase());
+  // A legislative row names its own place and its chamber's other races; everything else is the federal drawing.
+  const leg = row.office === "L" ? row : null;
+  const fed = row.office === "L" ? null : row;
+  const place = leg ? leg.place : row.office === "H" ? row.race.replace(/^House /, "") : st?.name ?? row.state;
+  const placeHref = leg ? leg.placeHref : row.office === "H" ? districtHref(st?.id ?? row.state.toLowerCase(), row.race.replace(/^House /, "")) : stateHref(st?.id ?? row.state.toLowerCase());
+  const legOffices = leg ? leg.offices.map((o) => (o === "O" ? (leg.chamberLabel === "State House" ? "State Senate" : leg.chamberLabel === "State Senate" ? "State House" : "the other chamber") : LEG_OFFICE_NAMES[o] ?? o)) : [];
 
   // Expected = baseline (+ the state's other House races) + incumbency + structural money.
   const w = row.base == null ? 0 : row.baseW ?? 1;
   const baseline = row.base == null ? row.leanBase ?? row.expected : w * row.base + (1 - w) * (row.leanBase ?? row.base);
-  const houseOthers = row.houseOthers ?? 0;
-  const money = row.moneyPts ?? 0;
+  const houseOthers = leg ? leg.others : fed?.houseOthers ?? 0;
+  const money = fed?.moneyPts ?? 0;
   const incumbency = row.expected - baseline - houseOthers - money;
   // Vs Opp = Expected moved by the opponent's strength, with the candidate's own incumbency taken out.
   const oppMove = -s * row.oppEffect;
@@ -52,9 +58,10 @@ export function WarRaceBreakdown({ row, opp, ownPage = false }: { row: WarSlim; 
   const steps: Step[] = [];
   let at = baseline;
   steps.push({ kind: "mark", label: row.base == null ? `${place}'s modelled baseline` : `${place}'s ${row.year} vote without this race`, at,
-    note: row.base == null ? "no own-year vote on file to read it from" : w >= 1 ? "the rest of the ballot that year" : `${Math.round(w * 100)}% its own vote, the rest the modelled baseline` });
+    note: row.base == null ? (leg ? `its presidential vote on the lines of the race, moved to ${row.year}${leg.basisNote ? `: ${leg.basisNote}` : ""}` : "no own-year vote on file to read it from")
+      : w >= 1 ? (leg && legOffices.length ? `the rest of the ballot that year: ${legOffices.join(", ")}` : "the rest of the ballot that year") : `${Math.round(w * 100)}% its own vote${leg && legOffices.length ? ` (${legOffices.join(", ")})` : ""}, the rest the modelled baseline` });
   const move = (label: string, pts: number, note?: string) => { if (Math.abs(pts) >= 0.05) { steps.push({ kind: "move", label, note, from: at, to: at + pts }); at += pts; } };
-  move("Other House races in the state", houseOthers, "how they ran against their own districts");
+  move(leg ? `Other ${leg.chamberLabel} races in the state` : "Other House races in the state", houseOthers, leg ? "how they ran against their own seats" : "how they ran against their own districts");
   move("Incumbency", incumbency, "what holding the seat is worth to a generic incumbent");
   move("Structural money", money, "the money gap a generic pair would have");
   steps.push({ kind: "mark", label: "Expected", note: "generic vs generic", at: row.expected, strong: true });
@@ -83,9 +90,9 @@ export function WarRaceBreakdown({ row, opp, ownPage = false }: { row: WarSlim; 
           How {row.candidate}&rsquo;s {row.year} WAR is built
         </div>
         <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs" style={{ color: "var(--app-text-muted)" }}>
-          {!ownPage && <Link href={`/candidates/${candidateSlug(row.candidate, row.state)}`} prefetch={false} className="hover:underline">Candidate page &rsaquo;</Link>}
-          {row.pastHref && <Link href={row.pastHref} prefetch={false} className="hover:underline">{row.year} {OFFICE_LABELS[row.office]} results &rsaquo;</Link>}
-          <Link href={placeHref} prefetch={false} className="hover:underline">{row.office === "H" ? place : row.state} TPL &rsaquo;</Link>
+          {!ownPage && !leg && <Link href={`/candidates/${candidateSlug(row.candidate, row.state)}`} prefetch={false} className="hover:underline">Candidate page &rsaquo;</Link>}
+          {fed?.pastHref && <Link href={fed.pastHref} prefetch={false} className="hover:underline">{row.year} {OFFICE_LABELS[fed.office]} results &rsaquo;</Link>}
+          <Link href={placeHref} prefetch={false} className="hover:underline">{leg ? `${place} ›` : <>{row.office === "H" ? place : row.state} TPL &rsaquo;</>}</Link>
         </div>
       </div>
 
@@ -138,7 +145,7 @@ export function WarRaceBreakdown({ row, opp, ownPage = false }: { row: WarSlim; 
 
       {/* What the WAR is made of, and the race's other figures. */}
       <dl className="mt-4 flex flex-wrap gap-x-8 gap-y-3 pt-3.5" style={{ borderTop: "1px solid var(--app-border)" }}>
-        <Tile label="Record" title="The candidate's strength in their other races, recent ones counting more, pulled toward zero when there are few">{signed(record)} <span className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>{row.effectN > 1 ? `${row.effectN - 1} other race${row.effectN === 2 ? "" : "s"}` : "first race"}</span></Tile>
+        <Tile label="Record" title={`The candidate's strength in their other races, recent ones counting more, pulled toward zero when there are few${row.crossStart != null ? (leg ? ". Their federal and statewide races count at a discount" : ". Their state legislative races count at a discount") : ""}`}>{signed(record)} <span className="text-[11px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>{row.effectN > 1 ? `${row.effectN - 1} other race${row.effectN === 2 ? "" : "s"}` : leg ? "first legislative race" : row.crossStart != null ? "first race at this level" : "first race"}{row.crossStart != null ? ` · ${leg ? "federal" : "legislative"} record ${signed(row.crossStart)}` : ""}</span></Tile>
         <Tile label="+ Share of this race" title="Their share of how far this race departed from the two candidates' records">{signed(surprise)}</Tile>
         <Tile label="+ Incumb." title="What their own incumbency was worth against a non-incumbent replacement">{row.incumb !== 0 ? signed(row.incumb) : <span style={{ color: "var(--app-text-very-muted)" }}>&mdash;</span>}</Tile>
         <Tile label="= WAR"><WarChip war={row.war} size="sm" /></Tile>

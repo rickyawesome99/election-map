@@ -1,4 +1,5 @@
 import { computeWarTable, type WarRow } from "@/lib/tplCompute";
+import { STATE_LEG_WAR_SUMMARY as LW } from "@/data/stateLegWarSummary";
 import { A, BuildUp, Chapter, KeyFigures, Label, Num, QA, SeeIt, SimpleTable, Steps } from "./kit";
 
 // Public WAR tab: the plain-language version of components/methodology/WarMethodology.tsx, reading the
@@ -60,6 +61,21 @@ export default function WarPublic() {
           <Label meta="House, Senate and governor races · each candidate once">Candidates who ran furthest from expectations</Label>
           <SimpleTable align="llr" head={["Candidate", "Race", "WAR"]} rows={[...top, ...bottom].map((r) => [<Name key="n" row={r} />, `${r.year} ${r.state} ${OFFICE[r.office]}`, <Num key="w">{signed(r.war)}</Num>])} />
         </div>
+      </Chapter>
+
+      <Chapter id="legislature" kicker="State House and Senate" title="State legislative candidates"
+        intro={<>Candidates for state legislatures are scored the same way, against their own seat. The yardstick is how the seat&rsquo;s voters cast the rest of their ballot that year (president, Senate, governor, the U.S. House and the other chamber of the legislature), adjusted by how the chamber&rsquo;s other candidates ran against their own seats, plus the usual advantage of an incumbent.</>}>
+        <KeyFigures items={[
+          { value: LW.rows.toLocaleString(), label: "legislative candidate races scored, 2016 to 2026" },
+          { value: LW.people.toLocaleString(), label: "candidates" },
+        ]} />
+        <QA items={[
+          { q: "Where is it shown?", a: "On each candidate's own page, beside every scored race in their electoral history. Click a race to see the calculation step by step." },
+          { q: "Which races are scored?", a: "General elections for a single seat between one Democrat and one Republican. Districts that elect several members at once, and races with only one major party on the ballot, are not scored." },
+          { q: "Is it combined with WAR in federal races?", a: "Yes: WAR is one number whatever the office, and a candidate's career WAR adds every scored race. When a legislator runs for Senate, governor or Congress, their legislative record counts toward what is expected of them, but at a discount, because running ahead in a legislative seat only partly carries over: about a third of it into a statewide race and very little into a U.S. House race." },
+          { q: "What about two candidates with the same name?", a: "A record belongs to a person, not a name. Two people with one name in one state are kept apart when they appear on the same year's ballot in different seats, or when one is a Democrat and the other a Republican in distant parts of the state." },
+          { q: "How reliable is it?", a: "Less than the federal scores. Most legislative candidates have a single scored race, districts are small, and older precinct results are placed approximately. A long record is worth much more than one race." },
+        ]} />
       </Chapter>
 
       <Chapter id="faq" kicker="Questions" title="Reading WAR">

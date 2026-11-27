@@ -71,7 +71,7 @@ function slimWar(r: WarRow): WarSlim {
     actual: r.actual, expected: r.expected, vsOpp: r.expectedVsOpponent, residual: r.residual, incumb: r.replacementPts, effect: r.effect, effectN: r.effectN,
     oppEffect: r.opponentEffect, war: r.war, seatId: r.seatId,
     base: r.generic == null ? null : r2(r.generic), baseW: r2(r.genericWeight), leanBase: r2(r.leanBaseline), houseOthers: r2(r.houseOthers),
-    moneyPts: r2(r.ffStructuralPts), record: r2(r.record ?? 0), effectW: r2(r.effectW),
+    moneyPts: r2(r.ffStructuralPts), record: r2(r.record ?? 0), effectW: r2(r.effectW), ...(r.crossStart != null ? { crossStart: r2(r.crossStart) } : {}),
     pastHref: r.seatId ? pastElectionHref(OFFICE_OF[r.office], r.seatId, r.year) : undefined,
   };
 }

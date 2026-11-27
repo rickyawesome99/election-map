@@ -17,6 +17,7 @@ import type { StateLegRace } from "@/lib/stateLegCandidateIndex";
 import { StateLegCurrentRow } from "@/components/candidates/StateLegRaceRow";
 import { CandidateRaceRow, RaceMetric, type Contestant } from "@/components/candidates/CandidateRaceRow";
 import type { CandidateResult2026, CandidateWarRow } from "@/lib/candidatePagePayload";
+import type { LegWarSlim } from "@/components/tpl/types";
 import { statesData } from "@/data/statesData";
 import { candidateSlugAlias, getCandidatePagePayload } from "@/lib/candidatePages";
 
@@ -148,6 +149,8 @@ export default async function CandidatePage({
   // Precomputed per race, aligned with leg.races (lib/candidatePageBuild.ts).
   const legRace = (race: StateLegRace) => page.legRaces[leg!.races.indexOf(race)];
   const legMoney = (race: StateLegRace) => legRace(race)?.money ?? null;
+  // State legislative races are scored by lib/stateLegWar.ts; WAR is one statistic whatever the office.
+  const legWarRows: LegWarSlim[] = (leg?.races ?? []).map((r) => legRace(r)?.war).filter((w): w is LegWarSlim => !!w).sort((a, b) => a.year - b.year);
   // A past Senate or Governor row opens that election's own page; everything else opens the seat page.
   const historyHref = (entry: CandidateHistoryEntry) => page.historyHrefs[candidate.history.indexOf(entry)] ?? entry.racePath;
 
@@ -190,9 +193,11 @@ export default async function CandidatePage({
 
   // Wins Above Replacement, the same numbers as the WAR tab's candidate record (/war).
   const war: CandidateWarRow[] = page.war;
-  const career = careerWar(war);
+  // Every scored race of the career on one footing: federal, statewide and state legislative.
+  const allWar = [...war, ...legWarRows].sort((a, b) => a.year - b.year);
+  const career = careerWar(allWar);
   const isPresidential = war.some((r) => r.office === "P");
-  const lastWar = war[war.length - 1];
+  const lastWar = allWar[allWar.length - 1];
 
   const stat = "tabular-nums leading-none";
   const statStyle = { fontFamily: "var(--font-serif)", fontSize: "clamp(1.6rem, 3.4vw, 2.1rem)", fontWeight: 700 } as const;
@@ -276,7 +281,7 @@ export default async function CandidatePage({
                   <div className={statLabel} style={{ color: "var(--app-text-muted)" }}>Career WAR</div>
                   <div className={`${stat} mt-1.5`} style={{ ...statStyle, color: warColor(career) }}>{fmtWar(career)}</div>
                   <div className="mt-1.5 text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-                    {isPresidential ? <>avg of {war.length} state results</> : <>{war.length} scored race{war.length === 1 ? "" : "s"}</>}
+                    {isPresidential ? <>avg of {war.filter((r) => r.office === "P").length} state results{allWar.some((r) => r.office !== "P") ? " plus other races" : ""}</> : <>{allWar.length} scored race{allWar.length === 1 ? "" : "s"}</>}
                   </div>
                 </div>
                 <div className="vh-in" style={{ animationDelay: "260ms" }} title="The candidate's own effect as of their latest race: past residuals faded 0.8 per year">
@@ -292,11 +297,11 @@ export default async function CandidatePage({
 
       <main className={`${PAGE_CONTAINER} flex flex-col gap-10 pb-14 pt-2`}>
 
-          {war.length > 0 && (
+          {allWar.length > 0 && (
             <Reveal>
-              <LedgerSectionHead label="WAR by cycle" meta={isPresidential ? "average across the states, per election" : `${war.length} scored race${war.length === 1 ? "" : "s"}`}
-                right={<Link prefetch={false} href={`/war?c=${candidate.slug}`} className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>WAR breakdown &rsaquo;</Link>} />
-              <WarByCycle rows={war} />
+              <LedgerSectionHead label="WAR by cycle" meta={isPresidential ? "average across the states, per election" : `${allWar.length} scored race${allWar.length === 1 ? "" : "s"}`}
+                right={war.length > 0 ? <Link prefetch={false} href={`/war?c=${candidate.slug}`} className="text-xs hover:underline" style={{ color: "var(--app-text-muted)" }}>WAR breakdown &rsaquo;</Link> : undefined} />
+              <WarByCycle rows={allWar} />
               <p className="mt-2 max-w-3xl text-[11px] leading-relaxed" style={{ color: "var(--app-text-very-muted)" }}>
                 Wins Above Replacement: how many points better or worse the candidate ran than a replacement-level nominee of their party would have against the same opponent.
               </p>
@@ -456,18 +461,38 @@ export default async function CandidatePage({
       : row;
   }
 
-  // A past state legislative general, in the same layout minus the model figures (no WAR is
-  // scored for these races) and the fundraising line.
+  // A state legislative general, in the same layout minus the fundraising line. A scored race (one
+  // seat, one Democrat against one Republican) carries its legislative WAR figures and opens the
+  // same step-by-step calculation the federal rows do.
+  function legWarMetrics(w: LegWarSlim) {
+    return (
+      <dl className="mt-3.5 flex flex-wrap gap-x-7 gap-y-2.5">
+        <RaceMetric label="Expected" title="Generic vs generic: how the seat voted on the rest of its ballot that year, plus the chamber's other races and incumbency"><span style={{ color: leanColor(w.expected) }}>{fmtLean(w.expected)}</span></RaceMetric>
+        <RaceMetric label="vs opponent" title="What a replacement-level, non-incumbent nominee would be expected to get against this specific opponent"><span style={{ color: leanColor(w.vsOpp) }}>{fmtLean(w.vsOpp)}</span></RaceMetric>
+        <RaceMetric label="Residual" title="Actual minus Expected, naming the party the result favored over the generic expectation, before it is divided between the two candidates"><span style={{ color: leanColor(w.actual - w.expected) }}>{fmtLean(w.actual - w.expected)}</span></RaceMetric>
+        <RaceMetric label="WAR" title="Legislative Wins Above Replacement: actual margin minus vs-opponent, signed toward this candidate"><WarFigure v={w.war} /></RaceMetric>
+        {w.opp && <RaceMetric label="Opp WAR" title={`${w.opp.candidate}'s own WAR in this race`}><WarFigure v={w.opp.war} /></RaceMetric>}
+      </dl>
+    );
+  }
+  function withLegWar(race: StateLegRace, w: LegWarSlim | undefined, key: string, row: React.ReactElement) {
+    return w
+      ? <ExpandableRace key={`x-${key}`} label={`${race.year} ${race.stateName} ${race.chamberLabel} ${race.districtShort}`} panel={<WarRaceBreakdown row={w} ownPage opp={w.opp} />}>{row}</ExpandableRace>
+      : row;
+  }
   function renderLeg(race: StateLegRace, i: number, result: CandidateResult2026 | null = null) {
+    const w = legRace(race)?.war;
     if (result) {
-      return (
-        <CandidateRaceRow key={`leg-now-${i}`} year={race.year} won={result.won} href={race.href} marginCaption={countCaption(result)}
+      return withLegWar(race, w, `leg-now-${i}`,
+        <CandidateRaceRow key={`leg-now-${i}`} expandable={!!w} year={race.year} won={result.won} href={race.href} marginCaption={countCaption(result)}
           title={`${race.stateName} ${race.chamberLabel} · ${race.districtShort}${race.post ? ` (${race.post})` : ""}`}
           badges={<>
             {race.special && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>Special election</span>}
             {race.seats != null && race.seats > 1 && !race.special && <span className="text-[10px] shrink-0" style={{ color: "var(--app-text-very-muted)" }}>{race.seats} seats</span>}
           </>}
-          contestants={resultContestants(result)} demShare={result.demShare} margin={result.margin} />
+          contestants={resultContestants(result)} demShare={result.demShare} margin={result.margin}>
+          {w && legWarMetrics(w)}
+        </CandidateRaceRow>
       );
     }
     const pctOf = (v: number | null) => (race.totalVotes && v != null ? (v / race.totalVotes) * 100 : null);
@@ -480,8 +505,8 @@ export default async function CandidatePage({
       })),
     ];
     const two = (race.demVotes ?? 0) + (race.repVotes ?? 0);
-    return (
-      <CandidateRaceRow key={`leg-${i}`} year={race.year} won={race.winner} href={race.href}
+    return withLegWar(race, w, `leg-${i}`,
+      <CandidateRaceRow key={`leg-${i}`} expandable={!!w} year={race.year} won={race.winner} href={race.href}
         title={`${race.stateName} ${race.chamberLabel} · ${race.districtShort}${race.post ? ` (${race.post})` : ""}`}
         badges={<>
           {race.uncontested && <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>Unopposed</span>}
@@ -490,6 +515,7 @@ export default async function CandidatePage({
         </>}
         contestants={contestants.sort(byVotes)} demShare={two > 0 ? ((race.demVotes ?? 0) / two) * 100 : null} margin={race.noCount ? null : race.margin}>
         {race.noCount && <div className="mt-2 text-xs italic" style={{ color: "var(--app-text-muted)" }}>Declared elected without a vote: the state printed no count for this race.</div>}
+        {w && legWarMetrics(w)}
       </CandidateRaceRow>
     );
   }

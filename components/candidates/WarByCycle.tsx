@@ -1,12 +1,11 @@
 import { WAR_BAD, WAR_GOOD } from "@/components/tpl/format";
-import type { WarSlim } from "@/components/tpl/types";
 
-// A candidate's WAR, one bar per cycle: positive rises from the zero line, negative hangs below
+// A candidate's WAR, one bar per cycle and office (a state legislative race, office "L", is a bar like any other): positive rises from the zero line, negative hangs below
 // it, on one scale. A presidential run is scored state by state (50+ rows in one year), so its
 // bar is the average per state, the same basis careerWar uses. Shared by the candidate page and
 // the WAR tab's candidate record; no hooks, so it renders on the server too. The bars grow from
 // the zero line one after another (held until on screen inside a [data-vh] block).
-export function WarByCycle({ rows, barPx = 120 }: { rows: Pick<WarSlim, "year" | "office" | "state" | "war">[]; barPx?: number }) {
+export function WarByCycle({ rows, barPx = 120 }: { rows: { year: number; office: string; state: string; war: number }[]; barPx?: number }) {
   const states = [...new Set(rows.map((r) => r.state))];
   const cycles: { key: string; year: number; war: number; states: string[] }[] = [];
   for (const r of [...rows].sort((a, b) => a.year - b.year)) {
@@ -20,7 +19,10 @@ export function WarByCycle({ rows, barPx = 120 }: { rows: Pick<WarSlim, "year" |
   const LABEL_PX = 18;
   const pxPer = barPx / Math.max(maxPos + maxNeg, 0.1);
   const posH = maxPos * pxPer, negH = maxNeg * pxPer;
-  const stCol = (c: { states: string[] }) => c.states.length > 1 ? ` · ${c.states.length} st` : states.length > 1 ? ` · ${c.states[0]}` : "";
+  // A career across offices (a legislator who ran for Congress) names each bar's office.
+  const OFFICE_TAG: Record<string, string> = { L: "Leg.", H: "House", S: "Sen.", G: "Gov.", P: "Pres." };
+  const mixed = new Set(cycles.map((c) => c.key.split("|")[1])).size > 1;
+  const stCol = (c: { key: string; states: string[] }) => (mixed ? ` · ${OFFICE_TAG[c.key.split("|")[1]] ?? ""}` : "") + (c.states.length > 1 ? ` · ${c.states.length} st` : states.length > 1 ? ` · ${c.states[0]}` : "");
   return (
     <div className="flex px-1 pt-2" style={{ borderBottom: "1px solid var(--app-border)" }} role="img" aria-label={`WAR by cycle. ${cycles.map((r) => `${r.year}: ${r.war.toFixed(1)}`).join(", ")}`}>
       {cycles.map((r, i) => {

@@ -32,6 +32,8 @@ import { raceMoneyTerm } from "../lib/stateLegMoneyModel";
 import { indexByNormalizedKey, lookupByDistrictCode, normalizeDistrictKey } from "../lib/stateLegDistrictKey";
 
 const EMIT = process.argv.includes("--emit");
+// --house-strips / --no-house-strips: the U.S. House candidate-terms variant on or off (default: LEG_HOUSE_STRIPS).
+const HOUSE_STRIPS = process.argv.includes("--house-strips") ? true : process.argv.includes("--no-house-strips") ? false : undefined;
 type Pred = { key?: string; year: number; st: string; chamber: Chamber; actual: number; tpl: number; pres: number | null; frozen?: number | null; inc: number; money: number };
 const preds: Pred[] = [];
 
@@ -57,7 +59,7 @@ for (const abbr of Object.keys(stateLegDistricts).sort()) {
       const presBefore = (Y: number) => rows.filter((r) => r.office === "PRES" && r.year < Y).sort((a, b) => b.year - a.year)[0];
       const leanBefore = (Y: number) => {
         const earlier = rows.filter((r) => r.year < Y);
-        return earlier.some((r) => r.office === "PRES") ? legDistrictModel(abbr, chamber, earlier).tpl : null;
+        return earlier.some((r) => r.office === "PRES") ? legDistrictModel(abbr, chamber, earlier, { houseStrips: HOUSE_STRIPS }).tpl : null;
       };
       // 2016–2025 targets from the precinct rows
       for (const r of rows) {

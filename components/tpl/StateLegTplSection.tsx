@@ -103,7 +103,7 @@ export default function StateLegTplSection({ abbr, chamber, districtKey, label }
         {!(racesHidden && sel.year === "all" && sel.type === "all") && <>
           <RaceTable races={rows} state={data.state} variant="state" showYear={sel.year === "all"} onRow={setRace} onFormula={setFormula} nomineeHeads={["Carried district", "Trailed"]} />
           <TableCaption>
-            Click a row for the step-by-step calculation. Every margin is this district&apos;s own, on today&apos;s lines, summed from precinct returns. The nominees, incumbent and money of a Senate or governor row are the statewide race&apos;s. A U.S. House row has no candidate terms; a {chamberWord} row takes out the incumbency and money of the seats its votes came from. Where only part of the district had a Democrat against a Republican (&ldquo;% contested&rdquo;), the rest is filled in from that part&apos;s own presidential result.
+            Click a row for the step-by-step calculation. Every margin is this district&apos;s own, on today&apos;s lines, summed from precinct returns. The nominees, incumbent and money of a Senate or governor row are the statewide race&apos;s. A U.S. House row takes out the incumbency and money of the congressional districts its votes came from, and a {chamberWord} row those of its seats, each weighted by its share of the votes. Where only part of the district had a Democrat against a Republican (&ldquo;% contested&rdquo;), the rest is filled in from that part&apos;s own presidential result.
           </TableCaption>
         </>}
       </section>

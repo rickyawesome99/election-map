@@ -73,7 +73,7 @@ export function ordinal(n: number): string {
  * Career WAR: races summed, except a presidential run, which is scored state by state (50+ rows
  * per election) — those rows count as their average per state per election, not their sum.
  */
-export function careerWar(rows: Pick<WarSlim, "office" | "war">[]): number {
+export function careerWar(rows: { office: string; war: number }[]): number {
   const pres = rows.filter((r) => r.office === "P");
   const other = rows.reduce((t, r) => (r.office === "P" ? t : t + r.war), 0);
   return other + (pres.length ? pres.reduce((t, r) => t + r.war, 0) / pres.length : 0);

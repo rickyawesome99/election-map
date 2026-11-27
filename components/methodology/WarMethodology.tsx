@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { FORECAST_CONSTANTS as F } from "@/data/tplModelData";
 import { computeWarTable, getWarMoneyModel, raceTypeWeightsFor, warCandidateKey, FF_K, FF_MAX, WAR_HOUSE_OTHERS_K, WAR_INCUMBENT_RECORD, WAR_LAMBDA, WAR_RECORD_LAMBDA, WAR_STATEWIDE_LAST_YEAR, WAR_SURPRISE_GAMMA, WAR_TAIL, WAR_TAIL_INCUMBENT, WAR_RECENCY_DECAY, WAR_RECENCY_DECAY_STATEWIDE, type WarRow } from "@/lib/tplCompute";
+import { STATE_LEG_WAR_SUMMARY as LW } from "@/data/stateLegWarSummary";
 import { Block, Code, Constants, D, DataTable, Defs, FilesAndCommands, Formula, Ledger, M, P, R, Section, signed } from "./kit";
 
 const link = (href: string, text: ReactNode) => <Link href={href} className="underline underline-offset-2">{text}</Link>;
@@ -143,7 +144,7 @@ export default function WarMethodology() {
           { term: "Record", def: <>The candidate&rsquo;s strength in their <em>other</em> races, weighted by recency and shrunk toward zero (&ldquo;an unseen candidate is replacement level&rdquo;). It never contains the race being scored, so a race is not scored with a number taken from that race.</> },
           { term: "Who gets a surprise", def: <>The part of a result the two records did not predict is divided by record weight. A candidate with several races on file takes most of it; two newcomers split it evenly; an elected incumbent counts as having {WAR_INCUMBENT_RECORD} more races than the file shows, because their record exists whether or not it falls inside the window. The reason is measured: where a candidate with two or more earlier races fell short of their own record against a first-time opponent who later ran again, the shortfall predicted nothing about the opponent&rsquo;s next race (slope 0.01, 94 cases), while the established candidate&rsquo;s own deviation carried into their next race at 0.56 (390 cases). When someone with a record has an off year, it is their strength that moved.</> },
           { term: "What this replaced (2026-11-24)", def: <>A ridge fit gave each candidate one pooled effect and then credited both sides with the race&rsquo;s whole leftover. A first-time candidate&rsquo;s effect was estimated from the very race it was used to score, so the two rows fed each other, and a long-serving candidate&rsquo;s off year could only be explained as a strong opponent. Phil Scott ran 31 ahead of Expected in 2026 against 71 to 76 in 2020 to 2024, kept an effect of +54 and a WAR of +51, and Amanda Janoo was booked at +23; in the years he beat his own average his opponents were booked at −17 to −21. The ridge is still what the forecast&rsquo;s candidate term uses.</> },
-          { term: "Pooling", def: <>Records are keyed <Code>state | party | normalized name</Code> and pooled across offices: Hogan&rsquo;s Governor and Senate races inform one record.</> },
+          { term: "Pooling", def: <>Records are keyed <Code>state | party | normalized name</Code> and pooled across offices: Hogan&rsquo;s Governor and Senate races inform one record. A candidate&rsquo;s state legislative races enter at a discount, as the record&rsquo;s starting point: see {link("#legislature", "One WAR, two tables")}.</> },
           { term: "Recency", def: "A candidate's other races fade with distance from the race being scored, so the same candidate has a different record on different rows. Measured persistence of repeat candidates' residuals: slope ≈ 0.45 at 1–4 year gaps, 0.26 at 5–6, ≈ 0 at 7–9." },
           { term: "Effective races", def: "Σ of the recency weights over the other races, plus one for the race itself, shown beside each record on the Candidates page." },
           { term: "The replacement is a non-incumbent", def: <>Expected carries the office&rsquo;s incumbency term, so a strength measures an incumbent against a generic <em>incumbent</em>. WAR asks a different question: how much better than freely available talent, and freely available talent never holds the seat. So an incumbent&rsquo;s row adds back <strong>Incumb.</strong> = Expected minus the same expectation with no incumbent in the race: the office&rsquo;s incumbency term plus the incumbent share of the structural money term, re-priced on the open-seat margin. Challengers and open seats add nothing; appointed incumbents carry no incumbency term, so only the money share.</> },
@@ -204,6 +205,85 @@ export default function WarMethodology() {
         ]} />
       </Section>
 
+      <Section id="legislature" kicker="State House and Senate · since 2026-11-27" title="Legislative WAR"
+        lede={<>The same three numbers for state legislative candidates, graded against their seat&rsquo;s own vote. {LW.rows.toLocaleString()} candidate rows in {LW.races.toLocaleString()} races, 2016 to 2026, {LW.people.toLocaleString()} people. WAR is one statistic whatever the office: a candidate page adds these races into the same Career WAR and WAR by cycle, and the two tables&rsquo; records are joined at a discount (below). The rows themselves are shown on candidate pages only.</>}>
+        <Formula lines={[
+          "baseline  = w × the seat's own vote that year without this race + (1 − w) × modelled baseline",
+          "w         = min(1, Σ office weight of the offices the seat has a figure for ÷ the U.S. House's weight)",
+          "modelled  = presidential margin on the race's lines (nearest presidential year) − E(that year) + E(race year)",
+          `others    = μ(year) + n ÷ (n + ${LW.constants.OTHERS_K}) × (mean gap of the chamber's n other scored races − μ(year))`,
+          `Expected  = baseline + others + ${LW.constants.INCUMBENCY_PTS} × incumbent sign`,
+          "Vs. Opp   = Expected − opponent's strength − own incumbency          WAR = Actual − Vs. Opp, toward the candidate",
+        ]} note="The seat's own vote is President, the regular Senate race, governor (each with the state race's incumbency and money strips), the U.S. House and the other legislative chamber, summed from precincts on the lines the race was run on. The House and other-chamber figures are filled where uncontested with the presidential margin plus that office's contested gap in the state. Strengths are divided by record exactly as above." />
+        <Defs items={[
+          { term: "Who is scored", def: <>A general election for one seat with exactly one Democrat and one Republican, each with at least {LW.constants.MIN_SIDE_SHARE * 100}% of the two-party vote. Multi-member districts and posted seats (New Hampshire, Vermont, West Virginia before 2022, Washington and Idaho posts, Arizona, New Jersey, Maryland) are not scored in this pass; same-party finals and races with no printed count cannot be.</> },
+          { term: "Lines as run", def: <>Legislative TPL sits on today&rsquo;s lines. A candidate ran in the seat as drawn that year, so the baseline is summed by each year&rsquo;s own seat label in the precinct file (<Code>scripts/buildStateLegBallot.ts</Code>), the legislative twin of the House district ballot.</> },
+          { term: "Checks", def: <>The seat&rsquo;s own race summed from precincts must be within {LW.constants.CHECK_SEAT_PTS} points of the certified result, and the presidential vote on those precincts within {LW.constants.CHECK_PRES_PTS} of the site&rsquo;s presidential figure for the seat on that map. A seat that fails keeps the modelled baseline alone. An office under {LW.constants.OFFICE_MIN_SHARE * 100}% of the largest statewide office&rsquo;s precinct total is left out.</> },
+          { term: "The chamber's other races", def: "A seat's ballot holds one race for its chamber, so the chamber's own vote enters through the state's other seats: how far each ran from its own baseline that year. With dozens of seats this is far better measured than the House table's version, and it takes a chamber-wide swing out of every candidate's score." },
+          { term: "Incumbency", def: <>One constant for all 99 chambers, the legislative forecast&rsquo;s ({LW.constants.INCUMBENCY_PTS}). An incumbent&rsquo;s WAR adds it back, as above.</> },
+          { term: "Money", def: "Not in Expected. The legislative money model is defined on the gap beyond what the seat's incumbent and lean predict, so the structural part already sits in incumbency and the baseline; money raised beyond one's situation counts toward the candidate, as in the federal table." },
+          { term: "One person, one record", def: <>Candidate pages group races by name within a state, so two people with one name can share a page. A record is narrower: a page&rsquo;s races are split into people where two different seats were on one year&rsquo;s ballot (always two people), or where a Democratic and a Republican record sit more than {LW.constants.SAME_NAME_MAX_HOPS} overlap steps apart on the seat-link map. Distance alone does not split: members follow a redraw into renumbered seats and run for the other chamber. {LW.sharedNamePages} pages hold more than one person; <Code>stateLegWarTest.ts --names</Code> lists them.</> },
+        ]} />
+        <Block label="Races by baseline" meta={`live as of ${LW.built}`}>
+          <DataTable align="lrrrrrr" maxWidth="max-w-3xl" head={["Year", "Races", "Seat's own vote", "Part modelled", "Modelled", "Residual sd", "Median |WAR|"]}
+            rows={LW.byYear.map((y) => [y.year, y.races.toLocaleString(), y.ownYear.toLocaleString(), y.blend, y.modelled.toLocaleString(), y.residualSd.toFixed(1), y.medianAbsWar.toFixed(1)])} />
+          <P>Why a race is on the modelled baseline: {LW.whyModelled.map((x) => `${x.n.toLocaleString()} ${x.note}`).join("; ")}. Odd-year races are part modelled because little else is on the ballot. 2026 moves to the seat&rsquo;s own vote state by state as precinct files arrive (<Code>npm run state-leg-ballot</Code>).</P>
+        </Block>
+        <Block label="Checks" meta="scripts/stateLegWarTest.ts">
+          <DataTable align="lrr" maxWidth="max-w-3xl" head={["Reading", "n", "Value"]} rows={[
+            ["A candidate's race residual against their next race", LW.repeat.n.toLocaleString(), `r ${LW.repeat.r.toFixed(2)}`],
+            ["Same seat, consecutive elections, the same two candidates", LW.sameSeat.rematch.n.toLocaleString(), `r ${LW.sameSeat.rematch.r.toFixed(2)}`],
+            ["Same seat, consecutive elections, neither candidate the same", LW.sameSeat.neither.n.toLocaleString(), `r ${LW.sameSeat.neither.r.toFixed(2)}`],
+            ["An established candidate's shortfall against a first-time opponent: carried to the established candidate's next race", LW.attribution.established.n.toLocaleString(), `slope ${LW.attribution.established.slope.toFixed(2)}`],
+            ["The same shortfall: carried to the newcomer's next race", LW.attribution.newcomer.n.toLocaleString(), `slope ${LW.attribution.newcomer.slope.toFixed(2)}`],
+          ]} />
+          <P>The third row is the part of a score that is the seat and not a person: what the baseline misses about a district repeats whoever runs. The last two rows are the premise of dividing a race by record, measured on legislative races: when an established candidate falls short of their own record, it is mostly their standing that moved.</P>
+        </Block>
+        <Block label="One WAR, two tables" meta="user decision 2026-11-27">
+          <Formula lines={[
+            "start(c, t)  = Σ w × κ × strength(c, race in the OTHER table) ÷ (Σ w + λ)",
+            "record(c, t) = (Σ w × strength in c's other races of THIS table + λ × start) ÷ (Σ w + λ)",
+            `κ            = ${LW.joined.k.S} where the federal race is for Senate or governor · ${LW.joined.k.H} for the U.S. House`,
+          ]} note="A candidate with races in both tables no longer starts each record at zero: it starts at their record in the other table, discounted by κ. It runs both ways and each table reads the other as it stands on its own, so the two solves do not chase each other. The weight a candidate carries when a surprise is divided still counts races of the same table only. κ is the slope the crossover test below measured." />
+          <DataTable align="lrrrrr" maxWidth="max-w-3xl" head={["Table", "Rows", "Moved", "Median move", "Largest", "Over a point"]} rows={[
+            ["Federal and statewide", LW.joined.federal.rows.toLocaleString(), LW.joined.federal.moved, LW.joined.federal.median.toFixed(2), LW.joined.federal.max.toFixed(1), LW.joined.federal.overOne],
+            ["State legislative", LW.joined.legislative.rows.toLocaleString(), LW.joined.legislative.moved, LW.joined.legislative.median.toFixed(2), LW.joined.legislative.max.toFixed(1), LW.joined.legislative.overOne],
+          ]} />
+          <P>The people are matched as the candidate pages join the two records: by name within the state, same party. That join cannot tell a father from a son of one name; known cases are listed by hand in <Code>CROSS_DIFFERENT_PEOPLE</Code> (lib/stateLegWar.ts). The legislative strengths reach the federal table through a small generated file (<Code>npm run war-cross</Code>), so <Code>lib/tplCompute.ts</Code> does not import the legislative model.</P>
+        </Block>
+        <Block label="Crossover test" meta={`${LW.crossover[0].n} people with both a legislative and a federal or statewide row · both tables on their own`}>
+          <DataTable align="lrrr" maxWidth="max-w-3xl" head={["Group", "n", "r", "Slope, federal on legislative"]}
+            rows={LW.crossover.map((c) => [c.label, c.n, c.r.toFixed(2), c.slope.toFixed(2)])} />
+          <P>Each side is the candidate&rsquo;s mean race residual, toward them. A legislative record says almost nothing about a later U.S. House race and something about a Senate or governor race, on few people. Those two slopes are the discounts above.</P>
+        </Block>
+        <Block label="Worked example" meta="live">
+          <Ledger lines={[
+            { label: `${LW.example.race}'s ${LW.example.year} vote without this race`, note: LW.example.generic == null ? "modelled baseline" : `the rest of the ballot: ${LW.example.offices.join(", ")} (O = the other chamber)`, value: <M v={LW.example.generic ?? LW.example.modelled ?? 0} /> },
+            { op: "+", label: "The chamber's other races", value: <M v={LW.example.others} /> },
+            { op: "+", label: "Incumbency", value: <M v={LW.constants.INCUMBENCY_PTS * LW.example.incSign} /> },
+            { op: "=", label: "Expected Result", note: "generic vs generic", value: <M v={LW.example.expected} />, total: true },
+            { op: "=", label: "Vs. Opponent", note: `${LW.example.opponent ?? "the opponent"} ${signed(LW.example.opponentEffect)} toward their own side; own incumbency ${signed(LW.example.replacementPts)} removed`, value: <M v={LW.example.vsOpp} />, total: true },
+            { label: "Actual", value: <M v={LW.example.actual} /> },
+            { op: "=", label: `${LW.example.candidate}, WAR`, note: `record ${signed(LW.example.record)} from ${LW.example.effectN - 1} other races`, value: <War v={LW.example.war} />, total: true },
+          ]} />
+        </Block>
+        <Block label="Highest and lowest" meta="each person once">
+          <DataTable align="llrrrr" maxWidth="max-w-4xl" head={["Candidate", "Race", "Actual", "Expected", "Vs. Opp", "WAR"]}
+            rows={[...LW.top, ...LW.bottom].map((r) => [<span key="n" className="font-semibold" style={{ color: r.party === "R" ? "var(--party-rep)" : "var(--party-dem)" }}>{r.candidate}</span>, `${r.year} ${r.race}`, <M key="a" v={r.actual} />, <M key="e" v={r.expected} />, <M key="o" v={r.vsOpp} />, <War key="w" v={r.war} />])} />
+        </Block>
+        <Constants rows={[
+          { name: "LEG_WAR.INCUMBENCY_PTS", value: LW.constants.INCUMBENCY_PTS, basis: "calibrated", meaning: "Incumbency in Expected, every chamber.", source: "STATE_LEG_FORECAST_CONSTANTS.INCUMBENCY_PTS (scripts/stateLegBacktest.ts)." },
+          { name: "LEG_WAR.OTHERS_K", value: LW.constants.OTHERS_K, basis: "decision", meaning: "Shrinkage of the chamber's other-races term toward the year's mean, in races.", source: "WAR_HOUSE_OTHERS_K; with dozens of seats per chamber it barely binds." },
+          { name: "LEG_WAR.CHECK_SEAT_PTS · CHECK_PRES_PTS", value: `${LW.constants.CHECK_SEAT_PTS} · ${LW.constants.CHECK_PRES_PTS}`, basis: "decision", meaning: "How far a seat's precinct sums may sit from the certified race and from the site's presidential figure before its own vote is not used.", source: "The House table's check widths." },
+          { name: "LEG_WAR.OFFICE_MIN_SHARE · MIN_SIDE_SHARE", value: `${LW.constants.OFFICE_MIN_SHARE} · ${LW.constants.MIN_SIDE_SHARE}`, basis: "decision", meaning: "An office counts in the baseline with this share of the largest statewide office's precinct total; a race is scored when each side has this share of the two-party vote." },
+          { name: "LEG_WAR.RECORD_LAMBDA · SURPRISE_GAMMA · INCUMBENT_RECORD · RECENCY_DECAY", value: `${LW.constants.RECORD_LAMBDA} · ${LW.constants.SURPRISE_GAMMA} · ${LW.constants.INCUMBENT_RECORD} · ${LW.constants.RECENCY_DECAY}`, basis: "designed", meaning: "The record rule's constants.", source: "The federal table's values, not refitted on legislative races." },
+          { name: "LEG_WAR.SAME_NAME_MAX_HOPS", value: LW.constants.SAME_NAME_MAX_HOPS, basis: "decision", meaning: "Overlap steps beyond which a Democratic and a Republican record under one name are two people." },
+        ]} />
+        <Defs items={[
+          { term: "Limits", def: `${LW.oneRacePeople.toLocaleString()} of ${LW.people.toLocaleString()} people have one scored race, where the result is split with nothing to tell the two apart. Incumbency is one constant for every chamber, so whatever it misses for long-serving members lands in WAR. The record constants are the federal ones. Older precinct files place some votes approximately (2016 residuals are the widest). A same-name pair in one seat's neighbourhood, never on one ballot together and of one party, still reads as one person. Identical spellings across the federal and legislative files are joined by name alone.` },
+        ]} />
+      </Section>
+
       <Section id="limits" kicker="Open items" title="Known limitations">
         <Defs items={[
           { term: "House rows still on the modelled baseline", def: "Through 2024 about one race in seven: districts whose precincts fail a check, or with no presidential result on their lines to check against (the 2022-only maps of NC, AL, GA, LA and NY). There the district anchor contains the candidate's own margins, and one national E(year) still applies before the other-House-races term." },
@@ -227,9 +307,14 @@ export default function WarMethodology() {
           { path: "lib/tplCompute.ts", role: "stateOwnYearGeneric and districtOwnYearGeneric (the state's or district's own vote, a race left out), buildWarPending (both baselines, trend, shift), computeWarTable, fitWarMoneyModel, solveCandidateEffects, attributeWar; computeCandidateEffects for the forecast." },
           { path: "scripts/buildDistrictBallot.ts · lib/districtBallot.ts", role: "Every office a congressional district voted on, by year, summed from precinct results (npm run district-ballot; part of prebuild and predev)." },
           { path: "components/TplModelPage.tsx", role: "The WAR sub-tab." },
+          { path: "lib/stateLegWar.ts", role: "Legislative WAR: the seat baseline, the chamber's other races, people under one name, computeLegWarTable, legWarForRace (candidate pages, via lib/candidatePageBuild.ts)." },
+          { path: "scripts/buildStateLegBallot.ts · lib/stateLegBallot.ts", role: "Every office a legislative seat voted on, by year, on the lines as run (npm run state-leg-ballot; part of prebuild and predev)." },
+          { path: "scripts/buildWarCross.ts · lib/warCross.ts", role: "The legislative record of every candidate who also has a federal row (npm run war-cross; part of prebuild and predev, after state-leg-ballot). Read by attributeWarByRecord." },
+          { path: "data/stateLegWarSummary.ts", role: "Generated figures of the Legislative WAR section (stateLegWarTest.ts --emit)." },
         ]} commands={[
           { cmd: "npx tsx scripts/forwardBacktest.ts --env struct --quality · --decay-sweep", does: "The leakage-free test of whether candidate effects predict forward, and of the decay." },
           { cmd: "npx tsx --conditions=react-server scripts/warBaselineTest.ts [--list]", does: "(warAttributionTest.ts: how a race is divided between its two candidates, the held-out fit of λ, γ and ι against the ridge, and the table on both.) WAR on the modelled and own-year baselines side by side, statewide then House: thin ballots, level by office and year, repeat, ticket-mates, the same-seat check, spread, largest moves. WAR_BASELINE=lean WAR_LAST_YEAR=2025 reproduces the table as it was before 2026-11-23." },
+          { cmd: "npx tsx --conditions=react-server scripts/stateLegWarTest.ts [--names] [--list] --emit", does: "Legislative WAR: coverage by year, the repeat and same-seat checks, the record-rule check, pages holding more than one person, the crossover test; what joining the records moved; --emit regenerates the section's figures. After a model change: npm run war-cross, then --emit, then npm run candidate-pages." },
           { cmd: "npx playwright test -g war", does: "WAR tab filters and column count." },
         ]} />
       </Section>

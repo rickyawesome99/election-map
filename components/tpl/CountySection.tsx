@@ -15,7 +15,8 @@ import { AllRacesButton, ArrowOut } from "./ui";
 // The TPL calculation on a county page (Historical → a county), in the same three parts as a
 // State TPL page (TplStatePage.tsx): the year × office matrix, the races behind the selected
 // cell, the result ledger, and TPL over time. A county has no State Legislature row; its House row is the
-// county's district races added together, so it has no candidates, incumbent or money gap.
+// county's district races added together; since 2026-11-27 each contested district's incumbency and money are taken
+// out, weighted by its share of the county's House vote.
 
 const COUNTY_ROWS = MATRIX_ROWS.filter((r) => r.key !== "L");
 const TYPE_ORDER: Record<string, number> = { P: 0, G: 1, S: 2, H: 3 };
@@ -63,7 +64,7 @@ export function CountySection({ data }: { data: CountyPageData }) {
         {!(racesHidden && sel.year === "all" && sel.type === "all") && <>
           <RaceTable races={rows} state={data.state} variant="state" showYear={sel.year === "all"} onRow={setRace} onFormula={setFormula} nomineeHeads={["Carried county", "Trailed"]} />
           <TableCaption>
-            Click a row for the step-by-step calculation. Margins are the county&apos;s own; the nominees, incumbent and money are the statewide race&apos;s. A House row is every district race in the county added together.
+            Click a row for the step-by-step calculation. Margins are the county&apos;s own; the nominees, incumbent and money are the statewide race&apos;s. A House row is every district race in the county added together, with each contested district&apos;s incumbency and money taken out in proportion to its share of the county&apos;s House vote.
           </TableCaption>
         </>}
       </section>

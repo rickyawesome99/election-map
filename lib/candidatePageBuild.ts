@@ -12,6 +12,8 @@ import type { LegProjection, RaceMoney } from "@/components/candidates/StateLegR
 import type { CandidatePagePayload, CandidateResult2026 } from "@/lib/candidatePagePayload";
 import { raceResult2026 } from "@/lib/raceResults2026";
 import { districtResults2026 } from "@/lib/stateLegResults2026";
+import { legWarForRace } from "@/lib/stateLegWar";
+import type { LegWarSlim } from "@/components/tpl/types";
 import { candidateSlug } from "@/lib/candidateSlug";
 
 // The heavy side of the candidate pages: joins the federal and state legislative records and
@@ -127,6 +129,22 @@ function opponentWar(row: WarSlim): number | null {
   return warByRace.get(raceKey(row))?.find((r) => r.candidate !== row.candidate)?.war ?? null;
 }
 
+const r2 = (x: number) => Math.round(x * 100) / 100;
+/** The race's legislative WAR row, slimmed to what the page draws. */
+function legWar(leg: StateLegCandidatePage, race: StateLegRace): LegWarSlim | undefined {
+  const r = legWarForRace(leg, race);
+  if (!r) return undefined;
+  return {
+    candidate: r.candidate, party: r.party, office: "L", race: r.race, state: r.state, year: r.year,
+    actual: r2(r.actual), expected: r2(r.expected), vsOpp: r2(r.expectedVsOpponent), residual: r2(r.residual), incumb: r2(r.replacementPts), effect: r2(r.effect), effectN: r.effectN,
+    oppEffect: r2(r.opponentEffect), war: r2(r.war),
+    base: r.generic == null ? null : r2(r.generic), baseW: r2(r.genericWeight), leanBase: r.modelled == null ? undefined : r2(r.modelled), others: r2(r.others),
+    record: r2(r.record), effectW: r2(r.effectW), ...(r.crossStart != null ? { crossStart: r2(r.crossStart) } : {}),
+    place: `${race.stateName} ${race.districtShort}`, placeHref: race.href, chamberLabel: race.chamberLabel, basis: r.basis, basisNote: r.note || undefined, offices: r.offices,
+    opp: r.opponent ? { candidate: r.opponent.name, party: r.opponent.party, war: r2(r.opponent.war) } : null,
+  };
+}
+
 export function buildCandidatePayload(slug: string): CandidatePagePayload | null {
   const { federal, leg } = resolveCandidate(slug);
   if (!federal && !leg) return null;
@@ -134,7 +152,7 @@ export function buildCandidatePayload(slug: string): CandidatePagePayload | null
   return {
     federal,
     leg,
-    legRaces: (leg?.races ?? []).map((race) => { const n = legName(leg!, race); return { projection: legProjection(race, n), money: legMoney(race, n), result2026: legResult2026(leg!, race) }; }),
+    legRaces: (leg?.races ?? []).map((race) => { const n = legName(leg!, race); const war = legWar(leg!, race); return { projection: legProjection(race, n), money: legMoney(race, n), result2026: legResult2026(leg!, race), ...(war ? { war } : {}) }; }),
     historyHrefs: (federal?.history ?? []).map(historyHref),
     historyResults2026: (federal?.history ?? []).map((entry) => federalResult2026(entry, federal!.name, entry.raceId === federal!.currentRace?.id ? federal!.currentRace?.opponent?.slug : entry.oppSlug)),
     // WAR rows are found by name. With a federal record the record's state settles whose they are; a

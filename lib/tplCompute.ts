@@ -1,3 +1,4 @@
+import { legislativeRacesOf } from "./warCross";
 import "server-only";
 import {
   presPastResults,
@@ -39,6 +40,7 @@ import type { ChamberMarginYear } from "@/lib/stateLegChamberMargin";
 import { tplInputs2026, TPL_2026, type Tpl2026Race } from "@/lib/tpl2026Inputs";
 import { districtBallot, type DistrictBallotEntry } from "@/lib/districtBallot";
 import { laHouseNovemberPartyVote, type LaNovemberPartyVote } from "@/data/laHouseNovemberPartyVote";
+import { countyHousePieces, houseSeatInfo } from "@/lib/houseRaceInfo";
 
 // ── Louisiana November party vote ────────────────────────────────────────────
 // Through 2024 Louisiana's November House election was an all-party primary. The results file
@@ -1110,10 +1112,11 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 //   county granularity, so the incumbent, appointed flag and receipts are inherited from the
 //   parent state's race list — but raw margins and the presidential result used for
 //   imputation are the county's own, so County TPL updates whenever county data changes.
-// - House: county data is already a same-year aggregate across every district touching
-//   the county (see data/countyHouseData.ts), so there is no single incumbent or pair of
-//   candidates to attribute — no incumbency strip, no fundraising strip. A year is ineligible
-//   (imputed) only when one party drew no votes in the county (countyHouseEligibility).
+// - House: county data is a same-year aggregate across every district touching the county
+//   (see data/countyHouseData.ts). Since 2026-11-27 each contested district's piece takes out
+//   its own race's incumbency and money, weighted by the piece's share of the county's House
+//   vote (countyHouseTerms, COUNTY_HOUSE_STRIPS); before, a House row carried no terms. A year is
+//   ineligible (imputed) only when one party drew no votes in the county (countyHouseEligibility).
 // - The environment strip is the national E(year), as for a state; no county term is estimated.
 // - 2026 rows come from the overlay's county counts (county2026), on the counts as they stand.
 // - No row-level Huber: a county far from its STATE's lean is not an outlier, it is a county.
@@ -1226,6 +1229,39 @@ function generateCountyRaceList(fips: string, stateAbbr: string, stateName: stri
   });
 }
 
+/**
+ * County TPL's U.S. House candidate terms (adopted 2026-11-27, user decision after the test). A county's House row adds
+ * up every district touching it; each contested district's piece takes out that race's incumbency (incumbencyPtsFor
+ * "H") and money (ffStripPts), weighted by the piece's share of the county's House vote
+ * (data-entry/house_district_county_results*.csv). scripts/countyTplValidation.ts: mean leftover 3.547 → 3.446 by
+ * county, 3.984 → 3.906 vote-weighted (better in 2018–2024; 2026 vote-weighted 4.04 → 4.34). Off = the original rule.
+ */
+export const COUNTY_HOUSE_STRIPS = true;
+let countyHouseStripsOverride: boolean | null = null;
+/** For the harnesses (scripts/countyTplValidation.ts): force the variant on or off; null = COUNTY_HOUSE_STRIPS. */
+export function setCountyHouseStrips(on: boolean | null): void { countyHouseStripsOverride = on; }
+
+/** The House row's terms for one county-year, or null when the county has no district breakdown that year. */
+function countyHouseTerms(fips: string, stateAbbr: string, year: number): { incumbencyPts: number; FF_pts: number } | null {
+  const pieces = countyHousePieces(fips, year);
+  const total = pieces.reduce((a, p) => a + p.total, 0);
+  if (!pieces.length || total <= 0) return null;
+  let incumbencyPts = 0, FF_pts = 0;
+  for (const p of pieces) {
+    const info = houseSeatInfo(stateAbbr, year, p.district);
+    if (!info) continue;
+    // A district without a Democrat against a Republican above write-in scale carries no candidate terms.
+    const t = info.total || info.dVotes + info.rVotes;
+    const dp = t > 0 ? (info.dVotes / t) * 100 : 0, rp = t > 0 ? (info.rVotes / t) * 100 : 0;
+    const wi = (own: number, other: number) => own < 5 && (other >= 90 || own < 2);
+    if (dp <= 0 || rp <= 0 || wi(dp, rp) || wi(rp, dp)) continue;
+    const share = p.total / total;
+    incumbencyPts += share * incumbencyPtsFor("H", info.incumbent);
+    FF_pts += share * ffStripPts(raceFundraisingFor("H", stateAbbr, info.name, "House", year));
+  }
+  return { incumbencyPts, FF_pts };
+}
+
 export function calculateCountyModel(fips: string): StateModelCalculation | null {
   const county = countyPresidentialData[fips];
   if (!county) return null;
@@ -1268,6 +1304,17 @@ export function calculateCountyModel(fips: string): StateModelCalculation | null
       inAggregation,
     };
   });
+
+  if (countyHouseStripsOverride ?? COUNTY_HOUSE_STRIPS) {
+    for (const r of races) {
+      if (r.raceType !== "H" || r.imputed || r.NM == null) continue;
+      const t = countyHouseTerms(fips, stateAbbr, r.year);
+      if (!t) continue;
+      r.incumbencyPts = t.incumbencyPts;
+      r.FF_pts = t.FF_pts;
+      r.NM += t.incumbencyPts + t.FF_pts;
+    }
+  }
 
   // Two passes: the county's lean from its statewide rows alone anchors the House years' Huber
   // check (see the County TPL note above); a county with no statewide rows keeps them unchecked.
@@ -1846,6 +1893,9 @@ export interface WarRow {
   linesFrom?: number;
   /** Ran as the incumbent having won the seat before (not an appointee). */
   electedIncumbent?: boolean;
+  /** Where the record starts instead of zero: the candidate's state legislative record, discounted
+   *  (WAR_CROSS_K), signed toward them. Absent for a candidate with no scored legislative race. */
+  crossStart?: number;
   note: string;
   /** The seat id the past-election and seat pages key on (senate "oh2", governor "oh", house "oh-09",
    *  president: the state id "oh") — so the model pages can link a row to its results without
@@ -1920,7 +1970,11 @@ export const warCandidateKey = (state: string, party: string, name: string) => w
 export interface EffectRace { r: number; year: number; R?: string; D?: string; actual?: number; inc?: "R" | "D" | null; office?: string;
   /** Extra confidence multiplier on top of recency decay — < 1 for a House race relocated
    *  across a redistricting, whose residual is a noisy read on the candidate. */
-  w?: number; }
+  w?: number;
+  /** Where each side's record starts instead of zero, signed toward that candidate: their record in
+   *  the other table (legislative for a federal race, federal for a legislative one), discounted.
+   *  See "One WAR, two tables" below. */
+  priorR?: number; priorD?: number; }
 
 // ── Observable prior (Layer B) ────────────────────────────────────────────────
 // What a nominee's record says before their own residuals are read. Features that
@@ -2136,7 +2190,8 @@ export function allocateByRecord(races: EffectRace[], gamma: number, lambda: num
   for (const list of byCandidate.values()) for (const a of list) {
     for (const b of list) if (b !== a) { const w = (b.race.w ?? 1) * decay(b.race.office) ** Math.abs(b.race.year - a.race.year); a.others.push({ slot: b, w }); a.W += w; }
   }
-  const record = (s?: Slot) => (s ? s.others.reduce((sum, o) => sum + o.w * o.slot.q, 0) / (s.W + lambda) : 0);
+  const prior = (s: Slot) => (s.side === "R" ? s.race.priorR : s.race.priorD) ?? 0;
+  const record = (s?: Slot) => (s ? (s.others.reduce((sum, o) => sum + o.w * o.slot.q, 0) + lambda * prior(s)) / (s.W + lambda) : 0);
   // An elected incumbent has a record whether or not it falls inside the window (Baker in 2018 has
   // no earlier race on file, and it was not Gonzalez who made that race a 58-point surprise).
   const v = (s?: Slot) => (s ? (1 + s.W + (s.race.inc === s.side ? incumbentRecord : 0)) ** gamma : 0);
@@ -2153,14 +2208,40 @@ export function allocateByRecord(races: EffectRace[], gamma: number, lambda: num
   const out = new Map<EffectRace, { R?: RecordShare; D?: RecordShare }>();
   for (const [race, pair] of slots) {
     const shareR = v(pair.R) / (v(pair.R) + v(pair.D));
-    const of = (s: Slot | undefined, share: number): RecordShare | undefined => (s ? { record: record(s), weight: s.W, share, strength: s.q, n: s.others.length + 1, rating: (s.others.reduce((sum, o) => sum + o.w * o.slot.q, 0) + s.q) / (s.W + 1 + lambda) } : undefined);
+    const of = (s: Slot | undefined, share: number): RecordShare | undefined => (s ? { record: record(s), weight: s.W, share, strength: s.q, n: s.others.length + 1, rating: (s.others.reduce((sum, o) => sum + o.w * o.slot.q, 0) + s.q + lambda * prior(s)) / (s.W + 1 + lambda) } : undefined);
     out.set(race, { R: of(pair.R, shareR), D: of(pair.D, 1 - shareR) });
   }
   return out;
 }
 
+// ── One WAR, two tables (2026-11-27) ─────────────────────────────────────────
+// State legislative candidates are scored by lib/stateLegWar.ts on the same philosophy, and WAR is
+// one statistic whatever the office (user decision 2026-11-27): a candidate page adds every scored
+// race into one career figure. The RECORDS are joined at a discount. A candidate's record in a race
+// is shrunk toward a starting point; for a candidate with races in the other table that starting
+// point is no longer zero:
+//
+//   start(c, t)  = Σ w(t′) × κ × strength(c, t′) over c's races in the OTHER table ÷ (Σ w + λ)
+//   record(c, t) = (Σ w × strength in c's other races of THIS table + λ × start) ÷ (Σ w + λ)
+//
+// κ is how much of a strength shown in one kind of race shows up in the other, set from the
+// crossover test (scripts/stateLegWarTest.ts, 282 people with both kinds of race; each side the
+// candidate's mean race residual): a legislative record carries into a Senate or governor race at a
+// slope of 0.36 (n 47) and into a U.S. House race at 0.06 (n 235). The other table's strengths are
+// taken as that table stands on its own (solved with no start), so the two solves do not chase each
+// other. A candidate with no race in the other table is untouched. The weight a candidate carries
+// when a surprise is divided counts races of the same table only.
+export const WAR_CROSS_K: Record<string, number> = { H: 0.05, S: 0.35, G: 0.35, P: 0 };
+/** The discounted record a candidate brings from the other table into a race in `year`.
+ *  `k` = κ for the pair (the federal race's office decides it, whichever side is being scored). */
+export function crossRecordStart(year: number, others: { year: number; q: number; k: number; decay: number }[], lambda: number = WAR_RECORD_LAMBDA): number {
+  let num = 0, den = 0;
+  for (const o of others) { const w = o.decay ** Math.abs(o.year - year); num += w * o.k * o.q; den += w; }
+  return den > 0 ? num / (den + lambda) : 0;
+}
+
 /** Fill effect / vs-opponent / WAR on every row by record (see "Attribution by record"). */
-function attributeWarByRecord(rows: WarRow[]): void {
+function attributeWarByRecord(rows: WarRow[], cross = true): void {
   type Race = EffectRace & { rows: WarRow[] };
   const races = new Map<string, Race>();
   for (const row of rows) {
@@ -2170,6 +2251,13 @@ function attributeWarByRecord(rows: WarRow[]): void {
     if (row.party === "R") rc.R = warCandidateKey(row.state, row.party, row.candidate);
     else rc.D = warCandidateKey(row.state, row.party, row.candidate);
     if (row.electedIncumbent) rc.inc = row.party === "R" ? "R" : "D";
+    // The candidate's legislative record, discounted, is where their record starts.
+    const leg = cross ? legislativeRacesOf(warCandidateKey(row.state, row.party, row.candidate)) : undefined;
+    if (leg) {
+      const start = crossRecordStart(row.year, leg.map((x) => ({ ...x, k: WAR_CROSS_K[row.office] ?? 0, decay: WAR_RECENCY_DECAY })));
+      row.crossStart = start;
+      if (row.party === "R") rc.priorR = start; else rc.priorD = start;
+    }
   }
   const shares = allocateByRecord([...races.values()], WAR_SURPRISE_GAMMA, WAR_RECORD_LAMBDA, recencyDecayFor, WAR_INCUMBENT_RECORD);
   for (const rc of races.values()) {
@@ -2593,8 +2681,8 @@ export function getWarMoneyModel(): Record<string, WarMoneyModel> {
   return _warMoneyCache!;
 }
 
-export function computeWarTable(baseline: WarBaseline = warBaselineDefault, attribution: WarAttribution = warAttributionDefault): WarRow[] {
-  const cacheKey = `${baseline}|${attribution}`;
+export function computeWarTable(baseline: WarBaseline = warBaselineDefault, attribution: WarAttribution = warAttributionDefault, /** false: the table on its own, no legislative record entering any row (what the legislative table and the crossover test read). */ cross = true): WarRow[] {
+  const cacheKey = `${baseline}|${attribution}|${cross}`;
   const hit = _warCache.get(cacheKey);
   if (hit) return hit;
   const pending = buildWarPending();
@@ -2661,7 +2749,7 @@ export function computeWarTable(baseline: WarBaseline = warBaselineDefault, attr
     if (incumbentSlot === "R" && p.r.repCandidate) incumbents.add(warCandidateKey(p.state, p.r.repParty ?? "R", p.r.repCandidate));
   }
 
-  if (attribution === "record") attributeWarByRecord(out); else attributeWar(out, incumbents);
+  if (attribution === "record") attributeWarByRecord(out, cross); else attributeWar(out, incumbents);
   out.sort((a, b) => b.war - a.war);
   _warCache.set(cacheKey, out);
   return out;

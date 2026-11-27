@@ -125,8 +125,30 @@ export type WarSlim = {
   record?: number;
   /** Effective races behind the record: recency weights over the other races, plus one. */
   effectW?: number;
+  /** Where the record starts instead of zero: the candidate's record in the other table (state legislative
+   *  races for a federal row, federal and statewide races for a legislative one), discounted. */
+  crossStart?: number;
   seatId?: string;
   pastHref?: string;
+};
+
+/** A state legislative candidate's WAR row (lib/stateLegWar.ts), in the shape WarRaceBreakdown draws:
+ *  a WarSlim whose place is a legislative seat as it was run that year. */
+export type LegWarSlim = Omit<WarSlim, "office" | "seatId" | "pastHref" | "moneyPts" | "houseOthers"> & {
+  office: "L";
+  /** "Pennsylvania HD 151" */
+  place: string;
+  placeHref: string;
+  chamberLabel: string;
+  /** Points added to Expected for how the chamber's other races ran that year. */
+  others: number;
+  /** "own-year": the seat's own vote; "blend": part modelled (thin ballot); "modelled": no usable precinct figure. */
+  basis: "own-year" | "blend" | "modelled";
+  /** Why the seat's own vote was not used, where it was not. */
+  basisNote?: string;
+  /** The offices behind the seat's own vote: P, S, G, H, O (the other chamber). */
+  offices: string[];
+  opp: { candidate: string; party: string; war: number } | null;
 };
 
 export type TplAsOf = { year: number; tpl: number; wrs: number; weight: number };

@@ -43,6 +43,8 @@ export type DistrictRaceRow = {
   /** Legislature: that year's seats the contested votes came from, by share (for the incumbency and money terms).
    *  U.S. House: the congressional districts the district's votes were cast in, by share. */
   seats?: { code: string; share: number }[];
+  /** U.S. House: the contested part's congressional districts, by share of the contested votes (for the candidate terms). */
+  contestedCds?: { code: string; share: number }[];
   /** Share of the district's votes handed over from precincts split with another district. */
   splitShare: number;
   basis: "votes" | "population";
@@ -301,9 +303,10 @@ type Sum = {
   all: Votes; contested: Votes; split: number; weight: number; weightWith: number;
   unc: { i: number; share: number }[]; seats: Map<string, number>; firstChoice: number;
   cds: Map<string, number>;
+  cdsContested: Map<string, number>;
 };
 const zero = (): Votes => ({ dem: 0, rep: 0, oth: 0 });
-const emptySum = (): Sum => ({ all: zero(), contested: zero(), split: 0, weight: 0, weightWith: 0, unc: [], seats: new Map(), firstChoice: 0, cds: new Map() });
+const emptySum = (): Sum => ({ all: zero(), contested: zero(), split: 0, weight: 0, weightWith: 0, unc: [], seats: new Map(), firstChoice: 0, cds: new Map(), cdsContested: new Map() });
 const margin = (v: Votes) => { const t = v.dem + v.rep + v.oth; return t > 0 ? ((v.rep - v.dem) / t) * 100 : 0; };
 const round2 = (x: number) => Math.round(x * 100) / 100;
 
@@ -479,6 +482,7 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           if (rt.seat) s.seats.set(rt.seat, (s.seats.get(rt.seat) ?? 0) + total);
         } else if (total > 0) s.unc.push({ i, share });
         if (rt.cd && total > 0) s.cds.set(rt.cd, (s.cds.get(rt.cd) ?? 0) + total);
+        if (rt.cd && rt.contested && total > 0) s.cdsContested.set(rt.cd, (s.cdsContested.get(rt.cd) ?? 0) + total);
         if (splitPiece) s.split += total;
         if (rt.firstChoice) s.firstChoice += total;
         s.weight += weight[i] * share;
@@ -517,6 +521,7 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
           s.unc.push(...b.unc);
           for (const [code, w] of b.seats) s.seats.set(code, (s.seats.get(code) ?? 0) + w);
           for (const [code, w] of b.cds) s.cds.set(code, (s.cds.get(code) ?? 0) + w);
+          for (const [code, w] of b.cdsContested) s.cdsContested.set(code, (s.cdsContested.get(code) ?? 0) + w);
         }
         if (s.weight > 0) sums.set(normalizeDistrictKey(d.number), s);
       }
@@ -550,6 +555,10 @@ export function districtRaceRows(abbr: string, chamber: Chamber, roster: RosterE
         if (office === "USH" && s.cds.size) {
           const w = [...s.cds.values()].reduce((a, b) => a + b, 0);
           row.seats = [...s.cds].map(([code, v]) => ({ code, share: +(v / w).toFixed(3) })).filter((x) => x.share >= 0.005).sort((a, b) => b.share - a.share);
+        }
+        if (office === "USH" && s.cdsContested.size) {
+          const w = [...s.cdsContested.values()].reduce((a, b) => a + b, 0);
+          row.contestedCds = [...s.cdsContested].map(([code, v]) => ({ code, share: v / w }));
         }
         if (office === "L" && s.seats.size) {
           const w = [...s.seats.values()].reduce((a, b) => a + b, 0);
