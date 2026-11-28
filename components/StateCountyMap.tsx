@@ -1,6 +1,7 @@
 "use client";
 
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { countyDisplayName } from "@/lib/countyName";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
@@ -10,6 +11,8 @@ import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { fmtLean, getRaceColor, leanColor } from "@/lib/colorScale";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { countyHref } from "@/lib/countyHref";
+import { useRouter } from "next/navigation";
+import { startPendingNav } from "@/lib/navPending";
 
 // Per-state TopoJSON, split from public/us-counties.json by scripts/split-national-maps.mjs —
 // a state page only fetches its own counties instead of every state's (previously 3.0 MB
@@ -81,6 +84,7 @@ export default function StateCountyMap({
   onOpen,
   inset = false,
   figureHover = false,
+  pinTaps = false,
 }: {
   stateAbbr: string;
   stateName: string;
@@ -101,15 +105,21 @@ export default function StateCountyMap({
   onSelectedChange?: (fips: string | null) => void;
   /** Desktop: open the county's page on click instead of selecting it. */
   onOpen?: (href: string) => void;
-  /** Set into a page header: no background of its own (the header's tint shows through), and
-   * the clicked county's panel floats over the page below instead of pushing it down. */
+  /** Set into a page header: no background of its own (the header's tint shows through), and a
+   * click opens the county's page directly instead of a panel. */
   inset?: boolean;
   /** With showTpl: the hover popup is the TPL hub map's (name, the lean large, "TPL"), without FIPS or votes. */
   figureHover?: boolean;
+  /** True on a phone, where the page has no hover: a tap pins the hover card where it landed, with a close button and a link to the county, in place of the panel under the map. */
+  pinTaps?: boolean;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
+  const router = useRouter();
+  // In a page header (inset) a click goes straight to the county's page; elsewhere it opens the county's panel.
+  const open = useMemo(() => onOpen ?? (inset ? (href: string) => { startPendingNav(href); router.push(href); } : undefined), [onOpen, inset, router]);
   const [selected, setSelectedState] = useState<County | null>(null);
   const setSelected = useCallback((c: County | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); }, [onSelectedChange]);
+  const [pin, setPin] = useState<{ fips: string; at: MapPin } | null>(null);
   // Starts unset, so a map remounted for another layer picks up the county already selected.
   const [focusN, setFocusN] = useState<number | undefined>(undefined);
   // With reservePanel an invisible stand-in holds the panel's space, stacked in the same grid
@@ -191,7 +201,12 @@ export default function StateCountyMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => (onOpen ? onOpen(countyHref(county.fips)) : setSelected(isSelected ? null : county))}
+                    onClick={(e: React.MouseEvent) => {
+                      if (open) { open(countyHref(county.fips)); return; }
+                      const at = pinFromEvent(e);
+                      setPin(isSelected || !at ? null : { fips, at });
+                      setSelected(isSelected ? null : county);
+                    }}
                     style={{
                       default: {
                         fill,
@@ -221,7 +236,7 @@ export default function StateCountyMap({
         </ZoomableGroup>
       </ComposableMap>
     );
-  }, [mapViewport, topo, autoProj, proj, mapKey, getCountyTpl, selected, setSelected, highlightFips, showTpl, onOpen]);
+  }, [mapViewport, topo, autoProj, proj, mapKey, getCountyTpl, selected, setSelected, highlightFips, showTpl, open]);
 
   // One description of a county, drawn as the hover popup and as the click panel. Without the
   // TPL layer (the county page's locator map) it is just the name and FIPS.
@@ -243,6 +258,7 @@ export default function StateCountyMap({
     <div className={inset ? "relative" : undefined}>
       <div
         ref={containerRef}
+        data-map-pin=""
         className="relative"
         style={{ height, background: inset ? "transparent" : "var(--app-bg)" }}
         onMouseMove={tip.onMouseMove}
@@ -251,6 +267,14 @@ export default function StateCountyMap({
         {hovered && (showTpl
           ? <CountyTooltip {...(figureHover ? figureCard(hovered) : card(hovered))} boxRef={tip.tooltipRef} className="absolute z-20 hidden md:block" />
           : <NameLabel text={nameOf(hovered)} boxRef={tip.tooltipRef} />)}
+
+        {/* Phones: the hover card itself, pinned where the tap landed */}
+        {pinTaps && selected && pin?.fips === selected.fips && (
+          <PinnedMapCard pin={pin.at} label={nameOf(selected)}>
+            <CountyTooltip {...(figureHover ? figureCard(selected) : card(selected))} variant="pinned" aside={<PinnedCardClose onClick={() => setSelected(null)} />}
+              footer={<PinnedCardLink href={countyHref(selected.fips)}>Go to {countyDisplayName(selected.fips, selected.name)}</PinnedCardLink>} />
+          </PinnedMapCard>
+        )}
 
         {mapSvg}
 
@@ -282,20 +306,7 @@ export default function StateCountyMap({
       </div>
 
       {/* Selected county info panel */}
-      {inset && selected && (
-        // In a header: a small floating card, just the name, a close button and the link.
-        <div
-          className="absolute right-0 top-full z-30 rounded-lg shadow-lg px-3 py-2"
-          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)" }}
-        >
-          <div className="flex items-center gap-2">
-            <span className="whitespace-nowrap text-sm font-bold">{nameOf(selected)}</span>
-            <CountyCardClose small onClick={() => setSelected(null)} />
-          </div>
-          <div className="mt-0.5"><CountyCardLink href={countyHref(selected.fips)} /></div>
-        </div>
-      )}
-      {!inset && (selected || standIn) && (
+      {!inset && !pinTaps && (selected || standIn) && (
         <div
           className="grid px-4 py-3"
           style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }}

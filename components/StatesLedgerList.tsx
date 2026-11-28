@@ -79,7 +79,7 @@ export default function StatesLedgerList({
   useEffect(() => {
     if (!selected) return;
     // Only autoscroll on desktop, where the list is its own capped scrollbox — on mobile
-    // the list sits inline in the page and a mobile popup already surfaces the selection,
+    // the list sits inline in the page and the map's pinned card already surfaces the selection,
     // so scrolling here would just yank the whole page down to the row.
     if (!window.matchMedia("(min-width: 768px)").matches) return;
     const el = listRef.current?.querySelector<HTMLElement>(`[data-abbr="${selected.abbr}"]`);

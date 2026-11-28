@@ -76,6 +76,36 @@ export interface ChamberMarginDetail {
    * none or no chamber supplies a gap (the State TPL then keeps them at the presidential margin).
    */
   unopposed: NotUpPool | null;
+  /** The adjusted vote shown on the chamber pages: the U.S. House rule (see AdjustedVote). */
+  adjusted: AdjustedVote;
+}
+
+/**
+ * The chamber's adjusted vote, by the rule the U.S. House adjusted popular vote uses
+ * (lib/genericBallotPopularVote.ts yearVote, lib/results2026Page.ts houseVote2026), with the
+ * chamber in the House's place:
+ *   contested  D and R both drew votes and neither is at write-in scale (under 5% while the
+ *              other clears 90%, or under 2%: the House's seatKind) → its own votes;
+ *   filled     every other seat on the ballot, including an unreported one → presidential margin
+ *              on its lines + the chamber-year's offset, clamped to ±95, at the chamber's median
+ *              contested votes per seat × its seats. Presidential margin = the mean of the
+ *              presidential years nearest the race on that map (both for a midterm on a map that
+ *              carries both, as the House averages the years measured on its map; 2024 for 2026);
+ *   offset     the contested seats' vote-weighted mean of (legislative − presidential margin);
+ *   no pres    a filled seat with no presidential figure keeps its recorded vote (none if unprinted).
+ * Seats not up are not in it. The State TPL reads correctedMargin / the pools above, not this.
+ */
+export interface AdjustedVote {
+  /** R-positive margin as a share of the adjusted total, or null with no votes. */
+  margin: number | null;
+  /** The adjusted total: contested votes plus the filled seats' median turnout. */
+  votes: number;
+  /** Seats given a two-party race from the presidential margin. */
+  filled: number;
+  /** Contested legislative margin minus presidential margin, vote-weighted (points). */
+  offset: number;
+  /** The presidential years the filled seats' margin is read from. */
+  presYears: number[];
 }
 
 export interface ChamberMarginYear {
@@ -87,8 +117,12 @@ export interface ChamberMarginYear {
   rawMargin: number | null;
   /** Contested and imputed pools combined on their weights: the corrected chamber margin. */
   correctedMargin: number | null;
+  /** The chambers' adjusted votes summed (the U.S. House rule, per chamber). */
+  adjusted: { margin: number | null; votes: number; filled: number };
   chambers: ChamberMarginDetail[];
 }
+
+const WRITE_IN_SCALE = (own: number, other: number) => own < 5 && (other >= 90 || own < 2);
 
 const PRES_YEARS = [2016, 2020, 2024] as const;
 
@@ -158,6 +192,24 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
     const available = PRES_YEARS.filter((y) => Object.entries(presEra).some(([key, d]) => presOf(d, key, String(y) as "2016" | "2020" | "2024")));
     const srcYear = nearestPresYear(year, available);
     const srcKey = srcYear == null ? null : (String(srcYear) as "2016" | "2020" | "2024");
+    // The adjusted vote's presidential margin: every year tied for nearest, averaged.
+    const nearestGap = available.length ? Math.min(...available.map((y) => Math.abs(y - year))) : null;
+    const adjYears = available.filter((y) => Math.abs(y - year) === nearestGap);
+    const adjPres = (d: (typeof presEra)[string] | undefined, key: string): number | null => {
+      const ms = adjYears.map((y) => presOf(d, key, String(y) as "2016" | "2020" | "2024")?.margin).filter((m): m is number => m != null);
+      return ms.length ? ms.reduce((a, b) => a + b, 0) / ms.length : null;
+    };
+    const seatIndex = indexByNormalizedKey(Object.fromEntries((stateLegDistricts[abbr]?.[chamber] ?? []).map((d) => [d.number, d])));
+    const seatsOf = (key: string, r?: (typeof block.districts)[string]) => {
+      const won = (r?.candidates ?? []).filter((c) => c.winner).length;
+      if (won > 0) return won;
+      // The roster leaves `seats` blank for most multi-member districts: its members say how many
+      // (the 2026 loader's rule). The 2026 count carries no winner marks, so this is its source.
+      const d = era === "current" ? lookupByDistrictCode(seatIndex, abbr, chamber, key) : undefined;
+      return d ? d.seats ?? Math.max(d.incumbents?.length ?? 0, 1) : 1;
+    };
+    type AdjRow = { contested: boolean; dem: number; rep: number; total: number; seats: number; pres: number | null };
+    const adjRows: AdjRow[] = [];
 
     let cDem = 0, cRep = 0, cTot = 0, cN = 0, cPres = 0, unmatched = 0;
     const gapSeats: GapSeat[] = [];
@@ -173,6 +225,12 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
       const pres = srcKey ? presOf(lookupByDistrictCode(presIndex, abbr, chamber, key), key, srcKey) : undefined;
       const contested = !r.noCount && (r.demVotes ?? 0) > 0 && (r.repVotes ?? 0) > 0 && (r.totalVotes ?? 0) > 0;
       if (!r.noCount) { rawDem += r.demVotes ?? 0; rawRep += r.repVotes ?? 0; rawTot += r.totalVotes ?? 0; }
+      {
+        const dv = r.demVotes ?? 0, rv = r.repVotes ?? 0, tv = Math.max(r.totalVotes ?? 0, dv + rv);
+        const dPct = tv > 0 ? (dv / tv) * 100 : 0, rPct = tv > 0 ? (rv / tv) * 100 : 0;
+        const twoParty = contested && !WRITE_IN_SCALE(dPct, rPct) && !WRITE_IN_SCALE(rPct, dPct);
+        adjRows.push({ contested: twoParty, dem: r.noCount ? 0 : dv, rep: r.noCount ? 0 : rv, total: r.noCount ? 0 : tv, seats: seatsOf(key, r), pres: adjPres(lookupByDistrictCode(presIndex, abbr, chamber, key), key) });
+      }
       if (!pres) unmatched += 1;
       if (contested) {
         cDem += r.demVotes!; cRep += r.repVotes!; cTot += r.totalVotes!; cN += 1;
@@ -189,7 +247,6 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
     // Districts on the year's map with no results row: unreported (imputed above) or not up.
     const staggered = stateLegCalendar[abbr]?.[chamber]?.staggered ?? false;
     const resultIndex = indexByNormalizedKey(block.districts);
-    const seatIndex = indexByNormalizedKey(Object.fromEntries((stateLegDistricts[abbr]?.[chamber] ?? []).map((d) => [d.number, d])));
     const notUpRows: { margin: number; presTotal: number }[] = [];
     let unreported = 0;
     for (const [key, d] of Object.entries(presEra)) {
@@ -199,7 +256,10 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
       const wasUp = !staggered || lastElection === year;
       if (wasUp && unmatched > 0) continue; // most likely the unmatched row itself, already counted
       if (!pres) { skipped += 1; continue; }
-      if (wasUp) { imputedRows.push({ margin: pres.margin, presTotal: pres.totalVotes }); unreported += 1; }
+      if (wasUp) {
+        imputedRows.push({ margin: pres.margin, presTotal: pres.totalVotes }); unreported += 1;
+        adjRows.push({ contested: false, dem: 0, rep: 0, total: 0, seats: seatsOf(key), pres: adjPres(d, key) });
+      }
       else notUpRows.push({ margin: pres.margin, presTotal: pres.totalVotes });
     }
     const turnoutRatio = cPres > 0 ? cTot / cPres : 1;
@@ -208,7 +268,23 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
     const contestedPool = pool(cDem, cRep, cTot, cN);
     const imputedPool: ChamberPool = { margin: iW > 0 ? iM / iW : null, weight: iW, districts: imputedRows.length };
     const notUpPres = notUpRows.reduce((a, r) => a + r.presTotal, 0);
+    // The adjusted vote (the U.S. House rule).
+    let offNum = 0, offDen = 0;
+    for (const a of adjRows) if (a.contested && a.pres != null) { offNum += (((a.rep - a.dem) / a.total) * 100 - a.pres) * a.total; offDen += a.total; }
+    const offset = offDen > 0 ? offNum / offDen : 0;
+    const perSeat = adjRows.filter((a) => a.contested).map((a) => a.total / a.seats).sort((x, y) => x - y);
+    const medianPerSeat = perSeat.length ? perSeat[Math.floor(perSeat.length / 2)] : 0;
+    let aD = 0, aR = 0, aT = 0, filled = 0;
+    for (const a of adjRows) {
+      if (a.contested || a.pres == null || medianPerSeat <= 0) { aD += a.dem; aR += a.rep; aT += a.total; continue; }
+      filled += 1;
+      const m = Math.max(-95, Math.min(95, a.pres + offset));
+      const v = medianPerSeat * a.seats;
+      aD -= (v * m) / 200; aR += (v * m) / 200; aT += v;
+    }
+    const adjusted: AdjustedVote = { margin: aT > 0 ? ((aR - aD) / aT) * 100 : null, votes: aT, filled, offset, presYears: adjYears };
     details.push({
+      adjusted,
       chamber, era, srcYear, turnoutRatio,
       contested: contestedPool, imputed: imputedPool, skipped,
       rawMargin: rawTot > 0 ? ((rawRep - rawDem) / rawTot) * 100 : null,
@@ -263,7 +339,11 @@ export function chamberMarginYear(abbr: string, yearKey: string, chambers: YearC
     }
   }
   const all = combine(contested, imputedBase);
+  // Each chamber's adjusted margin weighted by its adjusted votes (the sum of its D−R and its total).
+  const adjVotes = details.reduce((s, d) => s + d.adjusted.votes, 0);
+  const adjMargin = adjVotes > 0 ? details.reduce((s, d) => s + (d.adjusted.margin ?? 0) * d.adjusted.votes, 0) / adjVotes : null;
   return {
+    adjusted: { margin: adjMargin, votes: adjVotes, filled: details.reduce((s, d) => s + d.adjusted.filled, 0) },
     year,
     contested,
     imputed: { ...imputedBase, srcYear },

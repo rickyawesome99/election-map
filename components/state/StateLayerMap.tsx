@@ -119,6 +119,7 @@ export default function StateLayerMap({
         stateName={stateName}
         selected={selectedHouse}
         onSelect={onSelectHouse}
+        pinTaps={!onOpenHouse}
       />
     );
   }

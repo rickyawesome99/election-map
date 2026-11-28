@@ -13,6 +13,7 @@ const TABS: { key: string; label: string; href?: string; prefetch?: false }[] = 
   { key: "overview",         label: "Overview" },
   { key: "states",           label: "States" }, // a button that opens the state grid (StatesMenu)
   { key: "chambers",         label: "Chambers" }, // a button that opens House / Senate / Governor / Legislatures (ChambersMenu)
+  { key: "years",            label: "Years" }, // each election year as a whole, 2016 on (/years, /years/[year])
   { key: "model",            label: "TPL", prefetch: false },
   { key: "war",              label: "WAR", prefetch: false },
   { key: "precincts",        label: "Precincts" },
@@ -37,6 +38,7 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/war") return "war";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";
+  if (pathname === "/years" || pathname.startsWith("/years/")) return "years";
   if (pathname === "/overview" || pathname.startsWith("/overview/") || pathname === "/") return "overview";
   return null;
 }

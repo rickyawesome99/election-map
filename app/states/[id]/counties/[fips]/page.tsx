@@ -19,6 +19,8 @@ import StateCountyMap from "@/components/StateCountyMap";
 import { titleSize } from "@/components/RaceHero";
 import CountyTplCard from "@/components/CountyTplCard";
 import CountyCompareCard from "@/components/CountyCompareCard";
+import CountyTurnoutGraph from "@/components/CountyTurnoutGraph";
+import { countyTurnoutHistory } from "@/lib/countyTurnout";
 import DemographicsStrip from "@/components/DemographicsStrip";
 import { AboutRaceCard, LedgerSectionHead, LedgerSubhead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import { PAGE_CONTAINER, heroTint } from "@/lib/pageLayout";
@@ -351,6 +353,7 @@ export default async function CountyPage({ params }: { params: Promise<{ id: str
       : []),
   ];
   const demographics = countyDemographics[fips];
+  const turnout = countyTurnoutHistory(fips);
 
   const checks = (label: string, value: ReactNode, title?: string) => (
     <span className="whitespace-nowrap" title={title}>{label} {value}</span>
@@ -431,6 +434,12 @@ export default async function CountyPage({ params }: { params: Promise<{ id: str
                 name={county.countyName}
                 areaLabel={areaLabel}
               />
+            </section>
+          )}
+
+          {turnout.length > 0 && (
+            <section>
+              <CountyTurnoutGraph data={turnout} name={`${county.countyName} ${areaLabel}`} />
             </section>
           )}
 

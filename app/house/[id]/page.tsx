@@ -317,6 +317,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             {countyProjection && (
               <div className="mt-4">
                 <HouseDistrictCountyMap
+                  pinTaps="phone"
                   stateContext
                   panelSize="wide"
                   piecesUrl={`/house-county-pieces/${electionYear}/${stateAbbr}.json`}

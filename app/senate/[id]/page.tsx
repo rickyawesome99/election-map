@@ -410,6 +410,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               <div className="mt-4">
                 <PastElectionCountyMap
                   panelSize="wide"
+                  pinTaps="phone"
                   stateAbbr={abbr}
                   stateName={race.name}
                   counties={projectedCountyMapEntries(countyProjection)}

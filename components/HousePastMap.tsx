@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -9,8 +8,8 @@ import { getRaceColor } from "@/lib/colorScale";
 import type { RaceForecast, PastResult } from "@/data/forecastData";
 import { useDarkMode, usePageBg } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import CandidateLink from "@/components/CandidateLink";
 
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
@@ -93,6 +92,75 @@ function normalizeDistrictGeography(geo: DistrictGeo): DistrictGeo {
   return geo;
 }
 
+const TIP_WIDTH = 190;
+
+/** A district's hover card: name, margin, the two candidates' shares and votes. Pinned by a press
+ *  that doesn't open the race (a phone's tap), the same card takes a close button (`aside`) and a
+ *  link to the race (`footer`). */
+function DistrictCard({ hovered, year, boxRef, aside, footer }: { hovered: HoveredDistrict; year: number; boxRef?: React.Ref<HTMLDivElement>; aside?: React.ReactNode; footer?: React.ReactNode }) {
+  const pinned = !!(aside || footer);
+  const { district, result } = hovered;
+  const margin = result.repPct - result.demPct;
+  const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
+  const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
+  const hasVotes = result.demVotes != null && result.repVotes != null;
+  return (
+    <div ref={boxRef}
+      className={pinned ? "rounded-lg" : "hidden md:block absolute z-20 pointer-events-none rounded-lg"}
+      style={{
+        width: TIP_WIDTH,
+        padding: "6px 8px",
+        background: "var(--app-panel)",
+        border: "1px solid var(--app-border)",
+        color: "var(--app-text-primary)",
+        boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+      }}
+    >
+      <div className="flex items-center justify-between gap-1 mb-1.5">
+        <span className="font-bold text-xs">{district.name}{pinned && <span className="ml-1.5 font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{year}</span>}</span>
+        <span className="font-bold shrink-0" style={{ fontSize: 14, color: marginColor }}>{marginLabel}</span>
+        {aside}
+      </div>
+      {result.demCandidate || result.repCandidate ? (
+        <div className="mb-1.5">
+          {result.demCandidate && (
+            <div className="flex justify-between items-baseline">
+              <span className="truncate mr-1" style={{ color: "var(--party-dem)", fontSize: 11 }}>
+                {result.demCandidate}{result.demIncumbent ? <span style={{ opacity: 0.7 }}> (inc)</span> : null}
+              </span>
+              <span className="font-semibold shrink-0" style={{ color: "var(--party-dem)", fontSize: 11 }}>{result.demPct.toFixed(1)}%</span>
+            </div>
+          )}
+          {result.repCandidate && (
+            <div className="flex justify-between items-baseline">
+              <span className="truncate mr-1" style={{ color: "var(--party-rep)", fontSize: 11 }}>
+                {result.repCandidate}{result.repIncumbent ? <span style={{ opacity: 0.7 }}> (inc)</span> : null}
+              </span>
+              <span className="font-semibold shrink-0" style={{ color: "var(--party-rep)", fontSize: 11 }}>{result.repPct.toFixed(1)}%</span>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="flex gap-2 mb-1.5">
+          <span className="font-semibold" style={{ color: "var(--party-dem)", fontSize: 11 }}>D {result.demPct.toFixed(1)}%</span>
+          <span className="font-semibold" style={{ color: "var(--party-rep)", fontSize: 11 }}>R {result.repPct.toFixed(1)}%</span>
+        </div>
+      )}
+      <div className="flex rounded-full overflow-hidden mb-1.5" style={{ height: 3 }}>
+        <div style={{ width: `${result.demPct}%`, background: "#1b408c" }} />
+        <div style={{ width: `${result.repPct}%`, background: "#be1c29" }} />
+      </div>
+      {hasVotes && (
+        <div className="flex justify-between text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+          <span>{result.demVotes!.toLocaleString()}</span>
+          <span>{result.repVotes!.toLocaleString()}</span>
+        </div>
+      )}
+      {footer && <div className="mt-2">{footer}</div>}
+    </div>
+  );
+}
+
 export default function HousePastMap({
   houseRaces,
   historicalResults,
@@ -132,7 +200,7 @@ export default function HousePastMap({
   }, [historicalResults, houseRaces, stateAbbr]);
 
   const [hovered, setHovered] = useState<HoveredDistrict | null>(null);
-  const [selected, setSelected] = useState<HoveredDistrict | null>(null);
+  const [selected, setSelected] = useState<(HoveredDistrict & { at: MapPin }) | null>(null);
   const tip = useMapTooltip(16, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -183,69 +251,20 @@ export default function HousePastMap({
       <div
         ref={containerRef}
         className="relative"
+        data-map-pin=""
         style={{ height: 360, background: "var(--app-bg)" }}
         onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
-        {hovered && (() => {
-          const { district, result } = hovered;
-          const margin = result.repPct - result.demPct;
-          const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
-          const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
-          const hasVotes = result.demVotes != null && result.repVotes != null;
-          const tipW = 190;
+        {hovered && <DistrictCard hovered={hovered} year={selectedYear} boxRef={tip.tooltipRef} />}
+        {/* A press that doesn't open the race (phones): the same card, pinned where it landed */}
+        {selected && (() => {
+          const href = pastHrefs[`${selected.district.id}:${selectedYear}`];
           return (
-            <div ref={tip.tooltipRef}
-              className="hidden md:block absolute z-20 pointer-events-none rounded-lg"
-              style={{
-                width: tipW,
-                padding: "6px 8px",
-                background: "var(--app-panel)",
-                border: "1px solid var(--app-border)",
-                color: "var(--app-text-primary)",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
-              }}
-            >
-              <div className="flex items-center justify-between gap-1 mb-1.5">
-                <span className="font-bold text-xs">{district.name}</span>
-                <span className="font-bold shrink-0" style={{ fontSize: 14, color: marginColor }}>{marginLabel}</span>
-              </div>
-              {result.demCandidate || result.repCandidate ? (
-                <div className="mb-1.5">
-                  {result.demCandidate && (
-                    <div className="flex justify-between items-baseline">
-                      <span className="truncate mr-1" style={{ color: "var(--party-dem)", fontSize: 11 }}>
-                        {result.demCandidate}{result.demIncumbent ? <span style={{ opacity: 0.7 }}> (inc)</span> : null}
-                      </span>
-                      <span className="font-semibold shrink-0" style={{ color: "var(--party-dem)", fontSize: 11 }}>{result.demPct.toFixed(1)}%</span>
-                    </div>
-                  )}
-                  {result.repCandidate && (
-                    <div className="flex justify-between items-baseline">
-                      <span className="truncate mr-1" style={{ color: "var(--party-rep)", fontSize: 11 }}>
-                        {result.repCandidate}{result.repIncumbent ? <span style={{ opacity: 0.7 }}> (inc)</span> : null}
-                      </span>
-                      <span className="font-semibold shrink-0" style={{ color: "var(--party-rep)", fontSize: 11 }}>{result.repPct.toFixed(1)}%</span>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div className="flex gap-2 mb-1.5">
-                  <span className="font-semibold" style={{ color: "var(--party-dem)", fontSize: 11 }}>D {result.demPct.toFixed(1)}%</span>
-                  <span className="font-semibold" style={{ color: "var(--party-rep)", fontSize: 11 }}>R {result.repPct.toFixed(1)}%</span>
-                </div>
-              )}
-              <div className="flex rounded-full overflow-hidden mb-1.5" style={{ height: 3 }}>
-                <div style={{ width: `${result.demPct}%`, background: "#1b408c" }} />
-                <div style={{ width: `${result.repPct}%`, background: "#be1c29" }} />
-              </div>
-              {hasVotes && (
-                <div className="flex justify-between text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                  <span>{result.demVotes!.toLocaleString()}</span>
-                  <span>{result.repVotes!.toLocaleString()}</span>
-                </div>
-              )}
-            </div>
+            <PinnedMapCard pin={selected.at} width={TIP_WIDTH} label={selected.district.name}>
+              <DistrictCard hovered={selected} year={selectedYear} aside={<PinnedCardClose onClick={() => setSelected(null)} />}
+                footer={href ? <PinnedCardLink href={href}>Go to {selectedYear} race</PinnedCardLink> : undefined} />
+            </PinnedMapCard>
           );
         })()}
 
@@ -276,11 +295,12 @@ export default function HousePastMap({
                       geography={geo}
                       onMouseEnter={() => entry && setHovered({ ...entry, geoid: geoId! })}
                       onMouseLeave={() => setHovered(null)}
-                      onClick={() => {
+                      onClick={(e: React.MouseEvent) => {
                         if (!entry || !geoId) return;
                         const href = pastHrefs[`${entry.district.id}:${selectedYear}`];
                         if (onOpen && href) { onOpen(href); return; }
-                        setSelected(isSelected ? null : { ...entry, geoid: geoId });
+                        const at = pinFromEvent(e);
+                        setSelected(isSelected || !at ? null : { ...entry, geoid: geoId, at });
                       }}
                       style={{
                         default: {
@@ -317,55 +337,6 @@ export default function HousePastMap({
         )}
       </div>
 
-      {/* Selected district panel — same layout as the state page's projection and legislature panels. */}
-      {selected && (() => {
-        const { district, result } = selected;
-        const margin = result.repPct - result.demPct;
-        const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
-        const partyColor = (p: string) => (p === "D" ? "var(--party-dem)" : p === "R" ? "var(--party-rep)" : "var(--party-ind)");
-        const href = pastHrefs[`${district.id}:${selectedYear}`];
-        const rows = [
-          { name: result.demCandidate, party: result.demParty ?? "D", incumbent: result.demIncumbent, pct: result.demPct, votes: result.demVotes },
-          { name: result.repCandidate, party: result.repParty ?? "R", incumbent: result.repIncumbent, pct: result.repPct, votes: result.repVotes },
-        ];
-        return (
-          <div className="mt-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="flex items-start justify-between gap-4">
-              <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-2 flex-wrap mb-1.5">
-                  <span className="text-base font-bold" style={{ color: "var(--app-text-primary)" }}>{district.name}</span>
-                  <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{selectedYear} result</span>
-                  <button type="button" onClick={() => setSelected(null)} className="text-xs" style={{ color: "var(--app-text-very-muted)" }} aria-label="Clear selection">×</button>
-                </div>
-                <div className="flex flex-col gap-0.5">
-                  {rows.map((c, i) => (
-                    <div key={i} className="flex items-baseline justify-between gap-2">
-                      <span className="flex min-w-0 items-baseline gap-2">
-                        {c.name ? (
-                          <CandidateLink name={c.name} state={stateAbbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
-                            {c.name}
-                          </CandidateLink>
-                        ) : (
-                          <span className="text-sm font-semibold" style={{ color: partyColor(c.party) }}>{c.party === "D" ? "Democratic" : c.party === "R" ? "Republican" : "Independent"}</span>
-                        )}
-                        {c.name && <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>({c.party}{c.incumbent ? " Inc" : ""})</span>}
-                      </span>
-                      <span className="shrink-0 text-sm tabular-nums" style={{ color: partyColor(c.party) }}>
-                        <span className="font-bold">{c.pct.toFixed(1)}%</span>
-                        {c.votes != null && <> <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{c.votes.toLocaleString()}</span></>}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                {href && (
-                  <Link prefetch={false} href={href} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View {selectedYear} race →</Link>
-                )}
-              </div>
-              <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>{marginLabel}</div>
-            </div>
-          </div>
-        );
-      })()}
     </div>
   );
 }

@@ -19,7 +19,8 @@ import { lastName } from "@/lib/personName";
 // The tabs sit over the map; a clicked county shows as one line under it instead of a panel, so the
 // map never shrinks and nothing moves; on desktop the hover card still follows the pointer.
 // With `race` (the 2026 race pages) the map is full width at a set height and keeps its own
-// click panel, which, like the hover card, shows the chosen view's figure.
+// click panel, which, like the hover card, shows the chosen view's figure; on a phone a tap pins
+// the hover card itself instead (components/maps/PinnedMapCard).
 
 type Party = "D" | "R" | "I";
 type Side = { name: string; party: Party };
@@ -162,7 +163,7 @@ export default function PastElectionMapPanel({ stateAbbr, stateName, dem, rep, c
   );
 
   if (race) {
-    const raceCommon = { counties: entries, demName: dem.name, repName: rep.name, demParty: dem.party, repParty: rep.party, height: race.height, panelSize: "wide" as const, bubbles: shown === "bubbles",
+    const raceCommon = { counties: entries, demName: dem.name, repName: rep.name, demParty: dem.party, repParty: rep.party, height: race.height, panelSize: "wide" as const, pinTaps: "phone" as const, bubbles: shown === "bubbles",
       caption: <div className="px-1">{note && <p className="mt-2 text-[11px]" style={veryMuted}>{note}</p>}{race.footnote}</div> };
     return (
       <div>

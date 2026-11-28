@@ -2,8 +2,10 @@
 
 import { useMapTooltip } from "@/lib/useMapTooltip";
 import { countyDisplayName } from "@/lib/countyName";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import CountyTooltip, { CountyCardClose, CountyCardLink, type CountyTooltipProps } from "@/components/CountyTooltip";
 import { memo, useCallback, useMemo, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
 import type { Theme } from "./ForecastMap";
@@ -182,7 +184,7 @@ const GeoLayer = memo(function GeoLayer({
   selectedKey: string | null;
   t: Theme;
   onHover: (sel: Selection | null) => void;
-  onSelect: (sel: Selection) => void;
+  onSelect: (sel: Selection, at: MapPin | null) => void;
 }) {
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
@@ -192,10 +194,10 @@ const GeoLayer = memo(function GeoLayer({
     return specialOnly ? (e.special ?? null) : e.result;
   };
   const handlers = (sel: Selection | null, clickable: boolean) => ({
-    onClick: () => {
+    onClick: (e: React.MouseEvent) => {
       if (!clickable || !sel) return;
       if (Date.now() < ignoreClickUntilRef.current) return;
-      onSelect(sel);
+      onSelect(sel, pinFromEvent(e));
     },
     onPointerDown: (e: React.PointerEvent) => {
       if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
@@ -208,7 +210,7 @@ const GeoLayer = memo(function GeoLayer({
       touchStartRef.current = null;
       if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
       ignoreClickUntilRef.current = Date.now() + 500;
-      onSelect(sel);
+      onSelect(sel, pinFromEvent(e));
     },
   });
   const strokeW = level === "county" ? { base: 0.3, hover: 0.5, sel: 1.75 } : level === "district" ? { base: 0.4, hover: 0.8, sel: 1.75 } : { base: 0.5, hover: 1, sel: 2 };
@@ -286,14 +288,25 @@ const GeoLayer = memo(function GeoLayer({
 export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   // State view by default: it is the lightest layer (no county TopoJSON until asked for), so
   // switching to and from the tab stays quick.
-  const [geoLevel, setGeoLevel] = useState<GeoLevel>("state");
+  // A link can open the map on an office, year and view: /historical?office=senate&year=2022&view=state
+  // (the Years page's "Historical results map" links). Anything missing or not on offer falls back
+  // to the defaults. Read once, on mount.
+  const params = useSearchParams();
+  const [initial] = useState(() => {
+    const office = MAP_OFFICES.find((o) => o === params.get("office")) ?? "president";
+    const level = MAP_LEVELS.find((l) => l === params.get("view")) ?? "state";
+    const years = getYearsForLevel(office, level);
+    const asked = Number(params.get("year"));
+    return { office, level, year: years.includes(asked) ? asked : years.includes(2024) ? 2024 : years[0] };
+  });
+  const [geoLevel, setGeoLevel] = useState<GeoLevel>(initial.level);
   const [hovered, setHovered] = useState<Selection | null>(null);
   const [selected, setSelected] = useState<Selection | null>(null);
   const tip = useMapTooltip(14, 8);
   const [mapView, setMapView] = useState<MapView>({ center: DEFAULT_MAP_CENTER, zoom: 1 });
   const [viewChanged, setViewChanged] = useState(false);
-  const [raceType, setRaceType] = useState<RaceType>("president");
-  const [year, setYear] = useState<number>(2024);
+  const [raceType, setRaceType] = useState<RaceType>(initial.office);
+  const [year, setYear] = useState<number>(initial.year);
   // "Special elections only" toggle — only meaningful for senate on a year where at
   // least one state held both a regular and a special race (SENATE_DOUBLE_YEARS).
   // The special-only toggle is tagged with the office and year it was set for, so it reads as
@@ -391,7 +404,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const districtGeoUrl = getCongressionalDistrictsGeoUrl(year);
 
   const onHover = useCallback((sel: Selection | null) => setHovered(sel), []);
-  const onSelect = useCallback((sel: Selection) => setSelected((cur) => (cur?.key === sel.key ? null : sel)), []);
+  // Where the press that selected a place landed: a phone shows the hover card pinned there.
+  const [pin, setPin] = useState<MapPin | null>(null);
+  const onSelect = useCallback((sel: Selection, at: MapPin | null) => { setSelected((cur) => (cur?.key === sel.key ? null : sel)); setPin(at); }, []);
   const selectedKey = selected?.key ?? null;
 
   // One description of the hovered/selected area, drawn as the hover popup and as the panels.
@@ -697,6 +712,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Map — the box takes the projection's 975×610 shape at every width, so "slice" crops
            nothing and the whole country fits the page column (a fixed desktop height cropped the
            coasts once the column narrowed to PAGE_CONTAINER) ── */}
+        {/* The outer box measures presses and holds the phone's pinned card, outside the map's clip. */}
+        <div className="relative" data-map-pin="">
         <div
           className="relative aspect-[975/610] w-full overflow-hidden rounded-xl"
           style={{ background: t.bg }}
@@ -733,6 +750,18 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             </div>
           )}
         </div>
+          {/* ── Phones: the hover card itself, pinned where the tap landed ── */}
+          {selected && pin && (
+            <PinnedMapCard pin={pin} label={selected.title} className="md:hidden">
+              <CountyTooltip
+                {...card(selected)}
+                variant="pinned"
+                aside={<PinnedCardClose onClick={() => setSelected(null)} />}
+                footer={selected.moreInfoHref ? <PinnedCardLink href={selected.moreInfoHref}>Go to {selected.title}</PinnedCardLink> : undefined}
+              />
+            </PinnedMapCard>
+          )}
+        </div>
 
         {/* ── Map legend ── */}
         <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 md:gap-x-4">
@@ -749,18 +778,6 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             </div>
           )}
         </div>
-
-        {/* ── Mobile selected geography (compact) ── */}
-        {selected && (
-          <div className="md:hidden">
-            <CountyTooltip
-              {...card(selected)}
-              variant="panel"
-              aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" small />}
-              footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined}
-            />
-          </div>
-        )}
 
         {/* ── Every race page for this office + year (reads the selection only, not the geography view) ── */}
         <PastRaceTable office={raceType} year={year} />

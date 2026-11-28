@@ -123,10 +123,10 @@ function RaceCard({ row, popularVote, year, onSelect, index }: { row: PostElecti
 /** One state: the Statewide section (House popular vote, governor, Senate, the state's legislature), then every House seat in
  *  district order, under a header with the state's count. The caller holds
  *  useTouchHover(tiltCard, untiltCard), once per page. */
-export function StateSection({ rows, legislature, year, housePvPrev, onSelect }: { rows: PostElectionRow[]; legislature: LegChamberResult[]; year: number; housePvPrev: number | null; onSelect: (r: PostElectionRow) => void }) {
-  if (!rows.length) return null;
-  const p0 = rows[0].prior;
-  const past = !!rows[0].past;
+export function StateSection({ rows, legislature, year, housePvPrev, onSelect, state }: { rows: PostElectionRow[]; legislature: LegChamberResult[]; year: number; housePvPrev: number | null; onSelect: (r: PostElectionRow) => void; /** The state, for one with no race of its own in the year: only its legislature voted (the Years page's odd years). */ state?: { abbr: string; name: string } }) {
+  if (!rows.length && !state) return null;
+  const p0 = rows[0]?.prior ?? { state: state!.abbr, stateName: state!.name };
+  const past = rows.length ? !!rows[0].past : true;
   const president = rows.find((r) => r.prior.office === "president");
   const statewide = rows.filter((r) => r.prior.office !== "house" && r.prior.office !== "president");
   const house = rows.filter((r) => r.prior.office === "house");
@@ -162,7 +162,7 @@ export function StateSection({ rows, legislature, year, housePvPrev, onSelect }:
           </div>
           <div className="text-[11px] tabular-nums" style={muted}>
             {past
-              ? `${rows.length} races · ${flips} ${flips === 1 ? "flip" : "flips"}`
+              ? rows.length ? `${rows.length} ${rows.length === 1 ? "race" : "races"} · ${flips} ${flips === 1 ? "flip" : "flips"}` : `Legislative elections only in ${year}`
               : <>{total ? `${Math.round((counted / total) * 100)}% of the expected vote counted · ` : ""}{called} of {rows.length} called</>}
           </div>
         </div>

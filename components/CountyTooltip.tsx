@@ -11,6 +11,8 @@ import CandidateLink from "@/components/CandidateLink";
 //             Results page puts its counted margin, with the projection under it, top right
 //             beside the name and % in bar; no share bar, larger candidate rows, and the net
 //             vote lead under them)
+//   pinned  — the tooltip itself, pinned where a phone's tap landed (components/maps/PinnedMapCard):
+//             the same box, with a close button (`aside`) and a button to the page (`footer`)
 //   card    — the tooltip's layout with no box of its own, for a container the map supplies
 //             (the national map's floating selected box)
 //   panel   — the click/tap panel in the page under a map, built like the state page's selected
@@ -36,7 +38,7 @@ export type CountyTooltipSide = { name: string; party: Party; pct: number; votes
 
 type Base = {
   title: string; subtitle?: string; boxRef?: Ref<HTMLDivElement>; className?: string;
-  variant?: "tooltip" | "card" | "panel"; size?: "compact" | "wide" | "small"; aside?: ReactNode; footer?: ReactNode;
+  variant?: "tooltip" | "pinned" | "card" | "panel"; size?: "compact" | "wide" | "small"; aside?: ReactNode; footer?: ReactNode;
 };
 export type CountyTooltipProps = Base & (
   | { kind: "result"; dem: CountyTooltipSide; rep: CountyTooltipSide; /** R-positive. */ margin: number; totalVotes: number | null; /** How much of the county is counted, e.g. "50% in" (the Results page); upper right. */ reporting?: string; /** The Results page's projected final margin, R-positive: shown beside a smaller counted margin. */ projectedMargin?: number; /** The Results page's vote still to count: votes left, the net votes they carry and the net votes counted so far, both R-positive. */ remaining?: { votes: number; net: number; current: number }; /** Headline the lead in votes ("R+5,209") instead of the margin: a bubbles map, whose circles are that lead. */ voteLead?: boolean }
@@ -264,13 +266,16 @@ export default function CountyTooltip(props: CountyTooltipProps) {
       </div>
     );
   }
+  // Pinned: the tooltip's own box, at full width, taking presses for its close button and link.
+  const pinned = variant === "pinned";
   return (
     <div
       ref={boxRef}
-      className={`pointer-events-none rounded-lg ${className}`}
-      style={{ ...(props.kind === "figure" && !props.note ? { width: "max-content", minWidth: 140, maxWidth: WIDTH } : { width: WIDTH }), padding: "10px 12px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.18)", color: "var(--app-text-primary)" }}
+      className={`${pinned ? "" : "pointer-events-none "}rounded-lg ${className}`}
+      style={{ ...(props.kind === "figure" && !props.note && !pinned ? { width: "max-content", minWidth: 140, maxWidth: WIDTH } : { width: WIDTH }), padding: "10px 12px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.18)", color: "var(--app-text-primary)" }}
     >
       {body}
+      {pinned && footer && <div className="mt-2">{footer}</div>}
     </div>
   );
 }

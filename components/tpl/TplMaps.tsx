@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMemo, useRef, useState } from "react";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import CountyTooltip from "@/components/CountyTooltip";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import Geographies from "@/components/maps/Geographies";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -73,7 +74,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   /** Fired when a place is picked (click/tap) or the panel is closed (null) — /analysis/polling-misses filters its table with it. */
   onSelect?: (row: MapRow | null) => void;
   /** true = a click/tap goes straight to the place's href instead of opening the panel (the TPL hub's States view).
-   *  "mouse" = only a mouse click does; a tap still opens the panel, since a phone has no hover to name a small county first (the hub's Counties view). */
+   *  "mouse" = only a mouse click does; a tap pins the hover card instead, since a phone has no hover to name a small county first (the hub's Counties view). */
   navigateOnClick?: boolean | "mouse";
   /** false = a fixed view: no wheel/pinch/drag zoom and no Reset button (/analysis/polling-misses). */
   zoomable?: boolean;
@@ -82,7 +83,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   wide?: boolean;
   /** true = the turnout page's frame: a 5:3 box capped at 620px with side margins, and the wide 800×480 SVG stretched to fill it (/analysis/polling-misses). */
   fill?: boolean;
-  /** false = no popup box (md+) or under-map panel (phones) for the picked place — the page shows it itself (/analysis/polling-misses). */
+  /** false = no popup box (md+) or pinned hover card (phones) for the picked place — the page shows it itself (/analysis/polling-misses). */
   panel?: boolean;
   /** The picked place's key, when the page owns the selection (so a dropdown elsewhere can move the outline); omit to let the map track it. */
   selectedKey?: string | null;
@@ -99,9 +100,12 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   const [ownSelected, setSelectedState] = useState<MapRow | null>(null);
   const selected = selectedKey === undefined ? ownSelected : rows.find((r) => r.key === selectedKey) ?? null;
   const router = useRouter();
-  const setSelected = (row: MapRow | null, viaTouch = false) => {
+  // Where the press that picked a place landed: a phone shows the hover card pinned there.
+  const [pin, setPin] = useState<{ key: string; at: MapPin } | null>(null);
+  const setSelected = (row: MapRow | null, viaTouch = false, at: MapPin | null = null) => {
     if (row && (navigateOnClick === true || (navigateOnClick === "mouse" && !viaTouch))) { startPendingNav(row.href); router.push(row.href); return; }
     setSelectedState(row); onSelect?.(row);
+    setPin(row && at ? { key: row.key, at } : null);
   };
   const { onMouseMove: onTipMove, tooltipRef } = useMapTooltip(14, 8);
   const [mapKey, setMapKey]     = useState(0);
@@ -141,9 +145,9 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
           geography={geo}
           onMouseEnter={() => row && setHovered(row)}
           onMouseLeave={() => setHovered(null)}
-          onClick={() => {
+          onClick={(e: React.MouseEvent) => {
             if (Date.now() < ignoreClickRef.current) return;
-            if (row) setSelected(isSelected ? null : row);
+            if (row) setSelected(isSelected ? null : row, false, pinFromEvent(e));
           }}
           onPointerDown={(e: React.PointerEvent) => {
             if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
@@ -155,7 +159,7 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
             touchStartRef.current = null;
             if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
             ignoreClickRef.current = Date.now() + 500;
-            setSelected(isSelected ? null : row, true);
+            setSelected(isSelected ? null : row, true, pinFromEvent(e));
           }}
           style={{
             default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? W.sel : W.base, outline: "none" },
@@ -209,8 +213,9 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
   );
 
   return (
-    <>
-      <div className={fill ? "relative mx-4 aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl sm:mx-12 lg:mx-32" : "relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]"} style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
+    // The outer box measures presses and holds the phone's pinned card, outside the map's clip.
+    <div className={fill ? "relative mx-4 sm:mx-12 lg:mx-32" : "relative"} data-map-pin="">
+      <div className={fill ? "relative aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl" : "relative h-[300px] w-full overflow-hidden rounded-xl sm:h-[400px] md:h-[480px]"} style={framed ? { border: "1px solid var(--app-border)" } : undefined} onMouseMove={onTipMove}>
         {hovered && (!selected || !panel) && (
           <CountyTooltip kind="figure" title={hovered.name} label={valueLabel} value={hovered.text ?? formatValue(hovered.value)} valueColor={hovered.textColor ?? valueColor(hovered.value)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />
         )}
@@ -237,13 +242,13 @@ export function TplMap({ mode, rows, valueLabel, linkLabel, colorOf = getRaceCol
         )}
       </div>
 
-      {selected && panel && (
-        <div className="mt-2 flex items-center gap-2 rounded-lg px-3 py-2.5 text-[11px] md:hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
-          <span className="min-w-0 truncate text-xs font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</span>
-          {valueText}
-          <span className="ml-auto flex items-center gap-4">{openLink}{closeButton}</span>
-        </div>
+      {/* Phones: the hover card itself, pinned where the tap landed */}
+      {selected && panel && pin?.key === selected.key && (
+        <PinnedMapCard pin={pin.at} label={selected.name} className="md:hidden">
+          <CountyTooltip kind="figure" title={selected.name} label={valueLabel} value={selected.text ?? formatValue(selected.value)} valueColor={selected.textColor ?? valueColor(selected.value)}
+            variant="pinned" aside={<PinnedCardClose onClick={() => setSelected(null)} />} footer={<PinnedCardLink href={selected.href}>Go to {selected.name}</PinnedCardLink>} />
+        </PinnedMapCard>
       )}
-    </>
+    </div>
   );
 }

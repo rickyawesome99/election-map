@@ -35,7 +35,7 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
     return { districts: list.length, contested: list.filter((c) => c.status === "contested").length, open: list.filter((c) => c.open).length };
   })() : null;
 
-  // Latest corrected chamber margin: contested votes + uncontested seats imputed from president.
+  // Latest adjusted chamber margin: contested votes + seats without a D-vs-R race filled from president + offset.
   // Every year's, too: the chamber history rows show it beside the raw vote margin.
   const marginsByYear = (() => {
     const out: { year: number; raw: number; corrected: number | null; imputed: number }[] = [];
@@ -43,9 +43,8 @@ export function chamberSummary(abbr: string, stateName: string, chamber: Chamber
     for (const y of Object.keys(years).map(Number).sort((a, b) => b - a)) {
       const d = years[y].chambers.find((c) => c.chamber === chamber);
       if (!d || d.rawMargin == null) continue;
-      const w = d.contested.weight + d.imputed.weight;
-      const corrected = w > 0 ? ((d.contested.margin ?? 0) * d.contested.weight + (d.imputed.margin ?? 0) * d.imputed.weight) / w : null;
-      out.push({ year: y, raw: d.rawMargin, corrected, imputed: d.imputed.districts });
+      // The adjusted vote: the U.S. House rule (lib/stateLegChamberMargin.ts AdjustedVote).
+      out.push({ year: y, raw: d.rawMargin, corrected: d.adjusted.margin, imputed: d.adjusted.filled });
     }
     return out;
   })();

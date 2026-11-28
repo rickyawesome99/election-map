@@ -47,10 +47,18 @@ let switcherTop: number | null = null;
 
 const YEAR_BTN = "ix-press ix-rail-btn h-7 w-7 shrink-0 grid place-items-center rounded-full text-sm disabled:opacity-30";
 
-/** The page for a year: the newest on /overview, a past one at /overview/[year]. */
-const yearPath = (year: number, latest: number) => (year === latest ? "/overview" : `/overview/${year}`);
+/** The page for a year: the newest on /overview, a past one at /overview/[year] (or under the Years page's /years). */
+const yearPath = (year: number, latest: number, base: string) => (year === latest ? base : `${base}/${year}`);
 
-export default function PostElectionAnalysis({ rows, legislature, year, years, housePvPrev, nationalPvPrev }: { rows: PostElectionRow[]; legislature: Record<string, LegChamberResult[]>; year: number; years: number[]; housePvPrev: Record<string, number>; nationalPvPrev: number | null }) {
+export default function PostElectionAnalysis({ rows, legislature, year, years, housePvPrev, nationalPvPrev, basePath = "/overview", embedded = false, stateNames }: {
+  rows: PostElectionRow[]; legislature: Record<string, LegChamberResult[]>; year: number; years: number[]; housePvPrev: Record<string, number>; nationalPvPrev: number | null;
+  /** Where the year switcher goes: the Years page (/years) reuses these boxes under its own URLs. */
+  basePath?: string;
+  /** Inside another page (the Years page), which shows the national votes itself: no generic ballot cards. */
+  embedded?: boolean;
+  /** State names by abbreviation. With them, a state whose only election in the year was its legislature (an odd year) gets a box too. */
+  stateNames?: Record<string, string>;
+}) {
   const router = useRouter();
   useTouchHover(tiltCard, untiltCard);
   const hash = useSyncExternalStore(subscribeHash, () => window.location.hash, () => "");
@@ -66,21 +74,26 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
   const states = useMemo(() => {
     const m = new Map<string, PostElectionRow[]>();
     for (const r of rows) m.set(r.prior.state, [...(m.get(r.prior.state) ?? []), r]);
+    if (stateNames) for (const [st, chambers] of Object.entries(legislature)) if (!m.has(st) && stateNames[st] && chambers.some((c) => !c.noElection)) m.set(st, []);
     return new Map([...m.entries()].sort((a, b) => a[0].localeCompare(b[0])));
-  }, [rows]);
+  }, [rows, legislature, stateNames]);
+  // An odd year has no House vote to colour by: the boxes read the governor's race instead.
+  const hasHouse = useMemo(() => rows.some((r) => r.prior.office === "house"), [rows]);
   /** The national House popular vote: every House race's counted votes, the baseline Lean vs GB subtracts. */
   const nationalPv = useMemo(() => housePopularVote(rows.filter((r) => r.prior.office === "house")).margin, [rows]);
   const nationalSwing = nationalPv != null && nationalPvPrev != null ? nationalPv - nationalPvPrev : null;
   const boxes = useMemo(() => {
     const list = [...states.entries()].map(([st, stateList]) => {
+      const name = stateList[0]?.prior.stateName ?? stateNames?.[st] ?? st;
+      if (!hasHouse) return { st, name, margin: stateList.find((r) => r.prior.office === "governor")?.proj.currentMargin ?? null };
       const pv = housePopularVote(stateList.filter((r) => r.prior.office === "house")).margin;
       const prev = housePvPrev[st];
       const margin = pv == null ? null : measure === "lean" ? (nationalPv == null ? null : pv - nationalPv) : measure === "swing" ? (prev == null ? null : pv - prev) : pv;
-      return { st, name: stateList[0].prior.stateName, margin };
+      return { st, name, margin };
     });
     return sort === "alpha" ? list : list.sort((a, b) => sortValue(a.margin, sort) - sortValue(b.margin, sort));
-  }, [states, sort, measure, nationalPv, housePvPrev]);
-  const label = measure === "lean" ? "House lean vs GB" : measure === "swing" ? `House swing vs ${swingYear}` : "House popular vote";
+  }, [states, sort, measure, nationalPv, housePvPrev, hasHouse, stateNames]);
+  const label = !hasHouse ? "Governor margin" : measure === "lean" ? "House lean vs GB" : measure === "swing" ? `House swing vs ${swingYear}` : "House popular vote";
   const legendLabel = measure === "lean" ? `${label} (${fmtCall(nationalPv)})` : measure === "swing" ? `${label} (${fmtCall(nationalSwing)})` : label;
   const measures: { key: BoxMeasure; text: string; title: string; disabled?: boolean }[] = [
     { key: "gb", text: "House GB", title: "Each state's House popular vote" },
@@ -125,15 +138,15 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
   const pickYear = (y: number) => {
     if (y === year) return;
     switcherTop = switcherRef.current?.getBoundingClientRect().top ?? null;
-    const href = `${yearPath(y, years[0])}${window.location.hash}`;
+    const href = `${yearPath(y, years[0], basePath)}${window.location.hash}`;
     startSwitch(() => router.push(href, { scroll: false }));
   };
   // Fetch the neighbouring years when the pointer reaches the switcher, so ‹ › land at once.
-  const prefetchNeighbours = () => { for (const y of [older, newer]) if (y != null) router.prefetch(yearPath(y, years[0])); };
+  const prefetchNeighbours = () => { for (const y of [older, newer]) if (y != null) router.prefetch(yearPath(y, years[0], basePath)); };
 
   return (
     <div className="space-y-4" aria-busy={switching || undefined} style={{ opacity: switching ? 0.55 : 1, transition: "opacity 120ms" }}>
-      <GenericBallots rows={rows} />
+      {!embedded && <GenericBallots rows={rows} />}
       <div className="flex flex-wrap items-center gap-2">
         {/* As the legislative district pages' selector: ‹ › step a year, the pill opens the list. */}
         <div ref={switcherRef} className="flex items-center gap-1.5" onPointerEnter={prefetchNeighbours} onFocus={prefetchNeighbours}>
@@ -152,14 +165,14 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
             </button>
           ))}
         </div>
-        <div className="flex w-fit rounded-md p-0.5" style={{ background: "var(--app-tab-bg)" }} role="group" aria-label="What the boxes measure">
+        {hasHouse && <div className="flex w-fit rounded-md p-0.5" style={{ background: "var(--app-tab-bg)" }} role="group" aria-label="What the boxes measure">
           {measures.map(({ key, text, title, disabled }) => (
             <button key={key} type="button" onClick={() => setMeasure(key)} aria-pressed={measure === key} disabled={disabled} title={title} className="rounded px-3 py-1 text-xs font-semibold disabled:cursor-not-allowed disabled:opacity-40"
               style={{ background: measure === key ? "var(--app-panel)" : "transparent", color: measure === key ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
               {text}
             </button>
           ))}
-        </div>
+        </div>}
       </div>
       <div className="relative" onMouseMove={onTipMove} onMouseLeave={() => setHovered(null)}>
       <nav aria-label="States" className="grid gap-1 sm:gap-1.5" style={{ gridTemplateColumns: "repeat(10, minmax(0, 1fr))" }}>
@@ -180,8 +193,8 @@ export default function PostElectionAnalysis({ rows, legislature, year, years, h
         <span className="font-mono font-bold uppercase tracking-wider">{legendLabel}</span>
         {BANDS.map(([m, label]) => <span key={label} className="flex items-center gap-1.5"><i className="inline-block h-2.5 w-4" style={{ background: getRaceColor(m) }} />{label}</span>)}
       </div>
-      {stateRows.length > 0
-        ? <StateSection rows={stateRows} legislature={legislature[picked] ?? []} year={year} housePvPrev={housePvPrev[picked] ?? null} onSelect={openRace} />
+      {states.has(picked)
+        ? <StateSection rows={stateRows} legislature={legislature[picked] ?? []} year={year} housePvPrev={housePvPrev[picked] ?? null} onSelect={openRace} state={{ abbr: picked, name: stateNames?.[picked] ?? picked }} />
         : <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>Pick a state to open its profile.</p>}
     </div>
   );

@@ -6,6 +6,7 @@ import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "./maps/PinnedMapCard";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
@@ -119,6 +120,43 @@ function PartyBadge({ party, t }: { party: "D" | "R" | "I" | null; t: Theme }) {
   );
 }
 
+/** The state's hover card: its name, then the figure for the mode on the map. The phone's pinned
+ *  card is this same body with a close button (`aside`) and a link to the state page (`footer`). */
+export function StateCardBody({ row, mode, t, aside, footer }: { row: StateRow; mode: MapMode; t: Theme; aside?: React.ReactNode; footer?: React.ReactNode }) {
+  return (
+    <>
+      <div className="mb-1 flex items-start justify-between gap-2">
+        <div className="min-w-0 text-xs font-bold" style={{ color: t.textPrimary }}>{row.name}</div>
+        {aside}
+      </div>
+      {mode === "governor" && <PartyBadge party={row.govParty} t={t} />}
+      {mode === "senate" && (
+        <div className="text-[10px]" style={{ color: t.textMuted }}>
+          Senate: <span style={{ color: t.demText }}>{row.senateDem}D</span> / <span style={{ color: t.repText }}>{row.senateRep}R</span>
+          {row.senateInd > 0 && <span style={{ color: "#b8a020" }}> / {row.senateInd}I</span>}
+        </div>
+      )}
+      {mode === "house" && (
+        <div className="text-[10px]" style={{ color: t.textMuted }}>
+          House: <span style={{ color: t.demText }}>{row.houseDem}D</span> / <span style={{ color: t.repText }}>{row.houseRep}R</span>
+        </div>
+      )}
+      {mode === "legislature" && (
+        <div className="text-[10px] flex flex-col gap-0.5" style={{ color: t.textMuted }}>
+          <span>St. House: <span style={{ color: t.demText }}>{row.stateLegHouseDem ?? "—"}D</span> / <span style={{ color: t.repText }}>{row.stateLegHouseRep ?? "—"}R</span></span>
+          <span>St. Senate: <span style={{ color: t.demText }}>{row.stateLegSenateDem ?? "—"}D</span> / <span style={{ color: t.repText }}>{row.stateLegSenateRep ?? "—"}R</span></span>
+        </div>
+      )}
+      {footer && <div className="mt-2">{footer}</div>}
+    </>
+  );
+}
+
+export const STATE_CARD_BOX = (t: Theme) => ({ padding: "7px 10px", background: t.panel, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" });
+/** The pinned card is wider than the hover box, to fit its button. */
+export const STATE_PIN_WIDTH = 190;
+export const stateHref = (row: StateRow, mode: MapMode) => (mode === "legislature" ? `/states/${row.id}#legislature` : `/states/${row.id}`);
+
 export default function StatesOverviewMap({
   rows,
   theme: t,
@@ -138,14 +176,32 @@ export default function StatesOverviewMap({
   const [viewChanged, setViewChanged] = useState(false);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
+  // Where the press that selected a state landed: a phone shows the hover card pinned there.
+  const [pin, setPin] = useState<{ abbr: string; at: MapPin } | null>(null);
+  const pick = (row: StateRow, isSelected: boolean, e: { clientX: number; clientY: number; target: EventTarget | null }) => {
+    const at = pinFromEvent(e);
+    setPin(isSelected || !at ? null : { abbr: row.abbr, at });
+    onSelect(isSelected ? null : row);
+  };
 
   const rowByName = Object.fromEntries(rows.map((r) => [r.name, r]));
 
   return (
     <div
       className="relative w-full h-full"
+      data-map-pin=""
       onMouseMove={tip.onMouseMove}
     >
+      {/* Phones: the hover card, pinned where the tap landed (the desktop list column shows the selection instead) */}
+      {selected && pin?.abbr === selected.abbr && (
+        <PinnedMapCard pin={pin.at} width={STATE_PIN_WIDTH} label={selected.name} className="md:hidden">
+          <div className="rounded-lg" style={STATE_CARD_BOX(t)}>
+            <StateCardBody row={selected} mode={mode} t={t}
+              aside={<PinnedCardClose onClick={() => onSelect(null)} />}
+              footer={<PinnedCardLink href={stateHref(selected, mode)}>Go to {selected.name}</PinnedCardLink>} />
+          </div>
+        </PinnedMapCard>
+      )}
       {/* Hover tooltip */}
       {hovered && (() => {
         const tipW = 160;
@@ -154,31 +210,10 @@ export default function StatesOverviewMap({
             className="hidden md:block absolute z-20 pointer-events-none rounded-lg"
             style={{
               width: tipW,
-              padding: "7px 10px",
-              background: t.panel,
-              border: `1px solid ${t.border}`,
-              boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+              ...STATE_CARD_BOX(t),
             }}
           >
-            <div className="font-bold text-xs mb-1" style={{ color: t.textPrimary }}>{hovered.name}</div>
-            {mode === "governor" && <PartyBadge party={hovered.govParty} t={t} />}
-            {mode === "senate" && (
-              <div className="text-[10px]" style={{ color: t.textMuted }}>
-                Senate: <span style={{ color: t.demText }}>{hovered.senateDem}D</span> / <span style={{ color: t.repText }}>{hovered.senateRep}R</span>
-                {hovered.senateInd > 0 && <span style={{ color: "#b8a020" }}> / {hovered.senateInd}I</span>}
-              </div>
-            )}
-            {mode === "house" && (
-              <div className="text-[10px]" style={{ color: t.textMuted }}>
-                House: <span style={{ color: t.demText }}>{hovered.houseDem}D</span> / <span style={{ color: t.repText }}>{hovered.houseRep}R</span>
-              </div>
-            )}
-            {mode === "legislature" && (
-              <div className="text-[10px] flex flex-col gap-0.5" style={{ color: t.textMuted }}>
-                <span>St. House: <span style={{ color: t.demText }}>{hovered.stateLegHouseDem ?? "—"}D</span> / <span style={{ color: t.repText }}>{hovered.stateLegHouseRep ?? "—"}R</span></span>
-                <span>St. Senate: <span style={{ color: t.demText }}>{hovered.stateLegSenateDem ?? "—"}D</span> / <span style={{ color: t.repText }}>{hovered.stateLegSenateRep ?? "—"}R</span></span>
-              </div>
-            )}
+            <StateCardBody row={hovered} mode={mode} t={t} />
           </div>
         );
       })()}
@@ -206,9 +241,9 @@ export default function StatesOverviewMap({
                     geography={geo}
                     onMouseEnter={() => row && setHovered(row)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => {
+                    onClick={(e: React.MouseEvent) => {
                       if (Date.now() < ignoreClickUntilRef.current) return;
-                      if (row) onSelect(isSelected ? null : row);
+                      if (row) pick(row, isSelected, e);
                     }}
                     onPointerDown={(e: React.PointerEvent) => {
                       if (e.pointerType !== "touch") {
@@ -224,7 +259,7 @@ export default function StatesOverviewMap({
                       if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
 
                       ignoreClickUntilRef.current = Date.now() + 500;
-                      onSelect(isSelected ? null : row);
+                      pick(row, isSelected, e);
                     }}
                     style={{
                       default: {

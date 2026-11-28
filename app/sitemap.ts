@@ -17,12 +17,13 @@ import { generateStaticParams as precinctDistrictPages } from "@/app/analysis/di
 import { generateStaticParams as pollsterPages } from "@/app/analysis/pollsters/[slug]/page";
 import { generateStaticParams as methodologyPages } from "@/app/methodology/[[...model]]/page";
 import { countyHref } from "@/lib/countyHref";
+import { YEAR_PAGE_YEARS } from "@/lib/yearPageTypes";
 
 // Every public page. Left out: /audit (internal data checks), /model/state and /model/district
 // (views of a query string, reached from the pages listed here), and the redirects /states
 // (→ /analysis/delegation) and /analysis/oh-31 (→ its /analysis/districts page, listed below).
 const STATIC = [
-  "/overview", "/results", "/enight", "/forecast", "/house", "/senate", "/governor", "/historical", "/model", "/war",
+  "/overview", "/years", "/results", "/enight", "/forecast", "/house", "/senate", "/governor", "/historical", "/model", "/war",
   "/analysis", "/analysis/calendar", "/analysis/delegation", "/analysis/forecasts", "/analysis/markets", "/analysis/model-review",
   "/analysis/generic-ballot", "/analysis/polling-misses", "/analysis/pollsters", "/analysis/popular-vote", "/analysis/turnout",
   "/district-finder", "/about",
@@ -49,6 +50,7 @@ export default async function sitemap({ id }: { id: number | string | Promise<nu
     return slugs.map((slug) => ({ url: `${SITE_URL}/candidates/${slug}` }));
   }
   const paths: string[] = [...STATIC];
+  for (const year of YEAR_PAGE_YEARS.slice(1)) paths.push(`/years/${year}`);
   const add = (prefix: string, params: { id?: string; year?: string; abbr?: string; slug?: string }[], key: "id" | "abbr" | "slug" = "id") => {
     for (const p of params) paths.push(`${prefix}/${p[key]}${p.year ? `/${p.year}` : ""}`);
   };

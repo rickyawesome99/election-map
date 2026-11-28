@@ -9,6 +9,7 @@ import type {  } from "@/data/forecastData";
 import type { ForecastedRace } from "@/lib/forecast";
 import { useDarkMode, usePageBg } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 
 // Per-state TopoJSON, clipped to the shoreline and split from public/congressional-districts-2026.json
 // by scripts/build-display-district-maps.mjs.
@@ -42,13 +43,81 @@ const STATE_PROJ: Record<string, [number, number, number]> = {
   WI: [-89.8, 44.6, 4200],  WY: [-107.5, 43.0, 4800],
 };
 
+const TIP_WIDTH = 190;
+
+/** A district's hover card: name, rating, projected margin and the two candidates' shares. Pinned
+ *  by a tap on a phone, the same card takes a close button (`aside`) and a link (`footer`). */
+function DistrictCard({ race: hovered, boxRef, aside, footer }: { race: ForecastedRace; boxRef?: React.Ref<HTMLDivElement>; aside?: React.ReactNode; footer?: React.ReactNode }) {
+  const pinned = !!(aside || footer);
+  const demPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
+  const repPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
+  const marginAbs = Math.abs(hovered.margin);
+  const marginLabel = hovered.margin <= 0 ? `D+${marginAbs.toFixed(1)}` : `R+${marginAbs.toFixed(1)}`;
+  const marginColor = hovered.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
+  const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
+  return (
+    <div ref={boxRef}
+      className={pinned ? "rounded-lg" : "hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"}
+      style={{
+        width: TIP_WIDTH,
+        padding: "6px 8px",
+        background: "var(--app-panel)",
+        border: "1px solid var(--app-border)",
+        color: "var(--app-text-primary)",
+        boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+      }}
+    >
+      <div className="flex items-center justify-between gap-1 mb-1.5">
+        <div className="flex items-center gap-1">
+          <span className="font-bold text-xs">{hovered.name}</span>
+          <span
+            className="font-semibold px-1 py-0.5 rounded"
+            style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap", fontSize: 10 }}
+          >
+            {hovered.rating}
+          </span>
+        </div>
+        <span className="font-bold shrink-0" style={{ fontSize: 15, color: marginColor }}>
+          {marginLabel}
+        </span>
+        {aside}
+      </div>
+      {hovered.candidates ? (
+        <div className="mb-1.5">
+          <div className="flex justify-between items-baseline">
+            <span className="truncate mr-1" style={{ color: "var(--party-dem)", fontSize: 11 }}>{hovered.candidates.dem.name}{hovered.candidates.dem.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
+            <span className="font-semibold shrink-0" style={{ color: "var(--party-dem)", fontSize: 11 }}>{demPct.toFixed(1)}%</span>
+          </div>
+          <div className="flex justify-between items-baseline">
+            <span className="truncate mr-1" style={{ color: "var(--party-rep)", fontSize: 11 }}>{hovered.candidates.rep.name}{hovered.candidates.rep.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
+            <span className="font-semibold shrink-0" style={{ color: "var(--party-rep)", fontSize: 11 }}>{repPct.toFixed(1)}%</span>
+          </div>
+        </div>
+      ) : (
+        <div className="flex gap-2 mb-1.5">
+          <span className="font-semibold" style={{ color: "var(--party-dem)", fontSize: 11 }}>D {demPct.toFixed(1)}%</span>
+          <span className="font-semibold" style={{ color: "var(--party-rep)", fontSize: 11 }}>R {repPct.toFixed(1)}%</span>
+        </div>
+      )}
+      <div className="flex rounded-full overflow-hidden" style={{ height: 3 }}>
+        <div style={{ width: `${demPct}%`, background: "var(--party-dem-fill)" }} />
+        <div style={{ width: `${repPct}%`, background: "var(--party-rep-fill)" }} />
+      </div>
+      {footer && <div className="mt-2">{footer}</div>}
+    </div>
+  );
+}
+
 export default function StateDistrictMap({
   houseRaces,
   stateAbbr,
   stateName,
   selected,
   onSelect,
+  pinTaps = false,
 }: {
+  /** True on a phone: a tap pins the hover card where it landed, with a close button and a link to the race. */
+  pinTaps?: boolean;
   houseRaces: ForecastedRace[];
   stateAbbr: string;
   stateName: string;
@@ -56,6 +125,7 @@ export default function StateDistrictMap({
   onSelect: (race: ForecastedRace | null) => void;
 }) {
   const [hovered, setHovered] = useState<ForecastedRace | null>(null);
+  const [pin, setPin] = useState<{ id: string; at: MapPin } | null>(null);
   const tip = useMapTooltip(16, 8);
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -108,68 +178,18 @@ export default function StateDistrictMap({
       <div
         ref={containerRef}
         className="relative"
+        data-map-pin=""
         style={{ height: 360, background: "var(--app-bg)" }}
         onMouseMove={tip.onMouseMove}
       >
         {/* Hover tooltip */}
-        {hovered && (() => {
-          const demPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
-          const repPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
-          const marginAbs = Math.abs(hovered.margin);
-          const marginLabel = hovered.margin <= 0 ? `D+${marginAbs.toFixed(1)}` : `R+${marginAbs.toFixed(1)}`;
-          const marginColor = hovered.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
-          const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
-          const tipW = 190;
-          return (
-            <div ref={tip.tooltipRef}
-              className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
-              style={{
-                width: tipW,
-                padding: "6px 8px",
-                background: "var(--app-panel)",
-                border: "1px solid var(--app-border)",
-                color: "var(--app-text-primary)",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
-              }}
-            >
-              <div className="flex items-center justify-between gap-1 mb-1.5">
-                <div className="flex items-center gap-1">
-                  <span className="font-bold text-xs">{hovered.name}</span>
-                  <span
-                    className="font-semibold px-1 py-0.5 rounded"
-                    style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap", fontSize: 10 }}
-                  >
-                    {hovered.rating}
-                  </span>
-                </div>
-                <span className="font-bold shrink-0" style={{ fontSize: 15, color: marginColor }}>
-                  {marginLabel}
-                </span>
-              </div>
-              {hovered.candidates ? (
-                <div className="mb-1.5">
-                  <div className="flex justify-between items-baseline">
-                    <span className="truncate mr-1" style={{ color: "var(--party-dem)", fontSize: 11 }}>{hovered.candidates.dem.name}{hovered.candidates.dem.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
-                    <span className="font-semibold shrink-0" style={{ color: "var(--party-dem)", fontSize: 11 }}>{demPct.toFixed(1)}%</span>
-                  </div>
-                  <div className="flex justify-between items-baseline">
-                    <span className="truncate mr-1" style={{ color: "var(--party-rep)", fontSize: 11 }}>{hovered.candidates.rep.name}{hovered.candidates.rep.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
-                    <span className="font-semibold shrink-0" style={{ color: "var(--party-rep)", fontSize: 11 }}>{repPct.toFixed(1)}%</span>
-                  </div>
-                </div>
-              ) : (
-                <div className="flex gap-2 mb-1.5">
-                  <span className="font-semibold" style={{ color: "var(--party-dem)", fontSize: 11 }}>D {demPct.toFixed(1)}%</span>
-                  <span className="font-semibold" style={{ color: "var(--party-rep)", fontSize: 11 }}>R {repPct.toFixed(1)}%</span>
-                </div>
-              )}
-              <div className="flex rounded-full overflow-hidden" style={{ height: 3 }}>
-                <div style={{ width: `${demPct}%`, background: "var(--party-dem-fill)" }} />
-                <div style={{ width: `${repPct}%`, background: "var(--party-rep-fill)" }} />
-              </div>
-            </div>
-          );
-        })()}
+        {hovered && <DistrictCard race={hovered} boxRef={tip.tooltipRef} />}
+        {/* Phones: the same card, pinned where the tap landed */}
+        {pinTaps && selected && pin?.id === selected.id && (
+          <PinnedMapCard pin={pin.at} width={TIP_WIDTH} label={selected.name}>
+            <DistrictCard race={selected} aside={<PinnedCardClose onClick={() => onSelect(null)} />} footer={<PinnedCardLink href={`/house/${selected.name.toLowerCase()}`}>Go to {selected.name}</PinnedCardLink>} />
+          </PinnedMapCard>
+        )}
 
         <ComposableMap
           width={mapViewport.width}
@@ -193,7 +213,11 @@ export default function StateDistrictMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(race)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => onSelect(isSelected ? null : race)}
+                    onClick={(e: React.MouseEvent) => {
+                      const at = pinFromEvent(e);
+                      setPin(isSelected || !at ? null : { id: race.id, at });
+                      onSelect(isSelected ? null : race);
+                    }}
                     style={{
                       default: {
                         fill,

@@ -313,8 +313,10 @@ export function chamberResults2026(abbr: string, chamber: Chamber): AtlasChamber
   }
   const block = load().blocks.get(`${abbr}|${chamber}`)!;
   const detail = chamberMarginYear(abbr, String(RESULTS_YEAR), { [chamber]: block })?.chambers[0] ?? null;
-  const w = detail ? detail.contested.weight + detail.imputed.weight : 0;
-  const adjusted = detail && w > 0 ? ((detail.contested.margin ?? 0) * detail.contested.weight + (detail.imputed.margin ?? 0) * detail.imputed.weight) / w : null;
+  // Adjusted = the U.S. House rule: each seat without a D-vs-R race given its 2024 presidential
+  // margin + the contested seats' offset at the chamber's median contested turnout.
+  const adjusted = detail?.adjusted.margin ?? null;
+  const w = detail?.adjusted.votes ?? 0;
 
   return {
     year: RESULTS_YEAR,
@@ -328,7 +330,7 @@ export function chamberResults2026(abbr: string, chamber: Chamber): AtlasChamber
     raw: { dem, rep, oth: Math.max(0, votes - dem - rep), votes, margin: votes > 0 ? ((rep - dem) / votes) * 100 : null },
     adjusted,
     adjustedVotes: w,
-    imputed: detail?.imputed.districts ?? 0,
+    imputed: detail?.adjusted.filled ?? 0,
     asOf: load().asOf,
   };
 }

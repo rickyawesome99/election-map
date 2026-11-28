@@ -16,10 +16,10 @@ import { RaceTypeHeader, ForecastRaceCards } from "./ForecastLedger";
 export { SEAT_HOLDOVERS, TOTAL_SEATS_BY_TYPE } from "@/lib/forecastTypes";
 import Sidebar, { ForecastCardBox, ForecastRatingPill, forecastCard, noElectionCard, raceHref } from "./Sidebar";
 import CountyTooltip, { CountyCardClose, CountyCardLink } from "./CountyTooltip";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "./maps/PinnedMapCard";
 import StatesOverviewMap, { type MapMode, type StateRow } from "./StatesOverviewMap";
 import StatesCartogramGrid from "./StatesCartogramGrid";
 import StatesLedgerList from "./StatesLedgerList";
-import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode, useFestive } from "@/lib/useDarkMode";
 import { useMapTooltip } from "@/lib/useMapTooltip";
@@ -189,7 +189,7 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
   selectedNoElAbbr: string | null;
   t: Theme;
   onHover: (race: ForecastSummary | null, noEl: NoElectionEntry | null) => void;
-  onSelect: (race: ForecastSummary | null, noEl: NoElectionEntry | null) => void;
+  onSelect: (race: ForecastSummary | null, noEl: NoElectionEntry | null, at: MapPin | null) => void;
   onOpen: (race: ForecastSummary | null, noEl: NoElectionEntry | null, newTab: boolean) => void;
 }) {
   const pointerStartRef = useRef<{ x: number; y: number } | null>(null);
@@ -217,10 +217,12 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
         const isSelected = !!(match && selectedId === match.id);
         const isSelectedNoEl = !!(noElMatch && selectedNoElAbbr === noElMatch.abbr);
         const isInteractive = !!(match || noElMatch);
-        // A tap opens the preview card (phones/tablets); a mouse click goes straight to the page.
-        const selectGeography = () => {
-          if (match) onSelect(match, null);
-          else if (noElMatch) onSelect(null, noElMatch);
+        // A tap pins the hover card where it landed (phones/tablets), and a second tap on the
+        // same shape closes it; a mouse click goes straight to the page.
+        const selectGeography = (at: MapPin | null) => {
+          if (isSelected || isSelectedNoEl) onSelect(null, null, null);
+          else if (match) onSelect(match, null, at);
+          else if (noElMatch) onSelect(null, noElMatch, at);
         };
         const openGeography = (newTab: boolean) => {
           if (match) onOpen(match, null, newTab);
@@ -243,7 +245,7 @@ const ForecastGeoLayer = memo(function ForecastGeoLayer({
               pointerStartRef.current = null;
               // A pan of the map ends on a district too — only a press that stayed put counts.
               if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > (e.pointerType === "touch" ? 10 : 5)) return;
-              if (e.pointerType === "touch") selectGeography();
+              if (e.pointerType === "touch") selectGeography(pinFromEvent(e));
               else openGeography(e.metaKey || e.ctrlKey);
             }}
             style={{
@@ -299,6 +301,8 @@ export default function ForecastMap({
   const noElection = forecast?.[raceType].noElection ?? NO_ENTRIES;
   const [selected, setSelected] = useState<ForecastSummary | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
+  // Where the tap that selected a race landed: the pinned hover card's place on a phone.
+  const [pin, setPin] = useState<MapPin | null>(null);
   const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
   const [statesMode, setStatesMode] = useState<MapMode>("legislature");
   const [statesView, setStatesView] = useState<"map" | "cartogram">("map");
@@ -352,9 +356,10 @@ export default function ForecastMap({
     setHovered(race);
     setHoveredNoElection(noEl);
   }, []);
-  const onSelect = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null) => {
+  const onSelect = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null, at: MapPin | null) => {
     setSelected(race);
     setSelectedNoElection(noEl);
+    setPin(at);
   }, []);
   const onOpen = useCallback((race: ForecastSummary | null, noEl: NoElectionEntry | null, newTab: boolean) => {
     const href = race ? raceHref(raceType, race) : noEl ? `/${raceType}/${noEl.abbr.toLowerCase()}` : null;
@@ -445,20 +450,15 @@ export default function ForecastMap({
                 <StatesOverviewMap rows={stateRows} theme={t} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
               </div>
             ) : (
-              <StatesCartogramGrid rows={stateRows} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
+              <StatesCartogramGrid rows={stateRows} theme={t} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
             )}
           </div>
         )}
 
-        {/* ── Mobile selected-state popup (below map, hidden on desktop where the list column shows selection inline) ── */}
-        {activeTab === "states" && selectedStateRow && (
-          <div className="md:hidden mt-3">
-            <StatesSelectedCard row={selectedStateRow} mode={statesMode} onClose={() => setSelectedStateRow(null)} />
-          </div>
-        )}
-
         {/* ── Map card (forecast only — counties renders its own layout below) ── */}
-        {activeTab === "forecast" && <div
+        {/* The outer box measures taps and holds the pinned card, so the map's rounded clip can't cut it. */}
+        {activeTab === "forecast" && <div className="relative" data-map-pin="">
+        <div
           className="relative aspect-[8/5] w-full overflow-hidden rounded-xl"
           onMouseMove={tip.onMouseMove}
         >
@@ -535,6 +535,28 @@ export default function ForecastMap({
             </ForecastCardBox>
           )}
 
+        </div>
+          {/* ── Phones: a tap pins the hover card itself, with a close button and a link to the page ── */}
+          {pin && selected && (
+            <PinnedMapCard pin={pin} label={selected.name} className="md:hidden">
+              <CountyTooltip
+                {...forecastCard(selected)}
+                variant="pinned"
+                aside={<span className="flex items-start gap-1.5"><ForecastRatingPill margin={selected.margin} /><PinnedCardClose onClick={() => setSelected(null)} /></span>}
+                footer={<PinnedCardLink href={raceHref(raceType, selected)}>Go to {selected.name}</PinnedCardLink>}
+              />
+            </PinnedMapCard>
+          )}
+          {pin && selectedNoElection && (
+            <PinnedMapCard pin={pin} label={selectedNoElection.state} className="md:hidden">
+              <CountyTooltip
+                {...noElectionCard(selectedNoElection)}
+                variant="pinned"
+                aside={<PinnedCardClose onClick={() => setSelectedNoElection(null)} />}
+                footer={<PinnedCardLink href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}>Go to {selectedNoElection.state}</PinnedCardLink>}
+              />
+            </PinnedMapCard>
+          )}
         </div>}
 
         {/* ── Quiet map legend (forecast tab only — sits under the map, not floating over it) ── */}
@@ -567,30 +589,6 @@ export default function ForecastMap({
         {/* ── Counties (owns its own hero/controls/map/results layout) ── */}
         {/* Owns the historical hero (title + controls) as well as the dashboard, map and results */}
         {activeTab === "historical" && <NationalCountyMap theme={t} />}
-
-        {/* ── Mobile selected panels (below map): the county maps' panel layout ── */}
-        {selected && (
-          <div className="mt-3 md:hidden">
-            <CountyTooltip
-              {...forecastCard(selected)}
-              variant="panel"
-              size="wide"
-              aside={<><ForecastRatingPill margin={selected.margin} /><CountyCardClose onClick={() => setSelected(null)} label="Close selected race" small /></>}
-              footer={<CountyCardLink href={raceHref(raceType, selected)}>Race page →</CountyCardLink>}
-            />
-          </div>
-        )}
-        {selectedNoElection && (
-          <div className="mt-3 md:hidden">
-            <CountyTooltip
-              {...noElectionCard(selectedNoElection)}
-              variant="panel"
-              size="wide"
-              aside={<CountyCardClose onClick={() => setSelectedNoElection(null)} label="Close" small />}
-              footer={<CountyCardLink href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}>Seat page →</CountyCardLink>}
-            />
-          </div>
-        )}
 
         {/* ── Below-map table (memoized — stable across mouse-move re-renders) ── */}
         {useMemo(() => (

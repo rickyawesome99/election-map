@@ -14,7 +14,7 @@ import { startPendingNav } from "@/lib/navPending";
 import { chamberDistrictHref } from "@/lib/statePageLinks";
 import { districtResultMargin, useStateLegResults } from "@/lib/useStateLegResults";
 import { districtDisplayLabel, indexByNormalizedKey, lookupByDistrictCode } from "@/lib/stateLegDistrictKey";
-import { getRatingColors, marginToRating } from "@/lib/colorScale";
+import { getRatingColors } from "@/lib/colorScale";
 import CandidateLink from "@/components/CandidateLink";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
 import { ResultRow } from "@/components/StatewideVoteHistoryPanel";
@@ -80,7 +80,7 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
   const [year, setYear] = useState<number>(electionYear);
   const [selectedHouse, setSelectedHouse] = useState<ForecastedRace | null>(null);
   // On desktop a House district or county click on the map opens its page (hover already shows
-  // the details); phones keep the tap-to-select panel.
+  // the details); on a phone a tap pins that same hover card to the map, with a link to the page.
   const desktop = useDesktopPointer();
   const router = useRouter();
   const openPage = useCallback((href: string) => { startPendingNav(href); router.push(href); }, [router]);
@@ -213,9 +213,10 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
             repParty={countyMapLayer.repParty}
             height={360}
             onOpen={desktop ? openPage : undefined}
+            pinTaps={!desktop}
           />
         ) : (
-          <StateCountyMap stateAbbr={state.abbr} stateName={state.name} showTpl showLabel={false} countyTpl={data.counties.tpl} countyVotes={data.counties.votes} height={360} onOpen={desktop ? openPage : undefined} />
+          <StateCountyMap stateAbbr={state.abbr} stateName={state.name} showTpl showLabel={false} countyTpl={data.counties.tpl} countyVotes={data.counties.votes} height={360} onOpen={desktop ? openPage : undefined} pinTaps={!desktop} />
         )) : (
         <StateLayerMap
           stateAbbr={state.abbr}
@@ -263,45 +264,6 @@ export default function StateExplorer({ data, electionYear }: { data: StatePageD
           </div>
         </div>
 
-        {/* Selected district */}
-        {layer === "house" && selectedHouse && !desktop && (() => {
-          const r = selectedHouse;
-          const rating = marginToRating(r.margin);
-          const { bg, text } = getRatingColors(rating);
-          const demPct = Math.max(0, Math.min(100, 50 - r.margin / 2));
-          return (
-            <div className="mt-3 pt-3" style={{ borderTop: "1px solid var(--app-border)" }}>
-              <div className="flex items-start justify-between gap-4">
-                <div className="min-w-0 flex-1">
-                  <div className="flex items-center gap-2 flex-wrap mb-1.5">
-                    <span className="text-base font-bold" style={{ color: "var(--app-text-primary)" }}>{r.name}</span>
-                    <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>{rating}</span>
-                    <button type="button" onClick={() => setSelectedHouse(null)} className="ix-press text-xs" style={{ color: "var(--app-text-very-muted)" }} aria-label="Clear selection">×</button>
-                  </div>
-                  {r.candidates ? (
-                    <div className="flex flex-col gap-0.5">
-                      {[r.candidates.dem, r.candidates.rep].map((c, i) => (
-                        <div key={c.name + i} className="flex items-baseline justify-between gap-2">
-                          <span className="flex min-w-0 items-baseline gap-2">
-                            <CandidateLink name={c.name} state={state.abbr} className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.1rem", fontWeight: 700, color: partyColor(c.party) }}>
-                              {c.name}
-                            </CandidateLink>
-                            <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{partyTag(c.party, c.incumbent)}</span>
-                          </span>
-                          <span className="shrink-0 text-sm font-bold tabular-nums" style={{ color: partyColor(c.party) }}>{(i === 0 ? demPct : 100 - demPct).toFixed(1)}%</span>
-                        </div>
-                      ))}
-                    </div>
-                  ) : (
-                    <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
-                  )}
-                  <Link prefetch={false} href={`/house/${r.name.toLowerCase()}`} className="mt-2 inline-block text-xs font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>View full race →</Link>
-                </div>
-                <div className="tabular-nums font-extrabold shrink-0" style={{ fontSize: "1.75rem", lineHeight: 1, color: marginColor(r.margin) }}>{fmtMargin(r.margin)}</div>
-              </div>
-            </div>
-          );
-        })()}
         {legChamber && legPastYear && selectedLegKey && (() => {
           const label = (legPastOnCurrentLines ? legDistrict?.label : undefined) ?? districtDisplayLabel(selectedLegKey, blockOf(legChamber)?.label ?? "");
           const r = legPastResult;

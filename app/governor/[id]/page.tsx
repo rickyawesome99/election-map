@@ -293,6 +293,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               <div className="mt-4">
                 <PastElectionCountyMap
                   panelSize="wide"
+                  pinTaps="phone"
                   stateAbbr={id.toUpperCase()}
                   stateName={race.name}
                   counties={projectedCountyMapEntries(countyProjection)}

@@ -7,6 +7,8 @@ import { feature, mesh } from "topojson-client";
 import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, Geometry, MultiLineString } from "geojson";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { useDesktopPointer } from "@/lib/useDesktopPointer";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { usePanZoom } from "@/lib/usePanZoom";
 import { BUBBLE_LAND, BUBBLE_LINE, bubbleColor, bubbleMaxNet, bubbleNetOf, bubbleMaxR, bubbleRadius, countyResultFill, countySides, type CountyMapEntry, type CountyMapResult } from "@/components/PastElectionCountyMap";
@@ -48,6 +50,7 @@ export default function HouseDistrictCountyMap({
   fill = false,
   bubbles = false,
   panel = true,
+  pinTaps: pinTapsProp = false,
   focus = null,
   onSelectedChange,
   stateContext = false,
@@ -74,6 +77,8 @@ export default function HouseDistrictCountyMap({
   bubbles?: boolean;
   /** False: no selected-county panel under the map (the page shows the selection itself, via onSelectedChange). */
   panel?: boolean;
+  /** A tap pins the hover card where it landed, with a close button and a link to the county, in place of the panel under the map. true = always (the caller knows it is a phone); "phone" = the map checks for itself, for pages rendered on the server (the race pages). */
+  pinTaps?: boolean | "phone";
   /** Each new `n` selects `fips` in the district (null clears), as PastElectionCountyMap's focus. */
   focus?: { fips: string | null; n: number } | null;
   /** Called with the selected in-district county's FIPS (null when cleared or outside the district). */
@@ -153,6 +158,11 @@ export default function HouseDistrictCountyMap({
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelectedState] = useState<Hovered | null>(null);
   const setSelected = setSelectedState;
+  // Where the press that selected a county piece landed, for the phone's pinned card.
+  const [pin, setPin] = useState<MapPin | null>(null);
+  // Resolved here so a server page can ask for it: no mouse to hover with means a tap pins the card.
+  const desktopPointer = useDesktopPointer();
+  const pinTaps = pinTapsProp === "phone" ? !desktopPointer : pinTapsProp;
   // Every change, by click or from outside, is reported as the in-district county's FIPS (or null).
   const selectedFips = selected?.inDistrict ? selected.fips : null;
   const reportRef = useRef(onSelectedChange);
@@ -203,7 +213,7 @@ export default function HouseDistrictCountyMap({
     const outside = (p: PieceFeature, d: string | undefined, key: string, fill: string, fillOpacity?: number) => (
       <path key={key} d={d} fill={fill} fillOpacity={fillOpacity} stroke="none"
         onMouseEnter={() => setHovered(describe(p))} onMouseLeave={() => setHovered(null)}
-        onClick={() => setSelected((s) => (s?.fips === p.properties.c && !s.inDistrict ? null : describe(p)))} />
+        onClick={(e) => { setPin(pinFromEvent(e)); setSelected((s) => (s?.fips === p.properties.c && !s.inDistrict ? null : describe(p))); }} />
     );
     return (
       <>
@@ -216,7 +226,7 @@ export default function HouseDistrictCountyMap({
           return (
             <path key={`in-${p.properties.c}`} d={d} fill={fillFor(h.result)} style={{ cursor: "pointer" }}
               onMouseEnter={() => setHovered(h)} onMouseLeave={() => setHovered(null)}
-              onClick={() => setSelected((s) => (s?.fips === p.properties.c && s.inDistrict ? null : h))} />
+              onClick={(e) => { setPin(pinFromEvent(e)); setSelected((s) => (s?.fips === p.properties.c && s.inDistrict ? null : h)); }} />
           );
         })}
       </>
@@ -250,8 +260,14 @@ export default function HouseDistrictCountyMap({
 
   return (
     <div className={fill ? "md:flex md:h-full md:flex-col" : undefined}>
-      <div ref={containerRef} className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onMouseMove}>
+      <div ref={containerRef} data-map-pin="" className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onMouseMove}>
         {hovered && <CountyTooltip {...card(hovered)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />}
+        {pinTaps && selected && pin && (
+          <PinnedMapCard pin={pin} label={selected.name}>
+            <CountyTooltip {...card(selected)} variant="pinned" aside={<PinnedCardClose onClick={() => setSelected(null)} />}
+              footer={<PinnedCardLink href={countyHref(selected.fips)}>Go to {card(selected).title}</PinnedCardLink>} />
+          </PinnedMapCard>
+        )}
         {failed && <div className="absolute inset-0 flex items-center justify-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>Map unavailable.</div>}
         {scene && (
           <svg width={size.width} height={size.height} viewBox={`0 0 ${size.width} ${size.height}`} role="img" aria-label={`${districtLabel} results by county`} {...zoom.svgProps}>
@@ -279,7 +295,7 @@ export default function HouseDistrictCountyMap({
         )}
       </div>
       {caption}
-      {panel && selected && (
+      {panel && !pinTaps && selected && (
         <div className={`px-1 ${panelSize === "small" ? "mt-1 pt-2" : "mt-2 py-3"}`} style={{ borderTop: "1px solid var(--app-border)" }}>
           <CountyTooltip
             {...card(selected)}

@@ -3,6 +3,7 @@
 import { memo, useCallback, useMemo, useRef, useState } from "react";
 import Segmented from "@/components/MarketSegmented";
 import Dropdown from "./Dropdown";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import CountyTooltip, { CountyCardClose, CountyCardLink } from "@/components/CountyTooltip";
 import { ComposableMap, Geography, ZoomableGroup } from "react-simple-maps";
 import Geographies from "@/components/maps/Geographies";
@@ -102,7 +103,7 @@ const GeoLayer = memo(function GeoLayer({ level, geographies, entries, projByKey
   selectedKey: string | null;
   t: Theme;
   onHover: (sel: Selection | null) => void;
-  onSelect: (sel: Selection) => void;
+  onSelect: (sel: Selection, at: MapPin | null) => void;
 }) {
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
@@ -129,14 +130,14 @@ const GeoLayer = memo(function GeoLayer({ level, geographies, entries, projByKey
         const isSelected = selectedKey === key;
         const fill = value != null ? scaleColor(scale, value) : t.mapUnfilled;
         const handlers = {
-          onClick: () => { if (!sel || Date.now() < ignoreClickUntilRef.current) return; onSelect(sel); },
+          onClick: (e: React.MouseEvent) => { if (!sel || Date.now() < ignoreClickUntilRef.current) return; onSelect(sel, pinFromEvent(e)); },
           onPointerDown: (e: React.PointerEvent) => { if (e.pointerType !== "touch") { touchStartRef.current = null; return; } touchStartRef.current = { x: e.clientX, y: e.clientY }; },
           onPointerUp: (e: React.PointerEvent) => {
             if (!sel || e.pointerType !== "touch") return;
             const start = touchStartRef.current; touchStartRef.current = null;
             if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
             ignoreClickUntilRef.current = Date.now() + 500;
-            onSelect(sel);
+            onSelect(sel, pinFromEvent(e));
           },
         };
         return (
@@ -283,7 +284,9 @@ export default function TurnoutMap({ theme: t, dark, projection, view, onViewCha
 
   const districtGeoUrl = isProjection ? getCongressionalDistrictsGeoUrl(PROJECTION_YEAR) : getCongressionalDistrictsGeoUrl(year);
   const onHover = useCallback((sel: Selection | null) => setHovered(sel), []);
-  const onSelect = useCallback((sel: Selection) => setSelected((cur) => (cur?.key === sel.key ? null : sel)), []);
+  // Where the press that selected a place landed: a phone shows the hover card pinned there.
+  const [pin, setPin] = useState<MapPin | null>(null);
+  const onSelect = useCallback((sel: Selection, at: MapPin | null) => { setSelected((cur) => (cur?.key === sel.key ? null : sel)); setPin(at); }, []);
   const selectedKey = selected?.key ?? null;
   const shownYear = isProjection ? PROJECTION_YEAR : year;
 
@@ -335,7 +338,9 @@ export default function TurnoutMap({ theme: t, dark, projection, view, onViewCha
 
       <div className="mb-4 sm:hidden">{legend}</div>
 
-      <div className="relative mx-4 aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl sm:mx-12 lg:mx-32" onMouseMove={onTooltipMove}>
+      {/* The outer box measures presses and holds the phone's pinned card, outside the map's clip. */}
+      <div className="relative mx-4 sm:mx-12 lg:mx-32" data-map-pin="">
+      <div className="relative aspect-[5/3] max-h-[620px] overflow-hidden rounded-xl" onMouseMove={onTooltipMove}>
         {hovered && !selected && <CountyTooltip {...card(hovered)} boxRef={attachTooltip} className="absolute z-20 hidden md:block" />}
 
         <ComposableMap width={800} height={480} projection="geoAlbersUsa" projectionConfig={{ scale: 1000 }} style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}>
@@ -388,12 +393,14 @@ export default function TurnoutMap({ theme: t, dark, projection, view, onViewCha
         )}
       </div>
 
-      {selected && (
-        <div className="mt-3 md:hidden">
-          <CountyTooltip {...card(selected)} variant="panel" aside={<CountyCardClose onClick={() => setSelected(null)} label="Close selection" small />}
-            footer={selected.moreInfoHref ? <CountyCardLink href={selected.moreInfoHref}>More info →</CountyCardLink> : undefined} />
-        </div>
-      )}
+        {/* Phones: the hover card itself, pinned where the tap landed */}
+        {selected && pin && (
+          <PinnedMapCard pin={pin} label={selected.title} className="md:hidden">
+            <CountyTooltip {...card(selected)} variant="pinned" aside={<PinnedCardClose onClick={() => setSelected(null)} />}
+              footer={selected.moreInfoHref ? <PinnedCardLink href={selected.moreInfoHref}>Go to {selected.title}</PinnedCardLink> : undefined} />
+          </PinnedMapCard>
+        )}
+      </div>
     </div>
   );
 }

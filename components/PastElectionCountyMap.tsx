@@ -7,6 +7,8 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { getRaceColor } from "@/lib/colorScale";
 import { useMapTooltip } from "@/lib/useMapTooltip";
+import { useDesktopPointer } from "@/lib/useDesktopPointer";
+import PinnedMapCard, { PinnedCardClose, PinnedCardLink, pinFromEvent, type MapPin } from "@/components/maps/PinnedMapCard";
 import { useStaticJson } from "@/lib/useStaticJson";
 import { countyDisplayName } from "@/lib/countyName";
 import { isRealName } from "@/lib/personName";
@@ -118,6 +120,7 @@ export default function PastElectionCountyMap({
   fill = false,
   bubbles = false,
   panel = true,
+  pinTaps: pinTapsProp = false,
   focus = null,
   onSelectedChange,
   onOpen,
@@ -144,6 +147,8 @@ export default function PastElectionCountyMap({
   bubbles?: boolean;
   /** False: no selected-county panel under the map (the page shows the selection itself, via onSelectedChange). */
   panel?: boolean;
+  /** A tap pins the hover card where it landed, with a close button and a link to the county, in place of the panel under the map. true = always (the caller knows it is a phone); "phone" = the map checks for itself, for pages rendered on the server (the race pages). */
+  pinTaps?: boolean | "phone";
   /** Select a county from outside (a table row): each new `n` selects `fips`, opening its panel; a null `fips` clears it. */
   focus?: { fips: string | null; name: string; n: number } | null;
   /** Called when the selected county changes, from a click on the map or the panel's close. */
@@ -162,6 +167,10 @@ export default function PastElectionCountyMap({
   const [hovered, setHovered] = useState<Hovered | null>(null);
   const [selected, setSelectedState] = useState<Hovered | null>(null);
   const setSelected = useCallback((c: Hovered | null) => { setSelectedState(c); onSelectedChange?.(c?.fips ?? null); }, [onSelectedChange]);
+  const [pin, setPin] = useState<{ fips: string; at: MapPin } | null>(null);
+  // Resolved here so a server page can ask for it: no mouse to hover with means a tap pins the card.
+  const desktopPointer = useDesktopPointer();
+  const pinTaps = pinTapsProp === "phone" ? !desktopPointer : pinTapsProp;
   // A new focus request from outside selects that county (set during render, not in an effect).
   // Starts unset, so a map remounted for another layer picks up the county already selected.
   const [focusN, setFocusN] = useState<number | undefined>(undefined);
@@ -242,7 +251,12 @@ export default function PastElectionCountyMap({
                     geography={geo}
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
-                    onClick={() => (onOpen ? onOpen(countyHref(county.fips)) : setSelected(isSelected ? null : county))}
+                    onClick={(e: React.MouseEvent) => {
+                      if (onOpen) { onOpen(countyHref(county.fips)); return; }
+                      const at = pinFromEvent(e);
+                      setPin(isSelected || !at ? null : { fips, at });
+                      setSelected(isSelected ? null : county);
+                    }}
                     style={{
                       default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 1.5 : 0.5, outline: "none" },
                       hover: { fill, stroke: hoverStroke, strokeWidth: 1, outline: "none", cursor: "pointer" },
@@ -287,8 +301,14 @@ export default function PastElectionCountyMap({
 
   return (
     <div className={fill ? "md:flex md:h-full md:flex-col" : undefined}>
-      <div ref={containerRef} className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onTooltipMove}>
+      <div ref={containerRef} data-map-pin="" className={`relative${fill ? " md:min-h-[180px] md:shrink" : ""}`} style={{ height, background: "var(--app-bg)" }} onMouseMove={onTooltipMove}>
         {hovered && <CountyTooltip {...card(hovered)} boxRef={tooltipRef} className="absolute z-20 hidden md:block" />}
+        {pinTaps && selected && pin?.fips === selected.fips && (
+          <PinnedMapCard pin={pin.at} label={selected.name}>
+            <CountyTooltip {...card(selected)} variant="pinned" aside={<PinnedCardClose onClick={() => setSelected(null)} />}
+              footer={<PinnedCardLink href={countyHref(selected.fips)}>Go to {countyDisplayName(selected.fips, selected.name)}</PinnedCardLink>} />
+          </PinnedMapCard>
+        )}
 
         {mapSvg}
 
@@ -304,7 +324,7 @@ export default function PastElectionCountyMap({
       </div>
 
       {caption}
-      {panel && (selected || standIn) && (
+      {panel && !pinTaps && (selected || standIn) && (
         <div className={`grid px-1 ${panelSize === "small" ? "mt-1 pt-2" : "mt-2 py-3"}`} style={{ borderTop: "1px solid var(--app-border)", visibility: selected ? undefined : "hidden" }} aria-hidden={!selected}>
           {[standIn, selected].map((c, i) => c && (
             <div key={i} className={`col-start-1 row-start-1${i === 0 ? " invisible" : ""}`} aria-hidden={i === 0 || undefined}>

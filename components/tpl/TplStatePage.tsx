@@ -215,7 +215,7 @@ export function TplStatePage({ data, initialDistrict }: { data: StatePageData; i
         {countyCount > 0 && (
           <section id="counties" className="mt-10 scroll-mt-24">
             <LedgerSectionHead label={`County TPL · ${data.name}'s ${countyCount} ${countyNoun}`} meta={desktop ? "click a county to open its page" : "tap a county for its lean"} right={<MapLegend />} />
-            <StateCountyMap stateAbbr={data.abbr} stateName={data.name} showTpl figureHover showLabel={false} countyTpl={data.countyTpl} countyVotes={data.countyVotes} height="clamp(300px, 60vw, 520px)" onOpen={desktop ? openPage : undefined} />
+            <StateCountyMap stateAbbr={data.abbr} stateName={data.name} showTpl figureHover showLabel={false} countyTpl={data.countyTpl} countyVotes={data.countyVotes} height="clamp(300px, 60vw, 520px)" onOpen={desktop ? openPage : undefined} pinTaps={!desktop} />
           </section>
         )}
       </main>
