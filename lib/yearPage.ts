@@ -92,7 +92,7 @@ function pastRaces(office: RaceOffice, year: number): Race[] {
     const vacant = !!geoid && NOT_SEATED.has(`${geoid}:${year}`);
     return {
       office, state: r.stateAbbr, stateName: r.stateName, label: r.label, geoid, special: r.special,
-      winner: vacant ? null : asParty(winnerSide.party), winnerName: winnerSide.name, flipped: !vacant && r.flipped,
+      winner: vacant ? null : asParty(winnerSide.party), winnerName: winnerSide.name, flipped: !vacant && !!r.flipped,
       margin: r.uncontested ? null : r.margin, href: r.href, uncontested: r.uncontested, vacant,
     };
   });
@@ -517,7 +517,7 @@ function statesFor(year: number): YearStates {
   }
   const past = readPastPostElection(year);
   const flipped = new Map<string, boolean>();
-  for (const office of ["president", "senate", "house", "governor"] as RaceOffice[]) for (const r of pastRaceTableRows(office, year)) flipped.set(r.href, r.flipped);
+  for (const office of ["president", "senate", "house", "governor"] as RaceOffice[]) for (const r of pastRaceTableRows(office, year)) if (r.flipped != null) flipped.set(r.href, r.flipped);
   const rows = past.rows.map((r): PostElectionRow => {
     const f = r.past?.href ? flipped.get(r.past.href) : undefined;
     const won = r.proj.winner;
